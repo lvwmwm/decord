@@ -1,114 +1,56 @@
 // Module ID: 13081
 // Function ID: 13082
-// Dependencies: [13011, 13013]
-// Exports: applyAggregateErrorsToEvent
+// Dependencies: [13044, 13067, 13039, 13054]
+// Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 13081
-import _mod13011 from "module_13011" /* 13011 */;
-import _mod13013 from "module_13013" /* 13013 */;
+import _mod13044 from "module_13044" /* 13044 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 13054 */;
+import _mod13067 from "module_13067" /* 13067 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, length;
 
-function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
-  let closure_1;
-  let closure_2;
-  _require = fn;
-  dependencyMap = arg1;
-  aggregateExceptionsFromError = arg2;
-  let closure_3 = source;
-  if (arg5.length >= arg2 + 1) {
-    return arg5;
-  } else {
-    let items = [];
-    HermesBuiltin.arraySpread(items, arg5, 0);
-    length = items;
-    let obj3 = require("module_13011");
-    const _Error = Error;
-    if (obj3.isInstanceOf(errors[source], Error)) {
-      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
-      let obj = { exception_id };
-      const tmp2 = obj;
-      let merged = Object.assign(mechanism.mechanism);
-      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
-      let tmp6 = tmp4;
-      let merged1 = Object.assign(tmp4);
-      mechanism.mechanism = obj;
-      const tmp8 = fn(arg1, errors[source]);
-      length = length.length;
-      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
-      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
-      let merged2 = Object.assign(tmp8.mechanism);
-      tmp8.mechanism = obj2;
-      const tmp12 = aggregateExceptionsFromError;
-      const items1 = [tmp8];
-      let tmp13 = errors[source];
-      HermesBuiltin.arraySpread(items1, length, 1);
-      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
+export function setMeasurement(arg0, arg1, arg2) {
+  let activeSpan = arg3;
+  if (arg3 === undefined) {
+    const obj = _mod13044;
+    activeSpan = obj.getActiveSpan();
+  }
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const obj3 = _mod13044;
+    rootSpan = obj3.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod13067.DEBUG_BUILD) {
+      const logger = tmp9(13039).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
     }
-    const _Array = Array;
-    if (Array.isArray(errors.errors)) {
-      errors = errors.errors;
-      const item = errors.forEach((item, index) => {
-        const obj = _mod13011;
-        if (obj.isInstanceOf(item, Error)) {
-          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
-          const obj2 = { exception_id };
-          const merged = Object.assign(tmp2.mechanism);
-          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
-          const merged1 = Object.assign(tmp6);
-          mechanism.mechanism = obj2;
-          const tmp13 = fn(closure_1, item);
-          length = length.length;
-          const _HermesInternal = HermesInternal;
-          mechanism = tmp13.mechanism;
-          const combined = "errors[" + index + "]";
-          if (!mechanism) {
-            mechanism = { type: "generic", handled: true };
-          }
-          tmp13.mechanism = mechanism;
-          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
-          const merged2 = Object.assign(tmp13.mechanism);
-          tmp13.mechanism = obj3;
-          const items = [tmp13];
-          HermesBuiltin.arraySpread(items, length, 1);
-          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
-        }
-      });
-    }
-    return length;
+    const obj2 = {};
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
+    rootSpan.addEvent(arg0, obj2);
   }
 }
-
-export function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 250;
-  }
-  if (exception.exception) {
-    if (exception.exception.values) {
-      const tmp = originalException;
-      if (tmp) {
-        let obj = num(13011);
-        const _Error = Error;
-        if (obj.isInstanceOf(originalException.originalException, Error)) {
-          let tmp5;
-          if (exception.exception.values.length > 0) {
-            tmp5 = exception.exception.values[exception.exception.values.length - 1];
-          }
-          if (tmp5) {
-            exception = exception.exception;
-            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
-            exception.values = arr.map((value) => {
-              if (value.value) {
-                const obj = _mod13013;
-                value.value = obj.truncate(value.value, num);
-              }
-              return value;
-            });
-          }
+export function timedEventsToMeasurements(arr) {
+  let tmp = arr;
+  if (tmp) {
+    if (0 !== arr.length) {
+      let obj = {};
+      const item = arr.forEach((attributes) => {
+        const tmp = attributes.attributes || {};
+        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
+        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
+        let tmp4 = typeof tmp2 === "string";
+        if (typeof tmp2 === "string") {
+          tmp4 = typeof tmp3 === "number";
         }
-      }
+        if (tmp4) {
+          obj = { value: tmp3, unit: tmp2 };
+          obj[attributes.name] = obj;
+        }
+      });
+      return obj;
     }
   }
 }

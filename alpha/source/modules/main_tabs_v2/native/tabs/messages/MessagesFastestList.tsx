@@ -1,19 +1,19 @@
-// Module ID: 18104
-// Function ID: 18105
+// Module ID: 18147
+// Function ID: 18148
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 5009, 575, 18046, 18032, 18099, 18043, 18042, 18100, 18061, 18098, 18101, 7226, 7224, 7217, 2]
+// Dependencies: [19, 21, 5014, 575, 18089, 18075, 18142, 18086, 18085, 18143, 18104, 18141, 18144, 7232, 7230, 7223, 2]
 
-// Module 18104 (MessagesFastestList)
+// Module 18147 (MessagesFastestList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7224 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7226 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18032 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18042 */;
-import useMessagesData from "useMessagesData" /* 18046 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 18099 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7230 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7232 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18075 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18085 */;
+import useMessagesData from "useMessagesData" /* 18089 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 18142 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemSeparatorDefault = MessagesItemSeparator;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function MessagesFastestList(listItemSizes) {
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(18043).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(18086).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -195,7 +195,7 @@ const memoResult = react.memo(function MessagesFastestList(listItemSizes) {
           const tmp5 = require;
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(18046).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(18089).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
         }

@@ -1,99 +1,269 @@
 // Module ID: 4797
 // Function ID: 4798
-// Dependencies: [2044]
+// Dependencies: [2042]
 
 // Module 4797
-import _mod2044 from "module_2044" /* 2044 */;
+import _mod2042 from "module_2042" /* 2042 */;
 
-const fn = function n(moment) {
-  let obj2;
-  let closure_0 = "ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.".split("_");
-  let closure_1 = "ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic".split("_");
-  const items = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
-  let tmp = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
-  let obj = {
-    months: "enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre".split("_"),
-    monthsShort(arg0, arg1) {
-      let tmp2;
-      const tmp = arg0;
-      if (tmp) {
-        let tmp5;
-        const obj = /-MMM-/;
-        if (obj.test(arg1)) {
-          tmp5 = closure_1[arg0.month(arg0)];
+const fn = function t(moment) {
+  let split;
+  let split2;
+  function translate(arg0, arg1, arg2, arg3) {
+    const text = `${arg0} `;
+    switch (arg2) {
+      case "s":
+      {
+        let str20;
+        if (arg1) {
+          str20 = "p\u00E1r sekund";
         } else {
-          tmp5 = closure_0[arg0.month(arg0)];
+          str20 = "p\u00E1r sekundami";
         }
-        tmp2 = tmp5;
-      } else {
-        tmp2 = closure_0;
+        return str20;
       }
-      return tmp2;
-    },
+      case "ss":
+      {
+        if (!arg1) {
+          let text1;
+          if (!arg3) {
+            text1 = `${tmp}sekundami`;
+          }
+          return text1;
+        }
+        let str19 = "sekund";
+        const tmp13 = arg0 > 1 && arg0 < 5 && 1 !== ~(~arg0 / 10);
+        if (tmp13) {
+          str19 = "sekundy";
+        }
+        text1 = text + str19;
+        break;
+      }
+      case "m":
+      {
+        let str16 = "minuta";
+        if (!arg1) {
+          let str17 = "minutou";
+          if (arg3) {
+            str17 = "minutu";
+          }
+          str16 = str17;
+        }
+        return str16;
+      }
+      case "mm":
+      {
+        if (!arg1) {
+          let text2;
+          if (!arg3) {
+            text2 = `${tmp}minutami`;
+          }
+          return text2;
+        }
+        let str15 = "minut";
+        const tmp11 = arg0 > 1 && arg0 < 5 && 1 !== ~(~arg0 / 10);
+        if (tmp11) {
+          str15 = "minuty";
+        }
+        text2 = text + str15;
+        break;
+      }
+      case "h":
+      {
+        let str12 = "hodina";
+        if (!arg1) {
+          let str13 = "hodinou";
+          if (arg3) {
+            str13 = "hodinu";
+          }
+          str12 = str13;
+        }
+        return str12;
+      }
+      case "hh":
+      {
+        if (!arg1) {
+          let text3;
+          if (!arg3) {
+            text3 = `${tmp}hodinami`;
+          }
+          return text3;
+        }
+        let str11 = "hodin";
+        const tmp9 = arg0 > 1 && arg0 < 5 && 1 !== ~(~arg0 / 10);
+        if (tmp9) {
+          str11 = "hodiny";
+        }
+        text3 = text + str11;
+        break;
+      }
+      case "d":
+      {
+        let str9;
+        if (arg1) {
+          str9 = "den";
+        } else {
+          str9 = "dnem";
+        }
+        return str9;
+      }
+      case "dd":
+      {
+        if (!arg1) {
+          let text4;
+          if (!arg3) {
+            text4 = `${tmp}dny`;
+          }
+          return text4;
+        }
+        let str8 = "dn\u00ED";
+        const tmp7 = arg0 > 1 && arg0 < 5 && 1 !== ~(~arg0 / 10);
+        if (tmp7) {
+          str8 = "dny";
+        }
+        text4 = text + str8;
+        break;
+      }
+      case "M":
+      {
+        let str6;
+        if (arg1) {
+          str6 = "m\u011Bs\u00EDc";
+        } else {
+          str6 = "m\u011Bs\u00EDcem";
+        }
+        return str6;
+      }
+      case "MM":
+      {
+        if (!arg1) {
+          let text5;
+          if (!arg3) {
+            text5 = `${tmp}měsíci`;
+          }
+          return text5;
+        }
+        let str5 = "m\u011Bs\u00EDc\u016F";
+        const tmp5 = arg0 > 1 && arg0 < 5 && 1 !== ~(~arg0 / 10);
+        if (tmp5) {
+          str5 = "m\u011Bs\u00EDce";
+        }
+        text5 = text + str5;
+        break;
+      }
+      case "y":
+      {
+        let str3;
+        if (arg1) {
+          str3 = "rok";
+        } else {
+          str3 = "rokem";
+        }
+        return str3;
+      }
+      case "yy":
+      {
+        if (!arg1) {
+          let text6;
+          if (!arg3) {
+            text6 = `${tmp}lety`;
+          }
+          return text6;
+        }
+        let str2 = "let";
+        const tmp3 = arg0 > 1 && arg0 < 5 && 1 !== ~(~arg0 / 10);
+        if (tmp3) {
+          str2 = "roky";
+        }
+        text6 = text + str2;
+        break;
+      }
+      default:
+      {
+        break;
+      }
+    }
+  }
+  const items = [/^led/i, /^úno/i, /^bře/i, /^dub/i, /^kvě/i, /^(čvn|červen$|června)/i, /^(čvc|červenec|července)/i, /^srp/i, /^zář/i, /^říj/i, /^lis/i, /^pro/i];
+  const tmp = /^(leden|únor|březen|duben|květen|červenec|července|červen|června|srpen|září|říjen|listopad|prosinec|led|úno|bře|dub|kvě|čvn|čvc|srp|zář|říj|lis|pro)/i;
+  ({ split, split: split2 } = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so");
+  const obj = { standalone: "leden_\u00FAnor_b\u0159ezen_duben_kv\u011Bten_\u010Derven_\u010Dervenec_srpen_z\u00E1\u0159\u00ED_\u0159\u00EDjen_listopad_prosinec".split("_"), format: "ledna_\u00FAnora_b\u0159ezna_dubna_kv\u011Btna_\u010Dervna_\u010Dervence_srpna_z\u00E1\u0159\u00ED_\u0159\u00EDjna_listopadu_prosince".split("_"), isFormat: /DD?[o.]?(\[[^\[\]]*\]|\s)+MMMM/ };
+  const obj2 = {
+    months: obj,
+    monthsShort: "led_\u00FAno_b\u0159e_dub_kv\u011B_\u010Dvn_\u010Dvc_srp_z\u00E1\u0159_\u0159\u00EDj_lis_pro".split("_"),
     monthsRegex: tmp,
     monthsShortRegex: tmp,
-    monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
-    monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
+    monthsStrictRegex: /^(leden|ledna|února|únor|březen|března|duben|dubna|květen|května|červenec|července|červen|června|srpen|srpna|září|říjen|října|listopadu|listopad|prosinec|prosince)/i,
+    monthsShortStrictRegex: /^(led|úno|bře|dub|kvě|čvn|čvc|srp|zář|říj|lis|pro)/i,
     monthsParse: items,
     longMonthsParse: items,
     shortMonthsParse: items,
-    weekdays: "domingo_lunes_martes_mi\u00E9rcoles_jueves_viernes_s\u00E1bado".split("_"),
-    weekdaysShort: "dom._lun._mar._mi\u00E9._jue._vie._s\u00E1b.".split("_"),
-    weekdaysMin: "do_lu_ma_mi_ju_vi_s\u00E1".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD/MM/YYYY", LL: "D [de] MMMM [de] YYYY", LLL: "D [de] MMMM [de] YYYY H:mm", LLLL: "dddd, D [de] MMMM [de] YYYY H:mm" },
-    calendar: obj2,
-    relativeTime: { future: "en %s", past: "hace %s", s: "unos segundos", ss: "%d segundos", m: "un minuto", mm: "%d minutos", h: "una hora", hh: "%d horas", d: "un d\u00EDa", dd: "%d d\u00EDas", w: "una semana", ww: "%d semanas", M: "un mes", MM: "%d meses", y: "un a\u00F1o", yy: "%d a\u00F1os" },
-    dayOfMonthOrdinalParse: /\d{1,2}º/,
-    ordinal: "%d\u00BA",
-    week: { dow: 1, doy: 4 },
-    invalidDate: "Fecha inv\u00E1lida"
+    weekdays: "ned\u011Ble_pond\u011Bl\u00ED_\u00FAter\u00FD_st\u0159eda_\u010Dtvrtek_p\u00E1tek_sobota".split("_"),
+    weekdaysShort: "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_"),
+    weekdaysMin: "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_"),
+    longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY H:mm", LLLL: "dddd D. MMMM YYYY H:mm", l: "D. M. YYYY" },
+    calendar: {
+      sameDay: "[dnes v] LT",
+      nextDay: "[z\u00EDtra v] LT",
+      nextWeek() {
+        const dayResult = this.day();
+        if (0 === dayResult) {
+          return "[v ned\u011Bli v] LT";
+        } else {
+          if (1 !== dayResult) {
+            if (2 !== dayResult) {
+              if (3 === dayResult) {
+                return "[ve st\u0159edu v] LT";
+              } else if (4 === dayResult) {
+                return "[ve \u010Dtvrtek v] LT";
+              } else if (5 === dayResult) {
+                return "[v p\u00E1tek v] LT";
+              } else if (6 === dayResult) {
+                return "[v sobotu v] LT";
+              }
+            }
+          }
+          return "[v] dddd [v] LT";
+        }
+      },
+      lastDay: "[v\u010Dera v] LT",
+      lastWeek() {
+        const dayResult = this.day();
+        if (0 === dayResult) {
+          return "[minulou ned\u011Bli v] LT";
+        } else {
+          if (1 !== dayResult) {
+            if (2 !== dayResult) {
+              if (3 === dayResult) {
+                return "[minulou st\u0159edu v] LT";
+              } else {
+                if (4 !== dayResult) {
+                  if (5 !== dayResult) {
+                    if (6 === dayResult) {
+                      return "[minulou sobotu v] LT";
+                    }
+                  }
+                }
+                return "[minul\u00FD] dddd [v] LT";
+              }
+            }
+          }
+          return "[minul\u00E9] dddd [v] LT";
+        }
+      },
+      sameElse: "L"
+    },
+    relativeTime: { future: "za %s", past: "p\u0159ed %s", s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate },
+    dayOfMonthOrdinalParse: /\d{1,2}\./,
+    ordinal: "%d.",
+    week: { dow: 1, doy: 4 }
   };
-  obj2 = {
-    sameDay() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[hoy a la" + str + "] LT";
-    },
-    nextDay() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[ma\u00F1ana a la" + str + "] LT";
-    },
-    nextWeek() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "dddd [a la" + str + "] LT";
-    },
-    lastDay() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[ayer a la" + str + "] LT";
-    },
-    lastWeek() {
-      let str = "";
-      if (1 !== this.hours()) {
-        str = "s";
-      }
-      return "[el] dddd [pasado a la" + str + "] LT";
-    },
-    sameElse: "L"
-  };
-  return moment.defineLocale("es", obj);
+  return moment.defineLocale("cs", obj2);
 };
 if (typeof exports === "object") {
   if (undefined !== module) {
     let tmp = require;
     if (typeof require === "function") {
-      fn(_mod2044);
+      fn(_mod2042);
     }
   }
 }

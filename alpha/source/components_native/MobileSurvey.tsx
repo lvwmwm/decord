@@ -1,21 +1,21 @@
-// Module ID: 18961
-// Function ID: 18962
+// Module ID: 19010
+// Function ID: 19011
 // Name: MobileSurvey
-// Dependencies: [5, 19, 7921, 1072, 21, 5009, 504, 1253, 17662, 6025, 1114, 5704, 1188, 575, 11955, 2]
+// Dependencies: [5, 19, 7929, 1072, 21, 5014, 504, 1252, 17706, 6030, 1113, 5709, 1187, 575, 11993, 2]
 // Exports: default
 
-// Module 18961 (MobileSurvey)
+// Module 19010 (MobileSurvey)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1188 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11955 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 17662 */;
+import native from "native" /* 1187 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11993 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 17706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SurveyStore from "SurveyStore" /* 7921 */;
-import createStyles from "createStyles" /* 5009 */;
+import SurveyStore from "SurveyStore" /* 7929 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -54,7 +54,7 @@ export default function MobileSurvey() {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -83,7 +83,7 @@ export default function MobileSurvey() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;
@@ -103,9 +103,9 @@ export default function MobileSurvey() {
   let tmp5 = null;
   if (null != stateFromStores) {
     ({ prompt: obj2.body, cta: obj2.confirmText } = stateFromStores);
-    const tmp8 = stateFromStores(6025);
-    const intl = tmp(1114).intl;
-    tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1114).t.f3Pet9)} onConfirm={function onConfirm() {
+    const tmp8 = stateFromStores(6030);
+    const intl = tmp(1113).intl;
+    tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1113).t.f3Pet9)} onConfirm={function onConfirm() {
       const obj = LinkingDefault;
       obj.openURL(stateFromStores.url);
       const obj2 = SurveyActionCreators;

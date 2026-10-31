@@ -1,16 +1,16 @@
-// Module ID: 5647
-// Function ID: 5648
+// Module ID: 5652
+// Function ID: 5653
 // Name: useChannelName
-// Dependencies: [32, 5233, 4951, 1384, 1072, 1380, 5063, 1114, 504, 2]
+// Dependencies: [32, 5238, 4956, 1383, 1072, 1379, 5068, 1113, 504, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 5647 (useChannelName)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
+// Module 5652 (useChannelName)
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5233 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import ExperimentStore from "ExperimentStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, nickname;
 
 let metroImportAll;
 let metroImportDefault;
-const f87827 = (id) => {
+const f88043 = (id) => {
   nickname = nickname.getNickname(id.id);
   if (nickname == null) {
     const obj = closure_2_1(closure_2_2[6]);
@@ -86,14 +86,14 @@ function computeChannelName(channel, UserStore, RelationshipStore, flag, arg4) {
         _require = RelationshipStore;
         const mapped1 = recipients1.map(UserStore.getUser);
         const found = mapped1.filter(require("GlobalUtils").isNotNullish);
-        const mapped2 = found.map(f87827);
+        const mapped2 = found.map(f88043);
         if (mapped2.length > 0) {
           joined = mapped2.join(", ");
         } else {
-          const intl2 = tmp24(1114).intl;
+          const intl2 = tmp24(1113).intl;
           const formatToPlainString = intl2.formatToPlainString;
           const obj = { name: obj2.getName(UserStore.getCurrentUser()) };
-          const v9Uk8PF = tmp24(1114).t["9Uk8PF"];
+          const v9Uk8PF = tmp24(1113).t["9Uk8PF"];
           obj2 = UserUtilsDefault;
           joined = formatToPlainString(v9Uk8PF, obj);
         }
@@ -199,14 +199,14 @@ export function computeDefaultGroupDmNameFromUserIds(arr, getUser, arg2) {
   _require = arg2;
   const mapped = arr.map(getUser.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map(f87827);
+  const mapped1 = found.map(f88043);
   if (mapped1.length > 0) {
     joined = mapped1.join(", ");
   } else {
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { name: obj2.getName(getUser.getCurrentUser()) };
-    const v9Uk8PF = tmp(1114).t["9Uk8PF"];
+    const v9Uk8PF = tmp(1113).t["9Uk8PF"];
     obj2 = UserUtilsDefault;
     joined = formatToPlainString(v9Uk8PF, obj);
   }
@@ -220,14 +220,14 @@ export function computeDefaultGroupDmName(recipients, getUser, arg2) {
   _require = arg2;
   const mapped = recipients.map(getUser.getUser);
   const found = mapped.filter(require("GlobalUtils").isNotNullish);
-  const mapped1 = found.map(f87827);
+  const mapped1 = found.map(f88043);
   if (mapped1.length > 0) {
     joined = mapped1.join(", ");
   } else {
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { name: obj2.getName(getUser.getCurrentUser()) };
-    const v9Uk8PF = tmp(1114).t["9Uk8PF"];
+    const v9Uk8PF = tmp(1113).t["9Uk8PF"];
     obj2 = UserUtilsDefault;
     joined = formatToPlainString(v9Uk8PF, obj);
   }
@@ -249,15 +249,15 @@ export function useComputedGroupDmName(stateFromStores) {
         closure_0 = RelationshipStore;
         const mapped = recipients.map(UserStore.getUser);
         const found = mapped.filter(GlobalUtils.isNotNullish);
-        const mapped1 = found.map(f87827);
+        const mapped1 = found.map(f88043);
         const obj2 = UserStore;
         if (mapped1.length > 0) {
           joined = mapped1.join(", ");
         } else {
-          const intl = tmp3(1114).intl;
+          const intl = tmp3(1113).intl;
           const formatToPlainString = intl.formatToPlainString;
           const obj3 = { name: obj4.getName(obj2.getCurrentUser()) };
-          const v9Uk8PF = tmp3(1114).t["9Uk8PF"];
+          const v9Uk8PF = tmp3(1113).t["9Uk8PF"];
           obj4 = UserUtilsDefault;
           joined = formatToPlainString(v9Uk8PF, obj3);
         }

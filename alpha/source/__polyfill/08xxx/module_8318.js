@@ -1,287 +1,80 @@
 // Module ID: 8318
 // Function ID: 8319
-// Dependencies: [8274, 8290, 8302, 8271, 8278, 8304]
+// Dependencies: [32, 8279, 8296, 8319]
 
 // Module 8318
-import _mod8271 from "module_8271" /* 8271 */;
-import _modDef8274 from "module_8274" /* 8274 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 8278 */;
-import _modDef8290 from "module_8290" /* 8290 */;
-import _modDef8302 from "module_8302" /* 8302 */;
-import _modDef8304 from "module_8304" /* 8304 */;
+import _mod8279 from "module_8279" /* 8279 */;
+import _modDef8296 from "module_8296" /* 8296 */;
+import PathRecordTypesDefault from "PathRecordTypes" /* 8319 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const require = globalThis.__r;
-let _require;
-
-function constructTag(decompressResult, type, items2, items1) {
-  let stringFromDataView = decompressResult;
-  if (decompressResult instanceof DataView) {
-    const obj = _mod8271;
-    stringFromDataView = obj.getStringFromDataView(decompressResult, 0, decompressResult.byteLength);
-  }
-  const obj2 = _mod8271;
-  const stringValueFromArray = obj2.getStringValueFromArray(items1);
-  let combined = stringValueFromArray;
-  if (type !== PNG_CHUNK_TYPE_SIZE.TYPE_TEXT) {
-    combined = stringValueFromArray;
-    if (0 !== items2.length) {
-      const _HermesInternal = HermesInternal;
-      const tmp4Result = _mod8271;
-      combined = "" + stringValueFromArray + " (" + tmp4Result.getStringValueFromArray(items2) + ")";
-    }
-  }
-  const obj3 = { name: combined, value: stringFromDataView, description: stringFromDataView };
-  if (type === PNG_CHUNK_TYPE_SIZE.TYPE_ITXT) {
-    const decoder = _modDef8304;
-    stringFromDataView = decoder.decode("UTF-8", decompressResult);
-  }
-  return obj3;
-}
-function isExifGroupTag(name, value) {
-  const tmp = "raw profile type exif" === name.toLowerCase() && "exif" === value.substring(1, 5);
-  return tmp;
-}
-function isIptcGroupTag(name, value) {
-  const tmp = "raw profile type iptc" === name.toLowerCase() && "iptc" === value.substring(1, 5);
-  return tmp;
-}
-function decodeRawData(value) {
-  let length;
+let length;
+let metroImportDefault;
+function getTagName(dataView, sum1) {
+  let num;
   let sum;
-  const str = value.match(/\n(exif|iptc)\n\s*\d+\n([\s\S]*)$/)[2];
-  const replaced = str.replace(/\n/g, "");
-  const arrayBuffer = new ArrayBuffer(replaced.length / 2);
-  const dataView = new DataView(arrayBuffer);
-  let num = 0;
-  if (0 < replaced.length) {
-    do {
-      let _parseInt = parseInt;
-      sum = num + 2;
-      let setUint8Result = dataView.setUint8(num / 2, parseInt(replaced.substring(num, sum), 16));
-      num = sum;
-      length = replaced.length;
-    } while (sum < length);
+  const obj = _mod8279;
+  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
+  const first = tmp[0];
+  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
+  num = 0;
+  sum = 1 + first;
+  if (first % 2 === 0) {
+    num = 1;
   }
-  return dataView;
+  return obj2;
 }
 let obj = {
-  read(byteLength, arg1, arg2, arg3) {
-    let allPromises;
-    let closure_0;
-    let length;
-    let offset;
-    let type;
-    _require = arg3;
-    let obj = {};
-    const items = [];
+  read(arg0, arg1) {
+    let tmp4Result2;
+    const getDataView = _mod8279.getDataView;
+    _mod8279;
+    const uint8Array = new Uint8Array(arg0);
+    const dataView = getDataView(uint8Array.buffer);
+    const obj = {};
     let num = 0;
-    if (0 < arg1.length) {
-      while (true) {
-        let str;
-        let catchPromise;
-        ({ offset, length, type } = arg1[num]);
-        let items1 = [];
-        let items2 = [];
-        let items3 = [];
-        let tmp = STATE_KEYWORD;
-        let COMPRESSION_METHOD_NONE = require("module_8271").COMPRESSION_METHOD_NONE;
-        let tmp5 = COMPRESSION_METHOD_NONE;
-        let dataView;
-        if (0 < length) {
-          let num2 = 0;
-          let tmp7 = COMPRESSION_METHOD_NONE;
-          tmp5 = COMPRESSION_METHOD_NONE;
-          if (offset < byteLength.byteLength) {
-            while (true) {
-              let tmp16;
-              let sum1;
-              let COMPRESSION_METHOD_NONE2;
-              let tmp8 = STATE_COMPRESSION;
-              if (tmp !== STATE_COMPRESSION) {
-                let tmp19 = STATE_TEXT;
-                if (tmp === STATE_TEXT) {
-                  break;
-                } else {
-                  let uint8 = byteLength.getUint8(offset + num2);
-                  if (0 === uint8) {
-                    let tmp28;
-                    if (tmp !== STATE_KEYWORD) {
-                      let tmp30;
-                      if (tmp === tmp8) {
-                        if (type === require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT) {
-                          tmp19 = STATE_LANG;
-                        }
-                        tmp30 = tmp19;
-                      } else {
-                        tmp30 = tmp19;
-                        if (tmp === STATE_LANG) {
-                          tmp30 = STATE_TRANSLATED_KEYWORD;
-                        }
-                      }
-                      tmp28 = tmp30;
-                    } else {
-                      let items4 = [require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT, require("PNG_CHUNK_TYPE_SIZE").TYPE_ZTXT];
-                      tmp28 = tmp8;
-                    }
-                    tmp16 = tmp28;
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                  } else if (tmp === STATE_KEYWORD) {
-                    let arr = items1.push(uint8);
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                    tmp16 = tmp;
-                  } else if (tmp === STATE_LANG) {
-                    let arr2 = items2.push(uint8);
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                    tmp16 = tmp;
-                  } else {
-                    sum1 = num2;
-                    COMPRESSION_METHOD_NONE2 = tmp7;
-                    tmp16 = tmp;
-                    if (tmp === STATE_TRANSLATED_KEYWORD) {
-                      let arr3 = items3.push(uint8);
-                      sum1 = num2;
-                      COMPRESSION_METHOD_NONE2 = tmp7;
-                      tmp16 = tmp;
-                    }
-                  }
-                }
-              } else {
-                let sum = offset + num2;
-                let tmp48 = _require;
-                if (type === require("PNG_CHUNK_TYPE_SIZE").TYPE_ITXT) {
-                  if (byteLength.getUint8(sum) === c9) {
-                    COMPRESSION_METHOD_NONE2 = byteLength.getUint8(sum + 1);
-                    sum1 = num2;
-                    if (type === tmp48(8278).TYPE_ITXT) {
-                      sum1 = num2 + c8;
-                    }
-                    if (tmp !== STATE_KEYWORD) {
-                      let tmp18;
-                      if (tmp === tmp8) {
-                        tmp18 = type === tmp48(8278).TYPE_ITXT ? STATE_LANG : STATE_TEXT;
-                      } else {
-                        tmp18 = tmp === STATE_LANG ? STATE_TRANSLATED_KEYWORD : STATE_TEXT;
-                      }
-                      tmp16 = tmp18;
-                    } else {
-                      let items5 = [tmp48(8278).TYPE_ITXT, tmp48(8278).TYPE_ZTXT];
-                      tmp16 = tmp8;
-                    }
-                  }
-                } else if (type === tmp48(8278).TYPE_ZTXT) {
-                  COMPRESSION_METHOD_NONE2 = byteLength.getUint8(sum);
-                }
-                COMPRESSION_METHOD_NONE2 = tmp48(8271).COMPRESSION_METHOD_NONE;
-              }
-              let sum2 = sum1 + 1;
-              tmp5 = COMPRESSION_METHOD_NONE2;
-              if (sum2 < length) {
-                num2 = sum2;
-                tmp7 = COMPRESSION_METHOD_NONE2;
-                tmp = tmp16;
-                tmp5 = COMPRESSION_METHOD_NONE2;
-              }
-              continue;
-            }
-            let _DataView = DataView;
-            let buffer = byteLength.buffer;
-            let self = this;
-            let self2 = this;
-            dataView = new DataView(buffer.slice(offset + num2, offset + length));
-            tmp5 = tmp7;
+    if (0 < arg0.length) {
+      const sum = num + metroImportDefault;
+      const obj2 = _mod8279;
+      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
+      const obj3 = _modDef8296;
+      const shortAt = obj3.getShortAt(dataView, sum);
+      const sum1 = sum + c5;
+      const tmp14 = getTagName(dataView, sum1);
+      let name = tmp14.tagName;
+      const sum2 = sum1 + tmp14.tagNameSize;
+      const obj4 = _modDef8296;
+      const longAt = obj4.getLongAt(dataView, sum2);
+      const sum3 = sum2 + c6;
+      if (stringFromDataView === c4) {
+        const tmp4Result = _mod8279;
+        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
+        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
+        tmp4Result2 = _mod8279;
+        if (PathRecordTypesDefault[shortAt]) {
+          try {
+            const obj5 = PathRecordTypesDefault[shortAt];
+            obj6.description = obj5.description(dataView1);
+          } catch (err) {
+            obj6.description = "<no description formatter>";
           }
-        }
-        let tmp34 = _require;
-        if (tmp5 !== require("module_8271").COMPRESSION_METHOD_NONE) {
-          let obj2;
-          if (!arg2) {
-            obj2 = {};
+          if (!name) {
+            name = tmp9(8319)[shortAt].name;
           }
-          let _Promise2 = Promise;
-          if (obj2 instanceof Promise) {
-            let arr4 = items.push(obj2.then((result) => {
-              let name;
-              let tmp2Result;
-              let tmp2Result2;
-              let value;
-              ({ name, value } = result);
-              try {
-                if (_modDef8274.USE_EXIF) {
-                  if (isExifGroupTag(name, value)) {
-                    const obj2 = { __exif: tmp2Result.read(decodeRawData(value), c10, closure_0).tags };
-                    tmp2Result = _modDef8290;
-                    return obj2;
-                  }
-                }
-                if (_modDef8274.USE_IPTC) {
-                  if (isIptcGroupTag(name, value)) {
-                    const obj3 = { __iptc: tmp2Result2.read(decodeRawData(value), 0, closure_0) };
-                    tmp2Result2 = _modDef8302;
-                    return obj3;
-                  }
-                }
-                if (name) {
-                  if (!isExifGroupTag(name, value)) {
-                    if (!isIptcGroupTag(name, value)) {
-                      const obj = {};
-                      const obj4 = { value, description: tmp };
-                      obj[name] = obj4;
-                      return obj;
-                    }
-                  }
-                }
-                return {};
-              } catch (err) {
-              }
-            }));
-          } else {
-            let name = obj2.name;
-            if (name) {
-              let obj3 = { value: tmp43, description: tmp44 };
-              obj[name] = obj3;
-            }
-          }
-          num = num + 1;
-          if (num >= arg1.length) {
-            break;
-          }
+          obj[name] = obj6;
+        } else if (arg1) {
+          const _HermesInternal = HermesInternal;
+          obj["undefined-" + shortAt] = obj6;
         }
-        let tmp34Result = tmp34(8271);
-        let decompress = tmp34Result.decompress;
-        if (type === tmp34(8278).TYPE_TEXT) {
-          str = "latin1";
-        } else {
-          str = "utf-8";
-        }
-        let decompressResult = decompress(dataView, tmp5, str);
-        let _Promise = Promise;
-        if (decompressResult instanceof Promise) {
-          let nextPromise = decompressResult.then((result) => constructTag(result, type, items2, items1));
-          catchPromise = nextPromise.catch(() => constructTag("<text using unknown compression>".split(""), type, items2, items1));
-        } else {
-          catchPromise = constructTag(decompressResult, type, items2, items1);
-        }
-        obj2 = catchPromise;
       }
+      num = sum3 + (longAt + longAt % 2);
     }
-    let obj4 = { readTags: obj, readTagsPromise: allPromises };
-    allPromises = undefined;
-    if (items.length > 0) {
-      allPromises = Promise.all(items);
-    }
-    return obj4;
+    return obj;
   }
 };
-const STATE_KEYWORD = "STATE_KEYWORD";
-const STATE_COMPRESSION = "STATE_COMPRESSION";
-const STATE_LANG = "STATE_LANG";
-const STATE_TRANSLATED_KEYWORD = "STATE_TRANSLATED_KEYWORD";
-const STATE_TEXT = "STATE_TEXT";
-let c8 = 1;
-let c9 = 1;
-let c10 = 6;
+let c4 = "8BIM";
+let c5 = 2;
+let c6 = 4;
+({ length, length: metroImportDefault } = "8BIM");
 
 export default obj;

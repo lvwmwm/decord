@@ -1,9 +1,9 @@
-// Module ID: 2022
-// Function ID: 2023
+// Module ID: 2020
+// Function ID: 2021
 // Name: EmbeddedActivitySupportedPlatforms
 // Dependencies: [2]
 
-// Module 2022 (EmbeddedActivitySupportedPlatforms)
+// Module 2020 (EmbeddedActivitySupportedPlatforms)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivitySupportedPlatforms.tsx");

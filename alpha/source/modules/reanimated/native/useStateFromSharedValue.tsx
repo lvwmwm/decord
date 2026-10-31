@@ -1,11 +1,11 @@
-// Module ID: 8833
-// Function ID: 8834
+// Module ID: 8841
+// Function ID: 8842
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1260, 5090, 2]
+// Dependencies: [32, 19, 1259, 5095, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8833 (useStateFromSharedValue)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+// Module 8841 (useStateFromSharedValue)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

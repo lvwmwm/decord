@@ -1,12 +1,12 @@
-// Module ID: 17808
-// Function ID: 17809
+// Module ID: 17852
+// Function ID: 17853
 // Name: useCardLayout
-// Dependencies: [9437, 1492, 2]
+// Dependencies: [9459, 1491, 2]
 // Exports: useCardLayout
 
-// Module 17808 (useCardLayout)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9437 */;
+// Module 17852 (useCardLayout)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9459 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
@@ -19,7 +19,7 @@ export function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "Array", rowWidth: "applicationId" };
+    return { columns: num, cardWidth: "concat", rowWidth: "style" };
   } else {
     let bound;
     let num2 = 2;
@@ -33,9 +33,9 @@ export function useCardLayout() {
       const _Math = Math;
       bound = Math.max(4, diff1);
     } else {
-      bound = 2 * tmp2(9437).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * tmp2(9459).COLLECTIBLES_SHOP_CARD_GAP;
     }
-    const result1 = (width - (bound + tmp2(9437).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    const result1 = (width - (bound + tmp2(9459).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
     let tmp10 = tmp2;
     let tmp11 = result1;
     let tmp12 = num;
@@ -67,18 +67,18 @@ export function useCardLayout() {
     }
     const _Math2 = Math;
     const _Math3 = Math;
-    const bound1 = Math.max(tmp11, tmp14(9437).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const minResult = min(bound1, tmp14(9437).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const bound1 = Math.max(tmp11, tmp14(9459).COLLECTIBLES_SHOP_CARD_WIDTH);
+    const minResult = min(bound1, tmp14(9459).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
     const result3 = minResult * tmp12;
     const diff2 = tmp12 - 1;
-    if (result3 + (bound + tmp10(9437).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+    if (result3 + (bound + tmp10(9459).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       let obj;
       if (1 < tmp12) {
         obj = { columns: 1, cardWidth: "Array", rowWidth: "applicationId" };
       }
       return obj;
     }
-    obj = { columns: tmp12, cardWidth: minResult, rowWidth: result4 + tmp14(9437).COLLECTIBLES_SHOP_CARD_GAP * diff2 };
+    obj = { columns: tmp12, cardWidth: minResult, rowWidth: result4 + tmp14(9459).COLLECTIBLES_SHOP_CARD_GAP * diff2 };
     result4 = minResult * tmp12;
   }
 }

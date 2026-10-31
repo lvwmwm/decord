@@ -1,19 +1,19 @@
-// Module ID: 6961
-// Function ID: 6962
+// Module ID: 6967
+// Function ID: 6968
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6942, 1072, 21, 5009, 5707, 1114, 6944, 5607, 5043, 504, 6962, 6916, 6963, 7101, 5629, 2]
+// Dependencies: [5, 32, 19, 17, 6948, 1072, 21, 5014, 5712, 1113, 6950, 5612, 5048, 504, 6968, 6922, 6969, 7107, 5634, 2]
 // Exports: default
 
-// Module 6961 (MemberVerificationForm)
+// Module 6967 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5043 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6942 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ export default function MemberVerificationForm(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -98,7 +98,7 @@ export default function MemberVerificationForm(guild) {
                 if (tmp33) {
                   showIncompleteToast();
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   _undefined2(null);
                   _undefined(true);
@@ -171,7 +171,7 @@ export default function MemberVerificationForm(guild) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp49) {
           body = tmp49;
           if (0 === c4) {

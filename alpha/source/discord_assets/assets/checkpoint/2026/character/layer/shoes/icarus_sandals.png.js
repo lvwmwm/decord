@@ -1,8 +1,8 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6166
+// Function ID: 6167
 // Dependencies: [2]
 
-// Module 6161
+// Module 6166
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/icarus_sandals.png.js");

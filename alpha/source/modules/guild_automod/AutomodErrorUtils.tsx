@@ -1,14 +1,14 @@
-// Module ID: 8379
-// Function ID: 8380
+// Module ID: 8387
+// Function ID: 8388
 // Name: AutomodErrorUtils
-// Dependencies: [4858, 1072, 1114, 8376, 2]
+// Dependencies: [4863, 1072, 1113, 8384, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 8379 (AutomodErrorUtils)
+// Module 8387 (AutomodErrorUtils)
 import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1114 */;
-import MessageQueue from "MessageQueue" /* 8376 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import intl5 from "intl" /* 1113 */;
+import MessageQueue from "MessageQueue" /* 8384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
@@ -61,16 +61,16 @@ function getAutomodErrorMessageFromMessageData(message) {
   const channel = ChannelStore.getChannel(message.message.channelId);
   const obj2 = MessageQueue;
   if (obj2.isMessageDataEdit(message)) {
-    const intl4 = tmp(1114).intl;
-    stringResult = intl4.string(tmp(1114).t.bU6o0z);
+    const intl4 = tmp(1113).intl;
+    stringResult = intl4.string(tmp(1113).t.bU6o0z);
   } else {
     let isThreadResult;
     if (channel != null) {
       isThreadResult = channel.isThread();
     }
     if (isThreadResult) {
-      const intl3 = tmp(1114).intl;
-      stringResult = intl3.string(tmp(1114).t.DVdG9E);
+      const intl3 = tmp(1113).intl;
+      stringResult = intl3.string(tmp(1113).t.DVdG9E);
     } else {
       let isForumPostResult;
       if (channel != null) {
@@ -82,12 +82,12 @@ function getAutomodErrorMessageFromMessageData(message) {
           isForumLikeChannelResult = channel.isForumLikeChannel();
         }
         if (!isForumLikeChannelResult) {
-          const intl = tmp(1114).intl;
-          stringResult = intl.string(tmp(1114).t.zQ69pv);
+          const intl = tmp(1113).intl;
+          stringResult = intl.string(tmp(1113).t.zQ69pv);
         }
       }
-      const intl2 = tmp(1114).intl;
-      stringResult = intl2.string(tmp(1114).t.ipgKDg);
+      const intl2 = tmp(1113).intl;
+      stringResult = intl2.string(tmp(1113).t.ipgKDg);
     }
   }
   return stringResult;

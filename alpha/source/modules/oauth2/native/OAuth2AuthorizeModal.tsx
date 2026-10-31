@@ -1,16 +1,16 @@
-// Module ID: 10880
-// Function ID: 10881
+// Module ID: 10905
+// Function ID: 10906
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 5009, 575, 9720, 1626, 5090, 5632, 6974, 1114, 10881, 7048, 5619, 7286, 10883, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9740, 1625, 5095, 5637, 6980, 1113, 10906, 7054, 5624, 7292, 10908, 2]
 // Exports: default
 
-// Module 10880 (OAuth2AuthorizeModal)
+// Module 10905 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,9 +49,9 @@ export default function OAuth2AuthorizeModal(arg0) {
   let tmp2Result;
   const tmp = closure_8();
   const tmp2 = sharedValue;
-  const tmp4 = sharedValue(9720)(arg0);
+  const tmp4 = sharedValue(9740)(arg0);
   _require = tmp4;
-  const top = sharedValue(1626)().top;
+  const top = sharedValue(1625)().top;
   const obj = require("ReanimatedRexport");
   sharedValue = obj.useSharedValue(0);
   const fn = function b() {
@@ -84,11 +84,11 @@ export default function OAuth2AuthorizeModal(arg0) {
   }, items);
   const PressableOpacity = require("Pressables").PressableOpacity;
   if (null != tmp4.backStep) {
-    const intl2 = tmp5(1114).intl;
-    stringResult = intl2.string(tmp5(1114).t["13/7kX"]);
+    const intl2 = tmp5(1113).intl;
+    stringResult = intl2.string(tmp5(1113).t["13/7kX"]);
   } else {
-    const intl = tmp5(1114).intl;
-    stringResult = intl.string(tmp5(1114).t.cpT0Cq);
+    const intl = tmp5(1113).intl;
+    stringResult = intl.string(tmp5(1113).t.cpT0Cq);
   }
   const obj6 = {
     accessibilityRole: "button",
@@ -105,27 +105,27 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(10881).ArrowSmallLeftIcon;
+    const ArrowSmallLeftIcon = tmp5(10906).ArrowSmallLeftIcon;
     tmp11Result = tmp11(ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const XSmallIcon = tmp5(7048).XSmallIcon;
+    const XSmallIcon = tmp5(7054).XSmallIcon;
     tmp11Result = tmp11(XSmallIcon, obj8);
   }
   items2 = [closure_5(PressableOpacity, obj6), , ];
   const obj9 = { style: tmp.title, children: closure_5(Text, obj10) };
   obj10 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
-  Text = tmp5(5619).Text;
-  intl3 = tmp5(1114).intl;
+  Text = tmp5(5624).Text;
+  intl3 = tmp5(1113).intl;
   items2[1] = closure_5(View, obj9);
   const obj11 = { style: items3 };
   items3 = [tmp.titleContainerBorder, animatedStyle];
-  items2[2] = closure_5(tmp2(5090).View, obj11);
+  items2[2] = closure_5(tmp2(5095).View, obj11);
   items4 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
-  const SafeAreaPaddingView = tmp5(7286).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(7292).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(10883);
+  tmp2Result = tmp2(10908);
   const merged = Object.assign(tmp4);
   items4[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);

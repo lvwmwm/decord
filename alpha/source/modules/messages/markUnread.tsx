@@ -1,20 +1,20 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 10991
+// Function ID: 10992
 // Name: markUnread
-// Dependencies: [5, 4943, 4858, 6056, 6836, 1384, 1072, 3, 11, 8194, 1283, 2]
+// Dependencies: [5, 4948, 4863, 6061, 6842, 1383, 1072, 3, 11, 8202, 1282, 2]
 // Exports: default
 
-// Module 10972 (markUnread)
+// Module 10991 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8194 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import UserStore from "UserStore" /* 1384 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_2, closure_3, closure_4, currentUser, mention_count, messages;
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

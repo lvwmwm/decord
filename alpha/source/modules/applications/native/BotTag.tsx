@@ -1,17 +1,17 @@
-// Module ID: 9183
-// Function ID: 9184
+// Module ID: 9202
+// Function ID: 9203
 // Name: BotTag
-// Dependencies: [19, 17, 1361, 21, 5009, 575, 1114, 9184, 5619, 2]
+// Dependencies: [19, 17, 1360, 21, 5014, 575, 1113, 9203, 5624, 2]
 
-// Module 9183 (BotTag)
+// Module 9202 (BotTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import ApplicationConstants from "ApplicationConstants" /* 1361 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9184 */;
+import intl5 from "intl" /* 1113 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 9203 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -105,7 +105,7 @@ class BotTag {
     items = [tmp2.tag, tmp11, style, prop];
     items1 = [tmp7Result, ];
     let str3 = "text-xs/semibold";
-    const Text = tmp17(5619).Text;
+    const Text = tmp17(5624).Text;
     const tmp24 = metroRequire;
     const tmp25 = View;
     const tmp26 = hasOwnProperty;

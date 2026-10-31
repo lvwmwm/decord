@@ -1,20 +1,20 @@
-// Module ID: 11732
-// Function ID: 11733
+// Module ID: 11769
+// Function ID: 11770
 // Name: MessageLoadingSpinner
-// Dependencies: [19, 17, 21, 1376, 5591, 575, 6947, 2]
+// Dependencies: [19, 17, 21, 1375, 5596, 575, 6953, 2]
 // Exports: default
 
-// Module 11732 (MessageLoadingSpinner)
+// Module 11769 (MessageLoadingSpinner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5591 */;
+import useToken2 from "useToken" /* 5596 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6947);
+const ActivityIndicator_ActivityIndicator = tmp(6953);
 const requireNativeComponent = react_native.requireNativeComponent;
 const jsx = Fragment.jsx;
 let result = null;

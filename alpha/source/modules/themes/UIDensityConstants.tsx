@@ -1,11 +1,11 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11796
+// Function ID: 11797
 // Name: UIDensityConstants
-// Dependencies: [1197, 2]
+// Dependencies: [1196, 2]
 // Exports: resolveUIDensity
 
-// Module 11759 (UIDensityConstants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+// Module 11796 (UIDensityConstants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/themes/UIDensityConstants.tsx");

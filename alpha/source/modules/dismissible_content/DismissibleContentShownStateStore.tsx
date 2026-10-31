@@ -1,23 +1,23 @@
-// Module ID: 4850
-// Function ID: 4851
+// Module ID: 4855
+// Function ID: 4856
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 4851, 4852, 4845, 1072, 559, 1255, 4846, 1283, 4853, 1260, 504, 4854, 572, 2]
+// Dependencies: [5, 4856, 4857, 4850, 1072, 559, 1254, 4851, 1282, 4858, 1259, 504, 4859, 572, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 4850 (DismissibleContentShownStateStore)
+// Module 4855 (DismissibleContentShownStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import react_native from "react-native" /* 1260 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4846 */;
-import Timers from "Timers" /* 4853 */;
-import isActionRequiredDefault from "isActionRequired" /* 4854 */;
+import react_native from "react-native" /* 1259 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4851 */;
+import Timers from "Timers" /* 4858 */;
+import isActionRequiredDefault from "isActionRequired" /* 4859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4851 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4852 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4845 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4856 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4850 */;
 import Constants from "Constants" /* 1072 */;
-import module_1255 from "module_1255" /* 1255 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,14 +25,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
-const f86291 = (item) => {
+const f86505 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f86293 = () => {
+const f86507 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -131,7 +131,7 @@ let obj = function _arbitrateCandidates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f86291);
+          const found = items1.filter(f86505);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -390,7 +390,7 @@ const tmp4 = new BackoffDefault(1000, 60000);
 let closure_9 = tmp4;
 let closure_10 = {};
 let c11 = null;
-let closure_12 = module_1255.createWithEqualityFn(function initState() {
+let closure_12 = module_1254.createWithEqualityFn(function initState() {
   obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: false };
   new Map();
   new Set();
@@ -456,7 +456,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -579,7 +579,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f86291);
+                let found = items.filter(f86505);
                 const tmp11 = closure_2_14;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
@@ -613,7 +613,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
         }
       }
       c4 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     } catch (tmp25) {
       c4 = 3;
       throw tmp25;
@@ -640,7 +640,7 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f86293);
+    obj.batchUpdates(f86507);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -649,7 +649,7 @@ obj = {
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f86293);
+    obj.batchUpdates(f86507);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -858,7 +858,7 @@ export function getCurrentlyShownCounts() {
 }
 export function reset() {
   obj = react_native;
-  obj.batchUpdates(f86293);
+  obj.batchUpdates(f86507);
   closure_10 = {};
   c11 = null;
   closure_9.succeed();

@@ -1,28 +1,28 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9071
+// Function ID: 9072
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 4921, 4915, 1384, 7939, 1083, 21, 5009, 575, 4946, 5602, 504, 5651, 9022, 1188, 1114, 9039, 5018, 5270, 9043, 6895, 5619, 8017, 9048, 2]
+// Dependencies: [109, 32, 19, 17, 4926, 4920, 1383, 7947, 1083, 21, 5014, 575, 4951, 5607, 504, 5656, 9031, 1187, 1113, 9058, 5023, 5275, 9062, 6901, 5624, 8025, 9067, 2]
 // Exports: default
 
-// Module 9052 (AddMembersBody)
+// Module 9071 (AddMembersBody)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import intl6 from "intl" /* 1114 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import RegexUtilsDefault from "RegexUtils" /* 5651 */;
-import GuildUtilsDefault from "GuildUtils" /* 6895 */;
+import intl6 from "intl" /* 1113 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import RegexUtilsDefault from "RegexUtils" /* 5656 */;
+import GuildUtilsDefault from "GuildUtils" /* 6901 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import UserStore from "UserStore" /* 1384 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7939 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import UserStore from "UserStore" /* 1383 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7947 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, row, user;
@@ -42,7 +42,7 @@ let obj5;
 let size;
 let size1;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(9022);
+const ChannelPermissionsUtilsAll = tmp10(9031);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -146,7 +146,7 @@ export default function AddMembersBody(pendingAdditions) {
   const tmp4 = pendingAdditions;
   let tmp5 = dependencyMap;
   let obj = { isKeyboardAwareOnAndroid: !inActionSheet };
-  const insets = pendingAdditions(5602)(obj).insets;
+  const insets = pendingAdditions(5607)(obj).insets;
   let obj2 = guild(504);
   let items = [GuildRoleStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guild.id));
@@ -174,13 +174,13 @@ export default function AddMembersBody(pendingAdditions) {
   const tmp10Result4 = ChannelPermissionsUtilsAll;
   const membersRows = tmp10Result4.getMembersRows(stateFromStoresArray, channel, guild, permission, obj6);
   const items3 = [];
-  let obj7 = { title: intl.string(tmp6(1114).t["LPJmL/"]), data: items2 };
+  let obj7 = { title: intl.string(tmp6(1113).t["LPJmL/"]), data: items2 };
   const push = items3.push;
-  intl = tmp6(1114).intl;
+  intl = tmp6(1113).intl;
   push(obj7);
   const push2 = items3.push;
-  const obj8 = { title: intl2.string(guild(1114).t["9Oq93m"]), data: membersRows };
-  intl2 = tmp6(1114).intl;
+  const obj8 = { title: intl2.string(guild(1113).t["9Oq93m"]), data: membersRows };
+  intl2 = tmp6(1113).intl;
   push2(obj8);
   const values = Object.values(pendingAdditions);
   const sum = items2.length + membersRows.length;
@@ -202,18 +202,18 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }, items4);
   if (inActionSheet) {
-    BottomSheetScrollView = tmp6(5270).BottomSheetScrollView;
+    BottomSheetScrollView = tmp6(5275).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = c8;
   }
   if (inActionSheet) {
-    BottomSheetSectionList = tmp6(5270).BottomSheetSectionList;
+    BottomSheetSectionList = tmp6(5275).BottomSheetSectionList;
   } else {
     BottomSheetSectionList = closure_9;
   }
   const obj9 = { style: tmp3.inputContainer, children: closure_16(tmp4Result, obj10) };
   obj10 = {
-    placeholder: intl3.string(guild(1114).t.TVZdKh),
+    placeholder: intl3.string(guild(1113).t.TVZdKh),
     tags: mapped,
     onChangeText: function handleQueryChange(str) {
       str = str.trim();
@@ -238,23 +238,23 @@ export default function AddMembersBody(pendingAdditions) {
     },
     autoFocus: true
   };
-  tmp4Result = tmp4(9043);
-  intl3 = tmp6(1114).intl;
+  tmp4Result = tmp4(9062);
+  intl3 = tmp6(1113).intl;
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
   const tmp25 = closure_18;
   const tmp26 = closure_17;
   if (null != inputDesc) {
-    const obj11 = { style: tmp3.inputDescContainer, children: closure_16(guild(5619).Text, obj12) };
+    const obj11 = { style: tmp3.inputDescContainer, children: closure_16(guild(5624).Text, obj12) };
     obj12 = { style: tmp3.inputDescText, variant: "text-xs/medium", color: "text-default", children: inputDesc };
     tmp27Result = tmp27(tmp28, obj11);
   }
   items5[1] = tmp27Result;
   if (canEveryoneRoleResult) {
     const obj13 = { style: tmp3.adminWarning, children: closure_16(InlineNotice, obj14) };
-    obj14 = { type: "warning", message: intl4.string(guild(1114).t["5f3HIC"]), role: "status" };
-    InlineNotice = tmp6(8017).InlineNotice;
-    intl4 = tmp6(1114).intl;
+    obj14 = { type: "warning", message: intl4.string(guild(1113).t["5f3HIC"]), role: "status" };
+    InlineNotice = tmp6(8025).InlineNotice;
+    intl4 = tmp6(1113).intl;
     canEveryoneRoleResult = tmp27(tmp28, obj13);
   }
   items5[2] = canEveryoneRoleResult;
@@ -263,10 +263,10 @@ export default function AddMembersBody(pendingAdditions) {
       let tmp27Result2;
       if (0 === membersRows.length) {
         const obj15 = { children: closure_16(EmptyState, obj16) };
-        obj16 = { Illustration: guild(9048).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1114).t.ErpIY3, obj17) };
-        EmptyState = tmp6(1188).EmptyState;
+        obj16 = { Illustration: guild(9067).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1113).t.ErpIY3, obj17) };
+        EmptyState = tmp6(1187).EmptyState;
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
-        intl5 = tmp6(1114).intl;
+        intl5 = tmp6(1113).intl;
         obj17 = { query: str };
         tmp27Result2 = tmp27(BottomSheetScrollView, obj15);
       }

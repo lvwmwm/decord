@@ -1,20 +1,20 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9757
+// Function ID: 9758
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 5009, 575, 1410, 5646, 5716, 1114, 9738, 5712, 5619, 9740, 7054, 6969, 1188, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1409, 5651, 5721, 1113, 9758, 5717, 5624, 9760, 7060, 6975, 1187, 2]
 // Exports: default
 
-// Module 9737 (IntegrationTypeSelector)
+// Module 9757 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5646 */;
-import UserPlusIcon from "UserPlusIcon" /* 5716 */;
-import ServerIcon from "ServerIcon" /* 9738 */;
+import intl5 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
+import UserPlusIcon from "UserPlusIcon" /* 5721 */;
+import ServerIcon from "ServerIcon" /* 9758 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;

@@ -1,18 +1,18 @@
-// Module ID: 17100
-// Function ID: 17101
+// Module ID: 17158
+// Function ID: 17159
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 7839, 6775, 21, 17029, 17083, 16998, 563, 16997, 9661, 9697, 9695, 9682, 9683, 17005, 16931, 6778, 7864, 17025, 9662, 17032, 14644, 9658, 9699, 17101, 17069, 1114, 8020, 15134, 9685, 2]
+// Dependencies: [5, 19, 7846, 6781, 21, 17087, 17141, 17056, 563, 17055, 9681, 9717, 9715, 9702, 9703, 17063, 16987, 6784, 7871, 17083, 9682, 17090, 14682, 9678, 9719, 17159, 17127, 1113, 8028, 15173, 9705, 2]
 
-// Module 17100 (QuestDockUnenrolledBody)
+// Module 17158 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestTypes from "QuestTypes" /* 6778 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
-import QuestUtils from "QuestUtils" /* 9658 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9699 */;
+import QuestTypes from "QuestTypes" /* 6784 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
+import QuestUtils from "QuestUtils" /* 9678 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7839 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
+import QuestStore from "QuestStore" /* 7846 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ const memoResult = react.memo(function QuestDockUnenrolledBody() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -152,7 +152,7 @@ const memoResult = react.memo(function QuestDockUnenrolledBody() {
             closure_128_5(constants.COLLAPSED);
           }
           isMobileActivityQuest = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp42) {
         isMobileActivityQuest = 3;

@@ -1,14 +1,14 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17361
+// Function ID: 17362
 // Name: EmojiMoneyMouthFaceIcon
-// Dependencies: [19, 21, 575, 5711, 17302, 2]
+// Dependencies: [19, 21, 575, 5716, 17362, 2]
 // Exports: EmojiMoneyMouthFaceIcon
 
-// Module 17301 (EmojiMoneyMouthFaceIcon)
+// Module 17361 (EmojiMoneyMouthFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 17302 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 17362 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

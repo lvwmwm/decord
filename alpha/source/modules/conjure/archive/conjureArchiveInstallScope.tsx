@@ -1,10 +1,10 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 12984
+// Function ID: 12985
 // Name: conjureArchiveInstallScope
-// Dependencies: [5, 12950, 1995, 2]
+// Dependencies: [5, 12985, 1994, 2]
 // Exports: importedConjureInstallScope, readConjureArchiveInstallScope
 
-// Module 12949 (conjureArchiveInstallScope)
+// Module 12984 (conjureArchiveInstallScope)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _readConjureArchiveInstallScope() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;

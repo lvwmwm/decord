@@ -1,54 +1,54 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9681
+// Function ID: 9682
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7836, 2063, 4858, 6566, 1384, 7838, 7840, 7839, 6775, 1072, 1386, 504, 9653, 9662, 1376, 6866, 7845, 1090, 7859, 7861, 7863, 9680, 12, 1252, 9694, 9695, 7835, 9683, 9697, 2062, 9699, 6783, 14632, 7864, 7324, 14635, 9685, 11349, 6782, 14636, 1114, 1896, 6550, 6778, 7855, 5248, 5016, 9675, 2048, 14637, 1253, 1380, 14638, 14639, 4834, 7927, 7920, 2]
+// Dependencies: [5, 32, 19, 7843, 2062, 4863, 6572, 1383, 7845, 7847, 7846, 6781, 1072, 1385, 504, 9673, 9682, 1375, 6872, 7852, 1089, 7866, 7868, 7870, 9700, 12, 1251, 9714, 9715, 7842, 9703, 9717, 2061, 9719, 6789, 14670, 7871, 7330, 14673, 9705, 11385, 6788, 14674, 1113, 1895, 6556, 6784, 7862, 5253, 5021, 9695, 2047, 14675, 1252, 1379, 14676, 14677, 4839, 7935, 7928, 2]
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedAccounts, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useExpiredQuestsMap, useFetchQuestHomeBounties, useFilteredQuests, useGetOrFetchApplicationForConsoleQuests, useIsPreviewerOnAnyQuest, useIsQuestAccessSuspended, useIsQuestEligibleForMembersListPopout, useIsQuestExpired, useIsQuestProgressingOnConsole, useIsQuestProgressingOnDesktop, useIsQuestProgressingVideoQuest, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCollectibles, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeHeroShelf, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useSelectedTaskPlatform, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem, useThirdPartyTaskDetails, useWaitingForConsoleConnection
 
-// Module 9661 (hooks/QuestHooks)
+// Module 9681 (hooks/QuestHooks)
 import get_initialized from "get initialized" /* 504 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import intl7 from "intl" /* 1114 */;
-import _modDef1252 from "module_1252" /* 1252 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import PremiumUtils from "PremiumUtils" /* 2048 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import shared from "shared" /* 5016 */;
-import merged5 from "merged5" /* 6550 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6783 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6866 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7324 */;
-import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7840 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7845 */;
-import AnalyticsActions from "AnalyticsActions" /* 7855 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7859 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
-import QuestType from "QuestType" /* 7863 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
-import QualtricsActionCreators from "QualtricsActionCreators" /* 7920 */;
-import SurveyActionTypes2 from "SurveyActionTypes" /* 7927 */;
-import QuestActionCreators from "QuestActionCreators" /* 9662 */;
-import AssetUtils from "AssetUtils" /* 9675 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9680 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9685 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9699 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11349 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 14635 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 14636 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 14637 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl7 from "intl" /* 1113 */;
+import _modDef1251 from "module_1251" /* 1251 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import shared from "shared" /* 5021 */;
+import merged5 from "merged5" /* 6556 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6789 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6872 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7330 */;
+import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7847 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7852 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7866 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import QuestType from "QuestType" /* 7870 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
+import QualtricsActionCreators from "QualtricsActionCreators" /* 7928 */;
+import SurveyActionTypes2 from "SurveyActionTypes" /* 7935 */;
+import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import AssetUtils from "AssetUtils" /* 9695 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9700 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9705 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11385 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 14673 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 14674 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 14675 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7836 */;
-import LocaleStore_mod from "LocaleStore" /* 2063 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
-import UserStore from "UserStore" /* 1384 */;
-import BountyStore from "BountyStore" /* 7838 */;
-import QuestStore from "QuestStore" /* 7839 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
+import LocaleStore_mod from "LocaleStore" /* 2062 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import UserStore from "UserStore" /* 1383 */;
+import BountyStore from "BountyStore" /* 7845 */;
+import QuestStore from "QuestStore" /* 7846 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -70,35 +70,35 @@ let closure_25;
 let closure_26;
 let closure_27;
 let tmp;
-const QuestDataUtils = tmp(7835);
-const f95040 = () => {
+const QuestDataUtils = tmp(7842);
+const f95293 = () => {
   const isQuestExpiredResult = null != c0 && QuestStore.isQuestExpired(tmp.id);
   return isQuestExpiredResult;
 };
-const f95042 = () => {
+const f95295 = () => {
   const obj = quest(first[22]);
   return obj.isQuestProgressingOnConsole(quest);
 };
-const f95043 = () => optimisticProgress.getOptimisticProgress(closure_0.id, closure_0(dependencyMap[34]).FirstPartyQuestTaskTypes.WATCH_VIDEO);
-const f95044 = () => {
+const f95296 = () => optimisticProgress.getOptimisticProgress(closure_0.id, closure_0(dependencyMap[34]).FirstPartyQuestTaskTypes.WATCH_VIDEO);
+const f95297 = () => {
   const obj = quest(dependencyMap[35]);
   return obj.isVideoQuestProgressing(quest);
 };
-const f95045 = () => {
+const f95298 = () => {
   const obj = quest(closure_2[22]);
   return obj.getThirdPartyTaskDetails(quest);
 };
-const f95047 = () => {
+const f95300 = () => {
   const obj = { fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() };
   return obj;
 };
-const f95054 = () => {
+const f95307 = () => {
   quests = quests.quests;
   const items = [...quests.values()];
   return items;
 };
-const f95055 = (preview) => preview.preview;
-const f95056 = () => quests.quests;
+const f95308 = (preview) => preview.preview;
+const f95309 = () => quests.quests;
 function useQuests(arg0) {
   let closure_2;
   let obj = arg0;
@@ -129,7 +129,7 @@ function useQuests(arg0) {
   const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => ({ isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests }));
   const isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
   lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
-  const obj5 = obj(9653);
+  const obj5 = obj(9673);
   isEligibleForQuests = obj5.getIsEligibleForQuests();
   const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
   const effect = isEligibleForQuests.useEffect(() => {
@@ -528,7 +528,7 @@ function doesQuestPassRewardFilter(config, arg1) {
     let hasInGameQuestRewardResult = obj.hasInGameQuestReward(config.config);
     const tmp2 = require;
     if (!hasInGameQuestRewardResult) {
-      const tmp2Result = tmp2(9680);
+      const tmp2Result = tmp2(9700);
       hasInGameQuestRewardResult = tmp2Result.hasQuestRewardCode(config.config);
     }
     return hasInGameQuestRewardResult;
@@ -633,7 +633,7 @@ function sortQuests(arr, arg1, memo) {
   });
 }
 function seededQuestSortKey(arg0, arg1) {
-  const obj = _modDef1252;
+  const obj = _modDef1251;
   return obj.v3("" + arg0 + ":" + arg1) >>> 0;
 }
 function useAllQuests(quests, sortMethod) {
@@ -647,7 +647,7 @@ function useAllQuests(quests, sortMethod) {
   const stateFromStores = obj.useStateFromStores(items, () => null);
   const items1 = [QuestStore];
   obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items1, f95056);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f95309);
   let questIds;
   if (stateFromStores != null) {
     questIds = stateFromStores.questIds;
@@ -744,12 +744,12 @@ function useIsQuestProgressing(quest) {
   let stateFromStores = obj.useStateFromStores(items, () => QuestStore.isProgressingOnDesktop(id.id));
   const items1 = [quest];
   _require = quest;
-  const memo = react.useMemo(f95042, items1);
+  const memo = react.useMemo(f95295, items1);
   const items2 = [QuestStore];
   const items3 = [quest, ];
   obj2 = require("get initialized");
-  items3[1] = obj2.useStateFromStores(items2, f95043);
-  const memo1 = react.useMemo(f95044, items3);
+  items3[1] = obj2.useStateFromStores(items2, f95296);
+  const memo1 = react.useMemo(f95297, items3);
   if (!stateFromStores) {
     stateFromStores = memo;
   }
@@ -792,7 +792,7 @@ function useTaskPlatformScreen(quest, questTaskDetails) {
   const items5 = [quest];
   const stateFromStores = obj4.useStateFromStores(items4, () => QuestStore.isProgressingOnDesktop(id.id));
   const items6 = [questTaskDetails];
-  const memo1 = memo2.useMemo(f95042, items5);
+  const memo1 = memo2.useMemo(f95295, items5);
   memo2 = memo2.useMemo(() => {
     const str = merged5;
     const match = str.match(questTaskDetails);
@@ -1079,7 +1079,7 @@ export function useShouldShowBonusOrbsUX(quest, questOrbMultiplierEligibility) {
   const items = [QuestStore];
   const items1 = [quest];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f95040, items1);
+  const stateFromStores = obj.useStateFromStores(items, f95293, items1);
   obj2 = require("QuestRewardUtils");
   const result = obj2.hasVirtualCurrencyReward(quest.config);
   const obj3 = require("QuestRewardUtils");
@@ -1117,7 +1117,7 @@ export function useIsQuestExpired(questDockQuest) {
   const items = [QuestStore];
   const items1 = [questDockQuest];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f95040, items1);
+  return obj.useStateFromStores(items, f95293, items1);
 }
 export function useIsQuestAccessSuspended() {
   const items = [QuestStore];
@@ -1171,7 +1171,7 @@ export function useIsQuestEligibleForMembersListPopout(userStatus, arg1, arg2) {
             claimedAt = userStatus.claimedAt;
           }
           let tmp8 = null != claimedAt;
-          const tmpResult = tmp(7859);
+          const tmpResult = tmp(7866);
           if (tmp8) {
             tmp8 = !tmpResult.isStreamingAndCanWatch(arg1, stateFromStores);
           }
@@ -1237,7 +1237,7 @@ export function useIsQuestProgressingOnDesktop(arg0) {
 export function useIsQuestProgressingOnConsole(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
-  return react.useMemo(f95042, items);
+  return react.useMemo(f95295, items);
 }
 export function useIsQuestProgressingVideoQuest(arg0) {
   let closure_0;
@@ -1245,15 +1245,15 @@ export function useIsQuestProgressingVideoQuest(arg0) {
   const items = [QuestStore];
   const items1 = [arg0, ];
   const obj = require("get initialized");
-  items1[1] = obj.useStateFromStores(items, f95043);
-  return react.useMemo(f95044, items1);
+  items1[1] = obj.useStateFromStores(items, f95296);
+  return react.useMemo(f95297, items1);
 }
 export { useIsQuestProgressing };
 export { useQuestTaskDetails };
 export function useThirdPartyTaskDetails(quest) {
   let closure_0 = quest;
   const items = [quest];
-  return react.useMemo(f95045, items);
+  return react.useMemo(f95298, items);
 }
 export function useConnectedConsoleLinkOnClick(quest) {
   let accounts;
@@ -1268,7 +1268,7 @@ export function useConnectedConsoleLinkOnClick(quest) {
   let tmp = quest;
   let obj = quest(504);
   const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95047);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95300);
   ({ fetching, accounts } = stateFromStoresObject);
   const items1 = [accounts];
   const memo = react.useMemo(() => {
@@ -1282,10 +1282,10 @@ export function useConnectedConsoleLinkOnClick(quest) {
   const prop = memo.xboxAndPlaystationAccounts;
   const length = prop.length;
   const tmp5 = useIsQuestProgressing(quest);
-  obj2 = quest(7861);
+  obj2 = quest(7868);
   let c3 = obj2.isConsoleQuest(quest) && 0 === length && !tmp5;
   const isConsoleQuestResult = obj2.isConsoleQuest(quest) && 0 === length && !tmp5;
-  const tmpResult = tmp(9697);
+  const tmpResult = tmp(9717);
   let closure_4 = tmpResult.useGetQuestImpressionId();
   return () => {
     const tmp = QuestPlatformUtils;
@@ -1342,7 +1342,7 @@ export function useQuestForMemberListSocialEntryPoint(arg0) {
     }
     return Array.from(set);
   }, items1);
-  const items2 = [arg0, stateFromStores, stateFromStores(7324)(memo)];
+  const items2 = [arg0, stateFromStores, stateFromStores(7330)(memo)];
   const memo1 = react.useMemo(() => {
     const obj = utils_QuestUtils;
     const result = obj.filterQuestsForSocialEntrypoints(stateFromStores, authStore4);
@@ -1353,7 +1353,7 @@ export function useQuestForMemberListSocialEntryPoint(arg0) {
   const items4 = [memo1];
   let tmp4 = null;
   const obj3 = require("get initialized");
-  if (!obj3.useStateFromStores(items3, f95040, items4)) {
+  if (!obj3.useStateFromStores(items3, f95293, items4)) {
     tmp4 = memo1;
   }
   return tmp4;
@@ -1414,7 +1414,7 @@ export function useConnectedAccounts() {
   let accounts;
   const items = [ConnectedAccountsStore];
   const obj = accounts(504);
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95047);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95300);
   accounts = stateFromStoresObject.accounts;
   const items1 = [accounts];
   const fetching = stateFromStoresObject.fetching;
@@ -1468,7 +1468,7 @@ export function useManuallyStartConsoleQuest(questId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1530,7 +1530,7 @@ export function useManuallyStartConsoleQuest(questId) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp30) {
           beforeRequest = tmp30;
           if (0 === c3) {
@@ -1556,7 +1556,7 @@ export function useWaitingForConsoleConnection(quest) {
   accounts = undefined;
   const items = [ConnectedAccountsStore];
   const obj = accounts(504);
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95047);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95300);
   ({ fetching, accounts } = stateFromStoresObject);
   const items1 = [accounts];
   const memo = react.useMemo(() => {
@@ -1570,7 +1570,7 @@ export function useWaitingForConsoleConnection(quest) {
   const prop = memo.xboxAndPlaystationAccounts;
   const length = prop.length;
   const tmp3 = useIsQuestProgressing(quest);
-  obj2 = accounts(7861);
+  obj2 = accounts(7868);
   const isConsoleQuestResult = obj2.isConsoleQuest(quest) && 0 === length && !tmp3;
   return isConsoleQuestResult;
 }
@@ -1579,7 +1579,7 @@ export function useQuestHowToHelpArticle() {
   let fetching;
   let obj = accounts(504);
   const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95047);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f95300);
   ({ fetching, accounts } = stateFromStoresObject);
   const items1 = [accounts];
   const memo = react.useMemo(() => {
@@ -1593,12 +1593,12 @@ export function useQuestHowToHelpArticle() {
   const articleURL = obj2.getArticleURL(constants7.QUEST_HOW_TO_PLAYSTATION);
   const obj3 = HelpdeskUtilsDefault;
   const articleURL1 = obj3.getArticleURL(constants7.QUEST_HOW_TO_XBOX);
-  const intl = accounts(1114).intl;
-  const formatResult = intl.format(accounts(1114).t.beN4DG, { psHelpdeskArticle: articleURL, xboxHelpdeskArticle: articleURL1 });
-  const intl2 = accounts(1114).intl;
+  const intl = accounts(1113).intl;
+  const formatResult = intl.format(accounts(1113).t.beN4DG, { psHelpdeskArticle: articleURL, xboxHelpdeskArticle: articleURL1 });
+  const intl2 = accounts(1113).intl;
   const format = intl2.format;
   let tmp8 = articleURL1;
-  const HVS7nh = accounts(1114).t.HVS7nh;
+  const HVS7nh = accounts(1113).t.HVS7nh;
   if (memo.playstationAccounts.length > 0) {
     tmp8 = articleURL;
   }
@@ -1762,7 +1762,7 @@ export function useQuestCompletionDetails(quest) {
     let percentComplete = first.percentComplete;
     _require = quest;
     const items3 = [quest];
-    const memo = react.useMemo(f95045, items3);
+    const memo = react.useMemo(f95298, items3);
     if (null != memo) {
       percentComplete = memo.percentComplete;
     }
@@ -1784,7 +1784,7 @@ export function useQuestCompletionDetails(quest) {
       obj.completedRatioDisplay = combined;
       return obj;
     }
-    const tmpResult = tmp(1896);
+    const tmpResult = tmp(1895);
     combined = tmpResult.formatPercent(tmp4, percentComplete, { roundingMode: "floor" });
   } else {
     throw new TypeError("Trying to call a non-function");
@@ -1867,7 +1867,7 @@ export function useQuestWarningTips(userStatus) {
     userStatus = userStatus.userStatus;
     let enrolledAt;
     obj2 = require("get initialized");
-    const stateFromStores = obj2.useStateFromStores(items3, f95040, items4);
+    const stateFromStores = obj2.useStateFromStores(items3, f95293, items4);
     if (userStatus != null) {
       enrolledAt = userStatus.enrolledAt;
     }
@@ -1878,7 +1878,7 @@ export function useQuestWarningTips(userStatus) {
       completedAt = userStatus2.completedAt;
     }
     const tmp20 = null != completedAt;
-    const DESKTOP = tmp12(6783).FirstPartyQuestTaskTypesSets.DESKTOP;
+    const DESKTOP = tmp12(6789).FirstPartyQuestTaskTypesSets.DESKTOP;
     let hasItem = DESKTOP.has(tmp5.taskType) && tmp5.percentComplete > 0;
     const percentComplete = tmp5.percentComplete;
     if (tmp18) {
@@ -1905,15 +1905,15 @@ export function useQuestWarningTips(userStatus) {
     }
     const tmp12Result4 = require("PlatformUtils");
     const items5 = [];
-    const isMacResult = tmp12Result4.isMac() && tmp5.taskType === tmp12(6783).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp18;
+    const isMacResult = tmp12Result4.isMac() && tmp5.taskType === tmp12(6789).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP && tmp18;
     if (isMacResult) {
       const push = items5.push;
-      const intl = tmp12(1114).intl;
+      const intl = tmp12(1113).intl;
       push(intl.string(require("intl").t.MFGxFM));
     }
     if (tmp23) {
       const push2 = items5.push;
-      const intl2 = tmp12(1114).intl;
+      const intl2 = tmp12(1113).intl;
       push2(intl2.string(require("intl").t.BV6xDm));
     }
     return items5;
@@ -2066,23 +2066,23 @@ export function useClaimedCollectibleRewardMessage(config) {
   const obj7 = PremiumUtils;
   const isPremiumResult = obj7.isPremium(stateFromStores, PremiumTypes.TIER_2);
   if (null == collectibleQuestRewardDuration) {
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     const obj8 = { decorationName: defaultRewardName };
     return intl2.formatToPlainString(intl7.t.l9uXL8, obj8);
   } else {
     let formatToPlainStringResult4;
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1113).intl;
     const obj9 = { rewardName: defaultRewardName };
     const formatToPlainStringResult = intl3.formatToPlainString(intl7.t.o97tNn, obj9);
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1113).intl;
     const obj10 = { rewardName: defaultRewardName, expirationDate: collectibleQuestRewardExtendableExpirationDate };
     const formatToPlainStringResult1 = intl4.formatToPlainString(intl7.t.PkyRZo, obj10);
-    const intl5 = tmp(1114).intl;
+    const intl5 = tmp(1113).intl;
     const obj11 = { rewardName: defaultRewardName, duration: collectibleQuestRewardDuration };
-    let formatToPlainStringResult2 = intl5.formatToPlainString(tmp(1114).t.ie4YK0, obj11);
-    const intl6 = tmp(1114).intl;
+    let formatToPlainStringResult2 = intl5.formatToPlainString(tmp(1113).t.ie4YK0, obj11);
+    const intl6 = tmp(1113).intl;
     const obj12 = { duration: collectibleQuestRewardDuration, rewardName: defaultRewardName };
-    let formatToPlainStringResult3 = intl6.formatToPlainString(tmp(1114).t.yCpc0U, obj12);
+    let formatToPlainStringResult3 = intl6.formatToPlainString(tmp(1113).t.yCpc0U, obj12);
     if (result1) {
       if (result) {
         if (isPremiumResult) {
@@ -2094,9 +2094,9 @@ export function useClaimedCollectibleRewardMessage(config) {
       }
       formatToPlainStringResult4 = formatToPlainStringResult3;
     } else {
-      const intl = tmp(1114).intl;
+      const intl = tmp(1113).intl;
       const obj13 = { duration: collectibleQuestRewardDuration, decorationName: defaultRewardName };
-      formatToPlainStringResult4 = intl.formatToPlainString(tmp(1114).t.tTlItm, obj13);
+      formatToPlainStringResult4 = intl.formatToPlainString(tmp(1113).t.tTlItm, obj13);
     }
     return formatToPlainStringResult4;
   }
@@ -2111,14 +2111,14 @@ export function useLaunchInGameActivityQuest(quest) {
 export function useIsPreviewerOnAnyQuest() {
   const items = [QuestStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f95054);
-  return stateFromStoresArray.some(f95055);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f95307);
+  return stateFromStoresArray.some(f95308);
 }
 export function useShouldShowPreviewToolTab() {
   let items = [QuestStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f95054);
-  return stateFromStoresArray.some(f95055);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f95307);
+  return stateFromStoresArray.some(f95308);
 }
 export function useShouldShowQuestsActivityPanelItem(userStatus) {
   let c0;
@@ -2140,7 +2140,7 @@ export function useShouldShowQuestsActivityPanelItem(userStatus) {
   const items1 = [tmp5];
   let claimedAt;
   obj2 = require("get initialized");
-  const stateFromStores = obj2.useStateFromStores(items, f95040, items1);
+  const stateFromStores = obj2.useStateFromStores(items, f95293, items1);
   const tmp6 = _require;
   const tmp8 = QuestStore;
   if (userStatus != null) {
@@ -2244,7 +2244,7 @@ export function useQuestHomeHeroShelf(questIds) {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [QuestStore];
-  stateFromStores = obj.useStateFromStores(items, f95056);
+  stateFromStores = obj.useStateFromStores(items, f95309);
   questIds = undefined;
   if (questIds != null) {
     questIds = questIds.questIds;
@@ -2320,7 +2320,7 @@ export function useFetchQuestHomeBounties(arg0) {
             obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -2394,7 +2394,7 @@ export function useFetchQuestHomeBounties(arg0) {
                 c3(false);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp31) {
             closure_2 = tmp31;

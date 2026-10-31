@@ -1,15 +1,15 @@
-// Module ID: 4822
-// Function ID: 4823
+// Module ID: 4827
+// Function ID: 4828
 // Name: BillingUtils
-// Dependencies: [5, 1083, 4823, 1243, 1283, 4829, 2]
+// Dependencies: [5, 1083, 4828, 1242, 1282, 4834, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 4822 (BillingUtils)
+// Module 4827 (BillingUtils)
 import Constants from "Constants" /* 1083 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import BraintreeUtils from "BraintreeUtils" /* 4823 */;
-import BillingErrorDefault from "BillingError" /* 4829 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import BraintreeUtils from "BraintreeUtils" /* 4828 */;
+import BillingErrorDefault from "BillingError" /* 4834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _createGatewayCheckoutContext() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

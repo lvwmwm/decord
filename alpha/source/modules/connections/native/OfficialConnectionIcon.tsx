@@ -1,22 +1,22 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11593
+// Function ID: 11594
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 1072, 21, 5009, 7349, 7368, 575, 1091, 1188, 11558, 11559, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 7355, 7374, 575, 1090, 1187, 11594, 11595, 2]
 // Exports: default
 
-// Module 11557 (OfficialConnectionIcon)
+// Module 11593 (OfficialConnectionIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import native from "native" /* 1188 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 7349 */;
-import RoleIconDefault from "RoleIcon" /* 7368 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11558 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11559 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import native from "native" /* 1187 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 7355 */;
+import RoleIconDefault from "RoleIcon" /* 7374 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11594 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11595 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -92,11 +92,11 @@ export default function OfficialConnectionIcon(arg0) {
   items1 = [style, size1];
   const obj5 = { style: items2, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, color: roleColor };
   items2 = [tmp.verifiedCheck, size1];
-  const Icon = tmp2(1188).Icon;
+  const Icon = tmp2(1187).Icon;
   items3 = [metroRequire(Icon, obj5), ];
   const obj6 = { style: items4, size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, color: PRIMARY_630 };
   items4 = [tmp.verifiedCheck, size1];
-  const Icon2 = tmp2(1188).Icon;
+  const Icon2 = tmp2(1187).Icon;
   items3[1] = metroRequire(Icon2, obj6);
   return metroImportDefault(View, obj4);
 };

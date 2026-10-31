@@ -1,22 +1,22 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11280
+// Function ID: 11281
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10784, 11230, 21, 5009, 575, 563, 11244, 5707, 1114, 11255, 11243, 5619, 1188, 11257, 11258, 2]
+// Dependencies: [19, 17, 10804, 11256, 21, 5014, 575, 563, 11270, 5712, 1113, 11281, 11269, 5624, 1187, 11283, 11284, 2]
 // Exports: default
 
-// Module 11254 (WasThisHelpfulSection)
+// Module 11280 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10784 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11243 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11244 */;
-import ShieldIcon from "ShieldIcon" /* 11255 */;
+import intl4 from "intl" /* 1113 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10804 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11269 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11270 */;
+import ShieldIcon from "ShieldIcon" /* 11281 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 11230 */;
+import Constants from "Constants" /* 11256 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
@@ -96,7 +96,7 @@ export default function WasThisHelpfulSection(channelId) {
     const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
-    intl = tmp(1114).intl;
+    intl = tmp(1113).intl;
     open(tmp6, obj2);
     const obj3 = { channelId, warningId, senderId, warningType: type, cta };
     type = undefined;

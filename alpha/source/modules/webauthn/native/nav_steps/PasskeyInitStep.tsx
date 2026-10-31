@@ -1,20 +1,20 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16665
+// Function ID: 16666
 // Name: PasskeyInitStep
-// Dependencies: [5, 32, 19, 17, 16526, 1072, 21, 5009, 575, 504, 16624, 5619, 1114, 6761, 8020, 5733, 16616, 5953, 1188, 16628, 5253, 16629, 1995, 10212, 7054, 6969, 16630, 1498, 6742, 7112, 7552, 8169, 2]
+// Dependencies: [5, 32, 19, 17, 16568, 1072, 21, 5014, 575, 504, 16666, 5624, 1113, 6767, 8028, 5738, 16658, 5958, 1187, 16670, 5258, 16671, 1994, 10232, 7060, 6975, 16672, 1497, 6748, 7118, 7558, 8177, 2]
 // Exports: default
 
-// Module 16623 (PasskeyInitStep)
+// Module 16665 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6742 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16526 */;
+import WebAuthnStore from "WebAuthnStore" /* 16568 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2, deleting, dependencyMap, setDeleting;
@@ -53,16 +53,16 @@ function CredentialList(navigation) {
     let tmp7 = View;
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
     let tmp8 = closure_9;
-    items1 = [closure_9(tmp(16624).PasskeysSpotIllustration, { scale: 0.6 }), ];
-    let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1114).t.FSNwFW) };
-    const Text = tmp(5619).Text;
-    intl2 = tmp(1114).intl;
+    items1 = [closure_9(tmp(16666).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1113).t.FSNwFW) };
+    const Text = tmp(5624).Text;
+    intl2 = tmp(1113).intl;
     items1[1] = closure_9(Text, obj3);
     return closure_10(View, obj2);
   } else {
     let tmp5 = closure_9;
     let obj4 = {
-      title: intl.string(tmp(1114).t["4RIqrQ"]),
+      title: intl.string(tmp(1113).t["4RIqrQ"]),
       hasIcons: false,
       children: credentials.map((label) => {
           let ButtonGroup;
@@ -104,7 +104,7 @@ function CredentialList(navigation) {
                   let obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -171,7 +171,7 @@ function CredentialList(navigation) {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           let c3;
@@ -211,7 +211,7 @@ function CredentialList(navigation) {
                               c3 = 0;
                               setDeleting(false);
                               c4 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } catch (tmp21) {
                             closure_2 = tmp21;
@@ -232,7 +232,7 @@ function CredentialList(navigation) {
                       obj.openLazy(tmp(paths[22])(paths[21], paths.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj8);
                     }
                     setDeleting = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp45) {
                   setDeleting = 3;
@@ -273,8 +273,8 @@ function CredentialList(navigation) {
           return tmp(TableRow, obj, label.id);
         })
     };
-    const TableRowGroup = tmp(7054).TableRowGroup;
-    intl = tmp(1114).intl;
+    const TableRowGroup = tmp(7060).TableRowGroup;
+    intl = tmp(1113).intl;
     return closure_9(TableRowGroup, obj4);
   }
 }

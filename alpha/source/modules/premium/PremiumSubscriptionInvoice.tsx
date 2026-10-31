@@ -1,16 +1,16 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15272
+// Function ID: 15273
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 2056, 1072, 2048, 1283, 572, 6440, 38, 6449, 2]
+// Dependencies: [109, 32, 5, 19, 2055, 1072, 2047, 1282, 572, 6446, 38, 6455, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 15233 (PremiumSubscriptionInvoice)
+// Module 15272 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1072 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 2056 */;
+import InvoiceRecord from "InvoiceRecord" /* 2055 */;
 import size from "module_2" /* 2 */;
 
 let apply_wallet_balance, payment_source_id, planId, sku_subscription_plan_id;
@@ -47,7 +47,7 @@ let obj = function _createSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -203,7 +203,7 @@ obj = function _updateSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let currency;
@@ -356,7 +356,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -469,7 +469,7 @@ obj = function _getSubscriptionInvoice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -583,7 +583,7 @@ export function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -633,7 +633,7 @@ export function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp28) {
             if (0 === c3) {
@@ -718,7 +718,7 @@ export function useFetchSubscriptionGiftInvoicePreview(preventFetch, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -768,7 +768,7 @@ export function useFetchSubscriptionGiftInvoicePreview(preventFetch, arg1) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp28) {
             if (0 === c3) {
@@ -931,7 +931,7 @@ export function useFetchSubscriptionInvoicePreview(subscriptionId, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -981,7 +981,7 @@ export function useFetchSubscriptionInvoicePreview(subscriptionId, arg1) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp28) {
             if (0 === c3) {
@@ -1054,7 +1054,7 @@ export function useGetSubscriptionInvoice(preventFetch, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -1104,7 +1104,7 @@ export function useGetSubscriptionInvoice(preventFetch, arg1) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp28) {
             if (0 === c3) {

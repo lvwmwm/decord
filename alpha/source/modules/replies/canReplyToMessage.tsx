@@ -1,17 +1,17 @@
-// Module ID: 8425
-// Function ID: 8426
+// Module ID: 8433
+// Function ID: 8434
 // Name: canReplyToMessage
-// Dependencies: [32, 4941, 1384, 1072, 1083, 1089, 7437, 8426, 504, 2]
+// Dependencies: [32, 4946, 1383, 1072, 1083, 1088, 7443, 8434, 504, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 8425 (canReplyToMessage)
+// Module 8433 (canReplyToMessage)
 import Constants2 from "Constants" /* 1083 */;
-import MessageTypes from "MessageTypes" /* 1089 */;
-import ThreadHooks from "ThreadHooks" /* 7437 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8426 */;
+import MessageTypes from "MessageTypes" /* 1088 */;
+import ThreadHooks from "ThreadHooks" /* 7443 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8434 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import UserStore from "UserStore" /* 1384 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ export function canReplyToMessage(isPrivate, type) {
     hasItem = obj2.can(Permissions.SEND_MESSAGES, isPrivate) && obj2.can(Permissions.READ_MESSAGE_HISTORY, isPrivate);
   }
   if (hasItem) {
-    const REPLYABLE = tmp(1089).MessageTypesSets.REPLYABLE;
+    const REPLYABLE = tmp(1088).MessageTypesSets.REPLYABLE;
     hasItem = REPLYABLE.has(type.type);
   }
   const currentUser = UserStore.getCurrentUser();

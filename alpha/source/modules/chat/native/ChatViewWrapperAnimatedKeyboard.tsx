@@ -1,16 +1,16 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11237
+// Function ID: 11238
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 5090, 5252, 11219, 5249, 5605, 11224, 11226, 5606, 11227, 2]
+// Dependencies: [19, 17, 21, 5095, 5257, 11238, 5254, 5610, 11250, 11252, 5611, 11253, 2]
 // Exports: default
 
-// Module 11218 (ChatViewWrapperAnimatedKeyboard)
+// Module 11237 (ChatViewWrapperAnimatedKeyboard)
 import react_native from "react-native" /* 17 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5605 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11224 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5610 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11250 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

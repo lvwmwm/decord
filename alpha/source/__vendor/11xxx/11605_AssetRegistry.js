@@ -1,10 +1,10 @@
 // Module ID: 11605
 // Function ID: 11606
 // Name: AssetRegistry
-// Dependencies: [1120]
+// Dependencies: [1119]
 
 // Module 11605 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1120 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "17f7b21a5b26889a6dffe34b080f6103", name: "TimerIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 54, height: 54, scales: [1], hash: "9a03a674792f2187c83109744abce109", name: "connections-profile-steam-dota2", type: "png" });

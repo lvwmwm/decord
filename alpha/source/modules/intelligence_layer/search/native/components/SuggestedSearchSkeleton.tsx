@@ -1,19 +1,19 @@
-// Module ID: 18719
-// Function ID: 18720
+// Module ID: 18761
+// Function ID: 18762
 // Name: SuggestedSearchSkeleton
-// Dependencies: [19, 17, 13838, 9806, 21, 5009, 575, 5090, 5249, 2]
+// Dependencies: [19, 17, 13873, 9827, 21, 5014, 575, 5095, 5254, 2]
 // Exports: default
 
-// Module 18719 (SuggestedSearchSkeleton)
+// Module 18761 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13838 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13873 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -45,7 +45,7 @@ export default function SuggestedSearchSkeleton() {
   let obj6;
   let sharedValue;
   const tmp = closure_7();
-  let obj = sharedValue(5090);
+  let obj = sharedValue(5095);
   sharedValue = obj.useSharedValue(0.4);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -62,7 +62,7 @@ export default function SuggestedSearchSkeleton() {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 9760194902231;
   fn.__initData = __initData;
-  const obj2 = sharedValue(5090);
+  const obj2 = sharedValue(5095);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj3 = { style: items1, "aria-hidden": true, children: items2 };
   items1 = [tmp.row, animatedStyle];

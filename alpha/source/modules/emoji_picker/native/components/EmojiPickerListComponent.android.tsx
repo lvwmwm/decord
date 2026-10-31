@@ -1,24 +1,24 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 10040
+// Function ID: 10041
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6790, 6793, 9921, 1229, 21, 5009, 5090, 10020, 5270, 1623, 4955, 7232, 10008, 2]
+// Dependencies: [19, 6796, 6799, 9942, 1228, 21, 5014, 5095, 10041, 5275, 1622, 4960, 7238, 10029, 2]
 // Exports: default
 
-// Module 10019 (EmojiPickerListComponent)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4955 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6793 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7232 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9921 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10008 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10020 */;
+// Module 10040 (EmojiPickerListComponent)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6799 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7238 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10029 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10041 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
-import BottomSheetModal from "BottomSheetModal" /* 5270 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
+import createStyles from "createStyles" /* 5014 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
 import size from "module_2" /* 2 */;
 
 const EmojiPickerNativeComponentDefault = EmojiPickerNativeComponent2;

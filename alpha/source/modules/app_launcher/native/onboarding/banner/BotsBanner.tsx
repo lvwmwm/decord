@@ -1,18 +1,18 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12252
+// Function ID: 12253
 // Name: BotsBanner
-// Dependencies: [19, 21, 12215, 12200, 12211, 1114, 2]
+// Dependencies: [19, 21, 12253, 12238, 12249, 1113, 2]
 // Exports: default
 
-// Module 12214 (BotsBanner)
+// Module 12252 (BotsBanner)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1114 */;
-import useBannerBots from "useBannerBots" /* 12215 */;
+import intl2 from "intl" /* 1113 */;
+import useBannerBots from "useBannerBots" /* 12253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const BannerBaseDefault = tmp5(12211);
+const BannerBaseDefault = tmp5(12249);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
 
@@ -32,7 +32,7 @@ export default function BotsBanner(context) {
     if (null != secondBotApplication) {
       const obj2 = { image: tmp6, text: intl.formatToPlainString(intl2.t["9SN0xw"], obj3) };
       const tmp5Result = BannerBaseDefault;
-      intl = tmp(1114).intl;
+      intl = tmp(1113).intl;
       obj3 = { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name };
       tmp4Result = tmp4(tmp5Result, obj2);
     }

@@ -1,15 +1,15 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7260
+// Function ID: 7261
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [19, 5041, 21, 563, 6938, 6902, 1114, 6906, 7255, 5629, 2]
+// Dependencies: [19, 5046, 21, 563, 6944, 6908, 1113, 6912, 7261, 5634, 2]
 // Exports: default
 
-// Module 7254 (MemberVerificationAlertIncomplete)
-import intl5 from "intl" /* 1114 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6902 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6938 */;
+// Module 7260 (MemberVerificationAlertIncomplete)
+import intl5 from "intl" /* 1113 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6908 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6944 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5041 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -59,24 +59,24 @@ export default function MemberVerificationAlertIncomplete(guildId) {
     name = stateFromStores.name;
   }
   if (null != name) {
-    let intl2 = tmp2(1114).intl;
+    let intl2 = tmp2(1113).intl;
     const obj2 = { guildName: stateFromStores.name };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1114).t.f5Jaw7, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.f5Jaw7, obj2);
   } else {
-    let intl = tmp2(1114).intl;
-    formatToPlainStringResult = intl.string(tmp2(1114).t["0sTyEb"]);
+    let intl = tmp2(1113).intl;
+    formatToPlainStringResult = intl.string(tmp2(1113).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(7255).ListViewIcon, header: formatToPlainStringResult, buttons: closure_7(closure_6, obj4) };
-  const tmp9 = onClose(6906);
+  const obj3 = { icon: guildId(7261).ListViewIcon, header: formatToPlainStringResult, buttons: closure_7(closure_6, obj4) };
+  const tmp9 = onClose(6912);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };
-  const obj5 = { variant: "secondary", text: intl3.string(guildId(1114).t.h3aGmv), onPress: callback };
-  const Button = tmp2(5629).Button;
-  intl3 = tmp2(1114).intl;
+  const obj5 = { variant: "secondary", text: intl3.string(guildId(1113).t.h3aGmv), onPress: callback };
+  const Button = tmp2(5634).Button;
+  intl3 = tmp2(1113).intl;
   items4 = [closure_5(Button, obj5), ];
-  const obj6 = { text: intl4.string(guildId(1114).t.OQFlFD), variant: "destructive", onPress: callback1 };
-  const Button2 = tmp2(5629).Button;
-  intl4 = tmp2(1114).intl;
+  const obj6 = { text: intl4.string(guildId(1113).t.OQFlFD), variant: "destructive", onPress: callback1 };
+  const Button2 = tmp2(5634).Button;
+  intl4 = tmp2(1113).intl;
   items4[1] = closure_5(Button2, obj6);
   return closure_5(tmp9, obj3);
 };

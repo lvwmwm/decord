@@ -1,22 +1,22 @@
-// Module ID: 16507
-// Function ID: 16508
+// Module ID: 16549
+// Function ID: 16550
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7371, 21, 5009, 575, 16506, 8806, 14930, 5202, 1114, 16508, 14908, 16509, 14969, 8971, 5090, 12476, 2]
+// Dependencies: [32, 19, 17, 7377, 21, 5014, 575, 16548, 8814, 14968, 5207, 1113, 16550, 14946, 16551, 15006, 8980, 5095, 12511, 2]
 
-// Module 16507 (UserProfileEditFormTabs)
+// Module 16549 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import ChatInputUtils from "ChatInputUtils" /* 5202 */;
-import Constants from "Constants" /* 7371 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14908 */;
-import reactDefault from "react" /* 16506 */;
-import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16508 */;
-import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16509 */;
+import intl3 from "intl" /* 1113 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import Constants from "Constants" /* 7377 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14946 */;
+import reactDefault from "react" /* 16548 */;
+import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16550 */;
+import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16551 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

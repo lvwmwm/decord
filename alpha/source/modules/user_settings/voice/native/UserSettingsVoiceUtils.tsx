@@ -1,14 +1,14 @@
-// Module ID: 11917
-// Function ID: 11918
+// Module ID: 11955
+// Function ID: 11956
 // Name: UserSettingsVoiceUtils
-// Dependencies: [2007, 1072, 5896, 11918, 504, 2]
+// Dependencies: [2006, 1072, 5915, 11956, 504, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 11917 (UserSettingsVoiceUtils)
+// Module 11955 (UserSettingsVoiceUtils)
 import get_initialized from "get initialized" /* 504 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5896 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11918 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11956 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

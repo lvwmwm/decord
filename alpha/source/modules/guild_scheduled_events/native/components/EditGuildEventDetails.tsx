@@ -1,22 +1,22 @@
-// Module ID: 9063
-// Function ID: 9064
+// Module ID: 9082
+// Function ID: 9083
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6849, 4864, 21, 5009, 1114, 2044, 8960, 1498, 5619, 5629, 1889, 8959, 5018, 8980, 9053, 8982, 2]
+// Dependencies: [32, 19, 6855, 4869, 21, 5014, 1113, 2042, 8969, 1497, 5624, 5634, 1888, 8968, 5023, 8989, 9072, 8991, 2]
 // Exports: default
 
-// Module 9063 (EditGuildEventDetails)
-import intl8 from "intl" /* 1114 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1889 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8959 */;
-import ScheduleUtils from "ScheduleUtils" /* 8960 */;
+// Module 9082 (EditGuildEventDetails)
+import intl8 from "intl" /* 1113 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8968 */;
+import ScheduleUtils from "ScheduleUtils" /* 8969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -50,9 +50,9 @@ export default function EditGuildEventDetails(guildEvent) {
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f93693 = () => {
+  const f93945 = () => {
     const obj = ScheduleUtils;
-    return obj.recurrenceRuleToOption(_modDef2044(scheduledStartTime), recurrenceRule);
+    return obj.recurrenceRuleToOption(_modDef2042(scheduledStartTime), recurrenceRule);
   };
   guildEvent = guildEvent.guildEvent;
   const onChange = guildEvent.onChange;
@@ -68,20 +68,20 @@ export default function EditGuildEventDetails(guildEvent) {
   const items = [scheduledStartTime];
   let tmp = c11();
   ({ name, entityType } = guildEvent);
-  memo = memo.useMemo(() => _modDef2044(scheduledStartTime), items);
+  memo = memo.useMemo(() => _modDef2042(scheduledStartTime), items);
   const items1 = [scheduledEndTime, scheduledStartTime];
   const memo1 = memo.useMemo(() => {
     let addResult;
     if (null != scheduledEndTime) {
-      addResult = _modDef2044(tmp);
+      addResult = _modDef2042(tmp);
     } else {
-      const obj = _modDef2044(scheduledStartTime);
+      const obj = _modDef2042(scheduledStartTime);
       addResult = obj.add(1, "hour");
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f93693), 2);
-  const tmp4 = recurrenceRule(memo.useState(f93693), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f93945), 2);
+  const tmp4 = recurrenceRule(memo.useState(f93945), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[7])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {
@@ -89,7 +89,7 @@ export default function EditGuildEventDetails(guildEvent) {
     return obj.add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   }, []);
   const memo4 = memo.useMemo(() => {
-    const obj = _modDef2044(memo);
+    const obj = _modDef2042(memo);
     return obj.add(15, "minutes");
   }, items2);
   const memo5 = memo.useMemo(() => {
@@ -169,7 +169,7 @@ export default function EditGuildEventDetails(guildEvent) {
         const obj = { scheduledStartTime: toISOString.toISOString() };
         const isBeforeResult = null != scheduledEndTime && memo1.isBefore(toISOString);
         if (isBeforeResult) {
-          const obj2 = _modDef2044(toISOString);
+          const obj2 = _modDef2042(toISOString);
           const addResult = obj2.add(1, "hour");
           obj.scheduledEndTime = addResult.toISOString();
         }

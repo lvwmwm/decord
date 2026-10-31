@@ -1,14 +1,14 @@
-// Module ID: 7999
-// Function ID: 8000
+// Module ID: 8007
+// Function ID: 8008
 // Name: VideoSelfieIcon
-// Dependencies: [19, 21, 575, 5711, 8000, 2]
+// Dependencies: [19, 21, 575, 5716, 8008, 2]
 // Exports: VideoSelfieIcon
 
-// Module 7999 (VideoSelfieIcon)
+// Module 8007 (VideoSelfieIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 8000 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 8008 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

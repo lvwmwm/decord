@@ -1,12 +1,12 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14709
+// Function ID: 14710
 // Name: useConjureProjectShareTarget
-// Dependencies: [4880, 504, 1114, 3865, 2]
+// Dependencies: [4885, 504, 1113, 3868, 2]
 // Exports: default
 
-// Module 14671 (useConjureProjectShareTarget)
-import _modDef3865 from "module_3865" /* 3865 */;
-import GuildStore from "GuildStore" /* 4880 */;
+// Module 14709 (useConjureProjectShareTarget)
+import _modDef3868 from "module_3868" /* 3868 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectShareTarget.tsx");
@@ -40,8 +40,8 @@ export default function useConjureProjectShareTarget(guild_id) {
     tmp5 = null;
     if (null == guild_id.install_scope_setup) {
       if ("user" === guild_id.install_scope) {
-        const intl = tmp2(1114).intl;
-        stateFromStores = intl.string(_modDef3865.KxFFKT);
+        const intl = tmp2(1113).intl;
+        stateFromStores = intl.string(_modDef3868.KxFFKT);
       }
       tmp5 = stateFromStores;
     }

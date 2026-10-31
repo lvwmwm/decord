@@ -1,13 +1,13 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13168
+// Function ID: 13169
 // Name: useModalPanGesture
-// Dependencies: [5090, 5298, 5632, 6738, 2]
+// Dependencies: [5095, 5303, 5637, 6744, 2]
 // Exports: default
 
-// Module 13133 (useModalPanGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+// Module 13168 (useModalPanGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import size from "module_2" /* 2 */;
 
 let obj1, obj5, obj6, set, set2, set2Result, tmp, tmp10, tmp12, tmp13, tmp14, tmp15, tmp2, tmp3, tmp4, tmp8, tmp9, velocityY;

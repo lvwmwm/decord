@@ -1,17 +1,17 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 15004
+// Function ID: 15005
 // Name: AddToWishlistGrid
-// Dependencies: [19, 17, 7371, 21, 5009, 14966, 14968, 2]
+// Dependencies: [19, 17, 7377, 21, 5014, 15003, 15005, 2]
 // Exports: default
 
-// Module 14967 (AddToWishlistGrid)
+// Module 15004 (AddToWishlistGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 7371 */;
-import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 14966 */;
-import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 14968 */;
+import Constants from "Constants" /* 7377 */;
+import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 15003 */;
+import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 15005 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

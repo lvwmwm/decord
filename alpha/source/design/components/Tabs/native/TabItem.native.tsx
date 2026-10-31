@@ -1,17 +1,17 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12512
+// Function ID: 12513
 // Name: TabItem
-// Dependencies: [19, 17, 21, 5090, 5009, 575, 5632, 5619, 12478, 1376, 1114, 9469, 2]
+// Dependencies: [19, 17, 21, 5095, 5014, 575, 5637, 5624, 12513, 1375, 1113, 9491, 2]
 // Exports: TabItem
 
-// Module 12477 (TabItem)
+// Module 12512 (TabItem)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -33,13 +33,13 @@ function TabItemCount(arg0) {
   let sharedValue;
   ({ count, variant } = arg0);
   const tmp = closure_10();
-  let obj = sharedValue(5090);
+  let obj = sharedValue(5095);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue];
   const layoutEffect = react.useLayoutEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj2 = sharedValue(5090);
+  let obj2 = sharedValue(5095);
   class T {
     constructor() {
       let items;
@@ -56,7 +56,7 @@ function TabItemCount(arg0) {
       return obj;
     }
   }
-  let obj3 = { withSpring: sharedValue(5632).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(5090).interpolate };
+  let obj3 = { withSpring: sharedValue(5637).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG, interpolate: sharedValue(5095).interpolate };
   T.__closure = obj3;
   T.__workletHash = 16666672974627;
   T.__initData = __initData2;
@@ -84,13 +84,13 @@ function TabItemCount(arg0) {
     obj2 = index(setItemDimensions[6]);
     return obj;
   };
-  const tmp2Result = sharedValue(5090);
-  let obj4 = { colors: tmp7, pressed, index, activeIndex, withSpring: tmp2(5632).withSpring, TEXT_SPRING_CONFIG };
+  const tmp2Result = sharedValue(5095);
+  let obj4 = { colors: tmp7, pressed, index, activeIndex, withSpring: tmp2(5637).withSpring, TEXT_SPRING_CONFIG };
   fn.__closure = obj4;
   fn.__workletHash = 11643476765161;
   fn.__initData = __initData;
   const animatedStyle1 = tmp2Result.useAnimatedStyle(fn);
-  const obj5 = { style: items1, children: closure_5(sharedValue(5619).Text, { animated: true, variant: "text-sm/medium", style: animatedStyle1, lineClamp: 1, children: count }) };
+  const obj5 = { style: items1, children: closure_5(sharedValue(5624).Text, { animated: true, variant: "text-sm/medium", style: animatedStyle1, lineClamp: 1, children: count }) };
   items1 = [tmp.count, animatedStyle];
   const View = ReanimatedRexport.View;
   return closure_5(View, obj5);

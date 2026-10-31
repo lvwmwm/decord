@@ -1,15 +1,15 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15303
+// Function ID: 15304
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 7623, 9606, 9648, 504, 9645, 2]
+// Dependencies: [32, 19, 7630, 9626, 9668, 504, 9665, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 15264 (usePromotionMarketingComponent)
-import promotions_constants from "promotions/constants" /* 9645 */;
+// Module 15303 (usePromotionMarketingComponent)
+import promotions_constants from "promotions/constants" /* 9665 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserOfferStore from "UserOfferStore" /* 7623 */;
-import PromotionsStore from "PromotionsStore" /* 9606 */;
+import UserOfferStore from "UserOfferStore" /* 7630 */;
+import PromotionsStore from "PromotionsStore" /* 9626 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

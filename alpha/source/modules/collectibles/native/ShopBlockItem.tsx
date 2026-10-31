@@ -1,17 +1,17 @@
-// Module ID: 17788
-// Function ID: 17789
+// Module ID: 17832
+// Function ID: 17833
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 7713, 21, 5009, 575, 504, 5684, 9440, 17789, 17810, 17812, 17818, 2]
+// Dependencies: [19, 17, 7720, 21, 5014, 575, 504, 5689, 9462, 17833, 17854, 17856, 17862, 2]
 // Exports: default
 
-// Module 17788 (ShopBlockItem)
+// Module 17832 (ShopBlockItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ShopBlockType from "ShopBlockType" /* 5684 */;
+import ShopBlockType from "ShopBlockType" /* 5689 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7713 */;
-import createStyles from "createStyles" /* 5009 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

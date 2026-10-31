@@ -1,23 +1,23 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9493
+// Function ID: 9494
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9472, 21, 5712, 5009, 575, 38, 1988, 1985, 9473, 9484, 9491, 1188, 2]
+// Dependencies: [19, 17, 9494, 21, 5717, 5014, 575, 38, 1987, 1984, 9495, 9506, 9513, 1187, 2]
 // Exports: default
 
-// Module 9471 (BundleSampleV2)
+// Module 9493 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import utils from "utils" /* 1985 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9472 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9473 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9484 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9491 */;
+import utils from "utils" /* 1984 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9494 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9495 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9506 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9513 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -161,9 +161,9 @@ function BundleSampleV2Composed(arg0) {
     obj8 = { width: BUNDLE_PREVIEW_CONFIG[size].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: nameplateData };
     NameplateDummyUserPreview = NameplateDummyUserPreview2.NameplateDummyUserPreview;
     if ("large" === size) {
-      XSMALL_20 = tmp22(1188).AvatarSizes.NORMAL;
+      XSMALL_20 = tmp22(1187).AvatarSizes.NORMAL;
     } else {
-      XSMALL_20 = tmp22(1188).AvatarSizes.XSMALL_20;
+      XSMALL_20 = tmp22(1187).AvatarSizes.XSMALL_20;
     }
     tmp21Result = tmp21(tmp11, obj7);
   }

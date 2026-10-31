@@ -1,16 +1,16 @@
-// Module ID: 18662
-// Function ID: 18663
+// Module ID: 18704
+// Function ID: 18705
 // Name: usePlaceholderStyles
-// Dependencies: [5010, 9806, 1492, 504, 5090, 5249, 1188, 2]
+// Dependencies: [5015, 9827, 1491, 504, 5095, 5254, 1187, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 18662 (usePlaceholderStyles)
-import native from "native" /* 1188 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+// Module 18704 (usePlaceholderStyles)
+import native from "native" /* 1187 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

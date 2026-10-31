@@ -1,11 +1,11 @@
-// Module ID: 12406
-// Function ID: 12407
+// Module ID: 12444
+// Function ID: 12445
 // Name: useConjureStartPublish
-// Dependencies: [19, 12400, 10941, 2]
+// Dependencies: [19, 12438, 10960, 2]
 // Exports: default
 
-// Module 12406 (useConjureStartPublish)
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10941 */;
+// Module 12444 (useConjureStartPublish)
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10960 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

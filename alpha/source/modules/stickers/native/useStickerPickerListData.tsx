@@ -1,17 +1,17 @@
-// Module ID: 10280
-// Function ID: 10281
+// Module ID: 10300
+// Function ID: 10301
 // Name: useStickerPickerListData
-// Dependencies: [19, 10249, 10216, 1229, 10000, 10248, 10025, 12, 1114, 6555, 9951, 2]
+// Dependencies: [19, 10269, 10236, 1228, 10021, 10268, 10046, 12, 1113, 6561, 9972, 2]
 // Exports: default
 
-// Module 10280 (useStickerPickerListData)
+// Module 10300 (useStickerPickerListData)
 import _modDef12 from "module_12" /* 12 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import StickersTypes from "StickersTypes" /* 6555 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10000 */;
-import StickerPickerStore from "StickerPickerStore" /* 10249 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import StickersTypes from "StickersTypes" /* 6561 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10021 */;
+import StickerPickerStore from "StickerPickerStore" /* 10269 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10216 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10236 */;
 import size from "module_2" /* 2 */;
 
 let c5, packToScrollToIndex;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const age_gate_AgeGateUtils = tmp2(9951);
+const age_gate_AgeGateUtils = tmp2(9972);
 let useStickerPickerStore = StickerPickerStore.useStickerPickerStore;
 ({ MIN_MARGIN: hasOwnProperty, ROW_HEIGHT: metroRequire, STICKER_SIZE: metroImportDefault, LABEL_HEIGHT } = StickerPickerConstants);
 const StickerPickerSectionType = { STICKERS: 0, [0]: "STICKERS", NSFW: 1, [1]: "NSFW" };

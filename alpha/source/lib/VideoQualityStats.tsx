@@ -1,13 +1,13 @@
-// Module ID: 5945
-// Function ID: 5946
+// Module ID: 5950
+// Function ID: 5951
 // Name: VideoQualityStats
-// Dependencies: [32, 5928, 5936, 5767, 2]
+// Dependencies: [32, 5894, 5902, 5772, 2]
 // Exports: parseCodecType
 
-// Module 5945 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 5767 */;
-import Histogram from "Histogram" /* 5928 */;
-import SystemResourcesDefault from "SystemResources" /* 5936 */;
+// Module 5950 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 5772 */;
+import Histogram from "Histogram" /* 5894 */;
+import SystemResourcesDefault from "SystemResources" /* 5902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -467,6 +467,15 @@ class InboundStats {
       throw new TypeError("Trying to call a non-function");
     }
   }
+  continueAggregationFrom(previousAggregationStats, flag) {
+    this.previousAggregationStats = previousAggregationStats.previousAggregationStats;
+    const tmp3 = flag;
+    if (tmp3) {
+      const items = [];
+      HermesBuiltin.arraySpread(items, previousAggregationStats.statsWindow, 0);
+      tmp2.statsWindow = items;
+    }
+  }
   collectAggregationStats(parseInboundStatsResult, previousAggregationStats) {
     const self = this;
     let closure_0 = parseInboundStatsResult;
@@ -685,6 +694,12 @@ const prototype = InboundStats.prototype;
 Object.defineProperty(prototype, "isVideoStopped", {
   get: function isVideoStopped() {
     return this.videoStoppedReason !== obj6.None;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "videoStoppedReasons", {
+  get: function videoStoppedReasons() {
+    return this.videoStoppedReason;
   },
   set: undefined
 });

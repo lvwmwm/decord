@@ -1,20 +1,20 @@
-// Module ID: 17463
-// Function ID: 17464
+// Module ID: 17523
+// Function ID: 17524
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1072, 21, 560, 1260, 1375, 1118, 1152, 1114, 1376, 1283, 5707, 5730, 11505, 12524, 16691, 2]
+// Dependencies: [5, 17, 1072, 21, 560, 1259, 1374, 1117, 1151, 1113, 1375, 1282, 5712, 5735, 11539, 12559, 16733, 2]
 
-// Module 17463 (UploadIntlDataSetting)
+// Module 17523 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetJsonUtils from "AssetJsonUtils" /* 1118 */;
-import AssetRegistry from "AssetRegistry" /* 1152 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import FileUpIcon from "FileUpIcon" /* 12524 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16691 */;
+import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
+import AssetRegistry from "AssetRegistry" /* 1151 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import FileUpIcon from "FileUpIcon" /* 12559 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import module_560 from "module_560" /* 560 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -41,7 +41,7 @@ let obj = function _serializeIntlData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp32;
@@ -174,7 +174,7 @@ obj = function _handleUploadIntlDataSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -260,7 +260,7 @@ obj = function _handleUploadIntlDataSettingPress() {
           c3 = 0;
           onUploadIntlDataRequestFinish();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp28) {
         url = tmp28;

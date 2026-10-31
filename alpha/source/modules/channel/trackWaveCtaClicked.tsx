@@ -1,13 +1,13 @@
-// Module ID: 13772
-// Function ID: 13773
+// Module ID: 13807
+// Function ID: 13808
 // Name: trackWaveCtaClicked
-// Dependencies: [4858, 1072, 1253, 2]
+// Dependencies: [4863, 1072, 1252, 2]
 // Exports: getDmHasMessageHistory, trackWaveCtaClicked
 
-// Module 13772 (trackWaveCtaClicked)
+// Module 13807 (trackWaveCtaClicked)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

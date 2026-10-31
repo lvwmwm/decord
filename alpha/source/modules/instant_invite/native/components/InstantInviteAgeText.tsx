@@ -1,20 +1,20 @@
-// Module ID: 9177
-// Function ID: 9178
+// Module ID: 9196
+// Function ID: 9197
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 9100, 21, 5009, 7143, 504, 5619, 9101, 6974, 9099, 1114, 2]
+// Dependencies: [19, 17, 9119, 21, 5014, 7149, 504, 5624, 9120, 6980, 9118, 1113, 2]
 // Exports: default
 
-// Module 9177 (InstantInviteAgeText)
+// Module 9196 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl3 from "intl" /* 1114 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9099 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9101 */;
+import intl3 from "intl" /* 1113 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 9120 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9100 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9119 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function InstantInviteAgeText(style) {
     items1 = [tmp.inviteAgeContainer, style];
     let str = "text-xs/normal";
     let str2 = "text-xs/normal";
-    const Text = tmp2(5619).Text;
+    const Text = tmp2(5624).Text;
     const tmp8 = View;
     if (manaTypeConsolidationExperiment) {
       str2 = "experimental/body-md/normal";
@@ -77,14 +77,14 @@ export default function InstantInviteAgeText(style) {
         hitSlop: { top: 8, left: 8, bottom: 8, right: 8 },
         children: closure_5(Text2, obj6)
       };
-      const PressableOpacity = tmp2(6974).PressableOpacity;
-      intl = tmp2(1114).intl;
-      Text2 = tmp2(5619).Text;
+      const PressableOpacity = tmp2(6980).PressableOpacity;
+      intl = tmp2(1113).intl;
+      Text2 = tmp2(5624).Text;
       if (manaTypeConsolidationExperiment) {
         str = "experimental/body-md/medium";
       }
       obj6 = { variant: str, color: "text-link", children: intl2.string(intl3.t["VNe8P/"]) };
-      intl2 = tmp2(1114).intl;
+      intl2 = tmp2(1113).intl;
       canEditInvite = tmp9(PressableOpacity, obj5);
     }
     items3[1] = canEditInvite;

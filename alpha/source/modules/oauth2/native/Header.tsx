@@ -1,21 +1,21 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14611
+// Function ID: 14612
 // Name: Header
-// Dependencies: [19, 17, 1072, 21, 5009, 575, 1410, 1188, 5619, 9183, 1397, 1114, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 1409, 1187, 5624, 9202, 1396, 1113, 2]
 // Exports: default
 
-// Module 14573 (Header)
+// Module 14611 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1188 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import BotTagDefault from "BotTag" /* 9183 */;
+import native from "native" /* 1187 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import BotTagDefault from "BotTag" /* 9202 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -90,13 +90,13 @@ export default function Header(accountScopes) {
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(5619).Text;
+  const Text = tmp9(5624).Text;
   if (accountScopes.length > 0) {
-    const intl2 = tmp9(1114).intl;
-    stringResult = intl2.string(tmp9(1114).t.jFbDnJ);
+    const intl2 = tmp9(1113).intl;
+    stringResult = intl2.string(tmp9(1113).t.jFbDnJ);
   } else {
-    const intl = tmp9(1114).intl;
-    stringResult = intl.string(tmp9(1114).t["X+Fdpo"]);
+    const intl = tmp9(1113).intl;
+    stringResult = intl.string(tmp9(1113).t["X+Fdpo"]);
   }
   items2[2] = hasOwnProperty(Text, { variant: "heading-md/normal", color: "text-default", children: stringResult });
   return metroRequire(View, obj3);

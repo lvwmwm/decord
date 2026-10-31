@@ -1,26 +1,26 @@
-// Module ID: 5619
-// Function ID: 5620
+// Module ID: 5624
+// Function ID: 5625
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1083, 21, 5090, 575, 12, 5620, 5621, 5009, 5623, 5624, 5627, 1377, 5628, 299, 2]
+// Dependencies: [109, 19, 17, 1083, 21, 5095, 575, 12, 5625, 5626, 5014, 5628, 5629, 5632, 1376, 5633, 299, 2]
 // Exports: Heading
 
-// Module 5619 (Text/Text)
+// Module 5624 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
-import TextVariants from "TextVariants" /* 5620 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5623 */;
-import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5624 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 5627 */;
-import _modDef5628 from "module_5628" /* 5628 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import TextVariants from "TextVariants" /* 5625 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5628 */;
+import useTypographyVariantRemap from "useTypographyVariantRemap" /* 5629 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 5632 */;
+import _modDef5633 from "module_5633" /* 5633 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5621 */;
-import createStyles from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5626 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 class Text {
@@ -95,7 +95,7 @@ class Text {
       StringResult = undefined;
       tmp21 = _objectWithoutProperties(plainTextEligibility, closure_3);
       const tmp22 = jsx;
-      const tmp24 = _modDef5628;
+      const tmp24 = _modDef5633;
       if (null != fontWeight) {
         const _String = String;
         StringResult = String(fontWeight);

@@ -1,13 +1,13 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14186
+// Function ID: 14187
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 5063, 5959, 1114, 5959, 2]
+// Dependencies: [19, 21, 5068, 5964, 1113, 5964, 2]
 // Exports: default
 
-// Module 14149 (UserProfileConfirmThreadRemove)
-import intl5 from "intl" /* 1114 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import AlertModal2 from "AlertModal" /* 5959 */;
+// Module 14186 (UserProfileConfirmThreadRemove)
+import intl5 from "intl" /* 1113 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import AlertModal2 from "AlertModal" /* 5964 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -36,18 +36,18 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   const string = intl.string;
   const t = intl5.t;
   const obj2 = { title: string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name }), actions: React3(AlertActions, obj3) };
-  const intl2 = tmp4(1114).intl;
+  const intl2 = tmp4(1113).intl;
   formatToPlainString = intl2.formatToPlainString;
-  t2 = tmp4(1114).t;
+  t2 = tmp4(1113).t;
   obj3 = { children: items };
-  AlertActions = tmp4(5959).AlertActions;
+  AlertActions = tmp4(5964).AlertActions;
   const obj4 = { variant: "destructive", text: intl3.string(intl5.t.N86XcP), onPress: onConfirm };
-  const AlertActionButton = tmp4(5959).AlertActionButton;
-  intl3 = tmp4(1114).intl;
+  const AlertActionButton = tmp4(5964).AlertActionButton;
+  intl3 = tmp4(1113).intl;
   items = [_false(AlertActionButton, obj4, "remove-user-from-thread"), ];
   const obj5 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
-  const AlertActionButton2 = tmp4(5959).AlertActionButton;
-  intl4 = tmp4(1114).intl;
+  const AlertActionButton2 = tmp4(5964).AlertActionButton;
+  intl4 = tmp4(1113).intl;
   items[1] = _false(AlertActionButton2, obj5, "cancel-remove-user-from-thread");
   return _false(AlertModal, obj2);
 };

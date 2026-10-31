@@ -1,14 +1,14 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 14233
+// Function ID: 14234
 // Name: ContactSyncModalStore
-// Dependencies: [6566, 1384, 14196, 1072, 560, 1260, 2]
+// Dependencies: [6572, 1383, 14234, 1072, 560, 1259, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
 
-// Module 14195 (ContactSyncModalStore)
+// Module 14233 (ContactSyncModalStore)
 import Constants from "Constants" /* 1072 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14196 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
-import UserStore from "UserStore" /* 1384 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14234 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import UserStore from "UserStore" /* 1383 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

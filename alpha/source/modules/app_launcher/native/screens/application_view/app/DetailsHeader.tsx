@@ -1,19 +1,19 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 9760
+// Function ID: 9761
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5090, 9741, 11459, 8765, 6726, 6953, 5619, 1114, 5249, 5252, 7032, 5582, 1093, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 9761, 11493, 8773, 6732, 6959, 5624, 1113, 5254, 5257, 7038, 5587, 1092, 2]
 
-// Module 9740 (DetailsHeader)
+// Module 9760 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11459 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, set2;
@@ -88,7 +88,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref();
-  let obj = ref(9741);
+  let obj = ref(9761);
   let obj2 = react;
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
@@ -99,7 +99,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   first1 = tmp9[0];
   react = tmp9[1];
   let closure_5 = react.useRef(true);
-  const obj3 = ref(5090);
+  const obj3 = ref(5095);
   const sharedValue = obj3.useSharedValue(null);
   let fn = function t() {
     const obj = { height: sharedValue.get() };
@@ -108,11 +108,11 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   fn.__closure = { height: sharedValue };
   fn.__workletHash = 23826674246;
   fn.__initData = __initData;
-  const obj4 = ref(5090);
+  const obj4 = ref(5095);
   const animatedStyle = obj4.useAnimatedStyle(fn);
-  const obj5 = ref(9741);
+  const obj5 = ref(9761);
   const sectionName = obj5.getSectionName(application);
-  const obj6 = ref(9741);
+  const obj6 = ref(9761);
   const str = obj6.getSectionDescription(application);
   let tmp28Result5 = null != str;
   if (tmp28Result5) {
@@ -140,9 +140,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
     return result;
   }, items);
-  const tmp2Result = ref(8765);
+  const tmp2Result = ref(8773);
   isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  const tmp24 = first(6726)(isScreenLandscape);
+  const tmp24 = first(6732)(isScreenLandscape);
   closure_18 = tmp24;
   const items1 = [isScreenLandscape, tmp24];
   const effect = obj2.useEffect(() => {
@@ -153,7 +153,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
   }, items1);
   let tmp27 = first;
-  first(6953)(ref);
+  first(6959)(ref);
   if (first) {
     tmp27 = !first1;
   }
@@ -177,19 +177,19 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   items3 = [tmp.container, mainContainerStyle];
   let tmp30Result = !hideName;
   const obj9 = { style: tmp.nameContainer, children: items4 };
-  const View = tmp23(5090).View;
+  const View = tmp23(5095).View;
   const tmp29 = num3;
   if (!hideName) {
     const obj10 = { style: tmp.nameText, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: sectionName };
-    tmp30Result = tmp30(tmp2(5619).Heading, obj10);
+    tmp30Result = tmp30(tmp2(5624).Heading, obj10);
   }
   items4 = [tmp30Result, ];
   let tmp30Result5 = null;
   if (isPartnerApplicationResult) {
     const obj11 = { style: tmp.partnerLabelWrapper, children: num2(Text, obj12) };
-    obj12 = { variant: "text-xs/medium", color: "text-default", children: intl.string(ref(1114).t.LO4f0P) };
-    Text = tmp2(5619).Text;
-    intl = tmp2(1114).intl;
+    obj12 = { variant: "text-xs/medium", color: "text-default", children: intl.string(ref(1113).t.LO4f0P) };
+    Text = tmp2(5624).Text;
+    intl = tmp2(1113).intl;
     tmp30Result5 = tmp30(tmp31, obj11);
   }
   items4[1] = tmp30Result5;
@@ -236,7 +236,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       accessibilityRole: "button",
       children: items10
     };
-    const tmp23Result = first(7032);
+    const tmp23Result = first(7038);
     if (tmp27) {
       const obj15 = { style: absoluteFill, children: items6 };
       obj14.style = tmp.maskFill;
@@ -250,8 +250,8 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       items7[1] = obj17;
       const obj18 = { style: tmp.maskFill };
       items8 = [num2(closure_5, obj18), , ];
-      const obj19 = { start: ref(1093).HorizontalGradient.START, end: ref(1093).HorizontalGradient.END, colors, style: tmp.maskFade };
-      const tmp23Result2 = first(5582);
+      const obj19 = { start: ref(1092).HorizontalGradient.START, end: ref(1092).HorizontalGradient.END, colors, style: tmp.maskFade };
+      const tmp23Result2 = first(5587);
       items8[1] = num2(tmp23Result2, obj19);
       if (num2 == null) {
         num2 = 0;
@@ -267,7 +267,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       tmp30Result6 = tmp30(tmp31, obj14);
     }
     const obj22 = { maskElement: tmp30Result6, children: num2(Text2, obj23) };
-    Text2 = tmp2(5619).Text;
+    Text2 = tmp2(5624).Text;
     obj23 = { variant: "text-sm/medium", color: "text-default", lineClamp: num4, children: memo };
     items10 = [num2(tmp23Result, obj22), , ];
     let tmp30Result7 = null;
@@ -283,9 +283,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
         color: "text-brand",
         children: items11
       };
-      Text3 = tmp2(5619).Text;
-      const intl2 = tmp2(1114).intl;
-      items11 = ["\u2026 ", intl2.string(tmp2(1114).t["OBCR+p"])];
+      Text3 = tmp2(5624).Text;
+      const intl2 = tmp2(1113).intl;
+      items11 = ["\u2026 ", intl2.string(tmp2(1113).t["OBCR+p"])];
       tmp30Result7 = tmp30(tmp31, obj24);
     }
     items10[1] = tmp30Result7;
@@ -293,9 +293,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     if (first) {
       tmp30Result8 = null;
       if (first1) {
-        const obj26 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl3.string(ref(1114).t.D5xGUK) };
-        const Text4 = tmp2(5619).Text;
-        intl3 = tmp2(1114).intl;
+        const obj26 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl3.string(ref(1113).t.D5xGUK) };
+        const Text4 = tmp2(5624).Text;
+        intl3 = tmp2(1113).intl;
         tmp30Result8 = tmp30(Text4, obj26);
       }
     }
@@ -321,7 +321,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     let tmp30Result9 = !hideName;
     if (tmp30Result9) {
       const obj28 = { variant: "heading-lg/bold", color: "text-default", children: sectionName };
-      tmp30Result9 = tmp30(tmp2(5619).Heading, obj28);
+      tmp30Result9 = tmp30(tmp2(5624).Heading, obj28);
     }
     items14 = [tmp30Result9, ];
     if (tmp28Result5) {
@@ -346,10 +346,10 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
         children: memo
       };
       tmp45 = !hideName && tmp.descriptionContainer;
-      items15 = [num2(tmp2(5619).Text, obj30), ];
-      const obj31 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl4.string(ref(1114).t.D5xGUK) };
-      const Text5 = tmp2(5619).Text;
-      intl4 = tmp2(1114).intl;
+      items15 = [num2(tmp2(5624).Text, obj30), ];
+      const obj31 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl4.string(ref(1113).t.D5xGUK) };
+      const Text5 = tmp2(5624).Text;
+      intl4 = tmp2(1113).intl;
       items15[1] = num2(Text5, obj31);
       tmp28Result5 = tmp28(tmp31, obj29);
     }

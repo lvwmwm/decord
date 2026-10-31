@@ -1,30 +1,30 @@
-// Module ID: 18405
-// Function ID: 18406
+// Module ID: 18448
+// Function ID: 18449
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5010, 6564, 1384, 17004, 1072, 21, 5009, 575, 504, 1188, 5075, 5090, 6847, 9487, 5632, 5591, 9486, 8720, 5255, 7557, 1995, 5298, 2]
+// Dependencies: [5, 32, 19, 17, 5015, 6570, 1383, 17062, 1072, 21, 5014, 575, 504, 1187, 5080, 5095, 6853, 9509, 5637, 5596, 9508, 8728, 5260, 7563, 1994, 5303, 2]
 
-// Module 18405 (YouBarAvatar)
+// Module 18448 (YouBarAvatar)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1188 */;
-import native2 from "native" /* 5075 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import spring from "spring" /* 5632 */;
-import ClipView from "ClipView" /* 9487 */;
+import native from "native" /* 1187 */;
+import native2 from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import spring from "spring" /* 5637 */;
+import ClipView from "ClipView" /* 9509 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
-import UserStore from "UserStore" /* 1384 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
+import UserStore from "UserStore" /* 1383 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
-let c1, obj1, set, set2, set3, size2;
+let c1, obj1, set, set2, set3, set4, size2;
 
 let closure_12;
 let closure_14;
@@ -132,7 +132,7 @@ function YouBarAvatarLarge(transitionState) {
       tmp8 = -closure_17;
     }
     set3(tmp8);
-    const set4 = sharedValue4.set;
+    set4 = sharedValue4.set;
     if (tmp) {
       diff = -result1;
     } else {
@@ -418,7 +418,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -450,7 +450,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_3(false);
           isAvatarPressed = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         isAvatarPressed = 3;

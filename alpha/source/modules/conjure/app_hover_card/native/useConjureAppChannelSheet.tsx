@@ -1,35 +1,44 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14401
+// Function ID: 14402
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6838, 21, 5009, 575, 5712, 1410, 7414, 504, 14364, 1114, 3865, 5063, 2]
+// Dependencies: [19, 17, 6844, 21, 5014, 575, 11340, 5717, 1409, 7420, 504, 14402, 1113, 3868, 5068, 2]
 // Exports: default
 
-// Module 14363 (useConjureAppChannelSheet)
+// Module 14401 (useConjureAppChannelSheet)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import UserUtils from "UserUtils" /* 5063 */;
-import FastImageDefault from "FastImage" /* 5712 */;
+import intl2 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import UserUtils from "UserUtils" /* 5068 */;
+import FastImageDefault from "FastImage" /* 5717 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
-import createStyles from "createStyles" /* 5009 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 function ConjureAppSheetIcon(application) {
+  let tmp6;
   application = application.application;
-  const tmp = closure_6();
-  FastImageDefault;
-  const obj2 = AvatarUtilsDefault;
-  const obj3 = { id: application.id, icon: application.icon, size: 48 };
-  return <tmp2 source={obj2.getApplicationIconSource(obj3)} style={tmp.icon} />;
+  const tmp = closure_7();
+  if (null == application.icon) {
+    ({ id: obj5.applicationId, name: obj5.name } = application);
+    tmp6 = <View style={tmp.icon}>{null}</View>;
+  } else {
+    FastImageDefault;
+    const obj9 = { id: null, icon: null, size: 48 };
+    ({ id: obj3.id, icon: obj3.icon } = application);
+    tmp6 = <tmp5 source={AvatarUtilsDefault.getApplicationIconSource(obj9)} style={tmp.icon} />;
+  }
+  return tmp6;
 }
+const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { icon: size };
-size = { width: 48, height: 48, borderRadius: nativeDefault.radii.lg };
-let closure_6 = createStyles.createStyles(obj);
+size = { width: 48, height: 48, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+let closure_7 = createStyles.createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/app_hover_card/native/useConjureAppChannelSheet.tsx");
 
@@ -40,7 +49,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
     guild_id = null;
   }
   let tmp2 = guild_id;
-  const tmp4 = guild_id(creator[7]);
+  const tmp4 = guild_id(creator[9]);
   let tmp5 = null;
   const useAppChannelApplication = tmp4.useAppChannelApplication;
   if (arg1) {
@@ -61,7 +70,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
   appChannelApplication = tmp7;
   const items = [ConjureProjectStore];
   const items1 = [guild_id];
-  const tmp2Result = tmp2(creator[8]);
+  const tmp2Result = tmp2(creator[10]);
   const stateFromStores = tmp2Result.useStateFromStores(items, () => {
     let guildProjectsFetchState = null;
     if (null != guild_id) {
@@ -70,7 +79,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
     return "success" === guildProjectsFetchState || "error" === guildProjectsFetchState;
   }, items1);
   let tmp11 = null != tmp7;
-  const tmp10 = appChannelApplication(creator[9]);
+  const tmp10 = appChannelApplication(creator[11]);
   if (tmp11) {
     tmp11 = stateFromStores;
   }
@@ -90,7 +99,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
         const intl = intl2.intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj3 = { name: obj4.getName(tmp5) };
-        const prop = _modDef3865["6/x9LD"];
+        const prop = _modDef3868["6/x9LD"];
         obj4 = UserUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj3);
       }

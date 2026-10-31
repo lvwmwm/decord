@@ -1,32 +1,32 @@
-// Module ID: 19189
-// Function ID: 19190
+// Module ID: 19241
+// Function ID: 19242
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11204, 11202, 19059, 11205, 21, 5090, 11735, 5009, 11203, 5632, 10069, 5255, 5298, 5883, 19146, 11730, 11728, 19137, 11208, 19056, 5869, 5591, 575, 5249, 7235, 11732, 2]
+// Dependencies: [32, 19, 17, 11223, 11221, 19108, 11224, 21, 5095, 11772, 5014, 11222, 5637, 10089, 5260, 5303, 5888, 19197, 11767, 11765, 19187, 11227, 19105, 5874, 5596, 575, 5254, 7241, 11769, 2]
 
-// Module 19189 (VoicePanelVideoRenderer)
+// Module 19241 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import timing from "timing" /* 5249 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10069 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11205 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11208 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11735 */;
-import VideoActionCreators from "VideoActionCreators" /* 19056 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19059 */;
+import timing from "timing" /* 5254 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10089 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11772 */;
+import VideoActionCreators from "VideoActionCreators" /* 19105 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import createStyles from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
-let set, set2, set3;
+let set, set2, set3, set4;
 
 let closure_12;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport2 = tmp2(5090);
+const ReanimatedRexport2 = tmp2(5095);
 const PixelRatio = react_native.PixelRatio;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
@@ -391,7 +391,7 @@ const memoResult = react.memo(function VideoRenderer(id) {
     set3 = sharedValue3.set;
     const obj = id(sharedCoords[12]);
     set3(obj.withSpring(0, c10));
-    const set4 = sharedValue4.set;
+    set4 = sharedValue4.set;
     const obj2 = id(sharedCoords[12]);
     set4(obj2.withSpring(0, c10));
     const result1 = sharedValue9.set(arg0);
@@ -991,7 +991,7 @@ const memoResult = react.memo(function VideoRenderer(id) {
         const tmp = current;
         const tmp2 = require;
         if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-          const tmp2Result = tmp2(5090);
+          const tmp2Result = tmp2(5095);
           tmp2Result.runOnJS(callback6)();
         }
       }

@@ -1,20 +1,20 @@
-// Module ID: 14093
-// Function ID: 14094
+// Module ID: 14128
+// Function ID: 14129
 // Name: GuildPowerupsPerksSection
-// Dependencies: [17, 21, 5009, 575, 14076, 1114, 2569, 14094, 14096, 14098, 2]
+// Dependencies: [17, 21, 5014, 575, 14111, 1113, 2570, 14129, 14131, 14133, 2]
 // Exports: default
 
-// Module 14093 (GuildPowerupsPerksSection)
+// Module 14128 (GuildPowerupsPerksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import _modDef2569 from "module_2569" /* 2569 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 14076 */;
-import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 14094 */;
-import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 14096 */;
-import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 14098 */;
+import intl3 from "intl" /* 1113 */;
+import _modDef2570 from "module_2570" /* 2570 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 14111 */;
+import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 14129 */;
+import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 14131 */;
+import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 14133 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -39,7 +39,7 @@ export default function GuildPowerupPerksSection(arg0) {
   ({ guildId: require, listings } = arg0);
   let obj = { children: items };
   const tmp = closure_7();
-  let obj2 = { title: intl.string(_modDef2569.TV3Vm8), description: intl2.string(_modDef2569.STx9hp) };
+  let obj2 = { title: intl.string(_modDef2570.TV3Vm8), description: intl2.string(_modDef2570.STx9hp) };
   const tmp2 = GuildPowerupsSectionHeaderDefault;
   intl = intl3.intl;
   intl2 = intl3.intl;

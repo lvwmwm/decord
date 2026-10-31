@@ -1,20 +1,20 @@
-// Module ID: 17600
-// Function ID: 17601
+// Module ID: 17660
+// Function ID: 17661
 // Name: WebAuthnScreen
-// Dependencies: [32, 19, 21, 5009, 575, 6745, 1114, 1188, 1376, 1283, 7112, 17601, 16635, 7110, 17604, 2]
+// Dependencies: [32, 19, 21, 5014, 575, 6751, 1113, 1187, 1375, 1282, 7118, 17661, 16677, 7116, 17664, 2]
 // Exports: default
 
-// Module 17600 (WebAuthnScreen)
+// Module 17660 (WebAuthnScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import react_nativeDefault from "react-native" /* 6745 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7110 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 17601 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import react_nativeDefault from "react-native" /* 6751 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7116 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 17661 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -23,7 +23,7 @@ let ANDROID_PASSKEY;
 let AUTHENTICATE;
 let obj2;
 let tmp17;
-const buttonDefault = tmp17(17604);
+const buttonDefault = tmp17(17664);
 function AndroidAuthRadioGroup(setAuthenticator) {
   let authenticatorSelection;
   let inProgress;
@@ -82,7 +82,7 @@ export default function WebAuthnScreen(arg0) {
   dependencyMap = tmp4[1];
   const first = tmp4[0];
   const useState = react.useState;
-  const obj2 = finish(1376);
+  const obj2 = finish(1375);
   let tmpResult = tmp(useState(obj2.isAndroid() ? tmp8.ANDROID_PASSKEY : tmp8.AUTHENTICATE), 2);
   first1 = tmpResult[0];
   const tmp11 = tmpResult[1];
@@ -114,10 +114,10 @@ export default function WebAuthnScreen(arg0) {
     });
     catchPromise.finally(() => _undefined(false));
   }, items1);
-  obj3 = { headerText: intl.string(finish(1114).t.saHocI), subtitle: intl2.string(finish(1114).t.YpMrqM), headerImage: challenge(finish(16635).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
+  obj3 = { headerText: intl.string(finish(1113).t.saHocI), subtitle: intl2.string(finish(1113).t.YpMrqM), headerImage: challenge(finish(16677).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
   const tmp18 = MfaOptionScreenDefault;
-  intl = tmp6(1114).intl;
-  intl2 = tmp6(1114).intl;
+  intl = tmp6(1113).intl;
+  intl2 = tmp6(1113).intl;
   shouldDisplayAndroidFidoSelector = NativeCeremoniesDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj4 = { authenticatorSelection: first1, setAuthenticator: tmp11, inProgress: tmp20 };
@@ -128,9 +128,9 @@ export default function WebAuthnScreen(arg0) {
     }
     shouldDisplayAndroidFidoSelector = tmp16(tmp19, obj4);
   }
-  obj5 = { variant: "primary", text: intl3.string(finish(1114).t.Xr3Eks), loading: tmp3 || tmp13, disabled: tmp3, onPress: callback };
+  obj5 = { variant: "primary", text: intl3.string(finish(1113).t.Xr3Eks), loading: tmp3 || tmp13, disabled: tmp3, onPress: callback };
   tmp17Result = buttonDefault;
-  intl3 = tmp6(1114).intl;
+  intl3 = tmp6(1113).intl;
   return challenge(tmp18, obj3);
 };
 export const AuthenticatorOption = obj3;

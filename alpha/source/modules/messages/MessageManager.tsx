@@ -1,36 +1,36 @@
-// Module ID: 9809
-// Function ID: 9810
+// Module ID: 9830
+// Function ID: 9831
 // Name: MessageManager
-// Dependencies: [32, 6837, 6562, 4862, 6856, 4858, 4880, 6836, 4912, 5040, 1072, 4865, 1090, 3, 6557, 9810, 5244, 6887, 7629, 9811, 510, 5045, 1100, 6858, 5953, 1114, 572, 7281, 2]
+// Dependencies: [32, 6843, 6568, 4867, 6862, 4863, 4885, 6842, 4917, 5045, 1072, 4870, 1089, 3, 6563, 9831, 5249, 6893, 7636, 9832, 510, 5050, 1099, 6864, 5958, 1113, 572, 7287, 2]
 
-// Module 9809 (MessageManager)
+// Module 9830 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import router_utils from "router_utils" /* 1100 */;
-import intl3 from "intl" /* 1114 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ChannelConstants from "ChannelConstants" /* 4865 */;
-import matchPathCompat from "matchPathCompat" /* 5045 */;
-import flow_Client from "flow/Client" /* 5244 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6557 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6858 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7629 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9810 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9811 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import router_utils from "router_utils" /* 1099 */;
+import intl3 from "intl" /* 1113 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import flow_Client from "flow/Client" /* 5249 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6563 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6864 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9831 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9832 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6856 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6862 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let map, obj3;
@@ -103,7 +103,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp7(6887)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp7(6893)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }

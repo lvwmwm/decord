@@ -1,21 +1,22 @@
-// Module ID: 16980
-// Function ID: 16981
+// Module ID: 17038
+// Function ID: 17039
 // Name: launchOrbsArcadeGame
-// Dependencies: [5, 2040, 6840, 16954, 1072, 6841, 1114, 5707, 16960, 6441, 6875, 11689, 16961, 10902, 10903, 5253, 5194, 572, 2]
+// Dependencies: [5, 2038, 6846, 17010, 1072, 6847, 1113, 5712, 17016, 6447, 5258, 6881, 11726, 17017, 10927, 10928, 5199, 572, 2]
 // Exports: default
 
-// Module 16980 (launchOrbsArcadeGame)
+// Module 17038 (launchOrbsArcadeGame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6875 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16960 */;
+import intl3 from "intl" /* 1113 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6881 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import FramesStore from "FramesStore" /* 6840 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16954 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17010 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 let claimableRewardIdsAtLaunch, closure_3, closure_4, frameId, id, navigation;
@@ -46,7 +47,7 @@ let obj = function _ensureEnrollment() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -139,7 +140,7 @@ obj = function _launchGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -156,13 +157,15 @@ obj = function _launchGame() {
             } else {
               closure_2 = tmp4;
               closure_3 = undefined;
-              frameId = undefined;
               claimableRewardIdsAtLaunch = undefined;
               id = undefined;
+              frameId = undefined;
               value = undefined;
               navigation = undefined;
               applicationId = user.applicationId;
               if (null != applicationId) {
+                const obj20 = ActionSheetActionCreatorsDefault;
+                obj20.hideActionSheet();
                 c4 = 1;
                 if (null == application.getApplication(applicationId)) {
                   const items = [applicationId];
@@ -174,13 +177,13 @@ obj = function _launchGame() {
                 }
               }
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c5) {
             c4 = 0;
             closure_131_11();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (2 === c5) {
             if (arg0 === 1) {
               c6 = 3;
@@ -199,9 +202,9 @@ obj = function _launchGame() {
               return { value, done: true };
             } else {
               closure_3 = value;
-              const tmp96 = closure_3;
-              if (tmp96) {
-                const obj4 = closure_131_0(closure_131_2[12]);
+              const tmp93 = closure_3;
+              if (tmp93) {
+                const obj4 = closure_131_0(closure_131_2[13]);
                 const orbsArcadeClaimableRewards = obj4.getOrbsArcadeClaimableRewards(user.rewards, closure_131_6.getGameStateForGame(user.id));
                 claimableRewardIdsAtLaunch = orbsArcadeClaimableRewards.map((id) => id.id);
                 id = closure_131_5.getFrame(closure_131_10(applicationId, closure_131_9));
@@ -215,19 +218,19 @@ obj = function _launchGame() {
                   tmp32 = customId !== user.id;
                 }
                 if (tmp32) {
-                  const obj5 = closure_131_0(closure_131_2[13]);
+                  const obj5 = closure_131_0(closure_131_2[14]);
                   obj5.leaveFrame(id.id);
                 }
-                c4 = 2;
                 const obj11 = { applicationId, surface: closure_131_9, launch: obj12, analyticsContext: obj14 };
                 const _HermesInternal = HermesInternal;
                 obj12 = { customId: user.id, path: "/" + user.id + "/" };
-                const launchFrame = closure_131_1(closure_131_2[14]).launchFrame;
-                closure_131_1(closure_131_2[14]);
+                const launchFrame = closure_131_1(closure_131_2[15]).launchFrame;
+                closure_131_1(closure_131_2[15]);
                 obj14 = { isStart: true, analyticsLocations };
                 value = launchFrame(obj11);
-                const obj9 = closure_131_1(closure_131_2[14]);
+                const obj9 = closure_131_1(closure_131_2[15]);
                 obj9.demoteMainFrame(closure_131_10(applicationId, closure_131_9));
+                c4 = 2;
                 c5 = 5;
                 c6 = 1;
                 return { value, done: false };
@@ -236,7 +239,7 @@ obj = function _launchGame() {
           } else if (4 === c5) {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -247,24 +250,22 @@ obj = function _launchGame() {
           } else {
             frameId = value;
             c4 = 0;
-            const obj19 = closure_131_1(closure_131_2[15]);
-            obj19.hideActionSheet();
-            const obj20 = closure_131_0(closure_131_2[16]);
-            navigation = obj20.getRootNavigationRef();
+            const obj19 = closure_131_0(closure_131_2[16]);
+            navigation = obj19.getRootNavigationRef();
             if (null != navigation) {
               if (navigation.isReady()) {
                 obj = { frameId, gameId: user.id, claimableRewardIdsAtLaunch };
                 navigation.navigate("orbs-arcade-game", obj);
               }
             }
-            const obj2 = closure_131_0(closure_131_2[13]);
+            const obj2 = closure_131_0(closure_131_2[14]);
             obj2.leaveFrame(frameId);
             closure_131_11();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           c4 = 0;
-          const obj13 = closure_131_0(closure_131_2[11]);
+          const obj13 = closure_131_0(closure_131_2[12]);
           if (obj13.canLaunchContextlessFrame(closure_131_4.getApplication(applicationId))) {
             c5 = 3;
             c6 = 1;
@@ -309,7 +310,7 @@ obj = function _launchOrbsArcadeGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -358,7 +359,7 @@ obj = function _launchOrbsArcadeGame() {
             obj.dispatch(obj12);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp28) {
           closure_4 = tmp28;
           if (0 === c5) {

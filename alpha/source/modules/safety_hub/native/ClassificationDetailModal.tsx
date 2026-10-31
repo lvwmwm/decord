@@ -1,16 +1,16 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13296
+// Function ID: 13297
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 5009, 575, 6738, 6992, 13262, 13298, 13299, 13264, 1499, 7163, 1114, 2]
+// Dependencies: [19, 21, 5014, 575, 6744, 6998, 13297, 13333, 13334, 13299, 1498, 7169, 1113, 2]
 // Exports: default
 
-// Module 13261 (ClassificationDetailModal)
+// Module 13296 (ClassificationDetailModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13264 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13299 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -33,7 +33,7 @@ export default function ClassificationDetailModal(classificationId) {
   }
   let tmp = closure_7();
   dependencyMap = tmp;
-  let obj = classificationId(13299);
+  let obj = classificationId(13334);
   const safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -43,7 +43,7 @@ export default function ClassificationDetailModal(classificationId) {
       const safetyHubData = obj.getSafetyHubData();
     }
   }, items);
-  let obj2 = classificationId(1499);
+  let obj2 = classificationId(1498);
   const isFocused = obj2.useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
@@ -90,7 +90,7 @@ export default function ClassificationDetailModal(classificationId) {
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  const Navigator = classificationId(7163).Navigator;
-  const intl = classificationId(1114).intl;
-  return <Navigator screens={memo} initialRouteName={constants.CLASSIFICATION_DETAIL} headerBackTitle={intl.string(classificationId(1114).t["13/7kX"])} />;
+  const Navigator = classificationId(7169).Navigator;
+  const intl = classificationId(1113).intl;
+  return <Navigator screens={memo} initialRouteName={constants.CLASSIFICATION_DETAIL} headerBackTitle={intl.string(classificationId(1113).t["13/7kX"])} />;
 };

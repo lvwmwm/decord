@@ -1,12 +1,12 @@
-// Module ID: 19549
-// Function ID: 19550
+// Module ID: 19606
+// Function ID: 19607
 // Name: SearchTokensManager
-// Dependencies: [2064, 7281, 13843, 2]
+// Dependencies: [2063, 7287, 13878, 2]
 
-// Module 19549 (SearchTokensManager)
-import IntlLoaderStore from "IntlLoaderStore" /* 2064 */;
-import SearchUtils from "SearchUtils" /* 13843 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+// Module 19606 (SearchTokensManager)
+import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
+import SearchUtils from "SearchUtils" /* 13878 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 const React2 = IntlLoaderStore.subscribeToIntlLoadingSuccess;

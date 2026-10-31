@@ -1,14 +1,14 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9115
+// Function ID: 9116
 // Name: CalendarIcon
-// Dependencies: [19, 21, 575, 5711, 9097, 2]
+// Dependencies: [19, 21, 575, 5716, 9116, 2]
 // Exports: CalendarIcon
 
-// Module 9096 (CalendarIcon)
+// Module 9115 (CalendarIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 9097 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 9116 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

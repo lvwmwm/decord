@@ -1,23 +1,23 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12272
+// Function ID: 12273
 // Name: HeroMedia
-// Dependencies: [19, 5010, 1497, 21, 5009, 11468, 11803, 504, 7324, 12208, 8864, 1114, 2]
+// Dependencies: [19, 5015, 1496, 21, 5014, 11502, 11841, 504, 7330, 12246, 8873, 1113, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12234 (HeroMedia)
+// Module 12272 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7324 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11468 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11803 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7330 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11502 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11841 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp6;
-const getPreviewVideoAssetUrlDefault = tmp6(12208);
+const getPreviewVideoAssetUrlDefault = tmp6(12246);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
@@ -79,10 +79,10 @@ export default function HeroMedia(arg0) {
         size.height = rounded;
         size.width = contentWidth2;
         size.poster = tmp7.url;
-        const intl = tmp2(1114).intl;
+        const intl = tmp2(1113).intl;
         const formatToPlainString = intl.formatToPlainString;
         let str3;
-        const prop2 = tmp2(1114).t["Af+EQD"];
+        const prop2 = tmp2(1113).t["Af+EQD"];
         if (getOrFetchApplication != null) {
           str3 = getOrFetchApplication.name;
         }

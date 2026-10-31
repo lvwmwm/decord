@@ -1,14 +1,14 @@
-// Module ID: 19705
-// Function ID: 19706
+// Module ID: 19762
+// Function ID: 19763
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4951, 1384, 1072, 21, 1498, 7324, 7054, 6969, 5647, 8595, 5591, 575, 19594, 12, 8169, 6022, 5601, 2]
+// Dependencies: [19, 4956, 1383, 1072, 21, 1497, 7330, 7060, 6975, 5652, 8603, 5596, 575, 19651, 12, 8177, 6027, 5606, 2]
 // Exports: default
 
-// Module 19705 (GuildSettingsModalLobbiesLinked)
+// Module 19762 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -23,15 +23,15 @@ function SyncingToGamesItem(channels) {
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
   const applicationId = channels.applicationId;
-  let obj = channels(1498);
+  let obj = channels(1497);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(7324);
+  let obj2 = channels(7330);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(7054).TableRowGroup;
+    const TableRowGroup = tmp(7060).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -109,7 +109,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   const obj4 = { children: items1 };
   const obj5 = { contentContainerStyle: items, children: closure_6(Stack, obj7) };
   const obj6 = { paddingTop: keys(575).space.PX_16 };
-  const Form = require("module_8169").Form;
+  const Form = require("module_8177").Form;
   items = [obj6, contentContainerStyle];
   obj7 = {
     style: { paddingHorizontal: token },

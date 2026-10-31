@@ -1,28 +1,28 @@
-// Module ID: 10525
-// Function ID: 10526
+// Module ID: 10545
+// Function ID: 10546
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8200, 10526, 21, 5090, 5009, 575, 5006, 1188, 10257, 5619, 504, 8210, 10527, 1114, 8230, 8212, 10528, 10529, 5249, 1492, 10530, 8651, 10515, 2]
+// Dependencies: [19, 17, 8208, 10546, 21, 5095, 5014, 575, 5011, 1187, 10277, 5624, 504, 8218, 10547, 1113, 8238, 8220, 10548, 10549, 5254, 1491, 10550, 8659, 10535, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10525 (MediaKeyboardItem)
+// Module 10545 (MediaKeyboardItem)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ImageIcon from "ImageIcon" /* 8651 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10257 */;
-import AttachmentIcon from "AttachmentIcon" /* 10515 */;
-import CameraIcon from "CameraIcon" /* 10530 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ImageIcon from "ImageIcon" /* 8659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10277 */;
+import AttachmentIcon from "AttachmentIcon" /* 10535 */;
+import CameraIcon from "CameraIcon" /* 10550 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8200 */;
-import DeviceConstants from "DeviceConstants" /* 10526 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
+import DeviceConstants from "DeviceConstants" /* 10546 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import ColorUtils_mod from "ColorUtils" /* 5006 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import ColorUtils_mod from "ColorUtils" /* 5011 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;

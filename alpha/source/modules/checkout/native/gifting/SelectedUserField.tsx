@@ -1,21 +1,21 @@
-// Module ID: 10704
-// Function ID: 10705
+// Module ID: 10724
+// Function ID: 10725
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 5009, 575, 7091, 1114, 5063, 7213, 1188, 5619, 7086, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7097, 1113, 5068, 7219, 1187, 5624, 7092, 2]
 // Exports: default
 
-// Module 10704 (SelectedUserField)
+// Module 10724 (SelectedUserField)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import CircleXIcon from "CircleXIcon" /* 7086 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7091 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7213 */;
+import intl6 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import CircleXIcon from "CircleXIcon" /* 7092 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7097 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7219 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -70,17 +70,17 @@ export default function SelectedUserField(onPress) {
   const obj3 = { style: items, onPress, accessibilityRole: "button", accessibilityLabel: combined, children: items1 };
   items[1] = openerWithClearButton;
   if (null != selectedUser) {
-    const intl3 = tmp4(1114).intl;
+    const intl3 = tmp4(1113).intl;
     const _HermesInternal2 = HermesInternal;
     const stringResult = intl3.string(intl6.t.xFn72s);
     const obj4 = UserUtilsDefault;
     combined = "" + stringResult + ", " + obj4.getName(selectedUser);
   } else {
-    const intl = tmp4(1114).intl;
+    const intl = tmp4(1113).intl;
     const stringResult1 = intl.string(intl6.t.xFn72s);
-    const intl2 = tmp4(1114).intl;
+    const intl2 = tmp4(1113).intl;
     const _HermesInternal = HermesInternal;
-    combined = "" + stringResult1 + ", " + intl2.string(tmp4(1114).t.R0vK0N);
+    combined = "" + stringResult1 + ", " + intl2.string(tmp4(1113).t.R0vK0N);
   }
   items1 = [, ];
   const obj5 = { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" };
@@ -88,17 +88,17 @@ export default function SelectedUserField(onPress) {
   if (null != selectedUser) {
     const obj6 = { style: tmp.userPill, children: items2 };
     const obj7 = { user: selectedUser, guildId: "Array", size: native.AvatarSizes.XSMALL_20 };
-    const Avatar = tmp4(1188).Avatar;
+    const Avatar = tmp4(1187).Avatar;
     items2 = [hasOwnProperty(Avatar, obj7), ];
     const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
-    const Text2 = tmp4(5619).Text;
+    const Text2 = tmp4(5624).Text;
     obj10 = UserUtilsDefault;
     items2[1] = hasOwnProperty(Text2, obj8);
     tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-    const Text = tmp4(5619).Text;
-    intl4 = tmp4(1114).intl;
+    const Text = tmp4(5624).Text;
+    intl4 = tmp4(1113).intl;
     tmp2Result1 = tmp2(Text, obj9);
   }
   items1[1] = tmp2Result1;
@@ -114,10 +114,10 @@ export default function SelectedUserField(onPress) {
       accessibilityLabel: formatToPlainString(v0Vb9FQ, obj12),
       children: hasOwnProperty(CircleXIcon.CircleXIcon, { size: "xs" })
     };
-    const intl5 = tmp4(1114).intl;
+    const intl5 = tmp4(1113).intl;
     formatToPlainString = intl5.formatToPlainString;
     obj12 = { text: obj13.getName(selectedUser) };
-    v0Vb9FQ = tmp4(1114).t["0Vb9FQ"];
+    v0Vb9FQ = tmp4(1113).t["0Vb9FQ"];
     obj13 = UserUtilsDefault;
     tmp2Result = tmp2(tmp7, obj11);
   }

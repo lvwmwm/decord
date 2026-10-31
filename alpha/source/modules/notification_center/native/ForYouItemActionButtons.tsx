@@ -1,30 +1,30 @@
-// Module ID: 18439
-// Function ID: 18440
+// Module ID: 18482
+// Function ID: 18483
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 4858, 1384, 1072, 21, 5009, 1109, 5090, 5249, 6022, 5629, 1114, 5619, 563, 8425, 18045, 5740, 15629, 10720, 6853, 7479, 7482, 5707, 10181, 1253, 2]
+// Dependencies: [5, 19, 17, 4863, 1383, 1072, 21, 5014, 1108, 5095, 5254, 6027, 5634, 1113, 5624, 563, 8433, 18088, 5745, 15670, 10740, 6859, 7485, 7488, 5712, 10201, 1252, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 18439 (ForYouItemActionButtons)
+// Module 18482 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
-import intl23 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import parseURLDefault from "parseURL" /* 5740 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6853 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10720 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15629 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18045 */;
+import intl23 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import parseURLDefault from "parseURL" /* 5745 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6859 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10740 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15670 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -183,7 +183,7 @@ class IncomingFriendRequestActions {
         const obj = { transform: items };
         const obj2 = { rotateZ: withDelay(450, withRepeat(withTiming(str, obj3), 4, true)) };
         obj3 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-        Easing = tmp(5090).Easing;
+        Easing = tmp(5095).Easing;
         items = [obj2, { translateX: -sharedValue2.get() / 2 }, ];
         ({ translateX: -sharedValue2.get() / 2 });
         items[2] = { translateY: -sharedValue3.get() / 2 };
@@ -378,7 +378,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
     }
     onSoftAckItem(other_user);
   }, items1);
-  const tmp2Result = tmp2(5090);
+  const tmp2Result = tmp2(5095);
   sharedValue = tmp2Result.useSharedValue(false);
   const items2 = [forceHoistItem, sharedValue, other_user, id, arg6];
   callback1 = react.useCallback(() => {
@@ -486,7 +486,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -521,7 +521,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         navigation = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         navigation = 3;
         throw tmp17;
@@ -548,72 +548,72 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
     let obj3 = { actionButtons: [] };
     return obj3;
   } else {
-    if (other_user.type !== tmp2(6853).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
-      if (other_user.type !== tmp2(6853).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-        if (other_user.type !== tmp2(6853).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
-          if (other_user.type === tmp2(6853).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
+    if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
+      if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+        if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
+          if (other_user.type === tmp2(6859).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
             let obj4 = { actionButtons: items9, accessibilityActions: items10, onAccessibilityAction: callback3 };
-            let obj5 = { id: "view_friend_requests", text: intl15.string(tmp2(1114).t["lMR96+"]), variant: "secondary", size: "md", onPress: callback3 };
-            intl15 = tmp2(1114).intl;
+            let obj5 = { id: "view_friend_requests", text: intl15.string(tmp2(1113).t["lMR96+"]), variant: "secondary", size: "md", onPress: callback3 };
+            intl15 = tmp2(1113).intl;
             items9 = [obj5];
-            let obj6 = { name: constants2.ACTION, label: intl16.string(tmp2(1114).t["lMR96+"]) };
-            intl16 = tmp2(1114).intl;
+            let obj6 = { name: constants2.ACTION, label: intl16.string(tmp2(1113).t["lMR96+"]) };
+            intl16 = tmp2(1113).intl;
             items10 = [obj6];
             return obj4;
-          } else if (other_user.type === tmp2(6853).NotificationCenterItems.GO_LIVE_PUSH) {
+          } else if (other_user.type === tmp2(6859).NotificationCenterItems.GO_LIVE_PUSH) {
             const obj7 = { actionButtons: items11, accessibilityActions: items12, onAccessibilityAction: callback };
-            const obj8 = { id: "join_stream", text: intl13.string(tmp2(1114).t["Pqj7h+"]), variant: "secondary", size: "md", onPress: callback };
-            intl13 = tmp2(1114).intl;
+            const obj8 = { id: "join_stream", text: intl13.string(tmp2(1113).t["Pqj7h+"]), variant: "secondary", size: "md", onPress: callback };
+            intl13 = tmp2(1113).intl;
             items11 = [obj8];
-            const obj9 = { name: constants2.ACTION, label: intl14.string(tmp2(1114).t["Pqj7h+"]) };
-            intl14 = tmp2(1114).intl;
+            const obj9 = { name: constants2.ACTION, label: intl14.string(tmp2(1113).t["Pqj7h+"]) };
+            intl14 = tmp2(1113).intl;
             items12 = [obj9];
             return obj7;
           } else {
-            if (other_user.type !== tmp2(6853).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-              if (other_user.type !== tmp2(6853).NotificationCenterItems.DM_FRIEND_NUDGE) {
-                if (other_user.type !== tmp2(6853).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
-                  if (other_user.type !== tmp2(6853).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
-                    if (other_user.type === tmp2(6853).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
+            if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+              if (other_user.type !== tmp2(6859).NotificationCenterItems.DM_FRIEND_NUDGE) {
+                if (other_user.type !== tmp2(6859).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
+                  if (other_user.type !== tmp2(6859).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
+                    if (other_user.type === tmp2(6859).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
                       const obj10 = { actionButtons: items13, accessibilityActions: items14, onAccessibilityAction: callback5 };
-                      const obj11 = { id: "add_friend", text: intl9.string(tmp2(1114).t["boL/YX"]), variant: "secondary", size: "md", onPress: callback5 };
-                      intl9 = tmp2(1114).intl;
+                      const obj11 = { id: "add_friend", text: intl9.string(tmp2(1113).t["boL/YX"]), variant: "secondary", size: "md", onPress: callback5 };
+                      intl9 = tmp2(1113).intl;
                       items13 = [obj11];
-                      const obj12 = { name: constants2.ACTION, label: intl10.string(tmp2(1114).t["boL/YX"]) };
-                      intl10 = tmp2(1114).intl;
+                      const obj12 = { name: constants2.ACTION, label: intl10.string(tmp2(1113).t["boL/YX"]) };
+                      intl10 = tmp2(1113).intl;
                       items14 = [obj12];
                       return obj10;
-                    } else if (other_user.type === tmp2(6853).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
+                    } else if (other_user.type === tmp2(6859).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
                       const obj13 = { actionButtons: items15, accessibilityActions: items16, onAccessibilityAction: callback };
-                      const obj14 = { id: "join_event", text: intl7.string(tmp2(1114).t.hRKdcn), variant: "secondary", size: "md", onPress: callback };
-                      intl7 = tmp2(1114).intl;
+                      const obj14 = { id: "join_event", text: intl7.string(tmp2(1113).t.hRKdcn), variant: "secondary", size: "md", onPress: callback };
+                      intl7 = tmp2(1113).intl;
                       items15 = [obj14];
-                      const obj15 = { name: constants2.ACTION, label: intl8.string(tmp2(1114).t.hRKdcn) };
-                      intl8 = tmp2(1114).intl;
+                      const obj15 = { name: constants2.ACTION, label: intl8.string(tmp2(1113).t.hRKdcn) };
+                      intl8 = tmp2(1113).intl;
                       items16 = [obj15];
                       return obj13;
-                    } else if (other_user.type === tmp2(6853).NotificationCenterItems.LIFECYCLE_ITEM) {
+                    } else if (other_user.type === tmp2(6859).NotificationCenterItems.LIFECYCLE_ITEM) {
                       let stringResult;
                       let str2;
                       const item_enum = other_user.item_enum;
-                      if (tmp2(6853).ItemEnum.UPDATE_PROFILE === item_enum) {
-                        const intl6 = tmp2(1114).intl;
-                        stringResult = intl6.string(tmp2(1114).t.zMRcWL);
+                      if (tmp2(6859).ItemEnum.UPDATE_PROFILE === item_enum) {
+                        const intl6 = tmp2(1113).intl;
+                        stringResult = intl6.string(tmp2(1113).t.zMRcWL);
                         str2 = "update_profile";
-                      } else if (tmp2(6853).ItemEnum.FIND_FRIENDS === item_enum) {
-                        const intl5 = tmp2(1114).intl;
-                        stringResult = intl5.string(tmp2(1114).t["vwL/4s"]);
+                      } else if (tmp2(6859).ItemEnum.FIND_FRIENDS === item_enum) {
+                        const intl5 = tmp2(1113).intl;
+                        stringResult = intl5.string(tmp2(1113).t["vwL/4s"]);
                         str2 = "find_friends";
-                      } else if (tmp2(6853).ItemEnum.ADD_FRIEND === item_enum) {
-                        const intl4 = tmp2(1114).intl;
-                        stringResult = intl4.string(tmp2(1114).t["boL/YX"]);
+                      } else if (tmp2(6859).ItemEnum.ADD_FRIEND === item_enum) {
+                        const intl4 = tmp2(1113).intl;
+                        stringResult = intl4.string(tmp2(1113).t["boL/YX"]);
                         str2 = "add_friend";
                       } else {
                         str2 = null;
                         stringResult = null;
-                        if (tmp2(6853).ItemEnum.FIRST_MESSAGE === item_enum) {
-                          const intl20 = tmp2(1114).intl;
-                          stringResult = intl20.string(tmp2(1114).t["GuUH7/"]);
+                        if (tmp2(6859).ItemEnum.FIRST_MESSAGE === item_enum) {
+                          const intl20 = tmp2(1113).intl;
+                          stringResult = intl20.string(tmp2(1113).t["GuUH7/"]);
                           str2 = "send_message";
                         }
                       }
@@ -631,11 +631,11 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       obj16 = { actionButtons: [] };
                       const obj19 = { actionButtons: [] };
                     } else {
-                      if (other_user.type !== tmp2(6853).NotificationCenterItems.RECENT_MENTION) {
-                        if (other_user.type !== tmp2(6853).NotificationCenterItems.REPLY_MENTION) {
-                          if (other_user.type === tmp2(6853).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
-                            const intl3 = tmp2(1114).intl;
-                            const stringResult1 = intl3.string(tmp2(1114).t.TI8qgg);
+                      if (other_user.type !== tmp2(6859).NotificationCenterItems.RECENT_MENTION) {
+                        if (other_user.type !== tmp2(6859).NotificationCenterItems.REPLY_MENTION) {
+                          if (other_user.type === tmp2(6859).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
+                            const intl3 = tmp2(1113).intl;
+                            const stringResult1 = intl3.string(tmp2(1113).t.TI8qgg);
                             const obj20 = { id: "share_trials", text: stringResult1, variant: str, size: "md", onPress: callback };
                             str = "primary";
                             if (flag) {
@@ -648,13 +648,13 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                             return obj21;
                           } else {
                             let obj26;
-                            if (other_user.type === tmp2(6853).NotificationCenterItems.TRENDING_CONTENT) {
+                            if (other_user.type === tmp2(6859).NotificationCenterItems.TRENDING_CONTENT) {
                               const obj23 = { actionButtons: items21, accessibilityActions: items22, onAccessibilityAction: callback7 };
-                              const obj24 = { id: "read_summary", text: intl.string(tmp2(1114).t.k0Q31F), variant: "secondary", size: "md", onPress: callback7 };
-                              intl = tmp2(1114).intl;
+                              const obj24 = { id: "read_summary", text: intl.string(tmp2(1113).t.k0Q31F), variant: "secondary", size: "md", onPress: callback7 };
+                              intl = tmp2(1113).intl;
                               items21 = [obj24];
-                              const obj25 = { name: constants2.ACTION, label: intl2.string(tmp2(1114).t.k0Q31F) };
-                              intl2 = tmp2(1114).intl;
+                              const obj25 = { name: constants2.ACTION, label: intl2.string(tmp2(1113).t.k0Q31F) };
+                              intl2 = tmp2(1113).intl;
                               items22 = [obj25];
                               obj26 = obj23;
                             } else {
@@ -668,11 +668,11 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                         let obj27;
                         if (type !== POLL_RESULT) {
                           obj27 = { actionButtons: items23, accessibilityActions: items24, onAccessibilityAction: callback6 };
-                          const obj28 = { id: "send_reply", text: intl18.string(tmp2(1114).t.vBq3iT), variant: "secondary", size: "md", onPress: callback6 };
-                          intl18 = tmp2(1114).intl;
+                          const obj28 = { id: "send_reply", text: intl18.string(tmp2(1113).t.vBq3iT), variant: "secondary", size: "md", onPress: callback6 };
+                          intl18 = tmp2(1113).intl;
                           items23 = [obj28];
-                          const obj29 = { name: constants2.ACTION, label: intl19.string(tmp2(1114).t.vBq3iT) };
-                          intl19 = tmp2(1114).intl;
+                          const obj29 = { name: constants2.ACTION, label: intl19.string(tmp2(1113).t.vBq3iT) };
+                          intl19 = tmp2(1113).intl;
                           items24 = [obj29];
                         }
                         return obj27;
@@ -685,11 +685,11 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
               }
             }
             const obj31 = { actionButtons: items25, accessibilityActions: items26, onAccessibilityAction: callback4 };
-            const obj32 = { id: "send_message", text: intl11.string(tmp2(1114).t["GuUH7/"]), variant: "secondary", size: "md", onPress: callback4 };
-            intl11 = tmp2(1114).intl;
+            const obj32 = { id: "send_message", text: intl11.string(tmp2(1113).t["GuUH7/"]), variant: "secondary", size: "md", onPress: callback4 };
+            intl11 = tmp2(1113).intl;
             items25 = [obj32];
-            const obj33 = { name: constants2.ACTION, label: intl12.string(tmp2(1114).t["GuUH7/"]) };
-            intl12 = tmp2(1114).intl;
+            const obj33 = { name: constants2.ACTION, label: intl12.string(tmp2(1113).t["GuUH7/"]) };
+            intl12 = tmp2(1113).intl;
             items26 = [obj33];
             return obj31;
           }
@@ -711,17 +711,17 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         }
     };
     obj35 = { onWavePress: callback, onAccept: callback1, onIgnore: callback2, pressed: sharedValue, compactMode };
-    if (other_user.type === tmp2(6853).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-      const obj36 = { name: constants2.WAVE, label: intl17.string(tmp2(1114).t.n8nU4W) };
-      intl17 = tmp2(1114).intl;
+    if (other_user.type === tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+      const obj36 = { name: constants2.WAVE, label: intl17.string(tmp2(1113).t.n8nU4W) };
+      intl17 = tmp2(1113).intl;
       const items27 = [obj36];
       items28 = items27;
     } else {
-      const obj37 = { name: constants2.ACCEPT, label: intl21.string(tmp2(1114).t.zf5jU5) };
-      intl21 = tmp2(1114).intl;
+      const obj37 = { name: constants2.ACCEPT, label: intl21.string(tmp2(1113).t.zf5jU5) };
+      intl21 = tmp2(1113).intl;
       items28 = [obj37, ];
-      const obj38 = { name: constants2.IGNORE, label: intl22.string(tmp2(1114).t.EBN847) };
-      intl22 = tmp2(1114).intl;
+      const obj38 = { name: constants2.IGNORE, label: intl22.string(tmp2(1113).t.EBN847) };
+      intl22 = tmp2(1113).intl;
       items28[1] = obj38;
     }
     return obj34;

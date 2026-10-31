@@ -1,26 +1,26 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 13420
+// Function ID: 13421
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 4952, 13386, 6061, 1083, 21, 575, 5253, 13387, 1995, 5009, 1626, 13397, 13400, 504, 6430, 6086, 11911, 8665, 13403, 13404, 13405, 6429, 13407, 6738, 1993, 6068, 6082, 13329, 5706, 1114, 6106, 5075, 13408, 13581, 13583, 13592, 6091, 6092, 13638, 7048, 13639, 13642, 13651, 13409, 13653, 2]
+// Dependencies: [5, 32, 19, 17, 4957, 13421, 6066, 1083, 21, 575, 5258, 13422, 1994, 5014, 1625, 13435, 13437, 504, 6435, 6091, 11949, 8673, 13440, 13441, 13442, 6434, 13444, 6744, 1992, 6073, 6087, 13364, 5711, 1113, 6111, 5080, 13445, 13618, 13620, 13629, 6096, 6097, 13673, 7054, 13674, 13677, 13686, 13614, 13688, 2]
 // Exports: default
 
-// Module 13385 (CheckpointModal)
+// Module 13420 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import CheckpointStore2 from "CheckpointStore" /* 13386 */;
-import CheckpointFlows from "CheckpointFlows" /* 13400 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13653 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import CheckpointStore2 from "CheckpointStore" /* 13421 */;
+import CheckpointFlows from "CheckpointFlows" /* 13437 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13688 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 4952 */;
-import CheckpointConstants from "CheckpointConstants" /* 6061 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import CheckpointConstants from "CheckpointConstants" /* 6066 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -107,7 +107,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
       const tmp8 = route;
       if (null != adjacentCheckpointRoute) {
         ref.current = timestamp;
-        const SILENT_CHECKPOINT_ROUTES = tmp4(6430).SILENT_CHECKPOINT_ROUTES;
+        const SILENT_CHECKPOINT_ROUTES = tmp4(6435).SILENT_CHECKPOINT_ROUTES;
         if (!SILENT_CHECKPOINT_ROUTES.has(tmp8)) {
           closure_7();
         }
@@ -156,7 +156,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -222,7 +222,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               obj.closeForwardModal();
               closure_1_11(1, { skipThrottle: true });
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp39) {
             tmp40 = c6;
@@ -255,7 +255,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -277,7 +277,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
                 if (_undefined.fetchState !== constants.SUCCESS) {
                   if (_undefined.fetchState === tmp35.FETCHING) {
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     c4 = 1;
                     c5 = 1;
@@ -332,7 +332,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
               closure_129_10(false);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           const tmp37 = closure_129_5;
           if (tmp37) {
@@ -564,7 +564,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     onShare: function handleShare() {
       obj = { character: stateFromStores, stats, onForward: handleForward };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13387, dependencyMap.paths), "CheckpointShare", obj);
+      obj2.openLazy(asyncRequire(13422, dependencyMap.paths), "CheckpointShare", obj);
     },
     color: tmp20,
     shadowColor,

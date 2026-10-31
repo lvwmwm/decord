@@ -1,29 +1,29 @@
-// Module ID: 10245
-// Function ID: 10246
+// Module ID: 10265
+// Function ID: 10266
 // Name: StickerPicker
-// Dependencies: [32, 19, 17, 1384, 6831, 4837, 1072, 21, 5009, 575, 1253, 10246, 10248, 504, 7320, 7345, 10025, 10220, 1260, 10253, 7510, 6554, 10254, 9764, 5707, 1114, 7351, 10266, 7212, 10277, 10278, 10284, 2]
+// Dependencies: [32, 19, 17, 1383, 6837, 4842, 1072, 21, 5014, 575, 1252, 10266, 10268, 504, 7326, 7351, 10046, 10240, 1259, 10273, 7516, 6560, 10274, 9785, 5712, 1113, 7357, 10286, 7218, 10297, 10298, 10304, 2]
 
-// Module 10245 (StickerPicker)
+// Module 10265 (StickerPicker)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import react_native from "react-native" /* 1260 */;
-import StickersConstants from "StickersConstants" /* 4837 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import StickersUtils from "StickersUtils" /* 6554 */;
-import StickerSendability from "StickerSendability" /* 7510 */;
-import MobileStickerPickerUpsellRestyleExperiment from "MobileStickerPickerUpsellRestyleExperiment" /* 10025 */;
-import StickersSearchUtils from "StickersSearchUtils" /* 10253 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10254 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10266 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import react_native from "react-native" /* 1259 */;
+import StickersConstants from "StickersConstants" /* 4842 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import StickersUtils from "StickersUtils" /* 6560 */;
+import StickerSendability from "StickerSendability" /* 7516 */;
+import MobileStickerPickerUpsellRestyleExperiment from "MobileStickerPickerUpsellRestyleExperiment" /* 10046 */;
+import StickersSearchUtils from "StickersSearchUtils" /* 10273 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10274 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1384 */;
-import StickersStore from "StickersStore" /* 6831 */;
+import UserStore from "UserStore" /* 1383 */;
+import StickersStore from "StickersStore" /* 6837 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const openStickerPackDetailActionSheetDefault = openStickerPackDetailActionSheet;
@@ -76,9 +76,9 @@ const memoResult = react.memo(function StickerPicker(channel) {
   ({ bottomSheetRef, bottomSheetIndex, paddingTop, stickerFormats, inPortalKeyboard } = channel);
   const tmp = closure_17();
   const tmp2 = channel;
-  let obj = channel(10246);
+  let obj = channel(10266);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  let obj2 = channel(10248);
+  let obj2 = channel(10268);
   const stickerCategories = obj2.useStickerCategories(channel);
   let obj3 = channel(504);
   let items = [StickersStore];
@@ -87,13 +87,13 @@ const memoResult = react.memo(function StickerPicker(channel) {
   dependencyMap = tmp8;
   let tmp9 = onPressSticker;
   const first = tmp6[0];
-  const tmp10 = onPressSticker(7320);
-  analyticsLocations = tmp10(onPressSticker(7345).STICKER_PICKER).analyticsLocations;
+  const tmp10 = onPressSticker(7326);
+  analyticsLocations = tmp10(onPressSticker(7351).STICKER_PICKER).analyticsLocations;
   const tmp11 = analyticsLocations(react.useState(null), 2);
   [tmp12, c4] = tmp11;
-  let obj4 = channel(10025);
+  let obj4 = channel(10046);
   let mobileStickerPickerUpsellRestyleEnabled = obj4.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
-  let tmp14 = onPressSticker(10220)({ hasCategories: true });
+  let tmp14 = onPressSticker(10240)({ hasCategories: true });
   let items1 = [channel, mobileStickerPickerUpsellRestyleEnabled];
   ({ safeAreaStyle, safeAreaBottomKeyboardAware } = tmp14);
   const items2 = [, ];
@@ -186,12 +186,12 @@ const memoResult = react.memo(function StickerPicker(channel) {
           track(PREMIUM_PROMOTION_OPENED, obj4);
           const obj6 = { initialUpsellKey: map1.GLOBAL_STICKER, analyticsLocation: obj7, analyticsLocations, isDismissable: true };
           obj7 = { page: null != channel.guild_id ? tmp13.GUILD_CHANNEL : tmp13.DM_CHANNEL, section: constants3.STICKER_PICKER_UPSELL };
-          const tmp9Result = tmp9(9764);
+          const tmp9Result = tmp9(9785);
           const result = tmp9Result.handleShowUpsellAlert(obj6);
         }
       }
     } else {
-      mobileStickerPickerUpsellRestyleEnabled = stickerSendability === tmp(7510).StickerSendability.SENDABLE_WITH_BOOSTED_GUILD;
+      mobileStickerPickerUpsellRestyleEnabled = stickerSendability === tmp(7516).StickerSendability.SENDABLE_WITH_BOOSTED_GUILD;
       if (mobileStickerPickerUpsellRestyleEnabled) {
         const tmpResult4 = MobileStickerPickerUpsellRestyleExperiment;
         mobileStickerPickerUpsellRestyleEnabled = tmpResult4.getMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
@@ -200,7 +200,7 @@ const memoResult = react.memo(function StickerPicker(channel) {
         const obj8 = { text: intl.string(intl2.t.UTExh3) };
         const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
-        intl = tmp(1114).intl;
+        intl = tmp(1113).intl;
         open("STICKER_PICKER_LIST_PRESS_DISABLED", obj8);
       }
     }
@@ -210,7 +210,7 @@ const memoResult = react.memo(function StickerPicker(channel) {
     const obj2 = { type: constants4.STICKER_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
     obj.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj2);
   }, items4);
-  let obj5 = onPressSticker(7351);
+  let obj5 = onPressSticker(7357);
   const items5 = [channel];
   const tidaWebformEnabled = obj5.useExperiment({ location: "StickerPicker" }, { autoTrackExposure: false }).tidaWebformEnabled;
   let tmp20 = closure_15;
@@ -223,25 +223,25 @@ const memoResult = react.memo(function StickerPicker(channel) {
   tmp22 = mobileStickerPickerUpsellRestyleEnabled;
   obj7 = { style: tmp.container, children: items6 };
   let tmp20Result = null;
-  const AnalyticsLocationProvider = channel(7320).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = channel(7326).AnalyticsLocationProvider;
   tmp21 = closure_16;
   if (0 !== stickerCategories.length) {
     let obj8 = { style: tmp.header, children: tmp20(SearchBar, obj9) };
-    obj9 = { size: "md", placeholder: intl.string(tmp2(1114).t.dt5h1C), onChange: callback, onFocus: callback2, round: true };
-    SearchBar = tmp2(7212).SearchBar;
-    intl = tmp2(1114).intl;
+    obj9 = { size: "md", placeholder: intl.string(tmp2(1113).t.dt5h1C), onChange: callback, onFocus: callback2, round: true };
+    SearchBar = tmp2(7218).SearchBar;
+    intl = tmp2(1113).intl;
     tmp20Result = tmp20(tmp22, obj8);
   }
   items6 = [tmp20Result, , ];
   if (stateFromStores) {
     let tmp20Result3;
     if (0 === stickerCategories.length) {
-      const obj10 = { style: tmp.emptyState, children: tmp20(tmp9(10277), {}) };
+      const obj10 = { style: tmp.emptyState, children: tmp20(tmp9(10297), {}) };
       tmp20Result3 = tmp20(tmp22, obj10);
     } else {
       const obj11 = { bottomSheetRef, bottomSheetIndex, setCategoryIndex: tmp6[1], onPressSticker: callback1, onLongPressStickerDetail: tmp27, insetBottom: safeAreaBottomKeyboardAware, insetTop: paddingTop, channel, stickerFormats, searchResults: tmp12, inPortalKeyboard };
       tmp27 = undefined;
-      let tmp9Result = tmp9(10278);
+      let tmp9Result = tmp9(10298);
       if (tidaWebformEnabled) {
         tmp27 = callback3;
       }
@@ -254,7 +254,7 @@ const memoResult = react.memo(function StickerPicker(channel) {
     tmp20Result4 = tmp20(closure_6, obj12);
   }
   items6[1] = tmp20Result4;
-  items6[2] = tmp20(tmp9(10284), { categories: stickerCategories, categoryIndex: first, style: safeAreaStyle });
+  items6[2] = tmp20(tmp9(10304), { categories: stickerCategories, categoryIndex: first, style: safeAreaStyle });
   return tmp20(AnalyticsLocationProvider, obj6);
 });
 let result = size.fileFinishedImporting("modules/stickers/native/StickerPicker.tsx");

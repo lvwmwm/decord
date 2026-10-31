@@ -1,20 +1,20 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 13010
+// Function ID: 13011
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 10842, 21, 5009, 575, 12976, 11377, 7372, 5619, 12969, 1114, 3865, 6974, 6971, 1626, 504, 8971, 12977, 9195, 7212, 12979, 12980, 7288, 2]
+// Dependencies: [32, 19, 17, 10862, 21, 5014, 575, 13011, 11413, 7378, 5624, 13004, 1113, 3868, 6980, 6977, 1625, 504, 8980, 13012, 9214, 7218, 13014, 13015, 7294, 2]
 // Exports: default
 
-// Module 12975 (ConjureDebugLogsTab)
+// Module 13010 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 12976 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 12977 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 13011 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 13012 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10842 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10862 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let item, set;
@@ -68,16 +68,16 @@ let closure_11 = react.memo(function LogRow(entry) {
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(11377).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(11413).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
-    ChevronSmallRightIcon = tmp3(7372).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp3(7378).ChevronSmallRightIcon;
     tmp6 = tmp3;
   }
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
-  const Text = tmp6(5619).Text;
-  const tmp6Result = tmp6(12969);
+  const Text = tmp6(5624).Text;
+  const tmp6Result = tmp6(13004);
   let ts = tmp6Result.formatClockTime(entry.ts);
   if (ts == null) {
     ts = entry.ts;
@@ -85,7 +85,7 @@ let closure_11 = react.memo(function LogRow(entry) {
   items1 = [closure_7(Text, { variant: "text-xs/normal", color: "text-subtle", children: ts }), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
-  const Text2 = tmp6(5619).Text;
+  const Text2 = tmp6(5624).Text;
   if ("error" !== level) {
     let str3 = "text-muted";
     if ("warn" === level) {
@@ -100,15 +100,15 @@ let closure_11 = react.memo(function LogRow(entry) {
     tmp9Result = null;
     if (null != entry.source) {
       const obj4 = { variant: "text-xxs/semibold", color: "text-subtle", style: tmp.badge, children: entry.source };
-      tmp9Result = tmp9(tmp6(5619).Text, obj4);
+      tmp9Result = tmp9(tmp6(5624).Text, obj4);
     }
   }
   items1[2] = tmp9Result;
   let tmp9Result4 = null;
   if (null != entry.kind) {
-    const obj5 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp.badge, children: intl.string(_modDef3865.TrC9c8) };
-    const Text3 = tmp6(5619).Text;
-    intl = tmp6(1114).intl;
+    const obj5 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp.badge, children: intl.string(_modDef3868.TrC9c8) };
+    const Text3 = tmp6(5624).Text;
+    intl = tmp6(1113).intl;
     tmp9Result4 = tmp9(Text3, obj5);
   }
   items1[3] = tmp9Result4;
@@ -119,32 +119,32 @@ let closure_11 = react.memo(function LogRow(entry) {
     const tmp14 = closure_9;
     if ("" !== memo.prefix) {
       const obj6 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.prefix };
-      tmp9Result5 = tmp9(tmp6(5619).Text, obj6);
+      tmp9Result5 = tmp9(tmp6(5624).Text, obj6);
     }
     const items3 = [tmp9Result5, , ];
     const obj7 = {
       style: tmp.jsonToggle,
       accessibilityRole: "button",
       accessibilityState: obj8,
-      accessibilityLabel: intl2.string(_modDef3865["9CTzyV"]),
+      accessibilityLabel: intl2.string(_modDef3868["9CTzyV"]),
       onPress() {
           return dependencyMap(importDefault);
         },
       children: items4
     };
     obj8 = { expanded };
-    const PressableOpacity = tmp6(6974).PressableOpacity;
-    intl2 = tmp6(1114).intl;
+    const PressableOpacity = tmp6(6980).PressableOpacity;
+    intl2 = tmp6(1113).intl;
     const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
     items4 = [closure_7(ChevronSmallRightIcon, obj9), ];
     const items5 = [memo.marker, " ", ];
-    const Text4 = tmp6(5619).Text;
-    const intl3 = tmp6(1114).intl;
+    const Text4 = tmp6(5624).Text;
+    const intl3 = tmp6(1113).intl;
     const formatToPlainString = intl3.formatToPlainString;
     if ("[\u2026]" === memo.marker) {
-      kUhyUv = tmp16(3865).kUhyUv;
+      kUhyUv = tmp16(3868).kUhyUv;
     } else {
-      kUhyUv = tmp16(3865)["N+fphl"];
+      kUhyUv = tmp16(3868)["N+fphl"];
     }
     const obj10 = { variant: "text-xs/medium", color: "text-muted", children: items5 };
     const obj11 = { count: memo.size };
@@ -153,8 +153,8 @@ let closure_11 = react.memo(function LogRow(entry) {
     items3[1] = closure_8(PressableOpacity, obj7);
     let tmp9Result6 = null;
     if (expanded) {
-      const obj12 = { variant: "primary", children: closure_7(tmp6(5619).Text, obj13) };
-      const Card = tmp6(6971).Card;
+      const obj12 = { variant: "primary", children: closure_7(tmp6(5624).Text, obj13) };
+      const Card = tmp6(6977).Card;
       obj13 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.pretty };
       tmp9Result6 = tmp9(Card, obj12);
     }
@@ -163,7 +163,7 @@ let closure_11 = react.memo(function LogRow(entry) {
     tmp9Result7 = tmp7(tmp14, obj14);
   } else {
     const obj15 = { variant: "text-xs/normal", color: str, selectable: true, children: entry.message };
-    tmp9Result7 = tmp9(tmp6(5619).Text, obj15);
+    tmp9Result7 = tmp9(tmp6(5624).Text, obj15);
   }
   items2[1] = tmp9Result7;
   return closure_8(View, obj);

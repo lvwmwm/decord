@@ -1,16 +1,16 @@
-// Module ID: 4951
-// Function ID: 4952
+// Module ID: 4956
+// Function ID: 4957
 // Name: RelationshipStore
-// Dependencies: [32, 4952, 1384, 1072, 572, 504, 4929, 2]
+// Dependencies: [32, 4957, 1383, 1072, 572, 504, 4934, 2]
 
-// Module 4951 (RelationshipStore)
+// Module 4956 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4929 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4934 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4952 */;
-import UserStore from "UserStore" /* 1384 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import UserStore from "UserStore" /* 1383 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_16;
@@ -394,7 +394,6 @@ const prototype = RelationshipStore.prototype;
 RelationshipStore.displayName = "RelationshipStore";
 let obj = {
   CONNECTION_OPEN: function handleConnectionOpen(relationships) {
-    let set4;
     map.clear();
     map1.clear();
     obj6 = {};

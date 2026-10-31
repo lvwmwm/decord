@@ -1,16 +1,16 @@
-// Module ID: 8364
-// Function ID: 8365
+// Module ID: 8372
+// Function ID: 8373
 // Name: FamilyCenterUtils
-// Dependencies: [7708, 7709, 1114, 2537, 2044, 7710, 2]
+// Dependencies: [7715, 7716, 1113, 2538, 2042, 7717, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 8364 (FamilyCenterUtils)
-import intl5 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import _modDef2537 from "module_2537" /* 2537 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7710 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7709 */;
+// Module 8372 (FamilyCenterUtils)
+import intl5 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import _modDef2538 from "module_2538" /* 2538 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f92513 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f92758 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -30,7 +30,7 @@ let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.
 export function getEmptyActivityFormatter() {
   let intl;
   let intl2;
-  const obj = { today: intl.string(_modDef2537.VjIAQQ), yesterday: intl2.string(_modDef2537["2a8xHY"]), days: _modDef2537.Xt6oND };
+  const obj = { today: intl.string(_modDef2538.VjIAQQ), yesterday: intl2.string(_modDef2538["2a8xHY"]), days: _modDef2538.Xt6oND };
   intl = intl5.intl;
   intl2 = intl5.intl;
   return obj;
@@ -40,29 +40,29 @@ export function getActivityWindowTimestampFormatter(arg0) {
   const obj = { today: null, yesterday: null, days: null };
   const intl = intl5.intl;
   const string = intl.string;
-  const tmp4 = _modDef2537;
+  const tmp4 = _modDef2538;
   const tmp5 = arg0;
   if (tmp5) {
     obj.today = string(tmp4["2AtcIs"]);
-    const intl3 = tmp(1114).intl;
-    obj.yesterday = intl3.string(_modDef2537.stOECr);
-    obj.days = _modDef2537.n8n5Ba;
+    const intl3 = tmp(1113).intl;
+    obj.yesterday = intl3.string(_modDef2538.stOECr);
+    obj.days = _modDef2538.n8n5Ba;
     tmp6 = obj;
   } else {
     obj.today = string(tmp4.g1ZX6m);
-    const intl2 = tmp(1114).intl;
-    obj.yesterday = intl2.string(_modDef2537.s3qSVt);
-    obj.days = _modDef2537.f1UJiC;
+    const intl2 = tmp(1113).intl;
+    obj.yesterday = intl2.string(_modDef2538.s3qSVt);
+    obj.days = _modDef2538.f1UJiC;
     tmp6 = obj;
   }
   return tmp6;
 }
 export function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
   let yesterday;
-  const obj = _modDef2044();
-  const diffResult = obj.diff(_modDef2044(time), "s");
+  const obj = _modDef2042();
+  const diffResult = obj.diff(_modDef2042(time), "s");
   const tmp3 = timestampFormatter();
-  const obj2 = _modDef2044(time);
+  const obj2 = _modDef2042(time);
   obj2.format("LL");
   if (diffResult < c10) {
     yesterday = tmp3.today;
@@ -86,10 +86,10 @@ export function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
 }
 export function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
   let yesterday;
-  const obj = _modDef2044();
-  const diffResult = obj.diff(_modDef2044(arg0), "s");
+  const obj = _modDef2042();
+  const diffResult = obj.diff(_modDef2042(arg0), "s");
   const time = SENT_TIMESTAMP_FORMATTER();
-  _modDef2044(arg0);
+  _modDef2042(arg0);
   if (diffResult < 60) {
     yesterday = time.seconds;
   } else if (diffResult < 3600) {
@@ -181,11 +181,11 @@ export function getOrFetchLinkedUsers() {
 }
 export function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f92513);
+  return values.some(f92758);
 }
 export function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f92513);
+  return values.some(f92758);
 }
 export function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;
@@ -193,7 +193,7 @@ export function getTopUserOrGuildDescription(dms_sent, call_count) {
     if (0 === dms_sent) {
       const intl3 = intl5.intl;
       const obj2 = { callCount: call_count };
-      formatToPlainStringResult = intl3.formatToPlainString(_modDef2537["L/Cj7S"], obj2);
+      formatToPlainStringResult = intl3.formatToPlainString(_modDef2538["L/Cj7S"], obj2);
     }
     return formatToPlainStringResult;
   }
@@ -201,10 +201,10 @@ export function getTopUserOrGuildDescription(dms_sent, call_count) {
     if (0 === call_count) {
       const intl2 = intl5.intl;
       const obj3 = { messageCount: dms_sent };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef2537["6X1F0i"], obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef2538["6X1F0i"], obj3);
     }
   }
   const intl = intl5.intl;
   const obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(_modDef2537.IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(_modDef2538.IYqGMG, obj);
 }

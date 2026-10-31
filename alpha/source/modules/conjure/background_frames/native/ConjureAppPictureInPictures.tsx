@@ -1,19 +1,19 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19109
+// Function ID: 19110
 // Name: ConjureAppPictureInPictures
-// Dependencies: [19, 17, 6840, 6841, 21, 5009, 1492, 1626, 19061, 7095, 5090, 19064, 19065, 504, 19066, 19068, 18625, 2]
+// Dependencies: [19, 17, 6846, 6847, 21, 5014, 1491, 1625, 19110, 7101, 5095, 19113, 19114, 504, 19115, 19117, 18667, 2]
 // Exports: default
 
-// Module 19060 (ConjureAppPictureInPictures)
+// Module 19109 (ConjureAppPictureInPictures)
 import react_native from "react-native" /* 17 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18625 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19064 */;
-import useFloatConjureAppsOffScreenDefault from "useFloatConjureAppsOffScreen" /* 19068 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18667 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19113 */;
+import useFloatConjureAppsOffScreenDefault from "useFloatConjureAppsOffScreen" /* 19117 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6840 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -30,17 +30,17 @@ function ConjureAppPictureInPictureLayer(frameIds) {
   frameIds = frameIds.frameIds;
   let height;
   const tmp = closure_10();
-  size = height(1492)();
+  size = height(1491)();
   const width = size.width;
   const tmp2 = height;
   height = size.height;
-  const tmp4 = height(1626)();
+  const tmp4 = height(1625)();
   dependencyMap = tmp4;
-  react = height(19061)(tmp4);
-  const tmp5 = height(7095)({ includeCustomKeyboard: true });
-  let obj = width(5090);
+  react = height(19110)(tmp4);
+  const tmp5 = height(7101)({ includeCustomKeyboard: true });
+  let obj = width(5095);
   const sharedValue = obj.useSharedValue(false);
-  const obj2 = width(5090);
+  const obj2 = width(5095);
   const sharedValue1 = obj2.useSharedValue(false);
   const items = [width, height, tmp4];
   const memo = react.useMemo(() => {
@@ -61,7 +61,7 @@ function ConjureAppPictureInPictureLayer(frameIds) {
     str = "none";
   }
   items2 = [
-    closure_8(tmp2(19065), { center: memo, shown: sharedValue, hovered: sharedValue1 }),
+    closure_8(tmp2(19114), { center: memo, shown: sharedValue, hovered: sharedValue1 }),
     frameIds.map((frameId, index) => {
       const obj = { frameId, index, windowWidth: width, windowHeight: height, safeArea, avoidance, closeTargetCenter: memo, closeTargetShown: sharedValue, closeTargetHovered: sharedValue1 };
       return metroImportAll(ConjureAppPictureInPictureWithSize, obj, frameId);

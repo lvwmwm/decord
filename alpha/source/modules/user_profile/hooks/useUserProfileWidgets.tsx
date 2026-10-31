@@ -1,13 +1,13 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14968
+// Function ID: 14969
 // Name: useUserProfileWidgets
-// Dependencies: [502, 7765, 14920, 504, 2]
+// Dependencies: [502, 7772, 14958, 504, 2]
 // Exports: default
 
-// Module 14930 (useUserProfileWidgets)
+// Module 14968 (useUserProfileWidgets)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserProfileStore from "UserProfileStore" /* 7765 */;
-import WidgetStore from "WidgetStore" /* 14920 */;
+import UserProfileStore from "UserProfileStore" /* 7772 */;
+import WidgetStore from "WidgetStore" /* 14958 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

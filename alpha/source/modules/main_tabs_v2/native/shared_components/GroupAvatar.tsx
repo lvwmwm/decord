@@ -1,21 +1,21 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14891
+// Function ID: 14892
 // Name: GroupAvatar
-// Dependencies: [19, 17, 5010, 21, 5009, 575, 5016, 6953, 563, 5090, 5249, 5632, 7143, 5619, 5712, 2]
+// Dependencies: [19, 17, 5015, 21, 5014, 575, 5021, 6959, 563, 5095, 5254, 5637, 7149, 5624, 5717, 2]
 // Exports: default
 
-// Module 14853 (GroupAvatar)
+// Module 14891 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5249 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import spring from "spring" /* 5632 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import timing from "timing" /* 5254 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import spring from "spring" /* 5637 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const react_mod = react2;

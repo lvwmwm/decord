@@ -1,32 +1,32 @@
-// Module ID: 11016
-// Function ID: 11017
+// Module ID: 11035
+// Function ID: 11036
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 10184, 11004, 1072, 21, 5090, 5009, 11017, 11063, 11066, 11067, 11110, 11111, 11130, 11169, 11172, 11003, 504, 5588, 5249, 1253, 5298, 5632, 1188, 7286, 11047, 2]
+// Dependencies: [32, 19, 17, 10204, 11023, 1072, 21, 5095, 5014, 11036, 11082, 11085, 11086, 11129, 11130, 11149, 11188, 11191, 11022, 504, 5593, 5254, 1252, 5303, 5637, 1187, 7292, 11066, 2]
 // Exports: default
 
-// Module 11016 (InAppNotificationContainer)
+// Module 11035 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import spring from "spring" /* 5632 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11003 */;
-import MessageNotificationDefault from "MessageNotification" /* 11017 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11063 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11066 */;
-import BugReporterNotification from "BugReporterNotification" /* 11067 */;
-import AlertNotificationDefault from "AlertNotification" /* 11110 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 11111 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 11130 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11169 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11172 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import spring from "spring" /* 5637 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11022 */;
+import MessageNotificationDefault from "MessageNotification" /* 11036 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11082 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11085 */;
+import BugReporterNotification from "BugReporterNotification" /* 11086 */;
+import AlertNotificationDefault from "AlertNotification" /* 11129 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 11130 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 11149 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11188 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11191 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10184 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11004 */;
+import NativeMenuStore from "NativeMenuStore" /* 10204 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11023 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let first, set, set2;
@@ -203,10 +203,10 @@ export default function InAppNotificationContainer(notification) {
             obj.runOnJS(handleDismissNotification)("swipe");
           }
         };
-        fn.__closure = { runOnJS: tmp5(5090).runOnJS, handleDismissNotification };
+        fn.__closure = { runOnJS: tmp5(5095).runOnJS, handleDismissNotification };
         fn.__workletHash = 3243235500892;
         fn.__initData = __initData2;
-        const obj4 = { runOnJS: tmp5(5090).runOnJS, handleDismissNotification };
+        const obj4 = { runOnJS: tmp5(5095).runOnJS, handleDismissNotification };
         set2(withTiming(first, metroImportDefault, "animate-always", fn));
       }
     } else {

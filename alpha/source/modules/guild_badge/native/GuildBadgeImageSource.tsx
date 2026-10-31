@@ -1,21 +1,19 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9310
+// Function ID: 9311
 // Name: GuildBadgeImageSource
-// Dependencies: [9286, 6956, 6957, 9289, 9290, 9291, 9292, 9293, 9294, 5016, 9285, 2]
+// Dependencies: [9305, 6962, 6963, 9311, 9312, 9313, 9314, 5021, 9304, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 9288 (GuildBadgeImageSource)
-import shared from "shared" /* 5016 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6956 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6957 */;
-import GuildTraits from "GuildTraits" /* 9285 */;
-import BadgeCategory from "BadgeCategory" /* 9286 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9289 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9290 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9291 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9292 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9293 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9294 */;
+// Module 9310 (GuildBadgeImageSource)
+import shared from "shared" /* 5021 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6962 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6963 */;
+import GuildTraits from "GuildTraits" /* 9304 */;
+import BadgeCategory from "BadgeCategory" /* 9305 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9311 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9312 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9313 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9314 */;
 import size from "module_2" /* 2 */;
 
 const badgeVariants = {};
@@ -31,7 +29,7 @@ badgeVariants[VERIFIED] = obj4;
 const obj5 = { imageSource: AssetRegistryDefault3, imageSourceLight: AssetRegistryDefault4, premiumImageSource: AssetRegistryDefault5 };
 const COMMUNITY = BadgeCategory.BadgeCategory.COMMUNITY;
 badgeVariants[COMMUNITY] = obj5;
-const obj6 = { imageSource: AssetRegistryDefault6, imageSourceLight: AssetRegistryDefault7, premiumImageSource: AssetRegistryDefault8 };
+const obj6 = { imageSource: AssetRegistryDefault6 };
 const DISCOVERABLE = BadgeCategory.BadgeCategory.DISCOVERABLE;
 badgeVariants[DISCOVERABLE] = obj6;
 const obj7 = { imageSource: AssetRegistryDefault };

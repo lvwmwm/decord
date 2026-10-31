@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11331
+// Function ID: 11332
 // Name: PinotChannelLabelAnchor
 // Dependencies: [32, 19, 560, 2]
 // Exports: usePinotChannelLabelAnchor, usePinotChannelLabelCenter
 
-// Module 11304 (PinotChannelLabelAnchor)
+// Module 11331 (PinotChannelLabelAnchor)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;
@@ -16,20 +16,20 @@ let react = react_mod;
 let closure_2 = module_560.create(() => ({ labels: {} }));
 const result = size.fileFinishedImporting("modules/pinot/native/PinotChannelLabelAnchor.tsx");
 
-export function usePinotChannelLabelAnchor(channelId) {
+export function usePinotChannelLabelAnchor(id) {
   let closure_1;
   let items1;
-  let closure_0 = channelId;
+  let closure_0 = id;
   react = react.useRef(null);
-  const items = [channelId];
+  const items = [id];
   const onLayout = react.useCallback(() => {
     let ref;
     onLayout.setState((labels) => {
       labels = labels.labels;
       const current = ref.current;
       let num;
-      const tmp = channelId;
-      if (labels[channelId] != null) {
+      const tmp = id;
+      if (labels[id] != null) {
         num = tmp2.layoutVersion;
       }
       if (num == null) {

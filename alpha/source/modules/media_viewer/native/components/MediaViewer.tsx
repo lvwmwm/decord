@@ -1,19 +1,19 @@
-// Module ID: 14757
-// Function ID: 14758
+// Module ID: 14795
+// Function ID: 14796
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1376, 5090, 14758, 14759, 8833, 5298, 7234, 7320, 7345, 8858, 14764, 14765, 14742, 6017, 5249, 8828, 8894, 11193, 5091, 14766, 11665, 2]
+// Dependencies: [32, 19, 17, 21, 1375, 5095, 14796, 14797, 8841, 5303, 7240, 7326, 7351, 8867, 14802, 14803, 14780, 6022, 5254, 8836, 8903, 11212, 5096, 14804, 11702, 2]
 
-// Module 14757 (MediaViewer)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import useVideoControls from "useVideoControls" /* 8828 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8858 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14759 */;
+// Module 14795 (MediaViewer)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import useVideoControls from "useVideoControls" /* 8836 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8867 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,8 +62,8 @@ function MediaViewer(arg0) {
   let tmp = height;
   ({ renderOverlay, swipeVelocityThreshold } = arg0);
   const useViewerProps = syncer.useViewerProps;
-  let tmp3 = height(7320);
-  let items = [height(7345).MEDIA_VIEWER];
+  let tmp3 = height(7326);
+  let items = [height(7351).MEDIA_VIEWER];
   const analyticsLocations = tmp3(items).analyticsLocations;
   [tmp5, tmp6] = sharedValue(sharedValue1.useState(true), 2);
   _require = tmp6;
@@ -71,7 +71,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14764)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(14802)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -94,7 +94,7 @@ function MediaViewer(arg0) {
   const isInteracting = mediaViewerPanGestureConfig.isInteracting;
   const overlayEnabled = mediaViewerPanGestureConfig.overlayEnabled;
   const items1 = [dismiss, isClosing];
-  const tmp18 = height(6017);
+  const tmp18 = height(6022);
   tmp18(sharedValue1.useCallback(() => {
     if (!isClosing.get()) {
       dismiss();
@@ -254,32 +254,32 @@ function MediaViewer(arg0) {
   const obj18 = { style: StyleSheet.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: items7 };
   items7 = [, , , , ];
   const obj19 = { barStyle: "light-content", hidden: !tmp5 };
-  items7[0] = isMediaViewerEntranceJankFixEnabled(height(11193), obj19);
+  items7[0] = isMediaViewerEntranceJankFixEnabled(height(11212), obj19);
   const obj20 = { style: items8 };
   items8 = [memo, animatedStyle];
-  items7[1] = isMediaViewerEntranceJankFixEnabled(height(5090).View, obj20);
+  items7[1] = isMediaViewerEntranceJankFixEnabled(height(5095).View, obj20);
   const obj21 = { ref: animatedRef, style: items9, children: tmp32Result };
   items9 = [isClosing.pan, animatedStyle2];
   const tmp34 = dismiss;
   const tmp35 = animatedRef;
-  const tmp36 = height(5091);
+  const tmp36 = height(5096);
   const tmp7 = _require;
   if (isMediaViewerImprovementsEnabled) {
     const obj22 = { entranceAnimationDriver: sharedValue, onLongPress, onScrollWorklets, originLayout, pagerIndex, panGestureConfig: mediaViewerPanGestureConfig, renderMedia, sources, useItemVisible, windowWidth: width, windowHeight: height, zoomed };
-    tmp32Result = tmp32(tmp(14766), obj22);
+    tmp32Result = tmp32(tmp(14804), obj22);
   }
   items7[2] = isMediaViewerEntranceJankFixEnabled(tmp36, obj21);
   const obj23 = { style: items10, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled, sharedValue) };
   items10 = [first, animatedStyle1];
   str = "none";
-  const tmpResult = tmp(5091);
+  const tmpResult = tmp(5096);
   if (tmp5) {
     str = "box-none";
   }
   items7[3] = isMediaViewerEntranceJankFixEnabled(tmpResult, obj23);
-  items7[4] = isMediaViewerEntranceJankFixEnabled(tmp(11665), {});
+  items7[4] = isMediaViewerEntranceJankFixEnabled(tmp(11702), {});
   const children = tmp34(tmp35, obj18);
-  return isMediaViewerEntranceJankFixEnabled(tmp7(7320).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return isMediaViewerEntranceJankFixEnabled(tmp7(7326).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

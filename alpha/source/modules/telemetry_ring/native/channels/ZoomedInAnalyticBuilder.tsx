@@ -1,14 +1,14 @@
-// Module ID: 2004
-// Function ID: 2005
+// Module ID: 2003
+// Function ID: 2004
 // Name: ZoomedInAnalyticBuilder
-// Dependencies: [1072, 1370, 2005, 2006, 2]
+// Dependencies: [1072, 1369, 2004, 2005, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 2004 (ZoomedInAnalyticBuilder)
+// Module 2003 (ZoomedInAnalyticBuilder)
 import Constants from "Constants" /* 1072 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1370 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2005 */;
-import RTCControlSocket from "RTCControlSocket" /* 2006 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1369 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2004 */;
+import RTCControlSocket from "RTCControlSocket" /* 2005 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

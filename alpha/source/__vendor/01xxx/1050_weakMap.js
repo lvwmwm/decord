@@ -85,7 +85,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               let c3;
@@ -165,7 +165,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
                   }
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp45) {
                 closure_2 = tmp45;
                 if (0 === c3) {
@@ -256,7 +256,7 @@ function startTimeToFullDisplaySpan(arg0) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let c3;
@@ -336,7 +336,7 @@ function startTimeToFullDisplaySpan(arg0) {
                     }
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } catch (tmp45) {
                   closure_2 = tmp45;
                   if (0 === c3) {
@@ -398,7 +398,7 @@ function startTimeToFullDisplaySpan(arg0) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     let c3;
@@ -487,7 +487,7 @@ function startTimeToFullDisplaySpan(arg0) {
                         map.delete(spanId);
                       }
                       c5 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     } catch (tmp54) {
                       endFrames = tmp54;
                       if (0 === c3) {
@@ -630,7 +630,7 @@ function updateFullDisplaySpan(arg0, span) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let c3;
@@ -719,7 +719,7 @@ function updateFullDisplaySpan(arg0, span) {
                     map.delete(spanId);
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } catch (tmp54) {
                   endFrames = tmp54;
                   if (0 === c3) {
@@ -969,7 +969,7 @@ export function updateInitialDisplaySpan(arg0) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 let c3;
@@ -1058,7 +1058,7 @@ export function updateInitialDisplaySpan(arg0) {
                     map.delete(spanId);
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } catch (tmp54) {
                   endFrames = tmp54;
                   if (0 === c3) {
@@ -1132,7 +1132,7 @@ export function createTimeToFullDisplay(useFocusEffect) {
     constructor(arg0) {
       tmp = closure_2(useState(false), 2);
       [record, closure_0] = tmp;
-      tmp2 = useFocusEffect(function() { /* body not rendered: F120643 */ });
+      tmp2 = useFocusEffect(function() { /* body not rendered: F121016 */ });
       tmp3 = closure_3;
       createElement = closure_3.createElement;
       tmp4 = closure_1;
@@ -1154,7 +1154,7 @@ export function createTimeToInitialDisplay(useFocusEffect) {
     constructor(arg0) {
       tmp = closure_2(useState(false), 2);
       [record, closure_0] = tmp;
-      tmp2 = useFocusEffect(function() { /* body not rendered: F120643 */ });
+      tmp2 = useFocusEffect(function() { /* body not rendered: F121016 */ });
       tmp3 = closure_3;
       createElement = closure_3.createElement;
       tmp4 = closure_1;

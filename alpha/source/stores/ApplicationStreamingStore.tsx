@@ -1,29 +1,29 @@
-// Module ID: 6708
-// Function ID: 6709
+// Module ID: 6714
+// Function ID: 6715
 // Name: ApplicationStreamingStore
-// Dependencies: [5760, 2014, 502, 4858, 4880, 2007, 4941, 5759, 4912, 5674, 1072, 6709, 1090, 6711, 6712, 6713, 6714, 1995, 6718, 504, 6749, 572, 2]
+// Dependencies: [5765, 2013, 502, 4863, 4885, 2006, 4946, 5764, 4917, 5679, 1072, 6715, 1089, 6717, 6718, 6719, 6720, 1994, 6724, 504, 6755, 572, 2]
 
-// Module 6708 (ApplicationStreamingStore)
+// Module 6714 (ApplicationStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import Constants2 from "Constants" /* 6709 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
-import _slicedToArrayDefault from "_slicedToArray" /* 6712 */;
-import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 6713 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6718 */;
-import canSpectateDefault from "canSpectate" /* 6749 */;
-import GameConsoleStore from "GameConsoleStore" /* 5760 */;
-import RunningGameStore from "RunningGameStore" /* 2014 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import Constants2 from "Constants" /* 6715 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import _slicedToArrayDefault from "_slicedToArray" /* 6718 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 6719 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6724 */;
+import canSpectateDefault from "canSpectate" /* 6755 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import RunningGameStore from "RunningGameStore" /* 2013 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -720,7 +720,7 @@ let obj = {
     let streamType;
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    const obj = sourceId(6711);
+    const obj = sourceId(6717);
     const obj2 = { streamType, guildId, channelId, ownerId: AuthenticationStore.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj2);
     let startsWithResult;
@@ -806,7 +806,7 @@ let obj = {
       } else if (reason === constants3.SAFETY_GUILD_RATE_LIMITED) {
         const obj = StreamKeyUtils;
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        const promise = asyncRequire(6714, dependencyMap.paths);
+        const promise = asyncRequire(6720, dependencyMap.paths);
         promise.then((result) => {
           result.default(guildId);
         });

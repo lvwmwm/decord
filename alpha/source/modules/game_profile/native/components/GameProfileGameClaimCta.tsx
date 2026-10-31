@@ -1,10 +1,10 @@
-// Module ID: 9588
-// Function ID: 9589
+// Module ID: 9608
+// Function ID: 9609
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1072, 21, 9320, 7497, 7501, 1993, 5629, 1114, 2]
+// Dependencies: [5, 19, 1072, 21, 9340, 7503, 7507, 1992, 5634, 1113, 2]
 // Exports: default
 
-// Module 9588 (GameProfileGameClaimCta)
+// Module 9608 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -36,7 +36,7 @@ export default function GameProfileGameClaimCta(trackAction) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -66,7 +66,7 @@ export default function GameProfileGameClaimCta(trackAction) {
           return obj;
         } else {
           trackAction = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp4) {
         trackAction = 3;
@@ -79,9 +79,9 @@ export default function GameProfileGameClaimCta(trackAction) {
   }
   if (someResult == null) {
     const tmp4 = jsx;
-    const Button = trackAction(5629).Button;
-    const intl = trackAction(1114).intl;
-    tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1114).t["mqg+to"])} onPress={callback} />;
+    const Button = trackAction(5634).Button;
+    const intl = trackAction(1113).intl;
+    tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1113).t["mqg+to"])} onPress={callback} />;
   } else {
     tmp3 = null;
   }

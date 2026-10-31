@@ -1,18 +1,18 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9527
+// Function ID: 9528
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 7610, 1386, 21, 5009, 575, 671, 5582, 1093, 2]
+// Dependencies: [19, 7617, 1385, 21, 5014, 575, 671, 5587, 1092, 2]
 // Exports: default
 
-// Module 9505 (PremiumFeaturesBackground)
+// Module 9527 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import ColorConstants from "ColorConstants" /* 7610 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import ColorConstants from "ColorConstants" /* 7617 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const Gradients = ColorConstants.Gradients;
@@ -51,5 +51,5 @@ export default function PremiumFeaturesBackground(opacity) {
   const items = [tmp2.cardContainer, style];
   LinearGradientDefault;
   const merged1 = Object.assign(merged);
-  return <tmp6 style={items} colors={mapped} start={num(1093).HorizontalGradient.START} end={num(1093).HorizontalGradient.END}>{children}</tmp6>;
+  return <tmp6 style={items} colors={mapped} start={num(1092).HorizontalGradient.START} end={num(1092).HorizontalGradient.END}>{children}</tmp6>;
 };

@@ -1,16 +1,16 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7380
+// Function ID: 7381
 // Name: GuildCapUpsellHooks
-// Dependencies: [4880, 1384, 1072, 504, 7375, 2048, 2]
+// Dependencies: [4885, 1383, 1072, 504, 7381, 2047, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 7374 (GuildCapUpsellHooks)
+// Module 7380 (GuildCapUpsellHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
-import HotspotStore2 from "HotspotStore" /* 7375 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import UserStore from "UserStore" /* 1384 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import HotspotStore2 from "HotspotStore" /* 7381 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const MAX_USER_GUILDS = Constants.MAX_USER_GUILDS;

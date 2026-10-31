@@ -1,13 +1,13 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8936
+// Function ID: 8937
 // Name: showSharePreparingModal
-// Dependencies: [8925, 6738, 8928, 1995, 2]
+// Dependencies: [8934, 6744, 8937, 1994, 2]
 // Exports: showSharePreparingModal
 
-// Module 8927 (showSharePreparingModal)
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8925 */;
+// Module 8936 (showSharePreparingModal)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8934 */;
 import size from "module_2" /* 2 */;
 
 let _true;
@@ -34,7 +34,7 @@ export function showSharePreparingModal(onCancel) {
         }
       }
     };
-    const pushLazyResult = obj.pushLazy(asyncRequire(8928, dependencyMap.paths), obj2, SHARE_PREPARING_MODAL_KEY, { animation: "fade", presentation: "transparentModal" });
+    const pushLazyResult = obj.pushLazy(asyncRequire(8937, dependencyMap.paths), obj2, SHARE_PREPARING_MODAL_KEY, { animation: "fade", presentation: "transparentModal" });
     pushLazyResult.then(() => {
       const tmp = _true;
       if (tmp) {

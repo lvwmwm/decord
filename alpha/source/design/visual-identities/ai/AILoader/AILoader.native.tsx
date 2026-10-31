@@ -1,17 +1,17 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12100
+// Function ID: 12101
 // Name: AILoader
-// Dependencies: [19, 17, 12063, 21, 5009, 5090, 5249, 12064, 5075, 2]
+// Dependencies: [19, 17, 12101, 21, 5014, 5095, 5254, 12102, 5080, 2]
 
-// Module 12062 (AILoader)
+// Module 12100 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import AIGlyphText from "AIGlyphText" /* 12064 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import AIGlyphText from "AIGlyphText" /* 12102 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 12063 */;
-import createStyles from "createStyles" /* 5009 */;
+import AILoaderConstants from "AILoaderConstants" /* 12101 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -33,7 +33,7 @@ function Slot(index) {
   const stagger = index.stagger;
   const tmp = closure_16(size);
   const glyph = tmp;
-  let obj = index(5090);
+  let obj = index(5095);
   const sharedValue = obj.useSharedValue(0);
   let items = [cycle, index, sharedValue, stagger];
   const effect = cycle.useEffect(() => {
@@ -52,7 +52,7 @@ function Slot(index) {
       return obj.cancelAnimation(sharedValue);
     };
   }, items);
-  let obj2 = index(5090);
+  let obj2 = index(5095);
   class I {
     constructor() {
       let items;
@@ -80,7 +80,7 @@ function Slot(index) {
   I.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(I);
   ({ style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color: dependencyMap, allowFontScaling: false, style: glyph.glyph, children }, children)) });
-  View = size(5090).View;
+  View = size(5095).View;
   return <stagger style={tmp.slot}>{null}</stagger>;
 }
 let View = react_native.View;
@@ -123,7 +123,7 @@ const memoResult = react.memo(function AILoader(size) {
   let num2;
   const style = size.style;
   const tmp = closure_16(num);
-  const reducedMotion = num2.useContext(num(5075).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(5080).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

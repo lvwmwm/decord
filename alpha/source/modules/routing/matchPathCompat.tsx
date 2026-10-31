@@ -1,10 +1,10 @@
-// Module ID: 5045
-// Function ID: 5046
+// Module ID: 5050
+// Function ID: 5051
 // Name: matchPathCompat
-// Dependencies: [2, 5046]
+// Dependencies: [2, 5051]
 
-// Module 5045 (matchPathCompat)
-import BrowserRouter from "BrowserRouter" /* 5046 */;
+// Module 5050 (matchPathCompat)
+import BrowserRouter from "BrowserRouter" /* 5051 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/routing/matchPathCompat.tsx");

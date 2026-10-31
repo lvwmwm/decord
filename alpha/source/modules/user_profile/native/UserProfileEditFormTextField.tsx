@@ -1,13 +1,13 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16459
+// Function ID: 16460
 // Name: UserProfileEditFormTextField
-// Dependencies: [19, 21, 7247, 7076, 2]
+// Dependencies: [19, 21, 7253, 7082, 2]
 // Exports: default
 
-// Module 16417 (UserProfileEditFormTextField)
+// Module 16459 (UserProfileEditFormTextField)
 import Fragment from "Fragment" /* 21 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7076 */;
-import TextArea2 from "TextArea" /* 7247 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7082 */;
+import TextArea2 from "TextArea" /* 7253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

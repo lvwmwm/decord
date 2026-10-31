@@ -1,18 +1,18 @@
-// Module ID: 10109
-// Function ID: 10110
+// Module ID: 10129
+// Function ID: 10130
 // Name: NsfwGateGuildAlert
-// Dependencies: [19, 4921, 1384, 7382, 1072, 21, 1253, 7383, 5959, 1114, 5704, 2062, 5955, 2]
+// Dependencies: [19, 4926, 1383, 7388, 1072, 21, 1252, 7389, 5964, 1113, 5709, 2061, 5960, 2]
 // Exports: showNsfwGateGuildAlert
 
-// Module 10109 (NsfwGateGuildAlert)
+// Module 10129 (NsfwGateGuildAlert)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import useAlertStore from "useAlertStore" /* 5955 */;
-import Constants2 from "Constants" /* 7382 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7383 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import useAlertStore from "useAlertStore" /* 5960 */;
+import Constants2 from "Constants" /* 7388 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7389 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -53,13 +53,13 @@ class NsfwGateGuildAlert {
       }
       track(GUILD_NSFW_GATE_VIEWED, obj);
     }, items);
-    const AlertModal = guildId(5959).AlertModal;
-    const intl = guildId(1114).intl;
-    const intl2 = guildId(1114).intl;
-    const AlertActionButton = guildId(5959).AlertActionButton;
-    const intl3 = guildId(1114).intl;
+    const AlertModal = guildId(5964).AlertModal;
+    const intl = guildId(1113).intl;
+    const intl2 = guildId(1113).intl;
+    const AlertActionButton = guildId(5964).AlertActionButton;
+    const intl3 = guildId(1113).intl;
     const items1 = [
-      <AlertActionButton key="help-center" text={intl3.string(guildId(1114).t.wi6hPV)} onPress={function onPress() {
+      <AlertActionButton key="help-center" text={intl3.string(guildId(1113).t.wi6hPV)} onPress={function onPress() {
         const openURL = currentUser(dependencyMap[10]).openURL;
         currentUser(dependencyMap[10]);
         const obj = currentUser(dependencyMap[11]);
@@ -67,10 +67,10 @@ class NsfwGateGuildAlert {
       }} />,
 
     ];
-    const AlertActionButton2 = guildId(5959).AlertActionButton;
-    const intl4 = guildId(1114).intl;
-    items1[1] = <AlertActionButton2 key="dismiss" variant="secondary" text={intl4.string(guildId(1114).t.WAI6xu)} />;
-    return <AlertModal title={intl.string(guildId(1114).t.JqfHGt)} content={intl2.string(guildId(1114).t.EdXn1A)} actions={items1} />;
+    const AlertActionButton2 = guildId(5964).AlertActionButton;
+    const intl4 = guildId(1113).intl;
+    items1[1] = <AlertActionButton2 key="dismiss" variant="secondary" text={intl4.string(guildId(1113).t.WAI6xu)} />;
+    return <AlertModal title={intl.string(guildId(1113).t.JqfHGt)} content={intl2.string(guildId(1113).t.EdXn1A)} actions={items1} />;
   }
 }
 const NsfwGateSource = Constants2.NsfwGateSource;

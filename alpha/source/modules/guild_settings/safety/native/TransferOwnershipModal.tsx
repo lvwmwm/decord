@@ -1,18 +1,18 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13258
+// Function ID: 13259
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 13224, 21, 13222, 1261, 1114, 6992, 13225, 7074, 9055, 5706, 7163, 2]
+// Dependencies: [5, 19, 13259, 21, 13257, 1260, 1113, 6998, 13260, 7080, 9074, 5711, 7169, 2]
 // Exports: default
 
-// Module 13223 (TransferOwnershipModal)
+// Module 13258 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1114 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 13222 */;
+import intl3 from "intl" /* 1113 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 13257 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13224 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13259 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -86,7 +86,7 @@ export default function TransferOwnershipModal(guild) {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -115,7 +115,7 @@ export default function TransferOwnershipModal(guild) {
                   return obj;
                 } else {
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp7) {
                 c0 = 3;
@@ -149,7 +149,7 @@ export default function TransferOwnershipModal(guild) {
     obj2[CONFIRM_EMAIL_CODE] = obj5;
     return obj2;
   }, items);
-  const Navigator = guild(7163).Navigator;
-  let intl = guild(1114).intl;
-  return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1114).t["13/7kX"])} />;
+  const Navigator = guild(7169).Navigator;
+  let intl = guild(1113).intl;
+  return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1113).t["13/7kX"])} />;
 };

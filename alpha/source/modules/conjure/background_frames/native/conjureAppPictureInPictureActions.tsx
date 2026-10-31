@@ -1,31 +1,31 @@
-// Module ID: 19067
-// Function ID: 19068
+// Module ID: 19116
+// Function ID: 19117
 // Name: conjureAppPictureInPictureActions
-// Dependencies: [6840, 6841, 1114, 3865, 14536, 18620, 14343, 11845, 14344, 7358, 11786, 2]
+// Dependencies: [6846, 6847, 1113, 3868, 14574, 18662, 14381, 11883, 14382, 7364, 11824, 2]
 // Exports: showConjureAppPictureInPictureActions
 
-// Module 19067 (conjureAppPictureInPictureActions)
-import _modDef3865 from "module_3865" /* 3865 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7358 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11786 */;
-import closeFrameDefault from "closeFrame" /* 14344 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18620 */;
-import FramesStore from "FramesStore" /* 6840 */;
+// Module 19116 (conjureAppPictureInPictureActions)
+import _modDef3868 from "module_3868" /* 3868 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11824 */;
+import closeFrameDefault from "closeFrame" /* 14382 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18662 */;
+import FramesStore from "FramesStore" /* 6846 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp3;
-const getConjureAppSoundButtonDefault = tmp3(14343);
+const getConjureAppSoundButtonDefault = tmp3(14381);
 function getConjureAppPictureInPictureActions(id, appName, arg2) {
   let intl;
   let intl2;
   let obj2;
   _require = id;
   let obj = {
-    label: intl.formatToPlainString(_modDef3865.dPf03z, obj2),
+    label: intl.formatToPlainString(_modDef3868.dPf03z, obj2),
     IconComponent: require("WindowLaunchIcon").WindowLaunchIcon,
     onPress() {
       const obj = conjureBackgroundFrames;
@@ -48,7 +48,7 @@ function getConjureAppPictureInPictureActions(id, appName, arg2) {
       return closeFrameDefault(id.id);
     }
   };
-  intl2 = tmp(1114).intl;
+  intl2 = tmp(1113).intl;
   push(obj3);
   return items;
 }

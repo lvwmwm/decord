@@ -1,14 +1,14 @@
-// Module ID: 13313
-// Function ID: 13314
+// Module ID: 13348
+// Function ID: 13349
 // Name: PhoneIcon
-// Dependencies: [19, 21, 575, 5711, 13314, 2]
+// Dependencies: [19, 21, 575, 5716, 13349, 2]
 // Exports: PhoneIcon
 
-// Module 13313 (PhoneIcon)
+// Module 13348 (PhoneIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 13314 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 13349 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

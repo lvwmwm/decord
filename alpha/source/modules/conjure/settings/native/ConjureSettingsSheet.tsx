@@ -1,21 +1,21 @@
-// Module ID: 12433
-// Function ID: 12434
+// Module ID: 12468
+// Function ID: 12469
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10830, 10845, 6838, 21, 3865, 5009, 575, 5602, 504, 12434, 12444, 12463, 7360, 1114, 7315, 7361, 6022, 12465, 12468, 12470, 5619, 6947, 5629, 8971, 12476, 9195, 2]
+// Dependencies: [5, 32, 19, 17, 10850, 10865, 6844, 21, 3868, 5014, 575, 5607, 504, 12469, 12479, 12498, 7366, 1113, 7321, 7367, 6027, 12500, 12503, 12505, 5624, 6953, 5634, 8980, 12511, 9214, 2]
 // Exports: default
 
-// Module 12433 (ConjureSettingsSheet)
+// Module 12468 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3865 from "module_3865" /* 3865 */;
+import _modDef3868 from "module_3868" /* 3868 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10830 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10845 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6838 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10865 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3, closure_3, dependencyMap;
@@ -46,7 +46,7 @@ function SettingsTabStrip(tabs) {
     intl = tabs(_undefined[17]).intl;
     return obj;
   }), items);
-  const tmp7 = tabs(8971);
+  const tmp7 = tabs(8980);
   obj = {
     items: memo,
     pageWidth: tmp2,
@@ -71,10 +71,10 @@ function SettingsTabStrip(tabs) {
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(12476).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(12511).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(9195).SegmentedControl, obj4);
+    tmp11Result = tmp11(tmp5(9214).SegmentedControl, obj4);
   }
   return closure_12(tmp12, obj2);
 }
@@ -86,7 +86,7 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ({ canPublishProject: c9, isProjectOwner: c10 } = ConjureProjectStore);
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { project: _modDef3865.W0eQfN, app: _modDef3865.lFaJYF, secrets: _modDef3865.vDpCPU, model: _modDef3865.Rs3qc9, linked: _modDef3865.fBEHdq, experimental: _modDef3865["0Pe9uw"] };
+let obj = { project: _modDef3868.W0eQfN, app: _modDef3868.lFaJYF, secrets: _modDef3868.vDpCPU, model: _modDef3868.Rs3qc9, linked: _modDef3868.fBEHdq, experimental: _modDef3868["0Pe9uw"] };
 let closure_15 = createStyles.createStyles((paddingBottom) => {
   obj = { container: { gap: nativeDefault.space.PX_16, paddingBottom } };
   ({ gap: nativeDefault.space.PX_16, paddingBottom });
@@ -256,7 +256,7 @@ export default function ConjureSettingsSheet(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -346,7 +346,7 @@ export default function ConjureSettingsSheet(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;

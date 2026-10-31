@@ -1,17 +1,17 @@
-// Module ID: 19817
-// Function ID: 19818
+// Module ID: 19874
+// Function ID: 19875
 // Name: EligibilityActionSheet
-// Dependencies: [19, 1072, 21, 5009, 5253, 9055, 7557, 19818, 5267, 5619, 1114, 19822, 2]
+// Dependencies: [19, 1072, 21, 5014, 5258, 9074, 7563, 19875, 5272, 5624, 1113, 19879, 2]
 // Exports: default
 
-// Module 19817 (EligibilityActionSheet)
+// Module 19874 (EligibilityActionSheet)
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19818 */;
-import EligibilityChecklistDefault from "EligibilityChecklist" /* 19822 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19875 */;
+import EligibilityChecklistDefault from "EligibilityChecklist" /* 19879 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -55,10 +55,10 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   }, items);
   let obj = { startExpanded: true, children: items1 };
   const tmp3 = useCreatorMonetizationEligibilityItemsDefault(eligibility, memo);
-  BottomSheet = onRequireModeratorMFAClick(5267).BottomSheet;
-  let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1114).t["3s47iN"]) };
-  const Heading = onRequireModeratorMFAClick(5619).Heading;
-  intl = onRequireModeratorMFAClick(1114).intl;
+  BottomSheet = onRequireModeratorMFAClick(5272).BottomSheet;
+  let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1113).t["3s47iN"]) };
+  const Heading = onRequireModeratorMFAClick(5624).Heading;
+  intl = onRequireModeratorMFAClick(1113).intl;
   items1 = [closure_5(Heading, obj2), ];
   let obj3 = { style: tmp.container, items: tmp3 };
   items1[1] = closure_5(EligibilityChecklistDefault, obj3);

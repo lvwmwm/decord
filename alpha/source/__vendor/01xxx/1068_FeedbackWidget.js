@@ -229,7 +229,7 @@ class FeedbackWidget {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -268,7 +268,7 @@ class FeedbackWidget {
                 let fileName1;
                 uri1 = undefined;
                 if (self._hasScreenshot()) {
-                  obj10.setState({ filename: "sa", attachment: "isArray", attachmentUri: "isArray" });
+                  obj10.setState({ filename: "dispatch", attachment: "isArray", attachmentUri: "isArray" });
                 } else {
                   imagePicker = obj10.props.imagePicker;
                   if (imagePicker) {
@@ -433,7 +433,7 @@ class FeedbackWidget {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp72) {
             c5 = 3;
             throw tmp72;
@@ -471,7 +471,7 @@ class FeedbackWidget {
       FeedbackWidget._savedState = Object.assign({}, state.state);
     };
     tmp4Result._clearFormState = () => {
-      state._savedState = { name: "", email: "", description: "", filename: "dispatch", attachment: "Boolean", attachmentUri: "isArray" };
+      state._savedState = { name: "", email: "", description: "", filename: "displayName", attachment: "Boolean", attachmentUri: "isArray" };
     };
     tmp4Result._hasScreenshot = () => undefined !== state.state.filename && undefined !== state.state.attachment && undefined !== state.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -650,7 +650,7 @@ let items = [
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -666,7 +666,7 @@ let items = [
                   const obj = c0(closure_1_2[7]);
                   obj.feedbackAlertDialog(props3.errorTitle, props3.captureScreenshotError);
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp7) {
                 c0 = 3;
@@ -778,13 +778,13 @@ let items = [
 const entry1 = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "dispatch", attachment: "Boolean", attachmentUri: "isArray" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "displayName", attachment: "Boolean", attachmentUri: "isArray" };
   }
 };
 const items1 = [entry1];
 const importDefaultResultResult = _createClass(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = defaultConfiguration.defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "dispatch", attachment: "Boolean", attachmentUri: "isArray" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "displayName", attachment: "Boolean", attachmentUri: "isArray" };
 const FeedbackWidget_export = importDefaultResultResult;
 
 export { FeedbackWidget_export as FeedbackWidget };

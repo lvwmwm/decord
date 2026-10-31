@@ -1,17 +1,17 @@
-// Module ID: 8399
-// Function ID: 8400
+// Module ID: 8407
+// Function ID: 8408
 // Name: GuildSpaceSystemMessageUtils
-// Dependencies: [4952, 1384, 8400, 8401, 6036, 1114, 4929, 8402, 2]
+// Dependencies: [4957, 1383, 8408, 8409, 6041, 1113, 4934, 8410, 2]
 // Exports: stringifyGuildSpaceSystemMessage
 
-// Module 8399 (GuildSpaceSystemMessageUtils)
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4929 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8400 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8401 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8402 */;
-import MessageRecord from "MessageRecord" /* 4952 */;
-import UserStore from "UserStore" /* 1384 */;
+// Module 8407 (GuildSpaceSystemMessageUtils)
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4934 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8408 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8409 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8410 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_space/GuildSpaceSystemMessageUtils.tsx");
@@ -52,7 +52,7 @@ export function stringifyGuildSpaceSystemMessage(message5, channel) {
     if (null == musicSystemMessage) {
       content2 = message5.content;
     } else {
-      const intl2 = tmp(1114).intl;
+      const intl2 = tmp(1113).intl;
       const formatToPlainString2 = intl2.formatToPlainString;
       const message2 = musicSystemMessage.message;
       const obj = {
@@ -110,14 +110,14 @@ export function stringifyGuildSpaceSystemMessage(message5, channel) {
       obj6 = NicknameUtilsDefault;
       const tmp31 = importDefault;
       if (guildSpaceLeaderboardMessage.data.event === GuildLeaderboardTypes.GuildSpaceLeaderboardEvent.LEADER_CHANGED) {
-        const tmp31Result = tmp31(6036);
+        const tmp31Result = tmp31(6041);
         str = tmp31Result.getName(guildId, channel_id, guildSpaceLeaderboardMessage.previousLeader);
       }
       const leaderboardSystemMessage = getLeaderboardSystemMessage(data, obj2);
       if (null == leaderboardSystemMessage) {
         content = message5.content;
       } else {
-        const intl = tmp(1114).intl;
+        const intl = tmp(1113).intl;
         const formatToPlainString = intl.formatToPlainString;
         const message = leaderboardSystemMessage.message;
         const obj4 = {

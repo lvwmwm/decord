@@ -1,91 +1,72 @@
 // Module ID: 8032
 // Function ID: 8033
-// Dependencies: []
-// Exports: appendTransform, reset, toArray
+// Dependencies: [8033, 8034, 8137, 8138, 8140, 8141, 8055]
 
 // Module 8032
-function append(arg0, arg1, arg2, arg3, arg4, arg5) {
-  if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
-    const tmp3 = c8;
-    if (tmp3) {
-      c8 = false;
-      c2 = arg0;
-      c3 = arg1;
-      c4 = arg2;
-      c5 = arg3;
-      closure_6 = arg4;
-      closure_7 = arg5;
-    } else {
-      if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
-        c2 = tmp4 * arg0 + tmp6 * arg1;
-        c3 = tmp5 * arg0 + tmp7 * arg1;
-        c4 = tmp4 * arg2 + tmp6 * arg3;
-        c5 = tmp5 * arg2 + tmp7 * arg3;
-      }
-      if (0 !== arg4 || 0 !== arg5) {
-        closure_6 = tmp4 * arg4 + tmp6 * arg5 + closure_6;
-        closure_7 = tmp5 * arg4 + tmp7 * arg5 + closure_7;
-      }
-    }
-  }
-}
-let closure_0 = Math.PI / 180;
-let items = [1, 0, 0, 1, 0, 0];
-let c2 = 1;
-let c3 = 0;
-let c4 = 0;
-let c5 = 1;
-let closure_6 = 0;
-let closure_7 = 0;
-let c8 = true;
+import _mod8033 from "module_8033" /* 8033 */;
+import Circle from "Circle" /* 8034 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8055 */;
+import showErrorCSS from "showErrorCSS" /* 8137 */;
+import SvgAst from "SvgAst" /* 8138 */;
+import _mod8140 from "module_8140" /* 8140 */;
+import RNSVGCircle from "RNSVGCircle" /* 8141 */;
 
-export const identity = items;
-export function reset() {
-  const tmp = c8;
-  if (!tmp) {
-    c5 = 1;
-    c2 = 1;
-    closure_7 = 0;
-    closure_6 = 0;
-    c4 = 0;
-    c3 = 0;
-    c8 = true;
-  }
+const CircleDefault = Circle;
+
+for (const key10013 in _mod8033) {
+  exports[key10013] = _mod8033[key10013];
+  continue;
 }
-export function toArray() {
-  const tmp = c8;
-  if (!tmp) {
-    items = [c2, c3, c4, c5, closure_6, closure_7];
-  }
-  return items;
+for (const key10017 in Circle) {
+  exports[key10017] = Circle[key10017];
+  continue;
 }
-export { append };
-export function appendTransform(arg0, arg1, scaleX, scaleY, rotation, skewX, skewY, originX, originY) {
-  let num2 = 1;
-  let num3 = 0;
-  if (rotation % 360) {
-    const result = rotation * closure_0;
-    const _Math = Math;
-    num2 = Math.cos(result);
-    const _Math2 = Math;
-    num3 = Math.sin(result);
-  }
-  const result1 = num2 * scaleX;
-  const result2 = num3 * scaleX;
-  const result3 = -num3 * scaleY;
-  const result4 = num2 * scaleY;
-  if (!skewX) {
-    if (!skewY) {
-      append(result1, result2, result3, result4, arg0, arg1);
-    }
-    const tmp19 = originX || originY;
-    if (tmp19) {
-      closure_6 = closure_6 - (originX * c2 + originY * c4);
-      closure_7 = closure_7 - (originX * c3 + originY * c5);
-      c8 = false;
-    }
-  }
-  const tanResult = Math.tan(skewY * closure_0);
-  const tanResult1 = Math.tan(skewX * closure_0);
-  append(result1 + tanResult1 * result2, tanResult * result1 + result2, result3 + tanResult1 * result4, tanResult * result3 + result4, arg0, arg1);
-}
+const RNSVGCircle_export = RNSVGCircle.RNSVGCircle;
+const SvgAst_export = SvgAst.SvgAst;
+
+export const inlineStyles = showErrorCSS.inlineStyles;
+export const loadLocalRawResource = showErrorCSS.loadLocalRawResource;
+export const LocalSvg = showErrorCSS.LocalSvg;
+export const SvgCss = showErrorCSS.SvgCss;
+export const SvgCssUri = showErrorCSS.SvgCssUri;
+export const SvgWithCss = showErrorCSS.SvgWithCss;
+export const SvgWithCssUri = showErrorCSS.SvgWithCssUri;
+export const WithLocalSvg = showErrorCSS.WithLocalSvg;
+export const camelCase = SvgAst.camelCase;
+export const fetchText = _mod8140.fetchText;
+export const parse = SvgAst.parse;
+export { RNSVGCircle_export as RNSVGCircle };
+export const RNSVGClipPath = RNSVGCircle.RNSVGClipPath;
+export const RNSVGDefs = RNSVGCircle.RNSVGDefs;
+export const RNSVGEllipse = RNSVGCircle.RNSVGEllipse;
+export const RNSVGFeColorMatrix = RNSVGCircle.RNSVGFeColorMatrix;
+export const RNSVGFeComposite = RNSVGCircle.RNSVGFeComposite;
+export const RNSVGFeGaussianBlur = RNSVGCircle.RNSVGFeGaussianBlur;
+export const RNSVGFeMerge = RNSVGCircle.RNSVGFeMerge;
+export const RNSVGFeOffset = RNSVGCircle.RNSVGFeOffset;
+export const RNSVGFilter = RNSVGCircle.RNSVGFilter;
+export const RNSVGForeignObject = RNSVGCircle.RNSVGForeignObject;
+export const RNSVGGroup = RNSVGCircle.RNSVGGroup;
+export const RNSVGImage = RNSVGCircle.RNSVGImage;
+export const RNSVGLine = RNSVGCircle.RNSVGLine;
+export const RNSVGLinearGradient = RNSVGCircle.RNSVGLinearGradient;
+export const RNSVGMarker = RNSVGCircle.RNSVGMarker;
+export const RNSVGMask = RNSVGCircle.RNSVGMask;
+export const RNSVGPath = RNSVGCircle.RNSVGPath;
+export const RNSVGPattern = RNSVGCircle.RNSVGPattern;
+export const RNSVGRadialGradient = RNSVGCircle.RNSVGRadialGradient;
+export const RNSVGRect = RNSVGCircle.RNSVGRect;
+export const RNSVGSvgAndroid = RNSVGCircle.RNSVGSvgAndroid;
+export const RNSVGSvgIOS = RNSVGCircle.RNSVGSvgIOS;
+export const RNSVGSymbol = RNSVGCircle.RNSVGSymbol;
+export const RNSVGText = RNSVGCircle.RNSVGText;
+export const RNSVGTextPath = RNSVGCircle.RNSVGTextPath;
+export const RNSVGTSpan = RNSVGCircle.RNSVGTSpan;
+export const RNSVGUse = RNSVGCircle.RNSVGUse;
+export const Shape = multiplyMatricesDefault;
+export { SvgAst_export as SvgAst };
+export const SvgFromUri = SvgAst.SvgFromUri;
+export const SvgFromXml = SvgAst.SvgFromXml;
+export const SvgUri = SvgAst.SvgUri;
+export const SvgXml = SvgAst.SvgXml;
+export default CircleDefault;

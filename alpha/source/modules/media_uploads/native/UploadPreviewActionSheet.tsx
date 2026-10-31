@@ -1,25 +1,25 @@
-// Module ID: 10509
-// Function ID: 10510
+// Module ID: 10529
+// Function ID: 10530
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7694, 1072, 5268, 21, 5009, 575, 38, 8203, 1492, 1626, 5588, 5253, 8213, 10510, 1253, 5707, 8212, 14468, 14469, 5267, 5270, 6022, 5619, 1376, 8864, 10528, 7054, 6969, 12332, 14470, 1114, 6968, 14473, 9757, 8651, 14475, 5629, 5733, 2]
+// Dependencies: [32, 19, 17, 7701, 1072, 5273, 21, 5014, 575, 38, 8211, 1491, 1625, 5593, 5258, 8221, 10530, 1252, 5712, 8220, 14506, 14507, 5272, 5275, 6027, 5624, 1375, 8873, 10548, 7060, 6975, 12370, 14508, 1113, 6974, 14511, 9778, 8659, 14513, 5634, 5738, 2]
 // Exports: default
 
-// Module 10509 (UploadPreviewActionSheet)
+// Module 10529 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
-import DraftStore from "DraftStore" /* 7694 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8212 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9757 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10510 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 14470 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10530 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 14508 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, cropRect;

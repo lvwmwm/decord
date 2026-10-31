@@ -1,21 +1,21 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16823
+// Function ID: 16824
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1072, 7709, 21, 5009, 575, 1498, 7320, 7345, 7158, 16742, 16760, 1114, 2537, 9791, 16782, 16783, 8971, 7710, 7286, 16784, 9195, 11445, 2]
+// Dependencies: [32, 19, 17, 1072, 7716, 21, 5014, 575, 1497, 7326, 7351, 7164, 16784, 16802, 1113, 2538, 9812, 16824, 16825, 8980, 7717, 7292, 16826, 9214, 14177, 2]
 // Exports: default
 
-// Module 16781 (UserSettingsFamilyCenterParentalControls)
+// Module 16823 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import _modDef2537 from "module_2537" /* 2537 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7709 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7710 */;
+import intl3 from "intl" /* 1113 */;
+import _modDef2538 from "module_2538" /* 2538 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -110,7 +110,7 @@ export default function FamilyCenterParentalControlsSettings() {
     let intl;
     if (selectedSubPage === FamilyCenterSubPages.SCREEN_TIME_CONTROLS) {
       if (null != id) {
-        let obj = { title: intl.string(_modDef2537["1Op+NP"]), headerRight: fn };
+        let obj = { title: intl.string(_modDef2538["1Op+NP"]), headerRight: fn };
         const setOptions = stackNavigation.setOptions;
         intl = intl3.intl;
         fn = undefined;
@@ -134,7 +134,7 @@ export default function FamilyCenterParentalControlsSettings() {
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "color", headerRight: "Error" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "flexDirection" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[14]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

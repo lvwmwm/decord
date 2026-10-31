@@ -1,19 +1,19 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12352
+// Function ID: 12353
 // Name: CommandOptionView
-// Dependencies: [19, 17, 5010, 21, 1993, 5009, 575, 504, 5090, 12315, 12316, 5619, 12317, 7080, 2]
+// Dependencies: [19, 17, 5015, 21, 1992, 5014, 575, 504, 5095, 12353, 12354, 5624, 12355, 7086, 2]
 // Exports: default
 
-// Module 12314 (CommandOptionView)
+// Module 12352 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Server from "Server" /* 1993 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12317 */;
+import Server from "Server" /* 1992 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12355 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -56,9 +56,9 @@ export default function CommandOptionView(option) {
   const items = [AccessibilityStore];
   const obj = option(504);
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  const ReduceMotion = option(5090).ReduceMotion;
+  const ReduceMotion = option(5095).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12315);
+  const tmp2Result = option(12353);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -66,9 +66,9 @@ export default function CommandOptionView(option) {
     if (option.required || isPreSelectedOption) {
       fn = (fn) => fn();
     }
-    const FadeOut = tmp2(5090).FadeOut;
+    const FadeOut = tmp2(5095).FadeOut;
     const reduceMotionResult = FadeOut.reduceMotion(tmp5);
-    const FadeInUp = tmp2(5090).FadeInUp;
+    const FadeInUp = tmp2(5095).FadeInUp;
     const obj2 = { transform: items1 };
     items1 = [{ translateY: -10 }];
     const withInitialValuesResult = FadeInUp.withInitialValues(obj2);
@@ -83,14 +83,14 @@ export default function CommandOptionView(option) {
     }
     let hasItem1 = items1.includes(option.type) && null == option.choices;
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
-    const LayoutAnimationConfig = tmp2(5090).LayoutAnimationConfig;
+    const LayoutAnimationConfig = tmp2(5095).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12316).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(12354).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12315).ExitingAnimation,
-      layout: option(12315).LayoutAnimation,
+      exiting: option(12353).ExitingAnimation,
+      layout: option(12353).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },
@@ -101,7 +101,7 @@ export default function CommandOptionView(option) {
     tmp21 = View;
     if (hasItem1) {
       const obj7 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
-      hasItem1 = tmp18(tmp2(5619).Text, obj7);
+      hasItem1 = tmp18(tmp2(5624).Text, obj7);
     }
     items2 = [hasItem1, , , ];
     const obj8 = {
@@ -127,13 +127,13 @@ export default function CommandOptionView(option) {
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
     const obj9 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(5619).Text, obj9);
+    items2[2] = closure_5(option(5624).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
-      const View2 = tmp19(5090).View;
-      items3 = [closure_5(option(7080).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+      const View2 = tmp19(5095).View;
+      items3 = [closure_5(option(7086).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
       const obj11 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(5619).Text, obj11);
+      items3[1] = closure_5(option(5624).Text, obj11);
       hasItem = tmp20(View2, obj10);
     }
     items2[3] = hasItem;

@@ -1,19 +1,19 @@
-// Module ID: 8828
-// Function ID: 8829
+// Module ID: 8836
+// Function ID: 8837
 // Name: useVideoControls
-// Dependencies: [32, 19, 5010, 21, 560, 1260, 8829, 5009, 504, 8830, 6726, 8831, 8826, 8838, 2]
+// Dependencies: [32, 19, 5015, 21, 560, 1259, 8837, 5014, 504, 8838, 6732, 8839, 8834, 8846, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8828 (useVideoControls)
+// Module 8836 (useVideoControls)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1260 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8826 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8829 */;
+import react_native from "react-native" /* 1259 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8834 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8837 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import module_560 from "module_560" /* 560 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14119
+// Function ID: 14120
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 5009, 575, 7143, 14085, 7080, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7149, 14120, 7086, 5624, 2]
 // Exports: default
 
-// Module 14084 (GuildPowerupsWarning)
+// Module 14119 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
+import Text_Text from "Text/Text" /* 5624 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,17 +47,17 @@ export default function GuildPowerupsWarning(warnings) {
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(14085)(guildId, powerupNames);
+  const tmp6 = manaTypeConsolidationExperiment(14120)(guildId, powerupNames);
   if (tmp6.shouldShow) {
     const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
     obj3 = { style: tmp.contentContainer, children: items };
     const obj4 = { color: tmp5(575).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const CircleErrorIcon = tmp2(7080).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(7086).CircleErrorIcon;
     items = [closure_4(CircleErrorIcon, obj4), , , ];
     const obj5 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp7 };
     items[1] = closure_4(require("Text/Text").Text, obj5);
     let str = "text-sm/medium";
-    let Text = tmp2(5619).Text;
+    let Text = tmp2(5624).Text;
     tmp12 = closure_5;
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-sm/normal";

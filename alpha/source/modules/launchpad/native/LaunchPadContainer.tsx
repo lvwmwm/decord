@@ -1,17 +1,17 @@
-// Module ID: 19008
-// Function ID: 19009
+// Module ID: 19057
+// Function ID: 19058
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11501, 21, 5009, 11502, 19009, 19011, 12776, 5090, 5632, 5199, 18002, 5298, 19012, 2]
+// Dependencies: [19, 17, 11535, 21, 5014, 11536, 19058, 19060, 12811, 5095, 5637, 5204, 18045, 5303, 19061, 2]
 // Exports: default
 
-// Module 19008 (LaunchPadContainer)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
+// Module 19057 (LaunchPadContainer)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11501 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11535 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -60,15 +60,15 @@ export default function LaunchPadContainer(children) {
   children = children.children;
   const tmp = closure_8();
   const tmp2 = updaters;
-  const tmp4 = updaters(11502)();
-  const tmp5 = updaters(19009)();
+  const tmp4 = updaters(11536)();
+  const tmp5 = updaters(19058)();
   const launchPadSharedState = tmp5.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp5);
-  ({ gesture, gestureRef } = updaters(19011)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
-  updaters(19011)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters });
-  const tmp7 = updaters(12776)();
+  ({ gesture, gestureRef } = updaters(19060)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
+  updaters(19060)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters });
+  const tmp7 = updaters(12811)();
   dependencyMap = tmp7;
-  let obj = launchPadSharedState(5090);
+  let obj = launchPadSharedState(5095);
   const fn = function o() {
     return closure_2.get().height;
   };
@@ -86,7 +86,7 @@ export default function LaunchPadContainer(children) {
   fn2.__workletHash = 418963589215;
   fn2.__initData = __initData2;
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  let obj2 = launchPadSharedState(5090);
+  let obj2 = launchPadSharedState(5095);
   const fn3 = function v() {
     let interpolate;
     let items;
@@ -114,26 +114,26 @@ export default function LaunchPadContainer(children) {
     obj5 = ReanimatedRexport;
     return obj;
   };
-  let obj3 = { interpolate: launchPadSharedState(5090).interpolate, launchPadSharedState, withSpring: launchPadSharedState(5632).withSpring, windowDimensions: tmp7, LAUNCH_PAD_SPRING_CONFIG };
+  let obj3 = { interpolate: launchPadSharedState(5095).interpolate, launchPadSharedState, withSpring: launchPadSharedState(5637).withSpring, windowDimensions: tmp7, LAUNCH_PAD_SPRING_CONFIG };
   fn3.__closure = obj3;
   fn3.__workletHash = 13886247172712;
   fn3.__initData = __initData3;
   const animatedStyle = obj2.useAnimatedStyle(fn3);
-  const MobileHomeDrawerExperiment = launchPadSharedState(5199).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = launchPadSharedState(5204).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj4 = { value: gestureRef, children: closure_6(GestureDetector, obj5) };
-  const Provider = updaters(18002).Provider;
+  const Provider = updaters(18045).Provider;
   obj5 = { gesture, children: tmp11(tmp12, obj6) };
   obj6 = { style: tmp.wrapper, children: items1 };
-  GestureDetector = launchPadSharedState(5298).GestureDetector;
+  GestureDetector = launchPadSharedState(5303).GestureDetector;
   const obj7 = { style: items, children };
   items = [tmp.container, animatedStyle];
-  items1 = [closure_6(updaters(5090).View, obj7), ];
+  items1 = [closure_6(updaters(5095).View, obj7), ];
   tmp11 = closure_7;
   tmp12 = closure_3;
   if (tmp4 !== constants.DISABLED) {
     const obj8 = { launchPadType: tmp4, gestureState, launchPadShown, launchPadSharedState, launchPadPullTabState, updaters };
-    tmp10Result = closure_6(tmp2(19012), obj8);
+    tmp10Result = closure_6(tmp2(19061), obj8);
   }
   items1[1] = tmp10Result;
   return closure_6(Provider, obj4);

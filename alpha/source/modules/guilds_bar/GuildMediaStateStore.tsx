@@ -1,29 +1,29 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15596
+// Function ID: 15597
 // Name: GuildMediaStateStore
-// Dependencies: [4857, 6849, 4863, 4862, 6708, 502, 4858, 4880, 4941, 4951, 4912, 6769, 5674, 1072, 1094, 4930, 15558, 9071, 11, 6705, 8952, 504, 558, 572, 2]
+// Dependencies: [4862, 6855, 4868, 4867, 6714, 502, 4863, 4885, 4946, 4956, 4917, 6775, 5679, 1072, 1093, 4935, 15597, 9090, 11, 6711, 8961, 504, 558, 572, 2]
 
-// Module 15557 (GuildMediaStateStore)
+// Module 15596 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelTypes from "ChannelTypes" /* 1094 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4930 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 15558 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
-import StageInstanceStore from "StageInstanceStore" /* 4863 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import ChannelTypes from "ChannelTypes" /* 1093 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4935 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 15597 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import StageInstanceStore from "StageInstanceStore" /* 4868 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -170,7 +170,7 @@ function computeGuildMediaState(id) {
     if (basicChannel != null) {
       type = basicChannel.type;
     }
-    let tmp6 = type !== tmp2(1094).ChannelTypes.GUILD_SPACE;
+    let tmp6 = type !== tmp2(1093).ChannelTypes.GUILD_SPACE;
     if (tmp6) {
       let tmp8 = 0 === closure_1.blockedOrIgnoredUserIds.size;
       if (!tmp8) {
@@ -257,7 +257,7 @@ function computeGuildMediaState(id) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-        let tmp29Result = tmp29(8952);
+        let tmp29Result = tmp29(8961);
         if (tmp29Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           someResult2 = found.length > 0;
         } else {
@@ -270,7 +270,7 @@ function computeGuildMediaState(id) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null != tmp29Result2.getGuildActiveEvent(id), activity: someResult2, isCurrentUserConnected: false };
-        let tmp29Result2 = tmp29(9071);
+        let tmp29Result2 = tmp29(9090);
         return obj4;
       }
       continue;

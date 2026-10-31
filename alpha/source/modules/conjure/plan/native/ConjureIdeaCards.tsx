@@ -1,20 +1,20 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12773
+// Function ID: 12774
 // Name: ConjureIdeaCards
-// Dependencies: [19, 17, 21, 5009, 12596, 5619, 1114, 3865, 6971, 6022, 2]
+// Dependencies: [19, 17, 21, 5014, 12631, 5624, 1113, 3868, 6977, 6027, 2]
 // Exports: default
 
-// Module 12738 (ConjureIdeaCards)
+// Module 12773 (ConjureIdeaCards)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Stack_Stack from "Stack/Stack" /* 6022 */;
-import Card_Card from "Card/Card" /* 6971 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12596 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Stack_Stack from "Stack/Stack" /* 6027 */;
+import Card_Card from "Card/Card" /* 6977 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12631 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -33,7 +33,7 @@ export default function ConjureIdeaCards(arg0) {
   let items;
   ({ ideas, onPick: require } = arg0);
   let obj = { style: closure_6().ideaCards, children: items };
-  let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3865["wx/o8Y"]) };
+  let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3868["wx/o8Y"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [
@@ -56,7 +56,7 @@ export default function ConjureIdeaCards(arg0) {
           return tmpResult;
         },
         disabled: null == require,
-        accessibilityLabel: intl.formatToPlainString(_modDef3865.H8G39M, obj2),
+        accessibilityLabel: intl.formatToPlainString(_modDef3868.H8G39M, obj2),
         children: tmp5(Stack, { direction: "vertical", spacing: 4, children: items })
       };
       const Card = Card_Card.Card;

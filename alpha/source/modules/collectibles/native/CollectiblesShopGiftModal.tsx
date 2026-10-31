@@ -1,25 +1,25 @@
-// Module ID: 14376
-// Function ID: 14377
+// Module ID: 14414
+// Function ID: 14415
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7713, 1072, 1083, 21, 9888, 1376, 2060, 14377, 14375, 10669, 10656, 10673, 14378, 14381, 10590, 8760, 8747, 504, 7320, 7345, 2028, 7712, 10672, 1114, 2]
+// Dependencies: [19, 7720, 1072, 1083, 21, 9909, 1375, 2059, 14415, 14413, 10689, 10676, 10693, 14416, 14419, 10610, 8768, 8755, 504, 7326, 7351, 2026, 7719, 10692, 1113, 2]
 // Exports: default
 
-// Module 14376 (CollectiblesShopGiftModal)
+// Module 14414 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import StringUtils from "StringUtils" /* 2028 */;
-import BadgeId from "BadgeId" /* 8747 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8760 */;
-import openGiftModal from "openGiftModal" /* 14375 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14378 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14381 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import BadgeId from "BadgeId" /* 8755 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
+import openGiftModal from "openGiftModal" /* 14413 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14416 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14419 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7713 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7712);
+const CollectiblesActionCreators = tmp(7719);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;

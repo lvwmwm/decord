@@ -1,21 +1,21 @@
-// Module ID: 14483
-// Function ID: 14484
+// Module ID: 14521
+// Function ID: 14522
 // Name: ChannelPinsStore
-// Dependencies: [2063, 4858, 4921, 4880, 6056, 4951, 1384, 6058, 12, 7764, 504, 572, 2]
+// Dependencies: [2062, 4863, 4926, 4885, 6061, 4956, 1383, 6063, 12, 7771, 504, 572, 2]
 
-// Module 14483 (ChannelPinsStore)
+// Module 14521 (ChannelPinsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6058 */;
-import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7764 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7771 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 function handleChannelDelete(arg0) {

@@ -1,20 +1,20 @@
-// Module ID: 18997
-// Function ID: 18998
+// Module ID: 19046
+// Function ID: 19047
 // Name: ReferralProgramEntryPointActionSheet
-// Dependencies: [19, 17, 4855, 21, 5009, 575, 5253, 15284, 1995, 5267, 5712, 8514, 5619, 1114, 5629, 2]
+// Dependencies: [19, 17, 4860, 21, 5014, 575, 5258, 15323, 1994, 5272, 5717, 8522, 5624, 1113, 5634, 2]
 // Exports: default
 
-// Module 18997 (ReferralProgramEntryPointActionSheet)
+// Module 19046 (ReferralProgramEntryPointActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import _modDef8514 from "module_8514" /* 8514 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import _modDef8522 from "module_8522" /* 8522 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -55,30 +55,30 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   const callback = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.PRIMARY);
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(15284, dependencyMap.paths), "referral-program-share-action-sheet");
+    obj.openLazy(asyncRequire(15323, dependencyMap.paths), "referral-program-share-action-sheet");
   }, items);
   const callback1 = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items1);
   let obj = { onDismiss: callback1, children: closure_7(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  BottomSheet = markAsDismissed(5267).BottomSheet;
+  BottomSheet = markAsDismissed(5272).BottomSheet;
   const obj3 = { source: obj4, style: tmp.image };
-  obj4 = { uri: _modDef8514 };
+  obj4 = { uri: _modDef8522 };
   const tmp4 = FastImageDefault;
   items2 = [closure_6(tmp4, obj3), , , ];
-  const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: intl.string(markAsDismissed(1114).t.u1CFbS) };
-  const Text = markAsDismissed(5619).Text;
-  intl = markAsDismissed(1114).intl;
+  const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: intl.string(markAsDismissed(1113).t.u1CFbS) };
+  const Text = markAsDismissed(5624).Text;
+  intl = markAsDismissed(1113).intl;
   items2[1] = closure_6(Text, obj5);
-  const obj6 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: intl2.string(markAsDismissed(1114).t.k2ibMz) };
-  const Text2 = markAsDismissed(5619).Text;
-  intl2 = markAsDismissed(1114).intl;
+  const obj6 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: intl2.string(markAsDismissed(1113).t.k2ibMz) };
+  const Text2 = markAsDismissed(5624).Text;
+  intl2 = markAsDismissed(1113).intl;
   items2[2] = closure_6(Text2, obj6);
   const obj7 = { style: tmp.buttonContainer, children: closure_6(Button, obj8) };
-  obj8 = { text: intl3.string(markAsDismissed(1114).t.TI8qgg), size: "lg", onPress: callback, variant: "primary" };
-  Button = markAsDismissed(5629).Button;
-  intl3 = markAsDismissed(1114).intl;
+  obj8 = { text: intl3.string(markAsDismissed(1113).t.TI8qgg), size: "lg", onPress: callback, variant: "primary" };
+  Button = markAsDismissed(5634).Button;
+  intl3 = markAsDismissed(1113).intl;
   items2[3] = closure_6(View, obj7);
   return closure_6(BottomSheet, obj);
 };

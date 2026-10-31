@@ -1,15 +1,15 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11849
+// Function ID: 11850
 // Name: ModeratorOverlayState
-// Dependencies: [1255, 1260, 4924, 2]
+// Dependencies: [1254, 1259, 4929, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 11811 (ModeratorOverlayState)
-import _slicedToArray from "_slicedToArray" /* 4924 */;
-import module_1255 from "module_1255" /* 1255 */;
+// Module 11849 (ModeratorOverlayState)
+import _slicedToArray from "_slicedToArray" /* 4929 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = module_1255.createWithEqualityFn((arg0, arg1) => {
+let closure_2 = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {

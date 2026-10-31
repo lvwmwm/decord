@@ -1,22 +1,22 @@
-// Module ID: 14616
-// Function ID: 14617
+// Module ID: 14654
+// Function ID: 14655
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5009, 14617, 1114, 14618, 5619, 1376, 5298, 7855, 7864, 2]
+// Dependencies: [19, 17, 21, 575, 5014, 14655, 1113, 14656, 5624, 1375, 5303, 7862, 7871, 2]
 // Exports: default
 
-// Module 14616 (AppStoreOverlayStatsCarousel)
+// Module 14654 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import AnalyticsActions from "AnalyticsActions" /* 7855 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14617 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14618 */;
+import intl3 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14655 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14656 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -61,15 +61,15 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     let result1;
     if (null != stat.ratingCount) {
       const tmp9Result = AppStoreOverlayStatCardUtils;
-      result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1114).intl.currentLocale);
+      result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1113).intl.currentLocale);
     }
     const tmp9Result2 = AppStoreOverlayStatCardUtils;
     const appStoreStarFillAmounts = tmp9Result2.getAppStoreStarFillAmounts(stat.rating, num);
-    const intl = tmp9(1114).intl;
+    const intl = tmp9(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj4 = { label: stat.label, rating: result, maxRating: num, ratingCount: num2 };
     num2 = stat.ratingCount;
-    const prop = tmp9(1114).t["/0p2sz"];
+    const prop = tmp9(1113).t["/0p2sz"];
     if (num2 == null) {
       num2 = 0;
     }
@@ -122,7 +122,7 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const tmp26 = metroRequire;
     if (null == secondaryContent) {
       const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp24(tmp21(5619).Text, obj9);
+      secondaryContent = tmp24(tmp21(5624).Text, obj9);
     }
     tmp24Result = tmp24(tmp26, obj8);
   }
@@ -134,8 +134,8 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const tmp21Result = PlatformUtils;
     const tmp30 = React3;
     if (tmp21Result.isIOS()) {
-      const intl2 = tmp21(1114).intl;
-      stringResult = intl2.string(tmp21(1114).t.quJD0Y);
+      const intl2 = tmp21(1113).intl;
+      stringResult = intl2.string(tmp21(1113).t.quJD0Y);
     }
     tmp24Result2 = tmp24(tmp30, obj10);
   } else {
@@ -194,9 +194,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7864).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7871).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7864).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7871).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

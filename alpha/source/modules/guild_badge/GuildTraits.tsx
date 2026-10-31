@@ -1,11 +1,11 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9304
+// Function ID: 9305
 // Name: GuildTraits
-// Dependencies: [1072, 4872, 2]
+// Dependencies: [1072, 4877, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9285 (GuildTraits)
-import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
+// Module 9304 (GuildTraits)
+import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -77,13 +77,13 @@ export function isPremiumGuild(premiumSubscriberCount) {
   }
   return tmp;
 }
-export function isDiscoverableGuild(features) {
-  let hasItem = null != features;
+export function isDiscoverableGuild(guild) {
+  let hasItem = null != guild;
   if (hasItem) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(features.features);
+    set = new Set(guild.features);
     hasItem = set.has(constants.DISCOVERABLE);
   }
   return hasItem;

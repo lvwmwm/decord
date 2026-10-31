@@ -1,27 +1,27 @@
-// Module ID: 16944
-// Function ID: 16945
+// Module ID: 17000
+// Function ID: 17001
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5010, 8723, 21, 5009, 575, 8729, 1985, 504, 8732, 11356, 1114, 2931, 11472, 16943, 6847, 8722, 4831, 1188, 8812, 10752, 10753, 5619, 2]
+// Dependencies: [19, 17, 5015, 8731, 21, 5014, 575, 8737, 1984, 504, 8740, 11392, 1113, 2932, 11506, 16999, 6853, 8730, 4836, 1187, 8820, 10772, 10773, 5624, 2]
 // Exports: default
 
-// Module 16944 (DisplayNameStylesEditPreview)
+// Module 17000 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import DateUtils from "DateUtils" /* 4831 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6847 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8722 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8732 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8812 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10752 */;
-import types from "types" /* 10753 */;
+import native from "native" /* 1187 */;
+import DateUtils from "DateUtils" /* 4836 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6853 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8730 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8740 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8820 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
+import types from "types" /* 10773 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8723 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -70,7 +70,7 @@ function ChatPreview(chatMessage) {
     tmp8 = pendingAvatarDecoration;
   }
   const obj3 = { style: tmp.chatContainer, pointerEvents: "none", children: items1 };
-  const Avatar = tmp2(1188).Avatar;
+  const Avatar = tmp2(1187).Avatar;
   if (undefined !== avatarSrcOverride) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, avatarSrcOverride, stateFromStores), size: native.AvatarSizes.NORMAL, avatarDecoration: tmp8 };
     obj5 = obj4;
@@ -88,10 +88,10 @@ function ChatPreview(chatMessage) {
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
   const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   if (chatMessage == null) {
-    const intl = tmp2(1114).intl;
-    chatMessage = intl.string(tmp5(2931).h5Cuej);
+    const intl = tmp2(1113).intl;
+    chatMessage = intl.string(tmp5(2932).h5Cuej);
   }
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);

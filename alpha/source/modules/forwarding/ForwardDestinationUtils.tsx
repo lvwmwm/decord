@@ -1,22 +1,22 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13371
+// Function ID: 13372
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6831, 4862, 4858, 4941, 4951, 1384, 1072, 13334, 1380, 504, 1094, 6554, 1993, 6728, 6720, 5688, 6725, 13337, 1114, 6552, 7824, 5063, 5647, 2]
+// Dependencies: [19, 6837, 4867, 4863, 4946, 4956, 1383, 1072, 13369, 1379, 504, 1093, 6560, 1992, 6734, 6726, 5693, 6731, 13372, 1113, 6558, 7831, 5068, 5652, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 13336 (ForwardDestinationUtils)
-import ChannelTypes from "ChannelTypes" /* 1094 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import StickersUtils from "StickersUtils" /* 6554 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7824 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 13337 */;
+// Module 13371 (ForwardDestinationUtils)
+import ChannelTypes from "ChannelTypes" /* 1093 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import StickersUtils from "StickersUtils" /* 6560 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7831 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 13372 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6831 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import StickersStore from "StickersStore" /* 6837 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let result = size.fileFinishedImporting("modules/forwarding/ForwardDestinationUt
 
 export function useSelectedDestinationChannel(selectedDestinations) {
   let found;
-  const mapped = selectedDestinations.map(found(13334).getChannelIdFromDestinationId);
-  found = mapped.find(found(1380).isNotNullish);
+  const mapped = selectedDestinations.map(found(13369).getChannelIdFromDestinationId);
+  found = mapped.find(found(1379).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
@@ -84,7 +84,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           require("AgeGateUtils");
         }
         const obj2 = { label: intl.string(require("intl").t.KgPx1D), lineClamp: 2 };
-        intl = tmp13(1114).intl;
+        intl = tmp13(1113).intl;
         return obj2;
       }
       let flag2 = false;
@@ -101,7 +101,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(6725).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(6731).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {
@@ -113,14 +113,14 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
       }
       if (flag2) {
         const obj3 = { label: intl7.string(require("intl").t.QHrFo6), lineClamp: 2 };
-        intl7 = tmp13(1114).intl;
+        intl7 = tmp13(1113).intl;
         return obj3;
       } else if (type instanceof closure_5) {
         if (closure_6(type.type)) {
           if (components.attachments.length > 0) {
             if (!PermissionStore.can(constants2.ATTACH_FILES, type)) {
               const obj4 = { label: intl2.string(require("intl").t.P7yvbm) };
-              intl2 = tmp13(1114).intl;
+              intl2 = tmp13(1113).intl;
               return obj4;
             }
           } else {
@@ -132,7 +132,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
               const tmp13Result12 = require("EmbedUtils");
               if (!tmp13Result12.shouldStripEmbeds(components)) {
                 const obj5 = { label: intl3.string(require("intl").t.Wr4RIX) };
-                intl3 = tmp13(1114).intl;
+                intl3 = tmp13(1113).intl;
                 return obj5;
               }
             }
@@ -143,7 +143,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
             const tmp13Result13 = require("EmbedUtils");
             if (!tmp13Result13.canEmbedLinks(type, PermissionStore)) {
               const obj6 = { label: intl4.string(require("intl").t.Wr4RIX) };
-              intl4 = tmp13(1114).intl;
+              intl4 = tmp13(1113).intl;
               return obj6;
             }
           }
@@ -171,7 +171,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
                 return isGuildStickerResult;
               })) {
                 const obj8 = { label: intl5.string(require("intl").t["0Yyrua"]) };
-                intl5 = tmp13(1114).intl;
+                intl5 = tmp13(1113).intl;
                 return obj8;
               }
             }
@@ -179,7 +179,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           if (components.hasFlag(constants.IS_VOICE_MESSAGE)) {
             if (!PermissionStore.can(constants2.SEND_VOICE_MESSAGES, type)) {
               const obj9 = { label: intl6.string(require("intl").t.quj4DY) };
-              intl6 = tmp13(1114).intl;
+              intl6 = tmp13(1113).intl;
               return obj9;
             }
           } else {

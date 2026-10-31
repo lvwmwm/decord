@@ -1,11 +1,11 @@
-// Module ID: 8566
-// Function ID: 8567
+// Module ID: 8574
+// Function ID: 8575
 // Name: MarkupListRule
-// Dependencies: [1944, 38, 2]
+// Dependencies: [1943, 38, 2]
 
-// Module 8566 (MarkupListRule)
+// Module 8574 (MarkupListRule)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef1944 from "module_1944" /* 1944 */;
+import _modDef1943 from "module_1943" /* 1943 */;
 import size from "module_2" /* 2 */;
 
 let _listLevel, closure_4, dependencyMap, importDefault;
@@ -138,7 +138,7 @@ let obj = {
     return obj;
   }
 };
-let merged = Object.assign(_modDef1944.defaultRules.list);
+let merged = Object.assign(_modDef1943.defaultRules.list);
 const result = size.fileFinishedImporting("modules/markup/MarkupListRule.tsx");
 
 export default obj;

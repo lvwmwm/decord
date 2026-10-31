@@ -1,21 +1,24 @@
-// Module ID: 10908
-// Function ID: 10909
+// Module ID: 10886
+// Function ID: 10887
 // Name: loadEmbeddedAppCSPForLaunch
-// Dependencies: [5, 10909, 10910, 5667, 10911, 10913, 2]
+// Dependencies: [5, 10887, 10888, 5672, 10889, 10890, 2]
 // Exports: default
 
-// Module 10908 (loadEmbeddedAppCSPForLaunch)
-import getURLForApplication from "getURLForApplication" /* 5667 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10910 */;
+// Module 10886 (loadEmbeddedAppCSPForLaunch)
+import getURLForApplication from "getURLForApplication" /* 5672 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10888 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10909 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10887 */;
 import size from "module_2" /* 2 */;
 
 const getURLForApplicationDefault = getURLForApplication;
-let c3, c4;
+let c2, c4;
 
 let obj = function _loadEmbeddedAppCSPForLaunch() {
+  let policy;
   obj = _asyncToGenerator(async function(arg0, value) {
+    let tmp27Result2;
     let closure_0 = arg0;
     if (c4 === 2) {
       c4 = 3;
@@ -27,13 +30,13 @@ let obj = function _loadEmbeddedAppCSPForLaunch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
+      let c3;
       try {
-        let applicationRouterOrigin;
         c4 = 2;
-        if (0 === c3) {
+        if (0 === c2) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -42,47 +45,55 @@ let obj = function _loadEmbeddedAppCSPForLaunch() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_2 = tmp4;
             let closure_1 = tmp;
-            applicationRouterOrigin = undefined;
-            const obj6 = EmbeddedAppFramePolicyExperiment;
-            const tmp29 = closure_0;
-            if (obj6.getIsEmbeddedAppFramePolicyEnabled("loadEmbeddedAppCSPForLaunch")) {
-              const tmp12 = getURLForApplicationDefault(tmp29);
-              applicationRouterOrigin = null;
-              if (null != tmp12) {
-                const tmp30Result = getURLForApplication;
-                applicationRouterOrigin = tmp30Result.getApplicationRouterOrigin(tmp12);
+            const obj7 = EmbeddedAppFramePolicyExperiment;
+            const tmp26 = closure_0;
+            if (obj7.getIsEmbeddedAppFramePolicyEnabled("loadEmbeddedAppCSPForLaunch")) {
+              const tmp15 = getURLForApplicationDefault(tmp26);
+              let applicationRouterOrigin = null;
+              if (null != tmp15) {
+                const tmp27Result = getURLForApplication;
+                applicationRouterOrigin = tmp27Result.getApplicationRouterOrigin(tmp15);
               }
               if (null != applicationRouterOrigin) {
-                const useEmbeddedAppCSPPolicy = tmp30(dependencyMap[4]).useEmbeddedAppCSPPolicy;
-                const items = [applicationRouterOrigin];
-                c3 = 1;
-                c4 = 1;
-                const obj4 = { value: useEmbeddedAppCSPPolicy.fetchMany(items), done: false };
-                return obj4;
+                if (null == policy.getPolicy(applicationRouterOrigin)) {
+                  c3 = 1;
+                  c2 = 2;
+                  c4 = 1;
+                  const obj4 = { value: tmp27Result2.fetchEmbeddedAppCSP(applicationRouterOrigin), done: false };
+                  tmp27Result2 = EmbeddedAppCSPActionCreators;
+                  return obj4;
+                }
               }
             }
           }
+        } else if (1 === tmp4) {
+          c3 = 0;
+          const self = this;
+          const self2 = this;
+          const tmp8 = closure_129_1(closure_129_2[5]);
+          const tmp82 = new tmp8(closure_129_1(closure_129_2[5]).Reasons.CSP_UNAVAILABLE);
+          throw tmp82;
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c3 = 0;
           c4 = 3;
           obj = { value, done: true };
           return obj;
-        } else if (null == closure_130_4.getPolicy(applicationRouterOrigin)) {
-          const self = this;
-          const self2 = this;
-          const tmp24 = closure_130_1(closure_130_2[5]);
-          const tmp242 = new tmp24(closure_130_1(closure_130_2[5]).Reasons.CSP_UNAVAILABLE);
-          throw tmp242;
+        } else {
+          c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp17) {
-        c4 = 3;
-        throw tmp17;
+        return { value: "HermesInternal", done: "HermesInternal" };
+      } catch (tmp20) {
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp20;
+        } else {
+          c2 = 1;
+        }
       }
     }
   });

@@ -1,19 +1,19 @@
-// Module ID: 19242
-// Function ID: 19243
+// Module ID: 19298
+// Function ID: 19299
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11204, 11207, 11202, 21, 5009, 575, 11203, 19236, 5090, 5075, 19243, 19241, 5632, 6954, 1188, 5619, 6974, 11940, 1114, 19244, 2]
+// Dependencies: [19, 11223, 11226, 11221, 21, 5014, 575, 11222, 19292, 5095, 5080, 19299, 19297, 5637, 6960, 1187, 5624, 6980, 11978, 1113, 19300, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 19242 (VoicePanelConsoleStatus)
+// Module 19298 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5075 */;
-import spring from "spring" /* 5632 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11207 */;
+import native from "native" /* 5080 */;
+import spring from "spring" /* 5637 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -21,7 +21,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ReanimatedRexport = tmp(5090);
+const ReanimatedRexport = tmp(5095);
 class VoicePanelConsoleStatus {
   constructor(cleanUp) {
     let Text;

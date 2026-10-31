@@ -1,28 +1,28 @@
-// Module ID: 18461
-// Function ID: 18462
+// Module ID: 18504
+// Function ID: 18505
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1072, 14218, 21, 5009, 11030, 575, 1376, 1498, 1253, 1188, 5637, 18456, 6974, 18457, 15830, 5619, 1114, 7308, 2]
+// Dependencies: [19, 17, 1072, 14256, 21, 5014, 11049, 575, 1375, 1497, 1252, 1187, 5642, 18499, 6980, 18500, 15870, 5624, 1113, 7314, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 18461 (ForYouShowAllRow)
+// Module 18504 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import useFontScale from "useFontScale" /* 5637 */;
-import Pressables from "Pressables" /* 6974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7308 */;
-import ChannelListLayout from "ChannelListLayout" /* 11030 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 14218 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15830 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18456 */;
-import ChannelWrapper from "ChannelWrapper" /* 18457 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import useFontScale from "useFontScale" /* 5642 */;
+import Pressables from "Pressables" /* 6980 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7314 */;
+import ChannelListLayout from "ChannelListLayout" /* 11049 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 14256 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15870 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18499 */;
+import ChannelWrapper from "ChannelWrapper" /* 18500 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -70,11 +70,11 @@ function ForYouShowAllRow(panelVariant) {
   items1 = [metroImportDefault(View, obj5), , ];
   const obj9 = { style: tmp4.textContainer, children: metroImportDefault(Text, obj10) };
   obj10 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: intl.format(intl2.t.NrzztX, { count }) };
-  Text = tmp(5619).Text;
-  intl = tmp(1114).intl;
+  Text = tmp(5624).Text;
+  intl = tmp(1113).intl;
   items1[1] = metroImportDefault(View, obj9);
   const obj11 = { style: tmp4.icon, color: tmp4.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };
-  const Icon = tmp(1188).Icon;
+  const Icon = tmp(1187).Icon;
   items1[2] = metroImportDefault(Icon, obj11);
   return renderChannelPressableWrapper(metroImportDefault(PressableHighlight, obj4), { layout, panelVariant });
 }

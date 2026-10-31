@@ -1,24 +1,27 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 14783
+// Function ID: 14784
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 1072, 21, 8862, 6726, 8827, 8831, 14746, 1376, 2]
+// Dependencies: [32, 19, 1993, 1072, 21, 8871, 6732, 8835, 8839, 14784, 1375, 2]
 
-// Module 14745 (MediaModalYoutube)
+// Module 14783 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8827 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8862 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8835 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8871 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
+let metroImportDefault;
+let metroRequire;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-const YOUTUBE_EMBED_PAGE_TYPE = Constants.YOUTUBE_EMBED_PAGE_TYPE;
+({ AppStates: metroRequire, YOUTUBE_EMBED_PAGE_TYPE: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
-let closure_7 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
+let closure_9 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
 const memoResult = react.memo(function MediaModalYoutube(visible) {
   let closure_2;
   let closure_3;
@@ -37,21 +40,20 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
   const source = visible.source;
   playerState = undefined;
   dependencyMap = undefined;
-  _slicedToArray = undefined;
   react = undefined;
-  const tmp = visible;
+  let tmp = visible;
   let tmp2 = dependencyMap;
   ({ style, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
-  [playerState, dependencyMap] = react.useState(visible(8862).PlayerState.UNREADY);
+  [playerState, dependencyMap] = react.useState(visible(8871).PlayerState.UNREADY);
   [first1, _slicedToArray] = react.useState(undefined);
   let tmp7 = playerState;
-  const tmp8 = playerState(6726)(playerState);
+  const tmp8 = playerState(6732)(playerState);
   react = tmp8;
-  const tmp9 = playerState(6726)(visible);
+  const tmp9 = playerState(6732)(visible);
   let closure_5 = tmp9;
   const ref = react.useRef(null);
   const effect = react.useEffect(() => {
-    const MediaViewerAnalytics = visible(closure_2[6]).MediaViewerAnalytics;
+    const MediaViewerAnalytics = visible(closure_2[7]).MediaViewerAnalytics;
     const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "youtube", action: "attempted" });
   }, []);
   const items = [ref, visible, tmp9, tmp8, playerState];
@@ -129,30 +131,55 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
       }
     }
   }, items);
-  let obj = visible(8831);
+  _slicedToArray = react.useRef(null);
+  const items1 = [ref, playerState, visible];
+  const effect2 = react.useEffect(() => {
+    function handleAppStateChange() {
+      if (closure_2_5.getState() === constants.ACTIVE) {
+        if (null != ref.current) {
+          ref.current = null;
+          if (ref.current) {
+            const current = handleAppStateChange.current;
+            if (current != null) {
+              current.injectJavaScript("window.player.playVideo();  true;");
+            }
+          }
+        }
+      } else if (null == ref.current) {
+        tmp.current = first === ref(visible[5]).PlayerState.PLAYING || first === ref(visible[5]).PlayerState.BUFFERING;
+        first === ref(visible[5]).PlayerState.PLAYING || first === ref(visible[5]).PlayerState.BUFFERING;
+      }
+    }
+    const tmp = visible;
+    if (tmp) {
+      closure_1_5.addChangeListener(handleAppStateChange);
+      return () => closure_5.removeChangeListener(handleAppStateChange);
+    } else {
+      ref.current = null;
+    }
+  }, items1);
+  let obj = visible(8839);
   let youtubeVideoIdFromURI = obj.getYoutubeVideoIdFromURI(source.uri);
   if (youtubeVideoIdFromURI == null) {
-    const tmpResult = tmp(8831);
+    const tmpResult = tmp(8839);
     youtubeVideoIdFromURI = tmpResult.getYoutubeClipVideoIdFromURI(source.uri);
   }
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (playerState === tmp(8862).PlayerState.ERRORED) {
+    if (playerState === tmp(8871).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
-        let obj2 = { videoId: youtubeVideoIdFromURI.videoId };
-        return ref(tmp7(14746), obj2);
+        return jsx(tmp7(14784), { videoId: youtubeVideoIdFromURI.videoId });
       }
     }
-    const tmpResult2 = tmp(1376);
+    const tmpResult2 = tmp(1375);
     const isAndroidResult = tmpResult2.isAndroid();
+    let tmp17 = jsx;
     let str2 = "";
     let str3 = "";
     const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, onToggleOverlay, javaScriptCanOpenWindowsAutomatically: true, domStorageEnabled: isAndroidResult || undefined, mixedContentMode: str19, nestedScrollEnabled: isAndroidResult || undefined, onError, onLoad, onLoadStart, overScrollMode: str20 };
-    const tmp16 = ref;
-    const tmp7Result = tmp7(8862);
+    const tmp7Result = tmp7(8871);
     if (null != youtubeVideoIdFromURI.start) {
-      let tmp18 = globalThis;
       const _HermesInternal = HermesInternal;
       str3 = "'start': " + youtubeVideoIdFromURI.start + ",";
     }
@@ -169,7 +196,7 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
     const _HermesInternal4 = HermesInternal;
     const _HermesInternal5 = HermesInternal;
     str19 = undefined;
-    obj4 = { html: "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + closure_5 + ",\n      " + str2 + "\n      " + combined + "\n      " + str3 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n", baseUrl: baseURL };
+    obj4 = { html: "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n    </style>\n    <script>" + "\nconst tag = document.createElement('script');\ntag.setAttribute('src', \"https://www.youtube.com/iframe_api\");\ndocument.head.appendChild(tag);\n\nfunction onYouTubeIframeAPIReady() {\n  window.player = new YT.Player('player', {\n    height:     '100%',\n    width:      '100%',\n    videoId:    '" + youtubeVideoIdFromURI.videoId + "',\n    playerVars: {\n      'playsinline': 1,\n      'fs': 0,\n      'pageType': " + closure_7 + ",\n      " + str2 + "\n      " + combined + "\n      " + str3 + "\n    },\n    events: {\n      'onReady': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onReady', value: window.player.getPlayerState()})\n        );\n      },\n      'onError': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onError', value: e.data})\n        );\n      },\n      'onStateChange': (e) => {\n        window.ReactNativeWebView.postMessage(\n          JSON.stringify({type: 'onStateChange', value: e.data})\n        );\n      }\n    }\n  });\n}\n" + "</script>\n  </head>\n  <body>\n    <div id=\"player\"></div>\n  </body>\n</html>\n", baseUrl: baseURL };
     if (isAndroidResult) {
       str19 = "compatibility";
     }
@@ -177,7 +204,7 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
     if (isAndroidResult) {
       str20 = "never";
     }
-    return tmp16(tmp7Result, obj3, youtubeVideoIdFromURI.videoId);
+    return tmp17(tmp7Result, obj3, youtubeVideoIdFromURI.videoId);
   }
 });
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/renderers/MediaModalYoutube.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13716
+// Function ID: 13717
 // Name: CustomTypingIndicatorExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: getCustomTypingIndicatorConfig, useCustomTypingIndicatorConfig
 
-// Module 13681 (CustomTypingIndicatorExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 13716 (CustomTypingIndicatorExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-07-custom-typing-indicator", defaultConfig: { canSet: false, canView: false, entryPoint: null }, variations: { 0: { canSet: false, canView: false, entryPoint: null }, 1: { canSet: true, canView: true, entryPoint: "settings" }, 2: { canSet: true, canView: true, entryPoint: "profile" }, 3: { canSet: false, canView: true, entryPoint: null } } };

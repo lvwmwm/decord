@@ -1,10 +1,10 @@
 // Module ID: 3191
 // Function ID: 3192
 // Name: AssetRegistry
-// Dependencies: [1120]
+// Dependencies: [1119]
 
 // Module 3191 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1120 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZ2VfYXNzdXJhbmNl", scales: [1], hash: "85a5132ddb57093fb38c87fb3c64a220", name: "cs.messages.85a5132ddb57093fb38c87fb3c64a220.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/pinot", scales: [1], hash: "87882f4286656bd92108a4f544ba88e5", name: "Pinot.compiled.messages", type: "jsona" });

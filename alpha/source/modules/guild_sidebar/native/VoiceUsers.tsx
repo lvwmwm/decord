@@ -1,22 +1,22 @@
-// Module ID: 18123
-// Function ID: 18124
+// Module ID: 18166
+// Function ID: 18167
 // Name: VoiceUsers
-// Dependencies: [19, 17, 4921, 21, 5009, 575, 11030, 9801, 9216, 504, 18124, 11028, 1114, 14054, 5619, 18128, 7476, 18131, 2]
+// Dependencies: [19, 17, 4926, 21, 5014, 575, 11049, 9822, 9235, 504, 18167, 11047, 1113, 14089, 5624, 18171, 7482, 18174, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 18123 (VoiceUsers)
+// Module 18166 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9801 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
-import ChannelListLayout from "ChannelListLayout" /* 11030 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 14054 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9822 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import ChannelListLayout from "ChannelListLayout" /* 11049 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 14089 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -82,10 +82,10 @@ let closure_12 = react.memo(function VoiceStateUserItem(voiceState) {
   const collapsed = voiceState.collapsed;
   const voiceState2 = voiceState.voiceState;
   const isFirst = voiceState.isFirst;
-  const tmp3 = closure_11(channel(9801)());
-  const withLocalSelfMuteDeaf = user(9216).withLocalSelfMuteDeaf;
-  user(9216);
-  let obj = user(9216);
+  const tmp3 = closure_11(channel(9822)());
+  const withLocalSelfMuteDeaf = user(9235).withLocalSelfMuteDeaf;
+  user(9235);
+  let obj = user(9235);
   const result = withLocalSelfMuteDeaf(voiceState2, obj.useLocalSelfMuteDeaf());
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
@@ -106,7 +106,7 @@ let closure_12 = react.memo(function VoiceStateUserItem(voiceState) {
   }
   const obj3 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj6, user.id) };
   obj6 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: result.sessionId, channel, isGuest };
-  tmpResult = tmp(18124);
+  tmpResult = tmp(18167);
   if (member == null) {
     member = storeMember;
   }

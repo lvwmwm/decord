@@ -1,20 +1,20 @@
-// Module ID: 14667
-// Function ID: 14668
+// Module ID: 14705
+// Function ID: 14706
 // Name: ConjureWorkingWand
-// Dependencies: [19, 17, 5010, 21, 5090, 671, 575, 8023, 5009, 504, 5249, 14668, 2]
+// Dependencies: [19, 17, 5015, 21, 5095, 671, 575, 8031, 5014, 504, 5254, 14706, 2]
 // Exports: default
 
-// Module 14667 (ConjureWorkingWand)
+// Module 14705 (ConjureWorkingWand)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ function WandPart(color) {
   color = color.color;
   const str = react.useId();
   const replaced = str.replace(/:/g, "");
-  let obj = band(5090);
+  let obj = band(5095);
   const fn = function u() {
     let x;
     const obj = band;
@@ -60,35 +60,35 @@ function WandPart(color) {
   const size1 = { width: size, height: size, viewBox: "0 0 24 24", children: items };
   items = [, ];
   const tmp7 = inlineStylesDefault;
-  items[0] = closure_7(band(8023).Path, { d: path, fill: color });
+  items[0] = closure_7(band(8031).Path, { d: path, fill: color });
   let tmp5Result = null;
   if (null != band) {
     const obj3 = { children: items3 };
     const obj4 = { children: items2 };
-    const Defs = tmp2(8023).Defs;
+    const Defs = tmp2(8031).Defs;
     const _HermesInternal = HermesInternal;
     const obj5 = { id: "" + replaced + "band", x1: "0", y1: "0", x2: "1", y2: "0", children: items1 };
-    const LinearGradient = tmp2(8023).LinearGradient;
+    const LinearGradient = tmp2(8031).LinearGradient;
     const obj6 = { offset: "0", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop = tmp2(8023).Stop;
+    const Stop = tmp2(8031).Stop;
     items1 = [closure_7(Stop, obj6), , ];
     const obj7 = { offset: "0.5", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 1 };
-    const Stop2 = tmp2(8023).Stop;
+    const Stop2 = tmp2(8031).Stop;
     items1[1] = closure_7(Stop2, obj7);
     const obj8 = { offset: "1", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop3 = tmp2(8023).Stop;
+    const Stop3 = tmp2(8031).Stop;
     items1[2] = closure_7(Stop3, obj8);
     items2 = [closure_8(LinearGradient, obj5), ];
     const size2 = { id: "" + replaced + "mask", maskUnits: "userSpaceOnUse", x: 0, y: 0, width: 24, height: 24, children: closure_7(closure_15, size3) };
     const _HermesInternal2 = HermesInternal;
-    const Mask = tmp2(8023).Mask;
+    const Mask = tmp2(8031).Mask;
     size3 = { animatedProps, y: 0, width: 19.200000000000003, height: 24, fill: "url(#" + replaced + "band)" };
     const _HermesInternal3 = HermesInternal;
     items2[1] = closure_7(Mask, size2);
     items3 = [closure_8(Defs, obj4), ];
     const _HermesInternal4 = HermesInternal;
     const obj9 = { d: path, fill, mask: "url(#" + replaced + "mask)" };
-    const Path = tmp2(8023).Path;
+    const Path = tmp2(8031).Path;
     items3[1] = closure_7(Path, obj9);
     tmp5Result = tmp5(closure_9, obj3);
   }

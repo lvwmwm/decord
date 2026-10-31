@@ -1,18 +1,18 @@
-// Module ID: 8522
-// Function ID: 8523
+// Module ID: 8530
+// Function ID: 8531
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8523, 7627, 7623, 1386, 1072, 1376, 572, 1253, 1283, 8524, 1243, 5039, 4842, 4839, 2]
+// Dependencies: [5, 8531, 7634, 7630, 1385, 1072, 1375, 572, 1252, 1282, 8532, 1242, 5044, 4847, 4844, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8522 (UserOfferActionCreators)
+// Module 8530 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8523 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7627 */;
-import UserOfferStore from "UserOfferStore" /* 7623 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8531 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7634 */;
+import UserOfferStore from "UserOfferStore" /* 7630 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "color", paymentGatewayOverride: "Error" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "flexDirection" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -422,7 +422,7 @@ export function triggerUserOffer(triggerType, trigger_location_stack, fn) {
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1283).HTTP;
+    const HTTP = tmp7(1282).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

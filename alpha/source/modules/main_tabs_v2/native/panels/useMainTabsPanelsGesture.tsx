@@ -1,18 +1,18 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18043
+// Function ID: 18044
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 11501, 1376, 18001, 11502, 1626, 1492, 5090, 5249, 5252, 5632, 18002, 5298, 2]
+// Dependencies: [19, 11535, 1375, 18044, 11536, 1625, 1491, 5095, 5254, 5257, 5637, 18045, 5303, 2]
 // Exports: default
 
-// Module 18000 (useMainTabsPanelsGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11501 */;
+// Module 18043 (useMainTabsPanelsGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11535 */;
 import react from "react" /* 19 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
-import PanelsConfig from "PanelsConfig" /* 18001 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import PanelsConfig from "PanelsConfig" /* 18044 */;
 import size from "module_2" /* 2 */;
 
 let __initData, __initData5, set;
@@ -361,6 +361,6 @@ export default function useMainTabsPanelsGesture(canDrag) {
     return onChangeResult.onFinalize(fn5);
   }, items3);
   const items4 = [memo, sharedValue2, sharedValue3, sharedValue];
-  let obj2 = { gesture: memo, panelGestureContext: onPreMovement.useMemo(() => ({ gesture: memo, disallowGesture: sharedValue2, edgeSwipeOnly: sharedValue3, translateX: sharedValue }), items4), isDragging: sharedValue1, translateX: sharedValue, movePanel: callback1, maxWidth: openWidth, isDraggingRef: ref };
+  let obj2 = { gesture: memo, panelGestureContext: onPreMovement.useMemo(() => ({ gesture: memo, disallowGesture: sharedValue2, edgeSwipeOnly: sharedValue3, translateX: sharedValue, isInMainTabs: true }), items4), isDragging: sharedValue1, translateX: sharedValue, movePanel: callback1, maxWidth: openWidth, isDraggingRef: ref };
   return obj2;
 };

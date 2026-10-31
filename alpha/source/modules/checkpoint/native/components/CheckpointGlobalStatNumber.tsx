@@ -1,18 +1,18 @@
-// Module ID: 13599
-// Function ID: 13600
+// Module ID: 13636
+// Function ID: 13637
 // Name: CheckpointGlobalStatNumber
-// Dependencies: [17, 21, 5009, 575, 13590, 13600, 1114, 13591, 2]
+// Dependencies: [17, 21, 5014, 575, 13627, 13637, 1113, 13628, 2]
 // Exports: default
 
-// Module 13599 (CheckpointGlobalStatNumber)
+// Module 13636 (CheckpointGlobalStatNumber)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl from "intl" /* 1114 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 13590 */;
-import CheckpointGlobeAnimationDefault from "CheckpointGlobeAnimation" /* 13591 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13600 */;
+import intl from "intl" /* 1113 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 13627 */;
+import CheckpointGlobeAnimationDefault from "CheckpointGlobeAnimation" /* 13628 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13637 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStatNumberDefault = CheckpointStatNumber;

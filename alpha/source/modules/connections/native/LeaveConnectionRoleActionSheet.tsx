@@ -1,18 +1,18 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11600
+// Function ID: 11601
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 5009, 5267, 5619, 1114, 5629, 2]
+// Dependencies: [19, 17, 21, 5014, 5272, 5624, 1113, 5634, 2]
 // Exports: default
 
-// Module 11564 (LeaveConnectionRoleActionSheet)
+// Module 11600 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
-import intl4 from "intl" /* 1114 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
+import intl4 from "intl" /* 1113 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;

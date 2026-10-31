@@ -1,13 +1,13 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13717
+// Function ID: 13718
 // Name: useTypingText
-// Dependencies: [32, 1384, 504, 6036, 1114, 2]
+// Dependencies: [32, 1383, 504, 6041, 1113, 2]
 // Exports: default
 
-// Module 13682 (useTypingText)
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
+// Module 13717 (useTypingText)
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/chat/useTypingText.tsx");

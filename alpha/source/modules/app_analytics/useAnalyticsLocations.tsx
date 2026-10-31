@@ -1,13 +1,13 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 7326
+// Function ID: 7327
 // Name: useAnalyticsLocations
-// Dependencies: [32, 19, 21, 12, 1343, 2]
+// Dependencies: [32, 19, 21, 12, 1342, 2]
 // Exports: AnalyticsLocationProvider, default, useLocationStackFromLocationContext
 
-// Module 7320 (useAnalyticsLocations)
+// Module 7326 (useAnalyticsLocations)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import _modDef1343 from "module_1343" /* 1343 */;
+import _modDef1342 from "module_1342" /* 1342 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ export default function useAnalyticsLocations() {
   const items3 = [items, first];
   const effect = context.useEffect(() => {
     const tmp = items;
-    if (!_modDef1343(items, first)) {
+    if (!_modDef1342(items, first)) {
       closure_2(tmp);
     }
   }, items3);

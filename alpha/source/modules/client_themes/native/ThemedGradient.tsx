@@ -1,29 +1,29 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10736
+// Function ID: 10737
 // Name: ThemedGradient
-// Dependencies: [19, 17, 5033, 21, 5009, 5016, 5007, 5187, 5006, 1492, 5582, 5248, 575, 5190, 671, 1243, 563, 5192, 5247, 1242, 2]
+// Dependencies: [19, 17, 5038, 21, 5014, 5021, 5012, 5192, 5011, 1491, 5587, 5253, 575, 5195, 671, 1242, 563, 5197, 5252, 1241, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 10716 (ThemedGradient)
+// Module 10736 (ThemedGradient)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import ColorUtils from "ColorUtils" /* 5006 */;
-import utils_ColorDefault from "utils/Color" /* 5007 */;
-import shared from "shared" /* 5016 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5187 */;
-import GuildThemePresets from "GuildThemePresets" /* 5190 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5192 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5247 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import utils_ColorDefault from "utils/Color" /* 5012 */;
+import shared from "shared" /* 5021 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5192 */;
+import GuildThemePresets from "GuildThemePresets" /* 5195 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5197 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5252 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5033 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -288,8 +288,8 @@ function CustomThemesGradient(arg0) {
   mixAmount = undefined;
   mixColorOverride = undefined;
   theme = undefined;
-  ({ width, height } = reduced(1492)());
-  const tmp4 = reduced(1492)();
+  ({ width, height } = reduced(1491)());
+  const tmp4 = reduced(1491)();
   if (mixAmount === undefined) {
     mixAmount = {};
   }
@@ -413,7 +413,7 @@ function CustomThemesGradient(arg0) {
   if (reduced.length >= 2) {
     let obj = { colors: reduced, locations: mapped1, start: point, end: point1, style: items2 };
     const tmp10 = closure_6;
-    const tmp2Result = tmp2(5582);
+    const tmp2Result = tmp2(5587);
     if (wide) {
       let obj2 = { width };
       wide = obj2;
@@ -459,7 +459,7 @@ function ActiveGuildThemeGradient(arg0) {
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(5190).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(5195).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return tmp9(tmp10, obj2);
   } else {

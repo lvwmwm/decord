@@ -1,23 +1,23 @@
-// Module ID: 9176
-// Function ID: 9177
+// Module ID: 9195
+// Function ID: 9196
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 5009, 5635, 575, 5636, 5090, 5632, 5633, 5712, 5638, 8021, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 5640, 575, 5641, 5095, 5637, 5638, 5717, 5643, 8029, 5624, 2]
 // Exports: ImageButton
 
-// Module 9176 (ImageButton)
+// Module 9195 (ImageButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
-import ButtonConstants from "ButtonConstants" /* 5635 */;
+import spring from "spring" /* 5637 */;
+import ButtonConstants from "ButtonConstants" /* 5640 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const springPresets = tmp(5633);
+const springPresets = tmp(5638);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
@@ -25,9 +25,9 @@ let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
   let rect;
   let MEDIUM_BUTTON_PADDING = ButtonConstants.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5635).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5640).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5635).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5640).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
   const tmpResult = ButtonConstants;

@@ -1,19 +1,19 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 12782
+// Function ID: 12783
 // Name: AIShimmer
-// Dependencies: [32, 19, 17, 21, 5009, 12748, 5075, 5619, 12749, 5090, 12750, 12751, 12064, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 12783, 5080, 5624, 12784, 5095, 12785, 12786, 12102, 2]
 
-// Module 12747 (AIShimmer)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 12748 */;
-import waveTransition2 from "waveTransition" /* 12749 */;
-import createWaveTransition2 from "createWaveTransition" /* 12751 */;
+// Module 12782 (AIShimmer)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 12783 */;
+import waveTransition2 from "waveTransition" /* 12784 */;
+import createWaveTransition2 from "createWaveTransition" /* 12786 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -211,13 +211,13 @@ function ShimmerLayers(pass) {
     obj3 = pass(dependencyMap[8]);
     return obj2;
   };
-  const obj5 = pass(5090);
-  fn.__closure = { animationProgress: animationProgress2, bandEdgesAt: pass(12749).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12749).glyphLayerOpacityAt, easeTail: pass(12749).easeTail };
+  const obj5 = pass(5095);
+  fn.__closure = { animationProgress: animationProgress2, bandEdgesAt: pass(12784).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12784).glyphLayerOpacityAt, easeTail: pass(12784).easeTail };
   fn.__workletHash = 5565898978148;
   fn.__initData = __initData9;
-  ({ animationProgress: animationProgress2, bandEdgesAt: pass(12749).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12749).glyphLayerOpacityAt, easeTail: pass(12749).easeTail });
+  ({ animationProgress: animationProgress2, bandEdgesAt: pass(12784).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12784).glyphLayerOpacityAt, easeTail: pass(12784).easeTail });
   const derivedValue = obj5.useDerivedValue(fn);
-  const obj7 = pass(5090);
+  const obj7 = pass(5095);
   class T {
     constructor() {
       const obj = { opacity: crossFadeOpacity2.get() };
@@ -240,7 +240,7 @@ function ShimmerLayers(pass) {
   fn2.__closure = { bandState: derivedValue };
   fn2.__workletHash = 1697100745255;
   fn2.__initData = __initData11;
-  const obj8 = pass(5090);
+  const obj8 = pass(5095);
   const animatedStyle1 = obj8.useAnimatedStyle(fn2);
   const fn3 = function y() {
     let items;
@@ -254,7 +254,7 @@ function ShimmerLayers(pass) {
   fn3.__closure = { bandState: derivedValue, clippingWindowWidth: clippingWindowWidth2 };
   fn3.__workletHash = 14480924886008;
   fn3.__initData = __initData12;
-  const obj9 = pass(5090);
+  const obj9 = pass(5095);
   const animatedStyle2 = obj9.useAnimatedStyle(fn3);
   const fn4 = function _() {
     let items;
@@ -267,7 +267,7 @@ function ShimmerLayers(pass) {
   fn4.__workletHash = 9956205645387;
   fn4.__initData = __initData13;
   let items = [pass.slotA];
-  const obj10 = pass(5090);
+  const obj10 = pass(5095);
   const animatedStyle3 = obj10.useAnimatedStyle(fn4);
   const items1 = [pass.slotB];
   const memo = react.useMemo(() => {

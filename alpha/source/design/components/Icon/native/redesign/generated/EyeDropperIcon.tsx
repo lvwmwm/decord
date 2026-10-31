@@ -1,14 +1,14 @@
-// Module ID: 17273
-// Function ID: 17274
+// Module ID: 17331
+// Function ID: 17332
 // Name: EyeDropperIcon
-// Dependencies: [19, 21, 575, 5711, 17274, 2]
+// Dependencies: [19, 21, 575, 5716, 17332, 2]
 // Exports: EyeDropperIcon
 
-// Module 17273 (EyeDropperIcon)
+// Module 17331 (EyeDropperIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 17274 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 17332 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

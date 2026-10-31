@@ -1,27 +1,27 @@
-// Module ID: 6041
-// Function ID: 6042
+// Module ID: 6046
+// Function ID: 6047
 // Name: ChannelUtils
-// Dependencies: [4862, 4858, 4939, 4941, 4912, 5762, 1072, 1386, 4946, 1084, 1993, 6042, 6043, 1114, 5063, 6044, 11, 2, 6048]
+// Dependencies: [4867, 4863, 4944, 4946, 4917, 5767, 1072, 1385, 4951, 1084, 1992, 6047, 6048, 1113, 5068, 6049, 11, 2, 6053]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 6041 (ChannelUtils)
+// Module 6046 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import intl14 from "intl" /* 1114 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import Server from "Server" /* 1993 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import ChannelListUtils from "ChannelListUtils" /* 6042 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6043 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6044 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6048 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildChannelStore from "GuildChannelStore" /* 4939 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
+import intl14 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import Server from "Server" /* 1992 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import ChannelListUtils from "ChannelListUtils" /* 6047 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6048 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6049 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6053 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

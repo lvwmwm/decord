@@ -1,11 +1,11 @@
-// Module ID: 8346
-// Function ID: 8347
+// Module ID: 8354
+// Function ID: 8355
 // Name: showReportModal
-// Dependencies: [5, 8347, 8348, 6738, 8349, 1995, 2]
+// Dependencies: [5, 8355, 8356, 6744, 8357, 1994, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 8346 (showReportModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+// Module 8354 (showReportModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _showReportModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -107,7 +107,7 @@ let obj = function _showReportModal() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp26) {
           if (0 === c5) {

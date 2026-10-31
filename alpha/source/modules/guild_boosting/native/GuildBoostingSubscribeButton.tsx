@@ -1,18 +1,18 @@
-// Module ID: 7577
-// Function ID: 7578
+// Module ID: 7584
+// Function ID: 7585
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7578, 1072, 6764, 1386, 21, 7579, 6738, 6762, 15420, 1498, 7320, 563, 1392, 14062, 5629, 1114, 8659, 2]
+// Dependencies: [5, 19, 17, 7585, 1072, 6770, 1385, 21, 7586, 6744, 6768, 15459, 1497, 7326, 563, 1391, 14097, 5634, 1113, 8667, 2]
 // Exports: default
 
-// Module 7577 (GuildBoostingSubscribeButton)
+// Module 7584 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6764 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7579 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6770 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7586 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7578 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7585 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c5 = 3;

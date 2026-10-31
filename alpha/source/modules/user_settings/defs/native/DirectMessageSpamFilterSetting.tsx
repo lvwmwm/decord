@@ -1,16 +1,16 @@
-// Module ID: 16685
-// Function ID: 16686
+// Module ID: 16727
+// Function ID: 16728
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 8424, 16686, 4834, 11505, 1114, 16688, 2]
+// Dependencies: [19, 8432, 16728, 4839, 11539, 1113, 16730, 2]
 
-// Module 16685 (DirectMessageSpamFilterSetting)
-import intl3 from "intl" /* 1114 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import ModerationUtils from "ModerationUtils" /* 16686 */;
-import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 16688 */;
+// Module 16727 (DirectMessageSpamFilterSetting)
+import intl3 from "intl" /* 1113 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import ModerationUtils from "ModerationUtils" /* 16728 */;
+import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 16730 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

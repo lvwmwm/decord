@@ -1,10 +1,10 @@
-// Module ID: 5199
-// Function ID: 5200
+// Module ID: 5204
+// Function ID: 5205
 // Name: HomeDrawerExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1448, 2]
 
-// Module 5199 (HomeDrawerExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
+// Module 5204 (HomeDrawerExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,12 +1,12 @@
-// Module ID: 18838
-// Function ID: 18839
+// Module ID: 18884
+// Function ID: 18885
 // Name: SecondsSliderUtils
-// Dependencies: [1114, 2044, 2]
+// Dependencies: [1113, 2042, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 18838 (SecondsSliderUtils)
-import intl7 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
+// Module 18884 (SecondsSliderUtils)
+import intl7 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/SecondsSliderUtils.tsx");
@@ -21,7 +21,7 @@ export function getSecondsSliderLabel(arg0, arg1, intl) {
     intl = intl7.intl;
     stringResult = intl.string(intl7.t.Yl1D84);
   }
-  const obj = _modDef2044;
+  const obj = _modDef2042;
   const time = obj.duration(arg0, "seconds");
   if (time.days() > 0) {
     const intl6 = intl7.intl;

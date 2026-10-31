@@ -1,11 +1,11 @@
-// Module ID: 5666
-// Function ID: 5667
+// Module ID: 5671
+// Function ID: 5672
 // Name: AgeRestrictionUtils
-// Dependencies: [5658, 2]
+// Dependencies: [5663, 2]
 // Exports: compare
 
-// Module 5666 (AgeRestrictionUtils)
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5658 */;
+// Module 5671 (AgeRestrictionUtils)
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5663 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/modules/content_classification/lib/AgeRestrictionUtils.tsx");

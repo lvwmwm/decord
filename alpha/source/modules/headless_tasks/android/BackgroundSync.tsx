@@ -1,15 +1,15 @@
-// Module ID: 20085
-// Function ID: 20086
+// Module ID: 20146
+// Function ID: 20147
 // Name: BackgroundSync
-// Dependencies: [6562, 502, 1994, 3, 4904, 19347, 2]
+// Dependencies: [6568, 502, 1993, 3, 4909, 19404, 2]
 
-// Module 20085 (BackgroundSync)
+// Module 20146 (BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4904 */;
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19347 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4909 */;
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19404 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AppStateStore from "AppStateStore" /* 1994 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
 import size from "module_2" /* 2 */;
 
 let tmp = new LoggerDefault("BackgroundSync");

@@ -1,21 +1,21 @@
-// Module ID: 8955
-// Function ID: 8956
+// Module ID: 8964
+// Function ID: 8965
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 4880, 6849, 4864, 21, 5009, 575, 1114, 7320, 7345, 504, 8956, 8969, 8970, 8957, 1626, 8971, 8972, 9195, 5267, 5270, 9197, 9198, 2]
+// Dependencies: [32, 19, 17, 4885, 6855, 4869, 21, 5014, 575, 1113, 7326, 7351, 504, 8965, 8978, 8979, 8966, 1625, 8980, 8981, 9214, 5272, 5275, 9216, 9217, 2]
 // Exports: default
 
-// Module 8955 (GuildScheduledEventDetailsActionSheet)
+// Module 8964 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8957 */;
+import intl4 from "intl" /* 1113 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8966 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -56,7 +56,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f93383 = () => {
+  const f93627 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -141,9 +141,9 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f93383), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f93627), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[15])(f93383), 2);
+  tmp5(tmp2(tmp3[15])(f93627), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

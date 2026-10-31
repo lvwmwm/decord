@@ -1,19 +1,19 @@
-// Module ID: 15681
-// Function ID: 15682
+// Module ID: 15721
+// Function ID: 15722
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 4858, 15630, 21, 3, 6738, 8923, 504, 7479, 1094, 15682, 2]
+// Dependencies: [5, 32, 19, 4863, 15671, 21, 3, 6744, 8932, 504, 7485, 1093, 15722, 2]
 // Exports: default
 
-// Module 15681 (ShareScreenModal)
+// Module 15721 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelTypes from "ChannelTypes" /* 1094 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15630 */;
+import ChannelTypes from "ChannelTypes" /* 1093 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -63,7 +63,7 @@ export default function ShareScreenModal(text) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -110,7 +110,7 @@ export default function ShareScreenModal(text) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {
@@ -152,7 +152,7 @@ export default function ShareScreenModal(text) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -200,7 +200,7 @@ export default function ShareScreenModal(text) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {

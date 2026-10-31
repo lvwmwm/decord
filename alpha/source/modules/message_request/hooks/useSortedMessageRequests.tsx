@@ -1,14 +1,14 @@
-// Module ID: 18914
-// Function ID: 18915
+// Module ID: 18963
+// Function ID: 18964
 // Name: useSortedMessageRequests
-// Dependencies: [19, 4858, 1384, 6850, 504, 18915, 2]
+// Dependencies: [19, 4863, 1383, 6856, 504, 18964, 2]
 // Exports: default
 
-// Module 18914 (useSortedMessageRequests)
+// Module 18963 (useSortedMessageRequests)
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import UserStore from "UserStore" /* 1384 */;
-import MessageRequestStore from "MessageRequestStore" /* 6850 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
+import MessageRequestStore from "MessageRequestStore" /* 6856 */;
 import size from "module_2" /* 2 */;
 
 let user;

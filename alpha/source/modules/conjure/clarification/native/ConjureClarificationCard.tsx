@@ -1,17 +1,17 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12755
+// Function ID: 12756
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5009, 575, 1114, 3865, 12721, 12722, 12549, 7076, 12442, 5619, 8020, 7048, 12723, 7054, 6968, 6971, 12716, 5629, 12727, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 1113, 3868, 12756, 12757, 12584, 7082, 12477, 5624, 8028, 7054, 12758, 7060, 6974, 6977, 12751, 5634, 12762, 2]
 // Exports: default
 
-// Module 12720 (ConjureClarificationCard)
+// Module 12755 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureClarification from "ConjureClarification" /* 12549 */;
+import ConjureClarification from "ConjureClarification" /* 12584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ export default function ConjureClarificationCard(projectId) {
   let tmp63;
   let tmp64;
   let tmp8;
-  const f102646 = () => {
+  const f102905 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -123,8 +123,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f102646), 2);
-  const tmp9 = _slicedToArray(react.useState(f102646), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f102905), 2);
+  const tmp9 = _slicedToArray(react.useState(f102905), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -164,7 +164,7 @@ export default function ConjureClarificationCard(projectId) {
       const result = obj3.followingClarificationStep(clarification, obj, bound);
       const tmp18 = require;
       if (null == result) {
-        const tmp18Result = tmp18(12549);
+        const tmp18Result = tmp18(12584);
         const result1 = tmp18Result.submitClarificationAnswers(projectId, tmp20, obj, first1, tmp);
       } else {
         closure_13(result);

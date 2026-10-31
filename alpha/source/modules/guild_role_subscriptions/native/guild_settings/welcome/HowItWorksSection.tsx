@@ -1,21 +1,21 @@
-// Module ID: 19823
-// Function ID: 19824
+// Module ID: 19880
+// Function ID: 19881
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5009, 575, 5619, 1114, 19824, 1188, 19828, 19832, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 19881, 1187, 19885, 19889, 2]
 // Exports: default
 
-// Module 19823 (HowItWorksSection)
+// Module 19880 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19824 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19828 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19832 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19881 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19885 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19889 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;

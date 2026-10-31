@@ -1,22 +1,22 @@
-// Module ID: 15071
-// Function ID: 15072
+// Module ID: 15108
+// Function ID: 15109
 // Name: InviteEmbed
-// Dependencies: [5744, 1384, 1072, 7872, 15072, 7871, 15074, 15075, 15076, 15079, 15081, 10094, 10095, 2]
+// Dependencies: [5749, 1383, 1072, 7879, 15109, 7878, 15111, 15112, 15113, 15116, 15118, 10114, 10115, 2]
 // Exports: createInviteEmbed
 
-// Module 15071 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7871 */;
-import Constants2 from "Constants" /* 7872 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10094 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10095 */;
-import GuildInvite from "GuildInvite" /* 15072 */;
-import GroupDMInvite from "GroupDMInvite" /* 15074 */;
-import FriendInvite from "FriendInvite" /* 15075 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15076 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15079 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 15081 */;
-import InviteStore from "InviteStore" /* 5744 */;
-import UserStore from "UserStore" /* 1384 */;
+// Module 15108 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7878 */;
+import Constants2 from "Constants" /* 7879 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10114 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10115 */;
+import GuildInvite from "GuildInvite" /* 15109 */;
+import GroupDMInvite from "GroupDMInvite" /* 15111 */;
+import FriendInvite from "FriendInvite" /* 15112 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15113 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15116 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 15118 */;
+import InviteStore from "InviteStore" /* 5749 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

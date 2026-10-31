@@ -1,16 +1,16 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 18036
+// Function ID: 18037
 // Name: MobileOnboardingFrictionExperiment
-// Dependencies: [17945, 1384, 5767, 1448, 17994, 1623, 11, 2]
+// Dependencies: [17988, 1383, 5772, 1447, 18037, 1622, 11, 2]
 
-// Module 17993 (MobileOnboardingFrictionExperiment)
+// Module 18036 (MobileOnboardingFrictionExperiment)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
-import TimeUtils from "TimeUtils" /* 5767 */;
-import MobileOnboardingFrictionShared from "MobileOnboardingFrictionShared" /* 17994 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17945 */;
-import UserStore from "UserStore" /* 1384 */;
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
+import TimeUtils from "TimeUtils" /* 5772 */;
+import MobileOnboardingFrictionShared from "MobileOnboardingFrictionShared" /* 18037 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17988 */;
+import UserStore from "UserStore" /* 1383 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

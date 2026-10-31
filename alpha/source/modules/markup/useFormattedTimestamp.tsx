@@ -1,12 +1,12 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11058
+// Function ID: 11059
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1090, 2044, 8592, 2]
+// Dependencies: [32, 19, 1089, 2042, 8600, 2]
 // Exports: default
 
-// Module 11039 (useFormattedTimestamp)
-import DurationsDefault from "Durations" /* 1090 */;
-import _modDef2044 from "module_2044" /* 2044 */;
+// Module 11058 (useFormattedTimestamp)
+import DurationsDefault from "Durations" /* 1089 */;
+import _modDef2042 from "module_2042" /* 2042 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -14,6 +14,23 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
+function getTimestampUpdateInterval(parsed, timestamp) {
+  let tmp = timestamp;
+  if (timestamp === undefined) {
+    tmp = _modDef2042();
+  }
+  const absolute = Math.abs(parsed.diff(tmp));
+  const obj = items1[Symbol.iterator]();
+  while (obj !== undefined) {
+    let tmp8 = _slicedToArray(tmp6, 2);
+    if (absolute < 1000 * tmp8[0]) {
+      let result = 1000 * tmp8[1];
+      obj.return();
+      return result;
+    }
+  }
+  return 1000 * closure_6;
+}
 let items = [2 * DurationsDefault.Seconds.MINUTE, DurationsDefault.Seconds.SECOND];
 const items1 = [items, , , ];
 const items2 = [5 * DurationsDefault.Seconds.MINUTE, DurationsDefault.Seconds.MINUTE];
@@ -36,27 +53,14 @@ export default function useFormattedTimestamp(format) {
   const effect = react.useEffect(() => {
     let closure_0;
     if ("R" === format.format) {
-      let result = 1000 * closure_1_6;
-      const _Math = Math;
-      const parsed = tmp.parsed;
-      const absolute = Math.abs(parsed.diff(_modDef2044()));
-      let obj = items1[Symbol.iterator]();
-      while (obj !== undefined) {
-        let tmp14 = _slicedToArray(tmp11, 2);
-        if (absolute < 1000 * tmp14[0]) {
-          result = 1000 * tmp14[1];
-          obj.return();
-          break;
-        }
-        let _setInterval = setInterval;
-        format = setInterval(() => {
-          let TIMESTAMP_FORMATS;
-          const obj = { parsed: closure_0.parsed, formatted: TIMESTAMP_FORMATS.R(closure_0.parsed) };
-          TIMESTAMP_FORMATS = closure_0(dependencyMap[4]).TIMESTAMP_FORMATS;
-          closure_1_1(obj);
-        }, result);
-        return () => clearInterval(closure_0);
-      }
+      const _setInterval = setInterval;
+      format = setInterval(() => {
+        let TIMESTAMP_FORMATS;
+        const obj = { parsed: closure_0.parsed, formatted: TIMESTAMP_FORMATS.R(closure_0.parsed) };
+        TIMESTAMP_FORMATS = closure_0(dependencyMap[4]).TIMESTAMP_FORMATS;
+        closure_1_1(obj);
+      }, getTimestampUpdateInterval(tmp.parsed));
+      return () => clearInterval(closure_0);
     }
   }, items);
   if ("R" === format.format) {
@@ -74,3 +78,4 @@ export default function useFormattedTimestamp(format) {
   }
   return formatted;
 };
+export { getTimestampUpdateInterval };

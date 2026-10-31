@@ -1,20 +1,20 @@
-// Module ID: 8979
-// Function ID: 8980
+// Module ID: 8988
+// Function ID: 8989
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 5009, 8959, 1380, 7142, 7286, 5619, 1114, 7552, 8351, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 8968, 1379, 7148, 7292, 5624, 1113, 7558, 8359, 2]
 // Exports: default
 
-// Module 8979 (EditGuildEventModalNavbar)
+// Module 8988 (EditGuildEventModalNavbar)
 import react_native from "react-native" /* 17 */;
-import intl3 from "intl" /* 1114 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8351 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8959 */;
+import intl3 from "intl" /* 1113 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8359 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -53,17 +53,17 @@ export default function EditGuildEventModalNavbar(screen) {
   const obj2 = { top: true, style: tmp.header, children: items1 };
   const obj3 = { style: tmp.buttonContainer };
   _slicedToArray(items, 2);
-  const SafeAreaPaddingView = tmp2(7286).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7292).SafeAreaPaddingView;
   items1 = [hasOwnProperty(View, obj3), , ];
   const obj4 = { style: items2, variant: typeConsolidationEyebrow.variant, color: "text-default", children: intl.format(intl3.t["42HaFY"], { step: tmp7, total: tmp8 }) };
   items2 = [tmp.headerTitle, typeConsolidationEyebrow.style];
-  const Text = tmp2(5619).Text;
-  intl = tmp2(1114).intl;
+  const Text = tmp2(5624).Text;
+  intl = tmp2(1113).intl;
   items1[1] = hasOwnProperty(Text, obj4);
   const obj5 = { style: tmp.buttonContainer, children: hasOwnProperty(HeaderActionButton, obj6) };
   obj6 = { accessibilityLabel: intl2.string(intl3.t.cpT0Cq), onPress: onClose, source: AssetRegistryDefault, style: tmp.rightButton };
-  HeaderActionButton = tmp2(7552).HeaderActionButton;
-  intl2 = tmp2(1114).intl;
+  HeaderActionButton = tmp2(7558).HeaderActionButton;
+  intl2 = tmp2(1113).intl;
   items1[2] = hasOwnProperty(View, obj5);
   return metroRequire(SafeAreaPaddingView, obj2);
 };

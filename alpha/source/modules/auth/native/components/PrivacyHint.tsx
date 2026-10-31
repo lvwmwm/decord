@@ -1,21 +1,21 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 18014
+// Function ID: 18015
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6735, 17933, 1072, 21, 5009, 5619, 1114, 5077, 6983, 8169, 17972, 2]
+// Dependencies: [19, 17, 6741, 17976, 1072, 21, 5014, 5624, 1113, 5082, 6989, 8177, 18015, 2]
 // Exports: default
 
-// Module 17971 (PrivacyHint)
+// Module 18014 (PrivacyHint)
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import react_native from "react-native" /* 5077 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6735 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17933 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 17972 */;
+import intl3 from "intl" /* 1113 */;
+import react_native from "react-native" /* 5082 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6741 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17976 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 18015 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,22 +49,22 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: consent });
   const obj2 = { style: asCheckbox ? tmp.checkbox : tmp.radio, accessibilityState: checkboxA11yNative.accessibilityState, accessibilityRole: checkboxA11yNative.accessibilityRole, accessibilityLabel: intl.string(intl3.t.Y7Kgvf), onPress: onToggleConsent, hitSlop: { top: 11, bottom: 11, left: 11 }, children: items };
-  intl = tmp2(1114).intl;
+  intl = tmp2(1113).intl;
   const tmp5 = React4;
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(6983).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(6989).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8169).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8177).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(5619).Text;
-  intl2 = tmp2(1114).intl;
+  const Text = tmp2(5624).Text;
+  intl2 = tmp2(1113).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);
   return tmp5(tmp6, obj2);

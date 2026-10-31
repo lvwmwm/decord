@@ -1,16 +1,16 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11244
+// Function ID: 11245
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [5090, 1626, 11221, 11208, 1639, 1495, 2]
+// Dependencies: [5095, 1625, 11245, 11227, 1638, 1494, 2]
 // Exports: default
 
-// Module 11220 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1495 */;
-import AppEntryKey from "AppEntryKey" /* 1639 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11208 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 11221 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1626 */;
+// Module 11244 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
+import AppEntryKey from "AppEntryKey" /* 1638 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 11245 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1625 */;
 import size from "module_2" /* 2 */;
 
 let makeMutable;

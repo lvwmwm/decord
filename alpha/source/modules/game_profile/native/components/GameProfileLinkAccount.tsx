@@ -1,21 +1,21 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9436
+// Function ID: 9437
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2040, 1384, 21, 5009, 575, 7106, 9415, 9416, 7321, 504, 9320, 1114, 5712, 1188, 5619, 5629, 9418, 2]
+// Dependencies: [19, 17, 2038, 1383, 21, 5014, 575, 7112, 9437, 9438, 7327, 504, 9340, 1113, 5717, 1187, 5624, 5634, 9440, 2]
 // Exports: default
 
-// Module 9414 (GameProfileLinkAccount)
+// Module 9436 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7106 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
-import GameProfileSection from "GameProfileSection" /* 9415 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9416 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import GameProfileSection from "GameProfileSection" /* 9437 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9438 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import UserStore from "UserStore" /* 1384 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -105,7 +105,7 @@ let closure_11 = react.memo(function GameProfileLinkAccountSkeleton() {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(9416), obj13);
+    tmp5Result = tmp5(tmp2(9438), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };

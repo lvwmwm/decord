@@ -1,22 +1,22 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 17091
+// Function ID: 17092
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 17001, 1072, 21, 5009, 575, 17034, 14653, 7855, 17002, 8833, 5090, 5632, 1626, 7235, 17035, 7286, 17038, 17063, 9658, 9661, 14647, 6778, 11447, 2]
+// Dependencies: [32, 19, 17, 17059, 1072, 21, 5014, 575, 17092, 14691, 7862, 17060, 8841, 5095, 5637, 1625, 7241, 17093, 7292, 17096, 17121, 9678, 9681, 14685, 6784, 11481, 2]
 
-// Module 17033 (VideoQuestModal)
+// Module 17091 (VideoQuestModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import AnalyticsActions from "AnalyticsActions" /* 7855 */;
-import QuestUtils from "QuestUtils" /* 9658 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 14653 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import QuestUtils from "QuestUtils" /* 9678 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 14691 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;

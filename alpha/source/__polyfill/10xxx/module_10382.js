@@ -1,245 +1,133 @@
 // Module ID: 10382
 // Function ID: 10383
-// Dependencies: [41, 42, 93, 95, 98, 10377, 10312, 10314]
+// Dependencies: [10323, 10330, 10332, 10383, 10384, 10356, 10385, 10386, 10387, 10388, 10390, 10391, 10392, 10393, 10394, 10363]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10382
-import Meridiem from "Meridiem" /* 10312 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10314 */;
-import NUMBER from "NUMBER" /* 10377 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10356 from "module_10356" /* 10356 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10363 */;
+import _mod10383 from "module_10383" /* 10383 */;
+import _mod10384 from "module_10384" /* 10384 */;
+import _mod10385 from "module_10385" /* 10385 */;
+import _mod10386 from "module_10386" /* 10386 */;
+import _mod10387 from "module_10387" /* 10387 */;
+import _mod10388 from "module_10388" /* 10388 */;
+import _mod10390 from "module_10390" /* 10390 */;
+import _mod10391 from "module_10391" /* 10391 */;
+import _mod10392 from "module_10392" /* 10392 */;
+import _mod10393 from "module_10393" /* 10393 */;
+import _mod10394 from "module_10394" /* 10394 */;
+import { Chrono } from "module_10323" /* 10323 */;
 
-let obj;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10356.default(flag2), , , , , , ];
+  new module_10356.default(flag2);
+  items[1] = new module_10391.default();
+  new module_10391.default();
+  items[2] = new module_10385.default();
+  new module_10385.default();
+  items[3] = new module_10390.default();
+  new module_10390.default();
+  items[4] = new module_10392.default();
+  new module_10392.default();
+  items[5] = new module_10393.default();
+  new module_10393.default();
+  items[6] = new module_10388.default();
+  new module_10388.default();
+  items1 = [new module_10386.default(), ];
+  new module_10386.default();
+  items1[1] = new module_10387.default();
+  new module_10387.default();
+  return includeCommonConfiguration(obj, flag);
 }
-function createTimeComponents(createParsingComponents, arg1, arg2, arg3, arg4) {
-  const parsingComponents = createParsingComponents.createParsingComponents();
-  let parsed = parseInt(NUMBER.toHankaku(arg1));
-  if (isNaN(parsed)) {
-    parsed = tmp(10377).jaStringToNumber(arg1);
-  }
-  if (parsed > 24) {
-    return null;
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
   } else {
-    const tmp18 = arg2;
-    if (tmp18) {
-      let num = 30;
-      if ("\u534A" !== arg2) {
-        const _parseInt = parseInt;
-        const parsed1 = parseInt(tmp(10377).toHankaku(arg2));
-        const _isNaN = isNaN;
-        num = parsed1;
-        if (isNaN(parsed1)) {
-          num = tmp(10377).jaStringToNumber(arg2);
-        }
-      }
-      if (num >= 60) {
-        return null;
-      } else {
-        parsingComponents.assign("minute", num);
-      }
-    }
-    const tmp5 = arg3;
-    if (tmp5) {
-      const _parseInt2 = parseInt;
-      let parsed2 = parseInt(tmp(10377).toHankaku(arg3));
-      const _isNaN2 = isNaN;
-      if (isNaN(parsed2)) {
-        parsed2 = tmp(10377).jaStringToNumber(arg3);
-      }
-      if (parsed2 >= 60) {
-        return null;
-      } else {
-        parsingComponents.assign("second", parsed2);
-      }
-    }
-    let num5 = -1;
-    let num6 = parsed;
-    if (arg4) {
-      if (parsed > 12) {
-        return null;
-      } else {
-        if ("\u5348\u524D" !== arg4) {
-          const str2 = arg4[0];
-          if ("a" !== str2.toLowerCase()) {
-            let tmp8 = "\u5348\u5F8C" !== arg4;
-            if (tmp8) {
-              const str5 = arg4[0];
-              tmp8 = "p" !== str5.toLowerCase();
-            }
-            num5 = -1;
-            num6 = parsed;
-            if (!tmp8) {
-              let sum = parsed;
-              const PM = tmp(10312).Meridiem.PM;
-              if (12 != parsed) {
-                sum = parsed + 12;
-              }
-              num6 = sum;
-              num5 = PM;
-            }
-          }
-        }
-        const AM = tmp(10312).Meridiem.AM;
-        num5 = AM;
-        num6 = parsed;
-        if (12 === parsed) {
-          num6 = 0;
-          num5 = AM;
-        }
-      }
-    }
-    parsingComponents.assign("hour", num6);
-    if (num5 >= 0) {
-      parsingComponents.assign("meridiem", num5);
-    } else if (num6 < 12) {
-      parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-    } else {
-      parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-    }
-    return parsingComponents;
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10383.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10384.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10394.default();
+  unshift3(_default2);
+  return tmp;
 }
-const keys = Object.keys(NUMBER.NUMBER);
-const text = `(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj.join("")}`;
-const keys1 = Object.keys(NUMBER.NUMBER);
-const text1 = `${`(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj.join("")}`}]+)(?:\\s*)(?:時(?!間)|:|：)(?:\\s*)([0-9０-９]+|半|[${obj2.join("")}`;
-const keys2 = Object.keys(NUMBER.NUMBER);
-const regExp = new RegExp(text1 + "]+)?(?:\\s*)(?:\u5206|:|\uFF1A)?(?:\\s*)([0-9\uFF10-\uFF19]+|[" + keys2.join("") + "]+)?(?:\\s*)(?:\u79D2)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i");
-const keys3 = Object.keys(NUMBER.NUMBER);
-const text2 = `(?:^\\s*(?:から|\\-|\\–|\\－|\\~|\\〜)\\s*)(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj4.join("")}`;
-const keys4 = Object.keys(NUMBER.NUMBER);
-const text3 = `${`(?:^\\s*(?:から|\\-|\\–|\\－|\\~|\\〜)\\s*)(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[${obj4.join("")}`}]+)(?:\\s*)(?:時|:|：)(?:\\s*)([0-9０-９]+|半|[${obj5.join("")}`;
-const keys5 = Object.keys(NUMBER.NUMBER);
-const regExp1 = new RegExp(text3 + "]+)?(?:\\s*)(?:\u5206|:|\uFF1A)?(?:\\s*)([0-9\uFF10-\uFF19]+|[" + keys5.join("") + "]+)?(?:\\s*)(?:\u79D2)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i");
-class JPTimeExpressionParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, JPTimeExpressionParser);
-    const obj = _getPrototypeOf(JPTimeExpressionParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(JPTimeExpressionParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      let end2;
-      let end4;
-      let end5;
-      let end8;
-      let end9;
-      let start2;
-      let tmp7;
-      if (index.index > 0) {
-        const str = createParsingResult.text[index.index - 1];
-        if (str.match(/\w/)) {
-          return null;
-        }
-      }
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      let tmp6 = index[1];
-      const tmp3 = index[2];
-      const tmp4 = index[3];
-      const tmp5 = index[4];
-      if (null === tmp6) {
-        tmp6 = index[5];
-      }
-      parsingResult.start = createTimeComponents(createParsingResult, tmp3, tmp4, tmp5, tmp6);
-      if (parsingResult.start) {
-        const str2 = createParsingResult.text;
-        const match = regExp1.exec(str2.substring(parsingResult.index + parsingResult.text.length));
-        let tmp10 = parsingResult;
-        if (match) {
-          parsingResult.text = parsingResult.text + match[0];
-          const tmp14 = match[1] ?? match[5];
-          parsingResult.end = createTimeComponents(createParsingResult, match[2], match[3], match[4], tmp14);
-          let tmp20 = null;
-          if (parsingResult.end) {
-            const end = parsingResult.end;
-            let isCertainResult1 = !end.isCertain("meridiem");
-            end.isCertain("meridiem");
-            if (isCertainResult1) {
-              const start = parsingResult.start;
-              isCertainResult1 = start.isCertain("meridiem");
-            }
-            if (isCertainResult1) {
-              ({ end: end2, start: start2 } = parsingResult);
-              end2.imply("meridiem", start2.get("meridiem"));
-              const start3 = parsingResult.start;
-              const value = start3.get("meridiem");
-              const tmp25 = require;
-              if (value === Meridiem.Meridiem.PM) {
-                const start5 = parsingResult.start;
-                const end10 = parsingResult.end;
-                const diff = start5.get("hour") - 12;
-                if (diff > end10.get("hour")) {
-                  const end6 = parsingResult.end;
-                  end6.imply("meridiem", tmp25(10312).Meridiem.AM);
-                } else {
-                  const end3 = parsingResult.end;
-                  if (end3.get("hour") < 12) {
-                    ({ end: end4, end: end5 } = parsingResult);
-                    end4.assign("hour", end5.get("hour") + 12);
-                  }
-                }
-              }
-            }
-            const end7 = parsingResult.end;
-            const start4 = parsingResult.start;
-            const dateResult = end7.date();
-            const time = dateResult.getTime();
-            tmp20 = parsingResult;
-            const dateResult1 = start4.date();
-            if (time < dateResult1.getTime()) {
-              ({ end: end8, end: end9 } = parsingResult);
-              end8.imply("day", end9.get("day") + 1);
-              tmp20 = parsingResult;
-            }
-          }
-          tmp10 = tmp20;
-        }
-        tmp7 = tmp10;
-      } else {
-        index.index = index.index + index[0].length;
-        tmp7 = null;
-      }
-      return tmp7;
-    }
-  }
-];
+const module_10383 = fn(_mod10383);
+const module_10384 = fn(_mod10384);
+const module_10356 = fn(_mod10356);
+const module_10385 = fn(_mod10385);
+const module_10386 = fn(_mod10386);
+const module_10387 = fn(_mod10387);
+const module_10388 = fn(_mod10388);
+const module_10390 = fn(_mod10390);
+const module_10391 = fn(_mod10391);
+const module_10392 = fn(_mod10392);
+const module_10393 = fn(_mod10393);
+const module_10394 = fn(_mod10394);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10383.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_10384.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_10394.default();
+unshift3(_default2);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10323").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10323").Chrono;
 
-export default _createClass(JPTimeExpressionParser, items);
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

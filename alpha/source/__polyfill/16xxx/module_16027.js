@@ -1,238 +1,144 @@
 // Module ID: 16027
 // Function ID: 16028
-// Dependencies: [16028, 1160, 16029]
-// Exports: findBestMatch, invariant
+// Dependencies: [1159, 16028, 16029, 16030, 16036, 16038, 16039, 16040, 16041, 16042, 16043, 16044, 16045, 16046, 16047, 16048, 16053, 16054, 16057, 16058, 16060, 16062, 16063, 16049, 16050, 16064, 16059, 16061, 16080, 16079, 16052, 16051, 16081, 16082, 16033, 16031, 16083, 16084, 16085, 16086, 16087, 16088, 16089, 16035, 16090]
 
 // Module 16027
-import _mod1160 from "module_1160" /* 1160 */;
-import data from "data" /* 16028 */;
-import regions from "regions" /* 16029 */;
+import CanonicalizeLocaleList from "CanonicalizeLocaleList" /* 16028 */;
+import CanonicalizeTimeZoneName from "CanonicalizeTimeZoneName" /* 16029 */;
+import CoerceOptionsToObject from "CoerceOptionsToObject" /* 16030 */;
+import _mod16031 from "module_16031" /* 16031 */;
+import GetNumberOption from "GetNumberOption" /* 16036 */;
+import GetOption from "GetOption" /* 16038 */;
+import GetOptionsObject from "GetOptionsObject" /* 16039 */;
+import GetStringOrBooleanOption from "GetStringOrBooleanOption" /* 16040 */;
+import SANCTIONED_UNITS from "SANCTIONED_UNITS" /* 16041 */;
+import IsValidTimeZoneName from "IsValidTimeZoneName" /* 16042 */;
+import IsWellFormedCurrencyCode from "IsWellFormedCurrencyCode" /* 16043 */;
+import IsWellFormedUnitIdentifier from "IsWellFormedUnitIdentifier" /* 16044 */;
+import ApplyUnsignedRoundingMode from "ApplyUnsignedRoundingMode" /* 16045 */;
+import CollapseNumberRange from "CollapseNumberRange" /* 16046 */;
+import ComputeExponent from "ComputeExponent" /* 16047 */;
+import ComputeExponentForMagnitude from "ComputeExponentForMagnitude" /* 16048 */;
+import FormatNumericToString from "FormatNumericToString" /* 16049 */;
+import GetUnsignedRoundingMode from "GetUnsignedRoundingMode" /* 16050 */;
+import ToRawPrecision from "ToRawPrecision" /* 16051 */;
+import ToRawFixed from "ToRawFixed" /* 16052 */;
+import CurrencyDigits from "CurrencyDigits" /* 16053 */;
+import FormatApproximately from "FormatApproximately" /* 16057 */;
+import FormatNumeric from "FormatNumeric" /* 16058 */;
+import PartitionNumberPattern from "PartitionNumberPattern" /* 16059 */;
+import FormatNumericRange from "FormatNumericRange" /* 16060 */;
+import PartitionNumberRangePattern from "PartitionNumberRangePattern" /* 16061 */;
+import FormatNumericRangeToParts from "FormatNumericRangeToParts" /* 16062 */;
+import FormatNumericToParts from "FormatNumericToParts" /* 16063 */;
+import InitializeNumberFormat from "InitializeNumberFormat" /* 16064 */;
+import SetNumberFormatUnitOptions from "SetNumberFormatUnitOptions" /* 16079 */;
+import SetNumberFormatDigitOptions from "SetNumberFormatDigitOptions" /* 16080 */;
+import PartitionPattern from "PartitionPattern" /* 16081 */;
+import SupportedLocales from "SupportedLocales" /* 16082 */;
+import RangePatternType from "RangePatternType" /* 16084 */;
+import _mod16085 from "module_16085" /* 16085 */;
+import _mod16086 from "module_16086" /* 16086 */;
+import _mod16087 from "module_16087" /* 16087 */;
+import _mod16088 from "module_16088" /* 16088 */;
+import _mod16089 from "module_16089" /* 16089 */;
+import module_1159_mod from "module_1159" /* 1159 */;
 
-let obj3;
+const require = globalThis.__r;
 
-function isMatched(region, str, arg2) {
-  let arr;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  const parts = str.split("-");
-  [tmp2, tmp3, arr] = parts;
-  if (arr) {
-    if ("$" === arr[0]) {
-      let arr2;
-      const slice = arr.slice;
-      if ("!" !== arr[1]) {
-        arr2 = arg2[slice(arr, 1)];
-      } else {
-        arr2 = arg2[slice(arr, 2)];
-      }
-      const mapped = arr2.map((item) => {
-        let tmp = regions.regions[item];
-        if (!tmp) {
-          const items = [item];
-          tmp = items;
-        }
-        return tmp;
-      });
-      const reduced = mapped.reduce((acc, item) => {
-        const __spreadArray = _mod1160.__spreadArray;
-        _mod1160;
-        const obj = _mod1160;
-        return __spreadArray(obj.__spreadArray([], acc, true), item, true);
-      }, []);
-      let str4 = region.region;
-      const indexOf = reduced.indexOf;
-      if (!str4) {
-        str4 = "";
-      }
-      tmp4 = indexOf(str4) > -1 === tmp7;
-    }
-    if (tmp4) {
-      const script = region.script;
-      let tmp8 = !script;
-      if (script) {
-        tmp8 = "*" === tmp3 || tmp3 === region.script;
-      }
-      tmp4 = tmp8;
-    }
-    if (tmp4) {
-      const language = region.language;
-      let tmp10 = !language;
-      if (language) {
-        tmp10 = "*" === tmp2 || tmp2 === region.language;
-      }
-      tmp4 = tmp10;
-    }
-    return tmp4;
-  }
-  region = region.region;
-  tmp4 = !region;
-  if (region) {
-    tmp4 = "*" === arr || arr === region.region;
-  }
-}
-function findMatchingDistanceForLSR(arg0, arg1, matches) {
-  let tmp;
-  matches = matches.matches;
-  let num = 0;
-  if (0 < matches.length) {
-    while (true) {
-      tmp = matches[num];
-      let tmp2 = isMatched;
-      let tmp2Result = isMatched(arg0, tmp.desired, matches.matchVariables);
-      if (tmp2Result) {
-        tmp2Result = tmp2(arg1, tmp.supported, matches.matchVariables);
-      }
-      let tmp5 = tmp.oneway || tmp2Result;
-      if (!tmp5) {
-        let tmp6 = tmp2(arg0, tmp.supported, matches.matchVariables) && tmp2(arg1, tmp.desired, matches.matchVariables);
-        tmp2Result = tmp6;
-      }
-      if (tmp2Result) {
-        break;
-      } else {
-        num = num + 1;
-      }
-    }
-    const result = 10 * tmp.distance;
-    const paradigmLocales = matches.paradigmLocales;
-    const items = [, , ];
-    ({ language: arr3[0], script: arr3[1], region: arr3[2] } = arg0);
-    const _Boolean = Boolean;
-    const indexOf = paradigmLocales.indexOf;
-    const found = items.filter(Boolean);
-    const paradigmLocales1 = matches.paradigmLocales;
-    const items1 = [, , ];
-    ({ language: arr5[0], script: arr5[1], region: arr5[2] } = arg1);
-    const _Boolean2 = Boolean;
-    const indexOf2 = paradigmLocales1.indexOf;
-    const tmp10 = indexOf(found.join("-")) > -1;
-    const found1 = items1.filter(Boolean);
-    let diff = result;
-    if (tmp10 !== indexOf2(found1.join("-")) > -1) {
-      diff = result - 1;
-    }
-    return diff;
-  }
-  const error = new Error("No matching distance found");
-  throw error;
-}
-function findMatchingDistance(arg0, matchedSupportedLocale) {
-  let __spreadArray;
-  let __spreadArrayResult;
-  let locale = new Intl.Locale(arg0);
-  const maximizeResult = locale.maximize();
-  const locale1 = new Intl.Locale(matchedSupportedLocale);
-  const maximizeResult1 = locale1.maximize();
-  const obj = { language: maximizeResult.language, script: maximizeResult.script || "", region: maximizeResult.region || "" };
-  const obj2 = { language: maximizeResult1.language, script: maximizeResult1.script || "", region: maximizeResult1.region || "" };
-  let tmp3 = obj3;
-  if (!tmp3) {
-    let first = data.data.supplemental.languageMatching["written-new"][0];
-    let paradigmLocales;
-    if (null !== first) {
-      if (undefined !== first) {
-        paradigmLocales = first.paradigmLocales;
-      }
-    }
-    let parts;
-    if (null !== paradigmLocales) {
-      if (undefined !== paradigmLocales) {
-        let str = paradigmLocales._locales;
-        parts = str.split(" ");
-      }
-    }
-    const prop = tmp4(16028).data.supplemental.languageMatching["written-new"];
-    let substr = prop.slice(1, 5);
-    const prop1 = tmp4(16028).data.supplemental.languageMatching["written-new"];
-    const substr1 = prop1.slice(5);
-    obj3 = {
-      matches: substr1.map((item) => {
-          const first = Object.keys(item)[0];
-          return { supported: first, desired: item[first]._desired, distance: +item[first]._distance, oneway: "true" === item[first].oneway };
-        }, {}),
-      matchVariables: substr.reduce((acc, item) => {
-          const first = Object.keys(item)[0];
-          const str = item[first]._value;
-          const substr = first.slice(1);
-          acc[substr] = str.split("+");
-          return acc;
-        }, {}),
-      paradigmLocales: __spreadArray(__spreadArrayResult, parts.map((item) => {
-          const locale = new Intl.Locale(item.replace(/_/g, "-"));
-          const str = locale.maximize();
-          return str.toString();
-        }), true)
-    };
-    __spreadArray = _mod1160.__spreadArray;
-    _mod1160;
-    const tmp4Result2 = _mod1160;
-    tmp3 = obj3;
-    __spreadArrayResult = tmp4Result2.__spreadArray([], parts, true);
-  }
-  let num3 = 0;
-  if (obj.language !== obj2.language) {
-    const obj4 = { language: maximizeResult.language, script: "", region: "" };
-    const obj5 = { language: maximizeResult1.language, script: "", region: "" };
-    num3 = findMatchingDistanceForLSR(obj4, obj5, tmp3);
-  }
-  let sum = num3;
-  if (obj.script !== obj2.script) {
-    const obj6 = { language: maximizeResult.language, script: obj.script, region: "" };
-    const obj7 = { language: maximizeResult1.language, script: obj2.script, region: "" };
-    sum = num3 + findMatchingDistanceForLSR(obj6, obj7, tmp3);
-  }
-  let sum1 = sum;
-  if (obj.region !== obj2.region) {
-    sum1 = sum + findMatchingDistanceForLSR(obj, obj2, tmp3);
-  }
-  return sum1;
-}
-let c3 = 838;
+let module_1159 = module_1159_mod;
+module_1159.__exportStar(CanonicalizeLocaleList, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(CanonicalizeTimeZoneName, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(CoerceOptionsToObject, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(GetNumberOption, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(GetOption, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(GetOptionsObject, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(GetStringOrBooleanOption, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(SANCTIONED_UNITS, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(IsValidTimeZoneName, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(IsWellFormedCurrencyCode, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(IsWellFormedUnitIdentifier, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(ApplyUnsignedRoundingMode, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(CollapseNumberRange, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(ComputeExponent, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(ComputeExponentForMagnitude, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(CurrencyDigits, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(FormatApproximately, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(FormatNumeric, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(FormatNumericRange, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(FormatNumericRangeToParts, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(FormatNumericToParts, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(FormatNumericToString, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(GetUnsignedRoundingMode, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(InitializeNumberFormat, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(PartitionNumberPattern, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(PartitionNumberRangePattern, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(SetNumberFormatDigitOptions, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(SetNumberFormatUnitOptions, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(ToRawFixed, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(ToRawPrecision, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(PartitionPattern, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(SupportedLocales, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16031, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(RangePatternType, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16085, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16086, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16087, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16088, exports);
+module_1159 = module_1159_mod;
+module_1159.__exportStar(_mod16089, exports);
 
-export function invariant(arg0, arg1, arg2) {
-  let _Error = arg2;
-  if (undefined === arg2) {
-    _Error = Error;
-  }
-  const tmp2 = arg0;
-  if (!tmp2) {
-    const self = this;
-    const self2 = this;
-    const _Error1 = new _Error(arg1);
-    throw _Error1;
-  }
-}
-export { findMatchingDistance };
-export function findBestMatch(arr, arg1, arg2) {
-  let closure_0 = arg1;
-  let tmp = arg2;
-  if (undefined === arg2) {
-    tmp = c3;
-  }
-  let Infinity = Infinity;
-  const obj = { matchedDesiredLocale: "", distances: {} };
-  let item = arr.forEach((item, index) => {
-    closure_0 = item;
-    let closure_1 = index;
-    if (!obj.distances[item]) {
-      obj.distances[item] = {};
-    }
-    item = closure_0.forEach((matchedSupportedLocale) => {
-      const sum = findMatchingDistance(item, matchedSupportedLocale) + 40 * index;
-      obj.distances[item][matchedSupportedLocale] = sum;
-      const tmp = item;
-      if (sum < Infinity) {
-        Infinity = sum;
-        obj.matchedDesiredLocale = tmp;
-        obj.matchedSupportedLocale = matchedSupportedLocale;
-      }
-    });
-  });
-  if (Infinity >= tmp) {
-    obj.matchedDesiredLocale = undefined;
-    obj.matchedSupportedLocale = undefined;
-  }
-  return obj;
-}
-export const UNICODE_EXTENSION_SEQUENCE_REGEX = /-u(?:-[0-9a-z]{2,8})+/gi;
+export const _formatToParts = obj.__importDefault(require("formatToParts")).default;
+export const createDataProperty = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createDataProperty;
+export const defineProperty = require("UNICODE_EXTENSION_SEQUENCE_REGEX").defineProperty;
+export const getInternalSlot = require("UNICODE_EXTENSION_SEQUENCE_REGEX").getInternalSlot;
+export const getMultiInternalSlots = require("UNICODE_EXTENSION_SEQUENCE_REGEX").getMultiInternalSlots;
+export const isLiteralPart = require("UNICODE_EXTENSION_SEQUENCE_REGEX").isLiteralPart;
+export const setInternalSlot = require("UNICODE_EXTENSION_SEQUENCE_REGEX").setInternalSlot;
+export const setMultiInternalSlots = require("UNICODE_EXTENSION_SEQUENCE_REGEX").setMultiInternalSlots;
+export const isMissingLocaleDataError = require("module_16083").isMissingLocaleDataError;
+export const createMemoizedDateTimeFormat = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedDateTimeFormat;
+export const createMemoizedListFormat = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedListFormat;
+export const createMemoizedLocale = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedLocale;
+export const createMemoizedNumberFormat = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedNumberFormat;
+export const createMemoizedPluralRules = require("UNICODE_EXTENSION_SEQUENCE_REGEX").createMemoizedPluralRules;
+export const invariant = require("UNICODE_EXTENSION_SEQUENCE_REGEX").invariant;
+export const ZERO = require("TEN").ZERO;
+export const ToIntlMathematicalValue = require("ToIntlMathematicalValue").ToIntlMathematicalValue;

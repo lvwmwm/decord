@@ -1,12 +1,12 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13707
+// Function ID: 13708
 // Name: ChatTTITracker
-// Dependencies: [21, 13286, 9, 2]
+// Dependencies: [21, 13321, 9, 2]
 // Exports: ChatTTITracker
 
-// Module 13672 (ChatTTITracker)
+// Module 13707 (ChatTTITracker)
 import TTITrackerDefault from "TTITracker" /* 9 */;
-import TTIMeasurementView from "TTIMeasurementView" /* 13286 */;
+import TTIMeasurementView from "TTIMeasurementView" /* 13321 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

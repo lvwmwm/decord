@@ -1,20 +1,20 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18057
+// Function ID: 18058
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6562, 11479, 1072, 21, 5196, 9, 5199, 5193, 5194, 572, 1109, 18015, 5189, 9653, 18016, 5075, 17005, 18017, 18379, 17084, 2]
+// Dependencies: [32, 19, 6568, 11513, 1072, 21, 5201, 9, 5204, 5198, 5199, 572, 1108, 18058, 5194, 9673, 18059, 5080, 17063, 18060, 18422, 17142, 2]
 
-// Module 18014 (guilds/Guilds)
+// Module 18057 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
-import RootNavigationRef from "RootNavigationRef" /* 5194 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5199 */;
-import MainTabsConstants from "MainTabsConstants" /* 11479 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5204 */;
+import MainTabsConstants from "MainTabsConstants" /* 11513 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -37,17 +37,17 @@ const memoResult = react.memo(function GuildsOnly() {
   let tmp12;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  let obj = enabled(18015);
+  let obj = enabled(18058);
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp4 = first;
-  const tmp5 = first(5189)();
-  let obj2 = enabled(9653);
+  const tmp5 = first(5194)();
+  let obj2 = enabled(9673);
   let isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const GuildsRenderExperiment = enabled(18016).GuildsRenderExperiment;
+  const GuildsRenderExperiment = enabled(18059).GuildsRenderExperiment;
   enabled = GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled;
   first = undefined;
   dependencyMap = undefined;
-  const isChatBesideChannelList = first(5196)().isChatBesideChannelList;
+  const isChatBesideChannelList = first(5201)().isChatBesideChannelList;
   [first, dependencyMap] = react.useState(() => {
     const tmp = enabled;
     if (tmp) {
@@ -134,12 +134,12 @@ const memoResult = react.memo(function GuildsOnly() {
   }
   if (!enabled) {
     const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
-    const ThemeContextProvider = tmp(5075).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(17005).QuestDockExternalCoordinationContextProvider;
-    const items1 = [closure_8(tmp4(18017), {}), closure_8(tmp4(18379), {}), ];
+    const ThemeContextProvider = tmp(5080).ThemeContextProvider;
+    QuestDockExternalCoordinationContextProvider = tmp(17063).QuestDockExternalCoordinationContextProvider;
+    const items1 = [closure_8(tmp4(18060), {}), closure_8(tmp4(18422), {}), ];
     tmp12 = closure_9;
     if (isEligibleForQuests) {
-      isEligibleForQuests = tmp11(tmp4(17084), {});
+      isEligibleForQuests = tmp11(tmp4(17142), {});
     }
     obj4 = { children: items1 };
     items1[2] = isEligibleForQuests;

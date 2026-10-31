@@ -1,21 +1,21 @@
-// Module ID: 19887
-// Function ID: 19888
+// Module ID: 19945
+// Function ID: 19946
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [19, 17, 21, 5009, 575, 7286, 5619, 17137, 1114, 1626, 5629, 1498, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7292, 5624, 17195, 1113, 1625, 5634, 1497, 2]
 // Exports: default
 
-// Module 19887 (GuildRoleSubscriptionTierEditStep)
+// Module 19945 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7286 */;
-import FormSeparatorDefault from "FormSeparator" /* 17137 */;
+import intl3 from "intl" /* 1113 */;
+import useNavigation from "useNavigation" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
+import FormSeparatorDefault from "FormSeparator" /* 17195 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -25,6 +25,11 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
 function Header(arg0) {
   let description;
   let items;
@@ -62,7 +67,7 @@ function Footer(arg0) {
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroRequire(tmp5(5629).Button, obj3) };
+  const obj = { style: items, children: metroRequire(tmp5(5634).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };
@@ -70,9 +75,16 @@ function Footer(arg0) {
 }
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { container: obj2, scrollContainer: { flexGrow: 1 }, headerContainer: { position: "relative", paddingTop: 48, paddingBottom: 8, paddingHorizontal: 16, alignItems: "center" }, title: { marginTop: 12, textAlign: "center" }, subtitle: { marginTop: 8, textAlign: "center" }, separator: { marginTop: 24 }, footerContainer: { width: "100%", padding: 16 } };
+let createStyles = createStyles_mod;
+let obj = { container: obj2, scrollContainer: { flexGrow: 1 }, headerContainer: obj3, title: obj4, subtitle: obj5, separator: obj6, footerContainer: obj7 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: "100%" };
-let closure_8 = createStyles.createStyles(obj);
+createStyles = createStyles.createStyles;
+obj3 = { position: "relative", paddingTop: nativeDefault.space.PX_48, paddingBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, alignItems: "center" };
+obj4 = { marginTop: nativeDefault.space.PX_12, textAlign: "center" };
+obj5 = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
+obj6 = { marginTop: nativeDefault.space.PX_24 };
+obj7 = { width: "100%", padding: nativeDefault.space.PX_16 };
+let closure_8 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx");
 
 export default function GuildRoleSubscriptionTierEditStep(scrollable) {

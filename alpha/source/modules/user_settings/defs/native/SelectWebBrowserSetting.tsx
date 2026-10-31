@@ -1,16 +1,16 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 17458
+// Function ID: 17459
 // Name: SelectWebBrowserSetting
-// Dependencies: [8424, 5737, 1114, 1093, 1376, 11505, 2]
+// Dependencies: [8432, 5742, 1113, 1092, 1375, 11539, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 17398 (SelectWebBrowserSetting)
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import intl4 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import BrowserManager from "BrowserManager" /* 5737 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+// Module 17458 (SelectWebBrowserSetting)
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import BrowserManager from "BrowserManager" /* 5742 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 function useWebBrowserSettingOptions() {
@@ -23,14 +23,14 @@ function useWebBrowserSettingOptions() {
   if (obj2.useBrowserManagerSupportsInAppBrowser()) {
     const push = items.push;
     const obj3 = { label: intl.string(intl4.t.YayR6P), value: ConstantsIOS.WebBrowserType.IN_APP };
-    intl = tmp(1114).intl;
+    intl = tmp(1113).intl;
     push(obj3);
   }
   const tmpResult = PlatformUtils;
   if (!tmpResult.isAndroid()) {
     const push2 = items.push;
     const obj4 = { label: intl2.string(intl4.t.kEfv89), value: ConstantsIOS.WebBrowserType.SAFARI };
-    intl2 = tmp(1114).intl;
+    intl2 = tmp(1113).intl;
     push2(obj4);
   }
   if (browserManagerIsChromeInstalled) {
@@ -38,9 +38,9 @@ function useWebBrowserSettingOptions() {
     const push3 = items.push;
     const tmpResult2 = PlatformUtils;
     const isAndroidResult = tmpResult2.isAndroid();
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1113).intl;
     const string = intl3.string;
-    const t = tmp(1114).t;
+    const t = tmp(1113).t;
     if (isAndroidResult) {
       stringResult = string(t.kEfv89);
     } else {

@@ -1,21 +1,21 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14890
+// Function ID: 14891
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6708, 502, 21, 5090, 5629, 5009, 575, 12003, 504, 6711, 5249, 7235, 5712, 5619, 1114, 2]
+// Dependencies: [19, 17, 6714, 502, 21, 5095, 5634, 5014, 575, 12041, 504, 6717, 5254, 7241, 5717, 5624, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 14852 (VoicePanelStreamPreview)
+// Module 14890 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5249 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
+import timing from "timing" /* 5254 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -65,7 +65,7 @@ export function VoicePanelStreamPreview(mode) {
   const tmp = closure_12();
   let tmp2 = stream;
   let guildId;
-  const tmp4 = stream(12003);
+  const tmp4 = stream(12041);
   if (stream != null) {
     guildId = stream.guildId;
   }
@@ -90,7 +90,7 @@ export function VoicePanelStreamPreview(mode) {
     }
     return tmp2;
   }, items1);
-  let obj2 = mode(5090);
+  let obj2 = mode(5095);
   class T {
     constructor() {
       let obj2;
@@ -109,12 +109,12 @@ export function VoicePanelStreamPreview(mode) {
       return obj2;
     }
   }
-  T.__closure = { mode, withTiming: mode(5249).withTiming, OPACITY_TIMING };
+  T.__closure = { mode, withTiming: mode(5254).withTiming, OPACITY_TIMING };
   T.__workletHash = 15496474861955;
   T.__initData = __initData;
   const obj4 = { layout, onPress, style: tmp.roundedCard, disabled: tmp13, accessible: false, children: items2 };
   tmp13 = disabled;
-  ({ mode, withTiming: mode(5249).withTiming, OPACITY_TIMING });
+  ({ mode, withTiming: mode(5254).withTiming, OPACITY_TIMING });
   const animatedStyle = obj2.useAnimatedStyle(T);
   const tmp11 = closure_8;
   const tmp12 = closure_9;
@@ -123,26 +123,26 @@ export function VoicePanelStreamPreview(mode) {
   }
   let tmp14 = null;
   if (null != previewUrl) {
-    const obj5 = { layout, style: tmp.streamPreviewImage, children: closure_7(tmp2(5712), obj6) };
+    const obj5 = { layout, style: tmp.streamPreviewImage, children: closure_7(tmp2(5717), obj6) };
     obj6 = { source: obj7, style: absoluteFill.absoluteFill, resizeMode: "cover" };
     obj7 = { uri: previewUrl };
-    const tmp2Result = tmp2(7235);
+    const tmp2Result = tmp2(7241);
     tmp14 = closure_7(tmp2Result, obj5);
   }
   items2 = [tmp14, ];
   const obj8 = { layout, children: closure_7(tmp2Result4, obj9) };
   obj9 = { style: animatedStyle, children: tmp18Result };
-  const tmp2Result3 = tmp2(7235);
-  tmp2Result4 = tmp2(7235);
+  const tmp2Result3 = tmp2(7241);
+  tmp2Result4 = tmp2(7241);
   if (stateFromStores) {
     const obj10 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj11) };
-    obj11 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(mode(1114).t["ro/HN8"]) };
-    Text = tmp8(5619).Text;
-    intl2 = tmp8(1114).intl;
+    obj11 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(mode(1113).t["ro/HN8"]) };
+    Text = tmp8(5624).Text;
+    intl2 = tmp8(1113).intl;
     tmp18Result = tmp18(closure_4, obj10);
   } else {
-    const obj12 = { layout, disabled, text: intl.string(mode(1114).t["7Xq/nV"]), size: "sm", variant: "primary-overlay", onPress };
-    intl = tmp8(1114).intl;
+    const obj12 = { layout, disabled, text: intl.string(mode(1113).t["7Xq/nV"]), size: "sm", variant: "primary-overlay", onPress };
+    intl = tmp8(1113).intl;
     tmp18Result = tmp18(closure_10, obj12);
   }
   items2[1] = closure_7(tmp2Result3, obj8);

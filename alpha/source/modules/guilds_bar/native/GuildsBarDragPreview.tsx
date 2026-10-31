@@ -1,19 +1,19 @@
-// Module ID: 18376
-// Function ID: 18377
+// Module ID: 18419
+// Function ID: 18420
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6766, 18305, 18302, 21, 5009, 18024, 5090, 5632, 7235, 5075, 5591, 575, 18313, 18334, 4924, 2]
+// Dependencies: [19, 6772, 18348, 18345, 21, 5014, 18067, 5095, 5637, 7241, 5080, 5596, 575, 18356, 18377, 4929, 2]
 
-// Module 18376 (GuildsBarDragPreview)
+// Module 18419 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
-import _slicedToArray from "_slicedToArray" /* 4924 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import SortedGuildStore from "SortedGuildStore" /* 6766 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18302 */;
+import _slicedToArray from "_slicedToArray" /* 4929 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18345 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18305 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18348 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let _Math2, bound, min, minResult, obj1, set, str, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp18, tmp19, tmp20, tmp8;
@@ -150,7 +150,7 @@ function PreviewItem(dragRegion) {
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "__d", expanded: null, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "__d", expanded: "justifyContent", children: items };
         items = [tmp2];
         return element;
       }

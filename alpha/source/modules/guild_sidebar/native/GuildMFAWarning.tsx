@@ -1,23 +1,23 @@
-// Module ID: 18203
-// Function ID: 18204
+// Module ID: 18246
+// Function ID: 18247
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5009, 575, 11028, 2062, 1995, 5704, 6974, 5712, 18204, 5619, 1114, 1188, 2]
+// Dependencies: [5, 19, 1072, 21, 5014, 575, 11047, 2061, 1994, 5709, 6980, 5717, 18247, 5624, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18203 (GuildMFAWarning)
+// Module 18246 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import Pressables from "Pressables" /* 6974 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18204 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import Pressables from "Pressables" /* 6980 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[9]);
           obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         c3 = 3;

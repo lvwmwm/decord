@@ -1,10 +1,10 @@
-// Module ID: 8227
-// Function ID: 8228
+// Module ID: 8235
+// Function ID: 8236
 // Name: AttachmentQualityMetricsExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 
-// Module 8227 (AttachmentQualityMetricsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 8235 (AttachmentQualityMetricsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-attachment-quality-metrics", kind: "user", defaultConfig: { enableQualityMetrics: false, enableOriginDetection: false }, variations: { 0: { enableQualityMetrics: false, enableOriginDetection: false }, 1: { enableQualityMetrics: true, enableOriginDetection: true } } };

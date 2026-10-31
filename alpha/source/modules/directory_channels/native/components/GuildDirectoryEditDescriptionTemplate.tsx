@@ -1,18 +1,18 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13850
+// Function ID: 13851
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 13810, 13803, 21, 5009, 504, 6441, 7247, 1114, 7052, 7055, 5629, 2]
+// Dependencies: [5, 32, 19, 17, 13845, 13838, 21, 5014, 504, 6447, 7253, 1113, 7058, 7061, 5634, 2]
 // Exports: default
 
-// Module 13815 (GuildDirectoryEditDescriptionTemplate)
+// Module 13850 (GuildDirectoryEditDescriptionTemplate)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13810 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13803 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13845 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13838 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
             c3 = 0;
             closure_129_5(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp32) {
           closure_2 = tmp32;

@@ -1,20 +1,20 @@
-// Module ID: 13589
-// Function ID: 13590
+// Module ID: 13626
+// Function ID: 13627
 // Name: CheckpointIntroScreen
-// Dependencies: [17, 13386, 21, 5009, 575, 504, 13585, 13590, 13591, 13587, 1114, 3091, 2]
+// Dependencies: [17, 13421, 21, 5014, 575, 504, 13622, 13627, 13628, 13624, 1113, 3092, 2]
 // Exports: default
 
-// Module 13589 (CheckpointIntroScreen)
+// Module 13626 (CheckpointIntroScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3091 from "module_3091" /* 3091 */;
-import CheckpointStore2 from "CheckpointStore" /* 13386 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13585 */;
-import CheckpointTextDefault from "CheckpointText" /* 13587 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13590 */;
+import _modDef3092 from "module_3092" /* 3092 */;
+import CheckpointStore2 from "CheckpointStore" /* 13421 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13622 */;
+import CheckpointTextDefault from "CheckpointText" /* 13624 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13627 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
@@ -53,23 +53,23 @@ export default function CheckpointIntroScreen() {
   let tmp5Result = !stateFromStores;
   if (tmp5Result) {
     const obj4 = { style: tmp.globe };
-    tmp5Result = tmp5(tmp6(13591), obj4);
+    tmp5Result = tmp5(tmp6(13628), obj4);
   }
   items1[1] = tmp5Result;
   items2 = [metroImportDefault(View, obj3), ];
   const obj5 = { style: tmp.descriptions, children: items3 };
   const tmp6Result = CheckpointTextDefault;
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1113).intl;
   const string = intl.string;
-  const tmp6Result3 = _modDef3091;
+  const tmp6Result3 = _modDef3092;
   items3 = [, ];
   const obj6 = { variant: "heading-lg/medium", children: string(stateFromStores ? tmp6Result3["7YmUVu"] : tmp6Result3["Fyr+NW"]) };
   items3[0] = metroRequire(tmp6Result, obj6);
   let tmp5Result2 = !stateFromStores;
   if (tmp5Result2) {
-    const obj7 = { variant: "heading-lg/medium", children: intl2.string(_modDef3091["2GRr6H"]) };
+    const obj7 = { variant: "heading-lg/medium", children: intl2.string(_modDef3092["2GRr6H"]) };
     const tmp6Result4 = CheckpointTextDefault;
-    intl2 = tmp2(1114).intl;
+    intl2 = tmp2(1113).intl;
     tmp5Result2 = tmp5(tmp6Result4, obj7);
   }
   items3[1] = tmp5Result2;

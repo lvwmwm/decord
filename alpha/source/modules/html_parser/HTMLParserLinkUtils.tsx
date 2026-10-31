@@ -1,15 +1,15 @@
-// Module ID: 9411
-// Function ID: 9412
+// Module ID: 9431
+// Function ID: 9432
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 9385, 6033, 1944, 6032, 9410, 2]
+// Dependencies: [109, 9405, 6038, 1943, 6037, 9430, 2]
 // Exports: addTextLinks
 
-// Module 9411 (HTMLParserLinkUtils)
-import MarkupLinkRuleDefault from "MarkupLinkRule" /* 6032 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9410 */;
+// Module 9431 (HTMLParserLinkUtils)
+import MarkupLinkRuleDefault from "MarkupLinkRule" /* 6037 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9430 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9385 */;
-import module_1944_mod from "module_1944" /* 1944 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9405 */;
+import module_1943_mod from "module_1943" /* 1943 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let module_1944;
+let module_1943;
 let obj2;
 let obj3;
 let unpackModuleId;
@@ -70,7 +70,7 @@ function appendParsedNode(items1, content, bold, target) {
 let closure_3 = ["link"];
 let closure_4 = ["link"];
 ({ ASCII_CONTROL_CHARACTERS: metroRequire, HTTP_URL_SCHEME: metroImportDefault, URL_AT_RUN_END: metroImportAll, URL_CONTINUATION_AT_RUN_START: c9, URL_IN_LABEL: c10, URL_MATCH: unpackModuleId } = HTMLParserConstants);
-let obj = { text: module_1944.defaultRules.text, link: obj2, url: obj3 };
+let obj = { text: module_1943.defaultRules.text, link: obj2, url: obj3 };
 obj2 = {
   match(arg0, arg1, arg2) {
     const str = MarkupLinkRuleDefault;
@@ -78,7 +78,7 @@ obj2 = {
     let tmp4 = null;
     if (null != match) {
       tmp4 = null;
-      const tmpResult = module_1944;
+      const tmpResult = module_1943;
       if (null != getLink(tmpResult.unescapeUrl(match[2]))) {
         tmp4 = match;
       }
@@ -87,7 +87,7 @@ obj2 = {
   },
   parse(content, arg1, arg2) {
     let closure_0;
-    const obj = module_1944;
+    const obj = module_1943;
     const tmp3 = getLink(obj.unescapeUrl(content[2]));
     if (null != tmp3) {
       let parsed;
@@ -113,7 +113,7 @@ obj2 = {
 };
 const MarkupLinkRule = Object.assign(MarkupLinkRuleDefault);
 obj3 = {
-  order: module_1944.defaultRules.url.order,
+  order: module_1943.defaultRules.url.order,
   requiredFirstCharacters: ["h", "H"],
   match(arg0) {
     const match = unpackModuleId.exec(arg0);
@@ -168,8 +168,8 @@ obj3 = {
     }
   }
 };
-module_1944 = module_1944_mod;
-let closure_13 = module_1944.parserFor(obj);
+module_1943 = module_1943_mod;
+let closure_13 = module_1943.parserFor(obj);
 let result = size.fileFinishedImporting("modules/html_parser/HTMLParserLinkUtils.tsx");
 
 export { getLink };
@@ -212,13 +212,13 @@ export function addTextLinks(items1) {
             } while (sum2 < tmp5);
           }
           let tmp9 = link;
-          let obj2 = link(6033);
+          let obj2 = link(6038);
           let str3 = obj2.sanitizeWhitespace(str2);
           let trimmed = str3.trim();
           let str4 = "";
           if (0 !== trimmed.length) {
             link = tmp.link;
-            let tmp9Result = tmp9(6033);
+            let tmp9Result = tmp9(6038);
             let result = tmp9Result.sanitizeUnicodeConfusables(trimmed);
             let _Array = Array;
             let arr = Array.from(result.matchAll(closure_10));
@@ -275,11 +275,11 @@ export function addTextLinks(items1) {
         if ("" === tmp23.link) {
           let link2 = tmp23.link;
           let tmp48 = _objectWithoutProperties(tmp23, closure_4);
-          let obj11 = link(9410);
+          let obj11 = link(9430);
           let mergeRunResult = obj11.mergeRun(items1, tmp23.text, tmp48);
           flag2 = false;
         } else {
-          let obj10 = link(9410);
+          let obj10 = link(9430);
           let mergeRunResult1 = obj10.mergeRun(items1, tmp23.text, tmp23);
           flag2 = false;
         }
@@ -312,12 +312,12 @@ export function addTextLinks(items1) {
               let tmp39 = appendParsedNode(items1, closure_13(tmp23.text, obj3), tmp23);
               flag2 = isMatch;
             }
-            let obj7 = link(9410);
+            let obj7 = link(9430);
             let mergeRunResult2 = obj7.mergeRun(items1, tmp23.text, tmp23);
             flag2 = isMatch;
           }
         }
-        let obj9 = link(9410);
+        let obj9 = link(9430);
         let mergeRunResult3 = obj9.mergeRun(items1, tmp23.text, tmp23);
         flag2 = isMatch;
       }

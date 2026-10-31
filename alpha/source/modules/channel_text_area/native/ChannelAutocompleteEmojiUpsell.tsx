@@ -1,17 +1,17 @@
-// Module ID: 13896
-// Function ID: 13897
+// Module ID: 13931
+// Function ID: 13932
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1387, 21, 5009, 575, 5712, 1410, 5619, 1114, 2]
+// Dependencies: [19, 17, 1386, 21, 5014, 575, 5717, 1409, 5624, 1113, 2]
 // Exports: default
 
-// Module 13896 (ChannelAutocompleteEmojiUpsell)
+// Module 13931 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import EmojiConstants from "EmojiConstants" /* 1387 */;
-import FastImageDefault from "FastImage" /* 5712 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import FastImageDefault from "FastImage" /* 5717 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 let size;
 let tmp3;
-const AvatarUtilsDefault = tmp3(1410);
+const AvatarUtilsDefault = tmp3(1409);
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

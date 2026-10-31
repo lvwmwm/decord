@@ -1,10 +1,10 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10608
+// Function ID: 10609
 // Name: GiftPromotionReminderExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 
-// Module 10588 (GiftPromotionReminderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 10608 (GiftPromotionReminderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

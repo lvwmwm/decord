@@ -1,11 +1,11 @@
-// Module ID: 19902
-// Function ID: 19903
+// Module ID: 19960
+// Function ID: 19961
 // Name: useTrialActiveUserLimitOptions
-// Dependencies: [19, 1114, 2]
+// Dependencies: [19, 1113, 2]
 // Exports: default
 
-// Module 19902 (useTrialActiveUserLimitOptions)
-import intl2 from "intl" /* 1114 */;
+// Module 19960 (useTrialActiveUserLimitOptions)
+import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

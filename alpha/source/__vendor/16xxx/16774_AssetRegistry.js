@@ -1,10 +1,10 @@
 // Module ID: 16774
 // Function ID: 16775
 // Name: AssetRegistry
-// Dependencies: [1120]
+// Dependencies: [1119]
 
 // Module 16774 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1120 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "cb49d7446dbcac5ce6ba16b6a9b83961", name: "Small", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 185, height: 125, scales: [1, 2, 3], hash: "fa358a5ff3d1f49a00fc1180e0e601e5", name: "family_center_activity_banner_image_parent", type: "png" });

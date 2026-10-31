@@ -1,13 +1,13 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9447
+// Function ID: 9448
 // Name: AnnouncementMessageUtils
-// Dependencies: [4952, 1993, 6067, 6046, 1091, 9426, 6058, 9427, 1114, 1378, 2]
+// Dependencies: [4957, 1992, 6072, 6051, 1090, 9448, 6063, 9449, 1113, 1377, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9425 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import MessageRecord from "MessageRecord" /* 4952 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9427 */;
+// Module 9447 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9449 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -258,8 +258,8 @@ export function getPollExpiryLabel(poll) {
   const obj = useFormattedExpirationLabel;
   let result = obj.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1114).intl;
-    result = intl.string(tmp(1114).t["e+J3JZ"]);
+    const intl = tmp(1113).intl;
+    result = intl.string(tmp(1113).t["e+J3JZ"]);
   }
   return result;
 }

@@ -1,20 +1,20 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16675
+// Function ID: 16676
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1072, 21, 5009, 575, 7110, 1114, 1188, 1498, 1376, 16634, 7286, 16635, 5619, 6761, 5629, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 7116, 1113, 1187, 1497, 1375, 16676, 7292, 16677, 5624, 6767, 5634, 2]
 // Exports: default
 
-// Module 16633 (WebAuthnRegisterStep)
+// Module 16675 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7110 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7116 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, navigation;
@@ -82,7 +82,7 @@ export default function WebAuthnRegisterStep() {
   let tmp11;
   let tmp7;
   let tmp8;
-  const obj = navigation(1498);
+  const obj = navigation(1497);
   navigation = obj.useNavigation();
   const tmp4 = closure_9();
   [tmp7, tmp8] = authenticatorSelection(onRegisterSuccess.useState(false), 2);
@@ -91,7 +91,7 @@ export default function WebAuthnRegisterStep() {
   [tmp10, tmp11] = authenticatorSelection(onRegisterSuccess.useState(""), 2);
   dependencyMap = tmp11;
   authenticatorSelection(onRegisterSuccess.useState(""), 2);
-  obj3 = navigation(1376);
+  obj3 = navigation(1375);
   const tmp5Result = authenticatorSelection(onRegisterSuccess.useState(obj3.isAndroid() ? obj3.PASSKEY_CREDENTIAL_MANAGER : obj3.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
   authenticatorSelection = tmp5Result[0];
   const items = [navigation];
@@ -103,17 +103,17 @@ export default function WebAuthnRegisterStep() {
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(16634);
+  const tmpResult = navigation(16676);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
-  const SafeAreaPaddingView = tmp(7286).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(16635).KeyImage, {}), , ];
+  const SafeAreaPaddingView = tmp(7292).SafeAreaPaddingView;
+  items3 = [closure_7(navigation(16677).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
-  const Text = tmp(5619).Text;
-  const intl = tmp(1114).intl;
+  const Text = tmp(5624).Text;
+  const intl = tmp(1113).intl;
   const string = intl.string;
-  const t = tmp(1114).t;
+  const t = tmp(1113).t;
   const tmp19 = closure_5;
   if (tmp7) {
     stringResult = string(t.aVMiX3);
@@ -124,7 +124,7 @@ export default function WebAuthnRegisterStep() {
   let tmp20Result = "" !== tmp10;
   if (tmp20Result) {
     const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp20Result = tmp20(tmp(5619).Text, obj6);
+    tmp20Result = tmp20(tmp(5624).Text, obj6);
   }
   items3[2] = tmp20Result;
   items4 = [closure_8(tmp19, obj4), , ];
@@ -134,11 +134,11 @@ export default function WebAuthnRegisterStep() {
     shouldDisplayAndroidFidoSelector = tmp20(AndroidPasskeyRadioGroup, obj7);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const ButtonGroup = tmp(6761).ButtonGroup;
-  const Button = tmp(5629).Button;
-  const intl2 = tmp(1114).intl;
+  const ButtonGroup = tmp(6767).ButtonGroup;
+  const Button = tmp(5634).Button;
+  const intl2 = tmp(1113).intl;
   const string2 = intl2.string;
-  const t2 = tmp(1114).t;
+  const t2 = tmp(1113).t;
   if (tmp7) {
     string2Result = string2(t2.wePEBF);
   } else {

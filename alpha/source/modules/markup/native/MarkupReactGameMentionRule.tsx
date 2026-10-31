@@ -1,17 +1,17 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 15664
+// Function ID: 15665
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 21, 5009, 575, 8671, 1114, 2027, 5750, 8135, 5712, 9300, 9320, 5619, 7474, 2]
+// Dependencies: [19, 21, 5014, 575, 8679, 1113, 2025, 5755, 8143, 5717, 9320, 9340, 5624, 7480, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 15623 (MarkupReactGameMentionRule)
+// Module 15664 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
-import useGame from "useGame" /* 7474 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9300 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
+import useGame from "useGame" /* 7480 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9320 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -30,10 +30,10 @@ class MarkupGameMention {
     const node = state.node;
     const tmp = closure_5();
     const gameId = node.gameId;
-    let obj = state(8671);
+    let obj = state(8679);
     const gameMentionData = obj.useGameMentionData(gameId);
-    const intl = state(1114).intl;
-    const stringResult = intl.string(state(1114).t["11pdXZ"]);
+    const intl = state(1113).intl;
+    const stringResult = intl.string(state(1113).t["11pdXZ"]);
     let gameName;
     if (gameMentionData != null) {
       gameName = gameMentionData.gameName;
@@ -43,14 +43,14 @@ class MarkupGameMention {
     }
     let gameIcon;
     const tmp7 = gameId;
-    const tmp8 = gameId(2027);
+    const tmp8 = gameId(2025);
     if (gameMentionData != null) {
       gameIcon = gameMentionData.gameIcon;
     }
     const tmp8Result = tmp8(gameId, gameIcon, { size: 32 });
     if (null == gameMentionData) {
       let textColor;
-      const MarkupText2 = tmp2(5750).MarkupText;
+      const MarkupText2 = tmp2(5755).MarkupText;
       const tmp15 = closure_3;
       if (state != null) {
         textColor = state.textColor;
@@ -61,7 +61,7 @@ class MarkupGameMention {
     } else {
       let tmp11 = null != tmp8Result;
       const obj3 = { size: "sm", style: tmp.icon };
-      const tmp18 = closure_4(state(8135).UnknownGameIcon, obj3);
+      const tmp18 = closure_4(state(8143).UnknownGameIcon, obj3);
       if (tmp11) {
         tmp11 = "" !== tmp8Result;
       }
@@ -69,10 +69,10 @@ class MarkupGameMention {
       if (tmp11) {
         const obj4 = { style: tmp.icon, source: obj5 };
         obj5 = { uri: tmp8Result };
-        tmp17Result = tmp17(tmp7(5712), obj4);
+        tmp17Result = tmp17(tmp7(5717), obj4);
       }
       let str2 = "button";
-      const MarkupText = tmp2(5750).MarkupText;
+      const MarkupText = tmp2(5755).MarkupText;
       const tmp13 = closure_3;
       if (state.noStyleAndInteraction) {
         str2 = "text";
@@ -92,7 +92,7 @@ class MarkupGameMention {
       }
       items1 = [tmp17Result, ];
       const obj7 = { variant: "text-sm/medium", style: tmp.chipText, children: gameName };
-      items1[1] = closure_4(state(5619).Text, obj7);
+      items1[1] = closure_4(state(5624).Text, obj7);
       return tmp13(MarkupText, obj6, state.key);
     }
   }

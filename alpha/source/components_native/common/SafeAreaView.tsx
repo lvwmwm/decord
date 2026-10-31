@@ -1,15 +1,15 @@
-// Module ID: 7286
-// Function ID: 7287
+// Module ID: 7292
+// Function ID: 7293
 // Name: common/SafeAreaView
-// Dependencies: [19, 17, 21, 1626, 6953, 1343, 2]
+// Dependencies: [19, 17, 21, 1625, 6959, 1342, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 7286 (common/SafeAreaView)
+// Module 7292 (common/SafeAreaView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import useRefValueDefault from "useRefValue" /* 6953 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import useRefValueDefault from "useRefValue" /* 6959 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -76,8 +76,8 @@ export function SafeAreaPaddingView(top) {
   items[4] = tmp12;
   closure_1 = items;
   const tmp13 = useRefValueDefault(ref);
-  closure_2 = _modDef1343(items, tmp13);
-  const tmp14 = _modDef1343(items, tmp13);
+  closure_2 = _modDef1342(items, tmp13);
+  const tmp14 = _modDef1342(items, tmp13);
   if (closure_2) {
     closure_1 = tmp13;
     items = tmp13;

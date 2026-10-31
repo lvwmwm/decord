@@ -1,20 +1,20 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 16987
+// Function ID: 16988
 // Name: AnalyticsHooks
-// Dependencies: [19, 1072, 9697, 7855, 7835, 7865, 7864, 7812, 1267, 1376, 7870, 6778, 6782, 1253, 2]
+// Dependencies: [19, 1072, 9717, 7862, 7842, 7872, 7871, 7819, 1266, 1375, 7877, 6784, 6788, 1252, 2]
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackAdContentEventWithImpression, useTrackQuestContentClickedWithImpression, useTrackQuestEventWithImpression
 
-// Module 16931 (AnalyticsHooks)
+// Module 16987 (AnalyticsHooks)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import v1 from "v1" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import AdCreativeType from "AdCreativeType" /* 6782 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7812 */;
-import QuestDataUtils from "QuestDataUtils" /* 7835 */;
-import AnalyticsActions from "AnalyticsActions" /* 7855 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7870 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import v1 from "v1" /* 1266 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7819 */;
+import QuestDataUtils from "QuestDataUtils" /* 7842 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7877 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let result = size.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsH
 
 export function useTrackQuestEventWithImpression() {
   let getQuestImpressionId;
-  const obj = getQuestImpressionId(9697);
+  const obj = getQuestImpressionId(9717);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   return react.useCallback((properties) => {
@@ -41,7 +41,7 @@ export function useTrackQuestEventWithImpression() {
 }
 export function useTrackQuestContentClickedWithImpression() {
   let callback;
-  let obj = callback(9697);
+  let obj = callback(9717);
   const getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   callback = react.useCallback((properties) => {
@@ -133,7 +133,7 @@ export function useTrackQuestContentClickedWithImpression() {
 }
 export function useTrackAdContentEventWithImpression() {
   let getQuestImpressionId;
-  const obj = getQuestImpressionId(9697);
+  const obj = getQuestImpressionId(9717);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   return react.useCallback((properties) => {
@@ -149,7 +149,7 @@ export function useTrackAdContentEventWithImpression() {
 }
 export function useTrackAdContentClickedWithImpression() {
   let adContentId;
-  let obj = adContentId(9697);
+  let obj = adContentId(9717);
   const getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   adContentId = react.useCallback((properties) => {
@@ -253,7 +253,7 @@ export function useQuestHomeEntrypointAnalyticsEvents(questHomeHero) {
   questHomeHero = questHomeHero.questHomeHero;
   const shouldShowQuestHomeHeroContent = questHomeHero.shouldShowQuestHomeHeroContent;
   let memo;
-  const QuestContent = questHomeHero(6778).QuestContent;
+  const QuestContent = questHomeHero(6784).QuestContent;
   const tmp = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp;
   const items = [tmp];

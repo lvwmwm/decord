@@ -18,15 +18,15 @@ import _slicedToArray2 from "_slicedToArray" /* 747 */;
 import _mod748 from "module_748" /* 748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const f79052 = () => {
+const f79262 = () => {
   const weakMap = new WeakMap();
   return weakMap;
 };
 function _INTERNAL_captureSerializedLog(getOptions, arg1) {
   const obj = _mod689;
-  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f79052);
+  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f79262);
   const obj3 = _mod689;
-  const globalSingleton1 = obj3.getGlobalSingleton("clientToLogBufferMap", f79052);
+  const globalSingleton1 = obj3.getGlobalSingleton("clientToLogBufferMap", f79262);
   const value = globalSingleton1.get(getOptions);
   if (undefined === value) {
     const items = [arg1];
@@ -47,7 +47,7 @@ function _INTERNAL_flushLogsBuffer(getOptions, value) {
   let items = value;
   if (value == null) {
     const obj = _mod689;
-    const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f79052);
+    const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f79262);
     items = globalSingleton.get(getOptions);
   }
   if (items == null) {
@@ -59,7 +59,7 @@ function _INTERNAL_flushLogsBuffer(getOptions, value) {
     const obj3 = _mod748;
     const logEnvelope = obj3.createLogEnvelope(items, _metadata, tunnel, getOptions.getDsn());
     const obj4 = _mod689;
-    const globalSingleton1 = obj4.getGlobalSingleton("clientToLogBufferMap", f79052);
+    const globalSingleton1 = obj4.getGlobalSingleton("clientToLogBufferMap", f79262);
     const result = globalSingleton1.set(getOptions, []);
     getOptions.emit("flushLogs");
     getOptions.sendEnvelope(logEnvelope);
@@ -288,6 +288,6 @@ export { _INTERNAL_captureSerializedLog };
 export { _INTERNAL_flushLogsBuffer };
 export function _INTERNAL_getLogBuffer(arg0) {
   const obj = _mod689;
-  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f79052);
+  const globalSingleton = obj.getGlobalSingleton("clientToLogBufferMap", f79262);
   return globalSingleton.get(arg0);
 }

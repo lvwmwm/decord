@@ -1,27 +1,27 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15359
+// Function ID: 15360
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1072, 1386, 21, 5009, 575, 6772, 5248, 5016, 1188, 15321, 15322, 5619, 1114, 5582, 9887, 2048, 15323, 15324, 5712, 15325, 15326, 15327, 15328, 15329, 2]
+// Dependencies: [32, 19, 17, 1072, 1385, 21, 5014, 575, 6778, 5253, 5021, 1187, 15360, 15361, 5624, 1113, 5587, 9908, 2047, 15362, 15363, 5717, 15364, 15365, 15366, 15367, 15368, 2]
 // Exports: default
 
-// Module 15320 (PremiumFeaturesTable)
+// Module 15359 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl32 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import shared from "shared" /* 5016 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15321 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15322 */;
+import intl32 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import shared from "shared" /* 5021 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15360 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ function CheckIcon() {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const obj2 = { source: AssetRegistryDefault, color: tmp6, size: native.IconSizes.SMALL };
   tmp6 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
-  const Icon = tmp4(1188).Icon;
+  const Icon = tmp4(1187).Icon;
   return unpackModuleId(Icon, obj2);
 }
 function CloseIcon() {

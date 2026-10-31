@@ -1,13 +1,13 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12629
+// Function ID: 12630
 // Name: ConjureTipSwap
-// Dependencies: [19, 21, 5090, 5249, 2]
+// Dependencies: [19, 21, 5095, 5254, 2]
 // Exports: default
 
-// Module 12594 (ConjureTipSwap)
+// Module 12629 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let set;
 function TipFade(children) {
   let sharedValue;
   children = children.children;
-  let obj = sharedValue(5090);
+  let obj = sharedValue(5095);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -40,7 +40,7 @@ function TipFade(children) {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 14074417751279;
   fn.__initData = __initData;
-  const obj2 = sharedValue(5090);
+  const obj2 = sharedValue(5095);
   const style = obj2.useAnimatedStyle(fn);
   return jsx(ReanimatedRexportDefault.View, { style, children });
 }

@@ -1,21 +1,21 @@
-// Module ID: 17343
-// Function ID: 17344
+// Module ID: 17403
+// Function ID: 17404
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2064, 2063, 21, 5009, 575, 5913, 504, 7286, 7052, 1114, 7055, 5712, 17344, 2]
+// Dependencies: [5, 19, 17, 2063, 2062, 21, 5014, 575, 5932, 504, 7292, 7058, 1113, 7061, 5717, 17404, 2]
 
-// Module 17343 (UserSettingsLocale)
+// Module 17403 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2064 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import TableRadioRow2 from "TableRadioRow" /* 7055 */;
-import flags from "flags" /* 17344 */;
+import intl2 from "intl" /* 1113 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import TableRadioRow2 from "TableRadioRow" /* 7061 */;
+import flags from "flags" /* 17404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import createStyles from "createStyles" /* 5009 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         c4 = 3;

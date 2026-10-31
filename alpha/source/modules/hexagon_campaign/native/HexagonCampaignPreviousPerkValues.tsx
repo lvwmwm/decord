@@ -1,21 +1,21 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16995
+// Function ID: 16996
 // Name: HexagonCampaignPreviousPerkValues
-// Dependencies: [5033, 1239, 1193, 1195, 9958, 1241, 1196, 9959, 5245, 1242, 5036, 16410, 2]
+// Dependencies: [5038, 1238, 1192, 1194, 9979, 1240, 1195, 9980, 5250, 1241, 5041, 16452, 2]
 // Exports: getHexagonCampaignClientThemeItem, saveHexagonCampaignPreviousAppIcon, saveHexagonCampaignPreviousClientTheme
 
-// Module 16939 (HexagonCampaignPreviousPerkValues)
-import ThemeConstants from "ThemeConstants" /* 1196 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5036 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5245 */;
-import AppIconConstants from "AppIconConstants" /* 9958 */;
-import AppIconTypes from "AppIconTypes" /* 9959 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 16410 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5033 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1239 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1241 */;
+// Module 16995 (HexagonCampaignPreviousPerkValues)
+import ThemeConstants from "ThemeConstants" /* 1195 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5250 */;
+import AppIconConstants from "AppIconConstants" /* 9979 */;
+import AppIconTypes from "AppIconTypes" /* 9980 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 16452 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 19508
-// Function ID: 19509
+// Module ID: 19565
+// Function ID: 19566
 // Name: InterestGamePickerConstants
 // Dependencies: [575, 2]
 
-// Module 19508 (InterestGamePickerConstants)
+// Module 19565 (InterestGamePickerConstants)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 

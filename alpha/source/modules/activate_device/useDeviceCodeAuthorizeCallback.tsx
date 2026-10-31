@@ -1,14 +1,14 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 15702
+// Function ID: 15703
 // Name: useDeviceCodeAuthorizeCallback
-// Dependencies: [5, 19, 15660, 7341, 9715, 38, 7342, 9729, 2]
+// Dependencies: [5, 19, 15701, 7347, 9735, 38, 7348, 9749, 2]
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 15661 (useDeviceCodeAuthorizeCallback)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7341 */;
-import TwoWayLinkType from "TwoWayLinkType" /* 9715 */;
-import oauth2_actions from "oauth2/actions" /* 9729 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 15660 */;
+// Module 15702 (useDeviceCodeAuthorizeCallback)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
+import TwoWayLinkType from "TwoWayLinkType" /* 9735 */;
+import oauth2_actions from "oauth2/actions" /* 9749 */;
+import ActivateDeviceUtils from "ActivateDeviceUtils" /* 15701 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let obj = function _createTwoWayLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -193,7 +193,7 @@ let obj = function _createTwoWayLink() {
             } else {
               c8 = 0;
               c10 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c10 = 3;
@@ -244,7 +244,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -281,7 +281,7 @@ obj = function _silentlyFinishTwoWayLinkError() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;
@@ -316,7 +316,7 @@ export function useDeviceCodeAuthorizeCallback(callback, callback2, callback1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -413,7 +413,7 @@ export function useDeviceCodeAuthorizeCallback(callback, callback2, callback1) {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp31) {
         let closure_4 = tmp31;

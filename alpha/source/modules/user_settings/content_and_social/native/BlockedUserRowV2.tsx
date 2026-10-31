@@ -1,26 +1,26 @@
-// Module ID: 16652
-// Function ID: 16653
+// Module ID: 16694
+// Function ID: 16695
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1384, 21, 7482, 7320, 1114, 8742, 6969, 1188, 16653, 5629, 504, 2]
+// Dependencies: [19, 1383, 21, 7488, 7326, 1113, 8750, 6975, 1187, 16695, 5634, 504, 2]
 // Exports: default
 
-// Module 16652 (BlockedUserRowV2)
+// Module 16694 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 function BlockedUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7320)().analyticsLocations;
-  const intl = userRecord(1114).intl;
+  analyticsLocations = analyticsLocations(7326)().analyticsLocations;
+  const intl = userRecord(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
-  const izBDZN = userRecord(1114).t.izBDZN;
+  const izBDZN = userRecord(1113).t.izBDZN;
   if (username == null) {
     username = userRecord.username;
   }
@@ -29,14 +29,14 @@ function BlockedUserRow(userRecord) {
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(izBDZN, { name: username });
-  const TableRow = tmp2(6969).TableRow;
-  let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1188).AvatarSizes.REFRESH_MEDIUM_32 };
-  const Avatar = tmp2(1188).Avatar;
+  const TableRow = tmp2(6975).TableRow;
+  let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1187).AvatarSizes.REFRESH_MEDIUM_32 };
+  const Avatar = tmp2(1187).Avatar;
   const items = [{ name: "activate" }, { name: "unblock", label: formatToPlainStringResult }];
   ({
     size: "sm",
     variant: "secondary",
-    text: intl2.string(userRecord(1114).t["PR/xUz"]),
+    text: intl2.string(userRecord(1113).t["PR/xUz"]),
     accessibilityLabel: formatToPlainStringResult,
     onPress() {
       const id = userRecord.id;
@@ -44,8 +44,8 @@ function BlockedUserRow(userRecord) {
       obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
     }
   });
-  const Button = tmp2(5629).Button;
-  intl2 = tmp2(1114).intl;
+  const Button = tmp2(5634).Button;
+  intl2 = tmp2(1113).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }
 const jsx = Fragment.jsx;

@@ -1,25 +1,25 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11848
+// Function ID: 11849
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 11811, 5090, 5632, 575, 11812, 11873, 11814, 10985, 10984, 9809, 11209, 5754, 11874, 11959, 5075, 11663, 11967, 11968, 11817, 11973, 11981, 11983, 12016, 12017, 5009, 12018, 11835, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 11849, 5095, 5637, 575, 11850, 11911, 11852, 11004, 11003, 9830, 11228, 5759, 11912, 11997, 5080, 11700, 12005, 12006, 11855, 12011, 12019, 12021, 12054, 12055, 5014, 12056, 11873, 2]
 // Exports: default
 
-// Module 11810 (StageChannelCallNavigator)
+// Module 11848 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5754 */;
-import MessageManagerDefault from "MessageManager" /* 9809 */;
-import participantHasVideoDefault from "participantHasVideo" /* 11209 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 11835 */;
-import JoinStageViewDefault from "JoinStageView" /* 11873 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12018 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
+import MessageManagerDefault from "MessageManager" /* 9830 */;
+import participantHasVideoDefault from "participantHasVideo" /* 11228 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 11873 */;
+import JoinStageViewDefault from "JoinStageView" /* 11911 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12056 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -98,7 +98,7 @@ function JoinStageOverlay(channel) {
   importDefault = undefined;
   channel = channel.channel;
   [showOverlay, importDefault] = react.useState(false);
-  let obj = showOverlay(5090);
+  let obj = showOverlay(5095);
   const fn = function s() {
     let num = 0;
     const withSpring = spring.withSpring;
@@ -109,10 +109,10 @@ function JoinStageOverlay(channel) {
     const obj = { opacity: withSpring(num, viewAnimationConfig) };
     return obj;
   };
-  fn.__closure = { withSpring: showOverlay(5632).withSpring, showOverlay, viewAnimationConfig };
+  fn.__closure = { withSpring: showOverlay(5637).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 1929951426580;
   fn.__initData = __initData2;
-  ({ withSpring: showOverlay(5632).withSpring, showOverlay, viewAnimationConfig });
+  ({ withSpring: showOverlay(5637).withSpring, showOverlay, viewAnimationConfig });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const effect = react.useEffect(() => {
     let closure_0;

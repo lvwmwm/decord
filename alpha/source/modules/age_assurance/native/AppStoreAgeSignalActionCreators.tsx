@@ -1,18 +1,34 @@
-// Module ID: 8140
-// Function ID: 8141
+// Module ID: 8148
+// Function ID: 8149
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1072, 1283, 2]
-// Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
+// Dependencies: [5, 1072, 1282, 2]
+// Exports: registerAgeSignalAttestKey, reinstateAppStoreConsent, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 8140 (AppStoreAgeSignalActionCreators)
+// Module 8148 (AppStoreAgeSignalActionCreators)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c2, closure_6, closure_7, platform;
+let closure_6, closure_7, platform;
 
-let obj = function _requestAgeSignalChallenge() {
+let obj = function _reinstateAppStoreConsent() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c1;
+    let c2;
+    let obj4;
+    let closure_0 = arg0;
+    const HTTP = HTTPUtils.HTTP;
+    const request = { url: constants.APP_STORE_CONSENT_REINSTATE, body: obj4, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+    obj4 = { is_cold_launch: true };
+    const post = HTTP.post;
+    const merged = Object.assign(closure_0);
+    await post(request);
+    return arg1.body.outcome;
+  });
+  return obj(...arguments);
+};
+obj = function _requestAgeSignalChallenge() {
   obj = _asyncToGenerator(async (platform, key_id) => {
     let c3 = 0;
     let c4 = 0;
@@ -28,7 +44,7 @@ let obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -79,7 +95,7 @@ let obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -115,7 +131,7 @@ obj = function _submitAgeSignal() {
   obj = _asyncToGenerator(async (arg0, integrity_token, is_cold_launch) => {
     let closure_0 = arg0;
     let closure_3 = arg3;
-    closure_4 = arg4;
+    let closure_4 = arg4;
     let c8 = 0;
     let c9 = 0;
     const iter = (async (arg0, value, arg2) => {
@@ -131,7 +147,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -172,7 +188,7 @@ obj = function _submitAgeSignal() {
                 }
                 if ("accepted" !== result) {
                   if ("skipped" !== result) {
-                    obj = closure_1_4;
+                    obj = toSubmitOutcome;
                   }
                   return obj;
                 }
@@ -225,9 +241,12 @@ obj = function _submitAgeSignal() {
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
-let closure_4 = { result: "skipped", reason: null };
+let closure_5 = { result: "skipped", reason: null };
 let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalActionCreators.tsx");
 
+export function reinstateAppStoreConsent() {
+  return obj(...arguments);
+}
 export function requestAgeSignalChallenge() {
   return obj(...arguments);
 }

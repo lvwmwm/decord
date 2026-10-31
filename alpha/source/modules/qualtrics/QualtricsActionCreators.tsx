@@ -1,18 +1,18 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7928
+// Function ID: 7929
 // Name: QualtricsActionCreators
-// Dependencies: [32, 5, 7921, 7923, 7924, 7925, 1072, 1283, 572, 1243, 7926, 2]
+// Dependencies: [32, 5, 7929, 7931, 7932, 7933, 1072, 1282, 572, 1242, 7934, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 7920 (QualtricsActionCreators)
+// Module 7928 (QualtricsActionCreators)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import QualtricsResponseStore from "QualtricsResponseStore" /* 7923 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import QualtricsResponseStore from "QualtricsResponseStore" /* 7931 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SurveyStore from "SurveyStore" /* 7921 */;
-import QualtricsStore from "QualtricsStore" /* 7924 */;
-import QualtricsConstants from "QualtricsConstants" /* 7925 */;
+import SurveyStore from "SurveyStore" /* 7929 */;
+import QualtricsStore from "QualtricsStore" /* 7932 */;
+import QualtricsConstants from "QualtricsConstants" /* 7933 */;
 import size from "module_2" /* 2 */;
 
 let c8, closure_3, force_survey_id, state;
@@ -37,7 +37,7 @@ let obj = function _fetchSurveyDetails() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ obj = function _submitSurveyResponse() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;
@@ -334,7 +334,7 @@ obj = function _fireSurveyAction() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -393,7 +393,7 @@ obj = function _fireSurveyAction() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp15) {
           if (0 === c5) {
             c7 = 3;

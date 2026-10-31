@@ -1,43 +1,43 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15406
+// Function ID: 15407
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 6766, 1386, 21, 5009, 575, 15346, 1114, 9899, 15368, 15369, 15371, 9040, 15372, 9430, 15373, 11023, 15374, 14054, 15375, 9895, 15376, 10042, 504, 15244, 15377, 5248, 5712, 15209, 5016, 15218, 15219, 5619, 9915, 15381, 15382, 15383, 2]
+// Dependencies: [19, 17, 6772, 1385, 21, 5014, 575, 15385, 1113, 9920, 15407, 15408, 15410, 9059, 15411, 9452, 15412, 11042, 15413, 14089, 15414, 9916, 15415, 10063, 504, 15283, 15416, 5253, 5717, 15248, 5021, 15257, 15258, 5624, 9936, 15420, 15421, 15422, 2]
 // Exports: default
 
-// Module 15367 (GuildBoostingUpsell)
+// Module 15406 (GuildBoostingUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl14 from "intl" /* 1114 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import shared from "shared" /* 5016 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9040 */;
-import ReactionIcon from "ReactionIcon" /* 9430 */;
-import UploadIcon from "UploadIcon" /* 9895 */;
-import BoostGemIcon from "BoostGemIcon" /* 9899 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9915 */;
-import StarIcon from "StarIcon" /* 10042 */;
-import StickerIcon from "StickerIcon" /* 11023 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 14054 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15209 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15244 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15346 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15368 */;
-import BoostTier3Icon2 from "BoostTier3Icon" /* 15369 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15371 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15372 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15373 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15374 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15375 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 15376 */;
-import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 15377 */;
-import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 15382 */;
+import intl14 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import shared from "shared" /* 5021 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9059 */;
+import ReactionIcon from "ReactionIcon" /* 9452 */;
+import UploadIcon from "UploadIcon" /* 9916 */;
+import BoostGemIcon from "BoostGemIcon" /* 9920 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9936 */;
+import StarIcon from "StarIcon" /* 10063 */;
+import StickerIcon from "StickerIcon" /* 11042 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 14089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15248 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15283 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15385 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15407 */;
+import BoostTier3Icon2 from "BoostTier3Icon" /* 15408 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15410 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15411 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15412 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15413 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15414 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 15415 */;
+import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 15416 */;
+import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 15421 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedGuildStore from "SortedGuildStore" /* 6766 */;
+import SortedGuildStore from "SortedGuildStore" /* 6772 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -131,47 +131,47 @@ export default function GuildBoostingUpsell(arg0) {
   const tmp7Result5 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeDark(tmp8)) {
-    tmp7Result6 = tmp7(15218);
+    tmp7Result6 = tmp7(15257);
   } else {
-    tmp7Result6 = tmp7(15219);
+    tmp7Result6 = tmp7(15258);
   }
   items1[1] = metroRequire(tmp7Result5, obj7);
   const obj8 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl14.t.hw6WTd) };
-  const Text = tmp2(5619).Text;
-  intl = tmp2(1114).intl;
+  const Text = tmp2(5624).Text;
+  intl = tmp2(1113).intl;
   items1[2] = metroRequire(Text, obj8);
   const obj9 = { style: tmp.cardText, variant: "text-md/medium", children: intl2.string(intl14.t.K5jBdG) };
-  const Text2 = tmp2(5619).Text;
-  intl2 = tmp2(1114).intl;
+  const Text2 = tmp2(5624).Text;
+  intl2 = tmp2(1113).intl;
   items1[3] = metroRequire(Text2, obj9);
   items2 = [metroImportDefault(_false, obj5), , , , , ];
   const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(intl14.t.RvfRTB) };
-  const Text3 = tmp2(5619).Text;
-  intl3 = tmp2(1114).intl;
+  const Text3 = tmp2(5624).Text;
+  intl3 = tmp2(1113).intl;
   items2[1] = metroRequire(Text3, obj10);
   const obj11 = { style: tmp.features, features: FEATURES_PREMIUM_GUILD_USER() };
   const tmp7Result7 = PremiumFeatureListDefault;
   items2[2] = metroRequire(tmp7Result7, obj11);
   const obj12 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl4.string(intl14.t["/pVhjb"]) };
-  const Text4 = tmp2(5619).Text;
-  intl4 = tmp2(1114).intl;
+  const Text4 = tmp2(5624).Text;
+  intl4 = tmp2(1113).intl;
   items2[3] = metroRequire(Text4, obj12);
   const obj13 = { style: tmp.features, features: items3 };
   const obj14 = { icon: AssetRegistryDefault5, label: intl5.string(intl14.t.Ts7BVI), IconComponent: ReactionIcon.ReactionIcon, color: nativeDefault.unsafe_rawColors.PREMIUM_PERK_YELLOW };
   const tmp7Result8 = PremiumFeatureListDefault;
-  intl5 = tmp2(1114).intl;
+  intl5 = tmp2(1113).intl;
   items3 = [obj14, , , , ];
   const obj15 = { icon: AssetRegistryDefault6, label: intl6.string(intl14.t.QcJbt6), IconComponent: StickerIcon.StickerIcon, color: nativeDefault.unsafe_rawColors.PREMIUM_PERK_PURPLE };
-  intl6 = tmp2(1114).intl;
+  intl6 = tmp2(1113).intl;
   items3[1] = obj15;
   const obj16 = { icon: AssetRegistryDefault7, label: intl7.string(intl14.t.rFNkf5), color: "#4173da", IconComponent: HeadphonesIcon.HeadphonesIcon };
-  intl7 = tmp2(1114).intl;
+  intl7 = tmp2(1113).intl;
   items3[2] = obj16;
   const obj17 = { icon: AssetRegistryDefault8, label: intl8.string(intl14.t["BpjjS/"]), IconComponent: UploadIcon.UploadIcon, color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-  intl8 = tmp2(1114).intl;
+  intl8 = tmp2(1113).intl;
   items3[3] = obj17;
   const obj18 = { icon: AssetRegistryDefault9, label: intl9.string(intl14.t["9g5Lgb"]), IconComponent: StarIcon.StarIcon, color: nativeDefault.unsafe_rawColors.PREMIUM_PERK_GOLD };
-  intl9 = tmp2(1114).intl;
+  intl9 = tmp2(1113).intl;
   items3[4] = obj18;
   items2[4] = metroRequire(tmp7Result8, obj13);
   let tmp13Result = null;
@@ -179,7 +179,7 @@ export default function GuildBoostingUpsell(arg0) {
   if (subscriptionPlansLoaded) {
     tmp13Result = null;
     if (fractionalState === tmp9.NONE) {
-      tmp13Result = tmp13(tmp7(15381), {});
+      tmp13Result = tmp13(tmp7(15420), {});
     }
   }
   items4 = [tmp13Result, , ];
@@ -189,12 +189,12 @@ export default function GuildBoostingUpsell(arg0) {
     const obj20 = { children: null };
     if (stateFromStores) {
       const obj21 = { style: tmp.cardText, variant: "text-md/medium", children: intl12.string(intl14.t.WRzob8) };
-      const Text7 = tmp2(5619).Text;
-      intl12 = tmp2(1114).intl;
+      const Text7 = tmp2(5624).Text;
+      intl12 = tmp2(1113).intl;
       const items5 = [metroRequire(Text7, obj21), , ];
       const obj22 = { style: tmp.cardText, variant: "text-md/bold", children: intl13.string(intl14.t.j4bXcm) };
-      const Text8 = tmp2(5619).Text;
-      intl13 = tmp2(1114).intl;
+      const Text8 = tmp2(5624).Text;
+      intl13 = tmp2(1113).intl;
       items5[1] = metroRequire(Text8, obj22);
       const obj23 = { style: tmp.guildList };
       items5[2] = metroRequire(GuildBoostingGuildListDefault, obj23);
@@ -204,12 +204,12 @@ export default function GuildBoostingUpsell(arg0) {
       const obj24 = { style: tmp.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
       const items6 = [metroRequire(FastImageDefault, obj24), , ];
       const obj25 = { style: tmp.cardText, variant: "text-md/bold", children: intl10.string(intl14.t.FHm4bZ) };
-      const Text5 = tmp2(5619).Text;
-      intl10 = tmp2(1114).intl;
+      const Text5 = tmp2(5624).Text;
+      intl10 = tmp2(1113).intl;
       items6[1] = metroRequire(Text5, obj25);
       const obj26 = { style: tmp.cardText, variant: "text-md/medium", children: intl11.string(intl14.t.PSLiiu) };
-      const Text6 = tmp2(5619).Text;
-      intl11 = tmp2(1114).intl;
+      const Text6 = tmp2(5624).Text;
+      intl11 = tmp2(1113).intl;
       items6[2] = metroRequire(Text6, obj26);
       obj20.children = items6;
       tmp21 = obj20;
@@ -220,7 +220,7 @@ export default function GuildBoostingUpsell(arg0) {
   let tmp13Result2 = null;
   if (subscriptionPlansLoaded) {
     const obj27 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-    tmp13Result2 = tmp13(tmp7(15383), obj27);
+    tmp13Result2 = tmp13(tmp7(15422), obj27);
   }
   items4[2] = tmp13Result2;
   items2[5] = metroImportDefault(_false, obj19);

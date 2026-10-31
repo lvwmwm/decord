@@ -1,28 +1,28 @@
-// Module ID: 12444
-// Function ID: 12445
+// Module ID: 12479
+// Function ID: 12480
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4939, 4880, 4951, 1384, 10849, 21, 5009, 575, 504, 12445, 1114, 3865, 10946, 10945, 12446, 7054, 12447, 6968, 7052, 7055, 7247, 7076, 5619, 5629, 12458, 7413, 6969, 6980, 5647, 5253, 11181, 12459, 12460, 2]
+// Dependencies: [5, 32, 19, 17, 4944, 4885, 4956, 1383, 10869, 21, 5014, 575, 504, 12480, 1113, 3868, 10965, 10964, 12481, 7060, 12482, 6974, 7058, 7061, 7253, 7082, 5624, 5634, 12493, 7419, 6975, 6986, 5652, 5258, 11200, 12494, 12495, 2]
 // Exports: default
 
-// Module 12444 (useConjureAppSettingsForm)
+// Module 12479 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
-import conjureSettingValues from "conjureSettingValues" /* 10946 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11181 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 12460 */;
+import intl5 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
+import conjureSettingValues from "conjureSettingValues" /* 10965 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11200 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 12495 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4939 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10849 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10869 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const useConjureSettingPickerOptions = tmp(12458);
+const useConjureSettingPickerOptions = tmp(12493);
 function ConjureChannelSettingRow(def) {
   let TableRowTrailingText;
   let disabled;
@@ -54,7 +54,7 @@ function ConjureChannelSettingRow(def) {
   let tmp = def;
   let tmp2 = dependencyMap;
   ({ projectId, isPreview, disabled, fallback } = def);
-  let obj = def(12458);
+  let obj = def(12493);
   const conjureSettingsGuildId = obj.useConjureSettingsGuildId(projectId, isPreview);
   let obj2 = def(504);
   const items = [GuildChannelStore];
@@ -69,14 +69,14 @@ function ConjureChannelSettingRow(def) {
   if (null != conjureSettingsGuildId) {
     if (null != stateFromStores) {
       let channelName;
-      const tmpResult = tmp(7413);
+      const tmpResult = tmp(7419);
       const result = tmpResult.conjureSettingChannels(stateFromStores, def.channel_filter);
       c4 = result;
       found = result.find((id) => id.id === importDefault);
       if (found == null) {
         found = null;
       }
-      const TableRowGroup = tmp(7054).TableRowGroup;
+      const TableRowGroup = tmp(7060).TableRowGroup;
       let obj3 = {
         label: def.label,
         subLabel: tmp6Result,
@@ -96,7 +96,7 @@ function ConjureChannelSettingRow(def) {
                 guild: GuildStore.getGuild(conjureSettingsGuildId),
                 channels,
                 selectedChannel: found,
-                noChannelOptionLabel: intl.string(_modDef3865["jtBVV+"]),
+                noChannelOptionLabel: intl.string(_modDef3868["jtBVV+"]),
                 onSelect(id) {
                   let str;
                   const tmp = closure_1_2;
@@ -116,21 +116,21 @@ function ConjureChannelSettingRow(def) {
             }
       };
       tmp6Result = undefined;
-      const TableRow = tmp(6969).TableRow;
+      const TableRow = tmp(6975).TableRow;
       if (null != hint) {
         const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "text-xs/medium") };
-        const Text = tmp(5619).Text;
+        const Text = tmp(5624).Text;
         let str = "text-xs/medium";
-        tmpResult3 = tmp(12447);
+        tmpResult3 = tmp(12482);
         tmp6Result = tmp6(Text, obj4);
       }
-      TableRowTrailingText = tmp(6980).TableRowTrailingText;
+      TableRowTrailingText = tmp(6986).TableRowTrailingText;
       if (null != found) {
-        const tmpResult4 = tmp(5647);
+        const tmpResult4 = tmp(5652);
         channelName = tmpResult4.computeChannelName(found, UserStore, RelationshipStore, true);
       } else {
-        let intl = tmp(1114).intl;
-        channelName = intl.string(_modDef3865.iZIF9m);
+        let intl = tmp(1113).intl;
+        channelName = intl.string(_modDef3868.iZIF9m);
       }
       const obj5 = { hasIcons: false, children: closure_12(TableRow, obj3) };
       obj6 = { text: channelName };
@@ -988,7 +988,7 @@ export default function useConjureAppSettingsForm(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;

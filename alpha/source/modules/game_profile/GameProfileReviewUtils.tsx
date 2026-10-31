@@ -1,15 +1,15 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9392
+// Function ID: 9393
 // Name: GameProfileReviewUtils
-// Dependencies: [1114, 9320, 9373, 2037, 9325, 2]
+// Dependencies: [1113, 9340, 9393, 2035, 9345, 2]
 // Exports: canShowOpenCriticReview, getMobileStoreReviews, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 9372 (GameProfileReviewUtils)
-import intl11 from "intl" /* 1114 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2037 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9325 */;
-import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 9373 */;
+// Module 9392 (GameProfileReviewUtils)
+import intl11 from "intl" /* 1113 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2035 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9345 */;
+import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 9393 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -65,16 +65,16 @@ export function getMobileStoreReviews(arg0) {
           const _Intl = Intl;
           const self = this;
           const self2 = this;
-          const numberFormat = new Intl.NumberFormat(tmp9(1114).intl.currentLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+          const numberFormat = new Intl.NumberFormat(tmp9(1113).intl.currentLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
           const formatResult = numberFormat.format(rating);
           const obj2 = { key: tmp, url, title, ratingText: str.toString(), ratingCountText: str2.toString(), accessibilityLabel: str3.toString(), action: obj.action };
-          const intl = tmp9(1114).intl;
+          const intl = tmp9(1113).intl;
           const obj3 = { rating: formatResult };
           str = intl.format(intl11.t["zdL4/T"], obj3);
-          const intl2 = tmp9(1114).intl;
+          const intl2 = tmp9(1113).intl;
           const obj4 = { rating_count: ratingCount };
           str2 = intl2.format(intl11.t.u1m2hs, obj4);
-          const intl3 = tmp9(1114).intl;
+          const intl3 = tmp9(1113).intl;
           const obj5 = { store: title, rating: formatResult, rating_count: ratingCount };
           const items = [obj2];
           items1 = items;
@@ -119,34 +119,34 @@ export function getSteamReviewScoreDescriptionColor(NO_USER_REVIEWS) {
 }
 export function getSteamReviewScoreDescriptionIntl(result) {
   if (GameDetectionTypes.SteamReviewScoreDescription.NO_USER_REVIEWS === result) {
-    const intl10 = tmp(1114).intl;
+    const intl10 = tmp(1113).intl;
     return intl10.string(intl11.t.CLMt8J);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.OVERWHELMINGLY_POSITIVE === result) {
-    const intl9 = tmp(1114).intl;
+    const intl9 = tmp(1113).intl;
     return intl9.string(intl11.t["75sx1S"]);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.VERY_POSITIVE === result) {
-    const intl8 = tmp(1114).intl;
+    const intl8 = tmp(1113).intl;
     return intl8.string(intl11.t["EkOVg+"]);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.POSITIVE === result) {
-    const intl7 = tmp(1114).intl;
+    const intl7 = tmp(1113).intl;
     return intl7.string(intl11.t.ZUkFtr);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.MOSTLY_POSITIVE === result) {
-    const intl6 = tmp(1114).intl;
+    const intl6 = tmp(1113).intl;
     return intl6.string(intl11.t.M7Z09a);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.MIXED === result) {
-    const intl5 = tmp(1114).intl;
+    const intl5 = tmp(1113).intl;
     return intl5.string(intl11.t.c8yuHR);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.MOSTLY_NEGATIVE === result) {
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1113).intl;
     return intl4.string(intl11.t.H0MSjG);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.NEGATIVE === result) {
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1113).intl;
     return intl3.string(intl11.t.vpLrgz);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.VERY_NEGATIVE === result) {
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     return intl2.string(intl11.t["5spYuX"]);
   } else if (GameDetectionTypes.SteamReviewScoreDescription.OVERWHELMINGLY_NEGATIVE === result) {
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     return intl.string(intl11.t.A8uk5J);
   } else {
     return null;

@@ -1,16 +1,16 @@
-// Module ID: 11063
-// Function ID: 11064
+// Module ID: 11082
+// Function ID: 11083
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 5009, 575, 1114, 5751, 5244, 11057, 11064, 11018, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1113, 5756, 5249, 11076, 11083, 11037, 2]
 
-// Module 11063 (MessageFailedToSendNotification)
+// Module 11082 (MessageFailedToSendNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import flow_Client from "flow/Client" /* 5244 */;
-import transitionToChannel from "transitionToChannel" /* 5751 */;
+import flow_Client from "flow/Client" /* 5249 */;
+import transitionToChannel from "transitionToChannel" /* 5756 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -24,9 +24,9 @@ const memoResult = react.memo(function MessageFailedToSendNotification(notificat
   let intl2;
   notification = notification.notification;
   let channelId;
-  let obj = { type: "simple", text: intl.string(channelId(1114).t.Q0x94X) };
+  let obj = { type: "simple", text: intl.string(channelId(1113).t.Q0x94X) };
   const tmp = closure_6();
-  intl = channelId(1114).intl;
+  intl = channelId(1113).intl;
   channelId = notification.channelId;
   const messageId = notification.messageId;
   const items = [channelId, messageId];
@@ -35,12 +35,12 @@ const memoResult = react.memo(function MessageFailedToSendNotification(notificat
     const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj2);
   }, items);
-  const NotificationPressable = channelId(11057).NotificationPressable;
+  const NotificationPressable = channelId(11076).NotificationPressable;
   ({ size: "md", color: messageId(575).colors.ICON_SUBTLE });
-  const RetryIcon = channelId(11064).RetryIcon;
-  ({ text: intl2.string(channelId(1114).t.xxRPOT) });
-  const SystemMessageText = channelId(11018).SystemMessageText;
-  intl2 = channelId(1114).intl;
+  const RetryIcon = channelId(11083).RetryIcon;
+  ({ text: intl2.string(channelId(1113).t.xxRPOT) });
+  const SystemMessageText = channelId(11037).SystemMessageText;
+  intl2 = channelId(1113).intl;
   return <NotificationPressable icon={null} header={obj} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });
 size = size_mod;

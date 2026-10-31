@@ -1,9 +1,9 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 11024
+// Function ID: 11025
 // Name: InAppNotificationActionCreators
 // Dependencies: [572, 2]
 
-// Module 11005 (InAppNotificationActionCreators)
+// Module 11024 (InAppNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 1942
-// Function ID: 1943
+// Module ID: 1941
+// Function ID: 1942
 // Name: parse
-// Dependencies: [32, 1943, 1900, 1944, 1945, 1946, 2]
+// Dependencies: [32, 1942, 1899, 1943, 1944, 1945, 2]
 // Exports: getMessage, setUpdateRules
 
-// Module 1942 (parse)
-import _modDef1900 from "module_1900" /* 1900 */;
-import _modDef1944 from "module_1944" /* 1944 */;
-import markdownRules from "markdownRules" /* 1945 */;
-import updateRules from "updateRules" /* 1946 */;
+// Module 1941 (parse)
+import _modDef1899 from "module_1899" /* 1899 */;
+import _modDef1943 from "module_1943" /* 1943 */;
+import markdownRules from "markdownRules" /* 1944 */;
+import updateRules from "updateRules" /* 1945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 1943 */;
+import Constants from "Constants" /* 1942 */;
 import size from "module_2" /* 2 */;
 
-let f121435, f121436;
+let f121808, f121809;
 
 let c9;
 let metroImportAll;
@@ -30,8 +30,8 @@ class FormattedMessage {
     const obj = Object.create(prototype);
     obj.message = replaced;
     obj.hasMarkdown = hasMarkdown;
-    obj.intlMessage = new _modDef1900(obj.message, arg1);
-    new _modDef1900(obj.message, arg1);
+    obj.intlMessage = new _modDef1899(obj.message, arg1);
+    new _modDef1899(obj.message, arg1);
     return obj;
   }
   format(arg0) {
@@ -42,7 +42,7 @@ class FormattedMessage {
       [first, tmp4] = self.getContext(arg0);
       const intlMessage2 = self.intlMessage;
       const formatResult = intlMessage2.format(first);
-      if (typeof f121435 === "function") {
+      if (typeof f121808 === "function") {
         const hasItem = formatResult.includes("\n\n");
         let text = formatResult;
         const tmp7 = !hasItem;
@@ -65,7 +65,7 @@ class FormattedMessage {
     let first;
     let tmp3;
     [first, tmp3] = this.getContext(arg0);
-    if (typeof f121436 === "function") {
+    if (typeof f121809 === "function") {
       const obj = { inline: false, context: first, unsafeContext: tmp3 };
       return closure_132_0(tmp4 + "\n\n", obj);
     } else {
@@ -110,13 +110,13 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/pa
 export { FormattedMessage };
 export function setUpdateRules(fn) {
   const rules = markdownRules.rules;
-  const obj = _modDef1944;
+  const obj = _modDef1943;
   obj.parserFor(fn(rules));
-  const reactFor = _modDef1944.reactFor;
-  _modDef1944;
-  const obj2 = _modDef1944;
+  const reactFor = _modDef1943.reactFor;
+  _modDef1943;
+  const obj2 = _modDef1943;
   let closure_1 = reactFor(obj2.ruleOutput(rules, "react"));
-  f121435 = (arr, context, unsafeContext) => {
+  f121808 = (arr, context, unsafeContext) => {
     const hasItem = arr.includes("\n\n");
     let text = arr;
     const tmp2 = !hasItem;
@@ -129,9 +129,9 @@ export function setUpdateRules(fn) {
     return closure_1(closure_0(text, obj));
   };
   const rules2 = markdownRules.rules;
-  const obj3 = _modDef1944;
+  const obj3 = _modDef1943;
   let closure_0 = obj3.parserFor(rules2);
-  f121436 = (arg0, context, unsafeContext) => {
+  f121809 = (arg0, context, unsafeContext) => {
     const obj = { inline: false, context, unsafeContext };
     return closure_0(arg0 + "\n\n", obj);
   };
@@ -141,16 +141,16 @@ export function getMessage(str, arg1) {
     return "";
   } else {
     let tmp5;
-    if (null == f121435) {
+    if (null == f121808) {
       const _default = updateRules.default;
       const rules = markdownRules.rules;
-      let obj = _modDef1944;
+      let obj = _modDef1943;
       obj.parserFor(_default(rules));
-      const reactFor = _modDef1944.reactFor;
-      _modDef1944;
-      const obj2 = _modDef1944;
+      const reactFor = _modDef1943.reactFor;
+      _modDef1943;
+      const obj2 = _modDef1943;
       let closure_1 = reactFor(obj2.ruleOutput(rules, "react"));
-      f121435 = (arr, context, unsafeContext) => {
+      f121808 = (arr, context, unsafeContext) => {
         const hasItem = arr.includes("\n\n");
         let text = arr;
         const tmp2 = !hasItem;
@@ -163,9 +163,9 @@ export function getMessage(str, arg1) {
         return closure_1(closure_0(text, obj));
       };
       const rules2 = markdownRules.rules;
-      const obj3 = _modDef1944;
+      const obj3 = _modDef1943;
       let closure_0 = obj3.parserFor(rules2);
-      f121436 = (arg0, context, unsafeContext) => {
+      f121809 = (arg0, context, unsafeContext) => {
         const obj = { inline: false, context, unsafeContext };
         return closure_0(arg0 + "\n\n", obj);
       };
@@ -186,9 +186,9 @@ export function getMessage(str, arg1) {
         obj4.hasMarkdown = isMatch1;
         const self2 = this;
         const self3 = this;
-        obj4.intlMessage = new _modDef1900(obj4.message, arg1);
+        obj4.intlMessage = new _modDef1899(obj4.message, arg1);
         tmp5 = obj4;
-        const tmp12 = new _modDef1900(obj4.message, arg1);
+        const tmp12 = new _modDef1899(obj4.message, arg1);
       } else {
         throw new TypeError("Trying to call a non-function");
       }

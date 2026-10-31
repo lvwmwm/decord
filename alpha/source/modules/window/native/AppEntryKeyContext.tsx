@@ -1,10 +1,10 @@
-// Module ID: 1495
-// Function ID: 1496
+// Module ID: 1494
+// Function ID: 1495
 // Name: AppEntryKeyContext
 // Dependencies: [19, 3, 2]
 // Exports: useAppEntryKey
 
-// Module 1495 (AppEntryKeyContext)
+// Module 1494 (AppEntryKeyContext)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

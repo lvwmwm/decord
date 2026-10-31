@@ -1,9 +1,9 @@
-// Module ID: 4858
-// Function ID: 4859
+// Module ID: 4863
+// Function ID: 4864
 // Name: ChannelStore
-// Dependencies: [32, 5, 4859, 4861, 4862, 502, 4880, 1384, 1072, 4865, 3, 1380, 4887, 4907, 4908, 572, 4909, 10, 11, 4910, 12, 504, 2]
+// Dependencies: [32, 5, 4864, 4866, 4867, 502, 4885, 1383, 1072, 4870, 3, 1379, 4892, 4912, 4913, 572, 4914, 10, 11, 4915, 12, 504, 2]
 
-// Module 4858 (ChannelStore)
+// Module 4863 (ChannelStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -11,19 +11,19 @@ import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4865 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4887 */;
-import ChannelReaderDefault from "ChannelReader" /* 4908 */;
-import deserializeChannels from "deserializeChannels" /* 4909 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4910 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4892 */;
+import ChannelReaderDefault from "ChannelReader" /* 4913 */;
+import deserializeChannels from "deserializeChannels" /* 4914 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4915 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4859 */;
-import FavoriteStore from "FavoriteStore" /* 4861 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4864 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f86340 = (item) => isChangelogUserDefault(item);
+const f86554 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -198,7 +198,7 @@ function setChannel(isPrivate) {
     } else {
       delete closure_33[id3];
       const recipients = isPrivate.recipients;
-      if (null == recipients.find(f86340)) {
+      if (null == recipients.find(f86554)) {
         closure_22[isPrivate.id] = isPrivate;
         if (isPrivate.type === ChannelTypes.DM) {
           closure_26[isPrivate.getRecipientId()] = isPrivate.id;
@@ -255,7 +255,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f86340)) {
+  if (null != recipients.find(f86554)) {
     return false;
   } else {
     closure_22[recipients.id] = recipients;
@@ -586,7 +586,7 @@ class ChannelLoader {
     let closure_2;
     let found;
     const tmp = found;
-    found = items.filter(found(1380).isNotNullish);
+    found = items.filter(found(1379).isNotNullish);
     if (0 === found.length) {
       let tmp8 = null;
       return null;
@@ -603,7 +603,7 @@ class ChannelLoader {
         dependencyMap = closure_32;
         let tmp7 = _asyncToGenerator;
         let str = "loadChannels";
-        const tmpResult = tmp(4907);
+        const tmpResult = tmp(4912);
         return tmpResult.tryLoadOrResetCacheGatewayAsync("loadChannels", _asyncToGenerator(async (arg0, value) => {
           let closure_1;
           if (c7 === 2) {
@@ -619,7 +619,7 @@ class ChannelLoader {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               while (true) {

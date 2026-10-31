@@ -1,148 +1,108 @@
 // Module ID: 16214
 // Function ID: 16215
-// Dependencies: [32, 16215]
-// Exports: default
+// Dependencies: [41, 42]
+// Exports: memoize
 
 // Module 16214
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let regex;
-
-const re3 = /^(image)\/.*$/i;
-let closure_4 = {};
-
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+function monadic(call, get, fn, num) {
+  let tmp2 = num;
+  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
+  if (!tmp) {
+    tmp2 = fn(num);
   }
-  return (arg0) => {
-    let closure_0 = arg0;
-    function onSend(data, _url) {
-      if (merged.ignoreUrls) {
-        const ignoreUrls = merged.ignoreUrls;
-        if (ignoreUrls.test(_url._url)) {
-          _url._skipReactotron = true;
-        }
-      }
-      sum = sum + 1;
-      _url._trackingName = sum;
-      closure_4[sum] = { data, xhr: _url, stopTimer: closure_0.startTimer() };
-      ({ data, xhr: _url, stopTimer: closure_0.startTimer() });
-    }
-    function onResponse(status, arg1, _bodyBlob, arg3, arg4, _skipReactotron) {
-      let data;
-      let responseHeaders;
-      let closure_1 = _bodyBlob;
-      regex = _skipReactotron;
-      if (!_skipReactotron._skipReactotron) {
-        let _url = arg3;
-        obj = null;
-        let num2 = -1;
-        if (arg3) {
-          let str = "?";
-          num2 = _url.indexOf("?");
-        }
-        let tmp2 = null;
-        if (num2 > -1) {
-          obj = {};
-          const str2 = _url.substr(num2 + 1);
-          const parts = str2.split("&");
-          const item = parts.forEach((item) => {
-            let str;
-            let tmp2;
-            [tmp2, str] = closure_3_2(item.split("="), 2);
-            closure_3_2(item.split("="), 2);
-            const tmp3 = tmp2 && undefined !== str;
-            if (tmp3) {
-              const _decodeURIComponent = decodeURIComponent;
-              obj[tmp2] = decodeURIComponent(str.replace(/\+/g, " "));
-            }
-          });
-          tmp2 = obj;
-        }
-        const _trackingName = _skipReactotron._trackingName;
-        let tmp5 = closure_4[_trackingName];
-        const tmp4 = closure_4;
-        if (!tmp5) {
-          tmp5 = { xhr: _skipReactotron };
-          const obj2 = { xhr: _skipReactotron };
-        }
-        tmp4[_trackingName] = null;
-        ({ stopTimer: closure_4, data } = tmp5);
-        if (!_url) {
-          _url = tmp5.xhr._url;
-        }
-        const request = { url: _url, method: _skipReactotron._method || null, data, headers: _skipReactotron._headers || null, params: tmp2 };
-        let str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["content-type"];
-        if (!str4) {
-          str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["Content-Type"];
-        }
-        if (!str4) {
-          str4 = "";
-        }
-        function sendResponse(result) {
-          let str = "~~~ skipped ~~~";
-          if (result) {
-            try {
-              const _JSON = JSON;
-              str = JSON.parse(result);
-            } catch (err) {
-              str = _bodyBlob;
-            }
-          }
-          const response = { body: str, status, headers: responseHeaders.responseHeaders || null };
-          let tmp4Result = null;
-          const apiResponse = status.apiResponse;
-          const tmp3 = request;
-          if (closure_4) {
-            tmp4Result = tmp4();
-          }
-          apiResponse(tmp3, response, tmp4Result);
-        }
-        if (typeof _bodyBlob === "string") {
-          const test = regex.test;
-          if (!str4) {
-            str4 = "";
-          }
-          if (!test(str4)) {
-            if ("blob" === arg4) {
-              const _FileReader = FileReader;
-              if (typeof FileReader !== "undefined") {
-                if (_bodyBlob) {
-                  const _FileReader2 = FileReader;
-                  const self = this;
-                  const self2 = this;
-                  const fileReader = new FileReader();
-                  function brListener() {
-                    sendResponse(fileReader.result);
-                    const removed = fileReader.removeEventListener("loadend", brListener);
-                  }
-                  const listener = fileReader.addEventListener("loadend", brListener);
-                  const asText = fileReader.readAsText(_bodyBlob);
-                }
-              }
-            }
-            sendResponse(_bodyBlob);
-          }
-        }
-        sendResponse("");
-      }
-    }
-    const merged = Object.assign({}, closure_4, obj);
-    let closure_2 = merged.ignoreContentTypes || re3;
-    let sum = 1000;
-    closure_4 = {};
-    obj = {
-      onConnect() {
-        const XHRInterceptor = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor.setSendCallback(onSend);
-        const XHRInterceptor2 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor2.setResponseCallback(onResponse);
-        const XHRInterceptor3 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor3.enableInterception();
-      }
-    };
-    return obj;
-  };
+  let value = get.get(tmp2);
+  if (undefined === value) {
+    const callResult = call.call(this, num);
+    const result = get.set(tmp2, callResult);
+    value = callResult;
+  }
+  return value;
+}
+function variadic(apply, get, fn) {
+  const callResult = slice.call(arguments, 3);
+  const tmp2 = fn(callResult);
+  let value = get.get(tmp2);
+  if (undefined === value) {
+    const self = this;
+    const applyResult = apply.apply(this, callResult);
+    const result = get.set(tmp2, applyResult);
+    value = applyResult;
+  }
+  return value;
+}
+function strategyDefault(c165, cache) {
+  cache = cache.cache;
+  const obj = 1 === c165.length ? monadic : variadic;
+  return obj.bind(this, c165, cache.create(), cache.serializer);
+}
+function serializerDefault() {
+  return JSON.stringify(arguments);
+}
+class ObjectWithoutPrototypeCache {
+  constructor() {
+    _classCallCheck(this, ObjectWithoutPrototypeCache);
+    this.cache = Object.create(null);
+  }
+}
+const entry = {
+  key: "get",
+  value: function get(arg0) {
+    return this.cache[arg0];
+  }
 };
+const items = [
+  entry,
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      this.cache[arg0] = arg1;
+    }
+  }
+];
+let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
+let closure_6 = {
+  create() {
+    const tmp = new closure_5();
+    return tmp;
+  }
+};
+let obj = {
+  variadic: function strategyVariadic(c165, cache) {
+    cache = cache.cache;
+    return variadic.bind(this, c165, cache.create(), cache.serializer);
+  },
+  monadic: function strategyMonadic(c165, cache) {
+    cache = cache.cache;
+    return monadic.bind(this, c165, cache.create(), cache.serializer);
+  }
+};
+
+export function memoize(arg0, cache) {
+  const tmp = cache;
+  if (tmp) {
+    if (cache.cache) {
+      cache = cache.cache;
+    }
+    if (cache) {
+      let serializer;
+      if (cache.serializer) {
+        serializer = cache.serializer;
+      }
+      if (cache) {
+        let strategy;
+        if (cache.strategy) {
+          strategy = cache.strategy;
+        }
+        const obj = { cache, serializer };
+        return strategy(arg0, obj);
+      }
+      strategy = strategyDefault;
+    }
+    serializer = serializerDefault;
+  }
+  cache = closure_6;
+}
+export const strategies = obj;

@@ -1,28 +1,27 @@
-// Module ID: 19203
-// Function ID: 19204
+// Module ID: 19255
+// Function ID: 19256
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 5009, 5006, 575, 16252, 1626, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 5011, 575, 16294, 16295, 1625, 5624, 2]
 // Exports: default
 
-// Module 19203 (ActivitiesDebugOverlay)
+// Module 19255 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useThermalState from "useThermalState" /* 16252 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useThermalStateDefault from "useThermalState" /* 16294 */;
+import ThermalStates from "ThermalStates" /* 16295 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import ColorUtils_mod from "ColorUtils" /* 5006 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import ColorUtils_mod from "ColorUtils" /* 5011 */;
 import size from "module_2" /* 2 */;
-
-const useThermalStateDefault = useThermalState;
 
 let ColorUtils;
 let closure_4;
 let hasOwnProperty;
 let rect;
 let tmp2;
-const useSafeAreaInsetsDefault = tmp2(1626);
+const useSafeAreaInsetsDefault = tmp2(1625);
 const View = react_native.View;
 ({ jsxs: closure_4, jsx: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -41,17 +40,17 @@ export default function ActivitiesDebugOverlay() {
   const tmp4 = useThermalStateDefault();
   let str = "text-overlay-light";
   let str2 = "";
-  if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
+  if (ThermalStates.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (useThermalState.ThermalStates.NOMINAL !== tmp4) {
+    if (ThermalStates.ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (useThermalState.ThermalStates.FAIR !== tmp4) {
+      if (ThermalStates.ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (useThermalState.ThermalStates.SERIOUS !== tmp4) {
-          if (useThermalState.ThermalStates.CRITICAL === tmp4) {
+        if (ThermalStates.ThermalStates.SERIOUS !== tmp4) {
+          if (ThermalStates.ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

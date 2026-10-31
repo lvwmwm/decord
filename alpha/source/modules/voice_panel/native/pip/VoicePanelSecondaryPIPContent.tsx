@@ -1,31 +1,31 @@
-// Module ID: 19229
-// Function ID: 19230
+// Module ID: 19285
+// Function ID: 19286
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 4857, 6840, 4858, 2019, 5652, 6841, 21, 5009, 11203, 19146, 504, 4930, 5090, 12233, 5673, 19079, 7235, 12068, 12072, 11756, 2]
+// Dependencies: [19, 4862, 6846, 4863, 5657, 6847, 11693, 21, 5014, 11222, 19197, 504, 4935, 5095, 12271, 5678, 19128, 7241, 12106, 12110, 11793, 2]
 // Exports: default
 
-// Module 19229 (VoicePanelSecondaryPIPContent)
+// Module 19285 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 2019 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5652 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12233 */;
-import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 19079 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
+import Constants from "Constants" /* 11693 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
+import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 19128 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
-import FramesStore from "FramesStore" /* 6840 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
-import createStyles from "createStyles" /* 5009 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let pipOrientationLockState;
 
 let c10;
 let c9;
-let unpackModuleId;
-const ActivityLayoutMode = Constants.ActivityLayoutMode;
+let metroImportAll;
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-({ asLaunched: c9, FrameLayoutModes: c10, getPipOrientationLockStateForFrame: unpackModuleId } = FramesConstants);
+({ asLaunched: metroImportAll, FrameLayoutModes: c9, getPipOrientationLockStateForFrame: c10 } = FramesConstants);
+const ActivityLayoutMode = Constants.ActivityLayoutMode;
 const jsx = Fragment.jsx;
 let closure_13 = createStyles.createStyles({ activityContainer: { flex: 1 }, wrapper: { position: "absolute", left: "50%", top: "50%" } });
 const __initData = { code: "function VoicePanelSecondaryPIPContentTsx1(){const{pipState,roundToNearestPixel}=this.__closure;const scale=pipState.scale.get();const width=pipState.width*scale;const height=pipState.height*scale;return{width:width,height:height,marginLeft:roundToNearestPixel(width/2)*-1,marginTop:roundToNearestPixel(height/2)*-1};}" };
@@ -77,12 +77,12 @@ export default function VoicePanelSecondaryPIPContent() {
   const items1 = [FramesStore];
   const stateFromStoresObject1 = obj3.useStateFromStoresObject(items1, () => {
     let activityPanelMode;
-    const tmp = closure_1_9(mainFrame.getMainFrame());
+    const tmp = closure_1_8(mainFrame.getMainFrame());
     let id;
     if (tmp != null) {
       id = tmp.id;
     }
-    const obj = { mainFrameId: id, framePanelMode: activityPanelMode, framePipOrientationLockState: closure_1_11(tmp) };
+    const obj = { mainFrameId: id, framePanelMode: activityPanelMode, framePipOrientationLockState: closure_1_10(tmp) };
     activityPanelMode = undefined;
     if (tmp != null) {
       activityPanelMode = tmp.data.activityPanelMode;
@@ -96,7 +96,7 @@ export default function VoicePanelSecondaryPIPContent() {
   const items2 = [ChannelStore];
   const obj4 = windowDimensions(connectedEmbeddedActivityChannelId[11]);
   const stateFromStores = obj4.useStateFromStores(items2, () => ChannelStore.getChannel(connectedEmbeddedActivityChannelId));
-  const fn = function s() {
+  const fn = function p() {
     const scale = pIPState.scale;
     const value = scale.get();
     const result = pIPState.width * value;

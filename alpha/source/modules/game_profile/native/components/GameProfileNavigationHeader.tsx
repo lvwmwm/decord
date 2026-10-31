@@ -1,17 +1,17 @@
-// Module ID: 9602
-// Function ID: 9603
+// Module ID: 9622
+// Function ID: 9623
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5009, 575, 5591, 5090, 5249, 1410, 8983, 5712, 5619, 9357, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5596, 5095, 5254, 1409, 8992, 5717, 5624, 9377, 2]
 // Exports: default
 
-// Module 9602 (GameProfileNavigationHeader)
+// Module 9622 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
-import AvatarUtils from "AvatarUtils" /* 1410 */;
-import timing from "timing" /* 5249 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import timing from "timing" /* 5254 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -55,12 +55,12 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   let tmp = closure_8();
   const tmp2 = game;
-  let obj = game(5591);
+  let obj = game(5596);
   dependencyMap = tmp6;
   const token = obj.useToken(application(575).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
-  const useSharedValue = game(5090).useSharedValue;
-  const tmp7 = game(5090);
+  const useSharedValue = game(5095).useSharedValue;
+  const tmp7 = game(5095);
   if (null != headerRight) {
     num = 1;
   }
@@ -83,7 +83,7 @@ export default function GameProfileNavigationHeader(game) {
   fn.__closure = { headerRightProgress: sharedValue };
   fn.__workletHash = 16001524280109;
   fn.__initData = __initData;
-  const tmp2Result = tmp2(5090);
+  const tmp2Result = tmp2(5095);
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const fn2 = function b() {
     const obj = { opacity: 1 - sharedValue.get() };
@@ -93,7 +93,7 @@ export default function GameProfileNavigationHeader(game) {
   fn2.__workletHash = 5182160908530;
   fn2.__initData = __initData2;
   const items1 = [game, application];
-  const tmp2Result2 = tmp2(5090);
+  const tmp2Result2 = tmp2(5095);
   const animatedStyle1 = tmp2Result2.useAnimatedStyle(fn2);
   const memo = sharedValue.useMemo(() => {
     let iconURL;
@@ -139,18 +139,18 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj2 = { style: tmp.headerContainer, children: items2 };
     const obj3 = { android_fallbackColor: token };
-    items2 = [closure_6(tmp2(8983).BackgroundBlurFill, obj3), ];
+    items2 = [closure_6(tmp2(8992).BackgroundBlurFill, obj3), ];
     let tmp18Result = null != memo;
     const obj4 = { style: tmp.headerRow, children: items3 };
     if (tmp18Result) {
       const obj5 = { source: obj6, style: tmp.icon };
       obj6 = { uri: memo };
-      tmp18Result = tmp18(tmp4(5712), obj5);
+      tmp18Result = tmp18(tmp4(5717), obj5);
     }
     items3 = [tmp18Result, , ];
     const obj7 = { style: tmp.titleContainer, children: items4 };
     const obj8 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items4 = [closure_6(tmp2(5619).Heading, obj8), ];
+    items4 = [closure_6(tmp2(5624).Heading, obj8), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -159,10 +159,10 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp16Result) {
       const obj10 = { rank: game.l30Rank, compact: true };
       const obj9 = { style: tmp.rankPillContainer, children: items5 };
-      items5 = [closure_6(tmp4(9357), obj10), ];
-      const obj11 = { style: items6, children: closure_6(application(9357), obj12) };
+      items5 = [closure_6(tmp4(9377), obj10), ];
+      const obj11 = { style: items6, children: closure_6(application(9377), obj12) };
       items6 = [StyleSheet.absoluteFill, animatedStyle1];
-      const View = tmp4(5090).View;
+      const View = tmp4(5095).View;
       obj12 = { rank: game.l30Rank };
       items5[1] = closure_6(View, obj11);
       tmp16Result = tmp16(tmp17, obj9);
@@ -173,7 +173,7 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp18Result2) {
       const obj13 = { style: items7, children: headerRight() };
       items7 = [tmp.headerRight, animatedStyle];
-      const View2 = tmp4(5090).View;
+      const View2 = tmp4(5095).View;
       tmp18Result2 = tmp18(View2, obj13);
     }
     items3[2] = tmp18Result2;

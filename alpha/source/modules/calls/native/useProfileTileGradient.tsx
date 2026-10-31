@@ -1,11 +1,11 @@
-// Module ID: 8816
-// Function ID: 8817
+// Module ID: 8824
+// Function ID: 8825
 // Name: useProfileTileGradient
-// Dependencies: [32, 19, 8749, 8817, 8750, 8818, 2]
+// Dependencies: [32, 19, 8757, 8825, 8758, 8826, 2]
 // Exports: default
 
-// Module 8816 (useProfileTileGradient)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8750 */;
+// Module 8824 (useProfileTileGradient)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

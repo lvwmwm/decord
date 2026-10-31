@@ -1,17 +1,17 @@
-// Module ID: 7579
-// Function ID: 7580
+// Module ID: 7586
+// Function ID: 7587
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2053, 1072, 1386, 5954, 1114, 1253, 6529, 7580, 7585, 7586, 7587, 2048, 2]
+// Dependencies: [5, 2052, 1072, 1385, 5959, 1113, 1252, 6535, 7587, 7592, 7593, 7594, 2047, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7579 (GuildBoostPurchasingUtils)
-import intl3 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
+// Module 7586 (GuildBoostPurchasingUtils)
+import intl3 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let allowYearlyBundles, analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

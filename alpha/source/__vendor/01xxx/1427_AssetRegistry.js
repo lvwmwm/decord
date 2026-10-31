@@ -1,10 +1,10 @@
 // Module ID: 1427
 // Function ID: 1428
 // Name: AssetRegistry
-// Dependencies: [1120]
+// Dependencies: [1119]
 
 // Module 1427 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1120 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/provisional_account_avatars", width: 320, height: 320, scales: [1], hash: "aedb4c161a8b10bd63dac9d5860c62fe", name: "default_provisional_avatar_1", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/provisional_account_avatars", width: 320, height: 320, scales: [1], hash: "76a844d17fcdbbb8dd91d3757efd431a", name: "default_provisional_avatar_2", type: "png" });

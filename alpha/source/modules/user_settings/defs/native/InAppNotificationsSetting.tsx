@@ -1,19 +1,19 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17468
+// Function ID: 17469
 // Name: InAppNotificationsSetting
-// Dependencies: [8424, 1072, 4834, 10999, 1114, 2867, 1253, 11505, 16236, 17409, 2]
+// Dependencies: [8432, 1072, 4839, 11018, 1113, 2868, 1252, 11539, 16277, 17469, 2]
 
-// Module 17408 (InAppNotificationsSetting)
+// Module 17468 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import _modDef2867 from "module_2867" /* 2867 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import FocusModeUtils from "FocusModeUtils" /* 10999 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16236 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17409 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11505 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import _modDef2868 from "module_2868" /* 2868 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import FocusModeUtils from "FocusModeUtils" /* 11018 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16277 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17469 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -45,8 +45,8 @@ let obj2 = {
     let stringResult;
     const obj = FocusModeUtils;
     if (obj.useFocusModeEnabled()) {
-      const intl = tmp(1114).intl;
-      stringResult = intl.string(tmp(1114).t.cIRG0s);
+      const intl = tmp(1113).intl;
+      stringResult = intl.string(tmp(1113).t.cIRG0s);
     }
     return stringResult;
   },
@@ -64,7 +64,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2867.sH5mu9);
+    return intl.string(_modDef2868.sH5mu9);
   },
   useDescription: function useRedesignInAppNotificationsDescription() {
     let stringResult;
@@ -75,7 +75,7 @@ const obj3 = {
     if (focusModeEnabled) {
       stringResult = string(intl2.t.cIRG0s);
     } else {
-      stringResult = string(_modDef2867["T/zMdV"]);
+      stringResult = string(_modDef2868["T/zMdV"]);
     }
     return stringResult;
   },

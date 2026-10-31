@@ -1,18 +1,18 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14541
+// Function ID: 14542
 // Name: IconActionButton
-// Dependencies: [19, 21, 5009, 575, 1376, 1188, 5637, 6974, 5619, 9797, 2]
+// Dependencies: [19, 21, 5014, 575, 1375, 1187, 5642, 6980, 5624, 9818, 2]
 // Exports: default
 
-// Module 14503 (IconActionButton)
+// Module 14541 (IconActionButton)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import useFontScale from "useFontScale" /* 5637 */;
-import shared_components_Badge from "shared_components/Badge" /* 9797 */;
+import native from "native" /* 1187 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import useFontScale from "useFontScale" /* 5642 */;
+import shared_components_Badge from "shared_components/Badge" /* 9818 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const shared_components_BadgeDefault = shared_components_Badge;
@@ -109,7 +109,7 @@ export default function IconActionButton(variant) {
   const obj = { ref, hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, style: items, children: items1 };
   items = [tmp.actionIconButtonPressable, "outlined" === str ? tmp.outlined : tmp.filled, , , ];
   let roundButton;
-  const PressableOpacity = tmp2(6974).PressableOpacity;
+  const PressableOpacity = tmp2(6980).PressableOpacity;
   const tmp7 = hasOwnProperty;
   if (!tmp10Result) {
     roundButton = tmp.roundButton;
@@ -124,13 +124,13 @@ export default function IconActionButton(variant) {
   items1 = [React3(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(5619).Text, obj2);
+    tmp10Result = tmp10(tmp2(5624).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;
   if (num > 0) {
     const obj3 = { style: tmp.countStyle, value: num };
-    tmp10Result2 = tmp10(tmp2(1188).Badge, obj3);
+    tmp10Result2 = tmp10(tmp2(1187).Badge, obj3);
   }
   items1[2] = tmp10Result2;
   if (badge) {

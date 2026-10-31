@@ -3,304 +3,104 @@
 // Dependencies: [8296]
 
 // Module 8297
-const require = globalThis.__r;
+import _modDef8296 from "module_8296" /* 8296 */;
 
-let obj = {
-  0: null,
-  1: {
-    name: "GPSLatitudeRef",
-    description(join) {
-      const joined = join.join("");
-      let str = "North latitude";
-      if ("N" !== joined) {
-        let str2 = "Unknown";
-        if ("S" === joined) {
-          str2 = "South latitude";
-        }
-        str = str2;
-      }
-      return str;
+
+export default {
+  read(buffer, sum) {
+    let str6;
+    let tmp13;
+    let tmp15;
+    let tmp17;
+    const obj = _modDef8296;
+    const shortAt = obj.getShortAt(buffer, sum);
+    let tmp4;
+    if (15 <= shortAt) {
+      const tmpResult = _modDef8296;
+      const byteAt = tmpResult.getByteAt(buffer, sum + 14);
+      const _HermesInternal = HermesInternal;
+      tmp4 = { value: byteAt, description: "" + byteAt + "px" };
+      const obj2 = { value: byteAt, description: "" + byteAt + "px" };
     }
-  },
-  2: { name: "GPSLatitude", description: require("module_8296").getCalculatedGpsValue },
-  3: {
-    name: "GPSLongitudeRef",
-    description(join) {
-      const joined = join.join("");
-      let str = "East longitude";
-      if ("E" !== joined) {
-        let str2 = "Unknown";
-        if ("W" === joined) {
-          str2 = "West longitude";
-        }
-        str = str2;
-      }
-      return str;
+    let tmp7;
+    if (16 <= shortAt) {
+      const tmpResult7 = _modDef8296;
+      const byteAt1 = tmpResult7.getByteAt(buffer, sum + 15);
+      const _HermesInternal2 = HermesInternal;
+      tmp7 = { value: byteAt1, description: "" + byteAt1 + "px" };
+      const obj3 = { value: byteAt1, description: "" + byteAt1 + "px" };
     }
-  },
-  4: null,
-  5: null,
-  6: null,
-  7: null,
-  8: "GPSSatellites",
-  9: null,
-  10: null,
-  11: "GPSDOP",
-  12: null,
-  13: "GPSSpeed",
-  14: null,
-  15: "GPSTrack",
-  16: null,
-  17: "GPSImgDirection",
-  18: "GPSMapDatum",
-  19: null,
-  20: null,
-  21: null,
-  22: null,
-  23: null,
-  24: "GPSDestBearing",
-  25: null,
-  26: "GPSDestDistance",
-  27: null,
-  28: null,
-  29: "GPSDateStamp",
-  30: null,
-  31: "GPSHPositioningError"
-};
-const obj2 = {
-  name: "GPSVersionID",
-  description(arg0) {
-    let str = "Unknown";
-    if (2 === arg0[0]) {
-      str = "Unknown";
-      if (2 === arg0[1]) {
-        str = "Unknown";
-        if (0 === arg0[2]) {
-          str = "Unknown";
-          if (0 === arg0[3]) {
-            str = "Version 2.2";
+    let tmp10;
+    if (9 <= shortAt) {
+      const tmpResult8 = _modDef8296;
+      const byteAt2 = tmpResult8.getByteAt(buffer, sum + 7);
+      const tmpResult9 = _modDef8296;
+      const byteAt3 = tmpResult9.getByteAt(buffer, sum + 7 + 1);
+      tmp10 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+    }
+    const obj5 = { "JFIF Version": tmp10, "Resolution Unit": tmp13, XResolution: tmp15, YResolution: tmp17, "JFIF Thumbnail Width": tmp4, "JFIF Thumbnail Height": tmp7 };
+    tmp13 = undefined;
+    if (10 <= shortAt) {
+      const tmpResult10 = _modDef8296;
+      const byteAt4 = tmpResult10.getByteAt(buffer, sum + 9);
+      const obj6 = { value: byteAt4, description: str6 };
+      str6 = "None";
+      if (0 !== byteAt4) {
+        let str7 = "inches";
+        if (1 !== byteAt4) {
+          let str8 = "Unknown";
+          if (2 === byteAt4) {
+            str8 = "cm";
+          }
+          str7 = str8;
+        }
+        str6 = str7;
+      }
+      tmp13 = obj6;
+    }
+    tmp15 = undefined;
+    if (12 <= shortAt) {
+      const tmpResult11 = _modDef8296;
+      const shortAt1 = tmpResult11.getShortAt(buffer, sum + 10);
+      tmp15 = { value: shortAt1, description: "" + shortAt1 };
+      const obj7 = { value: shortAt1, description: "" + shortAt1 };
+    }
+    tmp17 = undefined;
+    if (14 <= shortAt) {
+      const tmpResult12 = _modDef8296;
+      const shortAt2 = tmpResult12.getShortAt(buffer, sum + 12);
+      tmp17 = { value: shortAt2, description: "" + shortAt2 };
+      const obj8 = { value: shortAt2, description: "" + shortAt2 };
+    }
+    if (undefined !== tmp4) {
+      if (undefined !== tmp7) {
+        const result = 3 * tmp4.value * tmp7.value;
+        let tmp20;
+        if (0 !== result) {
+          if (16 + result <= shortAt) {
+            buffer = buffer.buffer;
+            tmp20 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+            const obj10 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
           }
         }
-      }
-    }
-    return str;
-  }
-};
-obj[0] = obj2;
-({ name: "GPSLatitude", description: require("module_8296").getCalculatedGpsValue });
-obj[4] = { name: "GPSLongitude", description: require("module_8296").getCalculatedGpsValue };
-obj[5] = {
-  name: "GPSAltitudeRef",
-  description(arg0) {
-    let str = "Sea level";
-    if (0 !== arg0) {
-      let str2 = "Unknown";
-      if (1 === arg0) {
-        str2 = "Sea level reference (negative value)";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[6] = {
-  name: "GPSAltitude",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " m";
-  }
-};
-obj[7] = {
-  name: "GPSTimeStamp",
-  description(arr) {
-    const mapped = arr.map((item) => {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      const result = tmp / tmp2;
-      let combined = result;
-      const obj = /^\d(\.|$)/;
-      if (obj.test("" + result)) {
-        const _HermesInternal = HermesInternal;
-        combined = "0" + result;
-      }
-      return combined;
-    });
-    return mapped.join(":");
-  }
-};
-obj[9] = {
-  name: "GPSStatus",
-  description(join) {
-    const joined = join.join("");
-    let str = "Measurement in progress";
-    if ("A" !== joined) {
-      let str2 = "Unknown";
-      if ("V" === joined) {
-        str2 = "Measurement Interoperability";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[10] = {
-  name: "GPSMeasureMode",
-  description(join) {
-    const joined = join.join("");
-    let str = "2-dimensional measurement";
-    if ("2" !== joined) {
-      let str2 = "Unknown";
-      if ("3" === joined) {
-        str2 = "3-dimensional measurement";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[12] = {
-  name: "GPSSpeedRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "Kilometers per hour";
-    if ("K" !== joined) {
-      let str2 = "Miles per hour";
-      if ("M" !== joined) {
-        let str4 = "Unknown";
-        if ("N" === joined) {
-          str4 = "Knots";
+        if (tmp20) {
+          obj5["JFIF Thumbnail"] = tmp20;
         }
-        str2 = str4;
       }
-      str = str2;
     }
-    return str;
-  }
-};
-obj[14] = {
-  name: "GPSTrackRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "True direction";
-    if ("T" !== joined) {
-      let str2 = "Unknown";
-      if ("M" === joined) {
-        str2 = "Magnetic direction";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[16] = {
-  name: "GPSImgDirectionRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "True direction";
-    if ("T" !== joined) {
-      let str2 = "Unknown";
-      if ("M" === joined) {
-        str2 = "Magnetic direction";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[19] = {
-  name: "GPSDestLatitudeRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "North latitude";
-    if ("N" !== joined) {
-      let str2 = "Unknown";
-      if ("S" === joined) {
-        str2 = "South latitude";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[20] = {
-  name: "GPSDestLatitude",
-  description(arg0) {
-    return arg0[0][0] / arg0[0][1] + arg0[1][0] / arg0[1][1] / 60 + arg0[2][0] / arg0[2][1] / 3600;
-  }
-};
-obj[21] = {
-  name: "GPSDestLongitudeRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "East longitude";
-    if ("E" !== joined) {
-      let str2 = "Unknown";
-      if ("W" === joined) {
-        str2 = "West longitude";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[22] = {
-  name: "GPSDestLongitude",
-  description(arg0) {
-    return arg0[0][0] / arg0[0][1] + arg0[1][0] / arg0[1][1] / 60 + arg0[2][0] / arg0[2][1] / 3600;
-  }
-};
-obj[23] = {
-  name: "GPSDestBearingRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "True direction";
-    if ("T" !== joined) {
-      let str2 = "Unknown";
-      if ("M" === joined) {
-        str2 = "Magnetic direction";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[25] = {
-  name: "GPSDestDistanceRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "Kilometers";
-    if ("K" !== joined) {
-      let str2 = "Miles";
-      if ("M" !== joined) {
-        let str4 = "Unknown";
-        if ("N" === joined) {
-          str4 = "Knots";
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      while (keys[16] !== undefined) {
+        if (undefined !== obj5[tmp22]) {
+          continue;
+        } else {
+          delete obj9[tmp23];
+          continue;
         }
-        str2 = str4;
+        continue;
       }
-      str = str2;
     }
-    return str;
+    return obj5;
   }
 };
-({ name: "GPSLongitude", description: require("module_8296").getCalculatedGpsValue });
-obj[27] = { name: "GPSProcessingMethod", description: require("module_8296").getEncodedString };
-({ name: "GPSProcessingMethod", description: require("module_8296").getEncodedString });
-obj[28] = { name: "GPSAreaInformation", description: require("module_8296").getEncodedString };
-obj[30] = {
-  name: "GPSDifferential",
-  description(arg0) {
-    let str = "Measurement without differential correction";
-    if (0 !== arg0) {
-      let str2 = "Unknown";
-      if (1 === arg0) {
-        str2 = "Differential correction applied";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-({ name: "GPSAreaInformation", description: require("module_8296").getEncodedString });
-
-export default obj;

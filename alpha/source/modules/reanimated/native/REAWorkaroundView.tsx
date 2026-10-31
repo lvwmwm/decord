@@ -1,12 +1,12 @@
-// Module ID: 5091
-// Function ID: 5092
+// Module ID: 5096
+// Function ID: 5097
 // Name: REAWorkaroundView
-// Dependencies: [21, 1651, 5092, 2]
+// Dependencies: [21, 1650, 5097, 2]
 
-// Module 5091 (REAWorkaroundView)
+// Module 5096 (REAWorkaroundView)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 5092 */;
-import cancelAnimation from "module_1651" /* 1651 */;
+import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 5097 */;
+import cancelAnimation from "module_1650" /* 1650 */;
 import size from "module_2" /* 2 */;
 
 class ComponentWrapper {

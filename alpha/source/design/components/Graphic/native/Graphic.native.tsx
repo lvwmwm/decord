@@ -1,20 +1,20 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 9964
+// Function ID: 9965
 // Name: Graphic
-// Dependencies: [19, 17, 21, 5009, 5712, 5075, 5180, 2]
+// Dependencies: [19, 17, 21, 5014, 5717, 5080, 5185, 2]
 // Exports: Graphic
 
-// Module 9943 (Graphic)
+// Module 9964 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5075 */;
-import FastImageDefault from "FastImage" /* 5712 */;
+import native from "native" /* 5080 */;
+import FastImageDefault from "FastImage" /* 5717 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const GraphicTypes = tmp(5180);
+const GraphicTypes = tmp(5185);
 function ImageGraphic(src) {
   src = src.src;
   return jsx(FastImageDefault, { source: src, style: closure_7().image, resizeMode: "contain", accessibilityElementsHidden: true });

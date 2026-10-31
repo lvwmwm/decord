@@ -1,27 +1,27 @@
-// Module ID: 9920
-// Function ID: 9921
+// Module ID: 9941
+// Function ID: 9942
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1384, 9921, 1072, 1387, 21, 5009, 575, 5610, 5090, 9922, 5602, 1626, 1376, 7320, 7345, 9928, 5253, 9918, 9929, 5619, 1114, 7212, 9931, 2048, 9876, 1995, 5255, 5256, 9945, 5267, 5209, 9946, 10029, 10051, 2]
+// Dependencies: [32, 19, 17, 1383, 9942, 1072, 1386, 21, 5014, 575, 5615, 5095, 9943, 5607, 1625, 1375, 7326, 7351, 9949, 5258, 9939, 9950, 5624, 1113, 7218, 9952, 2047, 9897, 1994, 5260, 5261, 9966, 5272, 5214, 9967, 10050, 10071, 2]
 // Exports: default
 
-// Module 9920 (EmojiPickerActionSheet)
+// Module 9941 (EmojiPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import EmojiConstants from "EmojiConstants" /* 1387 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import SearchBar2 from "SearchBar" /* 7212 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9918 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9921 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9922 */;
-import BurstReactionToggleDefault from "BurstReactionToggle" /* 9931 */;
+import intl3 from "intl" /* 1113 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import SearchBar2 from "SearchBar" /* 7218 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9939 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9943 */;
+import BurstReactionToggleDefault from "BurstReactionToggle" /* 9952 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -35,7 +35,7 @@ let obj6;
 let obj7;
 let tmp5;
 let unpackModuleId;
-const DoubleTapReminderToast = tmp5(9929);
+const DoubleTapReminderToast = tmp5(9950);
 let react = react_mod;
 const View = react_native.View;
 const EmojiPickerSource = EmojiPickerListConstants.EmojiPickerSource;
@@ -64,11 +64,10 @@ export default function EmojiPickerActionSheet(onClose) {
   let items6;
   let items7;
   let items8;
-  let items9;
   let messageId;
   let onPressEmoji;
   let str;
-  let tmp28;
+  let tmp29;
   let tmp5;
   onClose = onClose.onClose;
   ({ channel, guildId, onPressEmoji } = onClose);
@@ -202,6 +201,7 @@ export default function EmojiPickerActionSheet(onClose) {
     return tmp;
   }, items3);
   const items4 = [tmp, handleTextChange, tmp6, pickerIntention, memo1, source];
+  const items5 = [tmp6, tmp.burstReaction.borderColor];
   const memo2 = obj.useMemo(() => {
     let items;
     let items2;
@@ -246,16 +246,21 @@ export default function EmojiPickerActionSheet(onClose) {
     items[1] = tmp(tmp2, obj2);
     return tmp(tmp2, obj);
   }, items4);
-  if (tmp6) {
-    const items5 = [tmp.burstReaction.borderColor, tmp10(tmp3[9]).unsafe_rawColors.TRANSPARENT];
-    items6 = items5;
-  } else {
-    items6 = [tmp10(tmp3[9]).unsafe_rawColors.TRANSPARENT, tmp10(tmp3[9]).unsafe_rawColors.TRANSPARENT];
-  }
+  const memo3 = obj.useMemo(() => {
+    let items1;
+    const tmp = closure_6;
+    if (tmp) {
+      const items = [closure_4.burstReaction.borderColor, nativeDefault.unsafe_rawColors.TRANSPARENT];
+      items1 = items;
+    } else {
+      items1 = [nativeDefault.unsafe_rawColors.TRANSPARENT, nativeDefault.unsafe_rawColors.TRANSPARENT];
+    }
+    return items1;
+  }, items5);
   const tmp2Result = tmp2(pickerIntention[11]);
   const sharedValue1 = tmp2Result.useSharedValue(-1);
   const ref1 = obj.useRef(null);
-  let obj5 = { value: analyticsLocations, children: items7 };
+  let obj5 = { value: analyticsLocations, children: items6 };
   const AnalyticsLocationProvider = tmp2(tmp3[16]).AnalyticsLocationProvider;
   const tmp2Result4 = tmp2(pickerIntention[15]);
   let isIOSResult = tmp2Result4.isIOS();
@@ -263,30 +268,30 @@ export default function EmojiPickerActionSheet(onClose) {
     const obj6 = { portalHostName: EmojiPickerActionSheet_str, animatedSheetIndex: sharedValue1, followSystemKeyboard: true };
     isIOSResult = ref2(tmp10(tmp3[31]), obj6);
   }
-  items7 = [isIOSResult, ];
-  const obj7 = { backgroundStyles: tmp.background, ref: ref1, scrollable: true, header: memo2, footer: tmp28, startExpanded: flag2, onDismiss: callback, animatedIndex: sharedValue1, onExpand: callback2, borderGradient: items6, contentStyles: items8, children: items9 };
+  items6 = [isIOSResult, ];
+  const obj7 = { backgroundStyles: tmp.background, ref: ref1, scrollable: true, header: memo2, footer: tmp29, startExpanded: flag2, onDismiss: callback, animatedIndex: sharedValue1, onExpand: callback2, borderGradient: memo3, contentStyles: items7, children: items8 };
   BottomSheet = tmp2(tmp3[32]).BottomSheet;
-  tmp28 = undefined;
+  tmp29 = undefined;
   const tmp2Result5 = tmp2(pickerIntention[15]);
   if (tmp2Result5.isAndroid()) {
     const obj8 = { name: EmojiPickerActionSheet_str };
-    tmp28 = ref2(tmp2(tmp3[33]).PortalHost, obj8);
+    tmp29 = ref2(tmp2(tmp3[33]).PortalHost, obj8);
   }
-  items8 = [tmp.content, { marginBottom: sum }];
+  items7 = [tmp.content, { marginBottom: sum }];
   const obj9 = { bottomSheetIndex: sharedValue1, onPressEmoji: callback1, onLongPressEmoji: tmp2(pickerIntention[35]).openEmojiActionSheet, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, emojis: tmp14.searchResults, emojiPickerIntention: pickerIntention, channel, guildId, searchQueryRef, insetBottom: sum1, analyticsObject, messageId, bypassPremiumEmojiEntitlement };
   const tmp10Result3 = onPressEmoji(pickerIntention[34]);
-  items9 = [ref2(tmp10Result3, obj9), ];
+  items8 = [ref2(tmp10Result3, obj9), ];
   const obj10 = { bottomSheetRef: ref1, bottomSheetIndex: sharedValue1, style: memo, categories: emojiCategories, categoryIndexActive: sharedValue, emojiPickerListRef: ref, portalHostName: EmojiPickerActionSheet_str, renderAhead: str, isSearching: null != tmp14.searchResults, onClearSearch: callback3 };
   str = undefined;
   const tmp10Result4 = onPressEmoji(pickerIntention[36]);
   const tmp2Result6 = tmp2(pickerIntention[15]);
-  const tmp31 = ref2;
+  const tmp32 = ref2;
   if (tmp2Result6.isIOS()) {
     if (pickerIntention === EmojiIntention.STATUS) {
       str = "full";
     }
   }
-  items9[1] = tmp31(tmp10Result4, obj10);
-  items7[1] = memo1(BottomSheet, obj7);
+  items8[1] = tmp32(tmp10Result4, obj10);
+  items6[1] = memo1(BottomSheet, obj7);
   return memo1(AnalyticsLocationProvider, obj5);
 };

@@ -1,26 +1,26 @@
-// Module ID: 14888
-// Function ID: 14889
+// Module ID: 14926
+// Function ID: 14927
 // Name: StreamingTier10LargeBadge
-// Dependencies: [19, 21, 14889, 14890, 14891, 7063, 5712, 2]
+// Dependencies: [19, 21, 14927, 14928, 14929, 7069, 5717, 2]
 // Exports: StreamingTier10LargeBadge
 
-// Module 14888 (StreamingTier10LargeBadge)
+// Module 14926 (StreamingTier10LargeBadge)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7063 */;
-import _modDef14889 from "module_14889" /* 14889 */;
-import _modDef14890 from "module_14890" /* 14890 */;
-import _modDef14891 from "module_14891" /* 14891 */;
+import react_native from "react-native" /* 7069 */;
+import _modDef14927 from "module_14927" /* 14927 */;
+import _modDef14928 from "module_14928" /* 14928 */;
+import _modDef14929 from "module_14929" /* 14929 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14889 };
+let obj2 = { uri: _modDef14927 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14890 };
+let obj3 = { uri: _modDef14928 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14891 };
-({ uri: _modDef14891 });
+obj[3] = { uri: _modDef14929 };
+({ uri: _modDef14929 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier10LargeBadge.native.tsx");
 

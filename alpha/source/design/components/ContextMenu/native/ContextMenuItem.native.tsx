@@ -1,19 +1,19 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 15854
+// Function ID: 15855
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 5090, 5009, 9855, 575, 9854, 5632, 5633, 5631, 5619, 2]
+// Dependencies: [19, 17, 21, 5095, 5014, 9876, 575, 9875, 5637, 5638, 5636, 5624, 2]
 // Exports: ContextMenuItem
 
-// Module 15814 (ContextMenuItem)
+// Module 15854 (ContextMenuItem)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import ContextMenuState from "ContextMenuState" /* 9854 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9855 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import ContextMenuState from "ContextMenuState" /* 9875 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9876 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const springPresets = tmp3(5633);
+const springPresets = tmp3(5638);
 ({ View: closure_4, Pressable } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(Pressable);
@@ -106,7 +106,7 @@ export function ContextMenuItem(accessibilityRole) {
           const measureResult = obj.measure(animatedRef);
           if (null != measureResult) {
             ({ pageX, pageY, width, height } = measureResult);
-            const result = index * tmp2(9854).INDEX_BOUNDS_OFFSET;
+            const result = index * tmp2(9875).INDEX_BOUNDS_OFFSET;
             const value = itemMeasurements.get();
             value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
             const value4 = itemMeasurements.get();

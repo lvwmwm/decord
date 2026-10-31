@@ -1,12 +1,12 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 17012
+// Function ID: 17013
 // Name: orbs_arcade_game_state
-// Dependencies: [32, 1198, 1227, 1228, 2]
+// Dependencies: [32, 1197, 1226, 1227, 2]
 
-// Module 16956 (orbs_arcade_game_state)
-import _mod1198 from "module_1198" /* 1198 */;
-import timestamp from "timestamp" /* 1227 */;
-import wrappers from "wrappers" /* 1228 */;
+// Module 17012 (orbs_arcade_game_state)
+import _mod1197 from "module_1197" /* 1197 */;
+import timestamp from "timestamp" /* 1226 */;
+import wrappers from "wrappers" /* 1227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const T9 = function T() {
 };
 const OrbsArcadeChargeType = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", FREE: 1, [1]: "FREE", VIRTUAL_CURRENCY: 2, [2]: "VIRTUAL_CURRENCY" };
 let obj2 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", PENDING: 1, [1]: "PENDING", ERRORED: 2, [2]: "ERRORED", CONFIRMED: 3, [3]: "CONFIRMED" };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1197.MessageType;
 class OrbsArcadeRun$Type extends MessageType {
   constructor() {
     let items = [{ no: 1, name: "id", kind: "scalar", T: 6 }, { no: 2, name: "started_at", kind: "message", T: T2 }, { no: 3, name: "ended_at", kind: "message", T: T3 }, { no: 4, name: "score", kind: "scalar", T: 13 }, , ];
@@ -67,9 +67,9 @@ class OrbsArcadeRun$Type extends MessageType {
     const obj = { id: "0", score: 0, chargeType: 0, chargeStatus: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1197;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -119,7 +119,7 @@ class OrbsArcadeRun$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1197.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -131,14 +131,14 @@ class OrbsArcadeRun$Type extends MessageType {
   }
   internalBinaryWrite(id, tag, writeUnknownFields) {
     if ("0" !== id.id) {
-      const tagResult = tag.tag(1, _mod1198.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1197.WireType.Bit64);
       tagResult.fixed64(id.id);
     }
     if (id.startedAt) {
       const Timestamp = timestamp.Timestamp;
       internalBinaryWrite = Timestamp.internalBinaryWrite;
       const startedAt = id.startedAt;
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(startedAt, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -146,26 +146,26 @@ class OrbsArcadeRun$Type extends MessageType {
       const Timestamp2 = timestamp.Timestamp;
       internalBinaryWrite2 = Timestamp2.internalBinaryWrite;
       const endedAt = id.endedAt;
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(endedAt, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (0 !== id.score) {
-      const tagResult3 = tag.tag(4, _mod1198.WireType.Varint);
+      const tagResult3 = tag.tag(4, _mod1197.WireType.Varint);
       tagResult3.uint32(id.score);
     }
     if (0 !== id.chargeType) {
-      const tagResult4 = tag.tag(5, _mod1198.WireType.Varint);
+      const tagResult4 = tag.tag(5, _mod1197.WireType.Varint);
       tagResult4.int32(id.chargeType);
     }
     if (0 !== id.chargeStatus) {
-      const tagResult5 = tag.tag(6, _mod1198.WireType.Varint);
+      const tagResult5 = tag.tag(6, _mod1197.WireType.Varint);
       tagResult5.int32(id.chargeStatus);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, id, tag);
@@ -191,7 +191,7 @@ let items = [
   { no: 6, name: "charge_status", kind: "enum", T: T4 }
 ];
 const object = new Object("discord_protos.discord_kkv_store_value_models.v1.OrbsArcadeRun", items, tmp4, tmp3, "create", tmp2, tmp, "internalBinaryRead", "internalBinaryWrite", OrbsArcadeRun$Type, require, dependencyMap);
-const MessageType2 = _mod1198.MessageType;
+const MessageType2 = _mod1197.MessageType;
 class OrbsArcadeRewardGrant$Type extends MessageType2 {
   constructor() {
     const items = [{ no: 1, name: "id", kind: "scalar", T: 6 }, { no: 2, name: "pending_at", kind: "message", T: T5 }, , ];
@@ -210,9 +210,9 @@ class OrbsArcadeRewardGrant$Type extends MessageType2 {
     const obj = { id: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1197;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -259,7 +259,7 @@ class OrbsArcadeRewardGrant$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1197.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -271,14 +271,14 @@ class OrbsArcadeRewardGrant$Type extends MessageType2 {
   }
   internalBinaryWrite(id, tag, writeUnknownFields) {
     if ("0" !== id.id) {
-      const tagResult = tag.tag(1, _mod1198.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1197.WireType.Bit64);
       tagResult.fixed64(id.id);
     }
     if (id.pendingAt) {
       const Timestamp = timestamp.Timestamp;
       internalBinaryWrite = Timestamp.internalBinaryWrite;
       const pendingAt = id.pendingAt;
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(pendingAt, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -286,7 +286,7 @@ class OrbsArcadeRewardGrant$Type extends MessageType2 {
       const Timestamp2 = timestamp.Timestamp;
       internalBinaryWrite2 = Timestamp2.internalBinaryWrite;
       const claimedAt = id.claimedAt;
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(claimedAt, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -294,14 +294,14 @@ class OrbsArcadeRewardGrant$Type extends MessageType2 {
       const Int64Value = wrappers.Int64Value;
       internalBinaryWrite3 = Int64Value.internalBinaryWrite;
       const sourceRunId = id.sourceRunId;
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(sourceRunId, tagResult3.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, id, tag);
@@ -325,7 +325,7 @@ const items1 = [
 ];
 let tmp5 = new tmp("discord_protos.discord_kkv_store_value_models.v1.OrbsArcadeRewardGrant", items1, tmp4, OrbsArcadeRewardGrant$Type, "create", tmp2, tmp, "internalBinaryRead", "internalBinaryWrite", undefined, require, dependencyMap, OrbsArcadeChargeType, obj2, object, items1, this, exports);
 const metroRequire = tmp5;
-const MessageType3 = _mod1198.MessageType;
+const MessageType3 = _mod1197.MessageType;
 class OrbsArcadeGameState$Type extends MessageType3 {
   constructor() {
     const items = [{ no: 1, name: "user_id", kind: "scalar", T: 6 }, { no: 2, name: "game_id", kind: "scalar", T: 6 }, { no: 3, name: "game_version_id", kind: "scalar", T: 6 }, { no: 4, name: "enrolled_at", kind: "message", T: T7 }, { no: 5, name: "expires_at", kind: "message", T: T8 }, { no: 6, name: "current_run", kind: "message", T: T9 }, , , , ];
@@ -347,9 +347,9 @@ class OrbsArcadeGameState$Type extends MessageType3 {
     const obj = { userId: "0", gameId: "0", gameVersionId: "0", rewardGrants: {}, numFreePlaysUsed: 0, enrollmentHighScore: 0, allTimeHighScore: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1197;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -409,22 +409,22 @@ class OrbsArcadeGameState$Type extends MessageType3 {
   }
   internalBinaryWrite(userId, tag, writeUnknownFields) {
     if ("0" !== userId.userId) {
-      const tagResult = tag.tag(1, _mod1198.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1197.WireType.Bit64);
       tagResult.fixed64(userId.userId);
     }
     if ("0" !== userId.gameId) {
-      const tagResult1 = tag.tag(2, _mod1198.WireType.Bit64);
+      const tagResult1 = tag.tag(2, _mod1197.WireType.Bit64);
       tagResult1.fixed64(userId.gameId);
     }
     if ("0" !== userId.gameVersionId) {
-      const tagResult2 = tag.tag(3, _mod1198.WireType.Bit64);
+      const tagResult2 = tag.tag(3, _mod1197.WireType.Bit64);
       tagResult2.fixed64(userId.gameVersionId);
     }
     if (userId.enrolledAt) {
       const Timestamp = timestamp.Timestamp;
       internalBinaryWrite = Timestamp.internalBinaryWrite;
       const enrolledAt = userId.enrolledAt;
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(enrolledAt, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -432,14 +432,14 @@ class OrbsArcadeGameState$Type extends MessageType3 {
       const Timestamp2 = timestamp.Timestamp;
       internalBinaryWrite2 = Timestamp2.internalBinaryWrite;
       const expiresAt = userId.expiresAt;
-      const tagResult4 = tag.tag(5, _mod1198.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(expiresAt, tagResult4.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (userId.currentRun) {
       internalBinaryWrite3 = object.internalBinaryWrite;
       const currentRun = userId.currentRun;
-      const tagResult5 = tag.tag(6, _mod1198.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(currentRun, tagResult5.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -447,11 +447,11 @@ class OrbsArcadeGameState$Type extends MessageType3 {
     const iter = keys[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
+      let tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
       let forkResult = tagResult6.fork();
-      let tagResult7 = forkResult.tag(1, _mod1198.WireType.Bit64);
+      let tagResult7 = forkResult.tag(1, _mod1197.WireType.Bit64);
       let fixed64Result3 = tagResult7.fixed64(nextResult);
-      let tagResult8 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      let tagResult8 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       let forkResult1 = tagResult8.fork();
       let internalBinaryWriteResult1 = closure_6.internalBinaryWrite(userId.rewardGrants[nextResult], tag, writeUnknownFields);
       let joined3 = tag.join();
@@ -459,21 +459,21 @@ class OrbsArcadeGameState$Type extends MessageType3 {
       continue;
     }
     if (0 !== userId.numFreePlaysUsed) {
-      const tagResult9 = tag.tag(8, _mod1198.WireType.Varint);
+      const tagResult9 = tag.tag(8, _mod1197.WireType.Varint);
       tagResult9.uint32(userId.numFreePlaysUsed);
     }
     if (0 !== userId.enrollmentHighScore) {
-      const tagResult10 = tag.tag(9, _mod1198.WireType.Varint);
+      const tagResult10 = tag.tag(9, _mod1197.WireType.Varint);
       tagResult10.uint32(userId.enrollmentHighScore);
     }
     if (0 !== userId.allTimeHighScore) {
-      const tagResult11 = tag.tag(10, _mod1198.WireType.Varint);
+      const tagResult11 = tag.tag(10, _mod1197.WireType.Varint);
       tagResult11.uint32(userId.allTimeHighScore);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, userId, tag);

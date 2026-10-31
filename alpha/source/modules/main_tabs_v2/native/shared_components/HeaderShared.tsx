@@ -1,25 +1,25 @@
-// Module ID: 9791
-// Function ID: 9792
+// Module ID: 9812
+// Function ID: 9813
 // Name: HeaderShared
-// Dependencies: [19, 17, 9792, 21, 5009, 575, 5619, 5591, 6993, 6999, 9793, 1376, 9798, 1626, 1499, 9800, 5604, 558, 9803, 14520, 6974, 1188, 2]
+// Dependencies: [19, 17, 9813, 21, 5014, 575, 5624, 5596, 6999, 7005, 9814, 1375, 9819, 1625, 1498, 9821, 5609, 558, 9824, 14558, 6980, 1187, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9791 (HeaderShared)
+// Module 9812 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import useToken2 from "useToken" /* 5591 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Pressables from "Pressables" /* 6974 */;
-import _mod6999 from "module_6999" /* 6999 */;
-import react_native from "react-native" /* 9792 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9798 */;
-import ChannelActionsDefault from "ChannelActions" /* 9803 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14520 */;
+import native from "native" /* 1187 */;
+import useToken2 from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Pressables from "Pressables" /* 6980 */;
+import _mod7005 from "module_7005" /* 7005 */;
+import react_native from "react-native" /* 9813 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9819 */;
+import ChannelActionsDefault from "ChannelActions" /* 9824 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14558 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ class GenericHeaderTitle {
     }
     const tmp6 = closure_8();
     closure_5 = tmp6;
-    const tmp7 = tmp5(6993)("os-drawn");
+    const tmp7 = tmp5(6999)("os-drawn");
     if (null == subtitle) {
       let renderTitleContainerResult;
       if (null == tmp7) {
@@ -118,7 +118,7 @@ class HeaderTextButton {
     };
     items = [closure_8().backButtonLabel, labelStyle];
     closure_8();
-    const HeaderBackButton = _mod6999.HeaderBackButton;
+    const HeaderBackButton = _mod7005.HeaderBackButton;
     const merged1 = Object.assign(merged);
     return metroRequire(HeaderBackButton, obj);
   }

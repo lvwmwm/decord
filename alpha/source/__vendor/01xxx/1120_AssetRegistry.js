@@ -1,11 +1,10 @@
 // Module ID: 1120
 // Function ID: 1121
 // Name: AssetRegistry
-// Dependencies: [84]
+// Dependencies: [1119]
 
 // Module 1120 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 84 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export const registerAsset = AssetRegistry.registerAsset;
-export const getAssetByID = AssetRegistry.getAssetByID;
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/aW50bA==", scales: [1], hash: "8f9f5e952c070f9cebc80eeddb8899d3", name: "cs.messages.8f9f5e952c070f9cebc80eeddb8899d3.compiled.messages", type: "jsona" });

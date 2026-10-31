@@ -1,14 +1,14 @@
-// Module ID: 11860
-// Function ID: 11861
+// Module ID: 11898
+// Function ID: 11899
 // Name: HandRequestSpeakListIcon
-// Dependencies: [19, 21, 575, 5711, 11861, 2]
+// Dependencies: [19, 21, 575, 5716, 11899, 2]
 // Exports: HandRequestSpeakListIcon
 
-// Module 11860 (HandRequestSpeakListIcon)
+// Module 11898 (HandRequestSpeakListIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 11861 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 11899 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14488
+// Function ID: 14489
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 5009, 5635, 575, 1376, 14451, 1114, 14452, 14457, 14458, 2]
+// Dependencies: [19, 17, 21, 5014, 5640, 575, 1375, 14489, 1113, 14490, 14495, 14496, 2]
 
-// Module 14450 (virtual_currency/BalanceWidgetPill)
+// Module 14488 (virtual_currency/BalanceWidgetPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import ButtonConstants from "ButtonConstants" /* 5635 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 14451 */;
-import OrbLottieAnimation from "OrbLottieAnimation" /* 14452 */;
-import AnimationUtils from "AnimationUtils" /* 14458 */;
+import intl2 from "intl" /* 1113 */;
+import ButtonConstants from "ButtonConstants" /* 5640 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 14489 */;
+import OrbLottieAnimation from "OrbLottieAnimation" /* 14490 */;
+import AnimationUtils from "AnimationUtils" /* 14496 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -64,16 +64,16 @@ class BalanceWidgetPill {
     const intl = intl2.intl;
     const tmp7 = React3;
     if (tmp2) {
-      stringResult = intl.string(tmp3(1114).t.y0WGqP);
+      stringResult = intl.string(tmp3(1113).t.y0WGqP);
     } else {
       const obj3 = { balance };
-      stringResult = intl.formatToPlainString(tmp3(1114).t.zPaLL9, obj3);
+      stringResult = intl.formatToPlainString(tmp3(1113).t.zPaLL9, obj3);
     }
     items1 = [, ];
     const obj4 = { style: tmp6.orbsLottieContainer, children: _false(OrbLottieAnimation.OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
     items1[0] = _false(View, obj4);
     const obj5 = { style: tmp6.balanceCounterContainer, children: _false(BalanceCounter, obj6) };
-    BalanceCounter = tmp3(14457).BalanceCounter;
+    BalanceCounter = tmp3(14495).BalanceCounter;
     if (showInitialRenderedBalance) {
       balance = prop;
     }

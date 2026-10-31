@@ -1,20 +1,20 @@
-// Module ID: 18533
-// Function ID: 18534
+// Module ID: 18576
+// Function ID: 18577
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 5090, 5619, 18472, 575, 8915, 18491, 18487, 5194, 5249, 5591, 14819, 1114, 5629, 18511, 5582, 1093, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5095, 5624, 18515, 575, 8924, 18534, 18530, 5199, 5254, 5596, 14857, 1113, 5634, 18554, 5587, 1092, 671, 2]
 // Exports: default
 
-// Module 18533 (CaughtUpRow)
+// Module 18576 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import Text_Text from "Text/Text" /* 5619 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import Text_Text from "Text/Text" /* 5624 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18472 */;
+import createICYMIStyles from "createICYMIStyles" /* 18515 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -59,7 +59,7 @@ export default function ExploreServersRow(visible) {
   visible = visible.visible;
   dependencyMap = undefined;
   const tmp = closure_10();
-  let obj = visible(5090);
+  let obj = visible(5095);
   let sharedValue = obj.useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = react.useEffect(() => {
@@ -85,7 +85,7 @@ export default function ExploreServersRow(visible) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -128,7 +128,7 @@ export default function ExploreServersRow(visible) {
             }, 500);
           }, 100);
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -147,7 +147,7 @@ export default function ExploreServersRow(visible) {
       rootNavigationRef.navigate("tabs", { screen: "guilds" });
     }
   }, []);
-  let obj2 = visible(5090);
+  let obj2 = visible(5095);
   class E {
     constructor() {
       let Easing;
@@ -179,12 +179,12 @@ export default function ExploreServersRow(visible) {
       return obj3;
     }
   }
-  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(5249).withTiming, Easing: visible(5090).Easing };
+  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(5254).withTiming, Easing: visible(5095).Easing };
   E.__closure = obj3;
   E.__workletHash = 6575188656069;
   E.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(E);
-  let obj4 = visible(5090);
+  let obj4 = visible(5095);
   const fn = function b() {
     let Easing;
     let Easing2;
@@ -210,12 +210,12 @@ export default function ExploreServersRow(visible) {
     items = [{ translateY: num }];
     return obj3;
   };
-  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(5090).withDelay, withSequence: visible(5090).withSequence, withTiming: visible(5249).withTiming, Easing: visible(5090).Easing };
+  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(5095).withDelay, withSequence: visible(5095).withSequence, withTiming: visible(5254).withTiming, Easing: visible(5095).Easing };
   fn.__closure = obj5;
   fn.__workletHash = 469742746264;
   fn.__initData = __initData2;
   const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  let obj6 = visible(5090);
+  let obj6 = visible(5095);
   const fn2 = function x() {
     let Easing;
     let Easing2;
@@ -241,43 +241,43 @@ export default function ExploreServersRow(visible) {
     items = [{ translateY: num }];
     return obj3;
   };
-  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(5090).withDelay, withSequence: visible(5090).withSequence, withTiming: visible(5249).withTiming, Easing: visible(5090).Easing };
+  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(5095).withDelay, withSequence: visible(5095).withSequence, withTiming: visible(5254).withTiming, Easing: visible(5095).Easing };
   fn2.__closure = obj7;
   fn2.__workletHash = 14933607481025;
   fn2.__initData = __initData3;
   const animatedStyle2 = obj6.useAnimatedStyle(fn2);
-  let obj8 = visible(5591);
+  let obj8 = visible(5596);
   const token = obj8.useToken(sharedValue(575).colors.BACKGROUND_BRAND);
   const obj10 = { style: tmp.container, children: items5 };
   const obj11 = { style: tmp.textContainer, children: items2 };
   const obj9 = { children: items7 };
-  const obj12 = { style: items1, children: closure_7(visible(14819).FlashIcon, obj13) };
+  const obj12 = { style: items1, children: closure_7(visible(14857).FlashIcon, obj13) };
   items1 = [tmp.iconWrapper, animatedStyle];
-  View = sharedValue(5090).View;
+  View = sharedValue(5095).View;
   obj13 = { size: "custom", style: tmp.icon, color: "background-brand" };
   items2 = [closure_7(View, obj12), , ];
-  const obj14 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: intl.string(visible(1114).t.xjxffq) };
+  const obj14 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: intl.string(visible(1113).t.xjxffq) };
   items3 = [tmp.headerText, animatedStyle1];
-  intl = visible(1114).intl;
+  intl = visible(1113).intl;
   items2[1] = closure_7(closure_9, obj14);
-  const obj15 = { variant: "text-md/normal", color: "text-default", style: items4, children: intl2.string(visible(1114).t.sAApb0) };
+  const obj15 = { variant: "text-md/normal", color: "text-default", style: items4, children: intl2.string(visible(1113).t.sAApb0) };
   items4 = [tmp.subtitleText, animatedStyle2];
-  intl2 = visible(1114).intl;
+  intl2 = visible(1113).intl;
   items2[2] = closure_7(closure_9, obj15);
   items5 = [closure_8(View, obj11), ];
   const obj16 = { style: tmp.buttonContainer, children: items6 };
-  const obj17 = { size: "md", text: intl3.string(visible(1114).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
-  const Button = visible(5629).Button;
-  intl3 = visible(1114).intl;
+  const obj17 = { size: "md", text: intl3.string(visible(1113).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
+  const Button = visible(5634).Button;
+  intl3 = visible(1113).intl;
   items6 = [closure_7(Button, obj17), ];
-  const obj18 = { size: "md", text: intl4.string(visible(1114).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
-  const Button2 = visible(5629).Button;
-  intl4 = visible(1114).intl;
+  const obj18 = { size: "md", text: intl4.string(visible(1113).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
+  const Button2 = visible(5634).Button;
+  intl4 = visible(1113).intl;
   items6[1] = closure_7(Button2, obj18);
   items5[1] = closure_8(View, obj16);
-  items7 = [closure_8(View, obj10), closure_7(visible(18511).Separator, {}), ];
-  const obj19 = { style: tmp.gradient, start: visible(1093).VerticalGradient.START, end: visible(1093).VerticalGradient.END, colors: items8, pointerEvents: "none" };
-  const tmp12 = sharedValue(5582);
+  items7 = [closure_8(View, obj10), closure_7(visible(18554).Separator, {}), ];
+  const obj19 = { style: tmp.gradient, start: visible(1092).VerticalGradient.START, end: visible(1092).VerticalGradient.END, colors: items8, pointerEvents: "none" };
+  const tmp12 = sharedValue(5587);
   items8 = [, ];
   const obj20 = sharedValue(671)(token);
   const alphaResult = obj20.alpha(0.2);

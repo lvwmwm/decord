@@ -1,26 +1,26 @@
-// Module ID: 11826
-// Function ID: 11827
+// Module ID: 11864
+// Function ID: 11865
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5254, 4863, 1072, 21, 1114, 5009, 575, 5647, 504, 5588, 10889, 8167, 11816, 6752, 7947, 6723, 7937, 7933, 1188, 5619, 5630, 5629, 11818, 11173, 5248, 5031, 11193, 8595, 2]
+// Dependencies: [5, 32, 19, 17, 5259, 4868, 1072, 21, 1113, 5014, 575, 5652, 504, 5593, 10914, 8175, 11854, 6758, 7955, 6729, 7945, 7941, 1187, 5624, 5635, 5634, 11856, 11192, 5253, 5036, 11212, 8603, 2]
 // Exports: default
 
-// Module 11826 (GlobalStageChannelStatus)
+// Module 11864 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl8 from "intl" /* 1114 */;
-import useChannelNameDefault from "useChannelName" /* 5647 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7937 */;
-import PushNotificationDefault from "PushNotification" /* 10889 */;
-import StatusBarDefault from "StatusBar" /* 11193 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11818 */;
+import intl8 from "intl" /* 1113 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
+import PushNotificationDefault from "PushNotification" /* 10914 */;
+import StatusBarDefault from "StatusBar" /* 11212 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11856 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5254 */;
-import StageInstanceStore from "StageInstanceStore" /* 4863 */;
+import ActionSheetStore from "ActionSheetStore" /* 5259 */;
+import StageInstanceStore from "StageInstanceStore" /* 4868 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap, importDefault;
@@ -39,7 +39,7 @@ let obj8;
 let obj9;
 let tmp2;
 let unpackModuleId;
-const useMountEffectDefault = tmp2(5588);
+const useMountEffectDefault = tmp2(5593);
 class StageChannelRaiseHandAck {
   constructor(channel) {
     let BaseTextButton;
@@ -78,7 +78,7 @@ class StageChannelRaiseHandAck {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -133,7 +133,7 @@ class StageChannelRaiseHandAck {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp25) {
             if (0 === c3) {
               c5 = 3;
@@ -150,8 +150,8 @@ class StageChannelRaiseHandAck {
     const tmp3 = dependencyMap;
     let stringResult = useChannelNameDefault(channel);
     if (stringResult == null) {
-      let intl = channel(1114).intl;
-      stringResult = intl.string(channel(1114).t["/YzI63"]);
+      let intl = channel(1113).intl;
+      stringResult = intl.string(channel(1113).t["/YzI63"]);
     }
     importDefault = stringResult;
     obj = channel(504);
@@ -176,20 +176,20 @@ class StageChannelRaiseHandAck {
     [tmp10, c3] = _slicedToArray(react.useState(false), 2);
     const tmp9 = _slicedToArray(react.useState(false), 2);
     let id1;
-    const useStageBlockedUsersCount = channel(8167).useStageBlockedUsersCount;
-    const tmp11 = channel(8167);
+    const useStageBlockedUsersCount = channel(8175).useStageBlockedUsersCount;
+    const tmp11 = channel(8175);
     if (channel != null) {
       id1 = channel.id;
     }
     const stageBlockedUsersCount = useStageBlockedUsersCount(id1);
     let id2;
-    const useStageIgnoredUsersCount = tmp6(8167).useStageIgnoredUsersCount;
-    channel(8167);
+    const useStageIgnoredUsersCount = tmp6(8175).useStageIgnoredUsersCount;
+    channel(8175);
     if (channel != null) {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(11816);
+    channel(11854);
     if (channel != null) {
       let id = channel.id;
     }
@@ -202,31 +202,31 @@ class StageChannelRaiseHandAck {
       items2[1] = obj3;
       let tmp22 = closure_10;
       let obj4 = { style: tmp.row, children: closure_10(LegacyText, obj5) };
-      obj5 = { style: tmp.invitedHeaderText, accessibilityRole: "header", children: intl2.string(tmp6(1114).t.Ul1RJQ) };
-      LegacyText = tmp6(1188).LegacyText;
-      intl2 = tmp6(1114).intl;
+      obj5 = { style: tmp.invitedHeaderText, accessibilityRole: "header", children: intl2.string(tmp6(1113).t.Ul1RJQ) };
+      LegacyText = tmp6(1187).LegacyText;
+      intl2 = tmp6(1113).intl;
       items3 = [closure_10(View, obj4), , ];
       if (stageBlockedUsersCount > 0) {
         let formatResult;
         const obj6 = { style: tmp.row, children: null };
         if (stageBlockedUsersCount > 0) {
           if (stageIgnoredUsersCount > 0) {
-            const intl5 = tmp6(1114).intl;
+            const intl5 = tmp6(1113).intl;
             let obj7 = { number: stageBlockedUsersCount + stageIgnoredUsersCount };
-            formatResult = intl5.format(tmp6(1114).t["cXaoI+"], obj7);
+            formatResult = intl5.format(tmp6(1113).t["cXaoI+"], obj7);
           }
           let obj8 = { variant: "text-xs/medium", color: "text-overlay-light", children: formatResult };
           obj6.children = tmp22(tmp24, obj8);
           tmp22Result = tmp22(tmp21, obj6);
         }
         if (stageIgnoredUsersCount > 0) {
-          const intl4 = tmp6(1114).intl;
+          const intl4 = tmp6(1113).intl;
           const obj9 = { number: stageIgnoredUsersCount };
-          formatResult = intl4.format(tmp6(1114).t["0bU4FO"], obj9);
+          formatResult = intl4.format(tmp6(1113).t["0bU4FO"], obj9);
         } else {
-          const intl3 = tmp6(1114).intl;
+          const intl3 = tmp6(1113).intl;
           const obj10 = { number: stageBlockedUsersCount };
-          formatResult = intl3.format(tmp6(1114).t.sFzx0G, obj10);
+          formatResult = intl3.format(tmp6(1113).t.sFzx0G, obj10);
         }
       } else {
         tmp22Result = null;
@@ -244,11 +244,11 @@ class StageChannelRaiseHandAck {
           },
         pillStyle: tmp.declineButtonPill,
         size: "sm",
-        text: intl6.string(channel(1114).t["1YDv7a"]),
+        text: intl6.string(channel(1113).t["1YDv7a"]),
         grow: true
       };
-      BaseTextButton = tmp6(5630).BaseTextButton;
-      intl6 = tmp6(1114).intl;
+      BaseTextButton = tmp6(5635).BaseTextButton;
+      intl6 = tmp6(1113).intl;
       items4 = [tmp22(tmp21, obj12), ];
       const obj14 = { style: tmp.buttonWrapper, children: tmp22(Button, obj15) };
       obj15 = {
@@ -257,13 +257,13 @@ class StageChannelRaiseHandAck {
             return obj(...arguments);
           },
         size: "sm",
-        text: intl7.string(channel(1114).t.MpO0px),
+        text: intl7.string(channel(1113).t.MpO0px),
         loading: tmp10,
         disabled: tmp10,
         grow: true
       };
-      Button = tmp6(5629).Button;
-      intl7 = tmp6(1114).intl;
+      Button = tmp6(5634).Button;
+      intl7 = tmp6(1113).intl;
       items4[1] = tmp22(View, obj14);
       items3[2] = closure_11(View, obj11);
       tmp20Result = tmp20(tmp21, obj2);
@@ -306,11 +306,11 @@ export default function GlobalStageChannelStatus(arg0) {
   }
   let stringResult = useChannelNameDefault(channel);
   if (stringResult == null) {
-    const intl = id(1114).intl;
-    stringResult = intl.string(id(1114).t["/YzI63"]);
+    const intl = id(1113).intl;
+    stringResult = intl.string(id(1113).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(11173)(id);
+  let invitedHeaderText = tmp3(11192)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);
@@ -324,7 +324,7 @@ export default function GlobalStageChannelStatus(arg0) {
     let str;
     if (!tmp7) {
       str = "dark-content";
-      id(5031);
+      id(5036);
     }
     if (null != channel) {
       if (null != guild) {
@@ -346,18 +346,18 @@ export default function GlobalStageChannelStatus(arg0) {
           const obj3 = { style: tmp.noticeContainer, children: items2 };
           const obj4 = { animated: true, barStyle: str };
           items2 = [closure_10(StatusBarDefault, obj4), , ];
-          const obj5 = { style: activeSpeakerIcon, size: id(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
-          const Icon = tmp8(1188).Icon;
-          tmp8Result2 = id(8595);
+          const obj5 = { style: activeSpeakerIcon, size: id(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
+          const Icon = tmp8(1187).Icon;
+          tmp8Result2 = id(8603);
           items2[1] = closure_10(Icon, obj5);
           let tmp13Result = "" !== str2;
-          const LegacyText = tmp8(1188).LegacyText;
+          const LegacyText = tmp8(1187).LegacyText;
           const tmp14 = View;
           const tmp15 = closure_10;
           if (tmp13Result) {
             const items3 = [tmp.topic, ];
             let invitedHeaderText2 = invitedHeaderText;
-            const LegacyText2 = tmp8(1188).LegacyText;
+            const LegacyText2 = tmp8(1187).LegacyText;
             if (invitedHeaderText) {
               invitedHeaderText2 = tmp.invitedHeaderText;
             }
@@ -374,7 +374,7 @@ export default function GlobalStageChannelStatus(arg0) {
           let tmp15Result = !tmp12;
           if (tmp15Result) {
             const items6 = [tmp.channel, ];
-            const LegacyText3 = tmp8(1188).LegacyText;
+            const LegacyText3 = tmp8(1187).LegacyText;
             if (invitedHeaderText) {
               invitedHeaderText = tmp.invitedHeaderText;
             }

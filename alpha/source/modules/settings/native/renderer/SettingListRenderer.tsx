@@ -1,22 +1,22 @@
-// Module ID: 16534
-// Function ID: 16535
+// Module ID: 16576
+// Function ID: 16577
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 16535, 16383, 11506, 21, 5009, 575, 7054, 5619, 16536, 1626, 16537, 16542, 7288, 16543, 16546, 16547, 1889, 2]
+// Dependencies: [19, 17, 16577, 16425, 11540, 21, 5014, 575, 7060, 5624, 16578, 1625, 16579, 16584, 7294, 16585, 16588, 16589, 1888, 2]
 
-// Module 16534 (SettingListRenderer)
+// Module 16576 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import TableRowGroup from "TableRowGroup" /* 7054 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11506 */;
-import SettingRenderer from "SettingRenderer" /* 16536 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16537 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 16546 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import TableRowGroup from "TableRowGroup" /* 7060 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11540 */;
+import SettingRenderer from "SettingRenderer" /* 16578 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16579 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 16588 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16535 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 16383 */;
-import createStyles from "createStyles" /* 5009 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16577 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 16425 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -110,7 +110,7 @@ const memoResult = react.memo(function SettingsList(node) {
   node = node.node;
   let field;
   const tmp = closure_9();
-  const bottom = field(1626)().bottom;
+  const bottom = field(1625)().bottom;
   field = SettingBlocklistStore.useField("blocklist");
   const items = [field, node];
   const memo = react.useMemo(() => {
@@ -118,10 +118,10 @@ const memoResult = react.memo(function SettingsList(node) {
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(16542);
+  let obj = node(16584);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(575).space.PX_16 };
-  const FlashList = node(7288).FlashList;
+  const FlashList = node(7294).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 });

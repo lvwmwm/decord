@@ -1,17 +1,17 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 17032
+// Function ID: 17033
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 16954, 21, 5707, 1114, 504, 16961, 16960, 16976, 5629, 2]
+// Dependencies: [5, 19, 17010, 21, 5712, 1113, 504, 17017, 17016, 17033, 5634, 2]
 // Exports: default
 
-// Module 16975 (OrbsArcadeClaimRewardButton)
+// Module 17032 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1114 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16961 */;
+import intl2 from "intl" /* 1113 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16954 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17010 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -61,7 +61,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -94,7 +94,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
           c2 = 0;
           showOrbsArcadeClaimRewardsError();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -125,7 +125,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         if (0 === c2) {
@@ -138,14 +138,14 @@ export default function OrbsArcadeClaimRewardButton(game) {
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5629).Button;
-  const intl = game(1114).intl;
+  const Button = game(5634).Button;
+  const intl = game(1113).intl;
   string = intl.string;
   const tmp6 = jsx;
   if (stateFromStores1 > 1) {
-    WK589K = tmp(1114).t.DCCcdz;
+    WK589K = tmp(1113).t.DCCcdz;
   } else {
-    WK589K = tmp(1114).t.WK589K;
+    WK589K = tmp(1113).t.WK589K;
   }
   return tmp6(Button, obj3);
 };

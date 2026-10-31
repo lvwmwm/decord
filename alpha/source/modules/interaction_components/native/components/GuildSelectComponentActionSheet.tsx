@@ -1,23 +1,23 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16559
+// Function ID: 16560
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 4880, 6766, 21, 5009, 6068, 1114, 5253, 12462, 6951, 6036, 1188, 5619, 6773, 2]
+// Dependencies: [32, 19, 17, 4885, 6772, 21, 5014, 6073, 1113, 5258, 12497, 6957, 6041, 1187, 5624, 6779, 2]
 // Exports: default
 
-// Module 16517 (GuildSelectComponentActionSheet)
+// Module 16559 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6068 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12462 */;
+import native from "native" /* 1187 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6073 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SortedGuildStore from "SortedGuildStore" /* 6766 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SortedGuildStore from "SortedGuildStore" /* 6772 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let dependencyMap, flattenedGuildIds, record;
 let c9;
 let metroImportAll;
 let tmp5;
-const intl2 = tmp5(1114);
+const intl2 = tmp5(1113);
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });

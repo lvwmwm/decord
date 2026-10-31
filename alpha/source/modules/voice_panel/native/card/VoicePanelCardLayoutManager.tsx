@@ -1,20 +1,20 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11225
+// Function ID: 11226
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6837, 11204, 11207, 5676, 5090, 11208, 558, 11209, 11210, 11211, 1260, 2]
+// Dependencies: [32, 19, 17, 6843, 11223, 11226, 5681, 5095, 11227, 558, 11228, 11229, 11230, 1259, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 11206 (VoicePanelCardLayoutManager)
+// Module 11225 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import react_native2 from "react-native" /* 1260 */;
-import CallConstants from "CallConstants" /* 5676 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11208 */;
+import react_native2 from "react-native" /* 1259 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11207 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -94,7 +94,18 @@ class VoicePanelCardLayoutManager {
   cleanUp() {
     this.mounted = false;
   }
-  updateState(arr, windowHeight) {
+  updateItems(items) {
+    const self = this;
+    items = this.items;
+    let tmp = items.length === items.length;
+    const setDirty = this.setDirty;
+    if (tmp) {
+      tmp = !items.some((item, index) => items[index] !== item);
+    }
+    setDirty(!tmp);
+    self.items = items;
+  }
+  updateProps(windowHeight) {
     let controlBarSize;
     let safeAreaBottom;
     let safeAreaRight;
@@ -107,14 +118,6 @@ class VoicePanelCardLayoutManager {
       self.props = obj;
       self.setDirty(true);
     }
-    const items = self.items;
-    let tmp2 = arr.length === items.length;
-    const setDirty = self.setDirty;
-    if (tmp2) {
-      tmp2 = !arr.some((item, index) => items[index] !== item);
-    }
-    setDirty(!tmp2);
-    self.items = arr;
     return self.getContentDimensions();
   }
   getLayoutKey() {
@@ -902,12 +905,12 @@ export function useTargetDimensionsSubscription(participantId, layoutManager) {
   }, items);
   return sharedValue;
 }
-export function useManagerSubscription(first3) {
+export function useManagerSubscription(first5) {
   let closure_129_1;
   let tmp2;
-  let closure_0 = first3;
-  [tmp2, closure_129_1] = react.useState(first3.getLayoutKey());
-  _slicedToArray(react.useState(first3.getLayoutKey()), 2);
+  let closure_0 = first5;
+  [tmp2, closure_129_1] = react.useState(first5.getLayoutKey());
+  _slicedToArray(react.useState(first5.getLayoutKey()), 2);
   const layoutEffect = react.useLayoutEffect(() => layoutKey.subscribeToManager(() => closure_1_1(layoutKey.getLayoutKey())));
   return tmp2;
 }

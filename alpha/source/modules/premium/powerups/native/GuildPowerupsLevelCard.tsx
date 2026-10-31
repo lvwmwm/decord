@@ -1,25 +1,25 @@
-// Module ID: 14089
-// Function ID: 14090
+// Module ID: 14124
+// Function ID: 14125
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 5225, 1072, 14090, 21, 5009, 575, 5582, 9899, 7143, 14072, 14051, 5619, 1114, 2569, 14026, 14043, 14091, 14092, 14048, 2]
+// Dependencies: [19, 17, 5230, 1072, 14125, 21, 5014, 575, 5587, 9920, 7149, 14107, 14086, 5624, 1113, 2570, 14061, 14078, 14126, 14127, 14083, 2]
 // Exports: default
 
-// Module 14089 (GuildPowerupsLevelCard)
+// Module 14124 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9899 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14026 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14043 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14048 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 14090 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 14091 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9920 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14061 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14078 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14083 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 14125 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 14126 */;
 import react from "react" /* 19 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5225 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ let size;
 let size1;
 let tmp5;
 let unpackModuleId;
-const GuildPowerupsCardDefault = tmp5(14092);
+const GuildPowerupsCardDefault = tmp5(14127);
 function GuildLevelPowerupHeader(arg0) {
   let BoostGemIcon;
   let active;
@@ -252,7 +252,7 @@ export default function GuildPowerupsLevelCard(arg0) {
   items1 = [authStore(tmp19, obj4), ];
   let str;
   const obj5 = { style: tmp.contentContainer, children: items2 };
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }

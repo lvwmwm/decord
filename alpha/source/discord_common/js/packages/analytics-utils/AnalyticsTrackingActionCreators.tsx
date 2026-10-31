@@ -1,10 +1,10 @@
-// Module ID: 1342
-// Function ID: 1343
+// Module ID: 1341
+// Function ID: 1342
 // Name: AnalyticsTrackingActionCreators
 // Dependencies: [2]
 // Exports: queueTrackingEventMaker
 
-// Module 1342 (AnalyticsTrackingActionCreators)
+// Module 1341 (AnalyticsTrackingActionCreators)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingActionCreators.tsx");

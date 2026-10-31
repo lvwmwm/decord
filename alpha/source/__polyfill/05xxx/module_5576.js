@@ -1,206 +1,71 @@
 // Module ID: 5576
 // Function ID: 5577
-// Dependencies: [32, 19, 21, 5577, 1651, 5275, 5298, 5578]
+// Dependencies: [19, 17, 21, 5280, 5577, 5276]
 
 // Module 5576
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1651 from "module_1651" /* 1651 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import react_native from "react-native" /* 5578 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5276 */;
+import react_native2 from "react-native" /* 5577 */;
 import react_mod from "react" /* 19 */;
 
+let c2;
+let c3;
 let closure_4;
-let hasOwnProperty;
-let memo;
-let metroImportAll;
-let metroImportDefault;
-let metroRequire;
 let react = react_mod;
-({ useCallback: closure_4, useEffect: hasOwnProperty, useMemo: metroRequire, useRef: metroImportDefault, useState: metroImportAll, memo } = react);
+({ useEffect: c2, useCallback: c3, useMemo: closure_4 } = react);
+const memo = react.memo;
 react = react_mod;
+const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_10 = { code: "function pnpm_BottomSheetBackdropTsx1(){const{runOnJS,handleOnPress}=this.__closure;runOnJS(handleOnPress)();}" };
-let __initData = { code: "function pnpm_BottomSheetBackdropTsx2(){const{interpolate,animatedIndex,disappearsOnIndex,appearsOnIndex,opacity,Extrapolation}=this.__closure;return{opacity:interpolate(animatedIndex.value,[-1,disappearsOnIndex,appearsOnIndex],[0,0,opacity],Extrapolation.CLAMP)};}" };
-let __initData2 = { code: "function pnpm_BottomSheetBackdropTsx3(){const{animatedIndex,disappearsOnIndex}=this.__closure;return Math.round(animatedIndex.value)<=disappearsOnIndex;}" };
-let closure_13 = { code: "function pnpm_BottomSheetBackdropTsx4(shouldDisableTouchability,previous){const{runOnJS,handleContainerTouchability}=this.__closure;if(shouldDisableTouchability===previous){return;}runOnJS(handleContainerTouchability)(shouldDisableTouchability);}" };
-const memoResult = memo((animatedIndex) => {
-  let ViewComponent;
-  let appearsOnIndex;
+const memoResult = memo(function BottomSheetViewComponent(focusHook) {
+  let animatedScrollableType;
   let children;
-  let closure_12;
-  let disappearsOnIndex;
-  let enableTouchThrough;
-  let handleOnPress;
-  let onPress;
-  let opacity;
-  let pressBehavior;
-  animatedIndex = animatedIndex.animatedIndex;
-  ({ opacity, appearsOnIndex, disappearsOnIndex, enableTouchThrough, pressBehavior } = animatedIndex);
-  if (pressBehavior === undefined) {
-    const tmp = animatedIndex;
-    let tmp2 = onPress;
-    pressBehavior = animatedIndex(onPress[3]).DEFAULT_PRESS_BEHAVIOR;
+  let style;
+  focusHook = focusHook.focusHook;
+  if (focusHook === undefined) {
+    focusHook = animatedScrollableType;
   }
-  onPress = animatedIndex.onPress;
-  const style = animatedIndex.style;
-  ({ ViewComponent, children } = animatedIndex);
-  if (ViewComponent === undefined) {
-    ViewComponent = pressBehavior(onPress[4]).View;
+  let flag = focusHook.enableFooterMarginAdjustment;
+  if (flag === undefined) {
+    flag = false;
   }
-  let DEFAULT_ACCESSIBLE = animatedIndex.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = animatedIndex(onPress[3]).DEFAULT_ACCESSIBLE;
-  }
-  let DEFAULT_ACCESSIBILITY_ROLE = animatedIndex.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = animatedIndex(onPress[3]).DEFAULT_ACCESSIBILITY_ROLE;
-  }
-  let DEFAULT_ACCESSIBILITY_LABEL = animatedIndex.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = animatedIndex(onPress[3]).DEFAULT_ACCESSIBILITY_LABEL;
-  }
-  let DEFAULT_ACCESSIBILITY_HINT = animatedIndex.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = animatedIndex(onPress[3]).DEFAULT_ACCESSIBILITY_HINT;
-  }
-  opacity = undefined;
-  appearsOnIndex = undefined;
-  disappearsOnIndex = undefined;
-  __initData = undefined;
-  __initData2 = undefined;
-  let animatedStyle;
-  let obj = animatedIndex(onPress[5]);
-  const bottomSheet = obj.useBottomSheet();
-  const snapToIndex = bottomSheet.snapToIndex;
-  const close = bottomSheet.close;
-  const ref = opacity(false);
-  if (opacity == null) {
-    opacity = tmp13(tmp14[3]).DEFAULT_OPACITY;
-  }
-  if (appearsOnIndex == null) {
-    appearsOnIndex = tmp13(tmp14[3]).DEFAULT_APPEARS_ON_INDEX;
-  }
-  if (disappearsOnIndex == null) {
-    disappearsOnIndex = tmp13(tmp14[3]).DEFAULT_DISAPPEARS_ON_INDEX;
-  }
-  if (enableTouchThrough == null) {
-    enableTouchThrough = tmp13(tmp14[3]).DEFAULT_ENABLE_TOUCH_THROUGH;
-  }
-  let str = "auto";
-  const tmp16 = appearsOnIndex;
-  if (enableTouchThrough) {
-    str = "none";
-  }
-  const tmp17 = style(tmp16(str), 2);
-  let items = [snapToIndex, close, disappearsOnIndex, pressBehavior, onPress];
-  const first = tmp17[0];
-  const tmp19 = snapToIndex(() => {
-    if (onPress != null) {
-      tmp();
-    }
-    if ("close" === pressBehavior) {
-      close();
-    } else if ("collapse" === pressBehavior) {
-      snapToIndex(disappearsOnIndex);
-    } else if (typeof pressBehavior === "number") {
-      snapToIndex(pressBehavior);
-    }
-  }, items);
-  __initData = tmp19;
-  const tmp20 = snapToIndex((arg0) => {
-    if (ref.current) {
-      let str = "auto";
-      const tmp2 = __initData;
-      if (arg0) {
-        str = "none";
-      }
-      tmp2(str);
-    }
-  }, []);
-  __initData2 = tmp20;
-  let items1 = [tmp19];
-  const tmp21 = ref(() => {
-    const Gesture = LegacyBaseButton.Gesture;
-    const fn = function n() {
-      const obj = animatedIndex(onPress[4]);
-      obj.runOnJS(handleOnPress)();
-    };
-    const TapResult = Gesture.Tap();
-    let obj = { runOnJS: _mod1651.runOnJS, handleOnPress };
-    fn.__closure = obj;
-    fn.__workletHash = 10704059633145;
-    fn.__initData = __initData;
-    return TapResult.onEnd(fn);
-  }, items1);
-  const tmp13Result = animatedIndex(onPress[4]);
-  class P {
-    constructor() {
-      let items;
-      let items1;
-      let obj2;
-      const obj = { opacity: obj2.interpolate(animatedIndex.value, items, items1, _mod1651.Extrapolation.CLAMP) };
-      items = [-1, disappearsOnIndex, appearsOnIndex];
-      items1 = [0, 0, opacity];
-      obj2 = _mod1651;
-      return obj;
-    }
-  }
-  let obj2 = { interpolate: tmp13(tmp14[4]).interpolate, animatedIndex, disappearsOnIndex, appearsOnIndex, opacity, Extrapolation: tmp13(tmp14[4]).Extrapolation };
-  P.__closure = obj2;
-  P.__workletHash = 7085425846204;
-  P.__initData = __initData;
-  const items2 = [animatedIndex, appearsOnIndex, disappearsOnIndex, opacity];
-  animatedStyle = tmp13Result.useAnimatedStyle(P, items2);
-  const items3 = [style, animatedStyle];
-  const tmp23 = ref(() => {
-    const items = [react_native.styles.backdrop, style, animatedStyle];
+  const onLayout = focusHook.onLayout;
+  ({ style, children } = focusHook);
+  const merged = Object.assign(focusHook, Object.assign({ focusHook: 0, enableFooterMarginAdjustment: 0, onLayout: 0, style: 0, children: 0 }));
+  let animatedScrollableContentOffsetY;
+  const obj = onLayout(animatedScrollableContentOffsetY[3]);
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const enableDynamicSizing = bottomSheetInternal.enableDynamicSizing;
+  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
+  const obj2 = onLayout(animatedScrollableContentOffsetY[3]);
+  const bottomSheetContentContainerStyle = obj2.useBottomSheetContentContainerStyle(flag, style);
+  let items = [bottomSheetContentContainerStyle];
+  const items1 = [animatedScrollableContentOffsetY, animatedScrollableType];
+  const tmp4 = animatedContentHeight(() => {
+    const items = [bottomSheetContentContainerStyle, react_native2.styles.container];
     return items;
-  }, items3);
-  const tmp13Result2 = animatedIndex(onPress[4]);
-  class H {
-    constructor() {
-      return Math.round(animatedIndex.value) <= disappearsOnIndex;
+  }, items);
+  const items2 = [onLayout, animatedContentHeight, enableDynamicSizing];
+  const tmp5 = enableDynamicSizing(() => {
+    animatedScrollableContentOffsetY.value = 0;
+    animatedScrollableType.value = GESTURE_SOURCE.SCROLLABLE_TYPE.VIEW;
+  }, items1);
+  const tmp6 = enableDynamicSizing((nativeEvent) => {
+    const tmp = enableDynamicSizing;
+    if (tmp) {
+      const result = animatedContentHeight.set(nativeEvent.nativeEvent.layout.height);
     }
-  }
-  H.__closure = { animatedIndex, disappearsOnIndex };
-  H.__workletHash = 17177056692744;
-  H.__initData = __initData2;
-  let fn = function k(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const obj = _mod1651;
-      obj.runOnJS(closure_12)(arg0);
+    if (onLayout) {
+      tmp4(nativeEvent);
     }
-  };
-  fn.__closure = { runOnJS: animatedIndex(onPress[4]).runOnJS, handleContainerTouchability: tmp20 };
-  fn.__workletHash = 17426135168622;
-  fn.__initData = animatedStyle;
-  const items4 = [disappearsOnIndex];
-  ({ runOnJS: animatedIndex(onPress[4]).runOnJS, handleContainerTouchability: tmp20 });
-  const animatedReaction = tmp13Result2.useAnimatedReaction(H, fn, items4);
-  close(() => {
-    ref.current = true;
-    return () => {
-      ref.current = false;
-    };
-  }, []);
-  const obj4 = { style: tmp23, pointerEvents: first, accessible: DEFAULT_ACCESSIBLE, accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE, accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL, accessibilityHint: DEFAULT_ACCESSIBILITY_HINT, children };
-  if (!DEFAULT_ACCESSIBILITY_HINT) {
-    let str2 = "move";
-    if (typeof pressBehavior === "string") {
-      str2 = pressBehavior;
-    }
-    const _HermesInternal = HermesInternal;
-    DEFAULT_ACCESSIBILITY_HINT = "Tap to " + str2 + " the Bottom Sheet";
-  }
-  const tmp26Result = disappearsOnIndex(ViewComponent, obj4);
-  let tmp26Result2 = tmp26Result;
-  if ("none" !== pressBehavior) {
-    const obj5 = { gesture: tmp21, children: tmp26Result };
-    tmp26Result2 = tmp26(tmp13(tmp14[6]).GestureDetector, obj5);
-  }
-  return tmp26Result2;
+  }, items2);
+  focusHook(tmp5);
+  const merged1 = Object.assign(merged);
+  return <bottomSheetContentContainerStyle onLayout={tmp6} style={tmp4}>{children}</bottomSheetContentContainerStyle>;
 });
-memoResult.displayName = "BottomSheetBackdrop";
+memoResult.displayName = "BottomSheetView";
 
-export const BottomSheetBackdrop = memoResult;
+export default memoResult;

@@ -1,14 +1,14 @@
-// Module ID: 1091
-// Function ID: 1092
+// Module ID: 1090
+// Function ID: 1091
 // Name: utils/ColorUtils
 // Dependencies: [671, 2]
 // Exports: getContrast, getDarkness, getLuminance, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgbArray, int2rgba, isValidHex, rgb2int
 
-// Module 1091 (utils/ColorUtils)
+// Module 1090 (utils/ColorUtils)
 import _modDef671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 
-const f80223 = (item) => {
+const f80433 = (item) => {
   let result1;
   const result = item / 255;
   if (result <= 0.03928) {
@@ -260,7 +260,7 @@ export function int2rgbArray(modalV2BackgroundColor) {
 }
 export function getLuminance(arg0, arg1, arg2) {
   const items = [arg0, arg1, arg2];
-  const mapped = items.map(f80223);
+  const mapped = items.map(f80433);
   return 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
 }
 export function getContrast(hex2intResult, hex2intResult1) {
@@ -268,11 +268,11 @@ export function getContrast(hex2intResult, hex2intResult1) {
   const items1 = [hex2intResult1 >> 16 & 255, hex2intResult1 >> 8 & 255, 255 & hex2intResult1];
   const items2 = [, , ];
   [arr3[0], arr3[1], arr3[2]] = items;
-  const mapped = items2.map(f80223);
+  const mapped = items2.map(f80433);
   const sum = 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
   const items3 = [, , ];
   [arr4[0], arr4[1], arr4[2]] = items1;
-  const mapped1 = items3.map(f80223);
+  const mapped1 = items3.map(f80433);
   const sum1 = 0.2126 * mapped1[0] + 0.7152 * mapped1[1] + 0.0722 * mapped1[2];
   const sum2 = Math.max(sum, sum1) + 0.05;
   return sum2 / (Math.min(sum, sum1) + 0.05);

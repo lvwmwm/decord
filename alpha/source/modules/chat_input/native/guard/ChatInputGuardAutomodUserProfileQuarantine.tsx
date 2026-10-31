@@ -1,17 +1,17 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 14022
+// Function ID: 14023
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 4921, 4927, 21, 504, 4947, 13241, 1114, 13971, 13988, 2]
+// Dependencies: [19, 502, 4926, 4932, 21, 504, 4952, 13276, 1113, 14006, 14023, 2]
 
-// Module 13987 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 14022 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4927 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4947 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 13241 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13971 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4952 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 13276 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14006 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -44,22 +44,22 @@ const memoResult = react.memo(function ChatInputGuardAutomodUserProfileQuarantin
     const obj = GuildAutomodActionActionCreators;
     const result = obj.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const obj2 = guildId(4947);
+  const obj2 = guildId(4952);
   const automodReason = obj2.getAutomodReason(stateFromStores);
   const tmp6 = GuildMemberFlags;
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
-    const intl2 = tmp(1114).intl;
-    stringResult = intl2.string(tmp(1114).t.Viksoo);
+    const intl2 = tmp(1113).intl;
+    stringResult = intl2.string(tmp(1113).t.Viksoo);
   } else {
-    const intl = tmp(1114).intl;
-    stringResult = intl.string(tmp(1114).t["/PGQf0"]);
+    const intl = tmp(1113).intl;
+    stringResult = intl.string(tmp(1113).t["/PGQf0"]);
   }
   if (automodReason === tmp6.AUTOMOD_QUARANTINED_SERVER_TAG) {
-    const intl4 = tmp(1114).intl;
-    stringResult1 = intl4.string(tmp(1114).t.ml72ZU);
+    const intl4 = tmp(1113).intl;
+    stringResult1 = intl4.string(tmp(1113).t.ml72ZU);
   } else {
-    const intl3 = tmp(1114).intl;
-    stringResult1 = intl3.string(tmp(1114).t["8HW7r9"]);
+    const intl3 = tmp(1113).intl;
+    stringResult1 = intl3.string(tmp(1113).t["8HW7r9"]);
   }
   ChatInputGuardDefault;
   return <tmp9 type="simple-action" actionOnPress={callback} actionLabel={stringResult} icon={null} message={stringResult1} />;

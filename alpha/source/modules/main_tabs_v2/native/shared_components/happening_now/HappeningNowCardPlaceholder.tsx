@@ -1,18 +1,18 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18116
+// Function ID: 18117
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 17217, 21, 5009, 575, 5090, 5249, 17218, 2]
+// Dependencies: [19, 17, 17274, 21, 5014, 575, 5095, 5254, 17275, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 18073 (HappeningNowCardPlaceholder)
+// Module 18116 (HappeningNowCardPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17217 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17274 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

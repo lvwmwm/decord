@@ -1,15 +1,15 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1377
+// Function ID: 1378
 // Name: URLUtils
-// Dependencies: [1072, 1379, 1380, 1381, 1378, 12, 2]
+// Dependencies: [1072, 1378, 1379, 1380, 1377, 12, 2]
 
-// Module 1378 (URLUtils)
+// Module 1377 (URLUtils)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1072 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import urlParseAll from "urlParse" /* 1381 */;
-import ip from "ip" /* 1379 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import urlParseAll from "urlParse" /* 1380 */;
+import ip from "ip" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 function isDiscordDirectAssetUrl(shareURI) {

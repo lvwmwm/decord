@@ -1,26 +1,27 @@
-// Module ID: 18256
-// Function ID: 18257
+// Module ID: 18299
+// Function ID: 18300
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 5010, 1072, 4855, 21, 5009, 575, 8765, 563, 5267, 1114, 8864, 5619, 5629, 9055, 5253, 2]
+// Dependencies: [32, 19, 17, 5015, 1072, 4860, 21, 5014, 575, 8773, 563, 5272, 1113, 8873, 5624, 6027, 5634, 9074, 5258, 2]
 // Exports: default
 
-// Module 18256 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 18299 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8765 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9055 */;
+import intl6 from "intl" /* 1113 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6027 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, dependencyMap;
@@ -30,6 +31,10 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
 let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
@@ -38,17 +43,19 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const src = { videoURI: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov" };
 let createStyles = createStyles_mod;
-let obj = { container: obj2, videoContainer: obj3, info: { marginTop: 16, alignItems: "center" }, title: { marginTop: 24, textAlign: "center" }, subtitle: { marginTop: 12, textAlign: "center" }, footer: { marginTop: 32 }, button: { marginBottom: 8 } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16, paddingTop: 24, justifyContent: "center" };
+let obj = { container: obj2, videoContainer: obj3, info: obj4, title: obj5, subtitle: obj6, footer: obj7 };
+obj2 = { padding: nativeDefault.space.PX_16, justifyContent: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj4 = { marginTop: nativeDefault.space.PX_16, alignItems: "center" };
+obj5 = { marginTop: nativeDefault.space.PX_24, textAlign: "center" };
+obj6 = { marginTop: nativeDefault.space.PX_12, textAlign: "center" };
+obj7 = { marginTop: nativeDefault.space.PX_32 };
 let closure_13 = createStyles(obj);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUpsellActionSheet.tsx");
 
 export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0) {
-  let Button;
-  let Button2;
   let _undefined;
   let c2;
   let closure_3;
@@ -61,8 +68,6 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   let items3;
   let items4;
   let markAsDismissed;
-  let obj11;
-  let obj13;
   let obj4;
   let tmp3;
   let useReducedMotion;
@@ -83,7 +88,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj4 = {
     style: tmp.container,
     onLayout(nativeEvent) {
-      const diff = nativeEvent.nativeEvent.layout.width - 32;
+      const diff = nativeEvent.nativeEvent.layout.width - 2 * nativeDefault.space.PX_16;
       let result = diff;
       const tmp2 = c2;
       if (closure_3) {
@@ -93,7 +98,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8864), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8873), size) };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true };
@@ -108,9 +113,9 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   intl3 = intl6.intl;
   items3[1] = closure_10(Text2, obj8);
   items2[1] = closure_11(View, obj6);
-  const obj9 = { style: tmp.footer, children: items4 };
-  const obj10 = { style: tmp.button, children: closure_10(Button, obj11) };
-  obj11 = {
+  const obj9 = { spacing: markAsDismissed(575).space.PX_8, style: tmp.footer, children: items4 };
+  const Stack = Stack_Stack.Stack;
+  const obj10 = {
     text: intl4.string(intl6.t.BQq86h),
     onPress: function handleClickUseTemplate() {
       const obj = GuildSettingsActionCreatorsDefault;
@@ -118,21 +123,20 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
       markAsDismissed(ContentDismissActionType.UNKNOWN);
     }
   };
-  Button = components_Button_Button.Button;
+  const Button = components_Button_Button.Button;
   intl4 = intl6.intl;
-  items4 = [closure_10(View, obj10), ];
-  const obj12 = { style: tmp.button, children: closure_10(Button2, obj13) };
-  obj13 = {
+  items4 = [closure_10(Button, obj10), ];
+  const obj11 = {
     text: intl5.string(intl6.t.WAI6xu),
     onPress() {
-      const obj = markAsDismissed(c2[17]);
+      const obj = markAsDismissed(c2[18]);
       return obj.hideActionSheet();
     },
     variant: "secondary"
   };
-  Button2 = components_Button_Button.Button;
+  const Button2 = components_Button_Button.Button;
   intl5 = intl6.intl;
-  items4[1] = closure_10(View, obj12);
-  items2[2] = closure_11(View, obj9);
+  items4[1] = closure_10(Button2, obj11);
+  items2[2] = closure_11(Stack, obj9);
   return closure_10(BottomSheet, obj3);
 };

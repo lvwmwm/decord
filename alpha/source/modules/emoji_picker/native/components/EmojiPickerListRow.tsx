@@ -1,25 +1,25 @@
-// Module ID: 10004
-// Function ID: 10005
+// Module ID: 10025
+// Function ID: 10026
 // Name: EmojiPickerListRow
-// Dependencies: [19, 17, 1193, 9921, 1229, 21, 5009, 575, 1376, 671, 8659, 10005, 6974, 5712, 5016, 7295, 7296, 1188, 10006, 2]
+// Dependencies: [19, 17, 1192, 9942, 1228, 21, 5014, 575, 1375, 671, 8667, 10026, 6980, 5717, 5021, 7301, 7302, 1187, 10027, 2]
 
-// Module 10004 (EmojiPickerListRow)
+// Module 10025 (EmojiPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import shared from "shared" /* 5016 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import Pressables from "Pressables" /* 6974 */;
-import LockIcon from "LockIcon" /* 8659 */;
-import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 10005 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 10006 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import shared from "shared" /* 5021 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import Pressables from "Pressables" /* 6980 */;
+import LockIcon from "LockIcon" /* 8667 */;
+import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 10026 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 10027 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9921 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -84,9 +84,9 @@ class EmojiItem {
       const tmp2Result = FastImageDefault;
       const tmp6Result = shared;
       if (tmp6Result.isThemeDark(ThemeStore.theme)) {
-        tmp2Result2 = tmp2(7295);
+        tmp2Result2 = tmp2(7301);
       } else {
-        tmp2Result2 = tmp2(7296);
+        tmp2Result2 = tmp2(7302);
       }
       obj3 = { uri: tmp4 };
       tmp10Result = tmp10(tmp2Result, obj2);
@@ -94,7 +94,7 @@ class EmojiItem {
     } else {
       tmp8 = metroImportDefault;
       const obj4 = { allowFontScaling: false, style: tmp.surrogates, children: emoji.surrogates };
-      tmp10Result = metroImportDefault(tmp6(1188).LegacyText, obj4);
+      tmp10Result = metroImportDefault(tmp6(1187).LegacyText, obj4);
     }
     items1 = [tmp10Result, ];
     if (disabled) {

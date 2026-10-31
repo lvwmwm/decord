@@ -1,22 +1,22 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16467
+// Function ID: 16468
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5619, 9506, 1188, 1114, 6974, 6978, 7077, 1376, 7364, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 9528, 1187, 1113, 6980, 6984, 7083, 1375, 7370, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 16425 (UserProfileEditFormControls)
+// Module 16467 (UserProfileEditFormControls)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Pressables from "Pressables" /* 6974 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9506 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Pressables from "Pressables" /* 6980 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9528 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -130,8 +130,8 @@ export function UserProfileEditFormButton(loading) {
   items[2] = disabled && tmp.buttonDisabled;
   stringResult = undefined;
   if (!disabled) {
-    const intl = tmp3(1114).intl;
-    stringResult = intl.string(tmp3(1114).t["4lAcxv"]);
+    const intl = tmp3(1113).intl;
+    stringResult = intl.string(tmp3(1113).t["4lAcxv"]);
   }
   items1 = [leading, , , ];
   if (content == null) {
@@ -149,12 +149,12 @@ export function UserProfileEditFormButton(loading) {
   }
   items1[1] = content;
   items1[2] = trailing;
-  items1[3] = !flag2 && metroRequire(tmp3(6978).TableRowArrow, {});
-  const tmp12 = !flag2 && metroRequire(tmp3(6978).TableRowArrow, {});
+  items1[3] = !flag2 && metroRequire(tmp3(6984).TableRowArrow, {});
+  const tmp12 = !flag2 && metroRequire(tmp3(6984).TableRowArrow, {});
   const tmp2Result = metroImportDefault(PressableHighlight, obj);
   const obj5 = { label, labelTrailing, children: tmp2Result2 };
   tmp2Result2 = tmp2Result;
-  const Input = tmp3(7077).Input;
+  const Input = tmp3(7083).Input;
   const tmp15 = metroRequire;
   if (null != footer) {
     const obj6 = { style: tmp.buttonGroup, children: items3 };
@@ -193,7 +193,7 @@ export function UserProfileEditFormSwitch(arg0) {
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    PressableHighlight = tmp2(6974).PressableHighlight;
+    PressableHighlight = tmp2(6980).PressableHighlight;
   } else {
     PressableHighlight = React3;
   }
@@ -206,7 +206,7 @@ export function UserProfileEditFormSwitch(arg0) {
   }
   let tmp10;
   const obj2 = { label, children: tmp9(PressableHighlight, obj3) };
-  const Input = tmp2(7077).Input;
+  const Input = tmp2(7083).Input;
   tmp9 = metroImportDefault;
   if (isAndroidResult) {
     tmp10 = handleOnPress;
@@ -232,6 +232,6 @@ export function UserProfileEditFormSwitch(arg0) {
   if (accessibilityLabel == null) {
     accessibilityLabel = subLabel;
   }
-  items1 = [metroRequire(FormControlText, { text: subLabel }), metroRequire(tmp2(7364).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  items1 = [metroRequire(FormControlText, { text: subLabel }), metroRequire(tmp2(7370).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   return metroRequire(Input, obj2);
 }

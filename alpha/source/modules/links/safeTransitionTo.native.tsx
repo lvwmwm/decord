@@ -1,17 +1,17 @@
-// Module ID: 7415
-// Function ID: 7416
+// Module ID: 7421
+// Function ID: 7422
 // Name: safeTransitionTo
-// Dependencies: [5, 4880, 1072, 5649, 7416, 1100, 7417, 5954, 1114, 7451, 2673, 7496, 7502, 2]
+// Dependencies: [5, 4885, 1072, 5654, 7422, 1099, 7423, 5959, 1113, 7457, 2674, 7502, 7508, 2]
 // Exports: default
 
-// Module 7415 (safeTransitionTo)
+// Module 7421 (safeTransitionTo)
 import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1100 */;
-import LinkUtils from "LinkUtils" /* 5649 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7416 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7417 */;
+import router_utils from "router_utils" /* 1099 */;
+import LinkUtils from "LinkUtils" /* 5654 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7422 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7423 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         if (null != c2) {
           if (null != c2.guildId) {
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "getCurrentUser" };
+          closure_2 = { guildId: "Array" };
         }
         c5 = 2;
         c6 = 1;

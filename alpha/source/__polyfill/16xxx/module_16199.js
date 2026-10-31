@@ -1,221 +1,109 @@
 // Module ID: 16199
 // Function ID: 16200
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21]
+// Dependencies: []
 
 // Module 16199
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+let hasOwnProperty;
 
-let size;
-
-let value;
-let weakMap;
-function _isNativeReflectConstruct() {
+function wrapperForImpl(arg0) {
+  let tmp = null;
+  if (arg0) {
+    tmp = arg0[_window];
+  }
+  return tmp;
+}
+function implForWrapper(arg0) {
+  let tmp = null;
+  if (arg0) {
+    tmp = arg0[SymbolResult1];
+  }
+  return tmp;
+}
+function isObject(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
+  }
+  if (!tmp) {
+    tmp = typeof obj === "function";
+  }
+  return tmp;
+}
+function hasOwn(arg0, arg1) {
+  hasOwnProperty = Object.prototype.hasOwnProperty;
+  return hasOwnProperty.call(arg0, arg1);
+}
+function getSameObject(self, searchParams, fn) {
+  if (!self[closure_2]) {
+    const _Object = Object;
+    self[closure_2] = Object.create(null);
+  }
+  if (!(searchParams in self[closure_2])) {
+    self[closure_2][searchParams] = fn();
+  }
+  return self[closure_2][searchParams];
+}
+function tryWrapperForImpl(searchParams) {
+  let tmp = null;
+  if (searchParams) {
+    tmp = searchParams[_window];
+  }
+  if (!tmp) {
+    tmp = searchParams;
+  }
+  return tmp;
+}
+function tryImplForWrapper(arg0) {
+  let tmp = null;
+  if (arg0) {
+    tmp = arg0[SymbolResult1];
+  }
+  if (!tmp) {
+    tmp = arg0;
+  }
+  return tmp;
+}
+function isArrayBuffer(arg0) {
   try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
+    get.call(arg0);
+    return true;
   } catch (err) {
+    return false;
   }
 }
-if (typeof WeakMap === "function") {
-  const _WeakMap = WeakMap;
-  let self = this;
-  const self2 = this;
-  weakMap = new WeakMap();
-  const _WeakMap2 = WeakMap;
-  const self3 = this;
-  const weakMap1 = new WeakMap();
-}
-if (!react) {
-  let tmp7 = null;
-  let merged = Object.assign({ default: null });
-  merged[0] = react;
-  value = merged;
-  if (null !== react) {
-    if (typeof react === "object") {
-      if (!weakMap) {
-        value = merged;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          value = merged;
-          while (keys[tmp] !== undefined) {
-            let callResult = "default" !== tmp12;
-            if (callResult) {
-              let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(react, tmp12);
-            }
-            if (!callResult) {
-              continue;
-            } else {
-              let _Object = Object;
-              let ownPropertyDescriptor = defineProperty;
-              if (ownPropertyDescriptor) {
-                let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp12);
-              }
-              if (!ownPropertyDescriptor) {
-                merged[tmp12] = react[tmp12];
-                continue;
-              } else {
-                let definePropertyResult1 = defineProperty(merged, tmp12, ownPropertyDescriptor);
-                continue;
-              }
-              continue;
-            }
-            continue;
-          }
-        }
-      } else if (weakMap.has(react)) {
-        value = weakMap.get(react);
-      } else {
-        const result = weakMap.set(react, merged);
-      }
-    } else {
-      value = merged;
+function isArrayIndexPropName(str) {
+  if (typeof str !== "string") {
+    return false;
+  } else {
+    const _Math = Math;
+    const diff = Math.pow(2, 32) - 1;
+    let tmp = tmp2 !== diff;
+    if (str >>> 0 !== diff) {
+      const _HermesInternal = HermesInternal;
+      tmp = str === "" + tmp2;
     }
-  }
-} else {
-  value = react;
-}
-const metroRequire = { container: { position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 1000, opacity: 0.25 }, debugContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", zIndex: 2000 }, debugTextContainer: { backgroundColor: "lightgray", margin: 50, padding: 20 }, debugText: { color: "red", fontSize: 16, marginBottom: 10 } };
-class FullScreenOverlay {
-  constructor(emitter) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, FullScreenOverlay);
-    const items = [emitter];
-    let obj = _getPrototypeOf(FullScreenOverlay);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    const obj2 = { opacity: container.container.opacity, uri: null, justifyContent: "center", alignItems: "center" };
-    tmp3Result.state = obj2;
-    emitter = emitter.emitter;
-    emitter.on("overlay", (arg0) => {
-      const setState = closure_0.setState;
-      const obj = {};
-      const merged = Object.assign(closure_0.state);
-      const merged1 = Object.assign(arg0);
-      setState(obj);
-    });
-    return tmp3Result;
+    return tmp;
   }
 }
-_inherits(FullScreenOverlay, value.Component);
-const entry = {
-  key: "createContainerStyle",
-  value: function createContainerStyle() {
-    let alignItems;
-    let height;
-    let justifyContent;
-    let opacity;
-    let width;
-    const Dimensions = react_native.Dimensions;
-    ({ opacity, justifyContent, alignItems } = this.state);
-    const value = Dimensions.get("window");
-    const obj = { opacity, width, height, justifyContent, alignItems };
-    ({ width, height } = value);
-    const merged = Object.assign(container.container);
-    return obj;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "renderDebug",
-    value: function renderDebug() {
-      return null;
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      let growToWindow;
-      let height;
-      let jsx2;
-      let jsxResult;
-      let jsxs;
-      let marginLeft;
-      let num4;
-      let resizeMode;
-      let tmp6;
-      let tmp7;
-      let uri;
-      let width;
-      const self = this;
-      const state = this.state;
-      ({ uri, growToWindow, marginLeft } = state);
-      let num = 0;
-      ({ width, height, resizeMode } = state);
-      if (undefined !== marginLeft) {
-        num = marginLeft;
-      }
-      const marginRight = state.marginRight;
-      let num2 = 0;
-      if (undefined !== marginRight) {
-        num2 = marginRight;
-      }
-      const marginTop = state.marginTop;
-      let num3 = 0;
-      if (undefined !== marginTop) {
-        num3 = marginTop;
-      }
-      const marginBottom = state.marginBottom;
-      size = { width, height, marginTop: num3, marginRight: num2, marginBottom: num4, marginLeft: num };
-      num4 = 0;
-      if (undefined !== marginBottom) {
-        num4 = marginBottom;
-      }
-      if (growToWindow) {
-        const Dimensions = react_native.Dimensions;
-        const value = Dimensions.get("window");
-        ({ width: obj.width, height: obj.height } = value);
-      }
-      const jsx = Fragment.jsx;
-      if (uri) {
-        let tmp8 = null;
-        const Image = tmp4.Image;
-        const obj3 = { uri };
-        if (growToWindow) {
-          tmp8 = resizeMode;
-        }
-        jsxResult = <Image source={obj3} style={size} resizeMode={tmp8} />;
-        tmp6 = tmp4;
-        tmp7 = tmp3;
-      } else {
-        jsxResult = <tmp4.View />;
-        tmp6 = tmp4;
-        tmp7 = tmp3;
-      }
-      ({ jsxs, Fragment, jsx: jsx2 } = tmp7);
-      const items = [, ];
-      const obj5 = { style: self.createContainerStyle(), pointerEvents: "none", children: jsxResult };
-      items[0] = jsx2(tmp6.View, obj5);
-      items[1] = self.renderDebug();
-      return <>{items}</>;
-    }
-  }
-];
+const SymbolResult = Symbol("wrapper");
+const _window = SymbolResult;
+const SymbolResult1 = Symbol("impl");
+let closure_2 = Symbol("SameObject caches");
+const items = [];
+const forResult = Symbol.for("[webidl2js]  constructor registry");
+const SymbolResult2 = Symbol("internal");
+const prototypeOf = Object.getPrototypeOf(Object.getPrototypeOf(items[Symbol.iterator]()));
+const get = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, "byteLength").get;
+const SymbolResult3 = Symbol("supports property index");
+const SymbolResult4 = Symbol("supported property indices");
+const SymbolResult5 = Symbol("supports property name");
+const SymbolResult6 = Symbol("supported property names");
+const SymbolResult7 = Symbol("indexed property get");
+const SymbolResult8 = Symbol("indexed property set new");
+const SymbolResult9 = Symbol("indexed property set existing");
+const SymbolResult10 = Symbol("named property get");
+const SymbolResult11 = Symbol("named property set new");
+const SymbolResult12 = Symbol("named property set existing");
+({ isObject, hasOwn, wrapperSymbol: SymbolResult, implSymbol: SymbolResult1, getSameObject, ctorRegistrySymbol: forResult, wrapperForImpl, implForWrapper, tryWrapperForImpl, tryImplForWrapper, iterInternalSymbol: SymbolResult2, IteratorPrototype: prototypeOf, isArrayBuffer, isArrayIndexPropName, supportsPropertyIndex: SymbolResult3, supportedPropertyIndices: SymbolResult4, supportsPropertyName: SymbolResult5, supportedPropertyNames: SymbolResult6, indexedGet: SymbolResult7, indexedSetNew: SymbolResult8, indexedSetExisting: SymbolResult9, namedGet: SymbolResult10, namedSetNew: SymbolResult11, namedSetExisting: SymbolResult12, namedDelete: Symbol("named property delete") });
 
-export default _createClass(FullScreenOverlay, items);
+export default { isObject, hasOwn, wrapperSymbol: SymbolResult, implSymbol: SymbolResult1, getSameObject, ctorRegistrySymbol: forResult, wrapperForImpl, implForWrapper, tryWrapperForImpl, tryImplForWrapper, iterInternalSymbol: SymbolResult2, IteratorPrototype: prototypeOf, isArrayBuffer, isArrayIndexPropName, supportsPropertyIndex: SymbolResult3, supportedPropertyIndices: SymbolResult4, supportsPropertyName: SymbolResult5, supportedPropertyNames: SymbolResult6, indexedGet: SymbolResult7, indexedSetNew: SymbolResult8, indexedSetExisting: SymbolResult9, namedGet: SymbolResult10, namedSetNew: SymbolResult11, namedSetExisting: SymbolResult12, namedDelete: Symbol("named property delete") };

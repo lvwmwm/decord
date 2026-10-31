@@ -1,20 +1,20 @@
-// Module ID: 18198
-// Function ID: 18199
+// Module ID: 18241
+// Function ID: 18242
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1384, 4855, 21, 575, 7328, 11028, 5635, 5009, 563, 7320, 7345, 6971, 6974, 7048, 1188, 5619, 1114, 5629, 9418, 2]
+// Dependencies: [19, 17, 1383, 4860, 21, 575, 7334, 11047, 5640, 5014, 563, 7326, 7351, 6977, 6980, 7054, 1187, 5624, 1113, 5634, 9440, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18198 (AccountLinkBanner)
+// Module 18241 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import ButtonConstants from "ButtonConstants" /* 5635 */;
-import GameIcon from "GameIcon" /* 7328 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ButtonConstants from "ButtonConstants" /* 5640 */;
+import GameIcon from "GameIcon" /* 7334 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function AccountLinkLargeBanner(arg0) {
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
     const Avatar = tmp2(tmp3[16]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

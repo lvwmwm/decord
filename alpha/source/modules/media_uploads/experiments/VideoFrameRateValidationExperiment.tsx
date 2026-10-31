@@ -1,11 +1,11 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8232
+// Function ID: 8233
 // Name: VideoFrameRateValidationExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: getVideoFrameRateValidationExperimentConfig
 
-// Module 8224 (VideoFrameRateValidationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 8232 (VideoFrameRateValidationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2025-10-video-frame-rate-validation", kind: "user", defaultConfig: { enableFrameRateValidation: false }, variations: { 0: { enableFrameRateValidation: false }, 1: { enableFrameRateValidation: true } } };

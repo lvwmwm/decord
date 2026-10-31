@@ -1,14 +1,14 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11443
+// Function ID: 11444
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1386, 11408, 7774, 1114, 2]
+// Dependencies: [1385, 11444, 7781, 1113, 2]
 // Exports: getTenureBadgeRequirementString, useTenureBadgeRequirementString
 
-// Module 11407 (useTenureBadgeRequirementString)
-import intl3 from "intl" /* 1114 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7774 */;
-import useTenureBadging from "useTenureBadging" /* 11408 */;
+// Module 11443 (useTenureBadgeRequirementString)
+import intl3 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7781 */;
+import useTenureBadging from "useTenureBadging" /* 11444 */;
 import size from "module_2" /* 2 */;
 
 const TieredTenureBadge = PremiumConstants.TieredTenureBadge;
@@ -38,16 +38,16 @@ export function useTenureBadgeRequirementString() {
               }
             }
           }
-          const intl = tmp(1114).intl;
+          const intl = tmp(1113).intl;
           const obj2 = { years: tenureReqNumMonths / 12 };
-          formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t.qOdyDe, obj2);
+          formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.qOdyDe, obj2);
         }
         return formatToPlainStringResult;
       }
     }
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     const obj3 = { months: tenureReqNumMonths };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t.erUSmA, obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp(1113).t.erUSmA, obj3);
   }
 }
 export function getTenureBadgeRequirementString(id, tenureReqNumMonths) {

@@ -1,23 +1,23 @@
-// Module ID: 8482
-// Function ID: 8483
+// Module ID: 8490
+// Function ID: 8491
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [4858, 4880, 1072, 6432, 8410, 8446, 8447, 8441, 1413, 1410, 8412, 1114, 8414, 2]
+// Dependencies: [4863, 4885, 1072, 6438, 8418, 8454, 8455, 8449, 1412, 1409, 8420, 1113, 8422, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 8482 (RoleSubscriptionPurchaseSystemMessage)
+// Module 8490 (RoleSubscriptionPurchaseSystemMessage)
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import AvatarUtils from "AvatarUtils" /* 1410 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1413 */;
-import useMessageAuthor from "useMessageAuthor" /* 6432 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8410 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8412 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8414 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8441 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8446 */;
-import transformSticker2 from "transformSticker" /* 8447 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import intl2 from "intl" /* 1113 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import useMessageAuthor from "useMessageAuthor" /* 6438 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8449 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8454 */;
+import transformSticker2 from "transformSticker" /* 8455 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const SystemChannelFlags = Constants.SystemChannelFlags;
@@ -83,7 +83,7 @@ export function createRoleSubscriptionPurchaseSystemMessage(message) {
       const obj6 = { content: getRoleSubscriptionPurchaseSystemMessageContentMobile(obj5), totalMonthsSubscribed: roleSubscriptionData.total_months_subscribed, username: messageAuthorWithProcessedColor.nick, avatarURL: tmp18Result.uri, sticker: transformStickerResult, stickerLabel: tmp5Result12.getRoleSubscriptionPurchaseStickerCTA(message.id, false), welcomeLabel: intl.string(intl2.t.piPHvY) };
       obj7 = { message, author: messageAuthorWithProcessedColor, roleStyle: tmp };
       tmp5Result12 = GuildRoleSubscriptionSystemMessageUtils;
-      intl = tmp5(1114).intl;
+      intl = tmp5(1113).intl;
       const merged = Object.assign(createCommonMessageDefault(message));
       return obj6;
     }

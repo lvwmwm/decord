@@ -1,21 +1,21 @@
-// Module ID: 19179
-// Function ID: 19180
+// Module ID: 19231
+// Function ID: 19232
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1072, 21, 5009, 575, 14700, 1114, 11937, 1380, 6954, 1188, 2]
+// Dependencies: [19, 1072, 21, 5014, 575, 14738, 1113, 11975, 1379, 6960, 1187, 2]
 // Exports: default
 
-// Module 19179 (VoicePanelConsoleFacepile)
+// Module 19231 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import NativeViewDefault from "NativeView" /* 6954 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11937 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 14700 */;
+import intl5 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import NativeViewDefault from "NativeView" /* 6960 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11975 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 14738 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,11 +1,11 @@
-// Module ID: 6909
-// Function ID: 6910
+// Module ID: 6915
+// Function ID: 6916
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [19, 21, 6910, 6906, 1114, 5629, 2]
+// Dependencies: [19, 21, 6916, 6912, 1113, 5634, 2]
 // Exports: default
 
-// Module 6909 (MemberVerificationAlertCancelPending)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6910 */;
+// Module 6915 (MemberVerificationAlertCancelPending)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6916 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,26 +37,26 @@ export default function MemberVerificationAlertCancelPending(guildId) {
     const obj = GuildJoinRequestActionCreatorsDefault;
     const result = obj.removeGuildJoinRequest(guildId);
   }, items);
-  let obj = { header: intl.string(guildId(1114).t.KYiN1Q), subtitle: subtitleText, buttons: tmp8(tmp9, obj2) };
-  const tmp5 = onClose(6906);
+  let obj = { header: intl.string(guildId(1113).t.KYiN1Q), subtitle: subtitleText, buttons: tmp8(tmp9, obj2) };
+  const tmp5 = onClose(6912);
   const merged1 = Object.assign(merged);
-  intl = guildId(1114).intl;
+  intl = guildId(1113).intl;
   if (subtitleText == null) {
-    const intl2 = tmp7(1114).intl;
-    subtitleText = intl2.string(tmp7(1114).t.nQHxqm);
+    const intl2 = tmp7(1113).intl;
+    subtitleText = intl2.string(tmp7(1113).t.nQHxqm);
   }
-  const Button = tmp7(5629).Button;
+  const Button = tmp7(5634).Button;
   tmp8 = closure_6;
   tmp9 = closure_5;
   if (confirmText == null) {
-    const intl3 = tmp7(1114).intl;
-    confirmText = intl3.string(tmp7(1114).t.OzHPde);
+    const intl3 = tmp7(1113).intl;
+    confirmText = intl3.string(tmp7(1113).t.OzHPde);
   }
   obj2 = { children: items1 };
   items1 = [closure_4(Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
-  const obj3 = { text: intl4.string(guildId(1114).t.bANR0R), variant: "secondary", onPress: onClose };
-  const Button2 = tmp7(5629).Button;
-  intl4 = tmp7(1114).intl;
+  const obj3 = { text: intl4.string(guildId(1113).t.bANR0R), variant: "secondary", onPress: onClose };
+  const Button2 = tmp7(5634).Button;
+  intl4 = tmp7(1113).intl;
   items1[1] = closure_4(Button2, obj3);
   return closure_4(tmp5, obj);
 };

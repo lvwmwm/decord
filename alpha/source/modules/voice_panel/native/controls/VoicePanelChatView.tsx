@@ -1,25 +1,25 @@
-// Module ID: 13777
-// Function ID: 13778
+// Module ID: 13812
+// Function ID: 13813
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 11202, 1072, 21, 5009, 5754, 1109, 13775, 1114, 10749, 11203, 5090, 7235, 10716, 9800, 1492, 1626, 13778, 7479, 5189, 11521, 5075, 6013, 13779, 11195, 2]
+// Dependencies: [19, 17, 11221, 1072, 21, 5014, 5759, 1108, 13810, 1113, 10769, 11222, 5095, 7241, 10736, 9821, 1491, 1625, 13813, 7485, 5194, 11555, 5080, 6018, 13814, 11214, 2]
 
-// Module 13777 (VoicePanelChatView)
+// Module 13812 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import intl2 from "intl" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5754 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7235 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10716 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10749 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11203 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13775 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import intl2 from "intl" /* 1113 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7241 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10769 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13810 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

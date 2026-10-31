@@ -1,16 +1,16 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10290
+// Function ID: 10291
 // Name: NitroUpsellButton
-// Dependencies: [19, 5010, 21, 504, 5629, 9506, 575, 2]
+// Dependencies: [19, 5015, 21, 504, 5634, 9528, 575, 2]
 
-// Module 10270 (NitroUpsellButton)
+// Module 10290 (NitroUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9506 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9528 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

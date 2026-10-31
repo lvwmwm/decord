@@ -1,26 +1,15 @@
 // Module ID: 5434
 // Function ID: 5435
-// Dependencies: [19, 21, 5431]
-// Exports: default
+// Dependencies: [5435, 5437, 5438, 5439]
 
 // Module 5434
-import Fragment from "Fragment" /* 21 */;
-import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5431 */;
-import react from "react" /* 19 */;
+import _modDef5435 from "module_5435" /* 5435 */;
+import _modDef5437 from "module_5437" /* 5437 */;
+import _modDef5438 from "module_5438" /* 5438 */;
+import _modDef5439 from "module_5439" /* 5439 */;
 
-const jsx = Fragment.jsx;
 
-export default function _default(delayLongPress) {
-  let num = delayLongPress.delayLongPress;
-  if (num === undefined) {
-    num = 600;
-  }
-  let extraButtonProps = delayLongPress.extraButtonProps;
-  if (extraButtonProps === undefined) {
-    extraButtonProps = { rippleColor: "transparent", exclusive: true };
-  }
-  const merged = Object.assign(delayLongPress, Object.assign({ delayLongPress: 0, extraButtonProps: 0 }));
-  TOUCHABLE_STATEDefault;
-  const merged1 = Object.assign(merged);
-  return <tmp2 delayLongPress={num} extraButtonProps={extraButtonProps} />;
-};
+export const TouchableHighlight = _modDef5435;
+export const TouchableNativeFeedback = _modDef5437;
+export const TouchableOpacity = _modDef5438;
+export const TouchableWithoutFeedback = _modDef5439;

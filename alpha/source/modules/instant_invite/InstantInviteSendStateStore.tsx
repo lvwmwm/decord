@@ -1,10 +1,10 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9199
+// Function ID: 9200
 // Name: InstantInviteSendStateStore
-// Dependencies: [560, 1260, 2]
+// Dependencies: [560, 1259, 2]
 // Exports: setSendState
 
-// Module 9180 (InstantInviteSendStateStore)
+// Module 9199 (InstantInviteSendStateStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

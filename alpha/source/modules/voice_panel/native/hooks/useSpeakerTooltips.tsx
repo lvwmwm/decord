@@ -1,19 +1,19 @@
-// Module ID: 19176
-// Function ID: 19177
+// Module ID: 19228
+// Function ID: 19229
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 19174, 11202, 4855, 21, 19177, 19114, 11822, 11203, 5090, 7563, 19148, 1114, 4842, 19179, 9933, 2]
+// Dependencies: [32, 19, 19226, 11221, 4860, 21, 19229, 19163, 11860, 11222, 5095, 7569, 19199, 1113, 4847, 19231, 9954, 2]
 // Exports: default
 
-// Module 19176 (useSpeakerTooltips)
+// Module 19228 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1114 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19179 */;
+import intl3 from "intl" /* 1113 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19231 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19174 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19226 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(4842);
+const dismissible_content = tmp(4847);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
@@ -40,13 +40,13 @@ export default function useSpeakerTooltips(targetRef, arg1) {
   let controlsSpecs;
   let first1;
   let voiceUpsellDismissed;
-  const f116756 = () => {
+  const f117110 = () => {
     const obj = memo2;
     if (memo2.visible) {
       obj.onDismiss();
     }
   };
-  const f116757 = () => {
+  const f117111 = () => {
     const tmp = first;
     if (!tmp) {
       callback1();
@@ -180,16 +180,16 @@ export default function useSpeakerTooltips(targetRef, arg1) {
   }, items3);
   first = tmp;
   const items4 = [memo1];
-  const callback = obj2.useCallback(f116756, items4);
+  const callback = obj2.useCallback(f117110, items4);
   const items5 = [tmp, callback];
-  const effect1 = obj2.useEffect(f116757, items5);
+  const effect1 = obj2.useEffect(f117111, items5);
   const tmp6Result3 = first(tmp3[16]);
   const coachmark = tmp6Result3.useCoachmark(targetRef, memo1);
   first = tmp;
   const items6 = [memo2];
-  const callback1 = obj2.useCallback(f116756, items6);
+  const callback1 = obj2.useCallback(f117110, items6);
   const items7 = [tmp, callback1];
-  const effect2 = obj2.useEffect(f116757, items7);
+  const effect2 = obj2.useEffect(f117111, items7);
   const tmp6Result4 = first(tmp3[16]);
   const coachmark1 = tmp6Result4.useCoachmark(targetRef, memo2);
 };

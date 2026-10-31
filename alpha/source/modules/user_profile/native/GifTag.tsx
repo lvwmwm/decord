@@ -1,16 +1,16 @@
-// Module ID: 8565
-// Function ID: 8566
+// Module ID: 8573
+// Function ID: 8574
 // Name: GifTag
-// Dependencies: [17, 21, 5009, 575, 671, 5619, 1114, 2]
+// Dependencies: [17, 21, 5014, 575, 671, 5624, 1113, 2]
 // Exports: default
 
-// Module 8565 (GifTag)
+// Module 8573 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import module_671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 

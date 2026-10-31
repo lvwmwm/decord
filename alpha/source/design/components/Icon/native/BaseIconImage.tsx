@@ -1,18 +1,18 @@
-// Module ID: 5711
-// Function ID: 5712
+// Module ID: 5716
+// Function ID: 5717
 // Name: BaseIconImage
-// Dependencies: [19, 21, 5591, 5712, 2]
+// Dependencies: [19, 21, 5596, 5717, 2]
 // Exports: BaseIconImage
 
-// Module 5711 (BaseIconImage)
+// Module 5716 (BaseIconImage)
 import Fragment from "Fragment" /* 21 */;
-import useToken from "useToken" /* 5591 */;
-import FastImageDefault from "FastImage" /* 5712 */;
+import useToken from "useToken" /* 5596 */;
+import FastImageDefault from "FastImage" /* 5717 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "color", height: "Error" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "flexDirection" }, refresh_sm: { width: 18, height: 18 } };
 const result = size.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export function BaseIconImage(size) {

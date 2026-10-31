@@ -1,14 +1,14 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13444
+// Function ID: 13445
 // Name: useCheckpointCustomization
-// Dependencies: [19, 1384, 13386, 504, 1984, 6107, 6106, 6062, 2]
+// Dependencies: [19, 1383, 13421, 504, 1983, 6112, 6111, 6067, 2]
 // Exports: default
 
-// Module 13407 (useCheckpointCustomization)
-import CheckpointTrait from "CheckpointTrait" /* 6107 */;
+// Module 13444 (useCheckpointCustomization)
+import CheckpointTrait from "CheckpointTrait" /* 6112 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import CheckpointStore from "CheckpointStore" /* 13386 */;
+import UserStore from "UserStore" /* 1383 */;
+import CheckpointStore from "CheckpointStore" /* 13421 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkpoint/hooks/useCheckpointCustomization.tsx");

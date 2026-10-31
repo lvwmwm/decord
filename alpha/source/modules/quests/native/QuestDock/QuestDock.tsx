@@ -1,42 +1,42 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17142
+// Function ID: 17143
 // Name: QuestDock
-// Dependencies: [5, 32, 109, 19, 17, 16999, 6775, 17001, 1072, 1083, 21, 5009, 575, 1376, 17029, 16998, 17002, 17005, 5269, 5090, 8833, 1626, 17006, 5591, 17085, 5632, 17000, 5633, 6013, 17086, 7235, 1114, 17087, 17088, 17089, 5593, 9661, 6778, 17090, 6534, 6539, 6782, 7864, 17083, 504, 9653, 9662, 5075, 16997, 1253, 17091, 17092, 17099, 17100, 17102, 14647, 17105, 17106, 17112, 17115, 17117, 17118, 17119, 17120, 17121, 7106, 17123, 2]
+// Dependencies: [5, 32, 109, 19, 17, 17057, 6781, 17059, 1072, 1083, 21, 5014, 575, 1375, 17087, 17056, 17060, 17063, 5274, 5095, 8841, 1625, 17064, 5596, 17143, 5637, 17058, 5638, 6018, 17144, 7241, 1113, 17145, 17146, 17147, 5598, 9681, 6784, 17148, 6540, 6545, 6788, 7871, 17141, 504, 9673, 9682, 5080, 17055, 1252, 17149, 17150, 17157, 17158, 17160, 14685, 17163, 17164, 17170, 17173, 17175, 17176, 17177, 17178, 17179, 7112, 17181, 2]
 
-// Module 17084 (QuestDock)
+// Module 17142 (QuestDock)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import springPresets from "springPresets" /* 5633 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6534 */;
-import MetricEvents from "MetricEvents" /* 6539 */;
-import QuestTypes from "QuestTypes" /* 6778 */;
-import AdCreativeType from "AdCreativeType" /* 6782 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9661 */;
-import QuestActionCreators from "QuestActionCreators" /* 9662 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14647 */;
-import QuestDockUtils from "QuestDockUtils" /* 17000 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17002 */;
-import QuestDockBountyHeaderDefault from "QuestDockBountyHeader" /* 17112 */;
-import QuestDockBountyBodyDefault from "QuestDockBountyBody" /* 17115 */;
-import QuestDockBountyBackgroundDefault from "QuestDockBountyBackground" /* 17117 */;
-import QuestDockPlayableHeaderDefault from "QuestDockPlayableHeader" /* 17118 */;
-import QuestDockPlayableBodyDefault from "QuestDockPlayableBody" /* 17119 */;
-import QuestDockPlayableBackgroundDefault from "QuestDockPlayableBackground" /* 17120 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import springPresets from "springPresets" /* 5638 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
+import MetricEvents from "MetricEvents" /* 6545 */;
+import QuestTypes from "QuestTypes" /* 6784 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9681 */;
+import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14685 */;
+import QuestDockUtils from "QuestDockUtils" /* 17058 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 17060 */;
+import QuestDockBountyHeaderDefault from "QuestDockBountyHeader" /* 17170 */;
+import QuestDockBountyBodyDefault from "QuestDockBountyBody" /* 17173 */;
+import QuestDockBountyBackgroundDefault from "QuestDockBountyBackground" /* 17175 */;
+import QuestDockPlayableHeaderDefault from "QuestDockPlayableHeader" /* 17176 */;
+import QuestDockPlayableBodyDefault from "QuestDockPlayableBody" /* 17177 */;
+import QuestDockPlayableBackgroundDefault from "QuestDockPlayableBackground" /* 17178 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockStore from "QuestDockStore" /* 16999 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import QuestDockStore from "QuestDockStore" /* 17057 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -493,7 +493,7 @@ function QuestDockWithEntranceAnimation(adCreativeType) {
     }
     let num2 = 0;
     const obj = { opacity: withSpring(num, obj6, "animate-always"), transform: items };
-    const withSpring2 = tmp(5632).withSpring;
+    const withSpring2 = tmp(5637).withSpring;
     spring;
     if (!isRendered) {
       num2 = first.height;
@@ -536,7 +536,7 @@ function QuestDockWithEntranceAnimation(adCreativeType) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c4;
@@ -603,7 +603,7 @@ function QuestDockWithEntranceAnimation(adCreativeType) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -650,7 +650,7 @@ function QuestDockWithEntranceAnimation(adCreativeType) {
               }
               tmp7(FAILED);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp18) {
             c3 = 3;
@@ -759,15 +759,15 @@ class QuestDockQuestContent {
     let tmp7Result;
     let tmp8;
     quest = quest.quest;
-    let obj = quest(9661);
+    let obj = quest(9681);
     const onImpression = obj.useQuestBarImpressionSurvey(quest);
-    let obj2 = quest(16998);
+    let obj2 = quest(17056);
     const questDockAppThemedBackgroundColor = obj2.useQuestDockAppThemedBackgroundColor();
-    const obj3 = quest(16997);
+    const obj3 = quest(17055);
     const staticUrl = obj3.useQuestDockHeroAsset(quest).staticUrl;
     const userStatus = quest.userStatus;
     let enrolledAt;
-    const obj4 = quest(16997);
+    const obj4 = quest(17055);
     const questGameLogotypeAssetUrl = obj4.useQuestGameLogotypeAssetUrl(quest);
     if (userStatus != null) {
       enrolledAt = userStatus.enrolledAt;
@@ -775,7 +775,7 @@ class QuestDockQuestContent {
     const obj5 = { quest, children: closure_23(tmp8, obj6) };
     obj6 = {
       adCreativeId: quest.id,
-      adCreativeType: quest(6782).AdCreativeType.QUEST,
+      adCreativeType: quest(6788).AdCreativeType.QUEST,
       backgroundImageUrl: staticUrl,
       iconUrl: questGameLogotypeAssetUrl,
       trackAssetLoadingFailure(asset_id) {
@@ -787,8 +787,8 @@ class QuestDockQuestContent {
       theme: DARK,
       backgroundColor: questDockAppThemedBackgroundColor,
       expandedHeight,
-      collapsedContent: closure_23(onImpression(null != enrolledAt ? 17091 : 17092), {}),
-      expandedContent: closure_23(onImpression(null != enrolledAt ? 17099 : 17100), {}),
+      collapsedContent: closure_23(onImpression(null != enrolledAt ? 17149 : 17150), {}),
+      expandedContent: closure_23(onImpression(null != enrolledAt ? 17157 : 17158), {}),
       backgroundContent: tmp7Result,
       renderImpressionTracker(arg0) {
         let children;
@@ -803,7 +803,7 @@ class QuestDockQuestContent {
         return closure_23(QuestDockModeChangeTracker, obj);
       }
     };
-    const QuestDockQuestProvider = tmp(17029).QuestDockQuestProvider;
+    const QuestDockQuestProvider = tmp(17087).QuestDockQuestProvider;
     str = "insetHeader";
     tmp8 = QuestDockWithEntranceAnimation;
     if (null != enrolledAt) {
@@ -815,25 +815,25 @@ class QuestDockQuestContent {
     }
     tmp7Result = null;
     if (null == enrolledAt) {
-      tmp7Result = tmp7(tmp11(17102), {});
+      tmp7Result = tmp7(tmp11(17160), {});
     }
     return closure_23(QuestDockQuestProvider, obj5);
   }
 }
 function QuestDockBountyContent(bounty) {
   bounty = bounty.bounty;
-  let obj = bounty(16998);
+  let obj = bounty(17056);
   const bountyPreviewImageUrl = obj.useBountyPreviewImageUrl(bounty);
-  let obj2 = bounty(16998);
+  let obj2 = bounty(17056);
   const questDockAppThemedBackgroundColor = obj2.useQuestDockAppThemedBackgroundColor();
-  const obj3 = bounty(17105);
+  const obj3 = bounty(17163);
   const questDockBountySmokeCollapsedPlaceholderUrl = obj3.useQuestDockBountySmokeCollapsedPlaceholderUrl();
-  const obj4 = bounty(17106);
+  const obj4 = bounty(17164);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = obj4.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   const obj5 = { bounty, children: closure_23(QuestDockWithEntranceAnimation, obj6) };
   obj6 = {
     adCreativeId: bounty.id,
-    adCreativeType: bounty(6782).AdCreativeType.BOUNTY,
+    adCreativeType: bounty(6788).AdCreativeType.BOUNTY,
     backgroundImageUrl: questDockBountySmokeCollapsedPlaceholderUrl,
     iconUrl: bounty.productIcon,
     trackAssetLoadingFailure(asset_id) {
@@ -862,23 +862,23 @@ function QuestDockBountyContent(bounty) {
       return closure_23(QuestDockModeChangeTracker, obj);
     }
   };
-  const QuestDockBountyProvider = bounty(17029).QuestDockBountyProvider;
+  const QuestDockBountyProvider = bounty(17087).QuestDockBountyProvider;
   return closure_23(QuestDockBountyProvider, obj5);
 }
 function QuestDockPlayableContent(playable) {
   playable = playable.playable;
-  let obj = playable(16998);
+  let obj = playable(17056);
   const bountyPreviewImageUrl = obj.useBountyPreviewImageUrl(playable);
-  let obj2 = playable(16998);
+  let obj2 = playable(17056);
   const questDockAppThemedBackgroundColor = obj2.useQuestDockAppThemedBackgroundColor();
-  const obj3 = playable(17105);
+  const obj3 = playable(17163);
   const questDockBountySmokeCollapsedPlaceholderUrl = obj3.useQuestDockBountySmokeCollapsedPlaceholderUrl();
-  const obj4 = playable(17106);
+  const obj4 = playable(17164);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = obj4.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   const obj5 = { playable, children: closure_23(QuestDockWithEntranceAnimation, obj6) };
   obj6 = {
     adCreativeId: playable.id,
-    adCreativeType: playable(6782).AdCreativeType.PLAYABLE,
+    adCreativeType: playable(6788).AdCreativeType.PLAYABLE,
     backgroundImageUrl: questDockBountySmokeCollapsedPlaceholderUrl,
     iconUrl: playable.productIcon,
     trackAssetLoadingFailure(asset_id) {
@@ -907,7 +907,7 @@ function QuestDockPlayableContent(playable) {
       return closure_23(QuestDockModeChangeTracker, obj);
     }
   };
-  const QuestDockPlayableProvider = playable(17029).QuestDockPlayableProvider;
+  const QuestDockPlayableProvider = playable(17087).QuestDockPlayableProvider;
   return closure_23(QuestDockPlayableProvider, obj5);
 }
 let closure_3 = ["mode"];

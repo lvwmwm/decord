@@ -1,9 +1,9 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11323
+// Function ID: 11324
 // Name: PinotMemberNoticeAckStore
 // Dependencies: [504, 572, 2]
 
-// Module 11301 (PinotMemberNoticeAckStore)
+// Module 11323 (PinotMemberNoticeAckStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -27,8 +27,9 @@ class PinotMemberNoticeAckStoreImpl extends PersistedStore {
     const obj = { ackedChannelIds: Array.from(_Set1) };
     return obj;
   }
-  isAcked(arg0) {
-    return _Set1.has(arg0);
+  isHidden(arg0) {
+    const hasItem = _Set1.has(arg0) || _Set1.size >= 2;
+    return hasItem;
   }
 }
 const prototype = PinotMemberNoticeAckStoreImpl.prototype;

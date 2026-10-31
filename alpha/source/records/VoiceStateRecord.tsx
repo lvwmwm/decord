@@ -1,10 +1,10 @@
-// Module ID: 5675
-// Function ID: 5676
+// Module ID: 5680
+// Function ID: 5681
 // Name: VoiceStateRecord
-// Dependencies: [1399, 2]
+// Dependencies: [1398, 2]
 
-// Module 5675 (VoiceStateRecord)
-import Record from "Record" /* 1399 */;
+// Module 5680 (VoiceStateRecord)
+import Record from "Record" /* 1398 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("records/VoiceStateRecord.tsx");

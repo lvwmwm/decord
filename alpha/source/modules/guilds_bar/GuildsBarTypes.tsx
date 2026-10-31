@@ -1,11 +1,11 @@
-// Module ID: 18374
-// Function ID: 18375
+// Module ID: 18417
+// Function ID: 18418
 // Name: GuildsBarTypes
 // Dependencies: [2]
 
-// Module 18374 (GuildsBarTypes)
+// Module 18417 (GuildsBarTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/GuildsBarTypes.tsx");
 
-export const SpecialGuildsNodeIds = { PENDING_JOIN_REQUESTS_FOLDER: 1, [1]: "PENDING_JOIN_REQUESTS_FOLDER" };
+export const SpecialGuildsNodeIds = { PENDING_JOIN_REQUESTS_FOLDER: 1, [1]: "PENDING_JOIN_REQUESTS_FOLDER", CONJURE_FOLDER: 2, [2]: "CONJURE_FOLDER" };

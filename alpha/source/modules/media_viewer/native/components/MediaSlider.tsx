@@ -1,17 +1,17 @@
-// Module ID: 8838
-// Function ID: 8839
+// Module ID: 8846
+// Function ID: 8847
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 5009, 1376, 5607, 12, 671, 8230, 6974, 1114, 8839, 8841, 5619, 8843, 8852, 575, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 1375, 8847, 5612, 12, 671, 8238, 6980, 1113, 8848, 8850, 5624, 8852, 8861, 575, 2]
 // Exports: default
 
-// Module 8838 (MediaSlider)
+// Module 8846 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -46,146 +46,153 @@ export default function MediaSlider(controls) {
   let alphaResult4;
   let c5;
   let c7;
-  let closure_6;
-  let closure_9;
-  let first;
-  let first1;
-  let items3;
-  let items4;
   let items5;
   let items6;
   let items7;
+  let items8;
+  let items9;
   let stringResult;
-  let tmp18Result;
+  let tmp11Result2;
   let tmp3;
   let tmp7;
   controls = controls.controls;
   const paused = controls.paused;
-  ({ setPaused: dependencyMap, onPlayPress: _slicedToArray } = controls);
+  const setPaused = controls.setPaused;
+  const onPlayPress = controls.onPlayPress;
   react = undefined;
   c5 = undefined;
-  closure_6 = undefined;
   c7 = undefined;
   let ref;
-  closure_9 = undefined;
+  let closure_11;
   const style = controls.style;
   let tmp = ref();
+  let obj = react;
   react = react.useRef(false);
-  let tmp2 = _slicedToArray(react.useState(0), 2);
+  let tmp2 = onPlayPress(react.useState(0), 2);
   [tmp3, c5] = tmp2;
-  [first, closure_6] = react.useState(0);
-  [tmp7, c7] = react.useState("transparent");
-  _slicedToArray(react.useState("transparent"), 2);
+  const tmp4 = onPlayPress(react.useState(0), 2);
+  let closure_6 = tmp4[1];
+  const first = tmp4[0];
+  [tmp7, c7] = onPlayPress(react.useState("transparent"), 2);
+  onPlayPress(react.useState("transparent"), 2);
   ref = react.useRef(0);
-  [first1, closure_9] = react.useState(0);
-  const tmp13 = paused(5607)(() => {
+  const tmp9 = onPlayPress(react.useState(0), 2);
+  let closure_9 = tmp9[1];
+  const first1 = tmp9[0];
+  let num = 100;
+  const obj2 = controls(setPaused[6]);
+  if (obj2.useIsMediaViewerVideoPerfEnabled()) {
+    num = 250;
+  }
+  const tmp14 = paused(setPaused[7])(() => {
     const obj = _modDef12;
     return obj.throttle((arg0) => {
       closure_1_5(arg0);
-    }, 100);
+    }, num);
   });
-  let closure_10 = tmp13;
-  let closure_11 = paused(5607)(() => {
+  closure_11 = tmp14;
+  const items = [tmp14];
+  const tmp15 = paused(setPaused[7])(() => {
     let obj = _modDef12;
     return obj.throttle((arg0) => {
       closure_1_6(arg0);
       let str = "transparent";
       const tmp2 = closure_1_7;
       if (1 === arg0) {
-        const obj = paused(dependencyMap[8])("#FFFFFF");
+        const obj = paused(setPaused[9])("#FFFFFF");
         const alphaResult = obj.alpha(0.2);
         str = alphaResult.hex();
       }
       tmp2(str);
-    }, 100);
+    }, num);
   });
-  const items = [tmp13];
-  const effect = react.useEffect(() => () => {
-    closure_1_10.cancel();
+  const effect = obj.useEffect(() => () => {
+    closure_1_11.cancel();
   }, items);
-  const subscribe = controls.useSubscribe((arg0, current) => {
-    closure_10(arg0);
-    ref.current = current;
-  }, (arg0) => {
-    dependencyMap(arg0);
-  }, (arg0) => {
+  const items1 = [tmp14];
+  const items2 = [setPaused];
+  const callback = obj.useCallback((arg0, current) => {
     closure_11(arg0);
-  });
-  const items1 = [controls, paused];
-  const items2 = [controls];
-  const callback = react.useCallback(() => {
+    ref.current = current;
+  }, items1);
+  const subscribe = controls.useSubscribe(callback, obj.useCallback((arg0) => {
+    setPaused(arg0);
+  }, items2), tmp15);
+  const items3 = [controls, paused];
+  const items4 = [controls];
+  const callback1 = obj.useCallback(() => {
     const tmp = paused;
     if (!tmp) {
       controls.pause(true);
       ref.current = true;
     }
-  }, items1);
-  const callback1 = react.useCallback((arg0) => {
+  }, items3);
+  const callback2 = obj.useCallback((arg0) => {
     controls.seek(arg0);
     const obj = controls;
     if (ref.current) {
       obj.pause(false);
       tmp2.current = false;
     }
-  }, items2);
-  let obj = controls(8230);
-  const obj2 = { style: items3, children: items4 };
-  items3 = [tmp.container, style];
-  const timeFormat = obj.getTimeFormat(tmp3);
-  const obj3 = {
+  }, items4);
+  const obj3 = { style: items5, children: items6 };
+  items5 = [tmp.container, style];
+  const tmp11Result = controls(setPaused[10]);
+  const timeFormat = tmp11Result.getTimeFormat(tmp3);
+  const obj4 = {
     style: tmp.icon,
     accessibilityRole: "button",
     accessibilityLabel: stringResult,
     onPress() {
       if (paused) {
-        _slicedToArray();
+        onPlayPress();
       }
       controls.pause(!paused);
     },
     hitSlop: { top: 8, right: 8, bottom: 8, left: 8 },
     children: closure_6(PauseIcon, { size: "md", color: "white" })
   };
-  const PressableOpacity = controls(6974).PressableOpacity;
-  const intl = controls(1114).intl;
+  const PressableOpacity = tmp11(tmp12[11]).PressableOpacity;
+  const intl = tmp11(tmp12[12]).intl;
   const string = intl.string;
-  const t = controls(1114).t;
+  const t = tmp11(tmp12[12]).t;
   if (paused) {
     stringResult = string(t.RscU7I);
   } else {
     stringResult = string(t.ZcgDJX);
   }
   if (paused) {
-    PauseIcon = tmp18(8839).PlayIcon;
+    PauseIcon = tmp11(tmp12[13]).PlayIcon;
   } else {
-    PauseIcon = tmp18(8841).PauseIcon;
+    PauseIcon = tmp11(tmp12[14]).PauseIcon;
   }
-  items4 = [closure_6(PressableOpacity, obj3), , , ];
-  const obj4 = { style: items5, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium", children: timeFormat };
-  items5 = [tmp.centerText, { width: first1 }];
-  items4[1] = closure_6(controls(5619).Text, obj4);
-  const obj5 = { style: tmp.sliderContainer, children: items7 };
-  const obj6 = { pointerEvents: "none", style: tmp.progressSliderContainer, children: items6 };
-  const obj7 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult.hex(), minimumTrackTintColor: alphaResult1.hex(), maximumTrackTintColor: alphaResult2.hex() };
-  const tmp11Result = paused(8843);
-  const obj8 = paused(671)("#FFFFFF");
-  alphaResult = obj8.alpha(0);
-  const obj10 = paused(671)("#FFFFFF");
-  alphaResult1 = obj10.alpha(0.1);
-  const obj12 = paused(671)("#FFFFFF");
-  alphaResult2 = obj12.alpha(0.1);
-  items6 = [closure_6(tmp11Result, obj7), ];
+  items6 = [closure_6(PressableOpacity, obj4), , , ];
+  const obj5 = { style: items7, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium", children: timeFormat };
+  items7 = [tmp.centerText, { width: first1 }];
+  items6[1] = closure_6(controls(setPaused[15]).Text, obj5);
+  const obj6 = { style: tmp.sliderContainer, children: items9 };
+  const obj7 = { pointerEvents: "none", style: tmp.progressSliderContainer, children: items8 };
+  const obj8 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult.hex(), minimumTrackTintColor: alphaResult1.hex(), maximumTrackTintColor: alphaResult2.hex() };
+  const tmp13Result = paused(setPaused[16]);
+  const obj10 = paused(setPaused[9])("#FFFFFF");
+  alphaResult = obj10.alpha(0);
+  const obj12 = paused(setPaused[9])("#FFFFFF");
+  alphaResult1 = obj12.alpha(0.1);
+  const obj14 = paused(setPaused[9])("#FFFFFF");
+  alphaResult2 = obj14.alpha(0.1);
+  items8 = [closure_6(tmp13Result, obj8), ];
   const obj9 = { style: tmp.downloadProgressSlider, value: first, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult3.hex(), minimumTrackTintColor: alphaResult4.hex(), maximumTrackTintColor: tmp7 };
-  const tmp11Result3 = paused(8843);
-  const obj15 = paused(671)("#FFFFFF");
-  alphaResult3 = obj15.alpha(0);
-  const obj17 = paused(671)("#FFFFFF");
-  alphaResult4 = obj17.alpha(0.2);
-  items6[1] = closure_6(tmp11Result3, obj9);
-  items7 = [c7(c5, obj6), ];
-  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8852), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(575).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
-  const tmp11Result4 = paused(8843);
-  items7[1] = closure_6(tmp11Result4, obj11);
-  items4[2] = c7(c5, obj5);
+  const tmp13Result3 = paused(setPaused[16]);
+  const obj17 = paused(setPaused[9])("#FFFFFF");
+  alphaResult3 = obj17.alpha(0);
+  const obj19 = paused(setPaused[9])("#FFFFFF");
+  alphaResult4 = obj19.alpha(0.2);
+  items8[1] = closure_6(tmp13Result3, obj9);
+  items9 = [c7(c5, obj7), ];
+  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(setPaused[17]), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(setPaused[18]).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp14, onSlidingStart: callback1, onSlidingComplete: callback2 };
+  const tmp13Result4 = paused(setPaused[16]);
+  items9[1] = closure_6(tmp13Result4, obj11);
+  items6[2] = c7(c5, obj6);
   const obj13 = {
     style: tmp.centerText,
     variant: "text-xs/medium",
@@ -195,10 +202,10 @@ export default function MediaSlider(controls) {
     onLayout(nativeEvent) {
       closure_9(nativeEvent.nativeEvent.layout.width);
     },
-    children: tmp18Result.getTimeFormat(ref.current)
+    children: tmp11Result2.getTimeFormat(ref.current)
   };
-  const Text = tmp18(5619).Text;
-  tmp18Result = controls(8230);
-  items4[3] = closure_6(Text, obj13);
-  return c7(c5, obj2);
+  const Text = tmp11(tmp12[15]).Text;
+  tmp11Result2 = controls(setPaused[10]);
+  items6[3] = closure_6(Text, obj13);
+  return c7(c5, obj3);
 };

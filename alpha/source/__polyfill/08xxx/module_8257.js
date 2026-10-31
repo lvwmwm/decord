@@ -1,69 +1,87 @@
 // Module ID: 8257
 // Function ID: 8258
-// Dependencies: [8258, 8260]
+// Dependencies: [8251, 8252]
+// Exports: isAVIF, isBMP, isBPG, isCR2, isEXR, isGIF, isHEIC, isICO, isJPEG, isPBM, isPGM, isPNG, isPPM, isPSD, isWEBP
 
 // Module 8257
-import _mod8258 from "module_8258" /* 8258 */;
-import _mod8260 from "module_8260" /* 8260 */;
+import _mod8251 from "module_8251" /* 8251 */;
+import _mod8252 from "module_8252" /* 8252 */;
 
-let hasOwnProperty;
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
+export function isAVIF(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "avif") && _mod8251.isAvifStringIncluded(fileChunk);
+  return tmp4;
 }
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
-  }
-});
-tmp3(_mod8258, exports);
-tmp3(_mod8260, exports);
+export function isBMP(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "bmp");
+}
+export function isBPG(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "bpg");
+}
+export function isCR2(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "cr2");
+}
+export function isEXR(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exr");
+}
+export function isGIF(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "gif");
+}
+export function isHEIC(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "avif") && _mod8251.isHeicSignatureIncluded(fileChunk);
+  return tmp4;
+}
+export function isICO(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ico");
+}
+export function isJPEG(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "jpeg");
+}
+export function isPBM(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pbm");
+}
+export function isPGM(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pgm");
+}
+export function isPNG(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "png");
+}
+export function isPPM(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ppm");
+}
+export function isPSD(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "psd");
+}
+export function isWEBP(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "webp");
+}

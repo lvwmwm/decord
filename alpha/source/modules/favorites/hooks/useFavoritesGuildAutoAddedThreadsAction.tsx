@@ -1,14 +1,14 @@
-// Module ID: 18142
-// Function ID: 18143
+// Module ID: 18185
+// Function ID: 18186
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1384, 4861, 504, 10811, 1114, 3447, 2]
+// Dependencies: [19, 1383, 4866, 504, 10831, 1113, 3450, 2]
 // Exports: default
 
-// Module 18142 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10811 */;
+// Module 18185 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10831 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import FavoriteStore from "FavoriteStore" /* 4861 */;
+import UserStore from "UserStore" /* 1383 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -38,7 +38,7 @@ export default function useFavoritesGuildAutoAddedThreadsAction() {
   const obj2 = stateFromStores(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => autoAddJoinedThreads.autoAddJoinedThreads);
   const items2 = [stateFromStores, stateFromStores1];
-  const obj3 = { isAvailable: stateFromStores, isEnabled: stateFromStores1, label: intl.string(stateFromStores1(3447).DIyQIF), subLabel: intl2.string(stateFromStores1(3447).g2vHYJ), toggle: callback };
+  const obj3 = { isAvailable: stateFromStores, isEnabled: stateFromStores1, label: intl.string(stateFromStores1(3450).DIyQIF), subLabel: intl2.string(stateFromStores1(3450).g2vHYJ), toggle: callback };
   callback = react.useCallback(() => {
     const tmp = stateFromStores;
     if (tmp) {
@@ -46,7 +46,7 @@ export default function useFavoritesGuildAutoAddedThreadsAction() {
       const result = obj.setFavoritesAutoAddJoinedThreads(!stateFromStores1);
     }
   }, items2);
-  intl = stateFromStores(1114).intl;
-  intl2 = stateFromStores(1114).intl;
+  intl = stateFromStores(1113).intl;
+  intl2 = stateFromStores(1113).intl;
   return obj3;
 };

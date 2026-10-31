@@ -1,29 +1,28 @@
 // Module ID: 13036
 // Function ID: 13037
-// Dependencies: [13031]
-// Exports: hasTracingEnabled
+// Dependencies: [13037, 13040]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 13036
-import _mod13031 from "module_13031" /* 13031 */;
+import _mod13037 from "module_13037" /* 13037 */;
+import _mod13040 from "module_13040" /* 13040 */;
 
+function instrumentError() {
+  onerror = _mod13040.GLOBAL_OBJ.onerror;
+  _mod13040.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    const obj = { column, error, line, msg, url };
+    const obj2 = _mod13037;
+    obj2.triggerHandlers("error", obj);
+    const applyResult = onerror && onerror(...arguments);
+    return applyResult;
+  };
+  _mod13040.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
+}
+let onerror = null;
 
-export function hasTracingEnabled(tracesSampler) {
-  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
-    if (!globalThis.__SENTRY_TRACING__) {
-      return false;
-    }
-  }
-  let tmp = tracesSampler;
-  const obj = _mod13031;
-  const client = obj.getClient();
-  if (!tracesSampler) {
-    tmp = client && client.getOptions();
-    client && client.getOptions();
-  }
-  let tmp3 = tmp;
-  if (tmp3) {
-    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
-    tmp3 = enableTracing;
-  }
-  return tmp3;
+export function addGlobalErrorInstrumentationHandler(arg0) {
+  const obj = _mod13037;
+  obj.addHandler("error", arg0);
+  const obj2 = _mod13037;
+  obj2.maybeInstrument("error", instrumentError);
 }

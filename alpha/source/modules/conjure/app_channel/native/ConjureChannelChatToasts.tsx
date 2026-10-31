@@ -1,19 +1,19 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18668
+// Function ID: 18669
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5009, 575, 1114, 5063, 6971, 1188, 5619, 18627, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1113, 5068, 6977, 1187, 5624, 18669, 2]
 // Exports: default
 
-// Module 18626 (ConjureChannelChatToasts)
+// Module 18668 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import UserUtils from "UserUtils" /* 5063 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18627 */;
+import native from "native" /* 1187 */;
+import UserUtils from "UserUtils" /* 5068 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18669 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,11 +37,11 @@ function ChatToast(message) {
   if ("" === trimmed) {
     let stringResult;
     if (message.stickerItems.length > 0) {
-      const intl2 = tmp2(1114).intl;
-      stringResult = intl2.string(tmp2(1114).t.kHdYCW);
+      const intl2 = tmp2(1113).intl;
+      stringResult = intl2.string(tmp2(1113).t.kHdYCW);
     } else {
-      const intl = tmp2(1114).intl;
-      stringResult = intl.string(tmp2(1114).t["6hGo0c"]);
+      const intl = tmp2(1113).intl;
+      stringResult = intl.string(tmp2(1113).t["6hGo0c"]);
     }
     trimmed = stringResult;
   }
@@ -49,9 +49,9 @@ function ChatToast(message) {
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6971).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
-  const Avatar = tmp2(1188).Avatar;
+  Card = tmp2(6977).Card;
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
+  const Avatar = tmp2(1187).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };
   items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];

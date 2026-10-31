@@ -1,20 +1,20 @@
-// Module ID: 5913
-// Function ID: 5914
+// Module ID: 5932
+// Function ID: 5933
 // Name: UserSettingsActionCreators
-// Dependencies: [5, 5033, 1194, 1193, 1072, 1196, 4839, 1197, 1228, 572, 5074, 4834, 2]
+// Dependencies: [5, 5038, 1193, 1192, 1072, 1195, 4844, 1196, 1227, 572, 5079, 4839, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 5913 (UserSettingsActionCreators)
+// Module 5932 (UserSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import wrappers from "wrappers" /* 1228 */;
-import UserSettings from "UserSettings" /* 4834 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import wrappers from "wrappers" /* 1227 */;
+import UserSettings from "UserSettings" /* 4839 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5033 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeConstants from "ThemeConstants" /* 1195 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -86,7 +86,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -170,7 +170,7 @@ let obj = {
           } else if (1 === tmp4) {
             c2 = 0;
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -203,7 +203,7 @@ let obj = {
           obj9 = { appearance: obj5 };
           dispatch(obj8);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;
@@ -357,7 +357,7 @@ export function saveClientTheme(backgroundGradientPresetId, INFREQUENT_USER_ACTI
       arg0.theme = DARK;
       let obj2;
       if (null != backgroundGradientPresetId) {
-        const UInt32Value = tmp3(1228).UInt32Value;
+        const UInt32Value = tmp3(1227).UInt32Value;
         const obj = { value: tmp13 };
         obj2 = UInt32Value.create(obj);
       }

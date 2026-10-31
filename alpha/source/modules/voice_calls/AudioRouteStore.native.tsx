@@ -1,19 +1,21 @@
-// Module ID: 5779
-// Function ID: 5780
+// Module ID: 5784
+// Function ID: 5785
 // Name: AudioRouteStore
-// Dependencies: [17, 5759, 5780, 1376, 5781, 504, 572, 2]
+// Dependencies: [17, 5764, 5785, 5786, 504, 572, 2]
 
-// Module 5779 (AudioRouteStore)
+// Module 5784 (AudioRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 5780 */;
-import react_nativeDefault from "react-native" /* 5781 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 5785 */;
+import react_nativeDefault from "react-native" /* 5786 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import size from "module_2" /* 2 */;
 
-let _null;
+let AudioRoutePicker, _null;
 
+let NativeEventEmitter;
+let c3;
 function handleAudioRouteChanged(arr) {
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -37,12 +39,11 @@ function handleAudioRouteChanged(arr) {
   }
   UNKNOWN = VoiceCallTypes.RouteTypes.UNKNOWN;
 }
-const NativeModules = react_native.NativeModules;
-const NativeEventEmitter = react_native.NativeEventEmitter;
+({ NativeModules: c3, NativeEventEmitter } = react_native);
 let UNKNOWN = VoiceCallTypes.RouteTypes.UNKNOWN;
 let closure_6 = false;
 let c7 = null;
-const nativeEventEmitter = new NativeEventEmitter(NativeModules.AudioRouteEmitter);
+const nativeEventEmitter = new NativeEventEmitter(react_nativeDefault);
 const Store = get_initializedDefault.Store;
 class AudioRouteStoreClass extends Store {
   initialize() {
@@ -63,11 +64,9 @@ let obj = {
     const tmp2 = _null;
     if (null === _null) {
       if (isConnectedResult) {
-        let currentRoute1;
         UNKNOWN = VoiceCallTypes.RouteTypes.UNKNOWN;
         let obj = nativeEventEmitter;
         let addListenerResult;
-        const tmp10 = require;
         if (nativeEventEmitter != null) {
           addListenerResult = obj.addListener("audio-route-changed", (routeType) => {
             handleAudioRouteChanged(routeType.routeType, routeType.multipleRoutesAvailable);
@@ -75,19 +74,9 @@ let obj = {
           });
         }
         _null = addListenerResult;
-        const tmp10Result = tmp10(1376);
-        if (tmp10Result.isAndroid()) {
-          const obj3 = react_nativeDefault;
-          let currentRoute;
-          if (obj3 != null) {
-            currentRoute = obj3.getCurrentRoute();
-          }
-          currentRoute1 = currentRoute;
-        } else {
-          const AudioRouteEmitter = NativeModules.AudioRouteEmitter;
-          currentRoute1 = AudioRouteEmitter.getCurrentRoute();
-        }
-        const nextPromise = currentRoute1.then((routeType) => {
+        const obj2 = react_nativeDefault;
+        const currentRoute = obj2.getCurrentRoute();
+        const nextPromise = currentRoute.then((routeType) => {
           handleAudioRouteChanged(routeType.routeType, routeType.multipleRoutesAvailable);
         });
         const nextPromise1 = nextPromise.then(() => {
@@ -106,7 +95,7 @@ let obj = {
     }
     const tmp3 = null == tmp2 || isConnectedResult;
     if (!tmp3) {
-      const AudioRoutePicker = NativeModules.AudioRoutePicker;
+      AudioRoutePicker = AudioRoutePicker.AudioRoutePicker;
       if (AudioRoutePicker != null) {
         AudioRoutePicker.resetPortOverride();
       }

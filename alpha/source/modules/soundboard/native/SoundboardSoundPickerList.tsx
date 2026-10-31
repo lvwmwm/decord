@@ -1,31 +1,31 @@
-// Module ID: 19123
-// Function ID: 19124
+// Module ID: 19172
+// Function ID: 19173
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1384, 19118, 21, 5009, 575, 7512, 1114, 10048, 504, 2048, 9775, 10001, 19124, 5637, 12, 6951, 1188, 19132, 10251, 5735, 9358, 10000, 7234, 5619, 2]
+// Dependencies: [19, 17, 1383, 19167, 21, 5014, 575, 7518, 1113, 10069, 504, 2047, 9796, 10022, 19173, 5642, 12, 6957, 1187, 19181, 10271, 5740, 9378, 10021, 7240, 5624, 2]
 
-// Module 19123 (SoundboardSoundPickerList)
+// Module 19172 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ClockIcon from "ClockIcon" /* 5735 */;
-import GuildIcon from "GuildIcon" /* 6951 */;
-import FastListDefault from "FastList" /* 7234 */;
-import SoundboardTypes from "SoundboardTypes" /* 7512 */;
-import TrophyIcon from "TrophyIcon" /* 9358 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9775 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10000 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10001 */;
-import chunkDefault from "chunk" /* 10048 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10251 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19132 */;
+import intl5 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ClockIcon from "ClockIcon" /* 5740 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import FastListDefault from "FastList" /* 7240 */;
+import SoundboardTypes from "SoundboardTypes" /* 7518 */;
+import TrophyIcon from "TrophyIcon" /* 9378 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9796 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10021 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10022 */;
+import chunkDefault from "chunk" /* 10069 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10271 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19181 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19118 */;
+import UserStore from "UserStore" /* 1383 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19167 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,18 +44,18 @@ function getSectionLabel(category) {
   if (SoundboardTypes.SoundboardSoundGridSectionType.GUILD === type) {
     return category.category.categoryInfo.guild.name;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1113).intl;
     return intl4.string(intl5.t.Rtvk9X);
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1113).intl;
     return intl3.string(intl5.t.y3LQCG);
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     return intl2.string(intl5.t["+cGVV6"]);
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.SEARCH === type) {
     return null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     const obj = { guildName: category.category.categoryInfo.guild.name };
     return intl.formatToPlainString(intl5.t.GXs41w, obj);
   }
@@ -101,7 +101,7 @@ function SoundPickerButtonRow(row) {
         const obj = { sound, channel, soundGridLocation: obj2, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
         obj2 = { section: importDefault, item: row };
-        const SoundButton = tmp(19124).SoundButton;
+        const SoundButton = tmp(19173).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -197,7 +197,7 @@ const memoResult = react.memo(function SoundboardSoundPickerListComponent(channe
   }
   const listRef = channel.listRef;
   const currentUser = closure_10();
-  let obj = channel(5637);
+  let obj = channel(5642);
   const fontScale = obj.useFontScale();
   let tmp2 = calculateRowsPerSection(categories, closure_6);
   let tmp3 = getFastListSectionsFromCategories(categories, closure_6, fontScale);

@@ -1,22 +1,22 @@
-// Module ID: 11441
-// Function ID: 11442
+// Module ID: 11477
+// Function ID: 11478
 // Name: badgeDetailsCtas
-// Dependencies: [1072, 1074, 5194, 1499, 8747, 1114, 5700, 7557, 7712, 7345, 9658, 6780, 9653, 10538, 2]
+// Dependencies: [1072, 1074, 5199, 1498, 8755, 1113, 5705, 7563, 7719, 7351, 9678, 6786, 9673, 10558, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 11441 (badgeDetailsCtas)
+// Module 11477 (badgeDetailsCtas)
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl2 from "intl" /* 1114 */;
-import RootNavigationRef from "RootNavigationRef" /* 5194 */;
-import openURLDefault from "openURL" /* 5700 */;
-import QuestContent from "QuestContent" /* 6780 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7712 */;
-import BadgeId from "BadgeId" /* 8747 */;
-import QuestsEligibility from "QuestsEligibility" /* 9653 */;
-import QuestUtils from "QuestUtils" /* 9658 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10538 */;
+import intl2 from "intl" /* 1113 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import openURLDefault from "openURL" /* 5705 */;
+import QuestContent from "QuestContent" /* 6786 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
+import BadgeId from "BadgeId" /* 8755 */;
+import QuestsEligibility from "QuestsEligibility" /* 9673 */;
+import QuestUtils from "QuestUtils" /* 9678 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -24,8 +24,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Link = tmp(1499);
-const openUserSettings = tmp(7557);
+const Link = tmp(1498);
+const openUserSettings = tmp(7563);
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let obj = { [BadgeId.BadgeId.STAFF]: obj2, [BadgeId.BadgeId.PREMIUM_TENURE]: obj3, [BadgeId.BadgeId.GUILD_BOOSTER]: obj4, [BadgeId.BadgeId.ORB_PROFILE]: obj5 };

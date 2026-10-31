@@ -1,9 +1,9 @@
-// Module ID: 4889
-// Function ID: 4890
-// Dependencies: [2, 4890]
+// Module ID: 4894
+// Function ID: 4895
+// Dependencies: [2, 4895]
 
-// Module 4889
-import react_native from "react-native" /* 4890 */;
+// Module 4894
+import react_native from "react-native" /* 4895 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/implementation/index.tsx");

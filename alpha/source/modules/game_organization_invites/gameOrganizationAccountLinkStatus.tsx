@@ -1,13 +1,13 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13181
+// Function ID: 13182
 // Name: gameOrganizationAccountLinkStatus
-// Dependencies: [2040, 7270, 7323, 504, 2]
+// Dependencies: [2038, 7276, 7329, 504, 2]
 // Exports: useGameOrganizationAccountLinkStatus
 
-// Module 13146 (gameOrganizationAccountLinkStatus)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7270 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7323 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
+// Module 13181 (gameOrganizationAccountLinkStatus)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7276 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7329 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

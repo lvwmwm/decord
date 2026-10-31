@@ -1,11 +1,11 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13180
+// Function ID: 13181
 // Name: canGoToGameOrganizationGuild
-// Dependencies: [4880, 2]
+// Dependencies: [4885, 2]
 // Exports: default
 
-// Module 13145 (canGoToGameOrganizationGuild)
-import GuildStore from "GuildStore" /* 4880 */;
+// Module 13180 (canGoToGameOrganizationGuild)
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/canGoToGameOrganizationGuild.tsx");

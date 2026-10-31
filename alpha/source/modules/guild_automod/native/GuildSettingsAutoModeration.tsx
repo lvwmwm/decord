@@ -1,20 +1,20 @@
-// Module ID: 19607
-// Function ID: 19608
+// Module ID: 19664
+// Function ID: 19665
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 19608, 19610, 1072, 21, 5009, 575, 19612, 1114, 1498, 19617, 19625, 8169, 6022, 5619, 2062, 6947, 7054, 5601, 2]
+// Dependencies: [32, 19, 19665, 19667, 1072, 21, 5014, 575, 19669, 1113, 1497, 19674, 19682, 8177, 6027, 5624, 2061, 6953, 7060, 5606, 2]
 // Exports: default
 
-// Module 19607 (GuildSettingsAutoModeration)
+// Module 19664 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 575 */;
-import TableRowGroup2 from "TableRowGroup" /* 7054 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19610 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19612 */;
+import TableRowGroup2 from "TableRowGroup" /* 7060 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19667 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19669 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 19608 */;
+import AutomodStore from "AutomodStore" /* 19665 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -182,11 +182,11 @@ export default function GuildSettingsAutoModeration(guildId) {
         const TableRowGroup = TableRowGroup2.TableRowGroup;
         const tmp5 = React4;
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
-          const intl2 = tmp6(1114).intl;
-          stringResult = intl2.string(tmp6(1114).t.sx4E5v);
+          const intl2 = tmp6(1113).intl;
+          stringResult = intl2.string(tmp6(1113).t.sx4E5v);
         } else if (AutomodTriggerConfigs.AutomodTriggerCategory.CONTENT === tmp) {
-          const intl = tmp6(1114).intl;
-          stringResult = intl.string(tmp6(1114).t.fphZb0);
+          const intl = tmp6(1113).intl;
+          stringResult = intl.string(tmp6(1113).t.fphZb0);
         }
         const obj = { title: stringResult, hasIcons: true, children: arr.map(renderTriggerType) };
         tmp5Result = tmp5(TableRowGroup, obj, tmp);

@@ -1,20 +1,20 @@
-// Module ID: 12343
-// Function ID: 12344
+// Module ID: 12381
+// Function ID: 12382
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 4858, 4951, 1384, 1072, 21, 7320, 504, 12, 1380, 11585, 11591, 11590, 5591, 575, 12344, 1114, 9506, 12345, 8742, 10713, 2]
+// Dependencies: [32, 19, 17, 4863, 4956, 1383, 1072, 21, 7326, 504, 12, 1379, 11621, 11627, 11626, 5596, 575, 12382, 1113, 9528, 12383, 8750, 10733, 2]
 
-// Module 12343 (PrivateChannelUserList)
+// Module 12381 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1114 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12345 */;
+import intl2 from "intl" /* 1113 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12383 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let c9;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NitroWheelIcon2 = tmp(9506);
+const NitroWheelIcon2 = tmp(9528);
 const View = react_native.View;
 ({ RelationshipTypes: c9, MAX_GROUP_DM_PARTICIPANTS: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);

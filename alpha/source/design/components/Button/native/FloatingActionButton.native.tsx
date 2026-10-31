@@ -1,16 +1,16 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 8999
+// Function ID: 9000
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 5009, 575, 5635, 5090, 5632, 8021, 2]
+// Dependencies: [19, 21, 5014, 575, 5640, 5095, 5637, 8029, 2]
 // Exports: FloatingActionButton
 
-// Module 8990 (FloatingActionButton)
+// Module 8999 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
-import ButtonConstants from "ButtonConstants" /* 5635 */;
+import spring from "spring" /* 5637 */;
+import ButtonConstants from "ButtonConstants" /* 5640 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let num, num2, rect, tmp, tmp3, tmp4, tmpResult, withSpring2;
@@ -38,7 +38,7 @@ export function FloatingActionButton(positionRight) {
   const accessibilityLabel = positionRight.accessibilityLabel;
   const merged = Object.assign(positionRight, Object.assign({ icon: 0, positionBottom: 0, positionRight: 0, accessibilityLabel: 0 }));
   const tmp2 = styles();
-  const obj = positionBottom(5090);
+  const obj = positionBottom(5095);
   class F {
     constructor() {
       tmp = closure_0;
@@ -61,13 +61,13 @@ export function FloatingActionButton(positionRight) {
       return rect;
     }
   }
-  F.__closure = { withSpring: positionBottom(5632).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight };
+  F.__closure = { withSpring: positionBottom(5637).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight };
   F.__workletHash = 10762818944671;
   F.__initData = __initData;
-  ({ withSpring: positionBottom(5632).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight });
+  ({ withSpring: positionBottom(5637).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight });
   const animatedStyle = obj.useAnimatedStyle(F);
-  const View = positionRight(5090).View;
-  const BaseIconButton = positionBottom(8021).BaseIconButton;
+  const View = positionRight(5095).View;
+  const BaseIconButton = positionBottom(8029).BaseIconButton;
   const merged1 = Object.assign(merged);
   let cloneElementResult = icon;
   const tmp6 = positionRight;

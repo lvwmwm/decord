@@ -1,18 +1,18 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17604
+// Function ID: 17605
 // Name: toggleDismissibleContentDismissState
-// Dependencies: [19, 5040, 5685, 4856, 4843, 4839, 11, 504, 5039, 1090, 4849, 2]
+// Dependencies: [19, 5045, 5690, 4861, 4848, 4844, 11, 504, 5044, 1089, 4854, 2]
 // Exports: default
 
-// Module 17544 (toggleDismissibleContentDismissState)
+// Module 17604 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4839 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4843 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4849 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4856 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5685 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4844 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4848 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4854 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4861 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5690 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
   const items = [SelectedGuildStore];
   const stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
   const obj2 = require("DismissibleContentUnsafeUtils");
-  const obj3 = { cooldownDurationMs: stateFromStores(1090).Millis.WEEK, guildId: stateFromStores };
+  const obj3 = { cooldownDurationMs: stateFromStores(1089).Millis.WEEK, guildId: stateFromStores };
   const result = obj2.useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj3);
   dependencyMap = result;
   const items1 = [APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, stateFromStores, result];
@@ -86,7 +86,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
             const fromTimestamp2 = SnowflakeUtilsDefault.fromTimestamp;
             SnowflakeUtilsDefault;
             const timestamp = Date.now();
-            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4843).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
+            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4848).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
             flag9 = true;
           }
           flag = flag9;
@@ -200,7 +200,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
                       const fromTimestamp = SnowflakeUtilsDefault.fromTimestamp;
                       SnowflakeUtilsDefault;
                       const timestamp1 = Date.now();
-                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4843).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
+                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4848).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
                       flag3 = true;
                     }
                     flag2 = flag3;

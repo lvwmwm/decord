@@ -1,20 +1,20 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14228
+// Function ID: 14229
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 9112, 13808, 21, 5009, 575, 14187, 1197, 1114, 8169, 5253, 14191, 1995, 14313, 2]
+// Dependencies: [19, 17, 9131, 13843, 21, 5014, 575, 14225, 1196, 1113, 8177, 5258, 14229, 1994, 14351, 2]
 // Exports: default
 
-// Module 14190 (HubProgressHeader)
+// Module 14228 (HubProgressHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13808 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13843 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9112 */;
-import createStyles from "createStyles" /* 5009 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9131 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -76,7 +76,7 @@ export default function HubProgressHeader(guild) {
           if (!tmp) {
             const obj2 = { guild, analyticsSource: "Directory Channel Header" };
             const obj = ActionSheetActionCreatorsDefault;
-            obj.openLazy(asyncRequire(14191, dependencyMap.paths), React3, obj2);
+            obj.openLazy(asyncRequire(14229, dependencyMap.paths), React3, obj2);
           }
         },
       iconSource: flag(nextHubProgressStep[14]),

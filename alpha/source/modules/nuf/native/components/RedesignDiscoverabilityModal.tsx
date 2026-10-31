@@ -1,22 +1,22 @@
-// Module ID: 19511
-// Function ID: 19512
+// Module ID: 19568
+// Function ID: 19569
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 14195, 1384, 1072, 21, 5009, 575, 5581, 1498, 504, 14202, 1093, 19512, 14223, 14216, 1261, 14215, 7163, 1114, 2]
+// Dependencies: [19, 17, 14233, 1383, 1072, 21, 5014, 575, 5586, 1497, 504, 14240, 1092, 19569, 14261, 14254, 1260, 14253, 7169, 1113, 2]
 
-// Module 19511 (RedesignDiscoverabilityModal)
+// Module 19568 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import NavigatorConstants from "NavigatorConstants" /* 5581 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14195 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14202 */;
-import NUFActionCreators from "NUFActionCreators" /* 14223 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import NavigatorConstants from "NavigatorConstants" /* 5586 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14233 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14240 */;
+import NUFActionCreators from "NUFActionCreators" /* 14261 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import UserStore from "UserStore" /* 1383 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -87,7 +87,7 @@ function DiscoverabilityNameScene(onComplete) {
     const result = obj.startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
-  allowPhone(14216);
+  allowPhone(14254);
   if (name == null) {
     name = "";
   }
@@ -98,8 +98,8 @@ class RedesignDiscoverabilityModal {
     const onComplete = route.route.params.onComplete;
     let tmp = closure_8();
     const items = [onComplete];
-    const Navigator = onComplete(7163).Navigator;
-    const intl = onComplete(1114).intl;
+    const Navigator = onComplete(7169).Navigator;
+    const intl = onComplete(1113).intl;
     return <Navigator headerStyle={tmp.header} screens={react.useMemo(() => {
       if (null == onComplete) {
         const fn = () => {
@@ -150,7 +150,7 @@ class RedesignDiscoverabilityModal {
       const NAME = ConstantsIOS.DiscoverabilityScenes.NAME;
       obj[NAME] = obj3;
       return obj;
-    }, items)} initialRouteName={onComplete(1093).DiscoverabilityScenes.LANDING} headerBackTitle={intl.string(onComplete(1114).t["13/7kX"])} />;
+    }, items)} initialRouteName={onComplete(1092).DiscoverabilityScenes.LANDING} headerBackTitle={intl.string(onComplete(1113).t["13/7kX"])} />;
   }
 }
 const View = react_native.View;

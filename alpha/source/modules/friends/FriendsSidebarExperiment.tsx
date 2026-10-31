@@ -1,10 +1,10 @@
-// Module ID: 6859
-// Function ID: 6860
+// Module ID: 6865
+// Function ID: 6866
 // Name: FriendsSidebarExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 
-// Module 6859 (FriendsSidebarExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 6865 (FriendsSidebarExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-friends-sidebar", kind: "user", defaultConfig: { sidebarEnabled: false, appBarToggleEnabled: false }, variations: { 0: { sidebarEnabled: false, appBarToggleEnabled: false }, 1: { sidebarEnabled: true, appBarToggleEnabled: false }, 2: { sidebarEnabled: true, appBarToggleEnabled: true } } };

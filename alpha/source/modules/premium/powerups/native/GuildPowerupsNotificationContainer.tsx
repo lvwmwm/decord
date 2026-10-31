@@ -1,19 +1,19 @@
-// Module ID: 14079
-// Function ID: 14080
+// Module ID: 14114
+// Function ID: 14115
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 5009, 575, 7143, 5619, 14080, 14081, 1114, 2569, 14084, 2]
+// Dependencies: [17, 21, 5014, 575, 7149, 5624, 14115, 14116, 1113, 2570, 14119, 2]
 // Exports: default
 
-// Module 14079 (GuildPowerupsNotificationContainer)
+// Module 14114 (GuildPowerupsNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2569 from "module_2569" /* 2569 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 14080 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 14081 */;
+import _modDef2570 from "module_2570" /* 2570 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 14115 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 14116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -60,18 +60,18 @@ export default function GuildPowerupsNotificationContainer(guildId) {
   if (tmp4.shouldShow) {
     let str = "text-subtle";
     const obj2 = { style: tmp.container, children: items };
-    const Text = tmp6(5619).Text;
+    const Text = tmp6(5624).Text;
     const tmp10 = View;
     const tmp9 = hasOwnProperty;
     if (manaTypeConsolidationExperiment) {
       str = "text-strong";
     }
-    const obj3 = { color: str, variant: str2, children: intl.string(_modDef2569["3FRirU"]) };
+    const obj3 = { color: str, variant: str2, children: intl.string(_modDef2570["3FRirU"]) };
     str2 = "eyebrow";
     if (manaTypeConsolidationExperiment) {
       str2 = "experimental/heading-lg/semibold";
     }
-    intl = tmp6(1114).intl;
+    intl = tmp6(1113).intl;
     items = [React3(Text, obj3), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
@@ -83,7 +83,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(14084), obj9);
+      shouldShow2 = tmp11(tmp2(14119), obj9);
     }
     items[2] = shouldShow2;
     tmp9Result = tmp9(tmp10, obj2);

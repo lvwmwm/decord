@@ -1,11 +1,11 @@
-// Module ID: 10545
-// Function ID: 10546
+// Module ID: 10565
+// Function ID: 10566
 // Name: useGiftStyles
-// Dependencies: [1386, 2]
+// Dependencies: [1385, 2]
 // Exports: useGiftStyles
 
-// Module 10545 (useGiftStyles)
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+// Module 10565 (useGiftStyles)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;

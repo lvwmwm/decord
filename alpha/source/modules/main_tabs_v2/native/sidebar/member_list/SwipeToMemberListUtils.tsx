@@ -1,13 +1,13 @@
-// Module ID: 11503
-// Function ID: 11504
+// Module ID: 11537
+// Function ID: 11538
 // Name: SwipeToMemberListUtils
-// Dependencies: [11504, 1197, 6871, 2]
+// Dependencies: [11538, 1196, 6877, 2]
 // Exports: isSwipeToMemberListEnabled, isSwipeToMemberListEnabledForChannel, useIsSwipeToMemberListEnabled
 
-// Module 11503 (SwipeToMemberListUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6871 */;
-import ChatGestureSettings from "ChatGestureSettings" /* 11504 */;
+// Module 11537 (SwipeToMemberListUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6877 */;
+import ChatGestureSettings from "ChatGestureSettings" /* 11538 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/member_list/SwipeToMemberListUtils.tsx");

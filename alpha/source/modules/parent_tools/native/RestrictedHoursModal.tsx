@@ -1,29 +1,29 @@
-// Module ID: 19317
-// Function ID: 19318
+// Module ID: 19374
+// Function ID: 19375
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1384, 21, 5009, 575, 6947, 1626, 19318, 504, 5090, 5249, 1114, 2537, 7964, 5712, 19319, 5176, 5619, 7163, 19320, 6734, 19316, 6017, 11447, 2]
+// Dependencies: [32, 19, 17, 1383, 21, 5014, 575, 6953, 1625, 19375, 504, 5095, 5254, 1113, 2538, 7972, 5717, 19376, 5181, 5624, 7169, 19377, 6740, 19373, 6022, 11481, 2]
 // Exports: default
 
-// Module 19317 (RestrictedHoursModal)
+// Module 19374 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 6017 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6734 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6947 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19316 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19320 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 6022 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19373 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, dependencyMap, importDefault, set, set2, set3;
+let _require, currentUser, dependencyMap, importDefault, set, set2, set3, set4;
 
 let StyleSheet;
 let hasOwnProperty;
@@ -119,7 +119,7 @@ function RestrictedHoursScreen(onLogin) {
     timing;
     Easing3 = ReanimatedRexport.Easing;
     set3(withDelay2(2000, withTiming3(1, obj3)));
-    const set4 = sharedValue3.set;
+    set4 = sharedValue3.set;
     const withDelay3 = ReanimatedRexport.withDelay;
     ReanimatedRexport;
     const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };

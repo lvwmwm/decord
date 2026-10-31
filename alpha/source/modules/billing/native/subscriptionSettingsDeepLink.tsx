@@ -1,15 +1,15 @@
-// Module ID: 15769
-// Function ID: 15770
+// Module ID: 15809
+// Function ID: 15810
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2053, 1072, 7557, 15770, 5253, 1114, 1253, 6529, 2]
+// Dependencies: [5, 2052, 1072, 7563, 15810, 5258, 1113, 1252, 6535, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15769 (subscriptionSettingsDeepLink)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6529 */;
-import openUserSettings from "openUserSettings" /* 7557 */;
+// Module 15809 (subscriptionSettingsDeepLink)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

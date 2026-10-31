@@ -1,32 +1,32 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13297
+// Function ID: 13298
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2063, 7986, 7962, 1072, 21, 5009, 575, 5619, 7963, 1114, 504, 3189, 9090, 5704, 11255, 6969, 5629, 13263, 13265, 7985, 6723, 1253, 13266, 6534, 6539, 13268, 7286, 13273, 7961, 2]
+// Dependencies: [19, 17, 2062, 7994, 7970, 1072, 21, 5014, 575, 5624, 7971, 1113, 504, 3192, 9109, 5709, 11281, 6975, 5634, 13298, 13300, 7993, 6729, 1252, 13301, 6540, 6545, 13303, 7292, 13308, 7969, 2]
 // Exports: default
 
-// Module 13262 (ClassificationDetail)
+// Module 13297 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import _modDef3189 from "module_3189" /* 3189 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6534 */;
-import MetricEvents from "MetricEvents" /* 6539 */;
-import TableRow2 from "TableRow" /* 6969 */;
-import SafetyHubModels from "SafetyHubModels" /* 7963 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9090 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13266 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13268 */;
+import intl4 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import _modDef3192 from "module_3192" /* 3192 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
+import MetricEvents from "MetricEvents" /* 6545 */;
+import TableRow2 from "TableRow" /* 6975 */;
+import SafetyHubModels from "SafetyHubModels" /* 7971 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9109 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13301 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13303 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import SafetyHubStore from "SafetyHubStore" /* 7986 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ function ClassificationHeader(classificationTypeText) {
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5619).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(5624).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -79,10 +79,10 @@ function ClassificationHeader(classificationTypeText) {
         member_type = tmp.member_type;
       }
       if (member_type === SafetyHubModels.MemberType.OWNER) {
-        const intl3 = tmp6(1114).intl;
+        const intl3 = tmp6(1113).intl;
         const format2 = intl3.format;
         const obj2 = { guildName: name };
-        const X1ngSd = tmp6(1114).t.X1ngSd;
+        const X1ngSd = tmp6(1113).t.X1ngSd;
         const merged = Object.assign(obj);
         name = undefined;
         if (guildMetadata != null) {
@@ -90,10 +90,10 @@ function ClassificationHeader(classificationTypeText) {
         }
         format2Result = format2(X1ngSd, obj2);
       } else {
-        const intl2 = tmp6(1114).intl;
+        const intl2 = tmp6(1113).intl;
         const format = intl2.format;
         const obj3 = { guildName: name1 };
-        const rmpEPD = tmp6(1114).t.rmpEPD;
+        const rmpEPD = tmp6(1113).t.rmpEPD;
         const merged1 = Object.assign(obj);
         name1 = undefined;
         if (guildMetadata != null) {
@@ -167,8 +167,8 @@ function ClassificationActionsTaken(arg0) {
   const found = actions.filter((descriptions) => descriptions.descriptions.length > 0);
   if (0 !== found.length) {
     const obj2 = { style: tmp4.sectionContainer, children: items1 };
-    const obj3 = { plain: redesigned, children: intl.string(redesigned(1114).t["O2nYk+"]) };
-    intl = tmp(1114).intl;
+    const obj3 = { plain: redesigned, children: intl.string(redesigned(1113).t["O2nYk+"]) };
+    intl = tmp(1113).intl;
     items1 = [closure_13(SectionHeader, obj3), ];
     const obj4 = { style: tmp4.actionsTaken, children: items2 };
     items2 = [
@@ -182,10 +182,10 @@ function ClassificationActionsTaken(arg0) {
     const tmp8 = closure_13;
     if (null != classificationExpiration) {
       const obj5 = { large: redesigned, children: format(TByIjT, obj6) };
-      const intl2 = tmp(1114).intl;
+      const intl2 = tmp(1113).intl;
       format = intl2.format;
       obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
-      TByIjT = tmp(1114).t.TByIjT;
+      TByIjT = tmp(1113).t.TByIjT;
       tmp8Result = tmp8(BulletRow, obj5, "expiration");
     }
     items2[1] = tmp8Result;
@@ -207,7 +207,7 @@ function ManualReviewDecidedUnderageActionsTaken() {
   intl = intl4.intl;
   items = [map1(SectionHeader, obj2), ];
   const obj3 = { style: tmp.actionsTaken, children: map1(BulletRow, obj4) };
-  obj4 = { large: true, children: intl2.string(_modDef3189.rn3Gto) };
+  obj4 = { large: true, children: intl2.string(_modDef3192.rn3Gto) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore3(React3, obj);
@@ -235,7 +235,7 @@ function ManualReviewDecidedUnderageGuidance() {
   intl = intl4.intl;
   items = [map1(SectionHeader, obj2), ];
   const obj3 = { style: tmp.actionsTaken, children: map1(BulletRow, obj4) };
-  obj4 = { large: true, children: intl2.string(_modDef3189["yV/t/V"]) };
+  obj4 = { large: true, children: intl2.string(_modDef3192["yV/t/V"]) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore3(React3, obj);
@@ -287,12 +287,12 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj4) };
   obj4 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
   tmp2 = TouchableHitBoxDefault;
-  ShieldIcon = policyExplainerLink(11255).ShieldIcon;
+  ShieldIcon = policyExplainerLink(11281).ShieldIcon;
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
-  obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1114).t.zxUdpj, { classificationDescription: classificationTypeText }) };
-  Text = policyExplainerLink(5619).Text;
-  intl = policyExplainerLink(1114).intl;
+  obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1113).t.zxUdpj, { classificationDescription: classificationTypeText }) };
+  Text = policyExplainerLink(5624).Text;
+  intl = policyExplainerLink(1113).intl;
   items[1] = closure_13(closure_4, obj5);
   return closure_13(closure_4, obj);
 }
@@ -378,7 +378,7 @@ function ManualReviewDecidedUnderageFooter(arg0) {
   let intl;
   let tosLink;
   ({ tosLink, communityGuidelinesLink } = arg0);
-  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3189.vPOpia, { tosLink, communityGuidelinesLink }) };
+  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3192.vPOpia, { tosLink, communityGuidelinesLink }) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   return map1(Text, obj);

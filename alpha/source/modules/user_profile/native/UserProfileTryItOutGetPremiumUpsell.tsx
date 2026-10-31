@@ -1,15 +1,15 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16543
+// Function ID: 16544
 // Name: UserProfileTryItOutGetPremiumUpsell
-// Dependencies: [19, 1072, 21, 7619, 7320, 9884, 9885, 16498, 1114, 2]
+// Dependencies: [19, 1072, 21, 7626, 7326, 9905, 9906, 16540, 1113, 2]
 // Exports: default
 
-// Module 16501 (UserProfileTryItOutGetPremiumUpsell)
+// Module 16543 (UserProfileTryItOutGetPremiumUpsell)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7320 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16498 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16540 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ export default function UserProfileTryItOutGetPremiumUpsell(onLayout) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   onLayout = onLayout.onLayout;
-  let obj = analyticsLocations(7619);
+  let obj = analyticsLocations(7626);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const items = [analyticsLocations];
@@ -37,13 +37,13 @@ export default function UserProfileTryItOutGetPremiumUpsell(onLayout) {
     const tmp = openPremiumModalDefault;
     tmp(obj);
   }, items);
-  let obj2 = { text: intl.format(analyticsLocations(1114).t.TmfgI2, { onClick: callback }), buttonText: nitroTrialCtaOverride, buttonVariant: "experimental_premium-primary", onButtonPress: callback, onLayout };
+  let obj2 = { text: intl.format(analyticsLocations(1113).t.TmfgI2, { onClick: callback }), buttonText: nitroTrialCtaOverride, buttonVariant: "experimental_premium-primary", onButtonPress: callback, onLayout };
   const tmp6 = UserProfileFloatingUpsellDefault;
-  intl = analyticsLocations(1114).intl;
+  intl = analyticsLocations(1113).intl;
   const tmp5 = jsx;
   if (nitroTrialCtaOverride == null) {
-    const intl2 = tmp(1114).intl;
-    nitroTrialCtaOverride = intl2.string(tmp(1114).t.pj0XBN);
+    const intl2 = tmp(1113).intl;
+    nitroTrialCtaOverride = intl2.string(tmp(1113).t.pj0XBN);
   }
   return tmp5(tmp6, obj2);
 };

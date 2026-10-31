@@ -1,21 +1,21 @@
-// Module ID: 17005
-// Function ID: 17006
+// Module ID: 17063
+// Function ID: 17064
 // Name: QuestDockExternalCoordinationContext
-// Dependencies: [19, 16999, 6775, 17001, 21, 1090, 7236, 5090, 17000, 9662, 1376, 2]
+// Dependencies: [19, 17057, 6781, 17059, 21, 1089, 7242, 5095, 17058, 9682, 1375, 2]
 // Exports: useExternalScrollEventHandler
 
-// Module 17005 (QuestDockExternalCoordinationContext)
+// Module 17063 (QuestDockExternalCoordinationContext)
 import Fragment from "Fragment" /* 21 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import QuestActionCreators from "QuestActionCreators" /* 9662 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import QuestActionCreators from "QuestActionCreators" /* 9682 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16999 */;
+import QuestDockStore from "QuestDockStore" /* 17057 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7236 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7242 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;

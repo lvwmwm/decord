@@ -1,31 +1,31 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 18436
+// Function ID: 18437
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 5064, 1384, 13927, 13928, 18394, 1072, 21, 9835, 5009, 575, 504, 1188, 5954, 1114, 13931, 6974, 17235, 17938, 5090, 5249, 6726, 1253, 7286, 18395, 17939, 13937, 18396, 6981, 8169, 11454, 7163, 9791, 10124, 17964, 6734, 7102, 17963, 2]
+// Dependencies: [32, 5, 19, 17, 502, 5069, 1383, 13962, 13963, 18437, 1072, 21, 9856, 5014, 575, 504, 1187, 5959, 1113, 13966, 6980, 17292, 17981, 5095, 5254, 6732, 1252, 7292, 18438, 17982, 13972, 18439, 6987, 8177, 11488, 7169, 9812, 10144, 18007, 6740, 7108, 18006, 2]
 
-// Module 18393 (ManageAccountsModal)
+// Module 18436 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import timing from "timing" /* 5249 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
-import HeaderShared from "HeaderShared" /* 9791 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10124 */;
-import MultiAccountStore from "MultiAccountStore" /* 13927 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13931 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 18394 */;
+import intl5 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import timing from "timing" /* 5254 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import HeaderShared from "HeaderShared" /* 9812 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10144 */;
+import MultiAccountStore from "MultiAccountStore" /* 13962 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13966 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18437 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 5064 */;
-import UserStore from "UserStore" /* 1384 */;
-import Constants_mod from "Constants" /* 13928 */;
+import StreamerModeStore from "StreamerModeStore" /* 5069 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants_mod from "Constants" /* 13963 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9835 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import NativeStackView from "NativeStackView" /* 9856 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,7 +69,7 @@ function RemoveMultiAccountUserButton(user) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function RemoveMultiAccountUserButton(user) {
               obj.removeAccount(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -131,7 +131,7 @@ function RemoveMultiAccountUserButton(user) {
     id = stateFromStores1.id;
   }
   if (id === user.id) {
-    return closure_18(tmp(1188).Spacer, { size: 21 });
+    return closure_18(tmp(1187).Spacer, { size: 21 });
   } else {
     let username = user.username;
     importDefault = username;
@@ -144,16 +144,16 @@ function RemoveMultiAccountUserButton(user) {
     }
     let obj3 = {
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(tmp(1114).t.lSLMaU),
+      accessibilityLabel: intl.string(tmp(1113).t.lSLMaU),
       onPress: function handlePressRemove() {
           return obj(...arguments);
         },
       children: closure_18(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(6974).PressableOpacity;
-    intl = tmp(1114).intl;
+    const PressableOpacity = tmp(6980).PressableOpacity;
+    intl = tmp(1113).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(17235).CircleMinusIcon;
+    CircleMinusIcon = tmp(17292).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }

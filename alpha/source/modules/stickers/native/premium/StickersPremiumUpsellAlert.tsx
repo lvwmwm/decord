@@ -1,26 +1,26 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10292
+// Function ID: 10293
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 7590, 1072, 1386, 21, 10273, 1114, 575, 10274, 10275, 5009, 1188, 5619, 7597, 9887, 1492, 7320, 6025, 1253, 9884, 6974, 8351, 5712, 10276, 2]
+// Dependencies: [19, 17, 7597, 1072, 1385, 21, 10293, 1113, 575, 10294, 10295, 5014, 1187, 5624, 7604, 9908, 1491, 7326, 6030, 1252, 9905, 6980, 8359, 5717, 10296, 2]
 // Exports: default
 
-// Module 10272 (StickersPremiumUpsellAlert)
+// Module 10292 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10273 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10274 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10275 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10293 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10294 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10295 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 7590 */;
+import IAPStore from "IAPStore" /* 7597 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -119,13 +119,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const products = obj.loadProducts();
     }
   }, []);
-  const tmp5 = analyticsLocations(9887)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(9908)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
-  const height = tmp3(1492)().height;
-  analyticsLocations = tmp3(7320)().analyticsLocations;
+  const height = tmp3(1491)().height;
+  analyticsLocations = tmp3(7326)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(6025);
+  const tmp3Result = analyticsLocations(6030);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -158,9 +158,9 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_13(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_13(Icon, obj4) };
-  PressableOpacity = tmp9(6974).PressableOpacity;
-  obj4 = { source: analyticsLocations(8351) };
-  Icon = tmp9(1188).Icon;
+  PressableOpacity = tmp9(6980).PressableOpacity;
+  obj4 = { source: analyticsLocations(8359) };
+  Icon = tmp9(1187).Icon;
   items1 = [closure_13(closure_4, obj2), ];
   const obj5 = {
     style: tmp.content,
@@ -169,14 +169,14 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(10276), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(5712);
+  const obj6 = { source: analyticsLocations(10296), style: tmp.imageHeader };
+  const tmp3Result2 = analyticsLocations(5717);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "text-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5619).Text;
-  const intl3 = tmp9(1114).intl;
+  const Text = tmp9(5624).Text;
+  const intl3 = tmp9(1113).intl;
   format = intl3.format;
-  TBsJfQ = tmp9(1114).t.TBsJfQ;
+  TBsJfQ = tmp9(1113).t.TBsJfQ;
   const tmp13 = closure_5;
   if (priceString == null) {
     priceString = closure_12;

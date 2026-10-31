@@ -1,17 +1,17 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17147
+// Function ID: 17148
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6775, 17001, 21, 5009, 17002, 5090, 5632, 7235, 17000, 5590, 1114, 2]
+// Dependencies: [19, 17, 6781, 17059, 21, 5014, 17060, 5095, 5637, 7241, 17058, 5595, 1113, 2]
 
-// Module 17089 (QuestDockDragHandle)
+// Module 17147 (QuestDockDragHandle)
 import react_native from "react-native" /* 17 */;
-import spring from "spring" /* 5632 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7235 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import spring from "spring" /* 5637 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7241 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -52,9 +52,9 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   const tmp = closure_8();
   let tmp3 = dependencyMap;
   const tmp2 = activeQuestDockMode;
-  activeQuestDockMode = react.useContext(activeQuestDockMode(17002).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(17060).QuestDockGestureContext).activeQuestDockMode;
   importDefault = tmp4;
-  let obj = activeQuestDockMode(5090);
+  let obj = activeQuestDockMode(5095);
   const fn = function c() {
     let items;
     let num = 0;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   fn.__workletHash = 8792527248223;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = activeQuestDockMode(5090);
+  const obj3 = activeQuestDockMode(5095);
   class M {
     constructor() {
       spring;
@@ -90,10 +90,10 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
       num = 1;
     }
   }
-  M.__closure = { withSpring: activeQuestDockMode(5632).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  M.__closure = { withSpring: activeQuestDockMode(5637).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   M.__workletHash = 6896281369829;
   M.__initData = __initData2;
-  ({ withSpring: activeQuestDockMode(5632).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5637).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle1 = obj3.useAnimatedStyle(M);
   const fn2 = function k() {
     spring;
@@ -108,23 +108,23 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
     }
     num = 0;
   };
-  const obj5 = activeQuestDockMode(5090);
-  fn2.__closure = { withSpring: activeQuestDockMode(5632).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  const obj5 = activeQuestDockMode(5095);
+  fn2.__closure = { withSpring: activeQuestDockMode(5637).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   fn2.__workletHash = 7780416831295;
   fn2.__initData = __initData3;
-  ({ withSpring: activeQuestDockMode(5632).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5637).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle2 = obj5.useAnimatedStyle(fn2);
   const obj7 = { style: tmp.dragHandleWrapper, children: tmp11(tmp12, obj8) };
-  obj8 = { style: animatedStyle, layout: activeQuestDockMode(17000).dimensionsLayoutTransition, children: items1 };
+  obj8 = { style: animatedStyle, layout: activeQuestDockMode(17058).dimensionsLayoutTransition, children: items1 };
   const tmp10 = ReanimatedNativeViewDefault;
   tmp12 = ReanimatedNativeViewDefault;
   const obj9 = { style: items, children: closure_6(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
   items = [tmp.dragHandleOverlay, animatedStyle2];
   const tmp13 = ReanimatedNativeViewDefault;
-  ActionSheetHeaderBar = activeQuestDockMode(5590).ActionSheetHeaderBar;
-  const intl = activeQuestDockMode(1114).intl;
+  ActionSheetHeaderBar = activeQuestDockMode(5595).ActionSheetHeaderBar;
+  const intl = activeQuestDockMode(1113).intl;
   const string = intl.string;
-  const t = activeQuestDockMode(1114).t;
+  const t = activeQuestDockMode(1113).t;
   tmp11 = closure_7;
   if (isExpanded) {
     stringResult = string(t["GQ+4bk"]);
@@ -132,7 +132,7 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
     stringResult = string(t.Yplnt6);
   }
   items1 = [closure_6(tmp13, obj9), ];
-  const obj10 = { style: items2, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_6(tmp2(5590).ActionSheetHeaderBar, { variant: "default" }) };
+  const obj10 = { style: items2, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_6(tmp2(5595).ActionSheetHeaderBar, { variant: "default" }) };
   items2 = [tmp.dragHandleOverlay, animatedStyle1];
   const tmp9Result = ReanimatedNativeViewDefault;
   items1[1] = closure_6(tmp9Result, obj10);

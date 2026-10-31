@@ -1,13 +1,13 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12588
+// Function ID: 12589
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1114, 3865, 10832, 2]
+// Dependencies: [32, 19, 1113, 3868, 10852, 2]
 // Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
 
-// Module 12553 (ConjureSecretRequestState)
-import intl3 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import conjureChatTurns from "conjureChatTurns" /* 10832 */;
+// Module 12588 (ConjureSecretRequestState)
+import intl3 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import conjureChatTurns from "conjureChatTurns" /* 10852 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,10 +18,10 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3865.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3868.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3865.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3868.sMQt5O);
   }
   return tmp5;
 }

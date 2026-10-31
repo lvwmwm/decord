@@ -1,9 +1,9 @@
-// Module ID: 6929
-// Function ID: 6930
+// Module ID: 6935
+// Function ID: 6936
 // Name: fallbackLocales
 // Dependencies: [2]
 
-// Module 6929 (fallbackLocales)
+// Module 6935 (fallbackLocales)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/spellcheck/fallbackLocales.tsx");

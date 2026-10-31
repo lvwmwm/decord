@@ -1,16 +1,16 @@
-// Module ID: 17280
-// Function ID: 17281
+// Module ID: 17340
+// Function ID: 17341
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5009, 575, 7360, 7315, 1114, 3867, 7052, 13683, 7055, 2]
+// Dependencies: [32, 19, 21, 5014, 575, 7366, 7321, 1113, 3870, 7058, 13718, 7061, 2]
 // Exports: default
 
-// Module 17280 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 17340 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3867 from "module_3867" /* 3867 */;
+import _modDef3870 from "module_3870" /* 3870 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -32,11 +32,11 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
   const initialValue = onChange.initialValue;
   const tmp = closure_6();
   [first, importDefault] = react.useState(initialValue);
-  const ActionSheet = onChange(7360).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3867["X+ijyw"]) };
-  const BottomSheetTitleHeader = onChange(7315).BottomSheetTitleHeader;
-  intl = onChange(1114).intl;
-  const intl2 = onChange(1114).intl;
+  const ActionSheet = onChange(7366).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3870["X+ijyw"]) };
+  const BottomSheetTitleHeader = onChange(7321).BottomSheetTitleHeader;
+  intl = onChange(1113).intl;
+  const intl2 = onChange(1113).intl;
   ({
     value: first,
     onChange: function handleChange(arg0) {
@@ -52,8 +52,8 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
       return <TableRadioRow key={arg0} value={arg0} label={string(obj2.getCustomTypingIndicatorSuggestionMessage(arg0))} />;
     })
   });
-  const TableRadioGroup = onChange(7052).TableRadioGroup;
-  const obj4 = onChange(13683);
+  const TableRadioGroup = onChange(7058).TableRadioGroup;
+  const obj4 = onChange(13718);
   customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
-  return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3867.hrl2cG)}>{null}</ActionSheet>;
+  return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3870.hrl2cG)}>{null}</ActionSheet>;
 };

@@ -1,12 +1,12 @@
-// Module ID: 1892
-// Function ID: 1893
+// Module ID: 1891
+// Function ID: 1892
 // Name: useSystemKeyboardHeight
-// Dependencies: [1495, 1496, 2]
+// Dependencies: [1494, 1495, 2]
 // Exports: default, getSystemKeyboardHeight
 
-// Module 1892 (useSystemKeyboardHeight)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1495 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1496 */;
+// Module 1891 (useSystemKeyboardHeight)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = { excludeSafeAreaInsets: false };

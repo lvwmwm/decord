@@ -12,7 +12,7 @@ let _require, c4, c5, set;
 
 let tmp;
 const _mod681 = tmp(681);
-const f80030 = (arg0, arg1) => {
+const f80240 = (arg0, arg1) => {
   closure_0 = arg0;
   let closure_1 = arg1;
   let c2 = false;
@@ -49,7 +49,7 @@ const f80030 = (arg0, arg1) => {
   });
 };
 function fetchNativeFrames() {
-  const promise = new Promise(f80030);
+  const promise = new Promise(f80240);
   return promise;
 }
 function isClose(arg0, arg1) {
@@ -144,7 +144,7 @@ function nativeFramesIntegration() {
     set = asyncExpiringMap.set;
     let promise = new Promise((arg0) => {
       let closure_0 = arg0;
-      const promise = new Promise(f80030);
+      const promise = new Promise(f80240);
       const nextPromise = promise.then((result) => closure_0(result));
       nextPromise.then(undefined, (arg0) => {
         const debug = closure_2_0(asyncExpiringMap[2]).debug;
@@ -168,7 +168,7 @@ function nativeFramesIntegration() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp65;
@@ -213,7 +213,7 @@ function nativeFramesIntegration() {
                   set = tmp65.set;
                   let promise = new Promise((arg0) => {
                     closure_0 = arg0;
-                    const promise = new Promise(f80030);
+                    const promise = new Promise(f80240);
                     let nextPromise = promise.then((nativeFrames) => {
                       const obj = { timestamp, nativeFrames };
                       closure_0(obj);
@@ -301,7 +301,7 @@ function nativeFramesIntegration() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp65) {
           if (0 === c3) {
             c5 = 3;
@@ -343,7 +343,7 @@ function nativeFramesIntegration() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -531,7 +531,7 @@ export const createNativeFramesIntegrations = function(arg0) {
       set = asyncExpiringMap.set;
       let promise = new Promise((arg0) => {
         let closure_0 = arg0;
-        const promise = new Promise(f80030);
+        const promise = new Promise(f80240);
         const nextPromise = promise.then((result) => closure_0(result));
         nextPromise.then(undefined, (arg0) => {
           const debug = closure_2_0(asyncExpiringMap[2]).debug;
@@ -555,7 +555,7 @@ export const createNativeFramesIntegrations = function(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let tmp65;
@@ -600,7 +600,7 @@ export const createNativeFramesIntegrations = function(arg0) {
                     set = tmp65.set;
                     let promise = new Promise((arg0) => {
                       closure_0 = arg0;
-                      const promise = new Promise(f80030);
+                      const promise = new Promise(f80240);
                       let nextPromise = promise.then((nativeFrames) => {
                         const obj = { timestamp, nativeFrames };
                         closure_0(obj);
@@ -688,7 +688,7 @@ export const createNativeFramesIntegrations = function(arg0) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp65) {
             if (0 === c3) {
               c5 = 3;
@@ -730,7 +730,7 @@ export const createNativeFramesIntegrations = function(arg0) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {

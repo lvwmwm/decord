@@ -1,16 +1,16 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 14177
+// Function ID: 14178
 // Name: SegmentedControlPages
-// Dependencies: [32, 19, 17, 21, 5090, 11446, 1376, 5298, 6016, 5984, 2]
+// Dependencies: [32, 19, 17, 21, 5095, 14178, 1375, 5303, 6021, 5989, 2]
 // Exports: SegmentedControlPages
 
-// Module 11445 (SegmentedControlPages)
+// Module 14177 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import react_native2 from "react-native" /* 6016 */;
-import MathUtils from "MathUtils" /* 11446 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import react_native2 from "react-native" /* 6021 */;
+import MathUtils from "MathUtils" /* 14178 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -343,7 +343,7 @@ export function SegmentedControlPages(onEndDragWorklet) {
       }
       if (tmp4) {
         const result2 = sharedValue1.set(obj2.get());
-        const tmp13Result = tmp13(5090);
+        const tmp13Result = tmp13(5095);
         const runOnJSResult = tmp13Result.runOnJS(callback1);
         runOnJSResult(sharedValue.get());
       }
@@ -384,7 +384,7 @@ export function SegmentedControlPages(onEndDragWorklet) {
         const result = obj.set(-1);
       } else {
         const value = obj.get();
-        const tmpResult = tmp(5090);
+        const tmpResult = tmp(5095);
         tmpResult.runOnJS(callback2)(value);
       }
     }

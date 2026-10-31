@@ -1,12 +1,12 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9852
+// Function ID: 9853
 // Name: ConversationsAnalytics
-// Dependencies: [4858, 1072, 1253, 2]
+// Dependencies: [4863, 1072, 1252, 2]
 
-// Module 9831 (ConversationsAnalytics)
+// Module 9852 (ConversationsAnalytics)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

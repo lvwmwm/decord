@@ -4,4 +4,10 @@
 
 // Module 16128
 
-export default {};
+export default (fn) => {
+  try {
+    return fn();
+  } catch (err) {
+    return true;
+  }
+};

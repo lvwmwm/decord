@@ -1,19 +1,19 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12741
+// Function ID: 12742
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 5009, 575, 12707, 1188, 1410, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 12742, 1187, 1409, 5624, 2]
 // Exports: default
 
-// Module 12706 (ConjurePlanAutomodExamples)
+// Module 12741 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import AvatarUtils from "AvatarUtils" /* 1410 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12707 */;
+import native from "native" /* 1187 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12742 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function ExampleRow(showReason) {
   }
   items2 = [tmp9, , ];
   const obj3 = { source: makeSource(tmp2Result5.getDefaultAvatarURL(undefined, undefined)), size: native.AvatarSizes.XSMALL };
-  const Avatar = tmp2(1188).Avatar;
+  const Avatar = tmp2(1187).Avatar;
   makeSource = AvatarUtils.makeSource;
   AvatarUtils;
   tmp2Result5 = AvatarUtils;
@@ -71,14 +71,14 @@ function ExampleRow(showReason) {
   const obj4 = { style: tmp.rowBody, children: items3 };
   items3 = [_false(Text_Text.Text, { variant: "text-sm/semibold", color: "text-strong", children: username }), , ];
   const obj5 = { variant: "text-sm/normal", color: "text-default", children: tmp2Result6.renderPlanAutomodExampleContent(example.content) };
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   tmp2Result6 = ConjurePlanAutomodOutcomes;
   items3[1] = _false(Text, obj5);
   let tmp11Result = null;
   const tmp11 = _false;
   if (null != result) {
     const obj6 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: result };
-    tmp11Result = tmp11(tmp2(5619).Text, obj6);
+    tmp11Result = tmp11(tmp2(5624).Text, obj6);
   }
   items3[2] = tmp11Result;
   items2[2] = React3(View, obj4);
@@ -167,7 +167,7 @@ export default function ConjurePlanAutomodExamples(automod) {
   const obj2 = { style: tmp.card, children: items };
   const tmp5 = closure_4;
   if ("" !== trimmed) {
-    const obj3 = { style: tmp.rule, children: closure_3(tmp2(5619).Text, obj4) };
+    const obj3 = { style: tmp.rule, children: closure_3(tmp2(5624).Text, obj4) };
     obj4 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed };
     tmp7 = closure_3(tmp6, obj3);
   }

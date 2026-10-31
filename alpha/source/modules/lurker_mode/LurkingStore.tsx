@@ -1,15 +1,15 @@
-// Module ID: 4942
-// Function ID: 4943
+// Module ID: 4947
+// Function ID: 4948
 // Name: LurkingStore
-// Dependencies: [4876, 4921, 4880, 1384, 1072, 504, 572, 2]
+// Dependencies: [4881, 4926, 4885, 1383, 1072, 504, 572, 2]
 
-// Module 4942 (LurkingStore)
+// Module 4947 (LurkingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRecord from "GuildRecord" /* 4876 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildRecord from "GuildRecord" /* 4881 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

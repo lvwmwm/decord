@@ -1,9 +1,9 @@
-// Module ID: 5023
-// Function ID: 5024
+// Module ID: 5028
+// Function ID: 5029
 // Name: react
 // Dependencies: [19, 2]
 
-// Module 5023 (react)
+// Module 5028 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12557
+// Function ID: 12558
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5009, 12513, 1114, 3865, 12523, 10855, 10922, 5707, 5959, 5619, 6022, 5955, 2]
+// Dependencies: [5, 32, 19, 21, 5014, 12548, 1113, 3868, 12558, 10875, 10941, 5712, 5964, 5624, 6027, 5960, 2]
 // Exports: default
 
-// Module 12522 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 5955 */;
+// Module 12557 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 5960 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function ConjureRemoveAppAlert(action) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ function ConjureRemoveAppAlert(action) {
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp36) {

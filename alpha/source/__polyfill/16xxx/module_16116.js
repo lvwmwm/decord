@@ -1,17 +1,30 @@
 // Module ID: 16116
 // Function ID: 16117
-// Dependencies: [16091]
+// Dependencies: [16027, 16117]
+// Exports: getSupportedUnits
 
 // Module 16116
-import _mod16091 from "module_16091" /* 16091 */;
+const require = globalThis.__r;
+let _require;
 
-let fn;
-if (_mod16091) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
+
+export function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_16117").units;
+  return units.filter((item) => {
+    function isSupported(unit, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const obj = { style: "unit", unit };
+        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+        return memoizedNumberFormat.resolvedOptions().unit === unit;
+      } catch (err) {
+        return false;
+      }
+    }
+    return isSupported(item, locale);
+  });
 }
-
-export default fn;

@@ -1,40 +1,40 @@
-// Module ID: 17935
-// Function ID: 17936
+// Module ID: 17978
+// Function ID: 17979
 // Name: Welcome
-// Dependencies: [19, 17, 17936, 5233, 7630, 13927, 1398, 5744, 9104, 1072, 7495, 7872, 21, 5009, 575, 14183, 1114, 38, 1188, 5063, 5619, 5712, 15083, 7106, 7142, 15640, 1498, 1626, 504, 5588, 7647, 1253, 510, 6734, 5607, 17937, 17932, 1499, 6761, 5629, 5075, 5581, 13285, 2]
+// Dependencies: [19, 17, 17979, 5238, 7637, 13962, 1397, 5749, 9123, 1072, 7501, 7879, 21, 5014, 575, 14221, 1113, 38, 1187, 5068, 5624, 5717, 15120, 7112, 7148, 15681, 1497, 1625, 504, 5593, 7654, 1252, 510, 6740, 5612, 17980, 17975, 1498, 6767, 5634, 5080, 5586, 13320, 2]
 // Exports: default
 
-// Module 17935 (Welcome)
+// Module 17978 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Link from "Link" /* 1499 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7106 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7495 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7647 */;
-import Constants2 from "Constants" /* 7872 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14183 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15083 */;
-import AssetRegistry from "AssetRegistry" /* 15640 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17932 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Link from "Link" /* 1498 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7501 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7654 */;
+import Constants2 from "Constants" /* 7879 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 14221 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15120 */;
+import AssetRegistry from "AssetRegistry" /* 15681 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17975 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17936 */;
-import ExperimentStore from "ExperimentStore" /* 5233 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7630 */;
-import MultiAccountStore from "MultiAccountStore" /* 13927 */;
-import UserRecord from "UserRecord" /* 1398 */;
-import InviteStore from "InviteStore" /* 5744 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9104 */;
+import AgeGateStore from "AgeGateStore" /* 17979 */;
+import ExperimentStore from "ExperimentStore" /* 5238 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7637 */;
+import MultiAccountStore from "MultiAccountStore" /* 13962 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import InviteStore from "InviteStore" /* 5749 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9123 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,7 +84,7 @@ function InviteCard(invite) {
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "Array" };
+      const obj = { user: tmp10, guildId: "a" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_20(Avatar, obj);
@@ -99,7 +99,7 @@ function InviteCard(invite) {
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "Array" };
+      const obj4 = { user: tmp29, guildId: "a" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_20(Avatar2, obj4);
@@ -116,9 +116,9 @@ function InviteCard(invite) {
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(5619).Text, obj7), ];
+    items2 = [tmp16(tmp15(5624).Text, obj7), ];
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(5619).Text, obj8);
+    items2[1] = tmp16(tmp15(5624).Text, obj8);
     items1[1] = closure_21(React3, obj6);
     return closure_21(React3, obj5);
   }
@@ -177,15 +177,15 @@ function Centerpiece(inlineButtons) {
   const obj5 = { style: items1, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
   items1 = [tmp4.header, typeConsolidationTextTransform];
   num = 2;
-  const Heading = tmp5(5619).Heading;
+  const Heading = tmp5(5624).Heading;
   tmp14 = hasOwnProperty;
   if (tmp3) {
     num = 1;
   }
-  intl = tmp5(1114).intl;
+  intl = tmp5(1113).intl;
   const items2 = [closure_20(Heading, obj5), , , ];
   const items3 = [tmp4.subHeader, ];
-  const Text = tmp5(5619).Text;
+  const Text = tmp5(5624).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp4.subHeaderWithInvite;
   } else {
@@ -193,7 +193,7 @@ function Centerpiece(inlineButtons) {
   }
   items3[1] = subHeaderWithInvite;
   const obj6 = { variant: "text-md/medium", color: "text-overlay-light", style: items3, maxFontSizeMultiplier: 3, children: intl2.string(intl4.t.Gtcthl) };
-  intl2 = tmp5(1114).intl;
+  intl2 = tmp5(1113).intl;
   items2[1] = closure_20(Text, obj6);
   let tmp11Result = null;
   if (null != invite) {

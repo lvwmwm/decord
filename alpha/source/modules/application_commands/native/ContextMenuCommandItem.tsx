@@ -1,20 +1,20 @@
-// Module ID: 18902
-// Function ID: 18903
+// Module ID: 18951
+// Function ID: 18952
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 5009, 575, 6969, 12, 1114, 13743, 5712, 1993, 5724, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6975, 12, 1113, 13778, 5717, 1992, 5729, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 18902 (ContextMenuCommandItem)
+// Module 18951 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import TableRow2 from "TableRow" /* 6969 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13743 */;
+import intl2 from "intl" /* 1113 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import TableRow2 from "TableRow" /* 6975 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13778 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -50,10 +50,10 @@ export default function ContextMenuCommandItem(item) {
   items[1] = name;
   const memo = useMemo(() => {
     const type = item.type;
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     let name;
-    const Pk4Mz3 = tmp2(1114).t.Pk4Mz3;
+    const Pk4Mz3 = tmp2(1113).t.Pk4Mz3;
     const tmp = item;
     if (section != null) {
       name = section.name;
@@ -61,13 +61,13 @@ export default function ContextMenuCommandItem(item) {
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(13743);
+  let obj = item(13778);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
-  const TableRow = item(6969).TableRow;
+  const TableRow = item(6975).TableRow;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(5712), obj3);
+    tmp8Result = tmp8(section(5717), obj3);
   }
   return <TableRow accessibilityLabel={memo} onPress={onPress} label={item.displayName} icon={tmp8Result} trailing={null} start={start} end={end} />;
 };

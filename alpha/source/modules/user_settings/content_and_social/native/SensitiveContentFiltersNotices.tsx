@@ -1,17 +1,17 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16714
+// Function ID: 16715
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 7484, 21, 16664, 7466, 16531, 1114, 5704, 2062, 7947, 6723, 2]
+// Dependencies: [19, 7490, 21, 16706, 7472, 16573, 1113, 5709, 2061, 7955, 6729, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 16672 (SensitiveContentFiltersNotices)
+// Module 16714 (SensitiveContentFiltersNotices)
 import Fragment from "Fragment" /* 21 */;
-import intl from "intl" /* 1114 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import Constants from "Constants" /* 7484 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16531 */;
+import intl from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import Constants from "Constants" /* 7490 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16573 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,10 +31,10 @@ export function SensitiveContentFiltersTeenNotice() {
   const obj2 = require("SensitiveMediaGoreRedactionSettingsUtils");
   _require = obj2.useSensitiveContentFilterHelpArticle();
   if (isTinyBroncoSettingsNoticeEnabled) {
-    tmp4Result = tmp4(tmp(16664).ContentFiltersTeenNotice, {});
+    tmp4Result = tmp4(tmp(16706).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
-      label: tmp(1114).t.EUo0yj,
+      label: tmp(1113).t.EUo0yj,
       labelHook: function handleOpenHelpCenterArticle() {
           const openURL = LinkingDefault.openURL;
           LinkingDefault;

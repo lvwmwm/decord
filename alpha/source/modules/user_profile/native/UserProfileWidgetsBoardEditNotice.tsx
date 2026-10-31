@@ -1,21 +1,21 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 14942
+// Function ID: 14943
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 4855, 21, 5009, 575, 8806, 10500, 4842, 5730, 5619, 1114, 6974, 7048, 2]
+// Dependencies: [19, 17, 4860, 21, 5014, 575, 8814, 10520, 4847, 5735, 5624, 1113, 6980, 7054, 2]
 // Exports: default
 
-// Module 14904 (UserProfileWidgetsBoardEditNotice)
+// Module 14942 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import dismissible_content from "dismissible_content" /* 4842 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import XSmallIcon from "XSmallIcon" /* 7048 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8806 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10500 */;
+import intl3 from "intl" /* 1113 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import XSmallIcon from "XSmallIcon" /* 7054 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8814 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10520 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,11 +55,11 @@ export default function UserProfileWidgetsBoardEditNotice() {
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5730).CircleInformationIcon;
+        CircleInformationIcon = tmp(5735).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5619).Text;
-        intl = tmp(1114).intl;
+        const Text = tmp(5624).Text;
+        intl = tmp(1113).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {
           accessibilityRole: "button",
@@ -70,8 +70,8 @@ export default function UserProfileWidgetsBoardEditNotice() {
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6974).PressableOpacity;
-        intl2 = tmp(1114).intl;
+        const PressableOpacity = tmp(6980).PressableOpacity;
+        intl2 = tmp(1113).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);
       }

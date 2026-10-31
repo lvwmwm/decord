@@ -1,22 +1,22 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10259
+// Function ID: 10260
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 5009, 575, 10228, 10224, 1492, 5253, 5707, 1114, 10240, 7352, 5706, 5629, 5267, 5712, 6761, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 10248, 10244, 1491, 5258, 5712, 1113, 10260, 7358, 5711, 5634, 5272, 5717, 6767, 2]
 // Exports: default
 
-// Module 10239 (GIFPickerItemActionSheet)
+// Module 10259 (GIFPickerItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10224 */;
-import GifIcon from "GifIcon" /* 10240 */;
+import intl3 from "intl" /* 1113 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10244 */;
+import GifIcon from "GifIcon" /* 10260 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -104,9 +104,9 @@ export default function GIFPickerItemActionSheet(item) {
       str = "destructive";
     }
     const obj = { variant: str, onPress: callback1, text: stringResult, grow: true };
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const string = intl.string;
-    const t = tmp2(1114).t;
+    const t = tmp2(1113).t;
     if (isFavoriteGIF) {
       stringResult = string(t["5/NS74"]);
     } else {

@@ -1,27 +1,27 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9058
+// Function ID: 9059
 // Name: ChannelOverwritesItem
-// Dependencies: [19, 17, 1384, 7939, 21, 5009, 5959, 1114, 7479, 5706, 6974, 7086, 6969, 9040, 9022, 5619, 1188, 9041, 9042, 5077, 6983, 2]
+// Dependencies: [19, 17, 1383, 7947, 21, 5014, 5964, 1113, 7485, 5711, 6980, 7092, 6975, 9059, 9031, 5624, 1187, 9060, 9061, 5082, 6989, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 9039 (ChannelOverwritesItem)
+// Module 9058 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import react_native2 from "react-native" /* 5077 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import AlertModal from "AlertModal" /* 5959 */;
-import TableRow2 from "TableRow" /* 6969 */;
-import FormCheckbox from "FormCheckbox" /* 6983 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7939 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9022 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9040 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9041 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9042 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import react_native2 from "react-native" /* 5082 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AlertModal from "AlertModal" /* 5964 */;
+import TableRow2 from "TableRow" /* 6975 */;
+import FormCheckbox from "FormCheckbox" /* 6989 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7947 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9031 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9059 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9060 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9061 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -38,7 +38,7 @@ function RemoveIcon(item) {
     let obj = {
       disabled: item.disabled,
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(item(1114).t.N86XcP),
+      accessibilityLabel: intl.string(item(1113).t.N86XcP),
       onPress() {
           let id;
           let intl;
@@ -77,10 +77,10 @@ function RemoveIcon(item) {
         },
       children: tmp3(CircleXIcon, obj2)
     };
-    const PressableOpacity = item(6974).PressableOpacity;
-    intl = item(1114).intl;
+    const PressableOpacity = item(6980).PressableOpacity;
+    intl = item(1113).intl;
     let prop;
-    CircleXIcon = item(7086).CircleXIcon;
+    CircleXIcon = item(7092).CircleXIcon;
     if (item.disabled) {
       prop = tmp.rowRemoveIconDisabled;
     }
@@ -149,13 +149,13 @@ function MemberItem(arg0) {
   const tmp3 = View;
   if (item.rowType === RowType.OWNER) {
     const obj3 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp.ownerIcon };
-    const Icon = tmp5(1188).Icon;
+    const Icon = tmp5(1187).Icon;
     tmp4Result = tmp4(Icon, obj3);
   }
   items1[1] = tmp4Result;
   const tmp2Result = tmp2(tmp3, obj);
-  const TableRow = tmp5(6969).TableRow;
-  const Avatar = tmp5(1188).Avatar;
+  const TableRow = tmp5(6975).TableRow;
+  const Avatar = tmp5(1187).Avatar;
   const user = UserStore.getUser(item.id);
   let avatarSource;
   if (user != null) {

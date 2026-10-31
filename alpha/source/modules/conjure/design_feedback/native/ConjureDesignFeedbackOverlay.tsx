@@ -1,18 +1,18 @@
-// Module ID: 12074
-// Function ID: 12075
+// Module ID: 12112
+// Function ID: 12113
 // Name: ConjureDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5253, 12075, 10877, 10897, 1114, 3865, 5619, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5258, 12113, 10902, 10922, 1113, 3868, 5624, 2]
 // Exports: default
 
-// Module 12074 (ConjureDesignFeedbackOverlay)
+// Module 12112 (ConjureDesignFeedbackOverlay)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
-import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 12075 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
+import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 12113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureDesignRemarkSheetDefault = ConjureDesignRemarkSheet;
@@ -156,9 +156,9 @@ export default function ConjureDesignFeedbackOverlay(projectId) {
       }
     }
   }, items4);
-  const intl = projectId(1114).intl;
+  const intl = projectId(1113).intl;
   const string = intl.string;
-  const tmp19 = size(3865);
+  const tmp19 = size(3868);
   if (first2) {
     prop = tmp19["URbF/7"];
     tmp21 = tmp18;
@@ -174,8 +174,8 @@ export default function ConjureDesignFeedbackOverlay(projectId) {
   if (at == null) {
     at = first;
   }
-  let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp21(3865)["DesV7/"]), testID: "conjure-design-surface", children: tmp26(first2, obj2) };
-  intl2 = tmp16(1114).intl;
+  let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp21(3868)["DesV7/"]), testID: "conjure-design-surface", children: tmp26(first2, obj2) };
+  intl2 = tmp16(1113).intl;
   obj2 = { style: tmp.surface, pointerEvents: "none", children: items6 };
   let tmp24Result = null;
   const tmp25 = closure_6;
@@ -238,7 +238,7 @@ export default function ConjureDesignFeedbackOverlay(projectId) {
     tmp24Result2 = tmp24(tmp27, obj6);
   }
   items6[1] = tmp24Result2;
-  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5619).Text, obj8) };
+  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5624).Text, obj8) };
   obj8 = { variant: "text-sm/medium", color: "text-default", style: tmp.hintText, children: stringResult };
   items6[2] = closure_8(first2, obj7);
   return closure_8(tmp25, obj);

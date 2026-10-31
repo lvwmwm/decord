@@ -1,15 +1,15 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11451
+// Function ID: 11452
 // Name: BadgeArtImage
-// Dependencies: [19, 17, 21, 1376, 9482, 5712, 8023, 2]
+// Dependencies: [19, 17, 21, 1375, 9504, 5717, 8031, 2]
 // Exports: default
 
-// Module 11415 (BadgeArtImage)
+// Module 11451 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ export default function BadgeArtImage(style) {
         const tmp8Result = PlatformUtils;
         if (tmp8Result.isAndroid()) {
           const obj2 = { url: fallbackUrl, style: size, autoplay: true };
-          tmpResult = tmp(tmp8(9482).APNGPlayer, obj2);
+          tmpResult = tmp(tmp8(9504).APNGPlayer, obj2);
         }
         tmp12 = tmpResult;
       }
@@ -68,7 +68,7 @@ export default function BadgeArtImage(style) {
       const tmp3 = require;
       if (obj4.isAndroid()) {
         const obj6 = { url, style: size, autoplay: true };
-        tmpResult2 = tmp(tmp3(9482).APNGPlayer, obj6);
+        tmpResult2 = tmp(tmp3(9504).APNGPlayer, obj6);
       }
     }
     const obj7 = { source: obj8, style: size, resizeMode: "contain", enableAnimation: animated };

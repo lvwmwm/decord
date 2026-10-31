@@ -1,20 +1,20 @@
-// Module ID: 19400
-// Function ID: 19401
+// Module ID: 19457
+// Function ID: 19458
 // Name: ActivityFeedbackActionSheet
-// Dependencies: [19, 2019, 1072, 10138, 21, 1253, 19401, 10159, 1114, 10141, 5706, 19402, 2]
+// Dependencies: [19, 2018, 1072, 10158, 21, 1252, 19458, 10179, 1113, 10161, 5711, 19459, 2]
 // Exports: default
 
-// Module 19400 (ActivityFeedbackActionSheet)
+// Module 19457 (ActivityFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Constants2 from "Constants" /* 2019 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import Constants3 from "Constants" /* 10138 */;
-import FeedbackUtils from "FeedbackUtils" /* 10141 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10159 */;
-import getActivityReportOptionsDefault from "getActivityReportOptions" /* 19401 */;
-import trackActivityProblemDefault from "trackActivityProblem" /* 19402 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Constants2 from "Constants" /* 2018 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import Constants3 from "Constants" /* 10158 */;
+import FeedbackUtils from "FeedbackUtils" /* 10161 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10179 */;
+import getActivityReportOptionsDefault from "getActivityReportOptions" /* 19458 */;
+import trackActivityProblemDefault from "trackActivityProblem" /* 19459 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -39,11 +39,11 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
   }
   const tmp2 = getActivityReportOptionsDefault(true, true === prop);
   FeedbackActionSheetDefault;
-  const intl = activityApplication(1114).intl;
+  const intl = activityApplication(1113).intl;
   let obj2 = { applicationName: activityApplication.name };
-  const intl2 = activityApplication(1114).intl;
-  const intl3 = activityApplication(1114).intl;
-  return <tmp3 headerLabel={intl.formatToPlainString(activityApplication(1114).t.QXYwoD, obj2)} showHeaderCloseButton ratingsBodyLabel={intl2.string(activityApplication(1114).t["9hk2KF"])} reasonsHeaderLabel={intl3.string(activityApplication(1114).t.g1q5fr)} reasons={tmp2} feedbackReasons={items} otherKey={ActivityFeedbackReasons.OTHER} trackOpen={function trackOpen() {
+  const intl2 = activityApplication(1113).intl;
+  const intl3 = activityApplication(1113).intl;
+  return <tmp3 headerLabel={intl.formatToPlainString(activityApplication(1113).t.QXYwoD, obj2)} showHeaderCloseButton ratingsBodyLabel={intl2.string(activityApplication(1113).t["9hk2KF"])} reasonsHeaderLabel={intl3.string(activityApplication(1113).t.g1q5fr)} reasons={tmp2} feedbackReasons={items} otherKey={ActivityFeedbackReasons.OTHER} trackOpen={function trackOpen() {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
     obj.track(AnalyticEvents.OPEN_POPOUT, obj2);

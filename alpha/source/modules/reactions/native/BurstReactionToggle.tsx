@@ -1,22 +1,22 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9952
+// Function ID: 9953
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 5010, 4855, 21, 5090, 504, 5591, 575, 5249, 5632, 5009, 9932, 1114, 9897, 2]
+// Dependencies: [19, 17, 5015, 4860, 21, 5095, 504, 5596, 575, 5254, 5637, 5014, 9953, 1113, 9918, 2]
 // Exports: default
 
-// Module 9931 (BurstReactionToggle)
+// Module 9952 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import useToken2 from "useToken" /* 5591 */;
-import spring from "spring" /* 5632 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import useToken2 from "useToken" /* 5596 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export default function BurstReactionToggle(arg0) {
   }
   obj = react;
   const ref = react.useRef(null);
-  importDefault = tmp7(9932)(ref);
+  importDefault = tmp7(9953)(ref);
   let num;
   let sharedValue;
   let sharedValue1;
@@ -112,16 +112,16 @@ export default function BurstReactionToggle(arg0) {
     const obj2 = spring;
     set2(obj2.withSpring(num, closure_2_9));
   }, items1);
-  const intl = tmp9(1114).intl;
+  const intl = tmp9(1113).intl;
   const string = intl.string;
-  const t = tmp9(1114).t;
+  const t = tmp9(1113).t;
   if (isActive) {
     stringResult = string(t["5cRA/b"]);
   } else {
     stringResult = string(t.buV4av);
   }
   const items2 = [tmp.container, animatedStyle];
-  const View = tmp7(5090).View;
+  const View = tmp7(5095).View;
   return <tmp17 onPress={function handleOnPress() {
     closure_1(ContentDismissActionType.AUTO);
     require();

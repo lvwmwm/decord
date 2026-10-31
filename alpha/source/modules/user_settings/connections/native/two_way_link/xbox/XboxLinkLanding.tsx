@@ -1,17 +1,17 @@
-// Module ID: 9704
-// Function ID: 9705
+// Module ID: 9724
+// Function ID: 9725
 // Name: XboxLinkLanding
-// Dependencies: [19, 9703, 1072, 21, 5009, 1114, 8665, 9705, 8653, 9707, 1498, 2062, 9708, 9709, 2]
+// Dependencies: [19, 9723, 1072, 21, 5014, 1113, 8673, 9725, 8661, 9727, 1497, 2061, 9728, 9729, 2]
 // Exports: default
 
-// Module 9704 (XboxLinkLanding)
+// Module 9724 (XboxLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9703 */;
-import _modDef9708 from "module_9708" /* 9708 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9723 */;
+import _modDef9728 from "module_9728" /* 9728 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,13 +26,13 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function XboxLinkLanding() {
   const tmp = closure_8();
-  let obj = navigation(1498);
+  let obj = navigation(1497);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-  let intl = navigation(1114).intl;
+  let intl = navigation(1113).intl;
   let items = [navigation];
-  const formatResult = intl.format(navigation(1114).t.CIc3IN, { helpdeskArticleUrl: articleURL });
+  const formatResult = intl.format(navigation(1113).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   const memo = react.useMemo(() => {
     let intl;
     let intl2;
@@ -56,11 +56,11 @@ export default function XboxLinkLanding() {
     navigation.push(XboxLinkModalScenes.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef9708 };
+    const obj = { uri: _modDef9728 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(9709).TwoWayLinkLanding;
-  let intl2 = navigation(1114).intl;
-  let intl3 = navigation(1114).intl;
-  return <TwoWayLinkLanding platformType={constants2.XBOX} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1114).t.m8aahn)} headerReconnect={intl3.string(navigation(1114).t.z3rAhq)} body={formatResult} onNext={callback} valueProps={memo} />;
+  const TwoWayLinkLanding = navigation(9729).TwoWayLinkLanding;
+  let intl2 = navigation(1113).intl;
+  let intl3 = navigation(1113).intl;
+  return <TwoWayLinkLanding platformType={constants2.XBOX} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1113).t.m8aahn)} headerReconnect={intl3.string(navigation(1113).t.z3rAhq)} body={formatResult} onNext={callback} valueProps={memo} />;
 };

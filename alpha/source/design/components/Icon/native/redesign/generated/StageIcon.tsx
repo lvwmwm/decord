@@ -1,14 +1,14 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8669
+// Function ID: 8670
 // Name: StageIcon
-// Dependencies: [19, 21, 575, 5711, 8604, 2]
+// Dependencies: [19, 21, 575, 5716, 8612, 2]
 // Exports: StageIcon
 
-// Module 8661 (StageIcon)
+// Module 8669 (StageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 8604 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 8612 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

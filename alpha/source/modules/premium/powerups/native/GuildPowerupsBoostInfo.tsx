@@ -1,18 +1,18 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14112
+// Function ID: 14113
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5225, 21, 5009, 575, 7143, 14078, 9899, 5619, 2]
+// Dependencies: [17, 5230, 21, 5014, 575, 7149, 14113, 9920, 5624, 2]
 // Exports: default
 
-// Module 14077 (GuildPowerupsBoostInfo)
+// Module 14112 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5225 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9899 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14078 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9920 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14113 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -50,7 +50,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
   }
@@ -62,7 +62,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj4), ];
   let str3 = "text-md/normal";
-  const Text2 = tmp2(5619).Text;
+  const Text2 = tmp2(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "text-sm/normal";
   }

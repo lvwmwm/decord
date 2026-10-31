@@ -1,16 +1,16 @@
-// Module ID: 17017
-// Function ID: 17018
+// Module ID: 17075
+// Function ID: 17076
 // Name: QuestDisclosureModalActionCreators
-// Dependencies: [6782, 7861, 9664, 9667, 17008, 6738, 17018, 1995, 2]
+// Dependencies: [6788, 7868, 9684, 9687, 17066, 6744, 17076, 1994, 2]
 
-// Module 17017 (QuestDisclosureModalActionCreators)
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import AdCreativeType from "AdCreativeType" /* 6782 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9664 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9667 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 17008 */;
+// Module 17075 (QuestDisclosureModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9684 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 17066 */;
 import size from "module_2" /* 2 */;
 
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
@@ -35,7 +35,7 @@ let obj = {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const type = creative.type;
     ModalActionCreatorsDefault;
-    const tmp7 = asyncRequire(17018, dependencyMap.paths);
+    const tmp7 = asyncRequire(17076, dependencyMap.paths);
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       const obj3 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult.hasWatchVideoTasks(creative.quest) };
       ({ gamePublisher, gameTitle } = creative.quest.config.messages);

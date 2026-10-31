@@ -1,14 +1,14 @@
-// Module ID: 14536
-// Function ID: 14537
+// Module ID: 14574
+// Function ID: 14575
 // Name: WindowLaunchIcon
-// Dependencies: [19, 21, 575, 5711, 14537, 2]
+// Dependencies: [19, 21, 575, 5716, 14575, 2]
 // Exports: WindowLaunchIcon
 
-// Module 14536 (WindowLaunchIcon)
+// Module 14574 (WindowLaunchIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 14537 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 14575 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

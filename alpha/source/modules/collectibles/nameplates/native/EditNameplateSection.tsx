@@ -1,19 +1,19 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16499
+// Function ID: 16500
 // Name: EditNameplateSection
-// Dependencies: [19, 17, 1986, 21, 5009, 15033, 16456, 15034, 7345, 1985, 9492, 2]
+// Dependencies: [19, 17, 1985, 21, 5014, 15070, 16498, 15071, 7351, 1984, 9514, 2]
 
-// Module 16457 (EditNameplateSection)
+// Module 16499 (EditNameplateSection)
 import react_native from "react-native" /* 17 */;
-import utils from "utils" /* 1985 */;
-import NameplateRecord from "NameplateRecord" /* 1986 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15033 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15034 */;
-import useNameplateSections from "useNameplateSections" /* 16456 */;
+import utils from "utils" /* 1984 */;
+import NameplateRecord from "NameplateRecord" /* 1985 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15070 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15071 */;
+import useNameplateSections from "useNameplateSections" /* 16498 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let nameplate;
@@ -53,7 +53,7 @@ const memoResult = react.memo((arg0) => {
         return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (nameplate === useNameplateSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_NAMEPLATE_SHEET };
-        const EditCollectiblesListItemShop = tmp(15034).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15071).EditCollectiblesListItemShop;
         return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isNameplateRecord(nameplate)) {
         const obj4 = { nameplate, isSelected: require === nameplate.skuId, setSelectedNameplate, size: width };
@@ -90,8 +90,8 @@ const memoResult1 = react.memo((nameplate) => {
   const callback = react.useCallback(() => {
     setSelectedNameplate(nameplate);
   }, items1);
-  let obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label, children: closure_6(setSelectedNameplate(9492), obj2) };
-  const EditCollectiblesListItemProduct = nameplate(15034).EditCollectiblesListItemProduct;
+  let obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label, children: closure_6(setSelectedNameplate(9514), obj2) };
+  const EditCollectiblesListItemProduct = nameplate(15071).EditCollectiblesListItemProduct;
   obj2 = { nameplate: memo, fullOpacity: true, isSquarePreview: true, style: items2 };
   items2 = [tmp.nameplate, { borderRadius: 6 }];
   return closure_6(EditCollectiblesListItemProduct, obj);

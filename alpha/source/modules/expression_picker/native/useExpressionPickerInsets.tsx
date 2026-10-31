@@ -1,13 +1,13 @@
-// Module ID: 10220
-// Function ID: 10221
+// Module ID: 10240
+// Function ID: 10241
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 1072, 1626, 5602, 575, 2]
+// Dependencies: [19, 1072, 1625, 5607, 575, 2]
 // Exports: default
 
-// Module 10220 (useExpressionPickerInsets)
+// Module 10240 (useExpressionPickerInsets)
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

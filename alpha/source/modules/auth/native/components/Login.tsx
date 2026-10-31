@@ -1,24 +1,24 @@
-// Module ID: 7102
-// Function ID: 7103
+// Module ID: 7108
+// Function ID: 7109
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 7103, 502, 1072, 21, 5009, 6974, 5619, 5954, 1114, 1376, 7104, 7105, 1498, 504, 1501, 6734, 7107, 5955, 7108, 7109, 7110, 6440, 7111, 7115, 7116, 7118, 7112, 5629, 7119, 1623, 7121, 7123, 7076, 7129, 7131, 7133, 6022, 7140, 7101, 2]
+// Dependencies: [5, 32, 19, 17, 7109, 502, 1072, 21, 5014, 6980, 5624, 5959, 1113, 1375, 7110, 7111, 1497, 504, 1500, 6740, 7113, 5960, 7114, 7115, 7116, 6446, 7117, 7121, 7122, 7124, 7118, 5634, 7125, 1622, 7127, 7129, 7082, 7135, 7137, 7139, 6027, 7146, 7107, 2]
 // Exports: default
 
-// Module 7102 (Login)
+// Module 7108 (Login)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import intl11 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
-import Pressables from "Pressables" /* 6974 */;
+import intl11 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import Pressables from "Pressables" /* 6980 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7103 */;
+import PhoneStore from "PhoneStore" /* 7109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -197,7 +197,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -250,7 +250,7 @@ export default function Login(isMultiAccount) {
               c3 = 0;
               closure_129_4(false);
               _undefined3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               if (closure_0 === closure_0(ref[20]).PasswordResetMethods.ONE_TIME_LOGIN) {
                 const obj = closure_0(ref[21]);
@@ -270,7 +270,7 @@ export default function Login(isMultiAccount) {
           c3 = 0;
           closure_129_4(false);
           _undefined3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp43) {
         ref = tmp43;
@@ -306,7 +306,7 @@ export default function Login(isMultiAccount) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -366,7 +366,7 @@ export default function Login(isMultiAccount) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           if (0 === c6) {
@@ -404,7 +404,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -470,7 +470,7 @@ export default function Login(isMultiAccount) {
           closure_129_4(false);
         }
         _undefined3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp48) {
         ref = tmp48;
         if (0 === c3) {

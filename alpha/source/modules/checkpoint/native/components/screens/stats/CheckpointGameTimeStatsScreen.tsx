@@ -1,21 +1,21 @@
-// Module ID: 13629
-// Function ID: 13630
+// Module ID: 13664
+// Function ID: 13665
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [17, 13386, 6061, 21, 5009, 575, 504, 13399, 1114, 3091, 13585, 13592, 13630, 13631, 9096, 13587, 13599, 13600, 13601, 2]
+// Dependencies: [17, 13421, 6066, 21, 5014, 575, 504, 6437, 1113, 3092, 13622, 13629, 13665, 13666, 9115, 13624, 13636, 13637, 13638, 2]
 // Exports: default
 
-// Module 13629 (CheckpointGameTimeStatsScreen)
+// Module 13664 (CheckpointGameTimeStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3091 from "module_3091" /* 3091 */;
-import CheckpointConstants from "CheckpointConstants" /* 6061 */;
-import CalendarIcon from "CalendarIcon" /* 9096 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 13399 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13601 */;
-import CheckpointStore from "CheckpointStore" /* 13386 */;
+import _modDef3092 from "module_3092" /* 3092 */;
+import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6437 */;
+import CalendarIcon from "CalendarIcon" /* 9115 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13638 */;
+import CheckpointStore from "CheckpointStore" /* 13421 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -87,9 +87,9 @@ export default function CheckpointGameTimeStatsScreen() {
     prop = stateFromStores.totalDaysPlayedPercentile;
   }
   const checkpointTopPercent = getCheckpointTopPercent(prop);
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1113).intl;
   const string = intl.string;
-  const tmp12 = _modDef3091;
+  const tmp12 = _modDef3092;
   if (roundResult <= 0 && null != stateFromStores1) {
     stringResult = string(tmp12["dx4+NI"]);
     tmp13 = tmp11;
@@ -100,16 +100,16 @@ export default function CheckpointGameTimeStatsScreen() {
   let formatToPlainStringResult;
   if (!(roundResult <= 0 && null != stateFromStores1)) {
     if (null != checkpointTopPercent) {
-      const intl2 = tmp2(1114).intl;
+      const intl2 = tmp2(1113).intl;
       const obj3 = { percent: checkpointTopPercent };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp13(3091).uKOgr9, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp13(3092).uKOgr9, obj3);
     }
   }
   const obj4 = { style: tmp.container, children: items2 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp13Result4, obj6) };
-  obj6 = { animatedUri: tmp13(13630), staticUri: tmp13(13631), style: tmp.image };
-  const tmp13Result = tmp13(13585);
-  tmp13Result4 = tmp13(13592);
+  obj6 = { animatedUri: tmp13(13665), staticUri: tmp13(13666), style: tmp.image };
+  const tmp13Result = tmp13(13622);
+  tmp13Result4 = tmp13(13629);
   items2 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items3 };
   items3 = [, ];
@@ -117,30 +117,30 @@ export default function CheckpointGameTimeStatsScreen() {
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items3[0] = metroRequire(CalendarIcon.CalendarIcon, obj9);
   const obj10 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp13Result5 = tmp13(13587);
+  const tmp13Result5 = tmp13(13624);
   items3[1] = metroRequire(tmp13Result5, obj10);
   items4 = [metroImportDefault(View, obj8), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj11 = { value: stateFromStores1 };
-    tmp15Result = tmp15(tmp13(13599), obj11);
+    tmp15Result = tmp15(tmp13(13636), obj11);
   } else {
     const _HermesInternal = HermesInternal;
-    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp13(13600), obj13) };
+    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp13(13637), obj13) };
     obj13 = { end: roundResult };
     tmp15Result = tmp15(tmp18, obj12);
   }
   items4[1] = tmp15Result;
   const obj14 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
-  const tmp13Result6 = tmp13(13587);
+  const tmp13Result6 = tmp13(13624);
   if (roundResult <= 0 && null != stateFromStores1) {
-    const intl5 = tmp2(1114).intl;
+    const intl5 = tmp2(1113).intl;
     const formatToPlainString = intl5.formatToPlainString;
     const obj15 = { numUsers: tmp2Result2.formatCheckpointCompactNumber(stateFromStores1) };
-    const prop1 = tmp13(3091)["N32w+2"];
+    const prop1 = tmp13(3092)["N32w+2"];
     tmp2Result2 = CheckpointStatsUtils;
     formatToPlainStringResult1 = formatToPlainString(prop1, obj15);
   } else if (null != checkpointTopPercent) {
-    const intl4 = tmp2(1114).intl;
+    const intl4 = tmp2(1113).intl;
     const obj16 = {
       numDays: roundResult,
       percent: checkpointTopPercent,
@@ -149,11 +149,11 @@ export default function CheckpointGameTimeStatsScreen() {
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    formatToPlainStringResult1 = intl4.format(tmp13(3091)["4FXB/m"], obj16);
+    formatToPlainStringResult1 = intl4.format(tmp13(3092)["4FXB/m"], obj16);
   } else {
-    const intl3 = tmp2(1114).intl;
+    const intl3 = tmp2(1113).intl;
     const obj17 = { numDays: roundResult };
-    formatToPlainStringResult1 = intl3.format(tmp13(3091).iCKjh6, obj17);
+    formatToPlainStringResult1 = intl3.format(tmp13(3092).iCKjh6, obj17);
   }
   const obj18 = { children: metroImportDefault(View, obj4) };
   items4[2] = metroRequire(tmp13Result6, obj14);

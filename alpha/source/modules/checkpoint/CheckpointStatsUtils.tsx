@@ -1,18 +1,20 @@
-// Module ID: 13399
-// Function ID: 13400
+// Module ID: 6437
+// Function ID: 6438
 // Name: CheckpointStatsUtils
-// Dependencies: [1398, 1114, 4872, 11, 2]
-// Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
+// Dependencies: [1397, 2026, 1113, 4877, 11, 2]
+// Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, getGuildAcronymCharacter, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 13399 (CheckpointStatsUtils)
+// Module 6437 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl from "intl" /* 1114 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
-import UserRecord from "UserRecord" /* 1398 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 let game, guild;
 
+let tmp;
+const intl = tmp(1113);
 let closure_4 = { hour: "numeric", minute: "2-digit", numberingSystem: "latn" };
 const re5 = /^[A-Za-z.\s]+$/;
 const re6 = /\s/g;
@@ -29,6 +31,16 @@ export function getCheckpointTopPercent(prop) {
     }
   }
   return bound;
+}
+export function getGuildAcronymCharacter(guildName) {
+  const obj = StringUtils;
+  const fromResult = from(obj.getAcronym(guildName));
+  const atResult = fromResult.at(0);
+  let toLocaleUpperCaseResult;
+  if (atResult != null) {
+    toLocaleUpperCaseResult = atResult.toLocaleUpperCase(intl.intl.currentLocale);
+  }
+  return toLocaleUpperCaseResult;
 }
 export function formatCheckpointCompactNumber(stateFromStores1) {
   const numberFormat = new Intl.NumberFormat(intl.intl.currentLocale, { notation: "compact", compactDisplay: "long" });
@@ -69,7 +81,7 @@ export function formatCheckpointPeakHour(stateFromStores1) {
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const dateTimeFormat1 = new Intl.DateTimeFormat(tmp15(1114).intl.currentLocale, tmp2);
+    const dateTimeFormat1 = new Intl.DateTimeFormat(tmp15(1113).intl.currentLocale, tmp2);
     const str2 = dateTimeFormat1.format(date);
     const obj2 = { value: str2.replace(re6, ""), label: str2 };
     return obj2;

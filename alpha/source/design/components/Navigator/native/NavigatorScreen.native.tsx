@@ -1,16 +1,16 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7204
+// Function ID: 7205
 // Name: NavigatorScreen
-// Dependencies: [19, 21, 7199, 7200, 2]
+// Dependencies: [19, 21, 7205, 7206, 2]
 
-// Module 7198 (NavigatorScreen)
+// Module 7204 (NavigatorScreen)
 import Fragment from "Fragment" /* 21 */;
-import config from "config" /* 7199 */;
+import config from "config" /* 7205 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PostponeRender2 = tmp(7200);
+const PostponeRender2 = tmp(7206);
 const jsxs = Fragment.jsxs;
 const memoResult = react.memo(function NavigatorScreen(arg0) {
   let route;

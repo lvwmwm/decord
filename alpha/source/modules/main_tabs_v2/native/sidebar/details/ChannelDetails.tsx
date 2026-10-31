@@ -1,25 +1,25 @@
-// Module ID: 18634
-// Function ID: 18635
+// Module ID: 18676
+// Function ID: 18677
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13850, 4858, 9804, 10117, 21, 575, 5009, 504, 13797, 18635, 7320, 7345, 1498, 13948, 5269, 7106, 1626, 1376, 4966, 7647, 13861, 13836, 5090, 5249, 5252, 5632, 13870, 5202, 5298, 18636, 18646, 18762, 18764, 18765, 18766, 5984, 2]
+// Dependencies: [19, 17, 13885, 4863, 9825, 10137, 21, 575, 5014, 504, 13832, 18677, 7326, 7351, 1497, 13983, 5274, 7112, 1625, 1375, 4971, 7654, 13896, 13871, 5095, 5254, 5257, 5637, 13905, 5207, 5303, 18678, 18688, 18804, 18806, 18807, 18808, 18809, 5989, 2]
 
-// Module 18634 (ChannelDetails)
+// Module 18676 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import spring from "spring" /* 5632 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13836 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13861 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13870 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import spring from "spring" /* 5637 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13871 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13896 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13905 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 13850 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9804 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10117 */;
+import SearchQueryStore from "SearchQueryStore" /* 13885 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9825 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10137 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_DETAILS_TOP_MARGIN;
@@ -37,7 +37,7 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(4966);
+const DeviceUtils = tmp(4971);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ deleteChannelDetailsSearchState: metroImportDefault, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = ChannelDetailsStore);
 ({ SPRING_CHANNEL_HEADER: c10, CHANNEL_DETAILS_TOP_MARGIN } = ChannelDetailsConstants);
@@ -64,8 +64,8 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
   let items13;
   let items9;
   let obj12;
-  let obj17;
   let obj18;
+  let obj19;
   let obj4;
   let obj5;
   let onBackPress;
@@ -308,23 +308,25 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
       obj12 = { style: tmp.information, onLayout: callback, children: items13 };
       const View = tmp8(tmp3[24]).View;
       const obj13 = { channel: stateFromStores };
-      items13 = [top(tmp8(tmp3[34]), obj13), , ];
-      const obj14 = { channel: stateFromStores, containerStyle: tmp.linkedLobby };
-      items13[1] = top(isSearchLocked(tmp3[35]), obj14);
+      items13 = [top(tmp8(tmp3[34]), obj13), , , ];
+      const obj14 = { channel: stateFromStores };
+      items13[1] = top(channelId(tmp3[35]).PinotChannelDetailsLabel, obj14);
+      const obj15 = { channel: stateFromStores, containerStyle: tmp.linkedLobby };
+      items13[2] = top(isSearchLocked(tmp3[36]), obj15);
       let tmp28Result = null;
       if (!stateFromStores.isPrivate()) {
-        const obj15 = { channel: stateFromStores, textAlign: "left", initialExpanded: flag };
-        tmp28Result = tmp28(tmp8(tmp3[36]), obj15);
+        const obj16 = { channel: stateFromStores, textAlign: "left", initialExpanded: flag };
+        tmp28Result = tmp28(tmp8(tmp3[37]), obj16);
       }
-      items13[2] = tmp28Result;
+      items13[3] = tmp28Result;
       items12[1] = top(View, obj11);
       obj7.children = items12;
       const items14 = [sharedValue(stateFromStores, obj7), ];
-      const obj16 = { freeze: !isShowing, children: top(stateFromStores, obj17) };
-      obj17 = { style: tmp.search, collapsable: false, children: top(isSearchLocked(tmp3[32]), obj18) };
-      const Freeze = tmp2(tmp3[37]).Freeze;
-      obj18 = { searchContext: channelDetailsSearchContext, width: componentWidth };
-      items14[1] = top(Freeze, obj16);
+      const obj17 = { freeze: !isShowing, children: top(stateFromStores, obj18) };
+      obj18 = { style: tmp.search, collapsable: false, children: top(isSearchLocked(tmp3[32]), obj19) };
+      const Freeze = tmp2(tmp3[38]).Freeze;
+      obj19 = { searchContext: channelDetailsSearchContext, width: componentWidth };
+      items14[1] = top(Freeze, obj17);
       obj6.children = items14;
       tmp32 = obj6;
     }

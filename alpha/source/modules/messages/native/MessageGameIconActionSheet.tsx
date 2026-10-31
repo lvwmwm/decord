@@ -1,19 +1,19 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13232
+// Function ID: 13233
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 2040, 1072, 21, 5009, 1376, 575, 504, 5267, 1188, 5619, 1114, 2062, 2]
+// Dependencies: [19, 17, 2038, 1072, 21, 5014, 1375, 575, 504, 5272, 1187, 5624, 1113, 2061, 2]
 // Exports: default
 
-// Module 13197 (MessageGameIconActionSheet)
+// Module 13232 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -53,10 +53,10 @@ export default function MessageGameIconActionSheet(applicationId) {
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    BottomSheet = tmp2(5267).BottomSheet;
+    BottomSheet = tmp2(5272).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-    const Icon = tmp2(1188).Icon;
+    const Icon = tmp2(1187).Icon;
     if (stateFromStores != null) {
       str = stateFromStores.getIconURL(56);
     }
@@ -68,16 +68,16 @@ export default function MessageGameIconActionSheet(applicationId) {
     items1 = [closure_6(Icon, obj4), ];
     const obj7 = { style: tmp.gameDescriptionWrapper, children: items2 };
     const obj8 = { style: tmp.timestamp, variant: "text-xs/medium", color: "text-muted", children: messageTimestamp };
-    items2 = [closure_6(applicationId(5619).Text, obj8), ];
+    items2 = [closure_6(applicationId(5624).Text, obj8), ];
     const obj9 = { variant: "text-sm/medium", children: items3 };
-    const Text = tmp2(5619).Text;
-    const intl = tmp2(1114).intl;
+    const Text = tmp2(5624).Text;
+    const intl = tmp2(1113).intl;
     const obj10 = { applicationName: stateFromStores.name };
-    items3 = [intl.format(applicationId(1114).t.J3s8JP, obj10), " ", ];
-    const intl2 = tmp2(1114).intl;
+    items3 = [intl.format(applicationId(1113).t.J3s8JP, obj10), " ", ];
+    const intl2 = tmp2(1113).intl;
     const format = intl2.format;
     const obj11 = { helpdeskArticle: obj13.getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
-    const BPDKoA = tmp2(1114).t.BPDKoA;
+    const BPDKoA = tmp2(1113).t.BPDKoA;
     obj13 = HelpdeskUtilsDefault;
     items3[2] = format(BPDKoA, obj11);
     items2[1] = closure_7(Text, obj9);

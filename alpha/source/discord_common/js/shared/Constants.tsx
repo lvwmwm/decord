@@ -1,13 +1,12 @@
 // Module ID: 1083
 // Function ID: 1084
 // Name: Constants
-// Dependencies: [1084, 1081, 2, 1085, 1086, 1087, 1088]
+// Dependencies: [1084, 1081, 2, 1085, 1086, 1087]
 
 // Module 1083 (Constants)
 import generated_ThemeTypes from "generated/ThemeTypes" /* 1085 */;
-import EntitlementTypes from "EntitlementTypes" /* 1086 */;
-import NoopUtils from "NoopUtils" /* 1087 */;
-import GameGenres from "GameGenres" /* 1088 */;
+import NoopUtils from "NoopUtils" /* 1086 */;
+import GameGenres from "GameGenres" /* 1087 */;
 import "BigFlagUtils";
 import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import PathUtils_mod from "utils/PathUtils" /* 1081 */;
@@ -181,7 +180,6 @@ PathUtils = PathUtils_mod;
 const wrapPathsResult1 = PathUtils.wrapPaths({ INDEX: "/", INDEX_WORD: "/index", INDEX_BUCKET: "/index/:bucketId", CHANGELOGS: "/changelogs/:date", COMMUNITY: "/community", COMPANY: "/company", COMPANY_INFORMATION: "/company-information", CREATORS: "/creators", DOWNLOADS: "/downloads", DOWNLOAD: "/download", GAMING: "/gaming", PRIVACY: "/privacy", TOS: "/tos", TERMS: "/terms", STORE_TERMS: "/store-terms", ACKNOWLEDGEMENTS: "/acknowledgements", LICENSES: "/licenses", PARTNERS: "/partners", HYPESQUAD: "/hypesquad", HYPESQUAD_RIOT: "/hypesquad-riot", BRANDING: "/branding", ERROR_404: "/404", JOBS: "/jobs", JOB: "/jobs/:jobId", STREAMKIT: "/streamkit", SECURITY: "/security", NITRO: "/nitro", DISCOVER: "/servers", QUESTS: "/ads/quests", GUIDELINES: "/guidelines", RICH_PRESENCE: "/rich-presence", VERIFICATION: "/verification", OPEN_SOURCE: "/open-source", WARFRAME: "/warframe", REMOTE_AUTH: "/ra/:remoteAuthFingerprint", SAFETY_LANDING: "/safetycenter", SAFETY_ARTICLE_ROOT: "/safety", SAFETY_ARTICLE: "/safety/:article", NEWSROOM: "/newsroom", INSPIRATION: "/inspiration", MOD_ACADEMY_LANDING: "/moderation", MOD_ACADEMY_EXAM: "/moderation/exam", MOD_ACADEMY_ARTICLE: "/moderation/:article", BLOG: "/blog", BUILD: "/build", DEVELOPERS: "/developers", APP_DIRECTORY: "/application-directory", REFRESH_INDEX: "/new", REFRESH_INDEX_WORD: "/new/index", REFRESH_COMPANY: "/new/company", REFRESH_DOWNLOAD: "/new/download", REFRESH_PRIVACY: "/new/privacy", REFRESH_TERMS: "/new/terms", REFRESH_ACKNOWLEDGEMENTS: "/new/acknowledgements", REFRESH_LICENSES: "/new/licenses", REFRESH_BRANDING: "/new/branding", REFRESH_JOBS: "/new/jobs", REFRESH_JOB: "/new/jobs/:jobId", REFRESH_STREAMKIT: "/new/streamkit", REFRESH_NITRO: "/new/nitro", REFRESH_GUIDELINES: "/new/guidelines", REFRESH_SAFETY_LANDING: "/new/safety", REFRESH_SAFETY_ARTICLE: "/new/safety/:article", COLLEGE: "/college", LEAGUE_CLUBS: "/league-communities", DISCORD_RECRUITING_SCAMS: "/discord-recruitment-scams", DEV_NEWSLETTER_SIGNUP: "/dev-newsletter", LEGACY_DEV_NEWSLETTER: "/newsletter", LEGAL_ARCHIVE: "/archive/", TERMS_MAY_2020: "/archive/terms/may-2020", PRIVACY_JUNE_2020: "/archive/privacy/june-2020", GUIDELINES_MAY_2020: "/archive/guidelines/may-2020", FALL_RELEASE_2023: "/fallrelease", MOBILE_REDESIGN_2023: "/mobile", REFRESH_XBOX_OFFER: "/new/discord-xbox-offer-2019", REFRESH_WHY_DISCORD: "/why-discord-is-different", WHY_DISCORD: "/why-discord", XBOX_OFFER: "/discord-xbox-offer-2020", COLLEGE_BRUINS: "/bruins", COLLEGE_ANTEATERS: "/anteaters", COLLEGE_GAUCHOS: "/gauchos", COLLEGE_BEARS: "/bears", COLLEGE_SLUGS: "/slugs", BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM: "/terms/back-to-school-2020/instagram", BACK_TO_SCHOOL_GIVEAWAY_TWITTER: "/terms/back-to-school-2020/twitter", SNOWSGIVING_GIVEAWAY_INSTAGRAM: "/terms/snowsgiving-2020/instagram", SNOWSGIVING_GIVEAWAY_TWITTER: "/terms/snowsgiving-2020/twitter" });
 const frozen5 = Object.freeze({ FACEBOOK_URL: "https://www.facebook.com/discord/", INSTAGRAM_URL: "https://www.instagram.com/discord/", YOUTUBE_URL: "https://www.youtube.com/discord/", TIKTOK_URL: "https://www.tiktok.com/@discord" });
 const result = size.fileFinishedImporting("../discord_common/js/shared/Constants.tsx");
-const EntitlementTypes_export = EntitlementTypes.EntitlementTypes;
 const GameGenres_export = GameGenres.GameGenres;
 
 export const ThemeExtends = generated_ThemeTypes.ThemeExtends;
@@ -197,7 +195,6 @@ export const FEEDBACK_DOMAIN = "feedback.discord.com";
 export const DOCS_DOMAIN = "docs.discord.com";
 export const UNSAFE_Colors = frozen;
 export const Fonts = { PRIMARY_NORMAL: "ggsans-Normal, NotoSans-Normal", PRIMARY_NORMAL_ITALIC: "ggsans-NormalItalic, NotoSans-NormalItalic", PRIMARY_MEDIUM: "ggsans-Medium, NotoSans-Medium", PRIMARY_MEDIUM_ITALIC: "ggsans-MediumItalic, NotoSans-MediumItalic", PRIMARY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", PRIMARY_BOLD: "ggsans-Bold, NotoSans-Bold", PRIMARY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", DISPLAY_NORMAL: "ggsans-Normal, NotoSans-Normal", DISPLAY_MEDIUM: "ggsans-Medium, NotoSans-Medium", DISPLAY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", DISPLAY_BOLD: "ggsans-Bold, NotoSans-Bold", DISPLAY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", CODE_NORMAL: "ggmono-Normal, SourceCodePro-Normal", CODE_BOLD: "ggmono-Bold, SourceCodePro-Bold", GINTO_NORD_EXTRA_BOLD: "ABCGintoNord-ExtraBold", GINTO_NORD_EXTRA_BOLD_ITALIC: "ABCGintoNord-ExtraBoldItalic", GINTO_DISCORD_NORD_BOLD: "ABCGintoDiscordNord-Bold", GINTO_DISCORD_NORD_BOLD_ITALIC: "ABCGintoDiscordNord-BoldItalic", GINTO_DISCORD_NORD_BLACK_ITALIC: "ABCGintoDiscordNord-BlackItalic" };
-export { EntitlementTypes_export as EntitlementTypes };
 export const ActivityPartyPrivacy = { PRIVATE: 0, [0]: "PRIVATE", PUBLIC: 1, [1]: "PUBLIC" };
 export const StatusTypes = { ONLINE: "online", OFFLINE: "offline", IDLE: "idle", DND: "dnd", INVISIBLE: "invisible", STREAMING: "streaming", UNKNOWN: "unknown" };
 export const ClientTypes = { DESKTOP: "desktop", WEB: "web", MOBILE: "mobile", VR: "vr", UNKNOWN: "unknown" };

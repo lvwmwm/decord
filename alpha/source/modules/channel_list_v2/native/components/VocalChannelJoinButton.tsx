@@ -1,18 +1,18 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 13826
+// Function ID: 13827
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 4941, 5674, 1072, 21, 5009, 575, 1376, 9801, 5248, 5016, 10985, 563, 6759, 6753, 6706, 13792, 5619, 1114, 5629, 8661, 8665, 2]
+// Dependencies: [19, 17, 4946, 5679, 1072, 21, 5014, 575, 1375, 9822, 5253, 5021, 11004, 563, 6765, 6759, 6712, 13827, 5624, 1113, 5634, 8669, 8673, 2]
 
-// Module 13791 (VocalChannelJoinButton)
+// Module 13826 (VocalChannelJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -65,19 +65,19 @@ const memoResult = react.memo(function VocalChannelJoinButton(channel) {
   if (small === undefined) {
     small = false;
   }
-  const tmp2 = voiceStates(9801)();
-  const tmp3 = voiceStates(5248)();
-  const obj = channel(5016);
+  const tmp2 = voiceStates(9822)();
+  const tmp3 = voiceStates(5253)();
+  const obj = channel(5021);
   const tmp5 = closure_11(tmp2, obj.isThemeLight(tmp3));
-  const obj2 = channel(10985);
+  const obj2 = channel(11004);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   const items = [PermissionStore];
   const obj3 = channel(563);
   const stateFromStores = obj3.useStateFromStores(items, () => !PermissionStore.can(constants.CONNECT, channel));
-  const obj4 = channel(6759);
-  const stageParticipantsCount = obj4.useStageParticipantsCount(channel.id, channel(6753).StageChannelParticipantNamedIndex.AUDIENCE);
+  const obj4 = channel(6765);
+  const stageParticipantsCount = obj4.useStageParticipantsCount(channel.id, channel(6759).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  const obj5 = channel(6706);
+  const obj5 = channel(6712);
   obj5.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   const items1 = [VoiceStateStore];
   const tmp4Result = channel(563);
@@ -92,9 +92,9 @@ const memoResult = react.memo(function VocalChannelJoinButton(channel) {
     }
     return null != found;
   }, items2);
-  const tmp4Result3 = channel(13792);
+  const tmp4Result3 = channel(13827);
   const connectedUserLimit = tmp4Result3.useConnectedUserLimit({ channel, video: tmp14 });
-  const tmp4Result4 = channel(13792);
+  const tmp4Result4 = channel(13827);
   let connectedUserLimitFormatted = tmp4Result4.useConnectedUserLimitFormatted({ channel, video: tmp14, userCount: sum });
   let tmp19 = null;
   const tmp17 = !stateFromStores && !isConnectedToVoiceChannel && null != connectedUserLimitFormatted && sum > 0 && sum >= connectedUserLimit / 2 + 1;
@@ -102,21 +102,21 @@ const memoResult = react.memo(function VocalChannelJoinButton(channel) {
     let tmp20Result;
     if (small) {
       const obj6 = { accessibilityRole: "none", pointerEvents: "none", onPress, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no", style: tmp5.joinButton, children: null };
-      const Text = tmp4(5619).Text;
+      const Text = tmp4(5624).Text;
       const tmp27 = closure_5;
       if (connectedUserLimitFormatted == null) {
-        const intl2 = tmp4(1114).intl;
-        connectedUserLimitFormatted = intl2.string(tmp4(1114).t.VJlc0S);
+        const intl2 = tmp4(1113).intl;
+        connectedUserLimitFormatted = intl2.string(tmp4(1113).t.VJlc0S);
       }
       tmp20Result = tmp20(tmp27, obj6);
     } else {
       let tmp21 = connectedUserLimitFormatted;
-      const Button = tmp4(5629).Button;
+      const Button = tmp4(5634).Button;
       if (!tmp17) {
         let formatted;
-        const intl = tmp4(1114).intl;
+        const intl = tmp4(1113).intl;
         const string = intl.string;
-        const t = tmp4(1114).t;
+        const t = tmp4(1113).t;
         if (memo) {
           const str = string(t.dI3q4h);
           formatted = str.toUpperCase();
@@ -137,9 +137,9 @@ const memoResult = react.memo(function VocalChannelJoinButton(channel) {
           const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
           if (!memo) {
             if (isGuildStageVoiceResult) {
-              let VoiceNormalIcon = tmp4(8661).StageIcon;
+              let VoiceNormalIcon = tmp4(8669).StageIcon;
             } else {
-              VoiceNormalIcon = tmp4(8665).VoiceNormalIcon;
+              VoiceNormalIcon = tmp4(8673).VoiceNormalIcon;
             }
             tmp20Result2 = <VoiceNormalIcon size="xs" style={items3} />;
           }

@@ -1,28 +1,28 @@
-// Module ID: 18338
-// Function ID: 18339
+// Module ID: 18381
+// Function ID: 18382
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4939, 4951, 6769, 5762, 1072, 21, 5009, 575, 14841, 1188, 5619, 1114, 12003, 5712, 5582, 18337, 504, 12, 15558, 2]
+// Dependencies: [19, 17, 4944, 4956, 6775, 5767, 1072, 21, 5014, 575, 14879, 1187, 5624, 1113, 12041, 5717, 5587, 18380, 504, 12, 15597, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 18338 (HomeDrawerGuildVoiceState)
+// Module 18381 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4939 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12003 */;
-import AvatarPile2 from "AvatarPile" /* 14841 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12041 */;
+import AvatarPile2 from "AvatarPile" /* 14879 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

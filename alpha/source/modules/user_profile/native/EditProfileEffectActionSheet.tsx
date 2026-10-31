@@ -1,26 +1,26 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16488
+// Function ID: 16489
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7728, 7719, 1072, 21, 5009, 575, 8749, 8733, 7320, 7345, 1253, 8734, 8730, 8727, 5267, 7315, 1114, 8735, 10584, 504, 16447, 15031, 8729, 8750, 16448, 15037, 15038, 8736, 11355, 5582, 2]
+// Dependencies: [32, 19, 17, 7735, 7726, 1072, 21, 5014, 575, 8757, 8741, 7326, 7351, 1252, 8742, 8738, 8735, 5272, 7321, 1113, 8743, 10604, 504, 16489, 15068, 8737, 8758, 16490, 15074, 15075, 8744, 11391, 5587, 2]
 // Exports: default
 
-// Module 16446 (EditProfileEffectActionSheet)
+// Module 16488 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7719 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8727 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8730 */;
-import useShopProductItems from "useShopProductItems" /* 8734 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8750 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 16448 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8735 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8738 */;
+import useShopProductItems from "useShopProductItems" /* 8742 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 16490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, dependencyMap;
@@ -139,7 +139,7 @@ function ProfileEffectSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8736)(previewSkuId);
+  const tmp2 = purchase(8744)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -163,10 +163,10 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11355), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(11391), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5582);
+  const tmp4 = purchase(5587);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);
@@ -204,7 +204,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   let memo;
   let tmp = closure_12();
   let str = user.id;
-  let tmp4 = isTryItOut(8749);
+  let tmp4 = isTryItOut(8757);
   if (str == null) {
     str = "";
   }
@@ -213,10 +213,10 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   const tmp6 = selectedProfileEffect(memo.useState(currentProfileEffect), 2);
   selectedProfileEffect = tmp6[0];
   const tmp8 = tmp6[1];
-  let obj = guildId(8733);
+  let obj = guildId(8741);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  const tmp2Result = isTryItOut(7320);
-  const analyticsLocations = tmp2Result(tmp2(7345).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
+  const tmp2Result = isTryItOut(7326);
+  const analyticsLocations = tmp2Result(tmp2(7351).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
   memo = memo.useMemo(() => {
     let tmp;
@@ -261,19 +261,19 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
     }
   }, items2);
   let obj2 = { value: analyticsLocations, children: tmp14(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = guildId(7320).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = guildId(7326).AnalyticsLocationProvider;
   obj3 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_9(BottomSheetTitleHeader, obj4), children: items3 };
-  BottomSheet = guildId(5267).BottomSheet;
-  obj4 = { title: intl.string(guildId(1114).t["/6nv6N"]) };
-  BottomSheetTitleHeader = guildId(7315).BottomSheetTitleHeader;
-  intl = guildId(1114).intl;
+  BottomSheet = guildId(5272).BottomSheet;
+  obj4 = { title: intl.string(guildId(1113).t["/6nv6N"]) };
+  BottomSheetTitleHeader = guildId(7321).BottomSheetTitleHeader;
+  intl = guildId(1113).intl;
   items3 = [, ];
   const obj5 = { style: tmp.container, children: closure_9(EditProfileEffectInner, { user, selectedProfileEffect, setSelectedProfileEffect: tmp8, guildId, isTryItOut }) };
   items3[0] = closure_9(closure_5, obj5);
-  const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(7345).EDIT_PROFILE_EFFECT_SHEET };
+  const obj6 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(7351).EDIT_PROFILE_EFFECT_SHEET };
   skuId = undefined;
   tmp14 = closure_10;
-  const tmp2Result2 = isTryItOut(8735);
+  const tmp2Result2 = isTryItOut(8743);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }

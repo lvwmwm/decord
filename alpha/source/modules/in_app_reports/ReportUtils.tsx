@@ -1,21 +1,21 @@
-// Module ID: 8348
-// Function ID: 8349
+// Module ID: 8356
+// Function ID: 8357
 // Name: in_app_reports/ReportUtils
-// Dependencies: [5, 19, 5622, 1072, 7484, 1283, 8347, 7490, 572, 8345, 38, 5755, 2]
+// Dependencies: [5, 19, 5627, 1072, 7490, 1282, 8355, 7496, 572, 8353, 38, 5760, 2]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
-// Module 8348 (in_app_reports/ReportUtils)
+// Module 8356 (in_app_reports/ReportUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
-import Constants2 from "Constants" /* 7484 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7490 */;
-import MenuTypes from "MenuTypes" /* 8345 */;
-import ReportMenuType from "ReportMenuType" /* 8347 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import Constants2 from "Constants" /* 7490 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
+import MenuTypes from "MenuTypes" /* 8353 */;
+import ReportMenuType from "ReportMenuType" /* 8355 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5622 */;
+import DevSettingsStore from "DevSettingsStore" /* 5627 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ obj = function _submitHeadlessReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -189,7 +189,7 @@ obj = function _submitHeadlessReport() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp9) {
         c5 = 3;
@@ -338,7 +338,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "paddingHorizontal", message_id: "id", stage_instance_id: "prototype", guild_id: "intl", guild_scheduled_event_id: "id", user_id: "cix", email_token: "Path", application_id: "id", entrypoint: "to", widget_id: "disabled" };
+  let obj2 = { channel_id: "Array", message_id: "children", stage_instance_id: "Set", guild_id: "o", guild_scheduled_event_id: "__closure", user_id: "exports", email_token: "LengthDelimited", application_id: "memo", entrypoint: "bm", widget_id: "substring_i" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -449,7 +449,7 @@ export function submitReport(language, name, arr) {
     let tmp = language;
     let tmp2 = name;
     const tmp4 = obj4;
-    const REPORT_TO_MOD = obj4(8347).ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = obj4(8355).ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
       let str2 = language.language;
       obj = {
@@ -491,8 +491,8 @@ export function submitReport(language, name, arr) {
         str2 = "en";
       }
       let tmp15 = null;
-      if (name.name === tmp4(8345).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "sa", message_id: "isArray", guild_id: "isArray" };
+      if (name.name === tmp4(8353).ModeratorReportNames.MESSAGE) {
+        let obj2 = { channel_id: "dispatch", message_id: "isArray", guild_id: "isArray" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);
@@ -500,14 +500,14 @@ export function submitReport(language, name, arr) {
         tmp15 = obj4;
       }
       obj4 = tmp15;
-      const HTTP2 = tmp4(1283).HTTP;
+      const HTTP2 = tmp4(1282).HTTP;
       const post2 = HTTP2.post;
       const tmp23 = _modDef38;
-      const REPORT_TO_MOD2 = tmp4(8347).ReportMenuTypeSets.REPORT_TO_MOD;
+      const REPORT_TO_MOD2 = tmp4(8355).ReportMenuTypeSets.REPORT_TO_MOD;
       const _HermesInternal2 = HermesInternal;
       const hasItem = REPORT_TO_MOD2.has(name.name);
       tmp23(hasItem, "Invalid report type " + name.name);
-      if (name.name === tmp4(8345).ModeratorReportNames.MESSAGE) {
+      if (name.name === tmp4(8353).ModeratorReportNames.MESSAGE) {
         const request = { url: closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id), body: tmp15, rejectWithError: false };
         const post2Result = post2(request);
         resolved = post2Result.then((result) => {
@@ -542,7 +542,7 @@ export function submitReport(language, name, arr) {
         throw error;
       }
     } else {
-      const HTTP = tmp4(1283).HTTP;
+      const HTTP = tmp4(1282).HTTP;
       const request1 = { url: SUBMIT_REPORT_MENU(name), body: genSubmitData(language, name, arr), rejectWithError: false };
       let tmp6 = closure_7;
       name = name.name;
@@ -550,7 +550,7 @@ export function submitReport(language, name, arr) {
       SUBMIT_REPORT_MENU = closure_7.SUBMIT_REPORT_MENU;
       let _Object = Object;
       const tmp8 = _modDef38;
-      const values = Object.values(tmp4(8345).ReportNames);
+      const values = Object.values(tmp4(8353).ReportNames);
       const _HermesInternal = HermesInternal;
       const hasItem1 = values.includes(name);
       tmp8(hasItem1, "Invalid report type " + name.name);

@@ -1,30 +1,30 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13207
+// Function ID: 13208
 // Name: AcceptGuildTemplate
-// Dependencies: [19, 17, 4862, 4916, 1072, 7495, 21, 5009, 575, 6717, 6947, 1188, 13173, 1114, 7142, 38, 1626, 4917, 5619, 13175, 7076, 5629, 8175, 12, 8996, 13180, 13181, 10804, 1091, 2]
+// Dependencies: [19, 17, 4867, 4921, 1072, 7501, 21, 5014, 575, 6723, 6953, 1187, 13208, 1113, 7148, 38, 1625, 4922, 5624, 13210, 7082, 5634, 8183, 12, 9005, 13215, 13216, 10824, 1090, 2]
 // Exports: default
 
-// Module 13172 (AcceptGuildTemplate)
+// Module 13207 (AcceptGuildTemplate)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import intl11 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4916 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4917 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6947 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7495 */;
-import RolePillDefault from "RolePill" /* 10804 */;
-import InvalidLink from "InvalidLink" /* 13173 */;
-import GuildIconUploaderDefault from "GuildIconUploader" /* 13175 */;
+import intl11 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4922 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7501 */;
+import RolePillDefault from "RolePill" /* 10824 */;
+import InvalidLink from "InvalidLink" /* 13208 */;
+import GuildIconUploaderDefault from "GuildIconUploader" /* 13210 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import TextStyles_mod from "TextStyles" /* 6717 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import TextStyles_mod from "TextStyles" /* 6723 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ let obj7;
 let obj8;
 let tmp5;
 let unpackModuleId;
-const FormDividerDefault = tmp5(8175);
+const FormDividerDefault = tmp5(8183);
 function GuildTemplateResolving() {
   const obj = { style: closure_14().resolvingContainer, children: unpackModuleId(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
   return unpackModuleId(React3, obj);
@@ -78,7 +78,7 @@ function GuildTemplateResolved(guildTemplate) {
   const errors = guildTemplate.errors;
   ({ createServer, name, setName, icon, chooseIcon } = guildTemplate);
   const tmp = closure_14();
-  let obj = guildTemplate(7142);
+  let obj = guildTemplate(7148);
   const typeConsolidationTextTransform = obj.useTypeConsolidationTextTransform("AcceptGuildTemplate");
   _modDef38(null != guildTemplate, "guild template cannot be null");
   _modDef38(guildTemplate.state !== GuildTemplateStates.RESOLVING, "guild must be resolved");
@@ -91,66 +91,66 @@ function GuildTemplateResolved(guildTemplate) {
   const found = mapped.filter((item) => !isEveryoneRole(item));
   const obj2 = { contentContainerStyle: items, keyboardShouldPersistTaps: "handled", children: items1 };
   items = [tmp.wrapper, { marginBottom: bottom }];
-  const obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guildTemplate(1114).t.QzUORX) };
-  const Text = guildTemplate(5619).Text;
-  intl = guildTemplate(1114).intl;
+  const obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guildTemplate(1113).t.QzUORX) };
+  const Text = guildTemplate(5624).Text;
+  intl = guildTemplate(1113).intl;
   items1 = [closure_11(Text, obj3), , , , , , , , , , , ];
   const obj4 = { style: tmp.description, variant: "text-lg/medium", color: "text-default", children: guildTemplate.name };
-  items1[1] = closure_11(guildTemplate(5619).Text, obj4);
+  items1[1] = closure_11(guildTemplate(5624).Text, obj4);
   const obj5 = { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon };
   items1[2] = closure_11(GuildIconUploaderDefault, obj5);
-  const obj6 = { label: intl2.string(guildTemplate(1114).t.dBih7e), errorMessage: name1, value: name, onChange: setName, autoFocus: true, autoCorrect: false, returnKeyType: "done", clearable: true };
-  const TextInput = guildTemplate(7076).TextInput;
-  intl2 = guildTemplate(1114).intl;
+  const obj6 = { label: intl2.string(guildTemplate(1113).t.dBih7e), errorMessage: name1, value: name, onChange: setName, autoFocus: true, autoCorrect: false, returnKeyType: "done", clearable: true };
+  const TextInput = guildTemplate(7082).TextInput;
+  intl2 = guildTemplate(1113).intl;
   name1 = undefined;
   const tmp10 = closure_5;
   if (errors != null) {
     name1 = errors.name;
   }
   items1[3] = closure_11(TextInput, obj6);
-  const obj7 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: intl3.format(guildTemplate(1114).t["2bprXx"], obj8) };
-  const Text2 = tmp2(5619).Text;
-  intl3 = tmp2(1114).intl;
+  const obj7 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: intl3.format(guildTemplate(1113).t["2bprXx"], obj8) };
+  const Text2 = tmp2(5624).Text;
+  intl3 = tmp2(1113).intl;
   obj8 = { guidelinesURL: constants.GUIDELINES };
   items1[4] = closure_11(Text2, obj7);
   const obj9 = { style: tmp.createButtonWrapper, children: closure_11(Button, obj10) };
-  obj10 = { size: "md", text: intl4.string(guildTemplate(1114).t["O0p/lS"]), onPress: createServer, loading: guildTemplate.state === GuildTemplateStates.ACCEPTING, disabled: guildTemplate.state === GuildTemplateStates.ACCEPTING, grow: true };
-  Button = tmp2(5629).Button;
-  intl4 = tmp2(1114).intl;
+  obj10 = { size: "md", text: intl4.string(guildTemplate(1113).t["O0p/lS"]), onPress: createServer, loading: guildTemplate.state === GuildTemplateStates.ACCEPTING, disabled: guildTemplate.state === GuildTemplateStates.ACCEPTING, grow: true };
+  Button = tmp2(5634).Button;
+  intl4 = tmp2(1113).intl;
   items1[5] = closure_11(closure_4, obj9);
   const obj11 = { style: tmp.divider, outer: true };
   items1[6] = closure_11(FormDividerDefault, obj11);
-  const obj12 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: intl5.string(guildTemplate(1114).t.OGiMXJ) };
-  const Text3 = tmp2(5619).Text;
-  intl5 = tmp2(1114).intl;
+  const obj12 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: intl5.string(guildTemplate(1113).t.OGiMXJ) };
+  const Text3 = tmp2(5624).Text;
+  intl5 = tmp2(1113).intl;
   items1[7] = closure_11(Text3, obj12);
-  const obj13 = { variant: "text-xs/medium", color: "text-default", children: intl6.string(guildTemplate(1114).t.Ztwyoz) };
-  const Text4 = tmp2(5619).Text;
-  intl6 = tmp2(1114).intl;
+  const obj13 = { variant: "text-xs/medium", color: "text-default", children: intl6.string(guildTemplate(1113).t.Ztwyoz) };
+  const Text4 = tmp2(5624).Text;
+  intl6 = tmp2(1113).intl;
   items1[8] = closure_11(Text4, obj13);
   const obj14 = { channels: guildTemplate.serializedSourceGuild.channels };
   items1[9] = closure_11(Channels, obj14);
   const obj15 = { style: tmp.sectionTip, variant: "text-xs/medium", color: "interactive-text-default", children: items4 };
-  const Text5 = tmp2(5619).Text;
+  const Text5 = tmp2(5624).Text;
   const obj16 = { style: items2, children: items3 };
   items2 = [tmp.protip, typeConsolidationTextTransform];
-  const LegacyText = tmp2(1188).LegacyText;
-  const intl7 = tmp2(1114).intl;
-  items3 = [intl7.string(guildTemplate(1114).t["8tvIiN"]), ": "];
+  const LegacyText = tmp2(1187).LegacyText;
+  const intl7 = tmp2(1113).intl;
+  items3 = [intl7.string(guildTemplate(1113).t["8tvIiN"]), ": "];
   items4 = [closure_12(LegacyText, obj16), ];
-  const intl8 = tmp2(1114).intl;
-  items4[1] = intl8.string(guildTemplate(1114).t.de7DpI);
+  const intl8 = tmp2(1113).intl;
+  items4[1] = intl8.string(guildTemplate(1113).t.de7DpI);
   items1[10] = closure_12(Text5, obj15);
   let tmp9Result = null;
   if (found.length > 0) {
     const obj17 = { children: items5 };
-    const obj18 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: intl9.string(guildTemplate(1114).t.mQ0H1p) };
-    const Text6 = tmp2(5619).Text;
-    intl9 = tmp2(1114).intl;
+    const obj18 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: intl9.string(guildTemplate(1113).t.mQ0H1p) };
+    const Text6 = tmp2(5624).Text;
+    intl9 = tmp2(1113).intl;
     items5 = [closure_11(Text6, obj18), , ];
-    const obj19 = { variant: "text-xs/medium", color: "text-default", children: intl10.string(guildTemplate(1114).t.jOPEYC) };
-    const Text7 = tmp2(5619).Text;
-    intl10 = tmp2(1114).intl;
+    const obj19 = { variant: "text-xs/medium", color: "text-default", children: intl10.string(guildTemplate(1113).t.jOPEYC) };
+    const Text7 = tmp2(5624).Text;
+    intl10 = tmp2(1113).intl;
     items5[1] = closure_11(Text7, obj19);
     const obj20 = { roles: found };
     items5[2] = closure_11(Roles, obj20);
@@ -193,16 +193,16 @@ function Channels(channels) {
     const type = children.type;
     const obj2 = { style: items, color: nativeDefault.unsafe_rawColors.PRIMARY_400, size: native.Icon.Sizes.CUSTOM, source: tmp10Result };
     if (isGuildVocalChannelType(type)) {
-      tmp10Result = tmp10(8996);
+      tmp10Result = tmp10(9005);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(13180);
+      tmp10Result = tmp10(13215);
     } else {
-      tmp10Result = tmp10(13181);
+      tmp10Result = tmp10(13216);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];
     let channelCategoryName = null;
-    const LegacyText = tmp7(1188).LegacyText;
+    const LegacyText = tmp7(1187).LegacyText;
     if (children.type === constants.GUILD_CATEGORY) {
       channelCategoryName = tmp5.channelCategoryName;
     }

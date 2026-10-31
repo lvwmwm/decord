@@ -1,12 +1,12 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 14007
+// Function ID: 14008
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1384, 21, 1498, 504, 13973, 13965, 5707, 1114, 13971, 5751, 2]
+// Dependencies: [19, 1383, 21, 1497, 504, 14008, 14000, 5712, 1113, 14006, 5756, 2]
 
-// Module 13972 (ChatInputGuardSpamMessageRequest)
+// Module 14007 (ChatInputGuardSpamMessageRequest)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -30,18 +30,18 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
   react = undefined;
   c4 = undefined;
   const tmp = channel;
-  let obj = channel(1498);
+  let obj = channel(1497);
   navigation = obj.useNavigation();
   const items = [c4];
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  const obj3 = channel(13973);
+  const obj3 = channel(14008);
   dependencyMap = obj3.useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = react.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj4 = channel(13965);
+  const obj4 = channel(14000);
   const obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -58,9 +58,9 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
   ({ rejectMessageRequest: c3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: c4 } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1114).t.fS08qB),
-    subtext: intl2.string(tmp(1114).t["8U5OXE"]),
-    buttonPrimaryText: intl3.string(tmp(1114).t.cpT0Cq),
+    message: intl.string(tmp(1113).t.fS08qB),
+    subtext: intl2.string(tmp(1113).t["8U5OXE"]),
+    buttonPrimaryText: intl3.string(tmp(1113).t.cpT0Cq),
     buttonPrimaryOnPress: function handleRejectClick(stopPropagation) {
       stopPropagation.stopPropagation();
       _undefined(channel.id);
@@ -68,7 +68,7 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
     buttonPrimaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonPrimaryLoading: isRejectLoading,
     buttonPrimaryVariant: "destructive",
-    buttonSecondaryText: intl4.string(tmp(1114).t.olZgw5),
+    buttonSecondaryText: intl4.string(tmp(1113).t.olZgw5),
     buttonSecondaryOnPress: function handleAcceptClick(stopPropagation) {
       let id;
       stopPropagation.stopPropagation();
@@ -80,15 +80,15 @@ const memoResult = react.memo(function ChatInputGuardSpamMessageRequest(channel)
     buttonSecondaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonSecondaryLoading: isUserProfileLoading
   };
-  const tmp9 = navigation(13971);
-  intl = tmp(1114).intl;
-  intl2 = tmp(1114).intl;
-  intl3 = tmp(1114).intl;
+  const tmp9 = navigation(14006);
+  intl = tmp(1113).intl;
+  intl2 = tmp(1113).intl;
+  intl3 = tmp(1113).intl;
   const tmp8 = jsx;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }
-  intl4 = tmp(1114).intl;
+  intl4 = tmp(1113).intl;
   return tmp8(tmp9, obj6);
 });
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");

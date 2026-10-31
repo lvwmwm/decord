@@ -1,16 +1,16 @@
-// Module ID: 14528
-// Function ID: 14529
+// Module ID: 14566
+// Function ID: 14567
 // Name: ForumChannelHeader
-// Dependencies: [19, 17, 9792, 21, 5009, 11310, 14514, 14529, 2]
+// Dependencies: [19, 17, 9813, 21, 5014, 11346, 14552, 14567, 2]
 
-// Module 14528 (ForumChannelHeader)
+// Module 14566 (ForumChannelHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react_native2 from "react-native" /* 9792 */;
-import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 11310 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 14529 */;
+import react_native2 from "react-native" /* 9813 */;
+import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 11346 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 14567 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

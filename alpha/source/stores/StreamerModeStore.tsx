@@ -1,14 +1,14 @@
-// Module ID: 5064
-// Function ID: 5065
+// Module ID: 5069
+// Function ID: 5070
 // Name: StreamerModeStore
-// Dependencies: [502, 1072, 1253, 504, 5065, 572, 2]
+// Dependencies: [502, 1072, 1252, 504, 5070, 572, 2]
 
-// Module 5064 (StreamerModeStore)
+// Module 5069 (StreamerModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import OverlayV3Experiment from "OverlayV3Experiment" /* 5065 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import OverlayV3Experiment from "OverlayV3Experiment" /* 5070 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

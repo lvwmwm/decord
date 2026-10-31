@@ -1,17 +1,17 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17961
+// Function ID: 17962
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 15528, 1072, 3, 572, 1234, 15529, 1283, 1090, 2]
+// Dependencies: [5, 15567, 1072, 3, 572, 1233, 15568, 1282, 1089, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 17918 (NotifSettingsActionCreators)
+// Module 17961 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1234 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import notification_settings from "notification_settings" /* 15529 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import notification_settings from "notification_settings" /* 15568 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15528 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15567 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -88,7 +88,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Failed to take ownership of apply; current is", NotifSettingsProtoStore.applyingEdit);
                 skipEdit(pendingEdit);
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 const obj14 = user_settings_UserSettingsUtils;
                 const protoToB64Result = obj14.protoToB64(notification_settings.DeclarativeSettings, pendingEdit.partialSettings);
@@ -108,7 +108,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -204,7 +204,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp98) {
         resetAnyPending = tmp98;
         if (0 === c5) {
@@ -230,7 +230,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

@@ -1,22 +1,24 @@
-// Module ID: 7662
-// Function ID: 7663
+// Module ID: 7669
+// Function ID: 7670
 // Name: ReadStates
-// Dependencies: [5, 4858, 6836, 3, 4887, 12, 11, 2]
+// Dependencies: [5, 4863, 6842, 6776, 3, 4892, 12, 11, 2]
 
-// Module 7662 (ReadStates)
+// Module 7669 (ReadStates)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4887 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4892 */;
+import ReadStateConstants from "ReadStateConstants" /* 6776 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
+const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 const tmp2 = new LoggerDefault("ReadStates");
-const hasOwnProperty = tmp2;
+const metroRequire = tmp2;
 class ReadStates {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -50,7 +52,7 @@ class ReadStates {
       let value = tmp4;
       const _performance2 = performance;
       const tmp = performance.now();
-      const obj6 = tmp(value[4]);
+      const obj6 = tmp(value[5]);
       const states = obj6.readStates(tmp);
       value = await states.getMany();
       const _performance = performance;
@@ -87,8 +89,8 @@ class ReadStates {
         const self = this;
         const self2 = this;
         set = new Set(keys);
-        const obj10 = _modDef12(keys);
-        const sorted = obj10.sort(SnowflakeUtilsDefault.compare);
+        const obj11 = _modDef12(keys);
+        const sorted = obj11.sort(SnowflakeUtilsDefault.compare);
         const iter2 = sorted.reverse();
         let str = iter2.value()[0];
         if (str == null) {
@@ -99,16 +101,20 @@ class ReadStates {
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp8 = nextResult;
-          if (null != nextResult._lastMessageId) {
-            let tmp34 = importDefault;
-            let obj12 = SnowflakeUtilsDefault;
-            if (1 === obj12.compare(tmp8._lastMessageId, str2)) {
+          let tmp10 = nextResult.type === ReadStateTypes.CHANNEL;
+          if (tmp10) {
+            tmp10 = null != tmp8._lastMessageId;
+          }
+          if (tmp10) {
+            let tmp13 = importDefault;
+            let obj = SnowflakeUtilsDefault;
+            if (1 === obj.compare(tmp8._lastMessageId, str2)) {
               str2 = tmp8._lastMessageId;
             }
             let hasItem = set.has(tmp8.channelId);
             if (hasItem) {
-              let tmp34Result = tmp34(11);
-              hasItem = 1 === tmp34Result.compare(tmp8._lastMessageId, _lastMessageId);
+              let tmp13Result = tmp13(11);
+              hasItem = 1 === tmp13Result.compare(tmp8._lastMessageId, _lastMessageId);
             }
             if (hasItem) {
               _lastMessageId = tmp8._lastMessageId;
@@ -116,19 +122,19 @@ class ReadStates {
           }
           continue;
         }
-        const obj2 = DatabaseDaosDefault;
-        const result = obj2.nonGuildVersionsTransaction(database);
+        const obj3 = DatabaseDaosDefault;
+        const result = obj3.nonGuildVersionsTransaction(database);
         const items = [{ id: "highest_last_message_id", versionString: str2 }, , ];
-        const obj = { id: "highest_last_message_id", versionString: str2 };
-        const obj3 = { id: "private_channels_version", versionString: _lastMessageId };
-        items[1] = obj3;
-        const obj4 = { id: "read_state_version", version: tmp2.readStateVersion };
-        items[2] = obj4;
+        const obj2 = { id: "highest_last_message_id", versionString: str2 };
+        const obj4 = { id: "private_channels_version", versionString: _lastMessageId };
+        items[1] = obj4;
+        const obj5 = { id: "read_state_version", version: tmp2.readStateVersion };
+        items[2] = obj5;
         result.putAll(items);
       }
     }
-    const obj7 = DatabaseDaosDefault;
-    const statesTransaction = obj7.readStatesTransaction(database);
+    const obj8 = DatabaseDaosDefault;
+    const statesTransaction = obj8.readStatesTransaction(database);
     statesTransaction.delete();
     const item = allReadStates.forEach((type) => statesTransaction.put("" + type.type + "-" + type.channelId, type));
   }

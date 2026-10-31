@@ -1,11 +1,11 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16457
+// Function ID: 16458
 // Name: useTryItOutUpsellScrollTracking
-// Dependencies: [19, 5090, 2]
+// Dependencies: [19, 5095, 2]
 // Exports: default
 
-// Module 16415 (useTryItOutUpsellScrollTracking)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+// Module 16457 (useTryItOutUpsellScrollTracking)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

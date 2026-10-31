@@ -1,11 +1,11 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15534
+// Function ID: 15535
 // Name: VoiceServerUpdateImmediateExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: isVoiceServerUpdateImmediateEnabled
 
-// Module 15495 (VoiceServerUpdateImmediateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 15534 (VoiceServerUpdateImmediateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,13 +1,13 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15792
+// Function ID: 15793
 // Name: GuildReportRaidModalConstants
-// Dependencies: [1072, 2062, 1114, 2]
+// Dependencies: [1072, 2061, 1113, 2]
 // Exports: getReportRaidHelpArticleURL, getReportRaidTypeLabel
 
-// Module 15752 (GuildReportRaidModalConstants)
+// Module 15792 (GuildReportRaidModalConstants)
 import Constants from "Constants" /* 1072 */;
-import intl6 from "intl" /* 1114 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import intl6 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

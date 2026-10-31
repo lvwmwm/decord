@@ -1,29 +1,29 @@
-// Module ID: 13843
-// Function ID: 13844
+// Module ID: 13878
+// Function ID: 13879
 // Name: SearchUtils
-// Dependencies: [32, 4858, 4939, 6729, 4880, 4951, 4912, 1384, 9806, 1072, 2044, 1114, 13844, 11, 13842, 12, 572, 5647, 5063, 13847, 2]
+// Dependencies: [32, 4863, 4944, 6735, 4885, 4956, 4917, 1383, 9827, 1072, 2042, 1113, 13879, 11, 13877, 12, 572, 5652, 5068, 13882, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 13843 (SearchUtils)
+// Module 13878 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl11 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import useChannelName from "useChannelName" /* 5647 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 13842 */;
-import SearchTokens from "SearchTokens" /* 13844 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13847 */;
+import intl11 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 13877 */;
+import SearchTokens from "SearchTokens" /* 13879 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13882 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildChannelStore from "GuildChannelStore" /* 4939 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6729 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6735 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let closure_16;
 let closure_17;
 let map1;
 let unpackModuleId;
-const f104888 = (arg0, arg1) => "\\" + arg1;
+const f105139 = (arg0, arg1) => "\\" + arg1;
 const SearchTabs = SearchConstants.SearchTabs;
 ({ SearchTypes: unpackModuleId, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: map1, IS_SEARCH_ANSWER_TOKEN: closure_14, IS_SEARCH_FILTER_TOKEN: closure_15, SearchModes: closure_16, ME, GuildFeatures: closure_17 } = Constants);
@@ -105,8 +105,8 @@ export function getSearchTabFetchId(searchContext, MESSAGES, searchResultsQuery)
   return "" + channelId + "-" + MESSAGES + "-" + searchResultsQuery;
 }
 export function getChannelActiveAgoTimestamp(arg0) {
-  const obj = _modDef2044();
-  const diffResult = obj.diff(_modDef2044(arg0), "s");
+  const obj = _modDef2042();
+  const diffResult = obj.diff(_modDef2042(arg0), "s");
   if (diffResult > c19) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -504,7 +504,7 @@ export function getAutocompleteMode(cursorScope, tokens) {
     if (currentToken.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
       if (null != previousToken) {
         let obj7;
-        const tmp10Result = tmp10(13844);
+        const tmp10Result = tmp10(13879);
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
           obj7 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
           const obj6 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
@@ -513,7 +513,7 @@ export function getAutocompleteMode(cursorScope, tokens) {
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(13842).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(13877).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: map1.FILTER_ALL, filter: null, token: tmp4 };
@@ -523,7 +523,7 @@ export function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, f104888) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f105139) + "\"";
   }
   return combined;
 }
@@ -544,7 +544,7 @@ export function getFlattenedAutocompleteResults(arg0, arg1) {
             let combined = str;
             if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, f104888) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f105139) + "\"";
             }
             tmp = combined;
           }
@@ -675,7 +675,7 @@ export function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, f104888) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f105139) + "\"";
   }
   let combined1 = combined;
   if (flag) {

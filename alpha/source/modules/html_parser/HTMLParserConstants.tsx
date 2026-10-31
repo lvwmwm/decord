@@ -1,9 +1,9 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 9405
+// Function ID: 9406
 // Name: HTMLParserConstants
 // Dependencies: [2]
 
-// Module 9385 (HTMLParserConstants)
+// Module 9405 (HTMLParserConstants)
 import size from "module_2" /* 2 */;
 
 const rawResult = String.raw(HermesBuiltin.getTemplateObject(false, "https?:\\/\\/[^\\s<]+[^<.,:;\"'\\]\\s]", "https?://[^s<]+[^<.,:;\"']s]"));

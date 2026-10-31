@@ -1,20 +1,20 @@
-// Module ID: 15429
-// Function ID: 15430
+// Module ID: 15468
+// Function ID: 15469
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 15430, 15431, 15432, 5009, 575, 5248, 5090, 5006, 5016, 5632, 14108, 5712, 11555, 5619, 8455, 2]
+// Dependencies: [19, 17, 1072, 21, 15469, 15470, 15471, 5014, 575, 5253, 5095, 5011, 5021, 5637, 14143, 5717, 11591, 5624, 8463, 2]
 // Exports: default
 
-// Module 15429 (GuildBoostingMarketingProgressBarMarker)
+// Module 15468 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import spring from "spring" /* 5632 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15430 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15431 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15432 */;
+import spring from "spring" /* 5637 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15469 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15470 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15471 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -167,8 +167,8 @@ export default function ProgressBarMarker(arg0) {
   let PREMIUM_PERK_PINK;
   ({ revealedTier, isDisabled } = arg0);
   let tmp = closure_14();
-  const tmp4 = sharedValue(5248)();
-  let obj = useReducedMotion(5090);
+  const tmp4 = sharedValue(5253)();
+  let obj = useReducedMotion(5095);
   sharedValue = obj.useSharedValue(1);
   dependencyMap = tmp7;
   let tmp20Result = tmp9 && tmp8;
@@ -205,11 +205,11 @@ export default function ProgressBarMarker(arg0) {
     items1 = [tmp.progressBarMarker, ];
     const obj4 = { left: `${100 * obj[tier]}%` };
     items1[1] = obj4;
-    const tmp5Result = useReducedMotion(5090);
+    const tmp5Result = useReducedMotion(5095);
     const animatedStyle = tmp5Result.useAnimatedStyle(fn);
     const obj5 = { style: items2 };
     items2 = [tmp.progressBarMarkerBackground, animatedStyle];
-    items3 = [closure_6(tmp2(5090).View, obj5), , ];
+    items3 = [closure_6(tmp2(5095).View, obj5), , ];
     const obj6 = { tier, isDisabled, isTierUnlocked: guild.premiumTier >= tier, isTierAnimated: revealedTier >= tier, isCurrentTier: tier === guild.premiumTier, useReducedMotion };
     items3[1] = closure_6(ProgressBarMarkerInnerContent, obj6);
     const items4 = [tmp.progressBarMarkerLabel, !tmp20Result && tmp.progressBarMarkerLabelLocked, ];
@@ -220,22 +220,22 @@ export default function ProgressBarMarker(arg0) {
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11555), style: tmp.progressBarMarkerUnlockedIcon };
-      const tmp2Result = sharedValue(5712);
+      const obj8 = { source: sharedValue(11591), style: tmp.progressBarMarkerUnlockedIcon };
+      const tmp2Result = sharedValue(5717);
       tmp20Result = tmp20(tmp2Result, obj8);
     }
     items5 = [tmp20Result, ];
     const obj9 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(5619).Text;
-    tmp5Result4 = useReducedMotion(8455);
+    const Text = tmp5(5624).Text;
+    tmp5Result4 = useReducedMotion(8463);
     items5[1] = closure_6(Text, obj9);
     items3[2] = closure_7(PREMIUM_PERK_PINK, obj7);
     return closure_7(PREMIUM_PERK_PINK, obj3);
   }
-  const tmp5Result5 = useReducedMotion(5016);
+  const tmp5Result5 = useReducedMotion(5021);
   const isThemeDarkResult = tmp5Result5.isThemeDark(tmp4);
-  const hexWithOpacity = tmp5(5006).hexWithOpacity;
-  useReducedMotion(5006);
+  const hexWithOpacity = tmp5(5011).hexWithOpacity;
+  useReducedMotion(5011);
   const unsafe_rawColors = tmp2(575).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);

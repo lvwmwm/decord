@@ -1,23 +1,23 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 8743
+// Function ID: 8744
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5010, 1074, 1622, 21, 5009, 1626, 504, 8736, 5090, 5632, 2048, 7725, 8737, 1114, 5255, 8738, 8739, 7712, 5253, 5629, 2]
+// Dependencies: [19, 5015, 1074, 1621, 21, 5014, 1625, 504, 8744, 5095, 5637, 2047, 7732, 8745, 1113, 5260, 8746, 8747, 7719, 5258, 5634, 2]
 
-// Module 8735 (EditCollectiblesCTAButton)
+// Module 8743 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl4 from "intl" /* 1114 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1622 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import HapticUtils from "HapticUtils" /* 5255 */;
-import spring from "spring" /* 5632 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7712 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8738 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8739 */;
+import intl4 from "intl" /* 1113 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import spring from "spring" /* 5637 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8746 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8747 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;

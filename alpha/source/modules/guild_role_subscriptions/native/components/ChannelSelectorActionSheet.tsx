@@ -1,30 +1,30 @@
-// Module ID: 19908
-// Function ID: 19909
+// Module ID: 19966
+// Function ID: 19967
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 4858, 7274, 4880, 4941, 4951, 1384, 1072, 21, 5009, 575, 5647, 17163, 5253, 7055, 6969, 1626, 504, 1114, 5267, 7315, 7212, 7288, 11449, 6738, 9017, 1995, 9020, 9025, 5619, 2]
+// Dependencies: [32, 19, 17, 4863, 7280, 4885, 4946, 4956, 1383, 1072, 21, 5014, 575, 5652, 17220, 5258, 7061, 6975, 1625, 504, 1113, 5272, 7321, 7218, 7294, 11483, 6744, 9026, 1994, 9029, 9034, 5624, 2]
 // Exports: default
 
-// Module 19908 (ChannelSelectorActionSheet)
+// Module 19966 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import useChannelName from "useChannelName" /* 5647 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import useCreateChannelSubmit from "useCreateChannelSubmit" /* 9020 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9025 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import useCreateChannelSubmit from "useCreateChannelSubmit" /* 9029 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9034 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7274 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7280 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -42,8 +42,8 @@ function ChannelRow(channel) {
   channel = channel.channel;
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
-  let str = onChannelSelected(5647)(channel);
-  let obj = channel(17163);
+  let str = onChannelSelected(5652)(channel);
+  let obj = channel(17220);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {
@@ -51,8 +51,8 @@ function ChannelRow(channel) {
     obj.hideActionSheet();
     onChannelSelected(channel);
   }, items);
-  const obj2 = { value: channel.id, start, end, icon: closure_13(channel(6969).TableRow.Icon, { IconComponent: channelIconComponentOrDefault }), label: str, labelLineClamp: 1, legacyCompat_selected: selected, legacyCompat_onPress: callback };
-  const TableRadioRow = channel(7055).TableRadioRow;
+  const obj2 = { value: channel.id, start, end, icon: closure_13(channel(6975).TableRow.Icon, { IconComponent: channelIconComponentOrDefault }), label: str, labelLineClamp: 1, legacyCompat_selected: selected, legacyCompat_onPress: callback };
+  const TableRadioRow = channel(7061).TableRadioRow;
   const tmp3 = closure_13;
   if (str == null) {
     str = "";
@@ -144,15 +144,15 @@ export default function ChannelSelectorActionSheet(guildId) {
     return items;
   }, items3);
   if (title == null) {
-    const intl = tmp7(1114).intl;
-    title = intl.string(tmp7(1114).t.PDn2fR);
+    const intl = tmp7(1113).intl;
+    title = intl.string(tmp7(1113).t.PDn2fR);
   }
-  const intl2 = tmp7(1114).intl;
-  const stringResult = intl2.string(tmp7(1114).t.UTYBjS);
+  const intl2 = tmp7(1113).intl;
+  const stringResult = intl2.string(tmp7(1113).t.UTYBjS);
   const obj3 = { scrollable: true, startExpanded: true, header: closure_14(stateFromStoresArray, obj4), children: closure_13(BottomSheetFlashList, obj5) };
   obj4 = { style: tmp.header, children: items4 };
-  BottomSheet = tmp7(5267).BottomSheet;
-  items4 = [closure_13(tmp7(7315).BottomSheetTitleHeader, { title }), closure_13(tmp7(7212).SearchBar, { size: "md", placeholder: stringResult, accessibilityLabel: stringResult, onChange: tmp6 })];
+  BottomSheet = tmp7(5272).BottomSheet;
+  items4 = [closure_13(tmp7(7321).BottomSheetTitleHeader, { title }), closure_13(tmp7(7218).SearchBar, { size: "md", placeholder: stringResult, accessibilityLabel: stringResult, onChange: tmp6 })];
   obj5 = {
     maintainVisibleContentPosition: { disabled: true },
     keyboardShouldPersistTaps: "handled",
@@ -174,7 +174,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     ListEmptyComponent: closure_13(Text, obj10)
   };
   obj6 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: bottom };
-  BottomSheetFlashList = tmp7(7288).BottomSheetFlashList;
+  BottomSheetFlashList = tmp7(7294).BottomSheetFlashList;
   tmp10Result = null;
   const tmp11 = stateFromStoresArray;
   if (!hideCreateChannel) {
@@ -183,7 +183,7 @@ export default function ChannelSelectorActionSheet(guildId) {
       start: true,
       end: true,
       icon: closure_13(Icon, obj9),
-      label: intl3.string(tmp7(1114).t.d7AN7W),
+      label: intl3.string(tmp7(1113).t.d7AN7W),
       onPress: function handleCreateChannel() {
           let obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -201,18 +201,18 @@ export default function ChannelSelectorActionSheet(guildId) {
             }
           };
           ModalActionCreatorsDefault;
-          const tmp3 = asyncRequire(9017, dependencyMap.paths);
+          const tmp3 = asyncRequire(9026, dependencyMap.paths);
           pushLazy(tmp3, obj2, CreateChannelModalActionCreatorsDefault.CREATE_CHANNEL_MODAL_KEY);
         }
     };
-    TableRow = tmp7(6969).TableRow;
-    obj9 = { IconComponent: tmp7(11449).PlusMediumIcon };
-    Icon = tmp7(6969).TableRow.Icon;
-    intl3 = tmp7(1114).intl;
+    TableRow = tmp7(6975).TableRow;
+    obj9 = { IconComponent: tmp7(11483).PlusMediumIcon };
+    Icon = tmp7(6975).TableRow.Icon;
+    intl3 = tmp7(1113).intl;
     tmp10Result = tmp10(tmp11, obj7);
   }
-  obj10 = { style: tmp.emptyState, variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp7(1114).t.V6nAfF) };
-  Text = tmp7(5619).Text;
-  intl4 = tmp7(1114).intl;
+  obj10 = { style: tmp.emptyState, variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp7(1113).t.V6nAfF) };
+  Text = tmp7(5624).Text;
+  intl4 = tmp7(1113).intl;
   return closure_13(BottomSheet, obj3);
 };

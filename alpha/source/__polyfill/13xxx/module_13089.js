@@ -1,86 +1,201 @@
 // Module ID: 13089
 // Function ID: 13090
-// Dependencies: [13004, 13005, 13090, 13031, 13060, 13091, 13015, 13013, 13052]
+// Dependencies: [13064, 13045, 13044, 13075]
+// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
 
 // Module 13089
-import _mod13031 from "module_13031" /* 13031 */;
-import _mod13091 from "module_13091" /* 13091 */;
-import module_13060 from "module_13060" /* 13060 */;
+import _mod13044 from "module_13044" /* 13044 */;
+import _mod13045 from "module_13045" /* 13045 */;
+import _mod13064 from "module_13064" /* 13064 */;
+import _mod13075 from "module_13075" /* 13075 */;
 
 
-export const captureConsoleIntegration = module_13060.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export function applyScopeDataToEvent(extra, arg1) {
+  let breadcrumbs;
+  let contexts;
+  let fingerprint;
+  let items1;
+  let level;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let tmpResult10;
+  let tmpResult9;
+  let transactionName;
+  let user;
+  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
+  ({ extra, tags, user, contexts } = arg1);
+  const obj = _mod13045;
+  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
+  let length = dropUndefinedKeysResult;
+  if (length) {
+    const _Object = Object;
+    length = Object.keys(dropUndefinedKeysResult).length;
   }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    let tmp = CONSOLE_LEVELS;
-    let tmp2 = handled;
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
+  const tmp5 = extra;
+  if (length) {
+    const obj2 = {};
+    const merged = Object.assign(dropUndefinedKeysResult);
+    const merged1 = Object.assign(extra.extra);
+    extra.extra = obj2;
   }
-  handled = obj.handled;
-  let obj2 = {
-    name: "CaptureConsole",
-    setup(arg0) {
-      let closure_0 = arg0;
-      const tmp2 = handled;
-      const tmp = CONSOLE_LEVELS;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let tmpResult = tmp(tmp2[2]);
-        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
-          let args;
-          let level;
-          let obj3;
-          let tmpResult;
-          ({ args, level } = arg0);
-          let obj = _mod13031;
-          let hasItem = obj.getClient() === closure_0;
-          if (hasItem) {
-            let tmp4 = CONSOLE_LEVELS;
-            hasItem = CONSOLE_LEVELS.includes(level);
-          }
-          if (hasItem) {
-            let closure_2 = handled;
-            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
-            obj3 = { arguments: args };
-            tmpResult = _mod13091;
-            const tmpResult2 = _mod13031;
-            tmpResult2.withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const obj = args(level[6]);
-                obj2 = { handled, type: "console" };
-                const result = obj.addExceptionMechanism(arg0, obj2);
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                const tmp12 = args;
-                if (found) {
-                  const tmp14Result = closure_2_0(closure_2_1[8]);
-                  tmp14Result.captureException(found, obj2);
-                } else {
-                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
-                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
-                  const obj4 = closure_2_0(closure_2_1[8]);
-                  obj4.captureMessage(safeJoinResult, obj2);
-                }
-              } else if (!args[0]) {
-                let obj = closure_2_0(closure_2_1[7]);
-                const _HermesInternal = HermesInternal;
-                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
-                const combined = "Assertion failed: " + tmp4;
-                addEventProcessor.setExtra("arguments", args.slice(1));
-                obj2 = closure_2_0(closure_2_1[8]);
-                obj2.captureMessage(combined, obj2);
-              }
-            });
-          }
-        });
-      }
+  const tmpResult = _mod13045;
+  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
+  let length2 = dropUndefinedKeysResult1;
+  if (length2) {
+    const _Object2 = Object;
+    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  }
+  if (length2) {
+    const obj3 = {};
+    const merged2 = Object.assign(dropUndefinedKeysResult1);
+    const merged3 = Object.assign(extra.tags);
+    extra.tags = obj3;
+  }
+  const tmpResult7 = _mod13045;
+  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
+  let length3 = dropUndefinedKeysResult2;
+  if (length3) {
+    const _Object3 = Object;
+    length3 = Object.keys(dropUndefinedKeysResult2).length;
+  }
+  if (length3) {
+    const obj4 = {};
+    const merged4 = Object.assign(dropUndefinedKeysResult2);
+    const merged5 = Object.assign(extra.user);
+    extra.user = obj4;
+  }
+  const tmpResult8 = _mod13045;
+  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
+  let length4 = dropUndefinedKeysResult3;
+  if (length4) {
+    const _Object4 = Object;
+    length4 = Object.keys(dropUndefinedKeysResult3).length;
+  }
+  if (length4) {
+    const obj5 = {};
+    const merged6 = Object.assign(dropUndefinedKeysResult3);
+    const merged7 = Object.assign(extra.contexts);
+    extra.contexts = obj5;
+  }
+  if (level) {
+    extra.level = level;
+  }
+  const tmp32 = transactionName && "transaction" !== extra.type;
+  if (tmp32) {
+    extra.transaction = transactionName;
+  }
+  if (span) {
+    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
+    tmpResult9 = _mod13044;
+    const merged8 = Object.assign(extra.contexts);
+    extra.contexts = obj6;
+    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
+    tmpResult10 = _mod13075;
+    const merged9 = Object.assign(extra.sdkProcessingMetadata);
+    extra.sdkProcessingMetadata = obj7;
+    const tmpResult11 = _mod13044;
+    const rootSpan = tmpResult11.getRootSpan(span);
+    const tmpResult12 = _mod13044;
+    const description = tmpResult12.spanToJSON(rootSpan).description;
+    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
+    if (tmp38) {
+      extra.transaction = description;
     }
-  };
-  return obj2;
-});
+  }
+  if (extra.fingerprint) {
+    let items;
+    const _Array = Array;
+    const fingerprint2 = extra.fingerprint;
+    if (Array.isArray(extra.fingerprint)) {
+      items = fingerprint2;
+    } else {
+      items = [fingerprint2];
+    }
+    items1 = items;
+  } else {
+    items1 = [];
+  }
+  extra.fingerprint = items1;
+  if (fingerprint) {
+    const fingerprint3 = extra.fingerprint;
+    extra.fingerprint = fingerprint3.concat(fingerprint);
+  }
+  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
+  if (tmp40) {
+    delete tmp5["fingerprint"];
+  }
+  const items2 = [...breadcrumbs];
+  let tmp42;
+  if (items2.length) {
+    tmp42 = items2;
+  }
+  extra.breadcrumbs = tmp42;
+  const obj8 = {};
+  const merged10 = Object.assign(extra.sdkProcessingMetadata);
+  const merged11 = Object.assign(sdkProcessingMetadata);
+  extra.sdkProcessingMetadata = obj8;
+}
+export function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
+  const obj = _mod13064;
+  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
+}
+export function mergeScopeData(extra, arg1) {
+  let attachments;
+  let breadcrumbs;
+  let contexts;
+  let eventProcessors;
+  let fingerprint;
+  let level;
+  let propagationContext;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let transactionName;
+  let user;
+  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
+  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
+  const obj = _mod13064;
+  extra.extra = obj.merge(extra.extra, extra, 1);
+  const obj2 = _mod13064;
+  extra.tags = obj2.merge(extra.tags, tags, 1);
+  const obj3 = _mod13064;
+  extra.user = obj3.merge(extra.user, user, 1);
+  const obj4 = _mod13064;
+  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
+  const obj5 = _mod13064;
+  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  if (level) {
+    extra.level = level;
+  }
+  if (transactionName) {
+    extra.transactionName = transactionName;
+  }
+  if (span) {
+    extra.span = span;
+  }
+  if (breadcrumbs.length) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
+    extra.breadcrumbs = items;
+  }
+  if (fingerprint.length) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
+    extra.fingerprint = items1;
+  }
+  if (eventProcessors.length) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
+    extra.eventProcessors = items2;
+  }
+  if (attachments.length) {
+    const items3 = [];
+    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
+    extra.attachments = items3;
+  }
+  const obj6 = {};
+  const merged = Object.assign(extra.propagationContext);
+  const merged1 = Object.assign(propagationContext);
+  extra.propagationContext = obj6;
+}

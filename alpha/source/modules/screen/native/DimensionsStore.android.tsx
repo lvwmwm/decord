@@ -1,21 +1,21 @@
-// Module ID: 1493
-// Function ID: 1494
+// Module ID: 1492
+// Function ID: 1493
 // Name: DimensionsStore
-// Dependencies: [17, 1494, 1891, 1626, 1892, 1639, 1260, 560, 1627, 2]
+// Dependencies: [17, 1493, 1890, 1625, 1891, 1638, 1259, 560, 1626, 2]
 
-// Module 1493 (DimensionsStore)
+// Module 1492 (DimensionsStore)
 import react_native from "react-native" /* 17 */;
-import react_native2 from "react-native" /* 1260 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1626 */;
-import AppEntryKey from "AppEntryKey" /* 1639 */;
-import react_native3 from "react-native" /* 1891 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1892 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1494 */;
+import react_native2 from "react-native" /* 1259 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1625 */;
+import AppEntryKey from "AppEntryKey" /* 1638 */;
+import react_native3 from "react-native" /* 1890 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1891 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
 import module_560 from "module_560" /* 560 */;
-import SafeAreaStore from "SafeAreaStore" /* 1627 */;
+import SafeAreaStore from "SafeAreaStore" /* 1626 */;
 import size_mod from "module_2" /* 2 */;
 
-const f81313 = () => state.setState((arg0) => closure_1_4(arg0));
+const f81523 = () => state.setState((arg0) => closure_1_4(arg0));
 function getDimensionsStoreStateForEntry(appEntryKey, arg1) {
   let height2;
   let height4;
@@ -132,16 +132,16 @@ const Dimensions = react_native.Dimensions;
 let byAppEntry = module_560.create(() => getDimensionsStoreState(undefined));
 const subscription = SafeAreaStore.subscribe(() => {
   const obj = react_native2;
-  obj.batchUpdates(f81313);
+  obj.batchUpdates(f81523);
 });
 subscribeToKeyboardUIStore(() => {
   const obj = react_native2;
-  obj.batchUpdates(f81313);
+  obj.batchUpdates(f81523);
 });
 const listener = Dimensions.addEventListener("change", () => {
   let state;
   const obj = react_native2;
-  obj.batchUpdates(f81313);
+  obj.batchUpdates(f81523);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/screen/native/DimensionsStore.android.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 18893
-// Function ID: 18894
+// Module ID: 18942
+// Function ID: 18943
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1072, 21, 5009, 1498, 1501, 13857, 18850, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 1497, 1500, 13892, 18899, 2]
 // Exports: default
 
-// Module 18893 (SearchNavigatorPreviewScreen)
+// Module 18942 (SearchNavigatorPreviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13857 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13892 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

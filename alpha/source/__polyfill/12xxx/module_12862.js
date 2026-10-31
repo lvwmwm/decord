@@ -3,57 +3,122 @@
 // Dependencies: []
 
 // Module 12862
+let closure_1 = Object.create(null);
+let closure_2 = Object.create(null);
 let obj = {
-  name: "Nth",
-  structure: { nth: ["AnPlusB", "Identifier"], selector: ["SelectorList", null] },
-  parse(arg0) {
-    const self = this;
-    const scanner = this.scanner;
-    scanner.skipSC();
-    const tokenStart = this.scanner.tokenStart;
-    const scanner2 = this.scanner;
-    if (!scanner2.lookupValue(0, "odd")) {
-      let AnPlusBResult;
-      let offset;
-      let tmp5;
-      const scanner3 = self.scanner;
-      if (!scanner3.lookupValue(0, "even")) {
-        AnPlusBResult = self.AnPlusB();
+  keyword: function getKeywordDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_1, str)) {
+      return closure_1[str];
+    } else {
+      const formatted = str.toLowerCase();
+      if (obj.call(closure_1, formatted)) {
+        closure_1[str] = closure_1[formatted];
+        return closure_1[formatted];
+      } else {
+        let tmp2 = length >= 2;
+        if (2 <= formatted.length) {
+          tmp2 = 45 === formatted.charCodeAt(0);
+        }
+        if (tmp2) {
+          tmp2 = 45 === formatted.charCodeAt(1);
+        }
+        let str2 = "";
+        if (!tmp2) {
+          let str3 = "";
+          if (3 <= formatted.length) {
+            str3 = "";
+            if (45 === formatted.charCodeAt(0)) {
+              str3 = "";
+              if (45 !== formatted.charCodeAt(1)) {
+                const index = formatted.indexOf("-", 2);
+                str3 = "";
+                if (-1 !== index) {
+                  str3 = formatted.substring(0, index + 1);
+                }
+              }
+            }
+          }
+          str2 = str3;
+        }
+        const _Object = Object;
+        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
+        const freezeResult = freeze(obj2);
+        closure_1[str] = freezeResult;
+        return freezeResult;
       }
-      const scanner4 = self.scanner;
-      scanner4.skipSC();
-      if (arg0) {
-        const scanner5 = self.scanner;
-        if (scanner5.lookupValue(0, "of")) {
-          const iter = self.scanner;
-          iter.next();
-          const SelectorListResult = self.SelectorList();
-          tmp5 = SelectorListResult;
-          offset = tokenStart;
-          if (self.needPositions) {
-            offset = self.getLastListNode(SelectorListResult.children).loc.end.offset;
-            tmp5 = SelectorListResult;
+    }
+  },
+  property: function getPropertyDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_2, str)) {
+      return closure_2[str];
+    } else {
+      str = str[0];
+      let str2 = "/";
+      if ("/" === str) {
+        if (`/` === str[1]) {
+          str2 = "//";
+        }
+        str = str2;
+      } else {
+        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
+        if (tmp2) {
+          str = "";
+        }
+      }
+      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
+      let arr = str;
+      if (!tmp4) {
+        const formatted = str.toLowerCase();
+        arr = formatted;
+        if (obj.call(closure_2, formatted)) {
+          closure_2[str] = closure_2[formatted];
+          return closure_2[formatted];
+        }
+      }
+      let str10 = "";
+      if (!tmp4) {
+        let str11 = "";
+        if (arr.length - (str.length || 0) >= 3) {
+          str11 = "";
+          if (45 === arr.charCodeAt(str.length || 0)) {
+            str11 = "";
+            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
+              const index = arr.indexOf("-", tmp7 + 2);
+              str11 = "";
+              if (-1 !== index) {
+                str11 = arr.substring(tmp7, index + 1);
+              }
+            }
           }
         }
-        const obj = { type: "Nth", loc: self.getLocation(tokenStart, offset), nth: AnPlusBResult, selector: tmp5 };
-        return obj;
+        str10 = str11;
       }
-      tmp5 = null;
-      offset = tokenStart;
-      if (self.needPositions) {
-        offset = AnPlusBResult.loc.end.offset;
-        tmp5 = null;
-      }
+      const substr = arr.substr(0, str.length + str10.length);
+      const _Object = Object;
+      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
+      const freezeResult = freeze(obj2);
+      closure_2[str] = freezeResult;
+      return freezeResult;
     }
-    AnPlusBResult = self.Identifier();
   },
-  generate(nth) {
-    const self = this;
-    this.node(nth.nth);
-    if (null !== nth.selector) {
-      self.chunk(" of ");
-      self.node(nth.selector);
+  isCustomProperty(callResult, arg1) {
+    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
+    return tmp2;
+  },
+  vendorPrefix: function getVendorPrefix(str, arg1) {
+    if (str.length - (arg1 || 0) >= 3) {
+      if (45 === str.charCodeAt(arg1 || 0)) {
+        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
+          const index = str.indexOf("-", tmp + 2);
+          if (-1 !== index) {
+            return str.substring(arg1 || 0, index + 1);
+          }
+        }
+      }
     }
+    return "";
   }
 };
 

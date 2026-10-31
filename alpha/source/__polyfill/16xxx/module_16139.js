@@ -1,17 +1,21 @@
 // Module ID: 16139
 // Function ID: 16140
-// Dependencies: [16086, 16137, 16120]
+// Dependencies: [16140]
 
 // Module 16139
-import _mod16086 from "module_16086" /* 16086 */;
-import _mod16120 from "module_16120" /* 16120 */;
-import defineProperty2 from "defineProperty2" /* 16137 */;
+import _mod16140 from "module_16140" /* 16140 */;
 
 
-export default _mod16086 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod16120(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default (arg0, arg1) => {
+  let tmp3 = _mod16140[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod16140;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
+  }
+  return tmp3;
+};

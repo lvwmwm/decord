@@ -1,14 +1,14 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13903
+// Function ID: 13904
 // Name: ChevronLargeRightIcon
-// Dependencies: [19, 21, 575, 5711, 13869, 2]
+// Dependencies: [19, 21, 575, 5716, 13904, 2]
 // Exports: ChevronLargeRightIcon
 
-// Module 13868 (ChevronLargeRightIcon)
+// Module 13903 (ChevronLargeRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 13869 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 13904 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

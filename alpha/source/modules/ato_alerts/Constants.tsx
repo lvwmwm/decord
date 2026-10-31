@@ -1,11 +1,11 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11268
+// Function ID: 11269
 // Name: Constants
-// Dependencies: [1114, 2]
+// Dependencies: [1113, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 11242 (Constants)
-import intl7 from "intl" /* 1114 */;
+// Module 11268 (Constants)
+import intl7 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ato_alerts/Constants.tsx");

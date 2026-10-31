@@ -1,21 +1,21 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14528
+// Function ID: 14529
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1387, 21, 5009, 575, 5016, 6974, 1114, 9430, 7294, 1410, 4958, 2]
+// Dependencies: [19, 17, 1386, 21, 5014, 575, 5021, 6980, 1113, 9452, 7300, 1409, 4963, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 14490 (EmojiReactionRowButton)
+// Module 14528 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import EmojiConstants from "EmojiConstants" /* 1387 */;
-import EmojiTypes from "EmojiTypes" /* 4958 */;
-import shared from "shared" /* 5016 */;
-import Pressables from "Pressables" /* 6974 */;
-import EmojiDefault from "Emoji" /* 7294 */;
+import intl2 from "intl" /* 1113 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import EmojiTypes from "EmojiTypes" /* 4963 */;
+import shared from "shared" /* 5021 */;
+import Pressables from "Pressables" /* 6980 */;
+import EmojiDefault from "Emoji" /* 7300 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const Platform = react_native.Platform;
@@ -48,10 +48,10 @@ export function EmojiPickerRowButton(iconSize) {
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(6974).PressableOpacity;
-  const intl = tmp2(1114).intl;
+  const PressableOpacity = tmp2(6980).PressableOpacity;
+  const intl = tmp2(1113).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(9430).ReactionIcon;
+  const ReactionIcon = tmp2(9452).ReactionIcon;
   if (str == null) {
     str = "md";
   }
@@ -92,7 +92,7 @@ export function EmojiReactionRowButton(emoji) {
     if (null != emoji.id) {
       const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj4.id, animated: obj4.animated } = emoji);
-      const tmp9Result = tmp9(1410);
+      const tmp9Result = tmp9(1409);
       url = tmp9Result.getEmojiURL(obj6);
     } else {
       url = emoji.url;

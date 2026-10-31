@@ -1,24 +1,24 @@
-// Module ID: 19335
-// Function ID: 19336
+// Module ID: 19392
+// Function ID: 19393
 // Name: AgeVerificationManager
-// Dependencies: [6856, 4858, 6056, 4912, 1384, 1072, 7484, 3, 1095, 13302, 8164, 7629, 7469, 7281, 6720, 6557, 2]
+// Dependencies: [6862, 4863, 6061, 4917, 1383, 1072, 7490, 3, 1094, 13337, 8172, 7636, 7475, 7287, 6726, 6563, 2]
 
-// Module 19335 (AgeVerificationManager)
+// Module 19392 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1095 */;
-import UserStore2 from "UserStore" /* 1384 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6557 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
-import Constants2 from "Constants" /* 7484 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7629 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8164 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13302 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6856 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
+import UserStore2 from "UserStore" /* 1383 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6563 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
+import Constants2 from "Constants" /* 7490 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8172 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13337 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6862 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;

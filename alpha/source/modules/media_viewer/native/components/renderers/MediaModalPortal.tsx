@@ -1,16 +1,16 @@
-// Module ID: 8834
-// Function ID: 8835
+// Module ID: 8842
+// Function ID: 8843
 // Name: MediaModalPortal
-// Dependencies: [19, 17, 21, 5009, 1376, 8835, 7126, 8836, 2]
+// Dependencies: [19, 17, 21, 5014, 1375, 8843, 7132, 8844, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8834 (MediaModalPortal)
+// Module 8842 (MediaModalPortal)
 import Fragment from "Fragment" /* 21 */;
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8835 */;
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8843 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let duration;
@@ -43,7 +43,7 @@ const memoResult = react.memo(function MediaModalPortal(paused) {
   ({ onLoad: dependencyMap, portal } = paused);
   ({ style, pointerEvents } = paused);
   let tmp = closure_5();
-  const tmp2 = muted(7126)(() => {
+  const tmp2 = muted(7132)(() => {
     let tmp;
     if (dependencyMap != null) {
       tmp = dependencyMap();
@@ -88,7 +88,7 @@ const memoResult = react.memo(function MediaModalPortal(paused) {
     }
   }, items3);
   tmp9 = undefined;
-  const obj2 = paused(1376);
+  const obj2 = paused(1375);
   const tmp7 = closure_4;
   const tmp8 = closure_6;
   if (obj2.isAndroid()) {

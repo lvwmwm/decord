@@ -1,16 +1,16 @@
-// Module ID: 14654
-// Function ID: 14655
+// Module ID: 14692
+// Function ID: 14693
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 5010, 1994, 21, 504, 1093, 5712, 14655, 8864, 14656, 2]
+// Dependencies: [32, 19, 5015, 1993, 21, 504, 1092, 5717, 14693, 8873, 14694, 2]
 // Exports: OrbsRewardBackground
 
-// Module 14654 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5712 */;
-import _modDef14655 from "module_14655" /* 14655 */;
+// Module 14692 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5717 */;
+import _modDef14693 from "module_14693" /* 14693 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import AppStateStore from "AppStateStore" /* 1994 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let dependencyMap, importDefault;
 let metroImportAll;
 let metroImportDefault;
 let tmp15;
-const _modDef14656 = tmp15(14656);
+const _modDef14694 = tmp15(14694);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let Fragment = Fragment_mod;
@@ -53,7 +53,7 @@ export function OrbsRewardBackground(arg0) {
   const items1 = [AppStateStore];
   const obj2 = onReady(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => state.getState());
-  const ACTIVE = onReady(1093).AppStates.ACTIVE;
+  const ACTIVE = onReady(1092).AppStates.ACTIVE;
   [tmp6, c1] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp8, c2] = react.useState(false);
@@ -72,7 +72,7 @@ export function OrbsRewardBackground(arg0) {
   }, items2);
   const Fragment = obj3.Fragment;
   const obj4 = { source: obj5, style, resizeMode: "cover", onLoad: callback };
-  obj5 = { uri: _modDef14655 };
+  obj5 = { uri: _modDef14693 };
   const tmp16 = FastImageDefault;
   const children = [closure_7(tmp16, obj4), ];
   let tmp14Result = !stateFromStores && stateFromStores1 === ACTIVE;
@@ -80,8 +80,8 @@ export function OrbsRewardBackground(arg0) {
   const tmp14 = closure_7;
   if (tmp14Result) {
     const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: callback1, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    obj7 = { uri: _modDef14656 };
-    const VideoComponent = tmp(8864).VideoComponent;
+    obj7 = { uri: _modDef14694 };
+    const VideoComponent = tmp(8873).VideoComponent;
     tmp14Result = tmp14(VideoComponent, obj6);
   }
   children[1] = tmp14Result;

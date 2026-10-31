@@ -1,18 +1,18 @@
-// Module ID: 10815
-// Function ID: 10816
+// Module ID: 10835
+// Function ID: 10836
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 4871, 1072, 21, 10813, 10816, 5253, 10814, 10817, 1114, 3447, 10818, 6761, 5629, 9884, 9885, 10822, 1100, 2]
+// Dependencies: [19, 4876, 1072, 21, 10833, 10836, 5258, 10834, 10837, 1113, 3450, 10838, 6767, 5634, 9905, 9906, 10842, 1099, 2]
 // Exports: default
 
-// Module 10815 (FavoritesGuildUpsellSheet)
+// Module 10835 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1100 */;
-import _modDef3447 from "module_3447" /* 3447 */;
-import FavoritesConstants from "FavoritesConstants" /* 4871 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10816 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10822 */;
+import router_utils from "router_utils" /* 1099 */;
+import _modDef3450 from "module_3450" /* 3450 */;
+import FavoritesConstants from "FavoritesConstants" /* 4876 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10836 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,24 +40,24 @@ export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(10813).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10833).FREE_FAVORITE_LIMIT;
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault().analyticsLocations;
   importDefault = react.useCallback(() => {
     const obj = closure_1(dependencyMap[6]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[7]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  let obj = { title: intl.string(_modDef3447.hINqUs), description: intl2.formatToPlainString(_modDef3447.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10818).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
-  const PromoSheet = analyticsLocations(10817).PromoSheet;
-  intl = analyticsLocations(1114).intl;
-  intl2 = analyticsLocations(1114).intl;
+  let obj = { title: intl.string(_modDef3450.hINqUs), description: intl2.formatToPlainString(_modDef3450.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10838).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
+  const PromoSheet = analyticsLocations(10837).PromoSheet;
+  intl = analyticsLocations(1113).intl;
+  intl2 = analyticsLocations(1113).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
   obj3 = { children: items };
-  ButtonGroup = analyticsLocations(6761).ButtonGroup;
+  ButtonGroup = analyticsLocations(6767).ButtonGroup;
   const obj4 = {
     size: "lg",
     variant: "primary",
-    text: intl3.string(analyticsLocations(1114).t.pj0XBN),
+    text: intl3.string(analyticsLocations(1113).t.pj0XBN),
     onPress() {
       closure_1();
       const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
@@ -65,13 +65,13 @@ export default function FavoritesGuildUpsellSheet(limit) {
       tmp2(obj);
     }
   };
-  const Button = analyticsLocations(5629).Button;
-  intl3 = analyticsLocations(1114).intl;
+  const Button = analyticsLocations(5634).Button;
+  intl3 = analyticsLocations(1113).intl;
   items = [closure_6(Button, obj4), ];
   const obj5 = {
     size: "lg",
     variant: "secondary",
-    text: intl4.string(_modDef3447.PprSsy),
+    text: intl4.string(_modDef3450.PprSsy),
     onPress() {
       closure_1();
       const obj = FavoritesGuildAnalytics;
@@ -80,8 +80,8 @@ export default function FavoritesGuildUpsellSheet(limit) {
       obj2.transitionToGuild(FAVORITES);
     }
   };
-  const Button2 = analyticsLocations(5629).Button;
-  intl4 = analyticsLocations(1114).intl;
+  const Button2 = analyticsLocations(5634).Button;
+  intl4 = analyticsLocations(1113).intl;
   items[1] = closure_6(Button2, obj5);
   return closure_6(PromoSheet, obj);
 };

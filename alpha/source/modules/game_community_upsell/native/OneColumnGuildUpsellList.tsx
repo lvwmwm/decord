@@ -1,16 +1,16 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18328
+// Function ID: 18329
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 17548, 21, 5009, 6023, 1261, 1499, 504, 7320, 7345, 18286, 7288, 2]
+// Dependencies: [32, 19, 17608, 21, 5014, 6028, 1260, 1498, 504, 7326, 7351, 18329, 7294, 2]
 // Exports: OneColumnGuildUpsellList
 
-// Module 18285 (OneColumnGuildUpsellList)
+// Module 18328 (OneColumnGuildUpsellList)
 import Fragment from "Fragment" /* 21 */;
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 18286 */;
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 18329 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17548 */;
-import createStyles from "createStyles" /* 5009 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17608 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set, viewableItems;

@@ -1,12 +1,12 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15760
+// Function ID: 15761
 // Name: GuildBadgeSound
-// Dependencies: [19, 21, 15701, 8023, 2]
+// Dependencies: [19, 21, 15741, 8031, 2]
 // Exports: GuildBadgeSound
 
-// Module 15720 (GuildBadgeSound)
-import inlineStyles from "inlineStyles" /* 8023 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15701 */;
+// Module 15760 (GuildBadgeSound)
+import inlineStyles from "inlineStyles" /* 8031 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15741 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

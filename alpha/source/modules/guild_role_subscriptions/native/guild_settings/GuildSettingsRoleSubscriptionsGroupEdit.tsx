@@ -1,14 +1,14 @@
-// Module ID: 19876
-// Function ID: 19877
+// Module ID: 19933
+// Function ID: 19934
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1361, 21, 1498, 17132, 19877, 19810, 5602, 19878, 12, 6992, 7552, 1114, 5706, 575, 19880, 19884, 19888, 2]
+// Dependencies: [5, 32, 19, 17, 1360, 21, 1497, 17190, 19934, 19867, 5607, 19935, 12, 6998, 7558, 1113, 5711, 575, 19937, 19941, 19946, 2]
 // Exports: default
 
-// Module 19876 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 19933 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
-import ApplicationConstants from "ApplicationConstants" /* 1361 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 19888 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 19946 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -110,7 +110,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
           closure_128_5(null);
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp16) {
         c2 = 3;
         throw tmp16;
@@ -203,8 +203,8 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
       ToastUtils;
       let anyErrorMessage = obj.getAnyErrorMessage();
       if (anyErrorMessage == null) {
-        const intl = tmp(1114).intl;
-        anyErrorMessage = intl.string(tmp(1114).t.ZUEGFn);
+        const intl = tmp(1113).intl;
+        anyErrorMessage = intl.string(tmp(1113).t.ZUEGFn);
       }
       presentError(anyErrorMessage);
     }

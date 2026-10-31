@@ -1,26 +1,26 @@
-// Module ID: 6039
-// Function ID: 6040
+// Module ID: 6044
+// Function ID: 6045
 // Name: MarkupChannelMentionRule
-// Dependencies: [4913, 4858, 4880, 4941, 4951, 1384, 1072, 2028, 1410, 1114, 6040, 6041, 5647, 6049, 5649, 6038, 1944, 2]
+// Dependencies: [4918, 4863, 4885, 4946, 4956, 1383, 1072, 2026, 1409, 1113, 6045, 6046, 5652, 6054, 5654, 6043, 1943, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 6039 (MarkupChannelMentionRule)
-import intl3 from "intl" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import _modDef1944 from "module_1944" /* 1944 */;
-import StringUtils from "StringUtils" /* 2028 */;
-import useChannelName from "useChannelName" /* 5647 */;
-import LinkUtils from "LinkUtils" /* 5649 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6038 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6040 */;
-import ChannelUtils from "ChannelUtils" /* 6041 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 6049 */;
-import GatedChannelStore from "GatedChannelStore" /* 4913 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+// Module 6044 (MarkupChannelMentionRule)
+import intl3 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import _modDef1943 from "module_1943" /* 1943 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import LinkUtils from "LinkUtils" /* 5654 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 6043 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6045 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 6054 */;
+import GatedChannelStore from "GatedChannelStore" /* 4918 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "id" };
+          const obj9 = { type: "link", content: items4, target: url, title: "children" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -313,7 +313,7 @@ obj2 = {
   }
 };
 obj3 = {
-  order: _modDef1944.defaultRules.url.order - 0.5,
+  order: _modDef1943.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
@@ -343,7 +343,7 @@ obj3 = {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     LinkUtils;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "id" };
+      const obj = { type: "link", content: items, target: tmp, title: "children" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -377,7 +377,7 @@ obj3 = {
   }
 };
 obj4 = {
-  order: _modDef1944.defaultRules.url.order - 0.5,
+  order: _modDef1943.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
@@ -427,7 +427,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "id" };
+    const obj = { type: "link", content: items, target: tmp, title: "children" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

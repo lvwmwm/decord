@@ -1,11 +1,11 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10032
+// Function ID: 10033
 // Name: useShowNitroUpsellCallback
-// Dependencies: [19, 5090, 2]
+// Dependencies: [19, 5095, 2]
 // Exports: default
 
-// Module 10011 (useShowNitroUpsellCallback)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+// Module 10032 (useShowNitroUpsellCallback)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

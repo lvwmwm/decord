@@ -1,15 +1,15 @@
-// Module ID: 7127
-// Function ID: 7128
+// Module ID: 7133
+// Function ID: 7134
 // Name: SplitTextInput
-// Dependencies: [109, 19, 21, 5078, 7077, 7128, 7078, 2]
+// Dependencies: [109, 19, 21, 5083, 7083, 7134, 7084, 2]
 // Exports: SplitTextInput
 
-// Module 7127 (SplitTextInput)
+// Module 7133 (SplitTextInput)
 import Fragment from "Fragment" /* 21 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5078 */;
-import Input2 from "Input" /* 7077 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7078 */;
-import SplitTextField2 from "SplitTextField" /* 7128 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5083 */;
+import Input2 from "Input" /* 7083 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7084 */;
+import SplitTextField2 from "SplitTextField" /* 7134 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

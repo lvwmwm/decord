@@ -1,13 +1,13 @@
-// Module ID: 12538
-// Function ID: 12539
+// Module ID: 12573
+// Function ID: 12574
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 4880, 12400, 504, 1114, 3865, 2]
+// Dependencies: [32, 19, 4885, 12438, 504, 1113, 3868, 2]
 // Exports: default
 
-// Module 12538 (useConjureIncompleteAppNotice)
+// Module 12573 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ export default function useConjureIncompleteAppNotice(arg0) {
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(12400)(arg0);
+  const tmp3 = guildId(12438)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;
@@ -63,12 +63,12 @@ export default function useConjureIncompleteAppNotice(arg0) {
     tmp10 = null;
     if (first !== arg0) {
       let Lm7IRC;
-      const intl = tmp5(1114).intl;
+      const intl = tmp5(1113).intl;
       const format = intl.format;
       if ("channel" === missingSurface) {
-        Lm7IRC = tmp(3865)["1cm4fj"];
+        Lm7IRC = tmp(3868)["1cm4fj"];
       } else {
-        Lm7IRC = tmp(3865).Lm7IRC;
+        Lm7IRC = tmp(3868).Lm7IRC;
       }
       let str2 = stateFromStores;
       if (stateFromStores == null) {

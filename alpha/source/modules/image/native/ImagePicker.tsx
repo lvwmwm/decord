@@ -1,20 +1,20 @@
-// Module ID: 8213
-// Function ID: 8214
+// Module ID: 8221
+// Function ID: 8222
 // Name: ImagePicker
-// Dependencies: [1193, 1083, 1376, 8214, 8215, 575, 8217, 1114, 2]
+// Dependencies: [1192, 1083, 1375, 8222, 8223, 575, 8225, 1113, 2]
 
-// Module 8213 (ImagePicker)
+// Module 8221 (ImagePicker)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import intl7 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import launchCameraAll from "launchCamera" /* 8215 */;
-import react_nativeDefault from "react-native" /* 8217 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import intl7 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import launchCameraAll from "launchCamera" /* 8223 */;
+import react_nativeDefault from "react-native" /* 8225 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp5;
-const ImagePickerUtils = tmp5(8214);
+const ImagePickerUtils = tmp5(8222);
 const ThemeTypes = Constants.ThemeTypes;
 let obj = {
   launchImageLibrary(mediaType, arg1) {

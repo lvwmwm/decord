@@ -1,22 +1,22 @@
-// Module ID: 8696
-// Function ID: 8697
+// Module ID: 8704
+// Function ID: 8705
 // Name: SearchableSelectActionComponentUtils
-// Dependencies: [4858, 4921, 4915, 4880, 4951, 1384, 8689, 1993, 6773, 6036, 6068, 5647, 8697, 1380, 2]
+// Dependencies: [4863, 4926, 4920, 4885, 4956, 1383, 8697, 1992, 6779, 6041, 6073, 5652, 8705, 1379, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 8696 (SearchableSelectActionComponentUtils)
-import useChannelName from "useChannelName" /* 5647 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6068 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6773 */;
-import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 8697 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8689 */;
+// Module 8704 (SearchableSelectActionComponentUtils)
+import useChannelName from "useChannelName" /* 5652 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6073 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6779 */;
+import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 8705 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8697 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ export function queryMentionables(type, query, channelId) {
   } else {
     const tmp3 = type === require("Server").ComponentType.USER_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
     const tmp4 = type === require("Server").ComponentType.ROLE_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
-    let obj = channel(6773);
+    let obj = channel(6779);
     let obj2 = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp3, canMentionRoles: tmp4, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     ({ users, roles } = obj.queryMentionResults(obj2));
     const items = [];
@@ -84,7 +84,7 @@ export function getInitialSnowflakeSelectOptions(selectActionComponent, containe
   const defaultValues = selectActionComponent.defaultValues;
   const tmp3 = dependencyMap;
   let channelTypes;
-  if (selectActionComponent.type === channelTypes(1993).ComponentType.CHANNEL_SELECT) {
+  if (selectActionComponent.type === channelTypes(1992).ComponentType.CHANNEL_SELECT) {
     channelTypes = selectActionComponent.channelTypes;
   }
   if (channelTypes === undefined) {
@@ -150,23 +150,23 @@ export function getInitialSnowflakeSelectOptions(selectActionComponent, containe
         }
       }
     });
-    found = mapped.filter(tmp2(1380).isNotNullish);
+    found = mapped.filter(tmp2(1379).isNotNullish);
   }
   let type;
   if (interactionComponentState != null) {
     type = interactionComponentState.type;
   }
-  if (type !== channelTypes(1993).ComponentType.USER_SELECT) {
+  if (type !== channelTypes(1992).ComponentType.USER_SELECT) {
     let type1;
     if (interactionComponentState != null) {
       type1 = interactionComponentState.type;
     }
-    if (type1 !== channelTypes(1993).ComponentType.ROLE_SELECT) {
+    if (type1 !== channelTypes(1992).ComponentType.ROLE_SELECT) {
       let type2;
       if (interactionComponentState != null) {
         type2 = interactionComponentState.type;
       }
-      if (type2 !== channelTypes(1993).ComponentType.MENTIONABLE_SELECT) {
+      if (type2 !== channelTypes(1992).ComponentType.MENTIONABLE_SELECT) {
         let type3;
         if (interactionComponentState != null) {
           type3 = interactionComponentState.type;
@@ -245,6 +245,6 @@ export function getSnowflakeSelectDefaultValues(defaultValues, guild_id) {
         }
       }
     });
-    return mapped.filter(items(1380).isNotNullish);
+    return mapped.filter(items(1379).isNotNullish);
   }
 }

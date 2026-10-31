@@ -1,20 +1,20 @@
-// Module ID: 19128
-// Function ID: 19129
+// Module ID: 19177
+// Function ID: 19178
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1384, 6055, 504, 7519, 2048, 19129, 9772, 5068, 5707, 1114, 9899, 2]
+// Dependencies: [19, 1383, 6060, 504, 7525, 2047, 19178, 9793, 5073, 5712, 1113, 9920, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 19128 (useSoundboardSoundLock)
-import intl3 from "intl" /* 1114 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5068 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import SoundboardConstants from "SoundboardConstants" /* 6055 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9772 */;
-import BoostGemIcon from "BoostGemIcon" /* 9899 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 19129 */;
+// Module 19177 (useSoundboardSoundLock)
+import intl3 from "intl" /* 1113 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import SoundboardConstants from "SoundboardConstants" /* 6060 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9793 */;
+import BoostGemIcon from "BoostGemIcon" /* 9920 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 19178 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,11 +67,11 @@ export function useSoundboardSoundLock(sound, channel) {
   if (!result) {
     let stringResult;
     if (tmp7) {
-      const intl2 = tmp(1114).intl;
-      stringResult = intl2.string(tmp(1114).t.BARTXV);
+      const intl2 = tmp(1113).intl;
+      stringResult = intl2.string(tmp(1113).t.BARTXV);
     } else if (!sound.available) {
-      let intl = tmp(1114).intl;
-      stringResult = intl.string(tmp(1114).t.MDOXJR);
+      let intl = tmp(1113).intl;
+      stringResult = intl.string(tmp(1113).t.MDOXJR);
     }
     lockedAccessibilityHint = stringResult;
   }

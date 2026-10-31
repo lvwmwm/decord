@@ -1,35 +1,35 @@
-// Module ID: 14951
-// Function ID: 14952
+// Module ID: 14989
+// Function ID: 14990
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2063, 5064, 7371, 1072, 7343, 21, 1188, 5009, 575, 11568, 5591, 5016, 11573, 11574, 8753, 7342, 6568, 1410, 8931, 5755, 5704, 5255, 7352, 5706, 1114, 5619, 6969, 5711, 8153, 5075, 504, 14952, 7370, 7054, 14955, 2]
+// Dependencies: [19, 17, 2062, 5069, 7377, 1072, 7349, 21, 1187, 5014, 575, 11604, 5596, 5021, 11609, 11610, 8761, 7348, 6574, 1409, 8940, 5760, 5709, 5260, 7358, 5711, 1113, 5624, 6975, 5716, 8161, 5080, 504, 14990, 7376, 7060, 14993, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 14951 (UserProfileConnections)
+// Module 14989 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import shared from "shared" /* 5016 */;
-import HapticUtils from "HapticUtils" /* 5255 */;
-import useToken from "useToken" /* 5591 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import TableRowGroup from "TableRowGroup" /* 7054 */;
-import Constants2 from "Constants" /* 7343 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8931 */;
-import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11568 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11573 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11574 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14955 */;
+import intl3 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import shared from "shared" /* 5021 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import useToken from "useToken" /* 5596 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import TableRowGroup from "TableRowGroup" /* 7060 */;
+import Constants2 from "Constants" /* 7349 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8940 */;
+import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11604 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11609 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11610 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14993 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import StreamerModeStore from "StreamerModeStore" /* 5064 */;
-import Constants_mod from "Constants" /* 7371 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import StreamerModeStore from "StreamerModeStore" /* 5069 */;
+import Constants_mod from "Constants" /* 7377 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import native_mod from "native" /* 1188 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import native_mod from "native" /* 1187 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -46,7 +46,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const UserProfileCardDefault = tmp2(7370);
+const UserProfileCardDefault = tmp2(7376);
 function VerifiedIcon(arg0) {
   let isTwitterVerifiedAccount;
   let items;
@@ -70,11 +70,11 @@ function VerifiedIcon(arg0) {
     }
     const obj3 = { style: tmp.verifiedIconContainer, children: items };
     const obj4 = { source: AssetRegistryDefault, color: PLATFORM_TWITTER };
-    const Icon = tmp2(1188).Icon;
+    const Icon = tmp2(1187).Icon;
     const merged = Object.assign(obj);
     items = [authStore2(Icon, obj4), ];
     const obj5 = { source: AssetRegistryDefault2, color: WHITE };
-    const Icon2 = tmp2(1188).Icon;
+    const Icon2 = tmp2(1187).Icon;
     const merged1 = Object.assign(obj);
     items[1] = authStore2(Icon2, obj5);
     return map1(View, obj3);
@@ -409,7 +409,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
     tmp7 = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: applicationRoleConnection.platform_username };
-      tmp7 = authStore2(tmp2(5619).Text, obj4);
+      tmp7 = authStore2(tmp2(5624).Text, obj4);
     }
   }
   const items = [tmp7, , ];
@@ -425,8 +425,8 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
   items[1] = tmp9;
   const obj7 = { style: tmp.poweredByContainer, children: authStore2(Text, obj8) };
   obj8 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl3.t.zIT9YA, obj9) };
-  Text = tmp2(5619).Text;
-  intl = tmp2(1114).intl;
+  Text = tmp2(5624).Text;
+  intl = tmp2(1113).intl;
   obj9 = {
     applicationHook() {
       return applicationRoleConnection.application.name;
@@ -435,7 +435,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
   items[2] = authStore2(View, obj7);
   let name = applicationRoleConnection.platform_name;
   const tmp5Result = tmp5(tmp6, obj6);
-  const TableRow = tmp2(6969).TableRow;
+  const TableRow = tmp2(6975).TableRow;
   if (name == null) {
     name = applicationRoleConnection.platform_username;
   }
@@ -444,7 +444,7 @@ const memoResult = react.memo(function UserAccountConnection(applicationRoleConn
   }
   const obj10 = { label: name, subLabel: tmp5Result, icon: authStore2(Icon, obj11) };
   obj11 = { size: native.Icon.Sizes.MEDIUM, source: applicationIconSource, disableColor: true };
-  Icon = tmp2(1188).Icon;
+  Icon = tmp2(1187).Icon;
   return authStore2(TableRow, obj10);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileConnections.tsx");
@@ -460,7 +460,7 @@ export function UserProfileAccountConnectionsCard(userId) {
   userId = userId.userId;
   const style = userId.style;
   const tmp2 = closure_16();
-  let obj = userId(5075);
+  let obj = userId(5080);
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = userId(504);
@@ -468,8 +468,8 @@ export function UserProfileAccountConnectionsCard(userId) {
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(14952)(userId));
-  theme(14952)(userId);
+  ({ connections, appIdentities } = theme(14990)(userId));
+  theme(14990)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];
@@ -482,9 +482,9 @@ export function UserProfileAccountConnectionsCard(userId) {
       const obj = { identity, application: application.application };
       return closure_1_12(closure_1_19, obj, "" + identity.application_id + "-" + identity.provider_issued_user_id);
     }), arraySpreadResult);
-    const obj4 = { title: intl.string(userId(1114).t["3fe7U5"]), style, titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(7054).TableRowGroup, obj5) };
-    const tmp6Result = tmp6(7370);
-    intl = tmp3(1114).intl;
+    const obj4 = { title: intl.string(userId(1113).t["3fe7U5"]), style, titleStyle: tmp2.refreshCardTitle, children: closure_12(userId(7060).TableRowGroup, obj5) };
+    const tmp6Result = tmp6(7376);
+    intl = tmp3(1113).intl;
     obj5 = { hasIcons: true, children: items2 };
     return closure_12(tmp6Result, obj4);
   }
@@ -508,7 +508,7 @@ export function UserProfileApplicationRoleConnectionsCard(arg0) {
       });
       const obj2 = { title: intl.string(intl3.t.PHjkRE), style, titleStyle: tmp.refreshCardTitle, children: authStore2(TableRowGroup.TableRowGroup, obj3) };
       const tmp2Result = UserProfileCardDefault;
-      intl = tmp4(1114).intl;
+      intl = tmp4(1113).intl;
       obj3 = { hasIcons: true, children: mapped };
       return authStore2(tmp2Result, obj2);
     }

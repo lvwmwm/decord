@@ -1,26 +1,26 @@
-// Module ID: 7482
-// Function ID: 7483
+// Module ID: 7488
+// Function ID: 7489
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1384, 1072, 7483, 7484, 6922, 5953, 6898, 1114, 7485, 7486, 7487, 1283, 5063, 5016, 7489, 572, 7490, 2]
+// Dependencies: [32, 1383, 1072, 7489, 7490, 6928, 5958, 6904, 1113, 7491, 7492, 7493, 1282, 5068, 5021, 7495, 572, 7496, 2]
 
-// Module 7482 (RelationshipActionCreators)
+// Module 7488 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl10 from "intl" /* 1114 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import shared from "shared" /* 5016 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6898 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6922 */;
-import RelationshipConstants from "RelationshipConstants" /* 7483 */;
-import Constants2 from "Constants" /* 7484 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7485 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7486 */;
-import FriendsUtils from "FriendsUtils" /* 7487 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 7489 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7490 */;
+import intl10 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import shared from "shared" /* 5021 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6904 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6928 */;
+import RelationshipConstants from "RelationshipConstants" /* 7489 */;
+import Constants2 from "Constants" /* 7490 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7491 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7492 */;
+import FriendsUtils from "FriendsUtils" /* 7493 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 7495 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -93,12 +93,12 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
               }
               humanizeAbortCodeResult = humanizeAbortCode(num, userTag);
             } else {
-              const intl = tmp19(1114).intl;
-              humanizeAbortCodeResult = intl.string(tmp19(1114).t.paDJBM);
+              const intl = tmp19(1113).intl;
+              humanizeAbortCodeResult = intl.string(tmp19(1113).t.paDJBM);
             }
             obj = { title: intl2.string(intl10.t["6moJ8s"]), body: humanizeAbortCodeResult, confirmText: intl3.string(intl10.t.BddRzS) };
-            intl2 = tmp19(1114).intl;
-            intl3 = tmp19(1114).intl;
+            intl2 = tmp19(1113).intl;
+            intl3 = tmp19(1113).intl;
             const tmp19Result2 = ContextMenuActionCreators;
             tmp19Result2.closeContextMenu();
             const obj3 = AlertActionCreatorsDefault;
@@ -132,12 +132,12 @@ let obj2 = {
     }
     [tmp3, tmp4] = str.split("#");
     _slicedToArray(str.split("#"), 2);
-    const HTTP = str(1283).HTTP;
+    const HTTP = str(1282).HTTP;
     const request = { url: closure_6.USER_RELATIONSHIPS(), body, context, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
-    obj3 = str(1283);
+    obj3 = str(1282);
     const postResult = post(request);
     return postResult.catch((error) => {
       handleRelationshipAddError(error, errorUxConfig, str);

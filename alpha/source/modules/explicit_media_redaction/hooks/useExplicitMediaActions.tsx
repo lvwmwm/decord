@@ -1,10 +1,10 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13293
+// Function ID: 13294
 // Name: useExplicitMediaActions
-// Dependencies: [5, 32, 19, 6440, 2]
+// Dependencies: [5, 32, 19, 6446, 2]
 // Exports: useExplicitMediaActions
 
-// Module 13258 (useExplicitMediaActions)
+// Module 13293 (useExplicitMediaActions)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -43,7 +43,7 @@ export function useExplicitMediaActions(onError) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ export function useExplicitMediaActions(onError) {
             closure_129_3(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === v0) {

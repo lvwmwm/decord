@@ -1,14 +1,14 @@
-// Module ID: 16674
-// Function ID: 16675
+// Module ID: 16716
+// Function ID: 16717
 // Name: useExplicitContentSettingsOrDefault
-// Dependencies: [1232, 563, 7464, 7466, 2]
+// Dependencies: [1231, 563, 7470, 7472, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 16674 (useExplicitContentSettingsOrDefault)
+// Module 16716 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7464 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7466 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7470 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7472 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitContentSettingsOrDefault.tsx");

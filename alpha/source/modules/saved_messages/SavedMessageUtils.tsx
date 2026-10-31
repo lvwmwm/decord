@@ -1,17 +1,17 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11163
+// Function ID: 11164
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 4862, 4858, 1072, 1114, 2044, 504, 7479, 7415, 2]
+// Dependencies: [5, 19, 4867, 4863, 1072, 1113, 2042, 504, 7485, 7421, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11144 (SavedMessageUtils)
-import intl2 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
+// Module 11163 (SavedMessageUtils)
+import intl2 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _savedMessageJumpToMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -82,11 +82,11 @@ let obj = function _savedMessageJumpToMessage() {
               if (null == type2.recipients) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else if (type2.recipients.length > 1) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 type = closure_131_1(closure_131_2[8]);
                 const recipients = type2.recipients;
@@ -115,7 +115,7 @@ let obj = function _savedMessageJumpToMessage() {
           type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
           tmp17(type, { openChannel: true });
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {
@@ -159,19 +159,19 @@ export function useDueInString(arg0) {
       H4gnX9 = intl2.t.H4gnX9;
     }
     if (type === tmp10.LONG) {
-      haia16 = tmp(1114).t.haia16;
+      haia16 = tmp(1113).t.haia16;
     } else {
-      haia16 = tmp(1114).t["Uq7Y+7"];
+      haia16 = tmp(1113).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = haia16;
     }
     obj = { dueInText: formatToPlainString(H4gnX9, obj2), isOverdue: now > dueAt };
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef2044.duration;
-    _modDef2044;
+    const duration = _modDef2042.duration;
+    _modDef2042;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

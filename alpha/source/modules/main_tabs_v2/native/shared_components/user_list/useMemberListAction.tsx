@@ -1,22 +1,22 @@
-// Module ID: 11585
-// Function ID: 11586
+// Module ID: 11621
+// Function ID: 11622
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4858, 4941, 4951, 1384, 10714, 1072, 21, 5009, 563, 11586, 9022, 7211, 11589, 11598, 11599, 1114, 10959, 10958, 5039, 4842, 11601, 11606, 7555, 11607, 1889, 9099, 6022, 8171, 9707, 11611, 2405, 2]
+// Dependencies: [32, 19, 17, 4863, 4946, 4956, 1383, 10734, 1072, 21, 5014, 563, 11622, 9031, 7217, 11625, 11634, 11635, 1113, 10978, 10977, 5044, 4847, 11637, 11642, 7561, 11643, 1888, 9118, 6027, 8179, 9727, 11647, 2404, 2]
 // Exports: default
 
-// Module 11585 (useMemberListAction)
+// Module 11621 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10714 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11589 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10734 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11625 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PermissionStore_mod from "PermissionStore" /* 4941 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore_mod from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "color", listActionHeight: "Error" };
+let closure_16 = { listActionRenderer: "Array", listActionHeight: "flexDirection" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_17 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");

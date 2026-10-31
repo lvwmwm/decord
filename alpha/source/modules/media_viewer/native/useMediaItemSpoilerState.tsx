@@ -1,12 +1,12 @@
-// Module ID: 14732
-// Function ID: 14733
+// Module ID: 14770
+// Function ID: 14771
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 8830, 5090, 5249, 1188, 2]
+// Dependencies: [32, 19, 8838, 5095, 5254, 1187, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 14732 (useMediaItemSpoilerState)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+// Module 14770 (useMediaItemSpoilerState)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -24,14 +24,14 @@ export function useMediaItemSpoilerState(index) {
   let tmp5;
   const tmp = mediaItemHasSpoiler;
   const tmp2 = dependencyMap;
-  let obj = mediaItemHasSpoiler(8830);
+  let obj = mediaItemHasSpoiler(8838);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(index);
   const obj2 = react;
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   [tmp5, dependencyMap] = tmp4;
   let num = 0;
-  const useSharedValue = mediaItemHasSpoiler(5090).useSharedValue;
-  mediaItemHasSpoiler(5090);
+  const useSharedValue = mediaItemHasSpoiler(5095).useSharedValue;
+  mediaItemHasSpoiler(5095);
   if (mediaItemHasSpoiler) {
     num = 1;
   }
@@ -45,7 +45,7 @@ export function useMediaItemSpoilerState(index) {
     if (mediaItemHasSpoiler) {
       num = 1;
     }
-    let obj = { duration: 200, easing: tmp2(1188).STANDARD_EASING };
+    let obj = { duration: 200, easing: tmp2(1187).STANDARD_EASING };
     const fn = function t() {
       const obj = mediaItemHasSpoiler(dependencyMap[3]);
       obj.runOnJS(setSpoilerActive)(closure_1_0);
@@ -64,7 +64,7 @@ export function useMediaItemSpoilerState(index) {
   fn.__closure = { spoilerOpacity: sharedValue };
   fn.__workletHash = 8496335051493;
   fn.__initData = __initData;
-  const tmpResult = tmp(5090);
+  const tmpResult = tmp(5095);
   items1[1] = tmpResult.useAnimatedStyle(fn);
   return items1;
 }

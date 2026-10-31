@@ -1,9 +1,9 @@
-// Module ID: 1092
-// Function ID: 1093
+// Module ID: 1091
+// Function ID: 1092
 // Name: ApplicationDistributors
 // Dependencies: [2]
 
-// Module 1092 (ApplicationDistributors)
+// Module 1091 (ApplicationDistributors)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDistributors.tsx");

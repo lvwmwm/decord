@@ -1,26 +1,26 @@
-// Module ID: 16575
-// Function ID: 16576
+// Module ID: 16617
+// Function ID: 16618
 // Name: AgeGroupScreenRowProps
-// Dependencies: [7947, 6723, 1114, 3093, 6720, 16529, 2]
+// Dependencies: [7955, 6729, 1113, 3096, 6726, 16571, 2]
 // Exports: useShowAccountStatusAgeGroupRow, useShowAssignedAdultAgeGroupRow
 
-// Module 16575 (AgeGroupScreenRowProps)
-import intl2 from "intl" /* 1114 */;
-import _modDef3093 from "module_3093" /* 3093 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6723 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16529 */;
+// Module 16617 (AgeGroupScreenRowProps)
+import intl2 from "intl" /* 1113 */;
+import _modDef3096 from "module_3096" /* 3096 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16571 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3093.SH6Tcv);
+    return intl.string(_modDef3096.SH6Tcv);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3093.rJiO86);
+    return intl.string(_modDef3096.rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
     const obj = AgeVerificationActionCreatorsDefault;

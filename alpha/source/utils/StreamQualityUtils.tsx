@@ -1,23 +1,23 @@
-// Module ID: 5923
-// Function ID: 5924
+// Module ID: 5942
+// Function ID: 5943
 // Name: StreamQualityUtils
-// Dependencies: [19, 5924, 502, 4880, 5759, 1384, 1072, 5859, 1386, 5763, 1114, 504, 5925, 1253, 2]
+// Dependencies: [19, 5943, 502, 4885, 5764, 1383, 1072, 5864, 1385, 5768, 1113, 504, 5944, 1252, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 5923 (StreamQualityUtils)
+// Module 5942 (StreamQualityUtils)
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import Constants2 from "Constants" /* 5763 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5925 */;
+import intl3 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import Constants2 from "Constants" /* 5768 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5944 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5924 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5943 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
-import UserStore from "UserStore" /* 1384 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5859 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import UserStore from "UserStore" /* 1383 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5864 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

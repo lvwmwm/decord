@@ -1,20 +1,20 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17678
+// Function ID: 17679
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5009, 575, 17619, 17620, 5707, 5619, 1188, 7286, 5629, 6738, 6992, 7163, 1114, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 17679, 17680, 5712, 5624, 1187, 7292, 5634, 6744, 6998, 7169, 1113, 2]
 // Exports: default
 
-// Module 17618 (CaptchaTestModal)
+// Module 17678 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17619 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17620 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17679 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17680 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c4;
@@ -104,7 +104,7 @@ function CaptchaTestScreen(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {

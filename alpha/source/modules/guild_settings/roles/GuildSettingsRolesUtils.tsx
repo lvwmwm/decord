@@ -1,26 +1,26 @@
-// Module ID: 19718
-// Function ID: 19719
+// Module ID: 19775
+// Function ID: 19776
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 4921, 1384, 19709, 1072, 504, 5063, 7293, 6895, 1253, 6893, 1380, 2]
+// Dependencies: [19, 4926, 1383, 19766, 1072, 504, 5068, 7299, 6901, 1252, 6899, 1379, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 19718 (GuildSettingsRolesUtils)
+// Module 19775 (GuildSettingsRolesUtils)
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6893 */;
-import GuildUtilsDefault from "GuildUtils" /* 6895 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7293 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19709 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
+import GuildUtilsDefault from "GuildUtils" /* 6901 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7299 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19766 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, roles, user;
 
 let tmp;
-const AnalyticsUtilsDefault = tmp(1253);
+const AnalyticsUtilsDefault = tmp(1252);
 let react = react_mod;
 const constants = GuildSettingsConstants.GuildSettingsRoleEditSections;
 const AnalyticEvents = Constants.AnalyticEvents;

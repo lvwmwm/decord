@@ -1,31 +1,31 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14313
+// Function ID: 14314
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 13927, 1398, 1384, 1072, 14276, 21, 5009, 575, 6772, 7871, 1188, 14183, 5063, 1114, 6955, 5619, 1410, 5712, 1253, 504, 14277, 8972, 5629, 6761, 2]
+// Dependencies: [32, 19, 17, 13962, 1397, 1383, 1072, 14314, 21, 5014, 575, 6778, 7878, 1187, 14221, 5068, 1113, 6961, 5624, 1409, 5717, 1252, 504, 14315, 8981, 5634, 6767, 2]
 // Exports: default
 
-// Module 14275 (InviteDetails)
+// Module 14313 (InviteDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl8 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
-import GuildBadgeDefault from "GuildBadge" /* 6955 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7871 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 14183 */;
-import HubConstants from "HubConstants" /* 14276 */;
-import InviteRolesListDefault from "InviteRolesList" /* 14277 */;
+import intl8 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import GuildBadgeDefault from "GuildBadge" /* 6961 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7878 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 14221 */;
+import HubConstants from "HubConstants" /* 14314 */;
+import InviteRolesListDefault from "InviteRolesList" /* 14315 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 13927 */;
-import UserRecord from "UserRecord" /* 1398 */;
-import UserStore from "UserStore" /* 1384 */;
+import MultiAccountStore from "MultiAccountStore" /* 13962 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ let size2;
 let size3;
 let size4;
 let tmp15;
-const AvatarUtilsDefault = tmp15(1410);
+const AvatarUtilsDefault = tmp15(1409);
 function shouldShowInviter(invite, isGuildMember) {
   let num2;
   let tmp = null != invite.inviter;
@@ -90,7 +90,7 @@ function InviteDestinationIcon(invite) {
         const self = this;
         const self2 = this;
         const obj3 = { avatarStyle: tmp.avatar, user: tmp12, guildId: "Array", size: native.AvatarSizes.XLARGE };
-        const Avatar = tmp4(1188).Avatar;
+        const Avatar = tmp4(1187).Avatar;
         tmp12 = new UserRecord(invite.inviter);
         tmp2Result = tmp2(Avatar, obj3);
       }
@@ -132,10 +132,10 @@ function InviteHeader(invite) {
   }
   const tmp2Result = InviteTypeUtils;
   if (tmp2Result.isFriendInvite(invite)) {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj3 = { username: obj5.getFormattedName(invite.inviter) };
-    const v4aF92R = tmp2(1114).t["4aF92R"];
+    const v4aF92R = tmp2(1113).t["4aF92R"];
     obj5 = UserUtilsDefault;
     name = formatToPlainString(v4aF92R, obj3);
   }
@@ -182,51 +182,51 @@ function InviteJoinContext(invite) {
       }
     }
   }, items);
-  const intl = invite(1114).intl;
-  const stringResult = intl.string(invite(1114).t["3rE1P8"]);
-  let obj = invite(7871);
+  const intl = invite(1113).intl;
+  const stringResult = intl.string(invite(1113).t["3rE1P8"]);
+  let obj = invite(7878);
   if (obj.isFriendInvite(invite)) {
-    const intl7 = tmp3(1114).intl;
+    const intl7 = tmp3(1113).intl;
     const format3 = intl7.format;
     let obj2 = { username: obj11.getFormattedName(invite.inviter) };
-    const Quj7HX = tmp3(1114).t.Quj7HX;
-    obj11 = isGuildMember(5063);
+    const Quj7HX = tmp3(1113).t.Quj7HX;
+    obj11 = isGuildMember(5068);
     format3Result = format3(Quj7HX, obj2);
   } else {
-    const tmp3Result = invite(7871);
+    const tmp3Result = invite(7878);
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         let format2Result;
         if (null != invite.inviter) {
-          const intl6 = tmp3(1114).intl;
+          const intl6 = tmp3(1113).intl;
           const format2 = intl6.format;
           let obj3 = { username: obj9.getFormattedName(invite.inviter) };
-          const Lu4h18 = tmp3(1114).t.Lu4h18;
-          obj9 = isGuildMember(5063);
+          const Lu4h18 = tmp3(1113).t.Lu4h18;
+          obj9 = isGuildMember(5068);
           format2Result = format2(Lu4h18, obj3);
         }
         format3Result = format2Result;
       }
-      const intl5 = tmp3(1114).intl;
-      format2Result = intl5.string(tmp3(1114).t.OsdY8B);
+      const intl5 = tmp3(1113).intl;
+      format2Result = intl5.string(tmp3(1113).t.OsdY8B);
     } else {
-      const tmp3Result3 = invite(7871);
+      const tmp3Result3 = invite(7878);
       if (tmp3Result3.isStreamInvite(invite)) {
         if (null != invite.target_user) {
-          const intl4 = tmp3(1114).intl;
+          const intl4 = tmp3(1113).intl;
           const formatToPlainString = intl4.formatToPlainString;
           const obj4 = { username: obj7.getFormattedName(invite.target_user) };
-          const x2L32Q = tmp3(1114).t.x2L32Q;
-          obj7 = isGuildMember(5063);
+          const x2L32Q = tmp3(1113).t.x2L32Q;
+          obj7 = isGuildMember(5068);
           format3Result = formatToPlainString(x2L32Q, obj4);
         }
       }
       const tmp7 = isGuildMember && invite.state !== constants2.ACCEPTED;
       if (tmp7) {
         let stringResult1;
-        const intl3 = tmp3(1114).intl;
+        const intl3 = tmp3(1113).intl;
         const string = intl3.string;
-        const t = tmp3(1114).t;
+        const t = tmp3(1113).t;
         if (isRegistration) {
           stringResult1 = string(t.jpwYbt);
         } else {
@@ -237,11 +237,11 @@ function InviteJoinContext(invite) {
         format3Result = stringResult;
         const tmp10 = shouldShowInviter(invite, isGuildMember) && null != invite.inviter;
         if (tmp10) {
-          const intl2 = tmp3(1114).intl;
+          const intl2 = tmp3(1113).intl;
           const format = intl2.format;
           const obj6 = { username: obj5.getFormattedName(invite.inviter) };
-          const spU2mI = tmp3(1114).t.spU2mI;
-          obj5 = isGuildMember(5063);
+          const spU2mI = tmp3(1113).t.spU2mI;
+          obj5 = isGuildMember(5068);
           format3Result = format(spU2mI, obj6);
         }
       }
@@ -252,16 +252,16 @@ function InviteJoinContext(invite) {
   const tmp20 = closure_13;
   if (null != memo) {
     tmp22 = null;
-    const tmp3Result4 = invite(7871);
+    const tmp3Result4 = invite(7878);
     if (!tmp3Result4.isFriendInvite(invite)) {
-      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(5712), obj12) };
+      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(5717), obj12) };
       obj12 = { source: memo, style: tmp.inviterIcon };
       tmp22 = closure_12(tmp21, obj10);
     }
   }
   items1 = [tmp22, ];
   const obj13 = { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: format3Result };
-  items1[1] = closure_12(invite(5619).Text, obj13);
+  items1[1] = closure_12(invite(5624).Text, obj13);
   return tmp20(View, obj8);
 }
 function InviteMemberCounts(invite) {
@@ -403,11 +403,11 @@ export default function InviteDetails(invite) {
   if (tmp8Result) {
     const obj10 = { event: guild_scheduled_event };
     const obj9 = { style: tmp.embedDetailsCard, children: items3 };
-    items3 = [closure_12(invite(8972).GuildEventCardHeader, obj10), , ];
+    items3 = [closure_12(invite(8981).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = closure_12(invite(8972).GuildEventCardMetaInfo, obj11);
+    items3[1] = closure_12(invite(8981).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = closure_12(invite(8972).GuildEventCardGuildInfo, obj12);
+    items3[2] = closure_12(invite(8981).GuildEventCardGuildInfo, obj12);
     tmp8Result = tmp8(View, obj9);
   }
   items2[5] = tmp8Result;
@@ -422,10 +422,10 @@ export default function InviteDetails(invite) {
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj13 = { source: userAvatarSource, variant: "entity" };
-    tmp10Result = tmp10(tmp4(5629).Button.Icon, obj13);
+    tmp10Result = tmp10(tmp4(5634).Button.Icon, obj13);
   }
   if (null != stateFromStores) {
-    const intl = tmp4(1114).intl;
+    const intl = tmp4(1113).intl;
     const obj14 = {
       usernameHook() {
           const username = stateFromStores.username;
@@ -438,12 +438,12 @@ export default function InviteDetails(invite) {
           return "" + username + str;
         }
     };
-    formatToPlainStringResult = intl.formatToPlainString(invite(1114).t["9sWQNT"], obj14);
+    formatToPlainStringResult = intl.formatToPlainString(invite(1113).t["9sWQNT"], obj14);
   }
-  const intl2 = tmp4(1114).intl;
+  const intl2 = tmp4(1113).intl;
   if (isGuildMember) {
-    const intl3 = tmp4(1114).intl;
-    stringResult = intl3.string(tmp4(1114).t.IRoQXr);
+    const intl3 = tmp4(1113).intl;
+    stringResult = intl3.string(tmp4(1113).t.IRoQXr);
     tmp24 = stringResult;
   } else {
     if (stateFromStores1) {
@@ -460,14 +460,14 @@ export default function InviteDetails(invite) {
     _undefined(constants.ACCEPT);
     importDefault();
   }
-  const ButtonGroup = tmp4(6761).ButtonGroup;
+  const ButtonGroup = tmp4(6767).ButtonGroup;
   const items4 = [, ];
   const obj15 = { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT };
-  items4[0] = closure_12(invite(5629).Button, obj15);
-  const Button = tmp4(5629).Button;
-  const intl4 = tmp4(1114).intl;
+  items4[0] = closure_12(invite(5634).Button, obj15);
+  const Button = tmp4(5634).Button;
+  const intl4 = tmp4(1113).intl;
   const string = intl4.string;
-  const t = tmp4(1114).t;
+  const t = tmp4(1113).t;
   if (isGuildMember) {
     stringResult1 = string(t.WAI6xu);
   } else {

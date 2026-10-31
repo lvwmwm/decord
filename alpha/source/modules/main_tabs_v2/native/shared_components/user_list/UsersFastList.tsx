@@ -1,27 +1,27 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10733
+// Function ID: 10734
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10714, 21, 5009, 575, 10715, 6969, 9800, 5090, 5619, 1188, 6974, 10716, 1626, 7211, 10717, 10718, 10778, 10781, 14367, 14368, 7217, 2]
+// Dependencies: [32, 19, 17, 10734, 21, 5014, 575, 10735, 6975, 9821, 5095, 5624, 1187, 6980, 10736, 1625, 7217, 10737, 10738, 10798, 10801, 14405, 14406, 7223, 2]
 // Exports: UsersFastList
 
-// Module 10713 (UsersFastList)
+// Module 10733 (UsersFastList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import TableRow2 from "TableRow" /* 6969 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9800 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10715 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10716 */;
-import UserRowDefault from "UserRow" /* 10718 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10778 */;
-import ChannelRowDefault from "ChannelRow" /* 10781 */;
+import native from "native" /* 1187 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import TableRow2 from "TableRow" /* 6975 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9821 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10735 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
+import UserRowDefault from "UserRow" /* 10738 */;
+import GroupDMRowDefault from "GroupDMRow" /* 10798 */;
+import ChannelRowDefault from "ChannelRow" /* 10801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10714 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -180,7 +180,7 @@ let closure_16 = react.memo(function UserSectionInner(stickyAt) {
   const obj6 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: memo, children: items3 };
   items3 = [title, ];
   let tmp12 = null;
-  const Text = tmp3(5619).Text;
+  const Text = tmp3(5624).Text;
   if (null != badge) {
     const obj7 = { style: tmp.badgeWrapper, children: metroImportDefault(native.Badge, obj8) };
     obj8 = { style: tmp.badge, value: badge };
@@ -197,7 +197,7 @@ let closure_16 = react.memo(function UserSectionInner(stickyAt) {
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = metroImportDefault(tmp3(6974).PressableOpacity, obj10);
+    tmp18 = metroImportDefault(tmp3(6980).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: items5 };
   items5 = [tmp18, ];
@@ -205,7 +205,7 @@ let closure_16 = react.memo(function UserSectionInner(stickyAt) {
   const tmp20 = View;
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj13) };
-    const PressableOpacity = tmp3(6974).PressableOpacity;
+    const PressableOpacity = tmp3(6980).PressableOpacity;
     obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
     tmp21 = metroImportDefault(PressableOpacity, obj12);
   }
@@ -218,7 +218,7 @@ let closure_16 = react.memo(function UserSectionInner(stickyAt) {
     View = ReanimatedRexportDefault.View;
     if (!disableThemedGradient) {
       const obj15 = { style: animatedStyle1, children: metroImportDefault(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: true }) };
-      const View2 = tmp25(5090).View;
+      const View2 = tmp25(5095).View;
       tmp26 = metroImportDefault(View2, obj15);
     }
     items6 = [tmp26, tmp11Result5];

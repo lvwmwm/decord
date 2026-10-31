@@ -1,16 +1,16 @@
-// Module ID: 4861
-// Function ID: 4862
+// Module ID: 4866
+// Function ID: 4867
 // Name: FavoriteStore
-// Dependencies: [1232, 4862, 4871, 1072, 1197, 12, 504, 572, 2]
+// Dependencies: [1231, 4867, 4876, 1072, 1196, 12, 504, 572, 2]
 
-// Module 4861 (FavoriteStore)
+// Module 4866 (FavoriteStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import FavoritesConstants from "FavoritesConstants" /* 4871 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import FavoritesConstants from "FavoritesConstants" /* 4876 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 19124
-// Function ID: 19125
+// Module ID: 19173
+// Function ID: 19174
 // Name: SoundButton
-// Dependencies: [19, 17, 19118, 21, 5090, 5009, 575, 1376, 6974, 5632, 7294, 13379, 19125, 19126, 7320, 7345, 19128, 19115, 19130, 5619, 8659, 2]
+// Dependencies: [19, 17, 19167, 21, 5095, 5014, 575, 1375, 6980, 5637, 7300, 13414, 19174, 19175, 7326, 7351, 19177, 19164, 19179, 5624, 8667, 2]
 
-// Module 19124 (SoundButton)
+// Module 19173 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 6974 */;
-import EmojiDefault from "Emoji" /* 7294 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 13379 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19118 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19130 */;
+import Pressables from "Pressables" /* 6980 */;
+import EmojiDefault from "Emoji" /* 7300 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 13414 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19167 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19179 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -86,12 +86,12 @@ function SoundButtonEmoji(arg0) {
     items2[1] = obj2;
     return obj;
   };
-  const obj2 = animationConfig(5090);
-  fn.__closure = { animationConfig, withDelay: animationConfig(5090).withDelay, withSpring: animationConfig(5632).withSpring, interpolate: animationConfig(5090).interpolate, SPRING_CONFIG };
+  const obj2 = animationConfig(5095);
+  fn.__closure = { animationConfig, withDelay: animationConfig(5095).withDelay, withSpring: animationConfig(5637).withSpring, interpolate: animationConfig(5095).interpolate, SPRING_CONFIG };
   fn.__workletHash = 13932429225740;
   fn.__initData = __initData;
   const obj4 = { sharedValues, scaleFactors: { pressed: 0.7200000000000001, playing: 1.08 }, playingAnimationDelay: 100, pressedRotationDegrees: -15 };
-  ({ animationConfig, withDelay: animationConfig(5090).withDelay, withSpring: animationConfig(5632).withSpring, interpolate: animationConfig(5090).interpolate, SPRING_CONFIG });
+  ({ animationConfig, withDelay: animationConfig(5095).withDelay, withSpring: animationConfig(5637).withSpring, interpolate: animationConfig(5095).interpolate, SPRING_CONFIG });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const fn2 = function o() {
     let items3;
@@ -139,13 +139,13 @@ function SoundButtonEmoji(arg0) {
     items2[1] = obj2;
     return obj;
   };
-  const obj5 = animationConfig(5090);
-  fn2.__closure = { animationConfig: obj4, withDelay: animationConfig(5090).withDelay, withSpring: animationConfig(5632).withSpring, interpolate: animationConfig(5090).interpolate, SPRING_CONFIG };
+  const obj5 = animationConfig(5095);
+  fn2.__closure = { animationConfig: obj4, withDelay: animationConfig(5095).withDelay, withSpring: animationConfig(5637).withSpring, interpolate: animationConfig(5095).interpolate, SPRING_CONFIG };
   fn2.__workletHash = 13932429225740;
   fn2.__initData = __initData;
   const obj7 = { style: items, children: closure_5(closure_7, obj8) };
   items = [tmp.emojiWrapper, animatedStyle];
-  ({ animationConfig: obj4, withDelay: animationConfig(5090).withDelay, withSpring: animationConfig(5632).withSpring, interpolate: animationConfig(5090).interpolate, SPRING_CONFIG });
+  ({ animationConfig: obj4, withDelay: animationConfig(5095).withDelay, withSpring: animationConfig(5637).withSpring, interpolate: animationConfig(5095).interpolate, SPRING_CONFIG });
   obj8 = { style: obj5.useAnimatedStyle(fn2), children: closure_5(tmp5, obj9) };
   obj9 = { fastImageStyle: tmp.emoji, textEmojiStyle: tmp.emoji, src: getSoundboardEmojiUrlDefault(sound, 24), name: str };
   str = sound.emojiName;

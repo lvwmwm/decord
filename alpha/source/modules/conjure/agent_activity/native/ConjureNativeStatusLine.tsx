@@ -1,17 +1,17 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12622
+// Function ID: 12623
 // Name: ConjureNativeStatusLine
-// Dependencies: [19, 17, 21, 575, 5009, 5591, 11377, 7372, 12429, 5619, 12588, 6974, 1114, 3865, 2]
+// Dependencies: [19, 17, 21, 575, 5014, 5596, 11413, 7378, 12464, 5624, 12623, 6980, 1113, 3868, 2]
 // Exports: default, laneTintFor, laneTintIndexFor
 
-// Module 12587 (ConjureNativeStatusLine)
+// Module 12622 (ConjureNativeStatusLine)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import MagicWandIcon from "MagicWandIcon" /* 12429 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import MagicWandIcon from "MagicWandIcon" /* 12464 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

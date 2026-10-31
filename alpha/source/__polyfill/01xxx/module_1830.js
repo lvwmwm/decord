@@ -1,43 +1,77 @@
 // Module ID: 1830
 // Function ID: 1831
-// Dependencies: [1655, 1654]
-// Exports: setGestureState
+// Dependencies: [1654, 1693, 1653]
+// Exports: setNativeProps
 
 // Module 1830
-import react_native from "react-native" /* 1655 */;
-import module_1654 from "module_1654" /* 1654 */;
+import react_native from "react-native" /* 1654 */;
+import clampRGBA from "clampRGBA" /* 1693 */;
+import module_1653_mod from "module_1653" /* 1653 */;
 
-function setGestureStateNative(arg0, arg1) {
+function setNativePropsFabric(fn, updates) {
   if (globalThis._WORKLET) {
-    global._setGestureState(arg0, arg1);
+    const tmp6 = fn();
+    const obj = clampRGBA;
+    obj.processColorsInProps(updates);
+    const items = [{ shadowNodeWrapper: tmp6, updates }];
+    const obj2 = { shadowNodeWrapper: tmp6, updates };
+    global._updatePropsFabric(items);
   } else {
     const logger = react_native.logger;
-    logger.warn("You can not use setGestureState in non-worklet function.");
+    logger.warn("setNativeProps() can only be used on the UI runtime.");
   }
 }
-setGestureStateNative.__closure = { logger: react_native.logger };
-setGestureStateNative.__workletHash = 13301434022691;
-setGestureStateNative.__initData = { code: "function setGestureStateNative_Pnpm_setGestureStateTs1(handlerTag,newState){const{logger}=this.__closure;if(!_WORKLET){logger.warn('You can not use setGestureState in non-worklet function.');return;}global._setGestureState(handlerTag,newState);}" };
-({ logger: react_native.logger });
-if (module_1654.shouldBeUseWeb()) {
-  let setGestureStateJest;
-  const _module1 = module_1654;
-  if (_module1.isJest()) {
-    setGestureStateJest = function setGestureStateJest() {
+let obj = { logger: react_native.logger, processColorsInProps: clampRGBA.processColorsInProps };
+setNativePropsFabric.__closure = obj;
+setNativePropsFabric.__workletHash = 13825557000530;
+setNativePropsFabric.__initData = { code: "function setNativePropsFabric_Pnpm_setNativePropsTs1(animatedRef,updates){const{logger,processColorsInProps}=this.__closure;if(!_WORKLET){logger.warn('setNativeProps() can only be used on the UI runtime.');return;}const shadowNodeWrapper=animatedRef();processColorsInProps(updates);global._updatePropsFabric([{shadowNodeWrapper:shadowNodeWrapper,updates:updates}]);}" };
+function setNativePropsPaper(viewName, updates) {
+  if (globalThis._WORKLET) {
+    let value;
+    const tmp5 = viewName();
+    if (viewName.viewName != null) {
+      value = iter.value;
+    }
+    if (value == null) {
+      value = null;
+    }
+    const obj = clampRGBA;
+    obj.processColorsInProps(updates);
+    const items = [{ tag: tmp5, name: value, updates }];
+    const obj2 = { tag: tmp5, name: value, updates };
+    global._updatePropsPaper(items);
+  } else {
+    const logger = react_native.logger;
+    logger.warn("setNativeProps() can only be used on the UI runtime.");
+  }
+}
+let obj2 = { logger: react_native.logger, processColorsInProps: clampRGBA.processColorsInProps };
+setNativePropsPaper.__closure = obj2;
+setNativePropsPaper.__workletHash = 9895881337862;
+setNativePropsPaper.__initData = { code: "function setNativePropsPaper_Pnpm_setNativePropsTs2(animatedRef,updates){const{logger,processColorsInProps}=this.__closure;var _viewName$value,_viewName;if(!_WORKLET){logger.warn('setNativeProps() can only be used on the UI runtime.');return;}const tag=animatedRef();const name=(_viewName$value=(_viewName=animatedRef.viewName)===null||_viewName===void 0?void 0:_viewName.value)!==null&&_viewName$value!==void 0?_viewName$value:null;processColorsInProps(updates);global._updatePropsPaper([{tag:tag,name:name,updates:updates}]);}" };
+let module_1653 = module_1653_mod;
+module_1653.shouldBeUseWeb();
+module_1653 = module_1653_mod;
+if (module_1653) {
+  let setNativePropsJest;
+  if (module_1653.isJest()) {
+    setNativePropsJest = function setNativePropsJest() {
       const logger = react_native.logger;
-      logger.warn("setGestureState() cannot be used with Jest.");
+      logger.warn("setNativeProps() is not supported with Jest.");
     };
   } else {
-    const _module2 = module_1654;
-    setGestureStateJest = _module2.isChromeDebugger() ? (function setGestureStateChromeDebugger() {
+    const _module2 = module_1653;
+    setNativePropsJest = _module2.isChromeDebugger() ? (function setNativePropsChromeDebugger() {
       const logger = react_native.logger;
-      logger.warn("setGestureState() cannot be used with Chrome Debugger.");
-    }) : (function setGestureStateDefault() {
+      logger.warn("setNativeProps() is not supported with Chrome Debugger.");
+    }) : (function setNativePropsDefault() {
       const logger = react_native.logger;
-      logger.warn("setGestureState() is not supported on this configuration.");
+      logger.warn("setNativeProps() is not supported on this configuration.");
     });
   }
-  setGestureStateNative = setGestureStateJest;
+  setNativePropsPaper = setNativePropsJest;
+} else if (module_1653.isFabric()) {
+  setNativePropsPaper = setNativePropsFabric;
 }
 
-export const setGestureState = setGestureStateNative;
+export const setNativeProps = setNativePropsPaper;

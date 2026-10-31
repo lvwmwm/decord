@@ -1,19 +1,19 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12345
+// Function ID: 12346
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1497, 21, 12283, 5009, 575, 12201, 5090, 5591, 8707, 5712, 5619, 12308, 2]
+// Dependencies: [19, 17, 1496, 21, 12321, 5014, 575, 12239, 5095, 5596, 8715, 5717, 5624, 12346, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 12307 (AppLauncherCommandViewHeader)
+// Module 12345 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12201 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12283 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12239 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12321 */;
 import react from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let items;
@@ -79,7 +79,7 @@ export function AppLauncherCommandViewHeader(section) {
     }
     return getAppLauncherIconSource(application);
   }, items);
-  let obj = scrollOffsetY(5090);
+  let obj = scrollOffsetY(5095);
   const tmp3 = scrollOffsetY;
   class A {
     constructor() {
@@ -98,12 +98,12 @@ export function AppLauncherCommandViewHeader(section) {
       return obj;
     }
   }
-  let obj2 = { interpolate: scrollOffsetY(5090).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj2 = { interpolate: scrollOffsetY(5095).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   A.__closure = obj2;
   A.__workletHash = 15596175827193;
   A.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(A);
-  let obj3 = scrollOffsetY(5090);
+  let obj3 = scrollOffsetY(5095);
   class E {
     constructor() {
       let items;
@@ -130,12 +130,12 @@ export function AppLauncherCommandViewHeader(section) {
       return obj;
     }
   }
-  let obj4 = { APP_ICON_SIZE: 72, APP_ICON_BORDER_WIDTH: 4, DEFAULT_CONTENT_PADDING, interpolate: scrollOffsetY(5090).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj4 = { APP_ICON_SIZE: 72, APP_ICON_BORDER_WIDTH: 4, DEFAULT_CONTENT_PADDING, interpolate: scrollOffsetY(5095).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   E.__closure = obj4;
   E.__workletHash = 13563524587234;
   E.__initData = __initData2;
   const animatedStyle1 = obj3.useAnimatedStyle(E);
-  let obj5 = scrollOffsetY(5090);
+  let obj5 = scrollOffsetY(5095);
   class N {
     constructor() {
       let items;
@@ -146,15 +146,15 @@ export function AppLauncherCommandViewHeader(section) {
       return obj;
     }
   }
-  let obj6 = { interpolate: scrollOffsetY(5090).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
+  let obj6 = { interpolate: scrollOffsetY(5095).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE };
   N.__closure = obj6;
   N.__workletHash = 2637023147700;
   N.__initData = __initData3;
   const animatedStyle2 = obj5.useAnimatedStyle(N);
-  let obj7 = scrollOffsetY(5591);
+  let obj7 = scrollOffsetY(5596);
   let str = obj7.useToken(section(575).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
-  const tmp9 = section(8707);
+  const tmp9 = section(8715);
   if (typeof memo !== "number") {
     let uri;
     if (memo != null) {
@@ -168,7 +168,7 @@ export function AppLauncherCommandViewHeader(section) {
   const tmp9Result = tmp9(tmp10, str);
   if (null != memo) {
     const obj8 = { style: tmp.appIcon, source: memo };
-    tmp15 = closure_6(tmp8(5712), obj8);
+    tmp15 = closure_6(tmp8(5717), obj8);
     tmp16 = closure_6;
   } else {
     const obj9 = { style: items1 };
@@ -188,18 +188,18 @@ export function AppLauncherCommandViewHeader(section) {
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(5090).View, obj11), tmp16(section(12283), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(5095).View, obj11), tmp16(section(12321), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
-  const Text = tmp3(5619).Text;
+  const Text = tmp3(5624).Text;
   if (command != null) {
     displayName = command.displayName;
   }
   items4[2] = tmp16(Text, obj12);
   const obj13 = { style: tmp.overflowMenuContainer, children: tmp16(tmp8Result, { commandId: id }) };
   id = undefined;
-  tmp8Result = section(12308);
+  tmp8Result = section(12346);
   if (command != null) {
     const rootCommand = command.rootCommand;
     if (rootCommand != null) {
@@ -209,6 +209,6 @@ export function AppLauncherCommandViewHeader(section) {
   items4[3] = tmp16(View, obj13);
   const obj14 = { style: items6, children: tmp15 };
   items6 = [tmp.appIconMask, animatedStyle1];
-  items4[4] = tmp16(section(5090).View, obj14);
+  items4[4] = tmp16(section(5095).View, obj14);
   return tmp18(View, obj10);
 }

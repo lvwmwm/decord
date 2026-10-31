@@ -1,12 +1,12 @@
-// Module ID: 1980
-// Function ID: 1981
+// Module ID: 1979
+// Function ID: 1980
 // Name: AvatarDecorationUtils
-// Dependencies: [1981, 12, 2]
+// Dependencies: [1980, 12, 2]
 // Exports: hasGlobalDefaultAvatarDecoration, isAvatarDecorationExpired, isEqualAvatarDecoration, parseAvatarDecorationData
 
-// Module 1980 (AvatarDecorationUtils)
+// Module 1979 (AvatarDecorationUtils)
 import _mod12 from "module_12" /* 12 */;
-import mappers from "mappers" /* 1981 */;
+import mappers from "mappers" /* 1980 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");

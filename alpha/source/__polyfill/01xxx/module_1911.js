@@ -4,28 +4,27 @@
 
 // Module 1911
 const obj = {
-  locale: "da",
+  locale: "de",
   pluralRuleFunction(arg0, arg1) {
-    let str3;
+    let str2 = "other";
     const str = String(arg0);
-    const parts = str.split(".");
-    const first = parts[0];
-    const tmp4 = arg1;
-    if (tmp4) {
-      str3 = "other";
-    } else {
-      str3 = "one";
-      if (1 != arg0) {
-        if (!tmp3) {
+    const tmp = str.split(".")[1];
+    if (!arg1) {
+      let str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!tmp) {
           str3 = "one";
-          if (0 != first) {
-            str3 = "one";
-          }
         }
       }
+      str2 = str3;
     }
-    return str3;
+    return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "da-GL", parentLocale: "da" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-AT", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-BE", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-CH", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LI", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LU", parentLocale: "de" });

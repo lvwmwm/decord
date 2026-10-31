@@ -1,17 +1,17 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16819
+// Function ID: 16820
 // Name: FamilyCenterModalDecline
-// Dependencies: [19, 17, 21, 5009, 575, 8362, 6738, 5706, 1114, 13309, 38, 7964, 7965, 16773, 8351, 5619, 2537, 16741, 13158, 6761, 5629, 6992, 11447, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 8370, 6744, 5711, 1113, 13344, 38, 7972, 7973, 16815, 8359, 5624, 2538, 16783, 13193, 6767, 5634, 6998, 11481, 2]
 // Exports: default
 
-// Module 16777 (FamilyCenterModalDecline)
+// Module 16819 (FamilyCenterModalDecline)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -36,7 +36,7 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   otherUser = otherUser.otherUser;
   let declineLinkRequest;
   const tmp = closure_7();
-  const tmp2 = declineLinkRequest(8362)();
+  const tmp2 = declineLinkRequest(8370)();
   const callback = react.useCallback(() => {
     const arr = declineLinkRequest(dependencyMap[6]);
     arr.pop();
@@ -47,7 +47,7 @@ function FamilyCenterModalDeclineScreen(otherUser) {
     const intl = otherUser(dependencyMap[8]).intl;
     presentFailedToast(intl.string(otherUser(dependencyMap[8]).t.R0RpRX));
   }, []);
-  const obj = otherUser(13309);
+  const obj = otherUser(13344);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   const isDeclineLoading = familyCenterActions.isDeclineLoading;
@@ -57,41 +57,41 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   }, items);
   declineLinkRequest(38)(!tmp2, "FamilyCenterDeclineLinkModal should only be rendered for teens.");
   const obj2 = { children: items4 };
-  const ModalScreen = otherUser(7964).ModalScreen;
+  const ModalScreen = otherUser(7972).ModalScreen;
   const obj3 = { children: items2 };
   const obj4 = { style: tmp.header, children: items1 };
-  const ModalContent = otherUser(7965).ModalContent;
-  const obj5 = { otherUser, iconSrc: declineLinkRequest(8351) };
-  const tmp8 = declineLinkRequest(16773);
+  const ModalContent = otherUser(7973).ModalContent;
+  const obj5 = { otherUser, iconSrc: declineLinkRequest(8359) };
+  const tmp8 = declineLinkRequest(16815);
   items1 = [closure_5(tmp8, obj5), , ];
-  const obj6 = { style: tmp.headerText, variant: "text-lg/bold", children: intl.string(declineLinkRequest(2537).teIRCR) };
-  const Text = otherUser(5619).Text;
-  intl = otherUser(1114).intl;
+  const obj6 = { style: tmp.headerText, variant: "text-lg/bold", children: intl.string(declineLinkRequest(2538).teIRCR) };
+  const Text = otherUser(5624).Text;
+  intl = otherUser(1113).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(declineLinkRequest(16741), { user: otherUser });
+  items1[2] = closure_5(declineLinkRequest(16783), { user: otherUser });
   items2 = [closure_6(View, obj4), ];
   const obj7 = { style: tmp.body, children: items3 };
-  const obj8 = { style: tmp.noticeHeader, variant: "eyebrow", color: "mobile-text-heading-primary", children: intl2.string(declineLinkRequest(2537).cXgKMD) };
-  const Text2 = otherUser(5619).Text;
-  intl2 = otherUser(1114).intl;
+  const obj8 = { style: tmp.noticeHeader, variant: "eyebrow", color: "mobile-text-heading-primary", children: intl2.string(declineLinkRequest(2538).cXgKMD) };
+  const Text2 = otherUser(5624).Text;
+  intl2 = otherUser(1113).intl;
   items3 = [closure_5(Text2, obj8), ];
-  const obj9 = { variant: "text-sm/normal", color: "text-default", children: intl3.string(declineLinkRequest(2537).LcM8BS) };
-  const Text3 = otherUser(5619).Text;
-  intl3 = otherUser(1114).intl;
+  const obj9 = { variant: "text-sm/normal", color: "text-default", children: intl3.string(declineLinkRequest(2538).LcM8BS) };
+  const Text3 = otherUser(5624).Text;
+  intl3 = otherUser(1113).intl;
   items3[1] = closure_5(Text3, obj9);
   items2[1] = closure_6(View, obj7);
   items4 = [closure_6(ModalContent, obj3), ];
   const obj10 = { children: closure_6(ButtonGroup, obj11) };
-  const ModalFooter = otherUser(13158).ModalFooter;
+  const ModalFooter = otherUser(13193).ModalFooter;
   obj11 = { children: items5 };
-  ButtonGroup = otherUser(6761).ButtonGroup;
-  const obj12 = { variant: "destructive", disabled: isDeclineLoading, loading: isDeclineLoading, text: intl4.string(declineLinkRequest(2537).dKxFcn), onPress: callback2 };
-  const Button = otherUser(5629).Button;
-  intl4 = otherUser(1114).intl;
+  ButtonGroup = otherUser(6767).ButtonGroup;
+  const obj12 = { variant: "destructive", disabled: isDeclineLoading, loading: isDeclineLoading, text: intl4.string(declineLinkRequest(2538).dKxFcn), onPress: callback2 };
+  const Button = otherUser(5634).Button;
+  intl4 = otherUser(1113).intl;
   items5 = [closure_5(Button, obj12), ];
-  const obj13 = { variant: "tertiary", text: intl5.string(otherUser(1114).t["ETE/oC"]), onPress: declineLinkRequest(6738).pop };
-  const Button2 = otherUser(5629).Button;
-  intl5 = otherUser(1114).intl;
+  const obj13 = { variant: "tertiary", text: intl5.string(otherUser(1113).t["ETE/oC"]), onPress: declineLinkRequest(6744).pop };
+  const Button2 = otherUser(5634).Button;
+  intl5 = otherUser(1113).intl;
   items5[1] = closure_5(Button2, obj13);
   items4[1] = closure_5(ModalFooter, obj10);
   return closure_6(ModalScreen, obj2);
@@ -131,8 +131,8 @@ export default function FamilyCenterModalDecline(otherUser) {
     obj3 = NavigatorHeader;
     return obj;
   }, items);
-  let obj = { initialRouteName: "DECLINE", screens: memo, headerBackTitle: intl.string(otherUser(1114).t["13/7kX"]) };
-  const Modal = otherUser(11447).Modal;
-  intl = otherUser(1114).intl;
+  let obj = { initialRouteName: "DECLINE", screens: memo, headerBackTitle: intl.string(otherUser(1113).t["13/7kX"]) };
+  const Modal = otherUser(11481).Modal;
+  intl = otherUser(1113).intl;
   return closure_5(Modal, obj);
 };

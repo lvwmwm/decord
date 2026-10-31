@@ -1,12 +1,12 @@
-// Module ID: 10025
-// Function ID: 10026
+// Module ID: 10046
+// Function ID: 10047
 // Name: MobileStickerPickerUpsellRestyleExperiment
-// Dependencies: [1448, 5068, 2]
+// Dependencies: [1447, 5073, 2]
 // Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature, useMobileStickerPickerUpsellRestyleEnabled
 
-// Module 10025 (MobileStickerPickerUpsellRestyleExperiment)
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5068 */;
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 10046 (MobileStickerPickerUpsellRestyleExperiment)
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-mobile-sticker-picker-upsell-restyle", kind: "user", defaultConfig: false, variations: { 0: false, 1: true } });

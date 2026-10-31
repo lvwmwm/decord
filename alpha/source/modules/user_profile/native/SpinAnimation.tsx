@@ -1,13 +1,13 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16542
+// Function ID: 16543
 // Name: SpinAnimation
-// Dependencies: [19, 21, 5090, 5249, 2]
+// Dependencies: [19, 21, 5095, 5254, 2]
 // Exports: default
 
-// Module 16500 (SpinAnimation)
+// Module 16542 (SpinAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,9 +20,9 @@ let result = size.fileFinishedImporting("modules/user_profile/native/SpinAnimati
 export default function SpinAnimation(shouldAnimate) {
   shouldAnimate = shouldAnimate.shouldAnimate;
   const children = shouldAnimate.children;
-  let obj = shouldAnimate(5090);
+  let obj = shouldAnimate(5095);
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = shouldAnimate(5090);
+  let obj2 = shouldAnimate(5095);
   let fn = function l() {
     let items;
     const obj = { transform: items };
@@ -59,5 +59,5 @@ export default function SpinAnimation(shouldAnimate) {
     }
     return fn;
   }, items);
-  return jsx(sharedValue(5090).View, { style, children });
+  return jsx(sharedValue(5095).View, { style, children });
 };

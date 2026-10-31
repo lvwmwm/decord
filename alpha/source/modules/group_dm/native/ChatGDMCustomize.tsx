@@ -1,18 +1,18 @@
-// Module ID: 10125
-// Function ID: 10126
+// Module ID: 10145
+// Function ID: 10146
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 4858, 1072, 21, 5009, 575, 5602, 504, 5647, 5607, 1410, 10126, 7479, 1114, 5707, 10127, 6974, 5619, 7076, 5629, 10129, 2]
+// Dependencies: [5, 32, 19, 17, 4863, 1072, 21, 5014, 575, 5607, 504, 5652, 5612, 1409, 10146, 7485, 1113, 5712, 10147, 6980, 5624, 7082, 5634, 10149, 2]
 
-// Module 10125 (ChatGDMCustomize)
+// Module 10145 (ChatGDMCustomize)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, maxLength;
@@ -195,7 +195,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -301,7 +301,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
           c3 = 0;
           closure_129_10(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const tmp31 = closure_129_4;
         if (tmp31) {

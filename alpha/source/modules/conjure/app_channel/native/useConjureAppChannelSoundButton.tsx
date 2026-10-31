@@ -1,19 +1,19 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14538
+// Function ID: 14539
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6840, 6841, 7413, 5670, 12057, 504, 14501, 11911, 8665, 1114, 3865, 5707, 10903, 2]
+// Dependencies: [19, 6846, 6847, 7419, 5675, 12095, 504, 14539, 11949, 8673, 1113, 3868, 5712, 10928, 2]
 // Exports: default
 
-// Module 14500 (useConjureAppChannelSoundButton)
-import intl2 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10903 */;
-import VoiceXIcon from "VoiceXIcon" /* 11911 */;
+// Module 14538 (useConjureAppChannelSoundButton)
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10928 */;
+import VoiceXIcon from "VoiceXIcon" /* 11949 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6840 */;
+import FramesStore from "FramesStore" /* 6846 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function useConjureAppChannelSoundButton(application_id, arg1) {
           onPress() {
                   let intl;
                   if (stateFromStores) {
-                    const obj = { text: intl.string(_modDef3865.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
+                    const obj = { text: intl.string(_modDef3868.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
                     const open = ToastActionCreatorsDefault.open;
                     ToastActionCreatorsDefault;
                     intl = intl2.intl;

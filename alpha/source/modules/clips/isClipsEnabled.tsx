@@ -1,13 +1,13 @@
-// Module ID: 15171
-// Function ID: 15172
+// Module ID: 15210
+// Function ID: 15211
 // Name: isClipsEnabled
-// Dependencies: [2013, 15172, 504, 2]
+// Dependencies: [2012, 15211, 504, 2]
 // Exports: isClipsEnabled, useIsClipsEnabled
 
-// Module 15171 (isClipsEnabled)
+// Module 15210 (isClipsEnabled)
 import get_initialized from "get initialized" /* 504 */;
-import ClipsExperiment from "ClipsExperiment" /* 15172 */;
-import ClipsStore from "ClipsStore" /* 2013 */;
+import ClipsExperiment from "ClipsExperiment" /* 15211 */;
+import ClipsStore from "ClipsStore" /* 2012 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/clips/isClipsEnabled.tsx");

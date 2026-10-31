@@ -1,16 +1,19 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10873
+// Function ID: 10874
 // Name: ConjureAnalytics
-// Dependencies: [6838, 1072, 7413, 5755, 1376, 2]
-// Exports: trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureTurnResulted
+// Dependencies: [6844, 1072, 7419, 5760, 1375, 1252, 2]
+// Exports: trackConjureBuilderOpened, trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureTurnResulted
 
-// Module 10853 (ConjureAnalytics)
+// Module 10873 (ConjureAnalytics)
 import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import ConjureUtils from "ConjureUtils" /* 7413 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6844 */;
+import ConjureUtils from "ConjureUtils" /* 7419 */;
 import size from "module_2" /* 2 */;
+
+const ConjureProjectStore = ConjureProjectStore2;
 
 function projectFields(projectId) {
   let application_id;
@@ -93,6 +96,7 @@ function conjureLocation(projectId, isPreview) {
   }
   return obj;
 }
+const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/conjure/shared/ConjureAnalytics.tsx");
 
@@ -299,4 +303,41 @@ export function trackConjureRatingFeedbackSubmitted(projectId, substr) {
   const obj3 = { feedback_text: substr };
   const merged2 = Object.assign(obj);
   trackWithMetadata(CONJURE_RATING_FEEDBACK_SUBMITTED, obj3);
+}
+export function trackConjureBuilderOpened(project_id, entry_point) {
+  let install_scope;
+  let str;
+  let tmp4;
+  const project = ConjureProjectStore.getProject(project_id);
+  const obj = { project_id, entry_point, is_owner: tmp4, install_scope, client_platform: str };
+  tmp4 = null;
+  const track = AnalyticsUtilsDefault.track;
+  const CONJURE_BUILDER_OPENED = AnalyticEvents.CONJURE_BUILDER_OPENED;
+  AnalyticsUtilsDefault;
+  if (null != project) {
+    tmp4 = isProjectOwner(project);
+  }
+  install_scope = undefined;
+  if (project != null) {
+    install_scope = project.install_scope;
+  }
+  if (install_scope == null) {
+    install_scope = null;
+  }
+  str = "android";
+  const obj2 = PlatformUtils;
+  if (!obj2.isAndroid()) {
+    let str2 = "ios";
+    const tmp7Result = PlatformUtils;
+    if (!tmp7Result.isIOS()) {
+      let str3 = "web";
+      const tmp7Result2 = PlatformUtils;
+      if (tmp7Result2.isDesktop()) {
+        str3 = "desktop";
+      }
+      str2 = str3;
+    }
+    str = str2;
+  }
+  track(CONJURE_BUILDER_OPENED, obj);
 }

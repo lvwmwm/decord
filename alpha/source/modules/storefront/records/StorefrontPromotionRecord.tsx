@@ -1,13 +1,13 @@
-// Module ID: 9461
-// Function ID: 9462
+// Module ID: 9483
+// Function ID: 9484
 // Name: StorefrontPromotionRecord
-// Dependencies: [32, 1399, 9462, 2]
-// Exports: getCollectiblesCollectAndClaim, getCollectiblesTargetedOffer
+// Dependencies: [32, 1398, 9484, 2]
+// Exports: getCollectiblesCollectAndClaim, getCollectiblesCollectionSale, getCollectiblesTargetedOffer
 
-// Module 9461 (StorefrontPromotionRecord)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9462 */;
+// Module 9483 (StorefrontPromotionRecord)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9484 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Record from "Record" /* 1399 */;
+import Record from "Record" /* 1398 */;
 import size from "module_2" /* 2 */;
 
 let display_name;
@@ -134,16 +134,16 @@ class StorefrontPromotionRecord extends Record {
     let target;
     let text;
     let text2;
-    let tmp18;
     let tmp19;
-    let tmp26;
+    let tmp20;
     let tmp27;
+    let tmp28;
     let tmp29;
     let tmp30;
     let tmp31;
     let tmp6;
     let type;
-    const f94570 = (heroUrl) => ({ heroUrl: heroUrl.hero_url });
+    const f94823 = (heroUrl) => ({ heroUrl: heroUrl.hero_url });
     ({ id, application_id, name } = display_name);
     if (name == null) {
       name = null;
@@ -215,19 +215,19 @@ class StorefrontPromotionRecord extends Record {
       const tenant_metadata = display_name.tenant_metadata;
       _Date1 = undefined;
       if (null != tenant_metadata.collectibles) {
-        let tmp28;
+        let tmp23;
         collectibles = tenant_metadata.collectibles;
         type = collectibles.type;
-        tmp18 = require;
-        tmp19 = dependencyMap;
+        tmp19 = require;
+        tmp20 = dependencyMap;
         if (StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM === type) {
           type = collectibles.subtype;
-          if (tmp18(9462).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER === type) {
-            target = { type: tmp18(9462).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp18(9462).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER, collectionId: collectibles.collection_id, shopHome: obj6, indexPage: obj12, shared: collectibles };
+          if (tmp19(9484).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER === type) {
+            target = { type: tmp19(9484).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp19(9484).StorefrontPromotionCollectAndClaimSubtype.TAKEOVER, collectionId: collectibles.collection_id, shopHome: obj6, indexPage: obj12, shared: collectibles };
             const reward_states = collectibles.shop_home.reward_states;
             obj6 = { title: collectibles.shop_home.title, description: collectibles.shop_home.description, rewardStates: obj7, style: tmp31 };
             obj7 = { inProgress: obj8, earned: obj9, consumed: obj10 };
-            obj8 = { progressSteps: progress_steps.map(f94570) };
+            obj8 = { progressSteps: progress_steps.map(f94823) };
             progress_steps = reward_states.in_progress.progress_steps;
             tmp31 = undefined;
             obj10 = { heroUrl: reward_states.consumed.hero_url };
@@ -237,25 +237,25 @@ class StorefrontPromotionRecord extends Record {
               const obj11 = { contentTheme: collectibles.shop_home.style.content_theme };
             }
             const reward_states2 = collectibles.index_page.reward_states;
-            obj12 = { description: collectibles.index_page.description, rewardStates: obj13, style: tmp18 };
+            obj12 = { description: collectibles.index_page.description, rewardStates: obj13, style: tmp19 };
             obj13 = { inProgress: obj14, earned: obj15, consumed: type };
-            obj14 = { progressSteps: progress_steps1.map(f94570) };
+            obj14 = { progressSteps: progress_steps1.map(f94823) };
             progress_steps1 = reward_states2.in_progress.progress_steps;
             type = { heroUrl: hero_url };
             hero_url = reward_states2.consumed.hero_url;
-            tmp18 = undefined;
+            tmp19 = undefined;
             obj15 = { heroUrl: reward_states2.earned.hero_url };
             if (null != collectibles.index_page.style) {
               type = { contentTheme: collectibles.index_page.style.content_theme };
-              tmp18 = type;
+              tmp19 = type;
             }
-            tmp19 = parseCollectiblesShared;
+            tmp20 = parseCollectiblesShared;
             collectibles = parseCollectiblesShared(collectibles.shared);
-            tmp28 = target;
+            tmp23 = target;
           } else {
-            target = tmp18(9462).StorefrontPromotionCollectAndClaimSubtype.BASIC;
+            target = tmp19(9484).StorefrontPromotionCollectAndClaimSubtype.BASIC;
             if (target === type) {
-              target = { type: tmp18(9462).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp18(9462).StorefrontPromotionCollectAndClaimSubtype.BASIC, collectionId: collectibles.collection_id, shopHome: obj16, indexPage: obj18, shared: type };
+              target = { type: tmp19(9484).StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM, subtype: tmp19(9484).StorefrontPromotionCollectAndClaimSubtype.BASIC, collectionId: collectibles.collection_id, shopHome: obj16, indexPage: obj18, shared: type };
               obj16 = { title: collectibles.shop_home.title, description: collectibles.shop_home.description, style: tmp29 };
               tmp29 = undefined;
               if (null != collectibles.shop_home.style) {
@@ -270,89 +270,104 @@ class StorefrontPromotionRecord extends Record {
               }
               hero_url = parseCollectiblesShared;
               type = parseCollectiblesShared(collectibles.shared);
-              tmp28 = target;
+              tmp23 = target;
             }
+          }
+        } else if (tmp19(9484).StorefrontPromotionCollectiblesType.TARGETED_OFFER === type) {
+          const reward = collectibles.reward;
+          let nagbar;
+          if (reward != null) {
+            const storefront = reward.storefront;
+            if (storefront != null) {
+              nagbar = storefront.nagbar;
+            }
+          }
+          offer_notice = undefined;
+          if (reward != null) {
+            const checkout = reward.checkout;
+            if (checkout != null) {
+              offer_notice = checkout.offer_notice;
+            }
+          }
+          let override_title;
+          if (reward != null) {
+            obj17 = reward.collected;
+            if (obj17 != null) {
+              override_title = obj17.override_title;
+            }
+          }
+          progress_steps1 = undefined;
+          if (null != override_title) {
+            obj17 = "";
+            if ("" !== override_title) {
+              progress_steps1 = override_title;
+            }
+          }
+          hero_url = undefined;
+          if (reward != null) {
+            hero_url = reward.flavor;
+          }
+          if (null == nagbar) {
+            if (null == offer_notice) {
+              if (null == progress_steps1) {
+                if (null == hero_url) {
+                  type = { type: tmp19(9484).StorefrontPromotionCollectiblesType.TARGETED_OFFER };
+                  target = type;
+                }
+                tmp23 = target;
+              }
+            }
+          }
+          target = { type: tmp19(9484).StorefrontPromotionCollectiblesType.TARGETED_OFFER, reward: type };
+          let tmp26;
+          if (null != nagbar) {
+            const header_text = nagbar.header_text;
+            obj19 = { headerText: header_text, cta: tmp27, helpCenterId: help_center_id, icon: text2 };
+            tmp27 = undefined;
+            if (null != nagbar.cta) {
+              text = nagbar.cta.text;
+              obj20 = { text };
+              tmp27 = obj20;
+            }
+            help_center_id = nagbar.help_center_id;
+            text2 = nagbar.icon;
+            tmp26 = { nagbar: obj19 };
+            const obj21 = { nagbar: obj19 };
+          }
+          type = { storefront: tmp26, checkout: tmp28, collected: obj17, flavor: hero_url };
+          tmp28 = undefined;
+          if (null != offer_notice) {
+            const icon = offer_notice.icon;
+            obj19 = { icon, text: text2 };
+            text2 = offer_notice.text;
+            offer_notice = { offerNotice: obj19 };
+            tmp28 = offer_notice;
+          }
+          obj17 = undefined;
+          if (null != progress_steps1) {
+            offer_notice = { overrideTitle: progress_steps1 };
+            obj17 = offer_notice;
           }
         } else {
-          target = tmp18(9462).StorefrontPromotionCollectiblesType.TARGETED_OFFER;
+          target = tmp19(9484).StorefrontPromotionCollectiblesType.COLLECTION_SALE;
           if (target === type) {
-            const reward = collectibles.reward;
-            let nagbar;
-            if (reward != null) {
-              const storefront = reward.storefront;
-              if (storefront != null) {
-                nagbar = storefront.nagbar;
-              }
+            offer_notice = collectibles.navigation;
+            target = { type: tmp19(9484).StorefrontPromotionCollectiblesType.COLLECTION_SALE, collectionId: collectibles.collection_id, navigation: type };
+            let tab;
+            if (offer_notice != null) {
+              tab = offer_notice.tab;
             }
-            offer_notice = undefined;
-            if (reward != null) {
-              const checkout = reward.checkout;
-              if (checkout != null) {
-                offer_notice = checkout.offer_notice;
-              }
+            type = undefined;
+            if (null != tab) {
+              hero_url = { tab: obj17 };
+              obj17 = { title: offer_notice.tab.title, icon: offer_notice };
+              offer_notice = offer_notice.tab.icon;
+              type = hero_url;
             }
-            let override_title;
-            if (reward != null) {
-              obj17 = reward.collected;
-              if (obj17 != null) {
-                override_title = obj17.override_title;
-              }
-            }
-            progress_steps1 = undefined;
-            if (null != override_title) {
-              obj17 = "";
-              if ("" !== override_title) {
-                progress_steps1 = override_title;
-              }
-            }
-            hero_url = undefined;
-            if (reward != null) {
-              hero_url = reward.flavor;
-            }
-            if (null == nagbar) {
-              if (null == offer_notice) {
-                if (null == progress_steps1) {
-                  if (null == hero_url) {
-                    type = { type: tmp18(9462).StorefrontPromotionCollectiblesType.TARGETED_OFFER };
-                    target = type;
-                  }
-                  tmp28 = target;
-                }
-              }
-            }
-            target = { type: tmp18(9462).StorefrontPromotionCollectiblesType.TARGETED_OFFER, reward: type };
-            let tmp25;
-            if (null != nagbar) {
-              const header_text = nagbar.header_text;
-              obj19 = { headerText: header_text, cta: tmp26, helpCenterId: help_center_id, icon: text2 };
-              tmp26 = undefined;
-              if (null != nagbar.cta) {
-                text = nagbar.cta.text;
-                obj20 = { text };
-                tmp26 = obj20;
-              }
-              help_center_id = nagbar.help_center_id;
-              text2 = nagbar.icon;
-              tmp25 = { nagbar: obj19 };
-              const obj21 = { nagbar: obj19 };
-            }
-            type = { storefront: tmp25, checkout: tmp27, collected: obj17, flavor: hero_url };
-            tmp27 = undefined;
-            if (null != offer_notice) {
-              const icon = offer_notice.icon;
-              obj19 = { icon, text: text2 };
-              text2 = offer_notice.text;
-              offer_notice = { offerNotice: obj19 };
-              tmp27 = offer_notice;
-            }
-            obj17 = undefined;
-            if (null != progress_steps1) {
-              offer_notice = { overrideTitle: progress_steps1 };
-              obj17 = offer_notice;
-            }
+            tmp23 = target;
           }
         }
-        _Date1 = tmp28;
+        _Date1 = tmp23;
       }
       tmp17 = { collectibles: _Date1 };
       const obj22 = { collectibles: _Date1 };
@@ -360,7 +375,7 @@ class StorefrontPromotionRecord extends Record {
     if (typeof StorefrontPromotionRecord === "function") {
       const self7 = this;
       const self8 = this;
-      const tmp33 = new StorefrontPromotionRecord(tmp10, text, obj20, text2, obj19, progress_steps1, offer_notice, obj17, hero_url, type, tmp18, tmp19, collectibles, target, _Date1, StorefrontPromotionRecord, this, id, application_id, name);
+      const tmp33 = new StorefrontPromotionRecord(tmp10, text, obj20, text2, obj19, progress_steps1, offer_notice, obj17, hero_url, type, tmp19, tmp20, collectibles, target, _Date1, StorefrontPromotionRecord, this, id, application_id, name);
       tmp33.id = id;
       tmp33.applicationId = application_id;
       tmp33.name = name;
@@ -417,6 +432,24 @@ export function getCollectiblesCollectAndClaim(tenantMetadata) {
   }
   let tmp3;
   if (type === StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECT_AND_CLAIM) {
+    tmp3 = collectibles;
+  }
+  return tmp3;
+}
+export function getCollectiblesCollectionSale(tenantMetadata) {
+  let collectibles;
+  if (tenantMetadata != null) {
+    tenantMetadata = tenantMetadata.tenantMetadata;
+    if (tenantMetadata != null) {
+      collectibles = tenantMetadata.collectibles;
+    }
+  }
+  let type;
+  if (collectibles != null) {
+    type = collectibles.type;
+  }
+  let tmp3;
+  if (type === StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.COLLECTION_SALE) {
     tmp3 = collectibles;
   }
   return tmp3;

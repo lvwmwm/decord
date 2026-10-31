@@ -1,15 +1,15 @@
-// Module ID: 18650
-// Function ID: 18651
+// Module ID: 18692
+// Function ID: 18693
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 5009, 575, 18651, 5619, 1114, 4120, 18652, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 18693, 5624, 1113, 4123, 18694, 2]
 
-// Module 18650 (SuggestedSearchList)
+// Module 18692 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18652 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18694 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

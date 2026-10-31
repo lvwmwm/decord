@@ -1,17 +1,17 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 14874
+// Function ID: 14875
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 5009, 575, 14837, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 14875, 5624, 2]
 // Exports: default
 
-// Module 14836 (UserProfileActivityTimebar)
+// Module 14874 (UserProfileActivityTimebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useActivityTimer from "useActivityTimer" /* 14837 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useActivityTimer from "useActivityTimer" /* 14875 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const useActivityTimerDefault = useActivityTimer;

@@ -1,19 +1,19 @@
-// Module ID: 13727
-// Function ID: 13728
+// Module ID: 13762
+// Function ID: 13763
 // Name: ForumPostTimestamp
-// Dependencies: [19, 13713, 21, 5009, 9817, 5619, 2]
+// Dependencies: [19, 13748, 21, 5014, 9838, 5624, 2]
 // Exports: default
 
-// Module 13727 (ForumPostTimestamp)
+// Module 13762 (ForumPostTimestamp)
 import Fragment from "Fragment" /* 21 */;
-import ForumHooks from "ForumHooks" /* 9817 */;
-import ForumChannelStore from "ForumChannelStore" /* 13713 */;
+import ForumHooks from "ForumHooks" /* 9838 */;
+import ForumChannelStore from "ForumChannelStore" /* 13748 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const Text_Text = tmp2(5619);
+const Text_Text = tmp2(5624);
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { lineHeight: 18, height: 18 } });

@@ -1,20 +1,20 @@
-// Module ID: 7261
-// Function ID: 7262
+// Module ID: 7267
+// Function ID: 7268
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 4921, 4880, 7262, 7263, 1072, 4927, 1253, 5755, 572, 1283, 1397, 2]
+// Dependencies: [5, 502, 4926, 4885, 7268, 7269, 1072, 4932, 1252, 5760, 572, 1282, 1396, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 7261 (GuildOnboardingPromptsActionCreators)
+// Module 7267 (GuildOnboardingPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4927 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7263 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7269 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7262 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

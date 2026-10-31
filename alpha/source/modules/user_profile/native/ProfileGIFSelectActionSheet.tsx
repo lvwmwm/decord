@@ -1,22 +1,22 @@
-// Module ID: 16403
-// Function ID: 16404
+// Module ID: 16445
+// Function ID: 16446
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5009, 575, 7148, 16393, 8732, 8730, 8727, 8729, 7154, 5253, 5267, 7315, 1114, 9506, 10222, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5014, 575, 7154, 16435, 8740, 8738, 8735, 8737, 7160, 5258, 5272, 7321, 1113, 9528, 10242, 2]
 // Exports: default
 
-// Module 16403 (ProfileGIFSelectActionSheet)
+// Module 16445 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7315 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9506 */;
-import GIFPickerDefault from "GIFPicker" /* 10222 */;
+import intl2 from "intl" /* 1113 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9528 */;
+import GIFPickerDefault from "GIFPicker" /* 10242 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, c4, c5;
@@ -52,7 +52,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             const obj10 = src(closure_2[14]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp53) {
           c5 = 3;

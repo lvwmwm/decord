@@ -1,16 +1,16 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11339
+// Function ID: 11340
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 5009, 575, 1377, 1114, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1376, 1113, 5624, 2]
 
-// Module 11307 (GuildActionSheetMemberCount)
+// Module 11339 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
+import intl3 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -48,9 +48,9 @@ const memoResult = react.memo(function MemberCount(arg0) {
     const intl2 = intl3.intl;
     const string = intl2.string;
     if ("online" === type) {
-      v3DzP7x = tmp5(1114).t["3DzP7x"];
+      v3DzP7x = tmp5(1113).t["3DzP7x"];
     } else {
-      v3DzP7x = tmp5(1114).t["5SWsJX"];
+      v3DzP7x = tmp5(1113).t["5SWsJX"];
     }
     stringResult = string(v3DzP7x);
     tmp4 = tmp5;
@@ -59,9 +59,9 @@ const memoResult = react.memo(function MemberCount(arg0) {
     const intl = intl3.intl;
     const format = intl.format;
     if ("online" === type) {
-      etqpUG = tmp(1114).t.PIikks;
+      etqpUG = tmp(1113).t.PIikks;
     } else {
-      etqpUG = tmp(1114).t.etqpUG;
+      etqpUG = tmp(1113).t.etqpUG;
     }
     const obj = { count };
     stringResult = format(etqpUG, obj);
@@ -80,7 +80,7 @@ const memoResult = react.memo(function MemberCount(arg0) {
   const obj4 = { style: items, children: _false(View, { style: items1 }) };
   items1 = [tmp8.dot, "online" === type ? tmp8.onlineDot : tmp8.offlineDot];
   items2 = [_false(View, obj4), ];
-  const Text = tmp4(5619).Text;
+  const Text = tmp4(5624).Text;
   if (textVariant == null) {
     textVariant = "text-sm/normal";
   }

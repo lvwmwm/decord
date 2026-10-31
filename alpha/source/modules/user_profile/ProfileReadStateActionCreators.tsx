@@ -1,16 +1,16 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 14996
+// Function ID: 14997
 // Name: ProfileReadStateActionCreators
-// Dependencies: [5, 1384, 7777, 3, 14938, 1283, 14960, 572, 7776, 2]
+// Dependencies: [5, 1383, 7784, 3, 14976, 1282, 14997, 572, 7783, 2]
 // Exports: ackProfileWishlist
 
-// Module 14959 (ProfileReadStateActionCreators)
+// Module 14996 (ProfileReadStateActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7777 */;
-import ProfileReadStateEndpoints2 from "ProfileReadStateEndpoints" /* 14960 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7784 */;
+import ProfileReadStateEndpoints2 from "ProfileReadStateEndpoints" /* 14997 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let ackedAt, closure_2, closure_3;
@@ -49,7 +49,7 @@ let obj = function _ackProfileWishlist() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -107,7 +107,7 @@ let obj = function _ackProfileWishlist() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp19) {
           currentUser = tmp19;
           if (0 === c5) {

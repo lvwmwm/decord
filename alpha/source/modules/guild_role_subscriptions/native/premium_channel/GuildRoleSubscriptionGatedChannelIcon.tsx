@@ -1,13 +1,13 @@
-// Module ID: 18120
-// Function ID: 18121
+// Module ID: 18163
+// Function ID: 18164
 // Name: GuildRoleSubscriptionGatedChannelIcon
-// Dependencies: [19, 21, 1188, 9956, 2]
+// Dependencies: [19, 21, 1187, 9977, 2]
 // Exports: default
 
-// Module 18120 (GuildRoleSubscriptionGatedChannelIcon)
+// Module 18163 (GuildRoleSubscriptionGatedChannelIcon)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9956 */;
+import native from "native" /* 1187 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9977 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

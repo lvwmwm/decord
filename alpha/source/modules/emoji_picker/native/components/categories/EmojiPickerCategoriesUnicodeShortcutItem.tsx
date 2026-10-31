@@ -1,17 +1,17 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10088
+// Function ID: 10089
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1072, 21, 5009, 5090, 10069, 6974, 1114, 10053, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 5095, 10089, 6980, 1113, 10073, 2]
 // Exports: default
 
-// Module 10068 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 10088 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10069 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let NODE_SIZE;
@@ -59,7 +59,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(blockRef) {
           num = metroRequire;
         }
         const diff = end - num;
-        const tmp2Result = tmp2(5090);
+        const tmp2Result = tmp2(5095);
         tmp2Result.runOnJS(closure_5)(result > diff);
       }
     }

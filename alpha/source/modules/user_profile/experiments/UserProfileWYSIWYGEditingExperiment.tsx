@@ -1,11 +1,11 @@
-// Module ID: 11484
-// Function ID: 11485
+// Module ID: 11518
+// Function ID: 11519
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 11484 (UserProfileWYSIWYGEditingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 11518 (UserProfileWYSIWYGEditingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

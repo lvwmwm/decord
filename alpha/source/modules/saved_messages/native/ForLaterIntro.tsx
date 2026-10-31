@@ -1,22 +1,22 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11178
+// Function ID: 11179
 // Name: ForLaterIntro
-// Dependencies: [17, 5268, 21, 5009, 575, 10172, 11160, 11164, 5619, 1114, 5712, 11168, 11142, 5735, 7372, 2]
+// Dependencies: [17, 5273, 21, 5014, 575, 10192, 11179, 11183, 5624, 1113, 5717, 11187, 11161, 5740, 7378, 2]
 // Exports: default
 
-// Module 11159 (ForLaterIntro)
+// Module 11178 (ForLaterIntro)
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1114 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import ClockIcon from "ClockIcon" /* 5735 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10172 */;
-import BookmarkIcon from "BookmarkIcon" /* 11142 */;
-import _modDef11168 from "module_11168" /* 11168 */;
+import intl7 from "intl" /* 1113 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import ClockIcon from "ClockIcon" /* 5740 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10192 */;
+import BookmarkIcon from "BookmarkIcon" /* 11161 */;
+import _modDef11187 from "module_11187" /* 11187 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -35,7 +35,7 @@ let obj9;
 let size;
 let size1;
 let tmp8;
-const ChevronSmallRightIcon2 = tmp8(7372);
+const ChevronSmallRightIcon2 = tmp8(7378);
 function IntroDemo(isReminder) {
   let intl;
   let intl2;
@@ -53,7 +53,7 @@ function IntroDemo(isReminder) {
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   const obj3 = { source: obj4, style: tmp.avatar };
-  obj4 = { uri: _modDef11168 };
+  obj4 = { uri: _modDef11187 };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj3), ];
   const obj5 = { style: tmp.messageLines, children: items1 };
@@ -158,9 +158,9 @@ export default function ForLaterIntro(type) {
   const tmp = closure_7();
   const tmp4 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp4) {
-    BookmarksSpotIllustration = tmp2(11160).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11179).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp2(11164).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11183).BookmarksSpotIllustration;
   }
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };
@@ -169,20 +169,20 @@ export default function ForLaterIntro(type) {
   items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
-  const Heading = tmp2(5619).Heading;
-  const intl = tmp2(1114).intl;
+  const Heading = tmp2(5624).Heading;
+  const intl = tmp2(1113).intl;
   string = intl.string;
-  t = tmp2(1114).t;
+  t = tmp2(1113).t;
   items1 = [hasOwnProperty(Heading, obj5), ];
   const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: format(tmp9, obj7) };
-  const Text = tmp2(5619).Text;
-  const intl2 = tmp2(1114).intl;
+  const Text = tmp2(5624).Text;
+  const intl2 = tmp2(1113).intl;
   format = intl2.format;
-  const t2 = tmp2(1114).t;
+  const t2 = tmp2(1113).t;
   tmp9 = tmp4 ? t2.YI4UjI : t2["5TSj/g"];
-  const intl3 = tmp2(1114).intl;
+  const intl3 = tmp2(1113).intl;
   const string2 = intl3.string;
-  const t3 = tmp2(1114).t;
+  const t3 = tmp2(1113).t;
   obj7 = { itemName: string2(tmp4 ? t3.mJ3P0N : t3.tpxJto) };
   items1[1] = hasOwnProperty(Text, obj6);
   items[1] = metroRequire(React3, obj4);

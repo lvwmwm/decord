@@ -1,18 +1,18 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14969
+// Function ID: 14970
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1072, 21, 5009, 575, 5619, 1114, 8931, 2062, 14932, 14935, 14800, 14936, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 5624, 1113, 8940, 2061, 14970, 14973, 14838, 14974, 2]
 // Exports: default
 
-// Module 14931 (UserProfileActivityTab)
+// Module 14969 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 14936 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 14974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -129,8 +129,8 @@ export default function UserProfileActivityTab(user) {
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(14932)(obj));
-  cardStyle(14932)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(14970)(obj));
+  cardStyle(14970)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -138,7 +138,7 @@ export default function UserProfileActivityTab(user) {
       if (tmp4) {
         tmp10Result = tmp5(UserProfileActivityTabSkeleton, {});
       } else {
-        const tmp7 = user(14935);
+        const tmp7 = user(14973);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {
@@ -152,22 +152,22 @@ export default function UserProfileActivityTab(user) {
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1114).t.J6STd9), children: closure_5(tmp(14800), obj4) };
-    intl = user(1114).intl;
+    const obj3 = { heading: intl.string(user(1113).t.J6STd9), children: closure_5(tmp(14838), obj4) };
+    intl = user(1113).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(Section, obj3);
   }
   const items = [hasCurrentActivity, ];
   if (hasRecentActivity) {
     const obj5 = {
-      heading: intl2.string(user(1114).t.jzgEoL),
+      heading: intl2.string(user(1113).t.jzgEoL),
       introText: tmp15Result,
       children: recent.map((entry) => {
           const obj = { user, entry, style: cardStyle };
           return hasOwnProperty(UserProfileRecentActivityCardDefault, obj, entry.id);
         })
     };
-    intl2 = user(1114).intl;
+    intl2 = user(1113).intl;
     tmp15Result = undefined;
     const tmp16 = Section;
     if (isCurrentUser) {

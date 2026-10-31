@@ -1,17 +1,17 @@
-// Module ID: 15935
-// Function ID: 15936
+// Module ID: 15976
+// Function ID: 15977
 // Name: Collapsible
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5090, 5632, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 5637, 2]
 // Exports: default
 
-// Module 15935 (Collapsible)
+// Module 15976 (Collapsible)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
+import spring from "spring" /* 5637 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

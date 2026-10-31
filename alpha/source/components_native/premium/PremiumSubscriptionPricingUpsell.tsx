@@ -1,25 +1,25 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15420
+// Function ID: 15421
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2063, 1384, 2052, 2053, 7590, 1072, 1386, 21, 5009, 504, 2048, 15244, 7597, 7586, 5619, 1376, 7408, 7407, 1114, 1896, 2]
+// Dependencies: [32, 19, 17, 2062, 1383, 2051, 2052, 7597, 1072, 1385, 21, 5014, 504, 2047, 15283, 7604, 7593, 5624, 1375, 7414, 7413, 1113, 1895, 2]
 // Exports: default
 
-// Module 15381 (PremiumSubscriptionPricingUpsell)
+// Module 15420 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import intl6 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15244 */;
+import intl6 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import UserStore from "UserStore" /* 1384 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2052 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
-import IAPStore from "IAPStore" /* 7590 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import UserStore from "UserStore" /* 1383 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2051 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import IAPStore from "IAPStore" /* 7597 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ function PricingSubheadingCopy() {
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f108087 = () => {
+  const f108368 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -101,8 +101,8 @@ function PricingSubheadingCopy() {
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f108087), 5);
-  str2(obj7.useStateFromStoresArray(items4, f108087), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f108368), 5);
+  str2(obj7.useStateFromStoresArray(items4, f108368), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

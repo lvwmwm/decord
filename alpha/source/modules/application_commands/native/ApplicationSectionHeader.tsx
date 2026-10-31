@@ -1,16 +1,16 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13945
+// Function ID: 13946
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 4921, 21, 5009, 575, 504, 13743, 1114, 5712, 5619, 2]
+// Dependencies: [19, 17, 4926, 21, 5014, 575, 504, 13778, 1113, 5717, 5624, 2]
 // Exports: default
 
-// Module 13910 (ApplicationSectionHeader)
+// Module 13945 (ApplicationSectionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,7 +49,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  const obj2 = section(13743);
+  const obj2 = section(13778);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
@@ -60,16 +60,16 @@ export default function ApplicationSectionHeader(section) {
   } else if (section != null) {
     name = section.name;
   }
-  const obj3 = { style: tmp.applicationHeaderWrapper, accessibilityLabel: intl.formatToPlainString(tmp2(1114).t["Ocw/sM"], { applicationName: name }), children: items1 };
-  intl = tmp2(1114).intl;
+  const obj3 = { style: tmp.applicationHeaderWrapper, accessibilityLabel: intl.formatToPlainString(tmp2(1113).t["Ocw/sM"], { applicationName: name }), children: items1 };
+  intl = tmp2(1113).intl;
   let tmp9 = null != applicationCommandsIconSource;
   const tmp7 = closure_6;
   const tmp8 = View;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(5712), obj4);
+    tmp9 = closure_5(guildId(5717), obj4);
   }
-  items1 = [tmp9, closure_5(tmp2(5619).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  items1 = [tmp9, closure_5(tmp2(5624).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   return tmp7(tmp8, obj3);
 };
 export const APPLICATION_SECTION_HEADER_HEIGHT = 32;

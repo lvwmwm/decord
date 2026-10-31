@@ -1,16 +1,16 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9280
+// Function ID: 9281
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [19, 7878, 1072, 21, 504, 9249, 8922, 9262, 1114, 9246, 2]
+// Dependencies: [19, 7885, 1072, 21, 504, 9268, 8931, 9281, 1113, 9265, 2]
 // Exports: default
 
-// Module 9261 (SecureFramesStreamVerificationBottomSheet)
+// Module 9280 (SecureFramesStreamVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import showShareActionSheet from "showShareActionSheet" /* 8922 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9249 */;
+import showShareActionSheet from "showShareActionSheet" /* 8931 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9268 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7878 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;
@@ -40,13 +40,13 @@ export default function SecureFramesStreamVerificationBottomSheet(channelId) {
     const obj4 = { message };
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
-  streamKey(9262);
-  const intl = channelId(1114).intl;
-  const intl2 = channelId(1114).intl;
-  const intl3 = channelId(1114).intl;
+  streamKey(9281);
+  const intl = channelId(1113).intl;
+  const intl2 = channelId(1113).intl;
+  const intl3 = channelId(1113).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
-  const prop = channelId(1114).t["H3+ktv"];
-  obj4 = channelId(9246);
-  return <tmp3 title={intl.string(channelId(1114).t.QogHld)} subtitle={intl2.string(channelId(1114).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
+  const prop = channelId(1113).t["H3+ktv"];
+  obj4 = channelId(9265);
+  return <tmp3 title={intl.string(channelId(1113).t.QogHld)} subtitle={intl2.string(channelId(1113).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 };

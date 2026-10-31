@@ -1,14 +1,14 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13419
+// Function ID: 13420
 // Name: openCheckpoint
-// Dependencies: [1072, 1253, 6738, 13385, 1995, 2]
+// Dependencies: [1072, 1252, 6744, 13420, 1994, 2]
 // Exports: openCheckpoint
 
-// Module 13384 (openCheckpoint)
+// Module 13419 (openCheckpoint)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -23,5 +23,5 @@ export function openCheckpoint(devtools, arg1) {
   const obj2 = { source: devtools };
   obj.track(AnalyticEvents.CHECKPOINT_STARTED, obj2);
   const obj3 = ModalActionCreatorsDefault;
-  obj3.pushLazy(asyncRequire(13385, dependencyMap.paths), { didPlayerShareDataWithDiscord: flag }, "CHECKPOINT_MODAL");
+  obj3.pushLazy(asyncRequire(13420, dependencyMap.paths), { didPlayerShareDataWithDiscord: flag }, "CHECKPOINT_MODAL");
 }

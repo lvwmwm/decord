@@ -1,10 +1,10 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 17011
+// Function ID: 17012
 // Name: OrbsArcadeTypes
 // Dependencies: [32, 2]
 // Exports: orbsArcadeApplicationGameFromServer, orbsArcadeClaimedRewardFromServer, orbsArcadeGamesFromServer
 
-// Module 16955 (OrbsArcadeTypes)
+// Module 17011 (OrbsArcadeTypes)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function _rewardFromServer(type) {
 function orbsArcadeGameFromServer(id) {
   let rewards;
   let tmp;
-  obj = { id: id.id, versionId: id.version_id, applicationId: id.application_id, name: id.name, instructions: id.instructions, startsAt: id.starts_at, endsAt: id.ends_at, orbCost: id.orb_cost, numFreePlays: id.num_free_plays, windowDurationHours: id.window_duration_hours, asset: id.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
+  obj = { id: id.id, versionId: id.version_id, applicationId: id.application_id, name: id.name, instructions: id.instructions, startsAt: id.starts_at, endsAt: id.ends_at, orbCost: id.orb_cost, numFreePlays: id.num_free_plays, windowDurationHours: id.window_duration_hours, windowEndsAt: id.window_ends_at, enrollmentClosesAt: id.enrollment_closes_at, asset: id.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
   tmp = null;
   if (null != id.hero_video_asset) {
     size = { url: null, altText: null, mimeType: null, width: null, height: null };
@@ -74,7 +74,7 @@ export function orbsArcadeGamesFromServer(body) {
     gameStateByGameId[item10011.game_id] = orbsArcadeGameStateFromServer(item10011);
     continue;
   }
-  const obj2 = { games: games.map(orbsArcadeGameFromServer), gameStateByGameId };
+  const obj2 = { games: games.map(orbsArcadeGameFromServer), gameStateByGameId, ownedRewardSkuIds: body.owned_reward_sku_ids };
   games = body.games;
   return obj2;
 }
@@ -83,7 +83,7 @@ export function orbsArcadeApplicationGameFromServer(game) {
   let tmp;
   let tmp2;
   game = game.game;
-  game = { id: game.id, versionId: game.version_id, applicationId: game.application_id, name: game.name, instructions: game.instructions, startsAt: game.starts_at, endsAt: game.ends_at, orbCost: game.orb_cost, numFreePlays: game.num_free_plays, windowDurationHours: game.window_duration_hours, asset: game.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
+  game = { id: game.id, versionId: game.version_id, applicationId: game.application_id, name: game.name, instructions: game.instructions, startsAt: game.starts_at, endsAt: game.ends_at, orbCost: game.orb_cost, numFreePlays: game.num_free_plays, windowDurationHours: game.window_duration_hours, windowEndsAt: game.window_ends_at, enrollmentClosesAt: game.enrollment_closes_at, asset: game.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
   tmp = null;
   if (null != game.hero_video_asset) {
     size = { url: null, altText: null, mimeType: null, width: null, height: null };
@@ -91,12 +91,12 @@ export function orbsArcadeApplicationGameFromServer(game) {
     tmp = size;
   }
   rewards = game.rewards;
-  const obj4 = { game, gameState: tmp2, enrollmentClosesAt: null, canAffordRun: null };
+  const obj4 = { game, gameState: tmp2, canAffordRun: null, ownedRewardSkuIds: null };
   tmp2 = null;
   if (null != game.game_state) {
     tmp2 = orbsArcadeGameStateFromServer(game.game_state);
   }
-  ({ enrollment_closes_at: obj3.enrollmentClosesAt, can_afford_run: obj3.canAffordRun } = game);
+  ({ can_afford_run: obj3.canAffordRun, owned_reward_sku_ids: obj3.ownedRewardSkuIds } = game);
   return obj4;
 }
 export function orbsArcadeClaimedRewardFromServer(body) {

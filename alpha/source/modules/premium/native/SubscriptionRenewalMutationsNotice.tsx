@@ -1,20 +1,20 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15273
+// Function ID: 15274
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 2046, 21, 5009, 575, 6772, 1188, 1114, 2048, 2]
+// Dependencies: [19, 17, 2044, 21, 5014, 575, 6778, 1187, 1113, 2047, 2]
 // Exports: default
 
-// Module 15234 (SubscriptionRenewalMutationsNotice)
+// Module 15273 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2046 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2044 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp5;
-const PremiumUtils = tmp5(2048);
+const PremiumUtils = tmp5(2047);
 const View = react_native.View;
 const isNoneSubscription = SubscriptionPlanRecord.isNoneSubscription;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

@@ -1,21 +1,21 @@
-// Module ID: 14998
-// Function ID: 14999
+// Module ID: 15035
+// Function ID: 15036
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 5009, 575, 14999, 5619, 7725, 9515, 1114, 15000, 1988, 2]
+// Dependencies: [17, 21, 5014, 575, 15036, 5624, 7732, 9537, 1113, 15037, 1987, 2]
 // Exports: default
 
-// Module 14998 (ProductDetailsActionSheetInfo)
+// Module 15035 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9515 */;
-import useProductDescription from "useProductDescription" /* 14999 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 15000 */;
+import intl3 from "intl" /* 1113 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9537 */;
+import useProductDescription from "useProductDescription" /* 15036 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 15037 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,13 +47,13 @@ function ProductPurchaseStatus(product) {
   const tmp7 = View;
   if (productPurchaseState.isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5619).Text;
-    intl2 = tmp(1114).intl;
+    const Text2 = tmp(5624).Text;
+    intl2 = tmp(1113).intl;
     children = tmp6(Text2, obj3);
   } else if (tmp5) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5619).Text;
-    intl = tmp(1114).intl;
+    const Text = tmp(5624).Text;
+    intl = tmp(1113).intl;
     children = tmp6(Text, obj4);
   } else {
     children = !result;

@@ -1,13 +1,13 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16294
+// Function ID: 16295
 // Name: useThermalState
-// Dependencies: [16253, 1376, 5949, 2]
+// Dependencies: [16295, 1375, 5954, 2]
 // Exports: default, getThermalState
 
-// Module 16252 (useThermalState)
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5949 */;
-import ThermalStates from "ThermalStates" /* 16253 */;
+// Module 16294 (useThermalState)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5954 */;
+import ThermalStates from "ThermalStates" /* 16295 */;
 import size from "module_2" /* 2 */;
 
 function _getThermalState(rawThermalState) {
@@ -49,13 +49,11 @@ function _getThermalState(rawThermalState) {
 }
 const AndroidThermalStates = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
 const result = size.fileFinishedImporting("modules/device/useThermalState.tsx");
-const ThermalStates_export = ThermalStates.ThermalStates;
 
 export default function useThermalState() {
   const obj = ThermalUtilsDefault;
   return _getThermalState(obj.useRawThermalState());
 };
-export { ThermalStates_export as ThermalStates };
 export { AndroidThermalStates };
 export function getThermalState() {
   const obj = ThermalUtilsDefault;

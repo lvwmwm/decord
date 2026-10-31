@@ -1,25 +1,25 @@
-// Module ID: 6992
-// Function ID: 6993
+// Module ID: 6998
+// Function ID: 6999
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1072, 21, 5009, 575, 5619, 6993, 6996, 1499, 6998, 1114, 6999, 7048, 1376, 1626, 5581, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5014, 575, 5624, 6999, 7002, 1498, 7004, 1113, 7005, 7054, 1375, 1625, 5586, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 6992 (NavigatorHeader)
+// Module 6998 (NavigatorHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import NavigatorConstants from "NavigatorConstants" /* 5581 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6993 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6996 */;
-import _mod6999 from "module_6999" /* 6999 */;
-import XSmallIcon from "XSmallIcon" /* 7048 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import NavigatorConstants from "NavigatorConstants" /* 5586 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6999 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7002 */;
+import _mod7005 from "module_7005" /* 7005 */;
+import XSmallIcon from "XSmallIcon" /* 7054 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(6998);
+  const obj = onPress(7004);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -93,7 +93,7 @@ function CustomHeaderBackButton(onPress) {
       return closure_1_6(HeaderBackImage, {});
     }
   };
-  const HeaderBackButton = onPress(6999).HeaderBackButton;
+  const HeaderBackButton = onPress(7005).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_6(HeaderBackButton, obj2);
 }
@@ -114,7 +114,7 @@ function HeaderTextButton(text) {
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod6999.HeaderBackButton;
+  const HeaderBackButton = _mod7005.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -199,7 +199,7 @@ export function getHeaderConditionalBackButton(callback1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -232,7 +232,7 @@ export function getHeaderConditionalBackButton(callback1) {
                 }
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp9) {
             c2 = 3;

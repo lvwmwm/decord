@@ -1,17 +1,17 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15075
+// Function ID: 15076
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5009, 15033, 5619, 12, 7288, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 15070, 5624, 12, 7294, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 15038 (EditCollectiblesPickerList)
-import Text_Text from "Text/Text" /* 5619 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15033 */;
+// Module 15075 (EditCollectiblesPickerList)
+import Text_Text from "Text/Text" /* 5624 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15070 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

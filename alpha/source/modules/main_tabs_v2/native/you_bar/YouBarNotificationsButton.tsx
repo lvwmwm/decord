@@ -1,17 +1,17 @@
-// Module ID: 18412
-// Function ID: 18413
+// Module ID: 18455
+// Function ID: 18456
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 10171, 17004, 21, 5009, 575, 18413, 5090, 5632, 504, 5255, 11131, 10172, 1114, 9189, 18409, 8020, 1188, 5194, 2]
+// Dependencies: [19, 17, 10191, 17062, 21, 5014, 575, 18456, 5095, 5637, 504, 5260, 11150, 10192, 1113, 9208, 18452, 8028, 1187, 5199, 2]
 
-// Module 18412 (YouBarNotificationsButton)
+// Module 18455 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10171 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   hasNameplate = hasNameplate.hasNameplate;
   let onLongPress;
   const tmp = closure_10();
-  const value = onLongPress(18413)().value;
+  const value = onLongPress(18456)().value;
   _require = value;
   let obj = require("ReanimatedRexport");
   const fn = function u() {
@@ -102,21 +102,21 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   }, items1);
   const obj4 = { size: "custom", style: tmp.icon, color: str };
   str = undefined;
-  const BellIcon = tmp4(9189).BellIcon;
+  const BellIcon = tmp4(9208).BellIcon;
   if (hasNameplate) {
     str = "white";
   }
   const tmp11Result = closure_8(BellIcon, obj4);
-  let intl = tmp4(1114).intl;
+  let intl = tmp4(1113).intl;
   const formatToPlainStringResult = intl.formatToPlainString(require("intl").t.kedGua, { count: value });
   let combined = formatToPlainStringResult;
   if (stateFromStores > 0 && 0 === value) {
-    const intl2 = tmp4(1114).intl;
+    const intl2 = tmp4(1113).intl;
     const _HermesInternal = HermesInternal;
     const obj5 = { count: stateFromStores };
-    combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1114).t.yBmFPA, obj5);
+    combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1113).t.yBmFPA, obj5);
   }
-  const YouBarButtonContainer = tmp4(18409).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(18452).YouBarButtonContainer;
   const obj6 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,
@@ -135,7 +135,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     hitSlop
   };
   str4 = "secondary-overlay";
-  const IconButton = tmp4(8020).IconButton;
+  const IconButton = tmp4(8028).IconButton;
   if (!hasNameplate) {
     let str5 = "tertiary";
     if (value > 0) {
@@ -149,7 +149,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   const obj9 = { icon: tmp11Result, hasBadge: stateFromStores > 0 && 0 === value, badgeStyle: tmp.overdueReminderDot };
   items2[0] = closure_8(require("YouBarButton").YouBarButtonIcon, obj9);
   const obj10 = { style: animatedStyle, children: closure_8(require("native").Badge, { value }) };
-  View = tmp2(5090).View;
+  View = tmp2(5095).View;
   items2[1] = closure_8(View, obj10);
   return closure_8(YouBarButtonContainer, obj7);
 });

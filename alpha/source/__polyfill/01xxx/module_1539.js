@@ -1,29 +1,41 @@
 // Module ID: 1539
 // Function ID: 1540
-// Dependencies: [19, 21, 1540, 1542]
-// Exports: NavigationProvider
+// Dependencies: [19, 1540]
+// Exports: useIsFocused
 
 // Module 1539
-import Fragment from "Fragment" /* 21 */;
 import _mod1540 from "module_1540" /* 1540 */;
 import react from "react" /* 19 */;
 
-const jsx = Fragment.jsx;
-let context = react.createContext(undefined);
+let navigation;
 
-export const NavigationRouteContext = context;
-export const NamedRouteContextListContext = react.createContext(undefined);
-export function NavigationProvider(route) {
-  let children;
-  route = route.route;
-  ({ navigation, children } = route);
-  context = react.useContext(_mod1540.IsFocusedContext);
-  let tmp5 = null != context;
-  const context1 = react.useContext(_mod1540.FocusedRouteKeyContext);
-  if (tmp5) {
-    tmp5 = !context;
+let context = react.createContext(undefined);
+const context1 = react.createContext(undefined);
+
+export const FocusedRouteKeyContext = context;
+export const IsFocusedContext = context1;
+export function useIsFocused() {
+  let context = react.useContext(context1);
+  const obj = _mod1540;
+  navigation = obj.useNavigation();
+  let closure_1 = tmp3;
+  const items = [tmp3, navigation];
+  if (context == null) {
+    context = react.useSyncExternalStore(react.useCallback((arg0) => {
+      const tmp = closure_1;
+      if (tmp) {
+        return () => {
+
+        };
+      } else {
+        let closure_0 = navigation.addListener("focus", arg0);
+        closure_1 = navigation.addListener("blur", arg0);
+        return () => {
+          closure_0();
+          closure_1();
+        };
+      }
+    }, items), navigation.isFocused, navigation.isFocused);
   }
-  const Provider = context.Provider;
-  const Provider2 = tmp(1542).NavigationContext.Provider;
-  return <Provider value={route}>{null}</Provider>;
+  return context;
 }

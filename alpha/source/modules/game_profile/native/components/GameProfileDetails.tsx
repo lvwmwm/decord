@@ -1,29 +1,29 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9586
+// Function ID: 9587
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8913, 21, 8904, 9565, 7121, 9342, 9567, 9569, 9332, 5009, 575, 5704, 9571, 9572, 9353, 1114, 1993, 4831, 9573, 5619, 2]
+// Dependencies: [19, 17, 8922, 21, 8913, 9587, 7127, 9362, 9589, 9591, 9352, 5014, 575, 5709, 9593, 9594, 9373, 1113, 1992, 4836, 9595, 5624, 2]
 // Exports: default
 
-// Module 9564 (GameProfileDetails)
+// Module 9586 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
-import intl13 from "intl" /* 1114 */;
-import Server from "Server" /* 1993 */;
-import DateUtilsAll from "DateUtils" /* 4831 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7121 */;
-import PlatformType from "PlatformType" /* 8904 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8913 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9332 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9342 */;
-import SKUUtils from "SKUUtils" /* 9353 */;
-import ScreenIcon from "ScreenIcon" /* 9565 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9567 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9569 */;
+import intl13 from "intl" /* 1113 */;
+import Server from "Server" /* 1992 */;
+import DateUtilsAll from "DateUtils" /* 4836 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7127 */;
+import PlatformType from "PlatformType" /* 8913 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8922 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9352 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9362 */;
+import SKUUtils from "SKUUtils" /* 9373 */;
+import ScreenIcon from "ScreenIcon" /* 9587 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9589 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9591 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c9;

@@ -1,21 +1,21 @@
-// Module ID: 19199
-// Function ID: 19200
+// Module ID: 19251
+// Function ID: 19252
 // Name: UserVideoFailed
-// Dependencies: [17, 1072, 21, 5009, 575, 5942, 5619, 1114, 5629, 11731, 5784, 5896, 2]
+// Dependencies: [17, 1072, 21, 5014, 575, 5947, 5624, 1113, 5634, 11768, 5789, 5915, 2]
 // Exports: default
 
-// Module 19199 (UserVideoFailed)
+// Module 19251 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5784 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5896 */;
-import AVError from "AVError" /* 5942 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11731 */;
+import intl4 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
+import AVError from "AVError" /* 5947 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11768 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -75,8 +75,8 @@ export default function UserVideoFailed(arg0) {
           }, 1000);
         }
     };
-    const Button = tmp3(5629).Button;
-    intl3 = tmp3(1114).intl;
+    const Button = tmp3(5634).Button;
+    intl3 = tmp3(1113).intl;
     tmp8Result = tmp8(Button, obj6);
   }
   items1[2] = closure_5(View, obj5);

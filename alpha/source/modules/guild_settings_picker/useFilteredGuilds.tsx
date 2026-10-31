@@ -1,14 +1,14 @@
-// Module ID: 15678
-// Function ID: 15679
+// Module ID: 15719
+// Function ID: 15720
 // Name: useFilteredGuilds
-// Dependencies: [19, 4880, 6766, 1384, 504, 38, 2]
+// Dependencies: [19, 4885, 6772, 1383, 504, 38, 2]
 // Exports: default
 
-// Module 15678 (useFilteredGuilds)
+// Module 15719 (useFilteredGuilds)
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SortedGuildStore from "SortedGuildStore" /* 6766 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings_picker/useFilteredGuilds.tsx");

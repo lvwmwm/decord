@@ -1,32 +1,21 @@
 // Module ID: 1587
 // Function ID: 1588
 // Name: react
-// Dependencies: [19]
+// Dependencies: [19, 1546]
+// Exports: useCurrentRender
 
 // Module 1587 (react)
+import react2 from "react" /* 1546 */;
 import react from "react" /* 19 */;
 
 
-export const StaticContainer = react.memo(function StaticContainer(children) {
-  return children.children;
-}, (arg0, arg1) => {
-  const keys = Object.keys(arg0);
-  if (keys.length !== Object.keys(arg1).length) {
-    return false;
-  } else {
-    const iter = keys[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp5 = nextResult;
-      if ("children" !== nextResult) {
-        if (arg0[tmp5] !== arg1[tmp5]) {
-          iter.return();
-          let flag = false;
-          return false;
-        }
-      }
-      continue;
-    }
-    return true;
+export function useCurrentRender(descriptors) {
+  let state;
+  ({ state, navigation } = descriptors);
+  descriptors = descriptors.descriptors;
+  const context = react.useContext(react2.CurrentRenderContext);
+  const tmp2 = context && navigation.isFocused();
+  if (tmp2) {
+    context.options = descriptors[state.routes[state.index].key].options;
   }
-});
+}

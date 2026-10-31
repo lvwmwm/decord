@@ -1,18 +1,18 @@
-// Module ID: 11995
-// Function ID: 11996
+// Module ID: 12033
+// Function ID: 12034
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 5009, 575, 5090, 5249, 5619, 1188, 7316, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5095, 5254, 5624, 1187, 7322, 2]
 // Exports: default
 
-// Module 11995 (StageSectionHeader)
+// Module 12033 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7316 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7322 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,7 +49,7 @@ export default function StageSectionHeader(collapsed) {
   const children = collapsed.children;
   ({ label, count, onToggleCollapse } = collapsed);
   const tmp = closure_7();
-  let obj = collapsed(5090);
+  let obj = collapsed(5095);
   const fn = function y() {
     let items;
     let str = "0deg";
@@ -63,7 +63,7 @@ export default function StageSectionHeader(collapsed) {
     ({ rotate: withTiming(str, { duration: 150 }) });
     return obj;
   };
-  const obj2 = { withTiming: collapsed(5249).withTiming, collapsed };
+  const obj2 = { withTiming: collapsed(5254).withTiming, collapsed };
   fn.__closure = obj2;
   fn.__workletHash = 13855092771739;
   fn.__initData = __initData;
@@ -72,7 +72,7 @@ export default function StageSectionHeader(collapsed) {
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj5 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items };
   items = [label, " \u2014 ", count];
-  items1 = [closure_5(collapsed(5619).Text, obj5), , ];
+  items1 = [closure_5(collapsed(5624).Text, obj5), , ];
   let tmp5Result = null != children;
   const tmp2 = collapsed;
   tmp7 = closure_5;
@@ -86,7 +86,7 @@ export default function StageSectionHeader(collapsed) {
   obj8 = { style: animatedStyle, children: closure_6(Icon, obj9) };
   View = ReanimatedRexportDefault.View;
   obj9 = { source: AssetRegistryDefault, style: tmp.collapseIcon };
-  Icon = tmp2(1188).Icon;
+  Icon = tmp2(1187).Icon;
   items1[2] = closure_6(closure_4, obj7);
   return closure_6(closure_4, obj3);
 };

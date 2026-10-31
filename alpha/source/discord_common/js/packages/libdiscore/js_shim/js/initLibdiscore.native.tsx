@@ -1,13 +1,13 @@
-// Module ID: 1366
-// Function ID: 1367
+// Module ID: 1365
+// Function ID: 1366
 // Name: initLibdiscore
-// Dependencies: [5, 17, 1367, 2]
+// Dependencies: [5, 17, 1366, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized
 
-// Module 1366 (initLibdiscore)
+// Module 1365 (initLibdiscore)
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import timers_mod from "timers" /* 1367 */;
+import timers_mod from "timers" /* 1366 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -24,7 +24,7 @@ let obj = function _initLibdiscore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -38,7 +38,7 @@ let obj = function _initLibdiscore() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp3) {
         c0 = 3;

@@ -1,13 +1,13 @@
-// Module ID: 7073
-// Function ID: 7074
+// Module ID: 7079
+// Function ID: 7080
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6991, 21, 1498, 1093, 7074, 7071, 1114, 2]
+// Dependencies: [5, 19, 6997, 21, 1497, 1092, 7080, 7077, 1113, 2]
 // Exports: default
 
-// Module 7073 (ConfirmEmailChangeCode)
+// Module 7079 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6991 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/verification/native/component
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1498);
+  let obj = isChangeEmail(1497);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -38,7 +38,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(7074);
+  navigation(7080);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
@@ -46,8 +46,8 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
     await obj3.confirmEmailChange(closure_0);
     return arg1;
   });
-  const intl = isChangeEmail(1114).intl;
-  const intl2 = isChangeEmail(1114).intl;
+  const intl = isChangeEmail(1113).intl;
+  const intl2 = isChangeEmail(1113).intl;
   return <tmp3 onFormSubmit={function() {
     return closure_0(...arguments);
   }} onSuccess={callback} onResend={_asyncToGenerator(async (arg0, value) => {
@@ -62,7 +62,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -91,12 +91,12 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
           return obj;
         } else {
           isChangeEmail = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp6) {
         isChangeEmail = 3;
         throw tmp6;
       }
     }
-  })} headerText={intl.string(isChangeEmail(1114).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1114).t.PDTjLN)} />;
+  })} headerText={intl.string(isChangeEmail(1113).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1113).t.PDTjLN)} />;
 };

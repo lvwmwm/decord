@@ -1,21 +1,21 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16505
+// Function ID: 16506
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 5009, 575, 7320, 16464, 9884, 9885, 16486, 1114, 8659, 16487, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7326, 16506, 9905, 9906, 16528, 1113, 8667, 16529, 2]
 // Exports: default
 
-// Module 16463 (UserProfilePremiumTryItOutSection)
+// Module 16505 (UserProfilePremiumTryItOutSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7320 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 16464 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 16486 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 16487 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 16506 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 16528 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 16529 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -59,17 +59,17 @@ export default function UserProfilePremiumTryItOutSection(arg0) {
     const tmp = openPremiumModalDefault;
     tmp(obj);
   }, items);
-  let obj = { style: tmp.container, innerStyle: tmp.cardInner, text: intl.format(analyticsLocations(1114).t.TmfgI2, { onClick: callback }), textAlign: "center", buttonText: intl2.string(analyticsLocations(1114).t.PxUx8e), onButtonPress: onPreviewPremium, onLayout, children: items2 };
+  let obj = { style: tmp.container, innerStyle: tmp.cardInner, text: intl.format(analyticsLocations(1113).t.TmfgI2, { onClick: callback }), textAlign: "center", buttonText: intl2.string(analyticsLocations(1113).t.PxUx8e), onButtonPress: onPreviewPremium, onLayout, children: items2 };
   const tmp4 = UserProfileUpsellCardV2Default;
-  intl = analyticsLocations(1114).intl;
-  intl2 = analyticsLocations(1114).intl;
+  intl = analyticsLocations(1113).intl;
+  intl2 = analyticsLocations(1113).intl;
   const obj2 = { style: tmp.divider, children: items1 };
   items1 = [, ];
   const obj3 = { style: tmp.dividerLine };
   items1[0] = closure_5(View, obj3);
   const obj4 = { style: tmp.lockCircle, children: closure_5(LockIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp.lockIcon };
-  LockIcon = analyticsLocations(8659).LockIcon;
+  LockIcon = analyticsLocations(8667).LockIcon;
   items1[1] = closure_5(View, obj4);
   items2 = [closure_6(View, obj2), closure_5(UserProfileTryItOutFieldsDefault, { currentUser, mode: "entrypoint" })];
   return closure_6(tmp4, obj);

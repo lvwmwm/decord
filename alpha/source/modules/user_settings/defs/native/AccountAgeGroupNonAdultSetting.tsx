@@ -1,17 +1,17 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 16618
+// Function ID: 16619
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8424, 7947, 6723, 6720, 1114, 5688, 16529, 11505, 2]
+// Dependencies: [8432, 7955, 6729, 6726, 1113, 5693, 16571, 11539, 2]
 
-// Module 16576 (AccountAgeGroupNonAdultSetting)
-import intl3 from "intl" /* 1114 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5688 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6723 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16529 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+// Module 16618 (AccountAgeGroupNonAdultSetting)
+import intl3 from "intl" /* 1113 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16571 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -27,8 +27,8 @@ let obj = {
     const intl = intl3.intl;
     let stringResult = intl.string(intl3.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1114).intl;
-      stringResult = intl2.string(tmp(1114).t.sK0dmH);
+      const intl2 = tmp(1113).intl;
+      stringResult = intl2.string(tmp(1113).t.sK0dmH);
     }
     return stringResult;
   },

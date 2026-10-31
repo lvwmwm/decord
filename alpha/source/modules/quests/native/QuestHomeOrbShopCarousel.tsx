@@ -1,27 +1,27 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16988
+// Function ID: 16989
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1193, 7838, 6775, 21, 575, 16919, 5009, 504, 5619, 1114, 9556, 7288, 16427, 16933, 9437, 7855, 7864, 9440, 5075, 2]
+// Dependencies: [32, 19, 17, 1192, 7845, 6781, 21, 575, 16975, 5014, 504, 5624, 1113, 9578, 7294, 16469, 16989, 9459, 7862, 7871, 9462, 5080, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 16932 (QuestHomeOrbShopCarousel)
+// Module 16988 (QuestHomeOrbShopCarousel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import AnalyticsActions from "AnalyticsActions" /* 7855 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9440 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9556 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16919 */;
-import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 16933 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9462 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9578 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16975 */;
+import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 16989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import BountyStore from "BountyStore" /* 7838 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import BountyStore from "BountyStore" /* 7845 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -74,7 +74,7 @@ function QuestHomeOrbShopCarouselHeading(belowCarousel) {
     str = str2;
   }
   obj3 = { variant: str, color: "text-strong", children: intl.format(intl2.t.CXlsRP, { orbAmount: orbRewardAmount }) };
-  intl = tmp7(1114).intl;
+  intl = tmp7(1113).intl;
   return React4(tmp2, obj2);
 }
 function QuestHomeOrbShopCarouselPlaceholder(cardWidth) {
@@ -236,9 +236,9 @@ export default function QuestHomeOrbShopCarousel(showOrbShopPlaceholderCarousel)
       const trackQuestHomeOrbShopCarouselScroll = AnalyticsActions.trackQuestHomeOrbShopCarouselScroll;
       AnalyticsActions;
       if (rounded > tmp2) {
-        LEFT = tmp3(7864).HorizontalScrollingDirection.RIGHT;
+        LEFT = tmp3(7871).HorizontalScrollingDirection.RIGHT;
       } else {
-        LEFT = tmp3(7864).HorizontalScrollingDirection.LEFT;
+        LEFT = tmp3(7871).HorizontalScrollingDirection.LEFT;
       }
       const obj = { scrollingDirection: LEFT, carouselPosition: rounded, carouselSize: length };
       const result = trackQuestHomeOrbShopCarouselScroll(obj);

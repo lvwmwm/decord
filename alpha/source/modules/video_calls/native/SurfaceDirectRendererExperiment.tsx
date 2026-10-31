@@ -1,12 +1,12 @@
-// Module ID: 5883
-// Function ID: 5884
+// Module ID: 5888
+// Function ID: 5889
 // Name: SurfaceDirectRendererExperiment
-// Dependencies: [502, 1448, 504, 2]
+// Dependencies: [502, 1447, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 5883 (SurfaceDirectRendererExperiment)
+// Module 5888 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

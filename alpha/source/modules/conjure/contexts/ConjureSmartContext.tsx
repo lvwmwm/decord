@@ -1,16 +1,16 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12474
+// Function ID: 12475
 // Name: ConjureSmartContext
-// Dependencies: [32, 19, 10831, 10830, 10841, 504, 10947, 1114, 3865, 10871, 2]
+// Dependencies: [32, 19, 10851, 10850, 10861, 504, 10966, 1113, 3868, 10896, 2]
 // Exports: useConjureContextSwitchRow, useConjureSmartContextSetting
 
-// Module 12439 (ConjureSmartContext)
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10947 */;
+// Module 12474 (ConjureSmartContext)
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10831 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10830 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10841 */;
+import ConjureChatStore from "ConjureChatStore" /* 10851 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10861 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ export function useConjureContextSwitchRow(projectId, contextSwitch) {
   if ("undone" === status) {
     return null;
   } else if ("reverted" === status) {
-    const obj3 = { label: intl5.string(require("module_3865").uQRAzS), body: intl6.string(require("module_3865")["24OcbD"]), note: null, action: null };
+    const obj3 = { label: intl5.string(require("module_3868").uQRAzS), body: intl6.string(require("module_3868")["24OcbD"]), note: null, action: null };
     intl5 = tmp(tmp2[7]).intl;
     intl6 = tmp(tmp2[7]).intl;
     return obj3;
@@ -84,7 +84,7 @@ export function useConjureContextSwitchRow(projectId, contextSwitch) {
       }
       tmp13 = false === ok1;
     }
-    const obj4 = { label: intl.string(require("module_3865").iBrh0c), body: intl2.string(require("module_3865").sRY8wn), note: stringResult, action: tmp16 };
+    const obj4 = { label: intl.string(require("module_3868").iBrh0c), body: intl2.string(require("module_3868").sRY8wn), note: stringResult, action: tmp16 };
     intl = tmp(tmp2[7]).intl;
     intl2 = tmp(tmp2[7]).intl;
     if ("busy" === error) {

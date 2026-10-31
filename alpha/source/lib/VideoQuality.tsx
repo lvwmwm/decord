@@ -1,19 +1,19 @@
-// Module ID: 5944
-// Function ID: 5945
+// Module ID: 5949
+// Function ID: 5950
 // Name: VideoQuality
-// Dependencies: [5907, 5787, 5934, 5767, 5928, 5784, 5945, 12, 1376, 11, 4875, 2]
+// Dependencies: [5926, 5792, 5900, 5772, 5894, 5789, 5950, 11, 12, 1375, 4880, 2]
 
-// Module 5944 (VideoQuality)
+// Module 5949 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import TimeUtils from "TimeUtils" /* 5767 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5784 */;
-import Histogram from "Histogram" /* 5928 */;
-import NetworkQualityDefault from "NetworkQuality" /* 5934 */;
-import VideoQualityStats from "VideoQualityStats" /* 5945 */;
-import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5907 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5787 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import TimeUtils from "TimeUtils" /* 5772 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
+import Histogram from "Histogram" /* 5894 */;
+import NetworkQualityDefault from "NetworkQuality" /* 5900 */;
+import VideoQualityStats from "VideoQualityStats" /* 5950 */;
+import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5926 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5792 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, map, map1, set, vmafHistogram;
@@ -130,16 +130,76 @@ class VideoQuality extends TypedEventEmitter {
       outboundStats[ssrc] = outboundStats1;
     }
   }
-  getOrCreateInboundStats(userId) {
+  getOrCreateInboundStats(item10064) {
     const self = this;
-    if (null == this.inboundStats[userId]) {
+    if (null == this.inboundStats[item10064]) {
       const inboundStats = self.inboundStats;
       const self2 = this;
       const self3 = this;
       const inboundStats1 = new VideoQualityStats.InboundStats(self.timestampProducer);
-      inboundStats[userId] = inboundStats1;
+      inboundStats[item10064] = inboundStats1;
     }
-    return self.inboundStats[userId];
+    return self.inboundStats[item10064];
+  }
+  seedFrom(callUserIdsCount) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    let flag = obj.continueTimeline;
+    if (flag === undefined) {
+      flag = false;
+    }
+    const self = this;
+    this.callUserIdsCount = callUserIdsCount.callUserIdsCount;
+    this.statCollectionPausedUsers = new Set(callUserIdsCount.statCollectionPausedUsers);
+    new Set(callUserIdsCount.statCollectionPausedUsers);
+    const keys = Object.keys(callUserIdsCount.outboundStats);
+    const iter = keys[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let _parseInt = parseInt;
+      let tmp4 = nextResult;
+      let setOutboundSsrcResult = self.setOutboundSsrc(parseInt(nextResult));
+      let _parseInt2 = parseInt;
+      let tmp6 = callUserIdsCount.outboundStats[parseInt(undefined, nextResult)];
+      let _parseInt3 = parseInt;
+      let tmp7 = tmp6;
+      let obj2 = self.outboundStats[parseInt(undefined, nextResult)];
+      let result = obj2.continueAggregationFrom(tmp6, flag);
+      if (tmp6.isVideoStopped) {
+        let _parseInt4 = parseInt;
+        let obj3 = self.outboundStats[parseInt(undefined, tmp4)];
+        let setVideoStoppedResult = obj3.setVideoStopped(true, tmp7.videoStoppedReasons);
+      }
+      continue;
+    }
+    const obj4 = SnowflakeUtilsDefault;
+    const keys1 = obj4.keys(callUserIdsCount.inboundStats);
+    for (const item10064 of keys1) {
+      let tmp13 = callUserIdsCount.inboundStats[item10064];
+      let tmp14 = tmp13;
+      let orCreateInboundStats = self.getOrCreateInboundStats(item10064);
+      let obj6 = orCreateInboundStats;
+      let result1 = orCreateInboundStats.continueAggregationFrom(tmp13, flag);
+      if (tmp13.isVideoStopped) {
+        let setVideoStoppedResult1 = obj6.setVideoStopped(true, tmp14.videoStoppedReasons);
+      }
+      continue;
+    }
+    self.paused.value = callUserIdsCount.paused.value;
+    self.zeroReceivers.value = callUserIdsCount.zeroReceivers.value;
+    self.videoStopped.value = callUserIdsCount.videoStopped.value;
+    self.windowOccluded.value = callUserIdsCount.windowOccluded.value;
+    self.videoStoppedForOcclusion.value = callUserIdsCount.videoStoppedForOcclusion.value;
+    self.hqSimulcastStreamWatched.value = callUserIdsCount.hqSimulcastStreamWatched.value;
+    self.lqSimulcastStreamWatched.value = callUserIdsCount.lqSimulcastStreamWatched.value;
+    self.hqSimulcastStreamEligible.value = callUserIdsCount.hqSimulcastStreamEligible.value;
+    self.lqSimulcastStreamEligible.value = callUserIdsCount.lqSimulcastStreamEligible.value;
+    self.cameraDuration.value = callUserIdsCount.cameraDuration.value;
+    self.cameraOpportunityDuration.value = callUserIdsCount.cameraOpportunityDuration.value;
+    self.cameraSendDuration.value = callUserIdsCount.cameraSendDuration.value;
+    self.videoBackgroundEnabledDuration.value = callUserIdsCount.videoBackgroundEnabledDuration.value;
   }
   updateCallUserIdsCount(size) {
     this.callUserIdsCount = size;
@@ -148,8 +208,8 @@ class VideoQuality extends TypedEventEmitter {
     const orCreateInboundStats = this.getOrCreateInboundStats(userId);
     orCreateInboundStats.setVideoStopped(0 === videoSsrc, VideoQualityStats.VideoStoppedReasons.SenderStopped);
   }
-  setUserVideoDisabled(userId, arg1) {
-    const orCreateInboundStats = this.getOrCreateInboundStats(userId);
+  setUserVideoDisabled(item10064, arg1) {
+    const orCreateInboundStats = this.getOrCreateInboundStats(item10064);
     orCreateInboundStats.setVideoStopped(arg1, VideoQualityStats.VideoStoppedReasons.ClientSideDisableVideo);
     const tmp2 = !arg1 && orCreateInboundStats.statsWindow.length > 0 && 0 === orCreateInboundStats.statsWindow[0].packets;
     if (tmp2) {
@@ -284,23 +344,23 @@ class VideoQuality extends TypedEventEmitter {
         if (num == null) {
           num = 0;
         }
-        num2 = value.get(tmp2(5945).CodecTypes.H265);
+        num2 = value.get(tmp2(5950).CodecTypes.H265);
         if (num2 == null) {
           num2 = 0;
         }
-        num3 = value.get(tmp2(5945).CodecTypes.VP8);
+        num3 = value.get(tmp2(5950).CodecTypes.VP8);
         if (num3 == null) {
           num3 = 0;
         }
-        num4 = value.get(tmp2(5945).CodecTypes.VP9);
+        num4 = value.get(tmp2(5950).CodecTypes.VP9);
         if (num4 == null) {
           num4 = 0;
         }
-        num5 = value.get(tmp2(5945).CodecTypes.AV1);
+        num5 = value.get(tmp2(5950).CodecTypes.AV1);
         if (num5 == null) {
           num5 = 0;
         }
-        num6 = value.get(tmp2(5945).CodecTypes.UNKNOWN);
+        num6 = value.get(tmp2(5950).CodecTypes.UNKNOWN);
         if (num6 == null) {
           num6 = 0;
         }
@@ -318,23 +378,23 @@ class VideoQuality extends TypedEventEmitter {
     if (num8 == null) {
       num8 = 0;
     }
-    num9 = map.get(tmp7(5945).CodecTypes.H265);
+    num9 = map.get(tmp7(5950).CodecTypes.H265);
     if (num9 == null) {
       num9 = 0;
     }
-    num10 = map.get(tmp7(5945).CodecTypes.VP8);
+    num10 = map.get(tmp7(5950).CodecTypes.VP8);
     if (num10 == null) {
       num10 = 0;
     }
-    num11 = map.get(tmp7(5945).CodecTypes.VP9);
+    num11 = map.get(tmp7(5950).CodecTypes.VP9);
     if (num11 == null) {
       num11 = 0;
     }
-    num12 = map.get(tmp7(5945).CodecTypes.AV1);
+    num12 = map.get(tmp7(5950).CodecTypes.AV1);
     if (num12 == null) {
       num12 = 0;
     }
-    num13 = map.get(tmp7(5945).CodecTypes.UNKNOWN);
+    num13 = map.get(tmp7(5950).CodecTypes.UNKNOWN);
     if (num13 == null) {
       num13 = 0;
     }
@@ -1338,7 +1398,7 @@ class VideoQuality extends TypedEventEmitter {
     VideoBackgroundStore = streamParameters;
     transport = transport.transport;
     let tmp = videoEntropy;
-    let obj = videoEntropy(1376);
+    let obj = videoEntropy(1375);
     let num = 1;
     if (!obj.isWeb()) {
       const receiverReports = transport.receiverReports;
@@ -1370,13 +1430,13 @@ class VideoQuality extends TypedEventEmitter {
     self.updateSendState({ receivers: num });
     let value = self.cameraDuration.value;
     const cameraDuration = self.cameraDuration;
-    let tmp13 = self.connection.context === tmp(5784).MediaEngineContextTypes.DEFAULT;
+    let tmp13 = self.connection.context === tmp(5789).MediaEngineContextTypes.DEFAULT;
     if (tmp13) {
       tmp13 = null != transport.camera;
     }
     cameraDuration.value = tmp13;
     const cameraOpportunityDuration = self.cameraOpportunityDuration;
-    let tmp15 = self.connection.context === tmp(5784).MediaEngineContextTypes.DEFAULT;
+    let tmp15 = self.connection.context === tmp(5789).MediaEngineContextTypes.DEFAULT;
     if (tmp15) {
       let tmp16 = null;
       tmp15 = null != transport.camera;
@@ -1386,7 +1446,7 @@ class VideoQuality extends TypedEventEmitter {
     }
     cameraOpportunityDuration.value = tmp15;
     const cameraSendDuration = self.cameraSendDuration;
-    let tmp17 = self.connection.context === tmp(5784).MediaEngineContextTypes.DEFAULT;
+    let tmp17 = self.connection.context === tmp(5789).MediaEngineContextTypes.DEFAULT;
     if (tmp17) {
       tmp17 = null != transport.camera;
     }
@@ -1400,7 +1460,7 @@ class VideoQuality extends TypedEventEmitter {
       self.cameraToggles = self.cameraToggles + 1;
     }
     const videoBackgroundEnabledDuration = self.videoBackgroundEnabledDuration;
-    let liveBackgroundEnabled = self.connection.context === tmp(5784).MediaEngineContextTypes.DEFAULT;
+    let liveBackgroundEnabled = self.connection.context === tmp(5789).MediaEngineContextTypes.DEFAULT;
     if (liveBackgroundEnabled) {
       liveBackgroundEnabled = null != transport.camera;
     }
@@ -1721,7 +1781,7 @@ class VideoQuality extends TypedEventEmitter {
     }
     const tmp27 = 0 !== set.size && 0 !== set1.size;
     if (tmp27) {
-      const tmpResult = tmp(4875);
+      const tmpResult = tmp(4880);
       if (tmpResult.areSetsEqual(set, set1)) {
         self.symmetricCodecUpdates = self.symmetricCodecUpdates + 1;
       } else {

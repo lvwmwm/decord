@@ -1,14 +1,14 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14602
+// Function ID: 14603
 // Name: AuthorizeFormSeparator
-// Dependencies: [17, 21, 5009, 575, 2]
+// Dependencies: [17, 21, 5014, 575, 2]
 // Exports: AuthorizeFormSeparator
 
-// Module 14564 (AuthorizeFormSeparator)
+// Module 14602 (AuthorizeFormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

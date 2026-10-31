@@ -1,48 +1,65 @@
 // Module ID: 13090
 // Function ID: 13091
-// Dependencies: [13002, 13005, 13004, 13010]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: [13063, 13067, 13039, 13046]
+// Exports: notifyEventProcessors
 
 // Module 13090
-import _mod13002 from "module_13002" /* 13002 */;
-import _mod13005 from "module_13005" /* 13005 */;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
-let tmp;
-const _mod13004 = tmp(13004);
-function instrumentConsole() {
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  if ("console" in _mod13005.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod13004.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      let closure_0 = item;
-      let tmp = closure_0;
-      let tmp2 = closure_1;
-      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
-        const tmpResult = tmp(tmp2[3]);
-        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod13004.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            const obj = { args: items, level };
-            const obj2 = level(closure_2_1[0]);
-            obj2.triggerHandlers("console", obj);
-            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
-            const tmp = level;
-            const tmp2 = closure_2_1;
-            if (obj3) {
-              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
-            }
-          };
-        });
+
+export function notifyEventProcessors(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let num;
+  const f103747 = function(fn, arg1) {
+    closure_0 = fn;
+    let tmp3 = closure_0[closure_3];
+    let tmp4 = closure_1;
+    if (null !== closure_1) {
+      if (typeof tmp3 === "function") {
+        let obj = {};
+        let tmp13 = obj;
+        let tmp14 = tmp4;
+        let merged = Object.assign(tmp4);
+        let tmp16 = closure_2;
+        let tmp3Result = tmp3(obj, closure_2);
+        let tmp17 = closure_0;
+        let tmp18 = closure_1;
+        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
+        if (tmp5) {
+          let logger = tmp17(tmp18[2]).logger;
+          let tmp6 = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = "\" dropped event";
+          let str2 = "Event processor \"";
+          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
+        }
+        let tmp8 = arg1;
+        let tmp17Result = tmp17(tmp18[3]);
+        if (tmp17Result.isThenable(tmp3Result)) {
+          let nextPromise = tmp3Result.then(f127814);
+          let nextPromise1 = nextPromise.then(null, arg1);
+        } else {
+          let num = 1;
+          closure_0 = tmp;
+          closure_1 = tmp3Result;
+          closure_2 = tmp16;
+          closure_3 = tmp2 + 1;
+          let self = this;
+          let self2 = this;
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f103747);
+          let tmp9 = syncPromise;
+          let nextPromise2 = syncPromise.then(fn);
+          let nextPromise3 = nextPromise2.then(null, arg1);
+        }
       }
-    });
-  }
-}
-
-export function addConsoleInstrumentationHandler(arg0) {
-  const obj = _mod13002;
-  obj.addHandler("console", arg0);
-  const obj2 = _mod13002;
-  obj2.maybeInstrument("console", instrumentConsole);
+    }
+    let tmp12 = fn(tmp4);
+  };
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
+  const syncPromise = new require("module_13063").SyncPromise(f103747);
+  return syncPromise;
 }

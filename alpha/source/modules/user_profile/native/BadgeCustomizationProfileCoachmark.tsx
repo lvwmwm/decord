@@ -1,17 +1,17 @@
-// Module ID: 18826
-// Function ID: 18827
+// Module ID: 18869
+// Function ID: 18870
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1384, 4855, 575, 1492, 1626, 9604, 504, 2048, 5023, 1114, 5083, 9933, 2]
+// Dependencies: [32, 19, 1383, 4860, 575, 1491, 1625, 9624, 504, 2047, 5028, 1113, 5088, 9954, 2]
 // Exports: default
 
-// Module 18826 (BadgeCustomizationProfileCoachmark)
+// Module 18869 (BadgeCustomizationProfileCoachmark)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5083 */;
+import intl4 from "intl" /* 1113 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5088 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -86,7 +86,7 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(tmp(1114).t["4P5I8V"]),
+      buttonLabel: intl3.string(tmp(1113).t["4P5I8V"]),
       buttonVariant: "primary",
       onButtonPress() {
         markAsDismissed(constants.TAKE_ACTION);
@@ -100,7 +100,7 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
     obj2 = { type: "rive", rive: BadgesCoachmarkRive.BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj3 };
     obj3 = { dataBinding: obj4 };
     obj4 = { on: visible, reducedMotion: reducedMotion.enabled };
-    intl3 = tmp(1114).intl;
+    intl3 = tmp(1113).intl;
     return obj;
   }, items2);
   const tmpResult2 = tmp(tmp2[13]);

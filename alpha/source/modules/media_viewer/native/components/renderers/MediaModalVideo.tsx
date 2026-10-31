@@ -1,18 +1,20 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14790
+// Function ID: 14791
 // Name: MediaModalVideo
-// Dependencies: [19, 21, 14753, 14754, 8864, 14755, 2]
+// Dependencies: [19, 21, 8847, 14791, 14792, 8873, 14793, 2]
 
-// Module 14752 (MediaModalVideo)
-import common_Video from "common/Video" /* 8864 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14753 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14755 */;
+// Module 14790 (MediaModalVideo)
+import MediaViewerVideoPerfExperiment from "MediaViewerVideoPerfExperiment" /* 8847 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 14791 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14793 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
+let tmp;
+const common_Video = tmp(8873);
 let Fragment = Fragment_mod;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const memoResult = react.memo(function MediaModalVideo(source) {
@@ -28,7 +30,7 @@ const memoResult = react.memo(function MediaModalVideo(source) {
   let onLoad;
   let onLoadingVisible;
   let paused;
-  let tmp6Result;
+  let tmp8Result;
   source = source.source;
   const style = source.style;
   let uri = source.videoURI;
@@ -36,31 +38,33 @@ const memoResult = react.memo(function MediaModalVideo(source) {
   if (uri == null) {
     uri = source.uri;
   }
+  const obj = MediaViewerVideoPerfExperiment;
+  const isMediaViewerVideoPerfEnabled = obj.useIsMediaViewerVideoPerfEnabled();
   const items = [uri, , ];
   ({ width: arr[1], height: arr[2] } = source);
   ({ hasError, isLoadingVisible, handleLoadStart, handleLoad, handleError } = useMediaLoadingDefault({ onError, onLoad, onLoadingVisible }));
   useMediaLoadingDefault({ onError, onLoad, onLoadingVisible });
-  const tmp4 = react;
+  const tmp6 = react;
   if (hasError) {
     const obj2 = { style, status: "error" };
-    tmp6Result = React3(tmp(14754), obj2);
+    tmp8Result = React3(tmp4(14792), obj2);
   } else {
-    const Fragment = tmp4.Fragment;
-    const obj = { controls, muted, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, paused, source: tmp5, style };
-    const items1 = [React3(common_Video.VideoComponent, obj), , ];
-    let tmp7Result = null;
-    const tmp6 = hasOwnProperty;
+    const Fragment = tmp6.Fragment;
+    const obj3 = { controls, muted, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, paused, source: tmp7, style, useTextureView: !isMediaViewerVideoPerfEnabled };
+    const items1 = [React3(common_Video.VideoComponent, obj3), , ];
+    let tmp9Result = null;
+    const tmp8 = hasOwnProperty;
     if (isLoadingVisible) {
-      const obj3 = { style, status: "loading" };
-      tmp7Result = tmp7(tmp(14754), obj3);
+      const obj4 = { style, status: "loading" };
+      tmp9Result = tmp9(tmp4(14792), obj4);
     }
-    const obj4 = { children: items1 };
-    items1[1] = tmp7Result;
-    const obj5 = { style, index, source };
-    items1[2] = React3(MediaModalSpoilerOverlayDefault, obj5);
-    tmp6Result = tmp6(Fragment, obj4);
+    const obj5 = { children: items1 };
+    items1[1] = tmp9Result;
+    const obj6 = { style, index, source };
+    items1[2] = React3(MediaModalSpoilerOverlayDefault, obj6);
+    tmp8Result = tmp8(Fragment, obj5);
   }
-  return tmp6Result;
+  return tmp8Result;
 });
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/renderers/MediaModalVideo.tsx");
 

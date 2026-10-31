@@ -1,15 +1,15 @@
-// Module ID: 7868
-// Function ID: 7869
+// Module ID: 7875
+// Function ID: 7876
 // Name: AdUserActionCreators
-// Dependencies: [5, 7866, 1072, 1253, 572, 7869, 2]
+// Dependencies: [5, 7873, 1072, 1252, 572, 7876, 2]
 // Exports: fetchAdUser
 
-// Module 7868 (AdUserActionCreators)
+// Module 7875 (AdUserActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import react_nativeDefault from "react-native" /* 7869 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import react_nativeDefault from "react-native" /* 7876 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdUserStore from "AdUserStore" /* 7866 */;
+import AdUserStore from "AdUserStore" /* 7873 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _fetchAdUser() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -126,7 +126,7 @@ let obj = function _fetchAdUser() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp54) {
           duration_ms = tmp54;
           if (0 === c4) {

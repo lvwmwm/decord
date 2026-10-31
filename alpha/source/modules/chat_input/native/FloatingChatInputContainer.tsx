@@ -1,15 +1,15 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13956
+// Function ID: 13957
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 5090, 5591, 575, 1640, 5204, 1624, 5249, 5252, 2]
+// Dependencies: [32, 19, 21, 5095, 5596, 575, 1639, 5209, 1623, 5254, 5257, 2]
 // Exports: default
 
-// Module 13921 (FloatingChatInputContainer)
+// Module 13956 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5204 */;
-import timing from "timing" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5209 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,14 +18,14 @@ const ReanimatedRexportDefault = ReanimatedRexport;
 let closure_2, dependencyMap, set;
 
 let tmp2;
-const timingPresets = tmp2(5252);
+const timingPresets = tmp2(5257);
 function useKeyboardOpenPaddingStyle() {
   let easing;
   let sharedValue;
   let tmp5;
   let token;
   let tmp2 = dependencyMap;
-  let obj = token(5591);
+  let obj = token(5596);
   token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   const tmp4 = sharedValue(react.useState(() => {
     const KeyboardController = token(closure_2[6]).KeyboardController;
@@ -56,10 +56,10 @@ function useKeyboardOpenPaddingStyle() {
       closure_3.remove();
     };
   }, []);
-  const obj3 = token(5204);
-  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1624).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  const obj3 = token(5209);
+  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1623).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp7 = useKeyboardTypeDefault();
-  const SYSTEM = token(1624).KeyboardTypes.SYSTEM;
+  const SYSTEM = token(1623).KeyboardTypes.SYSTEM;
   const obj2 = react;
   if (!tmp5) {
     tmp5 = true === keyboardWillOpen;
@@ -69,8 +69,8 @@ function useKeyboardOpenPaddingStyle() {
   }
   dependencyMap = tmp5;
   let num = 0;
-  const useSharedValue = tmp(5090).useSharedValue;
-  token(5090);
+  const useSharedValue = tmp(5095).useSharedValue;
+  token(5095);
   if (tmp5) {
     num = token;
   }
@@ -94,7 +94,7 @@ function useKeyboardOpenPaddingStyle() {
   fn.__closure = { paddingSV: sharedValue };
   fn.__workletHash = 5673482424037;
   fn.__initData = __initData;
-  const tmpResult2 = token(5090);
+  const tmpResult2 = token(5095);
   return tmpResult2.useAnimatedStyle(fn);
 }
 const jsx = Fragment.jsx;

@@ -1,44 +1,44 @@
-// Module ID: 10718
-// Function ID: 10719
+// Module ID: 10738
+// Function ID: 10739
 // Name: UserRow
-// Dependencies: [19, 17, 5010, 2040, 7797, 4858, 5756, 4951, 10707, 1072, 21, 1377, 5009, 575, 7479, 38, 10719, 10720, 5706, 10721, 7482, 7798, 504, 1188, 5619, 5063, 10725, 7320, 6847, 1114, 10747, 10748, 6987, 5629, 2029, 9812, 8635, 8742, 1995, 8781, 10750, 9899, 6035, 8411, 6433, 9271, 10752, 9183, 10760, 9276, 10761, 6968, 10777, 6969, 2]
+// Dependencies: [19, 17, 5015, 2038, 7804, 4863, 5761, 4956, 10727, 1072, 21, 1376, 5014, 575, 7485, 38, 10739, 10740, 5711, 10741, 7488, 7805, 504, 1187, 5624, 5068, 10745, 7326, 6853, 1113, 10767, 10768, 6993, 5634, 2027, 9833, 8643, 8750, 1994, 8789, 10770, 9920, 6040, 8419, 6439, 9290, 10772, 9202, 10780, 9295, 10781, 6974, 10797, 6975, 2]
 
-// Module 10718 (UserRow)
+// Module 10738 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl14 from "intl" /* 1114 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import utils_StringUtils from "utils/StringUtils" /* 2029 */;
-import UserUtils from "UserUtils" /* 5063 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6987 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7798 */;
-import ChatIcon from "ChatIcon" /* 8635 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9812 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9899 */;
-import UserRowConstants from "UserRowConstants" /* 10707 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10720 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10721 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10725 */;
-import ActionButtonDefault from "ActionButton" /* 10747 */;
-import XLargeIcon from "XLargeIcon" /* 10748 */;
-import CrownIcon2 from "CrownIcon" /* 10750 */;
+import intl14 from "intl" /* 1113 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import utils_StringUtils from "utils/StringUtils" /* 2027 */;
+import UserUtils from "UserUtils" /* 5068 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6993 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7805 */;
+import ChatIcon from "ChatIcon" /* 8643 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9833 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9920 */;
+import UserRowConstants from "UserRowConstants" /* 10727 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10740 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10741 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10745 */;
+import ActionButtonDefault from "ActionButton" /* 10767 */;
+import XLargeIcon from "XLargeIcon" /* 10768 */;
+import CrownIcon2 from "CrownIcon" /* 10770 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7797 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7804 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1377 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -52,7 +52,7 @@ let map1;
 let obj3;
 let obj4;
 let tmp2;
-const native = tmp2(1188);
+const native = tmp2(1187);
 function UserRowSubLabel(arg0) {
   let animate;
   let guildId;
@@ -87,7 +87,7 @@ function UserRowSubLabel(arg0) {
     } else {
       const obj4 = { style: tmp.gameContainer, children: items1 };
       const obj5 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-      const Icon = tmp2(1188).Icon;
+      const Icon = tmp2(1187).Icon;
       let str = stateFromStores.getIconURL(16);
       const tmp14 = closure_15;
       const tmp15 = View;
@@ -103,7 +103,7 @@ function UserRowSubLabel(arg0) {
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5619).Text;
+    const Text = tmp2(5624).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "getCurrentUser" };
+  obj = { lineHeight: "Array" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "a" };
       return obj2;
     } else {
       let tmp9;
@@ -608,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8742, dependencyMap.paths);
+      const promise = asyncRequire(8750, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

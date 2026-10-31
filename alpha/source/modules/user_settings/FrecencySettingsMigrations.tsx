@@ -1,15 +1,15 @@
-// Module ID: 16243
-// Function ID: 16244
+// Module ID: 16284
+// Function ID: 16285
 // Name: FrecencySettingsMigrations
-// Dependencies: [1082, 1072, 504, 1233, 12, 1234, 510, 11, 2]
+// Dependencies: [1082, 1072, 504, 1232, 12, 1233, 510, 11, 2]
 
-// Module 16243 (FrecencySettingsMigrations)
+// Module 16284 (FrecencySettingsMigrations)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import frecency_user_settings from "frecency_user_settings" /* 1233 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1234 */;
+import frecency_user_settings from "frecency_user_settings" /* 1232 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
@@ -60,12 +60,12 @@ function readFavoriteGIFs(arg0) {
         const obj2 = FavoriteGIF.create();
         format = format.format;
         if (constants.IMAGE === format) {
-          NONE = tmp(1233).GIFType.IMAGE;
+          NONE = tmp(1232).GIFType.IMAGE;
         } else if (tmp4.VIDEO === format) {
-          NONE = tmp(1233).GIFType.VIDEO;
+          NONE = tmp(1232).GIFType.VIDEO;
         } else {
           const format2 = format.format;
-          NONE = tmp(1233).GIFType.NONE;
+          NONE = tmp(1232).GIFType.NONE;
         }
         obj2.format = NONE;
         ({ src: tmp3.src, width: tmp3.width, height: tmp3.height } = format);
@@ -403,7 +403,7 @@ let items = [
           EmojiFrecency2.mergePartial(obj, emojiFrecency.emojiFrecency);
           const tmp3 = require;
           if (null != emojiFrecency.emojiReactionFrecency) {
-            const EmojiFrecency3 = tmp3(1233).EmojiFrecency;
+            const EmojiFrecency3 = tmp3(1232).EmojiFrecency;
             EmojiFrecency3.mergePartial(obj, emojiFrecency.emojiReactionFrecency);
           }
           emojiFrecency.emojiReactionFrecency = obj;
@@ -446,7 +446,7 @@ let items = [
                   isMatch = obj.test(tmp9.src);
                 }
                 if (isMatch) {
-                  tmp9.format = tmp3(1233).GIFType.IMAGE;
+                  tmp9.format = tmp3(1232).GIFType.IMAGE;
                   flag = true;
                 }
                 flag3 = flag;

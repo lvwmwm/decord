@@ -1,9 +1,9 @@
-// Module ID: 1391
-// Function ID: 1392
+// Module ID: 1390
+// Function ID: 1391
 // Name: types
 // Dependencies: [2]
 
-// Module 1391 (types)
+// Module 1390 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/perks_state/types.tsx");

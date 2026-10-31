@@ -1,31 +1,31 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14207
+// Function ID: 14208
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5010, 4858, 13675, 13676, 1072, 12771, 21, 5090, 1188, 5619, 12, 8023, 5009, 575, 6772, 504, 5591, 6953, 1114, 5249, 8632, 11117, 14170, 5602, 13921, 5269, 6016, 1109, 13252, 11799, 13769, 14171, 8020, 5734, 13764, 12767, 5724, 11933, 2]
+// Dependencies: [32, 19, 17, 5015, 4863, 13710, 13711, 1072, 12806, 21, 5095, 1187, 5624, 12, 8031, 5014, 575, 6778, 504, 5596, 6959, 1113, 5254, 8640, 11136, 14208, 5607, 13956, 5274, 6021, 1108, 13287, 11837, 13804, 14209, 8028, 5739, 13799, 12802, 5729, 11971, 2]
 
-// Module 14169 (VoiceMessageOverlay)
+// Module 14207 (VoiceMessageOverlay)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import intl7 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5269 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
-import useRefValueDefault from "useRefValue" /* 6953 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
-import ChatInputConstants from "ChatInputConstants" /* 12771 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13675 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13676 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import intl7 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5274 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import useRefValueDefault from "useRefValue" /* 6959 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
+import ChatInputConstants from "ChatInputConstants" /* 12806 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13710 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13711 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -37,7 +37,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(6016);
+const react_native = tmp(6021);
 function LockPill(safeAreaBottom) {
   let View2;
   let closure_3;

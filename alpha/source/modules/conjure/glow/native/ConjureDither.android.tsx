@@ -1,13 +1,13 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12605
+// Function ID: 12606
 // Name: ConjureDither
-// Dependencies: [19, 17, 21, 12571, 8023, 5090, 2]
+// Dependencies: [19, 17, 21, 12606, 8031, 5095, 2]
 // Exports: default
 
-// Module 12570 (ConjureDither)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
-import _mod12571 from "module_12571" /* 12571 */;
+// Module 12605 (ConjureDither)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
+import _mod12606 from "module_12606" /* 12606 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ function BandPicture(width) {
     width: state(height[3]).TILE,
     height: state(height[3]).TILE,
     children: arr.map((item) => {
-      size = { x: item.x, y: item.y, width: _mod12571.CELL, height: _mod12571.CELL, rx: _mod12571.CORNER, fill: react, fillOpacity };
+      size = { x: item.x, y: item.y, width: _mod12606.CELL, height: _mod12606.CELL, rx: _mod12606.CORNER, fill: react, fillOpacity };
       const Rect = inlineStyles.Rect;
       return metroRequire(Rect, size, "" + item.x + "-" + item.y);
     })
@@ -77,12 +77,12 @@ function BandPicture(width) {
     const RadialGradient = inlineStyles.RadialGradient;
     const obj2 = { offset: isoStop(blobReachResult, obj4.blobReach(peak.peak, peak.radius, bound)), stopColor: "#fff", stopOpacity: 1 };
     const Stop = inlineStyles.Stop;
-    isoStop = _mod12571.isoStop;
-    _mod12571;
+    isoStop = _mod12606.isoStop;
+    _mod12606;
     ({ peak, radius } = peak);
-    const obj3 = _mod12571;
-    blobReachResult = obj3.blobReach(peak, radius, closure_5 + _mod12571.FADE_HALF);
-    obj4 = _mod12571;
+    const obj3 = _mod12606;
+    blobReachResult = obj3.blobReach(peak, radius, closure_5 + _mod12606.FADE_HALF);
+    obj4 = _mod12606;
     items = [metroRequire(Stop, obj2), metroRequire(inlineStyles.Stop, { offset: 1, stopColor: "#fff", stopOpacity: 0 })];
     return metroImportDefault(RadialGradient, obj, index);
   });
@@ -103,7 +103,7 @@ function BandPicture(width) {
     let ay;
     let x0;
     let y0;
-    const obj = _mod12571;
+    const obj = _mod12606;
     const blobReachResult = obj.blobReach(peak.peak, peak.radius, bound);
     if (blobReachResult <= 0) {
       return null;

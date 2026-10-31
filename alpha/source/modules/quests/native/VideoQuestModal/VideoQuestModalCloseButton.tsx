@@ -1,14 +1,14 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 17113
+// Function ID: 17114
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 575, 6974, 1114, 7048, 2]
+// Dependencies: [21, 575, 6980, 1113, 7054, 2]
 // Exports: default
 
-// Module 17055 (VideoQuestModalCloseButton)
+// Module 17113 (VideoQuestModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Pressables from "Pressables" /* 6974 */;
+import intl2 from "intl" /* 1113 */;
+import Pressables from "Pressables" /* 6980 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

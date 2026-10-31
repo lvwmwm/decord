@@ -1,22 +1,22 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14083
+// Function ID: 14084
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 5009, 7334, 575, 5619, 7080, 1114, 2569, 14049, 14024, 7143, 9899, 2]
+// Dependencies: [17, 21, 5014, 7340, 575, 5624, 7086, 1113, 2570, 14084, 14059, 7149, 9920, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 14048 (GuildPowerupsCardFooter)
+// Module 14083 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import _modDef2569 from "module_2569" /* 2569 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7080 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7334 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14024 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 14049 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef2570 from "module_2570" /* 2570 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7086 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7340 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14059 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 14084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,7 +48,7 @@ class GuildPowerupCardFooterExpiring {
     const intl = intl2.intl;
     formatToMarkdownString = intl.formatToMarkdownString;
     obj4 = { dateString: entitlementExpirationDateToStringDefault(dateString) };
-    prop = _modDef2569["ol/ao/"];
+    prop = _modDef2570["ol/ao/"];
     items[1] = React3(Text, obj3);
     return hasOwnProperty(View, obj);
   }
@@ -69,7 +69,7 @@ class GuildPowerupCardFooterRemoving {
     const intl = intl2.intl;
     formatToPlainString = intl.formatToPlainString;
     obj4 = { dateString: getGuildPowerupFormattedDateStringDefault(removingAt) };
-    v6e2ry1 = _modDef2569["6e2ry1"];
+    v6e2ry1 = _modDef2570["6e2ry1"];
     items[1] = React3(Text, obj3);
     return hasOwnProperty(View, obj);
   }
@@ -109,10 +109,10 @@ class GuildPowerupCardFooterCost {
     if (null != cost) {
       const obj = { style: tmp.inline, children: items };
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const BoostGemIcon = tmp2(9899).BoostGemIcon;
+      const BoostGemIcon = tmp2(9920).BoostGemIcon;
       items = [React3(BoostGemIcon, obj2), ];
       let str = "heading-sm/semibold";
-      const Text = tmp2(5619).Text;
+      const Text = tmp2(5624).Text;
       const tmp7 = hasOwnProperty;
       const tmp8 = View;
       const tmp9 = React3;
@@ -120,10 +120,10 @@ class GuildPowerupCardFooterCost {
         str = "experimental/body-sm/semibold";
       }
       const obj3 = { variant: str, color: "text-subtle", children: formatToPlainString(t2Wbo1, obj4) };
-      const intl = tmp2(1114).intl;
+      const intl = tmp2(1113).intl;
       formatToPlainString = intl.formatToPlainString;
       obj4 = { required: cost, decorator: costDecorator };
-      t2Wbo1 = tmp2(1114).t.t2Wbo1;
+      t2Wbo1 = tmp2(1113).t.t2Wbo1;
       if (costDecorator == null) {
         costDecorator = "";
       }

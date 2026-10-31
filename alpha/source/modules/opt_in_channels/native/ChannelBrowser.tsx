@@ -1,23 +1,23 @@
-// Module ID: 11547
-// Function ID: 11548
+// Module ID: 11583
+// Function ID: 11584
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7704, 7274, 4939, 4880, 6769, 1072, 4855, 21, 5009, 575, 5602, 11548, 504, 11550, 5039, 4842, 11546, 7212, 7288, 6971, 6974, 1114, 7086, 5712, 11552, 5619, 5647, 5077, 7054, 6983, 5591, 8595, 6968, 6977, 1188, 5749, 2]
+// Dependencies: [32, 19, 17, 7711, 7280, 4944, 4885, 6775, 1072, 4860, 21, 5014, 575, 5607, 11584, 504, 11586, 5044, 4847, 11582, 7218, 7294, 6977, 6980, 1113, 7092, 5717, 11588, 5624, 5652, 5082, 7060, 6989, 5596, 8603, 6974, 6983, 1187, 5754, 2]
 // Exports: default
 
-// Module 11547 (ChannelBrowser)
+// Module 11583 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7704 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7274 */;
-import GuildChannelStore from "GuildChannelStore" /* 4939 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import NewChannelsStore from "NewChannelsStore" /* 7711 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7280 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,10 +64,10 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   const onChannelClick = channel.onChannelClick;
   const tmp = closure_15();
   const items = [UserGuildSettingsStore];
-  const tmp3 = onChannelClick(5647)(channel);
+  const tmp3 = onChannelClick(5652)(channel);
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserGuildSettingsStore.isChannelOptedIn(channel.guild_id, channel.id));
-  const obj2 = channel(5077);
+  const obj2 = channel(5082);
   const checkboxA11yNative = obj2.useCheckboxA11yNative({ checked: stateFromStores });
   const obj3 = {
     style: tmp.categoryContainer,
@@ -79,7 +79,7 @@ let closure_17 = react.memo(function CategoryRow(channel) {
     children: closure_13(tmp11, { children: items1 })
   };
   str = "text";
-  const PressableOpacity = channel(6974).PressableOpacity;
+  const PressableOpacity = channel(6980).PressableOpacity;
   if ("null" !== channel.id) {
     str = checkboxA11yNative.accessibilityRole;
   }
@@ -89,17 +89,17 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   }
   items1 = [, ];
   const obj4 = { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 };
-  items1[0] = closure_12(channel(7054).TableRowGroupTitle, obj4);
+  items1[0] = closure_12(channel(7060).TableRowGroupTitle, obj4);
   let tmp10Result = null;
   tmp11 = closure_14;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: items2 };
-    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6983).FormCheckbox, obj7) };
+    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6989).FormCheckbox, obj7) };
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
-    const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1114).t.mSQwnW) };
-    const Text = tmp4(5619).Text;
-    intl = tmp4(1114).intl;
+    const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
+    const Text = tmp4(5624).Text;
+    intl = tmp4(1113).intl;
     items2[1] = closure_12(Text, obj8);
     tmp10Result = tmp10(View, obj5);
   }

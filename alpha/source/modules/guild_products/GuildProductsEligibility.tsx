@@ -1,12 +1,12 @@
-// Module ID: 7426
-// Function ID: 7427
+// Module ID: 7432
+// Function ID: 7433
 // Name: GuildProductsEligibility
-// Dependencies: [4880, 1072, 504, 2]
+// Dependencies: [4885, 1072, 504, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 7426 (GuildProductsEligibility)
+// Module 7432 (GuildProductsEligibility)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

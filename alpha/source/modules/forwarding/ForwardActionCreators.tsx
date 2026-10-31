@@ -1,16 +1,16 @@
-// Module ID: 13340
-// Function ID: 13341
+// Module ID: 13375
+// Function ID: 13376
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 4858, 4941, 1072, 5014, 8910, 7817, 1096, 7819, 1397, 7629, 13336, 6450, 2]
+// Dependencies: [32, 5, 4863, 4946, 1072, 5019, 8919, 7824, 1095, 7826, 1396, 7636, 13371, 6456, 2]
 
-// Module 13340 (ForwardActionCreators)
+// Module 13375 (ForwardActionCreators)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5014 */;
-import allSettledDefault from "allSettled" /* 6450 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import allSettledDefault from "allSettled" /* 6456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, importDefault;
@@ -35,7 +35,7 @@ let obj = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ let obj = {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp56) {
           c3 = 3;

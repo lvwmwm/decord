@@ -1,19 +1,19 @@
-// Module ID: 15009
-// Function ID: 15010
+// Module ID: 15046
+// Function ID: 15047
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 5009, 575, 9515, 6974, 1114, 9549, 7297, 7724, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9537, 6980, 1113, 9571, 7303, 7731, 5624, 2]
 // Exports: default
 
-// Module 15009 (ProductDetailsActionSheetVariants)
+// Module 15046 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 6974 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7297 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9515 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9549 */;
+import Pressables from "Pressables" /* 6980 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7303 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9537 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9571 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -38,9 +38,9 @@ function VariantOption(arg0) {
   const obj2 = { role: "radio", "aria-checked": isSelected, accessibilityLabel: name, disabled, onPress: onSelect, style: tmp.variantOption, children: React3(tmp5, obj4) };
   const PressableOpacity = Pressables.PressableOpacity;
   if (isPurchased) {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const obj3 = { variantLabel: variant.name };
-    name = intl.formatToPlainString(tmp2(1114).t["SfQB4+"], obj3);
+    name = intl.formatToPlainString(tmp2(1113).t["SfQB4+"], obj3);
   } else {
     name = variant.name;
   }

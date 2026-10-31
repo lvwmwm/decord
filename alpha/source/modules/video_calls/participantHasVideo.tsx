@@ -1,14 +1,14 @@
-// Module ID: 11209
-// Function ID: 11210
+// Module ID: 11228
+// Function ID: 11229
 // Name: participantHasVideo
-// Dependencies: [502, 2007, 5676, 5763, 504, 2]
+// Dependencies: [502, 2006, 5681, 5768, 504, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 11209 (participantHasVideo)
-import Constants from "Constants" /* 5763 */;
+// Module 11228 (participantHasVideo)
+import Constants from "Constants" /* 5768 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import CallConstants from "CallConstants" /* 5676 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import CallConstants from "CallConstants" /* 5681 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

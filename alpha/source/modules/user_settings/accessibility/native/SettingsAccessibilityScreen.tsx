@@ -1,20 +1,20 @@
-// Module ID: 17252
-// Function ID: 17253
+// Module ID: 17309
+// Function ID: 17310
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5010, 4835, 8424, 1072, 21, 1114, 2062, 2931, 7557, 7201, 17253, 1498, 563, 11505, 16533, 2]
+// Dependencies: [19, 5015, 4840, 8432, 1072, 21, 1113, 2061, 2932, 7563, 7207, 17310, 1497, 563, 11539, 16575, 2]
 // Exports: default
 
-// Module 17252 (SettingsAccessibilityScreen)
+// Module 17309 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
-import intl15 from "intl" /* 1114 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import _modDef2931 from "module_2931" /* 2931 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17253 */;
+import intl15 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import _modDef2932 from "module_2932" /* 2932 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17310 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4835 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4840 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export default function SettingsAccessibilityScreen() {
     items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
     intl2 = intl15.intl;
     items1[1] = obj4;
-    const obj5 = { settings: items3, subLabel: intl3.format(_modDef2931.L8U56h, obj6) };
+    const obj5 = { settings: items3, subLabel: intl3.format(_modDef2932.L8U56h, obj6) };
     items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
     intl3 = intl15.intl;
     obj6 = {
@@ -169,10 +169,10 @@ export default function SettingsAccessibilityScreen() {
     items14 = [, ];
     ({ YOU_BAR_NAMEPLATE_ACCESSIBILITY: arr15[0], YOU_BAR_AVATAR_DECO_ACCESSSIBILITY: arr15[1] } = MobileUserSettings);
     null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason);
-    intl13 = tmp(1114).intl;
-    const intl14 = tmp(1114).intl;
+    intl13 = tmp(1113).intl;
+    const intl14 = tmp(1113).intl;
     string = intl14.string;
-    t = tmp(1114).t;
+    t = tmp(1113).t;
     items1[13] = obj20;
     const obj21 = { sections: items1.filter((item) => null != item) };
     return createList(obj21);

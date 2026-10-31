@@ -1,10 +1,10 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7828
+// Function ID: 7829
 // Name: IsolateString
 // Dependencies: [2]
 // Exports: isolate
 
-// Module 7821 (IsolateString)
+// Module 7828 (IsolateString)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/bidi/IsolateString.tsx");

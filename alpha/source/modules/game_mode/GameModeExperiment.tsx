@@ -1,11 +1,11 @@
-// Module ID: 5013
-// Function ID: 5014
+// Module ID: 5018
+// Function ID: 5019
 // Name: GameModeExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: getGameModeExperimentConfig, useGameModeExperimentConfig
 
-// Module 5013 (GameModeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 5018 (GameModeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,26 +1,26 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18604
+// Function ID: 18605
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1193, 4858, 4880, 1072, 21, 5009, 575, 5619, 1114, 1188, 11872, 7142, 17130, 17132, 17133, 563, 18562, 5647, 18564, 18565, 18566, 8595, 5712, 6951, 18567, 10050, 18569, 18570, 5704, 18571, 2]
+// Dependencies: [19, 17, 1192, 4863, 4885, 1072, 21, 5014, 575, 5624, 1113, 1187, 11910, 7148, 17188, 17190, 17191, 563, 18605, 5652, 18607, 18608, 18609, 8603, 5717, 6957, 18610, 6027, 18612, 18613, 5709, 18614, 2]
 // Exports: default
 
-// Module 18561 (GuildRoleSubscriptionPurchasePage)
+// Module 18604 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11872 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18571 */;
+import intl6 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11910 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18614 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ function SocialBadge(onPress) {
 ({ AnalyticsLocations: unpackModuleId, GuildFeatures: closure_12, MarketingURLs: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, heroImage: { aspectRatio: 4, width: "100%" }, guildIconContainer: rect, guildIcon: obj3, contentCard: obj4, loadingContainer: { flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: 40 }, socialContainer: { flexDirection: "row" }, socialBadge: obj5, socialBadgeIcon: { height: 24, marginRight: 6 }, socialBadgeArrow: obj6, separator: size, moneyBirbPlaceholder: { marginVertical: 64, alignSelf: "center", backgroundColor: "transparent" }, gatedChannel: { flexDirection: "row", alignItems: "center", marginBottom: -4 }, gatedChannelIcon: obj7 };
+let obj = { container: obj2, heroImage: { aspectRatio: 4, width: "100%" }, guildIconContainer: rect, guildIcon: obj3, contentCard: obj4, loadingContainer: { flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: 40 }, socialBadge: obj5, socialBadgeIcon: { height: 24, marginRight: 6 }, socialBadgeArrow: obj6, separator: size, moneyBirbPlaceholder: { marginVertical: 64, alignSelf: "center", backgroundColor: "transparent" }, gatedChannel: { flexDirection: "row", alignItems: "center", marginBottom: -4 }, gatedChannelIcon: obj7 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 createStyles = createStyles.createStyles;
 rect = { borderWidth: 3, borderRadius: nativeDefault.radii.md, alignSelf: "flex-start", top: -35, left: 16, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute" };
@@ -99,13 +99,12 @@ obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH,
 obj5 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.xl, paddingVertical: 4, paddingHorizontal: 8, alignItems: "center" };
 obj6 = { height: 24, marginLeft: 6, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 24 };
-obj7 = { tintColor: nativeDefault.colors.TEXT_DEFAULT };
+obj7 = { tintColor: nativeDefault.colors.TEXT_DEFAULT, marginHorizontal: 3 };
 let closure_17 = createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePage.tsx");
 
 export default function GuildRoleSubscriptionPurchasePage(guildId) {
-  let GappedList;
   let ROLE_SUBSCRIPTIONS_TAB;
   let closure_2;
   let id1;
@@ -117,7 +116,6 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
   let items7;
   let obj12;
   let obj14;
-  let obj20;
   let theme;
   let tmp5Result2;
   guildId = guildId.guildId;
@@ -171,8 +169,8 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
       if (null != stateFromStores) {
         if (null != first) {
           const features = stateFromStores.features;
-          const obj26 = require("GuildRoleSubscriptionSettingsUtils");
-          const coverImageURI = obj26.getCoverImageURI(subscriptionsSettings);
+          const obj25 = require("GuildRoleSubscriptionSettingsUtils");
+          const coverImageURI = obj25.getCoverImageURI(subscriptionsSettings);
           const description = subscriptionsSettings.description;
           let hasItem = features.has(constants2.PARTNERED);
           store_page_trailer_url = subscriptionsSettings.store_page_trailer_url;
@@ -185,14 +183,12 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
                               let items;
                               let obj3;
                               const obj = { style: closure_2.gatedChannel, children: items };
-                              items = [authStore3(native.Spacer, { size: 3 }), , , ];
                               const obj2 = { size: native.Icon.Sizes.SMALL_20, style: closure_2.gatedChannelIcon, source: obj3.getChannelIcon(stateFromStores1) };
                               const Icon = native.Icon;
                               obj3 = utils_ChannelUtils;
-                              items[1] = authStore3(Icon, obj2);
-                              items[2] = authStore3(native.Spacer, { size: 3 });
+                              items = [authStore3(Icon, obj2), ];
                               const obj4 = { variant: "text-xs/semibold", color: "text-default", children };
-                              items[3] = authStore3(Text_Text.Text, obj4);
+                              items[1] = authStore3(Text_Text.Text, obj4);
                               return closure_15(metroRequire, obj);
                             }
               };
@@ -216,20 +212,20 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             items4[3] = closure_14(guildId(stateFromStores1[26]).TruncatedText, obj15);
             let tmp22Result = hasItem || null != store_page_trailer_url;
             const tmp23 = closure_7;
+            const tmp25 = closure_6;
             if (tmp22Result) {
               const items5 = [closure_14(guildId(stateFromStores1[11]).Spacer, { size: 24 }), ];
-              const obj16 = { style: tmp4.socialContainer, children: closure_15(GappedList, obj20) };
-              GappedList = tmp(tmp2[27]).GappedList;
+              const Stack = tmp(tmp2[27]).Stack;
               const tmp28 = closure_16;
               if (hasItem) {
-                const obj17 = { iconSource: gatedChannelId(stateFromStores1[28]), text: intl4.string(guildId(stateFromStores1[10]).t["2MhjUV"]) };
+                const obj16 = { iconSource: gatedChannelId(stateFromStores1[28]), text: intl4.string(guildId(stateFromStores1[10]).t["2MhjUV"]) };
                 intl4 = tmp(tmp2[10]).intl;
-                hasItem = tmp24(SocialBadge, obj17);
+                hasItem = tmp24(SocialBadge, obj16);
               }
               const items6 = [hasItem, ];
               let tmp24Result = null != store_page_trailer_url;
               if (tmp24Result) {
-                const obj18 = {
+                const obj17 = {
                   iconSource: gatedChannelId(stateFromStores1[29]),
                   text: intl5.string(guildId(stateFromStores1[10]).t["4PGeGA"]),
                   onPress() {
@@ -238,34 +234,34 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
                                 }
                 };
                 intl5 = tmp(tmp2[10]).intl;
-                tmp24Result = tmp24(SocialBadge, obj18);
+                tmp24Result = tmp24(SocialBadge, obj17);
               }
-              const obj19 = { children: items5 };
-              obj20 = { gap: 8, children: items6 };
+              const obj18 = { children: items5 };
+              const obj19 = { direction: "horizontal", spacing: 8, children: items6 };
               items6[1] = tmp24Result;
-              items5[1] = closure_14(closure_6, obj16);
-              tmp22Result = tmp22(tmp28, obj19);
+              items5[1] = closure_15(Stack, obj19);
+              tmp22Result = tmp22(tmp28, obj18);
             }
             items4[4] = tmp22Result;
             items4[5] = closure_14(guildId(stateFromStores1[11]).Spacer, { size: 16 });
             items4[6] = closure_14(LegalDisclaimer, {});
             items4[7] = closure_14(Separator, {});
-            const obj21 = { variant: typeConsolidationEyebrow.variant, color: "text-muted", style: items7, children: formatResult };
+            const obj20 = { variant: typeConsolidationEyebrow.variant, color: "text-muted", style: items7, children: formatResult };
             items7 = [{ textTransform: "uppercase" }, typeConsolidationEyebrow.style];
-            items4[8] = closure_14(guildId(stateFromStores1[9]).Text, obj21);
+            items4[8] = closure_14(guildId(stateFromStores1[9]).Text, obj20);
             items4[9] = closure_14(guildId(stateFromStores1[11]).Spacer, { size: 24 });
-            const obj22 = {
-              gap: 16,
+            const obj21 = {
+              spacing: 16,
               children: mapped.map((listingId) => {
                           const obj = { listingId, guildId };
                           return authStore3(GuildRoleSubscriptionPurchasePreviewCardDefault, obj, listingId);
                         })
             };
-            const GappedList2 = tmp(tmp2[27]).GappedList;
-            items4[10] = closure_14(GappedList2, obj22);
-            items3[1] = closure_15(closure_6, obj10);
-            const obj23 = { source: tmp20, style: tmp4.moneyBirbPlaceholder };
-            items3[2] = closure_14(gatedChannelId(stateFromStores1[24]), obj23);
+            const Stack2 = tmp(tmp2[27]).Stack;
+            items4[10] = closure_14(Stack2, obj21);
+            items3[1] = closure_15(tmp25, obj10);
+            const obj22 = { source: tmp20, style: tmp4.moneyBirbPlaceholder };
+            items3[2] = closure_14(gatedChannelId(stateFromStores1[24]), obj22);
             return closure_15(tmp23, obj8);
           }
           const intl = tmp(tmp2[10]).intl;
@@ -274,6 +270,6 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
       }
     }
   }
-  const obj24 = { style: tmp4.loadingContainer, children: closure_14(children, { size: "large" }) };
-  return closure_14(closure_6, obj24);
+  const obj23 = { style: tmp4.loadingContainer, children: closure_14(children, { size: "large" }) };
+  return closure_14(closure_6, obj23);
 };

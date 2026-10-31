@@ -1,23 +1,23 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 17159
+// Function ID: 17160
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 17001, 21, 575, 5009, 14641, 14640, 16998, 1626, 17068, 17065, 5619, 5629, 1188, 2]
+// Dependencies: [19, 17, 17059, 21, 575, 5014, 14679, 14678, 17056, 1625, 17126, 17123, 5624, 5634, 1187, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 17101 (QuestDockInsetHeaderBody)
+// Module 17159 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14640 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14641 */;
-import QuestDockHooks from "QuestDockHooks" /* 16998 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17065 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17068 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 14678 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14679 */;
+import QuestDockHooks from "QuestDockHooks" /* 17056 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17123 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17126 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -123,14 +123,14 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5629).Button;
+    const Button = tmp2(5634).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }
     tmp8Result4 = tmp8(Button, obj14);
   } else {
     const obj15 = { style: tmp.questDockCta, onPress: onCtaPress, loading: ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
-    tmp8Result4 = tmp8(tmp2(1188).ShinyButton, obj15);
+    tmp8Result4 = tmp8(tmp2(1187).ShinyButton, obj15);
   }
   items7[1] = tmp8Result4;
   items6[1] = metroRequire(View, obj13);

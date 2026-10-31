@@ -1,16 +1,16 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 15006
+// Function ID: 15007
 // Name: UserProfileTabPages
-// Dependencies: [32, 19, 17, 21, 5090, 1492, 1626, 5269, 5298, 11445, 2]
+// Dependencies: [32, 19, 17, 21, 5095, 1491, 1625, 5274, 5303, 14177, 2]
 // Exports: useMeasuredTabItems
 
-// Module 14969 (UserProfileTabPages)
+// Module 15006 (UserProfileTabPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -68,13 +68,13 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
       });
     }
   }, items);
-  let obj = parentPagerGesture(5090);
+  let obj = parentPagerGesture(5095);
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = parentPagerGesture(5090);
+  let obj2 = parentPagerGesture(5095);
   const sharedValue1 = obj2.useSharedValue(-1);
-  let obj3 = parentPagerGesture(5090);
+  let obj3 = parentPagerGesture(5095);
   const sharedValue2 = obj3.useSharedValue(false);
-  const obj4 = parentPagerGesture(5090);
+  const obj4 = parentPagerGesture(5095);
   const sharedValue3 = obj4.useSharedValue(-1);
   const useReducedMotion = state.useReducedMotion;
   const items1 = [scrollViewRef, sharedValue1, useReducedMotion];
@@ -154,13 +154,13 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
       }
     }
   };
-  const obj5 = parentPagerGesture(5090);
-  fn2.__closure = { destinationIndex: sharedValue3, scrollPosition, fillHeight: tmp2, pagerHeight: sharedValue, pageHeights, runOnJS: parentPagerGesture(5090).runOnJS, scrollUpToFit: callback1 };
+  const obj5 = parentPagerGesture(5095);
+  fn2.__closure = { destinationIndex: sharedValue3, scrollPosition, fillHeight: tmp2, pagerHeight: sharedValue, pageHeights, runOnJS: parentPagerGesture(5095).runOnJS, scrollUpToFit: callback1 };
   fn2.__workletHash = 14291429985222;
   fn2.__initData = __initData2;
-  ({ destinationIndex: sharedValue3, scrollPosition, fillHeight: tmp2, pagerHeight: sharedValue, pageHeights, runOnJS: parentPagerGesture(5090).runOnJS, scrollUpToFit: callback1 });
+  ({ destinationIndex: sharedValue3, scrollPosition, fillHeight: tmp2, pagerHeight: sharedValue, pageHeights, runOnJS: parentPagerGesture(5095).runOnJS, scrollUpToFit: callback1 });
   const animatedReaction = obj5.useAnimatedReaction(fn, fn2);
-  const obj7 = parentPagerGesture(5090);
+  const obj7 = parentPagerGesture(5095);
   class D {
     constructor() {
       const value = pageHeights.get();
@@ -230,7 +230,7 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   S.__workletHash = 8135984088379;
   S.__initData = __initData4;
   const animatedReaction1 = obj7.useAnimatedReaction(D, S);
-  const obj8 = parentPagerGesture(5090);
+  const obj8 = parentPagerGesture(5095);
   class T {
     constructor() {
       let obj;

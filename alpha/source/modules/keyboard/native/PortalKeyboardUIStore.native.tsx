@@ -1,13 +1,13 @@
-// Module ID: 5205
-// Function ID: 5206
+// Module ID: 5210
+// Function ID: 5211
 // Name: PortalKeyboardUIStore
-// Dependencies: [5206, 5208, 1267, 2]
+// Dependencies: [5211, 5213, 1266, 2]
 // Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 5205 (PortalKeyboardUIStore)
-import v1 from "v1" /* 1267 */;
-import ZustandStore from "ZustandStore" /* 5206 */;
-import PortalKeyboard from "PortalKeyboard" /* 5208 */;
+// Module 5210 (PortalKeyboardUIStore)
+import v1 from "v1" /* 1266 */;
+import ZustandStore from "ZustandStore" /* 5211 */;
+import PortalKeyboard from "PortalKeyboard" /* 5213 */;
 import size from "module_2" /* 2 */;
 
 let renderers;

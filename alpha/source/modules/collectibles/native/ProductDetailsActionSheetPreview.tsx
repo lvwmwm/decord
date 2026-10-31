@@ -1,18 +1,18 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 15025
+// Function ID: 15026
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 5009, 575, 1988, 14989, 14991, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 1987, 15026, 15028, 2]
 // Exports: default
 
-// Module 14988 (ProductDetailsActionSheetPreview)
+// Module 15025 (ProductDetailsActionSheetPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 14989 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 15026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

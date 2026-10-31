@@ -1,11 +1,11 @@
-// Module ID: 7142
-// Function ID: 7143
+// Module ID: 7148
+// Function ID: 7149
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [7143, 2]
+// Dependencies: [7149, 2]
 // Exports: useTypeConsolidationEyebrow, useTypeConsolidationTextTransform
 
-// Module 7142 (useTypeConsolidationTextTransform)
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
+// Module 7148 (useTypeConsolidationTextTransform)
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
 import size from "module_2" /* 2 */;
 
 const style = { textTransform: "none" };
@@ -26,7 +26,7 @@ export function useTypeConsolidationEyebrow(BountiesScrollRecapFooter, variant) 
     obj3 = { variant: "experimental/body-sm/medium", style };
     const obj2 = { variant: "experimental/body-sm/medium", style };
   } else {
-    obj3 = { variant, style: "Array" };
+    obj3 = { variant, style: "a" };
   }
   return obj3;
 }

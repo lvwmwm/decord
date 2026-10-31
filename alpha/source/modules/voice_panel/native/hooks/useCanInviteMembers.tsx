@@ -1,13 +1,13 @@
-// Module ID: 19157
-// Function ID: 19158
+// Module ID: 19209
+// Function ID: 19210
 // Name: useCanInviteMembers
-// Dependencies: [4858, 4941, 1083, 563, 2]
+// Dependencies: [4863, 4946, 1083, 563, 2]
 // Exports: useCanInviteMembers
 
-// Module 19157 (useCanInviteMembers)
+// Module 19209 (useCanInviteMembers)
 import Constants from "Constants" /* 1083 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

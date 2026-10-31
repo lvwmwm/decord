@@ -1,24 +1,24 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15169
+// Function ID: 15170
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 4858, 1072, 21, 5009, 575, 5588, 8348, 15124, 7555, 504, 8356, 7054, 1114, 5619, 7557, 5755, 2]
+// Dependencies: [32, 19, 17, 4863, 1072, 21, 5014, 575, 5593, 8356, 15163, 7561, 504, 8364, 7060, 1113, 5624, 7563, 5760, 2]
 // Exports: default
 
-// Module 15130 (InAppReportsSettingsUpsellsElement)
+// Module 15169 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useMountEffectDefault from "useMountEffect" /* 5588 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
-import SettingsIcon from "SettingsIcon" /* 7555 */;
-import openUserSettings from "openUserSettings" /* 7557 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8348 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15124 */;
+import useMountEffectDefault from "useMountEffect" /* 5593 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import SettingsIcon from "SettingsIcon" /* 7561 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8356 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

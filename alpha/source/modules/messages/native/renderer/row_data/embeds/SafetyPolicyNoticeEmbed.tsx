@@ -1,17 +1,18 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15147
+// Function ID: 15148
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1072, 7962, 2044, 1114, 8388, 8019, 2]
+// Dependencies: [17, 1072, 7970, 1113, 8396, 8027, 15148, 15149, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 15110 (SafetyPolicyNoticeEmbed)
+// Module 15147 (SafetyPolicyNoticeEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8019 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8388 */;
+import intl4 from "intl" /* 1113 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8027 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import SafetyWarningAgeUtils from "SafetyWarningAgeUtils" /* 15148 */;
+import SafetyWarningAgeTextExperiment from "SafetyWarningAgeTextExperiment" /* 15149 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -20,14 +21,12 @@ const SafetyHubPolicyNoticeKeys = SafetyHubConstants.SafetyHubPolicyNoticeKeys;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx");
 
 export function createSafetyPolicyNoticeEmbed(message) {
-  let diff;
-  let eevFb6;
-  let formatToPlainString;
+  let daysAgo;
+  let formatSafetyWarningAge;
   let intl;
+  let intl2;
   let intl3;
-  let intl4;
   let obj2;
-  let obj3;
   let obj4;
   if (null != message.embeds) {
     const first = message.embeds[0];
@@ -66,18 +65,16 @@ export function createSafetyPolicyNoticeEmbed(message) {
         }
         if (null != rawValue) {
           if (null != parsed) {
-            const obj = { titleText: intl.string(intl5.t["4CxGXi"]), titleIcon: obj2.getAssetUriForEmbed(Image.resolveAssetSource(AssetRegistryDefault)), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: intl3.string(intl5.t["5CLb0A"]), ctaText: intl4.string(intl5.t.zKnzwm), classificationId: rawValue };
-            intl = intl5.intl;
+            const obj = { titleText: intl.string(intl4.t["4CxGXi"]), titleIcon: obj2.getAssetUriForEmbed(Image.resolveAssetSource(AssetRegistryDefault)), subtitleText: formatSafetyWarningAge(daysAgo, obj4.getIsSafetyWarningAgeTextEnabled("safety_warning_system_message")), descriptionText: intl2.string(intl4.t["5CLb0A"]), ctaText: intl3.string(intl4.t.zKnzwm), classificationId: rawValue };
+            intl = intl4.intl;
             obj2 = renderer_EmbedUtils;
-            const intl2 = intl5.intl;
-            formatToPlainString = intl2.formatToPlainString;
-            obj3 = { daysAgo: diff(obj4.unix(parsed), "days") };
-            eevFb6 = intl5.t.eevFb6;
-            diff = _modDef2044().diff;
-            _modDef2044();
-            obj4 = _modDef2044;
-            intl3 = intl5.intl;
-            intl4 = intl5.intl;
+            formatSafetyWarningAge = SafetyWarningAgeUtils.formatSafetyWarningAge;
+            SafetyWarningAgeUtils;
+            const obj3 = SafetyWarningAgeUtils;
+            daysAgo = obj3.getDaysAgo(parsed);
+            obj4 = SafetyWarningAgeTextExperiment;
+            intl2 = intl4.intl;
+            intl3 = intl4.intl;
             return obj;
           }
         }

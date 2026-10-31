@@ -1,23 +1,23 @@
-// Module ID: 6449
-// Function ID: 6450
+// Module ID: 6455
+// Function ID: 6456
 // Name: StoreUtils
-// Dependencies: [5, 502, 2049, 2050, 2053, 1072, 6450, 5947, 5866, 1445, 6529, 5767, 1283, 1376, 1114, 2]
+// Dependencies: [5, 502, 2048, 2049, 2052, 1072, 6456, 5952, 5871, 1444, 6535, 5772, 1282, 1375, 1113, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 6449 (StoreUtils)
-import intl4 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1445 */;
-import BrowserUtils from "BrowserUtils" /* 5866 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5947 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6529 */;
+// Module 6455 (StoreUtils)
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
+import BrowserUtils from "BrowserUtils" /* 5871 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5952 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 2049 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2050 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import BillingInfoStore from "BillingInfoStore" /* 2048 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2049 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import Constants from "Constants" /* 1072 */;
-import allSettled_mod from "allSettled" /* 6450 */;
+import allSettled_mod from "allSettled" /* 6456 */;
 import size from "module_2" /* 2 */;
 
 let c1, c6, c7;
@@ -38,7 +38,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp13) {
         c2 = 3;
         throw tmp13;
@@ -135,7 +135,7 @@ obj = function _httpGetWithCountryCodeQuery() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

@@ -1,25 +1,25 @@
-// Module ID: 13939
-// Function ID: 13940
+// Module ID: 13974
+// Function ID: 13975
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [32, 19, 17, 9921, 21, 5009, 575, 13940, 5090, 10004, 10029, 5075, 2]
+// Dependencies: [32, 19, 17, 9942, 21, 5014, 575, 13975, 5095, 10025, 10050, 5080, 2]
 // Exports: EmojiSuggestionBarLarge
 
-// Module 13939 (EmojiSuggestionBarLarge)
+// Module 13974 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9921 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 10004 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13940 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 10025 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13975 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const ReanimatedRexportDefault = tmp(5090);
+const ReanimatedRexportDefault = tmp(5095);
 function EmojiSuggestionBarLargeAnimated(arg0) {
   let _undefined;
   let _undefined2;
@@ -92,7 +92,7 @@ function EmojiSuggestionBarLargeAnimated(arg0) {
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(10029).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(10050).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));

@@ -1,15 +1,15 @@
-// Module ID: 18545
-// Function ID: 18546
+// Module ID: 18588
+// Function ID: 18589
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 5009, 575, 5090, 2]
+// Dependencies: [17, 21, 5014, 575, 5095, 2]
 // Exports: MainTabsContentScrim
 
-// Module 18545 (MainTabsContentScrim)
+// Module 18588 (MainTabsContentScrim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -28,7 +28,7 @@ export function MainTabsContentScrim(translateX) {
   translateX = translateX.translateX;
   const maxWidth = translateX.maxWidth;
   const tmp = closure_4();
-  let obj = translateX(5090);
+  let obj = translateX(5095);
   const fn = function c() {
     let interpolate;
     let items;
@@ -40,11 +40,11 @@ export function MainTabsContentScrim(translateX) {
     items = [maxWidth, 0];
     return obj;
   };
-  fn.__closure = { interpolate: translateX(5090).interpolate, translateX, maxWidth, Extrapolation: translateX(5090).Extrapolation };
+  fn.__closure = { interpolate: translateX(5095).interpolate, translateX, maxWidth, Extrapolation: translateX(5095).Extrapolation };
   fn.__workletHash = 7933670426250;
   fn.__initData = __initData;
-  ({ interpolate: translateX(5090).interpolate, translateX, maxWidth, Extrapolation: translateX(5090).Extrapolation });
+  ({ interpolate: translateX(5095).interpolate, translateX, maxWidth, Extrapolation: translateX(5095).Extrapolation });
   const animatedStyle = obj.useAnimatedStyle(fn);
   let items = [tmp.scrim, animatedStyle];
-  return jsx(maxWidth(5090).View, { style: items, pointerEvents: "none" });
+  return jsx(maxWidth(5095).View, { style: items, pointerEvents: "none" });
 }

@@ -1,31 +1,30 @@
-// Module ID: 7572
-// Function ID: 7573
+// Module ID: 7578
+// Function ID: 7579
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1384, 2053, 7573, 1072, 1386, 2044, 38, 4822, 2048, 504, 5588, 7575, 12, 2]
+// Dependencies: [32, 19, 1383, 2052, 7579, 1072, 1385, 2042, 38, 4827, 7581, 2047, 504, 5593, 7582, 2046, 12, 2]
 // Exports: default
 
-// Module 7572 (useFractionalPremiumInfo)
+// Module 7578 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import PremiumUtils from "PremiumUtils" /* 2048 */;
-import BillingUtils from "BillingUtils" /* 4822 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7575 */;
+import Constants from "Constants" /* 1072 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import EntitlementTypes from "EntitlementTypes" /* 2046 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import BillingUtils from "BillingUtils" /* 4827 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 7581 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7582 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
-import EntitlementStore from "EntitlementStore" /* 7573 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import UserStore from "UserStore" /* 1383 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import EntitlementStore from "EntitlementStore" /* 7579 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let c10;
 let c9;
-let closure_12;
-let metroImportAll;
-let unpackModuleId;
 function calculateFractionalPremiumInfo(isFetching) {
   let entitlements;
   let excludeReverseTrialFromCountdown;
@@ -42,8 +41,8 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  const obj = { isFractionalPremiumActive: false, fractionalState: unpackModuleId.NONE, startsAt: _modDef2044(0), endsAt: _modDef2044(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef2044(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
-  let tmp = unpackModuleId;
+  const obj = { isFractionalPremiumActive: false, fractionalState: constants.NONE, startsAt: _modDef2042(0), endsAt: _modDef2042(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef2042(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  let tmp = constants;
   let tmp2 = importDefault;
   const currentUser = isFetching.currentUser;
   if (flag) {
@@ -93,7 +92,7 @@ function calculateFractionalPremiumInfo(isFetching) {
       if (null != first) {
         if (null != premiumSubscription) {
           let FP_ONLY;
-          if (premiumSubscription.status === constants3.PAUSED) {
+          if (premiumSubscription.status === SubscriptionStatusTypes.PAUSED) {
             FP_ONLY = tmp.FP_SUB_PAUSED;
           }
           NONE = FP_ONLY;
@@ -105,37 +104,37 @@ function calculateFractionalPremiumInfo(isFetching) {
         if (first != null) {
           sourceType = first.sourceType;
         }
-        excludeReverseTrialFromCountdown = sourceType === metroImportAll.REVERSE_TRIAL;
+        excludeReverseTrialFromCountdown = sourceType === EntitlementSourceTypes.EntitlementSourceTypes.REVERSE_TRIAL;
       }
       const obj7 = { isFractionalPremiumActive: null != first, fractionalState: NONE, startsAt: tmp10, endsAt: tmp2ResultResult, currentEntitlementId: str, currentEntitlementEndsAt: tmp17, unactivatedUnits: unactivatedFractionalPremiumUnits, fetched: fetchedAllEntitlements };
       if (null != first) {
-        tmp10 = _modDef2044(first.startsAt);
+        tmp10 = _modDef2042(first.startsAt);
       } else {
-        tmp10 = _modDef2044(0);
+        tmp10 = _modDef2042(0);
       }
       if (null != first) {
-        const tmp2Result = _modDef2044;
+        const tmp2Result = _modDef2042;
         const obj4 = PremiumUtils;
         tmp2ResultResult = tmp2Result(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
       } else {
-        tmp2ResultResult = _modDef2044(0);
+        tmp2ResultResult = _modDef2042(0);
       }
       str = "";
       if (null != first) {
         str = first.id;
       }
       if (null != first) {
-        tmp17 = _modDef2044(first.endsAt);
+        tmp17 = _modDef2042(first.endsAt);
       } else {
-        tmp17 = _modDef2044(0);
+        tmp17 = _modDef2042(0);
       }
       return obj7;
     }
     return obj;
   }
 }
-({ EntitlementSourceTypes: metroImportAll, EntitlementTypes: c9, SubscriptionStatusTypes: c10 } = Constants);
-({ FractionalPremiumStates: unpackModuleId, PREMIUM_SUBSCRIPTION_APPLICATION: closure_12 } = PremiumConstants);
+const SubscriptionStatusTypes = Constants.SubscriptionStatusTypes;
+({ FractionalPremiumStates: c9, PREMIUM_SUBSCRIPTION_APPLICATION: c10 } = PremiumConstants);
 let result = size.fileFinishedImporting("modules/billing/hooks/useFractionalPremiumInfo.tsx");
 
 export default function useFractionalPremiumInfo() {
@@ -151,24 +150,24 @@ export default function useFractionalPremiumInfo() {
   let stateFromStores2;
   let closure_8;
   let tmp = excludeReverseTrialFromCountdown;
-  let obj2 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  let obj2 = forceFetch(excludeReverseTrialFromCountdown[12]);
   const items = [stateFromStores1];
   const stateFromStores = obj2.useStateFromStores(items, () => stateFromStores1.getCurrentUser());
-  let obj3 = forceFetch(excludeReverseTrialFromCountdown[11]);
   let tmp3 = stateFromStores2;
   const items1 = [stateFromStores2];
+  const obj3 = forceFetch(excludeReverseTrialFromCountdown[12]);
   const stateFromStoresArray = obj3.useStateFromStoresArray(items1, () => {
     const obj = { excludeReverseTrial: importDefault };
     return EntitlementStore.getFractionalPremium(obj);
   });
   const items2 = [stateFromStores2];
-  const obj4 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const obj4 = forceFetch(excludeReverseTrialFromCountdown[12]);
   stateFromStores1 = obj4.useStateFromStores(items2, () => stateFromStores2.fetchedAllEntitlements);
   const items3 = [stateFromStores2];
-  const obj5 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const obj5 = forceFetch(excludeReverseTrialFromCountdown[12]);
   const stateFromStoresArray1 = obj5.useStateFromStoresArray(items3, () => stateFromStores2.getUnactivatedFractionalPremiumUnits());
   const items4 = [stateFromStoresArray1];
-  const obj6 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const obj6 = forceFetch(excludeReverseTrialFromCountdown[12]);
   stateFromStores2 = obj6.useStateFromStores(items4, () => stateFromStoresArray1.getPremiumTypeSubscription());
   let fetchingAllEntitlements = null != stateFromStores;
   const useState = stateFromStoresArray.useState;
@@ -192,18 +191,18 @@ export default function useFractionalPremiumInfo() {
     let tmp10 = null != stateFromStores;
     if (tmp10) {
       let applicationIdsFetching = tmp3.applicationIdsFetching;
-      let tmp11 = closure_12;
-      tmp10 = !applicationIdsFetching.has(closure_12);
+      let tmp11 = closure_10;
+      tmp10 = !applicationIdsFetching.has(closure_10);
     }
     if (tmp10) {
       let applicationIdsFetched = tmp3.applicationIdsFetched;
-      tmp10 = !applicationIdsFetched.has(closure_12);
+      tmp10 = !applicationIdsFetched.has(closure_10);
     }
     fetchingAllEntitlements = tmp10;
   }
   if (!fetchingAllEntitlements) {
     const applicationIdsFetching2 = tmp3.applicationIdsFetching;
-    fetchingAllEntitlements = applicationIdsFetching2.has(closure_12);
+    fetchingAllEntitlements = applicationIdsFetching2.has(closure_10);
   }
   const tmp14 = stateFromStores(useState(tmp8({ isFetching: fetchingAllEntitlements, entitlements: stateFromStoresArray, unactivatedFractionalPremiumUnits: stateFromStoresArray1, currentUser: stateFromStores, premiumSubscription: stateFromStores2, fetchedAllEntitlements: stateFromStores1, excludeReverseTrialFromCountdown })), 2);
   closure_8 = tmp14[1];
@@ -224,22 +223,23 @@ export default function useFractionalPremiumInfo() {
       tmp3 = tmp6;
     }
     if (tmp3) {
-      const obj2 = { entitlementType: constants.FRACTIONAL_REDEMPTION };
-      const obj = EntitlementActionCreators;
-      const userEntitlements = obj.fetchUserEntitlements(obj2);
+      const obj = { entitlementType: EntitlementTypes.EntitlementTypes.FRACTIONAL_REDEMPTION };
+      const fetchUserEntitlements = EntitlementActionCreators.fetchUserEntitlements;
+      EntitlementActionCreators;
+      const userEntitlements = fetchUserEntitlements(obj);
     }
     let tmp11 = null != tmp2;
     if (tmp11) {
       const applicationIdsFetching = EntitlementStore.applicationIdsFetching;
-      tmp11 = !applicationIdsFetching.has(authStore2);
+      tmp11 = !applicationIdsFetching.has(authStore);
     }
     if (tmp11) {
       const applicationIdsFetched = EntitlementStore.applicationIdsFetched;
-      tmp11 = !applicationIdsFetched.has(authStore2);
+      tmp11 = !applicationIdsFetched.has(authStore);
     }
     if (tmp11) {
-      const obj3 = EntitlementActionCreators;
-      const userEntitlementsForApplication = obj3.fetchUserEntitlementsForApplication(authStore2);
+      const obj2 = EntitlementActionCreators;
+      const userEntitlementsForApplication = obj2.fetchUserEntitlementsForApplication(authStore);
     }
   });
   const items5 = [stateFromStores, stateFromStoresArray, stateFromStores2, stateFromStoresArray1, stateFromStores1, excludeReverseTrialFromCountdown];
@@ -248,7 +248,7 @@ export default function useFractionalPremiumInfo() {
     let closure_0 = calculateFractionalPremiumInfo(obj);
     let tmp = closure_8((arg0) => {
       let tmp = closure_0;
-      const obj = forceFetch(excludeReverseTrialFromCountdown[14]);
+      const obj = forceFetch(excludeReverseTrialFromCountdown[16]);
       if (obj.isEqual(arg0, closure_0)) {
         tmp = arg0;
       }

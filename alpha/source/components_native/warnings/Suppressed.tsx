@@ -1,16 +1,16 @@
-// Module ID: 18956
-// Function ID: 18957
+// Module ID: 19005
+// Function ID: 19006
 // Name: Suppressed
-// Dependencies: [19, 15596, 21, 18957, 1114, 18958, 18959, 6025, 2]
+// Dependencies: [19, 15638, 21, 19006, 1113, 19007, 19008, 6030, 2]
 
-// Module 18956 (Suppressed)
+// Module 19005 (Suppressed)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1114 */;
-import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 18957 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18958 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18959 */;
+import intl4 from "intl" /* 1113 */;
+import PermissionActionCreatorsDefault from "PermissionActionCreators" /* 19006 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19007 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19008 */;
 import react from "react" /* 19 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15596 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15638 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -35,18 +35,18 @@ class Suppressed extends Component {
     const t = intl4.t;
     if (isAFKChannelResult) {
       stringResult = string(t.KuYcnU);
-      const intl3 = tmp2(1114).intl;
-      stringResult1 = intl3.string(tmp2(1114).t["RaFZ3+"]);
+      const intl3 = tmp2(1113).intl;
+      stringResult1 = intl3.string(tmp2(1113).t["RaFZ3+"]);
       tmp7 = AssetRegistryDefault;
       tmp6 = importDefault;
     } else {
       stringResult = string(t.FJSZVM);
-      const intl2 = tmp2(1114).intl;
-      stringResult1 = intl2.string(tmp2(1114).t.etJjgW);
+      const intl2 = tmp2(1113).intl;
+      stringResult1 = intl2.string(tmp2(1113).t.etJjgW);
       tmp6 = importDefault;
       tmp7 = AssetRegistryDefault2;
     }
-    return jsx(tmp6(6025), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
+    return jsx(tmp6(6030), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
   }
 }
 const prototype = Suppressed.prototype;

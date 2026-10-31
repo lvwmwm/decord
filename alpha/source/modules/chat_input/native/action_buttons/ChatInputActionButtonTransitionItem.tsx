@@ -1,17 +1,17 @@
-// Module ID: 12770
-// Function ID: 12771
+// Module ID: 12805
+// Function ID: 12806
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 12771, 21, 5075, 5090, 5249, 12772, 2]
+// Dependencies: [19, 17, 12806, 21, 5080, 5095, 5254, 12807, 2]
 // Exports: default, interactivityProps
 
-// Module 12770 (ChatInputActionButtonTransitionItem)
+// Module 12805 (ChatInputActionButtonTransitionItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import ChatInputConstants from "ChatInputConstants" /* 12771 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12772 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import ChatInputConstants from "ChatInputConstants" /* 12806 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12807 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ function FadeTransitionItem(state) {
         }
       };
       const tmpResult = timing;
-      let obj = { runOnJS: tmp(5090).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(5095).runOnJS, cleanup };
       const withTiming = tmpResult.withTiming;
       fn.__closure = obj;
       fn.__workletHash = 10965161938750;

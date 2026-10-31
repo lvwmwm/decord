@@ -1,15 +1,15 @@
-// Module ID: 7055
-// Function ID: 7056
+// Module ID: 7061
+// Function ID: 7062
 // Name: TableRadioRow
-// Dependencies: [19, 21, 7052, 5182, 5077, 6969, 7056, 2]
+// Dependencies: [19, 21, 7058, 5187, 5082, 6975, 7062, 2]
 // Exports: TableRadioRow
 
-// Module 7055 (TableRadioRow)
+// Module 7061 (TableRadioRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5077 */;
-import native from "native" /* 5182 */;
-import TableRadioGroup from "TableRadioGroup" /* 7052 */;
-import FormRadio from "FormRadio" /* 7056 */;
+import react_native from "react-native" /* 5082 */;
+import native from "native" /* 5187 */;
+import TableRadioGroup from "TableRadioGroup" /* 7058 */;
+import FormRadio from "FormRadio" /* 7062 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ export function TableRadioRow(value) {
   const tmp2Result4 = react_native;
   const radioA11yNative = tmp2Result4.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const TableRow = tmp2(6969).TableRow;
+  const TableRow = tmp2(6975).TableRow;
   const merged1 = Object.assign(merged);
   let str = nodeText1;
   if (nodeText1 == null) {

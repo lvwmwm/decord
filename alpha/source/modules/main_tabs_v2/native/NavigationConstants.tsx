@@ -1,9 +1,9 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 17971
+// Function ID: 17972
 // Name: NavigationConstants
 // Dependencies: [2]
 
-// Module 17928 (NavigationConstants)
+// Module 17971 (NavigationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/NavigationConstants.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 17617
-// Function ID: 17618
+// Module ID: 17677
+// Function ID: 17678
 // Name: OpenCaptchaTestModal
-// Dependencies: [5, 19, 21, 6738, 17618, 1995, 2]
+// Dependencies: [5, 19, 21, 6744, 17678, 1994, 2]
 // Exports: showCaptchaTestModal
 
-// Module 17617 (OpenCaptchaTestModal)
+// Module 17677 (OpenCaptchaTestModal)
 import Fragment from "Fragment" /* 21 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

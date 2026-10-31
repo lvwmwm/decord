@@ -1,9 +1,9 @@
-// Module ID: 4868
-// Function ID: 4869
+// Module ID: 4873
+// Function ID: 4874
 // Name: ForumLayout
 // Dependencies: [2]
 
-// Module 4868 (ForumLayout)
+// Module 4873 (ForumLayout)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([0, 1, 2]) };

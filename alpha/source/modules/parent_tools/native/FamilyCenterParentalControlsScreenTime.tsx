@@ -1,16 +1,16 @@
-// Module ID: 16784
-// Function ID: 16785
+// Module ID: 16826
+// Function ID: 16827
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1072, 21, 5009, 575, 10994, 6969, 5619, 1114, 2537, 16742, 1498, 7054, 2]
+// Dependencies: [17, 1072, 21, 5014, 575, 11013, 6975, 5624, 1113, 2538, 16784, 1497, 7060, 2]
 // Exports: default
 
-// Module 16784 (FamilyCenterParentalControlsScreenTime)
+// Module 16826 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import _modDef2537 from "module_2537" /* 2537 */;
+import _modDef2538 from "module_2538" /* 2538 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,16 +31,16 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10994);
+  let obj = rule(11013);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(10994);
+  let obj2 = rule(11013);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6969).TableRow;
-  Text = rule(5619).Text;
+  const TableRow = rule(6975).TableRow;
+  Text = rule(5624).Text;
   const enabled = rule.enabled;
-  const intl = rule(1114).intl;
+  const intl = rule(1113).intl;
   const string = intl.string;
-  const tmp4 = _modDef2537;
+  const tmp4 = _modDef2538;
   if (enabled) {
     stringResult = string(tmp4["8vDHRq"]);
   } else {
@@ -103,7 +103,7 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2537")["72CmJd"]) };
+    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2538")["72CmJd"]) };
     const Text = tmp2(tmp3[7]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

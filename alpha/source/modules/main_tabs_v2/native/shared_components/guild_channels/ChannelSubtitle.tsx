@@ -1,14 +1,14 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18713
+// Function ID: 18714
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 11030, 5619, 18234, 11025, 2]
+// Dependencies: [19, 21, 11049, 5624, 18277, 11044, 2]
 // Exports: renderChannelSubtitle
 
-// Module 18671 (guild_channels/ChannelSubtitle)
+// Module 18713 (guild_channels/ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11025 */;
-import ChannelListLayout from "ChannelListLayout" /* 11030 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 18234 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11044 */;
+import ChannelListLayout from "ChannelListLayout" /* 11049 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 18277 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ function ChannelSubtitle(arg0) {
   } else {
     const obj2 = { children: renderMessagePreviewMarkup(obj3) };
     const tmp4 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(5619).Text;
+    const Text = tmp(5624).Text;
     const merged = Object.assign(textProps);
     obj3 = { content: channelSubtitleData.subtitle, muted, channelId, guildId, layout, color: "text-muted", disableAnimatedEmoji: !tmp4 };
     renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
@@ -59,7 +59,7 @@ export function renderChannelSubtitle(arg0) {
     obj3 = ChannelListLayout;
     const tmp10 = require;
     if (typeof subtitle === "string") {
-      const Text = tmp10(5619).Text;
+      const Text = tmp10(5624).Text;
       const merged = Object.assign(obj2);
       tmp9 = <Text>{subtitle}</Text>;
     } else {

@@ -1,88 +1,412 @@
 // Module ID: 15896
 // Function ID: 15897
-// Dependencies: [32, 15869, 15886]
+// Dependencies: [41, 42, 15897, 15898, 15899, 15900, 15901]
 
 // Module 15896
-import _mod15869 from "module_15869" /* 15869 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _createClass from "_createClass" /* 42 */;
+import _mod15897 from "module_15897" /* 15897 */;
+import _mod15898 from "module_15898" /* 15898 */;
+import _mod15899 from "module_15899" /* 15899 */;
+import _mod15901 from "module_15901" /* 15901 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-const require = globalThis.__r;
-let _require;
-
-
-export default (arr, arg1, arg2) => {
-  let closure_0;
-  let first;
-  let raw;
-  let tmp22;
-  let tmp = arg1;
-  _require = arg2;
-  const items = [];
-  let tmp2 = null;
-  let tmp3 = null;
-  const sorted = arr.sort((arg0, arg1) => _mod15869(arg0, arg1, closure_0));
-  for (const item10017 of sorted) {
-    if (require("module_15886")(item10017, tmp, arg2)) {
-      tmp3 = item10017;
-      let tmp12 = tmp2;
-      if (!tmp12) {
-        tmp2 = item10017;
-      }
-    } else {
-      let tmp8 = tmp3;
-      if (tmp8) {
-        let items1 = [tmp2, ];
-        items1[1] = tmp3;
-        arr = items.push(items1);
-      }
-      tmp3 = null;
-      tmp2 = null;
-    }
-    continue;
-  }
-  const tmp13 = tmp2;
-  if (tmp13) {
-    const items2 = [tmp2, null];
-    items.push(items2);
-  }
-  const items3 = [];
-  const tmp16 = items[Symbol.iterator]();
-  while (tmp16 !== undefined) {
-    [first, tmp22] = tmp17;
-    let tmp21 = first;
-    let tmp23 = tmp22;
-    if (first === tmp22) {
-      let arr3 = items3.push(tmp21);
-    } else {
-      if (!tmp23) {
-        if (tmp21 === sorted[0]) {
-          let arr4 = items3.push("*");
+class SemVer {
+  constructor(loose, arg1) {
+    let version;
+    const self = this;
+    _classCallCheck(this, SemVer);
+    const tmp4 = _mod15897(arg1);
+    if (loose instanceof SemVer) {
+      if (loose.loose === tmp4.loose) {
+        if (loose.includePrerelease === tmp4.includePrerelease) {
+          return loose;
         }
       }
-      if (tmp23) {
-        if (tmp21 === sorted[0]) {
-          let _HermesInternal3 = HermesInternal;
-          let arr5 = items3.push("<=" + tmp23);
+      version = loose.version;
+    } else {
+      version = loose;
+      if (typeof loose !== "string") {
+        const _TypeError6 = TypeError;
+        const _HermesInternal3 = HermesInternal;
+        const self12 = this;
+        const self13 = this;
+        const typeError = new TypeError("Invalid version. Must be a string. Got type \"" + typeof loose + "\".");
+        throw typeError;
+      }
+    }
+    if (version.length > _mod15898.MAX_LENGTH) {
+      const _TypeError5 = TypeError;
+      const _HermesInternal2 = HermesInternal;
+      const self10 = this;
+      const self11 = this;
+      const typeError1 = new TypeError("version is longer than " + tmp2(15898).MAX_LENGTH + " characters");
+      throw typeError1;
+    } else {
+      let tmp5;
+      _mod15899("SemVer", version, tmp4);
+      self.options = tmp4;
+      self.loose = tmp4.loose;
+      self.includePrerelease = tmp4.includePrerelease;
+      const match = version.trim().match;
+      loose = tmp4.loose;
+      version.trim();
+      const safeRe = tmp2(15900).safeRe;
+      const t = tmp2(15900).t;
+      if (loose) {
+        tmp5 = safeRe[t.LOOSE];
+      } else {
+        tmp5 = safeRe[t.FULL];
+      }
+      const match1 = match(tmp5);
+      if (match1) {
+        self.raw = version;
+        self.major = +match1[1];
+        self.minor = +match1[2];
+        self.patch = +match1[3];
+        if (self.major <= _mod15898.MAX_SAFE_INTEGER) {
+          if (self.major >= 0) {
+            if (self.minor <= _mod15898.MAX_SAFE_INTEGER) {
+              if (self.minor >= 0) {
+                if (self.patch <= _mod15898.MAX_SAFE_INTEGER) {
+                  if (self.patch >= 0) {
+                    let parts1;
+                    if (match1[4]) {
+                      const str2 = match1[4];
+                      const parts = str2.split(".");
+                      self.prerelease = parts.map((item) => {
+                        const obj = /^[0-9]+$/;
+                        if (obj.test(item)) {
+                          if (0 <= +item) {
+                            if (+item < SemVer(closure_1_1[3]).MAX_SAFE_INTEGER) {
+                              return +item;
+                            }
+                          }
+                        }
+                        return item;
+                      });
+                    } else {
+                      self.prerelease = [];
+                    }
+                    if (match1[5]) {
+                      const str4 = match1[5];
+                      parts1 = str4.split(".");
+                    } else {
+                      parts1 = [];
+                    }
+                    self.build = parts1;
+                    self.format();
+                  }
+                }
+                const _TypeError2 = TypeError;
+                const self4 = this;
+                const self5 = this;
+                const typeError2 = new TypeError("Invalid patch version");
+                throw typeError2;
+              }
+            }
+            const _TypeError3 = TypeError;
+            const self6 = this;
+            const self7 = this;
+            const typeError3 = new TypeError("Invalid minor version");
+            throw typeError3;
+          }
+        }
+        const _TypeError4 = TypeError;
+        const self8 = this;
+        const self9 = this;
+        const typeError4 = new TypeError("Invalid major version");
+        throw typeError4;
+      } else {
+        const _TypeError = TypeError;
+        const _HermesInternal = HermesInternal;
+        const self2 = this;
+        const self3 = this;
+        const typeError5 = new TypeError("Invalid Version: " + version);
+        throw typeError5;
+      }
+    }
+  }
+}
+const entry = {
+  key: "format",
+  value: function format() {
+    let prerelease;
+    let version;
+    const self = this;
+    this.version = "" + this.major + "." + this.minor + "." + this.patch;
+    if (this.prerelease.length) {
+      ({ prerelease, version } = self);
+      const _HermesInternal = HermesInternal;
+      self.version = version + "-" + prerelease.join(".");
+    }
+    return self.version;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "toString",
+    value: function toString() {
+      return this.version;
+    }
+  },
+  {
+    key: "compare",
+    value: function compare(tmp2Result) {
+      const self = this;
+      _mod15899("SemVer.compare", this.version, this.options, tmp2Result);
+      const tmp2 = SemVer;
+      if (!(tmp2Result instanceof SemVer)) {
+        if (typeof tmp2Result === "string") {
+          if (tmp2Result === self.version) {
+            return 0;
+          }
+        }
+        tmp2Result = tmp2(tmp2Result, self.options);
+      }
+      let num2 = 0;
+      if (tmp2Result.version !== self.version) {
+        num2 = self.compareMain(tmp2Result) || self.comparePre(tmp2Result);
+        self.compareMain(tmp2Result) || self.comparePre(tmp2Result);
+      }
+      return num2;
+    }
+  },
+  {
+    key: "compareMain",
+    value: function compareMain(tmp2Result) {
+      const self = this;
+      let tmpResult = tmp2Result;
+      const tmp = SemVer;
+      if (!(tmp2Result instanceof SemVer)) {
+        tmpResult = tmp(tmp2Result, self.options);
+      }
+      const obj = _mod15901;
+      let compareIdentifiersResult = obj.compareIdentifiers(self.major, tmpResult.major);
+      if (!compareIdentifiersResult) {
+        const tmp3Result = _mod15901;
+        compareIdentifiersResult = tmp3Result.compareIdentifiers(self.minor, tmpResult.minor);
+      }
+      if (!compareIdentifiersResult) {
+        const tmp3Result2 = _mod15901;
+        compareIdentifiersResult = tmp3Result2.compareIdentifiers(self.patch, tmpResult.patch);
+      }
+      return compareIdentifiersResult;
+    }
+  },
+  {
+    key: "comparePre",
+    value: function comparePre(tmp2Result) {
+      const self = this;
+      let tmpResult = tmp2Result;
+      const tmp = SemVer;
+      if (!(tmp2Result instanceof SemVer)) {
+        tmpResult = tmp(tmp2Result, self.options);
+      }
+      if (self.prerelease.length) {
+        if (!tmpResult.prerelease.length) {
+          return -1;
+        }
+      }
+      if (!self.prerelease.length) {
+        if (tmpResult.prerelease.length) {
+          return 1;
+        }
+      }
+      let num3 = 0;
+      if (!self.prerelease.length) {
+        num3 = 0;
+        if (!tmpResult.prerelease.length) {
+          return 0;
+        }
+      }
+      while (true) {
+        let tmp3 = self.prerelease[num3];
+        let tmp4 = tmpResult.prerelease[num3];
+        let tmp5 = require;
+        let str = "prerelease compare";
+        let tmp10 = _mod15899("prerelease compare", num3, tmp3, tmp4);
+        let tmp11 = undefined === tmp3;
+        if (tmp11) {
+          if (undefined === tmp4) {
+            break;
+          }
+        }
+        if (undefined === tmp4) {
+          return 1;
+        } else if (tmp11) {
+          return -1;
+        } else if (tmp3 !== tmp4) {
+          let tmp5Result = tmp5(15901);
+          return tmp5Result.compareIdentifiers(tmp3, tmp4);
         } else {
-          let _HermesInternal2 = HermesInternal;
-          let arr6 = items3.push("" + tmp21 + " - " + tmp23);
+          num3 = num3 + 1;
+        }
+      }
+      return 0;
+    }
+  },
+  {
+    key: "compareBuild",
+    value: function compareBuild(arg0) {
+      const self = this;
+      let tmpResult = arg0;
+      const tmp = SemVer;
+      if (!(arg0 instanceof SemVer)) {
+        tmpResult = tmp(arg0, self.options);
+      }
+      let num = 0;
+      while (true) {
+        let tmp3 = self.build[num];
+        let tmp4 = tmpResult.build[num];
+        let tmp5 = require;
+        let str = "build compare";
+        let tmp10 = _mod15899("build compare", num, tmp3, tmp4);
+        let tmp11 = undefined === tmp3;
+        if (tmp11) {
+          if (undefined === tmp4) {
+            break;
+          }
+        }
+        if (undefined === tmp4) {
+          return 1;
+        } else if (tmp11) {
+          return -1;
+        } else if (tmp3 !== tmp4) {
+          let tmp5Result = tmp5(15901);
+          return tmp5Result.compareIdentifiers(tmp3, tmp4);
+        } else {
+          num = num + 1;
+        }
+      }
+      return 0;
+    }
+  },
+  {
+    key: "inc",
+    value: function inc(pre, major2, arg2) {
+      const self = this;
+      if ("premajor" === pre) {
+        self.prerelease.length = 0;
+        self.patch = 0;
+        self.minor = 0;
+        self.major = self.major + 1;
+        self.inc("pre", major2, arg2);
+      } else if ("preminor" === pre) {
+        self.prerelease.length = 0;
+        self.patch = 0;
+        self.minor = self.minor + 1;
+        self.inc("pre", major2, arg2);
+      } else if ("prepatch" === pre) {
+        self.prerelease.length = 0;
+        self.inc("patch", major2, arg2);
+        self.inc("pre", major2, arg2);
+      } else if ("prerelease" === pre) {
+        if (0 === self.prerelease.length) {
+          self.inc("patch", major2, arg2);
+        }
+        self.inc("pre", major2, arg2);
+      } else if ("major" === pre) {
+        const tmp16 = 0 === self.minor && 0 === self.patch && 0 !== self.prerelease.length;
+        if (!tmp16) {
+          self.major = self.major + 1;
+        }
+        self.minor = 0;
+        self.patch = 0;
+        self.prerelease = [];
+      } else if ("minor" === pre) {
+        const tmp15 = 0 === self.patch && 0 !== self.prerelease.length;
+        if (!tmp15) {
+          self.minor = self.minor + 1;
+        }
+        self.patch = 0;
+        self.prerelease = [];
+      } else if ("patch" === pre) {
+        if (0 === self.prerelease.length) {
+          self.patch = self.patch + 1;
+        }
+        self.prerelease = [];
+      } else if ("pre" === pre) {
+        const _Number = Number;
+        let num2 = 0;
+        if (Number(arg2)) {
+          num2 = 1;
+        }
+        if (!major2) {
+          if (false === arg2) {
+            const _Error2 = Error;
+            const self4 = this;
+            const self5 = this;
+            const error = new Error("invalid increment argument: identifier is empty");
+            throw error;
+          }
+        }
+        if (0 === self.prerelease.length) {
+          const items = [num2];
+          self.prerelease = items;
+        } else {
+          let diff = self.prerelease.length - 1;
+          let tmp9 = diff;
+          if (diff >= 0) {
+            do {
+              let num3 = diff;
+              if (typeof self.prerelease[diff] === "number") {
+                let prerelease2 = self.prerelease;
+                prerelease2[diff] = prerelease2[diff] + 1;
+                num3 = -2;
+              }
+              diff = num3 - 1;
+              tmp9 = diff;
+            } while (diff >= 0);
+          }
+          if (-1 === tmp9) {
+            const prerelease = self.prerelease;
+            if (major2 === prerelease.join(".")) {
+              if (false === arg2) {
+                const _Error3 = Error;
+                const self6 = this;
+                const self7 = this;
+                const error1 = new Error("invalid increment argument: identifier already exists");
+                throw error1;
+              }
+            }
+            const prerelease1 = self.prerelease;
+            prerelease1.push(num2);
+          }
+        }
+        if (major2) {
+          let items1 = [major2, num2];
+          if (false === arg2) {
+            const items2 = [major2];
+            items1 = items2;
+          }
+          const obj = _mod15901;
+          if (0 === obj.compareIdentifiers(self.prerelease[0], major2)) {
+            const _isNaN = isNaN;
+            if (isNaN(self.prerelease[1])) {
+              self.prerelease = items1;
+            }
+          } else {
+            self.prerelease = items1;
+          }
         }
       } else {
-        let _HermesInternal = HermesInternal;
-        let arr13 = items3.push(">=" + tmp21);
+        const _Error = Error;
+        const _HermesInternal = HermesInternal;
+        const self2 = this;
+        const self3 = this;
+        const error2 = new Error("invalid increment argument: " + pre);
+        throw error2;
       }
+      self.raw = self.format();
+      if (self.build.length) {
+        const build = self.build;
+        const _HermesInternal2 = HermesInternal;
+        self.raw = self.raw + "+" + build.join(".");
+      }
+      return self;
     }
-    continue;
   }
-  const joined = items3.join(" || ");
-  if (typeof tmp.raw === "string") {
-    raw = tmp.raw;
-  } else {
-    const _String = String;
-    raw = String(tmp);
-  }
-  if (joined.length < raw.length) {
-    tmp = joined;
-  }
-  return tmp;
-};
+];
+
+export default _createClass(SemVer, items);

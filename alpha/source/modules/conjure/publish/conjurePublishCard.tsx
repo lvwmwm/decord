@@ -1,11 +1,11 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12576
+// Function ID: 12577
 // Name: conjurePublishCard
-// Dependencies: [3865, 2]
+// Dependencies: [3868, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 12541 (conjurePublishCard)
-import _modDef3865 from "module_3865" /* 3865 */;
+// Module 12576 (conjurePublishCard)
+import _modDef3868 from "module_3868" /* 3868 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -68,24 +68,28 @@ export function livePublishCardMessageId(arg0, newUiUnpublished) {
   return null;
 }
 export function publishNoticeMessage(notice, name, automod) {
-  let prop;
+  let KORRGl;
   if (true === notice.commands_failed) {
-    prop = _modDef3865["PrQg+B"];
+    const tmp11 = _modDef3868;
+    KORRGl = tmp ? tmp11.ESu5eZ : tmp11["PrQg+B"];
   } else if (true === notice.channel_skipped) {
-    prop = _modDef3865.ev23Cw;
-  } else if (notice.update) {
-    prop = _modDef3865.gQzuLC;
+    const tmp8 = _modDef3868;
+    KORRGl = tmp ? tmp8.ZnQW4S : tmp8.ev23Cw;
   } else {
-    const tmp = automod;
-    if (tmp) {
-      prop = _modDef3865.KORRGl;
-    } else if (null == name) {
-      prop = _modDef3865.MOrR29;
+    const update = notice.update;
+    const tmp4 = _modDef3868;
+    if (update) {
+      KORRGl = tmp ? tmp4["LuS8a/"] : tmp4.gQzuLC;
     } else {
-      prop = _modDef3865["/npn7F"];
+      const tmp5 = automod;
+      if (tmp5) {
+        KORRGl = tmp4.KORRGl;
+      } else {
+        KORRGl = tmp ? tmp4["/npn7F"] : tmp4.MOrR29;
+      }
     }
   }
-  return prop;
+  return KORRGl;
 }
 export function withLivePublishCard(stateFromStores1, stateFromStores2) {
   let diff = stateFromStores1.length - 1;

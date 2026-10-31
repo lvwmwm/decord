@@ -1,17 +1,17 @@
-// Module ID: 19510
-// Function ID: 19511
+// Module ID: 19567
+// Function ID: 19568
 // Name: InterestGameCover
-// Dependencies: [19, 17, 21, 5009, 575, 5712, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5717, 5624, 2]
 // Exports: default
 
-// Module 19510 (InterestGameCover)
+// Module 19567 (InterestGameCover)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

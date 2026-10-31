@@ -1,23 +1,23 @@
-// Module ID: 19336
-// Function ID: 19337
+// Module ID: 19393
+// Function ID: 19394
 // Name: AppAnalyticsManager
-// Dependencies: [2014, 2007, 5759, 6564, 6750, 5762, 1072, 1090, 7281, 4853, 5755, 5757, 18777, 7884, 2]
+// Dependencies: [2013, 2006, 5764, 6570, 6756, 5767, 1072, 1089, 7287, 4858, 5760, 5762, 18820, 7892, 2]
 
-// Module 19336 (AppAnalyticsManager)
+// Module 19393 (AppAnalyticsManager)
 import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import Timers from "Timers" /* 4853 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import ActivityTypes from "ActivityTypes" /* 5757 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7884 */;
-import getGamePlatformDefault from "getGamePlatform" /* 18777 */;
-import RunningGameStore from "RunningGameStore" /* 2014 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
-import SpeakingStore from "SpeakingStore" /* 6750 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import Timers from "Timers" /* 4858 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ActivityTypes from "ActivityTypes" /* 5762 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7892 */;
+import getGamePlatformDefault from "getGamePlatform" /* 18820 */;
+import RunningGameStore from "RunningGameStore" /* 2013 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
+import SpeakingStore from "SpeakingStore" /* 6756 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let map;

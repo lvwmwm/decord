@@ -1,13 +1,13 @@
-// Module ID: 13578
-// Function ID: 13579
+// Module ID: 13446
+// Function ID: 13447
 // Name: CheckpointCharacterReferencedAssets
-// Dependencies: [1377, 13411, 13410, 13577, 2]
+// Dependencies: [1376, 13447, 13612, 13613, 2]
 // Exports: getCheckpointCharacterReferencedAssets, getCheckpointCharacterVisibleTextureNames
 
-// Module 13578 (CheckpointCharacterReferencedAssets)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13410 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13411 */;
+// Module 13446 (CheckpointCharacterReferencedAssets)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13447 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13612 */;
 import size from "module_2" /* 2 */;
 
 let set = new Set([1]);
@@ -27,10 +27,10 @@ let closure_3 = keys.map((name) => {
 });
 const result = size.fileFinishedImporting("modules/checkpoint/character/CheckpointCharacterReferencedAssets.tsx");
 
-export function getCheckpointCharacterVisibleTextureNames(arg0, chapterID, arg2) {
+export function getCheckpointCharacterVisibleTextureNames(arg0, chapterID2, device2) {
   let closure_0 = arg0;
-  let closure_1 = chapterID;
-  let closure_2 = arg2;
+  let closure_1 = chapterID2;
+  let closure_2 = device2;
   set = new Set();
   const item = set.forEach((item) => {
     let name;
@@ -44,11 +44,11 @@ export function getCheckpointCharacterVisibleTextureNames(arg0, chapterID, arg2)
         }
       } else if (CheckpointCharacterTextureUtils.CheckpointCharacterTextureType.LAYOUT === type) {
         const layouts = role.layouts;
-        if (layouts.includes(closure_2)) {
+        if (layouts.includes(device2)) {
           set.add(name);
         }
       } else if (CheckpointCharacterTextureUtils.CheckpointCharacterTextureType.ALWAYS === type) {
-        const hasItem = "tex_wireframe_spritesheet" !== name || set.has(chapterID);
+        const hasItem = "tex_wireframe_spritesheet" !== name || set.has(chapterID2);
         if (hasItem) {
           set.add(name);
         }
@@ -68,7 +68,7 @@ export function getCheckpointCharacterReferencedAssets(checkpointCharacterLoaded
       const tmpResult = CheckpointCharacterTextureUtils;
       url = tmpResult.getCheckpointCharacterTextureUrl(name, closure_1);
     } else {
-      url = tmp(13577).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;
+      url = tmp(13613).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;
     }
     obj = { source: { uri: url } };
     obj[swapKey] = obj;

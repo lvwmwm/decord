@@ -1,21 +1,21 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15168
+// Function ID: 15169
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1072, 21, 9055, 5755, 15124, 1114, 5954, 6025, 11845, 2]
+// Dependencies: [32, 19, 1072, 21, 9074, 5760, 15163, 1113, 5959, 6030, 11883, 2]
 // Exports: default
 
-// Module 15129 (InAppReportsLeaveGuildElement)
+// Module 15168 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1114 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
+import intl5 from "intl" /* 1113 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AlertDefault = tmp(6025);
+const AlertDefault = tmp(6030);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -82,8 +82,8 @@ export default function LeaveGuildElement(guild) {
       if (guild != null) {
         name = guild.name;
       }
-      intl3 = tmp4(1114).intl;
-      intl4 = tmp4(1114).intl;
+      intl3 = tmp4(1113).intl;
+      intl4 = tmp4(1113).intl;
       show(obj);
     },
     icon: tmp5(tmp8(reportId[10]).DoorExitIcon, { color: "text-feedback-critical" })

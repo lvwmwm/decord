@@ -1,22 +1,22 @@
-// Module ID: 12942
-// Function ID: 12943
+// Module ID: 12977
+// Function ID: 12978
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 5009, 575, 7334, 5582, 9358, 5619, 9446, 12408, 1114, 3865, 5591, 5735, 11255, 671, 12943, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7340, 5587, 9378, 5624, 9468, 12446, 1113, 3868, 5596, 5740, 11281, 671, 12978, 2]
 
-// Module 12942 (ConjureHomeFeatureList)
+// Module 12977 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import intl3 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7334 */;
-import ShieldIcon2 from "ShieldIcon" /* 11255 */;
-import RobotIcon2 from "RobotIcon" /* 12408 */;
+import intl3 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7340 */;
+import ShieldIcon2 from "ShieldIcon" /* 11281 */;
+import RobotIcon2 from "RobotIcon" /* 12446 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -196,20 +196,20 @@ let closure_14 = {
     items3 = [styles.pill, { left: nativeDefault.space.PX_6 }];
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
     ({ left: nativeDefault.space.PX_6 });
-    const TrophyIcon = styles(9358).TrophyIcon;
-    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5619).Text, { variant: "text-xxs/bold", color: "text-overlay-light", children: 128 })];
+    const TrophyIcon = styles(9378).TrophyIcon;
+    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5624).Text, { variant: "text-xxs/bold", color: "text-overlay-light", children: 128 })];
     items1[4] = closure_6(closure_4, obj5);
     const obj8 = { style: items5, children: items6 };
     items5 = [styles.pill, { right: nativeDefault.space.PX_6 }];
     const obj10 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
     ({ right: nativeDefault.space.PX_6 });
-    const HeartIcon = styles(9446).HeartIcon;
+    const HeartIcon = styles(9468).HeartIcon;
     items6 = [closure_5(HeartIcon, obj10), , ];
     const obj11 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    const HeartIcon2 = styles(9446).HeartIcon;
+    const HeartIcon2 = styles(9468).HeartIcon;
     items6[1] = closure_5(HeartIcon2, obj11);
     const obj12 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const HeartIcon3 = styles(9446).HeartIcon;
+    const HeartIcon3 = styles(9468).HeartIcon;
     items6[2] = closure_5(HeartIcon3, obj12);
     items1[5] = closure_6(closure_4, obj8);
     return closure_6(tmp, obj);
@@ -244,7 +244,7 @@ let closure_14 = {
     const obj8 = { style: styles.messageBody, children: items5 };
     items4[0] = hasOwnProperty(Line, obj10);
     const obj11 = { style: styles.botTag, children: hasOwnProperty(Text, obj12) };
-    obj12 = { variant: "text-xxs/bold", color: "text-overlay-light", children: intl.string(_modDef3865.VlgiLf) };
+    obj12 = { variant: "text-xxs/bold", color: "text-overlay-light", children: intl.string(_modDef3868.VlgiLf) };
     Text = Text_Text.Text;
     intl = intl3.intl;
     items4[1] = hasOwnProperty(React3, obj11);
@@ -263,7 +263,7 @@ let closure_14 = {
     let items6;
     styles = styles.styles;
     let token;
-    let obj = styles(5591);
+    let obj = styles(5596);
     token = obj.useToken(token(575).colors.BACKGROUND_BRAND);
     items = [token];
     let obj2 = { style: items1, children: items2 };
@@ -274,7 +274,7 @@ let closure_14 = {
       return items;
     }, items);
     let obj3 = { style: styles.profileBanner, colors: memo, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 } };
-    items2 = [closure_5(token(5582), obj3), ];
+    items2 = [closure_5(token(5587), obj3), ];
     const obj5 = { style: items3 };
     items3 = [, ];
     const obj4 = { style: styles.profileBody, children: items4 };
@@ -349,7 +349,7 @@ let closure_14 = {
     items2 = [, ];
     ({ pill: arr3[0], overlayTimer: arr3[1] } = styles);
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const ClockIcon = styles(5735).ClockIcon;
+    const ClockIcon = styles(5740).ClockIcon;
     items3 = [closure_5(ClockIcon, obj7), ];
     const obj8 = { style: styles.overlayTimerValue };
     items3[1] = closure_5(Line, obj8);

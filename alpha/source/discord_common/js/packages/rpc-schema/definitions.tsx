@@ -1,25 +1,25 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16298
+// Function ID: 16299
 // Name: definitions
-// Dependencies: [1083, 2020, 9718, 11771, 1094, 5670, 1086, 8901, 2021, 16257, 16253, 16258, 7873, 5757, 10740, 16259, 2]
+// Dependencies: [1083, 11693, 9738, 11808, 1093, 5675, 2046, 8910, 2019, 16299, 16295, 16300, 7880, 5762, 10760, 16301, 2]
 
-// Module 16256 (definitions)
+// Module 16298 (definitions)
 import Constants2 from "Constants" /* 1083 */;
-import EntitlementTypes from "EntitlementTypes" /* 1086 */;
-import ChannelTypes from "ChannelTypes" /* 1094 */;
-import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2021 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
-import ActivityTypes from "ActivityTypes" /* 5757 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 7873 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8901 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9718 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10740 */;
-import ActivityPlatform from "ActivityPlatform" /* 11771 */;
-import ThermalStates from "ThermalStates" /* 16253 */;
-import SKUTypes from "SKUTypes" /* 16257 */;
-import helpers from "helpers" /* 16258 */;
-import contextMenuIcons from "contextMenuIcons" /* 16259 */;
-import Constants from "Constants" /* 2020 */;
+import ChannelTypes from "ChannelTypes" /* 1093 */;
+import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2019 */;
+import EntitlementTypes from "EntitlementTypes" /* 2046 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import ActivityTypes from "ActivityTypes" /* 5762 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7880 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10760 */;
+import ActivityPlatform from "ActivityPlatform" /* 11808 */;
+import ThermalStates from "ThermalStates" /* 16295 */;
+import SKUTypes from "SKUTypes" /* 16299 */;
+import helpers from "helpers" /* 16300 */;
+import contextMenuIcons from "contextMenuIcons" /* 16301 */;
+import Constants from "Constants" /* 11693 */;
 import size_mod from "module_2" /* 2 */;
 
 let ActivityIntent;
@@ -2553,10 +2553,13 @@ const obj68 = {
     let booleanResult1;
     let maxResult;
     let optionalResult;
-    const obj = { channel_id: optionalResult.meta({ className: "ChannelId" }), timeout: maxResult.optional(), force: booleanResult.optional(), navigate: booleanResult1.optional() };
+    let optionalResult1;
+    const obj = { channel_id: optionalResult.meta({ className: "ChannelId" }), expected_channel_id: optionalResult1.meta({ className: "ChannelId" }), timeout: maxResult.optional(), force: booleanResult.optional(), navigate: booleanResult1.optional() };
     const stringResult = string.string();
     const allowResult = stringResult.allow(null);
     optionalResult = allowResult.optional();
+    const stringResult1 = string.string();
+    optionalResult1 = stringResult1.optional();
     const numberResult = string.number();
     const minResult = numberResult.min(0);
     maxResult = minResult.max(60);
@@ -2955,7 +2958,7 @@ const obj78 = {
     requiredResult = stringResult.required();
     return obj;
   },
-  payload: function UserVoiceState(object) {
+  payload(object) {
     let booleanResult;
     let booleanResult1;
     let booleanResult2;
@@ -2968,9 +2971,10 @@ const obj78 = {
     let obj16;
     let object1Result;
     let object4Result;
+    let optionalResult;
     let stringResult;
-    object = object.object;
     const obj = { nick: stringResult.required(), mute: booleanResult.required(), volume: numberResult.required(), pan: object1Result.required(), voice_state: object4Result.required(), user: obj16.required() };
+    object = object.object;
     stringResult = object.string();
     booleanResult = object.boolean();
     numberResult = object.number();
@@ -2988,7 +2992,12 @@ const obj78 = {
     booleanResult5 = object.boolean();
     object4Result = object3(obj2);
     obj16 = User(object);
-    return object(obj);
+    const obj3 = { channel_id: optionalResult.meta({ className: "ChannelId" }) };
+    const keys = object(obj).keys;
+    object(obj);
+    const stringResult1 = object.string();
+    optionalResult = stringResult1.optional();
+    return keys(obj3);
   }
 };
 const obj79 = {
@@ -3121,6 +3130,6 @@ let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export { RPCEnums };
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj15, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj16, [helpers.RPCCommand.AUTHENTICATE]: obj17, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj18, [helpers.RPCCommand.RELAUNCH_FRAME]: obj19, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj20, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj21, [helpers.RPCCommand.START_VOICE_SESSION]: obj22, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj23, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj24, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj11, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj25, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj13, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj12, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj11, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj26, [helpers.RPCCommand.START_CAMERA_VIEW]: obj13, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj11, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj11, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj12, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj11, [helpers.RPCCommand.SHARE_INTERACTION]: obj27, [helpers.RPCCommand.SHARE_LINK]: obj28, [helpers.RPCCommand.SHARE_CONTENT]: obj29, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj30, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj31, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj32, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj33, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj34, [helpers.RPCCommand.SHOW_TOOLTIP]: obj35, [helpers.RPCCommand.HIDE_TOOLTIP]: obj36, [helpers.RPCCommand.SHOW_TOAST]: obj37, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj38, [helpers.RPCCommand.GET_DEVICE_PERMISSIONS]: obj39, [helpers.RPCCommand.REQUEST_DEVICE_PERMISSIONS]: obj40, [helpers.RPCCommand.CAPTURE_SCREEN]: obj41, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj42, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj43, [helpers.RPCCommand.GET_CONTEXT]: obj44, [helpers.RPCCommand.GET_USER]: obj45, [helpers.RPCCommand.GET_CURRENT_USER]: obj46, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj47, [helpers.RPCCommand.QUEST_START_TIMER]: obj48, [helpers.RPCCommand.GET_QUEST]: obj49, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj50, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj51, [helpers.RPCCommand.SET_FRAME_RELAUNCH_DEEP_LINK]: obj52, [helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj53, [helpers.RPCCommand.CAPTURE_LOG]: obj54, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj55, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj56, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj57, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj58, [helpers.RPCCommand.SET_CONFIG]: obj59, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "concat", response: "add" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj60, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj61, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj62, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj63, [helpers.RPCCommand.START_PURCHASE]: obj64, [helpers.RPCCommand.GET_CHANNEL]: obj65, [helpers.RPCCommand.GET_CHANNELS]: obj66, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj67, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj68, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj69, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj70, [helpers.RPCCommand.GET_GUILD]: obj71, [helpers.RPCCommand.GET_GUILDS]: obj72, [helpers.RPCCommand.GET_ROLES]: obj73, [helpers.RPCCommand.GET_CURRENT_USER_GUILD_MEMBER]: obj74, [helpers.RPCCommand.GET_GUILD_MEMBER]: obj75, [helpers.RPCCommand.AUTHORIZE]: obj76, [helpers.RPCCommand.SET_ACTIVITY]: obj77 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj15, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj16, [helpers.RPCCommand.AUTHENTICATE]: obj17, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj18, [helpers.RPCCommand.RELAUNCH_FRAME]: obj19, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj20, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj21, [helpers.RPCCommand.START_VOICE_SESSION]: obj22, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj23, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj24, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj11, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj25, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj13, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj12, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj11, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj26, [helpers.RPCCommand.START_CAMERA_VIEW]: obj13, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj11, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj11, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj12, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj11, [helpers.RPCCommand.SHARE_INTERACTION]: obj27, [helpers.RPCCommand.SHARE_LINK]: obj28, [helpers.RPCCommand.SHARE_CONTENT]: obj29, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj30, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj31, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj32, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj33, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj34, [helpers.RPCCommand.SHOW_TOOLTIP]: obj35, [helpers.RPCCommand.HIDE_TOOLTIP]: obj36, [helpers.RPCCommand.SHOW_TOAST]: obj37, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj38, [helpers.RPCCommand.GET_DEVICE_PERMISSIONS]: obj39, [helpers.RPCCommand.REQUEST_DEVICE_PERMISSIONS]: obj40, [helpers.RPCCommand.CAPTURE_SCREEN]: obj41, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj42, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj43, [helpers.RPCCommand.GET_CONTEXT]: obj44, [helpers.RPCCommand.GET_USER]: obj45, [helpers.RPCCommand.GET_CURRENT_USER]: obj46, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj47, [helpers.RPCCommand.QUEST_START_TIMER]: obj48, [helpers.RPCCommand.GET_QUEST]: obj49, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj50, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj51, [helpers.RPCCommand.SET_FRAME_RELAUNCH_DEEP_LINK]: obj52, [helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj53, [helpers.RPCCommand.CAPTURE_LOG]: obj54, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj55, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj56, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj57, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj58, [helpers.RPCCommand.SET_CONFIG]: obj59, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "construct", response: "add" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj60, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj61, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj62, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj63, [helpers.RPCCommand.START_PURCHASE]: obj64, [helpers.RPCCommand.GET_CHANNEL]: obj65, [helpers.RPCCommand.GET_CHANNELS]: obj66, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj67, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj68, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj69, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj70, [helpers.RPCCommand.GET_GUILD]: obj71, [helpers.RPCCommand.GET_GUILDS]: obj72, [helpers.RPCCommand.GET_ROLES]: obj73, [helpers.RPCCommand.GET_CURRENT_USER_GUILD_MEMBER]: obj74, [helpers.RPCCommand.GET_GUILD_MEMBER]: obj75, [helpers.RPCCommand.AUTHORIZE]: obj76, [helpers.RPCCommand.SET_ACTIVITY]: obj77 };
 export const RPCEventSchemas = { [helpers.RPCEvent.VOICE_STATE_UPDATE]: obj78, [helpers.RPCEvent.SPEAKING_START]: obj14, [helpers.RPCEvent.SPEAKING_STOP]: obj14, [helpers.RPCEvent.ACTIVITY_LAYOUT_MODE_UPDATE]: obj79, [helpers.RPCEvent.CURRENT_USER_UPDATE]: obj80, [helpers.RPCEvent.CURRENT_GUILD_MEMBER_UPDATE]: obj81, [helpers.RPCEvent.ENTITLEMENT_CREATE]: obj82, [helpers.RPCEvent.THERMAL_STATE_UPDATE]: obj83, [helpers.RPCEvent.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: obj84, [helpers.RPCEvent.RELATIONSHIP_UPDATE]: obj85, [helpers.RPCEvent.ACTIVITY_JOIN]: obj86, [helpers.RPCEvent.QUEST_ENROLLMENT_STATUS_UPDATE]: obj87 };
 export const RPCNamedSchemas = items;

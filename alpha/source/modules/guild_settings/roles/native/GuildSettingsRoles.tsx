@@ -1,42 +1,42 @@
-// Module ID: 19707
-// Function ID: 19708
+// Module ID: 19764
+// Function ID: 19765
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 4916, 502, 5237, 4915, 4880, 4941, 7292, 19708, 19709, 1072, 21, 5009, 575, 6717, 1253, 19710, 504, 18150, 9055, 1498, 4946, 5755, 19711, 19720, 19721, 7054, 1114, 6974, 12304, 5619, 19722, 5629, 19726, 7552, 14333, 1376, 19718, 6896, 7293, 7212, 8169, 1188, 9042, 18395, 5601, 2]
+// Dependencies: [32, 19, 17, 4921, 502, 5242, 4920, 4885, 4946, 7298, 19765, 19766, 1072, 21, 5014, 575, 6723, 1252, 19767, 504, 18193, 9074, 1497, 4951, 5760, 19768, 19777, 19778, 7060, 1113, 6980, 12342, 5624, 19779, 5634, 19783, 7558, 14371, 1375, 19775, 6902, 7299, 7218, 8177, 1187, 9061, 18438, 5606, 2]
 // Exports: default
 
-// Module 19707 (GuildSettingsRoles)
+// Module 19764 (GuildSettingsRoles)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4916 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6896 */;
-import TableRowGroup from "TableRowGroup" /* 7054 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7293 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19709 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19718 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 19720 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 19721 */;
-import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 19722 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 19726 */;
+import intl5 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
+import TableRowGroup from "TableRowGroup" /* 7060 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7299 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19766 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19775 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 19777 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 19778 */;
+import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 19779 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 19783 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7292 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 19708 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7298 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 19765 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import TextStyles from "TextStyles" /* 6717 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import TextStyles from "TextStyles" /* 6723 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,7 +57,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(19711);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(19768);
 ({ View: metroRequire, StyleSheet } = react_native);
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 let closure_15 = GuildSettingsConstants.GuildSettingsRoleEditSections;
@@ -89,7 +89,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   let tmp39Result2;
   let tmp49;
   let tmp54;
-  const f118265 = () => sortedGuildRoles;
+  const f118637 = () => sortedGuildRoles;
   guildId = guildId.guildId;
   let guild;
   let memberCount;
@@ -215,8 +215,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   const tmp13 = guildEveryoneRole(memberCount.useState(""), 2);
   let str = tmp13[0];
   let closure_3 = tmp13[1];
-  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f118265), 2);
-  const tmp14 = guildEveryoneRole(memberCount.useState(f118265), 2);
+  [tmp15, c4] = guildEveryoneRole(memberCount.useState(f118637), 2);
+  const tmp14 = guildEveryoneRole(memberCount.useState(f118637), 2);
   let closure_5 = memberCount.useRef(false);
   const items4 = [sortedGuildRoles];
   const callback = memberCount.useCallback((str) => {
@@ -398,14 +398,14 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       tmpResult = null;
       if (!closure_14) {
         const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl5.t["0dOFq+"]), onPress: callback5, style: closure_1.reorderButton, children: items2 };
-        const PressableOpacity = tmp7(6974).PressableOpacity;
-        intl2 = tmp7(1114).intl;
+        const PressableOpacity = tmp7(6980).PressableOpacity;
+        intl2 = tmp7(1113).intl;
         const obj5 = { color: nativeDefault.colors.TEXT_LINK, size: "sm" };
-        const ArrowsUpDownIcon = tmp7(12304).ArrowsUpDownIcon;
+        const ArrowsUpDownIcon = tmp7(12342).ArrowsUpDownIcon;
         items2 = [closure_20(ArrowsUpDownIcon, obj5), ];
         const obj6 = { style: closure_1.reorderButtonText, variant: "text-sm/medium", color: "text-link", children: intl3.string(intl5.t["0dOFq+"]) };
-        const Text = tmp7(5619).Text;
-        intl3 = tmp7(1114).intl;
+        const Text = tmp7(5624).Text;
+        intl3 = tmp7(1113).intl;
         items2[1] = closure_20(Text, obj6);
         tmpResult = tmp(PressableOpacity, obj4);
       }
@@ -415,8 +415,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     let tmp6Result = null;
     if (first) {
       const obj7 = { style: closure_1.rolesBody, variant: "text-sm/medium", color: "interactive-text-default", children: intl4.string(intl5.t.nHcwVl) };
-      const Text2 = tmp7(5619).Text;
-      intl4 = tmp7(1114).intl;
+      const Text2 = tmp7(5624).Text;
+      intl4 = tmp7(1113).intl;
       tmp6Result = tmp6(Text2, obj7);
     }
     children[1] = tmp6Result;

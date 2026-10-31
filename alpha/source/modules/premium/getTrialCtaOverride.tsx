@@ -1,11 +1,11 @@
-// Module ID: 9893
-// Function ID: 9894
+// Module ID: 9914
+// Function ID: 9915
 // Name: getTrialCtaOverride
-// Dependencies: [2048, 2]
+// Dependencies: [2047, 2]
 // Exports: getTrialCtaOverride
 
-// Module 9893 (getTrialCtaOverride)
-import PremiumUtils from "PremiumUtils" /* 2048 */;
+// Module 9914 (getTrialCtaOverride)
+import PremiumUtils from "PremiumUtils" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/getTrialCtaOverride.tsx");

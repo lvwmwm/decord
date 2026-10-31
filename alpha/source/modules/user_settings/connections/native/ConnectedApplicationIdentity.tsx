@@ -1,19 +1,19 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16833
+// Function ID: 16834
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5009, 16816, 1114, 1188, 5619, 11354, 5953, 16793, 6025, 1410, 5631, 10926, 8020, 9268, 6970, 6969, 7363, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5014, 16834, 1113, 1187, 5624, 11390, 5958, 16841, 6030, 1409, 5636, 10945, 8028, 9287, 6976, 6975, 7369, 2]
 // Exports: default
 
-// Module 16815 (ConnectedApplicationIdentity)
+// Module 16833 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
-import intl6 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Icon from "Icon" /* 5631 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import AlertDefault from "Alert" /* 6025 */;
-import InfoBoxDefault from "InfoBox" /* 11354 */;
+import intl6 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Icon from "Icon" /* 5636 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import AlertDefault from "Alert" /* 6030 */;
+import InfoBoxDefault from "InfoBox" /* 11390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ let closure_1, v3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5631);
+const IconDefault = tmp(5636);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -160,7 +160,7 @@ export default function ConnectedApplicationIdentity(identity) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export default function ConnectedApplicationIdentity(identity) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           if (0 === c3) {

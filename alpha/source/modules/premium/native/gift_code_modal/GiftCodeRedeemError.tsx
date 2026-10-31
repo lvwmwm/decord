@@ -1,21 +1,21 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11520
+// Function ID: 11521
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 5009, 575, 1499, 7286, 5712, 11487, 11488, 5619, 1114, 5629, 6738, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1498, 7292, 5717, 11521, 11522, 5624, 1113, 5634, 6744, 2]
 // Exports: default
 
-// Module 11486 (GiftCodeRedeemError)
+// Module 11520 (GiftCodeRedeemError)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import Link from "Link" /* 1499 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7286 */;
+import intl3 from "intl" /* 1113 */;
+import Link from "Link" /* 1498 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -48,14 +48,14 @@ export default function GiftCodeRedeemError(message) {
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(11487);
+    tmp8Result = tmp8(11521);
   } else {
-    tmp8Result = tmp8(11488);
+    tmp8Result = tmp8(11522);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };
-  const Text = tmp2(5619).Text;
-  intl = tmp2(1114).intl;
+  const Text = tmp2(5624).Text;
+  intl = tmp2(1113).intl;
   items[1] = hasOwnProperty(Text, obj4);
   const obj5 = { variant: "text-lg/medium", style: tmp.message, children: message };
   items[2] = hasOwnProperty(Text_Text.Text, obj5);
@@ -69,8 +69,8 @@ export default function GiftCodeRedeemError(message) {
       return arr.pop();
     }
   };
-  Button = tmp2(5629).Button;
-  intl2 = tmp2(1114).intl;
+  Button = tmp2(5634).Button;
+  intl2 = tmp2(1113).intl;
   items1[1] = hasOwnProperty(_false, obj6);
   return metroRequire(SafeAreaPaddingView, obj2);
 };

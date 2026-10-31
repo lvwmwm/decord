@@ -1,26 +1,26 @@
-// Module ID: 18975
-// Function ID: 18976
+// Module ID: 19024
+// Function ID: 19025
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1386, 21, 5009, 575, 12431, 1114, 14562, 8638, 5070, 2048, 17624, 5619, 17628, 5629, 9506, 2]
+// Dependencies: [19, 17, 1385, 21, 5014, 575, 12466, 1113, 14600, 8646, 5075, 2047, 17684, 5624, 17688, 5634, 9528, 2]
 
-// Module 18975 (PremiumDiscountOfferActionSheetContent)
+// Module 19024 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl10 from "intl" /* 1114 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import PremiumUtils from "PremiumUtils" /* 2048 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5070 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import FolderIcon from "FolderIcon" /* 8638 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9506 */;
-import UserIcon from "UserIcon" /* 12431 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14562 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17624 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17628 */;
+import intl10 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5075 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import FolderIcon from "FolderIcon" /* 8646 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9528 */;
+import UserIcon from "UserIcon" /* 12466 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14600 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17684 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17688 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

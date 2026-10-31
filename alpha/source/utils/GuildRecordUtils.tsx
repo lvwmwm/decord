@@ -1,17 +1,17 @@
-// Module ID: 4872
-// Function ID: 4873
+// Module ID: 4877
+// Function ID: 4878
 // Name: GuildRecordUtils
-// Dependencies: [4873, 4876, 1072, 4875, 4878, 38, 4879, 2]
+// Dependencies: [4878, 4881, 1072, 4880, 4883, 38, 4884, 2]
 // Exports: attachSerializedData, constructFromPartialGuildRecord, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
-// Module 4872 (GuildRecordUtils)
+// Module 4877 (GuildRecordUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
-import SetUtils from "SetUtils" /* 4875 */;
-import guildIncidentsSerialization from "guildIncidentsSerialization" /* 4878 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 4879 */;
-import PlainRecord from "PlainRecord" /* 4873 */;
-import GuildRecord from "GuildRecord" /* 4876 */;
+import SetUtils from "SetUtils" /* 4880 */;
+import guildIncidentsSerialization from "guildIncidentsSerialization" /* 4883 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 4884 */;
+import PlainRecord from "PlainRecord" /* 4878 */;
+import GuildRecord from "GuildRecord" /* 4881 */;
 import size from "module_2" /* 2 */;
 
 let vanityURLCode;

@@ -1,21 +1,21 @@
-// Module ID: 18246
-// Function ID: 18247
+// Module ID: 18289
+// Function ID: 18290
 // Name: UnknownChannel
-// Dependencies: [19, 11027, 6770, 21, 5009, 575, 5707, 1114, 5730, 5647, 10782, 18118, 2]
+// Dependencies: [19, 11046, 6776, 21, 5014, 575, 5712, 1113, 5735, 5652, 10802, 18161, 2]
 
-// Module 18246 (UnknownChannel)
+// Module 18289 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import useChannelNameDefault from "useChannelName" /* 5647 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5730 */;
-import ReadStateConstants from "ReadStateConstants" /* 6770 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
-import ChannelItemDefault from "ChannelItem" /* 18118 */;
+import intl2 from "intl" /* 1113 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
+import ReadStateConstants from "ReadStateConstants" /* 6776 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10802 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
+import ChannelItemDefault from "ChannelItem" /* 18161 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {
@@ -43,8 +43,8 @@ const memoResult = react.memo(function UnknownChannel(channel) {
     const result = obj.openChannelLongPressActionSheet(channel.id);
   }, items);
   ChannelItemDefault;
-  const intl = channel(1114).intl;
-  return <tmp4 onPress={handlePress} onLongPress={callback} style={tmp.container} accessible accessibilityLabel={intl.formatToPlainString(channel(1114).t.yjQ9P8, { channelName: tmp2 })} accessibilityState={{ selected }} channel={channel} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+  const intl = channel(1113).intl;
+  return <tmp4 onPress={handlePress} onLongPress={callback} style={tmp.container} accessible accessibilityLabel={intl.formatToPlainString(channel(1113).t.yjQ9P8, { channelName: tmp2 })} accessibilityState={{ selected }} channel={channel} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
 });
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 

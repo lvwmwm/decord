@@ -1,74 +1,19 @@
 // Module ID: 1799
 // Function ID: 1800
-// Dependencies: [19, 1695, 1676]
-// Exports: useAnimatedKeyboard
+// Dependencies: [1800, 1653]
 
 // Module 1799
-import react from "react" /* 19 */;
+import _mod1800 from "module_1800" /* 1800 */;
+import module_1653 from "module_1653" /* 1653 */;
 
-let dependencyMap;
-
-let c2;
-let c3;
-({ useEffect: c2, useRef: c3 } = react);
-let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
-let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
-
-export function useAnimatedKeyboard() {
-  let obj3;
-  let obj4;
-  let ref;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "color", isNavigationBarTranslucentAndroid: "Error" };
-  }
-  let ref2;
-  let obj2;
-  const tmp = ref2(null);
-  dependencyMap = tmp;
-  const tmp2 = ref2(-1);
-  let closure_2 = tmp2;
-  const tmp3 = ref2(false);
-  ref2 = tmp3;
-  if (null === tmp.current) {
-    obj2 = { state: obj3.makeMutable(obj(1676).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
-    obj3 = obj(1695);
-    let fn = function c(value, value2) {
-      obj2.state.value = value;
-      obj2.height.value = value2;
-    };
-    const obj6 = { keyboardEventData: obj2 };
-    fn.__closure = obj6;
-    fn.__workletHash = 4393537867728;
-    fn.__initData = obj2;
-    obj4 = obj(1695);
-    const obj5 = obj(1695);
-    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
-    tmp.current = obj2;
-    tmp3.current = true;
-  }
-  closure_2(() => {
-    if (false === ref2.current) {
-      if (null !== ref.current) {
-        const current = ref.current;
-        obj = obj(ref[1]);
-        const fn = function u(value, value2) {
-          current.state.value = value;
-          current.height.value = value2;
-        };
-        obj2 = { _keyboardEventData: current };
-        fn.__closure = obj2;
-        fn.__workletHash = 5041909921996;
-        fn.__initData = __initData;
-        ref.current = obj.subscribeForKeyboardEvents(fn, current);
-        tmp.current = true;
-      }
-    }
-    return () => {
-      obj = obj(closure_1[1]);
-      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
-      ref2.current = false;
-    };
-  }, []);
-  return tmp.current;
+let useAnimatedPropsJS;
+if (module_1653.shouldBeUseWeb()) {
+  useAnimatedPropsJS = function useAnimatedPropsJS(fn, items, arg2) {
+    const obj = _mod1800;
+    return obj.useAnimatedStyle(fn, items, arg2, true);
+  };
+} else {
+  useAnimatedPropsJS = _mod1800.useAnimatedStyle;
 }
+
+export const useAnimatedProps = useAnimatedPropsJS;

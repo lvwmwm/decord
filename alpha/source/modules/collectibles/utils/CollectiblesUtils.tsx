@@ -1,13 +1,13 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7761
+// Function ID: 7762
 // Name: utils/CollectiblesUtils
-// Dependencies: [7755, 7572, 4831, 2]
+// Dependencies: [7762, 7578, 4836, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 7754 (utils/CollectiblesUtils)
-import DateUtils from "DateUtils" /* 4831 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7572 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7755 */;
+// Module 7761 (utils/CollectiblesUtils)
+import DateUtils from "DateUtils" /* 4836 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7578 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7762 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
@@ -39,7 +39,7 @@ export function buildFetchCollectiblesOptionsQuery(noCache, tab) {
     }
     const tmp2 = require;
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(7755).ShopVariantsReturnStyle.VARIANTS_GROUP;
+      obj.variants_return_style = tmp2(7762).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;

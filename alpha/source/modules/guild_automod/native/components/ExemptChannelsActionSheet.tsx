@@ -1,21 +1,21 @@
-// Module ID: 19644
-// Function ID: 19645
+// Module ID: 19701
+// Function ID: 19702
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 7274, 4880, 4951, 1384, 21, 504, 7275, 5647, 8595, 6969, 19643, 1114, 2]
+// Dependencies: [19, 7280, 4885, 4956, 1383, 21, 504, 7281, 5652, 8603, 6975, 19700, 1113, 2]
 // Exports: default
 
-// Module 19644 (ExemptChannelsActionSheet)
+// Module 19701 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7274 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7280 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow = tmp(6969);
+const TableRow = tmp(6975);
 function getChannelOptionId(channel) {
   return channel.channel.id;
 }
@@ -64,8 +64,8 @@ export default function ExemptChannelsActionSheet(guildId) {
     }
     return tmp4;
   }, items5);
-  stateFromStores(19643);
-  const intl = guildId(1114).intl;
-  const intl2 = guildId(1114).intl;
-  return <tmp5 title={intl.string(guildId(1114).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1114).t.vephiL)} listId="automod-exempt-channels" items={memo} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;
+  stateFromStores(19700);
+  const intl = guildId(1113).intl;
+  const intl2 = guildId(1113).intl;
+  return <tmp5 title={intl.string(guildId(1113).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1113).t.vephiL)} listId="automod-exempt-channels" items={memo} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;
 };

@@ -1,26 +1,26 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 10950
+// Function ID: 10951
 // Name: conjurePublishConnection
-// Dependencies: [5, 2040, 6838, 10847, 572, 10932, 10936, 10937, 1995, 10934, 10940, 10922, 10854, 10941, 2]
+// Dependencies: [5, 2038, 6844, 10867, 572, 10951, 10955, 10956, 1994, 10953, 10959, 10941, 10874, 10960, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestPublishOptions
 
-// Module 10931 (conjurePublishConnection)
+// Module 10950 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10854 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10922 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10934 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10940 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10941 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10941 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10953 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10959 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10960 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10847 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
 import size from "module_2" /* 2 */;
 
 let paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(10932);
+const requestConjureDevicePermissionsDefault = tmp(10951);
 function rejectPendingPatchNotesDraft(projectId, arg1) {
   const value = map1.get(projectId);
   const obj = map1;
@@ -131,7 +131,7 @@ let obj2 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ let obj2 = {
                 const tmp9 = projectId;
                 if (publishApprovalUrl.getPublishApprovalUrl(projectId) === tmp.approval_url) {
                   paths = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   const obj5 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId: tmp9, approvalUrl: tmp.approval_url };
                   const obj2 = projectId(paths[4]);
@@ -174,7 +174,7 @@ let obj2 = {
             const result = value.promptPublishApproval(closure_128_0.approval_url);
           }
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp14) {
           paths = 3;
           throw tmp14;

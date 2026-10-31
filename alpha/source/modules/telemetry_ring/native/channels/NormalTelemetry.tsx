@@ -1,11 +1,11 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 15960
+// Function ID: 15961
 // Name: NormalTelemetry
-// Dependencies: [2001, 2002, 2]
+// Dependencies: [2000, 2001, 2]
 
-// Module 15919 (NormalTelemetry)
-import TelemetryRingNative2 from "TelemetryRingNative" /* 2002 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2001 */;
+// Module 15960 (NormalTelemetry)
+import TelemetryRingNative2 from "TelemetryRingNative" /* 2001 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2000 */;
 import size from "module_2" /* 2 */;
 
 const TelemetryRingNative = TelemetryRingNative2;

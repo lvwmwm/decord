@@ -1,14 +1,14 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8966
+// Function ID: 8967
 // Name: GuildScheduledEventManager
-// Dependencies: [5, 5040, 6849, 8958, 7281, 8964, 8965, 2]
+// Dependencies: [5, 5045, 6855, 8967, 7287, 8973, 8974, 2]
 
-// Module 8957 (GuildScheduledEventManager)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8958 */;
+// Module 8966 (GuildScheduledEventManager)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8967 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let _self, c0, c1, c3, c7, c8;
@@ -31,7 +31,7 @@ let obj = function _getGuildEventsForCurrentUser() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -78,7 +78,7 @@ let obj = function _getGuildEventsForCurrentUser() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp22) {
         let closure_3 = tmp22;
         if (0 === c4) {
@@ -219,7 +219,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -297,7 +297,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                     let obj3 = { value, done: true };
                                     return obj3;
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } else {
                                   try {
@@ -327,7 +327,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                                 const obj3 = { value, done: true };
                                                 return obj3;
                                               } else {
-                                                return { value: "HermesInternal", done: null };
+                                                return { value: "HermesInternal", done: "HermesInternal" };
                                               }
                                             } else {
                                               while (true) {
@@ -385,7 +385,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                                       continue;
                                                     }
                                                     c7 = 3;
-                                                    return { value: "HermesInternal", done: null };
+                                                    return { value: "HermesInternal", done: "HermesInternal" };
                                                   }
                                                 } else {
                                                   c5 = 0;
@@ -426,7 +426,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                                       } else {
                                         let num4 = 3;
                                         c0 = 3;
-                                        return { value: "HermesInternal", done: null };
+                                        return { value: "HermesInternal", done: "HermesInternal" };
                                       }
                                     }
                                   } catch (tmp7) {
@@ -467,7 +467,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
             }
             let num4 = 3;
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp18) {
             tmp19 = c2;
             if (0 === c2) {
@@ -504,7 +504,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -536,7 +536,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 _self = guildScheduledEventsForGuild[Symbol.iterator]();
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp4) {
             guildScheduledEventsForGuild = 0;
@@ -615,7 +615,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     let self = this;
     return (async function(arg0, value) {
       let closure_0;
-      const f135304 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
+      const f135717 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -626,7 +626,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -649,7 +649,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 guildId = guildScheduledEventsForGuild[Symbol.iterator]();
               }
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp4) {
             let c6 = 0;
@@ -663,7 +663,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
               let _Promise3 = Promise;
               let self5 = this;
               let self6 = this;
-              let promise = new Promise(f135304);
+              let promise = new Promise(f135717);
               c8 = 3;
               c9 = 1;
               let obj4 = { value: promise, done: false };
@@ -690,7 +690,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise2 = Promise;
                 let self3 = this;
                 let self4 = this;
-                let promise3 = new Promise(f135304);
+                let promise3 = new Promise(f135717);
                 c8 = 5;
                 c9 = 1;
                 let obj6 = { value: promise3, done: false };
@@ -700,7 +700,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise = Promise;
                 self = this;
                 let self2 = this;
-                let promise4 = new Promise(f135304);
+                let promise4 = new Promise(f135717);
                 c8 = 6;
                 c9 = 1;
                 let obj7 = { value: promise4, done: false };

@@ -1,11 +1,11 @@
-// Module ID: 19591
-// Function ID: 19592
+// Module ID: 19648
+// Function ID: 19649
 // Name: GuildSettingsVanityURLUtils
-// Dependencies: [1072, 1114, 2]
+// Dependencies: [1072, 1113, 2]
 // Exports: canSeeVanityUrlSettings, getErrorMessageFromErrorCode
 
-// Module 19591 (GuildSettingsVanityURLUtils)
-import intl8 from "intl" /* 1114 */;
+// Module 19648 (GuildSettingsVanityURLUtils)
+import intl8 from "intl" /* 1113 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

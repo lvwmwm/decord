@@ -1,22 +1,22 @@
-// Module ID: 13717
-// Function ID: 13718
+// Module ID: 13752
+// Function ID: 13753
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 5010, 13713, 21, 5009, 9817, 4868, 11520, 13718, 504, 8411, 1188, 5619, 2]
+// Dependencies: [19, 17, 5015, 13748, 21, 5014, 9838, 4873, 11554, 13753, 504, 8419, 1187, 5624, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 13717 (ForumPostUsername)
+// Module 13752 (ForumPostUsername)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import native from "native" /* 1188 */;
-import ForumLayout from "ForumLayout" /* 4868 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8411 */;
-import ForumHooks from "ForumHooks" /* 9817 */;
-import useChatWidthDefault from "useChatWidth" /* 11520 */;
-import ForumChannelStore from "ForumChannelStore" /* 13713 */;
+import native from "native" /* 1187 */;
+import ForumLayout from "ForumLayout" /* 4873 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8419 */;
+import ForumHooks from "ForumHooks" /* 9838 */;
+import useChatWidthDefault from "useChatWidth" /* 11554 */;
+import ForumChannelStore from "ForumChannelStore" /* 13748 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -47,7 +47,7 @@ function ForumPostUsername(arg0) {
     num = 72;
   }
   const tmp4 = useChatWidthDefault();
-  const diff = tmp4 - tmp2(13718).GRID_HORIZONTAL_PADDING - num;
+  const diff = tmp4 - tmp2(13753).GRID_HORIZONTAL_PADDING - num;
   const items = [AccessibilityStore];
   const tmp2Result = get_initialized;
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -73,7 +73,7 @@ function ForumPostUsername(arg0) {
       }
       items3 = [tmp24, ];
       let tmp26;
-      const Text = tmp2(5619).Text;
+      const Text = tmp2(5624).Text;
       if (tmp18) {
         tmp26 = processColorStringsArray;
       }

@@ -1,11 +1,11 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18082
+// Function ID: 18083
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1072, 5014, 13772, 1100, 7629, 5707, 1114, 18040, 2]
+// Dependencies: [5, 32, 19, 1072, 5019, 13807, 1099, 7636, 5712, 1113, 18083, 2]
 // Exports: default
 
-// Module 18039 (usePrivateChannelWave)
-import MessageConstants from "MessageConstants" /* 5014 */;
+// Module 18082 (usePrivateChannelWave)
+import MessageConstants from "MessageConstants" /* 5019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ export default function usePrivateChannelWave(id, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -102,7 +102,7 @@ export default function usePrivateChannelWave(id, arg1) {
           closure_129_2(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp39) {
         closure_2 = tmp39;
         if (0 === c3) {

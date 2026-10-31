@@ -1,22 +1,22 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14249
+// Function ID: 14250
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 7932, 21, 5009, 575, 5581, 7949, 5712, 14212, 5619, 1114, 5629, 14213, 14204, 2]
+// Dependencies: [5, 19, 17, 7940, 21, 5014, 575, 5586, 7957, 5717, 14250, 5624, 1113, 5634, 14251, 14242, 2]
 // Exports: default
 
-// Module 14211 (ContactSyncLandingOnboardingRedesign)
+// Module 14249 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5581 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7932 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14204 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14212 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 14213 */;
+import NavigatorConstants from "NavigatorConstants" /* 5586 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 14242 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14250 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 14251 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2;
@@ -78,7 +78,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -111,7 +111,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
             closure_128_0();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -122,18 +122,18 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   let obj3 = { resizeMode: "contain", style: tmp.headerImage, source: AssetRegistryDefault };
   const tmp3 = FastImageDefault;
   items1 = [closure_7(tmp3, obj3), , , , ];
-  let obj4 = { style: tmp.title, variant: "heading-xl/bold", children: intl.string(onNext(1114).t["/G+nci"]) };
-  const Text = onNext(5619).Text;
-  intl = onNext(1114).intl;
+  let obj4 = { style: tmp.title, variant: "heading-xl/bold", children: intl.string(onNext(1113).t["/G+nci"]) };
+  const Text = onNext(5624).Text;
+  intl = onNext(1113).intl;
   items1[1] = closure_7(Text, obj4);
-  let obj5 = { style: tmp.subtitle, variant: "text-sm/medium", children: intl2.string(onNext(1114).t.G8zcHt) };
-  const Text2 = onNext(5619).Text;
-  intl2 = onNext(1114).intl;
+  let obj5 = { style: tmp.subtitle, variant: "text-sm/medium", children: intl2.string(onNext(1113).t.G8zcHt) };
+  const Text2 = onNext(5624).Text;
+  intl2 = onNext(1113).intl;
   items1[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttonContainer, children: closure_7(Button, obj7) };
-  obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1114).t.LhlgY9), onPress: callback, loading };
-  Button = onNext(5629).Button;
-  intl3 = onNext(1114).intl;
+  obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1113).t.LhlgY9), onPress: callback, loading };
+  Button = onNext(5634).Button;
+  intl3 = onNext(1113).intl;
   items1[3] = closure_7(View, obj6);
   items1[4] = closure_7(ContactSyncErrorDefault, { error });
   items2 = [closure_8(View, obj2), ];

@@ -1,11 +1,11 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9391
+// Function ID: 9392
 // Name: calculateSteamReviewScoreDescription
-// Dependencies: [2037, 2]
+// Dependencies: [2035, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 9371 (calculateSteamReviewScoreDescription)
-import GameDetectionTypes from "GameDetectionTypes" /* 2037 */;
+// Module 9391 (calculateSteamReviewScoreDescription)
+import GameDetectionTypes from "GameDetectionTypes" /* 2035 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");

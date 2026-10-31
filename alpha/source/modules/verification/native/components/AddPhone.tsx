@@ -1,23 +1,23 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7212
+// Function ID: 7213
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 7103, 4852, 1384, 1072, 1083, 21, 5009, 575, 504, 7065, 7207, 6440, 5619, 1114, 7208, 7124, 6738, 7209, 1995, 5629, 5954, 7239, 2]
+// Dependencies: [5, 32, 19, 17, 7109, 4857, 1383, 1072, 1083, 21, 5014, 575, 504, 7071, 7213, 6446, 5624, 1113, 7214, 7130, 6744, 7215, 1994, 5634, 5959, 7245, 2]
 // Exports: default
 
-// Module 7206 (AddPhone)
+// Module 7212 (AddPhone)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PhoneStore from "PhoneStore" /* 7103 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4852 */;
-import UserStore from "UserStore" /* 1384 */;
+import PhoneStore from "PhoneStore" /* 7109 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default function AddPhone(reason) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -156,7 +156,7 @@ export default function AddPhone(reason) {
             c3 = 0;
             closure_129_12(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

@@ -1,20 +1,20 @@
-// Module ID: 18422
-// Function ID: 18423
+// Module ID: 18465
+// Function ID: 18466
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6880, 21, 5009, 575, 504, 18413, 1188, 9487, 1377, 6996, 7048, 10748, 2]
+// Dependencies: [19, 17, 6886, 21, 5014, 575, 504, 18456, 1187, 9509, 1376, 7002, 7054, 10768, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 18422 (BackIconWithBadge)
+// Module 18465 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6996 */;
-import XSmallIcon from "XSmallIcon" /* 7048 */;
-import ClipView from "ClipView" /* 9487 */;
-import XLargeIcon from "XLargeIcon" /* 10748 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7002 */;
+import XSmallIcon from "XSmallIcon" /* 7054 */;
+import ClipView from "ClipView" /* 9509 */;
+import XLargeIcon from "XLargeIcon" /* 10768 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6880 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const native = tmp4(1188);
+const native = tmp4(1187);
 function IconWithBadge(includeNotificationsCount) {
   let c0;
   let items4;
@@ -46,7 +46,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(18413)().value;
+  const value = memo(18456)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -83,7 +83,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(9487);
+  const tmp5Result = tmp5(9509);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;

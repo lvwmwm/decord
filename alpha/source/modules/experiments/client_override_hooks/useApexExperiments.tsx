@@ -1,16 +1,16 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11550
+// Function ID: 11551
 // Name: useApexExperiments
-// Dependencies: [32, 19, 1247, 8580, 5238, 1451, 11517, 504, 2]
+// Dependencies: [32, 19, 1246, 8588, 5243, 1450, 11551, 504, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 11516 (useApexExperiments)
-import apex_ApexTypes from "apex/ApexTypes" /* 1451 */;
-import ExperimentManager from "ExperimentManager" /* 5238 */;
-import experiment from "experiment" /* 8580 */;
+// Module 11550 (useApexExperiments)
+import apex_ApexTypes from "apex/ApexTypes" /* 1450 */;
+import ExperimentManager from "ExperimentManager" /* 5243 */;
+import experiment from "experiment" /* 8588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,20 +1,20 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12280
+// Function ID: 12281
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1072, 21, 5009, 575, 9741, 8750, 1410, 12232, 6974, 12243, 1993, 12236, 5619, 1114, 12206, 6978, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 9761, 8758, 1409, 12270, 6980, 12281, 1992, 12274, 5624, 1113, 12244, 6984, 2]
 // Exports: default
 
-// Module 12242 (RecommendationsBannerCard)
+// Module 12280 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8750 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12236 */;
-import RecommendationsBannerDefault from "RecommendationsBanner" /* 12243 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12274 */;
+import RecommendationsBannerDefault from "RecommendationsBanner" /* 12281 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -65,10 +65,10 @@ export default function RecommendationsBannerCard(application) {
   const overrideImageUrl = application.overrideImageUrl;
   let tmp = closure_8();
   if (!showsPromoted) {
-    const obj = application(9741);
+    const obj = application(9761);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  const obj2 = application(9741);
+  const obj2 = application(9761);
   const shelfBadgeTypeIfActive = obj2.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -94,13 +94,13 @@ export default function RecommendationsBannerCard(application) {
   const applicationIconSource = obj3.getApplicationIconSource(obj4);
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    tmp12Result2 = closure_6(tmp4(12232).BaseAppRow, obj5);
+    tmp12Result2 = closure_6(tmp4(12270).BaseAppRow, obj5);
   } else {
     let tmp12Result;
     const items1 = [tmp.container, , ];
     let num = 8;
     let num2 = 8;
-    const PressableOpacity = tmp4(6974).PressableOpacity;
+    const PressableOpacity = tmp4(6980).PressableOpacity;
     if (isFirst) {
       num2 = 0;
     }
@@ -115,7 +115,7 @@ export default function RecommendationsBannerCard(application) {
     const obj10 = { applicationBot: application.bot, isActivity: tmp4Result.isActivityApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
     const tmp10Result = RecommendationsBannerDefault;
     ({ id: obj8.applicationId, icon } = application);
-    tmp4Result = application(9741);
+    tmp4Result = application(9761);
     items2 = [closure_6(tmp10Result, obj10), ];
     if (showsPromoted) {
       const obj11 = { style: tmp.notifsContainer, children: items3 };
@@ -123,9 +123,9 @@ export default function RecommendationsBannerCard(application) {
       items3 = [closure_6(ActivityShelfBadgeDefault, obj12), ];
       if (showsPromoted) {
         const obj13 = { style: tmp.promotedLabelWrapper, children: closure_6(Text, obj14) };
-        obj14 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: intl.string(application(1114).t["/eVltv"]) };
-        Text = tmp4(5619).Text;
-        intl = tmp4(1114).intl;
+        obj14 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: intl.string(application(1113).t["/eVltv"]) };
+        Text = tmp4(5624).Text;
+        intl = tmp4(1113).intl;
         showsPromoted = tmp14(tmp13, obj13);
       }
       items3[1] = showsPromoted;
@@ -139,16 +139,16 @@ export default function RecommendationsBannerCard(application) {
     const obj15 = { style: tmp.appDetailsContainer, children: items5 };
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(12206), obj16);
+      tmp14Result = tmp14(tmp10(12244), obj16);
     }
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };
     const obj18 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    items6 = [closure_6(application(5619).Text, obj18), ];
+    items6 = [closure_6(application(5624).Text, obj18), ];
     const obj19 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = closure_6(application(5619).Text, obj19);
+    items6[1] = closure_6(application(5624).Text, obj19);
     items5[1] = closure_7(View, obj17);
-    items5[2] = closure_6(application(6978).TableRowArrow, {});
+    items5[2] = closure_6(application(6984).TableRowArrow, {});
     items4[1] = closure_7(View, obj15);
     tmp12Result2 = tmp12(PressableOpacity, obj7);
   }

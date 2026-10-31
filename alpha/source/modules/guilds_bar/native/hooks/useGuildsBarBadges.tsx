@@ -1,25 +1,25 @@
-// Module ID: 18347
-// Function ID: 18348
+// Module ID: 18390
+// Function ID: 18391
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 10991, 5041, 4921, 4880, 4941, 1384, 1072, 21, 5009, 504, 5042, 18348, 5591, 575, 1188, 18349, 18318, 18317, 2]
+// Dependencies: [109, 19, 11010, 5046, 4926, 4885, 4946, 1383, 1072, 21, 5014, 504, 5047, 18391, 5596, 575, 1187, 18392, 18361, 18360, 2]
 // Exports: default
 
-// Module 18347 (useGuildsBarBadges)
+// Module 18390 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5042 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18318 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18349 */;
+import native from "native" /* 1187 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5047 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18361 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18392 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10991 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5041 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11010 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

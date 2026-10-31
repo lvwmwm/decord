@@ -1,13 +1,13 @@
-// Module ID: 7497
-// Function ID: 7498
+// Module ID: 7503
+// Function ID: 7504
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1072, 6738, 7498, 7500, 1253, 1266, 7501, 1378, 5704, 2]
+// Dependencies: [5, 502, 1072, 6744, 7504, 7506, 1252, 1265, 7507, 1377, 5709, 2]
 
-// Module 7497 (MobileWebHandoffLinking)
-import FingerprintUtils from "FingerprintUtils" /* 1266 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 7498 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7500 */;
+// Module 7503 (MobileWebHandoffLinking)
+import FingerprintUtils from "FingerprintUtils" /* 1265 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 7504 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7506 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const AnalyticsUtilsDefault = tmp(1253);
+const AnalyticsUtilsDefault = tmp(1252);
 function createHandoffTokenWithLoadingModal(arg0) {
   let authenticated;
   let fingerprint;
@@ -141,7 +141,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
             const obj5 = closure_131_1(closure_131_2[10]);
             obj5.performURLNavigation(uRL.href);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c5 = 3;

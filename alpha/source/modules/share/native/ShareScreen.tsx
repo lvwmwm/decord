@@ -1,26 +1,26 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 15722
+// Function ID: 15723
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4862, 4858, 4941, 1072, 13333, 10707, 21, 5009, 575, 1114, 15683, 13334, 15684, 15685, 1253, 9809, 5751, 1376, 8923, 9759, 13372, 1995, 5955, 15686, 15687, 6999, 13344, 1623, 13345, 15688, 2]
+// Dependencies: [5, 32, 19, 17, 4867, 4863, 4946, 1072, 13368, 10727, 21, 5014, 575, 1113, 15723, 13369, 15724, 15725, 1252, 9830, 5756, 1375, 8932, 9780, 13407, 1994, 5960, 15726, 15727, 7005, 13379, 1622, 13380, 15728, 2]
 // Exports: default
 
-// Module 15682 (ShareScreen)
+// Module 15722 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import UserRowConstants from "UserRowConstants" /* 10707 */;
-import ForwardConstants from "ForwardConstants" /* 13333 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 15686 */;
-import ShareEmbedDefault from "ShareEmbed" /* 15687 */;
+import intl6 from "intl" /* 1113 */;
+import UserRowConstants from "UserRowConstants" /* 10727 */;
+import ForwardConstants from "ForwardConstants" /* 13368 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 15726 */;
+import ShareEmbedDefault from "ShareEmbed" /* 15727 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -173,7 +173,7 @@ export default function ShareScreen(appEntryKey) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -280,7 +280,7 @@ export default function ShareScreen(appEntryKey) {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } else {
                                   try {
@@ -414,7 +414,7 @@ export default function ShareScreen(appEntryKey) {
                 closure_129_6(false);
                 closure_129_7.current = false;
                 React = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
             closure_10 = React.lazy(() => closure_1_0(paths[25])(paths[24], paths.paths));
@@ -456,7 +456,7 @@ export default function ShareScreen(appEntryKey) {
           return obj20;
         }
         React = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp102) {
         paths = tmp102;
         if (0 === c3) {

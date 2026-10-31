@@ -1,15 +1,15 @@
-// Module ID: 12273
-// Function ID: 12274
+// Module ID: 12311
+// Function ID: 12312
 // Name: useAppsInThisServer
-// Dependencies: [19, 9742, 1384, 6030, 504, 10296, 1993, 9750, 12272, 12, 10298, 2]
+// Dependencies: [19, 9762, 1383, 6035, 504, 10316, 1992, 9770, 12310, 12, 10318, 2]
 // Exports: default
 
-// Module 12273 (useAppsInThisServer)
+// Module 12311 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6030 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9742 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

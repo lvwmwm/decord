@@ -1,27 +1,27 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 18985
+// Function ID: 18986
 // Name: SettingsNavigator
-// Dependencies: [19, 17, 2063, 16535, 1072, 21, 9835, 5009, 575, 18937, 1188, 5619, 1499, 15303, 18938, 7159, 563, 7320, 7345, 16537, 7647, 16538, 7163, 15826, 5591, 6974, 1114, 18422, 18939, 16382, 18940, 38, 2]
+// Dependencies: [19, 17, 2062, 16577, 1072, 21, 9856, 5014, 575, 18986, 1187, 5624, 1498, 15342, 18987, 7165, 563, 7326, 7351, 16579, 7654, 16580, 7169, 15866, 5596, 6980, 1113, 18465, 18988, 16424, 18989, 38, 2]
 
-// Module 18936 (SettingsNavigator)
+// Module 18985 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Pressables from "Pressables" /* 6974 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7159 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16537 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 18422 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 18937 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Pressables from "Pressables" /* 6980 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16579 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 18465 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 18986 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16535 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16577 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9835 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import NativeStackView from "NativeStackView" /* 9856 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj5;
 function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingRendererTypes.SettingsBadgeType.BETA) {
     const obj = { size: native.BetaSizes.SMALL };
-    const BetaTag = tmp(1188).BetaTag;
+    const BetaTag = tmp(1187).BetaTag;
     return React4(BetaTag, obj);
   }
 }

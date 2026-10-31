@@ -1,18 +1,18 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20087
+// Function ID: 20088
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 5009, 575, 5619, 1114, 2835, 5629, 2]
+// Dependencies: [17, 21, 5014, 575, 5624, 1113, 2836, 5634, 2]
 // Exports: default
 
-// Module 20026 (UpdateAppScreen)
+// Module 20087 (UpdateAppScreen)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import _modDef2835 from "module_2835" /* 2835 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
+import intl4 from "intl" /* 1113 */;
+import _modDef2836 from "module_2836" /* 2836 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BundleUpdaterManager;
@@ -42,11 +42,11 @@ export default function UpdateAppScreen() {
   let obj5;
   const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2835.yxqMCD) };
+  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2836.yxqMCD) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), , ];
-  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2835.VBZJJg) };
+  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2836.VBZJJg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = hasOwnProperty(Text2, obj3);
@@ -56,7 +56,7 @@ export default function UpdateAppScreen() {
       BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     },
-    text: intl3.string(_modDef2835.o4D6fm),
+    text: intl3.string(_modDef2836.o4D6fm),
     variant: "primary",
     size: "md"
   };

@@ -1,22 +1,22 @@
-// Module ID: 18951
-// Function ID: 18952
+// Module ID: 19000
+// Function ID: 19001
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 4855, 21, 5009, 575, 4967, 5255, 5256, 572, 5090, 5249, 10500, 4842, 1188, 5611, 5619, 1114, 5075, 2]
+// Dependencies: [32, 19, 17, 4860, 21, 5014, 575, 4972, 5260, 5261, 572, 5095, 5254, 10520, 4847, 1187, 5616, 5624, 1113, 5080, 2]
 // Exports: default
 
-// Module 18951 (BurstReactionAnimationContainer)
+// Module 19000 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4967 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4972 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -179,8 +179,8 @@ function BurstReactionAnimationContainerInner() {
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(10500);
-    items = [tmp6(4842).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    let tmp11 = animationData(10520);
+    items = [tmp6(4847).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }
   return tmp8;

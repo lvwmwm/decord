@@ -1,34 +1,34 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12319
+// Function ID: 12320
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9742, 1497, 1072, 6030, 21, 5009, 12282, 575, 12204, 6969, 11466, 12256, 7693, 11699, 1114, 1626, 10296, 1993, 12286, 9741, 5678, 12201, 1376, 12288, 5619, 12290, 12253, 12292, 9740, 1188, 12300, 12302, 5253, 5755, 10884, 2]
+// Dependencies: [5, 19, 17, 9762, 1496, 1072, 6035, 21, 5014, 12320, 575, 12242, 6975, 11500, 12294, 7700, 11736, 1113, 1625, 10316, 1992, 12324, 9761, 5683, 12239, 1375, 12326, 5624, 12328, 12291, 12330, 9760, 1187, 12338, 12340, 5258, 5760, 10909, 2]
 // Exports: default
 
-// Module 12281 (AppDetailContent)
+// Module 12319 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6030 */;
-import TableRow2 from "TableRow" /* 6969 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7693 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9741 */;
-import AppLauncherContext from "AppLauncherContext" /* 11466 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12201 */;
-import react2 from "react" /* 12204 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 12256 */;
-import Header from "Header" /* 12282 */;
-import BillIcon from "BillIcon" /* 12288 */;
-import ShopIcon from "ShopIcon" /* 12290 */;
+import intl3 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import TableRow2 from "TableRow" /* 6975 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
+import AppLauncherContext from "AppLauncherContext" /* 11500 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12239 */;
+import react2 from "react" /* 12242 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 12294 */;
+import Header from "Header" /* 12320 */;
+import BillIcon from "BillIcon" /* 12326 */;
+import ShopIcon from "ShopIcon" /* 12328 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9742 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, navigation;
@@ -92,7 +92,7 @@ class CommandRow {
     let onPressSend;
     ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
     let tmp = command;
-    let obj = command(11466);
+    let obj = command(11500);
     const entrypoint = obj.useAppLauncherContext().entrypoint;
     const tmp3 = onPressSend(true, true);
     hasOptions(context, true, true);
@@ -112,8 +112,8 @@ class CommandRow {
       sectionName
     };
     fn = undefined;
-    const useCommandRowSend = command(12256).useCommandRowSend;
-    const tmp5 = command(12256);
+    const useCommandRowSend = command(12294).useCommandRowSend;
+    const tmp5 = command(12294);
     if (installOnDemand) {
       let closure_0 = _asyncToGenerator(async (arg0, value) => {
         let obj5;
@@ -129,7 +129,7 @@ class CommandRow {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -170,7 +170,7 @@ class CommandRow {
                 closure_0();
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -219,7 +219,7 @@ class CommandRow {
       onAccessibilityAction: callback,
       trailing: closure_13(CommandRowButtonDefault, { hasOptions, sending, onPressSend })
     };
-    const TableRow = tmp(6969).TableRow;
+    const TableRow = tmp(6975).TableRow;
     return closure_13(TableRow, obj3);
   }
 }
@@ -405,8 +405,8 @@ export default function AppDetailContent(context) {
       const obj2 = { style: closure_7.monetizationDisclosureStyle, children: items };
       items = [map1(BillIcon.BillIcon, { size: "sm", color: "icon-muted" }), ];
       const obj3 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: intl.string(intl3.t["5khEk8"]) };
-      const Text = tmp(5619).Text;
-      intl = tmp(1114).intl;
+      const Text = tmp(5624).Text;
+      intl = tmp(1113).intl;
       items[1] = map1(Text, obj3);
       tmp6 = authStore3(View, obj2);
     }
@@ -415,8 +415,8 @@ export default function AppDetailContent(context) {
       const obj4 = { style: closure_7.monetizationDisclosureStyle, children: items1 };
       items1 = [map1(ShopIcon.ShopIcon, { size: "sm", color: "icon-muted" }), ];
       const obj5 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(intl3.t["8z5B2U"]) };
-      const Text2 = tmp(5619).Text;
-      intl2 = tmp(1114).intl;
+      const Text2 = tmp(5624).Text;
+      intl2 = tmp(1113).intl;
       items1[1] = map1(Text2, obj5);
       tmp11 = authStore3(View, obj4);
     }

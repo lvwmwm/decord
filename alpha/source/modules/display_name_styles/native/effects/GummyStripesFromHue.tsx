@@ -1,15 +1,15 @@
-// Module ID: 17270
-// Function ID: 17271
+// Module ID: 17328
+// Function ID: 17329
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 5009, 1401, 5090, 16398, 2]
+// Dependencies: [32, 19, 21, 5014, 1400, 5095, 16440, 2]
 // Exports: default
 
-// Module 17270 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 16398 */;
+// Module 17328 (GummyStripesFromHue)
+import ColorPickerUtils from "ColorPickerUtils" /* 16440 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -59,6 +59,6 @@ export default function GummyStripesFromHue(hue) {
       return React3(AnimatedStripe, obj, index);
     })
   };
-  GUMMY_STRIPES = hue(1401).GUMMY_STRIPES;
+  GUMMY_STRIPES = hue(1400).GUMMY_STRIPES;
   return closure_4(closure_5, obj);
 };

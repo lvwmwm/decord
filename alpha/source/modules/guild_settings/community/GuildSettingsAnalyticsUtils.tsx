@@ -1,17 +1,17 @@
-// Module ID: 19788
-// Function ID: 19789
+// Module ID: 19845
+// Function ID: 19846
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 5237, 4880, 19789, 1072, 504, 1114, 19806, 1896, 2]
+// Dependencies: [19, 5242, 4885, 19846, 1072, 504, 1113, 19863, 1895, 2]
 // Exports: getGuildAnalyticsCardProps, useGuildAnalyticsOverview
 
-// Module 19788 (GuildSettingsAnalyticsUtils)
-import intl4 from "intl" /* 1114 */;
-import NumberUtils from "NumberUtils" /* 1896 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19806 */;
+// Module 19845 (GuildSettingsAnalyticsUtils)
+import intl4 from "intl" /* 1113 */;
+import NumberUtils from "NumberUtils" /* 1895 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19863 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19789 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19846 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -85,18 +85,18 @@ export function useGuildAnalyticsOverview(guildId) {
   }, items6);
   let obj3 = { analytics, notice: tmp12 };
   if (tmp5) {
-    const obj4 = { type: "info", message: intl3.string(tmp(1114).t["FsgE/B"]), role: "none" };
-    intl3 = tmp(1114).intl;
+    const obj4 = { type: "info", message: intl3.string(tmp(1113).t["FsgE/B"]), role: "none" };
+    intl3 = tmp(1113).intl;
     tmp12 = obj4;
   } else if (errorCode === constants.NOT_ENOUGH_GUILD_MEMBERS) {
-    const obj5 = { type: "info", message: intl2.string(tmp(1114).t["FsgE/B"]), role: "status" };
-    intl2 = tmp(1114).intl;
+    const obj5 = { type: "info", message: intl2.string(tmp(1113).t["FsgE/B"]), role: "status" };
+    intl2 = tmp(1113).intl;
     tmp12 = obj5;
   } else {
     tmp12 = null;
     if (null != errorCode) {
-      const obj6 = { type: "critical", message: intl.string(tmp(1114).t.Iju63e), role: "alert" };
-      intl = tmp(1114).intl;
+      const obj6 = { type: "critical", message: intl.string(tmp(1113).t.Iju63e), role: "alert" };
+      intl = tmp(1113).intl;
       tmp12 = obj6;
     }
   }

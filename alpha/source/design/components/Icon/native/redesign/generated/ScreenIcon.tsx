@@ -1,14 +1,14 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9587
+// Function ID: 9588
 // Name: ScreenIcon
-// Dependencies: [19, 21, 575, 5711, 9566, 2]
+// Dependencies: [19, 21, 575, 5716, 9588, 2]
 // Exports: ScreenIcon
 
-// Module 9565 (ScreenIcon)
+// Module 9587 (ScreenIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 9566 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 9588 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

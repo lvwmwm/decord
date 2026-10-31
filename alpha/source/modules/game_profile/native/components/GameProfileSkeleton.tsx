@@ -1,17 +1,17 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9438
+// Function ID: 9439
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 5009, 575, 9417, 5090, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9439, 5095, 2]
 // Exports: GameProfileSkeletonButton, GameProfileSkeletonContainer
 
-// Module 9416 (GameProfileSkeleton)
+// Module 9438 (GameProfileSkeleton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 9417 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 9439 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;

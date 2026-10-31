@@ -1,22 +1,22 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15074
+// Function ID: 15075
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2063, 21, 5009, 504, 2048, 7725, 4831, 5619, 1114, 8736, 2]
+// Dependencies: [19, 17, 2062, 21, 5014, 504, 2047, 7732, 4836, 5624, 1113, 8744, 2]
 // Exports: default
 
-// Module 15037 (EditCollectiblesPreviewDetails)
+// Module 15074 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl6 from "intl" /* 1114 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
-import DateUtils from "DateUtils" /* 4831 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8736 */;
+import intl6 from "intl" /* 1113 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import DateUtils from "DateUtils" /* 4836 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8744 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -80,20 +80,20 @@ function EditCollectiblesPreviewDescription(arg0) {
       const tmp15 = metroRequire;
       if (tmp16) {
         const obj4 = { variant: "text-sm/medium", color: "text-default", children: format(Io7ozn, obj5) };
-        const Text = tmp(5619).Text;
-        const intl = tmp(1114).intl;
+        const Text = tmp(5624).Text;
+        const intl = tmp(1113).intl;
         format = intl.format;
         obj5 = { days: str.toString() };
         str = diffAsUnitsResult.days;
-        Io7ozn = tmp(1114).t.Io7ozn;
+        Io7ozn = tmp(1113).t.Io7ozn;
         tmp16 = hasOwnProperty(Text, obj4);
       }
       const items1 = [tmp16, , ];
-      const Text2 = tmp(5619).Text;
-      const intl2 = tmp(1114).intl;
+      const Text2 = tmp(5624).Text;
+      const intl2 = tmp(1113).intl;
       const format2 = intl2.format;
       let toLocaleDateStringResult;
-      const gW9R4B = tmp(1114).t.gW9R4B;
+      const gW9R4B = tmp(1113).t.gW9R4B;
       if (purchase != null) {
         const purchasedAt = purchase.purchasedAt;
         toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { month: "long", year: "numeric" });
@@ -108,12 +108,12 @@ function EditCollectiblesPreviewDescription(arg0) {
       let tmp18Result = null != expiresAt2;
       if (tmp18Result) {
         const obj8 = { variant: "text-sm/medium", color: "text-default", children: format3(eZSTa5, obj9) };
-        const Text3 = tmp(5619).Text;
-        const intl3 = tmp(1114).intl;
+        const Text3 = tmp(5624).Text;
+        const intl3 = tmp(1113).intl;
         format3 = intl3.format;
         obj9 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
         expiresAt = purchase.expiresAt;
-        eZSTa5 = tmp(1114).t.eZSTa5;
+        eZSTa5 = tmp(1113).t.eZSTa5;
         tmp18Result = tmp18(Text3, obj8);
       }
       const obj10 = { children: items1 };
@@ -125,13 +125,13 @@ function EditCollectiblesPreviewDescription(arg0) {
     let tmp25Result;
     if (canUseCollectiblesResult) {
       const obj11 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
-      const Text6 = tmp(5619).Text;
-      intl5 = tmp(1114).intl;
+      const Text6 = tmp(5624).Text;
+      intl5 = tmp(1113).intl;
       tmp25Result = hasOwnProperty(Text6, obj11);
     } else {
       const tmp4Result = PremiumUtilsDefault;
       const isPremiumResult = tmp4Result.isPremium(user);
-      const Text5 = tmp(5619).Text;
+      const Text5 = tmp(5624).Text;
       const obj12 = { variant: "text-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
         obj12.children = nitroUpgradeCTA;
@@ -144,8 +144,8 @@ function EditCollectiblesPreviewDescription(arg0) {
     tmp23 = tmp25Result;
   } else {
     const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
-    const Text4 = tmp(5619).Text;
-    intl4 = tmp(1114).intl;
+    const Text4 = tmp(5624).Text;
+    intl4 = tmp(1113).intl;
     tmp23 = hasOwnProperty(Text4, obj13);
   }
   return tmp23;

@@ -1,19 +1,19 @@
-// Module ID: 19883
-// Function ID: 19884
+// Module ID: 19940
+// Function ID: 19941
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 5009, 575, 5077, 9090, 1188, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5082, 9109, 7062, 5624, 2]
 // Exports: default
 
-// Module 19883 (FormBigRadioBox)
+// Module 19940 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import react_native2 from "react-native" /* 5077 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9090 */;
+import react_native2 from "react-native" /* 5082 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FormRadio from "FormRadio" /* 7062 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,14 +21,16 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let obj4;
+let rect;
 let size;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, containerSelected: obj3, indicator: { position: "absolute", right: 18, top: 18 }, iconContainer: size, iconContainerSelected: obj4, title: { marginBottom: 2 }, disabled: { opacity: 0.5 } };
+let obj = { container: obj2, containerSelected: obj3, indicator: rect, iconContainer: size, iconContainerSelected: obj4, title: { marginBottom: 2 }, disabled: { opacity: 0.5 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, alignSelf: "stretch", alignItems: "flex-start", padding: 16 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
+rect = { position: "absolute", top: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16 };
 size = { height: 40, width: 40, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, justifyContent: "center", marginBottom: 16 };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_6 = createStyles(obj);
@@ -73,8 +75,8 @@ export default function FormBigRadioBox(arg0) {
     tmp8 = onPress;
   }
   items1 = [, , , ];
-  const obj3 = { style: tmp.indicator, active: selected };
-  items1[0] = React3(native.RadioIndicator, obj3);
+  const obj3 = { style: tmp.indicator, children: React3(FormRadio.FormRadio, { selected }) };
+  items1[0] = React3(View, obj3);
   const items2 = [tmp.iconContainer, ];
   const tmp10 = View;
   if (selected) {

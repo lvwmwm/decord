@@ -1,20 +1,20 @@
-// Module ID: 5195
-// Function ID: 5196
+// Module ID: 5200
+// Function ID: 5201
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 5044, 4912, 1072, 3, 5196, 1100, 5045, 5058, 5199, 2]
+// Dependencies: [32, 502, 5049, 4917, 1072, 3, 5201, 1099, 5050, 5063, 5204, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 5195 (getInitialNavigationState)
+// Module 5200 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1100 */;
-import matchPathCompat from "matchPathCompat" /* 5045 */;
-import RouteUtils from "RouteUtils" /* 5058 */;
-import useChatLayout from "useChatLayout" /* 5196 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5199 */;
+import router_utils from "router_utils" /* 1099 */;
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import RouteUtils from "RouteUtils" /* 5063 */;
+import useChatLayout from "useChatLayout" /* 5201 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5049 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -116,9 +116,9 @@ function computeInitialNavigationStateWithoutLogging() {
       const lastNonVoiceRoute = DefaultRouteStore.lastNonVoiceRoute;
       CHANNEL2 = tmp4.CHANNEL;
       matchPathCompat;
-      const RouteParam3 = tmp(5058).RouteParam;
+      const RouteParam3 = tmp(5063).RouteParam;
       guildIdResult1 = RouteParam3.guildId();
-      RouteParam4 = tmp(5058).RouteParam;
+      RouteParam4 = tmp(5063).RouteParam;
       matchPath2Result = matchPath2(lastNonVoiceRoute, obj4);
       flag = false;
     } else {

@@ -1,14 +1,14 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14087
+// Function ID: 14088
 // Name: SoundboardIcon
-// Dependencies: [19, 21, 575, 5711, 14053, 2]
+// Dependencies: [19, 21, 575, 5716, 14088, 2]
 // Exports: SoundboardIcon
 
-// Module 14052 (SoundboardIcon)
+// Module 14087 (SoundboardIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 14053 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 14088 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

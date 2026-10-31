@@ -1,13 +1,13 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11502
+// Function ID: 11503
 // Name: useDefaultAppLauncherWidth
-// Dependencies: [5268, 1492, 11467, 2]
+// Dependencies: [5273, 1491, 11501, 2]
 // Exports: useDefaultAppLauncherWidth
 
-// Module 11468 (useDefaultAppLauncherWidth)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11467 */;
+// Module 11502 (useDefaultAppLauncherWidth)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11501 */;
 import size from "module_2" /* 2 */;
 
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;

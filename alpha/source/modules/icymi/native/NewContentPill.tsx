@@ -1,21 +1,21 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18582
+// Function ID: 18583
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 4880, 8897, 21, 5009, 575, 9487, 6951, 504, 5248, 8910, 8914, 5090, 5632, 1501, 6974, 12994, 5619, 1114, 5016, 2]
+// Dependencies: [32, 19, 17, 4885, 8906, 21, 5014, 575, 9509, 6957, 504, 5253, 8919, 8923, 5095, 5637, 1500, 6980, 13029, 5624, 1113, 5021, 2]
 // Exports: default
 
-// Module 18539 (NewContentPill)
+// Module 18582 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
-import GuildIcon from "GuildIcon" /* 6951 */;
-import ClipView from "ClipView" /* 9487 */;
+import spring from "spring" /* 5637 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import ClipView from "ClipView" /* 9509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import ICYMIStore from "ICYMIStore" /* 8897 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import ICYMIStore from "ICYMIStore" /* 8906 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -136,7 +136,7 @@ export default function NewContentPill(onPress) {
     items = [{ translateY: withSpring(num, springConfig) }];
     ({ translateY: withSpring(num, springConfig) });
     num2 = 0;
-    withSpring2 = tmp(5632).withSpring;
+    withSpring2 = tmp(5637).withSpring;
     spring;
     tmp5 = springConfig;
     if (closure_8) {

@@ -1,15 +1,15 @@
-// Module ID: 19875
-// Function ID: 19876
+// Module ID: 19932
+// Function ID: 19933
 // Name: GuildSettingsRoleSubscriptionsEnableMonetization
-// Dependencies: [19, 4880, 21, 504, 19811, 18560, 1114, 2]
+// Dependencies: [19, 4885, 21, 504, 19868, 18603, 1113, 2]
 // Exports: default
 
-// Module 19875 (GuildSettingsRoleSubscriptionsEnableMonetization)
+// Module 19932 (GuildSettingsRoleSubscriptionsEnableMonetization)
 import Fragment from "Fragment" /* 21 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 18560 */;
-import PlaceholderDefault from "Placeholder" /* 19811 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 18603 */;
+import PlaceholderDefault from "Placeholder" /* 19868 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -24,9 +24,9 @@ export default function GuildSubscriptionEnableMonetization(guildId) {
     tmp5 = jsx(PlaceholderDefault, {});
   } else {
     UnavailableNoticeDefault;
-    const intl = tmp(1114).intl;
-    const intl2 = tmp(1114).intl;
-    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1114).t.KeeWp0)} description={intl2.string(guildId(1114).t["tJLG+L"])} />;
+    const intl = tmp(1113).intl;
+    const intl2 = tmp(1113).intl;
+    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1113).t.KeeWp0)} description={intl2.string(guildId(1113).t["tJLG+L"])} />;
   }
   return tmp5;
 };

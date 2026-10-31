@@ -1,19 +1,19 @@
-// Module ID: 7481
-// Function ID: 7482
+// Module ID: 7487
+// Function ID: 7488
 // Name: CallActionCreators
-// Dependencies: [4858, 4951, 1384, 1072, 6700, 1283, 1253, 5953, 1114, 7482, 7491, 572, 2]
+// Dependencies: [4863, 4956, 1383, 1072, 6706, 1282, 1252, 5958, 1113, 7488, 7497, 572, 2]
 
-// Module 7481 (CallActionCreators)
+// Module 7487 (CallActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl5 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6700 */;
-import useCanRing from "useCanRing" /* 7491 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4951 */;
-import UserStore_mod from "UserStore" /* 1384 */;
+import intl5 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
+import useCanRing from "useCanRing" /* 7497 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4956 */;
+import UserStore_mod from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -84,8 +84,8 @@ let obj = {
           if (null != user) {
             str = user.username;
           }
-          intl3 = tmp4(1114).intl;
-          intl4 = tmp4(1114).intl;
+          intl3 = tmp4(1113).intl;
+          intl4 = tmp4(1113).intl;
           show(obj2);
         });
       }
@@ -109,7 +109,7 @@ let obj = {
       const result = obj5.canRingUsersInChannel(channel);
       const tmp8 = require;
       if (result) {
-        const HTTP = tmp8(1283).HTTP;
+        const HTTP = tmp8(1282).HTTP;
         const request = { url: metroRequire.CALL_RING(channelId), body: obj2, oldFormErrors: true, rejectWithError: true };
         const post = HTTP.post;
         obj2 = { recipients: items, analytics_location: gdm_invite };

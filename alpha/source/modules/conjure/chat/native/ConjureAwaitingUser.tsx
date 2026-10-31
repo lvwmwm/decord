@@ -1,18 +1,18 @@
-// Module ID: 12443
-// Function ID: 12444
+// Module ID: 12478
+// Function ID: 12479
 // Name: ConjureAwaitingUser
-// Dependencies: [19, 5010, 21, 575, 5009, 12442, 504, 5090, 5249, 2]
+// Dependencies: [19, 5015, 21, 575, 5014, 12477, 504, 5095, 5254, 2]
 // Exports: ConjureAwaitingPulseRing
 
-// Module 12443 (ConjureAwaitingUser)
+// Module 12478 (ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12442 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12477 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -33,7 +33,7 @@ export function ConjureAwaitingPulseRing() {
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = stateFromStores(5090);
+  let obj2 = stateFromStores(5095);
   const sharedValue = obj2.useSharedValue(0);
   const items1 = [sharedValue, stateFromStores];
   const effect = react.useEffect(() => {
@@ -67,8 +67,8 @@ export function ConjureAwaitingPulseRing() {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 8512415125100;
   fn.__initData = __initData;
-  const obj3 = stateFromStores(5090);
+  const obj3 = stateFromStores(5095);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const items2 = [tmp.ring, animatedStyle];
-  return jsx(sharedValue(5090).View, { pointerEvents: "none", style: items2 });
+  return jsx(sharedValue(5095).View, { pointerEvents: "none", style: items2 });
 }

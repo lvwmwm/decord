@@ -1,26 +1,26 @@
-// Module ID: 13935
-// Function ID: 13936
+// Module ID: 13970
+// Function ID: 13971
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5010, 7694, 1384, 1072, 21, 1188, 5009, 575, 5591, 5619, 1114, 6974, 7100, 504, 5077, 6433, 9271, 8411, 13936, 5187, 5090, 5249, 10181, 1253, 10179, 1100, 6432, 13937, 8335, 9786, 9788, 2]
+// Dependencies: [19, 17, 5015, 7701, 1383, 1072, 21, 1187, 5014, 575, 5596, 5624, 1113, 6980, 7106, 504, 5082, 6439, 9290, 8419, 13971, 5192, 5095, 5254, 10201, 1252, 10199, 1099, 6438, 13972, 8343, 9807, 9809, 2]
 
-// Module 13935 (ChatInputContextBar)
+// Module 13970 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
-import intl9 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import useToken from "useToken" /* 5591 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Pressables from "Pressables" /* 6974 */;
-import DraftStore2 from "DraftStore" /* 7694 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8335 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9786 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9788 */;
+import intl9 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Pressables from "Pressables" /* 6980 */;
+import DraftStore2 from "DraftStore" /* 7701 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8343 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9807 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9809 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import UserStore from "UserStore" /* 1384 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7100);
+const AssetRegistryDefault = tmp4(7106);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -65,7 +65,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     tmp10 = bound;
   }
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1188).Icon;
+  Icon = tmp2(1187).Icon;
   items[1] = authStore2(hasOwnProperty, obj5);
   return tmp7(hasOwnProperty, obj3);
 }
@@ -311,7 +311,7 @@ function ChatInputEditBar(onCancelEditing) {
     tmp9 = bound;
   }
   obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1188).Icon;
+  Icon = tmp2(1187).Icon;
   const obj6 = { style: tmp.contextBarRow, children: map1(authStore3, obj7) };
   obj7 = { children: items };
   items = [tmp8, ];
@@ -355,7 +355,7 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
     tmp10 = bound;
   }
   obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1188).Icon;
+  Icon = tmp2(1187).Icon;
   const obj7 = { style: tmp.contextBarRow, children: map1(authStore3, obj8) };
   obj8 = { children: items };
   items = [tmp9, ];

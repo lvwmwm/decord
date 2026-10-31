@@ -1,21 +1,21 @@
-// Module ID: 11909
-// Function ID: 11910
+// Module ID: 11947
+// Function ID: 11948
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 6708, 502, 2007, 5763, 21, 5009, 504, 38, 5896, 11901, 1114, 6969, 11910, 2]
+// Dependencies: [19, 17, 6714, 502, 2006, 5768, 21, 5014, 504, 38, 5915, 11939, 1113, 6975, 11948, 2]
 // Exports: default
 
-// Module 11909 (UserSettingsVoiceOutputOptions)
+// Module 11947 (UserSettingsVoiceOutputOptions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 5763 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5896 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11910 */;
+import Constants from "Constants" /* 5768 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11948 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let lastActiveStream;
@@ -77,12 +77,12 @@ export default function UserSettingsVoiceOutputOptions() {
     const obj = AudioActionCreatorsDefault;
     obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
   }, items3);
-  const obj4 = { title: intl.string(stateFromStores1(1114).t.UXxPGB), hasIcons: false, children: items4 };
-  const UserSettingsTableRowGroup = stateFromStores1(11901).UserSettingsTableRowGroup;
-  intl = stateFromStores1(1114).intl;
-  const obj5 = { label: intl2.string(stateFromStores1(1114).t.xPHVBs), subLabel: closure_9(View, obj6) };
-  const TableRow = stateFromStores1(6969).TableRow;
-  intl2 = stateFromStores1(1114).intl;
+  const obj4 = { title: intl.string(stateFromStores1(1113).t.UXxPGB), hasIcons: false, children: items4 };
+  const UserSettingsTableRowGroup = stateFromStores1(11939).UserSettingsTableRowGroup;
+  intl = stateFromStores1(1113).intl;
+  const obj5 = { label: intl2.string(stateFromStores1(1113).t.xPHVBs), subLabel: closure_9(View, obj6) };
+  const TableRow = stateFromStores1(6975).TableRow;
+  intl2 = stateFromStores1(1113).intl;
   obj6 = { style: tmp.slider, children: closure_9(tmp12, obj7) };
   obj7 = {
     style: tmp.slider,
@@ -91,22 +91,22 @@ export default function UserSettingsVoiceOutputOptions() {
       const obj = AudioActionCreatorsDefault;
       return obj.setOutputVolume(arg0);
     },
-    accessibilityLabel: intl3.string(stateFromStores1(1114).t.xPHVBs)
+    accessibilityLabel: intl3.string(stateFromStores1(1113).t.xPHVBs)
   };
   tmp12 = VolumeSliderDefault;
-  intl3 = stateFromStores1(1114).intl;
+  intl3 = stateFromStores1(1113).intl;
   items4 = [closure_9(TableRow, obj5), ];
   let tmp9Result = null != stateFromStores1;
   const tmp10 = View;
   const tmp8 = closure_10;
   if (tmp9Result) {
-    const obj8 = { label: intl4.string(tmp2(1114).t.pEAl4b), subLabel: closure_9(tmp10, obj9) };
-    const TableRow2 = tmp2(6969).TableRow;
-    intl4 = tmp2(1114).intl;
+    const obj8 = { label: intl4.string(tmp2(1113).t.pEAl4b), subLabel: closure_9(tmp10, obj9) };
+    const TableRow2 = tmp2(6975).TableRow;
+    intl4 = tmp2(1113).intl;
     obj9 = { style: tmp.slider, children: closure_9(tmp11Result, obj10) };
-    obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: intl5.string(tmp2(1114).t.pEAl4b) };
+    obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: intl5.string(tmp2(1113).t.pEAl4b) };
     tmp11Result = VolumeSliderDefault;
-    intl5 = tmp2(1114).intl;
+    intl5 = tmp2(1113).intl;
     tmp9Result = tmp9(TableRow2, obj8);
   }
   items4[1] = tmp9Result;

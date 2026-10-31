@@ -1,40 +1,40 @@
-// Module ID: 8380
-// Function ID: 8381
+// Module ID: 8388
+// Function ID: 8389
 // Name: createMessageContent
-// Dependencies: [17, 5010, 2040, 5033, 6790, 8375, 8381, 4942, 8382, 7759, 4943, 7471, 1193, 502, 4858, 4921, 4880, 4951, 8384, 1384, 5014, 8370, 1072, 8385, 5647, 8386, 11, 8387, 6747, 1114, 8388, 8389, 8390, 6554, 1397, 8395, 8399, 4834, 8403, 6035, 8404, 8406, 6882, 8408, 8551, 8552, 8678, 7457, 8679, 8680, 8686, 8493, 8717, 6432, 1413, 1410, 8720, 1188, 10762, 10771, 10775, 10763, 10767, 8479, 15040, 1380, 15041, 4928, 7342, 15042, 15043, 4831, 12367, 15044, 8728, 7435, 575, 15045, 8411, 15047, 15048, 8543, 15051, 15052, 15069, 15090, 15092, 15106, 8415, 8416, 15107, 15110, 15111, 15112, 8417, 8413, 2]
+// Dependencies: [17, 5015, 2038, 5038, 6796, 8383, 8389, 4947, 8390, 7766, 4948, 7477, 1192, 502, 4863, 4926, 4885, 4956, 8392, 1383, 5019, 8378, 1072, 8393, 5652, 8394, 11, 8395, 6753, 1113, 8396, 8397, 8398, 6560, 1396, 8403, 8407, 4839, 8411, 6040, 8412, 8414, 6888, 8416, 8559, 8560, 8686, 7463, 8687, 8688, 8694, 8501, 8725, 6438, 1412, 1409, 8728, 1187, 10782, 10791, 10795, 10783, 10787, 8487, 15077, 1379, 15078, 4933, 7348, 15079, 15080, 4836, 12405, 15081, 8736, 7441, 575, 15082, 8419, 15084, 15085, 8551, 15088, 15089, 15106, 15127, 15129, 15143, 8423, 8424, 15144, 15147, 15150, 15151, 8425, 8421, 2]
 
-// Module 8380 (createMessageContent)
+// Module 8388 (createMessageContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
-import intl20 from "intl" /* 1114 */;
-import useChannelName from "useChannelName" /* 5647 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6747 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7759 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8370 */;
-import GuildTagConstants from "GuildTagConstants" /* 8385 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8386 */;
-import MessageCountUtils from "MessageCountUtils" /* 8387 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8388 */;
-import transformMessageComponentsDefault from "transformMessageComponents" /* 8686 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5010 */;
-import ApplicationStore_mod from "ApplicationStore" /* 2040 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5033 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8375 */;
-import InteractionStore from "InteractionStore" /* 8381 */;
-import LurkingStore from "LurkingStore" /* 4942 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8382 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7471 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import intl20 from "intl" /* 1113 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6753 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7766 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8378 */;
+import GuildTagConstants from "GuildTagConstants" /* 8393 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8394 */;
+import MessageCountUtils from "MessageCountUtils" /* 8395 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import transformMessageComponentsDefault from "transformMessageComponents" /* 8694 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5015 */;
+import ApplicationStore_mod from "ApplicationStore" /* 2038 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8383 */;
+import InteractionStore from "InteractionStore" /* 8389 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8390 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7477 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UploadStore from "UploadStore" /* 8384 */;
-import UserStore from "UserStore" /* 1384 */;
-import MessageConstants from "MessageConstants" /* 5014 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UploadStore from "UploadStore" /* 8392 */;
+import UserStore from "UserStore" /* 1383 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
             const tmp13Result = SpoilerChannelUtils;
             if (tmp13Result.isChannelSpoilerGated(channel1)) {
               const obj2 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl5.string(intl20.t["5uaI/7"]), archived: false, backgroundColor };
-              intl5 = tmp13(1114).intl;
+              intl5 = tmp13(1113).intl;
               obj4 = obj2;
             } else {
               const threadMetadata = channel1.threadMetadata;
@@ -90,8 +90,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 archived = threadMetadata.archived;
               }
               if (archived) {
-                const obj3 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl4.string(intl20.t.ZTo4HS), archived: true, archivedIconUrl: tmp13Result2.getAssetUriForEmbed(tmp18(8389)), backgroundColor };
-                intl4 = tmp13(1114).intl;
+                const obj3 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl4.string(intl20.t.ZTo4HS), archived: true, archivedIconUrl: tmp13Result2.getAssetUriForEmbed(tmp18(8397)), backgroundColor };
+                intl4 = tmp13(1113).intl;
                 obj4 = obj3;
                 tmp13Result2 = renderer_EmbedUtils;
               } else {
@@ -107,9 +107,9 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                       }
                       const blocked = mostRecentMessage.blocked;
                       const obj7 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: stringResult, archived: false, backgroundColor };
-                      const intl2 = tmp13(1114).intl;
+                      const intl2 = tmp13(1113).intl;
                       const string = intl2.string;
-                      const t = tmp13(1114).t;
+                      const t = tmp13(1113).t;
                       if (blocked) {
                         stringResult = string(t.XAkOo2);
                       } else {
@@ -120,7 +120,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                   }
                 }
                 const obj8 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl3.string(intl20.t.ZTo4HS), archived: false, backgroundColor };
-                intl3 = tmp13(1114).intl;
+                intl3 = tmp13(1113).intl;
                 obj4 = obj8;
               }
             }
@@ -129,7 +129,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
           return obj;
         }
         obj = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl.string(intl20.t.HYtNyE), archived: false, backgroundColor };
-        intl = tmp13(1114).intl;
+        intl = tmp13(1113).intl;
       }
     }
   }
@@ -1248,7 +1248,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "PX_8", hasSpoilerEmbeds: "auto", hasBailedAst: 0 };
+    parseMessageMarkupResult = { content: "PX_8", hasSpoilerEmbeds: "none", hasBailedAst: "URL" };
   }
 }
 const processColor = react_native.processColor;

@@ -1,10 +1,10 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 10110
+// Function ID: 10111
 // Name: ChatChangesetUpdateTracker
 // Dependencies: [2]
 // Exports: getAndIncrementChangesetIdForChat, getChangesetIdForChat
 
-// Module 10090 (ChatChangesetUpdateTracker)
+// Module 10110 (ChatChangesetUpdateTracker)
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();

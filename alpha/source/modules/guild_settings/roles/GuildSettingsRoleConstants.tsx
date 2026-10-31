@@ -1,14 +1,14 @@
-// Module ID: 19713
-// Function ID: 19714
+// Module ID: 19770
+// Function ID: 19771
 // Name: GuildSettingsRoleConstants
-// Dependencies: [19714, 1072, 19716, 1084, 4946, 574, 1114, 2]
+// Dependencies: [19771, 1072, 19773, 1084, 4951, 574, 1113, 2]
 
-// Module 19713 (GuildSettingsRoleConstants)
-import intl5 from "intl" /* 1114 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19714 */;
+// Module 19770 (GuildSettingsRoleConstants)
+import intl5 from "intl" /* 1113 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19771 */;
 import Constants from "Constants" /* 1072 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19716 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19773 */;
 import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import shims_mod from "shims" /* 574 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 5887
-// Function ID: 5888
+// Module ID: 5892
+// Function ID: 5893
 // Name: noise_cancellation/KrispUtils
-// Dependencies: [2009, 2]
+// Dependencies: [2008, 2]
 // Exports: getKrispModel, setKrispModelOverride, setKrispSuppressionLevel
 
-// Module 5887 (noise_cancellation/KrispUtils)
-import inject from "inject" /* 2009 */;
+// Module 5892 (noise_cancellation/KrispUtils)
+import inject from "inject" /* 2008 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/noise_cancellation/native/KrispUtils.tsx");

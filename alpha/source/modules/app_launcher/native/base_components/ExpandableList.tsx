@@ -1,17 +1,17 @@
-// Module ID: 12261
-// Function ID: 12262
+// Module ID: 12299
+// Function ID: 12300
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 5009, 6726, 5090, 5249, 5252, 6969, 1114, 5619, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 6732, 5095, 5254, 5257, 6975, 1113, 5624, 2]
 // Exports: default
 
-// Module 12261 (ExpandableList)
+// Module 12299 (ExpandableList)
 import react_native from "react-native" /* 17 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -33,7 +33,7 @@ export default function ExpandableList(onExpand) {
   let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f126723 = (fn, index) => {
+  const f127106 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -58,7 +58,7 @@ export default function ExpandableList(onExpand) {
   first = tmp2[0];
   closure_6 = tmp2[1];
   const tmp4 = onExpand;
-  let tmp6 = onExpand(6726)(first);
+  let tmp6 = onExpand(6732)(first);
   if (tmp6 == null) {
     tmp6 = first;
   }
@@ -82,11 +82,11 @@ export default function ExpandableList(onExpand) {
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  let obj2 = items(5090);
+  let obj2 = items(5095);
   sharedValue = obj2.useSharedValue(0);
-  const obj3 = items(5090);
+  const obj3 = items(5095);
   sharedValue1 = obj3.useSharedValue(0);
-  const obj4 = items(5090);
+  const obj4 = items(5095);
   class C {
     constructor() {
       const tmp = first;
@@ -113,7 +113,7 @@ export default function ExpandableList(onExpand) {
   const memo = obj.useMemo(() => items.slice(0, bound), items3);
   const items4 = [items, bound];
   const memo1 = obj.useMemo(() => items.slice(bound, items.length), items4);
-  const obj5 = items(5090);
+  const obj5 = items(5095);
   class A {
     constructor() {
       let obj;
@@ -131,10 +131,10 @@ export default function ExpandableList(onExpand) {
       return obj;
     }
   }
-  A.__closure = { collapsedListHeight: sharedValue, withTiming: items(5249).withTiming, containerHeight: derivedValue, timingStandard: items(5252).timingStandard };
+  A.__closure = { collapsedListHeight: sharedValue, withTiming: items(5254).withTiming, containerHeight: derivedValue, timingStandard: items(5257).timingStandard };
   A.__workletHash = 2086836441465;
   A.__initData = derivedValue;
-  ({ collapsedListHeight: sharedValue, withTiming: items(5249).withTiming, containerHeight: derivedValue, timingStandard: items(5252).timingStandard });
+  ({ collapsedListHeight: sharedValue, withTiming: items(5254).withTiming, containerHeight: derivedValue, timingStandard: items(5257).timingStandard });
   const animatedStyle = obj5.useAnimatedStyle(A);
   const obj7 = { style: items5, children: items6 };
   items5 = [tmp.animatedListContainer, animatedStyle];
@@ -143,9 +143,9 @@ export default function ExpandableList(onExpand) {
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f126723)
+    children: memo.map(f127106)
   };
-  View = tmp4(5090).View;
+  View = tmp4(5095).View;
   const tmp16 = bound;
   if (!showsExpandCTAOverride) {
     tmp19 = !first;
@@ -161,7 +161,7 @@ export default function ExpandableList(onExpand) {
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f126723)
+      children: memo1.map(f127106)
     };
     tmp17Result = tmp17(tmp18, obj9);
   }
@@ -170,14 +170,14 @@ export default function ExpandableList(onExpand) {
   if (showsExpandCTAOverride) {
     let stringResult;
     let stringResult1;
-    const TableRow = tmp10(6969).TableRow;
+    const TableRow = tmp10(6975).TableRow;
     if (first) {
-      const intl2 = tmp10(1114).intl;
-      stringResult = intl2.string(tmp10(1114).t.nPGLFQ);
+      const intl2 = tmp10(1113).intl;
+      stringResult = intl2.string(tmp10(1113).t.nPGLFQ);
     } else if (null != title) {
-      const intl = tmp10(1114).intl;
+      const intl = tmp10(1113).intl;
       const obj10 = { title };
-      stringResult = intl.formatToPlainString(tmp10(1114).t["bj/2kV"], obj10);
+      stringResult = intl.formatToPlainString(tmp10(1113).t["bj/2kV"], obj10);
     }
     const obj11 = {
       accessibilityLabel: stringResult,
@@ -192,12 +192,12 @@ export default function ExpandableList(onExpand) {
       end: true
     };
     obj12 = { style: tmp.expandCTALabelContainer, children: closure_6(Text, obj14) };
-    Text = tmp10(5619).Text;
-    const intl3 = tmp10(1114).intl;
+    Text = tmp10(5624).Text;
+    const intl3 = tmp10(1113).intl;
     if (first) {
-      stringResult1 = intl3.string(tmp10(1114).t.nPGLFQ);
+      stringResult1 = intl3.string(tmp10(1113).t.nPGLFQ);
     } else {
-      stringResult1 = intl3.format(tmp10(1114).t.gVw57p, {});
+      stringResult1 = intl3.format(tmp10(1113).t.gVw57p, {});
     }
     const obj13 = { children: closure_6(TableRow, obj11) };
     obj14 = { color: "text-brand", variant: "text-md/semibold", children: stringResult1 };

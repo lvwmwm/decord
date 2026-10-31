@@ -1,12 +1,12 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 12776
+// Function ID: 12777
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6838, 504, 10942, 10943, 1114, 3865, 12467, 2]
+// Dependencies: [5, 32, 19, 6844, 504, 10961, 10962, 1113, 3868, 12502, 2]
 // Exports: default
 
-// Module 12741 (useConjurePublishScheduleProposal)
-import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6838 */;
+// Module 12776 (useConjurePublishScheduleProposal)
+import _modDef3868 from "module_3868" /* 3868 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -56,7 +56,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -108,7 +108,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -123,16 +123,16 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
   }), items2);
   let formatToPlainStringResult = null;
   if (trigger.next_run_at > _slicedToArray(react.useState(() => Date.now()), 1)[0]) {
-    let intl = tmp(1114).intl;
+    let intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef3865.orZDqY;
-    tmpResult = tmp(12467);
+    const orZDqY = _modDef3868.orZDqY;
+    tmpResult = tmp(12502);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(12467);
+  tmpResult2 = tmp(12502);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

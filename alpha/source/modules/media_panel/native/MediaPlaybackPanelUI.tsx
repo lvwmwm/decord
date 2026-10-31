@@ -1,23 +1,23 @@
-// Module ID: 19288
-// Function ID: 19289
+// Module ID: 19345
+// Function ID: 19346
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 11809, 16344, 11205, 11204, 21, 5009, 575, 1626, 1492, 19287, 5090, 10069, 11208, 19078, 5249, 5252, 5632, 19080, 5606, 5298, 19289, 2]
+// Dependencies: [32, 19, 11847, 16386, 11224, 11223, 21, 5014, 575, 1625, 1491, 19344, 5095, 10089, 11227, 19127, 5254, 5257, 5637, 19129, 5611, 5303, 19346, 2]
 // Exports: default
 
-// Module 19288 (MediaPlaybackPanelUI)
+// Module 19345 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11205 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11208 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 19287 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 19344 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11809 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16344 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11847 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16386 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,8 +30,8 @@ let obj2;
 let obj3;
 let rect;
 let tmp2;
-const ReanimatedRexportDefault = tmp2(5090);
-const useMorphablePanelGestureDefault = tmp2(19080);
+const ReanimatedRexportDefault = tmp2(5095);
+const useMorphablePanelGestureDefault = tmp2(19129);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;
@@ -229,7 +229,7 @@ export default function MediaPlaybackPanelUI() {
       if (!tmp21) {
         maskElevation = tmp8.maskElevation;
       }
-      const tmp6Result = tmp6(5090);
+      const tmp6Result = tmp6(5095);
       class L {
         constructor() {
           let withSpringResult;
@@ -265,13 +265,13 @@ export default function MediaPlaybackPanelUI() {
         }
       }
       const useAnimatedStyle = tmp6Result.useAnimatedStyle;
-      L.__closure = { withTiming: tmp6(5249).withTiming, wrapperOpacity: sharedValue2, timingFast: tmp6(5252).timingFast, animateWrapperTranslation: sharedValue3, withSpring: tmp6(5632).withSpring, wrapperTranslationX: sharedValue, MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS, wrapperTranslationY: sharedValue1, wrapperDimensions, wrapperElevationStyles: maskEmptyElevation };
+      L.__closure = { withTiming: tmp6(5254).withTiming, wrapperOpacity: sharedValue2, timingFast: tmp6(5257).timingFast, animateWrapperTranslation: sharedValue3, withSpring: tmp6(5637).withSpring, wrapperTranslationX: sharedValue, MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS, wrapperTranslationY: sharedValue1, wrapperDimensions, wrapperElevationStyles: maskEmptyElevation };
       L.__workletHash = 11049335639852;
       L.__initData = __initData4;
-      const obj11 = { withTiming: tmp6(5249).withTiming, wrapperOpacity: sharedValue2, timingFast: tmp6(5252).timingFast, animateWrapperTranslation: sharedValue3, withSpring: tmp6(5632).withSpring, wrapperTranslationX: sharedValue, MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS, wrapperTranslationY: sharedValue1, wrapperDimensions, wrapperElevationStyles: maskEmptyElevation };
+      const obj11 = { withTiming: tmp6(5254).withTiming, wrapperOpacity: sharedValue2, timingFast: tmp6(5257).timingFast, animateWrapperTranslation: sharedValue3, withSpring: tmp6(5637).withSpring, wrapperTranslationX: sharedValue, MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS, wrapperTranslationY: sharedValue1, wrapperDimensions, wrapperElevationStyles: maskEmptyElevation };
       animatedStyle1 = useAnimatedStyle(L);
       xl = nativeDefault.radii.xl;
-      const tmp6Result3 = tmp6(5090);
+      const tmp6Result3 = tmp6(5095);
       class B {
         constructor() {
           let obj2;
@@ -282,10 +282,10 @@ export default function MediaPlaybackPanelUI() {
         }
       }
       const useAnimatedStyle2 = tmp6Result3.useAnimatedStyle;
-      B.__closure = { withSpring: tmp6(5632).withSpring, borderRadius: xl, BORDER_RADIUS_PHYSICS, maskElevationStyles: maskElevation };
+      B.__closure = { withSpring: tmp6(5637).withSpring, borderRadius: xl, BORDER_RADIUS_PHYSICS, maskElevationStyles: maskElevation };
       B.__workletHash = 7035830192327;
       B.__initData = __initData5;
-      const obj12 = { withSpring: tmp6(5632).withSpring, borderRadius: xl, BORDER_RADIUS_PHYSICS, maskElevationStyles: maskElevation };
+      const obj12 = { withSpring: tmp6(5637).withSpring, borderRadius: xl, BORDER_RADIUS_PHYSICS, maskElevationStyles: maskElevation };
       animatedStyle2 = useAnimatedStyle2(B);
       let items = [animatedStyle1, , ];
       ({ wrapper: arr[1], wrapperAnimationPresets: arr[2] } = tmp8);
@@ -311,18 +311,18 @@ export default function MediaPlaybackPanelUI() {
       fn4.__closure = obj13;
       fn4.__workletHash = 8557652955267;
       fn4.__initData = __initData7;
-      const tmp6Result4 = tmp6(5090);
+      const tmp6Result4 = tmp6(5095);
       const animatedStyle3 = tmp6Result4.useAnimatedStyle(fn4);
       const context1 = obj2.useContext(MediaPlaybackPanelStateContextDefault);
       ({ wrapperOffset: wrapperOffset2, pipState: pipState2 } = context1);
-      const obj14 = { panGestureEnabled: true, mode: tmp6(19080).MorphablePanelModes.PIP, pipState: pipState2, wrapperOffset: wrapperOffset2 };
+      const obj14 = { panGestureEnabled: true, mode: tmp6(19129).MorphablePanelModes.PIP, pipState: pipState2, wrapperOffset: wrapperOffset2 };
       const tmp2Result = useMorphablePanelGestureDefault;
       const tmp2ResultResult = tmp2Result(obj14);
-      const LayerScope = tmp6(5606).LayerScope;
+      const LayerScope = tmp6(5611).LayerScope;
       const View = ReanimatedRexportDefault.View;
       const View2 = ReanimatedRexportDefault.View;
       const View3 = ReanimatedRexportDefault.View;
-      const GestureDetector = tmp6(5298).GestureDetector;
+      const GestureDetector = tmp6(5303).GestureDetector;
       const items3 = [tmp.content, animatedStyle3];
       const View4 = ReanimatedRexportDefault.View;
       class R {

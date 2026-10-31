@@ -1,18 +1,18 @@
-// Module ID: 14340
-// Function ID: 14341
+// Module ID: 14378
+// Function ID: 14379
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 5010, 2019, 21, 5009, 504, 5090, 5249, 1188, 1114, 5629, 2]
+// Dependencies: [19, 17, 5015, 2018, 21, 5014, 504, 5095, 5254, 1187, 1113, 5634, 2]
 // Exports: default
 
-// Module 14340 (ActivitiesPrivateChannelCallTooltip)
+// Module 14378 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 2019 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import Constants from "Constants" /* 2018 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -46,7 +46,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
     num = 0;
   }
-  const tmp2Result = tmp2(5090);
+  const tmp2Result = tmp2(5095);
   class T {
     constructor() {
       let items;
@@ -70,20 +70,20 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
       return obj;
     }
   }
-  let obj2 = { withRepeat: tmp2(5090).withRepeat, withSequence: tmp2(5090).withSequence, withTiming: tmp2(5249).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG };
+  let obj2 = { withRepeat: tmp2(5095).withRepeat, withSequence: tmp2(5095).withSequence, withTiming: tmp2(5254).withTiming, OFFSET: 40, translateBounceOffset: num, TIMING_CONFIG };
   T.__closure = obj2;
   T.__workletHash = 4621705591670;
   T.__initData = __initData;
   const animatedStyle = tmp2Result.useAnimatedStyle(T);
   const items1 = [tmp.tooltipContainer, animatedStyle];
   View = ReanimatedRexportDefault.View;
-  let obj4 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: tmp.arrow, label: intl.format(tmp2(1114).t.xAW71b, obj5), title: intl2.string(tmp2(1114).t.HOPqzR), children: null };
-  const Tooltip = tmp2(1188).Tooltip;
-  intl = tmp2(1114).intl;
+  let obj4 = { containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: tmp.arrow, label: intl.format(tmp2(1113).t.xAW71b, obj5), title: intl2.string(tmp2(1113).t.HOPqzR), children: null };
+  const Tooltip = tmp2(1187).Tooltip;
+  intl = tmp2(1113).intl;
   obj5 = { helpdeskUrl };
-  intl2 = tmp2(1114).intl;
-  ({ text: intl3.string(tmp2(1114).t["NX+WJN"]), onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
-  const Button = tmp2(5629).Button;
-  intl3 = tmp2(1114).intl;
+  intl2 = tmp2(1113).intl;
+  ({ text: intl3.string(tmp2(1113).t["NX+WJN"]), onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
+  const Button = tmp2(5634).Button;
+  intl3 = tmp2(1113).intl;
   return <View style={items1}>{null}</View>;
 };

@@ -1,16 +1,16 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12584
+// Function ID: 12585
 // Name: ConjureClarification
-// Dependencies: [4858, 4951, 1384, 1072, 1114, 3865, 5647, 12550, 2]
+// Dependencies: [4863, 4956, 1383, 1072, 1113, 3868, 5652, 12585, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelEntities, clarificationChannelType, clarificationDraftAnswer, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, liveClarification, multiSelectAnswer, nextClarificationStep, submitClarificationAnswers, toggleClarificationOption
 
-// Module 12549 (ConjureClarification)
+// Module 12584 (ConjureClarification)
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f102297 = (answer) => {
+const f102556 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -29,7 +29,7 @@ const f102297 = (answer) => {
   }
   return tmp;
 };
-const f102298 = (answer) => {
+const f102557 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -38,11 +38,11 @@ const ChannelTypes = Constants.ChannelTypes;
 let closure_6 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
 let closure_7 = { channel: "#", role: "@", user: "@", project: "", server: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3, server: items4 };
-items = [_modDef3865["9+dfPT"], _modDef3865.pGSJqE];
-items1 = [_modDef3865["2VkCoD"], _modDef3865.c8YlX8];
-items2 = [_modDef3865.GZIAxl, _modDef3865["4bptbQ"]];
-items3 = [_modDef3865.twlOb6, _modDef3865.twlOb6];
-items4 = [_modDef3865.ZWXDeI, _modDef3865.ZWXDeI];
+items = [_modDef3868["9+dfPT"], _modDef3868.pGSJqE];
+items1 = [_modDef3868["2VkCoD"], _modDef3868.c8YlX8];
+items2 = [_modDef3868.GZIAxl, _modDef3868["4bptbQ"]];
+items3 = [_modDef3868.twlOb6, _modDef3868.twlOb6];
+items4 = [_modDef3868.ZWXDeI, _modDef3868.ZWXDeI];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export function liveClarification(memo) {
@@ -90,7 +90,7 @@ export function clarificationDraftPlaceholder(options) {
   if (tmp2) {
     tmp2 = null == options.input;
   }
-  const tmp4 = _modDef3865;
+  const tmp4 = _modDef3868;
   return string(tmp2 ? tmp4.yLN1x6 : tmp4["tOC+tn"]);
 }
 export function isClarificationComplete(questions, arg1) {
@@ -155,8 +155,8 @@ export function formatClarificationAnswers(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f102297);
-  const mapped1 = found.map(f102298);
+  const found = mapped.filter(f102556);
+  const mapped1 = found.map(f102557);
   return mapped1.join("\n");
 }
 export function toggleClarificationOption(options, arr, id) {
@@ -228,7 +228,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f102308(id);
+    tmp = f102567(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -285,7 +285,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
   let closure_0 = stateFromStores1;
   const items = [stateFromStores1.id];
   let channel = "channel";
-  const f102308 = () => {
+  const f102567 = () => {
     obj = channel(dependencyMap[6]);
     return obj.computeChannelName(channel, user, RelationshipStore);
   };
@@ -296,7 +296,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f102308(id);
+    tmp = f102567(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -505,8 +505,8 @@ export function submitClarificationAnswers(projectId, clarification, arg2, first
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f102297);
-  const mapped1 = found.map(f102298);
+  const found = mapped.filter(f102556);
+  const mapped1 = found.map(f102557);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

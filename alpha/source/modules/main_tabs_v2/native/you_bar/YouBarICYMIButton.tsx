@@ -1,19 +1,19 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18453
+// Function ID: 18454
 // Name: YouBarICYMIButton
-// Dependencies: [19, 17004, 21, 5009, 575, 18411, 18409, 14819, 5194, 1114, 2]
+// Dependencies: [19, 17062, 21, 5014, 575, 18454, 18452, 14857, 5199, 1113, 2]
 
-// Module 18410 (YouBarICYMIButton)
+// Module 18453 (YouBarICYMIButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import RootNavigationRef from "RootNavigationRef" /* 5194 */;
-import FlashIcon2 from "FlashIcon" /* 14819 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
-import YouBarButtonDefault from "YouBarButton" /* 18409 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 18411 */;
+import intl2 from "intl" /* 1113 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import FlashIcon2 from "FlashIcon" /* 14857 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarButtonDefault from "YouBarButton" /* 18452 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 18454 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -34,7 +34,7 @@ const memoResult = react.memo(function YouBarICYMIButton(hasNameplate) {
   if (hasNameplate) {
     str = "white";
   }
-  const intl = tmp5(1114).intl;
+  const intl = tmp5(1113).intl;
   return <tmp4 hasNameplate={hasNameplate} icon={null} hasBadge={showDot} badgeStyle={tmp.badge} onPress={function onPress() {
     const obj = RootNavigationRef;
     const rootNavigationRef = obj.getRootNavigationRef();

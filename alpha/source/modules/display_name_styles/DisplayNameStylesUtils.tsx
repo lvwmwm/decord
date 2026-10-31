@@ -1,17 +1,17 @@
-// Module ID: 1401
-// Function ID: 1402
+// Module ID: 1400
+// Function ID: 1401
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1402, 558, 1405, 1403, 671, 1091, 2]
-// Exports: areDisplayNameStylesEqual, buildGummyColors, createColorPaletteList, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, normalizeDisplayNameStylesForApply, parseServerDisplayNameStyles, rebuildGummySourceColor, toEditorDisplayNameStyles, updateCustomSwatch, wrapHue
+// Dependencies: [32, 1401, 558, 1404, 1402, 671, 1090, 2]
+// Exports: areDisplayNameStylesEqual, buildGummyColors, createColorPaletteList, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, normalizeDisplayNameStylesForApply, parseServerDisplayNameStyles, rebuildGummySourceColor, toEditorDisplayNameStyles, wrapHue
 
-// Module 1401 (DisplayNameStylesUtils)
+// Module 1400 (DisplayNameStylesUtils)
 import shallowEqual from "shallowEqual" /* 558 */;
 import _modDef671 from "module_671" /* 671 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1403 */;
-import ColorPaletteUtils from "ColorPaletteUtils" /* 1405 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
+import ColorPaletteUtils from "ColorPaletteUtils" /* 1404 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1402 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,58 +60,16 @@ export function isSolidPresetColor(arg0, arg1) {
   const obj = metroRequire(arg1);
   return obj.some((item) => item[0] === closure_0);
 }
-export function createColorPaletteList(selectedEffectId, items) {
-  const tmp = metroRequire(selectedEffectId);
+export function createColorPaletteList(arg0, arr2) {
+  const tmp = metroRequire(arg0);
   let obj = ColorPaletteUtils;
-  let closure_0 = obj.isCustomColorPalette(items, tmp);
+  let closure_0 = obj.isCustomColorPalette(arr2, tmp);
   const obj2 = ColorPaletteUtils;
-  const presetPalettesWithCustom = obj2.getPresetPalettesWithCustom(tmp, items);
+  const presetPalettesWithCustom = obj2.getPresetPalettesWithCustom(tmp, arr2);
   return presetPalettesWithCustom.map((colors, index) => {
     const obj = { colors, isCustom: tmp };
     return obj;
   });
-}
-export function updateCustomSwatch(arr, GUMMY, gummyColors) {
-  let first1;
-  if (0 !== arr.length) {
-    if (null != gummyColors) {
-      if (0 !== gummyColors.length) {
-        let tmp;
-        const tmp9 = metroRequire(GUMMY);
-        const first = arr[0];
-        const isCustom = first.isCustom;
-        const obj5 = ColorPaletteUtils;
-        if (obj5.isCustomColorPalette(gummyColors, tmp9)) {
-          let tmp3;
-          if (!isCustom) {
-            const obj = { colors: gummyColors.slice(), isCustom: true };
-            const substr = arr.slice();
-            substr[0] = obj;
-            tmp3 = substr;
-          } else {
-            tmp3 = arr;
-            shallowEqual;
-          }
-          tmp = tmp3;
-        } else {
-          tmp = arr;
-          if (isCustom) {
-            tmp = arr;
-            const tmp11Result2 = shallowEqual;
-            if (tmp11Result2.areArraysShallowEqual(tmp9[0], gummyColors)) {
-              const obj2 = { colors: first1.slice(), isCustom: false };
-              first1 = tmp9[0];
-              const substr1 = arr.slice();
-              substr1[0] = obj2;
-              tmp = substr1;
-            }
-          }
-        }
-        return tmp;
-      }
-    }
-  }
-  return arr;
 }
 export function getEffectColorCount(effectId) {
   if (DisplayNameEffect.DisplayNameEffect.GRADIENT === effectId) {
@@ -179,11 +137,11 @@ export function buildGummyColors(color) {
     return hslResult.num();
   });
 }
-export function rebuildGummySourceColor(selectedColors) {
+export function rebuildGummySourceColor(color) {
   let first1;
   let tmp17;
   let tmp18;
-  const first = selectedColors[0];
+  const first = color[0];
   if (null == first) {
     const obj3 = _modDef671;
     const hslResult = obj3.hsl(0, hasOwnProperty, React3);

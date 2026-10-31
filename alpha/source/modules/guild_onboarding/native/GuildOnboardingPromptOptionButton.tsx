@@ -1,24 +1,24 @@
-// Module ID: 7290
-// Function ID: 7291
+// Module ID: 7296
+// Function ID: 7297
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 5010, 6790, 1387, 21, 5090, 5009, 575, 504, 5249, 5632, 7291, 5018, 1114, 5591, 5077, 6974, 7294, 1410, 5619, 7297, 1188, 2]
+// Dependencies: [32, 19, 17, 5015, 6796, 1386, 21, 5095, 5014, 575, 504, 5254, 5637, 7297, 5023, 1113, 5596, 5082, 6980, 7300, 1409, 5624, 7303, 1187, 2]
 // Exports: default
 
-// Module 7290 (GuildOnboardingPromptOptionButton)
+// Module 7296 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import EmojiConstants from "EmojiConstants" /* 1387 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import spring from "spring" /* 5632 */;
+import intl4 from "intl" /* 1113 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import spring from "spring" /* 5637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -122,7 +122,7 @@ export default function PromptOptionButton(option) {
   let obj2 = option(504);
   let items1 = [num];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(5090);
+  let obj3 = option(5095);
   class R {
     constructor() {
       let Easing;
@@ -154,12 +154,12 @@ export default function PromptOptionButton(option) {
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(5249).withTiming, Easing: option(5090).Easing, useReducedMotion: stateFromStores1, withSequence: option(5090).withSequence, withSpring: option(5632).withSpring };
+  let obj4 = { selected, withTiming: option(5254).withTiming, Easing: option(5095).Easing, useReducedMotion: stateFromStores1, withSequence: option(5095).withSequence, withSpring: option(5637).withSpring };
   R.__closure = obj4;
   R.__workletHash = 8281627194581;
   R.__initData = __initData;
   const animatedStyle = obj3.useAnimatedStyle(R);
-  const tmp9 = selected(7291)(guildId);
+  const tmp9 = selected(7297)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -213,7 +213,7 @@ export default function PromptOptionButton(option) {
     }
   }, items4);
   const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(5090);
+  const tmp3Result = tmp3(5095);
   class V {
     constructor() {
       let Easing;
@@ -232,7 +232,7 @@ export default function PromptOptionButton(option) {
       obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
       const withTiming = timing.withTiming;
       timing;
-      Easing = tmp2(5090).Easing;
+      Easing = tmp2(5095).Easing;
       let num3 = 16;
       const withDelayResult = withDelay(num2, withTiming(num, obj));
       if (first) {
@@ -250,19 +250,19 @@ export default function PromptOptionButton(option) {
         const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
         const withTiming2 = timing.withTiming;
         timing;
-        Easing2 = tmp2(5090).Easing;
+        Easing2 = tmp2(5095).Easing;
         withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
       }
       items = [{ translateX: withDelay2Result }];
       return obj2;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(5090).withDelay, withTiming: tmp3(5249).withTiming, Easing: tmp3(5090).Easing, useReducedMotion: stateFromStores1 };
+  let obj5 = { showMemberCount, withDelay: tmp3(5095).withDelay, withTiming: tmp3(5254).withTiming, Easing: tmp3(5095).Easing, useReducedMotion: stateFromStores1 };
   V.__closure = obj5;
   V.__workletHash = 9518487706997;
   V.__initData = token;
   const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(5090);
+  const tmp3Result11 = tmp3(5095);
   sharedValue = tmp3Result11.useSharedValue(1);
   closure_12 = tmp22;
   let id;
@@ -331,13 +331,13 @@ export default function PromptOptionButton(option) {
       title = tmp.title;
     }
   }, items5);
-  const tmp3Result12 = tmp3(5591);
+  const tmp3Result12 = tmp3(5596);
   token = tmp3Result12.useToken(tmp8(575).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(5591);
+  const tmp3Result13 = tmp3(5596);
   token1 = tmp3Result13.useToken(tmp8(575).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(5591);
+  const tmp3Result14 = tmp3(5596);
   token2 = tmp3Result14.useToken(tmp8(575).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(5591);
+  const tmp3Result15 = tmp3(5596);
   token3 = tmp3Result15.useToken(tmp8(575).colors.BACKGROUND_BASE_LOWEST);
   const fn = function q() {
     num = 0;
@@ -348,11 +348,11 @@ export default function PromptOptionButton(option) {
     }
     return withTiming(num, obj);
   };
-  const tmp3Result16 = tmp3(5090);
-  fn.__closure = { withTiming: tmp3(5249).withTiming, selected, SELECTION_TIMING: sharedValue };
+  const tmp3Result16 = tmp3(5095);
+  fn.__closure = { withTiming: tmp3(5254).withTiming, selected, SELECTION_TIMING: sharedValue };
   fn.__workletHash = 11553377214675;
   fn.__initData = token1;
-  ({ withTiming: tmp3(5249).withTiming, selected, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5254).withTiming, selected, SELECTION_TIMING: sharedValue });
   derivedValue = tmp3Result16.useDerivedValue(fn);
   const fn2 = function z() {
     num = 0;
@@ -363,13 +363,13 @@ export default function PromptOptionButton(option) {
     }
     return withTiming(num, obj);
   };
-  const tmp3Result17 = tmp3(5090);
-  fn2.__closure = { withTiming: tmp3(5249).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
+  const tmp3Result17 = tmp3(5095);
+  fn2.__closure = { withTiming: tmp3(5254).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
   fn2.__workletHash = 9359578148244;
   fn2.__initData = token2;
-  ({ withTiming: tmp3(5249).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
+  ({ withTiming: tmp3(5254).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
   derivedValue1 = tmp3Result17.useDerivedValue(fn2);
-  const tmp3Result18 = tmp3(5090);
+  const tmp3Result18 = tmp3(5095);
   class W {
     constructor() {
       let items1;
@@ -387,12 +387,12 @@ export default function PromptOptionButton(option) {
       return obj2;
     }
   }
-  W.__closure = { interpolateColor: tmp3(5090).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
+  W.__closure = { interpolateColor: tmp3(5095).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
   W.__workletHash = 1340353593596;
   W.__initData = token3;
-  ({ interpolateColor: tmp3(5090).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
+  ({ interpolateColor: tmp3(5095).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
   const animatedStyle2 = tmp3Result18.useAnimatedStyle(W);
-  const tmp3Result19 = tmp3(5090);
+  const tmp3Result19 = tmp3(5095);
   class K {
     constructor() {
       let items;
@@ -411,12 +411,12 @@ export default function PromptOptionButton(option) {
   K.__workletHash = 11083046243451;
   K.__initData = derivedValue;
   const animatedStyle3 = tmp3Result19.useAnimatedStyle(K);
-  const tmp3Result20 = tmp3(5077);
+  const tmp3Result20 = tmp3(5082);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const obj9 = { style: items6, children: items9 };
   items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(5090).View;
+  View = tmp8(5095).View;
   let id1;
   const obj10 = {
     activeOpacity: 0.6,
@@ -456,7 +456,7 @@ export default function PromptOptionButton(option) {
     accessibilityLabel: memo,
     children: items7
   };
-  const PressableOpacity = tmp3(6974).PressableOpacity;
+  const PressableOpacity = tmp3(6980).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -480,11 +480,11 @@ export default function PromptOptionButton(option) {
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(7294);
+    tmp8Result = selected(7300);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
-      const tmp8Result2 = selected(1410);
+      const tmp8Result2 = selected(1409);
       emojiURL = tmp8Result2.getEmojiURL(obj13);
     }
     str = undefined;
@@ -503,12 +503,12 @@ export default function PromptOptionButton(option) {
   const obj14 = { style: tmp2.optionText, children: items8 };
   items8 = [, ];
   const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items8[0] = closure_9(tmp3(5619).Text, obj15);
+  items8[0] = closure_9(tmp3(5624).Text, obj15);
   let tmp47Result = null != option.description && option.description.length > 0;
   const tmp46 = closure_5;
   if (tmp47Result) {
     const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(5619).Text, obj16);
+    tmp47Result = tmp47(tmp3(5624).Text, obj16);
   }
   items8[1] = tmp47Result;
   items7[1] = ref(tmp46, obj14);
@@ -517,19 +517,19 @@ export default function PromptOptionButton(option) {
   if (num > 0) {
     const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items10, children: closure_9(Text, obj18) };
     items10 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(5090).View;
-    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1114).t.EgKsZA, obj19) };
-    Text = tmp3(5619).Text;
-    intl = tmp3(1114).intl;
+    const View2 = tmp8(5095).View;
+    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1113).t.EgKsZA, obj19) };
+    Text = tmp3(5624).Text;
+    intl = tmp3(1113).intl;
     obj19 = { memberCount: num };
     tmp47Result2 = tmp47(View2, obj17);
   }
   items9[1] = tmp47Result2;
   const obj20 = { style: items11, children: closure_9(CheckmarkSmallIcon, obj21) };
   items11 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(5090).View;
+  const View3 = tmp8(5095).View;
   obj21 = { size: "xs", color: selected(575).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7297).CheckmarkSmallIcon;
+  CheckmarkSmallIcon = tmp3(7303).CheckmarkSmallIcon;
   items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;
@@ -538,9 +538,9 @@ export default function PromptOptionButton(option) {
     canBeNew = option.isUnseen;
   }
   if (canBeNew) {
-    const obj22 = { color: tmp3(1188).BadgeColors.BRAND, text: intl2.string(tmp3(1114).t.y2b7CA), style: null, textStyle: null };
-    const TextBadge = tmp3(1188).TextBadge;
-    intl2 = tmp3(1114).intl;
+    const obj22 = { color: tmp3(1187).BadgeColors.BRAND, text: intl2.string(tmp3(1113).t.y2b7CA), style: null, textStyle: null };
+    const TextBadge = tmp3(1187).TextBadge;
+    intl2 = tmp3(1113).intl;
     ({ newBadgeWrapper: obj34.style, newBadge: obj34.textStyle } = tmp2);
     canBeNew = tmp47(TextBadge, obj22);
   }

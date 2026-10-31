@@ -1,14 +1,14 @@
-// Module ID: 18402
-// Function ID: 18403
+// Module ID: 18445
+// Function ID: 18446
 // Name: YouBarNameplate
-// Dependencies: [19, 5010, 17004, 21, 5591, 575, 17085, 504, 5090, 5632, 9492, 2]
+// Dependencies: [19, 5015, 17062, 21, 5596, 575, 17143, 504, 5095, 5637, 9514, 2]
 
-// Module 18402 (YouBarNameplate)
+// Module 18445 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5632 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
+import spring from "spring" /* 5637 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -26,10 +26,10 @@ const memoResult = react.memo(function YouBarNameplate(isQuestRendered) {
   let token;
   dependencyMap = undefined;
   ({ nameplate, barWidth } = isQuestRendered);
-  let obj = isQuestRendered(5591);
+  let obj = isQuestRendered(5596);
   const tmp2 = token;
   token = obj.useToken(token(575).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(17085)(token);
+  const tmp4 = token(17143)(token);
   dependencyMap = tmp4;
   const items = [AccessibilityStore];
   const obj2 = isQuestRendered(504);
@@ -46,21 +46,21 @@ const memoResult = react.memo(function YouBarNameplate(isQuestRendered) {
     const obj = { borderTopRightRadius: withSpring(value, YOU_BAR_SPRING_CONFIG) };
     return obj;
   };
-  const obj3 = isQuestRendered(5090);
-  fn.__closure = { withSpring: isQuestRendered(5632).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  const obj3 = isQuestRendered(5095);
+  fn.__closure = { withSpring: isQuestRendered(5637).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   fn.__workletHash = 17156260157738;
   fn.__initData = __initData;
-  ({ withSpring: isQuestRendered(5632).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG });
+  ({ withSpring: isQuestRendered(5637).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG });
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const rect = { position: "absolute", top: 0, left: avatarSize, right: -1, bottom: 0, borderTopRightRadius: num, borderTopLeftRadius: 0, borderBottomRightRadius: token, borderBottomLeftRadius: 0, overflow: "hidden", width: barWidth - avatarSize };
   num = 0;
-  const View = token(5090).View;
+  const View = token(5095).View;
   if (!isQuestRendered) {
     num = token;
   }
   const items1 = [rect, animatedStyle];
   let str = stateFromStores;
-  tmp2(9492);
+  tmp2(9514);
   if (str) {
     str = "always";
   }

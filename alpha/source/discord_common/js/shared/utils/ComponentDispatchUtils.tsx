@@ -1,9 +1,9 @@
-// Module ID: 1111
-// Function ID: 1112
+// Module ID: 1110
+// Function ID: 1111
 // Name: utils/ComponentDispatchUtils
 // Dependencies: [568, 2]
 
-// Module 1111 (utils/ComponentDispatchUtils)
+// Module 1110 (utils/ComponentDispatchUtils)
 import _mod568 from "module_568" /* 568 */;
 import size from "module_2" /* 2 */;
 

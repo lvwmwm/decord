@@ -1,31 +1,31 @@
-// Module ID: 18655
-// Function ID: 18656
+// Module ID: 18697
+// Function ID: 18698
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 4858, 9806, 1072, 21, 5009, 504, 6747, 6728, 11199, 11201, 18656, 18720, 18722, 18728, 18729, 18737, 18739, 18740, 18746, 18749, 38, 8833, 2]
+// Dependencies: [32, 19, 17, 4863, 9827, 1072, 21, 5014, 504, 6753, 6734, 11218, 11220, 18698, 18762, 18764, 18770, 18771, 18779, 18781, 18782, 18788, 18791, 38, 8841, 2]
 // Exports: default
 
-// Module 18655 (SearchTabsPage)
+// Module 18697 (SearchTabsPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8833 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11199 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 11201 */;
-import RecentScreenDefault from "RecentScreen" /* 18656 */;
-import PeopleScreenDefault from "PeopleScreen" /* 18720 */;
-import MembersScreenDefault from "MembersScreen" /* 18722 */;
-import ChannelsScreenDefault from "ChannelsScreen" /* 18728 */;
-import MediaScreenDefault from "MediaScreen" /* 18729 */;
-import FilesScreenDefault from "FilesScreen" /* 18737 */;
-import LinksScreenDefault from "LinksScreen" /* 18739 */;
-import MessagesScreenDefault from "MessagesScreen" /* 18746 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 18749 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8841 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11218 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 11220 */;
+import RecentScreenDefault from "RecentScreen" /* 18698 */;
+import PeopleScreenDefault from "PeopleScreen" /* 18762 */;
+import MembersScreenDefault from "MembersScreen" /* 18764 */;
+import ChannelsScreenDefault from "ChannelsScreen" /* 18770 */;
+import MediaScreenDefault from "MediaScreen" /* 18771 */;
+import FilesScreenDefault from "FilesScreen" /* 18779 */;
+import LinksScreenDefault from "LinksScreen" /* 18781 */;
+import MessagesScreenDefault from "MessagesScreen" /* 18788 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 18791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import createStyles from "createStyles" /* 5009 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -58,9 +58,9 @@ function SearchTabsPage(selectMediaTab) {
     }
     return getChannel(channelId);
   });
-  const obj2 = searchContext(6747);
+  const obj2 = searchContext(6753);
   const isChannelSpoilerGated = obj2.useIsChannelSpoilerGated(stateFromStores);
-  searchContext(6728);
+  searchContext(6734);
   const tmp4 = searchContext;
   if (tmp2) {
     if (tab !== SearchTabs.MEMBERS) {
@@ -89,7 +89,7 @@ function SearchTabsPage(selectMediaTab) {
     } else if (SearchTabs.LINKS === tab) {
       return jsx(LinksScreenDefault, { tab, searchContext, isFocused, width });
     } else if (SearchTabs.THREADS === tab) {
-      return jsx(tmp4(18740).SearchTabsThreadScreen, { searchContext });
+      return jsx(tmp4(18782).SearchTabsThreadScreen, { searchContext });
     } else if (SearchTabs.MESSAGES === tab) {
       return jsx(MessagesScreenDefault, { tab, searchContext, isFocused });
     } else if (SearchTabs.PINS === tab) {

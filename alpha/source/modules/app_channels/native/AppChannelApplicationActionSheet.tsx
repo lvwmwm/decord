@@ -1,13 +1,13 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 9042
+// Function ID: 9043
 // Name: AppChannelApplicationActionSheet
-// Dependencies: [19, 21, 9028, 5253, 7360, 7315, 1114, 7052, 7055, 9032, 9030, 2]
+// Dependencies: [19, 21, 9039, 5258, 7366, 7321, 1113, 7058, 7061, 9043, 9041, 2]
 // Exports: default
 
-// Module 9031 (AppChannelApplicationActionSheet)
+// Module 9042 (AppChannelApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 9032 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import getAppChannelApplicationUnsupportedTextDefault from "getAppChannelApplicationUnsupportedText" /* 9043 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ export default function AppChannelApplicationActionSheet(arg0) {
   let selectedApplicationId;
   ({ selectedApplicationId, onChange } = arg0);
   ({ guildId, channelId } = arg0);
-  let obj = onChange(9028);
+  let obj = onChange(9039);
   const options = obj.useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId).options;
   const items = [onChange];
   const callback = react.useCallback((arg0) => {
@@ -31,12 +31,12 @@ export default function AppChannelApplicationActionSheet(arg0) {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
   }, items);
-  const ActionSheet = onChange(7360).ActionSheet;
-  ({ title: intl.string(onChange(1114).t.F2FMFR) });
-  const BottomSheetTitleHeader = onChange(7315).BottomSheetTitleHeader;
-  intl = onChange(1114).intl;
+  const ActionSheet = onChange(7366).ActionSheet;
+  ({ title: intl.string(onChange(1113).t.F2FMFR) });
+  const BottomSheetTitleHeader = onChange(7321).BottomSheetTitleHeader;
+  intl = onChange(1113).intl;
   ({
-    accessibilityLabel: intl2.string(onChange(1114).t.F2FMFR),
+    accessibilityLabel: intl2.string(onChange(1113).t.F2FMFR),
     value: selectedApplicationId,
     onChange: callback,
     hasIcons: true,
@@ -48,8 +48,8 @@ export default function AppChannelApplicationActionSheet(arg0) {
       return <TableRadioRow key={application.id} value={application.id} label={application.name} subLabel={getAppChannelApplicationUnsupportedTextDefault(status)} disabled={!status.supported} icon={null} />;
     })
   });
-  const TableRadioGroup = onChange(7052).TableRadioGroup;
-  intl2 = onChange(1114).intl;
+  const TableRadioGroup = onChange(7058).TableRadioGroup;
+  intl2 = onChange(1113).intl;
   if (selectedApplicationId == null) {
     selectedApplicationId = "";
   }

@@ -1,16 +1,16 @@
-// Module ID: 10829
-// Function ID: 10830
+// Module ID: 10849
+// Function ID: 10850
 // Name: ConjureRemix
-// Dependencies: [5, 10830, 572, 1114, 3865, 10860, 10944, 10295, 10855, 2]
+// Dependencies: [5, 10850, 572, 1113, 3868, 10880, 10963, 10315, 10875, 2]
 // Exports: remixConjureProjectInto
 
-// Module 10829 (ConjureRemix)
-import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10855 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10860 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10944 */;
+// Module 10849 (ConjureRemix)
+import _modDef3868 from "module_3868" /* 3868 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10880 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10963 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10830 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let hasOwnProperty;
 function prepareConjureRemix(project, currentGuildId, arg2) {
   let closure_1;
   let name;
-  const f125727 = () => "rejected";
+  const f126106 = () => "rejected";
   _require = currentGuildId;
   importDefault = arg2;
   function accept(comma) {
@@ -30,7 +30,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     if (hasOwnProperty == null) {
       obj = conjureRemixConnection;
       const acceptRemixResult = obj.acceptRemix(_asyncToGenerator, comma);
-      hasOwnProperty = acceptRemixResult.catch(f125727);
+      hasOwnProperty = acceptRemixResult.catch(f126106);
     }
     return hasOwnProperty;
   }
@@ -50,7 +50,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     return obj(...arguments);
   };
   const intl = require("intl").intl;
-  dependencyMap = intl.string(_modDef3865.Cn8H0Y);
+  dependencyMap = intl.string(_modDef3868.Cn8H0Y);
   obj = require("ConjureWorkerTickets");
   const mintRemixTicketResult = obj.mintRemixTicket(project.id);
   _asyncToGenerator = mintRemixTicketResult;
@@ -208,7 +208,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     if (hasOwnProperty == null) {
       const tmp2Result = conjureRemixConnection;
       const acceptRemixResult = tmp2Result.acceptRemix(_asyncToGenerator, id);
-      hasOwnProperty = acceptRemixResult.catch(f125727);
+      hasOwnProperty = acceptRemixResult.catch(f126106);
     }
   });
   const tmp4 = require("ConjureActionCreators");
@@ -235,7 +235,7 @@ function prepareConjureRemix(project, currentGuildId, arg2) {
     if (hasOwnProperty == null) {
       const obj2 = conjureRemixConnection;
       const acceptRemixResult = obj2.acceptRemix(_asyncToGenerator, id);
-      hasOwnProperty = acceptRemixResult.catch(f125727);
+      hasOwnProperty = acceptRemixResult.catch(f126106);
     }
     return remix_preview;
   }, () => {

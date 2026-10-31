@@ -1,14 +1,14 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15567
+// Function ID: 15568
 // Name: NotifSettingsProtoStore
-// Dependencies: [15529, 1234, 504, 572, 2]
+// Dependencies: [15568, 1233, 504, 572, 2]
 // Exports: createPendingEdit
 
-// Module 15528 (NotifSettingsProtoStore)
+// Module 15567 (NotifSettingsProtoStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1234 */;
-import notification_settings from "notification_settings" /* 15529 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
+import notification_settings from "notification_settings" /* 15568 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, _undefined2, closure_2;
@@ -37,7 +37,7 @@ class NotifSettingsProtoStore extends PersistedStore {
       const b64ToProto = user_settings_UserSettingsUtils.b64ToProto;
       let protoToSave = proto.protoToSave;
       user_settings_UserSettingsUtils;
-      const DeclarativeSettings = tmp6(15529).DeclarativeSettings;
+      const DeclarativeSettings = tmp6(15568).DeclarativeSettings;
       if (protoToSave == null) {
         protoToSave = null;
       }
@@ -64,9 +64,9 @@ class NotifSettingsProtoStore extends PersistedStore {
       if (null != _undefined) {
         let partialSettings;
         if (null != _undefined2) {
-          const DeclarativeSettings = tmp(15529).DeclarativeSettings;
+          const DeclarativeSettings = tmp(15568).DeclarativeSettings;
           const cloneResult = DeclarativeSettings.clone(_undefined.partialSettings);
-          const DeclarativeSettings2 = tmp(15529).DeclarativeSettings;
+          const DeclarativeSettings2 = tmp(15568).DeclarativeSettings;
           DeclarativeSettings2.mergePartial(cloneResult, _undefined2.partialSettings);
           partialSettings = cloneResult;
         }

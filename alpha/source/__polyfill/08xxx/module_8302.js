@@ -1,195 +1,396 @@
 // Module ID: 8302
 // Function ID: 8303
-// Dependencies: [8303, 8304]
+// Dependencies: []
 
 // Module 8302
-import _modDef8303 from "module_8303" /* 8303 */;
-import _modDef8304 from "module_8304" /* 8304 */;
-
-function parseTags(byteLength, size, sum, arg3) {
-  let combined;
-  let tmp22;
-  let tmp8;
-  let tmp = sum;
-  const obj = {};
-  sum = sum + size.size;
-  if (sum < sum) {
-    if (tmp < byteLength.byteLength) {
-      while (true) {
-        let obj2;
-        let encoding = tmp22;
-        if (byteLength.getUint8(tmp) !== 28) {
-          obj2 = { tag: null, tagSize: 0 };
-        } else {
-          let num;
-          let uint16 = byteLength.getUint16(tmp + 1);
-          let uint161 = byteLength.getUint16(tmp + 3);
-          if (!arg3) {
-            if (!_modDef8303.iptc[uint16]) {
-              obj2 = { tag: "Array", tagSize: uint161 };
-            }
-          }
-          let items = [];
-          for (let num = 0; num < uint161; num = num + 1) {
-            let arr = items.push(byteLength.getUint8(tmp6 + num));
-          }
-          let obj3 = { id: uint16, name: combined, value: items, description: getTagDescription(tmp8(8303).iptc[uint16], items, obj, encoding) };
-          tmp8 = importDefault;
-          let obj4 = _modDef8303.iptc[uint16];
-          if (obj4) {
-            let tmp11 = obj4;
-            if (typeof obj4 !== "string") {
-              let name;
-              if (typeof obj4.name === "function") {
-                name = obj4.name(items);
-              } else {
-                name = obj4.name;
-              }
-              tmp11 = name;
-            }
-            combined = tmp11;
-          } else {
-            let _HermesInternal = HermesInternal;
-            combined = "undefined-" + uint16;
-          }
-          let tmp16 = tmp8(8303).iptc[uint16] && tmp8(8303).iptc[uint16].repeatable;
-          if (tmp16) {
-            obj3.repeatable = true;
-          }
-          let tmp17 = tmp8(8303).iptc[uint16] && undefined !== tmp8(8303).iptc[uint16].encoding_name;
-          if (tmp17) {
-            let obj5 = tmp8(8303).iptc[uint16];
-            obj3.encoding = obj5.encoding_name(items);
-          }
-          let obj6 = { tag: obj3, tagSize: uint161 };
-          obj2 = obj6;
-        }
-        let tag = obj2.tag;
-        if (null === tag) {
-          break;
-        } else {
-          let tmp20 = encoding;
-          if (tag) {
-            if ("encoding" in tag) {
-              encoding = tag.encoding;
-            }
-            if (undefined !== obj[tag.name]) {
-              if (undefined !== tag.repeatable) {
-                let _Array = Array;
-                if (!(obj[tag.name] instanceof Array)) {
-                  let obj7 = { id: obj[tag.name].id, value: obj[tag.name].value, description: obj[tag.name].description };
-                  let items1 = [obj7];
-                  obj[tag.name] = items1;
+const obj = {
+  ApertureValue(arg0) {
+    const powResult = Math.pow(Math.sqrt(2), arg0[0] / arg0[1]);
+    return powResult.toFixed(2);
+  },
+  ColorSpace(parsed) {
+    let str = "sRGB";
+    if (1 !== parsed) {
+      let str2 = "Unknown";
+      if (65535 === parsed) {
+        str2 = "Uncalibrated";
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ComponentsConfiguration(mapped) {
+    mapped = mapped.map((item) => {
+      let str = "Y";
+      if (49 !== item) {
+        let str2 = "Cb";
+        if (50 !== item) {
+          let str3 = "Cr";
+          if (51 !== item) {
+            let str4 = "R";
+            if (52 !== item) {
+              let str5 = "G";
+              if (53 !== item) {
+                let str6;
+                if (54 === item) {
+                  str6 = "B";
                 }
-                let arr3 = obj[tag.name];
-                let obj15 = { id: null, value: null, description: null };
-                ({ id: obj8.id, value: obj8.value, description: obj8.description } = tag);
-                let arr2 = arr3.push(obj15);
-                tmp20 = encoding;
+                str5 = str6;
               }
+              str4 = str5;
             }
-            let obj16 = { id: null, value: null, description: null };
-            ({ id: obj9.id, value: obj9.value, description: obj9.description } = tag);
-            obj[tag.name] = obj16;
-            tmp20 = encoding;
+            str3 = str4;
           }
-          let sum1 = tmp + (5 + tmp18);
-          if (sum1 >= sum) {
-            break;
-          } else {
-            tmp22 = tmp20;
-            tmp = sum1;
-            if (sum1 >= byteLength.byteLength) {
-              break;
-            }
-          }
+          str2 = str3;
         }
+        str = str2;
       }
-    }
-  }
-  return obj;
-}
-function getTagDescription(description, items, arg2, encoding) {
-  function hasDescriptionProperty(description) {
-    return description && undefined !== description.description;
-  }
-  function tagValueIsText(description, items) {
-    let tmp = description;
-    if (tmp) {
-      const _Array = Array;
-      tmp = items instanceof Array;
-    }
-    return tmp;
-  }
-  if (!hasDescriptionProperty(description)) {
-    let decodeResult = items;
-    if (tagValueIsText(description, items)) {
-      const decoder = _modDef8304;
-      decodeResult = decoder.decode(encoding, items);
-    }
-    return decodeResult;
-  } else {
-    try {
-      let tmp = arg2;
-      return description.description(items, arg2);
-    } catch (err) {
-    }
-  }
-}
-
-export default {
-  read(byteLength, sum, arg2) {
-    function getNaaResourceBlock(byteLength, sum) {
-      let tmp = sum;
-      if (sum + 12 <= byteLength.byteLength) {
-        while (943868237 === byteLength.getUint32(tmp, false)) {
-          let uint8 = byteLength.getUint8(tmp + 4 + 2);
-          sum = uint8;
-          if (uint8 % 2 === 0) {
-            sum = uint8 + 1;
-          }
-          let sum1 = sum + 1;
-          let obj = { headerSize: 6 + sum1 + 4, type: byteLength.getUint16(tmp + 4), size: byteLength.getUint32(tmp + 4 + 2 + sum1) };
-          if (1028 === obj.type) {
-            let obj2 = { naaBlock: obj, dataOffset: tmp + obj.headerSize };
-            return obj2;
-          } else {
-            let num = 0;
-            let sum2 = obj.headerSize + obj.size;
-            if (obj.size % 2 !== 0) {
-              num = 1;
-            }
-            let sum3 = tmp + (sum2 + num);
-            tmp = sum3;
-          }
+      return str;
+    });
+    return mapped.join("");
+  },
+  Contrast(arg0) {
+    let str = "Normal";
+    if (0 !== arg0) {
+      let str2 = "Soft";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "Hard";
         }
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("Not an IPTC resource block.");
-        throw error;
+        str2 = str3;
       }
-      const error1 = new Error("No IPTC NAA resource block.");
-      throw error1;
+      str = str2;
     }
-    try {
-      let tmp = byteLength;
-      const _Array = Array;
-      if (Array.isArray(byteLength)) {
-        const _DataView = DataView;
-        const _Uint8Array = Uint8Array;
-        let self = this;
-        let self2 = this;
-        const dataView = new DataView(Uint8Array.from(byteLength).buffer);
-        let obj = { size: byteLength.length };
-        return parseTags(dataView, obj, 0, arg2);
+    return str;
+  },
+  CustomRendered(arg0) {
+    let str = "Normal process";
+    if (0 !== arg0) {
+      let str2 = "Unknown";
+      if (1 === arg0) {
+        str2 = "Custom process";
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ExposureMode(arg0) {
+    let str = "Auto exposure";
+    if (0 !== arg0) {
+      let str2 = "Manual exposure";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "Auto bracket";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ExposureProgram(arg0) {
+    let str = "Undefined";
+    if (0 !== arg0) {
+      let str10 = "Manual";
+      if (1 !== arg0) {
+        let str9 = "Normal program";
+        if (2 !== arg0) {
+          let str2 = "Aperture priority";
+          if (3 !== arg0) {
+            let str3 = "Shutter priority";
+            if (4 !== arg0) {
+              let str4 = "Creative program";
+              if (5 !== arg0) {
+                let str5 = "Action program";
+                if (6 !== arg0) {
+                  let str6 = "Portrait mode";
+                  if (7 !== arg0) {
+                    let str7 = "Landscape mode";
+                    if (8 !== arg0) {
+                      let str8 = "Unknown";
+                      if (9 === arg0) {
+                        str8 = "Bulb";
+                      }
+                      str7 = str8;
+                    }
+                    str6 = str7;
+                  }
+                  str5 = str6;
+                }
+                str4 = str5;
+              }
+              str3 = str4;
+            }
+            str2 = str3;
+          }
+          str9 = str2;
+        }
+        str10 = str9;
+      }
+      str = str10;
+    }
+    return str;
+  },
+  ExposureTime(arg0) {
+    if (arg0[0] / arg0[1] > 0.25) {
+      let text;
+      const result = arg0[0] / arg0[1];
+      const _Number = Number;
+      if (Number.isInteger(result)) {
+        text = `${obj}`;
       } else {
-        let num = 0;
-        const tmp5 = getNaaResourceBlock(byteLength, sum);
-        return parseTags(byteLength, tmp5.naaBlock, tmp5.dataOffset, arg2);
+        text = result.toFixed(1);
       }
-    } catch (err) {
-      return {};
+      return text;
+    } else {
+      let combined;
+      if (0 !== arg0[0]) {
+        const _Math = Math;
+        const _HermesInternal2 = HermesInternal;
+        combined = "1/" + Math.round(arg0[1] / arg0[0]);
+      } else {
+        const _HermesInternal = HermesInternal;
+        combined = "0/" + arg0[1];
+      }
+      return combined;
     }
+  },
+  FNumber(arg0) {
+    const NumberResult = Number(arg0[0] / arg0[1]);
+    return "f/" + NumberResult.toFixed(1);
+  },
+  FocalLength(arg0) {
+    return arg0[0] / arg0[1] + " mm";
+  },
+  FocalPlaneResolutionUnit(arg0) {
+    let str = "inches";
+    if (2 !== arg0) {
+      let str2 = "centimeters";
+      if (3 !== arg0) {
+        let str3 = "Unknown";
+        if (4 === arg0) {
+          str3 = "millimeters";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  LightSource(arg0) {
+    let str = "Daylight";
+    if (1 !== arg0) {
+      let str20 = "Fluorescent";
+      if (2 !== arg0) {
+        let str19 = "Tungsten (incandescent light)";
+        if (3 !== arg0) {
+          let str18 = "Flash";
+          if (4 !== arg0) {
+            let str17 = "Fine weather";
+            if (9 !== arg0) {
+              let str16 = "Cloudy weather";
+              if (10 !== arg0) {
+                let str15 = "Shade";
+                if (11 !== arg0) {
+                  let str14 = "Daylight fluorescent (D 5700 \u2013 7100K)";
+                  if (12 !== arg0) {
+                    let str13 = "Day white fluorescent (N 4600 \u2013 5400K)";
+                    if (13 !== arg0) {
+                      let str12 = "Cool white fluorescent (W 3900 \u2013 4500K)";
+                      if (14 !== arg0) {
+                        let str11 = "White fluorescent (WW 3200 \u2013 3700K)";
+                        if (15 !== arg0) {
+                          let str10 = "Standard light A";
+                          if (17 !== arg0) {
+                            let str9 = "Standard light B";
+                            if (18 !== arg0) {
+                              let str2 = "Standard light C";
+                              if (19 !== arg0) {
+                                let str3 = "D55";
+                                if (20 !== arg0) {
+                                  let str4 = "D65";
+                                  if (21 !== arg0) {
+                                    let str5 = "D75";
+                                    if (22 !== arg0) {
+                                      let str6 = "D50";
+                                      if (23 !== arg0) {
+                                        let str7 = "ISO studio tungsten";
+                                        if (24 !== arg0) {
+                                          let str8 = "Unknown";
+                                          if (255 === arg0) {
+                                            str8 = "Other light source";
+                                          }
+                                          str7 = str8;
+                                        }
+                                        str6 = str7;
+                                      }
+                                      str5 = str6;
+                                    }
+                                    str4 = str5;
+                                  }
+                                  str3 = str4;
+                                }
+                                str2 = str3;
+                              }
+                              str9 = str2;
+                            }
+                            str10 = str9;
+                          }
+                          str11 = str10;
+                        }
+                        str12 = str11;
+                      }
+                      str13 = str12;
+                    }
+                    str14 = str13;
+                  }
+                  str15 = str14;
+                }
+                str16 = str15;
+              }
+              str17 = str16;
+            }
+            str18 = str17;
+          }
+          str19 = str18;
+        }
+        str20 = str19;
+      }
+      str = str20;
+    }
+    return str;
+  },
+  MeteringMode(arg0) {
+    let str = "Average";
+    if (1 !== arg0) {
+      let str2 = "CenterWeightedAverage";
+      if (2 !== arg0) {
+        let str3 = "Spot";
+        if (3 !== arg0) {
+          let str4 = "MultiSpot";
+          if (4 !== arg0) {
+            let str5 = "Pattern";
+            if (5 !== arg0) {
+              let str6 = "Partial";
+              if (6 !== arg0) {
+                let str7 = "Unknown";
+                if (255 === arg0) {
+                  str7 = "Other";
+                }
+                str6 = str7;
+              }
+              str5 = str6;
+            }
+            str4 = str5;
+          }
+          str3 = str4;
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ResolutionUnit(arg0) {
+    let str = "inches";
+    if (2 !== arg0) {
+      let str2 = "Unknown";
+      if (3 === arg0) {
+        str2 = "centimeters";
+      }
+      str = str2;
+    }
+    return str;
+  },
+  Saturation(arg0) {
+    let str = "Normal";
+    if (0 !== arg0) {
+      let str2 = "Low saturation";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "High saturation";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  FocalLengthIn35mmFilm(value7) {
+    let str = "Unknown";
+    if (0 !== value7) {
+      str = `${value7} mm`;
+    }
+    return str;
+  },
+  SceneCaptureType(arg0) {
+    let str = "Standard";
+    if (0 !== arg0) {
+      let str2 = "Landscape";
+      if (1 !== arg0) {
+        let str3 = "Portrait";
+        if (2 !== arg0) {
+          let str4 = "Unknown";
+          if (3 === arg0) {
+            str4 = "Night scene";
+          }
+          str3 = str4;
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  Sharpness(arg0) {
+    let str = "Normal";
+    if (0 !== arg0) {
+      let str2 = "Soft";
+      if (1 !== arg0) {
+        let str3 = "Unknown";
+        if (2 === arg0) {
+          str3 = "Hard";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  },
+  ShutterSpeedValue(arg0) {
+    let combined;
+    const powResult = Math.pow(2, arg0[0] / arg0[1]);
+    if (powResult <= 1) {
+      const _Math2 = Math;
+      const _HermesInternal2 = HermesInternal;
+      combined = "" + Math.round(1 / powResult);
+    } else {
+      const _Math = Math;
+      const _HermesInternal = HermesInternal;
+      combined = "1/" + Math.round(powResult);
+    }
+    return combined;
+  },
+  WhiteBalance(arg0) {
+    let str = "Auto white balance";
+    if (0 !== arg0) {
+      let str2 = "Unknown";
+      if (1 === arg0) {
+        str2 = "Manual white balance";
+      }
+      str = str2;
+    }
+    return str;
+  },
+  XResolution(arg0) {
+    return "" + Math.round(arg0[0] / arg0[1]);
+  },
+  YResolution(arg0) {
+    return "" + Math.round(arg0[0] / arg0[1]);
   }
 };
+
+export default obj;

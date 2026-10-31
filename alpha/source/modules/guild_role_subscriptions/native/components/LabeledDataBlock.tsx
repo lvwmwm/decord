@@ -1,17 +1,16 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17198
+// Function ID: 17199
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 21, 5009, 575, 5619, 6974, 1188, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5624, 6980, 2]
 // Exports: default
 
-// Module 17140 (LabeledDataBlock)
+// Module 17198 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
+import Text_Text from "Text/Text" /* 5624 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -20,18 +19,16 @@ let obj2;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let obj = { container: obj2, title: { marginRight: 4 }, titleSection: { flexDirection: "row", alignItems: "center", marginBottom: 16 } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 };
+obj2 = { backgroundColor: nativeDefault.colors.CARD_MUTED_BG, borderRadius: nativeDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 };
 let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/LabeledDataBlock.tsx");
 
 export default function LabeledDataBlock(arg0) {
-  let Icon;
   let children;
   let icon;
   let items;
   let items1;
   let items2;
-  let obj5;
   let onPressIcon;
   let style;
   let title;
@@ -46,18 +43,16 @@ export default function LabeledDataBlock(arg0) {
   items1[0] = _false(Text_Text.Text, obj3);
   let tmp4Result = null != icon;
   if (tmp4Result) {
-    const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj5) };
-    const PressableOpacity = tmp5(6974).PressableOpacity;
-    obj5 = { size: native.Icon.Sizes.SMALL, source: icon };
-    Icon = tmp5(1188).Icon;
+    const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(icon, { size: "sm" }) };
+    const PressableOpacity = tmp5(6980).PressableOpacity;
     tmp4Result = tmp4(PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
   items2 = [React3(View, obj2), ];
   let tmp4Result2 = children;
   if (typeof children === "string") {
-    const obj6 = { variant: "heading-xl/medium", color: "mobile-text-heading-primary", children };
-    tmp4Result2 = tmp4(tmp5(5619).Text, obj6);
+    const obj5 = { variant: "heading-xl/medium", color: "mobile-text-heading-primary", children };
+    tmp4Result2 = tmp4(tmp5(5624).Text, obj5);
   }
   items2[1] = tmp4Result2;
   return React3(View, obj);

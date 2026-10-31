@@ -1,13 +1,13 @@
-// Module ID: 18512
-// Function ID: 18513
+// Module ID: 18555
+// Function ID: 18556
 // Name: openDetailsActionSheet
-// Dependencies: [8915, 5253, 18480, 1995, 2]
+// Dependencies: [8924, 5258, 18523, 1994, 2]
 // Exports: openDetailsActionSheet
 
-// Module 18512 (openDetailsActionSheet)
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8915 */;
+// Module 18555 (openDetailsActionSheet)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/native/util/openDetailsActionSheet.tsx");
@@ -24,5 +24,5 @@ export function openDetailsActionSheet(arg0) {
   const obj2 = ICYMIActionCreatorsDefault;
   obj2.feedItemActioned({ itemId: id, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "overflow_menu_button", actionIntentType: "open", actionDestinationType: null } });
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequire(18480, dependencyMap.paths), "ItemDetailsActionSheet", { guildId, channelId, id });
+  obj3.openLazy(asyncRequire(18523, dependencyMap.paths), "ItemDetailsActionSheet", { guildId, channelId, id });
 }

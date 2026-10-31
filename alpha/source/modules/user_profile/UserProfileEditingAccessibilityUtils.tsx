@@ -1,14 +1,14 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16536
+// Function ID: 16537
 // Name: UserProfileEditingAccessibilityUtils
-// Dependencies: [1114, 16422, 10755, 2931, 7154, 2]
+// Dependencies: [1113, 16464, 10775, 2932, 7160, 2]
 // Exports: getAvatarAccessibleValue, getBannerAccessibleValue, getDisplayNameStyleAccessibleValue
 
-// Module 16494 (UserProfileEditingAccessibilityUtils)
-import intl5 from "intl" /* 1114 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7154 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10755 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16422 */;
+// Module 16536 (UserProfileEditingAccessibilityUtils)
+import intl5 from "intl" /* 1113 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7160 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10775 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16464 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileEditingAccessibilityUtils.tsx");
@@ -25,7 +25,7 @@ export function getDisplayNameStyleAccessibleValue(displayNameStyles) {
     let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[displayNameStyles.effectId];
     const tmp7 = importDefault;
     if (OpWJ3f == null) {
-      OpWJ3f = tmp7(2931).OpWJ3f;
+      OpWJ3f = tmp7(2932).OpWJ3f;
     }
     const colors = displayNameStyles.colors;
     const stringResult1 = string(OpWJ3f);
@@ -35,7 +35,7 @@ export function getDisplayNameStyleAccessibleValue(displayNameStyles) {
     });
     let str = ", ";
     const joined = mapped.join(", ");
-    const intl = tmp5(1114).intl;
+    const intl = tmp5(1113).intl;
     const obj = { fontName: stringResult, effectName: stringResult1, colors: joined };
     return intl.formatToPlainString(intl5.t.Igwax6, obj);
   }
@@ -72,8 +72,8 @@ export function getAvatarAccessibleValue(avatarChange, avatar) {
         description = avatarChange.description;
       }
       if (description == null) {
-        const intl = tmp2(1114).intl;
-        description = intl.string(tmp2(1114).t.cqdtrR);
+        const intl = tmp2(1113).intl;
+        description = intl.string(tmp2(1113).t.cqdtrR);
       }
     }
   }

@@ -1,19 +1,19 @@
-// Module ID: 13615
-// Function ID: 13616
+// Module ID: 13650
+// Function ID: 13651
 // Name: EmojiCube
-// Dependencies: [17, 5010, 6061, 21, 13616, 5009, 1377, 575, 504, 1410, 1492, 7294, 2]
+// Dependencies: [17, 5015, 6066, 21, 13651, 5014, 1376, 575, 504, 1409, 1491, 7300, 2]
 // Exports: default
 
-// Module 13615 (EmojiCube)
+// Module 13650 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6061 */;
-import EmojiDefault from "Emoji" /* 7294 */;
-import glMatrix from "glMatrix" /* 13616 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils_mod from "utils/PlatformUtils" /* 1377 */;
+import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import EmojiDefault from "Emoji" /* 7300 */;
+import glMatrix from "glMatrix" /* 13651 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -116,8 +116,8 @@ export default function EmojiCube(emoji) {
   if (null != emoji.id) {
     const obj2 = { id: emoji.id, animated: tmp6, size: 48 };
     tmp6 = !stateFromStores;
-    const getEmojiURL = emojiURL(1410).getEmojiURL;
-    emojiURL(1410);
+    const getEmojiURL = emojiURL(1409).getEmojiURL;
+    emojiURL(1409);
     if (!stateFromStores) {
       tmp6 = true === emoji.animated;
     }
@@ -127,12 +127,12 @@ export default function EmojiCube(emoji) {
   dependencyMap = tmp7;
   const items1 = [tmp7.container, , ];
   const obj4 = { transform: items2 };
-  items2 = [{ scale: emojiURL(1492)().width / 392 }];
+  items2 = [{ scale: emojiURL(1491)().width / 392 }];
   items1[1] = obj4;
   items1[2] = style;
   const items3 = [, , ];
   ({ topFace: arr4[0], leftFace: arr4[1], rightFace: arr4[2] } = tmp7);
-  ({ scale: emojiURL(1492)().width / 392 });
+  ({ scale: emojiURL(1491)().width / 392 });
   return <View style={items1}>{items3.map((item, index) => {
     let items;
     let str;

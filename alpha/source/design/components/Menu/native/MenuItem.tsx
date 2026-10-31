@@ -1,20 +1,20 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15818
+// Function ID: 15819
 // Name: MenuItem
-// Dependencies: [19, 21, 5009, 15772, 5631, 7303, 7305, 2]
+// Dependencies: [19, 21, 5014, 15812, 5636, 7309, 7311, 2]
 // Exports: MenuItem
 
-// Module 15778 (MenuItem)
+// Module 15818 (MenuItem)
 import Fragment from "Fragment" /* 21 */;
-import IconDefault from "Icon" /* 5631 */;
-import FormRowDefault from "FormRow" /* 7303 */;
-import Menu from "Menu" /* 15772 */;
+import IconDefault from "Icon" /* 5636 */;
+import FormRowDefault from "FormRow" /* 7309 */;
+import Menu from "Menu" /* 15812 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let tmp8;
-const FormLabelDefault = tmp8(7305);
+const FormLabelDefault = tmp8(7311);
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
 const result = size.fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");

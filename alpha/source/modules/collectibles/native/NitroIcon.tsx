@@ -1,12 +1,12 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15033
+// Function ID: 15034
 // Name: NitroIcon
-// Dependencies: [19, 21, 8023, 2]
+// Dependencies: [19, 21, 8031, 2]
 // Exports: default
 
-// Module 14996 (NitroIcon)
+// Module 15033 (NitroIcon)
 import Fragment from "Fragment" /* 21 */;
-import inlineStylesDefault from "inlineStyles" /* 8023 */;
+import inlineStylesDefault from "inlineStyles" /* 8031 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

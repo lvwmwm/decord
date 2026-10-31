@@ -1,34 +1,34 @@
-// Module ID: 12366
-// Function ID: 12367
+// Module ID: 12404
+// Function ID: 12405
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5010, 6790, 4858, 6056, 1384, 21, 5009, 575, 504, 1410, 7294, 1114, 6974, 5619, 8395, 5298, 12367, 7320, 12373, 10074, 5610, 6036, 5063, 6969, 1188, 9182, 8742, 5090, 5249, 7288, 5248, 5712, 5016, 12374, 12375, 7345, 5253, 5267, 2]
+// Dependencies: [32, 5, 19, 17, 5015, 6796, 4863, 6061, 1383, 21, 5014, 575, 504, 1409, 7300, 1113, 6980, 5624, 8403, 5303, 12405, 7326, 12411, 10094, 5615, 6041, 5068, 6975, 1187, 9201, 8750, 5095, 5254, 7294, 5253, 5717, 5021, 12412, 12413, 7351, 5258, 5272, 2]
 // Exports: default
 
-// Module 12366 (PollVotesActionSheet)
+// Module 12404 (PollVotesActionSheet)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import shared from "shared" /* 5016 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import timing from "timing" /* 5249 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import Pressables from "Pressables" /* 6974 */;
-import EmojiDefault from "Emoji" /* 7294 */;
-import PollsUtils from "PollsUtils" /* 8395 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12367 */;
+import intl3 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import shared from "shared" /* 5021 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import timing from "timing" /* 5254 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import Pressables from "Pressables" /* 6980 */;
+import EmojiDefault from "Emoji" /* 7300 */;
+import PollsUtils from "PollsUtils" /* 8403 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import UserStore from "UserStore" /* 1384 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, c2, item, ref2, set, user;
@@ -117,11 +117,11 @@ function PollAnswerButton(answer) {
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = map1(tmp3(5619).Text, obj4);
+    tmp11 = map1(tmp3(5624).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: items3 };
-  const Text = tmp3(5619).Text;
+  const Text = tmp3(5624).Text;
   items3 = [" ", "(", num.toLocaleString(), ")"];
   items2[2] = authStore3(Text, obj5);
   return authStore3(PressableHighlight, obj2);
@@ -161,7 +161,7 @@ function PollVotesHeader(message) {
           let obj = { value, done: true };
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -274,11 +274,11 @@ function PollVotesHeader(message) {
               }
               ref2.current = true;
               ref = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
           ref = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           ref = 3;
           throw tmp29;
@@ -456,18 +456,18 @@ function NoResults() {
   const tmp5 = authStore3;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12374);
+    tmp2Result = tmp2(12412);
   } else {
-    tmp2Result = tmp2(12375);
+    tmp2Result = tmp2(12413);
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
-  const Text = tmp9(5619).Text;
-  intl = tmp9(1114).intl;
+  const Text = tmp9(5624).Text;
+  intl = tmp9(1113).intl;
   items[1] = map1(Text, obj4);
   const obj5 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
-  const Text2 = tmp9(5619).Text;
-  intl2 = tmp9(1114).intl;
+  const Text2 = tmp9(5624).Text;
+  intl2 = tmp9(1113).intl;
   items[2] = map1(Text2, obj5);
   return tmp5(tmp6, obj);
 }

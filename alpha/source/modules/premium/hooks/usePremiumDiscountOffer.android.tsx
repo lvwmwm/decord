@@ -1,15 +1,15 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8528
+// Function ID: 8529
 // Name: usePremiumDiscountOffer
-// Dependencies: [7590, 1386, 8521, 7586, 563, 2]
-// Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
+// Dependencies: [7597, 1385, 8529, 7593, 563, 2]
+// Exports: usePremiumDiscountOffer
 
-// Module 8520 (usePremiumDiscountOffer)
+// Module 8528 (usePremiumDiscountOffer)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ProductIds from "ProductIds" /* 7586 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8521 */;
-import IAPStore from "IAPStore" /* 7590 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import ProductIds from "ProductIds" /* 7593 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8529 */;
+import IAPStore from "IAPStore" /* 7597 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -18,7 +18,7 @@ let hasOwnProperty;
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
 
 export function usePremiumDiscountOffer() {
-  const f92635 = (item) => offerIds.has(item);
+  const f92880 = (item) => offerIds.has(item);
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {
@@ -30,7 +30,7 @@ export function usePremiumDiscountOffer() {
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
-    if (values.every(f92635)) {
+    if (values.every(f92880)) {
       tmp6 = tmp4;
     }
     tmp5 = tmp6;
@@ -40,7 +40,7 @@ export function usePremiumDiscountOffer() {
   let tmp8 = null;
   if (0 !== values2.length) {
     let tmp9 = null;
-    if (values2.every(f92635)) {
+    if (values2.every(f92880)) {
       tmp9 = tmp7;
     }
     tmp8 = tmp9;
@@ -49,7 +49,4 @@ export function usePremiumDiscountOffer() {
     tmp5 = tmp8;
   }
   return tmp5;
-}
-export function usePremiumGroupDiscountOffer() {
-  return null;
 }

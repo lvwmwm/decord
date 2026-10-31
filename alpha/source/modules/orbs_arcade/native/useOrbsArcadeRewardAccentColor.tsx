@@ -1,14 +1,14 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 17027
+// Function ID: 17028
 // Name: useOrbsArcadeRewardAccentColor
-// Dependencies: [32, 16955, 11349, 14445, 671, 2]
+// Dependencies: [32, 17011, 11385, 14483, 671, 2]
 // Exports: default
 
-// Module 16970 (useOrbsArcadeRewardAccentColor)
+// Module 17027 (useOrbsArcadeRewardAccentColor)
 import _modDef671 from "module_671" /* 671 */;
-import useFetchCollectiblesProduct2 from "useFetchCollectiblesProduct" /* 11349 */;
-import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 14445 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16955 */;
+import useFetchCollectiblesProduct2 from "useFetchCollectiblesProduct" /* 11385 */;
+import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 14483 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -67,3 +67,4 @@ export default function useOrbsArcadeRewardAccentColor(type) {
     }
   }
 };
+export const NITRO_GLOW_COLOR = "#321634";

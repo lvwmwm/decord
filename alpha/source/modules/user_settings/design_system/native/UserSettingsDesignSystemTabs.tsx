@@ -1,16 +1,16 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 17774
+// Function ID: 17775
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5619, 5591, 5006, 8971, 6022, 12476, 14319, 11445, 5629, 7363, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 5596, 5011, 8980, 6027, 12511, 14357, 14177, 5634, 7369, 2]
 // Exports: default
 
-// Module 17730 (UserSettingsDesignSystemTabs)
+// Module 17774 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,14 +103,14 @@ export default function UserSettingsDesignSystemTabs() {
   const tmp24 = closure_6;
   if (tmp23Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp23Result = tmp23(tmp21(14319), obj5);
+    tmp23Result = tmp23(tmp21(14357), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp23Result;
   const obj6 = { children: closure_8(closure_5, obj4) };
   items3 = [closure_7(closure_5, { children: items2 }), closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
-  const Stack2 = tmp17(6022).Stack;
+  const Stack2 = tmp17(6027).Stack;
   items4 = [, ];
   const obj9 = {
     text: "Add Tab",

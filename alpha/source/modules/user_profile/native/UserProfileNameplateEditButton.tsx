@@ -1,20 +1,20 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16495
+// Function ID: 16496
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 4921, 7371, 1083, 21, 5009, 575, 504, 8729, 16454, 5253, 16455, 1995, 16425, 1114, 9492, 1188, 15035, 2]
+// Dependencies: [19, 17, 4926, 7377, 1083, 21, 5014, 575, 504, 8737, 16496, 5258, 16497, 1994, 16467, 1113, 9514, 1187, 15072, 2]
 // Exports: default
 
-// Module 16453 (UserProfileNameplateEditButton)
+// Module 16495 (UserProfileNameplateEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import Constants2 from "Constants" /* 7371 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Constants2 from "Constants" /* 7377 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -65,8 +65,8 @@ export default function UserProfileNameplateEditButton(user) {
   let obj2 = { pendingValue: pendingNameplate, userValue: nameplate1, guildValue: nameplate2, guildId };
   const collectibles = user.collectibles;
   nameplate1 = undefined;
-  const getProfilePreviewValue = user(8729).getProfilePreviewValue;
-  user(8729);
+  const getProfilePreviewValue = user(8737).getProfilePreviewValue;
+  user(8737);
   if (collectibles != null) {
     nameplate1 = collectibles.nameplate;
   }
@@ -79,8 +79,8 @@ export default function UserProfileNameplateEditButton(user) {
   }
   const profilePreviewValue = getProfilePreviewValue(obj2);
   let skuId;
-  const useFetchNameplate = tmp3(16454).useFetchNameplate;
-  user(16454);
+  const useFetchNameplate = tmp3(16496).useFetchNameplate;
+  user(16496);
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
@@ -106,31 +106,31 @@ export default function UserProfileNameplateEditButton(user) {
   }
   const items1 = [user, nameplate, guildId];
   if (isFetching) {
-    const UserProfileEditFormButton2 = tmp3(16425).UserProfileEditFormButton;
-    const intl4 = tmp3(1114).intl;
-    const intl5 = tmp3(1114).intl;
-    return <UserProfileEditFormButton2 label={intl4.string(user(1114).t.x5CoXR)} buttonText={intl5.string(user(1114).t.MKDeyL)} onPress={NOOP} leading={null} loading disabled hideArrow />;
+    const UserProfileEditFormButton2 = tmp3(16467).UserProfileEditFormButton;
+    const intl4 = tmp3(1113).intl;
+    const intl5 = tmp3(1113).intl;
+    return <UserProfileEditFormButton2 label={intl4.string(user(1113).t.x5CoXR)} buttonText={intl5.string(user(1113).t.MKDeyL)} onPress={NOOP} leading={null} loading disabled hideArrow />;
   } else {
     let name;
     if (nameplateProduct != null) {
       name = nameplateProduct.name;
     }
     if (name == null) {
-      const intl = tmp3(1114).intl;
-      name = intl.string(tmp3(1114).t.PoWNfe);
+      const intl = tmp3(1113).intl;
+      name = intl.string(tmp3(1113).t.PoWNfe);
     }
     let formatToPlainStringResult = name;
     if (null != guildId) {
       formatToPlainStringResult = name;
       if (null == nameplate) {
-        const intl2 = tmp3(1114).intl;
+        const intl2 = tmp3(1113).intl;
         const obj4 = { label: name };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp3(1114).t.ep5D4i, obj4);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp3(1113).t.ep5D4i, obj4);
       }
     }
-    const obj5 = { label: intl3.string(user(1114).t.x5CoXR), buttonText: formatToPlainStringResult, accessibilityValue: obj6, onPress: tmp14, leading: null };
-    const UserProfileEditFormButton = tmp3(16425).UserProfileEditFormButton;
-    intl3 = tmp3(1114).intl;
+    const obj5 = { label: intl3.string(user(1113).t.x5CoXR), buttonText: formatToPlainStringResult, accessibilityValue: obj6, onPress: tmp14, leading: null };
+    const UserProfileEditFormButton = tmp3(16467).UserProfileEditFormButton;
+    intl3 = tmp3(1113).intl;
     obj6 = { text: formatToPlainStringResult };
     if (null != nameplateData) {
       if (null != nameplateRecord) {
@@ -143,8 +143,8 @@ export default function UserProfileNameplateEditButton(user) {
         return <UserProfileEditFormButton {...obj5} />;
       }
     }
-    const obj9 = { source: guildId(15035), style: tmp.noneIcon };
-    const Icon = tmp3(1188).Icon;
+    const obj9 = { source: guildId(15072), style: tmp.noneIcon };
+    const Icon = tmp3(1187).Icon;
     tmp17Result = tmp17(Icon, obj9);
   }
 };

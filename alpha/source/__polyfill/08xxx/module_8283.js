@@ -1,31 +1,26 @@
 // Module ID: 8283
 // Function ID: 8284
-// Dependencies: [8280]
+// Dependencies: [8284, 8282]
 
 // Module 8283
-import _mod8280 from "module_8280" /* 8280 */;
+import _modDef8282 from "module_8282" /* 8282 */;
+import _modDef8284 from "module_8284" /* 8284 */;
 
 
 export default {
-  isAvifFile(getUint32) {
-    if (getUint32) {
-      try {
-        const obj = _mod8280;
-        let parseBoxResult = obj.parseBox(getUint32, 0);
-        const tmp4 = parseBoxResult;
-        if (tmp4) {
-          parseBoxResult = "avif" === parseBoxResult.majorBrand;
-        }
-        return parseBoxResult;
-      } catch (err) {
-        return false;
-      }
-    } else {
-      return false;
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
+    if (tmp) {
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef8284.LITTLE_ENDIAN) === 42;
     }
+    return tmp;
   },
-  findAvifOffsets(byteLength) {
-    const obj = _mod8280;
-    return obj.findOffsets(byteLength);
+  findTiffOffsets() {
+    if (_modDef8282.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
+    } else {
+      return {};
+    }
   }
 };

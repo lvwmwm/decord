@@ -1,17 +1,17 @@
-// Module ID: 6544
-// Function ID: 6545
+// Module ID: 6550
+// Function ID: 6551
 // Name: StripeUtils
-// Dependencies: [5, 32, 2063, 1072, 3, 6545, 1283, 504, 2]
+// Dependencies: [5, 32, 2062, 1072, 3, 6551, 1282, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 6544 (StripeUtils)
+// Module 6550 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import _mod6545 from "module_6545" /* 6545 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _mod6551 from "module_6551" /* 6551 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function getStripe() {
   if (null != React2) {
     resolved = Promise.resolve(React2);
   } else {
-    obj = _mod6545;
+    obj = _mod6551;
     const stripe = obj.loadStripe(metroImportDefault.STRIPE.KEY);
     resolved = stripe.then((result) => {
       let closure_1_2 = result;
@@ -48,7 +48,7 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

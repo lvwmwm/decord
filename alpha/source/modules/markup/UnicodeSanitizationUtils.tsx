@@ -1,11 +1,11 @@
-// Module ID: 6033
-// Function ID: 6034
+// Module ID: 6038
+// Function ID: 6039
 // Name: UnicodeSanitizationUtils
-// Dependencies: [1378, 2]
+// Dependencies: [1377, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 6033 (UnicodeSanitizationUtils)
-import URLUtilsDefault from "URLUtils" /* 1378 */;
+// Module 6038 (UnicodeSanitizationUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let regExp2;

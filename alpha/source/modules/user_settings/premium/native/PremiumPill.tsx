@@ -1,16 +1,16 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7623
+// Function ID: 7624
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 5009, 575, 5248, 7617, 7619, 1114, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5253, 7624, 7626, 1113, 5624, 2]
 // Exports: PremiumPill
 
-// Module 7616 (PremiumPill)
+// Module 7623 (PremiumPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
+import intl5 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

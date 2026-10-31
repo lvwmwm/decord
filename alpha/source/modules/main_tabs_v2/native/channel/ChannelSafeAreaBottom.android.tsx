@@ -1,12 +1,12 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14203
+// Function ID: 14204
 // Name: ChannelSafeAreaBottom
-// Dependencies: [11217, 14167, 14168, 2]
+// Dependencies: [11236, 14204, 14205, 2]
 
-// Module 14166 (ChannelSafeAreaBottom)
-import ChannelSafeAreaBottomNoopDefault from "ChannelSafeAreaBottomNoop" /* 14167 */;
-import ChannelSafeAreaBottomAnimatedDefault from "ChannelSafeAreaBottomAnimated" /* 14168 */;
-import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11217 */;
+// Module 14203 (ChannelSafeAreaBottom)
+import ChannelSafeAreaBottomNoopDefault from "ChannelSafeAreaBottomNoop" /* 14204 */;
+import ChannelSafeAreaBottomAnimatedDefault from "ChannelSafeAreaBottomAnimated" /* 14205 */;
+import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11236 */;
 import size from "module_2" /* 2 */;
 
 let importDefaultResult;

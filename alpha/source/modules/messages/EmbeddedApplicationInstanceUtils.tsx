@@ -1,11 +1,11 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15128
+// Function ID: 15129
 // Name: EmbeddedApplicationInstanceUtils
-// Dependencies: [19, 1114, 8952, 11752, 2]
+// Dependencies: [19, 1113, 8961, 11789, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 15091 (EmbeddedApplicationInstanceUtils)
-import intl12 from "intl" /* 1114 */;
+// Module 15128 (EmbeddedApplicationInstanceUtils)
+import intl12 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,14 +30,14 @@ function getJoinOrStartButtonState(channel) {
     stringResult = string(t.sqe0hj);
     tmp6 = tmp2;
   }
-  const tmp6Result = tmp6(8952);
+  const tmp6Result = tmp6(8961);
   const result = tmp6Result.isActivitiesInTextEnabled(channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
       if (embeddedActivity.launchId === currentEmbeddedActivity.launchId) {
-        const obj2 = { disabled: true, text: intl11.string(tmp6(1114).t.DPfdsq), tooltip: undefined };
+        const obj2 = { disabled: true, text: intl11.string(tmp6(1113).t.DPfdsq), tooltip: undefined };
         const merged = Object.assign(obj);
-        intl11 = tmp6(1114).intl;
+        intl11 = tmp6(1113).intl;
         return obj2;
       }
     }
@@ -47,38 +47,38 @@ function getJoinOrStartButtonState(channel) {
     const merged1 = Object.assign(obj);
     stringResult1 = undefined;
     if (!result) {
-      const intl10 = tmp6(1114).intl;
-      stringResult1 = intl10.string(tmp6(1114).t.f41E1g);
+      const intl10 = tmp6(1113).intl;
+      stringResult1 = intl10.string(tmp6(1113).t.f41E1g);
     }
     return obj3;
   } else {
     if (null != joinability) {
-      if (joinability !== tmp6(11752).EmbeddedActivityJoinability.CAN_JOIN) {
+      if (joinability !== tmp6(11789).EmbeddedActivityJoinability.CAN_JOIN) {
         let stringResult2;
-        if (tmp6(11752).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
-          const intl9 = tmp6(1114).intl;
-          stringResult2 = intl9.string(tmp6(1114).t.hHGrWz);
-        } else if (tmp6(11752).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
-          const intl8 = tmp6(1114).intl;
-          stringResult2 = intl8.string(tmp6(1114).t["4WuFRE"]);
-        } else if (tmp6(11752).EmbeddedActivityJoinability.CHANNEL_CONTENT_GATED === joinability) {
-          const intl7 = tmp6(1114).intl;
-          stringResult2 = intl7.string(tmp6(1114).t.pKLV22);
-        } else if (tmp6(11752).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
-          const intl6 = tmp6(1114).intl;
-          stringResult2 = intl6.string(tmp6(1114).t.uGDCcw);
-        } else if (tmp6(11752).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
-          const intl5 = tmp6(1114).intl;
-          stringResult2 = intl5.string(tmp6(1114).t.UXoQTp);
-        } else if (tmp6(11752).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
-          const intl4 = tmp6(1114).intl;
-          stringResult2 = intl4.string(tmp6(1114).t.rZfiNq);
-        } else if (tmp6(11752).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
-          const intl3 = tmp6(1114).intl;
-          stringResult2 = intl3.string(tmp6(1114).t.w5SAps);
+        if (tmp6(11789).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
+          const intl9 = tmp6(1113).intl;
+          stringResult2 = intl9.string(tmp6(1113).t.hHGrWz);
+        } else if (tmp6(11789).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
+          const intl8 = tmp6(1113).intl;
+          stringResult2 = intl8.string(tmp6(1113).t["4WuFRE"]);
+        } else if (tmp6(11789).EmbeddedActivityJoinability.CHANNEL_CONTENT_GATED === joinability) {
+          const intl7 = tmp6(1113).intl;
+          stringResult2 = intl7.string(tmp6(1113).t.pKLV22);
+        } else if (tmp6(11789).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
+          const intl6 = tmp6(1113).intl;
+          stringResult2 = intl6.string(tmp6(1113).t.uGDCcw);
+        } else if (tmp6(11789).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
+          const intl5 = tmp6(1113).intl;
+          stringResult2 = intl5.string(tmp6(1113).t.UXoQTp);
+        } else if (tmp6(11789).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
+          const intl4 = tmp6(1113).intl;
+          stringResult2 = intl4.string(tmp6(1113).t.rZfiNq);
+        } else if (tmp6(11789).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
+          const intl3 = tmp6(1113).intl;
+          stringResult2 = intl3.string(tmp6(1113).t.w5SAps);
         } else {
-          const intl2 = tmp6(1114).intl;
-          stringResult2 = intl2.string(tmp6(1114).t.Etp6uI);
+          const intl2 = tmp6(1113).intl;
+          stringResult2 = intl2.string(tmp6(1113).t.Etp6uI);
         }
         const obj4 = { disabled: true, tooltip: stringResult2 };
         const merged2 = Object.assign(obj);

@@ -1,24 +1,24 @@
-// Module ID: 18408
-// Function ID: 18409
+// Module ID: 18451
+// Function ID: 18452
 // Name: ConjureYouBarButton
-// Dependencies: [19, 17004, 21, 5009, 575, 14672, 14659, 1499, 18409, 14667, 12429, 14669, 2]
+// Dependencies: [19, 17062, 21, 5014, 575, 14710, 14697, 1498, 18452, 14705, 12464, 14707, 2]
 
-// Module 18408 (ConjureYouBarButton)
+// Module 18451 (ConjureYouBarButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Link from "Link" /* 1499 */;
-import useConjureWandStatusDefault from "useConjureWandStatus" /* 14659 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14669 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 14672 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
-import YouBarButtonDefault from "YouBarButton" /* 18409 */;
+import Link from "Link" /* 1498 */;
+import useConjureWandStatusDefault from "useConjureWandStatus" /* 14697 */;
+import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14707 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 14710 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarButtonDefault from "YouBarButton" /* 18452 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const MagicWandIcon2 = tmp5(12429);
+const MagicWandIcon2 = tmp5(12464);
 function confirmUnpin() {
   confirmConjureYouBarPinDefault(false);
 }
@@ -43,7 +43,7 @@ const memoResult = react.memo(function ConjureYouBarButton(hasNameplate) {
   YouBarButtonDefault;
   if (working) {
     const obj3 = { size: YOU_BAR_BUTTON_ICON_SIZE, paused: !isFocused };
-    tmp7Result = tmp7(tmp2(14667), obj3);
+    tmp7Result = tmp7(tmp2(14705), obj3);
   } else {
     const obj4 = { size: "custom", style: tmp.icon, color: str };
     str = undefined;

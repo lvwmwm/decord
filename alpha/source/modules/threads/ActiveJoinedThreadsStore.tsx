@@ -1,30 +1,30 @@
-// Module ID: 6835
-// Function ID: 6836
+// Module ID: 6841
+// Function ID: 6842
 // Name: ActiveJoinedThreadsStore
-// Dependencies: [4862, 4858, 4880, 6836, 4912, 6855, 4943, 4865, 11, 6728, 6888, 572, 12, 504, 2]
+// Dependencies: [4867, 4863, 4885, 6842, 4917, 6861, 4948, 4870, 11, 6734, 6894, 572, 12, 504, 2]
 
-// Module 6835 (ActiveJoinedThreadsStore)
+// Module 6841 (ActiveJoinedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4865 */;
-import AgeGateUtils from "AgeGateUtils" /* 6728 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6888 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6855 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import AgeGateUtils from "AgeGateUtils" /* 6734 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6894 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6861 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12, closure_13, closure_14, closure_16;
 
 let c3;
 let closure_4;
-const f123029 = () => {
+const f123401 = () => {
   channel = ChannelStore.getChannel(channel.id);
   if (null != channel) {
     const obj2 = { type: "THREAD_UPDATE", channel };
@@ -119,7 +119,7 @@ function rebuildGuild_(guildId) {
               let id2 = channel.id;
               let _Date = Date;
               let tmp46 = getThreadAutoArchiveTimeOnceDefault(channel);
-              closure_19[id2] = setTimeout(f123029, tmp46 - Date.now() + 1);
+              closure_19[id2] = setTimeout(f123401, tmp46 - Date.now() + 1);
               continue;
             }
             continue;
@@ -250,7 +250,7 @@ function updateThread(guild_id, parent_id, id) {
             const id3 = channel.id;
             const _Date = Date;
             const tmp97 = getThreadAutoArchiveTimeOnceDefault(channel);
-            closure_19[id3] = setTimeout(f123029, tmp97 - Date.now() + 1);
+            closure_19[id3] = setTimeout(f123401, tmp97 - Date.now() + 1);
           }
         } else {
           const isForumPostUnreadResult = ReadStateStore.isForumPostUnread(channel.id);
@@ -459,7 +459,7 @@ function handleReadStateChannelAction(channelId) {
             const id3 = channel.id;
             const _Date = Date;
             const tmp30 = getThreadAutoArchiveTimeOnceDefault(channel);
-            closure_19[id3] = setTimeout(f123029, tmp30 - Date.now() + 1);
+            closure_19[id3] = setTimeout(f123401, tmp30 - Date.now() + 1);
           }
           ({ guild_id: guild_id2, parent_id: parent_id2 } = channel);
           let tmp32 = guild_id2 in closure_13;
@@ -576,7 +576,7 @@ function rebuildReadStates() {
               let id2 = channel.id;
               let _Date = Date;
               let tmp19 = getThreadAutoArchiveTimeOnceDefault(channel);
-              closure_19[id2] = setTimeout(f123029, tmp19 - Date.now() + 1);
+              closure_19[id2] = setTimeout(f123401, tmp19 - Date.now() + 1);
               continue;
             }
             continue;

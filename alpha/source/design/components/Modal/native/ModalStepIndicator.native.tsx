@@ -1,18 +1,18 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13199
+// Function ID: 13200
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 5009, 575, 5090, 5591, 5632, 1114, 2076, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5095, 5596, 5637, 1113, 2075, 2]
 // Exports: ModalStepIndicator
 
-// Module 13164 (ModalStepIndicator)
+// Module 13199 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1114 */;
-import _modDef2076 from "module_2076" /* 2076 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef2075 from "module_2075" /* 2075 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -112,7 +112,7 @@ export function ModalStepIndicator(arg0) {
     } else {
       const intl = intl2.intl;
       const range = { min: 1, max: totalSteps, now: currentStep + 1 };
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2076.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2075.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
     }
   }
 }

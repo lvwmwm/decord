@@ -1,19 +1,19 @@
-// Module ID: 10023
-// Function ID: 10024
+// Module ID: 10044
+// Function ID: 10045
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 5009, 575, 1626, 7095, 1093, 5090, 10024, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1625, 7101, 1092, 5095, 10045, 2]
 // Exports: default
 
-// Module 10023 (PremiumExpressionPickerFeatureUpsell)
+// Module 10044 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7095 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7101 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

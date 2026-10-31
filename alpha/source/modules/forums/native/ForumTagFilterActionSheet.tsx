@@ -1,20 +1,20 @@
-// Module ID: 14324
-// Function ID: 14325
+// Module ID: 14362
+// Function ID: 14363
 // Name: ForumTagFilterActionSheet
-// Dependencies: [32, 19, 6790, 13713, 1072, 21, 5009, 8196, 5588, 7360, 7315, 1114, 9001, 5270, 7054, 6968, 504, 7294, 1410, 2]
+// Dependencies: [32, 19, 6796, 13748, 1072, 21, 5014, 8204, 5593, 7366, 7321, 1113, 9010, 5275, 7060, 6974, 504, 7300, 1409, 2]
 // Exports: default
 
-// Module 14324 (ForumTagFilterActionSheet)
+// Module 14362 (ForumTagFilterActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import EmojiDefault from "Emoji" /* 7294 */;
-import Tracking from "Tracking" /* 8196 */;
+import EmojiDefault from "Emoji" /* 7300 */;
+import Tracking from "Tracking" /* 8204 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
-import ForumChannelStore from "ForumChannelStore" /* 13713 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import ForumChannelStore from "ForumChannelStore" /* 13748 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp5;
-const AvatarUtilsDefault = tmp5(1410);
+const AvatarUtilsDefault = tmp5(1409);
 function EmojiIcon(arg0) {
   let emojiName;
   let emojiURL;

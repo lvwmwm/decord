@@ -1,11 +1,11 @@
-// Module ID: 9656
-// Function ID: 9657
+// Module ID: 9676
+// Function ID: 9677
 // Name: ConjureMobileExperiment
-// Dependencies: [1448, 504, 2]
+// Dependencies: [1447, 504, 2]
 // Exports: isConjureMobileEnabled, useIsConjureMobileEnabled
 
-// Module 9656 (ConjureMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 9676 (ConjureMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

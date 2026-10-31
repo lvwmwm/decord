@@ -1,11 +1,11 @@
-// Module ID: 8827
-// Function ID: 8828
+// Module ID: 8835
+// Function ID: 8836
 // Name: MediaViewerAnalyticsManager
-// Dependencies: [4858, 1072, 560, 1253, 2]
+// Dependencies: [4863, 1072, 560, 1252, 2]
 
-// Module 8827 (MediaViewerAnalyticsManager)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+// Module 8835 (MediaViewerAnalyticsManager)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Constants from "Constants" /* 1072 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -17,12 +17,12 @@ let values;
 ({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);
 let obj = { VIEWER_SWIPE: "number_viewer_swipes", THUMBNAIL_SWIPE: "number_thumbnail_swipes", SELECTED_ITEM_CHANGE: "number_selected_item_changes", ZOOM_IN_BUTTON_PRESSED: "number_zoom_in_button_pressed", ZOOM_IN_IMAGE_PRESSED: "number_zoom_in_image_pressed", ZOOM_OUT_BUTTON_PRESSED: "number_zoom_out_button_pressed", ZOOM_OUT_IMAGE_PRESSED: "number_zoom_out_image_pressed", FORWARD_PRESSED: "number_forward_button_pressed", SAVE_MEDIA_PRESSED: "number_save_media_button_pressed", OPEN_LINK_PRESSED: "number_open_link_button_pressed", MORE_BUTTON_PRESSED: "number_more_button_pressed", COPY_IMAGE_PRESSED: "number_copy_image_more_menu_pressed", COPY_LINK_PRESSED: "number_copy_link_more_menu_pressed", CONTEXT_MENU_OPENED: "number_context_menu_opened" };
 let obj2 = {
-  guildId: "sa",
+  guildId: "dispatch",
   channelId: "isArray",
   channelType: "isArray",
   numMediaItems: "Array",
-  hasMediaOptions: "id",
-  source: 225509649,
+  hasMediaOptions: "children",
+  source: 141623569,
   incrementableActions: fromEntries(values.map((item) => {
     const items = [item, 0];
     return items;

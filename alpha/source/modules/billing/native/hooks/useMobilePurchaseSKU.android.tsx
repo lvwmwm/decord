@@ -1,18 +1,18 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 10682
+// Function ID: 10683
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7602, 1384, 1072, 7591, 3, 10547, 5607, 1253, 572, 7607, 4822, 2028, 10663, 1267, 2]
+// Dependencies: [5, 19, 7609, 1383, 1072, 7598, 3, 10567, 5612, 1252, 572, 7614, 4827, 2026, 10683, 1266, 2]
 // Exports: default
 
-// Module 10662 (useMobilePurchaseSKU)
+// Module 10682 (useMobilePurchaseSKU)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 7591 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7602 */;
+import Constants2 from "Constants" /* 7598 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7609 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, orderRecord, v3;
@@ -139,7 +139,7 @@ export default function useMobilePurchaseSKU(skuId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export default function useMobilePurchaseSKU(skuId) {
               }
               closure_1_8();
               v3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c5) {
             c4 = 0;
@@ -260,7 +260,7 @@ export default function useMobilePurchaseSKU(skuId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -406,7 +406,7 @@ export default function useMobilePurchaseSKU(skuId) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const obj15 = { productId: closure_130_1, skuId: closure_130_0, isOneTimePurchase: true, analyticsLoadId: closure_130_3, analyticsLocations: closure_130_2, analyticsData: closure_130_4, isGift: closure_130_19, giftInfoOptions: options, googleOfferId: closure_130_17, onPurchaseError: closure_130_22 };
         options = undefined;

@@ -1,17 +1,17 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14625
+// Function ID: 14626
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 14586, 1072, 21, 5009, 1114, 8665, 9707, 1498, 2062, 14588, 9709, 2]
+// Dependencies: [19, 14624, 1072, 21, 5014, 1113, 8673, 9727, 1497, 2061, 14626, 9729, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 14587 (PlayStationLinkLanding)
+// Module 14625 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14586 */;
-import _modDef14588 from "module_14588" /* 14588 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14624 */;
+import _modDef14626 from "module_14626" /* 14626 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,13 +26,13 @@ export function PlayStationLinkLanding(platformType) {
   navigation = undefined;
   platformType = platformType.platformType;
   const tmp = closure_7();
-  let obj = navigation(1498);
+  let obj = navigation(1497);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(HelpdeskArticles.PS_CONNECTION);
-  let intl = navigation(1114).intl;
+  let intl = navigation(1113).intl;
   let items = [navigation];
-  const formatResult = intl.format(navigation(1114).t.kqZQNe, { helpdeskArticleUrl: articleURL });
+  const formatResult = intl.format(navigation(1113).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   const memo = react.useMemo(() => {
     let intl;
     let intl2;
@@ -50,11 +50,11 @@ export function PlayStationLinkLanding(platformType) {
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef14588 };
+    const obj = { uri: _modDef14626 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(9709).TwoWayLinkLanding;
-  let intl2 = navigation(1114).intl;
-  let intl3 = navigation(1114).intl;
-  return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1114).t.xAWHOy)} headerReconnect={intl3.string(navigation(1114).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;
+  const TwoWayLinkLanding = navigation(9729).TwoWayLinkLanding;
+  let intl2 = navigation(1113).intl;
+  let intl3 = navigation(1113).intl;
+  return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1113).t.xAWHOy)} headerReconnect={intl3.string(navigation(1113).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;
 }

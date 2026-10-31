@@ -1,22 +1,22 @@
-// Module ID: 8195
-// Function ID: 8196
+// Module ID: 8203
+// Function ID: 8204
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 4862, 4858, 6836, 4943, 4867, 8196, 12, 4869, 11, 7472, 504, 572, 2]
+// Dependencies: [32, 4867, 4863, 6842, 4948, 4872, 8204, 12, 4874, 11, 7478, 504, 572, 2]
 
-// Module 8195 (ArchivedThreadsStore)
+// Module 8203 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelRecord from "ChannelRecord" /* 4862 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4867 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4869 */;
-import ForumUtils from "ForumUtils" /* 7472 */;
-import Tracking from "Tracking" /* 8196 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4872 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4874 */;
+import ForumUtils from "ForumUtils" /* 7478 */;
+import Tracking from "Tracking" /* 8204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
 import size from "module_2" /* 2 */;
 
 let appliedTags;
@@ -58,7 +58,7 @@ function resortListState(value) {
     let id;
     let tmp3 = sortOrder;
     let tmp4 = dependencyMap;
-    if (sortOrder === sortOrder(4867).ThreadSortOrder.LATEST_ACTIVITY) {
+    if (sortOrder === sortOrder(4872).ThreadSortOrder.LATEST_ACTIVITY) {
       const tmp5 = ReadStateStore;
       id = ReadStateStore.lastMessageId(channel.id);
     } else {
@@ -84,7 +84,7 @@ function resortListState(value) {
         if (true !== someResult) {
           return false;
         }
-      } else if (tmp21(4869).ThreadSearchTagSetting.MATCH_ALL === tmp20) {
+      } else if (tmp21(4874).ThreadSearchTagSetting.MATCH_ALL === tmp20) {
         const values = obj.values();
         const iter = values[Symbol.iterator]();
         const nextResult = iter.next();

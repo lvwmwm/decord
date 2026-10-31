@@ -1,20 +1,20 @@
-// Module ID: 8561
-// Function ID: 8562
+// Module ID: 8569
+// Function ID: 8570
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5009, 575, 6772, 6026, 5619, 8562, 7143, 8563, 8564, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6778, 6031, 5624, 8570, 7149, 8571, 8572, 2]
 
-// Module 8561 (utils/ChangeLogUtils)
+// Module 8569 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8563 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8564 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8571 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8572 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import CustomMarkup from "CustomMarkup" /* 6026 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import CustomMarkup from "CustomMarkup" /* 6031 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5619).Text;
+    Paragraph = output(5624).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8562);
+  const obj = output(8570);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8562);
+    const tmp5Result = tmp5(8570);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -138,7 +138,7 @@ function ChangeLogStrong(arg0) {
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
-    const Text = tmp(5619).Text;
+    const Text = tmp(5624).Text;
     const tmp5 = jsx;
     if (state != null) {
       str = state.textColor;
@@ -195,10 +195,10 @@ const obj5 = {
       }
     };
   },
-  heading(styles) {
+  heading(dependencyMap) {
     return {
       react(className, fn, key) {
-        return jsx(styles.components.Heading, { className: className.className, level: className.level, children: fn(className.content, key) }, key.key);
+        return jsx(dependencyMap.components.Heading, { className: className.className, level: className.level, children: fn(className.content, key) }, key.key);
       }
     };
   },

@@ -1,19 +1,19 @@
-// Module ID: 14869
-// Function ID: 14870
+// Module ID: 14907
+// Function ID: 14908
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 1498, 6738, 7163, 1377, 1114, 5619, 6992, 14870, 2]
+// Dependencies: [32, 19, 21, 1497, 6744, 7169, 1376, 1113, 5624, 6998, 14908, 2]
 // Exports: default
 
-// Module 14869 (UserProfileEditNoteModal)
+// Module 14907 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1114 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
-import useNavigation from "useNavigation" /* 1498 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import Navigator2 from "Navigator" /* 7163 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 14870 */;
+import intl2 from "intl" /* 1113 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import useNavigation from "useNavigation" /* 1497 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import Navigator2 from "Navigator" /* 7169 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 14908 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
@@ -73,7 +73,7 @@ export default function UserProfileEditNoteModal(arg0) {
       return jsx(UserProfileEditNote.default, { userId: require, onSave: importDefault, onClose: handleClose, shouldFocusInput });
     }
   };
-  intl = tmp(1114).intl;
+  intl = tmp(1113).intl;
   tmpResult2 = NavigatorHeader;
   return tmp7(Navigator, obj3);
 };

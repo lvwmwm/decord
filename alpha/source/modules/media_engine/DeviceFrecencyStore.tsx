@@ -1,17 +1,17 @@
-// Module ID: 5766
-// Function ID: 5767
+// Module ID: 5771
+// Function ID: 5772
 // Name: DeviceFrecencyStore
-// Dependencies: [2007, 1384, 5763, 5767, 5775, 504, 12, 572, 2]
+// Dependencies: [2006, 1383, 5768, 5772, 5780, 504, 12, 572, 2]
 
-// Module 5766 (DeviceFrecencyStore)
+// Module 5771 (DeviceFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TimeUtils from "TimeUtils" /* 5767 */;
-import FrecencyDefault from "Frecency" /* 5775 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import UserStore from "UserStore" /* 1384 */;
-import Constants from "Constants" /* 5763 */;
+import TimeUtils from "TimeUtils" /* 5772 */;
+import FrecencyDefault from "Frecency" /* 5780 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 5768 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

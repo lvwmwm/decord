@@ -1,67 +1,85 @@
 // Module ID: 8258
 // Function ID: 8259
-// Dependencies: [8259]
+// Dependencies: [8251, 8252]
+// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
 
 // Module 8258
-import _mod8259 from "module_8259" /* 8259 */;
+import _mod8251 from "module_8251" /* 8251 */;
+import _mod8252 from "module_8252" /* 8252 */;
 
-let hasOwnProperty;
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
+export function isBLEND(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "blend");
 }
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
-  }
-});
-tmp3(_mod8259, exports);
+export function isELF(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "elf");
+}
+export function isEXE(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exe");
+}
+export function isMACHO(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "macho");
+}
+export function isINDD(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "indd");
+}
+export function isORC(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "orc");
+}
+export function isPARQUET(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "parquet");
+}
+export function isPDF(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pdf");
+}
+export function isPS(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ps");
+}
+export function isRTF(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rtf");
+}
+export function isSQLITE(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "sqlite");
+}
+export function isSTL(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "stl");
+}
+export function isTTF(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ttf");
+}
+export function isDOC(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "doc");
+}
+export function isPCAP(fileChunk) {
+  fileChunk = _mod8251.getFileChunk(fileChunk);
+  const FileTypes = _mod8252.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pcap");
+}

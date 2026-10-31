@@ -1,26 +1,26 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 16698
+// Function ID: 16699
 // Name: IgnoredUserRow
-// Dependencies: [19, 1384, 21, 7482, 7320, 1114, 8742, 6969, 1188, 16653, 5629, 504, 2]
+// Dependencies: [19, 1383, 21, 7488, 7326, 1113, 8750, 6975, 1187, 16695, 5634, 504, 2]
 // Exports: default
 
-// Module 16656 (IgnoredUserRow)
+// Module 16698 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 function IgnoredUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7320)().analyticsLocations;
-  const intl = userRecord(1114).intl;
+  analyticsLocations = analyticsLocations(7326)().analyticsLocations;
+  const intl = userRecord(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
-  const e3qAIz = userRecord(1114).t.e3qAIz;
+  const e3qAIz = userRecord(1113).t.e3qAIz;
   if (username == null) {
     username = userRecord.username;
   }
@@ -29,14 +29,14 @@ function IgnoredUserRow(userRecord) {
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(e3qAIz, { name: username });
-  const TableRow = tmp2(6969).TableRow;
-  let obj2 = { source: userRecord.getAvatarSource(undefined), size: tmp2(1188).AvatarSizes.REFRESH_MEDIUM_32 };
-  const Avatar = tmp2(1188).Avatar;
+  const TableRow = tmp2(6975).TableRow;
+  let obj2 = { source: userRecord.getAvatarSource(undefined), size: tmp2(1187).AvatarSizes.REFRESH_MEDIUM_32 };
+  const Avatar = tmp2(1187).Avatar;
   const items = [{ name: "activate" }, { name: "unignore", label: formatToPlainStringResult }];
   ({
     size: "sm",
     variant: "secondary",
-    text: intl2.string(userRecord(1114).t["3GZE6a"]),
+    text: intl2.string(userRecord(1113).t["3GZE6a"]),
     accessibilityLabel: formatToPlainStringResult,
     onPress() {
       const id = userRecord.id;
@@ -44,8 +44,8 @@ function IgnoredUserRow(userRecord) {
       obj.unignoreUser(id, "ignored-users-list-mobile");
     }
   });
-  const Button = tmp2(5629).Button;
-  intl2 = tmp2(1114).intl;
+  const Button = tmp2(5634).Button;
+  intl2 = tmp2(1113).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }
 const jsx = Fragment.jsx;

@@ -1,25 +1,25 @@
-// Module ID: 16530
-// Function ID: 16531
+// Module ID: 16572
+// Function ID: 16573
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4951, 1384, 1072, 7484, 21, 5009, 575, 16531, 1114, 7557, 504, 7161, 6989, 6969, 5629, 2]
+// Dependencies: [19, 17, 4956, 1383, 1072, 7490, 21, 5014, 575, 16573, 1113, 7563, 504, 7167, 6995, 6975, 5634, 2]
 
-// Module 16530 (SettingsAccountHeader)
+// Module 16572 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl from "intl" /* 1114 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6989 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7161 */;
-import Constants2 from "Constants" /* 7484 */;
-import openUserSettings from "openUserSettings" /* 7557 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16531 */;
+import intl from "intl" /* 1113 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6995 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7167 */;
+import Constants2 from "Constants" /* 7490 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16573 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function SettingsAccountHeader() {
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(6969).TableRow;
+      const TableRow = tmp2(6975).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

@@ -1,11 +1,11 @@
-// Module ID: 12592
-// Function ID: 12593
+// Module ID: 12627
+// Function ID: 12628
 // Name: conjureIdeasIntroTip
-// Dependencies: [12589, 2]
+// Dependencies: [12624, 2]
 // Exports: resolveIdeasIntroTip
 
-// Module 12592 (conjureIdeasIntroTip)
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12589 */;
+// Module 12627 (conjureIdeasIntroTip)
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12624 */;
 import size from "module_2" /* 2 */;
 
 function resolveIdeasIntroTip(agentIdle) {

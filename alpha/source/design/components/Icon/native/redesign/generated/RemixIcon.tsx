@@ -1,14 +1,14 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 10846
+// Function ID: 10847
 // Name: RemixIcon
-// Dependencies: [19, 21, 575, 5711, 10827, 2]
+// Dependencies: [19, 21, 575, 5716, 10847, 2]
 // Exports: RemixIcon
 
-// Module 10826 (RemixIcon)
+// Module 10846 (RemixIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 10827 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 10847 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 11584
-// Function ID: 11585
+// Module ID: 11620
+// Function ID: 11621
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7440, 4858, 4921, 4880, 4912, 1384, 1072, 21, 9116, 6895, 550, 7445, 7320, 504, 7211, 4946, 11585, 9022, 6036, 5063, 1114, 8742, 575, 7212, 10713, 2]
+// Dependencies: [32, 19, 17, 7446, 4863, 4926, 4885, 4917, 1383, 1072, 21, 9135, 6901, 550, 7451, 7326, 504, 7217, 4951, 11621, 9031, 6041, 5068, 1113, 8750, 575, 7218, 10733, 2]
 
-// Module 11584 (GuildChannelUserList)
+// Module 11620 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1114 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import intl2 from "intl" /* 1113 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7440 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7446 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

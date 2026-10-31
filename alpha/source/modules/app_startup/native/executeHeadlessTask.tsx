@@ -1,22 +1,22 @@
-// Module ID: 20084
-// Function ID: 20085
+// Module ID: 20145
+// Function ID: 20146
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 19295, 1072, 3, 1243, 10192, 15, 9, 15517, 1253, 1261, 19390, 4853, 2]
+// Dependencies: [5, 17, 502, 19352, 1072, 3, 1242, 10212, 15, 9, 15556, 1252, 1260, 19447, 4858, 2]
 // Exports: default
 
-// Module 20084 (executeHeadlessTask)
+// Module 20145 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10192 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15517 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10212 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15556 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 19295 */;
+import NativeAppStartup from "NativeAppStartup" /* 19352 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             case 13:
             {

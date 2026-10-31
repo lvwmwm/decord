@@ -1,22 +1,22 @@
-// Module ID: 19520
-// Function ID: 19521
+// Module ID: 19577
+// Function ID: 19578
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 13924, 1072, 21, 5009, 575, 1253, 13925, 5253, 5267, 5712, 19521, 5619, 1114, 6761, 5629, 2]
+// Dependencies: [19, 17, 13959, 1072, 21, 5014, 575, 1252, 13960, 5258, 5272, 5717, 19578, 5624, 1113, 6767, 5634, 2]
 // Exports: default
 
-// Module 19520 (NotificationReactivationActionSheet)
+// Module 19577 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13924 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13925 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19521 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13959 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13960 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19578 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -63,34 +63,34 @@ export default function NotificationReactivationActionSheet(location) {
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items1);
   let obj = { children: closure_8(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  BottomSheet = _location(5267).BottomSheet;
+  BottomSheet = _location(5272).BottomSheet;
   let obj3 = { style: tmp.image, source: AssetRegistryDefault, resizeMode: "contain" };
   const tmp4 = FastImageDefault;
   items2 = [closure_7(tmp4, obj3), , , ];
-  const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: intl.string(_location(1114).t.a4bgO0) };
-  const Text = _location(5619).Text;
-  intl = _location(1114).intl;
+  const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: intl.string(_location(1113).t.a4bgO0) };
+  const Text = _location(5624).Text;
+  intl = _location(1113).intl;
   items2[1] = closure_7(Text, obj4);
-  const obj5 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(_location(1114).t["rW5gw/"]) };
-  const Text2 = _location(5619).Text;
-  intl2 = _location(1114).intl;
+  const obj5 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(_location(1113).t["rW5gw/"]) };
+  const Text2 = _location(5624).Text;
+  intl2 = _location(1113).intl;
   items2[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttons, children: items3 };
-  const ButtonGroup = _location(6761).ButtonGroup;
-  const obj7 = { text: intl3.string(_location(1114).t.a4bgO0), onPress: callback };
-  const Button = _location(5629).Button;
-  intl3 = _location(1114).intl;
+  const ButtonGroup = _location(6767).ButtonGroup;
+  const obj7 = { text: intl3.string(_location(1113).t.a4bgO0), onPress: callback };
+  const Button = _location(5634).Button;
+  intl3 = _location(1113).intl;
   items3 = [closure_7(Button, obj7), ];
-  const obj8 = { text: intl4.string(_location(1114).t["/L3kom"]), onPress: callback1, variant: "secondary" };
-  const Button2 = _location(5629).Button;
-  intl4 = _location(1114).intl;
+  const obj8 = { text: intl4.string(_location(1113).t["/L3kom"]), onPress: callback1, variant: "secondary" };
+  const Button2 = _location(5634).Button;
+  intl4 = _location(1113).intl;
   items3[1] = closure_7(Button2, obj8);
   items2[3] = closure_8(ButtonGroup, obj6);
   return closure_7(BottomSheet, obj);

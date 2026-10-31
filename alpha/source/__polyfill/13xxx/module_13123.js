@@ -1,94 +1,48 @@
 // Module ID: 13123
 // Function ID: 13124
-// Dependencies: [377, 41, 42]
+// Dependencies: []
+// Exports: parseCookie
 
 // Module 13123
-import _readOnlyError from "_readOnlyError" /* 377 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
 
-class LRUMap {
-  constructor(_maxSize) {
-    _classCallCheck(this, LRUMap);
-    this._maxSize = _maxSize;
-    this._cache = new Map();
-    new Map();
+export function parseCookie(arr) {
+  const obj = {};
+  let num = 0;
+  if (0 < arr.length) {
+    const index = arr.indexOf("=", num);
+    if (-1 !== index) {
+      let length = arr.indexOf(";", num);
+      if (-1 === length) {
+        length = arr.length;
+      } else {
+        let sum;
+        if (length < index) {
+          sum = arr.lastIndexOf(";", index - 1) + 1;
+        }
+        num = sum;
+      }
+      const str = arr.slice(num, index);
+      const trimmed = str.trim();
+      if (undefined === obj[trimmed]) {
+        const str2 = arr.slice(index + 1, length);
+        const trimmed1 = str2.trim();
+        let substr = trimmed1;
+        if (34 === trimmed1.charCodeAt(0)) {
+          substr = trimmed1.slice(1, -1);
+        }
+        try {
+          let decodeURIComponentResult = substr;
+          if (-1 !== substr.indexOf("%")) {
+            const _decodeURIComponent = decodeURIComponent;
+            decodeURIComponentResult = decodeURIComponent(substr);
+          }
+          obj[trimmed] = decodeURIComponentResult;
+        } catch (err) {
+          obj[trimmed] = substr;
+        }
+      }
+      sum = length + 1;
+    }
   }
+  return obj;
 }
-let items = [, , , , , , ];
-const obj = {
-  key: "size",
-  get() {
-    return this._cache.size;
-  }
-};
-items[0] = obj;
-items[1] = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (undefined !== value) {
-      const _cache2 = self._cache;
-      _cache2.delete(arg0);
-      const _cache3 = self._cache;
-      const result = _cache3.set(arg0, value);
-      return value;
-    }
-  }
-};
-items[2] = {
-  key: "set",
-  value: function set(arg0, arg1) {
-    let _cache;
-    let _cache2;
-    const self = this;
-    if (this._cache.size >= this._maxSize) {
-      ({ _cache, _cache: _cache2 } = self);
-      const _delete = _cache.delete;
-      const iter = _cache2.keys();
-      _delete(iter.next().value);
-    }
-    const _cache3 = self._cache;
-    const result = _cache3.set(arg0, arg1);
-  }
-};
-items[3] = {
-  key: "remove",
-  value: function remove(arg0) {
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (value) {
-      const _cache2 = this._cache;
-      _cache2.delete(arg0);
-    }
-    return value;
-  }
-};
-items[4] = {
-  key: "clear",
-  value: function clear() {
-    const _cache = this._cache;
-    _cache.clear();
-  }
-};
-items[5] = {
-  key: "keys",
-  value: function keys() {
-    const _cache = this._cache;
-    return Array.from(_cache.keys());
-  }
-};
-items[6] = {
-  key: "values",
-  value: function values() {
-    const items = [];
-    const _cache = this._cache;
-    const item = _cache.forEach((item) => items.push(item));
-    return items;
-  }
-};
-const LRUMap_export = _createClass(LRUMap, items);
-
-export { LRUMap_export as LRUMap };

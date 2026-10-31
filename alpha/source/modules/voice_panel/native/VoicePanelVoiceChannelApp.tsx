@@ -1,27 +1,27 @@
-// Module ID: 19221
-// Function ID: 19222
+// Module ID: 19273
+// Function ID: 19274
 // Name: VoicePanelVoiceChannelApp
-// Dependencies: [19, 17, 4858, 6869, 11202, 21, 5009, 575, 11203, 5591, 1892, 19148, 5090, 19222, 7235, 19223, 19095, 19183, 504, 2]
+// Dependencies: [19, 17, 4863, 6875, 11221, 21, 5014, 575, 11222, 5596, 1891, 19199, 5095, 19274, 7241, 19275, 19144, 19235, 504, 2]
 // Exports: default
 
-// Module 19221 (VoicePanelVoiceChannelApp)
+// Module 19273 (VoicePanelVoiceChannelApp)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11203 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19095 */;
-import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19183 */;
-import voiceChannelAppLayerLayout from "voiceChannelAppLayerLayout" /* 19222 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19144 */;
+import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19235 */;
+import voiceChannelAppLayerLayout from "voiceChannelAppLayerLayout" /* 19274 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import VoicePanelStore from "VoicePanelStore" /* 6869 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import VoicePanelStore from "VoicePanelStore" /* 6875 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(5090);
+const ReanimatedRexport = tmp(5095);
 function VoiceChannelAppLayer(channel) {
   channel = channel.channel;
   let controlsSpecs;

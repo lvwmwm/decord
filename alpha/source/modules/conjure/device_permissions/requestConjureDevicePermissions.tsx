@@ -1,17 +1,17 @@
-// Module ID: 10932
-// Function ID: 10933
+// Module ID: 10951
+// Function ID: 10952
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2040, 6840, 10933, 6841, 1090, 10934, 5767, 10935, 572, 2]
+// Dependencies: [5, 2038, 6846, 10952, 6847, 1089, 10953, 5772, 10954, 572, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 10932 (requestConjureDevicePermissions)
-import DurationsDefault from "Durations" /* 1090 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10934 */;
+// Module 10951 (requestConjureDevicePermissions)
+import DurationsDefault from "Durations" /* 1089 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10953 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import FramesStore from "FramesStore" /* 6840 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10933 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10952 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;
@@ -47,7 +47,7 @@ let obj = function _requestConjureDevicePermissions() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let obj = function _requestConjureDevicePermissions() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {

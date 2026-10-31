@@ -1,23 +1,23 @@
-// Module ID: 9858
-// Function ID: 9859
+// Module ID: 9879
+// Function ID: 9880
 // Name: ConversationListScreen
-// Dependencies: [5, 32, 19, 17, 7760, 5650, 21, 5009, 575, 9859, 5619, 1114, 1501, 1626, 9827, 504, 11, 9828, 9831, 7288, 2]
+// Dependencies: [5, 32, 19, 17, 7767, 5655, 21, 5014, 575, 9880, 5624, 1113, 1500, 1625, 9848, 504, 11, 9849, 9852, 7294, 2]
 // Exports: default
 
-// Module 9858 (ConversationListScreen)
+// Module 9879 (ConversationListScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9831 */;
-import ConversationListItemDefault from "ConversationListItem" /* 9859 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9852 */;
+import ConversationListItemDefault from "ConversationListItem" /* 9880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7760 */;
-import ConversationConstants from "ConversationConstants" /* 5650 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7767 */;
+import ConversationConstants from "ConversationConstants" /* 5655 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -73,14 +73,14 @@ export default function ConversationListScreen() {
   let stateFromStores1;
   let tmp16;
   const tmp = channelId;
-  let obj = channelId(1501);
+  let obj = channelId(1500);
   const params = obj.useRoute().params;
   channelId = params.channelId;
   let guildId = params.guildId;
-  const bottom = guildId(1626)().bottom;
+  const bottom = guildId(1625)().bottom;
   let tmp3 = closure_14(bottom);
   dependencyMap = tmp3;
-  let obj2 = channelId(9827);
+  let obj2 = channelId(9848);
   const conversationBackoffRef = obj2.useConversationBackoffRef();
   let obj3 = react;
   const tmp5 = first(react.useState(false), 2);
@@ -130,7 +130,7 @@ export default function ConversationListScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -188,7 +188,7 @@ export default function ConversationListScreen() {
         current2.succeed();
         closure_1_5(false);
         ref = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp22) {
         if (0 === c2) {
           ref = 3;
@@ -260,7 +260,7 @@ export default function ConversationListScreen() {
   }, items9);
   obj8 = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp3.content, scrollIndicatorInsets: { bottom }, onEndReached: tmp16, ListEmptyComponent, ListFooterComponent: memo1, onViewableItemsChanged: callback1, viewabilityConfig };
   tmp16 = undefined;
-  FlashList = tmp(7288).FlashList;
+  FlashList = tmp(7294).FlashList;
   const tmp15 = memo;
   if (stateFromStores) {
     tmp16 = callback;

@@ -1,16 +1,16 @@
-// Module ID: 18791
-// Function ID: 18792
+// Module ID: 18834
+// Function ID: 18835
 // Name: useUserRowWithSubLabelHeight
-// Dependencies: [5591, 575, 11028, 5637, 12233, 18458, 2]
+// Dependencies: [5596, 575, 11047, 5642, 12271, 18501, 2]
 // Exports: getUserRowWithSubLabelHeight, useUserRowWithSubLabelHeight
 
-// Module 18791 (useUserRowWithSubLabelHeight)
+// Module 18834 (useUserRowWithSubLabelHeight)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5591 */;
-import useFontScale from "useFontScale" /* 5637 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12233 */;
-import ActionStatusSubLabel from "ActionStatusSubLabel" /* 18458 */;
+import useToken from "useToken" /* 5596 */;
+import useFontScale from "useFontScale" /* 5642 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
+import ActionStatusSubLabel from "ActionStatusSubLabel" /* 18501 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserRowWithSubLabelHeight.tsx");

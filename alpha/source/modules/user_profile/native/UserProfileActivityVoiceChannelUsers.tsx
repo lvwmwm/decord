@@ -1,16 +1,16 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14878
+// Function ID: 14879
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 5756, 21, 6847, 504, 6969, 6036, 1188, 11375, 1114, 2]
+// Dependencies: [19, 5761, 21, 6853, 504, 6975, 6041, 1187, 11411, 1113, 2]
 // Exports: default
 
-// Module 14840 (UserProfileActivityVoiceChannelUsers)
+// Module 14878 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1114 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11375 */;
+import intl2 from "intl" /* 1113 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11411 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
 import size from "module_2" /* 2 */;
 
 function UserRow(user) {
@@ -23,7 +23,7 @@ function UserRow(user) {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(6847);
+  let obj = user(6853);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [PresenceStore];
   const obj2 = user(504);
@@ -32,10 +32,10 @@ function UserRow(user) {
     return obj;
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const TableRow = user(6969).TableRow;
+  const TableRow = user(6975).TableRow;
   const obj4 = NicknameUtilsDefault;
-  ({ user, avatarDecoration, size: user(1188).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
-  const Avatar = user(1188).Avatar;
+  ({ user, avatarDecoration, size: user(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
+  const Avatar = user(1187).Avatar;
   return <TableRow onPress={onPress} label={obj4.getName(channel.guild_id, channel.id, user)} icon={null} start={start} end={end} />;
 }
 const jsx = Fragment.jsx;

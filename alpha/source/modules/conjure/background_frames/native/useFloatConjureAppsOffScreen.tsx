@@ -1,14 +1,14 @@
-// Module ID: 19068
-// Function ID: 19069
+// Module ID: 19117
+// Function ID: 19118
 // Name: useFloatConjureAppsOffScreen
-// Dependencies: [19, 18548, 18625, 504, 6843, 2]
+// Dependencies: [19, 18591, 18667, 504, 6849, 2]
 // Exports: default
 
-// Module 19068 (useFloatConjureAppsOffScreen)
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6843 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18625 */;
+// Module 19117 (useFloatConjureAppsOffScreen)
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6849 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18667 */;
 import react from "react" /* 19 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18548 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18591 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

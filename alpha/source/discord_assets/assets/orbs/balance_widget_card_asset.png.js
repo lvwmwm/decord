@@ -1,8 +1,8 @@
-// Module ID: 17646
-// Function ID: 17647
+// Module ID: 16899
+// Function ID: 16900
 // Dependencies: [2]
 
-// Module 17646
+// Module 16899
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/balance_widget_card_asset.png.js");

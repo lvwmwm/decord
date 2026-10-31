@@ -1,13 +1,13 @@
-// Module ID: 14975
-// Function ID: 14976
+// Module ID: 15012
+// Function ID: 15013
 // Name: HideFriendRequestNotesUtils
-// Dependencies: [4951, 4834, 8360, 504, 2]
+// Dependencies: [4956, 4839, 8368, 504, 2]
 // Exports: useFriendRequestNote, useHideFriendRequestNotes
 
-// Module 14975 (HideFriendRequestNotesUtils)
-import UserSettings from "UserSettings" /* 4834 */;
-import useUserIsTeen from "useUserIsTeen" /* 8360 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
+// Module 15012 (HideFriendRequestNotesUtils)
+import UserSettings from "UserSettings" /* 4839 */;
+import useUserIsTeen from "useUserIsTeen" /* 8368 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

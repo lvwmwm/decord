@@ -1,17 +1,17 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 18767
+// Function ID: 18768
 // Name: ThreadMemberListHooks
-// Dependencies: [19, 4915, 7438, 1083, 5588, 7445, 7443, 504, 1114, 2]
+// Dependencies: [19, 4920, 7444, 1083, 5593, 7451, 7449, 504, 1113, 2]
 // Exports: useThreadMemberListSections
 
-// Module 18725 (ThreadMemberListHooks)
+// Module 18767 (ThreadMemberListHooks)
 import Constants from "Constants" /* 1083 */;
-import intl3 from "intl" /* 1114 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7443 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7445 */;
+import intl3 from "intl" /* 1113 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7449 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7451 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7438 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

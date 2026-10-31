@@ -1,18 +1,18 @@
-// Module ID: 12393
-// Function ID: 12394
+// Module ID: 12431
+// Function ID: 12432
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 8200, 21, 5009, 575, 504, 5090, 1626, 5632, 671, 5582, 8990, 1114, 5724, 2]
+// Dependencies: [32, 19, 17, 8208, 21, 5014, 575, 504, 5095, 1625, 5637, 671, 5587, 8999, 1113, 5729, 2]
 
-// Module 12393 (MediaKeyboardFloatingSend)
+// Module 12431 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import spring from "spring" /* 5632 */;
+import spring from "spring" /* 5637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8200 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

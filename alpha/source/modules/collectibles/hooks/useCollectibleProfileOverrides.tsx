@@ -1,15 +1,15 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 15023
+// Function ID: 15024
 // Name: useCollectibleProfileOverrides
-// Dependencies: [19, 7718, 7719, 7720, 8734, 1988, 2]
+// Dependencies: [19, 7725, 7726, 7727, 8742, 1987, 2]
 // Exports: useCollectibleProfileOverrides
 
-// Module 14986 (useCollectibleProfileOverrides)
-import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7718 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7719 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7720 */;
-import useShopProductItems from "useShopProductItems" /* 8734 */;
+// Module 15023 (useCollectibleProfileOverrides)
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7725 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7727 */;
+import useShopProductItems from "useShopProductItems" /* 8742 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

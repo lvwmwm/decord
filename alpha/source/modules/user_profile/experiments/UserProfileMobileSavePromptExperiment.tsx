@@ -1,11 +1,11 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11407
+// Function ID: 11408
 // Name: UserProfileMobileSavePromptExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: getIsUserProfileMobileSavePromptEnabled
 
-// Module 11371 (UserProfileMobileSavePromptExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 11407 (UserProfileMobileSavePromptExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

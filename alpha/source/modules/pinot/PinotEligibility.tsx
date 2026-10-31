@@ -1,15 +1,15 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 9053
+// Function ID: 9054
 // Name: PinotEligibility
-// Dependencies: [11298, 1072, 11299, 1094, 4946, 2]
-// Exports: getPinotIneligibleReason, isChannelPinotPromotable, isPinotFeatureEnabled
+// Dependencies: [9036, 1072, 9054, 1093, 4951, 2]
+// Exports: everyoneHasAccess, getPinotIneligibleReason, isChannelPinotPromotable, isPinotFeatureEnabled
 
-// Module 11297 (PinotEligibility)
+// Module 9053 (PinotEligibility)
 import Constants from "Constants" /* 1072 */;
-import ChannelTypes from "ChannelTypes" /* 1094 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import PinotTypes from "PinotTypes" /* 11299 */;
-import PinotConstants from "PinotConstants" /* 11298 */;
+import ChannelTypes from "ChannelTypes" /* 1093 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import PinotTypes from "PinotTypes" /* 9054 */;
+import PinotConstants from "PinotConstants" /* 9036 */;
 import size from "module_2" /* 2 */;
 
 let PinotChannelFlags;
@@ -24,18 +24,19 @@ function isChannelPinotPromotableForFeature(id, guild_id, guildFeature) {
       if (set.has(guild_id.type)) {
         let str2 = "nsfw";
         if (!guild_id.isNSFW()) {
-          let tmp8 = "not_public";
           const obj = PermissionUtilsAll;
+          let canEveryoneRoleResult = obj.canEveryoneRole(Permissions.VIEW_CHANNEL, guild_id);
           const tmp5 = importAll;
           const tmp7 = Permissions;
-          if (obj.canEveryoneRole(Permissions.VIEW_CHANNEL, guild_id)) {
-            tmp8 = "not_public";
-            const tmp5Result = tmp5(4946);
-            if (tmp5Result.canEveryoneRole(tmp7.READ_MESSAGE_HISTORY, guild_id)) {
-              tmp8 = null;
-            }
+          if (canEveryoneRoleResult) {
+            const tmp5Result = tmp5(4951);
+            canEveryoneRoleResult = tmp5Result.canEveryoneRole(tmp7.READ_MESSAGE_HISTORY, guild_id);
           }
-          str2 = tmp8;
+          let tmp9 = "not_public";
+          if (canEveryoneRoleResult) {
+            tmp9 = null;
+          }
+          str2 = tmp9;
         }
         str = str2;
       }
@@ -68,25 +69,36 @@ export function getPinotIneligibleReason(type) {
   if (set.has(type.type)) {
     let str2 = "nsfw";
     if (!type.isNSFW()) {
-      let tmp4 = "not_public";
       const obj = PermissionUtilsAll;
+      let canEveryoneRoleResult = obj.canEveryoneRole(Permissions.VIEW_CHANNEL, type);
       const tmp = importAll;
       const tmp3 = Permissions;
-      if (obj.canEveryoneRole(Permissions.VIEW_CHANNEL, type)) {
-        tmp4 = "not_public";
-        const tmpResult = tmp(4946);
-        if (tmpResult.canEveryoneRole(tmp3.READ_MESSAGE_HISTORY, type)) {
-          tmp4 = null;
-        }
+      if (canEveryoneRoleResult) {
+        const tmpResult = tmp(4951);
+        canEveryoneRoleResult = tmpResult.canEveryoneRole(tmp3.READ_MESSAGE_HISTORY, type);
       }
-      str2 = tmp4;
+      let tmp5 = "not_public";
+      if (canEveryoneRoleResult) {
+        tmp5 = null;
+      }
+      str2 = tmp5;
     }
     str = str2;
   }
   return str;
 }
-export function isPinotFeatureEnabled(features, guildFeature) {
-  features = features.features;
+export function everyoneHasAccess(channel) {
+  const obj = PermissionUtilsAll;
+  let canEveryoneRoleResult = obj.canEveryoneRole(Permissions.VIEW_CHANNEL, channel);
+  const tmp3 = Permissions;
+  if (canEveryoneRoleResult) {
+    const tmpResult = PermissionUtilsAll;
+    canEveryoneRoleResult = tmpResult.canEveryoneRole(tmp3.READ_MESSAGE_HISTORY, channel);
+  }
+  return canEveryoneRoleResult;
+}
+export function isPinotFeatureEnabled(guild, guildFeature) {
+  const features = guild.features;
   return !features.has(guildFeature.guildFeature);
 }
 export { isChannelPinotPromotableForFeature };

@@ -1,37 +1,41 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17215
+// Function ID: 17216
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1384, 21, 5009, 575, 1114, 504, 6036, 1410, 7350, 5712, 5619, 1091, 1188, 7368, 2]
+// Dependencies: [19, 17, 1383, 21, 5014, 575, 1113, 504, 6041, 1409, 7356, 5717, 5624, 1090, 1187, 7374, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 17158 (GuildRoleSubscriptionMemberPreview)
+// Module 17215 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import utils_ColorUtilsAll from "utils/ColorUtils" /* 1091 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import RoleIconUtils from "RoleIconUtils" /* 7350 */;
-import RoleIconDefault from "RoleIcon" /* 7368 */;
+import utils_ColorUtilsAll from "utils/ColorUtils" /* 1090 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import RoleIconUtils from "RoleIconUtils" /* 7356 */;
+import RoleIconDefault from "RoleIcon" /* 7374 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let obj3;
 const View = react_native.View;
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let obj = { container: obj2, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
-obj2 = { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_9 = createStyles.createStyles(obj);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, avatar: { width: 40, height: 40, borderRadius: 20 }, content: obj3, contextRow: { flexDirection: "row", alignItems: "center" } };
+obj2 = { flexDirection: "row", padding: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { marginStart: nativeDefault.space.PX_16 };
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
 
 export function GuildRoleSubscriptionMemberPreview(content) {
@@ -84,7 +88,7 @@ export function GuildRoleSubscriptionMemberPreview(content) {
     const obj5 = { style: tmp3.contextRow, children: items3 };
     const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
     obj7 = { color: obj11.int2hex(color) };
-    const Text = tmp4(5619).Text;
+    const Text = tmp4(5624).Text;
     obj11 = utils_ColorUtilsAll;
     items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;

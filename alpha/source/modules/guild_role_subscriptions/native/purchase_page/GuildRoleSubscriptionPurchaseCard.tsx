@@ -1,27 +1,27 @@
-// Module ID: 18572
-// Function ID: 18573
+// Module ID: 18615
+// Function ID: 18616
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5009, 575, 7142, 1626, 17147, 18567, 5267, 5619, 1188, 18573, 5270, 1114, 17157, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 7148, 1625, 17203, 18610, 5272, 5624, 1187, 18616, 5275, 1113, 17213, 2]
 // Exports: default
 
-// Module 18572 (GuildRoleSubscriptionPurchaseCard)
+// Module 18615 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
-import BottomSheetModal from "BottomSheetModal" /* 5270 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17147 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17157 */;
-import Elements from "Elements" /* 18567 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 18573 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17203 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17213 */;
+import Elements from "Elements" /* 18610 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 18616 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;

@@ -1,23 +1,23 @@
-// Module ID: 9064
-// Function ID: 9065
+// Module ID: 9083
+// Function ID: 9084
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 4858, 1072, 21, 5009, 575, 1376, 504, 5647, 8963, 9065, 5619, 1114, 9066, 1188, 9067, 8959, 7286, 8972, 5629, 8960, 5954, 9068, 1995, 2]
+// Dependencies: [19, 17, 4863, 1072, 21, 5014, 575, 1375, 504, 5652, 8972, 9084, 5624, 1113, 9085, 1187, 9086, 8968, 7292, 8981, 5634, 8969, 5959, 9087, 1994, 2]
 // Exports: default
 
-// Module 9064 (EditGuildEventPreview)
+// Module 9083 (EditGuildEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8959 */;
-import ScheduleUtils from "ScheduleUtils" /* 8960 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8968 */;
+import ScheduleUtils from "ScheduleUtils" /* 8969 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp9;
-const guildEventDetailsParser = tmp9(9067);
+const guildEventDetailsParser = tmp9(9086);
 function PreviewBody(event) {
   let channelContainer;
   let closure_2;
@@ -54,7 +54,7 @@ function PreviewBody(event) {
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
   const tmp5 = channel_id;
-  const tmp6 = channel_id(5647)(stateFromStores);
+  const tmp6 = channel_id(5652)(stateFromStores);
   dependencyMap = tmp6;
   let obj2 = require("EntityUtils");
   let locationFromEvent = obj2.getLocationFromEvent(event);
@@ -63,29 +63,29 @@ function PreviewBody(event) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  let tmp2Result = tmp2(9065);
+  let tmp2Result = tmp2(9084);
   eventLocationIconSource = tmp2Result.getEventLocationIconSource(event, stateFromStores, true);
   let obj3 = { style: tmp.header, children: items2 };
   let tmp9 = closure_7;
   let tmp11 = closure_6;
-  const obj4 = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1114).t.yBsFE3) };
-  let Text = tmp2(5619).Text;
-  intl = tmp2(1114).intl;
+  const obj4 = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t.yBsFE3) };
+  let Text = tmp2(5624).Text;
+  intl = tmp2(1113).intl;
   items2 = [closure_6(Text, obj4), ];
   const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "text-sm/medium", color: "text-default", children: formatResult };
   formatToPlainStringResult = undefined;
-  const Text2 = tmp2(5619).Text;
+  const Text2 = tmp2(5624).Text;
   const tmp10 = locationFromEvent;
   if (null != stateFromStores) {
-    const intl2 = tmp2(1114).intl;
+    const intl2 = tmp2(1113).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj6 = { channelName: tmp5(9066)(obj7) };
-    const sxcQPE = tmp2(1114).t.sxcQPE;
+    const obj6 = { channelName: tmp5(9085)(obj7) };
+    const sxcQPE = tmp2(1113).t.sxcQPE;
     obj7 = { channel: stateFromStores };
     formatToPlainStringResult = formatToPlainString(sxcQPE, obj6);
   }
   if (null != stateFromStores) {
-    const intl4 = tmp2(1114).intl;
+    const intl4 = tmp2(1113).intl;
     const obj8 = {
       channelName: tmp8,
       channelHook() {
@@ -120,10 +120,10 @@ function PreviewBody(event) {
           return tmp(Fragment, obj3, str);
         }
     };
-    formatResult = intl4.format(tmp2(1114).t.f55NX0, obj8);
+    formatResult = intl4.format(tmp2(1113).t.f55NX0, obj8);
   } else {
-    const intl3 = tmp2(1114).intl;
-    formatResult = intl3.string(tmp2(1114).t.KDPFi9);
+    const intl3 = tmp2(1113).intl;
+    formatResult = intl3.string(tmp2(1113).t.KDPFi9);
   }
   items2[1] = tmp11(Text2, obj5);
   return tmp9(tmp10, obj3);

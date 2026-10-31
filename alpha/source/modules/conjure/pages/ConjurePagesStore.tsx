@@ -1,9 +1,9 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 11528
+// Function ID: 11529
 // Name: ConjurePagesStore
 // Dependencies: [504, 572, 2]
 
-// Module 11494 (ConjurePagesStore)
+// Module 11528 (ConjurePagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -12,6 +12,7 @@ let closure_0 = { chatOpen: true, debugOpen: false, previewSelection: null, chat
 let c1 = null;
 let c2 = false;
 let c3 = "";
+let c4 = null;
 const map = new Map();
 const map1 = new Map();
 const set = new Set();
@@ -29,6 +30,9 @@ class ConjurePagesStore extends Store {
       tmp = c1;
     }
     return tmp;
+  }
+  getReturnRoute() {
+    return c4;
   }
   getHomePrompt() {
     return c3;
@@ -95,6 +99,10 @@ let obj = {
     }
     return false;
   },
+  CONJURE_PAGES_RETURN_ROUTE_SAVE: function handleReturnRouteSave(route) {
+    route = route.route;
+    return false;
+  },
   CONJURE_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {
     projectId = projectId.projectId;
     set.add(projectId);
@@ -110,6 +118,7 @@ let obj = {
     c1 = null;
     c2 = false;
     c3 = "";
+    c4 = null;
     map.clear();
     map1.clear();
     set.clear();

@@ -1,19 +1,19 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 18146
+// Function ID: 18147
 // Name: MessagesFlashList
-// Dependencies: [32, 19, 21, 18060, 18032, 18099, 18100, 18043, 18042, 18046, 18061, 18098, 18101, 7288, 2]
+// Dependencies: [32, 19, 21, 18103, 18075, 18142, 18143, 18086, 18085, 18089, 18104, 18141, 18144, 7294, 2]
 
-// Module 18103 (MessagesFlashList)
+// Module 18146 (MessagesFlashList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18032 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18042 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18043 */;
-import useMessagesData from "useMessagesData" /* 18046 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 18061 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 18098 */;
-import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 18099 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 18100 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 18101 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18075 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18085 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18086 */;
+import useMessagesData from "useMessagesData" /* 18089 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 18104 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 18141 */;
+import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 18142 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 18143 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 18144 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 5677
-// Function ID: 5678
+// Module ID: 5682
+// Function ID: 5683
 // Name: getPlatform
-// Dependencies: [2022, 2]
+// Dependencies: [2020, 2]
 // Exports: default
 
-// Module 5677 (getPlatform)
-import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2022 */;
+// Module 5682 (getPlatform)
+import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2020 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getPlatform.tsx");

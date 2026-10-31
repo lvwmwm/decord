@@ -1,12 +1,12 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15207
+// Function ID: 15208
 // Name: Timer
-// Dependencies: [19, 21, 12, 1188, 2]
+// Dependencies: [19, 21, 12, 1187, 2]
 
-// Module 15168 (Timer)
+// Module 15207 (Timer)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1187 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 1403
-// Function ID: 1404
+// Module ID: 1402
+// Function ID: 1403
 // Name: DisplayNameEffect
 // Dependencies: [2]
 
-// Module 1403 (DisplayNameEffect)
+// Module 1402 (DisplayNameEffect)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/DisplayNameEffect.tsx");

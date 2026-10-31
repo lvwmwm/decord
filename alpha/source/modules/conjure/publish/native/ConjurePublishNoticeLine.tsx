@@ -1,18 +1,18 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 12656
+// Function ID: 12657
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 12615, 12622, 12623, 5619, 1114, 12541, 7516, 12624, 3865, 5253, 12625, 2]
+// Dependencies: [19, 21, 12650, 12657, 12658, 5624, 1113, 12576, 7522, 12659, 3868, 5258, 12660, 2]
 // Exports: default
 
-// Module 12621 (ConjurePublishNoticeLine)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import transitionToGuild from "transitionToGuild" /* 7516 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12615 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12622 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12623 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12624 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12625 */;
+// Module 12656 (ConjurePublishNoticeLine)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import transitionToGuild from "transitionToGuild" /* 7522 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12650 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12657 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12658 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12659 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12660 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ function PatchNotesLink(projectId) {
     const tmp5 = closure_4;
     const tmp6 = closure_5;
     if ("sent" === tmp3.state) {
-      const intl2 = projectId(1114).intl;
+      const intl2 = projectId(1113).intl;
       let obj2 = {
         sentHook(children, arg1) {
               let sent;
@@ -54,10 +54,10 @@ function PatchNotesLink(projectId) {
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp(3865)["35VEu5"], obj2);
+      formatResult = intl2.format(tmp(3868)["35VEu5"], obj2);
     } else {
       let tmp7 = projectId;
-      const intl = projectId(1114).intl;
+      const intl = projectId(1113).intl;
       let obj = {
         onSend() {
               let obj3;
@@ -75,7 +75,7 @@ function PatchNotesLink(projectId) {
               }
             }
       };
-      formatResult = intl.format(tmp(3865)["6/zJpD"], obj);
+      formatResult = intl.format(tmp(3868)["6/zJpD"], obj);
     }
     let obj3 = { children: items };
     items = [" ", formatResult];
@@ -133,7 +133,7 @@ export default function ConjurePublishNoticeLine(arg0) {
   const children = [format(publishNoticeMessageResult, obj), ];
   if (null != tmp4.guildId) {
     const obj2 = { guildId: tmp4.guildId, update: notice.update };
-    tmp10 = closure_3(tmp6(12623).ConjureAutomodSettingsLink, obj2);
+    tmp10 = closure_3(tmp6(12658).ConjureAutomodSettingsLink, obj2);
   } else {
     tmp10 = null;
     if (!tmp4.automod) {

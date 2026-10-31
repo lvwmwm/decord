@@ -1,17 +1,17 @@
-// Module ID: 5612
-// Function ID: 5613
+// Module ID: 5617
+// Function ID: 5618
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 19, 5010, 21, 5009, 504, 5090, 5249, 5613, 2]
+// Dependencies: [32, 19, 5015, 21, 5014, 504, 5095, 5254, 5618, 2]
 // Exports: default
 
-// Module 5612 (FadeOutLottieAnimation)
+// Module 5617 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, fn, num2, obj1, obj5, obj6, str, tmp4, tmp6, tmp7, tmp8, tmp9;
@@ -44,7 +44,7 @@ export default function FadeOutLottieAnimation(onComplete) {
   const effect = setIsFadeOut.useEffect(() => {
     closure_2(false);
   }, []);
-  onComplete(5090);
+  onComplete(5095);
   class T {
     constructor() {
       tmp = closure_1;
@@ -88,13 +88,13 @@ export default function FadeOutLottieAnimation(onComplete) {
       return obj;
     }
   }
-  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(5249).withTiming, runOnJS: onComplete(5090).runOnJS, setIsFadeOut: tmp7 };
+  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(5254).withTiming, runOnJS: onComplete(5095).runOnJS, setIsFadeOut: tmp7 };
   T.__closure = obj2;
   T.__workletHash = 1137618554665;
   T.__initData = __initData;
   if (!isAnimationComplete) {
     let obj3 = { style: tmp12, children: null };
-    const View = isAnimationComplete(5090).View;
+    const View = isAnimationComplete(5095).View;
     let obj4 = {
       style: tmp2.content,
       speed: num,
@@ -106,7 +106,7 @@ export default function FadeOutLottieAnimation(onComplete) {
         }
     };
     num = 1;
-    isAnimationComplete(5613);
+    isAnimationComplete(5618);
     if (stateFromStores) {
       num = 0.5;
     }

@@ -1,20 +1,20 @@
-// Module ID: 18036
-// Function ID: 18037
+// Module ID: 18079
+// Function ID: 18080
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 5010, 502, 5756, 13679, 1384, 11027, 21, 5009, 575, 1188, 504, 10779, 2]
+// Dependencies: [19, 5015, 502, 5761, 13714, 1383, 11046, 21, 5014, 575, 1187, 504, 10799, 2]
 
-// Module 18036 (MessagesItemChannelAvatar)
+// Module 18079 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10779 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10799 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
-import TypingStore from "TypingStore" /* 13679 */;
-import UserStore from "UserStore" /* 1384 */;
-import createStyles from "createStyles" /* 5009 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import TypingStore from "TypingStore" /* 13714 */;
+import UserStore from "UserStore" /* 1383 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,7 +57,7 @@ const memoResult = react.memo(function MessagesItemChannelAvatar(channel) {
   }
   const tmpResult = tmp(muted);
   let tmp3 = channel;
-  const REFRESH_MEDIUM_32 = channel(1188).AvatarSizes.REFRESH_MEDIUM_32;
+  const REFRESH_MEDIUM_32 = channel(1187).AvatarSizes.REFRESH_MEDIUM_32;
   dependencyMap = AuthenticationStore.getId();
   let obj = channel(504);
   const items = [TypingStore];
@@ -118,8 +118,8 @@ const memoResult = react.memo(function MessagesItemChannelAvatar(channel) {
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: true };
-      const Avatar = tmp3(1188).Avatar;
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: false };
+      const Avatar = tmp3(1187).Avatar;
       tmp12 = null;
       const tmp11 = jsx;
       if (!stateFromStores2.isSystemUser()) {

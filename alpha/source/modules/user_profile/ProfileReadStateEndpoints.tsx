@@ -1,9 +1,9 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14997
+// Function ID: 14998
 // Name: ProfileReadStateEndpoints
 // Dependencies: [2]
 
-// Module 14960 (ProfileReadStateEndpoints)
+// Module 14997 (ProfileReadStateEndpoints)
 import size from "module_2" /* 2 */;
 
 const obj = {

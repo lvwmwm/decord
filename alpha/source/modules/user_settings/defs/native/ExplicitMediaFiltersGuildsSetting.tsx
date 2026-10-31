@@ -1,19 +1,19 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16721
+// Function ID: 16722
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [8424, 8360, 16666, 16674, 8679, 7464, 1114, 16675, 1197, 11505, 2]
+// Dependencies: [8432, 8368, 16708, 16716, 8687, 7470, 1113, 16717, 1196, 11539, 2]
 
-// Module 16679 (ExplicitMediaFiltersGuildsSetting)
-import intl4 from "intl" /* 1114 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7464 */;
-import useUserIsTeen from "useUserIsTeen" /* 8360 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8679 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16666 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16674 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16675 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+// Module 16721 (ExplicitMediaFiltersGuildsSetting)
+import intl4 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7470 */;
+import useUserIsTeen from "useUserIsTeen" /* 8368 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8687 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16708 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16716 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16717 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

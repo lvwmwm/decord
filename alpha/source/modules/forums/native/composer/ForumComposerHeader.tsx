@@ -1,22 +1,22 @@
-// Module ID: 10208
-// Function ID: 10209
+// Module ID: 10228
+// Function ID: 10229
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 5009, 575, 5647, 6974, 1114, 7048, 8652, 5619, 8639, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5652, 6980, 1113, 7054, 8660, 5624, 8647, 2]
 // Exports: default
 
-// Module 10208 (ForumComposerHeader)
+// Module 10228 (ForumComposerHeader)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useChannelNameDefault from "useChannelName" /* 5647 */;
-import Pressables from "Pressables" /* 6974 */;
-import XSmallIcon from "XSmallIcon" /* 7048 */;
-import BookCheckIcon from "BookCheckIcon" /* 8639 */;
-import ForumIcon from "ForumIcon" /* 8652 */;
+import intl4 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import Pressables from "Pressables" /* 6980 */;
+import XSmallIcon from "XSmallIcon" /* 7054 */;
+import BookCheckIcon from "BookCheckIcon" /* 8647 */;
+import ForumIcon from "ForumIcon" /* 8660 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -72,8 +72,8 @@ export default function ForumComposerHeader(height) {
   const obj4 = { style: tmp.headerBarText, children: items2 };
   const Text = Text_Text.Text;
   if ("" === title) {
-    const intl2 = tmp7(1114).intl;
-    title = intl2.string(tmp7(1114).t["7EjFCk"]);
+    const intl2 = tmp7(1113).intl;
+    title = intl2.string(tmp7(1113).t["7EjFCk"]);
   }
   items2 = [hasOwnProperty(Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: tmp3 })];
   items1[1] = metroRequire(React3, obj4);
@@ -85,8 +85,8 @@ export default function ForumComposerHeader(height) {
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(6974).PressableOpacity;
-    intl3 = tmp7(1114).intl;
+    const PressableOpacity2 = tmp7(6980).PressableOpacity;
+    intl3 = tmp7(1113).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }
   items[2] = tmp6Result;

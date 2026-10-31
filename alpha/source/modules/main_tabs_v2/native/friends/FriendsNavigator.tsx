@@ -1,25 +1,25 @@
-// Module ID: 18778
-// Function ID: 18779
+// Module ID: 18821
+// Function ID: 18822
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 9835, 5009, 575, 9794, 9791, 14121, 1114, 7647, 7163, 18779, 18785, 18788, 18789, 18790, 18801, 18802, 18803, 18805, 18808, 18809, 5189, 1626, 7106, 4966, 5075, 2]
+// Dependencies: [19, 17, 21, 9856, 5014, 575, 9815, 9812, 14156, 1113, 7654, 7169, 18822, 18828, 18831, 18832, 18833, 18844, 18845, 18846, 18848, 18851, 18852, 5194, 1625, 7112, 4971, 5080, 2]
 // Exports: default
 
-// Module 18778 (FriendsNavigator)
+// Module 18821 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl10 from "intl" /* 1114 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import DeviceUtils from "DeviceUtils" /* 4966 */;
-import native from "native" /* 5075 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5189 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7106 */;
-import HeaderShared from "HeaderShared" /* 9791 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9794 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14121 */;
+import intl10 from "intl" /* 1113 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import DeviceUtils from "DeviceUtils" /* 4971 */;
+import native from "native" /* 5080 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
+import HeaderShared from "HeaderShared" /* 9812 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9815 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14156 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9835 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import NativeStackView from "NativeStackView" /* 9856 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

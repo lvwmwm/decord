@@ -1,20 +1,20 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13305
+// Function ID: 13306
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 7986, 7962, 1072, 21, 5009, 504, 13263, 13271, 1114, 13269, 13272, 13288, 13289, 5619, 2]
+// Dependencies: [19, 17, 7994, 7970, 1072, 21, 5014, 504, 13298, 13306, 1113, 13304, 13307, 13323, 13324, 5624, 2]
 // Exports: default
 
-// Module 13270 (AppealIngestionSpeedBump)
+// Module 13305 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 13272 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 13288 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13289 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 13307 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 13323 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13324 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7986 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,11 +75,11 @@ export default function AppealIngestionSpeedBump(arg0) {
   if (flagged_content == null) {
     flagged_content = [];
   }
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1113).intl;
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1113).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(13269).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(13304).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };
@@ -101,7 +101,7 @@ export default function AppealIngestionSpeedBump(arg0) {
         }
     };
     const tmp14Result = AppealIngestionExternalLinkDefault;
-    intl3 = tmp2(1114).intl;
+    intl3 = tmp2(1113).intl;
     tmp10Result3 = tmp10(tmp14Result, obj5);
   }
   items2[2] = tmp10Result3;
@@ -117,7 +117,7 @@ export default function AppealIngestionSpeedBump(arg0) {
         }
     };
     const tmp14Result4 = AppealIngestionExternalLinkDefault;
-    intl4 = tmp2(1114).intl;
+    intl4 = tmp2(1113).intl;
     isSpam = tmp10(tmp14Result4, obj6);
   }
   items2[3] = isSpam;
@@ -130,7 +130,7 @@ export default function AppealIngestionSpeedBump(arg0) {
         }
     };
     const tmp14Result5 = AppealIngestionExternalLinkDefault;
-    intl5 = tmp2(1114).intl;
+    intl5 = tmp2(1113).intl;
     isDeveloperClassification = tmp10(tmp14Result5, obj7);
   }
   items2[4] = isDeveloperClassification;
@@ -144,14 +144,14 @@ export default function AppealIngestionSpeedBump(arg0) {
         }
     };
     const tmp14Result6 = AppealIngestionExternalLinkDefault;
-    intl6 = tmp2(1114).intl;
+    intl6 = tmp2(1113).intl;
     tmp10Result4 = tmp10(tmp14Result6, obj8);
   }
   items2[5] = tmp10Result4;
   if (isDsaEligible) {
     const obj9 = { variant: "text-xs/normal", children: intl7.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(5619).Text;
-    intl7 = tmp2(1114).intl;
+    const Text = tmp2(5624).Text;
+    intl7 = tmp2(1113).intl;
     isDsaEligible = tmp10(Text, obj9);
   }
   const obj10 = { children: items1 };

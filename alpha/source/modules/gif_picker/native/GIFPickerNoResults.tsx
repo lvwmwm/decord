@@ -1,18 +1,18 @@
-// Module ID: 10236
-// Function ID: 10237
+// Module ID: 10256
+// Function ID: 10257
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1072, 21, 5009, 575, 10220, 10013, 1114, 10017, 5270, 1188, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 10240, 10034, 1113, 10038, 5275, 1187, 2]
 
-// Module 10236 (GIFPickerNoResults)
+// Module 10256 (GIFPickerNoResults)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import SearchEmpty from "SearchEmpty" /* 10013 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10017 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10220 */;
+import SearchEmpty from "SearchEmpty" /* 10034 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10038 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10240 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -36,16 +36,16 @@ const memoResult = react.memo(function GIFPickerNoResults(inActionSheet) {
   const obj = SearchEmpty;
   const searchEmptySource = obj.useSearchEmptySource();
   if (categoryType === GIFPickerResultTypes.FAVORITES) {
-    const intl2 = tmp4(1114).intl;
-    let stringResult = intl2.string(tmp4(1114).t.ZH4o6l);
+    const intl2 = tmp4(1113).intl;
+    let stringResult = intl2.string(tmp4(1113).t.ZH4o6l);
   } else {
-    const intl = tmp4(1114).intl;
-    stringResult = intl.string(tmp4(1114).t["5dX4UM"]);
+    const intl = tmp4(1113).intl;
+    stringResult = intl.string(tmp4(1113).t["5dX4UM"]);
   }
   const tmp4Result = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = tmp4Result.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5270).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5275).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

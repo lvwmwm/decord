@@ -1,10 +1,10 @@
-// Module ID: 17606
-// Function ID: 17607
+// Module ID: 17666
+// Function ID: 17667
 // Name: MFA
-// Dependencies: [5, 1283, 2]
+// Dependencies: [5, 1282, 2]
 // Exports: trySubmit
 
-// Module 17606 (MFA)
+// Module 17666 (MFA)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _finishMFACheck() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

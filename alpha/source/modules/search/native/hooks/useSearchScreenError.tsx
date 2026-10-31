@@ -1,16 +1,16 @@
-// Module ID: 18721
-// Function ID: 18722
+// Module ID: 18763
+// Function ID: 18764
 // Name: useSearchScreenError
-// Dependencies: [19, 6857, 13850, 9806, 504, 13843, 1114, 5707, 2]
+// Dependencies: [19, 6863, 13885, 9827, 504, 13878, 1113, 5712, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 18721 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
-import SearchUtils from "SearchUtils" /* 13843 */;
+// Module 18763 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
+import SearchUtils from "SearchUtils" /* 13878 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6857 */;
-import SearchQueryStore from "SearchQueryStore" /* 13850 */;
+import SearchMessageStore from "SearchMessageStore" /* 6863 */;
+import SearchQueryStore from "SearchQueryStore" /* 13885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,8 +76,8 @@ export function useMessageTabCountsErrorText(searchContext) {
         if (null != error) {
           let anyErrorMessage = error.getAnyErrorMessage();
           if (anyErrorMessage == null) {
-            const intl = tmp2(1114).intl;
-            anyErrorMessage = intl.string(tmp2(1114).t.uvDZBZ);
+            const intl = tmp2(1113).intl;
+            anyErrorMessage = intl.string(tmp2(1113).t.uvDZBZ);
           }
           tmp5 = anyErrorMessage;
         }

@@ -1,15 +1,15 @@
-// Module ID: 18133
-// Function ID: 18134
+// Module ID: 18176
+// Function ID: 18177
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 4912, 5762, 21, 504, 6041, 18132, 2]
+// Dependencies: [19, 4917, 5767, 21, 504, 6046, 18175, 2]
 // Exports: default
 
-// Module 18133 (RedesignVoiceUserSummary)
+// Module 18176 (RedesignVoiceUserSummary)
 import Fragment from "Fragment" /* 21 */;
-import ChannelUtils from "ChannelUtils" /* 6041 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

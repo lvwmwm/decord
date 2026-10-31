@@ -1,10 +1,10 @@
-// Module ID: 12381
-// Function ID: 12382
+// Module ID: 12419
+// Function ID: 12420
 // Name: useFocusHelper
-// Dependencies: [19, 38, 5607, 2]
+// Dependencies: [19, 38, 5612, 2]
 // Exports: default
 
-// Module 12381 (useFocusHelper)
+// Module 12419 (useFocusHelper)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

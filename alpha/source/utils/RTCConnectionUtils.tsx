@@ -1,10 +1,10 @@
-// Module ID: 11982
-// Function ID: 11983
+// Module ID: 12020
+// Function ID: 12021
 // Name: RTCConnectionUtils
-// Dependencies: [1072, 1114, 2]
+// Dependencies: [1072, 1113, 2]
 
-// Module 11982 (RTCConnectionUtils)
-import intl11 from "intl" /* 1114 */;
+// Module 12020 (RTCConnectionUtils)
+import intl11 from "intl" /* 1113 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14445
+// Function ID: 14446
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 5009, 575, 1626, 5619, 1114, 14408, 5629, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 1625, 5624, 1113, 14446, 5634, 2]
 // Exports: default
 
-// Module 14407 (GiftingSKUSelectScreen)
+// Module 14445 (GiftingSKUSelectScreen)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 14408 */;
+import intl4 from "intl" /* 1113 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 14446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

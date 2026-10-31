@@ -1,28 +1,29 @@
-// Module ID: 18616
-// Function ID: 18617
+// Module ID: 18658
+// Function ID: 18659
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 5009, 575, 1892, 5602, 12058, 18617, 18620, 12055, 12059, 7413, 5751, 12068, 12072, 18626, 18629, 1114, 6875, 5712, 1410, 5629, 5670, 18630, 9808, 6872, 18631, 11196, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1891, 5607, 12096, 18659, 18662, 12094, 12097, 7419, 5756, 12106, 12110, 18668, 18671, 1113, 6881, 5717, 1409, 11340, 5634, 5675, 18672, 9829, 6878, 18673, 11215, 2]
 // Exports: default
 
-// Module 18616 (AppChannel)
+// Module 18658 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import transitionToChannel from "transitionToChannel" /* 5751 */;
-import conjureDMAppChannel from "conjureDMAppChannel" /* 6872 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6875 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9808 */;
-import useChannelContentGate from "useChannelContentGate" /* 11196 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12058 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 18629 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 18630 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18631 */;
+import intl6 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import transitionToChannel from "transitionToChannel" /* 5756 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 6878 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9829 */;
+import useChannelContentGate from "useChannelContentGate" /* 11215 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11340 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12096 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 18671 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 18672 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18673 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -124,10 +125,12 @@ function ClosedAppChannel(arg0) {
   let applicationId;
   let intl;
   let name;
-  let obj10;
-  let obj3;
+  let obj15;
+  let obj4;
   let obj5;
+  let obj8;
   let onLaunch;
+  let tmp4Result;
   ({ applicationId, onLaunch } = arg0);
   const tmp = closure_7();
   const obj = ApplicationActionCreators;
@@ -137,24 +140,35 @@ function ClosedAppChannel(arg0) {
   if (data != null) {
     icon = data.icon;
   }
-  let tmp4Result = null;
   if (null != icon) {
-    const obj2 = { source: obj3.getApplicationIconSource(obj5), style: tmp.icon };
-    obj5 = { id: null, icon: null, size: 64 };
-    ({ id: obj4.id, icon: obj4.icon } = data);
-    const tmp8 = FastImageDefault;
-    obj3 = AvatarUtilsDefault;
-    tmp4Result = tmp4(tmp8, obj2);
+    const obj2 = { source: obj5.getApplicationIconSource(obj4), style: tmp.icon };
+    obj4 = { id: null, icon: null, size: 64 };
+    ({ id: obj6.id, icon: obj6.icon } = data);
+    const tmp11 = FastImageDefault;
+    obj5 = AvatarUtilsDefault;
+    tmp4Result = tmp4(tmp11, obj2);
+  } else {
+    let conjureProjectId;
+    if (data != null) {
+      conjureProjectId = data.conjureProjectId;
+    }
+    tmp4Result = null;
+    if (null != conjureProjectId) {
+      const obj7 = { style: tmp.icon, children: hasOwnProperty(ConjureAppIconTileDefault, obj8) };
+      obj8 = { applicationId: null, name: null, size: 64 };
+      ({ id: obj3.applicationId, name: obj3.name } = data);
+      tmp4Result = tmp4(View, obj7);
+    }
   }
-  const obj6 = { icon: tmp4Result, heading: name, action: hasOwnProperty(Button, obj10) };
+  const obj14 = { icon: tmp4Result, heading: name, action: hasOwnProperty(Button, obj15) };
   name = undefined;
   if (data != null) {
     name = data.name;
   }
-  obj10 = { text: intl.string(intl6.t.PPYvuv), onPress: onLaunch };
-  Button = tmp2(5629).Button;
-  intl = tmp2(1114).intl;
-  return hasOwnProperty(FrameSurfaceExplanation, obj6);
+  obj15 = { text: intl.string(intl6.t.PPYvuv), onPress: onLaunch };
+  Button = tmp2(5634).Button;
+  intl = tmp2(1113).intl;
+  return hasOwnProperty(FrameSurfaceExplanation, obj14);
 }
 function AppChannel(arg0) {
   let applicationId;
@@ -190,7 +204,7 @@ const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { icon: size };
-size = { width: 64, height: 64, borderRadius: nativeDefault.radii.lg };
+size = { width: 64, height: 64, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 let closure_7 = createStyles.createStyles(obj);
 createStyles = createStyles_mod;
 let closure_8 = createStyles.createStyles((paddingBottom) => {
@@ -218,9 +232,9 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(18629).FrameSurfaceExplanation;
-    intl = tmp(1114).intl;
-    intl2 = tmp(1114).intl;
+    const FrameSurfaceExplanation = tmp(18671).FrameSurfaceExplanation;
+    intl = tmp(1113).intl;
+    intl2 = tmp(1113).intl;
     result = hasOwnProperty(FrameSurfaceExplanation, obj2);
   } else {
     const obj3 = { applicationId: application_id, channel };

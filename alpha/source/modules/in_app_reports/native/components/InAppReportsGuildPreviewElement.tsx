@@ -1,20 +1,20 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15157
+// Function ID: 15158
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 5009, 575, 7142, 5006, 5619, 1114, 6951, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7148, 5011, 5624, 1113, 6957, 2]
 // Exports: default
 
-// Module 15118 (InAppReportsGuildPreviewElement)
+// Module 15157 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import ColorUtils from "ColorUtils" /* 5006 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import GuildIcon from "GuildIcon" /* 6951 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
+import intl3 from "intl" /* 1113 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -55,10 +55,10 @@ export default function GuildPreview(guild) {
   }
   const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
   if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1114).intl;
-    stringResult = intl2.string(tmp2(1114).t["0ox7Hq"]);
+    const intl2 = tmp2(1113).intl;
+    stringResult = intl2.string(tmp2(1113).t["0ox7Hq"]);
   } else {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const str = intl.string(intl3.t["0ox7Hq"]);
     stringResult = str.toUpperCase();
   }

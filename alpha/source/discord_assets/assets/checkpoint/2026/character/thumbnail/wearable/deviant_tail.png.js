@@ -1,8 +1,8 @@
-// Module ID: 6390
-// Function ID: 6391
+// Module ID: 6395
+// Function ID: 6396
 // Dependencies: [2]
 
-// Module 6390
+// Module 6395
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/deviant_tail.png.js");

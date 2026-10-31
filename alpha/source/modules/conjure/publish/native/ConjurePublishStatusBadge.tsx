@@ -1,18 +1,18 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12569
+// Function ID: 12570
 // Name: ConjurePublishStatusBadge
-// Dependencies: [19, 17, 21, 5009, 12533, 575, 5591, 5090, 5249, 12535, 2]
+// Dependencies: [19, 17, 21, 5014, 12568, 575, 5596, 5095, 5254, 12570, 2]
 // Exports: conjurePublishBadgeSize, default
 
-// Module 12534 (ConjurePublishStatusBadge)
+// Module 12569 (ConjurePublishStatusBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 12533 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 12568 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -22,9 +22,9 @@ let size;
 function ConjurePublishSpinner() {
   let sharedValue;
   const tmp = closure_6();
-  let obj = sharedValue(5591);
+  let obj = sharedValue(5596);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BRAND);
-  let obj2 = sharedValue(5090);
+  let obj2 = sharedValue(5095);
   sharedValue = obj2.useSharedValue(0);
   let items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -49,7 +49,7 @@ function ConjurePublishSpinner() {
   fn.__closure = { rotation: sharedValue };
   fn.__workletHash = 16804123436708;
   fn.__initData = __initData;
-  const obj3 = sharedValue(5090);
+  const obj3 = sharedValue(5095);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const items1 = [tmp.spinner, animatedStyle];
   View = ReanimatedRexportDefault.View;

@@ -1,12 +1,12 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17759
+// Function ID: 17760
 // Name: DesignSystemsButtonGroupSetting
-// Dependencies: [8424, 1072, 11505, 17716, 2]
+// Dependencies: [8432, 1072, 11539, 17760, 2]
 
-// Module 17715 (DesignSystemsButtonGroupSetting)
+// Module 17759 (DesignSystemsButtonGroupSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

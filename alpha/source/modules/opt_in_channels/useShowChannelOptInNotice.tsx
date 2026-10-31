@@ -1,13 +1,13 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11357
+// Function ID: 11358
 // Name: useShowChannelOptInNotice
-// Dependencies: [6769, 1072, 4865, 6879, 504, 7391, 2]
+// Dependencies: [6775, 1072, 4870, 6885, 504, 7397, 2]
 // Exports: default
 
-// Module 11321 (useShowChannelOptInNotice)
+// Module 11357 (useShowChannelOptInNotice)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4865 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,8 +34,8 @@ export default function useShowChannelOptInNotice(getGuildId) {
     return result;
   });
   let guild_id;
-  const useCanSeeOnboardingHome = tmp(7391).useCanSeeOnboardingHome;
-  tmp(7391);
+  const useCanSeeOnboardingHome = tmp(7397).useCanSeeOnboardingHome;
+  tmp(7397);
   if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
   }

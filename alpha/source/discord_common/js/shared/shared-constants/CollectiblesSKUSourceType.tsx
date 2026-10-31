@@ -1,9 +1,9 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14821
+// Function ID: 14822
 // Name: CollectiblesSKUSourceType
 // Dependencies: [2]
 
-// Module 14783 (CollectiblesSKUSourceType)
+// Module 14821 (CollectiblesSKUSourceType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesSKUSourceType.tsx");

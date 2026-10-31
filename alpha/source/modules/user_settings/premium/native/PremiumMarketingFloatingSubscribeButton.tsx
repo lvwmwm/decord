@@ -1,19 +1,19 @@
-// Module ID: 15340
-// Function ID: 15341
+// Module ID: 15379
+// Function ID: 15380
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5010, 1072, 21, 5009, 575, 1626, 504, 15338, 7345, 671, 5090, 5249, 5582, 10270, 2]
+// Dependencies: [19, 17, 5015, 1072, 21, 5014, 575, 1625, 504, 15377, 7351, 671, 5095, 5254, 5587, 10290, 2]
 // Exports: default
 
-// Module 15340 (PremiumMarketingFloatingSubscribeButton)
+// Module 15379 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import timing from "timing" /* 5249 */;
+import timing from "timing" /* 5254 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -75,7 +75,7 @@ export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
         num3 = 0;
       }
       const obj2 = { opacity: withTiming(num, { duration: num3 }), transform: items };
-      const withTiming2 = tmp(5249).withTiming;
+      const withTiming2 = tmp(5254).withTiming;
       let num4 = 12;
       timing;
       if (obj.get()) {

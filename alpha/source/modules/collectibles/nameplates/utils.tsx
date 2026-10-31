@@ -1,15 +1,15 @@
-// Module ID: 1985
-// Function ID: 1986
+// Module ID: 1984
+// Function ID: 1985
 // Name: utils
-// Dependencies: [1986, 1083, 1989, 1991, 1114, 2]
+// Dependencies: [1985, 1083, 1988, 1990, 1113, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1985 (utils)
+// Module 1984 (utils)
 import Constants from "Constants" /* 1083 */;
-import intl6 from "intl" /* 1114 */;
-import NameplateRecord from "NameplateRecord" /* 1986 */;
-import nameplates_constants from "nameplates/constants" /* 1989 */;
-import _modDef1991 from "module_1991" /* 1991 */;
+import intl6 from "intl" /* 1113 */;
+import NameplateRecord from "NameplateRecord" /* 1985 */;
+import nameplates_constants from "nameplates/constants" /* 1988 */;
+import _modDef1990 from "module_1990" /* 1990 */;
 import size_mod from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -26,7 +26,7 @@ export function getNameplateData(nameplate) {
     INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[nameplate.palette];
     const tmp2 = require;
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1989).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1988).INVALID_NAMEPLATE_PALETTE;
     }
     tmp = obj;
   }
@@ -48,7 +48,7 @@ export function getNameplateDataFromProductRecord(product) {
         INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[palette];
         const tmp2 = require;
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1989).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1988).INVALID_NAMEPLATE_PALETTE;
         }
         tmp = obj;
       }
@@ -105,9 +105,9 @@ export function getNameplatePalette(arg0) {
   return INVALID_NAMEPLATE_PALETTE;
 }
 export function parseFirstFrame(arg0) {
-  const decoder = _modDef1991;
+  const decoder = _modDef1990;
   size = decoder.decode(arg0);
-  const obj = _modDef1991;
+  const obj = _modDef1990;
   const first = obj.toRGBA8(size)[0];
   const element = <canvas />;
   ({ width: obj2.width, height: obj2.height } = size);

@@ -1,23 +1,23 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14478
+// Function ID: 14479
 // Name: PremiumGiftPurchaseSuccess
-// Dependencies: [19, 17, 6890, 1386, 1072, 21, 5009, 575, 10542, 1498, 10590, 6438, 10539, 8922, 5629, 1114, 2048, 7352, 5706, 10677, 5619, 8983, 5727, 2]
+// Dependencies: [19, 17, 6896, 1385, 1072, 21, 5014, 575, 10562, 1497, 10610, 6444, 10559, 8931, 5634, 1113, 2047, 7358, 5711, 10697, 5624, 8992, 5732, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 14440 (PremiumGiftPurchaseSuccess)
+// Module 14478 (PremiumGiftPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6438 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import showShareActionSheet from "showShareActionSheet" /* 8922 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10539 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6444 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import showShareActionSheet from "showShareActionSheet" /* 8931 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10559 */;
 import react from "react" /* 19 */;
-import SKUStore from "SKUStore" /* 6890 */;
+import SKUStore from "SKUStore" /* 6896 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -58,10 +58,10 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   let subscriptionPlanId;
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   let tmp = closure_11();
-  let obj = giftCodeRecord(10542);
+  let obj = giftCodeRecord(10562);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ giftStyle, premiumType, planInterval } = nativeGiftContext);
-  let obj2 = giftCodeRecord(6438);
+  let obj2 = giftCodeRecord(6444);
   const giftCodeURL = obj2.getGiftCodeURL(giftCodeRecord.code);
   if (null != giftCodeRecord.giftStyle) {
     giftStyle = giftCodeRecord.giftStyle;
@@ -69,16 +69,16 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   if (null != giftCodeRecord.subscriptionPlanId) {
     subscriptionPlanId = giftCodeRecord.subscriptionPlanId;
   } else {
-    const tmp2Result = giftCodeRecord(2048);
+    const tmp2Result = giftCodeRecord(2047);
     subscriptionPlanId = tmp2Result.getPlanIdForPremiumType(premiumType, planInterval);
   }
-  const obj4 = giftCodeURL(2048);
+  const obj4 = giftCodeURL(2047);
   const tierDisplayNameByPlanId = obj4.getTierDisplayNameByPlanId(subscriptionPlanId);
   const items = [giftCodeRecord, giftCodeURL];
-  const obj5 = giftCodeURL(2048);
+  const obj5 = giftCodeURL(2047);
   const intervalType = obj5.getInterval(subscriptionPlanId).intervalType;
   const YEAR = SubscriptionIntervalTypes.YEAR;
-  let obj3 = { children: closure_8(giftCodeURL(10677), { giftStyle }) };
+  let obj3 = { children: closure_8(giftCodeURL(10697), { giftStyle }) };
   const callback = react.useCallback(() => {
     const value = SKUStore.get(giftCodeRecord.skuId);
     const tmp = giftCodeRecord;
@@ -92,36 +92,36 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
     const result = obj3.presentCopiedToClipboard();
   }, items);
   const items1 = [closure_8(View, obj3), , , , ];
-  const obj6 = { style: tmp.title, variant: "heading-lg/bold", children: intl.string(giftCodeRecord(1114).t["/s1xR7"]) };
-  const Text = tmp2(5619).Text;
-  intl = tmp2(1114).intl;
+  const obj6 = { style: tmp.title, variant: "heading-lg/bold", children: intl.string(giftCodeRecord(1113).t["/s1xR7"]) };
+  const Text = tmp2(5624).Text;
+  intl = tmp2(1113).intl;
   items1[1] = closure_8(Text, obj6);
   const obj7 = { style: tmp.description, variant: "text-md/medium", children: format(bUdTqI, { intervalCount: 1, name: tierDisplayNameByPlanId }) };
-  const Text2 = tmp2(5619).Text;
-  const intl2 = tmp2(1114).intl;
+  const Text2 = tmp2(5624).Text;
+  const intl2 = tmp2(1113).intl;
   format = intl2.format;
   const tmp10 = closure_9;
   const tmp12 = View;
   const tmp6 = giftCodeURL;
   if (intervalType === YEAR) {
-    bUdTqI = tmp2(1114).t.rli5ey;
+    bUdTqI = tmp2(1113).t.rli5ey;
   } else {
-    bUdTqI = tmp2(1114).t.bUdTqI;
+    bUdTqI = tmp2(1113).t.bUdTqI;
   }
   const obj8 = { children: items1 };
   items1[2] = closure_8(Text2, obj7);
   const obj9 = { style: tmp.input, children: items2 };
-  const obj10 = { style: tmp.inputLabel, variant: "heading-md/bold", children: intl3.string(giftCodeRecord(1114).t["qS+yMo"]) };
-  const Text3 = tmp2(5619).Text;
-  intl3 = tmp2(1114).intl;
+  const obj10 = { style: tmp.inputLabel, variant: "heading-md/bold", children: intl3.string(giftCodeRecord(1113).t["qS+yMo"]) };
+  const Text3 = tmp2(5624).Text;
+  intl3 = tmp2(1113).intl;
   items2 = [closure_8(Text3, obj10), ];
-  const obj11 = { text: giftCodeURL, icon: tmp6(5727), iconPosition: "end", onPress: callback };
-  const InputButton = tmp2(8983).InputButton;
+  const obj11 = { text: giftCodeURL, icon: tmp6(5732), iconPosition: "end", onPress: callback };
+  const InputButton = tmp2(8992).InputButton;
   items2[1] = closure_8(InputButton, obj11);
   items1[3] = closure_10(tmp12, obj9);
-  const obj12 = { style: tmp.disclaimer, variant: "text-xs/normal", children: intl4.string(giftCodeRecord(1114).t.As9eLl) };
-  const Text4 = tmp2(5619).Text;
-  intl4 = tmp2(1114).intl;
+  const obj12 = { style: tmp.disclaimer, variant: "text-xs/normal", children: intl4.string(giftCodeRecord(1113).t.As9eLl) };
+  const Text4 = tmp2(5624).Text;
+  intl4 = tmp2(1113).intl;
   items1[4] = closure_8(Text4, obj12);
   return closure_10(tmp10, obj8);
 };

@@ -1,14 +1,14 @@
-// Module ID: 4922
-// Function ID: 4923
+// Module ID: 4927
+// Function ID: 4928
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 4923, 510, 561, 1260, 1255, 4924, 2]
+// Dependencies: [32, 4928, 510, 561, 1259, 1254, 4929, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
-// Module 4922 (useCommunicationDisabledNoticeStore)
+// Module 4927 (useCommunicationDisabledNoticeStore)
 import Storage2 from "Storage" /* 510 */;
-import _mod1255 from "module_1255" /* 1255 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4923 */;
-import _slicedToArray2 from "_slicedToArray" /* 4924 */;
+import _mod1254 from "module_1254" /* 1254 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import _slicedToArray2 from "_slicedToArray" /* 4929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_561 from "module_561" /* 561 */;
 import size from "module_2" /* 2 */;
@@ -74,7 +74,7 @@ let result = size.fileFinishedImporting("modules/guild_communication_disabled/us
 export function useCommunicationDisabledNoticeStore(arg0) {
   let first;
   let tmp2;
-  const obj = _mod1255;
+  const obj = _mod1254;
   [first, tmp2] = obj.useStoreWithEqualityFn(state, (arg0) => {
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);

@@ -1,26 +1,26 @@
-// Module ID: 19714
-// Function ID: 19715
+// Module ID: 19771
+// Function ID: 19772
 // Name: GuildSettingsRolesStore
-// Dependencies: [4873, 19715, 4916, 4915, 9056, 19709, 1072, 19716, 13930, 6035, 1380, 1084, 4946, 1091, 4918, 12, 504, 572, 2]
+// Dependencies: [4878, 19772, 4921, 4920, 9075, 19766, 1072, 19773, 13965, 6040, 1379, 1084, 4951, 1090, 4923, 12, 504, 572, 2]
 
-// Module 19714 (GuildSettingsRolesStore)
+// Module 19771 (GuildSettingsRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import PlainRecord from "PlainRecord" /* 4873 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4916 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4918 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6035 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13930 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19709 */;
-import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 19715 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9056 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import PlainRecord from "PlainRecord" /* 4878 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4923 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6040 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13965 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19766 */;
+import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 19772 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
 import Constants from "Constants" /* 1072 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19716 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19773 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -868,13 +868,13 @@ let obj2 = {
     let id;
     let role;
     let roles;
-    const f118314 = (item) => map1.get(item);
-    const f118315 = (item, index) => {
+    const f118686 = (item) => map1.get(item);
+    const f118687 = (item, index) => {
       if (!set1.has(index)) {
         found1.push(item);
       }
     };
-    const f118316 = (item, index) => {
+    const f118688 = (item, index) => {
       const obj = { position: length - 1 - index };
       const merged = Object.assign(item);
       return obj;
@@ -885,22 +885,22 @@ let obj2 = {
       return items;
     }));
     let result = map.set(role.id, role);
-    const mapped = roles.map(f118314);
-    const found = mapped.filter(id(1380).isNotNullish);
+    const mapped = roles.map(f118686);
+    const found = mapped.filter(id(1379).isNotNullish);
     set = new Set(roles);
-    const item = map.forEach(f118315);
-    items = found.map(f118316);
+    const item = map.forEach(f118687);
+    items = found.map(f118688);
     map1 = new Map(items2.map((id) => {
       items = [id.id, id];
       return items;
     }));
     const result1 = map1.set(role.id, role);
-    const mapped1 = roles.map(f118314);
-    const found1 = mapped1.filter(id(1380).isNotNullish);
+    const mapped1 = roles.map(f118686);
+    const found1 = mapped1.filter(id(1379).isNotNullish);
     const set1 = new Set(roles);
-    const item1 = map1.forEach(f118315);
+    const item1 = map1.forEach(f118687);
     const length = found1.length;
-    items2 = found1.map(f118316);
+    items2 = found1.map(f118688);
     id = undefined;
     if (user != null) {
       id = user.id;

@@ -1,17 +1,17 @@
-// Module ID: 1405
-// Function ID: 1406
+// Module ID: 1404
+// Function ID: 1405
 // Name: ColorPaletteUtils
 // Dependencies: [2]
 // Exports: getPresetPalettesWithCustom, isCustomColorPalette
 
-// Module 1405 (ColorPaletteUtils)
+// Module 1404 (ColorPaletteUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/color_picker/ColorPaletteUtils.tsx");
 
-export function isCustomColorPalette(gummyColors, arr) {
-  let closure_0 = gummyColors;
-  const tmp = null != gummyColors && 0 !== gummyColors.length && !arr.some((arr) => {
+export function isCustomColorPalette(arr2, arr) {
+  let closure_0 = arr2;
+  const tmp = null != arr2 && 0 !== arr2.length && !arr.some((arr) => {
     const tmp = arr.length === length.length && arr.every((item, index) => item === closure_0[index]);
     return tmp;
   });

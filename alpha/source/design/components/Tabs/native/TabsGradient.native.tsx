@@ -1,16 +1,16 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14357
+// Function ID: 14358
 // Name: TabsGradient
-// Dependencies: [19, 1072, 21, 5090, 5582, 5009, 5632, 2]
+// Dependencies: [19, 1072, 21, 5095, 5587, 5014, 5637, 2]
 // Exports: default
 
-// Module 14319 (TabsGradient)
+// Module 14357 (TabsGradient)
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import createStyles from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,7 +47,7 @@ export default function TabsGradient(state) {
   const scrollOffset = state.scrollOffset;
   const itemDimensions = state.itemDimensions;
   const pageWidth = state.pageWidth;
-  let obj = derivedValue1(5090);
+  let obj = derivedValue1(5095);
   const fn = function f() {
     const value = itemDimensions.get();
     return value.reduce((acc, width) => {
@@ -72,16 +72,16 @@ export default function TabsGradient(state) {
   fn2.__closure = { scrollOffset, totalItemWidth: derivedValue, pageWidth };
   fn2.__workletHash = 13237586618288;
   fn2.__initData = __initData3;
-  const obj2 = derivedValue1(5090);
+  const obj2 = derivedValue1(5095);
   derivedValue1 = obj2.useDerivedValue(fn2);
   const fn3 = s;
-  const obj3 = derivedValue1(5090);
-  fn3.__closure = { withSpring: derivedValue1(5632).withSpring, visible: derivedValue1, SPRING_CONFIG };
+  const obj3 = derivedValue1(5095);
+  fn3.__closure = { withSpring: derivedValue1(5637).withSpring, visible: derivedValue1, SPRING_CONFIG };
   fn3.__workletHash = 14959306962615;
   fn3.__initData = __initData;
-  ({ withSpring: derivedValue1(5632).withSpring, visible: derivedValue1, SPRING_CONFIG });
+  ({ withSpring: derivedValue1(5637).withSpring, visible: derivedValue1, SPRING_CONFIG });
   const animatedStyle = obj3.useAnimatedStyle(fn3);
-  const obj5 = derivedValue1(5090);
+  const obj5 = derivedValue1(5095);
   class W {
     constructor() {
       const value = scrollOffset.get();
@@ -94,11 +94,11 @@ export default function TabsGradient(state) {
   W.__initData = __initData4;
   const derivedValue2 = obj5.useDerivedValue(W);
   const fn4 = s;
-  const obj6 = derivedValue1(5090);
-  fn4.__closure = { withSpring: derivedValue1(5632).withSpring, visible: derivedValue2, SPRING_CONFIG };
+  const obj6 = derivedValue1(5095);
+  fn4.__closure = { withSpring: derivedValue1(5637).withSpring, visible: derivedValue2, SPRING_CONFIG };
   fn4.__workletHash = 14959306962615;
   fn4.__initData = __initData;
-  ({ withSpring: derivedValue1(5632).withSpring, visible: derivedValue2, SPRING_CONFIG });
+  ({ withSpring: derivedValue1(5637).withSpring, visible: derivedValue2, SPRING_CONFIG });
   const animatedStyle1 = obj6.useAnimatedStyle(fn4);
   const tmp6 = closure_9();
   let items = [colors];

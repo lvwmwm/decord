@@ -1,13 +1,13 @@
-// Module ID: 9644
-// Function ID: 9645
+// Module ID: 9664
+// Function ID: 9665
 // Name: nitro_perk_card
-// Dependencies: [32, 1198, 9611, 9613, 9621, 2]
+// Dependencies: [32, 1197, 9631, 9633, 9641, 2]
 
-// Module 9644 (nitro_perk_card)
-import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 9611 */;
-import cta_button from "cta_button" /* 9613 */;
-import theme_aware_asset from "theme_aware_asset" /* 9621 */;
+// Module 9664 (nitro_perk_card)
+import _mod1197 from "module_1197" /* 1197 */;
+import localized_string from "localized_string" /* 9631 */;
+import cta_button from "cta_button" /* 9633 */;
+import theme_aware_asset from "theme_aware_asset" /* 9641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const T7 = function T() {
   return items;
 };
 const NitroPerkCardPlacement = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", MARKETING_PAGE: 1, [1]: "MARKETING_PAGE", NITRO_HOME: 2, [2]: "NITRO_HOME" };
-const MessageType = _mod1198.MessageType;
+const MessageType = _mod1197.MessageType;
 class NitroPerkCard$Type extends MessageType {
   constructor() {
     let items = [, , , , , , , , ];
@@ -62,9 +62,9 @@ class NitroPerkCard$Type extends MessageType {
     const obj = { header: "", description: "", placements: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1198;
+      const tmpResult = _mod1197;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -105,7 +105,7 @@ class NitroPerkCard$Type extends MessageType {
           let ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
           obj.thirdPartyLogo = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.thirdPartyLogo);
         } else if (9 === tmp5) {
-          if (tmp6 === _mod1198.WireType.LengthDelimited) {
+          if (tmp6 === _mod1197.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -135,7 +135,7 @@ class NitroPerkCard$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1198.UnknownFieldHandler.onRead;
+                onRead = _mod1197.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -151,31 +151,31 @@ class NitroPerkCard$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       headerLocalized = headerLocalized.headerLocalized;
-      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(headerLocalized, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("" !== headerLocalized.header) {
-      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       tagResult1.string(headerLocalized.header);
     }
     if (headerLocalized.descriptionLocalized) {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const descriptionLocalized = headerLocalized.descriptionLocalized;
-      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(descriptionLocalized, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if ("" !== headerLocalized.description) {
-      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
       tagResult3.string(headerLocalized.description);
     }
     if (headerLocalized.button) {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite3 = CTAButton.internalBinaryWrite;
       const button = headerLocalized.button;
-      const tagResult4 = tag.tag(5, _mod1198.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(button, tagResult4.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -183,7 +183,7 @@ class NitroPerkCard$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite4 = ThemeAwareAsset.internalBinaryWrite;
       const background = headerLocalized.background;
-      const tagResult5 = tag.tag(6, _mod1198.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(background, tagResult5.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -191,7 +191,7 @@ class NitroPerkCard$Type extends MessageType {
       const ThemeAwareAsset2 = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite5 = ThemeAwareAsset2.internalBinaryWrite;
       const foreground = headerLocalized.foreground;
-      const tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(foreground, tagResult6.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
@@ -199,12 +199,12 @@ class NitroPerkCard$Type extends MessageType {
       const ThemeAwareAsset3 = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite6 = ThemeAwareAsset3.internalBinaryWrite;
       const thirdPartyLogo = headerLocalized.thirdPartyLogo;
-      const tagResult7 = tag.tag(8, _mod1198.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(thirdPartyLogo, tagResult7.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if (headerLocalized.placements.length) {
-      const tagResult8 = tag.tag(9, _mod1198.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(9, _mod1197.WireType.LengthDelimited);
       tagResult8.fork();
       let num10 = 0;
       if (0 < headerLocalized.placements.length) {
@@ -219,7 +219,7 @@ class NitroPerkCard$Type extends MessageType {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1198.UnknownFieldHandler.onWrite;
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, headerLocalized, tag);

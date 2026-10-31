@@ -1,12 +1,12 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7107
+// Function ID: 7108
 // Name: FreeFormErrorLabel
-// Dependencies: [19, 21, 5182, 5016, 5619, 2]
+// Dependencies: [19, 21, 5187, 5021, 5624, 2]
 // Exports: default
 
-// Module 7101 (FreeFormErrorLabel)
+// Module 7107 (FreeFormErrorLabel)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5016 */;
+import shared from "shared" /* 5021 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ export default function Label(children) {
   children = children.children;
   let nodeText;
   const style = children.style;
-  const obj = nodeText(5182);
+  const obj = nodeText(5187);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = react.useEffect(() => {
@@ -27,5 +27,5 @@ export default function Label(children) {
       AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  return jsx(nodeText(5619).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(5624).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

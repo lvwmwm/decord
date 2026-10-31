@@ -1,17 +1,17 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14406
+// Function ID: 14407
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 5009, 5270, 5090, 1492, 7226, 14369, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 5275, 5095, 1491, 7232, 14407, 2]
 
-// Module 14368 (UsersLegendList)
+// Module 14406 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import BottomSheetModal from "BottomSheetModal" /* 5270 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7226 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 function renderBottomSheetScrollComponent(children) {

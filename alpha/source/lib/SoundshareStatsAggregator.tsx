@@ -1,9 +1,9 @@
-// Module ID: 7881
-// Function ID: 7882
+// Module ID: 7888
+// Function ID: 7889
 // Name: SoundshareStatsAggregator
 // Dependencies: [2]
 
-// Module 7881 (SoundshareStatsAggregator)
+// Module 7888 (SoundshareStatsAggregator)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/SoundshareStatsAggregator.tsx");
@@ -46,6 +46,14 @@ class SoundshareStatsAggregator {
       }
       _report.soundshare_last_session = soundshareSession;
     }
+  }
+  restartForFragment() {
+    const keys = Object.keys(this._report);
+    const found = keys.filter((item) => item.endsWith("_count"));
+    const merged = Object.assign(this._report, Object.fromEntries(found.map((item) => {
+      const items = [item, 0];
+      return items;
+    })));
   }
   getStats() {
     const obj = { soundshare_unique_pids: this._pids.size };

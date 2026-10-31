@@ -1,13 +1,13 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 9439
+// Function ID: 9440
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 5010, 5090, 5249, 504, 2]
+// Dependencies: [19, 5015, 5095, 5254, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 9417 (GameProfileSkeletonPulse)
+// Module 9439 (GameProfileSkeletonPulse)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
 import size from "module_2" /* 2 */;
 
 let closure_8, dependencyMap, diff, set;
@@ -112,7 +112,7 @@ export function useSkeletonPulseStyle(animationDelayMs) {
   }, items1);
   let result = -animationDelayMs % c4 / c4;
   dependencyMap = result;
-  let obj2 = stateFromStores(5090);
+  let obj2 = stateFromStores(5095);
   class P {
     constructor() {
       let obj;

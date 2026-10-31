@@ -1,26 +1,27 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16340
+// Function ID: 16341
 // Name: subscriptionHelpers
-// Dependencies: [4857, 16249, 7839, 1072, 2019, 9306, 16252, 8765, 16254, 7861, 2]
+// Dependencies: [4862, 16290, 7846, 1072, 2018, 11693, 9326, 16294, 16295, 8773, 16296, 7868, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 16298 (subscriptionHelpers)
-import Constants2 from "Constants" /* 1072 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8765 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9306 */;
-import useThermalState from "useThermalState" /* 16252 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16254 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16249 */;
-import QuestStore from "QuestStore" /* 7839 */;
-import Constants from "Constants" /* 2019 */;
+// Module 16340 (subscriptionHelpers)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 2018 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9326 */;
+import Constants3 from "Constants" /* 11693 */;
+import useThermalState from "useThermalState" /* 16294 */;
+import ThermalStates from "ThermalStates" /* 16295 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16296 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16290 */;
+import QuestStore from "QuestStore" /* 7846 */;
 import size from "module_2" /* 2 */;
 
-let metroImportDefault;
-let metroRequire;
-const RPCEvents = Constants2.RPCEvents;
-({ ActivityLayoutMode: metroRequire, ActivityScreenOrientation: metroImportDefault } = Constants);
+const RPCEvents = Constants.RPCEvents;
+const ActivityScreenOrientation = Constants2.ActivityScreenOrientation;
+const ActivityLayoutMode = Constants3.ActivityLayoutMode;
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
 export function getInitialSubscriptionPayload(application, arg1, quest_id) {
@@ -39,8 +40,8 @@ export function getInitialSubscriptionPayload(application, arg1, quest_id) {
     }
     let tmp37 = null;
     if (null != layoutModeForApp) {
-      tmp37 = { is_pip_mode: layoutModeForApp !== metroRequire.FOCUSED };
-      const obj2 = { is_pip_mode: layoutModeForApp !== metroRequire.FOCUSED };
+      tmp37 = { is_pip_mode: layoutModeForApp !== ActivityLayoutMode.FOCUSED };
+      const obj2 = { is_pip_mode: layoutModeForApp !== ActivityLayoutMode.FOCUSED };
     }
     return tmp37;
   } else if (RPCEvents.ACTIVITY_LAYOUT_MODE_UPDATE === arg1) {
@@ -71,13 +72,13 @@ export function getInitialSubscriptionPayload(application, arg1, quest_id) {
     const obj6 = useThermalState;
     const thermalState = obj6.getThermalState();
     let tmp23 = null;
-    if (thermalState !== useThermalState.ThermalStates.UNHANDLED) {
+    if (thermalState !== ThermalStates.ThermalStates.UNHANDLED) {
       tmp23 = { thermal_state: thermalState };
       const obj8 = { thermal_state: thermalState };
     }
     return tmp23;
   } else if (RPCEvents.ORIENTATION_UPDATE === arg1) {
-    const obj9 = { screen_orientation: obj4.getIsScreenLandscape() ? metroImportDefault.LANDSCAPE : metroImportDefault.PORTRAIT };
+    const obj9 = { screen_orientation: obj4.getIsScreenLandscape() ? ActivityScreenOrientation.LANDSCAPE : ActivityScreenOrientation.PORTRAIT };
     obj4 = useIsScreenLandscape;
     return obj9;
   } else if (RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === arg1) {

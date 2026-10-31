@@ -1,69 +1,94 @@
-// Module ID: 18630
-// Function ID: 18631
+// Module ID: 18672
+// Function ID: 18673
 // Name: useAppChannelClosed
-// Dependencies: [32, 19, 6841, 12057, 2]
+// Dependencies: [32, 19, 6847, 12095, 2]
 // Exports: default
 
-// Module 18630 (useAppChannelClosed)
-import useFrameBySurfaceDefault from "useFrameBySurface" /* 12057 */;
+// Module 18672 (useAppChannelClosed)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
+
+let dependencyMap;
 
 let closure_4;
 let hasOwnProperty;
 ({ isLaunched: closure_4, makeFrameId: hasOwnProperty } = FramesConstants);
+const set = new Set();
 const result = size.fileFinishedImporting("modules/app_channels/useAppChannelClosed.tsx");
 
 export default function useAppChannelClosed(shouldStartClosed) {
   let applicationId;
+  let closure_1;
   let surface;
-  let tmp4;
-  let tmp5;
+  let tmp17;
   ({ applicationId, surface } = shouldStartClosed);
+  let first;
   shouldStartClosed = shouldStartClosed.shouldStartClosed;
-  let tmp = hasOwnProperty(applicationId, surface);
-  const tmp2 = useFrameBySurfaceDefault(applicationId, surface);
+  let tmp = closure_5(applicationId, surface);
+  const tmp2 = first(12095)(applicationId, surface);
   let obj = react;
-  [tmp4, tmp5] = _slicedToArray(react.useState(null), 2);
-  let c0 = tmp5;
-  let frameId;
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  if (tmp4 != null) {
-    frameId = tmp4.frameId;
+  first = tmp3[0];
+  dependencyMap = tmp5;
+  let frameId;
+  if (first != null) {
+    frameId = first.frameId;
   }
   if (frameId !== tmp) {
-    const obj2 = { frameId: tmp, hasLaunched: false, isClosed: null == tmp2 && shouldStartClosed() };
-    null == tmp2 && shouldStartClosed();
-    tmp5(obj2);
+    const obj2 = { frameId: tmp, hasLaunched: false, isClosed: tmp17 };
+    tmp17 = null == tmp2;
+    if (tmp17) {
+      tmp17 = set.has(tmp) || shouldStartClosed();
+      set.has(tmp) || shouldStartClosed();
+    }
+    tmp3[1](obj2);
   } else {
-    if (React3(tmp2)) {
-      if (!tmp4.hasLaunched) {
+    if (closure_4(tmp2)) {
+      if (!first.hasLaunched) {
         const obj3 = { hasLaunched: true };
-        let merged = Object.assign(tmp4);
-        tmp5(obj3);
+        let merged = Object.assign(first);
+        tmp3[1](obj3);
       }
     }
-    const tmp12 = null == tmp2 && tmp4.hasLaunched;
+    const tmp12 = null == tmp2 && first.hasLaunched && !first.isClosed;
     if (tmp12) {
-      const obj4 = { frameId: tmp, hasLaunched: false, isClosed: true };
-      tmp5(obj4);
+      const obj4 = { isClosed: true };
+      const merged1 = Object.assign(first);
+      tmp3[1](obj4);
     }
   }
+  const items = [first];
+  const effect = obj.useEffect(() => {
+    let hasLaunched;
+    if (first != null) {
+      hasLaunched = tmp.hasLaunched;
+    }
+    if (true === hasLaunched) {
+      if (first.isClosed) {
+        set.add(first.frameId);
+      } else {
+        set.delete(first.frameId);
+      }
+    }
+  }, items);
   let frameId1;
-  const launch = obj.useCallback(() => _undefined((arg0) => {
-    let tmp = arg0;
-    if (null != arg0) {
-      const obj = { isClosed: false };
-      const merged = Object.assign(arg0);
-      tmp = obj;
-    }
-    return tmp;
-  }), []);
-  if (tmp4 != null) {
-    frameId1 = tmp4.frameId;
+  if (first != null) {
+    frameId1 = first.frameId;
   }
-  const isClosed = frameId1 === tmp && tmp4.isClosed;
-  return { isClosed, launch };
+  return {
+    isClosed: frameId1 === tmp && first.isClosed,
+    launch() {
+      let tmp = closure_1((arg0) => {
+        let tmp = arg0;
+        if (null != arg0) {
+          const obj = { hasLaunched: false, isClosed: false };
+          const merged = Object.assign(arg0);
+          tmp = obj;
+        }
+        return tmp;
+      });
+    }
+  };
 };

@@ -1,24 +1,24 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17281
+// Function ID: 17282
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5010, 1072, 21, 5090, 5582, 5632, 5633, 5009, 575, 7320, 7345, 9884, 9885, 5629, 1114, 1188, 504, 9939, 2]
+// Dependencies: [19, 17, 5015, 1072, 21, 5095, 5587, 5637, 5638, 5014, 575, 7326, 7351, 9905, 9906, 5634, 1113, 1187, 504, 9960, 2]
 
-// Module 17224 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 17281 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import spring from "spring" /* 5632 */;
-import springPresets from "springPresets" /* 5633 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9939 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import spring from "spring" /* 5637 */;
+import springPresets from "springPresets" /* 5638 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -35,7 +35,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   theme = theme.theme;
   let analyticsLocations;
   let tmp = closure_17();
-  let obj = theme(5090);
+  let obj = theme(5095);
   const fn = function l() {
     let obj2;
     let num = 1;
@@ -47,13 +47,13 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
     obj2 = spring;
     return obj;
   };
-  let obj2 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5632).withSpring, springStandard: theme(5633).springStandard };
+  let obj2 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5637).withSpring, springStandard: theme(5638).springStandard };
   fn.__closure = obj2;
   fn.__workletHash = 16911565077998;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const tmp3 = analyticsLocations(7320);
-  analyticsLocations = tmp3(analyticsLocations(7345).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const tmp3 = analyticsLocations(7326);
+  analyticsLocations = tmp3(analyticsLocations(7351).CLIENT_THEMES_EDITOR).analyticsLocations;
   const items = [analyticsLocations];
   const obj3 = { style: tmp.nitroUpsell, children: items1 };
   const obj4 = { style: animatedStyle, importantForAccessibility: "no-hide-descendants", colors };
@@ -65,9 +65,9 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
     tmp(obj);
   }, items);
   items1 = [closure_10(LinearGradient, obj4), ];
-  const obj5 = { text: intl.string(theme(1114).t.pj0XBN), icon: closure_10(theme(1188).NitroWheel, obj6), variant: "active", onPress: callback, size: "md" };
-  const Button = theme(5629).Button;
-  intl = theme(1114).intl;
+  const obj5 = { text: intl.string(theme(1113).t.pj0XBN), icon: closure_10(theme(1187).NitroWheel, obj6), variant: "active", onPress: callback, size: "md" };
+  const Button = theme(5634).Button;
+  intl = theme(1113).intl;
   obj6 = { style: tmp.nitroWheelIcon };
   items1[1] = closure_10(Button, obj5);
   return closure_11(View, obj3);

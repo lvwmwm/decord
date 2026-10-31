@@ -1,19 +1,19 @@
-// Module ID: 1239
-// Function ID: 1240
+// Module ID: 1238
+// Function ID: 1239
 // Name: CustomThemeMobileStore
-// Dependencies: [1194, 1193, 1195, 1232, 1082, 1240, 5073, 1197, 572, 504, 2]
+// Dependencies: [1193, 1192, 1194, 1231, 1082, 1239, 5078, 1196, 572, 504, 2]
 
-// Module 1239 (CustomThemeMobileStore)
+// Module 1238 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1240 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5073 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5078 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, prop;
@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "color", customTheme: "Error" };
+      obj = { theme: "Array", customTheme: "flexDirection" };
     }
     return obj;
   }
@@ -181,7 +181,7 @@ class CustomThemeMobileStore extends PersistedStore {
         if (null == prop) {
           theme = tmp3.theme;
         } else {
-          const tmp10Result = tmp10(1240);
+          const tmp10Result = tmp10(1239);
           theme = tmp10Result.getCustomThemeBaseTheme(tmp3.theme);
         }
         obj = { baseTheme: theme, customTheme: prop };

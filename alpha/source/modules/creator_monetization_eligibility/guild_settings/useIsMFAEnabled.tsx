@@ -1,14 +1,14 @@
-// Module ID: 19819
-// Function ID: 19820
+// Module ID: 19876
+// Function ID: 19877
 // Name: useIsMFAEnabled
-// Dependencies: [9056, 1384, 1072, 563, 2]
+// Dependencies: [9075, 1383, 1072, 563, 2]
 // Exports: useIsMFAEnabled
 
-// Module 19819 (useIsMFAEnabled)
+// Module 19876 (useIsMFAEnabled)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import Constants from "Constants" /* 1072 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9056 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const MFALevels = Constants.MFALevels;

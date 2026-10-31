@@ -1,16 +1,15 @@
 // Module ID: 16145
 // Function ID: 16146
-// Dependencies: [16109, 16083]
+// Dependencies: [16124]
 
 // Module 16145
-import _mod16083 from "module_16083" /* 16083 */;
-import module_16109 from "module_16109" /* 16109 */;
+import _mod16124 from "module_16124" /* 16124 */;
 
-let _moduleResult = module_16109(_mod16083.WeakMap);
-if (_moduleResult) {
+const tmp = _mod16124.navigator && _mod16124.navigator.userAgent;
+let str = "";
+if (tmp) {
   const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod16083.WeakMap));
+  str = String(tmp);
 }
 
-export default _moduleResult;
+export default str;

@@ -11,7 +11,7 @@ let _require, dependencyMap;
 
 let tmp2;
 const _mod681 = tmp2(681);
-const f80003 = (error) => {
+const f80213 = (error) => {
   const tmp = item10034;
   const tmp2 = item10008;
   if (item10034(item10008[2]).DEBUG_BUILD) {
@@ -81,7 +81,7 @@ function createAsyncHandlerProxy(arg0, item10034, item10008, processResolvedRout
             closure_2(result, closure_0, closure_3, span);
           }
         });
-        nextPromise.catch(f80003);
+        nextPromise.catch(f80213);
       } else {
         const _Array = Array;
         if (Array.isArray(applyResult)) {
@@ -144,7 +144,7 @@ export function handleAsyncHandlerResult(promise, arg1, arg2, fn, arg4, arg5) {
         closure_2(result, closure_0, closure_3, span);
       }
     });
-    nextPromise.catch(f80003);
+    nextPromise.catch(f80213);
   } else {
     const _Array = Array;
     if (Array.isArray(promise)) {

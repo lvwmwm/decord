@@ -1,24 +1,24 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15080
+// Function ID: 15081
 // Name: transformMessageAttachments
-// Dependencies: [8370, 1072, 1397, 10091, 6046, 8682, 1376, 8681, 1114, 13360, 8703, 8832, 8209, 8701, 2]
+// Dependencies: [8378, 1072, 1396, 10111, 6051, 8690, 1375, 8689, 1113, 13395, 8711, 8840, 8217, 8709, 2]
 // Exports: default
 
-// Module 15043 (transformMessageAttachments)
+// Module 15080 (transformMessageAttachments)
 import Constants from "Constants" /* 1072 */;
-import intl8 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6046 */;
-import _modDef8209 from "module_8209" /* 8209 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8370 */;
-import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8681 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8682 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8701 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8703 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8832 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10091 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13360 */;
+import intl8 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6051 */;
+import _modDef8217 from "module_8217" /* 8217 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8378 */;
+import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8689 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8690 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8709 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8711 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8840 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10111 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13395 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -165,7 +165,7 @@ export default function transformMessageAttachments(arg0) {
         let tmp33;
         if (hasFlag2(flags, tmp11.IS_CLIP)) {
           const obj7 = { attachmentTagText: intl.string(intl8.t.gESDiU), attachmentTagIconType: "clip", attachmentTagBackgroundColor: null, attachmentTagTextColor: null };
-          intl = tmp(1114).intl;
+          intl = tmp(1113).intl;
           ({ clipTagBackgroundColor: obj8.attachmentTagBackgroundColor, clipTagTextColor: obj8.attachmentTagTextColor } = closure_9);
           tmp33 = obj7;
         }
@@ -195,29 +195,29 @@ export default function transformMessageAttachments(arg0) {
         }
         stringResult = undefined;
         if (result3) {
-          const intl2 = tmp(1114).intl;
-          stringResult = intl2.string(tmp(1114).t["HO/oXl"]);
+          const intl2 = tmp(1113).intl;
+          stringResult = intl2.string(tmp(1113).t["HO/oXl"]);
         }
         stringResult1 = undefined;
         if (result3) {
-          const intl3 = tmp(1114).intl;
-          stringResult1 = intl3.string(tmp(1114).t["0PQYk3"]);
+          const intl3 = tmp(1113).intl;
+          stringResult1 = intl3.string(tmp(1113).t["0PQYk3"]);
         }
-        obj12 = _modDef8209;
-        const intl4 = tmp(1114).intl;
+        obj12 = _modDef8217;
+        const intl4 = tmp(1113).intl;
         str6 = intl4.string(intl8.t.jCV1Tz);
-        intl5 = tmp(1114).intl;
-        const intl6 = tmp(1114).intl;
+        intl5 = tmp(1113).intl;
+        const intl6 = tmp(1113).intl;
         const string = intl6.string;
-        const t = tmp(1114).t;
+        const t = tmp(1113).t;
         if (isVideoFileResult) {
           stringResult2 = string(t["BEWw/7"]);
         } else {
           stringResult2 = string(t.IPzNKE);
         }
-        const intl7 = tmp(1114).intl;
+        const intl7 = tmp(1113).intl;
         const string2 = intl7.string;
-        const t2 = tmp(1114).t;
+        const t2 = tmp(1113).t;
         if (isVideoFileResult) {
           string2Result = string2(t2["/SCpvi"]);
         } else if (tmp14) {

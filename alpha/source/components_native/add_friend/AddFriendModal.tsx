@@ -1,26 +1,26 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15673
+// Function ID: 15674
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1384, 1072, 14196, 21, 5009, 6717, 575, 14198, 5588, 1253, 1376, 1501, 6738, 5063, 1114, 8922, 7552, 15633, 6992, 5619, 15634, 15635, 1626, 7163, 2]
+// Dependencies: [32, 19, 17, 1383, 1072, 14234, 21, 5014, 6723, 575, 14236, 5593, 1252, 1375, 1500, 6744, 5068, 1113, 8931, 7558, 15674, 6998, 5624, 15675, 15676, 1625, 7169, 2]
 // Exports: default
 
-// Module 15632 (AddFriendModal)
+// Module 15673 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14196 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14198 */;
+import intl4 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14234 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14236 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import TextStyles from "TextStyles" /* 6717 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import TextStyles from "TextStyles" /* 6723 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

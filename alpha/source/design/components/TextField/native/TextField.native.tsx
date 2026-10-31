@@ -1,14 +1,14 @@
-// Module ID: 7083
-// Function ID: 7084
+// Module ID: 7089
+// Function ID: 7090
 // Name: TextField
-// Dependencies: [19, 21, 7084, 7085, 7089, 7093, 2]
+// Dependencies: [19, 21, 7090, 7091, 7095, 7099, 2]
 // Exports: TextField
 
-// Module 7083 (TextField)
+// Module 7089 (TextField)
 import Fragment from "Fragment" /* 21 */;
-import useTextField from "useTextField" /* 7084 */;
-import useInputClearButton from "useInputClearButton" /* 7085 */;
-import useInputAttachments from "useInputAttachments" /* 7089 */;
+import useTextField from "useTextField" /* 7090 */;
+import useInputClearButton from "useInputClearButton" /* 7091 */;
+import useInputAttachments from "useInputAttachments" /* 7095 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export function TextField(ref) {
   const tmp2Result = useInputAttachments;
   const inputAttachments = tmp2Result.useInputAttachments(merged, tmp6);
   ({ leading, trailing, inputStyle } = inputAttachments);
-  const BaseTextField = tmp2(7093).BaseTextField;
+  const BaseTextField = tmp2(7099).BaseTextField;
   const merged1 = Object.assign(inputProps);
   return <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
 }

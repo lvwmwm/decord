@@ -1,22 +1,22 @@
-// Module ID: 7859
-// Function ID: 7860
+// Module ID: 7866
+// Function ID: 7867
 // Name: utils/QuestUtils
-// Dependencies: [32, 5760, 4880, 4941, 5674, 7860, 6775, 7861, 7862, 6718, 7863, 7864, 2]
+// Dependencies: [32, 5765, 4885, 4946, 5679, 7867, 6781, 7868, 7869, 6724, 7870, 7871, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7859 (utils/QuestUtils)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6718 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7862 */;
-import QuestType2 from "QuestType" /* 7863 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
+// Module 7866 (utils/QuestUtils)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6724 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7869 */;
+import QuestType2 from "QuestType" /* 7870 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 5760 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
-import QuestUtmStore from "QuestUtmStore" /* 7860 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import QuestUtmStore from "QuestUtmStore" /* 7867 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -24,6 +24,7 @@ let map, set;
 let c10;
 let c9;
 let metroImportAll;
+let unpackModuleId;
 function isSponsoredPlayQuest(quest) {
   if (null == quest) {
     return false;
@@ -37,7 +38,7 @@ function hasVariant(nextResult, MOBILE_ACTIVITY_QUEST) {
   set = new Set(nextResult.config.features);
   return set.has(MOBILE_ACTIVITY_QUEST);
 }
-({ DISCORD_APPLICATION_ID: metroImportAll, QuestVariants: c9, RewardFilterTypes: c10 } = QuestConstants);
+({ DISCORD_APPLICATION_ID: metroImportAll, QuestVariants: c9, RewardFilterTypes: c10, TaskFilterTypes: unpackModuleId } = QuestConstants);
 let result = size.fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");
 
 export { isSponsoredPlayQuest };
@@ -112,15 +113,16 @@ export function isQuestFeaturedByHero(questHomeHero, id) {
   return flag;
 }
 export function shouldShowBountiesGivenFilters(filters) {
-  const f91549 = (group) => "task" === group.group;
-  const f91550 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
-  let tmp2 = !filters.some(f91549);
-  filters.some(f91549);
-  if (tmp2) {
-    tmp2 = 0 === filters.length || filters.some(f91550);
-    0 === filters.length || filters.some(f91550);
+  let constants2;
+  const f91785 = (item) => item.filter === constants.VIRTUAL_CURRENCY;
+  const found = filters.filter((group) => "task" === group.group);
+  const found1 = filters.filter((group) => "reward" === group.group);
+  let tmp = 0 === found.length || found.some((item) => item.filter === constants2.VIDEO);
+  if (tmp) {
+    tmp = 0 === found1.length || found1.some(f91785);
+    0 === found1.length || found1.some(f91785);
   }
-  return tmp2;
+  return tmp;
 }
 export function setQuestHomeUtmContext(arg0) {
   let fromContent;

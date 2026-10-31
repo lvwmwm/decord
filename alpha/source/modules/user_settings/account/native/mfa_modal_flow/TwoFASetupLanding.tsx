@@ -1,21 +1,21 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16647
+// Function ID: 16648
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 5009, 16606, 16602, 7286, 5712, 16607, 5619, 1114, 2]
+// Dependencies: [19, 17, 21, 5014, 16648, 16644, 7292, 5717, 16649, 5624, 1113, 2]
 // Exports: default
 
-// Module 16605 (TwoFASetupLanding)
+// Module 16647 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
-import intl3 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7286 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16602 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 16606 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16607 */;
+import intl3 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16644 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 16648 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16649 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,38 +1,38 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18073
+// Function ID: 18074
 // Name: MessageRequestsButton
-// Dependencies: [19, 17, 6850, 6851, 21, 5009, 504, 18031, 5629, 1114, 8020, 14503, 9169, 2]
+// Dependencies: [19, 17, 6856, 6857, 21, 5014, 504, 18074, 5634, 1113, 8028, 14541, 9188, 2]
 // Exports: default
 
-// Module 18030 (MessageRequestsButton)
+// Module 18073 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl4 from "intl" /* 1114 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9169 */;
-import IconActionButton from "IconActionButton" /* 14503 */;
-import _mod18031 from "module_18031" /* 18031 */;
+import intl4 from "intl" /* 1113 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9188 */;
+import IconActionButton from "IconActionButton" /* 14541 */;
+import _mod18074 from "module_18074" /* 18074 */;
 import react from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6850 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6851 */;
+import MessageRequestStore from "MessageRequestStore" /* 6856 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6857 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const IconActionButtonDefault = IconActionButton;
 
 let metroImportAll;
 let metroImportDefault;
-const f113258 = () => messageRequestsCount.getMessageRequestsCount();
-const f113259 = () => spamChannelsCount.getSpamChannelsCount();
+const f113566 = () => messageRequestsCount.getMessageRequestsCount();
+const f113567 = () => spamChannelsCount.getSpamChannelsCount();
 function MessageRequestAnimation(color) {
   color = color.color;
   const ref = react.useRef(null);
   const items = [MessageRequestStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f113258);
+  const stateFromStores = obj.useStateFromStores(items, f113566);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
-  const stateFromStores1 = obj2.useStateFromStores(items1, f113259);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f113567);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (stateFromStores > 0) {
@@ -44,7 +44,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return metroImportDefault(_mod18031.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
+  return metroImportDefault(_mod18074.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
 }
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -67,11 +67,11 @@ export default function MessageRequestsButton(alternateVariant) {
   const items = [MessageRequestStore];
   const tmp2 = closure_9();
   const obj = get_initialized;
-  const str = obj.useStateFromStores(items, f113258);
+  const str = obj.useStateFromStores(items, f113566);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
   if (0 === str) {
-    if (0 === obj2.useStateFromStores(items1, f113259)) {
+    if (0 === obj2.useStateFromStores(items1, f113567)) {
       return null;
     }
   }
@@ -87,16 +87,16 @@ export default function MessageRequestsButton(alternateVariant) {
     const tmp15 = View;
     if (null != str1) {
       const obj4 = { icon: metroImportDefault(MessageRequestAnimation, {}), variant: "secondary", text: str1, size: "sm", accessibilityLabel: intl3.string(intl4.t.e7GWjQ) };
-      const Button = tmp3(5629).Button;
-      intl3 = tmp3(1114).intl;
+      const Button = tmp3(5634).Button;
+      intl3 = tmp3(1113).intl;
       const merged1 = Object.assign(merged);
       tmp21 = metroImportDefault(Button, obj4);
       tmp16 = metroImportDefault;
     } else {
       tmp16 = metroImportDefault;
       const obj5 = { variant: "secondary", size: "sm", icon: metroImportDefault(MessageRequestAnimation, {}), accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
-      const IconButton = tmp3(8020).IconButton;
-      intl2 = tmp3(1114).intl;
+      const IconButton = tmp3(8028).IconButton;
+      intl2 = tmp3(1113).intl;
       const merged2 = Object.assign(merged);
       tmp21 = metroImportDefault(IconButton, obj5);
     }
@@ -106,7 +106,7 @@ export default function MessageRequestsButton(alternateVariant) {
   } else {
     const obj6 = { source: AssetRegistryDefault, IconComponent: MessageRequestAnimation, accessibilityLabel: intl.string(intl4.t.e7GWjQ), buttonText: str2, badge: str > 0, badgePosition: "right" };
     const tmp7 = IconActionButtonDefault;
-    intl = tmp3(1114).intl;
+    intl = tmp3(1113).intl;
     str2 = undefined;
     const tmp5 = metroImportDefault;
     if (str > 0) {

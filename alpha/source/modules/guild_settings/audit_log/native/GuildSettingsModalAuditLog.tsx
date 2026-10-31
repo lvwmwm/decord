@@ -1,27 +1,27 @@
-// Module ID: 19645
-// Function ID: 19646
+// Module ID: 19702
+// Function ID: 19703
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 4858, 4880, 4912, 1384, 19646, 1072, 21, 5009, 575, 1498, 504, 19648, 5063, 1114, 7357, 19650, 19660, 7552, 19651, 6947, 6969, 5619, 6978, 1188, 19661, 7288, 5601, 2]
+// Dependencies: [32, 19, 17, 4863, 4885, 4917, 1383, 19703, 1072, 21, 5014, 575, 1497, 504, 19705, 5068, 1113, 7363, 19707, 19717, 7558, 19708, 6953, 6975, 5624, 6984, 1187, 19718, 7294, 5606, 2]
 // Exports: default
 
-// Module 19645 (GuildSettingsModalAuditLog)
+// Module 19702 (GuildSettingsModalAuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7357 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 19648 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 19651 */;
-import AuditLogDefault from "AuditLog" /* 19660 */;
+import intl4 from "intl" /* 1113 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7363 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19705 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19708 */;
+import AuditLogDefault from "AuditLog" /* 19717 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import UserStore from "UserStore" /* 1384 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19646 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import UserStore from "UserStore" /* 1383 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19703 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

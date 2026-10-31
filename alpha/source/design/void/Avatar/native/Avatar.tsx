@@ -1,21 +1,21 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 15994
+// Function ID: 15995
 // Name: Avatar
-// Dependencies: [19, 17, 1072, 1189, 21, 5009, 575, 14842, 15942, 15943, 9487, 8720, 15954, 9486, 15944, 5631, 11744, 11745, 2]
+// Dependencies: [19, 17, 1072, 1188, 21, 5014, 575, 14880, 15983, 15984, 9509, 8728, 15995, 9508, 15985, 5636, 11781, 11782, 2]
 
-// Module 15953 (Avatar)
+// Module 15994 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8720 */;
-import ClipView from "ClipView" /* 9487 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14842 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15942 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15943 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8728 */;
+import ClipView from "ClipView" /* 9509 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14880 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15983 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15984 */;
 import react from "react" /* 19 */;
-import StatusConstants from "StatusConstants" /* 1189 */;
+import StatusConstants from "StatusConstants" /* 1188 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;

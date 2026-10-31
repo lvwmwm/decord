@@ -1,16 +1,16 @@
-// Module ID: 11038
-// Function ID: 11039
+// Module ID: 11057
+// Function ID: 11058
 // Name: Timestamp
-// Dependencies: [19, 21, 5009, 575, 11039, 1188, 5707, 2]
+// Dependencies: [19, 21, 5014, 575, 11058, 1187, 5712, 2]
 // Exports: default
 
-// Module 11038 (Timestamp)
+// Module 11057 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11039 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11058 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -26,7 +26,7 @@ export default function Timestamp(node) {
   let timestamp = closure_4().timestamp;
   const tmp = closure_4();
   const tmp2 = useFormattedTimestampDefault(node);
-  const LegacyText = node(1188).LegacyText;
+  const LegacyText = node(1187).LegacyText;
   const tmp3 = jsx;
   if (timestamp == null) {
     timestamp = style;

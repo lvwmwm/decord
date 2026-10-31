@@ -1,17 +1,17 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15161
+// Function ID: 15162
 // Name: InAppReportsRemediationsElement
-// Dependencies: [19, 17, 21, 5009, 575, 7054, 1114, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7060, 1113, 2]
 // Exports: default
 
-// Module 15122 (InAppReportsRemediationsElement)
+// Module 15161 (InAppReportsRemediationsElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import TableRowGroup2 from "TableRowGroup" /* 7054 */;
+import intl2 from "intl" /* 1113 */;
+import TableRowGroup2 from "TableRowGroup" /* 7060 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

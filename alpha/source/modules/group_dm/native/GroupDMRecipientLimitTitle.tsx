@@ -1,22 +1,22 @@
-// Module ID: 18787
-// Function ID: 18788
+// Module ID: 18830
+// Function ID: 18831
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1072, 21, 5009, 575, 1376, 11590, 5591, 1114, 5619, 9506, 12345, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 1375, 11626, 5596, 1113, 5624, 9528, 12383, 2]
 // Exports: default
 
-// Module 18787 (GroupDMRecipientLimitTitle)
+// Module 18830 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import useToken from "useToken" /* 5591 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11590 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12345 */;
+import intl2 from "intl" /* 1113 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11626 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12383 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -71,7 +71,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
       str2 = "text-feedback-critical";
     }
   }
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1113).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
   const items = [, ];
   const obj5 = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp.title, maxFontSizeMultiplier: 2, children: title };
@@ -80,7 +80,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9506).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9528).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

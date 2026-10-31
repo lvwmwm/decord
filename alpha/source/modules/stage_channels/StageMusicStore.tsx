@@ -1,9 +1,9 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11874
+// Function ID: 11875
 // Name: StageMusicStore
 // Dependencies: [504, 572, 2]
 
-// Module 11836 (StageMusicStore)
+// Module 11874 (StageMusicStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

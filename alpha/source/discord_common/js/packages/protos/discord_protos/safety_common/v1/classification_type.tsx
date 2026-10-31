@@ -1,9 +1,9 @@
-// Module ID: 1394
-// Function ID: 1395
+// Module ID: 1393
+// Function ID: 1394
 // Name: classification_type
 // Dependencies: [2]
 
-// Module 1394 (classification_type)
+// Module 1393 (classification_type)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/safety_common/v1/classification_type.tsx");

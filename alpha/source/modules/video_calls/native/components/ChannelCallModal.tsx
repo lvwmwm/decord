@@ -1,27 +1,27 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11698
+// Function ID: 11699
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6837, 4858, 10981, 10982, 11662, 1072, 21, 10985, 11663, 5193, 11666, 11807, 11193, 11808, 5090, 5202, 12019, 504, 1492, 11664, 12020, 7320, 7345, 13133, 7931, 5298, 10987, 2]
+// Dependencies: [32, 19, 6843, 4863, 11000, 11001, 11699, 1072, 21, 11004, 11700, 5198, 11703, 11845, 11212, 11846, 5095, 5207, 12057, 504, 1491, 11701, 12058, 7326, 7351, 13168, 7939, 5303, 11006, 2]
 
-// Module 11661 (ChannelCallModal)
+// Module 11698 (ChannelCallModal)
 import Constants2 from "Constants" /* 1072 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7931 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10982 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 10985 */;
-import RevealProvider from "RevealProvider" /* 11663 */;
-import CameraPreviewDefault from "CameraPreview" /* 11666 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 11807 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 11808 */;
-import PanGestureAnimations from "PanGestureAnimations" /* 12019 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 12020 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7939 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11001 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 11004 */;
+import RevealProvider from "RevealProvider" /* 11700 */;
+import CameraPreviewDefault from "CameraPreview" /* 11703 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 11845 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 11846 */;
+import PanGestureAnimations from "PanGestureAnimations" /* 12057 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 12058 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import ChannelCallStore from "ChannelCallStore" /* 10981 */;
-import Constants from "Constants" /* 11662 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelCallStore from "ChannelCallStore" /* 11000 */;
+import Constants from "Constants" /* 11699 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 

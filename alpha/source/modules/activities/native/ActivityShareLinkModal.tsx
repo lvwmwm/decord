@@ -1,31 +1,31 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16323
+// Function ID: 16324
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4858, 1384, 4857, 10707, 5014, 21, 5009, 575, 504, 13334, 12284, 16280, 7324, 1380, 16282, 7629, 7817, 5707, 1114, 7352, 5706, 1492, 1376, 13344, 7552, 5722, 10716, 13345, 13369, 2]
+// Dependencies: [5, 32, 19, 17, 4863, 1383, 4862, 10727, 5019, 21, 5014, 575, 504, 13369, 12322, 16322, 7330, 1379, 16324, 7636, 7824, 5712, 1113, 7358, 5711, 1491, 1375, 13379, 7558, 5727, 10736, 13380, 13404, 2]
 // Exports: default
 
-// Module 16281 (ActivityShareLinkModal)
+// Module 16323 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import MessageConstants from "MessageConstants" /* 5014 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import LinkIcon from "LinkIcon" /* 5722 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7552 */;
-import UserRowConstants from "UserRowConstants" /* 10707 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12284 */;
-import formatResults from "formatResults" /* 13334 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16280 */;
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import LinkIcon from "LinkIcon" /* 5727 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
+import UserRowConstants from "UserRowConstants" /* 10727 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12322 */;
+import formatResults from "formatResults" /* 13369 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import UserStore from "UserStore" /* 1384 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, channel, closure_0;
@@ -132,7 +132,7 @@ export default function ActivityShareLinkModal(applicationId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -220,7 +220,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -242,7 +242,7 @@ export default function ActivityShareLinkModal(applicationId) {
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

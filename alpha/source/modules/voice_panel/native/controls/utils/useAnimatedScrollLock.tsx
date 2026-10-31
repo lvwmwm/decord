@@ -1,13 +1,13 @@
-// Module ID: 12254
-// Function ID: 12255
+// Module ID: 12292
+// Function ID: 12293
 // Name: useAnimatedScrollLock
-// Dependencies: [19, 1376, 5090, 2]
+// Dependencies: [19, 1375, 5095, 2]
 // Exports: useAnimatedScrollLock
 
-// Module 12254 (useAnimatedScrollLock)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+// Module 12292 (useAnimatedScrollLock)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_3 = PlatformUtils.isAndroid();

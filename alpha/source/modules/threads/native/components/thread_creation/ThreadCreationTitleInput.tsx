@@ -1,15 +1,15 @@
-// Module ID: 18613
-// Function ID: 18614
+// Module ID: 18655
+// Function ID: 18656
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 4858, 1072, 21, 18614, 8335, 7449, 1496, 1624, 504, 9755, 1114, 7076, 6953, 2]
+// Dependencies: [19, 4863, 1072, 21, 18656, 8343, 7455, 1495, 1623, 504, 9776, 1113, 7082, 6959, 2]
 
-// Module 18613 (ThreadCreationTitleInput)
+// Module 18655 (ThreadCreationTitleInput)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7449 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8335 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7455 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8343 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const MAX_CHANNEL_NAME_LENGTH = Constants.MAX_CHANNEL_NAME_LENGTH;
@@ -49,7 +49,7 @@ const memoResult = react.memo(function ThreadCreationTitleInput(chatInputRef) {
         const tmp2 = importDefault;
         if (tmp4 !== threadSettingsDraft.name) {
           const obj = { name: tmp4 };
-          const tmp2Result = tmp2(8335);
+          const tmp2Result = tmp2(8343);
           tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
         }
       }

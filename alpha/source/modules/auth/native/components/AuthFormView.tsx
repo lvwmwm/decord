@@ -1,19 +1,19 @@
-// Module ID: 7133
-// Function ID: 7134
+// Module ID: 7139
+// Function ID: 7140
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 5009, 575, 7105, 7134, 7135, 7136, 7139, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7111, 7140, 7141, 7142, 7145, 2]
 // Exports: default
 
-// Module 7133 (AuthFormView)
+// Module 7139 (AuthFormView)
 import nativeDefault from "native" /* 575 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7105 */;
-import react2 from "react" /* 7134 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7136 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7139 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
+import react2 from "react" /* 7140 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7142 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7145 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     const tmp13 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = metroRequire(tmp(7135), obj3);
+      tmp15 = metroRequire(tmp(7141), obj3);
     }
     items1 = [tmp15, , ];
     let tmp17 = null;
@@ -118,7 +118,7 @@ export default function AuthFormView(arg0) {
     const tmp8 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(7135), obj7);
+      tmp7Result = tmp7(tmp(7141), obj7);
     }
     items5 = [tmp7Result, , ];
     let tmp7Result2 = null;

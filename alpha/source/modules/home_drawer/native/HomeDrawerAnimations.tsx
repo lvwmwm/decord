@@ -1,37 +1,26 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18062
+// Function ID: 18063
 // Name: HomeDrawerAnimations
-// Dependencies: [5090, 2]
+// Dependencies: [5095, 2]
 
-// Module 18019 (HomeDrawerAnimations)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+// Module 18062 (HomeDrawerAnimations)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import size from "module_2" /* 2 */;
 
 let Easing;
 let Easing3;
-let Easing5;
-let Easing6;
-let Easing7;
+let Easing4;
 let out;
-let out2;
 const obj = { duration: 200, easing: Easing.out(ReanimatedRexport.Easing.cubic) };
 Easing = ReanimatedRexport.Easing;
-const obj2 = { duration: 200, easing: out(Easing3.poly(4)) };
+const obj2 = { duration: 100, easing: out(Easing3.poly(4)) };
 const Easing2 = ReanimatedRexport.Easing;
 out = Easing2.out;
 Easing3 = ReanimatedRexport.Easing;
-const obj3 = { duration: 100, easing: out2(Easing5.poly(4)) };
-const Easing4 = ReanimatedRexport.Easing;
-out2 = Easing4.out;
-Easing5 = ReanimatedRexport.Easing;
-const obj4 = { duration: 180, easing: Easing6.bezier(0, 0, 0.2, 1) };
-Easing6 = ReanimatedRexport.Easing;
-const obj5 = { duration: 200, easing: Easing7.bezier(0, 0, 0.2, 1) };
-Easing7 = ReanimatedRexport.Easing;
+const obj3 = { duration: 180, easing: Easing4.bezier(0, 0, 0.2, 1) };
+Easing4 = ReanimatedRexport.Easing;
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerAnimations.tsx");
 
 export const HOME_DRAWER_SETTLE_TIMING = obj;
-export const HOME_DRAWER_SNAP_TIMING = obj2;
-export const HOME_DRAWER_FLING_THROW_TIMING = obj3;
-export const HOME_DRAWER_FLING_RETURN_TIMING = obj4;
-export const HOME_DRAWER_UNSNAP_TIMING = obj5;
+export const HOME_DRAWER_FLING_THROW_TIMING = obj2;
+export const HOME_DRAWER_FLING_RETURN_TIMING = obj3;

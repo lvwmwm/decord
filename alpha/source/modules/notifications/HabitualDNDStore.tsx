@@ -1,18 +1,18 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15606
+// Function ID: 15607
 // Name: HabitualDNDStore
-// Dependencies: [6564, 1072, 1090, 4834, 572, 504, 2]
+// Dependencies: [6570, 1072, 1089, 4839, 572, 504, 2]
 
-// Module 15567 (HabitualDNDStore)
+// Module 15606 (HabitualDNDStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
 import size from "module_2" /* 2 */;
 
-const f108401 = (item) => {
+const f108682 = (item) => {
   const timestamp = Date.now();
   return item < timestamp - 3 * DurationsDefault.Millis.DAY;
 };
@@ -60,7 +60,7 @@ let obj = {
           return item > timestamp - 5 * DurationsDefault.Millis.DAY;
         });
         sessionStartsWithDND = found;
-        const someResult = found.length >= 4 && sessionStartsWithDND.some(f108401);
+        const someResult = found.length >= 4 && sessionStartsWithDND.some(f108682);
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
@@ -73,8 +73,8 @@ let obj = {
     sessionStartsWithDND = [];
   },
   HABITUAL_DND_CLEAR: function handleDNDClear() {
-    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108401);
-    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108401);
+    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108682);
+    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108682);
     sessionStartsWithDND = [];
   }
 };

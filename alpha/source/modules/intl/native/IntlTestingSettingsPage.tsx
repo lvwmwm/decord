@@ -1,27 +1,27 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17610
+// Function ID: 17611
 // Name: IntlTestingSettingsPage
-// Dependencies: [32, 5, 19, 17, 2064, 2063, 21, 5009, 575, 7052, 1114, 5913, 7055, 504, 2044, 7054, 6969, 1153, 6022, 5619, 17551, 17583, 2]
+// Dependencies: [32, 5, 19, 17, 2063, 2062, 21, 5014, 575, 7058, 1113, 5932, 7061, 504, 2042, 7060, 6975, 1152, 6027, 5624, 17611, 17643, 2]
 // Exports: default
 
-// Module 17550 (IntlTestingSettingsPage)
+// Module 17610 (IntlTestingSettingsPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1114 */;
-import _mod1153 from "module_1153" /* 1153 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2064 */;
-import TableRow6 from "TableRow" /* 6969 */;
-import TableRowGroup2 from "TableRowGroup" /* 7054 */;
-import _modDef17551 from "module_17551" /* 17551 */;
-import _modDef17583 from "module_17583" /* 17583 */;
+import intl7 from "intl" /* 1113 */;
+import _mod1152 from "module_1152" /* 1152 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
+import TableRow6 from "TableRow" /* 6975 */;
+import TableRowGroup2 from "TableRowGroup" /* 7060 */;
+import _modDef17611 from "module_17611" /* 17611 */;
+import _modDef17643 from "module_17643" /* 17643 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,7 +57,7 @@ function TestLocaleSelector() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ function TestLocaleSelector() {
           const obj = tmp(closure_2[11]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         c4 = 3;
@@ -115,16 +115,16 @@ function LocaleInfo() {
     ({ locale: arr[0], systemLocale: arr[1] } = LocaleStore);
     return items;
   });
-  [tmp5, require] = react.useState(_modDef2044.locale);
+  [tmp5, require] = react.useState(_modDef2042.locale);
   const items1 = [first];
-  _slicedToArray(react.useState(_modDef2044.locale), 2);
+  _slicedToArray(react.useState(_modDef2042.locale), 2);
   const effect = react.useEffect(() => {
     const timerId = setTimeout(() => {
-      const obj = _modDef2044;
+      const obj = _modDef2042;
       closure_1_0(obj.locale());
     }, 0);
   }, items1);
-  const obj2 = _modDef2044;
+  const obj2 = _modDef2042;
   const _abbr = obj2.localeData()._abbr;
   const TableRowGroup = TableRowGroup2.TableRowGroup;
   const obj3 = { label: "Active System", trailing: closure_10(TableRow6.TableRow.TrailingText, { text: "@discord/intl" }) };
@@ -178,7 +178,7 @@ export default function IntlTestingSettingsPage() {
   const syncExternalStore = react.useSyncExternalStore(require("intl").intl.onLocaleChange, () => closure_0(dependencyMap[10]).intl.currentLocale);
   _require = _slicedToArray(react.useState({}), 2)[1];
   const effect = react.useEffect(() => {
-    const obj = _mod1153;
+    const obj = _mod1152;
     const result = obj.waitForAllDefaultIntlMessagesLoaded();
     result.then(() => {
       closure_1_0({});
@@ -188,19 +188,19 @@ export default function IntlTestingSettingsPage() {
   obj2 = { spacing: 24, style: tmp.container, children: items };
   Stack = require("Stack/Stack").Stack;
   items = [closure_10(LocaleInfo, {}), closure_10(TestLocaleSelector, {}), , , , , , ];
-  const obj3 = { variant: "text-md/normal", children: intl.format(_modDef17551.HMvEC5, {}) };
+  const obj3 = { variant: "text-md/normal", children: intl.format(_modDef17611.HMvEC5, {}) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items[2] = closure_10(Text, obj3);
-  const obj4 = { variant: "text-md/normal", children: intl2.format(_modDef17583.swfLzV, {}) };
+  const obj4 = { variant: "text-md/normal", children: intl2.format(_modDef17643.swfLzV, {}) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[3] = closure_10(Text2, obj4);
-  const obj5 = { variant: "text-md/normal", children: intl3.format(_modDef17551.rmps8y, {}) };
+  const obj5 = { variant: "text-md/normal", children: intl3.format(_modDef17611.rmps8y, {}) };
   const Text3 = require("Text/Text").Text;
   intl3 = require("intl").intl;
   items[4] = closure_10(Text3, obj5);
-  const obj6 = { variant: "text-md/normal", children: intl4.format(_modDef17551.uczI4g, obj7) };
+  const obj6 = { variant: "text-md/normal", children: intl4.format(_modDef17611.uczI4g, obj7) };
   const Text4 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   obj7 = {
@@ -209,11 +209,11 @@ export default function IntlTestingSettingsPage() {
     }
   };
   items[5] = closure_10(Text4, obj6);
-  const obj8 = { variant: "text-md/normal", children: intl5.format(_modDef17551.rdfRyh, {}) };
+  const obj8 = { variant: "text-md/normal", children: intl5.format(_modDef17611.rdfRyh, {}) };
   const Text5 = require("Text/Text").Text;
   intl5 = require("intl").intl;
   items[6] = closure_10(Text5, obj8);
-  const obj9 = { variant: "text-md/normal", children: intl6.format(_modDef17551.XOdbAy, obj10) };
+  const obj9 = { variant: "text-md/normal", children: intl6.format(_modDef17611.XOdbAy, obj10) };
   const Text6 = require("Text/Text").Text;
   intl6 = require("intl").intl;
   obj10 = {

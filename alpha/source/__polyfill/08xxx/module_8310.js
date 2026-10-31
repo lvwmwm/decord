@@ -1,80 +1,195 @@
 // Module ID: 8310
 // Function ID: 8311
-// Dependencies: [32, 8271, 8288, 8311]
+// Dependencies: [8311, 8312]
 
 // Module 8310
-import _mod8271 from "module_8271" /* 8271 */;
-import _modDef8288 from "module_8288" /* 8288 */;
-import PathRecordTypesDefault from "PathRecordTypes" /* 8311 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _modDef8311 from "module_8311" /* 8311 */;
+import _modDef8312 from "module_8312" /* 8312 */;
 
-let length;
-let metroImportDefault;
-function getTagName(dataView, sum1) {
-  let num;
-  let sum;
-  const obj = _mod8271;
-  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
-  const first = tmp[0];
-  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
-  num = 0;
-  sum = 1 + first;
-  if (first % 2 === 0) {
-    num = 1;
-  }
-  return obj2;
-}
-let obj = {
-  read(arg0, arg1) {
-    let tmp4Result2;
-    const getDataView = _mod8271.getDataView;
-    _mod8271;
-    const uint8Array = new Uint8Array(arg0);
-    const dataView = getDataView(uint8Array.buffer);
-    const obj = {};
-    let num = 0;
-    if (0 < arg0.length) {
-      const sum = num + metroImportDefault;
-      const obj2 = _mod8271;
-      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
-      const obj3 = _modDef8288;
-      const shortAt = obj3.getShortAt(dataView, sum);
-      const sum1 = sum + c5;
-      const tmp14 = getTagName(dataView, sum1);
-      let name = tmp14.tagName;
-      const sum2 = sum1 + tmp14.tagNameSize;
-      const obj4 = _modDef8288;
-      const longAt = obj4.getLongAt(dataView, sum2);
-      const sum3 = sum2 + c6;
-      if (stringFromDataView === c4) {
-        const tmp4Result = _mod8271;
-        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
-        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
-        tmp4Result2 = _mod8271;
-        if (PathRecordTypesDefault[shortAt]) {
-          try {
-            const obj5 = PathRecordTypesDefault[shortAt];
-            obj6.description = obj5.description(dataView1);
-          } catch (err) {
-            obj6.description = "<no description formatter>";
+function parseTags(byteLength, size, sum, arg3) {
+  let combined;
+  let tmp22;
+  let tmp8;
+  let tmp = sum;
+  const obj = {};
+  sum = sum + size.size;
+  if (sum < sum) {
+    if (tmp < byteLength.byteLength) {
+      while (true) {
+        let obj2;
+        let encoding = tmp22;
+        if (byteLength.getUint8(tmp) !== 28) {
+          obj2 = { tag: null, tagSize: 0 };
+        } else {
+          let num;
+          let uint16 = byteLength.getUint16(tmp + 1);
+          let uint161 = byteLength.getUint16(tmp + 3);
+          if (!arg3) {
+            if (!_modDef8311.iptc[uint16]) {
+              obj2 = { tag: "Array", tagSize: uint161 };
+            }
           }
-          if (!name) {
-            name = tmp9(8311)[shortAt].name;
+          let items = [];
+          for (let num = 0; num < uint161; num = num + 1) {
+            let arr = items.push(byteLength.getUint8(tmp6 + num));
           }
-          obj[name] = obj6;
-        } else if (arg1) {
-          const _HermesInternal = HermesInternal;
-          obj["undefined-" + shortAt] = obj6;
+          let obj3 = { id: uint16, name: combined, value: items, description: getTagDescription(tmp8(8311).iptc[uint16], items, obj, encoding) };
+          tmp8 = importDefault;
+          let obj4 = _modDef8311.iptc[uint16];
+          if (obj4) {
+            let tmp11 = obj4;
+            if (typeof obj4 !== "string") {
+              let name;
+              if (typeof obj4.name === "function") {
+                name = obj4.name(items);
+              } else {
+                name = obj4.name;
+              }
+              tmp11 = name;
+            }
+            combined = tmp11;
+          } else {
+            let _HermesInternal = HermesInternal;
+            combined = "undefined-" + uint16;
+          }
+          let tmp16 = tmp8(8311).iptc[uint16] && tmp8(8311).iptc[uint16].repeatable;
+          if (tmp16) {
+            obj3.repeatable = true;
+          }
+          let tmp17 = tmp8(8311).iptc[uint16] && undefined !== tmp8(8311).iptc[uint16].encoding_name;
+          if (tmp17) {
+            let obj5 = tmp8(8311).iptc[uint16];
+            obj3.encoding = obj5.encoding_name(items);
+          }
+          let obj6 = { tag: obj3, tagSize: uint161 };
+          obj2 = obj6;
+        }
+        let tag = obj2.tag;
+        if (null === tag) {
+          break;
+        } else {
+          let tmp20 = encoding;
+          if (tag) {
+            if ("encoding" in tag) {
+              encoding = tag.encoding;
+            }
+            if (undefined !== obj[tag.name]) {
+              if (undefined !== tag.repeatable) {
+                let _Array = Array;
+                if (!(obj[tag.name] instanceof Array)) {
+                  let obj7 = { id: obj[tag.name].id, value: obj[tag.name].value, description: obj[tag.name].description };
+                  let items1 = [obj7];
+                  obj[tag.name] = items1;
+                }
+                let arr3 = obj[tag.name];
+                let obj15 = { id: null, value: null, description: null };
+                ({ id: obj8.id, value: obj8.value, description: obj8.description } = tag);
+                let arr2 = arr3.push(obj15);
+                tmp20 = encoding;
+              }
+            }
+            let obj16 = { id: null, value: null, description: null };
+            ({ id: obj9.id, value: obj9.value, description: obj9.description } = tag);
+            obj[tag.name] = obj16;
+            tmp20 = encoding;
+          }
+          let sum1 = tmp + (5 + tmp18);
+          if (sum1 >= sum) {
+            break;
+          } else {
+            tmp22 = tmp20;
+            tmp = sum1;
+            if (sum1 >= byteLength.byteLength) {
+              break;
+            }
+          }
         }
       }
-      num = sum3 + (longAt + longAt % 2);
     }
-    return obj;
+  }
+  return obj;
+}
+function getTagDescription(description, items, arg2, encoding) {
+  function hasDescriptionProperty(description) {
+    return description && undefined !== description.description;
+  }
+  function tagValueIsText(description, items) {
+    let tmp = description;
+    if (tmp) {
+      const _Array = Array;
+      tmp = items instanceof Array;
+    }
+    return tmp;
+  }
+  if (!hasDescriptionProperty(description)) {
+    let decodeResult = items;
+    if (tagValueIsText(description, items)) {
+      const decoder = _modDef8312;
+      decodeResult = decoder.decode(encoding, items);
+    }
+    return decodeResult;
+  } else {
+    try {
+      let tmp = arg2;
+      return description.description(items, arg2);
+    } catch (err) {
+    }
+  }
+}
+
+export default {
+  read(byteLength, sum, arg2) {
+    function getNaaResourceBlock(byteLength, sum) {
+      let tmp = sum;
+      if (sum + 12 <= byteLength.byteLength) {
+        while (943868237 === byteLength.getUint32(tmp, false)) {
+          let uint8 = byteLength.getUint8(tmp + 4 + 2);
+          sum = uint8;
+          if (uint8 % 2 === 0) {
+            sum = uint8 + 1;
+          }
+          let sum1 = sum + 1;
+          let obj = { headerSize: 6 + sum1 + 4, type: byteLength.getUint16(tmp + 4), size: byteLength.getUint32(tmp + 4 + 2 + sum1) };
+          if (1028 === obj.type) {
+            let obj2 = { naaBlock: obj, dataOffset: tmp + obj.headerSize };
+            return obj2;
+          } else {
+            let num = 0;
+            let sum2 = obj.headerSize + obj.size;
+            if (obj.size % 2 !== 0) {
+              num = 1;
+            }
+            let sum3 = tmp + (sum2 + num);
+            tmp = sum3;
+          }
+        }
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Not an IPTC resource block.");
+        throw error;
+      }
+      const error1 = new Error("No IPTC NAA resource block.");
+      throw error1;
+    }
+    try {
+      let tmp = byteLength;
+      const _Array = Array;
+      if (Array.isArray(byteLength)) {
+        const _DataView = DataView;
+        const _Uint8Array = Uint8Array;
+        let self = this;
+        let self2 = this;
+        const dataView = new DataView(Uint8Array.from(byteLength).buffer);
+        let obj = { size: byteLength.length };
+        return parseTags(dataView, obj, 0, arg2);
+      } else {
+        let num = 0;
+        const tmp5 = getNaaResourceBlock(byteLength, sum);
+        return parseTags(byteLength, tmp5.naaBlock, tmp5.dataOffset, arg2);
+      }
+    } catch (err) {
+      return {};
+    }
   }
 };
-let c4 = "8BIM";
-let c5 = 2;
-let c6 = 4;
-({ length, length: metroImportDefault } = "8BIM");
-
-export default obj;

@@ -1,34 +1,34 @@
-// Module ID: 18420
-// Function ID: 18421
+// Module ID: 18463
+// Function ID: 18464
 // Name: Notifications
-// Dependencies: [19, 17, 11479, 4855, 21, 5009, 575, 5194, 7106, 18421, 7286, 6974, 1114, 18422, 5619, 18423, 10172, 18424, 7320, 7345, 7647, 6998, 5606, 18428, 18429, 13285, 5189, 1626, 18015, 10716, 5075, 2]
+// Dependencies: [19, 17, 11513, 4860, 21, 5014, 575, 5199, 7112, 18464, 7292, 6980, 1113, 18465, 5624, 18466, 10192, 18467, 7326, 7351, 7654, 7004, 5611, 18471, 18472, 13320, 5194, 1625, 18058, 10736, 5080, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18420 (Notifications)
+// Module 18463 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import native from "native" /* 5075 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5189 */;
-import RootNavigationRef from "RootNavigationRef" /* 5194 */;
-import LayerScope2 from "LayerScope" /* 5606 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6998 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7106 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7320 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10716 */;
-import MainTabsConstants from "MainTabsConstants" /* 11479 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13285 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18015 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18421 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18423 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18424 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18428 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18429 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import native from "native" /* 5080 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import LayerScope2 from "LayerScope" /* 5611 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7004 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7326 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
+import MainTabsConstants from "MainTabsConstants" /* 11513 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13320 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18058 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18464 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18466 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18467 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18471 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 18472 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -185,12 +185,12 @@ let closure_11 = react.memo(function HeaderInner(nestedInLaunchPad) {
   if (!nestedInLaunchPad) {
     const obj2 = { style: tmp.headerTitle, children: items1 };
     const obj3 = { style: tmp.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp11(6974).PressableOpacity;
-    intl = tmp11(1114).intl;
+    const PressableOpacity = tmp11(6980).PressableOpacity;
+    intl = tmp11(1113).intl;
     items1 = [closure_7(PressableOpacity, obj3), , ];
     const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
-    const Text = tmp11(5619).Text;
-    intl2 = tmp11(1114).intl;
+    const Text = tmp11(5624).Text;
+    intl2 = tmp11(1113).intl;
     items1[1] = closure_7(Text, obj4);
     const obj5 = { style: tmp.actionButtons, children: items2 };
     const obj6 = { ref, type: require("SavedMessagesTypes").SavedMessageSortTypes.BOOKMARK, onOpen: callback };

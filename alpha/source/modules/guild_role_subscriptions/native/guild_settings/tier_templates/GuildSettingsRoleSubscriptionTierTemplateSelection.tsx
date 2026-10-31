@@ -1,25 +1,25 @@
-// Module ID: 19933
-// Function ID: 19934
+// Module ID: 19991
+// Function ID: 19992
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 17154, 19885, 1072, 21, 5009, 575, 5619, 7288, 19934, 563, 17132, 17133, 12363, 19940, 1626, 1498, 1253, 5755, 19893, 10212, 1114, 6992, 6023, 1261, 19881, 1188, 2]
+// Dependencies: [32, 19, 17, 17210, 19942, 1072, 21, 575, 5014, 5624, 7294, 19992, 563, 17190, 17191, 12401, 19998, 1625, 1497, 1252, 5760, 19951, 10232, 1113, 6998, 6028, 1260, 19938, 1187, 2]
 // Exports: default
 
-// Module 19933 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 19991 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17133 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19885 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 19893 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 19934 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17191 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19942 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 19951 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 19992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17154 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17210 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,6 +34,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let obj5;
 let unpackModuleId;
 function TierTemplatesRenderer(groupListingId) {
   let error;
@@ -54,7 +55,7 @@ function TierTemplatesRenderer(groupListingId) {
   } else if (null != error) {
     let obj = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
     items = ["Error: ", error.message];
-    tmp3 = closure_14(guildId(5619).Text, obj);
+    tmp3 = closure_14(guildId(5624).Text, obj);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -73,14 +74,14 @@ function TierTemplatesRenderer(groupListingId) {
                   return closure_1_13(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(19934).CARD_WIDTH + v16,
+          snapToInterval: guildId(19992).CARD_WIDTH + PX_16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                   return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
                 }
         };
-        obj4 = { paddingLeft: v16, paddingRight: v16 };
-        const FlashList = guildId(7288).FlashList;
+        obj4 = { paddingLeft: PX_16, paddingRight: PX_16 };
+        const FlashList = guildId(7294).FlashList;
         tmp3 = closure_13(FlashList, obj3);
       }
     }
@@ -233,13 +234,14 @@ function GuildSettingsRoleSubscriptionTierTemplateSelectionComponent(guildId) {
 const usePriceTiers = RoleTierEditStore.usePriceTiers;
 ({ AnalyticEvents: unpackModuleId, GuildSettingsSections: closure_12 } = Constants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
-let c15 = 16;
+const PX_16 = nativeDefault.space.PX_16;
 let createStyles = createStyles_mod;
-let obj = { container: { marginTop: 16 }, title: obj2, text: { marginLeft: 16, marginRight: 16 }, activityIndicator: obj3, editIcon: obj4, startFromScratch: { display: "flex", flexDirection: "row", alignItems: "center", marginRight: 12 } };
+let obj = { container: { marginTop: PX_16 }, title: obj2, text: { marginLeft: PX_16, marginRight: PX_16 }, activityIndicator: obj3, editIcon: obj4, startFromScratch: obj5 };
 obj2 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, marginRight: 4 };
+obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, marginRight: nativeDefault.space.PX_4 };
+obj5 = { display: "flex", flexDirection: "row", alignItems: "center", marginRight: nativeDefault.space.PX_12 };
 let closure_16 = createStyles(obj);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildSettingsRoleSubscriptionTierTemplateSelection.tsx");

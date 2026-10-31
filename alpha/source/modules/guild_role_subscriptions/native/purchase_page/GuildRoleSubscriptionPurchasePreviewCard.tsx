@@ -1,27 +1,26 @@
-// Module ID: 18571
-// Function ID: 18572
+// Module ID: 18614
+// Function ID: 18615
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 4858, 21, 5009, 575, 7142, 5619, 5253, 18572, 1995, 10050, 17160, 1188, 504, 5647, 1114, 8595, 17147, 18567, 5712, 18573, 2]
+// Dependencies: [32, 19, 17, 4863, 21, 5014, 575, 7148, 5624, 5258, 18615, 1994, 17217, 1187, 504, 5652, 1113, 8603, 17203, 18610, 5717, 18616, 17214, 2]
 // Exports: default
 
-// Module 18571 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 18614 (GuildRoleSubscriptionPurchasePreviewCard)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useChannelNameDefault from "useChannelName" /* 5647 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
-import LayoutUtils from "LayoutUtils" /* 10050 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17147 */;
-import EmojiIconDefault from "EmojiIcon" /* 17160 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17203 */;
+import EmojiIconDefault from "EmojiIcon" /* 17217 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -32,6 +31,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let obj5;
 let rect;
 let size;
 let size1;
@@ -60,7 +60,6 @@ function Separator() {
   return metroImportAll(metroRequire, obj);
 }
 function EmojiGallery(arg0) {
-  let GappedList;
   let emojiIds;
   let guildId;
   let items;
@@ -71,23 +70,23 @@ function EmojiGallery(arg0) {
   const tmp = closure_11();
   const substr = emojiIds.slice(0, maxEmojis);
   const diff = emojiIds.length - maxEmojis;
-  let obj = { style: tmp.emojiGallery, children: closure_8(GappedList, { gap: 18, children: items }) };
-  GappedList = LayoutUtils.GappedList;
+  let obj = { style: tmp.emojiGallery, children: items };
   items = [
-    ...substr.map((id) => {
+    substr.map((id) => {
       const obj = { size: 30, fontSize: 20, guildId: require, id };
       return metroImportAll(EmojiIconDefault, obj, id);
-    })
+    }),
+
   ];
-  let tmp3Result = diff > 0;
-  if (tmp3Result) {
+  let tmp5 = diff > 0;
+  if (tmp5) {
     const obj2 = { style: tmp.emojiTruncatedContainer, children: closure_9(Text_Text.Text, obj3) };
     obj3 = { variant: "text-sm/bold", color: "text-default", children: items1 };
     items1 = ["+", diff];
-    tmp3Result = tmp3(tmp4, obj2, "andMore");
+    tmp5 = closure_8(tmp4, obj2);
   }
-  items[tmp7] = tmp3Result;
-  return closure_8(closure_6, obj);
+  items[1] = tmp5;
+  return closure_9(closure_6, obj);
 }
 function BenefitShowCase(arg0) {
   let description;
@@ -122,16 +121,16 @@ function ChannelBenefitShowCase(channelId) {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp4 = useChannelNameDefault(stateFromStores);
-  const intl = channelId(1114).intl;
-  let title = intl.string(channelId(1114).t.bz1PZX);
+  const intl = channelId(1113).intl;
+  let title = intl.string(channelId(1113).t.bz1PZX);
   if (null != stateFromStores) {
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
-    const obj3 = { size: channelId(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
-    const Icon = tmp(1188).Icon;
-    tmpResult = channelId(8595);
-    items2 = [closure_8(Icon, obj3), closure_8(channelId(1188).Spacer, { size: 4 }), ];
+    const obj3 = { size: channelId(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
+    const Icon = tmp(1187).Icon;
+    tmpResult = channelId(8603);
+    items2 = [closure_8(Icon, obj3), closure_8(channelId(1187).Spacer, { size: 4 }), ];
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
-    items2[2] = closure_8(channelId(5619).Text, obj4);
+    items2[2] = closure_8(channelId(5624).Text, obj4);
     title = closure_9(closure_6, obj2);
   }
   return closure_8(BenefitShowCase, { title, description });
@@ -155,21 +154,22 @@ function ShowAllButton(onPress) {
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, header: { flexDirection: "row" }, image: size, separator: size1, contentContainer: obj3, contentHeader: { textTransform: "uppercase" }, emojiGallery: { flexDirection: "row" }, emojiTruncatedContainer: size2, showAllButton: obj4, showAllButtonUnderline: rect };
+let obj = { container: obj2, header: obj3, image: size, separator: size1, contentContainer: obj4, contentHeader: { textTransform: "uppercase" }, emojiGallery: { flexDirection: "row", gap: 18 }, emojiTruncatedContainer: size2, showAllButton: obj5, showAllButtonUnderline: rect };
 obj2 = { padding: 16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
 size = { width: 48, height: 48, borderRadius: nativeDefault.radii.xl };
 size1 = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER, marginVertical: 16 };
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: nativeDefault.radii.sm, borderTopLeftRadius: nativeDefault.radii.sm, padding: 16 };
+obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: nativeDefault.radii.sm, borderTopLeftRadius: nativeDefault.radii.sm, padding: 16 };
 size2 = { width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: 1 };
-obj4 = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm };
+obj5 = { paddingVertical: 16, paddingHorizontal: 20, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm };
 rect = { position: "absolute", left: 0, right: 0, height: 1, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_11 = createStyles(obj);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchasePreviewCard.tsx");
 
 export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
-  let GappedList;
+  let SeparatedList;
   let intl;
   let intl2;
   let intl3;
@@ -202,72 +202,66 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(18567);
+  const obj6 = listingId(18610);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
-  const tmp14 = guildId(5712);
+  const tmp14 = guildId(5717);
   if (str == null) {
     str = "";
   }
-  items = [, , ];
+  items = [, ];
   const obj9 = { source: { uri: str }, style: tmp2.image };
   items[0] = closure_8(tmp14, obj9);
-  items[1] = closure_8(listingId(1188).Spacer, { size: 16 });
   const obj10 = { children: items1 };
-  items1 = [closure_8(listingId(5619).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1188).Spacer, { size: 4 }), closure_8(listingId(5619).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
-  items[2] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1188).Spacer, { size: 16 }), closure_8(tmp13(18573), { listingId }), ];
+  items1 = [closure_8(listingId(5624).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1187).Spacer, { size: 4 }), closure_8(listingId(5624).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  items[1] = closure_9(closure_6, obj10);
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(18616), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
-    const items3 = [closure_8(listingId(1188).Spacer, { size: 24 }), , ];
-    const obj11 = { style: tmp2.contentContainer, children: closure_9(GappedList, obj12) };
+    const items3 = [closure_8(listingId(1187).Spacer, { size: 24 }), , ];
+    const obj11 = { style: tmp2.contentContainer, children: closure_9(SeparatedList, obj12) };
+    obj12 = { separator: closure_8(Separator, {}), children: items6 };
+    SeparatedList = tmp6(17214).SeparatedList;
     let tmp10Result = null;
-    obj12 = {
-      renderGap() {
-          return closure_1_8(Separator, {});
-        },
-      children: items6
-    };
-    GappedList = tmp6(10050).GappedList;
     const tmp16 = closure_10;
     if (size > 0) {
       const obj13 = { children: items4 };
-      const obj14 = { title: intl.string(listingId(1114).t.ebOU2b), count: size };
-      intl = tmp6(1114).intl;
-      items4 = [closure_8(ContentHeader, obj14), closure_8(listingId(1188).Spacer, { size: 8 }), , ];
+      const obj14 = { title: intl.string(listingId(1113).t.ebOU2b), count: size };
+      intl = tmp6(1113).intl;
+      items4 = [closure_8(ContentHeader, obj14), closure_8(listingId(1187).Spacer, { size: 8 }), , ];
       const obj15 = { emojiIds: items5, guildId, maxEmojis: 5 };
       items5 = [];
       HermesBuiltin.arraySpread(items5, first1, 0);
       items4[2] = closure_8(EmojiGallery, obj15);
-      items4[3] = closure_8(listingId(1188).Spacer, { size: 4 });
+      items4[3] = closure_8(listingId(1187).Spacer, { size: 4 });
       tmp10Result = tmp10(tmp11, obj13);
     }
     items6 = [tmp10Result, , ];
     let tmp10Result4 = null;
     if (null != first4) {
       const obj16 = { children: items7 };
-      const obj17 = { title: intl2.formatToPlainString(listingId(1114).t.y7dUrm, obj18), count: first2.length };
-      intl2 = tmp6(1114).intl;
+      const obj17 = { title: intl2.formatToPlainString(listingId(1113).t.y7dUrm, obj18), count: first2.length };
+      intl2 = tmp6(1113).intl;
       obj18 = { numChannels: first2.length };
-      items7 = [closure_8(ContentHeader, obj17), closure_8(listingId(1188).Spacer, { size: 12 }), , ];
+      items7 = [closure_8(ContentHeader, obj17), closure_8(listingId(1187).Spacer, { size: 12 }), , ];
       const obj20 = { channelId: null, description: null };
       ({ ref_id: obj19.channelId, description: obj19.description } = first4);
       items7[2] = closure_8(ChannelBenefitShowCase, obj20);
-      items7[3] = closure_8(listingId(1188).Spacer, { size: 6 });
+      items7[3] = closure_8(listingId(1187).Spacer, { size: 6 });
       tmp10Result4 = tmp10(tmp11, obj16);
     }
     items6[1] = tmp10Result4;
     let tmp10Result5 = null;
     if (null != first5) {
       const obj21 = { children: items8 };
-      const obj22 = { title: intl3.formatToPlainString(listingId(1114).t.MR7oOF, obj24), count: first3.length };
-      intl3 = tmp6(1114).intl;
+      const obj22 = { title: intl3.formatToPlainString(listingId(1113).t.MR7oOF, obj24), count: first3.length };
+      intl3 = tmp6(1113).intl;
       obj24 = { numBenefits: first3.length };
-      items8 = [closure_8(ContentHeader, obj22), closure_8(listingId(1188).Spacer, { size: 12 }), , ];
+      items8 = [closure_8(ContentHeader, obj22), closure_8(listingId(1187).Spacer, { size: 12 }), , ];
       const obj25 = { title: null, description: null };
       ({ name: obj23.title, description: obj23.description } = first5);
       items8[2] = closure_8(BenefitShowCase, obj25);
-      items8[3] = closure_8(listingId(1188).Spacer, { size: 6 });
+      items8[3] = closure_8(listingId(1187).Spacer, { size: 6 });
       tmp10Result5 = tmp10(tmp11, obj21);
     }
     const obj44 = { children: items3 };
@@ -278,7 +272,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(18572, dependencyMap.paths);
+          const tmp2 = asyncRequire(18615, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

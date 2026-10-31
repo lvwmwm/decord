@@ -1,20 +1,20 @@
-// Module ID: 8813
-// Function ID: 8814
+// Module ID: 8821
+// Function ID: 8822
 // Name: VideoBackground
-// Dependencies: [32, 19, 17, 1072, 21, 5009, 12, 8814, 8815, 5006, 575, 1894, 8816, 1188, 5582, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 12, 8822, 8823, 5011, 575, 1893, 8824, 1187, 5587, 2]
 // Exports: useDominantColorFromImage
 
-// Module 8813 (VideoBackground)
+// Module 8821 (VideoBackground)
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1188 */;
-import react_nativeDefault from "react-native" /* 1894 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8815 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8816 */;
+import native from "native" /* 1187 */;
+import react_nativeDefault from "react-native" /* 1893 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8823 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8824 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp6;
-const LinearGradientDefault = tmp6(5582);
+const LinearGradientDefault = tmp6(5587);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -40,13 +40,13 @@ function useDominantRGBFromImage(arg0, arg1) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(8814)();
+  const tmp5 = first(8822)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != arg0) {
-    hexToRgbResult = tmp3(8815).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(8823).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");

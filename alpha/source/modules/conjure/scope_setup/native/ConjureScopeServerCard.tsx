@@ -1,21 +1,21 @@
-// Module ID: 12715
-// Function ID: 12716
+// Module ID: 12750
+// Function ID: 12751
 // Name: ConjureScopeServerCard
-// Dependencies: [32, 19, 17, 21, 5009, 575, 12442, 5619, 1114, 3865, 12716, 5629, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 12477, 5624, 1113, 3868, 12751, 5634, 2]
 // Exports: default
 
-// Module 12715 (ConjureScopeServerCard)
+// Module 12750 (ConjureScopeServerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12442 */;
-import ConjureClarificationEntityPickerDefault from "ConjureClarificationEntityPicker" /* 12716 */;
+import intl5 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12477 */;
+import ConjureClarificationEntityPickerDefault from "ConjureClarificationEntityPicker" /* 12751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -70,12 +70,12 @@ export default function ConjureScopeServerCard(card) {
   }
   const obj = { style: tmp.surface, children: items1 };
   const obj2 = { style: tmp.header, children: items };
-  const obj3 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(_modDef3865.ickKBI) };
+  const obj3 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(_modDef3868.ickKBI) };
   const tmp13 = ConjureNativeCardSurfaceDefault;
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [metroRequire(Text, obj3), ];
-  const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(_modDef3865.OyM4SV) };
+  const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(_modDef3868.OyM4SV) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[1] = metroRequire(Text2, obj4);
@@ -87,7 +87,7 @@ export default function ConjureScopeServerCard(card) {
   let tmp15Result = null;
   if (null != first.note) {
     const obj7 = { variant: "text-xs/normal", color: "text-muted", children: first.note };
-    tmp15Result = tmp15(tmp16(5619).Text, obj7);
+    tmp15Result = tmp15(tmp16(5624).Text, obj7);
   }
   items2[1] = tmp15Result;
   items1[1] = metroImportDefault(View, obj5);
@@ -95,7 +95,7 @@ export default function ConjureScopeServerCard(card) {
   const obj9 = {
     variant: "primary",
     size: "sm",
-    text: intl3.string(_modDef3865.PTIP7V),
+    text: intl3.string(_modDef3868.PTIP7V),
     disabled: null == id || null == onPickServer,
     onPress() {
       if (null != id) {
@@ -105,14 +105,14 @@ export default function ConjureScopeServerCard(card) {
       }
     }
   };
-  const Button = tmp16(5629).Button;
-  intl3 = tmp16(1114).intl;
+  const Button = tmp16(5634).Button;
+  intl3 = tmp16(1113).intl;
   items3 = [metroRequire(Button, obj9), ];
   let tmp15Result2 = null;
   if (null != onBack) {
     const obj10 = { variant: "tertiary", size: "sm", text: intl4.string(intl5.t["ETE/oC"]), onPress: onBack };
-    const Button2 = tmp16(5629).Button;
-    intl4 = tmp16(1114).intl;
+    const Button2 = tmp16(5634).Button;
+    intl4 = tmp16(1113).intl;
     tmp15Result2 = tmp15(Button2, obj10);
   }
   items3[1] = tmp15Result2;

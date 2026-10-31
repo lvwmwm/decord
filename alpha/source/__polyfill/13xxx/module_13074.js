@@ -1,34 +1,42 @@
 // Module ID: 13074
 // Function ID: 13075
-// Dependencies: [13006]
-// Exports: applySdkMetadata
+// Dependencies: [13046]
+// Exports: handleCallbackErrors
 
 // Module 13074
-import _mod13006 from "module_13006" /* 13006 */;
+import _mod13046 from "module_13046" /* 13046 */;
 
 
-export function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
+export function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod13046;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      return promise;
+    }
+  }
+  fn = arg2;
   if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
-  }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
-  }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    let obj = {
-      name: "sentry.javascript." + arg1,
-      packages: arr.map((item) => {
-          const obj = { name: "" + str + ":@sentry/" + item, version: _mod13006.SDK_VERSION };
-          return obj;
-        }),
-      version: str(13006).SDK_VERSION
+    fn = function t() {
+
     };
-    const _HermesInternal = HermesInternal;
-    tmp.sdk = obj;
   }
-  _metadata._metadata = tmp;
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
+  }
 }

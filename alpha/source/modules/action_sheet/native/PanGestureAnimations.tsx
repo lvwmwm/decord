@@ -1,13 +1,13 @@
-// Module ID: 12019
-// Function ID: 12020
+// Module ID: 12057
+// Function ID: 12058
 // Name: PanGestureAnimations
-// Dependencies: [1188, 5632, 5249, 5090, 5298, 2]
+// Dependencies: [1187, 5637, 5254, 5095, 5303, 2]
 // Exports: default
 
-// Module 12019 (PanGestureAnimations)
-import native from "native" /* 1188 */;
-import timing from "timing" /* 5249 */;
-import spring from "spring" /* 5632 */;
+// Module 12057 (PanGestureAnimations)
+import native from "native" /* 1187 */;
+import timing from "timing" /* 5254 */;
+import spring from "spring" /* 5637 */;
 import size from "module_2" /* 2 */;
 
 let _Math, obj1, obj7, obj8, result1, result2, set, str, str2, sum, tmp10Result, tmp11, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp21Result, tmp22, tmp23, tmp25, tmp26, tmp4, tmp4Result, tmp5, tmp5Result, tmp6, tmp7, tmp8, tmp9, translationX, velocityX;

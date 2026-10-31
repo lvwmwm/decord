@@ -1,13 +1,13 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14495
+// Function ID: 14496
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 5090, 5023, 5632, 14458, 5619, 2]
+// Dependencies: [32, 19, 21, 5095, 5028, 5637, 14496, 5624, 2]
 
-// Module 14457 (BalanceCounter)
+// Module 14495 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 5023 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
+import react2 from "react" /* 5028 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5619);
+const Text_Text = tmp(5624);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
@@ -151,7 +151,7 @@ class BalanceCounter {
       const items1 = [tmp14, ];
       const obj5 = { minWidth: 7 * first };
       items1[1] = obj5;
-      const View = onValueChange(5090).View;
+      const View = onValueChange(5095).View;
       ({ variant: str, color: textColor, style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) });
       const Text = Text_Text.Text;
       tmp15 = <View style={items1}>{null}</View>;

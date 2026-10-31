@@ -1,27 +1,27 @@
-// Module ID: 18415
-// Function ID: 18416
+// Module ID: 18458
+// Function ID: 18459
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 15534, 17004, 1072, 21, 5009, 575, 1114, 5591, 18416, 18418, 5619, 671, 5090, 7032, 5582, 504, 1253, 17003, 5632, 15535, 2]
+// Dependencies: [32, 19, 17, 15573, 17062, 1072, 21, 5014, 575, 1113, 5596, 18459, 18461, 5624, 671, 5095, 7038, 5587, 504, 1252, 17061, 5637, 15574, 2]
 // Exports: default
 
-// Module 18415 (ConnectionBanner)
+// Module 18458 (ConnectionBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import useToken from "useToken" /* 5591 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import spring from "spring" /* 5632 */;
-import _modDef7032 from "module_7032" /* 7032 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 15534 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import spring from "spring" /* 5637 */;
+import _modDef7038 from "module_7038" /* 7038 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 15573 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp2;
-const ReanimatedRexport = tmp2(5090);
+const ReanimatedRexport = tmp2(5095);
 function ConnectionBannerIcon(state) {
   let ConnectionFineIcon;
   let ConnectionUnknownIcon;
@@ -53,12 +53,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(18416).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(18459).ConnectionUnknownIcon;
     return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(18418).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(18461).ConnectionFineIcon;
     return authStore2(metroRequire, obj);
   }
 }
@@ -78,14 +78,14 @@ function ConnectionBannerContent(state) {
   }
   const obj2 = { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: stringResult };
   if (constants.WAITING_FOR_NETWORK === state) {
-    const intl2 = tmp4(1114).intl;
-    stringResult = intl2.string(tmp4(1114).t.XKk1gp);
+    const intl2 = tmp4(1113).intl;
+    stringResult = intl2.string(tmp4(1113).t.XKk1gp);
   } else if (constants.NO_CONNECTION === state) {
-    const intl = tmp4(1114).intl;
-    stringResult = intl.string(tmp4(1114).t.zPerw8);
+    const intl = tmp4(1113).intl;
+    stringResult = intl.string(tmp4(1113).t.zPerw8);
   } else if (constants.BACK_ONLINE === state) {
-    const intl3 = tmp4(1114).intl;
-    stringResult = intl3.string(tmp4(1114).t.j8lYE2);
+    const intl3 = tmp4(1113).intl;
+    stringResult = intl3.string(tmp4(1113).t.j8lYE2);
   }
   items[1] = tmp3(Text, obj2);
   return tmp(tmp2, obj);
@@ -99,7 +99,7 @@ function BackOnlineGlow(progress) {
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(5591);
+  let obj = token(5596);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -121,7 +121,7 @@ function BackOnlineGlow(progress) {
   obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
   obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
   obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
-  tmp4 = _modDef7032;
+  tmp4 = _modDef7038;
   return closure_12(View, obj2);
 }
 function ConnectionBannerInner() {
@@ -254,7 +254,7 @@ export default function ConnectionBanner() {
   let ref;
   let state;
   let stateFromStores;
-  let obj = stateFromStores(15535);
+  let obj = stateFromStores(15574);
   const config = obj.useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   const timeoutMs = config.timeoutMs;

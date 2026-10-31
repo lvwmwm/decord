@@ -1,25 +1,25 @@
-// Module ID: 19131
-// Function ID: 19132
+// Module ID: 19180
+// Function ID: 19181
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 4858, 1384, 6053, 1072, 21, 5009, 575, 1376, 19129, 19128, 19115, 504, 7511, 7519, 1253, 5629, 10042, 10040, 1114, 11041, 5712, 8189, 7360, 7294, 13379, 5619, 8659, 8839, 2]
+// Dependencies: [32, 19, 17, 4863, 1383, 6058, 1072, 21, 5014, 575, 1375, 19178, 19177, 19164, 504, 7517, 7525, 1252, 5634, 10063, 10061, 1113, 11060, 5717, 8197, 7366, 7300, 13414, 5624, 8667, 8848, 2]
 // Exports: default
 
-// Module 19131 (SoundboardSoundPreviewActionSheet)
+// Module 19180 (SoundboardSoundPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7511 */;
-import SoundboardUtils from "SoundboardUtils" /* 7519 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7517 */;
+import SoundboardUtils from "SoundboardUtils" /* 7525 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19164 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import UserStore from "UserStore" /* 1384 */;
-import SoundboardStore from "SoundboardStore" /* 6053 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
+import SoundboardStore from "SoundboardStore" /* 6058 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -133,7 +133,7 @@ export default function SoundboardSoundPreviewActionSheet(channel) {
   [tmp13, c10] = analyticsSource(id.useState(false), 2);
   const stateFromStores3 = tmp13;
   const items8 = [stateFromStores1, sound];
-  const items9 = [id, sound, tmp13];
+  const items9 = [id, sound, tmp13, analyticsSource];
   const tmp12 = analyticsSource(id.useState(false), 2);
   const callback2 = obj3.useCallback(() => {
     let obj2;
@@ -152,10 +152,11 @@ export default function SoundboardSoundPreviewActionSheet(channel) {
   const items10 = [sound, id, analyticsSource];
   const callback3 = obj3.useCallback(() => {
     let guild_id;
+    let items;
     const tmp = stateFromStores3;
     if (!tmp) {
       _undefined(true);
-      const obj = { sound_id: null, sound_name: null, sound_guild_id: null, location_guild_id: guild_id };
+      const obj = { sound_id: null, sound_name: null, sound_guild_id: null, location_guild_id: guild_id, location_stack: items };
       ({ soundId: obj.sound_id, name: obj.sound_name, guildId: obj.sound_guild_id } = sound);
       const track = AnalyticsUtilsDefault.track;
       const EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED = stateFromStores1.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED;
@@ -167,6 +168,7 @@ export default function SoundboardSoundPreviewActionSheet(channel) {
       if (channel != null) {
         guild_id = channel.guild_id;
       }
+      items = [analyticsSource];
       track(EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED, obj);
       const obj2 = SoundboardActionCreators;
       obj2.playSoundLocally(tmp10, tmp8);

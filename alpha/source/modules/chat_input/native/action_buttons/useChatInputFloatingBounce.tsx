@@ -1,17 +1,17 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12807
+// Function ID: 12808
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 12771, 5090, 5249, 5632, 2]
+// Dependencies: [32, 19, 12806, 5095, 5254, 5637, 2]
 // Exports: default
 
-// Module 12772 (useChatInputFloatingBounce)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+// Module 12807 (useChatInputFloatingBounce)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12771 */;
+import ChatInputConstants from "ChatInputConstants" /* 12806 */;
 import size from "module_2" /* 2 */;
 
-let set, set2, set3;
+let set, set2, set3, set4;
 
 let closure_4;
 let hasOwnProperty;
@@ -117,7 +117,7 @@ export default function useChatInputFloatingBounce(visible) {
       const obj5 = visible(num[5]);
       const withSpringResult = obj5.withSpring(1, sharedValue2, "respect-motion-settings");
       let withDelayResult1 = withSpringResult;
-      const set4 = sharedValue2.set;
+      set4 = sharedValue2.set;
       if (num > 0) {
         const obj6 = visible(num[3]);
         withDelayResult1 = obj6.withDelay(tmp31, withSpringResult);

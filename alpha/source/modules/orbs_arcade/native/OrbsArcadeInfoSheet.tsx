@@ -1,15 +1,15 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17044
+// Function ID: 17045
 // Name: OrbsArcadeInfoSheet
-// Dependencies: [19, 16954, 21, 504, 10817, 16973, 1114, 16974, 2]
+// Dependencies: [19, 17010, 21, 504, 10837, 17030, 1113, 17031, 2]
 // Exports: default
 
-// Module 16986 (OrbsArcadeInfoSheet)
+// Module 17044 (OrbsArcadeInfoSheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 16973 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16974 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17030 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17031 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16954 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17010 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -26,15 +26,15 @@ export default function OrbsArcadeInfoSheet(gameId) {
   } else {
     const asset = stateFromStores.asset;
     let tmp8Result;
-    const PromoSheet = tmp(10817).PromoSheet;
+    const PromoSheet = tmp(10837).PromoSheet;
     if (null != asset) {
       const obj2 = { asset };
       tmp8Result = tmp8(OrbsArcadeGameGraphicDefault, obj2);
     }
-    const intl = tmp(1114).intl;
-    const intl2 = tmp(1114).intl;
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", secondaryAction: gameId(16974).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
+    const intl = tmp(1113).intl;
+    const intl2 = tmp(1113).intl;
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", secondaryAction: gameId(17031).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
-    return <PromoSheet illustration={tmp8Result} title={intl.string(gameId(1114).t["3AT3DL"])} description={intl2.string(gameId(1114).t.GSj8gp)} actions={null} />;
+    return <PromoSheet gradientColor="blue" illustration={tmp8Result} title={intl.string(gameId(1113).t["3AT3DL"])} description={intl2.string(gameId(1113).t.GSj8gp)} actions={null} />;
   }
 };

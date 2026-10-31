@@ -1,12 +1,12 @@
-// Module ID: 7164
-// Function ID: 7165
+// Module ID: 7170
+// Function ID: 7171
 // Name: useNavigatorShouldCrossfade
-// Dependencies: [19, 1376, 5023, 2]
+// Dependencies: [19, 1375, 5028, 2]
 // Exports: useNavigatorShouldCrossfade
 
-// Module 7164 (useNavigatorShouldCrossfade)
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import react2 from "react" /* 5023 */;
+// Module 7170 (useNavigatorShouldCrossfade)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import react2 from "react" /* 5028 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

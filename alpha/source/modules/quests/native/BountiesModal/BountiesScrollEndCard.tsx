@@ -1,23 +1,23 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16953
+// Function ID: 16954
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 5010, 6775, 21, 5009, 575, 5249, 5252, 5090, 5582, 16898, 16900, 16858, 504, 16859, 9939, 2]
+// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 5095, 5587, 16954, 16956, 16914, 504, 16915, 9960, 2]
 // Exports: default
 
-// Module 16897 (BountiesScrollEndCard)
+// Module 16953 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9939 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16858 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16859 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16914 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16915 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -39,7 +39,7 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
   const sourceQuestContent = isScrollingInBoundsSharedValue.sourceQuestContent;
   ({ visible, opacityStyle } = isScrollingInBoundsSharedValue);
   const tmp = closure_10();
-  let obj = isActive(5090);
+  let obj = isActive(5095);
   class S {
     constructor() {
       let value;
@@ -60,7 +60,7 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
       return obj2;
     }
   }
-  let obj2 = { isScrollingInBoundsSharedValue, withTiming: isActive(5249).withTiming, isActive, timingStandard: isActive(5252).timingStandard };
+  let obj2 = { isScrollingInBoundsSharedValue, withTiming: isActive(5254).withTiming, isActive, timingStandard: isActive(5257).timingStandard };
   S.__closure = obj2;
   S.__workletHash = 4903386092677;
   S.__initData = __initData;
@@ -68,17 +68,17 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
   const obj3 = { style: items, pointerEvents: "box-none", children: items1 };
   items = [tmp.container, opacityStyle];
   const obj4 = { style: tmp.backdropTint, pointerEvents: "none" };
-  const View = isScrollingInBoundsSharedValue(5090).View;
+  const View = isScrollingInBoundsSharedValue(5095).View;
   items1 = [closure_8(closure_5, obj4), , ];
   const obj5 = { colors: ["rgba(0, 0, 0, 0.48)", "rgba(0, 0, 0, 0.8)"], style: tmp.backdropGradient, pointerEvents: "none" };
-  items1[1] = closure_8(isScrollingInBoundsSharedValue(5582), obj5);
+  items1[1] = closure_8(isScrollingInBoundsSharedValue(5587), obj5);
   const obj6 = { style: items2, pointerEvents: "box-none", children: items3 };
   items2 = [tmp.overlayContent, animatedStyle];
-  const View2 = isScrollingInBoundsSharedValue(5090).View;
+  const View2 = isScrollingInBoundsSharedValue(5095).View;
   items3 = [, ];
   const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
-  items3[0] = closure_8(isScrollingInBoundsSharedValue(16898), obj7);
-  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16900), obj9) };
+  items3[0] = closure_8(isScrollingInBoundsSharedValue(16954), obj7);
+  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16956), obj9) };
   obj9 = {
     bounty,
     visible,

@@ -1,16 +1,16 @@
-// Module ID: 15269
-// Function ID: 15270
+// Module ID: 15308
+// Function ID: 15309
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 4880, 7400, 1072, 10650, 7398, 1100, 7515, 8937, 2]
+// Dependencies: [5, 4885, 7406, 1072, 10670, 7404, 1099, 7521, 8946, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 15269 (navigateToSocialLayerStorefront)
-import router_utils from "router_utils" /* 1100 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7398 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10650 */;
+// Module 15308 (navigateToSocialLayerStorefront)
+import router_utils from "router_utils" /* 1099 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7404 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7400 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7406 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -121,7 +121,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 }
               } else {
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (2 === c3) {

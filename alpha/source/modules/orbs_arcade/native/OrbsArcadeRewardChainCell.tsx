@@ -1,45 +1,47 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 17041
+// Function ID: 17042
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 5010, 21, 5009, 575, 5090, 504, 5249, 5016, 5591, 16955, 671, 16984, 9520, 16964, 7334, 5613, 16985, 2]
-// Exports: default, useOrbsArcadeRewardChainTimeline
+// Dependencies: [32, 19, 17, 5015, 21, 5014, 575, 5095, 504, 5254, 5021, 5596, 17011, 671, 5587, 17042, 9542, 17020, 7340, 5618, 17043, 2]
+// Exports: default, useOrbsArcadeRewardChainRowStyle, useOrbsArcadeRewardChainTimeline
 
-// Module 16983 (OrbsArcadeRewardChainCell)
+// Module 17041 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let focusRingRewardId, map;
 
-let StyleSheet;
+let c10;
 let c9;
-let hasOwnProperty;
 let metroImportAll;
-let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
 let _slicedToArray = _slicedToArray_mod;
-({ View: hasOwnProperty, StyleSheet } = react_native);
-({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
-let c10 = 1.6666666666666667;
+const StyleSheet = react_native.StyleSheet;
+let View = react_native.View;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
+let c11 = 1.6666666666666667;
+let c12 = 500;
+const start = { x: 0, y: 0 };
+const end = { x: 0, y: 1 };
 let createStyles = createStyles_mod;
-let obj = { cell: { width: 50, height: 50, alignItems: "center", justifyContent: "center" }, circle: obj2, ring: obj3, confetti: { position: "absolute", top: -50, left: -50, width: 150, height: 150 }, stem: obj4, checkBadge: { position: "absolute", right: -1, bottom: -1 } };
+let obj = { cell: { width: 50, height: 50, alignItems: "center", justifyContent: "center" }, circle: obj2, ring: obj3, confetti: { position: "absolute", top: -50, left: -50, width: 150, height: 150 }, stem: { position: "absolute", left: 24, width: 2 }, grantedStem: obj4, checkBadge: { position: "absolute", right: -1, bottom: -1 } };
 obj2 = { borderRadius: 25 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { borderWidth: 1.6666666666666667, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj4 = { position: "absolute", left: 24, width: 2, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
-let closure_11 = createStyles(obj);
+obj4 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE, opacity: 0.4 };
+let closure_15 = createStyles(obj);
 function getWindowProgress(arg0, arg1, arg2) {
   let num = 1;
   if (null != arg1) {
@@ -53,45 +55,49 @@ let obj5 = { interpolate: ReanimatedRexport.interpolate, Extrapolation: Reanimat
 getWindowProgress.__closure = obj5;
 getWindowProgress.__workletHash = 10001292080604;
 getWindowProgress.__initData = { code: "function getWindowProgress_OrbsArcadeRewardChainCellTsx1(timeMs,startMs,durationMs){const{interpolate,Extrapolation}=this.__closure;if(startMs==null){return 1;}return interpolate(timeMs,[startMs,startMs+durationMs],[0,1],Extrapolation.CLAMP);}" };
-const __initData = { code: "function OrbsArcadeRewardChainCellTsx2(){const{getWindowProgress,timeline,grantAtMs,GRANT_FILL_MS}=this.__closure;return getWindowProgress(timeline.get(),grantAtMs,GRANT_FILL_MS);}" };
-const __initData2 = { code: "function OrbsArcadeRewardChainCellTsx3(){const{getWindowProgress,timeline,focusRingAtMs,FOCUS_RING_MS}=this.__closure;return getWindowProgress(timeline.get(),focusRingAtMs,FOCUS_RING_MS);}" };
-const __initData3 = { code: "function OrbsArcadeRewardChainCellTsx4(){const{getWindowProgress,timeline,stemAtMs,GRANT_STEM_MS}=this.__closure;return getWindowProgress(timeline.get(),stemAtMs,GRANT_STEM_MS);}" };
-const __initData4 = { code: "function OrbsArcadeRewardChainCellTsx5(){const{confettiAtMs,timeline}=this.__closure;return confettiAtMs!=null&&timeline.get()>=confettiAtMs;}" };
-const __initData5 = { code: "function OrbsArcadeRewardChainCellTsx6(reached,wasReached){const{runOnJS,playConfetti}=this.__closure;if(reached&&wasReached===false){runOnJS(playConfetti)();}}" };
-const __initData6 = { code: "function OrbsArcadeRewardChainCellTsx7(){const{fillProgress}=this.__closure;return{opacity:fillProgress.get()};}" };
-const __initData7 = { code: "function OrbsArcadeRewardChainCellTsx8(){const{interpolate,getWindowProgress,timeline,checkAtMs,GRANT_CHECK_MS,GRANT_CONFETTI_MS}=this.__closure;return{transform:[{scale:interpolate(getWindowProgress(timeline.get(),checkAtMs,GRANT_CHECK_MS+GRANT_CONFETTI_MS),[0,0.6,1],[0,1.2,1])}]};}" };
-const __initData8 = { code: "function OrbsArcadeRewardChainCellTsx9(){const{stemLength,stemProgress}=this.__closure;var _stemLength,_stemLength2;return{top:-((_stemLength=stemLength)!==null&&_stemLength!==void 0?_stemLength:0)*stemProgress.get(),height:((_stemLength2=stemLength)!==null&&_stemLength2!==void 0?_stemLength2:0)*stemProgress.get()};}" };
+const __initData = { code: "function OrbsArcadeRewardChainCellTsx2(){const{isGranted,isFocused,DIMMED_ROW_OPACITY,getWindowProgress,timeline,focusRingAtMs,FOCUS_RING_MS,interpolate}=this.__closure;if(isGranted){return{opacity:1};}if(!isFocused){return{opacity:DIMMED_ROW_OPACITY};}const progress=getWindowProgress(timeline.get(),focusRingAtMs,FOCUS_RING_MS);return{opacity:interpolate(progress,[0,1],[DIMMED_ROW_OPACITY,1])};}" };
+const __initData2 = { code: "function OrbsArcadeRewardChainCellTsx3(){const{getWindowProgress,timeline,grantAtMs,GRANT_FILL_MS}=this.__closure;return getWindowProgress(timeline.get(),grantAtMs,GRANT_FILL_MS);}" };
+const __initData3 = { code: "function OrbsArcadeRewardChainCellTsx4(){const{getWindowProgress,timeline,focusRingAtMs,FOCUS_RING_MS}=this.__closure;return getWindowProgress(timeline.get(),focusRingAtMs,FOCUS_RING_MS);}" };
+const __initData4 = { code: "function OrbsArcadeRewardChainCellTsx5(){const{getWindowProgress,timeline,stemAtMs,GRANT_STEM_MS}=this.__closure;return getWindowProgress(timeline.get(),stemAtMs,GRANT_STEM_MS);}" };
+const __initData5 = { code: "function OrbsArcadeRewardChainCellTsx6(){const{confettiAtMs,timeline}=this.__closure;return confettiAtMs!=null&&timeline.get()>=confettiAtMs;}" };
+const __initData6 = { code: "function OrbsArcadeRewardChainCellTsx7(reached,wasReached){const{runOnJS,playConfetti}=this.__closure;if(reached&&wasReached===false){runOnJS(playConfetti)();}}" };
+const __initData7 = { code: "function OrbsArcadeRewardChainCellTsx8(){const{fillProgress}=this.__closure;return{opacity:fillProgress.get()};}" };
+const __initData8 = { code: "function OrbsArcadeRewardChainCellTsx9(){const{interpolate,getWindowProgress,timeline,checkAtMs,GRANT_CHECK_MS,GRANT_CONFETTI_MS}=this.__closure;return{transform:[{scale:interpolate(getWindowProgress(timeline.get(),checkAtMs,GRANT_CHECK_MS+GRANT_CONFETTI_MS),[0,0.6,1],[0,1.2,1])}]};}" };
+const __initData9 = { code: "function OrbsArcadeRewardChainCellTsx10(){const{stemLength,stemProgress}=this.__closure;var _stemLength,_stemLength2;return{top:-((_stemLength=stemLength)!==null&&_stemLength!==void 0?_stemLength:0)*stemProgress.get(),height:((_stemLength2=stemLength)!==null&&_stemLength2!==void 0?_stemLength2:0)*stemProgress.get()};}" };
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeRewardChainCell.tsx");
 
-export default function OrbsArcadeRewardChainCell(timeline) {
+export default function OrbsArcadeRewardChainCell(grantAtMs) {
   let CircleCheckIcon;
+  let callback;
   let isFocused;
-  let items1;
-  let items2;
+  let isStemTargetGranted;
   let items3;
   let items4;
   let items5;
   let items6;
-  let obj17;
+  let items7;
   let obj19;
+  let obj21;
   let reward;
   let status;
   let stemLength;
-  let tmp26Result;
-  let tmp26Result6;
+  let timeline;
+  let tmp25Result;
+  let tmp32Result;
+  let tmp32Result6;
   let tmp4Result;
-  ({ reward, stemLength } = timeline);
-  timeline = timeline.timeline;
-  const grantAtMs = timeline.grantAtMs;
-  const focusRingAtMs = timeline.focusRingAtMs;
+  ({ reward, stemLength } = grantAtMs);
+  ({ isStemTargetGranted, timeline } = grantAtMs);
+  grantAtMs = grantAtMs.grantAtMs;
+  const focusRingAtMs = grantAtMs.focusRingAtMs;
   let c6;
   let sum1;
   let sum2;
   let derivedValue;
   let derivedValue2;
-  let playConfetti;
-  ({ status, isFocused } = timeline);
-  let tmp = playConfetti();
+  let strokeWidth;
+  ({ status, isFocused } = grantAtMs);
+  let tmp = closure_15();
   let tmp2 = stemLength;
   const tmp3 = grantAtMs;
   let obj = stemLength(grantAtMs[10]);
@@ -117,34 +123,14 @@ export default function OrbsArcadeRewardChainCell(timeline) {
   if (null != sum1) {
     sum2 = sum1 + 250;
   }
-  const fn = function y() {
-    const value = timeline.get();
-    if (typeof getWindowProgress === "function") {
-      let num = 1;
-      if (null != grantAtMs) {
-        const items = [grantAtMs, grantAtMs + 400];
-        const obj = ReanimatedRexport;
-        num = obj.interpolate(value, items, [0, 1], ReanimatedRexport.Extrapolation.CLAMP);
-      }
-      return num;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  };
-  const obj5 = { getWindowProgress, timeline, grantAtMs, GRANT_FILL_MS: 400 };
-  fn.__closure = obj5;
-  fn.__workletHash = 16298581706582;
-  fn.__initData = __initData;
   const tmp2Result = tmp2(tmp3[7]);
-  derivedValue = tmp2Result.useDerivedValue(fn);
-  const tmp2Result8 = tmp2(tmp3[7]);
-  class L {
+  class D {
     constructor() {
       const value = timeline.get();
       if (typeof getWindowProgress === "function") {
         let num = 1;
-        if (null != focusRingAtMs) {
-          const items = [focusRingAtMs, focusRingAtMs + 500];
+        if (null != grantAtMs) {
+          const items = [grantAtMs, grantAtMs + 400];
           const obj = ReanimatedRexport;
           num = obj.interpolate(value, items, [0, 1], ReanimatedRexport.Extrapolation.CLAMP);
         }
@@ -154,12 +140,35 @@ export default function OrbsArcadeRewardChainCell(timeline) {
       }
     }
   }
-  L.__closure = { getWindowProgress, timeline, focusRingAtMs, FOCUS_RING_MS: 500 };
-  L.__workletHash = 2996759496631;
-  L.__initData = __initData2;
+  const obj5 = { getWindowProgress, timeline, grantAtMs, GRANT_FILL_MS: 400 };
+  D.__closure = obj5;
+  D.__workletHash = 457674995255;
+  D.__initData = __initData2;
+  derivedValue = tmp2Result.useDerivedValue(D);
+  const tmp2Result8 = tmp2(tmp3[7]);
+  class L {
+    constructor() {
+      const value = timeline.get();
+      if (typeof getWindowProgress === "function") {
+        let num = 1;
+        if (null != focusRingAtMs) {
+          const items = [focusRingAtMs, focusRingAtMs + tmp3];
+          const obj = ReanimatedRexport;
+          num = obj.interpolate(value, items, [0, 1], ReanimatedRexport.Extrapolation.CLAMP);
+        }
+        return num;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+  }
+  const obj6 = { getWindowProgress, timeline, focusRingAtMs, FOCUS_RING_MS };
+  L.__closure = obj6;
+  L.__workletHash = 2881105662352;
+  L.__initData = __initData3;
   const derivedValue1 = tmp2Result8.useDerivedValue(L);
   const tmp2Result9 = tmp2(tmp3[7]);
-  class N {
+  class W {
     constructor() {
       const value = timeline.get();
       if (typeof getWindowProgress === "function") {
@@ -175,11 +184,11 @@ export default function OrbsArcadeRewardChainCell(timeline) {
       }
     }
   }
-  N.__closure = { getWindowProgress, timeline, stemAtMs: sum2, GRANT_STEM_MS: 300 };
-  N.__workletHash = 4451047761232;
-  N.__initData = __initData3;
-  derivedValue2 = tmp2Result9.useDerivedValue(N);
-  playConfetti = obj4.useCallback(() => {
+  W.__closure = { getWindowProgress, timeline, stemAtMs: sum2, GRANT_STEM_MS: 300 };
+  W.__workletHash = 16672758617649;
+  W.__initData = __initData4;
+  derivedValue2 = tmp2Result9.useDerivedValue(W);
+  strokeWidth = obj4.useCallback(() => {
     const current = ref.current;
     let playResult;
     if (current != null) {
@@ -187,29 +196,28 @@ export default function OrbsArcadeRewardChainCell(timeline) {
     }
     return playResult;
   }, []);
-  const fn2 = function k() {
+  const fn = function v() {
     const tmp2 = null != sum1 && timeline.get() >= tmp;
     return tmp2;
   };
-  fn2.__closure = { confettiAtMs: sum1, timeline };
-  fn2.__workletHash = 17078558180439;
-  fn2.__initData = __initData4;
-  const tmp2Result10 = tmp2(tmp3[7]);
-  class E {
-    constructor(arg0, arg1) {
-      const tmp = arg0 && false === arg1;
-      if (tmp) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(callback)();
-      }
+  fn.__closure = { confettiAtMs: sum1, timeline };
+  fn.__workletHash = 16599466747956;
+  fn.__initData = __initData5;
+  const fn2 = function k(arg0, arg1) {
+    const tmp = arg0 && false === arg1;
+    if (tmp) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(callback)();
     }
-  }
-  E.__closure = { runOnJS: tmp2(tmp3[7]).runOnJS, playConfetti };
-  E.__workletHash = 13780775152900;
-  E.__initData = __initData5;
-  ({ runOnJS: tmp2(tmp3[7]).runOnJS, playConfetti });
-  const animatedReaction = tmp2Result10.useAnimatedReaction(fn2, E);
+  };
+  const tmp2Result10 = tmp2(tmp3[7]);
+  fn2.__closure = { runOnJS: tmp2(tmp3[7]).runOnJS, playConfetti: strokeWidth };
+  fn2.__workletHash = 16492338404069;
+  fn2.__initData = __initData6;
+  ({ runOnJS: tmp2(tmp3[7]).runOnJS, playConfetti: strokeWidth });
+  const animatedReaction = tmp2Result10.useAnimatedReaction(fn, fn2);
   let items = [token1];
+  let items1 = [token1];
   const memo = obj4.useMemo(() => {
     let alphaResult;
     let items;
@@ -220,131 +228,186 @@ export default function OrbsArcadeRewardChainCell(timeline) {
     alphaResult = obj3.alpha(0.5);
     return obj;
   }, items);
-  const fn3 = function q() {
+  const memo1 = obj4.useMemo(() => {
+    const items = [, ];
+    const obj = _modDef671(token1);
+    const alphaResult = obj.alpha(0);
+    items[0] = alphaResult.css();
+    items[1] = token1;
+    return items;
+  }, items1);
+  const fn3 = function $() {
     const obj = { opacity: derivedValue.get() };
     return obj;
   };
   fn3.__closure = { fillProgress: derivedValue };
-  fn3.__workletHash = 7749646821819;
-  fn3.__initData = __initData6;
+  fn3.__workletHash = 12498561807764;
+  fn3.__initData = __initData7;
   const tmp2Result11 = tmp2(tmp3[7]);
   const animatedStyle = tmp2Result11.useAnimatedStyle(fn3);
-  const tmp2Result12 = tmp2(tmp3[7]);
-  class X {
-    constructor() {
-      let items1;
-      const interpolate = ReanimatedRexport.interpolate;
-      ReanimatedRexport;
-      const value = timeline.get();
-      if (typeof getWindowProgress === "function") {
-        let num = 1;
-        if (null != c6) {
-          const items = [c6, c6 + 400];
-          const tmpResult = ReanimatedRexport;
-          num = tmpResult.interpolate(value, items, [0, 1], tmp(5090).Extrapolation.CLAMP);
-        }
-        const obj = { transform: items1 };
-        items1 = [{ scale: interpolate(num, [0, 0.6, 1], [0, 1.2, 1]) }];
-        const obj2 = { scale: interpolate(num, [0, 0.6, 1], [0, 1.2, 1]) };
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
+  function ee() {
+    let items1;
+    const interpolate = ReanimatedRexport.interpolate;
+    ReanimatedRexport;
+    const value = timeline.get();
+    if (typeof getWindowProgress === "function") {
+      let num = 1;
+      if (null != c6) {
+        const items = [c6, c6 + 400];
+        const tmpResult = ReanimatedRexport;
+        num = tmpResult.interpolate(value, items, [0, 1], tmp(5095).Extrapolation.CLAMP);
       }
-    }
-  }
-  X.__closure = { interpolate: tmp2(tmp3[7]).interpolate, getWindowProgress, timeline, checkAtMs: sum, GRANT_CHECK_MS: 150, GRANT_CONFETTI_MS: 250 };
-  X.__workletHash = 17236262951265;
-  X.__initData = __initData7;
-  ({ interpolate: tmp2(tmp3[7]).interpolate, getWindowProgress, timeline, checkAtMs: sum, GRANT_CHECK_MS: 150, GRANT_CONFETTI_MS: 250 });
-  const animatedStyle1 = tmp2Result12.useAnimatedStyle(X);
-  tmp2(tmp3[7]);
-  class Y {
-    constructor() {
-      let obj2;
-      let tmp;
-      let num = stemLength;
-      let num2 = stemLength;
-      if (stemLength == null) {
-        num2 = 0;
-      }
-      const obj = { top: tmp * derivedValue2.get(), height: num * obj2.get() };
-      obj2 = derivedValue2;
-      tmp = -num2;
-      if (num == null) {
-        num = 0;
-      }
+      const obj = { transform: items1 };
+      items1 = [{ scale: interpolate(num, [0, 0.6, 1], [0, 1.2, 1]) }];
+      const obj2 = { scale: interpolate(num, [0, 0.6, 1], [0, 1.2, 1]) };
       return obj;
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
   }
-  Y.__closure = { stemLength, stemProgress: derivedValue2 };
-  Y.__workletHash = 13706139303941;
-  Y.__initData = __initData8;
-  let tmp23 = null;
-  const obj8 = { style: tmp.cell, children: items2 };
+  const tmp2Result12 = tmp2(tmp3[7]);
+  ee.__closure = { interpolate: tmp2(tmp3[7]).interpolate, getWindowProgress, timeline, checkAtMs: sum, GRANT_CHECK_MS: 150, GRANT_CONFETTI_MS: 250 };
+  ee.__workletHash = 14524699700096;
+  ee.__initData = __initData8;
+  ({ interpolate: tmp2(tmp3[7]).interpolate, getWindowProgress, timeline, checkAtMs: sum, GRANT_CHECK_MS: 150, GRANT_CONFETTI_MS: 250 });
+  const animatedStyle1 = tmp2Result12.useAnimatedStyle(ee);
+  tmp2(tmp3[7]);
+  function te() {
+    let obj2;
+    let tmp;
+    let num = stemLength;
+    let num2 = stemLength;
+    if (stemLength == null) {
+      num2 = 0;
+    }
+    const obj = { top: tmp * derivedValue2.get(), height: num * obj2.get() };
+    obj2 = derivedValue2;
+    tmp = -num2;
+    if (num == null) {
+      num = 0;
+    }
+    return obj;
+  }
+  te.__closure = { stemLength, stemProgress: derivedValue2 };
+  te.__workletHash = 5035540152605;
+  te.__initData = __initData9;
+  let tmp25Result2 = null;
+  const obj9 = { style: tmp.cell, children: items3 };
   if (null != stemLength) {
-    const obj9 = { style: items1 };
-    items1 = [tmp.stem, tmp20];
-    tmp23 = sum1(tmp4(tmp3[7]).View, obj9);
+    const items2 = [tmp.stem, , ];
+    let grantedStem;
+    View = tmp4(tmp3[7]).View;
+    if (isStemTargetGranted) {
+      grantedStem = tmp.grantedStem;
+    }
+    const obj10 = { style: items2, children: tmp25Result };
+    items2[1] = grantedStem;
+    items2[2] = tmp21;
+    tmp25Result = null;
+    if (!isStemTargetGranted) {
+      const obj11 = { style: ref.absoluteFill, start, end, colors: memo1 };
+      tmp25Result = tmp25(tmp4(tmp3[14]), obj11);
+    }
+    tmp25Result2 = tmp25(View, obj10);
   }
-  items2 = [tmp23, , , , , , ];
-  const obj10 = { style: items3 };
-  items3 = [, ];
-  ({ circle: arr4[0], ring: arr4[1] } = tmp);
-  items2[1] = sum1(ref, obj10);
+  items3 = [tmp25Result2, , , , , , ];
+  const obj12 = { style: items4 };
+  items4 = [, ];
+  ({ circle: arr5[0], ring: arr5[1] } = tmp);
+  items3[1] = sum2(c6, obj12);
   if (isFocused) {
-    const obj11 = { color: token, progress: derivedValue1, rewardSize: 50, strokeWidth: derivedValue2 };
-    tmp26Result = tmp26(tmp4(tmp3[14]), obj11);
+    const obj13 = { color: token, progress: derivedValue1, rewardSize: 50, strokeWidth };
+    tmp32Result = tmp32(tmp4(tmp3[15]), obj13);
   } else {
-    tmp26Result = null;
+    tmp32Result = null;
   }
-  items2[2] = tmp26Result;
-  let tmp21Result = null;
+  items3[2] = tmp32Result;
+  let tmp22Result = null;
   if (status !== LOCKED) {
-    let tmp26Result5 = null;
+    let tmp32Result5 = null;
     const tmp2Result14 = tmp2(tmp3[10]);
-    const tmp30 = sum2;
+    const tmp36 = derivedValue;
     if (!tmp2Result14.isThemeLight(theme)) {
-      const obj12 = { style: items4 };
-      items4 = [tmp.circle, memo, animatedStyle];
-      tmp26Result5 = tmp26(tmp4(tmp3[7]).View, obj12);
+      const obj14 = { style: items5 };
+      items5 = [tmp.circle, memo, animatedStyle];
+      tmp32Result5 = tmp32(tmp4(tmp3[7]).View, obj14);
     }
-    const obj13 = { children: items5 };
-    items5 = [tmp26Result5, ];
-    const obj14 = { color: token1, progress: derivedValue, rewardSize: 50, strokeWidth: derivedValue2 };
-    items5[1] = sum1(timeline(tmp3[14]), obj14);
-    tmp21Result = tmp21(tmp30, obj13);
+    const obj15 = { children: items6 };
+    items6 = [tmp32Result5, ];
+    const obj16 = { color: token1, progress: derivedValue, rewardSize: 50, strokeWidth };
+    items6[1] = sum2(timeline(tmp3[15]), obj16);
+    tmp22Result = tmp22(tmp36, obj15);
   }
-  items2[3] = tmp21Result;
+  items3[3] = tmp22Result;
   if (reward.type === tmp2(tmp3[12]).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
-    tmp26Result6 = tmp26(tmp2(tmp3[15]).NitroCoinSpotIllustration, { height: 30 });
+    tmp32Result6 = tmp32(tmp2(tmp3[16]).NitroCoinSpotIllustration, { height: 30 });
   } else {
-    const obj15 = { reward, size: 38 };
-    tmp26Result6 = tmp26(tmp4(tmp3[16]), obj15);
+    const obj17 = { reward, size: 38 };
+    tmp32Result6 = tmp32(tmp4(tmp3[17]), obj17);
   }
-  items2[4] = tmp26Result6;
-  let tmp26Result7 = null;
+  items3[4] = tmp32Result6;
+  let tmp32Result7 = null;
   if (status !== LOCKED) {
-    const obj16 = { style: items6, children: sum1(CircleCheckIcon, obj17) };
-    items6 = [tmp.checkBadge, animatedStyle1];
-    const View = tmp4(tmp3[7]).View;
-    obj17 = { size: "xs", color: timeline(tmp3[6]).colors.STATUS_POSITIVE, secondaryColor: timeline(tmp3[6]).colors.WHITE };
-    CircleCheckIcon = tmp2(tmp3[17]).CircleCheckIcon;
-    tmp26Result7 = tmp26(View, obj16);
+    const obj18 = { style: items7, children: sum2(CircleCheckIcon, obj19) };
+    items7 = [tmp.checkBadge, animatedStyle1];
+    const View2 = tmp4(tmp3[7]).View;
+    obj19 = { size: "xs", color: timeline(tmp3[6]).colors.STATUS_POSITIVE, secondaryColor: timeline(tmp3[6]).colors.WHITE };
+    CircleCheckIcon = tmp2(tmp3[18]).CircleCheckIcon;
+    tmp32Result7 = tmp32(View2, obj18);
   }
-  items2[5] = tmp26Result7;
-  let tmp26Result8 = null;
+  items3[5] = tmp32Result7;
+  let tmp32Result8 = null;
   if (status !== LOCKED) {
-    tmp26Result8 = null;
+    tmp32Result8 = null;
     if (null != grantAtMs) {
-      const obj18 = { pointerEvents: "none", style: tmp.confetti, children: sum1(tmp4Result, obj19) };
-      obj19 = { ref, source: tmp2(tmp3[19]), autoPlay: false, loop: false };
-      tmp4Result = timeline(tmp3[18]);
-      tmp26Result8 = tmp26(tmp22, obj18);
+      const obj20 = { pointerEvents: "none", style: tmp.confetti, children: sum2(tmp4Result, obj21) };
+      obj21 = { ref, source: tmp2(tmp3[20]), autoPlay: false, loop: false };
+      tmp4Result = timeline(tmp3[19]);
+      tmp32Result8 = tmp32(tmp23, obj20);
     }
   }
-  items2[6] = tmp26Result8;
-  return derivedValue(ref, obj8);
+  items3[6] = tmp32Result8;
+  return derivedValue2(c6, obj9);
 };
+export function useOrbsArcadeRewardChainRowStyle(isGranted) {
+  isGranted = isGranted.isGranted;
+  const isFocused = isGranted.isFocused;
+  const timeline = isGranted.timeline;
+  const focusRingAtMs = isGranted.focusRingAtMs;
+  let obj = isGranted(timeline[7]);
+  const fn = function l() {
+    let obj3;
+    const tmp = isGranted;
+    if (tmp) {
+      return { opacity: 1 };
+    } else {
+      const tmp2 = isFocused;
+      if (tmp2) {
+        const value = timeline.get();
+        if (typeof getWindowProgress === "function") {
+          let num = 1;
+          if (null != focusRingAtMs) {
+            const items = [focusRingAtMs, focusRingAtMs + tmp7];
+            const obj = ReanimatedRexport;
+            num = obj.interpolate(value, items, [0, 1], ReanimatedRexport.Extrapolation.CLAMP);
+          }
+          const obj2 = { opacity: obj3.interpolate(num, [0, 1], [0.4, 1]) };
+          obj3 = ReanimatedRexport;
+          return obj2;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        return { opacity: 0.4 };
+      }
+    }
+  };
+  let obj2 = { isGranted, isFocused, DIMMED_ROW_OPACITY: 0.4, getWindowProgress, timeline, focusRingAtMs, FOCUS_RING_MS, interpolate: isGranted(timeline[7]).interpolate };
+  fn.__closure = obj2;
+  fn.__workletHash = 2692711565582;
+  fn.__initData = __initData;
+  return obj.useAnimatedStyle(fn);
+}
 export function useOrbsArcadeRewardChainTimeline(arg0) {
   let closure_3;
   let require;
@@ -379,7 +442,7 @@ export function useOrbsArcadeRewardChainTimeline(arg0) {
       let obj = { grantAtMsByRewardId: map, focusRingRewardId: importDefault, focusRingAtMs: sum, endMs: sum + num3 };
       num3 = 0;
       if (null != importDefault) {
-        num3 = 500;
+        num3 = c12;
       }
       return obj;
     }

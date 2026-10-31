@@ -1,14 +1,14 @@
-// Module ID: 10165
-// Function ID: 10166
+// Module ID: 10185
+// Function ID: 10186
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 6926, 7763, 5650, 9828, 5649, 11, 10166, 2]
+// Dependencies: [5, 6932, 7770, 5655, 9849, 5654, 11, 10186, 2]
 // Exports: consumeConversationFocusParam
 
-// Module 10165 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5650 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6926 */;
+// Module 10185 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5655 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6932 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7763 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -33,7 +33,7 @@ let obj = function _resolveConversationFocusLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ export function consumeConversationFocusParam(state) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -213,7 +213,7 @@ export function consumeConversationFocusParam(state) {
                       const conversationFocus = obj.requestConversationFocus();
                     }
                     guildId = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp16) {
                   guildId = 3;

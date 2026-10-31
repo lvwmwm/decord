@@ -1,17 +1,17 @@
-// Module ID: 8809
-// Function ID: 8810
+// Module ID: 8817
+// Function ID: 8818
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 5090, 8810, 8811, 1376, 2]
+// Dependencies: [19, 17, 21, 5095, 8818, 8819, 1375, 2]
 // Exports: default
 
-// Module 8809 (UserProfileOverscrollBanner)
+// Module 8817 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8810 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8811 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8818 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8819 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

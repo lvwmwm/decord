@@ -1,35 +1,32 @@
-// Module ID: 17623
-// Function ID: 17624
+// Module ID: 17683
+// Function ID: 17684
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1386, 21, 5009, 575, 12431, 1114, 14562, 8638, 5070, 2048, 17624, 5619, 17628, 5629, 9506, 2]
+// Dependencies: [19, 17, 1385, 21, 5014, 12466, 1113, 14600, 8646, 5075, 2047, 17684, 5624, 17688, 5634, 9528, 575, 2]
 
-// Module 17623 (PremiumTrialOfferActionSheetContent)
+// Module 17683 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl10 from "intl" /* 1114 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import PremiumUtils from "PremiumUtils" /* 2048 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5070 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FolderIcon from "FolderIcon" /* 8638 */;
-import UserIcon from "UserIcon" /* 12431 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14562 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17624 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17628 */;
+import intl10 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5075 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FolderIcon from "FolderIcon" /* 8646 */;
+import UserIcon from "UserIcon" /* 12466 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14600 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17684 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17688 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
-let obj2;
 const View = react_native.View;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let obj = { contentContainer: obj2, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } };
-obj2 = { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 };
-let closure_7 = createStyles.createStyles(obj);
+let closure_7 = createStyles.createStyles({ contentContainer: { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 }, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } });
 const memoResult = react.memo(function PremiumTrialOfferActionSheetContent(onConfirm) {
   let Button;
   let NitroWheelIcon;
@@ -109,10 +106,10 @@ const memoResult = react.memo(function PremiumTrialOfferActionSheetContent(onCon
   items1[2] = hasOwnProperty(PremiumPerksListDefault, { perks: items });
   const obj10 = { style: tmp.buttonContainer, children: hasOwnProperty(Button, obj11) };
   obj11 = { size: "lg", text: intl9.formatToPlainString(intl10.t.xASjq5, { duration: intervalDuration }), onPress: onConfirm, grow: true, icon: hasOwnProperty(NitroWheelIcon, obj12) };
-  Button = tmp3(5629).Button;
-  intl9 = tmp3(1114).intl;
+  Button = tmp3(5634).Button;
+  intl9 = tmp3(1113).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9506).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9528).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 });

@@ -1,34 +1,34 @@
-// Module ID: 18517
-// Function ID: 18518
+// Module ID: 18560
+// Function ID: 18561
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5010, 4858, 4951, 1384, 8897, 1072, 21, 5009, 575, 6046, 1093, 504, 8864, 5090, 5249, 18518, 5712, 5619, 1114, 8839, 8212, 6974, 8915, 11911, 8665, 18473, 8831, 8910, 1380, 12, 7273, 8825, 5647, 2]
+// Dependencies: [32, 19, 17, 5015, 4863, 4956, 1383, 8906, 1072, 21, 5014, 575, 6051, 1092, 504, 8873, 5095, 5254, 18561, 5717, 5624, 1113, 8848, 8220, 6980, 8924, 11949, 8673, 18516, 8839, 8919, 1379, 12, 7279, 8833, 5652, 2]
 // Exports: default
 
-// Module 18517 (ICYMIMediaMosaic)
+// Module 18560 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import timing from "timing" /* 5249 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7273 */;
-import openMediaModal2 from "openMediaModal" /* 8825 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8831 */;
-import common_VideoDefault from "common/Video" /* 8864 */;
-import ICYMITypes from "ICYMITypes" /* 8910 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8915 */;
-import ICYMIContext from "ICYMIContext" /* 18473 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 18518 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import timing from "timing" /* 5254 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7279 */;
+import openMediaModal2 from "openMediaModal" /* 8833 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8839 */;
+import common_VideoDefault from "common/Video" /* 8873 */;
+import ICYMITypes from "ICYMITypes" /* 8919 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import ICYMIContext from "ICYMIContext" /* 18516 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 18561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import UserStore from "UserStore" /* 1384 */;
-import ICYMIStore from "ICYMIStore" /* 8897 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import ICYMIStore from "ICYMIStore" /* 8906 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5647);
+const useChannelName = tmp4(5652);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -89,7 +89,7 @@ function MediaMosaicImage(source) {
   const isSpoiler = source.isSpoiler;
   const tmp = closure_18();
   [imageFinishedLoading, dependencyMap] = react.useState(false);
-  let obj = source(5090);
+  let obj = source(5095);
   const fn = function u() {
     let num = 1;
     const withTiming = timing.withTiming;
@@ -100,7 +100,7 @@ function MediaMosaicImage(source) {
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  let obj2 = { withTiming: source(5249).withTiming, imageFinishedLoading };
+  let obj2 = { withTiming: source(5254).withTiming, imageFinishedLoading };
   fn.__closure = obj2;
   fn.__workletHash = 7803531897566;
   fn.__initData = __initData;
@@ -114,9 +114,9 @@ function MediaMosaicImage(source) {
       return obj;
     }
   }, items);
-  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5712), obj4) };
+  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5717), obj4) };
   items1 = [animatedStyle, tmp.thumbhashMedia];
-  const View = imageFinishedLoading(5090).View;
+  const View = imageFinishedLoading(5095).View;
   obj4 = { source: memo, style: items2 };
   items2 = [style, tmp.media, dimensions];
   const items3 = [closure_15(View, obj3), ];
@@ -134,7 +134,7 @@ function MediaMosaicImage(source) {
   const tmp6 = closure_17;
   const tmp7 = closure_16;
   const tmp8 = closure_15;
-  const tmp9 = imageFinishedLoading(5712);
+  const tmp9 = imageFinishedLoading(5717);
   if (isSpoiler) {
     num = 100;
   }

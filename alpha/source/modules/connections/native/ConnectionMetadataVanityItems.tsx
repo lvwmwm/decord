@@ -1,24 +1,24 @@
-// Module ID: 11568
-// Function ID: 11569
+// Module ID: 11604
+// Function ID: 11605
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7343, 21, 5009, 575, 1114, 11569, 11570, 12, 1896, 5619, 1188, 7342, 2]
+// Dependencies: [19, 17, 7349, 21, 5014, 575, 1113, 11605, 11606, 12, 1895, 5624, 1187, 7348, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11568 (ConnectionMetadataVanityItems)
+// Module 11604 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import NumberUtils from "NumberUtils" /* 1896 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7342 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11569 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11570 */;
+import intl5 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import NumberUtils from "NumberUtils" /* 1895 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7348 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11605 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11606 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7343 */;
+import Constants from "Constants" /* 7349 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let application_metadata;
@@ -57,11 +57,11 @@ function VanityMetric(label) {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const obj2 = { name: label, value: sum };
-    formatResult = intl.format(tmp2(1114).t.HLoinF, obj2);
+    formatResult = intl.format(tmp2(1113).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1114).intl;
+    const intl2 = tmp2(1113).intl;
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }

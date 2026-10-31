@@ -1,23 +1,23 @@
-// Module ID: 17997
-// Function ID: 17998
+// Module ID: 18040
+// Function ID: 18041
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1072, 21, 3, 5009, 575, 1499, 5196, 11522, 11520, 11523, 17998, 5202, 17999, 5194, 5751, 1109, 18000, 7479, 18003, 5090, 6994, 9802, 12056, 18004, 18005, 5298, 18012, 18013, 18545, 18546, 18547, 18769, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 3, 5014, 575, 1498, 5201, 11556, 11554, 11557, 18041, 5207, 18042, 5199, 5756, 1108, 18043, 7485, 18046, 5095, 7000, 9823, 11243, 18047, 18048, 5303, 18055, 18056, 18588, 18589, 18590, 18812, 2]
 
-// Module 17997 (MainTabsNavigatorPanel)
+// Module 18040 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5194 */;
-import ChatInputUtils from "ChatInputUtils" /* 5202 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17998 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17999 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 18003 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 18041 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18042 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 18046 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
@@ -71,7 +71,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let tmp68;
   let tmp69;
   let type1;
-  const f113161 = () => first4;
+  const f113469 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -184,9 +184,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const obj = useChannelScreensFromNavigation;
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c13] = react.useState(f113161);
+  [tmp25, c13] = react.useState(f113469);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f113161), 2);
+  _slicedToArray(react.useState(f113469), 2);
   const effect1 = obj3.useEffect(() => {
     function handleStateChange(data) {
       const obj = navigation(drawerWidth[15]);
@@ -233,7 +233,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(5751);
+            const tmp15Result = tmp15(5756);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -327,7 +327,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        const tmp4Result = tmp4(5202);
+        const tmp4Result = tmp4(5207);
         tmp4Result.dismissKeyboard();
       }
     }

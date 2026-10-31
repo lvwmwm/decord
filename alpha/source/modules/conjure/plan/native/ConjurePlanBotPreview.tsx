@@ -1,19 +1,19 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 12743
+// Function ID: 12744
 // Name: ConjurePlanBotPreview
-// Dependencies: [19, 17, 21, 8369, 5009, 575, 12587, 9864, 12698, 12709, 2]
+// Dependencies: [19, 17, 21, 8377, 5014, 575, 12622, 9885, 12733, 12744, 2]
 // Exports: default
 
-// Module 12708 (ConjurePlanBotPreview)
+// Module 12743 (ConjurePlanBotPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import RowGeneratorDefault from "RowGenerator" /* 8369 */;
-import ChatItemDefault from "ChatItem" /* 9864 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12587 */;
-import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 12709 */;
+import RowGeneratorDefault from "RowGenerator" /* 8377 */;
+import ChatItemDefault from "ChatItem" /* 9885 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12622 */;
+import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 12744 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,24 +1,24 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10663
+// Function ID: 10664
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7399, 1386, 1072, 1074, 8746, 21, 575, 5009, 9437, 9448, 10644, 10648, 7320, 7345, 1253, 8742, 10592, 10649, 5194, 5707, 1114, 7712, 14375, 5063, 5619, 14400, 14405, 2]
+// Dependencies: [5, 19, 17, 7405, 1385, 1072, 1074, 8754, 21, 575, 5014, 9459, 9470, 10664, 10668, 7326, 7351, 1252, 8750, 10612, 10669, 5199, 5712, 1113, 7719, 14413, 5068, 5624, 14438, 14443, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10643 (PremiumGiftWishlistBanner)
+// Module 10663 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7399 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
-import Constants2 from "Constants" /* 8746 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10648 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7405 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import Constants2 from "Constants" /* 8754 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10668 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;
@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

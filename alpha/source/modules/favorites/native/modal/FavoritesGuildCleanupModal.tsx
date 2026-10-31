@@ -1,22 +1,22 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18186
+// Function ID: 18187
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 21, 5009, 575, 6738, 1626, 18144, 6022, 5619, 1114, 3447, 7076, 7052, 7055, 5629, 7054, 11447, 5647, 18146, 6968, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6744, 1625, 18187, 6027, 5624, 1113, 3450, 7082, 7058, 7061, 5634, 7060, 11481, 5652, 18189, 6974, 2]
 // Exports: default
 
-// Module 18143 (FavoritesGuildCleanupModal)
+// Module 18186 (FavoritesGuildCleanupModal)
 import nativeDefault from "native" /* 575 */;
-import _modDef3447 from "module_3447" /* 3447 */;
-import useChannelNameDefault from "useChannelName" /* 5647 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6968 */;
-import TableRadioRow2 from "TableRadioRow" /* 7055 */;
-import Modal from "Modal" /* 11447 */;
-import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 18146 */;
+import _modDef3450 from "module_3450" /* 3450 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6974 */;
+import TableRadioRow2 from "TableRadioRow" /* 7061 */;
+import Modal from "Modal" /* 11481 */;
+import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 18189 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -298,7 +298,7 @@ export default function FavoritesGuildCleanupModal() {
     let onPress;
     let obj = { cleanup: obj2 };
     obj2 = {
-      title: intl.string(_modDef3447["b081B+"]),
+      title: intl.string(_modDef3450["b081B+"]),
       headerLeft() {
         let intl;
         const obj = { text: intl.string(closure_1_0(closure_1_2[10]).t["ETE/oC"]), size: "sm", variant: "tertiary", onPress };

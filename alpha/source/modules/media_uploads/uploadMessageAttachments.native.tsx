@@ -1,12 +1,12 @@
-// Module ID: 15179
-// Function ID: 15180
+// Module ID: 15218
+// Function ID: 15219
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8384, 10188, 6058, 572, 2]
+// Dependencies: [5, 8392, 10208, 6063, 572, 2]
 // Exports: uploadMessageAttachments
 
-// Module 15179 (uploadMessageAttachments)
+// Module 15218 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 8384 */;
+import UploadStore from "UploadStore" /* 8392 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -29,7 +29,7 @@ let obj = function _uploadMessageAttachments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _uploadMessageAttachments() {
             return obj4;
           } else if (closure_131_5.has(c2)) {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             const self = this;
             const self2 = this;

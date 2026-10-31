@@ -1,16 +1,16 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17460
+// Function ID: 17461
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 8424, 5959, 1114, 5737, 5707, 11505, 1376, 1093, 2]
+// Dependencies: [5, 8432, 5964, 1113, 5742, 5712, 11539, 1375, 1092, 2]
 
-// Module 17400 (ClearWebBrowserDataSetting)
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import intl4 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import BrowserManager from "BrowserManager" /* 5737 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
+// Module 17460 (ClearWebBrowserDataSetting)
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import BrowserManager from "BrowserManager" /* 5742 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,7 +56,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ let obj = {
             intl = tmp3(c2[3]).intl;
             open("web-browser-data-cleared", obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c2 = 3;

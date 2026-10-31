@@ -1,12 +1,12 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 12472
+// Function ID: 12473
 // Name: useIsPreviewlessProject
-// Dependencies: [6838, 504, 6839, 2]
+// Dependencies: [6844, 504, 6845, 2]
 // Exports: default
 
-// Module 12437 (useIsPreviewlessProject)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6839 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+// Module 12472 (useIsPreviewlessProject)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

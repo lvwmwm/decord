@@ -1,11 +1,11 @@
-// Module ID: 8207
-// Function ID: 8208
+// Module ID: 8215
+// Function ID: 8216
 // Name: GameEventsOnPlayerExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 8207 (GameEventsOnPlayerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 8215 (GameEventsOnPlayerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

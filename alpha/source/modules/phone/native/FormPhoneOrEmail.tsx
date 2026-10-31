@@ -1,19 +1,19 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7214
+// Function ID: 7215
 // Name: FormPhoneOrEmail
-// Dependencies: [19, 17, 21, 5009, 575, 6974, 1114, 5619, 7124, 7098, 7099, 7101, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6980, 1113, 5624, 7130, 7104, 7105, 7107, 2]
 // Exports: default
 
-// Module 7208 (FormPhoneOrEmail)
+// Module 7214 (FormPhoneOrEmail)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Pressables from "Pressables" /* 6974 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7124 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Pressables from "Pressables" /* 6980 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7130 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

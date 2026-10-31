@@ -1,23 +1,23 @@
-// Module ID: 9214
-// Function ID: 9215
+// Module ID: 9233
+// Function ID: 9234
 // Name: VoiceStateIcons
-// Dependencies: [19, 17, 21, 5009, 575, 9215, 9217, 9219, 9221, 9223, 1380, 1188, 8023, 9225, 9226, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9234, 9236, 9238, 9240, 9242, 1379, 1187, 8031, 9244, 9245, 2]
 
-// Module 9214 (VoiceStateIcons)
+// Module 9233 (VoiceStateIcons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9215 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9219 */;
-import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9221 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9223 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9225 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9226 */;
+import native from "native" /* 1187 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9234 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9238 */;
+import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9240 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9242 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9244 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9245 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -58,7 +58,7 @@ function VideoDisabledSvgIcon(size) {
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "getCurrentUser" } };
+let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "Array" } };
 obj2 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -75,7 +75,7 @@ const memoResult = react.memo(function MuteDeafenIcon(arg0) {
   if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER === state) {
     const items = [style, ];
     let redTint = null;
-    const HeadphonesDenyIcon = tmp2(9217).HeadphonesDenyIcon;
+    const HeadphonesDenyIcon = tmp2(9236).HeadphonesDenyIcon;
     const tmp10 = React3;
     if (!alwaysWhite) {
       redTint = tmp.redTint;
@@ -89,7 +89,7 @@ const memoResult = react.memo(function MuteDeafenIcon(arg0) {
   } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_SERVER === state) {
     const items1 = [style, ];
     let redTint1 = null;
-    const MicrophoneDenyIcon = tmp2(9221).MicrophoneDenyIcon;
+    const MicrophoneDenyIcon = tmp2(9240).MicrophoneDenyIcon;
     const tmp7 = React3;
     if (!alwaysWhite) {
       redTint1 = tmp.redTint;
@@ -115,7 +115,7 @@ const memoResult1 = react.memo(function VideoIcon(state) {
   const tmp2 = closure_6();
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = { source: AssetRegistryDefault, style: items };
-    const Icon2 = tmp3(1188).Icon;
+    const Icon2 = tmp3(1187).Icon;
     const merged1 = Object.assign(merged);
     items = [merged.style, tmp2.noTint];
     return React3(Icon2, obj);
@@ -125,7 +125,7 @@ const memoResult1 = react.memo(function VideoIcon(state) {
     return React3(VideoDisabledSvgIcon, obj2);
   } else if (VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = { source: AssetRegistryDefault2 };
-    const Icon = tmp3(1188).Icon;
+    const Icon = tmp3(1187).Icon;
     const merged3 = Object.assign(merged);
     return React3(Icon, obj3);
   } else {

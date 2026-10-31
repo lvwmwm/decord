@@ -1,11 +1,11 @@
-// Module ID: 6905
-// Function ID: 6906
+// Module ID: 6911
+// Function ID: 6912
 // Name: MemberVerificationAlertPending
-// Dependencies: [19, 21, 6902, 6906, 6907, 1114, 5629, 2]
+// Dependencies: [19, 21, 6908, 6912, 6913, 1113, 5634, 2]
 // Exports: default
 
-// Module 6905 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6902 */;
+// Module 6911 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,19 +35,19 @@ export default function MemberVerificationAlertPending(guildId) {
     const obj2 = { guildId };
     const result = obj.openMemberVerificationCancelPendingAlert(obj2);
   }, items);
-  let obj = { icon: guildId(6907).ClipboardListIcon, header: intl.string(guildId(1114).t.zhfXbs), subtitle: intl2.string(guildId(1114).t["SRM/e/"]), buttons: closure_6(closure_5, obj2) };
-  const tmp3 = onClose(6906);
+  let obj = { icon: guildId(6913).ClipboardListIcon, header: intl.string(guildId(1113).t.zhfXbs), subtitle: intl2.string(guildId(1113).t["SRM/e/"]), buttons: closure_6(closure_5, obj2) };
+  const tmp3 = onClose(6912);
   const merged1 = Object.assign(merged);
-  intl = guildId(1114).intl;
-  intl2 = guildId(1114).intl;
+  intl = guildId(1113).intl;
+  intl2 = guildId(1113).intl;
   obj2 = { children: items1 };
-  const obj3 = { variant: "secondary", text: intl3.string(guildId(1114).t.f293OM), onPress: onClose };
-  const Button = guildId(5629).Button;
-  intl3 = guildId(1114).intl;
+  const obj3 = { variant: "secondary", text: intl3.string(guildId(1113).t.f293OM), onPress: onClose };
+  const Button = guildId(5634).Button;
+  intl3 = guildId(1113).intl;
   items1 = [closure_4(Button, obj3), ];
-  const obj4 = { text: intl4.string(guildId(1114).t.mqtdmQ), variant: "destructive", onPress: callback };
-  const Button2 = guildId(5629).Button;
-  intl4 = guildId(1114).intl;
+  const obj4 = { text: intl4.string(guildId(1113).t.mqtdmQ), variant: "destructive", onPress: callback };
+  const Button2 = guildId(5634).Button;
+  intl4 = guildId(1113).intl;
   items1[1] = closure_4(Button2, obj4);
   return closure_4(tmp3, obj);
 };

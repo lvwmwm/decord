@@ -1,17 +1,17 @@
-// Module ID: 15132
-// Function ID: 15133
+// Module ID: 15171
+// Function ID: 15172
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5009, 575, 7142, 5619, 1114, 8171, 6977, 15133, 5704, 2]
+// Dependencies: [17, 21, 5014, 575, 7148, 5624, 1113, 8179, 6983, 15172, 5709, 2]
 // Exports: default
 
-// Module 15132 (InAppReportsExternalLinkElement)
+// Module 15171 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
+import intl3 from "intl" /* 1113 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -35,9 +35,9 @@ function ExternalLinkItem(data) {
       arrow: false,
       accessibilityRole: "link"
     };
-    const RowButton = url(8171).RowButton;
-    obj2 = { IconComponent: url(15133).LinkExternalMediumIcon };
-    TableRowIcon = url(6977).TableRowIcon;
+    const RowButton = url(8179).RowButton;
+    obj2 = { IconComponent: url(15172).LinkExternalMediumIcon };
+    TableRowIcon = url(6983).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);
   }
   return tmp3;
@@ -67,13 +67,13 @@ export default function ExternalLinksElement(elements) {
         if (!someResult) {
           const obj5 = { style: null, variant: null, color: "text-default", accessibilityRole: "header", children: stringResult };
           ({ style: obj2.style, variant: obj2.variant } = typeConsolidationEyebrow);
-          const Text = tmp2(5619).Text;
+          const Text = tmp2(5624).Text;
           const tmp5 = React3;
           if (null != typeConsolidationEyebrow.style) {
-            const intl2 = tmp2(1114).intl;
-            stringResult = intl2.string(tmp2(1114).t.hvVgAZ);
+            const intl2 = tmp2(1113).intl;
+            stringResult = intl2.string(tmp2(1113).t.hvVgAZ);
           } else {
-            const intl = tmp2(1114).intl;
+            const intl = tmp2(1113).intl;
             const str = intl.string(intl3.t.hvVgAZ);
             stringResult = str.toUpperCase();
           }

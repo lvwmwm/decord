@@ -1,15 +1,15 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 16896
+// Function ID: 16897
 // Name: shouldAggressivelyFetchNitroRewards
-// Dependencies: [7765, 1384, 15575, 15573, 2048, 2]
+// Dependencies: [7772, 1383, 15614, 15612, 2047, 2]
 // Exports: shouldAggressivelyFetchNitroRewards
 
-// Module 17643 (shouldAggressivelyFetchNitroRewards)
-import PremiumUtils from "PremiumUtils" /* 2048 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15573 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15575 */;
-import UserProfileStore from "UserProfileStore" /* 7765 */;
-import UserStore from "UserStore" /* 1384 */;
+// Module 16896 (shouldAggressivelyFetchNitroRewards)
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15612 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15614 */;
+import UserProfileStore from "UserProfileStore" /* 7772 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rewards/shouldAggressivelyFetchNitroRewards.tsx");

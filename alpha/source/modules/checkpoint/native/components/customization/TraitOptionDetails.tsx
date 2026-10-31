@@ -1,18 +1,18 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 13684
+// Function ID: 13685
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5009, 575, 6108, 1114, 3091, 5619, 9884, 7345, 6429, 13650, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6113, 1113, 3092, 5624, 9905, 7351, 6434, 13685, 2]
 // Exports: default
 
-// Module 13649 (TraitOptionDetails)
+// Module 13684 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3091 from "module_3091" /* 3091 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import RarityBadgeDefault from "RarityBadge" /* 13650 */;
+import _modDef3092 from "module_3092" /* 3092 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import RarityBadgeDefault from "RarityBadge" /* 13685 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ function AssetDescription(asset) {
   if (!hidden) {
     let formatResult;
     if (asset.status === require("CheckpointCharacterAssets").CheckpointTraitOptionStatus.NITRO_LOCKED) {
-      const intl = tmp2(1114).intl;
+      const intl = tmp2(1113).intl;
       let obj = {
         subscribeHook(children, arg1) {
               let obj = {
@@ -52,7 +52,7 @@ function AssetDescription(asset) {
               return React3(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl.format(_modDef3091["3Wq/bk"], obj);
+      formatResult = intl.format(_modDef3092["3Wq/bk"], obj);
     } else {
       const tmp2Result = require("CheckpointCustomizationUtils");
       formatResult = tmp2Result.getAssetDescription(asset);

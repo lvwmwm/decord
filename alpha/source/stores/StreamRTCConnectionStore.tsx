@@ -1,23 +1,23 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 7885
+// Function ID: 7886
 // Name: StreamRTCConnectionStore
-// Dependencies: [2014, 502, 2007, 5756, 5759, 1072, 6709, 38, 7879, 12, 6711, 7875, 572, 5784, 1376, 504, 6749, 2]
+// Dependencies: [2013, 502, 2006, 5761, 5764, 1072, 6715, 38, 7886, 12, 6717, 7882, 572, 5789, 1375, 504, 6755, 2]
 
-// Module 7878 (StreamRTCConnectionStore)
+// Module 7885 (StreamRTCConnectionStore)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import Constants2 from "Constants" /* 6709 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
-import canSpectateDefault from "canSpectate" /* 6749 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7875 */;
-import StreamRTCConnectionDefault from "StreamRTCConnection" /* 7879 */;
-import RunningGameStore from "RunningGameStore" /* 2014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import Constants2 from "Constants" /* 6715 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import canSpectateDefault from "canSpectate" /* 6755 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7882 */;
+import StreamRTCConnectionDefault from "StreamRTCConnection" /* 7886 */;
+import RunningGameStore from "RunningGameStore" /* 2013 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import Constants from "Constants" /* 1072 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -26,8 +26,8 @@ let StreamLayouts;
 let c9;
 let obj2;
 let tmp;
-const BaseConnectionEvent = tmp(5784);
-const f91564 = (destroy, arg1) => {
+const BaseConnectionEvent = tmp(5789);
+const f91799 = (destroy, arg1) => {
   let str = "receiver-disconnect";
   destroy = destroy.destroy;
   if (destroy.isOwner) {
@@ -204,12 +204,12 @@ if (MediaEngineStore.isSupported()) {
     CONNECTION_OPEN: function handleConnectionOpen(sessionId) {
         sessionId = sessionId.sessionId;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f91564);
+        const item = arr.forEach(closure_18, f91799);
       },
     CONNECTION_CLOSED: function handleConnectionClosed() {
         let c3 = null;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f91564);
+        const item = arr.forEach(closure_18, f91799);
       },
     RTC_CONNECTION_STATE: handleRtcAction,
     RTC_CONNECTION_PING: handleRtcAction,
@@ -312,7 +312,7 @@ if (MediaEngineStore.isSupported()) {
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
         const streamKey = appContext.streamKey;
-        closure_11[streamKey] = { appContext, analyticsLocations: "Array" };
+        closure_11[streamKey] = { appContext, analyticsLocations: "a" };
         const arr = _modDef12;
         const item = arr.forEach(closure_18, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;
@@ -357,7 +357,7 @@ if (MediaEngineStore.isSupported()) {
           }
           const obj3 = { streamRegion: region, streamApplication: closure_12[streamKey], streamSourceType: str2, actionContext: appContext, numViewers: num, goLiveModalDurationMs: closure_15[streamKey], analyticsLocations };
           str2 = "unknown";
-          const StreamRTCAnalyticsContext = tmp2(7879).StreamRTCAnalyticsContext;
+          const StreamRTCAnalyticsContext = tmp2(7886).StreamRTCAnalyticsContext;
           if (null != closure_14[streamKey]) {
             if (!PlatformUtils.isPlatformEmbedded) {
               let name;

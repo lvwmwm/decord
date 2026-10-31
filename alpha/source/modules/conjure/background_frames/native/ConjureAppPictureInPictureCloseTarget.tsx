@@ -1,17 +1,17 @@
-// Module ID: 19065
-// Function ID: 19066
+// Module ID: 19114
+// Function ID: 19115
 // Name: ConjureAppPictureInPictureCloseTarget
-// Dependencies: [19, 21, 5009, 19064, 575, 5090, 5249, 5632, 11845, 2]
+// Dependencies: [19, 21, 5014, 19113, 575, 5095, 5254, 5637, 11883, 2]
 // Exports: default
 
-// Module 19065 (ConjureAppPictureInPictureCloseTarget)
+// Module 19114 (ConjureAppPictureInPictureCloseTarget)
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5249 */;
-import spring from "spring" /* 5632 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19064 */;
+import timing from "timing" /* 5254 */;
+import spring from "spring" /* 5637 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19113 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -51,7 +51,7 @@ export default function ConjureAppPictureInPictureCloseTarget(hovered) {
   dependencyMap = x;
   const y = center.y;
   let closure_3 = y;
-  let obj = shown(5090);
+  let obj = shown(5095);
   const fn = function h() {
     let items;
     const withTiming = timing.withTiming;
@@ -66,10 +66,10 @@ export default function ConjureAppPictureInPictureCloseTarget(hovered) {
     ({ translateX: closure_2 - conjureAppPictureInPictureLayout.CLOSE_TARGET_SIZE / 2 });
     const withSpring = spring.withSpring;
     spring;
-    const diff = closure_3 - tmp(19064).CLOSE_TARGET_SIZE / 2;
+    const diff = closure_3 - tmp(19113).CLOSE_TARGET_SIZE / 2;
     let num2 = 0;
     if (!obj.get()) {
-      num2 = tmp(19064).CLOSE_TARGET_SIZE;
+      num2 = tmp(19113).CLOSE_TARGET_SIZE;
     }
     items[1] = { translateY: withSpring(diff + num2, SPRING) };
     ({ translateY: withSpring(diff + num2, SPRING) });
@@ -83,12 +83,12 @@ export default function ConjureAppPictureInPictureCloseTarget(hovered) {
     ({ scale: withSpring2(num3, SPRING) });
     return obj2;
   };
-  const point = { withTiming: shown(5249).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(19064).CLOSE_TARGET_SIZE, withSpring: shown(5632).withSpring, y, SPRING, hovered, HOVERED_SCALE: 1.3 };
+  const point = { withTiming: shown(5254).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(19113).CLOSE_TARGET_SIZE, withSpring: shown(5637).withSpring, y, SPRING, hovered, HOVERED_SCALE: 1.3 };
   fn.__closure = point;
   fn.__workletHash = 15134050536622;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = shown(5090);
+  const obj3 = shown(5095);
   const fn2 = function u() {
     const withTiming = timing.withTiming;
     let num = 0;
@@ -99,22 +99,22 @@ export default function ConjureAppPictureInPictureCloseTarget(hovered) {
     const obj = { opacity: withTiming(num, FADE) };
     return obj;
   };
-  let obj2 = { withTiming: shown(5249).withTiming, hovered, FADE };
+  let obj2 = { withTiming: shown(5254).withTiming, hovered, FADE };
   fn2.__closure = obj2;
   fn2.__workletHash = 1295924731740;
   fn2.__initData = __initData2;
   const animatedStyle1 = obj3.useAnimatedStyle(fn2);
   const obj4 = { style: items, pointerEvents: "none", importantForAccessibility: "no-hide-descendants", children: items1 };
   items = [tmp.target, animatedStyle];
-  const View = hovered(5090).View;
+  const View = hovered(5095).View;
   const obj5 = { size: "md", color: hovered(575).colors.ICON_STRONG };
-  const DoorExitIcon = shown(11845).DoorExitIcon;
+  const DoorExitIcon = shown(11883).DoorExitIcon;
   items1 = [closure_3(DoorExitIcon, obj5), ];
   const obj6 = { style: items2, children: closure_3(DoorExitIcon2, obj7) };
   items2 = [tmp.fill, animatedStyle1];
-  const View2 = hovered(5090).View;
+  const View2 = hovered(5095).View;
   obj7 = { size: "md", color: hovered(575).colors.WHITE };
-  DoorExitIcon2 = shown(11845).DoorExitIcon;
+  DoorExitIcon2 = shown(11883).DoorExitIcon;
   items1[1] = closure_3(View2, obj6);
   return closure_4(View, obj4);
 };

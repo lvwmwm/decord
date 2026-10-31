@@ -1,21 +1,21 @@
-// Module ID: 10605
-// Function ID: 10606
+// Module ID: 10625
+// Function ID: 10626
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [32, 19, 17, 5010, 21, 575, 5009, 5619, 504, 9482, 1377, 10606, 5712, 1988, 9444, 2]
+// Dependencies: [32, 19, 17, 5015, 21, 575, 5014, 5624, 504, 9504, 1376, 10626, 5717, 1987, 9466, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 10605 (PremiumGiftPromotionDetails)
+// Module 10625 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import SKUPreview from "SKUPreview" /* 9444 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import SKUPreview from "SKUPreview" /* 9466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -197,7 +197,7 @@ export function PremiumGiftPromotionCollectibleRewardDetails(product) {
       rounded = Math.floor(1.2 * tmp10);
     } else {
       rounded = tmp10;
-      if (memo.item.type === tmp8(1988).CollectiblesItemType.AVATAR_DECORATION) {
+      if (memo.item.type === tmp8(1987).CollectiblesItemType.AVATAR_DECORATION) {
         const _Math = Math;
         rounded = Math.floor(1.5 * tmp10);
       }

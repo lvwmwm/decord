@@ -1,16 +1,16 @@
-// Module ID: 13369
-// Function ID: 13370
+// Module ID: 13404
+// Function ID: 13405
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 5009, 5090, 5023, 1626, 5632, 5633, 5582, 671, 13370, 2]
+// Dependencies: [19, 17, 21, 5014, 5095, 5028, 1625, 5637, 5638, 5587, 671, 13405, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 13369 (ModalFloatingAction)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
+// Module 13404 (ModalFloatingAction)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5633);
+const springPresets = tmp2(5638);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ floating: { position: "absolute", bottom: 0, width: "100%", paddingHorizontal: 16 }, spacer: { height: 96 } });

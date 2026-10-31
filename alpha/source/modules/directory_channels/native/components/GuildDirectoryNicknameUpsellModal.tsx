@@ -1,28 +1,28 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14223
+// Function ID: 14224
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 4880, 14175, 21, 5009, 5581, 575, 504, 5602, 7283, 6440, 6951, 5619, 1114, 7075, 1188, 5629, 14176, 14184, 6992, 7163, 5607, 2]
+// Dependencies: [5, 32, 19, 17, 4885, 14213, 21, 5014, 5586, 575, 504, 5607, 7289, 6446, 6957, 5624, 1113, 7081, 1187, 5634, 14214, 14222, 6998, 7169, 5612, 2]
 // Exports: default
 
-// Module 14185 (GuildDirectoryNicknameUpsellModal)
+// Module 14223 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import NavigatorConstants from "NavigatorConstants" /* 5581 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
-import reactDefault from "react" /* 5607 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import GuildIcon from "GuildIcon" /* 6951 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import Constants from "Constants" /* 14175 */;
+import intl6 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import NavigatorConstants from "NavigatorConstants" /* 5586 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
+import reactDefault from "react" /* 5612 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import Constants from "Constants" /* 14213 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let tmp5;
 let unpackModuleId;
-const FreeFormInputGroupDefault = tmp5(7075);
+const FreeFormInputGroupDefault = tmp5(7081);
 function GuildDirectoryNicknameUpsell(arg0) {
   let Button;
   let _undefined;
@@ -74,7 +74,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -122,7 +122,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_2 = tmp25;
@@ -169,8 +169,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
   }
   items3 = [tmp13(Text, obj7), ];
   const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t.b3L8yx) };
-  const Text2 = tmp2(5619).Text;
-  intl2 = tmp2(1114).intl;
+  const Text2 = tmp2(5624).Text;
+  intl2 = tmp2(1113).intl;
   items3[1] = closure_10(Text2, obj8);
   items2[1] = closure_11(closure_6, obj6);
   const obj10 = {
@@ -200,8 +200,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
     }
   };
   const tmp5Result = FreeFormInputGroupDefault;
-  intl3 = tmp2(1114).intl;
-  intl4 = tmp2(1114).intl;
+  intl3 = tmp2(1113).intl;
+  intl4 = tmp2(1113).intl;
   ({ input: obj9.style, redesignTextInput: obj9.textStyle } = tmp);
   firstFieldErrorMessage = undefined;
   if (obj2 != null) {
@@ -218,8 +218,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5629).Button;
-  intl5 = tmp2(1114).intl;
+  Button = tmp2(5634).Button;
+  intl5 = tmp2(1113).intl;
   items2[4] = closure_10(closure_6, obj12);
   return closure_11(tmp12, obj3);
 }

@@ -1,27 +1,27 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15732
+// Function ID: 15733
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 4834, 7159, 7362, 1114, 13968, 2]
+// Dependencies: [19, 21, 4839, 7165, 7368, 1113, 14003, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 15692 (useMessageRequestPrivacyOption)
+// Module 15732 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7159 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13968 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 14003 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettings = tmp(4834);
+const UserSettings = tmp(4839);
 function MessageRequestRestrictedGuildPrivacyOption(guild) {
   let intl;
   let intl2;
   guild = guild.guild;
   const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(4834).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(4839).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(4834).RestrictedGuildIds;
+  const RestrictedGuildIds = id(4839).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -37,10 +37,10 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
     const MessageRequestRestrictedGuildIds = UserSettings.MessageRequestRestrictedGuildIds;
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
-  let obj = { label: intl.string(id(1114).t["7UgSGP"]), subLabel: intl2.string(id(1114).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
-  const ActionSheetSwitchRow = id(7362).ActionSheetSwitchRow;
-  intl = id(1114).intl;
-  intl2 = id(1114).intl;
+  let obj = { label: intl.string(id(1113).t["7UgSGP"]), subLabel: intl2.string(id(1113).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
+  const ActionSheetSwitchRow = id(7368).ActionSheetSwitchRow;
+  intl = id(1113).intl;
+  intl2 = id(1113).intl;
   return jsx(ActionSheetSwitchRow, obj);
 }
 const jsx = Fragment.jsx;

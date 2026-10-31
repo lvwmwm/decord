@@ -1,18 +1,18 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17097
+// Function ID: 17098
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 5010, 21, 5090, 8023, 5009, 575, 504, 5249, 6974, 1114, 5613, 16985, 14640, 2]
+// Dependencies: [19, 17, 5015, 21, 5095, 8031, 5014, 575, 504, 5254, 6980, 1113, 5618, 17043, 14678, 2]
 
-// Module 17039 (QuestProgressIndicator)
+// Module 17097 (QuestProgressIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5249 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
+import timing from "timing" /* 5254 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import createStyles from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -60,9 +60,11 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   let obj5;
   let obj9;
   let onPress;
+  let paused;
   let progress;
   let quest;
   let size2;
+  let withAnimation;
   ({ quest, size, progress } = loading);
   let flag = loading.loading;
   if (flag === undefined) {
@@ -80,7 +82,7 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   let ref;
   let tmp = progress;
   let tmp2 = stateFromStores;
-  const withAnimation = loading.withAnimation;
+  ({ withAnimation, paused } = loading);
   let obj = progress(stateFromStores[8]);
   let items = [sharedValue1];
   stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
@@ -116,40 +118,40 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   }
   sharedValue2 = useSharedValue2(num2);
   const tmpResult4 = tmp(tmp2[4]);
-  class T {
+  class D {
     constructor() {
       const obj = { shadowOpacity: sharedValue2.get() };
       return obj;
     }
   }
-  T.__closure = { glowOpacity: sharedValue2 };
-  T.__workletHash = 17183837725505;
-  T.__initData = __initData;
-  const animatedStyle = tmpResult4.useAnimatedStyle(T);
+  D.__closure = { glowOpacity: sharedValue2 };
+  D.__workletHash = 17183837725505;
+  D.__initData = __initData;
+  const animatedStyle = tmpResult4.useAnimatedStyle(D);
   const tmpResult5 = tmp(tmp2[4]);
-  class D {
+  class E {
     constructor() {
       const obj = { strokeDashoffset: c5 - c5 * sharedValue.get() };
       return obj;
     }
   }
-  D.__closure = { circumference: result, animatedProgress: sharedValue };
-  D.__workletHash = 17281152506254;
-  D.__initData = __initData2;
-  const animatedProps = tmpResult5.useAnimatedProps(D);
+  E.__closure = { circumference: result, animatedProgress: sharedValue };
+  E.__workletHash = 17281152506254;
+  E.__initData = __initData2;
+  const animatedProps = tmpResult5.useAnimatedProps(E);
   const tmpResult6 = tmp(tmp2[4]);
-  class E {
+  class R {
     constructor() {
       const obj = { opacity: sharedValue1.get() };
       const merged = Object.assign(closure_6.opacityMask);
       return obj;
     }
   }
-  E.__closure = { underlayOpacity: sharedValue1, styles: tmp9 };
-  E.__workletHash = 4427598698568;
-  E.__initData = __initData3;
+  R.__closure = { underlayOpacity: sharedValue1, styles: tmp9 };
+  R.__workletHash = 4427598698568;
+  R.__initData = __initData3;
   const items1 = [sharedValue, progress, stateFromStores];
-  const animatedStyle1 = tmpResult6.useAnimatedStyle(E);
+  const animatedStyle1 = tmpResult6.useAnimatedStyle(R);
   scale(() => {
     let num = 500;
     set = sharedValue.set;
@@ -264,7 +266,7 @@ const memoResult = react.memo(function QuestProgressIndicator(loading) {
   }
   items9[1] = tmp27Result;
   const obj15 = { style: tmp9.imageContainer, children: closure_9(flag(tmp2[14]), size2) };
-  size2 = { quest, height: 0.78 * tmp5, width: 0.78 * tmp5, withAnimation, accessibilityLabelPrefix: accessibilityLabel };
+  size2 = { quest, height: 0.78 * tmp5, width: 0.78 * tmp5, withAnimation, paused, accessibilityLabelPrefix: accessibilityLabel };
   items9[2] = closure_9(sharedValue, obj15);
   items6[1] = sharedValue2(sharedValue, obj7);
   return closure_9(PressableOpacity, obj4);

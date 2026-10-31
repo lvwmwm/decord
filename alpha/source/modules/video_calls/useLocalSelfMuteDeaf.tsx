@@ -1,13 +1,13 @@
-// Module ID: 9216
-// Function ID: 9217
+// Module ID: 9235
+// Function ID: 9236
 // Name: useLocalSelfMuteDeaf
-// Dependencies: [502, 2007, 504, 2]
+// Dependencies: [502, 2006, 504, 2]
 // Exports: useLocalSelfMuteDeaf, withLocalSelfMuteDeaf
 
-// Module 9216 (useLocalSelfMuteDeaf)
+// Module 9235 (useLocalSelfMuteDeaf)
 import get_initialized from "get initialized" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
 import size from "module_2" /* 2 */;
 
 function getLocalSelfMuteDeaf() {

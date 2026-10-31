@@ -1,12 +1,12 @@
-// Module ID: 15730
-// Function ID: 15731
+// Module ID: 15770
+// Function ID: 15771
 // Name: GuildBadgeTrophy
-// Dependencies: [19, 21, 15701, 8023, 2]
+// Dependencies: [19, 21, 15741, 8031, 2]
 // Exports: GuildBadgeTrophy
 
-// Module 15730 (GuildBadgeTrophy)
-import inlineStyles from "inlineStyles" /* 8023 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15701 */;
+// Module 15770 (GuildBadgeTrophy)
+import inlineStyles from "inlineStyles" /* 8031 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15741 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

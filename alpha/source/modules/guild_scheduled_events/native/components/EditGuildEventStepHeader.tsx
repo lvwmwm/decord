@@ -1,15 +1,15 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9072
+// Function ID: 9073
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 5009, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 5624, 2]
 // Exports: default
 
-// Module 9053 (EditGuildEventStepHeader)
+// Module 9072 (EditGuildEventStepHeader)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5619 */;
+import Text_Text from "Text/Text" /* 5624 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;

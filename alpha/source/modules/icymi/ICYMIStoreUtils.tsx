@@ -1,16 +1,16 @@
-// Module ID: 18475
-// Function ID: 18476
+// Module ID: 18518
+// Function ID: 18519
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 6056, 6836, 8897, 1072, 18476, 8914, 8910, 7273, 1995, 1072, 11, 8915, 504, 2]
+// Dependencies: [5, 6061, 6842, 8906, 1072, 18519, 8923, 8919, 7279, 1994, 1072, 11, 8924, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 18475 (ICYMIStoreUtils)
+// Module 18518 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1072 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 18476 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 18519 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import ICYMIStore from "ICYMIStore" /* 8897 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import ICYMIStore from "ICYMIStore" /* 8906 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -92,7 +92,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp35) {
         c4 = 3;

@@ -1,71 +1,89 @@
 // Module ID: 5129
 // Function ID: 5130
-// Dependencies: [32, 19, 5111, 5124, 5119]
-// Exports: useRiveColor
+// Dependencies: [32, 19, 5130]
+// Exports: useRiveProperty
 
 // Module 5129
-import react from "react" /* 19 */;
-import react2 from "react" /* 5111 */;
-import _mod5124 from "module_5124" /* 5124 */;
+import react2 from "react" /* 5130 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-let tmp;
-const RiveColor2 = tmp(5119);
-react.useCallback;
-const f34157 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
 
-export function useRiveColor(FillColor, instance) {
-  let closure_0;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp8;
+export function useRiveProperty(instance, device, f34221) {
+  let closure_7;
+  let first;
+  let first1;
+  let closure_0 = instance;
+  let closure_1 = device;
+  let closure_2 = f34221;
+  let tmp = hasOwnProperty(undefined);
+  let c3 = tmp;
+  const items = [instance, device];
   const obj = react2;
-  const cResult = obj.c(8);
-  const obj2 = _mod5124;
-  const tmp4 = _slicedToArray(obj2.useRiveProperty(instance, FillColor, f34157), 3);
-  [tmp5, tmp6] = tmp4;
-  require = tmp6;
-  if (cResult[0] !== tmp5) {
-    let fromIntResult;
-    if (undefined !== tmp5) {
-      let RiveColor = RiveColor2.RiveColor;
-      fromIntResult = RiveColor.fromInt(tmp5);
+  const disposableMemo = obj.useDisposableMemo(() => {
+    if (closure_0) {
+      return closure_2(tmp, closure_1);
     }
-    cResult[0] = tmp5;
-    cResult[1] = fromIntResult;
-    tmp8 = fromIntResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp6) {
-    const fn = function p(str) {
-      let fromHexStringResult = str;
-      if (typeof str === "string") {
-        const RiveColor = RiveColor2.RiveColor;
-        fromHexStringResult = RiveColor.fromHexString(str);
-      }
-      tmp6(fromHexStringResult.toInt());
-    };
-    cResult[2] = tmp6;
-    cResult[3] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp4[2]) {
-    if (cResult[5] === tmp10) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
+  }, (dispose) => {
+    let disposeResult;
+    if (dispose != null) {
+      disposeResult = dispose.dispose();
     }
-  }
-  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
-  cResult[4] = tmp4[2];
-  cResult[5] = tmp10;
-  cResult[6] = tmp8;
-  cResult[7] = obj3;
-  tmp11 = obj3;
+    return disposeResult;
+  }, items, tmp);
+  [first, metroRequire] = metroRequire(undefined);
+  [first1, closure_7] = metroRequire(null);
+  const items1 = [device, instance];
+  React3(() => {
+    closure_7(null);
+  }, items1);
+  const items2 = [instance, disposableMemo, device];
+  React3(function() {
+    const tmp = closure_0 && !disposableMemo;
+    if (tmp) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Property \"" + closure_1 + "\" not found in the ViewModel instance");
+      closure_7(error);
+    }
+  }, items2);
+  const items3 = [disposableMemo];
+  React3(() => {
+    if (disposableMemo) {
+      closure_6(iter.value);
+      closure_0 = iter.addListener((arg0) => {
+        closure_1_6(arg0);
+      });
+      return () => {
+        try {
+          closure_0();
+        } catch (err) {
+        }
+      };
+    }
+  }, items3);
+  const items4 = [disposableMemo, first];
+  const items5 = [
+    first,
+    _false((fn) => {
+      const current = ref.current;
+      if (current) {
+        let tmp2 = fn;
+        if (typeof fn === "function") {
+          tmp2 = fn(first);
+        }
+        current.value = tmp2;
+      }
+    }, items4),
+    first1,
+    disposableMemo
+  ];
+  return items5;
 }

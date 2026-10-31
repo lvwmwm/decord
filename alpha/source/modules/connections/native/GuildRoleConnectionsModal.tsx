@@ -1,11 +1,11 @@
-// Module ID: 11562
-// Function ID: 11563
+// Module ID: 11598
+// Function ID: 11599
 // Name: GuildRoleConnectionsModal
-// Dependencies: [19, 21, 1114, 7552, 8351, 11563, 7163, 2]
+// Dependencies: [19, 21, 1113, 7558, 8359, 11599, 7169, 2]
 
-// Module 11562 (GuildRoleConnectionsModal)
+// Module 11598 (GuildRoleConnectionsModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1114 */;
+import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const memoResult = react.memo(function GuildRoleConnectionsModal(guildId) {
     obj[GUILD_ROLE_CONNECTIONS_SCREEN] = obj2;
     return obj;
   }, items);
-  return jsx(guildId(7163).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
+  return jsx(guildId(7169).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
 });
 const result = size.fileFinishedImporting("modules/connections/native/GuildRoleConnectionsModal.tsx");
 

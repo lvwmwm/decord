@@ -1,26 +1,26 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 13835
+// Function ID: 13836
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 4880, 13801, 1072, 21, 5009, 575, 7142, 5712, 13804, 5619, 1114, 1188, 504, 13805, 13806, 1626, 13833, 13834, 7288, 6992, 7551, 13814, 13798, 1253, 2]
+// Dependencies: [32, 19, 17, 4885, 13836, 1072, 21, 5014, 575, 7148, 5717, 13839, 5624, 1113, 1187, 504, 13840, 13841, 1625, 13868, 13869, 7294, 6998, 7557, 13849, 13833, 1252, 2]
 // Exports: default
 
-// Module 13800 (GuildDirectorySearch)
+// Module 13835 (GuildDirectorySearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13798 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13804 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13806 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13814 */;
+import native from "native" /* 1187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13833 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13839 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13841 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13801 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13836 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -70,9 +70,9 @@ function EmptyState(channel) {
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(13805);
+  let obj2 = channel(13840);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  const intl = channel(1114).intl;
+  const intl = channel(1113).intl;
   if (canCreateOrAddGuildInDirectory) {
     const obj3 = {
       addServerHook() {
@@ -81,20 +81,20 @@ function EmptyState(channel) {
           obj.open(obj2);
         }
     };
-    formatResult = intl.format(tmp2(1114).t.ZxNVMy, obj3);
+    formatResult = intl.format(tmp2(1113).t.ZxNVMy, obj3);
   } else {
-    formatResult = intl.string(tmp2(1114).t.vYyEnv);
+    formatResult = intl.string(tmp2(1113).t.vYyEnv);
   }
   const obj4 = { style: tmp.emptyWrapper, children: items1 };
   const obj5 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
   const tmp6 = FastImageDefault;
   items1 = [closure_10(tmp6, obj5), , ];
-  const obj6 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1114).t["6HXiuE"]) };
-  const Text = tmp2(5619).Text;
-  intl2 = tmp2(1114).intl;
+  const obj6 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1113).t["6HXiuE"]) };
+  const Text = tmp2(5624).Text;
+  intl2 = tmp2(1113).intl;
   items1[1] = closure_10(Text, obj6);
   const obj7 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  items1[2] = closure_10(channel(5619).Text, obj7);
+  items1[2] = closure_10(channel(5624).Text, obj7);
   return closure_11(View, obj4);
 }
 const View = react_native.View;

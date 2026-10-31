@@ -1,11 +1,11 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 14780
+// Function ID: 14781
 // Name: MediaViewerEntranceJankExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: useIsMediaViewerEntranceJankFixEnabled
 
-// Module 14742 (MediaViewerEntranceJankExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 14780 (MediaViewerEntranceJankExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

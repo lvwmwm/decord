@@ -1,9 +1,9 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15624
+// Function ID: 15625
 // Name: EmailSettingsStore
 // Dependencies: [504, 572, 2]
 
-// Module 15585 (EmailSettingsStore)
+// Module 15624 (EmailSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

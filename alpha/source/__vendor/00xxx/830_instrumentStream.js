@@ -315,7 +315,7 @@ let obj = function _instrumentStream() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c19;
@@ -350,7 +350,7 @@ let obj = function _instrumentStream() {
                 value = undefined;
                 value2 = undefined;
                 items9 = undefined;
-                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "__d", totalTokens: "fill", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
+                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "__closure", totalTokens: "assign", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
                 c4 = false;
                 c5 = false;
                 c19 = 4;
@@ -491,7 +491,7 @@ let obj = function _instrumentStream() {
                   }
                   closure_0.end();
                   c22 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               break;

@@ -1,14 +1,14 @@
-// Module ID: 5733
-// Function ID: 5734
+// Module ID: 5738
+// Function ID: 5739
 // Name: TrashIcon
-// Dependencies: [19, 21, 575, 5711, 5734, 2]
+// Dependencies: [19, 21, 575, 5716, 5739, 2]
 // Exports: TrashIcon
 
-// Module 5733 (TrashIcon)
+// Module 5738 (TrashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 5734 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 5739 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

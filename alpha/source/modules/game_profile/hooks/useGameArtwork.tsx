@@ -1,11 +1,11 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 9376
+// Function ID: 9377
 // Name: useGameArtwork
-// Dependencies: [32, 19, 2027, 2]
+// Dependencies: [32, 19, 2025, 2]
 // Exports: default, getGameArtworkSource, hasGameArtwork
 
-// Module 9356 (useGameArtwork)
-import getGameMediaRefURL from "getGameMediaRefURL" /* 2027 */;
+// Module 9376 (useGameArtwork)
+import getGameMediaRefURL from "getGameMediaRefURL" /* 2025 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -73,7 +73,7 @@ export function getGameArtworkSource(media) {
   if (!hasGameMediaRef(cover)) {
     const media2 = media.media;
     let icon;
-    const hasGameMediaRef2 = tmp(2027).hasGameMediaRef;
+    const hasGameMediaRef2 = tmp(2025).hasGameMediaRef;
     getGameMediaRefURL;
     if (media2 != null) {
       icon = media2.icon;
@@ -98,7 +98,7 @@ export function hasGameArtwork(media) {
   if (!hasGameMediaRef(cover)) {
     const media2 = media.media;
     let icon;
-    const hasGameMediaRef2 = tmp(2027).hasGameMediaRef;
+    const hasGameMediaRef2 = tmp(2025).hasGameMediaRef;
     getGameMediaRefURL;
     if (media2 != null) {
       icon = media2.icon;

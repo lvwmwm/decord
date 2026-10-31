@@ -1,17 +1,17 @@
-// Module ID: 14767
-// Function ID: 14768
+// Module ID: 14805
+// Function ID: 14806
 // Name: ZoomLayoutGesture
-// Dependencies: [19, 17, 21, 5251, 5632, 5090, 5009, 5298, 2]
+// Dependencies: [19, 17, 21, 5256, 5637, 5095, 5014, 5303, 2]
 
-// Module 14767 (ZoomLayoutGesture)
+// Module 14805 (ZoomLayoutGesture)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5251 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import spring from "spring" /* 5632 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5256 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,9 +67,9 @@ function releaseTranslation(get, bound, arg2) {
           }
         };
         set2 = get.set;
-        const obj2 = { bound, translation: get, withSpring: tmp5(5632).withSpring, SPRING_CONFIG };
-        const withDecay = tmp5(5090).withDecay;
-        tmp5(5090);
+        const obj2 = { bound, translation: get, withSpring: tmp5(5637).withSpring, SPRING_CONFIG };
+        const withDecay = tmp5(5095).withDecay;
+        tmp5(5095);
         fn.__closure = obj2;
         fn.__workletHash = 7034972790996;
         fn.__initData = __initData;
@@ -77,7 +77,7 @@ function releaseTranslation(get, bound, arg2) {
       }
     }
     set = get.set;
-    const tmp5Result2 = tmp5(5632);
+    const tmp5Result2 = tmp5(5637);
     const result1 = set(tmp5Result2.withSpring(bound, SPRING_CONFIG));
   }
 }

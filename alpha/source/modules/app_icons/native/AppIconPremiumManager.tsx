@@ -1,19 +1,19 @@
-// Module ID: 19337
-// Function ID: 19338
+// Module ID: 19394
+// Function ID: 19395
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1384, 9958, 1072, 5034, 3, 9959, 7281, 1376, 15301, 5037, 14556, 1253, 2]
+// Dependencies: [5, 1383, 9979, 1072, 5039, 3, 9980, 7287, 1375, 15340, 5042, 14594, 1252, 2]
 
-// Module 19337 (AppIconPremiumManager)
+// Module 19394 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
-import AppIconTypes from "AppIconTypes" /* 9959 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import AppIconTypes from "AppIconTypes" /* 9980 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1384 */;
-import AppIconConstants from "AppIconConstants" /* 9958 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import UserStore from "UserStore" /* 1383 */;
+import AppIconConstants from "AppIconConstants" /* 9979 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp62) {
           c6 = 3;

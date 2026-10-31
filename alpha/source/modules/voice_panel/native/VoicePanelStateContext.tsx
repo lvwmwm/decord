@@ -1,18 +1,18 @@
-// Module ID: 11203
-// Function ID: 11204
+// Module ID: 11222
+// Function ID: 11223
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11204, 11202, 11205, 7236, 11206, 1628, 11212, 2]
+// Dependencies: [19, 11223, 11221, 11224, 7242, 11225, 1627, 11231, 2]
 
-// Module 11203 (VoicePanelStateContext)
-import SafeAreaConstants from "SafeAreaConstants" /* 1628 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11205 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11206 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11212 */;
+// Module 11222 (VoicePanelStateContext)
+import SafeAreaConstants from "SafeAreaConstants" /* 1627 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11225 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11231 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7236 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7242 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -25,15 +25,23 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "e",
+  channelType: "ind",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
+  committedMode: ReanimatedHelperTypes.createFakeSharedValue(null),
   dismissPanel() {
     const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");
     throw error;
   },
-  dismissToPIPGestureRef: { current: "getCurrentUser" },
+  dockContentSwap: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockEntryProgress: ReanimatedHelperTypes.createFakeSharedValue(1),
+  dockHeight: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockJoinMorphOrigin: ReanimatedHelperTypes.createFakeSharedValue(null),
+  dockMinimizeProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockPressProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockPressed: ReanimatedHelperTypes.createFakeSharedValue(false),
+  dismissToPIPGestureRef: { current: "Array" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),
   generateStateLocker() {
@@ -41,11 +49,18 @@ const obj = {
     throw error;
   },
   guildId: null,
+  handleDockSheetLayout() {
+    const error = new Error("VoicePanelContextType.Provider.handleDockSheetLayout: not called within a context provider");
+    throw error;
+  },
   hideControls() {
     const error = new Error("VoicePanelContextType.Provider.hideControls: not called within a context provider");
     throw error;
   },
   isCall: null,
+  isDockConnected: ReanimatedHelperTypes.createFakeSharedValue(false),
+  isDockEnabled: null,
+  isDockExpanding: ReanimatedHelperTypes.createFakeSharedValue(true),
   isFocusedVideoZoomed: ReanimatedHelperTypes.createFakeSharedValue(false),
   layoutManager: new VoicePanelCardLayoutManagerDefault("invalid"),
   mode: ReanimatedHelperTypes.createFakeSharedValue(VoicePanelModes.PANEL),
@@ -79,6 +94,7 @@ const obj = {
     const error = new Error("VoicePanelContextType.Provider.showFloatingCTA: not called within a context provider");
     throw error;
   },
+  sheetExitProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
   showControls() {
     const error = new Error("VoicePanelContextType.Provider.showControls: not called within a context provider");
     throw error;

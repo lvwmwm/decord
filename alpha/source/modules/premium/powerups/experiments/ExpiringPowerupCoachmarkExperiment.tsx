@@ -1,11 +1,11 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14068
+// Function ID: 14069
 // Name: ExpiringPowerupCoachmarkExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1448, 2]
 // Exports: useExpiringPowerupCoachmarkEnabled
 
-// Module 14033 (ExpiringPowerupCoachmarkExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
+// Module 14068 (ExpiringPowerupCoachmarkExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

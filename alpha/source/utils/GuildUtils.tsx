@@ -1,16 +1,16 @@
-// Module ID: 6895
-// Function ID: 6896
+// Module ID: 6901
+// Function ID: 6902
 // Name: GuildUtils
-// Dependencies: [4880, 1384, 1452, 1090, 6896, 5063, 1114, 2]
+// Dependencies: [4885, 1383, 1451, 1089, 6902, 5068, 1113, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 6895 (GuildUtils)
-import DurationsDefault from "Durations" /* 1090 */;
-import intl2 from "intl" /* 1114 */;
-import UserUtilsAll from "UserUtils" /* 5063 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import UserStore from "UserStore" /* 1384 */;
-import LRUCache from "LRUCache" /* 1452 */;
+// Module 6901 (GuildUtils)
+import DurationsDefault from "Durations" /* 1089 */;
+import intl2 from "intl" /* 1113 */;
+import UserUtilsAll from "UserUtils" /* 5068 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
+import LRUCache from "LRUCache" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 function getGuildNameSuggestion(truncateUsername) {
@@ -46,7 +46,7 @@ let obj2 = {
     let closure_4;
     let flag2;
     let timeout;
-    const f89366 = () => {
+    const f89598 = () => {
       items = [];
       if (null == items) {
         const push = items.push;
@@ -124,7 +124,7 @@ let obj2 = {
           clearTimeout(timeout);
         }
         const _setTimeout2 = setTimeout;
-        timeout = setTimeout(f89366, 200);
+        timeout = setTimeout(f89598, 200);
       }
     }
     if (flag2) {
@@ -135,7 +135,7 @@ let obj2 = {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f89366, 200);
+      timeout = setTimeout(f89598, 200);
     }
   }
 };

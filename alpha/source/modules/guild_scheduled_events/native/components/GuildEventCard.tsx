@@ -1,19 +1,19 @@
-// Module ID: 9076
-// Function ID: 9077
+// Module ID: 9095
+// Function ID: 9096
 // Name: GuildEventCard
-// Dependencies: [19, 17, 5759, 6849, 4864, 21, 5009, 575, 8972, 6761, 504, 8959, 6971, 7946, 9077, 2]
+// Dependencies: [19, 17, 5764, 6855, 4869, 21, 5014, 575, 8981, 6767, 504, 8968, 6977, 7954, 9096, 2]
 
-// Module 9076 (GuildEventCard)
+// Module 9095 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
-import ButtonGroup2 from "ButtonGroup" /* 6761 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 8972 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import ButtonGroup2 from "ButtonGroup" /* 6767 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 8981 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ function GuildEventCardControls(onCloseAction) {
   const tmp5 = metroImportAll;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(8972).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(8981).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, { event });

@@ -1,23 +1,23 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16770
+// Function ID: 16771
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7708, 7709, 21, 5009, 575, 563, 5253, 16729, 5267, 5619, 1114, 2537, 16730, 5629, 2]
+// Dependencies: [19, 17, 7715, 7716, 21, 5014, 575, 563, 5258, 16771, 5272, 5624, 1113, 2538, 16772, 5634, 2]
 // Exports: default
 
-// Module 16728 (ConnectGuardianBottomSheet)
+// Module 16770 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2537 from "module_2537" /* 2537 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7709 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16729 */;
+import _modDef2538 from "module_2538" /* 2538 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16771 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -68,20 +68,20 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: title };
   const Text = Text_Text.Text;
   if (title == null) {
-    const intl = tmp2(1114).intl;
-    title = intl.string(tmp7(2537).aCUVfL);
+    const intl = tmp2(1113).intl;
+    title = intl.string(tmp7(2538).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(5619).Text;
+  const Text2 = tmp2(5624).Text;
   if (body == null) {
-    const intl2 = tmp2(1114).intl;
-    body = intl2.format(tmp7(2537)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+    const intl2 = tmp2(1113).intl;
+    body = intl2.format(tmp7(2538)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj7 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj8) };
-  ConnectGuardianCard = tmp2(16730).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(16772).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
@@ -91,9 +91,9 @@ export default function ConnectGuardianBottomSheet(arg0) {
   }
   const obj9 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj7);
-  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2537.Hsm5IF), onPress: callback };
-  const Button = tmp2(5629).Button;
-  intl3 = tmp2(1114).intl;
+  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2538.Hsm5IF), onPress: callback };
+  const Button = tmp2(5634).Button;
+  intl3 = tmp2(1113).intl;
   items3[2] = metroImportDefault(Button, obj10);
   return metroImportDefault(BottomSheet, obj9);
 };

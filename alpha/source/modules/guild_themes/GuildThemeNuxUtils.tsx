@@ -1,14 +1,14 @@
-// Module ID: 18165
-// Function ID: 18166
+// Module ID: 18208
+// Function ID: 18209
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1232, 5244, 4839, 2]
+// Dependencies: [5, 1231, 5249, 4844, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 18165 (GuildThemeNuxUtils)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4839 */;
-import flow_Client from "flow/Client" /* 5244 */;
+// Module 18208 (GuildThemeNuxUtils)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4844 */;
+import flow_Client from "flow/Client" /* 5249 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -29,7 +29,7 @@ let obj = function _saveGuildThemeNuxPreference() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _saveGuildThemeNuxPreference() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         c5 = 3;
@@ -98,9 +98,9 @@ export function getInitialGuildThemeNuxSelection() {
   let GUILD;
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === flow_Client.GuildThemeSourcePreference.PERSONAL) {
-    GUILD = tmp2(5244).GuildThemeSourcePreference.PERSONAL;
+    GUILD = tmp2(5249).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(5244).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(5249).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 }

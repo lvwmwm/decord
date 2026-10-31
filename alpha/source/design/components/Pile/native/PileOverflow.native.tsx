@@ -1,18 +1,18 @@
-// Module ID: 13375
-// Function ID: 13376
+// Module ID: 13410
+// Function ID: 13411
 // Name: PileOverflow
-// Dependencies: [19, 17, 2063, 21, 5009, 575, 563, 5619, 1896, 2]
+// Dependencies: [19, 17, 2062, 21, 5014, 575, 563, 5624, 1895, 2]
 // Exports: PileOverflow
 
-// Module 13375 (PileOverflow)
+// Module 13410 (PileOverflow)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import NumberUtils from "NumberUtils" /* 1896 */;
+import NumberUtils from "NumberUtils" /* 1895 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export function PileOverflow(size) {
   }
   items1[1] = obj2;
   const obj3 = { style: items1, children: tmp6(Text, obj4) };
-  Text = tmp(5619).Text;
+  Text = tmp(5624).Text;
   let str = map.get(size);
   tmp6 = React3;
   if (str == null) {

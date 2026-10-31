@@ -1,16 +1,16 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 12768
+// Function ID: 12769
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 12405, 6022, 5629, 12400, 12541, 12734, 5619, 12735, 2]
+// Dependencies: [19, 21, 12443, 6027, 5634, 12438, 12576, 12769, 5624, 12770, 2]
 // Exports: default
 
-// Module 12733 (ConjurePublishCtaCard)
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import Stack_Stack from "Stack/Stack" /* 6022 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12400 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 12405 */;
-import conjurePublishCard from "conjurePublishCard" /* 12541 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12734 */;
+// Module 12768 (ConjurePublishCtaCard)
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6027 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12438 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 12443 */;
+import conjurePublishCard from "conjurePublishCard" /* 12576 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12769 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -56,19 +56,19 @@ export default function ConjurePublishCtaCard(arg0) {
     if (obj.isConjurePublishCtaVisible(tmp3, cta)) {
       const obj2 = { projectId, publish: tmp3 };
       const tmpResult = ConjureTipInlineCalloutDefault;
-      const Stack = tmp5(6022).Stack;
+      const Stack = tmp5(6027).Stack;
       const items = [_false(PublishCta, obj2), , ];
       let tmp6Result = null;
       const tmp8 = React3;
       if (null != tmp3.failure) {
         const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.failure };
-        tmp6Result = tmp6(tmp5(5619).Text, obj3);
+        tmp6Result = tmp6(tmp5(5624).Text, obj3);
       }
       items[1] = tmp6Result;
       let tmp6Result3 = null;
       if (null != turnId) {
         const obj4 = { projectId, turnId, cta, status: tmp3.status };
-        tmp6Result3 = tmp6(tmp(12735), obj4, turnId);
+        tmp6Result3 = tmp6(tmp(12770), obj4, turnId);
       }
       const obj5 = { children: tmp8(Stack, obj6) };
       obj6 = { spacing: 12, children: items };

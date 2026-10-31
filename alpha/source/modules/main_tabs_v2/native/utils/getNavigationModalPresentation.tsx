@@ -1,14 +1,14 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10144
+// Function ID: 10145
 // Name: getNavigationModalPresentation
-// Dependencies: [1376, 7106, 4966, 8894, 1492, 2]
+// Dependencies: [1375, 7112, 4971, 8903, 1491, 2]
 // Exports: default
 
-// Module 10124 (getNavigationModalPresentation)
-import DeviceUtils from "DeviceUtils" /* 4966 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 7106 */;
-import DeviceOrientation from "DeviceOrientation" /* 8894 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+// Module 10144 (getNavigationModalPresentation)
+import DeviceUtils from "DeviceUtils" /* 4971 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 7112 */;
+import DeviceOrientation from "DeviceOrientation" /* 8903 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let str;
@@ -65,7 +65,7 @@ export default function getNavigationModalPresentation() {
       let str5 = "portrait";
       str4 = "portrait";
       if (null == orientationLock) {
-        const tmp5Result = tmp5(1492);
+        const tmp5Result = tmp5(1491);
         size = tmp5Result.getWindowDimensions({ ignoreKeyboard: true });
         if (size.width > size.height) {
           str5 = "landscape";

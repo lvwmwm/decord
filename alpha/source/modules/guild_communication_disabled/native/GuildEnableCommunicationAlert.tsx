@@ -1,21 +1,21 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13256
+// Function ID: 13257
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1384, 4923, 1072, 21, 5009, 8426, 5588, 1253, 13220, 5707, 1114, 6025, 5619, 6036, 10129, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 4928, 1072, 21, 5014, 8434, 5593, 1252, 13255, 5712, 1113, 6030, 5624, 6041, 10149, 2]
 // Exports: default
 
-// Module 13221 (GuildEnableCommunicationAlert)
+// Module 13256 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import CountDownDefault from "CountDown" /* 10129 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CountDownDefault from "CountDown" /* 10149 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4923 */;
+import UserStore from "UserStore" /* 1383 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, dependencyMap;
@@ -69,7 +69,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             intl = tmp3(c2[14]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -116,41 +116,41 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp2 = closure_12();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(8426)(userId, guildId), 1)[0];
-  userId(5588)(() => {
+  let closure_3 = obj(userId(8434)(userId, guildId), 1)[0];
+  userId(5593)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };
     obj.track(constants.OPEN_MODAL, obj2);
   });
   obj = {
-    title: intl.string(guildId(1114).t["+ZD3ou"]),
+    title: intl.string(guildId(1113).t["+ZD3ou"]),
     style: tmp2.wrapper,
-    cancelText: intl2.string(guildId(1114).t["ETE/oC"]),
+    cancelText: intl2.string(guildId(1113).t["ETE/oC"]),
     onClose,
     onCancel,
-    confirmText: intl3.string(tmp9(1114).t.qXtNtS),
+    confirmText: intl3.string(tmp9(1113).t.qXtNtS),
     onConfirm: function handleConfirmRemoveTimeout() {
       return obj(...arguments);
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(6025);
+  const tmp7 = userId(6030);
   const merged1 = Object.assign(merged);
-  intl = guildId(1114).intl;
-  intl2 = guildId(1114).intl;
+  intl = guildId(1113).intl;
+  intl2 = guildId(1113).intl;
   onClose = undefined;
   if (merged != null) {
     onClose = merged.onClose;
   }
-  intl3 = tmp9(1114).intl;
+  intl3 = tmp9(1113).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "text-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5619).Text;
-  const intl4 = tmp9(1114).intl;
+  const Text = tmp9(5624).Text;
+  const intl4 = tmp9(1113).intl;
   format = intl4.format;
-  prop = tmp9(1114).t["t+abNU"];
+  prop = tmp9(1113).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(6036);
+  const tmp3Result = tmp3(6041);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_11;
   tmp12 = View;
@@ -172,11 +172,11 @@ export default function GuildEnableCommunicationAlert(guildId) {
     }
   };
   items = [tmp6(Text, obj3), ];
-  let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1114).t.KtENkK, obj6) };
+  let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1113).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5619).Text;
-  intl5 = tmp9(1114).intl;
+  const Text2 = tmp9(5624).Text;
+  intl5 = tmp9(1113).intl;
   obj6 = { link };
   items[1] = closure_10(Text2, obj5);
   return closure_10(tmp7, obj);

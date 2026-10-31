@@ -1,70 +1,70 @@
-// Module ID: 11324
-// Function ID: 11325
+// Module ID: 11360
+// Function ID: 11361
 // Name: Messages
-// Dependencies: [32, 19, 5010, 4857, 8714, 2040, 11325, 7648, 6837, 10096, 6790, 5233, 7458, 11326, 6876, 8405, 8375, 6849, 7630, 8689, 8381, 11329, 8382, 7270, 11330, 11331, 7625, 11332, 7815, 7759, 10102, 4943, 7471, 2063, 1193, 502, 4858, 7816, 11333, 4921, 4880, 6702, 5744, 6056, 4941, 5756, 5759, 6836, 5761, 8384, 1384, 5674, 6890, 11489, 5762, 1072, 11327, 1386, 21, 504, 12, 558, 6875, 1380, 4834, 11500, 11507, 11511, 11514, 9661, 7622, 2048, 8430, 6760, 11232, 11233, 9873, 8426, 7595, 11518, 5204, 10104, 9845, 11519, 10092, 8837, 6720, 10093, 8688, 11520, 11524, 8707, 7871, 11525, 11528, 10716, 11529, 2]
+// Dependencies: [32, 19, 5015, 4862, 8722, 2038, 11361, 7655, 6843, 10116, 6796, 5238, 7464, 11362, 6882, 8413, 8383, 6855, 7637, 8697, 8389, 11365, 8390, 7276, 11366, 11367, 7632, 11368, 7822, 7766, 10122, 4948, 7477, 2062, 1192, 502, 4863, 7823, 11369, 4926, 4885, 6708, 5749, 6061, 4946, 5761, 5764, 6842, 5766, 8392, 1383, 5679, 6896, 11523, 5767, 1072, 11363, 1385, 21, 504, 12, 558, 6881, 1379, 4839, 11534, 11541, 11545, 11548, 9681, 7629, 2047, 8438, 6766, 11258, 11259, 9894, 8434, 7602, 11552, 5209, 10124, 9866, 11553, 10112, 8845, 6726, 10113, 8696, 11554, 11558, 8715, 7878, 11559, 11562, 10736, 11563, 2]
 
-// Module 11324 (Messages)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9873 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11327 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11519 */;
+// Module 11360 (Messages)
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9894 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11363 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11553 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8714 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11325 */;
-import CacheStore from "CacheStore" /* 7648 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10096 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
-import ExperimentStore from "ExperimentStore" /* 5233 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7458 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11326 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6876 */;
-import BasicGuildStore from "BasicGuildStore" /* 8405 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8375 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7630 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8689 */;
-import InteractionStore from "InteractionStore" /* 8381 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11329 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8382 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7270 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11330 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11331 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7625 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 11332 */;
-import PendingReplyStore from "PendingReplyStore" /* 7815 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7759 */;
-import SummaryStore from "SummaryStore" /* 10102 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7471 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8722 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11361 */;
+import CacheStore from "CacheStore" /* 7655 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10116 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import ExperimentStore from "ExperimentStore" /* 5238 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7464 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11362 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6882 */;
+import BasicGuildStore from "BasicGuildStore" /* 8413 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8383 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7637 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8697 */;
+import InteractionStore from "InteractionStore" /* 8389 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11365 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8390 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7276 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11366 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11367 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7632 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 11368 */;
+import PendingReplyStore from "PendingReplyStore" /* 7822 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7766 */;
+import SummaryStore from "SummaryStore" /* 10122 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7477 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import EditMessageStore from "EditMessageStore" /* 7816 */;
-import GiftCodeStore from "GiftCodeStore" /* 11333 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6702 */;
-import InviteStore from "InviteStore" /* 5744 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import SessionsStore from "SessionsStore" /* 5761 */;
-import UploadStore from "UploadStore" /* 8384 */;
-import UserStore from "UserStore" /* 1384 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
-import SKUStore from "SKUStore" /* 6890 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 11489 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import EditMessageStore from "EditMessageStore" /* 7823 */;
+import GiftCodeStore from "GiftCodeStore" /* 11369 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6708 */;
+import InviteStore from "InviteStore" /* 5749 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import SessionsStore from "SessionsStore" /* 5766 */;
+import UploadStore from "UploadStore" /* 8392 */;
+import UserStore from "UserStore" /* 1383 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import SKUStore from "SKUStore" /* 6896 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 11523 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ class MessagesConnected {
     let unloadedContentEntryMessageIds;
     let useReducedMotion;
     let version;
-    const f98917 = () => {
+    const f99203 = () => {
       const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
       return items;
     };
@@ -429,7 +429,7 @@ class MessagesConnected {
     const items39 = [stateFromStores2];
     const tmp58 = stateFromStores(tmp3[72])(id);
     const tmp2Result106 = tmp2(tmp3[59]);
-    const stateFromStores15 = tmp2Result106.useStateFromStores(items38, () => VoiceStateStore.getUserVoiceChannelId(set, stateFromStores2), items39);
+    const stateFromStores15 = tmp2Result106.useStateFromStores(items38, () => VoiceStateStore.getUserVoiceChannelId(set2, stateFromStores2), items39);
     const items40 = [RTCConnectionStore];
     const tmp2Result107 = tmp2(tmp3[59]);
     const stateFromStores16 = tmp2Result107.useStateFromStores(items40, () => channelId.getChannelId(), []);
@@ -481,8 +481,8 @@ class MessagesConnected {
     const stateFromStoresObject4 = tmp2Result115.useStateFromStoresObject(items53, () => messageInteractionStates.getMessageInteractionStates());
     const items54 = [LocalInteractionComponentStateStore];
     const tmp2Result116 = tmp2(tmp3[59]);
-    [tmp71, tmp72] = guildId(tmp2Result116.useStateFromStores(items54, f98917, [], tmp2(tmp3[73]).isVersionEqual), 2);
-    guildId(tmp2Result116.useStateFromStores(items54, f98917, [], tmp2(tmp3[73]).isVersionEqual), 2);
+    [tmp71, tmp72] = guildId(tmp2Result116.useStateFromStores(items54, f99203, [], tmp2(tmp3[73]).isVersionEqual), 2);
+    guildId(tmp2Result116.useStateFromStores(items54, f99203, [], tmp2(tmp3[73]).isVersionEqual), 2);
     const items55 = [ExperimentStore];
     const tmp2Result117 = tmp2(tmp3[59]);
     let stateFromStores22 = tmp2Result117.useStateFromStores(items55, () => hasLoadedExperiments.hasLoadedExperiments);

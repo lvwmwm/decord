@@ -1,12 +1,12 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 9055
+// Function ID: 9056
 // Name: PinotExperiment
-// Dependencies: [1247, 1448, 504, 2]
-// Exports: isPinotAdminEnabled, isPinotMemberEnabled, useIsPinotAdminEnabled, useIsPinotMemberEnabled, useIsPinotMemberEnabledWithoutExposure, useIsPinotMemberNoticeEnabled
+// Dependencies: [1246, 1447, 504, 2]
+// Exports: isPinotAdminEnabled, isPinotMemberEnabled, useIsPinotAdminEnabled, useIsPinotChannelDiscoverableEnabled, useIsPinotMemberEnabled, useIsPinotMemberEnabledWithoutExposure, useIsPinotMemberNoticeEnabled
 
-// Module 11296 (PinotExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
+// Module 9055 (PinotExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,18 +21,22 @@ const apexExperiment1 = ApexExperiment.createApexExperiment(obj2);
 ApexExperiment = ApexExperiment_mod;
 const obj3 = { name: "2026-10-pinot-member-notice", kind: "guild", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 const apexExperiment2 = ApexExperiment.createApexExperiment(obj3);
+ApexExperiment = ApexExperiment_mod;
+const obj4 = { name: "2026-10-pinot-channel-discoverable", kind: "guild", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment3 = ApexExperiment.createApexExperiment(obj4);
 const result = size.fileFinishedImporting("modules/pinot/PinotExperiment.tsx");
 
 export const PinotAdminExperiment = apexExperiment;
 export const PinotMemberExperiment = apexExperiment1;
 export const PinotMemberNoticeExperiment = apexExperiment2;
-export function useIsPinotAdminEnabled(guild_id, location) {
+export const PinotChannelDiscoverableExperiment = apexExperiment3;
+export function useIsPinotAdminEnabled(guild_id, create_guild_channel) {
   let str = guild_id;
   const useConfig = apexExperiment.useConfig;
   if (guild_id == null) {
     str = "";
   }
-  const obj = { guildId: str, location };
+  const obj = { guildId: str, location: create_guild_channel };
   const tmp2 = null != guild_id && useConfig(obj).enabled;
   return tmp2;
 }
@@ -54,6 +58,16 @@ export function useIsPinotMemberNoticeEnabled(guild_id, location) {
   const tmp2 = null != guild_id && useConfig(obj).enabled;
   return tmp2;
 }
+export function useIsPinotChannelDiscoverableEnabled(guildId, create_guild_channel) {
+  let str = guildId;
+  const useConfig = apexExperiment3.useConfig;
+  if (guildId == null) {
+    str = "";
+  }
+  const obj = { guildId: str, location: create_guild_channel };
+  const tmp2 = null != guildId && useConfig(obj).enabled;
+  return tmp2;
+}
 export function useIsPinotMemberEnabled(mobile_user_settings_data_and_privacy) {
   const obj = { location: mobile_user_settings_data_and_privacy };
   return apexExperiment1.useConfig(obj).enabled;
@@ -62,11 +76,12 @@ export function isPinotMemberEnabled(location, arg1) {
   const obj = { location };
   return apexExperiment1.getConfig(obj, arg1).enabled;
 }
-export function useIsPinotMemberEnabledWithoutExposure(_location) {
-  _require = _location;
+export function useIsPinotMemberEnabledWithoutExposure(mobile_member_coachmark) {
+  let _location;
+  _require = mobile_member_coachmark;
   let obj = require("get initialized");
   const items = [ApexExperimentStore];
-  const items1 = [_location];
+  const items1 = [mobile_member_coachmark];
   return obj.useStateFromStores(items, () => {
     const obj = { location: _location };
     return apexExperiment1.getConfig(obj, { autoTrackExposure: false }).enabled;

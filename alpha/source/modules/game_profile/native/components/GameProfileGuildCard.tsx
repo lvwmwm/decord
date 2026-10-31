@@ -1,23 +1,23 @@
-// Module ID: 9421
-// Function ID: 9422
+// Module ID: 9443
+// Function ID: 9444
 // Name: GameProfileGuildCard
-// Dependencies: [19, 17, 21, 575, 5009, 7106, 9416, 6951, 5619, 9287, 1188, 1114, 5629, 2]
+// Dependencies: [19, 17, 21, 575, 5014, 7112, 9438, 6957, 5624, 9306, 1187, 1113, 5634, 2]
 // Exports: GameProfileGuildCardSkeleton, default
 
-// Module 9421 (GameProfileGuildCard)
+// Module 9443 (GameProfileGuildCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import GuildIcon from "GuildIcon" /* 6951 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7106 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 9287 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9416 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9306 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9438 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -125,8 +125,8 @@ export default function GameProfileGuildCard(arg0) {
     const obj15 = { style: tmp.onlineEllipse };
     items4 = [React3(View, obj15), ];
     const obj16 = { variant: "text-xs/normal", color: "text-default", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj17) };
-    const Text = tmp7(5619).Text;
-    intl = tmp7(1114).intl;
+    const Text = tmp7(5624).Text;
+    intl = tmp7(1113).intl;
     obj17 = { membersOnline: presenceCount };
     items4[1] = React3(Text, obj16);
     tmp4Result = tmp4(tmp3, obj14);
@@ -138,8 +138,8 @@ export default function GameProfileGuildCard(arg0) {
     const obj19 = { style: tmp.membersEllipse };
     items6 = [React3(View, obj19), ];
     const obj20 = { variant: "text-xs/normal", color: "text-default", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj39) };
-    const Text2 = tmp7(5619).Text;
-    intl2 = tmp7(1114).intl;
+    const Text2 = tmp7(5624).Text;
+    intl2 = tmp7(1113).intl;
     obj39 = { count: memberCount };
     items6[1] = React3(Text2, obj20);
     tmp4Result2 = tmp4(tmp3, obj18);

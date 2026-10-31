@@ -1,19 +1,19 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 12623
+// Function ID: 12624
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 5010, 21, 5009, 504, 5090, 5249, 671, 7032, 5582, 2]
+// Dependencies: [32, 19, 17, 5015, 21, 5014, 504, 5095, 5254, 671, 7038, 5587, 2]
 // Exports: default
 
-// Module 12588 (ConjureShimmer)
+// Module 12623 (ConjureShimmer)
 import _modDef671 from "module_671" /* 671 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -61,7 +61,7 @@ export default function ConjureShimmer(epoch) {
   const tmp5 = sharedValue(live.useState(0), 2);
   const width = tmp5[0];
   dependencyMap = tmp5[1];
-  const obj3 = tint(5090);
+  const obj3 = tint(5095);
   sharedValue = obj3.useSharedValue(0);
   const tmp2 = tint;
   if (live) {
@@ -118,7 +118,7 @@ export default function ConjureShimmer(epoch) {
   fn.__closure = { bandWidth: result, progress: sharedValue, width };
   fn.__workletHash = 5317727670570;
   fn.__initData = __initData;
-  const tmp2Result = tmp2(5090);
+  const tmp2Result = tmp2(5095);
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const obj4 = {
     style: tmp.root,
@@ -141,13 +141,13 @@ export default function ConjureShimmer(epoch) {
     const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
     obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp18 = width(7032);
-    obj8 = { style: items4, children: closure_8(width(5582), obj10) };
+    tmp18 = width(7038);
+    obj8 = { style: items4, children: closure_8(width(5587), obj10) };
     items4 = [tmp.band, , ];
     const obj9 = { width: result };
     items4[1] = obj9;
     items4[2] = animatedStyle;
-    View = width(5090).View;
+    View = width(5095).View;
     obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     tmp14 = closure_8(tmp13, obj5);
   }

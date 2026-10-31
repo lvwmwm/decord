@@ -1,30 +1,30 @@
-// Module ID: 11827
-// Function ID: 11828
+// Module ID: 11865
+// Function ID: 11866
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10981, 10982, 1072, 21, 1376, 5009, 575, 6717, 1188, 1626, 5090, 11828, 1093, 1114, 5590, 5249, 5298, 10231, 1492, 11678, 1109, 5075, 5595, 5016, 11191, 2]
+// Dependencies: [32, 19, 17, 11000, 11001, 1072, 21, 1375, 5014, 575, 6723, 1187, 1625, 5095, 11866, 1092, 1113, 5595, 5254, 5303, 10251, 1491, 11715, 1108, 5080, 5600, 5021, 11210, 2]
 // Exports: default
 
-// Module 11827 (FocusedControlsBottomControls)
+// Module 11865 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 575 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import CallPTTButton from "CallPTTButton" /* 11191 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import native from "native" /* 1187 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import CallPTTButton from "CallPTTButton" /* 11210 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 10981 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10982 */;
+import ChannelCallStore from "ChannelCallStore" /* 11000 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11001 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import TextStyles from "TextStyles" /* 6717 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import TextStyles from "TextStyles" /* 6723 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 const CallPTTButtonDefault = CallPTTButton;
-let height, set, set2, width;
+let height, set2, width;
 
 let Fonts;
 let StyleSheet;
@@ -89,9 +89,9 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_18();
-  let obj = positionY(11828);
-  const canShowTooltip = obj.useCanShowTooltip(positionY(1093).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(5090);
+  let obj = positionY(11866);
+  const canShowTooltip = obj.useCanShowTooltip(positionY(1092).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  positionY(5095);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c15, 1) };
     return obj;
@@ -104,10 +104,10 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
   if (canShowTooltip) {
     const obj3 = { style: tmp6, children: closure_13(Tooltip, obj7) };
     const View = ReanimatedRexportDefault.View;
-    obj7 = { style: tmp.tooltipStyle, arrowPosition: positionY(1188).TooltipArrowPositions.CENTER, arrowDirection: positionY(1188).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(positionY(1114).t.zYzy2i) };
-    Tooltip = tmp2(1188).Tooltip;
+    obj7 = { style: tmp.tooltipStyle, arrowPosition: positionY(1187).TooltipArrowPositions.CENTER, arrowDirection: positionY(1187).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(positionY(1113).t.zYzy2i) };
+    Tooltip = tmp2(1187).Tooltip;
     ({ containerStyle: obj4.containerStyle, labelStyle: obj4.labelStyle } = tmp);
-    intl = tmp2(1114).intl;
+    intl = tmp2(1113).intl;
     tmp7 = closure_13(View, obj3);
   }
   return tmp7;
@@ -124,7 +124,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
   const tmp = closure_18();
-  let obj = positionY(5090);
+  let obj = positionY(5095);
   const fn = function _() {
     const obj = { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - c15), 0) };
     return obj;
@@ -136,7 +136,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: tmp6(tmp7, obj4) };
   obj4 = { style: tmp.aboveActionBarContainer, children: items };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  items = [closure_13(FocusedControlsBottomDrawerTooltip, { positionY }), closure_13(positionY(5590).ActionSheetHeaderBar, {}), ];
+  items = [closure_13(FocusedControlsBottomDrawerTooltip, { positionY }), closure_13(positionY(5595).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   const tmp5 = closure_6;
   tmp6 = closure_14;
@@ -144,7 +144,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   if (tmp4Result) {
     obj5 = { style: items1, children: aboveActionBar };
     items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
-    tmp4Result = tmp4(offsetY(5090).View, obj5);
+    tmp4Result = tmp4(offsetY(5095).View, obj5);
   }
   items[2] = tmp4Result;
   return closure_13(tmp5, obj3);
@@ -566,7 +566,7 @@ const __initData2 = { code: "function FocusedControlsBottomControlsTsx2(){const{
 const __initData3 = { code: "function FocusedControlsBottomControlsTsx3(){const{offsetY,EXPANDED_DRAWER_SHOW_POSITION,positionY}=this.__closure;const maxHeightRange=offsetY/3-EXPANDED_DRAWER_SHOW_POSITION;const opacity=2-Math.max(Math.abs(positionY.get())/maxHeightRange,0);return{opacity:opacity};}" };
 const __initData4 = { code: "function FocusedControlsBottomControlsTsx4(){const{isLandscapeMode,controlMaxHeight,landscapeOffsetY,portraitOffsetY}=this.__closure;return isLandscapeMode?controlMaxHeight-landscapeOffsetY:controlMaxHeight-portraitOffsetY;}" };
 const __initData5 = { code: "function FocusedControlsBottomControlsTsx5(){const{drawerOpen,positionY,maxHeight,velocity,MIN_GESTURE_TRIGGER_VELOCITY,CLOSE_DRAWER_POSITION,runOnJS,handleOpen,startY,withTiming,TIMING_CONFIG,TooltipActionCreators,TooltipNames,TIMING_CONFIG_EXIT,resetFocusTimer,handleClose}=this.__closure;var _velocity$get,_velocity$get2;const isDrawerAlreadyOpen=drawerOpen.get();const isPassedTriggerThreshold=positionY.get()*-1>=maxHeight.get()/2;const isHighOpenVelocity=((_velocity$get=velocity.get())!==null&&_velocity$get!==void 0?_velocity$get:0)*-1>=MIN_GESTURE_TRIGGER_VELOCITY;const isHighCloseVelocity=((_velocity$get2=velocity.get())!==null&&_velocity$get2!==void 0?_velocity$get2:0)>=MIN_GESTURE_TRIGGER_VELOCITY;const isLowerThanMinHeight=positionY.get()>CLOSE_DRAWER_POSITION;function openDrawer(){runOnJS(handleOpen)();startY.set(-maxHeight.get());positionY.set(withTiming(startY.get(),TIMING_CONFIG));drawerOpen.set(true);runOnJS(TooltipActionCreators.acknowledgeTooltip)(TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);}function closeDrawer(){startY.set(0);positionY.set(withTiming(CLOSE_DRAWER_POSITION,TIMING_CONFIG_EXIT));drawerOpen.set(false);runOnJS(resetFocusTimer)();runOnJS(handleClose)();}if(isHighOpenVelocity&&!isDrawerAlreadyOpen||isPassedTriggerThreshold&&!isDrawerAlreadyOpen){openDrawer();}else if(isLowerThanMinHeight||isHighCloseVelocity&&isDrawerAlreadyOpen){closeDrawer();}else if(isPassedTriggerThreshold){openDrawer();}else{closeDrawer();}}" };
-const __initData6 = { code: "function FocusedControlsBottomControlsTsx6(event){const{velocity,positionY,maxHeight,startY}=this.__closure;var _startY$get;velocity.set(event.velocityY);if(positionY.get()*-1>maxHeight.get()+16){return;}positionY.set(((_startY$get=startY.get())!==null&&_startY$get!==void 0?_startY$get:0)+event.translationY);}" };
+let set = { code: "function FocusedControlsBottomControlsTsx6(event){const{velocity,positionY,maxHeight,startY}=this.__closure;var _startY$get;velocity.set(event.velocityY);if(positionY.get()*-1>maxHeight.get()+16){return;}positionY.set(((_startY$get=startY.get())!==null&&_startY$get!==void 0?_startY$get:0)+event.translationY);}" };
 const __initData7 = { code: "function FocusedControlsBottomControlsTsx7(){const{runOnJS,clearFocusTimer,drawerOpen,positionY,CLOSE_DRAWER_POSITION,velocity,startY}=this.__closure;runOnJS(clearFocusTimer)();drawerOpen.set(positionY.get()!==CLOSE_DRAWER_POSITION);velocity.set(0);if(positionY.get()==null||!drawerOpen.get()){startY.set(0);}}" };
 __initData = { code: "function FocusedControlsBottomControlsTsx8(){const{reveal,controlHeightWithOffset,sheetHeight,isLandscapeMode,safeAreaRight,sheetWidth,withTiming,TIMING_CONFIG}=this.__closure;const revealOffset=reveal?0:controlHeightWithOffset;return{position:'absolute',height:sheetHeight,overflow:'hidden',bottom:isLandscapeMode?16:0,right:isLandscapeMode?16+safeAreaRight:0,borderRadius:isLandscapeMode?8:0,width:sheetWidth,transform:[{translateY:withTiming(revealOffset,TIMING_CONFIG)}]};}" };
 const __initData9 = { code: "function FocusedControlsBottomControlsTsx9(){const{sheetHeight,offsetY,positionY}=this.__closure;return{height:sheetHeight,transform:[{translateY:offsetY+positionY.get()}]};}" };

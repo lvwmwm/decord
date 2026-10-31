@@ -1,38 +1,38 @@
-// Module ID: 13332
-// Function ID: 13333
+// Module ID: 13367
+// Function ID: 13368
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7760, 7763, 8897, 4858, 6056, 8921, 13333, 10707, 21, 5009, 575, 1492, 13334, 504, 13330, 13329, 6998, 13336, 5707, 1114, 1380, 13338, 5955, 13339, 9809, 5751, 13340, 13341, 6041, 5255, 5256, 5706, 7352, 1376, 13344, 7552, 5722, 10716, 13345, 13354, 13369, 2]
+// Dependencies: [5, 32, 19, 17, 7767, 7770, 8906, 4863, 6061, 8930, 13368, 10727, 21, 5014, 575, 1491, 13369, 504, 13365, 13364, 7004, 13371, 5712, 1113, 1379, 13373, 5960, 13374, 9830, 5756, 13375, 13376, 6046, 5260, 5261, 5711, 7358, 1375, 13379, 7558, 5727, 10736, 13380, 13389, 13404, 2]
 // Exports: default
 
-// Module 13332 (ForwardModal)
+// Module 13367 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import HapticUtils from "HapticUtils" /* 5255 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5256 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import LinkIcon from "LinkIcon" /* 5722 */;
-import ChannelUtils from "ChannelUtils" /* 6041 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7552 */;
-import UserRowConstants from "UserRowConstants" /* 10707 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13329 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13330 */;
-import ForwardConstants from "ForwardConstants" /* 13333 */;
-import formatResults from "formatResults" /* 13334 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13336 */;
+import intl7 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import LinkIcon from "LinkIcon" /* 5727 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
+import UserRowConstants from "UserRowConstants" /* 10727 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13364 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13365 */;
+import ForwardConstants from "ForwardConstants" /* 13368 */;
+import formatResults from "formatResults" /* 13369 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13371 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7760 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7763 */;
-import ICYMIStore from "ICYMIStore" /* 8897 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8921 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7767 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
+import ICYMIStore from "ICYMIStore" /* 8906 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8930 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let failedDestinations;
@@ -210,7 +210,7 @@ export default function ForwardModal(message) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -367,7 +367,7 @@ export default function ForwardModal(message) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

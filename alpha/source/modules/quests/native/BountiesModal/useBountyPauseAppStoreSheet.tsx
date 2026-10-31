@@ -1,18 +1,18 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16925
+// Function ID: 16926
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6775, 1072, 9671, 9697, 16867, 1109, 6780, 7864, 9699, 7855, 6782, 14627, 16864, 2]
+// Dependencies: [19, 6781, 1072, 9691, 9717, 16923, 1108, 6786, 7871, 9719, 7862, 6788, 14665, 16920, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 16869 (useBountyPauseAppStoreSheet)
+// Module 16925 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import AdCreativeType from "AdCreativeType" /* 6782 */;
-import AnalyticsActions from "AnalyticsActions" /* 7855 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14627 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16864 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16867 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import AnalyticsActions from "AnalyticsActions" /* 7862 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14665 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16920 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16923 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9671).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9691).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

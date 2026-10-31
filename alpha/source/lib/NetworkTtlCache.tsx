@@ -1,9 +1,9 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15609
+// Function ID: 15610
 // Name: NetworkTtlCache
 // Dependencies: [2]
 
-// Module 15570 (NetworkTtlCache)
+// Module 15609 (NetworkTtlCache)
 import size from "module_2" /* 2 */;
 
 const React = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };

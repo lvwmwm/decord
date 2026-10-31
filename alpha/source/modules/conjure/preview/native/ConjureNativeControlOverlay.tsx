@@ -1,21 +1,21 @@
-// Module ID: 12060
-// Function ID: 12061
+// Module ID: 12098
+// Function ID: 12099
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5010, 21, 5009, 575, 12061, 10898, 504, 5090, 5632, 5633, 5249, 1114, 3865, 12062, 12066, 5619, 5629, 2]
+// Dependencies: [19, 17, 5015, 21, 5014, 575, 12099, 10923, 504, 5095, 5637, 5638, 5254, 1113, 3868, 12100, 12104, 5624, 5634, 2]
 // Exports: default
 
-// Module 12060 (ConjureNativeControlOverlay)
+// Module 12098 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import spring from "spring" /* 5632 */;
-import springPresets from "springPresets" /* 5633 */;
-import useConjureControlBar from "useConjureControlBar" /* 12061 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import spring from "spring" /* 5637 */;
+import springPresets from "springPresets" /* 5638 */;
+import useConjureControlBar from "useConjureControlBar" /* 12099 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, set2;
@@ -81,12 +81,12 @@ export default function ConjureNativeControlOverlay(arg0) {
   ({ active, children } = arg0);
   let tmp = closure_9();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(12061);
+  let obj = conjureControlPhase(12099);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(12061);
+  let obj2 = conjureControlPhase(12099);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(10898);
+  const obj3 = conjureControlPhase(10923);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -96,9 +96,9 @@ export default function ConjureNativeControlOverlay(arg0) {
     tmp8 = "controlling" === conjureControlPhase;
   }
   dependencyMap = tmp8;
-  const tmp2Result = tmp2(5090);
+  const tmp2Result = tmp2(5095);
   sharedValue = tmp2Result.useSharedValue(0);
-  const tmp2Result6 = tmp2(5090);
+  const tmp2Result6 = tmp2(5095);
   sharedValue1 = tmp2Result6.useSharedValue(0);
   const items1 = [sharedValue1, conjureControlPhase, stateFromStores];
   const effect = sharedValue.useEffect(() => {
@@ -129,7 +129,7 @@ export default function ConjureNativeControlOverlay(arg0) {
       const result1 = sharedValue1.set(0);
     }
   }, items1);
-  const tmp2Result7 = tmp2(5090);
+  const tmp2Result7 = tmp2(5095);
   sharedValue2 = tmp2Result7.useSharedValue(0.5);
   const items2 = [tmp8, sharedValue2, stateFromStores];
   const effect1 = sharedValue.useEffect(() => {
@@ -159,7 +159,7 @@ export default function ConjureNativeControlOverlay(arg0) {
     obj2.cancelAnimation(sharedValue2);
     const result2 = sharedValue2.set(0.5);
   }, items2);
-  const tmp2Result8 = tmp2(5090);
+  const tmp2Result8 = tmp2(5095);
   class H {
     constructor() {
       let bound;
@@ -172,7 +172,7 @@ export default function ConjureNativeControlOverlay(arg0) {
   H.__workletHash = 5735939888549;
   H.__initData = __initData;
   const animatedStyle = tmp2Result8.useAnimatedStyle(H);
-  const tmp2Result9 = tmp2(5090);
+  const tmp2Result9 = tmp2(5095);
   class T {
     constructor() {
       let diff;
@@ -188,7 +188,7 @@ export default function ConjureNativeControlOverlay(arg0) {
   T.__workletHash = 11424550793114;
   T.__initData = __initData2;
   const animatedStyle1 = tmp2Result9.useAnimatedStyle(T);
-  const tmp2Result10 = tmp2(5090);
+  const tmp2Result10 = tmp2(5095);
   class P {
     constructor() {
       const obj = { opacity: sharedValue2.get() };
@@ -199,9 +199,9 @@ export default function ConjureNativeControlOverlay(arg0) {
   P.__workletHash = 3342596553897;
   P.__initData = __initData3;
   const animatedStyle2 = tmp2Result10.useAnimatedStyle(P);
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1113).intl;
   const string = intl.string;
-  const tmp18 = stateFromStores(3865);
+  const tmp18 = stateFromStores(3868);
   if (tmp8) {
     let prop;
     let tmp22;
@@ -227,7 +227,7 @@ export default function ConjureNativeControlOverlay(arg0) {
       let tmp36Result;
       const obj6 = { style: items3, children: closure_7(View2, obj7) };
       items3 = [tmp.barArea, animatedStyle];
-      const View = tmp20(5090).View;
+      const View = tmp20(5095).View;
       obj7 = {
         style: items4,
         onLayout(nativeEvent) {
@@ -237,22 +237,22 @@ export default function ConjureNativeControlOverlay(arg0) {
         children: items5
       };
       items4 = [tmp.bar, animatedStyle1];
-      View2 = tmp20(5090).View;
+      View2 = tmp20(5095).View;
       if (tmp8) {
-        tmp36Result = tmp36(tmp2(12062).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp36Result = tmp36(tmp2(12100).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp20(575).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(12066).SparklesIcon;
+        const SparklesIcon = tmp2(12104).SparklesIcon;
         tmp36Result = tmp36(SparklesIcon, obj8);
       }
       items5 = [tmp36Result, , ];
       const obj9 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
       combined = stringResult;
-      const Text = tmp2(5619).Text;
+      const Text = tmp2(5624).Text;
       if (tmp8) {
-        const intl2 = tmp2(1114).intl;
+        const intl2 = tmp2(1113).intl;
         const _HermesInternal = HermesInternal;
-        combined = "" + stringResult + ". " + intl2.string(tmp20(3865).fg1sor);
+        combined = "" + stringResult + ". " + intl2.string(tmp20(3868).fg1sor);
       }
       items5[1] = closure_6(Text, obj9);
       let tmp36Result3 = null;
@@ -260,9 +260,9 @@ export default function ConjureNativeControlOverlay(arg0) {
         tmp36Result3 = null;
         if (null != stop) {
           const obj10 = { style: tmp.actions, children: closure_6(Button, obj11) };
-          obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp20(3865).oU59sU), loading: stopping, onPress: stop };
-          Button = tmp2(5629).Button;
-          intl3 = tmp2(1114).intl;
+          obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp20(3868).oU59sU), loading: stopping, onPress: stop };
+          Button = tmp2(5634).Button;
+          intl3 = tmp2(1113).intl;
           tmp36Result3 = tmp36(tmp25, obj10);
         }
       }
@@ -285,7 +285,7 @@ export default function ConjureNativeControlOverlay(arg0) {
     const obj15 = { style: items8, pointerEvents: "none" };
     items8 = [tmp.glow, animatedStyle2];
     const obj14 = { children: items9 };
-    items9 = [closure_6(tmp20(5090).View, obj15), ];
+    items9 = [closure_6(tmp20(5095).View, obj15), ];
     const obj16 = { style: tmp.border, pointerEvents: "none" };
     items9[1] = closure_6(sharedValue1, obj16);
     tmp24Result = tmp24(closure_8, obj14);

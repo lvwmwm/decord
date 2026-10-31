@@ -1,18 +1,18 @@
-// Module ID: 13651
-// Function ID: 13652
+// Module ID: 13686
+// Function ID: 13687
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 6061, 1072, 21, 5009, 575, 6429, 13641, 1626, 5591, 1114, 6430, 13652, 8839, 13587, 3091, 5704, 2062, 10212, 10881, 10791, 2]
+// Dependencies: [17, 6066, 1072, 21, 5014, 575, 6434, 13676, 1625, 5596, 1113, 6435, 13687, 8848, 13624, 3092, 5709, 2061, 10232, 10906, 10811, 2]
 // Exports: default
 
-// Module 13651 (CheckpointNavigationControls)
+// Module 13686 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import CheckpointTextDefault from "CheckpointText" /* 13587 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13641 */;
+import CheckpointTextDefault from "CheckpointText" /* 13624 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13676 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6061 */;
+import CheckpointConstants from "CheckpointConstants" /* 6066 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

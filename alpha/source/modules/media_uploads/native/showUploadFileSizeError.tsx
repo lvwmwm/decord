@@ -1,29 +1,29 @@
-// Module ID: 9760
-// Function ID: 9761
+// Module ID: 9781
+// Function ID: 9782
 // Name: showUploadFileSizeError
-// Dependencies: [1195, 1384, 1072, 5014, 1386, 1984, 9761, 5755, 9762, 9763, 5070, 8212, 9764, 1093, 7345, 1114, 6445, 8204, 5953, 2]
+// Dependencies: [1194, 1383, 1072, 5019, 1385, 1983, 9782, 5760, 9783, 9784, 5075, 8220, 9785, 1092, 7351, 1113, 6451, 8212, 5958, 2]
 // Exports: default
 
-// Module 9760 (showUploadFileSizeError)
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import intl5 from "intl" /* 1114 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1984 */;
-import MessageConstants from "MessageConstants" /* 5014 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5070 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import FileSizeUtils from "FileSizeUtils" /* 6445 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
-import UploadUtils from "UploadUtils" /* 8204 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8212 */;
-import logMessageSendFailure from "logMessageSendFailure" /* 9761 */;
-import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 9762 */;
-import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9763 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9764 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserStore from "UserStore" /* 1384 */;
+// Module 9781 (showUploadFileSizeError)
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import intl5 from "intl" /* 1113 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1983 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5075 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import FileSizeUtils from "FileSizeUtils" /* 6451 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import UploadUtils from "UploadUtils" /* 8212 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
+import logMessageSendFailure from "logMessageSendFailure" /* 9782 */;
+import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 9783 */;
+import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9784 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9785 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -131,16 +131,16 @@ export default function showUploadFileSizeError(arg0) {
     let stringResult;
     let stringResult1;
     if (errorReason === FileUploadErrorTypes.ERROR_SOURCE_UNKNOWN) {
-      const intl = tmp3(1114).intl;
-      stringResult = intl.string(tmp3(1114).t.B3vFdU);
-      const intl2 = tmp3(1114).intl;
-      stringResult1 = intl2.string(tmp3(1114).t.zMEjJg);
+      const intl = tmp3(1113).intl;
+      stringResult = intl.string(tmp3(1113).t.B3vFdU);
+      const intl2 = tmp3(1113).intl;
+      stringResult1 = intl2.string(tmp3(1113).t.zMEjJg);
     } else {
-      const intl3 = tmp3(1114).intl;
+      const intl3 = tmp3(1113).intl;
       const stringResult2 = intl3.string(intl5.t["/tGlcj"]);
-      const intl4 = tmp3(1114).intl;
+      const intl4 = tmp3(1113).intl;
       const formatToPlainString = intl4.formatToPlainString;
-      const t = tmp3(1114).t;
+      const t = tmp3(1113).t;
       if (errorReason === FileUploadErrorTypes.POSTCOMPRESSION_SUM_TOO_LARGE || errorReason === FileUploadErrorTypes.PRECOMPRESSION_SUM_TOO_LARGE) {
         const tUOJdH = t.tUOJdH;
         const obj4 = { maxSize: formatSize(UploadUtils.MAX_TOTAL_ATTACHMENT_SIZE / FileSizeUtils.BYTE_IN_KB, { useKibibytes: true }) };

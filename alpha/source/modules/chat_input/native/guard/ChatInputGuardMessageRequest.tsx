@@ -1,14 +1,14 @@
-// Module ID: 13963
-// Function ID: 13964
+// Module ID: 13998
+// Function ID: 13999
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1384, 21, 1498, 13964, 504, 13965, 5707, 1114, 5751, 13971, 2]
+// Dependencies: [5, 19, 1383, 21, 1497, 13999, 504, 14000, 5712, 1113, 5756, 14006, 2]
 
-// Module 13963 (ChatInputGuardMessageRequest)
+// Module 13998 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13971 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let c1, closure_1, dependencyMap, id, importDefault;
@@ -46,7 +46,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
             obj = id(c2[10]);
             obj.transitionToChannel(closure_129_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -102,7 +102,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -131,7 +131,7 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -143,14 +143,14 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   };
   const tmp = channel;
   const tmp2 = dependencyMap;
-  obj = channel(1498);
+  obj = channel(1497);
   importDefault = obj.useNavigation();
-  let obj2 = channel(13964);
+  let obj2 = channel(13999);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(13965);
+  let obj4 = channel(14000);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -169,9 +169,9 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1114).t["e/eQVB"]),
+    message: intl.string(tmp(1113).t["e/eQVB"]),
     subtext: string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI),
-    buttonPrimaryText: intl3.string(tmp(1114).t.Kz8Pwr),
+    buttonPrimaryText: intl3.string(tmp(1113).t.Kz8Pwr),
     buttonPrimaryOnPress: function onAcceptClick(arg0) {
       return obj(...arguments);
     },
@@ -185,11 +185,11 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
     buttonSecondaryLoading: isRejectLoading
   };
   const tmp8 = ChatInputGuardDefault;
-  intl = tmp(1114).intl;
-  const intl2 = tmp(1114).intl;
+  intl = tmp(1113).intl;
+  const intl2 = tmp(1113).intl;
   string = intl2.string;
-  t = tmp(1114).t;
-  intl3 = tmp(1114).intl;
+  t = tmp(1113).t;
+  intl3 = tmp(1113).intl;
   const tmp7 = obj;
   if (!isAcceptLoading) {
     isAcceptLoading = isUserProfileLoading;
@@ -197,9 +197,9 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   if (!isAcceptLoading) {
     isAcceptLoading = isOptimisticAccepted;
   }
-  const intl4 = tmp(1114).intl;
+  const intl4 = tmp(1113).intl;
   string2 = intl4.string;
-  t2 = tmp(1114).t;
+  t2 = tmp(1113).t;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }

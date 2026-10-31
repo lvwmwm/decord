@@ -1,16 +1,16 @@
-// Module ID: 19031
-// Function ID: 19032
+// Module ID: 19080
+// Function ID: 19081
 // Name: ChannelSubtitle
-// Dependencies: [19, 11027, 21, 18678, 5619, 18234, 11025, 2]
+// Dependencies: [19, 11046, 21, 18720, 5624, 18277, 11044, 2]
 // Exports: renderChannelSubtitle
 
-// Module 19031 (ChannelSubtitle)
+// Module 19080 (ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11025 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 18234 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18678 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11044 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 18277 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18720 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ function ChannelSubtitle(arg0) {
   } else {
     const obj2 = { children: renderMessagePreviewMarkup(obj3) };
     const tmp4 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(5619).Text;
+    const Text = tmp(5624).Text;
     const merged = Object.assign(textProps);
     obj3 = { content: channelSubtitleData.subtitle, muted: flag, channelId, guildId, disableAnimatedEmoji: !tmp4, color: str };
     flag = muted;

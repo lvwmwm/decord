@@ -1,14 +1,14 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8580
+// Function ID: 8581
 // Name: InstagramNeutralIcon
-// Dependencies: [19, 21, 575, 5711, 8573, 2]
+// Dependencies: [19, 21, 575, 5716, 8581, 2]
 // Exports: InstagramNeutralIcon
 
-// Module 8572 (InstagramNeutralIcon)
+// Module 8580 (InstagramNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 8573 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 8581 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

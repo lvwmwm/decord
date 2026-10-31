@@ -1,28 +1,28 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17339
+// Function ID: 17340
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1384, 1072, 21, 5009, 575, 1392, 1114, 3867, 1499, 7320, 1498, 504, 2048, 7345, 1253, 13683, 1406, 5849, 5253, 17280, 1995, 17281, 8730, 8727, 7146, 6440, 16412, 13684, 9884, 13695, 6036, 5619, 17282, 7054, 6969, 2062, 6022, 5629, 9507, 9862, 17327, 10270, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 1072, 21, 5014, 575, 1391, 1113, 3870, 1498, 7326, 1497, 504, 2047, 7351, 1252, 13718, 1405, 5854, 5258, 17340, 1994, 17341, 8738, 8735, 7152, 6446, 16454, 13719, 9905, 13730, 6041, 5624, 17342, 7060, 6975, 2061, 6027, 5634, 9529, 9883, 17387, 10290, 2]
 // Exports: default
 
-// Module 17279 (CustomTypingIndicatorEditScreen)
+// Module 17339 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import user from "user" /* 1392 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1406 */;
-import Link from "Link" /* 1499 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7320 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13683 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import user from "user" /* 1391 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1405 */;
+import Link from "Link" /* 1498 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7326 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13718 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1384 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, constants3;
@@ -145,12 +145,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(17280, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17340, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(17281, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17341, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations];
@@ -197,7 +197,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -245,7 +245,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -439,7 +439,7 @@ export default function CustomTypingIndicatorEditScreen() {
   ({ analyticsLocations, mode } = params);
   const tmpResult = useAnalyticsLocations;
   const locationStackFromLocationContext = tmpResult.useLocationStackFromLocationContext();
-  const AnalyticsLocationProvider = tmp(7320).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7326).AnalyticsLocationProvider;
   if (analyticsLocations == null) {
     analyticsLocations = locationStackFromLocationContext;
   }

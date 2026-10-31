@@ -1,29 +1,29 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16633
+// Function ID: 16634
 // Name: SafetyHubAccountStanding
-// Dependencies: [32, 19, 17, 1384, 7986, 7962, 21, 7963, 16592, 5009, 575, 1114, 16584, 7334, 7080, 11742, 7086, 7100, 504, 1410, 9485, 1188, 5619, 2]
+// Dependencies: [32, 19, 17, 1383, 7994, 7970, 21, 7971, 16634, 5014, 575, 1113, 16626, 7340, 7086, 11779, 7092, 7106, 504, 1409, 9507, 1187, 5624, 2]
 // Exports: default
 
-// Module 16591 (SafetyHubAccountStanding)
+// Module 16633 (SafetyHubAccountStanding)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7080 */;
-import CircleXIcon from "CircleXIcon" /* 7086 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7100 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7334 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
-import SafetyHubModels from "SafetyHubModels" /* 7963 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11742 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16584 */;
-import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 16592 */;
+import intl6 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
+import CircleXIcon from "CircleXIcon" /* 7092 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7106 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7340 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
+import SafetyHubModels from "SafetyHubModels" /* 7971 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11779 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16626 */;
+import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 16634 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import SafetyHubStore from "SafetyHubStore" /* 7986 */;
+import UserStore from "UserStore" /* 1383 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -175,17 +175,17 @@ export default function SafetyHubAccountStanding() {
   const items2 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
   if (null != stateFromStores) {
-    let obj2 = height(1410);
+    let obj2 = height(1409);
     userAvatarSource = obj2.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = height(9485);
+    userAvatarSource = height(9507);
   }
   const style = tmp13.style;
   let obj3 = { style: tmp4.container, children: items3 };
   let obj4 = { style: tmp4.avatarBackground, children: closure_9(Avatar, obj5) };
   ({ title, description } = memo[accountStanding.state]);
-  obj5 = { source: userAvatarSource, size: accountStanding(1188).AvatarSizes.XXLARGE, "aria-label": str };
-  Avatar = tmp7(1188).Avatar;
+  obj5 = { source: userAvatarSource, size: accountStanding(1187).AvatarSizes.XXLARGE, "aria-label": str };
+  Avatar = tmp7(1187).Avatar;
   str = undefined;
   if (stateFromStores != null) {
     str = stateFromStores.username;
@@ -197,15 +197,15 @@ export default function SafetyHubAccountStanding() {
   let obj6 = { style: tmp4.body, children: items5 };
   let obj7 = { style: tmp4.bodyText, children: items4 };
   const obj8 = { variant: "heading-lg/medium", color: "text-default", style: { textAlign: "center" }, children: intl.format(title, obj9) };
-  const Text = tmp7(5619).Text;
-  intl = tmp7(1114).intl;
+  const Text = tmp7(5624).Text;
+  intl = tmp7(1113).intl;
   obj9 = {
     hook(children, arg1) {
       obj = { style, variant: "heading-lg/bold", children };
       return React4(Text_Text.Text, obj, arg1);
     }
   };
-  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5619).Text, { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
+  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5624).Text, { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
   items5 = [closure_10(style, obj7), ];
   const obj10 = { style: items6, children: items7 };
   items6 = [tmp4.health, { height }];

@@ -1,17 +1,17 @@
-// Module ID: 19735
-// Function ID: 19736
+// Module ID: 19792
+// Function ID: 19793
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1398, 1072, 6058, 10299, 1114, 8744, 11168, 2]
+// Dependencies: [19, 1397, 1072, 6063, 10319, 1113, 8752, 11187, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 19735 (useGuildSettingsRoleExampleMessage)
+// Module 19792 (useGuildSettingsRoleExampleMessage)
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6058 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8744 */;
-import createMessageDefault from "createMessage" /* 10299 */;
+import intl2 from "intl" /* 1113 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8752 */;
+import createMessageDefault from "createMessage" /* 10319 */;
 import react from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1398 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 const MessageStates = Constants.MessageStates;

@@ -1,16 +1,16 @@
-// Module ID: 7293
-// Function ID: 7294
+// Module ID: 7299
+// Function ID: 7300
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 7292, 1072, 572, 1283, 1452, 6896, 2]
+// Dependencies: [5, 7298, 1072, 572, 1282, 1451, 6902, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 7293 (GuildRoleMemberActionCreators)
+// Module 7299 (GuildRoleMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import LRUCacheDefault from "LRUCache" /* 1452 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6896 */;
+import LRUCacheDefault from "LRUCache" /* 1451 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7292 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7298 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj = function _fetchMemberCountsFromBackend() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _fetchMemberCountsFromBackend() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -113,7 +113,7 @@ obj = function _fetchMemberCounts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ obj = function _fetchMemberCounts() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;

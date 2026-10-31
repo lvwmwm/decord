@@ -1,13 +1,13 @@
-// Module ID: 8812
-// Function ID: 8813
+// Module ID: 8820
+// Function ID: 8821
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [1410, 8813, 1091, 2]
+// Dependencies: [1409, 8821, 1090, 2]
 // Exports: getAvatarSource, useUserProfileBannerBackgroundColor
 
-// Module 8812 (profile_customization/ProfileCustomizationUtils)
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import AvatarUtils from "AvatarUtils" /* 1410 */;
-import VideoBackground from "VideoBackground" /* 8813 */;
+// Module 8820 (profile_customization/ProfileCustomizationUtils)
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import VideoBackground from "VideoBackground" /* 8821 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
@@ -58,7 +58,7 @@ export function getAvatarSource(getAvatarURL, arg1, arg2, arg3) {
       VideoBackground;
       if (userAvatarURL == null) {
         const obj = { avatar: null };
-        const getUserAvatarURL = tmp3(1410).getUserAvatarURL;
+        const getUserAvatarURL = tmp3(1409).getUserAvatarURL;
         AvatarUtils;
         const merged = Object.assign(getAvatarURL);
         userAvatarURL = getUserAvatarURL(obj);

@@ -1,19 +1,19 @@
-// Module ID: 17921
-// Function ID: 17922
+// Module ID: 17964
+// Function ID: 17965
 // Name: VEVOO
-// Dependencies: [19, 17, 5622, 573, 21, 5009, 575, 5090, 5632, 5633, 8169, 17922, 17924, 17925, 10747, 7048, 504, 17629, 2]
+// Dependencies: [19, 17, 5627, 573, 21, 5014, 575, 5095, 5637, 5638, 8177, 17965, 17967, 17968, 10767, 7054, 504, 17689, 2]
 
-// Module 17921 (VEVOO)
+// Module 17964 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
-import springPresets from "springPresets" /* 5633 */;
+import spring from "spring" /* 5637 */;
+import springPresets from "springPresets" /* 5638 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5622 */;
+import DevSettingsStore from "DevSettingsStore" /* 5627 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ function VisualEffectViewOverrideOverlay_(arg0) {
   const obj3 = { style: tmp.scrollView, children: closure_7(FormSection, obj4) };
   const View = require("ReanimatedRexport").View;
   obj4 = { title: "Blur View Global Overrides", sectionBodyStyle: tmp.scrollViewContent, children: items1 };
-  FormSection = require("module_8169").FormSection;
+  FormSection = require("module_8177").FormSection;
   items1 = [closure_6(require("VEVOOPropBlurAmount"), {}), closure_6(require("VEVOOPropTintColor"), {}), closure_6(require("VEVOOPropBlurEffectName"), {})];
   items2 = [closure_6(ScrollView, obj3), ];
   const obj5 = { styles: tmp.close, type: "neutral", IconComponent: require("XSmallIcon").XSmallIcon, onPress: onClose, accessibilityLabel: "Close" };

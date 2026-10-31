@@ -1,21 +1,21 @@
-// Module ID: 5630
-// Function ID: 5631
+// Module ID: 5635
+// Function ID: 5636
 // Name: BaseTextButton
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5090, 5631, 5632, 5633, 5635, 1376, 5636, 5619, 5023, 5255, 5638, 5182, 5640, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 5636, 5637, 5638, 5640, 1375, 5641, 5624, 5028, 5260, 5643, 5187, 5645, 2]
 
-// Module 5630 (BaseTextButton)
+// Module 5635 (BaseTextButton)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import HapticUtils from "HapticUtils" /* 5255 */;
-import IconDefault from "Icon" /* 5631 */;
-import ButtonConstants from "ButtonConstants" /* 5635 */;
-import ButtonHooks from "ButtonHooks" /* 5636 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import IconDefault from "Icon" /* 5636 */;
+import ButtonConstants from "ButtonConstants" /* 5640 */;
+import ButtonHooks from "ButtonHooks" /* 5641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -32,9 +32,9 @@ function CollapsingText(collapseText) {
   let sharedValue;
   const children = collapseText.children;
   const tmp = closure_10();
-  let obj = sharedValue(5090);
+  let obj = sharedValue(5095);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(5090);
+  let obj2 = sharedValue(5095);
   const fn = function o(nativeEvent) {
     nativeEvent = nativeEvent.nativeEvent;
     const obj = sharedValue;
@@ -47,7 +47,7 @@ function CollapsingText(collapseText) {
   fn.__initData = __initData;
   const items = [sharedValue];
   const workletCallback = obj2.useWorkletCallback(fn, items);
-  obj3 = sharedValue(5090);
+  obj3 = sharedValue(5095);
   const fn2 = function o() {
     let obj2;
     let withSpring;
@@ -72,10 +72,10 @@ function CollapsingText(collapseText) {
     }
     return obj2;
   };
-  fn2.__closure = { containerWidth: sharedValue, withSpring: sharedValue(5632).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(5633).SUBTLE_SPRING };
+  fn2.__closure = { containerWidth: sharedValue, withSpring: sharedValue(5637).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(5638).SUBTLE_SPRING };
   fn2.__workletHash = 493185281611;
   fn2.__initData = __initData2;
-  ({ containerWidth: sharedValue, withSpring: sharedValue(5632).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(5633).SUBTLE_SPRING });
+  ({ containerWidth: sharedValue, withSpring: sharedValue(5637).withSpring, collapsed: collapseText, SUBTLE_SPRING: sharedValue(5638).SUBTLE_SPRING });
   const animatedStyle = obj3.useAnimatedStyle(fn2);
   const textCollapsed = closure_10().textCollapsed;
   const fn3 = function s() {
@@ -91,7 +91,7 @@ function CollapsingText(collapseText) {
   fn3.__closure = { collapsed: collapseText, textCollapsed, containerWidth: sharedValue };
   fn3.__workletHash = 5824483783888;
   fn3.__initData = __initData3;
-  const obj5 = sharedValue(5090);
+  const obj5 = sharedValue(5095);
   const animatedStyle1 = obj5.useAnimatedStyle(fn3);
   const obj6 = { style: items1, onLayout: workletCallback, children: closure_7(ReanimatedRexport.View, { style: animatedStyle1, children }) };
   items1 = [tmp.container, animatedStyle];
@@ -400,12 +400,12 @@ let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
 let obj3 = { sm: rect, md: rect1, lg: rect2 };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
 const bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
-rect = { top: bound, left: "Array", right: "applicationId", bottom: bound };
+rect = { top: bound, left: "Array", right: "isArray", bottom: bound };
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
 const bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
-rect1 = { top: bound1, left: "Array", right: "applicationId", bottom: bound1 };
+rect1 = { top: bound1, left: "Array", right: "isArray", bottom: bound1 };
 const bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
-rect2 = { top: bound2, left: "Array", right: "applicationId", bottom: bound2 };
+rect2 = { top: bound2, left: "Array", right: "isArray", bottom: bound2 };
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }

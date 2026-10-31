@@ -1,12 +1,12 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 12614
+// Function ID: 12615
 // Name: useConjureRemixSettingsRequest
-// Dependencies: [10849, 504, 12580, 1114, 3865, 2]
+// Dependencies: [10869, 504, 12615, 1113, 3868, 2]
 // Exports: default
 
-// Module 12579 (useConjureRemixSettingsRequest)
-import conjureSettingsRequest from "conjureSettingsRequest" /* 12580 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10849 */;
+// Module 12614 (useConjureRemixSettingsRequest)
+import conjureSettingsRequest from "conjureSettingsRequest" /* 12615 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10869 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,8 +42,8 @@ export default function useConjureRemixSettingsRequest(arg0, type) {
   }, items1)) {
     tmp5 = null;
     if (null != settings_keys) {
-      let obj2 = { keys: settings_keys, note: intl.string(settings_keys(3865).F2yVHg) };
-      intl = tmp3(1114).intl;
+      let obj2 = { keys: settings_keys, note: intl.string(settings_keys(3868).F2yVHg) };
+      intl = tmp3(1113).intl;
       tmp5 = obj2;
     }
   }

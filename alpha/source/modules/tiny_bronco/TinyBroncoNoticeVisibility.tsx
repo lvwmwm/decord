@@ -1,15 +1,15 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16604
+// Function ID: 16605
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1384, 1993, 5688, 6725, 504, 2]
+// Dependencies: [1383, 1992, 5693, 6731, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 16562 (TinyBroncoNoticeVisibility)
+// Module 16604 (TinyBroncoNoticeVisibility)
 import get_initialized from "get initialized" /* 504 */;
-import Server from "Server" /* 1993 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5688 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6725 */;
-import UserStore from "UserStore" /* 1384 */;
+import Server from "Server" /* 1992 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoNoticeVisibility.tsx");

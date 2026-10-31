@@ -1,24 +1,24 @@
-// Module ID: 14925
-// Function ID: 14926
+// Module ID: 14963
+// Function ID: 14964
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 1072, 21, 5009, 575, 14926, 14927, 5619, 1114, 4834, 14928, 5075, 5712, 5582, 8565, 14918, 9506, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 14964, 14965, 5624, 1113, 4839, 14966, 5080, 5717, 5587, 8573, 14956, 9528, 2]
 // Exports: default
 
-// Module 14925 (UserProfilePersonalWidgetCard)
+// Module 14963 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 5075 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import GifTagDefault from "GifTag" /* 8565 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14926 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14927 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 14928 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 5080 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import GifTagDefault from "GifTag" /* 8573 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14964 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14965 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 14966 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,10 +77,10 @@ function PersonalWidgetShowMoreButton() {
       children: React4(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(5619).Text;
-    const intl = tmp(1114).intl;
+    Text = tmp(5624).Text;
+    const intl = tmp(1113).intl;
     const string = intl.string;
-    const t = tmp(1114).t;
+    const t = tmp(1113).t;
     obj4 = { variant: "text-sm/medium", color: "text-subtle", children: string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
     tmp5Result = tmp5(hasOwnProperty, obj2);
   } else {
@@ -187,7 +187,7 @@ function CoverSection(section) {
     const ThemeContextProvider = native.ThemeContextProvider;
     if (canToggleAnimation) {
       const obj6 = { style: metroRequire.absoluteFill, onPress: toggleAnimation, accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.MxXgrL), children: React4(FastImageDefault, obj7) };
-      intl = tmp25(1114).intl;
+      intl = tmp25(1113).intl;
       obj7 = { source, style: metroRequire.absoluteFill, resizeMode: "cover" };
       tmp24Result = tmp24(hasOwnProperty, obj6);
       tmp15 = metroRequire;
@@ -203,7 +203,7 @@ function CoverSection(section) {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5582), obj9);
+        tmp24Result4 = tmp24(tmp14(5587), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -213,7 +213,7 @@ function CoverSection(section) {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8565), obj10);
+      tmp24Result5 = tmp24(tmp14(8573), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -311,10 +311,10 @@ function UserProfilePersonalWidgetCardContent(userId) {
     disableInteraction = false;
   }
   const tmp = closure_14();
-  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9506).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, children: tmp4(tmp5, obj2) };
+  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9528).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, children: tmp4(tmp5, obj2) };
   obj2 = { style: tmp.sectionsContainer, children: items };
   const sections = widget.sections;
-  const tmp3 = disableInteraction(14918);
+  const tmp3 = disableInteraction(14956);
   items = [
     sections.map(function renderSection(type, index) {
       type = type.type;

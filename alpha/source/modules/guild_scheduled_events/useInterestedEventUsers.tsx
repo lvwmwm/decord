@@ -1,13 +1,13 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 8978
+// Function ID: 8979
 // Name: useInterestedEventUsers
-// Dependencies: [19, 6849, 4864, 504, 2]
+// Dependencies: [19, 6855, 4869, 504, 2]
 // Exports: default
 
-// Module 8969 (useInterestedEventUsers)
+// Module 8978 (useInterestedEventUsers)
 import react from "react" /* 19 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,33 +1,33 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11491
+// Function ID: 11492
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2063, 4921, 4880, 7371, 1072, 1497, 21, 5009, 5591, 575, 5619, 8753, 1114, 11458, 504, 7342, 11, 10665, 6951, 11460, 1188, 8931, 7320, 11461, 5253, 5194, 1100, 7201, 5202, 1624, 8742, 11462, 5629, 7370, 2]
+// Dependencies: [19, 17, 2062, 4926, 4885, 7377, 1072, 1496, 21, 5014, 5596, 575, 5624, 8761, 1113, 11492, 504, 7348, 11, 10685, 6957, 11494, 1187, 8940, 7326, 11495, 5258, 5199, 1099, 7207, 5207, 1623, 8750, 11496, 5634, 7376, 2]
 // Exports: default
 
-// Module 11457 (UserProfileAboutMeCard)
+// Module 11491 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
-import ChatInputUtils from "ChatInputUtils" /* 5202 */;
-import useToken from "useToken" /* 5591 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7370 */;
-import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8753 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8931 */;
-import BioTextDefault from "BioText" /* 11458 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 11460 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11462 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7376 */;
+import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8761 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8940 */;
+import BioTextDefault from "BioText" /* 11492 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 11494 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11496 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import Constants from "Constants" /* 7371 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import Constants from "Constants" /* 7377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let children;
@@ -39,8 +39,8 @@ let metroImportAll;
 let tmp;
 let tmp10;
 let unpackModuleId;
-const KeyboardTypes = tmp(1624);
-const GuildIconDefault = tmp10(6951);
+const KeyboardTypes = tmp(1623);
+const GuildIconDefault = tmp10(6957);
 function Heading(themeType) {
   let headingSpacing;
   let headingVariant;
@@ -113,7 +113,7 @@ function Bio(arg0) {
     tmp8Result = null;
     if ("" !== previewBio) {
       const obj2 = { themeType, children: intl.string(intl4.t.ZzAR2Y) };
-      intl = tmp3(1114).intl;
+      intl = tmp3(1113).intl;
       const items = [unpackModuleId(Heading, obj2), ];
       const obj3 = { bio: previewBio, userId, guildId, textVariant, lineClamp };
       guildId = undefined;
@@ -177,35 +177,35 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  const getCreatedAtDate = userId(7342).getCreatedAtDate;
-  userId(7342);
+  const getCreatedAtDate = userId(7348).getCreatedAtDate;
+  userId(7348);
   const obj4 = SnowflakeUtilsDefault;
   const createdAtDate = getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
   let joinedAt;
-  const getCreatedAtDate2 = userId(7342).getCreatedAtDate;
-  userId(7342);
+  const getCreatedAtDate2 = userId(7348).getCreatedAtDate;
+  userId(7348);
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
   const createdAtDate2 = getCreatedAtDate2(joinedAt, stateFromStores);
-  const obj5 = { themeType, children: intl.string(userId(1114).t.a6XYD9) };
-  intl = tmp4(1114).intl;
+  const obj5 = { themeType, children: intl.string(userId(1113).t.a6XYD9) };
+  intl = tmp4(1113).intl;
   const items3 = [closure_11(Heading, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(10665).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1114).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
-  intl2 = tmp4(1114).intl;
+  const obj7 = { themeType, icon: closure_11(userId(10685).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1113).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  intl2 = tmp4(1113).intl;
   items5 = [closure_11(TextWithIcon, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;
   const tmp18 = TextWithIcon;
   if (tmp15Result) {
     const obj8 = { children: items6 };
     const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    items6 = [closure_11(tmp4(5619).Text, obj9), ];
-    const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1114).t.FdLNDK, obj12), children: createdAtDate2 };
-    obj11 = { guild: stateFromStores1, size: userId(6951).GuildIconSizes.XXSMALL };
+    items6 = [closure_11(tmp4(5624).Text, obj9), ];
+    const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1113).t.FdLNDK, obj12), children: createdAtDate2 };
+    obj11 = { guild: stateFromStores1, size: userId(6957).GuildIconSizes.XXSMALL };
     tmp10Result = GuildIconDefault;
-    intl3 = tmp4(1114).intl;
+    intl3 = tmp4(1113).intl;
     obj12 = { guildName: stateFromStores1.name, date: createdAtDate2 };
     items6[1] = closure_11(tmp18, obj10);
     tmp15Result = tmp15(closure_13, obj8);
@@ -234,7 +234,7 @@ function FriendsSinceDate(themeType) {
   if (null != friendsSinceDate) {
     const obj2 = { children: items };
     const obj3 = { themeType, children: intl.string(intl4.t.wlTO8v) };
-    intl = tmp3(1114).intl;
+    intl = tmp3(1113).intl;
     items = [unpackModuleId(Heading, obj3), ];
     const obj4 = { variant: textVariant, color: "text-default", children: friendsSinceDate };
     items[1] = unpackModuleId(Text_Text.Text, obj4);
@@ -260,14 +260,14 @@ function PolicyLinks(arg0) {
     const obj2 = { style: tmp.policyLinks, children: items1 };
     if (tmp5Result) {
       const obj3 = { url: termsOfServiceUrl, label: intl2.string(intl4.t.s7STcY), themeType };
-      intl2 = tmp7(1114).intl;
+      intl2 = tmp7(1113).intl;
       tmp5Result = tmp5(PolicyLink, obj3);
     }
     items1 = [tmp5Result, ];
     let tmp5Result2 = null != privacyPolicyUrl;
     if (tmp5Result2) {
       const obj4 = { url: privacyPolicyUrl, label: intl3.string(intl4.t.kH3JR5), themeType };
-      intl3 = tmp7(1114).intl;
+      intl3 = tmp7(1113).intl;
       tmp5Result2 = tmp5(PolicyLink, obj4);
     }
     const obj5 = { children: items };

@@ -1,25 +1,25 @@
-// Module ID: 12394
-// Function ID: 12395
+// Module ID: 12432
+// Function ID: 12433
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1622, 1072, 21, 1623, 1376, 5009, 575, 1114, 12229, 5075, 5189, 5270, 5091, 5255, 5256, 1253, 5269, 6016, 5090, 5588, 1626, 6013, 5202, 2]
+// Dependencies: [32, 19, 17, 1621, 1072, 21, 1622, 1375, 5014, 575, 1113, 12267, 5080, 5194, 5275, 5096, 5260, 5261, 1252, 5274, 6021, 5095, 5593, 1625, 6018, 5207, 2]
 
-// Module 12394 (MediaKeyboardBottomSheet)
+// Module 12432 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import ChatInputUtils from "ChatInputUtils" /* 5202 */;
-import HapticUtils from "HapticUtils" /* 5255 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5256 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1622 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import createStyles from "createStyles" /* 5009 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let handleHeight;

@@ -1,17 +1,17 @@
-// Module ID: 18403
-// Function ID: 18404
+// Module ID: 18446
+// Function ID: 18447
 // Name: YouBarUser
-// Dependencies: [19, 17, 1384, 17004, 21, 5009, 575, 504, 5090, 5632, 5063, 18404, 18405, 18406, 2]
+// Dependencies: [19, 17, 1383, 17062, 21, 5014, 575, 504, 5095, 5637, 5068, 18447, 18448, 18449, 2]
 
-// Module 18403 (YouBarUser)
+// Module 18446 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5632 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
+import UserStore from "UserStore" /* 1383 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, height: 16, width: 80 };
 let closure_11 = createStyles(obj);
 const __initData = { code: "function YouBarUserTsx1(){const{nameMargin}=this.__closure;return{marginLeft:nameMargin.get()};}" };
-const memoResult = react.memo(function YouBarUser(isQuestRendered) {
+const memoResult = react.memo(function YouBarUser(isCondensed) {
   let closure_0;
   let currentUser;
   let items2;
@@ -43,9 +43,9 @@ const memoResult = react.memo(function YouBarUser(isQuestRendered) {
   let items5;
   let obj10;
   let obj7;
-  isQuestRendered = isQuestRendered.isQuestRendered;
+  isCondensed = isCondensed.isCondensed;
   _require = undefined;
-  const onAvatarPress = isQuestRendered.onAvatarPress;
+  const onAvatarPress = isCondensed.onAvatarPress;
   const tmp = closure_11();
   let obj = require("get initialized");
   const items = [UserStore];
@@ -53,14 +53,14 @@ const memoResult = react.memo(function YouBarUser(isQuestRendered) {
   const tmp2 = _require;
   _require = tmp5;
   const obj2 = require("ReanimatedRexport");
-  const sharedValue = obj2.useSharedValue(isQuestRendered ? closure_8 : closure_7);
-  const items1 = [!isQuestRendered, sharedValue];
+  const sharedValue = obj2.useSharedValue(isCondensed ? closure_8 : closure_7);
+  const items1 = [!isCondensed, sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
     const obj = spring;
     const result = set(obj.withSpring(closure_0 ? metroImportDefault : metroImportAll, metroRequire));
   }, items1);
-  const tmp2Result = tmp2(5090);
+  const tmp2Result = tmp2(5095);
   class S {
     constructor() {
       const obj = { marginLeft: sharedValue.get() };
@@ -71,28 +71,28 @@ const memoResult = react.memo(function YouBarUser(isQuestRendered) {
   S.__workletHash = 12063452832866;
   S.__initData = __initData;
   const animatedStyle = tmp2Result.useAnimatedStyle(S);
-  const obj4 = sharedValue(5063);
+  const obj4 = sharedValue(5068);
   const name = obj4.useName(stateFromStores);
   if (null != stateFromStores) {
     let obj3;
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items2 };
-      const obj5 = { isLargeAvatar: !isQuestRendered, onPress: onAvatarPress };
-      items2 = [closure_9(sharedValue(18405), obj5), ];
-      const obj6 = { style: items3, children: closure_9(sharedValue(18406), obj7) };
+      const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress };
+      items2 = [closure_9(sharedValue(18448), obj5), ];
+      const obj6 = { style: items3, children: closure_9(sharedValue(18449), obj7) };
       items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
-      const View2 = tmp9(5090).View;
+      const View2 = tmp9(5095).View;
       obj7 = { userId: stateFromStores.id, username: name };
       items2[1] = closure_9(View2, obj6);
     }
     return tmp11(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items4 };
-  items4 = [closure_9(sharedValue(18404), { isLarge: !isQuestRendered }), ];
+  items4 = [closure_9(sharedValue(18447), { isLarge: !isCondensed }), ];
   const obj9 = { style: items5, children: closure_9(View, obj10) };
   items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };
-  View = tmp9(5090).View;
+  View = tmp9(5095).View;
   items4[1] = closure_9(View, obj9);
   obj3 = obj8;
 });

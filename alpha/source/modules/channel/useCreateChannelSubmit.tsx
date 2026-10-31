@@ -1,17 +1,17 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 9029
+// Function ID: 9030
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1072, 1993, 1084, 9021, 5016, 1114, 2]
+// Dependencies: [5, 32, 19, 1072, 1992, 1084, 9030, 5021, 1113, 2]
 // Exports: default
 
-// Module 9020 (useCreateChannelSubmit)
+// Module 9029 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, name, permissionOverwrites, type, userLimit;
+let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, flags, name, permissionOverwrites, type, userLimit;
 
 let metroImportAll;
 let metroImportDefault;
@@ -40,6 +40,7 @@ export default function useCreateChannelSubmit(arg0) {
       let c5;
       let c6;
       let c8;
+      let c9;
       let obj9;
       let tmp57;
       if (applicationId === 2) {
@@ -51,11 +52,11 @@ export default function useCreateChannelSubmit(arg0) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
-          let closure_10;
+          let closure_11;
           let id;
           let guild_id;
           applicationId = 2;
@@ -75,9 +76,10 @@ export default function useCreateChannelSubmit(arg0) {
               c3 = undefined;
               name = undefined;
               type = undefined;
-              ({ overwrites: c0, bitrate: c1, userLimit: c2, createMode: c3, guildId: c4, name: c5, channelType: c6, categoryId: c7, applicationId: c8 } = permissionOverwrites);
+              flags = undefined;
+              ({ overwrites: c0, bitrate: c1, userLimit: c2, createMode: c3, guildId: c4, name: c5, channelType: c6, categoryId: c7, applicationId: c8, flags: c9 } = permissionOverwrites);
               body = undefined;
-              closure_10 = undefined;
+              closure_11 = undefined;
               id = undefined;
               guild_id = undefined;
               c7 = 1;
@@ -100,7 +102,7 @@ export default function useCreateChannelSubmit(arg0) {
               }
               bitrate(true);
               type = 2;
-              const obj6 = { guildId: tmp, type, name, permissionOverwrites, bitrate, userLimit, parentId: tmp57, applicationId };
+              const obj6 = { guildId: tmp, type, name, permissionOverwrites, bitrate, userLimit, parentId: tmp57, applicationId, flags };
               tmp57 = null;
               const createChannel = closure_2_1(closure_2_3[6]).createChannel;
               closure_2_1(closure_2_3[6]);
@@ -151,9 +153,9 @@ export default function useCreateChannelSubmit(arg0) {
                 if (body2 == null) {
                   closure_2 = {};
                 }
-                closure_10 = closure_2;
-                id = closure_10.id;
-                guild_id = closure_10.guild_id;
+                closure_11 = closure_2;
+                id = closure_11.id;
+                guild_id = closure_11.guild_id;
                 if (null != id) {
                   const AccessibilityAnnouncer2 = permissionOverwrites(closure_2_3[7]).AccessibilityAnnouncer;
                   const announce2 = AccessibilityAnnouncer2.announce;
@@ -161,7 +163,7 @@ export default function useCreateChannelSubmit(arg0) {
                   const obj8 = { name };
                   announce2(intl2.formatToPlainString(permissionOverwrites(closure_2_3[8]).t.Wke70b, obj8));
                   if (permissionOverwrites != null) {
-                    tmp82(id, guild_id);
+                    tmp83(id, guild_id);
                   }
                 }
               }
@@ -170,14 +172,14 @@ export default function useCreateChannelSubmit(arg0) {
             type = 0;
             bitrate(false);
             applicationId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
-        } catch (tmp61) {
-          closure_5 = tmp61;
+        } catch (tmp62) {
+          closure_5 = tmp62;
           if (0 === type) {
             applicationId = 3;
-            throw tmp61;
-          } else if (1 === tmp63) {
+            throw tmp62;
+          } else if (1 === tmp64) {
             c7 = 2;
           } else {
             c7 = 3;

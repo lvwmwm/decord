@@ -1,12 +1,12 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12353
+// Function ID: 12354
 // Name: useOptionAnimations
-// Dependencies: [32, 19, 5249, 5090, 2]
+// Dependencies: [32, 19, 5254, 5095, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 12315 (useOptionAnimations)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+// Module 12353 (useOptionAnimations)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ export function useOptionEnteringAnimation() {
   let closure_1;
   let handleMountAnimationComplete;
   let sharedValue;
-  let obj = sharedValue(5090);
+  let obj = sharedValue(5095);
   sharedValue = obj.useSharedValue(false);
   dependencyMap = react.useRef([]);
   let items = [sharedValue];

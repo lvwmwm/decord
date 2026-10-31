@@ -1,19 +1,19 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16328
+// Function ID: 16329
 // Name: providers
-// Dependencies: [5, 6566, 6444, 1072, 2019, 1083, 7341, 9313, 11772, 11775, 6568, 572, 1109, 9700, 2]
+// Dependencies: [5, 6572, 6450, 1072, 2018, 1083, 7347, 9333, 11809, 11812, 6574, 572, 1108, 9720, 2]
 
-// Module 16286 (providers)
+// Module 16328 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7341 */;
-import RPCErrorDefault from "RPCError" /* 9313 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11772 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
+import RPCErrorDefault from "RPCError" /* 9333 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11809 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
-import Constants_mod from "Constants" /* 6444 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import Constants_mod from "Constants" /* 6450 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import Constants_mod3 from "Constants" /* 2019 */;
+import Constants_mod3 from "Constants" /* 2018 */;
 import Constants_mod4 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {

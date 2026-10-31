@@ -1,12 +1,12 @@
-// Module ID: 5070
-// Function ID: 5071
+// Module ID: 5075
+// Function ID: 5076
 // Name: NitroFileUploadExperiments
-// Dependencies: [1386, 1448, 2]
+// Dependencies: [1385, 1447, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy, useNitroFileUploadRolloutEnabled, useNonNitroFileUploadMarketingEnabled
 
-// Module 5070 (NitroFileUploadExperiments)
-import PremiumConstants from "PremiumConstants" /* 1386 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
+// Module 5075 (NitroFileUploadExperiments)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let _window;
@@ -29,12 +29,14 @@ export function getNitroFileUploadLimitBytes(arg0) {
   if (arg0 === undefined) {
     obj = {};
   }
-  let _location = { location: obj.location }.location;
+  const obj2 = { location: obj.location, autoTrackExposure: obj.autoTrackExposure };
+  let _location = obj2.location;
+  const autoTrackExposure = obj2.autoTrackExposure;
   const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return getConfig({ location: _location }).enabled ? map : React;
+  return getConfig({ location: _location }, { autoTrackExposure }).enabled ? map : React;
 }
 export function getNitroFileUploadRolloutConfig(arg0) {
   let obj = arg0;
@@ -42,21 +44,24 @@ export function getNitroFileUploadRolloutConfig(arg0) {
     obj = {};
   }
   let _location = obj.location;
+  const autoTrackExposure = obj.autoTrackExposure;
   const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  return getConfig({ location: _location });
+  return getConfig({ location: _location }, { autoTrackExposure });
 }
 export function getNitroFileUploadRolloutCopy(legacyCopy) {
   legacyCopy = legacyCopy.legacyCopy;
-  let _location = {}.location;
+  const obj = {};
+  let _location = obj.location;
   const rolloutCopy = legacyCopy.rolloutCopy;
+  const autoTrackExposure = obj.autoTrackExposure;
   const getConfig = closure_3.getConfig;
   if (_location == null) {
     _location = NitroFileUploadRollout;
   }
-  if (getConfig({ location: _location }).enabled) {
+  if (getConfig({ location: _location }, { autoTrackExposure }).enabled) {
     legacyCopy = rolloutCopy;
   }
   return legacyCopy;

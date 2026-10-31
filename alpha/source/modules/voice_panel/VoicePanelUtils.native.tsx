@@ -1,14 +1,14 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11860
+// Function ID: 11861
 // Name: VoicePanelUtils
-// Dependencies: [4858, 5759, 6869, 563, 2]
+// Dependencies: [4863, 5764, 6875, 563, 2]
 // Exports: useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 11822 (VoicePanelUtils)
+// Module 11860 (VoicePanelUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
-import VoicePanelStore from "VoicePanelStore" /* 6869 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import VoicePanelStore from "VoicePanelStore" /* 6875 */;
 import size from "module_2" /* 2 */;
 
 let channel;

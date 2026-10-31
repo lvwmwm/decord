@@ -1,13 +1,13 @@
-// Module ID: 18216
-// Function ID: 18217
+// Module ID: 18259
+// Function ID: 18260
 // Name: HubUnreadUtils
-// Dependencies: [13810, 6836, 504, 11, 13802, 2]
+// Dependencies: [13845, 6842, 504, 11, 13837, 2]
 // Exports: useHubUnreadCount
 
-// Module 18216 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13802 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13810 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
+// Module 18259 (HubUnreadUtils)
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13837 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13845 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

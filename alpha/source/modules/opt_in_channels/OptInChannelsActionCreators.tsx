@@ -1,24 +1,24 @@
-// Module ID: 7276
-// Function ID: 7277
+// Module ID: 7282
+// Function ID: 7283
 // Name: OptInChannelsActionCreators
-// Dependencies: [5, 4914, 4858, 6769, 1072, 1082, 6921, 1397, 7277, 7279, 572, 1253, 5755, 12, 7282, 1114, 4839, 1197, 2]
+// Dependencies: [5, 4919, 4863, 6775, 1072, 1082, 6927, 1396, 7283, 7285, 572, 1252, 5760, 12, 7288, 1113, 4844, 1196, 2]
 // Exports: bulkOptInChannels, bulkOptOutChannels, clearGuildNotice, dimissFavoriteSuggestion, dismissGuildNotice, enableGuildNotice, setGuildOptIn, setIsFavorite, setMessagesFavorite, setOptInChannel, setRecentlyActiveCollapsed, updateOptInChannelsImmediate
 
-// Module 7276 (OptInChannelsActionCreators)
+// Module 7282 (OptInChannelsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4839 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6921 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7277 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7279 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7282 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4844 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6927 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7283 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7285 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7288 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 4914 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import ImpersonateStore from "ImpersonateStore" /* 4919 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let _require, closure_2, closure_3;
 
 let c9;
 let metroImportAll;
-const f90006 = (item) => {
+const f90238 = (item) => {
   let channelIdFlags;
   let obj2;
   obj = { flags: obj2.setFlag(channelIdFlags, metroImportAll.OPT_IN_ENABLED, false) };
@@ -36,7 +36,7 @@ const f90006 = (item) => {
   obj[item] = obj;
   obj2 = FlagUtils;
 };
-const f90007 = (guildOnboardingProgress) => {
+const f90239 = (guildOnboardingProgress) => {
   obj = require("FlagUtils");
   let hasFlagResult = obj.hasFlag(guildOnboardingProgress.guildOnboardingProgress, require("preloaded_user_settings").GuildOnboardingProgress.GUILD_NOTICE_CLEARED);
   if (hasFlagResult) {
@@ -69,7 +69,7 @@ let obj = function _persistOptInChannelUpdates2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ let obj = function _persistOptInChannelUpdates2() {
             obj.dispatch(obj9);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp15) {
           c5 = 3;
           throw tmp15;
@@ -179,7 +179,7 @@ export function setOptInChannel(guildId1, id, optInEnabled, location) {
       NotificationLabel = NotificationSettingsUtils.NotificationLabel;
       const result2 = trackChannelNotificationSettingsUpdate(obj11);
       const obj12 = UserSettingsProtoActionCreators;
-      const result3 = obj12.updateUserGuildSettings(guildId1, f90007, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const result3 = obj12.updateUserGuildSettings(guildId1, f90239, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
       const obj13 = { action_type: str, location };
       const track = AnalyticsUtilsDefault.track;
       const CHANNEL_LIST_UPDATED = AnalyticEvents.CHANNEL_LIST_UPDATED;
@@ -220,7 +220,7 @@ export function updateOptInChannelsImmediate(guildId, channelId, optInEnabled, l
         items2 = [channelId];
       }
       const result = updateImpersonatedChannels(guildId, items1, items2);
-      const tmp28Result = tmp28(6921);
+      const tmp28Result = tmp28(6927);
       const result1 = tmp28Result.updateImpersonatedData(guildId, { optInEnabled: true });
     } else {
       obj = UserGuildSettingsStore;
@@ -251,10 +251,10 @@ export function updateOptInChannelsImmediate(guildId, channelId, optInEnabled, l
       const obj12 = { guildId, channelId, change: obj4, previous: currentChannelSettings, label: NotificationLabel.optedIn(optInEnabled), location };
       const trackChannelNotificationSettingsUpdate = NotificationSettingsUtils.trackChannelNotificationSettingsUpdate;
       NotificationSettingsUtils;
-      NotificationLabel = tmp6(7277).NotificationLabel;
+      NotificationLabel = tmp6(7283).NotificationLabel;
       const result3 = trackChannelNotificationSettingsUpdate(obj12);
       const tmp6Result6 = UserSettingsProtoActionCreators;
-      const result4 = tmp6Result6.updateUserGuildSettings(guildId, f90007, tmp6(4839).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const result4 = tmp6Result6.updateUserGuildSettings(guildId, f90239, tmp6(4844).UserSettingsDelay.INFREQUENT_USER_ACTION);
       const obj13 = { action_type: str, location };
       const track = AnalyticsUtilsDefault.track;
       const CHANNEL_LIST_UPDATED = AnalyticEvents.CHANNEL_LIST_UPDATED;
@@ -285,7 +285,7 @@ export function bulkOptInChannels(id, arr, arg2, location) {
       const result = obj10.updateImpersonatedChannels(id, arr, []);
       const tmp24 = _require;
       if (flag) {
-        const tmp24Result = tmp24(6921);
+        const tmp24Result = tmp24(6927);
         const result1 = tmp24Result.updateImpersonatedData(id, { optInEnabled: true });
       }
     } else {
@@ -301,22 +301,22 @@ export function bulkOptInChannels(id, arr, arg2, location) {
       if (flag) {
         const obj5 = require("FlagUtils");
         const obj3 = { flags: obj5.setFlag(UserGuildSettingsStore.getGuildFlags(id), constants2.OPT_IN_CHANNELS_ON, true), channel_overrides };
-        const obj6 = channel_overrides(7282);
+        const obj6 = channel_overrides(7288);
         const result2 = obj6.updateGuildAndChannelNotificationSettings(id, obj3, require("NotificationSettingsUtils").NotificationLabels.OptedIn);
         const obj7 = { action_type: "add_many_and_enable_guild", location };
-        const track2 = channel_overrides(1253).track;
+        const track2 = channel_overrides(1252).track;
         const CHANNEL_LIST_UPDATED2 = AnalyticEvents.CHANNEL_LIST_UPDATED;
-        channel_overrides(1253);
+        channel_overrides(1252);
         const obj9 = require("AppAnalyticsUtils");
         const merged = Object.assign(obj9.collectGuildAnalyticsMetadata(id));
         track2(CHANNEL_LIST_UPDATED2, obj7);
       } else {
-        let obj2 = channel_overrides(7282);
+        let obj2 = channel_overrides(7288);
         const result3 = obj2.updateChannelOverrideSettingsBulk(id, channel_overrides, require("NotificationSettingsUtils").NotificationLabels.OptedIn);
         const obj8 = { action_type: "add_many", location };
-        const track = channel_overrides(1253).track;
+        const track = channel_overrides(1252).track;
         const CHANNEL_LIST_UPDATED = AnalyticEvents.CHANNEL_LIST_UPDATED;
-        channel_overrides(1253);
+        channel_overrides(1252);
         const obj4 = require("AppAnalyticsUtils");
         const merged1 = Object.assign(obj4.collectGuildAnalyticsMetadata(id));
         track(CHANNEL_LIST_UPDATED, obj8);
@@ -332,13 +332,13 @@ export function bulkOptOutChannels(id, arr, location) {
       const result = obj5.updateImpersonatedChannels(id, [], arr);
     } else {
       obj = {};
-      const item = arr.forEach(f90006);
-      const obj2 = obj(7282);
+      const item = arr.forEach(f90238);
+      const obj2 = obj(7288);
       const result1 = obj2.updateChannelOverrideSettingsBulk(id, obj, require("NotificationSettingsUtils").NotificationLabels.OptedOut);
       const obj3 = { action_type: "remove_many", location };
-      const track = obj(1253).track;
+      const track = obj(1252).track;
       const CHANNEL_LIST_UPDATED = AnalyticEvents.CHANNEL_LIST_UPDATED;
-      obj(1253);
+      obj(1252);
       const obj4 = require("AppAnalyticsUtils");
       const merged = Object.assign(obj4.collectGuildAnalyticsMetadata(id));
       track(CHANNEL_LIST_UPDATED, obj3);
@@ -397,9 +397,9 @@ export function setIsFavorite(guildId1, id, arg2, location) {
       let tmp14;
       if (null != name) {
         if ("" !== name) {
-          const intl = tmp5(1114).intl;
+          const intl = tmp5(1113).intl;
           const formatToPlainString = intl.formatToPlainString;
-          const t = tmp5(1114).t;
+          const t = tmp5(1113).t;
           const obj2 = { message: formatToPlainString(arg2 ? t.CcNVYB : t.zSYTEX, obj3), assertiveness: "polite" };
           tmp14 = obj2;
           obj3 = { channelName: name };
@@ -410,7 +410,7 @@ export function setIsFavorite(guildId1, id, arg2, location) {
       const updateChannelOverrideSettings = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings;
       NotificationSettingsModalActionCreatorsDefault;
       tmp5Result3 = FlagUtils;
-      NotificationLabel = tmp5(7277).NotificationLabel;
+      NotificationLabel = tmp5(7283).NotificationLabel;
       const result = updateChannelOverrideSettings(obj4);
       const obj6 = { action_type: str2, location };
       const track = AnalyticsUtilsDefault.track;
@@ -455,7 +455,7 @@ export function enableGuildNotice(guildId) {
 }
 export function dismissGuildNotice(guildId) {
   obj = UserSettingsProtoActionCreators;
-  const result = obj.updateUserGuildSettings(guildId, f90007, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
+  const result = obj.updateUserGuildSettings(guildId, f90239, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }
 export function clearGuildNotice(guildId) {
   const items = [...UserGuildSettingsStore.getOptedInChannels(guildId)];
@@ -467,13 +467,13 @@ export function clearGuildNotice(guildId) {
       const result = obj5.updateImpersonatedChannels(guildId, [], items);
     } else {
       obj = {};
-      const item = items.forEach(f90006);
-      let obj2 = obj(7282);
+      const item = items.forEach(f90238);
+      let obj2 = obj(7288);
       const result1 = obj2.updateChannelOverrideSettingsBulk(guildId, obj, require("NotificationSettingsUtils").NotificationLabels.OptedOut);
       const obj3 = { action_type: "remove_many", location: undefined };
-      const track = obj(1253).track;
+      const track = obj(1252).track;
       const CHANNEL_LIST_UPDATED = AnalyticEvents.CHANNEL_LIST_UPDATED;
-      obj(1253);
+      obj(1252);
       const obj4 = require("AppAnalyticsUtils");
       const merged = Object.assign(obj4.collectGuildAnalyticsMetadata(guildId));
       track(CHANNEL_LIST_UPDATED, obj3);

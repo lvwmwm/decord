@@ -1,9 +1,9 @@
-// Module ID: 5028
-// Function ID: 5029
+// Module ID: 5033
+// Function ID: 5034
 // Name: ThemeContextProvider/ThemeTypes
 // Dependencies: [2]
 
-// Module 5028 (ThemeContextProvider/ThemeTypes)
+// Module 5033 (ThemeContextProvider/ThemeTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeTypes.tsx");

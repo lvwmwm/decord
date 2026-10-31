@@ -1,55 +1,102 @@
 // Module ID: 5406
 // Function ID: 5407
-// Dependencies: [5366, 5303, 5341]
-// Exports: useComposedGesture
+// Dependencies: [5, 32, 19, 17]
+// Exports: useIsScreenReaderEnabled
 
 // Module 5406
-let handlerTags;
+import react_native from "react-native" /* 17 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
+let c4, c5;
 
-export function useComposedGesture(type) {
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((handlerTags) => {
-    const obj = substr(dependencyMap[0]);
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
+let c2;
+let c3;
+({ useEffect: c2, useState: c3 } = react);
+const AccessibilityInfo = react_native.AccessibilityInfo;
+
+export function useIsScreenReaderEnabled() {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_3(false);
+  const tmp3 = closure_2(() => {
+    function checkStatus() {
+      return closure_0(...arguments);
     }
-    return handlerTags;
-  });
-  let tmp2 = substr;
-  let obj = substr(5366);
-  if (obj.containsDuplicates(flatMapResult)) {
-    const _Error2 = Error;
-    const self3 = this;
-    const self4 = this;
-    const tmp2Result = tmp2(5303);
-    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
-  } else {
-    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj2.shouldUseReanimatedDetector) {
-      if (obj2.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp2Result2 = tmp2(5303);
-        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
+    closure_0(function*(arg0, value) {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: "HermesInternal" };
+        }
+      } else {
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              closure_0 = undefined;
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: screenReaderEnabled.isScreenReaderEnabled(), done: false };
+              return obj4;
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              const _console = console;
+              console.warn("Could not read accessibility info: defaulting to false");
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              closure_0(closure_0);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: "HermesInternal" };
+          }
+        } catch (tmp13) {
+          let closure_2 = tmp13;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp13;
+          } else {
+            c4 = 1;
+          }
+        }
       }
-    }
-    const Reanimated = tmp2(5341).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
-    }
-    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
-    }
-    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: substr };
-    return obj3;
-  }
+    });
+    const tmp = checkStatus();
+    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
+      closure_0(event);
+    });
+    return () => {
+      closure_0.remove();
+    };
+  }, []);
+  return first;
 }

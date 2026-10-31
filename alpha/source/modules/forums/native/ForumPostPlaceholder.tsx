@@ -1,17 +1,17 @@
-// Module ID: 13740
-// Function ID: 13741
+// Module ID: 13775
+// Function ID: 13776
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 5010, 21, 5009, 575, 504, 5090, 5249, 6971, 2]
+// Dependencies: [32, 19, 5015, 21, 5014, 575, 504, 5095, 5254, 6977, 2]
 
-// Module 13740 (ForumPostPlaceholder)
+// Module 13775 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -37,7 +37,7 @@ const memoResult = react.memo(function ForumPostPlaceholder() {
     Easing = stateFromStores(dependencyMap[7]).Easing;
     return obj;
   }), 1)[0].timingConfig;
-  let obj2 = stateFromStores(5090);
+  let obj2 = stateFromStores(5095);
   const fn = function l() {
     let tmp9;
     const obj = { opacity: null };
@@ -59,12 +59,12 @@ const memoResult = react.memo(function ForumPostPlaceholder() {
     }
     return tmp9;
   };
-  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END, withDelay: stateFromStores(5090).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(5090).withRepeat, withSequence: stateFromStores(5090).withSequence, withTiming: stateFromStores(5249).withTiming, timingConfig };
+  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END, withDelay: stateFromStores(5095).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(5095).withRepeat, withSequence: stateFromStores(5095).withSequence, withTiming: stateFromStores(5254).withTiming, timingConfig };
   fn.__closure = obj3;
   fn.__workletHash = 9488742940898;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const View = timingConfig(5090).View;
+  const View = timingConfig(5095).View;
   return <View style={animatedStyle} pointerEvents="none">{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");

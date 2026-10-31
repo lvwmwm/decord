@@ -1,33 +1,33 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18639
+// Function ID: 18640
 // Name: GuildSettingsModalMembers
-// Dependencies: [32, 19, 17, 502, 5237, 4921, 4915, 4880, 4941, 1384, 9056, 1072, 21, 9116, 5009, 575, 1498, 10804, 6036, 5063, 1114, 10799, 1626, 504, 7433, 18598, 9022, 9853, 18599, 7552, 9081, 6896, 9055, 11, 5018, 7212, 7288, 1188, 8797, 5601, 2]
+// Dependencies: [32, 19, 17, 502, 5242, 4926, 4920, 4885, 4946, 1383, 9075, 1072, 21, 9135, 5014, 575, 1497, 10824, 6041, 5068, 1113, 10819, 1625, 504, 7439, 18640, 9031, 9874, 18641, 7558, 9100, 6902, 9074, 11, 5023, 7218, 7294, 1187, 8805, 5606, 2]
 
-// Module 18597 (GuildSettingsModalMembers)
+// Module 18639 (GuildSettingsModalMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6896 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7433 */;
-import _mod9116 from "module_9116" /* 9116 */;
-import RolePillDefault from "RolePill" /* 10804 */;
+import intl4 from "intl" /* 1113 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7439 */;
+import _mod9135 from "module_9135" /* 9135 */;
+import RolePillDefault from "RolePill" /* 10824 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import UserStore from "UserStore" /* 1384 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9056 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-const _modDef9116 = _mod9116;
+const _modDef9135 = _mod9135;
 let dependencyMap, navigation;
 
 let closure_15;
@@ -38,7 +38,7 @@ let obj3;
 const View = react_native.View;
 const GuildSettingsSections = Constants.GuildSettingsSections;
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = Fragment);
-let items = [_mod9116.AutocompleterResultTypes.USER];
+let items = [_mod9135.AutocompleterResultTypes.USER];
 let createStyles = createStyles_mod;
 let obj = { containerInner: obj2, searchFieldContainer: obj3, roleList: { flexDirection: "row", flexWrap: "wrap", overflow: "hidden", paddingTop: 4 } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
@@ -55,7 +55,7 @@ let closure_20 = react.memo(function GuildSettingsModalMember(guild) {
   const sortedGuildRoles = guild.sortedGuildRoles;
   ({ start, end } = guild);
   const tmp = closure_19();
-  let obj = guild(1498);
+  let obj = guild(1497);
   dependencyMap = obj.useNavigation();
   if (null == guild) {
     return null;
@@ -72,11 +72,11 @@ let closure_20 = react.memo(function GuildSettingsModalMember(guild) {
     let formatToPlainStringResult;
     if (found.length > 0) {
       const user = UserStore.getUser(guildMember.userId);
-      const obj2 = guildMember(6036);
+      const obj2 = guildMember(6041);
       let str = obj2.getNickname(guild.id, undefined, user);
       const tmp9 = guildMember;
       if (str == null) {
-        const tmp9Result = tmp9(5063);
+        const tmp9Result = tmp9(5068);
         str = tmp9Result.getGlobalName(user);
       }
       if (str == null) {
@@ -91,9 +91,9 @@ let closure_20 = react.memo(function GuildSettingsModalMember(guild) {
       }
       const mapped1 = found.map((name) => name.name);
       const joined = mapped1.join(", ");
-      const intl = tmp2(1114).intl;
+      const intl = tmp2(1113).intl;
       const obj3 = { memberName: str, roleNames: joined };
-      formatToPlainStringResult = intl.formatToPlainString(tmp2(1114).t["6eGpWx"], obj3);
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t["6eGpWx"], obj3);
     }
     const obj4 = {
       userId: guildMember.userId,
@@ -110,7 +110,7 @@ let closure_20 = react.memo(function GuildSettingsModalMember(guild) {
       end
     };
     tmp12Result = null;
-    const tmp14 = guildMember(10799);
+    const tmp14 = guildMember(10819);
     if (mapped.length > 0) {
       const obj5 = { style: tmp.roleList, pointerEvents: "none", children: mapped };
       tmp12Result = tmp12(View, obj5);
@@ -128,8 +128,8 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   let obj10;
   let obj12;
   let tmp33Result;
-  const f114878 = () => {
-    const tmp = new _modDef9116((arg0) => {
+  const f115185 = () => {
+    const tmp = new _modDef9135((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
     }, items, 100);
@@ -200,9 +200,9 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   const tmp16 = guildLoaded(sortedGuildRoles.useState(false), 2);
   first2 = tmp16[0];
   let closure_14 = tmp16[1];
-  const first3 = guildLoaded(sortedGuildRoles.useState(f114878), 2)[0];
+  const first3 = guildLoaded(sortedGuildRoles.useState(f115185), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = guildLoaded(sortedGuildRoles.useState(f114878), 2);
+  const tmp18 = guildLoaded(sortedGuildRoles.useState(f115185), 2);
   const memo = sortedGuildRoles.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;
@@ -223,7 +223,7 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
       const nextResult = iter2.next();
       while (iter2 !== undefined) {
         let tmp21 = nextResult;
-        if (nextResult.type === _mod9116.AutocompleterResultTypes.USER) {
+        if (nextResult.type === _mod9135.AutocompleterResultTypes.USER) {
           let member = GuildMemberStore.getMember(guildId, tmp21.record.id);
           let tmp28 = member;
           let guildRoleIsFilteredResult = null == member;

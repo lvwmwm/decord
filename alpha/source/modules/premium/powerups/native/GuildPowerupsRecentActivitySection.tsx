@@ -1,23 +1,23 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14138
+// Function ID: 14139
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5010, 21, 5009, 575, 7143, 14104, 4831, 504, 8411, 9899, 14106, 14108, 1188, 5619, 14110, 1114, 2]
+// Dependencies: [17, 5015, 21, 5014, 575, 7149, 14139, 4836, 504, 8419, 9920, 14141, 14143, 1187, 5624, 14145, 1113, 2]
 // Exports: default
 
-// Module 14103 (GuildPowerupsRecentActivitySection)
+// Module 14138 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import DateUtils from "DateUtils" /* 4831 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8411 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 14104 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 14110 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import intl2 from "intl" /* 1113 */;
+import DateUtils from "DateUtils" /* 4836 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8419 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 14139 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 14145 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const useMaybeGetSortedBoostsDefault = useMaybeGetSortedBoosts;
@@ -62,11 +62,11 @@ function GuildPowerupsRecentActivityRow(row) {
     const tmpResult2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(9899).BoostGemIcon;
+      BoostGemSlashIcon = tmp(9920).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(14106).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(14141).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(14108).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(14143).BoostGemSlashIcon;
     }
     const obj5 = { style: tmp4.boostRowContainer, children: items1 };
     if ("gave" === phase) {
@@ -80,24 +80,24 @@ function GuildPowerupsRecentActivityRow(row) {
     const obj8 = { style: tmp4.boostMessage, children: items2 };
     if (tmp20Result) {
       const obj9 = { size: "small", color: roleColor, colors: roleColorStrings };
-      tmp20Result = tmp20(tmp(1188).RoleDot, obj9);
+      tmp20Result = tmp20(tmp(1187).RoleDot, obj9);
     }
     items2 = [tmp20Result, , , ];
     const obj10 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp24, children: username };
     items3 = [tmp4.username, {}];
     tmp24 = undefined;
-    const Text = tmp(5619).Text;
+    const Text = tmp(5624).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp24 = processColorStringsArray;
     }
     items2[1] = hasOwnProperty(Text, obj10);
     items2[2] = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj11 = { variant: "text-md/medium", lineClamp: 1, style: tmp4.messageText, children: getBoostRowMessageTextDefault(row) };
-    const Text2 = tmp(5619).Text;
+    const Text2 = tmp(5624).Text;
     items2[3] = hasOwnProperty(Text2, obj11);
     items1[1] = metroRequire(View, obj8);
     let str4 = "text-xs/semibold";
-    const Text3 = tmp(5619).Text;
+    const Text3 = tmp(5624).Text;
     if (manaTypeConsolidationExperiment) {
       str4 = "text-xs/medium";
     }
@@ -132,13 +132,13 @@ export default function GuildPowerupsRecentActivitySection(guildId) {
   if (0 !== arr.length) {
     let str = "text-subtle";
     const obj2 = { style: tmp4.sectionContainer, children: items };
-    const Text = tmp(5619).Text;
+    const Text = tmp(5624).Text;
     const tmp6 = metroRequire;
     if (manaTypeConsolidationExperiment) {
       str = "text-strong";
     }
     const obj3 = { variant: "heading-lg/semibold", color: str, children: intl.string(intl2.t.yM9Krm) };
-    intl = tmp(1114).intl;
+    intl = tmp(1113).intl;
     items = [hasOwnProperty(Text, obj3), ];
     const obj4 = {
       style: tmp4.boostContainer,

@@ -1,17 +1,17 @@
-// Module ID: 16909
-// Function ID: 16910
+// Module ID: 16965
+// Function ID: 16966
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5009, 5090, 5249, 5252, 5582, 16898, 2]
+// Dependencies: [17, 21, 5014, 5095, 5254, 5257, 5587, 16954, 2]
 // Exports: default
 
-// Module 16909 (BountiesModalEndCard)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16898 */;
+// Module 16965 (BountiesModalEndCard)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16954 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const timingPresets = tmp(5252);
+const timingPresets = tmp(5257);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles(() => {
@@ -43,7 +43,7 @@ export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   let tmp = closure_7();
-  const tmp3 = visible(5090);
+  const tmp3 = visible(5095);
   const fn = function y() {
     let num = 0;
     const withTiming = timing.withTiming;
@@ -54,7 +54,7 @@ export default function BountiesModalEndCard(visible) {
     const obj = { opacity: withTiming(num, timingPresets.timingStandard) };
     return obj;
   };
-  let obj = { withTiming: visible(5249).withTiming, visible, timingStandard: visible(5252).timingStandard };
+  let obj = { withTiming: visible(5254).withTiming, visible, timingStandard: visible(5257).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = __initData;

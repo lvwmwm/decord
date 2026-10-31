@@ -1,18 +1,18 @@
-// Module ID: 10857
-// Function ID: 10858
+// Module ID: 10877
+// Function ID: 10878
 // Name: conjureUnread
-// Dependencies: [19, 1232, 6836, 6838, 6770, 572, 11, 504, 10858, 2]
-// Exports: ackConjureProject, getConjureProjectMentionCount, isConjureProjectUnread, useAckConjureProjectWhileViewing, useConjureProjectBadge, useConjureUnreadSummary
+// Dependencies: [19, 1231, 6842, 6844, 6776, 572, 11, 504, 10878, 2]
+// Exports: ackConjureProject, getConjureProjectMentionCount, isConjureProjectUnread, useAckConjureProjectOnLeave, useAckConjureProjectWhileViewing, useConjureProjectBadge, useConjureUnreadSummary
 
-// Module 10857 (conjureUnread)
+// Module 10877 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ReadStateConstants from "ReadStateConstants" /* 6770 */;
-import conjureProjectMute from "conjureProjectMute" /* 10858 */;
+import ReadStateConstants from "ReadStateConstants" /* 6776 */;
+import conjureProjectMute from "conjureProjectMute" /* 10878 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -136,6 +136,18 @@ export function useConjureUnreadSummary(arg0) {
     }
     return { hasUnread: num > 0, unreadCount: num, badgeCount: num2 };
   }, items1);
+}
+export function useAckConjureProjectOnLeave(arg0) {
+  let closure_0 = arg0;
+  const items = [arg0];
+  const layoutEffect = react.useLayoutEffect(() => {
+    let projectId;
+    return () => {
+      const obj = DispatcherDefault;
+      const obj2 = { type: "CONJURE_PROJECT_ACK", projectId };
+      obj.dispatch(obj2);
+    };
+  }, items);
 }
 export function useAckConjureProjectWhileViewing(projectId, stateFromStores) {
   _require = projectId;

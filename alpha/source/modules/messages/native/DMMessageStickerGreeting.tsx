@@ -1,25 +1,25 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13806
+// Function ID: 13807
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6831, 6056, 1384, 21, 5009, 575, 5187, 5591, 5006, 5707, 13772, 7629, 1114, 504, 1089, 5063, 13773, 10247, 5090, 5249, 1188, 10246, 5582, 6974, 10262, 5619, 5629, 2]
+// Dependencies: [5, 32, 19, 17, 6837, 6061, 1383, 21, 5014, 575, 5192, 5596, 5011, 5712, 13807, 7636, 1113, 504, 1088, 5068, 13808, 10267, 5095, 5254, 1187, 10266, 5587, 6980, 10282, 5624, 5634, 2]
 // Exports: default
 
-// Module 13771 (DMMessageStickerGreeting)
+// Module 13806 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5187 */;
-import timing from "timing" /* 5249 */;
-import StickersActionCreators from "StickersActionCreators" /* 10247 */;
+import native from "native" /* 1187 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5192 */;
+import timing from "timing" /* 5254 */;
+import StickersActionCreators from "StickersActionCreators" /* 10267 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6831 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import UserStore from "UserStore" /* 1384 */;
+import StickersStore from "StickersStore" /* 6837 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, dependencyMap;
@@ -59,7 +59,7 @@ export default function DMMessageStickerGreeting(channel) {
   let showConvoStarterInDM;
   react = undefined;
   let tmp = channel;
-  let obj = channel(5187);
+  let obj = channel(5192);
   const tmp3 = END;
   const tmp4 = closure_13(obj.useGradientValue(END));
   dependencyMap = tmp4;
@@ -72,15 +72,15 @@ export default function DMMessageStickerGreeting(channel) {
   let obj3 = channel(504);
   const items1 = [UserStore];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = hasInputText(5063);
+  let obj4 = hasInputText(5068);
   let name = obj4.useName(stateFromStores1);
   if (name == null) {
-    let intl = tmp(1114).intl;
-    name = intl.string(tmp(1114).t.y1Wu2f);
+    let intl = tmp(1113).intl;
+    name = intl.string(tmp(1113).t.y1Wu2f);
   }
-  const intl2 = tmp(1114).intl;
-  const formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13773);
+  const intl2 = tmp(1113).intl;
+  const formatToPlainStringResult = intl2.formatToPlainString(tmp(1113).t.m0zYbV, { username: name });
+  const tmpResult = tmp(13808);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -126,7 +126,7 @@ export default function DMMessageStickerGreeting(channel) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -158,7 +158,7 @@ export default function DMMessageStickerGreeting(channel) {
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: channel.id, source: "In-channel greet" };
@@ -195,7 +195,7 @@ export default function DMMessageStickerGreeting(channel) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {
@@ -246,59 +246,59 @@ export default function DMMessageStickerGreeting(channel) {
     obj5 = { easing: native.STANDARD_EASING, duration: 250 };
     return obj;
   };
-  const tmpResult8 = tmp(5090);
-  let obj5 = { styles: tmp4, isRendered: tmp20, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL: 180, withDelay: tmp(5090).withDelay, withTiming: tmp(5249).withTiming, STANDARD_EASING: tmp(1188).STANDARD_EASING };
+  const tmpResult8 = tmp(5095);
+  let obj5 = { styles: tmp4, isRendered: tmp20, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL: 180, withDelay: tmp(5095).withDelay, withTiming: tmp(5254).withTiming, STANDARD_EASING: tmp(1187).STANDARD_EASING };
   fn.__closure = obj5;
   fn.__workletHash = 6327401707106;
   fn.__initData = __initData;
   const animatedStyle = tmpResult8.useAnimatedStyle(fn);
-  const tmpResult9 = tmp(5187);
+  const tmpResult9 = tmp(5192);
   let BACKGROUND_BASE_LOWER = tmpResult9.useGradientValue(tmp3);
-  const useToken = tmp(5591).useToken;
-  tmp(5591);
+  const useToken = tmp(5596).useToken;
+  tmp(5596);
   if (BACKGROUND_BASE_LOWER == null) {
     BACKGROUND_BASE_LOWER = tmp7(575).colors.BACKGROUND_BASE_LOWER;
   }
   const token = useToken(BACKGROUND_BASE_LOWER);
   const items8 = [, ];
-  const tmpResult11 = tmp(5006);
+  const tmpResult11 = tmp(5011);
   items8[0] = tmpResult11.hexWithOpacity(token, 0);
   items8[1] = token;
-  const tmpResult12 = tmp(10246);
+  const tmpResult12 = tmp(10266);
   const shouldAnimateSticker = tmpResult12.useShouldAnimateSticker(false);
   let tmp28Result2 = null;
   if (showConvoStarterInDM) {
     const tmp28 = closure_11;
     let obj6 = { style: animatedStyle, onLayout: callback1, children: items9 };
-    View = tmp7(5090).View;
+    View = tmp7(5095).View;
     let obj7 = { style: tmp4.gradient, colors: items8 };
-    items9 = [closure_10(tmp7(5582), obj7), ];
+    items9 = [closure_10(tmp7(5587), obj7), ];
     const obj8 = { style: tmp4.container, children: tmp28Result };
     if (stateFromStores) {
-      const obj9 = { style: tmp4.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1114).t.pJObYI), onPress: callback, children: items10 };
-      const PressableOpacity = tmp(6974).PressableOpacity;
-      intl3 = tmp(1114).intl;
+      const obj9 = { style: tmp4.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1113).t.pJObYI), onPress: callback, children: items10 };
+      const PressableOpacity = tmp(6980).PressableOpacity;
+      intl3 = tmp(1113).intl;
       let tmp29Result = null;
       if (null != stateFromStores2) {
         const obj10 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp29Result = tmp29(tmp7(10262), obj10);
+        tmp29Result = tmp29(tmp7(10282), obj10);
       }
       items10 = [tmp29Result, ];
       const obj11 = { style: tmp4.toastContent, variant: "text-md/bold", children: formatToPlainStringResult };
-      items10[1] = closure_10(tmp(5619).Text, obj11);
+      items10[1] = closure_10(tmp(5624).Text, obj11);
       tmp28Result = tmp28(PressableOpacity, obj9);
     } else {
       let tmp29Result2 = null;
       const tmp31 = closure_12;
       if (null != stateFromStores2) {
-        const obj12 = { style: tmp4.stickerContainer, children: closure_10(hasInputText(10262), obj13) };
+        const obj12 = { style: tmp4.stickerContainer, children: closure_10(hasInputText(10282), obj13) };
         obj13 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
         tmp29Result2 = tmp29(tmp30, obj12);
       }
       const obj14 = { children: items11 };
       items11 = [tmp29Result2, ];
       const obj15 = { text: formatToPlainStringResult, onPress: callback, shrink: true };
-      items11[1] = closure_10(tmp(5629).Button, obj15);
+      items11[1] = closure_10(tmp(5634).Button, obj15);
       tmp28Result = tmp28(tmp31, obj14);
     }
     items9[1] = closure_10(View, obj8);

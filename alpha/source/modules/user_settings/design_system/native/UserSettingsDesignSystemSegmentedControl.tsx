@@ -1,17 +1,17 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17772
+// Function ID: 17773
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5619, 8971, 6022, 9195, 11445, 5629, 5018, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 8980, 6027, 9214, 14177, 5634, 5023, 2]
 // Exports: default
 
-// Module 17728 (UserSettingsDesignSystemSegmentedControl)
+// Module 17772 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

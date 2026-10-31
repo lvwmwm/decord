@@ -1,13 +1,13 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10741
+// Function ID: 10742
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1072, 6440, 5953, 1114, 1283, 5016, 2]
+// Dependencies: [5, 1072, 6446, 5958, 1113, 1282, 5021, 2]
 
-// Module 10721 (GameRelationshipActionCreators)
-import intl3 from "intl" /* 1114 */;
-import shared from "shared" /* 5016 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6440 */;
+// Module 10741 (GameRelationshipActionCreators)
+import intl3 from "intl" /* 1113 */;
+import shared from "shared" /* 5021 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -23,8 +23,8 @@ function showRequestFailedAlert(arg0) {
   AlertActionCreatorsDefault;
   intl = intl3.intl;
   if (null == anyErrorMessage) {
-    const intl2 = tmp(1114).intl;
-    anyErrorMessage = intl2.string(tmp(1114).t.fEptJP);
+    const intl2 = tmp(1113).intl;
+    anyErrorMessage = intl2.string(tmp(1113).t.fEptJP);
   }
   show(obj);
 }
@@ -136,7 +136,7 @@ obj = {
     }
     ({ userId, applicationId } = arg0);
     const FRIEND = constants.FRIEND;
-    const HTTP = onSuccess(1283).HTTP;
+    const HTTP = onSuccess(1282).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     const nextPromise = putResult.then(() => {

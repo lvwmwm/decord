@@ -1,19 +1,19 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16480
+// Function ID: 16481
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7371, 7610, 21, 5009, 575, 1188, 9506, 5619, 5582, 1093, 2]
+// Dependencies: [19, 17, 7377, 7617, 21, 5014, 575, 1187, 9528, 5624, 5587, 1092, 2]
 // Exports: default
 
-// Module 16438 (UserProfileUpsellCard)
+// Module 16480 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import Constants from "Constants" /* 7371 */;
-import ColorConstants from "ColorConstants" /* 7610 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import Constants from "Constants" /* 7377 */;
+import ColorConstants from "ColorConstants" /* 7617 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ export default function UserProfileUpsellCard(headerText) {
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(9506).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9528).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);
@@ -91,7 +91,7 @@ export default function UserProfileUpsellCard(headerText) {
     renderLinearGradient: fn
   };
   items5 = [tmp.upsellButton, ctaStyle];
-  const ShinyButton = tmp3(1188).ShinyButton;
+  const ShinyButton = tmp3(1187).ShinyButton;
   fn = undefined;
   if (showLinearGradient) {
     fn = () => {

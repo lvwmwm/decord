@@ -1,32 +1,32 @@
-// Module ID: 18094
-// Function ID: 18095
+// Module ID: 18137
+// Function ID: 18138
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4939, 4880, 4912, 17217, 1072, 21, 5009, 575, 1253, 9025, 18095, 1114, 9055, 18096, 9099, 18097, 13806, 14333, 17218, 5712, 5619, 2]
+// Dependencies: [19, 17, 4944, 4885, 4917, 17274, 1072, 21, 5014, 575, 1252, 9034, 18138, 1113, 9074, 18139, 9118, 18140, 13841, 14371, 17275, 5717, 5624, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 18094 (HappeningNowActions)
+// Module 18137 (HappeningNowActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9025 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9055 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9099 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13806 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14333 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 17218 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18095 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18096 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18097 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9034 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13841 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14371 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 17275 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18138 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18139 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18140 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4939 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17217 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17274 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_CARD_HEIGHT;
@@ -76,7 +76,7 @@ export function HappeningNowCardCreateChannel(guildId) {
     flag = false;
   }
   const items = [guildId];
-  let obj = { imageSource: AssetRegistryDefault2, onPress: callback, text: intl.string(guildId(1114).t["fUYU+j"]), panelVariant: flag };
+  let obj = { imageSource: AssetRegistryDefault2, onPress: callback, text: intl.string(guildId(1113).t["fUYU+j"]), panelVariant: flag };
   callback = react.useCallback(() => {
     const GUILD_ACTION_CREATE_CHANNEL_CARD = metroImportAll.GUILD_ACTION_CREATE_CHANNEL_CARD;
     const obj = AnalyticsUtilsDefault;
@@ -85,7 +85,7 @@ export function HappeningNowCardCreateChannel(guildId) {
     const obj3 = CreateChannelModalActionCreatorsDefault;
     obj3.open(null, guildId, null, null);
   }, items);
-  intl = guildId(1114).intl;
+  intl = guildId(1113).intl;
   return closure_11(closure_14, obj);
 }
 export function HappeningNowCardCustomizeGuild(guildId) {
@@ -116,7 +116,7 @@ export function HappeningNowCardInvite(guildId) {
     flag = false;
   }
   const items = [guildId];
-  let obj = { imageSource: AssetRegistryDefault4, onPress: callback, text: intl.string(guildId(1114).t.VINpSK), panelVariant: flag };
+  let obj = { imageSource: AssetRegistryDefault4, onPress: callback, text: intl.string(guildId(1113).t.VINpSK), panelVariant: flag };
   callback = react.useCallback(() => {
     const guild = GuildStore.getGuild(guildId);
     const channels = GuildChannelStore.getChannels(guildId);
@@ -131,7 +131,7 @@ export function HappeningNowCardInvite(guildId) {
       const result = obj3.handleOpenInviteActionsheet(guild, channelId, channels, constants2.SERVER_PROFILE);
     }
   }, items);
-  intl = guildId(1114).intl;
+  intl = guildId(1113).intl;
   return closure_11(closure_14, obj);
 }
 export function HappeningNowStudentHubAddServer(guildId) {
@@ -143,7 +143,7 @@ export function HappeningNowStudentHubAddServer(guildId) {
     flag = false;
   }
   const items = [guildId];
-  let obj = { imageSource: AssetRegistryDefault, onPress: callback, text: intl.string(guildId(1114).t.emRpdS), panelVariant: flag };
+  let obj = { imageSource: AssetRegistryDefault, onPress: callback, text: intl.string(guildId(1113).t.emRpdS), panelVariant: flag };
   callback = react.useCallback(() => {
     const guild = GuildStore.getGuild(guildId);
     const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
@@ -160,6 +160,6 @@ export function HappeningNowStudentHubAddServer(guildId) {
       obj3.open(obj6);
     }
   }, items);
-  intl = guildId(1114).intl;
+  intl = guildId(1113).intl;
   return closure_11(closure_14, obj);
 }

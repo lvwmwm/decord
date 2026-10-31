@@ -1,24 +1,24 @@
-// Module ID: 7564
-// Function ID: 7565
+// Module ID: 7570
+// Function ID: 7571
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1232, 5040, 4845, 4850, 1072, 1082, 1253, 4842, 7565, 4843, 504, 5061, 4841, 5039, 11, 2]
+// Dependencies: [32, 19, 1231, 5045, 4850, 4855, 1072, 1082, 1252, 4847, 7571, 4848, 504, 5066, 4846, 5044, 11, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 7564 (useGetDismissibleContent)
+// Module 7570 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4841 */;
-import dismissible_content from "dismissible_content" /* 4842 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4843 */;
-import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 4850 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5039 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4846 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4848 */;
+import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 4855 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4845 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4850 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ function useGetVisibleContent(found1, stateFromStores, GUILD_HEADER_TOOLTIPS, la
   let closure_6 = tmp6;
   let result = null != found1;
   if (result) {
-    const tmp2Result = tmp2(4843);
+    const tmp2Result = tmp2(4848);
     result = tmp2Result.isDismissibleContentBlockedByOverlay(found1, first, tmp6);
   }
   const items = [ref];
@@ -326,7 +326,7 @@ export function useGetTimeRecurringDismissibleContent(prop, timeRecurringConfig,
   let tmp5 = null;
   if (null != prop) {
     let tmp10 = null;
-    const tmpResult = tmp(5061);
+    const tmpResult = tmp(5066);
     if (canShowTimeRecurringContent(!tmpResult.disableNewUserDismissibleContent(prop), lastDismissedAtMs, numTimesDismissed, timeRecurringConfig)) {
       tmp10 = prop;
     }
@@ -452,7 +452,7 @@ export function useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnow
   if (null != prop) {
     tmp7 = null;
     if ("" !== newSnowflakeId) {
-      const tmpResult = tmp(5061);
+      const tmpResult = tmp(5066);
       let result = tmpResult.disableNewUserDismissibleContent(prop);
       if (obj2.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
         let tmp10 = null;
@@ -586,7 +586,7 @@ export function useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, cool
   dependencyMap = null;
   let tmp7 = null;
   if (null != prop) {
-    const tmpResult = tmp(5061);
+    const tmpResult = tmp(5066);
     let lastDismissedAtMs;
     const tmp8 = !tmpResult.disableNewUserDismissibleContent(prop);
     if (tmp4 != null) {

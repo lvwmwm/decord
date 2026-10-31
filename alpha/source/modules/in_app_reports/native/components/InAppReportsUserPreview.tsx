@@ -1,20 +1,20 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15154
+// Function ID: 15155
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 5009, 575, 7142, 5006, 5619, 1114, 1188, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7148, 5011, 5624, 1113, 1187, 2]
 // Exports: default
 
-// Module 15115 (InAppReportsUserPreview)
+// Module 15154 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import ColorUtils from "ColorUtils" /* 5006 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,24 +54,24 @@ export default function UserPreview(user) {
   }
   const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
   if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1114).intl;
-    stringResult = intl2.string(tmp2(1114).t.Rsth7z);
+    const intl2 = tmp2(1113).intl;
+    stringResult = intl2.string(tmp2(1113).t.Rsth7z);
   } else {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const str = intl.string(intl3.t.Rsth7z);
     stringResult = str.toUpperCase();
   }
   items1 = [_false(Text, obj4), ];
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "r" };
-  const Avatar = tmp2(1188).Avatar;
+  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
+  const Avatar = tmp2(1187).Avatar;
   items3 = [_false(Avatar, obj6), ];
   let tmp8Result = null != user.globalName;
   const obj7 = { style: tmp.userProfileInfo, children: items4 };
   if (tmp8Result) {
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp8Result = tmp8(tmp2(5619).Text, obj8);
+    tmp8Result = tmp8(tmp2(5624).Text, obj8);
   }
   items4 = [tmp8Result, ];
   const obj9 = { color: "text-default", variant: "text-sm/normal", children: user.username };

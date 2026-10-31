@@ -1,12 +1,12 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14153
+// Function ID: 14154
 // Name: getApplicationFromBotUserId
-// Dependencies: [7765, 1072, 504, 2]
+// Dependencies: [7772, 1072, 504, 2]
 // Exports: default
 
-// Module 14118 (getApplicationFromBotUserId)
+// Module 14153 (getApplicationFromBotUserId)
 import Constants from "Constants" /* 1072 */;
-import UserProfileStore from "UserProfileStore" /* 7765 */;
+import UserProfileStore from "UserProfileStore" /* 7772 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

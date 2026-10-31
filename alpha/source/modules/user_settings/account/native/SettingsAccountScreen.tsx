@@ -1,28 +1,28 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 16567
+// Function ID: 16568
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 16526, 8424, 1072, 21, 5009, 575, 1498, 6971, 5712, 16527, 5619, 1114, 5629, 504, 16528, 7112, 6742, 7054, 16529, 11505, 16530, 16533, 5588, 13264, 2]
+// Dependencies: [32, 19, 17, 16568, 8432, 1072, 21, 5014, 575, 1497, 6977, 5717, 16569, 5624, 1113, 5634, 504, 16570, 7118, 6748, 7060, 16571, 11539, 16572, 16575, 5593, 13299, 2]
 
-// Module 16525 (SettingsAccountScreen)
+// Module 16567 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import useMountEffectDefault from "useMountEffect" /* 5588 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6742 */;
-import TableRowGroup from "TableRowGroup" /* 7054 */;
-import MFAUtils from "MFAUtils" /* 7112 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13264 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16529 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16530 */;
-import SettingLayoutDefault from "SettingLayout" /* 16533 */;
+import intl4 from "intl" /* 1113 */;
+import useMountEffectDefault from "useMountEffect" /* 5593 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
+import TableRowGroup from "TableRowGroup" /* 7060 */;
+import MFAUtils from "MFAUtils" /* 7118 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13299 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16571 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16572 */;
+import SettingLayoutDefault from "SettingLayout" /* 16575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16526 */;
+import WebAuthnStore from "WebAuthnStore" /* 16568 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -95,7 +95,7 @@ function AccountTwoFALabel() {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(16528);
+  const obj2 = first(16570);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {
@@ -118,9 +118,9 @@ function AccountTwoFALabel() {
   }
   const obj3 = { children: items3 };
   items3 = [tmp11, ];
-  const obj4 = { title: intl.string(tmp(1114).t.fuTmEJ) };
-  const TableRowGroupTitle = tmp(7054).TableRowGroupTitle;
-  intl = tmp(1114).intl;
+  const obj4 = { title: intl.string(tmp(1113).t.fuTmEJ) };
+  const TableRowGroupTitle = tmp(7060).TableRowGroupTitle;
+  intl = tmp(1113).intl;
   items3[1] = closure_10(TableRowGroupTitle, obj4);
   return tmp9(tmp10, obj3);
 }

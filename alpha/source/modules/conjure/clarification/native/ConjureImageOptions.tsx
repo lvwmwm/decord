@@ -1,23 +1,23 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12758
+// Function ID: 12759
 // Name: ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5009, 575, 12455, 8645, 5619, 1114, 3865, 5712, 5077, 6971, 6983, 7056, 12721, 8020, 5733, 12724, 12453, 8825, 12726, 5629, 12422, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 12490, 8653, 5624, 1113, 3868, 5717, 5082, 6977, 6989, 7062, 12756, 8028, 5738, 12759, 12488, 8833, 12761, 5634, 12460, 2]
 // Exports: default
 
-// Module 12723 (ConjureImageOptions)
+// Module 12758 (ConjureImageOptions)
 import nativeDefault from "native" /* 575 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import react_native from "react-native" /* 5077 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import openMediaModal from "openMediaModal" /* 8825 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12455 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 12721 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import react_native from "react-native" /* 5082 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import openMediaModal from "openMediaModal" /* 8833 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12490 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 12756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,11 +65,11 @@ function ImageOptionPicture(onMeasured) {
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8645).ImageWarningIcon;
+    const ImageWarningIcon = tmp2(8653).ImageWarningIcon;
     items1 = [metroImportAll(ImageWarningIcon, obj4), ];
-    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3865.lhgD88) };
-    const Text = tmp2(5619).Text;
-    intl = tmp2(1114).intl;
+    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3868.lhgD88) };
+    const Text = tmp2(5624).Text;
+    intl = tmp2(1113).intl;
     items1[1] = metroImportAll(Text, obj5);
     obj2.children = React4(metroImportDefault, obj3);
     tmp10 = obj2;
@@ -148,8 +148,8 @@ function ImageOptionTile(option) {
   if (multi) {
     radioA11yNative = checkboxA11yNative;
   }
-  const intl = tmp2(1114).intl;
-  const stringResult = intl.string(_modDef3865["4/eeDD"]);
+  const intl = tmp2(1113).intl;
+  const stringResult = intl.string(_modDef3868["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -169,7 +169,7 @@ function ImageOptionTile(option) {
     disabled: tmp11,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef3865.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef3868.AQbxhf, obj7),
     accessibilityActions: tmp12,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -185,16 +185,16 @@ function ImageOptionTile(option) {
     children: items4
   };
   tmp11 = disabled;
-  const Card = tmp2(6971).Card;
+  const Card = tmp2(6977).Card;
   if (disabled) {
     tmp11 = null == option.image;
   }
   ({ accessibilityRole: obj5.accessibilityRole, accessibilityState: obj5.accessibilityState } = radioA11yNative);
-  intl2 = tmp2(1114).intl;
+  intl2 = tmp2(1113).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef3865.HQEXJM) };
-    intl3 = tmp2(1114).intl;
+    const obj8 = { name: "remove", label: intl3.string(_modDef3868.HQEXJM) };
+    intl3 = tmp2(1113).intl;
     const items1 = [obj8];
     tmp12 = items1;
   } else if (null != option.image) {
@@ -222,10 +222,10 @@ function ImageOptionTile(option) {
     const obj13 = { style: tmp.indicator, children: tmp13Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp13Result = tmp13(tmp2(6983).FormCheckbox, obj14);
+      tmp13Result = tmp13(tmp2(6989).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp13Result = tmp13(tmp2(7056).FormRadio, obj15);
+      tmp13Result = tmp13(tmp2(7062).FormRadio, obj15);
     }
     tmp13Result3 = tmp13(tmp9, obj13);
   } else {
@@ -234,7 +234,7 @@ function ImageOptionTile(option) {
   items3[1] = tmp13Result3;
   items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp13(Text, obj16);
   items5 = [React4(Card, obj6), ];
@@ -247,17 +247,17 @@ function ImageOptionTile(option) {
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(8020).IconButton;
+      IconButton = tmp2(8028).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(5733).TrashIcon;
+        MaximizeIcon = tmp2(5738).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(12724).MaximizeIcon;
+        MaximizeIcon = tmp2(12759).MaximizeIcon;
       }
-      obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3865.JGjZMs, obj20) };
+      obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3868.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
-      intl4 = tmp2(1114).intl;
+      intl4 = tmp2(1113).intl;
       obj20 = { answer: option.label };
       tmp13Result4 = tmp13(tmp9, obj17);
     }
@@ -496,7 +496,7 @@ export default function ConjureImageOptions(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -536,7 +536,7 @@ export default function ConjureImageOptions(projectId) {
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         c3 = 3;

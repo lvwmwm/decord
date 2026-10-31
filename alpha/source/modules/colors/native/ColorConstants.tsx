@@ -1,12 +1,12 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7617
+// Function ID: 7618
 // Name: ColorConstants
-// Dependencies: [1386, 575, 2]
+// Dependencies: [1385, 575, 2]
 // Exports: getPremiumGradientColor
 
-// Module 7610 (ColorConstants)
+// Module 7617 (ColorConstants)
 import nativeDefault from "native" /* 575 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let items;

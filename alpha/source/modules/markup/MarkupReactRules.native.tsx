@@ -1,46 +1,46 @@
-// Module ID: 5750
-// Function ID: 5751
+// Module ID: 5755
+// Function ID: 5756
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5010, 4858, 4915, 1072, 4865, 1083, 21, 5619, 5009, 575, 5751, 5649, 5194, 6738, 8742, 5953, 1114, 7352, 5706, 6951, 1188, 1378, 8931, 5704, 10106, 10161, 8563, 504, 5006, 8411, 5253, 11583, 1995, 11, 4834, 5712, 11556, 15618, 15620, 5722, 11539, 15622, 11463, 6027, 11036, 6029, 1376, 8595, 15623, 11038, 2]
+// Dependencies: [19, 17, 5015, 4863, 4920, 1072, 4870, 1083, 21, 5624, 5014, 575, 5756, 5654, 5199, 6744, 8750, 5958, 1113, 7358, 5711, 6957, 1187, 1377, 8940, 5709, 10126, 10181, 8571, 504, 5011, 8419, 5258, 11619, 1994, 11, 4839, 5717, 11592, 15659, 15661, 5727, 11575, 15663, 11497, 6032, 11055, 6034, 1375, 8603, 15664, 11057, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
-// Module 5750 (MarkupReactRules)
+// Module 5755 (MarkupReactRules)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import intl4 from "intl" /* 1114 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import ChannelConstants from "ChannelConstants" /* 4865 */;
-import RootNavigationRef from "RootNavigationRef" /* 5194 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LinkUtils from "LinkUtils" /* 5649 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import transitionToChannel from "transitionToChannel" /* 5751 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8563 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10161 */;
-import SpoilerDefault from "Spoiler" /* 11036 */;
-import TimestampDefault from "Timestamp" /* 11038 */;
-import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11463 */;
-import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11539 */;
-import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15623 */;
+import intl4 from "intl" /* 1113 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LinkUtils from "LinkUtils" /* 5654 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import transitionToChannel from "transitionToChannel" /* 5756 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8571 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10181 */;
+import SpoilerDefault from "Spoiler" /* 11055 */;
+import TimestampDefault from "Timestamp" /* 11057 */;
+import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11497 */;
+import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11575 */;
+import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15664 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12;
@@ -159,14 +159,14 @@ function MarkupLink(arg0) {
     children: smartOutput(node, output, obj2)
   };
   link = styles.link;
-  const Text = node(5619).Text;
+  const Text = node(5624).Text;
   const tmp2 = closure_12;
   if (link == null) {
     link = tmp.link;
   }
   obj2 = { inLink: true };
-  smartOutput = tmp3(8563).smartOutput;
-  node(8563);
+  smartOutput = tmp3(8571).smartOutput;
+  node(8571);
   const merged = Object.assign(state);
   return tmp2(Text, obj, state.key);
 }
@@ -261,13 +261,13 @@ function MarkupMention(styles) {
           const obj2 = { guildId: null, roleId: null, channelId: null };
           ({ guildId: obj5.guildId, roleId: obj5.roleId, channelId: obj5.channelId } = node);
           const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.openLazy(asyncRequire(11583, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
+          obj4.openLazy(asyncRequire(11619, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
         }
       }
       if ("@everyone" === node.roleName) {
         if (null != node.guildId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-          const tmp13 = asyncRequire(11583, dependencyMap.paths);
+          const tmp13 = asyncRequire(11619, dependencyMap.paths);
           const obj6 = { guildId: node.guildId, roleId: obj3.castGuildIdAsEveryoneGuildRoleId(node.guildId), channelId: node.channelId };
           obj3 = SnowflakeUtilsDefault;
           openLazy(tmp13, "RoleMembersActionSheet", obj6, "stack");
@@ -384,7 +384,7 @@ function MarkupInlineCode(arg0) {
       }
     };
   }
-  obj3 = node(8563);
+  obj3 = node(8571);
   return tmp4(tmp5, obj2, state.key);
 }
 function MarkupCodeBlock(state) {
@@ -464,7 +464,7 @@ function MarkupChannelMention(state) {
   let items2;
   let str3;
   let styles;
-  let tmp8;
+  let tmp9;
   let variants;
   state = state.state;
   const node = state.node;
@@ -475,42 +475,42 @@ function MarkupChannelMention(state) {
   if (state.noStyleAndInteraction) {
     str = "text";
   }
-  const tmp3 = state;
-  const tmp4 = dependencyMap;
+  let obj = { textColor: "mention-foreground" };
+  const merged = Object.assign(state);
+  const tmp4 = state;
+  const tmp3 = closure_13;
   let str2 = variants.channelMentionText;
-  const Text = state(5619).Text;
-  const tmp2 = closure_13;
+  const Text = state(5624).Text;
   if (str2 == null) {
     str2 = "text-xs/medium";
   }
-  let obj = { variant: str2, style: tmp.channelMentionText, children: items };
+  let obj2 = { variant: str2, style: tmp.channelMentionText, children: items };
   let outputResult = null;
   if (null != node.inContent) {
-    outputResult = output(node.inContent, state);
+    outputResult = output(node.inContent, obj);
   }
   items = [outputResult, , ];
-  let tmp7Result = null;
+  let tmp8Result = null;
   if (null != node.inContent) {
-    let obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, style: size, source: tmp8(11556), size: tmp3(1188).Icon.Sizes.CUSTOM };
-    const ThemedIcon = tmp3(1188).ThemedIcon;
+    const obj3 = { themedColor: node(575).colors.MENTION_FOREGROUND, style: size, source: tmp9(11592), size: tmp4(1187).Icon.Sizes.CUSTOM };
+    const ThemedIcon = tmp4(1187).ThemedIcon;
     const fontScale = closure_4.getFontScale();
-    const tmp7 = closure_12;
-    tmp8 = node;
+    const tmp8 = closure_12;
+    tmp9 = node;
     if (fontScale < 1.25) {
       size = { width: 8, height: 8 };
     } else {
       size = fontScale < 2 ? { width: 12, height: 12 } : { width: 16, height: 16 };
     }
-    tmp7Result = tmp7(ThemedIcon, obj2);
+    tmp8Result = tmp8(ThemedIcon, obj3);
   }
-  items[1] = tmp7Result;
-  const tmp3Result = tmp3(8563);
-  items[2] = tmp3Result.smartOutput(node, output, state);
-  const tmp2Result = tmp2(Text, obj, state.key);
-  let tmp13Result = tmp2Result;
+  items[1] = tmp8Result;
+  const tmp4Result = tmp4(8571);
+  items[2] = tmp4Result.smartOutput(node, output, obj);
+  const tmp3Result = tmp3(Text, obj2, state.key);
+  let tmp14Result = tmp3Result;
   if (!state.disablePressableChannelMention) {
-    let channelMention = styles.channel;
-    const obj3 = {
+    let obj4 = {
       accessibilityRole: str,
       style: items1,
       pointerEvents: str3,
@@ -552,29 +552,30 @@ function MarkupChannelMention(state) {
           }
           return null;
         },
-      children: tmp2Result
+      children: tmp3Result
     };
-    const tmp13 = closure_12;
-    const tmp14 = closure_5;
+    let channelMention = styles.channel;
+    const tmp14 = closure_12;
+    const tmp15 = closure_5;
     if (channelMention == null) {
       channelMention = tmp.channelMention;
     }
     items1 = [channelMention, ];
-    let tmp15 = null;
+    let tmp16 = null;
     if (null != state.mentionPillOffsetY) {
-      let obj4 = { transform: items2 };
-      let obj5 = { translateY: state.mentionPillOffsetY };
-      items2 = [obj5];
-      tmp15 = obj4;
+      let obj5 = { transform: items2 };
+      items2 = [{ translateY: state.mentionPillOffsetY }];
+      tmp16 = obj5;
+      const obj6 = { translateY: state.mentionPillOffsetY };
     }
-    items1[1] = tmp15;
+    items1[1] = tmp16;
     str3 = "auto";
     if (state.noStyleAndInteraction) {
       str3 = "none";
     }
-    tmp13Result = tmp13(tmp14, obj3, state.key);
+    tmp14Result = tmp14(tmp15, obj4, state.key);
   }
-  return tmp13Result;
+  return tmp14Result;
 }
 function MarkupStaticRouteLink(state) {
   let items;
@@ -589,25 +590,25 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(15618).SignPostIcon;
+  let SignPostIcon = state(15659).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
       if (StaticChannelId.CHANNEL_BROWSER !== channelId) {
         if (StaticChannelId.CUSTOMIZE_COMMUNITY !== channelId) {
           if (StaticChannelId.LINKED_ROLES === channelId) {
-            SignPostIcon = tmp2(5722).LinkIcon;
+            SignPostIcon = tmp2(5727).LinkIcon;
           }
         }
       }
-      SignPostIcon = tmp2(15620).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15661).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
       str = "text";
     }
     let str2 = variants.channelMentionText;
-    const Text = tmp2(5619).Text;
+    const Text = tmp2(5624).Text;
     const tmp5 = closure_13;
     if (str2 == null) {
       str2 = "text-xs/medium";
@@ -625,7 +626,7 @@ function MarkupStaticRouteLink(state) {
       str3 = str4;
     }
     items = [closure_12(closure_6, obj2), ];
-    const tmp2Result = state(8563);
+    const tmp2Result = state(8571);
     items[1] = tmp2Result.smartOutput(node, output, state);
     const tmp5Result = tmp5(Text, obj, state.key);
     if (state.disablePressableChannelMention) {
@@ -674,7 +675,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15618).SignPostIcon;
+  SignPostIcon = tmp2(15659).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -694,24 +695,24 @@ function MarkupAttachmentLink(state) {
     str = "text";
   }
   let str2 = variants.channelMentionText;
-  const Text = state(5619).Text;
+  const Text = state(5624).Text;
   const tmp2 = closure_13;
   if (str2 == null) {
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15622), size: SMALL };
-  const ThemedIcon = tmp3(1188).ThemedIcon;
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15663), size: SMALL };
+  const ThemedIcon = tmp3(1187).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {
-    SMALL = tmp3(1188).Icon.Sizes.EXTRA_SMALL_10;
+    SMALL = tmp3(1187).Icon.Sizes.EXTRA_SMALL_10;
   } else if (fontScale < 1.25) {
-    SMALL = tmp3(1188).Icon.Sizes.EXTRA_SMALL;
+    SMALL = tmp3(1187).Icon.Sizes.EXTRA_SMALL;
   } else {
-    SMALL = tmp3(1188).Icon.Sizes.SMALL;
+    SMALL = tmp3(1187).Icon.Sizes.SMALL;
   }
   items = [tmp5(ThemedIcon, obj2), ];
-  const tmp3Result = state(8563);
+  const tmp3Result = state(8571);
   items[1] = tmp3Result.smartOutput(node, output, state);
   const tmp2Result = tmp2(Text, obj, state.key);
   let tmp5Result = tmp2Result;

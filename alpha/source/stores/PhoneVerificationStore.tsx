@@ -1,9 +1,9 @@
-// Module ID: 19579
-// Function ID: 19580
+// Module ID: 19636
+// Function ID: 19637
 // Name: PhoneVerificationStore
 // Dependencies: [504, 572, 2]
 
-// Module 19579 (PhoneVerificationStore)
+// Module 19636 (PhoneVerificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

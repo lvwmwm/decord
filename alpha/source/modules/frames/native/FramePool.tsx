@@ -1,23 +1,23 @@
-// Module ID: 19042
-// Function ID: 19043
+// Module ID: 19091
+// Function ID: 19092
 // Name: FramePool
-// Dependencies: [32, 19, 17, 6840, 6841, 21, 5009, 1492, 504, 12070, 11784, 11761, 10903, 19043, 2]
+// Dependencies: [32, 19, 17, 6846, 6847, 21, 5014, 1491, 504, 12108, 11822, 11798, 10928, 19092, 2]
 // Exports: default
 
-// Module 19042 (FramePool)
+// Module 19091 (FramePool)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10903 */;
-import makeIframeIdDefault from "makeIframeId" /* 11761 */;
-import WebViewContext from "WebViewContext" /* 11784 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 12070 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10928 */;
+import makeIframeIdDefault from "makeIframeId" /* 11798 */;
+import WebViewContext from "WebViewContext" /* 11822 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 12108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6840 */;
-import FramesConstants from "FramesConstants" /* 6841 */;
-import createStyles from "createStyles" /* 5009 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,13 +52,13 @@ function PooledFrame(frame) {
   const callback = react.useCallback(() => {
     closure_2(makeIframeIdDefault());
   }, []);
-  let syncExternalStore = react.useSyncExternalStore(iframeId(12070).subscribe, () => {
+  let syncExternalStore = react.useSyncExternalStore(iframeId(12108).subscribe, () => {
     const obj = FramePoolManagerDefault;
     return obj.getWinningTargetState(id);
   });
   let obj = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
   const tmp7 = jsx;
-  const tmp8 = iframeId(19043);
+  const tmp8 = iframeId(19092);
   if (syncExternalStore == null) {
     let obj2 = { layoutMode: constants.FOCUSED };
     syncExternalStore = obj2;

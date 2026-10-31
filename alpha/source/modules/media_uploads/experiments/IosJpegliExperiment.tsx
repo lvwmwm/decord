@@ -1,11 +1,11 @@
-// Module ID: 8228
-// Function ID: 8229
+// Module ID: 8236
+// Function ID: 8237
 // Name: IosJpegliExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: getIosJpegliConfig
 
-// Module 8228 (IosJpegliExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 8236 (IosJpegliExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2025-11-enhanced-jpeg-encoding-on-ios", kind: "user", defaultConfig: { useJpegliEncoder: false }, variations: { 0: { useJpegliEncoder: false }, 1: { useJpegliEncoder: true } } };

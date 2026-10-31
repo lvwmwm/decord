@@ -1,20 +1,20 @@
-// Module ID: 8692
-// Function ID: 8693
+// Module ID: 8700
+// Function ID: 8701
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8381, 1072, 11, 8194, 8693, 6065, 1283, 1993, 7629, 8694, 572, 6066, 2, 6063]
+// Dependencies: [5, 502, 8389, 1072, 11, 8202, 8701, 6070, 1282, 1992, 7636, 8702, 572, 6071, 2, 6068]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8692 (InteractionUtils)
+// Module 8700 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Server from "Server" /* 1993 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6063 */;
-import InteractionTypes from "InteractionTypes" /* 6065 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8693 */;
-import _slicedToArray from "_slicedToArray" /* 8694 */;
+import Server from "Server" /* 1992 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6068 */;
+import InteractionTypes from "InteractionTypes" /* 6070 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8701 */;
+import _slicedToArray from "_slicedToArray" /* 8702 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8381 */;
+import InteractionStore from "InteractionStore" /* 8389 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let obj = function _executeMessageComponentInteraction() {
       } else if (2 === tmp4) {
         custom_id = 0;
         application_id = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           application_id = 3;
@@ -203,7 +203,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   dispatch2(obj2);
                 }
                 let message;
-                const setFailed2 = tmp26(8693).setFailed;
+                const setFailed2 = tmp26(8701).setFailed;
                 InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
@@ -378,7 +378,7 @@ export function canRetryInteractionData(interactionData) {
           } else {
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1993).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1992).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }

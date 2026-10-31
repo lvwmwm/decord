@@ -1,21 +1,21 @@
-// Module ID: 8864
-// Function ID: 8865
+// Module ID: 8873
+// Function ID: 8874
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 5009, 575, 8865, 5075, 8825, 7201, 5712, 1114, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 8874, 5080, 8833, 7207, 5717, 1113, 2]
 // Exports: createVideoControls
 
-// Module 8864 (common/Video)
+// Module 8873 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 5075 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7201 */;
-import openMediaModal2 from "openMediaModal" /* 8825 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 5080 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7207 */;
+import openMediaModal2 from "openMediaModal" /* 8833 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_0;
@@ -31,6 +31,7 @@ class VideoComponent {
     let controls;
     let disableFocus;
     let first;
+    let httpEngine;
     let importantForAccessibility;
     let mixWithOthers;
     let onEnd;
@@ -42,6 +43,7 @@ class VideoComponent {
     let poster;
     let source;
     let style;
+    let useTextureView;
     let flag = paused.paused;
     ({ style, source, poster, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd } = paused);
     if (flag === undefined) {
@@ -72,8 +74,8 @@ class VideoComponent {
       flag4 = true;
     }
     closure_1 = undefined;
-    const httpEngine = paused.httpEngine;
-    const _default = pauseWhileAppInactive(8865).default;
+    ({ httpEngine, useTextureView } = paused);
+    const _default = pauseWhileAppInactive(8874).default;
     [first, closure_1] = react.useState("active" === currentState.currentState);
     const items = [pauseWhileAppInactive];
     const effect = react.useEffect(() => {
@@ -87,7 +89,7 @@ class VideoComponent {
         };
       }
     }, items);
-    const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
+    const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine, useTextureView };
     const tmp4 = jsx;
     if (!flag) {
       if (pauseWhileAppInactive) {

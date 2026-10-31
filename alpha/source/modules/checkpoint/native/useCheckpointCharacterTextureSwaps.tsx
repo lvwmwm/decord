@@ -1,16 +1,17 @@
-// Module ID: 13580
-// Function ID: 13581
+// Module ID: 13617
+// Function ID: 13618
 // Name: useCheckpointCharacterTextureSwaps
-// Dependencies: [5, 19, 5085, 2]
+// Dependencies: [32, 5, 19, 5090, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 13580 (useCheckpointCharacterTextureSwaps)
-import DataBindByName from "DataBindByName" /* 5085 */;
+// Module 13617 (useCheckpointCharacterTextureSwaps)
+import DataBindByName from "DataBindByName" /* 5090 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, c6, map, map1, set;
+let c0, c4, c5, c6, closure_1, map, map1, set;
 
 let obj = function _loadImage() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -44,7 +45,7 @@ obj = function _swapTextures() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -95,9 +96,9 @@ obj = function _swapTextures() {
               c6 = 1;
               let obj4 = {
                 value: Promise.all(Array.from(set, (() => {
-                            closure_0 = closure_1_2(function*(arg0, value) {
+                            closure_0 = closure_1_3(function*(arg0, value) {
                               function loadImage() {
-                                return closure_1_4(...arguments);
+                                return closure_1_5(...arguments);
                               }
                               closure_0 = arg0;
                               if (c4 === 2) {
@@ -110,7 +111,7 @@ obj = function _swapTextures() {
                                   const obj2 = { value, done: true };
                                   return obj2;
                                 } else {
-                                  return { value: "HermesInternal", done: null };
+                                  return { value: "HermesInternal", done: "HermesInternal" };
                                 }
                               } else {
                                 try {
@@ -144,7 +145,7 @@ obj = function _swapTextures() {
                                       const result = closure_1_5.set(closure_0, closure_1);
                                     }
                                     c4 = 3;
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } catch (tmp15) {
                                   c4 = 3;
@@ -189,7 +190,7 @@ obj = function _swapTextures() {
           }
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp16) {
         c6 = 3;
         throw tmp16;
@@ -201,36 +202,96 @@ obj = function _swapTextures() {
 let react = react_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointCharacterTextureSwaps.tsx");
 
-export function useCheckpointCharacterTextureSwaps(arg0, memo2, arg2) {
-  let ref;
-  let closure_0 = arg0;
-  let closure_1 = memo2;
-  let closure_2 = arg2;
+export function useCheckpointCharacterTextureSwaps(file) {
+  let closure_4;
+  file = file.file;
+  const referencedAssets = file.referencedAssets;
+  const initialReferencedAssets = file.initialReferencedAssets;
+  react = undefined;
   const useRef = react.useRef;
   map = new Map();
-  react = useRef(map);
-  const items = [arg0, arg2];
+  let closure_3 = useRef(map);
+  let tmp2 = initialReferencedAssets(react.useState(initialReferencedAssets), 2);
+  react = tmp2[1];
+  const items = [file, initialReferencedAssets];
+  const first = tmp2[0];
   const effect = react.useEffect(() => {
     map = new Map();
-    const entries = Object.entries(closure_2);
+    const entries = Object.entries(initialReferencedAssets);
     const item = entries.forEach((item) => {
       let tmp;
       [tmp, ] = item;
       return map.set(tmp, tmp2.uri);
     });
-    ref.current = map;
+    closure_3.current = map;
   }, items);
-  const items1 = [arg0, memo2];
+  const items1 = [file, referencedAssets];
   const effect1 = react.useEffect(() => {
-    function swapTextures() {
-      return closure_1_5(...arguments);
+    function swap() {
+      return closure_0(...arguments);
     }
-    if (null != closure_0) {
-      let c0 = false;
-      swapTextures(closure_0, ref.current, memo2, () => c0);
+    if (null != c0) {
+      c0 = false;
+      let closure_0 = closure_3(function*(arg0, value) {
+        function swapTextures() {
+          return closure_1_6(...arguments);
+        }
+        if (c2 === 2) {
+          c2 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp2 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "HermesInternal", done: "HermesInternal" };
+          }
+        } else {
+          try {
+            c2 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c2 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c2 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                closure_0 = tmp3;
+                c1 = 1;
+                c2 = 1;
+                const obj4 = { value: swapTextures(closure_0, ref.current, referencedAssets, () => closure_1_0), done: false };
+                return obj4;
+              }
+            } else if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              const tmp5 = closure_0;
+              if (!tmp5) {
+                closure_2_4(referencedAssets);
+              }
+              c2 = 3;
+              return { value: "HermesInternal", done: "HermesInternal" };
+            }
+          } catch (tmp12) {
+            c2 = 3;
+            throw tmp12;
+          }
+        }
+      });
+      const tmp2 = swap();
       return () => {
         c0 = true;
       };
     }
   }, items1);
+  return first === referencedAssets;
 }

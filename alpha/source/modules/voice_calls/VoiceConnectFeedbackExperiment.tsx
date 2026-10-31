@@ -1,10 +1,10 @@
-// Module ID: 18242
-// Function ID: 18243
+// Module ID: 18285
+// Function ID: 18286
 // Name: VoiceConnectFeedbackExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1448, 2]
 
-// Module 18242 (VoiceConnectFeedbackExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
+// Module 18285 (VoiceConnectFeedbackExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

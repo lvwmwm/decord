@@ -1,19 +1,19 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11959
+// Function ID: 11960
 // Name: KrispLogo
-// Dependencies: [19, 17, 1193, 1072, 21, 2062, 1253, 1114, 5704, 504, 5016, 11922, 11923, 5712, 5619, 2]
+// Dependencies: [19, 17, 1192, 1072, 21, 2061, 1252, 1113, 5709, 504, 5021, 11960, 11961, 5717, 5624, 2]
 // Exports: default
 
-// Module 11921 (KrispLogo)
+// Module 11959 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
-import intl4 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import shared from "shared" /* 5016 */;
-import LinkingDefault from "Linking" /* 5704 */;
+import intl4 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import shared from "shared" /* 5021 */;
+import LinkingDefault from "Linking" /* 5709 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,22 +62,22 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(11922);
+    tmp4Result = tmp4(11960);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(11923);
+    tmp4Result = tmp4(11961);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(5712);
-  intl = tmp(1114).intl;
+  const tmp6Result = tmp6(5717);
+  intl = tmp(1113).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
-  intl2 = tmp(1114).intl;
+  intl2 = tmp(1113).intl;
   obj6 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5619).Text;
-  intl3 = tmp(1114).intl;
+  Text = tmp(5624).Text;
+  intl3 = tmp(1113).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);
 };

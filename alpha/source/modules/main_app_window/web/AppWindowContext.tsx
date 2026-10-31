@@ -1,19 +1,19 @@
-// Module ID: 6923
-// Function ID: 6924
+// Module ID: 6929
+// Function ID: 6930
 // Name: AppWindowContext
-// Dependencies: [32, 19, 6861, 1072, 21, 1109, 6862, 2031, 6924, 2]
+// Dependencies: [32, 19, 6867, 1072, 21, 1108, 6868, 2029, 6930, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getFocusedOrLastFocusedAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 6923 (AppWindowContext)
+// Module 6929 (AppWindowContext)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import DOMUtils from "DOMUtils" /* 2031 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 6924 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import DOMUtils from "DOMUtils" /* 2029 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 6930 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WindowStore from "WindowStore" /* 6861 */;
-import WindowIdUtils_mod from "WindowIdUtils" /* 6862 */;
+import WindowStore from "WindowStore" /* 6867 */;
+import WindowIdUtils_mod from "WindowIdUtils" /* 6868 */;
 import size from "module_2" /* 2 */;
 
 let WindowIdUtils;

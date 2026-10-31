@@ -1,26 +1,20 @@
 // Module ID: 16155
 // Function ID: 16156
-// Dependencies: [16156, 16160, 16163]
+// Dependencies: [16150, 16156]
 
 // Module 16155
-import _mod16156 from "module_16156" /* 16156 */;
-import _mod16160 from "module_16160" /* 16160 */;
-import _mod16163 from "module_16163" /* 16163 */;
+import _mod16150 from "module_16150" /* 16150 */;
 
-const obj = {};
-const _URL = _mod16156.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod16156.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+let tmp;
+const _mod16156 = tmp(16156);
 
-export const parseURL = _mod16160.parseURL;
-export const basicURLParse = _mod16160.basicURLParse;
-export const serializeURL = _mod16160.serializeURL;
-export const serializeHost = _mod16160.serializeHost;
-export const serializeInteger = _mod16160.serializeInteger;
-export const serializeURLOrigin = _mod16160.serializeURLOrigin;
-export const setTheUsername = _mod16160.setTheUsername;
-export const setThePassword = _mod16160.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod16160.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod16163.percentDecode;
+export default function(arg0) {
+  if (_mod16150(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp4 = new TypeError(_mod16156(arg0) + " is not a function");
+    throw tmp4;
+  }
+};

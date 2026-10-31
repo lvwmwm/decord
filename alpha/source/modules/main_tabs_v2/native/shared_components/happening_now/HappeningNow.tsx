@@ -1,33 +1,33 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18105
+// Function ID: 18106
 // Name: HappeningNow
-// Dependencies: [32, 19, 17, 17217, 1072, 21, 7236, 5009, 575, 5298, 7125, 18063, 1253, 5588, 1499, 18064, 7320, 7345, 18071, 18072, 5090, 11208, 12, 7288, 1114, 18073, 18074, 18091, 18092, 18093, 18077, 18090, 18094, 18089, 18076, 1380, 2]
+// Dependencies: [32, 19, 17, 17274, 1072, 21, 7242, 5014, 575, 5303, 7131, 18106, 1252, 5593, 1498, 18107, 7326, 7351, 18114, 18115, 5095, 11227, 12, 7294, 1113, 18116, 18117, 18134, 18135, 18136, 18120, 18133, 18137, 18132, 18119, 1379, 2]
 
-// Module 18062 (HappeningNow)
+// Module 18105 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 11208 */;
-import happeningNowRankingUtils from "happeningNowRankingUtils" /* 18071 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 18073 */;
-import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 18074 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 18076 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18077 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18089 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18090 */;
-import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 18091 */;
-import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 18092 */;
-import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 18093 */;
-import HappeningNowActions from "HappeningNowActions" /* 18094 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 11227 */;
+import happeningNowRankingUtils from "happeningNowRankingUtils" /* 18114 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 18116 */;
+import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 18117 */;
+import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 18119 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18120 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18132 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18133 */;
+import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 18134 */;
+import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 18135 */;
+import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 18136 */;
+import HappeningNowActions from "HappeningNowActions" /* 18137 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17217 */;
-import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7236 */;
-import createStyles from "createStyles" /* 5009 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17274 */;
+import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7242 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let viewableItems;
@@ -277,7 +277,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   let tmp3 = data;
   let obj = listRef(data[14]);
   const isFocused1 = obj.useIsFocused();
-  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "Islam", isFocused: isFocused1 };
+  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "inverno", isFocused: isFocused1 };
   const tmp7 = _slicedToArray(isFocused1(data[15])(cards, obj2), 2);
   data = tmp7[0];
   const tmp6 = _slicedToArray;

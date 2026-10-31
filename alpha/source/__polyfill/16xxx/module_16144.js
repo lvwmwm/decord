@@ -1,112 +1,47 @@
 // Module ID: 16144
 // Function ID: 16145
-// Dependencies: [16108, 16083, 16145, 16099, 16146, 16128, 16106, 16139]
+// Dependencies: [16124, 16145]
 
 // Module 16144
-import _mod16083 from "module_16083" /* 16083 */;
-import _mod16099 from "module_16099" /* 16099 */;
-import _mod16108 from "module_16108" /* 16108 */;
-import _mod16128 from "module_16128" /* 16128 */;
-import _mod16139 from "module_16139" /* 16139 */;
+import _mod16124 from "module_16124" /* 16124 */;
 import _mod16145 from "module_16145" /* 16145 */;
-import _mod16146 from "module_16146" /* 16146 */;
 
-const require = globalThis.__r;
-
-let fn4;
-let fn5;
-let fn6;
-if (!_mod16145) {
-  let fn;
-  let fn2;
-  let fn3;
-  if (!_mod16099.state) {
-    let tmp = _mod16146("state");
-    let closure_6 = tmp;
-    _mod16128[tmp] = true;
-    fn = function t(facade, arg1) {
-      const tmp3 = closure_6;
-      if (require("module_16106")(facade, closure_6)) {
-        const self = this;
-        const self2 = this;
-        const typeError = new tmp(16083).TypeError("Object already initialized");
-        throw typeError;
-      } else {
-        arg1.facade = facade;
-        _mod16139(facade, tmp3, arg1);
-        return arg1;
-      }
-    };
-    fn4 = fn;
-    fn2 = function n(arg0) {
-      return require("module_16106")(arg0, closure_6) ? arg0[closure_6] : {};
-    };
-    fn5 = fn2;
-    fn3 = function u(arg0) {
-      return require("module_16106")(arg0, closure_6);
-    };
-    fn6 = fn3;
-  }
-  let obj = {
-    set: fn,
-    get: fn2,
-    has: fn3,
-    enforce(toString) {
-        let tmp2;
-        if (fn6(toString)) {
-          tmp2 = fn5(toString);
-        } else {
-          tmp2 = fn4(toString, {});
-        }
-        return tmp2;
-      },
-    getterFor(arg0) {
-        let closure_0 = arg0;
-        return (arg0) => {
-          if (_mod16108(arg0)) {
-            const tmp4 = fn5(arg0);
-            if (tmp4.type === closure_0) {
-              return tmp4;
-            }
-          }
-          const typeError = new _mod16083.TypeError("Incompatible receiver, " + closure_0 + " required");
-          throw typeError;
-        };
-      }
-  };
-  module.exports = obj;
+let tmp4;
+let tmp = _mod16124.process && _mod16124.process.versions;
+if (!tmp) {
+  tmp = _mod16124.Deno && _mod16124.Deno.version;
+  _mod16124.Deno && _mod16124.Deno.version;
 }
-let state = _mod16099.state;
-if (!state) {
-  const _module = _mod16099;
-  let self = this;
-  let self2 = this;
-  const weakMap = new _mod16083.WeakMap();
-  let tmp4 = weakMap;
-  _module.state = weakMap;
-  state = weakMap;
-}
-({ get: state.get, has: state.has, set: state.set } = state);
-fn4 = function t(facade, arg1) {
-  const obj = state;
-  if (state.has(facade)) {
-    const self = this;
-    const self2 = this;
-    const typeError = new _mod16083.TypeError("Object already initialized");
-    throw typeError;
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
   } else {
-    arg1.facade = facade;
-    const result = obj.set(facade, arg1);
-    return arg1;
+    num3 = 1;
   }
-};
-fn5 = function n(arg0) {
-  const tmp = state.get(arg0) || {};
-  return tmp;
-};
-fn6 = function u(arg0) {
-  return state.has(arg0);
-};
-fn3 = fn6;
-fn2 = fn5;
-fn = fn4;
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod16145;
+if (match1) {
+  const str3 = _mod16145;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod16145;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
+
+export default tmp3;

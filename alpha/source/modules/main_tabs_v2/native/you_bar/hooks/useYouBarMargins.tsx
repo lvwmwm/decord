@@ -1,16 +1,17 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17061
+// Function ID: 17062
 // Name: useYouBarMargins
-// Dependencies: [17004, 5196, 1626, 1377, 5591, 575, 2]
+// Dependencies: [17062, 5201, 1625, 1376, 5596, 575, 11240, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 17003 (useYouBarMargins)
+// Module 17061 (useYouBarMargins)
 import nativeDefault from "native" /* 575 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import useChatLayoutDefault from "useChatLayout" /* 5196 */;
-import useToken from "useToken" /* 5591 */;
-import YouBarConstants from "YouBarConstants" /* 17004 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import useChatLayoutDefault from "useChatLayout" /* 5201 */;
+import useToken from "useToken" /* 5596 */;
+import useVoicePanelDockHeightDefault from "useVoicePanelDockHeight" /* 11240 */;
+import YouBarConstants from "YouBarConstants" /* 17062 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -36,5 +37,6 @@ export function useYouBarHorizontalMargin() {
 export function useYouBarBottomMargin() {
   const bottom = useSafeAreaInsetsDefault().bottom;
   const obj = useToken;
-  return Math.max(obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM), bottom);
+  const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM);
+  return Math.max(token, bottom, useVoicePanelDockHeightDefault());
 }

@@ -1,19 +1,19 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14702
+// Function ID: 14703
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 14665, 575, 9487, 5009, 14666, 1114, 8983, 5184, 5619, 2]
+// Dependencies: [19, 17, 21, 14703, 575, 9509, 5014, 14704, 1113, 8992, 5189, 5624, 2]
 
-// Module 14664 (YouScreenNavIcon)
+// Module 14702 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import mergeProps from "mergeProps" /* 5184 */;
-import ClipView from "ClipView" /* 9487 */;
-import getIconSize from "getIconSize" /* 14665 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14666 */;
+import intl2 from "intl" /* 1113 */;
+import mergeProps from "mergeProps" /* 5189 */;
+import ClipView from "ClipView" /* 9509 */;
+import getIconSize from "getIconSize" /* 14703 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14704 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -80,15 +80,15 @@ const memoResult = react.memo(function YouScreenNavIcon(arg0) {
   let tmp13;
   if (showRedDot) {
     const obj6 = { text: intl.string(intl2.t.y2b7CA) };
-    intl = tmp(1114).intl;
+    intl = tmp(1113).intl;
     tmp13 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp13, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items2 };
-  const PressableScale = tmp(8983).PressableScale;
+  const PressableScale = tmp(8992).PressableScale;
   items2 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color: "text-default", maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5619).Text;
+  const Text = tmp(5624).Text;
   const tmp14 = hasOwnProperty;
   const tmp15 = React3;
   if (label == null) {

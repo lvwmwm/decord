@@ -1,11 +1,11 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 11969
+// Function ID: 11970
 // Name: VoiceActionUtils
-// Dependencies: [9202, 2]
+// Dependencies: [9221, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 11931 (VoiceActionUtils)
-import CallsUtils from "CallsUtils" /* 9202 */;
+// Module 11969 (VoiceActionUtils)
+import CallsUtils from "CallsUtils" /* 9221 */;
 import size from "module_2" /* 2 */;
 
 function NOOP() {

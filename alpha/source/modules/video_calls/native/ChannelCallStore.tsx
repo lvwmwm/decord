@@ -1,22 +1,22 @@
-// Module ID: 10981
-// Function ID: 10982
+// Module ID: 11000
+// Function ID: 11001
 // Name: ChannelCallStore
-// Dependencies: [19, 4857, 10982, 5676, 4853, 8894, 560, 1260, 5754, 12, 10983, 10984, 10985, 504, 2021, 10986, 2]
+// Dependencies: [19, 4862, 11001, 5681, 4858, 8903, 560, 1259, 5759, 12, 11002, 11003, 11004, 504, 2019, 11005, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 10981 (ChannelCallStore)
-import react_native from "react-native" /* 1260 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
-import Timers from "Timers" /* 4853 */;
-import CallConstants from "CallConstants" /* 5676 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5754 */;
-import DeviceOrientation from "DeviceOrientation" /* 8894 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10983 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 10984 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10986 */;
+// Module 11000 (ChannelCallStore)
+import react_native from "react-native" /* 1259 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
+import Timers from "Timers" /* 4858 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
+import DeviceOrientation from "DeviceOrientation" /* 8903 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11002 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 11003 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 11005 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10982 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11001 */;
 import module_560 from "module_560" /* 560 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let _require, dependencyMap, importDefault;
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f98300 = () => {
+const f98556 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
@@ -45,7 +45,7 @@ let closure_8 = freeze(obj);
 let obj3 = module_560.create(() => closure_8);
 const throttleResult = module_12.throttle(() => {
   const pipFocus = obj3.getState().pipFocus;
-  let obj = pipFocus(1260);
+  let obj = pipFocus(1259);
   obj.batchUpdates(() => {
     const obj = { pipFocus: !pipFocus };
     return obj3.setState(obj);
@@ -65,7 +65,7 @@ export function setFocus(focus) {
 }
 export function toggleFocus() {
   const focus = obj3.getState().focus;
-  let obj = focus(1260);
+  let obj = focus(1259);
   obj.batchUpdates(() => {
     const obj = { focus: !focus, pipFocus: false };
     return obj3.setState(obj);
@@ -73,13 +73,13 @@ export function toggleFocus() {
 }
 export function resetFocusTimer() {
   timeout.stop();
-  timeout.start(5000, f98300);
+  timeout.start(5000, f98556);
 }
 export function resetFocus() {
   let state;
   if (obj3.getState().focus) {
     timeout.stop();
-    timeout.start(5000, f98300);
+    timeout.start(5000, f98556);
   } else {
     let obj = react_native;
     obj.batchUpdates(() => state.setState({ focus: true }));

@@ -1,15 +1,15 @@
-// Module ID: 19277
-// Function ID: 19278
+// Module ID: 19334
+// Function ID: 19335
 // Name: useHideSelfVideo
-// Dependencies: [502, 2007, 1072, 5763, 504, 5896, 2]
+// Dependencies: [502, 2006, 1072, 5768, 504, 5915, 2]
 // Exports: default
 
-// Module 19277 (useHideSelfVideo)
+// Module 19334 (useHideSelfVideo)
 import Constants2 from "Constants" /* 1072 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5896 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import Constants from "Constants" /* 5763 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import Constants from "Constants" /* 5768 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

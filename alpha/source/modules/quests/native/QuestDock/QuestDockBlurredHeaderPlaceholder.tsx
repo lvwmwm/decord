@@ -1,16 +1,16 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17152
+// Function ID: 17153
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 6775, 17001, 21, 5009, 17002, 17095, 5090, 7235, 5712, 2]
+// Dependencies: [19, 17, 6781, 17059, 21, 5014, 17060, 17153, 5095, 7241, 5717, 2]
 
-// Module 17094 (QuestDockBlurredHeaderPlaceholder)
+// Module 17152 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import _slicedToArray from "_slicedToArray" /* 17095 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import _slicedToArray from "_slicedToArray" /* 17153 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;

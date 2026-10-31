@@ -1,19 +1,19 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 11994
+// Function ID: 11995
 // Name: LabeledActionBarButton
-// Dependencies: [19, 17, 1083, 21, 5009, 6772, 575, 6974, 5712, 1188, 2]
+// Dependencies: [19, 17, 1083, 21, 5014, 6778, 575, 6980, 5717, 1187, 2]
 // Exports: LabeledActionButton
 
-// Module 11956 (LabeledActionBarButton)
+// Module 11994 (LabeledActionBarButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
-import Pressables from "Pressables" /* 6974 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import Pressables from "Pressables" /* 6980 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp7;
-const native = tmp7(1188);
+const native = tmp7(1187);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);

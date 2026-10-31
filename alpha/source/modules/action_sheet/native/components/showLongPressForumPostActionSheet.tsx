@@ -1,12 +1,12 @@
-// Module ID: 11114
-// Function ID: 11115
+// Module ID: 11133
+// Function ID: 11134
 // Name: showLongPressForumPostActionSheet
-// Dependencies: [5253, 11115, 1995, 2]
+// Dependencies: [5258, 11134, 1994, 2]
 // Exports: default
 
-// Module 11114 (showLongPressForumPostActionSheet)
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+// Module 11133 (showLongPressForumPostActionSheet)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/showLongPressForumPostActionSheet.tsx");
@@ -18,5 +18,5 @@ export default function showLongPressForumPostActionSheet(thread, parentChannel)
   }
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { thread, parentChannel, onClose: hideActionSheet };
-  obj.openLazy(asyncRequire(11115, dependencyMap.paths), "ForumPostLongPressActionSheet", obj2);
+  obj.openLazy(asyncRequire(11134, dependencyMap.paths), "ForumPostLongPressActionSheet", obj2);
 };

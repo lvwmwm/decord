@@ -1,20 +1,20 @@
-// Module ID: 19331
-// Function ID: 19332
+// Module ID: 19388
+// Function ID: 19389
 // Name: DateOfBirthGateModal
-// Dependencies: [19, 1098, 19328, 21, 1376, 5707, 1114, 6733, 7710, 19329, 1261, 6992, 19332, 19334, 17975, 7381, 7163, 2]
+// Dependencies: [19, 1097, 19385, 21, 1375, 5712, 1113, 6739, 7717, 19386, 1260, 6998, 19389, 19391, 18018, 7387, 7169, 2]
 // Exports: default
 
-// Module 19331 (DateOfBirthGateModal)
+// Module 19388 (DateOfBirthGateModal)
 import Fragment from "Fragment" /* 21 */;
-import AgeGateConstants from "AgeGateConstants" /* 1098 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19328 */;
-import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19329 */;
+import AgeGateConstants from "AgeGateConstants" /* 1097 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19385 */;
+import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19386 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const discord_common_AnalyticsUtils = tmp(1261);
-const NavigatorHeader = tmp(6992);
+const discord_common_AnalyticsUtils = tmp(1260);
+const NavigatorHeader = tmp(6998);
 const AgeGateSource = AgeGateConstants.AgeGateSource;
 let AgeGate = ExistingUserAgeGateConstants.ExistingUserAgeGateScreens;
 const jsx = Fragment.jsx;
@@ -23,8 +23,8 @@ let result = size.fileFinishedImporting("modules/age_gate/native/components/Date
 export default function DateOfBirthGateModal(source) {
   source = source.source;
   const items = [source];
-  const Navigator = source(7163).Navigator;
-  let intl = source(1114).intl;
+  const Navigator = source(7169).Navigator;
+  let intl = source(1113).intl;
   return <Navigator screens={react.useMemo(() => {
     let tmpResult;
     let tmpResult2;
@@ -117,5 +117,5 @@ export default function DateOfBirthGateModal(source) {
     obj2[NSFWGateGuild] = obj6;
     tmpResult2 = NavigatorHeader;
     return obj2;
-  }, items)} initialRouteName={AgeGate.AgeGate} headerBackTitle={intl.string(source(1114).t["13/7kX"])} />;
+  }, items)} initialRouteName={AgeGate.AgeGate} headerBackTitle={intl.string(source(1113).t["13/7kX"])} />;
 };

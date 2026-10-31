@@ -1,24 +1,24 @@
-// Module ID: 12032
-// Function ID: 12033
+// Module ID: 12070
+// Function ID: 12071
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 4921, 4880, 4941, 6838, 7387, 1072, 21, 504, 12033, 12034, 1498, 12780, 12047, 12035, 6873, 9656, 10855, 6992, 1114, 3865, 12781, 12945, 12964, 12052, 7163, 2]
+// Dependencies: [32, 19, 4926, 4885, 4946, 6844, 7393, 1072, 21, 504, 12071, 12072, 1497, 12815, 12086, 12073, 6879, 9676, 10875, 6998, 1113, 3868, 12816, 12980, 12999, 12091, 7169, 2]
 // Exports: default
 
-// Module 12032 (ConjureStandaloneScreen)
+// Module 12070 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1072 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10855 */;
-import ConjureActivity from "ConjureActivity" /* 12033 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 12034 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12047 */;
-import selectConjureChannelDefault from "selectConjureChannel" /* 12780 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12964 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
+import ConjureActivity from "ConjureActivity" /* 12071 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 12072 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12086 */;
+import selectConjureChannelDefault from "selectConjureChannel" /* 12815 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12999 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7387 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7393 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -28,9 +28,11 @@ let closure_12;
 let map1;
 let unpackModuleId;
 function GlobalChatScene(projectId) {
+  let entryPoint;
+  let onExit;
   projectId = projectId.projectId;
   const fallbackGuildId = projectId.fallbackGuildId;
-  const onExit = projectId.onExit;
+  ({ entryPoint, onExit } = projectId);
   let obj = projectId(504);
   const items = [ConjureProjectStore];
   const items1 = [projectId, fallbackGuildId];
@@ -46,7 +48,7 @@ function GlobalChatScene(projectId) {
     }
     return result;
   }, items1);
-  return closure_11(fallbackGuildId(12034), { guildId, projectId, onExit });
+  return closure_11(fallbackGuildId(12072), { guildId, projectId, entryPoint, onExit });
 }
 function RoutedProjectOpener(guildId) {
   guildId = guildId.guildId;
@@ -76,7 +78,8 @@ function RoutedProjectOpener(guildId) {
       handledKeyRef.current = request.key;
       if (request.projectId !== sceneProjectId) {
         if (null != request.projectId) {
-          const obj = { projectId: request.projectId };
+          const obj = { projectId: null, entryPoint: null };
+          ({ projectId: obj.projectId, entryPoint: obj.entryPoint } = request);
           navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
         } else {
           const routes = navigation.getState().routes;
@@ -112,11 +115,12 @@ export default function ConjureStandaloneScreen(guildId) {
     focusRequest = null;
   }
   onClose = undefined;
-  let context;
-  let closure_6;
+  let closure_5;
   let projectId;
   let stateFromStores;
   let isConjureMobileEnabled;
+  let requestId;
+  let entryPoint;
   let memo;
   let handledKeyRef;
   let tmp2 = guildId;
@@ -129,14 +133,14 @@ export default function ConjureStandaloneScreen(guildId) {
     onClose = onClose.useCallback(() => navigation.goBack(), items);
   }
   let tmp5 = inline;
-  context = obj2.useContext(inline(tmp3[15]));
-  closure_6 = tmp7;
-  let items1 = [isConjureMobileEnabled];
+  const context = obj2.useContext(inline(tmp3[15]));
+  closure_5 = tmp7;
+  let items1 = [requestId];
   const items2 = [guildId, tmp7];
   const tmp2Result = tmp2(tmp3[9]);
   projectId = tmp2Result.useStateFromStores(items1, () => {
     let tmp;
-    if (!closure_6) {
+    if (!closure_5) {
       const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
       tmp = routedProjectId;
     }
@@ -145,7 +149,7 @@ export default function ConjureStandaloneScreen(guildId) {
   if (null != context) {
     projectId = context.projectId;
   }
-  const items3 = [closure_6];
+  const items3 = [projectId];
   const items4 = [guildId];
   const tmp2Result7 = tmp2(tmp3[9]);
   stateFromStores = tmp2Result7.useStateFromStores(items3, () => GuildStore.getGuild(guildId), items4);
@@ -153,7 +157,7 @@ export default function ConjureStandaloneScreen(guildId) {
   const isConjureGuildEnabled = tmp2Result8.useIsConjureGuildEnabled({ guildId, location: "ConjureStandaloneScreen" });
   const tmp2Result9 = tmp2(tmp3[17]);
   isConjureMobileEnabled = tmp2Result9.useIsConjureMobileEnabled(isConjureGuildEnabled, "ConjureStandaloneScreen");
-  const items5 = [context];
+  const items5 = [closure_5];
   const items6 = [guildId];
   const tmp2Result10 = tmp2(tmp3[9]);
   const stateFromStoresArray = tmp2Result10.useStateFromStoresArray(items5, () => {
@@ -167,7 +171,7 @@ export default function ConjureStandaloneScreen(guildId) {
     }
     return roles;
   }, items6);
-  const items7 = [closure_6, projectId];
+  const items7 = [projectId, stateFromStores];
   const items8 = [guildId];
   const items9 = [isConjureMobileEnabled, tmp7, guildId, stateFromStoresArray, ];
   const tmp2Result11 = tmp2(tmp3[9]);
@@ -182,7 +186,7 @@ export default function ConjureStandaloneScreen(guildId) {
       let tmp6;
       const listProjects = ConjureActionCreators.listProjects;
       ConjureActionCreators;
-      if (!closure_6) {
+      if (!closure_5) {
         tmp6 = guildId;
       }
       listProjects(tmp6);
@@ -195,27 +199,28 @@ export default function ConjureStandaloneScreen(guildId) {
       onClose();
     }
   }, items10);
-  const items11 = [tmp7, , ];
-  let requestId;
-  const useMemo = obj2.useMemo;
+  requestId = undefined;
   if (context != null) {
     requestId = context.requestId;
   }
-  items11[1] = requestId;
-  items11[2] = projectId;
-  memo = useMemo(() => {
+  entryPoint = undefined;
+  if (context != null) {
+    entryPoint = context.entryPoint;
+  }
+  const items11 = [tmp7, requestId, entryPoint, projectId];
+  memo = obj2.useMemo(() => {
     let tmp4;
-    const tmp = closure_6;
+    const tmp = closure_5;
     if (tmp) {
-      let num = context.requestId;
-      if (num == null) {
+      let num = requestId;
+      if (requestId == null) {
         num = 0;
       }
-      tmp4 = { key: num, projectId };
-      const obj2 = { key: num, projectId };
+      tmp4 = { key: num, projectId, entryPoint };
+      const obj2 = { key: num, projectId, entryPoint };
     } else if (null != projectId) {
-      tmp4 = { key: projectId, projectId };
-      const obj = { key: projectId, projectId };
+      tmp4 = { key: projectId, projectId, entryPoint: "Array" };
+      const obj = { key: projectId, projectId, entryPoint: "Array" };
     }
     return tmp4;
   }, items11);
@@ -233,21 +238,20 @@ export default function ConjureStandaloneScreen(guildId) {
       const obj = { title: intl.string(inline(focusRequest[21]).uk6jhJ) };
       const NavigatorHeader = guildId(focusRequest[19]).NavigatorHeader;
       intl = guildId(focusRequest[20]).intl;
-      return handledKeyRef(NavigatorHeader, obj);
+      return memo(NavigatorHeader, obj);
     },
     render() {
       let tmp3Result;
-      const children = [, ];
       const obj = { guildId, inline, request: memo, sceneProjectId: "Array", handledKeyRef };
-      children[0] = unpackModuleId(RoutedProjectOpener, obj);
+      const children = [unpackModuleId(RoutedProjectOpener, obj), ];
       const tmp = map1;
       const tmp2 = authStore2;
-      if (closure_6) {
+      if (closure_5) {
         const obj2 = { forMeGuildId: guildId, focusRequest };
-        tmp3Result = tmp3(tmp5(12781), obj2);
+        tmp3Result = tmp3(tmp5(12816), obj2);
       } else {
         const obj3 = { guildId };
-        tmp3Result = tmp3(tmp5(12945), obj3);
+        tmp3Result = tmp3(tmp5(12980), obj3);
       }
       children[1] = tmp3Result;
       return tmp(tmp2, { children });
@@ -263,33 +267,33 @@ export default function ConjureStandaloneScreen(guildId) {
   let obj4 = {
     ignoreKeyboard: true,
     headerShown: false,
-    render(projectId) {
+    render(arg0) {
       let tmp3Result;
-      projectId = projectId.projectId;
+      ({ projectId, entryPoint } = arg0);
       const children = [, ];
       const obj = { guildId, inline, request: memo, sceneProjectId: projectId, handledKeyRef };
       children[0] = unpackModuleId(RoutedProjectOpener, obj);
       const tmp = map1;
       const tmp2 = authStore2;
-      const tmp5 = closure_6;
+      const tmp5 = closure_5;
       if (tmp5) {
-        const obj2 = { projectId, fallbackGuildId: guildId, onExit: onClose };
+        const obj2 = { projectId, entryPoint, fallbackGuildId: guildId, onExit: onClose };
         tmp3Result = tmp3(GlobalChatScene, obj2);
       } else {
-        const obj3 = { guildId, projectId };
+        const obj3 = { guildId, projectId, entryPoint };
         tmp3Result = tmp3(ConjureChatSceneDefault, obj3);
       }
       children[1] = tmp3Result;
       return tmp(tmp2, { children });
     }
   };
-  let obj5 = {
+  const obj5 = {
     headerTitle() {
       let intl;
       const obj = { title: intl.string(inline(focusRequest[21])["Q4FN+H"]) };
       const NavigatorHeader = guildId(focusRequest[19]).NavigatorHeader;
       intl = guildId(focusRequest[20]).intl;
-      return handledKeyRef(NavigatorHeader, obj);
+      return memo(NavigatorHeader, obj);
     },
     render(projectId) {
       let items;
@@ -303,29 +307,36 @@ export default function ConjureStandaloneScreen(guildId) {
     }
   };
   const first = navigation(obj2.useState(() => {
-    let obj5;
-    const tmp = closure_6;
-    if (tmp) {
-      if (null != projectId) {
-        const obj2 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj3 };
-        const items = [obj2];
+    let tmp2 = null;
+    if (null != projectId) {
+      const obj = { projectId: tmp, entryPoint };
+      entryPoint = undefined;
+      if (memo != null) {
+        entryPoint = memo.entryPoint;
+      }
+      tmp2 = obj;
+    }
+    const tmp4 = closure_5;
+    if (tmp4) {
+      if (null != tmp2) {
+        const items = [{ name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: tmp2 }];
+        const obj2 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: tmp2 };
         return items;
       }
     }
     const items1 = [{ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS }];
     ({ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS });
-    if (null != projectId) {
+    if (null != tmp2) {
       const push = items1.push;
-      const obj4 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj5 };
-      obj5 = { projectId: tmp4 };
+      const obj4 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: tmp2 };
       push(obj4);
     }
     return items1;
   }), 1)[0];
-  const obj6 = { value: inline, children: handledKeyRef(Navigator, obj7) };
+  const obj6 = { value: inline, children: memo(Navigator, obj7) };
   const Provider = tmp2(tmp3[25]).ConjureBuilderInlineContext.Provider;
   obj7 = { screens: { [PROJECTS]: obj3, [tmp2(tmp3[14]).ConjureScreenScenes.CHAT]: obj4, [tmp2(tmp3[14]).ConjureScreenScenes.DEBUG]: obj5 }, initialRouteStack: first, headerBackTitle: intl.string(tmp5(tmp3[21]).uk6jhJ) };
   Navigator = tmp2(tmp3[26]).Navigator;
   intl = tmp2(tmp3[20]).intl;
-  return handledKeyRef(Provider, obj6);
+  return memo(Provider, obj6);
 };

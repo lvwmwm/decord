@@ -1,22 +1,22 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11497
+// Function ID: 11498
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4858, 1497, 6030, 6031, 21, 5678, 5194, 5253, 1624, 5954, 1114, 1188, 11464, 5706, 7352, 4834, 10504, 7357, 11466, 5619, 5202, 11469, 8563, 2]
+// Dependencies: [19, 4863, 1496, 6035, 6036, 21, 5683, 5199, 5258, 1623, 5959, 1113, 1187, 11498, 5711, 7358, 4839, 10524, 7363, 11500, 5624, 5207, 11503, 8571, 2]
 // Exports: default
 
-// Module 11463 (MarkupReactCommandRule)
+// Module 11497 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1624 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6030 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6031 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11469 */;
+import KeyboardTypes from "KeyboardTypes" /* 1623 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6036 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11503 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -156,7 +156,7 @@ function handleLongPressCommandMention(arg0, arg1) {
         }
     };
     const push = items.push;
-    intl2 = tmp(1114).intl;
+    intl2 = tmp(1113).intl;
     push(obj2);
   }
   const tmpResult = require("showSimpleActionSheet");
@@ -175,10 +175,10 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11466).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(11500).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5619).Text;
-  let obj2 = node(8563);
+  const Text = node(5624).Text;
+  let obj2 = node(8571);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="text-md/bold" onPress={function onPress() {
     let str;

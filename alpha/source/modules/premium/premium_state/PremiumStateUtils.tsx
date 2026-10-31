@@ -1,10 +1,10 @@
-// Module ID: 1407
-// Function ID: 1408
+// Module ID: 1406
+// Function ID: 1407
 // Name: PremiumStateUtils
 // Dependencies: [2]
 // Exports: parseServerPremiumState
 
-// Module 1407 (PremiumStateUtils)
+// Module 1406 (PremiumStateUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/premium_state/PremiumStateUtils.tsx");

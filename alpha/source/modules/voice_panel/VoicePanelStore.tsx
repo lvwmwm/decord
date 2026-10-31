@@ -1,15 +1,15 @@
-// Module ID: 6869
-// Function ID: 6870
+// Module ID: 6875
+// Function ID: 6876
 // Name: VoicePanelStore
-// Dependencies: [1255, 1260, 2]
+// Dependencies: [1254, 1259, 2]
 
-// Module 6869 (VoicePanelStore)
-import module_1255 from "module_1255" /* 1255 */;
+// Module 6875 (VoicePanelStore)
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
 
-const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let set1;
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -22,8 +22,9 @@ const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
     isAnyVoicePanelOpen() {
       return closure_1().voicePanelsOpened.size > 0;
     },
-    voicePanelsFullscreen: set1,
-    voicePanelsOpened: set2,
+    voicePanelsWithDock: set1,
+    voicePanelsFullscreen: set2,
+    voicePanelsOpened: new Set(),
     voicePanelsPIP: new Set(),
     openChannel(arg0) {
       closure_0 = arg0;
@@ -194,11 +195,37 @@ const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
           return obj;
         });
       });
+    },
+    setChannelPanelWithDock(channelId, arg1) {
+      closure_1 = arg1;
+      let obj = channelId(closure_1[1]);
+      obj.batchUpdates(() => {
+        channelId(function(voicePanelsWithDock) {
+          voicePanelsWithDock = voicePanelsWithDock.voicePanelsWithDock;
+          if (voicePanelsWithDock.has(channelId) === closure_1_1) {
+            return voicePanelsWithDock;
+          } else {
+            const _Set = Set;
+            const self = this;
+            const self2 = this;
+            set = new Set(voicePanelsWithDock.voicePanelsWithDock);
+            if (tmp2) {
+              set.add(channelId);
+            } else {
+              set.delete(channelId);
+            }
+            const obj = { voicePanelsWithDock: set };
+            const merged = Object.assign(voicePanelsWithDock);
+            return obj;
+          }
+        });
+      });
     }
   };
   set = new Set();
   set1 = new Set();
   set2 = new Set();
+  new Set();
   new Set();
   return obj;
 });

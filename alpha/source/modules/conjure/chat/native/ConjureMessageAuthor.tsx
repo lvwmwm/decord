@@ -1,23 +1,23 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12635
+// Function ID: 12636
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 5009, 575, 12587, 12601, 5619, 6974, 1114, 12598, 5063, 12602, 3865, 1188, 5712, 12605, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 12622, 12636, 5624, 6980, 1113, 12633, 5068, 12637, 3868, 1187, 5717, 12640, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
-// Module 12600 (ConjureMessageAuthor)
+// Module 12635 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12587 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 12601 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12602 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12605 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12622 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 12636 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12637 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12640 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,8 +46,8 @@ class ConjureMessageHeader {
     const tmp8 = View;
     if (null != onPressName) {
       const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
-      const PressableOpacity = tmp2(6974).PressableOpacity;
-      intl = tmp2(1114).intl;
+      const PressableOpacity = tmp2(6980).PressableOpacity;
+      intl = tmp2(1113).intl;
       obj5 = { username: name };
       tmp5Result = tmp5(PressableOpacity, obj4);
     }
@@ -55,7 +55,7 @@ class ConjureMessageHeader {
     let tmp5Result2 = null;
     if (null != describeMessageTimeResult) {
       const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
-      tmp5Result2 = tmp5(tmp2(5619).Text, obj6);
+      tmp5Result2 = tmp5(tmp2(5624).Text, obj6);
     }
     items[1] = tmp5Result2;
     return tmp7(tmp8, obj3);
@@ -78,9 +78,9 @@ export function ConjureUserHeader(arg0) {
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(12598);
+  let obj = messageAuthorUser(12633);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
-  const obj2 = messageAuthorUser(5063);
+  const obj2 = messageAuthorUser(5068);
   const name = obj2.useName(messageAuthorUser);
   [][0] = messageAuthorUser;
   let tmp4 = null;
@@ -96,7 +96,7 @@ export function ConjureUserHeader(arg0) {
 export function ConjureHeader(arg0) {
   let at;
   let intl;
-  const obj = { name: intl.string(_modDef3865.uk6jhJ), color: "text-brand", at };
+  const obj = { name: intl.string(_modDef3868.uk6jhJ), color: "text-brand", at };
   at = arg0.at;
   intl = intl2.intl;
   return hasOwnProperty(ConjureMessageHeader, obj);
@@ -109,10 +109,10 @@ export function ConjureUserAvatar(size) {
   const userId = size.userId;
   if (NORMAL === undefined) {
     const tmp = messageAuthorUser;
-    NORMAL = messageAuthorUser(1188).AvatarSizes.NORMAL;
+    NORMAL = messageAuthorUser(1187).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(12598);
+  let obj = messageAuthorUser(12633);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {
@@ -123,10 +123,10 @@ export function ConjureUserAvatar(size) {
   }, items);
   let tmp7 = null;
   if (null != messageAuthorUser) {
-    const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1114).t.iXAna6), children: closure_5(messageAuthorUser(1188).Avatar, obj3) };
-    const PressableOpacity = tmp3(6974).PressableOpacity;
-    intl = tmp3(1114).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "r" };
+    const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1113).t.iXAna6), children: closure_5(messageAuthorUser(1187).Avatar, obj3) };
+    const PressableOpacity = tmp3(6980).PressableOpacity;
+    intl = tmp3(1113).intl;
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

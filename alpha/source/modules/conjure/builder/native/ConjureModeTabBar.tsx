@@ -1,17 +1,17 @@
-// Module ID: 12536
-// Function ID: 12537
+// Module ID: 12571
+// Function ID: 12572
 // Name: ConjureModeTabBar
-// Dependencies: [19, 17, 21, 5009, 575, 5591, 5090, 5632, 1376, 8833, 1114, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5596, 5095, 5637, 1375, 8841, 1113, 5624, 2]
 // Exports: default
 
-// Module 12536 (ConjureModeTabBar)
+// Module 12571 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

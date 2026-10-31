@@ -1,22 +1,22 @@
-// Module ID: 9436
-// Function ID: 9437
+// Module ID: 9458
+// Function ID: 9459
 // Name: GameProfileShopCarousel
-// Dependencies: [19, 17, 21, 5009, 575, 9437, 9415, 9424, 9556, 9557, 9320, 7712, 7345, 1114, 7288, 9366, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9459, 9437, 9446, 9578, 9579, 9340, 7719, 7351, 1113, 7294, 9386, 2]
 // Exports: default
 
-// Module 9436 (GameProfileShopCarousel)
+// Module 9458 (GameProfileShopCarousel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7712 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
-import GameProfileSection from "GameProfileSection" /* 9415 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9424 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9437 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9556 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import GameProfileSection from "GameProfileSection" /* 9437 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9446 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9459 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9578 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -36,7 +36,7 @@ function GameProfileShopCarouselContent(trackAction) {
   trackAction = trackAction.trackAction;
   const tmp = closure_6();
   dependencyMap = tmp;
-  let obj = closeModal(9557);
+  let obj = closeModal(9579);
   const gameProfileShopCollectionProducts = obj.useGameProfileShopCollectionProducts(collectionId);
   const products = gameProfileShopCollectionProducts.products;
   let items = [trackAction, closeModal];
@@ -46,11 +46,11 @@ function GameProfileShopCarouselContent(trackAction) {
     tmp6 = null;
     if (0 !== products.length) {
       ({ container: obj2.style, header: obj2.headerStyle } = tmp);
-      trackAction(9415);
-      const intl = tmp2(1114).intl;
+      trackAction(9437);
+      const intl = tmp2(1113).intl;
       ({
         horizontal: true,
-        renderScrollComponent: trackAction(9366),
+        renderScrollComponent: trackAction(9386),
         data: products,
         renderItem(item) {
               item = item.item;
@@ -78,10 +78,10 @@ function GameProfileShopCarouselContent(trackAction) {
         ListHeaderComponent: HorizontalSpacing,
         ListFooterComponent: HorizontalSpacing,
         decelerationRate: "fast",
-        snapToInterval: closeModal(9437).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(9437).COLLECTIBLES_SHOP_CARD_GAP
+        snapToInterval: closeModal(9459).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(9459).COLLECTIBLES_SHOP_CARD_GAP
       });
-      const FlashList = tmp2(7288).FlashList;
-      tmp6 = <tmp11 style={null} headerStyle={null} title={intl.string(tmp2(1114).t["5DYPT8"])} onPressViewAll={tmp5}>{null}</tmp11>;
+      const FlashList = tmp2(7294).FlashList;
+      tmp6 = <tmp11 style={null} headerStyle={null} title={intl.string(tmp2(1113).t["5DYPT8"])} onPressViewAll={tmp5}>{null}</tmp11>;
     }
   }
   return tmp6;

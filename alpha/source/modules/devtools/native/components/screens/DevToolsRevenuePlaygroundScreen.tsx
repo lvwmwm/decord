@@ -1,37 +1,37 @@
-// Module ID: 17621
-// Function ID: 17622
+// Module ID: 17681
+// Function ID: 17682
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8537, 7794, 1232, 4858, 4912, 1384, 5622, 1386, 21, 572, 563, 1283, 5707, 6969, 6978, 7054, 7358, 7629, 1188, 575, 10591, 5009, 7620, 5253, 17622, 1995, 7363, 17629, 14413, 13144, 6738, 17630, 17633, 17654, 17656, 17659, 2]
+// Dependencies: [5, 32, 19, 17, 8545, 7801, 1231, 4863, 4917, 1383, 5627, 1385, 21, 572, 563, 1282, 5712, 6975, 6984, 7060, 7364, 7636, 1187, 575, 10611, 5014, 7627, 5258, 17682, 1994, 7369, 17689, 14451, 13179, 6744, 17690, 17693, 17698, 17700, 17703, 2]
 // Exports: default
 
-// Module 17621 (DevToolsRevenuePlaygroundScreen)
+// Module 17681 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 5622 */;
-import TableRow6 from "TableRow" /* 6969 */;
-import TableRowArrow from "TableRowArrow" /* 6978 */;
-import TableRowGroup4 from "TableRowGroup" /* 7054 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7358 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7363 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 13144 */;
-import IAPUtils from "IAPUtils" /* 14413 */;
-import DevSettingsActions from "DevSettingsActions" /* 17629 */;
+import native from "native" /* 1187 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5627 */;
+import TableRow6 from "TableRow" /* 6975 */;
+import TableRowArrow from "TableRowArrow" /* 6984 */;
+import TableRowGroup4 from "TableRowGroup" /* 7060 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7369 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 13179 */;
+import IAPUtils from "IAPUtils" /* 14451 */;
+import DevSettingsActions from "DevSettingsActions" /* 17689 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8537 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7794 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
-import UserStore from "UserStore" /* 1384 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8545 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import UserStore from "UserStore" /* 1383 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const DevSettingsStore = DevSettingsStore2;
@@ -244,7 +244,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -315,7 +315,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -351,7 +351,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -418,7 +418,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -687,10 +687,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(7620);
+  let obj = premiumTrialOffer(7627);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(7054).TableRowGroup;
-  const TableRow = premiumTrialOffer(6969).TableRow;
+  const TableRowGroup = premiumTrialOffer(7060).TableRowGroup;
+  const TableRow = premiumTrialOffer(6975).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -699,12 +699,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(17622, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(17682, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6969).TableRow;
+  const TableRow2 = tmp(6975).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -714,7 +714,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(17622, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(17682, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };

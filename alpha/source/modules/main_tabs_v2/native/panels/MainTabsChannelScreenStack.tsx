@@ -1,37 +1,37 @@
-// Module ID: 18547
-// Function ID: 18548
+// Module ID: 18590
+// Function ID: 18591
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 18548, 9792, 1072, 1083, 21, 5009, 5090, 18549, 18551, 5588, 5248, 5196, 5198, 18552, 5075, 5091, 5984, 11521, 18553, 1499, 18000, 5202, 12056, 5298, 5189, 17999, 18768, 572, 5203, 2]
+// Dependencies: [32, 19, 17, 18591, 9813, 1072, 1083, 21, 5014, 5095, 18592, 18594, 5593, 5253, 5201, 5203, 18595, 5080, 5096, 5989, 11555, 18596, 1498, 18043, 5207, 11243, 5303, 5194, 18042, 18811, 572, 5208, 2]
 
-// Module 18547 (MainTabsChannelScreenStack)
+// Module 18590 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
-import Link from "Link" /* 1499 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5091 */;
-import useChatLayoutDefault from "useChatLayout" /* 5196 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5198 */;
-import ChatInputUtils from "ChatInputUtils" /* 5202 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import useMountEffect from "useMountEffect" /* 5588 */;
-import react_native from "react-native" /* 9792 */;
-import reactDefault from "react" /* 11521 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 12056 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17999 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18000 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18548 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18549 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18551 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18552 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18553 */;
+import Link from "Link" /* 1498 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5096 */;
+import useChatLayoutDefault from "useChatLayout" /* 5201 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5203 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import useMountEffect from "useMountEffect" /* 5593 */;
+import react_native from "react-native" /* 9813 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11243 */;
+import reactDefault from "react" /* 11555 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18042 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18043 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18591 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18592 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18594 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18595 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18596 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const MainTabsNavigatorPanelContextDefault = MainTabsNavigatorPanelContext;
@@ -46,7 +46,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const react2 = tmp4(5984);
+const react2 = tmp4(5989);
 function EnabledChannelScreenNavigationTTIVisibility(children) {
   let alwaysVisible;
   let highestFullyRenderedScreenIndex;
@@ -74,7 +74,7 @@ function EnabledChannelScreenNavigationTTIVisibility(children) {
   let closure_6 = tmp3;
   const first = tmp[0];
   let obj = translateX(highestFullyRenderedScreenIndex[9]);
-  const fn = function b() {
+  const fn = function x() {
     let tmp = isStackVisible && highestFullyRenderedScreenIndex.get() <= index;
     if (tmp) {
       tmp = alwaysVisible || translateX.get() < maxWidth;
@@ -127,8 +127,9 @@ const __initData = { code: "function MainTabsChannelScreenStackTsx1(){const{isSt
 const __initData2 = { code: "function MainTabsChannelScreenStackTsx2(visible,wasVisible){const{runOnJS,setIsVisible}=this.__closure;if(visible===wasVisible)return;runOnJS(setIsVisible)(visible);}" };
 const __initData3 = { code: "function MainTabsChannelScreenStackTsx3(){const{translateX}=this.__closure;return translateX.get()>0;}" };
 const __initData4 = { code: "function MainTabsChannelScreenStackTsx4(isVisibleBeneath,wasVisibleBeneath){const{highestFullyRenderedScreenIndex,index}=this.__closure;if(isVisibleBeneath===wasVisibleBeneath)return;if(isVisibleBeneath){if(highestFullyRenderedScreenIndex.get()>=index){highestFullyRenderedScreenIndex.set(index-1);}return;}if(highestFullyRenderedScreenIndex.get()<index){highestFullyRenderedScreenIndex.set(index);}}" };
-const __initData5 = { code: "function MainTabsChannelScreenStackTsx5(){const{enabled,highestFullyRenderedScreenIndex,index}=this.__closure;return enabled&&highestFullyRenderedScreenIndex.get()>index;}" };
-let closure_23 = react.memo(function FirstChannelScreen(isActive) {
+let closure_22 = { code: "function MainTabsChannelScreenStackTsx5(){const{highestFullyRenderedScreenIndex,index}=this.__closure;if(highestFullyRenderedScreenIndex.get()>=index){highestFullyRenderedScreenIndex.set(index-1);}}" };
+const __initData5 = { code: "function MainTabsChannelScreenStackTsx6(){const{enabled,highestFullyRenderedScreenIndex,index}=this.__closure;return enabled&&highestFullyRenderedScreenIndex.get()>index;}" };
+let closure_24 = react.memo(function FirstChannelScreen(isActive) {
   let channelId;
   let containerWidth;
   let focusChatPressableComponent;
@@ -189,17 +190,25 @@ let closure_23 = react.memo(function FirstChannelScreen(isActive) {
   const animatedReaction = obj2.useAnimatedReaction(fn, fn2);
   const obj3 = useMountEffect;
   const unmountEffect = obj3.useUnmountEffect(() => {
-    const obj = highestFullyRenderedScreenIndex;
-    if (highestFullyRenderedScreenIndex.get() >= index) {
-      const result = obj.set(tmp - 1);
-    }
+    let obj = ReanimatedRexport;
+    const fn = function s() {
+      const obj = highestFullyRenderedScreenIndex;
+      if (highestFullyRenderedScreenIndex.get() >= index) {
+        const result = obj.set(tmp - 1);
+      }
+    };
+    const obj2 = { highestFullyRenderedScreenIndex, index };
+    fn.__closure = obj2;
+    fn.__workletHash = 11847226911887;
+    fn.__initData = __initData;
+    const tmp = obj.runOnUI(fn)();
   });
   const fn3 = function u() {
     const tmp = enabled && highestFullyRenderedScreenIndex.get() > index;
     return tmp;
   };
   fn3.__closure = { enabled, highestFullyRenderedScreenIndex, index };
-  fn3.__workletHash = 13408221386604;
+  fn3.__workletHash = 11791905471087;
   fn3.__initData = __initData5;
   const obj4 = ReanimatedRexport;
   const derivedValue = obj4.useDerivedValue(fn3);
@@ -260,9 +269,9 @@ let closure_23 = react.memo(function FirstChannelScreen(isActive) {
   items2 = [closure_13(Freeze, obj8), focusChatPressableComponent];
   return tmp10(tmp11, obj7);
 });
-const __initData6 = { code: "function MainTabsChannelScreenStackTsx6(){const{translateX}=this.__closure;return translateX.get()===0;}" };
-const __initData7 = { code: "function MainTabsChannelScreenStackTsx7(isFullyOpen,prev){const{index,mainTabsDisallowGesture}=this.__closure;if(isFullyOpen===prev)return;if(index!==1)return;mainTabsDisallowGesture.set(isFullyOpen);}" };
-let closure_26 = react.memo(function ChannelScreen(cleanup) {
+const __initData6 = { code: "function MainTabsChannelScreenStackTsx7(){const{translateX}=this.__closure;return translateX.get()===0;}" };
+const __initData7 = { code: "function MainTabsChannelScreenStackTsx8(isFullyOpen,prev){const{index,mainTabsDisallowGesture}=this.__closure;if(isFullyOpen===prev)return;if(index!==1)return;mainTabsDisallowGesture.set(isFullyOpen);}" };
+let closure_27 = react.memo(function ChannelScreen(cleanup) {
   let Freeze;
   let Provider;
   let channelId;
@@ -291,8 +300,6 @@ let closure_26 = react.memo(function ChannelScreen(cleanup) {
   const index = cleanup.index;
   const highestFullyRenderedScreenIndex = cleanup.highestFullyRenderedScreenIndex;
   translateX = undefined;
-  let obj8;
-  ThemeTypes = undefined;
   ({ isNavigationTTIStackVisible, freeze, parentFreezeValue } = cleanup);
   let tmp = dependencyMap;
   let tmp2 = useThemeDefault();
@@ -313,7 +320,7 @@ let closure_26 = react.memo(function ChannelScreen(cleanup) {
       }
     }
   }, items);
-  const obj2 = { canDrag: transitionState !== native.TransitionStates.YEETED, onVisibilityChange: callback, onDragStart: ChatInputUtils.dismissKeyboard, startShown: false };
+  let obj2 = { canDrag: transitionState !== native.TransitionStates.YEETED, onVisibilityChange: callback, onDragStart: ChatInputUtils.dismissKeyboard, startShown: false };
   const tmp7 = useMainTabsPanelsGestureDefault;
   const tmp7Result = tmp7(obj2);
   ({ isDragging, translateX } = tmp7Result);
@@ -321,7 +328,7 @@ let closure_26 = react.memo(function ChannelScreen(cleanup) {
   ({ gesture, panelGestureContext, movePanel } = tmp7Result);
   const obj3 = HideCoveredChannelsExperimentDefault;
   const enabled = obj3.useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
-  const fn = function c() {
+  let fn = function c() {
     return translateX.get() > 0;
   };
   fn.__closure = { translateX };
@@ -346,41 +353,47 @@ let closure_26 = react.memo(function ChannelScreen(cleanup) {
   const animatedReaction = obj4.useAnimatedReaction(fn, fn2);
   const obj5 = useMountEffect;
   const unmountEffect = obj5.useUnmountEffect(() => {
-    const obj = highestFullyRenderedScreenIndex;
-    if (highestFullyRenderedScreenIndex.get() >= index) {
-      const result = obj.set(tmp - 1);
-    }
+    let obj = ReanimatedRexport;
+    const fn = function s() {
+      const obj = highestFullyRenderedScreenIndex;
+      if (highestFullyRenderedScreenIndex.get() >= index) {
+        const result = obj.set(tmp - 1);
+      }
+    };
+    const obj2 = { highestFullyRenderedScreenIndex, index };
+    fn.__closure = obj2;
+    fn.__workletHash = 11847226911887;
+    fn.__initData = __initData;
+    const tmp = obj.runOnUI(fn)();
   });
   const fn3 = function u() {
     const tmp = enabled && highestFullyRenderedScreenIndex.get() > index;
     return tmp;
   };
   fn3.__closure = { enabled, highestFullyRenderedScreenIndex, index };
-  fn3.__workletHash = 13408221386604;
+  fn3.__workletHash = 11791905471087;
   fn3.__initData = __initData5;
   const obj6 = ReanimatedRexport;
   const derivedValue = obj6.useDerivedValue(fn3);
   const disallowGesture = cleanup.useContext(MainTabsNavigatorPanelContextDefault).disallowGesture;
-  const obj7 = ReanimatedRexport;
-  class I {
-    constructor() {
-      return 0 === translateX.get();
-    }
-  }
-  I.__closure = { translateX };
-  I.__workletHash = 16117851266396;
-  I.__initData = __initData6;
-  const fn4 = function _(arg0, arg1) {
+  const fn4 = function f() {
+    return 0 === translateX.get();
+  };
+  fn4.__closure = { translateX };
+  fn4.__workletHash = 17441641638237;
+  fn4.__initData = __initData6;
+  const fn5 = function y(arg0, arg1) {
     const tmp = arg0 !== arg1 && 1 === index;
     if (tmp) {
       const result = disallowGesture.set(arg0);
     }
   };
-  fn4.__closure = { index, mainTabsDisallowGesture: disallowGesture };
-  fn4.__workletHash = 959541115719;
-  fn4.__initData = __initData7;
-  const animatedReaction1 = obj7.useAnimatedReaction(I, fn4);
-  obj8 = { cleanup, movePanel };
+  fn5.__closure = { index, mainTabsDisallowGesture: disallowGesture };
+  fn5.__workletHash = 11784411260232;
+  fn5.__initData = __initData7;
+  const obj7 = ReanimatedRexport;
+  const animatedReaction1 = obj7.useAnimatedReaction(fn4, fn5);
+  const obj8 = { cleanup, movePanel };
   ThemeTypes = cleanup.useRef(obj8);
   const effect = cleanup.useEffect(() => {
     ref2.current = obj8;
@@ -435,8 +448,8 @@ let closure_26 = react.memo(function ChannelScreen(cleanup) {
   Freeze = react2.Freeze;
   return closure_13(GestureDetector, obj10);
 });
-const __initData8 = { code: "function MainTabsChannelScreenStackTsx8(){const{translateX,maxWidth}=this.__closure;return translateX.get()===maxWidth;}" };
-const __initData9 = { code: "function MainTabsChannelScreenStackTsx9(value,prev){const{runOnJS,setIsHidden}=this.__closure;if(value===prev)return;runOnJS(setIsHidden)(value);}" };
+const __initData8 = { code: "function MainTabsChannelScreenStackTsx9(){const{translateX,maxWidth}=this.__closure;return translateX.get()===maxWidth;}" };
+const __initData9 = { code: "function MainTabsChannelScreenStackTsx10(value,prev){const{runOnJS,setIsHidden}=this.__closure;if(value===prev)return;runOnJS(setIsHidden)(value);}" };
 const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
   let ThemeContextProvider;
   let focusChatPressableComponent;
@@ -473,27 +486,25 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
   const tmp6 = screens;
   const first = tmp3[0];
   let obj2 = screens(screenStackVisible[9]);
-  class R {
+  class E {
     constructor() {
       return translateX.get() === maxWidth;
     }
   }
-  R.__closure = { translateX, maxWidth };
-  R.__workletHash = 8590655221454;
-  R.__initData = __initData8;
-  class E {
-    constructor(arg0, arg1) {
-      if (arg0 !== arg1) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(closure_11)(arg0);
-      }
+  E.__closure = { translateX, maxWidth };
+  E.__workletHash = 3226784062415;
+  E.__initData = __initData8;
+  const fn = function w(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(closure_11)(arg0);
     }
-  }
+  };
   let obj3 = { runOnJS: screens(screenStackVisible[9]).runOnJS, setIsHidden: tmp5 };
-  E.__closure = obj3;
-  E.__workletHash = 2291224972388;
-  E.__initData = __initData9;
-  const animatedReaction = obj2.useAnimatedReaction(R, E);
+  fn.__closure = obj3;
+  fn.__workletHash = 8317875189660;
+  fn.__initData = __initData9;
+  const animatedReaction = obj2.useAnimatedReaction(E, fn);
   const items = [screens];
   memo = translateX.useMemo(() => {
     const atResult = screens.at(-1);
@@ -563,7 +574,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
     if (0 === NumberResult) {
       const obj = { guildId: null, channelId: null, showCreateThread: showCreateThread2, focusChatPressableComponent, index: NumberResult, transitionState, cleanup, isDragging, translateX, isActive: tmp15, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp19, containerWidth: firstScreenWidth, frame: firstScreenFrame, parentFreezeValue: sharedValue, maxWidth, highestFullyRenderedScreenIndex };
       ({ guildId: obj.guildId, channelId: obj.channelId, showCreateThread: showCreateThread2 } = channelId);
-      const tmp10 = closure_23;
+      const tmp10 = closure_24;
       const tmp9 = map1;
       if (showCreateThread2 == null) {
         showCreateThread2 = false;
@@ -575,7 +586,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
       const obj3 = { guildId: null, channelId: null, showCreateThread, index: NumberResult, transitionState, parentFreezeValue: sharedValue, cleanup, isActive: NumberResult === screens.length - 1, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp5, highestFullyRenderedScreenIndex };
       ({ guildId: obj2.guildId, channelId: obj2.channelId, showCreateThread } = channelId);
       const tmp26 = map1;
-      const tmp27 = closure_26;
+      const tmp27 = closure_27;
       if (showCreateThread == null) {
         showCreateThread = false;
       }
@@ -617,7 +628,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(5196);
+          const tmp7Result = tmp7(5201);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

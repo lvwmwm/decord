@@ -1,22 +1,22 @@
-// Module ID: 19861
-// Function ID: 19862
+// Module ID: 19918
+// Function ID: 19919
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5009, 575, 5619, 1188, 9956, 1114, 7142, 19862, 5704, 19811, 5712, 17160, 5629, 7288, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5624, 1187, 9977, 1113, 7148, 19919, 5709, 19868, 5717, 17217, 5634, 7294, 2]
 // Exports: default
 
-// Module 19861 (CreatorHighlightSection)
+// Module 19918 (CreatorHighlightSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7288 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9956 */;
-import EmojiIconDefault from "EmojiIcon" /* 17160 */;
+import intl5 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9977 */;
+import EmojiIconDefault from "EmojiIcon" /* 17217 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -85,12 +85,12 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(19862)(guild_id, 3, 60);
+  const tmp6 = guild_id(19919)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(19811), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_5(guild_id(19868), {}) };
     return closure_5(View, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;
@@ -100,10 +100,10 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     ({ guildName, guildAvatarUrl } = details);
     const obj5 = { style: tmp.guildIcon, source: obj6 };
     obj6 = { uri: guildAvatarUrl };
-    items1 = [closure_5(tmp5(5712), obj5), ];
+    items1 = [closure_5(tmp5(5717), obj5), ];
     const obj7 = { style: tmp.cardHeaderContainer, children: items2 };
     const obj8 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: guildName };
-    items2 = [closure_5(tmp2(5619).Text, obj8), ];
+    items2 = [closure_5(tmp2(5624).Text, obj8), ];
     let tmp11Result = null != subscriberCount;
     if (tmp11Result) {
       const obj9 = { subscriberCount, style: tmp.serverSubscriberCount };
@@ -115,14 +115,14 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     const obj10 = { style: tmp.ownerQuote, variant: "text-md/normal", color: "text-default", children: quote };
     items3[1] = closure_5(require("Text/Text").Text, obj10);
     const obj11 = { style: tmp.ownerUsername, variant: "text-sm/normal", color: "text-default", lineClamp: 1, lineBreakMode: "tail", children: format(m0b6Kj, obj12) };
-    const Text = tmp2(5619).Text;
-    const intl = tmp2(1114).intl;
+    const Text = tmp2(5624).Text;
+    const intl = tmp2(1113).intl;
     format = intl.format;
     obj12 = { attributionName: quote_attribution, attributionTitle: quote_attribution_title };
-    m0b6Kj = tmp2(1114).t.m0b6Kj;
+    m0b6Kj = tmp2(1113).t.m0b6Kj;
     if (quote_attribution_title == null) {
-      const intl2 = tmp2(1114).intl;
-      quote_attribution_title = intl2.string(tmp2(1114).t.pclUFJ);
+      const intl2 = tmp2(1113).intl;
+      quote_attribution_title = intl2.string(tmp2(1113).t.pclUFJ);
     }
     items3[2] = closure_5(Text, obj11);
     let tmp9Result = null != emojisToShow && emojisToShow.length > 0;
@@ -130,8 +130,8 @@ function CreatorGuildCard(highlightedCreatorGuild) {
       const obj13 = { style: tmp.emojiSectionContainer, children: items5 };
       const obj14 = { style: items4, variant: typeConsolidationEyebrow.variant, color: "text-default", children: intl3.string(require("intl").t.wg53L8) };
       items4 = [tmp.premiumEmojisTitle, typeConsolidationEyebrow.style];
-      const Text2 = tmp2(5619).Text;
-      intl3 = tmp2(1114).intl;
+      const Text2 = tmp2(5624).Text;
+      intl3 = tmp2(1113).intl;
       items5 = [closure_5(Text2, obj14), ];
       const obj15 = { style: items6, children: items7 };
       items6 = [, ];
@@ -150,7 +150,7 @@ function CreatorGuildCard(highlightedCreatorGuild) {
       if (tmp11Result2) {
         const _HermesInternal = HermesInternal;
         const obj16 = { style: tmp.emojiListItem, variant: "text-sm/semibold", color: "text-default", children: "+" + notShownEmojiCount };
-        const Text3 = tmp2(5619).Text;
+        const Text3 = tmp2(5624).Text;
         tmp11Result2 = tmp11(Text3, obj16);
       }
       items7[1] = tmp11Result2;
@@ -161,8 +161,8 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     const obj17 = { style: tmp.viewServerButtonContainer, children: closure_5(View, obj18) };
     obj18 = { style: tmp.viewServerButton, children: closure_5(Button, obj19) };
     obj19 = { variant: "secondary", text: intl4.string(require("intl").t.mQ2IGa), onPress: tmp7, grow: true };
-    Button = tmp2(5629).Button;
-    intl4 = tmp2(1114).intl;
+    Button = tmp2(5634).Button;
+    intl4 = tmp2(1113).intl;
     items3[4] = closure_5(View, obj17);
     return closure_6(View, obj3);
   } else {

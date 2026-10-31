@@ -1,18 +1,18 @@
-// Module ID: 19014
-// Function ID: 19015
+// Module ID: 19063
+// Function ID: 19064
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11501, 12771, 21, 5009, 575, 12036, 5090, 12776, 19015, 5632, 1114, 18950, 15620, 2]
+// Dependencies: [19, 17, 11535, 12806, 21, 5014, 575, 12074, 5095, 12811, 19064, 5637, 1113, 18999, 15661, 2]
 
-// Module 19014 (LaunchPadPullTab)
+// Module 19063 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import ChatInputConstants from "ChatInputConstants" /* 12771 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import ChatInputConstants from "ChatInputConstants" /* 12806 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11501 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11535 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let hitSlop;

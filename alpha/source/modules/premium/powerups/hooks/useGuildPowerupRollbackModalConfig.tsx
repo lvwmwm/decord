@@ -1,17 +1,17 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14071
+// Function ID: 14072
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 4880, 5224, 14024, 4842, 1114, 2569, 504, 14037, 5228, 14025, 2]
+// Dependencies: [19, 4885, 5229, 14059, 4847, 1113, 2570, 504, 14072, 5233, 14060, 2]
 // Exports: default
 
-// Module 14036 (useGuildPowerupRollbackModalConfig)
-import intl3 from "intl" /* 1114 */;
-import _modDef2569 from "module_2569" /* 2569 */;
-import dismissible_content from "dismissible_content" /* 4842 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14024 */;
+// Module 14071 (useGuildPowerupRollbackModalConfig)
+import intl3 from "intl" /* 1113 */;
+import _modDef2570 from "module_2570" /* 2570 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14059 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5224 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5229 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ function getGuildThemeRollbackModalConfig(storeRemovalDate) {
   if (null != storeRemovalDate) {
     if (null != storeRemovalDate) {
       const tmp3 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_MODAL, header: "" + title + " " + intl.formatToPlainString(_modDef2569["6e2ry1"], obj2), bodies: items, hasCancelButton: false };
+      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_MODAL, header: "" + title + " " + intl.formatToPlainString(_modDef2570["6e2ry1"], obj2), bodies: items, hasCancelButton: false };
       title = storeRemovalDate.title;
       intl = intl3.intl;
       const _HermesInternal = HermesInternal;
@@ -36,7 +36,7 @@ function getGuildThemeRollbackModalConfig(storeRemovalDate) {
       const intl2 = intl3.intl;
       const obj5 = { startDate: tmp3, endDate: tmp3, perkName: null, boostCount: null };
       ({ title: obj3.perkName, cost: obj3.boostCount } = storeRemovalDate);
-      items = [intl2.formatToPlainString(_modDef2569.jd8fki, obj5)];
+      items = [intl2.formatToPlainString(_modDef2570.jd8fki, obj5)];
       return obj;
     }
   }

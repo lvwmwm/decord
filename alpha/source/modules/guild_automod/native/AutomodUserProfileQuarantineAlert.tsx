@@ -1,30 +1,30 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13284
+// Function ID: 13285
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 4921, 4880, 13242, 1072, 4927, 21, 5009, 575, 6025, 1114, 1188, 13250, 5619, 13251, 7557, 563, 4947, 5588, 1253, 2]
+// Dependencies: [32, 109, 19, 17, 502, 4926, 4885, 13277, 1072, 4932, 21, 5014, 575, 6030, 1113, 1187, 13285, 5624, 13286, 7563, 563, 4952, 5593, 1252, 2]
 // Exports: default
 
-// Module 13249 (AutomodUserProfileQuarantineAlert)
+// Module 13284 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4927 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4947 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import AlertDefault from "Alert" /* 6025 */;
-import openUserSettings from "openUserSettings" /* 7557 */;
-import Constants2 from "Constants" /* 13242 */;
+import intl6 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4952 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AlertDefault from "Alert" /* 6030 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
+import Constants2 from "Constants" /* 13277 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_14;
@@ -33,7 +33,7 @@ let closure_17;
 let map1;
 let size;
 let tmp4;
-const AssetRegistryDefault = tmp4(13250);
+const AssetRegistryDefault = tmp4(13285);
 function ChatBlockedAlert(arg0) {
   let buttonCta;
   let description;
@@ -56,7 +56,7 @@ function ChatBlockedAlert(arg0) {
   }
   obj2 = { style: tmp2.body, children: items };
   const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
-  const Icon = tmp8(1188).Icon;
+  const Icon = tmp8(1187).Icon;
   items = [authStore4(Icon, obj3), , ];
   const obj4 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title };
   items[1] = authStore4(Text_Text.Text, obj4);
@@ -85,23 +85,23 @@ function PerServerProfileAlert(arg0) {
     const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(13251);
+  const tmp2Result = tmp2(13286);
   [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
   _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
-    const intl3 = tmp2(1114).intl;
-    stringResult = intl3.string(tmp2(1114).t.FFj5Dt);
+    const intl3 = tmp2(1113).intl;
+    stringResult = intl3.string(tmp2(1113).t.FFj5Dt);
   }
-  const intl4 = tmp2(1114).intl;
+  const intl4 = tmp2(1113).intl;
   const string = intl4.string;
-  const t = tmp2(1114).t;
+  const t = tmp2(1113).t;
   if (tmp8) {
     stringResult1 = string(t["/PGQf0"]);
   } else {
     stringResult1 = string(t.WikgZ1);
   }
   const obj = {
-    title: intl5.format(tmp2(1114).t.kcYdTq, { guildName }),
+    title: intl5.format(tmp2(1113).t.kcYdTq, { guildName }),
     description: stringResult,
     buttonCta: stringResult1,
     onConfirm: function handleConfirm() {
@@ -109,7 +109,7 @@ function PerServerProfileAlert(arg0) {
     }
   };
   const merged = Object.assign(tmp);
-  intl5 = tmp2(1114).intl;
+  intl5 = tmp2(1113).intl;
   return authStore4(ChatBlockedAlert, obj);
 }
 function ServerTagAlert(guildName) {
@@ -178,7 +178,7 @@ export default function AutomodUserProfileQuarantineAlert(guildId) {
       return obj2.getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(5588)(() => {
+  stateFromStores(5593)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(map1.OPEN_MODAL, obj2);

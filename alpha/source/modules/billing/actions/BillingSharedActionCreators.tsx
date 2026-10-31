@@ -1,18 +1,18 @@
-// Module ID: 6530
-// Function ID: 6531
+// Module ID: 6536
+// Function ID: 6537
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2051, 6531, 1072, 1283, 4829, 572, 1114, 1253, 6440, 4822, 6532, 2]
+// Dependencies: [5, 2050, 6537, 1072, 1282, 4834, 572, 1113, 1252, 6446, 4827, 6538, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6530 (BillingSharedActionCreators)
+// Module 6536 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl2 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6440 */;
-import Constants2 from "Constants" /* 6531 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6446 */;
+import Constants2 from "Constants" /* 6537 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2051 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2050 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _validatePaymentSourceBillingAddress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _createPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c8;
@@ -341,7 +341,7 @@ export function dispatchConfirmationError(error, captureException) {
     let billingError1 = message;
     if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp6 = message;
-      const BillingError = tmp3(6440).BillingError;
+      const BillingError = tmp3(6446).BillingError;
       if (typeof message === "string") {
         tmp6 = defaultErrorMessage;
       }
@@ -375,7 +375,7 @@ export function dispatchConfirmationError(error, captureException) {
     obj9 = {};
     const merged2 = Object.assign(tmp8);
     const merged3 = Object.assign(prop.extra);
-    const tmp11Result = tmp11(4822);
+    const tmp11Result = tmp11(4827);
     const result = tmp11Result.captureBillingException(_Error21, obj8);
   }
   return _Error21;

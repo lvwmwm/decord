@@ -1,26 +1,22 @@
-// Module ID: 2019
-// Function ID: 2020
+// Module ID: 2018
+// Function ID: 2019
 // Name: Constants
-// Dependencies: [1072, 2020, 1993, 2021, 2022, 2, 2023]
+// Dependencies: [1072, 1992, 2019, 2020, 2, 2021]
 // Exports: getAppIntentScheme
 
-// Module 2019 (Constants)
-import Constants2 from "Constants" /* 1072 */;
-import Server from "Server" /* 1993 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
-import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2022 */;
-import ActivityApplications from "ActivityApplications" /* 2023 */;
-import Constants from "Constants" /* 2020 */;
+// Module 2018 (Constants)
+import Constants from "Constants" /* 1072 */;
+import Server from "Server" /* 1992 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
+import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2020 */;
+import ActivityApplications from "ActivityApplications" /* 2021 */;
 import size from "module_2" /* 2 */;
 
-let ActivityIntent;
-let ActivityLayoutMode;
 let items3;
-const ChannelTypes = Constants2.ChannelTypes;
+const ChannelTypes = Constants.ChannelTypes;
 const items = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"];
 const items1 = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
-({ ActivityIntent, ActivityLayoutMode } = Constants);
 const set = new Set(items2);
 const obj = { label_type: Server.EmbeddedActivityLabelTypes.NONE, release_phase: "", label_from: null, label_until: null, omit_badge_from_surfaces: [] };
 const obj2 = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED, tablet_default_orientation_lock_state: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED, supported_platforms: items3, client_platform_config: { [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.WEB]: obj, [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.IOS]: obj, [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.ANDROID]: obj }, has_csp_exception: false, displays_advertisements: false, blocked_locales: [], supported_locales: [] };
@@ -85,8 +81,6 @@ export const EXCLUDE_FULL_SCREEN_APPS = items;
 export const SHARE_INTERACTION_APPS = items1;
 export const ActivityFeedbackReasons = { ADS: "ADS", FAILED_LOAD: "FAILED_LOAD", LAGGING: "LAGGING", CONFUSING: "CONFUSING", NOT_FUN: "NOT_FUN", OTHER: "OTHER" };
 export const ActivityTooltipName = { BETRAYAL_MARKETING_TOOLTIP: "BETRAYAL_MARKETING_TOOLTIP", FISHINGTON_MARKETING_TOOLTIP: "FISHINGTON_MARKETING_TOOLTIP", POKER_MARKETING_TOOLTIP: "POKER_MARKETING_TOOLTIP", YOUTUBE_MARKETING_TOOLTIP: "YOUTUBE_MARKETING_TOOLTIP" };
-export { ActivityIntent };
-export { ActivityLayoutMode };
 export const APPLICATIONS_WITH_ALLOWED_POPUPS = set;
 export const ActivityScreenOrientation = { UNHANDLED: -1, [-1]: "UNHANDLED", PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
 export const DEFAULT_EMBEDDED_ACTIVITY_CONFIG = obj2;

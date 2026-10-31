@@ -1,15 +1,15 @@
-// Module ID: 7824
-// Function ID: 7825
+// Module ID: 7831
+// Function ID: 7832
 // Name: SlowmodeUtils
-// Dependencies: [4941, 1072, 504, 1114, 1090, 2044, 2]
+// Dependencies: [4946, 1072, 504, 1113, 1089, 2042, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 7824 (SlowmodeUtils)
+// Module 7831 (SlowmodeUtils)
 import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import intl4 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl4 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
     const intl2 = intl4.intl;
     return intl2.string(intl4.t["8+NidX"]);
   } else if (stateFromStores >= DurationsDefault.Millis.HOUR) {
-    const tmp3Result = _modDef2044;
+    const tmp3Result = _modDef2042;
     const time2 = tmp3Result.duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + time2.minutes();
@@ -47,7 +47,7 @@ export function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
     const padStartResult1 = combined1.padStart(2, "0");
     return "" + time2.hours() + ":" + padStartResult + ":" + padStartResult1;
   } else if (stateFromStores > 0) {
-    const tmp3Result2 = _modDef2044;
+    const tmp3Result2 = _modDef2042;
     const time = tmp3Result2.duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + time.seconds();
@@ -66,12 +66,12 @@ export function getSlowmodeDescription(rateLimitPerUser) {
   }
   if (rateLimitPerUser >= DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded = Math.floor(rateLimitPerUser / tmp(1090).Seconds.HOUR);
+    const rounded = Math.floor(rateLimitPerUser / tmp(1089).Seconds.HOUR);
     const _Math3 = Math;
-    const diff = rateLimitPerUser - rounded * tmp(1090).Seconds.HOUR;
+    const diff = rateLimitPerUser - rounded * tmp(1089).Seconds.HOUR;
     const floorResult = floor(diff / DurationsDefault.Seconds.MINUTE);
-    const diff1 = rateLimitPerUser - rounded * tmp(1090).Seconds.HOUR;
-    const diff2 = diff1 - floorResult * tmp(1090).Seconds.MINUTE;
+    const diff1 = rateLimitPerUser - rounded * tmp(1089).Seconds.HOUR;
+    const diff2 = diff1 - floorResult * tmp(1089).Seconds.MINUTE;
     const intl3 = intl4.intl;
     const formatToPlainString3 = intl3.formatToPlainString;
     const t3 = intl4.t;

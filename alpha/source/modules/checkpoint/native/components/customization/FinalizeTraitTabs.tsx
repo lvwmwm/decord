@@ -1,22 +1,22 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13674
+// Function ID: 13675
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6061, 21, 6429, 5253, 13640, 1995, 5009, 575, 1376, 1114, 13627, 5619, 5591, 13641, 3091, 11377, 2]
+// Dependencies: [19, 17, 6066, 21, 6434, 5258, 13675, 1994, 5014, 575, 1375, 1113, 13662, 5624, 5596, 13676, 3092, 11413, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 13639 (FinalizeTraitTabs)
+// Module 13674 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6429 */;
-import CheckpointPressable from "CheckpointPressable" /* 13627 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13641 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
+import CheckpointPressable from "CheckpointPressable" /* 13662 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13676 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6061 */;
+import CheckpointConstants from "CheckpointConstants" /* 6066 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,9 +52,9 @@ function TraitTab(arg0) {
   let formatToPlainStringResult;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     const obj2 = { position, tabCount };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1114).t["4EsQA1"], obj2);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t["4EsQA1"], obj2);
   }
   items = [formatToPlainStringResult, accessibilityHint];
   const found = items.filter((item) => null != item);
@@ -71,7 +71,7 @@ function TraitTab(arg0) {
   const obj3 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || disabled, onPress, accessibilityRole: "tab", accessibilityHint: joined, accessibilityState: { selected: isActive, disabled }, shadowColor: hasOwnProperty, children: items3 };
   items1 = [tmp.tab, isActive && tmp.tabActive, disabled && tmp.tabDisabled];
   const obj4 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   items2 = [tmp.tabLabel, , ];
   const tmp9 = metroImportDefault;
   if (isActive) {
@@ -209,7 +209,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
         } else {
           const obj = { selectedOption: activeCustomizationOption, onSelectOption: importDefault };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13640, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(13675, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },
@@ -218,7 +218,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   const tmp15 = TraitTab;
   if (hasItem) {
     const intl = tmp2(tmp3[11]).intl;
-    stringResult = intl.string(require("module_3091")["iXpQc+"]);
+    stringResult = intl.string(require("module_3092")["iXpQc+"]);
   } else {
     const tmp2Result8 = tmp2(tmp3[4]);
     stringResult = tmp2Result8.getCustomizationOptionName(activeCustomizationOption);
@@ -228,7 +228,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   }
   if (nitroLockedMessage == null) {
     const intl2 = tmp2(tmp3[11]).intl;
-    nitroLockedMessage = intl2.string(require("module_3091")["8cGmXF"]);
+    nitroLockedMessage = intl2.string(require("module_3092")["8cGmXF"]);
   }
   items[1] = closure_7(tmp15, obj3);
   return closure_7(tmp12, obj);

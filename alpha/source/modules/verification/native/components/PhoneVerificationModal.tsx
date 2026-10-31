@@ -1,17 +1,17 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 7210
+// Function ID: 7211
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1072, 7205, 21, 6992, 7206, 7207, 6738, 1261, 7240, 7157, 7163, 1114, 2]
+// Dependencies: [5, 19, 1072, 7211, 21, 6998, 7212, 7213, 6744, 1260, 7246, 7163, 7169, 1113, 2]
 // Exports: default
 
-// Module 7204 (PhoneVerificationModal)
+// Module 7210 (PhoneVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7157 */;
-import PhoneConstants from "PhoneConstants" /* 7205 */;
-import AddPhoneDefault from "AddPhone" /* 7206 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7207 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 7240 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7163 */;
+import PhoneConstants from "PhoneConstants" /* 7211 */;
+import AddPhoneDefault from "AddPhone" /* 7212 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7213 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 7246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -153,7 +153,7 @@ export default function PhoneVerificationModal(onClose) {
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {

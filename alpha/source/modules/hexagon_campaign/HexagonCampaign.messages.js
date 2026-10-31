@@ -1,11 +1,11 @@
-// Module ID: 4282
-// Function ID: 4283
-// Dependencies: [1118, 4283, 1153, 2]
+// Module ID: 4285
+// Function ID: 4286
+// Dependencies: [1117, 4286, 1152, 2]
 
-// Module 4282
-import AssetJsonUtils from "AssetJsonUtils" /* 1118 */;
-import AssetRegistry from "AssetRegistry" /* 4283 */;
-import module_1153_mod from "module_1153" /* 1153 */;
+// Module 4285
+import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
+import AssetRegistry from "AssetRegistry" /* 4286 */;
+import module_1152_mod from "module_1152" /* 1152 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -15,10 +15,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1153 = module_1153_mod;
-const loader = module_1153.createLoader(obj, "en-US");
-module_1153 = module_1153_mod;
-const messagesProxy = module_1153.makeMessagesProxy(loader);
+let module_1152 = module_1152_mod;
+const loader = module_1152.createLoader(obj, "en-US");
+module_1152 = module_1152_mod;
+const messagesProxy = module_1152.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaign.messages.js");
 
 export default messagesProxy;

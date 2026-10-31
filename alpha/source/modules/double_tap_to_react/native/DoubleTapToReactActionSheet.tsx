@@ -1,32 +1,32 @@
-// Module ID: 13890
-// Function ID: 13891
+// Module ID: 13925
+// Function ID: 13926
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5010, 6790, 1072, 1387, 21, 5009, 1376, 575, 5090, 5249, 5588, 504, 5632, 4834, 4955, 8418, 1410, 7294, 1253, 7345, 9930, 5253, 7360, 5619, 1114, 13789, 13891, 5629, 2]
+// Dependencies: [5, 32, 19, 17, 5015, 6796, 1072, 1386, 21, 5014, 1375, 575, 5095, 5254, 5593, 504, 5637, 4839, 4960, 8426, 1409, 7300, 1252, 7351, 9951, 5258, 7366, 5624, 1113, 13824, 13926, 5634, 2]
 // Exports: default
 
-// Module 13890 (DoubleTapToReactActionSheet)
+// Module 13925 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import EmojiConstants from "EmojiConstants" /* 1387 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4955 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import spring from "spring" /* 5632 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import spring from "spring" /* 5637 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import EmojiStore from "EmojiStore" /* 6790 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c3, set, set2, set3;
+let _require, c3, set, set2, set3, set4;
 
 let closure_12;
 let num2;
@@ -40,7 +40,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8418);
+const DoubleTapToReactUtils = tmp(8426);
 function EmojiConfetti(top) {
   let bottom;
   let left;
@@ -49,15 +49,15 @@ function EmojiConfetti(top) {
   ({ bottom, left } = top);
   ({ right, leading: dependencyMap } = top);
   const children = top.emojiComponent;
-  let obj = top(5090);
+  let obj = top(5095);
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = top(5090);
+  let obj2 = top(5095);
   const sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = top(5090);
+  let obj3 = top(5095);
   const sharedValue2 = obj3.useSharedValue(0.2);
-  let obj4 = top(5090);
+  let obj4 = top(5095);
   const sharedValue3 = obj4.useSharedValue(0);
-  let obj5 = top(5588);
+  let obj5 = top(5593);
   const mountLayoutEffect = obj5.useMountLayoutEffect(() => {
     let Easing;
     let num = 0;
@@ -99,7 +99,7 @@ function EmojiConfetti(top) {
     const withTimingResult3 = obj6.withTiming(0.3 * Math.random() + 0.5, { duration: 240 });
     const obj7 = timing;
     set3(withSequence3(withTimingResult2, withTimingResult3, obj7.withTiming(0.5, { duration: 360 })));
-    const set4 = tmp4.set;
+    set4 = tmp4.set;
     const withSequence4 = ReanimatedRexport.withSequence;
     ReanimatedRexport;
     const obj8 = timing;
@@ -109,7 +109,7 @@ function EmojiConfetti(top) {
     const obj10 = timing;
     set4(withSequence4(withTimingResult4, withTimingResult5, obj10.withTiming(0, { duration: 240 })));
   });
-  let obj6 = top(5090);
+  let obj6 = top(5095);
   const fn = function f() {
     let obj4;
     let result;
@@ -142,7 +142,7 @@ function EmojiConfetti(top) {
   fn.__workletHash = 1455873119263;
   fn.__initData = __initData;
   const style = obj6.useAnimatedStyle(fn);
-  return closure_11(left(5090).View, { style, children });
+  return closure_11(left(5095).View, { style, children });
 }
 function EmojiBurstAnimation(emojiComponent) {
   let items;
@@ -364,7 +364,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -408,7 +408,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
           return obj.showDoubleTapEmojiUpdatedToast(obj2);
         }, 500);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp24) {
         c3 = 3;
         throw tmp24;

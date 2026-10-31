@@ -1,27 +1,27 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15155
+// Function ID: 15156
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5009, 575, 7142, 8806, 7771, 14925, 7767, 14908, 5619, 1114, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7148, 8814, 7778, 14963, 7774, 14946, 5624, 1113, 2]
 // Exports: default
 
-// Module 15116 (InAppReportsWidgetPreviewElement)
+// Module 15155 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7767 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7771 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8806 */;
+import intl3 from "intl" /* 1113 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7774 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7778 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8814 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp5;
-const UserProfilePersonalWidgetCardDefault = tmp5(14925);
+const UserProfilePersonalWidgetCardDefault = tmp5(14963);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
@@ -54,7 +54,7 @@ export default function WidgetPreview(arg0) {
       if (widget.games.length > 0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp6.card, tmp.card];
-        tmp7 = React3(tmp2(14908).WidgetSection, obj3);
+        tmp7 = React3(tmp2(14946).WidgetSection, obj3);
       }
     }
   }
@@ -62,7 +62,7 @@ export default function WidgetPreview(arg0) {
   if (null !== tmp7) {
     let title;
     const obj4 = { style: tmp.container, children: items3 };
-    const Text = tmp2(5619).Text;
+    const Text = tmp2(5624).Text;
     const tmp12 = hasOwnProperty;
     const tmp13 = View;
     const tmp14 = React3;
@@ -74,10 +74,10 @@ export default function WidgetPreview(arg0) {
     }
     const obj5 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
     if (null != typeConsolidationEyebrow.style) {
-      const intl2 = tmp2(1114).intl;
-      stringResult = intl2.string(tmp2(1114).t.SpsnDY);
+      const intl2 = tmp2(1113).intl;
+      stringResult = intl2.string(tmp2(1113).t.SpsnDY);
     } else {
-      const intl = tmp2(1114).intl;
+      const intl = tmp2(1113).intl;
       const str = intl.string(intl3.t.SpsnDY);
       stringResult = str.toUpperCase();
     }

@@ -1,10 +1,10 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15949
+// Function ID: 15950
 // Name: KeybindModKeys
-// Dependencies: [1376, 2]
+// Dependencies: [1375, 2]
 
-// Module 15908 (KeybindModKeys)
-import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+// Module 15949 (KeybindModKeys)
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let str;

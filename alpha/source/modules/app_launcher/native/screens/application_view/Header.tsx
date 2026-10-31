@@ -1,25 +1,25 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12320
+// Function ID: 12321
 // Name: Header
-// Dependencies: [19, 17, 1384, 12238, 1497, 1072, 21, 575, 5009, 5090, 504, 12201, 5591, 8707, 12206, 9741, 2026, 5670, 12283, 5619, 1188, 8020, 5723, 1253, 7352, 12284, 5706, 1114, 12285, 2]
+// Dependencies: [19, 17, 1383, 12276, 1496, 1072, 21, 575, 5014, 5095, 504, 12239, 5596, 8715, 12244, 9761, 2024, 5675, 12321, 5624, 1187, 8028, 5728, 1252, 7358, 12322, 5711, 1113, 12323, 2]
 // Exports: default
 
-// Module 12282 (Header)
+// Module 12320 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8707 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9741 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12284 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8715 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12322 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import AppLauncherStore from "AppLauncherStore" /* 12238 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
+import UserStore from "UserStore" /* 1383 */;
+import AppLauncherStore from "AppLauncherStore" /* 12276 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -33,11 +33,11 @@ let rect1;
 let rect2;
 let size;
 let tmp5;
-const ReanimatedRexportDefault = tmp5(5090);
-const AssetRegistryDefault = tmp5(5723);
-const EntityBorderAppIconDefault = tmp5(12206);
-const AppLauncherBackButtonDefault = tmp5(12283);
-const AppDetailsOverflowMenuDefault = tmp5(12285);
+const ReanimatedRexportDefault = tmp5(5095);
+const AssetRegistryDefault = tmp5(5728);
+const EntityBorderAppIconDefault = tmp5(12244);
+const AppLauncherBackButtonDefault = tmp5(12321);
+const AppDetailsOverflowMenuDefault = tmp5(12323);
 let View = react_native.View;
 ({ DEFAULT_CONTENT_PADDING, SCREEN_BACKGROUND_COLOR } = AppLauncherNativeConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -87,10 +87,10 @@ export default function Header(application) {
   const tmp3 = closure_11();
   let appLauncherIconSource = null;
   if (null != application) {
-    const tmpResult = application(12201);
+    const tmpResult = application(12239);
     appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
-  const tmpResult9 = application(5591);
+  const tmpResult9 = application(5596);
   let str = tmpResult9.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let tmp7 = appLauncherIconSource;
   let tmp6 = useAvatarColorDefault;
@@ -125,8 +125,8 @@ export default function Header(application) {
     obj3 = application(c2[9]);
     return obj;
   };
-  const tmpResult10 = application(5090);
-  let obj4 = { interpolate: tmp(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  const tmpResult10 = application(5095);
+  let obj4 = { interpolate: tmp(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
   fn.__closure = obj4;
   fn.__workletHash = 2572905048492;
   fn.__initData = __initData;
@@ -144,11 +144,11 @@ export default function Header(application) {
     obj3 = application(c2[9]);
     return obj;
   };
-  const tmpResult11 = application(5090);
-  fn2.__closure = { interpolate: application(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  const tmpResult11 = application(5095);
+  fn2.__closure = { interpolate: application(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
   fn2.__workletHash = 8190094903650;
   fn2.__initData = __initData2;
-  ({ interpolate: application(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  ({ interpolate: application(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
   const animatedStyle1 = tmpResult11.useAnimatedStyle(fn2);
   const fn3 = function o() {
     let items;
@@ -165,11 +165,11 @@ export default function Header(application) {
     obj4 = application(c2[9]);
     return obj;
   };
-  const tmpResult12 = application(5090);
-  fn3.__closure = { interpolate: application(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  const tmpResult12 = application(5095);
+  fn3.__closure = { interpolate: application(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
   fn3.__workletHash = 14190901941859;
   fn3.__initData = __initData3;
-  ({ interpolate: application(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  ({ interpolate: application(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
   const animatedStyle2 = tmpResult12.useAnimatedStyle(fn3);
   const fn4 = function n() {
     let items;
@@ -179,21 +179,21 @@ export default function Header(application) {
     obj2 = application(c2[9]);
     return obj;
   };
-  const tmpResult13 = application(5090);
-  fn4.__closure = { interpolate: application(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  const tmpResult13 = application(5095);
+  fn4.__closure = { interpolate: application(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
   fn4.__workletHash = 9589752719246;
   fn4.__initData = __initData4;
   let str2 = "";
-  ({ interpolate: application(5090).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  ({ interpolate: application(5095).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
   const animatedStyle3 = tmpResult13.useAnimatedStyle(fn4);
   if (null != application) {
-    const tmpResult14 = application(9741);
+    const tmpResult14 = application(9761);
     str2 = tmpResult14.getSectionName(application);
   }
   let result = null != application && "flags" in application;
   if (result) {
-    const tmpResult15 = application(2026);
-    result = tmpResult15.supportsEmbeddedSurface(application, tmp(5670).EmbeddedSurfaceType.MAIN);
+    const tmpResult15 = application(2024);
+    result = tmpResult15.supportsEmbeddedSurface(application, tmp(5675).EmbeddedSurfaceType.MAIN);
   }
   dependencyMap = result;
   id = UserStore.getCurrentUser();
@@ -210,16 +210,16 @@ export default function Header(application) {
   const obj12 = { style: items5, pointerEvents: "none" };
   items5 = [tmp3.collapsedHeaderBannerOverlay, animatedStyle3];
   items6 = [tmp13(ReanimatedRexportDefault.View, obj12), tmp13(AppLauncherBackButtonDefault, { onPress: onPressBack }), , ];
-  const obj13 = { style: animatedStyle2, pointerEvents: "none", children: tmp13(application(5619).Heading, { variant: "heading-lg/bold", color: "text-overlay-light", children: str2 }) };
+  const obj13 = { style: animatedStyle2, pointerEvents: "none", children: tmp13(application(5624).Heading, { variant: "heading-lg/bold", color: "text-overlay-light", children: str2 }) };
   const View3 = ReanimatedRexportDefault.View;
   items6[2] = tmp13(View3, obj13);
-  items6[3] = tmp13(application(1188).Spacer, { size: 32, pointerEvents: "none" });
+  items6[3] = tmp13(application(1187).Spacer, { size: 32, pointerEvents: "none" });
   items3[1] = closure_8(View2, obj11);
   let tmp21Result = null;
   const tmp22 = id;
   if (null != application) {
     tmp21Result = null;
-    const tmpResult16 = application(9741);
+    const tmpResult16 = application(9761);
     if (tmpResult16.isRealApplication(application)) {
       const obj14 = { style: tmp3.actionsWrapper, children: items7 };
       const obj15 = {
@@ -253,11 +253,11 @@ export default function Header(application) {
               const tmp4Result2 = ToastUtils;
               tmp4Result2.presentLinkCopied();
             },
-        accessibilityLabel: intl.string(application(1114).t.XWDihq),
+        accessibilityLabel: intl.string(application(1113).t.XWDihq),
         maxFontSizeMultiplier: 1.5
       };
-      const IconButton = tmp(8020).IconButton;
-      intl = tmp(1114).intl;
+      const IconButton = tmp(8028).IconButton;
+      intl = tmp(1113).intl;
       items7 = [tmp13(IconButton, obj15), ];
       const obj16 = { application, onAddAppMenuClick };
       items7[1] = tmp13(AppDetailsOverflowMenuDefault, obj16);

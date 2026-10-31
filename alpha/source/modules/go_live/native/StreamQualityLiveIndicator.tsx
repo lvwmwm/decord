@@ -1,22 +1,22 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11774
+// Function ID: 11775
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1072, 1386, 5763, 21, 5009, 575, 11663, 10028, 7320, 5090, 5249, 1188, 5923, 11738, 1253, 9884, 9885, 2048, 6974, 5712, 9994, 2]
+// Dependencies: [19, 17, 1072, 1385, 5768, 21, 5014, 575, 11700, 10049, 7326, 5095, 5254, 1187, 5942, 11775, 1252, 9905, 9906, 2047, 6980, 5717, 10015, 2]
 // Exports: default
 
-// Module 11737 (StreamQualityLiveIndicator)
+// Module 11774 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import timing from "timing" /* 5249 */;
-import Constants2 from "Constants" /* 5763 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import timing from "timing" /* 5254 */;
+import Constants2 from "Constants" /* 5768 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1187);
 let View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ PremiumTypes: metroRequire, PremiumUpsellTypes: metroImportDefault } = PremiumConstants);

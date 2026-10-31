@@ -1,17 +1,17 @@
-// Module ID: 19151
-// Function ID: 19152
+// Module ID: 19276
+// Function ID: 19277
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6837, 11204, 11202, 5676, 21, 11203, 1260, 1376, 551, 5090, 10069, 11193, 11665, 2]
+// Dependencies: [32, 19, 6843, 11223, 11221, 5681, 21, 11222, 1259, 1375, 551, 5095, 10089, 11212, 11702, 2]
 
-// Module 19151 (VoicePanelSystemUIManager)
-import react_native from "react-native" /* 1260 */;
-import CallConstants from "CallConstants" /* 5676 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10069 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
+// Module 19276 (VoicePanelSystemUIManager)
+import react_native from "react-native" /* 1259 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10089 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c10;
 let c9;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport = tmp2(5090);
+const ReanimatedRexport = tmp2(5095);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;

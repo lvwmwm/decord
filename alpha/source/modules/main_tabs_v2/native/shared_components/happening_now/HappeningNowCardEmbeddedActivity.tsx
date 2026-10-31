@@ -1,23 +1,23 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18132
+// Function ID: 18133
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1384, 17217, 1072, 21, 5009, 575, 563, 18090, 7324, 1253, 7345, 13134, 1995, 18062, 5090, 6023, 1261, 18073, 17218, 8670, 5712, 18086, 2]
+// Dependencies: [32, 19, 17, 1383, 17274, 1072, 21, 5014, 575, 563, 18133, 7330, 1252, 7351, 13169, 1994, 18105, 5095, 6028, 1260, 18116, 17275, 8678, 5717, 18129, 2]
 // Exports: default
 
-// Module 18089 (HappeningNowCardEmbeddedActivity)
+// Module 18132 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17217 */;
+import UserStore from "UserStore" /* 1383 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17274 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let user;
@@ -132,7 +132,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(13134, tmp.paths);
+    const promise = asyncRequire(13169, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);

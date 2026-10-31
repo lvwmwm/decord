@@ -1,14 +1,14 @@
-// Module ID: 17259
-// Function ID: 17260
+// Module ID: 17316
+// Function ID: 17317
 // Name: DisplayNameStylesFontOrder
-// Dependencies: [19, 1402, 5034, 1404, 5037, 2]
+// Dependencies: [19, 1401, 5039, 1403, 5042, 2]
 // Exports: useVisibleFontOrder
 
-// Module 17259 (DisplayNameStylesFontOrder)
-import DisplayNameFont from "DisplayNameFont" /* 1404 */;
+// Module 17316 (DisplayNameStylesFontOrder)
+import DisplayNameFont from "DisplayNameFont" /* 1403 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1402 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
 import size from "module_2" /* 2 */;
 
 let FLYWHEEL_FONTS;
@@ -31,7 +31,7 @@ export function useVisibleFontOrder(arg0) {
     flag = false;
   }
   flag = undefined;
-  flag(5037);
+  flag(5042);
   if (flag) {
     let tmp3 = constants;
     flag = tmp2 !== constants.HIDDEN;

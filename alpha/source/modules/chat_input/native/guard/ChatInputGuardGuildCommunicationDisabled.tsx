@@ -1,14 +1,14 @@
-// Module ID: 13984
-// Function ID: 13985
+// Module ID: 14019
+// Function ID: 14020
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 4923, 21, 13985, 13971, 13233, 1114, 2]
+// Dependencies: [19, 4928, 21, 14020, 14006, 13268, 1113, 2]
 
-// Module 13984 (ChatInputGuardGuildCommunicationDisabled)
+// Module 14019 (ChatInputGuardGuildCommunicationDisabled)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1114 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4923 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13971 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 13985 */;
+import intl3 from "intl" /* 1113 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14006 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 14020 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ const memoResult = react.memo(function CommunicationDisabledNoticeForGuild(guild
     date = new Date(communicationDisabledUntil);
   }
   ChatInputGuardDefault;
-  const intl = tmp(1114).intl;
-  const intl2 = tmp(1114).intl;
+  const intl = tmp(1113).intl;
+  const intl2 = tmp(1113).intl;
   const obj3 = { link };
   return <tmp8 type="simple-action" icon={null} message={intl.string(intl3.t.VSpdzK)} subtext={intl2.format(intl3.t["4ZwD5G"], obj3)} countdown={date} />;
 });

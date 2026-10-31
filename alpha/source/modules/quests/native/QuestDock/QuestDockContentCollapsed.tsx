@@ -1,16 +1,16 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17145
+// Function ID: 17146
 // Name: QuestDockContentCollapsed
-// Dependencies: [19, 17, 6775, 17001, 21, 5009, 17002, 5090, 5632, 7235, 2]
+// Dependencies: [19, 17, 6781, 17059, 21, 5014, 17060, 5095, 5637, 7241, 2]
 
-// Module 17087 (QuestDockContentCollapsed)
+// Module 17145 (QuestDockContentCollapsed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5632 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import spring from "spring" /* 5637 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import QuestDockConstants from "QuestDockConstants" /* 17059 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -35,8 +35,8 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   }
   hideOnExpand = tmp;
   const tmp2 = closure_7();
-  const activeQuestDockMode = react.useContext(hideOnExpand(17002).QuestDockGestureContext).activeQuestDockMode;
-  let obj = hideOnExpand(5090);
+  const activeQuestDockMode = react.useContext(hideOnExpand(17060).QuestDockGestureContext).activeQuestDockMode;
+  let obj = hideOnExpand(5095);
   const fn = function l() {
     const withSpring = spring.withSpring;
     let num = 1;
@@ -50,12 +50,12 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
     const obj = { opacity: withSpring(num, QUEST_DOCK_MODE_CHANGE_PHYSICS) };
     return obj;
   };
-  fn.__closure = { withSpring: hideOnExpand(5632).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  fn.__closure = { withSpring: hideOnExpand(5637).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   fn.__workletHash = 13361221764426;
   fn.__initData = __initData;
-  ({ withSpring: hideOnExpand(5632).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: hideOnExpand(5637).withSpring, activeQuestDockMode, QuestDockMode, hideOnExpand: tmp, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = hideOnExpand(5090);
+  const obj3 = hideOnExpand(5095);
   class C {
     constructor() {
       let pointerEvents = "auto";
@@ -73,7 +73,7 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   C.__initData = __initData2;
   const animatedProps = obj3.useAnimatedProps(C);
   const items = [tmp2.questDockContentCollapsed, animatedStyle];
-  return jsx(activeQuestDockMode(7235), { style: items, animatedProps, children });
+  return jsx(activeQuestDockMode(7241), { style: items, animatedProps, children });
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 

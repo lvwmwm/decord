@@ -1,44 +1,44 @@
-// Module ID: 19225
-// Function ID: 19226
+// Module ID: 19281
+// Function ID: 19282
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 4857, 6837, 11667, 6708, 502, 4858, 1384, 11204, 19059, 1072, 2019, 5676, 21, 5009, 575, 5090, 5582, 11203, 19137, 11736, 1109, 5075, 19146, 6954, 19058, 563, 2021, 1492, 11756, 19055, 5883, 11209, 1188, 9500, 11742, 11206, 7235, 19056, 5869, 19226, 5871, 2]
+// Dependencies: [32, 19, 17, 4862, 6843, 11704, 6714, 502, 4863, 1383, 11223, 19108, 1072, 5681, 11693, 21, 5014, 575, 5095, 5587, 11222, 19187, 11773, 1108, 5080, 19197, 6960, 19107, 563, 2019, 1491, 11793, 19104, 5888, 11228, 1187, 9522, 11779, 11225, 7241, 19105, 5874, 19282, 5876, 2]
 
-// Module 19225 (VoicePanelPIPContent)
+// Module 19281 (VoicePanelPIPContent)
 import nativeDefault from "native" /* 575 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import useWindowDimensions from "useWindowDimensions" /* 1492 */;
-import Constants2 from "Constants" /* 2019 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
-import native from "native" /* 5075 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import ExternalPipDefault from "ExternalPip" /* 5869 */;
-import NativeViewDefault from "NativeView" /* 6954 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7235 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11203 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
-import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11206 */;
-import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11736 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11742 */;
-import useUserTileBackgroundDefault from "useUserTileBackground" /* 19055 */;
-import VideoActionCreators from "VideoActionCreators" /* 19056 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19058 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19059 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 19137 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import useWindowDimensions from "useWindowDimensions" /* 1491 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
+import native from "native" /* 5080 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import ExternalPipDefault from "ExternalPip" /* 5874 */;
+import NativeViewDefault from "NativeView" /* 6960 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7241 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11225 */;
+import Constants2 from "Constants" /* 11693 */;
+import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11773 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11779 */;
+import useUserTileBackgroundDefault from "useUserTileBackground" /* 19104 */;
+import VideoActionCreators from "VideoActionCreators" /* 19105 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19107 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19108 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 19187 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11667 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11704 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import UserStore from "UserStore" /* 1384 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
-import CallConstants from "CallConstants" /* 5676 */;
+import CallConstants from "CallConstants" /* 5681 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -47,8 +47,8 @@ let dependencyMap, importDefault, nativeEvent;
 let StyleSheet;
 let closure_16;
 let closure_17;
+let closure_18;
 let closure_19;
-let closure_20;
 let closure_21;
 let closure_22;
 let hasOwnProperty;
@@ -58,7 +58,7 @@ let size1;
 function VideoStream(streamId) {
   streamId = streamId.streamId;
   const streamOutputSinkStack = react.useContext(VoicePanelStateContextDefault).streamOutputSinkStack;
-  let obj = VoicePanelStreamOutputSinkStack;
+  const obj = VoicePanelStreamOutputSinkStack;
   const setHasActiveVideoOutputSink = obj.useSetHasActiveVideoOutputSink(streamOutputSinkStack);
   const items = [setHasActiveVideoOutputSink, streamId];
   const effect = react.useEffect(() => {
@@ -341,7 +341,7 @@ function User(participantId) {
   }, items);
   let tmp3 = participantId;
   let tmp4 = dependencyMap;
-  let tmp5 = transitionState === participantId(5075).TransitionStates.YEETED ? tmp.onTop : tmp.onBottom;
+  let tmp5 = transitionState === participantId(5080).TransitionStates.YEETED ? tmp.onTop : tmp.onBottom;
   dependencyMap = tmp5;
   const context = obj.useContext(VoicePanelStateContextDefault);
   const channelId = context.channelId;
@@ -391,8 +391,8 @@ function User(participantId) {
   [tmp17, c8] = channelId(obj.useState(false), 2);
   channelId(obj.useState(false), 2);
   let id1;
-  const useSurfaceDirectRendererExperiment = tmp3(5883).useSurfaceDirectRendererExperiment;
-  tmp3(5883);
+  const useSurfaceDirectRendererExperiment = tmp3(5888).useSurfaceDirectRendererExperiment;
+  tmp3(5888);
   if (stateFromStores != null) {
     const user = stateFromStores.user;
     if (user != null) {
@@ -409,14 +409,14 @@ function User(participantId) {
     let tmp5 = null != participant;
     const tmp4 = c8;
     if (tmp5) {
-      tmp5 = closure_20(participant);
+      tmp5 = closure_19(participant);
     }
     if (tmp5) {
       tmp5 = arg1 === VoicePanelModes.PANEL;
     }
     tmp4(tmp5);
   }, items3);
-  const tmp3Result8 = tmp3(5090);
+  const tmp3Result8 = tmp3(5095);
   class I {
     constructor() {
       const value = focused.get();
@@ -439,10 +439,10 @@ function User(participantId) {
       }
     }
   }
-  S.__closure = { runOnJS: tmp3(5090).runOnJS, updateIsActivityFocused, mode };
+  S.__closure = { runOnJS: tmp3(5095).runOnJS, updateIsActivityFocused, mode };
   S.__workletHash = 5971237403457;
   S.__initData = __initData4;
-  ({ runOnJS: tmp3(5090).runOnJS, updateIsActivityFocused, mode });
+  ({ runOnJS: tmp3(5095).runOnJS, updateIsActivityFocused, mode });
   const animatedReaction = tmp3Result8.useAnimatedReaction(I, S);
   const fn = function f() {
     return mode.get();
@@ -462,11 +462,11 @@ function User(participantId) {
       runOnJSResult(id, arg0);
     }
   };
-  const tmp3Result9 = tmp3(5090);
-  fn2.__closure = { runOnJS: tmp3(5090).runOnJS, updateIsActivityFocused, focused };
+  const tmp3Result9 = tmp3(5095);
+  fn2.__closure = { runOnJS: tmp3(5095).runOnJS, updateIsActivityFocused, focused };
   fn2.__workletHash = 12552370107483;
   fn2.__initData = __initData6;
-  ({ runOnJS: tmp3(5090).runOnJS, updateIsActivityFocused, focused });
+  ({ runOnJS: tmp3(5095).runOnJS, updateIsActivityFocused, focused });
   const animatedReaction1 = tmp3Result9.useAnimatedReaction(fn, fn2);
   const items4 = [updateIsActivityFocused];
   const tmp3Result10 = tmp3(563);
@@ -480,7 +480,7 @@ function User(participantId) {
     nativeEvent = nativeEvent.nativeEvent;
     layoutManager.setTargetDimensions(participantId, nativeEvent.width, nativeEvent.height);
   }, items5);
-  const tmp3Result11 = tmp3(11209);
+  const tmp3Result11 = tmp3(11228);
   canRenderParticipantVideo = tmp3Result11.useCanRenderParticipantVideo(stateFromStores);
   if (canRenderParticipantVideo) {
     canRenderParticipantVideo = !(tmp17 && isReactingToThermalState);
@@ -519,9 +519,9 @@ function User(participantId) {
     const tmp6Result5 = NativeViewDefault;
     if (null != user1) {
       const obj10 = { source: tmp3Result12.getCachedSourceFromURI(user1.getAvatarURL(guildId, 80, false)), size: tmp17 ? AvatarSizes.LARGE : AvatarSizes.XLARGE, avatarDecoration: userAvatarDecoration };
-      const Avatar = tmp3(1188).Avatar;
-      tmp3Result12 = tmp3(9500);
-      AvatarSizes = tmp3(1188).AvatarSizes;
+      const Avatar = tmp3(1187).Avatar;
+      tmp3Result12 = tmp3(9522);
+      AvatarSizes = tmp3(1187).AvatarSizes;
       userAvatarDecoration = undefined;
       if (stateFromStores != null) {
         userAvatarDecoration = stateFromStores.userAvatarDecoration;
@@ -538,7 +538,7 @@ function User(participantId) {
         const obj12 = { style: tmp.thermalAlertIconContainer, children: closure_21(Icon, obj13) };
         obj13 = { style: tmp.thermalAlertIcon, source: AssetRegistryDefault, color: tmp.thermalAlertIcon.color };
         const tmp6Result6 = NativeViewDefault;
-        Icon = tmp3(1188).Icon;
+        Icon = tmp3(1187).Icon;
         tmp35Result2 = tmp35(tmp6Result6, obj12);
       }
     }
@@ -598,7 +598,7 @@ function Stream(participantId) {
   let tmp = closure_23();
   let tmp2 = participantId;
   let tmp3 = dependencyMap;
-  let obj = participantId(19146);
+  let obj = participantId(19197);
   const mode = obj.usePIPState().mode;
   const items = [transitionState, transitionCleanUp];
   const effect = streamId.useEffect(() => {
@@ -634,8 +634,8 @@ function Stream(participantId) {
       };
     }
   }, items);
-  let tmp5 = transitionState === participantId(5075).TransitionStates.YEETED ? tmp.onTop : tmp.onBottom;
-  const context = obj2.useContext(mode(11203));
+  let tmp5 = transitionState === participantId(5080).TransitionStates.YEETED ? tmp.onTop : tmp.onBottom;
+  const context = obj2.useContext(mode(11222));
   ({ channelId: c2, layoutManager } = context);
   const items1 = [callback2];
   const tmp2Result = tmp2(563);
@@ -660,7 +660,7 @@ function Stream(participantId) {
   });
   streamId = stateFromStoresObject.streamId;
   const userId = stateFromStoresObject.userId;
-  const tmp2Result3 = tmp2(5883);
+  const tmp2Result3 = tmp2(5888);
   const surfaceDirectRendererExperiment = tmp2Result3.useSurfaceDirectRendererExperiment(userId, { location: "VoicePanelPIPContent.Stream" });
   const items2 = [ApplicationStreamingStore];
   const tmp2Result4 = tmp2(563);
@@ -741,7 +741,7 @@ function Stream(participantId) {
   }, items7);
   if (stateFromStores === constants.ENDED) {
     const obj3 = { style: tmp.streamEmptyImage, resizeMode: "contain" };
-    tmp23 = closure_21(tmp2(19226).StreamEnded, obj3);
+    tmp23 = closure_21(tmp2(19282).StreamEnded, obj3);
   } else {
     tmp23 = null;
     if (stateFromStores !== tmp17.FAILED) {
@@ -793,8 +793,8 @@ function areParticipantsEqual(arg0, arg1) {
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelPIPModes = VoicePanelPIPConstants.VoicePanelPIPModes;
 ({ ApplicationStreamStates: closure_16, ComponentActions: closure_17 } = Constants);
+({ ParticipantTypes: closure_18, isActivityParticipant: closure_19 } = CallConstants);
 const ActivityLayoutMode = Constants2.ActivityLayoutMode;
-({ ParticipantTypes: closure_19, isActivityParticipant: closure_20 } = CallConstants);
 ({ jsx: closure_21, jsxs: closure_22 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { contentWrapper: { position: "absolute", width: "100%", height: "100%", overflow: "hidden", alignItems: "center", justifyContent: "center" }, userOpacity: { opacity: 0.1 }, activity: { position: "absolute", width: "100%", height: "100%" }, user: { position: "absolute", width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, video: { position: "absolute", width: "100%", height: "100%" }, avatarWrapper: { position: "relative", width: "56%", height: "56%", alignItems: "center", justifyContent: "center" }, thermalAlertIconContainer: size, thermalAlertIcon: size1, onTop: { zIndex: 1 }, onBottom: { zIndex: 0 }, streamEmptyImage: { width: "50%" }, emptyPip: obj2, innerStroke: { position: "absolute", top: -1, left: -1, bottom: -1, right: -1, borderWidth: 2, borderColor: "white", zIndex: 1, opacity: 0.3 }, blackBackground: { backgroundColor: "black" } };
@@ -823,7 +823,7 @@ let closure_39 = react.memo(function EmptyPIP(transitionState) {
     }
   }, items);
   const obj = { style: tmp.emptyPip };
-  return closure_21(transitionCleanUp(6954), obj);
+  return closure_21(transitionCleanUp(6960), obj);
 });
 const memoResult = react.memo(function VoicePanelPIPContent(layoutTransition) {
   let obj4;
@@ -909,6 +909,6 @@ const memoResult = react.memo(function VoicePanelPIPContent(layoutTransition) {
   return closure_21(tmp6, obj3);
 });
 size = size_mod;
-let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPContent.tsx");
+const result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPContent.tsx");
 
 export default memoResult;

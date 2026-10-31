@@ -1,14 +1,14 @@
-// Module ID: 15685
-// Function ID: 15686
+// Module ID: 15725
+// Function ID: 15726
 // Name: ShareUtils
-// Dependencies: [5, 7694, 5014, 5707, 5730, 9757, 8335, 8203, 8201, 7817, 9745, 7629, 2]
+// Dependencies: [5, 7701, 5019, 5712, 5735, 9778, 8343, 8211, 8209, 7824, 9765, 7636, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 15685 (ShareUtils)
-import MessageConstants from "MessageConstants" /* 5014 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5730 */;
-import DraftStore from "DraftStore" /* 7694 */;
+// Module 15725 (ShareUtils)
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
+import DraftStore from "DraftStore" /* 7701 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _sendShareMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

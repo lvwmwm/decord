@@ -1,23 +1,23 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 13952
+// Function ID: 13953
 // Name: ApplicationCommandBar
-// Dependencies: [32, 19, 17, 4921, 21, 5009, 575, 6772, 6974, 1114, 1188, 504, 13743, 5712, 5619, 8169, 6726, 13918, 2]
+// Dependencies: [32, 19, 17, 4926, 21, 5014, 575, 6778, 6980, 1113, 1187, 504, 13778, 5717, 5624, 8177, 6732, 13953, 2]
 // Exports: default
 
-// Module 13917 (ApplicationCommandBar)
+// Module 13952 (ApplicationCommandBar)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import usePreviousDefault from "usePrevious" /* 6726 */;
-import LegacyTokens from "LegacyTokens" /* 6772 */;
-import Pressables from "Pressables" /* 6974 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13743 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import usePreviousDefault from "usePrevious" /* 6732 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import Pressables from "Pressables" /* 6980 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -40,8 +40,8 @@ let size;
 let size1;
 let tmp2;
 let tmp4;
-const native = tmp4(1188);
-const DescriptionEllipsisDefault = tmp2(13918);
+const native = tmp4(1187);
+const DescriptionEllipsisDefault = tmp2(13953);
 function ApplicationCommandOptionItem(arg0) {
   let LegacyText;
   let intl;
@@ -341,11 +341,11 @@ export default function _default(command) {
   const tmp21 = closure_6;
   if (tmp22) {
     const obj4 = { style: tmp.applicationIcon, source: memo };
-    tmp22 = ref(section(5712), obj4);
+    tmp22 = ref(section(5717), obj4);
   }
   items5 = [tmp22, , , ];
   const obj5 = { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = ref(command(5619).Text, obj5);
+  items5[1] = ref(command(5624).Text, obj5);
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -384,9 +384,9 @@ export default function _default(command) {
     const obj6 = { style: items6 };
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     const items7 = [ref(onPressOption, obj6), , ];
-    const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted", children: intl.string(command(1114).t.U19GM3) };
-    const Text = tmp12(5619).Text;
-    intl = tmp12(1114).intl;
+    const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted", children: intl.string(command(1113).t.U19GM3) };
+    const Text = tmp12(5624).Text;
+    intl = tmp12(1113).intl;
     items7[1] = ref(Text, obj7);
     const options1 = command.options;
     let mapped1;
@@ -417,9 +417,9 @@ export default function _default(command) {
   items5[3] = tmp19Result;
   items8 = [c10(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = ref(command(8169).FormDivider, obj9);
+  items8[1] = ref(command(8177).FormDivider, obj9);
   items8[2] = ref(stateFromStores, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = ref(command(8169).FormDivider, obj10);
+  items8[3] = ref(command(8177).FormDivider, obj10);
   return c10(onPressOption, obj2);
 };

@@ -1,11 +1,11 @@
-// Module ID: 17956
-// Function ID: 17957
+// Module ID: 17999
+// Function ID: 18000
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 17933, 7118, 17957, 1114, 17944, 2]
+// Dependencies: [5, 32, 19, 17976, 7124, 18000, 1113, 17987, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 17956 (usePasswordRegistrationStep)
-import RegistrationUIStore from "RegistrationUIStore" /* 17933 */;
+// Module 17999 (usePasswordRegistrationStep)
+import RegistrationUIStore from "RegistrationUIStore" /* 17976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -66,7 +66,7 @@ export function usePasswordRegistrationStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;

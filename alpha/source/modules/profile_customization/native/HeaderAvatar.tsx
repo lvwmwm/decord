@@ -1,18 +1,18 @@
-// Module ID: 8821
-// Function ID: 8822
+// Module ID: 8829
+// Function ID: 8830
 // Name: HeaderAvatar
-// Dependencies: [19, 17, 5010, 4921, 5756, 21, 5009, 575, 1188, 504, 5757, 8822, 8729, 8823, 8812, 6974, 2]
+// Dependencies: [19, 17, 5015, 4926, 5761, 21, 5014, 575, 1187, 504, 5762, 8830, 8737, 8831, 8820, 6980, 2]
 // Exports: default
 
-// Module 8821 (HeaderAvatar)
+// Module 8829 (HeaderAvatar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
-import createStyles from "createStyles" /* 5009 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -53,7 +53,7 @@ export default function HeaderAvatar(animate) {
   ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
   if (size === undefined) {
     const tmp = guildId;
-    size = guildId(1188).AvatarSizes.XXLARGE;
+    size = guildId(1187).AvatarSizes.XXLARGE;
   }
   let flag = animate.animate;
   if (flag === undefined) {
@@ -84,9 +84,9 @@ export default function HeaderAvatar(animate) {
   });
   const obj4 = { pendingValue: pendingAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
   avatarDecoration = undefined;
-  const tmp11 = id(8822);
-  const getProfilePreviewValue = guildId(8729).getProfilePreviewValue;
-  guildId(8729);
+  const tmp11 = id(8830);
+  const getProfilePreviewValue = guildId(8737).getProfilePreviewValue;
+  guildId(8737);
   const tmp10 = id;
   if (user != null) {
     avatarDecoration = user.avatarDecoration;
@@ -95,7 +95,7 @@ export default function HeaderAvatar(animate) {
   if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(8823)(activities), animate: flag, avatarDecoration: tmp11Result };
+  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(8831)(activities), animate: flag, avatarDecoration: tmp11Result };
   tmp16 = null;
   tmp11Result = tmp11(getProfilePreviewValue(obj4));
   if (!disableStatus) {
@@ -107,12 +107,12 @@ export default function HeaderAvatar(animate) {
   }
   if (null != onPress) {
     const obj6 = { ref: animate.ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
-    const PressableOpacity = tmp5(6974).PressableOpacity;
+    const PressableOpacity = tmp5(6980).PressableOpacity;
     const merged1 = Object.assign(merged);
-    const Avatar = tmp5(1188).Avatar;
+    const Avatar = tmp5(1187).Avatar;
     if (undefined !== pendingAvatarSrc) {
       const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result = guildId(8812);
+      tmp5Result = guildId(8820);
       const merged2 = Object.assign(obj5);
       obj8 = obj7;
     } else {
@@ -123,11 +123,11 @@ export default function HeaderAvatar(animate) {
   } else {
     const obj9 = { ref: animate.ref, style, accessibilityRole: "image", accessible: true, children: <Avatar2 {...obj11} /> };
     const merged4 = Object.assign(merged);
-    const Avatar2 = tmp5(1188).Avatar;
+    const Avatar2 = tmp5(1187).Avatar;
     const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
       const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result2 = guildId(8812);
+      tmp5Result2 = guildId(8820);
       const merged5 = Object.assign(obj5);
       obj11 = obj10;
     } else {

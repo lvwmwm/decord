@@ -1,25 +1,25 @@
-// Module ID: 19272
-// Function ID: 19273
+// Module ID: 19329
+// Function ID: 19330
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11204, 21, 5009, 575, 6953, 5984, 13777, 11203, 5090, 13778, 5632, 10069, 19273, 19284, 18004, 19269, 2]
+// Dependencies: [32, 19, 17, 11223, 21, 5014, 575, 6959, 5989, 13812, 11222, 5095, 13813, 5637, 10089, 19330, 19341, 18047, 19326, 2]
 
-// Module 19272 (VoicePanelControlsDrawer)
+// Module 19329 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import react2 from "react" /* 5984 */;
-import useRefValueDefault from "useRefValue" /* 6953 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10069 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13777 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13778 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19273 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19284 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import react2 from "react" /* 5989 */;
+import useRefValueDefault from "useRefValue" /* 6959 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10089 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13812 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13813 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19330 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19341 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c10;

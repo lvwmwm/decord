@@ -1,9 +1,9 @@
-// Module ID: 5942
-// Function ID: 5943
+// Module ID: 5947
+// Function ID: 5948
 // Name: AVError
 // Dependencies: [109, 3, 572, 2]
 
-// Module 5942 (AVError)
+// Module 5947 (AVError)
 import _mod2 from "module_2" /* 2 */;
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

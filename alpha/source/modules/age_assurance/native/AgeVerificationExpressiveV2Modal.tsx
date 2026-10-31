@@ -1,26 +1,26 @@
-// Module ID: 7998
-// Function ID: 7999
+// Module ID: 8006
+// Function ID: 8007
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 6722, 1072, 21, 1392, 7999, 8001, 8003, 1376, 8005, 8007, 7119, 5009, 575, 8009, 8010, 7994, 8011, 6723, 7980, 7981, 6720, 8012, 7964, 7965, 6022, 8013, 5619, 7947, 2062, 8017, 1114, 3093, 7054, 6969, 8022, 8135, 7372, 6738, 6992, 8137, 8138, 1267, 7163, 2]
+// Dependencies: [5, 32, 19, 17, 6728, 1072, 21, 1391, 8007, 8009, 8011, 1375, 8013, 8015, 7125, 5014, 575, 8017, 8018, 8002, 8019, 6729, 7988, 7989, 6726, 8020, 7972, 7973, 6027, 8021, 5624, 7955, 2061, 8025, 1113, 3096, 7060, 6975, 8030, 8143, 7378, 6744, 6998, 8145, 8146, 1266, 7169, 2]
 // Exports: default
 
-// Module 7998 (AgeVerificationExpressiveV2Modal)
+// Module 8006 (AgeVerificationExpressiveV2Modal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6722 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6723 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7980 */;
-import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7981 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6728 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7988 */;
+import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7989 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_4, v3;
@@ -99,7 +99,7 @@ function MethodsScreen(onClose) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ function MethodsScreen(onClose) {
             closure_1_9(null);
           }
           v3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp38) {
           closure_4 = tmp38;
           if (0 === c5) {

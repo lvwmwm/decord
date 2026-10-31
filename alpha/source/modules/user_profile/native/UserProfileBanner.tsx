@@ -1,17 +1,17 @@
-// Module ID: 8811
-// Function ID: 8812
+// Module ID: 8819
+// Function ID: 8820
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1072, 21, 5009, 4834, 8812, 1410, 8819, 6974, 1114, 8565, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 4839, 8820, 1409, 8827, 6980, 1113, 8573, 2]
 // Exports: default
 
-// Module 8811 (UserProfileBanner)
+// Module 8819 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import BannerDefault from "Banner" /* 8819 */;
+import BannerDefault from "Banner" /* 8827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

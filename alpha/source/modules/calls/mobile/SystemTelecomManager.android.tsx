@@ -1,10 +1,10 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16269
+// Function ID: 16270
 // Name: SystemTelecomManager
-// Dependencies: [1997, 2]
+// Dependencies: [1996, 2]
 
-// Module 16228 (SystemTelecomManager)
-import LifecycleManager from "LifecycleManager" /* 1997 */;
+// Module 16269 (SystemTelecomManager)
+import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;
 
 class SystemTelecomLifecycleManager extends LifecycleManager {

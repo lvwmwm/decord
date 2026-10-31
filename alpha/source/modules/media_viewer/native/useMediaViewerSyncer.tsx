@@ -1,16 +1,16 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8865
+// Function ID: 8866
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 8857, 1376, 8827, 5090, 8858, 1626, 8859, 8831, 5632, 8860, 2]
+// Dependencies: [32, 19, 8866, 1375, 8835, 5095, 8867, 1625, 8868, 8839, 5637, 8869, 2]
 // Exports: useMediaViewerSyncer
 
-// Module 8856 (useMediaViewerSyncer)
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8831 */;
+// Module 8865 (useMediaViewerSyncer)
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8839 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 8857 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import Constants from "Constants" /* 8866 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;

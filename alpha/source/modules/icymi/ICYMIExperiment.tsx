@@ -1,13 +1,13 @@
-// Module ID: 8916
-// Function ID: 8917
+// Module ID: 8925
+// Function ID: 8926
 // Name: ICYMIExperiment
-// Dependencies: [8554, 1448, 8556, 2]
+// Dependencies: [8562, 1447, 8564, 2]
 // Exports: getICYMIEnabled, icymiEnabled, useICYMIEnabled
 
-// Module 8916 (ICYMIExperiment)
-import useLabFeatureDefault from "useLabFeature" /* 8556 */;
-import LabFeatureStore from "LabFeatureStore" /* 8554 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
+// Module 8925 (ICYMIExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 8564 */;
+import LabFeatureStore from "LabFeatureStore" /* 8562 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

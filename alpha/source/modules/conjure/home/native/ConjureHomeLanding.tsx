@@ -1,19 +1,19 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 12816
+// Function ID: 12817
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 10831, 21, 575, 5009, 12782, 1498, 1626, 12036, 5090, 12938, 12561, 12547, 12939, 12726, 10855, 12545, 1499, 12047, 1114, 3865, 10859, 5707, 12941, 5619, 12942, 12757, 12944, 2]
+// Dependencies: [5, 32, 19, 17, 10851, 21, 575, 5014, 12817, 1497, 1625, 12074, 5095, 12973, 12596, 12582, 12974, 12761, 10875, 12580, 1498, 12086, 1113, 3868, 10879, 5712, 12976, 7306, 5624, 12977, 12792, 12979, 2]
 // Exports: default
 
-// Module 12781 (ConjureHomeLanding)
+// Module 12816 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 12782 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 12817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10831 */;
+import ConjureChatStore from "ConjureChatStore" /* 10851 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c6, dependencyMap, guildId, navigation, projectId;
@@ -38,7 +38,7 @@ class ConjureHomeUploadError extends Error {
 const PX_32 = nativeDefault.space.PX_32;
 const PX_48 = nativeDefault.space.PX_48;
 let createStyles = createStyles_mod;
-let obj = { root: obj2, scroll: { flex: 1 }, content: obj3, hero: obj4, carousel: obj5, showcase: obj6, showcaseTitle: obj7, error: obj8 };
+let obj = { root: obj2, scroll: { flex: 1 }, content: obj3, hero: obj4, badgeRow: { flexDirection: "row" }, carousel: obj5, showcase: obj6, showcaseTitle: obj7, error: obj8 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_32, paddingBottom: nativeDefault.space.PX_32, gap: PX_32 };
@@ -53,6 +53,7 @@ const __initData = { code: "function ConjureHomeLandingTsx1(){const{keyboardHeig
 const result = size.fileFinishedImporting("modules/conjure/home/native/ConjureHomeLanding.tsx");
 
 export default function ConjureHomeLanding(focusRequest) {
+  let Badge;
   let _undefined;
   let _undefined2;
   let c10;
@@ -64,11 +65,14 @@ export default function ConjureHomeLanding(focusRequest) {
   let intl2;
   let intl3;
   let intl4;
+  let intl5;
   let items1;
   let items2;
   let items3;
   let items4;
   let items5;
+  let obj10;
+  let obj9;
   let tmp15;
   let tmp21;
   let tmp23;
@@ -80,7 +84,6 @@ export default function ConjureHomeLanding(focusRequest) {
   navigation = undefined;
   let bottom;
   dependencyMap = undefined;
-  let first;
   let str;
   forMeGuildId = undefined;
   let ref;
@@ -93,42 +96,40 @@ export default function ConjureHomeLanding(focusRequest) {
   const tmp2 = closure_13();
   const tmp3 = navigation;
   let tmp4 = dependencyMap;
-  let obj = navigation(1498);
+  let obj = navigation(1497);
   navigation = obj.useNavigation();
   let tmp6 = bottom;
-  bottom = bottom(1626)().bottom;
-  let tmp7 = bottom(12036)();
+  bottom = bottom(1625)().bottom;
+  let tmp7 = bottom(12074)();
   dependencyMap = tmp7;
-  let obj2 = navigation(5090);
-  class E {
-    constructor() {
-      const obj = { paddingBottom: Math.max(closure_2.get(), bottom) };
-      return obj;
-    }
-  }
-  E.__closure = { keyboardHeight: tmp7, safeAreaBottom: bottom };
-  E.__workletHash = 10510195293107;
-  E.__initData = __initData;
+  let obj2 = navigation(5095);
+  const fn = function y() {
+    const obj = { paddingBottom: Math.max(closure_2.get(), bottom) };
+    return obj;
+  };
+  fn.__closure = { keyboardHeight: tmp7, safeAreaBottom: bottom };
+  fn.__workletHash = 10510195293107;
+  fn.__initData = __initData;
   let obj3 = forMeGuildId;
-  const animatedStyle = obj2.useAnimatedStyle(E);
-  const tmp10 = str(forMeGuildId.useState(navigation(12938).CONJURE_TARGET_USER), 2);
-  first = tmp10[0];
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  const tmp10 = str(forMeGuildId.useState(navigation(12973).CONJURE_TARGET_USER), 2);
+  const first = tmp10[0];
   const tmp12 = tmp10[1];
-  let obj4 = navigation(12561);
+  let obj4 = navigation(12596);
   const conjureEligibleGuilds = obj4.useConjureEligibleGuilds("ConjureHomeLanding");
   let CONJURE_TARGET_USER = first;
-  if (first !== navigation(12938).CONJURE_TARGET_USER) {
+  if (first !== navigation(12973).CONJURE_TARGET_USER) {
     CONJURE_TARGET_USER = first;
     if (!conjureEligibleGuilds.some((id) => id.id === first)) {
-      CONJURE_TARGET_USER = tmp3(12938).CONJURE_TARGET_USER;
+      CONJURE_TARGET_USER = tmp3(12973).CONJURE_TARGET_USER;
     }
   }
   str = "guild";
-  if (CONJURE_TARGET_USER === tmp3(12938).CONJURE_TARGET_USER) {
+  if (CONJURE_TARGET_USER === tmp3(12973).CONJURE_TARGET_USER) {
     str = "user";
   }
   let tmp13 = CONJURE_TARGET_USER;
-  if (CONJURE_TARGET_USER === tmp3(12938).CONJURE_TARGET_USER) {
+  if (CONJURE_TARGET_USER === tmp3(12973).CONJURE_TARGET_USER) {
     tmp13 = forMeGuildId;
   }
   forMeGuildId = tmp13;
@@ -171,12 +172,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f139952 = (role) => "user" === role.role;
+        const f140373 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = closure_3_8.getMessages(closure_0);
           const obj = closure_3_8;
-          if (messages.some(f139952)) {
+          if (messages.some(f140373)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -191,7 +192,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f139952)) {
+        if (messages.some(f140373)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);
@@ -212,7 +213,7 @@ export default function ConjureHomeLanding(focusRequest) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp114;
@@ -331,7 +332,7 @@ export default function ConjureHomeLanding(focusRequest) {
               const current = ref.current && closure_0.isFocused();
               if (current) {
                 const dispatch = closure_0.dispatch;
-                const obj17 = { projectId };
+                const obj17 = { projectId, entryPoint: "create" };
                 str = closure_0(closure_2_2[20]).StackActions;
                 dispatch(str.replace(closure_0(closure_2_2[21]).ConjureScreenScenes.CHAT, obj17));
               }
@@ -413,38 +414,44 @@ export default function ConjureHomeLanding(focusRequest) {
   }, items);
   let obj5 = { style: items1, children: items2 };
   items1 = [tmp2.root, animatedStyle];
-  const View = tmp6(5090).View;
-  items2 = [c9(tmp6(12941), {}), , , ];
+  const View = tmp6(5095).View;
+  items2 = [c9(tmp6(12976), {}), , , ];
   let obj6 = { style: tmp2.scroll, contentContainerStyle: tmp2.content, keyboardShouldPersistTaps: "handled", onScrollBeginDrag: callback2, onTouchEnd: callback2, onScroll: callback, scrollEventThrottle: 100, children: items4 };
   let obj7 = { style: tmp2.hero, children: items3 };
-  let obj8 = { variant: "display-md", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp6(3865).doYpEy) };
-  const Text = tmp3(5619).Text;
-  intl = tmp3(1114).intl;
-  items3 = [c9(Text, obj8), ];
-  let obj9 = { variant: "text-sm/normal", color: "text-strong", children: intl2.string(tmp6(3865).BH58fD) };
-  const Text2 = tmp3(5619).Text;
-  intl2 = tmp3(1114).intl;
-  items3[1] = c9(Text2, obj9);
+  let obj8 = { style: tmp2.badgeRow, children: c9(Badge, obj9) };
+  obj9 = { type: obj10, variant: "primary" };
+  obj10 = { text: intl.string(tmp6(3868).y6T1Nu) };
+  Badge = tmp3(7306).Badge;
+  intl = tmp3(1113).intl;
+  items3 = [c9(c7, obj8), , ];
+  let obj11 = { variant: "display-md", color: "text-strong", accessibilityRole: "header", children: intl2.string(tmp6(3868).doYpEy) };
+  const Text = tmp3(5624).Text;
+  intl2 = tmp3(1113).intl;
+  items3[1] = c9(Text, obj11);
+  let obj12 = { variant: "text-sm/normal", color: "text-strong", children: intl3.string(tmp6(3868).BH58fD) };
+  const Text2 = tmp3(5624).Text;
+  intl3 = tmp3(1113).intl;
+  items3[2] = c9(Text2, obj12);
   items4 = [c10(c7, obj7), , ];
-  let obj10 = { style: tmp2.carousel, onLayout: callback1, children: c9(tmp6(12782), { onScreen: tmp15 }) };
-  items4[1] = c9(c7, obj10);
-  let obj11 = { style: tmp2.showcase, children: items5 };
-  let obj12 = { variant: "heading-lg/medium", color: "text-strong", accessibilityRole: "header", style: tmp2.showcaseTitle, children: intl3.string(tmp6(3865).IiQEVd) };
-  const Text3 = tmp3(5619).Text;
-  intl3 = tmp3(1114).intl;
-  items5 = [c9(Text3, obj12), c9(tmp6(12942), {})];
-  items4[2] = c10(c7, obj11);
+  let obj13 = { style: tmp2.carousel, onLayout: callback1, children: c9(tmp6(12817), { onScreen: tmp15 }) };
+  items4[1] = c9(c7, obj13);
+  let obj14 = { style: tmp2.showcase, children: items5 };
+  let obj15 = { variant: "heading-lg/medium", color: "text-strong", accessibilityRole: "header", style: tmp2.showcaseTitle, children: intl4.string(tmp6(3868).IiQEVd) };
+  const Text3 = tmp3(5624).Text;
+  intl4 = tmp3(1113).intl;
+  items5 = [c9(Text3, obj15), c9(tmp6(12977), {})];
+  items4[2] = c10(c7, obj14);
   items2[1] = c10(ref, obj6);
   let tmp28Result = null;
   const tmp27 = c10;
   if (null != tmp21) {
-    let obj13 = { variant: "text-sm/normal", color: "text-feedback-critical", style: tmp2.error, children: tmp21 };
-    tmp28Result = tmp28(tmp3(5619).Text, obj13);
+    let obj16 = { variant: "text-sm/normal", color: "text-feedback-critical", style: tmp2.error, children: tmp21 };
+    tmp28Result = tmp28(tmp3(5624).Text, obj16);
   }
   items2[2] = tmp28Result;
-  let obj14 = { projectId, canSend: true, running: false, onSendFiles: callback3, sending: first1, focusRequest, blurRequest: tmp23, placeholder: intl4.string(tmp6(3865).Hy0OLY), stackedAccessory: tmp28(tmp6(12944), { target: CONJURE_TARGET_USER, guilds: conjureEligibleGuilds, onChange: tmp12 }) };
-  const tmp6Result = tmp6(12757);
-  intl4 = tmp3(1114).intl;
-  items2[3] = c9(tmp6Result, obj14);
+  let obj17 = { projectId, canSend: true, running: false, onSendFiles: callback3, sending: first1, focusRequest, blurRequest: tmp23, placeholder: intl5.string(tmp6(3868).Hy0OLY), stackedAccessory: tmp28(tmp6(12979), { target: CONJURE_TARGET_USER, guilds: conjureEligibleGuilds, onChange: tmp12 }) };
+  const tmp6Result = tmp6(12792);
+  intl5 = tmp3(1113).intl;
+  items2[3] = c9(tmp6Result, obj17);
   return tmp27(View, obj5);
 };

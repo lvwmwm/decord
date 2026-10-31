@@ -1,11 +1,11 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15138
+// Function ID: 15139
 // Name: useJoinFromSupportedPlatformsIconKeys
-// Dependencies: [19, 9718, 2]
+// Dependencies: [19, 9738, 2]
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 15101 (useJoinFromSupportedPlatformsIconKeys)
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9718 */;
+// Module 15138 (useJoinFromSupportedPlatformsIconKeys)
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
         if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.IOS)) {
           items.push(obj.MOBILE);
         }
-        const hasItem = set.has(tmp(9718).ActivityGamePlatforms.PLAYSTATION_4) || set.has(tmp(9718).ActivityGamePlatforms.PLAYSTATION_5);
+        const hasItem = set.has(tmp(9738).ActivityGamePlatforms.PLAYSTATION_4) || set.has(tmp(9738).ActivityGamePlatforms.PLAYSTATION_5);
         if (hasItem) {
           items.push(obj.PLAYSTATION);
         }

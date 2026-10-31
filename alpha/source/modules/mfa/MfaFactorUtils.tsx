@@ -1,14 +1,14 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16658
+// Function ID: 16659
 // Name: MfaFactorUtils
-// Dependencies: [5, 16526, 502, 3, 6742, 2]
+// Dependencies: [5, 16568, 502, 3, 6748, 2]
 // Exports: isLastRemainingMfaFactor
 
-// Module 16616 (MfaFactorUtils)
+// Module 16658 (MfaFactorUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6742 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import WebAuthnStore from "WebAuthnStore" /* 16526 */;
+import WebAuthnStore from "WebAuthnStore" /* 16568 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _isLastRemainingMfaFactor() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

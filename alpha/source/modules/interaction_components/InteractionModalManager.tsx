@@ -1,17 +1,17 @@
-// Module ID: 19430
-// Function ID: 19431
+// Module ID: 19487
+// Function ID: 19488
 // Name: InteractionModalManager
-// Dependencies: [5, 2040, 8381, 1072, 6065, 19431, 1995, 1253, 4884, 1243, 19442, 16342, 5670, 19445, 7281, 2]
+// Dependencies: [5, 2038, 8389, 1072, 6070, 19488, 1994, 1252, 4889, 1242, 19499, 16384, 5675, 19502, 7287, 2]
 
-// Module 19430 (InteractionModalManager)
+// Module 19487 (InteractionModalManager)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16342 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19442 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16384 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19499 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2040 */;
-import InteractionStore from "InteractionStore" /* 8381 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import InteractionStore from "InteractionStore" /* 8389 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           c4 = 3;

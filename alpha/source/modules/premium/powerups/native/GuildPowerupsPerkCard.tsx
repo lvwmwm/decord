@@ -1,23 +1,23 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14130
+// Function ID: 14131
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 5009, 575, 5248, 5016, 7143, 14092, 14047, 5582, 5619, 14048, 1188, 1114, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5253, 5021, 7149, 14127, 14082, 5587, 5624, 14083, 1187, 1113, 2]
 // Exports: default
 
-// Module 14095 (GuildPowerupsPerkCard)
+// Module 14130 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import shared from "shared" /* 5016 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14047 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14092 */;
+import intl3 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import shared from "shared" /* 5021 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14082 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14127 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -93,7 +93,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   let str;
   const obj7 = { style: tmp2.contentContainer, children: items4 };
   const obj8 = { style: tmp2.headerContainer, children: items3 };
-  const Text = tmp6(5619).Text;
+  const Text = tmp6(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }
@@ -104,30 +104,30 @@ export default function GuildPowerupsPerkCard(arg0) {
   }
   items3 = [React3(Text, obj9), ];
   let str3 = "text-sm/medium";
-  const Text2 = tmp6(5619).Text;
+  const Text2 = tmp6(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "experimental/body-sm/normal";
   }
   items3[1] = React3(Text2, { variant: str3, children: description });
   items4 = [hasOwnProperty(View, obj8), ];
   const obj10 = { status };
-  const GuildPowerupsCardFooter = tmp6(14048).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(14083).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = React3(GuildPowerupsCardFooter, obj10);
   items2[1] = hasOwnProperty(View, obj7);
   let tmp15Result = "new" === badge;
   if (tmp15Result) {
     const obj11 = { text: intl.string(intl3.t.y2b7CA), style: tmp2.badge };
-    const TextBadge = tmp6(1188).TextBadge;
-    intl = tmp6(1114).intl;
+    const TextBadge = tmp6(1187).TextBadge;
+    intl = tmp6(1113).intl;
     tmp15Result = tmp15(TextBadge, obj11);
   }
   items2[2] = tmp15Result;
   let tmp15Result2 = "beta" === badge;
   if (tmp15Result2) {
     const obj12 = { text: intl2.string(intl3.t.oW0eUd), color: native.BadgeColors.BRAND, style: tmp2.badge };
-    const TextBadge2 = tmp6(1188).TextBadge;
-    intl2 = tmp6(1114).intl;
+    const TextBadge2 = tmp6(1187).TextBadge;
+    intl2 = tmp6(1113).intl;
     tmp15Result2 = tmp15(TextBadge2, obj12);
   }
   items2[3] = tmp15Result2;

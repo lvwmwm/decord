@@ -1,24 +1,24 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17443
+// Function ID: 17444
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1384, 2053, 1194, 1195, 1072, 21, 5009, 575, 1253, 4834, 5913, 5591, 504, 2048, 1498, 7155, 1188, 10258, 5619, 1114, 8169, 6022, 7054, 7363, 7052, 7055, 2]
+// Dependencies: [19, 17, 1383, 2052, 1193, 1194, 1072, 21, 5014, 575, 1252, 4839, 5932, 5596, 504, 2047, 1497, 7161, 1187, 10278, 5624, 1113, 8177, 6027, 7060, 7369, 7058, 7061, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 17383 (UserSettingsText)
+// Module 17443 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1195 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5913 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7155 */;
+import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1194 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5932 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7161 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1384 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import UserStore from "UserStore" /* 1383 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,7 +120,7 @@ export default function UserSettingsText() {
   const obj7 = require("useNavigation");
   closure_4 = obj7.useNavigation();
   const obj8 = { style: tmp5.flex, children: closure_12(Form, obj24) };
-  Form = require("module_8169").Form;
+  Form = require("module_8177").Form;
   const obj9 = { spacing: videoUploadQuality(dataSavingMode[9]).space.PX_24, style: { paddingHorizontal: token }, children: items6 };
   const Stack = require("Stack/Stack").Stack;
   const obj10 = { children: items5 };

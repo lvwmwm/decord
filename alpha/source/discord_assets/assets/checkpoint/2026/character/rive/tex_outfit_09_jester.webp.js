@@ -1,8 +1,8 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13551
+// Function ID: 13552
 // Dependencies: [2]
 
-// Module 13515
+// Module 13551
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_09_jester.webp.js");

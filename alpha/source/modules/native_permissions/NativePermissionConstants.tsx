@@ -1,9 +1,9 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7940
+// Function ID: 7941
 // Name: NativePermissionConstants
 // Dependencies: [2]
 
-// Module 7932 (NativePermissionConstants)
+// Module 7940 (NativePermissionConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/native_permissions/NativePermissionConstants.tsx");

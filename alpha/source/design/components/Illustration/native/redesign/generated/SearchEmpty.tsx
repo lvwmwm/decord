@@ -1,14 +1,14 @@
-// Module ID: 10013
-// Function ID: 10014
+// Module ID: 10034
+// Function ID: 10035
 // Name: SearchEmpty
-// Dependencies: [19, 21, 8798, 10014, 10015, 10016, 5016, 5712, 2]
+// Dependencies: [19, 21, 8806, 10035, 10036, 10037, 5021, 5717, 2]
 // Exports: SearchEmpty, getSearchEmptySource, useSearchEmptySource
 
-// Module 10013 (SearchEmpty)
+// Module 10034 (SearchEmpty)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5016 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import _mod8798 from "module_8798" /* 8798 */;
+import shared from "shared" /* 5021 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import _mod8806 from "module_8806" /* 8806 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/SearchEmpty.tsx");
 
 export function getSearchEmptySource(theme) {
-  const obj = _mod8798;
+  const obj = _mod8806;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useSearchEmptySource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8798;
+  const obj2 = _mod8806;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function SearchEmpty(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8798;
+  const obj2 = _mod8806;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

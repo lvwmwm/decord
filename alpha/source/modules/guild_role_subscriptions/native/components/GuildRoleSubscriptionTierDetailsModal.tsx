@@ -1,32 +1,31 @@
-// Module ID: 19922
-// Function ID: 19923
+// Module ID: 19980
+// Function ID: 19981
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 17125, 1072, 21, 15680, 19895, 17147, 17132, 19881, 9093, 1114, 19886, 7076, 7247, 19923, 19887, 2]
+// Dependencies: [32, 19, 17, 17183, 1072, 21, 19943, 19953, 17203, 17190, 19938, 7060, 1113, 19944, 7082, 7253, 19981, 19945, 2]
 // Exports: default
 
-// Module 19922 (GuildRoleSubscriptionTierDetailsModal)
+// Module 19980 (GuildRoleSubscriptionTierDetailsModal)
+import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import intl10 from "intl" /* 1114 */;
-import FormHeaderDefault from "FormHeader" /* 9093 */;
-import FormStylesDefault from "FormStyles" /* 15680 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17132 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17147 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19881 */;
-import FormImagePicker from "FormImagePicker" /* 19886 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19887 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 19895 */;
-import FormPriceTierDefault from "FormPriceTier" /* 19923 */;
+import intl8 from "intl" /* 1113 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17190 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17203 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19938 */;
+import FormStylesDefault from "FormStyles" /* 19943 */;
+import FormImagePicker from "FormImagePicker" /* 19944 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19945 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19953 */;
+import FormPriceTierDefault from "FormPriceTier" /* 19981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17125 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17183 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 const FormImagePickerDefault = FormImagePicker;
 
 let c10;
-let c9;
-let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
@@ -39,8 +38,9 @@ function Content() {
   let intl5;
   let intl6;
   let intl7;
-  let intl8;
-  let intl9;
+  let items;
+  let items1;
+  let obj14;
   let tmp10;
   let tmp12;
   let tmp13;
@@ -48,6 +48,7 @@ function Content() {
   let tmp16;
   let tmp7;
   let tmp8;
+  let tmpResult2;
   const tmp3 = FormStylesDefault();
   const obj = EditStateContextProvider;
   const editStateContext = obj.useEditStateContext();
@@ -79,12 +80,14 @@ function Content() {
   let tmp20 = true === published;
   const tmp4Result2 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = tmp4Result2.useRoleSubscriptionSettingsDisabled();
-  const obj7 = { style: tmp3.header, children: intl.string(intl10.t["6XpbbR"]) };
-  const tmpResult = FormHeaderDefault;
-  intl = tmp4(1114).intl;
-  const items = [React4(tmpResult, obj7), , , , , , , ];
-  const obj8 = {
-    description: intl2.string(intl10.t.pNZfgG),
+  const obj7 = { style: tmp3.container, children: items1 };
+  const obj8 = { children: items };
+  const obj9 = { title: intl.string(intl8.t["6XpbbR"]) };
+  const TableRowGroupTitle = tmp4(7060).TableRowGroupTitle;
+  intl = tmp4(1113).intl;
+  items = [authStore(TableRowGroupTitle, obj9), ];
+  const obj10 = {
+    description: intl2.string(intl8.t.pNZfgG),
     image: tmp17,
     imageUploadSize: UPLOAD_MEDIUM_SIZE,
     previewShape: FormImagePicker.PreviewShape.CIRCLE,
@@ -93,48 +96,39 @@ function Content() {
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult6 = FormImagePickerDefault;
-  intl2 = tmp4(1114).intl;
-  items[1] = React4(tmpResult6, obj8);
-  const obj9 = { style: tmp3.header, children: intl3.string(intl10.t.rJ6Oad) };
-  const tmpResult7 = FormHeaderDefault;
-  intl3 = tmp4(1114).intl;
-  items[2] = React4(tmpResult7, obj9);
-  const obj10 = { containerStyle: tmp3.inputContainer, accessibilityLabel: intl4.string(intl10.t.rJ6Oad), maxLength: metroImportDefault, value: tmp7, placeholder: intl5.string(intl10.t["i4/g+E"]), onChange: tmp8, returnKeyType: "done", clearable: true, disabled: roleSubscriptionSettingsDisabled };
-  const TextInput = tmp4(7076).TextInput;
-  intl4 = tmp4(1114).intl;
-  intl5 = tmp4(1114).intl;
-  items[3] = React4(TextInput, obj10);
-  const obj11 = { style: tmp3.header, children: intl6.string(intl10.t["74JctW"]) };
-  const tmpResult8 = FormHeaderDefault;
-  intl6 = tmp4(1114).intl;
-  items[4] = React4(tmpResult8, obj11);
-  const obj12 = { containerStyle: tmp3.inputContainer, accessibilityLabel: intl7.string(intl10.t["74JctW"]), maxLength: metroRequire, value: tmp15, placeholder: intl8.string(intl10.t["3YHwoG"]), onChange: tmp16, disabled: roleSubscriptionSettingsDisabled };
-  const TextArea = tmp4(7247).TextArea;
-  intl7 = tmp4(1114).intl;
-  intl8 = tmp4(1114).intl;
-  items[5] = React4(TextArea, obj12);
-  const obj13 = { style: tmp3.header, children: intl9.string(intl10.t.CrRVAx) };
-  const tmpResult9 = FormHeaderDefault;
-  intl9 = tmp4(1114).intl;
-  items[6] = React4(tmpResult9, obj13);
+  const tmpResult = FormImagePickerDefault;
+  intl2 = tmp4(1113).intl;
+  items[1] = authStore(tmpResult, obj10);
+  items1 = [unpackModuleId(View, obj8), , , ];
+  const obj11 = { label: intl3.string(intl8.t.rJ6Oad), maxLength: metroImportAll, value: tmp7, placeholder: intl4.string(intl8.t["i4/g+E"]), onChange: tmp8, returnKeyType: "done", clearable: true, disabled: roleSubscriptionSettingsDisabled };
+  const TextInput = tmp4(7082).TextInput;
+  intl3 = tmp4(1113).intl;
+  intl4 = tmp4(1113).intl;
+  items1[1] = authStore(TextInput, obj11);
+  const obj12 = { label: intl5.string(intl8.t["74JctW"]), maxLength: metroImportDefault, value: tmp15, placeholder: intl6.string(intl8.t["3YHwoG"]), onChange: tmp16, disabled: roleSubscriptionSettingsDisabled };
+  const TextArea = tmp4(7253).TextArea;
+  intl5 = tmp4(1113).intl;
+  intl6 = tmp4(1113).intl;
+  items1[2] = authStore(TextArea, obj12);
+  const obj13 = { title: intl7.string(intl8.t.CrRVAx), hasIcons: false, children: authStore(tmpResult2, obj14) };
+  const TableRowGroup = tmp4(7060).TableRowGroup;
+  intl7 = tmp4(1113).intl;
   const tmp22 = unpackModuleId;
-  const tmp23 = authStore;
-  const tmp24 = React4;
-  const tmpResult10 = FormPriceTierDefault;
+  const tmp23 = View;
+  tmpResult2 = FormPriceTierDefault;
   if (!tmp20) {
     tmp20 = roleSubscriptionSettingsDisabled;
   }
-  const obj14 = { disabled: tmp20, guildId, price: tmp12, onChange: tmp13 };
-  const obj15 = { children: items };
-  items[7] = tmp24(tmpResult10, obj14);
-  return tmp22(tmp23, obj15);
+  obj14 = { disabled: tmp20, guildId, price: tmp12, onChange: tmp13 };
+  items1[3] = authStore(TableRowGroup, obj13);
+  return tmp22(tmp23, obj7);
 }
-({ GuildRoleSubscriptionsTierScenes: hasOwnProperty, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: metroRequire, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: metroImportDefault } = GuildRoleSubscriptionsConstants);
+const View = react_native.View;
+({ GuildRoleSubscriptionsTierScenes: metroRequire, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: metroImportDefault, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: metroImportAll } = GuildRoleSubscriptionsConstants);
 const UPLOAD_MEDIUM_SIZE = Constants.UPLOAD_MEDIUM_SIZE;
-({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const memoResult = react.memo(function GuildRoleSubscriptionTierDetailsTab() {
-  return React4(Content, {});
+  return authStore(Content, {});
 });
 const map1 = memoResult;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDetailsModal.tsx");
@@ -162,11 +156,11 @@ export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
   if (tmp5) {
     tmp5 = null != first1;
   }
-  const obj6 = { title: intl.string(intl10.t.o3pHas), description: intl2.string(intl10.t.oOOME5), canProceedToNextStep: tmp5, nextStep: hasOwnProperty.CHANNEL_BENEFITS, children: React4(map1, {}) };
+  const obj6 = { title: intl.string(intl8.t.o3pHas), description: intl2.string(intl8.t.oOOME5), canProceedToNextStep: tmp5, nextStep: metroRequire.CHANNEL_BENEFITS, children: authStore(map1, {}) };
   const tmp8 = GuildRoleSubscriptionTierEditStepDefault;
-  intl = tmp(1114).intl;
-  intl2 = tmp(1114).intl;
+  intl = tmp(1113).intl;
+  intl2 = tmp(1113).intl;
   const merged = Object.assign(arg0);
-  return React4(tmp8, obj6);
+  return authStore(tmp8, obj6);
 };
 export const GuildRoleSubscriptionTierDetailsTab = memoResult;

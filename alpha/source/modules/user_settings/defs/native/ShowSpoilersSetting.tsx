@@ -1,15 +1,15 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 17451
+// Function ID: 17452
 // Name: ShowSpoilersSetting
-// Dependencies: [19, 8424, 1072, 4834, 1114, 11505, 2]
+// Dependencies: [19, 8432, 1072, 4839, 1113, 11539, 2]
 
-// Module 17391 (ShowSpoilersSetting)
+// Module 17451 (ShowSpoilersSetting)
 import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1114 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
+import intl4 from "intl" /* 1113 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

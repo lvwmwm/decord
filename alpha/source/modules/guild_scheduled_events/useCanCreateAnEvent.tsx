@@ -1,16 +1,16 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9089
+// Function ID: 9090
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 4939, 4880, 4941, 1072, 504, 9011, 2]
+// Dependencies: [32, 4944, 4885, 4946, 1072, 504, 9020, 2]
 // Exports: default
 
-// Module 9070 (useCanCreateAnEvent)
+// Module 9089 (useCanCreateAnEvent)
 import Constants from "Constants" /* 1072 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4939 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9011 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9020 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

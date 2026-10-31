@@ -1,11 +1,11 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11346
+// Function ID: 11347
 // Name: useIsForumChannelSearchActive
-// Dependencies: [8197, 11311, 504, 2]
+// Dependencies: [8205, 11347, 504, 2]
 // Exports: useIsForumChannelSearchActive
 
-// Module 11310 (useIsForumChannelSearchActive)
-import ForumSearchStore from "ForumSearchStore" /* 8197 */;
+// Module 11346 (useIsForumChannelSearchActive)
+import ForumSearchStore from "ForumSearchStore" /* 8205 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,19 +1,19 @@
-// Module ID: 19862
-// Function ID: 19863
+// Module ID: 19919
+// Function ID: 19920
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 1072, 19863, 1410, 2]
+// Dependencies: [19, 1072, 19920, 1409, 2]
 // Exports: default
 
-// Module 19862 (useHighlightedCreatorGuildDetails)
+// Module 19919 (useHighlightedCreatorGuildDetails)
 import Constants from "Constants" /* 1072 */;
-import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 19863 */;
+import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 19920 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let roles, set;
 
 let tmp;
-const AvatarUtilsDefault = tmp(1410);
+const AvatarUtilsDefault = tmp(1409);
 const MarketingURLs = Constants.MarketingURLs;
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/useHighlightedCreatorGuildDetails.tsx");
 

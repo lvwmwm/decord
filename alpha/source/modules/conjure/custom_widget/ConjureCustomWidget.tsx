@@ -1,12 +1,12 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14944
+// Function ID: 14945
 // Name: ConjureCustomWidget
-// Dependencies: [4880, 504, 1448, 7413, 2]
+// Dependencies: [4885, 504, 1447, 7419, 2]
 // Exports: composeConjureCustomWidgetPrompt, useCanConjureCustomWidget
 
-// Module 14906 (ConjureCustomWidget)
-import ConjureUtils from "ConjureUtils" /* 7413 */;
-import GuildStore from "GuildStore" /* 4880 */;
+// Module 14944 (ConjureCustomWidget)
+import ConjureUtils from "ConjureUtils" /* 7419 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

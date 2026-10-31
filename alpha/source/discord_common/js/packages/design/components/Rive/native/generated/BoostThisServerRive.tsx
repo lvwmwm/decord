@@ -1,13 +1,13 @@
-// Module ID: 5142
-// Function ID: 5143
+// Module ID: 5147
+// Function ID: 5148
 // Name: BoostThisServerRive
-// Dependencies: [109, 19, 21, 5084, 5143, 5141, 2]
+// Dependencies: [109, 19, 21, 5089, 5148, 5146, 2]
 // Exports: BoostThisServerRive
 
-// Module 5142 (BoostThisServerRive)
+// Module 5147 (BoostThisServerRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5084 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5141 */;
+import BaseRive2 from "BaseRive" /* 5089 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5146 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

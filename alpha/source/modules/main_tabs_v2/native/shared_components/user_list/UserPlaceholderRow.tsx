@@ -1,18 +1,18 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 9128
+// Function ID: 9129
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 5010, 21, 5009, 575, 5090, 504, 5249, 5252, 2]
+// Dependencies: [19, 17, 5015, 21, 5014, 575, 5095, 504, 5254, 5257, 2]
 
-// Module 9109 (UserPlaceholderRow)
+// Module 9128 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -49,7 +49,7 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  let obj = sharedValue(5090);
+  let obj = sharedValue(5095);
   const tmp4 = sharedValue;
   sharedValue = obj.useSharedValue(1);
   let obj2 = sharedValue(504);
@@ -83,12 +83,12 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10137317865125;
   fn.__initData = __initData;
-  const tmp4Result = tmp4(5090);
+  const tmp4Result = tmp4(5095);
   const animatedStyle = tmp4Result.useAnimatedStyle(fn);
   const obj3 = { style: items2, collapsable: false, children: items3 };
   items2 = [tmp3.row, animatedStyle];
   const obj4 = { style: tmp3.placeholderAvatar };
-  View = flag(5090).View;
+  View = flag(5095).View;
   items3 = [closure_6(View, obj4), ];
   const obj5 = { style: tmp3.rowInner, children: closure_6(View, obj6) };
   obj6 = { style: tmp3.rowHeaderWrapper, children: closure_6(View, obj7) };

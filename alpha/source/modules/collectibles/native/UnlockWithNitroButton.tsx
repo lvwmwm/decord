@@ -1,27 +1,27 @@
-// Module ID: 15021
-// Function ID: 15022
+// Module ID: 15058
+// Function ID: 15059
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7590, 7728, 1074, 21, 504, 7586, 15006, 1114, 5630, 5619, 9506, 2]
+// Dependencies: [19, 7597, 7735, 1074, 21, 504, 7593, 15043, 1113, 5635, 5624, 9528, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 15021 (UnlockWithNitroButton)
+// Module 15058 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import ProductIds from "ProductIds" /* 7586 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15006 */;
+import ProductIds from "ProductIds" /* 7593 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15043 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7590 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
+import IAPStore from "IAPStore" /* 7597 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let tmp;
-const intl2 = tmp(1114);
-const Text_Text = tmp(5619);
-const BaseTextButton2 = tmp(5630);
-const NitroWheelIcon = tmp(9506);
+const intl2 = tmp(1113);
+const Text_Text = tmp(5624);
+const BaseTextButton2 = tmp(5635);
+const NitroWheelIcon = tmp(9528);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");

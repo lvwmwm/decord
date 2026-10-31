@@ -1,30 +1,30 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12036
+// Function ID: 12037
 // Name: CallTile
-// Dependencies: [19, 17, 6708, 1384, 10981, 5676, 21, 5009, 5006, 575, 7320, 1626, 504, 5754, 8742, 11719, 11970, 11740, 11749, 11999, 12004, 12005, 12006, 12007, 12008, 1188, 11663, 5090, 5249, 12009, 2]
+// Dependencies: [19, 17, 6714, 1383, 11000, 5681, 21, 5014, 5011, 575, 7326, 1625, 504, 5759, 8750, 11756, 12008, 11777, 11786, 12037, 12042, 12043, 12044, 12045, 12046, 1187, 11700, 5095, 5254, 12047, 2]
 
-// Module 11998 (CallTile)
+// Module 12036 (CallTile)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
-import timing from "timing" /* 5249 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5754 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11999 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12004 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12005 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12006 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12007 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12008 */;
+import native from "native" /* 1187 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import timing from "timing" /* 5254 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12037 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12042 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12043 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12044 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12045 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12046 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
-import UserStore from "UserStore" /* 1384 */;
-import ChannelCallStore from "ChannelCallStore" /* 10981 */;
-import CallConstants from "CallConstants" /* 5676 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import UserStore from "UserStore" /* 1383 */;
+import ChannelCallStore from "ChannelCallStore" /* 11000 */;
+import CallConstants from "CallConstants" /* 5681 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import ColorUtils_mod from "ColorUtils" /* 5006 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import ColorUtils_mod from "ColorUtils" /* 5011 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -56,7 +56,7 @@ class StreamPreviewTile {
     obj2 = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "sa", borderRadius: false },
+      style: { aspectRatio: "dispatch", borderRadius: false },
       disableTransition: true,
       onPress() {
         return closure_1_8();
@@ -118,8 +118,8 @@ class TileOverlay {
     ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
     useSafeAreaInsetsDefault();
     const tmp5 = reveal;
-    reveal = react.useContext(reveal(11663).RevealContext).reveal;
-    let obj = reveal(5090);
+    reveal = react.useContext(reveal(11700).RevealContext).reveal;
+    let obj = reveal(5095);
     class T {
       constructor() {
         tmp = closure_0;
@@ -136,7 +136,7 @@ class TileOverlay {
         return obj;
       }
     }
-    let obj2 = { withTiming: reveal(5249).withTiming, reveal, STANDARD_EASING: reveal(1188).STANDARD_EASING };
+    let obj2 = { withTiming: reveal(5254).withTiming, reveal, STANDARD_EASING: reveal(1187).STANDARD_EASING };
     T.__closure = obj2;
     T.__workletHash = 15640123774063;
     T.__initData = __initData;
@@ -160,15 +160,15 @@ class TileOverlay {
     }
     const obj3 = { pointerEvents: "none", style: items, children: items1 };
     items = [absoluteFill.absoluteFill, rect, animatedStyle];
-    const View = tmp2(5090).View;
+    const View = tmp2(5095).View;
     if (isActiveStream) {
-      const obj4 = { style: tmp.liveContainer, children: closure_13(tmp5(1188).LiveTag, {}) };
+      const obj4 = { style: tmp.liveContainer, children: closure_13(tmp5(1187).LiveTag, {}) };
       isActiveStream = closure_13(closure_5, obj4);
     }
     items1 = [isActiveStream, ];
     const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
     obj6 = { style: tmp.usernameContainer, children: items2 };
-    items2 = [closure_13(ParticipantIcon, { participant }), closure_13(tmp2(12009), { channel, participant })];
+    items2 = [closure_13(ParticipantIcon, { participant }), closure_13(tmp2(12047), { channel, participant })];
     items1[1] = closure_13(closure_5, obj5);
     return closure_15(View, obj3);
   }

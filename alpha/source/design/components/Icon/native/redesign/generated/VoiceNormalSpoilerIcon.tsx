@@ -1,14 +1,14 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8672
+// Function ID: 8673
 // Name: VoiceNormalSpoilerIcon
-// Dependencies: [19, 21, 575, 5711, 8609, 2]
+// Dependencies: [19, 21, 575, 5716, 8617, 2]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 8664 (VoiceNormalSpoilerIcon)
+// Module 8672 (VoiceNormalSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 8609 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 8617 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15754
+// Function ID: 15755
 // Name: GuildBadgeForce
-// Dependencies: [19, 21, 1267, 15701, 8023, 2]
+// Dependencies: [19, 21, 1266, 15741, 8031, 2]
 // Exports: GuildBadgeForce
 
-// Module 15714 (GuildBadgeForce)
-import v1 from "v1" /* 1267 */;
-import inlineStyles from "inlineStyles" /* 8023 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15701 */;
+// Module 15754 (GuildBadgeForce)
+import v1 from "v1" /* 1266 */;
+import inlineStyles from "inlineStyles" /* 8031 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15741 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -60,7 +60,7 @@ export function GuildBadgeForce(width) {
     tmp9Result = num2 > 0;
   }
   const obj3 = { width: num, height: num2, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp3(8023).Svg;
+  const Svg = tmp3(8031).Svg;
   const merged1 = Object.assign(merged);
   items = [_false(inlineStyles.Path, { d: "M7 0H4v1h3V0ZM11 1H7v1h4V1ZM9 6H8v4h1V6ZM1 5H0v6h1V5ZM15 2h-4v1h4V2Z", fill: "#000" }), , , , , , , , , , , , , , , , , , , , ];
   const obj4 = { d: "M7 1H4v1h3V1ZM11 2H7v1h4V2Z", fill: secondaryColorsTransformed[2] };
@@ -85,7 +85,7 @@ export function GuildBadgeForce(width) {
   items[12] = _false(inlineStyles.Path, obj11);
   const obj12 = { d: "M6 2H5v1h1V2ZM9 4H8v2h1V4ZM10 3H9v1h1V3ZM5 11H4v1h1v-1ZM4 13H3v1h1v-1ZM3 11H2v2h1v-2ZM8 13v-1H7v-1H6v2h1v1h4v-1H8ZM9 10H8v1h1v-1Z", fill: secondaryColorsTransformed[0] };
   items[13] = _false(inlineStyles.Path, obj12);
-  const Path = tmp3(8023).Path;
+  const Path = tmp3(8031).Path;
   if (tmp9Result) {
     const _HermesInternal = HermesInternal;
     combined = "url(#" + memo + ")";
@@ -104,9 +104,9 @@ export function GuildBadgeForce(width) {
   items[19] = _false(inlineStyles.Path, { d: "M10 4H9v2h1V4ZM7 13H6v1h1v-1ZM6 11H5v2h1v-2ZM11 12h-1v1h1v-1ZM10 10H9v2h1v-2Z", fill: "#000" });
   if (tmp9Result) {
     const obj17 = { children: React3(RadialGradient, obj18) };
-    const Defs = tmp3(8023).Defs;
+    const Defs = tmp3(8031).Defs;
     obj18 = { id: memo, cx: 0.75, cy: 0.5, r: 1, fx: 0.75, fy: 0.5, children: items1 };
-    RadialGradient = tmp3(8023).RadialGradient;
+    RadialGradient = tmp3(8031).RadialGradient;
     const obj19 = { stopColor: primaryColorsTransformed[1], offset: "30%" };
     items1 = [_false(inlineStyles.Stop, obj19), ];
     const obj20 = { stopColor: secondaryColorsTransformed[1], offset: "70%" };

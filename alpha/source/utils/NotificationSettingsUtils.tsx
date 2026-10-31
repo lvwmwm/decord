@@ -1,19 +1,19 @@
-// Module ID: 7277
-// Function ID: 7278
+// Module ID: 7283
+// Function ID: 7284
 // Name: NotificationSettingsUtils
-// Dependencies: [7278, 4858, 6056, 6769, 1072, 4954, 6770, 1082, 1397, 5755, 1253, 2]
+// Dependencies: [7284, 4863, 6061, 6775, 1072, 4959, 6776, 1082, 1396, 5760, 1252, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 7277 (NotificationSettingsUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import NotificationConstants from "NotificationConstants" /* 4954 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
-import ReadStateConstants from "ReadStateConstants" /* 6770 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7278 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+// Module 7283 (NotificationSettingsUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import NotificationConstants from "NotificationConstants" /* 4959 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import ReadStateConstants from "ReadStateConstants" /* 6776 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7284 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
@@ -339,7 +339,7 @@ export function trackChannelNotificationSettingsUpdate(updateType) {
     num2 = 0;
   }
   const tmp10 = num2 ^ num;
-  const obj4 = guildId(1397);
+  const obj4 = guildId(1396);
   const removeFlagsResult = obj4.removeFlags(tmp10, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
   const lastMessage = MessageStore.getLastMessage(channelId);
   let type;

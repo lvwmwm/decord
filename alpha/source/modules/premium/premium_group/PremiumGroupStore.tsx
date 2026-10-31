@@ -1,15 +1,15 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15372
+// Function ID: 15373
 // Name: PremiumGroupStore
-// Dependencies: [2053, 2061, 1072, 15334, 504, 572, 2]
+// Dependencies: [2052, 2060, 1072, 15373, 504, 572, 2]
 
-// Module 15333 (PremiumGroupStore)
+// Module 15372 (PremiumGroupStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 15334 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2061 */;
+import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 15373 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2060 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;

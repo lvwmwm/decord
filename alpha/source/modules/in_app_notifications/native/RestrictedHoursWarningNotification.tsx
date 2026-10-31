@@ -1,19 +1,19 @@
-// Module ID: 11169
-// Function ID: 11170
+// Module ID: 11188
+// Function ID: 11189
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 11004, 1072, 21, 5009, 575, 11170, 6738, 11005, 7557, 11057, 5619, 2]
+// Dependencies: [19, 17, 11023, 1072, 21, 5014, 575, 11189, 6744, 11024, 7563, 11076, 5624, 2]
 
-// Module 11169 (RestrictedHoursWarningNotification)
+// Module 11188 (RestrictedHoursWarningNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import openUserSettings from "openUserSettings" /* 7557 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11004 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11005 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11023 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11024 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -30,7 +30,7 @@ const memoResult = react.memo(function RestrictedHoursWarningNotification(notifi
   notification = notification.notification;
   const type = notification.type;
   let obj2 = { size: "sm", color: type(575).colors.WHITE };
-  const ThemeDarkIcon = notification(11170).ThemeDarkIcon;
+  const ThemeDarkIcon = notification(11189).ThemeDarkIcon;
   const items = [notification.title];
   const items1 = [type];
   const tmp = <View style={closure_9().iconContainer}>{null}</View>;
@@ -46,7 +46,7 @@ const memoResult = react.memo(function RestrictedHoursWarningNotification(notifi
     const obj4 = { screen: metroImportDefault.FAMILY_CENTER };
     obj3.openUserSettings(obj4);
   }, items1);
-  const NotificationPressable = notification(11057).NotificationPressable;
+  const NotificationPressable = notification(11076).NotificationPressable;
   let obj4 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle };
   return <NotificationPressable icon={tmp} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });

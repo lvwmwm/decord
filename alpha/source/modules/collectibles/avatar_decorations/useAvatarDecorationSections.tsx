@@ -1,16 +1,16 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15063
+// Function ID: 15064
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7713, 7728, 563, 7725, 1114, 15027, 2]
+// Dependencies: [32, 19, 7720, 7735, 563, 7732, 1113, 15064, 2]
 // Exports: default
 
-// Module 15026 (useAvatarDecorationSections)
+// Module 15063 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
-import intl4 from "intl" /* 1114 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
+import intl4 from "intl" /* 1113 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7713 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, premium_purchase;
@@ -80,7 +80,7 @@ export default function useAvatarDecorationSections() {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(15027)(tmp5, obj.PREVIEW);
+  return first(15064)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

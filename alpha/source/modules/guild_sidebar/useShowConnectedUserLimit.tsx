@@ -1,12 +1,12 @@
-// Module ID: 13792
-// Function ID: 13793
+// Module ID: 13827
+// Function ID: 13828
 // Name: useShowConnectedUserLimit
-// Dependencies: [1072, 9205, 2]
+// Dependencies: [1072, 9224, 2]
 // Exports: default, useConnectedUserLimit, useConnectedUserLimitFormatted
 
-// Module 13792 (useShowConnectedUserLimit)
+// Module 13827 (useShowConnectedUserLimit)
 import Constants from "Constants" /* 1072 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9205 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9224 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Constants.MAX_STAGE_VOICE_USER_LIMIT;

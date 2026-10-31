@@ -1,16 +1,16 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16565
+// Function ID: 16566
 // Name: ProfileCustomizationScrollAwayTabs
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5591, 5090, 1376, 5298, 16408, 12476, 11445, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5596, 5095, 1375, 5303, 16450, 12511, 14177, 2]
 // Exports: default
 
-// Module 16523 (ProfileCustomizationScrollAwayTabs)
+// Module 16565 (ProfileCustomizationScrollAwayTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

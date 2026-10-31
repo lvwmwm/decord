@@ -1,13 +1,13 @@
-// Module ID: 2040
-// Function ID: 2041
+// Module ID: 2038
+// Function ID: 2039
 // Name: ApplicationStore
-// Dependencies: [32, 2017, 504, 572, 2]
+// Dependencies: [32, 2016, 504, 572, 2]
 
-// Module 2040 (ApplicationStore)
+// Module 2038 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2017 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
 import size from "module_2" /* 2 */;
 
 let attachments;

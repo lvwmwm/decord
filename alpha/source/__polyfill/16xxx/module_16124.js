@@ -1,25 +1,85 @@
 // Module ID: 16124
 // Function ID: 16125
-// Dependencies: [16090, 16111, 16125, 16135, 16136]
+// Dependencies: []
 
 // Module 16124
-import _mod16090 from "module_16090" /* 16090 */;
-import _mod16111 from "module_16111" /* 16111 */;
-import f2 from "f" /* 16125 */;
-import _mod16135 from "module_16135" /* 16135 */;
-import _mod16136 from "module_16136" /* 16136 */;
-
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod16135(arg0));
-  const f = _mod16136.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
-  }
-  return tmp2;
+let _globalThis = typeof globalThis === "object";
+if (typeof globalThis === "object") {
+  _globalThis = globalThis;
 }
-let closure_2 = _mod16090([].concat);
-_mod16111("Reflect", "ownKeys") || ownKeys;
+let tmp = _globalThis;
+if (tmp) {
+  const _Math = Math;
+  tmp = _globalThis.Math === Math;
+}
+if (tmp) {
+  tmp = _globalThis;
+}
+if (!tmp) {
+  const _window = window;
+  let _window2 = typeof window === "object";
+  if (typeof window === "object") {
+    _window2 = window;
+  }
+  let tmp2 = _window2;
+  if (tmp2) {
+    const _Math2 = Math;
+    tmp2 = _window2.Math === Math;
+  }
+  if (tmp2) {
+    tmp2 = _window2;
+  }
+  tmp = tmp2;
+}
+if (!tmp) {
+  const _self = self;
+  let _self2 = typeof self === "object";
+  if (typeof self === "object") {
+    _self2 = self;
+  }
+  let tmp3 = _self2;
+  if (tmp3) {
+    const _Math3 = Math;
+    tmp3 = _self2.Math === Math;
+  }
+  if (tmp3) {
+    tmp3 = _self2;
+  }
+  tmp = tmp3;
+}
+if (!tmp) {
+  let tmp5 = typeof global === "object";
+  if (typeof global === "object") {
+    tmp5 = global;
+  }
+  let tmp6 = tmp5;
+  if (tmp6) {
+    const _Math4 = Math;
+    tmp6 = tmp5.Math === Math;
+  }
+  if (tmp6) {
+    tmp6 = tmp5;
+  }
+  tmp = tmp6;
+}
+if (!tmp) {
+  let self = typeof this === "object";
+  if (typeof this === "object") {
+    self = this;
+  }
+  let tmp7 = self;
+  if (tmp7) {
+    const _Math5 = Math;
+    tmp7 = self.Math === Math;
+  }
+  if (tmp7) {
+    tmp7 = self;
+  }
+  tmp = tmp7;
+}
+if (!tmp) {
+  const _Function = Function;
+  tmp = Function("return this")();
+}
 
-export default _mod16111("Reflect", "ownKeys") || ownKeys;
+export default tmp;

@@ -1,30 +1,30 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12391
+// Function ID: 12392
 // Name: MediaKeyboard
-// Dependencies: [19, 7694, 8200, 1622, 1072, 1497, 12186, 21, 1253, 5090, 5204, 1624, 12354, 5591, 575, 8952, 12356, 12312, 10510, 8212, 5202, 8202, 1376, 8201, 10508, 12358, 1114, 8670, 8637, 10513, 10515, 8651, 10517, 12392, 12393, 10519, 12394, 10520, 2]
+// Dependencies: [19, 7701, 8208, 1621, 1072, 1496, 12224, 21, 1252, 5095, 5209, 1623, 12392, 5596, 575, 8961, 12394, 12350, 10530, 8220, 5207, 8210, 1375, 8209, 10528, 12396, 1113, 8678, 8645, 10533, 10535, 8659, 10537, 12430, 12431, 10539, 12432, 10540, 2]
 
-// Module 12353 (MediaKeyboard)
-import intl6 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
-import ChatInputUtils from "ChatInputUtils" /* 5202 */;
-import DraftStore from "DraftStore" /* 7694 */;
-import Upload from "Upload" /* 8202 */;
-import ThreadIcon from "ThreadIcon" /* 8637 */;
-import ImageIcon from "ImageIcon" /* 8651 */;
-import AppsIcon from "AppsIcon" /* 8670 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10510 */;
-import PollsIcon from "PollsIcon" /* 10513 */;
-import AttachmentIcon from "AttachmentIcon" /* 10515 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10517 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10519 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 12186 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12358 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 12392 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 12393 */;
+// Module 12391 (MediaKeyboard)
+import intl6 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import Upload from "Upload" /* 8210 */;
+import ThreadIcon from "ThreadIcon" /* 8645 */;
+import ImageIcon from "ImageIcon" /* 8659 */;
+import AppsIcon from "AppsIcon" /* 8678 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10530 */;
+import PollsIcon from "PollsIcon" /* 10533 */;
+import AttachmentIcon from "AttachmentIcon" /* 10535 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10537 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10539 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 12224 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12396 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 12430 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 12431 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8200 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1622 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13391
+// Function ID: 13392
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 5009, 575, 5602, 5090, 5632, 5633, 5619, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5607, 5095, 5637, 5638, 5624, 2]
 // Exports: default
 
-// Module 13356 (ShareFooterLayout)
+// Module 13391 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
-import spring from "spring" /* 5632 */;
-import springPresets from "springPresets" /* 5633 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
+import spring from "spring" /* 5637 */;
+import springPresets from "springPresets" /* 5638 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -87,7 +87,7 @@ export default function ShareFooterLayout(arg0) {
   const tmp11 = View;
   if (tmp12) {
     const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = closure_4(tmp4(5619).Text, obj8);
+    tmp12 = closure_4(tmp4(5624).Text, obj8);
   }
   items4[1] = tmp12;
   items2[1] = closure_6(tmp11, obj6);

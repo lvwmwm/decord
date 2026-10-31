@@ -1,24 +1,24 @@
-// Module ID: 16565
-// Function ID: 16566
+// Module ID: 16607
+// Function ID: 16608
 // Name: TinyBroncoPromoSheet
-// Dependencies: [19, 6731, 1072, 4855, 21, 5009, 575, 6720, 16566, 5253, 16564, 7947, 6723, 2062, 7557, 1114, 3125, 10817, 5712, 16567, 6761, 5629, 2]
+// Dependencies: [19, 6737, 1072, 4860, 21, 5014, 575, 6726, 16608, 5258, 16606, 7955, 6729, 2061, 7563, 1113, 3128, 10837, 5717, 16609, 6767, 5634, 2]
 // Exports: default
 
-// Module 16565 (TinyBroncoPromoSheet)
+// Module 16607 (TinyBroncoPromoSheet)
 import nativeDefault from "native" /* 575 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import _modDef3125 from "module_3125" /* 3125 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6723 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6731 */;
-import openUserSettings from "openUserSettings" /* 7557 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
-import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 16564 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import _modDef3128 from "module_3128" /* 3128 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6737 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 16606 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -50,9 +50,9 @@ export default function TinyBroncoPromoSheet(markAsDismissed) {
   let dismissOnce;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = closure_10();
-  let obj = dismissOnce(6720);
+  let obj = dismissOnce(6726);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(16566);
+  let obj2 = dismissOnce(16608);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -97,9 +97,9 @@ export default function TinyBroncoPromoSheet(markAsDismissed) {
     const obj3 = { screen: metroRequire.AGE_GROUP };
     obj2.openUserSettings(obj3);
   }, items4);
-  const intl = dismissOnce(1114).intl;
+  const intl = dismissOnce(1113).intl;
   const string = intl.string;
-  const tmp13 = _modDef3125;
+  const tmp13 = _modDef3128;
   if (isVerifiedTeen) {
     obj3.text = string(tmp13["+7NlgO"]);
     obj3.onPress = callback3;
@@ -111,14 +111,14 @@ export default function TinyBroncoPromoSheet(markAsDismissed) {
     tmp14 = tmp12;
     tmp15 = obj3;
   }
-  const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3125).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
-  const PromoSheet = tmp2(10817).PromoSheet;
-  obj5 = { source: tmp14(16567), style: tmp.illustration, resizeMode: "contain" };
-  tmp14Result = tmp14(5712);
-  intl2 = tmp2(1114).intl;
-  const intl3 = tmp2(1114).intl;
+  const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3128).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
+  const PromoSheet = tmp2(10837).PromoSheet;
+  obj5 = { source: tmp14(16609), style: tmp.illustration, resizeMode: "contain" };
+  tmp14Result = tmp14(5717);
+  intl2 = tmp2(1113).intl;
+  const intl3 = tmp2(1113).intl;
   const format = intl3.format;
-  const tmp14Result2 = tmp14(3125);
+  const tmp14Result2 = tmp14(3128);
   if (isVerifiedTeen) {
     const obj6 = { handleOnConfirmAgeHook: callback2 };
     formatResult = format(tmp14Result2["Ga2z/E"], obj6);
@@ -127,13 +127,13 @@ export default function TinyBroncoPromoSheet(markAsDismissed) {
     formatResult = format(tmp14Result2.xuvWqy, obj7);
   }
   obj8 = { size: "lg", style: tmp.actions, children: items5 };
-  ButtonGroup = tmp2(6761).ButtonGroup;
+  ButtonGroup = tmp2(6767).ButtonGroup;
   items5 = [, ];
   const obj9 = { size: "lg", text: tmp15.text, onPress: tmp15.onPress };
-  items5[0] = closure_8(dismissOnce(5629).Button, obj9);
-  const obj10 = { size: "lg", variant: "secondary", text: intl4.string(dismissOnce(1114).t["NX+WJN"]), onPress: callback1 };
-  const Button = tmp2(5629).Button;
-  intl4 = tmp2(1114).intl;
+  items5[0] = closure_8(dismissOnce(5634).Button, obj9);
+  const obj10 = { size: "lg", variant: "secondary", text: intl4.string(dismissOnce(1113).t["NX+WJN"]), onPress: callback1 };
+  const Button = tmp2(5634).Button;
+  intl4 = tmp2(1113).intl;
   items5[1] = closure_8(Button, obj10);
   return closure_8(PromoSheet, obj4);
 };

@@ -1,14 +1,14 @@
-// Module ID: 8007
-// Function ID: 8008
+// Module ID: 8015
+// Function ID: 8016
 // Name: CreditCardIcon
-// Dependencies: [19, 21, 575, 5711, 8008, 2]
+// Dependencies: [19, 21, 575, 5716, 8016, 2]
 // Exports: CreditCardIcon
 
-// Module 8007 (CreditCardIcon)
+// Module 8015 (CreditCardIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 8008 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 8016 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

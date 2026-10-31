@@ -1,21 +1,21 @@
-// Module ID: 19218
-// Function ID: 19219
+// Module ID: 19270
+// Function ID: 19271
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 7474, 9296, 9320, 1114, 9275, 6969, 19219, 9213, 2]
+// Dependencies: [19, 21, 7480, 9316, 9340, 1113, 9294, 6975, 19271, 9232, 2]
 
-// Module 19218 (VoicePanelGamesSection)
+// Module 19270 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1114 */;
-import useGame from "useGame" /* 7474 */;
-import FormComponents from "FormComponents" /* 9213 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9296 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19219 */;
+import intl3 from "intl" /* 1113 */;
+import useGame from "useGame" /* 7480 */;
+import FormComponents from "FormComponents" /* 9232 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9316 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19271 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const GameActivityIconDefault = tmp3(9275);
+const GameActivityIconDefault = tmp3(9294);
 function GameRow(gameId) {
   let intl2;
   let obj6;
@@ -34,11 +34,11 @@ function GameRow(gameId) {
     if ("" !== data.name) {
       name = data.name;
     } else {
-      const intl = tmp(1114).intl;
-      name = intl.string(tmp(1114).t.GIWFlF);
+      const intl = tmp(1113).intl;
+      name = intl.string(tmp(1113).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(6969).TableRow;
+    const TableRow = tmp(6975).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };
@@ -54,7 +54,7 @@ function GameRow(gameId) {
         accessibilityRole: "button",
         accessibilityLabel: intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)
       };
-      intl2 = tmp(1114).intl;
+      intl2 = tmp(1113).intl;
       obj6 = { gameName: name };
     }
     return tmp6(TableRow, obj5);

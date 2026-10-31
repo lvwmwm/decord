@@ -1,23 +1,23 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18368
+// Function ID: 18369
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6880, 4880, 6766, 6769, 5674, 1072, 21, 5009, 504, 10973, 5619, 1114, 18326, 5199, 5196, 2]
+// Dependencies: [19, 17, 6886, 4885, 6772, 6775, 5679, 1072, 21, 5014, 504, 10992, 5624, 1113, 18369, 5204, 5201, 2]
 // Exports: default
 
-// Module 18325 (HomeDrawerFolderRow)
+// Module 18368 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10973 */;
+import intl5 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10992 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6880 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SortedGuildStore from "SortedGuildStore" /* 6766 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -258,7 +258,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(5199).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(5204).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "folder-expanded-children" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

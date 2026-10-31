@@ -1,24 +1,24 @@
-// Module ID: 13794
-// Function ID: 13795
+// Module ID: 13829
+// Function ID: 13830
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5009, 1376, 575, 5016, 9801, 5248, 5619, 1114, 2]
+// Dependencies: [19, 17, 21, 5014, 1375, 575, 5021, 9822, 5253, 5624, 1113, 2]
 // Exports: default
 
-// Module 13794 (NewBadge)
+// Module 13829 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import useThemeDefault from "useTheme" /* 5248 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9801 */;
+import intl2 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9822 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(5016);
+const shared = tmp(5021);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -58,6 +58,6 @@ export default function NewBadge() {
   } else {
     str = "text-brand";
   }
-  intl = tmp7(1114).intl;
+  intl = tmp7(1113).intl;
   return <tmp6 style={tmp4.base}>{null}</tmp6>;
 };

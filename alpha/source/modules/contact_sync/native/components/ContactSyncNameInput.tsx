@@ -1,18 +1,18 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14254
+// Function ID: 14255
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 5009, 575, 5602, 1114, 5619, 1188, 5629, 14213, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5607, 1113, 5624, 1187, 5634, 14251, 2]
 // Exports: default
 
-// Module 14216 (ContactSyncNameInput)
+// Module 14254 (ContactSyncNameInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1114 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import intl7 from "intl" /* 1113 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -20,7 +20,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp5;
-const ContactSyncErrorDefault = tmp5(14213);
+const ContactSyncErrorDefault = tmp5(14251);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -75,10 +75,10 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   items = [tmp.content, { paddingBottom: insets.bottom }];
   const obj2 = { style: tmp.flex, children: items1 };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: string2Result };
-  const Text = tmp10(5619).Text;
-  const intl2 = tmp10(1114).intl;
+  const Text = tmp10(5624).Text;
+  const intl2 = tmp10(1113).intl;
   const string2 = intl2.string;
-  const t2 = tmp10(1114).t;
+  const t2 = tmp10(1113).t;
   if (null != onRemoveName) {
     string2Result = string2(t2["/OywGQ"]);
   } else {
@@ -86,34 +86,34 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   }
   items1 = [metroRequire(Text, obj3), , , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: string3Result };
-  const Text2 = tmp10(5619).Text;
-  const intl3 = tmp10(1114).intl;
+  const Text2 = tmp10(5624).Text;
+  const intl3 = tmp10(1113).intl;
   const string3 = intl3.string;
-  const t3 = tmp10(1114).t;
+  const t3 = tmp10(1113).t;
   if (null != onRemoveName) {
     string3Result = string3(t3["xCHh/t"]);
   } else {
     string3Result = string3(t3.xI496M);
   }
   items1[1] = metroRequire(Text2, obj4);
-  const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: intl4.string(tmp10(1114).t["42/D2U"]) };
-  const Text3 = tmp10(5619).Text;
-  intl4 = tmp10(1114).intl;
+  const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: intl4.string(tmp10(1113).t["42/D2U"]) };
+  const Text3 = tmp10(5624).Text;
+  intl4 = tmp10(1113).intl;
   items1[2] = metroRequire(Text3, obj5);
-  const obj6 = { value: first, onChangeText: tmp4, style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp10(1188).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
-  const InputView = tmp10(1188).InputView;
+  const obj6 = { value: first, onChangeText: tmp4, style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp10(1187).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
+  const InputView = tmp10(1187).InputView;
   items1[3] = metroRequire(InputView, obj6);
   let tmp13Result = null;
   if (flag) {
-    const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: intl5.string(tmp10(1114).t.bCQt9K) };
-    const Text4 = tmp10(5619).Text;
-    intl5 = tmp10(1114).intl;
+    const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: intl5.string(tmp10(1113).t.bCQt9K) };
+    const Text4 = tmp10(5624).Text;
+    intl5 = tmp10(1113).intl;
     tmp13Result = tmp13(Text4, obj7);
   }
   items1[4] = tmp13Result;
   items2 = [metroImportDefault(View, obj2), , , ];
   let str = "lg";
-  const Button = tmp10(5629).Button;
+  const Button = tmp10(5634).Button;
   if (null != onRemoveName) {
     str = "md";
   }
@@ -134,7 +134,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
     obj10 = {
       variant: "secondary",
       size: "md",
-      text: intl6.string(tmp10(1114).t["91RssO"]),
+      text: intl6.string(tmp10(1113).t["91RssO"]),
       onPress() {
           let tmp;
           if (onRemoveName != null) {
@@ -143,8 +143,8 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
           return tmp;
         }
     };
-    Button2 = tmp10(5629).Button;
-    intl6 = tmp10(1114).intl;
+    Button2 = tmp10(5634).Button;
+    intl6 = tmp10(1113).intl;
     tmp13Result2 = tmp13(tmp12, obj9);
   }
   items2[2] = tmp13Result2;

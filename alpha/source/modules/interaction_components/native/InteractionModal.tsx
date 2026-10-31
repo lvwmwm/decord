@@ -1,27 +1,27 @@
-// Module ID: 19431
-// Function ID: 19432
+// Module ID: 19488
+// Function ID: 19489
 // Name: InteractionModal
-// Dependencies: [19, 17, 16184, 21, 5009, 575, 6738, 19432, 5602, 1188, 1410, 5619, 6974, 1114, 7048, 8017, 8688, 19433, 5629, 2]
+// Dependencies: [19, 17, 16225, 21, 5014, 575, 6744, 19489, 5607, 1187, 1409, 5624, 6980, 1113, 7054, 8025, 8696, 19490, 5634, 2]
 // Exports: openInteractionModal
 
-// Module 19431 (InteractionModal)
+// Module 19488 (InteractionModal)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import Pressables from "Pressables" /* 6974 */;
-import XSmallIcon from "XSmallIcon" /* 7048 */;
-import InlineNotice2 from "InlineNotice" /* 8017 */;
-import InteractionModalStore from "InteractionModalStore" /* 16184 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 19432 */;
-import renderComponents from "renderComponents" /* 19433 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import Pressables from "Pressables" /* 6980 */;
+import XSmallIcon from "XSmallIcon" /* 7054 */;
+import InlineNotice2 from "InlineNotice" /* 8025 */;
+import InteractionModalStore from "InteractionModalStore" /* 16225 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 19489 */;
+import renderComponents from "renderComponents" /* 19490 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -99,18 +99,18 @@ class InteractionModal {
     const obj12 = { children: items3 };
     items3 = [tmp7Result, ];
     const obj13 = { type: "warning", message: intl2.format(intl4.t["dSTy/w"], { applicationName }), role: "none" };
-    const InlineNotice = tmp2(8017).InlineNotice;
-    intl2 = tmp2(1114).intl;
+    const InlineNotice = tmp2(8025).InlineNotice;
+    intl2 = tmp2(1113).intl;
     items3[1] = metroRequire(InlineNotice, obj13);
     items4 = [metroImportDefault(_false, obj12), , ];
     const obj14 = { modal, validators, validationErrors, setValidationErrors, children: tmp2Result.renderComponents(components) };
-    const ComponentStateContextProvider = tmp2(8688).ComponentStateContextProvider;
+    const ComponentStateContextProvider = tmp2(8696).ComponentStateContextProvider;
     tmp2Result = renderComponents;
     items4[1] = metroRequire(ComponentStateContextProvider, obj14);
     const obj15 = { style: tmp.footer, children: metroRequire(Button, obj16) };
     obj16 = { text: intl3.string(intl4.t.geKm7t), loading: submissionState === InteractionModalState.IN_FLIGHT, size: "lg", onPress: onSubmit };
-    Button = tmp2(5629).Button;
-    intl3 = tmp2(1114).intl;
+    Button = tmp2(5634).Button;
+    intl3 = tmp2(1113).intl;
     items4[2] = metroRequire(_false, obj15);
     items2[1] = metroImportDefault(tmp8, obj9);
     return metroImportDefault(_false, obj2);

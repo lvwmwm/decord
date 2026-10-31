@@ -1,20 +1,20 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 17806
+// Function ID: 17807
 // Name: UserSettingsDesignSystemHaptics
-// Dependencies: [19, 17, 21, 5009, 5629, 5255, 5256, 6022, 6971, 5619, 5257, 2]
+// Dependencies: [19, 17, 21, 5014, 5634, 5260, 5261, 6027, 6977, 5624, 5262, 2]
 // Exports: default
 
-// Module 17762 (UserSettingsDesignSystemHaptics)
+// Module 17806 (UserSettingsDesignSystemHaptics)
 import react_native from "react-native" /* 17 */;
-import HapticUtils from "HapticUtils" /* 5255 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5256 */;
-import Patterns from "Patterns" /* 5257 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Stack_Stack from "Stack/Stack" /* 6022 */;
-import Card_Card from "Card/Card" /* 6971 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
+import Patterns from "Patterns" /* 5262 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Stack_Stack from "Stack/Stack" /* 6027 */;
+import Card_Card from "Card/Card" /* 6977 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let description;
@@ -31,7 +31,7 @@ function HapticButton(text) {
     },
     text: text.label
   };
-  return closure_3(type(5629).Button, obj);
+  return closure_3(type(5634).Button, obj);
 }
 const ScrollView = react_native.ScrollView;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);

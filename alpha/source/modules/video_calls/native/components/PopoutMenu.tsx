@@ -1,23 +1,23 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11750
+// Function ID: 11751
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 5009, 575, 7303, 1188, 8169, 1492, 1626, 12, 5090, 5249, 5257, 5298, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 7309, 1187, 8177, 1491, 1625, 12, 5095, 5254, 5262, 5303, 2]
 // Exports: default
 
-// Module 11713 (PopoutMenu)
+// Module 11750 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import timing from "timing" /* 5249 */;
-import Patterns from "Patterns" /* 5257 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import FormRowDefault from "FormRow" /* 7303 */;
-import _mod8169 from "module_8169" /* 8169 */;
+import native from "native" /* 1187 */;
+import timing from "timing" /* 5254 */;
+import Patterns from "Patterns" /* 5262 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import FormRowDefault from "FormRow" /* 7309 */;
+import _mod8177 from "module_8177" /* 8177 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let __initData2;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(5090);
+const ReanimatedRexport = tmp(5095);
 function PopoutMenuRow(onClose) {
   let icon;
   let obj3;
@@ -52,7 +52,7 @@ function PopoutMenuRow(onClose) {
     const obj = { source: icon };
     tmp3Result = tmp3(native.Icon, obj);
   }
-  const obj2 = { leading: tmp3Result, label: tmp3(_mod8169.FormLabel, obj3), style: tmp.popoutMenuRow, onPress: callback };
+  const obj2 = { leading: tmp3Result, label: tmp3(_mod8177.FormLabel, obj3), style: tmp.popoutMenuRow, onPress: callback };
   obj3 = { style: tmp.popoutMenuRowLabel, text };
   return tmp3(tmp5, obj2);
 }

@@ -1,14 +1,14 @@
-// Module ID: 13613
-// Function ID: 13614
+// Module ID: 13648
+// Function ID: 13649
 // Name: EmojiFrowningFaceIcon
-// Dependencies: [19, 21, 575, 5711, 13614, 2]
+// Dependencies: [19, 21, 575, 5716, 13649, 2]
 // Exports: EmojiFrowningFaceIcon
 
-// Module 13613 (EmojiFrowningFaceIcon)
+// Module 13648 (EmojiFrowningFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 13614 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 13649 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

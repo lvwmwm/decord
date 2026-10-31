@@ -1,25 +1,25 @@
-// Module ID: 1496
-// Function ID: 1497
+// Module ID: 1495
+// Function ID: 1496
 // Name: KeyboardUIStore
-// Dependencies: [1497, 1229, 1622, 510, 1624, 1625, 1626, 1376, 1638, 558, 1260, 1639, 560, 1640, 1888, 1889, 1627, 1495, 2]
+// Dependencies: [1496, 1228, 1621, 510, 1623, 1624, 1625, 1375, 1637, 558, 1259, 1638, 560, 1639, 1887, 1888, 1626, 1494, 2]
 // Exports: addKeyboardTypeChangedListener, addKeyboardWillOpenChangedListener, setKeyboardContext, setKeyboardType
 
-// Module 1496 (KeyboardUIStore)
+// Module 1495 (KeyboardUIStore)
 import Storage5 from "Storage" /* 510 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1495 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1622 */;
-import KeyboardTypes from "KeyboardTypes" /* 1624 */;
-import ChatInputFocused from "ChatInputFocused" /* 1625 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1626 */;
-import react_nativeDefault from "react-native" /* 1638 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1640 */;
-import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1888 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
+import KeyboardTypes from "KeyboardTypes" /* 1623 */;
+import ChatInputFocused from "ChatInputFocused" /* 1624 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1625 */;
+import react_nativeDefault from "react-native" /* 1637 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1639 */;
+import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1887 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
 import module_560 from "module_560" /* 560 */;
-import SafeAreaStore from "SafeAreaStore" /* 1627 */;
+import SafeAreaStore from "SafeAreaStore" /* 1626 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,8 +137,8 @@ function computeEntryState(arg0, keyboardDuration, DEFAULT_APP_ENTRY_KEY) {
                 const obj3 = {};
                 const merged = Object.assign(tmp.keyboardContexts);
                 const obj4 = { keyboardWillOpen: false };
-                const SYSTEM = tmp2(1624).KeyboardTypes.SYSTEM;
-                const merged1 = Object.assign(tmp.keyboardContexts[tmp2(undefined, 1624).KeyboardTypes.SYSTEM]);
+                const SYSTEM = tmp2(1623).KeyboardTypes.SYSTEM;
+                const merged1 = Object.assign(tmp.keyboardContexts[tmp2(undefined, 1623).KeyboardTypes.SYSTEM]);
                 obj3[SYSTEM] = obj4;
                 tmp21 = obj3;
               }
@@ -194,14 +194,14 @@ function createInitialEntryState(main) {
     num = 253;
   }
   const obj = { customKeyboardHeight: num, customKeyboardHeightExcludingSafeAreaInsets: num2 - tmpResult.getSafeAreaInsets(main).bottom, keyboardContexts: { [KeyboardTypes.KeyboardTypes.SYSTEM]: { keyboardWillOpen: false }, [KeyboardTypes.KeyboardTypes.EXPRESSION]: obj2, [KeyboardTypes.KeyboardTypes.MEDIA]: obj3, [KeyboardTypes.KeyboardTypes.APP_LAUNCHER]: obj4 }, keyboardDuration: 0, keyboardHeight: num3, keyboardHeightExcludingSafeAreaInsets: num4, systemKeyboardOpen: false, keyboardType: KeyboardTypes.KeyboardTypes.SYSTEM, keyboardTypePrevious: KeyboardTypes.KeyboardTypes.SYSTEM };
-  const SYSTEM2 = tmp(1624).KeyboardTypes.SYSTEM;
-  const SYSTEM3 = tmp(1624).KeyboardTypes.SYSTEM;
+  const SYSTEM2 = tmp(1623).KeyboardTypes.SYSTEM;
+  const SYSTEM3 = tmp(1623).KeyboardTypes.SYSTEM;
   const Storage2 = tmp(510).Storage;
   num2 = Storage2.get(tmp3, 253);
   if (num2 == null) {
     num2 = 253;
   }
-  const SYSTEM4 = tmp(1624).KeyboardTypes.SYSTEM;
+  const SYSTEM4 = tmp(1623).KeyboardTypes.SYSTEM;
   num3 = 0;
   obj2 = { type: ExpressionPickerViewType.EMOJI };
   obj3 = { target: MediaKeyboardTarget.CHAT };

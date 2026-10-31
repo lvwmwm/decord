@@ -1,30 +1,30 @@
-// Module ID: 18656
-// Function ID: 18657
+// Module ID: 18698
+// Function ID: 18699
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6857, 13863, 18657, 13850, 9806, 13852, 1072, 21, 6974, 13861, 1114, 5619, 10709, 18658, 7479, 13857, 13843, 504, 13839, 18651, 1499, 18661, 13836, 16675, 7947, 6723, 18662, 18663, 18666, 2]
+// Dependencies: [32, 5, 19, 6863, 13898, 18699, 13885, 9827, 13887, 1072, 21, 6980, 13896, 1113, 5624, 10729, 18700, 7485, 13892, 13878, 504, 13874, 18693, 1498, 18703, 13871, 16717, 7955, 6729, 18704, 18705, 18708, 2]
 
-// Module 18656 (RecentScreen)
+// Module 18698 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1114 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import Pressables from "Pressables" /* 6974 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13836 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 13839 */;
-import SearchUtils from "SearchUtils" /* 13843 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13852 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13857 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13861 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16675 */;
+import intl3 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import Pressables from "Pressables" /* 6980 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13871 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 13874 */;
+import SearchUtils from "SearchUtils" /* 13878 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 13887 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13892 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13896 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16717 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6857 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13863 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 18657 */;
-import SearchQueryStore from "SearchQueryStore" /* 13850 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
+import SearchMessageStore from "SearchMessageStore" /* 6863 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13898 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 18699 */;
+import SearchQueryStore from "SearchQueryStore" /* 13885 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,19 +35,19 @@ let closure_12;
 let map1;
 let tmp2;
 let unpackModuleId;
-const AgeVerificationAnalyticsUtils = tmp2(6723);
+const AgeVerificationAnalyticsUtils = tmp2(6729);
 function ClearAllHistory(searchContext) {
   let intl2;
   searchContext = searchContext.searchContext;
-  const PressableHighlight = searchContext(6974).PressableHighlight;
-  const intl = searchContext(1114).intl;
-  ({ variant: "text-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1114).t.LFTAUp) });
-  const Text = searchContext(5619).Text;
-  intl2 = searchContext(1114).intl;
+  const PressableHighlight = searchContext(6980).PressableHighlight;
+  const intl = searchContext(1113).intl;
+  ({ variant: "text-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1113).t.LFTAUp) });
+  const Text = searchContext(5624).Text;
+  intl2 = searchContext(1113).intl;
   return <PressableHighlight onPress={function onPress() {
     const obj = SearchPlatformActionCreatorsDefault;
     return obj.clearSearchHistory(searchContext);
-  }} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(searchContext(1114).t.LFTAUp)}>{null}</PressableHighlight>;
+  }} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(searchContext(1113).t.LFTAUp)}>{null}</PressableHighlight>;
 }
 function ViewAll(onJumpToMedia) {
   let intl2;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f131108 = () => memo.getSearchHistory(searchContextId);
+  const f131501 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f131108), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f131108), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f131501), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f131501), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {
@@ -243,7 +243,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
             const result = obj.trackSuggestedSearchClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           c4 = 3;

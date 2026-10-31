@@ -1,17 +1,17 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14215
+// Function ID: 14216
 // Name: WelcomeScreenUtils
-// Dependencies: [19, 14178, 4939, 4880, 5051, 14179, 504, 14180, 5253, 14181, 1995, 2]
+// Dependencies: [19, 14216, 4944, 4885, 5056, 14217, 504, 14218, 5258, 14219, 1994, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 14177 (WelcomeScreenUtils)
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 14178 */;
-import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 14180 */;
+// Module 14215 (WelcomeScreenUtils)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 14216 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 14218 */;
 import react_mod from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4939 */;
-import GuildStore from "GuildStore" /* 4880 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let _require, importDefault;
 
 let react = react_mod;
 const NO_WELCOME_SCREEN = WelcomeScreenStore2.NO_WELCOME_SCREEN;
-let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "Array" };
+let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "a" };
 const result = size.fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
 
 export function useShowWelcomeModal(guildId, channelId) {
@@ -86,6 +86,6 @@ export function openWelcomeActionSheet(guildId) {
   const onHide = guildId.onHide;
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(14181, dependencyMap.paths);
+  const tmp2 = asyncRequire(14219, dependencyMap.paths);
   openLazy(tmp2, "GuildWelcomeActionSheet" + guildId, { guildId, onHide });
 }

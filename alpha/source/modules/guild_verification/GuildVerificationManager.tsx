@@ -1,15 +1,15 @@
-// Module ID: 19418
-// Function ID: 19419
+// Module ID: 19475
+// Function ID: 19476
 // Name: GuildVerificationManager
-// Dependencies: [1072, 14705, 1397, 8950, 14706, 7281, 2]
+// Dependencies: [1072, 14743, 1396, 8959, 14744, 7287, 2]
 
-// Module 19418 (GuildVerificationManager)
+// Module 19475 (GuildVerificationManager)
 import Constants from "Constants" /* 1072 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8950 */;
-import HubUtilsDefault from "HubUtils" /* 14705 */;
-import GuildVerificationUtils from "GuildVerificationUtils" /* 14706 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8959 */;
+import HubUtilsDefault from "HubUtils" /* 14743 */;
+import GuildVerificationUtils from "GuildVerificationUtils" /* 14744 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 function handleInviteData(invite) {
@@ -37,7 +37,7 @@ function handleInviteData(invite) {
     let hasFlagResult = obj.hasFlag(num, GuildInviteFlags.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
       const tmp3Result = FlagUtils;
-      hasFlagResult = tmp3Result.hasFlag(num, tmp3(8950).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp3Result.hasFlag(num, tmp3(8959).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     new_member = !hasFlagResult;
   }

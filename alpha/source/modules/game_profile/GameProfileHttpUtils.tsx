@@ -1,21 +1,21 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9455
+// Function ID: 9456
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 7732, 2063, 9302, 1072, 9434, 572, 6449, 1283, 504, 559, 1090, 9425, 2]
+// Dependencies: [5, 7739, 2062, 9322, 1072, 9456, 572, 6455, 1282, 504, 559, 1089, 9447, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9433 (GameProfileHttpUtils)
+// Module 9455 (GameProfileHttpUtils)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import StoreUtils from "StoreUtils" /* 6449 */;
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9434 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import StoreUtils from "StoreUtils" /* 6455 */;
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7732 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
-import GameProfileStore from "GameProfileStore" /* 9302 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7739 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import GameProfileStore from "GameProfileStore" /* 9322 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _getShopCollection() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _getShopCollection() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           closure_3 = tmp12;
@@ -123,7 +123,7 @@ obj = function _fetchSimilarGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ obj = function _fetchSimilarGames() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c5 = 3;
@@ -195,7 +195,7 @@ obj = function _getGameAnnouncements() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -265,7 +265,7 @@ obj = function _getGameAnnouncements() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           closure_6 = tmp21;

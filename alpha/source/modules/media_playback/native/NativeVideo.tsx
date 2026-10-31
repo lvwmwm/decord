@@ -1,16 +1,16 @@
-// Module ID: 8868
-// Function ID: 8869
+// Module ID: 8877
+// Function ID: 8878
 // Name: NativeVideo
-// Dependencies: [109, 32, 19, 17, 21, 5009, 81, 8869, 5712, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5014, 81, 8878, 5717, 2]
 // Exports: default
 
-// Module 8868 (NativeVideo)
+// Module 8877 (NativeVideo)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_10, dependencyMap, sum;
@@ -47,7 +47,7 @@ export default function NativeVideo(ref) {
   let str2;
   let tmp21;
   let tmp6;
-  const f93230 = (item) => {
+  const f93474 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -94,7 +94,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f93230) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f93474) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -108,7 +108,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f93230) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f93474) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;
@@ -347,7 +347,7 @@ export default function NativeVideo(ref) {
       }
     }
   };
-  items2 = [ref(ref1(8869), obj6), ];
+  items2 = [ref(ref1(8878), obj6), ];
   let tmp26Result = null != obj2.poster && tmp21 !== id;
   const tmp24 = closure_9;
   const tmp25 = c7;
@@ -357,7 +357,7 @@ export default function NativeVideo(ref) {
     let obj7 = { accessible: false, style: tmp2.content, source: obj8, resizeMode: str2 };
     obj8 = { uri: obj2.poster };
     str2 = "center";
-    const tmp27Result = tmp27(5712);
+    const tmp27Result = tmp27(5717);
     if ("none" !== obj2.posterResizeMode) {
       let str4 = obj2.posterResizeMode;
       if (str4 == null) {

@@ -1,17 +1,17 @@
-// Module ID: 11987
-// Function ID: 11988
+// Module ID: 12025
+// Function ID: 12026
 // Name: StageChannelListStore
-// Dependencies: [32, 19, 1255, 1260, 4924, 2]
+// Dependencies: [32, 19, 1254, 1259, 4929, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 11987 (StageChannelListStore)
-import _slicedToArray2 from "_slicedToArray" /* 4924 */;
+// Module 12025 (StageChannelListStore)
+import _slicedToArray2 from "_slicedToArray" /* 4929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_1255 from "module_1255" /* 1255 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
-let closure_4 = module_1255.createWithEqualityFn((arg0) => {
+let closure_4 = module_1254.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     showActiveSpeakerPill: false,

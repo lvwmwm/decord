@@ -1,24 +1,24 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7169
+// Function ID: 7170
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 5009, 575, 7164, 6992, 5591, 7165, 1626, 1114, 12, 7198, 1499, 6020, 5248, 7203, 6999, 1244, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 7170, 6998, 5596, 7171, 1625, 1113, 12, 7204, 1498, 6025, 5253, 7209, 7005, 1243, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 7163 (Navigator)
+// Module 7169 (Navigator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SentryInitUtils from "SentryInitUtils" /* 1244 */;
-import Link from "Link" /* 1499 */;
-import BackPressTracking from "BackPressTracking" /* 6020 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
-import _mod6999 from "module_6999" /* 6999 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7164 */;
-import NavigatorScreen2 from "NavigatorScreen" /* 7198 */;
-import useNavigationTheme from "useNavigationTheme" /* 7203 */;
+import SentryInitUtils from "SentryInitUtils" /* 1243 */;
+import Link from "Link" /* 1498 */;
+import BackPressTracking from "BackPressTracking" /* 6025 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import _mod7005 from "module_7005" /* 7005 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7170 */;
+import NavigatorScreen2 from "NavigatorScreen" /* 7204 */;
+import useNavigationTheme from "useNavigationTheme" /* 7209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -145,8 +145,8 @@ function NavigationStack(screens) {
       if (headerBackTitle == null) {
         let stringResult;
         if (1 === routes.length) {
-          const intl = tmp3(1114).intl;
-          stringResult = intl.string(tmp3(1114).t["13/7kX"]);
+          const intl = tmp3(1113).intl;
+          stringResult = intl.string(tmp3(1113).t["13/7kX"]);
         }
         tmp5 = stringResult;
       }
@@ -168,13 +168,13 @@ function NavigationStack(screens) {
           return obj;
         };
       } else {
-        fn2 = tmp3(7165).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(7171).CardStyleInterpolators.forHorizontalIOS;
       }
       const tmp8 = disableHeaderAnimation;
       if (tmp8) {
-        fn3 = tmp3(7165).HeaderStyleInterpolators.forNoAnimation;
+        fn3 = tmp3(7171).HeaderStyleInterpolators.forNoAnimation;
       } else if (navigatorShouldCrossfade) {
-        fn3 = tmp3(7165).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(7171).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           let current;
@@ -248,11 +248,11 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp5 = navigationContainerRef(5248)();
+  const tmp5 = navigationContainerRef(5253)();
   const obj3 = useNavigationTheme;
   let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;
-  const Provider = _mod6999.HeaderBackContext.Provider;
+  const Provider = _mod7005.HeaderBackContext.Provider;
   const NavigationContainer = Link.NavigationContainer;
   if (null != navigationTheme) {
     navigationTheme1 = navigationTheme;

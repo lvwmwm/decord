@@ -1,10 +1,10 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 10612
+// Function ID: 10613
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1498, 10542, 10593, 2048, 7586, 5954, 1114, 10539, 2]
+// Dependencies: [5, 19, 1497, 10562, 10613, 2047, 7593, 5959, 1113, 10559, 2]
 // Exports: useSelectPremiumGift
 
-// Module 10592 (useSelectPremiumGift)
+// Module 10612 (useSelectPremiumGift)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

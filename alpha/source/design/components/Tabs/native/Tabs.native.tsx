@@ -1,20 +1,20 @@
-// Module ID: 12476
-// Function ID: 12477
+// Module ID: 12511
+// Function ID: 12512
 // Name: Tabs
-// Dependencies: [19, 17, 2063, 21, 5090, 5009, 575, 5632, 10069, 12477, 5298, 1376, 2]
+// Dependencies: [19, 17, 2062, 21, 5095, 5014, 575, 5637, 10089, 12512, 5303, 1375, 2]
 // Exports: Tabs
 
-// Module 12476 (Tabs)
+// Module 12511 (Tabs)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5090 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import spring from "spring" /* 5632 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10069 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import spring from "spring" /* 5637 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10089 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2063 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;

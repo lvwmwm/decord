@@ -1,21 +1,21 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7387
+// Function ID: 7388
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 4921, 1384, 7382, 1072, 21, 5009, 575, 1114, 2062, 1253, 7383, 7136, 5712, 7385, 5619, 5629, 2]
+// Dependencies: [19, 17, 4926, 1383, 7388, 1072, 21, 5014, 575, 1113, 2061, 1252, 7389, 7142, 5717, 7391, 5624, 5634, 2]
 // Exports: default
 
-// Module 7381 (NsfwGateGuild)
+// Module 7387 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Constants2 from "Constants" /* 7382 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7383 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Constants2 from "Constants" /* 7388 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7389 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
-import UserStore from "UserStore" /* 1384 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -40,15 +40,15 @@ export default function NsfwGateGuild(guildId) {
   let currentUser;
   const onClose = guildId.onClose;
   const tmp = closure_12();
-  const intl = guildId(1114).intl;
-  const stringResult = intl.string(guildId(1114).t.vAymlG);
-  const intl2 = guildId(1114).intl;
-  const stringResult1 = intl2.string(guildId(1114).t.Crj6eC);
-  const intl3 = guildId(1114).intl;
+  const intl = guildId(1113).intl;
+  const stringResult = intl.string(guildId(1113).t.vAymlG);
+  const intl2 = guildId(1113).intl;
+  const stringResult1 = intl2.string(guildId(1113).t.Crj6eC);
+  const intl3 = guildId(1113).intl;
   const format = intl3.format;
   let obj = { helpURL: obj2.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
-  const Z12LNW = guildId(1114).t.Z12LNW;
-  obj2 = currentUser(2062);
+  const Z12LNW = guildId(1113).t.Z12LNW;
+  obj2 = currentUser(2061);
   const formatResult = format(Z12LNW, obj);
   currentUser = UserStore.getCurrentUser();
   const items = [guildId, currentUser];
@@ -83,19 +83,19 @@ export default function NsfwGateGuild(guildId) {
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_10(currentUser(7136), {}), , , , , ];
-  const obj4 = { source: currentUser(7385), style: tmp.image };
-  const tmp7 = currentUser(5712);
+  items1 = [closure_10(currentUser(7142), {}), , , , , ];
+  const obj4 = { source: currentUser(7391), style: tmp.image };
+  const tmp7 = currentUser(5717);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = closure_10(guildId(5619).Heading, obj5);
+  items1[2] = closure_10(guildId(5624).Heading, obj5);
   const obj6 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = closure_10(guildId(5619).Text, obj6);
+  items1[3] = closure_10(guildId(5624).Text, obj6);
   const obj7 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: formatResult };
-  items1[4] = closure_10(guildId(5619).Text, obj7);
-  const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1114).t.gRqiWV) };
-  const Button = guildId(5629).Button;
-  intl4 = guildId(1114).intl;
+  items1[4] = closure_10(guildId(5624).Text, obj7);
+  const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1113).t.gRqiWV) };
+  const Button = guildId(5634).Button;
+  intl4 = guildId(1113).intl;
   items1[5] = closure_10(Button, obj8);
   return closure_11(View, obj3);
 };

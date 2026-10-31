@@ -1,11 +1,11 @@
-// Module ID: 1477
-// Function ID: 1478
+// Module ID: 1476
+// Function ID: 1477
 // Name: utils/NetworkUtils
-// Dependencies: [3, 1478, 2]
+// Dependencies: [3, 1477, 2]
 
-// Module 1477 (utils/NetworkUtils)
+// Module 1476 (utils/NetworkUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import configure2 from "configure" /* 1478 */;
+import configure2 from "configure" /* 1477 */;
 import size from "module_2" /* 2 */;
 
 const configure_mod = configure2;

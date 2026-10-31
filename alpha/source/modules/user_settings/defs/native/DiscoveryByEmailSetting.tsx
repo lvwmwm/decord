@@ -1,16 +1,16 @@
-// Module ID: 16697
-// Function ID: 16698
+// Module ID: 16739
+// Function ID: 16740
 // Name: DiscoveryByEmailSetting
-// Dependencies: [8424, 1072, 1114, 4834, 1397, 14202, 11505, 2]
+// Dependencies: [8432, 1072, 1113, 4839, 1396, 14240, 11539, 2]
 
-// Module 16697 (DiscoveryByEmailSetting)
+// Module 16739 (DiscoveryByEmailSetting)
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import SettingsConstants from "SettingsConstants" /* 8424 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14202 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
+import intl2 from "intl" /* 1113 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14240 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

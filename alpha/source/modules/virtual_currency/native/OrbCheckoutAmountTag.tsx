@@ -1,16 +1,16 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14418
+// Function ID: 14419
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 5009, 575, 9510, 5619, 1114, 2]
+// Dependencies: [17, 21, 5014, 575, 9532, 5624, 1113, 2]
 // Exports: default
 
-// Module 14380 (OrbCheckoutAmountTag)
+// Module 14418 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import OrbsIcon from "OrbsIcon" /* 9510 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import OrbsIcon from "OrbsIcon" /* 9532 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -38,12 +38,12 @@ export default function OrbCheckoutAmountTag(orbAmount) {
   const tmp3 = View;
   const tmp4 = _false;
   if (null == orbAmount) {
-    const intl2 = tmp5(1114).intl;
-    stringResult = intl2.string(tmp5(1114).t.pfChQr);
+    const intl2 = tmp5(1113).intl;
+    stringResult = intl2.string(tmp5(1113).t.pfChQr);
   } else {
-    const intl = tmp5(1114).intl;
+    const intl = tmp5(1113).intl;
     const obj3 = { orbAmount };
-    stringResult = intl.formatToPlainString(tmp5(1114).t.W4DfeF, obj3);
+    stringResult = intl.formatToPlainString(tmp5(1113).t.W4DfeF, obj3);
   }
   const obj4 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: str };
   str = "--";

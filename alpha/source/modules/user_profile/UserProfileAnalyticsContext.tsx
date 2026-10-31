@@ -1,14 +1,14 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8761
+// Function ID: 8762
 // Name: UserProfileAnalyticsContext
-// Dependencies: [19, 21, 7320, 8754, 1267, 2]
+// Dependencies: [19, 21, 7326, 8762, 1266, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8753 (UserProfileAnalyticsContext)
+// Module 8761 (UserProfileAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
-import v1 from "v1" /* 1267 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7320 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8754 */;
+import v1 from "v1" /* 1266 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8762 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ export function useUserProfileAnalyticsContext() {
   let items2;
   let items3;
   const context = react.useContext(closure_5);
-  analyticsLocations = analyticsLocations(7320)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7326)().analyticsLocations;
   let obj = {
     context,
     trackUserProfileAction: react.useCallback((arg0) => {

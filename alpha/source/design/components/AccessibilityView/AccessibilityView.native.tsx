@@ -1,14 +1,14 @@
-// Module ID: 6013
-// Function ID: 6014
+// Module ID: 6018
+// Function ID: 6019
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 6014, 5090, 2]
+// Dependencies: [19, 17, 21, 6019, 5095, 2]
 
-// Module 6013 (AccessibilityView)
+// Module 6018 (AccessibilityView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 6014 */;
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 6019 */;
 import react from "react" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import size from "module_2" /* 2 */;
 
 class AccessibilityView {

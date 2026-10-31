@@ -1,33 +1,33 @@
-// Module ID: 19208
-// Function ID: 19209
+// Module ID: 19260
+// Function ID: 19261
 // Name: ActivityShelfItem
-// Dependencies: [19, 1072, 1192, 21, 5009, 575, 5006, 12293, 12207, 6954, 19206, 1893, 5678, 11803, 9535, 6974, 5075, 19205, 12236, 1188, 19209, 19207, 6036, 14338, 5619, 12299, 1114, 2]
+// Dependencies: [19, 1072, 1191, 21, 5014, 575, 5011, 12331, 12245, 6960, 19258, 1892, 5683, 11841, 9557, 6980, 5080, 19257, 12274, 1187, 19261, 19259, 6041, 14376, 5624, 12337, 1113, 2]
 // Exports: default
 
-// Module 19208 (ActivityShelfItem)
+// Module 19260 (ActivityShelfItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1188 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import react_nativeDefault from "react-native" /* 1893 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import NativeViewDefault from "NativeView" /* 6954 */;
-import TestModeUtils from "TestModeUtils" /* 9535 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11803 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12207 */;
-import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12293 */;
-import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12299 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14338 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19205 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19206 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19207 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19209 */;
+import native from "native" /* 1187 */;
+import FormConstants from "FormConstants" /* 1191 */;
+import react_nativeDefault from "react-native" /* 1892 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import NativeViewDefault from "NativeView" /* 6960 */;
+import TestModeUtils from "TestModeUtils" /* 9557 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11841 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12245 */;
+import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12331 */;
+import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12337 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14376 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19257 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19258 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19259 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19261 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import ColorUtils_mod from "ColorUtils" /* 5006 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import ColorUtils_mod from "ColorUtils" /* 5011 */;
 import size_mod from "module_2" /* 2 */;
 
 const useActivityShelfItemDefault = useActivityShelfItem;
@@ -59,12 +59,12 @@ function ActivityActionOverlay(arg0) {
       return null;
     }
   }
-  let tmp8 = action === tmp4(12207).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(12245).ActivityAction.LEAVE;
   const tmp6 = metroImportAll;
   const tmp7 = metroImportDefault;
   if (tmp8) {
     const obj = { style: tmp3.ongoingActivityJoinedContainer };
-    tmp8 = metroRequire(tmp(6954), obj);
+    tmp8 = metroRequire(tmp(6960), obj);
   }
   const items = [tmp8, ];
   let id1;
@@ -118,9 +118,9 @@ function ParticipantsText(arg0) {
   } else {
     itemSubtitleForMaxPlayersShort = name;
     if (arr.length > 1) {
-      const intl = tmp10(1114).intl;
+      const intl = tmp10(1113).intl;
       const obj4 = { count: arr.length - 1, username: name };
-      itemSubtitleForMaxPlayersShort = intl.formatToPlainString(tmp10(1114).t.cpe6CK, obj4);
+      itemSubtitleForMaxPlayersShort = intl.formatToPlainString(tmp10(1113).t.cpe6CK, obj4);
     }
   }
   items1[1] = tmp9(Text, obj3);
@@ -190,10 +190,10 @@ export default function ActivityShelfItem(arg0) {
   const tmp8Result = TestModeUtils;
   const isTestModeForApplication = tmp8Result.useIsTestModeForApplication(activityItem.application.id);
   const obj3 = { activeOpacity: 0.7, onPress: onActivityItemSelected2, disabled: activityAction === useActivityShelfItem.ActivityAction.LEAVE, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, style: items1, children: items4 };
-  const PressableOpacity = tmp8(6974).PressableOpacity;
+  const PressableOpacity = tmp8(6980).PressableOpacity;
   items1 = [tmp.container, { width, height }];
   const obj4 = { theme: ThemeTypes.DARK, children: items3 };
-  const ThemeContextProvider = tmp8(5075).ThemeContextProvider;
+  const ThemeContextProvider = tmp8(5080).ThemeContextProvider;
   const obj5 = { style: tmp.imageOuterContainer, children: items2 };
   const obj6 = { accessibilityLabel: activityItem.application.name, imageBackground: tmp10, aspectRatio: width / height };
   const tmp3Result = NativeViewDefault;
@@ -208,7 +208,7 @@ export default function ActivityShelfItem(arg0) {
   let tmp15Result = null;
   if (tmp11) {
     const obj8 = { labelType };
-    tmp15Result = tmp15(tmp3(12236), obj8);
+    tmp15Result = tmp15(tmp3(12274), obj8);
   }
   items3[1] = tmp15Result;
   let tmp15Result3 = null;
@@ -218,13 +218,13 @@ export default function ActivityShelfItem(arg0) {
       const obj9 = { style: tmp.developerIconContainer, children: metroRequire(Icon, obj10) };
       obj10 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, color: tmp.developerIconColor.color };
       const tmp3Result4 = NativeViewDefault;
-      Icon = tmp8(1188).Icon;
+      Icon = tmp8(1187).Icon;
       tmp15Result3 = tmp15(tmp3Result4, obj9);
     }
   }
   items3[2] = tmp15Result3;
   items4 = [metroImportAll(ThemeContextProvider, obj4), ];
-  let tmp15Result4 = activityAction === tmp8(12207).ActivityAction.START;
+  let tmp15Result4 = activityAction === tmp8(12245).ActivityAction.START;
   if (tmp15Result4) {
     const obj11 = { action: activityAction, channelId: id1, guildId: guildId1, activityItem };
     id1 = undefined;

@@ -1,13 +1,13 @@
-// Module ID: 17912
-// Function ID: 17913
+// Module ID: 17955
+// Function ID: 17956
 // Name: RedesignSettingsCategoryCallsMessagesScreen
-// Dependencies: [19, 21, 11505, 17907, 16533, 2]
+// Dependencies: [19, 21, 11539, 17950, 16575, 2]
 
-// Module 17912 (RedesignSettingsCategoryCallsMessagesScreen)
+// Module 17955 (RedesignSettingsCategoryCallsMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11505 */;
-import SettingLayoutDefault from "SettingLayout" /* 16533 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17907 */;
+import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingLayoutDefault from "SettingLayout" /* 16575 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17950 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

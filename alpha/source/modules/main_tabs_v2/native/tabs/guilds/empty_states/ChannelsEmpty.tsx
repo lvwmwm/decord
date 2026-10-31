@@ -1,22 +1,22 @@
-// Module ID: 18260
-// Function ID: 18261
+// Module ID: 18303
+// Function ID: 18304
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4941, 1072, 21, 5009, 5619, 575, 563, 9055, 9025, 17006, 8171, 1188, 18261, 1114, 5712, 18262, 5630, 2]
+// Dependencies: [19, 17, 4946, 1072, 21, 5014, 5624, 575, 563, 9074, 9034, 17064, 8179, 1187, 18304, 1113, 5717, 18305, 5635, 2]
 
-// Module 18260 (ChannelsEmpty)
+// Module 18303 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import FastImageDefault from "FastImage" /* 5712 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9025 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9055 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18261 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18262 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9034 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18304 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18305 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -72,16 +72,16 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(17006);
+  const obj2 = guild(17064);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {
     const obj5 = { style: tmp.personalizeButtonWrapper, children: closure_7(RowButton, obj6) };
-    obj6 = { icon: closure_7(Icon, obj7), label: intl.string(guild(1114).t["Yhi9/N"]), onPress: callback };
-    RowButton = tmp2(8171).RowButton;
+    obj6 = { icon: closure_7(Icon, obj7), label: intl.string(guild(1113).t["Yhi9/N"]), onPress: callback };
+    RowButton = tmp2(8179).RowButton;
     obj7 = { source: AssetRegistryDefault, disableColor: true };
-    Icon = tmp2(1188).Icon;
-    intl = tmp2(1114).intl;
+    Icon = tmp2(1187).Icon;
+    intl = tmp2(1113).intl;
     canCustomizeGuild = closure_7(tmp8, obj5);
   }
   items5 = [canCustomizeGuild, ];
@@ -89,21 +89,21 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   const obj9 = { source: AssetRegistryDefault2 };
   const tmp12 = FastImageDefault;
   items6 = [closure_7(tmp12, obj9), , , ];
-  const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: intl2.string(guild(1114).t.o4s29v) };
+  const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: intl2.string(guild(1113).t.o4s29v) };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  const Text = tmp2(5619).Text;
-  intl2 = tmp2(1114).intl;
+  const Text = tmp2(5624).Text;
+  intl2 = tmp2(1113).intl;
   items6[1] = closure_7(Text, obj10);
-  const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl3.string(guild(1114).t.iypvFu) };
-  const Text2 = tmp2(5619).Text;
-  intl3 = tmp2(1114).intl;
+  const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl3.string(guild(1113).t.iypvFu) };
+  const Text2 = tmp2(5624).Text;
+  intl3 = tmp2(1113).intl;
   items6[2] = closure_7(Text2, obj11);
   if (canCreateChannel) {
     const obj12 = { style: tmp.buttonWrapper, children: closure_7(BaseTextButton, obj13) };
-    obj13 = { shrink: true, size: "md", pillStyle: tmp.buttonPill, text: intl4.string(guild(1114).t["63PyJQ"]), onPress: callback1 };
-    BaseTextButton = tmp2(5630).BaseTextButton;
-    intl4 = tmp2(1114).intl;
+    obj13 = { shrink: true, size: "md", pillStyle: tmp.buttonPill, text: intl4.string(guild(1113).t["63PyJQ"]), onPress: callback1 };
+    BaseTextButton = tmp2(5635).BaseTextButton;
+    intl4 = tmp2(1113).intl;
     canCreateChannel = tmp11(tmp8, obj12);
   }
   items6[3] = canCreateChannel;

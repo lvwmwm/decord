@@ -1,13 +1,13 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12603
+// Function ID: 12604
 // Name: ConjureStatusLabels
-// Dependencies: [3865, 1114, 10839, 2]
+// Dependencies: [3868, 1113, 10859, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 12568 (ConjureStatusLabels)
-import intl5 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10839 */;
+// Module 12603 (ConjureStatusLabels)
+import intl5 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10859 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {
@@ -48,19 +48,19 @@ function thinkingLabel(saving) {
   }
   const tmp = null != activity && "end" !== activity.phase;
   if (flag5) {
-    xnCAaP = _modDef3865["1jqaAc"];
+    xnCAaP = _modDef3868["1jqaAc"];
   } else if (flag6) {
-    xnCAaP = _modDef3865.xCdlEF;
+    xnCAaP = _modDef3868.xCdlEF;
   } else if (flag7) {
-    xnCAaP = _modDef3865.Rhx0rn;
+    xnCAaP = _modDef3868.Rhx0rn;
   } else if (flag2) {
-    xnCAaP = _modDef3865.M4KI5F;
+    xnCAaP = _modDef3868.M4KI5F;
   } else if (flag3) {
-    xnCAaP = _modDef3865.j8tmjK;
+    xnCAaP = _modDef3868.j8tmjK;
   } else if (flag4) {
     xnCAaP = items[0];
   } else {
-    const tmp4 = _modDef3865;
+    const tmp4 = _modDef3868;
     if (flag) {
       xnCAaP = tmp4.mKK6wB;
     } else if (compacting) {
@@ -71,7 +71,7 @@ function thinkingLabel(saving) {
   }
   return xnCAaP;
 }
-const items = [_modDef3865["AX+5lk"], _modDef3865.VAU6A7, _modDef3865["1emysd"], _modDef3865.EXHX3L, _modDef3865.ChslmX];
+const items = [_modDef3868["AX+5lk"], _modDef3868.VAU6A7, _modDef3868["1emysd"], _modDef3868.EXHX3L, _modDef3868.ChslmX];
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureStatusLabels.tsx");
 
 export const INDICATOR_PASS_MS = 1000;
@@ -79,16 +79,16 @@ export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
 export function isPublishLineSwitch(line, arg1) {
   const intl = intl5.intl;
-  let tmp4 = line === intl.string(_modDef3865.xCdlEF);
+  let tmp4 = line === intl.string(_modDef3868.xCdlEF);
   if (!tmp4) {
-    const intl2 = tmp(1114).intl;
-    tmp4 = line === intl2.string(tmp3(3865).Rhx0rn);
+    const intl2 = tmp(1113).intl;
+    tmp4 = line === intl2.string(tmp3(3868).Rhx0rn);
   }
-  const intl3 = tmp(1114).intl;
-  let tmp5 = arg1 === intl3.string(tmp3(3865).xCdlEF);
+  const intl3 = tmp(1113).intl;
+  let tmp5 = arg1 === intl3.string(tmp3(3868).xCdlEF);
   if (!tmp5) {
-    const intl4 = tmp(1114).intl;
-    tmp5 = arg1 === intl4.string(tmp3(3865).Rhx0rn);
+    const intl4 = tmp(1113).intl;
+    tmp5 = arg1 === intl4.string(tmp3(3868).Rhx0rn);
   }
   return tmp4 !== tmp5;
 }
@@ -106,13 +106,13 @@ export function isRecallingLine(current) {
 export function connectionLabel(stateFromStores8) {
   if ("connecting" === stateFromStores8) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3865["ECl+Dx"]);
+    return intl3.string(_modDef3868["ECl+Dx"]);
   } else if ("closed" === stateFromStores8) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3865.mQZSp1);
+    return intl2.string(_modDef3868.mQZSp1);
   } else if ("failed" === stateFromStores8) {
     const intl = intl5.intl;
-    return intl.string(_modDef3865.xzJSZ6);
+    return intl.string(_modDef3868.xzJSZ6);
   }
 }
 export { thinkingLabel };
@@ -127,11 +127,11 @@ export function runesUsedLabels(projectUsage) {
   let obj3;
   const obj = ConjureUsageTypes;
   const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
-  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3865.Z4LvGa, obj4) };
+  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3868.Z4LvGa, obj4) };
   const intl = intl5.intl;
   formatToPlainString = intl.formatToPlainString;
   obj3 = { runes: runesFromUsdResult.toLocaleString() };
-  gMuw5d = _modDef3865.gMuw5d;
+  gMuw5d = _modDef3868.gMuw5d;
   intl2 = intl5.intl;
   return obj2;
 }

@@ -1,21 +1,21 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8492
+// Function ID: 8493
 // Name: GuildProductPurchaseSystemMessage
-// Dependencies: [4952, 4858, 1072, 6432, 8410, 1413, 1410, 8443, 8412, 1114, 8414, 2]
+// Dependencies: [4957, 4863, 1072, 6438, 8418, 1412, 1409, 8451, 8420, 1113, 8422, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 8484 (GuildProductPurchaseSystemMessage)
+// Module 8492 (GuildProductPurchaseSystemMessage)
 import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1114 */;
-import AvatarUtils from "AvatarUtils" /* 1410 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1413 */;
-import useMessageAuthor from "useMessageAuthor" /* 6432 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8410 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8412 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8414 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8443 */;
-import MessageRecord from "MessageRecord" /* 4952 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import intl2 from "intl" /* 1113 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import useMessageAuthor from "useMessageAuthor" /* 6438 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8451 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
@@ -68,7 +68,7 @@ export function createGuildProductPurchaseSystemMessage(message) {
       getGuildProductPurchaseSystemMessageContentMobile = GuildProductSystemMessageUtils.getGuildProductPurchaseSystemMessageContentMobile;
       obj7 = { message, author: messageAuthorWithProcessedColor, roleStyle };
       GuildProductSystemMessageUtils;
-      intl = tmp5(1114).intl;
+      intl = tmp5(1113).intl;
       const merged1 = Object.assign(createCommonMessageDefault(obj));
       return obj5;
     }

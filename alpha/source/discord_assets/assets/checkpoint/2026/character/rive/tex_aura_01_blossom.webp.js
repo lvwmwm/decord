@@ -1,8 +1,8 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13448
+// Function ID: 13449
 // Dependencies: [2]
 
-// Module 13412
+// Module 13448
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_01_blossom.webp.js");

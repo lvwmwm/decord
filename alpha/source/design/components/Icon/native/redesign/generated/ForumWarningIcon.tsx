@@ -1,14 +1,14 @@
-// Module ID: 8646
-// Function ID: 8647
+// Module ID: 8654
+// Function ID: 8655
 // Name: ForumWarningIcon
-// Dependencies: [19, 21, 575, 5711, 8617, 2]
+// Dependencies: [19, 21, 575, 5716, 8625, 2]
 // Exports: ForumWarningIcon
 
-// Module 8646 (ForumWarningIcon)
+// Module 8654 (ForumWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5711 */;
-import AssetRegistry from "AssetRegistry" /* 8617 */;
+import BaseIconImage2 from "BaseIconImage" /* 5716 */;
+import AssetRegistry from "AssetRegistry" /* 8625 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

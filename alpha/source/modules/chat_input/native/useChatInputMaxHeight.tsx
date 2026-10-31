@@ -1,27 +1,27 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12809
+// Function ID: 12810
 // Name: useChatInputMaxHeight
-// Dependencies: [32, 19, 1494, 12771, 1892, 5605, 5204, 1624, 1492, 12775, 12776, 12777, 5249, 5252, 5090, 2]
+// Dependencies: [32, 19, 1493, 12806, 1891, 5610, 5209, 1623, 1491, 12810, 12811, 12812, 5254, 5257, 5095, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputHeightAnimationTimingWorklet, getChatInputMinHeight
 
-// Module 12774 (useChatInputMaxHeight)
-import KeyboardTypes from "KeyboardTypes" /* 1624 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1892 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import useKeyboardType from "useKeyboardType" /* 5204 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5605 */;
-import ChatInputConstants from "ChatInputConstants" /* 12771 */;
-import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 12775 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12776 */;
+// Module 12809 (useChatInputMaxHeight)
+import KeyboardTypes from "KeyboardTypes" /* 1623 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import useKeyboardType from "useKeyboardType" /* 5209 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5610 */;
+import ChatInputConstants from "ChatInputConstants" /* 12806 */;
+import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 12810 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1494 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useWindowDimensions = tmp(1492);
+const useWindowDimensions = tmp(1491);
 function getChatInputMaxHeight() {
   const obj = useSystemKeyboardHeight;
   let systemKeyboardHeight = obj.getSystemKeyboardHeight();

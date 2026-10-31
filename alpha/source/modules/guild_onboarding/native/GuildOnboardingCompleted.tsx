@@ -1,24 +1,24 @@
-// Module ID: 7346
-// Function ID: 7347
+// Module ID: 7352
+// Function ID: 7353
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 5010, 4915, 4880, 1384, 7262, 21, 5009, 575, 1498, 504, 7291, 5075, 7347, 1410, 1893, 1380, 5269, 5090, 5249, 5712, 7286, 5619, 1114, 1188, 7348, 6951, 2044, 7373, 5629, 2]
+// Dependencies: [19, 17, 5015, 4920, 4885, 1383, 7268, 21, 5014, 575, 1497, 504, 7297, 5080, 7353, 1409, 1892, 1379, 5274, 5095, 5254, 5717, 7292, 5624, 1113, 1187, 7354, 6957, 2042, 7379, 5634, 2]
 // Exports: default
 
-// Module 7346 (GuildOnboardingCompleted)
+// Module 7352 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import timing from "timing" /* 5249 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7348 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import timing from "timing" /* 5254 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7354 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import GuildRoleStore from "GuildRoleStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import UserStore from "UserStore" /* 1384 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7262 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -233,7 +233,7 @@ export default function GuildOnboardingCompleted(guildId) {
       num = tmp6;
     }
     const obj7 = { duration: num, easing: Easing3.out(ReanimatedRexport.Easing.ease) };
-    Easing3 = tmp(5090).Easing;
+    Easing3 = tmp(5095).Easing;
     const obj8 = { opacity: withSequenceResult, transform: items };
     const obj9 = { rotate: withSequence3(withTimingResult2, withDelay3Result, tmpResult8.withTiming("-5deg", { duration })) };
     const withSequence2Result = withSequence2(withTimingResult1, withDelay2Result, withTiming3(1, obj7));

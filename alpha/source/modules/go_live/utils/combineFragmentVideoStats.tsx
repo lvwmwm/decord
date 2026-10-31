@@ -1,0 +1,89 @@
+// Module ID: 7890
+// Function ID: 7891
+// Name: _slicedToArray
+// Dependencies: [32, 2]
+// Exports: default
+
+// Module 7890 (_slicedToArray)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("modules/go_live/utils/combineFragmentVideoStats.tsx");
+
+export default function combineFragmentVideoStats(arr) {
+  let applyResult;
+  let avg_bitrate;
+  let avg_fps;
+  let avg_resolution;
+  const f124194 = (acc, duration_aggregation) => {
+    let num = duration_aggregation[avg_resolution];
+    if (num == null) {
+      num = 0;
+    }
+    let num2 = duration_aggregation.duration_aggregation;
+    if (num2 == null) {
+      num2 = 0;
+    }
+    return acc + num * num2;
+  };
+  if (1 === arr.length) {
+    const obj = { duration: null, avg_bitrate: null, avg_fps: null, avg_resolution: null, inbound_bitrate_estimate_percentile99: null };
+    ({ duration: obj.duration, avg_bitrate: obj.avg_bitrate, avg_fps: obj.avg_fps, avg_resolution: obj.avg_resolution, inbound_bitrate_estimate_percentile99: obj.inbound_bitrate_estimate_percentile99 } = _slicedToArray(arr, 1)[0]);
+    return obj;
+  } else {
+    let num2 = 0;
+    const reduced = arr.reduce((acc, duration_aggregation) => {
+      let num = duration_aggregation.duration_aggregation;
+      if (num == null) {
+        num = 0;
+      }
+      return acc + num;
+    }, 0);
+    const mapped = arr.map((inbound_bitrate_estimate_percentile99) => inbound_bitrate_estimate_percentile99.inbound_bitrate_estimate_percentile99);
+    const found = mapped.filter((item) => null != item);
+    const obj2 = {
+      duration: arr.reduce((acc, duration) => {
+          let num = duration.duration;
+          if (num == null) {
+            num = 0;
+          }
+          return acc + num;
+        }, 0),
+      avg_bitrate,
+      avg_fps,
+      avg_resolution,
+      inbound_bitrate_estimate_percentile99: applyResult
+    };
+    avg_bitrate = "avg_bitrate";
+    if (reduced <= 0) {
+      avg_bitrate = arr[arr.length - 1].avg_bitrate;
+    } else {
+      const _Math = Math;
+      avg_bitrate = Math.round(arr.reduce(f124194, 0) / reduced);
+    }
+    avg_fps = "avg_fps";
+    if (reduced <= 0) {
+      avg_fps = arr[arr.length - 1].avg_fps;
+    } else {
+      const _Math2 = Math;
+      avg_fps = Math.round(arr.reduce(f124194, 0) / reduced);
+    }
+    avg_resolution = "avg_resolution";
+    if (reduced <= 0) {
+      avg_resolution = arr[arr.length - 1].avg_resolution;
+    } else {
+      const _Math3 = Math;
+      avg_resolution = Math.round(arr.reduce(f124194, 0) / reduced);
+    }
+    applyResult = undefined;
+    if (found.length > 0) {
+      const _Math4 = Math;
+      const items = [];
+      let num = 0;
+      HermesBuiltin.arraySpread(items, found, 0);
+      const _Math5 = Math;
+      applyResult = HermesBuiltin.apply(max, items, Math);
+    }
+    return obj2;
+  }
+};

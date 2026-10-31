@@ -1,10 +1,10 @@
-// Module ID: 2026
-// Function ID: 2027
+// Module ID: 2024
+// Function ID: 2025
 // Name: EmbeddedSurfaceUtils
 // Dependencies: [2]
 // Exports: isEmbeddedApplication, supportsEmbeddedSurface
 
-// Module 2026 (EmbeddedSurfaceUtils)
+// Module 2024 (EmbeddedSurfaceUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/utils/EmbeddedSurfaceUtils.tsx");

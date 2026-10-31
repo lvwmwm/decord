@@ -1,17 +1,17 @@
-// Module ID: 5225
-// Function ID: 5226
+// Module ID: 5230
+// Function ID: 5231
 // Name: GuildPowerupsConstants
-// Dependencies: [1386, 1072, 5226, 5228, 4842, 1114, 5229, 5230, 5243, 2]
+// Dependencies: [1385, 1072, 5231, 5233, 4847, 1113, 5234, 5235, 5248, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 5225 (GuildPowerupsConstants)
-import intl15 from "intl" /* 1114 */;
-import dismissible_content from "dismissible_content" /* 4842 */;
-import GameServerConstants from "GameServerConstants" /* 5226 */;
-import Powerups from "Powerups" /* 5228 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5229 */;
-import GameServerExperiment from "GameServerExperiment" /* 5243 */;
-import PremiumConstants from "PremiumConstants" /* 1386 */;
+// Module 5230 (GuildPowerupsConstants)
+import intl15 from "intl" /* 1113 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import GameServerConstants from "GameServerConstants" /* 5231 */;
+import Powerups from "Powerups" /* 5233 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5234 */;
+import GameServerExperiment from "GameServerExperiment" /* 5248 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let TIER_32;
 let c2;
 let c3;
 let tmp;
-const ServerThemeExperiment = tmp(5230);
+const ServerThemeExperiment = tmp(5235);
 ({ BoostedGuildFeatures: c2, PerkIcons: c3 } = PremiumConstants);
 const BoostedGuildTiers = Constants.BoostedGuildTiers;
 const GuildFeatures = Constants.GuildFeatures;

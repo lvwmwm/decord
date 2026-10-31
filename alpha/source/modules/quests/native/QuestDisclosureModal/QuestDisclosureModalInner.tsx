@@ -1,16 +1,16 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17077
+// Function ID: 17078
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1072, 21, 5009, 575, 4834, 9738, 1114, 9574, 12431, 9707, 17020, 5619, 9685, 6971, 2062, 5629, 2]
+// Dependencies: [17, 1072, 21, 5014, 575, 4839, 9758, 1113, 9050, 12466, 9727, 17078, 5624, 9705, 6977, 2061, 5634, 2]
 // Exports: default
 
-// Module 17019 (QuestDisclosureModalInner)
+// Module 17077 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5619 */;
+import Text_Text from "Text/Text" /* 5624 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,21 +69,21 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   let obj = { icon: null, text: null };
   if (setting) {
     obj.icon = closure_6(require("ServerIcon").ServerIcon, { size: "xs" });
-    const intl4 = tmp2(1114).intl;
+    const intl4 = tmp2(1113).intl;
     obj.text = intl4.string(require("intl").t["2bL0wT"]);
     let items = [obj];
     tmp6 = tmp5;
     items1 = items;
   } else {
     obj.icon = closure_6(require("GlobeEarthIcon").GlobeEarthIcon, { size: "xs" });
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1113).intl;
     obj.text = intl.string(require("intl").t.xQSdPv);
     items1 = [obj, , ];
-    let obj2 = { icon: closure_6(tmp2(12431).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1114).t.mYt7hQ) };
-    intl2 = tmp2(1114).intl;
+    let obj2 = { icon: closure_6(tmp2(12466).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1113).t.mYt7hQ) };
+    intl2 = tmp2(1113).intl;
     items1[1] = obj2;
     const obj3 = { icon: closure_6(require("GameControllerIcon").GameControllerIcon, { size: "xs" }), text: intl3.string(require("intl").t.XAsWxQ) };
-    intl3 = tmp2(1114).intl;
+    intl3 = tmp2(1113).intl;
     items1[2] = obj3;
     tmp6 = tmp5;
   }
@@ -92,7 +92,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const obj5 = { style: tmp.illustration, children: tmp6(require("WumpusCouchSpotIllustration").WumpusCouchSpotIllustration, {}) };
   items2[0] = tmp6(closure_4, obj5);
   const obj6 = { variant: "text-md/normal", color: "mobile-text-heading-primary", children: tmp2Result.getDisclosureText({ adCreativeType, gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest }) };
-  const Text = tmp2(5619).Text;
+  const Text = tmp2(5624).Text;
   tmp2Result = require("QuestCopyUtils");
   items2[1] = tmp6(Text, obj6);
   const tmp7 = closure_7;
@@ -119,22 +119,22 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
           return tmp(React3, obj, index);
         })
     };
-    const Card = tmp2(6971).Card;
+    const Card = tmp2(6977).Card;
     isTargetedDisclosure = tmp6(Card, obj7);
   }
   items2[2] = isTargetedDisclosure;
   const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: format(tzq9Wa, obj9) };
-  const Text2 = tmp2(5619).Text;
-  const intl5 = tmp2(1114).intl;
+  const Text2 = tmp2(5624).Text;
+  const intl5 = tmp2(1113).intl;
   format = intl5.format;
   obj9 = { privacySettingsUrl: obj11.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-  tzq9Wa = tmp2(1114).t.tzq9Wa;
-  obj11 = items1(2062);
+  tzq9Wa = tmp2(1113).t.tzq9Wa;
+  obj11 = items1(2061);
   items2[3] = tmp6(Text2, obj8);
   const obj10 = { style: tmp.closeButton, children: tmp6(Button, obj12) };
   obj12 = { variant: "primary", grow: true, size: "lg", text: intl6.string(require("intl").t.cpT0Cq), onPress: onClose };
-  Button = tmp2(5629).Button;
-  intl6 = tmp2(1114).intl;
+  Button = tmp2(5634).Button;
+  intl6 = tmp2(1113).intl;
   items2[4] = tmp6(tmp9, obj10);
   return tmp7(tmp8, obj4);
 };

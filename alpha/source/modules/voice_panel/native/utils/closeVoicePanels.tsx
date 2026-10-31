@@ -1,12 +1,12 @@
-// Module ID: 10904
-// Function ID: 10905
+// Module ID: 10929
+// Function ID: 10930
 // Name: closeVoicePanels
-// Dependencies: [1072, 1109, 2]
+// Dependencies: [1072, 1108, 2]
 // Exports: default
 
-// Module 10904 (closeVoicePanels)
+// Module 10929 (closeVoicePanels)
 import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActions = Constants.ComponentActions;

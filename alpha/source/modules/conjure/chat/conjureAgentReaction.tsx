@@ -1,13 +1,13 @@
-// Module ID: 10835
-// Function ID: 10836
+// Module ID: 10855
+// Function ID: 10856
 // Name: conjureAgentReaction
-// Dependencies: [4955, 1114, 3865, 2]
+// Dependencies: [4960, 1113, 3868, 2]
 // Exports: agentReactionFromStep, getConjureAgentReactionLabel, sameAgentReaction
 
-// Module 10835 (conjureAgentReaction)
-import intl2 from "intl" /* 1114 */;
-import _modDef3865 from "module_3865" /* 3865 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4955 */;
+// Module 10855 (conjureAgentReaction)
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
 import size from "module_2" /* 2 */;
 
 const re3 = /^\d{17,20}$/;
@@ -59,5 +59,5 @@ export function getConjureAgentReactionLabel(reaction) {
     emojiName = obj.convertSurrogateToName(reaction.emoji, false);
   }
   const intl = intl2.intl;
-  return intl.formatToPlainString(_modDef3865.lxXLho, { emojiName });
+  return intl.formatToPlainString(_modDef3868.lxXLho, { emojiName });
 }

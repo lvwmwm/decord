@@ -1,21 +1,21 @@
-// Module ID: 17960
-// Function ID: 17961
+// Module ID: 18003
+// Function ID: 18004
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7103, 17933, 21, 5009, 575, 5090, 17957, 1114, 5619, 15828, 7118, 504, 5692, 7076, 5184, 7129, 7131, 2]
+// Dependencies: [109, 32, 19, 7109, 17976, 21, 5014, 575, 5095, 18000, 1113, 5624, 15868, 7124, 504, 5697, 7082, 5189, 7135, 7137, 2]
 // Exports: RegisterPasswordInput
 
-// Module 17960 (RegisterPasswordInput)
+// Module 18003 (RegisterPasswordInput)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import usePasswordScore from "usePasswordScore" /* 17957 */;
+import intl5 from "intl" /* 1113 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import usePasswordScore from "usePasswordScore" /* 18000 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7103 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17933 */;
+import PhoneStore from "PhoneStore" /* 7109 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17976 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,27 +48,27 @@ function PasswordStrength(passwordScore) {
           let str;
           let strong;
           if (passwordScore <= usePasswordScore.PasswordScore.WEAK) {
-            const intl2 = tmp9(1114).intl;
-            str = intl2.string(tmp9(1114).t["w/8TuV"]);
+            const intl2 = tmp9(1113).intl;
+            str = intl2.string(tmp9(1113).t["w/8TuV"]);
             strong = tmp.weak;
           } else if (passwordScore === usePasswordScore.PasswordScore.MEDIUM) {
-            const intl = tmp9(1114).intl;
-            str = intl.string(tmp9(1114).t["2fmTpT"]);
+            const intl = tmp9(1113).intl;
+            str = intl.string(tmp9(1113).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
             if (passwordScore === usePasswordScore.PasswordScore.STRONG) {
-              const intl4 = tmp9(1114).intl;
-              str = intl4.string(tmp9(1114).t.Xraqqc);
+              const intl4 = tmp9(1113).intl;
+              str = intl4.string(tmp9(1113).t.Xraqqc);
               strong = tmp.strong;
             }
           }
           const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5619).Text;
+          const Text = tmp9(5624).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
-          const intl3 = tmp9(1114).intl;
+          const intl3 = tmp9(1113).intl;
           items1 = [intl3.string(intl5.t["5gbdUX"]), ": ", str];
           return authStore(Text, obj);
         }

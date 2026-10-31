@@ -1,18 +1,18 @@
-// Module ID: 6017
-// Function ID: 6018
+// Module ID: 6022
+// Function ID: 6023
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 6018, 1376, 6020, 2]
+// Dependencies: [19, 17, 6023, 1375, 6025, 2]
 // Exports: default, subscribeToBackPress
 
-// Module 6017 (useBackPressHandler)
+// Module 6022 (useBackPressHandler)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import KeyCommands from "KeyCommands" /* 6018 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import KeyCommands from "KeyCommands" /* 6023 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BackPressTracking = tmp(6020);
+const BackPressTracking = tmp(6025);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 let obj = {
@@ -49,7 +49,7 @@ export default function useBackPressHandler(set) {
       const obj2 = PlatformUtils;
       const tmp2 = require;
       if (!obj2.isIOS()) {
-        const tmp2Result = tmp2(6020);
+        const tmp2Result = tmp2(6025);
         let closure_1 = tmp2Result.addBackPressListener(fn);
         fn2 = () => {
           closure_1.remove();

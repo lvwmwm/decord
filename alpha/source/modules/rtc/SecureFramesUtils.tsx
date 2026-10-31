@@ -1,32 +1,32 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9265
+// Function ID: 9266
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2007, 5759, 7878, 1384, 5777, 9247, 1072, 2062, 9248, 9249, 9231, 9250, 1114, 5063, 2044, 1090, 38, 206, 1283, 1243, 5953, 6036, 2]
+// Dependencies: [32, 5, 502, 2006, 5764, 7885, 1383, 5782, 9266, 1072, 2061, 9267, 9268, 9250, 9269, 1113, 5068, 2042, 1089, 38, 206, 1282, 1242, 5958, 6041, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9246 (SecureFramesUtils)
+// Module 9265 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import intl15 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
-import _mod9231 from "module_9231" /* 9231 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9248 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9249 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9250 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl15 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import _mod9250 from "module_9250" /* 9250 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9267 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9268 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2007 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7878 */;
-import UserStore from "UserStore" /* 1384 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5777 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9247 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
+import UserStore from "UserStore" /* 1383 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5782 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9266 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -478,8 +478,8 @@ export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9231.serializeKey;
-    _mod9231;
+    const serializeKey = _mod9250.serializeKey;
+    _mod9250;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -534,42 +534,42 @@ export function deleteUserPersistentVerifications(userId) {
   let result = openSecureFramesUpdateConfirmation(obj2);
 }
 export function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef2044(timestamp);
-  obj = _modDef2044();
+  const tmp3 = _modDef2042(timestamp);
+  obj = _modDef2042();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;
-    const rounded = Math.round(diffResult / (12 * tmp(1090).Seconds.DAYS_30));
+    const rounded = Math.round(diffResult / (12 * tmp(1089).Seconds.DAYS_30));
     const intl7 = intl15.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(intl15.t.F1wqkD, obj2);
   } else if (diffResult > DurationsDefault.Seconds.DAYS_30) {
     const _Math5 = Math;
-    const rounded1 = Math.round(diffResult / tmp(1090).Seconds.DAYS_30);
+    const rounded1 = Math.round(diffResult / tmp(1089).Seconds.DAYS_30);
     const intl6 = intl15.intl;
     const obj3 = { count: rounded1 };
     return intl6.formatToPlainString(intl15.t["iT+b+2"], obj3);
   } else if (diffResult > 7 * DurationsDefault.Seconds.DAY) {
     const _Math4 = Math;
-    const rounded2 = Math.round(diffResult / (7 * tmp(1090).Seconds.DAY));
+    const rounded2 = Math.round(diffResult / (7 * tmp(1089).Seconds.DAY));
     const intl5 = intl15.intl;
     const obj4 = { count: rounded2 };
     return intl5.formatToPlainString(intl15.t.dLurKZ, obj4);
   } else if (diffResult > DurationsDefault.Seconds.DAY) {
     const _Math3 = Math;
-    const rounded3 = Math.round(diffResult / tmp(1090).Seconds.DAY);
+    const rounded3 = Math.round(diffResult / tmp(1089).Seconds.DAY);
     const intl4 = intl15.intl;
     const obj5 = { count: rounded3 };
     return intl4.formatToPlainString(intl15.t.LE8a2H, obj5);
   } else if (diffResult > DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded4 = Math.round(diffResult / tmp(1090).Seconds.HOUR);
+    const rounded4 = Math.round(diffResult / tmp(1089).Seconds.HOUR);
     const intl3 = intl15.intl;
     const obj6 = { count: rounded4 };
     return intl3.formatToPlainString(intl15.t.KULxVS, obj6);
   } else if (diffResult > DurationsDefault.Seconds.MINUTE) {
     const _Math = Math;
-    const rounded5 = Math.round(diffResult / tmp(1090).Seconds.MINUTE);
+    const rounded5 = Math.round(diffResult / tmp(1089).Seconds.MINUTE);
     const intl2 = intl15.intl;
     const obj7 = { count: rounded5 };
     return intl2.formatToPlainString(intl15.t.ws6rWq, obj7);

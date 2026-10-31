@@ -1,19 +1,19 @@
-// Module ID: 7961
-// Function ID: 7962
+// Module ID: 7969
+// Function ID: 7970
 // Name: SafetyHubUtils
-// Dependencies: [502, 7962, 1072, 2044, 6046, 1114, 7963, 1090, 11, 504, 2]
+// Dependencies: [502, 7970, 1072, 2042, 6051, 1113, 7971, 1089, 11, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7961 (SafetyHubUtils)
+// Module 7969 (SafetyHubUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import intl5 from "intl" /* 1114 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6046 */;
-import SafetyHubModels from "SafetyHubModels" /* 7963 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl5 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6051 */;
+import SafetyHubModels from "SafetyHubModels" /* 7971 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -62,8 +62,8 @@ let c10 = result;
 const result1 = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef2044();
-  return obj.to(_modDef2044(timestamp));
+  const obj = _modDef2042();
+  return obj.to(_modDef2042(timestamp));
 }
 export function getSpoilerFlagsForAttachment(filename) {
   let num;

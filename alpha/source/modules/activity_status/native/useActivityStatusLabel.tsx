@@ -1,21 +1,21 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14562
+// Function ID: 14563
 // Name: useActivityStatusLabel
-// Dependencies: [6708, 4858, 4941, 5756, 4951, 5674, 504, 5757, 10729, 10727, 10728, 10735, 1114, 10739, 10744, 2]
+// Dependencies: [6714, 4863, 4946, 5761, 4956, 5679, 504, 5762, 10749, 10747, 10748, 10755, 1113, 10759, 10764, 2]
 // Exports: default
 
-// Module 14524 (useActivityStatusLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10727 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10728 */;
-import isGameActivityDefault from "isGameActivity" /* 10735 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10739 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10744 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import PermissionStore from "PermissionStore" /* 4941 */;
-import PresenceStore from "PresenceStore" /* 5756 */;
-import RelationshipStore from "RelationshipStore" /* 4951 */;
-import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+// Module 14562 (useActivityStatusLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10747 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10748 */;
+import isGameActivityDefault from "isGameActivity" /* 10755 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10759 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10764 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -87,14 +87,14 @@ export default function useActivityStatusLabel(userId) {
       if (null != name) {
         let formatToPlainStringResult;
         if ("" !== name) {
-          const intl2 = tmp4(1114).intl;
+          const intl2 = tmp4(1113).intl;
           const obj5 = { name };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1114).t["0wJXSh"], obj5);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1113).t["0wJXSh"], obj5);
         }
         voiceActivityStatusText = formatToPlainStringResult;
       }
-      const intl = tmp4(1114).intl;
-      formatToPlainStringResult = intl.string(tmp4(1114).t.eXan7B);
+      const intl = tmp4(1113).intl;
+      formatToPlainStringResult = intl.string(tmp4(1113).t.eXan7B);
     } else {
       let found1;
       if (activities != null) {

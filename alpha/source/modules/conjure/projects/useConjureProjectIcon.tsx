@@ -1,12 +1,12 @@
-// Module ID: 12428
-// Function ID: 12429
+// Module ID: 11343
+// Function ID: 11344
 // Name: useConjureProjectIcon
-// Dependencies: [6875, 1410, 2]
+// Dependencies: [6881, 1409, 2]
 // Exports: conjureProjectIconMetrics, default
 
-// Module 12428 (useConjureProjectIcon)
-import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6875 */;
+// Module 11343 (useConjureProjectIcon)
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectIcon.tsx");
@@ -33,7 +33,7 @@ export default function useConjureProjectIcon(preview_application_id, size) {
   const merged = Object.assign(obj5);
   return obj4;
 };
-export function conjureProjectIconMetrics(arg0) {
-  const obj = { glyphSize: Math.round(0.6 * arg0), radius: arg0 / 4 };
+export function conjureProjectIconMetrics(size) {
+  const obj = { glyphSize: Math.round(0.6 * size), radius: size / 4 };
   return obj;
 }

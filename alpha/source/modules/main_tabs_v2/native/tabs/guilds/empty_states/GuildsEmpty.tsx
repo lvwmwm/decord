@@ -1,27 +1,27 @@
-// Module ID: 18287
-// Function ID: 18288
+// Module ID: 18330
+// Function ID: 18331
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 4876, 502, 4880, 5040, 1072, 21, 5009, 575, 5619, 14227, 18288, 1114, 6022, 5629, 1499, 563, 6023, 1261, 4883, 5195, 8765, 17006, 2]
+// Dependencies: [32, 19, 17, 4881, 502, 4885, 5045, 1072, 21, 5014, 575, 5624, 14265, 18331, 1113, 6027, 5634, 1498, 563, 6028, 1260, 4888, 5200, 8773, 17064, 2]
 
-// Module 18287 (GuildsEmpty)
+// Module 18330 (GuildsEmpty)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1114 */;
-import GuildRecord from "GuildRecord" /* 4876 */;
-import FavoritesUtils from "FavoritesUtils" /* 4883 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import components_Button_Button from "components/Button/Button" /* 5629 */;
-import Stack_Stack from "Stack/Stack" /* 6022 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14227 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 18288 */;
+import intl5 from "intl" /* 1113 */;
+import GuildRecord from "GuildRecord" /* 4881 */;
+import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6027 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14265 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 18331 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -128,7 +128,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
   selectedGuildId = undefined;
   ({ selectedGuildId, style } = arg0);
   const tmp = closure_15();
-  const obj = navigation(1499);
+  const obj = navigation(1498);
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [AuthenticationStore];
@@ -138,8 +138,8 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
     tmp6 = selectedGuildId;
   }
   selectedGuildId = tmp6;
-  let obj3 = { type: tmp2(1261).ImpressionTypes.VIEW, name: tmp2(1261).ImpressionNames.GUILDS_EMPTY_NUX };
-  const tmp7 = selectedGuildId(6023);
+  let obj3 = { type: tmp2(1260).ImpressionTypes.VIEW, name: tmp2(1260).ImpressionNames.GUILDS_EMPTY_NUX };
+  const tmp7 = selectedGuildId(6028);
   tmp7(obj3);
   const items1 = [tmp6, navigation];
   const effect = react.useEffect(() => {
@@ -191,7 +191,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
                 found = guildsArray.find((item) => !closure_1_7(item));
               }
               if (null != found) {
-                const tmp23Result = tmp23(5195);
+                const tmp23Result = tmp23(5200);
                 let closure_0 = _slicedToArray(tmp23Result.getInitialGuildState(found.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(closure_2_2[17]).CommonActions;
@@ -204,9 +204,9 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
       }
     }
   }, items1);
-  const tmp2Result = navigation(8765);
+  const tmp2Result = navigation(8773);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(17006);
+  navigation(17064);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };
@@ -214,9 +214,9 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
     const obj5 = { style: tmp.headerTitle, children: closure_13(closure_5, obj6) };
     let tmp15 = closure_5;
     obj6 = { style: tmp.headerInner, children: closure_13(Text, obj7) };
-    obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1114).t["7hB4kg"]) };
-    Text = tmp2(5619).Text;
-    intl = tmp2(1114).intl;
+    obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1113).t["7hB4kg"]) };
+    Text = tmp2(5624).Text;
+    intl = tmp2(1113).intl;
     items3 = [closure_13(closure_5, obj5), ];
     let tmp18;
     const tmp14 = closure_14;

@@ -1,28 +1,28 @@
-// Module ID: 9082
-// Function ID: 9083
+// Module ID: 9101
+// Function ID: 9102
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4858, 4880, 4864, 8954, 21, 5009, 575, 6738, 6974, 1114, 1188, 7251, 5619, 9076, 504, 9011, 9083, 7286, 7946, 9086, 5629, 2]
+// Dependencies: [5, 32, 19, 17, 4863, 4885, 4869, 8963, 21, 5014, 575, 6744, 6980, 1113, 1187, 7257, 5624, 9095, 504, 9020, 9102, 7292, 7954, 9105, 5634, 2]
 // Exports: default
 
-// Module 9082 (StartEventModal)
+// Module 9101 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1114 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import Pressables from "Pressables" /* 6974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7251 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8954 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9076 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import Pressables from "Pressables" /* 6980 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7257 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8963 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import GuildStore from "GuildStore" /* 4880 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -137,7 +137,7 @@ export default function StartEventModal(event) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export default function StartEventModal(event) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;

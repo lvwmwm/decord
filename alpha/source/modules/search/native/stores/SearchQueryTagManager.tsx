@@ -1,11 +1,11 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13886
+// Function ID: 13887
 // Name: SearchQueryTagManager
-// Dependencies: [9806, 9805, 2]
+// Dependencies: [9827, 9826, 2]
 
-// Module 13851 (SearchQueryTagManager)
-import TrackingConstants from "TrackingConstants" /* 9805 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
+// Module 13886 (SearchQueryTagManager)
+import TrackingConstants from "TrackingConstants" /* 9826 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,23 +1,23 @@
-// Module ID: 6529
-// Function ID: 6530
+// Module ID: 6535
+// Function ID: 6536
 // Name: actions/BillingActionCreators
-// Dependencies: [109, 5, 2051, 2049, 2053, 1072, 2058, 1083, 572, 1283, 6440, 4829, 2044, 2048, 6530, 6541, 4822, 6547, 6548, 1253, 2]
+// Dependencies: [109, 5, 2050, 2048, 2052, 1072, 2057, 1083, 572, 1282, 6446, 4834, 2042, 2047, 6536, 6547, 4827, 6553, 6554, 1252, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 6529 (actions/BillingActionCreators)
+// Module 6535 (actions/BillingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import _modDef2044 from "module_2044" /* 2044 */;
-import PremiumUtils from "PremiumUtils" /* 2048 */;
-import BillingConstants from "BillingConstants" /* 2058 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6530 */;
-import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 6541 */;
-import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 6548 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import BillingConstants from "BillingConstants" /* 2057 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6536 */;
+import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 6547 */;
+import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 6554 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2051 */;
-import BillingInfoStore from "BillingInfoStore" /* 2049 */;
-import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2050 */;
+import BillingInfoStore from "BillingInfoStore" /* 2048 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import Constants_mod from "Constants" /* 1072 */;
 import Constants_mod2 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ let obj = function _deletePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ let obj = function _deletePaymentSource() {
             obj.dispatch(obj10);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_3 = tmp25;
@@ -137,7 +137,7 @@ obj = function _updatePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -196,7 +196,7 @@ obj = function _updatePaymentSource() {
             obj.dispatch(obj13);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_4 = tmp25;
@@ -224,7 +224,7 @@ obj = function _fetchPaymentSources() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -243,7 +243,7 @@ obj = function _fetchPaymentSources() {
             value = undefined;
             if (BillingInfoStore.isPaymentSourceFetching) {
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c3 = 1;
               const HTTP = HTTPUtils.HTTP;
@@ -309,7 +309,7 @@ obj = function _fetchPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -385,7 +385,7 @@ obj = function _fetchWalletInformation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -488,7 +488,7 @@ obj = function _fetchSubscriptions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -514,12 +514,12 @@ obj = function _fetchSubscriptions() {
             let tmp30 = null == lastLazyPerkSync;
             const tmp49 = constants2;
             if (!tmp30) {
-              const obj6 = _modDef2044();
+              const obj6 = _modDef2042();
               tmp30 = obj6.diff(lastLazyPerkSync, "hours") >= 1;
             }
             if (tmp30) {
               FULL_RESYNC = tmp49.FULL_RESYNC;
-              lastLazyPerkSync = _modDef2044();
+              lastLazyPerkSync = _modDef2042();
             }
             HTTP = HTTPUtils.HTTP;
             const request = { url: constants.BILLING_SUBSCRIPTIONS, oldFormErrors: true, rejectWithError: false, query: obj4 };
@@ -585,7 +585,7 @@ obj = function _getPerksRelevance() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -634,7 +634,7 @@ obj = function _getPerksRelevance() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;
@@ -717,7 +717,7 @@ obj = function _createSubscription() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let expected_invoice_price;
@@ -959,7 +959,7 @@ obj = function _payInvoiceManually() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1189,7 +1189,7 @@ obj = function _cancelSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1280,7 +1280,7 @@ obj = function _updateSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1482,7 +1482,7 @@ obj = function _voidPendingPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1513,7 +1513,7 @@ obj = function _voidPendingPayment() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1537,7 +1537,7 @@ obj = function _fetchIpCountryCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -1648,7 +1648,7 @@ obj = function _fetchIpLocation() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -1771,7 +1771,7 @@ obj = function _redeemReactivationOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1830,7 +1830,7 @@ obj = function _redeemReactivationOffer() {
             obj9.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_4 = tmp25;
@@ -1863,7 +1863,7 @@ obj = function _redeemUserDiscountOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1912,7 +1912,7 @@ obj = function _redeemUserDiscountOffer() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp24) {
           closure_3 = tmp24;
@@ -2047,7 +2047,7 @@ export function popupBridgeCallback(paymentSourceType) {
   ({ state, path, query, insecure } = paymentSourceType);
   obj = DispatcherDefault;
   obj.dispatch({ type: "BILLING_POPUP_BRIDGE_CALLBACK_START", paymentSourceType });
-  const HTTP = paymentSourceType(1283).HTTP;
+  const HTTP = paymentSourceType(1282).HTTP;
   const request = { url: closure_10.BILLING_POPUP_BRIDGE_CALLBACK(paymentSourceType), body: { state, path, query, insecure }, oldFormErrors: true, rejectWithError: false };
   const postResult = HTTP.post(request);
   return postResult.then((result) => {

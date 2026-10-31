@@ -1,17 +1,17 @@
-// Module ID: 19035
-// Function ID: 19036
+// Module ID: 19084
+// Function ID: 19085
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5009, 575, 18678, 5619, 1188, 18673, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 18720, 5624, 1187, 18715, 2]
 
-// Module 19035 (VoiceOrStageSummaryRow)
+// Module 19084 (VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18678 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18720 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -19,7 +19,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const AssetRegistryDefault = tmp(18673);
+const AssetRegistryDefault = tmp(18715);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((height) => {
@@ -111,11 +111,11 @@ const memoResult = react.memo(function VoiceOrStageSummaryRow(arg0) {
     obj4 = { style: items3, children: items4 };
     items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
-    let obj5 = { size: max(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: AssetRegistryDefault };
-    const Icon = max(1188).Icon;
+    let obj5 = { size: max(1187).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: AssetRegistryDefault };
+    const Icon = max(1187).Icon;
     items4 = [tmp8(Icon, obj5), ];
     let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-    items4[1] = closure_4(max(5619).Text, obj6);
+    items4[1] = closure_4(max(5624).Text, obj6);
     tmp8Result = tmp8(tmp6, obj3);
   }
   items1[1] = tmp8Result;

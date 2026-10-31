@@ -1,23 +1,23 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8928
+// Function ID: 8929
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7471, 4858, 6056, 1384, 1072, 1091, 6046, 4834, 1397, 1378, 1380, 6060, 1993, 6067, 11, 2]
+// Dependencies: [19, 7477, 4863, 6061, 1383, 1072, 1090, 6051, 4839, 1396, 1377, 1379, 6065, 1992, 6072, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8919 (ForumPostMediaUtils)
+// Module 8928 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import UserSettings from "UserSettings" /* 4834 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6046 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6060 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6051 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6065 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7471 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import UserStore from "UserStore" /* 1384 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7477 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -226,7 +226,7 @@ function useForumPostEmbeds(embeds, hasSpoilerEmbeds) {
               }
             }
           });
-          found = mapped.filter(tmp(1380).isNotNullish);
+          found = mapped.filter(tmp(1379).isNotNullish);
         }
         return found;
       }
@@ -325,7 +325,7 @@ function useForumPostMediaProperties(firstResult, flag) {
             return null;
           }
         });
-        items1 = flatMapResult.filter(tmp2(1380).isNotNullish);
+        items1 = flatMapResult.filter(tmp2(1379).isNotNullish);
       }
     }
     items1 = [];
@@ -475,7 +475,7 @@ export function useForumPostComponentsMedia(components) {
             return null;
           }
         });
-        found = flatMapResult.filter(tmp(1380).isNotNullish);
+        found = flatMapResult.filter(tmp(1379).isNotNullish);
       }
       return found;
     }
@@ -603,7 +603,7 @@ export function useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds) {
             return null;
           }
         });
-        items = flatMapResult.filter(tmp(1380).isNotNullish);
+        items = flatMapResult.filter(tmp(1379).isNotNullish);
       }
     }
     items = [];

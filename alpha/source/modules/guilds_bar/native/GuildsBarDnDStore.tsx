@@ -1,15 +1,15 @@
-// Module ID: 18305
-// Function ID: 18306
+// Module ID: 18348
+// Function ID: 18349
 // Name: GuildsBarDnDStore
-// Dependencies: [6766, 1255, 5090, 1260, 1243, 4924, 2]
+// Dependencies: [6772, 1254, 5095, 1259, 1242, 4929, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18305 (GuildsBarDnDStore)
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import react_native from "react-native" /* 1260 */;
-import _slicedToArray from "_slicedToArray" /* 4924 */;
-import SortedGuildStore from "SortedGuildStore" /* 6766 */;
-import module_1255 from "module_1255" /* 1255 */;
+// Module 18348 (GuildsBarDnDStore)
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import react_native from "react-native" /* 1259 */;
+import _slicedToArray from "_slicedToArray" /* 4929 */;
+import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let _require, set;
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
-const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_5;
   let obj;
   let obj2;
@@ -30,14 +30,14 @@ const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "sa",
+    overSpecs: "dispatch",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: 60000,
+    windowSize: 2054588530,
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -77,7 +77,7 @@ const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "applicationId" };
+          const obj = { dropSpecs, dragSpecs: "concat", overSpecs: "style" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1255.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "getCurrentUser" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -149,7 +149,7 @@ export function useItemDragState(arg0, arg1) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "sa", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "dispatch", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

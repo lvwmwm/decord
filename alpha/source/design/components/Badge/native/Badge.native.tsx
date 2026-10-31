@@ -1,19 +1,19 @@
-// Module ID: 7300
-// Function ID: 7301
+// Module ID: 7306
+// Function ID: 7307
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1114, 575, 5009, 5591, 5582, 7301, 5076, 5619, 2]
+// Dependencies: [17, 21, 1113, 575, 5014, 5596, 5587, 7307, 5081, 5624, 2]
 // Exports: Badge
 
-// Module 7300 (Badge/Badge)
+// Module 7306 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 5076 */;
-import LinearGradientDefault from "LinearGradient" /* 5582 */;
-import useToken from "useToken" /* 5591 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import BadgeShared from "BadgeShared" /* 7301 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 5081 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import useToken from "useToken" /* 5596 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import BadgeShared from "BadgeShared" /* 7307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -145,17 +145,17 @@ export function Badge(icon) {
   const obj = useBadgeTextVariant;
   const badgeTextVariant = obj.useBadgeTextVariant();
   if ("new" === type) {
-    const intl4 = tmp4(1114).intl;
-    text = intl4.string(tmp4(1114).t.y2b7CA);
+    const intl4 = tmp4(1113).intl;
+    text = intl4.string(tmp4(1113).t.y2b7CA);
   } else if ("beta" === type) {
-    const intl3 = tmp4(1114).intl;
-    text = intl3.string(tmp4(1114).t.oW0eUd);
+    const intl3 = tmp4(1113).intl;
+    text = intl3.string(tmp4(1113).t.oW0eUd);
   } else if ("early_access" === type) {
-    const intl2 = tmp4(1114).intl;
-    text = intl2.string(tmp4(1114).t.EYxi0o);
+    const intl2 = tmp4(1113).intl;
+    text = intl2.string(tmp4(1113).t.EYxi0o);
   } else if ("free_trial" === type) {
-    const intl = tmp4(1114).intl;
-    text = intl.string(tmp4(1114).t.IBYG5U);
+    const intl = tmp4(1113).intl;
+    text = intl.string(tmp4(1113).t.IBYG5U);
   } else {
     text = type.text;
   }

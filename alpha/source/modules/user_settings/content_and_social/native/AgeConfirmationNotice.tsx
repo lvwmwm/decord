@@ -1,19 +1,19 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16713
+// Function ID: 16714
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7484, 21, 7466, 16532, 5704, 2062, 7947, 6723, 575, 8017, 1114, 5619, 2]
+// Dependencies: [19, 17, 7490, 21, 7472, 16574, 5709, 2061, 7955, 6729, 575, 8025, 1113, 5624, 2]
 // Exports: default
 
-// Module 16671 (AgeConfirmationNotice)
+// Module 16713 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import LinkingDefault from "Linking" /* 5704 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16532 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16574 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7484 */;
+import Constants from "Constants" /* 7490 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -32,7 +32,7 @@ export default function AgeConfirmationNotice() {
   let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(7466);
+  let obj = sensitiveContentFilterHelpArticle(7472);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[5]);
@@ -55,15 +55,15 @@ export default function AgeConfirmationNotice() {
     const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[5]);
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
-  ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1114).t.mFgsfg, obj5), role: "status", action: obj6 });
-  const InlineNotice = sensitiveContentFilterHelpArticle(8017).InlineNotice;
-  intl = sensitiveContentFilterHelpArticle(1114).intl;
+  ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1113).t.mFgsfg, obj5), role: "status", action: obj6 });
+  const InlineNotice = sensitiveContentFilterHelpArticle(8025).InlineNotice;
+  intl = sensitiveContentFilterHelpArticle(1113).intl;
   obj5 = {
     hook(children) {
       return jsx(Text_Text.Text, { role: "link", variant: "text-sm/medium", color: "text-link", onPress, children });
     }
   };
-  obj6 = { text: intl2.string(sensitiveContentFilterHelpArticle(1114).t.FDSSia), onPress: callback };
-  intl2 = sensitiveContentFilterHelpArticle(1114).intl;
+  obj6 = { text: intl2.string(sensitiveContentFilterHelpArticle(1113).t.FDSSia), onPress: callback };
+  intl2 = sensitiveContentFilterHelpArticle(1113).intl;
   return <View style={obj3}>{null}</View>;
 };

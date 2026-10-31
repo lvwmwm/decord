@@ -1,11 +1,11 @@
-// Module ID: 13151
-// Function ID: 13152
+// Module ID: 13186
+// Function ID: 13187
 // Name: GameOrganizationJoinModalConstants
-// Dependencies: [6738, 2]
+// Dependencies: [6744, 2]
 // Exports: closeGameOrganizationJoinModal
 
-// Module 13151 (GameOrganizationJoinModalConstants)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+// Module 13186 (GameOrganizationJoinModalConstants)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/GameOrganizationJoinModalConstants.tsx");

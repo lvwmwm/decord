@@ -1,44 +1,44 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17246
+// Function ID: 17247
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [5, 32, 19, 17, 5033, 1239, 1384, 1194, 1193, 1195, 1196, 5034, 1083, 21, 5009, 575, 1376, 1114, 17190, 11170, 17192, 1492, 563, 5245, 1197, 1242, 5031, 5607, 16940, 5036, 1499, 7320, 7345, 6999, 8971, 5090, 5006, 5187, 5249, 5252, 16939, 16410, 16411, 6778, 5707, 5075, 9798, 5619, 6947, 6974, 6998, 16941, 17194, 9195, 17200, 17212, 17221, 7286, 11193, 2]
+// Dependencies: [5, 32, 19, 17, 5038, 1238, 1383, 1193, 1192, 1194, 1195, 5039, 1083, 21, 5014, 575, 1375, 1113, 17247, 11189, 17249, 1491, 563, 5250, 1196, 1241, 5036, 5612, 16996, 5041, 1498, 7326, 7351, 7005, 8980, 5095, 5011, 5192, 5254, 5257, 16995, 16452, 16453, 6784, 5712, 5080, 9819, 5624, 6953, 6980, 7004, 16997, 17251, 9214, 17257, 17269, 17278, 7292, 11212, 2]
 // Exports: default
 
-// Module 17189 (SettingsAppearanceThemePickerScreen)
+// Module 17246 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import intl4 from "intl" /* 1114 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5245 */;
-import timing from "timing" /* 5249 */;
-import timingPresets from "timingPresets" /* 5252 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import QuestTypes from "QuestTypes" /* 6778 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 11170 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 16410 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16411 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16939 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16940 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16941 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 17190 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17192 */;
+import intl4 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5250 */;
+import timing from "timing" /* 5254 */;
+import timingPresets from "timingPresets" /* 5257 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import QuestTypes from "QuestTypes" /* 6784 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 11189 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 16452 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16453 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16995 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16996 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16997 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 17247 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17249 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5033 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1239 */;
-import UserStore from "UserStore" /* 1384 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
+import UserStore from "UserStore" /* 1383 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import ThemeConstants from "ThemeConstants" /* 1195 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ let num;
 let obj3;
 let obj4;
 let tmp;
-const HexagonCampaignUtils = tmp(5036);
+const HexagonCampaignUtils = tmp(5041);
 function needsHexagonCampaignEnrollment(themes) {
   const obj = MobileThemesUtils;
   let result = obj.isHexagonCampaignMobileTheme(themes);
@@ -387,7 +387,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -484,7 +484,7 @@ function ThemePicker(defaultIndex) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -523,7 +523,7 @@ function ThemePicker(defaultIndex) {
                 callback1(tmp11);
                 close();
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -538,7 +538,7 @@ function ThemePicker(defaultIndex) {
           close();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp18) {
         c2 = 3;
         throw tmp18;
@@ -593,7 +593,7 @@ function ThemePicker(defaultIndex) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -637,7 +637,7 @@ function ThemePicker(defaultIndex) {
               closure_1_9.dispatch(data.data.action);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp21) {
             c4 = 3;
             throw tmp21;
@@ -726,11 +726,11 @@ function ThemePicker(defaultIndex) {
         let tmp5;
         let tmpResult;
         if (first1) {
-          tmpResult = tmp(tmp2(6947).ActivityIndicator, { size: "small" });
+          tmpResult = tmp(tmp2(6953).ActivityIndicator, { size: "small" });
         } else {
           let obj2 = result;
           const obj = { hitSlop: 8, disabled: result, onPress: callback3, children: tmp5(Text, obj3) };
-          const PressableOpacity = tmp2(6974).PressableOpacity;
+          const PressableOpacity = tmp2(6980).PressableOpacity;
           items = [obj6.textBrand, ];
           Text = Text_Text.Text;
           tmp5 = closure_17;

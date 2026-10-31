@@ -1,12 +1,12 @@
-// Module ID: 13265
-// Function ID: 13266
+// Module ID: 13300
+// Function ID: 13301
 // Name: useSafetyHubAccountStanding
-// Dependencies: [7986, 504, 2]
+// Dependencies: [7994, 504, 2]
 // Exports: useSafetyHubAccountStanding
 
-// Module 13265 (useSafetyHubAccountStanding)
+// Module 13300 (useSafetyHubAccountStanding)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 7986 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");

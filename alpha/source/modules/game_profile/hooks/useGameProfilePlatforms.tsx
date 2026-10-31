@@ -1,12 +1,12 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9594
+// Function ID: 9595
 // Name: useGameProfilePlatforms
-// Dependencies: [19, 8904, 1114, 2]
+// Dependencies: [19, 8913, 1113, 2]
 // Exports: default, getGameProfilePlatformText
 
-// Module 9572 (useGameProfilePlatforms)
-import intl7 from "intl" /* 1114 */;
-import PlatformType from "PlatformType" /* 8904 */;
+// Module 9594 (useGameProfilePlatforms)
+import intl7 from "intl" /* 1113 */;
+import PlatformType from "PlatformType" /* 8913 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,11 +19,11 @@ export default function useGameProfilePlatforms(platforms) {
   items = [platforms.platforms];
   return react.useMemo(() => {
     set = new Set(platforms.platforms);
-    let hasItem = set.has(PlatformType.PlatformType.MACOS) || set.has(tmp(8904).PlatformType.LINUX);
+    let hasItem = set.has(PlatformType.PlatformType.MACOS) || set.has(tmp(8913).PlatformType.LINUX);
     if (hasItem) {
       set.add(PlatformType.PlatformType.DESKTOP);
     }
-    const hasItem1 = set.has(tmp(8904).PlatformType.IOS) || set.has(tmp(8904).PlatformType.ANDROID);
+    const hasItem1 = set.has(tmp(8913).PlatformType.IOS) || set.has(tmp(8913).PlatformType.ANDROID);
     return items.filter((item) => {
       let hasItem;
       if ("mobile" === item) {
@@ -37,22 +37,22 @@ export default function useGameProfilePlatforms(platforms) {
 };
 export function getGameProfilePlatformText(item) {
   if (PlatformType.PlatformType.DESKTOP === item) {
-    const intl6 = tmp(1114).intl;
+    const intl6 = tmp(1113).intl;
     return intl6.string(intl7.t.KT6uCJ);
   } else if ("mobile" === item) {
-    const intl5 = tmp(1114).intl;
+    const intl5 = tmp(1113).intl;
     return intl5.string(intl7.t["0DvssQ"]);
   } else if (PlatformType.PlatformType.XBOX === item) {
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1113).intl;
     return intl4.string(intl7.t.DDWUJp);
   } else if (PlatformType.PlatformType.PLAYSTATION === item) {
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1113).intl;
     return intl3.string(intl7.t.fzMz2s);
   } else if (PlatformType.PlatformType.NINTENDO === item) {
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     return intl2.string(intl7.t.AMW8je);
   } else if (PlatformType.PlatformType.ROBLOX === item) {
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     return intl.string(intl7.t.MPURhG);
   }
 }

@@ -1,15 +1,15 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9840
+// Function ID: 9841
 // Name: ForumActionCreators
-// Dependencies: [5, 1072, 5953, 1114, 572, 1283, 8194, 9820, 9821, 9822, 8196, 2]
+// Dependencies: [5, 1072, 5958, 1113, 572, 1282, 8202, 9841, 9842, 9843, 8204, 2]
 
-// Module 9819 (ForumActionCreators)
+// Module 9840 (ForumActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl3 from "intl" /* 1114 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9820 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9821 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9822 */;
+import intl3 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9841 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9842 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9843 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -112,9 +112,9 @@ body = {
     }
     tmpResult = HTTPUtils;
     let closure_0 = put(request);
-    const intl = tmp(1114).intl;
+    const intl = tmp(1113).intl;
     const stringResult = intl.string(intl3.t.T8sBLJ);
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     withErrorHandling(() => closure_0, stringResult, intl2.string(intl3.t.imcb5u));
   },
   deleteForumTag(channelId, id) {
@@ -190,7 +190,7 @@ body = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ body = {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           if (0 === c2) {

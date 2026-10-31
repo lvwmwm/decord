@@ -1,20 +1,20 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12249
+// Function ID: 12250
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 5010, 21, 575, 5009, 12200, 5090, 1492, 5006, 504, 5632, 5582, 5613, 12212, 5619, 2]
+// Dependencies: [32, 19, 17, 5015, 21, 575, 5014, 12238, 5095, 1491, 5011, 504, 5637, 5587, 5618, 12250, 5624, 2]
 // Exports: default
 
-// Module 12211 (BannerBase)
+// Module 12249 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
-import spring from "spring" /* 5632 */;
-import ApplicationsImage from "ApplicationsImage" /* 12200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import spring from "spring" /* 5637 */;
+import ApplicationsImage from "ApplicationsImage" /* 12238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ export default function BannerBase(image) {
   const tmp2 = _slicedToArray(react.useState(0), 2);
   let obj = require("ReanimatedRexport");
   const sharedValue = obj.useSharedValue(false);
-  const diff = sharedValue(1492)().width - 2 * sharedValue(575).space.PX_16;
+  const diff = sharedValue(1491)().width - 2 * sharedValue(575).space.PX_16;
   const backgroundColor = tmp.bannerGradientColor.backgroundColor;
   let obj2 = require("ColorUtils");
   let items = [obj2.hexOpacityToRgba(backgroundColor, 0.2), ];
@@ -95,7 +95,7 @@ export default function BannerBase(image) {
   ({ bannerMeasured: sharedValue, withDelay: require("ReanimatedRexport").withDelay, withSpring: require("spring").withSpring, SPRING_CONFIG });
   const animatedStyle = obj5.useAnimatedStyle(fn);
   const items2 = [tmp.banner, , ];
-  View = sharedValue(5090).View;
+  View = sharedValue(5095).View;
   if (tmp3 > 0) {
     num = 1;
   }
@@ -118,12 +118,12 @@ export default function BannerBase(image) {
   items2[2] = animatedStyle;
   const obj8 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 };
   items3 = [tmp.bannerBackgroundGradient, { height: tmp3, width: diff }];
-  items4 = [closure_7(tmp7(5582), obj8), , ];
+  items4 = [closure_7(tmp7(5587), obj8), , ];
   let tmp11Result = null != image;
   if (tmp11Result) {
     const obj9 = { style: tmp.imageContainer, children: items5 };
-    const obj10 = { style: tmp.trinketsLottie, source: require("module_12212"), autoPlay: !stateFromStores };
-    const tmp7Result = sharedValue(5613);
+    const obj10 = { style: tmp.trinketsLottie, source: require("module_12250"), autoPlay: !stateFromStores };
+    const tmp7Result = sharedValue(5618);
     items5 = [tmp12(tmp7Result, obj10), image];
     tmp11Result = tmp11(View, obj9);
   }
@@ -133,7 +133,7 @@ export default function BannerBase(image) {
   const obj11 = { style: items6, children: closure_7(Text, { variant: "text-md/semibold", color: "text-overlay-light", style: items7, children: text }) };
   items7 = [tmp.bannerText, ];
   let bannerTextCentered = null == image;
-  Text = tmp4(5619).Text;
+  Text = tmp4(5624).Text;
   const tmp16 = View;
   if (bannerTextCentered) {
     bannerTextCentered = tmp.bannerTextCentered;

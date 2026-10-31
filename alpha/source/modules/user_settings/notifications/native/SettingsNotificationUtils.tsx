@@ -1,15 +1,15 @@
-// Module ID: 17405
-// Function ID: 17406
+// Module ID: 17465
+// Function ID: 17466
 // Name: SettingsNotificationUtils
-// Dependencies: [1376, 4966, 2]
+// Dependencies: [1375, 4971, 2]
 // Exports: hasAndroidNotificationChannels
 
-// Module 17405 (SettingsNotificationUtils)
-import PlatformUtils from "PlatformUtils" /* 1376 */;
+// Module 17465 (SettingsNotificationUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DeviceUtils = tmp(4966);
+const DeviceUtils = tmp(4971);
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationUtils.tsx");
 
 export function hasAndroidNotificationChannels() {

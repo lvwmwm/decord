@@ -1,23 +1,23 @@
-// Module ID: 13193
-// Function ID: 13194
+// Module ID: 13228
+// Function ID: 13229
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4858, 1072, 5014, 21, 5009, 575, 7629, 7817, 1253, 7345, 5602, 504, 7247, 1114, 13194, 10222, 5629, 6738, 5607, 6992, 7163, 2]
+// Dependencies: [32, 5, 19, 17, 4863, 1072, 5019, 21, 5014, 575, 7636, 7824, 1252, 7351, 5607, 504, 7253, 1113, 13229, 10242, 5634, 6744, 5612, 6998, 7169, 2]
 // Exports: default
 
-// Module 13193 (GiftIntentGifModal)
+// Module 13228 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1114 */;
-import MessageConstants from "MessageConstants" /* 5014 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
-import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import intl5 from "intl" /* 1113 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ let obj = function _sendGiftIntentGif() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ let obj = function _sendGiftIntentGif() {
               items[0] = closure_130_1(closure_130_2[13]).PREMIUM_GIFT_INTENT_CARD;
               track(GIFT_INTENT_MESSAGE_SENT, obj10);
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             const id = user.id;
             const sendMessage = closure_130_1(closure_130_2[10]).sendMessage;
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f103778 = () => {
+  const f104038 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f103778) };
-  require("react")(f103778);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f104038) };
+  require("react")(f104038);
   return closure_10(require("Navigator").Navigator, obj);
 };

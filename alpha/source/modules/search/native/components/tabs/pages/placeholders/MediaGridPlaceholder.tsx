@@ -1,23 +1,23 @@
-// Module ID: 18663
-// Function ID: 18664
+// Module ID: 18705
+// Function ID: 18706
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 9806, 21, 5009, 575, 18662, 5090, 18664, 12, 5619, 1114, 13836, 18665, 2]
+// Dependencies: [19, 17, 9827, 21, 5014, 575, 18704, 5095, 18706, 12, 5624, 1113, 13871, 18707, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 18663 (MediaGridPlaceholder)
+// Module 18705 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1114 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
-import Text_Text from "Text/Text" /* 5619 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13836 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 18662 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18664 */;
+import intl3 from "intl" /* 1113 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13871 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 18704 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18706 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9806 */;
+import SearchConstants from "SearchConstants" /* 9827 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5009 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -85,7 +85,7 @@ export function RecentsMediaGridPlaceholder(visible) {
   items2[2] = placeholderAnimatedStyle;
   const obj3 = { style: tmp.section, children: items3 };
   const obj4 = { style: tmp.sectionItem, children: closure_7(Text, obj5) };
-  View = numRows(5090).View;
+  View = numRows(5095).View;
   obj5 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: intl.string(intl3.t.LBYpDH) };
   Text = Text_Text.Text;
   intl = intl3.intl;

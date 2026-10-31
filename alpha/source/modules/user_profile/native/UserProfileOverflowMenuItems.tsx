@@ -1,26 +1,26 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14825
+// Function ID: 14826
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 11261, 1114, 7482, 5253, 11263, 1995, 1261, 7490, 11262, 14788, 14788, 8344, 1376, 14143, 1253, 7352, 5706, 5063, 7358, 2]
+// Dependencies: [1072, 11287, 1113, 7488, 5258, 11289, 1994, 1260, 7496, 11288, 14826, 14826, 8352, 1375, 14180, 1252, 7358, 5711, 5068, 7364, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 14787 (UserProfileOverflowMenuItems)
-import intl6 from "intl" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import UserUtilsDefault from "UserUtils" /* 5063 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import ToastUtils from "ToastUtils" /* 5706 */;
-import ClipboardUtils from "ClipboardUtils" /* 7352 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7358 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7490 */;
-import ReportModals from "ReportModals" /* 8344 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14143 */;
-import BotReportChooser from "BotReportChooser" /* 14788 */;
+// Module 14825 (UserProfileOverflowMenuItems)
+import intl6 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
+import ReportModals from "ReportModals" /* 8352 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14180 */;
+import BotReportChooser from "BotReportChooser" /* 14826 */;
 import Constants from "Constants" /* 1072 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11261 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11287 */;
 import size from "module_2" /* 2 */;
 
 let avatarURL;
@@ -64,7 +64,7 @@ export function getIgnoreMenuItem(arg0, isBlocked) {
       obj.action = function action() {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
-        const tmp2 = asyncRequire(11263, dependencyMap.paths);
+        const tmp2 = asyncRequire(11289, dependencyMap.paths);
         let obj = {
           userId: require.id,
           channelId: importDefault,
@@ -122,7 +122,7 @@ export function getBlockMenuItem(arg0, isBlocked) {
       action() {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp2 = asyncRequire(11262, dependencyMap.paths);
+          const tmp2 = asyncRequire(11288, dependencyMap.paths);
           let obj = {
             userId: require.id,
             channelId: importDefault,
@@ -158,10 +158,10 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
   ({ channelId: importDefault, analyticsLocations: dependencyMap, trackUserProfileAction: closure_3 } = user);
   ({ guildId: closure_4, reportEntrypoint: closure_5 } = isInIarUserReportingExperiment);
   if (isInIarUserReportingExperiment.isInIarUserReportingExperiment) {
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1113).intl;
     const string = intl2.string;
     const bot = user.bot;
-    const t = tmp(1114).t;
+    const t = tmp(1113).t;
     let obj = {
       label: string(bot ? t.jhJzez : t.A1MM3D),
       variant: "destructive",
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(14788, dependencyMap.paths);
+            const tmp19 = asyncRequire(14826, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;
@@ -184,10 +184,10 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
     tmp3 = obj;
   } else {
     tmp3 = null;
-    const tmpResult = user(1376);
+    const tmpResult = user(1375);
     if (tmpResult.isAndroid()) {
       let obj2 = {
-        label: intl.string(tmp(1114).t.TbHyMG),
+        label: intl.string(tmp(1113).t.TbHyMG),
         variant: "destructive",
         action() {
               const obj = { action: "REPORT", analyticsLocations: dependencyMap };
@@ -199,7 +199,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
               obj3.track(c3.TNS_USER_REPORT_SUBMITTED, obj4);
             }
       };
-      intl = tmp(1114).intl;
+      intl = tmp(1113).intl;
       tmp3 = obj2;
     }
   }
@@ -275,7 +275,7 @@ export function getDeveloperCopyMenuItem(arg0, tidaWebformEnabled) {
               }
             }
         };
-        intl3 = tmp(1114).intl;
+        intl3 = tmp(1113).intl;
         push3(obj4);
       }
       if (null != closure_4) {
@@ -291,14 +291,14 @@ export function getDeveloperCopyMenuItem(arg0, tidaWebformEnabled) {
               obj3.presentLinkCopied();
             }
         };
-        intl4 = tmp(1114).intl;
+        intl4 = tmp(1113).intl;
         push4(obj5);
       }
       const obj6 = { options: items, key: "copy-info", header: obj7, stackingBehavior: "stack", hasIcons: false };
       obj7 = { title: intl5.string(intl6.t.QvQeLv) };
-      const showSimpleActionSheet = tmp(7358).showSimpleActionSheet;
+      const showSimpleActionSheet = tmp(7364).showSimpleActionSheet;
       Sheet_showSimpleActionSheet;
-      intl5 = tmp(1114).intl;
+      intl5 = tmp(1113).intl;
       let result = showSimpleActionSheet(obj6);
     };
     tmp = obj;

@@ -1,9 +1,9 @@
-// Module ID: 2021
-// Function ID: 2022
+// Module ID: 2019
+// Function ID: 2020
 // Name: EmbeddedActivityOrientationLockState
 // Dependencies: [2]
 
-// Module 2021 (EmbeddedActivityOrientationLockState)
+// Module 2019 (EmbeddedActivityOrientationLockState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivityOrientationLockState.tsx");

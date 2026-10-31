@@ -1,16 +1,16 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 8155
+// Function ID: 8156
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1384, 1994, 1072, 8143, 7995, 1243, 1376, 8139, 8140, 1253, 5688, 5767, 2]
-// Exports: beginAppStoreAgeSignalReport, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
+// Dependencies: [32, 5, 1383, 1993, 1072, 8151, 8003, 1242, 1375, 8147, 8148, 1252, 5693, 5772, 2]
+// Exports: beginAppStoreAgeSignalReport, isAppStoreAgeSignalColdLaunch, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 8147 (AppStoreAgeSignalReport)
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7995 */;
+// Module 8155 (AppStoreAgeSignalReport)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1384 */;
-import AppStateStore from "AppStateStore" /* 1994 */;
+import UserStore from "UserStore" /* 1383 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _collectAgeSignal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ obj = function _performAgeCheck() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -236,7 +236,7 @@ obj = function _performAgeCheck() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp46) {
         closure_3 = tmp46;
@@ -268,7 +268,7 @@ obj = function _settleAppStoreAgeSignalReport() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -299,7 +299,7 @@ obj = function _settleAppStoreAgeSignalReport() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;
@@ -317,6 +317,9 @@ let c12 = null;
 let c13 = 0;
 let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalReport.tsx");
 
+export function isAppStoreAgeSignalColdLaunch() {
+  return 1 === c13;
+}
 export function queueAppStoreAgeSignalSubmit(arg0) {
   let closure_4;
   function settle() {
@@ -335,7 +338,7 @@ export function queueAppStoreAgeSignalSubmit(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -368,7 +371,7 @@ export function queueAppStoreAgeSignalSubmit(arg0) {
               c12 = null;
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -390,7 +393,7 @@ export function queueAppStoreAgeSignalSubmit(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -463,7 +466,7 @@ export function beginAppStoreAgeSignalReport() {
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp4 = _require;
     if (result) {
-      const tmp4Result = tmp4(5688);
+      const tmp4Result = tmp4(5693);
       result = tmp4Result.shouldCollectAppStoreSignal();
     }
     tmp3 = result;
@@ -489,7 +492,7 @@ export function beginAppStoreAgeSignalReport() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             let c3;
@@ -539,7 +542,7 @@ export function beginAppStoreAgeSignalReport() {
                     c12 = null;
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else if (closure_1_17()) {
                   const obj6 = { isColdLaunch: closure_129_0, connection: closure_129_1 };
                   c3 = 0;
@@ -567,7 +570,7 @@ export function beginAppStoreAgeSignalReport() {
                   c12 = null;
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               c4 = 3;
               c5 = 1;
@@ -608,7 +611,7 @@ export function resumeAppStoreAgeSignalReport() {
       let result = obj.isAppStoreAgeSignalSupported();
       const tmp2 = require;
       if (result) {
-        const tmp2Result = tmp2(5688);
+        const tmp2Result = tmp2(5693);
         result = tmp2Result.shouldCollectAppStoreSignal();
       }
       tmp5 = result;
@@ -630,7 +633,7 @@ export function resumeAppStoreAgeSignalReport() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             let c3;
@@ -680,7 +683,7 @@ export function resumeAppStoreAgeSignalReport() {
                     c12 = null;
                   }
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else if (closure_1_17()) {
                   const obj6 = { isColdLaunch: closure_129_0, connection: closure_129_1 };
                   c3 = 0;
@@ -708,7 +711,7 @@ export function resumeAppStoreAgeSignalReport() {
                   c12 = null;
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               c4 = 3;
               c5 = 1;

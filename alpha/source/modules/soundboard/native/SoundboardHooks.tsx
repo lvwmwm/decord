@@ -1,29 +1,29 @@
-// Module ID: 19125
-// Function ID: 19126
+// Module ID: 19174
+// Function ID: 19175
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5010, 1193, 19118, 5268, 1492, 504, 5016, 4839, 7511, 2]
+// Dependencies: [5, 19, 5015, 1192, 19167, 5272, 504, 5021, 4844, 7517, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 19125 (SoundboardHooks)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
+// Module 19174 (SoundboardHooks)
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5010 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19118 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19167 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
 
-let metroImportAll;
 let metroImportDefault;
-({ SOUNDS_PER_ROW: metroImportDefault, SOUND_ROW_PADDING: metroImportAll } = SoundboardStyleConstants);
-const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
+let metroRequire;
+({ SOUNDS_PER_ROW: metroRequire, SOUND_ROW_PADDING: metroImportDefault } = SoundboardStyleConstants);
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
 
 export function useSoundButtonStyleConfig() {
-  const obj = { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, useWindowDimensionsDefault().width) - metroImportAll) / metroImportDefault };
+  let obj2;
+  const obj = { buttonWidth: (obj2.useBottomSheetWidth() - metroImportDefault) / metroRequire };
+  obj2 = Sheet_BottomSheet;
   return obj;
 }
 export function useMaybeFetchSoundboardSounds(shouldFetch) {
@@ -38,7 +38,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
   const items2 = [
     stateFromStores,
     obj2.useStateFromStores(items1, () => {
-      const obj = shouldFetch(dependencyMap[8]);
+      const obj = shouldFetch(dependencyMap[7]);
       return obj.isThemeDark(theme.theme);
     }),
     shouldFetch
@@ -60,7 +60,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -76,12 +76,12 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
               } else {
                 const tmp4 = c0;
                 if (tmp4) {
-                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_2[9]).FrecencyUserSettingsActionCreators;
+                  const FrecencyUserSettingsActionCreators = closure_2_0(closure_2_1[8]).FrecencyUserSettingsActionCreators;
                   const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
                   c1 = 1;
                   c0 = 1;
                   const obj5 = { value: obj2.maybeFetchSoundboardSounds(), done: false };
-                  obj2 = closure_2_0(closure_2_2[10]);
+                  obj2 = closure_2_0(closure_2_1[9]);
                   return obj5;
                 }
               }
@@ -94,7 +94,7 @@ export function useMaybeFetchSoundboardSounds(shouldFetch) {
               return obj;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;

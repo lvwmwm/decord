@@ -1,8 +1,8 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 13640
+// Function ID: 13641
 // Dependencies: [2]
 
-// Module 13603
+// Module 13640
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/messages_loop.png.js");

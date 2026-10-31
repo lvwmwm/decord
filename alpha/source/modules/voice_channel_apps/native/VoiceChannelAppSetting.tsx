@@ -1,15 +1,15 @@
-// Module ID: 18844
-// Function ID: 18845
+// Module ID: 18890
+// Function ID: 18891
 // Name: VoiceChannelAppSetting
-// Dependencies: [19, 21, 18845, 18846, 1114, 3963, 7054, 6969, 9030, 5253, 18848, 1995, 18848, 2]
+// Dependencies: [19, 21, 18891, 18892, 1113, 3966, 7060, 6975, 18894, 5258, 18895, 1994, 18895, 2]
 // Exports: default
 
-// Module 18844 (VoiceChannelAppSetting)
+// Module 18890 (VoiceChannelAppSetting)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 18845 */;
-import VoiceChannelAppActionSheet from "VoiceChannelAppActionSheet" /* 18848 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 18891 */;
+import VoiceChannelAppActionSheet from "VoiceChannelAppActionSheet" /* 18895 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ function VoiceChannelAppRow(guildId) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { guildId, selectedApplicationId: application_id, onChange };
-      const tmp2 = asyncRequire(18848, dependencyMap.paths);
+      const tmp2 = asyncRequire(18895, dependencyMap.paths);
       openLazy(tmp2, VoiceChannelAppActionSheet.VOICE_CHANNEL_APP_ACTION_SHEET_KEY, obj);
     },
     arrow: true
@@ -53,8 +53,9 @@ function VoiceChannelAppRow(guildId) {
   const TableRow = tmp2(tmp3[7]).TableRow;
   tmp8Result = null;
   if (null != found) {
-    const obj4 = { application: found.iconApplication };
-    tmp8Result = tmp8(tmp5(tmp3[8]), obj4);
+    const obj7 = { applicationId: null, name: null, iconApplication: null };
+    ({ applicationId: obj4.applicationId, name: obj4.name, iconApplication: obj4.iconApplication } = found);
+    tmp8Result = tmp8(tmp5(tmp3[8]), obj7);
   }
   return <TableRowGroup title={stringResult} description={intl3.string(onChange(application_id[5])["wKSjL/"])} hasIcons={null != found}>{null}</TableRowGroup>;
 }

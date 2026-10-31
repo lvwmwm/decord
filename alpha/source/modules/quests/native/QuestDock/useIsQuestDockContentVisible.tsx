@@ -1,15 +1,15 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17167
+// Function ID: 17168
 // Name: useIsQuestDockContentVisible
-// Dependencies: [19, 16999, 6775, 17083, 504, 2]
+// Dependencies: [19, 17057, 6781, 17141, 504, 2]
 // Exports: default
 
-// Module 17109 (useIsQuestDockContentVisible)
+// Module 17167 (useIsQuestDockContentVisible)
 import get_initialized from "get initialized" /* 504 */;
-import QuestConstants from "QuestConstants" /* 6775 */;
-import reactDefault from "react" /* 17083 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import reactDefault from "react" /* 17141 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16999 */;
+import QuestDockStore from "QuestDockStore" /* 17057 */;
 import size from "module_2" /* 2 */;
 
 const QuestDockMode = QuestConstants.QuestDockMode;

@@ -1,16 +1,16 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 8871
+// Function ID: 8872
 // Name: MediaModalWebViewBase
-// Dependencies: [19, 17, 21, 1376, 5009, 5090, 5249, 5704, 7971, 2]
+// Dependencies: [19, 17, 21, 1375, 5014, 5095, 5254, 5709, 7979, 2]
 
-// Module 8862 (MediaModalWebViewBase)
-import timing from "timing" /* 5249 */;
-import LinkingDefault from "Linking" /* 5704 */;
+// Module 8871 (MediaModalWebViewBase)
+import timing from "timing" /* 5254 */;
+import LinkingDefault from "Linking" /* 5709 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1376 */;
-import createStyles from "createStyles" /* 5009 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let url;

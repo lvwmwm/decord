@@ -1,11 +1,11 @@
-// Module ID: 17437
-// Function ID: 17438
+// Module ID: 17497
+// Function ID: 17498
 // Name: SummaryReminderNotificationExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1447, 2]
 // Exports: useSummaryReminderNotificationExperiment
 
-// Module 17437 (SummaryReminderNotificationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1448 */;
+// Module 17497 (SummaryReminderNotificationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

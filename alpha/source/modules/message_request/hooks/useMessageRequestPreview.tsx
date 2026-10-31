@@ -1,17 +1,17 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14154
+// Function ID: 14155
 // Name: useMessageRequestPreview
-// Dependencies: [5, 6056, 6836, 14120, 1072, 504, 12, 1283, 572, 2]
+// Dependencies: [5, 6061, 6842, 14155, 1072, 504, 12, 1282, 572, 2]
 // Exports: useMessageRequestPreview
 
-// Module 14119 (useMessageRequestPreview)
+// Module 14154 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6056 */;
-import ReadStateStore from "ReadStateStore" /* 6836 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 14120 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 14155 */;
 import size from "module_2" /* 2 */;
 
 let c1, c10, c11, c4, closure_4;
@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _loadMessageRequestData() {
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       }

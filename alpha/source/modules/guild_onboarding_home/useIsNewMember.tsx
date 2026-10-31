@@ -1,15 +1,15 @@
-// Module ID: 7394
-// Function ID: 7395
+// Module ID: 7400
+// Function ID: 7401
 // Name: useIsNewMember
-// Dependencies: [4914, 4921, 4927, 1397, 1090, 504, 2]
+// Dependencies: [4919, 4926, 4932, 1396, 1089, 504, 2]
 // Exports: default, getIsNewMember
 
-// Module 7394 (useIsNewMember)
-import DurationsDefault from "Durations" /* 1090 */;
-import FlagUtils from "FlagUtils" /* 1397 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4927 */;
-import ImpersonateStore from "ImpersonateStore" /* 4914 */;
-import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+// Module 7400 (useIsNewMember)
+import DurationsDefault from "Durations" /* 1089 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import ImpersonateStore from "ImpersonateStore" /* 4919 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
