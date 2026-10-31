@@ -2302,6 +2302,34 @@
         "width": 24,
         "height": 24
     },
+    "ExperimentalWebBadgeIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon.png",
+        "hash": "d43362f3b7c53425661a9e07142eee32",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebBadgeIcon-primary": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon-primary.png",
+        "hash": "332d08a018b5d0cc24855eb27732248b",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebBadgeIcon-secondary": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebBadgeIcon-secondary.png",
+        "hash": "d24fd30a4be11fedb417c4afcd1e21a5",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "ExperimentalWebIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalWebIcon.png",
+        "hash": "f2670bff50454573d21ee45dfe2257e4",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "EyeDropperIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/EyeDropperIcon.png",
         "hash": "ce6df62bb592b89e09867505a632d8fe",
@@ -3387,27 +3415,6 @@
         "width": 16,
         "height": 16
     },
-    "ic_discoverable_guild_badge_dark_24px": {
-        "file": "app/images/native/icons/ic_discoverable_guild_badge_dark_24px.png",
-        "hash": "da49fe1fcc1d15f812a95db2869d9ae7",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_discoverable_guild_badge_light_24px": {
-        "file": "app/images/native/icons/ic_discoverable_guild_badge_light_24px.png",
-        "hash": "76c5454ee97e41c899ae8f5539257d3c",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_discoverable_guild_badge_premium_24px": {
-        "file": "app/images/native/icons/ic_discoverable_guild_badge_premium_24px.png",
-        "hash": "4f276c9d37ed9e072482570ea4ab1799",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "ic_download_24px": {
         "file": "app/images/native/icons/ic_download_24px.png",
         "hash": "a252d183eacce43fd0ee5d8aedb6e162",
@@ -3593,13 +3600,6 @@
     "ic_flower_star_24px": {
         "file": "app/images/native/ic_flower_star_24px.png",
         "hash": "a22308efe22f297561f3f188b87b515b",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
-    "ic_forward_chevron": {
-        "file": "app/images/native/ic_forward_chevron.png",
-        "hash": "edefaa7b105418ac79e91df5e7252965",
         "scales": [],
         "width": 24,
         "height": 24
@@ -4114,13 +4114,6 @@
         "scales": [],
         "width": 30,
         "height": 30
-    },
-    "ic_public": {
-        "file": "app/images/native/icons/ic_public.png",
-        "hash": "c34a0c861b7d42ccaa05d56a524cbcd8",
-        "scales": [],
-        "width": 14,
-        "height": 14
     },
     "ic_qr_code_24px": {
         "file": "app/images/native/icons/settings/ic_qr_code_24px.png",
