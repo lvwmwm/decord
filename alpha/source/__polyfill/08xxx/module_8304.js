@@ -4,20 +4,20 @@
 // Exports: getCalculatedGpsValue, getEncodedString, getStringValue
 
 // Module 8304
-const f92631 = (item) => String.fromCharCode(item);
+const f92668 = (item) => String.fromCharCode(item);
 
 export function getStringValue(value) {
-  const mapped = value.map(f92631);
+  const mapped = value.map(f92668);
   return mapped.join("");
 }
 export function getEncodedString(arr) {
   if (arr.length >= 8) {
     const substr = arr.slice(0, 8);
-    const mapped = substr.map(f92631);
+    const mapped = substr.map(f92668);
     const joined = mapped.join("");
     if ("ASCII\0\0\0" === joined) {
       const substr1 = arr.slice(8);
-      const mapped1 = substr1.map(f92631);
+      const mapped1 = substr1.map(f92668);
       return mapped1.join("");
     } else if ("JIS\0\0\0\0\0" === joined) {
       return "[JIS encoded text]";

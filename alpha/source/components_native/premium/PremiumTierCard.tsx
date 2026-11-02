@@ -1,10 +1,10 @@
-// Module ID: 15451
-// Function ID: 15452
+// Module ID: 15455
+// Function ID: 15456
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7617, 1385, 21, 5014, 575, 5587, 1092, 5717, 2047, 15452, 15453, 8535, 9930, 10585, 10586, 6977, 2]
+// Dependencies: [19, 17, 7617, 1385, 21, 5014, 575, 5587, 1092, 5717, 2047, 15456, 15457, 8535, 9930, 10585, 10586, 6977, 2]
 // Exports: default
 
-// Module 15451 (PremiumTierCard)
+// Module 15455 (PremiumTierCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -61,9 +61,9 @@ export default function _default(premiumType) {
     textLogoTier2 = tmp.textLogoTier2;
   }
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(15452);
+    tmp5Result = tmp5(15456);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result = tmp5(15453);
+    tmp5Result = tmp5(15457);
   } else if (PremiumTypes.TIER_2 === premiumType) {
     tmp5Result = tmp5(8535);
   }

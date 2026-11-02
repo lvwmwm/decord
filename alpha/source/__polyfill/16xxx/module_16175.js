@@ -1,18 +1,9 @@
 // Module ID: 16175
 // Function ID: 16176
-// Dependencies: [16173]
+// Dependencies: [16176]
 
 // Module 16175
-import _mod16173 from "module_16173" /* 16173 */;
+import _mod16176 from "module_16176" /* 16176 */;
 
 
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod16173(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default (arg0) => _mod16176(arg0.length);

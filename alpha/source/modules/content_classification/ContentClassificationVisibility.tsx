@@ -1,10 +1,10 @@
-// Module ID: 13691
-// Function ID: 13692
+// Module ID: 13706
+// Function ID: 13707
 // Name: ContentClassificationVisibility
 // Dependencies: [1383, 5661, 5663, 504, 2]
 // Exports: getContentClassificationVisibility, useContentClassificationVisibility
 
-// Module 13691 (ContentClassificationVisibility)
+// Module 13706 (ContentClassificationVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5661 */;
 import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5663 */;

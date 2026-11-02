@@ -1,10 +1,10 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12131
+// Function ID: 12132
 // Name: useIsPreviewlessProject
 // Dependencies: [6844, 504, 6845, 2]
 // Exports: default
 
-// Module 12472 (useIsPreviewlessProject)
+// Module 12131 (useIsPreviewlessProject)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;

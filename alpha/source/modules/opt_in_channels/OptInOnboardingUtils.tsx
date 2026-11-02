@@ -1,10 +1,10 @@
-// Module ID: 11582
-// Function ID: 11583
+// Module ID: 11583
+// Function ID: 11584
 // Name: OptInOnboardingUtils
 // Dependencies: [1231, 4944, 4926, 6775, 4932, 6885, 1396, 7282, 7273, 1196, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 11582 (OptInOnboardingUtils)
+// Module 11583 (OptInOnboardingUtils)
 import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
 import isOptInEnabled from "isOptInEnabled" /* 6885 */;
 import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7273 */;

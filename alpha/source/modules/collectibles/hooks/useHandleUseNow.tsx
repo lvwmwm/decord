@@ -1,10 +1,10 @@
-// Module ID: 11514
-// Function ID: 11515
+// Module ID: 11515
+// Function ID: 11516
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1074, 1987, 1113, 8742, 11515, 8738, 7152, 2]
+// Dependencies: [5, 32, 19, 1074, 1987, 1113, 8742, 11516, 8738, 7152, 2]
 // Exports: useHandleUseNow
 
-// Module 11514 (hooks/useHandleUseNow)
+// Module 11515 (hooks/useHandleUseNow)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

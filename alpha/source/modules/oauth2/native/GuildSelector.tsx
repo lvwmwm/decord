@@ -1,10 +1,10 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14618
+// Function ID: 14619
 // Name: GuildSelector
 // Dependencies: [19, 17, 1072, 21, 5014, 575, 5258, 9002, 1994, 1113, 1084, 5624, 1187, 8177, 2]
 // Exports: default
 
-// Module 14604 (GuildSelector)
+// Module 14618 (GuildSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,10 +1,10 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13660
+// Function ID: 13661
 // Name: CheckpointRankTag
 // Dependencies: [32, 19, 17, 6066, 21, 5014, 575, 8031, 6434, 5624, 2]
 // Exports: default
 
-// Module 13645 (CheckpointRankTag)
+// Module 13660 (CheckpointRankTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;

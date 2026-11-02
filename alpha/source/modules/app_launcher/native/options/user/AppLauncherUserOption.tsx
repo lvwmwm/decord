@@ -1,18 +1,18 @@
-// Module ID: 12379
-// Function ID: 12380
+// Module ID: 12519
+// Function ID: 12520
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 5015, 21, 5014, 575, 504, 12369, 1888, 5258, 12380, 1994, 12380, 1187, 12374, 10805, 12377, 5624, 2]
+// Dependencies: [32, 19, 5015, 21, 5014, 575, 504, 12509, 1888, 5258, 12520, 1994, 12520, 1187, 12514, 10805, 12517, 5624, 2]
 // Exports: default
 
-// Module 12379 (AppLauncherUserOption)
+// Module 12519 (AppLauncherUserOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 12369 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12374 */;
-import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 12380 */;
+import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 12509 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12514 */;
+import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 12520 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -87,7 +87,7 @@ export default function AppLauncherUserOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp5 = asyncRequire(12380, dependencyMap.paths);
+      const tmp5 = asyncRequire(12520, dependencyMap.paths);
       openLazy(tmp5, AppLauncherUserListActionSheet.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, obj2);
     },
     leading: tmp9Result,
@@ -111,7 +111,7 @@ export default function AppLauncherUserOption(option) {
   }
   if (null != tmp8) {
     const obj5 = { guildId: guild_id, user: tmp8 };
-    tmp9Result2 = tmp9(tmp10(12377), obj5);
+    tmp9Result2 = tmp9(tmp10(12517), obj5);
   } else {
     tmp9Result2 = null;
     if (null != tmp6) {

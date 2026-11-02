@@ -1,10 +1,10 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15164
+// Function ID: 15165
 // Name: InAppReportsBreadCrumbs
 // Dependencies: [19, 17, 21, 5014, 575, 12, 5624, 8355, 1113, 2674, 2]
 // Exports: default
 
-// Module 15160 (InAppReportsBreadCrumbs)
+// Module 15164 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;

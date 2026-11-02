@@ -1,10 +1,10 @@
-// Module ID: 19315
-// Function ID: 19316
+// Module ID: 19322
+// Function ID: 19323
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 11704, 4863, 4885, 2006, 4946, 5768, 21, 11222, 19303, 504, 6724, 14554, 5960, 14557, 1113, 19316, 9221, 11723, 19304, 14576, 5153, 11040, 14898, 2]
+// Dependencies: [19, 17, 11705, 4863, 4885, 2006, 4946, 5768, 21, 11222, 19310, 504, 6724, 14568, 5960, 14571, 1113, 19323, 9221, 11724, 19311, 14590, 5153, 11040, 14902, 2]
 // Exports: default
 
-// Module 19315 (VoicePanelVideoButton)
+// Module 19322 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,11 +13,11 @@ import Constants from "Constants" /* 5768 */;
 import useAlertStore from "useAlertStore" /* 5960 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 6724 */;
 import CallsUtils from "CallsUtils" /* 9221 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11723 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14557 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 19316 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11724 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14571 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 19323 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11704 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11705 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import MediaEngineStore from "MediaEngineStore" /* 2006 */;
@@ -39,7 +39,7 @@ function VideoButtonRive(arg0) {
   if (isVideoEnabled) {
     let VideoSlashIcon = tmp3(11040).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(14898).VideoSlashIcon;
+    VideoSlashIcon = tmp3(14902).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 }

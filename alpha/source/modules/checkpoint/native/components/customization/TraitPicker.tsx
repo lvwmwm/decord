@@ -1,10 +1,10 @@
-// Module ID: 13679
-// Function ID: 13680
+// Module ID: 13694
+// Function ID: 13695
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 5015, 6066, 21, 575, 6434, 5014, 13680, 1113, 3092, 5624, 13624, 504, 5274, 13682, 5612, 5095, 5254, 13683, 13684, 2]
+// Dependencies: [32, 19, 17, 5015, 6066, 21, 575, 6434, 5014, 13695, 1113, 3092, 5624, 13639, 504, 5274, 13697, 5612, 5095, 5254, 13698, 13699, 2]
 // Exports: default
 
-// Module 13679 (TraitPicker)
+// Module 13694 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -14,8 +14,8 @@ import timing from "timing" /* 5254 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import CheckpointConstants from "CheckpointConstants" /* 6066 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
-import CheckpointTextDefault from "CheckpointText" /* 13624 */;
-import TraitOptionList from "TraitOptionList" /* 13680 */;
+import CheckpointTextDefault from "CheckpointText" /* 13639 */;
+import TraitOptionList from "TraitOptionList" /* 13695 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -116,7 +116,7 @@ export default function TraitPicker(customizationOption) {
   dependencyMap = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj3 = customizationOption(5274);
   _slicedToArray = obj3.useIsScreenReaderEnabled();
-  const obj4 = customizationOption(13682);
+  const obj4 = customizationOption(13697);
   const obj5 = { customizationOption, optionIds, savedOptionId, rarityOrder };
   const traitPickerOptions = obj4.useTraitPickerOptions(obj5);
   ({ availableTraitOptions, earnedCount } = traitPickerOptions);
@@ -178,8 +178,8 @@ export default function TraitPicker(customizationOption) {
   _slicedToArray(earnedCount.useState(tmp8), 2);
   const obj7 = { availableTraitOptions, selectedOptionId, onSelectOption, paused: tmp15 };
   tmp15 = flag;
-  const useAutoSelectTraitOption = tmp2(13683).useAutoSelectTraitOption;
-  tmp2(13683);
+  const useAutoSelectTraitOption = tmp2(13698).useAutoSelectTraitOption;
+  tmp2(13698);
   if (!flag) {
     let tmp16 = !tmp6;
     if (tmp16) {
@@ -205,10 +205,10 @@ export default function TraitPicker(customizationOption) {
     const obj9 = { customizationOption, earnedCount: diff, totalCount };
     showEarnedCount = closure_8(EarnedCountHeader, obj9);
   }
-  items2 = [showEarnedCount, closure_8(selectedOptionId(13680), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
+  items2 = [showEarnedCount, closure_8(selectedOptionId(13695), { customizationOption, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: tmp4, introStartIndex: tmp8, onIntroStep: tmp13, onSelectOption }), ];
   let tmp24Result = null != found;
   if (tmp24Result) {
-    const obj10 = { style: items3, children: closure_8(selectedOptionId(13684), obj11) };
+    const obj10 = { style: items3, children: closure_8(selectedOptionId(13699), obj11) };
     items3 = [tmp.details, animatedStyle];
     View = tmp7(5095).View;
     obj11 = { asset: found, hideDescriptionAndRarity: tmp4 };

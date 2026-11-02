@@ -1,10 +1,10 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11346
+// Function ID: 11347
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [19, 17, 4863, 21, 5014, 575, 504, 11346, 11322, 11331, 2]
+// Dependencies: [19, 17, 4863, 21, 5014, 575, 504, 11347, 11322, 11331, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
-// Module 11345 (PinotMemberNoticeHeaderArrow)
+// Module 11346 (PinotMemberNoticeHeaderArrow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ export function PinotMemberNoticeHeaderArrow(channelId) {
   const items1 = [channelId];
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj2 = channelId(11346);
+  const obj2 = channelId(11347);
   const isForumChannelSearchActive = obj2.useIsForumChannelSearchActive(channelId);
   const obj3 = channelId(11322);
   const visible = obj3.usePinotMemberNotice(stateFromStores, "mobile_channel_header").visible;

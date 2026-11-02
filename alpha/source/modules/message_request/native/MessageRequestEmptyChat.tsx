@@ -1,10 +1,10 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14206
+// Function ID: 14207
 // Name: MessageRequestEmptyChat
 // Dependencies: [19, 17, 1083, 21, 5014, 1375, 5624, 1113, 2]
 // Exports: default
 
-// Module 14191 (MessageRequestEmptyChat)
+// Module 14206 (MessageRequestEmptyChat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;

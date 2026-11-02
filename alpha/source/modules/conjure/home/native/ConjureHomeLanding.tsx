@@ -1,12 +1,12 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12819
+// Function ID: 12820
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 10851, 21, 575, 5014, 12817, 1497, 1625, 12074, 5095, 12973, 12596, 12582, 12974, 12761, 10875, 12580, 1498, 12086, 1113, 3868, 10879, 5712, 12976, 7306, 5624, 12977, 12792, 12979, 2]
+// Dependencies: [5, 32, 19, 17, 10851, 21, 575, 5014, 12820, 1497, 1625, 12075, 5095, 12976, 12599, 12585, 12977, 12764, 10875, 12583, 1498, 12087, 1113, 3868, 10879, 5712, 12979, 7306, 5624, 12980, 12795, 12982, 2]
 // Exports: default
 
-// Module 12816 (ConjureHomeLanding)
+// Module 12819 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 12817 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 12820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -100,7 +100,7 @@ export default function ConjureHomeLanding(focusRequest) {
   navigation = obj.useNavigation();
   let tmp6 = bottom;
   bottom = bottom(1625)().bottom;
-  let tmp7 = bottom(12074)();
+  let tmp7 = bottom(12075)();
   dependencyMap = tmp7;
   let obj2 = navigation(5095);
   const fn = function y() {
@@ -112,24 +112,24 @@ export default function ConjureHomeLanding(focusRequest) {
   fn.__initData = __initData;
   let obj3 = forMeGuildId;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const tmp10 = str(forMeGuildId.useState(navigation(12973).CONJURE_TARGET_USER), 2);
+  const tmp10 = str(forMeGuildId.useState(navigation(12976).CONJURE_TARGET_USER), 2);
   const first = tmp10[0];
   const tmp12 = tmp10[1];
-  let obj4 = navigation(12596);
+  let obj4 = navigation(12599);
   const conjureEligibleGuilds = obj4.useConjureEligibleGuilds("ConjureHomeLanding");
   let CONJURE_TARGET_USER = first;
-  if (first !== navigation(12973).CONJURE_TARGET_USER) {
+  if (first !== navigation(12976).CONJURE_TARGET_USER) {
     CONJURE_TARGET_USER = first;
     if (!conjureEligibleGuilds.some((id) => id.id === first)) {
-      CONJURE_TARGET_USER = tmp3(12973).CONJURE_TARGET_USER;
+      CONJURE_TARGET_USER = tmp3(12976).CONJURE_TARGET_USER;
     }
   }
   str = "guild";
-  if (CONJURE_TARGET_USER === tmp3(12973).CONJURE_TARGET_USER) {
+  if (CONJURE_TARGET_USER === tmp3(12976).CONJURE_TARGET_USER) {
     str = "user";
   }
   let tmp13 = CONJURE_TARGET_USER;
-  if (CONJURE_TARGET_USER === tmp3(12973).CONJURE_TARGET_USER) {
+  if (CONJURE_TARGET_USER === tmp3(12976).CONJURE_TARGET_USER) {
     tmp13 = forMeGuildId;
   }
   forMeGuildId = tmp13;
@@ -172,12 +172,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f140373 = (role) => "user" === role.role;
+        const f140441 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = closure_3_8.getMessages(closure_0);
           const obj = closure_3_8;
-          if (messages.some(f140373)) {
+          if (messages.some(f140441)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -192,7 +192,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f140373)) {
+        if (messages.some(f140441)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);
@@ -415,7 +415,7 @@ export default function ConjureHomeLanding(focusRequest) {
   let obj5 = { style: items1, children: items2 };
   items1 = [tmp2.root, animatedStyle];
   const View = tmp6(5095).View;
-  items2 = [c9(tmp6(12976), {}), , , ];
+  items2 = [c9(tmp6(12979), {}), , , ];
   let obj6 = { style: tmp2.scroll, contentContainerStyle: tmp2.content, keyboardShouldPersistTaps: "handled", onScrollBeginDrag: callback2, onTouchEnd: callback2, onScroll: callback, scrollEventThrottle: 100, children: items4 };
   let obj7 = { style: tmp2.hero, children: items3 };
   let obj8 = { style: tmp2.badgeRow, children: c9(Badge, obj9) };
@@ -433,13 +433,13 @@ export default function ConjureHomeLanding(focusRequest) {
   intl3 = tmp3(1113).intl;
   items3[2] = c9(Text2, obj12);
   items4 = [c10(c7, obj7), , ];
-  let obj13 = { style: tmp2.carousel, onLayout: callback1, children: c9(tmp6(12817), { onScreen: tmp15 }) };
+  let obj13 = { style: tmp2.carousel, onLayout: callback1, children: c9(tmp6(12820), { onScreen: tmp15 }) };
   items4[1] = c9(c7, obj13);
   let obj14 = { style: tmp2.showcase, children: items5 };
   let obj15 = { variant: "heading-lg/medium", color: "text-strong", accessibilityRole: "header", style: tmp2.showcaseTitle, children: intl4.string(tmp6(3868).IiQEVd) };
   const Text3 = tmp3(5624).Text;
   intl4 = tmp3(1113).intl;
-  items5 = [c9(Text3, obj15), c9(tmp6(12977), {})];
+  items5 = [c9(Text3, obj15), c9(tmp6(12980), {})];
   items4[2] = c10(c7, obj14);
   items2[1] = c10(ref, obj6);
   let tmp28Result = null;
@@ -449,8 +449,8 @@ export default function ConjureHomeLanding(focusRequest) {
     tmp28Result = tmp28(tmp3(5624).Text, obj16);
   }
   items2[2] = tmp28Result;
-  let obj17 = { projectId, canSend: true, running: false, onSendFiles: callback3, sending: first1, focusRequest, blurRequest: tmp23, placeholder: intl5.string(tmp6(3868).Hy0OLY), stackedAccessory: tmp28(tmp6(12979), { target: CONJURE_TARGET_USER, guilds: conjureEligibleGuilds, onChange: tmp12 }) };
-  const tmp6Result = tmp6(12792);
+  let obj17 = { projectId, canSend: true, running: false, onSendFiles: callback3, sending: first1, focusRequest, blurRequest: tmp23, placeholder: intl5.string(tmp6(3868).Hy0OLY), stackedAccessory: tmp28(tmp6(12982), { target: CONJURE_TARGET_USER, guilds: conjureEligibleGuilds, onChange: tmp12 }) };
+  const tmp6Result = tmp6(12795);
   intl5 = tmp3(1113).intl;
   items2[3] = c9(tmp6Result, obj17);
   return tmp27(View, obj5);

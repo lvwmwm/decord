@@ -1,9 +1,9 @@
-// Module ID: 18804
-// Function ID: 18805
+// Module ID: 18811
+// Function ID: 18812
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4947, 4948, 4863, 6775, 9825, 10137, 1072, 9826, 21, 5014, 13913, 575, 5596, 504, 1497, 8028, 1113, 10993, 8399, 13832, 13892, 6734, 7220, 10802, 8199, 7562, 18805, 5080, 5095, 5254, 18678, 5257, 11646, 6980, 7002, 2]
+// Dependencies: [19, 17, 4947, 4948, 4863, 6775, 9825, 10137, 1072, 9826, 21, 5014, 13928, 575, 5596, 504, 1497, 8028, 1113, 10993, 8399, 13847, 13907, 6734, 7220, 10802, 8199, 7562, 18812, 5080, 5095, 5254, 18685, 5257, 11647, 6980, 7002, 2]
 
-// Module 18804 (ChannelDetailsNavigationBar)
+// Module 18811 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,10 +13,10 @@ import AssetRegistryDefault from "AssetRegistry" /* 7220 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8199 */;
 import TrackingConstants from "TrackingConstants" /* 9826 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10802 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11646 */;
-import useSearchContext from "useSearchContext" /* 13832 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13892 */;
-import SearchButton2 from "SearchButton" /* 13913 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11647 */;
+import useSearchContext from "useSearchContext" /* 13847 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
+import SearchButton2 from "SearchButton" /* 13928 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4947 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
@@ -188,7 +188,7 @@ function SearchBar(cleanUp) {
   fn.__workletHash = 1270940013897;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: closure_15(cleanUp(18678), obj4) };
+  const obj3 = { style: items, children: closure_15(cleanUp(18685), obj4) };
   items = [tmp.searchHeader, animatedStyle];
   View = cleanUp(5095).View;
   obj4 = { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true };

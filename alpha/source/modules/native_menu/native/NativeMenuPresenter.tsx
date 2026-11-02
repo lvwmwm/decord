@@ -1,10 +1,10 @@
-// Module ID: 19001
-// Function ID: 19002
+// Module ID: 19008
+// Function ID: 19009
 // Name: NativeMenuPresenter
 // Dependencies: [10204, 504, 2]
 // Exports: default
 
-// Module 19001 (NativeMenuPresenter)
+// Module 19008 (NativeMenuPresenter)
 import get_initialized from "get initialized" /* 504 */;
 import NativeMenuStore from "NativeMenuStore" /* 10204 */;
 import size from "module_2" /* 2 */;

@@ -1,21 +1,21 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17174
+// Function ID: 17175
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 5015, 6781, 17059, 1072, 21, 5014, 17060, 5095, 5637, 7241, 17063, 17141, 8841, 1491, 1625, 504, 17058, 671, 17162, 1375, 9678, 1893, 8873, 5717, 5587, 2]
+// Dependencies: [32, 19, 17, 5015, 6781, 17072, 1072, 21, 5014, 17073, 5095, 5637, 7241, 17076, 17154, 8841, 1491, 1625, 504, 17071, 671, 17175, 1375, 9678, 1893, 8873, 5717, 5587, 2]
 
-// Module 17161 (QuestDockVideoBackground)
+// Module 17174 (QuestDockVideoBackground)
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import react_nativeDefault from "react-native" /* 1893 */;
 import spring from "spring" /* 5637 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7241 */;
-import QuestDockUtils from "QuestDockUtils" /* 17058 */;
+import QuestDockUtils from "QuestDockUtils" /* 17071 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import QuestDockConstants from "QuestDockConstants" /* 17059 */;
+import QuestDockConstants from "QuestDockConstants" /* 17072 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ function QuestDockBackgroundMediaFade(arg0) {
   let activeQuestDockMode;
   ({ children, style } = arg0);
   const tmp = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(17060).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(17073).QuestDockGestureContext).activeQuestDockMode;
   let obj = activeQuestDockMode(5095);
   const fn = function n() {
     const withSpring = spring.withSpring;

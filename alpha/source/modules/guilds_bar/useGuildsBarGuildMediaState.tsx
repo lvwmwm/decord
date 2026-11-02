@@ -1,11 +1,11 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18404
+// Function ID: 18405
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [15596, 504, 2]
+// Dependencies: [15600, 504, 2]
 // Exports: default
 
-// Module 18391 (useGuildsBarGuildMediaState)
-import GuildMediaStateStore from "GuildMediaStateStore" /* 15596 */;
+// Module 18404 (useGuildsBarGuildMediaState)
+import GuildMediaStateStore from "GuildMediaStateStore" /* 15600 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

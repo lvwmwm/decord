@@ -1,15 +1,15 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12389
+// Function ID: 12390
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 5015, 21, 575, 5014, 12238, 5095, 1491, 5011, 504, 5637, 5587, 5618, 12250, 5624, 2]
+// Dependencies: [32, 19, 17, 5015, 21, 575, 5014, 12378, 5095, 1491, 5011, 504, 5637, 5587, 5618, 12390, 5624, 2]
 // Exports: default
 
-// Module 12249 (BannerBase)
+// Module 12389 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import spring from "spring" /* 5637 */;
-import ApplicationsImage from "ApplicationsImage" /* 12238 */;
+import ApplicationsImage from "ApplicationsImage" /* 12378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -122,7 +122,7 @@ export default function BannerBase(image) {
   let tmp11Result = null != image;
   if (tmp11Result) {
     const obj9 = { style: tmp.imageContainer, children: items5 };
-    const obj10 = { style: tmp.trinketsLottie, source: require("module_12250"), autoPlay: !stateFromStores };
+    const obj10 = { style: tmp.trinketsLottie, source: require("module_12390"), autoPlay: !stateFromStores };
     const tmp7Result = sharedValue(5618);
     items5 = [tmp12(tmp7Result, obj10), image];
     tmp11Result = tmp11(View, obj9);

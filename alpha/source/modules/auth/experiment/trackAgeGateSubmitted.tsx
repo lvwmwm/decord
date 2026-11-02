@@ -1,17 +1,17 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 18002
+// Function ID: 18003
 // Name: trackAgeGateSubmitted
-// Dependencies: [1072, 1252, 2042, 17990, 2]
+// Dependencies: [1072, 1252, 2042, 18003, 2]
 // Exports: default
 
-// Module 17989 (trackAgeGateSubmitted)
+// Module 18002 (trackAgeGateSubmitted)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef2042 from "module_2042" /* 2042 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const formatDateForAPIDefault = tmp(17990);
+const formatDateForAPIDefault = tmp(18003);
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
 

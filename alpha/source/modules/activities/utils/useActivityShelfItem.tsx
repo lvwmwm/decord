@@ -1,10 +1,10 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12385
+// Function ID: 12386
 // Name: useActivityShelfItem
-// Dependencies: [5, 4862, 2018, 1072, 5682, 1375, 11841, 12246, 12247, 1992, 6883, 11788, 11787, 7330, 4935, 7326, 11692, 11696, 10932, 2]
+// Dependencies: [5, 4862, 2018, 1072, 5682, 1375, 11842, 12386, 12387, 1992, 6883, 11789, 11788, 7330, 4935, 7326, 11693, 11697, 10931, 2]
 // Exports: default, getStaffReleasePhase
 
-// Module 12245 (useActivityShelfItem)
+// Module 12385 (useActivityShelfItem)
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import Constants2 from "Constants" /* 2018 */;
@@ -13,18 +13,18 @@ import getPlatformDefault from "getPlatform" /* 5682 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6883 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7330 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10932 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11787 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11788 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11841 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12247 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10931 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11788 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11789 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11842 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 
-const f101476 = (str) => str.toUpperCase();
+const f101894 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -316,7 +316,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(12246)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12386)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f101476);
+      replaced = str4.replace(/(^\w|\s\w)/g, f101894);
     }
     tmp16 = replaced;
   } else {
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f101476);
+    replaced = str4.replace(/(^\w|\s\w)/g, f101894);
   }
   return replaced;
 }

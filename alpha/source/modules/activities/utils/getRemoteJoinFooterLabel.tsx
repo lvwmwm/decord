@@ -1,10 +1,10 @@
-// Module ID: 15132
-// Function ID: 15133
+// Module ID: 15136
+// Function ID: 15137
 // Name: getRemoteJoinFooterLabel
 // Dependencies: [9738, 1113, 2]
 // Exports: getRemoteJoinFooterLabel
 
-// Module 15132 (getRemoteJoinFooterLabel)
+// Module 15136 (getRemoteJoinFooterLabel)
 import intl6 from "intl" /* 1113 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
 import size from "module_2" /* 2 */;

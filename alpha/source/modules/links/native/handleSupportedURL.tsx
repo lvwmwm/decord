@@ -1,10 +1,10 @@
-// Module ID: 15670
-// Function ID: 15671
+// Module ID: 15674
+// Function ID: 15675
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 6932, 6855, 7606, 15280, 502, 1072, 4870, 6715, 7940, 10910, 7716, 5747, 15671, 8432, 14232, 6744, 5199, 15672, 8750, 7563, 11455, 9444, 13204, 1888, 11370, 1252, 11372, 7422, 10182, 13341, 15678, 14265, 10905, 1994, 10911, 10909, 15680, 15682, 1622, 7957, 15692, 5709, 15694, 4885, 7522, 8967, 8962, 7503, 7938, 11978, 5198, 6793, 1099, 572, 7347, 1377, 9074, 15697, 15712, 1375, 15721, 9118, 13333, 15729, 6535, 15730, 7719, 7351, 9269, 15807, 7862, 6786, 9678, 14677, 6787, 10558, 15808, 6768, 10929, 15809, 9340, 9320, 10976, 5742, 2]
+// Dependencies: [109, 5, 6932, 6855, 7606, 15284, 502, 1072, 4870, 6715, 7940, 10910, 7716, 5747, 15675, 8432, 14247, 6744, 5199, 15676, 8750, 7563, 11456, 9444, 13219, 1888, 11371, 1252, 11373, 7422, 10182, 13356, 15682, 14280, 10905, 1994, 10911, 10909, 15684, 15686, 1622, 7957, 15696, 5709, 15698, 4885, 7522, 8967, 8962, 7503, 7938, 11979, 5198, 6793, 1099, 572, 7347, 1377, 9074, 15701, 15716, 1375, 15725, 9118, 13348, 15733, 6535, 15734, 7719, 7351, 9269, 15811, 7862, 6786, 9678, 14691, 6787, 10558, 15812, 6768, 10928, 15813, 9340, 9320, 10976, 5742, 2]
 // Exports: default
 
-// Module 15670 (handleSupportedURL)
+// Module 15674 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -34,17 +34,17 @@ import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 944
 import QuestUtils from "QuestUtils" /* 9678 */;
 import ApplicationUtils from "ApplicationUtils" /* 10909 */;
 import Constants3 from "Constants" /* 10910 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 10929 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 13204 */;
-import BountyActionCreators from "BountyActionCreators" /* 14677 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15671 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15678 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15712 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15807 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 10928 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 13219 */;
+import BountyActionCreators from "BountyActionCreators" /* 14691 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15675 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15682 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15716 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15811 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 15280 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 15284 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -60,8 +60,8 @@ let map1;
 let tmp;
 let tmp3;
 const authorizeCallbackDefault = tmp(10911);
-const FamilyCenterNativeUtils = tmp3(13341);
-const CreateGuildModalActionCreatorsDefault = tmp(14265);
+const FamilyCenterNativeUtils = tmp3(13356);
+const CreateGuildModalActionCreatorsDefault = tmp(14280);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_9 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -349,7 +349,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(15682, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(15686, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;
@@ -902,15 +902,15 @@ export default function handleSupportedURL(payload) {
                 flag = true;
               } else if (tmp.QUESTS === type) {
                 const tmp34 = pathname(() => {
-                  let obj2;
-                  let tmp11;
-                  let tmp12;
+                  let obj3;
+                  let tmp4;
+                  let tmp5;
                   if (null != payload.questId) {
-                    const obj = { questId: payload.questId, event: constants.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: obj2 };
+                    const obj2 = { questId: payload.questId, event: constants.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT, sourceQuestContent: QuestContent.QuestContent.QUEST_EMBED_MOBILE, properties: obj3 };
                     const trackQuestEvent = AnalyticsActions.trackQuestEvent;
                     AnalyticsActions;
-                    obj2 = { referrer_id: payload.referrerId };
-                    trackQuestEvent(obj);
+                    obj3 = { referrer_id: payload.referrerId };
+                    trackQuestEvent(obj2);
                   }
                   let sort;
                   if (payload != null) {
@@ -920,24 +920,24 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
-                  const obj3 = { scrollToQuestId: payload.questId, sort: tmp11, filter: tmp12, fromContent: QuestContent.QuestContent.QUEST_SHARE_LINK };
-                  tmp11 = null;
+                  const obj = { scrollToQuestId: payload.questId, sort: tmp4, filter: tmp5, fromContent: QuestContent.QuestContent.QUEST_SHARE_LINK };
+                  tmp4 = null;
                   const openQuestHome = QuestUtils.openQuestHome;
                   QuestUtils;
                   if (null != sort) {
-                    tmp11 = null;
+                    tmp4 = null;
                     if ("" !== sort) {
-                      tmp11 = sort;
+                      tmp4 = sort;
                     }
                   }
-                  tmp12 = null;
+                  tmp5 = null;
                   if (null != filter) {
-                    tmp12 = null;
+                    tmp5 = null;
                     if ("" !== filter) {
-                      tmp12 = filter;
+                      tmp5 = filter;
                     }
                   }
-                  openQuestHome(obj3);
+                  openQuestHome(obj);
                 });
                 flag = true;
               } else if (tmp.QUEST_HOME_PREVIEW === type) {
@@ -1033,7 +1033,6 @@ export default function handleSupportedURL(payload) {
                 });
                 flag = true;
               } else if (tmp.SUBSCRIPTION_SETTINGS === type) {
-                let tmp12 = pathname;
                 const tmp13 = pathname(() => {
                   const obj = rootNavigationRef1(inviteCode[17]);
                   obj.popAll();
@@ -1044,7 +1043,7 @@ export default function handleSupportedURL(payload) {
               } else if (tmp.GAME_PROFILE === type) {
                 gameId = payload.gameId;
                 const tmp10 = pathname;
-                let tmp11 = pathname(() => {
+                const tmp11 = pathname(() => {
                   const obj = ModalActionCreatorsDefault;
                   obj.popAll();
                   const GameProfileSources = GameProfileAnalyticUtils.GameProfileSources;
@@ -1058,7 +1057,7 @@ export default function handleSupportedURL(payload) {
                 let tmp3 = inviteCode;
                 let obj = rootNavigationRef1(inviteCode[17]);
                 obj.popAll();
-                const tmp5 = payload;
+                let tmp5 = payload;
                 let obj2 = payload(inviteCode[18]);
                 rootNavigationRef3 = obj2.getRootNavigationRef();
                 let tmp6 = null;

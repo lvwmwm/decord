@@ -59,30 +59,29 @@ function answerFor(cmd) {
   } else if (null == obj[cmd.cmd]) {
     return null;
   } else {
-    const tmp11Result = obj[cmd.cmd](cmd);
-    ({ options, subject } = tmp11Result);
-    const result = tmp11Result.result;
+    const tmp10Result = obj[cmd.cmd](cmd);
+    ({ options, subject } = tmp10Result);
+    const result = tmp10Result.result;
     if (found.recorded.length < 20) {
       const recorded = found.recorded;
-      obj = { command: cmd.cmd, answered: tmp13 };
+      const obj2 = { command: cmd.cmd, answered: tmp12 };
       if (null != options) {
         let obj5;
-        let obj4;
         if (options.length > 0) {
-          obj5 = { options };
-          const obj2 = { options };
+          obj = { options };
+          const obj3 = { options };
         }
-        const merged = Object.assign(obj5);
+        const merged = Object.assign(obj);
         if (null != subject) {
-          obj4 = { subject };
-          const obj3 = { subject };
+          obj5 = { subject };
+          const obj4 = { subject };
         } else {
-          obj4 = {};
+          obj5 = {};
         }
-        const merged1 = Object.assign(obj4);
-        tmp2(obj);
+        const merged1 = Object.assign(obj5);
+        tmp13(obj2);
       }
-      obj5 = {};
+      obj = {};
     }
     return { result };
   }
@@ -146,15 +145,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f98464 = (permission) => ({ permission, state: "denied" });
+    const f98498 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f98464) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f98464) });
+    obj = { result: { permissions: found.map(f98498) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f98498) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -175,8 +174,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "children", answered: false }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "children", answered: false })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "children", answered: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012611364128711548 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "children", answered: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012611364128711548 })
 };
 let closure_5 = {
   drain() {

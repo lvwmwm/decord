@@ -1,9 +1,9 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 12505
+// Function ID: 12506
 // Name: components/BottomSheetTextInput
 // Dependencies: [2, 9063]
 
-// Module 12365 (components/BottomSheetTextInput)
+// Module 12505 (components/BottomSheetTextInput)
 import Sheet_BottomSheetTextInput from "Sheet/BottomSheetTextInput" /* 9063 */;
 import size from "module_2" /* 2 */;
 

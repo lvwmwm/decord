@@ -1,23 +1,23 @@
-// Module ID: 16428
-// Function ID: 16429
+// Module ID: 16440
+// Function ID: 16441
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11458, 8731, 1082, 1072, 21, 5014, 1113, 16429, 16554, 16563, 16448, 5596, 575, 1497, 7164, 8980, 11406, 7152, 16451, 16555, 563, 5760, 11519, 6998, 7558, 1498, 16565, 12511, 14177, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11459, 8731, 1082, 1072, 21, 5014, 1113, 16441, 16567, 16576, 16461, 5596, 575, 1497, 7164, 8980, 11407, 7152, 16464, 16568, 563, 5760, 11520, 6998, 7558, 1498, 16578, 12170, 14192, 2]
 
-// Module 16428 (ProfileCustomizationSettingScreen)
+// Module 16440 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7152 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11406 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11519 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16429 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16554 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11407 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11520 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16441 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11458 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11459 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

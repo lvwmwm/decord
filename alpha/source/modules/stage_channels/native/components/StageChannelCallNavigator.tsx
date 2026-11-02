@@ -1,10 +1,10 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11849
+// Function ID: 11850
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 11849, 5095, 5637, 575, 11850, 11911, 11852, 11004, 11003, 9830, 11228, 5759, 11912, 11997, 5080, 11700, 12005, 12006, 11855, 12011, 12019, 12021, 12054, 12055, 5014, 12056, 11873, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 11850, 5095, 5637, 575, 11851, 11912, 11853, 11004, 11003, 9830, 11228, 5759, 11913, 11998, 5080, 11701, 12006, 12007, 11856, 12012, 12020, 12022, 12055, 12056, 5014, 12057, 11874, 2]
 // Exports: default
 
-// Module 11848 (StageChannelCallNavigator)
+// Module 11849 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
@@ -12,9 +12,9 @@ import spring from "spring" /* 5637 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
 import MessageManagerDefault from "MessageManager" /* 9830 */;
 import participantHasVideoDefault from "participantHasVideo" /* 11228 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 11873 */;
-import JoinStageViewDefault from "JoinStageView" /* 11911 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12056 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 11874 */;
+import JoinStageViewDefault from "JoinStageView" /* 11912 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12057 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

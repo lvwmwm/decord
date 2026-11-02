@@ -1,15 +1,15 @@
-// Module ID: 19255
-// Function ID: 19256
+// Module ID: 19262
+// Function ID: 19263
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 5014, 5011, 575, 16294, 16295, 1625, 5624, 2]
+// Dependencies: [19, 17, 21, 5014, 5011, 575, 16298, 16299, 1625, 5624, 2]
 // Exports: default
 
-// Module 19255 (ActivitiesDebugOverlay)
+// Module 19262 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;
-import useThermalStateDefault from "useThermalState" /* 16294 */;
-import ThermalStates from "ThermalStates" /* 16295 */;
+import useThermalStateDefault from "useThermalState" /* 16298 */;
+import ThermalStates from "ThermalStates" /* 16299 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;

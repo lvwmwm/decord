@@ -1,12 +1,12 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 18458
+// Function ID: 18459
 // Name: YouBarNameplate
-// Dependencies: [19, 5015, 17062, 21, 5596, 575, 17143, 504, 5095, 5637, 9514, 2]
+// Dependencies: [19, 5015, 17075, 21, 5596, 575, 17156, 504, 5095, 5637, 9514, 2]
 
-// Module 18445 (YouBarNameplate)
+// Module 18458 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5637 */;
-import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarConstants from "YouBarConstants" /* 17075 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const memoResult = react.memo(function YouBarNameplate(isQuestRendered) {
   let obj = isQuestRendered(5596);
   const tmp2 = token;
   token = obj.useToken(token(575).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(17143)(token);
+  const tmp4 = token(17156)(token);
   dependencyMap = tmp4;
   const items = [AccessibilityStore];
   const obj2 = isQuestRendered(504);

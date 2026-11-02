@@ -1,10 +1,10 @@
-// Module ID: 13690
-// Function ID: 13691
+// Module ID: 13705
+// Function ID: 13706
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1383, 8722, 2038, 1496, 10117, 6881, 13691, 8394, 1113, 13692, 9761, 8721, 11688, 13693, 13694, 1409, 1377, 7835, 11692, 7351, 5683, 5207, 1623, 10909, 7358, 5711, 1379, 2]
+// Dependencies: [32, 1383, 8722, 2038, 1496, 10117, 6881, 13706, 8394, 1113, 13707, 9761, 8721, 11689, 13708, 13709, 1409, 1377, 7835, 11693, 7351, 5683, 5207, 1623, 10909, 7358, 5711, 1379, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 13690 (createAppMessageEmbed)
+// Module 13705 (createAppMessageEmbed)
 import intl7 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1377 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
@@ -24,12 +24,12 @@ import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8722 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10117 */;
 import ApplicationUtils from "ApplicationUtils" /* 10909 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11688 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11692 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13691 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13692 */;
-import getPlayInContext from "getPlayInContext" /* 13693 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13694 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11689 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11693 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13706 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13707 */;
+import getPlayInContext from "getPlayInContext" /* 13708 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1383 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;

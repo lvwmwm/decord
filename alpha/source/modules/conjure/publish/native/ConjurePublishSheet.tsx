@@ -1,10 +1,10 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12104
+// Function ID: 12105
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6844, 21, 9587, 8673, 6845, 12446, 12448, 12450, 11281, 5014, 575, 5712, 5258, 12438, 504, 12452, 6022, 5591, 8677, 8678, 1113, 3868, 7366, 12458, 12463, 7082, 7253, 5624, 6957, 12466, 5634, 7369, 5652, 2]
+// Dependencies: [5, 19, 17, 6844, 21, 9587, 8673, 6845, 12105, 12107, 12109, 11281, 5014, 575, 5712, 5258, 12097, 504, 12111, 6022, 5591, 8677, 8678, 1113, 3868, 7366, 12117, 12122, 7082, 7253, 5624, 6957, 12125, 5634, 7369, 5652, 2]
 // Exports: default
 
-// Module 12445 (ConjurePublishSheet)
+// Module 12104 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3868 from "module_3868" /* 3868 */;
@@ -18,10 +18,10 @@ import VoiceNormalIcon from "VoiceNormalIcon" /* 8673 */;
 import AppsIcon2 from "AppsIcon" /* 8678 */;
 import ScreenIcon from "ScreenIcon" /* 9587 */;
 import ShieldIcon from "ShieldIcon" /* 11281 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12438 */;
-import RobotIcon from "RobotIcon" /* 12446 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12448 */;
-import BadgeIcon from "BadgeIcon" /* 12450 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12097 */;
+import RobotIcon from "RobotIcon" /* 12105 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12107 */;
+import BadgeIcon from "BadgeIcon" /* 12109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
@@ -221,7 +221,7 @@ function PublishSheetBody(entryPoint) {
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12452)(project, publish);
+  const tmp4 = entryPoint(12111)(project, publish);
   dependencyMap = tmp4;
   entryPoint(6022)(() => true, tmp4.saving);
   obj = react;
@@ -299,10 +299,10 @@ function PublishSheetBody(entryPoint) {
           }
         }
     };
-    tmp15Result = tmp15(tmp12(12458).ConjureAppIconTile, obj4);
+    tmp15Result = tmp15(tmp12(12117).ConjureAppIconTile, obj4);
   } else {
     const obj5 = { project, size: "dialog" };
-    tmp15Result = tmp15(tmp2(12463), obj5);
+    tmp15Result = tmp15(tmp2(12122), obj5);
   }
   items2 = [tmp15Result, , , , , , ];
   if (editable) {
@@ -370,7 +370,7 @@ function PublishSheetBody(entryPoint) {
     } else {
       const obj20 = { style: tmp.onlyMeIcon, children: obj(UserIcon, obj21) };
       obj21 = { size: "xs", color: entryPoint(575).colors.ICON_DEFAULT };
-      UserIcon = tmp12(12466).UserIcon;
+      UserIcon = tmp12(12125).UserIcon;
       tmp15Result8 = tmp15(tmp17, obj20);
     }
     items6 = [tmp15Result8, ];

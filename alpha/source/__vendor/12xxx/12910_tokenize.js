@@ -1,56 +1,44 @@
 // Module ID: 12910
 // Function ID: 12911
 // Name: tokenize
-// Dependencies: [12833]
+// Dependencies: [12836]
 
 // Module 12910 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
 
+let items;
 let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-}
-const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "TypeSelector",
+const Comma = tokenize.TYPE.Comma;
+const obj = {
+  name: "SelectorList",
   structure: obj2,
   parse() {
-    let scanner3;
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      list.push(self.Selector());
+      if (self.scanner.tokenType === Comma) {
         const iter = self.scanner;
         iter.next();
-        obj.call(self);
+        while (!self.scanner.eof) {
+          let arr3 = list.push(self.Selector());
+          if (self.scanner.tokenType !== Comma) {
+            break;
+          }
+        }
       }
     }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
+    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
+    return element;
   },
-  generate(name) {
-    this.chunk(name.name);
-  }
+  generate(arg0) {
+    this.children(arg0, function() {
+      this.chunk(",");
+    });
+  },
+  walkContext: "selector"
 };
-obj2 = { name: String };
+obj2 = { children: items };
+items = [["Selector", "Raw"]];
 
 export default obj;

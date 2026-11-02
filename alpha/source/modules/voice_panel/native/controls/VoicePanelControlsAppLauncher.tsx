@@ -1,9 +1,9 @@
-// Module ID: 19341
-// Function ID: 19342
+// Module ID: 19348
+// Function ID: 19349
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 4863, 11221, 1072, 21, 5014, 9821, 11222, 8841, 504, 38, 13813, 1108, 11500, 11501, 5095, 12269, 13814, 1113, 2]
+// Dependencies: [19, 4863, 11221, 1072, 21, 5014, 9821, 11222, 8841, 504, 38, 13828, 1108, 11501, 11502, 5095, 12409, 13829, 1113, 2]
 
-// Module 19341 (VoicePanelControlsAppLauncher)
+// Module 19348 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import react_mod from "react" /* 19 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = gestureSpecs(13813);
+  const obj3 = gestureSpecs(13828);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -66,10 +66,10 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = gestureSpecs(11500);
+  const obj4 = gestureSpecs(11501);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = gestureSpecs(11501).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(gestureSpecs(11500).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = gestureSpecs(11502).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(gestureSpecs(11501).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
   const obj5 = gestureSpecs(5095);
   const sharedValue = obj5.useSharedValue(0);
@@ -115,9 +115,9 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   View = setControlsMode(5095).View;
   items3 = [, ];
   const obj12 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
-  items3[0] = closure_7(setControlsMode(12269), obj12);
+  items3[0] = closure_7(setControlsMode(12409), obj12);
   const obj13 = { title: intl.string(gestureSpecs(1113).t.shUONg), disablePill: true };
-  const tmp17 = setControlsMode(13814);
+  const tmp17 = setControlsMode(13829);
   intl = gestureSpecs(1113).intl;
   items3[1] = closure_7(tmp17, obj13);
   return closure_7(closure_9, obj10);

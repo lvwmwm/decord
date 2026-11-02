@@ -1,19 +1,17 @@
-// Module ID: 14804
-// Function ID: 14805
+// Module ID: 14808
+// Function ID: 14809
 // Name: MediaViewerPager
-// Dependencies: [32, 19, 21, 8839, 8838, 10194, 14798, 5095, 14796, 5207, 5303, 8834, 1375, 14800, 14805, 14806, 2]
+// Dependencies: [32, 19, 21, 8839, 8838, 10194, 14802, 5095, 14800, 5207, 5303, 8834, 1375, 14804, 14809, 14810, 2]
 
-// Module 14804 (MediaViewerPager)
+// Module 14808 (MediaViewerPager)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import useMediaViewerSources from "useMediaViewerSources" /* 8834 */;
-import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 14800 */;
+import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 14804 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
-
-let onStartResult;
 
 const jsx = Fragment.jsx;
 let closure_6 = { code: "function MediaViewerPagerTsx1(){const{zoomScale,isClosing}=this.__closure;return zoomScale.get()<=1&&!isClosing.get();}" };
@@ -170,7 +168,7 @@ const memoResult = react.memo(function MediaViewerPager(entranceAnimationDriver)
   items5[3] = callback1;
   items5[4] = callback3;
   items5[5] = panGestureGeneratorResult;
-  const callback4 = useCallback((onStartResult) => {
+  const callback4 = useCallback((onFinalizeResult) => {
     let num = 10;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
@@ -182,7 +180,7 @@ const memoResult = react.memo(function MediaViewerPager(entranceAnimationDriver)
     const enabledResult = runOnJSResult.enabled(!mediaItemHasSpoiler);
     const numberOfTapsResult = enabledResult.numberOfTaps(2);
     const maxDistanceResult = numberOfTapsResult.maxDistance(num);
-    onStartResult = maxDistanceResult.onStart(callback2);
+    const onStartResult = maxDistanceResult.onStart(callback2);
     const Gesture2 = tmp(5303).Gesture;
     const TapResult1 = Gesture2.Tap();
     let tmp6 = !mediaItemHasSpoiler;
@@ -206,7 +204,7 @@ const memoResult = react.memo(function MediaViewerPager(entranceAnimationDriver)
     const Gesture4 = tmp(5303).Gesture;
     const Simultaneous = Gesture4.Simultaneous;
     const Gesture5 = tmp(5303).Gesture;
-    const RaceResult = Gesture5.Race(onStartResult, c22);
+    const RaceResult = Gesture5.Race(onFinalizeResult, c22);
     const Gesture6 = tmp(5303).Gesture;
     return Simultaneous(RaceResult, Gesture6.Exclusive(onStartResult, onStartResult1), onStartResult2);
   }, items5);

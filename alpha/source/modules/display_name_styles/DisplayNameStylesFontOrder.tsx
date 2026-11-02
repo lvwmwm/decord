@@ -1,10 +1,10 @@
-// Module ID: 17316
-// Function ID: 17317
+// Module ID: 17329
+// Function ID: 17330
 // Name: DisplayNameStylesFontOrder
 // Dependencies: [19, 1401, 5039, 1403, 5042, 2]
 // Exports: useVisibleFontOrder
 
-// Module 17316 (DisplayNameStylesFontOrder)
+// Module 17329 (DisplayNameStylesFontOrder)
 import DisplayNameFont from "DisplayNameFont" /* 1403 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;

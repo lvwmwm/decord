@@ -1,10 +1,10 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 15818
+// Function ID: 15819
 // Name: Shadows
 // Dependencies: [1375, 2]
 // Exports: generateBoxShadowStyle
 
-// Module 15814 (Shadows)
+// Module 15818 (Shadows)
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 

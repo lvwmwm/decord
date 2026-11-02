@@ -1,10 +1,10 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17881
+// Function ID: 17882
 // Name: DebugLogView
 // Dependencies: [19, 17, 5627, 7734, 21, 5014, 575, 504, 5624, 2]
 // Exports: default
 
-// Module 17868 (DebugLogView)
+// Module 17881 (DebugLogView)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import react_mod from "react" /* 19 */;

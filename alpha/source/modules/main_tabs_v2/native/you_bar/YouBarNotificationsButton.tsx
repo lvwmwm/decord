@@ -1,15 +1,15 @@
-// Module ID: 18455
-// Function ID: 18456
+// Module ID: 18468
+// Function ID: 18469
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 10191, 17062, 21, 5014, 575, 18456, 5095, 5637, 504, 5260, 11150, 10192, 1113, 9208, 18452, 8028, 1187, 5199, 2]
+// Dependencies: [19, 17, 10191, 17075, 21, 5014, 575, 18469, 5095, 5637, 504, 5260, 11150, 10192, 1113, 9208, 18465, 8028, 1187, 5199, 2]
 
-// Module 18455 (YouBarNotificationsButton)
+// Module 18468 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
-import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarConstants from "YouBarConstants" /* 17075 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
   hasNameplate = hasNameplate.hasNameplate;
   let onLongPress;
   const tmp = closure_10();
-  const value = onLongPress(18456)().value;
+  const value = onLongPress(18469)().value;
   _require = value;
   let obj = require("ReanimatedRexport");
   const fn = function u() {
@@ -116,7 +116,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     const obj5 = { count: stateFromStores };
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1113).t.yBmFPA, obj5);
   }
-  const YouBarButtonContainer = tmp4(18452).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(18465).YouBarButtonContainer;
   const obj6 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,

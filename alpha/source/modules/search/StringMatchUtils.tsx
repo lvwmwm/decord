@@ -1,10 +1,10 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16600
+// Function ID: 16601
 // Name: StringMatchUtils
 // Dependencies: [2]
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 16587 (StringMatchUtils)
+// Module 16600 (StringMatchUtils)
 import size from "module_2" /* 2 */;
 
 function calculateJaroWinklerDistance(formatted, item) {

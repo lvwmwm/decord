@@ -1,13 +1,13 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14654
+// Function ID: 14655
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 14635, 1072, 8909, 21, 1497, 9739, 2]
+// Dependencies: [19, 14649, 1072, 8909, 21, 1497, 9739, 2]
 // Exports: default
 
-// Module 14640 (CrunchyrollLinkDiscordConsent)
+// Module 14654 (CrunchyrollLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14635 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14649 */;
 import react from "react" /* 19 */;
 import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8909 */;
 import size from "module_2" /* 2 */;

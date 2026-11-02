@@ -1,10 +1,10 @@
-// Module ID: 18576
-// Function ID: 18577
+// Module ID: 18589
+// Function ID: 18590
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 5095, 5624, 18515, 575, 8924, 18534, 18530, 5199, 5254, 5596, 14857, 1113, 5634, 18554, 5587, 1092, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5095, 5624, 18528, 575, 8924, 18547, 18543, 5199, 5254, 5596, 14861, 1113, 5634, 18567, 5587, 1092, 671, 2]
 // Exports: default
 
-// Module 18576 (CaughtUpRow)
+// Module 18589 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
@@ -14,7 +14,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18515 */;
+import createICYMIStyles from "createICYMIStyles" /* 18528 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -251,7 +251,7 @@ export default function ExploreServersRow(visible) {
   const obj10 = { style: tmp.container, children: items5 };
   const obj11 = { style: tmp.textContainer, children: items2 };
   const obj9 = { children: items7 };
-  const obj12 = { style: items1, children: closure_7(visible(14857).FlashIcon, obj13) };
+  const obj12 = { style: items1, children: closure_7(visible(14861).FlashIcon, obj13) };
   items1 = [tmp.iconWrapper, animatedStyle];
   View = sharedValue(5095).View;
   obj13 = { size: "custom", style: tmp.icon, color: "background-brand" };
@@ -275,7 +275,7 @@ export default function ExploreServersRow(visible) {
   intl4 = visible(1113).intl;
   items6[1] = closure_7(Button2, obj18);
   items5[1] = closure_8(View, obj16);
-  items7 = [closure_8(View, obj10), closure_7(visible(18554).Separator, {}), ];
+  items7 = [closure_8(View, obj10), closure_7(visible(18567).Separator, {}), ];
   const obj19 = { style: tmp.gradient, start: visible(1092).VerticalGradient.START, end: visible(1092).VerticalGradient.END, colors: items8, pointerEvents: "none" };
   const tmp12 = sharedValue(5587);
   items8 = [, ];

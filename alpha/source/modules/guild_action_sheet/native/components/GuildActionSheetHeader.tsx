@@ -1,18 +1,18 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 15798
+// Function ID: 15799
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 15795, 4885, 7445, 1072, 21, 5014, 575, 1376, 9304, 1113, 11333, 6980, 5712, 9307, 1187, 9311, 5624, 7112, 504, 4877, 15796, 15797, 1491, 6957, 1409, 5717, 1444, 9821, 5596, 9306, 11339, 2]
+// Dependencies: [19, 17, 15799, 4885, 7445, 1072, 21, 5014, 575, 1376, 9304, 1113, 11333, 6980, 5712, 9307, 1187, 9311, 5624, 7112, 504, 4877, 15800, 15801, 1491, 6957, 1409, 5717, 1444, 9821, 5596, 9306, 11339, 2]
 // Exports: default
 
-// Module 15794 (GuildActionSheetHeader)
+// Module 15798 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15796 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15800 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 15795 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 15799 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7445 */;
 import Fragment from "Fragment" /* 21 */;

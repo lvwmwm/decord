@@ -1,10 +1,10 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15033
+// Function ID: 15034
 // Name: AvatarDecorationProductPreview
 // Dependencies: [19, 17, 21, 5014, 8749, 8742, 1113, 1187, 2]
 // Exports: default
 
-// Module 15029 (AvatarDecorationProductPreview)
+// Module 15033 (AvatarDecorationProductPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;

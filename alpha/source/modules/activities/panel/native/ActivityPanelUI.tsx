@@ -1,14 +1,14 @@
-// Module ID: 19125
-// Function ID: 19126
+// Module ID: 19132
+// Function ID: 19133
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 5657, 21, 19126, 19131, 19144, 5611, 5080, 19145, 19124, 2]
+// Dependencies: [19, 17, 5657, 21, 19133, 19138, 19151, 5611, 5080, 19152, 19131, 2]
 // Exports: default
 
-// Module 19125 (ActivityPanelUI)
+// Module 19132 (ActivityPanelUI)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19124 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19144 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 19145 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19131 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19151 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 19152 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,9 +25,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 19126;
+    tmp4 = 19133;
   } else {
-    tmp4 = 19131;
+    tmp4 = 19138;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);

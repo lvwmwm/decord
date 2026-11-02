@@ -1,9 +1,9 @@
-// Module ID: 10934
-// Function ID: 10935
+// Module ID: 10933
+// Function ID: 10934
 // Name: LocationMetadataStore
 // Dependencies: [5695, 504, 572, 2]
 
-// Module 10934 (LocationMetadataStore)
+// Module 10933 (LocationMetadataStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5695 */;

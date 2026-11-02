@@ -1,10 +1,10 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 16397
+// Function ID: 16398
 // Name: MediaPlayerManager
-// Dependencies: [17, 4862, 6875, 4863, 6061, 4946, 1993, 1072, 5657, 16386, 1083, 3, 560, 1259, 1996, 5199, 572, 1375, 558, 7636, 6873, 2]
+// Dependencies: [17, 4862, 6875, 4863, 6061, 4946, 1993, 1072, 5657, 16398, 1083, 3, 560, 1259, 1996, 5199, 572, 1375, 558, 7636, 6873, 2]
 // Exports: isPlaybackComplete
 
-// Module 16385 (MediaPlayerManager)
+// Module 16397 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4863 */;
 import MessageStore from "MessageStore" /* 6061 */;
 import PermissionStore from "PermissionStore" /* 4946 */;
 import AppStateStore from "AppStateStore" /* 1993 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16386 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16398 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "flexDirection",
-    showPip: "flag_cx",
+    showPip: "#E893FF",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: "\u{1F1E8}\u{1F1E8}"
+    currentlyDisplayedChannelId: null
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "dispatch", rate: false, isPlaying: false, wasPipClosedByUser: "_invalidateIfOrientationChanged" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "dispatch", rate: false, isPlaying: false, wasPipClosedByUser: "getAlert" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

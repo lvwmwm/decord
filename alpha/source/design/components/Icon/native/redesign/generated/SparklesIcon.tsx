@@ -1,14 +1,14 @@
-// Module ID: 12104
-// Function ID: 12105
+// Module ID: 12248
+// Function ID: 12249
 // Name: SparklesIcon
-// Dependencies: [19, 21, 575, 5716, 12105, 2]
+// Dependencies: [19, 21, 575, 5716, 12249, 2]
 // Exports: SparklesIcon
 
-// Module 12104 (SparklesIcon)
+// Module 12248 (SparklesIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 12105 */;
+import AssetRegistry from "AssetRegistry" /* 12249 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

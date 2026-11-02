@@ -1,9 +1,9 @@
-// Module ID: 17871
-// Function ID: 17872
+// Module ID: 17884
+// Function ID: 17885
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [19, 17, 1074, 1072, 21, 5014, 575, 14483, 7326, 7351, 1625, 16978, 5095, 5637, 1252, 7763, 9462, 10689, 17872, 17873, 17853, 1113, 2]
+// Dependencies: [19, 17, 1074, 1072, 21, 5014, 575, 14497, 7326, 7351, 1625, 16991, 5095, 5637, 1252, 7763, 9462, 10689, 17885, 17886, 17866, 1113, 2]
 
-// Module 17871 (CollectiblesShopViewAllCategoryItems)
+// Module 17884 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;

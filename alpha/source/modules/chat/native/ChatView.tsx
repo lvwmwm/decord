@@ -1,7 +1,7 @@
 // Module ID: 11214
 // Function ID: 11215
 // Name: ChatView
-// Dependencies: [19, 17, 6568, 4867, 4863, 6061, 1072, 21, 5014, 575, 5207, 504, 1113, 11215, 5612, 11232, 11233, 7654, 7484, 10183, 7279, 11235, 11255, 11360, 13708, 14026, 1375, 14198, 14199, 13809, 14203, 14207, 11562, 14210, 10736, 9, 1187, 14224, 14358, 2]
+// Dependencies: [19, 17, 6568, 4867, 4863, 6061, 1072, 21, 5014, 575, 5207, 504, 1113, 11215, 5612, 11232, 11233, 7654, 7484, 10183, 7279, 11235, 11255, 11361, 13723, 14041, 1375, 14213, 14214, 13824, 14218, 14222, 11563, 14225, 10736, 9, 1187, 14239, 14373, 2]
 
 // Module 11214 (ChatView)
 import react_native from "react-native" /* 17 */;
@@ -15,11 +15,11 @@ import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7484 */;
 import SummaryActionCreators from "SummaryActionCreators" /* 10183 */;
 import ChatViewWrapperDefault from "ChatViewWrapper" /* 11235 */;
 import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 11255 */;
-import MessagesDefault from "Messages" /* 11360 */;
-import ChatInputDefault from "ChatInput" /* 13708 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 14026 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 14203 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 14207 */;
+import MessagesDefault from "Messages" /* 11361 */;
+import ChatInputDefault from "ChatInput" /* 13723 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 14041 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 14218 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 14222 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
@@ -184,9 +184,9 @@ const memoResult = react.memo(function ChatView(alwaysRespectKeyboard) {
     const obj = flag(dependencyMap[20]);
     const result = obj.clearOldestUnreadMessageId(ref.current);
   }, []);
-  let obj3 = { profile: tmp3(11562).Profiles.ChatView, children: items10 };
-  const tmp18 = channelId(11562);
-  items10 = [stateFromStores(channelId(14210), { channelId, guildId }), , ];
+  let obj3 = { profile: tmp3(11563).Profiles.ChatView, children: items10 };
+  const tmp18 = channelId(11563);
+  items10 = [stateFromStores(channelId(14225), { channelId, guildId }), , ];
   let tmp19Result = null;
   const tmp17 = channel;
   if (!flag2) {
@@ -226,20 +226,20 @@ const memoResult = react.memo(function ChatView(alwaysRespectKeyboard) {
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(14198), obj7);
+        tmp7Result = tmp7(tmp3(14213), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c16) {
         const obj8 = { screenIndex: createChannelRecord };
-        tmp7Result3 = tmp7(tmp3(14199), obj8);
+        tmp7Result3 = tmp7(tmp3(14214), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: createChannelRecord, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(13809), obj9);
+        tmp7Result4 = tmp7(tmp3(13824), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;
@@ -261,12 +261,12 @@ const memoResult = react.memo(function ChatView(alwaysRespectKeyboard) {
       tmp10Result4.setInterstitial("EmptyState");
     } else if (channel.isDirectory()) {
       let obj5 = { channel, guildId };
-      tmp19Result2 = tmp19(tmp10(14224), obj5);
+      tmp19Result2 = tmp19(tmp10(14239), obj5);
       const tmp10Result5 = channelId(9);
       tmp10Result5.setInterstitial("GuildDirectory");
     } else if (channel.isForumLikeChannel()) {
       let obj6 = { channel };
-      tmp19Result2 = tmp19(tmp10(14358), obj6);
+      tmp19Result2 = tmp19(tmp10(14373), obj6);
       const tmp10Result6 = channelId(9);
       tmp10Result6.setInterstitial("ForumChannel");
     } else {

@@ -1,14 +1,14 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12810
+// Function ID: 12811
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 12806, 5095, 5254, 5637, 2]
+// Dependencies: [32, 19, 12809, 5095, 5254, 5637, 2]
 // Exports: default
 
-// Module 12807 (useChatInputFloatingBounce)
+// Module 12810 (useChatInputFloatingBounce)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12806 */;
+import ChatInputConstants from "ChatInputConstants" /* 12809 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3, set4;

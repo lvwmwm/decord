@@ -1,10 +1,10 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12023
+// Function ID: 12024
 // Name: StageChannelAnimationUtils
-// Dependencies: [5095, 11856, 11854, 1625, 5254, 2]
+// Dependencies: [5095, 11857, 11855, 1625, 5254, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 12022 (StageChannelAnimationUtils)
+// Module 12023 (StageChannelAnimationUtils)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 16272
-// Function ID: 16273
+// Module ID: 16276
+// Function ID: 16277
 // Name: NotificationSettingsConstants
-// Dependencies: [2868, 16273, 16274, 2]
+// Dependencies: [2868, 16277, 16278, 2]
 
-// Module 16272 (NotificationSettingsConstants)
+// Module 16276 (NotificationSettingsConstants)
 import _modDef2868 from "module_2868" /* 2868 */;
-import NotifSettings from "NotifSettings" /* 16273 */;
-import NotifTypes from "NotifTypes" /* 16274 */;
+import NotifSettings from "NotifSettings" /* 16277 */;
+import NotifTypes from "NotifTypes" /* 16278 */;
 import size from "module_2" /* 2 */;
 
 const obj = { badge: true, visibility: "popup", vibrate: true, sound: true };
@@ -38,36 +38,36 @@ items1[6] = { title: _modDef2868.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_
 ({ title: _modDef2868.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_LOW, string_id: "missed_messages_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 2, 3, 4] });
 items1[7] = { title: _modDef2868.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1, 5] };
 ({ title: _modDef2868.n0Wp6j, id: NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT, string_id: "missed_messages_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [1, 5] });
-items1[8] = { title: _modDef2868.DxG4wK, id: NotifSettings.NotifSettings.VOICE_CHANNEL_ACTIVITY, string_id: "voice_channel_activity", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868.DxG4wK, id: NotifSettings.NotifSettings.VOICE_CHANNEL_ACTIVITY, string_id: "voice_channel_activity", category: "222_social", behavior: obj3, redesignState: true });
+items1[8] = { title: _modDef2868.DxG4wK, id: NotifSettings.NotifSettings.VOICE_CHANNEL_ACTIVITY, string_id: "voice_channel_activity", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["voice_activity_low", "voice_activity_default", "default"] };
+({ title: _modDef2868.DxG4wK, id: NotifSettings.NotifSettings.VOICE_CHANNEL_ACTIVITY, string_id: "voice_channel_activity", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["voice_activity_low", "voice_activity_default", "default"] });
 items1[9] = { title: _modDef2868.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4], redesignState: false };
 ({ title: _modDef2868.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW, string_id: "voice_activity_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 3, 4], redesignState: false });
 items1[10] = { title: _modDef2868.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2, 5], redesignState: false };
 ({ title: _modDef2868.Iy9grw, id: NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT, string_id: "voice_activity_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [2, 5], redesignState: false });
-items1[11] = { title: _modDef2868.Yv02mS, id: NotifSettings.NotifSettings.GO_LIVE, string_id: "go_live", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868.Yv02mS, id: NotifSettings.NotifSettings.GO_LIVE, string_id: "go_live", category: "222_social", behavior: obj3, redesignState: true });
+items1[11] = { title: _modDef2868.Yv02mS, id: NotifSettings.NotifSettings.GO_LIVE, string_id: "go_live", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["voice_activity_low", "voice_activity_default"] };
+({ title: _modDef2868.Yv02mS, id: NotifSettings.NotifSettings.GO_LIVE, string_id: "go_live", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["voice_activity_low", "voice_activity_default"] });
 items1[12] = { title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.FRIENDS_GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] };
 ({ title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.FRIENDS_GAMING_LOW, string_id: "gaming_low", category: "222_social", behavior: obj3, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 4] });
 items1[13] = { title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.FRIENDS_GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3, 5] };
 ({ title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.FRIENDS_GAMING_DEFAULT, string_id: "gaming_default", category: "222_social", behavior: obj2, experiment: "2026-05-noisier-notif-settings-defaults", variations: [3, 5] });
-items1[14] = { title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_OTHER, string_id: "gaming_other", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_OTHER, string_id: "gaming_other", category: "222_social", behavior: obj3, redesignState: true });
-items1[15] = { title: _modDef2868.AAZKLL, id: NotifSettings.NotifSettings.CUSTOM_STATUS_UPDATE, string_id: "custom_status_update", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868.AAZKLL, id: NotifSettings.NotifSettings.CUSTOM_STATUS_UPDATE, string_id: "custom_status_update", category: "222_social", behavior: obj3, redesignState: true });
+items1[14] = { title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_OTHER, string_id: "gaming_other", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] };
+({ title: _modDef2868["9EDo+/"], id: NotifSettings.NotifSettings.GAMING_OTHER, string_id: "gaming_other", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] });
+items1[15] = { title: _modDef2868.AAZKLL, id: NotifSettings.NotifSettings.CUSTOM_STATUS_UPDATE, string_id: "custom_status_update", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] };
+({ title: _modDef2868.AAZKLL, id: NotifSettings.NotifSettings.CUSTOM_STATUS_UPDATE, string_id: "custom_status_update", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] });
 items1[16] = { title: _modDef2868.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj3, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3], redesignState: false };
 ({ title: _modDef2868.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_LOW, string_id: "social", category: "222_social", behavior: obj3, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [0, 1, 2, 3], redesignState: false });
 items1[17] = { title: _modDef2868.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj2, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4, 5], redesignState: false };
 ({ title: _modDef2868.vcrTV5, id: NotifSettings.NotifSettings.FRIEND_ACTIVITY_DEFAULT, string_id: "social", category: "222_social", behavior: obj2, systemOnly: true, experiment: "2026-05-noisier-notif-settings-defaults", variations: [4, 5], redesignState: false });
-items1[18] = { title: _modDef2868.tQCxJ5, id: NotifSettings.NotifSettings.PROFILE_UPDATES, string_id: "profile_updates", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868.tQCxJ5, id: NotifSettings.NotifSettings.PROFILE_UPDATES, string_id: "profile_updates", category: "222_social", behavior: obj3, redesignState: true });
-items1[19] = { title: _modDef2868["/aEaD/"], id: NotifSettings.NotifSettings.FRIEND_ONLINE, string_id: "friend_online", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868["/aEaD/"], id: NotifSettings.NotifSettings.FRIEND_ONLINE, string_id: "friend_online", category: "222_social", behavior: obj3, redesignState: true });
-items1[20] = { title: _modDef2868.nDMkO6, id: NotifSettings.NotifSettings.FRIEND_REQUEST_REMINDER, string_id: "friend_request_reminder", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868.nDMkO6, id: NotifSettings.NotifSettings.FRIEND_REQUEST_REMINDER, string_id: "friend_request_reminder", category: "222_social", behavior: obj3, redesignState: true });
-items1[21] = { title: _modDef2868["8t+tz0"], id: NotifSettings.NotifSettings.FRIEND_SUGGESTIONS, string_id: "friend_suggestions", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868["8t+tz0"], id: NotifSettings.NotifSettings.FRIEND_SUGGESTIONS, string_id: "friend_suggestions", category: "222_social", behavior: obj3, redesignState: true });
-items1[22] = { title: _modDef2868.semyB9, id: NotifSettings.NotifSettings.NUDGE_NEW_FRIEND_DM, string_id: "nudge_new_friend_dm", category: "222_social", behavior: obj3, redesignState: true };
-({ title: _modDef2868.semyB9, id: NotifSettings.NotifSettings.NUDGE_NEW_FRIEND_DM, string_id: "nudge_new_friend_dm", category: "222_social", behavior: obj3, redesignState: true });
+items1[18] = { title: _modDef2868.tQCxJ5, id: NotifSettings.NotifSettings.PROFILE_UPDATES, string_id: "profile_updates", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] };
+({ title: _modDef2868.tQCxJ5, id: NotifSettings.NotifSettings.PROFILE_UPDATES, string_id: "profile_updates", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] });
+items1[19] = { title: _modDef2868["/aEaD/"], id: NotifSettings.NotifSettings.FRIEND_ONLINE, string_id: "friend_online", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] };
+({ title: _modDef2868["/aEaD/"], id: NotifSettings.NotifSettings.FRIEND_ONLINE, string_id: "friend_online", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] });
+items1[20] = { title: _modDef2868.nDMkO6, id: NotifSettings.NotifSettings.FRIEND_REQUEST_REMINDER, string_id: "friend_request_reminder", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] };
+({ title: _modDef2868.nDMkO6, id: NotifSettings.NotifSettings.FRIEND_REQUEST_REMINDER, string_id: "friend_request_reminder", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] });
+items1[21] = { title: _modDef2868["8t+tz0"], id: NotifSettings.NotifSettings.FRIEND_SUGGESTIONS, string_id: "friend_suggestions", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social", "default"] };
+({ title: _modDef2868["8t+tz0"], id: NotifSettings.NotifSettings.FRIEND_SUGGESTIONS, string_id: "friend_suggestions", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social", "default"] });
+items1[22] = { title: _modDef2868.semyB9, id: NotifSettings.NotifSettings.NUDGE_NEW_FRIEND_DM, string_id: "nudge_new_friend_dm", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] };
+({ title: _modDef2868.semyB9, id: NotifSettings.NotifSettings.NUDGE_NEW_FRIEND_DM, string_id: "nudge_new_friend_dm", category: "222_social", behavior: obj3, redesignState: true, sourceAndroidChannels: ["social"] });
 items1[23] = { title: _modDef2868["4qWUAO"], id: NotifSettings.NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true };
 ({ title: _modDef2868["4qWUAO"], id: NotifSettings.NotifSettings.GUILD_MESSAGES, string_id: "messages", category: "333_server", behavior: obj, systemOnly: true });
 items1[24] = { title: _modDef2868.HibKoy, id: NotifSettings.NotifSettings.FORUM_NOTIFICATIONS, string_id: "forumThreadCreated", category: "333_server", behavior: obj };
@@ -78,23 +78,23 @@ items1[26] = { title: _modDef2868["4n388K"], id: NotifSettings.NotifSettings.STA
 ({ title: _modDef2868["4n388K"], id: NotifSettings.NotifSettings.STAGE_NOTIFICATIONS, string_id: "stageLive", category: "333_server", behavior: obj });
 items1[27] = { title: _modDef2868.kIrLfg, id: NotifSettings.NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj3 };
 ({ title: _modDef2868.kIrLfg, id: NotifSettings.NotifSettings.OTHER_GUILD, string_id: "other", category: "333_server", behavior: obj3 });
-items1[28] = { title: _modDef2868.tP1neL, id: NotifSettings.NotifSettings.SAFETY_ALERTS, string_id: "safety_alerts", category: "333_server", behavior: obj, redesignState: true };
-({ title: _modDef2868.tP1neL, id: NotifSettings.NotifSettings.SAFETY_ALERTS, string_id: "safety_alerts", category: "333_server", behavior: obj, redesignState: true });
+items1[28] = { title: _modDef2868.tP1neL, id: NotifSettings.NotifSettings.SAFETY_ALERTS, string_id: "safety_alerts", category: "333_server", behavior: obj, redesignState: true, sourceAndroidChannels: ["default"] };
+({ title: _modDef2868.tP1neL, id: NotifSettings.NotifSettings.SAFETY_ALERTS, string_id: "safety_alerts", category: "333_server", behavior: obj, redesignState: true, sourceAndroidChannels: ["default"] });
 items1[29] = { title: _modDef2868["T+79Eo"], id: NotifSettings.NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj3, systemOnly: true };
 ({ title: _modDef2868["T+79Eo"], id: NotifSettings.NotifSettings.OTHER, string_id: "default", category: "444_other", behavior: obj3, systemOnly: true });
 items1[30] = { title: _modDef2868.zJlwvV, id: NotifSettings.NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
 ({ title: _modDef2868.zJlwvV, id: NotifSettings.NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true });
-items1[31] = { title: _modDef2868.S9Z8aG, id: NotifSettings.NotifSettings.INVITES_RECONNECTING, string_id: "invites_reconnecting", category: "444_other", behavior: obj3, redesignState: true };
-({ title: _modDef2868.S9Z8aG, id: NotifSettings.NotifSettings.INVITES_RECONNECTING, string_id: "invites_reconnecting", category: "444_other", behavior: obj3, redesignState: true });
-items1[32] = { title: _modDef2868.roU6W6, id: NotifSettings.NotifSettings.TRENDING_SUGGESTIONS, string_id: "trending_suggestions", category: "444_other", behavior: obj3, redesignState: true };
-({ title: _modDef2868.roU6W6, id: NotifSettings.NotifSettings.TRENDING_SUGGESTIONS, string_id: "trending_suggestions", category: "444_other", behavior: obj3, redesignState: true });
-items1[33] = { title: _modDef2868.nLISld, id: NotifSettings.NotifSettings.UPDATES_OFFERS, string_id: "updates_offers", category: "444_other", behavior: obj3, redesignState: true };
-({ title: _modDef2868.nLISld, id: NotifSettings.NotifSettings.UPDATES_OFFERS, string_id: "updates_offers", category: "444_other", behavior: obj3, redesignState: true });
-items1[34] = { title: _modDef2868.k9gFti, id: NotifSettings.NotifSettings.FAMILY_CENTER, string_id: "family_center", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true };
-({ title: _modDef2868.k9gFti, id: NotifSettings.NotifSettings.FAMILY_CENTER, string_id: "family_center", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true });
-items1[35] = { title: _modDef2868.ut0AeD, id: NotifSettings.NotifSettings.SECURITY, string_id: "security", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true };
+items1[31] = { title: _modDef2868.S9Z8aG, id: NotifSettings.NotifSettings.INVITES_RECONNECTING, string_id: "invites_reconnecting", category: "444_other", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] };
+({ title: _modDef2868.S9Z8aG, id: NotifSettings.NotifSettings.INVITES_RECONNECTING, string_id: "invites_reconnecting", category: "444_other", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] });
+items1[32] = { title: _modDef2868.roU6W6, id: NotifSettings.NotifSettings.TRENDING_SUGGESTIONS, string_id: "trending_suggestions", category: "444_other", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] };
+({ title: _modDef2868.roU6W6, id: NotifSettings.NotifSettings.TRENDING_SUGGESTIONS, string_id: "trending_suggestions", category: "444_other", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] });
+items1[33] = { title: _modDef2868.nLISld, id: NotifSettings.NotifSettings.UPDATES_OFFERS, string_id: "updates_offers", category: "444_other", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] };
+({ title: _modDef2868.nLISld, id: NotifSettings.NotifSettings.UPDATES_OFFERS, string_id: "updates_offers", category: "444_other", behavior: obj3, redesignState: true, sourceAndroidChannels: ["default"] });
+items1[34] = { title: _modDef2868.k9gFti, id: NotifSettings.NotifSettings.FAMILY_CENTER, string_id: "family_center", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true, sourceAndroidChannels: ["default", "systemMessages"] };
+({ title: _modDef2868.k9gFti, id: NotifSettings.NotifSettings.FAMILY_CENTER, string_id: "family_center", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true, sourceAndroidChannels: ["default", "systemMessages"] });
+items1[35] = { title: _modDef2868.ut0AeD, id: NotifSettings.NotifSettings.SECURITY, string_id: "security", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true, sourceAndroidChannels: ["systemMessages", "default"] };
 const obj45 = {};
-({ title: _modDef2868.ut0AeD, id: NotifSettings.NotifSettings.SECURITY, string_id: "security", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true });
+({ title: _modDef2868.ut0AeD, id: NotifSettings.NotifSettings.SECURITY, string_id: "security", category: "555_account_safety", behavior: obj, systemOnly: true, redesignState: true, sourceAndroidChannels: ["systemMessages", "default"] });
 const FAMILY_CENTER_DISCONNECTED = NotifTypes.NotifTypes.FAMILY_CENTER_DISCONNECTED;
 const items2 = [NotifSettings.NotifSettings.FAMILY_CENTER];
 obj45[FAMILY_CENTER_DISCONNECTED] = items2;

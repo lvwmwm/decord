@@ -1,10 +1,10 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12212
+// Function ID: 12213
 // Name: conjureRemoveApp
 // Dependencies: [19, 2038, 7772, 4944, 4926, 4885, 4946, 4956, 1383, 10867, 6844, 1072, 10891, 5652, 504, 12, 6902, 1113, 3868, 10960, 2]
 // Exports: conjureDeleteProjectBody, conjureDeleteProjectItems, conjurePreviewAppItem, conjureRemoveAppItems, conjureRemoveAppKeptChannels, conjureRemoveAppSuccess, conjureTitleWithAppTag, isPublishedConjureUserApp, useConjureRemoveTarget, useIsPublishedConjureUserApp
 
-// Module 12548 (conjureRemoveApp)
+// Module 12212 (conjureRemoveApp)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
@@ -27,7 +27,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f102391 = (item) => {
+const f101084 = (item) => {
   const obj = { key: "channel:" + item, kind: "channel", label: "#" + item };
   return obj;
 };
@@ -164,13 +164,13 @@ export function useConjureRemoveTarget(projectId) {
 }
 export function conjureRemoveAppItems(target) {
   const channelNames = target.channelNames;
-  return channelNames.map(f102391);
+  return channelNames.map(f101084);
 }
 export function conjureDeleteProjectItems(target) {
   let obj = { key: "project", kind: "project", label: target.projectName };
   const items = [obj];
   const channelNames = target.channelNames;
-  const items1 = [...channelNames.map(f102391)];
+  const items1 = [...channelNames.map(f101084)];
   items.push.apply(items1);
   const previewAppName = target.previewAppName;
   let tmp2 = null;

@@ -1,9 +1,9 @@
-// Module ID: 18444
-// Function ID: 18445
+// Module ID: 18457
+// Function ID: 18458
 // Name: YouBarBackground
-// Dependencies: [19, 17, 17062, 21, 5014, 575, 7038, 5587, 671, 5596, 17143, 5095, 5637, 2]
+// Dependencies: [19, 17, 17075, 21, 5014, 575, 7038, 5587, 671, 5596, 17156, 5095, 5637, 2]
 
-// Module 18444 (YouBarBackground)
+// Module 18457 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,7 +12,7 @@ import useToken2 from "useToken" /* 5596 */;
 import spring from "spring" /* 5637 */;
 import _modDef7038 from "module_7038" /* 7038 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarConstants from "YouBarConstants" /* 17075 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -71,9 +71,9 @@ function YouBarAnimatedBackground(condensedReason) {
   const tmp = closure_8();
   let obj = condensedReason(5596);
   token = obj.useToken(token(575).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp3 = token(17143)(token);
+  const tmp3 = token(17156)(token);
   dependencyMap = tmp3;
-  const tmp4 = token(17143)(YOU_BAR_HEIGHT / 2, token);
+  const tmp4 = token(17156)(YOU_BAR_HEIGHT / 2, token);
   View = tmp4;
   let obj2 = condensedReason(5095);
   class R {

@@ -1,10 +1,10 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 12738
+// Function ID: 12739
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9727, 12736, 10805, 12446, 11281, 5014, 575, 5624, 8678, 12721, 1113, 3868, 12738, 12739, 12729, 2]
+// Dependencies: [19, 17, 21, 9727, 12739, 10805, 12105, 11281, 5014, 575, 5624, 8678, 12724, 1113, 3868, 12741, 12742, 12732, 2]
 // Exports: default
 
-// Module 12735 (ConjurePlanExperiences)
+// Module 12738 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,12 +14,12 @@ import AppsIcon2 from "AppsIcon" /* 8678 */;
 import GameControllerIcon from "GameControllerIcon" /* 9727 */;
 import UserCircleIcon from "UserCircleIcon" /* 10805 */;
 import ShieldIcon from "ShieldIcon" /* 11281 */;
-import RobotIcon from "RobotIcon" /* 12446 */;
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12721 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 12729 */;
-import WindowTopIcon from "WindowTopIcon" /* 12736 */;
-import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12738 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12739 */;
+import RobotIcon from "RobotIcon" /* 12105 */;
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12724 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 12732 */;
+import WindowTopIcon from "WindowTopIcon" /* 12739 */;
+import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12741 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12742 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -267,7 +267,7 @@ function ComponentSection(arg0) {
   if (result) {
     BM4Ymz = _modDef3868.BM4Ymz;
   } else {
-    BM4Ymz = tmp2(12738).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+    BM4Ymz = tmp2(12741).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
   }
   const obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: string(BM4Ymz) };
   items[1] = hasOwnProperty(Text, obj6);

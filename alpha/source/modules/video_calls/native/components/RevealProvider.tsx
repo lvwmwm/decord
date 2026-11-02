@@ -1,14 +1,14 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 11701
+// Function ID: 11702
 // Name: RevealProvider
-// Dependencies: [19, 5259, 5765, 11000, 21, 504, 11002, 11701, 1375, 5253, 5021, 11212, 11702, 2]
+// Dependencies: [19, 5259, 5765, 11000, 21, 504, 11002, 11702, 1375, 5253, 5021, 11212, 11703, 2]
 // Exports: default
 
-// Module 11700 (RevealProvider)
+// Module 11701 (RevealProvider)
 import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11002 */;
 import StatusBarDefault from "StatusBar" /* 11212 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11701 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 11702 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11702 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 11703 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5259 */;
 import GameConsoleStore from "GameConsoleStore" /* 5765 */;

@@ -1,8 +1,8 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15024
+// Function ID: 15025
 // Dependencies: [2]
 
-// Module 15020
+// Module 15024
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/assets/mobile_wishlist_coachmark.png.js");

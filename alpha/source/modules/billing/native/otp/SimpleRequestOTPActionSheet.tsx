@@ -1,10 +1,10 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 17705
+// Function ID: 17706
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1383, 6896, 1072, 1385, 21, 3, 1625, 10562, 504, 11385, 7719, 1983, 9911, 14420, 5258, 5959, 7732, 6027, 5624, 6977, 5634, 10696, 1266, 10560, 5272, 10689, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 6896, 1072, 1385, 21, 3, 1625, 10562, 504, 11386, 7719, 1983, 9911, 14434, 5258, 5959, 7732, 6027, 5624, 6977, 5634, 10696, 1266, 10560, 5272, 10689, 2]
 // Exports: default
 
-// Module 17692 (SimpleRequestOTPActionSheet)
+// Module 17705 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f112692 = () => {
+  const f112738 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -130,7 +130,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(11385);
+  let obj4 = selectedSkuId(11386);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -280,10 +280,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(14420)(obj6);
+  closure_8 = tmp(14434)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f112692, items5), 2);
-  tmp3(obj.useMemo(f112692, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f112738, items5), 2);
+  tmp3(obj.useMemo(f112738, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

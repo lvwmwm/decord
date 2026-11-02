@@ -1,7 +1,7 @@
 // Module ID: 9812
 // Function ID: 9813
 // Name: HeaderShared
-// Dependencies: [19, 17, 9813, 21, 5014, 575, 5624, 5596, 6999, 7005, 9814, 1375, 9819, 1625, 1498, 9821, 5609, 558, 9824, 14558, 6980, 1187, 2]
+// Dependencies: [19, 17, 9813, 21, 5014, 575, 5624, 5596, 6999, 7005, 9814, 1375, 9819, 1625, 1498, 9821, 5609, 558, 9824, 14572, 6980, 1187, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
 // Module 9812 (HeaderShared)
@@ -15,7 +15,7 @@ import _mod7005 from "module_7005" /* 7005 */;
 import react_native from "react-native" /* 9813 */;
 import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9819 */;
 import ChannelActionsDefault from "ChannelActions" /* 9824 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14558 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14572 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

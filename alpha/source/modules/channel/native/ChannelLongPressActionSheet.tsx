@@ -1,7 +1,7 @@
 // Module ID: 10803
 // Function ID: 10804
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10804, 6754, 4868, 6861, 4867, 7286, 4863, 7706, 4885, 4946, 6842, 4956, 4917, 6775, 1383, 1072, 10137, 21, 7950, 1994, 7939, 1113, 10805, 8750, 5725, 7485, 5652, 9773, 10232, 10138, 5727, 6744, 10807, 3450, 9758, 1099, 10828, 8646, 10830, 10845, 3868, 10846, 5258, 10848, 10976, 10977, 9118, 10979, 7282, 5199, 7054, 10981, 8026, 10982, 10983, 10985, 10987, 10988, 10990, 7137, 7279, 10992, 9208, 7288, 7283, 10994, 8199, 8645, 10996, 10997, 8669, 8643, 10998, 14379, 5759, 7941, 10084, 8352, 14380, 14381, 11883, 14382, 7135, 6902, 7561, 5731, 9034, 10524, 7358, 5711, 7326, 7351, 10832, 504, 4871, 6885, 9837, 4839, 6957, 1187, 14385, 11143, 14386, 14392, 7419, 14397, 14398, 1447, 11824, 14401, 9676, 7366, 1622, 11144, 7368, 2]
+// Dependencies: [5, 19, 10804, 6754, 4868, 6861, 4867, 7286, 4863, 7706, 4885, 4946, 6842, 4956, 4917, 6775, 1383, 1072, 10137, 21, 7950, 1994, 7939, 1113, 10805, 8750, 5725, 7485, 5652, 9773, 10232, 10138, 5727, 6744, 10807, 3450, 9758, 1099, 10828, 8646, 10830, 10845, 3868, 10846, 5258, 10848, 10976, 10977, 9118, 10979, 7282, 5199, 7054, 10981, 8026, 10982, 10983, 10985, 10987, 10988, 10990, 7137, 7279, 10992, 9208, 7288, 7283, 10994, 8199, 8645, 10996, 10997, 8669, 8643, 10998, 14394, 5759, 7941, 10084, 8352, 14395, 14396, 11884, 14397, 7135, 6902, 7561, 5731, 9034, 10524, 7358, 5711, 7326, 7351, 10832, 504, 4871, 6885, 9837, 4839, 6957, 1187, 14400, 11143, 14401, 14407, 7419, 14412, 14413, 1447, 11825, 14415, 9676, 7366, 1622, 11144, 7368, 2]
 // Exports: default
 
 // Module 10803 (ChannelLongPressActionSheet)
@@ -11,7 +11,7 @@ import StageChannelPermissions from "StageChannelPermissions" /* 4871 */;
 import ActionSheetRow2 from "ActionSheetRow" /* 7368 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10137 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10804 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11824 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11825 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6754 */;
@@ -531,7 +531,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     const buttons5 = obj20.buttons;
     const push9 = buttons5.push;
     const obj21 = {
-      label: intl7.string(tmp(tmp2[42]).KMwCb7),
+      label: intl7.string(tmp(tmp2[42])["276ll6"]),
       IconComponent: tmp5(tmp2[43]).RemixIcon,
       onPress() {
           const tmp = channel(guildId[44]);

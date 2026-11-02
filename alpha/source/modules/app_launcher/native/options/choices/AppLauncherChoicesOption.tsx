@@ -1,10 +1,10 @@
-// Module ID: 12356
-// Function ID: 12357
+// Module ID: 12496
+// Function ID: 12497
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 5014, 575, 1888, 5258, 12357, 1994, 12361, 8177, 5624, 6984, 2]
+// Dependencies: [32, 19, 21, 5014, 575, 1888, 5258, 12497, 1994, 12501, 8177, 5624, 6984, 2]
 // Exports: default
 
-// Module 12356 (AppLauncherChoicesOption)
+// Module 12496 (AppLauncherChoicesOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
@@ -84,7 +84,7 @@ export default function AppLauncherChoicesOption(option) {
     };
     index = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(12357, dependencyMap.paths);
+    const tmp4 = asyncRequire(12497, dependencyMap.paths);
     if (first != null) {
       index = first.index;
     }

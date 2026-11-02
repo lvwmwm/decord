@@ -1,10 +1,10 @@
-// Module ID: 19229
-// Function ID: 19230
+// Module ID: 19236
+// Function ID: 19237
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [6572, 6570, 5765, 9737, 504, 5762, 19230, 2]
+// Dependencies: [6572, 6570, 5765, 9737, 504, 5762, 19237, 2]
 // Exports: default
 
-// Module 19229 (useConsoleConnectedAccountForVoiceUpsell)
+// Module 19236 (useConsoleConnectedAccountForVoiceUpsell)
 import GameConsoleConstants from "GameConsoleConstants" /* 9737 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;

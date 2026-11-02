@@ -1,13 +1,13 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11709
+// Function ID: 11710
 // Name: usePipVideoOrStream
-// Dependencies: [4862, 6843, 11709, 6714, 502, 4863, 2006, 5764, 5681, 504, 6717, 5198, 11698, 2]
+// Dependencies: [4862, 6843, 11710, 6714, 502, 4863, 2006, 5764, 5681, 504, 6717, 5198, 11699, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 11708 (usePipVideoOrStream)
+// Module 11709 (usePipVideoOrStream)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 11709 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 11710 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

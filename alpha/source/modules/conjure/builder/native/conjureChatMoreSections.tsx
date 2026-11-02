@@ -1,14 +1,14 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12216
+// Function ID: 12217
 // Name: conjureChatMoreSections
-// Dependencies: [6844, 1113, 3868, 7561, 10846, 12551, 12553, 9208, 10878, 5740, 11083, 7125, 5727, 12555, 5733, 12559, 12562, 12564, 10524, 11883, 12557, 7135, 12561, 5738, 2]
+// Dependencies: [6844, 1113, 3868, 7561, 10846, 12217, 12219, 9208, 10878, 5740, 11083, 7125, 5727, 12221, 5733, 12225, 12228, 12230, 10524, 11884, 12223, 7135, 12227, 5738, 2]
 // Exports: conjureChatMoreSections
 
-// Module 12550 (conjureChatMoreSections)
+// Module 12216 (conjureChatMoreSections)
 import conjureProjectMute from "conjureProjectMute" /* 10878 */;
-import conjureProjectActions from "conjureProjectActions" /* 12555 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12557 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12561 */;
+import conjureProjectActions from "conjureProjectActions" /* 12221 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12223 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12227 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ export function conjureChatMoreSections(project) {
   const items = [obj];
   if (preview(project)) {
     const push = items.push;
-    const obj2 = { kind: "action", key: "remix", label: intl2.string(require("module_3868").XWgAfc), IconComponent: tmp2(removeTarget[4]).RemixIcon, onPress: onRemix };
+    const obj2 = { kind: "action", key: "remix", label: intl2.string(require("module_3868")["276ll6"]), IconComponent: tmp2(removeTarget[4]).RemixIcon, onPress: onRemix };
     intl2 = tmp2(tmp3[1]).intl;
     push(obj2);
   }

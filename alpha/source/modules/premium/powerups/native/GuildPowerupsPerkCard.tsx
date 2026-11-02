@@ -1,10 +1,10 @@
-// Module ID: 14130
-// Function ID: 14131
+// Module ID: 14145
+// Function ID: 14146
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 5014, 575, 5253, 5021, 7149, 14127, 14082, 5587, 5624, 14083, 1187, 1113, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5253, 5021, 7149, 14142, 14097, 5587, 5624, 14098, 1187, 1113, 2]
 // Exports: default
 
-// Module 14130 (GuildPowerupsPerkCard)
+// Module 14145 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import shared from "shared" /* 5021 */;
 import useThemeDefault from "useTheme" /* 5253 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14082 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14127 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14097 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14142 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -111,7 +111,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   items3[1] = React3(Text2, { variant: str3, children: description });
   items4 = [hasOwnProperty(View, obj8), ];
   const obj10 = { status };
-  const GuildPowerupsCardFooter = tmp6(14083).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(14098).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = React3(GuildPowerupsCardFooter, obj10);
   items2[1] = hasOwnProperty(View, obj7);

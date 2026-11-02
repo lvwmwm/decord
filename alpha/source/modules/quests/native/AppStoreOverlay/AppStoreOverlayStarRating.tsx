@@ -1,10 +1,10 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14670
+// Function ID: 14671
 // Name: AppStoreOverlayStarRating
 // Dependencies: [19, 17, 21, 5014, 575, 10061, 10063, 2]
 // Exports: default
 
-// Module 14656 (AppStoreOverlayStarRating)
+// Module 14670 (AppStoreOverlayStarRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import StarOutlineIcon2 from "StarOutlineIcon" /* 10061 */;

@@ -1,10 +1,10 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 13747
+// Function ID: 13748
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1993, 1072, 21, 5014, 5028, 13733, 5095, 504, 1391, 5254, 7300, 1409, 2]
+// Dependencies: [32, 19, 1993, 1072, 21, 5014, 5028, 13748, 5095, 504, 1391, 5254, 7300, 1409, 2]
 // Exports: default
 
-// Module 13732 (CustomTypingIndicatorAnimatedEmoji)
+// Module 13747 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import user from "user" /* 1391 */;

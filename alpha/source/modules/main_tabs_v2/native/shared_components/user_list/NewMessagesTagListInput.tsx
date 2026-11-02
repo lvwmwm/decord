@@ -1,9 +1,9 @@
-// Module ID: 13902
-// Function ID: 13903
+// Module ID: 13917
+// Function ID: 13918
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1383, 21, 5014, 575, 1375, 1379, 10730, 9062, 6980, 1113, 13903, 11488, 5624, 5023, 2]
+// Dependencies: [19, 17, 1383, 21, 5014, 575, 1375, 1379, 10730, 9062, 6980, 1113, 13918, 11489, 5624, 5023, 2]
 
-// Module 13902 (NewMessagesTagListInput)
+// Module 13917 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

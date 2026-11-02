@@ -1,10 +1,10 @@
-// Module ID: 12493
-// Function ID: 12494
+// Module ID: 12152
+// Function ID: 12153
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4944, 4956, 5069, 1383, 6844, 504, 7419, 12494, 5652, 6041, 2]
+// Dependencies: [19, 4944, 4956, 5069, 1383, 6844, 504, 7419, 12153, 5652, 6041, 2]
 // Exports: conjureSettingPickedIds, default, useConjureSettingsGuildId, withPickCap, withSavedPicks
 
-// Module 12493 (useConjureSettingPickerOptions)
+// Module 12152 (useConjureSettingPickerOptions)
 import ConjureUtils from "ConjureUtils" /* 7419 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4944 */;
@@ -47,8 +47,8 @@ export default function useConjureSettingPickerOptions(arg0, type) {
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(12494).useConjureGuildMemberUsers;
-  tmp(12494);
+  const useConjureGuildMemberUsers = tmp(12153).useConjureGuildMemberUsers;
+  tmp(12153);
   if ("user" === type.type) {
     tmp8 = arg0;
   }

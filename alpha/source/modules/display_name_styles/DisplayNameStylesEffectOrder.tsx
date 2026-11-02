@@ -1,10 +1,10 @@
-// Module ID: 17317
-// Function ID: 17318
+// Module ID: 17330
+// Function ID: 17331
 // Name: DisplayNameStylesEffectOrder
 // Dependencies: [1401, 2]
 // Exports: useVisibleEffectOrder
 
-// Module 17317 (DisplayNameStylesEffectOrder)
+// Module 17330 (DisplayNameStylesEffectOrder)
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12573
-// Function ID: 12574
+// Module ID: 12576
+// Function ID: 12577
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 4885, 12438, 504, 1113, 3868, 2]
+// Dependencies: [32, 19, 4885, 12097, 504, 1113, 3868, 2]
 // Exports: default
 
-// Module 12573 (useConjureIncompleteAppNotice)
+// Module 12576 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
@@ -24,7 +24,7 @@ export default function useConjureIncompleteAppNotice(arg0) {
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(12438)(arg0);
+  const tmp3 = guildId(12097)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;
@@ -70,9 +70,9 @@ export default function useConjureIncompleteAppNotice(arg0) {
       } else {
         Lm7IRC = tmp(3868).Lm7IRC;
       }
-      let str2 = stateFromStores;
+      let str = stateFromStores;
       if (stateFromStores == null) {
-        str2 = "";
+        str = "";
       }
       const obj2 = {
         message: format(Lm7IRC, obj3),
@@ -81,7 +81,7 @@ export default function useConjureIncompleteAppNotice(arg0) {
             }
       };
       tmp10 = obj2;
-      obj3 = { server: str2 };
+      obj3 = { server: str };
     }
   }
   return tmp10;

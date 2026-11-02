@@ -1,9 +1,9 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16274
+// Function ID: 16275
 // Name: AccessibilityCallManager
 // Dependencies: [502, 4863, 4956, 1383, 1375, 4839, 5652, 5021, 1113, 1996, 572, 2]
 
-// Module 16270 (AccessibilityCallManager)
+// Module 16274 (AccessibilityCallManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;

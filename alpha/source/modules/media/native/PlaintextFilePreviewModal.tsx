@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11616
+// Function ID: 11617
 // Name: PlaintextFilePreviewModal
-// Dependencies: [32, 19, 17, 1083, 21, 5014, 575, 6744, 11614, 8711, 11616, 5709, 11618, 5624, 1113, 6953, 7303, 6998, 9874, 7558, 9756, 11481, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5014, 575, 6744, 11615, 8711, 11617, 5709, 11619, 5624, 1113, 6953, 7303, 6998, 9874, 7558, 9756, 11482, 2]
 // Exports: default
 
-// Module 11615 (PlaintextFilePreviewModal)
+// Module 11616 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5624 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
 import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11614 */;
-import useDownloadedFile from "useDownloadedFile" /* 11618 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11615 */;
+import useDownloadedFile from "useDownloadedFile" /* 11619 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -163,5 +163,5 @@ export default function PlaintextFilePreviewModal(url) {
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(11481).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(11482).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
 };

@@ -1,15 +1,15 @@
-// Module ID: 11352
-// Function ID: 11353
+// Module ID: 11353
+// Function ID: 11354
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1082, 21, 5014, 575, 11353, 5624, 1113, 6980, 11354, 2]
+// Dependencies: [19, 17, 1082, 21, 5014, 575, 11354, 5624, 1113, 6980, 11355, 2]
 // Exports: default
 
-// Module 11352 (UnreadSettingNotice)
+// Module 11353 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11353 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11354 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11354 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11355 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;

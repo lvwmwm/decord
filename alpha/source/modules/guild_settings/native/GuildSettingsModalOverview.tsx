@@ -1,10 +1,10 @@
-// Module ID: 19655
-// Function ID: 19656
+// Module ID: 19662
+// Function ID: 19663
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 4881, 4863, 4944, 5242, 4946, 4956, 1383, 9075, 1072, 21, 5014, 575, 1113, 5080, 5711, 6998, 7558, 9074, 11199, 19656, 1396, 7363, 5959, 6030, 7082, 5652, 7060, 6975, 8449, 19420, 7403, 7369, 7058, 7061, 2061, 19660, 1409, 10124, 1187, 7253, 6924, 8177, 6027, 5606, 1497, 504, 2]
+// Dependencies: [19, 4881, 4863, 4944, 5242, 4946, 4956, 1383, 9075, 1072, 21, 5014, 575, 1113, 5080, 5711, 6998, 7558, 9074, 11199, 19663, 1396, 7363, 5959, 6030, 7082, 5652, 7060, 6975, 8449, 19427, 7403, 7369, 7058, 7061, 2061, 19667, 1409, 10124, 1187, 7253, 6924, 8177, 6027, 5606, 1497, 504, 2]
 // Exports: default
 
-// Module 19655 (GuildSettingsModalOverview)
+// Module 19662 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -33,7 +33,7 @@ import _mod8177 from "module_8177" /* 8177 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10124 */;
 import openChannelPickerDefault from "openChannelPicker" /* 11199 */;
-import AssetChooserDefault from "AssetChooser" /* 19660 */;
+import AssetChooserDefault from "AssetChooser" /* 19667 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildChannelStore from "GuildChannelStore" /* 4944 */;
@@ -478,7 +478,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1396);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(19420);
+    const tmpResult15 = tmp(19427);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1396);

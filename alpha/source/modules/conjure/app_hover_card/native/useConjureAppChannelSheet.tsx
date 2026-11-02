@@ -1,10 +1,10 @@
-// Module ID: 14401
-// Function ID: 14402
+// Module ID: 14415
+// Function ID: 14416
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 17, 6844, 21, 5014, 575, 11340, 5717, 1409, 7420, 504, 14402, 1113, 3868, 5068, 2]
+// Dependencies: [19, 17, 6844, 21, 5014, 575, 11340, 5717, 1409, 7420, 504, 14416, 1113, 3868, 5068, 2]
 // Exports: default
 
-// Module 14401 (useConjureAppChannelSheet)
+// Module 14415 (useConjureAppChannelSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

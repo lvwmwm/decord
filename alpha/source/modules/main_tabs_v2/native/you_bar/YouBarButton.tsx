@@ -1,14 +1,14 @@
-// Module ID: 18452
-// Function ID: 18453
+// Module ID: 18465
+// Function ID: 18466
 // Name: YouBarButton
-// Dependencies: [19, 17, 17062, 21, 5014, 575, 9509, 9818, 8028, 2]
+// Dependencies: [19, 17, 17075, 21, 5014, 575, 9509, 9818, 8028, 2]
 
-// Module 18452 (YouBarButton)
+// Module 18465 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import IconButton2 from "IconButton" /* 8028 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarConstants from "YouBarConstants" /* 17075 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ class YouBarButtonIcon {
     let items1 = [size2, badgeSize, num4, num3];
     const items2 = [memo, hasBadge];
     const memo1 = obj2.useMemo(() => {
-      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "cix", bottom: "default", padding: "isArray", minWidth: "onPress" };
+      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "children", bottom: "enumerable", padding: "x", minWidth: "y" };
       return rect;
     }, items1);
     const obj4 = { style: { position: "relative", height: tmp, width: tmp }, children: items3 };

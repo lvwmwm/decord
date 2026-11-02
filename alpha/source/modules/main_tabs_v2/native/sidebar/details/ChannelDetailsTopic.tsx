@@ -1,9 +1,9 @@
-// Module ID: 18809
-// Function ID: 18810
+// Module ID: 18816
+// Function ID: 18817
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1383, 10137, 1072, 21, 1375, 5014, 18810, 5095, 5637, 5754, 6980, 5624, 1113, 5587, 504, 5068, 6046, 2]
+// Dependencies: [32, 19, 17, 1383, 10137, 1072, 21, 1375, 5014, 18817, 5095, 5637, 5754, 6980, 5624, 1113, 5587, 504, 5068, 6046, 2]
 
-// Module 18809 (ChannelDetailsTopic)
+// Module 18816 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5068 */;
 import spring from "spring" /* 5637 */;

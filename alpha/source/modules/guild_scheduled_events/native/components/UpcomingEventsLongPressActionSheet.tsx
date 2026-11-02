@@ -1,10 +1,10 @@
-// Module ID: 13918
-// Function ID: 13919
+// Module ID: 13933
+// Function ID: 13934
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 4885, 6775, 6776, 21, 5014, 504, 7366, 7321, 6957, 1113, 8177, 1187, 13919, 7279, 5258, 13920, 13921, 7288, 7283, 2]
+// Dependencies: [19, 17, 4885, 6775, 6776, 21, 5014, 504, 7366, 7321, 6957, 1113, 8177, 1187, 13934, 7279, 5258, 13935, 13936, 7288, 7283, 2]
 // Exports: default
 
-// Module 13918 (UpcomingEventsLongPressActionSheet)
+// Module 13933 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import ReadStateConstants from "ReadStateConstants" /* 6776 */;
@@ -67,7 +67,7 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
     }
   };
   const FormRow = guildId(8177).FormRow;
-  obj7 = { source: stateFromStores1(13919) };
+  obj7 = { source: stateFromStores1(13934) };
   Icon = guildId(1187).Icon;
   obj8 = { text: intl2.string(guildId(1113).t.e6RscS) };
   FormLabel = guildId(8177).FormLabel;
@@ -85,7 +85,7 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 13920 : 13921) };
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 13935 : 13936) };
   Icon2 = guildId(1187).Icon;
   FormLabel2 = tmp2(8177).FormLabel;
   const intl3 = tmp2(1113).intl;

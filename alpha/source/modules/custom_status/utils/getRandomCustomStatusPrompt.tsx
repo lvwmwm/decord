@@ -1,11 +1,11 @@
-// Module ID: 11399
-// Function ID: 11400
+// Module ID: 11400
+// Function ID: 11401
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [11398, 1113, 2]
+// Dependencies: [11399, 1113, 2]
 // Exports: default
 
-// Module 11399 (getRandomCustomStatusPrompt)
-import Constants from "Constants" /* 11398 */;
+// Module 11400 (getRandomCustomStatusPrompt)
+import Constants from "Constants" /* 11399 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;

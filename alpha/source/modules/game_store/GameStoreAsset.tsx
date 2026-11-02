@@ -1,10 +1,10 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16342
+// Function ID: 16343
 // Name: GameStoreAsset
 // Dependencies: [2]
 // Exports: transformStoreAssetFromServer
 
-// Module 16338 (GameStoreAsset)
+// Module 16342 (GameStoreAsset)
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

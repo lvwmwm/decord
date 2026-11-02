@@ -1,10 +1,10 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17742
+// Function ID: 17743
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6837, 4867, 4957, 4863, 4885, 4917, 1383, 1072, 21, 5014, 575, 5712, 11022, 11024, 6561, 11, 1625, 1187, 7060, 6975, 17571, 6984, 2]
+// Dependencies: [19, 17, 6837, 4867, 4957, 4863, 4885, 4917, 1383, 1072, 21, 5014, 575, 5712, 11022, 11024, 6561, 11, 1625, 1187, 7060, 6975, 17584, 6984, 2]
 // Exports: default
 
-// Module 17729 (DevToolsInAppNotificationTestingScreen)
+// Module 17742 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,10 +1,10 @@
-// Module ID: 17853
-// Function ID: 17854
+// Module ID: 17866
+// Function ID: 17867
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7720, 21, 5014, 9459, 9462, 17852, 12, 2]
+// Dependencies: [19, 17, 7720, 21, 5014, 9459, 9462, 17865, 12, 2]
 // Exports: default
 
-// Module 17853 (CollectiblesShopCardsGrid)
+// Module 17866 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9459 */;
@@ -43,10 +43,13 @@ export default function CollectiblesShopCardsGrid(products) {
   let closure_4;
   let disableBundleStaticBackground;
   let muteBundleStaticBackground;
+  let onLayout;
   let onScroll;
   let paddingBottom;
   let paddingTop;
   let preferVCPrice;
+  let ref;
+  let rowWidth;
   let scrollEnabled;
   products = products.products;
   ({ category: importDefault, preferVCPrice: dependencyMap, scrollEnabled } = products);
@@ -57,12 +60,12 @@ export default function CollectiblesShopCardsGrid(products) {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(17852);
+  let obj = products(17865);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;
   const items = [products, columns];
-  const rowWidth = cardLayout.rowWidth;
+  ({ rowWidth, ref, onLayout } = cardLayout);
   const memo = react.useMemo(() => {
     const obj = _modDef12;
     return obj.chunk(products, columns);
@@ -73,6 +76,8 @@ export default function CollectiblesShopCardsGrid(products) {
     scrollEnabled,
     showsVerticalScrollIndicator: false,
     onScroll,
+    ref,
+    onLayout,
     contentContainerStyle: { gap: products(9459).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom, width: rowWidth, alignSelf: "center" },
     children: memo.map((arr, index) => {
       let closure_0 = index;

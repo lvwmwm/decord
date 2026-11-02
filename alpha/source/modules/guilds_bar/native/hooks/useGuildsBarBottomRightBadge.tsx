@@ -1,13 +1,13 @@
-// Module ID: 18360
-// Function ID: 18361
+// Module ID: 18373
+// Function ID: 18374
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 5014, 1187, 5596, 575, 18361, 18362, 18366, 2]
+// Dependencies: [32, 19, 21, 5014, 1187, 5596, 575, 18374, 18375, 18379, 2]
 // Exports: default
 
-// Module 18360 (useGuildsBarBottomRightBadge)
+// Module 18373 (useGuildsBarBottomRightBadge)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18361 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -78,7 +78,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
         items2 = [tmp5];
         return obj8;
       } else {
-        return { badge: null, cutout: "concat", cutouts: "style" };
+        return { badge: null, cutout: "Array", cutouts: "isArray" };
       }
     }
   }, items1);

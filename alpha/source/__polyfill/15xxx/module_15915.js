@@ -1,12 +1,9 @@
 // Module ID: 15915
 // Function ID: 15916
-// Dependencies: [15913]
+// Dependencies: [15914]
 
 // Module 15915
-import _mod15913 from "module_15913" /* 15913 */;
+import _mod15914 from "module_15914" /* 15914 */;
 
 
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod15913(arg1, arg0, closure_0));
-};
+export default (arg0, arg1, arg2) => _mod15914(arg1, arg0, arg2);

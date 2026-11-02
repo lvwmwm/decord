@@ -1,14 +1,14 @@
-// Module ID: 14711
-// Function ID: 14712
+// Module ID: 13010
+// Function ID: 13011
 // Name: PinUprightSlashIcon
-// Dependencies: [19, 21, 575, 5716, 14712, 2]
+// Dependencies: [19, 21, 575, 5716, 13011, 2]
 // Exports: PinUprightSlashIcon
 
-// Module 14711 (PinUprightSlashIcon)
+// Module 13010 (PinUprightSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 14712 */;
+import AssetRegistry from "AssetRegistry" /* 13011 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 15698
-// Function ID: 15699
+// Module ID: 15702
+// Function ID: 15703
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 15697, 7558, 8359, 1113, 15699, 7169, 2]
+// Dependencies: [19, 21, 15701, 7558, 8359, 1113, 15703, 7169, 2]
 // Exports: default
 
-// Module 15698 (ActivateDeviceModal)
+// Module 15702 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

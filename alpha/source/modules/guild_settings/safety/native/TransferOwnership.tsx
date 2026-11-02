@@ -1,10 +1,10 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13275
+// Function ID: 13276
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1383, 13259, 1072, 21, 5014, 575, 5596, 1497, 504, 38, 9074, 13257, 5711, 6041, 6957, 5624, 5717, 13261, 1187, 1113, 5068, 7060, 6974, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 13274, 1072, 21, 5014, 575, 5596, 1497, 504, 38, 9074, 13272, 5711, 6041, 6957, 5624, 5717, 13276, 1187, 1113, 5068, 7060, 6974, 5634, 2]
 // Exports: default
 
-// Module 13260 (TransferOwnership)
+// Module 13275 (TransferOwnership)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1383 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13259 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 13274 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -194,7 +194,7 @@ export default function TransferOwnership(guild) {
   let obj5 = { style: tmp5.background, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
   const obj6 = { style: { paddingTop: toUser(575).space.PX_16, paddingHorizontal: token }, children: null };
   const obj8 = { style: tmp5.header, children: null };
-  const obj9 = { source: toUser(13261), style: tmp5.arrow };
+  const obj9 = { source: toUser(13276), style: tmp5.arrow };
   ({ paddingTop: toUser(575).space.PX_16, paddingHorizontal: token });
   let tmp15 = toUser(5717);
   const items1 = [closure_12(tmp15, obj9), , , ];

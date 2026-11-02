@@ -1,10 +1,10 @@
-// Module ID: 14182
-// Function ID: 14183
+// Module ID: 14197
+// Function ID: 14198
 // Name: UserProfileConfirmRemoveFriend
 // Dependencies: [19, 21, 5964, 1113, 5964, 2]
 // Exports: default
 
-// Module 14182 (UserProfileConfirmRemoveFriend)
+// Module 14197 (UserProfileConfirmRemoveFriend)
 import intl5 from "intl" /* 1113 */;
 import AlertModal2 from "AlertModal" /* 5964 */;
 import react from "react" /* 19 */;

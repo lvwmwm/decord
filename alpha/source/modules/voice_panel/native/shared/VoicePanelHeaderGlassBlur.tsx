@@ -1,9 +1,9 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13830
+// Function ID: 13831
 // Name: VoicePanelHeaderGlassBlur
 // Dependencies: [19, 17, 21, 5014, 1375, 5095, 5637, 5253, 7241, 5599, 5021, 6960, 2]
 
-// Module 13815 (VoicePanelHeaderGlassBlur)
+// Module 13830 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
 import useThemeDefault from "useTheme" /* 5253 */;
 import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5599 */;

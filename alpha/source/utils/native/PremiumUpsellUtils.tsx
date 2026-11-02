@@ -1,7 +1,7 @@
 // Module ID: 9785
 // Function ID: 9786
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1383, 1072, 1385, 21, 9786, 1113, 9787, 9788, 9789, 2047, 9790, 9791, 9792, 5959, 9978, 1994, 14594, 7627, 9906, 5207, 1252, 5258, 9905, 2]
+// Dependencies: [19, 1383, 1072, 1385, 21, 9786, 1113, 9787, 9788, 9789, 2047, 9790, 9791, 9792, 5959, 9978, 1994, 14608, 7627, 9906, 5207, 1252, 5258, 9905, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
 // Module 9785 (PremiumUpsellUtils)

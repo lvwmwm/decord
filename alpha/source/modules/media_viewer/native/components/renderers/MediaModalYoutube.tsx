@@ -1,9 +1,9 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14787
+// Function ID: 14788
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 1993, 1072, 21, 8871, 6732, 8835, 8839, 14784, 1375, 2]
+// Dependencies: [32, 19, 1993, 1072, 21, 8871, 6732, 8835, 8839, 14788, 1375, 2]
 
-// Module 14783 (MediaModalYoutube)
+// Module 14787 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8835 */;
 import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8871 */;
@@ -169,7 +169,7 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
   } else {
     if (playerState === tmp(8871).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
-        return jsx(tmp7(14784), { videoId: youtubeVideoIdFromURI.videoId });
+        return jsx(tmp7(14788), { videoId: youtubeVideoIdFromURI.videoId });
       }
     }
     const tmpResult2 = tmp(1375);

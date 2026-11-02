@@ -1,10 +1,10 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16584
+// Function ID: 16585
 // Name: TinyBroncoSettingsPredicate
 // Dependencies: [6737, 6738, 2]
 // Exports: useIsTinyBroncoSettingsEnabled
 
-// Module 16571 (TinyBroncoSettingsPredicate)
+// Module 16584 (TinyBroncoSettingsPredicate)
 import TinyBroncoConstants from "TinyBroncoConstants" /* 6737 */;
 import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6738 */;
 import size from "module_2" /* 2 */;

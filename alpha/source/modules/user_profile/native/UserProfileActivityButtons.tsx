@@ -1,10 +1,10 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 14888
+// Function ID: 14889
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 4862, 4863, 6572, 5242, 4885, 11524, 4946, 4956, 4917, 6570, 5679, 1072, 8911, 21, 5014, 575, 7326, 4935, 563, 14885, 6734, 14886, 7883, 5634, 1113, 8678, 5258, 6744, 11692, 10762, 1187, 8724, 11673, 5709, 14888, 8831, 5199, 7950, 7939, 6574, 1409, 9720, 7563, 8915, 11677, 1377, 8940, 2]
+// Dependencies: [5, 19, 4862, 4863, 6572, 5242, 4885, 11525, 4946, 4956, 4917, 6570, 5679, 1072, 8911, 21, 5014, 575, 7326, 4935, 563, 14889, 6734, 14890, 7883, 5634, 1113, 8678, 5258, 6744, 11693, 10762, 1187, 8724, 11674, 5709, 14892, 8831, 5199, 7950, 7939, 6574, 1409, 9720, 7563, 8915, 11678, 1377, 8940, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 14884 (UserProfileActivityButtons)
+// Module 14888 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -21,10 +21,10 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7939 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7950 */;
 import isStreamingDefault from "isStreaming" /* 8831 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9720 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11692 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 14885 */;
-import getActivityJoinability from "getActivityJoinability" /* 14886 */;
-import getStreamURLDefault from "getStreamURL" /* 14888 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11693 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 14889 */;
+import getActivityJoinability from "getActivityJoinability" /* 14890 */;
+import getStreamURLDefault from "getStreamURL" /* 14892 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
@@ -32,7 +32,7 @@ import ChannelStore from "ChannelStore" /* 4863 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
 import GuildStore from "GuildStore" /* 4885 */;
-import LocalActivityStore from "LocalActivityStore" /* 11524 */;
+import LocalActivityStore from "LocalActivityStore" /* 11525 */;
 import PermissionStore from "PermissionStore" /* 4946 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;

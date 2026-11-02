@@ -1,16 +1,16 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19219
+// Function ID: 19220
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 6843, 21, 5095, 8992, 5014, 575, 19213, 19211, 9233, 6960, 11222, 504, 5254, 2]
+// Dependencies: [19, 6843, 21, 5095, 8992, 5014, 575, 19220, 19218, 9233, 6960, 11222, 504, 5254, 2]
 
-// Module 19212 (VoicePanelHeaderUserState)
+// Module 19219 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import timing from "timing" /* 5254 */;
 import NativeViewDefault from "NativeView" /* 6960 */;
 import native from "native" /* 8992 */;
-import useStableParticipant from "useStableParticipant" /* 19211 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19213 */;
+import useStableParticipant from "useStableParticipant" /* 19218 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19220 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
@@ -48,7 +48,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(19213).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(19220).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
@@ -98,7 +98,7 @@ const memoResult = react.memo(function VoicePanelHeaderUserState(isHeaderHidden)
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(19211)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(19218)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(5095);
   const fn = function h() {
     const withTiming = timing.withTiming;

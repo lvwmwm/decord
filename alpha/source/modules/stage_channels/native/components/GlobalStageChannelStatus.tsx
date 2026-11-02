@@ -1,10 +1,10 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 11865
+// Function ID: 11866
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5259, 4868, 1072, 21, 1113, 5014, 575, 5652, 504, 5593, 10914, 8175, 11854, 6758, 7955, 6729, 7945, 7941, 1187, 5624, 5635, 5634, 11856, 11192, 5253, 5036, 11212, 8603, 2]
+// Dependencies: [5, 32, 19, 17, 5259, 4868, 1072, 21, 1113, 5014, 575, 5652, 504, 5593, 10914, 8175, 11855, 6758, 7955, 6729, 7945, 7941, 1187, 5624, 5635, 5634, 11857, 11192, 5253, 5036, 11212, 8603, 2]
 // Exports: default
 
-// Module 11864 (GlobalStageChannelStatus)
+// Module 11865 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import useChannelNameDefault from "useChannelName" /* 5652 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
 import PushNotificationDefault from "PushNotification" /* 10914 */;
 import StatusBarDefault from "StatusBar" /* 11212 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11856 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -189,7 +189,7 @@ class StageChannelRaiseHandAck {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(11854);
+    channel(11855);
     if (channel != null) {
       let id = channel.id;
     }

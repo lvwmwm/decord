@@ -1,10 +1,10 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17400
+// Function ID: 17401
 // Name: FloatingApplyButton
 // Dependencies: [19, 5015, 1621, 21, 504, 1625, 5095, 575, 5637, 5260, 5634, 2]
 // Exports: default
 
-// Module 17387 (FloatingApplyButton)
+// Module 17400 (FloatingApplyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;

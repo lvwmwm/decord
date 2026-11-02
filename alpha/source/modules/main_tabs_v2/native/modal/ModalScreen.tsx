@@ -1,10 +1,10 @@
-// Module ID: 18953
-// Function ID: 18954
+// Module ID: 18960
+// Function ID: 18961
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1072, 21, 5014, 575, 6744, 6028, 1260, 7654, 1625, 7112, 4971, 18954, 16421, 1375, 12221, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5014, 575, 6744, 6028, 1260, 7654, 1625, 7112, 4971, 18961, 16433, 1375, 12361, 2]
 // Exports: default
 
-// Module 18953 (modal/ModalScreen)
+// Module 18960 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -101,7 +101,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const tmp7Result3 = modal(18954);
+    const tmp7Result3 = modal(18961);
     isIpadOSResult = tmp7Result3.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -120,13 +120,13 @@ export default function Modal(route) {
   } else {
     pop = NOOP;
   }
-  SafeAreaProvider = tmp7(16421).SafeAreaProvider;
+  SafeAreaProvider = tmp7(16433).SafeAreaProvider;
   const createElement = obj2.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
   const tmp7Result4 = modal(1375);
-  items2[1] = tmp7Result4.isIOS() && closure_9(modal(12221).PortalKeyboardRenderer, { portal: false });
-  tmp7Result4.isIOS() && closure_9(modal(12221).PortalKeyboardRenderer, { portal: false });
+  items2[1] = tmp7Result4.isIOS() && closure_9(modal(12361).PortalKeyboardRenderer, { portal: false });
+  tmp7Result4.isIOS() && closure_9(modal(12361).PortalKeyboardRenderer, { portal: false });
   return closure_9(tmp16, obj4);
 };

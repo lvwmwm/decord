@@ -1,10 +1,10 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14658
+// Function ID: 14659
 // Name: DomainVerifyModal
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 1497, 1282, 7292, 5624, 1113, 7081, 14645, 5634, 6744, 6998, 7169, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 1497, 1282, 7292, 5624, 1113, 7081, 14659, 5634, 6744, 6998, 7169, 2]
 // Exports: default
 
-// Module 14644 (DomainVerifyModal)
+// Module 14658 (DomainVerifyModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import useNavigation from "useNavigation" /* 1497 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import DomainVerifyUtils from "DomainVerifyUtils" /* 14645 */;
+import DomainVerifyUtils from "DomainVerifyUtils" /* 14659 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,17 +1,17 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 17886
+// Function ID: 17887
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 5014, 1497, 15344, 9812, 9816, 1113, 5717, 2]
+// Dependencies: [19, 17, 21, 5014, 1497, 15348, 9812, 9816, 1113, 5717, 2]
 // Exports: default
 
-// Module 17873 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 17886 (CollectiblesShopViewAllCategoryItemsHeader)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1497 */;
 import FastImageDefault from "FastImage" /* 5717 */;
 import HeaderShared from "HeaderShared" /* 9812 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9816 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 15344 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 15348 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;

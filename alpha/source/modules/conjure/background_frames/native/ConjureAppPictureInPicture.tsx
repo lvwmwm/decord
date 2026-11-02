@@ -1,9 +1,9 @@
-// Module ID: 19115
-// Function ID: 19116
+// Module ID: 19121
+// Function ID: 19122
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 6846, 4885, 1072, 18993, 6847, 11224, 21, 4971, 5014, 575, 9337, 504, 6957, 5624, 14539, 11949, 8673, 7330, 11824, 19116, 19113, 5095, 18662, 14382, 5260, 5303, 5254, 5637, 5080, 1113, 3868, 12106, 12110, 2]
+// Dependencies: [19, 17, 6846, 4885, 1072, 19000, 6847, 11224, 21, 4971, 5014, 575, 19120, 9337, 504, 6957, 5624, 14553, 11950, 8673, 7330, 11825, 19122, 16371, 5095, 14397, 5260, 5303, 5254, 5637, 1113, 3868, 5080, 12250, 12254, 2]
 
-// Module 19115 (ConjureAppPictureInPicture)
+// Module 19121 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,11 +13,10 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import spring from "spring" /* 5637 */;
 import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9337 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
-import conjureFrameSound from "conjureFrameSound" /* 14539 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18662 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18993 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19113 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19116 */;
+import conjureFrameSound from "conjureFrameSound" /* 14553 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19000 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19120 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19122 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6846 */;
 import GuildStore from "GuildStore" /* 4885 */;
@@ -34,9 +33,12 @@ let FrameLayoutModes;
 let c10;
 let metroImportAll;
 let obj2;
+let obj3;
+let obj4;
 let rect;
 let rect1;
 let rect2;
+let size;
 let tmp2;
 let unpackModuleId;
 const GuildIconDefault = tmp2(6957);
@@ -73,7 +75,7 @@ function SoundBadge(frame) {
   if (obj.showsFrameSoundToggle(frame)) {
     let VoiceNormalIcon;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp2(11949).VoiceXIcon;
+      VoiceNormalIcon = tmp2(11950).VoiceXIcon;
     } else {
       VoiceNormalIcon = tmp2(8673).VoiceNormalIcon;
     }
@@ -95,38 +97,49 @@ DeviceUtils = DeviceUtils.getRamSize();
 if (DeviceUtils == null) {
   DeviceUtils = Infinity;
 }
-let closure_12 = DeviceUtils < 4;
-let closure_13 = { mass: 0.25, damping: 40, stiffness: 300, overshootClamping: true };
-let closure_14 = { mass: 0.4, damping: 22, stiffness: 220 };
+let tmp4 = DeviceUtils < 4;
+let closure_12 = tmp4;
+let FOLLOW_SPRING = { mass: 0.25, damping: 40, stiffness: 300, overshootClamping: true };
+const styles = { mass: 0.4, damping: 22, stiffness: 220 };
 let closure_15 = { layoutMode: FrameLayoutModes.PIP, portraitSafeAreasConfig: DEFAULT_PORTRAIT_LETTERBOX_CONFIG };
 let createStyles = createStyles_mod;
-let obj = { window: rect, mask: obj2, card: rect1, soundBadge: rect2 };
+let obj = { window: rect, content: { flex: 1 }, mask: obj2, interactiveMask: obj3, handle: obj4, grip: size, card: rect1, soundBadge: rect2 };
 rect = { position: "absolute", top: 0, left: 0, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 createStyles = createStyles.createStyles;
-const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
+let merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
 obj2 = { flex: 1, overflow: "hidden", borderRadius: nativeDefault.radii.lg };
+obj3 = { borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none };
+obj4 = { height: conjureAppPictureInPictureLayout.INTERACTIVE_HANDLE_HEIGHT, alignItems: "center", justifyContent: "center", borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+size = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.ICON_MUTED };
 rect1 = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 rect2 = { position: "absolute", top: nativeDefault.space.PX_6, right: nativeDefault.space.PX_6, padding: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST };
 let closure_16 = createStyles(obj);
-let closure_19 = { code: "function ConjureAppPictureInPictureTsx1(specs){const{getPictureInPictureBounds,windowWidth,windowHeight,safeArea,size}=this.__closure;return getPictureInPictureBounds({windowWidth:windowWidth,windowHeight:windowHeight,safeArea:safeArea,size:size,topAvoidance:specs.top,bottomAvoidance:specs.bottom});}" };
+let closure_19 = { code: "function ConjureAppPictureInPictureTsx1(specs){const{getPictureInPictureBounds,windowWidth,windowHeight,safeArea,windowSize}=this.__closure;return getPictureInPictureBounds({windowWidth:windowWidth,windowHeight:windowHeight,safeArea:safeArea,size:windowSize,topAvoidance:specs.top,bottomAvoidance:specs.bottom});}" };
 let closure_20 = { code: "function ConjureAppPictureInPictureTsx2(){const{dragging,overCloseTarget,closeTargetShown,closeTargetHovered}=this.__closure;dragging.set(false);overCloseTarget.set(false);closeTargetShown.set(false);closeTargetHovered.set(false);}" };
 let closure_21 = { code: "function ConjureAppPictureInPictureTsx3(event){const{overCloseTarget,closing,runOnJS,closeAfterShrink,position,getSnappedPosition,getBounds,avoidance}=this.__closure;if(overCloseTarget.get()){closing.set(true);runOnJS(closeAfterShrink)();return;}position.set(getSnappedPosition(position.get(),{x:event.velocityX,y:event.velocityY},getBounds(avoidance.get())));}" };
 let closure_22 = { code: "function ConjureAppPictureInPictureTsx4(event){const{dragStart,position,isOverCloseTarget,closeTargetCenter,overCloseTarget,closeTargetHovered,runOnJS,hapticOverCloseTarget}=this.__closure;const start=dragStart.get();position.set({x:start.x+event.translationX,y:start.y+event.translationY});const over=isOverCloseTarget({x:event.absoluteX,y:event.absoluteY},closeTargetCenter);if(over!==overCloseTarget.get()){overCloseTarget.set(over);closeTargetHovered.set(over);if(over)runOnJS(hapticOverCloseTarget)();}}" };
 let closure_23 = { code: "function ConjureAppPictureInPictureTsx5(){const{moved,dragStart,clampToBounds,position,getBounds,avoidance,dragging,closeTargetShown}=this.__closure;moved.set(true);dragStart.set(clampToBounds(position.get(),getBounds(avoidance.get())));dragging.set(true);closeTargetShown.set(true);}" };
 let closure_24 = { code: "function ConjureAppPictureInPictureTsx6(_event,success){const{open}=this.__closure;if(success)open();}" };
-const __initData = { code: "function ConjureAppPictureInPictureTsx7(){const{dragging,overCloseTarget,closing,position,clampToBounds,getBounds,avoidance,DRAGGING_SCALE,closeTargetCenter,size,OVER_CLOSE_TARGET_SCALE,FOLLOW_SPRING,SETTLE_SPRING,withTiming,CLOSE_ANIMATION_MS,withSpring}=this.__closure;const isDragging=dragging.get();const onCloseTarget=overCloseTarget.get()||closing.get();let{x:x,y:y}=isDragging?position.get():clampToBounds(position.get(),getBounds(avoidance.get()));let scale=isDragging?DRAGGING_SCALE:1;if(onCloseTarget){x=closeTargetCenter.x-size.width/2;y=closeTargetCenter.y-size.height/2;scale=closing.get()?0:OVER_CLOSE_TARGET_SCALE;}const spring=isDragging&&!onCloseTarget?FOLLOW_SPRING:SETTLE_SPRING;return{width:size.width,height:size.height,opacity:closing.get()?withTiming(0,{duration:CLOSE_ANIMATION_MS}):1,transform:[{translateX:withSpring(x,spring)},{translateY:withSpring(y,spring)},{scale:withSpring(scale,spring)}]};}" };
+let closure_25 = { code: "function ConjureAppPictureInPictureTsx7(){const{dragging,overCloseTarget,closing,position,clampToBounds,getBounds,avoidance,DRAGGING_SCALE,closeTargetCenter,windowSize,OVER_CLOSE_TARGET_SCALE,FOLLOW_SPRING,SETTLE_SPRING,withTiming,CLOSE_ANIMATION_MS,withSpring}=this.__closure;const isDragging=dragging.get();const onCloseTarget=overCloseTarget.get()||closing.get();let{x:x,y:y}=isDragging?position.get():clampToBounds(position.get(),getBounds(avoidance.get()));let scale=isDragging?DRAGGING_SCALE:1;if(onCloseTarget){x=closeTargetCenter.x-windowSize.width/2;y=closeTargetCenter.y-windowSize.height/2;scale=closing.get()?0:OVER_CLOSE_TARGET_SCALE;}const spring=isDragging&&!onCloseTarget?FOLLOW_SPRING:SETTLE_SPRING;return{width:windowSize.width,height:windowSize.height,opacity:closing.get()?withTiming(0,{duration:CLOSE_ANIMATION_MS}):1,transform:[{translateX:withSpring(x,spring)},{translateY:withSpring(y,spring)},{scale:withSpring(scale,spring)}]};}" };
 const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
-  let GestureDetector;
+  let GestureDetector2;
+  let c13;
   let callback;
+  let handleGesture;
   let intl;
   let items10;
   let items11;
-  let items9;
+  let items13;
+  let items14;
+  let obj11;
+  let obj12;
   let obj5;
-  let obj6;
   let obj7;
+  let obj8;
+  let str2;
+  let windowGesture;
   frameId = frameId.frameId;
-  const index = frameId.index;
+  const stackOffset = frameId.stackOffset;
   size = frameId.size;
   const windowWidth = frameId.windowWidth;
   const windowHeight = frameId.windowHeight;
@@ -137,7 +150,9 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
   const closeTargetHovered = frameId.closeTargetHovered;
   let str;
   closure_12 = undefined;
-  let FOLLOW_SPRING;
+  FOLLOW_SPRING = undefined;
+  let memo;
+  let presentation;
   let sharedValue;
   let sharedValue1;
   let sharedValue2;
@@ -148,15 +163,15 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
   let callback2;
   let callback3;
   let callback4;
-  let memo1;
-  let tmp = sharedValue2();
+  let memo2;
+  let tmp = sharedValue();
   let tmp2 = frameId;
   let tmp3 = size;
-  let obj = frameId(size[13]);
+  let obj = frameId(size[14]);
   let items = [safeArea];
   const items1 = [frameId];
   const stateFromStores = obj.useStateFromStores(items, () => metroImportAll(FramesStore.getFrame(frameId)), items1);
-  const tmp5 = frameId(size[19]);
+  const tmp5 = frameId(size[20]);
   let applicationId;
   const useGetOrFetchApplication = tmp5.useGetOrFetchApplication;
   if (stateFromStores != null) {
@@ -170,72 +185,83 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
   if (str == null) {
     str = "";
   }
-  let tmp2Result = tmp2(tmp3[20]);
-  const tmp8 = 2 === tmp2Result.useEmbeddedAppShimVersion(tmp2(tmp3[21]).CONJURE_APP_PICTURE_IN_PICTURE_LOCATION);
+  let tmp2Result = tmp2(tmp3[21]);
+  const tmp8 = 2 === tmp2Result.useEmbeddedAppShimVersion(tmp2(tmp3[22]).CONJURE_APP_PICTURE_IN_PICTURE_LOCATION);
   closure_12 = tmp8;
+  const tmp2Result10 = tmp2(tmp3[23]);
+  let result = tmp2Result10.isConjureAppPictureInPictureInteractive(stateFromStores, closure_12);
+  FOLLOW_SPRING = result;
+  const items2 = [result, size];
+  memo = windowWidth.useMemo(() => {
+    const obj = conjureAppPictureInPictureLayout;
+    return obj.getPictureInPictureWindowSize(size, c13);
+  }, items2);
   let fn = function k(top) {
     const obj = conjureAppPictureInPictureLayout;
-    const obj2 = { windowWidth, windowHeight, safeArea, size, topAvoidance: top.top, bottomAvoidance: top.bottom };
+    const obj2 = { windowWidth, windowHeight, safeArea, size: memo, topAvoidance: top.top, bottomAvoidance: top.bottom };
     return obj.getPictureInPictureBounds(obj2);
   };
-  let obj2 = { getPictureInPictureBounds: tmp2(tmp3[22]).getPictureInPictureBounds, windowWidth, windowHeight, safeArea, size };
+  let obj2 = { getPictureInPictureBounds: tmp2(tmp3[12]).getPictureInPictureBounds, windowWidth, windowHeight, safeArea, windowSize: memo };
   fn.__closure = obj2;
-  fn.__workletHash = 15664785095562;
-  fn.__initData = sharedValue5;
-  const items2 = [windowWidth, windowHeight, safeArea, size];
-  FOLLOW_SPRING = windowWidth.useCallback(fn, items2);
-  const useSharedValue = tmp2(tmp3[23]).useSharedValue;
-  tmp2(tmp3[23]);
-  const tmp2Result10 = tmp2(tmp3[22]);
-  sharedValue = useSharedValue(tmp2Result10.getStackedPosition(index, size, FOLLOW_SPRING(avoidance.get())));
-  const tmp2Result11 = tmp2(tmp3[23]);
-  sharedValue1 = tmp2Result11.useSharedValue(sharedValue.get());
-  const tmp2Result12 = tmp2(tmp3[23]);
-  sharedValue2 = tmp2Result12.useSharedValue(false);
-  const items3 = [avoidance, FOLLOW_SPRING, index, sharedValue2, sharedValue, size];
+  fn.__workletHash = 8790137180106;
+  fn.__initData = sharedValue3;
+  const items3 = [windowWidth, windowHeight, safeArea, memo];
+  presentation = windowWidth.useCallback(fn, items3);
+  const useSharedValue = tmp2(tmp3[24]).useSharedValue;
+  tmp2(tmp3[24]);
+  const tmp2Result12 = tmp2(tmp3[12]);
+  sharedValue = useSharedValue(tmp2Result12.getStackedPosition(stackOffset, presentation(avoidance.get())));
+  const tmp2Result13 = tmp2(tmp3[24]);
+  sharedValue1 = tmp2Result13.useSharedValue(sharedValue.get());
+  const tmp2Result14 = tmp2(tmp3[24]);
+  sharedValue2 = tmp2Result14.useSharedValue(false);
+  const items4 = [avoidance, presentation, stackOffset, sharedValue2, sharedValue];
   const effect = windowWidth.useEffect(() => {
     if (!sharedValue2.get()) {
       set = sharedValue.set;
       const obj = conjureAppPictureInPictureLayout;
-      const result = set(obj.getStackedPosition(index, size, callback(avoidance.get())));
+      const result = set(obj.getStackedPosition(stackOffset, callback(avoidance.get())));
     }
-  }, items3);
-  const tmp2Result13 = tmp2(tmp3[23]);
-  sharedValue3 = tmp2Result13.useSharedValue(false);
-  const tmp2Result14 = tmp2(tmp3[23]);
-  sharedValue4 = tmp2Result14.useSharedValue(false);
-  const tmp2Result15 = tmp2(tmp3[23]);
-  sharedValue5 = tmp2Result15.useSharedValue(false);
-  const items4 = [frameId];
+  }, items4);
+  const tmp2Result15 = tmp2(tmp3[24]);
+  sharedValue3 = tmp2Result15.useSharedValue(false);
+  const tmp2Result16 = tmp2(tmp3[24]);
+  sharedValue4 = tmp2Result16.useSharedValue(false);
+  const tmp2Result17 = tmp2(tmp3[24]);
+  sharedValue5 = tmp2Result17.useSharedValue(false);
+  const items5 = [frameId];
   callback1 = windowWidth.useCallback(() => {
     const tmp = metroImportAll(FramesStore.getFrame(frameId));
     if (null != tmp) {
-      const obj = conjureBackgroundFrames;
-      const result = obj.returnToConjureFrameSurface(tmp);
+      const obj = conjureAppPictureInPictureActions2;
+      const result = obj.openConjureAppPictureInPictureFrame(tmp);
     }
-  }, items4);
-  const items5 = [frameId, str];
+  }, items5);
+  const items6 = [frameId, str];
   callback2 = windowWidth.useCallback(() => {
     const obj = conjureAppPictureInPictureActions2;
     return obj.showConjureAppPictureInPictureActions(frameId, str);
-  }, items5);
-  const items6 = [frameId];
-  callback3 = windowWidth.useCallback(() => {
-    const timerId = setTimeout(() => index(size[25])(frameId), 180);
   }, items6);
+  const items7 = [frameId];
+  callback3 = windowWidth.useCallback(() => {
+    const timerId = setTimeout(() => stackOffset(size[25])(frameId), 180);
+  }, items7);
   callback4 = windowWidth.useCallback(() => {
     const obj = frameId(size[26]);
     return obj.triggerHapticFeedback(frameId(size[26]).HapticFeedbackTypes.IMPACT_MEDIUM);
   }, []);
-  const items7 = [avoidance, callback3, sharedValue5, sharedValue1, sharedValue3, FOLLOW_SPRING, callback4, sharedValue2, callback1, sharedValue4, sharedValue, callback2, closeTargetCenter, closeTargetHovered, closeTargetShown];
-  const memo = windowWidth.useMemo(() => {
+  const items8 = [avoidance, callback3, sharedValue5, sharedValue1, sharedValue3, presentation, callback4, result, sharedValue2, callback1, sharedValue4, sharedValue, callback2, closeTargetCenter, closeTargetHovered, closeTargetShown];
+  const memo1 = windowWidth.useMemo(() => {
+    let tmp6;
+    let tmp = require;
+    let tmp2 = dependencyMap;
     const Gesture = LegacyBaseButton.Gesture;
     const PanResult = Gesture.Pan();
     const fn = function s() {
       const result = sharedValue2.set(true);
       set = sharedValue1.set;
-      const clampToBounds = frameId(size[22]).clampToBounds;
-      frameId(size[22]);
+      const clampToBounds = frameId(size[12]).clampToBounds;
+      frameId(size[12]);
       const value = sharedValue.get();
       const result1 = set(clampToBounds(value, callback(avoidance.get())));
       const result2 = sharedValue3.set(true);
@@ -252,17 +278,17 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
       const point1 = { x: point.x + translationX.translationX, y: point.y + translationX.translationY };
       const result = sharedValue.set(point1);
       const point2 = { x: translationX.absoluteX, y: translationX.absoluteY };
-      const obj2 = frameId(size[22]);
+      const obj2 = frameId(size[12]);
       const isOverCloseTargetResult = obj2.isOverCloseTarget(point2, closeTargetCenter);
-      const obj4 = sharedValue4;
+      const obj4 = __initData;
       const tmp2 = frameId;
       const tmp3 = size;
-      if (isOverCloseTargetResult !== sharedValue4.get()) {
+      if (isOverCloseTargetResult !== __initData.get()) {
         const result1 = obj4.set(isOverCloseTargetResult);
         const result2 = closeTargetHovered.set(isOverCloseTargetResult);
         if (isOverCloseTargetResult) {
-          const tmp2Result = tmp2(tmp3[23]);
-          tmp2Result.runOnJS(__initData4)();
+          const tmp2Result = tmp2(tmp3[24]);
+          tmp2Result.runOnJS(callback4)();
         }
       }
     };
@@ -272,16 +298,16 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
     fn2.__workletHash = 759889640152;
     fn2.__initData = __initData3;
     const fn3 = function o(arg0) {
-      if (sharedValue4.get()) {
-        const result = sharedValue5.set(true);
-        const obj2 = frameId(size[23]);
-        obj2.runOnJS(__initData3)();
+      if (__initData.get()) {
+        const result = __initData2.set(true);
+        const obj2 = frameId(size[24]);
+        obj2.runOnJS(__initData5)();
       } else {
         set = sharedValue.set;
-        const getSnappedPosition = frameId(size[22]).getSnappedPosition;
+        const getSnappedPosition = frameId(size[12]).getSnappedPosition;
         const point = { x: null, y: null };
         ({ velocityX: obj.x, velocityY: obj.y } = arg0);
-        frameId(size[22]);
+        frameId(size[12]);
         const value = sharedValue.get();
         const result1 = set(getSnappedPosition(value, point, callback(avoidance.get())));
       }
@@ -293,7 +319,7 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
     ({ overCloseTarget: sharedValue4, closing: sharedValue5, runOnJS: ReanimatedRexport.runOnJS, closeAfterShrink: callback3, position: sharedValue, getSnappedPosition: conjureAppPictureInPictureLayout.getSnappedPosition, getBounds, avoidance });
     const fn4 = function t() {
       const result = sharedValue3.set(false);
-      const result1 = sharedValue4.set(false);
+      const result1 = __initData.set(false);
       const result2 = closeTargetShown.set(false);
       const result3 = closeTargetHovered.set(false);
     };
@@ -311,7 +337,7 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
     const fn5 = function c(arg0, arg1) {
       const tmp = arg1;
       if (tmp) {
-        __initData();
+        __initData3();
       }
     };
     let obj4 = { open: callback1 };
@@ -321,11 +347,24 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
     const TapResult = Gesture3.Tap();
     const runOnJSResult1 = TapResult.runOnJS(true);
     const onEndResult1 = runOnJSResult1.onEnd(fn5);
+    const obj5 = { windowGesture: null, handleGesture: null };
     const Gesture4 = LegacyBaseButton.Gesture;
-    return Gesture4.Race(onFinalizeResult, onStartResult1, onEndResult1);
-  }, items7);
-  const tmp2Result16 = tmp2(tmp3[23]);
-  class U {
+    if (c13) {
+      const TapResult1 = Gesture4.Tap();
+      obj5.windowGesture = TapResult1.enabled(false);
+      const Gesture5 = LegacyBaseButton.Gesture;
+      obj5.handleGesture = Gesture5.Race(onFinalizeResult, onStartResult1, onEndResult1);
+      tmp6 = obj5;
+    } else {
+      obj5.windowGesture = Gesture4.Race(onFinalizeResult, onStartResult1, onEndResult1);
+      tmp6 = obj5;
+    }
+    return tmp6;
+  }, items8);
+  ({ handleGesture, windowGesture } = memo1);
+  const tmp2Result18 = tmp2(tmp3[24]);
+  const tmp9 = closure_12;
+  class Y {
     constructor() {
       let items;
       let obj4;
@@ -351,8 +390,8 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
         num2 = 1.05;
       }
       if (value4) {
-        const diff = closeTargetCenter.x - size.width / 2;
-        const diff1 = closeTargetCenter.y - size.height / 2;
+        const diff = closeTargetCenter.x - memo.width / 2;
+        const diff1 = closeTargetCenter.y - memo.height / 2;
         let num4 = 0.4;
         if (sharedValue5.get()) {
           num4 = 0;
@@ -364,10 +403,10 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
       if (value) {
         let tmp18;
         if (!value4) {
-          tmp18 = closure_13;
+          tmp18 = FOLLOW_SPRING;
         }
         size = { width: null, height: null, opacity: num, transform: items };
-        ({ width: obj.width, height: obj.height } = size);
+        ({ width: obj.width, height: obj.height } = memo);
         if (sharedValue5.get()) {
           const obj2 = timing;
           num = obj2.withTiming(0, { duration: 180 });
@@ -383,16 +422,16 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
         obj8 = spring;
         return size;
       }
-      tmp18 = closure_14;
+      tmp18 = styles;
     }
   }
-  let obj3 = { dragging: sharedValue3, overCloseTarget: sharedValue4, closing: sharedValue5, position: sharedValue, clampToBounds: tmp2(tmp3[22]).clampToBounds, getBounds: FOLLOW_SPRING, avoidance, DRAGGING_SCALE: 1.05, closeTargetCenter, size, OVER_CLOSE_TARGET_SCALE: 0.4, FOLLOW_SPRING, SETTLE_SPRING: sharedValue, withTiming: tmp2(tmp3[28]).withTiming, CLOSE_ANIMATION_MS: 180, withSpring: tmp2(tmp3[29]).withSpring };
-  U.__closure = obj3;
-  U.__workletHash = 4130993795296;
-  U.__initData = __initData;
-  const items8 = [stateFromStores, str, tmp8];
-  const animatedStyle = tmp2Result16.useAnimatedStyle(U);
-  memo1 = windowWidth.useMemo(() => {
+  let obj3 = { dragging: sharedValue3, overCloseTarget: sharedValue4, closing: sharedValue5, position: sharedValue, clampToBounds: tmp2(tmp3[12]).clampToBounds, getBounds: presentation, avoidance, DRAGGING_SCALE: 1.05, closeTargetCenter, windowSize: memo, OVER_CLOSE_TARGET_SCALE: 0.4, FOLLOW_SPRING, SETTLE_SPRING: memo, withTiming: tmp2(tmp3[28]).withTiming, CLOSE_ANIMATION_MS: 180, withSpring: tmp2(tmp3[29]).withSpring };
+  Y.__closure = obj3;
+  Y.__workletHash = 11168598629644;
+  Y.__initData = callback4;
+  const items9 = [stateFromStores, str, tmp8];
+  const animatedStyle = tmp2Result18.useAnimatedStyle(Y);
+  memo2 = windowWidth.useMemo(() => {
     let mapped;
     if (null != stateFromStores) {
       const obj = conjureAppPictureInPictureActions2;
@@ -409,38 +448,64 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
       mapped = [];
     }
     return mapped;
-  }, items8);
-  [][0] = memo1;
-  let tmp25Result2 = null;
-  if (null != stateFromStores) {
-    let obj4 = { theme: closeTargetCenter.DARK, children: tmp25(GestureDetector, obj5) };
-    const ThemeContextProvider = tmp2(tmp3[30]).ThemeContextProvider;
-    obj5 = { gesture: memo, children: tmp27(View, obj6) };
-    GestureDetector = tmp2(tmp3[27]).GestureDetector;
-    obj6 = { style: items9, accessible: true, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(index(tmp3[32]).dPf03z, obj7), accessibilityActions: memo1.map((name) => ({ name: name.name, label: name.label })), onAccessibilityAction: tmp23, children: items11 };
-    items9 = [tmp.window, animatedStyle];
-    View = index(tmp3[23]).View;
-    intl = tmp2(tmp3[31]).intl;
-    obj7 = { appName: str };
-    let obj8 = { style: tmp.mask, pointerEvents: "none", children: items10 };
-    const obj9 = { frameId, level: tmp2(tmp3[34]).FrameStackLevel.AboveAppContent, presentation: sharedValue1 };
-    const tmp30 = index(tmp3[33]);
-    items10 = [stateFromStores(tmp30, obj9), ];
-    let tmp25Result = null;
-    const tmp29 = windowHeight;
-    if (closure_12) {
-      const obj10 = { frame: stateFromStores, appName: str };
-      tmp25Result = tmp25(sharedValue3, obj10);
+  }, items9);
+  [][0] = memo2;
+  if (null == stateFromStores) {
+    return null;
+  } else {
+    let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(stackOffset(tmp3[31]).dPf03z, obj5), accessibilityActions: memo2.map((name) => ({ name: name.name, label: name.label })), onAccessibilityAction: tmp26 };
+    intl = tmp2(tmp3[30]).intl;
+    obj5 = { appName: str };
+    let obj6 = { theme: closeTargetCenter.DARK, children: stateFromStores(GestureDetector2, obj7) };
+    const ThemeContextProvider = tmp2(tmp3[32]).ThemeContextProvider;
+    obj7 = { gesture: windowGesture, children: str(View, obj8) };
+    GestureDetector2 = tmp2(tmp3[27]).GestureDetector;
+    obj8 = { style: items10, accessible: !result, children: items11 };
+    items10 = [tmp.window, animatedStyle];
+    let obj9 = obj4;
+    View = stackOffset(tmp3[24]).View;
+    const tmp42 = stackOffset;
+    if (result) {
+      obj9 = {};
     }
-    items10[1] = tmp25Result;
-    items11 = [tmp27(tmp29, obj8), ];
-    const obj11 = { frame: stateFromStores };
-    items11[1] = stateFromStores(sharedValue4, obj11);
-    tmp25Result2 = tmp25(ThemeContextProvider, obj4);
+    const merged = Object.assign(obj9);
+    let tmp43Result = null;
+    if (null != handleGesture) {
+      const obj10 = { gesture: handleGesture, children: stateFromStores(windowHeight, obj11) };
+      obj11 = { style: tmp.handle, accessible: true, children: stateFromStores(windowHeight, obj12) };
+      const GestureDetector = tmp2(tmp3[27]).GestureDetector;
+      const merged1 = Object.assign(obj4);
+      obj12 = { style: tmp.grip };
+      tmp43Result = tmp43(GestureDetector, obj10);
+    }
+    items11 = [tmp43Result, ];
+    const items12 = [tmp.mask, ];
+    const obj13 = { style: tmp.content, children: items14 };
+    const obj14 = { style: items12, pointerEvents: str2, children: items13 };
+    const tmp36 = result && tmp.interactiveMask;
+    items12[1] = tmp36;
+    str2 = "none";
+    if (result) {
+      str2 = "auto";
+    }
+    const obj15 = { frameId, level: tmp2(tmp3[34]).FrameStackLevel.AboveAppContent, presentation };
+    const tmp42Result = tmp42(tmp3[33]);
+    items13 = [stateFromStores(tmp42Result, obj15), ];
+    let tmp43Result2 = null;
+    if (tmp9) {
+      const obj16 = { frame: stateFromStores, appName: str };
+      tmp43Result2 = tmp43(sharedValue1, obj16);
+    }
+    items13[1] = tmp43Result2;
+    items14 = [str(windowHeight, obj14), ];
+    const obj17 = { frame: stateFromStores };
+    items14[1] = stateFromStores(sharedValue2, obj17);
+    items11[1] = str(windowHeight, obj13);
+    return stateFromStores(ThemeContextProvider, obj6);
   }
-  return tmp25Result2;
 });
-let size = size_mod;
+size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/background_frames/native/ConjureAppPictureInPicture.tsx");
 
 export default memoResult;
+export const SHOWS_STATIC_CARD = tmp4;

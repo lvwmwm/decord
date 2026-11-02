@@ -1,8 +1,8 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 13466
+// Function ID: 13467
 // Dependencies: [2]
 
-// Module 13451
+// Module 13466
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_04_blaze.webp.js");

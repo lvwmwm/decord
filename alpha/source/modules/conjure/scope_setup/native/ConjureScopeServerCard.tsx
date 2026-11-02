@@ -1,17 +1,17 @@
-// Module ID: 12750
-// Function ID: 12751
+// Module ID: 12753
+// Function ID: 12754
 // Name: ConjureScopeServerCard
-// Dependencies: [32, 19, 17, 21, 5014, 575, 12477, 5624, 1113, 3868, 12751, 5634, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 12136, 5624, 1113, 3868, 12754, 5634, 2]
 // Exports: default
 
-// Module 12750 (ConjureScopeServerCard)
+// Module 12753 (ConjureScopeServerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
 import Text_Text from "Text/Text" /* 5624 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12477 */;
-import ConjureClarificationEntityPickerDefault from "ConjureClarificationEntityPicker" /* 12751 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12136 */;
+import ConjureClarificationEntityPickerDefault from "ConjureClarificationEntityPicker" /* 12754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

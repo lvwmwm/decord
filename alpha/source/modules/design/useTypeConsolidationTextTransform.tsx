@@ -26,7 +26,7 @@ export function useTypeConsolidationEyebrow(BountiesScrollRecapFooter, variant) 
     obj3 = { variant: "experimental/body-sm/medium", style };
     const obj2 = { variant: "experimental/body-sm/medium", style };
   } else {
-    obj3 = { variant, style: "a" };
+    obj3 = { variant, style: "Array" };
   }
   return obj3;
 }

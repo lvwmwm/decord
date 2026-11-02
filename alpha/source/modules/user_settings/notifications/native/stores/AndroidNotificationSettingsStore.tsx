@@ -1,10 +1,10 @@
-// Module ID: 17463
-// Function ID: 17464
+// Module ID: 17476
+// Function ID: 17477
 // Name: AndroidNotificationSettingsStore
 // Dependencies: [5, 1254, 1375, 10914, 1259, 4929, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 17463 (AndroidNotificationSettingsStore)
+// Module 17476 (AndroidNotificationSettingsStore)
 import _slicedToArray from "_slicedToArray" /* 4929 */;
 import PushNotificationDefault from "PushNotification" /* 10914 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

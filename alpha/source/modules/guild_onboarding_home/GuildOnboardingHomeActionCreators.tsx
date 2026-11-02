@@ -1,10 +1,10 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 13833
+// Function ID: 13834
 // Name: GuildOnboardingHomeActionCreators
 // Dependencies: [5, 4919, 4863, 7398, 8340, 1072, 572, 1282, 7399, 1252, 5756, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 13818 (GuildOnboardingHomeActionCreators)
+// Module 13833 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

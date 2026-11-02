@@ -1,10 +1,10 @@
-// Module ID: 19397
-// Function ID: 19398
+// Module ID: 19404
+// Function ID: 19405
 // Name: AutomodRemovedContentSheet
 // Dependencies: [19, 17, 1072, 21, 8377, 5014, 575, 1113, 6063, 7366, 7321, 9885, 5624, 2]
 // Exports: default
 
-// Module 19397 (AutomodRemovedContentSheet)
+// Module 19404 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

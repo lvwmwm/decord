@@ -1,10 +1,10 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15149
+// Function ID: 15150
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5627, 4863, 4885, 5045, 1383, 11365, 6049, 5654, 1113, 8418, 8420, 575, 6051, 15146, 8687, 6726, 6050, 2]
+// Dependencies: [17, 5627, 4863, 4885, 5045, 1383, 11366, 6049, 5654, 1113, 8418, 8420, 575, 6051, 15150, 8687, 6726, 6050, 2]
 // Exports: default
 
-// Module 15145 (createMediaPostPreviewEmbedContent)
+// Module 15149 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import LinkUtils from "LinkUtils" /* 5654 */;
@@ -15,7 +15,7 @@ import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
 import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8687 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11365 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11366 */;
 import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5627 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
@@ -109,7 +109,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = "" + mediaPostEmbedCommonData.coverImage + "?format=webp";
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(15146)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(15150)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {

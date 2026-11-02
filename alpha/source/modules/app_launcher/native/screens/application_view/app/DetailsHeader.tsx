@@ -1,14 +1,14 @@
 // Module ID: 9760
 // Function ID: 9761
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 9761, 11493, 8773, 6732, 6959, 5624, 1113, 5254, 5257, 7038, 5587, 1092, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 9761, 11494, 8773, 6732, 6959, 5624, 1113, 5254, 5257, 7038, 5587, 1092, 2]
 
 // Module 9760 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import timingPresets from "timingPresets" /* 5257 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11493 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

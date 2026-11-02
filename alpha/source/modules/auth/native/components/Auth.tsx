@@ -1,9 +1,9 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 17986
+// Function ID: 17987
 // Name: Auth
-// Dependencies: [32, 19, 17, 13962, 1072, 21, 17974, 17975, 6998, 17984, 7171, 7118, 5014, 575, 18027, 7111, 1639, 7142, 18028, 7140, 7169, 1376, 1113, 18029, 7654, 18038, 2]
+// Dependencies: [32, 19, 17, 13977, 1072, 21, 17987, 17988, 6998, 17997, 7171, 7118, 5014, 575, 18040, 7111, 1639, 7142, 18041, 7140, 7169, 1376, 1113, 18042, 7654, 18051, 2]
 
-// Module 17973 (Auth)
+// Module 17986 (Auth)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1639 */;
@@ -11,18 +11,18 @@ import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
 import MFAUtils from "MFAUtils" /* 7118 */;
 import BackgroundImageDefault from "BackgroundImage" /* 7142 */;
 import _mod7171 from "module_7171" /* 7171 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 17974 */;
-import RegistrationUtils from "RegistrationUtils" /* 17984 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18027 */;
-import AssetRegistry from "AssetRegistry" /* 18028 */;
-import AuthManagerDefault from "AuthManager" /* 18029 */;
-import useOrientationLockDefault from "useOrientationLock" /* 18038 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 17987 */;
+import RegistrationUtils from "RegistrationUtils" /* 17997 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18040 */;
+import AssetRegistry from "AssetRegistry" /* 18041 */;
+import AuthManagerDefault from "AuthManager" /* 18042 */;
+import useOrientationLockDefault from "useOrientationLock" /* 18051 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 13962 */;
+import MultiAccountStore from "MultiAccountStore" /* 13977 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17975 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17988 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 

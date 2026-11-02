@@ -1,10 +1,10 @@
-// Module ID: 13840
-// Function ID: 13841
+// Module ID: 13855
+// Function ID: 13856
 // Name: useCanManageGuildDirectoryEntry
 // Dependencies: [4863, 4885, 4946, 1072, 504, 2]
 // Exports: default, useCanCreateOrAddGuildInDirectory
 
-// Module 13840 (useCanManageGuildDirectoryEntry)
+// Module 13855 (useCanManageGuildDirectoryEntry)
 import Constants from "Constants" /* 1072 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildStore from "GuildStore" /* 4885 */;

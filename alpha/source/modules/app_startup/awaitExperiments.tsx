@@ -1,10 +1,10 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16021
+// Function ID: 16022
 // Name: awaitExperiments
 // Dependencies: [9765, 2]
 // Exports: beginLoadedExperimentsTimeout, getPromise, onExperimentsLoaded
 
-// Module 16017 (awaitExperiments)
+// Module 16021 (awaitExperiments)
 import Future from "Future" /* 9765 */;
 import size from "module_2" /* 2 */;
 

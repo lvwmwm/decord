@@ -1,13 +1,13 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15758
+// Function ID: 15759
 // Name: GuildBadgeForce
-// Dependencies: [19, 21, 1266, 15741, 8031, 2]
+// Dependencies: [19, 21, 1266, 15745, 8031, 2]
 // Exports: GuildBadgeForce
 
-// Module 15754 (GuildBadgeForce)
+// Module 15758 (GuildBadgeForce)
 import v1 from "v1" /* 1266 */;
 import inlineStyles from "inlineStyles" /* 8031 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15741 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

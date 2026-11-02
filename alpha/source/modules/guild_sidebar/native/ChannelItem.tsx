@@ -1,9 +1,9 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18174
+// Function ID: 18175
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5761, 4956, 1383, 1072, 4870, 6776, 21, 5014, 575, 6778, 13922, 1409, 5717, 18162, 8647, 8603, 504, 1187, 6045, 18163, 5652, 1099, 2]
+// Dependencies: [109, 19, 17, 5761, 4956, 1383, 1072, 4870, 6776, 21, 5014, 575, 6778, 13937, 1409, 5717, 18175, 8647, 8603, 504, 1187, 6045, 18176, 5652, 1099, 2]
 
-// Module 18161 (ChannelItem)
+// Module 18174 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -13,8 +13,8 @@ import ReadStateConstants from "ReadStateConstants" /* 6776 */;
 import LegacyTokens from "LegacyTokens" /* 6778 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
 import BookCheckIcon2 from "BookCheckIcon" /* 8647 */;
-import BaseChannelItem from "BaseChannelItem" /* 13922 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18162 */;
+import BaseChannelItem from "BaseChannelItem" /* 13937 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18175 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5761 */;
@@ -113,7 +113,7 @@ function ChannelIcon(arg0) {
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(13922).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(13937).BaseChannelIcon;
     const tmp17 = map1;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

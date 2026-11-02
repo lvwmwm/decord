@@ -1,10 +1,10 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 14950
+// Function ID: 14951
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 8754, 21, 5014, 575, 9316, 9340, 8761, 14947, 5624, 14952, 14953, 2026, 14954, 12, 7773, 1113, 14956, 7777, 12114, 7778, 14963, 14967, 2]
+// Dependencies: [32, 19, 17, 8754, 21, 5014, 575, 9316, 9340, 8761, 14951, 5624, 14956, 14957, 2026, 14958, 12, 7773, 1113, 14960, 7777, 12258, 7778, 14967, 14971, 2]
 // Exports: default
 
-// Module 14946 (UserProfileWidgetsBoard)
+// Module 14950 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import StringUtils from "StringUtils" /* 2026 */;
@@ -13,10 +13,10 @@ import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes
 import Constants from "Constants" /* 8754 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9316 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12114 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14952 */;
-import GameCoverImageDefault from "GameCoverImage" /* 14953 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 14963 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12258 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14956 */;
+import GameCoverImageDefault from "GameCoverImage" /* 14957 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 14967 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -192,7 +192,7 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
   if (tmp8Result) {
     const obj7 = { style: tmp.comment, children: items2 };
     const obj8 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp6(14954).QuoteIcon;
+    const QuoteIcon = tmp6(14958).QuoteIcon;
     items2 = [metroImportAll(QuoteIcon, obj8), ];
     const obj9 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items2[1] = metroImportAll(Text_Text.Text, obj9);
@@ -458,7 +458,7 @@ export default function UserProfileWidgetsBoard(userId) {
   }
   const cardStyle = userId.cardStyle;
   let tmp = closure_12();
-  let obj = userId(14967);
+  let obj = userId(14971);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
   let closure_1 = tmp2;
   const obj2 = userId(8761);

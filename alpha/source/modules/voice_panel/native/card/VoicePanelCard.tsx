@@ -1,9 +1,9 @@
-// Module ID: 19240
-// Function ID: 19241
+// Module ID: 19247
+// Function ID: 19248
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 6058, 6714, 5764, 6756, 11223, 11221, 19108, 11226, 1072, 5681, 11224, 21, 5095, 5624, 5587, 1187, 5014, 575, 504, 7901, 6717, 6960, 1113, 5634, 11222, 11757, 5789, 14890, 11759, 11756, 19241, 11766, 19104, 14868, 5254, 5637, 9522, 19242, 5717, 7241, 5596, 19244, 12271, 10089, 5080, 7326, 19197, 19211, 19107, 19245, 19246, 8750, 5303, 5876, 19247, 11225, 19248, 19249, 19250, 19251, 19252, 19262, 2]
+// Dependencies: [32, 19, 17, 6058, 6714, 5764, 6756, 11223, 11221, 19115, 11226, 1072, 5681, 11224, 21, 5095, 5624, 5587, 1187, 5014, 575, 504, 7901, 6717, 6960, 1113, 5634, 11222, 11758, 5789, 14894, 11760, 11757, 19248, 11767, 19111, 14872, 5254, 5637, 9522, 19249, 5717, 7241, 5596, 19251, 12411, 10089, 5080, 7326, 19204, 19218, 19114, 19252, 19253, 8750, 5303, 5876, 19254, 11225, 19255, 19256, 19257, 19258, 19259, 19269, 2]
 
-// Module 19240 (VoicePanelCard)
+// Module 19247 (VoicePanelCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
@@ -20,12 +20,12 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 87
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19107 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19108 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19242 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 19244 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 19245 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19114 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19115 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19249 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 19251 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 19252 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -1283,7 +1283,7 @@ const __initData10 = { code: "function VoicePanelCardTsx10(){const{focused}=this
 const __initData11 = { code: "function VoicePanelCardTsx11(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 const __initData12 = { code: "function VoicePanelCardTsx12(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 const __initData13 = { code: "function VoicePanelCardTsx13(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_50 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
+let closure_50 = { isSelf: false, hasVideo: false, user: { id: "r" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING, get, get2) {
   let obj3;
   let obj4;

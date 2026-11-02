@@ -1,10 +1,10 @@
-// Module ID: 18440
-// Function ID: 18441
+// Module ID: 18453
+// Function ID: 18454
 // Name: FocusModeOptionsActionSheet
 // Dependencies: [19, 21, 1089, 1113, 11018, 7366, 7060, 6975, 2]
 // Exports: default
 
-// Module 18440 (FocusModeOptionsActionSheet)
+// Module 18453 (FocusModeOptionsActionSheet)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl5 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
@@ -53,13 +53,14 @@ let obj4 = {
 };
 items[3] = obj4;
 items[4] = { duration: DurationsDefault.Millis.DAY, label };
-items[5] = {
+const obj6 = {
   duration: "Array",
   label() {
     const intl = intl5.intl;
     return intl.string(intl5.t["46dqJY"]);
   }
 };
+items[5] = obj6;
 ({ duration: DurationsDefault.Millis.DAY, label });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
 

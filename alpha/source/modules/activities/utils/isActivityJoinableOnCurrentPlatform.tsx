@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14891
+// Function ID: 14892
 // Name: isActivityJoinableOnCurrentPlatform
 // Dependencies: [1072, 1376, 9738, 1622, 7483, 5762, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 14887 (isActivityJoinableOnCurrentPlatform)
+// Module 14891 (isActivityJoinableOnCurrentPlatform)
 import Constants from "Constants" /* 1072 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;

@@ -1,17 +1,17 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17157
+// Function ID: 17158
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6781, 17059, 21, 17087, 17056, 17060, 11244, 17063, 17141, 5095, 17064, 17061, 5303, 17058, 5260, 2]
+// Dependencies: [19, 6781, 17072, 21, 17100, 17069, 17073, 11244, 17076, 17154, 5095, 17077, 17074, 5303, 17071, 5260, 2]
 
-// Module 17144 (QuestDockGestureDetector)
+// Module 17157 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import HapticUtils from "HapticUtils" /* 5260 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestDockUtils from "QuestDockUtils" /* 17058 */;
+import QuestDockUtils from "QuestDockUtils" /* 17071 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17059 */;
+import QuestDockConstants from "QuestDockConstants" /* 17072 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3, set4;

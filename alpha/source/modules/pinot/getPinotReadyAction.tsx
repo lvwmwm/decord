@@ -1,10 +1,10 @@
-// Module ID: 15647
-// Function ID: 15648
+// Module ID: 15651
+// Function ID: 15652
 // Name: getPinotReadyAction
 // Dependencies: [11328, 2]
 // Exports: getPinotReadyAction
 
-// Module 15647 (getPinotReadyAction)
+// Module 15651 (getPinotReadyAction)
 import PinotMemberSettingStore from "PinotMemberSettingStore" /* 11328 */;
 import size from "module_2" /* 2 */;
 

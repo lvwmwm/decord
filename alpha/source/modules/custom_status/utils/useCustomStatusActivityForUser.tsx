@@ -1,10 +1,10 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11411
+// Function ID: 11412
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 5761, 504, 11393, 5762, 2]
+// Dependencies: [502, 5761, 504, 11394, 5762, 2]
 // Exports: default
 
-// Module 11410 (useCustomStatusActivityForUser)
+// Module 11411 (useCustomStatusActivityForUser)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 5761 */;
 import size from "module_2" /* 2 */;

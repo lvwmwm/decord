@@ -1,10 +1,10 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18507
+// Function ID: 18508
 // Name: ForYouReadSectionHeader
 // Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 18494 (ForYouReadSectionHeader)
+// Module 18507 (ForYouReadSectionHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

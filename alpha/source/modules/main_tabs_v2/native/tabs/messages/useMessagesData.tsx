@@ -1,10 +1,10 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18102
+// Function ID: 18103
 // Name: useMessagesData
-// Dependencies: [32, 19, 6568, 502, 4956, 7395, 504, 18090, 4839, 2]
+// Dependencies: [32, 19, 6568, 502, 4956, 7395, 504, 18103, 4839, 2]
 // Exports: default
 
-// Module 18089 (useMessagesData)
+// Module 18102 (useMessagesData)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;

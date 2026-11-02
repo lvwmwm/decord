@@ -1,12 +1,12 @@
-// Module ID: 19596
-// Function ID: 19597
+// Module ID: 19603
+// Function ID: 19604
 // Name: PushNotificationCacheManager
-// Dependencies: [13962, 1383, 5068, 7287, 10914, 2]
+// Dependencies: [13977, 1383, 5068, 7287, 10914, 2]
 
-// Module 19596 (PushNotificationCacheManager)
+// Module 19603 (PushNotificationCacheManager)
 import UserUtilsDefault from "UserUtils" /* 5068 */;
 import PushNotificationDefault from "PushNotification" /* 10914 */;
-import MultiAccountStore from "MultiAccountStore" /* 13962 */;
+import MultiAccountStore from "MultiAccountStore" /* 13977 */;
 import UserStore from "UserStore" /* 1383 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;

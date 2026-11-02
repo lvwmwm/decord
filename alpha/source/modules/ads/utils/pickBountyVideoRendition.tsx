@@ -1,10 +1,10 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 16947
+// Function ID: 16948
 // Name: pickBountyVideoRendition
 // Dependencies: [9694, 38, 2]
 // Exports: pickBountyVideoRenditionWithFallback
 
-// Module 16934 (pickBountyVideoRendition)
+// Module 16947 (pickBountyVideoRendition)
 import _modDef38 from "module_38" /* 38 */;
 import BountyAspectRatio from "BountyAspectRatio" /* 9694 */;
 import size from "module_2" /* 2 */;

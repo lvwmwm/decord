@@ -1,14 +1,14 @@
-// Module ID: 11471
-// Function ID: 11472
+// Module ID: 11472
+// Function ID: 11473
 // Name: ExperimentalRareIcon
-// Dependencies: [19, 21, 575, 5716, 11472, 2]
+// Dependencies: [19, 21, 575, 5716, 11473, 2]
 // Exports: ExperimentalRareIcon
 
-// Module 11471 (ExperimentalRareIcon)
+// Module 11472 (ExperimentalRareIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 11472 */;
+import AssetRegistry from "AssetRegistry" /* 11473 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

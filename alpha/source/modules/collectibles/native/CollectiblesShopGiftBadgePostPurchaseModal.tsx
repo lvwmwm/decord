@@ -1,10 +1,10 @@
-// Module ID: 14433
-// Function ID: 14434
+// Module ID: 14447
+// Function ID: 14448
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 5014, 575, 1625, 6744, 7719, 7351, 7972, 1113, 7054, 5624, 2634, 14434, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1625, 6744, 7719, 7351, 7972, 1113, 7054, 5624, 2634, 14448, 2]
 // Exports: default
 
-// Module 14433 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 14447 (CollectiblesShopGiftBadgePostPurchaseModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -15,7 +15,7 @@ import XSmallIcon from "XSmallIcon" /* 7054 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
 import ModalScreen2 from "ModalScreen" /* 7972 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 14434 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 14448 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

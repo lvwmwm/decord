@@ -1,13 +1,13 @@
-// Module ID: 16859
-// Function ID: 16860
+// Module ID: 16872
+// Function ID: 16873
 // Name: ConnectionsSetting
-// Dependencies: [1072, 11539, 1113, 5727, 16832, 2]
+// Dependencies: [1072, 11540, 1113, 5727, 16845, 2]
 
-// Module 16859 (ConnectionsSetting)
+// Module 16872 (ConnectionsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import LinkIcon from "LinkIcon" /* 5727 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

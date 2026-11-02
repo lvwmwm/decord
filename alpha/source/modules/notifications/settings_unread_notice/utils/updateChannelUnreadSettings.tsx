@@ -1,10 +1,10 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11355
+// Function ID: 11356
 // Name: updateChannelUnreadSettings
 // Dependencies: [6775, 1072, 6776, 1082, 7288, 11069, 7283, 2]
 // Exports: default
 
-// Module 11354 (updateChannelUnreadSettings)
+// Module 11355 (updateChannelUnreadSettings)
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import ReadStateConstants from "ReadStateConstants" /* 6776 */;

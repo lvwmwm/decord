@@ -1,17 +1,17 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14648
+// Function ID: 14649
 // Name: CrunchyrollLinkModal
-// Dependencies: [19, 14635, 1072, 21, 7558, 8359, 14633, 1113, 14636, 9731, 14638, 14640, 14641, 14643, 9730, 14621, 7169, 2]
+// Dependencies: [19, 14649, 1072, 21, 7558, 8359, 14647, 1113, 14650, 9731, 14652, 14654, 14655, 14657, 9730, 14635, 7169, 2]
 // Exports: default
 
-// Module 14634 (CrunchyrollLinkModal)
+// Module 14648 (CrunchyrollLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8359 */;
-import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 14633 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14635 */;
+import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 14647 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14649 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ export default function CrunchyrollLinkModal(locationStack) {
       }
     };
   }, items);
-  const obj2 = twoWayLinkStyles(14621);
+  const obj2 = twoWayLinkStyles(14635);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack);
   const Navigator = twoWayLinkStyles(7169).Navigator;
   const intl = twoWayLinkStyles(1113).intl;

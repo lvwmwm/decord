@@ -1,14 +1,14 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18354
+// Function ID: 18355
 // Name: ChannelAffinitiesV2ActionCreators
-// Dependencies: [6742, 18339, 1072, 572, 1282, 2]
+// Dependencies: [6742, 18352, 1072, 572, 1282, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 18341 (ChannelAffinitiesV2ActionCreators)
+// Module 18354 (ChannelAffinitiesV2ActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ConsentStore from "ConsentStore" /* 6742 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18339 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18352 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

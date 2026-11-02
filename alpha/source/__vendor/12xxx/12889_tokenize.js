@@ -1,30 +1,44 @@
 // Module ID: 12889
 // Function ID: 12890
 // Name: tokenize
-// Dependencies: [12833, 12829]
+// Dependencies: [12836]
 
 // Module 12889 (tokenize)
-import _mod12829 from "module_12829" /* 12829 */;
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
 
 let obj2;
-const Dimension = tokenize.TYPE.Dimension;
+const Comment = tokenize.TYPE.Comment;
 let obj = {
-  name: "Dimension",
+  name: "Comment",
   structure: obj2,
   parse() {
+    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const obj = _mod12829;
-    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
-    this.eat(Dimension);
-    const obj2 = { type: "Dimension", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult), unit: str2.substring(consumeNumberResult, this.scanner.tokenStart) };
-    return obj2;
+    const tokenEnd = this.scanner.tokenEnd;
+    this.eat(Comment);
+    const sum = tokenEnd - tokenStart + 2;
+    let tmp3 = sum >= 2;
+    if (2 <= sum) {
+      const source = self.scanner.source;
+      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
+    }
+    if (tmp3) {
+      const source2 = self.scanner.source;
+      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
+    }
+    let diff = tokenEnd;
+    if (tmp3) {
+      diff = tokenEnd - 2;
+    }
+    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
+    return obj;
   },
   generate(value) {
+    this.chunk("/*");
     this.chunk(value.value);
-    this.chunk(value.unit);
+    this.chunk("*/");
   }
 };
-obj2 = { value: String, unit: String };
+obj2 = { value: String };
 
 export default obj;

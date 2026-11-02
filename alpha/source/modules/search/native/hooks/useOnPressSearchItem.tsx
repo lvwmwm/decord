@@ -1,10 +1,10 @@
-// Module ID: 18700
-// Function ID: 18701
+// Module ID: 18707
+// Function ID: 18708
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7770, 4863, 13885, 9827, 18701, 9826, 1072, 4870, 13871, 13896, 1377, 5711, 1113, 8940, 5709, 1497, 13983, 18702, 13874, 9849, 9867, 1108, 6753, 8833, 7485, 5756, 7939, 1994, 6734, 14741, 6045, 8632, 6944, 1099, 13892, 2]
+// Dependencies: [5, 19, 7770, 4863, 13900, 9827, 18708, 9826, 1072, 4870, 13886, 13911, 1377, 5711, 1113, 8940, 5709, 1497, 13998, 18709, 13889, 9849, 9867, 1108, 6753, 8833, 7485, 5756, 7939, 1994, 6734, 14745, 6045, 8632, 6944, 1099, 13907, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 18700 (useOnPressSearchItem)
+// Module 18707 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1377 */;
 import ChannelConstants from "ChannelConstants" /* 4870 */;
@@ -12,15 +12,15 @@ import ToastUtils from "ToastUtils" /* 5711 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 8940 */;
 import TrackingConstants from "TrackingConstants" /* 9826 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13871 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13892 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13896 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18701 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13886 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
-import SearchQueryStore from "SearchQueryStore" /* 13885 */;
+import SearchQueryStore from "SearchQueryStore" /* 13900 */;
 import SearchConstants from "SearchConstants" /* 9827 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

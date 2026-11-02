@@ -1,22 +1,22 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17031
+// Function ID: 17032
 // Name: OrbsArcadeGameTile
-// Dependencies: [32, 19, 17, 5015, 17010, 17013, 1072, 21, 5014, 575, 5011, 504, 9695, 16986, 1498, 6977, 8873, 5717, 5587, 5624, 17019, 6767, 17035, 8028, 17050, 1113, 17028, 5634, 17051, 5080, 2]
+// Dependencies: [32, 19, 17, 5015, 17023, 17026, 1072, 21, 5014, 575, 5011, 504, 9695, 16999, 1498, 6977, 8873, 5717, 5587, 5624, 17032, 6767, 17048, 8028, 17063, 1113, 17041, 5634, 17064, 5080, 2]
 // Exports: default
 
-// Module 17018 (OrbsArcadeGameTile)
+// Module 17031 (OrbsArcadeGameTile)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ColorUtils from "ColorUtils" /* 5011 */;
 import native from "native" /* 5080 */;
 import AssetUtils from "AssetUtils" /* 9695 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17028 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17041 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17010 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17013 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17026 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -126,8 +126,8 @@ function OrbsArcadeGameTileContent(game) {
   if (asset == null) {
     asset = memo;
   }
-  ({ isInView, containerRef } = heroVideoAsset(16986)());
-  heroVideoAsset(16986)();
+  ({ isInView, containerRef } = heroVideoAsset(16999)());
+  heroVideoAsset(16999)();
   let tmp17 = !isInView;
   const tmp10Result = game(1498);
   if (isInView) {
@@ -178,7 +178,7 @@ function OrbsArcadeGameTileContent(game) {
       items7[1] = tmp21Result4;
       const items8 = [closure_13(closure_6, obj11), , ];
       const obj14 = { game };
-      items8[1] = closure_12(heroVideoAsset(17019), obj14);
+      items8[1] = closure_12(heroVideoAsset(17032), obj14);
       let str2 = "vertical";
       const ButtonGroup = tmp10(6767).ButtonGroup;
       if (stateFromStores) {
@@ -186,13 +186,13 @@ function OrbsArcadeGameTileContent(game) {
       }
       const obj15 = { direction: str2, size: "md", style: tmp3.buttonGroup, children: null };
       const obj16 = { game, size: "md" };
-      const items9 = [closure_12(heroVideoAsset(17035), obj16), ];
+      const items9 = [closure_12(heroVideoAsset(17048), obj16), ];
       if (null != tmp9) {
         if (stateFromStores) {
           const obj17 = {
             variant: "secondary",
             size: "md",
-            icon: heroVideoAsset(17050),
+            icon: heroVideoAsset(17063),
             accessibilityLabel: intl2.string(game(1113).t["uz4M/z"]),
             onPress() {
                       const obj = openOrbsArcadeSheets;
@@ -210,7 +210,7 @@ function OrbsArcadeGameTileContent(game) {
         items4[2] = closure_13(closure_6, obj10);
         obj5.children = items4;
         const items10 = [closure_13(closure_6, obj5), ];
-        const obj18 = { style: tmp3.overflowButton, children: closure_12(heroVideoAsset(17051), obj19) };
+        const obj18 = { style: tmp3.overflowButton, children: closure_12(heroVideoAsset(17064), obj19) };
         obj19 = { game };
         items10[1] = closure_12(closure_6, obj18);
         obj4.children = items10;

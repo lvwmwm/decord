@@ -1,20 +1,20 @@
-// Module ID: 14124
-// Function ID: 14125
+// Module ID: 14139
+// Function ID: 14140
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 5230, 1072, 14125, 21, 5014, 575, 5587, 9920, 7149, 14107, 14086, 5624, 1113, 2570, 14061, 14078, 14126, 14127, 14083, 2]
+// Dependencies: [19, 17, 5230, 1072, 14140, 21, 5014, 575, 5587, 9920, 7149, 14122, 14101, 5624, 1113, 2570, 14076, 14093, 14141, 14142, 14098, 2]
 // Exports: default
 
-// Module 14124 (GuildPowerupsLevelCard)
+// Module 14139 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9920 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14061 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14078 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14083 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 14125 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 14126 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14076 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14093 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14098 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 14140 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 14141 */;
 import react from "react" /* 19 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
 import Constants from "Constants" /* 1072 */;
@@ -42,7 +42,7 @@ let size;
 let size1;
 let tmp5;
 let unpackModuleId;
-const GuildPowerupsCardDefault = tmp5(14127);
+const GuildPowerupsCardDefault = tmp5(14142);
 function GuildLevelPowerupHeader(arg0) {
   let BoostGemIcon;
   let active;

@@ -1,10 +1,10 @@
-// Module ID: 12512
-// Function ID: 12513
+// Module ID: 12171
+// Function ID: 12172
 // Name: TabItem
-// Dependencies: [19, 17, 21, 5095, 5014, 575, 5637, 5624, 12513, 1375, 1113, 9491, 2]
+// Dependencies: [19, 17, 21, 5095, 5014, 575, 5637, 5624, 12172, 1375, 1113, 9491, 2]
 // Exports: TabItem
 
-// Module 12512 (TabItem)
+// Module 12171 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
 import spring from "spring" /* 5637 */;

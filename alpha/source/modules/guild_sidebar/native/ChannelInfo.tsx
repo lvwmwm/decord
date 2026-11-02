@@ -1,17 +1,17 @@
-// Module ID: 18278
-// Function ID: 18279
+// Module ID: 18291
+// Function ID: 18292
 // Name: ChannelInfo
-// Dependencies: [19, 7711, 4885, 4946, 6842, 5679, 1072, 21, 5014, 504, 12247, 9838, 18279, 18265, 6047, 1187, 18280, 18281, 18163, 6712, 13827, 18164, 18282, 14854, 2]
+// Dependencies: [19, 7711, 4885, 4946, 6842, 5679, 1072, 21, 5014, 504, 12387, 9838, 18292, 18278, 6047, 1187, 18293, 18294, 18176, 6712, 13842, 18177, 18295, 14858, 2]
 // Exports: default
 
-// Module 18278 (ChannelInfo)
+// Module 18291 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import StageMediaHooks from "StageMediaHooks" /* 6712 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12247 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13827 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 18265 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 18279 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 18282 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12387 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13842 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 18278 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 18292 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 18295 */;
 import react from "react" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 7711 */;
 import GuildStore from "GuildStore" /* 4885 */;
@@ -26,7 +26,7 @@ let Fonts;
 let c9;
 let metroImportAll;
 let tmp2;
-const Badges = tmp2(14854);
+const Badges = tmp2(14858);
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;
@@ -58,7 +58,7 @@ function LimitAndDurationInfo(channel) {
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(18164).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(18177).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
@@ -142,16 +142,16 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(18280);
+        const tmpResult2 = channel(18293);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(18281), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(18294), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(18163), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(18176), { locked: needSubscriptionToAccess });
         }
       }
     }

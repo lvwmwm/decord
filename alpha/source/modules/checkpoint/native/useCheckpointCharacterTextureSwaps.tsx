@@ -1,10 +1,10 @@
-// Module ID: 13617
-// Function ID: 13618
+// Module ID: 13632
+// Function ID: 13633
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 5090, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 13617 (useCheckpointCharacterTextureSwaps)
+// Module 13632 (useCheckpointCharacterTextureSwaps)
 import DataBindByName from "DataBindByName" /* 5090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

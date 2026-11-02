@@ -1,10 +1,10 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16743
+// Function ID: 16744
 // Name: useDerivedDMSpamFilterSetting
 // Dependencies: [1383, 4841, 4839, 504, 5693, 5700, 1196, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 16730 (useDerivedDMSpamFilterSetting)
+// Module 16743 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 4839 */;

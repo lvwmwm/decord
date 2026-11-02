@@ -1,43 +1,47 @@
 // Module ID: 12925
 // Function ID: 12926
 // Name: tokenize
-// Dependencies: [12833]
+// Dependencies: [12836, 12880]
 
 // Module 12925 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
+import tokenize2 from "tokenize" /* 12880 */;
 
-const String = tokenize.TYPE.String;
-const Ident = tokenize.TYPE.Ident;
-const Url = tokenize.TYPE.Url;
-const Function = tokenize.TYPE.Function;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const obj = {
-  parse: {
-    prelude() {
-      const self = this;
-      const list = this.createList();
-      const scanner = this.scanner;
-      scanner.skipSC();
-      const tokenType = this.scanner.tokenType;
-      if (String === tokenType) {
-        list.push(self.String());
-      } else {
-        if (Url !== tokenType) {
-          if (Function !== tokenType) {
-            self.error("String or url() is expected");
+const Comma = tokenize.TYPE.Comma;
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+
+export default function() {
+  const self = this;
+  const list = this.createList();
+  const scanner = this.scanner;
+  scanner.skipSC();
+  list.push(this.Identifier());
+  const scanner2 = this.scanner;
+  scanner2.skipSC();
+  if (this.scanner.tokenType === Comma) {
+    let element;
+    list.push(self.Operator());
+    const tokenIndex = self.scanner.tokenIndex;
+    if (self.parseCustomProperty) {
+      element = self.Value(null);
+    } else {
+      element = self.Raw(self.scanner.tokenIndex, tokenize2.mode.exclamationMarkOrSemicolon, false);
+    }
+    if ("Value" === element.type) {
+      const children = element.children;
+      if (children.isEmpty()) {
+        let diff = tokenIndex - self.scanner.tokenIndex;
+        if (diff <= 0) {
+          const scanner3 = self.scanner;
+          while (scanner3.lookupType(diff) !== WhiteSpace) {
+            diff = diff + 1;
           }
+          const children2 = element.children;
+          children2.appendData({ type: "WhiteSpace", loc: null, value: " " });
         }
-        list.push(self.Url());
       }
-      const tmp7 = self.lookupNonWSType(0) !== Ident && self.lookupNonWSType(0) !== LeftParenthesis;
-      if (!tmp7) {
-        list.push(self.WhiteSpace());
-        list.push(self.MediaQueryList());
-      }
-      return list;
-    },
-    block: null
+    }
+    list.push(element);
   }
+  return list;
 };
-
-export default obj;

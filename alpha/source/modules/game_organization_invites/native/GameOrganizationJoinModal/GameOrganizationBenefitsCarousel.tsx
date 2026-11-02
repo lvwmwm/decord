@@ -1,10 +1,10 @@
-// Module ID: 13196
-// Function ID: 13197
+// Module ID: 13211
+// Function ID: 13212
 // Name: GameOrganizationBenefitsCarousel
 // Dependencies: [32, 19, 17, 21, 575, 2404, 5014, 6977, 6027, 5717, 5624, 1491, 10016, 1113, 1187, 2]
 // Exports: default
 
-// Module 13196 (GameOrganizationBenefitsCarousel)
+// Module 13211 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

@@ -1,13 +1,13 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 12081
+// Function ID: 12082
 // Name: useUserApplicationWidgetData
-// Dependencies: [32, 19, 2038, 10946, 7772, 10943, 12081, 504, 7330, 10945, 8758, 7777, 2]
+// Dependencies: [32, 19, 2038, 10946, 7772, 10943, 12082, 504, 7330, 10945, 8758, 7777, 2]
 // Exports: default
 
-// Module 12080 (useUserApplicationWidgetData)
+// Module 12081 (useUserApplicationWidgetData)
 import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10943 */;
 import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 10946 */;
-import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 12081 */;
+import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 12082 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
@@ -34,7 +34,7 @@ export default function useUserApplicationWidgetData(arg0, applicationId) {
   let tmp7;
   let tmp8;
   let userApplicationIdentity;
-  const f126862 = () => {
+  const f126916 = () => {
     if (null == closure_0) {
       const items = [false, null];
       return items;
@@ -52,11 +52,11 @@ export default function useUserApplicationWidgetData(arg0, applicationId) {
       return items1;
     }
   };
-  const f126863 = () => {
+  const f126917 = () => {
     const result = null != closure_0 && first2.isFetchingApplication(tmp);
     return result;
   };
-  const f126867 = () => {
+  const f126921 = () => {
     let items1;
     if (null != closure_0) {
       const items = [UserProfileStore.isFetchingProfile(closure_0), ];
@@ -85,10 +85,10 @@ export default function useUserApplicationWidgetData(arg0, applicationId) {
   let obj = require("get initialized");
   const items2 = [ApplicationWidgetConfigStore];
   const items3 = [applicationId];
-  [tmp7, tmp8] = _slicedToArray(obj.useStateFromStoresArray(items2, f126862, items3), 2);
+  [tmp7, tmp8] = _slicedToArray(obj.useStateFromStoresArray(items2, f126916, items3), 2);
   importDefault = tmp8;
   let tmp9 = null;
-  const tmp6 = _slicedToArray(obj.useStateFromStoresArray(items2, f126862, items3), 2);
+  const tmp6 = _slicedToArray(obj.useStateFromStoresArray(items2, f126916, items3), 2);
   if (null != tmp8) {
     tmp9 = applicationId;
   }
@@ -98,8 +98,8 @@ export default function useUserApplicationWidgetData(arg0, applicationId) {
   const items4 = [first2];
   const items5 = [tmp9];
   const tmp4Result5 = tmp4(504);
-  const items6 = [tmp4Result5.useStateFromStores(items4, f126863, items5) && null == getOrFetchApplication, ];
-  tmp4Result5.useStateFromStores(items4, f126863, items5) && null == getOrFetchApplication;
+  const items6 = [tmp4Result5.useStateFromStores(items4, f126917, items5) && null == getOrFetchApplication, ];
+  tmp4Result5.useStateFromStores(items4, f126917, items5) && null == getOrFetchApplication;
   if (getOrFetchApplication == null) {
     getOrFetchApplication = null;
   }
@@ -164,10 +164,10 @@ export default function useUserApplicationWidgetData(arg0, applicationId) {
   const items12 = [UserProfileStore];
   const items13 = [tmp23];
   const tmp4Result8 = tmp4(504);
-  [tmp25, tmp26] = _slicedToArray(tmp4Result8.useStateFromStoresArray(items12, f126867, items13), 2);
+  [tmp25, tmp26] = _slicedToArray(tmp4Result8.useStateFromStoresArray(items12, f126921, items13), 2);
   applicationWidgetConfig = tmp27;
   const items14 = [null != tmp23 && !tmp25 && null == tmp26, tmp23];
-  _slicedToArray(tmp4Result8.useStateFromStoresArray(items12, f126867, items13), 2);
+  _slicedToArray(tmp4Result8.useStateFromStoresArray(items12, f126921, items13), 2);
   const effect1 = obj5.useEffect(() => {
     const tmp = closure_1 && null != closure_0;
     if (tmp) {

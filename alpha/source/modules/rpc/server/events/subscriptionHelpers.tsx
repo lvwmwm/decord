@@ -1,26 +1,28 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16344
+// Function ID: 16345
 // Name: subscriptionHelpers
-// Dependencies: [4862, 16290, 7846, 1072, 2018, 11693, 9326, 16294, 16295, 8773, 16296, 7868, 2]
+// Dependencies: [4862, 16294, 7846, 1072, 2018, 6847, 11694, 9326, 16298, 16299, 8773, 16300, 7868, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 16340 (subscriptionHelpers)
+// Module 16344 (subscriptionHelpers)
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 2018 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
 import getSocketFrameDefault from "getSocketFrame" /* 9326 */;
-import Constants3 from "Constants" /* 11693 */;
-import useThermalState from "useThermalState" /* 16294 */;
-import ThermalStates from "ThermalStates" /* 16295 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16296 */;
+import Constants3 from "Constants" /* 11694 */;
+import useThermalState from "useThermalState" /* 16298 */;
+import ThermalStates from "ThermalStates" /* 16299 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16300 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16290 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16294 */;
 import QuestStore from "QuestStore" /* 7846 */;
 import size from "module_2" /* 2 */;
 
 const RPCEvents = Constants.RPCEvents;
 const ActivityScreenOrientation = Constants2.ActivityScreenOrientation;
+const FrameLayoutModes = FramesConstants.FrameLayoutModes;
 const ActivityLayoutMode = Constants3.ActivityLayoutMode;
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
@@ -38,12 +40,26 @@ export function getInitialSubscriptionPayload(application, arg1, quest_id) {
     if (null != id) {
       layoutModeForApp = EmbeddedActivitiesStore.getLayoutModeForApp(id);
     }
-    let tmp37 = null;
+    if (null == layoutModeForApp) {
+      const tmp46 = getSocketFrameDefault(application);
+      let tmp47 = null;
+      if (null != tmp46) {
+        let FOCUSED2;
+        if (tmp46.data.layoutMode === FrameLayoutModes.PIP) {
+          FOCUSED2 = ActivityLayoutMode.PIP;
+        } else {
+          FOCUSED2 = ActivityLayoutMode.FOCUSED;
+        }
+        tmp47 = FOCUSED2;
+      }
+      layoutModeForApp = tmp47;
+    }
+    let tmp51 = null;
     if (null != layoutModeForApp) {
-      tmp37 = { is_pip_mode: layoutModeForApp !== ActivityLayoutMode.FOCUSED };
+      tmp51 = { is_pip_mode: layoutModeForApp !== ActivityLayoutMode.FOCUSED };
       const obj2 = { is_pip_mode: layoutModeForApp !== ActivityLayoutMode.FOCUSED };
     }
-    return tmp37;
+    return tmp51;
   } else if (RPCEvents.ACTIVITY_LAYOUT_MODE_UPDATE === arg1) {
     const application2 = application.application;
     let id1;
@@ -54,12 +70,26 @@ export function getInitialSubscriptionPayload(application, arg1, quest_id) {
     if (null != id1) {
       layoutModeForApp1 = EmbeddedActivitiesStore.getLayoutModeForApp(id1);
     }
-    let tmp32 = null;
+    if (null == layoutModeForApp1) {
+      const tmp34 = getSocketFrameDefault(application);
+      let tmp35 = null;
+      if (null != tmp34) {
+        let FOCUSED;
+        if (tmp34.data.layoutMode === FrameLayoutModes.PIP) {
+          FOCUSED = ActivityLayoutMode.PIP;
+        } else {
+          FOCUSED = ActivityLayoutMode.FOCUSED;
+        }
+        tmp35 = FOCUSED;
+      }
+      layoutModeForApp1 = tmp35;
+    }
+    let tmp39 = null;
     if (null != layoutModeForApp1) {
-      tmp32 = { layout_mode: layoutModeForApp1 };
+      tmp39 = { layout_mode: layoutModeForApp1 };
       const obj5 = { layout_mode: layoutModeForApp1 };
     }
-    return tmp32;
+    return tmp39;
   } else if (RPCEvents.FRAME_LAYOUT_MODE_UPDATE === arg1) {
     const tmp26 = getSocketFrameDefault(application);
     let tmp27 = null;

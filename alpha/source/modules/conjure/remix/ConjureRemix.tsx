@@ -1,275 +1,23 @@
 // Module ID: 10849
 // Function ID: 10850
 // Name: ConjureRemix
-// Dependencies: [5, 10850, 572, 1113, 3868, 10880, 10963, 10315, 10875, 2]
-// Exports: remixConjureProjectInto
+// Dependencies: [5, 10850, 6845, 572, 1113, 3868, 10880, 10963, 10315, 10875, 2]
+// Exports: copyProjectName, createConjureRemix, isValidCopyName
 
 // Module 10849 (ConjureRemix)
-import _modDef3868 from "module_3868" /* 3868 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10880 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10963 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c3, c4, c7, closure_2, dependencyMap, importDefault;
+let c8;
 
 let closure_4;
 let hasOwnProperty;
-function prepareConjureRemix(project, currentGuildId, arg2) {
-  let closure_1;
-  let name;
-  const f126106 = () => "rejected";
-  _require = currentGuildId;
-  importDefault = arg2;
-  function accept(comma) {
-    hasOwnProperty(comma);
-    if (hasOwnProperty == null) {
-      obj = conjureRemixConnection;
-      const acceptRemixResult = obj.acceptRemix(_asyncToGenerator, comma);
-      hasOwnProperty = acceptRemixResult.catch(f126106);
-    }
-    return hasOwnProperty;
-  }
-  let obj = function _open() {
-    let value;
-    obj = _asyncToGenerator(async (arg0, value) => {
-      let closure_0;
-      let deleteProjectResult;
-      let v3;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
-        }
-      } else {
-        try {
-          let user;
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              let c1 = 0;
-              user = undefined;
-              closure_2 = undefined;
-              c7 = true;
-              c3 = 1;
-              c4 = 1;
-              const obj5 = { value, done: false };
-              return obj5;
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              user = value;
-              if (null == user) {
-                const obj7 = { ok: false, message, kept: false };
-                c4 = 3;
-                const obj8 = { value: obj7, done: true };
-                return obj8;
-              } else {
-                c3 = 2;
-                c4 = 1;
-                const obj10 = { value: closure_130_8(user.id), done: false };
-                return obj10;
-              }
-            }
-          } else {
-            let obj19;
-            if (2 === c3) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj11 = { value, done: true };
-                return obj11;
-              } else {
-                closure_2 = value;
-                if ("unreachable" === closure_2) {
-                  let c5 = null;
-                  c7 = false;
-                  const obj12 = { ok: false, message, kept: true };
-                  obj19 = obj12;
-                } else if ("rejected" === closure_2) {
-                  if (closure_130_4 != null) {
-                    tmp31();
-                  }
-                  c4(user.id);
-                  const obj9 = guildId(closure_2[8]);
-                  c3 = 3;
-                  c4 = 1;
-                  const obj13 = {
-                    value: deleteProjectResult.catch(() => {
-
-                                }),
-                    done: false
-                  };
-                  deleteProjectResult = obj9.deleteProject(user.id);
-                  return obj13;
-                } else if (guildId === guildId) {
-                  const obj14 = { ok: true, projectId: user.id, guildId };
-                  obj = obj14;
-                  obj19 = obj;
-                } else {
-                  const obj15 = { guild_id: guildId, preview_guild_id: guildId };
-                  const obj21 = guildId(closure_2[8]);
-                  const result = obj21.updateProjectSettings(user.id, obj15);
-                  c3 = 4;
-                  c4 = 1;
-                  const obj16 = { value: result.then(() => true, () => false), done: false };
-                  return obj16;
-                }
-                c4 = 3;
-                const obj17 = { value: obj19, done: true };
-                return obj17;
-              }
-            } else if (3 === c3) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj18 = { value, done: true };
-                return obj18;
-              } else {
-                obj19 = { ok: false, message, kept: false };
-              }
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj20 = { value, done: true };
-              return obj20;
-            } else if (value) {
-              if (closure_130_4 != null) {
-                tmp9();
-              }
-              const obj2 = guildId(closure_2[5]);
-              obj2.forgetEarlyTicket(user.id);
-              c4(user.id);
-              closure_1_5(user.id);
-              const obj22 = { ok: true, projectId: user.id, guildId };
-              obj = obj22;
-            } else {
-              obj = { ok: true, projectId: user.id, guildId };
-            }
-          }
-        } catch (tmp55) {
-          c4 = 3;
-          throw tmp55;
-        }
-      }
-    });
-    return obj(...arguments);
-  };
-  const intl = require("intl").intl;
-  dependencyMap = intl.string(_modDef3868.Cn8H0Y);
-  obj = require("ConjureWorkerTickets");
-  const mintRemixTicketResult = obj.mintRemixTicket(project.id);
-  _asyncToGenerator = mintRemixTicketResult;
-  mintRemixTicketResult.catch(() => {
-
-  });
-  let closure_5 = null;
-  c6 = null;
-  map = false;
-  let obj2 = require("createNonce");
-  const nonce = obj2.createNonce();
-  let result = map.set(nonce, (id, ws_ticket) => {
-    map.delete(nonce);
-    c6 = id;
-    obj = ConjureWorkerTickets;
-    const result = obj.rememberCreatedProjectTicket(id, ws_ticket);
-    hasOwnProperty(id);
-    if (hasOwnProperty == null) {
-      const tmp2Result = conjureRemixConnection;
-      const acceptRemixResult = tmp2Result.acceptRemix(_asyncToGenerator, id);
-      hasOwnProperty = acceptRemixResult.catch(f126106);
-    }
-  });
-  const tmp4 = require("ConjureActionCreators");
-  let obj3 = { name: "" + name.slice(0, 120) + c6, guild_id: currentGuildId, install_scope: project.install_scope, remix_source_project_id: project.id, nonce };
-  name = project.name;
-  const createRemix = tmp4.createRemix;
-  const remix = createRemix(obj3);
-  let nextPromise = remix.then((remix_preview) => {
-    map.delete(nonce);
-    if (null != remix_preview.remix_preview) {
-      obj = ConjureActionCreators;
-      obj.applyRemixPreview(remix_preview.id, remix_preview.remix_preview);
-      const tmp5 = c7;
-      if (!tmp5) {
-        let tmp6;
-        if (closure_1 != null) {
-          tmp6 = closure_1(remix_preview);
-        }
-        closure_4 = tmp6;
-      }
-    }
-    const id = remix_preview.id;
-    hasOwnProperty(id);
-    if (hasOwnProperty == null) {
-      const obj2 = conjureRemixConnection;
-      const acceptRemixResult = obj2.acceptRemix(_asyncToGenerator, id);
-      hasOwnProperty = acceptRemixResult.catch(f126106);
-    }
-    return remix_preview;
-  }, () => {
-    map.delete(nonce);
-    if (null != c6) {
-      React3(c6);
-    }
-    return null;
-  });
-  let obj4 = {
-    created: nextPromise,
-    open(arg0) {
-      return obj(...arguments);
-    },
-    dismiss() {
-      const tmp = c7;
-      if (!tmp) {
-        c7 = true;
-        nextPromise = nextPromise.then((id) => {
-          if (closure_1_4 != null) {
-            tmp();
-          }
-          if (null != id) {
-            closure_4(id.id);
-          }
-        });
-      }
-    }
-  };
-  return obj4;
-}
-let _asyncToGenerator = _asyncToGenerator_mod;
-({ closeConnection: closure_4, ensureConnection: hasOwnProperty } = ConjureConnectionStore);
-let c6 = " (Remix)";
+let metroRequire;
+({ closeConnection: closure_4, ensureConnection: hasOwnProperty, sendUserMessage: metroRequire } = ConjureConnectionStore);
+let c7 = " (Copy)";
 let map = new Map();
 const subscription = Dispatcher.subscribe("CONJURE_PROJECT_CREATE_PROGRESS", (nonce) => {
   let projectId;
@@ -282,8 +30,371 @@ const subscription = Dispatcher.subscribe("CONJURE_PROJECT_CREATE_PROGRESS", (no
 });
 let result = size.fileFinishedImporting("modules/conjure/remix/ConjureRemix.tsx");
 
-export { prepareConjureRemix };
-export function remixConjureProjectInto(project, currentGuildId) {
-  const obj = prepareConjureRemix(project, currentGuildId);
-  return obj.open(currentGuildId);
+export function copyProjectName(name) {
+  return "" + name.slice(0, ConjureProjectTypes.MAX_PROJECT_NAME_LENGTH - 7) + c7;
+}
+export function isValidCopyName(first2) {
+  return first2.trim().length >= ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH;
+}
+export function createConjureRemix(project, arg1) {
+  let closure_0 = project;
+  let closure_1 = arg1;
+  let obj = function _confirm() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let c1;
+      let tmp3;
+      let v2;
+      function startRemix(id, guild_id, name, arg3) {
+        const f140372 = () => "rejected";
+        closure_0 = guild_id;
+        closure_1 = arg3;
+        function accept(comma) {
+          closure_2_5(comma);
+          if (closure_5 == null) {
+            obj = closure_2_0(closure_2_2[7]);
+            const acceptRemixResult = obj.acceptRemix(closure_3, comma);
+            closure_5 = acceptRemixResult.catch(f140372);
+          }
+          return closure_5;
+        }
+        value = function _open() {
+          obj = closure_2_3(function*(arg0, value) {
+            let deleteProjectResult;
+            if (c3 === 2) {
+              c3 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "HermesInternal", done: "HermesInternal" };
+              }
+            } else {
+              try {
+                let v0;
+                c3 = 2;
+                if (0 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    v0 = undefined;
+                    closure_1 = undefined;
+                    c7 = true;
+                    c2 = 1;
+                    c3 = 1;
+                    const obj5 = { value, done: false };
+                    return obj5;
+                  }
+                } else if (1 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj6 = { value, done: true };
+                    return obj6;
+                  } else {
+                    v0 = value;
+                    if (null == v0) {
+                      const obj7 = { ok: false, message, kept: false };
+                      c3 = 3;
+                      const obj8 = { value: obj7, done: true };
+                      return obj8;
+                    } else {
+                      c2 = 2;
+                      c3 = 1;
+                      const obj9 = { value: closure_129_9(v0.id), done: false };
+                      return obj9;
+                    }
+                  }
+                } else if (2 === c2) {
+                  if (arg0 === 1) {
+                    c3 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c3 = 3;
+                    const obj10 = { value, done: true };
+                    return obj10;
+                  } else {
+                    closure_1 = value;
+                    if ("unreachable" === closure_1) {
+                      c5 = null;
+                      c7 = false;
+                      const obj11 = { ok: false, message, kept: true };
+                      value = obj11;
+                    } else if ("rejected" === closure_1) {
+                      if (closure_129_4 != null) {
+                        tmp10();
+                      }
+                      closure_1_4(v0.id);
+                      const obj4 = v0(c2[9]);
+                      c2 = 3;
+                      c3 = 1;
+                      const obj12 = {
+                        value: deleteProjectResult.catch(() => {
+
+                                  }),
+                        done: false
+                      };
+                      deleteProjectResult = obj4.deleteProject(v0.id);
+                      return obj12;
+                    } else {
+                      const obj13 = { ok: true, projectId: v0.id, guildId };
+                      value = obj13;
+                    }
+                    c3 = 3;
+                    const obj14 = { value, done: true };
+                    return obj14;
+                  }
+                } else if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj15 = { value, done: true };
+                  return obj15;
+                } else {
+                  value = { ok: false, message, kept: false };
+                }
+              } catch (tmp33) {
+                c3 = 3;
+                throw tmp33;
+              }
+            }
+          });
+          return obj(...arguments);
+        };
+        const intl = closure_0(closure_2[4]).intl;
+        closure_2 = intl.string(closure_1(closure_2[5]).Cn8H0Y);
+        value = closure_0(closure_2[6]);
+        const mintRemixTicketResult = value.mintRemixTicket(id.id);
+        closure_3 = mintRemixTicketResult;
+        mintRemixTicketResult.catch(() => {
+
+        });
+        let closure_5 = null;
+        let c6 = null;
+        c7 = false;
+        map = false;
+        let obj2 = closure_0(closure_2[8]);
+        const nonce = obj2.createNonce();
+        let result = map.set(nonce, (id, ws_ticket) => {
+          map.delete(nonce);
+          c6 = id;
+          obj = closure_2_0(closure_2_2[6]);
+          const result = obj.rememberCreatedProjectTicket(id, ws_ticket);
+          closure_2_5(id);
+          const tmp2 = closure_2_0;
+          const tmp3 = closure_2_2;
+          if (closure_5 == null) {
+            const tmp2Result = tmp2(tmp3[7]);
+            const acceptRemixResult = tmp2Result.acceptRemix(closure_3, id);
+            closure_5 = acceptRemixResult.catch(f140372);
+          }
+        });
+        let obj3 = closure_0(closure_2[9]);
+        let obj4 = { name, guild_id, install_scope: id.install_scope, remix_source_project_id: id.id, nonce };
+        const remix = obj3.createRemix(obj4);
+        const promise = remix.then((remix_preview) => {
+          map.delete(nonce);
+          if (null != remix_preview.remix_preview) {
+            obj = closure_2_0(closure_2_2[9]);
+            obj.applyRemixPreview(remix_preview.id, remix_preview.remix_preview);
+            const tmp5 = c8;
+            if (!tmp5) {
+              let tmp6;
+              if (closure_1 != null) {
+                tmp6 = closure_1(remix_preview);
+              }
+              closure_4 = tmp6;
+            }
+          }
+          const id = remix_preview.id;
+          closure_2_5(id);
+          if (closure_5 == null) {
+            const obj2 = closure_2_0(closure_2_2[7]);
+            const acceptRemixResult = obj2.acceptRemix(closure_3, id);
+            closure_5 = acceptRemixResult.catch(f140372);
+          }
+          return remix_preview;
+        }, () => {
+          map.delete(nonce);
+          if (null != c6) {
+            closure_2_4(c6);
+          }
+          return null;
+        });
+        let obj5 = {
+          guildId: guild_id,
+          name,
+          open() {
+            return obj(...arguments);
+          },
+          abandon() {
+            const tmp = c7 || c8;
+            if (!tmp) {
+              c8 = true;
+              promise.then((id) => {
+                if (closure_1_4 != null) {
+                  tmp();
+                }
+                if (null != id) {
+                  closure_4(id.id);
+                }
+              });
+            }
+          }
+        };
+        return obj5;
+      }
+      let closure_0 = arg0;
+      closure_1 = value;
+      if (c7 === 2) {
+        c7 = 3;
+        const str = "Generator functions may not be called on executing generators";
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else {
+        const flag = true;
+        const flag2 = false;
+        if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            let obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "HermesInternal", done: "HermesInternal" };
+          }
+        } else {
+          let c5;
+          try {
+            let closure_3;
+            c7 = 2;
+            const tmp4 = c6;
+            if (0 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                let obj4 = { value, done: true };
+                return obj4;
+              } else {
+                let closure_2 = tmp4;
+                c1 = undefined;
+                c2 = undefined;
+                ({ name: c1, prompt: c2 } = closure_1);
+                closure_3 = undefined;
+                value = undefined;
+                c6 = 1;
+                c7 = 1;
+                return { value: "flexDirection", done: true };
+              }
+            } else if (1 === tmp4) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                let obj5 = { value, done: true };
+                return obj5;
+              } else {
+                const tmp51 = c3;
+                if (tmp51) {
+                  c7 = 3;
+                  return { value: null, done: true };
+                } else {
+                  c3 = true;
+                  closure_3 = c1.trim();
+                  c5 = 1;
+                  let guildId;
+                  if (c2 != null) {
+                    guildId = c2.guildId;
+                  }
+                  let tmp24 = guildId === closure_0;
+                  if (tmp24) {
+                    tmp24 = c2.name === closure_3;
+                  }
+                  if (!tmp24) {
+                    let obj3 = c2;
+                    if (c2 != null) {
+                      obj3.abandon();
+                    }
+                    const tmp33 = closure_0;
+                    c2 = startRemix(closure_131_0, closure_0, closure_3, closure_131_1);
+                  }
+                  c6 = 3;
+                  c7 = 1;
+                  let obj6 = { value: c2.open(), done: false };
+                  return obj6;
+                }
+              }
+            } else if (2 === tmp4) {
+              c5 = 0;
+              c3 = false;
+              throw value;
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c3 = false;
+              c7 = 3;
+              let obj7 = { value, done: true };
+              return obj7;
+            } else {
+              if (value.ok) {
+                const tmp10 = c2;
+                const tmp11 = c6(value.projectId, c2, undefined, { remix: true });
+              } else {
+                let tmp5 = value;
+                if (!value.kept) {
+                  let tmp6 = closure_3;
+                  c2 = null;
+                }
+              }
+              c5 = 0;
+              c3 = false;
+              c7 = 3;
+              obj = { value, done: true };
+              return obj;
+            }
+          } catch (tmp40) {
+            value = tmp40;
+            if (0 === c5) {
+              c7 = 3;
+              throw tmp40;
+            } else {
+              c6 = 2;
+            }
+          }
+        }
+      }
+    });
+    return obj(...arguments);
+  };
+  let c2 = null;
+  let c3 = false;
+  obj = {
+    confirm(arg0, arg1) {
+      return obj(...arguments);
+    },
+    dismiss() {
+      let abandonResult;
+      obj = c2;
+      if (c2 != null) {
+        abandonResult = obj.abandon();
+      }
+      return abandonResult;
+    }
+  };
+  return obj;
 }

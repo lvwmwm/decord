@@ -1,10 +1,10 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11345
+// Function ID: 11346
 // Name: PinotMemberNoticeBar
 // Dependencies: [19, 17, 1072, 21, 5014, 575, 11335, 5709, 2061, 5624, 1113, 3160, 6980, 7054, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11344 (PinotMemberNoticeBar)
+// Module 11345 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

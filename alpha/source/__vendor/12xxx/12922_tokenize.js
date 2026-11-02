@@ -1,47 +1,78 @@
 // Module ID: 12922
 // Function ID: 12923
 // Name: tokenize
-// Dependencies: [12833, 12877]
+// Dependencies: [12836]
 
 // Module 12922 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
-import tokenize2 from "tokenize" /* 12877 */;
+import tokenize from "tokenize" /* 12836 */;
 
-const Comma = tokenize.TYPE.Comma;
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-
-export default function() {
-  const self = this;
-  const list = this.createList();
-  const scanner = this.scanner;
-  scanner.skipSC();
-  list.push(this.Identifier());
-  const scanner2 = this.scanner;
-  scanner2.skipSC();
-  if (this.scanner.tokenType === Comma) {
-    let element;
-    list.push(self.Operator());
-    const tokenIndex = self.scanner.tokenIndex;
-    if (self.parseCustomProperty) {
-      element = self.Value(null);
+const Delim = tokenize.TYPE.Delim;
+const Ident = tokenize.TYPE.Ident;
+const Dimension = tokenize.TYPE.Dimension;
+const Percentage = tokenize.TYPE.Percentage;
+const Number = tokenize.TYPE.Number;
+const Hash = tokenize.TYPE.Hash;
+const Colon = tokenize.TYPE.Colon;
+const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+const obj = {
+  getNode(arg0) {
+    const self = this;
+    const tokenType = this.scanner.tokenType;
+    if (LeftSquareBracket === tokenType) {
+      return self.AttributeSelector();
+    } else if (Hash === tokenType) {
+      return self.IdSelector();
+    } else if (Colon === tokenType) {
+      let result;
+      const scanner = self.scanner;
+      if (scanner.lookupType(1) === tmp6) {
+        result = self.PseudoElementSelector();
+      } else {
+        result = self.PseudoClassSelector();
+      }
+      return result;
+    } else if (Ident === tokenType) {
+      return self.TypeSelector();
     } else {
-      element = self.Raw(self.scanner.tokenIndex, tokenize2.mode.exclamationMarkOrSemicolon, false);
-    }
-    if ("Value" === element.type) {
-      const children = element.children;
-      if (children.isEmpty()) {
-        let diff = tokenIndex - self.scanner.tokenIndex;
-        if (diff <= 0) {
-          const scanner3 = self.scanner;
-          while (scanner3.lookupType(diff) !== WhiteSpace) {
-            diff = diff + 1;
+      if (Number !== tokenType) {
+        if (Percentage !== tokenType) {
+          if (Dimension === tokenType) {
+            const source = self.scanner.source;
+            if (46 === source.charCodeAt(self.scanner.tokenStart)) {
+              self.error("Identifier is expected", self.scanner.tokenStart + 1);
+            }
+          } else if (Delim === tokenType) {
+            const source2 = self.scanner.source;
+            const charCodeAtResult = source2.charCodeAt(self.scanner.tokenStart);
+            if (43 !== charCodeAtResult) {
+              if (62 !== charCodeAtResult) {
+                if (126 !== charCodeAtResult) {
+                  if (47 === charCodeAtResult) {
+                    return self.Combinator();
+                  } else if (46 === charCodeAtResult) {
+                    return self.ClassSelector();
+                  } else {
+                    if (42 !== charCodeAtResult) {
+                      if (124 !== charCodeAtResult) {
+                        if (35 === charCodeAtResult) {
+                          return self.IdSelector();
+                        }
+                      }
+                    }
+                    return self.TypeSelector();
+                  }
+                }
+              }
+            }
+            arg0.space = null;
+            arg0.ignoreWSAfter = true;
+            return self.Combinator();
           }
-          const children2 = element.children;
-          children2.appendData({ type: "WhiteSpace", loc: null, value: " " });
         }
       }
+      return self.Percentage();
     }
-    list.push(element);
   }
-  return list;
 };
+
+export default obj;

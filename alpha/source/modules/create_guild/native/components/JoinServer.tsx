@@ -1,10 +1,10 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14325
+// Function ID: 14326
 // Name: JoinServer
-// Dependencies: [32, 19, 7147, 21, 5014, 5586, 1497, 6998, 14239, 7292, 7146, 1113, 8946, 2]
+// Dependencies: [32, 19, 7147, 21, 5014, 5586, 1497, 6998, 14254, 7292, 7146, 1113, 8946, 2]
 // Exports: default
 
-// Module 14310 (JoinServer)
+// Module 14325 (JoinServer)
 import Fragment from "Fragment" /* 21 */;
 import NavigatorConstants from "NavigatorConstants" /* 5586 */;
 import NavigatorHeader from "NavigatorHeader" /* 6998 */;

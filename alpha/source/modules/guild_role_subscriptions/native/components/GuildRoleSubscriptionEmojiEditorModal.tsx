@@ -1,10 +1,10 @@
-// Module ID: 19969
-// Function ID: 19970
+// Module ID: 19976
+// Function ID: 19977
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 4969, 21, 5014, 575, 19961, 504, 5717, 1409, 19967, 1113, 5958, 6030, 6974, 19957, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 4969, 21, 5014, 575, 19968, 504, 5717, 1409, 19974, 1113, 5958, 6030, 6974, 19964, 5624, 2]
 // Exports: default
 
-// Module 19969 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 19976 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;

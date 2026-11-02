@@ -1,9 +1,9 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14909
+// Function ID: 14910
 // Name: NoteStore
 // Dependencies: [4878, 4886, 4889, 2]
 
-// Module 14905 (NoteStore)
+// Module 14909 (NoteStore)
 import LibdiscoreStore2 from "LibdiscoreStore" /* 4886 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 4889 */;
 import PlainRecord from "PlainRecord" /* 4878 */;

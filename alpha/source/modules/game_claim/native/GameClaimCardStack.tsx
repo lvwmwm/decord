@@ -1,10 +1,10 @@
-// Module ID: 18238
-// Function ID: 18239
+// Module ID: 18251
+// Function ID: 18252
 // Name: GameClaimCardStack
 // Dependencies: [19, 17, 21, 575, 671, 5014, 5717, 9572, 2]
 // Exports: default
 
-// Module 18238 (GameClaimCardStack)
+// Module 18251 (GameClaimCardStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5717 */;

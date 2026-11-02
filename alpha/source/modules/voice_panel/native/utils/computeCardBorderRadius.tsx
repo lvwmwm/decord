@@ -1,10 +1,10 @@
-// Module ID: 19244
-// Function ID: 19245
+// Module ID: 19251
+// Function ID: 19252
 // Name: computeCardBorderRadius
 // Dependencies: [11223, 2]
 // Exports: default
 
-// Module 19244 (computeCardBorderRadius)
+// Module 19251 (computeCardBorderRadius)
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import size from "module_2" /* 2 */;
 

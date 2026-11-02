@@ -1,10 +1,10 @@
-// Module ID: 18910
-// Function ID: 18911
+// Module ID: 18917
+// Function ID: 18918
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 4881, 4863, 4920, 4885, 4946, 4956, 1383, 1072, 21, 5014, 575, 1497, 1625, 504, 7420, 11645, 4951, 1084, 9033, 7485, 1992, 5068, 5958, 1113, 5709, 2061, 4871, 18911, 9812, 5624, 5652, 10819, 6975, 8025, 7060, 18915, 1375, 18916, 2]
+// Dependencies: [32, 5, 19, 17, 4881, 4863, 4920, 4885, 4946, 4956, 1383, 1072, 21, 5014, 575, 1497, 1625, 504, 7420, 11646, 4951, 1084, 9033, 7485, 1992, 5068, 5958, 1113, 5709, 2061, 4871, 18918, 9812, 5624, 5652, 10819, 6975, 8025, 7060, 18922, 1375, 18923, 2]
 // Exports: default
 
-// Module 18910 (ChannelSettingsPermissionsOverrides)
+// Module 18917 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
@@ -14,8 +14,8 @@ import GuildRecord from "GuildRecord" /* 4881 */;
 import PermissionUtils from "PermissionUtils" /* 4951 */;
 import TableRowGroup2 from "TableRowGroup" /* 7060 */;
 import useAppChannelApplication from "useAppChannelApplication" /* 7420 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11645 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18911 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11646 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18918 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

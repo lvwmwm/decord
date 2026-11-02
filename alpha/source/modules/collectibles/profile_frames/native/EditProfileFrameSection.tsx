@@ -1,18 +1,18 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16507
+// Function ID: 16508
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 7727, 8794, 21, 575, 5014, 15070, 16493, 15071, 7351, 9518, 2]
+// Dependencies: [19, 17, 7727, 8794, 21, 575, 5014, 15074, 16506, 15075, 7351, 9518, 2]
 
-// Module 16494 (EditProfileFrameSection)
+// Module 16507 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 7727 */;
 import ProfileFrameConstants from "ProfileFrameConstants" /* 8794 */;
 import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9518 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15070 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15071 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 16493 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15074 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15075 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 16506 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -57,7 +57,7 @@ const memoResult = react.memo((arg0) => {
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-        const EditCollectiblesListItemShop = tmp(15071).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15075).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileFrameRecord(profileFrame)) {
         const obj4 = { profileFrame, isSelected: require === profileFrame.skuId, setSelectedProfileFrame, size: width };

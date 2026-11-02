@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12410
+// Function ID: 12411
 // Name: AppLauncherHomeScreen
-// Dependencies: [32, 19, 17, 4862, 9762, 5627, 12260, 4946, 12232, 1496, 1072, 4860, 21, 575, 12264, 5014, 5624, 1113, 12244, 9761, 11044, 5692, 6975, 12239, 1409, 12271, 12272, 11841, 504, 5683, 12273, 5717, 8992, 12274, 12248, 7112, 1625, 12275, 8841, 7217, 11500, 1491, 11501, 11725, 12278, 12277, 12279, 12280, 12282, 12283, 12240, 7700, 12284, 12, 5760, 7207, 12286, 12287, 6028, 1260, 5044, 4847, 12288, 12289, 12291, 7218, 12293, 1379, 12301, 12302, 12303, 12306, 12265, 12307, 12227, 12308, 12311, 8961, 11721, 12258, 12312, 12313, 12299, 12314, 1396, 12315, 12316, 2]
+// Dependencies: [32, 19, 17, 4862, 9762, 5627, 12400, 4946, 12372, 1496, 1072, 4860, 21, 575, 12404, 5014, 5624, 1113, 12384, 9761, 11044, 5692, 6975, 12379, 1409, 12411, 12412, 11842, 504, 5683, 12413, 5717, 8992, 12414, 12388, 7112, 1625, 12415, 8841, 7217, 11501, 1491, 11502, 11726, 12418, 12417, 12419, 12420, 12422, 12423, 12380, 7700, 12424, 12, 5760, 7207, 12426, 12427, 6028, 1260, 5044, 4847, 12428, 12429, 12431, 7218, 12433, 1379, 12441, 12442, 12443, 12446, 12405, 12447, 12367, 12448, 12451, 8961, 11722, 12398, 12452, 12453, 12439, 12454, 1396, 12455, 12456, 2]
 // Exports: default
 
-// Module 12270 (AppLauncherHomeScreen)
+// Module 12410 (AppLauncherHomeScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -20,28 +20,28 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
 import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11044 */;
-import AppLauncherContext from "AppLauncherContext" /* 11500 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11501 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11725 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11841 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12239 */;
-import FrecencySection from "FrecencySection" /* 12240 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 12244 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12264 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
-import HeroMedia from "HeroMedia" /* 12272 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12274 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12277 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 12288 */;
+import AppLauncherContext from "AppLauncherContext" /* 11501 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11726 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11842 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12379 */;
+import FrecencySection from "FrecencySection" /* 12380 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 12384 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12404 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+import HeroMedia from "HeroMedia" /* 12412 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12414 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12417 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 12428 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
 import DevSettingsStore from "DevSettingsStore" /* 5627 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 12260 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 12400 */;
 import PermissionStore from "PermissionStore" /* 4946 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12232 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12372 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -199,7 +199,7 @@ function ActivityRow(section) {
   let tmp6 = null != applicationIconSource;
   if (tmp6) {
     const obj2 = { iconSource: applicationIconSource };
-    tmp6 = closure_19(tmp(12244), obj2);
+    tmp6 = closure_19(tmp(12384), obj2);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -243,7 +243,7 @@ function ActivityItemTuple(arg0) {
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "flexDirection" };
+      return { width: "raw", height: "cix" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c22) };
@@ -280,7 +280,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f101562 = () => {
+  const f101980 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -321,8 +321,8 @@ function ActivityItem(context) {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[28]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f101562), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f101562), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f101980), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f101980), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -407,7 +407,7 @@ function RecommendationItemTuple(isLastTuple) {
   const items1 = [containerWidth, num];
   styles = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "flexDirection" };
+      return { width: "raw", height: "cix" };
     } else {
       const tmp6 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - 12 * (2 - 1)) / 2);
       size = { width: tmp6, height: roundToNearestPixelDefault(tmp6 / c22) };
@@ -482,7 +482,7 @@ function RecommendationItem(onPress) {
   }
   const tmp13 = "loading" === tmp9Result.state || null == tmp9Result.url;
   if (tmp12) {
-    tmp14 = closure_19(tmp8(12273), {});
+    tmp14 = closure_19(tmp8(12413), {});
   } else {
     tmp14 = null;
     if (!tmp13) {
@@ -583,7 +583,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section, arg3) {
     const tmp11 = _require;
     if (bound < arr.length) {
       let obj = {
-        type: tmp11(12277).AppLauncherHomeListItemType.VIEW_ALL,
+        type: tmp11(12417).AppLauncherHomeListItemType.VIEW_ALL,
         applications: arr.map((application) => application.application),
         promotedApplicationIds: reduce((add, showsPromoted) => {
               if (showsPromoted.showsPromoted) {
@@ -929,7 +929,7 @@ export default function AppLauncherHomeScreen(route) {
   }
   items13[1] = sections1;
   let memo5 = useMemo(() => {
-    const f139394 = (commands) => Object.keys(commands.commands).length > 0;
+    const f139472 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -947,11 +947,11 @@ export default function AppLauncherHomeScreen(route) {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f139394);
+    let someResult = values.some(f139472);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f139394);
+      someResult = values2.some(f139472);
     }
     return someResult;
   }, items13);

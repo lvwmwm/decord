@@ -1,9 +1,9 @@
-// Module ID: 12783
-// Function ID: 12784
+// Module ID: 12786
+// Function ID: 12787
 // Name: AIShimmerTypes
 // Dependencies: [2]
 
-// Module 12783 (AIShimmerTypes)
+// Module 12786 (AIShimmerTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/visual-identities/ai/AIShimmer/AIShimmerTypes.tsx");

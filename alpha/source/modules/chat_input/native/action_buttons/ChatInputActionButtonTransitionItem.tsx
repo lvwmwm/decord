@@ -1,17 +1,17 @@
-// Module ID: 12805
-// Function ID: 12806
+// Module ID: 12808
+// Function ID: 12809
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 12806, 21, 5080, 5095, 5254, 12807, 2]
+// Dependencies: [19, 17, 12809, 21, 5080, 5095, 5254, 12810, 2]
 // Exports: default, interactivityProps
 
-// Module 12805 (ChatInputActionButtonTransitionItem)
+// Module 12808 (ChatInputActionButtonTransitionItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5080 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
-import ChatInputConstants from "ChatInputConstants" /* 12806 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12807 */;
+import ChatInputConstants from "ChatInputConstants" /* 12809 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12810 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

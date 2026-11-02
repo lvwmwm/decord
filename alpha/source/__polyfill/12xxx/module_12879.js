@@ -1,167 +1,113 @@
 // Module ID: 12879
 // Function ID: 12880
-// Dependencies: [12833]
+// Dependencies: [12836, 12880]
 
 // Module 12879
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
+import tokenize2 from "tokenize" /* 12880 */;
 
-let items;
-let items1;
 let obj2;
-function getAttributeName() {
-  let flag;
-  let flag2;
-  let scanner3;
-  const self = this;
-  if (this.scanner.eof) {
-    self.error("Unexpected end of input");
-  }
-  const tokenStart = self.scanner.tokenStart;
-  const scanner = self.scanner;
-  if (scanner.isDelim(42)) {
-    self.scanner.next();
-    flag = false;
-    flag2 = true;
-  } else {
-    flag = true;
-    flag2 = false;
-    if (!self.scanner.isDelim(124)) {
-      self.eat(Ident);
-      flag = true;
-      flag2 = false;
-    }
-  }
-  const scanner2 = self.scanner;
-  if (scanner2.isDelim(124)) {
-    const source = self.scanner.source;
-    if (61 !== source.charCodeAt(self.scanner.tokenStart + 1)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      self.eat(Ident);
-    } else if (flag2) {
-      self.error("Identifier is expected", self.scanner.tokenEnd);
-    }
-  } else if (flag2) {
-    self.error("Vertical line is expected");
-  }
-  if (flag) {
-    flag = self.scanner.tokenType === Colon;
-  }
-  if (flag) {
-    const iter3 = self.scanner;
-    iter3.next();
-    self.eat(Ident);
-  }
-  const obj = { type: "Identifier", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-  scanner3 = self.scanner;
-  return obj;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
 }
-function getOperator() {
-  const self = this;
-  const tokenStart = this.scanner.tokenStart;
-  const source = this.scanner.source;
-  const charCodeAtResult = source.charCodeAt(tokenStart);
-  const tmp3 = tmp2 && 126 !== charCodeAtResult && 94 !== charCodeAtResult && 36 !== charCodeAtResult && 42 !== charCodeAtResult && 124 !== charCodeAtResult;
-  if (tmp3) {
-    self.error("Attribute selector (=, ~=, ^=, $=, *=, |=) is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-  if (61 !== charCodeAtResult) {
-    const scanner = self.scanner;
-    if (!scanner.isDelim(61)) {
-      self.error("Equal sign is expected");
+function isDeclarationBlockAtrule() {
+  const scanner = this.scanner;
+  let lookupTypeResult = scanner.lookupType(1);
+  let num = 1;
+  if (lookupTypeResult) {
+    while (lookupTypeResult !== RightCurlyBracket) {
+      if (lookupTypeResult !== LeftCurlyBracket) {
+        if (lookupTypeResult !== AtKeyword) {
+          let sum = num + 1;
+          let scanner2 = this.scanner;
+          lookupTypeResult = scanner2.lookupType(sum);
+          num = sum;
+        }
+      }
+      let flag = false;
+      return false;
     }
-    const iter2 = self.scanner;
-    iter2.next();
+    return true;
   }
-  const scanner2 = self.scanner;
-  return scanner2.substrToCursor(tokenStart);
+  return false;
 }
-const Ident = tokenize.TYPE.Ident;
-const String = tokenize.TYPE.String;
-const Colon = tokenize.TYPE.Colon;
-const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
-const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
 let obj = {
-  name: "AttributeSelector",
+  name: "Atrule",
   structure: obj2,
   parse() {
+    let AtrulePrelude;
+    let parseWithFallback;
+    let tmp13;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftSquareBracket);
+    this.eat(AtKeyword);
     const scanner = this.scanner;
-    scanner.skipSC();
-    const scanner2 = self.scanner;
-    const callResult = getAttributeName.call(self);
+    const str = scanner.substrToCursor(tokenStart + 1);
+    const formatted = str.toLowerCase();
+    const scanner2 = this.scanner;
     scanner2.skipSC();
-    let tmp6 = null;
     let tmp7 = null;
-    let tmp8 = null;
-    const tmp5 = RightSquareBracket;
-    if (self.scanner.tokenType !== RightSquareBracket) {
-      let tmp14 = null;
-      let tmp15 = null;
-      const tmp20 = Ident;
-      if (self.scanner.tokenType !== Ident) {
-        let StringResult;
-        const scanner3 = self.scanner;
-        const callResult1 = getOperator.call(self);
-        scanner3.skipSC();
-        if (self.scanner.tokenType === String) {
-          StringResult = self.String();
-        } else {
-          StringResult = self.Identifier();
+    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+    if (tmp4) {
+      let callResult;
+      if (self.parseAtrulePrelude) {
+        ({ AtrulePrelude, parseWithFallback } = self);
+        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
+        callResult = element;
+        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
+        if (tmp10) {
+          callResult = null;
         }
-        const scanner4 = self.scanner;
-        scanner4.skipSC();
-        tmp14 = StringResult;
-        tmp15 = callResult1;
+      } else {
+        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
       }
-      let tokenValue = null;
-      if (self.scanner.tokenType === tmp20) {
-        const scanner5 = self.scanner;
-        tokenValue = scanner5.getTokenValue();
-        const iter = self.scanner;
-        iter.next();
-        const scanner6 = self.scanner;
-        scanner6.skipSC();
-      }
-      tmp6 = tokenValue;
-      tmp7 = tmp14;
-      tmp8 = tmp15;
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = callResult;
     }
-    self.eat(tmp5);
-    const obj = { type: "AttributeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: callResult, matcher: tmp8, value: tmp7, flags: tmp6 };
+    const tokenType = self.scanner.tokenType;
+    if (Semicolon === tokenType) {
+      const iter = self.scanner;
+      iter.next();
+      tmp13 = null;
+    } else {
+      tmp13 = null;
+      if (LeftCurlyBracket === tokenType) {
+        const atrule = self.atrule;
+        if (atrule.hasOwnProperty(formatted)) {
+          let callResult1;
+          if (typeof self.atrule[formatted].block === "function") {
+            const block = self.atrule[formatted].block;
+            callResult1 = block.call(self);
+          }
+          tmp13 = callResult1;
+        }
+        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
+      }
+    }
+    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
     return obj;
   },
   generate(name) {
     const self = this;
-    this.chunk("[");
-    this.node(name.name);
-    let str = " ";
-    let str2 = " ";
-    if (null !== name.matcher) {
-      self.chunk(name.matcher);
-      let tmp4 = str;
-      if (null !== name.value) {
-        self.node(name.value);
-        if ("String" === name.value.type) {
-          str = "";
-        }
-        tmp4 = str;
-      }
-      str2 = tmp4;
+    this.chunk("@");
+    this.chunk(name.name);
+    if (null !== name.prelude) {
+      self.chunk(" ");
+      self.node(name.prelude);
     }
-    if (null !== name.flags) {
-      self.chunk(str2);
-      self.chunk(name.flags);
+    if (name.block) {
+      self.node(name.block);
+    } else {
+      self.chunk(";");
     }
-    self.chunk("]");
-  }
+  },
+  walkContext: "atrule"
 };
-obj2 = { name: "Identifier", matcher: items, value: ["String", "Identifier", null], flags: items1 };
-items = [String, null];
-items1 = [String, null];
+obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
 
 export default obj;

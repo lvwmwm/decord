@@ -1,15 +1,15 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17864
+// Function ID: 17865
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 5014, 9459, 17852, 9578, 17853, 2]
+// Dependencies: [19, 17, 21, 5014, 9459, 17865, 9578, 17866, 2]
 // Exports: default
 
-// Module 17851 (FeedProductList)
+// Module 17864 (FeedProductList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9459 */;
 import SkeletonCardDefault from "SkeletonCard" /* 9578 */;
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 17853 */;
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 17866 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,8 @@ let obj2;
 function SkeletonGrid(loadingCardsNum) {
   let c0;
   let columns;
-  let num;
+  let onLayout;
+  let ref;
   loadingCardsNum = loadingCardsNum.loadingCardsNum;
   _require = undefined;
   const accessibilityLabel = loadingCardsNum.accessibilityLabel;
@@ -30,22 +31,27 @@ function SkeletonGrid(loadingCardsNum) {
   const cardLayout = obj.useCardLayout();
   ({ columns, cardWidth: c0 } = cardLayout);
   const items = [];
-  for (let num = 0; num < loadingCardsNum; num = num + columns) {
-    let _Array = Array;
-    let obj2 = { length: Math.min(columns, loadingCardsNum - num) };
-    let _Math = Math;
-    let fromResult = from(obj2);
-    let items1 = [tmp.skeletonRow, ];
-    let obj4 = { width: tmp3 };
-    items1[1] = obj4;
-    let _HermesInternal = HermesInternal;
-    let arr = items.push(<View key={"row-" + num} style={items1}>{fromResult.map((item, index) => {
-      const obj2 = { marginBottom: CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP };
-      SkeletonCardDefault;
-      return <tmp key={"" + num + "-" + arg1} width={width} style={obj2} />;
-    })}</View>);
+  let num = 0;
+  ({ ref, onLayout } = cardLayout);
+  if (0 < loadingCardsNum) {
+    do {
+      let _Array = Array;
+      let obj2 = { length: Math.min(columns, loadingCardsNum - num) };
+      let _Math = Math;
+      let fromResult = from(obj2);
+      let items1 = [tmp.skeletonRow, ];
+      let obj4 = { width: tmp3 };
+      items1[1] = obj4;
+      let _HermesInternal = HermesInternal;
+      let arr = items.push(<View key={"row-" + num} style={items1}>{fromResult.map((item, index) => {
+        const obj2 = { marginBottom: CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP };
+        SkeletonCardDefault;
+        return <tmp key={"" + num + "-" + arg1} width={width} style={obj2} />;
+      })}</View>);
+      num = num + columns;
+    } while (num < loadingCardsNum);
   }
-  return <View style={tmp.skeletonGrid} accessibilityRole="list" accessibilityLabel={accessibilityLabel} accessibilityState={{ busy: true }} accessible>{items}</View>;
+  return <View style={tmp.skeletonGrid} ref={ref} onLayout={onLayout} accessibilityRole="list" accessibilityLabel={accessibilityLabel} accessibilityState={{ busy: true }} accessible>{items}</View>;
 }
 const View = react_native.View;
 const jsx = Fragment.jsx;

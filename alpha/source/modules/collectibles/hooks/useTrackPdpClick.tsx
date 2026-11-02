@@ -1,10 +1,10 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15026
+// Function ID: 15027
 // Name: useTrackPdpClick
 // Dependencies: [19, 1072, 9462, 8749, 7732, 1252, 2]
 // Exports: useTrackPdpClick
 
-// Module 15022 (useTrackPdpClick)
+// Module 15026 (useTrackPdpClick)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;

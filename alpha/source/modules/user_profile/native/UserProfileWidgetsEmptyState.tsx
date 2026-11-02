@@ -1,10 +1,10 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16564
+// Function ID: 16565
 // Name: UserProfileWidgetsEmptyState
 // Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 5634, 2]
 // Exports: default
 
-// Module 16551 (UserProfileWidgetsEmptyState)
+// Module 16564 (UserProfileWidgetsEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

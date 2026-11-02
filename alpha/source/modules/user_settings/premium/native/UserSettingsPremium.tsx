@@ -1,7 +1,7 @@
 // Module ID: 7596
 // Function ID: 7597
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1383, 2051, 2052, 7579, 1993, 7597, 1072, 1385, 21, 5014, 7599, 1625, 7326, 7351, 7164, 5593, 1252, 504, 1497, 4880, 7600, 7602, 7604, 7582, 9911, 7627, 10571, 7626, 15234, 8530, 7161, 7165, 2047, 4827, 15235, 15276, 15278, 15279, 9906, 15349, 11375, 1375, 2]
+// Dependencies: [32, 19, 17, 1383, 2051, 2052, 7579, 1993, 7597, 1072, 1385, 21, 5014, 7599, 1625, 7326, 7351, 7164, 5593, 1252, 504, 1497, 4880, 7600, 7602, 7604, 7582, 9911, 7627, 10571, 7626, 15238, 8530, 7161, 7165, 2047, 4827, 15239, 15280, 15282, 15283, 9906, 15353, 11376, 1375, 2]
 // Exports: default
 
 // Module 7596 (UserSettingsPremium)
@@ -14,7 +14,7 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
 import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7599 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 7604 */;
 import UserOfferActionCreators from "UserOfferActionCreators" /* 8530 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15234 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 15238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -43,12 +43,12 @@ let metroRequire;
 let tmp2;
 const useMountEffectDefault = tmp2(5593);
 const AnalyticsLocationDefault = tmp2(7351);
-const BlockedPaymentsCountryDisplayDefault = tmp2(11375);
-const PremiumSubscriptionDetailsDefault = tmp2(15235);
-const PremiumBillingInfoDefault = tmp2(15276);
-const PremiumAccountCreditDefault = tmp2(15278);
-const PremiumNitroHomeDefault = tmp2(15279);
-const PremiumMarketingPageDefault = tmp2(15349);
+const BlockedPaymentsCountryDisplayDefault = tmp2(11376);
+const PremiumSubscriptionDetailsDefault = tmp2(15239);
+const PremiumBillingInfoDefault = tmp2(15280);
+const PremiumAccountCreditDefault = tmp2(15282);
+const PremiumNitroHomeDefault = tmp2(15283);
+const PremiumMarketingPageDefault = tmp2(15353);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ AnalyticEvents: closure_14, AppStates: closure_15, UserSettingsSections: closure_16, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = PremiumConstants);
@@ -73,7 +73,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp30Result;
   let tmp30Result5;
   let tmp9;
-  const f90995 = () => {
+  const f91032 = () => {
     const items = [premiumTrialOffer.getPremiumTypeSubscription(), premiumTrialOffer.hasFetchedSubscriptions()];
     return items;
   };
@@ -134,8 +134,8 @@ export default function UserSettingsPremium(applicationId) {
   });
   let obj2 = applicationId(504);
   const items3 = [premiumTrialOffer];
-  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f90995);
-  _slicedToArray(obj2.useStateFromStoresArray(items3, f90995), 2);
+  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f91032);
+  _slicedToArray(obj2.useStateFromStoresArray(items3, f91032), 2);
   let obj3 = applicationId(1497);
   state = obj3.useNavigation();
   const items4 = [state2];

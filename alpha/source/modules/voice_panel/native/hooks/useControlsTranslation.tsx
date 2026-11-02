@@ -1,10 +1,10 @@
-// Module ID: 19299
-// Function ID: 19300
+// Module ID: 19306
+// Function ID: 19307
 // Name: useControlsTranslation
 // Dependencies: [19, 11223, 11226, 11222, 5095, 5637, 2]
 // Exports: default
 
-// Module 19299 (useControlsTranslation)
+// Module 19306 (useControlsTranslation)
 import spring from "spring" /* 5637 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;

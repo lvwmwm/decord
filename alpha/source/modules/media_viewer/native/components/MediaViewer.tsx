@@ -1,14 +1,14 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14799
+// Function ID: 14800
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1375, 5095, 14796, 14797, 8841, 5303, 7240, 7326, 7351, 8867, 14802, 14803, 14780, 6022, 5254, 8836, 8903, 11212, 5096, 14804, 11702, 2]
+// Dependencies: [32, 19, 17, 21, 1375, 5095, 14800, 14801, 8841, 5303, 7240, 7326, 7351, 8867, 14806, 14807, 14784, 6022, 5254, 8836, 8903, 11212, 5096, 14808, 11703, 2]
 
-// Module 14795 (MediaViewer)
+// Module 14799 (MediaViewer)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import useVideoControls from "useVideoControls" /* 8836 */;
 import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8867 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14797 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -71,7 +71,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14802)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(14806)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -266,7 +266,7 @@ function MediaViewer(arg0) {
   const tmp7 = _require;
   if (isMediaViewerImprovementsEnabled) {
     const obj22 = { entranceAnimationDriver: sharedValue, onLongPress, onScrollWorklets, originLayout, pagerIndex, panGestureConfig: mediaViewerPanGestureConfig, renderMedia, sources, useItemVisible, windowWidth: width, windowHeight: height, zoomed };
-    tmp32Result = tmp32(tmp(14804), obj22);
+    tmp32Result = tmp32(tmp(14808), obj22);
   }
   items7[2] = isMediaViewerEntranceJankFixEnabled(tmp36, obj21);
   const obj23 = { style: items10, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled, sharedValue) };
@@ -277,7 +277,7 @@ function MediaViewer(arg0) {
     str = "box-none";
   }
   items7[3] = isMediaViewerEntranceJankFixEnabled(tmpResult, obj23);
-  items7[4] = isMediaViewerEntranceJankFixEnabled(tmp(11702), {});
+  items7[4] = isMediaViewerEntranceJankFixEnabled(tmp(11703), {});
   const children = tmp34(tmp35, obj18);
   return isMediaViewerEntranceJankFixEnabled(tmp7(7326).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }

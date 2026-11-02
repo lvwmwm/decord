@@ -1,20 +1,20 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17581
+// Function ID: 17582
 // Name: DevToolsBuildOverrideScreen
-// Dependencies: [32, 19, 17, 11361, 21, 5014, 575, 9566, 17569, 5607, 504, 13177, 6027, 7060, 6975, 5731, 7358, 5711, 12553, 5738, 7058, 7061, 7082, 5634, 1379, 2]
+// Dependencies: [32, 19, 17, 11362, 21, 5014, 575, 9566, 17582, 5607, 504, 13192, 6027, 7060, 6975, 5731, 7358, 5711, 12219, 5738, 7058, 7061, 7082, 5634, 1379, 2]
 
-// Module 17568 (DevToolsBuildOverrideScreen)
+// Module 17581 (DevToolsBuildOverrideScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import ToastUtils from "ToastUtils" /* 5711 */;
 import ClipboardUtils from "ClipboardUtils" /* 7358 */;
 import TagIcon from "TagIcon" /* 9566 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13177 */;
-import HashmarkIcon from "HashmarkIcon" /* 17569 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13192 */;
+import HashmarkIcon from "HashmarkIcon" /* 17582 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11361 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11362 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function UserSettingsBuildOverride() {
   let first;
   let items1;
   let stateFromStores;
-  const f130554 = (value) => value.value === first.type;
+  const f130609 = (value) => value.value === first.type;
   let tmp = closure_9();
   const insets = first(5607)({ includeKeyboardHeight: true }).insets;
   let obj = stateFromStores(504);
@@ -61,7 +61,7 @@ const memoResult = react.memo(function UserSettingsBuildOverride() {
   if (null != stateFromStores) {
     const TableRowGroup = tmp3(7060).TableRowGroup;
     const TableRow = tmp3(6975).TableRow;
-    const found = items.find(f130554);
+    const found = items.find(f130609);
     let label;
     if (found != null) {
       label = found.label;
@@ -78,9 +78,9 @@ const memoResult = react.memo(function UserSettingsBuildOverride() {
 
     ];
     const TableRow2 = tmp3(6975).TableRow;
-    items1[1] = <TableRow2 icon={null} label="Refresh Override" onPress={stateFromStores(13177).refreshBuildOverride} arrow />;
+    items1[1] = <TableRow2 icon={null} label="Refresh Override" onPress={stateFromStores(13192).refreshBuildOverride} arrow />;
     const TableRow3 = tmp3(6975).TableRow;
-    items1[2] = <TableRow3 icon={null} label="Clear Override" variant="danger" onPress={stateFromStores(13177).clearBuildOverride} arrow />;
+    items1[2] = <TableRow3 icon={null} label="Clear Override" variant="danger" onPress={stateFromStores(13192).clearBuildOverride} arrow />;
     tmp10Result = tmp10(TableRowGroup, obj5);
   }
   const items2 = [tmp10Result, , , ];
@@ -100,7 +100,7 @@ const memoResult = react.memo(function UserSettingsBuildOverride() {
     return jsx(stateFromStores(closure_2[21]).TableRadioRow, { value, label, icon }, value);
   })}</TableRadioGroup>;
   const TableRowGroup2 = tmp3(7060).TableRowGroup;
-  const found1 = items.find(f130554);
+  const found1 = items.find(f130609);
   let label1;
   if (found1 != null) {
     label1 = found1.label;
@@ -112,7 +112,7 @@ const memoResult = react.memo(function UserSettingsBuildOverride() {
     icon = found2.icon;
   }
   const TextInput = tmp3(7082).TextInput;
-  const found3 = arr4.find(f130554);
+  const found3 = arr4.find(f130609);
   let label2;
   if (found3 != null) {
     label2 = found3.label;

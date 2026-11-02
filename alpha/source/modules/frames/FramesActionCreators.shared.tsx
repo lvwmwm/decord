@@ -1,16 +1,16 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 10929
+// Function ID: 10930
 // Name: launchFrame
-// Dependencies: [32, 5, 6846, 6847, 5657, 10931, 572, 10885, 6849, 10886, 10933, 10938, 10927, 2]
-// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
+// Dependencies: [32, 5, 6846, 6847, 5657, 10930, 572, 10885, 6849, 10886, 10932, 10937, 10938, 2]
+// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10930 (launchFrame)
+// Module 10929 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6849 */;
 import createProxyTicket from "createProxyTicket" /* 10885 */;
-import leaveFrame from "leaveFrame" /* 10927 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10931 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10930 */;
+import leaveFrame from "leaveFrame" /* 10938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import FramesStore from "FramesStore" /* 6846 */;
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(10927);
+        const tmp4Result = tmp4(10938);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -412,6 +412,16 @@ export { updateFrameLayoutMode };
 export function setFrameRunsInBackground(id, enabled) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId: id, enabled };
+  obj.dispatch(obj2);
+}
+export function setFramePictureInPictureInteractive(id, enabled) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "FRAME_SET_PICTURE_IN_PICTURE_INTERACTIVE", frameId: id, enabled };
+  obj.dispatch(obj2);
+}
+export function resetFrameGuestClaims(frameId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "FRAME_SET_PICTURE_IN_PICTURE_INTERACTIVE", frameId, enabled: false };
   obj.dispatch(obj2);
 }
 export function setFrameUserMuted(id, muted) {

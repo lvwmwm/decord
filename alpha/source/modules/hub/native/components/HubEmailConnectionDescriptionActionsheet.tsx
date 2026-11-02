@@ -1,10 +1,10 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14347
+// Function ID: 14348
 // Name: HubEmailConnectionDescriptionActionsheet
 // Dependencies: [19, 21, 5014, 5272, 7321, 1113, 5624, 2]
 // Exports: default
 
-// Module 14332 (HubEmailConnectionDescriptionActionsheet)
+// Module 14347 (HubEmailConnectionDescriptionActionsheet)
 import intl4 from "intl" /* 1113 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
 import Text_Text from "Text/Text" /* 5624 */;

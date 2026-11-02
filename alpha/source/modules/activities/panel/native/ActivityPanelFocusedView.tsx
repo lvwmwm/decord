@@ -1,10 +1,10 @@
-// Module ID: 19131
-// Function ID: 19132
+// Module ID: 19138
+// Function ID: 19139
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5015, 4863, 4862, 5657, 18993, 1072, 11223, 11693, 21, 5014, 575, 1625, 504, 1491, 19122, 12074, 5095, 5080, 5254, 5637, 6018, 4935, 19124, 19132, 11725, 11793, 2]
+// Dependencies: [19, 17, 5015, 4863, 4862, 5657, 19000, 1072, 11223, 11694, 21, 5014, 575, 1625, 504, 1491, 19129, 12075, 5095, 5080, 5254, 5637, 6018, 4935, 19131, 19139, 11726, 11794, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19131 (ActivityPanelFocusedView)
+// Module 19138 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,15 +14,15 @@ import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import spring from "spring" /* 5637 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import Constants2 from "Constants" /* 11693 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11793 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19124 */;
+import Constants2 from "Constants" /* 11694 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11794 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19131 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import ChannelStore_mod from "ChannelStore" /* 4863 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18993 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19000 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;

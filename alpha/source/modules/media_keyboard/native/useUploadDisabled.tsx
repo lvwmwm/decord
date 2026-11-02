@@ -1,10 +1,10 @@
-// Module ID: 12395
-// Function ID: 12396
+// Module ID: 12535
+// Function ID: 12536
 // Name: useUploadDisabled
 // Dependencies: [7701, 4946, 8208, 1072, 504, 7396, 2]
 // Exports: default
 
-// Module 12395 (useUploadDisabled)
+// Module 12535 (useUploadDisabled)
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7396 */;
 import DraftStore from "DraftStore" /* 7701 */;
 import PermissionStore from "PermissionStore" /* 4946 */;

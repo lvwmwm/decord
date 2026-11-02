@@ -1,9 +1,9 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15514
+// Function ID: 15515
 // Name: SequencedLottieAnimationView
 // Dependencies: [109, 19, 17, 21, 5619, 2]
 
-// Module 15510 (SequencedLottieAnimationView)
+// Module 15514 (SequencedLottieAnimationView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import LottieViewDefault from "LottieView" /* 5619 */;

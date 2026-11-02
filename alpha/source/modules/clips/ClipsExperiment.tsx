@@ -1,10 +1,10 @@
-// Module ID: 15211
-// Function ID: 15212
+// Module ID: 15215
+// Function ID: 15216
 // Name: ClipsExperiment
 // Dependencies: [2006, 1383, 1385, 5768, 504, 2047, 1375, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 15211 (ClipsExperiment)
+// Module 15215 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1375 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;

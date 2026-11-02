@@ -1,10 +1,10 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17740
+// Function ID: 17741
 // Name: DevToolsAccountLinkingScreen
 // Dependencies: [32, 19, 17, 2038, 7276, 4885, 5045, 21, 5014, 575, 504, 7332, 1625, 7330, 7327, 7060, 6975, 5624, 7082, 5634, 5717, 2]
 // Exports: default
 
-// Module 17727 (DevToolsAccountLinkingScreen)
+// Module 17740 (DevToolsAccountLinkingScreen)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

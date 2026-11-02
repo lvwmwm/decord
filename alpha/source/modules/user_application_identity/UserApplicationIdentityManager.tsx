@@ -1,9 +1,9 @@
-// Module ID: 20100
-// Function ID: 20101
+// Module ID: 20107
+// Function ID: 20108
 // Name: UserApplicationIdentityManager
 // Dependencies: [10945, 7287, 2]
 
-// Module 20100 (UserApplicationIdentityManager)
+// Module 20107 (UserApplicationIdentityManager)
 import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 10945 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;

@@ -32,11 +32,11 @@ const UserProfileGameWidgetTypes = tmp(7774);
 const UserProfileApplicationWidgetTypes = tmp(7777);
 const UserProfilePersonalWidget2 = tmp(7778);
 const UserProfileClipsGalleryWidgetTypes = tmp(7780);
-const f91577 = (user) => {
+const f91614 = (user) => {
   const str = user.user.username;
   return str.toLowerCase();
 };
-const f91583 = (id) => id.id;
+const f91620 = (id) => id.id;
 function createUserWidgetFromServer(data) {
   let mapped;
   let str;
@@ -296,7 +296,7 @@ function handleMutualFriendsFetchSuccess(userId) {
     new UserRecord(obj2);
     return obj;
   });
-  const iter = mapped.sortBy(f91577);
+  const iter = mapped.sortBy(f91614);
   const result = set(userId, iter.value());
   const result1 = map4.set(userId.userId, userId.mutualFriends.length);
 }
@@ -381,7 +381,7 @@ function handleProfileFetch(arg0) {
       new UserRecord(obj2);
       return obj;
     });
-    const iter = mapped.sortBy(f91577);
+    const iter = mapped.sortBy(f91614);
     set3(id3, iter.value());
     const result3 = map4.set(userProfile.user.id, userProfile.mutual_friends.length);
   }
@@ -448,7 +448,7 @@ function handleProfileFetch(arg0) {
       const _Set = Set;
       const self7 = this;
       const self8 = this;
-      new Set(mapped1.map(f91583));
+      new Set(mapped1.map(f91620));
       let found1;
       if (c24 != null) {
         const badges1 = tmp61.badges;
@@ -747,7 +747,7 @@ function handlePinBadgesToProfile(badges) {
       let found;
       const self = this;
       const self2 = this;
-      const set1 = new Set(badges.map(f91583));
+      const set1 = new Set(badges.map(f91620));
       if (obj != null) {
         const badges1 = tmp3.badges;
         found = badges1.filter((id) => !set1.has(id.id));

@@ -44,7 +44,7 @@ let obj = function _listProjects() {
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
-      let tmp47;
+      let obj8;
       function forgetMissingProjects() {
         return closure_1_20(...arguments);
       }
@@ -90,17 +90,18 @@ let obj = function _listProjects() {
                 obj6.dispatch(obj5);
                 c4 = 1;
                 const HTTP = HTTPUtils.HTTP;
-                const request = { url: constants.CONJURE_PROJECTS, query: tmp47, rejectWithError: true };
-                tmp47 = undefined;
+                const request = { url: constants.CONJURE_PROJECTS, query: obj8, rejectWithError: true };
                 const get = HTTP.get;
                 if (null != guildId) {
-                  tmp47 = { guild_id: guildId };
+                  obj8 = { guild_id: guildId };
                   const obj7 = { guild_id: guildId };
+                } else {
+                  obj8 = { include_shared: true };
                 }
                 c5 = 2;
                 c6 = 1;
-                const obj8 = { value: get(request), done: false };
-                return obj8;
+                const obj9 = { value: get(request), done: false };
+                return obj9;
               } else {
                 if (null != guildId) {
                   if (guildId !== closure_14) {
@@ -116,9 +117,9 @@ let obj = function _listProjects() {
           } else {
             if (1 === c5) {
               c4 = 0;
-              const obj9 = { type: "CONJURE_PROJECTS_FETCH_FAIL", guildId };
+              const obj10 = { type: "CONJURE_PROJECTS_FETCH_FAIL", guildId };
               const obj4 = closure_131_1(closure_131_2[8]);
-              obj4.dispatch(obj9);
+              obj4.dispatch(obj10);
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -128,9 +129,9 @@ let obj = function _listProjects() {
               return { value, done: true };
             } else {
               body = value.body;
-              const obj11 = { type: "CONJURE_PROJECTS_FETCH_SUCCESS", projects: body, guildId };
+              const obj12 = { type: "CONJURE_PROJECTS_FETCH_SUCCESS", projects: body, guildId };
               obj = closure_131_1(closure_131_2[8]);
-              obj.dispatch(obj11);
+              obj.dispatch(obj12);
               c16 = false;
               forgetMissingProjects();
               c4 = 0;
@@ -150,10 +151,10 @@ let obj = function _listProjects() {
           }
           c6 = 3;
           return { value: "HermesInternal", done: "HermesInternal" };
-        } catch (tmp48) {
+        } catch (tmp47) {
           if (0 === c4) {
             c6 = 3;
-            throw tmp48;
+            throw tmp47;
           } else {
             c5 = 1;
           }

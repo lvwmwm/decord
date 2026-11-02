@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11786
+// Function ID: 11787
 // Name: AnimatedEffectEmoji
 // Dependencies: [19, 17, 5015, 21, 1089, 5014, 575, 5717, 1187, 504, 5095, 5254, 7530, 2]
 // Exports: default
 
-// Module 11785 (AnimatedEffectEmoji)
+// Module 11786 (AnimatedEffectEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

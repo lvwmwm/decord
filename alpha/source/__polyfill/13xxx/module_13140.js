@@ -1,109 +1,48 @@
 // Module ID: 13140
 // Function ID: 13141
-// Dependencies: [32, 13045]
-// Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash
+// Dependencies: [13052, 13055, 13054, 13060]
+// Exports: addConsoleInstrumentationHandler
 
 // Module 13140
-import _mod13045 from "module_13045" /* 13045 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod13052 from "module_13052" /* 13052 */;
+import _mod13055 from "module_13055" /* 13055 */;
 
-let hasOwnProperty;
-
-let items = [["\n", "\\n"], ["\r", "\\r"], ["\t", "\\t"], ["\\", "\\\\"], ["|", "\\u{7c}"], [",", "\\u{2c}"]];
-
-export function getBucketKey(metricType, sanitizeMetricKeyResult, sanitizeUnitResult, sanitizeTagsResult) {
-  const obj = _mod13045;
-  const entries1 = entries(obj.dropUndefinedKeys(sanitizeTagsResult));
-  return "" + metricType + sanitizeMetricKeyResult + sanitizeUnitResult + entries1.sort((arg0, arg1) => {
-    const first = arg0[0];
-    return first.localeCompare(arg1[0]);
-  });
-}
-export function sanitizeMetricKey(str) {
-  return str.replace(/[^\w\-.]+/gi, "_");
-}
-export function sanitizeTags(tags) {
-  let obj = {};
-  for (const key10007 in tags) {
-    let tmp5 = key10007;
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    if (!hasOwnProperty.call(tags, key10007)) {
-      continue;
-    } else {
-      let _String = String;
-      let replaced = key10007.replace(/[^\w\-./]+/gi, "");
-      items = [];
-      let tmp3 = items;
-      let arraySpreadResult = HermesBuiltin.arraySpread(items, String(tags[key10007]), 0);
-      obj[replaced] = items.reduce((acc, item) => {
-        function getCharOrReplacement(item) {
-          const obj = closure_1_3[Symbol.iterator]();
-          while (obj !== undefined) {
-            let tmp4 = closure_1_2(tmp2, 2);
-            if (item === tmp4[0]) {
-              obj.return();
-              return tmp5;
+let tmp;
+const _mod13054 = tmp(13054);
+function instrumentConsole() {
+  let tmp = require;
+  let tmp2 = dependencyMap;
+  if ("console" in _mod13055.GLOBAL_OBJ) {
+    const CONSOLE_LEVELS = _mod13054.CONSOLE_LEVELS;
+    const item = CONSOLE_LEVELS.forEach((item) => {
+      let closure_0 = item;
+      let tmp = closure_0;
+      let tmp2 = closure_1;
+      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
+        const tmpResult = tmp(tmp2[3]);
+        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
+          _mod13054.originalConsoleMethods[level] = arg0;
+          return () => {
+            const items = [...arguments];
+            const obj = { args: items, level };
+            const obj2 = level(closure_2_1[0]);
+            obj2.triggerHandlers("console", obj);
+            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
+            const tmp = level;
+            const tmp2 = closure_2_1;
+            if (obj3) {
+              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
             }
-          }
-          return item;
-        }
-        return acc + getCharOrReplacement(item);
-      }, "");
-      continue;
-    }
-    continue;
+          };
+        });
+      }
+    });
   }
-  return obj;
 }
-export function sanitizeUnit(none) {
-  return none.replace(/[^\w]+/gi, "_");
-}
-export function serializeMetricBuckets(arg0) {
-  let str = "";
-  const iter = arg0[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    let _Object = Object;
-    let entries = Object.entries(nextResult.tags);
-    let arr2 = entries;
-    let str2 = "";
-    if (entries.length > 0) {
-      let mapped = arr2.map((item) => {
-        let tmp;
-        let tmp2;
-        [tmp, tmp2] = item;
-        return "" + tmp + ":" + tmp2;
-      });
-      let _HermesInternal = HermesInternal;
-      str2 = "|#" + mapped.join(",");
-    }
-    let _HermesInternal2 = HermesInternal;
-    let str3 = "";
-    let str4 = "@";
-    let str5 = ":";
-    let str6 = "|";
-    let str7 = "|T";
-    let str8 = "\n";
-    str = str + "" + tmp2.name + "@" + tmp2.unit + ":" + tmp2.metric + "|" + tmp2.metricType + str2 + "|T" + tmp2.timestamp + "\n";
-    continue;
-  }
-  return str;
-}
-export function simpleHash(item) {
-  let length;
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < item.length) {
-    do {
-      let sum = (num2 << 5) - num2 + item.charCodeAt(num);
-      num2 = sum & sum;
-      num = num + 1;
-      num3 = num2;
-      length = item.length;
-    } while (num < length);
-  }
-  return num3 >>> 0;
+
+export function addConsoleInstrumentationHandler(arg0) {
+  const obj = _mod13052;
+  obj.addHandler("console", arg0);
+  const obj2 = _mod13052;
+  obj2.maybeInstrument("console", instrumentConsole);
 }

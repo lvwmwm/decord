@@ -1,9 +1,9 @@
-// Module ID: 19218
-// Function ID: 19219
+// Module ID: 19225
+// Function ID: 19226
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 4862, 6843, 11704, 502, 4863, 2006, 4946, 1383, 5767, 1072, 5681, 9266, 21, 5014, 575, 504, 19219, 5652, 9284, 9246, 6960, 5624, 14735, 1113, 8667, 7, 5712, 19216, 8931, 6975, 6983, 17546, 8350, 6984, 572, 7369, 4839, 5915, 5759, 8199, 11938, 5258, 19220, 1994, 9269, 9289, 19221, 19209, 19162, 11357, 9232, 19222, 7561, 19223, 9238, 19224, 11040, 11918, 10977, 10978, 2]
+// Dependencies: [19, 4862, 6843, 11705, 502, 4863, 2006, 4946, 1383, 5767, 1072, 5681, 9266, 21, 5014, 575, 504, 19226, 5652, 9284, 9246, 6960, 5624, 14739, 1113, 8667, 7, 5712, 19223, 8931, 6975, 6983, 17559, 8350, 6984, 572, 7369, 4839, 5915, 5759, 8199, 11939, 5258, 19227, 1994, 9269, 9289, 19228, 19216, 19169, 11358, 9232, 19229, 7561, 19230, 9238, 19231, 11040, 11919, 10977, 10978, 2]
 
-// Module 19218 (VoicePanelSettingsOverview)
+// Module 19225 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -28,14 +28,14 @@ import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 9246 */;
 import SecureFramesConstants from "SecureFramesConstants" /* 9266 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9269 */;
 import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9284 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11938 */;
-import WrenchIcon from "WrenchIcon" /* 17546 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19216 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19219 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11939 */;
+import WrenchIcon from "WrenchIcon" /* 17559 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19223 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19226 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11704 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11705 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import MediaEngineStore from "MediaEngineStore" /* 2006 */;
@@ -93,7 +93,7 @@ class VoicePanelSettingsOverviewHeader {
     const tmp6 = channelId;
     if (isCallSecureFramesVerified) {
       const obj8 = { style: tmp.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(intl18.t.mR9cf3) };
-      const ShieldLockIcon = tmp2(14735).ShieldLockIcon;
+      const ShieldLockIcon = tmp2(14739).ShieldLockIcon;
       intl = tmp2(1113).intl;
       isCallSecureFramesVerified = tmp13(ShieldLockIcon, obj8);
     }
@@ -302,7 +302,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(19220, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(19227, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

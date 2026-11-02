@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14716
+// Function ID: 14717
 // Name: ConjureWorkingWand
-// Dependencies: [19, 17, 5015, 21, 5095, 671, 575, 8031, 5014, 504, 5254, 14706, 2]
+// Dependencies: [19, 17, 5015, 21, 5095, 671, 575, 8031, 5014, 504, 5254, 14717, 2]
 // Exports: default
 
-// Module 14705 (ConjureWorkingWand)
+// Module 14716 (ConjureWorkingWand)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;

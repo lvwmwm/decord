@@ -1,9 +1,9 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 12981
+// Function ID: 12982
 // Name: conjureHomeShowcaseTiles
 // Dependencies: [3868, 2]
 
-// Module 12978 (conjureHomeShowcaseTiles)
+// Module 12981 (conjureHomeShowcaseTiles)
 import _modDef3868 from "module_3868" /* 3868 */;
 import size from "module_2" /* 2 */;
 

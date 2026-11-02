@@ -449,14 +449,14 @@ obj = function _openImagePicker() {
                   obj7 = { errorStr: closure_130_23 };
                   const obj6 = { errorStr: closure_130_23 };
                 } else if ("E_CROPPER_IMAGE_NOT_FOUND" === closure_1.code) {
-                  const presentFailedToast2 = closure_130_0(closure_130_2[14]).presentFailedToast;
+                  const presentFailedToast = closure_130_0(closure_130_2[14]).presentFailedToast;
                   closure_130_0(closure_130_2[14]);
-                  const intl2 = closure_130_0(closure_130_2[15]).intl;
-                  presentFailedToast2(intl2.string(closure_130_0(closure_130_2[15]).t.TTzyzW));
+                  const intl = closure_130_0(closure_130_2[15]).intl;
+                  presentFailedToast(intl.string(closure_130_0(closure_130_2[15]).t.TTzyzW));
                   obj7 = { errorStr: "No select photo access" };
                 } else {
-                  const obj4 = closure_130_0(closure_130_2[14]);
-                  obj4.presentFailedToast(closure_1.message);
+                  const obj3 = closure_130_0(closure_130_2[14]);
+                  obj3.presentFailedToast(closure_1.message);
                   obj7 = { errorStr: closure_1.message };
                 }
               }
@@ -474,21 +474,21 @@ obj = function _openImagePicker() {
             return { value, done: true };
           } else {
             if (null != value.errorStr) {
-              const presentFailedToast = closure_130_0(closure_130_2[14]).presentFailedToast;
+              const presentFailedToast2 = closure_130_0(closure_130_2[14]).presentFailedToast;
               closure_130_0(closure_130_2[14]);
-              const intl = closure_130_0(closure_130_2[15]).intl;
-              obj = { reason: value.errorStr };
-              presentFailedToast(intl.formatToPlainString(closure_130_0(closure_130_2[15]).t.Ex162J, obj));
+              const intl2 = closure_130_0(closure_130_2[15]).intl;
+              const obj11 = { reason: value.errorStr };
+              presentFailedToast2(intl2.formatToPlainString(closure_130_0(closure_130_2[15]).t.Ex162J, obj11));
             }
             c4 = 0;
             c6 = 3;
             return { value, done: true };
           }
-        } catch (tmp43) {
-          closure_3 = tmp43;
+        } catch (tmp32) {
+          closure_3 = tmp32;
           if (0 === c4) {
             c6 = 3;
-            throw tmp43;
+            throw tmp32;
           } else {
             c5 = 1;
           }
@@ -1324,7 +1324,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj4 = { uri: require, overrideType: "a" };
+                  const obj4 = { uri: require, overrideType: "Array" };
                   const tmp12Result8 = UploadUtils;
                   isVideo = tmp12Result8.getFile(obj4).isVideo;
                 }
@@ -1350,7 +1350,7 @@ function convertVideo(videoMetadata) {
                 } else {
                   isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                   if (isVideo2) {
-                    obj6 = { uri: require, overrideType: "a" };
+                    obj6 = { uri: require, overrideType: "Array" };
                     const tmp12Result11 = UploadUtils;
                     isVideo2 = tmp12Result11.getFile(obj6).isVideo;
                   }

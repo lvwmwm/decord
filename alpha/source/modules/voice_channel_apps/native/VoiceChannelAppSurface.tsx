@@ -1,13 +1,13 @@
-// Module ID: 19275
-// Function ID: 19276
+// Module ID: 19282
+// Function ID: 19283
 // Name: VoiceChannelAppSurface
-// Dependencies: [19, 21, 1625, 12096, 5675, 18659, 18662, 12097, 12106, 12110, 18671, 1113, 3966, 2]
+// Dependencies: [19, 21, 1625, 12240, 5675, 18672, 16366, 12241, 12250, 12254, 18678, 1113, 3966, 2]
 // Exports: default
 
-// Module 19275 (VoiceChannelAppSurface)
+// Module 19282 (VoiceChannelAppSurface)
 import Fragment from "Fragment" /* 21 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12096 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12240 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

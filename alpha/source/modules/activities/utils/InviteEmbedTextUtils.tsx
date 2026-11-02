@@ -1,10 +1,10 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15138
+// Function ID: 15139
 // Name: InviteEmbedTextUtils
 // Dependencies: [1383, 1072, 1113, 3028, 6041, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamFormattedText, getRequestToStreamText, getRequestToStreamTextParts
 
-// Module 15134 (InviteEmbedTextUtils)
+// Module 15138 (InviteEmbedTextUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3028 from "module_3028" /* 3028 */;

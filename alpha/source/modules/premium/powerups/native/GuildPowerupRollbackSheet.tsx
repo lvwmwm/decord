@@ -1,10 +1,10 @@
-// Module ID: 14074
-// Function ID: 14075
+// Module ID: 14089
+// Function ID: 14090
 // Name: GuildPowerupRollbackSheet
 // Dependencies: [21, 10837, 5634, 2]
 // Exports: default
 
-// Module 14074 (GuildPowerupRollbackSheet)
+// Module 14089 (GuildPowerupRollbackSheet)
 import Fragment from "Fragment" /* 21 */;
 import PromoSheet2 from "PromoSheet" /* 10837 */;
 import size from "module_2" /* 2 */;

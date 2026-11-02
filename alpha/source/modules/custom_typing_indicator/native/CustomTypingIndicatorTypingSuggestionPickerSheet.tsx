@@ -1,10 +1,10 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17353
+// Function ID: 17354
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5014, 575, 7366, 7321, 1113, 3870, 7058, 13718, 7061, 2]
+// Dependencies: [32, 19, 21, 5014, 575, 7366, 7321, 1113, 3870, 7058, 13733, 7061, 2]
 // Exports: default
 
-// Module 17340 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 17353 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3870 from "module_3870" /* 3870 */;
@@ -53,7 +53,7 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
     })
   });
   const TableRadioGroup = onChange(7058).TableRadioGroup;
-  const obj4 = onChange(13718);
+  const obj4 = onChange(13733);
   customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
   return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3870.hrl2cG)}>{null}</ActionSheet>;
 };

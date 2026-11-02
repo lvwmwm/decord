@@ -1,10 +1,10 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 16795
+// Function ID: 16796
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7716, 21, 8643, 13348, 5715, 15473, 8645, 8015, 5740, 13350, 5014, 575, 5624, 13347, 1113, 2538, 8370, 8372, 7972, 7973, 13193, 5634, 6744, 6998, 11481, 2]
+// Dependencies: [19, 17, 7716, 21, 8643, 13363, 5715, 15477, 8645, 8015, 5740, 13365, 5014, 575, 5624, 13362, 1113, 2538, 8370, 8372, 7972, 7973, 13208, 5634, 6744, 6998, 11482, 2]
 // Exports: default
 
-// Module 16782 (FamilyCenterModalDataTooltip)
+// Module 16795 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -18,10 +18,10 @@ import CreditCardIcon from "CreditCardIcon" /* 8015 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8370 */;
 import ChatIcon from "ChatIcon" /* 8643 */;
 import ThreadIcon from "ThreadIcon" /* 8645 */;
-import Modal2 from "Modal" /* 11481 */;
-import PhoneIcon from "PhoneIcon" /* 13348 */;
-import GiftIcon from "GiftIcon" /* 13350 */;
-import ServerGridIcon from "ServerGridIcon" /* 15473 */;
+import Modal2 from "Modal" /* 11482 */;
+import PhoneIcon from "PhoneIcon" /* 13363 */;
+import GiftIcon from "GiftIcon" /* 13365 */;
+import ServerGridIcon from "ServerGridIcon" /* 15477 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;

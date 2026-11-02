@@ -1,20 +1,20 @@
-// Module ID: 13415
-// Function ID: 13416
+// Module ID: 13430
+// Function ID: 13431
 // Name: ContentInventoryActionCreators
-// Dependencies: [4863, 4917, 5045, 1383, 13416, 1072, 572, 1252, 13417, 7351, 2]
+// Dependencies: [4863, 4917, 5045, 1383, 13431, 1072, 572, 1252, 13432, 7351, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
-// Module 13415 (ContentInventoryActionCreators)
+// Module 13430 (ContentInventoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import ContentInventoryPlatformActionCreatorsAll from "ContentInventoryPlatformActionCreators" /* 13417 */;
+import ContentInventoryPlatformActionCreatorsAll from "ContentInventoryPlatformActionCreators" /* 13432 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import UserStore from "UserStore" /* 1383 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13416 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13431 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

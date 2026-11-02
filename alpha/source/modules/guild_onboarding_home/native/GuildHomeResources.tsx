@@ -1,18 +1,18 @@
-// Module ID: 18633
-// Function ID: 18634
+// Module ID: 18646
+// Function ID: 18647
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 4863, 4944, 6061, 4946, 1072, 21, 5014, 575, 504, 8928, 13757, 18634, 7636, 13818, 1409, 6980, 5624, 5754, 5717, 18627, 1099, 1113, 18635, 5634, 2]
+// Dependencies: [19, 17, 4863, 4944, 6061, 4946, 1072, 21, 5014, 575, 504, 8928, 13772, 18647, 7636, 13833, 1409, 6980, 5624, 5754, 5717, 18640, 1099, 1113, 18648, 5634, 2]
 // Exports: default
 
-// Module 18633 (GuildHomeResources)
+// Module 18646 (GuildHomeResources)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import FastImageDefault from "FastImage" /* 5717 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13818 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 18627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18635 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13833 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 18640 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18648 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildChannelStore from "GuildChannelStore" /* 4944 */;
@@ -70,9 +70,9 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  const tmp2Result = channelId(13757);
+  const tmp2Result = channelId(13772);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(18634)(firstResult);
+  const tmp11 = stateFromStores(18647)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -140,7 +140,7 @@ function ResourceChannelRow(channelId) {
             tmp19Result6 = null;
             if (null != first) {
               const obj17 = { channel: stateFromStores, media: first, isEmbed: firstMediaIsEmbed, embedLeftBorderColor: getEmbedColor(firstResult, flag), firstMessageId: id, containerStyle: tmp.thumbnail };
-              const ForumPostMediaThumbnail = tmp2(13757).ForumPostMediaThumbnail;
+              const ForumPostMediaThumbnail = tmp2(13772).ForumPostMediaThumbnail;
               getEmbedColor = tmp2(8928).getEmbedColor;
               channelId(8928);
               if (flag == null) {

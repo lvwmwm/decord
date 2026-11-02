@@ -1,10 +1,10 @@
-// Module ID: 18660
-// Function ID: 18661
+// Module ID: 18673
+// Function ID: 18674
 // Name: useFrame
 // Dependencies: [6846, 504, 2]
 // Exports: default
 
-// Module 18660 (useFrame)
+// Module 18673 (useFrame)
 import FramesStore from "FramesStore" /* 6846 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11712
+// Function ID: 11713
 // Name: useIsViewingActivity
-// Dependencies: [6843, 11701, 5198, 11698, 504, 2]
+// Dependencies: [6843, 11702, 5198, 11699, 504, 2]
 // Exports: useIsViewingActivity
 
-// Module 11711 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 11698 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11701 */;
+// Module 11712 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 11699 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11702 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14867
-// Function ID: 14868
+// Module ID: 14871
+// Function ID: 14872
 // Name: useTrackUserProfileActivityView
 // Dependencies: [32, 19, 9487, 504, 2]
 // Exports: default
 
-// Module 14867 (useTrackUserProfileActivityView)
+// Module 14871 (useTrackUserProfileActivityView)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9487 */;

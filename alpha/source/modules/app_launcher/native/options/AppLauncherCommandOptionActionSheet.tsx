@@ -1,10 +1,10 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12498
+// Function ID: 12499
 // Name: AppLauncherCommandOptionActionSheet
 // Dependencies: [19, 17, 1496, 21, 5014, 575, 5272, 7321, 7367, 5258, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 12358 (AppLauncherCommandOptionActionSheet)
+// Module 12498 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,10 +1,10 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12237
+// Function ID: 12238
 // Name: ConjureModeTabBar
 // Dependencies: [19, 17, 21, 5014, 575, 5596, 5095, 5637, 1375, 8841, 1113, 5624, 2]
 // Exports: default
 
-// Module 12571 (ConjureModeTabBar)
+// Module 12237 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
 import spring from "spring" /* 5637 */;

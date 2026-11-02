@@ -1,9 +1,9 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 15882
+// Function ID: 15883
 // Name: DistributedClipsExperiment
 // Dependencies: [1447, 2]
 
-// Module 15878 (DistributedClipsExperiment)
+// Module 15882 (DistributedClipsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 

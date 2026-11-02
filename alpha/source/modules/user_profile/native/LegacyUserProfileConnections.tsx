@@ -1,10 +1,10 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11604
+// Function ID: 11605
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2062, 1397, 5069, 7772, 1072, 1191, 7349, 21, 5014, 575, 7348, 11604, 6574, 1409, 5021, 1187, 11607, 11608, 5596, 11609, 11610, 5260, 7358, 5711, 1113, 8940, 5760, 5709, 6980, 5624, 5080, 504, 7682, 11611, 2]
+// Dependencies: [19, 17, 2062, 1397, 5069, 7772, 1072, 1191, 7349, 21, 5014, 575, 7348, 11605, 6574, 1409, 5021, 1187, 11608, 11609, 5596, 11610, 11611, 5260, 7358, 5711, 1113, 8940, 5760, 5709, 6980, 5624, 5080, 504, 7682, 11612, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11603 (LegacyUserProfileConnections)
+// Module 11604 (LegacyUserProfileConnections)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -45,8 +45,8 @@ let obj6;
 let size;
 let size1;
 let unpackModuleId;
-const f99843 = () => LocaleStore.locale;
-const f99845 = () => LocaleStore.locale;
+const f99879 = () => LocaleStore.locale;
+const f99881 = () => LocaleStore.locale;
 class ConnectedUserAccount {
   constructor(account) {
     let _undefined;
@@ -92,32 +92,32 @@ class ConnectedUserAccount {
     if (showMetadata) {
       const type = account.type;
       if (constants.REDDIT === type) {
-        const obj8 = account(11604);
+        const obj8 = account(11605);
         redditMetadataItems = obj8.generateRedditMetadataItems(metadata, tmp.metadataItem);
       } else if (constants.STEAM === type) {
-        const obj7 = account(11604);
+        const obj7 = account(11605);
         redditMetadataItems = obj7.generateSteamMetadataItems(metadata, tmp.metadataItem);
       } else if (constants.LETTERBOXD === type) {
-        const obj6 = account(11604);
+        const obj6 = account(11605);
         redditMetadataItems = obj6.generateLetterboxdMetadataItems(metadata, tmp.metadataItem);
       } else {
         if (constants.BLUESKY !== type) {
           if (constants.MASTODON !== type) {
             if (constants.TWITTER !== type) {
               if (constants.PAYPAL === type) {
-                const obj4 = account(11604);
+                const obj4 = account(11605);
                 redditMetadataItems = obj4.generatePaypalMetadataItems(metadata, tmp.metadataItem);
               } else if (constants.EBAY === type) {
-                let obj3 = account(11604);
+                let obj3 = account(11605);
                 redditMetadataItems = obj3.generateEbayMetadataItems(metadata, tmp.metadataItem);
               } else if (constants.TIKTOK === type) {
-                const obj28 = account(11604);
+                const obj28 = account(11605);
                 redditMetadataItems = obj28.generateTikTokMetadataItems(metadata, tmp.metadataItem);
               }
             }
           }
         }
-        const obj5 = account(11604);
+        const obj5 = account(11605);
         const twitterMetadataItems = obj5.generateTwitterMetadataItems(metadata, tmp.metadataItem);
         let str = "1";
         redditMetadataItems = twitterMetadataItems;
@@ -154,7 +154,7 @@ class ConnectedUserAccount {
     if (null != showInvisibleIcon) {
       let PressableOpacity;
       if (showInvisibleIcon) {
-        let obj = { style: tmp.connectedAccountOpenHide, source: userId(11607) };
+        let obj = { style: tmp.connectedAccountOpenHide, source: userId(11608) };
         const Icon2 = tmp24(1187).Icon;
         tmp30 = closure_14(Icon2, obj);
       }
@@ -175,10 +175,10 @@ class ConnectedUserAccount {
       let tmp37 = null;
       if (account.verified) {
         const obj11 = { style: tmp.verifiedCheckContainer, children: items };
-        const obj12 = { style: tmp.verifiedCheck, size: account(1187).Icon.Sizes.REFRESH_SMALL_16, source: userId(11609), color: tmp36 };
+        const obj12 = { style: tmp.verifiedCheck, size: account(1187).Icon.Sizes.REFRESH_SMALL_16, source: userId(11610), color: tmp36 };
         const Icon3 = tmp24(1187).Icon;
         items = [closure_14(Icon3, obj12), ];
-        const obj13 = { style: tmp.verifiedCheck, size: account(1187).Icon.Sizes.REFRESH_SMALL_16, source: userId(11610), color: WHITE };
+        const obj13 = { style: tmp.verifiedCheck, size: account(1187).Icon.Sizes.REFRESH_SMALL_16, source: userId(11611), color: WHITE };
         const Icon4 = tmp24(1187).Icon;
         items[1] = closure_14(Icon4, obj13);
         tmp37 = closure_15(closure_5, obj11);
@@ -285,7 +285,7 @@ class ConnectedUserAccount {
     }
     tmp30 = null;
     if (null != platformUserUrl) {
-      const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(11608) };
+      const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(11609) };
       const Icon = tmp24(1187).Icon;
       tmp30 = closure_14(Icon, obj25);
     }
@@ -307,7 +307,7 @@ class ConnectedApplicationUserRoleAccount {
     let closure_1 = tmp;
     let tmp2 = applicationRoleConnection;
     const tmp3 = dependencyMap;
-    let obj = applicationRoleConnection(11604);
+    let obj = applicationRoleConnection(11605);
     const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
     let tmp5 = closure_5;
     let obj2 = { style: items, children: items1 };
@@ -441,7 +441,7 @@ export default function LegacyUserProfileConnections(user) {
   tmpResult.useThemeContext().theme;
   const items4 = [LocaleStore];
   const tmpResult5 = user(504);
-  let closure_2 = tmpResult5.useStateFromStores(items4, f99843);
+  let closure_2 = tmpResult5.useStateFromStores(items4, f99879);
   const mapped = memo.map((applicationRoleConnection, index) => {
     let obj2;
     const Fragment = React.Fragment;
@@ -455,7 +455,7 @@ export default function LegacyUserProfileConnections(user) {
   const theme = tmpResult6.useThemeContext().theme;
   const items5 = [LocaleStore];
   const tmpResult7 = user(504);
-  React = tmpResult7.useStateFromStores(items5, f99845);
+  React = tmpResult7.useStateFromStores(items5, f99881);
   const tmpResult8 = user(7682);
   let closure_4 = tmpResult8.usePlatformAllowed({ forUserProfile: true });
   const found = memo2.filter((type) => {
@@ -476,14 +476,14 @@ export default function LegacyUserProfileConnections(user) {
       }
       if (tmp11) {
         const obj3 = { title: intl.string(user(1113).t.PHjkRE), showContainer: true, children: mapped };
-        const tmp14 = stateFromStores(11611);
+        const tmp14 = stateFromStores(11612);
         intl = tmp(1113).intl;
         tmp11 = closure_14(tmp14, obj3);
       }
       const obj4 = { children: items6 };
       items6 = [tmp11, ];
       const obj5 = { title: intl2.string(user(1113).t["3fe7U5"]), showContainer: true, children: tmp9 };
-      const tmp17 = stateFromStores(11611);
+      const tmp17 = stateFromStores(11612);
       intl2 = tmp(1113).intl;
       items6[1] = closure_14(tmp17, obj5);
       tmp18Result = tmp18(tmp19, obj4);
@@ -501,7 +501,7 @@ export function useAppplicationRoleConnectionItems(arr, arg1) {
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = require("get initialized");
-  dependencyMap = obj2.useStateFromStores(items, f99843);
+  dependencyMap = obj2.useStateFromStores(items, f99879);
   return arr.map((applicationRoleConnection, index) => {
     let obj2;
     const Fragment = React.Fragment;
@@ -517,7 +517,7 @@ export function useConnectedAccountItems(arr, userId, style) {
   theme = obj.useThemeContext().theme;
   let obj2 = require("get initialized");
   const items = [LocaleStore];
-  const locale = obj2.useStateFromStores(items, f99845);
+  const locale = obj2.useStateFromStores(items, f99881);
   const obj3 = require("ConnectionsHooks");
   let closure_4 = obj3.usePlatformAllowed({ forUserProfile: true });
   const found = arr.filter((type) => {

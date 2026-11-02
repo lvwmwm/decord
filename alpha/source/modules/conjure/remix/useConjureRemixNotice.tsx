@@ -1,10 +1,10 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12578
+// Function ID: 12579
 // Name: useConjureRemixNotice
 // Dependencies: [19, 10868, 504, 10963, 1113, 3868, 2]
 // Exports: default, useConjureRemixStartedAt
 
-// Module 12575 (useConjureRemixNotice)
+// Module 12578 (useConjureRemixNotice)
 import _modDef3868 from "module_3868" /* 3868 */;
 import conjureRemixConnection from "conjureRemixConnection" /* 10963 */;
 import react from "react" /* 19 */;

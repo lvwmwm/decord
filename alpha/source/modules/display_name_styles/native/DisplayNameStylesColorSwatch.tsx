@@ -1,10 +1,10 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16478
+// Function ID: 16479
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 5014, 575, 1402, 16466, 5587, 1090, 2]
+// Dependencies: [17, 21, 5014, 575, 1402, 16479, 5587, 1090, 2]
 // Exports: default
 
-// Module 16465 (DisplayNameStylesColorSwatch)
+// Module 16478 (DisplayNameStylesColorSwatch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

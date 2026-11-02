@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12095
+// Function ID: 12096
 // Name: ConjurePublishDestinationSheet
 // Dependencies: [32, 19, 17, 21, 5014, 575, 1113, 3868, 5258, 7366, 7321, 7058, 7061, 5634, 2]
 // Exports: default
 
-// Module 12436 (ConjurePublishDestinationSheet)
+// Module 12095 (ConjurePublishDestinationSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

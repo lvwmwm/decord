@@ -1,10 +1,10 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 15790
+// Function ID: 15791
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9199, 4885, 9133, 1083, 21, 5014, 575, 9120, 9128, 504, 11650, 9150, 11657, 11660, 1113, 2404, 7366, 6027, 5624, 7218, 15787, 2]
+// Dependencies: [32, 19, 17, 9199, 4885, 9133, 1083, 21, 5014, 575, 9120, 9128, 504, 11651, 9150, 11658, 11661, 1113, 2404, 7366, 6027, 5624, 7218, 15791, 2]
 // Exports: default
 
-// Module 15786 (GameOrganizationInviteActionSheet)
+// Module 15790 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -12,9 +12,9 @@ import InstantInviteUtils from "InstantInviteUtils" /* 9120 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9128 */;
 import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9150 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9199 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11650 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11657 */;
-import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11660 */;
+import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11651 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11658 */;
+import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11661 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
@@ -98,7 +98,7 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   let tmp5 = null;
   if (null != stateFromStores) {
     let tmp6 = stateFromStores;
-    tmp5 = stateFromStores(11650)(stateFromStores);
+    tmp5 = stateFromStores(11651)(stateFromStores);
   }
   dependencyMap = tmp5;
   const tmp7 = closure_6((arg0) => {
@@ -185,7 +185,7 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     tmp17Result = tmp17(Loading, {});
   } else {
     const obj8 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp17Result = tmp17(tmp15(15787), obj8);
+    tmp17Result = tmp17(tmp15(15791), obj8);
   }
   return closure_10(ActionSheet, obj2);
 };

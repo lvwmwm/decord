@@ -1,10 +1,10 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 11666
+// Function ID: 11667
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 4863, 6061, 10122, 1072, 21, 5258, 11665, 1994, 5014, 575, 7443, 10157, 5711, 1113, 6046, 8931, 8202, 8343, 5198, 11, 1099, 5272, 7292, 11666, 5624, 11668, 9161, 11669, 8399, 2]
+// Dependencies: [19, 17, 4863, 6061, 10122, 1072, 21, 5258, 11666, 1994, 5014, 575, 7443, 10157, 5711, 1113, 6046, 8931, 8202, 8343, 5198, 11, 1099, 5272, 7292, 11667, 5624, 11669, 9161, 11670, 8399, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 11665 (SummaryActionSheet)
+// Module 11666 (SummaryActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -224,7 +224,7 @@ export function openSummaryDividerActionSheet(channelId, summaryId) {
     const _HermesInternal = HermesInternal;
     ActionSheetActionCreatorsDefault;
     const obj = { summary: findSummaryResult };
-    const tmp6 = asyncRequire(11665, dependencyMap.paths);
+    const tmp6 = asyncRequire(11666, dependencyMap.paths);
     openLazy(tmp6, "SummaryDivider" + summaryId, obj);
   }
 }

@@ -1,10 +1,10 @@
-// Module ID: 13738
-// Function ID: 13739
+// Module ID: 13753
+// Function ID: 13754
 // Name: useChatInputRefs
-// Dependencies: [19, 8346, 6837, 7701, 7823, 7830, 1383, 9895, 1072, 6036, 5019, 5612, 5207, 12, 12795, 13739, 13740, 13741, 13742, 9775, 8343, 5209, 1623, 1495, 1375, 5210, 1888, 1252, 10199, 7636, 10201, 13743, 7824, 13744, 6560, 13776, 7101, 2]
+// Dependencies: [19, 8346, 6837, 7701, 7823, 7830, 1383, 9895, 1072, 6036, 5019, 5612, 5207, 12, 12798, 13754, 13755, 13756, 13757, 9775, 8343, 5209, 1623, 1495, 1375, 5210, 1888, 1252, 10199, 7636, 10201, 13758, 7824, 13759, 6560, 13791, 7101, 2]
 // Exports: default
 
-// Module 13738 (useChatInputRefs)
+// Module 13753 (useChatInputRefs)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import MessageConstants from "MessageConstants" /* 5019 */;
@@ -16,8 +16,8 @@ import DraftStore2 from "DraftStore" /* 7701 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9895 */;
 import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10199 */;
 import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10201 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12795 */;
-import ChatInputSendUtils from "ChatInputSendUtils" /* 13744 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12798 */;
+import ChatInputSendUtils from "ChatInputSendUtils" /* 13759 */;
 import react_mod from "react" /* 19 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 8346 */;
 import StickersStore from "StickersStore" /* 6837 */;

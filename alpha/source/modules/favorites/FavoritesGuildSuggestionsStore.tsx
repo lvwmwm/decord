@@ -1,10 +1,10 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18262
+// Function ID: 18263
 // Name: FavoritesGuildSuggestionsStore
 // Dependencies: [32, 19, 4855, 1072, 4860, 560, 7569, 4847, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 18249 (FavoritesGuildSuggestionsStore)
+// Module 18262 (FavoritesGuildSuggestionsStore)
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,10 +1,10 @@
-// Module ID: 12468
-// Function ID: 12469
+// Module ID: 12127
+// Function ID: 12128
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 10850, 10865, 6844, 21, 3868, 5014, 575, 5607, 504, 12469, 12479, 12498, 7366, 1113, 7321, 7367, 6027, 12500, 12503, 12505, 5624, 6953, 5634, 8980, 12511, 9214, 2]
+// Dependencies: [5, 32, 19, 17, 10850, 10865, 6844, 21, 3868, 5014, 575, 5607, 504, 12128, 12138, 12157, 7366, 1113, 7321, 7367, 6027, 12159, 12162, 12164, 5624, 6953, 5634, 8980, 12170, 9214, 2]
 // Exports: default
 
-// Module 12468 (ConjureSettingsSheet)
+// Module 12127 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3868 from "module_3868" /* 3868 */;
@@ -71,7 +71,7 @@ function SettingsTabStrip(tabs) {
   const tmp12 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(12511).Tabs, obj3);
+    tmp11Result = tmp11(tmp5(12170).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
     tmp11Result = tmp11(tmp5(9214).SegmentedControl, obj4);

@@ -1,10 +1,10 @@
-// Module ID: 11618
-// Function ID: 11619
+// Module ID: 11619
+// Function ID: 11620
 // Name: useDownloadedFile
 // Dependencies: [5, 32, 19, 1113, 6451, 6038, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11618 (useDownloadedFile)
+// Module 11619 (useDownloadedFile)
 import intl2 from "intl" /* 1113 */;
 import FileSizeUtils from "FileSizeUtils" /* 6451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

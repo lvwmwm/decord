@@ -1,17 +1,17 @@
-// Module ID: 19610
-// Function ID: 19611
+// Module ID: 19617
+// Function ID: 19618
 // Name: SharedSpacesWarningManager
-// Dependencies: [4863, 5764, 4956, 15619, 15617, 19611, 1092, 15620, 7287, 2]
+// Dependencies: [4863, 5764, 4956, 15623, 15621, 19618, 1092, 15624, 7287, 2]
 
-// Module 19610 (SharedSpacesWarningManager)
+// Module 19617 (SharedSpacesWarningManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 15620 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 19611 */;
+import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 15624 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 19618 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15619 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15617 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15623 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15621 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function handleAppStateChanged(state) {
           set = new Set(items);
           if (!metroImportAll(set)) {
             const items1 = [];
-            const showVoiceChannelBlockedUserWarning = tmp2(15620).showVoiceChannelBlockedUserWarning;
+            const showVoiceChannelBlockedUserWarning = tmp2(15624).showVoiceChannelBlockedUserWarning;
             showVoiceChannelBlockedUserWarning2;
             HermesBuiltin.arraySpread(items1, ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(items1, blockedUsersForVoiceChannel, 0));
             const result = showVoiceChannelBlockedUserWarning(channelId, items1[0]);

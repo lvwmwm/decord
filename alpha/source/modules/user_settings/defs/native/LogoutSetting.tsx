@@ -1,9 +1,9 @@
-// Module ID: 17539
-// Function ID: 17540
+// Module ID: 17552
+// Function ID: 17553
 // Name: LogoutSetting
-// Dependencies: [21, 510, 1092, 6706, 10914, 7161, 6740, 5960, 5964, 1113, 11539, 11883, 2]
+// Dependencies: [21, 510, 1092, 6706, 10914, 7161, 6740, 5960, 5964, 1113, 11540, 11884, 2]
 
-// Module 17539 (LogoutSetting)
+// Module 17552 (LogoutSetting)
 import Storage2 from "Storage" /* 510 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl5 from "intl" /* 1113 */;
@@ -13,9 +13,9 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7161 */;
 import PushNotificationDefault from "PushNotification" /* 10914 */;
-import DoorExitIcon from "DoorExitIcon" /* 11883 */;
+import DoorExitIcon from "DoorExitIcon" /* 11884 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let set;

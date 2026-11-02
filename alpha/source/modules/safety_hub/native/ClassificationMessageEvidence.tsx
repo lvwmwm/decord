@@ -1,10 +1,10 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13324
+// Function ID: 13325
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1192, 1383, 7994, 7970, 1072, 21, 8377, 5014, 504, 5021, 13310, 13311, 7969, 6051, 8833, 8874, 13312, 9885, 6063, 11, 2]
+// Dependencies: [32, 19, 17, 1192, 1383, 7994, 7970, 1072, 21, 8377, 5014, 504, 5021, 13325, 13326, 7969, 6051, 8833, 8874, 13327, 9885, 6063, 11, 2]
 // Exports: default
 
-// Module 13309 (ClassificationMessageEvidence)
+// Module 13324 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1072 */;
 import RowGeneratorDefault from "RowGenerator" /* 8377 */;
 import openMediaModal from "openMediaModal" /* 8833 */;
@@ -85,10 +85,10 @@ export default function ClassificationEvidence(flaggedContent) {
     const obj = ref(closure_2[12]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(13310));
+    assetSource = resolveAssetSource(tmp12(13325));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(13311));
+    assetSource = resolveAssetSource(tmp12(13326));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -273,7 +273,7 @@ export default function ClassificationEvidence(flaggedContent) {
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(13312), obj6), ];
+      const items9 = [closure_18(tmp14(13327), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
       const tmp14Result = tmp14(9885);
       const _Date = Date;

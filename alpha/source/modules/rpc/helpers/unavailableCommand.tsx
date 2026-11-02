@@ -1,9 +1,9 @@
-// Module ID: 16363
-// Function ID: 16364
+// Module ID: 16375
+// Function ID: 16376
 // Name: unavailableCommand
 // Dependencies: [1072, 9333, 2]
 
-// Module 16363 (unavailableCommand)
+// Module 16375 (unavailableCommand)
 import Constants from "Constants" /* 1072 */;
 import RPCErrorDefault from "RPCError" /* 9333 */;
 import size from "module_2" /* 2 */;

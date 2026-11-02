@@ -1,17 +1,17 @@
-// Module ID: 14029
-// Function ID: 14030
+// Module ID: 14044
+// Function ID: 14045
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 4881, 4926, 4920, 21, 5014, 575, 1113, 504, 9031, 1379, 5624, 6980, 11643, 1187, 14028, 8661, 9061, 9059, 11910, 2]
+// Dependencies: [19, 17, 4881, 4926, 4920, 21, 5014, 575, 1113, 504, 9031, 1379, 5624, 6980, 11644, 1187, 14043, 8661, 9061, 9059, 11911, 2]
 // Exports: default
 
-// Module 14029 (ChannelAccessInfo)
+// Module 14044 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import GuildRecord from "GuildRecord" /* 4881 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9031 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11643 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11644 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import GuildRoleStore from "GuildRoleStore" /* 4920 */;
@@ -158,7 +158,7 @@ export default function ChannelAccessInfo(guild) {
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(14028);
+    channel(14043);
     items5 = [renderCounts(MEMBERS, length, 0, tmp2(8661).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;
@@ -167,7 +167,7 @@ export default function ChannelAccessInfo(guild) {
   }
   const obj10 = { children: items2 };
   items6 = [tmp13(tmp14, obj3), ];
-  const obj11 = { source: channel(11910), size: guild(1187).Icon.Sizes.SMALL };
+  const obj11 = { source: channel(11911), size: guild(1187).Icon.Sizes.SMALL };
   const Icon = tmp2(1187).Icon;
   items6[1] = tmp13(Icon, obj11);
   items2[1] = closure_9(PressableOpacity, obj2);

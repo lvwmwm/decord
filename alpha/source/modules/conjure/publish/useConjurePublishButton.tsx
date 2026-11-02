@@ -1,13 +1,13 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 12096
+// Function ID: 12097
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1113, 3868, 12438, 2]
+// Dependencies: [32, 19, 1113, 3868, 12097, 2]
 // Exports: default
 
-// Module 12437 (useConjurePublishButton)
+// Module 12096 (useConjurePublishButton)
 import intl3 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12438 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13793
-// Function ID: 13794
+// Module ID: 13808
+// Function ID: 13809
 // Name: PremiumAnimatedGiftButton
 // Dependencies: [19, 5015, 21, 5014, 575, 5596, 504, 1375, 5095, 6980, 5618, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 13793 (PremiumAnimatedGiftButton)
+// Module 13808 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

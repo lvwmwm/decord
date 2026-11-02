@@ -1,10 +1,10 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 11654
+// Function ID: 11655
 // Name: isRetryableFetchError
 // Dependencies: [2]
 // Exports: default
 
-// Module 11653 (isRetryableFetchError)
+// Module 11654 (isRetryableFetchError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/isRetryableFetchError.tsx");

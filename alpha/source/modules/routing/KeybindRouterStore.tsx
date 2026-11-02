@@ -1,9 +1,9 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 12067
+// Function ID: 12068
 // Name: KeybindRouterStore
 // Dependencies: [1072, 5050, 5063, 1254, 1259, 2]
 
-// Module 12066 (KeybindRouterStore)
+// Module 12067 (KeybindRouterStore)
 import matchPathCompat from "matchPathCompat" /* 5050 */;
 import Constants from "Constants" /* 1072 */;
 import module_1254 from "module_1254" /* 1254 */;
@@ -35,11 +35,11 @@ function getMatchData(pathname) {
   const tmp4 = constants;
   if (null != matchPathResult) {
     ({ guildId, channelId } = matchPathResult.params);
-    let tmp10 = null;
+    let tmp9 = null;
     if (guildId !== _false) {
-      tmp10 = guildId;
+      tmp9 = guildId;
     }
-    const obj2 = { guildId: tmp10, channelId };
+    const obj2 = { guildId: tmp9, channelId };
     if (channelId == null) {
       channelId = null;
     }

@@ -1,20 +1,20 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14224
+// Function ID: 14225
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 5015, 13710, 13711, 21, 5095, 5014, 575, 1375, 5637, 5254, 5596, 8238, 5624, 2]
+// Dependencies: [32, 19, 17, 5015, 13725, 13726, 21, 5095, 5014, 575, 1375, 5637, 5254, 5596, 8238, 5624, 2]
 
-// Module 14209 (VoiceMessageChat)
+// Module 14224 (VoiceMessageChat)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import spring from "spring" /* 5637 */;
 import utils_TimeUtils from "utils/TimeUtils" /* 8238 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13710 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13725 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13711 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13726 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
@@ -172,7 +172,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const effect1 = first1.useEffect(() => {
     let closure_0;
-    const f137199 = (arg0) => !arg0;
+    const f137257 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -184,10 +184,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_7(f137199);
+          closure_7(f137257);
           const timeout = setTimeout(flash, num);
         }
-        closure_7(f137199);
+        closure_7(f137257);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

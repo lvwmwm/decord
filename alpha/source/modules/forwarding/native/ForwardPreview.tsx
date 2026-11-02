@@ -1,10 +1,10 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13407
+// Function ID: 13408
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 5014, 575, 5253, 8710, 8377, 9885, 13393, 6087, 12, 13394, 1113, 12800, 9382, 8659, 10535, 5717, 1490, 9509, 5624, 13396, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5253, 8710, 8377, 9885, 13408, 6087, 12, 13409, 1113, 12803, 9382, 8659, 10535, 5717, 1490, 9509, 5624, 13411, 2]
 // Exports: ForwardPreview
 
-// Module 13392 (ForwardPreview)
+// Module 13407 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,9 +18,9 @@ import RowGeneratorTypes from "RowGeneratorTypes" /* 8710 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 9382 */;
 import ClipView from "ClipView" /* 9509 */;
 import ChatItemDefault from "ChatItem" /* 9885 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 13393 */;
-import MosaicMediaType from "MosaicMediaType" /* 13394 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 13396 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 13408 */;
+import MosaicMediaType from "MosaicMediaType" /* 13409 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 13411 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -149,7 +149,7 @@ export function ForwardPreview(message) {
         const intl4 = tmp2(1113).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1113).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(12800).ImagesIcon;
+        AttachmentIcon = tmp2(12803).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -214,7 +214,7 @@ export function ForwardPreview(message) {
       if (1 === num) {
         ImagesIcon = tmp2(8659).ImageIcon;
       } else {
-        ImagesIcon = tmp2(12800).ImagesIcon;
+        ImagesIcon = tmp2(12803).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;

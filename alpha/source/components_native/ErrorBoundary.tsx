@@ -1,9 +1,9 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16431
+// Function ID: 16432
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11361, 21, 5014, 504, 13177, 5634, 1113, 5080, 1242, 572, 1187, 9153, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 11362, 21, 5014, 504, 13192, 5634, 1113, 5080, 1242, 572, 1187, 9153, 5624, 2]
 
-// Module 16419 (components_native/ErrorBoundary)
+// Module 16431 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -15,7 +15,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11361 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11362 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

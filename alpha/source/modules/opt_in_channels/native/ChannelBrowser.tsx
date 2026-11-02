@@ -1,10 +1,10 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11584
+// Function ID: 11585
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7711, 7280, 4944, 4885, 6775, 1072, 4860, 21, 5014, 575, 5607, 11584, 504, 11586, 5044, 4847, 11582, 7218, 7294, 6977, 6980, 1113, 7092, 5717, 11588, 5624, 5652, 5082, 7060, 6989, 5596, 8603, 6974, 6983, 1187, 5754, 2]
+// Dependencies: [32, 19, 17, 7711, 7280, 4944, 4885, 6775, 1072, 4860, 21, 5014, 575, 5607, 11585, 504, 11587, 5044, 4847, 11583, 7218, 7294, 6977, 6980, 1113, 7092, 5717, 11589, 5624, 5652, 5082, 7060, 6989, 5596, 8603, 6974, 6983, 1187, 5754, 2]
 // Exports: default
 
-// Module 11583 (ChannelBrowser)
+// Module 11584 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

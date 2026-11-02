@@ -1,10 +1,10 @@
-// Module ID: 13248
-// Function ID: 13249
+// Module ID: 13263
+// Function ID: 13264
 // Name: GuildSettingsModalMemberEdit
-// Dependencies: [19, 17, 4881, 4921, 4926, 4920, 4885, 4946, 1383, 13249, 1072, 21, 5014, 575, 4951, 12, 6974, 13250, 6975, 1113, 7060, 5080, 7558, 6998, 5068, 5624, 9202, 4933, 8177, 6027, 1187, 7082, 13251, 13252, 5711, 13257, 1497, 504, 38, 13247, 7482, 5606, 13262, 13266, 5612, 7169, 2]
+// Dependencies: [19, 17, 4881, 4921, 4926, 4920, 4885, 4946, 1383, 13264, 1072, 21, 5014, 575, 4951, 12, 6974, 13265, 6975, 1113, 7060, 5080, 7558, 6998, 5068, 5624, 9202, 4933, 8177, 6027, 1187, 7082, 13266, 13267, 5711, 13272, 1497, 504, 38, 13262, 7482, 5606, 13277, 13281, 5612, 7169, 2]
 // Exports: default
 
-// Module 13248 (GuildSettingsModalMemberEdit)
+// Module 13263 (GuildSettingsModalMemberEdit)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,10 +20,10 @@ import ToastUtils from "ToastUtils" /* 5711 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6998 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
 import BotTagDefault from "BotTag" /* 9202 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 13247 */;
-import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 13251 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 13252 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 13257 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 13262 */;
+import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 13266 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 13267 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 13272 */;
 import react from "react" /* 19 */;
 import GuildRecord from "GuildRecord" /* 4881 */;
 import GuildMemberStore from "GuildMemberStore" /* 4926 */;
@@ -31,7 +31,7 @@ import GuildRoleStore from "GuildRoleStore" /* 4920 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import PermissionStore from "PermissionStore" /* 4946 */;
 import UserStore from "UserStore" /* 1383 */;
-import GuildSettingsModalMembersStore from "GuildSettingsModalMembersStore" /* 13249 */;
+import GuildSettingsModalMembersStore from "GuildSettingsModalMembersStore" /* 13264 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;

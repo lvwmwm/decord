@@ -1,10 +1,10 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15055
+// Function ID: 15056
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 5014, 575, 6027, 7086, 5624, 14416, 1113, 14418, 15049, 7416, 5253, 15052, 5634, 5021, 9532, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6027, 7086, 5624, 14430, 1113, 14432, 15053, 7416, 5253, 15056, 5634, 5021, 9532, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 15051 (OrbCheckoutModalComponents)
+// Module 15055 (OrbCheckoutModalComponents)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5021 */;
@@ -13,10 +13,10 @@ import Text_Text from "Text/Text" /* 5624 */;
 import Stack_Stack from "Stack/Stack" /* 6027 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7416 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14416 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 14418 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15049 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 15052 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14430 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 14432 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15053 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 15056 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -105,7 +105,7 @@ export function OrbCheckoutPaymentSourceDetails(orbBalance) {
 export function OrbCheckoutLegalFinePrint() {
   let skuId;
   const tmp = closure_8();
-  let obj = skuId(15049);
+  let obj = skuId(15053);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = react.useMemo(() => {

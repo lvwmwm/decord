@@ -42,7 +42,7 @@ function createNormalizedConfigs(arg0, arg1) {
 
 export function getPathFromState(state, screens) {
   let tmp27;
-  const f81623 = function(item) {
+  const f81659 = function(item) {
     let obj4;
     let tmp2;
     let tmp3;
@@ -97,7 +97,7 @@ export function getPathFromState(state, screens) {
           const _Object = Object;
           const _Object2 = Object;
           const entries = Object.entries(tmp16);
-          fromEntriesResult = fromEntries(entries.map(f81623));
+          fromEntriesResult = fromEntries(entries.map(f81659));
         } else {
           throw new TypeError("Trying to call a non-function");
         }
@@ -132,7 +132,7 @@ export function getPathFromState(state, screens) {
           let _Object = Object;
           let _Object2 = Object;
           let entries = Object.entries(tmp4);
-          let fromEntriesResult = fromEntries(entries.map(f81623));
+          let fromEntriesResult = fromEntries(entries.map(f81659));
           let result = obj2.set(screens.screens, fromEntriesResult);
           obj = fromEntriesResult;
         } else {

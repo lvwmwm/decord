@@ -1,12 +1,12 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 18116
+// Function ID: 18117
 // Name: useMessagesFlatData
-// Dependencies: [19, 18089, 18104, 18141, 18142, 2]
+// Dependencies: [19, 18102, 18117, 18154, 18155, 2]
 // Exports: default
 
-// Module 18103 (useMessagesFlatData)
-import useMessagesData from "useMessagesData" /* 18089 */;
-import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 18104 */;
+// Module 18116 (useMessagesFlatData)
+import useMessagesData from "useMessagesData" /* 18102 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 18117 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
     } else {
       listHeaderHeight = 0;
       if (tmp === useMessagesData.MessagesDataHeader.EmptyState) {
-        listHeaderHeight = tmp2(18141).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
+        listHeaderHeight = tmp2(18154).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
     const listData = [];
@@ -64,7 +64,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
     const tmp16 = sections;
     if (sections[useMessagesData.MessagesDataSections.Separator] > 0) {
       listData.push({ kind: "separator" });
-      sum2 = tmp12 + tmp17(18142).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+      sum2 = tmp12 + tmp17(18155).MESSAGES_ITEM_SEPERATOR_HEIGHT;
     }
     const tmp21 = tmp16[useMessagesData.MessagesDataSections.SuggestedFriends];
     let friendsHeaderOffset;

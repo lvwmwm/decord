@@ -1,10 +1,10 @@
-// Module ID: 11774
-// Function ID: 11775
+// Module ID: 11775
+// Function ID: 11776
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1072, 1385, 5768, 21, 5014, 575, 11700, 10049, 7326, 5095, 5254, 1187, 5942, 11775, 1252, 9905, 9906, 2047, 6980, 5717, 10015, 2]
+// Dependencies: [19, 17, 1072, 1385, 5768, 21, 5014, 575, 11701, 10049, 7326, 5095, 5254, 1187, 5942, 11776, 1252, 9905, 9906, 2047, 6980, 5717, 10015, 2]
 // Exports: default
 
-// Module 11774 (StreamQualityLiveIndicator)
+// Module 11775 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

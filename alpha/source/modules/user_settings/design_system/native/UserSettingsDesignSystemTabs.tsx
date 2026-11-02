@@ -1,10 +1,10 @@
-// Module ID: 17774
-// Function ID: 17775
+// Module ID: 17787
+// Function ID: 17788
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 5596, 5011, 8980, 6027, 12511, 14357, 14177, 5634, 7369, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 5596, 5011, 8980, 6027, 12170, 14372, 14192, 5634, 7369, 2]
 // Exports: default
 
-// Module 17774 (UserSettingsDesignSystemTabs)
+// Module 17787 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -103,7 +103,7 @@ export default function UserSettingsDesignSystemTabs() {
   const tmp24 = closure_6;
   if (tmp23Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp23Result = tmp23(tmp21(14357), obj5);
+    tmp23Result = tmp23(tmp21(14372), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp23Result;

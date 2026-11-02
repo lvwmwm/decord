@@ -1,9 +1,9 @@
-// Module ID: 18448
-// Function ID: 18449
+// Module ID: 18461
+// Function ID: 18462
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5015, 6570, 1383, 17062, 1072, 21, 5014, 575, 504, 1187, 5080, 5095, 6853, 9509, 5637, 5596, 9508, 8728, 5260, 7563, 1994, 5303, 2]
+// Dependencies: [5, 32, 19, 17, 5015, 6570, 1383, 17075, 1072, 21, 5014, 575, 504, 1187, 5080, 5095, 6853, 9509, 5637, 5596, 9508, 8728, 5260, 7563, 1994, 5303, 2]
 
-// Module 18448 (YouBarAvatar)
+// Module 18461 (YouBarAvatar)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
@@ -19,7 +19,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
 import UserStore from "UserStore" /* 1383 */;
-import YouBarConstants from "YouBarConstants" /* 17062 */;
+import YouBarConstants from "YouBarConstants" /* 17075 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -332,7 +332,7 @@ function YouBarAvatar(transitionState) {
     const obj5 = { style: items3, children: closure_22(Avatar, obj6) };
     items3 = [rect, animatedStyle];
     const View = cleanup(tmp2[15]).View;
-    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz" };
+    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
     Avatar = tmp(tmp2[13]).Avatar;
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;

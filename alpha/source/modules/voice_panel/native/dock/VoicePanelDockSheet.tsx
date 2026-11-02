@@ -1,15 +1,15 @@
-// Module ID: 19201
-// Function ID: 19202
+// Module ID: 19208
+// Function ID: 19209
 // Name: VoicePanelDockSheet
-// Dependencies: [19, 17, 11223, 11241, 21, 11249, 5596, 575, 5011, 5095, 11222, 7241, 19202, 2]
+// Dependencies: [19, 17, 11223, 11241, 21, 11249, 5596, 575, 5011, 5095, 11222, 7241, 19209, 2]
 // Exports: VoicePanelContentWithDock, getDockSheetShadowOpacity, getDockSheetSurfaceStyle, getDockSheetTransform, useDockSheetSurfaceFills
 
-// Module 19201 (VoicePanelDockSheet)
+// Module 19208 (VoicePanelDockSheet)
 import react_native from "react-native" /* 17 */;
 import ColorUtils from "ColorUtils" /* 5011 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11249 */;
-import VoicePanelDockDefault from "VoicePanelDock" /* 19202 */;
+import VoicePanelDockDefault from "VoicePanelDock" /* 19209 */;
 import react from "react" /* 19 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11241 */;

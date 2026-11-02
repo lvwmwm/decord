@@ -20,7 +20,7 @@ export function useAnimatedKeyboard() {
   let ref;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "flexDirection" };
+    obj = { isStatusBarTranslucentAndroid: "raw", isNavigationBarTranslucentAndroid: "cix" };
   }
   let ref2;
   let obj2;

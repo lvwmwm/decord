@@ -1,15 +1,15 @@
-// Module ID: 13305
-// Function ID: 13306
+// Module ID: 13320
+// Function ID: 13321
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 7994, 7970, 1072, 21, 5014, 504, 13298, 13306, 1113, 13304, 13307, 13323, 13324, 5624, 2]
+// Dependencies: [19, 17, 7994, 7970, 1072, 21, 5014, 504, 13313, 13321, 1113, 13319, 13322, 13338, 13339, 5624, 2]
 // Exports: default
 
-// Module 13305 (AppealIngestionSpeedBump)
+// Module 13320 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 13307 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 13323 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13324 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 13322 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 13338 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13339 */;
 import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7994 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7970 */;
@@ -79,7 +79,7 @@ export default function AppealIngestionSpeedBump(arg0) {
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
   const intl2 = tmp2(1113).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(13304).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(13319).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };

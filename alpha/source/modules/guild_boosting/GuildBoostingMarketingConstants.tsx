@@ -1,9 +1,9 @@
-// Module ID: 14125
-// Function ID: 14126
+// Module ID: 14140
+// Function ID: 14141
 // Name: GuildBoostingMarketingConstants
 // Dependencies: [1072, 1385, 1113, 2]
 
-// Module 14125 (GuildBoostingMarketingConstants)
+// Module 14140 (GuildBoostingMarketingConstants)
 import intl3 from "intl" /* 1113 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;

@@ -1,10 +1,10 @@
-// Module ID: 12019
-// Function ID: 12020
+// Module ID: 12020
+// Function ID: 12021
 // Name: RTCDebugOverlay
-// Dependencies: [19, 17, 4863, 4885, 5764, 5787, 7885, 1383, 5768, 21, 5014, 5011, 575, 1187, 504, 5652, 12020, 5788, 7292, 5634, 1113, 2]
+// Dependencies: [19, 17, 4863, 4885, 5764, 5787, 7885, 1383, 5768, 21, 5014, 5011, 575, 1187, 504, 5652, 12021, 5788, 7292, 5634, 1113, 2]
 // Exports: default
 
-// Module 12019 (RTCDebugOverlay)
+// Module 12020 (RTCDebugOverlay)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import components_Button_Button from "components/Button/Button" /* 5634 */;
 import Constants from "Constants" /* 5768 */;
 import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5788 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12020 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 12021 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

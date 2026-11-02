@@ -1,10 +1,10 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 11690
+// Function ID: 11691
 // Name: getSupportsRemoteJoin
 // Dependencies: [1072, 7483, 2]
 // Exports: getSupportsRemoteJoin
 
-// Module 11689 (getSupportsRemoteJoin)
+// Module 11690 (getSupportsRemoteJoin)
 import Constants from "Constants" /* 1072 */;
 import hasFlagDefault from "hasFlag" /* 7483 */;
 import size from "module_2" /* 2 */;

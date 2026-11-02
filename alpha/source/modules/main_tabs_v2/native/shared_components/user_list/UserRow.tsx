@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "Array" };
+  obj = { lineHeight: "r" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "a" };
+      let obj2 = { accessibilityActions: items, actions: "Array" };
       return obj2;
     } else {
       let tmp9;
@@ -417,14 +417,14 @@ const memoResult = react.memo(function UserRow(type) {
         tmp9 = authStore3(View, obj17);
       } else if (trailing.SUGGESTION === type) {
         obj = { name: analyticsLocations.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
-        let tmp = analyticsLocations;
-        let tmp2 = require;
-        let tmp3 = dependencyMap;
+        const tmp = analyticsLocations;
         const push = items.push;
         intl = intl14.intl;
         const obj21 = { name: analyticsLocations.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
         intl2 = intl14.intl;
         push(obj, obj21);
+        let tmp5 = authStore3;
+        let tmp6 = View;
         const obj23 = { style: closure_17.actions, children: authStore3(View, obj24) };
         obj24 = { style: closure_17.buttonWrapper, children: authStore3(Button, obj26) };
         obj26 = {
@@ -474,17 +474,17 @@ const memoResult = react.memo(function UserRow(type) {
                 ensurePrivateChannelResult.then((result) => {
                   channel = channel.getChannel(result);
                   if (null != channel) {
-                    const tmp3 = closure_2_1(closure_2_2[15]);
-                    tmp3(channel.isPrivate(), "must be a DM");
-                    const obj2 = closure_2_1(closure_2_2[16])(channel, false);
-                    const tmp = closure_2_1;
-                    const tmp2 = closure_2_2;
-                    if (!obj2.inCall) {
-                      obj2.onPress();
+                    const tmp6 = closure_2_1(closure_2_2[15]);
+                    tmp6(channel.isPrivate(), "must be a DM");
+                    const obj4 = closure_2_1(closure_2_2[16])(channel, false);
+                    const tmp4 = closure_2_1;
+                    const tmp5 = closure_2_2;
+                    if (!obj4.inCall) {
+                      obj4.onPress();
                     }
                     obj = { recipientIds: current.id };
-                    const tmpResult = tmp(tmp2[14]);
-                    tmpResult.openPrivateChannel(obj);
+                    const tmp4Result = tmp4(tmp5[14]);
+                    tmp4Result.openPrivateChannel(obj);
                   }
                 });
               },
@@ -536,17 +536,17 @@ const memoResult = react.memo(function UserRow(type) {
       ensurePrivateChannelResult.then((result) => {
         channel = channel.getChannel(result);
         if (null != channel) {
-          const tmp3 = closure_2_1(closure_2_2[15]);
-          tmp3(channel.isPrivate(), "must be a DM");
-          const obj2 = closure_2_1(closure_2_2[16])(channel, false);
-          const tmp = closure_2_1;
-          const tmp2 = closure_2_2;
-          if (!obj2.inCall) {
-            obj2.onPress();
+          const tmp6 = closure_2_1(closure_2_2[15]);
+          tmp6(channel.isPrivate(), "must be a DM");
+          const obj4 = closure_2_1(closure_2_2[16])(channel, false);
+          const tmp4 = closure_2_1;
+          const tmp5 = closure_2_2;
+          if (!obj4.inCall) {
+            obj4.onPress();
           }
           obj = { recipientIds: current.id };
-          const tmpResult = tmp(tmp2[14]);
-          tmpResult.openPrivateChannel(obj);
+          const tmp4Result = tmp4(tmp5[14]);
+          tmp4Result.openPrivateChannel(obj);
         }
       });
     } else if (analyticsLocations.MESSAGE === actionName) {
@@ -754,7 +754,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (null == guildId) {
         let obj12 = { userId: user.id, userName: memo3, style: items15, defaultColor: "mobile-text-heading-primary", accessibilityLabel: formatToPlainStringResult };
         items15 = [tmp3.usernameLabel, memo1];
-        const tmp4Result = tmp4(tmp5[46]);
+        let tmp4Result = tmp4(tmp5[46]);
         const merged1 = Object.assign(obj10);
         tmp32Result6 = label(tmp4Result, obj12);
         tmp32 = label;

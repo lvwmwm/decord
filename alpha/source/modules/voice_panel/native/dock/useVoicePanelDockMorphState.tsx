@@ -1,10 +1,10 @@
-// Module ID: 19185
-// Function ID: 19186
+// Module ID: 19192
+// Function ID: 19193
 // Name: useVoicePanelDockMorphState
 // Dependencies: [19, 11223, 11241, 5095, 5637, 11249, 5254, 2]
 // Exports: default
 
-// Module 19185 (useVoicePanelDockMorphState)
+// Module 19192 (useVoicePanelDockMorphState)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import spring from "spring" /* 5637 */;

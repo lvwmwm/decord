@@ -1,13 +1,13 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 13749
+// Function ID: 13750
 // Name: SlowModeIndicator
-// Dependencies: [19, 7830, 21, 5014, 575, 504, 7831, 5712, 11640, 6980, 5624, 2]
+// Dependencies: [19, 7830, 21, 5014, 575, 504, 7831, 5712, 11641, 6980, 5624, 2]
 
-// Module 13734 (SlowModeIndicator)
+// Module 13749 (SlowModeIndicator)
 import nativeDefault from "native" /* 575 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 7831 */;
-import TimerIcon from "TimerIcon" /* 11640 */;
+import TimerIcon from "TimerIcon" /* 11641 */;
 import react from "react" /* 19 */;
 import SlowmodeStore from "SlowmodeStore" /* 7830 */;
 import Fragment from "Fragment" /* 21 */;

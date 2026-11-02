@@ -1,10 +1,10 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16357
+// Function ID: 16358
 // Name: toggleVoiceChannelChat
 // Dependencies: [4863, 5764, 6843, 5759, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 16353 (toggleVoiceChannelChat)
+// Module 16357 (toggleVoiceChannelChat)
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;

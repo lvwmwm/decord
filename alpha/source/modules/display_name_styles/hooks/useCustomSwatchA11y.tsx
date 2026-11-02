@@ -1,10 +1,10 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17343
+// Function ID: 17344
 // Name: useCustomSwatchA11y
 // Dependencies: [19, 1090, 1113, 2]
 // Exports: default
 
-// Module 17330 (useCustomSwatchA11y)
+// Module 17343 (useCustomSwatchA11y)
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;

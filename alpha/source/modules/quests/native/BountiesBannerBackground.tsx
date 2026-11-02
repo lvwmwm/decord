@@ -1,9 +1,9 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 16997
+// Function ID: 16998
 // Name: BountiesBannerBackground
 // Dependencies: [19, 17, 5015, 21, 504, 8873, 5587, 2]
 
-// Module 16984 (BountiesBannerBackground)
+// Module 16997 (BountiesBannerBackground)
 import get_initialized from "get initialized" /* 504 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;
 import common_Video from "common/Video" /* 8873 */;

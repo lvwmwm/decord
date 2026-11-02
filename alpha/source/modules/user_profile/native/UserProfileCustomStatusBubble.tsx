@@ -1,10 +1,10 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11396
+// Function ID: 11397
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7377, 1386, 1083, 21, 1375, 5014, 575, 8031, 4839, 5717, 1409, 5624, 7300, 5596, 8761, 10749, 11047, 5258, 11396, 7351, 1113, 6980, 11488, 2]
+// Dependencies: [32, 19, 17, 7377, 1386, 1083, 21, 1375, 5014, 575, 8031, 4839, 5717, 1409, 5624, 7300, 5596, 8761, 10749, 11047, 5258, 11397, 7351, 1113, 6980, 11489, 2]
 // Exports: default
 
-// Module 11395 (UserProfileCustomStatusBubble)
+// Module 11396 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import EmojiConstants from "EmojiConstants" /* 1386 */;
@@ -17,7 +17,7 @@ import EmojiDefault from "Emoji" /* 7300 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import Constants2 from "Constants" /* 7377 */;
 import inlineStyles from "inlineStyles" /* 8031 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11396 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

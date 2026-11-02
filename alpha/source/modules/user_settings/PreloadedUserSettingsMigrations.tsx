@@ -1,9 +1,9 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16287
+// Function ID: 16288
 // Name: PreloadedUserSettingsMigrations
 // Dependencies: [4863, 1072, 1196, 4846, 7381, 510, 1233, 504, 1227, 4847, 7700, 2]
 
-// Module 16283 (PreloadedUserSettingsMigrations)
+// Module 16287 (PreloadedUserSettingsMigrations)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;

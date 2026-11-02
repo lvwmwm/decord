@@ -1,10 +1,10 @@
-// Module ID: 18874
-// Function ID: 18875
+// Module ID: 18881
+// Function ID: 18882
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [21, 13435, 13419, 5258, 18875, 1994, 6088, 6975, 1113, 3092, 13401, 2]
+// Dependencies: [21, 13450, 13434, 5258, 18882, 1994, 6088, 6975, 1113, 3092, 13416, 2]
 // Exports: default
 
-// Module 18874 (CheckpointProfileEntrypoint)
+// Module 18881 (CheckpointProfileEntrypoint)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -12,9 +12,9 @@ import _modDef3092 from "module_3092" /* 3092 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import CheckpointExperiments from "CheckpointExperiments" /* 6088 */;
 import TableRow2 from "TableRow" /* 6975 */;
-import ExperimentalCheckpointIcon from "ExperimentalCheckpointIcon" /* 13401 */;
-import openCheckpoint from "openCheckpoint" /* 13419 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 13435 */;
+import ExperimentalCheckpointIcon from "ExperimentalCheckpointIcon" /* 13416 */;
+import openCheckpoint from "openCheckpoint" /* 13434 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 13450 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {
@@ -25,7 +25,7 @@ function handlePress() {
 }
 function handleLongPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(18875, dependencyMap.paths), "CheckpointTestingActionSheet");
+  obj.openLazy(asyncRequire(18882, dependencyMap.paths), "CheckpointTestingActionSheet");
 }
 function CheckpointProfileEntrypointRow() {
   let intl;

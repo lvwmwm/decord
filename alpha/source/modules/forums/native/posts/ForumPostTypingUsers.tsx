@@ -1,10 +1,10 @@
-// Module ID: 13767
-// Function ID: 13768
+// Module ID: 13782
+// Function ID: 13783
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 5014, 575, 9838, 13717, 13768, 5095, 1187, 5624, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 9838, 13732, 13783, 5095, 1187, 5624, 2]
 // Exports: default
 
-// Module 13767 (ForumPostTypingUsers)
+// Module 13782 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

@@ -166,7 +166,7 @@ let obj = {
           const obj2 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj4 };
           ({ id: obj3.id, applicationId: obj3.applicationId, intent: obj3.intent, surface: obj3.surface, launchRequestId: obj3.launchRequestId } = value);
           const _Date = Date;
-          obj4 = { url: tmp6, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, poolVisibility: "unpooled", muted, userMuted: false, iframeId: null, hostWindowKey, launch, invite };
+          obj4 = { url: tmp6, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, runsInBackground: false, pictureInPictureInteractive: false, poolVisibility: "unpooled", muted, userMuted: false, iframeId: null, hostWindowKey, launch, invite };
           set = map.set;
           const merged = Object.assign(closure_12);
           if (hostWindowKey == null) {
@@ -318,6 +318,31 @@ let obj = {
           set = tmp3.set;
           const merged = Object.assign(value);
           obj2 = { runsInBackground: tmp };
+          const merged1 = Object.assign(value.data);
+          const result = set(frameId, obj);
+          flag2 = true;
+        }
+        tmp6 = flag2;
+      }
+      flag = tmp6;
+    }
+    return flag;
+  },
+  FRAME_SET_PICTURE_IN_PICTURE_INTERACTIVE: function handleSetPictureInPictureInteractive(frameId) {
+    let obj2;
+    frameId = frameId.frameId;
+    let flag = false;
+    if (null != frameId) {
+      const value = map.get(frameId);
+      let tmp6 = metroImportDefault(value);
+      const tmp3 = map;
+      if (tmp6) {
+        let flag2 = tmp2(value.data);
+        if (flag2) {
+          const obj = { data: obj2 };
+          set = tmp3.set;
+          const merged = Object.assign(value);
+          obj2 = { pictureInPictureInteractive: tmp };
           const merged1 = Object.assign(value.data);
           const result = set(frameId, obj);
           flag2 = true;
@@ -532,7 +557,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp.set;
           const merged = Object.assign(value);
-          obj2 = { iframeId, runsInBackground: false };
+          obj2 = { iframeId, pictureInPictureInteractive: false };
           const merged1 = Object.assign(value.data);
           const merged2 = Object.assign(closure_12);
           const result = set(frameId, obj);
@@ -558,7 +583,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp2.set;
           const merged = Object.assign(value);
-          obj2 = { iframeId: null, runsInBackground: false };
+          obj2 = { iframeId: null, pictureInPictureInteractive: false };
           const merged1 = Object.assign(value.data);
           const merged2 = Object.assign(closure_12);
           const result = set(frameId, obj);

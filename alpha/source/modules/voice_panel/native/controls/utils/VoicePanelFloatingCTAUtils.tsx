@@ -1,10 +1,10 @@
-// Module ID: 19159
-// Function ID: 19160
+// Module ID: 19166
+// Function ID: 19167
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6843, 19160, 6855, 4863, 4869, 21, 5253, 11222, 19144, 9090, 563, 9020, 8969, 8965, 5258, 8985, 19161, 9211, 8179, 9115, 1113, 7054, 19162, 10977, 19163, 7570, 8841, 5044, 7086, 4847, 19164, 14087, 5271, 2]
+// Dependencies: [32, 19, 17, 6843, 19167, 6855, 4863, 4869, 21, 5253, 11222, 19151, 9090, 563, 9020, 8969, 8965, 5258, 8985, 19168, 9211, 8179, 9115, 1113, 7054, 19169, 10977, 19170, 7570, 8841, 5044, 7086, 4847, 19171, 14102, 5271, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 19159 (VoicePanelFloatingCTAUtils)
+// Module 19166 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,11 +12,11 @@ import dismissible_content from "dismissible_content" /* 4847 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19164 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
-import EventBannerStore from "EventBannerStore" /* 19160 */;
+import EventBannerStore from "EventBannerStore" /* 19167 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require;
 
 let tmp;
 const getDeviceSpecificString2 = tmp(5271);
-const SoundboardIcon = tmp(14087);
+const SoundboardIcon = tmp(14102);
 function useFloatingCTAProps(stateFromStores) {
   let closure_0;
   let entity_type;
@@ -61,7 +61,7 @@ function useFloatingCTAProps(stateFromStores) {
   let nextRecurrenceIdInEvent;
   const tmp5 = setShowFloatingCTA(5253)();
   let id1;
-  const tmp6 = setShowFloatingCTA(19144)(react.useContext(setShowFloatingCTA(11222)).channelId);
+  const tmp6 = setShowFloatingCTA(19151)(react.useContext(setShowFloatingCTA(11222)).channelId);
   const useImminentUpcomingGuildEvents = require("useGuildScheduledEvents").useImminentUpcomingGuildEvents;
   require("useGuildScheduledEvents");
   if (stateFromStores != null) {
@@ -133,7 +133,7 @@ function useFloatingCTAProps(stateFromStores) {
   }
   _require = stateFromStores;
   const items4 = [ChannelRTCStore];
-  const tmp28 = tmp(19144)(obj.useContext(tmp(11222)).channelId);
+  const tmp28 = tmp(19151)(obj.useContext(tmp(11222)).channelId);
   const tmp7Result11 = require("useStateFromStores");
   const stateFromStores1 = tmp7Result11.useStateFromStores(items4, () => {
     let id;

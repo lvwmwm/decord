@@ -1,14 +1,14 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14165
+// Function ID: 14166
 // Name: GuildProgressCircle
-// Dependencies: [19, 17, 21, 5014, 575, 12570, 14032, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 12236, 14047, 2]
 // Exports: default
 
-// Module 14150 (GuildProgressCircle)
+// Module 14165 (GuildProgressCircle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ProgressCircleDefault from "ProgressCircle" /* 12570 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14032 */;
+import ProgressCircleDefault from "ProgressCircle" /* 12236 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 14047 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;

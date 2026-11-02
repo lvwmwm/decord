@@ -1,9 +1,9 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 13293
+// Function ID: 13294
 // Name: AutomodTriggerType
 // Dependencies: [2]
 
-// Module 13278 (AutomodTriggerType)
+// Module 13293 (AutomodTriggerType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodTriggerType.tsx");

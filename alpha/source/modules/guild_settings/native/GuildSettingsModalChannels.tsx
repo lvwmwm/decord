@@ -1,10 +1,10 @@
-// Module ID: 18194
-// Function ID: 18195
+// Module ID: 18207
+// Function ID: 18208
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 4863, 4885, 4946, 4956, 1383, 18192, 1072, 21, 5014, 6723, 575, 4888, 5080, 1113, 5021, 1090, 8177, 1187, 18195, 504, 8603, 5652, 6980, 1625, 5634, 7363, 9034, 9572, 7558, 4951, 14396, 18196, 5606, 8199, 18197, 18193, 13216, 17277, 10831, 11645, 6902, 5958, 1497, 38, 5642, 2]
+// Dependencies: [19, 17, 4863, 4885, 4946, 4956, 1383, 18205, 1072, 21, 5014, 6723, 575, 4888, 5080, 1113, 5021, 1090, 8177, 1187, 18208, 504, 8603, 5652, 6980, 1625, 5634, 7363, 9034, 9572, 7558, 4951, 14411, 18209, 5606, 8199, 18210, 18206, 13231, 17290, 10831, 11646, 6902, 5958, 1497, 38, 5642, 2]
 // Exports: default
 
-// Module 18194 (GuildSettingsModalChannels)
+// Module 18207 (GuildSettingsModalChannels)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -24,11 +24,11 @@ import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7363 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
 import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 8199 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10831 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13216 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 14396 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17277 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18193 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18197 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13231 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 14411 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17290 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18206 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18210 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
@@ -36,7 +36,7 @@ import GuildStore from "GuildStore" /* 4885 */;
 import PermissionStore from "PermissionStore" /* 4946 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
 import UserStore from "UserStore" /* 1383 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18192 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18205 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -151,7 +151,7 @@ function ChannelItem(isFavoritesGuild) {
   if (stateFromStores) {
     tmp7Result2 = null;
     if (sortingEnabled) {
-      const obj10 = { source: tmp13(18195), style: actionIconStyle };
+      const obj10 = { source: tmp13(18208), style: actionIconStyle };
       const Icon2 = tmp(8177).FormRow.Icon;
       tmp7Result2 = tmp7(Icon2, obj10);
     }
@@ -317,7 +317,7 @@ class Category extends PureComponent {
     } else {
       tmp3Result = null;
       if (null != sortHandlers) {
-        const obj6 = { source: tmp11(18195), style: actionIconStyle };
+        const obj6 = { source: tmp11(18208), style: actionIconStyle };
         const Icon = tmp5(1187).Icon;
         tmp3Result = tmp3(Icon, obj6);
       }

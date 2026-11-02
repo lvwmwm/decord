@@ -1,12 +1,12 @@
-// Module ID: 19675
-// Function ID: 19676
+// Module ID: 19682
+// Function ID: 19683
 // Name: getActionInfo
-// Dependencies: [13277, 7092, 8652, 13268, 14023, 19676, 2]
+// Dependencies: [13292, 7092, 8652, 13283, 14038, 19683, 2]
 // Exports: getActionInfo
 
-// Module 19675 (getActionInfo)
-import Constants from "Constants" /* 13277 */;
-import BaseActionInfo from "BaseActionInfo" /* 19676 */;
+// Module 19682 (getActionInfo)
+import Constants from "Constants" /* 13292 */;
+import BaseActionInfo from "BaseActionInfo" /* 19683 */;
 import size from "module_2" /* 2 */;
 
 const AutomodActionType = Constants.AutomodActionType;
@@ -25,9 +25,9 @@ export function getActionInfo(actionType, action, triggerType) {
     } else if (AutomodActionType.FLAG_TO_CHANNEL === actionType) {
       CircleXIcon = tmp(8652).TextIcon;
     } else if (AutomodActionType.USER_COMMUNICATION_DISABLED === actionType) {
-      CircleXIcon = tmp(13268).ClockWarningIcon;
+      CircleXIcon = tmp(13283).ClockWarningIcon;
     } else if (AutomodActionType.QUARANTINE_USER === actionType) {
-      CircleXIcon = tmp(14023).ChatXIcon;
+      CircleXIcon = tmp(14038).ChatXIcon;
     }
     if (CircleXIcon == null) {
       CircleXIcon = tmp(7092).CircleXIcon;

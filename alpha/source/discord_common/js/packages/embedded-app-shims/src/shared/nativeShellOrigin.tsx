@@ -1,10 +1,10 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11832
+// Function ID: 11833
 // Name: nativeShellOrigin
 // Dependencies: [2]
 // Exports: getNativeShellOrigin, isNativeShellHostname
 
-// Module 11831 (nativeShellOrigin)
+// Module 11832 (nativeShellOrigin)
 import size from "module_2" /* 2 */;
 
 const shell = "shell";

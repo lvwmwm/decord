@@ -68,10 +68,10 @@ export function getMediaTicket(projectId) {
     return cleanupPromise;
   }
 }
-export function retireMediaTicket(id) {
-  map.delete(id);
+export function retireMediaTicket(arg0) {
+  map.delete(arg0);
   const obj = ConjureWorkerTickets;
-  obj.forgetEarlyTicket(id);
+  obj.forgetEarlyTicket(arg0);
 }
 export function clearMediaTickets() {
   map.clear();

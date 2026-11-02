@@ -1,10 +1,10 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 14268
+// Function ID: 14269
 // Name: SkipHeaderButton
 // Dependencies: [19, 21, 5014, 575, 1113, 9812, 2]
 // Exports: default
 
-// Module 14253 (SkipHeaderButton)
+// Module 14268 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

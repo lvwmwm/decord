@@ -1,9 +1,9 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11599
+// Function ID: 11600
 // Name: GuildRoleConnectionsModal
-// Dependencies: [19, 21, 1113, 7558, 8359, 11599, 7169, 2]
+// Dependencies: [19, 21, 1113, 7558, 8359, 11600, 7169, 2]
 
-// Module 11598 (GuildRoleConnectionsModal)
+// Module 11599 (GuildRoleConnectionsModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;

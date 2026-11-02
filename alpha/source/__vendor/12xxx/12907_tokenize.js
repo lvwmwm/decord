@@ -1,44 +1,62 @@
 // Module ID: 12907
 // Function ID: 12908
 // Name: tokenize
-// Dependencies: [12833]
+// Dependencies: [12836]
 
 // Module 12907 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
 
-let items;
-let obj2;
-const Comma = tokenize.TYPE.Comma;
-const obj = {
-  name: "SelectorList",
-  structure: obj2,
-  parse() {
-    const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      list.push(self.Selector());
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.Selector());
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
+let rect;
+function consumeNumber() {
+  let num;
+  const self = this;
+  const scanner = this.scanner;
+  scanner.skipWS();
+  const consumeResult = this.consume(Number);
+  for (let num = 0; num < consumeResult.length; num = num + 1) {
+    let charCodeAtResult = consumeResult.charCodeAt(num);
+    let obj = tokenize;
+    let isDigitResult = obj.isDigit(charCodeAtResult);
+    if (!isDigitResult) {
+      isDigitResult = 46 === charCodeAtResult;
     }
-    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
-    return element;
+    if (!isDigitResult) {
+      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
+    }
+  }
+  if (0 === Number(consumeResult)) {
+    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
+  }
+  return consumeResult;
+}
+const Number = tokenize.TYPE.Number;
+const Delim = tokenize.TYPE.Delim;
+let obj = {
+  name: "Ratio",
+  structure: rect,
+  parse() {
+    let callResult1;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    const scanner = self.scanner;
+    const callResult = consumeNumber.call(self);
+    scanner.skipWS();
+    const scanner2 = self.scanner;
+    const obj = consumeNumber;
+    if (!scanner2.isDelim(47)) {
+      self.error("Solidus is expected");
+    }
+    self.eat(Delim);
+    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
+    callResult1 = obj.call(self);
+    return rect;
   },
-  generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
-  },
-  walkContext: "selector"
+  generate(left) {
+    this.chunk(left.left);
+    this.chunk("/");
+    this.chunk(left.right);
+  }
 };
-obj2 = { children: items };
-items = [["Selector", "Raw"]];
+rect = { left: String, right: String };
 
 export default obj;

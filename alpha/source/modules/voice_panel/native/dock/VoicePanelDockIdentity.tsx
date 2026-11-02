@@ -1,9 +1,9 @@
-// Module ID: 19203
-// Function ID: 19204
+// Module ID: 19210
+// Function ID: 19211
 // Name: VoicePanelDockIdentity
-// Dependencies: [19, 17, 4863, 4885, 4956, 1383, 11241, 21, 5014, 575, 19204, 11222, 504, 6957, 1187, 7275, 5652, 8670, 8673, 5624, 2]
+// Dependencies: [19, 17, 4863, 4885, 4956, 1383, 11241, 21, 5014, 575, 19211, 11222, 504, 6957, 1187, 7275, 5652, 8670, 8673, 5624, 2]
 
-// Module 19203 (VoicePanelDockIdentity)
+// Module 19210 (VoicePanelDockIdentity)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useChannelName from "useChannelName" /* 5652 */;
 import GuildIcon from "GuildIcon" /* 6957 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7275 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19204 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19211 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildStore from "GuildStore" /* 4885 */;

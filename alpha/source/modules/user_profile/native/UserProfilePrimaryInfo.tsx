@@ -1,10 +1,10 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11413
+// Function ID: 11414
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1383, 8754, 7377, 1072, 8393, 8765, 21, 5014, 575, 1375, 10772, 10773, 9202, 6980, 11413, 5624, 11415, 5199, 11447, 1113, 11449, 8755, 5717, 11450, 7563, 5712, 8815, 9684, 9687, 6784, 11452, 11453, 11455, 11459, 11482, 1491, 11483, 8736, 9295, 5068, 2]
+// Dependencies: [19, 17, 1383, 8754, 7377, 1072, 8393, 8765, 21, 5014, 575, 1375, 10772, 10773, 9202, 6980, 11414, 5624, 11416, 5199, 11448, 1113, 11450, 8755, 5717, 11451, 7563, 5712, 8815, 9684, 9687, 6784, 11453, 11454, 11456, 11460, 11483, 1491, 11484, 8736, 9295, 5068, 2]
 // Exports: default
 
-// Module 11412 (UserProfilePrimaryInfo)
+// Module 11413 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5068 */;
@@ -23,8 +23,8 @@ import GuildTagDefault from "GuildTag" /* 9295 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 9684 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11455 */;
-import BadgeUtils from "BadgeUtils" /* 11459 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11456 */;
+import BadgeUtils from "BadgeUtils" /* 11460 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1383 */;
@@ -113,7 +113,7 @@ class DisplayName {
       const tmp13 = user;
       const tmp15 = closure_13;
       if (showChevron) {
-        showChevron = tmp15(tmp13(11413).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+        showChevron = tmp15(tmp13(11414).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
       }
       items1[2] = showChevron;
       tmp12Result = tmp12(PressableOpacity, obj7);

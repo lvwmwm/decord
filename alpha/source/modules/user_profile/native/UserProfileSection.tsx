@@ -1,10 +1,10 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11612
+// Function ID: 11613
 // Name: UserProfileSection
 // Dependencies: [19, 17, 21, 5014, 575, 5080, 7353, 5011, 8183, 5624, 2]
 // Exports: default
 
-// Module 11611 (UserProfileSection)
+// Module 11612 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ColorUtils from "ColorUtils" /* 5011 */;

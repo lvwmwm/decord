@@ -1,10 +1,10 @@
-// Module ID: 11872
-// Function ID: 11873
+// Module ID: 11873
+// Function ID: 11874
 // Name: GuildScheduledEventPrompts
 // Dependencies: [19, 21, 5014, 575, 9020, 8177, 8985, 9116, 1113, 9212, 4836, 2042, 2]
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 11872 (GuildScheduledEventPrompts)
+// Module 11873 (GuildScheduledEventPrompts)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

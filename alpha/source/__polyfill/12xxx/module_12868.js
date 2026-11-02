@@ -1,11 +1,13 @@
 // Module ID: 12868
 // Function ID: 12869
-// Dependencies: [12869, 12874]
+// Dependencies: [12855, 12853, 12856, 12867]
 
 // Module 12868
-import _mod12869 from "module_12869" /* 12869 */;
-import _mod12874 from "module_12874" /* 12874 */;
+import parse from "parse" /* 12853 */;
+import SyntaxError from "SyntaxError" /* 12855 */;
+import _mod12856 from "module_12856" /* 12856 */;
+import _mod12867 from "module_12867" /* 12867 */;
 
-({ generic: true, types: _mod12869.types, atrules: _mod12869.atrules, properties: _mod12869.properties, node: _mod12874 });
+({ SyntaxError, parse, generate: _mod12856, walk: _mod12867 });
 
-export default { generic: true, types: _mod12869.types, atrules: _mod12869.atrules, properties: _mod12869.properties, node: _mod12874 };
+export default { SyntaxError, parse, generate: _mod12856, walk: _mod12867 };

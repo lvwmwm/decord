@@ -1,17 +1,17 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14775
+// Function ID: 14776
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 8934, 21, 5014, 14768, 8905, 10194, 5198, 5095, 5254, 8938, 8939, 1113, 7054, 1187, 575, 5624, 14772, 9874, 1375, 14773, 9756, 2]
+// Dependencies: [19, 17, 8934, 21, 5014, 14772, 8905, 10194, 5198, 5095, 5254, 8938, 8939, 1113, 7054, 1187, 575, 5624, 14776, 9874, 1375, 14777, 9756, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 14771 (MediaModalOverlayHeader)
+// Module 14775 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8934 */;
 import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8939 */;
 import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10194 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14772 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14776 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ export function MediaModalOverlayHeader(arg0) {
   const tmp = closure_8();
   const tmp2 = isModalOpen;
   const tmp3 = dependencyMap;
-  let obj = isModalOpen(14768);
+  let obj = isModalOpen(14772);
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
   let obj2 = isModalOpen(8905);
   const mediaShareActions = obj2.useMediaShareActions({ source, disableDownload, shareable });

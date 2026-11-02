@@ -1,9 +1,9 @@
-// Module ID: 18590
-// Function ID: 18591
+// Module ID: 18603
+// Function ID: 18604
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 18591, 9813, 1072, 1083, 21, 5014, 5095, 18592, 18594, 5593, 5253, 5201, 5203, 18595, 5080, 5096, 5989, 11555, 18596, 1498, 18043, 5207, 11243, 5303, 5194, 18042, 18811, 572, 5208, 2]
+// Dependencies: [32, 19, 17, 18604, 9813, 1072, 1083, 21, 5014, 5095, 18605, 18607, 5593, 5253, 5201, 5203, 18608, 5080, 5096, 5989, 11556, 18609, 1498, 18056, 5207, 11243, 5303, 5194, 18055, 18818, 572, 5208, 2]
 
-// Module 18590 (MainTabsChannelScreenStack)
+// Module 18603 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import Link from "Link" /* 1498 */;
@@ -18,14 +18,14 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import useMountEffect from "useMountEffect" /* 5593 */;
 import react_native from "react-native" /* 9813 */;
 import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11243 */;
-import reactDefault from "react" /* 11555 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18042 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18043 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18591 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18592 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18594 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18595 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18596 */;
+import reactDefault from "react" /* 11556 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18055 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18056 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18604 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18605 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18607 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18608 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18609 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

@@ -1,21 +1,21 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 12037
+// Function ID: 12038
 // Name: CallTile
-// Dependencies: [19, 17, 6714, 1383, 11000, 5681, 21, 5014, 5011, 575, 7326, 1625, 504, 5759, 8750, 11756, 12008, 11777, 11786, 12037, 12042, 12043, 12044, 12045, 12046, 1187, 11700, 5095, 5254, 12047, 2]
+// Dependencies: [19, 17, 6714, 1383, 11000, 5681, 21, 5014, 5011, 575, 7326, 1625, 504, 5759, 8750, 11757, 12009, 11778, 11787, 12038, 12043, 12044, 12045, 12046, 12047, 1187, 11701, 5095, 5254, 12048, 2]
 
-// Module 12036 (CallTile)
+// Module 12037 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
 import timing from "timing" /* 5254 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12037 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12042 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12043 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12044 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12045 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12046 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 12038 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12043 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12044 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12045 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12046 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12047 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
@@ -118,7 +118,7 @@ class TileOverlay {
     ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
     useSafeAreaInsetsDefault();
     const tmp5 = reveal;
-    reveal = react.useContext(reveal(11700).RevealContext).reveal;
+    reveal = react.useContext(reveal(11701).RevealContext).reveal;
     let obj = reveal(5095);
     class T {
       constructor() {
@@ -168,7 +168,7 @@ class TileOverlay {
     items1 = [isActiveStream, ];
     const obj5 = { style: tmp.usernamePosition, children: closure_15(closure_5, obj6) };
     obj6 = { style: tmp.usernameContainer, children: items2 };
-    items2 = [closure_13(ParticipantIcon, { participant }), closure_13(tmp2(12047), { channel, participant })];
+    items2 = [closure_13(ParticipantIcon, { participant }), closure_13(tmp2(12048), { channel, participant })];
     items1[1] = closure_13(closure_5, obj5);
     return closure_15(View, obj3);
   }

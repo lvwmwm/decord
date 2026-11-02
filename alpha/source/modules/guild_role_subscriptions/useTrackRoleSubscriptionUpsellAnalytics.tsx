@@ -1,10 +1,10 @@
-// Module ID: 18605
-// Function ID: 18606
+// Module ID: 18618
+// Function ID: 18619
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [19, 4939, 1072, 17191, 18606, 504, 7326, 1099, 1252, 5760, 2]
+// Dependencies: [19, 4939, 1072, 17204, 18619, 504, 7326, 1099, 1252, 5760, 2]
 // Exports: default
 
-// Module 18605 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 18618 (useTrackRoleSubscriptionUpsellAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;

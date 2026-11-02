@@ -1,10 +1,10 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 12780
+// Function ID: 12781
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 10851, 21, 5014, 575, 504, 12540, 6977, 10074, 5624, 1113, 3868, 12538, 2]
+// Dependencies: [19, 17, 10851, 21, 5014, 575, 504, 12199, 6977, 10074, 5624, 1113, 3868, 12197, 2]
 // Exports: default
 
-// Module 12777 (ConjureThinkingOverlay)
+// Module 12780 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -51,8 +51,8 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(12540).useConjureRevealedText;
-  projectId(12540);
+  const useConjureRevealedText = projectId(12199).useConjureRevealedText;
+  projectId(12199);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -88,7 +88,7 @@ export default function ConjureThinkingOverlay(projectId) {
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(12538), obj9)
+      children: closure_7(ref(12197), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);

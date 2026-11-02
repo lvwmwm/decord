@@ -1,13 +1,13 @@
-// Module ID: 11500
-// Function ID: 11501
+// Module ID: 11501
+// Function ID: 11502
 // Name: AppLauncherContext
-// Dependencies: [19, 5095, 11501, 11502, 2]
+// Dependencies: [19, 5095, 11502, 11503, 2]
 // Exports: useAppLauncherChatInputRefDummy, useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 11500 (AppLauncherContext)
+// Module 11501 (AppLauncherContext)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11501 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11502 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11503 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 19965
-// Function ID: 19966
+// Module ID: 19972
+// Function ID: 19973
 // Name: FormChannelPicker
-// Dependencies: [19, 4863, 21, 504, 5652, 17220, 8652, 6975, 5624, 1113, 5258, 19966, 1994, 2]
+// Dependencies: [19, 4863, 21, 504, 5652, 17233, 8652, 6975, 5624, 1113, 5258, 19973, 1994, 2]
 // Exports: default
 
-// Module 19965 (FormChannelPicker)
+// Module 19972 (FormChannelPicker)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
@@ -31,7 +31,7 @@ export default function FormChannelPicker(channelId) {
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   let tmp5Result = useChannelNameDefault(stateFromStores);
   if (null != stateFromStores) {
-    const tmpResult = tmp(17220);
+    const tmpResult = tmp(17233);
     let TextIcon = tmpResult.getChannelIconComponentOrDefault(stateFromStores);
   } else {
     TextIcon = tmp(8652).TextIcon;
@@ -49,7 +49,7 @@ export default function FormChannelPicker(channelId) {
     const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: dependencyMap };
     id = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(19966, dependencyMap.paths);
+    const tmp2 = asyncRequire(19973, dependencyMap.paths);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }

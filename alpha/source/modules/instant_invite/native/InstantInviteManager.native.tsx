@@ -1,9 +1,9 @@
-// Module ID: 19505
-// Function ID: 19506
+// Module ID: 19512
+// Function ID: 19513
 // Name: InstantInviteManager
 // Dependencies: [7287, 5712, 1113, 2]
 
-// Module 19505 (InstantInviteManager)
+// Module 19512 (InstantInviteManager)
 import intl2 from "intl" /* 1113 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;

@@ -1,10 +1,10 @@
-// Module ID: 19358
-// Function ID: 19359
+// Module ID: 19365
+// Function ID: 19366
 // Name: getTimeZone
 // Dependencies: [4971, 2]
 // Exports: default
 
-// Module 19358 (getTimeZone)
+// Module 19365 (getTimeZone)
 import DeviceUtils from "DeviceUtils" /* 4971 */;
 import size from "module_2" /* 2 */;
 

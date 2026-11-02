@@ -1,10 +1,10 @@
-// Module ID: 14801
-// Function ID: 14802
+// Module ID: 14805
+// Function ID: 14806
 // Name: MediaViewerItemTransformPresenter
-// Dependencies: [19, 17, 21, 14799, 8838, 14798, 5095, 5096, 2]
+// Dependencies: [19, 17, 21, 14803, 8838, 14802, 5095, 5096, 2]
 // Exports: canPresentWithTransforms, default
 
-// Module 14801 (MediaViewerItemTransformPresenter)
+// Module 14805 (MediaViewerItemTransformPresenter)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import react from "react" /* 19 */;

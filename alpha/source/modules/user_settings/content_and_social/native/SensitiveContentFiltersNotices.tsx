@@ -1,17 +1,17 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 16727
+// Function ID: 16728
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 7490, 21, 16706, 7472, 16573, 1113, 5709, 2061, 7955, 6729, 2]
+// Dependencies: [19, 7490, 21, 16719, 7472, 16586, 1113, 5709, 2061, 7955, 6729, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 16714 (SensitiveContentFiltersNotices)
+// Module 16727 (SensitiveContentFiltersNotices)
 import Fragment from "Fragment" /* 21 */;
 import intl from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
 import LinkingDefault from "Linking" /* 5709 */;
 import Constants from "Constants" /* 7490 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16573 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16586 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export function SensitiveContentFiltersTeenNotice() {
   const obj2 = require("SensitiveMediaGoreRedactionSettingsUtils");
   _require = obj2.useSensitiveContentFilterHelpArticle();
   if (isTinyBroncoSettingsNoticeEnabled) {
-    tmp4Result = tmp4(tmp(16706).ContentFiltersTeenNotice, {});
+    tmp4Result = tmp4(tmp(16719).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
       label: tmp(1113).t.EUo0yj,

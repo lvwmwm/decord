@@ -1,9 +1,9 @@
-// Module ID: 19470
-// Function ID: 19471
+// Module ID: 19477
+// Function ID: 19478
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 4919, 502, 4863, 4926, 4885, 5045, 7398, 8340, 4932, 7287, 1396, 6744, 19471, 1994, 7399, 1092, 13818, 7397, 7400, 2]
+// Dependencies: [32, 5, 4919, 502, 4863, 4926, 4885, 5045, 7398, 8340, 4932, 7287, 1396, 6744, 19478, 1994, 7399, 1092, 13833, 7397, 7400, 2]
 
-// Module 19470 (GuildOnboardingHomeManager)
+// Module 19477 (GuildOnboardingHomeManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import FlagUtils from "FlagUtils" /* 1396 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -105,7 +105,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(19471, tmp2.paths);
+              const tmp11 = asyncRequire(19478, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
               const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7399).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);

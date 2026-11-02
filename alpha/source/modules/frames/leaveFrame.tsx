@@ -1,10 +1,10 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10938
+// Function ID: 10939
 // Name: leaveFrame
 // Dependencies: [6846, 1379, 572, 2]
 // Exports: leaveFrame
 
-// Module 10927 (leaveFrame)
+// Module 10938 (leaveFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import FramesStore from "FramesStore" /* 6846 */;

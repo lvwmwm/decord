@@ -1,18 +1,18 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18199
+// Function ID: 18200
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 21, 5014, 575, 6744, 1625, 18187, 6027, 5624, 1113, 3450, 7082, 7058, 7061, 5634, 7060, 11481, 5652, 18189, 6974, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 6744, 1625, 18200, 6027, 5624, 1113, 3450, 7082, 7058, 7061, 5634, 7060, 11482, 5652, 18202, 6974, 2]
 // Exports: default
 
-// Module 18186 (FavoritesGuildCleanupModal)
+// Module 18199 (FavoritesGuildCleanupModal)
 import nativeDefault from "native" /* 575 */;
 import _modDef3450 from "module_3450" /* 3450 */;
 import useChannelNameDefault from "useChannelName" /* 5652 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import TableCheckboxRow2 from "TableCheckboxRow" /* 6974 */;
 import TableRadioRow2 from "TableRadioRow" /* 7061 */;
-import Modal from "Modal" /* 11481 */;
-import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 18189 */;
+import Modal from "Modal" /* 11482 */;
+import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 18202 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

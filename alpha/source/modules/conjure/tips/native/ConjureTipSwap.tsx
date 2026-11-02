@@ -1,10 +1,10 @@
-// Module ID: 12629
-// Function ID: 12630
+// Module ID: 12632
+// Function ID: 12633
 // Name: ConjureTipSwap
 // Dependencies: [19, 21, 5095, 5254, 2]
 // Exports: default
 
-// Module 12629 (ConjureTipSwap)
+// Module 12632 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;

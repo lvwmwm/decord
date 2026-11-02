@@ -244,13 +244,13 @@ const obj2 = {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       FAILURE = AgeCheckStatus.LOADING;
-      for (const key10007 in closure_6) {
-        if (!closure_6[key10007].is_coppa) {
+      for (const key10002 in closure_6) {
+        if (!closure_6[key10002].is_coppa) {
           continue;
         } else {
           let obj = { status: SafetyHubModels.AppealStatusType.REVIEW_PENDING };
-          let tmp4 = closure_6[key10007];
-          tmp4.appeal_status = obj;
+          let tmp2 = closure_6[key10002];
+          tmp2.appeal_status = obj;
           continue;
         }
         continue;

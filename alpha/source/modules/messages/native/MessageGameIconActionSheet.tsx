@@ -1,10 +1,10 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13247
+// Function ID: 13248
 // Name: MessageGameIconActionSheet
 // Dependencies: [19, 17, 2038, 1072, 21, 5014, 1375, 575, 504, 5272, 1187, 5624, 1113, 2061, 2]
 // Exports: default
 
-// Module 13232 (MessageGameIconActionSheet)
+// Module 13247 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

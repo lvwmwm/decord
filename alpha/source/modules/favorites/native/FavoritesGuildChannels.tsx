@@ -1,19 +1,19 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18348
+// Function ID: 18349
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 18249, 21, 7217, 5642, 18336, 18310, 18337, 18095, 18180, 18248, 18342, 18148, 2]
+// Dependencies: [19, 18262, 21, 7217, 5642, 18349, 18323, 18350, 18108, 18193, 18261, 18355, 18161, 2]
 // Exports: default
 
-// Module 18335 (FavoritesGuildChannels)
+// Module 18348 (FavoritesGuildChannels)
 import useFontScale from "useFontScale" /* 5642 */;
 import useScaledRowHeightDefault from "useScaledRowHeight" /* 7217 */;
-import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18095 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18180 */;
-import FavoritesGuildSuggestedChannels from "FavoritesGuildSuggestedChannels" /* 18248 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18249 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18310 */;
-import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 18336 */;
-import FavoritesGuildSuggestionsLoaderDefault from "FavoritesGuildSuggestionsLoader" /* 18337 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18108 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18193 */;
+import FavoritesGuildSuggestedChannels from "FavoritesGuildSuggestedChannels" /* 18261 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18262 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18323 */;
+import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 18349 */;
+import FavoritesGuildSuggestionsLoaderDefault from "FavoritesGuildSuggestionsLoader" /* 18350 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -57,13 +57,13 @@ export default function FavoritesGuildChannels(guild) {
       items1[1] = React3(FavoritesGuildSuggestedChannelsDefault, {});
       let tmp12Result = null;
       if (shouldShowEmptyState) {
-        tmp12Result = tmp12(tmp2(18342), {});
+        tmp12Result = tmp12(tmp2(18355), {});
       }
       items1[2] = tmp12Result;
       tmp12Result1 = tmp10(tmp2Result, obj5);
     } else {
       const obj8 = { guildChannels, guildChannelsVersion: 0, favoritesSuggestionsNoticeHeight: tmp5Result.getFavoritesSuggestionsNoticeHeight(fontScale, tmp4, tmp) };
-      const ChannelList = tmp5(18148).ChannelList;
+      const ChannelList = tmp5(18161).ChannelList;
       const merged = Object.assign(guild);
       tmp5Result = FavoritesGuildSuggestedChannels;
       tmp12Result1 = tmp12(ChannelList, obj8);

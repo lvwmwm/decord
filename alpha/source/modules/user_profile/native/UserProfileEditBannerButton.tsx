@@ -1,10 +1,10 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16458
+// Function ID: 16459
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 5014, 575, 7326, 8761, 8750, 6980, 1113, 5624, 10232, 8803, 8819, 16447, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7326, 8761, 8750, 6980, 1113, 5624, 10232, 16459, 8803, 8819, 16460, 2]
 // Exports: default
 
-// Module 16446 (UserProfileEditBannerButton)
+// Module 16458 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Pressables from "Pressables" /* 6980 */;
@@ -12,6 +12,7 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 87
 import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8803 */;
 import UserProfileBannerDefault from "UserProfileBanner" /* 8819 */;
 import PencilIcon2 from "PencilIcon" /* 10232 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 16459 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -22,7 +23,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(16447);
+const EditButtonDefault = tmp2(16460);
 function ProfilePreviewButton(userId) {
   let Text;
   let intl;
@@ -82,14 +83,17 @@ export default function UserProfileEditBannerButton(isUserProfileEditingRefresh)
   let editButtonAccessibilityLabel;
   let editDisabled;
   let items;
+  let onLayout;
   let onPressEdit;
   let pendingAccentColor;
   let pendingAvatarSrc;
   let pendingBanner;
   let pendingThemeColors;
+  let ref;
   let showEditButton;
   let showProfilePreviewButton;
   let user;
+  let width;
   ({ user, showProfilePreviewButton, showEditButton } = isUserProfileEditingRefresh);
   ({ displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea } = isUserProfileEditingRefresh);
   if (showEditButton === undefined) {
@@ -101,28 +105,30 @@ export default function UserProfileEditBannerButton(isUserProfileEditingRefresh)
   }
   isUserProfileEditingRefresh = isUserProfileEditingRefresh.isUserProfileEditingRefresh;
   const tmp = closure_7();
-  const obj = { style: tmp.container, children: items };
+  ({ ref, onLayout, width } = useMeasuredLayoutDefault());
+  const obj = { ref, style: tmp.container, onLayout, children: items };
+  useMeasuredLayoutDefault();
   items = [, , ];
-  const tmp4 = useUserProfileBannerHeightDefault();
-  items[0] = hasOwnProperty(UserProfileBannerDefault, { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: tmp4, bannerSafeArea });
-  const tmp5 = metroRequire;
-  const tmp6 = View;
+  const tmp5 = useUserProfileBannerHeightDefault(width);
+  items[0] = hasOwnProperty(UserProfileBannerDefault, { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: tmp5, bannerSafeArea });
+  const tmp6 = metroRequire;
+  const tmp7 = View;
   if (showProfilePreviewButton) {
     const obj2 = { userId: user.id };
-    showProfilePreviewButton = tmp7(ProfilePreviewButton, obj2);
+    showProfilePreviewButton = tmp8(ProfilePreviewButton, obj2);
   }
   items[1] = showProfilePreviewButton;
   if (showEditButton) {
-    let tmp7Result;
+    let tmp8Result;
     if (isUserProfileEditingRefresh) {
       const obj3 = { style: tmp.refreshEditButtonContainer, onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled, variant: "secondary-overlay" };
-      tmp7Result = tmp7(EditButtonDefault, obj3);
+      tmp8Result = tmp8(EditButtonDefault, obj3);
     } else {
       const obj4 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled };
-      tmp7Result = tmp7(EditButton, obj4);
+      tmp8Result = tmp8(EditButton, obj4);
     }
-    showEditButton = tmp7Result;
+    showEditButton = tmp8Result;
   }
   items[2] = showEditButton;
-  return tmp5(tmp6, obj);
+  return tmp6(tmp7, obj);
 };

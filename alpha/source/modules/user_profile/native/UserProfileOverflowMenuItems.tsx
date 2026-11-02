@@ -1,10 +1,10 @@
-// Module ID: 14825
-// Function ID: 14826
+// Module ID: 14829
+// Function ID: 14830
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 11287, 1113, 7488, 5258, 11289, 1994, 1260, 7496, 11288, 14826, 14826, 8352, 1375, 14180, 1252, 7358, 5711, 5068, 7364, 2]
+// Dependencies: [1072, 11287, 1113, 7488, 5258, 11289, 1994, 1260, 7496, 11288, 14830, 14830, 8352, 1375, 14195, 1252, 7358, 5711, 5068, 7364, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 14825 (UserProfileOverflowMenuItems)
+// Module 14829 (UserProfileOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -17,8 +17,8 @@ import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
 import ReportModals from "ReportModals" /* 8352 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14180 */;
-import BotReportChooser from "BotReportChooser" /* 14826 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
+import BotReportChooser from "BotReportChooser" /* 14830 */;
 import Constants from "Constants" /* 1072 */;
 import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11287 */;
 import size from "module_2" /* 2 */;
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(14826, dependencyMap.paths);
+            const tmp19 = asyncRequire(14830, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;

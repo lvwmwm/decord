@@ -1,10 +1,10 @@
-// Module ID: 19156
-// Function ID: 19157
+// Module ID: 19163
+// Function ID: 19164
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5015, 4862, 6843, 8864, 11847, 11704, 4863, 2006, 5764, 4917, 6875, 11223, 11221, 1072, 5657, 5681, 11224, 21, 19157, 5095, 10089, 1089, 504, 5712, 1113, 9242, 14898, 19158, 5915, 11725, 19159, 1491, 1625, 19184, 11231, 19185, 11225, 11227, 12, 1266, 1108, 1259, 11245, 12812, 6541, 1252, 2019, 8903, 6851, 19121, 5080, 19186, 5759, 5207, 5760, 7207, 19187, 19188, 14206, 4935, 19189, 19190, 19195, 19196, 19123, 19197, 11222, 5224, 2]
+// Dependencies: [32, 19, 17, 5015, 4862, 6843, 8864, 11848, 11705, 4863, 2006, 5764, 4917, 6875, 11223, 11221, 1072, 5657, 5681, 11224, 21, 19164, 5095, 10089, 1089, 504, 5712, 1113, 9242, 14902, 19165, 5915, 11726, 19166, 1491, 1625, 19191, 11231, 19192, 11225, 11227, 12, 1266, 1108, 1259, 11245, 12815, 6541, 1252, 2019, 8903, 6851, 19128, 5080, 19193, 5759, 5207, 5760, 7207, 19194, 19195, 14221, 4935, 19196, 19197, 19202, 19203, 19130, 19204, 11222, 5224, 2]
 // Exports: default
 
-// Module 19156 (VoicePanelController)
+// Module 19163 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -12,16 +12,16 @@ import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 493
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
 import CallConstants from "CallConstants" /* 5681 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11725 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19197 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11726 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19204 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 4862 */;
 import ChannelRTCStore_mod from "ChannelRTCStore" /* 6843 */;
 import AppFreezeStore from "AppFreezeStore" /* 8864 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11847 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11704 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11848 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11705 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import MediaEngineStore from "MediaEngineStore" /* 2006 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
@@ -95,7 +95,7 @@ export default function VoicePanelController(channelId) {
   let tmpResult43;
   let transitionCleanUp;
   let transitionState;
-  const f116846 = () => {
+  const f116900 = () => {
     const tmp3 = first2;
     if (!tmp3) {
       let PIP;
@@ -596,10 +596,10 @@ export default function VoicePanelController(channelId) {
     }, items16);
     controlsSpecs = tmp43Result;
     ({ beginDockEntry, dockJoinMorphOrigin } = tmp38);
-    first6 = tmp5(obj2.useState(f116846), 2)[0];
+    first6 = tmp5(obj2.useState(f116900), 2)[0];
     let closure_9 = tmp74;
     react = tmp74;
-    const tmp5Result = tmp5(obj2.useState(f116846), 2);
+    const tmp5Result = tmp5(obj2.useState(f116900), 2);
     obj2.useRef(isConnected);
     const items17 = [channelId, dockJoinMorphOrigin, isConnected, first2, , sharedValue3];
     const layoutEffect4 = obj2.useLayoutEffect(() => {

@@ -1,9 +1,9 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14486
+// Function ID: 14487
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 5695, 7414, 14453, 2]
+// Dependencies: [5, 17, 5695, 7414, 14467, 2]
 
-// Module 14472 (StorekitIAPQueue)
+// Module 14486 (StorekitIAPQueue)
 import react_native from "react-native" /* 17 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5695 */;
 import utils_PriceUtils from "utils/PriceUtils" /* 7414 */;

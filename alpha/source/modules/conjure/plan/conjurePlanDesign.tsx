@@ -1,17 +1,17 @@
-// Module ID: 12722
-// Function ID: 12723
+// Module ID: 12725
+// Function ID: 12726
 // Name: conjurePlanDesign
-// Dependencies: [6845, 3868, 12723, 1113, 2]
+// Dependencies: [6845, 3868, 12726, 1113, 2]
 // Exports: conjurePlanDesignAlt, conjurePlanDesignSurface, conjurePlanReferenceImages
 
-// Module 12722 (conjurePlanDesign)
+// Module 12725 (conjurePlanDesign)
 import intl2 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
-import conjurePlanTags from "conjurePlanTags" /* 12723 */;
+import conjurePlanTags from "conjurePlanTags" /* 12726 */;
 import size from "module_2" /* 2 */;
 
-const f102817 = (item) => {
+const f102853 = (item) => {
   const obj = conjurePlanTags;
   return obj.planDeclaresSurface(proposal, item);
 };
@@ -30,7 +30,7 @@ const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanDesig
 export { CONJURE_PLAN_DESIGN_ALTS };
 export function conjurePlanDesignSurface(experiences) {
   let closure_0 = experiences;
-  let found = items.find(f102817);
+  let found = items.find(f102853);
   if (found == null) {
     found = null;
   }
@@ -40,7 +40,7 @@ export function conjurePlanDesignAlt(proposal) {
   let obj;
   let prop;
   let closure_0 = proposal;
-  let found = items.find(f102817);
+  let found = items.find(f102853);
   if (found == null) {
     found = null;
   }

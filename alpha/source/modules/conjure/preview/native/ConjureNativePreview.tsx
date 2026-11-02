@@ -1,12 +1,12 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12238
+// Function ID: 12239
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6846, 502, 4863, 6842, 1993, 12092, 6844, 1072, 6847, 21, 5014, 575, 6977, 5624, 10883, 10927, 12094, 10923, 504, 12095, 10902, 10928, 5607, 12096, 12097, 12098, 12106, 12110, 12112, 1113, 3868, 5634, 7777, 12114, 10900, 7485, 7279, 11214, 1375, 12221, 2]
-// Exports: default, leaveConjurePreviewFrame
+// Dependencies: [32, 19, 17, 6846, 502, 4863, 6842, 1993, 12214, 6844, 1072, 6847, 21, 5014, 575, 6977, 5624, 12239, 10923, 504, 10883, 12204, 10902, 10938, 10927, 5607, 12240, 12241, 12242, 12250, 12254, 12256, 1113, 3868, 5634, 7777, 12258, 10900, 7485, 7279, 11214, 1375, 12361, 2]
+// Exports: default
 
-// Module 12091 (ConjureNativePreview)
+// Module 12238 (ConjureNativePreview)
 import nativeDefault from "native" /* 575 */;
-import intl11 from "intl" /* 1113 */;
+import intl8 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import components_Button_Button from "components/Button/Button" /* 5634 */;
@@ -17,11 +17,11 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7777 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10883 */;
 import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10902 */;
-import leaveFrame from "leaveFrame" /* 10927 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10928 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 12094 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12096 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12114 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10927 */;
+import leaveFrame from "leaveFrame" /* 10938 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 12239 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12240 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12258 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -30,7 +30,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import ReadStateStore from "ReadStateStore" /* 6842 */;
 import AppStateStore from "AppStateStore" /* 1993 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 12092 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 12214 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -116,14 +116,14 @@ class PreviewFrame {
     let left;
     let right;
     let tmp = applicationId;
-    let obj = applicationId(frameSurface[20]);
+    let obj = applicationId(frameSurface[18]);
     const conjureControlActive = obj.useConjureControlActive(projectId);
     let obj2 = visible;
     const items = [projectId, visible];
     const active = bottom(projectId).active;
     const effect = visible.useEffect(() => () => top(projectId), items);
     const tmp5 = closure_24();
-    let obj3 = applicationId(frameSurface[21]);
+    let obj3 = applicationId(frameSurface[19]);
     const items1 = [left];
     const stateFromStores = obj3.useStateFromStores(items1, () => {
       const obj = conjurePreviewSurface;
@@ -134,7 +134,7 @@ class PreviewFrame {
       const obj = conjurePreviewSurface;
       return obj.getConjurePreviewSurface(stateFromStores, frameSurface);
     }, items2);
-    const tmp9 = projectId(frameSurface[22])(applicationId, memo);
+    const tmp9 = projectId(frameSurface[21])(applicationId, memo);
     let closure_8 = tmp9;
     let tmp10 = null;
     if (null != tmp9) {
@@ -217,7 +217,7 @@ class PreviewFrame {
       const obj6 = { frameId: tmp10.id, level: tmp(frameSurface[30]).FrameStackLevel.WithinAppContent, presentation: memo1, spinnerWhileLoading: tmpResult.isConjurePreviewSurface(tmp10.surface) };
       const tmp8Result3 = projectId(frameSurface[28]);
       const tmp8Result4 = projectId(frameSurface[29]);
-      tmpResult = tmp(frameSurface[17]);
+      tmpResult = tmp(frameSurface[20]);
       items6 = [closure_22(tmp8Result4, obj6), ];
       let tmp35Result = null;
       const tmp33 = memo;
@@ -425,7 +425,7 @@ function PreviewBot(projectId) {
     const tmp30 = closure_22;
     const tmp7Result4 = projectId(1375);
     if (tmp7Result4.isAndroid()) {
-      tmp30Result = tmp30(tmp7(12221).PortalKeyboardRenderer, { portal: true });
+      tmp30Result = tmp30(tmp7(12361).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp30Result;
     tmp28Result = tmp28(tmp29, obj6);
@@ -450,91 +450,59 @@ let result = size.fileFinishedImporting("modules/conjure/preview/native/ConjureN
 
 export default function ConjureNativePreview(arg0) {
   let Button;
-  let Button2;
-  let availability;
-  let frameHostAvailable;
-  let frameLaunchParams;
-  let frameSurface;
+  let botInstall;
   let intl;
-  let intl10;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
   let intl6;
   let intl7;
-  let intl8;
-  let intl9;
   let mode;
   let obj3;
-  let obj5;
-  let permissionsGate;
   let previewApplicationId;
   let projectId;
   let widgetApplicationId;
-  ({ projectId, previewApplicationId, mode, widgetApplicationId, permissionsGate } = arg0);
-  let previewBotMissing;
-  ({ availability, frameSurface, frameLaunchParams, frameHostAvailable } = arg0);
-  if (permissionsGate != null) {
-    previewBotMissing = permissionsGate.previewBotMissing;
-  }
-  if (true === previewBotMissing) {
-    const obj2 = { title: intl8.string(_modDef3868.FExK4w), body: intl9.string(_modDef3868.e8XOnl), children: authStore6(Button2, obj3) };
-    intl8 = intl11.intl;
-    intl9 = intl11.intl;
-    obj3 = { variant: "primary", size: "sm", text: intl10.string(_modDef3868.YVFKfP), onPress: null, loading: null };
-    Button2 = components_Button_Button.Button;
-    intl10 = intl11.intl;
-    ({ onReviewPermissions: obj9.onPress, loading: obj9.loading } = permissionsGate);
-    return authStore6(StatusCard, obj2);
-  } else if (null != permissionsGate) {
-    const obj4 = { title: intl5.string(_modDef3868.FExK4w), body: intl6.string(_modDef3868["2pDCXO"]), children: authStore6(Button, obj5) };
-    intl5 = intl11.intl;
-    intl6 = intl11.intl;
-    obj5 = { variant: "primary", size: "sm", text: intl7.string(_modDef3868["Nub/J6"]), onPress: null, loading: null };
+  ({ projectId, previewApplicationId, mode, widgetApplicationId, botInstall } = arg0);
+  if (null != botInstall) {
+    const obj2 = { title: intl5.string(_modDef3868.xlEjZ8), body: intl6.string(_modDef3868["4ByPbd"]), children: authStore6(Button, obj3) };
+    intl5 = intl8.intl;
+    intl6 = intl8.intl;
+    obj3 = { variant: "primary", size: "sm", text: intl7.string(_modDef3868.RGeB11), onPress: null, loading: null };
     Button = components_Button_Button.Button;
-    intl7 = intl11.intl;
-    ({ onReviewPermissions: obj7.onPress, loading: obj7.loading } = permissionsGate);
-    return authStore6(StatusCard, obj4);
+    intl7 = intl8.intl;
+    ({ onAddBot: obj7.onPress, loading: obj7.loading } = botInstall);
+    return authStore6(StatusCard, obj2);
   } else if ("frame" === mode) {
-    let tmp12Result;
-    if (frameHostAvailable) {
-      const obj6 = { applicationId: previewApplicationId, projectId, frameSurface, launch: frameLaunchParams, visible: true };
-      tmp12Result = tmp12(PreviewFrame, obj6);
+    let tmp15Result;
+    if (tmp4) {
+      const obj4 = { applicationId: previewApplicationId, projectId, frameSurface: tmp2, launch: tmp3, visible: true };
+      tmp15Result = tmp15(PreviewFrame, obj4);
     } else {
-      const obj8 = { title: intl3.string(_modDef3868["7k4GyN"]), body: intl4.string(_modDef3868.zdIy3R) };
-      intl3 = intl11.intl;
-      intl4 = intl11.intl;
-      tmp12Result = tmp12(StatusCard, obj8);
+      const obj5 = { title: intl3.string(_modDef3868["7k4GyN"]), body: intl4.string(_modDef3868.zdIy3R) };
+      intl3 = intl8.intl;
+      intl4 = intl8.intl;
+      tmp15Result = tmp15(StatusCard, obj5);
     }
-    return tmp12Result;
+    return tmp15Result;
   } else if ("widget" === mode) {
-    let tmp9 = null;
+    let tmp12 = null;
     if (null != widgetApplicationId) {
-      const obj17 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === availability.profileState };
-      tmp9 = authStore6(PreviewWidget, obj17);
+      const obj6 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === tmp.profileState };
+      tmp12 = authStore6(PreviewWidget, obj6);
     }
-    return tmp9;
+    return tmp12;
   } else if ("bot" === mode) {
-    const obj18 = { projectId, previewApplicationId };
-    return authStore6(PreviewBot, obj18);
+    const obj13 = { projectId, previewApplicationId };
+    return authStore6(PreviewBot, obj13);
   } else if ("overlay" === mode) {
     return null;
   } else if (null === mode) {
     const obj = { title: intl.string(_modDef3868["7k4GyN"]), body: intl2.string(_modDef3868.zdIy3R) };
-    intl = intl11.intl;
-    intl2 = intl11.intl;
+    intl = intl8.intl;
+    intl2 = intl8.intl;
     return authStore6(StatusCard, obj);
   }
 };
-export function leaveConjurePreviewFrame(arg0) {
-  const obj = conjurePreviewSurface;
-  const conjureBuilderPreviewFrames = obj.getConjureBuilderPreviewFrames(arg0);
-  for (const item10011 of conjureBuilderPreviewFrames) {
-    let obj2 = leaveFrame;
-    let leaveFrameResult = obj2.leaveFrame(item10011.id);
-    continue;
-  }
-}
 export const ConjureBuilderInlineContext = context;
 export { PreviewFrame };

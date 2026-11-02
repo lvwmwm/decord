@@ -1,10 +1,10 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11960
+// Function ID: 11961
 // Name: KrispLogo
-// Dependencies: [19, 17, 1192, 1072, 21, 2061, 1252, 1113, 5709, 504, 5021, 11960, 11961, 5717, 5624, 2]
+// Dependencies: [19, 17, 1192, 1072, 21, 2061, 1252, 1113, 5709, 504, 5021, 11961, 11962, 5717, 5624, 2]
 // Exports: default
 
-// Module 11959 (KrispLogo)
+// Module 11960 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -62,10 +62,10 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(11960);
+    tmp4Result = tmp4(11961);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(11961);
+    tmp4Result = tmp4(11962);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };

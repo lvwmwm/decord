@@ -1,21 +1,21 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 15989
+// Function ID: 15990
 // Name: Status
-// Dependencies: [32, 19, 17, 1188, 1072, 14881, 21, 5014, 15983, 575, 15986, 15987, 15988, 15989, 15990, 15991, 15992, 15984, 5717, 15993, 5095, 5637, 15971, 2]
+// Dependencies: [32, 19, 17, 1188, 1072, 14885, 21, 5014, 15987, 575, 15990, 15991, 15992, 15993, 15994, 15995, 15996, 15988, 5717, 15997, 5095, 5637, 15975, 2]
 // Exports: StatusWithTyping, default
 
-// Module 15985 (Status)
+// Module 15989 (Status)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import StatusConstants from "StatusConstants" /* 1188 */;
 import spring from "spring" /* 5637 */;
 import FastImageDefault from "FastImage" /* 5717 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15983 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15984 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15987 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15988 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14881 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14885 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -104,23 +104,23 @@ export default function Status(isMobileOnline) {
   const tmp3 = View;
   tmp6 = FastImageDefault;
   if (streaming) {
-    tmp4Result = tmp4(15986);
-  } else if (flag2) {
-    tmp4Result = tmp4(15987);
-  } else if (flag) {
-    tmp4Result = tmp4(15988);
-  } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(15989);
-  } else if (StatusTypes.DND === status) {
     tmp4Result = tmp4(15990);
+  } else if (flag2) {
+    tmp4Result = tmp4(15991);
+  } else if (flag) {
+    tmp4Result = tmp4(15992);
+  } else if (StatusTypes.IDLE === status) {
+    tmp4Result = tmp4(15993);
+  } else if (StatusTypes.DND === status) {
+    tmp4Result = tmp4(15994);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(15992);
+        tmp4Result = tmp4(15996);
       }
     }
-    tmp4Result = tmp4(15991);
+    tmp4Result = tmp4(15995);
   }
   return authStore(tmp3, obj);
 };

@@ -1,28 +1,22 @@
 // Module ID: 12901
 // Function ID: 12902
 // Name: tokenize
-// Dependencies: [12833, 12829]
+// Dependencies: [12836]
 
 // Module 12901 (tokenize)
-import _mod12829 from "module_12829" /* 12829 */;
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
 
 let obj2;
-const Percentage = tokenize.TYPE.Percentage;
+const Number = tokenize.TYPE.Number;
 let obj = {
-  name: "Percentage",
+  name: "Number",
   structure: obj2,
   parse() {
-    const tokenStart = this.scanner.tokenStart;
-    const obj = _mod12829;
-    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
-    this.eat(Percentage);
-    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
-    return obj2;
+    const obj = { type: "Number", loc: this.getLocation(this.scanner.tokenStart, this.scanner.tokenEnd), value: this.consume(Number) };
+    return obj;
   },
   generate(value) {
     this.chunk(value.value);
-    this.chunk("%");
   }
 };
 obj2 = { value: String };

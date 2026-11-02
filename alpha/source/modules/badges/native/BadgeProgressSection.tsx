@@ -1,15 +1,15 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11480
+// Function ID: 11481
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 5014, 575, 11467, 5624, 1113, 11451, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 11468, 5624, 1113, 11452, 2]
 // Exports: default
 
-// Module 11479 (BadgeProgressSection)
+// Module 11480 (BadgeProgressSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 11451 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 11467 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 11452 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 11468 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;

@@ -1,10 +1,10 @@
-// Module ID: 12462
-// Function ID: 12463
+// Module ID: 12121
+// Function ID: 12122
 // Name: EditIcon
 // Dependencies: [19, 17, 21, 5014, 575, 10232, 2]
 // Exports: default
 
-// Module 12462 (EditIcon)
+// Module 12121 (EditIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

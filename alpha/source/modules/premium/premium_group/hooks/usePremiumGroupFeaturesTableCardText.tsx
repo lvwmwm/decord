@@ -1,15 +1,15 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15373
+// Function ID: 15374
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [2052, 2060, 1113, 3288, 1391, 8517, 15370, 504, 2]
+// Dependencies: [2052, 2060, 1113, 3288, 1391, 8517, 15374, 504, 2]
 // Exports: default
 
-// Module 15369 (usePremiumGroupFeaturesTableCardText)
+// Module 15373 (usePremiumGroupFeaturesTableCardText)
 import get_initialized from "get initialized" /* 504 */;
 import user from "user" /* 1391 */;
 import _modDef3288 from "module_3288" /* 3288 */;
 import PremiumGroupUtils from "PremiumGroupUtils" /* 8517 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 15370 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 15374 */;
 import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2060 */;
 import size from "module_2" /* 2 */;

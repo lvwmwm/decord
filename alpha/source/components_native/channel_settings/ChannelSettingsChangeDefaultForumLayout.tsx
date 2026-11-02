@@ -1,10 +1,10 @@
-// Module ID: 18937
-// Function ID: 18938
+// Module ID: 18944
+// Function ID: 18945
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 4863, 21, 5014, 575, 8199, 7058, 1113, 4873, 7061, 18896, 7261, 5624, 7060, 5717, 18938, 18939, 504, 2]
+// Dependencies: [32, 19, 17, 4863, 21, 5014, 575, 8199, 7058, 1113, 4873, 7061, 18903, 7261, 5624, 7060, 5717, 18945, 18946, 504, 2]
 // Exports: default
 
-// Module 18937 (ChannelSettingsChangeDefaultForumLayout)
+// Module 18944 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5717 */;
@@ -60,7 +60,7 @@ class ChannelSettingsChangeDefaultForumLayout {
     if (tmp3 == null) {
       LIST = tmp7(4873).ForumLayout.LIST;
     }
-    let obj3 = { icon: closure_7(channel(18896).GridSquareIcon, {}), label: intl2.string(channel(1113).t["U+rQfW"]), value: channel(4873).ForumLayout.GRID };
+    let obj3 = { icon: closure_7(channel(18903).GridSquareIcon, {}), label: intl2.string(channel(1113).t["U+rQfW"]), value: channel(4873).ForumLayout.GRID };
     const TableRadioRow = tmp7(7061).TableRadioRow;
     intl2 = tmp7(1113).intl;
     items1 = [closure_7(TableRadioRow, obj3), ];
@@ -81,9 +81,9 @@ class ChannelSettingsChangeDefaultForumLayout {
     const tmp11 = FastImageDefault;
     const tmp9 = closure_7;
     if (tmp3 === channel(4873).ForumLayout.GRID) {
-      tmp10Result = tmp10(18938);
+      tmp10Result = tmp10(18945);
     } else {
-      tmp10Result = tmp10(18939);
+      tmp10Result = tmp10(18946);
     }
     items2[3] = tmp9(tmp11, obj7);
     return closure_8(tmp6, obj);

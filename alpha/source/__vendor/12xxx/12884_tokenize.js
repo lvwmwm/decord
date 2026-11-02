@@ -1,32 +1,36 @@
 // Module ID: 12884
 // Function ID: 12885
 // Name: tokenize
-// Dependencies: [12833]
+// Dependencies: [12836]
 
 // Module 12884 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
 
+let items;
 let obj2;
-const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "ClassSelector",
+const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+const RightSquareBracket = tokenize.TYPE.RightSquareBracket;
+const obj = {
+  name: "Brackets",
   structure: obj2,
-  parse() {
+  parse(call, arg1) {
     const self = this;
-    const scanner = this.scanner;
-    if (!scanner.isDelim(46)) {
-      self.error("Full stop is expected");
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(LeftSquareBracket);
+    const callResult = call.call(self, arg1);
+    if (!self.scanner.eof) {
+      self.eat(RightSquareBracket);
     }
-    const iter = self.scanner;
-    iter.next();
-    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
-    return obj;
+    const element = { type: "Brackets", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
+    return element;
   },
-  generate(name) {
-    this.chunk(".");
-    this.chunk(name.name);
+  generate(arg0) {
+    this.chunk("[");
+    this.children(arg0);
+    this.chunk("]");
   }
 };
-obj2 = { name: String };
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

@@ -1,21 +1,21 @@
-// Module ID: 19301
-// Function ID: 19302
+// Module ID: 19308
+// Function ID: 19309
 // Name: useControlsButtons
-// Dependencies: [19, 2006, 11221, 1072, 21, 19302, 19305, 19311, 19313, 19315, 19317, 19319, 19324, 19208, 1622, 11222, 19325, 504, 5095, 13813, 8841, 2]
+// Dependencies: [19, 2006, 11221, 1072, 21, 19309, 19312, 19318, 19320, 19322, 19324, 19326, 19331, 19215, 1622, 11222, 19332, 504, 5095, 13828, 8841, 2]
 // Exports: default
 
-// Module 19301 (useControlsButtons)
+// Module 19308 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13813 */;
-import VoicePanelMicButton from "VoicePanelMicButton" /* 19302 */;
-import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19305 */;
-import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19311 */;
-import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19313 */;
-import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19315 */;
-import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19317 */;
-import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19319 */;
-import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19324 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13828 */;
+import VoicePanelMicButton from "VoicePanelMicButton" /* 19309 */;
+import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19312 */;
+import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19318 */;
+import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19320 */;
+import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19322 */;
+import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19324 */;
+import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19326 */;
+import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19331 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2006 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
@@ -91,9 +91,9 @@ export default function useControlsButtons() {
   const context = treatment.useContext(safeArea(11222));
   const windowDimensions = context.windowDimensions;
   safeArea = context.safeArea;
-  let tmp2 = safeArea(19325)(context.channelId);
+  let tmp2 = safeArea(19332)(context.channelId);
   dependencyMap = tmp2;
-  let obj = safeArea(19208);
+  let obj = safeArea(19215);
   treatment = obj.useConfig({ location: "VoicePanelControlButtons" }).treatment;
   let obj2 = windowDimensions(504);
   let items = [stateFromStores];
@@ -105,7 +105,7 @@ export default function useControlsButtons() {
     const width = windowDimensions.get().width;
     return getControlsDefaultWidth(width, safeArea.get().left, safeArea.get().right);
   };
-  let obj4 = { getControlsDefaultWidth: windowDimensions(13813).getControlsDefaultWidth, windowDimensions, safeArea };
+  let obj4 = { getControlsDefaultWidth: windowDimensions(13828).getControlsDefaultWidth, windowDimensions, safeArea };
   fn.__closure = obj4;
   fn.__workletHash = 16456936876254;
   fn.__initData = __initData;

@@ -1,9 +1,9 @@
-// Module ID: 16567
-// Function ID: 16568
+// Module ID: 16580
+// Function ID: 16581
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 16568, 8432, 1072, 21, 5014, 575, 1497, 6977, 5717, 16569, 5624, 1113, 5634, 504, 16570, 7118, 6748, 7060, 16571, 11539, 16572, 16575, 5593, 13299, 2]
+// Dependencies: [32, 19, 17, 16581, 8432, 1072, 21, 5014, 575, 1497, 6977, 5717, 16582, 5624, 1113, 5634, 504, 16583, 7118, 6748, 7060, 16584, 11540, 16585, 16588, 5593, 13314, 2]
 
-// Module 16567 (SettingsAccountScreen)
+// Module 16580 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,13 +14,13 @@ import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
 import TableRowGroup from "TableRowGroup" /* 7060 */;
 import MFAUtils from "MFAUtils" /* 7118 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13299 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16571 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16572 */;
-import SettingLayoutDefault from "SettingLayout" /* 16575 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13314 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16584 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16585 */;
+import SettingLayoutDefault from "SettingLayout" /* 16588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16568 */;
+import WebAuthnStore from "WebAuthnStore" /* 16581 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ function AccountTwoFALabel() {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(16570);
+  const obj2 = first(16583);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {

@@ -1,20 +1,20 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16761
+// Function ID: 16762
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6742, 8432, 1072, 16708, 504, 5958, 1113, 6030, 16746, 16747, 11539, 2]
+// Dependencies: [6742, 8432, 1072, 16721, 504, 5958, 1113, 6030, 16759, 16760, 11540, 2]
 
-// Module 16748 (UseDataToCustomizeDiscordSetting)
+// Module 16761 (UseDataToCustomizeDiscordSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
 import AlertDefault from "Alert" /* 6030 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16708 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16746 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16747 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16759 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16760 */;
 import ConsentStore from "ConsentStore" /* 6742 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,10 +1,10 @@
-// Module ID: 18212
-// Function ID: 18213
+// Module ID: 18225
+// Function ID: 18226
 // Name: useGuildThemeNuxTrigger
 // Dependencies: [32, 19, 4860, 5225, 7569, 4847, 2]
 // Exports: default
 
-// Module 18212 (useGuildThemeNuxTrigger)
+// Module 18225 (useGuildThemeNuxTrigger)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import GuildThemeResolver from "GuildThemeResolver" /* 5225 */;
 import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7569 */;

@@ -1,10 +1,10 @@
-// Module ID: 18008
-// Function ID: 18009
+// Module ID: 18021
+// Function ID: 18022
 // Name: WumpTrash
-// Dependencies: [19, 21, 8806, 18009, 18010, 5021, 5717, 2]
+// Dependencies: [19, 21, 8806, 18022, 18023, 5021, 5717, 2]
 // Exports: WumpTrash, getWumpTrashSource, useWumpTrashSource
 
-// Module 18008 (WumpTrash)
+// Module 18021 (WumpTrash)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5021 */;
 import FastImageDefault from "FastImage" /* 5717 */;

@@ -1,10 +1,10 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16491
+// Function ID: 16492
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8731, 1383, 8763, 1072, 5273, 1385, 21, 5014, 575, 5260, 9876, 16479, 9874, 1113, 7137, 7135, 5735, 6977, 11450, 5624, 11459, 8992, 7131, 5095, 5254, 5257, 14981, 9875, 5303, 5023, 11452, 1625, 504, 2047, 7326, 7351, 5591, 9905, 9906, 8762, 1252, 8768, 5712, 5272, 12271, 16480, 6953, 7321, 5275, 2]
+// Dependencies: [19, 17, 8731, 1383, 8763, 1072, 5273, 1385, 21, 5014, 575, 5260, 9876, 16492, 9874, 1113, 7137, 7135, 5735, 6977, 11451, 5624, 11460, 8992, 7131, 5095, 5254, 5257, 14985, 9875, 5303, 5023, 11453, 1625, 504, 2047, 7326, 7351, 5591, 9905, 9906, 8762, 1252, 8768, 5712, 5272, 12411, 16493, 6953, 7321, 5275, 2]
 // Exports: default
 
-// Module 16478 (CustomizeBadgesSheet)
+// Module 16491 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -27,11 +27,11 @@ import ContextMenu2 from "ContextMenu" /* 9874 */;
 import ContextMenuConstants from "ContextMenuConstants" /* 9876 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11450 */;
-import BadgeUtils from "BadgeUtils" /* 11459 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14981 */;
-import BadgeGrid from "BadgeGrid" /* 16479 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11451 */;
+import BadgeUtils from "BadgeUtils" /* 11460 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14985 */;
+import BadgeGrid from "BadgeGrid" /* 16492 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
@@ -94,7 +94,7 @@ function BadgeVisibilityMenu(badge) {
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(16479).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16492).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";

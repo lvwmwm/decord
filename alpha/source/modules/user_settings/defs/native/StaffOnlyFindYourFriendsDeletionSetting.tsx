@@ -1,23 +1,23 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 16745
+// Function ID: 16746
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8432, 21, 1254, 1259, 4929, 14236, 1336, 5712, 11539, 16733, 2]
+// Dependencies: [5, 17, 8432, 21, 1254, 1259, 4929, 14251, 1336, 5712, 11540, 16746, 2]
 
-// Module 16732 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 16745 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 4929 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16733 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16746 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-const f110502 = (isLoading) => isLoading.isLoading;
+const f110548 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -131,7 +131,7 @@ obj = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6(f110502, _slicedToArray.shallow);
+    return closure_6(f110548, _slicedToArray.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
@@ -139,7 +139,7 @@ obj = {
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6(f110502, _slicedToArray.shallow)) {
+    if (closure_6(f110548, _slicedToArray.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

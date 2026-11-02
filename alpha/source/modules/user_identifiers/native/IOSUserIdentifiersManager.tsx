@@ -1,9 +1,9 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19510
+// Function ID: 19511
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1383, 1072, 7287, 1375, 19504, 1282, 1242, 1252, 2]
+// Dependencies: [5, 17, 1383, 1072, 7287, 1375, 19511, 1282, 1242, 1252, 2]
 
-// Module 19503 (IOSUserIdentifiersManager)
+// Module 19510 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;

@@ -1,9 +1,9 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 16659
+// Function ID: 16660
 // Name: TwoFASetupModalHeader
 // Dependencies: [19, 17, 21, 5014, 575, 2]
 
-// Module 16646 (TwoFASetupModalHeader)
+// Module 16659 (TwoFASetupModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;

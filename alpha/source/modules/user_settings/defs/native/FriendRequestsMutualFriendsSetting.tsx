@@ -1,18 +1,18 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 16879
+// Function ID: 16880
 // Name: FriendRequestsMutualFriendsSetting
-// Dependencies: [19, 8432, 1072, 16708, 4839, 7165, 1396, 11539, 1113, 2]
+// Dependencies: [19, 8432, 1072, 16721, 4839, 7165, 1396, 11540, 1113, 2]
 
-// Module 16866 (FriendRequestsMutualFriendsSetting)
+// Module 16879 (FriendRequestsMutualFriendsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FlagUtilsAll from "FlagUtils" /* 1396 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16708 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

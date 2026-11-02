@@ -1,10 +1,10 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14512
+// Function ID: 14513
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1072, 4860, 21, 14499, 14500, 14501, 1113, 5705, 2061, 5028, 5596, 575, 1252, 5044, 4847, 5080, 5272, 5717, 8873, 5595, 14502, 9532, 5624, 5634, 5014, 1375, 2]
+// Dependencies: [19, 17, 1072, 4860, 21, 14513, 14514, 14515, 1113, 5705, 2061, 5028, 5596, 575, 1252, 5044, 4847, 5080, 5272, 5717, 8873, 5595, 14516, 9532, 5624, 5634, 5014, 1375, 2]
 // Exports: default
 
-// Module 14498 (BalanceWidgetActionSheet)
+// Module 14512 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,9 +12,9 @@ import PlatformUtils from "PlatformUtils" /* 1375 */;
 import dismissible_content from "dismissible_content" /* 4847 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import _mod14499 from "module_14499" /* 14499 */;
-import _mod14500 from "module_14500" /* 14500 */;
-import _mod14501 from "module_14501" /* 14501 */;
+import _mod14513 from "module_14513" /* 14513 */;
+import _mod14514 from "module_14514" /* 14514 */;
+import _mod14515 from "module_14515" /* 14515 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -103,7 +103,7 @@ export default function _default(balance) {
     let intl;
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod14499.default, backgroundImage: _mod14500.default, bannerImage: _mod14501.default, bannerText: intl.string(intl3.t.LaMEFL) };
+      const obj = { backgroundVideo: _mod14513.default, backgroundImage: _mod14514.default, bannerImage: _mod14515.default, bannerText: intl.string(intl3.t.LaMEFL) };
       intl = intl3.intl;
       tmp = obj;
     }

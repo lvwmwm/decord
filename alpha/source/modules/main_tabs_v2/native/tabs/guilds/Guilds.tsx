@@ -1,9 +1,9 @@
-// Module ID: 18057
-// Function ID: 18058
+// Module ID: 18070
+// Function ID: 18071
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6568, 11513, 1072, 21, 5201, 9, 5204, 5198, 5199, 572, 1108, 18058, 5194, 9673, 18059, 5080, 17063, 18060, 18422, 17142, 2]
+// Dependencies: [32, 19, 6568, 11514, 1072, 21, 5201, 9, 5204, 5198, 5199, 572, 1108, 18071, 5194, 9673, 18072, 5080, 17076, 18073, 18435, 17155, 2]
 
-// Module 18057 (guilds/Guilds)
+// Module 18070 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,7 +11,7 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
 import RootNavigationRef from "RootNavigationRef" /* 5199 */;
 import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5204 */;
-import MainTabsConstants from "MainTabsConstants" /* 11513 */;
+import MainTabsConstants from "MainTabsConstants" /* 11514 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
@@ -37,13 +37,13 @@ const memoResult = react.memo(function GuildsOnly() {
   let tmp12;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  let obj = enabled(18058);
+  let obj = enabled(18071);
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp4 = first;
   const tmp5 = first(5194)();
   let obj2 = enabled(9673);
   let isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const GuildsRenderExperiment = enabled(18059).GuildsRenderExperiment;
+  const GuildsRenderExperiment = enabled(18072).GuildsRenderExperiment;
   enabled = GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled;
   first = undefined;
   dependencyMap = undefined;
@@ -135,11 +135,11 @@ const memoResult = react.memo(function GuildsOnly() {
   if (!enabled) {
     const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
     const ThemeContextProvider = tmp(5080).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(17063).QuestDockExternalCoordinationContextProvider;
-    const items1 = [closure_8(tmp4(18060), {}), closure_8(tmp4(18422), {}), ];
+    QuestDockExternalCoordinationContextProvider = tmp(17076).QuestDockExternalCoordinationContextProvider;
+    const items1 = [closure_8(tmp4(18073), {}), closure_8(tmp4(18435), {}), ];
     tmp12 = closure_9;
     if (isEligibleForQuests) {
-      isEligibleForQuests = tmp11(tmp4(17142), {});
+      isEligibleForQuests = tmp11(tmp4(17155), {});
     }
     obj4 = { children: items1 };
     items1[2] = isEligibleForQuests;

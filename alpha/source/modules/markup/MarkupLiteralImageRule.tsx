@@ -1,9 +1,9 @@
-// Module ID: 12206
-// Function ID: 12207
+// Module ID: 12350
+// Function ID: 12351
 // Name: MarkupLiteralImageRule
 // Dependencies: [1943, 6032, 2]
 
-// Module 12206 (MarkupLiteralImageRule)
+// Module 12350 (MarkupLiteralImageRule)
 import _modDef1943 from "module_1943" /* 1943 */;
 import MarkupTypes from "MarkupTypes" /* 6032 */;
 import size from "module_2" /* 2 */;

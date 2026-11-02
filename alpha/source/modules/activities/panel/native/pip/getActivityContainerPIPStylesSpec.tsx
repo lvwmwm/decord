@@ -1,13 +1,13 @@
-// Module ID: 19128
-// Function ID: 19129
+// Module ID: 19135
+// Function ID: 19136
 // Name: getActivityContainerPIPStylesSpec
-// Dependencies: [5657, 2019, 12271, 2]
+// Dependencies: [5657, 2019, 12411, 2]
 // Exports: default
 
-// Module 19128 (getActivityContainerPIPStylesSpec)
+// Module 19135 (getActivityContainerPIPStylesSpec)
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
 import size from "module_2" /* 2 */;
 
 const LANDSCAPE_ACTIVITY_ASPECT_RATIO = ActivityPanelConstants.LANDSCAPE_ACTIVITY_ASPECT_RATIO;

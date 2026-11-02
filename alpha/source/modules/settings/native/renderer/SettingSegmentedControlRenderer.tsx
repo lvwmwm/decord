@@ -1,17 +1,17 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16603
+// Function ID: 16604
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 16577, 11540, 21, 5014, 575, 16580, 16426, 38, 16579, 8980, 9214, 14177, 2]
+// Dependencies: [32, 19, 17, 16590, 11541, 21, 5014, 575, 16593, 16438, 38, 16592, 8980, 9214, 14192, 2]
 // Exports: default
 
-// Module 16590 (SettingSegmentedControlRenderer)
+// Module 16603 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11540 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 16580 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11541 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 16593 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16577 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16590 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ export default function SettingSegmentedControl(node) {
   let settings;
   let tmp3;
   let tmp5;
-  const f110286 = () => {
+  const f110332 = () => {
     const field = UserSettingSearchStore.getField("selected");
     if (null != field) {
       const index = settings.indexOf(field);
@@ -66,9 +66,9 @@ export default function SettingSegmentedControl(node) {
   let tmp = closure_11();
   let tmp2 = _slicedToArray(react.useState(0), 2);
   [tmp3, c2] = tmp2;
-  [tmp5, r10021] = _slicedToArray(react.useState(f110286), 2);
+  [tmp5, r10021] = _slicedToArray(react.useState(f110332), 2);
   let items = [settings];
-  const tmp4 = _slicedToArray(react.useState(f110286), 2);
+  const tmp4 = _slicedToArray(react.useState(f110332), 2);
   const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);

@@ -1,10 +1,10 @@
-// Module ID: 13925
-// Function ID: 13926
+// Module ID: 13940
+// Function ID: 13941
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5015, 6796, 1072, 1386, 21, 5014, 1375, 575, 5095, 5254, 5593, 504, 5637, 4839, 4960, 8426, 1409, 7300, 1252, 7351, 9951, 5258, 7366, 5624, 1113, 13824, 13926, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 5015, 6796, 1072, 1386, 21, 5014, 1375, 575, 5095, 5254, 5593, 504, 5637, 4839, 4960, 8426, 1409, 7300, 1252, 7351, 9951, 5258, 7366, 5624, 1113, 13839, 13941, 5634, 2]
 // Exports: default
 
-// Module 13925 (DoubleTapToReactActionSheet)
+// Module 13940 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

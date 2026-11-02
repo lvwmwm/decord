@@ -1,10 +1,10 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12493
+// Function ID: 12494
 // Name: useOptionAnimations
 // Dependencies: [32, 19, 5254, 5095, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 12353 (useOptionAnimations)
+// Module 12493 (useOptionAnimations)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

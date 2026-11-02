@@ -1,10 +1,10 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16513
+// Function ID: 16514
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 1072, 4860, 21, 1497, 13718, 7569, 4847, 7326, 7351, 1113, 16467, 3870, 13731, 2]
+// Dependencies: [32, 19, 1072, 4860, 21, 1497, 13733, 7569, 4847, 7326, 7351, 1113, 16480, 3870, 13746, 2]
 // Exports: default
 
-// Module 16500 (UserProfileTypingIndicatorEditButton)
+// Module 16513 (UserProfileTypingIndicatorEditButton)
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -26,7 +26,7 @@ export default function UserProfileTypingIndicatorEditButton(isTryItOut) {
   let analyticsLocations;
   let obj = isTryItOut(1497);
   const nativeStackNavigation = obj.useNativeStackNavigation();
-  const obj2 = isTryItOut(13718);
+  const obj2 = isTryItOut(13733);
   const currentCustomTypingIndicatorConfig = obj2.useCurrentCustomTypingIndicatorConfig(isTryItOut);
   const useSelectedDismissibleContent = isTryItOut(7569).useSelectedDismissibleContent;
   const items = [];
@@ -52,11 +52,11 @@ export default function UserProfileTypingIndicatorEditButton(isTryItOut) {
   }, items1);
   const intl = tmp(1113).intl;
   const string = intl.string;
-  const tmpResult = isTryItOut(13718);
+  const tmpResult = isTryItOut(13733);
   const stringResult = string(tmpResult.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
-  const UserProfileEditFormButton = tmp(16467).UserProfileEditFormButton;
+  const UserProfileEditFormButton = tmp(16480).UserProfileEditFormButton;
   const intl2 = tmp(1113).intl;
   ({ showPremiumIcon: true, showNewBadge: first === isTryItOut(4847).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  const UserProfileEditFormLabelBadges = tmp(16467).UserProfileEditFormLabelBadges;
+  const UserProfileEditFormLabelBadges = tmp(16480).UserProfileEditFormLabelBadges;
   return <UserProfileEditFormButton label={intl2.string(nativeStackNavigation(3870)["pT+BVM"])} labelTrailing={null} leading={null} buttonText={stringResult} accessibilityValue={{ text: stringResult }} onPress={tmp12} />;
 };

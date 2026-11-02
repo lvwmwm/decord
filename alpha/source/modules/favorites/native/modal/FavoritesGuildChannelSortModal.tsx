@@ -1,19 +1,19 @@
-// Module ID: 18191
-// Function ID: 18192
+// Module ID: 18204
+// Function ID: 18205
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 18192, 4867, 1072, 21, 18193, 1625, 1113, 18194, 18190, 7169, 2]
+// Dependencies: [19, 18205, 4867, 1072, 21, 18206, 1625, 1113, 18207, 18203, 7169, 2]
 // Exports: default
 
-// Module 18191 (FavoritesGuildChannelSortModal)
+// Module 18204 (FavoritesGuildChannelSortModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
 import ChannelRecord from "ChannelRecord" /* 4867 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18193 */;
-import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 18194 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18206 */;
+import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 18207 */;
 import react from "react" /* 19 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18192 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 18205 */;
 import size from "module_2" /* 2 */;
 
 const ALL_CHANNEL_TYPES = ChannelRecord.ALL_CHANNEL_TYPES;

@@ -1,10 +1,10 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12370
+// Function ID: 12371
 // Name: useDeveloperActivityShelfItems
 // Dependencies: [19, 5674, 2018, 504, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 12230 (useDeveloperActivityShelfItems)
+// Module 12370 (useDeveloperActivityShelfItems)
 import Constants from "Constants" /* 2018 */;
 import react from "react" /* 19 */;
 import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5674 */;

@@ -1,9 +1,9 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16383
+// Function ID: 16384
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [4863, 4944, 4885, 2006, 4946, 5764, 4956, 6756, 1383, 5679, 11940, 1072, 16372, 16373, 16374, 16375, 8359, 15196, 16376, 16377, 8197, 1113, 16378, 11953, 10211, 5652, 6779, 1252, 5760, 1996, 2]
+// Dependencies: [4863, 4944, 4885, 2006, 4946, 5764, 4956, 6756, 1383, 5679, 11941, 1072, 16384, 16385, 16386, 16387, 8359, 15200, 16388, 16389, 8197, 1113, 16390, 11954, 10211, 5652, 6779, 1252, 5760, 1996, 2]
 
-// Module 16371 (MobileVoiceOverlayLifecycleManager)
+// Module 16383 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import GuildChannelStore from "GuildChannelStore" /* 4944 */;
@@ -11,8 +11,8 @@ import useChannelName from "useChannelName" /* 5652 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6779 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10211 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11953 */;
-import react_nativeDefault from "react-native" /* 16378 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11954 */;
+import react_nativeDefault from "react-native" /* 16390 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import MediaEngineStore from "MediaEngineStore" /* 2006 */;
@@ -22,7 +22,7 @@ import RelationshipStore from "RelationshipStore" /* 4956 */;
 import SpeakingStore from "SpeakingStore" /* 6756 */;
 import UserStore from "UserStore" /* 1383 */;
 import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11940 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11941 */;
 import Constants from "Constants" /* 1072 */;
 import "AssetRegistry";
 import AssetRegistry from "AssetRegistry" /* 8197 */;

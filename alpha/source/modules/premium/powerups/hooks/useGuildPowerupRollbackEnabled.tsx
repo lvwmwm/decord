@@ -1,10 +1,10 @@
-// Module ID: 14057
-// Function ID: 14058
+// Module ID: 14072
+// Function ID: 14073
 // Name: useGuildPowerupRollbackEnabled
 // Dependencies: [5233, 5235, 2]
 // Exports: default, isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 14057 (useGuildPowerupRollbackEnabled)
+// Module 14072 (useGuildPowerupRollbackEnabled)
 import Powerups from "Powerups" /* 5233 */;
 import ServerThemeExperiment from "ServerThemeExperiment" /* 5235 */;
 import size from "module_2" /* 2 */;

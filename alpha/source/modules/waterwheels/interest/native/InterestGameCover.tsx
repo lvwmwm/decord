@@ -1,10 +1,10 @@
-// Module ID: 19567
-// Function ID: 19568
+// Module ID: 19574
+// Function ID: 19575
 // Name: InterestGameCover
 // Dependencies: [19, 17, 21, 5014, 575, 5717, 5624, 2]
 // Exports: default
 
-// Module 19567 (InterestGameCover)
+// Module 19574 (InterestGameCover)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import FastImageDefault from "FastImage" /* 5717 */;

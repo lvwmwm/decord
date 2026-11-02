@@ -1,19 +1,19 @@
-// Module ID: 18474
-// Function ID: 18475
+// Module ID: 18487
+// Function ID: 18488
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 6887, 6858, 18473, 6776, 504, 18475, 7279, 8822, 2]
+// Dependencies: [5, 32, 19, 6887, 6858, 18486, 6776, 504, 18488, 7279, 8822, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 18474 (useNotificationCenterItemsLoader)
+// Module 18487 (useNotificationCenterItemsLoader)
 import ReadStateConstants from "ReadStateConstants" /* 6776 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7279 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 18475 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 18488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 6887 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6858 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 18473 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 18486 */;
 import size from "module_2" /* 2 */;
 
 let c2, with_mentions;

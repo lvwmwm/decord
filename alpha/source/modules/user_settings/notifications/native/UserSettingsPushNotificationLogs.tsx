@@ -1,10 +1,10 @@
-// Module ID: 17552
-// Function ID: 17553
+// Module ID: 17565
+// Function ID: 17566
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5014, 575, 7098, 510, 11093, 1625, 7218, 6980, 1113, 8931, 11094, 14763, 7294, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5014, 575, 7098, 510, 11093, 1625, 7218, 6980, 1113, 8931, 11094, 14767, 7294, 5624, 2]
 // Exports: default
 
-// Module 17552 (UserSettingsPushNotificationLogs)
+// Module 17565 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -238,7 +238,7 @@ export default function UserSettingsPushNotificationLogs() {
         }
       }
     }),
-    children: closure_7(defaultValue(14763).ShareIcon, {})
+    children: closure_7(defaultValue(14767).ShareIcon, {})
   };
   const PressableOpacity = defaultValue(6980).PressableOpacity;
   intl = defaultValue(1113).intl;

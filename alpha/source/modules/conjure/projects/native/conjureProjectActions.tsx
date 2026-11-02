@@ -1,10 +1,10 @@
-// Module ID: 12555
-// Function ID: 12556
+// Module ID: 12221
+// Function ID: 12222
 // Name: conjureProjectActions
-// Dependencies: [5, 10850, 10867, 6844, 4870, 12556, 5711, 5964, 1113, 3868, 7358, 6046, 5712, 5731, 12548, 12557, 10875, 9208, 10992, 10878, 10846, 5733, 12559, 5727, 10524, 7561, 11883, 7135, 12561, 5738, 2]
+// Dependencies: [5, 10850, 10867, 6844, 4870, 12222, 5711, 5964, 1113, 3868, 7358, 6046, 5712, 5731, 12212, 12223, 10875, 9208, 10992, 10878, 10846, 5733, 12225, 5727, 10524, 7561, 11884, 7135, 12227, 5738, 2]
 // Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject
 
-// Module 12555 (conjureProjectActions)
+// Module 12221 (conjureProjectActions)
 import intl11 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
 import ChannelConstants from "ChannelConstants" /* 4870 */;
@@ -15,9 +15,9 @@ import ChannelUtils from "ChannelUtils" /* 6046 */;
 import ClipboardUtils from "ClipboardUtils" /* 7358 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
 import conjureProjectMute from "conjureProjectMute" /* 10878 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 12548 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12557 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12561 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 12212 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12223 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12227 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
@@ -336,7 +336,7 @@ export function conjureProjectActions(project) {
   }
   push(obj);
   if (closure_8(project)) {
-    let obj2 = { label: intl2.string(tmp8(tmp4[9]).XWgAfc), IconComponent: project(tmp4[20]).RemixIcon, action: onRemix };
+    let obj2 = { label: intl2.string(tmp8(tmp4[9])["276ll6"]), IconComponent: project(tmp4[20]).RemixIcon, action: onRemix };
     const push2 = items.push;
     intl2 = tmp3(tmp4[8]).intl;
     push2(obj2);

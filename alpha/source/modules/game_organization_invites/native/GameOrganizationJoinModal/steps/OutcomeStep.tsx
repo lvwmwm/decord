@@ -1,16 +1,16 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13212
+// Function ID: 13213
 // Name: OutcomeStep
-// Dependencies: [32, 19, 4885, 11363, 13186, 21, 5014, 1113, 2404, 13188, 504, 7522, 13189, 7972, 7973, 6027, 575, 5624, 13193, 5634, 2]
+// Dependencies: [32, 19, 4885, 11364, 13201, 21, 5014, 1113, 2404, 13203, 504, 7522, 13204, 7972, 7973, 6027, 575, 5624, 13208, 5634, 2]
 // Exports: OutcomeStep
 
-// Module 13197 (OutcomeStep)
+// Module 13212 (OutcomeStep)
 import transitionToGuild from "transitionToGuild" /* 7522 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13186 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13201 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11363 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11364 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ export function OutcomeStep(code) {
   code = code.code;
   let tmp = closure_12();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(13188)(code);
+  const tmp4 = stateFromStores(13203)(code);
   let guildId;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -117,7 +117,7 @@ export function OutcomeStep(code) {
     }
   }, items2);
   let displayNoun;
-  const tmp2Result = tmp2(13189);
+  const tmp2Result = tmp2(13204);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
@@ -226,7 +226,7 @@ export function OutcomeStep(code) {
   const obj27 = { children: closure_11(Stack, obj23) };
   items4[0] = closure_10(ModalContent, obj27);
   const obj28 = { children: closure_10(guildId(5634).Button, obj29) };
-  const ModalFooter = tmp6(13193).ModalFooter;
+  const ModalFooter = tmp6(13208).ModalFooter;
   obj29 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
   items4[1] = closure_10(ModalFooter, obj28);
   return closure_11(ModalScreen, obj26);

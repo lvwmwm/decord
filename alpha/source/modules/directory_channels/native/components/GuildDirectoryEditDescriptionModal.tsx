@@ -1,12 +1,12 @@
-// Module ID: 13848
-// Function ID: 13849
+// Module ID: 13863
+// Function ID: 13864
 // Name: GuildDirectoryEditDescriptionModal
-// Dependencies: [5, 19, 17, 21, 5014, 5586, 13849, 13847, 7292, 5624, 1113, 13850, 6998, 7169, 2]
+// Dependencies: [5, 19, 17, 21, 5014, 5586, 13864, 13862, 7292, 5624, 1113, 13865, 6998, 7169, 2]
 // Exports: default
 
-// Module 13848 (GuildDirectoryEditDescriptionModal)
+// Module 13863 (GuildDirectoryEditDescriptionModal)
 import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13847 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13862 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -105,7 +105,7 @@ function GuildDirectoryEditDescription(entry) {
     entry,
     directoryChannelId: entry.channelId
   };
-  const tmp2 = obj(13850);
+  const tmp2 = obj(13865);
   intl2 = entry(1113).intl;
   items[1] = closure_7(tmp2, obj6);
   return closure_7(SafeAreaPaddingView, obj);

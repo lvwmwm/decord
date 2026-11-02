@@ -1,14 +1,14 @@
-// Module ID: 12644
-// Function ID: 12645
+// Module ID: 12647
+// Function ID: 12648
 // Name: ConjureMentionText
-// Dependencies: [19, 1383, 21, 504, 5068, 12641, 12634, 12485, 2]
+// Dependencies: [19, 1383, 21, 504, 5068, 12644, 12637, 12144, 2]
 // Exports: default
 
-// Module 12644 (ConjureMentionText)
+// Module 12647 (ConjureMentionText)
 import UserUtils from "UserUtils" /* 5068 */;
-import ConjureFileMentionDefault from "ConjureFileMention" /* 12485 */;
-import conjureMentions from "conjureMentions" /* 12634 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12641 */;
+import ConjureFileMentionDefault from "ConjureFileMention" /* 12144 */;
+import conjureMentions from "conjureMentions" /* 12637 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12644 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;

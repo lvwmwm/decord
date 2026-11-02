@@ -3,13 +3,7 @@
 // Dependencies: []
 
 // Module 12924
-let obj2;
-const obj = { parse: obj2 };
-obj2 = {
-  prelude: null,
-  block() {
-    return this.Block(true);
-  }
-};
 
-export default obj;
+export default function() {
+  return this.createSingleNodeList(this.Raw(this.scanner.tokenIndex, null, false));
+};

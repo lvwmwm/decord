@@ -1,17 +1,17 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15472
+// Function ID: 15473
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 15469, 15470, 15471, 5014, 575, 5253, 5095, 5011, 5021, 5637, 14143, 5717, 11591, 5624, 8463, 2]
+// Dependencies: [19, 17, 1072, 21, 15473, 15474, 15475, 5014, 575, 5253, 5095, 5011, 5021, 5637, 14158, 5717, 11592, 5624, 8463, 2]
 // Exports: default
 
-// Module 15468 (GuildBoostingMarketingProgressBarMarker)
+// Module 15472 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import spring from "spring" /* 5637 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15469 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15470 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15471 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15473 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15474 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15475 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -220,7 +220,7 @@ export default function ProgressBarMarker(arg0) {
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11591), style: tmp.progressBarMarkerUnlockedIcon };
+      const obj8 = { source: sharedValue(11592), style: tmp.progressBarMarkerUnlockedIcon };
       const tmp2Result = sharedValue(5717);
       tmp20Result = tmp20(tmp2Result, obj8);
     }

@@ -1,7 +1,7 @@
 // Module ID: 5760
 // Function ID: 5761
 // Name: AppAnalyticsUtils
-// Dependencies: [4867, 502, 4863, 4944, 5242, 4926, 4920, 4885, 2006, 4946, 5761, 5764, 4956, 4917, 5045, 5679, 1072, 4870, 4951, 1084, 15658, 1252, 12, 5762, 2]
+// Dependencies: [4867, 502, 4863, 4944, 5242, 4926, 4920, 4885, 2006, 4946, 5761, 5764, 4956, 4917, 5045, 5679, 1072, 4870, 4951, 1084, 15662, 1252, 12, 5762, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getCustomStatusMetadata, getRecipientFriendCounts, getVoiceStateMetadata, trackWithMetadata
 
 // Module 5760 (AppAnalyticsUtils)
@@ -277,7 +277,7 @@ export function collectVoiceAnalyticsMetadata(id) {
         }
       });
       const merged = Object.assign(obj3);
-      const obj4 = id(15658);
+      const obj4 = id(15662);
       const merged1 = Object.assign(obj4.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }

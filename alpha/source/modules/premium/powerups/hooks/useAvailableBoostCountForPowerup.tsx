@@ -1,10 +1,10 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14111
+// Function ID: 14112
 // Name: useAvailableBoostCountForPowerup
 // Dependencies: [19, 4885, 5229, 5230, 504, 8468, 1379, 2]
 // Exports: default
 
-// Module 14096 (useAvailableBoostCountForPowerup)
+// Module 14111 (useAvailableBoostCountForPowerup)
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5229 */;

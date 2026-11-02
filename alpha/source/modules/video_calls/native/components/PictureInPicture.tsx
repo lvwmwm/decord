@@ -1,9 +1,9 @@
-// Module ID: 11706
-// Function ID: 11707
+// Module ID: 11707
+// Function ID: 11708
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 11000, 1072, 21, 5014, 1187, 11707, 1491, 5607, 11710, 5095, 5637, 11711, 11712, 5303, 1375, 2]
+// Dependencies: [32, 19, 17, 11000, 1072, 21, 5014, 1187, 11708, 1491, 5607, 11711, 5095, 5637, 11712, 11713, 5303, 1375, 2]
 
-// Module 11706 (PictureInPicture)
+// Module 11707 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import spring from "spring" /* 5637 */;

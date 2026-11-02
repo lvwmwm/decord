@@ -1,9 +1,9 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17566
+// Function ID: 17567
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 6568, 21, 5258, 5712, 5735, 1113, 504, 4839, 17554, 7366, 7321, 7060, 6975, 12559, 17558, 17555, 11062, 6953, 17559, 5742, 11539, 2]
+// Dependencies: [5, 32, 19, 6568, 21, 5258, 5712, 5735, 1113, 504, 4839, 17567, 7366, 7321, 7060, 6975, 12225, 17571, 17568, 11062, 6953, 17572, 5742, 11540, 2]
 
-// Module 17553 (CacheActionsSetting)
+// Module 17566 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import UserSettings from "UserSettings" /* 4839 */;
@@ -11,15 +11,15 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
 import BrowserManager from "BrowserManager" /* 5742 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17554 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 17555 */;
-import CacheActionCreators from "CacheActionCreators" /* 17558 */;
-import FileWarningIcon from "FileWarningIcon" /* 17559 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17567 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 17568 */;
+import CacheActionCreators from "CacheActionCreators" /* 17571 */;
+import FileWarningIcon from "FileWarningIcon" /* 17572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -35,8 +35,8 @@ const TableRowGroup2 = tmp(7060);
 const BottomSheetTitleHeader2 = tmp(7321);
 const ActionSheet2 = tmp(7366);
 const FileIcon = tmp(11062);
-const FileUpIcon = tmp(12559);
-const CacheActionsDiskUsageSectionDefault = tmp10(17554);
+const FileUpIcon = tmp(12225);
+const CacheActionsDiskUsageSectionDefault = tmp10(17567);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };

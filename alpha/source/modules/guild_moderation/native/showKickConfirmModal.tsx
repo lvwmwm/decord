@@ -1,10 +1,10 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13285
+// Function ID: 13286
 // Name: showKickConfirmModal
-// Dependencies: [5258, 6744, 13271, 1994, 2]
+// Dependencies: [5258, 6744, 13286, 1994, 2]
 // Exports: default
 
-// Module 13270 (showKickConfirmModal)
+// Module 13285 (showKickConfirmModal)
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
@@ -16,5 +16,5 @@ export default function showKickConfirmModal(merged) {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(13271, dependencyMap.paths), merged);
+  obj2.pushLazy(asyncRequire(13286, dependencyMap.paths), merged);
 };

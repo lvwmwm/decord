@@ -1,10 +1,10 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12009
+// Function ID: 12010
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 6714, 1072, 21, 5014, 575, 11754, 504, 5303, 5624, 1113, 5634, 11919, 2]
+// Dependencies: [19, 17, 6714, 1072, 21, 5014, 575, 11755, 504, 5303, 5624, 1113, 5634, 11920, 2]
 // Exports: default
 
-// Module 12008 (ScreenshareParticipant)
+// Module 12009 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

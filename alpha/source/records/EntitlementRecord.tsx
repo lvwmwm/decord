@@ -1,11 +1,11 @@
 // Module ID: 2039
 // Function ID: 2040
 // Name: EntitlementRecord
-// Dependencies: [1398, 2040, 1397, 2046, 2047, 15872, 2]
+// Dependencies: [1398, 2040, 1397, 2046, 2047, 15876, 2]
 
 // Module 2039 (EntitlementRecord)
 import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15872 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15876 */;
 import Record from "Record" /* 1398 */;
 import SKURecord from "SKURecord" /* 2040 */;
 import UserRecord from "UserRecord" /* 1397 */;

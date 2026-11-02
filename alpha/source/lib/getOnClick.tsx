@@ -1,7 +1,7 @@
 // Module ID: 8945
 // Function ID: 8946
 // Name: getOnClick
-// Dependencies: [32, 5, 2038, 6855, 7406, 502, 4926, 4885, 5749, 6061, 4917, 5045, 6772, 1072, 1074, 7407, 572, 5750, 8946, 8967, 1994, 6902, 7421, 8962, 5748, 5752, 7834, 5705, 1252, 13693, 11688, 14749, 11692, 7835, 14753, 11561, 10669, 9673, 1377, 9678, 6786, 14754, 7719, 5760, 5654, 8711, 11616, 2]
+// Dependencies: [32, 5, 2038, 6855, 7406, 502, 4926, 4885, 5749, 6061, 4917, 5045, 6772, 1072, 1074, 7407, 572, 5750, 8946, 8967, 1994, 6902, 7421, 8962, 5748, 5752, 7834, 5705, 1252, 13708, 11689, 14753, 11693, 7835, 14757, 11562, 10669, 9673, 1377, 9678, 6786, 14758, 7719, 5760, 5654, 8711, 11617, 2]
 // Exports: default
 
 // Module 8945 (getOnClick)
@@ -18,9 +18,9 @@ import _slicedToArray2 from "_slicedToArray" /* 7834 */;
 import activityBookmarkUtils from "activityBookmarkUtils" /* 7835 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8946 */;
 import QuestUtils from "QuestUtils" /* 9678 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11561 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11616 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11692 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11562 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11617 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
@@ -267,7 +267,7 @@ obj = function _handleInviteCodedLink() {
 ({ AbortCodes, AnalyticEvents: closure_12, AppContext, InviteStates: map1, JoinGuildSources, Routes } = Constants);
 ({ CollectibleShopTab: closure_14, CollectiblesMobileShopScreen: closure_15 } = CollectiblesShopConstants);
 const isGameShopPath = SocialLayerStorefrontConstants.isGameShopPath;
-let closure_20 = { skipExtensionCheck: "Array", analyticsLocations: [] };
+obj = { skipExtensionCheck: "Array", analyticsLocations: [] };
 let result = size.fileFinishedImporting("lib/getOnClick.tsx");
 
 export default function getOnClick(assetURL) {
@@ -284,7 +284,7 @@ export default function getOnClick(assetURL) {
   _require = assetURL;
   let tmp = arg1;
   if (arg1 === undefined) {
-    tmp = closure_20;
+    tmp = obj;
   }
   ({ analyticsLocations: importDefault, messageId: dependencyMap, channelId } = tmp);
   pathname = undefined;
@@ -322,7 +322,7 @@ export default function getOnClick(assetURL) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "flexDirection" };
+            result = { applicationId: "raw", skuId: "cix" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -337,7 +337,7 @@ export default function getOnClick(assetURL) {
         openURLDefault(assetURL);
         return true;
       }
-      result = { applicationId: code, skuId: "a" };
+      result = { applicationId: code, skuId: "Array" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14753, dependencyMap.paths);
+        const promise = asyncRequire(14757, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

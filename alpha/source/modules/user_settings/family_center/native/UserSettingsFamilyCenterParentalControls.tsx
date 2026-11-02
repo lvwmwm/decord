@@ -1,10 +1,10 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16836
+// Function ID: 16837
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1072, 7716, 21, 5014, 575, 1497, 7326, 7351, 7164, 16784, 16802, 1113, 2538, 9812, 16824, 16825, 8980, 7717, 7292, 16826, 9214, 14177, 2]
+// Dependencies: [32, 19, 17, 1072, 7716, 21, 5014, 575, 1497, 7326, 7351, 7164, 16797, 16815, 1113, 2538, 9812, 16837, 16838, 8980, 7717, 7292, 16839, 9214, 14192, 2]
 // Exports: default
 
-// Module 16823 (UserSettingsFamilyCenterParentalControls)
+// Module 16836 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
@@ -134,7 +134,7 @@ export default function FamilyCenterParentalControlsSettings() {
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "flexDirection" });
+    stackNavigation.setOptions({ title: "raw", headerRight: "cix" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[14]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

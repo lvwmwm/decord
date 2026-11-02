@@ -1,10 +1,10 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17812
+// Function ID: 17813
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5014, 575, 8667, 9566, 11469, 11471, 11473, 11475, 10063, 6027, 5624, 7306, 7058, 7061, 7082, 7369, 6977, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 8667, 9566, 11470, 11472, 11474, 11476, 10063, 6027, 5624, 7306, 7058, 7061, 7082, 7369, 6977, 1187, 2]
 // Exports: default
 
-// Module 17799 (UserSettingsDesignSystemBadge)
+// Module 17812 (UserSettingsDesignSystemBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5624 */;
@@ -13,7 +13,7 @@ import Card_Card from "Card/Card" /* 6977 */;
 import Badge_Badge from "Badge/Badge" /* 7306 */;
 import TableSwitchRow from "TableSwitchRow" /* 7369 */;
 import StarIcon3 from "StarIcon" /* 10063 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11473 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11474 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -75,13 +75,13 @@ function Playground() {
     } else if ("inverted" === first) {
       StarIcon = tmp14(9566).TagIcon;
     } else if ("rarity-common" === first) {
-      StarIcon = tmp14(11469).ExperimentalCommonIcon;
+      StarIcon = tmp14(11470).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(11471).ExperimentalRareIcon;
+      StarIcon = tmp14(11472).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(11473).ExperimentalEpicIcon;
+      StarIcon = tmp14(11474).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(11475).ExperimentalMythicIcon;
+      StarIcon = tmp14(11476).ExperimentalMythicIcon;
     } else {
       StarIcon = tmp14(10063).StarIcon;
     }
@@ -158,13 +158,13 @@ function VariantMatrix() {
       } else if ("inverted" === variant) {
         StarIcon = tmp2(9566).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11469).ExperimentalCommonIcon;
+        StarIcon = tmp2(11470).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11471).ExperimentalRareIcon;
+        StarIcon = tmp2(11472).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11473).ExperimentalEpicIcon;
+        StarIcon = tmp2(11474).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11475).ExperimentalMythicIcon;
+        StarIcon = tmp2(11476).ExperimentalMythicIcon;
       } else {
         StarIcon = tmp2(10063).StarIcon;
       }
@@ -176,13 +176,13 @@ function VariantMatrix() {
       } else if ("inverted" === variant) {
         StarIcon2 = tmp2(9566).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11469).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11470).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11471).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11472).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11473).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11474).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11475).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11476).ExperimentalMythicIcon;
       } else {
         StarIcon2 = tmp2(10063).StarIcon;
       }

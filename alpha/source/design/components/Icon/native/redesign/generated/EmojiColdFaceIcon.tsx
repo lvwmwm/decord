@@ -1,14 +1,14 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17358
+// Function ID: 17359
 // Name: EmojiColdFaceIcon
-// Dependencies: [19, 21, 575, 5716, 17346, 2]
+// Dependencies: [19, 21, 575, 5716, 17359, 2]
 // Exports: EmojiColdFaceIcon
 
-// Module 17345 (EmojiColdFaceIcon)
+// Module 17358 (EmojiColdFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 17346 */;
+import AssetRegistry from "AssetRegistry" /* 17359 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

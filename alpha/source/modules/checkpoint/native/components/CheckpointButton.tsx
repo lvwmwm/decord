@@ -1,14 +1,14 @@
-// Module ID: 13687
-// Function ID: 13688
+// Module ID: 13702
+// Function ID: 13703
 // Name: CheckpointButton
-// Dependencies: [19, 17, 6066, 21, 5014, 13662, 575, 5596, 13624, 2]
+// Dependencies: [19, 17, 6066, 21, 5014, 13677, 575, 5596, 13639, 2]
 // Exports: default
 
-// Module 13687 (CheckpointButton)
+// Module 13702 (CheckpointButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5596 */;
-import CheckpointPressable from "CheckpointPressable" /* 13662 */;
+import CheckpointPressable from "CheckpointPressable" /* 13677 */;
 import react from "react" /* 19 */;
 import CheckpointConstants from "CheckpointConstants" /* 6066 */;
 import Fragment from "Fragment" /* 21 */;
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp13;
-const CheckpointTextDefault = tmp13(13624);
+const CheckpointTextDefault = tmp13(13639);
 const ActivityIndicator = react_native.ActivityIndicator;
 ({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_PRIMARY: metroRequire } = CheckpointConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

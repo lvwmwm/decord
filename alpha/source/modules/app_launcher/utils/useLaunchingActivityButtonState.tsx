@@ -1,10 +1,10 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12471
+// Function ID: 12472
 // Name: useLaunchingActivityButtonState
-// Dependencies: [19, 4862, 6846, 7330, 504, 11726, 6732, 2]
+// Dependencies: [19, 4862, 6846, 7330, 504, 11727, 6732, 2]
 // Exports: default
 
-// Module 12331 (useLaunchingActivityButtonState)
+// Module 12471 (useLaunchingActivityButtonState)
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import FramesStore from "FramesStore" /* 6846 */;

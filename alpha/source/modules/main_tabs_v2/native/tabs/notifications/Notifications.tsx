@@ -1,10 +1,10 @@
-// Module ID: 18463
-// Function ID: 18464
+// Module ID: 18476
+// Function ID: 18477
 // Name: Notifications
-// Dependencies: [19, 17, 11513, 4860, 21, 5014, 575, 5199, 7112, 18464, 7292, 6980, 1113, 18465, 5624, 18466, 10192, 18467, 7326, 7351, 7654, 7004, 5611, 18471, 18472, 13320, 5194, 1625, 18058, 10736, 5080, 2]
+// Dependencies: [19, 17, 11514, 4860, 21, 5014, 575, 5199, 7112, 18477, 7292, 6980, 1113, 18478, 5624, 18479, 10192, 18480, 7326, 7351, 7654, 7004, 5611, 18484, 18485, 13335, 5194, 1625, 18071, 10736, 5080, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18463 (Notifications)
+// Module 18476 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -18,14 +18,14 @@ import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7326 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
-import MainTabsConstants from "MainTabsConstants" /* 11513 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13320 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18058 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18464 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18466 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18467 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18471 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18472 */;
+import MainTabsConstants from "MainTabsConstants" /* 11514 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13335 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18071 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18477 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18479 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18480 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18484 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 18485 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;

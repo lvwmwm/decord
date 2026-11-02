@@ -1,9 +1,9 @@
-// Module ID: 19803
-// Function ID: 19804
+// Module ID: 19810
+// Function ID: 19811
 // Name: GuildConfigGatesStore
 // Dependencies: [504, 572, 2]
 
-// Module 19803 (GuildConfigGatesStore)
+// Module 19810 (GuildConfigGatesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

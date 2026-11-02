@@ -1,10 +1,10 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14895
+// Function ID: 14896
 // Name: GroupAvatar
 // Dependencies: [19, 17, 5015, 21, 5014, 575, 5021, 6959, 563, 5095, 5254, 5637, 7149, 5624, 5717, 2]
 // Exports: default
 
-// Module 14891 (GroupAvatar)
+// Module 14895 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;

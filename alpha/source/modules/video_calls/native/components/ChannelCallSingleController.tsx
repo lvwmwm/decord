@@ -1,10 +1,10 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 12007
+// Function ID: 12008
 // Name: ChannelCallSingleController
-// Dependencies: [19, 6714, 502, 1072, 5681, 21, 1252, 5760, 504, 12007, 12009, 12010, 2]
+// Dependencies: [19, 6714, 502, 1072, 5681, 21, 1252, 5760, 504, 12008, 12010, 12011, 2]
 // Exports: ChannelCallSingleController
 
-// Module 12006 (ChannelCallSingleController)
+// Module 12007 (ChannelCallSingleController)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -40,11 +40,11 @@ export function ChannelCallSingleController(selectedParticipant) {
     const id = selectedParticipant.user.id;
     let tmp15Result = null;
     if (null != tmp4) {
-      tmp15Result = jsx(channel(id === tmp13 ? 12007 : 12009), { participant: selectedParticipant, channel });
+      tmp15Result = jsx(channel(id === tmp13 ? 12008 : 12010), { participant: selectedParticipant, channel });
     }
     return tmp15Result;
   } else if (ParticipantTypes.USER === type) {
-    return jsx(channel(12010), { participant: selectedParticipant, channel });
+    return jsx(channel(12011), { participant: selectedParticipant, channel });
   } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
   } else if (ParticipantTypes.ACTIVITY === type) {

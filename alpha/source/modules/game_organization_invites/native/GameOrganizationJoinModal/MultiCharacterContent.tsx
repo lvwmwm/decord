@@ -1,15 +1,15 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13206
+// Function ID: 13207
 // Name: MultiCharacterContent
-// Dependencies: [19, 21, 5014, 6953, 5624, 1113, 2404, 13192, 2]
+// Dependencies: [19, 21, 5014, 6953, 5624, 1113, 2404, 13207, 2]
 // Exports: default
 
-// Module 13191 (MultiCharacterContent)
+// Module 13206 (MultiCharacterContent)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2404 from "module_2404" /* 2404 */;
 import Text_Text from "Text/Text" /* 5624 */;
-import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 13192 */;
+import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 13207 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

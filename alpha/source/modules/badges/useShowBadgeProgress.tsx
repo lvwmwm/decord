@@ -1,13 +1,13 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11466
+// Function ID: 11467
 // Name: useShowBadgeProgress
-// Dependencies: [6742, 1072, 504, 11459, 2]
+// Dependencies: [6742, 1072, 504, 11460, 2]
 // Exports: default
 
-// Module 11465 (useShowBadgeProgress)
+// Module 11466 (useShowBadgeProgress)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import BadgeUtils from "BadgeUtils" /* 11459 */;
+import BadgeUtils from "BadgeUtils" /* 11460 */;
 import ConsentStore from "ConsentStore" /* 6742 */;
 import size from "module_2" /* 2 */;
 

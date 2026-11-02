@@ -1,10 +1,10 @@
-// Module ID: 19296
-// Function ID: 19297
+// Module ID: 19303
+// Function ID: 19304
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 4863, 11223, 11226, 1083, 21, 12382, 575, 5014, 6027, 8179, 5080, 11222, 19163, 7570, 563, 19159, 19297, 5095, 13813, 12271, 5637, 7241, 10520, 2]
+// Dependencies: [32, 19, 4863, 11223, 11226, 1083, 21, 12522, 575, 5014, 6027, 8179, 5080, 11222, 19170, 7570, 563, 19166, 19304, 5095, 13828, 12411, 5637, 7241, 10520, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 19296 (VoicePanelFloatingCTAContainer)
+// Module 19303 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -14,10 +14,10 @@ import Stack_Stack from "Stack/Stack" /* 6027 */;
 import RowButton2 from "RowButton" /* 8179 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12382 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13813 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19159 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12522 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13828 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19166 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

@@ -1,20 +1,20 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15131
+// Function ID: 15132
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [4862, 2038, 502, 4863, 5761, 1383, 10117, 13691, 1113, 13692, 15117, 15128, 13693, 13694, 6881, 12322, 2]
+// Dependencies: [4862, 2038, 502, 4863, 5761, 1383, 10117, 13706, 1113, 13707, 15121, 15132, 13708, 13709, 6881, 12462, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 15127 (EmbeddedActivityInstanceEmbed)
+// Module 15131 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1113 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10117 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12322 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13691 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13692 */;
-import getPlayInContext from "getPlayInContext" /* 13693 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13694 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15117 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15128 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12462 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13706 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13707 */;
+import getPlayInContext from "getPlayInContext" /* 13708 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13709 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15121 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15132 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,9 +1,9 @@
-// Module ID: 19269
-// Function ID: 19270
+// Module ID: 19276
+// Function ID: 19277
 // Name: VoicePanelPreJoinContent
-// Dependencies: [5, 32, 19, 17, 4862, 5765, 15617, 6714, 502, 4863, 2006, 4946, 5766, 1383, 5679, 5767, 11223, 11226, 1072, 15621, 5768, 21, 5014, 11229, 575, 11222, 504, 6734, 7950, 6706, 7901, 6717, 6960, 5624, 1113, 14890, 7330, 4935, 19259, 1491, 5095, 11789, 11792, 11841, 6980, 19257, 5634, 6028, 1260, 7086, 9232, 6041, 6975, 12271, 11357, 7326, 7351, 1252, 19199, 19222, 19270, 5637, 5080, 7241, 19144, 19272, 2]
+// Dependencies: [5, 32, 19, 17, 4862, 5765, 15621, 6714, 502, 4863, 2006, 4946, 5766, 1383, 5679, 5767, 11223, 11226, 1072, 15625, 5768, 21, 5014, 11229, 575, 11222, 504, 6734, 7950, 6706, 7901, 6717, 6960, 5624, 1113, 14894, 7330, 4935, 19266, 1491, 5095, 11790, 11793, 11842, 6980, 19264, 5634, 6028, 1260, 7086, 9232, 6041, 6975, 12411, 11358, 7326, 7351, 1252, 19206, 19229, 19277, 5637, 5080, 7241, 19151, 19279, 2]
 
-// Module 19269 (VoicePanelPreJoinContent)
+// Module 19276 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -26,14 +26,14 @@ import FormComponents from "FormComponents" /* 9232 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
 import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11229 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12271 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15621 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import GameConsoleStore from "GameConsoleStore" /* 5765 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15617 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15621 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
@@ -733,7 +733,7 @@ const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
   const context = react.useContext(guildId(11222));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(19144)(channelId);
+  const tmp2 = guildId(19151)(channelId);
   dependencyMap = tmp2;
   let obj = channelId(504);
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
@@ -778,7 +778,7 @@ const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
       };
       return obj;
     }
-  }, items1, channelId(19272).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(19279).areVoicePanelPreJoinContentPropsEqual);
   const obj2 = { item: stateFromStores, renderItem };
   return closure_25(channelId(5080).TransitionItem, obj2);
 });

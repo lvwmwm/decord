@@ -1,10 +1,10 @@
-// Module ID: 17909
-// Function ID: 17910
+// Module ID: 17922
+// Function ID: 17923
 // Name: useShouldDisableMessageRequestSettings
 // Dependencies: [6726, 5693, 5700, 2]
 // Exports: useShouldDisableMessageRequestSettings
 
-// Module 17909 (useShouldDisableMessageRequestSettings)
+// Module 17922 (useShouldDisableMessageRequestSettings)
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5700 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;

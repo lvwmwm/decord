@@ -1,14 +1,14 @@
-// Module ID: 17045
-// Function ID: 17046
+// Module ID: 17058
+// Function ID: 17059
 // Name: OrbsArcadeRewardUnlockedSheet
-// Dependencies: [19, 17, 17010, 21, 5014, 575, 504, 17017, 17011, 10837, 17046, 1113, 6027, 17040, 17031, 2]
+// Dependencies: [19, 17, 17023, 21, 5014, 575, 504, 17030, 17024, 10837, 17059, 1113, 6027, 17053, 17044, 2]
 // Exports: default
 
-// Module 17045 (OrbsArcadeRewardUnlockedSheet)
+// Module 17058 (OrbsArcadeRewardUnlockedSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17010 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

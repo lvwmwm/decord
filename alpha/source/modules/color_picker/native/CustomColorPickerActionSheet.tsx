@@ -1,10 +1,10 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16450
+// Function ID: 16451
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 5014, 575, 16439, 1090, 5095, 16440, 5011, 671, 5258, 5272, 7321, 1113, 5634, 7082, 12, 16441, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 16451, 1090, 5095, 16452, 5011, 671, 5258, 5272, 7321, 1113, 5634, 7082, 12, 16453, 2]
 // Exports: default
 
-// Module 16438 (CustomColorPickerActionSheet)
+// Module 16450 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,7 +12,7 @@ import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import ColorUtils from "ColorUtils" /* 5011 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16440 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -236,6 +236,6 @@ export default function CustomColorPickerActionSheet(arg0) {
       runOnJSResult(obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(16441), obj13);
+  items3[2] = sharedValue2(tmp16(16453), obj13);
   return sharedValue2(BottomSheet, obj5);
 };

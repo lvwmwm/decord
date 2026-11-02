@@ -1,8 +1,8 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13589
+// Function ID: 13590
 // Dependencies: [2]
 
-// Module 13574
+// Module 13589
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_13_knight_petal.webp.js");

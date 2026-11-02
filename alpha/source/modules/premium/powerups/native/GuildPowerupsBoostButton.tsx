@@ -1,10 +1,10 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 14161
+// Function ID: 14162
 // Name: GuildPowerupsBoostButton
 // Dependencies: [19, 4885, 1383, 7585, 1072, 21, 504, 7578, 1391, 6768, 7584, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 14146 (GuildPowerupsBoostButton)
+// Module 14161 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;

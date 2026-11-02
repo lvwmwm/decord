@@ -1,10 +1,10 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14023
+// Function ID: 14024
 // Name: useLongestChannelMessageBeforeReply
 // Dependencies: [6061, 504, 2]
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 14008 (useLongestChannelMessageBeforeReply)
+// Module 14023 (useLongestChannelMessageBeforeReply)
 import MessageStore from "MessageStore" /* 6061 */;
 import size from "module_2" /* 2 */;
 

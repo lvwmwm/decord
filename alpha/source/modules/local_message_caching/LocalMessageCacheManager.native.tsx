@@ -1,9 +1,9 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16412
+// Function ID: 16413
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4957, 502, 4863, 6061, 1072, 16401, 3, 1089, 510, 2042, 4836, 10319, 7636, 11672, 14522, 1994, 1996, 572, 6563, 9830, 2]
+// Dependencies: [5, 32, 4957, 502, 4863, 6061, 1072, 16413, 3, 1089, 510, 2042, 4836, 10319, 7636, 11673, 14536, 1994, 1996, 572, 6563, 9830, 2]
 
-// Module 16400 (LocalMessageCacheManager)
+// Module 16412 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -19,14 +19,14 @@ import MessageRecord from "MessageRecord" /* 4957 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import MessageStore from "MessageStore" /* 6061 */;
-import MutexUtils from "MutexUtils" /* 16401 */;
+import MutexUtils from "MutexUtils" /* 16413 */;
 import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
 let tmp;
-const UploadActionCreatorsDefault = tmp(11672);
+const UploadActionCreatorsDefault = tmp(11673);
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();

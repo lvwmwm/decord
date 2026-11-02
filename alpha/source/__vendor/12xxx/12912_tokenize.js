@@ -1,94 +1,66 @@
 // Module ID: 12912
 // Function ID: 12913
 // Name: tokenize
-// Dependencies: [12833]
+// Dependencies: [12836]
 
 // Module 12912 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
+import tokenize from "tokenize" /* 12836 */;
 
-const Function = tokenize.TYPE.Function;
-const Url = tokenize.TYPE.Url;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-let obj = {
-  name: "Url",
-  structure: { value: ["String", "Raw"] },
+let items;
+let obj2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, null, false);
+}
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const CDO = tokenize.TYPE.CDO;
+const CDC = tokenize.TYPE.CDC;
+const obj = {
+  name: "StyleSheet",
+  structure: obj2,
   parse() {
-    let StringResult;
-    let str4;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const tokenType = this.scanner.tokenType;
-    if (Url === tokenType) {
-      const sum = tokenStart + 4;
-      const diff = self.scanner.tokenEnd - 1;
-      let tmp14 = sum;
-      if (sum < diff) {
-        const source3 = self.scanner.source;
-        let tmp18 = sum;
-        tmp14 = sum;
-        const obj6 = tokenize;
-        if (obj6.isWhiteSpace(source3.charCodeAt(sum))) {
-          const sum1 = tmp18 + 1;
-          tmp14 = sum1;
-          while (sum1 < diff) {
-            let obj2 = tokenize;
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      do {
+        let tokenType = self.scanner.tokenType;
+        if (WhiteSpace === tokenType) {
+          let iter2 = self.scanner;
+          let nextResult = iter2.next();
+        } else {
+          let CommentResult;
+          if (Comment === tokenType) {
             let source = self.scanner.source;
-            tmp18 = sum1;
-            tmp14 = sum1;
-            if (!obj2.isWhiteSpace(source.charCodeAt(sum1))) {
-              break;
+            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
+              let iter = self.scanner;
+              let nextResult1 = iter.next();
+            } else {
+              CommentResult = self.Comment();
             }
+          } else if (CDO === tokenType) {
+            CommentResult = self.CDO();
+          } else if (CDC === tokenType) {
+            CommentResult = self.CDC();
+          } else if (AtKeyword === tokenType) {
+            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
+          } else {
+            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
           }
+          let arr = list.push(CommentResult);
         }
-      }
-      let tmp19 = diff;
-      if (tmp14 < diff) {
-        const source4 = self.scanner.source;
-        let tmp23 = diff;
-        tmp19 = diff;
-        const obj7 = tokenize;
-        if (obj7.isWhiteSpace(source4.charCodeAt(diff - 1))) {
-          const diff1 = tmp23 - 1;
-          tmp19 = diff1;
-          while (tmp14 < diff1) {
-            let obj3 = tokenize;
-            let source2 = self.scanner.source;
-            tmp23 = diff1;
-            tmp19 = diff1;
-            if (!obj3.isWhiteSpace(source2.charCodeAt(diff1 - 1))) {
-              break;
-            }
-          }
-        }
-      }
-      const obj4 = { type: "Raw", loc: self.getLocation(tmp14, tmp19), value: str4.substring(tmp14, tmp19) };
-      str4 = self.scanner.source;
-      self.eat(Url);
-      StringResult = obj4;
-    } else if (Function === tokenType) {
-      const obj = tokenize;
-      if (!obj.cmpStr(self.scanner.source, self.scanner.tokenStart, self.scanner.tokenEnd, "url(")) {
-        self.error("Function name must be `url`");
-      }
-      self.eat(tmp26);
-      const scanner = self.scanner;
-      scanner.skipSC();
-      StringResult = self.String();
-      const scanner2 = self.scanner;
-      scanner2.skipSC();
-      self.eat(RightParenthesis);
-    } else {
-      self.error("Url or Function is expected");
+      } while (!self.scanner.eof);
     }
-    const obj5 = { type: "Url", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: StringResult };
-    return obj5;
+    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    return element;
   },
-  generate(value) {
-    this.chunk("url");
-    this.chunk("(");
-    this.node(value.value);
-    this.chunk(")");
-  }
+  generate(arg0) {
+    this.children(arg0);
+  },
+  walkContext: "stylesheet"
 };
+obj2 = { children: items };
+items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
 
 export default obj;

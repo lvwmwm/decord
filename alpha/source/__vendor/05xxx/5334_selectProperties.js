@@ -13,7 +13,7 @@ import react_native from "react-native" /* 17 */;
 
 let Platform;
 let c3;
-const f87326 = () => {
+const f87362 = () => {
   for (const item10005 of closure_5) {
     let item10005Result = item10005();
     continue;
@@ -118,7 +118,7 @@ export function scheduleFlushOperations() {
   if (!tmp) {
     c6 = true;
     const obj = ghQueueMicrotask;
-    obj.ghQueueMicrotask(f87326);
+    obj.ghQueueMicrotask(f87362);
   }
 }
 export function scheduleOperationToBeFlushed(arg0) {
@@ -127,6 +127,6 @@ export function scheduleOperationToBeFlushed(arg0) {
   if (!tmp2) {
     c6 = true;
     let obj = ghQueueMicrotask;
-    obj.ghQueueMicrotask(f87326);
+    obj.ghQueueMicrotask(f87362);
   }
 }

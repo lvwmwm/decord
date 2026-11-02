@@ -1,15 +1,15 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17052
+// Function ID: 17053
 // Name: OrbsArcadeRewardsSheet
-// Dependencies: [19, 17010, 21, 5014, 575, 504, 7366, 7321, 1113, 6027, 17040, 17031, 17017, 2]
+// Dependencies: [19, 17023, 21, 5014, 575, 504, 7366, 7321, 1113, 6027, 17053, 17044, 17030, 2]
 // Exports: default
 
-// Module 17039 (OrbsArcadeRewardsSheet)
+// Module 17052 (OrbsArcadeRewardsSheet)
 import nativeDefault from "native" /* 575 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17031 */;
-import OrbsArcadeRewardChainDefault from "OrbsArcadeRewardChain" /* 17040 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17044 */;
+import OrbsArcadeRewardChainDefault from "OrbsArcadeRewardChain" /* 17053 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17010 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -71,12 +71,12 @@ export default function OrbsArcadeRewardsSheet(gameId) {
     const items4 = [closure_4(OrbsArcadeRewardChainDefault, obj7), ];
     const obj8 = { game: stateFromStores, sheetKey: "OrbsArcadeRewardsSheet", primaryAction: result ? OrbsArcadeSheetPrimaryAction.CLAIM : OrbsArcadeSheetPrimaryAction.PLAY, secondaryAction: result1 ? OrbsArcadeSheetSecondaryAction.CLOSE : OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, style: tmp.actionsContainer };
     const tmp13 = OrbsArcadeSheetActionsDefault;
-    const tmp2Result = gameId(17017);
+    const tmp2Result = gameId(17030);
     result = tmp2Result.hasOrbsArcadeUnclaimedRewards(stateFromStores1);
-    OrbsArcadeSheetPrimaryAction = tmp2(17031).OrbsArcadeSheetPrimaryAction;
-    const tmp2Result2 = gameId(17017);
+    OrbsArcadeSheetPrimaryAction = tmp2(17044).OrbsArcadeSheetPrimaryAction;
+    const tmp2Result2 = gameId(17030);
     result1 = tmp2Result2.hasOrbsArcadeUnlockedRewards(stateFromStores1);
-    OrbsArcadeSheetSecondaryAction = tmp2(17031).OrbsArcadeSheetSecondaryAction;
+    OrbsArcadeSheetSecondaryAction = tmp2(17044).OrbsArcadeSheetSecondaryAction;
     obj9 = { spacing: 0, children: items4 };
     items4[1] = closure_4(tmp13, obj8);
     tmp7Result = tmp7(ActionSheet, obj6);

@@ -1,10 +1,10 @@
-// Module ID: 14615
-// Function ID: 14616
+// Module ID: 14629
+// Function ID: 14630
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1072, 21, 5014, 9730, 2061, 14616, 5717, 5624, 1113, 7292, 5634, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 9730, 2061, 14630, 5717, 5624, 1113, 7292, 5634, 2]
 // Exports: default
 
-// Module 14615 (XboxLinkEducation)
+// Module 14629 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import components_Button_Button from "components/Button/Button" /* 5634 */;
 import FastImageDefault from "FastImage" /* 5717 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
-import _modDef14616 from "module_14616" /* 14616 */;
+import _modDef14630 from "module_14630" /* 14630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -46,7 +46,7 @@ export default function XboxLinkEducation(onClose) {
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14616 };
+    const obj = { uri: _modDef14630 };
     return obj;
   }, []);
   items = [, , ];

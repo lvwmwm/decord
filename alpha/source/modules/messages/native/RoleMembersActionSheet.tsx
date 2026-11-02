@@ -1,10 +1,10 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11620
+// Function ID: 11621
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 5015, 7446, 4920, 21, 5014, 575, 11, 7299, 504, 7297, 1187, 5624, 5272, 11620, 2]
+// Dependencies: [19, 17, 5015, 7446, 4920, 21, 5014, 575, 11, 7299, 504, 7297, 1187, 5624, 5272, 11621, 2]
 // Exports: default
 
-// Module 11619 (RoleMembersActionSheet)
+// Module 11620 (RoleMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -98,7 +98,7 @@ export default function RoleMembersActionSheet(guildId) {
     let obj4 = { scrollable: true, header: tmp14, children: closure_8(tmp9Result, obj5) };
     BottomSheet = tmp3(5272).BottomSheet;
     obj5 = { guildId, channelId, roleId, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
-    tmp9Result = tmp9(11620);
+    tmp9Result = tmp9(11621);
     if (channelId == null) {
       channelId = EVERYONE_CHANNEL_ID;
     }

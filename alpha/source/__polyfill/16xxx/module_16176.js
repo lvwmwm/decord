@@ -1,18 +1,16 @@
 // Module ID: 16176
 // Function ID: 16177
-// Dependencies: [16149]
+// Dependencies: [16177]
 
 // Module 16176
-import _mod16149 from "module_16149" /* 16149 */;
+import _mod16177 from "module_16177" /* 16177 */;
 
 
-export default function(arg0) {
-  if (_mod16149(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
+export default (arg0) => {
+  const tmp = _mod16177(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
   }
+  return num;
 };

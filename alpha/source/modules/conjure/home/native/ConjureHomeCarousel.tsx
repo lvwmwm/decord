@@ -1,9 +1,9 @@
-// Module ID: 12817
-// Function ID: 12818
+// Module ID: 12820
+// Function ID: 12821
 // Name: ConjureHomeCarousel
-// Dependencies: [32, 19, 17, 5015, 1993, 1072, 21, 575, 9727, 8678, 12818, 9587, 11281, 12446, 5014, 5095, 12820, 5717, 1409, 5624, 12821, 12964, 12972, 504, 1498, 1113, 3868, 2]
+// Dependencies: [32, 19, 17, 5015, 1993, 1072, 21, 575, 9727, 8678, 12821, 9587, 11281, 12105, 5014, 5095, 12823, 5717, 1409, 5624, 12824, 12967, 12975, 504, 1498, 1113, 3868, 2]
 
-// Module 12817 (ConjureHomeCarousel)
+// Module 12820 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,9 +11,9 @@ import AppsIcon from "AppsIcon" /* 8678 */;
 import ScreenIcon from "ScreenIcon" /* 9587 */;
 import GameControllerIcon from "GameControllerIcon" /* 9727 */;
 import ShieldIcon from "ShieldIcon" /* 11281 */;
-import RobotIcon from "RobotIcon" /* 12446 */;
-import WidgetsIcon from "WidgetsIcon" /* 12818 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 12820 */;
+import RobotIcon from "RobotIcon" /* 12105 */;
+import WidgetsIcon from "WidgetsIcon" /* 12821 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 12823 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -185,10 +185,10 @@ const memoResult = react.memo(function ConjureHomeCarousel(onScreen) {
       const result = set((value + conjureHomeCarouselFan.CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND * num / 1000) % c4);
     }
   }
-  C.__closure = { offset: sharedValue, CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND: memo(12820).CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND, loop: result };
+  C.__closure = { offset: sharedValue, CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND: memo(12823).CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND, loop: result };
   C.__workletHash = 7470635772737;
   C.__initData = __initData2;
-  ({ offset: sharedValue, CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND: memo(12820).CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND, loop: result });
+  ({ offset: sharedValue, CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND: memo(12823).CONJURE_HOME_CAROUSEL_SPEED_PX_PER_SECOND, loop: result });
   frameCallback = obj6.useFrameCallback(C, false);
   const tmp12 = !stateFromStores && stateFromStores1 && isFocused && onScreen && viewportWidth > 0;
   useReducedMotion = tmp12;

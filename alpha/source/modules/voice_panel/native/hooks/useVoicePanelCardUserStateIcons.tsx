@@ -1,14 +1,14 @@
-// Module ID: 19213
-// Function ID: 19214
+// Module ID: 19220
+// Function ID: 19221
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5764, 5679, 5681, 11222, 9234, 563, 12001, 5789, 11942, 18284, 19159, 5712, 1113, 7086, 575, 2]
+// Dependencies: [19, 5764, 5679, 5681, 11222, 9234, 563, 12002, 5789, 11943, 18297, 19166, 5712, 1113, 7086, 575, 2]
 // Exports: default
 
-// Module 19213 (useVoicePanelCardUserStateIcons)
+// Module 19220 (useVoicePanelCardUserStateIcons)
 import CallConstants from "CallConstants" /* 5681 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9234 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19159 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19166 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import VoiceStateStore from "VoiceStateStore" /* 5679 */;
@@ -18,8 +18,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(11942);
-const useMuteAwareLocalVolumeDefault = tmp2(12001);
+const MobileAudioOutputExperimentDefault = tmp2(11943);
+const useMuteAwareLocalVolumeDefault = tmp2(12002);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelCardUserStateIcons.tsx");
@@ -92,7 +92,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(18284);
+  const tmp4Result6 = tmp4(18297);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

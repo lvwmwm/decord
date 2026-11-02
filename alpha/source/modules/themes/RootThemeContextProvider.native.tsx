@@ -1,10 +1,10 @@
-// Module ID: 16416
-// Function ID: 16417
+// Module ID: 16428
+// Function ID: 16429
 // Name: RootThemeContextProvider
-// Dependencies: [19, 5015, 1192, 1083, 21, 504, 5194, 7149, 16417, 5080, 12056, 5628, 2]
+// Dependencies: [19, 5015, 1192, 1083, 21, 504, 5194, 7149, 16429, 5080, 12057, 5628, 2]
 // Exports: RootThemeContextProvider
 
-// Module 16416 (RootThemeContextProvider)
+// Module 16428 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
@@ -32,7 +32,7 @@ export function RootThemeContextProvider(children) {
   const obj2 = manaTypeConsolidationExperiment(7149);
   manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [manaTypeConsolidationExperiment];
-  const obj3 = manaTypeConsolidationExperiment(16417);
+  const obj3 = manaTypeConsolidationExperiment(16429);
   const plainTextExperiment = obj3.usePlainTextExperiment("RootThemeContextProvider");
   let num = 0;
   const memo = react.useMemo(() => {
@@ -71,6 +71,6 @@ export function RootThemeContextProvider(children) {
     }
     setThemeFlagResult2 = setThemeFlag(setThemeFlagResult1, REDUCED_CONTRAST_ENABLED);
   }
-  const RootThemeContextProvider = tmp(12056).RootThemeContextProvider;
+  const RootThemeContextProvider = tmp(12057).RootThemeContextProvider;
   return <RootThemeContextProvider theme={theme} flags={setThemeFlagResult2} saturation={saturation} contrast={contrast} enabledExperiments={memo}>{null}</RootThemeContextProvider>;
 }

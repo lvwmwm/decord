@@ -1,9 +1,9 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13945
+// Function ID: 13946
 // Name: Autocomplete
-// Dependencies: [19, 17, 4885, 4956, 1383, 1072, 10225, 21, 5014, 575, 8177, 504, 5068, 1187, 9201, 6975, 6986, 1113, 8708, 8603, 5652, 5624, 5717, 13931, 10266, 6980, 10282, 12, 8600, 13932, 2025, 2026, 8143, 13933, 2]
+// Dependencies: [19, 17, 4885, 4956, 1383, 1072, 10225, 21, 5014, 575, 8177, 504, 5068, 1187, 9201, 6975, 6986, 1113, 8708, 8603, 5652, 5624, 5717, 13946, 10266, 6980, 10282, 12, 8600, 13947, 2025, 2026, 8143, 13948, 2]
 
-// Module 13930 (Autocomplete)
+// Module 13945 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,8 +22,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 8708 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10225 */;
 import StickersHooks from "StickersHooks" /* 10266 */;
 import StickerDefault from "Sticker" /* 10282 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13931 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13932 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13946 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 13947 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
@@ -315,7 +315,7 @@ const obj10 = {
     tmp9Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp9Result = tmp9(tmp2(13933), obj8);
+      tmp9Result = tmp9(tmp2(13948), obj8);
     }
     return tmp9(FormRow, obj6);
   },

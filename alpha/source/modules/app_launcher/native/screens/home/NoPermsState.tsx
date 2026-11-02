@@ -1,17 +1,17 @@
-// Module ID: 12303
-// Function ID: 12304
+// Module ID: 12443
+// Function ID: 12444
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 5014, 575, 5021, 5253, 12304, 12305, 12239, 11501, 5717, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5021, 5253, 12444, 12445, 12379, 11502, 5717, 5624, 1113, 2]
 // Exports: default
 
-// Module 12303 (NoPermsState)
+// Module 12443 (NoPermsState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import shared from "shared" /* 5021 */;
 import useThemeDefault from "useTheme" /* 5253 */;
 import FastImageDefault from "FastImage" /* 5717 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12239 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -32,9 +32,9 @@ export default function EmptyState() {
   let items;
   const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12304 : 12305);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12444 : 12445);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11501).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11502).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };

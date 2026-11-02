@@ -1,7 +1,7 @@
 // Module ID: 5755
 // Function ID: 5756
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5015, 4863, 4920, 1072, 4870, 1083, 21, 5624, 5014, 575, 5756, 5654, 5199, 6744, 8750, 5958, 1113, 7358, 5711, 6957, 1187, 1377, 8940, 5709, 10126, 10181, 8571, 504, 5011, 8419, 5258, 11619, 1994, 11, 4839, 5717, 11592, 15659, 15661, 5727, 11575, 15663, 11497, 6032, 11055, 6034, 1375, 8603, 15664, 11057, 2]
+// Dependencies: [19, 17, 5015, 4863, 4920, 1072, 4870, 1083, 21, 5624, 5014, 575, 5756, 5654, 5199, 6744, 8750, 5958, 1113, 7358, 5711, 6957, 1187, 1377, 8940, 5709, 10126, 10181, 8571, 504, 5011, 8419, 5258, 11620, 1994, 11, 4839, 5717, 11593, 15663, 15665, 5727, 11576, 15667, 11498, 6032, 11055, 6034, 1375, 8603, 15668, 11057, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5755 (MarkupReactRules)
@@ -31,9 +31,9 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 87
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10181 */;
 import SpoilerDefault from "Spoiler" /* 11055 */;
 import TimestampDefault from "Timestamp" /* 11057 */;
-import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11497 */;
-import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11575 */;
-import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15664 */;
+import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11498 */;
+import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11576 */;
+import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15668 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -261,13 +261,13 @@ function MarkupMention(styles) {
           const obj2 = { guildId: null, roleId: null, channelId: null };
           ({ guildId: obj5.guildId, roleId: obj5.roleId, channelId: obj5.channelId } = node);
           const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.openLazy(asyncRequire(11619, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
+          obj4.openLazy(asyncRequire(11620, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
         }
       }
       if ("@everyone" === node.roleName) {
         if (null != node.guildId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-          const tmp13 = asyncRequire(11619, dependencyMap.paths);
+          const tmp13 = asyncRequire(11620, dependencyMap.paths);
           const obj6 = { guildId: node.guildId, roleId: obj3.castGuildIdAsEveryoneGuildRoleId(node.guildId), channelId: node.channelId };
           obj3 = SnowflakeUtilsDefault;
           openLazy(tmp13, "RoleMembersActionSheet", obj6, "stack");
@@ -492,7 +492,7 @@ function MarkupChannelMention(state) {
   items = [outputResult, , ];
   let tmp8Result = null;
   if (null != node.inContent) {
-    const obj3 = { themedColor: node(575).colors.MENTION_FOREGROUND, style: size, source: tmp9(11592), size: tmp4(1187).Icon.Sizes.CUSTOM };
+    const obj3 = { themedColor: node(575).colors.MENTION_FOREGROUND, style: size, source: tmp9(11593), size: tmp4(1187).Icon.Sizes.CUSTOM };
     const ThemedIcon = tmp4(1187).ThemedIcon;
     const fontScale = closure_4.getFontScale();
     const tmp8 = closure_12;
@@ -590,7 +590,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(15659).SignPostIcon;
+  let SignPostIcon = state(15663).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -601,7 +601,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(15661).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15665).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -675,7 +675,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15659).SignPostIcon;
+  SignPostIcon = tmp2(15663).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -701,7 +701,7 @@ function MarkupAttachmentLink(state) {
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15663), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15667), size: SMALL };
   const ThemedIcon = tmp3(1187).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {

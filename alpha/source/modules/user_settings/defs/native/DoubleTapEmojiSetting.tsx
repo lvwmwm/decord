@@ -1,9 +1,9 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 17932
+// Function ID: 17933
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 8432, 1072, 1386, 21, 5014, 575, 4839, 8426, 1409, 7300, 9939, 1252, 7351, 9951, 11539, 1113, 2]
+// Dependencies: [5, 19, 8432, 1072, 1386, 21, 5014, 575, 4839, 8426, 1409, 7300, 9939, 1252, 7351, 9951, 11540, 1113, 2]
 
-// Module 17919 (DoubleTapEmojiSetting)
+// Module 17932 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -17,7 +17,7 @@ import SettingsConstants from "SettingsConstants" /* 8432 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

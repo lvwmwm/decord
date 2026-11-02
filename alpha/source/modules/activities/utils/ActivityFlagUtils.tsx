@@ -1,10 +1,10 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11534
+// Function ID: 11535
 // Name: ActivityFlagUtils
 // Dependencies: [1072, 4839, 510, 1396, 7883, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 11533 (ActivityFlagUtils)
+// Module 11534 (ActivityFlagUtils)
 import Storage2 from "Storage" /* 510 */;
 import FlagUtils from "FlagUtils" /* 1396 */;
 import UserSettings from "UserSettings" /* 4839 */;

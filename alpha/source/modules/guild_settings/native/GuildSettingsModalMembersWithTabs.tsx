@@ -1,18 +1,18 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18650
+// Function ID: 18651
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [32, 19, 17, 4885, 4946, 1383, 21, 5014, 575, 18262, 504, 7439, 1113, 18638, 18639, 18646, 5048, 1497, 9874, 18641, 7558, 9100, 8980, 12511, 14177, 2]
+// Dependencies: [32, 19, 17, 4885, 4946, 1383, 21, 5014, 575, 18275, 504, 7439, 1113, 18651, 18652, 18659, 5048, 1497, 9874, 18654, 7558, 9100, 8980, 12170, 14192, 2]
 
-// Module 18637 (GuildSettingsModalMembersWithTabs)
+// Module 18650 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7439 */;
 import ContextMenu2 from "ContextMenu" /* 9874 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 18638 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 18639 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 18646 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 18651 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 18652 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 18659 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
@@ -28,7 +28,7 @@ let c10;
 let c9;
 let obj2;
 let tmp2;
-const showMembersManagementActionSheet = tmp2(18641);
+const showMembersManagementActionSheet = tmp2(18654);
 const View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let obj = { container: obj2, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };

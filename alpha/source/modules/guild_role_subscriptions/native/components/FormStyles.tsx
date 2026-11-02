@@ -1,9 +1,9 @@
-// Module ID: 19943
-// Function ID: 19944
+// Module ID: 19950
+// Function ID: 19951
 // Name: FormStyles
 // Dependencies: [5014, 575, 2]
 
-// Module 19943 (FormStyles)
+// Module 19950 (FormStyles)
 import nativeDefault from "native" /* 575 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

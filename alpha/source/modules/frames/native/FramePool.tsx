@@ -1,18 +1,18 @@
-// Module ID: 19091
-// Function ID: 19092
+// Module ID: 19098
+// Function ID: 19099
 // Name: FramePool
-// Dependencies: [32, 19, 17, 6846, 6847, 21, 5014, 1491, 504, 12108, 11822, 11798, 10928, 19092, 2]
+// Dependencies: [32, 19, 17, 6846, 6847, 21, 5014, 1491, 504, 12252, 11823, 11799, 10927, 19099, 2]
 // Exports: default
 
-// Module 19091 (FramePool)
+// Module 19098 (FramePool)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10928 */;
-import makeIframeIdDefault from "makeIframeId" /* 11798 */;
-import WebViewContext from "WebViewContext" /* 11822 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 12108 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10927 */;
+import makeIframeIdDefault from "makeIframeId" /* 11799 */;
+import WebViewContext from "WebViewContext" /* 11823 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 12252 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6846 */;
@@ -26,44 +26,61 @@ let dependencyMap;
 let metroImportAll;
 let metroImportDefault;
 function PooledFrame(frame) {
-  let closure_2;
-  let iframeId;
+  let _undefined;
+  let tmp2;
+  let tmp3;
+  const f116691 = () => {
+    const obj = { iframeId: makeIframeIdDefault(), proxyTicket };
+    return obj;
+  };
   frame = frame.frame;
-  iframeId = undefined;
-  dependencyMap = undefined;
+  let iframeId;
   const id = frame.id;
-  [iframeId, dependencyMap] = react.useState(() => first(closure_2[11])());
+  const proxyTicket = frame.data.proxyTicket;
+  let obj = react;
+  [tmp2, tmp3] = iframeId(react.useState(f116691), 2);
+  dependencyMap = tmp3;
+  const tmp = iframeId(react.useState(f116691), 2);
+  if (tmp2.proxyTicket !== proxyTicket) {
+    let obj2 = { iframeId: proxyTicket(11799)(), proxyTicket };
+    tmp3(obj2);
+  }
+  iframeId = tmp2.iframeId;
   const items = [id, iframeId];
-  const effect = react.useEffect(() => {
+  const effect = obj.useEffect(() => {
     let obj = FramePoolManagerDefault;
-    obj.registerFrameEntry(id, first);
+    obj.registerFrameEntry(id, iframeId);
     const obj2 = FramesActionCreatorsDefault;
-    obj2.attachFrameIframe(id, first);
+    obj2.attachFrameIframe(id, iframeId);
     return () => {
-      const obj = first(closure_2[12]);
+      const obj = proxyTicket(c2[12]);
       obj.detachFrameIframe(id, iframeId);
     };
   }, items);
   const items1 = [id];
-  const effect1 = react.useEffect(() => () => {
-    const obj = first(closure_2[9]);
+  const effect1 = obj.useEffect(() => () => {
+    const obj = proxyTicket(c2[9]);
     obj.removeFrameEntry(id);
   }, items1);
-  const callback = react.useCallback(() => {
-    closure_2(makeIframeIdDefault());
+  const callback = obj.useCallback(() => {
+    _undefined((arg0) => {
+      const obj = { iframeId: proxyTicket(_undefined[11])() };
+      const merged = Object.assign(arg0);
+      return obj;
+    });
   }, []);
-  let syncExternalStore = react.useSyncExternalStore(iframeId(12108).subscribe, () => {
+  let syncExternalStore = obj.useSyncExternalStore(proxyTicket(12252).subscribe, () => {
     const obj = FramePoolManagerDefault;
     return obj.getWinningTargetState(id);
   });
-  let obj = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
-  const tmp7 = jsx;
-  const tmp8 = iframeId(19092);
+  const obj3 = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
+  const tmp11 = jsx;
+  const tmp12 = proxyTicket(19099);
   if (syncExternalStore == null) {
-    let obj2 = { layoutMode: constants.FOCUSED };
-    syncExternalStore = obj2;
+    syncExternalStore = { layoutMode: constants.FOCUSED };
+    const obj4 = { layoutMode: constants.FOCUSED };
   }
-  return tmp7(tmp8, obj, iframeId);
+  return tmp11(tmp12, obj3, iframeId);
 }
 const View = react_native.View;
 ({ FrameLayoutModes: metroImportDefault, isLaunched: metroImportAll } = FramesConstants);

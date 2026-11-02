@@ -1,15 +1,15 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12485
+// Function ID: 12486
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1496, 21, 12321, 5014, 575, 12239, 5095, 5596, 8715, 5717, 5624, 12346, 2]
+// Dependencies: [19, 17, 1496, 21, 12461, 5014, 575, 12379, 5095, 5596, 8715, 5717, 5624, 12486, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 12345 (AppLauncherCommandViewHeader)
+// Module 12485 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12239 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12321 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12379 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12461 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
 import Fragment from "Fragment" /* 21 */;
@@ -188,7 +188,7 @@ export function AppLauncherCommandViewHeader(section) {
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(5095).View, obj11), tmp16(section(12321), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(5095).View, obj11), tmp16(section(12461), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;
@@ -199,7 +199,7 @@ export function AppLauncherCommandViewHeader(section) {
   items4[2] = tmp16(Text, obj12);
   const obj13 = { style: tmp.overflowMenuContainer, children: tmp16(tmp8Result, { commandId: id }) };
   id = undefined;
-  tmp8Result = section(12346);
+  tmp8Result = section(12486);
   if (command != null) {
     const rootCommand = command.rootCommand;
     if (rootCommand != null) {

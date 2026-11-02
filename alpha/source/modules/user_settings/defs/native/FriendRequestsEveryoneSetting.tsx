@@ -1,17 +1,17 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16878
+// Function ID: 16879
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8432, 1072, 4839, 7165, 16708, 11539, 1113, 2]
+// Dependencies: [19, 8432, 1072, 4839, 7165, 16721, 11540, 1113, 2]
 
-// Module 16865 (FriendRequestsEveryoneSetting)
+// Module 16878 (FriendRequestsEveryoneSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16708 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let c3;

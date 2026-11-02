@@ -1,10 +1,10 @@
-// Module ID: 14595
-// Function ID: 14596
+// Module ID: 14609
+// Function ID: 14610
 // Name: getAttachmentUploadAbortAlert
 // Dependencies: [1072, 1113, 8212, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 14595 (getAttachmentUploadAbortAlert)
+// Module 14609 (getAttachmentUploadAbortAlert)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import UploadUtils from "UploadUtils" /* 8212 */;

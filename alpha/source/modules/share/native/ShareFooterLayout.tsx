@@ -1,10 +1,10 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 13406
+// Function ID: 13407
 // Name: ShareFooterLayout
 // Dependencies: [19, 17, 21, 5014, 575, 5607, 5095, 5637, 5638, 5624, 2]
 // Exports: default
 
-// Module 13391 (ShareFooterLayout)
+// Module 13406 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;

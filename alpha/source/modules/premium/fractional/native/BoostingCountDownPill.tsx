@@ -1,10 +1,10 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15404
+// Function ID: 15405
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 5014, 575, 5258, 15401, 1994, 1113, 5624, 2]
+// Dependencies: [17, 21, 5014, 575, 5258, 15405, 1994, 1113, 5624, 2]
 // Exports: default
 
-// Module 15400 (BoostingCountDownPill)
+// Module 15404 (BoostingCountDownPill)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -26,7 +26,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(15401, dependencyMap.paths);
+  const tmp2 = asyncRequire(15405, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }

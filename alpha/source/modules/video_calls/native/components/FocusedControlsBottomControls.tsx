@@ -1,10 +1,10 @@
-// Module ID: 11865
-// Function ID: 11866
+// Module ID: 11866
+// Function ID: 11867
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 11000, 11001, 1072, 21, 1375, 5014, 575, 6723, 1187, 1625, 5095, 11866, 1092, 1113, 5595, 5254, 5303, 10251, 1491, 11715, 1108, 5080, 5600, 5021, 11210, 2]
+// Dependencies: [32, 19, 17, 11000, 11001, 1072, 21, 1375, 5014, 575, 6723, 1187, 1625, 5095, 11867, 1092, 1113, 5595, 5254, 5303, 10251, 1491, 11716, 1108, 5080, 5600, 5021, 11210, 2]
 // Exports: default
 
-// Module 11865 (FocusedControlsBottomControls)
+// Module 11866 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import native from "native" /* 1187 */;
@@ -89,7 +89,7 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_18();
-  let obj = positionY(11866);
+  let obj = positionY(11867);
   const canShowTooltip = obj.useCanShowTooltip(positionY(1092).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(5095);
   const fn = function o() {

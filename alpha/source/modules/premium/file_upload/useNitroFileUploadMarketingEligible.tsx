@@ -1,13 +1,13 @@
-// Module ID: 19052
-// Function ID: 19053
+// Module ID: 19059
+// Function ID: 19060
 // Name: useNitroFileUploadMarketingEligible
-// Dependencies: [1385, 11416, 5075, 2]
+// Dependencies: [1385, 11417, 5075, 2]
 // Exports: useNitroFileUploadAnnouncementEligible, useNitroFileUploadUpsellEligible
 
-// Module 19052 (useNitroFileUploadMarketingEligible)
+// Module 19059 (useNitroFileUploadMarketingEligible)
 import PremiumConstants from "PremiumConstants" /* 1385 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5075 */;
-import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11416 */;
+import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11417 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;

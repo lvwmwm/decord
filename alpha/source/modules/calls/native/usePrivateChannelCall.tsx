@@ -1,10 +1,10 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15022
+// Function ID: 15023
 // Name: usePrivateChannelCall
 // Dependencies: [5, 19, 4863, 504, 1113, 10739, 7485, 2]
 // Exports: default
 
-// Module 15018 (usePrivateChannelCall)
+// Module 15022 (usePrivateChannelCall)
 import intl3 from "intl" /* 1113 */;
 import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

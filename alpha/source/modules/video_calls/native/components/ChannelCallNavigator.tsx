@@ -1,10 +1,10 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 11847
+// Function ID: 11848
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 11847, 11001, 1072, 10910, 21, 5014, 1491, 11006, 5095, 11848, 10999, 11004, 6734, 6744, 10905, 1994, 1108, 11908, 11218, 5194, 11862, 1375, 5080, 5224, 7169, 2]
+// Dependencies: [5, 32, 19, 17, 11848, 11001, 1072, 10910, 21, 5014, 1491, 11006, 5095, 11849, 10999, 11004, 6734, 6744, 10905, 1994, 1108, 11909, 11218, 5194, 11863, 1375, 5080, 5224, 7169, 2]
 // Exports: default
 
-// Module 11846 (ChannelCallNavigator)
+// Module 11847 (ChannelCallNavigator)
 import Constants from "Constants" /* 1072 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import reactDefault from "react" /* 5224 */;
@@ -14,7 +14,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11847 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11848 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -136,7 +136,7 @@ function CallWithVoiceChat(channel) {
   let tmp17 = null;
   if (channel.isGuildStageVoice()) {
     const obj6 = { channel };
-    tmp17 = closure_12(tmp2(11848), obj6);
+    tmp17 = closure_12(tmp2(11849), obj6);
   }
   items1 = [tmp17, ];
   const obj7 = { pointerEvents: "box-none", style: items2 };
@@ -265,7 +265,7 @@ function MainCallScreen(channel) {
       }
     };
   }, []);
-  isConnectedToVoiceChannel(11908);
+  isConnectedToVoiceChannel(11909);
   if (isChannelContentGated) {
     let obj3 = { onReturnToSafety: id(6744).pop, guildId: null, channelId: null };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
@@ -286,13 +286,13 @@ function MainCallScreen(channel) {
     if (channel.isGuildStageVoice()) {
       let tmp17 = id;
       const obj7 = { channel };
-      tmp14Result = tmp14(id(11848), obj7);
+      tmp14Result = tmp14(id(11849), obj7);
     }
     tmp14Result2 = tmp14(tmp15, obj5);
     tmp11 = tmp14;
   }
   const tmp21 = id(5194)();
-  const tmp22 = id(11862);
+  const tmp22 = id(11863);
   const tmp2Result = isConnectedToVoiceChannel(1375);
   const tmp23 = tmp2Result.isAndroid() || !isConnectedToVoiceChannel;
   const obj8 = { forceHide: tmp23, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(5080).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) };

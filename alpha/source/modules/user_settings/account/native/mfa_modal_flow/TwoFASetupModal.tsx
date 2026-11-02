@@ -1,19 +1,19 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16657
+// Function ID: 16658
 // Name: TwoFASetupModal
-// Dependencies: [19, 17, 16645, 21, 5014, 575, 1497, 1498, 16643, 7292, 5634, 1113, 16646, 6998, 16647, 16650, 16651, 16654, 5612, 7118, 7169, 2]
+// Dependencies: [19, 17, 16658, 21, 5014, 575, 1497, 1498, 16656, 7292, 5634, 1113, 16659, 6998, 16660, 16663, 16664, 16667, 5612, 7118, 7169, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 16644 (TwoFASetupModal)
+// Module 16657 (TwoFASetupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import reactDefault from "react" /* 5612 */;
 import Navigator2 from "Navigator" /* 7169 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16643 */;
-import TwoFAConstants from "TwoFAConstants" /* 16645 */;
-import TwoFASetupScanDefault from "TwoFASetupScan" /* 16650 */;
-import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 16651 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16656 */;
+import TwoFAConstants from "TwoFAConstants" /* 16658 */;
+import TwoFASetupScanDefault from "TwoFASetupScan" /* 16663 */;
+import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 16664 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -35,7 +35,7 @@ const result = size.fileFinishedImporting("modules/user_settings/account/native/
 
 export default function TwoFASetupModal(initialRouteName) {
   let intl;
-  const f110371 = () => {
+  const f110417 = () => {
     let obj4;
     let obj6;
     let totpSecret;
@@ -96,8 +96,8 @@ export default function TwoFASetupModal(initialRouteName) {
   if (LANDING === undefined) {
     LANDING = TwoFAModalSetupSections.LANDING;
   }
-  let obj = { initialRouteName: LANDING, screens: reactDefault(f110371), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
-  reactDefault(f110371);
+  let obj = { initialRouteName: LANDING, screens: reactDefault(f110417), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
+  reactDefault(f110417);
   const Navigator = Navigator2.Navigator;
   intl = intl3.intl;
   return metroRequire(Navigator, obj);

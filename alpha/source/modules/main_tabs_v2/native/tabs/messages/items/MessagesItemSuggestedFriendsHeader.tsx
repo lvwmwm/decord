@@ -1,9 +1,9 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18156
+// Function ID: 18157
 // Name: MessagesItemSuggestedFriendsHeader
 // Dependencies: [19, 17, 21, 5624, 575, 5014, 5095, 8841, 10736, 1113, 2]
 
-// Module 18143 (MessagesItemSuggestedFriendsHeader)
+// Module 18156 (MessagesItemSuggestedFriendsHeader)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import Text_Text from "Text/Text" /* 5624 */;

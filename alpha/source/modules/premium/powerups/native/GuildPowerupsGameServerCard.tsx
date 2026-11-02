@@ -1,15 +1,15 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14148
+// Function ID: 14149
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 5015, 8469, 21, 5014, 575, 504, 14134, 14135, 14126, 14130, 5169, 2]
+// Dependencies: [19, 17, 5015, 8469, 21, 5014, 575, 504, 14149, 14150, 14141, 14145, 5169, 2]
 // Exports: default
 
-// Module 14133 (GuildPowerupsGameServerCard)
+// Module 14148 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 14134 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 14135 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 14149 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 14150 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import GameServerStore from "GameServerStore" /* 8469 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const GuildPowerupsPerkCardDefault = tmp5(14130);
+const GuildPowerupsPerkCardDefault = tmp5(14145);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { riveContainer: obj2 };

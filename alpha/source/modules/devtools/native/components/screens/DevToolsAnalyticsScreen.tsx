@@ -1,10 +1,10 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17580
+// Function ID: 17581
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1383, 16226, 1072, 21, 5014, 575, 5624, 6975, 10263, 2042, 9201, 6980, 7358, 5731, 504, 7294, 6027, 7060, 7369, 12342, 5738, 17562, 7218, 2]
+// Dependencies: [32, 19, 17, 1383, 16230, 1072, 21, 5014, 575, 5624, 6975, 10263, 2042, 9201, 6980, 7358, 5731, 504, 7294, 6027, 7060, 7369, 12482, 5738, 17575, 7218, 2]
 // Exports: default
 
-// Module 17567 (DevToolsAnalyticsScreen)
+// Module 17580 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1383 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 16226 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 16230 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -224,10 +224,10 @@ export default function DevToolsAnalyticsScreen() {
   const Stack = tmp2(6027).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
   const TableRowGroup = tmp2(7060).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(12342).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const obj4 = { icon: closure_8(trimmed(12482).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7369).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5738).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17562).clearAnalyticsLog };
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5738).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17575).clearAnalyticsLog };
   const TableRow = tmp2(6975).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];

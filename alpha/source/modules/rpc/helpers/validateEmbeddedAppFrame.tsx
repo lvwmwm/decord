@@ -1,10 +1,10 @@
-// Module ID: 16289
-// Function ID: 16290
+// Module ID: 16293
+// Function ID: 16294
 // Name: validateEmbeddedAppFrame
-// Dependencies: [16290, 1072, 9326, 5675, 10883, 11812, 2024, 9333, 9327, 2]
+// Dependencies: [16294, 1072, 9326, 5675, 10883, 11813, 2024, 9333, 9327, 2]
 // Exports: tryValidateEmbeddedAppFrame, validateEmbeddedAppFrameOnAnySurface
 
-// Module 16289 (validateEmbeddedAppFrame)
+// Module 16293 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1072 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2024 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
@@ -12,8 +12,8 @@ import getSocketFrameDefault from "getSocketFrame" /* 9326 */;
 import isPostMessageSocketDefault from "isPostMessageSocket" /* 9327 */;
 import RPCErrorDefault from "RPCError" /* 9333 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10883 */;
-import RPCHelpers from "RPCHelpers" /* 11812 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16290 */;
+import RPCHelpers from "RPCHelpers" /* 11813 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16294 */;
 import size from "module_2" /* 2 */;
 
 function validateEmbeddedAppFrame(socket) {

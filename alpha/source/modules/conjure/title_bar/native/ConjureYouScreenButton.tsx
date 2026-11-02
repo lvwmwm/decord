@@ -1,19 +1,19 @@
-// Module ID: 14696
-// Function ID: 14697
+// Module ID: 14710
+// Function ID: 14711
 // Name: ConjureYouScreenButton
-// Dependencies: [19, 21, 5014, 575, 14697, 1498, 14702, 12464, 14705, 14703, 1113, 3868, 14707, 2]
+// Dependencies: [19, 21, 5014, 575, 14711, 1498, 14713, 12123, 14716, 14714, 1113, 3868, 13005, 2]
 
-// Module 14696 (ConjureYouScreenButton)
+// Module 14710 (ConjureYouScreenButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1498 */;
 import _modDef3868 from "module_3868" /* 3868 */;
-import MagicWandIcon from "MagicWandIcon" /* 12464 */;
-import useConjureWandStatusDefault from "useConjureWandStatus" /* 14697 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14702 */;
-import getIconSize from "getIconSize" /* 14703 */;
-import ConjureWorkingWandDefault from "ConjureWorkingWand" /* 14705 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14707 */;
+import MagicWandIcon from "MagicWandIcon" /* 12123 */;
+import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 13005 */;
+import useConjureWandStatusDefault from "useConjureWandStatus" /* 14711 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14713 */;
+import getIconSize from "getIconSize" /* 14714 */;
+import ConjureWorkingWandDefault from "ConjureWorkingWand" /* 14716 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

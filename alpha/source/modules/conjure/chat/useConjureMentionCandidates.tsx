@@ -1,10 +1,10 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12800
+// Function ID: 12801
 // Name: useConjureMentionCandidates
-// Dependencies: [19, 502, 6844, 504, 12798, 2]
+// Dependencies: [19, 502, 6844, 504, 12801, 2]
 // Exports: default
 
-// Module 12797 (useConjureMentionCandidates)
+// Module 12800 (useConjureMentionCandidates)
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;

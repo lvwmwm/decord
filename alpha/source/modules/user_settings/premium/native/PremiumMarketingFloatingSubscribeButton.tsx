@@ -1,10 +1,10 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15383
+// Function ID: 15384
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5015, 1072, 21, 5014, 575, 1625, 504, 15377, 7351, 671, 5095, 5254, 5587, 10290, 2]
+// Dependencies: [19, 17, 5015, 1072, 21, 5014, 575, 1625, 504, 15381, 7351, 671, 5095, 5254, 5587, 10290, 2]
 // Exports: default
 
-// Module 15379 (PremiumMarketingFloatingSubscribeButton)
+// Module 15383 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;

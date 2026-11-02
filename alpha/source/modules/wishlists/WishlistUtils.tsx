@@ -1,10 +1,10 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 14917
+// Function ID: 14918
 // Name: WishlistUtils
 // Dependencies: [32, 2040, 9474, 9475, 9476, 1072, 1385, 1113, 7409, 2]
 // Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 14913 (WishlistUtils)
+// Module 14917 (WishlistUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;

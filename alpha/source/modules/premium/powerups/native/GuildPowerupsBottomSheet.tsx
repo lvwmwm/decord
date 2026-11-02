@@ -1,10 +1,10 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14092
+// Function ID: 14093
 // Name: GuildPowerupsBottomSheet
-// Dependencies: [17, 5015, 5230, 5231, 21, 5014, 575, 14061, 14057, 14078, 14079, 504, 14080, 5169, 14082, 5624, 14083, 14085, 14086, 5735, 1113, 2570, 14072, 14092, 5233, 9077, 14093, 14094, 14098, 14103, 14104, 5634, 14102, 5272, 2]
+// Dependencies: [17, 5015, 5230, 5231, 21, 5014, 575, 14076, 14072, 14093, 14094, 504, 14095, 5169, 14097, 5624, 14098, 14100, 14101, 5735, 1113, 2570, 14087, 14107, 5233, 9077, 14108, 14109, 14113, 14118, 14119, 5634, 14117, 5272, 2]
 // Exports: default
 
-// Module 14077 (GuildPowerupsBottomSheet)
+// Module 14092 (GuildPowerupsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,16 +16,16 @@ import Powerups from "Powerups" /* 5233 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import components_Button_Button from "components/Button/Button" /* 5634 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14057 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14061 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14072 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14078 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14079 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14083 */;
-import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 14085 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 14086 */;
-import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 14092 */;
-import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 14102 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14072 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14076 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14087 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14093 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14094 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 14098 */;
+import useGuildPowerupLevelPerksDefault from "useGuildPowerupLevelPerks" /* 14100 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 14101 */;
+import useGuildPowerupCardFooterConfigDefault from "useGuildPowerupCardFooterConfig" /* 14107 */;
+import GuildPowerupAnalytics from "GuildPowerupAnalytics" /* 14117 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
 import Fragment from "Fragment" /* 21 */;
@@ -49,10 +49,10 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const useCanGuildPowerupBeToggledDefault = tmp2(14093);
-const useGuildPowerupOnActivateDefault = tmp2(14094);
-const useGuildPowerupOnShowDeactivateDefault = tmp2(14098);
-const GuildPowerupsDisabledWarningDefault = tmp2(14104);
+const useCanGuildPowerupBeToggledDefault = tmp2(14108);
+const useGuildPowerupOnActivateDefault = tmp2(14109);
+const useGuildPowerupOnShowDeactivateDefault = tmp2(14113);
+const GuildPowerupsDisabledWarningDefault = tmp2(14119);
 function GuildPowerupsBottomSheetHeader(arg0) {
   let guildId;
   let items1;
@@ -83,7 +83,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   }
   if (powerup.type === hasOwnProperty.LEVEL) {
     const obj2 = { style: tmp.gemContainer };
-    tmp15 = metroImportAll(tmp2(14080), obj2);
+    tmp15 = metroImportAll(tmp2(14095), obj2);
     tmp14 = metroImportAll;
   } else if (tmp10 === tmp9) {
     const obj3 = { style: tmp.image, children: metroImportAll(GameServerHostingRive.GameServerHostingRive, obj4) };
@@ -94,7 +94,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   } else {
     tmp14 = metroImportAll;
     const obj6 = { imageUrl: str, style: tmp.image, isAnimated: true };
-    tmp15 = metroImportAll(tmp2(14082), obj6);
+    tmp15 = metroImportAll(tmp2(14097), obj6);
   }
   const obj7 = { children: items1 };
   items1 = [tmp15, ];

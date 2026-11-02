@@ -1,10 +1,10 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16914
+// Function ID: 16915
 // Name: OrbWalletCards
-// Dependencies: [32, 19, 17, 15625, 4860, 1385, 21, 5014, 575, 16902, 16903, 6977, 12821, 5624, 5634, 8028, 7054, 1113, 5596, 7038, 5587, 16890, 7569, 16892, 7351, 7326, 4847, 2172, 12329, 504, 8519, 11416, 2]
+// Dependencies: [32, 19, 17, 15629, 4860, 1385, 21, 5014, 575, 16915, 16916, 6977, 12824, 5624, 5634, 8028, 7054, 1113, 5596, 7038, 5587, 16903, 7569, 16905, 7351, 7326, 4847, 2172, 12469, 504, 8519, 11417, 2]
 // Exports: OrbWalletPrimaryCard, getWalletPrimaryCardType
 
-// Module 16901 (OrbWalletCards)
+// Module 16914 (OrbWalletCards)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;
@@ -19,17 +19,17 @@ import XSmallIcon2 from "XSmallIcon" /* 7054 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import IconButton2 from "IconButton" /* 8028 */;
-import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11416 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12329 */;
-import SvgCss from "SvgCss" /* 12821 */;
-import OrbWalletUtils from "OrbWalletUtils" /* 16890 */;
-import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16892 */;
-import AssetRegistry from "AssetRegistry" /* 16902 */;
-import AssetRegistry2 from "AssetRegistry" /* 16903 */;
+import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11417 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12469 */;
+import SvgCss from "SvgCss" /* 12824 */;
+import OrbWalletUtils from "OrbWalletUtils" /* 16903 */;
+import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16905 */;
+import AssetRegistry from "AssetRegistry" /* 16915 */;
+import AssetRegistry2 from "AssetRegistry" /* 16916 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbChallengesStore from "OrbChallengesStore" /* 15625 */;
+import OrbChallengesStore from "OrbChallengesStore" /* 15629 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -134,7 +134,7 @@ function OrbWalletShopPrimaryCard() {
   }, items);
   const ORB_WALLET_SHOP_CTA_CARD = analyticsLocations(4847).DismissibleContent.ORB_WALLET_SHOP_CTA_CARD;
   const ORB_WALLET_SHOP_CTA = AnalyticsLocationDefault.ORB_WALLET_SHOP_CTA;
-  let obj = analyticsLocations(16890);
+  let obj = analyticsLocations(16903);
   const orbWalletAnalyticsPage = obj.useOrbWalletAnalyticsPage();
   obj2 = analyticsLocations(7569);
   const items1 = [ORB_WALLET_SHOP_CTA_CARD];

@@ -1,10 +1,10 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 16723
+// Function ID: 16724
 // Name: ParentalControlledUserSettingsDefinitions
 // Dependencies: [7718, 7717, 504, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 16710 (ParentalControlledUserSettingsDefinitions)
+// Module 16723 (ParentalControlledUserSettingsDefinitions)
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7718 */;
 import size from "module_2" /* 2 */;
 

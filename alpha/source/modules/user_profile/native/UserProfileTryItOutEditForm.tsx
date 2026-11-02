@@ -1,10 +1,10 @@
-// Module ID: 16539
-// Function ID: 16540
+// Module ID: 16552
+// Function ID: 16553
 // Name: UserProfileTryItOutEditForm
-// Dependencies: [19, 17, 8731, 7377, 21, 7326, 7351, 16433, 16446, 1113, 8814, 16449, 16456, 16506, 1625, 16540, 504, 8757, 11393, 8740, 8815, 8800, 8811, 575, 5080, 11394, 16541, 11395, 11412, 5634, 9529, 16529, 12056, 16543, 2]
+// Dependencies: [19, 17, 8731, 7377, 21, 7326, 7351, 16445, 16458, 1113, 8814, 16462, 16469, 16519, 1625, 16553, 504, 8757, 11394, 8740, 8815, 8800, 8811, 575, 5080, 11395, 16554, 11396, 11413, 5634, 9529, 16542, 12057, 16556, 2]
 // Exports: default
 
-// Module 16539 (UserProfileTryItOutEditForm)
+// Module 16552 (UserProfileTryItOutEditForm)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -18,19 +18,19 @@ import useProfileThemeDefault from "useProfileTheme" /* 8800 */;
 import useUserProfileColors from "useUserProfileColors" /* 8811 */;
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8814 */;
 import useBadgesDefault from "useBadges" /* 8815 */;
-import userSettingToActivity from "userSettingToActivity" /* 11393 */;
-import UserProfileGradientContainerDefault from "UserProfileGradientContainer" /* 11394 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11395 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11412 */;
-import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 16433 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16446 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16449 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16456 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 16506 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 16529 */;
-import UserProfileFloatingUpsell from "UserProfileFloatingUpsell" /* 16540 */;
-import EditUserProfileAvatarDefault from "EditUserProfileAvatar" /* 16541 */;
-import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPremiumUpsell" /* 16543 */;
+import userSettingToActivity from "userSettingToActivity" /* 11394 */;
+import UserProfileGradientContainerDefault from "UserProfileGradientContainer" /* 11395 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11396 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11413 */;
+import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 16445 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16458 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16462 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16469 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 16519 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 16542 */;
+import UserProfileFloatingUpsell from "UserProfileFloatingUpsell" /* 16553 */;
+import EditUserProfileAvatarDefault from "EditUserProfileAvatar" /* 16554 */;
+import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPremiumUpsell" /* 16556 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
@@ -191,7 +191,7 @@ export default function UserProfileTryItOutEditForm(currentUser) {
   items2[1] = metroImportAll(tmpResult, obj9);
   items10 = [metroImportAll(tmp22, obj16), ];
   const obj18 = { children: metroImportDefault(UserProfileTryItOutGetPremiumUpsellDefault, { onLayout }) };
-  const DisableCustomTheme = tmp5(12056).DisableCustomTheme;
+  const DisableCustomTheme = tmp5(12057).DisableCustomTheme;
   items10[1] = metroImportDefault(DisableCustomTheme, obj18);
   return metroImportDefault(ThemeContextProvider, obj6);
 };

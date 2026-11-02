@@ -1,21 +1,21 @@
-// Module ID: 19683
-// Function ID: 19684
+// Module ID: 19690
+// Function ID: 19691
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 19665, 19667, 13277, 21, 5014, 575, 1497, 18914, 4839, 19668, 5964, 1113, 6998, 7558, 8177, 6027, 5624, 7082, 7369, 19684, 19695, 19698, 7060, 6975, 13282, 5711, 6446, 7358, 5606, 2]
+// Dependencies: [5, 32, 19, 19672, 19674, 13292, 21, 5014, 575, 1497, 18921, 4839, 19675, 5964, 1113, 6998, 7558, 8177, 6027, 5624, 7082, 7369, 19691, 19702, 19705, 7060, 6975, 13297, 5711, 6446, 7358, 5606, 2]
 // Exports: default
 
-// Module 19683 (GuildSettingsAutomodRule)
+// Module 19690 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 575 */;
 import ToastUtils from "ToastUtils" /* 5711 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6998 */;
 import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import Constants from "Constants" /* 13277 */;
-import AutomodStore from "AutomodStore" /* 19665 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19668 */;
+import Constants from "Constants" /* 13292 */;
+import AutomodStore from "AutomodStore" /* 19672 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19675 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19667 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19674 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

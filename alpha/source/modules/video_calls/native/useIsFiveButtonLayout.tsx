@@ -1,10 +1,10 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11718
+// Function ID: 11719
 // Name: useIsFiveButtonLayout
-// Dependencies: [4863, 4885, 504, 11004, 11718, 11720, 7452, 2]
+// Dependencies: [4863, 4885, 504, 11004, 11719, 11721, 7452, 2]
 // Exports: useIsFiveButtonLayout
 
-// Module 11717 (useIsFiveButtonLayout)
+// Module 11718 (useIsFiveButtonLayout)
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export function useIsFiveButtonLayout(id) {
     guild_id = null;
   }
   let guild_id1;
-  const tmp6 = guild_id(11718);
+  const tmp6 = guild_id(11719);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -58,7 +58,7 @@ export function useIsFiveButtonLayout(id) {
     flag = false;
   }
   let id1;
-  const tmp5Result = guild_id(11720);
+  const tmp5Result = guild_id(11721);
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }

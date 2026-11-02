@@ -1,14 +1,14 @@
-// Module ID: 16227
-// Function ID: 16228
+// Module ID: 16231
+// Function ID: 16232
 // Name: ICYMISessionStore
-// Dependencies: [5238, 1246, 8562, 502, 8906, 1266, 16228, 504, 572, 2]
+// Dependencies: [5238, 1246, 8562, 502, 8906, 1266, 16232, 504, 572, 2]
 // Exports: resetGlobalState
 
-// Module 16227 (ICYMISessionStore)
+// Module 16231 (ICYMISessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import v1 from "v1" /* 1266 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16228 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16232 */;
 import ExperimentStore from "ExperimentStore" /* 5238 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import LabFeatureStore from "LabFeatureStore" /* 8562 */;
@@ -148,7 +148,7 @@ class ICYMISession {
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
       if (uxVariation == null) {
-        uxVariation = tmp11(16228).DEFAULT_UX_VARIATION;
+        uxVariation = tmp11(16232).DEFAULT_UX_VARIATION;
       }
       let trackFeedItemDwell1sResult = trackFeedItemDwell1s(obj);
       continue;
@@ -344,7 +344,7 @@ class ICYMISession {
       }
       DEFAULT_UX_VARIATION = tmp2.uxVariation;
       if (DEFAULT_UX_VARIATION == null) {
-        DEFAULT_UX_VARIATION = tmp5(16228).DEFAULT_UX_VARIATION;
+        DEFAULT_UX_VARIATION = tmp5(16232).DEFAULT_UX_VARIATION;
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = this._activeItems[findIndexResult]);
       trackFeedItemDwelled(obj);

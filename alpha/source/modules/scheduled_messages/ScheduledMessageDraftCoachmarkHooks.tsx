@@ -1,10 +1,10 @@
-// Module ID: 13737
-// Function ID: 13738
+// Module ID: 13752
+// Function ID: 13753
 // Name: ScheduledMessageDraftCoachmarkHooks
 // Dependencies: [32, 4847, 7569, 2]
 // Exports: useScheduledMessageDraftCoachmarkState
 
-// Module 13737 (ScheduledMessageDraftCoachmarkHooks)
+// Module 13752 (ScheduledMessageDraftCoachmarkHooks)
 import dismissible_content from "dismissible_content" /* 4847 */;
 import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7569 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

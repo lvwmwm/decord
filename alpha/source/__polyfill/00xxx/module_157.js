@@ -48,8 +48,8 @@ class DOMException {
       constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    Object.defineProperty(tmp3Result, closure_6, { writable: true, value: "Array" });
-    Object.defineProperty(tmp3Result, closure_7, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_6, { writable: true, value: "a" });
+    Object.defineProperty(tmp3Result, closure_7, { writable: true, value: "a" });
     if (undefined === AbortError) {
       _classPrivateFieldBase(tmp3Result, closure_6)[closure_6] = "Error";
       _classPrivateFieldBase(tmp3Result, closure_7)[closure_7] = 0;

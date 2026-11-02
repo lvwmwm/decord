@@ -1,10 +1,10 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12170
+// Function ID: 12171
 // Name: Tabs
-// Dependencies: [19, 17, 2062, 21, 5095, 5014, 575, 5637, 10089, 12512, 5303, 1375, 2]
+// Dependencies: [19, 17, 2062, 21, 5095, 5014, 575, 5637, 10089, 12171, 5303, 1375, 2]
 // Exports: Tabs
 
-// Module 12511 (Tabs)
+// Module 12170 (Tabs)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;

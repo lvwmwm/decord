@@ -1,9 +1,9 @@
-// Module ID: 19466
-// Function ID: 19467
+// Module ID: 19473
+// Function ID: 19474
 // Name: ForumManager
 // Dependencies: [4863, 4870, 7287, 7475, 2]
 
-// Module 19466 (ForumManager)
+// Module 19473 (ForumManager)
 import ChannelConstants from "ChannelConstants" /* 4870 */;
 import ForumPostDataLoader from "ForumPostDataLoader" /* 7475 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

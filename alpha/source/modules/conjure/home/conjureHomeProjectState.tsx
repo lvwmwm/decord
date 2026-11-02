@@ -1,10 +1,10 @@
-// Module ID: 14699
-// Function ID: 14700
+// Module ID: 13007
+// Function ID: 13008
 // Name: conjureHomeProjectState
 // Dependencies: [1231, 6842, 10851, 6844, 10867, 10877, 10878, 504, 10960, 2]
 // Exports: conjureHomeProjectShowsDraft, conjureHomeProjectState, conjureProjectLastActivityTime, conjureProjectStatus, hasConjureUnpublishedChanges, useConjureHomeProjectState, useConjureProjectItemState
 
-// Module 14699 (conjureHomeProjectState)
+// Module 13007 (conjureHomeProjectState)
 import conjureUnread from "conjureUnread" /* 10877 */;
 import ConjurePublishTypes from "ConjurePublishTypes" /* 10960 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;

@@ -1,23 +1,23 @@
-// Module ID: 18799
-// Function ID: 18800
+// Module ID: 18806
+// Function ID: 18807
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4863, 4956, 1383, 18800, 13885, 9827, 1072, 21, 504, 18704, 13871, 13896, 13892, 5068, 5652, 13878, 18801, 13877, 13879, 18763, 18696, 1113, 18708, 2]
+// Dependencies: [32, 19, 4863, 4956, 1383, 18807, 13900, 9827, 1072, 21, 504, 18711, 13886, 13911, 13907, 5068, 5652, 13893, 18808, 13892, 13894, 18770, 18703, 1113, 18715, 2]
 
-// Module 18799 (AutocompleteScreen)
+// Module 18806 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5068 */;
 import useChannelName from "useChannelName" /* 5652 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13871 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13892 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13896 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18801 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18808 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
 import UserStore from "UserStore" /* 1383 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18800 */;
-import SearchQueryStore from "SearchQueryStore" /* 13885 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18807 */;
+import SearchQueryStore from "SearchQueryStore" /* 13900 */;
 import SearchConstants from "SearchConstants" /* 9827 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

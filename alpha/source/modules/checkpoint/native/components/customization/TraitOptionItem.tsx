@@ -1,10 +1,10 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13696
+// Function ID: 13697
 // Name: TraitOptionItem
 // Dependencies: [17, 6066, 21, 575, 5014, 6067, 7038, 9528, 5587, 6434, 8031, 5717, 6113, 5082, 2]
 // Exports: default
 
-// Module 13681 (TraitOptionItem)
+// Module 13696 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 5082 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;

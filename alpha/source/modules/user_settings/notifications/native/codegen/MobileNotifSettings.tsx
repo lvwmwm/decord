@@ -1,9 +1,9 @@
-// Module ID: 17469
-// Function ID: 17470
+// Module ID: 17482
+// Function ID: 17483
 // Name: MobileNotifSettings
 // Dependencies: [2]
 
-// Module 17469 (MobileNotifSettings)
+// Module 17482 (MobileNotifSettings)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/codegen/MobileNotifSettings.tsx");

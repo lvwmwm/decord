@@ -1,10 +1,10 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17721
+// Function ID: 17722
 // Name: DesignTogglesActions
 // Dependencies: [7001, 572, 2]
 // Exports: clearAll, toggle
 
-// Module 17708 (DesignTogglesActions)
+// Module 17721 (DesignTogglesActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DesignTogglesStore from "DesignTogglesStore" /* 7001 */;
 import size from "module_2" /* 2 */;

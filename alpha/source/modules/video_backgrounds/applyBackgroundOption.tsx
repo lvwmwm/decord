@@ -222,11 +222,11 @@ obj = function _applyBackgroundOptionLive() {
       }
       await "HermesInternal";
       flag = track.track;
-      const tmp22 = track;
+      const tmp14 = track;
       if (flag === undefined) {
         flag = true;
       }
-      location = tmp22.location;
+      location = tmp14.location;
       return "flexDirection";
     })();
     iter.next();

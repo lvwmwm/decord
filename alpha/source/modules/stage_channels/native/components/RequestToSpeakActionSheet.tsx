@@ -1,10 +1,10 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11887
+// Function ID: 11888
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 4863, 6709, 21, 5014, 575, 11887, 7369, 1113, 504, 6048, 11888, 11890, 6975, 6758, 7955, 6729, 5258, 7945, 1187, 11892, 5596, 7326, 7351, 6765, 6759, 5272, 5275, 6027, 7060, 5624, 11893, 2]
+// Dependencies: [32, 19, 17, 502, 4863, 6709, 21, 5014, 575, 11888, 7369, 1113, 504, 6048, 11889, 11891, 6975, 6758, 7955, 6729, 5258, 7945, 1187, 11893, 5596, 7326, 7351, 6765, 6759, 5272, 5275, 6027, 7060, 5624, 11894, 2]
 // Exports: default
 
-// Module 11886 (RequestToSpeakActionSheet)
+// Module 11887 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -16,7 +16,7 @@ import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6
 import TableSwitchRow2 from "TableSwitchRow" /* 7369 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 11887 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 11888 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -31,7 +31,7 @@ let c10;
 let c9;
 let obj2;
 let tmp4;
-const AssetRegistryDefault = tmp4(11892);
+const AssetRegistryDefault = tmp4(11893);
 function RequestToSpeakRow(channel) {
   let c0;
   let intl;
@@ -92,9 +92,9 @@ function ManageSelfSpeakerRow(channel) {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    MicrophoneArrowRightIcon = tmp(11888).GroupArrowDownIcon;
+    MicrophoneArrowRightIcon = tmp(11889).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(11890).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(11891).MicrophoneArrowRightIcon;
   }
   let obj2 = {
     onPress: function handleSetSelfSpeaker() {
@@ -226,7 +226,7 @@ export default function RequestToSpeakActionSheet(channelId) {
     items4 = [closure_10(Stack2, obj8), ];
     const _Math = Math;
     const obj16 = { channel: stateFromStores, height: Math.max(first1 - first - 8, 0) };
-    const tmp4Result = tmp4(11893);
+    const tmp4Result = tmp4(11894);
     items4[1] = closure_9(tmp4Result, obj16);
     tmp15 = closure_9(AnalyticsLocationProvider, obj4);
   }

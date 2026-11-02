@@ -1,10 +1,10 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16625
+// Function ID: 16626
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8432, 1072, 21, 5014, 575, 7955, 2061, 5624, 1113, 3096, 16571, 11539, 16613, 16575, 2]
+// Dependencies: [19, 17, 8432, 1072, 21, 5014, 575, 7955, 2061, 5624, 1113, 3096, 16584, 11540, 16626, 16588, 2]
 // Exports: default
 
-// Module 16612 (SettingsAgeGroupScreen)
+// Module 16625 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,8 +14,8 @@ import _modDef3096 from "module_3096" /* 3096 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
-import SettingLayoutDefault from "SettingLayout" /* 16575 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingLayoutDefault from "SettingLayout" /* 16588 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const TinyBroncoAgeGroupHeader2 = tmp(16613);
+const TinyBroncoAgeGroupHeader2 = tmp(16626);
 function SettingsAgeGroupHeader() {
   let intl;
   let intl2;
@@ -59,7 +59,7 @@ const result = size.fileFinishedImporting("modules/user_settings/age_group/nativ
 
 export default function SettingsAgeGroupScreen() {
   let isTinyBroncoSettingsEnabled;
-  let obj = isTinyBroncoSettingsEnabled(16571);
+  let obj = isTinyBroncoSettingsEnabled(16584);
   isTinyBroncoSettingsEnabled = obj.useIsTinyBroncoSettingsEnabled();
   let items = [isTinyBroncoSettingsEnabled];
   const node = react.useMemo(() => {

@@ -1,20 +1,20 @@
 // Module ID: 16159
 // Function ID: 16160
-// Dependencies: [16127, 16128, 16160]
+// Dependencies: [16154, 16160]
 
 // Module 16159
-import _mod16128 from "module_16128" /* 16128 */;
-import _mod16160 from "module_16160" /* 16160 */;
-import getOwnPropertyDescriptor from "module_16127" /* 16127 */;
+import _mod16154 from "module_16154" /* 16154 */;
 
-const f67436 = () => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty(_mod16160("div"), "a", obj).a;
+let tmp;
+const _mod16160 = tmp(16160);
+
+export default function(arg0) {
+  if (_mod16154(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp4 = new TypeError(_mod16160(arg0) + " is not a function");
+    throw tmp4;
+  }
 };
-!getOwnPropertyDescriptor && !_mod16128(f67436);
-
-export default !getOwnPropertyDescriptor && !_mod16128(f67436);

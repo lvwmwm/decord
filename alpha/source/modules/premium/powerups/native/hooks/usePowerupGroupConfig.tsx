@@ -1,16 +1,16 @@
-// Module ID: 14108
-// Function ID: 14109
+// Module ID: 14123
+// Function ID: 14124
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 4885, 504, 8736, 1113, 2570, 14109, 14110, 1379, 2]
+// Dependencies: [19, 4885, 504, 8736, 1113, 2570, 14124, 14125, 1379, 2]
 // Exports: default
 
-// Module 14108 (usePowerupGroupConfig)
+// Module 14123 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import _modDef2570 from "module_2570" /* 2570 */;
 import GuildTagUtils from "GuildTagUtils" /* 8736 */;
-import _modDef14109 from "module_14109" /* 14109 */;
-import _modDef14110 from "module_14110" /* 14110 */;
+import _modDef14124 from "module_14124" /* 14124 */;
+import _modDef14125 from "module_14125" /* 14125 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ export default function usePowerupGroupConfig(arg0, arg1) {
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef14109, animatedUrl: _modDef14110 };
+      obj3 = { staticUrl: _modDef14124, animatedUrl: _modDef14125 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;

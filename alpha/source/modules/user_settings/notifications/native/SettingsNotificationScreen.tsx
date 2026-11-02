@@ -1,21 +1,21 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 17475
+// Function ID: 17476
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 17463, 8432, 21, 5014, 575, 7149, 13960, 17464, 17465, 5624, 1113, 6977, 7086, 11539, 17466, 17467, 16575, 2]
+// Dependencies: [19, 17, 17476, 8432, 21, 5014, 575, 7149, 13975, 17477, 17478, 5624, 1113, 6977, 7086, 11540, 17479, 17480, 16588, 2]
 
-// Module 17462 (SettingsNotificationScreen)
+// Module 17475 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11539 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13960 */;
-import SettingLayoutDefault from "SettingLayout" /* 16575 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17463 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17464 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17465 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17466 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13975 */;
+import SettingLayoutDefault from "SettingLayout" /* 16588 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17476 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17477 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17478 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;

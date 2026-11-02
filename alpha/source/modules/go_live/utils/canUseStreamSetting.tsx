@@ -1,10 +1,10 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11925
+// Function ID: 11926
 // Name: canUseStreamSetting
 // Dependencies: [1385, 2047, 8463, 2]
 // Exports: default
 
-// Module 11924 (canUseStreamSetting)
+// Module 11925 (canUseStreamSetting)
 import PremiumConstants from "PremiumConstants" /* 1385 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8463 */;

@@ -1,9 +1,9 @@
-// Module ID: 20033
-// Function ID: 20034
+// Module ID: 20040
+// Function ID: 20041
 // Name: UserSettingsNativeBridgeManager
 // Dependencies: [17, 1231, 7287, 1375, 2]
 
-// Module 20033 (UserSettingsNativeBridgeManager)
+// Module 20040 (UserSettingsNativeBridgeManager)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;

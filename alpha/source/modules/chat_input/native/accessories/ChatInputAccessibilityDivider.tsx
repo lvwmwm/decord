@@ -1,9 +1,9 @@
-// Module ID: 13805
-// Function ID: 13806
+// Module ID: 13820
+// Function ID: 13821
 // Name: ChatInputAccessibilityDivider
 // Dependencies: [19, 17, 21, 5274, 1375, 1113, 2]
 
-// Module 13805 (ChatInputAccessibilityDivider)
+// Module 13820 (ChatInputAccessibilityDivider)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;

@@ -1,10 +1,10 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13928
+// Function ID: 13929
 // Name: SearchButton
 // Dependencies: [19, 17, 21, 5014, 575, 7219, 5624, 1113, 2]
 // Exports: SearchButtonContent
 
-// Module 13913 (SearchButton)
+// Module 13928 (SearchButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

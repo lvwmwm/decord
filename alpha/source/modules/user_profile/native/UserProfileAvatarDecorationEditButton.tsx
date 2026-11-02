@@ -1,10 +1,10 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 16499
+// Function ID: 16500
 // Name: UserProfileAvatarDecorationEditButton
-// Dependencies: [19, 17, 4926, 7377, 1083, 21, 5014, 575, 504, 8830, 8737, 11385, 8728, 1113, 16467, 9508, 1187, 15072, 2]
+// Dependencies: [19, 17, 4926, 7377, 1083, 21, 5014, 575, 504, 8830, 8737, 11386, 8728, 1113, 16480, 9508, 1187, 15076, 2]
 // Exports: default
 
-// Module 16486 (UserProfileAvatarDecorationEditButton)
+// Module 16499 (UserProfileAvatarDecorationEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;

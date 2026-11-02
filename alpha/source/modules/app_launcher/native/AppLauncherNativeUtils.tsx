@@ -1,10 +1,10 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12379
+// Function ID: 12380
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 4863, 1383, 1496, 1072, 6035, 5760, 5683, 12240, 7700, 1992, 8344, 1982, 9761, 1409, 11500, 10049, 12245, 7330, 5260, 2]
+// Dependencies: [19, 4863, 1383, 1496, 1072, 6035, 5760, 5683, 12380, 7700, 1992, 8344, 1982, 9761, 1409, 11501, 10049, 12385, 7330, 5260, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 12239 (AppLauncherNativeUtils)
+// Module 12379 (AppLauncherNativeUtils)
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
 import AssetRegistryDefault from "AssetRegistry" /* 1982 */;
@@ -15,7 +15,7 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
 import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8344 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
-import FrecencySection from "FrecencySection" /* 12240 */;
+import FrecencySection from "FrecencySection" /* 12380 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import UserStore from "UserStore" /* 1383 */;

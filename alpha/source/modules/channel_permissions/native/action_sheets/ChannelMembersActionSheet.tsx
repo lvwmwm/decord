@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11645
+// Function ID: 11646
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 4863, 4926, 4920, 4885, 4946, 1072, 21, 5014, 575, 1625, 504, 1497, 5652, 11645, 9031, 1113, 5272, 7321, 6980, 5258, 8199, 11646, 7561, 8179, 11643, 10977, 8025, 5275, 9058, 5624, 2]
+// Dependencies: [19, 17, 4863, 4926, 4920, 4885, 4946, 1072, 21, 5014, 575, 1625, 504, 1497, 5652, 11646, 9031, 1113, 5272, 7321, 6980, 5258, 8199, 11647, 7561, 8179, 11644, 10977, 8025, 5275, 9058, 5624, 2]
 // Exports: default
 
-// Module 11644 (ChannelMembersActionSheet)
+// Module 11645 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,9 +19,9 @@ import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators"
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9031 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9058 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10977 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11643 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11645 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11646 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11644 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11646 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11647 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildMemberStore from "GuildMemberStore" /* 4926 */;

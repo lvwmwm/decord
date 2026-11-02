@@ -1,10 +1,10 @@
-// Module ID: 18979
-// Function ID: 18980
+// Module ID: 18986
+// Function ID: 18987
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4956, 1072, 11287, 21, 5014, 575, 14151, 504, 7488, 10740, 14180, 5068, 5258, 11288, 1994, 8352, 7485, 5634, 1113, 5624, 2]
+// Dependencies: [19, 17, 4956, 1072, 11287, 21, 5014, 575, 14166, 504, 7488, 10740, 14195, 5068, 5258, 11288, 1994, 8352, 7485, 5634, 1113, 5624, 2]
 // Exports: default
 
-// Module 18979 (RestrictedMessagePreviewActions)
+// Module 18986 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -14,7 +14,7 @@ import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 74
 import ReportModals from "ReportModals" /* 8352 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10740 */;
 import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11287 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14180 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
 import Constants from "Constants" /* 1072 */;

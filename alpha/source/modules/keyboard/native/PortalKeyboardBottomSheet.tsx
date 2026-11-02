@@ -1,10 +1,10 @@
-// Module ID: 12266
-// Function ID: 12267
+// Module ID: 12406
+// Function ID: 12407
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 10204, 21, 1375, 5014, 575, 8992, 5274, 5095, 12267, 5080, 5592, 12268, 504, 5275, 5260, 6873, 1888, 5593, 5596, 1625, 1491, 5214, 5194, 6018, 9966, 5606, 2]
+// Dependencies: [32, 19, 17, 10204, 21, 1375, 5014, 575, 8992, 5274, 5095, 12407, 5080, 5592, 12408, 504, 5275, 5260, 6873, 1888, 5593, 5596, 1625, 1491, 5214, 5194, 6018, 9966, 5606, 2]
 // Exports: default
 
-// Module 12266 (PortalKeyboardBottomSheet)
+// Module 12406 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;

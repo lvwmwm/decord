@@ -1,16 +1,16 @@
-// Module ID: 13650
-// Function ID: 13651
+// Module ID: 13665
+// Function ID: 13666
 // Name: EmojiCube
-// Dependencies: [17, 5015, 6066, 21, 13651, 5014, 1376, 575, 504, 1409, 1491, 7300, 2]
+// Dependencies: [17, 5015, 6066, 21, 13666, 5014, 1376, 575, 504, 1409, 1491, 7300, 2]
 // Exports: default
 
-// Module 13650 (EmojiCube)
+// Module 13665 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointConstants from "CheckpointConstants" /* 6066 */;
 import EmojiDefault from "Emoji" /* 7300 */;
-import glMatrix from "glMatrix" /* 13651 */;
+import glMatrix from "glMatrix" /* 13666 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1376 */;

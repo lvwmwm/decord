@@ -1,7 +1,7 @@
 // Module ID: 6061
 // Function ID: 6062
 // Name: MessageStore
-// Dependencies: [32, 5, 4919, 6062, 2062, 502, 4863, 6562, 4944, 4926, 4885, 4946, 4956, 4917, 5045, 1383, 1072, 3, 11, 6563, 6568, 4892, 6566, 6063, 1396, 12, 7771, 6438, 4958, 8384, 15651, 504, 11671, 6070, 1992, 572, 2]
+// Dependencies: [32, 5, 4919, 6062, 2062, 502, 4863, 6562, 4944, 4926, 4885, 4946, 4956, 4917, 5045, 1383, 1072, 3, 11, 6563, 6568, 4892, 6566, 6063, 1396, 12, 7771, 6438, 4958, 8384, 15655, 504, 11672, 6070, 1992, 572, 2]
 
 // Module 6061 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -18,8 +18,8 @@ import ChannelMessagesDefault from "ChannelMessages" /* 6563 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7771 */;
 import MessageQueue from "MessageQueue" /* 8384 */;
-import canEditMessageDefault from "canEditMessage" /* 11671 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 15651 */;
+import canEditMessageDefault from "canEditMessage" /* 11672 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 15655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 4919 */;
@@ -1126,9 +1126,9 @@ obj = {
       if (orCreate === removeManyResult) {
         return false;
       } else {
-        let tmp3 = removeManyResult;
+        let tmp5 = removeManyResult;
         if (null != removeManyResult.revealedMessageId) {
-          tmp3 = removeManyResult;
+          tmp5 = removeManyResult;
           const tmpResult = mutation(12);
           if (tmpResult.some(ids, (arg0) => mutation.revealedMessageId === arg0)) {
             const after = removeManyResult.getAfter(removeManyResult.revealedMessageId);
@@ -1137,13 +1137,13 @@ obj = {
                 const obj2 = { revealedMessageId: after.id };
                 mutation = removeManyResult.mutate(obj2);
               }
-              tmp3 = mutation;
+              tmp5 = mutation;
             }
             mutation = removeManyResult.mutate({ revealedMessageId: null });
           }
         }
         const tmpResult2 = mutation(6563);
-        tmpResult2.commit(tmp3);
+        tmpResult2.commit(tmp5);
         const item1 = ids.forEach((item) => {
           set.delete(item);
         });

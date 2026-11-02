@@ -1,8 +1,8 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14003
+// Function ID: 14004
 // Dependencies: [2]
 
-// Module 13988
+// Module 14003
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ScheduleMessageSpotIllustration-1x.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 17162
-// Function ID: 17163
+// Module ID: 17175
+// Function ID: 17176
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 17059, 17060, 5095, 5637, 8841, 2]
+// Dependencies: [19, 17072, 17073, 5095, 5637, 8841, 2]
 // Exports: default
 
-// Module 17162 (useIsQuestDockModeActiveOrExiting)
+// Module 17175 (useIsQuestDockModeActiveOrExiting)
 import spring from "spring" /* 5637 */;
-import QuestDockConstants from "QuestDockConstants" /* 17059 */;
+import QuestDockConstants from "QuestDockConstants" /* 17072 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

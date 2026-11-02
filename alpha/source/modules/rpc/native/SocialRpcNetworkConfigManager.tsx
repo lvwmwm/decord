@@ -1,9 +1,9 @@
-// Module ID: 20031
-// Function ID: 20032
+// Module ID: 20038
+// Function ID: 20039
 // Name: SocialRpcNetworkConfigManager
 // Dependencies: [17, 2062, 502, 1252, 1282, 7287, 1375, 2]
 
-// Module 20031 (SocialRpcNetworkConfigManager)
+// Module 20038 (SocialRpcNetworkConfigManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

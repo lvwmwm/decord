@@ -15,7 +15,7 @@ function cloneNode(type, arg1) {
   let length2;
   let length3;
   let tmp14;
-  const f94667 = (item) => cloneNode(item, true);
+  const f94704 = (item) => cloneNode(item, true);
   let flag = arg1;
   if (undefined === arg1) {
     flag = false;
@@ -30,7 +30,7 @@ function cloneNode(type, arg1) {
     let items;
     if (flag) {
       const children = type.children;
-      const mapped = children.map(f94667);
+      const mapped = children.map(f94704);
       let num6 = 1;
       items = mapped;
       if (1 < mapped.length) {
@@ -68,7 +68,7 @@ function cloneNode(type, arg1) {
     let items1;
     if (flag) {
       const children1 = type.children;
-      const mapped1 = children1.map(f94667);
+      const mapped1 = children1.map(f94704);
       let num4 = 1;
       items1 = mapped1;
       if (1 < mapped1.length) {
@@ -96,7 +96,7 @@ function cloneNode(type, arg1) {
     let items2;
     if (flag) {
       const children2 = type.children;
-      const mapped2 = children2.map(f94667);
+      const mapped2 = children2.map(f94704);
       let num2 = 1;
       items2 = mapped2;
       if (1 < mapped2.length) {
@@ -155,14 +155,14 @@ function cloneNode(type, arg1) {
 let fn = this && self.__extends;
 if (!fn) {
   fn = function t(arg0, arg1) {
-    const f94668 = (arg0, arg1) => {
+    const f94705 = (arg0, arg1) => {
       arg0.__proto__ = arg1;
     };
     fn = Object.setPrototypeOf;
     if (!fn) {
       const _Array = Array;
-      fn = Object.create([]) instanceof Array && f94668;
-      const fn2 = Object.create([]) instanceof Array && f94668;
+      fn = Object.create([]) instanceof Array && f94705;
+      const fn2 = Object.create([]) instanceof Array && f94705;
     }
     if (!fn) {
       fn = (arg0, obj) => {

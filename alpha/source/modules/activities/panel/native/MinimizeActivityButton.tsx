@@ -1,13 +1,13 @@
-// Module ID: 19138
-// Function ID: 19139
+// Module ID: 19145
+// Function ID: 19146
 // Name: MinimizeActivityButton
-// Dependencies: [19, 17, 5657, 21, 5014, 5634, 11414, 1113, 8028, 2]
+// Dependencies: [19, 17, 5657, 21, 5014, 5634, 11415, 1113, 8028, 2]
 
-// Module 19138 (MinimizeActivityButton)
+// Module 19145 (MinimizeActivityButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11414 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11415 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

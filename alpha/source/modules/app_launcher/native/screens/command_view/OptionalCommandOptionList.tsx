@@ -1,10 +1,10 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12527
+// Function ID: 12528
 // Name: OptionalCommandOptionList
 // Dependencies: [19, 17, 21, 7060, 6975, 5634, 1113, 2]
 // Exports: default
 
-// Module 12387 (OptionalCommandOptionList)
+// Module 12527 (OptionalCommandOptionList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;

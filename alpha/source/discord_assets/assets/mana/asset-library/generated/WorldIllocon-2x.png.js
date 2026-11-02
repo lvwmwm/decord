@@ -1,8 +1,8 @@
-// Module ID: 14303
-// Function ID: 14304
+// Module ID: 14318
+// Function ID: 14319
 // Dependencies: [2]
 
-// Module 14303
+// Module 14318
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WorldIllocon-2x.png.js");

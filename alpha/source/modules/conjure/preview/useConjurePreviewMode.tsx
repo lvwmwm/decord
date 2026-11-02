@@ -1,10 +1,10 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12080
+// Function ID: 12081
 // Name: useConjurePreviewMode
-// Dependencies: [32, 19, 502, 6847, 504, 12080, 12082, 12084, 6881, 11726, 10884, 10883, 10927, 5675, 2]
+// Dependencies: [32, 19, 502, 6847, 504, 12081, 12083, 12085, 6881, 11727, 10884, 10883, 10938, 5675, 2]
 // Exports: resolvePreviewAppChannel, useConjurePreviewMode
 
-// Module 12079 (useConjurePreviewMode)
+// Module 12080 (useConjurePreviewMode)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
 import FramesConstants from "FramesConstants" /* 6847 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 10883 */;
@@ -228,7 +228,7 @@ export function useConjurePreviewMode(applicationId) {
           tmp13 = tmp14 !== first2;
         }
         if (tmp13) {
-          let tmp5Result = tmp5(10927);
+          let tmp5Result = tmp5(10938);
           let leaveFrameResult = tmp5Result.leaveFrame(tmp3.id);
         }
         continue;

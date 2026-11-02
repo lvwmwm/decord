@@ -1,10 +1,10 @@
-// Module ID: 18429
-// Function ID: 18430
+// Module ID: 18442
+// Function ID: 18443
 // Name: useYouBarAccessibilityLabel
 // Dependencies: [6714, 4863, 4946, 5761, 4956, 6570, 5679, 1072, 5068, 4839, 10749, 8736, 504, 10747, 10748, 10755, 1113, 5762, 10759, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 18429 (useYouBarAccessibilityLabel)
+// Module 18442 (useYouBarAccessibilityLabel)
 import Constants from "Constants" /* 1072 */;
 import UserUtils from "UserUtils" /* 5068 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10747 */;

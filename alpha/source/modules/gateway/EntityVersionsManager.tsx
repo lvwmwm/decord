@@ -1,9 +1,9 @@
-// Module ID: 19442
-// Function ID: 19443
+// Module ID: 19449
+// Function ID: 19450
 // Name: EntityVersionsManager
 // Dependencies: [6796, 6837, 4863, 4920, 4885, 6568, 3, 7287, 572, 504, 7793, 1251, 11, 2]
 
-// Module 19442 (EntityVersionsManager)
+// Module 19449 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;

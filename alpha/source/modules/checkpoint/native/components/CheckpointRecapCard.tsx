@@ -1,18 +1,18 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13687
+// Function ID: 13688
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 13627, 5014, 13614, 6091, 6433, 13424, 2]
+// Dependencies: [19, 17, 21, 575, 13642, 5014, 13629, 6091, 6433, 13439, 2]
 // Exports: default
 
-// Module 13672 (CheckpointRecapCard)
+// Module 13687 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6433 */;
-import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13424 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 13614 */;
+import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13439 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 13629 */;
 import react from "react" /* 19 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 13627 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 13642 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 

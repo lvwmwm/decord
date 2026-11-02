@@ -1,10 +1,10 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12117
+// Function ID: 12118
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 5014, 8212, 8221, 12459, 1113, 3868, 1488, 12455, 6977, 12460, 5717, 12462, 6027, 7082, 6845, 5624, 7253, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 5014, 8212, 8221, 12118, 1113, 3868, 1488, 12114, 6977, 12119, 5717, 12121, 6027, 7082, 6845, 5624, 7253, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 12458 (ConjureAppIdentity)
+// Module 12117 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3868 from "module_3868" /* 3868 */;
@@ -276,7 +276,7 @@ class ConjureAppIconTile {
     t = tmp7(1113).t;
     if (null == iconURL) {
       let obj3 = { size: "md", color: onError(575).colors.ICON_MUTED };
-      const ImagePlusIcon = tmp7(12460).ImagePlusIcon;
+      const ImagePlusIcon = tmp7(12119).ImagePlusIcon;
       tmp6Result = tmp6(ImagePlusIcon, obj3);
       tmp9 = onError;
     } else {
@@ -291,7 +291,7 @@ class ConjureAppIconTile {
       tmp6Result2 = null;
       if (!disabled) {
         const obj6 = { style: tmp.editIcon };
-        tmp6Result2 = tmp6(tmp9(12462), obj6);
+        tmp6Result2 = tmp6(tmp9(12121), obj6);
       }
     }
     items2[1] = tmp6Result2;

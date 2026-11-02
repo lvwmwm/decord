@@ -1,10 +1,10 @@
-// Module ID: 18399
-// Function ID: 18400
+// Module ID: 18412
+// Function ID: 18413
 // Name: moveGuildNode
 // Dependencies: [6772, 5932, 6902, 2]
 // Exports: default, persistGuildsBarOrder
 
-// Module 18399 (moveGuildNode)
+// Module 18412 (moveGuildNode)
 import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5932 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
 import SortedGuildStore from "SortedGuildStore" /* 6772 */;

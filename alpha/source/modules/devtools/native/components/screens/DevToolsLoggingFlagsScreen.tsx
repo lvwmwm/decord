@@ -1,10 +1,10 @@
-// Module ID: 17573
-// Function ID: 17574
+// Module ID: 17586
+// Function ID: 17587
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: [17, 1357, 21, 5014, 575, 504, 7060, 7369, 1358, 2]
 // Exports: default
 
-// Module 17573 (DevToolsLoggingFlagsScreen)
+// Module 17586 (DevToolsLoggingFlagsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

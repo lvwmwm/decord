@@ -1,10 +1,10 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13397
+// Function ID: 13398
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 6780, 13383, 4867, 4863, 2036, 4917, 5045, 9134, 1072, 4870, 1074, 9135, 1252, 7494, 13385, 572, 7522, 5756, 5759, 6706, 7485, 11553, 9320, 9340, 7421, 13386, 7719, 7351, 8946, 2]
+// Dependencies: [5, 32, 6780, 13398, 4867, 4863, 2036, 4917, 5045, 9134, 1072, 4870, 1074, 9135, 1252, 7494, 13400, 572, 7522, 5756, 5759, 6706, 7485, 11554, 9320, 9340, 7421, 13401, 7719, 7351, 8946, 2]
 // Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
-// Module 13382 (QuickSwitcherActionCreators)
+// Module 13397 (QuickSwitcherActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -24,12 +24,12 @@ import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 
 import _mod9135 from "module_9135" /* 9135 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9320 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11553 */;
-import ChannelTabsActionCreators from "ChannelTabsActionCreators" /* 13385 */;
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 13386 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11554 */;
+import ChannelTabsActionCreators from "ChannelTabsActionCreators" /* 13400 */;
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 13401 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 13383 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 13398 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2036 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
@@ -592,7 +592,7 @@ export function switchToResultInNewTab(type) {
     let obj6 = DispatcherDefault;
     let obj4 = { type: "QUICKSWITCHER_SWITCH_TO", result: type };
     obj6.dispatch(obj4);
-    const tmpResult = tmp(13385);
+    const tmpResult = tmp(13400);
     tmpResult.openChannelTabActive(id, guildId);
   }
 }

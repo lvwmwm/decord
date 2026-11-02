@@ -1,18 +1,18 @@
-// Module ID: 18727
-// Function ID: 18728
+// Module ID: 18734
+// Function ID: 18735
 // Name: SearchMediaImage
-// Dependencies: [32, 19, 17, 4863, 6863, 1072, 21, 5014, 5253, 5021, 7468, 14511, 8653, 5600, 504, 8845, 1490, 13760, 1375, 5717, 1113, 9450, 11081, 1396, 6753, 8839, 9382, 11111, 2]
+// Dependencies: [32, 19, 17, 4863, 6863, 1072, 21, 5014, 5253, 5021, 7468, 14525, 8653, 5600, 504, 8845, 1490, 13775, 1375, 5717, 1113, 9450, 11081, 1396, 6753, 8839, 9382, 11111, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 18727 (SearchMediaImage)
+// Module 18734 (SearchMediaImage)
 import Constants from "Constants" /* 1072 */;
 import ObscureMediaModels from "ObscureMediaModels" /* 7468 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8653 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8839 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 9382 */;
 import AttachmentPreview from "AttachmentPreview" /* 11111 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13760 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 14511 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13775 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 14525 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -249,8 +249,8 @@ export function SearchEmbedMediaImage(embed) {
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(13760).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(13760);
+      const getObscureReasonForEmbed = tmp2(13775).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(13775);
       if (!flag2) {
         flag2 = closure_4;
       }

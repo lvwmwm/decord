@@ -1,10 +1,10 @@
-// Module ID: 17164
-// Function ID: 17165
+// Module ID: 17177
+// Function ID: 17178
 // Name: BountiesAndroidQuestBarSmokeAnimationExperiment
 // Dependencies: [1447, 2]
 // Exports: useIsBountiesAndroidQuestBarSmokeAnimationEnabled
 
-// Module 17164 (BountiesAndroidQuestBarSmokeAnimationExperiment)
+// Module 17177 (BountiesAndroidQuestBarSmokeAnimationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 

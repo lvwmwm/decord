@@ -1,14 +1,18 @@
 // Module ID: 16179
 // Function ID: 16180
-// Dependencies: [16127, 16128]
+// Dependencies: [16177]
 
 // Module 16179
-import _mod16127 from "module_16127" /* 16127 */;
-import _mod16128 from "module_16128" /* 16128 */;
+import _mod16177 from "module_16177" /* 16177 */;
 
-const f67454 = () => 42 !== Object.defineProperty(() => {
 
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod16127 && _mod16128(f67454);
-
-export default _mod16127 && _mod16128(f67454);
+export default (arg0, arg1) => {
+  let tmp3;
+  const tmp = _mod16177(arg0);
+  if (tmp < 0) {
+    tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
+};

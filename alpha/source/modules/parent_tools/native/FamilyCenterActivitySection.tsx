@@ -1,15 +1,15 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16803
+// Function ID: 16804
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7716, 21, 5014, 575, 8370, 8372, 16785, 5624, 13344, 1113, 2538, 16791, 6980, 2]
+// Dependencies: [32, 19, 17, 7716, 21, 5014, 575, 8370, 8372, 16798, 5624, 13359, 1113, 2538, 16804, 6980, 2]
 // Exports: default
 
-// Module 16790 (FamilyCenterActivitySection)
+// Module 16803 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8370 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16785 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16798 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -101,11 +101,11 @@ export default function FamilyCenterActivitySection(displayType) {
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(16785);
+  let obj = displayType(16798);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(16785);
+  const obj2 = displayType(16798);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(13344);
+  const obj3 = displayType(13359);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;

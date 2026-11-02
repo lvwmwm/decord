@@ -1,17 +1,17 @@
-// Module ID: 13749
-// Function ID: 13750
+// Module ID: 13764
+// Function ID: 13765
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 7454, 4870, 21, 5014, 13750, 13752, 13762, 13763, 13764, 2]
+// Dependencies: [19, 17, 7454, 4870, 21, 5014, 13765, 13767, 13777, 13778, 13779, 2]
 // Exports: default
 
-// Module 13749 (ForumPostGridHeader)
+// Module 13764 (ForumPostGridHeader)
 import react_native from "react-native" /* 17 */;
 import ChannelConstants from "ChannelConstants" /* 4870 */;
 import ForumConstants from "ForumConstants" /* 7454 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 13750 */;
-import ForumPostUsername from "ForumPostUsername" /* 13752 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 13762 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 13764 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 13765 */;
+import ForumPostUsername from "ForumPostUsername" /* 13767 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 13777 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 13779 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -45,7 +45,7 @@ export default function ForumPostGridHeader(arg0) {
   const obj4 = { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText };
   items[2] = metroRequire(ForumPostTimestampDefault, obj4);
   if (isNew) {
-    isNew = tmp8(tmp10(13763), {});
+    isNew = tmp8(tmp10(13778), {});
   }
   items[3] = isNew;
   items1 = [metroImportDefault(View, obj2), ];

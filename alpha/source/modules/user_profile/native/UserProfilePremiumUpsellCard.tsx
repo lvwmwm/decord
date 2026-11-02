@@ -1,10 +1,10 @@
-// Module ID: 16553
-// Function ID: 16554
+// Module ID: 16566
+// Function ID: 16567
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1072, 21, 7351, 5014, 16480, 5624, 1497, 7161, 1113, 7626, 7326, 9905, 9906, 1625, 2]
+// Dependencies: [19, 1072, 21, 7351, 5014, 16493, 5624, 1497, 7161, 1113, 7626, 7326, 9905, 9906, 1625, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 16553 (UserProfilePremiumUpsellCard)
+// Module 16566 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7161 */;
@@ -12,7 +12,7 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16480 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16493 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import createStyles from "createStyles" /* 5014 */;

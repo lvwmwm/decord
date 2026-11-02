@@ -1,7 +1,7 @@
 // Module ID: 6034
 // Function ID: 6035
 // Name: MarkupRules
-// Dependencies: [32, 717, 4863, 4920, 4885, 1383, 1072, 6035, 6036, 6037, 1113, 6040, 4923, 6041, 5068, 6042, 1943, 6043, 6044, 6055, 4960, 6057, 8600, 15654, 8574, 8575, 6033, 8602, 12, 8571, 2]
+// Dependencies: [32, 717, 4863, 4920, 4885, 1383, 1072, 6035, 6036, 6037, 1113, 6040, 4923, 6041, 5068, 6042, 1943, 6043, 6044, 6055, 4960, 6057, 8600, 15658, 8574, 8575, 6033, 8602, 12, 8571, 2]
 // Exports: hydrateCommandMention
 
 // Module 6034 (MarkupRules)
@@ -22,7 +22,7 @@ import MarkupListRuleDefault from "MarkupListRule" /* 8574 */;
 import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8575 */;
 import TimestampUtils from "TimestampUtils" /* 8600 */;
 import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8602 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 15654 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 15658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
@@ -145,7 +145,7 @@ const parse6 = function parse(arg0, arg1, returnMentionIds) {
     const items = [];
     const arr = _toArray(arg0[1].split(" "));
     HermesBuiltin.arraySpread(items, arr.slice(1), 0);
-    const mapped = items.map(f88700);
+    const mapped = items.map(f88736);
     const _HermesInternal = HermesInternal;
     obj2 = { type: "commandMention", channelId: returnMentionIds.channelId, commandId: arg0[2], commandName: arg0[1], commandKey: "" + arg0[2] + mapped.join(""), content: items1 };
     const _HermesInternal2 = HermesInternal;
@@ -245,7 +245,7 @@ const parse14 = function parse(arg0, arg1, guildId) {
   const tmp = _slicedToArray(arg0, 3);
   return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
 };
-const f88700 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
+const f88736 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
 function parseLink(arg0) {
   let items;
   let obj3;
@@ -764,7 +764,7 @@ export function hydrateCommandMention(name, commandId, channelId) {
   let items1;
   const items = [..._toArray(name.split(" ")).slice(1)];
   _toArray(name.split(" "));
-  const mapped = items.map(f88700);
+  const mapped = items.map(f88736);
   const obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName: name, commandKey: "" + commandId + mapped.join(""), content: items1 };
   items1 = [{ type: "text", content: "" + name }];
   ({ type: "text", content: "" + name });

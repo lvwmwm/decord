@@ -1,17 +1,17 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11560
+// Function ID: 11561
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 2038, 6896, 7879, 8394, 1113, 11560, 7409, 7404, 3738, 5752, 11561, 504, 1379, 7330, 2]
+// Dependencies: [19, 2038, 6896, 7879, 8394, 1113, 11561, 7409, 7404, 3738, 5752, 11562, 504, 1379, 7330, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedApplications
 
-// Module 11559 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11560 (createSocialLayerStorefrontProductDetailsEmbed)
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7404 */;
 import StorefrontUtils from "StorefrontUtils" /* 7409 */;
 import Constants from "Constants" /* 7879 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8394 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11560 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11561 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
 import SKUStore from "SKUStore" /* 6896 */;
@@ -132,11 +132,11 @@ export function useFetchSocialLayerStorefrontProductDetailsEmbedApplications(sta
   const items2 = [memo];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f126541 = (applicationId) => applicationId.applicationId;
+    const f126594 = (applicationId) => applicationId.applicationId;
     const mapped = memo.map((item) => closure_1_5.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f126541))];
-    new Set(found.map(f126541));
+    const items = [...new Set(found.map(f126594))];
+    new Set(found.map(f126594));
     return items;
   }, items2);
   let tmp3 = memo(7330)(stateFromStoresArray);

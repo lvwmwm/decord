@@ -1,10 +1,10 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15265
+// Function ID: 15266
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 21, 8806, 15262, 15263, 15264, 5021, 5717, 2]
+// Dependencies: [19, 21, 8806, 15266, 15267, 15268, 5021, 5717, 2]
 // Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
-// Module 15261 (WhatYouLoseProfileTier1)
+// Module 15265 (WhatYouLoseProfileTier1)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5021 */;
 import FastImageDefault from "FastImage" /* 5717 */;

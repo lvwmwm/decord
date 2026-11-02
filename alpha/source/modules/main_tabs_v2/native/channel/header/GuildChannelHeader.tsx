@@ -1,9 +1,9 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 14581
+// Function ID: 14582
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 14568, 6568, 4867, 7446, 4863, 5242, 4885, 4956, 1383, 1072, 4860, 21, 5596, 575, 504, 11337, 7096, 9972, 1113, 5652, 14563, 11319, 5624, 7569, 4847, 2061, 8603, 9954, 10205, 7420, 7419, 14569, 14558, 2]
+// Dependencies: [32, 19, 17, 14582, 6568, 4867, 7446, 4863, 5242, 4885, 4956, 1383, 1072, 4860, 21, 5596, 575, 504, 11337, 7096, 9972, 1113, 5652, 14577, 11319, 5624, 7569, 4847, 2061, 8603, 9954, 10205, 7420, 7419, 14583, 14572, 2]
 
-// Module 14567 (GuildChannelHeader)
+// Module 14581 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,11 +12,11 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */
 import ChannelRecord from "ChannelRecord" /* 4867 */;
 import useChannelName from "useChannelName" /* 5652 */;
 import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9972 */;
-import ChannelHeader from "ChannelHeader" /* 14558 */;
-import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14569 */;
+import ChannelHeader from "ChannelHeader" /* 14572 */;
+import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14583 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14568 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14582 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7446 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

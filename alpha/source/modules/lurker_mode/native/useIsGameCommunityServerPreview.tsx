@@ -1,10 +1,10 @@
-// Module ID: 18149
-// Function ID: 18150
+// Module ID: 18162
+// Function ID: 18163
 // Name: useIsGameCommunityServerPreview
 // Dependencies: [4947, 1072, 504, 2]
 // Exports: default, isGameCommunityServerPreview
 
-// Module 18149 (useIsGameCommunityServerPreview)
+// Module 18162 (useIsGameCommunityServerPreview)
 import Constants from "Constants" /* 1072 */;
 import LurkingStore from "LurkingStore" /* 4947 */;
 import size from "module_2" /* 2 */;

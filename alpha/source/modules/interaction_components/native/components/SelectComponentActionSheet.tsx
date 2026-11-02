@@ -1,10 +1,10 @@
-// Module ID: 12497
-// Function ID: 12498
+// Module ID: 12156
+// Function ID: 12157
 // Name: SelectComponentActionSheet
 // Dependencies: [19, 17, 4863, 4917, 5273, 21, 5014, 575, 7321, 1113, 5634, 9062, 5082, 6975, 6989, 9203, 5607, 5023, 1625, 1491, 5586, 504, 5258, 5272, 7294, 2]
 // Exports: default
 
-// Module 12497 (SelectComponentActionSheet)
+// Module 12156 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 5082 */;

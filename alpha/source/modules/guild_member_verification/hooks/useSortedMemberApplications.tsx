@@ -1,10 +1,10 @@
-// Module ID: 18652
-// Function ID: 18653
+// Module ID: 18665
+// Function ID: 18666
 // Name: useSortedMemberApplications
 // Dependencies: [19, 6917, 504, 5048, 2]
 // Exports: useSortedMemberApplications
 
-// Module 18652 (useSortedMemberApplications)
+// Module 18665 (useSortedMemberApplications)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
 import react from "react" /* 19 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6917 */;

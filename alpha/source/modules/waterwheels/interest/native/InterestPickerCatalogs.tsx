@@ -1,13 +1,13 @@
-// Module ID: 19563
-// Function ID: 19564
+// Module ID: 19570
+// Function ID: 19571
 // Name: InterestPickerCatalogs
-// Dependencies: [9297, 17609, 1379, 2]
+// Dependencies: [9297, 17622, 1379, 2]
 // Exports: getInterestPickerCatalog
 
-// Module 19563 (InterestPickerCatalogs)
+// Module 19570 (InterestPickerCatalogs)
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import GuildProfileConstants from "GuildProfileConstants" /* 9297 */;
-import GameCommunityConfig from "GameCommunityConfig" /* 17609 */;
+import GameCommunityConfig from "GameCommunityConfig" /* 17622 */;
 import size from "module_2" /* 2 */;
 
 let set;

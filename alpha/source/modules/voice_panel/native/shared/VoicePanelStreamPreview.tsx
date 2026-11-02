@@ -1,10 +1,10 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14894
+// Function ID: 14895
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6714, 502, 21, 5095, 5634, 5014, 575, 12041, 504, 6717, 5254, 7241, 5717, 5624, 1113, 2]
+// Dependencies: [19, 17, 6714, 502, 21, 5095, 5634, 5014, 575, 12042, 504, 6717, 5254, 7241, 5717, 5624, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 14890 (VoicePanelStreamPreview)
+// Module 14894 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
 import timing from "timing" /* 5254 */;
 import components_Button_Button from "components/Button/Button" /* 5634 */;
@@ -65,7 +65,7 @@ export function VoicePanelStreamPreview(mode) {
   const tmp = closure_12();
   let tmp2 = stream;
   let guildId;
-  const tmp4 = stream(12041);
+  const tmp4 = stream(12042);
   if (stream != null) {
     guildId = stream.guildId;
   }

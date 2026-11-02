@@ -1,10 +1,10 @@
-// Module ID: 12364
-// Function ID: 12365
+// Module ID: 12504
+// Function ID: 12505
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1386, 21, 5014, 7097, 11500, 1992, 9945, 12361, 11501, 1187, 12365, 1375, 12366, 1888, 9939, 2]
+// Dependencies: [32, 19, 17, 1386, 21, 5014, 7097, 11501, 1992, 9945, 12501, 11502, 1187, 12505, 1375, 12506, 1888, 9939, 2]
 // Exports: default
 
-// Module 12364 (AppLauncherTextInputOption)
+// Module 12504 (AppLauncherTextInputOption)
 import react_native from "react-native" /* 17 */;
 import EmojiConstants from "EmojiConstants" /* 1386 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1888 */;

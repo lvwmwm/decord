@@ -1,10 +1,10 @@
-// Module ID: 11735
-// Function ID: 11736
+// Module ID: 11736
+// Function ID: 11737
 // Name: getPrimaryAppCommand
 // Dependencies: [5, 19, 4863, 9762, 1992, 9768, 9766, 5651, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 11735 (getPrimaryAppCommand)
+// Module 11736 (getPrimaryAppCommand)
 import Server from "Server" /* 1992 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
 import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9766 */;

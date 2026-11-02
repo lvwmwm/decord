@@ -1,18 +1,18 @@
-// Module ID: 18258
-// Function ID: 18259
+// Module ID: 18271
+// Function ID: 18272
 // Name: HubSidebar
-// Dependencies: [19, 17, 4944, 4917, 1072, 11046, 21, 5014, 575, 13922, 1187, 504, 18259, 18260, 17581, 1113, 5756, 11483, 13841, 5721, 9118, 2]
+// Dependencies: [19, 17, 4944, 4917, 1072, 11046, 21, 5014, 575, 13937, 1187, 504, 18272, 18273, 17594, 1113, 5756, 11484, 13856, 5721, 9118, 2]
 // Exports: default
 
-// Module 18258 (HubSidebar)
+// Module 18271 (HubSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import transitionToChannel from "transitionToChannel" /* 5756 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13841 */;
-import BaseChannelItem from "BaseChannelItem" /* 13922 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13856 */;
+import BaseChannelItem from "BaseChannelItem" /* 13937 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4944 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
@@ -46,7 +46,7 @@ function HubItem(arg0) {
     DEFAULT = ChannelModes.DEFAULT;
     tmp5 = tmp2;
   }
-  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13922).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13922).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
+  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13937).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13937).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
   tmp6Result = null;
   const tmp7 = BaseChannelItemDefault;
   if (null != unreadCount) {
@@ -89,7 +89,7 @@ export default function HubSidebar(guild) {
     const tmp2 = null != stateFromStores && SelectedChannelStore.getChannelId() === tmp.id;
     return tmp2;
   });
-  guild(18259);
+  guild(18272);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -100,10 +100,10 @@ export default function HubSidebar(guild) {
     }
     const obj4 = { style: row, children: items4 };
     const obj5 = { guild };
-    items4 = [closure_7(stateFromStores(18260), obj5), , , ];
+    items4 = [closure_7(stateFromStores(18273), obj5), , , ];
     const obj6 = {
       active: stateFromStores1,
-      IconComponent: tmp(17581).CompassIcon,
+      IconComponent: tmp(17594).CompassIcon,
       label: intl.string(tmp(1113).t.K50GHd),
       handleItemClick() {
           const obj = transitionToChannel;
@@ -114,7 +114,7 @@ export default function HubSidebar(guild) {
     intl = tmp(1113).intl;
     items4[1] = closure_7(HubItem, obj6);
     const obj7 = {
-      IconComponent: tmp(11483).PlusMediumIcon,
+      IconComponent: tmp(11484).PlusMediumIcon,
       label: intl2.string(tmp(1113).t.emRpdS),
       handleItemClick() {
           const obj = GuildDirectoryAddModalActionCreatorsDefault;

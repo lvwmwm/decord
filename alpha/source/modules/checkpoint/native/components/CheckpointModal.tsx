@@ -1,18 +1,18 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13435
+// Function ID: 13436
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 4957, 13421, 6066, 1083, 21, 575, 5258, 13422, 1994, 5014, 1625, 13435, 13437, 504, 6435, 6091, 11949, 8673, 13440, 13441, 13442, 6434, 13444, 6744, 1992, 6073, 6087, 13364, 5711, 1113, 6111, 5080, 13445, 13618, 13620, 13629, 6096, 6097, 13673, 7054, 13674, 13677, 13686, 13614, 13688, 2]
+// Dependencies: [5, 32, 19, 17, 4957, 13436, 6066, 1083, 21, 575, 5258, 13437, 1994, 5014, 1625, 13450, 13452, 504, 6435, 6091, 11950, 8673, 13455, 13456, 13457, 6434, 13459, 6744, 1992, 6073, 6087, 13379, 5711, 1113, 6111, 5080, 13460, 13633, 13635, 13644, 6096, 6097, 13688, 7054, 13689, 13692, 13701, 13629, 13703, 2]
 // Exports: default
 
-// Module 13420 (CheckpointModal)
+// Module 13435 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import CheckpointStore2 from "CheckpointStore" /* 13421 */;
-import CheckpointFlows from "CheckpointFlows" /* 13437 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13688 */;
+import CheckpointStore2 from "CheckpointStore" /* 13436 */;
+import CheckpointFlows from "CheckpointFlows" /* 13452 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13703 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -564,7 +564,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     onShare: function handleShare() {
       obj = { character: stateFromStores, stats, onForward: handleForward };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13422, dependencyMap.paths), "CheckpointShare", obj);
+      obj2.openLazy(asyncRequire(13437, dependencyMap.paths), "CheckpointShare", obj);
     },
     color: tmp20,
     shadowColor,

@@ -1,10 +1,10 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13420
+// Function ID: 13421
 // Name: ModalActionButton
 // Dependencies: [19, 17, 21, 5014, 5634, 2]
 // Exports: ModalActionButton
 
-// Module 13405 (ModalActionButton)
+// Module 13420 (ModalActionButton)
 import react_native from "react-native" /* 17 */;
 import components_Button_Button from "components/Button/Button" /* 5634 */;
 import react from "react" /* 19 */;

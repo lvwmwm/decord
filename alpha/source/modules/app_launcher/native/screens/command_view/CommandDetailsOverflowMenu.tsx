@@ -1,10 +1,10 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12486
+// Function ID: 12487
 // Name: CommandDetailsOverflowMenu
 // Dependencies: [19, 21, 4839, 1113, 7358, 5711, 10524, 9874, 8028, 9207, 2]
 // Exports: default
 
-// Module 12346 (CommandDetailsOverflowMenu)
+// Module 12486 (CommandDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5711 */;
 import ClipboardUtils from "ClipboardUtils" /* 7358 */;

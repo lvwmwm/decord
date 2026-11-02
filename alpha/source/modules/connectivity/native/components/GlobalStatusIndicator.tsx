@@ -1,10 +1,10 @@
-// Module ID: 11862
-// Function ID: 11863
+// Module ID: 11863
+// Function ID: 11864
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 5259, 6843, 10204, 4863, 5764, 21, 11859, 504, 11006, 7939, 1113, 11863, 5095, 11857, 2]
+// Dependencies: [19, 17, 5259, 6843, 10204, 4863, 5764, 21, 11860, 504, 11006, 7939, 1113, 11864, 5095, 11858, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 11862 (GlobalStatusIndicator)
+// Module 11863 (GlobalStatusIndicator)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7939 */;
 import react from "react" /* 19 */;

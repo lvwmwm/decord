@@ -1,16 +1,16 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14374
+// Function ID: 14375
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 14360, 4863, 4946, 6842, 6861, 8203, 4948, 1083, 8347, 504, 12, 1379, 11, 8202, 9840, 2]
+// Dependencies: [32, 19, 14375, 4863, 4946, 6842, 6861, 8203, 4948, 1083, 8347, 504, 12, 1379, 11, 8202, 9840, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 14359 (ThreadBrowserHooks)
+// Module 14374 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1083 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8202 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 9840 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 14360 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 14375 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

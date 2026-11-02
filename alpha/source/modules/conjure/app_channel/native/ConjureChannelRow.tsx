@@ -1,60 +1,67 @@
-// Module ID: 18263
-// Function ID: 18264
+// Module ID: 18276
+// Function ID: 18277
 // Name: ConjureChannelRow
-// Dependencies: [19, 11046, 21, 5014, 575, 18264, 13922, 14707, 1113, 3868, 12464, 18265, 2]
+// Dependencies: [19, 1072, 4870, 11046, 21, 5014, 575, 1099, 18277, 13937, 1113, 3868, 12123, 18278, 2]
 // Exports: default
 
-// Module 18263 (ConjureChannelRow)
+// Module 18276 (ConjureChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1099 */;
 import _modDef3868 from "module_3868" /* 3868 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
-import BaseChannelItem from "BaseChannelItem" /* 13922 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14707 */;
-import useConjureGuildUnreadSummaryDefault from "useConjureGuildUnreadSummary" /* 18264 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 13937 */;
+import useConjureGuildUnreadSummaryDefault from "useConjureGuildUnreadSummary" /* 18277 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-const BaseChannelItemDefault = BaseChannelItem;
-
 let obj2;
+const Routes = Constants.Routes;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
 const jsx = Fragment.jsx;
-const obj = { container: obj2 };
+let obj = { container: obj2 };
 obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md };
-let closure_4 = createStyles.createStyles(obj);
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/conjure/app_channel/native/ConjureChannelRow.tsx");
 
 export default function ConjureChannelRow(selected) {
   let DEFAULT;
   let intl2;
-  let tmp6;
+  let tmp7;
   selected = selected.selected;
-  const guild = selected.guild;
-  const tmp = closure_4();
-  const tmp4 = useConjureGuildUnreadSummaryDefault(guild.id);
-  const hasUnread = tmp4.hasUnread;
-  const badgeCount = tmp4.badgeCount;
+  const id = selected.guild.id;
+  const items = [id];
+  const tmp = closure_7();
+  const callback = react.useCallback(() => {
+    const obj = router_utils;
+    obj.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.CONJURE));
+  }, items);
+  const tmp5 = useConjureGuildUnreadSummaryDefault(id);
+  const hasUnread = tmp5.hasUnread;
+  const badgeCount = tmp5.badgeCount;
   if (true === selected) {
-    DEFAULT = BaseChannelItem.ChannelModes.SELECTED;
-    tmp6 = require;
+    DEFAULT = id(13937).ChannelModes.SELECTED;
+    tmp7 = id;
   } else {
-    const ChannelModes = BaseChannelItem.ChannelModes;
+    const ChannelModes = id(13937).ChannelModes;
     if (hasUnread) {
       DEFAULT = ChannelModes.UNREAD_IMPORTANT;
-      tmp6 = tmp5;
+      tmp7 = tmp6;
     } else {
       DEFAULT = ChannelModes.DEFAULT;
-      tmp6 = tmp5;
+      tmp7 = tmp6;
     }
   }
   BaseChannelItemDefault;
-  const intl = tmp6(1113).intl;
+  const intl = tmp7(1113).intl;
   ({ name: intl2.string(_modDef3868.uk6jhJ), mode: DEFAULT });
-  const BaseChannelName = tmp6(13922).BaseChannelName;
-  intl2 = tmp6(1113).intl;
-  ({ mode: DEFAULT, IconComponent: tmp6(12464).MagicWandIcon });
-  const BaseChannelIcon = tmp6(13922).BaseChannelIcon;
-  return <tmp2Result onPress={openConjureProjectsSheetDefault} style={tmp.container} accessible accessibilityLabel={intl.string(_modDef3868.uk6jhJ)} accessibilityState={{ selected }} mode={DEFAULT} unread={hasUnread} name={null} icon={null} channelInfo={null} />;
+  const BaseChannelName = tmp7(13937).BaseChannelName;
+  intl2 = tmp7(1113).intl;
+  ({ mode: DEFAULT, IconComponent: tmp7(12123).MagicWandIcon });
+  const BaseChannelIcon = tmp7(13937).BaseChannelIcon;
+  return <tmp3Result onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(_modDef3868.uk6jhJ)} accessibilityState={{ selected }} mode={DEFAULT} unread={hasUnread} name={null} icon={null} channelInfo={null} />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 18501
-// Function ID: 18502
+// Module ID: 18514
+// Function ID: 18515
 // Name: ActionStatusSubLabel
 // Dependencies: [19, 21, 5014, 5023, 5095, 5624, 5642, 5254, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 18501 (ActionStatusSubLabel)
+// Module 18514 (ActionStatusSubLabel)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;

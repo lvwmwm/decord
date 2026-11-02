@@ -1,10 +1,10 @@
-// Module ID: 16797
-// Function ID: 16798
+// Module ID: 16810
+// Function ID: 16811
 // Name: FamilyCenterSettingsControls
-// Dependencies: [19, 17, 7716, 1072, 21, 5014, 575, 5624, 1113, 2538, 6744, 16798, 1994, 16800, 6975, 8369, 16784, 1497, 16801, 6027, 7060, 5634, 10570, 7760, 5711, 16709, 7717, 16802, 2]
+// Dependencies: [19, 17, 7716, 1072, 21, 5014, 575, 5624, 1113, 2538, 6744, 16811, 1994, 16813, 6975, 8369, 16797, 1497, 16814, 6027, 7060, 5634, 10570, 7760, 5711, 16722, 7717, 16815, 2]
 // Exports: default
 
-// Module 16797 (FamilyCenterSettingsControls)
+// Module 16810 (FamilyCenterSettingsControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -17,7 +17,7 @@ import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 77
 import LayerActionCreators from "LayerActionCreators" /* 7760 */;
 import useUserLinks from "useUserLinks" /* 8369 */;
 import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10570 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 16802 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 16815 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -51,7 +51,7 @@ function SpendingLimitRow(teenId) {
   teenId = teenId.teenId;
   const cap = teenId.cap;
   const tmp = closure_9();
-  let obj = teenId(16800);
+  let obj = teenId(16813);
   const spendingLimitDisplayState = obj.useSpendingLimitDisplayState(cap);
   const kind = spendingLimitDisplayState.kind;
   if ("off" === kind) {
@@ -96,7 +96,7 @@ function SpendingLimitRow(teenId) {
     fn = () => {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { teenId };
-      obj.pushLazy(asyncRequire(16798, dependencyMap.paths), obj2, undefined, { animation: "slide_from_right" });
+      obj.pushLazy(asyncRequire(16811, dependencyMap.paths), obj2, undefined, { animation: "slide_from_right" });
     };
   }
   return tmp15(TableRow, obj15);
@@ -216,9 +216,9 @@ function FamilyCenterSettingsParentalControls() {
   const tmp = closure_9();
   let tmp2 = selectedTeenUser;
   let tmp3 = dependencyMap;
-  let obj = selectedTeenUser(16784);
+  let obj = selectedTeenUser(16797);
   selectedTeenUser = obj.useSelectedTeenUser();
-  const obj2 = selectedTeenUser(16784);
+  const obj2 = selectedTeenUser(16797);
   const shouldLoadSettingsForSelectedTeenUser = obj2.useShouldLoadSettingsForSelectedTeenUser();
   const obj3 = selectedTeenUser(1497);
   dependencyMap = obj3.useNavigation();
@@ -232,7 +232,7 @@ function FamilyCenterSettingsParentalControls() {
   if (rules == null) {
     rules = [];
   }
-  const ParentalControlledSpendingLimit = tmp2(16709).ParentalControlledSpendingLimit;
+  const ParentalControlledSpendingLimit = tmp2(16722).ParentalControlledSpendingLimit;
   let id;
   const useControlledSetting = ParentalControlledSpendingLimit.useControlledSetting;
   if (selectedTeenUser != null) {
@@ -256,9 +256,9 @@ function FamilyCenterSettingsParentalControls() {
       const teenSettingsAndConsents = obj.fetchTeenSettingsAndConsents(tmp.id);
     }
   }, items);
-  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(16801)(rules));
+  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(16814)(rules));
   const obj4 = { style: tmp.parentalControlsContainer, children: items1 };
-  shouldLoadSettingsForSelectedTeenUser(16801)(rules);
+  shouldLoadSettingsForSelectedTeenUser(16814)(rules);
   const Stack = tmp2(6027).Stack;
   const obj5 = { variant: "text-sm/semibold", children: intl.string(shouldLoadSettingsForSelectedTeenUser(2538).ahKIJO) };
   const Text = tmp2(5624).Text;

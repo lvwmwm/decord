@@ -1,10 +1,10 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16678
+// Function ID: 16679
 // Name: PasskeyInitStep
-// Dependencies: [5, 32, 19, 17, 16568, 1072, 21, 5014, 575, 504, 16666, 5624, 1113, 6767, 8028, 5738, 16658, 5958, 1187, 16670, 5258, 16671, 1994, 10232, 7060, 6975, 16672, 1497, 6748, 7118, 7558, 8177, 2]
+// Dependencies: [5, 32, 19, 17, 16581, 1072, 21, 5014, 575, 504, 16679, 5624, 1113, 6767, 8028, 5738, 16671, 5958, 1187, 16683, 5258, 16684, 1994, 10232, 7060, 6975, 16685, 1497, 6748, 7118, 7558, 8177, 2]
 // Exports: default
 
-// Module 16665 (PasskeyInitStep)
+// Module 16678 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,7 +12,7 @@ import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6748 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16568 */;
+import WebAuthnStore from "WebAuthnStore" /* 16581 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ function CredentialList(navigation) {
     let tmp7 = View;
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
     let tmp8 = closure_9;
-    items1 = [closure_9(tmp(16666).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    items1 = [closure_9(tmp(16679).PasskeysSpotIllustration, { scale: 0.6 }), ];
     let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1113).t.FSNwFW) };
     const Text = tmp(5624).Text;
     intl2 = tmp(1113).intl;

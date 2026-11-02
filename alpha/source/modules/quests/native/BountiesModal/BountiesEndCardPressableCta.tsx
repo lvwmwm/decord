@@ -1,16 +1,16 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 16967
+// Function ID: 16968
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 16955, 21, 5014, 575, 9717, 16951, 9695, 9719, 6788, 6786, 7871, 5717, 5624, 2]
+// Dependencies: [19, 17, 16968, 21, 5014, 575, 9717, 16964, 9695, 9719, 6788, 6786, 7871, 5717, 5624, 2]
 // Exports: default
 
-// Module 16954 (BountiesEndCardPressableCta)
+// Module 16967 (BountiesEndCardPressableCta)
 import nativeDefault from "native" /* 575 */;
 import QuestContent from "QuestContent" /* 6786 */;
 import AdCreativeType from "AdCreativeType" /* 6788 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
-import BountyConstants from "BountyConstants" /* 16955 */;
+import BountyConstants from "BountyConstants" /* 16968 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

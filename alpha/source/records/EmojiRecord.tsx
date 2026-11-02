@@ -1,9 +1,9 @@
-// Module ID: 19725
-// Function ID: 19726
+// Module ID: 19732
+// Function ID: 19733
 // Name: EmojiRecord
 // Dependencies: [1398, 1397, 2]
 
-// Module 19725 (EmojiRecord)
+// Module 19732 (EmojiRecord)
 import Record from "Record" /* 1398 */;
 import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 16834
-// Function ID: 16835
+// Module ID: 16847
+// Function ID: 16848
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 6572, 4885, 1072, 7349, 21, 5014, 1187, 575, 6723, 7347, 504, 5634, 1113, 5624, 6957, 6574, 6972, 5080, 16835, 11390, 5958, 6030, 9720, 16836, 16839, 7369, 7348, 11604, 5709, 2061, 8028, 9285, 12553, 3224, 1409, 5021, 9287, 6976, 6975, 2]
+// Dependencies: [5, 32, 19, 17, 6572, 4885, 1072, 7349, 21, 5014, 1187, 575, 6723, 7347, 504, 5634, 1113, 5624, 6957, 6574, 6972, 5080, 16848, 11391, 5958, 6030, 9720, 16849, 16852, 7369, 7348, 11605, 5709, 2061, 8028, 9285, 12219, 3224, 1409, 5021, 9287, 6976, 6975, 2]
 
-// Module 16834 (ConnectedAccount)
+// Module 16847 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -21,10 +21,10 @@ import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreat
 import Constants2 from "Constants" /* 7349 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7369 */;
 import XLargeBoldIcon from "XLargeBoldIcon" /* 9287 */;
-import InfoBoxDefault from "InfoBox" /* 11390 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16835 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16836 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16839 */;
+import InfoBoxDefault from "InfoBox" /* 11391 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 16848 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 16849 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 16852 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -657,35 +657,35 @@ class ConnectedAccount extends PureComponent {
     const type = account.type;
     const tmp4 = MetadataFields;
     if (constants.REDDIT === type) {
-      const tmp2Result = account(11604);
+      const tmp2Result = account(11605);
       redditMetadataItems = tmp2Result.generateRedditMetadataItems(metadata);
     } else if (constants.STEAM === type) {
-      const tmp2Result7 = account(11604);
+      const tmp2Result7 = account(11605);
       redditMetadataItems = tmp2Result7.generateSteamMetadataItems(metadata);
     } else if (constants.LETTERBOXD === type) {
-      const tmp2Result8 = account(11604);
+      const tmp2Result8 = account(11605);
       redditMetadataItems = tmp2Result8.generateLetterboxdMetadataItems(metadata);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.TWITTER !== type) {
           if (constants.MASTODON !== type) {
             if (constants.EBAY === type) {
-              const tmp2Result9 = account(11604);
+              const tmp2Result9 = account(11605);
               redditMetadataItems = tmp2Result9.generateEbayMetadataItems(metadata);
             } else if (constants.PAYPAL === type) {
-              const tmp2Result10 = account(11604);
+              const tmp2Result10 = account(11605);
               redditMetadataItems = tmp2Result10.generatePaypalMetadataItems(metadata);
             } else {
               redditMetadataItems = [];
               if (constants.TIKTOK === type) {
-                const tmp2Result11 = account(11604);
+                const tmp2Result11 = account(11605);
                 redditMetadataItems = tmp2Result11.generateTikTokMetadataItems(metadata);
               }
             }
           }
         }
       }
-      const tmp2Result12 = account(11604);
+      const tmp2Result12 = account(11605);
       redditMetadataItems = tmp2Result12.generateTwitterMetadataItems(metadata);
     }
     if (null !== createdAtDate) {
@@ -768,7 +768,7 @@ class ConnectedAccount extends PureComponent {
       if (self.state.metadataAlreadyRefreshed) {
         tmp19Result = tmp19(tmp2(9285).CheckmarkLargeBoldIcon, { size: "sm" });
       } else {
-        tmp19Result = tmp19(tmp2(12553).RefreshIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(12219).RefreshIcon, { size: "sm" });
       }
       const obj12 = { size: "sm", variant: "icon-only", icon: tmp19Result, accessibilityLabel: intl2.string(account(1113).t.wzzjk9), onPress: handleRefresh, disabled: self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed };
       intl2 = tmp2(1113).intl;

@@ -1,10 +1,10 @@
-// Module ID: 14945
-// Function ID: 14946
+// Module ID: 14949
+// Function ID: 14950
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10850, 21, 5014, 575, 7419, 1113, 3868, 10875, 14944, 10976, 10879, 7366, 7321, 7253, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 10850, 21, 5014, 575, 7419, 1113, 3868, 10875, 14948, 10976, 10879, 7366, 7321, 7253, 5634, 2]
 // Exports: default
 
-// Module 14945 (ConjureCustomWidgetSheet)
+// Module 14949 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3868 from "module_3868" /* 3868 */;
@@ -184,7 +184,7 @@ export default function ConjureCustomWidgetSheet() {
   BottomSheetTitleHeader = value(7321).BottomSheetTitleHeader;
   intl = value(1113).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3868["09BSx3"]), placeholder: intl3.string(_modDef3868.K7zdCZ), description: intl4.string(_modDef3868.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14944).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  let obj4 = { label: intl2.string(_modDef3868["09BSx3"]), placeholder: intl3.string(_modDef3868.K7zdCZ), description: intl4.string(_modDef3868.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14948).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
   const TextArea = value(7253).TextArea;
   intl2 = value(1113).intl;
   intl3 = value(1113).intl;

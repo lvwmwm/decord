@@ -1,10 +1,10 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 18943
+// Function ID: 18944
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [32, 19, 17, 6796, 4863, 1386, 21, 5014, 575, 1497, 504, 5624, 1113, 9840, 7558, 6027, 7060, 6975, 6980, 9939, 7300, 1409, 9452, 1187, 7092, 7369, 5959, 2]
 // Exports: default
 
-// Module 18936 (ChannelSettingsEditForumTag)
+// Module 18943 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -269,7 +269,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "Array" });
+      setOptions({ headerRight: "r" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };

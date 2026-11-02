@@ -1,10 +1,10 @@
-// Module ID: 18821
-// Function ID: 18822
+// Module ID: 18828
+// Function ID: 18829
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 9856, 5014, 575, 9815, 9812, 14156, 1113, 7654, 7169, 18822, 18828, 18831, 18832, 18833, 18844, 18845, 18846, 18848, 18851, 18852, 5194, 1625, 7112, 4971, 5080, 2]
+// Dependencies: [19, 17, 21, 9856, 5014, 575, 9815, 9812, 14171, 1113, 7654, 7169, 18829, 18835, 18838, 18839, 18840, 18851, 18852, 18853, 18855, 18858, 18859, 5194, 1625, 7112, 4971, 5080, 2]
 // Exports: default
 
-// Module 18821 (FriendsNavigator)
+// Module 18828 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
 import HeaderShared from "HeaderShared" /* 9812 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9815 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14156 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14171 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9856 */;

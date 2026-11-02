@@ -1,7 +1,7 @@
 // Module ID: 9722
 // Function ID: 9723
 // Name: XboxLinkModal
-// Dependencies: [19, 9723, 1072, 21, 7558, 8359, 9721, 1113, 9724, 9731, 9732, 9736, 14612, 14615, 14617, 9730, 14621, 7169, 2]
+// Dependencies: [19, 9723, 1072, 21, 7558, 8359, 9721, 1113, 9724, 9731, 9732, 9736, 14626, 14629, 14631, 9730, 14635, 7169, 2]
 // Exports: default
 
 // Module 9722 (XboxLinkModal)
@@ -109,7 +109,7 @@ export default function XboxLinkModal(locationStack) {
       }
     };
   }, items);
-  const obj2 = twoWayLinkStyles(14621);
+  const obj2 = twoWayLinkStyles(14635);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack);
   const Navigator = twoWayLinkStyles(7169).Navigator;
   const intl = twoWayLinkStyles(1113).intl;

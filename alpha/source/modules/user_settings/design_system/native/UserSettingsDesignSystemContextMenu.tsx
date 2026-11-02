@@ -1,10 +1,10 @@
-// Module ID: 17776
-// Function ID: 17777
+// Module ID: 17789
+// Function ID: 17790
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 14371, 7262, 8424, 11596, 5741, 17777, 17778, 11591, 5014, 575, 12, 9874, 5634, 6977, 5624, 2]
+// Dependencies: [19, 17, 21, 14386, 7262, 8424, 11597, 5741, 17790, 17791, 11592, 5014, 575, 12, 9874, 5634, 6977, 5624, 2]
 // Exports: default
 
-// Module 17776 (UserSettingsDesignSystemContextMenu)
+// Module 17789 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;
@@ -13,11 +13,11 @@ import AssetRegistryDefault from "AssetRegistry" /* 5741 */;
 import Card_Card from "Card/Card" /* 6977 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7262 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 8424 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11591 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11596 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14371 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 17777 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 17778 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11592 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11597 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14386 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 17790 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 17791 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

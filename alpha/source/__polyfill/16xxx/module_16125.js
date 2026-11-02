@@ -1,17 +1,10 @@
 // Module ID: 16125
 // Function ID: 16126
-// Dependencies: [16124]
+// Dependencies: [16126, 16194]
 
 // Module 16125
-import _mod16124 from "module_16124" /* 16124 */;
+import _mod16194 from "module_16194" /* 16194 */;
+import module_16126 from "module_16126" /* 16126 */;
 
 
-export default (arg0, value) => {
-  try {
-    const obj = { value, configurable: true, writable: true };
-    defineProperty(_mod16124, arg0, obj);
-  } catch (err) {
-    _mod16124[arg0] = value;
-  }
-  return value;
-};
+export default _mod16194.Object.assign;

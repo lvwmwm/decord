@@ -1,9 +1,9 @@
-// Module ID: 19252
-// Function ID: 19253
+// Module ID: 19259
+// Function ID: 19260
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 4862, 11704, 4863, 11223, 11221, 1072, 2018, 11693, 21, 5014, 575, 11222, 12074, 504, 19253, 11721, 7330, 11787, 7326, 7351, 10049, 5676, 5095, 6851, 5303, 2019, 1491, 11005, 7241, 19254, 11793, 19255, 19256, 19260, 5080, 2]
+// Dependencies: [32, 19, 4862, 11705, 4863, 11223, 11221, 1072, 2018, 11694, 21, 5014, 575, 11222, 12075, 504, 19260, 11722, 7330, 11788, 7326, 7351, 10049, 5676, 5095, 6851, 5303, 2019, 1491, 11005, 7241, 19261, 11794, 19262, 19263, 19267, 5080, 2]
 
-// Module 19252 (VoicePanelAnimatedActivityCard)
+// Module 19259 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1491 */;
@@ -13,12 +13,12 @@ import native from "native" /* 5080 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
-import Constants3 from "Constants" /* 11693 */;
-import fetchShelf from "fetchShelf" /* 11721 */;
+import Constants3 from "Constants" /* 11694 */;
+import fetchShelf from "fetchShelf" /* 11722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11704 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11705 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import Fragment from "Fragment" /* 21 */;
@@ -77,7 +77,7 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
   const windowDimensions = context.windowDimensions;
   const hideControls = context.hideControls;
   const controlsSpecs = context.controlsSpecs;
-  const tmp8 = sharedVisible(12074)();
+  const tmp8 = sharedVisible(12075)();
   VoicePanelControlsModes = tmp8;
   let obj2 = applicationId(504);
   const items = [windowDimensions];
@@ -89,8 +89,8 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
     guild_id = stateFromStores.guild_id;
   }
   let guild_id1;
-  const useActivityShelfItemData = tmp9(19253).useActivityShelfItemData;
-  applicationId(19253);
+  const useActivityShelfItemData = tmp9(19260).useActivityShelfItemData;
+  applicationId(19260);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -115,7 +115,7 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
   }, items5);
   gridOrientationLockState = stateFromStoresObject.gridOrientationLockState;
   focusedOrientationLockState = stateFromStoresObject.focusedOrientationLockState;
-  const tmp19 = sharedVisible(11787)();
+  const tmp19 = sharedVisible(11788)();
   const items6 = [layoutManager];
   const tmp9Result11 = applicationId(504);
   const stateFromStores1 = tmp9Result11.useStateFromStores(items6, () => {
@@ -383,9 +383,9 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
       if (first2) {
         str = "auto";
       }
-      const obj11 = { channelId, activityName: name, isActivityFocused: first2, children: gridOrientationLockState(sharedVisible(11793), obj12, first) };
+      const obj11 = { channelId, activityName: name, isActivityFocused: first2, children: gridOrientationLockState(sharedVisible(11794), obj12, first) };
       name = undefined;
-      const tmp5Result4 = sharedVisible(19254);
+      const tmp5Result4 = sharedVisible(19261);
       if (first1 != null) {
         name = first1.name;
       }
@@ -393,18 +393,18 @@ function VoicePanelAnimatedActivityCardInner(applicationId) {
       items13 = [gridOrientationLockState(tmp5Result4, obj11), ];
       let tmp50Result = null;
       if (stateFromStores2) {
-        tmp50Result = tmp50(tmp5(19255), {});
+        tmp50Result = tmp50(tmp5(19262), {});
       }
       items13[1] = tmp50Result;
       tmp50Result2 = tmp50(GestureDetector2, obj8);
       tmp47 = tmp50;
     } else if (null == activityShelfItemData) {
       const obj13 = { activity: stateFromStores1, application: first1 };
-      tmp50Result2 = gridOrientationLockState(tmp5(19256), obj13);
+      tmp50Result2 = gridOrientationLockState(tmp5(19263), obj13);
       tmp47 = gridOrientationLockState;
     } else {
       tmp47 = gridOrientationLockState;
-      const obj14 = { gesture: memo1, children: gridOrientationLockState(sharedVisible(19260), obj15) };
+      const obj14 = { gesture: memo1, children: gridOrientationLockState(sharedVisible(19267), obj15) };
       const GestureDetector = tmp9(5303).GestureDetector;
       obj15 = { context: memo, guildId: stateFromStores.guild_id, activityItem: activityShelfItemData, locationObject: analyticsContext.location, itemDimensions: first3, disableBadges: true };
       tmp50Result2 = gridOrientationLockState(GestureDetector, obj14);

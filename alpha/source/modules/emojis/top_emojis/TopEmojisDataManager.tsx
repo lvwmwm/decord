@@ -1,9 +1,9 @@
-// Module ID: 19434
-// Function ID: 19435
+// Module ID: 19441
+// Function ID: 19442
 // Name: TopEmojisDataManager
 // Dependencies: [5045, 1386, 7287, 9945, 2]
 
-// Module 19434 (TopEmojisDataManager)
+// Module 19441 (TopEmojisDataManager)
 import EmojiConstants from "EmojiConstants" /* 1386 */;
 import TopEmojisUtils from "TopEmojisUtils" /* 9945 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;

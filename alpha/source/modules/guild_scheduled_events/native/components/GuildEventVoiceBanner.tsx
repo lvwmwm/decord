@@ -1,9 +1,9 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15192
+// Function ID: 15193
 // Name: GuildEventVoiceBanner
 // Dependencies: [19, 17, 4917, 6855, 21, 5014, 575, 9090, 504, 9020, 8969, 5258, 8985, 7939, 8962, 6980, 8981, 5634, 1113, 2]
 
-// Module 15188 (GuildEventVoiceBanner)
+// Module 15192 (GuildEventVoiceBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;

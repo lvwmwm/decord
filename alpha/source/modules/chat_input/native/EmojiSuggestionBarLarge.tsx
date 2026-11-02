@@ -1,10 +1,10 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 13989
+// Function ID: 13990
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [32, 19, 17, 9942, 21, 5014, 575, 13975, 5095, 10025, 10050, 5080, 2]
+// Dependencies: [32, 19, 17, 9942, 21, 5014, 575, 13990, 5095, 10025, 10050, 5080, 2]
 // Exports: EmojiSuggestionBarLarge
 
-// Module 13974 (EmojiSuggestionBarLarge)
+// Module 13989 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import native from "native" /* 5080 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9942 */;
 import EmojiPickerListRow from "EmojiPickerListRow" /* 10025 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13975 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13990 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;

@@ -1,10 +1,10 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 13009
+// Function ID: 13010
 // Name: confirmConjureYouBarPin
-// Dependencies: [19, 21, 5964, 1113, 3868, 572, 5712, 10979, 14711, 5960, 2]
+// Dependencies: [19, 21, 5964, 1113, 3868, 572, 5712, 10979, 13010, 5960, 2]
 // Exports: default
 
-// Module 14710 (confirmConjureYouBarPin)
+// Module 13009 (confirmConjureYouBarPin)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
@@ -66,7 +66,7 @@ function ConjureYouBarPinAlert(pin) {
       if (tmp2) {
         PinUprightSlashIcon = tmp5(10979).PinIcon;
       } else {
-        PinUprightSlashIcon = tmp5(14711).PinUprightSlashIcon;
+        PinUprightSlashIcon = tmp5(13010).PinUprightSlashIcon;
       }
       open("CONJURE_YOU_BAR_PIN", obj3);
     }

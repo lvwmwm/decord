@@ -1,10 +1,10 @@
-// Module ID: 11851
-// Function ID: 11852
+// Module ID: 11852
+// Function ID: 11853
 // Name: useCurrentUserStageRoles
 // Dependencies: [502, 6757, 504, 2]
 // Exports: default
 
-// Module 11851 (useCurrentUserStageRoles)
+// Module 11852 (useCurrentUserStageRoles)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6757 */;
 import size from "module_2" /* 2 */;

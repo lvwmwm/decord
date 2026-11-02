@@ -1,14 +1,14 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12785
+// Function ID: 12786
 // Name: AIShimmer
-// Dependencies: [32, 19, 17, 21, 5014, 12783, 5080, 5624, 12784, 5095, 12785, 12786, 12102, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 12786, 5080, 5624, 12787, 5095, 12788, 12789, 12246, 2]
 
-// Module 12782 (AIShimmer)
+// Module 12785 (AIShimmer)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import Text_Text from "Text/Text" /* 5624 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 12783 */;
-import waveTransition2 from "waveTransition" /* 12784 */;
-import createWaveTransition2 from "createWaveTransition" /* 12786 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 12786 */;
+import waveTransition2 from "waveTransition" /* 12787 */;
+import createWaveTransition2 from "createWaveTransition" /* 12789 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -212,10 +212,10 @@ function ShimmerLayers(pass) {
     return obj2;
   };
   const obj5 = pass(5095);
-  fn.__closure = { animationProgress: animationProgress2, bandEdgesAt: pass(12784).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12784).glyphLayerOpacityAt, easeTail: pass(12784).easeTail };
+  fn.__closure = { animationProgress: animationProgress2, bandEdgesAt: pass(12787).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12787).glyphLayerOpacityAt, easeTail: pass(12787).easeTail };
   fn.__workletHash = 5565898978148;
   fn.__initData = __initData9;
-  ({ animationProgress: animationProgress2, bandEdgesAt: pass(12784).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12784).glyphLayerOpacityAt, easeTail: pass(12784).easeTail });
+  ({ animationProgress: animationProgress2, bandEdgesAt: pass(12787).bandEdgesAt, animationWidth: animationWidth2, overshoot: overshoot2, glyphLayerOpacityAt: pass(12787).glyphLayerOpacityAt, easeTail: pass(12787).easeTail });
   const derivedValue = obj5.useDerivedValue(fn);
   const obj7 = pass(5095);
   class T {

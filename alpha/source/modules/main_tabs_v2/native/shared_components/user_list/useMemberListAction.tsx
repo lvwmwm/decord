@@ -1,13 +1,13 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11622
+// Function ID: 11623
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4863, 4946, 4956, 1383, 10734, 1072, 21, 5014, 563, 11622, 9031, 7217, 11625, 11634, 11635, 1113, 10978, 10977, 5044, 4847, 11637, 11642, 7561, 11643, 1888, 9118, 6027, 8179, 9727, 11647, 2404, 2]
+// Dependencies: [32, 19, 17, 4863, 4946, 4956, 1383, 10734, 1072, 21, 5014, 563, 11623, 9031, 7217, 11626, 11635, 11636, 1113, 10978, 10977, 5044, 4847, 11638, 11643, 7561, 11644, 1888, 9118, 6027, 8179, 9727, 11648, 2404, 2]
 // Exports: default
 
-// Module 11621 (useMemberListAction)
+// Module 11622 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
 import UsersFastListConstants from "UsersFastListConstants" /* 10734 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11625 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11626 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
@@ -33,7 +33,7 @@ let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "Array", listActionHeight: "flexDirection" };
+let closure_16 = { listActionRenderer: "raw", listActionHeight: "cix" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_17 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");

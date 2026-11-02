@@ -1,14 +1,14 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14725
+// Function ID: 14726
 // Name: FireIcon
-// Dependencies: [19, 21, 575, 5716, 14722, 2]
+// Dependencies: [19, 21, 575, 5716, 14726, 2]
 // Exports: FireIcon
 
-// Module 14721 (FireIcon)
+// Module 14725 (FireIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 14722 */;
+import AssetRegistry from "AssetRegistry" /* 14726 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

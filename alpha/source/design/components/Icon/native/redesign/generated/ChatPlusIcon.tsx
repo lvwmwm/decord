@@ -1,14 +1,14 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 11636
+// Function ID: 11637
 // Name: ChatPlusIcon
-// Dependencies: [19, 21, 575, 5716, 11636, 2]
+// Dependencies: [19, 21, 575, 5716, 11637, 2]
 // Exports: ChatPlusIcon
 
-// Module 11635 (ChatPlusIcon)
+// Module 11636 (ChatPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 11636 */;
+import AssetRegistry from "AssetRegistry" /* 11637 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

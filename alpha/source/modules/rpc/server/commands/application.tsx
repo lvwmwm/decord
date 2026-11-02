@@ -1,19 +1,19 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16308
+// Function ID: 16309
 // Name: application
-// Dependencies: [2038, 6450, 1072, 11809, 11812, 16305, 6883, 9333, 16306, 1252, 1282, 9557, 2]
+// Dependencies: [2038, 6450, 1072, 11810, 11813, 16309, 6883, 9333, 16310, 1252, 1282, 9557, 2]
 
-// Module 16304 (application)
+// Module 16308 (application)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import Constants2 from "Constants" /* 6450 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6883 */;
 import RPCErrorDefault from "RPCError" /* 9333 */;
 import TestModeUtils from "TestModeUtils" /* 9557 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11809 */;
-import RPCHelpers from "RPCHelpers" /* 11812 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 16305 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16306 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11810 */;
+import RPCHelpers from "RPCHelpers" /* 11813 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 16309 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16310 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -87,20 +87,20 @@ let obj2 = {
   scope: RPC_LOCAL_SCOPE,
   handler(socket) {
     let obj2;
-    let obj3;
+    let obj4;
     const id = socket.socket.application.id;
     if (null == id) {
       const self = this;
       const self2 = this;
       const obj = { errorCode: metroRequire.INVALID_COMMAND };
-      const tmp8 = new RPCErrorDefault(obj, "No application.");
-      throw tmp8;
+      const tmp5 = new RPCErrorDefault(obj, "No application.");
+      throw tmp5;
     } else {
       const HTTP = HTTPUtils.HTTP;
       const request = { url: hasOwnProperty.APPLICATION_TICKET(id), body: obj2, retries: 3, oldFormErrors: true, rejectWithError: false };
       const post = HTTP.post;
-      obj2 = { test_mode: obj3.isTestModeForApplication(id) };
-      obj3 = TestModeUtils;
+      obj2 = { test_mode: obj4.isTestModeForApplication(id) };
+      obj4 = TestModeUtils;
       const postResult = post(request);
       return postResult.then((body) => body.body);
     }

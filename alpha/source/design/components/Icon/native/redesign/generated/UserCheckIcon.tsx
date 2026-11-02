@@ -1,10 +1,10 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 14918
+// Function ID: 14919
 // Name: UserCheckIcon
 // Dependencies: [19, 21, 575, 5716, 8542, 2]
 // Exports: UserCheckIcon
 
-// Module 14914 (UserCheckIcon)
+// Module 14918 (UserCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;

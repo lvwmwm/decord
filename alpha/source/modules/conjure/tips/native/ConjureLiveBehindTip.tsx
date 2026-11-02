@@ -1,16 +1,16 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 12628
+// Function ID: 12629
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 12443, 12620, 9916, 1113, 3868, 12609, 2]
+// Dependencies: [19, 21, 12102, 12623, 9916, 1113, 3868, 12612, 2]
 
-// Module 12625 (ConjureLiveBehindTip)
+// Module 12628 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
 import UploadIcon from "UploadIcon" /* 9916 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 12443 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12609 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12620 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 12102 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12612 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12623 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

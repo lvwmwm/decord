@@ -1,10 +1,10 @@
-// Module ID: 19187
-// Function ID: 19188
+// Module ID: 19194
+// Function ID: 19195
 // Name: VoicePanelStreamOutputSinkStack
 // Dependencies: [32, 19, 2]
 // Exports: useSetHasActiveVideoOutputSink
 
-// Module 19187 (VoicePanelStreamOutputSinkStack)
+// Module 19194 (VoicePanelStreamOutputSinkStack)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

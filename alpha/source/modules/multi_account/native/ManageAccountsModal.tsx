@@ -1,9 +1,9 @@
-// Module ID: 18436
-// Function ID: 18437
+// Module ID: 18449
+// Function ID: 18450
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 5069, 1383, 13962, 13963, 18437, 1072, 21, 9856, 5014, 575, 504, 1187, 5959, 1113, 13966, 6980, 17292, 17981, 5095, 5254, 6732, 1252, 7292, 18438, 17982, 13972, 18439, 6987, 8177, 11488, 7169, 9812, 10144, 18007, 6740, 7108, 18006, 2]
+// Dependencies: [32, 5, 19, 17, 502, 5069, 1383, 13977, 13978, 18450, 1072, 21, 9856, 5014, 575, 504, 1187, 5959, 1113, 13981, 6980, 17305, 17994, 5095, 5254, 6732, 1252, 7292, 18451, 17995, 13987, 18452, 6987, 8177, 11489, 7169, 9812, 10144, 18020, 6740, 7108, 18019, 2]
 
-// Module 18436 (ManageAccountsModal)
+// Module 18449 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,16 +12,16 @@ import timing from "timing" /* 5254 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import HeaderShared from "HeaderShared" /* 9812 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10144 */;
-import MultiAccountStore from "MultiAccountStore" /* 13962 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13966 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 18437 */;
+import MultiAccountStore from "MultiAccountStore" /* 13977 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13981 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18450 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import StreamerModeStore from "StreamerModeStore" /* 5069 */;
 import UserStore from "UserStore" /* 1383 */;
-import Constants_mod from "Constants" /* 13963 */;
+import Constants_mod from "Constants" /* 13978 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9856 */;
@@ -153,7 +153,7 @@ function RemoveMultiAccountUserButton(user) {
     const PressableOpacity = tmp(6980).PressableOpacity;
     intl = tmp(1113).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(17292).CircleMinusIcon;
+    CircleMinusIcon = tmp(17305).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }

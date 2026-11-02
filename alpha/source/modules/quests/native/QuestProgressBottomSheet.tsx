@@ -1,10 +1,10 @@
-// Module ID: 19142
-// Function ID: 19143
+// Module ID: 19149
+// Function ID: 19150
 // Name: QuestProgressBottomSheet
-// Dependencies: [5, 19, 17, 6846, 7846, 6781, 5657, 21, 5014, 575, 504, 14685, 6784, 8028, 9207, 1113, 8773, 7330, 7868, 11841, 9681, 14682, 17088, 10928, 5258, 9678, 8931, 9705, 5272, 5717, 5587, 1092, 14678, 9164, 17116, 6027, 5624, 5634, 17083, 2]
+// Dependencies: [5, 19, 17, 6846, 7846, 6781, 5657, 21, 5014, 575, 504, 14699, 6784, 8028, 9207, 1113, 8773, 7330, 7868, 11842, 9681, 14696, 17101, 10927, 5258, 9678, 8931, 9705, 5272, 5717, 5587, 1092, 14692, 9164, 17129, 6027, 5624, 5634, 17096, 2]
 // Exports: default
 
-// Module 19142 (QuestProgressBottomSheet)
+// Module 19149 (QuestProgressBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
@@ -32,7 +32,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const FramesActionCreatorsDefault = tmp(10928);
+const FramesActionCreatorsDefault = tmp(10927);
 function contextMenuButton(arg0) {
   let intl;
   const obj = { icon: AssetRegistryDefault, variant: "secondary-overlay", accessibilityLabel: intl.string(intl5.t["UKOtz+"]), size: "sm" };
@@ -70,7 +70,7 @@ function QuestProgressBottomSheet(quest) {
   let obj2 = quest(7868);
   const getOrFetchApplication = useGetOrFetchApplication(obj2.getActivityApplicationId(quest));
   let id;
-  const tmp8 = claim(11841);
+  const tmp8 = claim(11842);
   if (getOrFetchApplication != null) {
     id = getOrFetchApplication.id;
   }
@@ -80,7 +80,7 @@ function QuestProgressBottomSheet(quest) {
   const intl = tmp(1113).intl;
   let obj3 = { questName: quest.config.messages.questName };
   const formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.EAYZAr, obj3);
-  const tmpResult4 = tmp(14682);
+  const tmpResult4 = tmp(14696);
   let obj4 = { quest, taskDetails: questTaskDetails, location: QuestsExperimentLocations.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(6784).QuestContent.RUNNING_ACTIVITY };
   const userStatus = quest.userStatus;
   let completedAt;
@@ -100,7 +100,7 @@ function QuestProgressBottomSheet(quest) {
   }
   const tmpResult5 = tmp(9681);
   const isQuestAccessSuspended = tmpResult5.useIsQuestAccessSuspended();
-  const tmpResult6 = tmp(17088);
+  const tmpResult6 = tmp(17101);
   let obj5 = { quest, questContent: tmp(6784).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(6784).QuestContent.RUNNING_ACTIVITY };
   const questRewardClaimHandler = tmpResult6.useQuestRewardClaimHandler(obj5);
   ({ isClaiming, claim } = questRewardClaimHandler);
@@ -208,7 +208,7 @@ function QuestProgressBottomSheet(quest) {
   size = { quest, height: num2, width: num };
   num = 80;
   num2 = 80;
-  tmp7Result4 = claim(14678);
+  tmp7Result4 = claim(14692);
   if (isScreenLandscape) {
     num2 = 56;
   }
@@ -222,7 +222,7 @@ function QuestProgressBottomSheet(quest) {
   intl2 = tmp(1113).intl;
   items5 = [closure_11(IconButton, obj12), ];
   const obj13 = { quest, showShareLink: true, location: tmp12.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(6784).QuestContent.RUNNING_ACTIVITY, children: contextMenuButton };
-  const tmp7Result5 = claim(17116);
+  const tmp7Result5 = claim(17129);
   items5[1] = closure_11(tmp7Result5, obj13);
   items3[3] = closure_12(closure_5, obj11);
   const items6 = [closure_12(closure_5, obj6), ];
@@ -259,7 +259,7 @@ function QuestProgressBottomSheet(quest) {
   tmp7Result6 = undefined;
   if (isQuestAccessSuspended) {
     if (tmp15) {
-      tmp7Result6 = tmp7(17083);
+      tmp7Result6 = tmp7(17096);
     }
   }
   const obj19 = { handleDisabled: true, startExpanded: true, children: items6 };
@@ -342,7 +342,7 @@ export default function QuestProgressBottomSheetConnected(questId) {
           return unpackModuleId(QuestProgressBottomSheet, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp(14685).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp(14699).QuestContentImpressionTrackerNative;
     tmp4 = closure_11(QuestContentImpressionTrackerNative, obj2);
   }
   return tmp4;

@@ -1,9 +1,9 @@
-// Module ID: 18432
-// Function ID: 18433
+// Module ID: 18445
+// Function ID: 18446
 // Name: YouAccountActionSheet
-// Dependencies: [19, 17, 13962, 1192, 1397, 7864, 5069, 1383, 1072, 1386, 13963, 21, 5014, 575, 5624, 6983, 15992, 15989, 15990, 15991, 4839, 7149, 11019, 5258, 1113, 7058, 7061, 9085, 504, 16997, 13697, 5932, 17247, 1239, 18433, 11189, 17249, 5068, 1187, 17981, 18435, 1252, 7351, 13966, 6980, 11018, 7060, 7369, 10992, 18440, 1994, 18430, 11393, 1409, 10749, 5596, 6977, 11396, 7300, 9452, 11403, 5717, 7257, 7000, 7366, 7321, 6027, 18441, 17744, 2]
+// Dependencies: [19, 17, 13977, 1192, 1397, 7864, 5069, 1383, 1072, 1386, 13978, 21, 5014, 575, 5624, 6983, 15996, 15993, 15994, 15995, 4839, 7149, 11019, 5258, 1113, 7058, 7061, 9085, 504, 17010, 13712, 5932, 17260, 1239, 18446, 11189, 17262, 5068, 1187, 17994, 18448, 1252, 7351, 13981, 6980, 11018, 7060, 7369, 10992, 18453, 1994, 18443, 11394, 1409, 10749, 5596, 6977, 11397, 7300, 9452, 11404, 5717, 7257, 7000, 7366, 7321, 6027, 18454, 17757, 2]
 
-// Module 18432 (YouAccountActionSheet)
+// Module 18445 (YouAccountActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -28,20 +28,20 @@ import getChannelA11yLabel from "getChannelA11yLabel" /* 9085 */;
 import FocusModeUtils from "FocusModeUtils" /* 11018 */;
 import setUserStatusDefault from "setUserStatus" /* 11019 */;
 import ThemeDarkIcon from "ThemeDarkIcon" /* 11189 */;
-import userSettingToActivity from "userSettingToActivity" /* 11393 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11396 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 11403 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13697 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 13962 */;
-import Constants2 from "Constants" /* 13963 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13966 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16997 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 17247 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17249 */;
-import DevToolsContentDefault from "DevToolsContent" /* 17744 */;
-import ThemeGrayIcon from "ThemeGrayIcon" /* 18433 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18435 */;
-import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 18441 */;
+import userSettingToActivity from "userSettingToActivity" /* 11394 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11397 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 11404 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13712 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 13977 */;
+import Constants2 from "Constants" /* 13978 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13981 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17010 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 17260 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17262 */;
+import DevToolsContentDefault from "DevToolsContent" /* 17757 */;
+import ThemeGrayIcon from "ThemeGrayIcon" /* 18446 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18448 */;
+import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 18454 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserRecord from "UserRecord" /* 1397 */;
@@ -256,7 +256,7 @@ function YouAccountRadioGroup() {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(17981);
+  let obj2 = stateFromStores(17994);
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
   let obj3 = stateFromStores(504);
   const items1 = [StreamerModeStore];
@@ -626,7 +626,7 @@ const memoResult = react.memo(function YouAccountActionSheet(statusOnly) {
       items3 = [closure_19(AccountSectionHeading, { children: "Developer Tools" }), closure_19(DevToolsContentDefault, { embedded: true })];
       tmp8Result3 = tmp10(View, obj5);
     } else {
-      tmp8Result3 = tmp8(tmp4(17744), { title: "Developer Tools", embedded: true });
+      tmp8Result3 = tmp8(tmp4(17757), { title: "Developer Tools", embedded: true });
     }
     tmp16 = tmp8Result3;
   }

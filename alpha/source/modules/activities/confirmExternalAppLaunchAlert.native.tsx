@@ -1,10 +1,10 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11746
+// Function ID: 11747
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2018, 21, 5014, 5717, 11746, 5624, 1113, 5634, 5709, 5958, 2]
+// Dependencies: [19, 17, 2018, 21, 5014, 5717, 11747, 5624, 1113, 5634, 5709, 5958, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11745 (confirmExternalAppLaunchAlert)
+// Module 11746 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import Constants from "Constants" /* 2018 */;
@@ -13,7 +13,7 @@ import components_Button_Button from "components/Button/Button" /* 5634 */;
 import LinkingDefault from "Linking" /* 5709 */;
 import FastImageDefault from "FastImage" /* 5717 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11746 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11747 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;

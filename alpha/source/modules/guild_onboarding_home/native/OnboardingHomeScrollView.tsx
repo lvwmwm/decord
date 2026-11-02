@@ -1,10 +1,10 @@
-// Module ID: 18620
-// Function ID: 18621
+// Module ID: 18633
+// Function ID: 18634
 // Name: OnboardingHomeScrollView
 // Dependencies: [19, 17, 21, 5014, 575, 1625, 2]
 // Exports: default
 
-// Module 18620 (OnboardingHomeScrollView)
+// Module 18633 (OnboardingHomeScrollView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

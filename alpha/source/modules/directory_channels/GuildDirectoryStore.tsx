@@ -1,13 +1,13 @@
-// Module ID: 13845
-// Function ID: 13846
+// Module ID: 13860
+// Function ID: 13861
 // Name: GuildDirectoryStore
-// Dependencies: [13838, 13837, 504, 572, 2]
+// Dependencies: [13853, 13852, 504, 572, 2]
 
-// Module 13845 (GuildDirectoryStore)
+// Module 13860 (GuildDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13837 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13838 */;
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13852 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13853 */;
 import size from "module_2" /* 2 */;
 
 let set;

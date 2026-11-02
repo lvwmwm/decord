@@ -1,10 +1,10 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12371
+// Function ID: 12372
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 4863, 5242, 1383, 12232, 12233, 6035, 1089, 504, 11, 4847, 7569, 5044, 2]
+// Dependencies: [32, 4863, 5242, 1383, 12372, 12373, 6035, 1089, 504, 11, 4847, 7569, 5044, 2]
 // Exports: default
 
-// Module 12231 (useCanShowAppLauncherOnboarding)
+// Module 12371 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
@@ -12,8 +12,8 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
 import UserStore from "UserStore" /* 1383 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12232 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12233 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12372 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12373 */;
 import size from "module_2" /* 2 */;
 
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;

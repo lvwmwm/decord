@@ -1,10 +1,10 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14134
+// Function ID: 14135
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 5014, 575, 7149, 14120, 7086, 5624, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7149, 14135, 7086, 5624, 2]
 // Exports: default
 
-// Module 14119 (GuildPowerupsWarning)
+// Module 14134 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5624 */;
@@ -47,7 +47,7 @@ export default function GuildPowerupsWarning(warnings) {
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(14120)(guildId, powerupNames);
+  const tmp6 = manaTypeConsolidationExperiment(14135)(guildId, powerupNames);
   if (tmp6.shouldShow) {
     const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
     obj3 = { style: tmp.contentContainer, children: items };

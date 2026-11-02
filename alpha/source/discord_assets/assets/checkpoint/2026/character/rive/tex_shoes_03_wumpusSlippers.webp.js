@@ -1,8 +1,8 @@
-// Module ID: 13583
-// Function ID: 13584
+// Module ID: 13598
+// Function ID: 13599
 // Dependencies: [2]
 
-// Module 13583
+// Module 13598
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_03_wumpusSlippers.webp.js");

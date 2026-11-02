@@ -1,9 +1,9 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16275
+// Function ID: 16276
 // Name: NotificationTokenManager
-// Dependencies: [17, 1246, 13962, 15522, 502, 16272, 1072, 1996, 572, 10914, 16275, 1242, 1113, 2868, 1375, 16276, 1252, 13961, 2]
+// Dependencies: [17, 1246, 13977, 15526, 502, 16276, 1072, 1996, 572, 10914, 16279, 1242, 1113, 2868, 1375, 16280, 1252, 13976, 2]
 
-// Module 16271 (NotificationTokenManager)
+// Module 16275 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,13 +13,13 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import _modDef2868 from "module_2868" /* 2868 */;
 import PushNotificationDefault from "PushNotification" /* 10914 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13961 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16272 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16275 */;
-import react_nativeDefault from "react-native" /* 16276 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13976 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16276 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16279 */;
+import react_nativeDefault from "react-native" /* 16280 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import MultiAccountStore from "MultiAccountStore" /* 13962 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15522 */;
+import MultiAccountStore from "MultiAccountStore" /* 13977 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15526 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;

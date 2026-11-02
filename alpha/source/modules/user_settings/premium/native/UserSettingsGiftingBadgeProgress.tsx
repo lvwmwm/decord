@@ -1,10 +1,10 @@
-// Module ID: 15457
-// Function ID: 15458
+// Module ID: 15461
+// Function ID: 15462
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8763, 21, 5014, 575, 7326, 7351, 504, 8755, 5624, 1113, 2634, 10616, 10619, 5634, 13350, 10558, 15458, 11413, 2]
+// Dependencies: [32, 19, 17, 8763, 21, 5014, 575, 7326, 7351, 504, 8755, 5624, 1113, 2634, 10616, 10619, 5634, 13365, 10558, 15462, 11414, 2]
 // Exports: default
 
-// Module 15457 (UserSettingsGiftingBadgeProgress)
+// Module 15461 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 575 */;
 import _modDef2634 from "module_2634" /* 2634 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
@@ -305,7 +305,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     };
     const Button = tmp7(5634).Button;
     obj19 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp7(13350).GiftIcon;
+    GiftIcon = tmp7(13365).GiftIcon;
     intl4 = tmp7(1113).intl;
     items5[1] = closure_9(Button, obj18);
     const obj20 = { style: tmp.divider };
@@ -323,9 +323,9 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(15458).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(15462).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(11413).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(11414).ChevronSmallDownIcon;
     }
     const obj23 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj23);

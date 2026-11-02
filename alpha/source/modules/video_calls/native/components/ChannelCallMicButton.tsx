@@ -1,14 +1,14 @@
-// Module ID: 11968
-// Function ID: 11969
+// Module ID: 11969
+// Function ID: 11970
 // Name: ChannelCallMicButton
-// Dependencies: [19, 5765, 21, 7526, 504, 11969, 11970, 11714, 1113, 11973, 11974, 575, 2]
+// Dependencies: [19, 5765, 21, 7526, 504, 11970, 11971, 11715, 1113, 11974, 11975, 575, 2]
 // Exports: ChannelCallMicButton
 
-// Module 11968 (ChannelCallMicButton)
+// Module 11969 (ChannelCallMicButton)
 import Fragment from "Fragment" /* 21 */;
 import useMuteStatesDefault from "useMuteStates" /* 7526 */;
-import CallBarActionAll from "CallBarAction" /* 11714 */;
-import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 11970 */;
+import CallBarActionAll from "CallBarAction" /* 11715 */;
+import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 11971 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5765 */;
 import size from "module_2" /* 2 */;
@@ -32,13 +32,13 @@ export function ChannelCallMicButton(disableTint) {
   const items = [GameConsoleStore];
   const obj = mute(504);
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const obj2 = mute(11969);
+  const obj2 = mute(11970);
   const muteHandler = obj2.createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const onPress = muteHandler.onPress;
   const memo = react.useMemo(() => jsx(VoicePanelRiveMicButton.VoicePanelRiveMicButton, { muted: mute }), items1);
-  const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: intl.string(mute(1113).t.B3zz0G), onPress, source: importDefault(mute ? 11973 : 11974), isActive: flag, isSmallSize, lottieComponent: memo, tintColor: RED_400 };
+  const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: intl.string(mute(1113).t.B3zz0G), onPress, source: importDefault(mute ? 11974 : 11975), isActive: flag, isSmallSize, lottieComponent: memo, tintColor: RED_400 };
   const ToggledActionButton = CallBarActionAll.ToggledActionButton;
   intl = mute(1113).intl;
   const tmp7 = jsx;

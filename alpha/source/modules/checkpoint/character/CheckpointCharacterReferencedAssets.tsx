@@ -1,13 +1,13 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13461
+// Function ID: 13462
 // Name: CheckpointCharacterReferencedAssets
-// Dependencies: [1376, 13447, 13612, 13613, 2]
+// Dependencies: [1376, 13462, 13627, 13628, 2]
 // Exports: getCheckpointCharacterReferencedAssets, getCheckpointCharacterVisibleTextureNames
 
-// Module 13446 (CheckpointCharacterReferencedAssets)
+// Module 13461 (CheckpointCharacterReferencedAssets)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13447 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13612 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13462 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13627 */;
 import size from "module_2" /* 2 */;
 
 let set = new Set([1]);
@@ -68,7 +68,7 @@ export function getCheckpointCharacterReferencedAssets(checkpointCharacterLoaded
       const tmpResult = CheckpointCharacterTextureUtils;
       url = tmpResult.getCheckpointCharacterTextureUrl(name, closure_1);
     } else {
-      url = tmp(13613).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;
+      url = tmp(13628).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;
     }
     obj = { source: { uri: url } };
     obj[swapKey] = obj;

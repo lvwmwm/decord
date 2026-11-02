@@ -1,10 +1,10 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17352
+// Function ID: 17353
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1383, 1072, 21, 5014, 575, 1391, 1113, 3870, 1498, 7326, 1497, 504, 2047, 7351, 1252, 13718, 1405, 5854, 5258, 17340, 1994, 17341, 8738, 8735, 7152, 6446, 16454, 13719, 9905, 13730, 6041, 5624, 17342, 7060, 6975, 2061, 6027, 5634, 9529, 9883, 17387, 10290, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 1072, 21, 5014, 575, 1391, 1113, 3870, 1498, 7326, 1497, 504, 2047, 7351, 1252, 13733, 1405, 5854, 5258, 17353, 1994, 17354, 8738, 8735, 7152, 6446, 16467, 13734, 9905, 13745, 6041, 5624, 17355, 7060, 6975, 2061, 6027, 5634, 9529, 9883, 17400, 10290, 2]
 // Exports: default
 
-// Module 17339 (CustomTypingIndicatorEditScreen)
+// Module 17352 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import user from "user" /* 1391 */;
@@ -14,7 +14,7 @@ import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7326 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13718 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -145,12 +145,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(17340, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17353, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(17341, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17354, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations];

@@ -97,12 +97,12 @@ export default function getChannelA11yLabel(mentionCount) {
       const t7 = intl20.t;
       Lo0dCa = unread ? t7["fxxUo/"] : t7.lts3Ld;
     }
-    const intl11 = intl20.intl;
+    const intl10 = intl20.intl;
     const obj2 = { channelName, mentionCount: num };
-    const items = [intl11.formatToPlainString(Lo0dCa, obj2), ];
-    const intl12 = intl20.intl;
+    const items = [intl10.formatToPlainString(Lo0dCa, obj2), ];
+    const intl11 = intl20.intl;
     const obj3 = { members: channel.recipients.length + 1 };
-    items[1] = intl12.formatToPlainString(intl20.t.CxSA5N, obj3);
+    items[1] = intl11.formatToPlainString(intl20.t.CxSA5N, obj3);
     joined = items.join(", ");
   } else if (hasOwnProperty.GUILD_STORE === type) {
     g8ONM0 = intl20.t.Bo4msg;
@@ -189,24 +189,24 @@ export default function getChannelA11yLabel(mentionCount) {
       }
     }
     if (null != voiceChannelStartTime) {
-      const push5 = items1.push;
-      const intl9 = intl20.intl;
-      const formatToPlainString = intl9.formatToPlainString;
+      const push11 = items1.push;
+      const intl19 = intl20.intl;
+      const formatToPlainString2 = intl19.formatToPlainString;
       const obj8 = { duration: tmpResult.formatActiveA11yTimestamp(obj9, Date.now()) };
       const JQtsGh = intl20.t.JQtsGh;
       const _Date = Date;
       obj9 = { start: voiceChannelStartTime };
       tmpResult = utils;
-      push5(formatToPlainString(JQtsGh, obj8));
+      push11(formatToPlainString2(JQtsGh, obj8));
     }
-    const tmp17 = null != activityNames && activityNames.length > 0;
-    if (tmp17) {
-      const push6 = items1.push;
-      const intl10 = intl20.intl;
-      const formatToPlainString2 = intl10.formatToPlainString;
+    const tmp15 = null != activityNames && activityNames.length > 0;
+    if (tmp15) {
+      const push5 = items1.push;
+      const intl9 = intl20.intl;
+      const formatToPlainString = intl9.formatToPlainString;
       const obj10 = { activeActivities: activityNames.join(", ") };
       const LmYuHT = intl20.t.LmYuHT;
-      push6(formatToPlainString2(LmYuHT, obj10));
+      push5(formatToPlainString(LmYuHT, obj10));
     }
     joined = items1.join(", ");
   } else if (hasOwnProperty.GUILD_STAGE_VOICE === type) {
@@ -246,9 +246,9 @@ export default function getChannelA11yLabel(mentionCount) {
     const items2 = [joined];
     items4 = items2;
   } else if (null != g8ONM0) {
-    const intl13 = intl20.intl;
+    const intl12 = intl20.intl;
     const obj11 = { channelName, mentionCount: num };
-    const items3 = [intl13.formatToPlainString(g8ONM0, obj11)];
+    const items3 = [intl12.formatToPlainString(g8ONM0, obj11)];
     items4 = items3;
   } else {
     items4 = [];
@@ -257,46 +257,46 @@ export default function getChannelA11yLabel(mentionCount) {
     items4.unshift(stringResult1);
   }
   if (isIncomingCall) {
-    const push8 = items4.push;
-    const intl15 = intl20.intl;
-    push8(intl15.string(intl20.t["fk1/bX"]));
-  } else if (flag) {
     const push7 = items4.push;
     const intl14 = intl20.intl;
-    push7(intl14.string(intl20.t["NGg/fm"]));
+    push7(intl14.string(intl20.t["fk1/bX"]));
+  } else if (flag) {
+    const push6 = items4.push;
+    const intl13 = intl20.intl;
+    push6(intl13.string(intl20.t["NGg/fm"]));
   }
-  const tmp22 = null != embeddedActivitiesCount && embeddedActivitiesCount > 0;
-  if (tmp22) {
-    const push9 = items4.push;
-    const intl16 = intl20.intl;
+  const tmp20 = null != embeddedActivitiesCount && embeddedActivitiesCount > 0;
+  if (tmp20) {
+    const push8 = items4.push;
+    const intl15 = intl20.intl;
     const obj12 = { activitiesCount: embeddedActivitiesCount };
-    push9(intl16.formatToPlainString(intl20.t.O6PLYd, obj12));
+    push8(intl15.formatToPlainString(intl20.t.O6PLYd, obj12));
   }
   if (channel.isNSFW()) {
-    const push10 = items4.push;
-    const intl17 = intl20.intl;
-    push10(intl17.string(intl20.t.jVv7YM));
+    const push9 = items4.push;
+    const intl16 = intl20.intl;
+    push9(intl16.string(intl20.t.jVv7YM));
   }
   if (channel.isSpoilerChannel()) {
-    const push11 = items4.push;
-    const intl18 = intl20.intl;
-    push11(intl18.string(intl20.t["+Pu3G1"]));
+    const push10 = items4.push;
+    const intl17 = intl20.intl;
+    push10(intl17.string(intl20.t["+Pu3G1"]));
   }
-  let tmp26;
+  let tmp24;
   if (isSubscriptionGated) {
     let stringResult2;
-    const intl19 = intl20.intl;
-    const string = intl19.string;
+    const intl18 = intl20.intl;
+    const string = intl18.string;
     const t9 = intl20.t;
     if (needSubscriptionToAccess) {
       stringResult2 = string(t9["oj+HOs"]);
     } else {
       stringResult2 = string(t9.xI3TQQ);
     }
-    tmp26 = stringResult2;
+    tmp24 = stringResult2;
   }
-  if (null != tmp26) {
-    items4.push(tmp26);
+  if (null != tmp24) {
+    items4.push(tmp24);
   }
   if (null != stringResult) {
     items4.push(stringResult);

@@ -1,10 +1,10 @@
-// Module ID: 14975
-// Function ID: 14976
+// Module ID: 14979
+// Function ID: 14980
 // Name: useProfileNewContent
-// Dependencies: [9471, 1383, 7772, 7784, 14976, 14977, 504, 7783, 9470, 2]
+// Dependencies: [9471, 1383, 7772, 7784, 14980, 14981, 504, 7783, 9470, 2]
 // Exports: default
 
-// Module 14975 (useProfileNewContent)
+// Module 14979 (useProfileNewContent)
 import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7783 */;
 import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7784 */;
 import WishlistStore from "WishlistStore" /* 9471 */;

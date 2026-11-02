@@ -1,10 +1,10 @@
-// Module ID: 18314
-// Function ID: 18315
+// Module ID: 18327
+// Function ID: 18328
 // Name: useDefaultAuthorizationNotifiers
 // Dependencies: [19, 1993, 1072, 504, 5742, 6732, 5712, 1113, 3320, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 18314 (useDefaultAuthorizationNotifiers)
+// Module 18327 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3320 from "module_3320" /* 3320 */;
@@ -61,8 +61,8 @@ export function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyL
     if (ref.current) {
       if (false === previousWhen) {
         if (true === hasAlreadyLinked) {
-          const tmp3 = stateFromStores;
-          if (tmp3) {
+          const tmp10 = stateFromStores;
+          if (tmp10) {
             tmp.current = false;
             if (false) {
               const obj = { text: intl.string(_modDef3320.uG6teD) };

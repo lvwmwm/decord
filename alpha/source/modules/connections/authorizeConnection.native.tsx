@@ -1,7 +1,7 @@
 // Module ID: 9720
 // Function ID: 9721
 // Name: authorizeConnection
-// Dependencies: [7349, 1072, 572, 5258, 9721, 14622, 14633, 6744, 14644, 1994, 6574, 14646, 8940, 5709, 7347, 2]
+// Dependencies: [7349, 1072, 572, 5258, 9721, 14636, 14647, 6744, 14658, 1994, 6574, 14660, 8940, 5709, 7347, 2]
 // Exports: default
 
 // Module 9720 (authorizeConnection)
@@ -56,7 +56,7 @@ export default function authorizeConnection(overrideUrl) {
           const obj11 = overrideUrl(5258);
           obj11.hideActionSheet();
           const items1 = [_location];
-          const obj12 = overrideUrl(14633);
+          const obj12 = overrideUrl(14647);
           obj12.showModal(items1);
           const tmp15 = overrideUrl;
           if (null != onClose) {
@@ -70,7 +70,7 @@ export default function authorizeConnection(overrideUrl) {
           let obj = { locationStack: items2 };
           items2 = [_location];
           const obj9 = overrideUrl(6744);
-          obj9.pushLazy(onClose(1994)(14644, dependencyMap.paths), obj);
+          obj9.pushLazy(onClose(1994)(14658, dependencyMap.paths), obj);
           const tmp10 = overrideUrl;
           if (null != onClose) {
             const handleModalClose3 = handleModalClose6;
@@ -90,7 +90,7 @@ export default function authorizeConnection(overrideUrl) {
             tmp28Result.hideActionSheet();
             const obj2 = { platformType, location: _location, successRedirect };
             const tmp28Result4 = overrideUrl(6744);
-            tmp28Result4.pushLazy(onClose(1994)(14646, tmp29.paths), obj2);
+            tmp28Result4.pushLazy(onClose(1994)(14660, tmp29.paths), obj2);
             if (null != onClose) {
               const handleModalClose2 = handleModalClose6;
               const tmp28Result5 = overrideUrl(572);
@@ -128,7 +128,7 @@ export default function authorizeConnection(overrideUrl) {
     const obj13 = overrideUrl(5258);
     obj13.hideActionSheet();
     const items3 = [_location];
-    const obj14 = overrideUrl(14622);
+    const obj14 = overrideUrl(14636);
     obj14.showModal(items3, platformType);
     const tmp19 = overrideUrl;
     if (null != onClose) {

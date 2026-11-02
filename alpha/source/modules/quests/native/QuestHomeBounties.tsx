@@ -1,17 +1,17 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16981
+// Function ID: 16982
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 7845, 4860, 21, 575, 5014, 4847, 7569, 16969, 572, 16975, 9681, 504, 16982, 16988, 2]
+// Dependencies: [32, 19, 17, 7845, 4860, 21, 575, 5014, 4847, 7569, 16982, 572, 16988, 9681, 504, 16995, 17001, 2]
 
-// Module 16968 (QuestHomeBounties)
+// Module 16981 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import dismissible_content from "dismissible_content" /* 4847 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 16969 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16982 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16988 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 16982 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16995 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 17001 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import BountyStore from "BountyStore" /* 7845 */;
@@ -108,8 +108,8 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     if (!stateFromStores) {
       let tmp11 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp11) {
-        tmp11 = orbShopProducts.length >= tmp(16975).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-        orbShopProducts.length >= tmp(16975).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp11 = orbShopProducts.length >= tmp(16988).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        orbShopProducts.length >= tmp(16988).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp14Result = null;
       if (tmp11) {

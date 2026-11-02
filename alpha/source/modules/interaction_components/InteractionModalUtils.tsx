@@ -1,10 +1,10 @@
-// Module ID: 19489
-// Function ID: 19490
+// Module ID: 19496
+// Function ID: 19497
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 4863, 7701, 4926, 5045, 8208, 16225, 8697, 1072, 8696, 1992, 1409, 5672, 7428, 504, 5612, 11, 572, 9778, 1113, 38, 6065, 10217, 8701, 6070, 8212, 1282, 1089, 2]
+// Dependencies: [5, 32, 19, 502, 4863, 7701, 4926, 5045, 8208, 16229, 8697, 1072, 8696, 1992, 1409, 5672, 7428, 504, 5612, 11, 572, 9778, 1113, 38, 6065, 10217, 8701, 6070, 8212, 1282, 1089, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 19489 (InteractionModalUtils)
+// Module 19496 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import Server from "Server" /* 1992 */;
 import DraftStore from "DraftStore" /* 7701 */;
 import ComponentStateContext from "ComponentStateContext" /* 8696 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 16225 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 16229 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ let _require, c0, c1, c5, c6, importDefault, set;
 let tmp5;
 const getURLForApplicationDefault = tmp5(5672);
 function getData(arg0, arr, arg2) {
-  const f117887 = (type) => {
+  const f117941 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f117887) };
+      const obj4 = { type: type.type, components: components.map(f117941) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f117887)[0] };
+                const obj21 = { type: type.type, component: items.map(f117941)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f117887);
+  return arr.map(f117941);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;

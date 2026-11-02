@@ -1,10 +1,10 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15864
+// Function ID: 15865
 // Name: ToastEntity
 // Dependencies: [19, 17, 21, 5014, 575, 5624, 5717, 2027, 2]
 // Exports: ToastEntity
 
-// Module 15860 (ToastEntity)
+// Module 15864 (ToastEntity)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

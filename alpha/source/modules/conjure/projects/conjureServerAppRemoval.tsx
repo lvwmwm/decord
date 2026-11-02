@@ -1,10 +1,10 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13278
+// Function ID: 13279
 // Name: conjureServerAppRemoval
 // Dependencies: [5, 19, 2038, 4944, 4926, 4885, 4946, 4956, 1383, 1072, 10891, 5652, 504, 12, 6902, 7419, 6881, 2]
 // Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp, useConjureServerApp
 
-// Module 13263 (conjureServerAppRemoval)
+// Module 13278 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1072 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
@@ -24,11 +24,11 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f104178 = (id) => {
+const f104239 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f104179 = () => {
+const f104240 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -226,7 +226,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f104179);
+    application.catch(f104240);
   }
 }
 function loadMissingApplication() {
@@ -324,7 +324,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f104179);
+        application.catch(f104240);
       }
     }
   }, items2);
@@ -426,7 +426,7 @@ export function loadConjureServerApp() {
 }
 export function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f104178)];
+  const items = [...channels.map(f104239)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -440,7 +440,7 @@ export function conjureDeleteAppChannelItems(rest, channelId) {
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f104178), obj, obj2];
+  const items = [...found.map(f104239), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 }

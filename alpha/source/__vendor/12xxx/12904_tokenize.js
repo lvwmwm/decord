@@ -1,62 +1,30 @@
 // Module ID: 12904
 // Function ID: 12905
 // Name: tokenize
-// Dependencies: [12833]
+// Dependencies: [12836, 12832]
 
 // Module 12904 (tokenize)
-import tokenize from "tokenize" /* 12833 */;
+import _mod12832 from "module_12832" /* 12832 */;
+import tokenize from "tokenize" /* 12836 */;
 
-let rect;
-function consumeNumber() {
-  let num;
-  const self = this;
-  const scanner = this.scanner;
-  scanner.skipWS();
-  const consumeResult = this.consume(Number);
-  for (let num = 0; num < consumeResult.length; num = num + 1) {
-    let charCodeAtResult = consumeResult.charCodeAt(num);
-    let obj = tokenize;
-    let isDigitResult = obj.isDigit(charCodeAtResult);
-    if (!isDigitResult) {
-      isDigitResult = 46 === charCodeAtResult;
-    }
-    if (!isDigitResult) {
-      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
-    }
-  }
-  if (0 === Number(consumeResult)) {
-    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
-  }
-  return consumeResult;
-}
-const Number = tokenize.TYPE.Number;
-const Delim = tokenize.TYPE.Delim;
+let obj2;
+const Percentage = tokenize.TYPE.Percentage;
 let obj = {
-  name: "Ratio",
-  structure: rect,
+  name: "Percentage",
+  structure: obj2,
   parse() {
-    let callResult1;
-    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const scanner = self.scanner;
-    const callResult = consumeNumber.call(self);
-    scanner.skipWS();
-    const scanner2 = self.scanner;
-    const obj = consumeNumber;
-    if (!scanner2.isDelim(47)) {
-      self.error("Solidus is expected");
-    }
-    self.eat(Delim);
-    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
-    callResult1 = obj.call(self);
-    return rect;
+    const obj = _mod12832;
+    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
+    this.eat(Percentage);
+    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
+    return obj2;
   },
-  generate(left) {
-    this.chunk(left.left);
-    this.chunk("/");
-    this.chunk(left.right);
+  generate(value) {
+    this.chunk(value.value);
+    this.chunk("%");
   }
 };
-rect = { left: String, right: String };
+obj2 = { value: String };
 
 export default obj;

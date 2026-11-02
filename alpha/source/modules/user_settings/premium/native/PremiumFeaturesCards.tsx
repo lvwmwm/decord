@@ -29,7 +29,7 @@ export default function PremiumFeaturesCards(style) {
   let onPaymentSuccess;
   let order;
   let tmp3;
-  const f95866 = (premiumType, index) => {
+  const f95903 = (premiumType, index) => {
     let tmp3;
     const tmp = jsx;
     const tmp2 = PremiumFeaturesCardDefault;
@@ -57,8 +57,8 @@ export default function PremiumFeaturesCards(style) {
     items1 = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = onFirstCardLayout);
   }
-  obj = { style: items2, onLayout, children: items1.map(f95866) };
+  obj = { style: items2, onLayout, children: items1.map(f95903) };
   items2 = [tmp2.container, style];
-  return <View style={items2} onLayout={onLayout}>{items1.map(f95866)}</View>;
+  return <View style={items2} onLayout={onLayout}>{items1.map(f95903)}</View>;
 };
 export { PremiumFeatureCardOrder };

@@ -1,9 +1,9 @@
-// Module ID: 19262
-// Function ID: 19263
+// Module ID: 19269
+// Function ID: 19270
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 5015, 4862, 6714, 5764, 11223, 11221, 11226, 1072, 5681, 21, 5095, 1187, 5014, 575, 11222, 19215, 19263, 12043, 19264, 19213, 1113, 11949, 9234, 9233, 6960, 7086, 5637, 7241, 19211, 7901, 6717, 10932, 19143, 19265, 19266, 504, 19248, 19267, 5080, 9291, 9319, 8682, 9317, 9340, 9295, 19268, 5274, 7326, 8750, 9246, 6439, 9290, 5624, 14735, 19186, 2]
+// Dependencies: [19, 17, 5015, 4862, 6714, 5764, 11223, 11221, 11226, 1072, 5681, 21, 5095, 1187, 5014, 575, 11222, 19222, 19270, 12044, 19271, 19220, 1113, 11950, 9234, 9233, 6960, 7086, 5637, 7241, 19218, 7901, 6717, 10931, 19150, 19272, 19273, 504, 19255, 19274, 5080, 9291, 9319, 8682, 9317, 9340, 9295, 19275, 5274, 7326, 8750, 9246, 6439, 9290, 5624, 14739, 19193, 2]
 
-// Module 19262 (VoicePanelCardFloatingControls)
+// Module 19269 (VoicePanelCardFloatingControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
@@ -21,15 +21,15 @@ import usePlayingGameActivitiesDefault from "usePlayingGameActivities" /* 9291 *
 import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 9317 */;
 import useResolveGameDefault from "useResolveGame" /* 9319 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10932 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10931 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
-import VoiceXIcon from "VoiceXIcon" /* 11949 */;
-import useStableParticipant from "useStableParticipant" /* 19211 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19213 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19215 */;
-import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 19248 */;
+import VoiceXIcon from "VoiceXIcon" /* 11950 */;
+import useStableParticipant from "useStableParticipant" /* 19218 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19220 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19222 */;
+import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 19255 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -58,7 +58,7 @@ let closure_18;
 let tmp;
 const useGameProfileObscuredDefault = tmp(8682);
 const GuildTagDefault = tmp(9295);
-const GameTagChipletDefault = tmp(19268);
+const GameTagChipletDefault = tmp(19275);
 function StreamIcon(voicePlatform) {
   let items;
   voicePlatform = voicePlatform.voicePlatform;
@@ -86,11 +86,11 @@ function StreamIcon(voicePlatform) {
   const animatedStyle = obj.useAnimatedStyle(fn);
   let tmp2Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp2Result = tmp2(19263);
+    tmp2Result = tmp2(19270);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp2Result = tmp2(12043);
+    tmp2Result = tmp2(12044);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp2Result = tmp2(19264);
+    tmp2Result = tmp2(19271);
   }
   const obj3 = { source: tmp2Result, style: items };
   items = [tmp.iconWithoutBackground, animatedStyle];
@@ -263,9 +263,9 @@ let closure_31 = react.memo(function CloseButton(participant) {
       const result = leaveEmbeddedActivity(obj2);
     }
   }, items);
-  obj4 = { icon: guildId(19265), onPress: callback, accessibilityLabel: stringResult };
-  tmp6 = guildId(19143);
-  const obj5 = participant(19211);
+  obj4 = { icon: guildId(19272), onPress: callback, accessibilityLabel: stringResult };
+  tmp6 = guildId(19150);
+  const obj5 = participant(19218);
   let result = obj5.isStableActivityParticipant(participant);
   const intl = participant(1113).intl;
   const string = intl.string;

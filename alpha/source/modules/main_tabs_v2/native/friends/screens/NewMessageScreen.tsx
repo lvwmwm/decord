@@ -1,10 +1,10 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18835
+// Function ID: 18836
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4867, 4863, 4956, 7395, 10727, 1072, 21, 5095, 5624, 5014, 575, 1375, 7485, 7396, 572, 504, 1252, 18829, 5254, 18830, 9812, 1113, 11214, 12221, 7326, 7351, 5607, 5593, 11629, 11627, 11626, 9824, 1099, 11630, 5711, 10978, 10977, 5722, 5721, 13388, 5634, 13901, 18768, 2]
+// Dependencies: [5, 32, 19, 17, 4867, 4863, 4956, 7395, 10727, 1072, 21, 5095, 5624, 5014, 575, 1375, 7485, 7396, 572, 504, 1252, 18836, 5254, 18837, 9812, 1113, 11214, 12361, 7326, 7351, 5607, 5593, 11630, 11628, 11627, 9824, 1099, 11631, 5711, 10978, 10977, 5722, 5721, 13403, 5634, 13916, 18775, 2]
 // Exports: default
 
-// Module 18828 (NewMessageScreen)
+// Module 18835 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -25,8 +25,8 @@ import UserRowConstants from "UserRowConstants" /* 10727 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10977 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10978 */;
 import ChatViewDefault from "ChatView" /* 11214 */;
-import NoResultsDefault from "NoResults" /* 13388 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 18829 */;
+import NoResultsDefault from "NoResults" /* 13403 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 18836 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -54,10 +54,10 @@ let obj2;
 let obj3;
 let str;
 let tmp2;
-const getGroupDMRecipientLimitDefault = tmp2(11627);
-const GroupDMNitroCapExperimentDefault = tmp2(11629);
-const NewMessageUserListDefault = tmp2(13901);
-const GroupDMNitroUpsellBannerDefault = tmp2(18768);
+const getGroupDMRecipientLimitDefault = tmp2(11628);
+const GroupDMNitroCapExperimentDefault = tmp2(11630);
+const NewMessageUserListDefault = tmp2(13916);
+const GroupDMNitroUpsellBannerDefault = tmp2(18775);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -225,7 +225,7 @@ function Header(recipientLimit) {
   if (usePersonLimitCopy) {
     let num2 = 1;
     const obj2 = { title, memberCount: numInGroup + 1, recipientLimit };
-    return closure_17(recipientLimit(18830), obj2);
+    return closure_17(recipientLimit(18837), obj2);
   } else {
     let num = 0;
     const obj3 = { style: tmp.header, children: items1 };
@@ -284,7 +284,7 @@ function ChatPreview(channelId) {
   const obj3 = { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
   items2[0] = closure_17(ChatViewDefault, obj3);
   const obj4 = { portal: obj5.isAndroid() };
-  const PortalKeyboardRenderer = channelId(12221).PortalKeyboardRenderer;
+  const PortalKeyboardRenderer = channelId(12361).PortalKeyboardRenderer;
   obj5 = channelId(1375);
   items2[1] = closure_17(PortalKeyboardRenderer, obj4);
   return closure_17(View, obj);
@@ -514,9 +514,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "concat", parent_id: "style" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" } };
           const obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "concat", parent_id: "style" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" });
           obj.dispatch(obj2);
         };
       }
@@ -536,13 +536,13 @@ export default function NewMessageScreen(navigation) {
   const config = tmp2Result.useConfig({ location: "NewMessageScreen" });
   const tmp20 = getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true });
   relationshipCount = tmp20;
-  let obj4 = navigation(11626);
+  let obj4 = navigation(11627);
   const result = obj4.shouldUseGroupDMParticipantLimitUI(config.enabled, tmp20);
   c10 = result;
-  navigation(11626);
+  navigation(11627);
   enabled = config.enabled;
   if (enabled) {
-    const tmp13Result = navigation(11626);
+    const tmp13Result = navigation(11627);
     enabled = tmp13Result.isGroupDMNitroUpsellAudience(tmp23);
   }
   const items7 = [navigation, selectedUserIds.length, FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, tmp20, result];

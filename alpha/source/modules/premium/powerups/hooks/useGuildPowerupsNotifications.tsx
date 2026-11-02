@@ -1,25 +1,25 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14067
+// Function ID: 14068
 // Name: useGuildPowerupsNotifications
-// Dependencies: [32, 19, 8469, 4885, 14053, 5229, 5230, 1072, 4860, 8463, 14055, 14056, 5233, 14057, 1379, 4847, 5248, 8468, 14058, 4848, 563, 14054, 14062, 5235, 5234, 14064, 14065, 14066, 14067, 14069, 14049, 2]
+// Dependencies: [32, 19, 8469, 4885, 14068, 5229, 5230, 1072, 4860, 8463, 14070, 14071, 5233, 14072, 1379, 4847, 5248, 8468, 14073, 4848, 563, 14069, 14077, 5235, 5234, 14079, 14080, 14081, 14082, 14084, 14064, 2]
 // Exports: default, maybeGetGameServerHostingGuildEligiblePopoutDCF, maybeGetLevelUnlockedPopoutDCF, useAutoDismissGuildPowerupsNotifications
 
-// Module 14052 (useGuildPowerupsNotifications)
+// Module 14067 (useGuildPowerupsNotifications)
 import dismissible_content from "dismissible_content" /* 4847 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import GameServerExperiment from "GameServerExperiment" /* 5248 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8463 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8468 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14049 */;
-import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 14054 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 14055 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14056 */;
-import useGuildPowerupRollbackNotificationConfigDefault from "useGuildPowerupRollbackNotificationConfig" /* 14058 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14064 */;
+import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 14069 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 14070 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14071 */;
+import useGuildPowerupRollbackNotificationConfigDefault from "useGuildPowerupRollbackNotificationConfig" /* 14073 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 8469 */;
 import GuildStore from "GuildStore" /* 4885 */;
-import GuildPowerupsNotificationStore from "GuildPowerupsNotificationStore" /* 14053 */;
+import GuildPowerupsNotificationStore from "GuildPowerupsNotificationStore" /* 14068 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5229 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
 import Constants from "Constants" /* 1072 */;
@@ -38,12 +38,12 @@ let closure_17;
 let map1;
 let tmp7;
 let unpackModuleId;
-const useGuildPowerupNewPerkMarketingVersionDefault = tmp7(14064);
-const useBoostToUnlockFeaturedPowerupDefault = tmp7(14065);
-const useCanPurchaseBoostsDefault = tmp7(14066);
-const useFeaturedExpiringPowerupDefault = tmp7(14067);
-const f105714 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
-const f105715 = () => stateForGuild.getStateForGuild(closure_0);
+const useGuildPowerupNewPerkMarketingVersionDefault = tmp7(14079);
+const useBoostToUnlockFeaturedPowerupDefault = tmp7(14080);
+const useCanPurchaseBoostsDefault = tmp7(14081);
+const useFeaturedExpiringPowerupDefault = tmp7(14082);
+const f105775 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
+const f105776 = () => stateForGuild.getStateForGuild(closure_0);
 function maybeGetPerkPurchaseablePopoutDCF(c0, arg1, available, serverThemeEnabled) {
   function markAsDismissed(AUTO_DISMISS) {
     const obj = GuildDismissibleContentUtils;
@@ -113,7 +113,7 @@ function maybeGetPerkPurchaseablePopoutDCF(c0, arg1, available, serverThemeEnabl
       const tmp4Result = require("GuildDismissibleContentUtils");
       if (!tmp4Result.isContentDismissed(require("dismissible_content").DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, c0)) {
         obj = {
-          type: tmp4(14056).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE,
+          type: tmp4(14071).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE,
           powerups: found,
           markAsDismissed(AUTO_DISMISS) {
                   const obj = GuildDismissibleContentUtils;
@@ -294,8 +294,8 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
   const tmp13 = useGuildPowerupNewPerkMarketingVersionDefault(c0, arg1);
   let closure_8 = tmp13;
   let tmp15 = null != arg1;
-  const useNewPerkAvailableCoachmarkDCF = tmp(14062).useNewPerkAvailableCoachmarkDCF;
-  tmp(14062);
+  const useNewPerkAvailableCoachmarkDCF = tmp(14077).useNewPerkAvailableCoachmarkDCF;
+  tmp(14077);
   if (tmp15) {
     tmp15 = !tmp6;
   }
@@ -308,8 +308,8 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
   let closure_11 = tmp19;
   let tmp20 = useCanPurchaseBoostsDefault();
   let tmp22 = null != arg1;
-  const useBoostToUnlockCoachmarkDCF = tmp(14062).useBoostToUnlockCoachmarkDCF;
-  tmp(14062);
+  const useBoostToUnlockCoachmarkDCF = tmp(14077).useBoostToUnlockCoachmarkDCF;
+  tmp(14077);
   if (tmp22) {
     tmp22 = !tmp6;
   }
@@ -329,8 +329,8 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
   let tmp26 = useFeaturedExpiringPowerupDefault(c0);
   let closure_14 = tmp26;
   let tmp28 = null != arg1;
-  const useExpiringPowerupCoachmarkDCF = tmp(14062).useExpiringPowerupCoachmarkDCF;
-  tmp(14062);
+  const useExpiringPowerupCoachmarkDCF = tmp(14077).useExpiringPowerupCoachmarkDCF;
+  tmp(14077);
   if (tmp28) {
     tmp28 = !tmp6;
   }
@@ -350,8 +350,8 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
   const tmpResult8 = tmp(5248);
   const gameServerEnabled = tmpResult8.getGameServerEnabled(c0, "useGuildPowerupsChannelListPopout");
   let tmp34 = null != arg1;
-  const useNewGamesCoachmarkDC = tmp(14062).useNewGamesCoachmarkDC;
-  tmp(14062);
+  const useNewGamesCoachmarkDC = tmp(14077).useNewGamesCoachmarkDC;
+  tmp(14077);
   if (tmp34) {
     tmp34 = gameServerEnabled;
   }
@@ -457,7 +457,7 @@ function useGuildPowerupsChannelListPopout(c0, arg1) {
       }
     }
   }, items2);
-  const tmpResult10 = tmp(14062);
+  const tmpResult10 = tmp(14077);
   const tmp3Result8 = tmp3(tmpResult10.useGuildPowerupNotificationDCF(null != memo), 2);
   const first = tmp3Result8[0];
   let closure_21 = tmp41;
@@ -537,10 +537,10 @@ export default function useGuildPowerupsNotifications(arg0) {
   const items = [GuildPowerupsNotificationStore];
   const items1 = [arg0];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f105714, items1);
+  const stateFromStores = obj.useStateFromStores(items, f105775, items1);
   const items2 = [GuildPowerupsStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStores1 = obj2.useStateFromStores(items2, f105715);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f105776);
   ({ indicator, showUnread } = useGuildPowerupsNotificationIndicator(arg0, stateFromStores1, stateFromStores));
   useGuildPowerupsNotificationIndicator(arg0, stateFromStores1, stateFromStores);
   const tmp6Result = useGuildPowerupsChannelListPopout(arg0, stateFromStores1);
@@ -627,10 +627,10 @@ export function useAutoDismissGuildPowerupsNotifications(guildId) {
   const items1 = [GuildPowerupsNotificationStore];
   const items2 = [guildId];
   const obj2 = require("useStateFromStores");
-  const stateFromStores1 = obj2.useStateFromStores(items1, f105714, items2);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f105775, items2);
   const items3 = [GuildPowerupsStore];
   const obj3 = require("useStateFromStores");
-  const stateFromStores2 = obj3.useStateFromStores(items3, f105715);
+  const stateFromStores2 = obj3.useStateFromStores(items3, f105776);
   ({ indicator, showUnread } = useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1));
   useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1);
   let tmp12;

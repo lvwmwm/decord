@@ -1,15 +1,15 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11806
+// Function ID: 11807
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 4862, 6846, 6450, 1072, 6847, 1089, 11806, 568, 1108, 1252, 4935, 9333, 6848, 11807, 10885, 6849, 9329, 1994, 11809, 11810, 2]
+// Dependencies: [5, 32, 4862, 6846, 6450, 1072, 6847, 1089, 11807, 568, 1108, 1252, 4935, 9333, 6848, 11808, 10885, 6849, 9329, 1994, 11810, 11811, 2]
 
-// Module 11805 (PostMessageTransport)
+// Module 11806 (PostMessageTransport)
 import _mod568 from "module_568" /* 568 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import Constants2 from "Constants" /* 6450 */;
 import FramesConstants from "FramesConstants" /* 6847 */;
 import RPCErrorDefault from "RPCError" /* 9333 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11806 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 11807 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;

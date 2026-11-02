@@ -1,22 +1,22 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12583
+// Function ID: 12584
 // Name: conjureScopeSetup
-// Dependencies: [109, 5, 10851, 12581, 10850, 6844, 1072, 510, 10315, 12582, 12583, 1113, 3868, 1282, 572, 10875, 10874, 2]
+// Dependencies: [109, 5, 10851, 12584, 10850, 6844, 1072, 510, 10315, 12585, 12586, 1113, 3868, 1282, 572, 10875, 10874, 2]
 // Exports: getHeldConjurePromptGuildId, keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
 
-// Module 12580 (conjureScopeSetup)
+// Module 12583 (conjureScopeSetup)
 import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef3868 from "module_3868" /* 3868 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12582 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12583 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12585 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12586 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureChatStore from "ConjureChatStore" /* 10851 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12581 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12584 */;
 import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10850 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f102534 = function*(arg0, value) {
+const f102570 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -474,7 +474,7 @@ export function settleConjureInstallScope(arg0, arg1, arg2) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f102534)();
+    value = tmp2(f102570)();
   }
   const result = obj.set(combined, value);
   return value;
@@ -550,7 +550,7 @@ export function switchConjureInstallScope(arg0, id, arg2, arg3) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f102534)();
+    value = tmp2(f102570)();
   }
   const result = obj.set(combined, value);
   return value;

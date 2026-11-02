@@ -1,26 +1,26 @@
-// Module ID: 19779
-// Function ID: 19780
+// Module ID: 19786
+// Function ID: 19787
 // Name: MemberRolesAbstractUI
-// Dependencies: [19, 21, 19780, 19781, 19782, 7069, 5717, 2]
+// Dependencies: [19, 21, 19787, 19788, 19789, 7069, 5717, 2]
 // Exports: MemberRolesAbstractUI
 
-// Module 19779 (MemberRolesAbstractUI)
+// Module 19786 (MemberRolesAbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7069 */;
-import _modDef19780 from "module_19780" /* 19780 */;
-import _modDef19781 from "module_19781" /* 19781 */;
-import _modDef19782 from "module_19782" /* 19782 */;
+import _modDef19787 from "module_19787" /* 19787 */;
+import _modDef19788 from "module_19788" /* 19788 */;
+import _modDef19789 from "module_19789" /* 19789 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19780 };
+let obj2 = { uri: _modDef19787 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19781 };
+let obj3 = { uri: _modDef19788 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19782 };
-({ uri: _modDef19782 });
+obj[3] = { uri: _modDef19789 };
+({ uri: _modDef19789 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/MemberRolesAbstractUI.native.tsx");
 

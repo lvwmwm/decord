@@ -1,13 +1,13 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12596
+// Function ID: 12597
 // Name: useConjureManualAppBuildRequest
-// Dependencies: [32, 19, 1113, 3868, 12594, 2]
+// Dependencies: [32, 19, 1113, 3868, 12597, 2]
 // Exports: default
 
-// Module 12593 (useConjureManualAppBuildRequest)
+// Module 12596 (useConjureManualAppBuildRequest)
 import intl2 from "intl" /* 1113 */;
 import _modDef3868 from "module_3868" /* 3868 */;
-import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12594 */;
+import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

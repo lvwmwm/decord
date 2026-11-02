@@ -1,10 +1,10 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15034
+// Function ID: 15035
 // Name: NameplateProductPreview
 // Dependencies: [19, 17, 5015, 21, 5014, 575, 8742, 1984, 1113, 5624, 5587, 8749, 8830, 8737, 504, 5068, 6439, 10772, 10773, 1187, 10797, 6975, 2]
 // Exports: default
 
-// Module 15030 (NameplateProductPreview)
+// Module 15034 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1F960}" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1F63E}" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

@@ -1,10 +1,10 @@
-// Module ID: 13324
-// Function ID: 13325
+// Module ID: 13339
+// Function ID: 13340
 // Name: AppealIngestionExternalLink
 // Dependencies: [19, 17, 21, 5014, 575, 6980, 5709, 5624, 1187, 8363, 2]
 // Exports: default
 
-// Module 13324 (AppealIngestionExternalLink)
+// Module 13339 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
