@@ -1,26 +1,25 @@
-// Module ID: 14694
-// Function ID: 14695
+// Module ID: 14825
+// Function ID: 14826
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7846, 6781, 21, 5014, 575, 1625, 504, 14695, 5712, 1113, 5258, 9700, 7358, 5731, 14696, 5272, 7321, 5624, 5754, 7060, 6975, 5634, 14699, 2]
+// Dependencies: [19, 17, 7970, 6901, 21, 5141, 575, 1627, 504, 14826, 5832, 1113, 5381, 9832, 7478, 5851, 14827, 5395, 7441, 5747, 5874, 7186, 7101, 5754, 14830, 2]
 // Exports: default
 
-// Module 14694 (QuestRewardCodeClaimBottomSheet)
+// Module 14825 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9700 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import QuestConstants from "QuestConstants" /* 6901 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9832 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7846 */;
+import QuestStore from "QuestStore" /* 7970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let c9;
 let closure_4;
@@ -161,7 +160,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
     isFetchingRewardCode = null == code;
   }
   const obj6 = { header: closure_8(BottomSheetTitleHeader, obj7), startExpanded: true, children: null };
-  BottomSheet = tmp4(tmp2[17]).BottomSheet;
+  const BottomSheet = tmp4(tmp2[17]).BottomSheet;
   obj7 = { title: intl.string(tmp4(hasError[11]).t.srzsU2) };
   BottomSheetTitleHeader = tmp4(tmp2[18]).BottomSheetTitleHeader;
   intl = tmp4(tmp2[11]).intl;

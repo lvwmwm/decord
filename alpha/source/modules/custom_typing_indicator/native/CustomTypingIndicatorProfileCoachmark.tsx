@@ -1,23 +1,23 @@
-// Module ID: 18867
-// Function ID: 18868
+// Module ID: 19025
+// Function ID: 19026
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1072, 4860, 21, 5014, 575, 1113, 3870, 7326, 7351, 7563, 9954, 13737, 1391, 13740, 13741, 2]
+// Dependencies: [19, 17, 1072, 4987, 21, 5141, 575, 1113, 3997, 7446, 7471, 7687, 10085, 13868, 1393, 13871, 13872, 2]
 // Exports: default
 
-// Module 18867 (CustomTypingIndicatorProfileCoachmark)
+// Module 19025 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import user from "user" /* 1391 */;
-import _modDef3870 from "module_3870" /* 3870 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 13737 */;
-import _modDef13740 from "module_13740" /* 13740 */;
-import _modDef13741 from "module_13741" /* 13741 */;
+import user from "user" /* 1393 */;
+import _modDef3997 from "module_3997" /* 3997 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 13868 */;
+import _modDef13871 from "module_13871" /* 13871 */;
+import _modDef13872 from "module_13872" /* 13872 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -26,7 +26,7 @@ function CoachmarkPreview() {
   const tmp = closure_8();
   ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
   CustomTypingIndicatorDynamicAssetDefault;
-  items = [_modDef13740, _modDef13741, _modDef13740];
+  items = [_modDef13871, _modDef13872, _modDef13871];
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }
 let react = react_mod;
@@ -73,7 +73,7 @@ export default function CustomTypingIndicatorProfileCoachmark(visible) {
       renderImgComponent() {
         return closure_1_7(closure_1_9, {});
       },
-      buttonLabel: intl.string(_modDef3870["6NP6ic"]),
+      buttonLabel: intl.string(_modDef3997["6NP6ic"]),
       buttonVariant: "primary",
       onButtonPress() {
         let obj3;

@@ -1,18 +1,18 @@
-// Module ID: 19962
-// Function ID: 19963
+// Module ID: 20112
+// Function ID: 20113
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 19949, 17196, 21, 19952, 1113, 19944, 2]
+// Dependencies: [32, 19, 20099, 17339, 21, 20102, 1113, 20094, 2]
 // Exports: default
 
-// Module 19962 (GuildRoleSubscriptionGroupGatingModal)
+// Module 20112 (GuildRoleSubscriptionGroupGatingModal)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 19944 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19952 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 20094 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19949 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20099 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionsTierScenes;

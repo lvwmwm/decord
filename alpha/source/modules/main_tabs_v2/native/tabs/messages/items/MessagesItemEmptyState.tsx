@@ -1,18 +1,18 @@
-// Module ID: 18154
-// Function ID: 18155
+// Module ID: 18298
+// Function ID: 18299
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 5014, 575, 5199, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5322, 5747, 1113, 5754, 2]
 
-// Module 18154 (MessagesItemEmptyState)
+// Module 18298 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
+import RootNavigationRef from "RootNavigationRef" /* 5322 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function MessagesItemEmptyState() {
       }
     }
   }, []);
-  let obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2, children: intl.string(intl4.t["8JZof8"]) };
+  let obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", style: tmp.title, maxFontSizeMultiplier: 2, children: intl.string(intl4.t["8JZof8"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items = [React3(Heading, obj2), , ];

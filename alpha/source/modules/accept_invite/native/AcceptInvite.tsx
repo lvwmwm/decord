@@ -1,25 +1,25 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14458
+// Function ID: 14459
 // Name: AcceptInvite
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 1379, 5596, 5609, 14328, 14331, 1409, 1444, 14336, 1491, 5717, 6977, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1380, 5719, 5732, 14459, 14462, 1411, 1446, 14467, 1493, 5837, 7103, 2]
 // Exports: default
 
-// Module 14327 (AcceptInvite)
+// Module 14458 (AcceptInvite)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import useToken from "useToken" /* 5596 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5609 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Card_Card from "Card/Card" /* 6977 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import useToken from "useToken" /* 5719 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5732 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import Card_Card from "Card/Card" /* 7103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -103,12 +103,12 @@ function AcceptInviteCardComponent(invite) {
     return closure_8(InviteResolving, {});
   } else if (constants.DETAILS === first) {
     const obj2 = { invite };
-    const tmp16 = first(14328);
+    const tmp16 = first(14459);
     const merged = Object.assign(invite);
     return closure_8(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
     let obj = { invite };
-    const tmp9 = first(14331);
+    const tmp9 = first(14462);
     const merged1 = Object.assign(invite);
     return closure_8(tmp9, obj);
   } else {
@@ -155,7 +155,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(14336);
+    guildSplashSource = tmp3(14467);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

@@ -1,30 +1,30 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17470
+// Function ID: 17471
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 5015, 1383, 1072, 1621, 21, 1402, 5014, 575, 1498, 6028, 1260, 17328, 504, 16487, 8737, 6439, 5253, 1403, 1400, 10775, 10776, 558, 5712, 1113, 17329, 17330, 17331, 16474, 1252, 5260, 8738, 8735, 5258, 17332, 1994, 17335, 17336, 17346, 17348, 16477, 5080, 6441, 17013, 2932, 5624, 1187, 7378, 1090, 16478, 5634, 9529, 9883, 1625, 5095, 5637, 2]
+// Dependencies: [32, 19, 17, 5142, 1385, 1072, 1623, 21, 1404, 5141, 575, 1500, 6148, 1260, 17471, 504, 16630, 8861, 6559, 5376, 1405, 1402, 10905, 10906, 558, 5832, 1113, 17472, 17473, 17474, 16617, 1252, 5383, 8862, 8859, 5381, 17475, 2123, 17478, 17479, 17489, 17491, 16620, 5207, 6561, 17156, 3059, 5747, 1187, 7498, 1090, 16621, 5754, 9657, 10014, 1627, 1652, 5757, 2]
 // Exports: default
 
-// Module 17327 (DisplayNameStylesEditScreen)
+// Module 17470 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1400 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1621 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import spring from "spring" /* 5637 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8735 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8738 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1402 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import HapticUtils from "HapticUtils" /* 5383 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8859 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8862 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import UserStore from "UserStore" /* 1383 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -47,87 +47,111 @@ function ApplyButton(onPress) {
   let Button;
   let View2;
   let intl;
-  let obj6;
-  let obj7;
+  let obj4;
+  let obj5;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp9;
   let useReducedMotion;
   onPress = onPress.onPress;
   const visible = onPress.visible;
-  let stateFromStores;
   const loading = onPress.loading;
-  let obj = onPress(stateFromStores[15]);
+  let obj = onPress(504);
   items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const bottom = visible(stateFromStores[55])().bottom;
-  let obj2 = onPress(stateFromStores[56]);
-  const fn = function s() {
-    let pointerEvents = "none";
-    if (visible) {
-      pointerEvents = "box-none";
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  const items1 = [closure_17, visible];
+  let c0;
+  [tmp5, tmp6] = items1;
+  const obj2 = onPress(1652);
+  class DisplayNameStylesEditScreenTsx1 {
+    constructor() {
+      let pointerEvents = "none";
+      if (c0) {
+        pointerEvents = "box-none";
+      }
+      return { pointerEvents };
     }
-    return { pointerEvents };
-  };
-  fn.__closure = { visible };
-  fn.__workletHash = 2349569076845;
-  fn.__initData = __initData;
-  const animatedProps = obj2.useAnimatedProps(fn);
-  let obj3 = onPress(stateFromStores[56]);
-  const fn2 = function c() {
-    let withSpringResult2;
-    let num = 0;
-    if (visible) {
-      num = 1;
+  }
+  const items2 = [tmp6];
+  DisplayNameStylesEditScreenTsx1.__closure = items2;
+  DisplayNameStylesEditScreenTsx1.__workletHash = 11149120055604;
+  DisplayNameStylesEditScreenTsx1.__initData = tmp5;
+  const animatedProps = obj2.useAnimatedProps(DisplayNameStylesEditScreenTsx1);
+  const items3 = [closure_18, visible, , , , ];
+  const useAnimatedStyle = tmp(1652).useAnimatedStyle;
+  onPress(1652);
+  items3[2] = nativeDefault;
+  items3[3] = stateFromStores;
+  items3[4] = onPress(5757).withSpring;
+  items3[5] = closure_11;
+  c0 = undefined;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items3;
+  class DisplayNameStylesEditScreenTsx2 {
+    constructor() {
+      let tmp9;
+      let num = 0;
+      if (c0) {
+        num = 1;
+      }
+      let num2 = 60;
+      if (c0) {
+        num2 = 0;
+      }
+      let num3 = 0.9;
+      if (c0) {
+        num3 = 1;
+      }
+      const rect = { position: "absolute", bottom: 0, left: 0, right: 0, marginHorizontal: _undefined.space.PX_16, flexDirection: "column", justifyContent: "flex-end", transform: items, opacity: tmp9 };
+      let tmp3 = num2;
+      if (!c2) {
+        tmp3 = _undefined2(num2, c4);
+      }
+      items = [{ translateY: tmp3 }, ];
+      let tmp6 = num3;
+      if (!c2) {
+        tmp6 = _undefined2(num3, c4);
+      }
+      items[1] = { scale: tmp6 };
+      tmp9 = num;
+      if (!c2) {
+        tmp9 = _undefined2(num, c4);
+      }
+      return rect;
     }
-    let num2 = 60;
-    if (visible) {
-      num2 = 0;
-    }
-    let num3 = 0.9;
-    if (visible) {
-      num3 = 1;
-    }
-    const rect = { position: "absolute", bottom: 0, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_16, flexDirection: "column", justifyContent: "flex-end", transform: items, opacity: withSpringResult2 };
-    let withSpringResult = num2;
-    if (!stateFromStores) {
-      const obj2 = spring;
-      withSpringResult = obj2.withSpring(num2, MEDIA_PICKER_SEND_BUTTON_SPRING);
-    }
-    items = [{ translateY: withSpringResult }, ];
-    let withSpringResult1 = num3;
-    if (!stateFromStores) {
-      const obj3 = spring;
-      withSpringResult1 = obj3.withSpring(num3, MEDIA_PICKER_SEND_BUTTON_SPRING);
-    }
-    items[1] = { scale: withSpringResult1 };
-    withSpringResult2 = num;
-    if (!stateFromStores) {
-      const obj4 = spring;
-      withSpringResult2 = obj4.withSpring(num, MEDIA_PICKER_SEND_BUTTON_SPRING);
-    }
-    return rect;
-  };
-  let obj4 = { visible, tokens: visible(stateFromStores[10]), reducedMotion: stateFromStores, withSpring: onPress(stateFromStores[57]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
-  fn2.__closure = obj4;
-  fn2.__workletHash = 16786362025671;
-  fn2.__initData = __initData2;
-  const items1 = [onPress];
-  const animatedStyle = obj3.useAnimatedStyle(fn2);
+  }
+  const items4 = [tmp10, tmp11, tmp12, tmp13, tmp14];
+  DisplayNameStylesEditScreenTsx2.__closure = items4;
+  DisplayNameStylesEditScreenTsx2.__workletHash = 4978276148126;
+  DisplayNameStylesEditScreenTsx2.__initData = tmp9;
+  const items5 = [onPress];
+  const animatedStyle = useAnimatedStyle(DisplayNameStylesEditScreenTsx2);
   const callback = react.useCallback(() => {
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onPress();
-  }, items1);
-  const obj5 = { style: animatedStyle, children: closure_12(View2, obj6) };
-  const View = visible(stateFromStores[56]).View;
-  obj6 = { style: { marginBottom: bottom }, animatedProps, children: closure_12(Button, obj7) };
-  View2 = visible(stateFromStores[56]).View;
-  obj7 = { variant: "primary", onPress: callback, size: "lg", text: intl.string(onPress(stateFromStores[26]).t["1Qm822"]), loading };
-  Button = onPress(stateFromStores[52]).Button;
-  intl = onPress(stateFromStores[26]).intl;
-  return closure_12(View, obj5);
+  }, items5);
+  const obj3 = { style: animatedStyle, children: closure_12(View2, obj4) };
+  const View = tmp4(1652).View;
+  obj4 = { style: { marginBottom: bottom }, animatedProps, children: closure_12(Button, obj5) };
+  View2 = tmp4(1652).View;
+  obj5 = { variant: "primary", onPress: callback, size: "lg", text: intl.string(onPress(1113).t["1Qm822"]), loading };
+  Button = tmp(5754).Button;
+  intl = tmp(1113).intl;
+  return closure_12(View, obj3);
 }
 ({ View: hasOwnProperty, ScrollView: metroRequire, Pressable: metroImportDefault } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
-const MEDIA_PICKER_SEND_BUTTON_SPRING = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
+let closure_11 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 let items = [DisplayNameEffect.DisplayNameEffect.GRADIENT, DisplayNameEffect.DisplayNameEffect.GUMMY, DisplayNameEffect.DisplayNameEffect.PRISM];
 let value = { overrideSettings: true };
@@ -144,8 +168,8 @@ obj8 = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
 obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj10 = { marginVertical: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_MUTED, gap: nativeDefault.space.PX_16 };
 let closure_16 = createStyles(obj);
-const __initData = { code: "function DisplayNameStylesEditScreenTsx1(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
-const __initData2 = { code: "function DisplayNameStylesEditScreenTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+let closure_17 = { code: "(function DisplayNameStylesEditScreenTsx1(){let[visible]=this.__closure;return{pointerEvents:visible?'box-none':'none'};})" };
+let closure_18 = { code: "(function DisplayNameStylesEditScreenTsx2(){let[visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING]=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};})" };
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditScreen.tsx");
 
 export default function DisplayNameStylesEditScreen() {
@@ -286,7 +310,7 @@ export default function DisplayNameStylesEditScreen() {
     }));
   }), 2);
   first4 = tmp18Result4[0];
-  let closure_17 = tmp18Result4[1];
+  closure_17 = tmp18Result4[1];
   const callback = obj10.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -444,7 +468,7 @@ export default function DisplayNameStylesEditScreen() {
     }
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName, isTryItOut };
-    obj.openLazy(asyncRequire(17332, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17475, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
   }, items6);
   const useCallback = displayNameStylesPendingName.useCallback;
   if (stateFromStores != null) {
@@ -462,7 +486,7 @@ export default function DisplayNameStylesEditScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let id;
     ActionSheetActionCreatorsDefault;
-    const tmp5 = asyncRequire(17335, dependencyMap.paths);
+    const tmp5 = asyncRequire(17478, dependencyMap.paths);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }
@@ -478,7 +502,7 @@ export default function DisplayNameStylesEditScreen() {
           }
       };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(17336, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+      obj3.openLazy(asyncRequire(17479, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
     } else {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
@@ -491,10 +515,10 @@ export default function DisplayNameStylesEditScreen() {
                 return callback(first1, arg0);
               }
         };
-        openLazy(tmp2Result(17346, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+        openLazy(tmp2Result(17489, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
       } else {
         const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-        openLazy(tmp2Result(17348, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+        openLazy(tmp2Result(17491, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
       }
     }
   }, items8);

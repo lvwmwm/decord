@@ -1,9 +1,9 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 19332
+// Function ID: 19333
 // Name: SoundboardStyleConstants
 // Dependencies: [2]
 
-// Module 19174 (SoundboardStyleConstants)
+// Module 19332 (SoundboardStyleConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardStyleConstants.tsx");

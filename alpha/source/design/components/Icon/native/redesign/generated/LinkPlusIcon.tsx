@@ -1,14 +1,14 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12366
+// Function ID: 12367
 // Name: LinkPlusIcon
-// Dependencies: [19, 21, 575, 5716, 12231, 2]
+// Dependencies: [19, 21, 575, 5836, 12367, 2]
 // Exports: LinkPlusIcon
 
-// Module 12230 (LinkPlusIcon)
+// Module 12366 (LinkPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 12231 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 12367 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 7229
-// Function ID: 7230
+// Module ID: 7350
+// Function ID: 7351
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7230, 5011, 2]
+// Dependencies: [19, 17, 7351, 5138, 2]
 // Exports: default
 
-// Module 7229 (useFastestListPropsPlaceholder)
+// Module 7350 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7230 */;
+import ColorUtils from "ColorUtils" /* 5138 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7351 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "current", borderTopRightRadius: "applicationId", borderBottomLeftRadius: "useStateFromStores", borderBottomRightRadius: "TypeError", divider: "r", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "applicationId", placeholderShape: "getChannel", placeholderShapeColor: "dispatch", placeholderShapeCount: "r", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "applicationId", placeholderFeedColor: "__closure", placeholderFeedLabelPadding: "getCurrentUser", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "isArray", placeholderFeedLabelSecondarySize: "children", placeholderFeedPadding: "message", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "Array", placeholderType: NONE, width: true, height: null, verticalAlignment: 12.1, horizontalAlignment: "tier-0" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "createStyles", borderTopRightRadius: "alignItems", borderBottomLeftRadius: "replace", borderBottomRightRadius: "HTTP", divider: "r", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "alignItems", placeholderShape: "Path", placeholderShapeColor: "order", placeholderShapeCount: "Array", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "alignItems", placeholderShapePaddingVertical: "nm", placeholderFeedBackgroundColor: "p", placeholderFeedColor: "a", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "channel_id", placeholderFeedLabelSecondarySize: "type", placeholderFeedPadding: "x", placeholderFeedShape: "alignItems", placeholderFeedShapeSize: "useState", placeholderType: NONE, width: null, height: null, verticalAlignment: null, horizontalAlignment: null };
   if (null == listFooter) {
     return size;
   } else {

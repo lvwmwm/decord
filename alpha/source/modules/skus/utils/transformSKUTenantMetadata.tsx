@@ -1,11 +1,11 @@
-// Module ID: 2045
-// Function ID: 2046
+// Module ID: 2174
+// Function ID: 2175
 // Name: transformSKUTenantMetadata
-// Dependencies: [1987, 2]
+// Dependencies: [2116, 2]
 // Exports: default
 
-// Module 2045 (transformSKUTenantMetadata)
-import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+// Module 2174 (transformSKUTenantMetadata)
+import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
 import size_mod from "module_2" /* 2 */;
 
 function transformProfileEffectKeyFrameFromServer(src) {

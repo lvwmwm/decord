@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "0a5e00a6ebe70b88b8f33e30ecd75f91", name: "hu.messages.0a5e00a6ebe70b88b8f33e30ecd75f91.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZ2VfYXNzdXJhbmNl", scales: [1], hash: "5748ef5d02672e6b9ddb08e15f17ea23", name: "it.messages.5748ef5d02672e6b9ddb08e15f17ea23.compiled.messages", type: "jsona" });

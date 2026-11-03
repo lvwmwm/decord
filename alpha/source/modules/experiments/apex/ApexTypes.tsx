@@ -1,9 +1,9 @@
-// Module ID: 1450
-// Function ID: 1451
+// Module ID: 1452
+// Function ID: 1453
 // Name: apex/ApexTypes
 // Dependencies: [2, 1249]
 
-// Module 1450 (apex/ApexTypes)
+// Module 1452 (apex/ApexTypes)
 import ApexTypes from "ApexTypes" /* 1249 */;
 import size from "module_2" /* 2 */;
 

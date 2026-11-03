@@ -1,8 +1,8 @@
-// Module ID: 7066
-// Function ID: 7067
+// Module ID: 7192
+// Function ID: 7193
 // Dependencies: [2]
 
-// Module 7066
+// Module 7192
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrafficConeSpotIllustration-1x.png.js");

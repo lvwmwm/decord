@@ -1,24 +1,24 @@
-// Module ID: 7570
-// Function ID: 7571
+// Module ID: 7694
+// Function ID: 7695
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1231, 5045, 4850, 4855, 1072, 1082, 1252, 4847, 7571, 4848, 504, 5066, 4846, 5044, 11, 2]
+// Dependencies: [32, 19, 1231, 5172, 4977, 4982, 1072, 1082, 1252, 4974, 7695, 4975, 504, 5193, 4973, 5171, 11, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 7570 (useGetDismissibleContent)
+// Module 7694 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4846 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4848 */;
-import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 4855 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4973 */;
+import dismissible_content from "dismissible_content" /* 4974 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4975 */;
+import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 4982 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4850 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4977 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,6 @@ function useGetVisibleContent(found1, stateFromStores, GUILD_HEADER_TOOLTIPS, la
   let ref;
   let snowflakeId;
   let tmp6;
-  let version;
   _require = found1;
   let closure_1 = stateFromStores;
   dependencyMap = GUILD_HEADER_TOOLTIPS;
@@ -51,7 +50,7 @@ function useGetVisibleContent(found1, stateFromStores, GUILD_HEADER_TOOLTIPS, la
   let closure_6 = tmp6;
   let result = null != found1;
   if (result) {
-    const tmp2Result = tmp2(4848);
+    const tmp2Result = tmp2(4975);
     result = tmp2Result.isDismissibleContentBlockedByOverlay(found1, first, tmp6);
   }
   const items = [ref];
@@ -222,7 +221,6 @@ export function useGetDismissibleContent(items3, groupName) {
 export function useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName) {
   let guildId;
   let stateFromStores;
-  let version;
   _require = COLLECTIBLES_SHOP_ENTRY_MARKETING;
   const tmp = _require;
   let obj = require("get initialized");
@@ -326,7 +324,7 @@ export function useGetTimeRecurringDismissibleContent(prop, timeRecurringConfig,
   let tmp5 = null;
   if (null != prop) {
     let tmp10 = null;
-    const tmpResult = tmp(5066);
+    const tmpResult = tmp(5193);
     if (canShowTimeRecurringContent(!tmpResult.disableNewUserDismissibleContent(prop), lastDismissedAtMs, numTimesDismissed, timeRecurringConfig)) {
       tmp10 = prop;
     }
@@ -452,7 +450,7 @@ export function useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnow
   if (null != prop) {
     tmp7 = null;
     if ("" !== newSnowflakeId) {
-      const tmpResult = tmp(5066);
+      const tmpResult = tmp(5193);
       let result = tmpResult.disableNewUserDismissibleContent(prop);
       if (obj2.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
         let tmp10 = null;
@@ -586,7 +584,7 @@ export function useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, cool
   dependencyMap = null;
   let tmp7 = null;
   if (null != prop) {
-    const tmpResult = tmp(5066);
+    const tmpResult = tmp(5193);
     let lastDismissedAtMs;
     const tmp8 = !tmpResult.disableNewUserDismissibleContent(prop);
     if (tmp4 != null) {

@@ -1,21 +1,21 @@
-// Module ID: 17416
-// Function ID: 17417
+// Module ID: 17559
+// Function ID: 17560
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2063, 2062, 21, 5014, 575, 5932, 504, 7292, 7058, 1113, 7061, 5717, 17417, 2]
+// Dependencies: [5, 19, 17, 2192, 2191, 21, 5141, 575, 6052, 504, 7412, 7184, 1113, 7187, 5837, 17560, 2]
 
-// Module 17416 (UserSettingsLocale)
+// Module 17559 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import TableRadioRow2 from "TableRadioRow" /* 7061 */;
-import flags from "flags" /* 17417 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2192 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import TableRadioRow2 from "TableRadioRow" /* 7187 */;
+import flags from "flags" /* 17560 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import createStyles from "createStyles" /* 5014 */;
+import LocaleStore from "LocaleStore" /* 2191 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c4 = 3;

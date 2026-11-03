@@ -1,27 +1,25 @@
-// Module ID: 10561
-// Function ID: 10562
+// Module ID: 10691
+// Function ID: 10692
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8763, 9626, 1385, 1072, 21, 5014, 575, 671, 1497, 1625, 1491, 10562, 5274, 7004, 504, 10612, 10610, 8755, 10559, 10614, 10620, 9844, 5095, 1187, 5254, 10628, 10616, 7351, 10629, 10663, 11212, 1113, 7054, 5717, 14458, 5587, 5586, 5624, 2]
+// Dependencies: [32, 19, 17, 8887, 9758, 1387, 1072, 21, 5141, 575, 671, 1499, 1627, 1493, 10692, 5397, 7130, 504, 10742, 10740, 8879, 10689, 10744, 10750, 9975, 1652, 1187, 5377, 10758, 10746, 7471, 10759, 10793, 11349, 1113, 7180, 5837, 14589, 5710, 5709, 5747, 2]
 // Exports: default
 
-// Module 10561 (PremiumGiftPlanSelect)
+// Module 10691 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1187 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import timing from "timing" /* 5254 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10620 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10750 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
-import PromotionsStore from "PromotionsStore" /* 9626 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
+import PromotionsStore from "PromotionsStore" /* 9758 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
-let navigation, state, v16;
+let navigation, state;
 
 let closure_12;
 let closure_14;
@@ -60,15 +58,14 @@ let closure_17 = createStyles.createStyles((width, arg1, arg2) => {
   ({ marginTop: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16 });
   return obj;
 });
-let closure_18 = { code: "function PremiumGiftPlanSelectTsx1(){const{STANDARD_EASING,withTiming,carouselVisibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:500};return{opacity:withTiming(carouselVisibility.get()?1:0,animationSettings),transform:[{translateY:withTiming(carouselVisibility.get()?0:100,animationSettings)}]};}" };
-let closure_19 = { code: "function PremiumGiftPlanSelectTsx2(value,index){const{lastItemIndex,leftOffset,centerOffset,rightOffset,carouselStep}=this.__closure;const activeIndex=index-value;const leftT=Math.max(0,Math.min(1,activeIndex));const rightT=Math.max(0,Math.min(1,activeIndex-(lastItemIndex-1)));const offset=leftOffset+leftT*(centerOffset-leftOffset)+rightT*(rightOffset-centerOffset);return{transform:[{translateX:value*carouselStep+offset}]};}" };
+let closure_18 = { code: "(function PremiumGiftPlanSelectTsx1(){let[STANDARD_EASING,withTiming,carouselVisibility]=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:500};return{opacity:withTiming(carouselVisibility.get()?1:0,animationSettings),transform:[{translateY:withTiming(carouselVisibility.get()?0:100,animationSettings)}]};})" };
+let closure_19 = { code: "(function PremiumGiftPlanSelectTsx2(value,index){let[lastItemIndex,leftOffset,centerOffset,rightOffset,carouselStep]=this.__closure;const activeIndex=index-value;const leftT=Math.max(0,Math.min(1,activeIndex));const rightT=Math.max(0,Math.min(1,activeIndex-(lastItemIndex-1)));const offset=leftOffset+leftT*(centerOffset-leftOffset)+rightT*(rightOffset-centerOffset);return{transform:[{translateX:value*carouselStep+offset}]};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelect.tsx");
 
 export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) {
   let AvatarSizes;
   let bottom;
-  let c16;
   let c7;
   let claimableRewards;
   let formatToPlainStringResult;
@@ -76,41 +73,51 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   let height;
   let intl;
   let intl4;
-  let items11;
-  let items12;
-  let items14;
   let items15;
   let items16;
-  let items17;
   let items18;
   let items19;
+  let items20;
+  let items21;
+  let items22;
+  let items23;
   let nextTier;
+  let obj12;
   let obj13;
-  let obj14;
+  let obj15;
   let obj16;
-  let obj17;
-  let obj21;
+  let obj20;
+  let obj24;
   let obj25;
-  let obj26;
+  let obj30;
   let obj31;
   let obj32;
-  let obj33;
-  let obj39;
-  let obj41;
+  let obj38;
+  let obj40;
   let recipientUser;
   let str2;
   let str3;
   let str4;
   let sum1;
   let tmp18;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp48;
   let tmp49;
   let tmp4Result;
   let tmp4Result7;
+  let tmp50;
+  let tmp51;
+  let tmp52;
+  let tmp53;
   let tmp60;
-  let tmp63Result6;
-  let tmp65;
-  let tmp67;
-  let tmp69;
+  let tmp71;
+  let tmp74Result6;
+  let tmp76;
+  let tmp78;
+  let tmp80;
   let tmpResult7;
   let tmpResult8;
   let top;
@@ -130,10 +137,6 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   let callback2;
   let str;
   let sharedValue;
-  v16 = undefined;
-  let c17;
-  let result1;
-  let diff1;
   const tmp = navigation;
   let tmp2 = onClose;
   const isLoadingWishlist = shouldUseDMWishlistGiftingDesign.isLoadingWishlist;
@@ -172,7 +175,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   if (enabled) {
     enabled = null != nextTier;
   }
-  const tmp13 = c17(width, height, enabled);
+  const tmp13 = closure_17(width, height, enabled);
   closure_5 = tmp13;
   const tmp14 = selectPremiumGift(enabled.useState(0), 2);
   currentIndex = tmp14[0];
@@ -193,7 +196,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   closure_9 = tmp21;
   ref = enabled.useRef([]);
   const items3 = [shouldUseDMWishlistGiftingDesign, ];
-  let tmp63Result = enabled;
+  let tmp74Result = enabled;
   let length;
   const useEffect = enabled.useEffect;
   if (claimableRewards != null) {
@@ -284,8 +287,8 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
       return authStore2(tmp3, obj);
     };
   }, items5);
-  const tmpResult = tmp(tmp2[24]);
   let tmp31 = null != claimableRewards;
+  const tmpResult = tmp(tmp2[24]);
   const isWindowSmall = tmpResult.useIsWindowSmall();
   if (tmp31) {
     tmp31 = claimableRewards.length > 0;
@@ -305,51 +308,66 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
   const effect2 = obj9.useEffect(() => {
     const result = sharedValue.set(null != num);
   }, items8);
-  function he() {
-    const obj = { easing: native.STANDARD_EASING, duration: 500 };
-    const withTiming = timing.withTiming;
-    num = 0;
-    timing;
-    const obj2 = sharedValue;
-    if (sharedValue.get()) {
-      num = 1;
+  const items9 = [closure_18, , , ];
+  const useAnimatedStyle = tmp(tmp2[25]).useAnimatedStyle;
+  tmp(tmp2[25]);
+  items9[1] = tmp(tmp2[26]).STANDARD_EASING;
+  items9[2] = tmp(tmp2[27]).withTiming;
+  items9[3] = sharedValue;
+  let c0;
+  let c1;
+  let c2;
+  [tmp37, tmp38, tmp39, tmp40] = items9;
+  class PremiumGiftPlanSelectTsx1 {
+    constructor() {
+      const obj = { easing, duration: 500 };
+      num = 0;
+      const obj2 = _undefined;
+      if (_undefined.get()) {
+        num = 1;
+      }
+      let num2 = 100;
+      const obj3 = { opacity: _undefined(num, obj), transform: items };
+      if (obj2.get()) {
+        num2 = 0;
+      }
+      items = [{ translateY: _undefined(num2, obj) }];
+      ({ translateY: _undefined(num2, obj) });
+      return obj3;
     }
-    const obj3 = { opacity: withTiming(num, obj), transform: items };
-    const withTiming2 = tmp(5254).withTiming;
-    let num2 = 100;
-    timing;
-    if (obj2.get()) {
-      num2 = 0;
-    }
-    items = [{ translateY: withTiming2(num2, obj) }];
-    ({ translateY: withTiming2(num2, obj) });
-    return obj3;
   }
-  const tmpResult6 = tmp(tmp2[25]);
-  he.__closure = { STANDARD_EASING: tmp(tmp2[26]).STANDARD_EASING, withTiming: tmp(tmp2[27]).withTiming, carouselVisibility: sharedValue };
-  he.__workletHash = 2946262965957;
-  he.__initData = result1;
-  ({ STANDARD_EASING: tmp(tmp2[26]).STANDARD_EASING, withTiming: tmp(tmp2[27]).withTiming, carouselVisibility: sharedValue });
-  const animatedStyle = tmpResult6.useAnimatedStyle(he);
-  const items9 = [tmp13];
+  const items10 = [tmp38, tmp39, tmp40];
+  PremiumGiftPlanSelectTsx1.__closure = items10;
+  PremiumGiftPlanSelectTsx1.__workletHash = 4508908176572;
+  PremiumGiftPlanSelectTsx1.__initData = tmp37;
+  const animatedStyle = useAnimatedStyle(PremiumGiftPlanSelectTsx1);
+  const items11 = [tmp13];
   const sum = result + v16;
-  v16 = sum;
   let diff = sharedValue.length - 1;
-  c17 = diff;
-  result1 = (width - result) / 2;
-  diff1 = width - result - v16;
-  function fe(arg0, arg1) {
-    const diff = arg1 - arg0;
-    const bound = Math.max(0, Math.min(1, diff));
-    const obj = { transform: items };
-    items = [{ translateX: arg0 * c16 + (16 + bound * (result1 - 16) + Math.max(0, Math.min(1, diff - (c17 - 1))) * (diff1 - result1)) }];
-    ({ translateX: arg0 * c16 + (16 + bound * (result1 - 16) + Math.max(0, Math.min(1, diff - (c17 - 1))) * (diff1 - result1)) });
-    return obj;
+  const result1 = (width - result) / 2;
+  const diff1 = width - result - v16;
+  const items12 = [closure_19, diff, 16, result1, diff1, sum];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  let c3;
+  let c4;
+  [tmp48, tmp49, tmp50, tmp51, tmp52, tmp53] = items12;
+  class PremiumGiftPlanSelectTsx2 {
+    constructor(arg0, arg1) {
+      const diff = arg1 - arg0;
+      const bound = Math.max(0, Math.min(1, diff));
+      const obj = { transform: items };
+      items = [{ translateX: arg0 * c4 + (c1 + bound * (c2 - c1) + Math.max(0, Math.min(1, diff - (c0 - 1))) * (c3 - c2)) }];
+      ({ translateX: arg0 * c4 + (c1 + bound * (c2 - c1) + Math.max(0, Math.min(1, diff - (c0 - 1))) * (c3 - c2)) });
+      return obj;
+    }
   }
-  fe.__closure = { lastItemIndex: diff, leftOffset: 16, centerOffset: result1, rightOffset: diff1, carouselStep: sum };
-  fe.__workletHash = 8954351954675;
-  fe.__initData = diff1;
-  const items10 = [sum, diff, 16, result1, diff1];
+  const items13 = [tmp49, tmp50, tmp51, tmp52, tmp53];
+  PremiumGiftPlanSelectTsx2.__closure = items13;
+  PremiumGiftPlanSelectTsx2.__workletHash = 287869632170;
+  PremiumGiftPlanSelectTsx2.__initData = tmp48;
+  const items14 = [sum, diff, 16, result1, diff1];
   const memo2 = obj9.useMemo(() => {
     items = [, ];
     const obj = _modDef671(closure_5.headerBackgroundColor.color);
@@ -359,47 +377,47 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
     const alphaResult1 = obj3.alpha(1);
     items[1] = alphaResult1.hex();
     return items;
-  }, items9);
-  const callback3 = obj9.useCallback(fe, items10);
+  }, items11);
+  const callback3 = obj9.useCallback(PremiumGiftPlanSelectTsx2, items14);
   if (isLoadingWishlist) {
-    const obj11 = { style: items11, children: c12(closure_5, { size: "large" }) };
-    items11 = [, ];
-    ({ container: arr22[0], loadingContainer: arr22[1] } = tmp13);
-    tmp63Result6 = c12(c7, obj11);
+    const obj10 = { style: items15, children: c12(closure_5, { size: "large" }) };
+    items15 = [, ];
+    ({ container: arr26[0], loadingContainer: arr26[1] } = tmp13);
+    tmp74Result6 = c12(c7, obj10);
   } else if (shouldUseDMWishlistGiftingDesign) {
-    const obj12 = { style: tmp13.container, children: tmp65(num, obj13) };
-    obj13 = { contentContainerStyle: obj14, children: items12 };
-    obj14 = { paddingBottom: bottom };
-    tmp65 = callback2;
-    if (tmp63Result) {
-      const obj15 = { style: tmp13.badgeBanner, children: c12(tmp67, obj16) };
-      obj16 = { onPress: callback1, accessibilityRole: "button", children: c12(tmp4Result, obj17) };
-      obj17 = { giftsToNextTier, nextTierName: str4, nextTierIcon: tmpResult7.getGiftingBadgeTierIconUrl(nextTier), analyticsLocation: tmp4(tmp2[30]).PREMIUM_GIFT_PLAN_SELECTION };
+    const obj11 = { style: tmp13.container, children: tmp76(num, obj12) };
+    obj12 = { contentContainerStyle: obj13, children: items16 };
+    obj13 = { paddingBottom: bottom };
+    tmp76 = callback2;
+    if (tmp74Result) {
+      const obj14 = { style: tmp13.badgeBanner, children: c12(tmp78, obj15) };
+      obj15 = { onPress: callback1, accessibilityRole: "button", children: c12(tmp4Result, obj16) };
+      obj16 = { giftsToNextTier, nextTierName: str4, nextTierIcon: tmpResult7.getGiftingBadgeTierIconUrl(nextTier), analyticsLocation: tmp4(tmp2[30]).PREMIUM_GIFT_PLAN_SELECTION };
       str4 = nextTier.name;
       tmp4Result = tmp4(tmp2[28]);
-      tmp67 = currentIndex;
+      tmp78 = currentIndex;
       if (str4 == null) {
         str4 = "";
       }
       tmpResult7 = tmp(tmp2[29]);
-      tmp63Result = tmp63(tmp64, obj15);
+      tmp74Result = tmp74(tmp75, obj14);
     }
-    items12 = [tmp63Result, , ];
-    const obj18 = { style: tmp13.dmGiftingContent, children: tmp69 };
+    items16 = [tmp74Result, , ];
+    const obj17 = { style: tmp13.dmGiftingContent, children: tmp80 };
     if (0 === stateFromStoresArray.length) {
-      let tmp63Result4;
+      let tmp74Result4;
       if (isScreenReaderEnabled) {
         const obj19 = {
           horizontal: true,
           showsHorizontalScrollIndicator: false,
-          contentContainerStyle: obj21,
+          contentContainerStyle: obj20,
           children: sharedValue.map((item, index) => {
                   const obj = { item, index };
                   return callback2(str, { forScreenReader: true })(obj);
                 })
         };
-        obj21 = { gap: v16, paddingHorizontal: v16 };
-        tmp63Result4 = tmp63(tmp66, obj19);
+        obj20 = { gap: v16, paddingHorizontal: v16 };
+        tmp74Result4 = tmp74(tmp77, obj19);
       } else {
         size = {
           style: animatedStyle,
@@ -420,65 +438,65 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         if (num == null) {
           num = 1;
         }
-        tmp63Result4 = tmp63(tmp4Result5, size);
+        tmp74Result4 = tmp74(tmp4Result5, size);
       }
-      tmp69 = tmp63Result4;
+      tmp80 = tmp74Result4;
     } else {
-      tmp69 = null;
+      tmp80 = null;
     }
-    items12[1] = c12(c7, obj18);
-    let tmp63Result5 = null != recipientUser;
-    if (tmp63Result5) {
-      const obj22 = { giftRecipient: recipientUser };
-      tmp63Result5 = tmp63(tmp(tmp2[32]).PremiumGiftWishlistBanner, obj22);
+    items16[1] = c12(c7, obj17);
+    let tmp74Result5 = null != recipientUser;
+    if (tmp74Result5) {
+      const obj21 = { giftRecipient: recipientUser };
+      tmp74Result5 = tmp74(tmp(tmp2[32]).PremiumGiftWishlistBanner, obj21);
     }
-    items12[2] = tmp63Result5;
-    tmp63Result6 = tmp63(tmp64, obj12);
+    items16[2] = tmp74Result5;
+    tmp74Result6 = tmp74(tmp75, obj11);
   } else {
-    let tmp57;
+    let tmp68;
     if (tmp18) {
       tmp18 = c12(tmp4(tmp2[33]), { animated: true, barStyle: "light-content" });
     }
-    const items13 = [tmp18, , , , , ];
-    const obj23 = { style: items14, onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(tmp2[34]).t.cpT0Cq), children: c12(c7, obj25) };
-    items14 = [tmp13.closeButtonContainer, ];
-    const obj24 = { paddingTop: top };
-    items14[1] = obj24;
+    const items17 = [tmp18, , , , , ];
+    const obj22 = { style: items18, onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl.string(tmp(tmp2[34]).t.cpT0Cq), children: c12(c7, obj24) };
+    items18 = [tmp13.closeButtonContainer, ];
+    const obj23 = { paddingTop: top };
+    items18[1] = obj23;
     intl = tmp(tmp2[34]).intl;
-    obj25 = { style: tmp13.closeButton, children: c12(tmp(tmp2[35]).XSmallIcon, obj26) };
-    obj26 = { size: "md", style: tmp13.closeButtonIcon };
-    items13[1] = c12(currentIndex, obj23);
-    const obj27 = { resizeMode: "cover", style: items15, source: tmp4(tmp2[37]) };
-    items15 = [, ];
-    ({ headerImageContainer: arr16[0], headerImage: arr16[1] } = tmp13);
+    obj24 = { style: tmp13.closeButton, children: c12(tmp(tmp2[35]).XSmallIcon, obj25) };
+    obj25 = { size: "md", style: tmp13.closeButtonIcon };
+    items17[1] = c12(currentIndex, obj22);
+    const obj26 = { resizeMode: "cover", style: items19, source: tmp4(tmp2[37]) };
+    items19 = [, ];
+    ({ headerImageContainer: arr20[0], headerImage: arr20[1] } = tmp13);
     const tmp4Result6 = tmp4(tmp2[36]);
-    items13[2] = c12(tmp4Result6, obj27);
-    const obj28 = { style: items16 };
-    items16 = [, ];
-    ({ headerImageContainer: arr17[0], headerOverlay: arr17[1] } = tmp13);
-    items13[3] = c12(c7, obj28);
-    const obj29 = { style: tmp13.headerBackground, start: null, end: null, colors: memo2 };
-    ({ START: obj20.start, END: obj20.end } = callback);
-    items13[4] = c12(tmp4(tmp2[38]), obj29);
-    const obj30 = { contentContainerStyle: obj31, children: callback2(tmp49, obj32) };
-    obj31 = { paddingBottom: bottom };
-    obj32 = { style: obj33, children: items17 };
-    let tmp47Result = null != recipientUser;
-    obj33 = { paddingTop: top + tmp(tmp2[39]).NAV_BAR_HEIGHT };
-    const tmp48 = currentIndex;
-    tmp49 = c7;
-    if (tmp47Result) {
-      const obj34 = { style: tmp13.avatar, guildId: "r", size: tmp63Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE, user: recipientUser };
+    items17[2] = c12(tmp4Result6, obj26);
+    const obj27 = { style: items20 };
+    items20 = [, ];
+    ({ headerImageContainer: arr21[0], headerOverlay: arr21[1] } = tmp13);
+    items17[3] = c12(c7, obj27);
+    const obj28 = { style: tmp13.headerBackground, start: null, end: null, colors: memo2 };
+    ({ START: obj18.start, END: obj18.end } = callback);
+    items17[4] = c12(tmp4(tmp2[38]), obj28);
+    const obj29 = { contentContainerStyle: obj30, children: callback2(tmp60, obj31) };
+    obj30 = { paddingBottom: bottom };
+    obj31 = { style: obj32, children: items21 };
+    let tmp58Result = null != recipientUser;
+    obj32 = { paddingTop: top + tmp(tmp2[39]).NAV_BAR_HEIGHT };
+    const tmp59 = currentIndex;
+    tmp60 = c7;
+    if (tmp58Result) {
+      const obj33 = { style: tmp13.avatar, guildId: "r", size: tmp74Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE, user: recipientUser };
       const Avatar = tmp(tmp2[26]).Avatar;
       AvatarSizes = tmp(tmp2[26]).AvatarSizes;
-      tmp47Result = tmp47(Avatar, obj34);
+      tmp58Result = tmp58(Avatar, obj33);
     }
-    items17 = [tmp47Result, , , , ];
-    const obj35 = { style: tmp13.title, variant: str2, color: "text-overlay-light", children: formatToPlainStringResult };
-    str2 = "heading-xxl/extrabold";
+    items21 = [tmp58Result, , , , ];
+    const obj34 = { style: tmp13.title, variant: str2, color: "text-overlay-light", children: formatToPlainStringResult };
+    str2 = "heading-xxl/semibold";
     const Text = tmp(tmp2[40]).Text;
     if (null != recipientUser) {
-      str2 = "heading-xl/extrabold";
+      str2 = "heading-xl/semibold";
     }
     if (null != recipientUser) {
       const intl3 = tmp(tmp2[34]).intl;
@@ -488,48 +506,48 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
       if (username == null) {
         username = recipientUser.username;
       }
-      const obj36 = { username };
-      formatToPlainStringResult = formatToPlainString(m5ggvH, obj36);
+      const obj35 = { username };
+      formatToPlainStringResult = formatToPlainString(m5ggvH, obj35);
     } else {
       const intl2 = tmp(tmp2[34]).intl;
       formatToPlainStringResult = intl2.string(tmp(tmp2[34]).t.dqQgZv);
     }
-    items17[1] = c12(Text, obj35);
-    const obj37 = { style: tmp13.description, variant: "heading-sm/medium", color: "text-overlay-light", children: intl4.string(tmp(tmp2[34]).t["30qzrd"]) };
+    items21[1] = c12(Text, obj34);
+    const obj36 = { style: tmp13.description, variant: "heading-sm/medium", color: "text-overlay-light", children: intl4.string(tmp(tmp2[34]).t["30qzrd"]) };
     const Text2 = tmp(tmp2[40]).Text;
     intl4 = tmp(tmp2[34]).intl;
-    items17[2] = c12(Text2, obj37);
-    let tmp47Result3 = tmp63Result;
-    if (tmp47Result3) {
-      const obj38 = { style: tmp13.badgeBanner, onPress: callback1, accessibilityRole: "button", children: c12(tmp4Result7, obj39) };
-      obj39 = { giftsToNextTier, nextTierName: str3, nextTierIcon: tmpResult8.getGiftingBadgeTierIconUrl(nextTier), analyticsLocation: tmp4(tmp2[30]).PREMIUM_GIFT_PLAN_SELECTION };
+    items21[2] = c12(Text2, obj36);
+    let tmp58Result3 = tmp74Result;
+    if (tmp58Result3) {
+      const obj37 = { style: tmp13.badgeBanner, onPress: callback1, accessibilityRole: "button", children: c12(tmp4Result7, obj38) };
+      obj38 = { giftsToNextTier, nextTierName: str3, nextTierIcon: tmpResult8.getGiftingBadgeTierIconUrl(nextTier), analyticsLocation: tmp4(tmp2[30]).PREMIUM_GIFT_PLAN_SELECTION };
       str3 = nextTier.name;
       tmp4Result7 = tmp4(tmp2[28]);
       if (str3 == null) {
         str3 = "";
       }
       tmpResult8 = tmp(tmp2[29]);
-      tmp47Result3 = tmp47(tmp48, obj38);
+      tmp58Result3 = tmp58(tmp59, obj37);
     }
-    items17[3] = tmp47Result3;
+    items21[3] = tmp58Result3;
     if (0 === stateFromStoresArray.length) {
-      let tmp47Result4;
+      let tmp58Result4;
       if (isScreenReaderEnabled) {
-        const obj40 = {
+        const obj39 = {
           horizontal: true,
           showsHorizontalScrollIndicator: false,
           style: tmp13.carousel,
-          contentContainerStyle: obj41,
+          contentContainerStyle: obj40,
           children: sharedValue.map((item, index) => {
                   const obj = { item, index };
                   return callback2("default", { forScreenReader: true })(obj);
                 })
         };
-        obj41 = { gap: v16, paddingHorizontal: v16 };
-        tmp47Result4 = tmp47(tmp52, obj40);
+        obj40 = { gap: v16, paddingHorizontal: v16 };
+        tmp58Result4 = tmp58(tmp63, obj39);
       } else {
         const size1 = {
-          style: items18,
+          style: items22,
           data: sharedValue,
           renderItem: memo1,
           width,
@@ -539,38 +557,38 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
                 },
           loop: false,
           scrollAnimationDuration: 200,
-          customAnimation: tmp60,
+          customAnimation: tmp71,
           mode: "parallax",
           modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 40 },
           onSnapToItem: tmp14[1]
         };
-        items18 = [tmp13.carousel, animatedStyle];
+        items22 = [tmp13.carousel, animatedStyle];
         const tmp4Result8 = tmp4(tmp2[31]);
-        if (tmp63Result) {
+        if (tmp74Result) {
           memo1 = memo;
         }
         sum1 = undefined;
         if (null != num) {
           sum1 = num + 2 * tmp4(tmp2[9]).space.PX_8;
         }
-        tmp60 = undefined;
-        if (tmp63Result) {
-          tmp60 = callback3;
+        tmp71 = undefined;
+        if (tmp74Result) {
+          tmp71 = callback3;
         }
-        const obj42 = { children: items19 };
-        items19 = [c12(tmp4Result8, size1), ];
-        const obj43 = { numberOfItems: sharedValue.length, currentIndex };
-        items19[1] = c12(tmp(tmp2[26]).CarouselPagination, obj43);
-        tmp47Result4 = tmp44(tmp45, obj42);
+        const obj41 = { children: items23 };
+        items23 = [c12(tmp4Result8, size1), ];
+        const obj42 = { numberOfItems: sharedValue.length, currentIndex };
+        items23[1] = c12(tmp(tmp2[26]).CarouselPagination, obj42);
+        tmp58Result4 = tmp55(tmp56, obj41);
       }
-      tmp57 = tmp47Result4;
+      tmp68 = tmp58Result4;
     } else {
-      tmp57 = null;
+      tmp68 = null;
     }
-    const obj44 = { children: items13 };
-    items17[4] = tmp57;
-    items13[5] = c12(num, obj30);
-    tmp63Result6 = tmp44(tmp45, obj44);
+    const obj43 = { children: items17 };
+    items21[4] = tmp68;
+    items17[5] = c12(num, obj29);
+    tmp74Result6 = tmp55(tmp56, obj43);
   }
-  return tmp63Result6;
+  return tmp74Result6;
 };

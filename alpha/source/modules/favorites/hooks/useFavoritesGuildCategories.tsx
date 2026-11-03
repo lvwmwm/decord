@@ -1,13 +1,13 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18345
+// Function ID: 18346
 // Name: useFavoritesGuildCategories
-// Dependencies: [4866, 504, 10832, 2]
+// Dependencies: [4993, 504, 10962, 2]
 // Exports: default
 
-// Module 18201 (useFavoritesGuildCategories)
+// Module 18345 (useFavoritesGuildCategories)
 import get_initialized from "get initialized" /* 504 */;
-import FavoritesHooks from "FavoritesHooks" /* 10832 */;
-import FavoriteStore from "FavoriteStore" /* 4866 */;
+import FavoritesHooks from "FavoritesHooks" /* 10962 */;
+import FavoriteStore from "FavoriteStore" /* 4993 */;
 import size from "module_2" /* 2 */;
 
 function areCategoriesEqual(arr, arg1) {

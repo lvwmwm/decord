@@ -1,21 +1,21 @@
-// Module ID: 19642
-// Function ID: 19643
+// Module ID: 19792
+// Function ID: 19793
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 19643, 4857, 1383, 1072, 21, 5014, 1187, 19644, 1113, 5634, 1498, 1260, 6998, 7558, 9100, 7363, 6740, 19648, 7070, 7079, 7076, 7150, 7212, 7213, 7071, 19649, 7246, 7163, 504, 5258, 5207, 7169, 2]
+// Dependencies: [5, 19, 17, 19793, 4984, 1385, 1072, 21, 5141, 1187, 19794, 1113, 5754, 1500, 1260, 7124, 7682, 9228, 7483, 6860, 19798, 7196, 7205, 7202, 7271, 7333, 7334, 7197, 19799, 7366, 7284, 504, 5381, 5330, 7290, 2]
 // Exports: default
 
-// Module 19642 (VerificationModal)
+// Module 19792 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1498 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import Link from "Link" /* 1500 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 19643 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
-import UserStore from "UserStore" /* 1383 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 19793 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4984 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -48,9 +48,9 @@ function PhoneThenEmailInterstitial(navigation) {
       dispatch(StackActions.push(ENTER_EMAIL));
     }
   });
-  const Button = navigation(5634).Button;
+  const Button = navigation(5754).Button;
   intl3 = navigation(1113).intl;
-  return <EmptyState Illustration={navigation(19644).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(19794).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
 }
 const View = react_native.View;
 ({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);
@@ -82,7 +82,7 @@ export default function VerificationModal() {
     const obj2 = stateFromStores(dependencyMap[33]);
     obj2.dismissKeyboard();
   }, []);
-  const Navigator = stateFromStores(7169).Navigator;
+  const Navigator = stateFromStores(7290).Navigator;
   let intl = stateFromStores(1113).intl;
   return <Navigator screens={react.useMemo(() => {
     let obj10;
@@ -267,7 +267,7 @@ export default function VerificationModal() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     let c4;
@@ -353,7 +353,7 @@ export default function VerificationModal() {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -388,7 +388,7 @@ export default function VerificationModal() {
                           closure_0.push(constants2.OVERVIEW);
                         }
                         c2 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp14) {
                       c2 = 3;

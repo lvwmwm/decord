@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/file_upload", scales: [1], hash: "b21c62c69f9c9a32bba1f84b5cff136f", name: "NitroFileUpload.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "bf1d4d4a19f2cea3022014d1d8426894", name: "en-GB.messages.bf1d4d4a19f2cea3022014d1d8426894.compiled.messages", type: "jsona" });

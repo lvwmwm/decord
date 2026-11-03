@@ -1,28 +1,28 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18539
+// Function ID: 18540
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4944, 4956, 6775, 5767, 1072, 21, 5014, 575, 14883, 1187, 5624, 1113, 12042, 5717, 5587, 18393, 504, 12, 15601, 2]
+// Dependencies: [19, 17, 5071, 5083, 6895, 5887, 1072, 21, 5141, 575, 15014, 1187, 5747, 1113, 12179, 5837, 5710, 18538, 504, 12, 15743, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 18394 (HomeDrawerGuildVoiceState)
+// Module 18539 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12042 */;
-import AvatarPile2 from "AvatarPile" /* 14883 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12179 */;
+import AvatarPile2 from "AvatarPile" /* 15014 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5887 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ function LiveTag() {
   let str;
   const tmp = closure_15();
   const obj = { style: tmp.tag, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: unpackModuleId(Text, obj2) };
-  obj2 = { variant: "text-xxs/bold", style: tmp.tagText, lineClamp: 1, children: str.toUpperCase() };
+  obj2 = { variant: "text-xxs/semibold", style: tmp.tagText, lineClamp: 1, children: str.toUpperCase() };
   Text = Text_Text.Text;
   const intl = intl2.intl;
   str = intl.string(intl2.t.dI3q4h);

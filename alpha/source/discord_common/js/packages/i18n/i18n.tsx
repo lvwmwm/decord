@@ -1,48 +1,48 @@
-// Module ID: 1898
-// Function ID: 1899
+// Module ID: 2027
+// Function ID: 2028
 // Name: i18n
-// Dependencies: [1899, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 568, 1940, 1941, 1348, 2]
+// Dependencies: [2028, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 568, 2069, 2070, 1348, 2]
 
-// Module 1898 (i18n)
+// Module 2027 (i18n)
 import _mod568 from "module_568" /* 568 */;
 import react_native from "react-native" /* 1348 */;
-import _modDef1899 from "module_1899" /* 1899 */;
-import _default2 from "_default2" /* 1936 */;
-import _mod1940 from "module_1940" /* 1940 */;
-import parse from "parse" /* 1941 */;
-import module_1908 from "module_1908" /* 1908 */;
-import module_1909 from "module_1909" /* 1909 */;
-import module_1910 from "module_1910" /* 1910 */;
-import module_1911 from "module_1911" /* 1911 */;
-import module_1912 from "module_1912" /* 1912 */;
-import module_1913 from "module_1913" /* 1913 */;
-import module_1914 from "module_1914" /* 1914 */;
-import module_1915 from "module_1915" /* 1915 */;
-import module_1916 from "module_1916" /* 1916 */;
-import module_1917 from "module_1917" /* 1917 */;
-import module_1918 from "module_1918" /* 1918 */;
-import module_1919 from "module_1919" /* 1919 */;
-import module_1920 from "module_1920" /* 1920 */;
-import module_1921 from "module_1921" /* 1921 */;
-import module_1922 from "module_1922" /* 1922 */;
-import module_1923 from "module_1923" /* 1923 */;
-import module_1924 from "module_1924" /* 1924 */;
-import module_1925 from "module_1925" /* 1925 */;
-import module_1926 from "module_1926" /* 1926 */;
-import module_1927 from "module_1927" /* 1927 */;
-import module_1928 from "module_1928" /* 1928 */;
-import module_1929 from "module_1929" /* 1929 */;
-import module_1930 from "module_1930" /* 1930 */;
-import module_1931 from "module_1931" /* 1931 */;
-import module_1932 from "module_1932" /* 1932 */;
-import module_1933 from "module_1933" /* 1933 */;
-import module_1934 from "module_1934" /* 1934 */;
-import module_1935 from "module_1935" /* 1935 */;
+import _modDef2028 from "module_2028" /* 2028 */;
+import _default2 from "_default2" /* 2065 */;
+import _mod2069 from "module_2069" /* 2069 */;
+import parse from "parse" /* 2070 */;
+import module_2037 from "module_2037" /* 2037 */;
+import module_2038 from "module_2038" /* 2038 */;
+import module_2039 from "module_2039" /* 2039 */;
+import module_2040 from "module_2040" /* 2040 */;
+import module_2041 from "module_2041" /* 2041 */;
+import module_2042 from "module_2042" /* 2042 */;
+import module_2043 from "module_2043" /* 2043 */;
+import module_2044 from "module_2044" /* 2044 */;
+import module_2045 from "module_2045" /* 2045 */;
+import module_2046 from "module_2046" /* 2046 */;
+import module_2047 from "module_2047" /* 2047 */;
+import module_2048 from "module_2048" /* 2048 */;
+import module_2049 from "module_2049" /* 2049 */;
+import module_2050 from "module_2050" /* 2050 */;
+import module_2051 from "module_2051" /* 2051 */;
+import module_2052 from "module_2052" /* 2052 */;
+import module_2053 from "module_2053" /* 2053 */;
+import module_2054 from "module_2054" /* 2054 */;
+import module_2055 from "module_2055" /* 2055 */;
+import module_2056 from "module_2056" /* 2056 */;
+import module_2057 from "module_2057" /* 2057 */;
+import module_2058 from "module_2058" /* 2058 */;
+import module_2059 from "module_2059" /* 2059 */;
+import module_2060 from "module_2060" /* 2060 */;
+import module_2061 from "module_2061" /* 2061 */;
+import module_2062 from "module_2062" /* 2062 */;
+import module_2063 from "module_2063" /* 2063 */;
+import module_2064 from "module_2064" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 let _instance_members_initializer_I18N_;
 
-global.IntlMessageFormat = _modDef1899;
+global.IntlMessageFormat = _modDef2028;
 delete global["IntlMessageFormat"];
 if (typeof Intl === "undefined") {
   const _module28 = _default2;
@@ -172,18 +172,18 @@ class I18N extends EventEmitter {
     let getLanguages;
     let getMessages;
     let tmp12;
-    const f82687 = (resolveLanguageLoaded) => {
+    const f83112 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     initialLocale = initialLocale.initialLocale;
     ({ getMessages, getLanguages } = initialLocale);
     const obj = new I18N(tmp5, tmp4, tmp3, tmp2, new.target, this, tmp);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f82687);
-    new Promise(f82687);
+    obj.initialLanguageLoad = new Promise(f83112);
+    new Promise(f83112);
     if (Intl.__addLocaleData) {
       const _Intl = Intl;
-      Intl.__addLocaleData(_mod1940);
+      Intl.__addLocaleData(_mod2069);
     }
     obj._languages = getLanguages();
     if (null != window.Proxy) {

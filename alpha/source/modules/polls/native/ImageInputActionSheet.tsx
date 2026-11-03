@@ -1,17 +1,17 @@
-// Module ID: 12566
-// Function ID: 12567
+// Module ID: 12702
+// Function ID: 12703
 // Name: ImageInputActionSheet
-// Dependencies: [19, 17, 8406, 21, 5014, 575, 12565, 5207, 5258, 7366, 5624, 1187, 7368, 1113, 12567, 2]
+// Dependencies: [19, 17, 8530, 21, 5141, 575, 12701, 5330, 5381, 7486, 5747, 1187, 7488, 1113, 12703, 2]
 // Exports: default
 
-// Module 12566 (ImageInputActionSheet)
+// Module 12702 (ImageInputActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PollsConstants from "PollsConstants" /* 8406 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12567 */;
+import PollsConstants from "PollsConstants" /* 8530 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12703 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,7 +76,7 @@ export default function ImageInputAnswerActionSheet(channelId) {
       }
     }
     const _HermesInternal = HermesInternal;
-    const obj3 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: ":" + name + ":" };
+    const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: ":" + name + ":" };
     items[1] = tmp10(Text, obj3);
     tmp6Result = tmp6(tmp9, obj);
   }

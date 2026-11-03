@@ -33,11 +33,11 @@ let obj = { INDEX_SIZE_ERR: 1, DOMSTRING_SIZE_ERR: 2, HIERARCHY_REQUEST_ERR: 3, 
 let closure_6 = _classPrivateFieldKey("name");
 let closure_7 = _classPrivateFieldKey("code");
 class DOMException {
-  constructor(Aborted, AbortError) {
+  constructor(arg0, arg1) {
     let constructResult;
     const self = this;
     _classCallCheck(this, DOMException);
-    const items = [Aborted];
+    const items = [arg0];
     const obj = _getPrototypeOf(DOMException);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
@@ -48,15 +48,15 @@ class DOMException {
       constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    Object.defineProperty(tmp3Result, closure_6, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_7, { writable: true, value: "a" });
-    if (undefined === AbortError) {
+    Object.defineProperty(tmp3Result, closure_6, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_7, { writable: true, value: "Array" });
+    if (undefined === arg1) {
       _classPrivateFieldBase(tmp3Result, closure_6)[closure_6] = "Error";
       _classPrivateFieldBase(tmp3Result, closure_7)[closure_7] = 0;
     } else {
       const _String = String;
       const tmp12 = _classPrivateFieldBase(tmp3Result, closure_6);
-      tmp12[closure_6] = String(AbortError);
+      tmp12[closure_6] = String(arg1);
       let num = closure_5[tmp3Result.name];
       const tmp13 = _classPrivateFieldBase(tmp3Result, closure_7);
       if (num == null) {

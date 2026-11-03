@@ -1,21 +1,19 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11738
+// Function ID: 11739
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 5014, 5272, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 5395, 5747, 1113, 5754, 2]
 // Exports: default
 
-// Module 11601 (LeaveConnectionRoleActionSheet)
+// Module 11738 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c3;
 let closure_4;
@@ -36,8 +34,8 @@ export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   const tmp = closure_5();
   const obj = { children: React3(View, obj2) };
   obj2 = { style: tmp.container, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj3 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [_false(Text, obj3), , ];

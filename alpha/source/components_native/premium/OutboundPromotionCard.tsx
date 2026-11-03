@@ -1,28 +1,26 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15588
+// Function ID: 15589
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 6778, 5272, 7321, 1113, 5624, 5754, 5253, 9667, 15448, 5959, 15449, 1994, 9668, 5717, 5634, 5258, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 6898, 5395, 7441, 1113, 5747, 5874, 5376, 9799, 15589, 6079, 15590, 2123, 9800, 5837, 5754, 5381, 2]
 // Exports: default
 
-// Module 15447 (OutboundPromotionCard)
+// Module 15588 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5754 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5874 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -38,7 +36,7 @@ function TermsAndConditionsActionSheet(termsAndConditions) {
   termsAndConditions = termsAndConditions.termsAndConditions;
   const obj = { header: metroRequire(BottomSheetTitleHeader, obj2), children: metroRequire(Text, obj3) };
   const tmp = closure_8();
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj2 = { title: intl.string(intl4.t.PdKWVT) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl4.intl;

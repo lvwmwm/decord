@@ -1,25 +1,25 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9500
+// Function ID: 9501
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9370, 21, 5014, 575, 5095, 9373, 9374, 5717, 5587, 9375, 9377, 5624, 9379, 2]
+// Dependencies: [19, 17, 9498, 21, 5141, 575, 1652, 9501, 9502, 5837, 5710, 9503, 9505, 5747, 9507, 2]
 // Exports: default
 
-// Module 9372 (GameProfileHeader)
+// Module 9500 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9374 */;
-import GameCoverArt from "GameCoverArt" /* 9375 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9379 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9502 */;
+import GameCoverArt from "GameCoverArt" /* 9503 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9507 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9370 */;
+import GameProfileConstants from "GameProfileConstants" /* 9498 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const _modDef1652 = _mod1652;
 const GameCoverArtDefault = GameCoverArt;
 
 let MOBILE_GAME_PROFILE_MAX_WIDTH;
@@ -48,105 +48,114 @@ obj5 = { aspectRatio: 0.75, height: 114, borderRadius: nativeDefault.radii.sm, b
 obj6 = { flexDirection: "row", alignItems: "flex-end", alignSelf: "stretch", gap: nativeDefault.space.PX_8 };
 obj7 = { textShadowColor: nativeDefault.colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
 let closure_8 = createStyles(obj);
-const __initData = { code: "function GameProfileHeaderTsx1(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
+let closure_9 = { code: "(function GameProfileHeaderTsx1(){let[effectiveScrollY]=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};})" };
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
 
 export default function GameProfileHeader(arg0) {
   let game;
-  let items1;
-  let items2;
+  let items10;
   let items3;
   let items4;
   let items5;
   let items6;
   let items7;
   let items8;
+  let items9;
   let obj5;
   let obj9;
   let onHeightMeasured;
   let scrollY;
-  let tmp6Result;
+  let tmp10Result;
+  let tmp6;
+  let tmp7;
   ({ game, scrollY, onHeightMeasured } = arg0);
-  scrollY = undefined;
   const tmp = closure_8();
-  let obj = ReanimatedRexport;
+  let obj = _mod1652;
+  const sharedValue = obj.useSharedValue(0);
+  const items = [closure_9, ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
   if (scrollY == null) {
-    scrollY = obj.useSharedValue(0);
+    scrollY = sharedValue;
   }
-  const fn = function x() {
-    const obj = { top: -Math.max(0, -scrollY.get()) };
-    return obj;
-  };
-  fn.__closure = { effectiveScrollY: scrollY };
-  fn.__workletHash = 1177397229282;
-  fn.__initData = __initData;
+  items[1] = scrollY;
+  [tmp6, tmp7] = items;
+  class GameProfileHeaderTsx1 {
+    constructor() {
+      const obj = { top: -Math.max(0, -closure_1_0.get()) };
+      return obj;
+    }
+  }
+  const items1 = [tmp7];
+  GameProfileHeaderTsx1.__closure = items1;
+  GameProfileHeaderTsx1.__workletHash = 14790445044571;
+  GameProfileHeaderTsx1.__initData = tmp6;
   const genres = game.genres;
-  const tmp2Result = ReanimatedRexport;
-  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
+  const animatedStyle = useAnimatedStyle(GameProfileHeaderTsx1);
   const name = game.name;
-  const mapped = genres.map(tmp2(9373).getGenreText);
+  const mapped = genres.map(tmp2(9501).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
-  const tmp7 = useGameProfileHeroBackgroundURLDefault(game, 1024);
-  const items = [onHeightMeasured];
-  const obj3 = { style: items1, children: items2 };
-  items1 = [tmp.artHero, animatedStyle];
-  let tmp10 = null != tmp7;
+  const tmp11 = useGameProfileHeroBackgroundURLDefault(game, 1024);
+  const items2 = [onHeightMeasured];
+  const obj3 = { style: items3, children: items4 };
+  items3 = [tmp.artHero, animatedStyle];
+  let tmp14 = null != tmp11;
   const obj2 = {
     style: tmp.container,
     onLayout: react.useCallback((nativeEvent) => {
       if (onHeightMeasured != null) {
         tmp(nativeEvent.nativeEvent.layout.height);
       }
-    }, items),
-    children: items4
+    }, items2),
+    children: items6
   };
-  View = ReanimatedRexportDefault.View;
-  if (tmp10) {
+  View = _modDef1652.View;
+  if (tmp14) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
-    obj5 = { uri: tmp7 };
-    tmp10 = metroRequire(tmp6(5717), obj4);
+    obj5 = { uri: tmp11 };
+    tmp14 = metroRequire(tmp10(5837), obj4);
   }
-  items2 = [tmp10, ];
-  const obj6 = { colors: items3, style: tmp.artHeroGradient };
-  items3 = ["rgba(0,0,0,0.3)", tmp.container.backgroundColor];
-  items2[1] = metroRequire(LinearGradientDefault, obj6);
-  items4 = [metroImportDefault(View, obj3), ];
-  const obj7 = { style: tmp.headerContent, children: items5 };
-  const obj8 = { style: tmp.shadowContainer, children: metroRequire(tmp6Result, obj9) };
+  items4 = [tmp14, ];
+  const obj6 = { colors: items5, style: tmp.artHeroGradient };
+  items5 = ["rgba(0,0,0,0.3)", tmp.container.backgroundColor];
+  items4[1] = metroRequire(LinearGradientDefault, obj6);
+  items6 = [metroImportDefault(View, obj3), ];
+  const obj7 = { style: tmp.headerContent, children: items7 };
+  const obj8 = { style: tmp.shadowContainer, children: metroRequire(tmp10Result, obj9) };
   obj9 = { game, imageSize: 114, size: GameCoverArt.GameCoverArtSize.LARGE, style: tmp.coverContainer };
-  tmp6Result = GameCoverArtDefault;
-  items5 = [metroRequire(View, obj8), ];
-  let tmp12Result = null != l30Rank;
-  const obj10 = { style: tmp.titleContainer, children: items6 };
-  if (tmp12Result) {
+  tmp10Result = GameCoverArtDefault;
+  items7 = [metroRequire(View, obj8), ];
+  let tmp16Result = null != l30Rank;
+  const obj10 = { style: tmp.titleContainer, children: items8 };
+  if (tmp16Result) {
     const obj11 = { rank: l30Rank };
-    tmp12Result = tmp12(tmp6(9377), obj11);
+    tmp16Result = tmp16(tmp10(9505), obj11);
   }
-  items6 = [tmp12Result, , ];
-  const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items7, children: name };
-  items7 = [, ];
-  const obj12 = { style: tmp.titleRow, children: items8 };
-  ({ textShadow: arr9[0], title: arr9[1] } = tmp);
-  items8 = [metroRequire(tmp2(5624).Text, obj13), ];
-  let tmp12Result3 = game.id === hasOwnProperty;
-  if (tmp12Result3) {
+  items8 = [tmp16Result, , ];
+  const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items9, children: name };
+  items9 = [, ];
+  const obj12 = { style: tmp.titleRow, children: items10 };
+  ({ textShadow: arr11[0], title: arr11[1] } = tmp);
+  items10 = [metroRequire(tmp2(5747).Text, obj13), ];
+  let tmp16Result3 = game.id === hasOwnProperty;
+  if (tmp16Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
-    const tmp6Result2 = FastImageDefault;
-    tmp12Result3 = tmp12(tmp6Result2, obj14);
+    const tmp10Result2 = FastImageDefault;
+    tmp16Result3 = tmp16(tmp10Result2, obj14);
   }
-  items8[1] = tmp12Result3;
-  items6[1] = metroImportDefault(View, obj12);
-  let tmp12Result4 = null;
+  items10[1] = tmp16Result3;
+  items8[1] = metroImportDefault(View, obj12);
+  let tmp16Result4 = null;
   if (null != joined) {
-    tmp12Result4 = null;
+    tmp16Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp12Result4 = tmp12(tmp2(5624).Text, obj15);
+      tmp16Result4 = tmp16(tmp2(5747).Text, obj15);
     }
   }
-  items6[2] = tmp12Result4;
-  items5[1] = metroImportDefault(View, obj10);
-  items4[1] = metroImportDefault(View, obj7);
+  items8[2] = tmp16Result4;
+  items7[1] = metroImportDefault(View, obj10);
+  items6[1] = metroImportDefault(View, obj7);
   return metroImportDefault(View, obj2);
 };

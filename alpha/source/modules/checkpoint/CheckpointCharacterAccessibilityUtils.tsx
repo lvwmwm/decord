@@ -1,14 +1,14 @@
-// Module ID: 6433
-// Function ID: 6434
+// Module ID: 6553
+// Function ID: 6554
 // Name: CheckpointCharacterAccessibilityUtils
-// Dependencies: [6434, 6436, 6111, 1113, 3092, 2]
+// Dependencies: [6554, 6231, 6556, 1113, 3219, 2]
 // Exports: getCheckpointCharacterAccessibilityLabel
 
-// Module 6433 (CheckpointCharacterAccessibilityUtils)
-import _modDef3092 from "module_3092" /* 3092 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6111 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6436 */;
+// Module 6553 (CheckpointCharacterAccessibilityUtils)
+import _modDef3219 from "module_3219" /* 3219 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6231 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6554 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6556 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
     if (null != tmp3) {
       const tmp5 = CheckpointCustomizationUtils.CUSTOMIZATION_OPTION_TO_TRAIT[item];
       let tmp6;
-      const tmpResult = CheckpointCustomizationUtils;
+      const tmpResult = CheckpointCharacterTraits;
       if (!tmpResult.isTraitNoneOptionId(tmp5, tmp3)) {
         const tmp7 = CheckpointTraitOptionNames.CHECKPOINT_TRAIT_TO_OPTION_NAMES[tmp5];
         if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT === item) {
@@ -43,7 +43,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
         } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT_COLOR === item) {
           const tmpResult5 = CheckpointCharacterTraits;
           if (tmpResult5.getOutfitDefaultOptionId(tmp3) !== tmp3) {
-            tmp6 = tmp(6436).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
+            tmp6 = tmp(6556).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
           }
         } else {
           tmp6 = tmp7[tmp3];
@@ -56,7 +56,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
       const intl = tmp(1113).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { category: tmpResult6.getCustomizationOptionName(item), name: intl2.string(tmp4) };
-      const prop = _modDef3092["Z+HdIo"];
+      const prop = _modDef3219["Z+HdIo"];
       tmpResult6 = CheckpointCustomizationUtils;
       intl2 = tmp(1113).intl;
       push(formatToPlainString(prop, obj));
@@ -65,7 +65,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
   let intl = require("intl").intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj = { traits: listFormat.format(items) };
-  const mQNR4x = items(3092).mQNR4x;
+  const mQNR4x = items(3219).mQNR4x;
   listFormat = new Intl.ListFormat(require("intl").intl.currentLocale, { type: "conjunction" });
   return formatToPlainString(mQNR4x, obj);
 }

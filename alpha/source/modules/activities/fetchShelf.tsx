@@ -1,15 +1,15 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11859
+// Function ID: 11860
 // Name: fetchShelf
-// Dependencies: [5, 2038, 2016, 4862, 1072, 1379, 572, 6747, 1260, 2]
+// Dependencies: [5, 2167, 2145, 4989, 1072, 1380, 572, 6867, 1260, 2]
 // Exports: fetchShelf
 
-// Module 11722 (fetchShelf)
+// Module 11859 (fetchShelf)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import ApplicationRecord from "ApplicationRecord" /* 2016 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ApplicationStore from "ApplicationStore" /* 2167 */;
+import ApplicationRecord from "ApplicationRecord" /* 2145 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9, closure_4;
@@ -41,7 +41,7 @@ let obj = function _fetchShelf() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;

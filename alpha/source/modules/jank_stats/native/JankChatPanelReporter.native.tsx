@@ -1,12 +1,12 @@
-// Module ID: 18061
-// Function ID: 18062
+// Module ID: 18205
+// Function ID: 18206
 // Name: JankChatPanelReporter
-// Dependencies: [19, 21, 18062, 18065, 2]
+// Dependencies: [19, 21, 18206, 18209, 2]
 // Exports: default
 
-// Module 18061 (JankChatPanelReporter)
+// Module 18205 (JankChatPanelReporter)
 import Fragment from "Fragment" /* 21 */;
-import getJankScreenName from "getJankScreenName" /* 18062 */;
+import getJankScreenName from "getJankScreenName" /* 18206 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -33,6 +33,6 @@ export default function JankChatPanelReporter(channelId) {
     const obj = getJankScreenName;
     return obj.getChatPanelScreenName(channelId, showCreateThread);
   }, []);
-  showCreateThread(18065);
-  return <tmp3 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={callback} resolveClosedName={channelId(18062).getPanelListScreenName} />;
+  showCreateThread(18209);
+  return <tmp3 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={callback} resolveClosedName={channelId(18206).getPanelListScreenName} />;
 };

@@ -1,12 +1,12 @@
-// Module ID: 5043
-// Function ID: 5044
+// Module ID: 5170
+// Function ID: 5171
 // Name: HexagonCampaignExperiment
-// Dependencies: [1447, 5041, 2]
+// Dependencies: [1449, 5168, 2]
 // Exports: getIsHexagonCampaignEnabled, useIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled, useIsHexagonCampaignQuestHomeRedirectEnabled
 
-// Module 5043 (HexagonCampaignExperiment)
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 5170 (HexagonCampaignExperiment)
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5168 */;
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-09-hexagon-campaign-client", defaultConfig: { enabled: false, questHomeRedirect: false }, variations: { 0: { enabled: false, questHomeRedirect: false }, 1: { enabled: true, questHomeRedirect: true }, 2: { enabled: true, questHomeRedirect: false } } };

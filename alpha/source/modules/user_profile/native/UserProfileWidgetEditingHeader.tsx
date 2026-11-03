@@ -1,21 +1,21 @@
-// Module ID: 16563
-// Function ID: 16564
+// Module ID: 16706
+// Function ID: 16707
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 5634, 9572, 8028, 12482, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 5754, 9704, 8152, 12618, 2]
 // Exports: default
 
-// Module 16563 (UserProfileWidgetEditingHeader)
+// Module 16706 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import PlusSmallIcon2 from "PlusSmallIcon" /* 9572 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12482 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import IconButton2 from "IconButton" /* 8152 */;
+import PlusSmallIcon2 from "PlusSmallIcon" /* 9704 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12618 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

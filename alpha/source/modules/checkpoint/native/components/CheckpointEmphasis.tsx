@@ -1,22 +1,22 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13793
+// Function ID: 13794
 // Name: CheckpointEmphasis
-// Dependencies: [19, 17, 6066, 21, 1376, 6434, 5014, 575, 5642, 11047, 8031, 5624, 2]
+// Dependencies: [19, 17, 6186, 21, 1357, 6554, 5141, 575, 5762, 11182, 8155, 5747, 2]
 // Exports: default
 
-// Module 13653 (CheckpointEmphasis)
+// Module 13793 (CheckpointEmphasis)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useFontScale from "useFontScale" /* 5642 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import useFontScale from "useFontScale" /* 5762 */;
+import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import inlineStyles from "inlineStyles" /* 8155 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6554 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -70,7 +70,7 @@ export default function CheckpointEmphasis(children) {
   obj7 = { points, fill };
   const tmp3 = inlineStylesDefault;
   items2 = [metroRequire(tmp3, size), ];
-  const obj8 = { variant: "experimental/mono-md/bold", style: tmp.text, lineClamp: 1, children };
+  const obj8 = { variant: "mono-md/bold", style: tmp.text, lineClamp: 1, children };
   items2[1] = metroRequire(Text_Text.Text, obj8);
   return metroRequire(React3, obj3);
 };

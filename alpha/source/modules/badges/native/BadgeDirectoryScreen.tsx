@@ -1,18 +1,18 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11594
+// Function ID: 11595
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1383, 21, 5014, 5586, 575, 504, 1113, 6998, 11456, 11458, 7169, 11482, 2]
+// Dependencies: [19, 1385, 21, 5141, 5709, 575, 504, 1113, 7124, 11593, 11595, 7290, 11619, 2]
 // Exports: default
 
-// Module 11457 (BadgeDirectoryScreen)
+// Module 11594 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11456 */;
+import NavigatorConstants from "NavigatorConstants" /* 5709 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11593 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, dependencyMap;
@@ -89,14 +89,14 @@ export default function BadgeDirectoryScreen(targetUserId) {
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(11456);
+      const tmp2Result = targetUserId(11593);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(7169).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(7290).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11482).Modal, obj5);
+        tmp9Result = tmp9(tmp2(11619).Modal, obj5);
       }
       return tmp9Result;
     }

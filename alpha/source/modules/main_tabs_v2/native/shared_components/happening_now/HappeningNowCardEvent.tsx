@@ -1,22 +1,22 @@
-// Module ID: 18147
-// Function ID: 18148
+// Module ID: 18291
+// Function ID: 18292
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2062, 1383, 17287, 1072, 21, 5014, 575, 1187, 9509, 504, 7482, 8969, 8965, 1252, 8962, 1409, 9206, 17288, 8661, 5624, 1895, 5717, 1113, 2]
+// Dependencies: [19, 17, 2191, 1385, 17430, 1072, 21, 5141, 575, 1187, 9637, 504, 7606, 9097, 9093, 1252, 9090, 1411, 9334, 17431, 8785, 5747, 2024, 5837, 1113, 2]
 
-// Module 18147 (HappeningNowCardEvent)
+// Module 18291 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8962 */;
-import ClipView from "ClipView" /* 9509 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9090 */;
+import ClipView from "ClipView" /* 9637 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
-import UserStore from "UserStore" /* 1383 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17287 */;
+import LocaleStore from "LocaleStore" /* 2191 */;
+import UserStore from "UserStore" /* 1385 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17430 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_EVENT_BANNER_WIDTH;
@@ -202,7 +202,7 @@ const memoResult = react.memo(function HappeningNowCardEvent(event) {
   const obj15 = { color: str2, variant: str3, children: startDateTimeString };
   str3 = undefined;
   if (isLive) {
-    str3 = "text-xs/bold";
+    str3 = "text-xs/semibold";
   }
   if (isLive) {
     const intl = tmp26(tmp19[24]).intl;

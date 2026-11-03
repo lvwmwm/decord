@@ -1,25 +1,27 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 13531
+// Function ID: 13532
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1072, 10727, 21, 5014, 575, 13396, 7207, 13384, 9135, 7803, 1379, 7217, 11047, 12411, 10733, 13403, 1113, 10736, 7218, 2]
+// Dependencies: [32, 19, 17, 1072, 10857, 21, 5141, 575, 13532, 7328, 13520, 9263, 7927, 1380, 7338, 11182, 12547, 10863, 13539, 1113, 10866, 7339, 2]
 // Exports: default
 
-// Module 13395 (SearchableDestinationList)
+// Module 13531 (SearchableDestinationList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7207 */;
-import UserSearchUtils from "UserSearchUtils" /* 7803 */;
-import _mod9135 from "module_9135" /* 9135 */;
-import UserRowConstants from "UserRowConstants" /* 10727 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import formatResults from "formatResults" /* 13384 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7328 */;
+import UserSearchUtils from "UserSearchUtils" /* 7927 */;
+import _mod9263 from "module_9263" /* 9263 */;
+import UserRowConstants from "UserRowConstants" /* 10857 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12547 */;
+import formatResults from "formatResults" /* 13520 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
+
+let results;
 
 let c10;
 let c9;
@@ -92,7 +94,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   const disableLongPress = getRowIsUnavailable.disableLongPress;
   selectedDestinations = undefined;
   let closure_9;
-  let results;
+  results = undefined;
   let updateSearchText;
   let ref;
   c13 = undefined;
@@ -244,7 +246,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     let type;
     ({ type, record } = results[arg1]);
     const arr = results;
-    if (type !== _mod9135.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod9263.AutocompleterResultTypes.HEADER) {
       const destinationKey = formatResults.destinationKey;
       formatResults;
       const tmp2Result4 = formatResults;
@@ -287,20 +289,20 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         const obj2 = { onLongPress: NOOP };
       }
       const merged = Object.assign(tmp17);
-      if (_mod9135.AutocompleterResultTypes.USER === type) {
+      if (_mod9263.AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: obj3 };
         obj3 = { user: record, type: tmp2Result5.getRelationshipType(record.id), onPress: callback3 };
         const merged1 = Object.assign(obj);
         tmp2Result5 = UserSearchUtils;
         return element;
-      } else if (_mod9135.AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (_mod9263.AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: obj4 };
         obj4 = { channel: record, onPress: callback4 };
         const merged2 = Object.assign(obj);
         return element1;
       } else {
-        if (_mod9135.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (_mod9135.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (_mod9263.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (_mod9263.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             const tmp2Result6 = GlobalUtils;
             return tmp2Result6.assertNever(type);
           }
@@ -323,7 +325,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     let type;
     ({ type, record } = results[arg1]);
     let tmp2;
-    if (type !== _mod9135.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod9263.AutocompleterResultTypes.HEADER) {
       let lineClamp;
       if (getRowIsUnavailable != null) {
         const tmp5 = getRowIsUnavailable(record);

@@ -1,9 +1,9 @@
-// Module ID: 4886
-// Function ID: 4887
+// Module ID: 5013
+// Function ID: 5014
 // Name: LibdiscoreStore
-// Dependencies: [3, 504, 572, 4887, 2]
+// Dependencies: [3, 504, 572, 5014, 2]
 
-// Module 4886 (LibdiscoreStore)
+// Module 5013 (LibdiscoreStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

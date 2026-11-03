@@ -1,23 +1,23 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9899
+// Function ID: 9900
 // Name: CommandPermissionContext
-// Dependencies: [19, 4919, 4867, 4881, 502, 4863, 4926, 4885, 4946, 1383, 1072, 7389, 504, 1084, 1992, 2]
+// Dependencies: [19, 5046, 4994, 5008, 502, 4990, 5053, 5012, 5073, 1385, 1072, 7509, 504, 1084, 2121, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 9767 (CommandPermissionContext)
+// Module 9899 (CommandPermissionContext)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import Server from "Server" /* 1992 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7389 */;
+import Server from "Server" /* 2121 */;
+import ChannelRecord from "ChannelRecord" /* 4994 */;
+import GuildRecord from "GuildRecord" /* 5008 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7509 */;
 import react_mod from "react" /* 19 */;
-import ImpersonateStore from "ImpersonateStore" /* 4919 */;
+import ImpersonateStore from "ImpersonateStore" /* 5046 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

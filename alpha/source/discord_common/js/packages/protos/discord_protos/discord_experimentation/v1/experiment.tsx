@@ -1,19 +1,19 @@
-// Module ID: 8588
-// Function ID: 8589
+// Module ID: 8712
+// Function ID: 8713
 // Name: experiment
-// Dependencies: [32, 1197, 1226, 1227, 8589, 8590, 2]
+// Dependencies: [32, 1197, 1226, 1227, 8713, 8714, 2]
 
-// Module 8588 (experiment)
+// Module 8712 (experiment)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;
-import rules from "rules" /* 8589 */;
-import duration from "duration" /* 8590 */;
+import rules from "rules" /* 8713 */;
+import duration from "duration" /* 8714 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
 let tmp;
 let tmp2;
@@ -570,7 +570,7 @@ class Experiment$Type extends MessageType {
     }
     if (id.guildExperimentVersion) {
       const Int32Value2 = wrappers.Int32Value;
-      const internalBinaryWrite11 = Int32Value2.internalBinaryWrite;
+      internalBinaryWrite11 = Int32Value2.internalBinaryWrite;
       const guildExperimentVersion = id.guildExperimentVersion;
       const tagResult35 = tag.tag(35, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(guildExperimentVersion, tagResult35.fork(), writeUnknownFields);
@@ -615,7 +615,7 @@ class Experiment$Type extends MessageType {
       tagResult41.bool(id.isManaged);
     }
     if (id.numberLineSettings) {
-      const internalBinaryWrite12 = internalBinaryWrite.internalBinaryWrite;
+      internalBinaryWrite12 = internalBinaryWrite.internalBinaryWrite;
       const numberLineSettings = id.numberLineSettings;
       const tagResult42 = tag.tag(43, _mod1197.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(numberLineSettings, tagResult42.fork(), writeUnknownFields);
@@ -1059,7 +1059,7 @@ const items2 = [
   { no: 8, name: "owning_slot_id", kind: "scalar", T: 5 }
 ];
 let tmp11 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Variation", items2, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
-const authStore6 = tmp11;
+const version = tmp11;
 const MessageType5 = _mod1197.MessageType;
 class Bucket$Type extends MessageType5 {
   constructor() {
@@ -1187,7 +1187,7 @@ const items3 = [
   { no: 6, name: "exposure_mode", kind: "enum", T: T6 }
 ];
 let tmp12 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Bucket", items3, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
-let closure_23 = tmp12;
+const sidebars = tmp12;
 const MessageType6 = _mod1197.MessageType;
 class Bucket_AllocationAssignmentMode$Type extends MessageType6 {
   constructor() {
@@ -1922,6 +1922,7 @@ const items9 = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }, ];
 const obj27 = { no: 2, name: "buckets", kind: "message", repeat: 1, T: T16 };
 items9[1] = obj27;
 let tmp20 = new "internalBinaryRead"("discord_protos.discord_experimentation.v1.LifecyclePlan.VariationBuckets", items9, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_VariationBuckets$Type, "internalBinaryRead", items9, this, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, experimentType, tmp9, tmp10, tmp11, tmp12, this, items31, this, items32, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, lifecyclePlan_RolloutPlanType, exports, obj27, undefined, 8, 7, 6);
+const mostRecentSelectedTextChannelIds = tmp20;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/experiment.tsx");
 
 export { Experiment_NumberLineSettings_Mode };

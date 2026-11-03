@@ -1,18 +1,18 @@
-// Module ID: 16766
-// Function ID: 16767
+// Module ID: 16909
+// Function ID: 16910
 // Name: RequestDataContent
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 1497, 1113, 6974, 5624, 2061, 7060, 5634, 5958, 16767, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 1499, 1113, 7100, 5747, 2190, 7186, 5754, 6078, 16910, 2]
 
-// Module 16766 (RequestDataContent)
+// Module 16909 (RequestDataContent)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import DataHarvestActionCreators from "DataHarvestActionCreators" /* 16767 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
+import DataHarvestActionCreators from "DataHarvestActionCreators" /* 16910 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,7 +108,7 @@ const memoResult = react.memo(function RequestDataContent() {
     closure_0 = item;
     return closure_1_8(closure_0(first1[8]).TableCheckboxRow, obj, item);
   });
-  const obj12 = { style: tmp.title, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl8.string(require("intl").t.jxXMEz) };
+  const obj12 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl8.string(require("intl").t.jxXMEz) };
   const Text = require("Text/Text").Text;
   intl8 = require("intl").intl;
   items = [closure_8(Text, obj12), ];

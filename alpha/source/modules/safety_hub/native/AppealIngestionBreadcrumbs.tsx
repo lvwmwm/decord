@@ -1,16 +1,16 @@
-// Module ID: 13343
-// Function ID: 13344
+// Module ID: 13479
+// Function ID: 13480
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 2]
 // Exports: default
 
-// Module 13343 (AppealIngestionBreadcrumbs)
+// Module 13479 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ export default function AppealIngestionBreadcrumbs(reasons) {
   let tmp2 = null;
   if (0 !== reasons.length) {
     let obj = { style: tmp.container, children: items };
-    let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: intl.string(require("intl").t.eQg0Ck) };
+    let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/semibold", children: intl.string(require("intl").t.eQg0Ck) };
     const Text = require("Text/Text").Text;
     intl = require("intl").intl;
     items = [

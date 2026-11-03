@@ -1,29 +1,30 @@
-// Module ID: 17986
-// Function ID: 17987
+// Module ID: 18129
+// Function ID: 18130
 // Name: Auth
-// Dependencies: [32, 19, 17, 13977, 1072, 21, 17987, 17988, 6998, 17997, 7171, 7118, 5014, 575, 18040, 7111, 1639, 7142, 18041, 7140, 7169, 1376, 1113, 18042, 7654, 18051, 2]
+// Dependencies: [32, 19, 17, 14108, 1072, 21, 18130, 18131, 7124, 18141, 7292, 7244, 5141, 575, 18184, 7237, 18136, 1641, 7075, 18185, 7073, 7266, 7290, 1357, 1113, 18186, 7778, 18195, 2]
 
-// Module 17986 (Auth)
+// Module 18129 (Auth)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1639 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
-import MFAUtils from "MFAUtils" /* 7118 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7142 */;
-import _mod7171 from "module_7171" /* 7171 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 17987 */;
-import RegistrationUtils from "RegistrationUtils" /* 17997 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18040 */;
-import AssetRegistry from "AssetRegistry" /* 18041 */;
-import AuthManagerDefault from "AuthManager" /* 18042 */;
-import useOrientationLockDefault from "useOrientationLock" /* 18051 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7075 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7237 */;
+import MFAUtils from "MFAUtils" /* 7244 */;
+import _mod7292 from "module_7292" /* 7292 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 18130 */;
+import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18136 */;
+import RegistrationUtils from "RegistrationUtils" /* 18141 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18184 */;
+import AssetRegistry from "AssetRegistry" /* 18185 */;
+import AuthManagerDefault from "AuthManager" /* 18186 */;
+import useOrientationLockDefault from "useOrientationLock" /* 18195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 13977 */;
+import MultiAccountStore from "MultiAccountStore" /* 14108 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17988 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18131 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -39,9 +40,9 @@ let size;
 let tmp;
 let unpackModuleId;
 const intl2 = tmp(1113);
-const utils_PlatformUtils = tmp(1376);
-const react2 = tmp(7140);
-const Navigator3 = tmp(7169);
+const utils_PlatformUtils = tmp(1357);
+const react2 = tmp(7266);
+const Navigator3 = tmp(7290);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -65,24 +66,25 @@ function NavigatorWithCaptchaHook() {
   let obj11;
   let obj12;
   let obj7;
-  let tmp18Result;
-  let tmp8;
+  let tmp19Result2;
+  let tmp9;
   let transparent;
   let tmp = require;
   obj = useIsHCaptchaModalOpenTracking;
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp5 = useWideAuthViewDefault();
   const tmp6 = closure_16();
+  const tmp7 = useShouldShowChooseAccountDefault();
   const first = _slicedToArray(react.useState(getInitialAuthRouteStack), 1)[0];
-  [tmp8, require] = react.useState(first[first.length - 1].name);
+  [tmp9, require] = react.useState(first[first.length - 1].name);
   _slicedToArray(react.useState(first[first.length - 1].name), 2);
   const effect = react.useEffect(() => {
     obj = RegistrationHandoff;
     const result = obj.clearRegistrationHandoff();
   }, []);
-  const tmp10 = _slicedToArray(react.useState(false), 2);
-  importDefault = tmp12;
-  const first1 = tmp10[0];
+  const tmp11 = _slicedToArray(react.useState(false), 2);
+  importDefault = tmp13;
+  const first1 = tmp11[0];
   const obj2 = KeyboardChatScrollView;
   const keyboardState = obj2.useKeyboardState((height) => height.height);
   const callback = react.useCallback((arg0) => {
@@ -100,32 +102,43 @@ function NavigatorWithCaptchaHook() {
     closure_1(false);
   }, []);
   const obj3 = { backgroundImageSource: AssetRegistry, backgroundImageCover: true };
-  const tmp19 = BackgroundImageDefault;
-  const children = [closure_9(tmp19, obj3), ];
-  const tmp16 = closure_11;
-  const tmp17 = closure_10;
+  const tmp20 = BackgroundImageDefault;
+  const children = [closure_9(tmp20, obj3), , ];
+  let tmp19Result = null;
+  const tmp17 = closure_11;
+  const tmp18 = closure_10;
+  if (tmp5) {
+    tmp19Result = null;
+    if (tmp9 === AuthStates.WELCOME) {
+      tmp19Result = null;
+      if (tmp7) {
+        tmp19Result = tmp19(tmp4(7073), {});
+      }
+    }
+  }
+  children[1] = tmp19Result;
   if (tmp5) {
     const items1 = [tmp6.wideOuterContainer, ];
-    let tmp25 = null;
-    const obj5 = { value: tmp10[1], children: closure_9(closure_6, obj7) };
+    let tmp27 = null;
+    const obj5 = { value: tmp11[1], children: closure_9(closure_6, obj7) };
     const Provider = react2.WideAuthScrollContext.Provider;
     if (keyboardState > 200) {
-      tmp25 = { paddingBottom: keyboardState };
+      tmp27 = { paddingBottom: keyboardState };
       const obj6 = { paddingBottom: keyboardState };
     }
-    items1[1] = tmp25;
+    items1[1] = tmp27;
     const items2 = [tmp6.wideCard, , ];
-    let tmp26 = null;
+    let tmp28 = null;
     obj7 = { style: items1, children: closure_9(closure_6, obj10) };
-    if (null != tmp8) {
-      let num = obj[tmp8];
+    if (null != tmp9) {
+      let num = obj[tmp9];
       if (num == null) {
         num = 520;
       }
-      tmp26 = { height: num };
+      tmp28 = { height: num };
       const obj8 = { height: num };
     }
-    items2[1] = tmp26;
+    items2[1] = tmp28;
     let obj9 = null;
     if (keyboardState > 200) {
       obj9 = { maxHeight: "100%", height: "100%", marginTop: 32, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 };
@@ -135,7 +148,7 @@ function NavigatorWithCaptchaHook() {
     obj11 = { screens, containerStyle: tmp6.cardContainer, viewStyle: transparent, headerStatusBarHeight: 0, cardOverlayEnabled: false, cardShadowEnabled: false, initialRouteStack: first, onWillFocus: closure_5.dismiss, onStateChange: callback, headerStyle: first1 ? tmp6.wideHeader : tmp6.wideHeaderFlat, headerLeftContainerStyle: obj12, disableHeaderAnimation: true };
     transparent = null;
     Navigator2 = Navigator3.Navigator;
-    if (tmp8 === AuthStates.WELCOME) {
+    if (tmp9 === AuthStates.WELCOME) {
       transparent = tmp6.transparent;
     }
     let num2 = 20;
@@ -144,16 +157,16 @@ function NavigatorWithCaptchaHook() {
       num2 = tmp4(575).space.PX_12;
     }
     obj12 = { paddingLeft: num2, paddingTop: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_16 };
-    tmp18Result = tmp18(Provider, obj5);
+    tmp19Result2 = tmp19(Provider, obj5);
   } else {
     ({ transparent: obj4.viewStyle, transparent: obj4.containerStyle } = tmp6);
     const obj13 = { screens: RegistrationStepsUtils, viewStyle: null, containerStyle: null, headerBackTitle: intl.string(intl2.t["13/7kX"]), initialRouteStack: first, onWillFocus: closure_5.dismiss, headerStyle: { borderBottomWidth: 0 } };
     const Navigator = Navigator3.Navigator;
     intl = intl2.intl;
-    tmp18Result = tmp18(Navigator, obj13);
+    tmp19Result2 = tmp19(Navigator, obj13);
   }
-  children[1] = tmp18Result;
-  return tmp16(tmp17, { children });
+  children[2] = tmp19Result2;
+  return tmp17(tmp18, { children });
 }
 ({ Keyboard: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const AuthStates = Constants.AuthStates;
@@ -206,8 +219,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod7171.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod7171.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod7292.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod7292.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;
@@ -236,12 +249,12 @@ const memoResult = react.memo(function Auth() {
     obj = AuthManagerDefault;
     obj.initialize();
     return () => {
-      obj = closure_1_1(closure_1_2[23]);
+      obj = closure_1_1(closure_1_2[25]);
       return obj.terminate();
     };
   }, []);
   const layoutEffect = react.useLayoutEffect(() => {
-    obj = closure_0(dependencyMap[24]);
+    obj = closure_0(dependencyMap[26]);
     return obj.trackAppUIViewed();
   }, []);
   useOrientationLockDefault();

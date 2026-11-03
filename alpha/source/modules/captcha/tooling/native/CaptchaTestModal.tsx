@@ -1,20 +1,20 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 17834
+// Function ID: 17835
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 17692, 17693, 5712, 5624, 1187, 7292, 5634, 6744, 6998, 7169, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 17835, 17836, 5832, 5747, 1187, 7412, 5754, 6864, 7124, 7290, 1113, 2]
 // Exports: default
 
-// Module 17691 (CaptchaTestModal)
+// Module 17834 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17692 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17693 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17835 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17836 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -104,7 +104,7 @@ function CaptchaTestScreen(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {
@@ -129,7 +129,7 @@ function CaptchaTestScreen(arg0) {
     let obj2 = { style: tmp4.container, children: items3 };
     let obj3 = { style: tmp4.content, children: items1 };
     let obj4 = { children: items };
-    items = [closure_7(value(first1[10]).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: "Decider" }), ];
+    items = [closure_7(value(first1[10]).Text, { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: "Decider" }), ];
     let obj5 = {
       withSpacing: true,
       value,
@@ -147,7 +147,7 @@ function CaptchaTestScreen(arg0) {
     let tmp11Result = value === value(first1[8]).CaptchaDeciderType.HCAPTCHA_RQDATA;
     if (tmp11Result) {
       obj = { children: items2 };
-      items2 = [tmp13(tmp14(tmp15[10]).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: "Difficulty" }), ];
+      items2 = [tmp13(tmp14(tmp15[10]).Text, { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: "Difficulty" }), ];
       let obj6 = {
         withSpacing: true,
         value: first1,

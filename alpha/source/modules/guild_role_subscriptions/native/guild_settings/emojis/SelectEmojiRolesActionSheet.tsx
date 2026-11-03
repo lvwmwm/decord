@@ -1,21 +1,21 @@
-// Module ID: 19997
-// Function ID: 19998
+// Module ID: 20147
+// Function ID: 20148
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 4920, 21, 5014, 575, 1625, 7217, 17203, 504, 6980, 5624, 1113, 7321, 5272, 7223, 6974, 13265, 7306, 2]
+// Dependencies: [32, 19, 17, 5047, 21, 5141, 575, 1627, 7338, 17346, 504, 7106, 5747, 1113, 7441, 5395, 7344, 7100, 13401, 7426, 2]
 // Exports: default
 
-// Module 19997 (SelectEmojiRolesActionSheet)
+// Module 20147 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, set;
+let set;
 
 let metroImportAll;
 let metroImportDefault;
@@ -107,7 +107,7 @@ export default function SelectEmojiRolesActionSheet(guildId) {
   intl4 = tmp8(tmp3[13]).intl;
   let obj5 = { scrollable: true, header: tmp9(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp9(tmp2(emoji[16]), obj6) };
   closure_7(BottomSheetTitleHeader, obj4);
-  BottomSheet = tmp8(tmp3[15]).BottomSheet;
+  const BottomSheet = tmp8(tmp3[15]).BottomSheet;
   obj6 = {
     inActionSheet: true,
     style: tmp.list,

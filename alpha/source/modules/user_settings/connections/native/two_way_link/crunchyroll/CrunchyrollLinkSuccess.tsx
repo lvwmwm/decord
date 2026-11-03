@@ -1,21 +1,21 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 14786
+// Function ID: 14787
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 5014, 9730, 5717, 14656, 5624, 1113, 7292, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 9862, 5837, 14787, 5747, 1113, 7412, 5754, 2]
 // Exports: default
 
-// Module 14655 (CrunchyrollLinkSuccess)
+// Module 14786 (CrunchyrollLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14656 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14787 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,7 +43,7 @@ export default function CrunchyrollLinkDiscordSuccess(onClose) {
   const obj4 = { source: AssetRegistryDefault, style: tmp.image };
   const tmp3 = FastImageDefault;
   items = [React3(tmp3, obj4), , ];
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.Fnvxvk) };
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.Fnvxvk) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = React3(Text, obj5);

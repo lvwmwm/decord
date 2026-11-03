@@ -1,30 +1,30 @@
-// Module ID: 13985
-// Function ID: 13986
+// Module ID: 14116
+// Function ID: 14117
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5015, 7701, 1383, 1072, 21, 1187, 5014, 575, 5596, 5624, 1113, 6980, 7106, 504, 5082, 6439, 9290, 8419, 13986, 5192, 5095, 5254, 10201, 1252, 10199, 1099, 6438, 13987, 8343, 9807, 9809, 2]
+// Dependencies: [19, 17, 5142, 7825, 1385, 1072, 21, 1187, 5141, 575, 5719, 5747, 1113, 7106, 7232, 504, 5209, 6559, 9418, 8543, 14117, 5315, 1652, 5377, 1705, 10331, 1252, 10329, 1099, 6558, 14118, 8467, 9938, 9940, 2]
 
-// Module 13985 (ChatInputContextBar)
+// Module 14116 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import DraftStore2 from "DraftStore" /* 7701 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8343 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9807 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9809 */;
-import react_mod from "react" /* 19 */;
+import useToken from "useToken" /* 5719 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Pressables from "Pressables" /* 7106 */;
+import DraftStore2 from "DraftStore" /* 7825 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8467 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9938 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9940 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import UserStore from "UserStore" /* 1383 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
-let currentUser, id, set;
+let backgroundColor, currentUser, dependencyMap, id, set;
 
 let c10;
 let closure_12;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7106);
+const AssetRegistryDefault = tmp4(7232);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -365,73 +365,98 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
 }
 function ContextBarItem(arg0) {
   let children;
-  let closure_3;
-  let items1;
+  let closure_2;
+  let items3;
   let ref;
-  let backgroundColor;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let sharedValue;
   let ref1;
-  react = undefined;
+  dependencyMap = undefined;
   ({ children, ref } = arg0);
-  obj = backgroundColor(ref1[21]);
-  backgroundColor = closure_16(obj.useGradientValue(backgroundColor(ref1[21]).GradientPercentage.END)).contextBar.backgroundColor;
-  let tmp = closure_17();
-  const obj2 = backgroundColor(ref1[22]);
-  const sharedValue = obj2.useSharedValue(0);
-  let fn = function o() {
-    obj = { backgroundColor, maxHeight: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
-  fn.__workletHash = 16731072716488;
-  fn.__initData = __initData;
-  const obj3 = backgroundColor(ref1[22]);
-  const animatedStyle = obj3.useAnimatedStyle(fn);
+  let tmp = dependencyMap;
+  obj = sharedValue(5315);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5315).GradientPercentage.END)).contextBar.backgroundColor;
+  let tmp2 = closure_17();
+  const obj2 = sharedValue(1652);
+  sharedValue = obj2.useSharedValue(0);
+  let items = [closure_22, backgroundColor, sharedValue];
+  let c0;
+  let c1;
+  [tmp4, tmp5, tmp6] = items;
+  const obj3 = sharedValue(1652);
+  class ChatInputContextBarTsx1 {
+    constructor() {
+      obj = { backgroundColor, maxHeight: _undefined.get() };
+      return obj;
+    }
+  }
+  let items1 = [tmp5, tmp6];
+  ChatInputContextBarTsx1.__closure = items1;
+  ChatInputContextBarTsx1.__workletHash = 878688550161;
+  ChatInputContextBarTsx1.__initData = tmp4;
+  const animatedStyle = obj3.useAnimatedStyle(ChatInputContextBarTsx1);
   ref1 = react.useRef(null);
-  const items = [ref1];
-  react = react.useCallback(() => {
+  const items2 = [ref1];
+  dependencyMap = react.useCallback(() => {
     const current = ref1.current;
     if (current != null) {
       current();
     }
-  }, items);
+  }, items2);
   const imperativeHandle = react.useImperativeHandle(ref, () => {
-    let handleTransitionFinished;
     obj = {
       componentDidAppear() {
-        set = sharedValue.set;
-        obj = backgroundColor(ref1[23]);
+        set = closure_1_0.set;
+        obj = sharedValue(closure_2[23]);
         const result = set(obj.withTiming(60, closure_2_15));
       },
       componentDidEnter() {
-        set = sharedValue.set;
-        obj = backgroundColor(ref1[23]);
+        set = closure_1_0.set;
+        obj = sharedValue(closure_2[23]);
         const result = set(obj.withTiming(60, closure_2_15));
       },
       componentWillLeave(current) {
-        closure_1_2.current = current;
-        set = sharedValue.set;
-        obj = backgroundColor(ref1[23]);
-        const fn = function n(arg0) {
-          const tmp = arg0;
-          if (tmp) {
-            obj = backgroundColor(ref1[22]);
-            obj.runOnJS(handleTransitionFinished)();
+        let tmp4;
+        let tmp5;
+        let tmp6;
+        ref1.current = current;
+        let tmp = closure_1_0;
+        set = closure_1_0.set;
+        const items = [closure_2_23, , ];
+        const withTiming = sharedValue(closure_2[23]).withTiming;
+        const tmp2 = sharedValue(closure_2[23]);
+        items[1] = sharedValue(closure_2[24]).scheduleOnRN;
+        items[2] = closure_1_2;
+        let c0;
+        let c1;
+        [tmp4, tmp5, tmp6] = items;
+        const tmp3 = obj;
+        class ChatInputContextBarTsx2 {
+          constructor(arg0) {
+            tmp = current;
+            if (tmp) {
+              tmp2 = closure_0;
+              tmp3 = closure_1;
+              tmp4 = closure_0(closure_1);
+            }
+            return;
           }
-        };
-        fn.__closure = { runOnJS: backgroundColor(ref1[22]).runOnJS, handleTransitionFinished };
-        fn.__workletHash = 10908592279914;
-        fn.__initData = __initData;
-        ({ runOnJS: backgroundColor(ref1[22]).runOnJS, handleTransitionFinished });
-        const result = set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
+        }
+        const items1 = [tmp5, tmp6];
+        ChatInputContextBarTsx2.__closure = items1;
+        ChatInputContextBarTsx2.__workletHash = 5373252367218;
+        ChatInputContextBarTsx2.__initData = tmp4;
+        const result = set(withTiming(0, tmp3, "respect-motion-settings", ChatInputContextBarTsx2));
       }
     };
     return obj;
   });
-  const obj4 = { style: items1, children };
-  items1 = [animatedStyle, tmp.floatingContextBar];
-  return closure_12(sharedValue(ref1[22]).View, obj4);
+  const obj4 = { style: items3, children };
+  items3 = [animatedStyle, tmp2.floatingContextBar];
+  return closure_12(ref1(1652).View, obj4);
 }
-let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;
 ({ AnalyticEvents: c10, Routes: unpackModuleId } = Constants);
@@ -458,8 +483,8 @@ let closure_17 = createStyles.createStyles(() => {
   size1 = { width: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
   return obj;
 });
-const __initData = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}" };
-let closure_23 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
+let closure_22 = { code: "(function ChatInputContextBarTsx1(){let[stylesBackgroundColor,heightSv]=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};})" };
+let closure_23 = { code: "(function ChatInputContextBarTsx2(finished){let[scheduleOnRN,handleTransitionFinished]=this.__closure;if(finished){scheduleOnRN(handleTransitionFinished);}})" };
 const memoResult = react.memo(function ChatInputContextBar(channel) {
   let items2;
   let obj3;
@@ -489,13 +514,13 @@ const memoResult = react.memo(function ChatInputContextBar(channel) {
         let id2;
         let tmp8Result;
         if (null != closure_1_2) {
-          const obj3 = channel(pendingReply[24]);
+          const obj3 = channel(pendingReply[25]);
           obj3.deletePendingReply(id.id);
           const tmp10 = id;
           id = undefined;
-          const track = chatInputRef(pendingReply[25]).track;
+          const track = chatInputRef(pendingReply[26]).track;
           const CHAT_CONTEXT_BAR_ACTION_CANCELED = constants.CHAT_CONTEXT_BAR_ACTION_CANCELED;
-          chatInputRef(pendingReply[25]);
+          chatInputRef(pendingReply[26]);
           const tmp8 = channel;
           const tmp9 = pendingReply;
           if (closure_1_2 != null) {
@@ -503,7 +528,7 @@ const memoResult = react.memo(function ChatInputContextBar(channel) {
           }
           obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
           ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-          tmp8Result = tmp8(tmp9[26]);
+          tmp8Result = tmp8(tmp9[27]);
           currentUser = currentUser.getCurrentUser();
           id1 = undefined;
           if (currentUser != null) {
@@ -518,14 +543,14 @@ const memoResult = react.memo(function ChatInputContextBar(channel) {
       },
       onTapContextBarReply() {
         if (null != closure_1_2) {
-          obj = channel(pendingReply[27]);
+          obj = channel(pendingReply[28]);
           channel = tmp.channel;
           obj.transitionTo(closure_2_11.CHANNEL(channel.getGuildId(), closure_1_2.channel.id, closure_1_2.message.id));
         }
       },
       onToggleReplyMention() {
         if (null != closure_1_2) {
-          obj = channel(pendingReply[24]);
+          obj = channel(pendingReply[25]);
           const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
         }
       }
@@ -535,8 +560,8 @@ const memoResult = react.memo(function ChatInputContextBar(channel) {
   const onCancelReplying = memo.onCancelReplying;
   ({ onCancelEditing, onTapContextBarReply, onToggleReplyMention } = memo);
   let message;
-  const useNullableMessageAuthor = channel(pendingReply[28]).useNullableMessageAuthor;
-  const tmp4 = channel(pendingReply[28]);
+  const useNullableMessageAuthor = channel(pendingReply[29]).useNullableMessageAuthor;
+  const tmp4 = channel(pendingReply[29]);
   if (pendingReply != null) {
     message = pendingReply.message;
   }
@@ -547,7 +572,7 @@ const memoResult = react.memo(function ChatInputContextBar(channel) {
   let tmp8 = closure_13;
   obj = { component, children: items2 };
   let tmp9 = null != pendingReply;
-  const TransitionGroup = tmp2(tmp3[29]).TransitionGroup;
+  const TransitionGroup = tmp2(tmp3[30]).TransitionGroup;
   if (tmp9) {
     tmp9 = null != nullableMessageAuthor;
   }

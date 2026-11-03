@@ -1,16 +1,16 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17930
+// Function ID: 17931
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 5596, 5011, 8980, 6027, 12170, 14372, 14192, 5634, 7369, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5747, 5719, 5138, 9108, 6147, 12306, 14503, 14323, 5754, 7489, 2]
 // Exports: default
 
-// Module 17787 (UserSettingsDesignSystemTabs)
+// Module 17930 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export default function UserSettingsDesignSystemTabs() {
         }
         let _HermesInternal2 = HermesInternal;
         obj2 = { style: item.item, children: closure_2_7(first1(item[6]).Text, obj3) };
-        obj3 = { variant: "heading-xxl/bold", children: items1 };
+        obj3 = { variant: "heading-xxl/semibold", children: items1 };
         items1 = ["Item ", sum];
         let arr = push(obj);
         num = sum;
@@ -103,14 +103,14 @@ export default function UserSettingsDesignSystemTabs() {
   const tmp24 = closure_6;
   if (tmp23Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp23Result = tmp23(tmp21(14372), obj5);
+    tmp23Result = tmp23(tmp21(14503), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp23Result;
   const obj6 = { children: closure_8(closure_5, obj4) };
   items3 = [closure_7(closure_5, { children: items2 }), closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
-  const Stack2 = tmp17(6027).Stack;
+  const Stack2 = tmp17(6147).Stack;
   items4 = [, ];
   const obj9 = {
     text: "Add Tab",

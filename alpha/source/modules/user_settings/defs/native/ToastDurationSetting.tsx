@@ -1,16 +1,16 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17551
+// Function ID: 17552
 // Name: ToastDurationSetting
-// Dependencies: [19, 5015, 8432, 1072, 21, 1113, 504, 16270, 17305, 11489, 11540, 2]
+// Dependencies: [19, 5142, 8556, 1072, 21, 1113, 504, 16413, 17448, 11626, 11677, 2]
 
-// Module 17408 (ToastDurationSetting)
+// Module 17551 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 function formatToastDuration(seconds) {

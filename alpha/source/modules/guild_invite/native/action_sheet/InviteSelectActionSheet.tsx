@@ -1,22 +1,21 @@
-// Module ID: 20016
-// Function ID: 20017
+// Module ID: 20166
+// Function ID: 20167
 // Name: InviteSelectActionSheet
-// Dependencies: [19, 21, 5014, 575, 5272, 7321, 7058, 5258, 7061, 2]
+// Dependencies: [19, 21, 5141, 575, 5395, 7441, 7184, 5381, 7187, 2]
 // Exports: default
 
-// Module 20016 (InviteSelectActionSheet)
+// Module 20166 (InviteSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7058 */;
-import TableRadioRow from "TableRadioRow" /* 7061 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7184 */;
+import TableRadioRow from "TableRadioRow" /* 7187 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -32,7 +31,7 @@ export default function InviteSelectActionSheet(arg0) {
   ({ options, onChange: require } = arg0);
   ({ title, value } = arg0);
   const tmp = closure_4();
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   ({
     value,
     onChange: function handleChange(arg0) {

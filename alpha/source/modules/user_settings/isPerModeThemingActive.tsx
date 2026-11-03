@@ -1,10 +1,10 @@
-// Module ID: 5078
-// Function ID: 5079
+// Module ID: 5205
+// Function ID: 5206
 // Name: isPerModeThemingActive
 // Dependencies: [1192, 1194, 1195, 2]
 // Exports: isPerModeThemingActive
 
-// Module 5078 (isPerModeThemingActive)
+// Module 5205 (isPerModeThemingActive)
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;

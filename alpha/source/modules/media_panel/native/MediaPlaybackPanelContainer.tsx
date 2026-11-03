@@ -1,13 +1,13 @@
-// Module ID: 19349
-// Function ID: 19350
+// Module ID: 19507
+// Function ID: 19508
 // Name: MediaPlaybackPanelContainer
-// Dependencies: [19, 21, 16397, 4931, 19350, 19352, 2]
+// Dependencies: [19, 21, 16540, 5058, 19508, 19510, 2]
 
-// Module 19349 (MediaPlaybackPanelContainer)
+// Module 19507 (MediaPlaybackPanelContainer)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 4931 */;
-import MediaPlayerManager from "MediaPlayerManager" /* 16397 */;
-import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 19350 */;
+import react2 from "react" /* 5058 */;
+import MediaPlayerManager from "MediaPlayerManager" /* 16540 */;
+import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 19508 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,27 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11623
+// Function ID: 11624
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 11399, 21, 5014, 575, 5272, 7321, 1113, 7058, 7061, 11487, 5634, 5258, 2]
+// Dependencies: [32, 19, 17, 11537, 21, 5141, 575, 5395, 7441, 1113, 7184, 7187, 11624, 5754, 5381, 2]
 // Exports: default
 
-// Module 11486 (ClearAfterOptionsActionSheet)
+// Module 11623 (ClearAfterOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7058 */;
-import TableRadioRow2 from "TableRadioRow" /* 7061 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
-import Constants from "Constants" /* 11399 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7184 */;
+import TableRadioRow2 from "TableRadioRow" /* 7187 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
+import Constants from "Constants" /* 11537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -56,7 +55,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   const tmp = closure_9();
   [closure_1, tmp3] = react.useState(initialValue);
   let obj = { contentStyles: tmp.content, header: closure_7(BottomSheetTitleHeader, obj2), children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj2 = { title: intl.string(intl4.t["5XnRQ+"]) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl4.intl;

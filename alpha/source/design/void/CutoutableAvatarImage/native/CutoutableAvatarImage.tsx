@@ -1,26 +1,28 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 15015
+// Function ID: 15016
 // Name: CutoutableAvatarImage
-// Dependencies: [19, 17, 14885, 21, 3, 1409, 14886, 14887, 9509, 5717, 5095, 5637, 1266, 8031, 558, 2]
+// Dependencies: [19, 17, 15016, 21, 3, 1411, 15017, 15018, 9637, 5837, 1652, 5757, 1266, 8155, 558, 2]
 
-// Module 14884 (CutoutableAvatarImage)
+// Module 15015 (CutoutableAvatarImage)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import v1 from "v1" /* 1266 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import spring from "spring" /* 5637 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
-import ClipView from "ClipView" /* 9509 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14885 */;
-import getChannelIcon from "getChannelIcon" /* 14886 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 14887 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import inlineStyles from "inlineStyles" /* 8155 */;
+import ClipView from "ClipView" /* 9637 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15016 */;
+import getChannelIcon from "getChannelIcon" /* 15017 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 15018 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
+let obj1, point, tmp, tmp2;
 
 let closure_4;
 let hasOwnProperty;
@@ -29,7 +31,7 @@ let metroImportDefault;
 let obj3;
 let obj4;
 let tmp11;
-const inlineStylesDefault = tmp11(8031);
+const inlineStylesDefault = tmp11(8155);
 function StaticNativeCutoutAvatarImage(cutout) {
   let imageStyle;
   let items1;
@@ -48,56 +50,70 @@ function StaticNativeCutoutAvatarImage(cutout) {
   const tmp3 = ClipViewDefault;
   return metroImportDefault(tmp3, obj);
 }
-function AnimatedNativeCutoutAvatarImage(cutout) {
+function AnimatedNativeCutoutAvatarImage(arg0) {
+  let cutout;
   let imageStyle;
-  let items;
-  let obj4;
+  let items2;
   let source;
   let style;
-  cutout = cutout.cutout;
-  ({ source, style, imageStyle } = cutout);
-  let obj = cutout(5095);
-  const fn = function h() {
-    let items;
-    let point;
-    let tmpResult;
-    let tmpResult10;
-    let tmpResult11;
-    let tmpResult12;
-    let tmpResult13;
-    let tmpResult14;
-    let tmpResult8;
-    let tmpResult9;
-    size = cutout;
-    if (cutout.shape === ClipView.CutoutShape.RoundedRect) {
-      const size1 = { shape: ClipView.CutoutShape.RoundedRect, x: tmpResult.withSpring(size.x, CHANNEL_SPRING_CONFIG), y: tmpResult8.withSpring(size.y, CHANNEL_SPRING_CONFIG), width: tmpResult9.withSpring(size.width, CHANNEL_SPRING_CONFIG), height: tmpResult10.withSpring(size.height, CHANNEL_SPRING_CONFIG), cornerRadius: tmpResult11.withSpring(size.cornerRadius, CHANNEL_SPRING_CONFIG) };
-      tmpResult = spring;
-      tmpResult8 = spring;
-      tmpResult9 = spring;
-      tmpResult10 = spring;
-      point = size1;
-      tmpResult11 = spring;
-    } else {
-      point = { shape: ClipView.CutoutShape.Circle, x: tmpResult12.withSpring(size.x, CHANNEL_SPRING_CONFIG), y: tmpResult13.withSpring(size.y, CHANNEL_SPRING_CONFIG), size: tmpResult14.withSpring(size.size, CHANNEL_SPRING_CONFIG) };
-      tmpResult12 = spring;
-      tmpResult13 = spring;
-      tmpResult14 = spring;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  ({ cutout, source, style, imageStyle } = arg0);
+  let items = [closure_15, cutout, , , ];
+  const useAnimatedProps = _mod1652.useAnimatedProps;
+  items[2] = ClipView.CutoutShape;
+  items[3] = spring_spring.withSpring;
+  items[4] = CHANNEL_SPRING_CONFIG;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+  class CutoutableAvatarImageTsx1 {
+    constructor() {
+      size = closure_0;
+      tmp = closure_1;
+      if (closure_0.shape === closure_1.RoundedRect) {
+        size1 = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
+        size1.shape = tmp.RoundedRect;
+        tmp4 = closure_2;
+        tmp5 = closure_3;
+        size1.x = closure_2(size.x, closure_3);
+        size1.y = closure_2(size.y, closure_3);
+        size1.width = closure_2(size.width, closure_3);
+        size1.height = closure_2(size.height, closure_3);
+        size1.cornerRadius = closure_2(size.cornerRadius, closure_3);
+        point = size1;
+      } else {
+        point = { shape: null, x: null, y: null, size: null };
+        point.shape = tmp.Circle;
+        tmp2 = closure_2;
+        tmp3 = closure_3;
+        point.x = closure_2(size.x, closure_3);
+        point.y = closure_2(size.y, closure_3);
+        point.size = closure_2(size.size, closure_3);
+      }
+      obj1 = { cutouts: null };
+      items = [];
+      items[0] = point;
+      obj1.cutouts = items;
+      return obj1;
     }
-    const obj = { cutouts: items };
-    items = [point];
-    return obj;
-  };
-  obj2 = { cutout, CutoutShape: cutout(9509).CutoutShape, withSpring: cutout(5637).withSpring, CHANNEL_SPRING_CONFIG };
-  fn.__closure = obj2;
-  fn.__workletHash = 12529564164821;
-  fn.__initData = __initData;
-  const animatedProps = obj.useAnimatedProps(fn);
-  const tmp2 = getReactNativeSVGImageSourceDefault(source);
-  const obj3 = { style, animatedProps, children: closure_7(FastImageDefault, obj4) };
-  const ClipViewAnimated = cutout(9509).ClipViewAnimated;
-  obj4 = { style: items, source: tmp2, usesSmallCache: true };
-  items = [obj2.image, imageStyle];
-  return closure_7(ClipViewAnimated, obj3);
+  }
+  const items1 = [tmp5, tmp6, tmp7, tmp8];
+  CutoutableAvatarImageTsx1.__closure = items1;
+  CutoutableAvatarImageTsx1.__workletHash = 1467452427852;
+  CutoutableAvatarImageTsx1.__initData = tmp4;
+  const animatedProps = useAnimatedProps(CutoutableAvatarImageTsx1);
+  let obj = { style, animatedProps, children: metroImportDefault(FastImageDefault, obj2) };
+  const tmp10 = getReactNativeSVGImageSourceDefault(source);
+  const ClipViewAnimated = ClipView.ClipViewAnimated;
+  obj2 = { style: items2, source: tmp10, usesSmallCache: true };
+  items2 = [obj2.image, imageStyle];
+  return metroImportDefault(ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
   let tmp6;
@@ -158,7 +174,7 @@ function CutoutAvatarImage(arg0) {
     if (null != tintColor) {
       const size1 = { x: "0", y: "0", height: "100%", width: "100%", mask: "url(#" + v4Result + ")", children: metroImportDefault(tmp16, obj2) };
       const _HermesInternal = HermesInternal;
-      const ForeignObject = tmp7(8031).ForeignObject;
+      const ForeignObject = tmp7(8155).ForeignObject;
       obj2 = { style: obj3, source: getReactNativeSVGImageSourceDefault(source), usesSmallCache: true };
       obj3 = { tintColor };
       tmp16 = FastImageDefault;
@@ -167,16 +183,16 @@ function CutoutAvatarImage(arg0) {
     }
     const obj4 = { style, children: metroImportAll(tmp11Result, size5) };
     tmp11Result = inlineStylesDefault;
-    const Defs = tmp7(8031).Defs;
+    const Defs = tmp7(8155).Defs;
     const size2 = { width: size, height: size, id: v4Result, children: items };
-    const Mask = tmp7(8031).Mask;
+    const Mask = tmp7(8155).Mask;
     const tmp17 = hasOwnProperty;
     if (CIRCULAR === obj6.CIRCULAR) {
       obj5 = { cx: result, cy: result, r: result, fill: "white" };
-      tmp12Result = tmp12(tmp7(8031).Circle, obj5);
+      tmp12Result = tmp12(tmp7(8155).Circle, obj5);
     } else {
       const size3 = { x: 0, y: 0, height: size, width: size, fill: "white" };
-      tmp12Result = tmp12(tmp7(8031).Rect, size3);
+      tmp12Result = tmp12(tmp7(8155).Rect, size3);
     }
     obj6 = { children: metroImportAll(Mask, size2) };
     items = [tmp12Result, ];
@@ -189,12 +205,12 @@ function CutoutAvatarImage(arg0) {
       if (CIRCULAR === obj6.CIRCULAR) {
         const _HermesInternal3 = HermesInternal;
         const obj8 = { cx: result, cy: result, r: result, fill: "none", mask: "url(#" + v4Result + ")", stroke: cutout.border.color, strokeWidth: cutout.border.width };
-        const Circle = tmp7(8031).Circle;
+        const Circle = tmp7(8155).Circle;
         tmp12Result2 = tmp12(Circle, obj8);
       } else {
         const size4 = { x: 0, y: 0, height: size, width: size, fill: "none", mask: "url(#" + v4Result + ")", stroke: cutout.border.color, strokeWidth: cutout.border.width };
         const _HermesInternal2 = HermesInternal;
-        const Rect = tmp7(8031).Rect;
+        const Rect = tmp7(8155).Rect;
         tmp12Result2 = tmp12(Rect, size4);
       }
       tmp21 = tmp12Result2;
@@ -204,7 +220,7 @@ function CutoutAvatarImage(arg0) {
     return tmp12(tmp17, obj4);
   }
   const size6 = { x: "0", y: "0", height: "100%", width: "100%", href: getReactNativeSVGImageSourceDefault(source), mask: "url(#" + v4Result + ")" };
-  const Image = tmp7(8031).Image;
+  const Image = tmp7(8155).Image;
   tmp10 = metroImportDefault(Image, size6);
   tmp12 = metroImportDefault;
 }
@@ -220,7 +236,7 @@ obj3 = { xxsmall: obj4, xsmall10: { borderRadius: frozen[obj.XXSMALL_10] / 2 }, 
 obj4 = { borderRadius: frozen[obj.XXSMALL] / 2 };
 let obj5 = { RIGHT: 0, [0]: "RIGHT", BOTTOM_RIGHT: 1, [1]: "BOTTOM_RIGHT", BOTTOM_LEFT: 2, [2]: "BOTTOM_LEFT" };
 let obj6 = { RECTANGULAR: 0, [0]: "RECTANGULAR", CIRCULAR: 1, [1]: "CIRCULAR" };
-const __initData = { code: "function CutoutableAvatarImageTsx1(){const{cutout,CutoutShape,withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;const animatedCutout=cutout.shape===CutoutShape.RoundedRect?{shape:CutoutShape.RoundedRect,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),width:withSpring(cutout.width,CHANNEL_SPRING_CONFIG),height:withSpring(cutout.height,CHANNEL_SPRING_CONFIG),cornerRadius:withSpring(cutout.cornerRadius,CHANNEL_SPRING_CONFIG)}:{shape:CutoutShape.Circle,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),size:withSpring(cutout.size,CHANNEL_SPRING_CONFIG)};return{cutouts:[animatedCutout]};}" };
+let closure_15 = { code: "(function CutoutableAvatarImageTsx1(){let[cutout,CutoutShape,withSpring,CHANNEL_SPRING_CONFIG]=this.__closure;const animatedCutout=cutout.shape===CutoutShape.RoundedRect?{shape:CutoutShape.RoundedRect,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),width:withSpring(cutout.width,CHANNEL_SPRING_CONFIG),height:withSpring(cutout.height,CHANNEL_SPRING_CONFIG),cornerRadius:withSpring(cutout.cornerRadius,CHANNEL_SPRING_CONFIG)}:{shape:CutoutShape.Circle,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),size:withSpring(cutout.size,CHANNEL_SPRING_CONFIG)};return{cutouts:[animatedCutout]};})" };
 const memoResult = react.memo(function CutoutableAvatarImage(style) {
   let animate;
   let animate2;

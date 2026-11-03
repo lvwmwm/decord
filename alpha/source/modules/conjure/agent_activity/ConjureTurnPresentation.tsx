@@ -1,11 +1,11 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12805
+// Function ID: 12806
 // Name: ConjureTurnPresentation
-// Dependencies: [12590, 2]
+// Dependencies: [12726, 2]
 // Exports: resolveAttachmentHost, resolveTurnPresentation, turnLeadsWithStretch
 
-// Module 12669 (ConjureTurnPresentation)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12590 */;
+// Module 12805 (ConjureTurnPresentation)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12726 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTurnPresentation.tsx");

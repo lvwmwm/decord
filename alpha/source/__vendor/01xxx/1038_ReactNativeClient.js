@@ -19,7 +19,7 @@ import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 const require = globalThis.__r;
-let _require, c0;
+let _require, c0, version;
 
 function _isNativeReflectConstruct() {
   try {
@@ -48,7 +48,7 @@ class ReactNativeClient {
     const ignoreRequireCycleLogs = react_native2.ignoreRequireCycleLogs;
     react_native2;
     const ReactNativeVersion = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion;
-    let version;
+    version = undefined;
     const tmp = ReactNativeClient;
     if (null !== ReactNativeVersion) {
       if (undefined !== ReactNativeVersion) {

@@ -1,16 +1,16 @@
-// Module ID: 6558
-// Function ID: 6559
+// Module ID: 6678
+// Function ID: 6679
 // Name: EmbedUtils
-// Dependencies: [1072, 6559, 11, 1396, 12, 2042, 6065, 2]
+// Dependencies: [1072, 6679, 11, 1398, 12, 2171, 6185, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 6558 (EmbedUtils)
+// Module 6678 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6065 */;
-import EmbedConstants from "EmbedConstants" /* 6559 */;
+import FlagUtils from "FlagUtils" /* 1398 */;
+import _modDef2171 from "module_2171" /* 2171 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6185 */;
+import EmbedConstants from "EmbedConstants" /* 6679 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ export function sanitizeEmbed(channel_id, id, footer) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const tmpResult = _modDef2042;
+    const tmpResult = _modDef2171;
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }

@@ -1,23 +1,23 @@
-// Module ID: 19797
-// Function ID: 19798
+// Module ID: 19947
+// Function ID: 19948
 // Name: RoleGradientPickerActionSheet
-// Dependencies: [32, 19, 17, 19780, 21, 5014, 575, 4923, 1379, 5258, 16449, 5272, 7321, 1113, 5634, 5587, 17344, 6980, 1090, 2]
+// Dependencies: [32, 19, 17, 19930, 21, 5141, 575, 5050, 1380, 5381, 16593, 5395, 7441, 1113, 5754, 5710, 17487, 7106, 1090, 2]
 // Exports: default
 
-// Module 19797 (RoleGradientPickerActionSheet)
+// Module 19947 (RoleGradientPickerActionSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16449 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16593 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19780 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19930 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault;
+let importDefault;
 
 let c10;
 let c9;
@@ -138,7 +138,7 @@ export default function RoleGradientPickerActionSheet(arg0) {
     tmp(obj, "stack");
   }, items2);
   const obj3 = { header: closure_9(BottomSheetTitleHeader, obj4), children: closure_10(closure_5, obj6) };
-  BottomSheet = onSelect(first[11]).BottomSheet;
+  const BottomSheet = onSelect(first[11]).BottomSheet;
   obj4 = { title: intl.string(onSelect(first[13]).t.XpWmJz), trailing: closure_9(Button, obj5) };
   BottomSheetTitleHeader = onSelect(first[12]).BottomSheetTitleHeader;
   intl = onSelect(first[13]).intl;

@@ -1,51 +1,59 @@
-// Module ID: 12632
-// Function ID: 12633
+// Module ID: 12768
+// Function ID: 12769
 // Name: ConjureTipSwap
-// Dependencies: [19, 21, 5095, 5254, 2]
+// Dependencies: [19, 21, 1652, 5377, 2]
 // Exports: default
 
-// Module 12632 (ConjureTipSwap)
+// Module 12768 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const _modDef1652 = _mod1652;
 let set;
 
 function TipFade(children) {
+  let tmp4;
+  let tmp5;
   let sharedValue;
   children = children.children;
-  let obj = sharedValue(5095);
+  let obj = sharedValue(1652);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     let Easing;
     set = sharedValue.set;
-    let obj = { duration: 260, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
+    let obj = { duration: 260, easing: Easing.out(_mod1652.Easing.ease) };
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
+    Easing = _mod1652.Easing;
     const result = set(withTiming(1, obj));
     return () => {
       const obj = sharedValue(dependencyMap[2]);
       return obj.cancelAnimation(closure_1_0);
     };
   }, items);
-  const fn = function u() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 14074417751279;
-  fn.__initData = __initData;
-  const obj2 = sharedValue(5095);
-  const style = obj2.useAnimatedStyle(fn);
-  return jsx(ReanimatedRexportDefault.View, { style, children });
+  const items1 = [closure_5, sharedValue];
+  let c0;
+  [tmp4, tmp5] = items1;
+  const obj2 = sharedValue(1652);
+  class ConjureTipSwapTsx1 {
+    constructor() {
+      const obj = { opacity: _undefined.get() };
+      return obj;
+    }
+  }
+  const items2 = [tmp5];
+  ConjureTipSwapTsx1.__closure = items2;
+  ConjureTipSwapTsx1.__workletHash = 17472917410134;
+  ConjureTipSwapTsx1.__initData = tmp4;
+  const style = obj2.useAnimatedStyle(ConjureTipSwapTsx1);
+  return jsx(_modDef1652.View, { style, children });
 }
 const jsx = Fragment.jsx;
-const __initData = { code: "function ConjureTipSwapTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_5 = { code: "(function ConjureTipSwapTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 let result = size.fileFinishedImporting("modules/conjure/tips/native/ConjureTipSwap.tsx");
 
 export default function ConjureTipSwap(presentation) {

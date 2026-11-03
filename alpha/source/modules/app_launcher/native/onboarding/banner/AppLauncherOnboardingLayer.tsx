@@ -1,15 +1,15 @@
-// Module ID: 12375
-// Function ID: 12376
+// Module ID: 12511
+// Function ID: 12512
 // Name: AppLauncherOnboardingLayer
-// Dependencies: [19, 17, 9895, 21, 5014, 575, 12376, 2]
+// Dependencies: [19, 17, 10026, 21, 5141, 575, 12512, 2]
 
-// Module 12375 (AppLauncherOnboardingLayer)
+// Module 12511 (AppLauncherOnboardingLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9895 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10026 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let rect;

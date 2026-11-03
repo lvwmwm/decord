@@ -1,14 +1,14 @@
-// Module ID: 8650
-// Function ID: 8651
+// Module ID: 8774
+// Function ID: 8775
 // Name: TextLockIcon
-// Dependencies: [19, 21, 575, 5716, 8629, 2]
+// Dependencies: [19, 21, 575, 5836, 8753, 2]
 // Exports: TextLockIcon
 
-// Module 8650 (TextLockIcon)
+// Module 8774 (TextLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 8629 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 8753 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

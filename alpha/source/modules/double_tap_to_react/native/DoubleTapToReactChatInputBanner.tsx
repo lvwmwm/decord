@@ -1,35 +1,34 @@
-// Module ID: 13838
-// Function ID: 13839
+// Module ID: 13969
+// Function ID: 13970
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 5015, 4860, 1386, 21, 5014, 575, 1375, 563, 7300, 1409, 5624, 1113, 13839, 6980, 7054, 6028, 1260, 5095, 5254, 1187, 5258, 13940, 1994, 6732, 5594, 8992, 4839, 8429, 8426, 10520, 4847, 2]
+// Dependencies: [32, 19, 17, 5142, 4987, 1388, 21, 5141, 575, 1377, 563, 7420, 1411, 5747, 1113, 13970, 7106, 7180, 6148, 1260, 1652, 5377, 1187, 5381, 14071, 2123, 6852, 5717, 9120, 4966, 8553, 8550, 10650, 4974, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 13838 (DoubleTapToReactChatInputBanner)
+// Module 13969 (DoubleTapToReactChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import EmojiDefault from "Emoji" /* 7300 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8429 */;
-import _mod13839 from "module_13839" /* 13839 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import dismissible_content from "dismissible_content" /* 4974 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import XSmallIcon from "XSmallIcon" /* 7180 */;
+import EmojiDefault from "Emoji" /* 7420 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8553 */;
+import _mod13970 from "module_13970" /* 13970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
+
+let easing;
 
 let c10;
 let c9;
@@ -69,7 +68,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   if (null != emoji.id) {
     const obj5 = { id: emoji.id, animated, size: EMOJI_URL_BASE_SIZE };
     animated = !stateFromStores;
-    const getEmojiURL = tmp8(1409).getEmojiURL;
+    const getEmojiURL = tmp8(1411).getEmojiURL;
     AvatarUtilsDefault;
     if (!stateFromStores) {
       animated = emoji.animated;
@@ -83,17 +82,17 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj6 = { style: tmp.text, children: items4 };
   const obj7 = { style: tmp.header, children: items3 };
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["6RUX7d"]) };
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5747).Text;
   intl = tmp2(1113).intl;
-  items3 = [React4(Text, obj8), React4(_mod13839.NewBadge, {})];
+  items3 = [React4(Text, obj8), React4(_mod13970.NewBadge, {})];
   items4 = [authStore(View, obj7), ];
   const obj9 = { variant: "text-xs/medium", color: "text-default", children: intl2.format(intl4.t["5/l2rR"], obj10) };
-  const Text2 = tmp2(5624).Text;
+  const Text2 = tmp2(5747).Text;
   intl2 = tmp2(1113).intl;
   obj10 = {
     emojiName: emoji.name,
     emojiNameHook(children, arg1) {
-      const obj = { variant: "text-xs/bold", color: "text-strong", children };
+      const obj = { variant: "text-xs/semibold", color: "text-strong", children };
       return closure_1_9(Text_Text.Text, obj, arg1);
     },
     tapHereHook(children, arg1) {
@@ -104,7 +103,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   items4[1] = React4(Text2, obj9);
   items2[1] = authStore(View, obj6);
   const obj11 = { hitSlop: 8, accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.cpT0Cq), onPress: handleDismissBanner, style: tmp.closeButton, children: React4(XSmallIcon.XSmallIcon, { size: "sm", color: "icon-subtle" }) };
-  const PressableOpacity = tmp2(6980).PressableOpacity;
+  const PressableOpacity = tmp2(7106).PressableOpacity;
   intl3 = tmp2(1113).intl;
   items2[2] = React4(PressableOpacity, obj11);
   return authStore(View, obj2);
@@ -112,105 +111,121 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
 function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   let AnimatedPressableHighlight;
   let closure_4;
-  let items5;
-  let items6;
-  let obj10;
+  let items7;
+  let items8;
+  let obj8;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
   channel = channel.channel;
   const emoji = channel.emoji;
   const markAsDismissed = channel.markAsDismissed;
   let first;
-  react = undefined;
-  let first1;
+  easing = undefined;
+  let closure_6;
+  let closure_8;
   const tmp = closure_13();
-  let tmp2 = first(react.useState(82), 2);
+  let obj = easing;
+  let tmp2 = first(easing.useState(82), 2);
   first = tmp2[0];
-  react = tmp2[1];
-  let obj = channel(markAsDismissed[10]);
-  const items = [first1];
-  const stateFromStores = obj.useStateFromStores(items, () => first1.useReducedMotion);
-  const tmp5 = first(react.useState(false), 2);
-  first1 = tmp5[0];
-  let closure_7 = tmp5[1];
-  let obj2 = { type: channel(markAsDismissed[19]).ImpressionTypes.VIEW, name: channel(markAsDismissed[19]).ImpressionNames.DOUBLE_TAP_REACT_UPSELL };
-  let tmp7 = emoji(markAsDismissed[18]);
-  tmp7(obj2);
-  const obj3 = channel(markAsDismissed[20]);
-  const sharedValue = obj3.useSharedValue(0);
+  easing = tmp2[1];
+  let tmp5 = markAsDismissed;
+  let obj2 = channel(markAsDismissed[10]);
+  const items = [closure_6];
+  const stateFromStores = obj2.useStateFromStores(items, () => closure_6.useReducedMotion);
+  const tmp7 = first(easing.useState(false), 2);
+  const first1 = tmp7[0];
+  closure_6 = tmp7[1];
+  const obj3 = { type: channel(markAsDismissed[19]).ImpressionTypes.VIEW, name: channel(markAsDismissed[19]).ImpressionNames.DOUBLE_TAP_REACT_UPSELL };
+  const tmp10 = emoji(markAsDismissed[18]);
+  tmp10(obj3);
+  const obj4 = channel(markAsDismissed[20]);
+  const sharedValue = obj4.useSharedValue(0);
   const items1 = [sharedValue, first, first1];
-  const effect = react.useEffect(() => {
+  const effect = easing.useEffect(() => {
     if (first1) {
       const result = set(0);
     } else {
       const result1 = set(first);
     }
   }, items1);
-  const fn = function v() {
-    let tmp7;
-    const obj = { height: null };
-    if (stateFromStores) {
-      obj.height = sharedValue.get();
-      tmp7 = obj;
-    } else {
-      const withDelay = ReanimatedRexport.withDelay;
-      ReanimatedRexport;
-      const withTiming = timing.withTiming;
-      const obj2 = { duration: 300, easing: native.DECELERATED_EASING };
-      timing;
-      const value = sharedValue.get();
-      obj.height = withDelay(200, withTiming(value, obj2));
-      tmp7 = obj;
+  const items2 = [closure_15, stateFromStores, sharedValue, , , ];
+  const useAnimatedStyle = channel(markAsDismissed[20]).useAnimatedStyle;
+  channel(markAsDismissed[20]);
+  items2[3] = channel(markAsDismissed[20]).withDelay;
+  items2[4] = channel(markAsDismissed[21]).withTiming;
+  items2[5] = channel(markAsDismissed[22]).DECELERATED_EASING;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items2;
+  class DoubleTapToReactChatInputBannerTsx1 {
+    constructor() {
+      let tmp5;
+      const obj = { height: null };
+      if (c0) {
+        obj.height = _undefined.get();
+        tmp5 = obj;
+      } else {
+        const obj2 = { duration: 300, easing };
+        obj.height = _undefined2(200, _undefined3(_undefined.get(), obj2));
+        tmp5 = obj;
+      }
+      return tmp5;
     }
-    return tmp7;
-  };
-  const obj4 = channel(markAsDismissed[20]);
-  fn.__closure = { useReducedMotion: stateFromStores, height: sharedValue, withDelay: channel(markAsDismissed[20]).withDelay, withTiming: channel(markAsDismissed[21]).withTiming, DECELERATED_EASING: channel(markAsDismissed[22]).DECELERATED_EASING };
-  fn.__workletHash = 14971794499123;
-  fn.__initData = __initData;
-  ({ useReducedMotion: stateFromStores, height: sharedValue, withDelay: channel(markAsDismissed[20]).withDelay, withTiming: channel(markAsDismissed[21]).withTiming, DECELERATED_EASING: channel(markAsDismissed[22]).DECELERATED_EASING });
-  const animatedStyle = obj4.useAnimatedStyle(fn);
-  const items2 = [emoji, markAsDismissed];
-  const callback = react.useCallback((nativeEvent) => {
+  }
+  const items3 = [tmp16, tmp17, tmp18, tmp19, tmp20];
+  DoubleTapToReactChatInputBannerTsx1.__closure = items3;
+  DoubleTapToReactChatInputBannerTsx1.__workletHash = 11366133549482;
+  DoubleTapToReactChatInputBannerTsx1.__initData = tmp15;
+  const animatedStyle = useAnimatedStyle(DoubleTapToReactChatInputBannerTsx1);
+  const items4 = [emoji, markAsDismissed];
+  const callback = obj.useCallback((nativeEvent) => {
     closure_4(nativeEvent.nativeEvent.layout.height);
   }, []);
-  const items3 = [markAsDismissed];
-  const callback1 = react.useCallback(() => {
+  const items5 = [markAsDismissed];
+  const callback1 = obj.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emoji };
-    obj.openLazy(asyncRequire(13940, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
+    obj.openLazy(asyncRequire(14071, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-  }, items2);
-  const callback2 = react.useCallback(() => {
-    constants(true);
+  }, items4);
+  const callback2 = obj.useCallback(() => {
+    closure_6(true);
     const timerId = setTimeout(() => {
-      markAsDismissed(constants.USER_DISMISS);
+      markAsDismissed(sharedValue.USER_DISMISS);
     }, 500);
-  }, items3);
-  const tmp15 = emoji(markAsDismissed[26])(channel.id);
-  let closure_9 = tmp15;
-  const items4 = [tmp15, channel.id, markAsDismissed];
-  const effect1 = react.useEffect(() => {
-    const tmp2 = null != closure_9 && tmp !== channel.id;
+  }, items5);
+  const tmp25 = emoji(tmp5[26])(channel.id);
+  closure_8 = tmp25;
+  const items6 = [tmp25, channel.id, markAsDismissed];
+  const effect1 = obj.useEffect(() => {
+    const tmp2 = null != closure_8 && tmp !== channel.id;
     if (tmp2) {
       markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
     }
-  }, items4);
-  const obj6 = channel(markAsDismissed[27]);
-  const unmountEffect = obj6.useUnmountEffect(() => {
+  }, items6);
+  const tmp4Result = channel(tmp5[27]);
+  const unmountEffect = tmp4Result.useUnmountEffect(() => {
     markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
   });
-  const obj7 = { children: items5 };
-  items5 = [, ];
-  const obj8 = { style: tmp.measurement, onLayout: callback, children: closure_9(DoubleTapToReactChatInputBannerInner, { emoji, handleDismissBanner: callback2 }) };
-  items5[0] = closure_9(stateFromStores, obj8);
-  const obj9 = { style: items6, children: closure_9(AnimatedPressableHighlight, obj10) };
-  items6 = [animatedStyle, tmp.animatedContainer];
-  View = emoji(markAsDismissed[20]).View;
-  obj10 = { onPress: callback1, style: tmp.highlight, androidRippleConfig, children: closure_9(DoubleTapToReactChatInputBannerInner, { emoji, handleDismissBanner: callback2 }) };
-  AnimatedPressableHighlight = channel(markAsDismissed[28]).AnimatedPressableHighlight;
-  items5[1] = closure_9(View, obj9);
-  return closure_10(closure_11, obj7);
+  const obj5 = { children: items7 };
+  items7 = [, ];
+  const obj6 = { style: tmp.measurement, onLayout: callback, children: closure_9(DoubleTapToReactChatInputBannerInner, { emoji, handleDismissBanner: callback2 }) };
+  items7[0] = closure_9(first1, obj6);
+  const obj7 = { style: items8, children: closure_9(AnimatedPressableHighlight, obj8) };
+  items8 = [animatedStyle, tmp.animatedContainer];
+  View = tmp9(tmp5[20]).View;
+  obj8 = { onPress: callback1, style: tmp.highlight, androidRippleConfig, children: closure_9(DoubleTapToReactChatInputBannerInner, { emoji, handleDismissBanner: callback2 }) };
+  AnimatedPressableHighlight = tmp4(tmp5[28]).AnimatedPressableHighlight;
+  items7[1] = closure_9(View, obj7);
+  return closure_10(closure_11, obj5);
 }
-let react = react_mod;
 let View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -234,7 +249,7 @@ if (PlatformUtils.isIOS()) {
   num2 = 32;
 }
 let closure_13 = createStyles(obj);
-const __initData = { code: "function DoubleTapToReactChatInputBannerTsx1(){const{useReducedMotion,height,withDelay,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get()};}return{height:withDelay(200,withTiming(height.get(),{duration:300,easing:DECELERATED_EASING}))};}" };
+let closure_15 = { code: "(function DoubleTapToReactChatInputBannerTsx1(){let[useReducedMotion,height,withDelay,withTiming,DECELERATED_EASING]=this.__closure;if(useReducedMotion){return{height:height.get()};}return{height:withDelay(200,withTiming(height.get(),{duration:300,easing:DECELERATED_EASING}))};})" };
 let result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapToReactChatInputBanner.tsx");
 
 export function DoubleTapToReactChatInputBanner(channel) {

@@ -1,25 +1,25 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11786
+// Function ID: 11787
 // Name: GameOrganizationInvitePickerActionSheet
-// Dependencies: [19, 17, 1383, 11364, 21, 5014, 575, 6027, 5717, 7338, 5624, 7060, 11650, 504, 11652, 11657, 11651, 11658, 11661, 1113, 2404, 7366, 5068, 2]
+// Dependencies: [19, 17, 1385, 11501, 21, 5141, 575, 6147, 5837, 7458, 5747, 7186, 11787, 504, 11789, 11794, 11788, 11795, 11798, 1113, 2533, 7486, 5195, 2]
 // Exports: default
 
-// Module 11649 (GameOrganizationInvitePickerActionSheet)
+// Module 11786 (GameOrganizationInvitePickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11364 */;
-import GameOrganizationInvitePickerRowDefault from "GameOrganizationInvitePickerRow" /* 11650 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11651 */;
-import groupInvitableGameOrganizationsByApplicationDefault from "groupInvitableGameOrganizationsByApplication" /* 11657 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11658 */;
-import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11661 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11501 */;
+import GameOrganizationInvitePickerRowDefault from "GameOrganizationInvitePickerRow" /* 11787 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11788 */;
+import groupInvitableGameOrganizationsByApplicationDefault from "groupInvitableGameOrganizationsByApplication" /* 11794 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11795 */;
+import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11798 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const getGameOrganizationInviteSendStateKeyDefault = getGameOrganizationInviteSendStateKey;
@@ -32,7 +32,7 @@ let obj3;
 let obj4;
 let size;
 let tmp5;
-const AssetRegistryDefault = tmp5(7338);
+const AssetRegistryDefault = tmp5(7458);
 function GameSection(arg0) {
   let gameOrganizations;
   let group;
@@ -70,7 +70,7 @@ function GameSection(arg0) {
     })
   };
   gameOrganizations = group.gameOrganizations;
-  const TableRowGroup = tmp3(7060).TableRowGroup;
+  const TableRowGroup = tmp3(7186).TableRowGroup;
   items1[1] = closure_7(TableRowGroup, obj6);
   return closure_8(Stack, obj);
 }
@@ -179,7 +179,7 @@ export default function GameOrganizationInvitePickerActionSheet(userId) {
   intl3 = tmp2(tmp3[19]).intl;
   obj7 = { spacing: stateFromStores(data[6]).space.PX_4, style: tmp.header, children: items5 };
   Stack2 = tmp2(tmp3[7]).Stack;
-  const obj8 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl4.string(stateFromStores(data[20])["v5/qxX"]) };
+  const obj8 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl4.string(stateFromStores(data[20])["v5/qxX"]) };
   const Heading = tmp2(tmp3[10]).Heading;
   intl4 = tmp2(tmp3[19]).intl;
   items5 = [tmp7(Heading, obj8), ];

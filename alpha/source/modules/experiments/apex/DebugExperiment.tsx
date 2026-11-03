@@ -1,11 +1,11 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15723
+// Function ID: 15724
 // Name: DebugExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: useDebugExperiment
 
-// Module 15581 (DebugExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 15723 (DebugExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

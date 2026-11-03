@@ -1,15 +1,15 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 9146
+// Function ID: 9147
 // Name: useGetEventChannelsByType
-// Dependencies: [4868, 4944, 4946, 9019, 504, 9020, 2]
+// Dependencies: [4995, 5071, 5073, 9147, 504, 9148, 2]
 // Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType
 
-// Module 9018 (useGetEventChannelsByType)
-import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9020 */;
-import StageInstanceStore from "StageInstanceStore" /* 4868 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import PermissionsConstants from "PermissionsConstants" /* 9019 */;
+// Module 9146 (useGetEventChannelsByType)
+import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9148 */;
+import StageInstanceStore from "StageInstanceStore" /* 4995 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import PermissionsConstants from "PermissionsConstants" /* 9147 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

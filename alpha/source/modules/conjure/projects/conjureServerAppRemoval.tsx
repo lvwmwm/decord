@@ -1,34 +1,34 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 13414
+// Function ID: 13415
 // Name: conjureServerAppRemoval
-// Dependencies: [5, 19, 2038, 4944, 4926, 4885, 4946, 4956, 1383, 1072, 10891, 5652, 504, 12, 6902, 7419, 6881, 2]
+// Dependencies: [5, 19, 2167, 5071, 5053, 5012, 5073, 5083, 1385, 1072, 11021, 5772, 504, 12, 7022, 7543, 7001, 2]
 // Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp, useConjureServerApp
 
-// Module 13278 (conjureServerAppRemoval)
+// Module 13414 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1072 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
-import ConjureUtils from "ConjureUtils" /* 7419 */;
-import conjureAppInServer from "conjureAppInServer" /* 10891 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7001 */;
+import ConjureUtils from "ConjureUtils" /* 7543 */;
+import conjureAppInServer from "conjureAppInServer" /* 11021 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import ApplicationStore from "ApplicationStore" /* 2167 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f104239 = (id) => {
+const f104299 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f104240 = () => {
+const f104300 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -69,15 +69,15 @@ function readConjureServerApp(arg0, arg1) {
         if (null == found) {
           items = [];
         } else {
-          obj = guild(10891);
+          obj = guild(11021);
           items = obj.findConjureAppChannels(guild.id, found.id);
         }
         let canRemoveConjureBotResult = null != found;
         if (canRemoveConjureBotResult) {
           let bot = application.bot;
           let id;
-          const canRemoveConjureBot = guild(10891).canRemoveConjureBot;
-          guild(10891);
+          const canRemoveConjureBot = guild(11021).canRemoveConjureBot;
+          guild(11021);
           if (bot != null) {
             id = bot.id;
           }
@@ -86,8 +86,8 @@ function readConjureServerApp(arg0, arg1) {
         if (canRemoveConjureBotResult) {
           const bot2 = found.bot;
           let id1;
-          const canRemoveConjureBot2 = guild(10891).canRemoveConjureBot;
-          guild(10891);
+          const canRemoveConjureBot2 = guild(11021).canRemoveConjureBot;
+          guild(11021);
           if (bot2 != null) {
             id1 = bot2.id;
           }
@@ -226,7 +226,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f104240);
+    application.catch(f104300);
   }
 }
 function loadMissingApplication() {
@@ -245,7 +245,7 @@ obj = function _loadMissingApplication() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -283,7 +283,7 @@ obj = function _loadMissingApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -324,7 +324,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f104240);
+        application.catch(f104300);
       }
     }
   }, items2);
@@ -426,7 +426,7 @@ export function loadConjureServerApp() {
 }
 export function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f104239)];
+  const items = [...channels.map(f104299)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -440,7 +440,7 @@ export function conjureDeleteAppChannelItems(rest, channelId) {
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f104239), obj, obj2];
+  const items = [...found.map(f104299), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 }

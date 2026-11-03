@@ -1,24 +1,24 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1385
+// Function ID: 1386
 // Name: UserStore
-// Dependencies: [1384, 1397, 502, 1071, 1072, 1385, 1399, 1394, 1979, 1980, 1400, 1405, 1406, 1407, 1396, 12, 1991, 1992, 1379, 2]
+// Dependencies: [1386, 1399, 502, 1071, 1072, 1387, 1401, 1396, 2108, 2109, 1402, 1407, 1408, 1409, 1398, 12, 2120, 2121, 1380, 2]
 
-// Module 1383 (UserStore)
+// Module 1385 (UserStore)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import UserStoreUtils from "UserStoreUtils" /* 1394 */;
-import FlagUtilsAll from "FlagUtils" /* 1396 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1399 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1400 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1405 */;
-import PremiumStateUtils from "PremiumStateUtils" /* 1406 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1979 */;
-import mappers from "mappers" /* 1980 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1991 */;
-import Server from "Server" /* 1992 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1384 */;
-import UserRecord from "UserRecord" /* 1397 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import UserStoreUtils from "UserStoreUtils" /* 1396 */;
+import FlagUtilsAll from "FlagUtils" /* 1398 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1401 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1402 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1407 */;
+import PremiumStateUtils from "PremiumStateUtils" /* 1408 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2108 */;
+import mappers from "mappers" /* 2109 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 2120 */;
+import Server from "Server" /* 2121 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1386 */;
+import UserRecord from "UserRecord" /* 1399 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
 import Constants from "Constants" /* 1072 */;
@@ -56,7 +56,7 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (tmp8) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        const tmp5Result = tmp5(1399);
+        const tmp5Result = tmp5(1401);
         obj[id].primaryGuild = tmp5Result.ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[obj[id].id] = obj[id];
         closure_12 = closure_12 + 1;
@@ -150,7 +150,7 @@ function transformUser(mfa_enabled) {
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp2(1407).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp2(1409).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -260,7 +260,7 @@ function mergeUser(user, arg1) {
           const obj5 = PrimaryGuildUtils;
           const tmp18 = require;
           if (obj5.isUserPrimaryGuildEqual(obj[user.id].primaryGuild, user.primary_guild) !== true) {
-            const tmp18Result = tmp18(1399);
+            const tmp18Result = tmp18(1401);
             user.primary_guild = tmp18Result.ensureUserPrimaryGuild(user.primary_guild);
           }
         }
@@ -761,7 +761,7 @@ function handleIncomingMessage(message) {
       if (flag) {
         id = obj2.getId();
         set = tmp6.set;
-        const tmp2Result = tmp2(1396);
+        const tmp2Result = tmp2(1398);
         tmp5[id] = set("flags", tmp2Result.setFlag(tmp6.flags, metroImportDefault.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
       }
@@ -1243,6 +1243,9 @@ class UserStore extends MobileCacheSnapshotStore {
       LOAD_MESSAGES_SUCCESS: handleLoadMessages,
       LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
       LOAD_RECENT_MENTIONS_SUCCESS: handleLoadMessages,
+      SAVED_MESSAGES_UPDATE: handleLoadMessages,
+      BOOKMARKS_FETCH_SUCCESS: handleLoadMessages,
+      SAVED_MESSAGE_CREATE: handleLoadMessages,
       CONVERSATION_MESSAGES_FETCH_SUCCESS: handleConversationMessagesFetchSuccess,
       CHANNEL_CONVERSATIONS_FETCH_SUCCESS: handleChannelConversationsFetchSuccess,
       LOAD_PINNED_MESSAGES_SUCCESS: handleLoadPinnedMessages,

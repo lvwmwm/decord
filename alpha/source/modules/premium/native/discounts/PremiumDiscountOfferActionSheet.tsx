@@ -1,22 +1,20 @@
-// Module ID: 19030
-// Function ID: 19031
+// Module ID: 19188
+// Function ID: 19189
 // Name: PremiumDiscountOfferActionSheet
-// Dependencies: [19, 1385, 1072, 4860, 21, 7326, 7351, 1252, 8530, 9905, 7607, 5272, 19031, 2]
+// Dependencies: [19, 1387, 1072, 4987, 21, 7446, 7471, 1252, 8654, 10036, 7731, 5395, 19189, 2]
 // Exports: default
 
-// Module 19030 (PremiumDiscountOfferActionSheet)
+// Module 19188 (PremiumDiscountOfferActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7607 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 8530 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7731 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 8654 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let AnalyticsObjectTypes;
 let AnalyticsPages;
@@ -98,7 +96,7 @@ export default function _default(markAsDismissed) {
   let tmp10Result = null;
   if (null != userDiscountOffer) {
     let obj = { startExpanded: true, onDismiss: callback, children: null };
-    BottomSheet = markAsDismissed(tmp2[11]).BottomSheet;
+    const BottomSheet = markAsDismissed(tmp2[11]).BottomSheet;
     let obj2 = { discountOffer: userDiscountOffer, onConfirm: tmp8 };
     let id;
     const tmp10 = jsx;

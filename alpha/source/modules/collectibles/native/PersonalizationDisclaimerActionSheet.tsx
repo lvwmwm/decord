@@ -1,27 +1,25 @@
-// Module ID: 17870
-// Function ID: 17871
+// Module ID: 18013
+// Function ID: 18014
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1072, 21, 5014, 575, 5709, 2061, 5272, 5624, 1113, 6767, 5634, 8161, 5258, 2]
+// Dependencies: [19, 1072, 21, 5141, 575, 5829, 2190, 5395, 5747, 1113, 6887, 5754, 8285, 5381, 2]
 // Exports: default
 
-// Module 17870 (PersonalizationDisclaimerActionSheet)
+// Module 18013 (PersonalizationDisclaimerActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import ButtonGroup2 from "ButtonGroup" /* 6767 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8161 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import ButtonGroup2 from "ButtonGroup" /* 6887 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8285 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -53,7 +51,7 @@ export default function PersonalizationDisclaimerActionSheet() {
     openURL(obj.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: intl.string(intl4.t.euks4U) };
   const Text = Text_Text.Text;
   intl = intl4.intl;

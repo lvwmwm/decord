@@ -1,24 +1,24 @@
-// Module ID: 8813
-// Function ID: 8814
+// Module ID: 8937
+// Function ID: 8938
 // Name: NonUserBotProfileContent
-// Dependencies: [19, 17, 7377, 5273, 21, 8814, 8761, 6041, 5068, 8815, 8803, 8816, 1625, 8800, 8811, 7358, 5711, 8817, 5095, 8828, 11413, 1113, 11492, 2]
+// Dependencies: [19, 17, 7497, 5396, 21, 8938, 8885, 6161, 5195, 8939, 8927, 8940, 1627, 8924, 8935, 7478, 5831, 8941, 1652, 8952, 11551, 1113, 11629, 2]
 
-// Module 8813 (NonUserBotProfileContent)
+// Module 8937 (NonUserBotProfileContent)
 import react_native from "react-native" /* 17 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import useProfileThemeDefault from "useProfileTheme" /* 8800 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8803 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8814 */;
-import useBadgesDefault from "useBadges" /* 8815 */;
-import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 8816 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11413 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11492 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import useProfileThemeDefault from "useProfileTheme" /* 8924 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8927 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8938 */;
+import useBadgesDefault from "useBadges" /* 8939 */;
+import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 8940 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11551 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11629 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7377 */;
+import Constants from "Constants" /* 7497 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   importDefault = undefined;
   scrollPosition = scrollPosition.scrollPosition;
   const tmp3 = UserProfileSharedStylesDefault();
-  let obj = trackUserProfileAction(8761);
+  let obj = trackUserProfileAction(8885);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let guild_id;
   const useName = NicknameUtilsDefault.useName;
@@ -82,22 +82,22 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   const tmp10 = useUserProfileBannerHeightDefault(ACTION_SHEET_MAX_WIDTH);
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = useUserProfileOverscrollStylesDefault({ scrollPosition, bannerHeight: tmp10 }));
   useUserProfileOverscrollStylesDefault({ scrollPosition, bannerHeight: tmp10 });
-  const bottom = tmp(1625)().bottom;
+  const bottom = tmp(1627)().bottom;
   ({ theme, primaryColor, secondaryColor } = useProfileThemeDefault({ user, displayProfile }));
   useProfileThemeDefault({ user, displayProfile });
-  const tmp4Result = trackUserProfileAction(8811);
+  const tmp4Result = trackUserProfileAction(8935);
   const userProfileColors = tmp4Result.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   if (null == user) {
     return null;
   } else {
     let obj2 = { user, displayProfile, bannerHeight: tmp10, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
-    const items = [closure_7(tmp(8817), obj2), ];
+    const items = [closure_7(tmp(8941), obj2), ];
     const obj3 = { style: contentAnimatedStyle, children: items1 };
-    View = tmp(5095).View;
+    View = tmp(1652).View;
     const obj4 = { user, guildId, backgroundColor: tmp14, disableStatus: true };
     guildId = undefined;
-    const OpenableUserProfileAvatar = tmp4(8828).OpenableUserProfileAvatar;
+    const OpenableUserProfileAvatar = tmp4(8952).OpenableUserProfileAvatar;
     const tmp23 = closure_9;
     if (displayProfile != null) {
       guildId = displayProfile.guildId;

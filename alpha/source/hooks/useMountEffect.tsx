@@ -1,10 +1,10 @@
-// Module ID: 5593
-// Function ID: 5594
+// Module ID: 5716
+// Function ID: 5717
 // Name: useMountEffect
-// Dependencies: [2, 5594]
+// Dependencies: [2, 5717]
 
-// Module 5593 (useMountEffect)
-import react from "react" /* 5594 */;
+// Module 5716 (useMountEffect)
+import react from "react" /* 5717 */;
 import size from "module_2" /* 2 */;
 
 const reactDefault = react;

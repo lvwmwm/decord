@@ -1,26 +1,26 @@
-// Module ID: 19650
-// Function ID: 19651
+// Module ID: 19800
+// Function ID: 19801
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 4857, 1072, 21, 5014, 575, 7363, 1113, 6740, 1625, 7004, 6022, 8752, 6028, 1260, 5624, 5634, 9109, 9100, 2]
+// Dependencies: [5, 32, 19, 17, 4984, 1072, 21, 5141, 575, 7483, 1113, 6860, 1627, 7130, 6142, 8876, 6148, 1260, 5747, 5754, 9237, 9228, 2]
 // Exports: default
 
-// Module 19650 (NewTermsModal)
+// Module 19800 (NewTermsModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6028 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7363 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9100 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9109 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6148 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7483 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9228 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9237 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4984 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap;
@@ -106,8 +106,8 @@ export default function NewTermsModal() {
   const bottom = rect.bottom;
   const memo = react.useMemo(() => action.getAction(), []);
   [first, importDefault] = react.useState(false);
-  let obj = memo(7004);
-  obj.useNavigatorBackPressHandler(memo(6022).BackPressHandler.minimize);
+  let obj = memo(7130);
+  obj.useNavigatorBackPressHandler(memo(6142).BackPressHandler.minimize);
   dependencyMap = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
     if (c3 === 2) {
@@ -120,7 +120,7 @@ export default function NewTermsModal() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -154,7 +154,7 @@ export default function NewTermsModal() {
           tmp = value;
           closure_129_1(tmp);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -174,37 +174,37 @@ export default function NewTermsModal() {
     const tmp14 = closure_8;
     const obj6 = { style: null, contentContainerStyle: null, onTouchStart: handleTouch, children: items1 };
     ({ scrollView: obj5.style, contentContainer: obj5.contentContainerStyle } = tmp);
-    const obj7 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold", children: intl.string(memo(1113).t["7glvXu"]) };
-    const Text = tmp7(5624).Text;
+    const obj7 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/semibold", children: intl.string(memo(1113).t["7glvXu"]) };
+    const Text = tmp7(5747).Text;
     intl = tmp7(1113).intl;
     items1 = [closure_12(Text, obj7), , , , , , ];
     const obj8 = { variant: "text-md/normal", style: tmp.description, children: intl2.format(memo(1113).t.CN0Hvb, obj9) };
-    const Text2 = tmp7(5624).Text;
+    const Text2 = tmp7(5747).Text;
     intl2 = tmp7(1113).intl;
     obj9 = { url: constants.TERMS_SUMMARY };
     items1[1] = closure_12(Text2, obj8);
     const obj10 = { variant: "text-md/normal", children: intl3.format(memo(1113).t.iw0hFi, obj11) };
-    const Text3 = tmp7(5624).Text;
+    const Text3 = tmp7(5747).Text;
     intl3 = tmp7(1113).intl;
     obj11 = { url: constants.TERMS };
     items1[2] = closure_12(Text3, obj10);
     const obj12 = { variant: "text-md/normal", children: intl4.format(memo(1113).t["36klnD"], obj13) };
-    const Text4 = tmp7(5624).Text;
+    const Text4 = tmp7(5747).Text;
     intl4 = tmp7(1113).intl;
     obj13 = { url: constants.PAID_TERMS };
     items1[3] = closure_12(Text4, obj12);
     const obj14 = { variant: "text-md/normal", children: intl5.format(memo(1113).t.TquFBF, obj15) };
-    const Text5 = tmp7(5624).Text;
+    const Text5 = tmp7(5747).Text;
     intl5 = tmp7(1113).intl;
     obj15 = { url: constants.PRIVACY };
     items1[4] = closure_12(Text5, obj14);
     const obj16 = { variant: "text-md/normal", children: intl6.format(memo(1113).t.ia96Tb, obj17) };
-    const Text6 = tmp7(5624).Text;
+    const Text6 = tmp7(5747).Text;
     intl6 = tmp7(1113).intl;
     obj17 = { url: constants.GUIDELINES };
     items1[5] = closure_12(Text6, obj16);
     const obj18 = { variant: "text-md/normal", style: tmp.agreementDescription, children: intl7.string(memo(1113).t["+USXQE"]) };
-    const Text7 = tmp7(5624).Text;
+    const Text7 = tmp7(5747).Text;
     intl7 = tmp7(1113).intl;
     items1[6] = closure_12(Text7, obj18);
     items2 = [closure_13(closure_8, obj6), , ];
@@ -218,7 +218,7 @@ export default function NewTermsModal() {
         },
       text: intl8.string(memo(1113).t["+TBKL1"])
     };
-    Button = tmp7(5634).Button;
+    Button = tmp7(5754).Button;
     intl8 = tmp7(1113).intl;
     items2[1] = closure_12(closure_6, obj19);
     const obj21 = { style: items3, source: AssetRegistryDefault, color: tmp.navbarRight.tintColor, onPress: handleMoreActions, accessibilityRole: "button", accessibilityLabel: intl9.string(memo(1113).t["UKOtz+"]) };

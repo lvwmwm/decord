@@ -1,18 +1,18 @@
-// Module ID: 7083
-// Function ID: 7084
+// Module ID: 7209
+// Function ID: 7210
 // Name: Input
-// Dependencies: [19, 17, 21, 5014, 575, 7084, 5187, 5624, 7085, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7210, 5310, 5747, 7211, 2]
 // Exports: Input
 
-// Module 7083 (Input)
+// Module 7209 (Input)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import getRequiredFieldA11yName2 from "getRequiredFieldA11yName" /* 7084 */;
+import native from "native" /* 5310 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import getRequiredFieldA11yName2 from "getRequiredFieldA11yName" /* 7210 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -67,10 +67,10 @@ export function Input(arg0) {
       const obj5 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, nativeID: labelId, accessibilityLabel: requiredFieldA11yName, children: items1 };
       items1 = [label, ];
       let tmp6Result2 = null;
-      const Text = tmp2(5624).Text;
+      const Text = tmp2(5747).Text;
       if (required) {
-        const obj6 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
-        tmp6Result2 = tmp6(tmp2(5624).Text, obj6);
+        const obj6 = { variant: "text-sm/semibold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
+        tmp6Result2 = tmp6(tmp2(5747).Text, obj6);
       }
       items1[1] = tmp6Result2;
       tmp6Result = tmp6(Text, obj5);
@@ -83,13 +83,13 @@ export function Input(arg0) {
   let tmp12Result = null;
   if (null != description) {
     const obj8 = { variant: "text-xs/medium", color: "text-muted", style: tmp.description, children: description };
-    tmp12Result = tmp12(tmp2(5624).Text, obj8);
+    tmp12Result = tmp12(tmp2(5747).Text, obj8);
   }
   items2[2] = tmp12Result;
   let tmp12Result2 = null;
   if (null != errorMessage) {
     const obj9 = { style: tmp.error, children: errorMessage };
-    tmp12Result2 = tmp12(tmp2(7085).ErrorText, obj9);
+    tmp12Result2 = tmp12(tmp2(7211).ErrorText, obj9);
   }
   items2[3] = tmp12Result2;
   return React3(View, obj2);

@@ -1,13 +1,13 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14638
+// Function ID: 14639
 // Name: SpendEarnOrbsLottie
-// Dependencies: [19, 21, 11917, 14508, 2]
+// Dependencies: [19, 21, 12054, 14639, 2]
 // Exports: SpendEarnOrbsLottie
 
-// Module 14507 (SpendEarnOrbsLottie)
+// Module 14638 (SpendEarnOrbsLottie)
 import Fragment from "Fragment" /* 21 */;
-import LottieIcon2 from "LottieIcon" /* 11917 */;
-import AssetRegistry from "AssetRegistry" /* 14508 */;
+import LottieIcon2 from "LottieIcon" /* 12054 */;
+import AssetRegistry from "AssetRegistry" /* 14639 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

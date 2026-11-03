@@ -1,18 +1,18 @@
-// Module ID: 18956
-// Function ID: 18957
+// Module ID: 19114
+// Function ID: 19115
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 9856, 5014, 575, 7654, 7169, 1625, 9812, 1113, 18957, 18959, 2]
+// Dependencies: [19, 17, 21, 9987, 5141, 575, 7778, 7290, 1627, 9943, 1113, 19115, 19117, 2]
 // Exports: default
 
-// Module 18956 (ContextMenuCommandNavigator)
+// Module 19114 (ContextMenuCommandNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import HeaderShared from "HeaderShared" /* 9943 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9856 */;
-import createStyles from "createStyles" /* 5014 */;
+import NativeStackView from "NativeStackView" /* 9987 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

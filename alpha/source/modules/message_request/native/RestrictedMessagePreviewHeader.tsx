@@ -1,21 +1,21 @@
-// Module ID: 18985
-// Function ID: 18986
+// Module ID: 19143
+// Function ID: 19144
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 14016, 21, 5014, 575, 7326, 5068, 8750, 7358, 5711, 5258, 14179, 1994, 8762, 7522, 6744, 6980, 1113, 1187, 5624, 18968, 6957, 18986, 2]
+// Dependencies: [19, 17, 14147, 21, 5141, 575, 7446, 5195, 8874, 7478, 5831, 5381, 14310, 2123, 8886, 7646, 6864, 7106, 1113, 1187, 5747, 19126, 7083, 19144, 2]
 // Exports: default
 
-// Module 18985 (RestrictedMessagePreviewHeader)
+// Module 19143 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 14016 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 14147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(14179, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(14310, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;
@@ -88,7 +88,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
   obj5 = { style: tmp.avatar, user, guildId: channel.guild_id, size: channel(analyticsLocations[19]).AvatarSizes.XXLARGE, avatarDecoration: user.avatarDecoration };
   Avatar = channel(analyticsLocations[19]).Avatar;
   items3 = [closure_6(PressableOpacity, obj4), , , , , ];
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl2.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(channel(analyticsLocations[20]).Text, { variant: "heading-xxl/extrabold", color: "mobile-text-heading-primary", children: name }) };
+  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl2.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(channel(analyticsLocations[20]).Text, { variant: "heading-xxl/semibold", color: "mobile-text-heading-primary", children: name }) };
   const PressableOpacity2 = channel(analyticsLocations[17]).PressableOpacity;
   intl2 = channel(analyticsLocations[18]).intl;
   items3[1] = closure_6(PressableOpacity2, obj6);

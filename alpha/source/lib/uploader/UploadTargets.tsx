@@ -1,16 +1,16 @@
-// Module ID: 8241
-// Function ID: 8242
+// Module ID: 8365
+// Function ID: 8366
 // Name: UploadTargets
-// Dependencies: [4863, 1072, 8231, 8216, 8212, 8242, 8244, 2]
+// Dependencies: [4990, 1072, 8355, 8340, 8336, 8366, 8368, 2]
 // Exports: getUploadTarget
 
-// Module 8241 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 8212 */;
-import FileUtilsAll from "FileUtils" /* 8216 */;
-import UploadLimits from "UploadLimits" /* 8231 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8242 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8244 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+// Module 8365 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 8336 */;
+import FileUtilsAll from "FileUtils" /* 8340 */;
+import UploadLimits from "UploadLimits" /* 8355 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8366 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8368 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,32 +1,32 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13812
+// Function ID: 13813
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5015, 1383, 13436, 6066, 21, 1376, 5014, 575, 1409, 504, 13683, 13684, 1491, 5068, 6435, 13637, 5159, 13639, 1113, 3092, 3060, 5715, 13658, 8643, 13642, 11972, 13685, 13450, 5711, 1187, 10558, 7351, 13365, 5729, 2]
+// Dependencies: [5, 32, 19, 17, 5142, 1385, 13571, 6186, 21, 1357, 5141, 575, 1411, 504, 13813, 13814, 1493, 5195, 6555, 13777, 5282, 13779, 1113, 3219, 3187, 5835, 13798, 8767, 13782, 12109, 13815, 13572, 5831, 1187, 10688, 7471, 13501, 5849, 2]
 // Exports: default
 
-// Module 13682 (CheckpointFriendsStatsScreen)
+// Module 13812 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import _modDef3060 from "module_3060" /* 3060 */;
-import FriendsIcon from "FriendsIcon" /* 5715 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import ChatIcon from "ChatIcon" /* 8643 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10558 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11972 */;
-import CheckpointTextDefault from "CheckpointText" /* 13639 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13642 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13658 */;
+import _modDef3187 from "module_3187" /* 3187 */;
+import FriendsIcon from "FriendsIcon" /* 5835 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import ChatIcon from "ChatIcon" /* 8767 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10688 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12109 */;
+import CheckpointTextDefault from "CheckpointText" /* 13779 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13782 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13798 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import UserStore from "UserStore" /* 1383 */;
-import CheckpointStore from "CheckpointStore" /* 13436 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import UserStore from "UserStore" /* 1385 */;
+import CheckpointStore from "CheckpointStore" /* 13571 */;
+import CheckpointConstants from "CheckpointConstants" /* 6186 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,10 +62,10 @@ function FriendsHeader(title) {
   const obj2 = { style: tmp.heading, children: items1 };
   const obj4 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
   items[0] = map1(FriendsIcon.FriendsIcon, obj4);
-  const obj5 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const obj5 = { isStepHeading: true, variant: "heading-md/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2 = CheckpointTextDefault;
   const intl = intl6.intl;
-  stringResult = intl.string(_modDef3060.ZQakPR);
+  stringResult = intl.string(_modDef3187.ZQakPR);
   items[1] = map1(tmp2, obj5);
   items1 = [authStore3(metroImportDefault, obj3), ];
   const obj6 = { children: title.toLocaleUpperCase() };
@@ -83,10 +83,10 @@ function SidekickStats(sidekick) {
   const rounded = Math.round(sidekick.numMessagesSent);
   const rounded1 = Math.round(sidekick.numVoiceMinutes);
   const intl = intl6.intl;
-  const stringResult = intl.string(_modDef3060.wWKySP);
+  const stringResult = intl.string(_modDef3187.wWKySP);
   const intl2 = intl6.intl;
   const obj = { style: tmp.stats, children: items1 };
-  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3060.UZbUtl, { numMinutes: rounded1 });
+  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3187.UZbUtl, { numMinutes: rounded1 });
   const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + stringResult.toLocaleLowerCase(), style: tmp.stat, children: items };
   items = [, ];
   const obj3 = { size: "md", color: CHECKPOINT_PRIMARY };
@@ -140,7 +140,7 @@ function SidekickMessageInput(user) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ function SidekickMessageInput(user) {
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp37) {
           closure_2 = tmp37;
           if (0 === c3) {
@@ -219,7 +219,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(13685)(user.id);
+  const tmp9 = value(13815)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -263,7 +263,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1113).t.Ve9Ge6),
-      children: tmp14(tmp15(13365).GiftIcon, obj6)
+      children: tmp14(tmp15(13501).GiftIcon, obj6)
     };
     intl2 = tmp15(1113).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -277,7 +277,7 @@ function SidekickMessageInput(user) {
       accessibilityRole: "button",
       accessibilityLabel: intl3.string(user(1113).t.oeb1vg),
       accessibilityState: obj8,
-      children: closure_13(user(5729).SendMessageIcon, obj9)
+      children: closure_13(user(5849).SendMessageIcon, obj9)
     };
     disabled = undefined;
     const tmp19 = obj;

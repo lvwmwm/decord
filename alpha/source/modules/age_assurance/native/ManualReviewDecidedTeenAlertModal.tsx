@@ -1,17 +1,17 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 8292
+// Function ID: 8293
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6728, 21, 8169, 5624, 7955, 2061, 1113, 3192, 5964, 5964, 1260, 2]
+// Dependencies: [19, 6848, 21, 8293, 5747, 8079, 2190, 1113, 3319, 6084, 6084, 1260, 2]
 // Exports: default
 
-// Module 8168 (ManualReviewDecidedTeenAlertModal)
+// Module 8292 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef3192 from "module_3192" /* 3192 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertModal2 from "AlertModal" /* 5964 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6728 */;
-import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8169 */;
+import _modDef3319 from "module_3319" /* 3319 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import AlertModal2 from "AlertModal" /* 6084 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6848 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8293 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
   let intl = intl4.intl;
   const intl2 = intl4.intl;
   const format = intl2.format;
-  const tmp5 = _modDef3192;
+  const tmp5 = _modDef3319;
   if (isManualReviewInconclusiveCopyEnabled) {
     const obj3 = { contentAndSettingsHook };
     formatResult = format(tmp5.UIbYzl, obj3);
@@ -64,5 +64,5 @@ export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
   intl3 = intl4.intl;
   const obj7 = { impression: { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_VERIFICATION_MANUAL_REVIEW_DECIDED_TEEN } };
   ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_AGE_VERIFICATION_MANUAL_REVIEW_DECIDED_TEEN });
-  return <AlertModal title={intl.string(_modDef3192.AA3xYb)} content={formatResult} actions={null} trackingProps={obj7} />;
+  return <AlertModal title={intl.string(_modDef3319.AA3xYb)} content={formatResult} actions={null} trackingProps={obj7} />;
 };

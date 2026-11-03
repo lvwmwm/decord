@@ -1,12 +1,12 @@
-// Module ID: 5690
-// Function ID: 5691
+// Module ID: 5810
+// Function ID: 5811
 // Name: DismissibleContentFrameworkActionCreators
-// Dependencies: [4855, 572, 2]
+// Dependencies: [4982, 572, 2]
 // Exports: handleDCActioned, handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, overrideUpsellBackoff, resetDismissibleContentFrameworkStore
 
-// Module 5690 (DismissibleContentFrameworkActionCreators)
+// Module 5810 (DismissibleContentFrameworkActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4855 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4982 */;
 import size from "module_2" /* 2 */;
 
 const resetFatigueCooldown = DismissibleContentShownStateStore.resetFatigueCooldown;

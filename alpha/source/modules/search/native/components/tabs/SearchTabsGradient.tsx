@@ -1,14 +1,14 @@
-// Module ID: 18801
-// Function ID: 18802
+// Module ID: 18959
+// Function ID: 18960
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 5596, 575, 5011, 14372, 2]
+// Dependencies: [19, 21, 5719, 575, 5138, 14503, 2]
 // Exports: default
 
-// Module 18801 (SearchTabsGradient)
+// Module 18959 (SearchTabsGradient)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import TabsGradientDefault from "TabsGradient" /* 14372 */;
+import ColorUtils from "ColorUtils" /* 5138 */;
+import TabsGradientDefault from "TabsGradient" /* 14503 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/search/native/components/tabs
 export default function SearchTabsGradient(state) {
   let token;
   state = state.state;
-  let obj = token(5596);
+  let obj = token(5719);
   token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   const colors = react.useMemo(() => {

@@ -1,18 +1,18 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 12031
+// Function ID: 12032
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 7326, 6980, 8750, 11895, 1187, 5624, 11896, 1113, 11897, 6048, 8359, 6765, 7945, 7240, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 7446, 7106, 8874, 12032, 1187, 5747, 12033, 1113, 12034, 6168, 8483, 6885, 8069, 7361, 2]
 // Exports: default
 
-// Module 11894 (RequestToSpeakParticipantList)
+// Module 12031 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8069 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -122,7 +122,7 @@ export default function RequestToSpeakParticipantList(channel) {
   if (0 === sortedRequestToSpeakParticipants.length) {
     let obj2 = { style: tmp.container, children: closure_5(View, obj3) };
     obj3 = { style: tmp.emptyContainer, children: items };
-    const obj4 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(channel(sortedRequestToSpeakParticipants[13]).t["7R24mX"]) };
+    const obj4 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(channel(sortedRequestToSpeakParticipants[13]).t["7R24mX"]) };
     const Text = tmp2(tmp3[11]).Text;
     intl = tmp2(tmp3[13]).intl;
     items = [closure_4(Text, obj4), ];

@@ -1,76 +1,85 @@
-// Module ID: 14772
-// Function ID: 14773
+// Module ID: 14903
+// Function ID: 14904
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 5095, 8867, 5254, 1187, 2]
+// Dependencies: [19, 1652, 8991, 5377, 1187, 2]
 // Exports: useFooterLayoutAnimation, useHeaderLayoutAnimation, useOverlayLayoutDriver
 
-// Module 14772 (useOverlayLayoutDriver)
+// Module 14903 (useOverlayLayoutDriver)
 import native from "native" /* 1187 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, set;
+let set;
 
-const __initData = { code: "function useOverlayLayoutDriverTsx1(){const{interpolate,animationDriver}=this.__closure;return{transform:[{translateY:interpolate(animationDriver.get(),[0,0.75,1],[-50,-50,0])}],opacity:interpolate(animationDriver.get(),[0,0.75,1],[0,0,1])};}" };
-const __initData2 = { code: "function useOverlayLayoutDriverTsx2(){const{interpolate,animationDriver}=this.__closure;return{transform:[{translateY:interpolate(animationDriver.get(),[0,0.75,1],[50,50,0])}],opacity:interpolate(animationDriver.get(),[0,0.75,1],[0,0,1])};}" };
+let closure_3 = { code: "(function useOverlayLayoutDriverTsx1(){let[interpolate,animationDriver]=this.__closure;return{transform:[{translateY:interpolate(animationDriver.get(),[0,0.75,1],[-50,-50,0])}],opacity:interpolate(animationDriver.get(),[0,0.75,1],[0,0,1])};})" };
+let closure_4 = { code: "(function useOverlayLayoutDriverTsx2(){let[interpolate,animationDriver]=this.__closure;return{transform:[{translateY:interpolate(animationDriver.get(),[0,0.75,1],[50,50,0])}],opacity:interpolate(animationDriver.get(),[0,0.75,1],[0,0,1])};})" };
 let result = size.fileFinishedImporting("modules/media_viewer/native/useOverlayLayoutDriver.tsx");
 
 export function useOverlayLayoutDriver() {
   let sharedValue;
-  let obj = sharedValue(5095);
+  let obj = sharedValue(1652);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(8867);
+  let obj2 = sharedValue(8991);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const obj = timing;
+    const obj = timing_timing;
     const obj2 = { duration: 300, easing: native.STANDARD_EASING };
     const result = set(obj.withTiming(1, obj2));
   }, items);
   return sharedValue;
 }
 export function useHeaderLayoutAnimation(animationDriver) {
-  _require = animationDriver;
-  let obj = require("ReanimatedRexport");
-  const fn = function o() {
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let items = [closure_3, , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = _mod1652.interpolate;
+  items[2] = animationDriver;
+  let c0;
+  let c1;
+  [tmp2, tmp3, tmp4] = items;
+  function useOverlayLayoutDriverTsx1() {
     let items;
-    let obj3;
-    let obj4;
-    const obj = { transform: items, opacity: obj4.interpolate(animationDriver.get(), [0, 0.75, 1], [0, 0, 1]) };
-    const obj2 = { translateY: obj3.interpolate(animationDriver.get(), [0, 0.75, 1], [-50, -50, 0]) };
-    items = [obj2];
-    obj3 = ReanimatedRexport;
-    obj4 = ReanimatedRexport;
+    const obj = { transform: items, opacity: _undefined(_undefined2.get(), [0, 0.75, 1], [0, 0, 1]) };
+    items = [{ translateY: _undefined(_undefined2.get(), [0, 0.75, 1], [-50, -50, 0]) }];
+    ({ translateY: _undefined(_undefined2.get(), [0, 0.75, 1], [-50, -50, 0]) });
     return obj;
-  };
-  let obj2 = { interpolate: require("ReanimatedRexport").interpolate, animationDriver };
-  fn.__closure = obj2;
-  fn.__workletHash = 13622939479876;
-  fn.__initData = __initData;
-  return obj.useAnimatedStyle(fn);
+  }
+  const items1 = [tmp3, tmp4];
+  useOverlayLayoutDriverTsx1.__closure = items1;
+  useOverlayLayoutDriverTsx1.__workletHash = 9211883579773;
+  useOverlayLayoutDriverTsx1.__initData = tmp2;
+  return useAnimatedStyle(useOverlayLayoutDriverTsx1);
 }
 export function useFooterLayoutAnimation(overlayLayoutDriver) {
-  _require = overlayLayoutDriver;
-  let obj = require("ReanimatedRexport");
-  const fn = function n() {
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let items = [closure_4, , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = _mod1652.interpolate;
+  items[2] = overlayLayoutDriver;
+  let c0;
+  let c1;
+  [tmp2, tmp3, tmp4] = items;
+  function useOverlayLayoutDriverTsx2() {
     let items;
-    let obj3;
-    let obj4;
-    const obj = { transform: items, opacity: obj4.interpolate(overlayLayoutDriver.get(), [0, 0.75, 1], [0, 0, 1]) };
-    const obj2 = { translateY: obj3.interpolate(overlayLayoutDriver.get(), [0, 0.75, 1], [50, 50, 0]) };
-    items = [obj2];
-    obj3 = ReanimatedRexport;
-    obj4 = ReanimatedRexport;
+    const obj = { transform: items, opacity: _undefined(_undefined2.get(), [0, 0.75, 1], [0, 0, 1]) };
+    items = [{ translateY: _undefined(_undefined2.get(), [0, 0.75, 1], [50, 50, 0]) }];
+    ({ translateY: _undefined(_undefined2.get(), [0, 0.75, 1], [50, 50, 0]) });
     return obj;
-  };
-  let obj2 = { interpolate: require("ReanimatedRexport").interpolate, animationDriver: overlayLayoutDriver };
-  fn.__closure = obj2;
-  fn.__workletHash = 15220711492711;
-  fn.__initData = __initData2;
-  return obj.useAnimatedStyle(fn);
+  }
+  const items1 = [tmp3, tmp4];
+  useOverlayLayoutDriverTsx2.__closure = items1;
+  useOverlayLayoutDriverTsx2.__workletHash = 11051399715838;
+  useOverlayLayoutDriverTsx2.__initData = tmp2;
+  return useAnimatedStyle(useOverlayLayoutDriverTsx2);
 }

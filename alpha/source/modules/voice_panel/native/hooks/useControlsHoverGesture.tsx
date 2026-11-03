@@ -1,20 +1,20 @@
-// Module ID: 19213
-// Function ID: 19214
+// Module ID: 19371
+// Function ID: 19372
 // Name: useControlsHoverGesture
-// Dependencies: [19, 11223, 11221, 11222, 5095, 5303, 2]
+// Dependencies: [19, 11360, 11358, 11359, 1652, 5426, 1705, 2]
 // Exports: default
 
-// Module 19213 (useControlsHoverGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+// Module 19371 (useControlsHoverGesture)
+import _mod1705 from "module_1705" /* 1705 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11358 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
-let closure_6 = { code: "function useControlsHoverGestureTsx1(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get())return;if(mode.get()!==VoicePanelModes.PANEL)return;const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS)return;lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
+let closure_6 = { code: "(function useControlsHoverGestureTsx1(){let[connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,scheduleOnRN,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout]=this.__closure;if(!connected.get())return;if(mode.get()!==VoicePanelModes.PANEL)return;const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){scheduleOnRN(showControls);return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS)return;lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();})" };
 let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlsHoverGesture.tsx");
 
 export default function useControlsHoverGesture() {
@@ -29,32 +29,60 @@ export default function useControlsHoverGesture() {
   const showControls = context.showControls;
   let obj = connected(mode[4]);
   const sharedValue = obj.useSharedValue(0);
-  const items = [connected, mode, controlsSpecs, sharedValue, refreshIdleTimeout, showControls];
+  let items = [connected, mode, controlsSpecs, sharedValue, refreshIdleTimeout, showControls];
   return refreshIdleTimeout.useMemo(() => {
+    let tmp10;
+    let tmp11;
+    let tmp12;
+    let tmp2;
+    let tmp3;
+    let tmp4;
+    let tmp5;
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    let tmp9;
     const Gesture = LegacyBaseButton.Gesture;
-    const fn = function o() {
-      if (closure_1_0.get()) {
-        if (closure_1_2.get() === showControls.PANEL) {
-          if (controlsSpecs.get().mode === sharedValue.HIDDEN) {
-            const obj2 = connected(mode[4]);
-            obj2.runOnJS(closure_1_4)();
+    const items = [closure_6, connected, mode, VoicePanelModes, controlsSpecs, VoicePanelControlsModes, , , , , ];
+    const onUpdate = Gesture.Hover().onUpdate;
+    Gesture.Hover();
+    items[6] = _mod1705.scheduleOnRN;
+    items[7] = showControls;
+    items[8] = sharedValue;
+    items[9] = 500;
+    items[10] = refreshIdleTimeout;
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    let c5;
+    let c6;
+    let c7;
+    let c8;
+    let c9;
+    [tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12] = items;
+    function useControlsHoverGestureTsx1() {
+      if (_undefined.get()) {
+        if (_undefined2.get() === _undefined3.PANEL) {
+          if (_undefined4.get().mode === _undefined5.HIDDEN) {
+            _undefined6(c6);
           } else {
             const _Date = Date;
             const timestamp = Date.now();
-            const obj = closure_1_5;
-            if (timestamp - closure_1_5.get() >= 500) {
+            const obj = _undefined7;
+            if (timestamp - _undefined7.get() >= c8) {
               const result = obj.set(timestamp);
-              refreshIdleTimeout();
+              _undefined8();
             }
           }
         }
       }
-    };
-    const HoverResult = Gesture.Hover();
-    let obj = { connected, mode, VoicePanelModes, controlsSpecs, VoicePanelControlsModes, runOnJS: ReanimatedRexport.runOnJS, showControls, lastIdleRefreshMillis: sharedValue, IDLE_REFRESH_DEBOUNCE_MILLIS: 500, refreshIdleTimeout };
-    fn.__closure = obj;
-    fn.__workletHash = 15224942407492;
-    fn.__initData = __initData;
-    return HoverResult.onUpdate(fn);
+    }
+    const items1 = [tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12];
+    useControlsHoverGestureTsx1.__closure = items1;
+    useControlsHoverGestureTsx1.__workletHash = 12491338829340;
+    useControlsHoverGestureTsx1.__initData = tmp2;
+    return onUpdate(useControlsHoverGestureTsx1);
   }, items);
 };

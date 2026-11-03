@@ -1,21 +1,21 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14490
+// Function ID: 14491
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4944, 4885, 21, 5014, 5586, 504, 1497, 6998, 1113, 7485, 6446, 7292, 6957, 1409, 5624, 7081, 5634, 7107, 2]
+// Dependencies: [5, 32, 19, 17, 5071, 5012, 21, 5141, 5709, 504, 1499, 7124, 1113, 7609, 6566, 7412, 7083, 1411, 5747, 7207, 5754, 7233, 2]
 // Exports: default
 
-// Module 14359 (ChannelPrompt)
+// Module 14490 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import NavigatorConstants from "NavigatorConstants" /* 5709 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildChannelStore from "GuildChannelStore" /* 5071 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;
@@ -202,7 +202,7 @@ export default function ChannelPrompt(guildId) {
     items3 = [tmp15(tmp19, obj6), , , , , , ];
     const obj9 = { style: tmp.guildName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
     items3[1] = closure_10(guildId(tmp3[18]).Text, obj9);
-    const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guildId(tmp3[12]).t["8VRa7d"]) };
+    const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(guildId(tmp3[12]).t["8VRa7d"]) };
     const Text = tmp2(tmp3[18]).Text;
     intl = tmp2(tmp3[12]).intl;
     items3[2] = closure_10(Text, obj10);

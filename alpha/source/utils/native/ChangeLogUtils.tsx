@@ -1,20 +1,18 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8693
+// Function ID: 8694
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5014, 575, 6778, 6031, 5624, 8570, 7149, 8571, 8572, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6898, 6151, 5747, 8694, 8695, 8696, 2]
 
-// Module 8569 (utils/ChangeLogUtils)
+// Module 8693 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8571 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8572 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8696 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import CustomMarkup from "CustomMarkup" /* 6031 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import CustomMarkup from "CustomMarkup" /* 6151 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,6 +20,8 @@ let closure_4, item, length;
 
 let obj2;
 let obj3;
+let tmp2;
+const MarkupRulesUtils = tmp2(8695);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5624).Text;
+    Paragraph = output(5747).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8570);
+  const obj = output(8694);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8570);
+    const tmp5Result = tmp5(8694);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -128,32 +128,24 @@ function ChangeLogParagraph(state) {
   }
   tmp7 = <Paragraph key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
 }
-function ChangeLogStrong(arg0) {
+function ChangeLogStrong(state) {
   let node;
   let output;
-  let reactResult;
-  let state;
-  let tmpResult;
-  ({ node, output, state } = arg0);
-  const obj = ManaTypeConsolidationExperiment;
-  if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
-    let str;
-    const Text = tmp(5624).Text;
-    const tmp5 = jsx;
-    if (state != null) {
-      str = state.textColor;
-    }
-    if (str == null) {
-      str = "text-default";
-    }
-    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmpResult.smartOutput(node, output, state) };
-    tmpResult = MarkupRulesUtils;
-    reactResult = tmp5(Text, obj2);
-  } else {
-    const strong = rules.strong;
-    reactResult = strong.react(node, output, state);
+  let tmp2Result;
+  state = state.state;
+  ({ node, output } = state);
+  let str;
+  const Text = Text_Text.Text;
+  const tmp = jsx;
+  if (state != null) {
+    str = state.textColor;
   }
-  return reactResult;
+  if (str == null) {
+    str = "text-default";
+  }
+  const obj = { variant: "body-sm/semibold", color: str, children: tmp2Result.smartOutput(node, output, state) };
+  tmp2Result = MarkupRulesUtils;
+  return tmp(Text, obj);
 }
 function ChangeLogBlockQuote(state) {
   let content;
@@ -179,7 +171,6 @@ createStyles = createStyles.createStyles;
 obj3 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: LegacyTokens.DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
 ({ fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED });
 let closure_6 = createStyles(obj);
-const rules = CustomMarkup.createRules({});
 const obj5 = {
   link(dependencyMap) {
     return {
@@ -238,6 +229,7 @@ const obj5 = {
     };
   }
 };
+const rules = CustomMarkup.createRules({});
 let result = size.fileFinishedImporting("utils/native/ChangeLogUtils.tsx");
 
 export const baseRules = rules;

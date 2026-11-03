@@ -1,19 +1,19 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16475
+// Function ID: 16476
 // Name: providers
-// Dependencies: [5, 6572, 6450, 1072, 2018, 1083, 7347, 9333, 11810, 11813, 6574, 572, 1108, 9720, 2]
+// Dependencies: [5, 6692, 6570, 1072, 2147, 1083, 7467, 9461, 11947, 11950, 6694, 572, 1108, 9852, 2]
 
-// Module 16332 (providers)
+// Module 16475 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
-import RPCErrorDefault from "RPCError" /* 9333 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11810 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7467 */;
+import RPCErrorDefault from "RPCError" /* 9461 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11947 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
-import Constants_mod from "Constants" /* 6450 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6692 */;
+import Constants_mod from "Constants" /* 6570 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import Constants_mod3 from "Constants" /* 2018 */;
+import Constants_mod3 from "Constants" /* 2147 */;
 import Constants_mod4 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

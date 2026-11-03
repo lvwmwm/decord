@@ -1,35 +1,35 @@
-// Module ID: 11035
-// Function ID: 11036
+// Module ID: 11168
+// Function ID: 11169
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 10204, 11023, 1072, 21, 5095, 5014, 11036, 11082, 11085, 11086, 11129, 11130, 11149, 11188, 11191, 11022, 504, 5593, 5254, 1252, 5303, 5637, 1187, 7292, 11066, 2]
+// Dependencies: [32, 19, 17, 10334, 11156, 1072, 21, 1652, 5141, 11169, 11219, 11222, 11223, 11266, 11267, 11286, 11325, 11328, 11155, 504, 5716, 5377, 1705, 1252, 5426, 5757, 1187, 7412, 11203, 2]
 // Exports: default
 
-// Module 11035 (InAppNotificationContainer)
+// Module 11168 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import spring from "spring" /* 5637 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11022 */;
-import MessageNotificationDefault from "MessageNotification" /* 11036 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11082 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11085 */;
-import BugReporterNotification from "BugReporterNotification" /* 11086 */;
-import AlertNotificationDefault from "AlertNotification" /* 11129 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 11130 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 11149 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11188 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11191 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11155 */;
+import MessageNotificationDefault from "MessageNotification" /* 11169 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11219 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11222 */;
+import BugReporterNotification from "BugReporterNotification" /* 11223 */;
+import AlertNotificationDefault from "AlertNotification" /* 11266 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 11267 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 11286 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11325 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11328 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10204 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11023 */;
+import NativeMenuStore from "NativeMenuStore" /* 10334 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11156 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let first, set, set2;
+let set, set2, tmp2;
 
 let Easing;
 let NOTIFICATION_CONTAINER_MARGIN;
@@ -74,25 +74,58 @@ const StyleSheet = react_native.StyleSheet;
 ({ DEFAULT_ANIMATION_TIMING: metroImportDefault, extrapolateConfig: metroImportAll, MIN_SWIPE_DISTANCE: c9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: unpackModuleId, NOTIFICATION_CONTAINER_MARGIN } = InAppNotificationConstants);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = Constants);
 const jsx = Fragment.jsx;
-let obj = { duration: 200, easing: Easing.in(ReanimatedRexport.Easing.ease) };
-Easing = ReanimatedRexport.Easing;
+let obj = { duration: 200, easing: Easing.in(_mod1652.Easing.ease) };
+Easing = _mod1652.Easing;
 let obj2 = { safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } };
 let closure_16 = createStyles.createStyles(obj2);
-let closure_18 = { code: "function InAppNotificationContainerTsx1(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };
-const __initData = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setPanning}=this.__closure;runOnJS(setPanning)(false);}" };
-const __initData2 = { code: "function InAppNotificationContainerTsx3(event){const{velocityY,MIN_SWIPE_VELOCITY,MIN_SWIPE_DISTANCE,notificationGestureY,withTiming,PAN_INPUT_RANGE,DEFAULT_ANIMATION_TIMING,runOnJS,handleDismissNotification,setPanning,withSpring}=this.__closure;const shouldDismiss=Math.abs(velocityY.get())>=MIN_SWIPE_VELOCITY||Math.abs(event.translationY)>=MIN_SWIPE_DISTANCE;if(shouldDismiss&&event.translationY<=0){notificationGestureY.set(withTiming(event.translationY>0?PAN_INPUT_RANGE[2]:PAN_INPUT_RANGE[0],DEFAULT_ANIMATION_TIMING,'animate-always',function(finished){if(finished){runOnJS(handleDismissNotification)('swipe');}}));}else{runOnJS(setPanning)(false);notificationGestureY.set(withSpring(0,{damping:10,mass:1,stiffness:100,velocity:velocityY.get()},'animate-always'));}}" };
-const __initData3 = { code: "function InAppNotificationContainerTsx4(event){const{startY,notificationGestureY,velocityY}=this.__closure;const rawY=startY.get()+event.translationY;const newY=Math.min(rawY,startY.get());notificationGestureY.set(newY);velocityY.set(event.velocityY);}" };
-const __initData4 = { code: "function InAppNotificationContainerTsx5(){const{startY,notificationGestureY,velocityY,runOnJS,setPanning}=this.__closure;startY.set(notificationGestureY.get());velocityY.set(0);runOnJS(setPanning)(true);}" };
-let closure_23 = { code: "function InAppNotificationContainerTsx6(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('swipe');}}" };
-const __initData5 = { code: "function InAppNotificationContainerTsx7(){const{notificationGestureY,scale,initialized,interpolate,PAN_INPUT_RANGE,extrapolateConfig}=this.__closure;const gestureY=notificationGestureY.get();const scaleValue=scale.get();const scaleTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0.3,1,0.3],extrapolateConfig):scaleValue;const opacityTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig):scaleValue;return{transform:[{translateY:gestureY},{scale:scaleTransform}],opacity:opacityTransform};}" };
+let closure_18 = { code: "(function InAppNotificationContainerTsx1(){let[scheduleOnRN,setInitialized]=this.__closure;return scheduleOnRN(setInitialized,true);})" };
+let closure_19 = { code: "(function InAppNotificationContainerTsx2(){let[startY,notificationGestureY,velocityY,scheduleOnRN,setPanning]=this.__closure;startY.set(notificationGestureY.get());velocityY.set(0);scheduleOnRN(setPanning,true);})" };
+let closure_20 = { code: "(function InAppNotificationContainerTsx3(event){let[startY,notificationGestureY,velocityY]=this.__closure;const rawY=startY.get()+event.translationY;const newY=Math.min(rawY,startY.get());notificationGestureY.set(newY);velocityY.set(event.velocityY);})" };
+let closure_21 = { code: "(function InAppNotificationContainerTsx4(finished){let[scheduleOnRN,handleDismissNotification]=this.__closure;if(finished){scheduleOnRN(handleDismissNotification,'swipe');}})" };
+let closure_22 = { code: "(function InAppNotificationContainerTsx5(event){let[velocityY,MIN_SWIPE_VELOCITY,MIN_SWIPE_DISTANCE,notificationGestureY,withTiming,PAN_INPUT_RANGE,DEFAULT_ANIMATION_TIMING,_worklet_14549346579562_init_data,scheduleOnRN,handleDismissNotification,setPanning,withSpring]=this.__closure;const shouldDismiss=Math.abs(velocityY.get())>=MIN_SWIPE_VELOCITY||Math.abs(event.translationY)>=MIN_SWIPE_DISTANCE;if(shouldDismiss&&event.translationY<=0){notificationGestureY.set(withTiming(event.translationY>0?PAN_INPUT_RANGE[2]:PAN_INPUT_RANGE[0],DEFAULT_ANIMATION_TIMING,'animate-always',function InAppNotificationContainerTsx4Factory([_worklet_14549346579562_init_data,scheduleOnRN,handleDismissNotification]){const InAppNotificationContainerTsx4=function(finished){if(finished){scheduleOnRN(handleDismissNotification,'swipe');}};InAppNotificationContainerTsx4.__closure=[scheduleOnRN,handleDismissNotification];InAppNotificationContainerTsx4.__workletHash=14549346579562;InAppNotificationContainerTsx4.__initData=_worklet_14549346579562_init_data;return InAppNotificationContainerTsx4;}([_worklet_14549346579562_init_data,scheduleOnRN,handleDismissNotification])));}else{scheduleOnRN(setPanning,false);notificationGestureY.set(withSpring(0,{damping:10,mass:1,stiffness:100,velocity:velocityY.get()},'animate-always'));}})" };
+let closure_23 = { code: "(function InAppNotificationContainerTsx6(){let[scheduleOnRN,setPanning]=this.__closure;scheduleOnRN(setPanning,false);})" };
+let closure_24 = { code: "(function InAppNotificationContainerTsx7(){let[notificationGestureY,scale,initialized,interpolate,PAN_INPUT_RANGE,extrapolateConfig]=this.__closure;const gestureY=notificationGestureY.get();const scaleValue=scale.get();const scaleTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0.3,1,0.3],extrapolateConfig):scaleValue;const opacityTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig):scaleValue;return{transform:[{translateY:gestureY},{scale:scaleTransform}],opacity:opacityTransform};})" };
 let result = size.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContainer.tsx");
 
 export default function InAppNotificationContainer(notification) {
-  let setInitialized;
   let str;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp40;
+  let tmp41;
+  let tmp42;
+  let tmp43;
+  let tmp44;
+  let tmp46;
+  let tmp47;
+  let tmp48;
+  let tmp51;
+  let tmp52;
+  let tmp53;
+  let tmp54;
+  let tmp55;
+  let tmp56;
+  let tmp57;
   notification = notification.notification;
   let channelType;
   let tmp = closure_16();
+  obj = channelType;
   let items = [notification];
   const memo = channelType.useMemo(() => {
     obj = InAppNotificationUtils;
@@ -102,25 +135,25 @@ export default function InAppNotificationContainer(notification) {
   const channelId = memo.channelId;
   const messageId = memo.messageId;
   channelType = memo.channelType;
-  const tmp4 = channelId;
-  obj = notification(channelId[7]);
-  const sharedValue = obj.useSharedValue(0);
+  let tmp3 = notification;
+  let tmp4 = channelId;
   let obj2 = notification(channelId[7]);
-  const sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = notification(channelId[7]);
-  const sharedValue2 = obj3.useSharedValue(0);
-  let obj4 = notification(channelId[7]);
-  const sharedValue3 = obj4.useSharedValue(0);
+  const sharedValue = obj2.useSharedValue(0);
+  const obj3 = notification(channelId[7]);
+  const sharedValue1 = obj3.useSharedValue(0);
+  const obj4 = notification(channelId[7]);
+  const sharedValue2 = obj4.useSharedValue(0);
+  const obj5 = notification(channelId[7]);
+  const sharedValue3 = obj5.useSharedValue(0);
   const tmp9 = messageId(channelType.useState(false), 2);
   const initialized = tmp9[0];
-  MIN_SWIPE_VELOCITY = tmp9[1];
+  let closure_9 = tmp9[1];
   const tmp11 = messageId(channelType.useState(false), 2);
   const first1 = tmp11[0];
-  let closure_12 = tmp13;
-  let obj5 = notification(channelId[19]);
-  const items1 = [sharedValue1];
+  let items1 = [sharedValue1];
   const items2 = [notification, guildId, channelId, messageId];
-  const stateFromStores = obj5.useStateFromStores(items1, () => sharedValue1.isOpen());
+  const obj6 = notification(channelId[19]);
+  const stateFromStores = obj6.useStateFromStores(items1, () => sharedValue1.isOpen());
   const handleDismissNotification = channelType.useCallback((dismissReason) => {
     if (null != dismissReason) {
       const obj2 = { type: notification.type, guildId, channelId, dismissReason, inAppNotificationId: notification.inAppNotificationId, messageId };
@@ -132,18 +165,31 @@ export default function InAppNotificationContainer(notification) {
       onDismiss();
     }
   }, items2);
-  guildId(channelId[20])(() => {
+  const tmp16 = guildId;
+  const tmp17 = guildId(channelId[20])(() => {
+    let tmp4;
+    let tmp5;
+    let tmp6;
+    const items = [closure_18, , ];
     set = sharedValue3.set;
-    obj = timing;
-    const fn = function t() {
-      obj = notification(channelId[7]);
-      return obj.runOnJS(setInitialized)(true);
-    };
-    fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setInitialized };
-    fn.__workletHash = 16158991995287;
-    fn.__initData = __initData;
-    ({ runOnJS: ReanimatedRexport.runOnJS, setInitialized });
-    const result = set(obj.withTiming(1, obj, "respect-motion-settings", fn));
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
+    items[1] = _mod1705.scheduleOnRN;
+    items[2] = closure_9;
+    let c0;
+    let c1;
+    [tmp4, tmp5, tmp6] = items;
+    const tmp3 = obj;
+    class InAppNotificationContainerTsx1 {
+      constructor() {
+        return _undefined(c1, true);
+      }
+    }
+    const items1 = [tmp5, tmp6];
+    InAppNotificationContainerTsx1.__closure = items1;
+    InAppNotificationContainerTsx1.__workletHash = 4111779721667;
+    InAppNotificationContainerTsx1.__initData = tmp4;
+    const result = set(withTiming(1, tmp3, "respect-motion-settings", InAppNotificationContainerTsx1));
     return () => {
       obj = notification(channelId[7]);
       return obj.cancelAnimation(sharedValue3);
@@ -158,122 +204,186 @@ export default function InAppNotificationContainer(notification) {
       obj.track(map1.IN_APP_NOTIFICATION_SHOWN, obj2);
     }
   }, items3);
-  const Gesture = notification(channelId[23]).Gesture;
-  const PanResult = Gesture.Pan();
-  const tmp16 = guildId;
-  class X {
+  const Gesture = notification(channelId[24]).Gesture;
+  const items4 = [closure_19, sharedValue2, sharedValue, sharedValue1, , ];
+  const onBegin = Gesture.Pan().onBegin;
+  Gesture.Pan();
+  items4[4] = notification(channelId[22]).scheduleOnRN;
+  items4[5] = tmp11[1];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25] = items4;
+  class InAppNotificationContainerTsx2 {
     constructor() {
-      const result = sharedValue2.set(sharedValue.get());
-      const result1 = sharedValue1.set(0);
-      obj = ReanimatedRexport;
-      obj.runOnJS(closure_12)(true);
+      const result = _undefined.set(_undefined2.get());
+      const result1 = _undefined3.set(0);
+      _undefined4(c4, true);
     }
   }
-  X.__closure = { startY: sharedValue2, notificationGestureY: sharedValue, velocityY: sharedValue1, runOnJS: notification(channelId[7]).runOnJS, setPanning: tmp11[1] };
-  X.__workletHash = 16480026707740;
-  X.__initData = __initData4;
-  ({ startY: sharedValue2, notificationGestureY: sharedValue, velocityY: sharedValue1, runOnJS: notification(channelId[7]).runOnJS, setPanning: tmp11[1] });
-  const onBeginResult = PanResult.onBegin(X);
-  class K {
+  const items5 = [tmp21, tmp22, tmp23, tmp24, tmp25];
+  InAppNotificationContainerTsx2.__closure = items5;
+  InAppNotificationContainerTsx2.__workletHash = 9958676486255;
+  InAppNotificationContainerTsx2.__initData = tmp20;
+  const items6 = [closure_20, sharedValue2, sharedValue, sharedValue1];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp26, tmp27, tmp28, tmp29] = items6;
+  const onBeginResult = onBegin(InAppNotificationContainerTsx2);
+  class InAppNotificationContainerTsx3 {
     constructor(translationY) {
-      const sum = sharedValue2.get() + translationY.translationY;
-      const result = sharedValue.set(Math.min(sum, sharedValue2.get()));
-      const result1 = sharedValue1.set(translationY.velocityY);
+      const sum = _undefined.get() + translationY.translationY;
+      const result = _undefined2.set(Math.min(sum, _undefined.get()));
+      const result1 = _undefined3.set(translationY.velocityY);
     }
   }
-  K.__closure = { startY: sharedValue2, notificationGestureY: sharedValue, velocityY: sharedValue1 };
-  K.__workletHash = 4467653619554;
-  K.__initData = __initData3;
-  let fn = function q(translationY) {
-    obj = sharedValue1;
-    if (Math.abs(sharedValue1.get()) >= c10) {
-      if (translationY.translationY <= 0) {
-        set2 = sharedValue.set;
-        const withTiming = timing.withTiming;
-        const tmp5 = require;
-        if (translationY.translationY > 0) {
-          first = unpackModuleId[2];
-        } else {
-          first = unpackModuleId[0];
-        }
-        const fn = function n(arg0) {
-          const tmp = arg0;
-          if (tmp) {
-            obj = notification(channelId[7]);
-            obj.runOnJS(handleDismissNotification)("swipe");
+  const items7 = [tmp27, tmp28, tmp29];
+  InAppNotificationContainerTsx3.__closure = items7;
+  InAppNotificationContainerTsx3.__workletHash = 8301292753596;
+  InAppNotificationContainerTsx3.__initData = tmp26;
+  const items8 = [closure_22, sharedValue1, first1, closure_9, sharedValue, , , , , , , , ];
+  const onEnd = onBeginResult.onUpdate(InAppNotificationContainerTsx3).onEnd;
+  onBeginResult.onUpdate(InAppNotificationContainerTsx3);
+  items8[5] = tmp3(tmp4[21]).withTiming;
+  items8[6] = handleDismissNotification;
+  items8[7] = sharedValue3;
+  items8[8] = closure_21;
+  items8[9] = tmp3(tmp4[22]).scheduleOnRN;
+  items8[10] = handleDismissNotification;
+  items8[11] = tmp11[1];
+  items8[12] = tmp3(tmp4[25]).withSpring;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
+  let c10;
+  let c11;
+  [tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44] = items8;
+  const tmp31 = handleDismissNotification;
+  class InAppNotificationContainerTsx5 {
+    constructor(translationY) {
+      let tmp15;
+      let tmp16;
+      let tmp17;
+      obj = _undefined;
+      if (Math.abs(_undefined.get()) >= c1) {
+        if (translationY.translationY <= 0) {
+          let first;
+          set2 = _undefined2.set;
+          const tmp6 = c4;
+          if (translationY.translationY > 0) {
+            first = _undefined3[2];
+          } else {
+            first = _undefined3[0];
           }
-        };
-        fn.__closure = { runOnJS: tmp5(5095).runOnJS, handleDismissNotification };
-        fn.__workletHash = 3243235500892;
-        fn.__initData = __initData2;
-        const obj4 = { runOnJS: tmp5(5095).runOnJS, handleDismissNotification };
-        set2(withTiming(first, metroImportDefault, "animate-always", fn));
+          const items = [c7, _undefined4, c9];
+          [tmp15, tmp16, tmp17] = items;
+          class InAppNotificationContainerTsx4 {
+            constructor(arg0) {
+              tmp = translationY;
+              if (tmp) {
+                tmp2 = closure_0;
+                tmp3 = closure_1;
+                str = "swipe";
+                tmp4 = closure_0(closure_1, "swipe");
+              }
+              return;
+            }
+          }
+          const items1 = [tmp16, tmp17];
+          InAppNotificationContainerTsx4.__closure = items1;
+          InAppNotificationContainerTsx4.__workletHash = 14549346579562;
+          InAppNotificationContainerTsx4.__initData = tmp15;
+          set2(tmp6(first, c6, "animate-always", InAppNotificationContainerTsx4));
+        }
+      } else {
+        const _Math = Math;
+        let tmp = c2;
       }
-    } else {
-      const _Math = Math;
-      let tmp = React4;
-    }
-    const obj2 = ReanimatedRexport;
-    obj2.runOnJS(closure_12)(false);
-    set = sharedValue.set;
-    const obj3 = spring;
-    const obj5 = { damping: 10, mass: 1, stiffness: 100, velocity: obj.get() };
-    const result = set(obj3.withSpring(0, obj5, "animate-always"));
-  };
-  const onUpdateResult = onBeginResult.onUpdate(K);
-  fn.__closure = { velocityY: sharedValue1, MIN_SWIPE_VELOCITY, MIN_SWIPE_DISTANCE: initialized, notificationGestureY: sharedValue, withTiming: notification(channelId[21]).withTiming, PAN_INPUT_RANGE: first1, DEFAULT_ANIMATION_TIMING: sharedValue2, runOnJS: notification(channelId[7]).runOnJS, handleDismissNotification, setPanning: tmp11[1], withSpring: notification(channelId[24]).withSpring };
-  fn.__workletHash = 12181654548715;
-  fn.__initData = __initData2;
-  ({ velocityY: sharedValue1, MIN_SWIPE_VELOCITY, MIN_SWIPE_DISTANCE: initialized, notificationGestureY: sharedValue, withTiming: notification(channelId[21]).withTiming, PAN_INPUT_RANGE: first1, DEFAULT_ANIMATION_TIMING: sharedValue2, runOnJS: notification(channelId[7]).runOnJS, handleDismissNotification, setPanning: tmp11[1], withSpring: notification(channelId[24]).withSpring });
-  const onEndResult = onUpdateResult.onEnd(fn);
-  class Q {
-    constructor() {
-      obj = ReanimatedRexport;
-      obj.runOnJS(closure_12)(false);
+      _undefined4(c10, false);
+      set = _undefined2.set;
+      tmp3[3] = obj.get();
+      const result = set(_undefined5(0, tmp3, "animate-always"));
     }
   }
-  Q.__closure = { runOnJS: notification(channelId[7]).runOnJS, setPanning: tmp11[1] };
-  Q.__workletHash = 7413448149557;
-  Q.__initData = __initData;
-  ({ runOnJS: notification(channelId[7]).runOnJS, setPanning: tmp11[1] });
-  const onFinalizeResult = onEndResult.onFinalize(Q);
-  const obj13 = notification(channelId[7]);
-  class Z {
+  const items9 = [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44];
+  InAppNotificationContainerTsx5.__closure = items9;
+  InAppNotificationContainerTsx5.__workletHash = 3427472707207;
+  InAppNotificationContainerTsx5.__initData = tmp32;
+  const items10 = [closure_23, , ];
+  const onFinalize = onEnd(InAppNotificationContainerTsx5).onFinalize;
+  onEnd(InAppNotificationContainerTsx5);
+  items10[1] = tmp3(tmp4[22]).scheduleOnRN;
+  items10[2] = tmp11[1];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp46, tmp47, tmp48] = items10;
+  class InAppNotificationContainerTsx6 {
     constructor() {
-      const value = sharedValue.get();
-      let value2 = sharedValue3.get();
+      _undefined(c1, false);
+    }
+  }
+  const items11 = [tmp47, tmp48];
+  InAppNotificationContainerTsx6.__closure = items11;
+  InAppNotificationContainerTsx6.__workletHash = 1825489770853;
+  InAppNotificationContainerTsx6.__initData = tmp46;
+  const items12 = [closure_24, sharedValue, sharedValue3, initialized, , , ];
+  const onFinalizeResult = onFinalize(InAppNotificationContainerTsx6);
+  const useAnimatedStyle = tmp3(tmp4[7]).useAnimatedStyle;
+  tmp3(tmp4[7]);
+  items12[4] = tmp3(tmp4[7]).interpolate;
+  items12[5] = tmp31;
+  items12[6] = initialized;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  [tmp51, tmp52, tmp53, tmp54, tmp55, tmp56, tmp57] = items12;
+  class InAppNotificationContainerTsx7 {
+    constructor() {
+      const value = _undefined.get();
+      let value2 = _undefined2.get();
       const items = [{ translateY: value }, ];
-      let interpolateResult = value2;
-      if (first) {
-        obj = ReanimatedRexport;
-        interpolateResult = obj.interpolate(value, unpackModuleId, [0.3, 1, 0.3], metroImportAll);
+      let tmp4 = value2;
+      if (c2) {
+        tmp4 = _undefined3(value, c4, [0.3, 1, 0.3], c5);
       }
-      const obj2 = { transform: items, opacity: value2 };
-      items[1] = { scale: interpolateResult };
-      if (first) {
-        const obj3 = ReanimatedRexport;
-        value2 = obj3.interpolate(value, unpackModuleId, [0, 1, 0], metroImportAll);
+      obj = { transform: items, opacity: value2 };
+      items[1] = { scale: tmp4 };
+      if (c2) {
+        value2 = _undefined3(value, c4, [0, 1, 0], c5);
       }
-      return obj2;
+      return obj;
     }
   }
-  Z.__closure = { notificationGestureY: sharedValue, scale: sharedValue3, initialized, interpolate: notification(channelId[7]).interpolate, PAN_INPUT_RANGE: first1, extrapolateConfig: sharedValue3 };
-  Z.__workletHash = 1564072865992;
-  Z.__initData = __initData5;
-  const items4 = [handleDismissNotification, initialized, sharedValue, sharedValue1, first1];
-  ({ notificationGestureY: sharedValue, scale: sharedValue3, initialized, interpolate: notification(channelId[7]).interpolate, PAN_INPUT_RANGE: first1, extrapolateConfig: sharedValue3 });
-  const animatedStyle = obj13.useAnimatedStyle(Z);
-  const memo1 = channelType.useMemo(() => ({ notificationGestureY: sharedValue, velocityY: sharedValue1, initialized, handleDismissNotification, panning: first1 }), items4);
-  const OverlayView = notification(channelId[25]).OverlayView;
+  const items13 = [tmp52, tmp53, tmp54, tmp55, tmp56, tmp57];
+  InAppNotificationContainerTsx7.__closure = items13;
+  InAppNotificationContainerTsx7.__workletHash = 11938375459665;
+  InAppNotificationContainerTsx7.__initData = tmp51;
+  const items14 = [handleDismissNotification, initialized, sharedValue, sharedValue1, first1];
+  const animatedStyle = useAnimatedStyle(InAppNotificationContainerTsx7);
+  const memo1 = obj.useMemo(() => ({ notificationGestureY: sharedValue, velocityY: sharedValue1, initialized, handleDismissNotification, panning: first1 }), items14);
+  const OverlayView = tmp3(tmp4[26]).OverlayView;
   const rect = { top: true, bottom: true, left: true, right: true, style: tmp.safeAreaContainer, pointerEvents: "box-none", importantForAccessibility: str, children: null };
   str = undefined;
-  const SafeAreaPaddingView = notification(channelId[26]).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp3(tmp4[27]).SafeAreaPaddingView;
   if (stateFromStores) {
     str = "no-hide-descendants";
   }
-  const Provider = tmp3(tmp4[27]).InAppNotificationContext.Provider;
-  const GestureDetector = tmp3(tmp4[23]).GestureDetector;
-  const items5 = [tmp.animatedContainer, animatedStyle];
+  const Provider = tmp3(tmp4[28]).InAppNotificationContext.Provider;
+  const GestureDetector = tmp3(tmp4[24]).GestureDetector;
+  const items15 = [tmp.animatedContainer, animatedStyle];
   const View = tmp16(tmp4[7]).View;
   return <OverlayView style={sharedValue.absoluteFill} pointerEvents="box-none">{null}</OverlayView>;
 };

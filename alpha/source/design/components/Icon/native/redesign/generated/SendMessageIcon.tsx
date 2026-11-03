@@ -1,14 +1,14 @@
-// Module ID: 5729
-// Function ID: 5730
+// Module ID: 5849
+// Function ID: 5850
 // Name: SendMessageIcon
-// Dependencies: [19, 21, 575, 5716, 5730, 2]
+// Dependencies: [19, 21, 575, 5836, 5850, 2]
 // Exports: SendMessageIcon
 
-// Module 5729 (SendMessageIcon)
+// Module 5849 (SendMessageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 5730 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 5850 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

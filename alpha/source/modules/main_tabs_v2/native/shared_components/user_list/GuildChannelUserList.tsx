@@ -1,23 +1,23 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11758
+// Function ID: 11759
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7446, 4863, 4926, 4885, 4917, 1383, 1072, 21, 9135, 6901, 550, 7451, 7326, 504, 7217, 4951, 11622, 9031, 6041, 5068, 1113, 8750, 575, 7218, 10733, 2]
+// Dependencies: [32, 19, 17, 7570, 4990, 5053, 5012, 5044, 1385, 1072, 21, 9263, 7021, 550, 7575, 7446, 504, 7338, 5078, 11759, 9159, 6161, 5195, 1113, 8874, 575, 7339, 10863, 2]
 
-// Module 11621 (GuildChannelUserList)
+// Module 11758 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7446 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7570 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

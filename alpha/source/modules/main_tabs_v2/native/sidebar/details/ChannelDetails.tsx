@@ -1,25 +1,22 @@
-// Module ID: 18683
-// Function ID: 18684
+// Module ID: 18841
+// Function ID: 18842
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13900, 4863, 9825, 10137, 21, 575, 5014, 504, 13847, 18684, 7326, 7351, 1497, 13998, 5274, 7112, 1625, 1375, 4971, 7654, 13911, 13886, 5095, 5254, 5257, 5637, 13920, 5207, 5303, 18685, 18695, 18811, 18813, 18814, 18815, 18816, 5989, 2]
+// Dependencies: [19, 17, 14031, 4990, 9956, 10267, 21, 575, 5141, 504, 13978, 18842, 7446, 7471, 1499, 14129, 5397, 7238, 1627, 1377, 5098, 7778, 14042, 14017, 1652, 5377, 5380, 5757, 14051, 5330, 5426, 18843, 18853, 18969, 18971, 18972, 18973, 18974, 6109, 2]
 
-// Module 18683 (ChannelDetails)
+// Module 18841 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import spring from "spring" /* 5637 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13920 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 14051 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9825 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10137 */;
+import SearchQueryStore from "SearchQueryStore" /* 14031 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9956 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10267 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_DETAILS_TOP_MARGIN;
@@ -37,7 +34,7 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(4971);
+const DeviceUtils = tmp(5098);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ deleteChannelDetailsSearchState: metroImportDefault, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = ChannelDetailsStore);
 ({ SPRING_CHANNEL_HEADER: c10, CHANNEL_DETAILS_TOP_MARGIN } = ChannelDetailsConstants);
@@ -53,7 +50,7 @@ obj4 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space
 obj5 = { marginTop: CHANNEL_DETAILS_TOP_MARGIN, marginBottom: nativeDefault.space.PX_16 };
 obj6 = { paddingBottom: nativeDefault.space.PX_12, zIndex: 10 };
 let closure_14 = createStyles(obj);
-const __initData = { code: "function ChannelDetailsTsx1(){const{headerHeight,isSearchActive,withTiming,timingFast,withSpring,SPRING_CHANNEL_HEADER}=this.__closure;const height=headerHeight.get();return{position:'relative',pointerEvents:isSearchActive?'none':'auto',opacity:withTiming(isSearchActive?0:1,timingFast,'animate-always'),height:height!=null&&height>=0?withSpring(isSearchActive?0:height,{...SPRING_CHANNEL_HEADER,clamp:{min:0,max:height}}):undefined};}" };
+let closure_15 = { code: "(function ChannelDetailsTsx1(){let[headerHeight,isSearchActive,withTiming,timingFast,withSpring,SPRING_CHANNEL_HEADER]=this.__closure;const height=headerHeight.get();return{position:'relative',pointerEvents:isSearchActive?'none':'auto',opacity:withTiming(isSearchActive?0:1,timingFast,'animate-always'),height:height!=null&&height>=0?withSpring(isSearchActive?0:height,{...SPRING_CHANNEL_HEADER,clamp:{min:0,max:height}}):undefined};})" };
 const memoResult = react.memo(function ChannelDetails(channelId) {
   let GestureDetector;
   let SearchSuggestionsProvider;
@@ -61,8 +58,8 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
   let detectorRef;
   let gesture;
   let isShowing;
-  let items13;
-  let items9;
+  let items11;
+  let items15;
   let obj12;
   let obj18;
   let obj19;
@@ -70,7 +67,14 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
   let obj5;
   let onBackPress;
   let suggestionsContext;
-  let tmp32;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp40;
   channelId = channelId.channelId;
   const isSearchLocked = channelId.isSearchLocked;
   ({ onBackPress, componentWidth, isShowing } = channelId);
@@ -185,57 +189,68 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
       }
     }
   }, items4);
-  const tmp2Result11 = channelId(tmp3[24]);
-  class Q {
+  const items5 = [closure_15, sharedValue, tmp10, , , , ];
+  const useAnimatedStyle = tmp2(tmp3[24]).useAnimatedStyle;
+  channelId(tmp3[24]);
+  items5[3] = channelId(tmp3[25]).withTiming;
+  items5[4] = channelId(tmp3[26]).timingFast;
+  items5[5] = channelId(tmp3[27]).withSpring;
+  items5[6] = context;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29] = items5;
+  class ChannelDetailsTsx1 {
     constructor() {
       let num;
       let range;
-      let withSpringResult;
-      let withTiming;
-      const value = sharedValue.get();
+      let tmp3;
+      let tmp5Result;
+      const value = _undefined.get();
       let str = "auto";
-      if (closure_6) {
+      if (c1) {
         str = "none";
       }
-      const obj = { position: "relative", pointerEvents: str, opacity: withTiming(num, timingPresets.timingFast, "animate-always"), height: withSpringResult };
+      const obj = { position: "relative", pointerEvents: str, opacity: tmp3(num, c3, "animate-always"), height: tmp5Result };
       num = 1;
-      withTiming = timing.withTiming;
-      timing;
-      if (closure_6) {
+      tmp3 = c2;
+      if (c1) {
         num = 0;
       }
-      withSpringResult = undefined;
+      tmp5Result = undefined;
       if (null != value) {
         if (value >= 0) {
           let num3 = 0;
-          const withSpring = spring.withSpring;
-          spring;
-          if (!closure_6) {
+          const tmp5 = c4;
+          if (!c1) {
             num3 = value;
           }
           const obj2 = { clamp: range };
-          const merged = Object.assign(authStore);
+          const merged = Object.assign(c5);
           range = { min: 0, max: value };
-          withSpringResult = withSpring(num3, obj2);
+          tmp5Result = tmp5(num3, obj2);
         }
       }
       return obj;
     }
   }
-  let obj2 = { headerHeight: sharedValue, isSearchActive: tmp10, withTiming: tmp2(tmp3[25]).withTiming, timingFast: tmp2(tmp3[26]).timingFast, withSpring: tmp2(tmp3[27]).withSpring, SPRING_CHANNEL_HEADER: context };
-  Q.__closure = obj2;
-  Q.__workletHash = 8423441529588;
-  Q.__initData = __initData;
-  const items5 = [channelDetailsSearchContext];
-  const animatedStyle = tmp2Result11.useAnimatedStyle(Q);
-  const effect2 = onChannelDeleted.useEffect(() => {
+  const items6 = [tmp24, tmp25, tmp26, tmp27, tmp28, tmp29];
+  ChannelDetailsTsx1.__closure = items6;
+  ChannelDetailsTsx1.__workletHash = 13793252970861;
+  ChannelDetailsTsx1.__initData = tmp23;
+  const items7 = [channelDetailsSearchContext];
+  const animatedStyle = useAnimatedStyle(ChannelDetailsTsx1);
+  const effect2 = obj3.useEffect(() => {
     const obj = SearchActionCreatorsDefault;
     const result = obj.initializeAutocomplete(channelDetailsSearchContext);
     const obj2 = SearchPlatformActionCreatorsDefault;
     const result1 = obj2.initializeSearchQuery(channelDetailsSearchContext);
-  }, items5);
-  const items6 = [channelDetailsSearchContext, isShowing];
-  const effect3 = onChannelDeleted.useEffect(() => {
+  }, items7);
+  const items8 = [channelDetailsSearchContext, isShowing];
+  const effect3 = obj3.useEffect(() => {
     const tmp = isShowing;
     if (tmp) {
       const obj = SearchActionCreatorsDefault;
@@ -243,17 +258,17 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
       const obj2 = SearchPlatformActionCreatorsDefault;
       obj2.updateSearchQuery(channelDetailsSearchContext, (reset) => reset.reset());
     }
-  }, items6);
-  const items7 = [channelId, channelDetailsSearchContext];
-  const effect4 = onChannelDeleted.useEffect(() => () => {
+  }, items8);
+  const items9 = [channelId, channelDetailsSearchContext];
+  const effect4 = obj3.useEffect(() => () => {
     const obj = isSearchLocked(isShowing[28]);
     const result = obj.clearAllSearchMesssages();
     closure_7(channelId);
     const obj2 = isSearchLocked(isShowing[22]);
     obj2.deleteSearchQuery(channelDetailsSearchContext);
-  }, items7);
-  const items8 = [channelId, nativeStackNavigation];
-  const effect5 = onChannelDeleted.useEffect(() => {
+  }, items9);
+  const items10 = [channelId, nativeStackNavigation];
+  const effect5 = obj3.useEffect(() => {
     let obj = nativeStackNavigation;
     if ("channel-details-navigator" === nativeStackNavigation.getId()) {
       return obj.addListener("transitionEnd", (data) => {
@@ -266,22 +281,22 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
         }
       });
     }
-  }, items8);
-  let tmp28Result2 = null;
+  }, items10);
+  let tmp36Result2 = null;
   if (null != stateFromStores) {
-    const obj3 = { value: analyticsLocations, children: top(SearchSuggestionsProvider, obj4) };
+    let obj2 = { value: analyticsLocations, children: top(SearchSuggestionsProvider, obj4) };
     const AnalyticsLocationProvider = tmp2(tmp3[12]).AnalyticsLocationProvider;
     obj4 = { value: suggestionsContext, children: top(GestureDetector, obj5) };
     SearchSuggestionsProvider = tmp2(tmp3[11]).SearchSuggestionsProvider;
-    const obj6 = { ref: detectorRef, style: items9, accessibilityViewIsModal: true, onAccessibilityEscape: onBackPress, children: null };
-    items9 = [tmp.detailsContainer, memo];
+    const obj6 = { ref: detectorRef, style: items11, accessibilityViewIsModal: true, onAccessibilityEscape: onBackPress, children: null };
+    items11 = [tmp.detailsContainer, memo];
     const obj7 = { style: null, children: null };
-    obj5 = { gesture, children: sharedValue(stateFromStores, tmp32) };
+    obj5 = { gesture, children: sharedValue(stateFromStores, tmp40) };
     GestureDetector = tmp2(tmp3[30]).GestureDetector;
     if (isSearchLocked) {
-      const items10 = [, ];
-      ({ searchLocked: arr14[0], autocompleteSuggestions: arr14[1] } = tmp);
-      obj7.style = items10;
+      const items12 = [, ];
+      ({ searchLocked: arr16[0], autocompleteSuggestions: arr16[1] } = tmp);
+      obj7.style = items12;
       const obj8 = { ref, channelId, guildId: guild_id, onBackPress, showBackButton: isAndroidResult };
       const tmp8Result = isSearchLocked(tmp3[31]);
       if (!isAndroidResult) {
@@ -295,44 +310,44 @@ const memoResult = react.memo(function ChannelDetails(channelId) {
         isAndroidResult = null != onBackPress;
       }
       obj7.children = top(tmp8Result, obj8);
-      const items11 = [top(stateFromStores, obj7), ];
+      const items13 = [top(stateFromStores, obj7), ];
       const obj9 = { searchContext: channelDetailsSearchContext, width: componentWidth };
-      items11[1] = top(isSearchLocked(tmp3[32]), obj9);
-      obj6.children = items11;
-      tmp32 = obj6;
+      items13[1] = top(isSearchLocked(tmp3[32]), obj9);
+      obj6.children = items13;
+      tmp40 = obj6;
     } else {
       obj7.style = tmp.newHeader;
       const obj10 = { ref, channel: stateFromStores, onBackPress, componentWidth };
-      const items12 = [top(tmp8(tmp3[33]), obj10), ];
+      const items14 = [top(isSearchLocked(tmp3[33]), obj10), ];
       const obj11 = { style: animatedStyle, children: sharedValue(stateFromStores, obj12) };
-      obj12 = { style: tmp.information, onLayout: callback, children: items13 };
+      obj12 = { style: tmp.information, onLayout: callback, children: items15 };
       const View = tmp8(tmp3[24]).View;
       const obj13 = { channel: stateFromStores };
-      items13 = [top(tmp8(tmp3[34]), obj13), , , ];
+      items15 = [top(isSearchLocked(tmp3[34]), obj13), , , ];
       const obj14 = { channel: stateFromStores };
-      items13[1] = top(channelId(tmp3[35]).PinotChannelDetailsLabel, obj14);
+      items15[1] = top(channelId(tmp3[35]).PinotChannelDetailsLabel, obj14);
       const obj15 = { channel: stateFromStores, containerStyle: tmp.linkedLobby };
-      items13[2] = top(isSearchLocked(tmp3[36]), obj15);
-      let tmp28Result = null;
+      items15[2] = top(isSearchLocked(tmp3[36]), obj15);
+      let tmp36Result = null;
       if (!stateFromStores.isPrivate()) {
         const obj16 = { channel: stateFromStores, textAlign: "left", initialExpanded: flag };
-        tmp28Result = tmp28(tmp8(tmp3[37]), obj16);
+        tmp36Result = tmp36(tmp8(tmp3[37]), obj16);
       }
-      items13[3] = tmp28Result;
-      items12[1] = top(View, obj11);
-      obj7.children = items12;
-      const items14 = [sharedValue(stateFromStores, obj7), ];
+      items15[3] = tmp36Result;
+      items14[1] = top(View, obj11);
+      obj7.children = items14;
+      const items16 = [sharedValue(stateFromStores, obj7), ];
       const obj17 = { freeze: !isShowing, children: top(stateFromStores, obj18) };
       obj18 = { style: tmp.search, collapsable: false, children: top(isSearchLocked(tmp3[32]), obj19) };
       const Freeze = tmp2(tmp3[38]).Freeze;
       obj19 = { searchContext: channelDetailsSearchContext, width: componentWidth };
-      items14[1] = top(Freeze, obj17);
-      obj6.children = items14;
-      tmp32 = obj6;
+      items16[1] = top(Freeze, obj17);
+      obj6.children = items16;
+      tmp40 = obj6;
     }
-    tmp28Result2 = tmp28(AnalyticsLocationProvider, obj3);
+    tmp36Result2 = tmp36(AnalyticsLocationProvider, obj2);
   }
-  return tmp28Result2;
+  return tmp36Result2;
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetails.tsx");
 

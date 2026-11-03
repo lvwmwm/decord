@@ -1,53 +1,64 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14951
+// Function ID: 14952
 // Name: useSheetDismissPointerEvents
-// Dependencies: [5275, 5095, 5303, 2]
+// Dependencies: [5398, 1652, 5426, 2]
 // Exports: default
 
-// Module 14820 (useSheetDismissPointerEvents)
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+// Module 14951 (useSheetDismissPointerEvents)
+import _mod1652 from "module_1652" /* 1652 */;
+import BottomSheetModal from "BottomSheetModal" /* 5398 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
 import size from "module_2" /* 2 */;
 
-const __initData = { code: "function useSheetDismissPointerEventsTsx1(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};}" };
+let closure_2 = { code: "(function useSheetDismissPointerEventsTsx1(){let[contentGestureState,State,handleGestureState]=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};})" };
 const result = size.fileFinishedImporting("modules/user_profile/native/useSheetDismissPointerEvents.tsx");
 
 export default function useSheetDismissPointerEvents() {
-  let prop;
-  let prop1;
-  const tmp2 = prop1;
-  let obj = prop(prop1[0]);
+  let tmp10;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let obj = BottomSheetModal;
   const bottomSheetInternal = obj.useBottomSheetInternal(true);
-  prop = undefined;
+  let prop;
   if (bottomSheetInternal != null) {
     prop = bottomSheetInternal.animatedContentGestureState;
   }
-  prop1 = undefined;
+  let prop1;
   if (bottomSheetInternal != null) {
     prop1 = bottomSheetInternal.animatedHandleGestureState;
   }
-  const fn = function n() {
+  const items = [closure_2, prop, , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[2] = LegacyBaseButton.State;
+  items[3] = prop1;
+  let c0;
+  let c1;
+  let c2;
+  [tmp7, tmp8, tmp9, tmp10] = items;
+  function useSheetDismissPointerEventsTsx1() {
     let pointerEvents;
     let value;
-    const obj = prop;
-    if (prop != null) {
+    const obj = c0;
+    if (c0 != null) {
       value = obj.get();
     }
-    if (value === LegacyBaseButton.State.ACTIVE) {
+    if (value === _undefined.ACTIVE) {
       pointerEvents = "none";
     } else {
       let value2;
-      const obj2 = prop1;
-      if (prop1 != null) {
+      const obj2 = c2;
+      if (c2 != null) {
         value2 = obj2.get();
       }
       pointerEvents = "box-none";
     }
     return { pointerEvents };
-  };
-  const tmpResult = prop(tmp2[1]);
-  let obj2 = { contentGestureState: prop, State: tmp(tmp2[2]).State, handleGestureState: prop1 };
-  fn.__closure = obj2;
-  fn.__workletHash = 16631714570992;
-  fn.__initData = __initData;
-  return tmpResult.useAnimatedStyle(fn);
+  }
+  const items1 = [tmp8, tmp9, tmp10];
+  useSheetDismissPointerEventsTsx1.__closure = items1;
+  useSheetDismissPointerEventsTsx1.__workletHash = 6909948922505;
+  useSheetDismissPointerEventsTsx1.__initData = tmp7;
+  return useAnimatedStyle(useSheetDismissPointerEventsTsx1);
 };

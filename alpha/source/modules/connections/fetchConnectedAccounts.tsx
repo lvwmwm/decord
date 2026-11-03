@@ -1,10 +1,10 @@
-// Module ID: 6703
-// Function ID: 6704
+// Module ID: 6823
+// Function ID: 6824
 // Name: fetchConnectedAccounts
 // Dependencies: [1072, 1282, 572, 2]
 // Exports: fetchConnectedAccounts
 
-// Module 6703 (fetchConnectedAccounts)
+// Module 6823 (fetchConnectedAccounts)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

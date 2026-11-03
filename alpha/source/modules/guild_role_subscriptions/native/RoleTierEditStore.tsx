@@ -1,14 +1,14 @@
-// Module ID: 19949
-// Function ID: 19950
+// Module ID: 20099
+// Function ID: 20100
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1259, 1254, 7430, 4929, 5593, 17203, 2]
+// Dependencies: [32, 5, 1259, 1254, 7554, 5056, 5716, 17346, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 19949 (RoleTierEditStore)
+// Module 20099 (RoleTierEditStore)
 import react_native from "react-native" /* 1259 */;
-import _slicedToArray2 from "_slicedToArray" /* 4929 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7430 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17203 */;
+import _slicedToArray2 from "_slicedToArray" /* 5056 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7554 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17346 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
@@ -28,7 +28,7 @@ function usePriceTiers(guildId) {
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5593)(() => {
+  tiers(5716)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {
@@ -90,7 +90,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -146,7 +146,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp21) {
             if (0 === c2) {

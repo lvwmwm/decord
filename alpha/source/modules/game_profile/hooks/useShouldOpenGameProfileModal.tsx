@@ -1,17 +1,17 @@
-// Module ID: 9317
-// Function ID: 9318
+// Module ID: 9445
+// Function ID: 9446
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2014, 1072, 1252, 1396, 9318, 5660, 9319, 38, 2]
+// Dependencies: [19, 2143, 1072, 1252, 1398, 9446, 5780, 9447, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
-// Module 9317 (useShouldOpenGameProfileModal)
+// Module 9445 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FlagUtilsAll from "FlagUtils" /* 1396 */;
-import GameFlags from "GameFlags" /* 9318 */;
+import FlagUtilsAll from "FlagUtils" /* 1398 */;
+import GameFlags from "GameFlags" /* 9446 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2014 */;
+import GameStore from "GameStore" /* 2143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ export default function useShouldOpenGameProfileModal(applicationId) {
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(5660);
+        const tmp21Result = tmp21(5780);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
@@ -121,7 +121,7 @@ export function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(5660);
+    const tmp8Result = tmp8(5780);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -143,7 +143,7 @@ export function gameIdIsAcceptable(arg0) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(5660);
+    const tmp9Result = tmp9(5780);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

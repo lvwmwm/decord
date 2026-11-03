@@ -1,24 +1,23 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 9424
+// Function ID: 9425
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 9046, 9297, 1072, 21, 5014, 575, 5253, 9047, 504, 5596, 8741, 7326, 7351, 9048, 9298, 5634, 1113, 14730, 14736, 9299, 14737, 671, 5272, 5587, 5275, 5595, 2]
+// Dependencies: [19, 17, 9174, 9425, 1072, 21, 5141, 575, 5376, 9175, 504, 5719, 8865, 7446, 7471, 9176, 9426, 5754, 1113, 14861, 14867, 9427, 14868, 671, 5395, 5710, 5398, 5718, 2]
 // Exports: default
 
-// Module 9296 (GuildProfileActionSheet)
+// Module 9424 (GuildProfileActionSheet)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 9046 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9048 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9297 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 9174 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9176 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9425 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const GuildProfileStore = GuildProfileStore2;
-let BottomSheet;
 
 let c10;
 let closure_4;
@@ -142,7 +141,7 @@ export default function GuildProfileActionSheet(guildId) {
       return items;
     }, items6);
     const obj16 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, footer: tmp19(fetchGuildProfile(analyticsLocations[25]), obj17), children: items7 };
-    BottomSheet = tmp5(tmp3[24]).BottomSheet;
+    const BottomSheet = tmp5(tmp3[24]).BottomSheet;
     obj17 = { start: VerticalGradient.START, end: { x: 0, y: 0.5 }, style: tmp.footerContainer, colors: memo, children: tmp30Result };
     const obj18 = { enableFooterMarginAdjustment: true, style: tmp.scrollView, children: tmp18 };
     items7 = [tmp19(guildId(analyticsLocations[26]).BottomSheetScrollView, obj18), ];

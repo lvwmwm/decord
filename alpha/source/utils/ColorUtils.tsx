@@ -1,22 +1,20 @@
-// Module ID: 5011
-// Function ID: 5012
+// Module ID: 5138
+// Function ID: 5139
 // Name: ColorUtils
-// Dependencies: [32, 671, 1113, 3, 5012, 2]
+// Dependencies: [32, 671, 1113, 3, 5139, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 5011 (ColorUtils)
+// Module 5138 (ColorUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl2 from "intl" /* 1113 */;
-import utils_ColorDefault from "utils/Color" /* 5012 */;
+import utils_ColorDefault from "utils/Color" /* 5139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-function hexToRgba(PRIMARY_760) {
-  obj = _modDef671(PRIMARY_760);
-  const tmp = _slicedToArray(obj.rgba(), 4);
-  return { r: tmp[0], g: tmp[1], b: tmp[2], a: tmp[3] };
-}
+let tmp2;
+let tmp3;
+let tmp4;
 function rgbToHslObject(arg0, arg1, arg2) {
   let result5;
   let result6;
@@ -257,6 +255,13 @@ function sortColors(hsv, hsv2) {
   hsv2 = hsv2.hsv;
   return hsv2.s + hsv2.v - (hsv.s + hsv.v);
 }
+let items = [{ code: "(function hexWithOpacity_ColorUtilsTsx1(color,value){if(color.length===7){const alpha=value*255|0;return color+alpha.toString(16).padStart(2,'0').toUpperCase();}const hex=color.charAt(0)==='#'?color.slice(1):color;let r;let g;let b;let a;switch(hex.length){case 3:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);r+=r;g+=g;b+=b;a=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+a;case 4:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);a=hex.charAt(3);r+=r;g+=g;b+=b;a+=a;const alpha4=parseInt(a,16)/255*value;const alpha4Hex=(alpha4*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+alpha4Hex;case 6:const alpha6=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+hex+alpha6;case 8:const baseColor='#'+hex.slice(0,6);const existingAlpha=parseInt(hex.slice(6),16)/255;const alpha8=(existingAlpha*value*255|0).toString(16).padStart(2,'0').toUpperCase();return baseColor+alpha8;default:throw new Error('Invalid hex color format');}})" }];
+[tmp2] = items;
+function hexToRgba(PRIMARY_760) {
+  obj = _modDef671(PRIMARY_760);
+  const tmp = _slicedToArray(obj.rgba(), 4);
+  return { r: tmp[0], g: tmp[1], b: tmp[2], a: tmp[3] };
+}
 function hexWithOpacity(BLACK, c3) {
   if (7 === BLACK.length) {
     const str14 = 255 * c3 | 0;
@@ -314,25 +319,27 @@ function hexWithOpacity(BLACK, c3) {
     }
   }
 }
-hexWithOpacity.__closure = {};
-hexWithOpacity.__workletHash = 1677228068105;
-hexWithOpacity.__initData = { code: "function hexWithOpacity_ColorUtilsTsx1(color,value){if(color.length===7){const alpha=value*255|0;return color+alpha.toString(16).padStart(2,'0').toUpperCase();}const hex=color.charAt(0)==='#'?color.slice(1):color;let r;let g;let b;let a;switch(hex.length){case 3:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);r+=r;g+=g;b+=b;a=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+a;case 4:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);a=hex.charAt(3);r+=r;g+=g;b+=b;a+=a;const alpha4=parseInt(a,16)/255*value;const alpha4Hex=(alpha4*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+alpha4Hex;case 6:const alpha6=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+hex+alpha6;case 8:const baseColor='#'+hex.slice(0,6);const existingAlpha=parseInt(hex.slice(6),16)/255;const alpha8=(existingAlpha*value*255|0).toString(16).padStart(2,'0').toUpperCase();return baseColor+alpha8;default:throw new Error('Invalid hex color format');}}" };
+hexWithOpacity.__workletHash = 10042887991656;
+hexWithOpacity.__initData = tmp2;
+let items1 = [{ code: "(function hexToRgbaString_ColorUtilsTsx2(hex,opacity){let[hexToRgba]=this.__closure;const{r:r,g:g,b:b,a:a}=hexToRgba(hex);return\"rgba(\"+r+\", \"+g+\", \"+b+\", \"+(opacity!==null&&opacity!==void 0?opacity:a)+\")\";})" }, hexToRgba];
+let c0;
+[tmp3, tmp4] = items1;
 function hexToRgbaString(colorHex, opacity) {
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  let tmp = opacity;
-  obj = _modDef671(colorHex);
-  const tmp2 = _slicedToArray(obj.rgba(), 4);
-  [tmp3, tmp4, tmp5] = tmp2;
+  let b;
+  let g;
+  let r;
+  let a = opacity;
+  const tmp = _undefined(colorHex);
+  ({ r, g, b } = tmp);
   if (opacity == null) {
-    tmp = tmp2[3];
+    a = tmp.a;
   }
-  return "rgba(" + tmp3 + ", " + tmp4 + ", " + tmp5 + ", " + tmp + ")";
+  return "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
 }
-hexToRgbaString.__closure = { hexToRgba };
-hexToRgbaString.__workletHash = 8956046161224;
-hexToRgbaString.__initData = { code: "function hexToRgbaString_ColorUtilsTsx2(hex,opacity){const{hexToRgba}=this.__closure;const{r:r,g:g,b:b,a:a}=hexToRgba(hex);return\"rgba(\"+r+\", \"+g+\", \"+b+\", \"+(opacity!==null&&opacity!==void 0?opacity:a)+\")\";}" };
+const items2 = [tmp4];
+hexToRgbaString.__closure = items2;
+hexToRgbaString.__workletHash = 15638472628785;
+hexToRgbaString.__initData = tmp3;
 let obj = {
   "#5865f2": () => {
     const intl = intl2.intl;
@@ -425,15 +432,19 @@ let obj2 = {
     return intl.string(intl2.t["/po5rJ"]);
   }
 };
-const merged = Object.assign(obj2);
-let result = size.fileFinishedImporting("utils/ColorUtils.tsx");
-
-export { hexWithOpacity };
-export function hexToRgb(PRIMARY_800) {
+function hexToRgb(PRIMARY_800) {
   obj = _modDef671(PRIMARY_800);
   const tmp = _slicedToArray(obj.rgb(), 3);
   return { r: tmp[0], g: tmp[1], b: tmp[2] };
 }
+function hslToString(arg0, arg1, arg2) {
+  return "hsl(" + arg0 + ", " + arg1 + "%, " + arg2 + "%)";
+}
+const merged = Object.assign(obj2);
+let result = size.fileFinishedImporting("utils/ColorUtils.tsx");
+
+export { hexWithOpacity };
+export { hexToRgb };
 export function hexToRgbArray(arg0) {
   obj = _modDef671(arg0);
   const items = [, , ];
@@ -449,9 +460,7 @@ export function hexOpacityToRgba(backgroundColor, c6) {
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + c6 + ")";
 }
 export { rgbToHslObject };
-export function hslToString(arg0, arg1, arg2) {
-  return "hsl(" + arg0 + ", " + arg1 + "%, " + arg2 + "%)";
-}
+export { hslToString };
 export function rgbToHsl(arg0, arg1, arg2) {
   const tmp = rgbToHslObject(arg0, arg1, arg2);
   return "hsl(" + tmp.h + ", " + tmp.s + "%, " + tmp.l + "%)";

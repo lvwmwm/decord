@@ -1,18 +1,18 @@
-// Module ID: 14574
-// Function ID: 14575
+// Module ID: 14705
+// Function ID: 14706
 // Name: HomeChannelHeader
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 14390, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 14521, 5747, 1113, 2]
 
-// Module 14574 (HomeChannelHeader)
+// Module 14705 (HomeChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14390 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14521 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,7 +30,7 @@ const memoResult = react.memo(function HomeChannelHeader() {
   const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, disableColor: true };
   const Icon = native.Icon;
   items = [React3(Icon, obj2), ];
-  const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t.Ym2Ri6) };
+  const obj3 = { variant: "heading-lg/semibold", color: "interactive-text-active", children: intl.string(intl2.t.Ym2Ri6) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = React3(Text, obj3);

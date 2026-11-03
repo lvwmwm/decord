@@ -1,24 +1,22 @@
-// Module ID: 19029
-// Function ID: 19030
+// Module ID: 19187
+// Function ID: 19188
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [19, 17, 5015, 1072, 4860, 21, 5014, 575, 504, 7326, 572, 15311, 6028, 1260, 10609, 15314, 5272, 8212, 8873, 5717, 5624, 5709, 10290, 1113, 2]
+// Dependencies: [19, 17, 5142, 1072, 4987, 21, 5141, 575, 504, 7446, 572, 15452, 6148, 1260, 10739, 15455, 5395, 8336, 8997, 5837, 5747, 5829, 10420, 1113, 2]
 // Exports: default
 
-// Module 19029 (PremiumMarketingMomentActionSheet)
+// Module 19187 (PremiumMarketingMomentActionSheet)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 15311 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 15452 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -121,7 +119,7 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
   helpArticleLinkProps = tmp2Result.getHelpArticleLinkProps(bottomSheetData.helpArticle, bottomSheetData.helpArticleId);
   const obj5 = { onDismiss: callback2, children: closure_9(callback, obj6) };
   obj6 = { style: tmp.container, children: items4 };
-  BottomSheet = tmp2(tmp3[16]).BottomSheet;
+  const BottomSheet = tmp2(tmp3[16]).BottomSheet;
   const obj7 = { uri: bottomSheetData.assetUrl };
   const tmp2Result2 = markAsDismissed(tmp3[17]);
   if (tmp2Result2.getFile(obj7).isVideo) {
@@ -135,7 +133,7 @@ export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
     tmp14Result = tmp14(tmp5(tmp3[19]), obj9);
   }
   items4 = [tmp14Result, , , ];
-  const obj11 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: bottomSheetData.header };
+  const obj11 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/semibold", children: bottomSheetData.header };
   items4[1] = closure_8(markAsDismissed(tmp3[20]).Text, obj11);
   const obj12 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: items5 };
   items5 = [bottomSheetData.body, " ", ];

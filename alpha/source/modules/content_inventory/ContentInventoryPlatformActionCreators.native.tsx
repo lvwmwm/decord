@@ -1,11 +1,11 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13568
+// Function ID: 13569
 // Name: ContentInventoryPlatformActionCreators
-// Dependencies: [8750, 2]
+// Dependencies: [8874, 2]
 // Exports: showUserProfile
 
-// Module 13432 (ContentInventoryPlatformActionCreators)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+// Module 13568 (ContentInventoryPlatformActionCreators)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryPlatformActionCreators.native.tsx");

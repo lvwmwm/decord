@@ -1,21 +1,19 @@
-// Module ID: 13736
-// Function ID: 13737
+// Module ID: 13867
+// Function ID: 13868
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [19, 17, 1072, 4860, 21, 5014, 575, 7326, 7351, 7563, 5272, 7292, 5595, 13737, 1391, 13738, 13739, 13740, 13741, 13742, 13743, 13744, 1187, 1113, 5624, 3870, 5634, 2]
+// Dependencies: [19, 17, 1072, 4987, 21, 5141, 575, 7446, 7471, 7687, 5395, 7412, 5718, 13868, 1393, 13869, 13870, 13871, 13872, 13873, 13874, 13875, 1187, 1113, 5747, 3997, 5754, 2]
 // Exports: default
 
-// Module 13736 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 13867 (CustomTypingIndicatorAnnounceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import openUserSettings from "openUserSettings" /* 7687 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -92,7 +90,7 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items2);
   let obj2 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: closure_7(SafeAreaPaddingView, obj3) };
-  BottomSheet = markAsDismissed(tmp4[10]).BottomSheet;
+  const BottomSheet = markAsDismissed(tmp4[10]).BottomSheet;
   obj3 = { bottom: true, children: closure_8(View, obj4) };
   obj4 = { style: tmp2.content, children: items3 };
   SafeAreaPaddingView = markAsDismissed(tmp4[11]).SafeAreaPaddingView;

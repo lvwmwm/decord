@@ -1,12 +1,12 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11499
+// Function ID: 11500
 // Name: BuildOverrideStore
-// Dependencies: [1372, 572, 504, 2]
+// Dependencies: [1374, 572, 504, 2]
 
-// Module 11362 (BuildOverrideStore)
+// Module 11499 (BuildOverrideStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1372 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1374 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ class BuildOverrideStore extends Store {
         obj2[url] = { url, validatedURL: validateURLResult.url, payload: String(validateURLResult.payload), state: obj.Resolving };
         obj4 = obj2;
         const obj3 = { url, validatedURL: validateURLResult.url, payload: String(validateURLResult.payload), state: obj.Resolving };
-        const tmpResult = tmp(1372);
+        const tmpResult = tmp(1374);
         const buildOverrideMeta = tmpResult.getBuildOverrideMeta(validateURLResult.url);
         buildOverrideMeta.then((override) => {
           obj = DispatcherDefault;

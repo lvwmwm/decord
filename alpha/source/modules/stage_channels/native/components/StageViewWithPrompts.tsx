@@ -1,20 +1,20 @@
-// Module ID: 11854
-// Function ID: 11855
+// Module ID: 11991
+// Function ID: 11992
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 11855, 5014, 575, 1625, 11856, 11869, 5624, 2]
+// Dependencies: [19, 17, 21, 11992, 5141, 575, 1627, 11993, 12006, 5747, 2]
 // Exports: default
 
-// Module 11854 (StageViewWithPrompts)
+// Module 11991 (StageViewWithPrompts)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11855 */;
-import FocusedControls from "FocusedControls" /* 11856 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11869 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11992 */;
+import FocusedControls from "FocusedControls" /* 11993 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 12006 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,7 +49,7 @@ export default function StageViewWithPrompts(arg0) {
   items1 = [, , , ];
   const obj3 = { style: tmp.illustration, children: hasOwnProperty(MicrophoneSpotIllustration.MicrophoneSpotIllustration, { accessible: false }) };
   items1[0] = hasOwnProperty(React3, obj3);
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "text-overlay-light", children: title };
   items1[1] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
   items1[2] = hasOwnProperty(Text_Text.Text, obj5);

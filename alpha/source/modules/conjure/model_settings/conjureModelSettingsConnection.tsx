@@ -1,12 +1,12 @@
-// Module ID: 10898
-// Function ID: 10899
+// Module ID: 11028
+// Function ID: 11029
 // Name: conjureModelSettingsConnection
-// Dependencies: [572, 10874, 2]
+// Dependencies: [572, 11004, 2]
 // Exports: sendModelSettings
 
-// Module 10898 (conjureModelSettingsConnection)
+// Module 11028 (conjureModelSettingsConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11004 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

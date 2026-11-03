@@ -1,11 +1,11 @@
-// Module ID: 7783
-// Function ID: 7784
+// Module ID: 7907
+// Function ID: 7908
 // Name: ProfileReadStateUtils
-// Dependencies: [7784, 2]
+// Dependencies: [7908, 2]
 // Exports: getWishlistUpdatedAtTimestamp, hasWishlistBeenUpdatedSinceAcked, isWishlistItemNew, mergeProfileReadState, parseProfileReadState, shouldAckWishlist
 
-// Module 7783 (ProfileReadStateUtils)
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7784 */;
+// Module 7907 (ProfileReadStateUtils)
+import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7908 */;
 import size from "module_2" /* 2 */;
 
 function parseTimestamp(arg0) {
@@ -133,29 +133,33 @@ export function mergeProfileReadState(profileReadState, ackedAt) {
   }
   return tmp;
 }
-export function shouldAckWishlist(wishlistSettings, stateFromStores) {
-  let tmp = null == stateFromStores;
-  if (!tmp) {
-    let flag = false;
-    if (null != stateFromStores) {
-      let updated_at;
-      if (wishlistSettings != null) {
-        updated_at = wishlistSettings.updated_at;
-      }
-      let tmp4 = null;
-      if (null != updated_at) {
-        const _Date = Date;
-        const parsed = Date.parse(updated_at);
-        const _Number = Number;
-        let tmp7 = null;
-        if (!Number.isNaN(parsed)) {
-          tmp7 = parsed;
+export function shouldAckWishlist(wishlistSettings, profileReadState) {
+  if (null == profileReadState) {
+    return false;
+  } else {
+    let tmp8 = null == tmp10;
+    if (!tmp8) {
+      let flag = false;
+      if (null != profileReadState[ProfileReadStateSection.WISHLIST]) {
+        let updated_at;
+        if (wishlistSettings != null) {
+          updated_at = wishlistSettings.updated_at;
         }
-        tmp4 = tmp7;
+        let tmp3 = null;
+        if (null != updated_at) {
+          const _Date = Date;
+          const parsed = Date.parse(updated_at);
+          const _Number = Number;
+          let tmp6 = null;
+          if (!Number.isNaN(parsed)) {
+            tmp6 = parsed;
+          }
+          tmp3 = tmp6;
+        }
+        flag = null != tmp3 && tmp3 > profileReadState[ProfileReadStateSection.WISHLIST];
       }
-      flag = null != tmp4 && tmp4 > stateFromStores;
+      tmp8 = flag;
     }
-    tmp = flag;
+    return tmp8;
   }
-  return tmp;
 }

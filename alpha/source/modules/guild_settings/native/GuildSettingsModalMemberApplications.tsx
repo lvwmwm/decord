@@ -1,20 +1,20 @@
-// Module ID: 18659
-// Function ID: 18660
+// Module ID: 18817
+// Function ID: 18818
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6917, 21, 5014, 575, 5068, 5624, 18660, 1409, 6975, 1187, 1625, 18665, 5048, 18666, 504, 1113, 7294, 8805, 5606, 2]
+// Dependencies: [19, 17, 7037, 21, 5141, 575, 5195, 5747, 18818, 1411, 7101, 1187, 1627, 18823, 5175, 18824, 504, 1113, 7414, 8929, 5729, 2]
 
-// Module 18659 (GuildSettingsModalMemberApplications)
+// Module 18817 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18660 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18818 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6917 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7037 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,7 +78,7 @@ let closure_12 = react.memo(function GuildSettingsModalMemberApplication(joinReq
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(6975).TableRow;
+      const TableRow = joinRequest(7101).TableRow;
       obj3 = { source: userAvatarSource, size: joinRequest(1187).AvatarSizes.SMALL };
       Avatar = joinRequest(1187).Avatar;
       obj4 = { user };

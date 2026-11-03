@@ -1,10 +1,10 @@
-// Module ID: 19359
-// Function ID: 19360
+// Module ID: 19517
+// Function ID: 19518
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19360, 19362, 17, 19385, 2063, 4917, 1993, 7640, 19386, 1072, 9, 3, 20118, 1375, 7671, 20119, 10, 20121, 20122, 13194, 504, 1259, 1244, 20123, 1997, 20124, 16392, 572, 20125, 7654, 1242, 20126, 20127, 10914, 510, 1252, 16024, 4909, 9765, 2074, 1152, 20128, 1994, 8903, 20130, 16221, 7815, 20147, 20148, 20149, 9830, 7667, 7655, 5200, 1192, 5015, 16271, 19062, 19063, 1098, 16021, 7639, 16275, 16289, 6886, 20150, 5303, 7641, 7655, 2]
+// Dependencies: [32, 5, 19518, 19520, 17, 19543, 2192, 5044, 2122, 7764, 19544, 1072, 9, 3, 20268, 1377, 7795, 20269, 10, 20271, 20272, 13330, 504, 1259, 1244, 20273, 2126, 20274, 16535, 572, 20275, 7778, 1242, 20276, 20277, 11044, 510, 1252, 16167, 5036, 20278, 9897, 2203, 1152, 20307, 2123, 9027, 20309, 16364, 7939, 20326, 20327, 20328, 9961, 7791, 7779, 5323, 1192, 5142, 16414, 19220, 19221, 1098, 16164, 7763, 16418, 16433, 7006, 20329, 5426, 7765, 7779, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19359 (NativeAppStartup)
+// Module 19517 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -12,22 +12,24 @@ import Storage4 from "Storage" /* 510 */;
 import TokenManagerAll from "TokenManager" /* 1098 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4909 */;
-import Future from "Future" /* 9765 */;
-import react_nativeDefault from "react-native" /* 16024 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20121 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20122 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2192 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 5036 */;
+import timeRequireDefault from "timeRequire" /* 7795 */;
+import Future from "Future" /* 9897 */;
+import react_nativeDefault from "react-native" /* 16167 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20271 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20272 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19360 from "module_19360" /* 19360 */;
-import superagentPatch from "superagentPatch" /* 19362 */;
+import module_19518 from "module_19518" /* 19518 */;
+import superagentPatch from "superagentPatch" /* 19520 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19385 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import AppStateStore from "AppStateStore" /* 1993 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7640 */;
-import ManagerRegistry from "ManagerRegistry" /* 19386 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19543 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import AppStateStore from "AppStateStore" /* 2122 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7764 */;
+import ManagerRegistry from "ManagerRegistry" /* 19544 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -45,8 +47,6 @@ let closure_19;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp3;
-const timeRequireDefault = tmp3(7671);
 function handleLinkingEventURL(url, arg1) {
   let logger;
   let closure_1 = arg1;
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f133153 = () => _true(handleNotification[33]);
+  const f133731 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f133153).default(arg0, false);
+      timeRequireDefault("receiveNotification", f133731).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f133153).default(arg0, false);
+        timeRequireDefault("receiveNotification", f133731).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -326,7 +326,7 @@ obj = function _trackFirstLaunched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -382,7 +382,7 @@ obj = function _trackFirstLaunched() {
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp25) {
         c6 = 3;
         throw tmp25;
@@ -396,6 +396,7 @@ function loadStorage() {
 }
 obj = function _loadStorage() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let tmp;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -406,7 +407,7 @@ obj = function _loadStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -458,7 +459,7 @@ obj = function _loadStorage() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -484,6 +485,15 @@ function loadKvStorage() {
   }
   return Promise.resolve();
 }
+function initializeAndroidNitroFetchExperiment() {
+  obj = PlatformUtils;
+  if (obj.isAndroid()) {
+    const obj2 = timeRequireDefault("NitroFetchExperiment", function loadExperiment() {
+      return require("NitroFetchExperiment");
+    });
+    const result = obj2.initializeNitroFetchExperiment();
+  }
+}
 function initializeIntl() {
   return obj(...arguments);
 }
@@ -505,7 +515,7 @@ obj = function _initializeIntl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -538,7 +548,7 @@ obj = function _initializeIntl() {
               c3 = 2;
               c4 = 1;
               const obj7 = { value: obj8.preloadAllIntlMessageFiles(), done: false };
-              obj8 = closure_130_0(closure_130_3[41]);
+              obj8 = closure_130_0(closure_130_3[42]);
               return obj7;
             }
           } else if (2 === c3) {
@@ -552,7 +562,7 @@ obj = function _initializeIntl() {
               c3 = 3;
               c4 = 1;
               const obj10 = { value: obj5.waitForAllDefaultIntlMessagesLoaded(), done: false };
-              obj5 = closure_130_0(closure_130_3[42]);
+              obj5 = closure_130_0(closure_130_3[43]);
               return obj10;
             }
           } else if (3 === c3) {
@@ -570,7 +580,7 @@ obj = function _initializeIntl() {
               }
               c3 = 4;
               c4 = 1;
-              const obj12 = { value: closure_130_0(closure_130_3[44])(closure_130_3[43], closure_130_3.paths), done: false };
+              const obj12 = { value: closure_130_0(closure_130_3[45])(closure_130_3[44], closure_130_3.paths), done: false };
               return obj12;
             }
           } else if (arg0 === 1) {
@@ -584,7 +594,7 @@ obj = function _initializeIntl() {
             tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           c4 = 3;
@@ -601,7 +611,7 @@ obj = function _init() {
   let Full;
   obj = _asyncToGenerator(async (arg0, value) => {
     function initializeApp() {
-      return closure_1_39(...arguments);
+      return closure_1_40(...arguments);
     }
     if (c4 === 2) {
       c4 = 3;
@@ -613,7 +623,7 @@ obj = function _init() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -658,7 +668,7 @@ obj = function _init() {
           closure_128_25.finishInitialUrls();
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -687,7 +697,7 @@ obj = function _initializeApp() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -737,10 +747,10 @@ obj = function _initializeApp() {
             closure_17 = undefined;
             totalMentionCount = undefined;
             closure_19 = undefined;
-            closure_0 = tmp227;
-            Full = closure_2_33.Full;
+            closure_0 = tmp229;
+            Full = closure_2_34.Full;
             onStorageInitialize = undefined;
-            if (Full !== closure_2_33.HeadlessRan) {
+            if (Full !== closure_2_34.HeadlessRan) {
               onStorageInitialize = sharedInit().onStorageInitialize;
             }
             const obj13 = require("PlatformUtils");
@@ -761,7 +771,7 @@ obj = function _initializeApp() {
             items[1] = initialNotification.catch(() => null);
             items[2] = loadStorage();
             items[3] = loadKvStorage();
-            const promise3 = require("asyncRequire")(paths[46], paths.paths);
+            const promise3 = require("asyncRequire")(paths[47], paths.paths);
             items[4] = promise3.then((result) => result.default());
             c2 = 1;
             c3 = 1;
@@ -786,8 +796,8 @@ obj = function _initializeApp() {
               loadStorageEnd.record();
               const obj19 = closure_129_0(closure_129_3[15]);
               if (obj19.isAndroid()) {
-                if (closure_129_0(closure_129_3[47]).isTTITest) {
-                  currentState = closure_129_0(closure_129_3[48]).default;
+                if (closure_129_0(closure_129_3[48]).isTTITest) {
+                  currentState = closure_129_0(closure_129_3[49]).default;
                   c2 = 2;
                   c3 = 1;
                   const obj11 = { value: currentState.yieldConfig(), done: false };
@@ -826,21 +836,21 @@ obj = function _initializeApp() {
               obj = closure_1(paths[35]);
               const result = obj.setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
             });
-            const tmp213 = closure_0;
-            if (!tmp213) {
+            const tmp215 = closure_0;
+            if (!tmp215) {
               closure_19.init();
             }
-            closure_129_0(closure_129_3[68]);
-            obj = closure_129_0(closure_129_3[69]);
+            closure_129_0(closure_129_3[69]);
+            obj = closure_129_0(closure_129_3[70]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const tmp20 = closure_0;
           if (tmp20) {
             resolved = Promise.resolve();
           } else {
-            resolved = closure_129_35({ log: true });
+            resolved = closure_129_36({ log: true });
           }
           const obj4 = closure_129_1(closure_129_3[18]);
           obj4.markAndLog(closure_129_20, "\u{1F3C3}", "The initial promise has resolved");
@@ -860,13 +870,13 @@ obj = function _initializeApp() {
           trackFirstLaunched();
           const tmp60 = closure_0;
           if (!tmp60) {
-            closure_129_41();
+            closure_129_42();
             if (onStorageInitialize != null) {
               onStorageInitialize();
             }
           }
           closure_129_1(closure_129_3[16])("DispatcherBridge", () => {
-            closure_1_0(paths[49]);
+            closure_1_0(paths[50]);
           });
           const tmp71 = closure_0;
           if (tmp71) {
@@ -880,8 +890,9 @@ obj = function _initializeApp() {
               closure_1_20.verbose("Flux has initialized");
             });
           }
-          closure_129_1(closure_129_3[50])();
-          const obj7 = closure_129_0(closure_129_3[51]);
+          closure_129_31();
+          closure_129_1(closure_129_3[51])();
+          const obj7 = closure_129_0(closure_129_3[52]);
           const result3 = obj7.setupLibdiscoreTimersMonitor();
           const item = closure_4.forEach((item) => {
             closure_1_1(paths[16])("handleURL", () => closure_1_0(paths[17])).default(item, true);
@@ -893,13 +904,13 @@ obj = function _initializeApp() {
             closure_129_1(closure_129_3[12]).extraProperties.tapped_notification = true;
             closure_8 = closure_9(closure_5, true);
           }
-          const tmp104 = closure_8;
-          if (!tmp104) {
+          const tmp106 = closure_8;
+          if (!tmp106) {
             channelId = closure_129_12.getChannelId();
             if (null != channelId) {
-              const obj17 = { channelId, isPreload: true, skipLocalFetch: true, fetchKey: closure_129_0(closure_129_3[53]).INITIAL_MESSAGE_FETCH_KEY };
-              const fetchMessages = closure_129_1(closure_129_3[52]).fetchMessages;
-              const tmp112 = closure_129_1(closure_129_3[52]);
+              const obj17 = { channelId, isPreload: true, skipLocalFetch: true, fetchKey: closure_129_0(closure_129_3[54]).INITIAL_MESSAGE_FETCH_KEY };
+              const fetchMessages = closure_129_1(closure_129_3[53]).fetchMessages;
+              const tmp114 = closure_129_1(closure_129_3[53]);
               const messages = fetchMessages(obj17);
             }
           }
@@ -909,46 +920,46 @@ obj = function _initializeApp() {
           const self2 = this;
           promise = new Promise((arg0) => {
             closure_0 = arg0;
-            promise = closure_0(paths[44])(paths[54], paths.paths);
+            promise = closure_0(paths[45])(paths[55], paths.paths);
             promise.then((result) => {
               let _default = result.default;
-              obj = closure_2_0(paths[55]);
+              obj = closure_2_0(paths[56]);
               return _default.loadCacheAsync(closure_2_4(obj.computeInitialNavigationState(), 1)[0], async () => {
-                const _default = closure_0(paths[56]).default;
-                const _default2 = closure_0(paths[57]).default;
-                obj = closure_0(paths[58]);
+                const _default = closure_0(paths[57]).default;
+                const _default2 = closure_0(paths[58]).default;
+                obj = closure_0(paths[59]);
                 obj.updateSaturation(_default2.saturation);
-                const obj2 = closure_0(paths[59]);
+                const obj2 = closure_0(paths[60]);
                 obj2.updateVisualRefresh(true);
-                const obj3 = closure_0(paths[60]);
+                const obj3 = closure_0(paths[61]);
                 obj3.updateTheme(_default.theme);
                 closure_1_0();
               });
             });
           });
           promise2 = null;
-          const obj9 = closure_129_2(closure_129_3[61]);
+          const obj9 = closure_129_2(closure_129_3[62]);
           if (null != obj9.getToken()) {
             promise2 = Promise.resolve();
           } else {
-            closure_13 = closure_129_0(closure_129_3[62]);
+            closure_13 = closure_129_0(closure_129_3[63]);
             const result4 = closure_13.beginLoadedExperimentsTimeout();
             promise2 = closure_13.getPromise();
           }
           const items1 = [promise, promise2];
           const allPromises = Promise.all(items1);
           const nextPromise = allPromises.then(() => {
-            closure_1_32.resolve();
+            closure_1_33.resolve();
           });
-          const items2 = [closure_129_0(closure_129_3[44])(closure_129_3[63], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[64], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[65], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[66], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[67], closure_129_3.paths), resolved];
+          const items2 = [closure_129_0(closure_129_3[45])(closure_129_3[64], closure_129_3.paths), closure_129_0(closure_129_3[45])(closure_129_3[65], closure_129_3.paths), closure_129_0(closure_129_3[45])(closure_129_3[66], closure_129_3.paths), closure_129_0(closure_129_3[45])(closure_129_3[67], closure_129_3.paths), closure_129_0(closure_129_3[45])(closure_129_3[68], closure_129_3.paths), resolved];
           c2 = 3;
           c3 = 1;
           const obj18 = { value: all(items2), done: false };
           return obj18;
         }
-      } catch (tmp191) {
+      } catch (tmp193) {
         c3 = 3;
-        throw tmp191;
+        throw tmp193;
       }
     }
   });
@@ -966,7 +977,7 @@ obj = function _initHeadlessTask() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -985,8 +996,8 @@ obj = function _initHeadlessTask() {
             let closure_0 = tmp;
             onStorageInitialize = undefined;
             closure_1 = undefined;
-            if (HeadlessRan === closure_2_33.None) {
-              HeadlessRan = closure_2_33.HeadlessRan;
+            if (HeadlessRan === closure_2_34.None) {
+              HeadlessRan = closure_2_34.HeadlessRan;
               onStorageInitialize = sharedInit().onStorageInitialize;
               const items = [loadStorage(), loadKvStorage(), initializeIntl({ log: false })];
               c2 = 1;
@@ -1004,21 +1015,22 @@ obj = function _initHeadlessTask() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_129_41();
+            closure_129_42();
             onStorageInitialize();
-            closure_129_0(closure_129_3[70]);
-            closure_129_0(closure_129_3[49]);
+            closure_129_0(closure_129_3[71]);
+            closure_129_0(closure_129_3[50]);
             const obj8 = closure_129_1(closure_129_3[22]);
             obj8.initialize();
-            promise = closure_129_0(closure_129_3[44])(closure_129_3[54], closure_129_3.paths);
+            closure_129_31();
+            promise = closure_129_0(closure_129_3[45])(closure_129_3[55], closure_129_3.paths);
             promise.then((result) => {
               const _default = result.default;
               const cacheAsync = _default.loadCacheAsync({ page: "other" }, async () => {
-                closure_1_32.resolve();
+                closure_1_33.resolve();
               });
             });
             const all2 = Promise.all;
-            const items1 = [closure_129_0(closure_129_3[44])(closure_129_3[67], closure_129_3.paths)];
+            const items1 = [closure_129_0(closure_129_3[45])(closure_129_3[68], closure_129_3.paths)];
             c2 = 2;
             c3 = 1;
             const obj5 = { value: all2(items1), done: false };
@@ -1035,10 +1047,10 @@ obj = function _initHeadlessTask() {
           closure_1 = value;
           const first = closure_129_4(closure_1, 1)[0];
           first.init();
-          closure_129_1(closure_129_3[50])();
+          closure_129_1(closure_129_3[51])();
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         c3 = 3;
         throw tmp19;
@@ -1072,7 +1084,7 @@ function initializeTokenStorage() {
   const Storage3 = tmp(510).Storage;
   const obj5 = { storageHasToken: null != Storage3.get(closure_17), tokenManagerHasToken: tmp12 };
   obj.verbose("Token manager has initialized", obj5);
-  __initData();
+  closure_1_32();
 }
 ({ AppState: metroRequire, NativeEventEmitter: metroImportDefault, Linking: metroImportAll, LogBox: c9, NativeModules: c10 } = react_native);
 let closure_11 = IntlLoaderStore.subscribeToIntlLoadingSuccess;
@@ -1088,7 +1100,7 @@ const future = new Future.Future();
 obj = { None: 0, [0]: "None", HeadlessRan: 1, [1]: "HeadlessRan", Full: 2, [2]: "Full" };
 const None = obj.None;
 let promise = new Promise((arg0) => {
-  let closure_1_31 = arg0;
+  let closure_1_32 = arg0;
 });
 const loadIndex = TTITrackerDefault.loadIndex;
 loadIndex.recordEnd();

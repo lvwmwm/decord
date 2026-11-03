@@ -1,80 +1,107 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16598
+// Function ID: 16599
 // Name: SaturationValueColorPicker
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 16452, 5587, 5303, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 16596, 1705, 5710, 5426, 2]
 // Exports: default
 
-// Module 16454 (SaturationValueColorPicker)
+// Module 16598 (SaturationValueColorPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16452 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16596 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, set, set2;
+const _modDef1652 = _mod1652;
+let _HermesInternal, importDefault, str, str2, str3, str4, str5;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-function ColorBox(hue) {
-  let closure_1;
+let tmp5;
+const _mod1705 = tmp5(1705);
+function ColorBox(arg0) {
   let colorBoxInnerStyle;
   let colorBoxStyle;
-  let first;
-  let items;
-  let items1;
-  let items2;
-  let obj4;
-  let obj5;
+  let hue;
+  let items4;
+  let items5;
+  let items6;
+  let obj2;
+  let obj3;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp16;
+  let tmp3;
+  let tmp4;
   let tmp8;
-  hue = hue.hue;
-  ({ colorBoxStyle, colorBoxInnerStyle } = hue);
+  let tmp9;
+  ({ hue, colorBoxStyle, colorBoxInnerStyle } = arg0);
   const tmp = closure_8();
-  [first] = react.useState("rgb(0,0,0)");
-  importDefault = tmp4;
-  const tmp5 = hue(5095);
-  class S {
+  [tmp3, tmp4] = _slicedToArray(react.useState("rgb(0,0,0)"), 2);
+  const items = [closure_9, , ];
+  const tmp2 = _slicedToArray(react.useState("rgb(0,0,0)"), 2);
+  const useAnimatedReaction = _mod1652.useAnimatedReaction;
+  _mod1652;
+  items[1] = ColorPickerUtils.hslToRgbWorklet;
+  items[2] = hue;
+  let c0;
+  let c1;
+  [tmp8, tmp9, tmp10] = items;
+  class SaturationValueColorPickerTsx1 {
     constructor() {
-      const obj = ColorPickerUtils;
-      const obj2 = { h: hue.get(), s: 1, l: 0.5 };
-      return obj.hslToRgbWorklet(obj2);
+      obj = { h: closure_1.get(), s: 1, l: 0.5 };
+      return closure_0(obj);
     }
   }
-  let obj = { hslToRgbWorklet: hue(16452).hslToRgbWorklet, hue };
-  const useAnimatedReaction = tmp5.useAnimatedReaction;
-  S.__closure = obj;
-  S.__workletHash = 8814597686728;
-  S.__initData = __initData;
-  const fn = function v(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const _HermesInternal = HermesInternal;
-      const obj = ReanimatedRexport;
-      const runOnJSResult = obj.runOnJS(closure_1);
-      runOnJSResult("rgb(" + arg0[0] + ", " + arg0[1] + ", " + arg0[2] + ")");
+  const items1 = [tmp9, tmp10];
+  SaturationValueColorPickerTsx1.__closure = items1;
+  SaturationValueColorPickerTsx1.__workletHash = 16511625483345;
+  SaturationValueColorPickerTsx1.__initData = tmp8;
+  const items2 = [closure_10, _mod1705.scheduleOnRN, tmp4];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp11, tmp12, tmp13] = items2;
+  class SaturationValueColorPickerTsx2 {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        tmp = closure_0;
+        tmp2 = closure_1;
+        tmp3 = globalThis;
+        _HermesInternal = HermesInternal;
+        str = ")";
+        str2 = ", ";
+        str3 = "rgb(";
+        str4 = ", ";
+        str5 = ", ";
+        tmp4 = closure_0(closure_1, "rgb(" + arg0[0] + ", " + arg0[1] + ", " + arg0[2] + ")");
+      }
+      return;
     }
-  };
-  let obj2 = { runOnJS: hue(5095).runOnJS, setColor: tmp4 };
-  fn.__closure = obj2;
-  fn.__workletHash = 14688428173537;
-  fn.__initData = __initData2;
-  const animatedReaction = useAnimatedReaction(S, fn);
-  const obj3 = { style: items, colors: items1, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 }, children: closure_6(tmp8, obj4) };
-  items = [tmp.colorBox, colorBoxStyle];
-  items1 = ["rgb(255,255,255)", first];
-  obj4 = { colors: ["rgba(0, 0, 0, 0)", "#000"], children: closure_6(View, obj5) };
-  obj5 = { style: items2 };
-  items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
-  const tmp7 = LinearGradientDefault;
-  tmp8 = LinearGradientDefault;
-  return closure_6(tmp7, obj3);
+  }
+  const items3 = [tmp12, tmp13];
+  SaturationValueColorPickerTsx2.__closure = items3;
+  SaturationValueColorPickerTsx2.__workletHash = 3512294390005;
+  SaturationValueColorPickerTsx2.__initData = tmp11;
+  const animatedReaction = useAnimatedReaction(SaturationValueColorPickerTsx1, SaturationValueColorPickerTsx2);
+  let obj = { style: items4, colors: items5, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 }, children: metroRequire(tmp16, obj2) };
+  items4 = [tmp.colorBox, colorBoxStyle];
+  items5 = ["rgb(255,255,255)", tmp3];
+  obj2 = { colors: ["rgba(0, 0, 0, 0)", "#000"], children: metroRequire(View, obj3) };
+  obj3 = { style: items6 };
+  items6 = [tmp.colorBoxInner, colorBoxInnerStyle];
+  const tmp15 = LinearGradientDefault;
+  tmp16 = LinearGradientDefault;
+  return metroRequire(tmp15, obj);
 }
-let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -83,147 +110,204 @@ size = { top: 0, left: 0, position: "absolute", width: 24, height: 24, borderRad
 createStyles = createStyles.createStyles;
 obj2 = { overflow: "hidden", borderRadius: nativeDefault.radii.xs };
 let closure_8 = createStyles(obj);
-const __initData = { code: "function SaturationValueColorPickerTsx1(){const{hslToRgbWorklet,hue}=this.__closure;return hslToRgbWorklet({h:hue.get(),s:1,l:0.5});}" };
-const __initData2 = { code: "function SaturationValueColorPickerTsx2(result,previous){const{runOnJS,setColor}=this.__closure;if(result!==previous)runOnJS(setColor)(\"rgb(\"+result[0]+\", \"+result[1]+\", \"+result[2]+\")\");}" };
-const __initData3 = { code: "function SaturationValueColorPickerTsx3(event){const{saturation,normalizeValue,width,value,height,onPanUpdate,runOnJS}=this.__closure;saturation.set(normalizeValue(event.x/width));value.set(1-normalizeValue(event.y/height));onPanUpdate!=null&&runOnJS(onPanUpdate)();}" };
-const __initData4 = { code: "function SaturationValueColorPickerTsx4(event){const{saturation,normalizeValue,width,value,height,onPanUpdate,runOnJS}=this.__closure;saturation.set(normalizeValue(event.x/width));value.set(1-normalizeValue(event.y/height));onPanUpdate!=null&&runOnJS(onPanUpdate)();}" };
-const __initData5 = { code: "function SaturationValueColorPickerTsx5(){const{onPanFinalize,runOnJS}=this.__closure;onPanFinalize!=null&&runOnJS(onPanFinalize)();}" };
-const __initData6 = { code: "function SaturationValueColorPickerTsx6(){const{hsvToRgbWorklet,hue,saturation,value,colorBoxWidth,colorBoxHeight}=this.__closure;const rgb=hsvToRgbWorklet({h:hue.get(),s:saturation.get(),v:value.get()});const bgRgb=hsvToRgbWorklet({h:hue.get(),s:0,v:Math.round(1-value.get())});return{backgroundColor:\"rgb(\"+rgb[0]+\", \"+rgb[1]+\", \"+rgb[2]+\")\",transform:[{translateX:colorBoxWidth*saturation.get()},{translateY:colorBoxHeight*(1-value.get())}],borderColor:\"rgb(\"+bgRgb[0]+\", \"+bgRgb[1]+\", \"+bgRgb[2]+\")\"};}" };
+let closure_9 = { code: "(function SaturationValueColorPickerTsx1(){let[hslToRgbWorklet,hue]=this.__closure;return hslToRgbWorklet({h:hue.get(),s:1,l:0.5});})" };
+let closure_10 = { code: "(function SaturationValueColorPickerTsx2(result,previous){let[scheduleOnRN,setColor]=this.__closure;if(result!==previous)scheduleOnRN(setColor,\"rgb(\"+result[0]+\", \"+result[1]+\", \"+result[2]+\")\");})" };
+let closure_12 = { code: "(function SaturationValueColorPickerTsx3(event){let[saturation,normalizeValue,width,value,height,onPanUpdate,scheduleOnRN]=this.__closure;saturation.set(normalizeValue(event.x/width));value.set(1-normalizeValue(event.y/height));onPanUpdate!=null&&scheduleOnRN(onPanUpdate);})" };
+let closure_13 = { code: "(function SaturationValueColorPickerTsx4(event){let[saturation,normalizeValue,width,value,height,onPanUpdate,scheduleOnRN]=this.__closure;saturation.set(normalizeValue(event.x/width));value.set(1-normalizeValue(event.y/height));onPanUpdate!=null&&scheduleOnRN(onPanUpdate);})" };
+let closure_14 = { code: "(function SaturationValueColorPickerTsx5(){let[onPanFinalize,scheduleOnRN]=this.__closure;onPanFinalize!=null&&scheduleOnRN(onPanFinalize);})" };
+let closure_15 = { code: "(function SaturationValueColorPickerTsx6(){let[hsvToRgbWorklet,hue,saturation,value,colorBoxWidth,colorBoxHeight]=this.__closure;const rgb=hsvToRgbWorklet({h:hue.get(),s:saturation.get(),v:value.get()});const bgRgb=hsvToRgbWorklet({h:hue.get(),s:0,v:Math.round(1-value.get())});return{backgroundColor:\"rgb(\"+rgb[0]+\", \"+rgb[1]+\", \"+rgb[2]+\")\",transform:[{translateX:colorBoxWidth*saturation.get()},{translateY:colorBoxHeight*(1-value.get())}],borderColor:\"rgb(\"+bgRgb[0]+\", \"+bgRgb[1]+\", \"+bgRgb[2]+\")\"};})" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/color_picker/native/SaturationValueColorPicker.tsx");
 
-export default function SaturationValueColorPicker(hue) {
-  let closure_4;
+export default function SaturationValueColorPicker(arg0) {
+  let closure_3;
+  let closure_5;
   let colorBoxInnerStyle;
   let colorBoxStyle;
   let first;
-  let fn;
-  let fn2;
-  let fn3;
-  let items1;
-  let items2;
-  let items3;
-  let obj7;
+  let first1;
+  let first2;
+  let hue;
+  let items10;
+  let items11;
+  let items9;
+  let obj5;
   let onPanFinalize;
   let onPanUpdate;
+  let saturation;
   let selectorStyle;
   let style;
-  hue = hue.hue;
-  const saturation = hue.saturation;
-  const value = hue.value;
-  dependencyMap = value;
-  ({ onPanUpdate, onPanFinalize } = hue);
-  let colorBoxWidth;
-  react = undefined;
-  closure_8 = undefined;
-  ({ style, colorBoxStyle, colorBoxInnerStyle, selectorStyle } = hue);
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let value;
+  ({ hue, saturation, value, onPanUpdate } = arg0);
+  first = undefined;
+  importDefault = undefined;
+  first1 = undefined;
+  closure_3 = undefined;
+  first2 = undefined;
+  closure_5 = undefined;
+  ({ onPanFinalize, style, colorBoxStyle, colorBoxInnerStyle, selectorStyle } = arg0);
   let tmp = closure_8();
-  let tmp2 = colorBoxWidth(react.useState(0), 2);
-  colorBoxWidth = tmp2[0];
-  react = tmp2[1];
-  const tmp4 = colorBoxWidth(react.useState(0), 2);
-  const first1 = tmp4[0];
-  let closure_6 = tmp4[1];
-  const tmp6 = colorBoxWidth(react.useState(0), 2);
-  const first2 = tmp6[0];
-  closure_8 = tmp6[1];
-  let obj = { onBegin: fn, onUpdate: fn2, onFinalize: fn3 };
-  fn = function _(arg0) {
-    set = saturation.set;
-    const obj = hue(dependencyMap[7]);
-    const result = set(obj.normalizeValue(arg0.x / first));
-    set2 = dependencyMap.set;
-    const obj2 = hue(dependencyMap[7]);
-    set2(1 - obj2.normalizeValue(arg0.y / first1));
-    const tmp = hue;
-    const tmp2 = dependencyMap;
-    if (null != onPanUpdate) {
-      const tmpResult = tmp(tmp2[6]);
-      tmpResult.runOnJS(tmp5)();
+  let obj = react;
+  [first, importDefault] = react.useState(0);
+  [first1, closure_3] = react.useState(0);
+  [first2, closure_5] = react.useState(0);
+  let items = [closure_12, saturation, , , , , , ];
+  const usePanGesture = LegacyBaseButton.usePanGesture;
+  LegacyBaseButton;
+  items[2] = ColorPickerUtils.normalizeValue;
+  items[3] = first;
+  items[4] = value;
+  items[5] = first1;
+  items[6] = onPanUpdate;
+  items[7] = _mod1705.scheduleOnRN;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  [tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items;
+  let obj2 = { onBegin: SaturationValueColorPickerTsx3, onUpdate: SaturationValueColorPickerTsx4, onFinalize: SaturationValueColorPickerTsx5 };
+  class SaturationValueColorPickerTsx3 {
+    constructor(arg0) {
+      const result = _undefined.set(_undefined2(arg0.x / c2));
+      const result1 = _undefined3.set(1 - _undefined2(arg0.y / c4));
+      if (null != c5) {
+        _undefined4(tmp3);
+      }
     }
-  };
-  const tmp8 = hue(5303);
-  size = { saturation, normalizeValue: hue(16452).normalizeValue, width: colorBoxWidth, value, height: first1, onPanUpdate, runOnJS: hue(5095).runOnJS };
-  const usePanGesture = tmp8.usePanGesture;
-  fn.__closure = size;
-  fn.__workletHash = 1039948278130;
-  fn.__initData = __initData3;
-  fn2 = function h(arg0) {
-    set = saturation.set;
-    const obj = hue(dependencyMap[7]);
-    const result = set(obj.normalizeValue(arg0.x / first));
-    set2 = dependencyMap.set;
-    const obj2 = hue(dependencyMap[7]);
-    set2(1 - obj2.normalizeValue(arg0.y / first1));
-    const tmp = hue;
-    const tmp2 = dependencyMap;
-    if (null != onPanUpdate) {
-      const tmpResult = tmp(tmp2[6]);
-      tmpResult.runOnJS(tmp5)();
+  }
+  const items1 = [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
+  SaturationValueColorPickerTsx3.__closure = items1;
+  SaturationValueColorPickerTsx3.__workletHash = 12886468679050;
+  SaturationValueColorPickerTsx3.__initData = tmp11;
+  const items2 = [closure_13, saturation, ColorPickerUtils.normalizeValue, first, value, first1, onPanUpdate, _mod1705.scheduleOnRN];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  c6 = undefined;
+  [tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items2;
+  class SaturationValueColorPickerTsx4 {
+    constructor(arg0) {
+      const result = _undefined.set(_undefined2(arg0.x / c2));
+      const result1 = _undefined3.set(1 - _undefined2(arg0.y / c4));
+      if (null != c5) {
+        _undefined4(tmp3);
+      }
     }
-  };
-  const size1 = { saturation, normalizeValue: hue(16452).normalizeValue, width: colorBoxWidth, value, height: first1, onPanUpdate, runOnJS: hue(5095).runOnJS };
-  fn2.__closure = size1;
-  fn2.__workletHash = 3656850328181;
-  fn2.__initData = __initData4;
-  fn3 = function c() {
-    if (null != onPanFinalize) {
-      const obj = hue(dependencyMap[6]);
-      obj.runOnJS(tmp)();
+  }
+  const items3 = [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
+  SaturationValueColorPickerTsx4.__closure = items3;
+  SaturationValueColorPickerTsx4.__workletHash = 11287600813869;
+  SaturationValueColorPickerTsx4.__initData = tmp19;
+  const items4 = [closure_14, onPanFinalize, _mod1705.scheduleOnRN];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp27, tmp28, tmp29] = items4;
+  class SaturationValueColorPickerTsx5 {
+    constructor() {
+      if (null != c0) {
+        _undefined(tmp);
+      }
     }
-  };
-  let obj2 = { onPanFinalize, runOnJS: hue(5095).runOnJS };
-  fn3.__closure = obj2;
-  fn3.__workletHash = 12553589408812;
-  fn3.__initData = __initData5;
-  const panGesture = usePanGesture(obj);
-  const obj5 = hue(5095);
-  const fn4 = function z() {
-    let items;
-    const obj = ColorPickerUtils;
-    const obj2 = { h: hue.get(), s: saturation.get(), v: dependencyMap.get() };
-    const hsvToRgbWorkletResult = obj.hsvToRgbWorklet(obj2);
-    const hsvToRgbWorklet = ColorPickerUtils.hsvToRgbWorklet;
-    const obj3 = { h: hue.get(), s: 0, v: Math.round(1 - dependencyMap.get()) };
-    const hsvToRgbWorkletResult1 = hsvToRgbWorklet(obj3);
-    const obj4 = { backgroundColor: "rgb(" + hsvToRgbWorkletResult[0] + ", " + hsvToRgbWorkletResult[1] + ", " + hsvToRgbWorkletResult[2] + ")", transform: items, borderColor: "rgb(" + hsvToRgbWorkletResult1[0] + ", " + hsvToRgbWorkletResult1[1] + ", " + hsvToRgbWorkletResult1[2] + ")" };
-    items = [{ translateX: first * saturation.get() }, ];
-    ({ translateX: first * saturation.get() });
-    items[1] = { translateY: first1 * (1 - dependencyMap.get()) };
-    ({ translateY: first1 * (1 - dependencyMap.get()) });
-    return obj4;
-  };
-  let obj3 = { hsvToRgbWorklet: hue(16452).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
-  fn4.__closure = obj3;
-  fn4.__workletHash = 15029576157619;
-  fn4.__initData = __initData6;
-  const animatedStyle = obj5.useAnimatedStyle(fn4);
-  const callback = react.useCallback((nativeEvent) => {
+  }
+  const items5 = [tmp28, tmp29];
+  SaturationValueColorPickerTsx5.__closure = items5;
+  SaturationValueColorPickerTsx5.__workletHash = 13952547708884;
+  SaturationValueColorPickerTsx5.__initData = tmp27;
+  const panGesture = usePanGesture(obj2);
+  const items6 = [closure_15, , , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items6[1] = ColorPickerUtils.hsvToRgbWorklet;
+  items6[2] = hue;
+  items6[3] = saturation;
+  items6[4] = value;
+  items6[5] = first;
+  items6[6] = first1;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  [tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38] = items6;
+  class SaturationValueColorPickerTsx6 {
+    constructor() {
+      let items;
+      const obj = { h: _undefined2.get(), s: _undefined3.get(), v: _undefined4.get() };
+      const tmp = _undefined(obj);
+      const obj2 = { h: _undefined2.get(), s: 0, v: Math.round(1 - _undefined4.get()) };
+      const tmp2 = _undefined(obj2);
+      const obj3 = { backgroundColor: "rgb(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ")", transform: items, borderColor: "rgb(" + tmp2[0] + ", " + tmp2[1] + ", " + tmp2[2] + ")" };
+      items = [{ translateX: c4 * _undefined3.get() }, ];
+      ({ translateX: c4 * _undefined3.get() });
+      items[1] = { translateY: c5 * (1 - _undefined4.get()) };
+      ({ translateY: c5 * (1 - _undefined4.get()) });
+      return obj3;
+    }
+  }
+  const items7 = [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38];
+  SaturationValueColorPickerTsx6.__closure = items7;
+  SaturationValueColorPickerTsx6.__workletHash = 2440308818282;
+  SaturationValueColorPickerTsx6.__initData = tmp32;
+  const animatedStyle = useAnimatedStyle(SaturationValueColorPickerTsx6);
+  const callback = obj.useCallback((nativeEvent) => {
     const layout = nativeEvent.nativeEvent.layout;
     const height = layout.height;
-    closure_4(layout.width);
-    closure_6(height);
+    closure_1(layout.width);
+    closure_3(height);
   }, []);
-  let items = [first2, colorBoxWidth, first1];
-  const callback1 = react.useCallback((nativeEvent) => {
-    closure_8(nativeEvent.nativeEvent.layout.width);
+  const items8 = [first2, first, first1];
+  const callback1 = obj.useCallback((nativeEvent) => {
+    closure_5(nativeEvent.nativeEvent.layout.width);
   }, []);
   let result = first2 / 2;
-  let obj4 = { style: items1, children: items2 };
-  items1 = [
+  let obj3 = { style: items9, children: items10 };
+  items9 = [
     tmp.container,
     style,
-    react.useMemo(() => {
+    obj.useMemo(() => {
       size = { height: first1 + first2, width: first + first2 };
       return size;
-    }, items)
+    }, items8)
   ];
-  const obj6 = { gesture: panGesture, children: closure_6(first1, obj7) };
-  obj7 = { onLayout: callback, hitSlop: { top: result, bottom: result, left: result, right: result }, children: closure_6(ColorBox, { hue, colorBoxStyle, colorBoxInnerStyle }) };
-  const GestureDetector = hue(5303).GestureDetector;
-  items2 = [closure_6(GestureDetector, obj6), ];
-  const obj8 = { onLayout: callback1, pointerEvents: "box-none", style: items3 };
-  items3 = [tmp.selector, animatedStyle, selectorStyle];
-  items2[1] = closure_6(saturation(5095).View, obj8);
-  return first2(first1, obj4);
+  const obj4 = { gesture: panGesture, children: metroRequire(View, obj5) };
+  obj5 = { onLayout: callback, hitSlop: { top: result, bottom: result, left: result, right: result }, children: metroRequire(ColorBox, { hue, colorBoxStyle, colorBoxInnerStyle }) };
+  const GestureDetector = tmp8(5426).GestureDetector;
+  items10 = [metroRequire(GestureDetector, obj4), ];
+  const obj6 = { onLayout: callback1, pointerEvents: "box-none", style: items11 };
+  items11 = [tmp.selector, animatedStyle, selectorStyle];
+  items10[1] = metroRequire(_modDef1652.View, obj6);
+  return metroImportDefault(View, obj3);
 };

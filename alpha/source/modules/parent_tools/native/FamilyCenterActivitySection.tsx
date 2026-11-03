@@ -1,21 +1,21 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16946
+// Function ID: 16947
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7716, 21, 5014, 575, 8370, 8372, 16798, 5624, 13359, 1113, 2538, 16804, 6980, 2]
+// Dependencies: [32, 19, 17, 7840, 21, 5141, 575, 8494, 8496, 16941, 5747, 5831, 1113, 2667, 13495, 16947, 7106, 2]
 // Exports: default
 
-// Module 16803 (FamilyCenterActivitySection)
+// Module 16946 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8370 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16798 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8494 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8496 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -70,7 +70,7 @@ function FamilyCenterActivitySectionHeader(displayType) {
     const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = tmp14(tmp3(5624).Text, obj3);
+      tmp14Result = tmp14(tmp3(5747).Text, obj3);
     }
     const obj6 = { children: items };
     items[1] = tmp14Result;
@@ -98,30 +98,36 @@ export default function FamilyCenterActivitySection(displayType) {
   let items1;
   let obj11;
   let obj9;
-  let tmp19Result;
+  let tmp20Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(16798);
+  let obj = displayType(16941);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(16798);
+  const obj2 = displayType(16941);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(13359);
-  const familyCenterActions = obj3.useFamilyCenterActions({});
+  const callback = react.useCallback(() => {
+    const presentFailedToast = displayType(closure_2[11]).presentFailedToast;
+    displayType(closure_2[11]);
+    const intl = displayType(closure_2[12]).intl;
+    presentFailedToast(intl.string(loadMore(closure_2[13]).Wu8BK2));
+  }, []);
+  const obj3 = displayType(13495);
+  const familyCenterActions = obj3.useFamilyCenterActions({ onError: callback });
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
-  const tmp7 = _slicedToArray(react.useState(closure_7), 2);
-  dependencyMap = tmp7[1];
-  const substr = actionsForDisplayType.slice(0, tmp7[0]);
+  const tmp8 = _slicedToArray(react.useState(closure_7), 2);
+  dependencyMap = tmp8[1];
+  const substr = actionsForDisplayType.slice(0, tmp8[0]);
   const items = [loadMore, displayType];
-  const tmp6 = closure_7;
+  const tmp7 = closure_7;
   if (0 === actionsForDisplayType.length) {
     return null;
   } else {
-    const intl = tmp2(1113).intl;
+    let intl = tmp2(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     const _Math = Math;
-    const obj4 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp6) };
-    const v7dMmJY = loadMore(2538)["7dMmJY"];
+    const obj4 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp7) };
+    const v7dMmJY = loadMore(2667)["7dMmJY"];
     const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj4);
     const obj5 = { style: tmp.container, children: items1 };
     const obj6 = { displayType };
@@ -129,27 +135,27 @@ export default function FamilyCenterActivitySection(displayType) {
       closure_9(FamilyCenterActivitySectionHeader, obj6),
       substr.map((action) => {
           const obj = { action };
-          return closure_1_9(loadMore(closure_2[14]), obj, action.event_id);
+          return closure_1_9(loadMore(closure_2[15]), obj, action.event_id);
         }),
 
     ];
-    let tmp19Result2 = null;
-    const tmp17 = closure_10;
+    let tmp20Result2 = null;
+    const tmp18 = closure_10;
     if (substr.length < actionTotalsForDisplayType) {
-      const obj7 = { style: tmp.loadMoreContainer, children: tmp19Result };
+      const obj7 = { style: tmp.loadMoreContainer, children: tmp20Result };
       if (isMoreLoading) {
         const obj8 = { style: tmp.loadMore, children: closure_9(closure_5, obj9) };
         obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
-        tmp19Result = tmp19(tmp18, obj8);
+        tmp20Result = tmp20(tmp19, obj8);
       } else {
-        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5624).Text, obj11) };
-        const PressableOpacity = tmp2(6980).PressableOpacity;
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp9, children: closure_9(displayType(5747).Text, obj11) };
+        const PressableOpacity = tmp2(7106).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-        tmp19Result = tmp19(PressableOpacity, obj10);
+        tmp20Result = tmp20(PressableOpacity, obj10);
       }
-      tmp19Result2 = tmp19(tmp18, obj7);
+      tmp20Result2 = tmp20(tmp19, obj7);
     }
-    items1[2] = tmp19Result2;
-    return tmp17(closure_6, obj5);
+    items1[2] = tmp20Result2;
+    return tmp18(closure_6, obj5);
   }
 };

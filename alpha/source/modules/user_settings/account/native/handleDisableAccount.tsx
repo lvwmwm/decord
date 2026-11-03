@@ -1,16 +1,16 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16856
+// Function ID: 16857
 // Name: handleDisableAccount
-// Dependencies: [4885, 1383, 1113, 7152, 16673, 5958, 2]
+// Dependencies: [5012, 1385, 1113, 7273, 16816, 6078, 2]
 // Exports: default
 
-// Module 16713 (handleDisableAccount)
+// Module 16856 (handleDisableAccount)
 import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7152 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 16673 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7273 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 16816 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/account/native/handleDisableAccount.tsx");

@@ -1,35 +1,35 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14451
+// Function ID: 14452
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 9199, 4863, 9119, 4944, 9133, 7147, 1072, 21, 5014, 5586, 575, 1252, 6975, 8661, 1113, 7294, 9198, 1497, 5274, 504, 6021, 5593, 9150, 6998, 5021, 9129, 14280, 9118, 5760, 7292, 5624, 14321, 6980, 1187, 9165, 9196, 5634, 2]
+// Dependencies: [32, 19, 17, 9327, 4990, 9247, 5071, 9261, 7270, 1072, 21, 5141, 5709, 575, 1252, 7101, 8785, 1113, 7414, 9326, 1499, 5397, 504, 6141, 5716, 9278, 7124, 5148, 9257, 14411, 9246, 5880, 7412, 5747, 14452, 7106, 1187, 9293, 9324, 5754, 2]
 // Exports: default
 
-// Module 14320 (GuildInvite)
+// Module 14451 (GuildInvite)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import react_native from "react-native" /* 6021 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7147 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
-import GroupIcon from "GroupIcon" /* 8661 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9150 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9198 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9199 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14280 */;
+import NavigatorConstants from "NavigatorConstants" /* 5709 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
+import react_native from "react-native" /* 6141 */;
+import TableRow2 from "TableRow" /* 7101 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7270 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7414 */;
+import GroupIcon from "GroupIcon" /* 8785 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9246 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9278 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9326 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9327 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9119 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9133 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9247 */;
+import GuildChannelStore from "GuildChannelStore" /* 5071 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9261 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -272,7 +272,7 @@ export default function GuildInvite(closeOnEditInviteLink) {
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(9118);
+      const tmp2Result = tmp2(9246);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(inviteSuggestionRows));
       closure_6(true);
     }
@@ -286,7 +286,7 @@ export default function GuildInvite(closeOnEditInviteLink) {
       }
       const rect = { top: true, left: true, right: true, style: tmp.container, children: items8 };
       const SafeAreaPaddingView = tmp2(tmp3[32]).SafeAreaPaddingView;
-      const obj7 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(tmp2(tmp3[17]).t.OZ1qhO) };
+      const obj7 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(tmp3[17]).t.OZ1qhO) };
       const Text = tmp2(tmp3[33]).Text;
       intl = tmp2(tmp3[17]).intl;
       items8 = [closure_17(Text, obj7), , , , ];

@@ -1,17 +1,22 @@
-// Module ID: 18109
-// Function ID: 18110
+// Module ID: 18253
+// Function ID: 18254
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 5014, 12411, 9823, 10736, 18080, 1491, 5095, 2]
+// Dependencies: [17, 21, 5141, 12547, 9954, 10866, 18224, 1493, 1652, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 18109 (ScreenAlignedThemedGradient)
+// Module 18253 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
-import useActiveTheme from "useActiveTheme" /* 9823 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useActiveTheme from "useActiveTheme" /* 9954 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10866 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12547 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18224 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
+
+let obj1, obj4;
 
 let c3;
 let closure_4;
@@ -29,7 +34,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1) => {
   ({ translateY: roundToNearestPixelDefault(-arg1) });
   return obj;
 });
-const __initData = { code: "function ScreenAlignedThemedGradientTsx1(){const{roundToNearestPixel,offsetX,panelTranslateX,offsetY}=this.__closure;return{transform:[{translateX:roundToNearestPixel(-offsetX-panelTranslateX.get())},{translateY:roundToNearestPixel(-offsetY)}]};}" };
+let closure_7 = { code: "(function ScreenAlignedThemedGradientTsx1(){let[roundToNearestPixel,offsetX,panelTranslateX,offsetY]=this.__closure;return{transform:[{translateX:roundToNearestPixel(-offsetX-panelTranslateX.get())},{translateY:roundToNearestPixel(-offsetY)}]};})" };
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/ScreenAlignedThemedGradient.tsx");
 
 export default function ScreenAlignedThemedGradient(arg0) {
@@ -40,34 +45,53 @@ export default function ScreenAlignedThemedGradient(arg0) {
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
   return <React3 pointerEvents="none" style={closure_6(offsetX, offsetY).container}>{jsx(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive })}</React3>;
 };
-export function ScreenAlignedThemedGradientSliding(offsetX) {
-  offsetX = offsetX.offsetX;
-  const offsetY = offsetX.offsetY;
-  let panelTranslateX;
-  let obj = offsetX(panelTranslateX[4]);
+export function ScreenAlignedThemedGradientSliding(arg0) {
+  let offsetX;
+  let offsetY;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let tmp = dependencyMap;
+  ({ offsetX, offsetY } = arg0);
+  let obj = useActiveTheme;
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
-  let obj2 = offsetX(panelTranslateX[6]);
-  panelTranslateX = obj2.useHomeDrawerState().panelTranslateX;
-  const height = offsetY(panelTranslateX[7])({ ignoreKeyboard: true }).height;
-  const obj3 = offsetX(panelTranslateX[8]);
-  const fn = function o() {
-    let items;
-    let tmp;
-    let tmp2;
-    const obj = { transform: items };
-    const obj2 = { translateX: tmp(tmp2 - panelTranslateX.get()) };
-    tmp = roundToNearestPixelDefault;
-    tmp2 = -offsetX;
-    items = [obj2, { translateY: roundToNearestPixelDefault(-offsetY) }];
-    ({ translateY: roundToNearestPixelDefault(-offsetY) });
-    return obj;
-  };
-  fn.__closure = { roundToNearestPixel: offsetY(panelTranslateX[3]), offsetX, panelTranslateX, offsetY };
-  fn.__workletHash = 14168713340122;
-  fn.__initData = __initData;
-  ({ roundToNearestPixel: offsetY(panelTranslateX[3]), offsetX, panelTranslateX, offsetY });
-  const animatedStyle = obj3.useAnimatedStyle(fn);
-  let items = [absoluteFill.absoluteFill, animatedStyle];
-  const View = offsetY(panelTranslateX[8]).View;
-  return <View pointerEvents="none" style={items}>{null}</View>;
+  let obj2 = useHomeDrawerGesture;
+  const panelTranslateX = obj2.useHomeDrawerState().panelTranslateX;
+  const height = useWindowDimensionsDefault({ ignoreKeyboard: true }).height;
+  let items = [closure_7, , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = roundToNearestPixelDefault;
+  items[2] = offsetX;
+  items[3] = panelTranslateX;
+  items[4] = offsetY;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp5, tmp6, tmp7, tmp8, tmp9] = items;
+  class ScreenAlignedThemedGradientTsx1 {
+    constructor() {
+      obj = { transform: null };
+      obj1 = { translateX: null };
+      tmp = -closure_1;
+      obj1.translateX = closure_0(tmp - closure_2.get());
+      items = [, ];
+      items[0] = obj1;
+      obj4 = { translateY: closure_0(-closure_3) };
+      items[1] = obj4;
+      obj.transform = items;
+      return obj;
+    }
+  }
+  const items1 = [tmp6, tmp7, tmp8, tmp9];
+  ScreenAlignedThemedGradientTsx1.__closure = items1;
+  ScreenAlignedThemedGradientTsx1.__workletHash = 8637379102627;
+  ScreenAlignedThemedGradientTsx1.__initData = tmp5;
+  const animatedStyle = useAnimatedStyle(ScreenAlignedThemedGradientTsx1);
+  const items2 = [_false.absoluteFill, animatedStyle];
+  const View = tmp3(1652).View;
+  return <View pointerEvents="none" style={items2}>{null}</View>;
 }

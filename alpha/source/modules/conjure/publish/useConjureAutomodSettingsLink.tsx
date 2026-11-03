@@ -1,18 +1,18 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12797
+// Function ID: 12798
 // Name: useConjureAutomodSettingsLink
-// Dependencies: [19, 4885, 4946, 6844, 10867, 1072, 21, 504, 6845, 1113, 3868, 9074, 2]
+// Dependencies: [19, 5012, 5073, 6964, 10997, 1072, 21, 504, 6965, 1113, 3995, 9202, 2]
 // Exports: ConjureAutomodSettingsLink, default
 
-// Module 12661 (useConjureAutomodSettingsLink)
-import _modDef3868 from "module_3868" /* 3868 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+// Module 12797 (useConjureAutomodSettingsLink)
+import _modDef3995 from "module_3995" /* 3995 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10997 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function useConjureAutomodSettingsLink(arg0) {
     const project = ConjureProjectStore.getProject(closure_0);
     const tmp = closure_0;
     if (null != project) {
-      if ("user" !== project.install_scope) {
+      if ("guild" === project.install_scope) {
         if (null != project.guild_id) {
           const supported_surfaces = project.supported_surfaces;
           let hasItem;
@@ -77,7 +77,7 @@ export function ConjureAutomodSettingsLink(guildId) {
   const update = guildId.update;
   const intl = guildId(1113).intl;
   const format = intl.format;
-  const tmp3 = _modDef3868;
+  const tmp3 = _modDef3995;
   let obj = { children: items };
   items = [" "];
   const obj2 = {

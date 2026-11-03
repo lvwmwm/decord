@@ -1,16 +1,16 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 13140
+// Function ID: 13141
 // Name: ConjureStaffAccess
-// Dependencies: [4944, 4885, 4956, 1383, 1072, 504, 5652, 2]
+// Dependencies: [5071, 5012, 5083, 1385, 1072, 504, 5772, 2]
 // Exports: useConjureStaffAccessTarget
 
-// Module 13004 (ConjureStaffAccess)
+// Module 13140 (ConjureStaffAccess)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildChannelStore from "GuildChannelStore" /* 5071 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let channel, currentUser, guildsArray, selectableChannels;

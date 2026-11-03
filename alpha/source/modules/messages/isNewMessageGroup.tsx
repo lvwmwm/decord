@@ -1,13 +1,13 @@
-// Module ID: 10120
-// Function ID: 10121
+// Module ID: 10250
+// Function ID: 10251
 // Name: isNewMessageGroup
-// Dependencies: [1072, 1089, 6888, 11, 4836, 2]
+// Dependencies: [1072, 1089, 7008, 11, 4963, 2]
 // Exports: isNewGroupItem
 
-// Module 10120 (isNewMessageGroup)
+// Module 10250 (isNewMessageGroup)
 import DurationsDefault from "Durations" /* 1089 */;
-import DateUtils from "DateUtils" /* 4836 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6888 */;
+import DateUtils from "DateUtils" /* 4963 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7008 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                     let tmp21 = !isSameDayResult;
                     const tmp19 = require;
                     if (isSameDayResult) {
-                      const tmp19Result = tmp19(4836);
+                      const tmp19Result = tmp19(4963);
                       const isWithinIntervalResult = tmp19Result.isWithinInterval(content.timestamp, hasFlag.timestamp, closure_6);
                       let tmp24 = !isWithinIntervalResult;
                       if (isWithinIntervalResult) {

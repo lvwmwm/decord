@@ -1,20 +1,20 @@
-// Module ID: 14243
-// Function ID: 14244
+// Module ID: 14374
+// Function ID: 14375
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 9131, 13858, 21, 5014, 575, 14240, 1196, 1113, 8177, 5258, 14244, 1994, 14366, 2]
+// Dependencies: [19, 17, 9259, 13989, 21, 5141, 575, 14371, 1196, 1113, 8301, 5381, 14375, 2123, 14497, 2]
 // Exports: default
 
-// Module 14243 (HubProgressHeader)
+// Module 14374 (HubProgressHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13858 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13989 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9131 */;
-import createStyles from "createStyles" /* 5014 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9259 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -76,7 +76,7 @@ export default function HubProgressHeader(guild) {
           if (!tmp) {
             const obj2 = { guild, analyticsSource: "Directory Channel Header" };
             const obj = ActionSheetActionCreatorsDefault;
-            obj.openLazy(asyncRequire(14244, dependencyMap.paths), React3, obj2);
+            obj.openLazy(asyncRequire(14375, dependencyMap.paths), React3, obj2);
           }
         },
       iconSource: flag(nextHubProgressStep[14]),

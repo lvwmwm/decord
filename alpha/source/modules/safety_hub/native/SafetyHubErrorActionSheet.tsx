@@ -1,25 +1,23 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16788
+// Function ID: 16789
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 5014, 575, 16644, 5272, 7092, 5624, 1113, 5634, 13314, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 16787, 5395, 7218, 5747, 1113, 5754, 13450, 2]
 // Exports: default
 
-// Module 16645 (SafetyHubErrorActionSheet)
+// Module 16788 (SafetyHubErrorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import CircleXIcon2 from "CircleXIcon" /* 7092 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13314 */;
-import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 16644 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import CircleXIcon2 from "CircleXIcon" /* 7218 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13450 */;
+import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 16787 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -51,11 +49,11 @@ export default function SafetyHubErrorActionSheet(arg0) {
     let obj = { children: items1 };
     const obj2 = { style: tmp2.errorContainer, children: items };
     const obj3 = { style: tmp2.redesignErrorIconContainer, children: hasOwnProperty(CircleXIcon, obj4) };
-    BottomSheet = Sheet_BottomSheet.BottomSheet;
+    const BottomSheet = Sheet_BottomSheet.BottomSheet;
     obj4 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: tmp2.redesignErrorIcon };
     CircleXIcon = CircleXIcon2.CircleXIcon;
     items = [hasOwnProperty(View, obj3), ];
-    const obj5 = { variant: "heading-lg/normal", children: intl.string(intl3.t.TDRvqs) };
+    const obj5 = { variant: "heading-lg/medium", children: intl.string(intl3.t.TDRvqs) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
     items[1] = hasOwnProperty(Text, obj5);

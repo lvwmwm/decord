@@ -1,12 +1,12 @@
-// Module ID: 10056
-// Function ID: 10057
+// Module ID: 10186
+// Function ID: 10187
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [2062, 504, 1113, 2]
+// Dependencies: [2191, 504, 1113, 2]
 // Exports: default
 
-// Module 10056 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 10186 (useMaybeAddPollsMarketingEasterEggNote)
 import get_initialized from "get initialized" /* 504 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
+import LocaleStore from "LocaleStore" /* 2191 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");

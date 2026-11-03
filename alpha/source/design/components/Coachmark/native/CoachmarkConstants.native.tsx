@@ -1,9 +1,9 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 16012
+// Function ID: 16013
 // Name: CoachmarkConstants
 // Dependencies: [2]
 
-// Module 15869 (CoachmarkConstants)
+// Module 16012 (CoachmarkConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Coachmark/native/CoachmarkConstants.native.tsx");

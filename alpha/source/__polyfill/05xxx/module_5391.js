@@ -1,22 +1,13 @@
 // Module ID: 5391
 // Function ID: 5392
-// Dependencies: [5371, 5386, 5362]
-// Exports: useFlingGesture
+// Dependencies: [5392]
 
 // Module 5391
-import ComposedGestureName from "ComposedGestureName" /* 5362 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5371 */;
-import _mod5386 from "module_5386" /* 5386 */;
+import "PATTERN_CHARS";
+import PATTERN_CHARS_mod from "PATTERN_CHARS" /* 5392 */;
 
-let closure_2 = {};
+let PATTERN_CHARS;
+const obj = { success: PATTERN_CHARS.pattern("oO.O"), error: PATTERN_CHARS.pattern("OO.OO"), warning: PATTERN_CHARS.pattern("O.O"), heartbeat: PATTERN_CHARS.pattern("oO--oO"), tripleClick: PATTERN_CHARS.pattern("o.o.o"), notification: PATTERN_CHARS.pattern("o-O=o") };
+PATTERN_CHARS = PATTERN_CHARS_mod;
 
-export function useFlingGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_2;
-  }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
-  const obj2 = _mod5386;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Fling, clonedAndRemappedConfig);
-}
+export const Patterns = obj;

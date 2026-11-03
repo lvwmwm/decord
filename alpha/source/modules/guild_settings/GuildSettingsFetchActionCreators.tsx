@@ -1,16 +1,16 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9208
+// Function ID: 9209
 // Name: GuildSettingsFetchActionCreators
-// Dependencies: [5, 2016, 1397, 1072, 1282, 572, 2]
+// Dependencies: [5, 2145, 1399, 1072, 1282, 572, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 9080 (GuildSettingsFetchActionCreators)
+// Module 9208 (GuildSettingsFetchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import ApplicationRecord from "ApplicationRecord" /* 2145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1397 */;
+import UserRecord from "UserRecord" /* 1399 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchGuildIntegrationsApplications() {

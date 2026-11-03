@@ -1,21 +1,19 @@
-// Module ID: 19070
-// Function ID: 19071
+// Module ID: 19228
+// Function ID: 19229
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11536, 12809, 21, 5014, 575, 12075, 5095, 12814, 19071, 5637, 1113, 19006, 15665, 2]
+// Dependencies: [19, 17, 11673, 12945, 21, 5141, 575, 12211, 1652, 12950, 19229, 5757, 1113, 19164, 15808, 2]
 
-// Module 19070 (LaunchPadPullTab)
+// Module 19228 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import ChatInputConstants from "ChatInputConstants" /* 12809 */;
+import ChatInputConstants from "ChatInputConstants" /* 12945 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12950 */;
+import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19229 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11536 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11673 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let hitSlop;
 
 let LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
 let LAUNCH_PAD_PULL_TAB_WIDTH;
@@ -27,7 +25,11 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let size;
+let tmp2;
 let unpackModuleId;
+const _modDef1652 = tmp2(1652);
+const useAnimatedKeyboardHeightDefault = tmp2(12211);
+const showLaunchPadDefault = tmp2(19164);
 const Pressable = react_native.Pressable;
 ({ LAUNCH_PAD_MARGIN: closure_4, LAUNCH_PAD_PULL_TAB_BORDER_RADIUS } = LaunchPadConstants);
 const LAUNCH_PAD_PULL_TAB_HEIGHT = LaunchPadConstants.LAUNCH_PAD_PULL_TAB_HEIGHT;
@@ -35,178 +37,239 @@ const LAUNCH_PAD_PULL_TAB_HEIGHT = LaunchPadConstants.LAUNCH_PAD_PULL_TAB_HEIGHT
 const CHAT_INPUT_HEIGHT = ChatInputConstants.CHAT_INPUT_HEIGHT;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { pullTab: size, pullTabButton: { width: LAUNCH_PAD_PULL_TAB_WIDTH, height: LAUNCH_PAD_PULL_TAB_HEIGHT, justifyContent: "center", alignItems: "center" }, pullTabOpened: obj2, pullTabClosed: obj3 };
+const obj = { pullTab: size, pullTabButton: { width: LAUNCH_PAD_PULL_TAB_WIDTH, height: LAUNCH_PAD_PULL_TAB_HEIGHT, justifyContent: "center", alignItems: "center" }, pullTabOpened: obj2, pullTabClosed: obj3 };
 size = { position: "absolute", right: 0, width: LAUNCH_PAD_PULL_TAB_WIDTH, height: LAUNCH_PAD_PULL_TAB_HEIGHT, borderTopLeftRadius: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS, borderBottomLeftRadius: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS, borderWidth: 1, borderTopWidth: 1, borderColor: "rgba(0, 0, 0, 0.08)" };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_MOBILE_NAVIGATOR_X);
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj3 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND };
 let closure_14 = createStyles(obj);
-const __initData = { code: "function LaunchPadPullTabTsx1(){const{keyboardHeight}=this.__closure;return keyboardHeight.get();}" };
-const __initData2 = { code: "function LaunchPadPullTabTsx2(keyboardHeight,keyboardHeightPrev){const{launchPadSharedState,updaters,keyboardHeightOpened,launchPadPullTabState,CHAT_INPUT_HEIGHT,LAUNCH_PAD_MARGIN,getWindowDimensionsWorklet,LAUNCH_PAD_PULL_TAB_HEIGHT,LAUNCH_PAD_PULL_TAB_SCALE_OFFSET}=this.__closure;if(launchPadSharedState.get()!==0){updaters.setLaunchPadPullTabMinimized(false);return;}if(keyboardHeightPrev==null||keyboardHeight===keyboardHeightPrev){return;}if(keyboardHeight<keyboardHeightPrev){var _keyboardHeightOpened;if(keyboardHeight===0){updaters.setLaunchPadPullTabMinimized(false);}if(keyboardHeightOpened.get()==null){keyboardHeightOpened.set(keyboardHeightPrev);}const keyboardClosePercent=1-keyboardHeight/((_keyboardHeightOpened=keyboardHeightOpened.get())!==null&&_keyboardHeightOpened!==void 0?_keyboardHeightOpened:keyboardHeightPrev);const keyboardOffsetRetractionAmount=launchPadPullTabState.get().offset*keyboardClosePercent;updaters.setLaunchPadPullTabPosition(launchPadPullTabState.get().position+keyboardOffsetRetractionAmount,launchPadPullTabState.get().offset-keyboardOffsetRetractionAmount);}else{updaters.setLaunchPadPullTabMinimized(true);if(keyboardHeightOpened.get()!=null){keyboardHeightOpened.set(undefined);}const keyboardWithChatInput=keyboardHeight+CHAT_INPUT_HEIGHT+LAUNCH_PAD_MARGIN*2;const spaceUnderPullTab=getWindowDimensionsWorklet({ignoreKeyboard:true}).height-(launchPadPullTabState.get().position+LAUNCH_PAD_PULL_TAB_HEIGHT+LAUNCH_PAD_PULL_TAB_SCALE_OFFSET);const offset=spaceUnderPullTab>keyboardWithChatInput?0:keyboardWithChatInput-spaceUnderPullTab;if(offset>0){updaters.setLaunchPadPullTabPosition(launchPadPullTabState.get().position-offset,launchPadPullTabState.get().offset+offset);}}}" };
-const __initData3 = { code: "function LaunchPadPullTabTsx3(){const{isMinimized,gestureState,LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET,interpolate,launchPadSharedState,windowDimensions,launchPadPullTabState,LAUNCH_PAD_PULL_TAB_BORDER_RADIUS,interpolateColor,LAUNCH_PAD_MARGIN,backgroundColorStart,backgroundColorEnd,withSpring,LAUNCH_PAD_SPRING_CONFIG}=this.__closure;let translateX=isMinimized.get()&&!gestureState.get().active?LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET:interpolate(launchPadSharedState.get(),[0,1],[0,-(windowDimensions.get().width-16)]);if(launchPadSharedState.get()>0.9){translateX=-windowDimensions.get().width;}else if(gestureState.get().active){if(gestureState.get().requiresPop){translateX+=gestureState.get().positionOffsetX*0.3;}else{translateX-=4;}}const translateY=launchPadPullTabState.get().position;const borderRadius=launchPadSharedState.get()<=0&&!gestureState.get().active?0:LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;const backgroundColor=interpolateColor(launchPadSharedState.get()*windowDimensions.get().width,[0,LAUNCH_PAD_MARGIN],[backgroundColorStart,backgroundColorEnd]);return{transform:[{translateX:withSpring(translateX,LAUNCH_PAD_SPRING_CONFIG)},{translateY:withSpring(translateY,LAUNCH_PAD_SPRING_CONFIG)},{scale:withSpring(launchPadPullTabState.get().scale,LAUNCH_PAD_SPRING_CONFIG)}],borderTopRightRadius:withSpring(borderRadius,LAUNCH_PAD_SPRING_CONFIG),borderBottomRightRadius:withSpring(borderRadius,LAUNCH_PAD_SPRING_CONFIG),backgroundColor:backgroundColor};}" };
-const memoResult = react.memo(function LaunchPadPullTab(launchPadSharedState) {
-  let closure_4;
-  let closure_7;
+let closure_15 = { code: "(function LaunchPadPullTabTsx1(){let[keyboardHeight]=this.__closure;return keyboardHeight.get();})" };
+let closure_16 = { code: "(function LaunchPadPullTabTsx2(keyboardHeight,keyboardHeightPrev){let[launchPadSharedState,updaters,keyboardHeightOpened,launchPadPullTabState,CHAT_INPUT_HEIGHT,LAUNCH_PAD_MARGIN,getWindowDimensionsWorklet,LAUNCH_PAD_PULL_TAB_HEIGHT,LAUNCH_PAD_PULL_TAB_SCALE_OFFSET]=this.__closure;if(launchPadSharedState.get()!==0){updaters.setLaunchPadPullTabMinimized(false);return;}if(keyboardHeightPrev==null||keyboardHeight===keyboardHeightPrev){return;}if(keyboardHeight<keyboardHeightPrev){var _keyboardHeightOpened;if(keyboardHeight===0){updaters.setLaunchPadPullTabMinimized(false);}if(keyboardHeightOpened.get()==null){keyboardHeightOpened.set(keyboardHeightPrev);}const keyboardClosePercent=1-keyboardHeight/((_keyboardHeightOpened=keyboardHeightOpened.get())!==null&&_keyboardHeightOpened!==void 0?_keyboardHeightOpened:keyboardHeightPrev);const keyboardOffsetRetractionAmount=launchPadPullTabState.get().offset*keyboardClosePercent;updaters.setLaunchPadPullTabPosition(launchPadPullTabState.get().position+keyboardOffsetRetractionAmount,launchPadPullTabState.get().offset-keyboardOffsetRetractionAmount);}else{updaters.setLaunchPadPullTabMinimized(true);if(keyboardHeightOpened.get()!=null){keyboardHeightOpened.set(undefined);}const keyboardWithChatInput=keyboardHeight+CHAT_INPUT_HEIGHT+LAUNCH_PAD_MARGIN*2;const spaceUnderPullTab=getWindowDimensionsWorklet({ignoreKeyboard:true}).height-(launchPadPullTabState.get().position+LAUNCH_PAD_PULL_TAB_HEIGHT+LAUNCH_PAD_PULL_TAB_SCALE_OFFSET);const offset=spaceUnderPullTab>keyboardWithChatInput?0:keyboardWithChatInput-spaceUnderPullTab;if(offset>0){updaters.setLaunchPadPullTabPosition(launchPadPullTabState.get().position-offset,launchPadPullTabState.get().offset+offset);}}})" };
+let closure_17 = { code: "(function LaunchPadPullTabTsx3(){let[isMinimized,gestureState,LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET,interpolate,launchPadSharedState,windowDimensions,launchPadPullTabState,LAUNCH_PAD_PULL_TAB_BORDER_RADIUS,interpolateColor,LAUNCH_PAD_MARGIN,backgroundColorStart,backgroundColorEnd,withSpring,LAUNCH_PAD_SPRING_CONFIG]=this.__closure;let translateX=isMinimized.get()&&!gestureState.get().active?LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET:interpolate(launchPadSharedState.get(),[0,1],[0,-(windowDimensions.get().width-16)]);if(launchPadSharedState.get()>0.9){translateX=-windowDimensions.get().width;}else if(gestureState.get().active){if(gestureState.get().requiresPop){translateX+=gestureState.get().positionOffsetX*0.3;}else{translateX-=4;}}const translateY=launchPadPullTabState.get().position;const borderRadius=launchPadSharedState.get()<=0&&!gestureState.get().active?0:LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;const backgroundColor=interpolateColor(launchPadSharedState.get()*windowDimensions.get().width,[0,LAUNCH_PAD_MARGIN],[backgroundColorStart,backgroundColorEnd]);return{transform:[{translateX:withSpring(translateX,LAUNCH_PAD_SPRING_CONFIG)},{translateY:withSpring(translateY,LAUNCH_PAD_SPRING_CONFIG)},{scale:withSpring(launchPadPullTabState.get().scale,LAUNCH_PAD_SPRING_CONFIG)}],borderTopRightRadius:withSpring(borderRadius,LAUNCH_PAD_SPRING_CONFIG),borderBottomRightRadius:withSpring(borderRadius,LAUNCH_PAD_SPRING_CONFIG),backgroundColor:backgroundColor};})" };
+const memoResult = react.memo(function LaunchPadPullTab(gestureState) {
   let intl;
-  launchPadSharedState = launchPadSharedState.launchPadSharedState;
-  const launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
-  const gestureState = launchPadSharedState.gestureState;
-  const updaters = launchPadSharedState.updaters;
+  let launchPadPullTabState;
+  let launchPadSharedState;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp28;
+  let tmp29;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp9;
+  let updaters;
+  ({ launchPadSharedState, launchPadPullTabState, updaters } = gestureState);
+  gestureState = gestureState.gestureState;
   const tmp = closure_14();
-  const tmp2 = launchPadPullTabState(gestureState[9])();
-  LAUNCH_PAD_MARGIN = tmp2;
+  let tmp2 = importDefault;
+  let tmp4 = useWindowDimensionsSharedValueDefault();
   const backgroundColor = tmp.pullTabClosed.backgroundColor;
   const backgroundColor2 = tmp.pullTabOpened.backgroundColor;
-  const tmp3 = launchPadPullTabState(gestureState[10])({ launchPadSharedState, launchPadPullTabState });
-  hitSlop = tmp3;
-  let obj = launchPadSharedState(gestureState[8]);
-  class U {
+  const tmp5 = useLaunchPadPullTabMinimizedDefault({ launchPadSharedState, launchPadPullTabState });
+  let items = [closure_17, tmp5, gestureState, closure_8, , , , , , , , , , , ];
+  const useAnimatedStyle = updaters(1652).useAnimatedStyle;
+  const tmp7 = updaters(1652);
+  items[4] = updaters(1652).interpolate;
+  items[5] = launchPadSharedState;
+  items[6] = tmp4;
+  items[7] = launchPadPullTabState;
+  items[8] = LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
+  items[9] = updaters(1652).interpolateColor;
+  items[10] = closure_4;
+  items[11] = backgroundColor;
+  items[12] = backgroundColor2;
+  items[13] = updaters(5757).withSpring;
+  items[14] = closure_11;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
+  let c10;
+  let c11;
+  let c12;
+  let c13;
+  [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23] = items;
+  const tmp8 = closure_4;
+  class LaunchPadPullTabTsx3 {
     constructor() {
-      let interpolateColorResult;
       let items2;
-      let obj10;
-      let obj11;
-      let obj12;
-      let obj6;
-      let obj8;
-      if (closure_7.get()) {
-        let interpolateResult;
-        let tmp5;
+      let tmp14;
+      if (_undefined.get()) {
+        let tmp2;
+        let tmp4;
         let num5;
-        if (!gestureState.get().active) {
-          interpolateResult = metroImportAll;
+        if (!_undefined2.get().active) {
+          tmp2 = c2;
         }
-        if (launchPadSharedState.get() > 0.9) {
-          tmp5 = -closure_4.get().width;
+        if (_undefined4.get() > 0.9) {
+          tmp4 = -_undefined5.get().width;
         } else {
-          tmp5 = interpolateResult;
-          if (gestureState.get().active) {
+          tmp4 = tmp2;
+          if (_undefined2.get().active) {
             let sum;
-            if (gestureState.get().requiresPop) {
-              sum = interpolateResult + 0.3 * obj2.get().positionOffsetX;
+            if (_undefined2.get().requiresPop) {
+              sum = tmp2 + 0.3 * obj2.get().positionOffsetX;
             } else {
-              sum = interpolateResult - 4;
+              sum = tmp2 - 4;
             }
-            tmp5 = sum;
+            tmp4 = sum;
           }
         }
-        const position = launchPadPullTabState.get().position;
-        const obj3 = launchPadPullTabState;
-        if (launchPadSharedState.get() > 0) {
-          num5 = LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
+        const position = _undefined6.get().position;
+        const obj3 = _undefined6;
+        if (_undefined4.get() > 0) {
+          num5 = c7;
         } else {
           num5 = 0;
         }
-        const interpolateColor = ReanimatedRexport.interpolateColor;
-        ReanimatedRexport;
         const value = obj.get();
-        const items = [0, closure_4];
-        const items1 = [backgroundColor, backgroundColor2];
-        const obj4 = { transform: items2, borderTopRightRadius: obj11.withSpring(num5, unpackModuleId), borderBottomRightRadius: obj12.withSpring(num5, unpackModuleId), backgroundColor: interpolateColorResult };
-        const obj5 = { translateX: obj6.withSpring(tmp5, unpackModuleId) };
-        interpolateColorResult = interpolateColor(value * closure_4.get().width, items, items1);
+        const items = [0, c9];
+        const items1 = [c10, c11];
+        const obj4 = { transform: items2, borderTopRightRadius: _undefined8(num5, c13), borderBottomRightRadius: _undefined8(num5, c13), backgroundColor: tmp14 };
+        const obj5 = { translateX: _undefined8(tmp4, c13) };
         items2 = [obj5, , ];
-        obj6 = spring;
-        const obj7 = { translateY: obj8.withSpring(position, unpackModuleId) };
-        items2[1] = obj7;
-        obj8 = spring;
-        const obj9 = { scale: obj10.withSpring(obj3.get().scale, unpackModuleId) };
-        items2[2] = obj9;
-        obj10 = spring;
-        obj11 = spring;
-        obj12 = spring;
+        tmp14 = _undefined7(value * _undefined5.get().width, items, items1);
+        items2[1] = { translateY: _undefined8(position, c13) };
+        const obj6 = { translateY: _undefined8(position, c13) };
+        items2[2] = { scale: _undefined8(obj3.get().scale, c13) };
+        const obj7 = { scale: _undefined8(obj3.get().scale, c13) };
         return obj4;
       }
-      const interpolate = ReanimatedRexport.interpolate;
-      ReanimatedRexport;
-      const value2 = launchPadSharedState.get();
-      const items3 = [0, -closure_4.get().width - 16];
-      interpolateResult = interpolate(value2, [0, 1], items3);
+      const value2 = _undefined4.get();
+      const items3 = [0, -_undefined5.get().width - 16];
+      tmp2 = _undefined3(value2, [0, 1], items3);
     }
   }
-  const obj2 = { isMinimized: tmp3, gestureState, LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET, interpolate: launchPadSharedState(gestureState[8]).interpolate, launchPadSharedState, windowDimensions: tmp2, launchPadPullTabState, LAUNCH_PAD_PULL_TAB_BORDER_RADIUS: backgroundColor, interpolateColor: launchPadSharedState(gestureState[8]).interpolateColor, LAUNCH_PAD_MARGIN, backgroundColorStart: backgroundColor, backgroundColorEnd: backgroundColor2, withSpring: launchPadSharedState(gestureState[11]).withSpring, LAUNCH_PAD_SPRING_CONFIG };
-  U.__closure = obj2;
-  U.__workletHash = 3768918311497;
-  U.__initData = __initData3;
-  const animatedStyle = obj.useAnimatedStyle(U);
-  let tmp5 = launchPadPullTabState(gestureState[7])();
-  let closure_3 = tmp5;
-  let obj3 = launchPadSharedState(gestureState[8]);
-  const sharedValue = obj3.useSharedValue(undefined);
-  let obj4 = launchPadSharedState(gestureState[8]);
-  const fn = function _() {
-    return closure_3.get();
-  };
-  fn.__closure = { keyboardHeight: tmp5 };
-  fn.__workletHash = 14545769097570;
-  fn.__initData = __initData;
-  const fn2 = function s(arg0, arg1) {
-    if (0 === launchPadSharedState.get()) {
-      if (null != arg1) {
-        if (arg0 !== arg1) {
-          if (arg0 < arg1) {
-            if (0 === arg0) {
-              const result = updaters.setLaunchPadPullTabMinimized(false);
-            }
-            if (null == sharedValue.get()) {
-              const result1 = obj3.set(arg1);
-            }
-            let value = obj3.get();
-            if (value == null) {
-              value = arg1;
-            }
-            const diff = 1 - arg0 / value;
-            const result2 = launchPadPullTabState.get().offset * diff;
-            const setLaunchPadPullTabPosition = updaters.setLaunchPadPullTabPosition;
-            const sum = launchPadPullTabState.get().position + result2;
-            const result3 = setLaunchPadPullTabPosition(sum, launchPadPullTabState.get().offset - result2);
-          } else {
-            const result4 = updaters.setLaunchPadPullTabMinimized(true);
-            const obj4 = sharedValue;
-            const tmp25 = updaters;
-            if (null != sharedValue.get()) {
-              const result5 = obj4.set(undefined);
-            }
-            const sum1 = arg0 + CHAT_INPUT_HEIGHT + 2 * closure_4;
-            const obj = launchPadSharedState(gestureState[9]);
-            const diff1 = obj.getWindowDimensionsWorklet({ ignoreKeyboard: true }).height - (launchPadPullTabState.get().position + backgroundColor2 + LAUNCH_PAD_PULL_TAB_SCALE_OFFSET);
-            let num2 = 0;
-            if (diff1 <= sum1) {
-              num2 = sum1 - diff1;
-            }
-            if (0 < num2) {
-              const setLaunchPadPullTabPosition2 = tmp25.setLaunchPadPullTabPosition;
-              const diff2 = obj2.get().position - num2;
-              const result6 = setLaunchPadPullTabPosition2(diff2, obj2.get().offset + num2);
+  let items1 = [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23];
+  LaunchPadPullTabTsx3.__closure = items1;
+  LaunchPadPullTabTsx3.__workletHash = 9280703221520;
+  LaunchPadPullTabTsx3.__initData = tmp9;
+  const animatedStyle = useAnimatedStyle(LaunchPadPullTabTsx3);
+  const tmp25 = useAnimatedKeyboardHeightDefault();
+  const tmp6Result = updaters(1652);
+  const sharedValue = tmp6Result.useSharedValue(undefined);
+  let items2 = [closure_15, tmp25];
+  c0 = undefined;
+  [tmp28, tmp29] = items2;
+  const tmp6Result2 = updaters(1652);
+  class LaunchPadPullTabTsx1 {
+    constructor() {
+      return _undefined.get();
+    }
+  }
+  let items3 = [tmp29];
+  LaunchPadPullTabTsx1.__closure = items3;
+  LaunchPadPullTabTsx1.__workletHash = 13083151348443;
+  LaunchPadPullTabTsx1.__initData = tmp28;
+  const items4 = [closure_16, launchPadSharedState, updaters, sharedValue, launchPadPullTabState, CHAT_INPUT_HEIGHT, tmp8, , , ];
+  const useAnimatedReaction = tmp6Result2.useAnimatedReaction;
+  items4[7] = updaters(12950).getWindowDimensionsWorklet;
+  items4[8] = LAUNCH_PAD_PULL_TAB_HEIGHT;
+  items4[9] = closure_10;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  c6 = undefined;
+  c7 = undefined;
+  c8 = undefined;
+  [tmp30, tmp31, tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39] = items4;
+  class LaunchPadPullTabTsx2 {
+    constructor(arg0, arg1) {
+      if (0 === _undefined.get()) {
+        if (null != arg1) {
+          if (arg0 !== arg1) {
+            if (arg0 < arg1) {
+              if (0 === arg0) {
+                const result = _undefined2.setLaunchPadPullTabMinimized(false);
+              }
+              if (null == _undefined3.get()) {
+                const result1 = obj2.set(arg1);
+              }
+              let value = obj2.get();
+              if (value == null) {
+                value = arg1;
+              }
+              const diff = 1 - arg0 / value;
+              const result2 = _undefined4.get().offset * diff;
+              const setLaunchPadPullTabPosition = _undefined2.setLaunchPadPullTabPosition;
+              const sum = _undefined4.get().position + result2;
+              const result3 = setLaunchPadPullTabPosition(sum, _undefined4.get().offset - result2);
+            } else {
+              const result4 = _undefined2.setLaunchPadPullTabMinimized(true);
+              const obj3 = _undefined3;
+              const tmp24 = _undefined2;
+              if (null != _undefined3.get()) {
+                const result5 = obj3.set(undefined);
+              }
+              const sum1 = arg0 + c4 + 2 * c5;
+              const diff1 = _undefined5({ ignoreKeyboard: true }).height - (_undefined4.get().position + c7 + c8);
+              let num2 = 0;
+              if (diff1 <= sum1) {
+                num2 = sum1 - diff1;
+              }
+              if (0 < num2) {
+                const setLaunchPadPullTabPosition2 = tmp24.setLaunchPadPullTabPosition;
+                const diff2 = obj.get().position - num2;
+                const result6 = setLaunchPadPullTabPosition2(diff2, obj.get().offset + num2);
+              }
             }
           }
         }
+      } else {
+        const result7 = _undefined2.setLaunchPadPullTabMinimized(false);
       }
-    } else {
-      const result7 = updaters.setLaunchPadPullTabMinimized(false);
     }
-  };
-  let obj5 = { launchPadSharedState, updaters, keyboardHeightOpened: sharedValue, launchPadPullTabState, CHAT_INPUT_HEIGHT, LAUNCH_PAD_MARGIN, getWindowDimensionsWorklet: launchPadSharedState(gestureState[9]).getWindowDimensionsWorklet, LAUNCH_PAD_PULL_TAB_HEIGHT: backgroundColor2, LAUNCH_PAD_PULL_TAB_SCALE_OFFSET };
-  fn2.__closure = obj5;
-  fn2.__workletHash = 8060927175361;
-  fn2.__initData = __initData2;
-  const animatedReaction = obj4.useAnimatedReaction(fn, fn2);
-  let items = [tmp.pullTab, animatedStyle];
-  let obj7 = {
+  }
+  const items5 = [tmp31, tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39];
+  LaunchPadPullTabTsx2.__closure = items5;
+  LaunchPadPullTabTsx2.__workletHash = 14150743699512;
+  LaunchPadPullTabTsx2.__initData = tmp30;
+  const animatedReaction = useAnimatedReaction(LaunchPadPullTabTsx1, LaunchPadPullTabTsx2);
+  const items6 = [tmp.pullTab, animatedStyle];
+  const obj2 = {
     accessibilityRole: "button",
-    accessibilityLabel: intl.string(launchPadSharedState(gestureState[12]).t.yTnIfb),
+    accessibilityLabel: intl.string(tmp6(1113).t.yTnIfb),
     hitSlop,
     style: tmp.pullTabButton,
     onTouchStart() {
       const result = updaters.setLaunchPadPullTabScale(React4);
     },
-    onPress: launchPadPullTabState(gestureState[13]),
+    onPress: showLaunchPadDefault,
     children: null
   };
-  const View = launchPadPullTabState(gestureState[8]).View;
-  intl = launchPadSharedState(gestureState[12]).intl;
-  return <View style={items}>{null}</View>;
+  const View = _modDef1652.View;
+  intl = tmp6(1113).intl;
+  return <View style={items6}>{null}</View>;
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadPullTab.tsx");

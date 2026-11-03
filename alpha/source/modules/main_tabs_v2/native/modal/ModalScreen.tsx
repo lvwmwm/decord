@@ -1,19 +1,19 @@
-// Module ID: 18960
-// Function ID: 18961
+// Module ID: 19118
+// Function ID: 19119
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1072, 21, 5014, 575, 6744, 6028, 1260, 7654, 1625, 7112, 4971, 18961, 16433, 1375, 12361, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6864, 6148, 1260, 7778, 1627, 7238, 5098, 19119, 16577, 1377, 12497, 2]
 // Exports: default
 
-// Module 18960 (modal/ModalScreen)
+// Module 19118 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6028 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6148 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -92,16 +92,16 @@ export default function Modal(route) {
   }, []);
   ({ left, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  let isIpadOSResult = tmp4(7112)();
+  let isIpadOSResult = tmp4(7238)();
   if (isIpadOSResult) {
-    const tmp7Result = modal(4971);
+    const tmp7Result = modal(5098);
     isIpadOSResult = tmp7Result.isIpadOS();
   }
   if (isIpadOSResult) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const tmp7Result3 = modal(18961);
+    const tmp7Result3 = modal(19119);
     isIpadOSResult = tmp7Result3.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -116,17 +116,17 @@ export default function Modal(route) {
   items[1] = tmp17;
   const obj4 = { style: items, onAccessibilityEscape: pop, children: closure_10(SafeAreaProvider, { children: items2 }) };
   if (modal.closable) {
-    pop = tmp4(6744).pop;
+    pop = tmp4(6864).pop;
   } else {
     pop = NOOP;
   }
-  SafeAreaProvider = tmp7(16433).SafeAreaProvider;
+  SafeAreaProvider = tmp7(16577).SafeAreaProvider;
   const createElement = obj2.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
-  const tmp7Result4 = modal(1375);
-  items2[1] = tmp7Result4.isIOS() && closure_9(modal(12361).PortalKeyboardRenderer, { portal: false });
-  tmp7Result4.isIOS() && closure_9(modal(12361).PortalKeyboardRenderer, { portal: false });
+  const tmp7Result4 = modal(1377);
+  items2[1] = tmp7Result4.isIOS() && closure_9(modal(12497).PortalKeyboardRenderer, { portal: false });
+  tmp7Result4.isIOS() && closure_9(modal(12497).PortalKeyboardRenderer, { portal: false });
   return closure_9(tmp16, obj4);
 };

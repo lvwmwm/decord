@@ -1,25 +1,23 @@
-// Module ID: 11663
-// Function ID: 11664
+// Module ID: 11800
+// Function ID: 11801
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 5014, 575, 5272, 5717, 8502, 1187, 11664, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5395, 5837, 8626, 1187, 11801, 5747, 1113, 2]
 // Exports: default
 
-// Module 11663 (PublicGuildAnnouncementProfile)
+// Module 11800 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8502 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11664 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8626 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11801 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let closure_4;
 let hasOwnProperty;
@@ -43,7 +41,7 @@ export default function PublicGuildAnnouncementProfile() {
   const tmp = closure_6();
   const obj = { startExpanded: true, children: hasOwnProperty(View, obj2) };
   obj2 = { style: tmp.content, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   const obj3 = { style: tmp.avatar, source: obj4.getPublicSystemMessageAvatar() };
   const tmp2 = FastImageDefault;
   obj4 = PublicGuildsUtils;
@@ -52,7 +50,7 @@ export default function PublicGuildAnnouncementProfile() {
   const obj6 = { source: AssetRegistryDefault, disableColor: true };
   const Icon = native.Icon;
   items1 = [React3(Icon, obj6), ];
-  const obj7 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.xfAlNx) };
+  const obj7 = { style: tmp.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.xfAlNx) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items1[1] = React3(Text, obj7);

@@ -1,27 +1,28 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 15079
+// Function ID: 15080
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 8754, 21, 5014, 575, 9316, 9340, 8761, 14951, 5624, 14956, 14957, 2026, 14958, 12, 7773, 1113, 14960, 7777, 12258, 7778, 14967, 14971, 2]
+// Dependencies: [32, 19, 17, 8878, 21, 5141, 575, 9444, 9468, 8885, 15080, 5747, 15085, 15086, 2155, 15087, 8152, 9704, 1113, 15089, 12, 7897, 15101, 15096, 7901, 12394, 7902, 15104, 15108, 2]
 // Exports: default
 
-// Module 14950 (UserProfileWidgetsBoard)
+// Module 15079 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import StringUtils from "StringUtils" /* 2026 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7777 */;
-import Constants from "Constants" /* 8754 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9316 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12258 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14956 */;
-import GameCoverImageDefault from "GameCoverImage" /* 14957 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 14967 */;
+import StringUtils from "StringUtils" /* 2155 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7901 */;
+import Constants from "Constants" /* 8878 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9444 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12394 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15085 */;
+import GameCoverImageDefault from "GameCoverImage" /* 15086 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15089 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15104 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let meta;
@@ -43,13 +44,39 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
-const UserProfilePersonalWidget = tmp(7778);
-function WidgetRenderer(arg0) {
+const UserProfilePersonalWidget = tmp(7902);
+function AddGameButton(widgetType) {
+  let PlusSmallIcon;
+  let intl;
+  let obj2;
+  widgetType = widgetType.widgetType;
+  const disabled = widgetType.disabled;
+  const ref = react.useRef(null);
+  let obj = {
+    ref,
+    size: "sm",
+    variant: "secondary",
+    icon: closure_8(PlusSmallIcon, obj2),
+    accessibilityLabel: intl.string(widgetType(1113).t.E3l3Zx),
+    disabled,
+    onPress() {
+      const obj = { widgetType, returnFocusRef: ref };
+      return openUserProfileAddGameActionSheetDefault(obj);
+    }
+  };
+  const IconButton = widgetType(8152).IconButton;
+  obj2 = { size: "sm", color: ref(575).colors.ICON_DEFAULT };
+  PlusSmallIcon = widgetType(9704).PlusSmallIcon;
+  intl = widgetType(1113).intl;
+  return closure_8(IconButton, obj);
+}
+function WidgetRenderer(isEditing) {
   let cardStyle;
   let tmp3Result;
   let userId;
   let widget;
-  ({ userId, widget, cardStyle } = arg0);
+  ({ userId, widget, cardStyle } = isEditing);
+  isEditing = isEditing.isEditing;
   if (widget instanceof UserProfileApplicationWidgetTypes.ApplicationWidget) {
     const obj2 = { userId, widget, cardStyle };
     tmp3Result = metroImportAll(UserProfileApplicationWidgetCardDefault, obj2);
@@ -57,7 +84,7 @@ function WidgetRenderer(arg0) {
     const obj3 = { userId, widget, cardStyle };
     tmp3Result = tmp3(UserProfilePersonalWidgetCardDefault, obj3);
   } else {
-    const obj = { userId, widget, cardStyle };
+    const obj = { userId, widget, cardStyle, isEditing };
     tmp3Result = tmp3(memoResult, obj);
   }
   return tmp3Result;
@@ -192,7 +219,7 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
   if (tmp8Result) {
     const obj7 = { style: tmp.comment, children: items2 };
     const obj8 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp6(14958).QuoteIcon;
+    const QuoteIcon = tmp6(15087).QuoteIcon;
     items2 = [metroImportAll(QuoteIcon, obj8), ];
     const obj9 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items2[1] = metroImportAll(Text_Text.Text, obj9);
@@ -312,17 +339,23 @@ const memoResult = react.memo(function WidgetSection(userId) {
   let mapped;
   let mapped1;
   let obj10;
-  let obj13;
+  let obj14;
   let obj6;
   let tmp12Result;
   let tmp3;
+  let tmp35;
   let tmp5;
+  let tmp9Result;
   userId = userId.userId;
   const widget = userId.widget;
   const disableInteraction = userId.disableInteraction;
+  let flag = userId.isEditing;
+  const cardStyle = userId.cardStyle;
+  if (flag === undefined) {
+    flag = false;
+  }
   _slicedToArray = undefined;
   react = undefined;
-  const cardStyle = userId.cardStyle;
   const tmp = closure_12();
   [tmp3, c3] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
@@ -337,14 +370,14 @@ const memoResult = react.memo(function WidgetSection(userId) {
   }, items);
   const type = widget.type;
   const tmp6 = widget;
-  if (userId(disableInteraction[17]).WidgetType.FAVORITE_GAMES === type) {
+  if (userId(disableInteraction[21]).WidgetType.FAVORITE_GAMES === type) {
     let tmp30 = tmp5 > 0;
     if (tmp30) {
       const obj2 = { userId, game: memo[0], coverWidth: result, disableInteraction };
       tmp30 = closure_8(closure_14, obj2);
     }
     tmp12Result = tmp30;
-  } else if (userId(disableInteraction[17]).WidgetType.CURRENT_GAMES === type) {
+  } else if (userId(disableInteraction[21]).WidgetType.CURRENT_GAMES === type) {
     let tmp24Result = memo.length > 2;
     let substr = memo;
     if (!tmp3) {
@@ -389,8 +422,8 @@ const memoResult = react.memo(function WidgetSection(userId) {
     items1[1] = tmp24Result;
     tmp12Result = tmp22(tmp23, obj7);
   } else {
-    if (userId(disableInteraction[17]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-      if (userId(disableInteraction[17]).WidgetType.PLAYED_GAMES !== type) {
+    if (userId(disableInteraction[21]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+      if (userId(disableInteraction[21]).WidgetType.PLAYED_GAMES !== type) {
         return null;
       }
     }
@@ -438,30 +471,38 @@ const memoResult = react.memo(function WidgetSection(userId) {
     items2[1] = tmp14Result;
     tmp12Result = tmp12(tmp13, obj11);
   }
-  const obj12 = { userId, widget, style: cardStyle, disableInteraction, children: closure_8(closure_6, obj13) };
-  obj13 = {
+  const obj12 = { userId, widget, style: cardStyle, disableInteraction, actionButtons: tmp35, children: closure_8(closure_6, obj14) };
+  tmp35 = undefined;
+  const tmp6Result = tmp6(disableInteraction[22]);
+  if (flag) {
+    const obj13 = { widgetType: widget.type, disabled: tmp9Result.isGameLimitReached(widget) };
+    tmp9Result = userId(disableInteraction[23]);
+    const items3 = [closure_8(AddGameButton, obj13, "add-game")];
+    tmp35 = items3;
+  }
+  obj14 = {
     onLayout(nativeEvent) {
       return _undefined2(nativeEvent.nativeEvent.layout.width);
     },
     children: tmp12Result
   };
-  const tmp6Result = tmp6(disableInteraction[19]);
   return closure_8(tmp6Result, obj12);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoard.tsx");
 
 export default function UserProfileWidgetsBoard(userId) {
+  let isEditing;
   userId = userId.userId;
   let flag = userId.isVisible;
   if (flag === undefined) {
     flag = true;
   }
-  const cardStyle = userId.cardStyle;
+  ({ cardStyle: importDefault, isEditing: dependencyMap } = userId);
   let tmp = closure_12();
-  let obj = userId(14971);
+  let obj = userId(15108);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
-  let closure_1 = tmp2;
-  const obj2 = userId(8761);
+  const cardStyle = tmp2;
+  const obj2 = userId(8885);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   let closure_3 = react.useRef(false);
   const items = [flag, tmp2, trackUserProfileAction];
@@ -483,7 +524,7 @@ export default function UserProfileWidgetsBoard(userId) {
     const obj3 = {
       style: tmp.board,
       children: displayableBoardWidgets.map((widget) => {
-          const obj = { userId, widget, cardStyle };
+          const obj = { userId, widget, cardStyle: importDefault, isEditing: dependencyMap };
           return metroImportAll(WidgetRenderer, obj, widget.getUniqueKey());
         })
     };

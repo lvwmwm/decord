@@ -1,24 +1,22 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 18757
+// Function ID: 18758
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 13974, 1072, 4860, 21, 5014, 575, 1252, 5258, 13975, 5272, 18045, 5624, 6767, 5634, 1113, 2]
+// Dependencies: [19, 17, 14105, 1072, 4987, 21, 5141, 575, 1252, 5381, 14106, 5395, 18189, 5747, 6887, 5754, 1113, 2]
 // Exports: default
 
-// Module 18599 (NotificationNudgeBottomSheet)
+// Module 18757 (NotificationNudgeBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13975 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14106 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13974 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14105 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let c9;
@@ -93,9 +91,9 @@ export default function NotificationNudgeBottomSheet(actionLocation) {
   let obj = { children: closure_10(callback, obj2) };
   obj2 = { style: tmp.container, children: items4 };
   let obj3 = { style: tmp.illustration, children: closure_9(actionLocation(markAsDismissed[12]).BellSpotIllustration, { scale: 0.8 }) };
-  BottomSheet = actionLocation(markAsDismissed[11]).BottomSheet;
+  const BottomSheet = actionLocation(markAsDismissed[11]).BottomSheet;
   items4 = [closure_9(callback, obj3), , , ];
-  const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: title };
+  const obj4 = { style: tmp.title, variant: "heading-xl/semibold", accessibilityRole: "header", children: title };
   items4[1] = closure_9(actionLocation(markAsDismissed[13]).Text, obj4);
   const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: body };
   items4[2] = closure_9(actionLocation(markAsDismissed[13]).Text, obj5);

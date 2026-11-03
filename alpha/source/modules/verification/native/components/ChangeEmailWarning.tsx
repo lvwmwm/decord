@@ -1,20 +1,20 @@
-// Module ID: 7064
-// Function ID: 7065
+// Module ID: 7190
+// Function ID: 7191
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1383, 7057, 1072, 21, 5014, 575, 1497, 504, 1252, 1092, 7065, 5624, 1113, 5634, 6995, 2]
+// Dependencies: [19, 17, 1385, 7183, 1072, 21, 5141, 575, 1499, 504, 1252, 1092, 7191, 5747, 1113, 5754, 7121, 2]
 // Exports: default
 
-// Module 7064 (ChangeEmailWarning)
+// Module 7190 (ChangeEmailWarning)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import VerificationConstants from "VerificationConstants" /* 7057 */;
+import VerificationConstants from "VerificationConstants" /* 7183 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -52,7 +52,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
   let obj4;
   changeEmailReason = changeEmailReason.changeEmailReason;
   const tmp = closure_11();
-  let obj = changeEmailReason(1497);
+  let obj = changeEmailReason(1499);
   navigation = obj.useNavigation();
   let obj2 = changeEmailReason(504);
   const items = [UserStore];
@@ -62,13 +62,13 @@ export default function ChangeEmailWarning(changeEmailReason) {
   if (null != stateFromStores) {
     const obj3 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_4, obj4) };
     obj4 = { style: tmp.container, children: items2 };
-    items2 = [closure_9(changeEmailReason(7065).TrafficConeSpotIllustration, {}), , , ];
-    const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1113).t.hhR7gX) };
-    const Text = tmp2(5624).Text;
+    items2 = [closure_9(changeEmailReason(7191).TrafficConeSpotIllustration, {}), , , ];
+    const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1113).t.hhR7gX) };
+    const Text = tmp2(5747).Text;
     intl = tmp2(1113).intl;
     items2[1] = closure_9(Text, obj5);
     const obj6 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
-    const Text2 = tmp2(5624).Text;
+    const Text2 = tmp2(5747).Text;
     const intl2 = tmp2(1113).intl;
     const obj7 = { hcArticle };
     items3 = [intl2.format(changeEmailReason(1113).t.rqWXUf, obj7), "\n\n", ];
@@ -77,7 +77,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
     items2[2] = closure_10(Text2, obj6);
     const obj8 = { style: tmp.buttonContainer, children: items4 };
     const obj9 = { size: "md", variant: "tertiary", text: intl4.string(changeEmailReason(1113).t.rwTBFs), onPress: tmp6, shrink: true };
-    const Button = tmp2(5634).Button;
+    const Button = tmp2(5754).Button;
     intl4 = tmp2(1113).intl;
     items4 = [closure_9(Button, obj9), ];
     const obj10 = {
@@ -90,7 +90,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
         },
       shrink: true
     };
-    const Button2 = tmp2(5634).Button;
+    const Button2 = tmp2(5754).Button;
     intl5 = tmp2(1113).intl;
     items4[1] = closure_9(Button2, obj10);
     items2[3] = closure_10(closure_4, obj8);

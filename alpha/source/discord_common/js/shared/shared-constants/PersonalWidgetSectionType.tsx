@@ -1,9 +1,9 @@
-// Module ID: 7779
-// Function ID: 7780
+// Module ID: 7903
+// Function ID: 7904
 // Name: PersonalWidgetSectionType
 // Dependencies: [2]
 
-// Module 7779 (PersonalWidgetSectionType)
+// Module 7903 (PersonalWidgetSectionType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PersonalWidgetSectionType.tsx");

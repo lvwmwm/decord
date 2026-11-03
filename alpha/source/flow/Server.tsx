@@ -1,9 +1,9 @@
-// Module ID: 1992
-// Function ID: 1993
+// Module ID: 2121
+// Function ID: 2122
 // Name: Server
 // Dependencies: [2]
 
-// Module 1992 (Server)
+// Module 2121 (Server)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("flow/Server.tsx");

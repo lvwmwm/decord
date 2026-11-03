@@ -1,11 +1,11 @@
-// Module ID: 7375
-// Function ID: 7376
+// Module ID: 7495
+// Function ID: 7496
 // Name: UserProfileRoleUtils
-// Dependencies: [4924, 2]
+// Dependencies: [5051, 2]
 // Exports: sortRolesByVerification
 
-// Module 7375 (UserProfileRoleUtils)
-import GuildRoleUtils from "GuildRoleUtils" /* 4924 */;
+// Module 7495 (UserProfileRoleUtils)
+import GuildRoleUtils from "GuildRoleUtils" /* 5051 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");

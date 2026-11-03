@@ -1,31 +1,31 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16470
+// Function ID: 16471
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4863, 1383, 4862, 10727, 5019, 21, 5014, 575, 504, 13384, 12462, 16326, 7330, 1379, 16328, 7636, 7824, 5712, 1113, 7358, 5711, 1491, 1375, 13394, 7558, 5727, 10736, 13395, 13419, 2]
+// Dependencies: [5, 32, 19, 17, 4990, 1385, 4989, 10857, 5146, 21, 5141, 575, 504, 13520, 12598, 16469, 7450, 1380, 16471, 7760, 7948, 5832, 1113, 7478, 5831, 1493, 1377, 13530, 7682, 5847, 10866, 13531, 13555, 2]
 // Exports: default
 
-// Module 16327 (ActivityShareLinkModal)
+// Module 16470 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import MessageConstants from "MessageConstants" /* 5019 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import LinkIcon from "LinkIcon" /* 5727 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
-import UserRowConstants from "UserRowConstants" /* 10727 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12462 */;
-import formatResults from "formatResults" /* 13384 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16326 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import MessageConstants from "MessageConstants" /* 5146 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import LinkIcon from "LinkIcon" /* 5847 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7682 */;
+import UserRowConstants from "UserRowConstants" /* 10857 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12598 */;
+import formatResults from "formatResults" /* 13520 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16469 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import UserStore from "UserStore" /* 1385 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, channel, closure_0;
@@ -132,7 +132,7 @@ export default function ActivityShareLinkModal(applicationId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -220,7 +220,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -242,7 +242,7 @@ export default function ActivityShareLinkModal(applicationId) {
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

@@ -1,30 +1,57 @@
-// Module ID: 19208
-// Function ID: 19209
+// Module ID: 19366
+// Function ID: 19367
 // Name: VoicePanelDockSheet
-// Dependencies: [19, 17, 11223, 11241, 21, 11249, 5596, 575, 5011, 5095, 11222, 7241, 19209, 2]
-// Exports: VoicePanelContentWithDock, getDockSheetShadowOpacity, getDockSheetSurfaceStyle, getDockSheetTransform, useDockSheetSurfaceFills
+// Dependencies: [19, 17, 11360, 11378, 21, 11386, 5719, 575, 5138, 1652, 11359, 19367, 2]
+// Exports: VoicePanelContentWithDock, getDockSheetShadowOpacity, getDockSheetShape, getDockSheetSurfaceStyle, getDockSheetTransform, useDockSheetSurfaceFills
 
-// Module 19208 (VoicePanelDockSheet)
+// Module 19366 (VoicePanelDockSheet)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11249 */;
-import VoicePanelDockDefault from "VoicePanelDock" /* 19209 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import ColorUtils from "ColorUtils" /* 5138 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11359 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11386 */;
+import VoicePanelDockDefault from "VoicePanelDock" /* 19367 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11241 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11378 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
-let c10;
-let c9;
-let unpackModuleId;
+let _Math, diff, max, opacity, tmp3, value;
+
+let DOCK_PRESS_EXTENSION;
+let DOCK_SETTLE_PROGRESS;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp;
+let tmp10;
+let tmp11;
+let tmp12;
+let tmp13;
+let tmp14;
+let tmp15;
+let tmp16;
+let tmp17;
+let tmp18;
+let tmp19;
+let tmp20;
+let tmp21;
+let tmp22;
+let tmp23;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
+const _modDef1652 = tmp(1652);
 const StyleSheet = react_native.StyleSheet;
-const DEFAULT_BORDER_RADIUS = VoicePanelConstants.DEFAULT_BORDER_RADIUS;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
-const DOCK_PRESS_EXTENSION = VoicePanelDockConstants.DOCK_PRESS_EXTENSION;
-const DOCK_SETTLE_PROGRESS = VoicePanelDockConstants.DOCK_SETTLE_PROGRESS;
-({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
+const DEFAULT_BORDER_RADIUS = VoicePanelConstants.DEFAULT_BORDER_RADIUS;
+({ DOCK_SETTLE_PROGRESS, DOCK_PRESS_EXTENSION } = VoicePanelDockConstants);
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let items = [{ code: "(function getDockSheetTransform_VoicePanelDockSheetTsx1({connected:connected,progress:progress,wrapperDimensions:wrapperDimensions,dockHeight:dockHeight,dockJoinMorphOrigin:dockJoinMorphOrigin,dockEntryProgress:dockEntryProgress,sheetExitProgress:sheetExitProgress,dockPressProgress:dockPressProgress}){let[getDockRect,shrinkDockAroundCenter,scaleDockAroundCenter,DOCK_PRESS_EXTENSION]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight,drawerX:drawerX,drawerY:drawerY}=wrapperDimensions;if(!connected&&progress<=0||drawerWidth<=0||drawerHeight<=0){return null;}const fullRect={x:drawerX,y:drawerY,width:drawerWidth,height:drawerHeight};const restRect=getDockRect(fullRect,dockHeight);const origin=dockJoinMorphOrigin!=null?{...dockJoinMorphOrigin,height:drawerHeight*(dockJoinMorphOrigin.width/drawerWidth)}:fullRect;const geometry=shrinkDockAroundCenter(progress,origin,restRect);const{translateX:translateX,translateY:translateY,scale:scale}=scaleDockAroundCenter(geometry,drawerWidth,drawerHeight);const onScreenHeight=dockHeight+(drawerHeight-dockHeight)*(1-progress);const offscreen=(1-dockEntryProgress+sheetExitProgress)*onScreenHeight;const pressExtension=dockPressProgress*DOCK_PRESS_EXTENSION;return{translateX:translateX,translateY:translateY+offscreen-pressExtension,scale:scale};})" }, VoicePanelSheetMorph.getDockRect, VoicePanelSheetMorph.shrinkDockAroundCenter, VoicePanelSheetMorph.scaleDockAroundCenter, DOCK_PRESS_EXTENSION];
+[tmp5, tmp6, tmp7, tmp8, tmp9] = items;
 function getDockSheetTransform(connected) {
   let dockHeight;
   let dockJoinMorphOrigin;
@@ -39,27 +66,25 @@ function getDockSheetTransform(connected) {
       if (drawerHeight > 0) {
         size = { x: tmp4, y: tmp5, width: drawerWidth, height: drawerHeight };
         let tmp9 = size;
-        const obj6 = VoicePanelSheetMorph;
-        const dockRect = obj6.getDockRect(size, dockHeight);
+        const tmp15 = _undefined(size, dockHeight);
         if (null != dockJoinMorphOrigin) {
           const obj = { height: drawerHeight * (dockJoinMorphOrigin.width / drawerWidth) };
           const merged = Object.assign(dockJoinMorphOrigin);
           tmp9 = obj;
         }
-        const tmp13Result = VoicePanelSheetMorph;
-        const result = tmp13Result.shrinkDockAroundCenter(progress, tmp9, dockRect);
-        const tmp13Result2 = VoicePanelSheetMorph;
-        const result1 = tmp13Result2.scaleDockAroundCenter(result, drawerWidth, drawerHeight);
-        return { translateX: result1.translateX, translateY: result1.translateY + (1 - tmp + tmp2) * (dockHeight + (drawerHeight - dockHeight) * (1 - progress)) - tmp3 * DOCK_PRESS_EXTENSION, scale: result1.scale };
+        const tmp12 = _undefined3(_undefined2(progress, tmp9, tmp15), drawerWidth, drawerHeight);
+        return { translateX: tmp12.translateX, translateY: tmp12.translateY + (1 - tmp + tmp2) * (dockHeight + (drawerHeight - dockHeight) * (1 - progress)) - tmp3 * c3, scale: tmp12.scale };
       }
     }
   }
   return null;
 }
-let obj = { getDockRect: VoicePanelSheetMorph.getDockRect, shrinkDockAroundCenter: VoicePanelSheetMorph.shrinkDockAroundCenter, scaleDockAroundCenter: VoicePanelSheetMorph.scaleDockAroundCenter, DOCK_PRESS_EXTENSION };
-getDockSheetTransform.__closure = obj;
-getDockSheetTransform.__workletHash = 14978675113825;
-getDockSheetTransform.__initData = { code: "function getDockSheetTransform_VoicePanelDockSheetTsx1({connected:connected,progress:progress,wrapperDimensions:wrapperDimensions,dockHeight:dockHeight,dockJoinMorphOrigin:dockJoinMorphOrigin,dockEntryProgress:dockEntryProgress,sheetExitProgress:sheetExitProgress,dockPressProgress:dockPressProgress}){const{getDockRect,shrinkDockAroundCenter,scaleDockAroundCenter,DOCK_PRESS_EXTENSION}=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight,drawerX:drawerX,drawerY:drawerY}=wrapperDimensions;if(!connected&&progress<=0||drawerWidth<=0||drawerHeight<=0){return null;}const fullRect={x:drawerX,y:drawerY,width:drawerWidth,height:drawerHeight};const restRect=getDockRect(fullRect,dockHeight);const origin=dockJoinMorphOrigin!=null?{...dockJoinMorphOrigin,height:drawerHeight*(dockJoinMorphOrigin.width/drawerWidth)}:fullRect;const geometry=shrinkDockAroundCenter(progress,origin,restRect);const{translateX:translateX,translateY:translateY,scale:scale}=scaleDockAroundCenter(geometry,drawerWidth,drawerHeight);const onScreenHeight=dockHeight+(drawerHeight-dockHeight)*(1-progress);const offscreen=(1-dockEntryProgress+sheetExitProgress)*onScreenHeight;const pressExtension=dockPressProgress*DOCK_PRESS_EXTENSION;return{translateX:translateX,translateY:translateY+offscreen-pressExtension,scale:scale};}" };
+let items1 = [tmp6, tmp7, tmp8, tmp9];
+getDockSheetTransform.__closure = items1;
+getDockSheetTransform.__workletHash = 685261852504;
+getDockSheetTransform.__initData = tmp5;
+let items2 = [{ code: "(function getDockSheetShape_VoicePanelDockSheetTsx2({connected:connected,dockJoinMorphOrigin:dockJoinMorphOrigin,sheetMorphProgress:sheetMorphProgress,wrapperDimensions:wrapperDimensions}){let[DEFAULT_BORDER_RADIUS,interpolate,Extrapolation]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions;const startRadius=dockJoinMorphOrigin!=null&&dockJoinMorphOrigin.width>0?DEFAULT_BORDER_RADIUS*(drawerWidth/dockJoinMorphOrigin.width):0;const topRadius=connected?interpolate(sheetMorphProgress,[0,1],[DEFAULT_BORDER_RADIUS,startRadius],Extrapolation.CLAMP):DEFAULT_BORDER_RADIUS;const bottomRadius=connected?0:DEFAULT_BORDER_RADIUS;return{width:drawerWidth,height:drawerHeight,borderTopLeftRadius:topRadius,borderTopRightRadius:topRadius,borderBottomLeftRadius:bottomRadius,borderBottomRightRadius:bottomRadius};})" }, DEFAULT_BORDER_RADIUS, _mod1652.interpolate, _mod1652.Extrapolation];
+[tmp10, tmp11, tmp12, tmp13] = items2;
 function getDockSheetShape(arg0) {
   let borderTopLeftRadius;
   let connected;
@@ -74,17 +99,16 @@ function getDockSheetShape(arg0) {
   if (null != dockJoinMorphOrigin) {
     num = 0;
     if (dockJoinMorphOrigin.width > 0) {
-      num = DEFAULT_BORDER_RADIUS * (width / dockJoinMorphOrigin.width);
+      num = c0 * (width / dockJoinMorphOrigin.width);
     }
   }
   if (connected) {
-    const items = [DEFAULT_BORDER_RADIUS, num];
-    const obj = ReanimatedRexport;
-    borderTopLeftRadius = obj.interpolate(sheetMorphProgress, [0, 1], items, ReanimatedRexport.Extrapolation.CLAMP);
-    tmp2 = DEFAULT_BORDER_RADIUS;
+    const items = [c0, num];
+    borderTopLeftRadius = _undefined(sheetMorphProgress, [0, 1], items, _undefined2.CLAMP);
+    tmp2 = c0;
   } else {
-    tmp2 = DEFAULT_BORDER_RADIUS;
-    borderTopLeftRadius = DEFAULT_BORDER_RADIUS;
+    tmp2 = c0;
+    borderTopLeftRadius = c0;
   }
   let borderBottomLeftRadius = 0;
   if (!connected) {
@@ -92,158 +116,159 @@ function getDockSheetShape(arg0) {
   }
   return { width, height, borderTopLeftRadius, borderTopRightRadius: borderTopLeftRadius, borderBottomLeftRadius, borderBottomRightRadius: borderBottomLeftRadius };
 }
-let obj2 = { DEFAULT_BORDER_RADIUS, interpolate: ReanimatedRexport.interpolate, Extrapolation: ReanimatedRexport.Extrapolation };
-getDockSheetShape.__closure = obj2;
-getDockSheetShape.__workletHash = 17349446304938;
-getDockSheetShape.__initData = { code: "function getDockSheetShape_VoicePanelDockSheetTsx2({connected:connected,dockJoinMorphOrigin:dockJoinMorphOrigin,sheetMorphProgress:sheetMorphProgress,wrapperDimensions:wrapperDimensions}){const{DEFAULT_BORDER_RADIUS,interpolate,Extrapolation}=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions;const startRadius=dockJoinMorphOrigin!=null&&dockJoinMorphOrigin.width>0?DEFAULT_BORDER_RADIUS*(drawerWidth/dockJoinMorphOrigin.width):0;const topRadius=connected?interpolate(sheetMorphProgress,[0,1],[DEFAULT_BORDER_RADIUS,startRadius],Extrapolation.CLAMP):DEFAULT_BORDER_RADIUS;const bottomRadius=connected?0:DEFAULT_BORDER_RADIUS;return{width:drawerWidth,height:drawerHeight,borderTopLeftRadius:topRadius,borderTopRightRadius:topRadius,borderBottomLeftRadius:bottomRadius,borderBottomRightRadius:bottomRadius};}" };
-function getDockSheetSurfaceStyle(dockJoinMorphOrigin, dockSheetSurfaceFills) {
-  let connected;
+const items3 = [tmp11, tmp12, tmp13];
+getDockSheetShape.__closure = items3;
+getDockSheetShape.__workletHash = 16412823313747;
+getDockSheetShape.__initData = tmp10;
+const items4 = [{ code: "(function getDockSheetSurfaceStyle_VoicePanelDockSheetTsx3(inputs,{pressedFill:pressedFill,restingFill:restingFill,fullscreenFill:fullscreenFill,prejoinFill:prejoinFill}){let[interpolateColor,JOIN_SETTLE_PROGRESS,DOCK_SETTLE_PROGRESS,getDockSheetShape,VoicePanelModes]=this.__closure;const{connected:connected,dockPressProgress:dockPressProgress,dockJoinMorphOrigin:dockJoinMorphOrigin,mode:mode,sheetMorphProgress:sheetMorphProgress}=inputs;const joining=dockJoinMorphOrigin!=null;const fill=connected?interpolateColor(sheetMorphProgress,[0,joining?JOIN_SETTLE_PROGRESS:DOCK_SETTLE_PROGRESS,1],[interpolateColor(dockPressProgress,[0,1],[restingFill,pressedFill]),pressedFill,joining?prejoinFill:fullscreenFill]):prejoinFill;return{...getDockSheetShape(inputs),backgroundColor:fill,pointerEvents:mode===VoicePanelModes.DISMISSED?'none':'auto'};})" }, _mod1652.interpolateColor, 0.03, DOCK_SETTLE_PROGRESS, getDockSheetShape, VoicePanelModes];
+let c3;
+let c4;
+[tmp14, tmp15, tmp16, tmp17, tmp18, tmp19] = items4;
+function getDockSheetSurfaceStyle(dockJoinMorphOrigin, arg1) {
   let fullscreenFill;
   let prejoinFill;
   let pressedFill;
-  let sheetMorphProgress;
   let str;
-  let wrapperDimensions;
-  ({ pressedFill, fullscreenFill, prejoinFill } = dockSheetSurfaceFills);
-  let interpolateColorResult = prejoinFill;
+  ({ pressedFill, fullscreenFill, prejoinFill } = arg1);
+  let tmp6Result = prejoinFill;
   const mode = dockJoinMorphOrigin.mode;
   if (dockJoinMorphOrigin.connected) {
-    let num = 0.03;
-    const interpolateColor = ReanimatedRexport.interpolateColor;
-    ReanimatedRexport;
-    const tmp6 = require;
-    if (null == dockJoinMorphOrigin.dockJoinMorphOrigin) {
-      num = DOCK_SETTLE_PROGRESS;
-    }
-    const items = [0, num, 1];
+    const items = [0, null != dockJoinMorphOrigin.dockJoinMorphOrigin ? c1 : c2, 1];
     const items1 = [tmp, pressedFill];
-    const items2 = [, , ];
-    const tmp6Result = tmp6(5095);
-    items2[0] = tmp6Result.interpolateColor(tmp2, [0, 1], items1);
-    items2[1] = pressedFill;
+    const items2 = [_undefined(tmp2, [0, 1], items1), pressedFill, ];
     if (null != dockJoinMorphOrigin.dockJoinMorphOrigin) {
       fullscreenFill = prejoinFill;
     }
     items2[2] = fullscreenFill;
-    interpolateColorResult = interpolateColor(tmp3, items, items2);
+    tmp6Result = tmp6(tmp3, items, items2);
   }
-  if (typeof getDockSheetShape === "function") {
-    let interpolateResult;
-    let tmp10;
-    ({ connected, dockJoinMorphOrigin, sheetMorphProgress, wrapperDimensions } = dockJoinMorphOrigin);
-    const drawerWidth = wrapperDimensions.drawerWidth;
-    let num4 = 0;
-    const drawerHeight = wrapperDimensions.drawerHeight;
-    if (null != dockJoinMorphOrigin) {
-      num4 = 0;
-      if (dockJoinMorphOrigin.width > 0) {
-        num4 = DEFAULT_BORDER_RADIUS * (drawerWidth / dockJoinMorphOrigin.width);
-      }
-    }
-    if (connected) {
-      const items3 = [DEFAULT_BORDER_RADIUS, num4];
-      const obj2 = ReanimatedRexport;
-      interpolateResult = obj2.interpolate(sheetMorphProgress, [0, 1], items3, ReanimatedRexport.Extrapolation.CLAMP);
-      tmp10 = DEFAULT_BORDER_RADIUS;
-    } else {
-      tmp10 = DEFAULT_BORDER_RADIUS;
-      interpolateResult = DEFAULT_BORDER_RADIUS;
-    }
-    let num5 = 0;
-    if (!connected) {
-      num5 = tmp10;
-    }
-    size = { width: drawerWidth, height: drawerHeight, borderTopLeftRadius: interpolateResult, borderTopRightRadius: interpolateResult, borderBottomLeftRadius: num5, borderBottomRightRadius: num5 };
-    const obj = { backgroundColor: interpolateColorResult, pointerEvents: str };
-    const merged = Object.assign(size);
-    str = "auto";
-    if (mode === VoicePanelModes.DISMISSED) {
-      str = "none";
-    }
-    return obj;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+  const obj = { backgroundColor: tmp6Result, pointerEvents: str };
+  const merged = Object.assign(_undefined(dockJoinMorphOrigin));
+  str = "auto";
+  if (mode === _undefined2.DISMISSED) {
+    str = "none";
   }
+  return obj;
 }
-let obj3 = { interpolateColor: ReanimatedRexport.interpolateColor, JOIN_SETTLE_PROGRESS: 0.03, DOCK_SETTLE_PROGRESS, getDockSheetShape, VoicePanelModes };
-getDockSheetSurfaceStyle.__closure = obj3;
-getDockSheetSurfaceStyle.__workletHash = 3422786939285;
-getDockSheetSurfaceStyle.__initData = { code: "function getDockSheetSurfaceStyle_VoicePanelDockSheetTsx3(inputs,{pressedFill:pressedFill,restingFill:restingFill,fullscreenFill:fullscreenFill,prejoinFill:prejoinFill}){const{interpolateColor,JOIN_SETTLE_PROGRESS,DOCK_SETTLE_PROGRESS,getDockSheetShape,VoicePanelModes}=this.__closure;const{connected:connected,dockPressProgress:dockPressProgress,dockJoinMorphOrigin:dockJoinMorphOrigin,mode:mode,sheetMorphProgress:sheetMorphProgress}=inputs;const joining=dockJoinMorphOrigin!=null;const fill=connected?interpolateColor(sheetMorphProgress,[0,joining?JOIN_SETTLE_PROGRESS:DOCK_SETTLE_PROGRESS,1],[interpolateColor(dockPressProgress,[0,1],[restingFill,pressedFill]),pressedFill,joining?prejoinFill:fullscreenFill]):prejoinFill;return{...getDockSheetShape(inputs),backgroundColor:fill,pointerEvents:mode===VoicePanelModes.DISMISSED?'none':'auto'};}" };
-function getDockSheetShadowOpacity(value, arg1) {
-  const items = [0, DOCK_SETTLE_PROGRESS];
-  const obj = ReanimatedRexport;
-  return max(value, obj.interpolate(arg1, items, [0, 1], ReanimatedRexport.Extrapolation.CLAMP));
+const items5 = [tmp15, tmp16, tmp17, tmp18, tmp19];
+getDockSheetSurfaceStyle.__closure = items5;
+getDockSheetSurfaceStyle.__workletHash = 735853986892;
+getDockSheetSurfaceStyle.__initData = tmp14;
+const items6 = [{ code: "(function getDockSheetShadowOpacity_VoicePanelDockSheetTsx4(dockPressProgress,sheetMorphProgress){let[interpolate,DOCK_SETTLE_PROGRESS,Extrapolation]=this.__closure;return Math.max(dockPressProgress,interpolate(sheetMorphProgress,[0,DOCK_SETTLE_PROGRESS],[0,1],Extrapolation.CLAMP));})" }, _mod1652.interpolate, DOCK_SETTLE_PROGRESS, _mod1652.Extrapolation];
+let c0;
+let c1;
+let c2;
+[tmp20, tmp21, tmp22, tmp23] = items6;
+function getDockSheetShadowOpacity(arg0, arg1) {
+  const items = [0, c1];
+  return Math.max(arg0, _undefined(arg1, items, [0, 1], _undefined2.CLAMP));
 }
-getDockSheetShadowOpacity.__closure = { interpolate: ReanimatedRexport.interpolate, DOCK_SETTLE_PROGRESS, Extrapolation: ReanimatedRexport.Extrapolation };
-getDockSheetShadowOpacity.__workletHash = 8648908038104;
-getDockSheetShadowOpacity.__initData = { code: "function getDockSheetShadowOpacity_VoicePanelDockSheetTsx4(dockPressProgress,sheetMorphProgress){const{interpolate,DOCK_SETTLE_PROGRESS,Extrapolation}=this.__closure;return Math.max(dockPressProgress,interpolate(sheetMorphProgress,[0,DOCK_SETTLE_PROGRESS],[0,1],Extrapolation.CLAMP));}" };
-const __initData = { code: "function VoicePanelDockSheetTsx5(){const{dockMinimizeProgress,wrapperDimensions,dockJoinMorphOrigin,isDockConnected,mode,VoicePanelModes,SHEET_MORPH_JOINING_PANEL_FADE,isDockExpanding,SHEET_MORPH_EXPANDING_PANEL_FADE,SHEET_MORPH_DOCKING_PANEL_FADE,dockContentSwap,getSheetMorphFadeProgress,isDockRowTouchable}=this.__closure;const progress=1-dockMinimizeProgress.get();const{drawerHeight:drawerHeight}=wrapperDimensions.get();const isJoining=dockJoinMorphOrigin.get()!=null;if(!isDockConnected.get()||drawerHeight<=0){const isShowingContent=mode.get()!==VoicePanelModes.PIP||isJoining;return{opacity:isShowingContent?1:0,pointerEvents:'box-none'};}const fade=isJoining?SHEET_MORPH_JOINING_PANEL_FADE:isDockExpanding.get()?SHEET_MORPH_EXPANDING_PANEL_FADE:SHEET_MORPH_DOCKING_PANEL_FADE;return{opacity:Math.max(dockContentSwap.get(),getSheetMorphFadeProgress(progress,fade.start,fade.end)),pointerEvents:isDockRowTouchable(progress)?'none':'box-none'};}" };
-({ interpolate: ReanimatedRexport.interpolate, DOCK_SETTLE_PROGRESS, Extrapolation: ReanimatedRexport.Extrapolation });
-let closure_14 = react.memo(function SheetFullscreenContent(children) {
-  let items;
+const items7 = [tmp21, tmp22, tmp23];
+getDockSheetShadowOpacity.__closure = items7;
+getDockSheetShadowOpacity.__workletHash = 12557842886465;
+getDockSheetShadowOpacity.__initData = tmp20;
+let closure_9 = { code: "(function VoicePanelDockSheetTsx5(){let[dockMinimizeProgress,wrapperDimensions,dockJoinMorphOrigin,isDockConnected,mode,VoicePanelModes,SHEET_MORPH_JOINING_PANEL_FADE,isDockExpanding,SHEET_MORPH_EXPANDING_PANEL_FADE,SHEET_MORPH_DOCKING_PANEL_FADE,dockContentSwap,getSheetMorphFadeProgress,isDockRowTouchable]=this.__closure;const progress=1-dockMinimizeProgress.get();const{drawerHeight:drawerHeight}=wrapperDimensions.get();const isJoining=dockJoinMorphOrigin.get()!=null;if(!isDockConnected.get()||drawerHeight<=0){const isShowingContent=mode.get()!==VoicePanelModes.PIP||isJoining;return{opacity:isShowingContent?1:0,pointerEvents:'box-none'};}const fade=isJoining?SHEET_MORPH_JOINING_PANEL_FADE:isDockExpanding.get()?SHEET_MORPH_EXPANDING_PANEL_FADE:SHEET_MORPH_DOCKING_PANEL_FADE;return{opacity:Math.max(dockContentSwap.get(),getSheetMorphFadeProgress(progress,fade.start,fade.end)),pointerEvents:isDockRowTouchable(progress)?'none':'box-none'};})" };
+let closure_10 = react.memo(function SheetFullscreenContent(children) {
+  let dockContentSwap;
+  let dockJoinMorphOrigin;
+  let dockMinimizeProgress;
   let isDockConnected;
   let isDockExpanding;
-  let dockJoinMorphOrigin;
+  let items2;
+  let mode;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let wrapperDimensions;
   children = children.children;
-  const context = dockJoinMorphOrigin.useContext(isDockConnected(isDockExpanding[10]));
-  const dockContentSwap = context.dockContentSwap;
-  isDockConnected = context.isDockConnected;
-  isDockExpanding = context.isDockExpanding;
-  dockJoinMorphOrigin = context.dockJoinMorphOrigin;
-  const mode = context.mode;
-  const dockMinimizeProgress = context.dockMinimizeProgress;
-  const wrapperDimensions = context.wrapperDimensions;
-  let obj = dockContentSwap(isDockExpanding[9]);
-  const fn = function s() {
-    let max;
-    let obj2;
-    let opacity;
-    let str;
-    let value2;
-    const diff = 1 - dockMinimizeProgress.get();
-    const drawerHeight = wrapperDimensions.get().drawerHeight;
-    const tmp2 = null != dockJoinMorphOrigin.get();
-    if (isDockConnected.get()) {
-      if (drawerHeight > 0) {
-        let SHEET_MORPH_JOINING_PANEL_FADE;
-        if (tmp2) {
-          SHEET_MORPH_JOINING_PANEL_FADE = VoicePanelSheetMorph.SHEET_MORPH_JOINING_PANEL_FADE;
-        } else {
-          const value = isDockExpanding.get();
-          const tmp7 = VoicePanelSheetMorph;
-          SHEET_MORPH_JOINING_PANEL_FADE = value ? tmp7.SHEET_MORPH_EXPANDING_PANEL_FADE : tmp7.SHEET_MORPH_DOCKING_PANEL_FADE;
+  let tmp2 = dependencyMap;
+  const context = react.useContext(VoicePanelStateContextDefault);
+  ({ dockContentSwap, isDockConnected, isDockExpanding, dockJoinMorphOrigin, mode, dockMinimizeProgress, wrapperDimensions } = context);
+  let tmp4 = _mod1652;
+  const items = [closure_9, dockMinimizeProgress, wrapperDimensions, dockJoinMorphOrigin, isDockConnected, mode, VoicePanelModes, , , , , , , ];
+  const useAnimatedStyle = tmp4.useAnimatedStyle;
+  items[7] = VoicePanelSheetMorph.SHEET_MORPH_JOINING_PANEL_FADE;
+  items[8] = isDockExpanding;
+  items[9] = VoicePanelSheetMorph.SHEET_MORPH_EXPANDING_PANEL_FADE;
+  items[10] = VoicePanelSheetMorph.SHEET_MORPH_DOCKING_PANEL_FADE;
+  items[11] = dockContentSwap;
+  items[12] = VoicePanelSheetMorph.getSheetMorphFadeProgress;
+  items[13] = VoicePanelSheetMorph.isDockRowTouchable;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  let c8;
+  let c9;
+  let c10;
+  let c11;
+  let c12;
+  [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items;
+  class VoicePanelDockSheetTsx5 {
+    constructor() {
+      diff = 1 - closure_0.get();
+      drawerHeight = closure_1.get().drawerHeight;
+      tmp2 = null != closure_2.get();
+      if (closure_3.get()) {
+        num = 0;
+        if (drawerHeight > 0) {
+          if (tmp2) {
+            tmp4 = closure_6;
+          } else {
+            tmp3 = closure_7;
+            tmp4 = closure_7.get() ? closure_8 : closure_9;
+          }
+          obj = { opacity: null, pointerEvents: null };
+          tmp5 = globalThis;
+          _Math = Math;
+          tmp6 = closure_10;
+          max = Math.max;
+          tmp8 = closure_11;
+          value = closure_10.get();
+          obj.opacity = max(value, closure_11(diff, tmp4.start, tmp4.end));
+          tmp9 = closure_12;
+          str = "box-none";
+          if (closure_12(diff)) {
+            str = "none";
+          }
+          obj.pointerEvents = str;
+          return obj;
         }
-        const _Math = Math;
-        const obj = { opacity: max(value2, obj2.getSheetMorphFadeProgress(diff, SHEET_MORPH_JOINING_PANEL_FADE.start, SHEET_MORPH_JOINING_PANEL_FADE.end)), pointerEvents: str };
-        max = Math.max;
-        value2 = dockContentSwap.get();
-        str = "box-none";
-        obj2 = VoicePanelSheetMorph;
-        const obj3 = VoicePanelSheetMorph;
-        if (obj3.isDockRowTouchable(diff)) {
-          str = "none";
-        }
-        return obj;
       }
+      if (closure_4.get() !== closure_5.PIP) {
+        opacity = 1;
+      } else {
+        opacity = 0;
+      }
+      return { opacity, pointerEvents: "box-none" };
     }
-    if (mode.get() !== VoicePanelModes.PIP) {
-      opacity = 1;
-    } else {
-      opacity = 0;
-    }
-    return { opacity, pointerEvents: "box-none" };
-  };
-  let obj2 = { dockMinimizeProgress, wrapperDimensions, dockJoinMorphOrigin, isDockConnected, mode, VoicePanelModes: wrapperDimensions, SHEET_MORPH_JOINING_PANEL_FADE: dockContentSwap(isDockExpanding[5]).SHEET_MORPH_JOINING_PANEL_FADE, isDockExpanding, SHEET_MORPH_EXPANDING_PANEL_FADE: dockContentSwap(isDockExpanding[5]).SHEET_MORPH_EXPANDING_PANEL_FADE, SHEET_MORPH_DOCKING_PANEL_FADE: dockContentSwap(isDockExpanding[5]).SHEET_MORPH_DOCKING_PANEL_FADE, dockContentSwap, getSheetMorphFadeProgress: dockContentSwap(isDockExpanding[5]).getSheetMorphFadeProgress, isDockRowTouchable: dockContentSwap(isDockExpanding[5]).isDockRowTouchable };
-  fn.__closure = obj2;
-  fn.__workletHash = 16462503192915;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = { style: items, children };
-  items = [mode.absoluteFill, animatedStyle];
-  return closure_9(isDockConnected(isDockExpanding[11]), obj3);
+  }
+  const items1 = [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
+  VoicePanelDockSheetTsx5.__closure = items1;
+  VoicePanelDockSheetTsx5.__workletHash = 14755707317578;
+  VoicePanelDockSheetTsx5.__initData = tmp5;
+  const animatedStyle = useAnimatedStyle(VoicePanelDockSheetTsx5);
+  let obj = { style: items2, children };
+  items2 = [StyleSheet.absoluteFill, animatedStyle];
+  return metroRequire(_modDef1652.View, obj);
 });
 let size = size_mod;
-let result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockSheet.tsx");
+const result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockSheet.tsx");
 
 export { getDockSheetTransform };
 export function useDockSheetSurfaceFills() {
@@ -272,7 +297,7 @@ export function VoicePanelContentWithDock(children) {
   const obj = { children: items };
   items = [, ];
   const obj2 = { children: children.children };
-  items[0] = React4(closure_14, obj2);
-  items[1] = React4(VoicePanelDockDefault, {});
-  return unpackModuleId(authStore, obj);
+  items[0] = metroRequire(closure_10, obj2);
+  items[1] = metroRequire(VoicePanelDockDefault, {});
+  return metroImportAll(metroImportDefault, obj);
 }

@@ -1,16 +1,16 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15945
+// Function ID: 15946
 // Name: GuildHeaderCountsStore
-// Dependencies: [7446, 4863, 5242, 1383, 5679, 504, 572, 2]
+// Dependencies: [7570, 4990, 5365, 1385, 5799, 504, 572, 2]
 
-// Module 15802 (GuildHeaderCountsStore)
+// Module 15945 (GuildHeaderCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7446 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
-import UserStore from "UserStore" /* 1383 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7570 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import UserStore from "UserStore" /* 1385 */;
+import VoiceStateStore from "VoiceStateStore" /* 5799 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;
@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Boolean", onlineCount: "dispatch", memberCount: "isArray" };
+      closure_6[guildId] = { activeChannelsCount: "replace", onlineCount: "r", memberCount: "isArray" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Boolean", onlineCount: "dispatch", memberCount: "isArray" };
+      closure_6[guildId] = { activeChannelsCount: "replace", onlineCount: "r", memberCount: "isArray" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Boolean", onlineCount: "dispatch", memberCount: "isArray" };
+      closure_6[guildId] = { activeChannelsCount: "replace", onlineCount: "r", memberCount: "isArray" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

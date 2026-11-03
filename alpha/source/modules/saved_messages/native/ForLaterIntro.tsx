@@ -1,22 +1,22 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11315
+// Function ID: 11316
 // Name: ForLaterIntro
-// Dependencies: [17, 5273, 21, 5014, 575, 10192, 11179, 11183, 5624, 1113, 5717, 11187, 11161, 5740, 7378, 2]
+// Dependencies: [17, 5396, 21, 5141, 575, 10322, 11316, 11320, 5747, 1113, 5837, 11324, 11298, 5860, 7498, 2]
 // Exports: default
 
-// Module 11178 (ForLaterIntro)
+// Module 11315 (ForLaterIntro)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import ClockIcon from "ClockIcon" /* 5740 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10192 */;
-import BookmarkIcon from "BookmarkIcon" /* 11161 */;
-import _modDef11187 from "module_11187" /* 11187 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import ClockIcon from "ClockIcon" /* 5860 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10322 */;
+import BookmarkIcon from "BookmarkIcon" /* 11298 */;
+import _modDef11324 from "module_11324" /* 11324 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -35,7 +35,7 @@ let obj9;
 let size;
 let size1;
 let tmp8;
-const ChevronSmallRightIcon2 = tmp8(7378);
+const ChevronSmallRightIcon2 = tmp8(7498);
 function IntroDemo(isReminder) {
   let intl;
   let intl2;
@@ -53,7 +53,7 @@ function IntroDemo(isReminder) {
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   const obj3 = { source: obj4, style: tmp.avatar };
-  obj4 = { uri: _modDef11187 };
+  obj4 = { uri: _modDef11324 };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj3), ];
   const obj5 = { style: tmp.messageLines, children: items1 };
@@ -158,9 +158,9 @@ export default function ForLaterIntro(type) {
   const tmp = closure_7();
   const tmp4 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp4) {
-    BookmarksSpotIllustration = tmp2(11179).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11316).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp2(11183).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp2(11320).BookmarksSpotIllustration;
   }
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };
@@ -168,14 +168,14 @@ export default function ForLaterIntro(type) {
   const obj3 = { style: tmp.upsellImage, children: hasOwnProperty(BookmarksSpotIllustration, { width: 180, height: 120, accessible: false }) };
   items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
-  const Heading = tmp2(5624).Heading;
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
+  const Heading = tmp2(5747).Heading;
   const intl = tmp2(1113).intl;
   string = intl.string;
   t = tmp2(1113).t;
   items1 = [hasOwnProperty(Heading, obj5), ];
   const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: format(tmp9, obj7) };
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5747).Text;
   const intl2 = tmp2(1113).intl;
   format = intl2.format;
   const t2 = tmp2(1113).t;

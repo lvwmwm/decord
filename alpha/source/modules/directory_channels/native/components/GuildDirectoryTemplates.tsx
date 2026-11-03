@@ -1,18 +1,18 @@
-// Module ID: 13871
-// Function ID: 13872
+// Module ID: 14002
+// Function ID: 14003
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 13853, 13858, 21, 5014, 13872, 1187, 13873, 1497, 1625, 13857, 5624, 1113, 7060, 7104, 2]
+// Dependencies: [19, 17, 13984, 13989, 21, 5141, 14003, 1187, 14004, 1499, 1627, 13988, 5747, 1113, 7186, 7230, 2]
 // Exports: default
 
-// Module 13871 (GuildDirectoryTemplates)
+// Module 14002 (GuildDirectoryTemplates)
 import native from "native" /* 1187 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13858 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 13873 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13989 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 14004 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13853 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13984 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ class GuildTemplatesItem {
         return onGuildTemplatePress(guildTemplate);
       }
     };
-    return closure_9(onGuildTemplatePress(13872), obj);
+    return closure_9(onGuildTemplatePress(14003), obj);
   }
 }
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
@@ -88,7 +88,7 @@ export default function GuildDirectoryTemplates(directoryGuildName) {
   obj4 = { paddingBottom: bottom + 16 };
   const obj5 = { style: tmp.header, children: items1 };
   const GuildDirectoryAddModalScreen = require("GuildDirectoryAddModal").GuildDirectoryAddModalScreen;
-  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(require("intl").t.T7aLYT, obj7) };
+  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.format(require("intl").t.T7aLYT, obj7) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   obj7 = { guildName: directoryGuildName.directoryGuildName };

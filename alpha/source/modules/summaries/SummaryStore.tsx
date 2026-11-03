@@ -1,36 +1,36 @@
-// Module ID: 10122
-// Function ID: 10123
+// Module ID: 10252
+// Function ID: 10253
 // Name: SummaryStore
-// Dependencies: [32, 5238, 9134, 4863, 4885, 6842, 4917, 6775, 1383, 10123, 9135, 504, 11, 1089, 10124, 572, 10125, 12, 2]
+// Dependencies: [32, 5361, 9262, 4990, 5012, 6962, 5044, 6895, 1385, 10253, 9263, 504, 11, 1089, 10254, 572, 10255, 12, 2]
 
-// Module 10122 (SummaryStore)
+// Module 10252 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import _mod9135 from "module_9135" /* 9135 */;
-import SummaryConstants from "SummaryConstants" /* 10123 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10124 */;
-import Summary from "Summary" /* 10125 */;
+import _mod9263 from "module_9263" /* 9263 */;
+import SummaryConstants from "SummaryConstants" /* 10253 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10254 */;
+import Summary from "Summary" /* 10255 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 9134 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
-import UserStore from "UserStore" /* 1383 */;
+import ExperimentStore from "ExperimentStore" /* 5361 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 9262 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import ReadStateStore from "ReadStateStore" /* 6962 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_18, dependencyMap, findIndexResult, flag, id, startId;
+let closure_18, dependencyMap, findIndexResult, flag, id, results, startId;
 
 function handleQuickSwitcherUpdate() {
-  const results = QuickSwitcherStore.getProps().results;
+  results = QuickSwitcherStore.getProps().results;
   const found = results.filter((type) => {
-    const tmp = type.type === _mod9135.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
+    const tmp = type.type === _mod9263.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
     return tmp;
   });
   closure_24 = found.map((record) => record.record.id);

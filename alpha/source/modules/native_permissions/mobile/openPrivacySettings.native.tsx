@@ -1,11 +1,11 @@
-// Module ID: 7964
-// Function ID: 7965
+// Module ID: 8088
+// Function ID: 8089
 // Name: react-native
-// Dependencies: [7110, 2]
+// Dependencies: [7236, 2]
 // Exports: default
 
-// Module 7964 (react-native)
-import react_nativeDefault from "react-native" /* 7110 */;
+// Module 8088 (react-native)
+import react_nativeDefault from "react-native" /* 7236 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/native_permissions/mobile/openPrivacySettings.native.tsx");

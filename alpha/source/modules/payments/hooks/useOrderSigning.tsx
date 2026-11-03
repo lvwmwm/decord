@@ -1,13 +1,13 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9693
+// Function ID: 9694
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5747, 4834, 4827, 7418, 9562, 1113, 9564, 2]
+// Dependencies: [5, 32, 19, 5867, 4961, 4954, 7542, 9694, 1113, 9696, 2]
 // Exports: useOrderSigning
 
-// Module 9561 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4827 */;
-import BillingErrorDefault from "BillingError" /* 4834 */;
-import PaymentConstants from "PaymentConstants" /* 5747 */;
+// Module 9693 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4954 */;
+import BillingErrorDefault from "BillingError" /* 4961 */;
+import PaymentConstants from "PaymentConstants" /* 5867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4834)(error);
+      tmp3 = new tmp(4961)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4827).captureBillingException;
+      const captureBillingException = tmp5(4954).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4834)(arg2);
+      tmp3 = new tmp(4961)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -94,7 +94,7 @@ export function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;

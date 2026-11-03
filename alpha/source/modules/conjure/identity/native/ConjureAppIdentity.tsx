@@ -1,19 +1,19 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 12253
+// Function ID: 12254
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 5014, 8212, 8221, 12118, 1113, 3868, 1488, 12114, 6977, 12119, 5717, 12121, 6027, 7082, 6845, 5624, 7253, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 5141, 8336, 8345, 12254, 1113, 3995, 1490, 12250, 7103, 12255, 5837, 12257, 6147, 7208, 6965, 5747, 7373, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 12117 (ConjureAppIdentity)
+// Module 12253 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ImagePickerDefault from "ImagePicker" /* 8221 */;
+import _modDef3995 from "module_3995" /* 3995 */;
+import ImagePickerDefault from "ImagePicker" /* 8345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, importDefault;
@@ -67,7 +67,7 @@ let value = function _pickConjureAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ class ConjureAppIconTile {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -229,7 +229,7 @@ class ConjureAppIconTile {
           } else if (1 === c3) {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -250,7 +250,7 @@ class ConjureAppIconTile {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           if (0 === c2) {
@@ -264,7 +264,7 @@ class ConjureAppIconTile {
     }), items);
     const tmp4 = closure_8;
     let str = "subtle";
-    const Card = onChange(6977).Card;
+    const Card = onChange(7103).Card;
     const tmp5 = View;
     if (null == iconURL) {
       str = "strong";
@@ -276,14 +276,14 @@ class ConjureAppIconTile {
     t = tmp7(1113).t;
     if (null == iconURL) {
       let obj3 = { size: "md", color: onError(575).colors.ICON_MUTED };
-      const ImagePlusIcon = tmp7(12119).ImagePlusIcon;
+      const ImagePlusIcon = tmp7(12255).ImagePlusIcon;
       tmp6Result = tmp6(ImagePlusIcon, obj3);
       tmp9 = onError;
     } else {
       tmp9 = onError;
       let obj4 = { source: obj5, style: tmp.tileImage, resizeMode: "cover" };
       obj5 = { uri: iconURL };
-      tmp6Result = tmp6(onError(5717), obj4);
+      tmp6Result = tmp6(onError(5837), obj4);
     }
     items2 = [tmp6(Card, obj2), ];
     let tmp6Result2 = null;
@@ -291,7 +291,7 @@ class ConjureAppIconTile {
       tmp6Result2 = null;
       if (!disabled) {
         const obj6 = { style: tmp.editIcon };
-        tmp6Result2 = tmp6(tmp9(12121), obj6);
+        tmp6Result2 = tmp6(tmp9(12257), obj6);
       }
     }
     items2[1] = tmp6Result2;
@@ -348,27 +348,27 @@ export function ConjureAppIdentitySection(nameError) {
     }
   }, items);
   const obj = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack = nameError(6027).Stack;
+  const Stack = nameError(6147).Stack;
   const obj2 = { style: tmp.nameRow, children: items1 };
   items1 = [closure_7(ConjureAppIconTile, { iconURL, size: first1, disabled: flag, onChange: onIconChange, onError: tmp4 }), ];
   const obj3 = { style: tmp.nameField, onLayout: callback, children: closure_7(TextInput, obj4) };
-  obj4 = { label: intl.string(_modDef3868.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6845).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
-  TextInput = nameError(7082).TextInput;
+  obj4 = { label: intl.string(_modDef3995.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6965).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
+  TextInput = nameError(7208).TextInput;
   intl = nameError(1113).intl;
   items1[1] = closure_7(View, obj3);
   items2 = [closure_8(View, obj2), ];
   let tmp14Result = null;
   const tmp9 = closure_9;
   if (null != first) {
-    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5624).Text, obj6) };
+    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5747).Text, obj6) };
     obj6 = { variant: "text-xs/normal", color: "text-feedback-critical", children: first };
     tmp14Result = tmp14(tmp13, obj5);
   }
   const obj7 = { children: items3 };
   items2[1] = tmp14Result;
   items3 = [closure_8(Stack, obj), ];
-  const obj8 = { label: intl2.string(_modDef3868.ynaGa1), placeholder: intl3.string(_modDef3868["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6845).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
-  const TextArea = tmp10(7253).TextArea;
+  const obj8 = { label: intl2.string(_modDef3995.ynaGa1), placeholder: intl3.string(_modDef3995["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6965).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
+  const TextArea = tmp10(7373).TextArea;
   intl2 = tmp10(1113).intl;
   intl3 = tmp10(1113).intl;
   items3[1] = closure_7(TextArea, obj8);

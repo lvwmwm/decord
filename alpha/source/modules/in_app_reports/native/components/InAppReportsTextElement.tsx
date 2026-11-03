@@ -1,16 +1,16 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8499
+// Function ID: 8500
 // Name: InAppReportsTextElement
-// Dependencies: [19, 17, 21, 5014, 6031, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 6151, 5747, 2]
 // Exports: default
 
-// Module 8375 (InAppReportsTextElement)
+// Module 8499 (InAppReportsTextElement)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CustomMarkupAll from "CustomMarkup" /* 6031 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import CustomMarkupAll from "CustomMarkup" /* 6151 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,7 +40,7 @@ export default function TextElement(element) {
       const tmp5 = metroRequire;
       const tmp6 = View;
       if (tmp7) {
-        const obj3 = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: header };
+        const obj3 = { style: tmp.header, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: header };
         tmp7 = hasOwnProperty(Text_Text.Text, obj3);
       }
       items = [tmp7, ];

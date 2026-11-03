@@ -1,45 +1,58 @@
-// Module ID: 5254
-// Function ID: 5255
-// Name: timing
-// Dependencies: [5255, 5256, 5095, 2]
+// Module ID: 5377
+// Function ID: 5378
+// Name: timing/timing
+// Dependencies: [5378, 5379, 1652, 2]
 // Exports: withTiming
 
-// Module 5254 (timing)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5255 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5256 */;
+// Module 5377 (timing/timing)
+import _mod1652 from "module_1652" /* 1652 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5378 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5379 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
+const items = [{ code: "(function withTiming_timingTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){let[accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE_TIMING,ReduceMotion,REAwithTiming]=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE_TIMING:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithTiming(toValue,configForRea,callback);})" }, , , , ];
 const CONFIG_NEVER_ANIMATE_TIMING = ReanimatedConstants.CONFIG_NEVER_ANIMATE_TIMING;
-function withTiming(value, timingStandard, fn, fn2) {
-  let tmp5;
-  let str = fn;
-  if (fn === undefined) {
+items[1] = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
+items[2] = CONFIG_NEVER_ANIMATE_TIMING;
+items[3] = _mod1652.ReduceMotion;
+items[4] = _mod1652.withTiming;
+let c0;
+let c1;
+let c2;
+let c3;
+[tmp2, tmp3, tmp4, tmp5, tmp6] = items;
+function withTiming(c9, timingStandard, arg2, ChatInputActionButtonTransitionItemTsx1) {
+  let tmp3;
+  let str = arg2;
+  if (arg2 === undefined) {
     str = "respect-motion-settings";
   }
-  const accessibilityPreferencesSharedValue = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
   if ("animate-always" === str) {
-    let tmp7 = timingStandard;
+    let tmp5 = timingStandard;
     if ("animate-always" === str) {
       let obj = timingStandard;
       if (timingStandard == null) {
         obj = {};
       }
-      const obj2 = { reduceMotion: ReanimatedRexport.ReduceMotion.Never };
+      const obj2 = { reduceMotion: Never.Never };
       const merged = Object.assign(obj);
-      tmp7 = obj2;
+      tmp5 = obj2;
     }
-    tmp5 = tmp7;
+    tmp3 = tmp5;
   } else {
-    tmp5 = CONFIG_NEVER_ANIMATE_TIMING;
+    tmp3 = c1;
   }
-  const tmpResult = ReanimatedRexport;
-  return tmpResult.withTiming(value, tmp5, fn2);
+  return _undefined2(c9, tmp3, ChatInputActionButtonTransitionItemTsx1);
 }
-let obj = { accessibilityPreferencesSharedValue: reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE_TIMING, ReduceMotion: ReanimatedRexport.ReduceMotion, REAwithTiming: ReanimatedRexport.withTiming };
-withTiming.__closure = obj;
-withTiming.__workletHash = 6710776253444;
-withTiming.__initData = { code: "function withTiming_timingTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE_TIMING,ReduceMotion,REAwithTiming}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE_TIMING:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithTiming(toValue,configForRea,callback);}" };
+const items1 = [tmp3, tmp4, tmp5, tmp6];
+withTiming.__closure = items1;
+withTiming.__workletHash = 8505479360605;
+withTiming.__initData = tmp2;
 const result = size.fileFinishedImporting("design/animation/reanimated/timing/timing.tsx");
 
 export { withTiming };

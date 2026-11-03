@@ -1,16 +1,16 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7747
+// Function ID: 7748
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 5014, 575, 5253, 7624, 7626, 1113, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5376, 7748, 7750, 1113, 5747, 2]
 // Exports: PremiumPill
 
-// Module 7623 (PremiumPill)
+// Module 7747 (PremiumPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -133,7 +133,7 @@ export const PremiumPill = (discountOffer) => {
   if (null != str3) {
     let obj = { style: items2, children: flag3(Text, obj2) };
     items2 = [tmp6.pillContainer, style];
-    obj2 = { variant: "text-xs/bold", color: str2, style: tmp6.discountPillText, children: str3.toUpperCase() };
+    obj2 = { variant: "text-xs/semibold", color: str2, style: tmp6.discountPillText, children: str3.toUpperCase() };
     Text = tmp(tmp2[9]).Text;
     tmp11 = flag3(trialOffer, obj);
   }

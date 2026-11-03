@@ -1,26 +1,26 @@
-// Module ID: 19982
-// Function ID: 19983
+// Module ID: 20132
+// Function ID: 20133
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 7413, 1113, 17220, 17216, 5717, 19983, 19984, 19958, 17228, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5747, 7537, 1113, 17363, 17359, 5837, 20133, 20134, 20108, 17371, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 19982 (GuildRoleSubscriptionListingPreview)
+// Module 20132 (GuildRoleSubscriptionListingPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import PriceUtils from "PriceUtils" /* 7413 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17216 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17220 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17228 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 19958 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 19983 */;
-import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 19984 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import PriceUtils from "PriceUtils" /* 7537 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17359 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17363 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17371 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 20108 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 20133 */;
+import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 20134 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -50,7 +50,7 @@ function PriceTier(arg0) {
   const merged = Object.assign(arg0, Object.assign({ price: 0, currency: 0 }));
   const tmp2 = closure_9();
   const obj = { style: tmp2.priceGroup, children: items };
-  const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: obj3.formatPrice(price, currency) };
+  const obj2 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: obj3.formatPrice(price, currency) };
   const Text = Text_Text.Text;
   obj3 = PriceUtils;
   items = [metroRequire(Text, obj2), ];

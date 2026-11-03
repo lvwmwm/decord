@@ -1,22 +1,22 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 15852
+// Function ID: 15853
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 15710, 21, 5014, 15711, 15712, 5624, 1113, 7082, 5634, 2]
+// Dependencies: [32, 19, 17, 15853, 21, 5141, 15854, 15855, 5747, 1113, 7208, 5754, 2]
 // Exports: UserCodeInput
 
-// Module 15709 (UserCodeInput)
+// Module 15852 (UserCodeInput)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7082 */;
-import OAuthConstants2 from "OAuthConstants" /* 15710 */;
-import useUserCodeSubmit from "useUserCodeSubmit" /* 15711 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15712 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7208 */;
+import OAuthConstants2 from "OAuthConstants" /* 15853 */;
+import useUserCodeSubmit from "useUserCodeSubmit" /* 15854 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15855 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -58,7 +58,7 @@ export function UserCodeInput(prefilledUserCode) {
   const obj2 = { children: items1 };
   ({ manualSubmit, error, submitting } = userCodeSubmit);
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
-  const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl5.t.KYPNUv) };
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl5.t.KYPNUv) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [metroImportDefault(Text, obj4), ];

@@ -1,22 +1,22 @@
-// Module ID: 10147
-// Function ID: 10148
+// Module ID: 10277
+// Function ID: 10278
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1072, 21, 5014, 8220, 6957, 1409, 5717, 10148, 6980, 1113, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5141, 8344, 7083, 1411, 5837, 10278, 7106, 1113, 2]
 // Exports: default
 
-// Module 10147 (IconUploader)
+// Module 10277 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import Pressables from "Pressables" /* 6980 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10148 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
+import Pressables from "Pressables" /* 7106 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -71,7 +71,7 @@ export default function IconUploader(disabled) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ export default function IconUploader(disabled) {
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;

@@ -1,18 +1,18 @@
-// Module ID: 5045
-// Function ID: 5046
+// Module ID: 5172
+// Function ID: 5173
 // Name: SelectedGuildStore
-// Dependencies: [5046, 502, 5049, 4885, 1072, 1099, 504, 5050, 5063, 572, 2]
+// Dependencies: [5173, 502, 5176, 5012, 1072, 1099, 504, 5177, 5190, 572, 2]
 
-// Module 5045 (SelectedGuildStore)
+// Module 5172 (SelectedGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
-import matchPathCompat from "matchPathCompat" /* 5050 */;
-import RouteUtils from "RouteUtils" /* 5063 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import matchPathCompat from "matchPathCompat" /* 5177 */;
+import RouteUtils from "RouteUtils" /* 5190 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5173 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5049 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5176 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

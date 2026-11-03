@@ -1,15 +1,15 @@
-// Module ID: 18795
-// Function ID: 18796
+// Module ID: 18953
+// Function ID: 18954
 // Name: MessagesScreen
-// Dependencies: [19, 13900, 9827, 21, 18779, 504, 18707, 18781, 18758, 18780, 18796, 18785, 18772, 18714, 18797, 2]
+// Dependencies: [19, 14031, 9958, 21, 18937, 504, 18865, 18939, 18916, 18938, 18954, 18943, 18930, 18872, 18955, 2]
 
-// Module 18795 (MessagesScreen)
+// Module 18953 (MessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18758 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 18781 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18916 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 18939 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import SearchQueryStore from "SearchQueryStore" /* 14031 */;
+import SearchConstants from "SearchConstants" /* 9958 */;
 import size from "module_2" /* 2 */;
 
 let Pins;

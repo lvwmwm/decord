@@ -1,30 +1,30 @@
-// Module ID: 14426
-// Function ID: 14427
+// Module ID: 14557
+// Function ID: 14558
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5015, 6896, 7407, 1072, 21, 5014, 575, 5095, 5637, 5254, 5260, 1491, 504, 8773, 7404, 5624, 5634, 1113, 5717, 5587, 7292, 7005, 7054, 9521, 7330, 7327, 11387, 7351, 1252, 5593, 10669, 3738, 9440, 5068, 2]
+// Dependencies: [32, 717, 19, 17, 5142, 7016, 7531, 1072, 21, 5141, 575, 1652, 5757, 5377, 5383, 1493, 504, 8897, 7528, 5747, 5754, 1113, 5837, 5710, 7412, 7131, 7180, 9649, 7450, 7447, 11525, 7471, 1252, 5716, 10799, 3865, 9568, 5195, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 14426 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 14557 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef3738 from "module_3738" /* 3738 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7404 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7407 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10669 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import HapticUtils from "HapticUtils" /* 5383 */;
+import XSmallIcon from "XSmallIcon" /* 7180 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7528 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7531 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10799 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import SKUStore from "SKUStore" /* 6896 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import SKUStore from "SKUStore" /* 7016 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,23 +63,32 @@ function PurchaseSuccessModalBase(sku) {
   let finePrint;
   let first;
   let intl2;
-  let items13;
   let items15;
-  let items16;
-  let items17;
-  let items18;
-  let items20;
+  let items19;
   let items21;
   let items22;
-  let items9;
-  let obj16;
-  let obj19;
-  let obj22;
+  let items23;
+  let items24;
+  let items26;
+  let items27;
+  let items28;
+  let obj12;
+  let obj15;
+  let obj9;
   let onClose;
   let onCtaPress;
   let ref;
   let title;
-  let tmp23Result4;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp35Result4;
   let useReducedMotion;
   sku = sku.sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
@@ -100,7 +109,6 @@ function PurchaseSuccessModalBase(sku) {
   const sharedValue = obj2.useSharedValue(0);
   let obj3 = sku(callback1[11]);
   const sharedValue1 = obj3.useSharedValue(0);
-  let obj4 = isScreenLandscape;
   const items1 = [sharedValue, stateFromStores, sharedValue1];
   const effect = isScreenLandscape.useEffect(() => {
     let num = 1;
@@ -108,76 +116,96 @@ function PurchaseSuccessModalBase(sku) {
     if (!stateFromStores) {
       const withDelay = sku(callback1[11]).withDelay;
       sku(callback1[11]);
-      const obj = sku(callback1[12]);
-      num = withDelay(200, obj.withSpring(1, { duration: 500, dampingRatio: 0.7 }));
+      const _Math = Math;
+      const obj = { duration: Math.round(333.3333333333333), dampingRatio: 0.7 };
+      const withSpring = sku(callback1[12]).withSpring;
+      sku(callback1[12]);
+      num = withDelay(200, withSpring(1, obj));
     }
     const result = set(num);
-    let num3 = 1;
+    let num4 = 1;
     set2 = sharedValue1.set;
     if (!stateFromStores) {
       const withDelay2 = sku(callback1[11]).withDelay;
       sku(callback1[11]);
       const obj2 = sku(callback1[13]);
-      num3 = withDelay2(200, obj2.withTiming(1, { duration: 200 }));
+      num4 = withDelay2(200, obj2.withTiming(1, { duration: 200 }));
     }
-    set2(num3);
+    set2(num4);
   }, items1);
-  const fn = function n() {
-    let items;
-    let obj2;
-    let obj4;
-    const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0.1, 1]), transform: items };
-    obj2 = sku(callback1[11]);
-    const obj3 = { scale: obj4.interpolate(sharedValue.get(), [0, 1], [0, 1]) };
-    items = [obj3];
-    obj4 = sku(callback1[11]);
-    return obj;
-  };
-  const obj5 = sku(callback1[11]);
-  fn.__closure = { interpolate: sku(callback1[11]).interpolate, springInput: sharedValue };
-  fn.__workletHash = 7750024112371;
-  fn.__initData = __initData;
-  ({ interpolate: sku(callback1[11]).interpolate, springInput: sharedValue });
-  const animatedStyle = obj5.useAnimatedStyle(fn);
-  const fn2 = function s() {
-    let items;
-    let obj2;
-    let obj4;
-    const obj = { opacity: obj2.interpolate(sharedValue.get(), [0, 1], [0, 1]), transform: items };
-    obj2 = sku(callback1[11]);
-    const obj3 = { scale: obj4.interpolate(sharedValue.get(), [0, 1], [0.75, 1]) };
-    items = [obj3];
-    obj4 = sku(callback1[11]);
-    return obj;
-  };
-  const obj7 = sku(callback1[11]);
-  fn2.__closure = { interpolate: sku(callback1[11]).interpolate, springInput: sharedValue };
-  fn2.__workletHash = 3400602564931;
-  fn2.__initData = __initData2;
-  ({ interpolate: sku(callback1[11]).interpolate, springInput: sharedValue });
-  const animatedStyle1 = obj7.useAnimatedStyle(fn2);
-  const fn3 = function c() {
-    let obj2;
-    const obj = { opacity: obj2.interpolate(sharedValue1.get(), [0, 1], [0.5, 0]) };
-    obj2 = sku(callback1[11]);
-    return obj;
-  };
-  const obj9 = sku(callback1[11]);
-  fn3.__closure = { interpolate: sku(callback1[11]).interpolate, linearInput: sharedValue1 };
-  fn3.__workletHash = 4092396015860;
-  fn3.__initData = __initData3;
-  ({ interpolate: sku(callback1[11]).interpolate, linearInput: sharedValue1 });
-  const animatedStyle2 = obj9.useAnimatedStyle(fn3);
-  const obj11 = sku(callback1[17]);
-  isScreenLandscape = obj11.useIsScreenLandscape();
-  const tmp13 = isScreenLandscape ? closure_12 : closure_13;
-  [first, closure_7] = obj4.useState(null);
-  const items2 = [isScreenLandscape];
-  const items3 = [isScreenLandscape, first];
+  const items2 = [closure_18, , ];
+  const useAnimatedStyle = sku(callback1[11]).useAnimatedStyle;
+  const tmp9 = sku(callback1[11]);
+  items2[1] = sku(callback1[11]).interpolate;
+  items2[2] = sharedValue;
+  let c0;
+  let c1;
+  [tmp10, tmp11, tmp12] = items2;
+  class SocialLayerStorefrontPoductPurchaseSuccessModalTsx1 {
+    constructor() {
+      let items;
+      const obj = { opacity: _undefined(_undefined2.get(), [0, 1], [0.1, 1]), transform: items };
+      items = [{ scale: _undefined(_undefined2.get(), [0, 1], [0, 1]) }];
+      ({ scale: _undefined(_undefined2.get(), [0, 1], [0, 1]) });
+      return obj;
+    }
+  }
+  const items3 = [tmp11, tmp12];
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx1.__closure = items3;
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx1.__workletHash = 1000739966762;
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx1.__initData = tmp10;
+  const animatedStyle = useAnimatedStyle(SocialLayerStorefrontPoductPurchaseSuccessModalTsx1);
+  const items4 = [closure_19, , ];
+  const useAnimatedStyle2 = tmp4(tmp3[11]).useAnimatedStyle;
+  sku(tmp3[11]);
+  items4[1] = sku(tmp3[11]).interpolate;
+  items4[2] = sharedValue;
+  c0 = undefined;
+  c1 = undefined;
+  [tmp15, tmp16, tmp17] = items4;
+  class SocialLayerStorefrontPoductPurchaseSuccessModalTsx2 {
+    constructor() {
+      let items;
+      const obj = { opacity: _undefined(_undefined2.get(), [0, 1], [0, 1]), transform: items };
+      items = [{ scale: _undefined(_undefined2.get(), [0, 1], [0.75, 1]) }];
+      ({ scale: _undefined(_undefined2.get(), [0, 1], [0.75, 1]) });
+      return obj;
+    }
+  }
+  const items5 = [tmp16, tmp17];
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx2.__closure = items5;
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx2.__workletHash = 3853789941754;
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx2.__initData = tmp15;
+  const animatedStyle2 = useAnimatedStyle2(SocialLayerStorefrontPoductPurchaseSuccessModalTsx2);
+  const items6 = [closure_20, , ];
+  const useAnimatedStyle3 = tmp4(tmp3[11]).useAnimatedStyle;
+  sku(tmp3[11]);
+  items6[1] = sku(tmp3[11]).interpolate;
+  items6[2] = sharedValue1;
+  c0 = undefined;
+  c1 = undefined;
+  [tmp20, tmp21, tmp22] = items6;
+  class SocialLayerStorefrontPoductPurchaseSuccessModalTsx3 {
+    constructor() {
+      const obj = { opacity: _undefined(_undefined2.get(), [0, 1], [0.5, 0]) };
+      return obj;
+    }
+  }
+  const items7 = [tmp21, tmp22];
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx3.__closure = items7;
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx3.__workletHash = 10933347757;
+  SocialLayerStorefrontPoductPurchaseSuccessModalTsx3.__initData = tmp20;
+  const animatedStyle3 = useAnimatedStyle3(SocialLayerStorefrontPoductPurchaseSuccessModalTsx3);
+  const tmp4Result4 = sku(tmp3[17]);
+  isScreenLandscape = tmp4Result4.useIsScreenLandscape();
+  const tmp25 = isScreenLandscape ? closure_12 : closure_13;
+  [first, closure_7] = isScreenLandscape.useState(null);
+  const items8 = [isScreenLandscape];
+  const items9 = [isScreenLandscape, first];
   const callback = obj4.useCallback((height) => {
     const obj = { height: height.nativeEvent.layout.height, landscape: isScreenLandscape };
     closure_7(obj);
-  }, items2);
+  }, items8);
   const memo = obj4.useMemo(() => {
     if (isScreenLandscape) {
       if (null != first) {
@@ -192,8 +220,8 @@ function PurchaseSuccessModalBase(sku) {
     } else {
       return 250;
     }
-  }, items3);
-  const items4 = [sku];
+  }, items9);
+  const items10 = [sku];
   const memo1 = obj4.useMemo(() => {
     const obj = SlayerStorefrontUtils;
     let str = obj.getCardBackgroundImageURL(sku);
@@ -207,9 +235,9 @@ function PurchaseSuccessModalBase(sku) {
       str1 = str.toString();
     }
     return str1;
-  }, items4);
-  const items5 = [width];
-  const memo2 = obj4.useMemo(() => ({ width }), items5);
+  }, items10);
+  const items11 = [width];
+  const memo2 = obj4.useMemo(() => ({ width }), items11);
   importDefault = obj4.useRef(length);
   callback1 = obj4.useCallback(() => {
     const arr = _toArray(ref.current);
@@ -235,86 +263,86 @@ function PurchaseSuccessModalBase(sku) {
       const result2 = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     }
   }, []);
-  const items6 = [callback1];
+  const items12 = [callback1];
   const effect1 = obj4.useEffect(() => {
     callback1();
     return () => {
       ref.current = [];
     };
-  }, items6);
-  const items7 = [tmp.messages, , ];
+  }, items12);
+  const items13 = [tmp.messages, , ];
   let messagesLandscape = isScreenLandscape;
   const View = tmp2(tmp3[11]).View;
   if (isScreenLandscape) {
     messagesLandscape = tmp.messagesLandscape;
   }
-  const obj12 = { style: items7, children: items9 };
-  items7[1] = messagesLandscape;
-  items7[2] = animatedStyle1;
-  const items8 = [tmp.title, ];
+  const obj5 = { style: items13, children: items15 };
+  items13[1] = messagesLandscape;
+  items13[2] = animatedStyle2;
+  const items14 = [tmp.title, ];
   let textLandscape = isScreenLandscape;
   const Text = tmp4(tmp3[19]).Text;
   if (isScreenLandscape) {
     textLandscape = tmp.textLandscape;
   }
-  items8[1] = textLandscape;
-  items9 = [closure_14(Text, { variant: "heading-xl/semibold", color: "text-overlay-light", style: items8, children: title }), ];
-  const items10 = [tmp.description, ];
+  items14[1] = textLandscape;
+  items15 = [closure_14(Text, { variant: "heading-xl/semibold", color: "text-overlay-light", style: items14, children: title }), ];
+  const items16 = [tmp.description, ];
   let textLandscape2 = isScreenLandscape;
   const Text2 = tmp4(tmp3[19]).Text;
   if (isScreenLandscape) {
     textLandscape2 = tmp.textLandscape;
   }
-  items10[1] = textLandscape2;
-  items9[1] = closure_14(Text2, { variant: "text-md/medium", color: "text-overlay-light", style: items10, children: body });
-  const tmp22Result = closure_15(View, obj12);
-  const items11 = [tmp.footer, ];
-  const obj13 = { style: items11, children: items13 };
-  const tmp26 = isScreenLandscape && tmp.footerLandscape;
-  items11[1] = tmp26;
-  let tmp23Result = null != finePrint;
-  if (tmp23Result) {
-    const items12 = [tmp.finePrint, ];
+  items16[1] = textLandscape2;
+  items15[1] = closure_14(Text2, { variant: "text-md/medium", color: "text-overlay-light", style: items16, children: body });
+  const tmp34Result = closure_15(View, obj5);
+  const items17 = [tmp.footer, ];
+  const obj6 = { style: items17, children: items19 };
+  const tmp38 = isScreenLandscape && tmp.footerLandscape;
+  items17[1] = tmp38;
+  let tmp35Result = null != finePrint;
+  if (tmp35Result) {
+    const items18 = [tmp.finePrint, ];
     let textLandscape3 = isScreenLandscape;
     const Text3 = tmp4(tmp3[19]).Text;
     if (isScreenLandscape) {
       textLandscape3 = tmp.textLandscape;
     }
-    const obj14 = { variant: "text-xs/normal", color: "text-overlay-light", style: items12, children: finePrint };
-    items12[1] = textLandscape3;
-    tmp23Result = tmp23(Text3, obj14);
+    const obj7 = { variant: "text-xs/normal", color: "text-overlay-light", style: items18, children: finePrint };
+    items18[1] = textLandscape3;
+    tmp35Result = tmp35(Text3, obj7);
   }
-  items13 = [tmp23Result, ];
-  const items14 = [tmp.cta, ];
-  const tmp28 = isScreenLandscape && tmp.ctaLandscape;
-  items14[1] = tmp28;
-  const obj15 = { style: items14, children: closure_14(Button, obj16) };
+  items19 = [tmp35Result, ];
+  const items20 = [tmp.cta, ];
+  const tmp40 = isScreenLandscape && tmp.ctaLandscape;
+  items20[1] = tmp40;
+  const obj8 = { style: items20, children: closure_14(Button, obj9) };
   Button = tmp4(tmp3[20]).Button;
   if (onCtaPress == null) {
     onCtaPress = onClose;
   }
-  obj16 = { onPress: onCtaPress, text: ctaLabel, icon: ctaIcon, loading: ctaLoading, size: "lg", grow: true };
+  obj9 = { onPress: onCtaPress, text: ctaLabel, icon: ctaIcon, loading: ctaLoading, size: "lg", grow: true };
   if (ctaLabel == null) {
     const intl = tmp4(tmp3[21]).intl;
     ctaLabel = intl.string(tmp4(tmp3[21]).t.cpT0Cq);
   }
-  items13[1] = closure_14(closure_7, obj15);
-  const tmp22Result3 = closure_15(closure_7, obj13);
-  const obj17 = { style: items15, children: items16 };
-  items15 = [tmp.root, memo2];
-  let tmp23Result3 = null != memo1;
-  if (tmp23Result3) {
-    const obj18 = { source: obj19, style: tmp.backdropImage, blurRadius: 4, resizeMode: "cover" };
-    obj19 = { uri: memo1 };
-    tmp23Result3 = tmp23(tmp2(tmp3[22]), obj18);
+  items19[1] = closure_14(closure_7, obj8);
+  const tmp34Result3 = closure_15(closure_7, obj6);
+  const obj10 = { style: items21, children: items22 };
+  items21 = [tmp.root, memo2];
+  let tmp35Result3 = null != memo1;
+  if (tmp35Result3) {
+    const obj11 = { source: obj12, style: tmp.backdropImage, blurRadius: 4, resizeMode: "cover" };
+    obj12 = { uri: memo1 };
+    tmp35Result3 = tmp35(tmp2(tmp3[22]), obj11);
   }
-  items16 = [tmp23Result3, , , ];
-  const obj20 = { style: tmp.backdropGradient, start: tmp13.START, end: tmp13.END, locations: [0.4, 0.75, 1], colors: ["rgba(0,0,0,0)", "rgba(0,0,0,0.6)", "#000000"] };
-  items16[1] = closure_14(require("LinearGradient"), obj20);
-  const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items17 };
-  const obj21 = { style: tmp.header, children: closure_14(HeaderBackButton, obj22) };
+  items22 = [tmp35Result3, , , ];
+  const obj13 = { style: tmp.backdropGradient, start: tmp25.START, end: tmp25.END, locations: [0.4, 0.75, 1], colors: ["rgba(0,0,0,0)", "rgba(0,0,0,0.6)", "#000000"] };
+  items22[1] = closure_14(require("LinearGradient"), obj13);
+  const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items23 };
+  const obj14 = { style: tmp.header, children: closure_14(HeaderBackButton, obj15) };
   const SafeAreaPaddingView = tmp4(tmp3[24]).SafeAreaPaddingView;
-  obj22 = {
+  obj15 = {
     onPress: onClose,
     backImage() {
       const obj = { size: "lg", style: closeButtonIcon.closeButtonIcon };
@@ -325,44 +353,44 @@ function PurchaseSuccessModalBase(sku) {
   };
   HeaderBackButton = tmp4(tmp3[25]).HeaderBackButton;
   intl2 = tmp4(tmp3[21]).intl;
-  items17 = [closure_14(closure_7, obj21), , ];
-  const obj23 = { style: tmp.scroll, contentContainerStyle: items18, onLayout: callback, alwaysBounceVertical: false, children: items20 };
-  items18 = [tmp.body, ];
+  items23 = [closure_14(closure_7, obj14), , ];
+  const obj16 = { style: tmp.scroll, contentContainerStyle: items24, onLayout: callback, alwaysBounceVertical: false, children: items26 };
+  items24 = [tmp.body, ];
   let bodyLandscape = isScreenLandscape;
-  const tmp31 = first;
+  const tmp43 = first;
   if (isScreenLandscape) {
     bodyLandscape = tmp.bodyLandscape;
   }
-  items18[1] = bodyLandscape;
-  const items19 = [tmp.preview, , ];
+  items24[1] = bodyLandscape;
+  const items25 = [tmp.preview, , ];
   let previewLandscape = isScreenLandscape;
   const View2 = tmp2(tmp3[11]).View;
   if (isScreenLandscape) {
     previewLandscape = tmp.previewLandscape;
   }
-  const obj24 = { style: items19, children: tmp23Result4 };
-  items19[1] = previewLandscape;
-  items19[2] = animatedStyle;
-  tmp23Result4 = null != memo;
-  if (tmp23Result4) {
-    const obj25 = { sku, size: memo };
-    tmp23Result4 = tmp23(tmp2(tmp3[27]), obj25);
+  const obj17 = { style: items25, children: tmp35Result4 };
+  items25[1] = previewLandscape;
+  items25[2] = animatedStyle;
+  tmp35Result4 = null != memo;
+  if (tmp35Result4) {
+    const obj18 = { sku, size: memo };
+    tmp35Result4 = tmp35(tmp2(tmp3[27]), obj18);
   }
-  items20 = [closure_14(View2, obj24), ];
-  let tmp22Result4 = tmp22Result;
+  items26 = [closure_14(View2, obj17), ];
+  let tmp34Result4 = tmp34Result;
   if (isScreenLandscape) {
-    const obj26 = { style: tmp.contentColumnLandscape, children: items21 };
-    items21 = [tmp22Result, tmp22Result3];
-    tmp22Result4 = tmp22(tmp25, obj26);
+    const obj19 = { style: tmp.contentColumnLandscape, children: items27 };
+    items27 = [tmp34Result, tmp34Result3];
+    tmp34Result4 = tmp34(tmp37, obj19);
   }
-  items20[1] = tmp22Result4;
-  items17[1] = closure_15(tmp31, obj23);
-  items17[2] = !isScreenLandscape && tmp22Result3;
-  items16[2] = closure_15(SafeAreaPaddingView, rect);
-  const obj27 = { style: items22, pointerEvents: "none" };
-  items22 = [tmp.curtain, animatedStyle2];
-  items16[3] = closure_14(require("ReanimatedRexport").View, obj27);
-  return closure_15(closure_7, obj17);
+  items26[1] = tmp34Result4;
+  items23[1] = closure_15(tmp43, obj16);
+  items23[2] = !isScreenLandscape && tmp34Result3;
+  items22[2] = closure_15(SafeAreaPaddingView, rect);
+  const obj20 = { style: items28, pointerEvents: "none" };
+  items28 = [tmp.curtain, animatedStyle3];
+  items22[3] = closure_14(require("module_1652").View, obj20);
+  return closure_15(closure_7, obj10);
 }
 let _slicedToArray = _slicedToArray_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
@@ -390,9 +418,9 @@ createStyles = createStyles_mod;
 let obj15 = { linkAccountIcon: obj16 };
 obj16 = { marginRight: nativeDefault.space.PX_4 };
 let closure_17 = createStyles.createStyles(obj15);
-const __initData = { code: "function SocialLayerStorefrontPoductPurchaseSuccessModalTsx1(){const{interpolate,springInput}=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0.1,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0,1])}]};}" };
-const __initData2 = { code: "function SocialLayerStorefrontPoductPurchaseSuccessModalTsx2(){const{interpolate,springInput}=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};}" };
-const __initData3 = { code: "function SocialLayerStorefrontPoductPurchaseSuccessModalTsx3(){const{interpolate,linearInput}=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};}" };
+let closure_18 = { code: "(function SocialLayerStorefrontPoductPurchaseSuccessModalTsx1(){let[interpolate,springInput]=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0.1,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0,1])}]};})" };
+let closure_19 = { code: "(function SocialLayerStorefrontPoductPurchaseSuccessModalTsx2(){let[interpolate,springInput]=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};})" };
+let closure_20 = { code: "(function SocialLayerStorefrontPoductPurchaseSuccessModalTsx3(){let[interpolate,linearInput]=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};})" };
 let closure_21 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontPoductPurchaseSuccessModal.tsx");
 
@@ -580,7 +608,7 @@ export function SocialLayerStorefrontProductSelfPurchaseSuccessModal(skuId) {
         formatToPlainString2Result = formatToPlainString(prop, obj3);
       } else {
         let str;
-        const eNNnIG = _modDef3738.eNNnIG;
+        const eNNnIG = _modDef3865.eNNnIG;
         if (getOrFetchApplication != null) {
           str = getOrFetchApplication.name;
         }
@@ -620,6 +648,7 @@ export function SocialLayerStorefrontProductSelfPurchaseSuccessModal(skuId) {
 export function SocialLayerStorefrontProductGiftPurchaseSuccessModal(analyticsLocations) {
   let orbsReward;
   let recipient;
+  let require;
   let sku_id;
   ({ skuId: require, orbsReward, recipient } = analyticsLocations);
   analyticsLocations = analyticsLocations.analyticsLocations;

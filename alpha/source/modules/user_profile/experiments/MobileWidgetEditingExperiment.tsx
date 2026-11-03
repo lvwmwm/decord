@@ -1,11 +1,11 @@
-// Module ID: 16461
-// Function ID: 16462
+// Module ID: 16604
+// Function ID: 16605
 // Name: MobileWidgetEditingExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: useIsMobileWidgetEditingEnabled
 
-// Module 16461 (MobileWidgetEditingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 16604 (MobileWidgetEditingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

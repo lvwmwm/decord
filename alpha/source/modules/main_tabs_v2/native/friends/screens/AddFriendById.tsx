@@ -1,24 +1,24 @@
-// Module ID: 15679
-// Function ID: 15680
+// Module ID: 15821
+// Function ID: 15822
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 1113, 5624, 7089, 7493, 7488, 5711, 1252, 5023, 7253, 5634, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1113, 5747, 7215, 7617, 7612, 5831, 1252, 5150, 7373, 5754, 2]
 // Exports: default
 
-// Module 15679 (AddFriendById)
+// Module 15821 (AddFriendById)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import TextField2 from "TextField" /* 7089 */;
-import FriendsUtils from "FriendsUtils" /* 7493 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import TextField2 from "TextField" /* 7215 */;
+import FriendsUtils from "FriendsUtils" /* 7617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -373,12 +373,12 @@ export default function _default(arg0) {
   items6 = [, , ];
   ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
   items6[2] = headerTextStyle;
-  const Text = sourcePage(5624).Text;
+  const Text = sourcePage(5747).Text;
   intl = sourcePage(1113).intl;
   const items7 = [closure_9(Text, obj5), , ];
   const obj6 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
   str2 = undefined;
-  const TextArea = sourcePage(7253).TextArea;
+  const TextArea = sourcePage(7373).TextArea;
   const tmp19 = constants3;
   if (first1.field === constants3.MESSAGE) {
     if (first1.status === tmp4.ERROR) {
@@ -401,13 +401,13 @@ export default function _default(arg0) {
     const obj9 = { style: tmp.redesignGrow };
     items8[1] = tmp16(tmp15, obj9);
     const obj10 = { size: "lg", text: intl3.string(sourcePage(1113).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-    const Button = tmp17(5634).Button;
+    const Button = tmp17(5754).Button;
     intl3 = tmp17(1113).intl;
     items8[2] = tmp16(Button, obj10);
     return tmp13(tmp14, obj8);
   }
   const obj11 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1113).t.UtfQNw) };
-  const Text2 = tmp17(5624).Text;
+  const Text2 = tmp17(5747).Text;
   intl2 = tmp17(1113).intl;
   tmp16Result = tmp16(Text2, obj11);
 };

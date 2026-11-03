@@ -1,27 +1,26 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 15042
+// Function ID: 15043
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 1497, 6744, 7169, 1376, 1113, 5624, 6998, 14912, 2]
+// Dependencies: [32, 19, 21, 1499, 6864, 7290, 1357, 1113, 5747, 7124, 15043, 2]
 // Exports: default
 
-// Module 14911 (UserProfileEditNoteModal)
+// Module 15042 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import useNavigation from "useNavigation" /* 1497 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import Navigator2 from "Navigator" /* 7169 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 14912 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import Navigator2 from "Navigator" /* 7290 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 15043 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import size_mod from "module_2" /* 2 */;
+import size from "module_2" /* 2 */;
 
 let navigation;
 
 const jsx = Fragment.jsx;
-let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
@@ -48,7 +47,7 @@ export default function UserProfileEditNoteModal(arg0) {
   shouldFocusInput = tmp4[0];
   const effect = handleClose.useEffect(() => navigation.addListener("transitionEnd", (data) => {
     if (!data.data.closing) {
-      uri(true);
+      closure_1_1(true);
     }
   }), items);
   const Navigator = Navigator2.Navigator;
@@ -66,7 +65,7 @@ export default function UserProfileEditNoteModal(arg0) {
     headerTitle() {
       const Text = Text_Text.Text;
       const intl = intl2.intl;
-      return <Text variant="redesign/heading-18/bold" accessibilityRole="header">{intl.string(intl2.t.sHHsOM)}</Text>;
+      return <Text variant="redesign/heading-18/semibold" accessibilityRole="header">{intl.string(intl2.t.sHHsOM)}</Text>;
     },
     headerLeft: tmpResult2.getHeaderCloseButton(handleClose),
     render() {

@@ -1,14 +1,14 @@
-// Module ID: 7329
-// Function ID: 7330
+// Module ID: 7449
+// Function ID: 7450
 // Name: useAuthorizationApp
-// Dependencies: [19, 2038, 2016, 1360, 1992, 7330, 2]
+// Dependencies: [19, 2167, 2145, 1362, 2121, 7450, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7329 (useAuthorizationApp)
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+// Module 7449 (useAuthorizationApp)
+import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import ApplicationStore from "ApplicationStore" /* 2167 */;
+import ApplicationRecord from "ApplicationRecord" /* 2145 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

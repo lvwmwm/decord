@@ -1,19 +1,19 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18563
+// Function ID: 18564
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 5046, 4881, 5045, 6772, 21, 5014, 575, 18370, 5596, 504, 6957, 18402, 18373, 5048, 6908, 18385, 18409, 18362, 5095, 18391, 5717, 2]
+// Dependencies: [19, 5173, 5008, 5172, 6892, 21, 5141, 575, 18515, 5719, 504, 7083, 18547, 18518, 5175, 7028, 18530, 18554, 18507, 1652, 18536, 5837, 2]
 
-// Module 18418 (GuildsBarPendingGuild)
+// Module 18563 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18362 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18507 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
-import createStyles from "createStyles" /* 5014 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5173 */;
+import GuildRecord from "GuildRecord" /* 5008 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import SortedGuildStore from "SortedGuildStore" /* 6892 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

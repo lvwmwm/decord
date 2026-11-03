@@ -1,15 +1,15 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 16771
+// Function ID: 16772
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [8432, 6726, 5693, 16584, 11540, 1113, 2]
+// Dependencies: [8556, 6846, 5813, 16727, 11677, 1113, 2]
 
-// Module 16628 (AccountAgeGroupAdultSetting)
+// Module 16771 (AccountAgeGroupAdultSetting)
 import intl2 from "intl" /* 1113 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16584 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6846 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16727 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -30,7 +30,7 @@ let obj = {
     const isVerifiedTeen = obj2.useIsVerifiedTeen();
     const obj3 = RegionalFeatureConfigUtils;
     let hasAgeGatedFeatures = obj3.useHasAgeGatedFeatures();
-    const obj4 = TinyBroncoSettingsPredicate;
+    const obj4 = AgeNoticeSettingsPredicate;
     const isTinyBroncoSettingsEnabled = obj4.useIsTinyBroncoSettingsEnabled();
     if (hasAgeGatedFeatures) {
       hasAgeGatedFeatures = isAgeVerified;

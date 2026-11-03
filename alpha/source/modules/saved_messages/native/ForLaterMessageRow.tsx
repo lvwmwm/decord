@@ -1,17 +1,17 @@
-// Module ID: 11177
-// Function ID: 11178
+// Module ID: 11314
+// Function ID: 11315
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 5014, 575, 5253, 4839, 8377, 9885, 1375, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5376, 4966, 8501, 10016, 1377, 2]
 // Exports: ForLaterMessageRow
 
-// Module 11177 (ForLaterMessageRow)
+// Module 11314 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import RowGeneratorDefault from "RowGenerator" /* 8377 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import RowGeneratorDefault from "RowGenerator" /* 8501 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

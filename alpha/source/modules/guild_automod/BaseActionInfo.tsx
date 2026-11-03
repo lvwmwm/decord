@@ -1,17 +1,17 @@
-// Module ID: 19683
-// Function ID: 19684
+// Module ID: 19833
+// Function ID: 19834
 // Name: BaseActionInfo
-// Dependencies: [4863, 4956, 1383, 13292, 4928, 1113, 5652, 2]
+// Dependencies: [4990, 5083, 1385, 13428, 5055, 1113, 5772, 2]
 // Exports: getBaseActionInfo
 
-// Module 19683 (BaseActionInfo)
+// Module 19833 (BaseActionInfo)
 import intl13 from "intl" /* 1113 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import Constants from "Constants" /* 13292 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5055 */;
+import useChannelName from "useChannelName" /* 5772 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
+import Constants from "Constants" /* 13428 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

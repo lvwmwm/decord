@@ -1,19 +1,19 @@
-// Module ID: 16603
-// Function ID: 16604
+// Module ID: 16746
+// Function ID: 16747
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 16590, 11541, 21, 5014, 575, 16593, 16438, 38, 16592, 8980, 9214, 14192, 2]
+// Dependencies: [32, 19, 17, 16733, 11678, 21, 5141, 575, 16736, 16582, 38, 16735, 9108, 9342, 14323, 2]
 // Exports: default
 
-// Module 16603 (SettingSegmentedControlRenderer)
+// Module 16746 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11541 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 16593 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11678 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 16736 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16590 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16733 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ export default function SettingSegmentedControl(node) {
   let settings;
   let tmp3;
   let tmp5;
-  const f110332 = () => {
+  const f110232 = () => {
     const field = UserSettingSearchStore.getField("selected");
     if (null != field) {
       const index = settings.indexOf(field);
@@ -66,9 +66,9 @@ export default function SettingSegmentedControl(node) {
   let tmp = closure_11();
   let tmp2 = _slicedToArray(react.useState(0), 2);
   [tmp3, c2] = tmp2;
-  [tmp5, r10021] = _slicedToArray(react.useState(f110332), 2);
+  [tmp5, r10021] = _slicedToArray(react.useState(f110232), 2);
   let items = [settings];
-  const tmp4 = _slicedToArray(react.useState(f110332), 2);
+  const tmp4 = _slicedToArray(react.useState(f110232), 2);
   const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);

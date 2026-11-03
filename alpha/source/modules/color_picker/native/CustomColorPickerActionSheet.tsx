@@ -1,26 +1,26 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16594
+// Function ID: 16595
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 5014, 575, 16451, 1090, 5095, 16452, 5011, 671, 5258, 5272, 7321, 1113, 5634, 7082, 12, 16453, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 16595, 1090, 1652, 16596, 5138, 671, 5381, 5395, 7441, 1113, 5754, 7208, 12, 16597, 1705, 2]
 // Exports: default
 
-// Module 16450 (CustomColorPickerActionSheet)
+// Module 16594 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16452 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import ColorUtils from "ColorUtils" /* 5138 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16596 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, dependencyMap;
+let dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
@@ -129,11 +129,11 @@ export default function CustomColorPickerActionSheet(arg0) {
       }
     }
   }, items);
-  const obj4 = onSelect(5095);
+  const obj4 = onSelect(1652);
   sharedValue = obj4.useSharedValue(h);
-  const obj6 = onSelect(5095);
+  const obj6 = onSelect(1652);
   const sharedValue1 = obj6.useSharedValue(s);
-  const obj8 = onSelect(5095);
+  const obj8 = onSelect(1652);
   const sharedValue2 = obj8.useSharedValue(v);
   let combined;
   if (suggestedColors != null) {
@@ -165,12 +165,12 @@ export default function CustomColorPickerActionSheet(arg0) {
     obj.hideActionSheet();
   }, items2);
   const obj5 = { onDismiss, startExpanded: true, header: sharedValue2(BottomSheetTitleHeader, obj7), children: tmp13(tmp14, obj10) };
-  BottomSheet = tmp2(5272).BottomSheet;
+  const BottomSheet = tmp2(5395).BottomSheet;
   obj7 = { title: intl.string(onSelect(1113).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
-  BottomSheetTitleHeader = tmp2(7321).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp2(7441).BottomSheetTitleHeader;
   intl = tmp2(1113).intl;
   obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1113).t.XqMe3N), onPress: callback1 };
-  Button = tmp2(5634).Button;
+  Button = tmp2(5754).Button;
   intl2 = tmp2(1113).intl;
   obj10 = { style: tmp.container, children: items3 };
   const obj11 = {
@@ -193,7 +193,7 @@ export default function CustomColorPickerActionSheet(arg0) {
     },
     maxLength: 7
   };
-  const TextInput = tmp2(7082).TextInput;
+  const TextInput = tmp2(7208).TextInput;
   intl3 = tmp2(1113).intl;
   items3 = [sharedValue2(TextInput, obj11), , ];
   const obj12 = {
@@ -230,12 +230,11 @@ export default function CustomColorPickerActionSheet(arg0) {
     saturation: sharedValue1,
     value: sharedValue2,
     onPanFinalize() {
+      const obj = _mod1705;
       const obj2 = { h: sharedValue.get(), s: sharedValue1.get(), v: sharedValue2.get() };
-      const obj = ReanimatedRexport;
-      const runOnJSResult = obj.runOnJS(updateInputHexValueFromHsv);
-      runOnJSResult(obj2);
+      obj.scheduleOnRN(updateInputHexValueFromHsv, obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(16453), obj13);
+  items3[2] = sharedValue2(tmp16(16597), obj13);
   return sharedValue2(BottomSheet, obj5);
 };

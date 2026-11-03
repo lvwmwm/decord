@@ -1,14 +1,14 @@
-// Module ID: 7580
-// Function ID: 7581
+// Module ID: 7704
+// Function ID: 7705
 // Name: LibraryApplicationUtils
-// Dependencies: [32, 1383, 6896, 1072, 4839, 2]
+// Dependencies: [32, 1385, 7016, 1072, 4966, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 7580 (LibraryApplicationUtils)
-import UserSettings from "UserSettings" /* 4839 */;
+// Module 7704 (LibraryApplicationUtils)
+import UserSettings from "UserSettings" /* 4966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1383 */;
-import SKUStore from "SKUStore" /* 6896 */;
+import UserStore from "UserStore" /* 1385 */;
+import SKUStore from "SKUStore" /* 7016 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

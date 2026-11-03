@@ -1,18 +1,16 @@
-// Module ID: 7366
-// Function ID: 7367
+// Module ID: 7486
+// Function ID: 7487
 // Name: ActionSheet
-// Dependencies: [19, 21, 5014, 575, 5272, 2]
+// Dependencies: [19, 21, 5141, 575, 5395, 2]
 // Exports: ActionSheet
 
-// Module 7366 (ActionSheet)
+// Module 7486 (ActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 const jsx = Fragment.jsx;
 let obj = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, body: { gap: 24 } };
@@ -24,7 +22,7 @@ export function ActionSheet(ref) {
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const obj = { ref: ref.ref };
   const tmp2 = closure_3();
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   const merged1 = Object.assign(merged);
   ({ content: obj.contentStyles, body: obj.bodyStyles } = tmp2);
   return <BottomSheet ref={arg0.ref} />;

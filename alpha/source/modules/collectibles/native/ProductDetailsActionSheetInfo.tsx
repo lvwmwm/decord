@@ -1,21 +1,21 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15181
+// Function ID: 15182
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 5014, 575, 15040, 5624, 7732, 9537, 1113, 15041, 1987, 2]
+// Dependencies: [17, 21, 5141, 575, 15182, 5747, 7856, 9665, 1113, 15183, 2116, 2]
 // Exports: default
 
-// Module 15039 (ProductDetailsActionSheetInfo)
+// Module 15181 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9537 */;
-import useProductDescription from "useProductDescription" /* 15040 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 15041 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7856 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9665 */;
+import useProductDescription from "useProductDescription" /* 15182 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 15183 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,7 +29,7 @@ function ProductNameAndDescription(product) {
   const obj = useProductDescription;
   const productDescription = obj.useProductDescription(product);
   items = [, ];
-  const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
+  const obj3 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
   items[0] = React3(Text_Text.Text, obj3);
   items[1] = React3(Text_Text.Text, { variant: "text-md/medium", color: "text-default", children: productDescription });
   return hasOwnProperty(View, obj2);
@@ -47,12 +47,12 @@ function ProductPurchaseStatus(product) {
   const tmp7 = View;
   if (productPurchaseState.isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(5624).Text;
+    const Text2 = tmp(5747).Text;
     intl2 = tmp(1113).intl;
     children = tmp6(Text2, obj3);
   } else if (tmp5) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(5624).Text;
+    const Text = tmp(5747).Text;
     intl = tmp(1113).intl;
     children = tmp6(Text, obj4);
   } else {

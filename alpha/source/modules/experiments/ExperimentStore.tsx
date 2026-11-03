@@ -1,26 +1,26 @@
-// Module ID: 5238
-// Function ID: 5239
+// Module ID: 5361
+// Function ID: 5362
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1071, 5239, 1072, 3, 1372, 1251, 1252, 5240, 510, 12, 572, 2]
+// Dependencies: [32, 502, 1071, 5362, 1072, 3, 1374, 1251, 1252, 5363, 510, 12, 572, 2]
 // Exports: registerExperiment
 
-// Module 5238 (ExperimentStore)
+// Module 5361 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import _modDef1251 from "module_1251" /* 1251 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1372 */;
-import GuildFilters from "GuildFilters" /* 5240 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1374 */;
+import GuildFilters from "GuildFilters" /* 5363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import ExperimentConstants from "ExperimentConstants" /* 5239 */;
+import ExperimentConstants from "ExperimentConstants" /* 5362 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let closure_22, positions;
+let closure_22, closure_23, positions;
 
 let c10;
 let c9;
@@ -784,8 +784,8 @@ const map = new Map();
 let closure_19 = {};
 let obj = { rawUserExperiments: [], rawGuildExperiments: [] };
 let loadedUserExperiments = {};
-const authStore6 = {};
-let closure_23 = {};
+const version = {};
+const sidebars = {};
 let obj4 = {};
 obj = {};
 let c26 = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL || true;

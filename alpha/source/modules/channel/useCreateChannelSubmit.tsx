@@ -1,17 +1,17 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9157
+// Function ID: 9158
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1072, 1992, 1084, 9030, 5021, 1113, 2]
+// Dependencies: [5, 32, 19, 1072, 2121, 1084, 9158, 5148, 1113, 2]
 // Exports: default
 
-// Module 9029 (useCreateChannelSubmit)
+// Module 9157 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, flags, name, permissionOverwrites, type, userLimit;
+let applicationId, bitrate, body, body2, closure_3, closure_4, closure_5, errors, flags, name, permissionOverwrites, type, userLimit;
 
 let metroImportAll;
 let metroImportDefault;
@@ -52,7 +52,7 @@ export default function useCreateChannelSubmit(arg0) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -127,7 +127,7 @@ export default function useCreateChannelSubmit(arg0) {
               const intl = permissionOverwrites(closure_2_3[8]).intl;
               announce(intl.string(permissionOverwrites(closure_2_3[8]).t["0SbUzm"]));
               body = body2.body;
-              let errors;
+              errors = undefined;
               const tmp28 = closure_2;
               if (body != null) {
                 errors = body.errors;
@@ -172,7 +172,7 @@ export default function useCreateChannelSubmit(arg0) {
             type = 0;
             bitrate(false);
             applicationId = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp62) {
           closure_5 = tmp62;

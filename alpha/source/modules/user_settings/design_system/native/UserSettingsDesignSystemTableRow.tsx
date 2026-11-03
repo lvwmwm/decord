@@ -1,36 +1,36 @@
-// Module ID: 17779
-// Function ID: 17780
+// Module ID: 17922
+// Function ID: 17923
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 5045, 1383, 1072, 21, 6975, 7561, 504, 1625, 6027, 7060, 5624, 5717, 1409, 1187, 7369, 6974, 7058, 7061, 6983, 15996, 15993, 15994, 15995, 8179, 5587, 2]
+// Dependencies: [32, 19, 17, 5172, 1385, 1072, 21, 7101, 7685, 504, 1627, 6147, 7186, 5747, 5837, 1411, 1187, 7489, 7100, 7184, 7187, 7109, 16139, 16136, 16137, 16138, 8303, 5710, 2]
 // Exports: default
 
-// Module 17779 (UserSettingsDesignSystemTableRow)
+// Module 17922 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import TableCheckboxRow3 from "TableCheckboxRow" /* 6974 */;
-import TableRow16 from "TableRow" /* 6975 */;
-import TableRowIcon5 from "TableRowIcon" /* 6983 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 7058 */;
-import TableRowGroup5 from "TableRowGroup" /* 7060 */;
-import TableRadioRow5 from "TableRadioRow" /* 7061 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7369 */;
-import SettingsIcon from "SettingsIcon" /* 7561 */;
-import RowButton3 from "RowButton" /* 8179 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15993 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15994 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15995 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15996 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import TableCheckboxRow3 from "TableCheckboxRow" /* 7100 */;
+import TableRow16 from "TableRow" /* 7101 */;
+import TableRowIcon5 from "TableRowIcon" /* 7109 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 7184 */;
+import TableRowGroup5 from "TableRowGroup" /* 7186 */;
+import TableRadioRow5 from "TableRadioRow" /* 7187 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7489 */;
+import SettingsIcon from "SettingsIcon" /* 7685 */;
+import RowButton3 from "RowButton" /* 8303 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16136 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16137 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16138 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import UserStore from "UserStore" /* 1383 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

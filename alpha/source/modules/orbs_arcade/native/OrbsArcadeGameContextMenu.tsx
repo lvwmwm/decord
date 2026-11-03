@@ -1,19 +1,19 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17207
+// Function ID: 17208
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1383, 21, 17029, 5712, 1113, 504, 14516, 17041, 12219, 9874, 8028, 9207, 2]
+// Dependencies: [5, 19, 1385, 21, 17172, 5832, 1113, 504, 14647, 17184, 12355, 10005, 8152, 9335, 2]
 // Exports: default
 
-// Module 17064 (OrbsArcadeGameContextMenu)
+// Module 17207 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9207 */;
-import RefreshIcon from "RefreshIcon" /* 12219 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14516 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17029 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9335 */;
+import RefreshIcon from "RefreshIcon" /* 12355 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14647 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, currentUser;
@@ -33,7 +33,7 @@ let obj = function _handleResetGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -76,7 +76,7 @@ let obj = function _handleResetGame() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         if (0 === c3) {
@@ -144,7 +144,7 @@ export default function OrbsArcadeGameContextMenu(game) {
     const items = [obj];
     return items;
   }, items2);
-  const ContextMenu = game(9874).ContextMenu;
+  const ContextMenu = game(10005).ContextMenu;
   const tmp4 = jsx;
   if (stateFromStores) {
     const items3 = [memo, memo1];

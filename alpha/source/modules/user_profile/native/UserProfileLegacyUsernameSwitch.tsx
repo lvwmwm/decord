@@ -1,13 +1,13 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16660
+// Function ID: 16661
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 4839, 16480, 1113, 7152, 8735, 2]
+// Dependencies: [19, 21, 4966, 16623, 1113, 7273, 8859, 2]
 // Exports: default
 
-// Module 16517 (UserProfileLegacyUsernameSwitch)
+// Module 16660 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7152 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8735 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7273 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8859 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
   pendingLegacyUsernameDisabled = pendingLegacyUsernameDisabled.pendingLegacyUsernameDisabled;
   let setting;
   const legacyUsername = pendingLegacyUsernameDisabled.legacyUsername;
-  const LegacyUsernameDisabled = setting(4839).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(4966).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
@@ -43,7 +43,7 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(16480).UserProfileEditFormSwitch;
+  const UserProfileEditFormSwitch = tmp(16623).UserProfileEditFormSwitch;
   intl = tmp(1113).intl;
   const intl2 = tmp(1113).intl;
   const tmp5 = jsx;

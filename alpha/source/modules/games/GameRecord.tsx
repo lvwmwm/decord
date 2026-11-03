@@ -1,15 +1,15 @@
-// Module ID: 2015
-// Function ID: 2016
+// Module ID: 2144
+// Function ID: 2145
 // Name: GameRecord
-// Dependencies: [1398, 2016, 1992, 2025, 1409, 1379, 2]
+// Dependencies: [1400, 2145, 2121, 2154, 1411, 1380, 2]
 
-// Module 2015 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import Server from "Server" /* 1992 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2016 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2025 */;
-import Record from "Record" /* 1398 */;
+// Module 2144 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import Server from "Server" /* 2121 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2145 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2154 */;
+import Record from "Record" /* 1400 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;

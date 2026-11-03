@@ -1,16 +1,16 @@
-// Module ID: 7906
-// Function ID: 7907
+// Module ID: 8030
+// Function ID: 8031
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 5764, 4917, 7907, 504, 572, 2]
+// Dependencies: [109, 502, 5884, 5044, 8031, 504, 572, 2]
 
-// Module 7906 (GuildRoomStore)
+// Module 8030 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 7907 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 8031 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -74,7 +74,7 @@ const authStore5 = {};
 const map2 = new Map();
 let flag = false;
 let c22 = false;
-let closure_23 = {};
+const sidebars = {};
 let closure_24 = {};
 let closure_25 = [];
 const PersistedStore = get_initializedDefault.PersistedStore;

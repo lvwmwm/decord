@@ -1,16 +1,16 @@
-// Module ID: 18633
-// Function ID: 18634
+// Module ID: 18791
+// Function ID: 18792
 // Name: OnboardingHomeScrollView
-// Dependencies: [19, 17, 21, 5014, 575, 1625, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1627, 2]
 // Exports: default
 
-// Module 18633 (OnboardingHomeScrollView)
+// Module 18791 (OnboardingHomeScrollView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const ScrollView = react_native.ScrollView;

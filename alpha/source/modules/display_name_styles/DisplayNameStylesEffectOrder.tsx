@@ -1,11 +1,11 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17473
+// Function ID: 17474
 // Name: DisplayNameStylesEffectOrder
-// Dependencies: [1401, 2]
+// Dependencies: [1403, 2]
 // Exports: useVisibleEffectOrder
 
-// Module 17330 (DisplayNameStylesEffectOrder)
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1401 */;
+// Module 17473 (DisplayNameStylesEffectOrder)
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
 import size from "module_2" /* 2 */;
 
 const items = [..._module.FLYWHEEL_EFFECTS];

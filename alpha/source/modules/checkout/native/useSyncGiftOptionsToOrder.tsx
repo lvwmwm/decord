@@ -1,14 +1,14 @@
-// Module ID: 14425
-// Function ID: 14426
+// Module ID: 14556
+// Function ID: 14557
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 7609, 3, 10564, 7614, 4827, 2]
+// Dependencies: [32, 19, 7733, 3, 10694, 7738, 4954, 2]
 // Exports: default
 
-// Module 14425 (useSyncGiftOptionsToOrder)
+// Module 14556 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4827 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7609 */;
-import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10564 */;
+import BillingUtils from "BillingUtils" /* 4954 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7733 */;
+import useGiftOptionsSyncDebounceDefault from "useGiftOptionsSyncDebounce" /* 10694 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

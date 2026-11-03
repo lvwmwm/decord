@@ -1,19 +1,19 @@
-// Module ID: 18642
-// Function ID: 18643
+// Module ID: 18800
+// Function ID: 18801
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 4885, 1383, 7398, 21, 5014, 575, 563, 8757, 8800, 7482, 8758, 5068, 5080, 1090, 8829, 1187, 11395, 5624, 6041, 9060, 2]
+// Dependencies: [19, 17, 5012, 1385, 7522, 21, 5141, 575, 563, 8881, 8924, 7606, 8882, 5195, 5207, 1090, 8953, 1187, 11533, 5747, 6161, 9188, 2]
 // Exports: default
 
-// Module 18642 (HomeWelcomeMessage)
+// Module 18800 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8882 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7398 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import UserStore from "UserStore" /* 1385 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7522 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -179,7 +179,7 @@ export default function HomeWelcomeMessage(guildId) {
             let obj16 = { variant: "text-sm/normal", style: tmp.message, children: parts[num3] };
             let arr = items10.push(closure_8(guildId(stateFromStores2[19]).Text, obj16, num3));
             let push = items10.push;
-            let obj17 = { variant: "text-sm/bold", style: tmp.message, children: "@" + username };
+            let obj17 = { variant: "text-sm/semibold", style: tmp.message, children: "@" + username };
             let _HermesInternal = HermesInternal;
             let Text3 = guildId(stateFromStores2[19]).Text;
             let _HermesInternal2 = HermesInternal;

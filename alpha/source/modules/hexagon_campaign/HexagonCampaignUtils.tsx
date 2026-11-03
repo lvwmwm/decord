@@ -1,15 +1,15 @@
-// Module ID: 5041
-// Function ID: 5042
+// Module ID: 5168
+// Function ID: 5169
 // Name: HexagonCampaignUtils
-// Dependencies: [5039, 1983, 1402, 1403, 1389, 1391, 2]
+// Dependencies: [5166, 2112, 1404, 1405, 1391, 1393, 2]
 // Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, hasPerkOnlyFromHexagonCampaign, isEnrolledInHexagonCampaign, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver
 
-// Module 5041 (HexagonCampaignUtils)
-import PerksStateUtils from "PerksStateUtils" /* 1389 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
-import DisplayNameFont from "DisplayNameFont" /* 1403 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1983 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+// Module 5168 (HexagonCampaignUtils)
+import PerksStateUtils from "PerksStateUtils" /* 1391 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
+import DisplayNameFont from "DisplayNameFont" /* 1405 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -21,7 +21,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const user = tmp(1391);
+const user = tmp(1393);
 ({ HEXAGON_CAMPAIGN_CLIENT_THEME_PRESET_IDS: c2, HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: c3, HEXAGON_CAMPAIGN_END_AT_MS: closure_4, HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: hasOwnProperty, HEXAGON_CAMPAIGN_PERK_MINIMUM_PREMIUM_TYPE: metroRequire, HEXAGON_CAMPAIGN_PERK_TO_PERK: metroImportDefault, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: metroImportAll, HexagonCampaignPerkAvailability: c9 } = HexagonCampaignConstants);
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignUtils.tsx");
 
@@ -121,7 +121,7 @@ export function getHexagonCampaignRestoredDisplayNameStyles(canUsePremiumProfile
       const tmp5 = require;
       if (obj.fontId === DisplayNameFont.DisplayNameFont.DEFAULT) {
         let tmp7;
-        if (obj.effectId === tmp5(1402).DisplayNameEffect.SOLID) {
+        if (obj.effectId === tmp5(1404).DisplayNameEffect.SOLID) {
           tmp7 = null;
         }
         return tmp7;

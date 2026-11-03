@@ -1,16 +1,16 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8697
+// Function ID: 8698
 // Name: GifTag
-// Dependencies: [17, 21, 5014, 575, 671, 5624, 1113, 2]
+// Dependencies: [17, 21, 5141, 575, 671, 5747, 1113, 2]
 // Exports: default
 
-// Module 8573 (GifTag)
+// Module 8697 (GifTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import module_671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export default function GifTag(style) {
   style = style.style;
   const tmp = closure_4();
   const items = [tmp.gifTag, style];
-  ({ variant: "text-sm/bold", color: "none", style: tmp.gifTagText, children: intl.string(intl2.t.I5gL2H) });
+  ({ variant: "text-sm/semibold", color: "none", style: tmp.gifTagText, children: intl.string(intl2.t.I5gL2H) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <View style={items} pointerEvents="none">{null}</View>;

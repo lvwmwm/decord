@@ -1,23 +1,23 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12560
+// Function ID: 12561
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 5709, 2061, 1113, 12425, 11502, 5624, 6980, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5829, 2190, 1113, 12561, 11639, 5747, 7106, 2]
 // Exports: default
 
-// Module 12424 (LearnMoreAboutAppsSection)
+// Module 12560 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import Pressables from "Pressables" /* 6980 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12425 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import Pressables from "Pressables" /* 7106 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11639 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12561 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -64,7 +64,7 @@ export default function LearnMoreAboutAppsSection(visible) {
   const obj3 = { style: tmp.divider };
   const tmp6 = TrackSectionHeaderDefault;
   items[0] = metroRequire(View, obj3);
-  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: stringResult });
+  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult });
   const obj4 = { variant: "text-xs/normal", color: "text-default", style: tmp.body, children: stringResult1 };
   items[2] = metroRequire(Text_Text.Text, obj4);
   const obj5 = { style: tmp.divider };

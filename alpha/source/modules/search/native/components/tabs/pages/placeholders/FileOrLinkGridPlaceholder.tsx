@@ -1,14 +1,14 @@
-// Module ID: 18735
-// Function ID: 18736
+// Module ID: 18893
+// Function ID: 18894
 // Name: FileOrLinkGridPlaceholder
-// Dependencies: [19, 21, 18711, 5642, 5095, 18736, 2]
+// Dependencies: [19, 21, 18869, 5762, 1652, 18894, 2]
 // Exports: default
 
-// Module 18735 (FileOrLinkGridPlaceholder)
+// Module 18893 (FileOrLinkGridPlaceholder)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import useFontScale from "useFontScale" /* 5642 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 18711 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import useFontScale from "useFontScale" /* 5762 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 18869 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,6 +31,6 @@ export default function FileOrLinkGridPlaceholderItem(imageStyle) {
     return size;
   }, items);
   const items1 = [containerStyle, placeholderAnimatedStyle];
-  const View = ReanimatedRexportDefault.View;
+  const View = _modDef1652.View;
   return <View style={items1} pointerEvents="none">{null}</View>;
 };

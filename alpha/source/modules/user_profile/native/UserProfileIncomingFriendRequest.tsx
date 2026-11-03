@@ -1,17 +1,17 @@
-// Module ID: 15013
-// Function ID: 15014
+// Module ID: 15149
+// Function ID: 15150
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 5014, 575, 8814, 8761, 7326, 15014, 6041, 7330, 5624, 1113, 1187, 1409, 15015, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8938, 8885, 7446, 15150, 6161, 7450, 5747, 1113, 1187, 1411, 15151, 5754, 2]
 // Exports: default
 
-// Module 15013 (UserProfileIncomingFriendRequest)
+// Module 15149 (UserProfileIncomingFriendRequest)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

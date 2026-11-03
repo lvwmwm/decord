@@ -1,110 +1,116 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12380
+// Function ID: 12381
 // Name: AILoader
-// Dependencies: [19, 17, 12245, 21, 5014, 5095, 5254, 12246, 5080, 2]
+// Dependencies: [19, 17, 12381, 21, 5141, 1652, 5377, 12382, 5207, 2]
 
-// Module 12244 (AILoader)
+// Module 12380 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import AIGlyphText from "AIGlyphText" /* 12246 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import AIGlyphText from "AIGlyphText" /* 12382 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 12245 */;
-import createStyles from "createStyles" /* 5014 */;
+import AILoaderConstants from "AILoaderConstants" /* 12381 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
 
 let AI_LOADER_REST_FRACTION;
 let AI_LOADER_STEP_FRACTION;
+let AI_LOADER_TRACK_STEPS;
 let c10;
+let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let unpackModuleId;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
 function Slot(index) {
   let color;
   let cycle;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   index = index.index;
   size = index.size;
   ({ color: dependencyMap, cycle } = index);
   const stagger = index.stagger;
-  const tmp = closure_16(size);
+  const tmp = closure_13(size);
   const glyph = tmp;
-  let obj = index(5095);
+  let obj = index(1652);
   const sharedValue = obj.useSharedValue(0);
   let items = [cycle, index, sharedValue, stagger];
   const effect = cycle.useEffect(() => {
     const result = sharedValue.set(0);
     set = sharedValue.set;
-    const withDelay = ReanimatedRexport.withDelay;
+    const withDelay = _mod1652.withDelay;
     const result1 = index * stagger;
-    ReanimatedRexport;
-    const withRepeat = ReanimatedRexport.withRepeat;
-    ReanimatedRexport;
-    let obj = timing;
-    const obj2 = { duration: cycle, easing: ReanimatedRexport.Easing.linear };
+    _mod1652;
+    const withRepeat = _mod1652.withRepeat;
+    _mod1652;
+    let obj = timing_timing;
+    const obj2 = { duration: cycle, easing: _mod1652.Easing.linear };
     const result2 = set(withDelay(result1, withRepeat(obj.withTiming(1, obj2, "animate-always"), -1)));
     return () => {
       const obj = index(dependencyMap[5]);
       return obj.cancelAnimation(sharedValue);
     };
   }, items);
-  let obj2 = index(5095);
-  class I {
+  let obj2 = index(1652);
+  const items1 = [closure_14, trackStepAt, sharedValue, size];
+  let c0;
+  let c1;
+  let c2;
+  [tmp5, tmp6, tmp7, tmp8] = items1;
+  class AILoaderNativeTsx2 {
     constructor() {
       let items;
-      const value = sharedValue.get();
-      if (typeof trackStepAt === "function") {
-        let first;
-        if (value < AI_LOADER_REST_FRACTION) {
-          first = AI_LOADER_TRACK_STEPS[0];
-        } else {
-          const _Math = Math;
-          const _Math2 = Math;
-          first = AI_LOADER_TRACK_STEPS[Math.min(Math, Math.floor(Math, (value - tmp2) / AI_LOADER_STEP_FRACTION) + 1, AI_LOADER_TRACK_STEPS.length - 1)];
-        }
-        const obj = { transform: items };
-        items = [{ translateY: -first * size }];
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
+      const obj = { transform: items };
+      items = [{ translateY: -_undefined(_undefined2.get()) * c2 }];
+      ({ translateY: -_undefined(_undefined2.get()) * c2 });
+      return obj;
     }
   }
-  const obj3 = { trackStepAt, progress: sharedValue, size };
-  I.__closure = obj3;
-  I.__workletHash = 16632594382704;
-  I.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(I);
+  const items2 = [tmp6, tmp7, tmp8];
+  AILoaderNativeTsx2.__closure = items2;
+  AILoaderNativeTsx2.__workletHash = 5441538311625;
+  AILoaderNativeTsx2.__initData = tmp5;
+  const animatedStyle = obj2.useAnimatedStyle(AILoaderNativeTsx2);
   ({ style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color: dependencyMap, allowFontScaling: false, style: glyph.glyph, children }, children)) });
-  View = size(5095).View;
+  View = size(1652).View;
   return <stagger style={tmp.slot}>{null}</stagger>;
 }
 let View = react_native.View;
-({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_GAP_EM: metroRequire, AI_LOADER_GLYPHS: metroImportDefault, AI_LOADER_REDUCED_MOTION_CYCLE_MS: metroImportAll, AI_LOADER_REST_FRACTION } = AILoaderConstants);
-({ AI_LOADER_SLOT_COUNT: c10, AI_LOADER_SLOT_STAGGER_MS: unpackModuleId, AI_LOADER_STEP_FRACTION } = AILoaderConstants);
-const AI_LOADER_TRACK_STEPS = AILoaderConstants.AI_LOADER_TRACK_STEPS;
+({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_GAP_EM: metroRequire, AI_LOADER_GLYPHS: metroImportDefault, AI_LOADER_REDUCED_MOTION_CYCLE_MS: metroImportAll, AI_LOADER_SLOT_COUNT: c9, AI_LOADER_SLOT_STAGGER_MS: c10, AI_LOADER_REST_FRACTION, AI_LOADER_STEP_FRACTION, AI_LOADER_TRACK_STEPS } = AILoaderConstants);
 const jsx = Fragment.jsx;
+let items = [{ code: "(function trackStepAt_AILoaderNativeTsx1(progress){let[AI_LOADER_REST_FRACTION,AI_LOADER_TRACK_STEPS,AI_LOADER_STEP_FRACTION]=this.__closure;if(progress<AI_LOADER_REST_FRACTION)return AI_LOADER_TRACK_STEPS[0];const step=Math.floor((progress-AI_LOADER_REST_FRACTION)/AI_LOADER_STEP_FRACTION)+1;return AI_LOADER_TRACK_STEPS[Math.min(step,AI_LOADER_TRACK_STEPS.length-1)];})" }, AI_LOADER_REST_FRACTION, AI_LOADER_TRACK_STEPS, AI_LOADER_STEP_FRACTION];
+let c0;
+let c1;
+let c2;
+[tmp3, tmp4, tmp5, tmp6] = items;
 function trackStepAt(arg0) {
-  if (arg0 < AI_LOADER_REST_FRACTION) {
-    return AI_LOADER_TRACK_STEPS[0];
+  if (arg0 < c0) {
+    return _undefined[0];
   } else {
     const _Math = Math;
     const _Math2 = Math;
-    return AI_LOADER_TRACK_STEPS[Math.min(Math, Math.floor(Math, (arg0 - tmp) / AI_LOADER_STEP_FRACTION) + 1, AI_LOADER_TRACK_STEPS.length - 1)];
+    return _undefined[Math.min(Math, Math.floor(Math, (arg0 - tmp) / c2) + 1, _undefined.length - 1)];
   }
 }
-trackStepAt.__closure = { AI_LOADER_REST_FRACTION, AI_LOADER_TRACK_STEPS, AI_LOADER_STEP_FRACTION };
-trackStepAt.__workletHash = 2403964493846;
-trackStepAt.__initData = { code: "function trackStepAt_AILoaderNativeTsx1(progress){const{AI_LOADER_REST_FRACTION,AI_LOADER_TRACK_STEPS,AI_LOADER_STEP_FRACTION}=this.__closure;if(progress<AI_LOADER_REST_FRACTION)return AI_LOADER_TRACK_STEPS[0];const step=Math.floor((progress-AI_LOADER_REST_FRACTION)/AI_LOADER_STEP_FRACTION)+1;return AI_LOADER_TRACK_STEPS[Math.min(step,AI_LOADER_TRACK_STEPS.length-1)];}" };
-let closure_16 = createStyles.createStyles((width) => {
+let items1 = [tmp4, tmp5, tmp6];
+trackStepAt.__closure = items1;
+trackStepAt.__workletHash = 8339432593103;
+trackStepAt.__initData = tmp3;
+let closure_13 = createStyles.createStyles((width) => {
   const obj = { loader: obj2, slot: { width, height: width, overflow: "hidden" }, glyph: { height: width } };
   return obj;
 });
-const __initData = { code: "function AILoaderNativeTsx2(){const{trackStepAt,progress,size}=this.__closure;return{transform:[{translateY:-trackStepAt(progress.get())*size}]};}" };
+let closure_14 = { code: "(function AILoaderNativeTsx2(){let[trackStepAt,progress,size]=this.__closure;return{transform:[{translateY:-trackStepAt(progress.get())*size}]};})" };
 const memoResult = react.memo(function AILoader(size) {
   let cycle;
   let items;
@@ -122,12 +128,12 @@ const memoResult = react.memo(function AILoader(size) {
   const accessibilityLabel = size.accessibilityLabel;
   let num2;
   const style = size.style;
-  const tmp = closure_16(num);
-  const reducedMotion = num2.useContext(num(5080).AccessibilityPreferencesContext).reducedMotion;
+  const tmp = closure_13(num);
+  const reducedMotion = num2.useContext(num(5207).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {
-    num2 = closure_11;
+    num2 = closure_10;
   }
   const obj = { style: items, accessible: tmp2, accessibilityRole: str2, accessibilityLabel, accessibilityElementsHidden: null == accessibilityLabel, importantForAccessibility: str3, children: Array.from(obj2, (arg0, index) => <Slot key={arg1} index={arg1} size={num} color={str} cycle={cycle} stagger={num2} />) };
   items = [tmp.loader, style];
@@ -141,7 +147,7 @@ const memoResult = react.memo(function AILoader(size) {
   if (null != accessibilityLabel) {
     str3 = "yes";
   }
-  obj2 = { length: closure_10 };
+  obj2 = { length: closure_9 };
   return tmp3(tmp4, obj);
 });
 let size = size_mod;

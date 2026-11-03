@@ -1,12 +1,12 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 12096
+// Function ID: 12097
 // Name: WindowsEffectsExperiment
-// Dependencies: [1246, 1447, 504, 2]
+// Dependencies: [1246, 1449, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 11959 (WindowsEffectsExperiment)
+// Module 12096 (WindowsEffectsExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

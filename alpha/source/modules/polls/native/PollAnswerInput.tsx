@@ -1,26 +1,26 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12700
+// Function ID: 12701
 // Name: PollAnswerInput
-// Dependencies: [32, 19, 17, 4863, 7701, 8406, 1386, 21, 5014, 575, 12565, 1113, 8403, 6980, 1187, 9939, 9778, 7097, 5258, 12566, 1994, 9453, 8177, 5739, 12569, 2]
+// Dependencies: [32, 19, 17, 4990, 7825, 8530, 1388, 21, 5141, 575, 12701, 1113, 8527, 7106, 1187, 10070, 9910, 7223, 5381, 12702, 2123, 9581, 8301, 5859, 12705, 2]
 // Exports: default
 
-// Module 12564 (PollAnswerInput)
+// Module 12700 (PollAnswerInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import DraftStore from "DraftStore" /* 7701 */;
-import PollsUtils from "PollsUtils" /* 8403 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9939 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import DraftStore from "DraftStore" /* 7825 */;
+import PollsUtils from "PollsUtils" /* 8527 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9910 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10070 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PollsConstants from "PollsConstants" /* 8406 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import PollsConstants from "PollsConstants" /* 8530 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let maxLength;
@@ -211,7 +211,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(12566, dependencyMap.paths), unpackModuleId, obj2);
+      obj.openLazy(asyncRequire(12702, dependencyMap.paths), unpackModuleId, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,
@@ -238,14 +238,14 @@ export default function PollAnswerInput(answer) {
     },
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
-    selectionColor: "children",
-    textContentType: true,
+    selectionColor: "channel_id",
+    textContentType: -198609602824364700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: true,
-    required: true,
-    autoCorrect: true,
+    returnKeyType: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009448812887,
+    required: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000127319747473,
+    autoCorrect: -877951296567152000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

@@ -1,19 +1,19 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 15046
+// Function ID: 15047
 // Name: WishlistUtils
-// Dependencies: [32, 2040, 9474, 9475, 9476, 1072, 1385, 1113, 7409, 2]
+// Dependencies: [32, 2169, 9602, 9603, 9604, 1072, 1387, 1113, 7533, 2]
 // Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 14917 (WishlistUtils)
+// Module 15046 (WishlistUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import StorefrontUtils from "StorefrontUtils" /* 7409 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9474 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9475 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9476 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import StorefrontUtils from "StorefrontUtils" /* 7533 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9602 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9603 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SKURecord from "SKURecord" /* 2040 */;
+import SKURecord from "SKURecord" /* 2169 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = CollectiblesWishlistItemRecord.isCollectiblesWishlistItemRecord;

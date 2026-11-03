@@ -1,30 +1,29 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15405
+// Function ID: 15406
 // Name: PremiumPlanWhatYouLoseActionSheet
-// Dependencies: [19, 17, 1385, 21, 5014, 575, 5717, 5624, 2047, 7326, 15265, 38, 15269, 1113, 15270, 14604, 15271, 15272, 5258, 5272, 7616, 5634, 10560, 2]
+// Dependencies: [19, 17, 1387, 21, 5141, 575, 5837, 5747, 2176, 7446, 15406, 38, 15410, 1113, 15411, 14735, 15412, 15413, 5381, 5395, 7740, 5754, 10690, 2]
 // Exports: default
 
-// Module 15264 (PremiumPlanWhatYouLoseActionSheet)
+// Module 15405 (PremiumPlanWhatYouLoseActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10560 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14604 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15269 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15270 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15271 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15272 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10690 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14735 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15410 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15411 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15412 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15413 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -124,10 +123,10 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
       return [];
     }
   }, items);
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   let items1 = [closure_6(subscription(premiumTypeFromSubscription[20]), { premiumType: premiumTypeFromSubscription }), , ];
   let obj3 = { style: tmp.body, children: items2 };
-  let obj4 = { variant: "heading-xl/extrabold", style: tmp.title, children: stringResult };
+  let obj4 = { variant: "heading-xl/semibold", style: tmp.title, children: stringResult };
   const Text = require("Text/Text").Text;
   const tmp10 = obj6;
   if (mode === obj6.CANCEL) {

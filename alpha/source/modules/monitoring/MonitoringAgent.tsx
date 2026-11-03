@@ -1,15 +1,15 @@
-// Module ID: 6540
-// Function ID: 6541
+// Module ID: 6660
+// Function ID: 6661
 // Name: MonitoringAgent
-// Dependencies: [1072, 1375, 6541, 6542, 17, 6543, 6544, 1282, 2]
+// Dependencies: [1072, 1377, 6661, 6662, 17, 6663, 6664, 1282, 2]
 
-// Module 6540 (MonitoringAgent)
+// Module 6660 (MonitoringAgent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import react_native2 from "react-native" /* 6543 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 6544 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import react_native2 from "react-native" /* 6663 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 6664 */;
 import size from "module_2" /* 2 */;
 
 let obj;
@@ -57,10 +57,10 @@ class MonitoringAgent {
       const _HermesInternal = HermesInternal;
       tags1.push("platform:" + str);
     }
-    const CurrentReleaseChannel = tmp(6541).CurrentReleaseChannel;
+    const CurrentReleaseChannel = tmp(6661).CurrentReleaseChannel;
     let tmp9 = null;
     if (null != CurrentReleaseChannel) {
-      const ALL = tmp(6542).ReleaseChannelsSets.ALL;
+      const ALL = tmp(6662).ReleaseChannelsSets.ALL;
       tmp9 = null;
       if (ALL.has(CurrentReleaseChannel)) {
         tmp9 = CurrentReleaseChannel;
@@ -113,7 +113,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1793600402036", build_number: "35420000000000" } };
+      body = { metrics: items, client_info: { built_at: "1793686790395", build_number: "35420100000000" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {

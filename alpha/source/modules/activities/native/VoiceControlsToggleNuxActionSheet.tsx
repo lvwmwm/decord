@@ -1,22 +1,22 @@
-// Module ID: 19286
-// Function ID: 19287
+// Module ID: 19444
+// Function ID: 19445
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 5015, 4860, 21, 5014, 575, 8773, 504, 5272, 8873, 5624, 1113, 5634, 2]
+// Dependencies: [32, 19, 17, 5142, 4987, 21, 5141, 575, 8897, 504, 5395, 8997, 5747, 1113, 5754, 2]
 // Exports: default
 
-// Module 19286 (VoiceControlsToggleNuxActionSheet)
+// Module 19444 (VoiceControlsToggleNuxActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault;
+let importDefault;
 
 let c9;
 let metroImportAll;
@@ -77,10 +77,10 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
     },
     children: items1
   };
-  BottomSheet = tmp4(tmp5[10]).BottomSheet;
+  const BottomSheet = tmp4(tmp5[10]).BottomSheet;
   size = { style: tmp.videoContainer, src, poster: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.png", width: tmp3, height: tmp3 / num, muted: true, paused: stateFromStores };
   items1 = [closure_8(require("common/Video"), size), , , ];
-  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(isScreenLandscape[13]).t.pT6hue) };
+  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(isScreenLandscape[13]).t.pT6hue) };
   const Text = tmp4(tmp5[12]).Text;
   intl = tmp4(tmp5[13]).intl;
   items1[1] = closure_8(Text, obj6);

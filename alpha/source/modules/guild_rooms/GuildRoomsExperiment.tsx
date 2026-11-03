@@ -1,12 +1,12 @@
-// Module ID: 7937
-// Function ID: 7938
+// Module ID: 8061
+// Function ID: 8062
 // Name: GuildRoomsExperiment
-// Dependencies: [4926, 5236, 504, 2]
+// Dependencies: [5053, 5359, 504, 2]
 // Exports: getGuildRoomsConfig, useGuildRoomsExperiment
 
-// Module 7937 (GuildRoomsExperiment)
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import createExperiment from "module_5236" /* 5236 */;
+// Module 8061 (GuildRoomsExperiment)
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import createExperiment from "module_5359" /* 5359 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

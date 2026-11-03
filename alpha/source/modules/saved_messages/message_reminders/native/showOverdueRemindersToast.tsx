@@ -1,15 +1,15 @@
-// Module ID: 19611
-// Function ID: 19612
+// Module ID: 19761
+// Function ID: 19762
 // Name: showOverdueRemindersToast
-// Dependencies: [10191, 11151, 5712, 1113, 5740, 2]
+// Dependencies: [10321, 11288, 5832, 1113, 5860, 2]
 // Exports: showOverdueRemindersToast
 
-// Module 19611 (showOverdueRemindersToast)
+// Module 19761 (showOverdueRemindersToast)
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ClockIcon from "ClockIcon" /* 5740 */;
-import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 11151 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import ClockIcon from "ClockIcon" /* 5860 */;
+import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 11288 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10321 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/message_reminders/native/showOverdueRemindersToast.tsx");

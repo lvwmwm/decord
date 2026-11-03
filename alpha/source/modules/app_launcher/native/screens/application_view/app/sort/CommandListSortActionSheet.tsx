@@ -1,24 +1,23 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12617
+// Function ID: 12618
 // Name: CommandListSortActionSheet
-// Dependencies: [19, 12465, 21, 1113, 5272, 7321, 12482, 575, 7058, 7061, 2]
+// Dependencies: [19, 12601, 21, 1113, 5395, 7441, 12618, 575, 7184, 7187, 2]
 // Exports: default
 
-// Module 12481 (CommandListSortActionSheet)
+// Module 12617 (CommandListSortActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7058 */;
-import TableRadioRow from "TableRadioRow" /* 7061 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7321 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 12465 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12482 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7184 */;
+import TableRadioRow from "TableRadioRow" /* 7187 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 12601 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12618 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 const CommandListSortOrder = AppLauncherConstants.CommandListSortOrder;
 const jsx = Fragment.jsx;
@@ -31,7 +30,7 @@ export default function CommandListSortActionSheet(sortOrder) {
   let items;
   ({ onClose: require, onSortOptionPress: importDefault } = sortOrder);
   sortOrder = sortOrder.sortOrder;
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   ({ leading: null, title: intl.string(intl4.t.yeYaHf) });
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   ({ size: "sm", color: nativeDefault.colors.TEXT_DEFAULT });

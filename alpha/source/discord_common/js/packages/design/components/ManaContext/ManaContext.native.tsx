@@ -1,10 +1,10 @@
-// Module ID: 5141
-// Function ID: 5142
+// Module ID: 5264
+// Function ID: 5265
 // Name: ManaContext
 // Dependencies: [19, 21, 2]
 // Exports: ManaContextProvider, useManaContext
 
-// Module 5141 (ManaContext)
+// Module 5264 (ManaContext)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

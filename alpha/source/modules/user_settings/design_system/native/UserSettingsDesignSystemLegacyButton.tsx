@@ -1,20 +1,20 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 17914
+// Function ID: 17915
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1187, 5624, 5634, 5014, 575, 6027, 8177, 2]
+// Dependencies: [19, 17, 21, 1187, 5747, 5754, 5141, 575, 6147, 8301, 2]
 // Exports: default
 
-// Module 17771 (UserSettingsDesignSystemLegacyButton)
+// Module 17914 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import _mod8177 from "module_8177" /* 8177 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import _mod8301 from "module_8301" /* 8301 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -43,7 +43,7 @@ function ComparisonRow(entry) {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5624).Text;
+  const Text = tmp4(5747).Text;
   if (hasItem) {
     str = "text-default";
   }
@@ -312,7 +312,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
   const obj2 = { style: tmp.container, children: items1 };
   const obj3 = { spacing: 4, style: tmp.header, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/bold", children: "Migration Mapping" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/semibold", children: "Migration Mapping" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Legacy (uikit-native) \u2192 Mana side-by-side" })];
   items1 = [React3(Stack, obj3), , , ];
   const entries = Object.entries(obj);
   items1[1] = entries.map((item) => {
@@ -326,12 +326,12 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_8, obj, index);
       })
     };
-    const FormSection = _mod8177.FormSection;
+    const FormSection = _mod8301.FormSection;
     return closure_1_5(FormSection, obj, "cmp-" + tmp);
   });
   const obj4 = { spacing: 4, style: tmp.header, children: items2 };
   const Stack2 = Stack_Stack.Stack;
-  items2 = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/bold", children: "Legacy Button Audit" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
+  items2 = [hasOwnProperty(Text_Text.Text, { variant: "heading-xl/semibold", children: "Legacy Button Audit" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "41 combinations across 185 importers" })];
   items1[2] = React3(Stack2, obj4);
   const entries1 = Object.entries(tmp2);
   items1[3] = entries1.map((item) => {
@@ -345,7 +345,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_9, obj, index);
       })
     };
-    const FormSection = _mod8177.FormSection;
+    const FormSection = _mod8301.FormSection;
     return closure_1_5(FormSection, obj, tmp);
   });
   return React3(React2, obj2);

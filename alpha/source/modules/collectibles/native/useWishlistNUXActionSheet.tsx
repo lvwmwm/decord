@@ -1,22 +1,22 @@
-// Module ID: 9464
-// Function ID: 9465
+// Module ID: 9592
+// Function ID: 9593
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7772, 502, 4860, 504, 5044, 4847, 4848, 5258, 9465, 1994, 2]
+// Dependencies: [19, 7896, 502, 4987, 504, 5171, 4974, 4975, 5381, 9593, 2123, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 9464 (useWishlistNUXActionSheet)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+// Module 9592 (useWishlistNUXActionSheet)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
+import UserProfileStore from "UserProfileStore" /* 7896 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f94809 = () => id.getId();
-const f94810 = () => UserProfileStore.getFirstWishlistId(closure_0);
-const f94811 = () => {
+const f95115 = () => id.getId();
+const f95116 = () => UserProfileStore.getFirstWishlistId(closure_0);
+const f95117 = () => {
   const userProfile = UserProfileStore.getUserProfile(closure_0);
   return null != userProfile && userProfile.fetchEndedAt > 0;
 };
@@ -29,17 +29,17 @@ export default function useWishlistNUXActionSheet() {
   let paths;
   let obj = require("get initialized");
   const items = [AuthenticationStore];
-  _require = obj.useStateFromStores(items, f94809);
+  _require = obj.useStateFromStores(items, f95115);
   let obj2 = require("get initialized");
   const items1 = [UserProfileStore];
-  const stateFromStores = obj2.useStateFromStores(items1, f94810);
+  const stateFromStores = obj2.useStateFromStores(items1, f95116);
   let obj3 = require("get initialized");
   const items2 = [UserProfileStore];
-  let stateFromStores1 = obj3.useStateFromStores(items2, f94811) && null == stateFromStores;
+  let stateFromStores1 = obj3.useStateFromStores(items2, f95117) && null == stateFromStores;
   const useIsDismissibleContentDismissed_UNSAFE = require("DismissibleContentUnsafeUtils").useIsDismissibleContentDismissed_UNSAFE;
   require("DismissibleContentUnsafeUtils");
   if (stateFromStores1) {
-    stateFromStores1 = !useIsDismissibleContentDismissed_UNSAFE(tmp(4847).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
+    stateFromStores1 = !useIsDismissibleContentDismissed_UNSAFE(tmp(4974).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
   }
   let obj4 = {
     shouldShowWishlistNUXActionSheet: stateFromStores1,
@@ -60,12 +60,12 @@ export function useHasNeverWishlisted() {
   let closure_0;
   const items = [AuthenticationStore];
   const obj = require("get initialized");
-  _require = obj.useStateFromStores(items, f94809);
+  _require = obj.useStateFromStores(items, f95115);
   const items1 = [UserProfileStore];
   const obj2 = require("get initialized");
-  const stateFromStores = obj2.useStateFromStores(items1, f94810);
+  const stateFromStores = obj2.useStateFromStores(items1, f95116);
   const items2 = [UserProfileStore];
   const obj3 = require("get initialized");
-  const stateFromStores1 = obj3.useStateFromStores(items2, f94811) && null == stateFromStores;
+  const stateFromStores1 = obj3.useStateFromStores(items2, f95117) && null == stateFromStores;
   return stateFromStores1;
 }

@@ -1,28 +1,28 @@
-// Module ID: 8928
-// Function ID: 8929
+// Module ID: 9054
+// Function ID: 9055
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7477, 4863, 6061, 1383, 1072, 1090, 6051, 4839, 1396, 1377, 1379, 6065, 1992, 6072, 11, 2]
+// Dependencies: [19, 7601, 4990, 6181, 1385, 1072, 1090, 6171, 4966, 1398, 1378, 1380, 6185, 2121, 6192, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8928 (ForumPostMediaUtils)
+// Module 9054 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import URLUtilsDefault from "URLUtils" /* 1377 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6051 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6065 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import FlagUtils from "FlagUtils" /* 1398 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6171 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6185 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7477 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MessageStore from "MessageStore" /* 6061 */;
-import UserStore from "UserStore" /* 1383 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7601 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import MessageStore from "MessageStore" /* 6181 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, type;
+let _require, type, version;
 
 let c9;
 let metroImportAll;
@@ -226,7 +226,7 @@ function useForumPostEmbeds(embeds, hasSpoilerEmbeds) {
               }
             }
           });
-          found = mapped.filter(tmp(1379).isNotNullish);
+          found = mapped.filter(tmp(1380).isNotNullish);
         }
         return found;
       }
@@ -255,7 +255,6 @@ function useForumPostMediaProperties(firstResult, flag) {
           let num;
           let spoiler;
           let tmpResult2;
-          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -293,7 +292,6 @@ function useForumPostMediaProperties(firstResult, flag) {
               let num;
               let spoiler;
               let tmpResult;
-              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;
@@ -325,7 +323,7 @@ function useForumPostMediaProperties(firstResult, flag) {
             return null;
           }
         });
-        items1 = flatMapResult.filter(tmp2(1379).isNotNullish);
+        items1 = flatMapResult.filter(tmp2(1380).isNotNullish);
       }
     }
     items1 = [];
@@ -405,7 +403,6 @@ export function useForumPostComponentsMedia(components) {
           let num;
           let spoiler;
           let tmpResult2;
-          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -443,7 +440,6 @@ export function useForumPostComponentsMedia(components) {
               let num;
               let spoiler;
               let tmpResult;
-              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;
@@ -475,7 +471,7 @@ export function useForumPostComponentsMedia(components) {
             return null;
           }
         });
-        found = flatMapResult.filter(tmp(1379).isNotNullish);
+        found = flatMapResult.filter(tmp(1380).isNotNullish);
       }
       return found;
     }
@@ -533,7 +529,6 @@ export function useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds) {
           let num;
           let spoiler;
           let tmpResult2;
-          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -571,7 +566,6 @@ export function useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds) {
               let num;
               let spoiler;
               let tmpResult;
-              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;
@@ -603,7 +597,7 @@ export function useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds) {
             return null;
           }
         });
-        items = flatMapResult.filter(tmp(1379).isNotNullish);
+        items = flatMapResult.filter(tmp(1380).isNotNullish);
       }
     }
     items = [];
@@ -645,7 +639,6 @@ export function useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds) {
           let num;
           let spoiler;
           let tmpResult2;
-          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -683,7 +676,6 @@ export function useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds) {
               let num;
               let spoiler;
               let tmpResult;
-              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;

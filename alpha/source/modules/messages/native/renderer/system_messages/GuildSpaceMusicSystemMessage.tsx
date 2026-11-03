@@ -1,23 +1,23 @@
-// Module ID: 8557
-// Function ID: 8558
+// Module ID: 8681
+// Function ID: 8682
 // Name: GuildSpaceMusicSystemMessage
-// Dependencies: [4863, 6760, 1383, 5014, 575, 8408, 8409, 6041, 8418, 1113, 8420, 8396, 8558, 8422, 2]
+// Dependencies: [4990, 6880, 1385, 5141, 575, 8532, 8533, 6161, 8542, 1113, 8544, 8520, 8682, 8546, 2]
 // Exports: createGuildSpaceMusicSystemMessage
 
-// Module 8557 (GuildSpaceMusicSystemMessage)
+// Module 8681 (GuildSpaceMusicSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8408 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8409 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8558 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6760 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8520 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8532 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8533 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8542 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8544 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8546 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8682 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6880 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };

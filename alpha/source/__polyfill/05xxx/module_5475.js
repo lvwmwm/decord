@@ -1,65 +1,87 @@
 // Module ID: 5475
 // Function ID: 5476
-// Dependencies: [19, 17, 21, 5476, 5477]
+// Dependencies: [5450, 5458, 5455, 5457, 5430]
+// Exports: updateHandlers
 
 // Module 5475
-import react_native from "react-native" /* 5477 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import handlerIDToTag from "handlerIDToTag" /* 5430 */;
+import ALLOWED_PROPS from "ALLOWED_PROPS" /* 5450 */;
+import react_nativeDefault from "react-native" /* 5455 */;
+import selectProperties from "selectProperties" /* 5457 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-let react = react_mod;
-const useMemo = react.useMemo;
-const memo = react.memo;
-react = react_mod;
-({ StyleSheet: c3, View: closure_4 } = react_native2);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const memoResult = memo(function BottomSheetHandleComponent(style) {
-  let items2;
-  style = style.style;
-  const indicatorStyle = style.indicatorStyle;
-  let DEFAULT_ACCESSIBLE = style.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
-  }
-  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
-  }
-  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
-  }
-  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
-  }
-  let items = [style];
-  const children = style.children;
-  const items1 = [indicatorStyle];
-  const obj = {
-    style: useMemo(() => {
-      const items = [react_native.styles.container, _false.flatten(style)];
-      return items;
-    }, items),
-    accessible: DEFAULT_ACCESSIBLE,
-    accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE,
-    accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL,
-    accessibilityHint: DEFAULT_ACCESSIBILITY_HINT,
-    collapsable: true,
-    children: items2
-  };
-  const tmp10 = useMemo(() => {
-    const items = [react_native.styles.indicator, _false.flatten(indicatorStyle)];
-    return items;
-  }, items1);
-  items2 = [closure_5(closure_4, { style: tmp10 }), children];
-  return closure_6(closure_4, obj);
-});
-memoResult.displayName = "BottomSheetHandle";
+const require = globalThis.__r;
+let _require;
 
-export default memoResult;
+
+export function updateHandlers(attachedGestures, prepare, arg2) {
+  let num;
+  _require = attachedGestures;
+  let closure_1 = arg2;
+  prepare.prepare();
+  for (let num = 0; num < arg2.length; num = num + 1) {
+    let tmp2 = attachedGestures.attachedGestures[num];
+    let tmp3 = _require;
+    let tmp4 = attachedGestures;
+    let obj = require("ALLOWED_PROPS");
+    let result = obj.checkGestureCallbacksForWorklets(tmp2);
+    let tmp6 = num;
+    if (arg2[num].handlerTag !== tmp2.handlerTag) {
+      ({ handlerTag: arg2[num].handlerTag, handlerTag: arg2[num].handlers.handlerTag } = tmp2);
+    }
+  }
+  attachedGestures = attachedGestures.attachedGestures;
+  let obj2 = require("ghQueueMicrotask");
+  obj2.ghQueueMicrotask(() => {
+    let arr2;
+    if (attachedGestures.isMounted) {
+      let arr = attachedGestures;
+      if (attachedGestures === tmp.attachedGestures) {
+        let tmp23 = arr.length !== closure_1.length;
+        let num = 0;
+        let tmp24 = tmp23;
+        if (0 < closure_1.length) {
+          do {
+            let tmp3 = attachedGestures[num];
+            arr2 = closure_1;
+            let tmp4 = tmp3.handlers.gestureId !== closure_1[num].handlers.gestureId;
+            let flag = tmp23;
+            let tmp2 = attachedGestures;
+            if (tmp4) {
+              let tmp6 = arr2[num].shouldUseReanimated || tmp3.shouldUseReanimated;
+              tmp4 = tmp6;
+            }
+            if (tmp4) {
+              flag = true;
+            }
+            tmp3.config = arr2[num].config;
+            tmp3.handlers = arr2[num].handlers;
+            let tmp9 = react_nativeDefault;
+            let setGestureHandlerConfig = tmp9.setGestureHandlerConfig;
+            let handlerTag = tmp3.handlerTag;
+            let obj = selectProperties;
+            let result = setGestureHandlerConfig(handlerTag, obj.filterConfig(tmp3.config, ALLOWED_PROPS.ALLOWED_PROPS));
+            let tmp16 = react_nativeDefault;
+            let configureRelations = tmp16.configureRelations;
+            let handlerTag2 = tmp3.handlerTag;
+            let obj2 = ALLOWED_PROPS;
+            let configureRelationsResult = configureRelations(handlerTag2, obj2.extractGestureRelations(tmp3));
+            let obj3 = handlerIDToTag;
+            let registerHandlerResult = obj3.registerHandler(tmp3.handlerTag, tmp3, tmp3.config.testId);
+            num = num + 1;
+            tmp23 = flag;
+            tmp24 = flag;
+            arr = tmp2;
+          } while (num < arr2.length);
+        }
+        if (attachedGestures.animatedHandlers) {
+          if (tmp24) {
+            const found = arr.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+            tmp25.animatedHandlers.value = found.map((handlers) => handlers.handlers);
+          }
+        }
+        const obj4 = selectProperties;
+        const result1 = obj4.scheduleFlushOperations();
+      }
+    }
+  });
+}

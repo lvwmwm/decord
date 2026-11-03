@@ -1,17 +1,17 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 17245
+// Function ID: 17246
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 6781, 17076, 17098, 5258, 9717, 17103, 9684, 9687, 6788, 7871, 6784, 2]
+// Dependencies: [5, 19, 6901, 17219, 17241, 5381, 9849, 17246, 9816, 9819, 6908, 7995, 6904, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 17102 (QuestBottomSheetHooks)
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9684 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 17103 */;
+// Module 17245 (QuestBottomSheetHooks)
+import QuestConstants from "QuestConstants" /* 6901 */;
+import QuestTypes from "QuestTypes" /* 6904 */;
+import AdCreativeType from "AdCreativeType" /* 6908 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9816 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9819 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 17246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -102,7 +102,7 @@ export function useMobileActivityPressHandler(questId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ export function useMobileActivityPressHandler(questId) {
           }
           captureAdUserAction(obj6);
           launchMobileActivity = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         launchMobileActivity = 3;

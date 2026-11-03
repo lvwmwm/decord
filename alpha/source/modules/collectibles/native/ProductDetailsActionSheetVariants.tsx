@@ -1,19 +1,19 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15191
+// Function ID: 15192
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 5014, 575, 9537, 6980, 1113, 9571, 7303, 7731, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9665, 7106, 1113, 9703, 7423, 7855, 5747, 2]
 // Exports: default
 
-// Module 15050 (ProductDetailsActionSheetVariants)
+// Module 15191 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 6980 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7303 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9537 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9571 */;
+import Pressables from "Pressables" /* 7106 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7423 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9665 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9703 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -102,7 +102,7 @@ export default function ProductDetailsActionSheetVariants(disabled) {
   if (obj.getIsVariantProduct(product)) {
     const obj2 = { style: tmp.container, children: items1 };
     const obj3 = { style: tmp.headerRow, children: items };
-    const obj4 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: intl.string(selectedVariantIndex(onVariantSelect[7]).t.wbgaj6) };
+    const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(selectedVariantIndex(onVariantSelect[7]).t.wbgaj6) };
     const Text = tmp2(tmp3[11]).Text;
     intl = tmp2(tmp3[7]).intl;
     items = [closure_4(Text, obj4), ];

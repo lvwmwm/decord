@@ -1,30 +1,30 @@
-// Module ID: 19337
-// Function ID: 19338
+// Module ID: 19495
+// Function ID: 19496
 // Name: VoicePanelVoiceControls
-// Dependencies: [19, 17, 4863, 11221, 21, 5014, 575, 5095, 11222, 19332, 11748, 4839, 19215, 11943, 15206, 6027, 7060, 19338, 1113, 11955, 504, 12432, 5274, 5303, 1622, 6960, 7292, 13830, 2]
+// Dependencies: [19, 17, 4990, 11358, 21, 5141, 575, 1652, 11359, 19490, 11885, 4966, 19373, 12080, 15347, 6147, 7186, 19496, 1113, 12092, 504, 12568, 5397, 5426, 1624, 7086, 7412, 13961, 2]
 
-// Module 19337 (VoicePanelVoiceControls)
+// Module 19495 (VoicePanelVoiceControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11748 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11943 */;
-import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 11955 */;
-import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 15206 */;
-import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19215 */;
-import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19332 */;
-import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19338 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11358 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11359 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11885 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 12080 */;
+import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 12092 */;
+import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 15347 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19373 */;
+import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19490 */;
+import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19496 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import module_1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
 const MobileGoLiveEntrypointExperimentDefault = MobileGoLiveEntrypointExperiment;
@@ -46,7 +46,7 @@ obj2 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16, marginTop: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
 let closure_8 = createStyles(obj);
-let closure_9 = ReanimatedRexport.createAnimatedComponent(ScrollView);
+let closure_9 = module_1652.createAnimatedComponent(ScrollView);
 let closure_10 = react.memo(function ListItems(arg0) {
   let channel;
   let intl;
@@ -70,18 +70,18 @@ let closure_10 = react.memo(function ListItems(arg0) {
   const Stack = Stack_Stack.Stack;
   if (tmp2) {
     let tmp9Result;
-    const TableRowGroup = tmp3(7060).TableRowGroup;
+    const TableRowGroup = tmp3(7186).TableRowGroup;
     const obj4 = { openTab };
     const items = [hasOwnProperty(VoicePanelVoiceControlsButtons.ActivitiesButton, obj4), ];
     if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT === treatment) {
       const obj5 = { openTab };
-      tmp9Result = tmp9(tmp3(19338).ChatButton, obj5);
+      tmp9Result = tmp9(tmp3(19496).ChatButton, obj5);
     } else if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD === treatment) {
       const obj6 = { channel };
-      tmp9Result = tmp9(tmp3(19338).SoundboardButton, obj6);
+      tmp9Result = tmp9(tmp3(19496).SoundboardButton, obj6);
     } else {
       const obj7 = { channel };
-      tmp9Result = tmp9(tmp3(19338).ScreenshareButton, obj7);
+      tmp9Result = tmp9(tmp3(19496).ScreenshareButton, obj7);
     }
     const obj8 = { hasIcons: true, children: items };
     items[1] = tmp9Result;
@@ -89,29 +89,29 @@ let closure_10 = react.memo(function ListItems(arg0) {
   }
   const children = [tmp7Result, hasOwnProperty(VoicePanelVoiceControlsButtons.GameConsoles, { channel, connected: tmp2 }), , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp11(tmp3(19338).StreamVolumeItem, {});
+    nonContextualStreamOutputPresent = tmp11(tmp3(19496).StreamVolumeItem, {});
   }
   children[2] = nonContextualStreamOutputPresent;
   const obj9 = { title: intl.string(intl3.t.dsXapM), hasIcons: true, children: items2 };
-  const TableRowGroup2 = tmp3(7060).TableRowGroup;
+  const TableRowGroup2 = tmp3(7186).TableRowGroup;
   intl = tmp3(1113).intl;
   items2 = [hasOwnProperty(VoicePanelVoiceControlsButtons.DeafenSwitch, {}), hasOwnProperty(VoicePanelVoiceControlsButtons.AudioRouteButton, { channel, connected: tmp2 }), hasOwnProperty(VoicePanelVoiceControlsButtons.HideNonVideoParticipants, { channelId }), hasOwnProperty(VoicePanelVoiceControlsButtons.HideSelfVideo, {}), ];
   let tmp11Result = tmp2;
   if (tmp11Result) {
     const obj10 = { channel, connected: tmp2 };
-    tmp11Result = tmp11(tmp3(19338).InviteButton, obj10);
+    tmp11Result = tmp11(tmp3(19496).InviteButton, obj10);
   }
   items2[4] = tmp11Result;
   children[3] = metroRequire(TableRowGroup2, obj9);
   children[4] = hasOwnProperty(UserSettingsVoiceProcessing.VoiceProcessingOptions, {});
-  const TableRowGroup3 = tmp3(7060).TableRowGroup;
+  const TableRowGroup3 = tmp3(7186).TableRowGroup;
   const items3 = [, ];
   const obj11 = { guildId: channel.guild_id };
   items3[0] = hasOwnProperty(VoicePanelVoiceControlsButtons.VoiceSettingsButton, obj11);
   let tmp11Result2 = null != tmp6;
   if (tmp11Result2) {
     const obj12 = { stream: tmp6 };
-    tmp11Result2 = tmp11(tmp3(19338).ReportStreamIssueButton, obj12);
+    tmp11Result2 = tmp11(tmp3(19496).ReportStreamIssueButton, obj12);
   }
   items3[1] = tmp11Result2;
   children[5] = metroRequire(TableRowGroup3, { hasIcons: true, children: items3 });
@@ -122,7 +122,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
       tmp7Result2 = null;
       if (embeddedActivityLaunchability === getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.CAN_LAUNCH) {
         const obj13 = { title: intl2.string(intl3.t.J6rqB7), hasIcons: true, children: items4 };
-        const TableRowGroup4 = tmp3(7060).TableRowGroup;
+        const TableRowGroup4 = tmp3(7186).TableRowGroup;
         intl2 = tmp3(1113).intl;
         items4 = [hasOwnProperty(VoicePanelVoiceControlsButtons.LeaveActivitiesButton, {}), hasOwnProperty(VoicePanelVoiceControlsButtons.ShareActivityLogsButton, {}), hasOwnProperty(VoicePanelVoiceControlsButtons.ToggleShowActivitiesDebugOverlay, {})];
         tmp7Result2 = tmp7(TableRowGroup4, obj13);
@@ -133,43 +133,51 @@ let closure_10 = react.memo(function ListItems(arg0) {
   return metroRequire(Stack, { spacing: 24, children });
 });
 const scrollIndicatorInsets = { top: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
-const __initData = { code: "function VoicePanelVoiceControlsTsx1({offset:offset}){const{isScrolled}=this.__closure;isScrolled.set(offset>0);}" };
+let closure_13 = { code: "(function VoicePanelVoiceControlsTsx1({offset:offset}){let[isScrolled]=this.__closure;isScrolled.set(offset>0);})" };
 const memoResult = react.memo(function VoicePanelVoiceControls(isVisible) {
   let animatedProps;
-  let items4;
-  let obj6;
+  let items6;
+  let obj5;
   let onScroll;
-  let tmp15;
+  let tmp17;
+  let tmp7;
+  let tmp8;
   isVisible = isVisible.isVisible;
   let channelId;
-  let sharedValue;
   let gestureRef;
   let scrollerRef;
   const openTab = isVisible.openTab;
   let tmp = closure_8();
-  channelId = gestureRef.useContext(channelId(sharedValue[8])).channelId;
-  let obj = isVisible(sharedValue[20]);
-  const items = [scrollerRef];
-  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj2 = isVisible(sharedValue[7]);
-  sharedValue = obj2.useSharedValue(false);
-  const fn = function s(offset) {
-    const result = sharedValue.set(offset.offset > 0);
-  };
-  fn.__closure = { isScrolled: sharedValue };
-  fn.__workletHash = 16758626276795;
-  fn.__initData = __initData;
-  const items1 = [sharedValue];
-  const callback = gestureRef.useCallback(fn, items1);
-  const obj3 = isVisible(sharedValue[21]);
-  const animatedScrollLock = obj3.useAnimatedScrollLock({ onScrollHandlerWorkletized: callback });
+  let obj = scrollerRef;
+  channelId = scrollerRef.useContext(channelId(gestureRef[8])).channelId;
+  const items = [ChannelStore];
+  const obj2 = isVisible(gestureRef[20]);
+  const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  const obj3 = isVisible(gestureRef[7]);
+  const sharedValue = obj3.useSharedValue(false);
+  const items1 = [closure_13, sharedValue];
+  let c0;
+  [tmp7, tmp8] = items1;
+  class VoicePanelVoiceControlsTsx1 {
+    constructor(offset) {
+      const result = _undefined.set(offset.offset > 0);
+    }
+  }
+  const items2 = [tmp8];
+  VoicePanelVoiceControlsTsx1.__closure = items2;
+  VoicePanelVoiceControlsTsx1.__workletHash = 4252778421250;
+  VoicePanelVoiceControlsTsx1.__initData = tmp7;
+  const items3 = [sharedValue];
+  const callback = scrollerRef.useCallback(VoicePanelVoiceControlsTsx1, items3);
+  const tmp4Result = isVisible(gestureRef[21]);
+  const animatedScrollLock = tmp4Result.useAnimatedScrollLock({ onScrollHandlerWorkletized: callback });
   gestureRef = animatedScrollLock.gestureRef;
   scrollerRef = animatedScrollLock.scrollerRef;
   ({ onScroll, animatedProps } = animatedScrollLock);
-  const obj4 = isVisible(sharedValue[22]);
-  const isScreenReaderEnabled = obj4.useIsScreenReaderEnabled();
-  const items2 = [isVisible, scrollerRef];
-  const effect = gestureRef.useEffect(() => {
+  const tmp4Result2 = isVisible(gestureRef[22]);
+  const isScreenReaderEnabled = tmp4Result2.useIsScreenReaderEnabled();
+  const items4 = [isVisible, scrollerRef];
+  const effect = obj.useEffect(() => {
     const tmp = isVisible;
     if (tmp) {
       const current = scrollerRef.current;
@@ -177,43 +185,42 @@ const memoResult = react.memo(function VoicePanelVoiceControls(isVisible) {
         current.scrollTo({ x: 0, y: 0, animated: false });
       }
     }
-  }, items2);
-  const items3 = [gestureRef];
-  const memo = gestureRef.useMemo(() => {
+  }, items4);
+  const items5 = [gestureRef];
+  const memo = obj.useMemo(() => {
     const Gesture = LegacyBaseButton.Gesture;
     const enabled = Gesture.Native().enabled;
     Gesture.Native();
     const obj = MetaQuestUtils;
     const enabledResult = enabled(!obj.isMetaQuest());
     return enabledResult.simultaneousWithExternalGesture(gestureRef);
-  }, items3);
-  const obj5 = { gesture: memo, children: closure_6(tmp15, obj6) };
-  let tmp14Result = !isScreenReaderEnabled;
-  obj6 = { style: isScreenReaderEnabled ? tmp.scrollViewScreenReader : tmp.scrollView, ref: scrollerRef, onScroll, animatedProps, onMomentumScrollEnd: NOOP, scrollEventThrottle: 8.333333333333334, scrollIndicatorInsets, children: items4 };
-  const GestureDetector = isVisible(sharedValue[23]).GestureDetector;
-  const tmp13 = closure_7;
-  tmp15 = closure_9;
-  const tmp4 = isVisible;
+  }, items5);
+  const obj4 = { gesture: memo, children: closure_6(tmp17, obj5) };
+  let tmp16Result = !isScreenReaderEnabled;
+  obj5 = { style: isScreenReaderEnabled ? tmp.scrollViewScreenReader : tmp.scrollView, ref: scrollerRef, onScroll, animatedProps, onMomentumScrollEnd: NOOP, scrollEventThrottle: 8.333333333333334, scrollIndicatorInsets, children: items6 };
+  const GestureDetector = tmp4(tmp3[23]).GestureDetector;
+  const tmp15 = closure_7;
+  tmp17 = closure_9;
   if (!isScreenReaderEnabled) {
-    const obj7 = { style: tmp.blurRegion };
-    tmp14Result = tmp14(tmp2(tmp3[25]), obj7);
+    const obj6 = { style: tmp.blurRegion };
+    tmp16Result = tmp16(tmp2(tmp3[25]), obj6);
   }
-  items4 = [tmp14Result, , ];
-  let tmp14Result3 = null != stateFromStores;
-  if (tmp14Result3) {
-    const obj8 = { channel: stateFromStores, openTab };
-    tmp14Result3 = tmp14(closure_10, obj8);
+  items6 = [tmp16Result, , ];
+  let tmp16Result3 = null != stateFromStores;
+  if (tmp16Result3) {
+    const obj7 = { channel: stateFromStores, openTab };
+    tmp16Result3 = tmp16(closure_10, obj7);
   }
-  items4[1] = tmp14Result3;
-  items4[2] = closure_5(tmp4(sharedValue[26]).SafeAreaPaddingView, { bottom: true });
-  const children = [closure_5(GestureDetector, obj5), ];
-  let tmp14Result4 = !isScreenReaderEnabled;
-  if (tmp14Result4) {
-    const obj9 = { shown: sharedValue, style: tmp.blurRegion };
-    tmp14Result4 = tmp14(tmp2(tmp3[27]), obj9);
+  items6[1] = tmp16Result3;
+  items6[2] = closure_5(isVisible(gestureRef[26]).SafeAreaPaddingView, { bottom: true });
+  const children = [closure_5(GestureDetector, obj4), ];
+  let tmp16Result4 = !isScreenReaderEnabled;
+  if (tmp16Result4) {
+    const obj8 = { shown: sharedValue, style: tmp.blurRegion };
+    tmp16Result4 = tmp16(tmp2(tmp3[27]), obj8);
   }
-  children[1] = tmp14Result4;
-  return closure_6(tmp13, { children });
+  children[1] = tmp16Result4;
+  return closure_6(tmp15, { children });
 });
 let result = size.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelVoiceControls.tsx");
 

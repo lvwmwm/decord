@@ -1,13 +1,13 @@
-// Module ID: 2038
-// Function ID: 2039
+// Module ID: 2167
+// Function ID: 2168
 // Name: ApplicationStore
-// Dependencies: [32, 2016, 504, 572, 2]
+// Dependencies: [32, 2145, 504, 572, 2]
 
-// Module 2038 (ApplicationStore)
+// Module 2167 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import ApplicationRecord from "ApplicationRecord" /* 2145 */;
 import size from "module_2" /* 2 */;
 
 let attachments;
@@ -510,7 +510,10 @@ let obj = {
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: handleApplicationWidgetConfigFetchSuccess,
   APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS: handleApplicationWidgetConfigFetchSuccess,
-  APPLICATION_WIDGET_CONFIG_FETCH_SUCCESS: handleApplicationWidgetConfigFetchSuccess
+  APPLICATION_WIDGET_CONFIG_FETCH_SUCCESS: handleApplicationWidgetConfigFetchSuccess,
+  GAME_ORGANIZATION_FETCH_SUCCESS: function handleGameOrganizationFetchSuccess(application) {
+    addApplication(application.application);
+  }
 };
 const applicationStore = new ApplicationStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/applications/ApplicationStore.tsx");

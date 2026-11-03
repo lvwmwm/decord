@@ -1,22 +1,22 @@
-// Module ID: 18885
-// Function ID: 18886
+// Module ID: 19043
+// Function ID: 19044
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7801, 4956, 1383, 1072, 21, 1187, 5014, 504, 14920, 9151, 12, 1379, 6975, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 7925, 5083, 1385, 1072, 21, 1187, 5141, 504, 15049, 9279, 12, 1380, 7101, 5747, 1113, 2]
 // Exports: default
 
-// Module 18885 (UserProfileYourFriendsCard)
+// Module 19043 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7925 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

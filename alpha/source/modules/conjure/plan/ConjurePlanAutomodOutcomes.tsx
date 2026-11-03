@@ -1,14 +1,14 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12881
+// Function ID: 12882
 // Name: ConjurePlanAutomodOutcomes
-// Dependencies: [4928, 1113, 3868, 5754, 2]
+// Dependencies: [5055, 1113, 3995, 5874, 2]
 // Exports: groupPlanAutomodExamples, planAutomodReasonText, renderPlanAutomodExampleContent
 
-// Module 12745 (ConjurePlanAutomodOutcomes)
+// Module 12881 (ConjurePlanAutomodOutcomes)
 import intl7 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5754 */;
+import _modDef3995 from "module_3995" /* 3995 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5055 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5874 */;
 import size from "module_2" /* 2 */;
 
 const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
@@ -16,28 +16,28 @@ let obj = {
   alert: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868.Vi4cjL);
+      return intl.string(_modDef3995.Vi4cjL);
     },
     blockedStyle: false
   },
   block: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868.YdnZ8q);
+      return intl.string(_modDef3995.YdnZ8q);
     },
     blockedStyle: true
   },
   timeout: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868.QGrx9O);
+      return intl.string(_modDef3995.QGrx9O);
     },
     blockedStyle: true
   },
   allow: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868.RGzFNK);
+      return intl.string(_modDef3995.RGzFNK);
     },
     blockedStyle: false
   }
@@ -46,21 +46,21 @@ let obj2 = {
   blocked: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868.YdnZ8q);
+      return intl.string(_modDef3995.YdnZ8q);
     },
     tone: "red"
   },
   alert: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868["8ockl9"]);
+      return intl.string(_modDef3995["8ockl9"]);
     },
     tone: "blurple"
   },
   allowed: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef3868.RGzFNK);
+      return intl.string(_modDef3995.RGzFNK);
     },
     tone: "green"
   }

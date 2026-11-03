@@ -1,22 +1,22 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11883
+// Function ID: 11884
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2018, 21, 5014, 5717, 11747, 5624, 1113, 5634, 5709, 5958, 2]
+// Dependencies: [19, 17, 2147, 21, 5141, 5837, 11884, 5747, 1113, 5754, 5829, 6078, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11746 (confirmExternalAppLaunchAlert)
+// Module 11883 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Constants from "Constants" /* 2018 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11747 */;
+import Constants from "Constants" /* 2147 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11884 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,7 +37,7 @@ function ConfirmActivityGateContent(application) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = hasOwnProperty(Text, obj3);
-  const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/bold", children: intl2.format(intl4.t["Z/eMDT"], obj5) };
+  const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/semibold", children: intl2.format(intl4.t["Z/eMDT"], obj5) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   obj5 = { activityName: application.name };

@@ -1,18 +1,18 @@
-// Module ID: 17821
-// Function ID: 17822
+// Module ID: 17964
+// Function ID: 17965
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5014, 5624, 6027, 6977, 12244, 2]
+// Dependencies: [19, 17, 21, 5141, 5747, 6147, 7103, 12380, 2]
 // Exports: default
 
-// Module 17821 (UserSettingsDesignSystemAILoader)
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import AILoader from "AILoader" /* 12244 */;
+// Module 17964 (UserSettingsDesignSystemAILoader)
+import Text_Text from "Text/Text" /* 5747 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import Card_Card from "Card/Card" /* 7103 */;
+import AILoader from "AILoader" /* 12380 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -51,7 +51,7 @@ export default function UserSettingsDesignSystemAILoader() {
   obj4 = { children: items };
   Stack2 = Stack_Stack.Stack;
   items = [
-    React3(Text_Text.Text, { variant: "text-lg/bold", children: "Sizes" }),
+    React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Sizes" }),
     React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
     closure_7.map((size) => {
       let obj2;
@@ -66,7 +66,7 @@ export default function UserSettingsDesignSystemAILoader() {
   obj6 = { children: items2 };
   Stack3 = Stack_Stack.Stack;
   items2 = [
-    React3(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }),
+    React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Colors" }),
     React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
     items.map((color) => {
       const label = color.label;

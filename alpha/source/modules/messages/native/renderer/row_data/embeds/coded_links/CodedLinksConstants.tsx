@@ -1,9 +1,9 @@
-// Module ID: 10117
-// Function ID: 10118
+// Module ID: 10247
+// Function ID: 10248
 // Name: CodedLinksConstants
 // Dependencies: [2]
 
-// Module 10117 (CodedLinksConstants)
+// Module 10247 (CodedLinksConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx");

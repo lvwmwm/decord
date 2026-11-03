@@ -1,21 +1,21 @@
-// Module ID: 19952
-// Function ID: 19953
+// Module ID: 20102
+// Function ID: 20103
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [19, 17, 21, 5014, 575, 7292, 5624, 17208, 1113, 1625, 5634, 1497, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7412, 5747, 17351, 1113, 1627, 5754, 1499, 2]
 // Exports: default
 
-// Module 19952 (GuildRoleSubscriptionTierEditStep)
+// Module 20102 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1497 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import FormSeparatorDefault from "FormSeparator" /* 17208 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import FormSeparatorDefault from "FormSeparator" /* 17351 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -39,7 +39,7 @@ function Header(arg0) {
   const obj = { top: true, style: tmp.headerContainer, children: items };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   items = [, , ];
-  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
+  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   items[0] = metroRequire(Text_Text.Text, obj2);
   const obj3 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
   items[1] = metroRequire(Text_Text.Text, obj3);
@@ -67,7 +67,7 @@ function Footer(arg0) {
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroRequire(tmp5(5634).Button, obj3) };
+  const obj = { style: items, children: metroRequire(tmp5(5754).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

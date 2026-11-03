@@ -1,20 +1,20 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 14738
+// Function ID: 14739
 // Name: BetaTag
-// Dependencies: [19, 17, 7617, 21, 5014, 575, 5587, 1092, 5624, 1113, 2]
+// Dependencies: [19, 17, 7741, 21, 5141, 575, 5710, 1092, 5747, 1113, 2]
 // Exports: default
 
-// Module 14607 (BetaTag)
+// Module 14738 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl3 from "intl" /* 1113 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ColorConstants from "ColorConstants" /* 7741 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -47,10 +47,10 @@ export default function BetaTag(gradient) {
     flag = false;
   }
   const tmp2 = closure_6();
-  let str = "text-xs/bold";
+  let str = "text-xs/semibold";
   if (obj3.SMALL !== size) {
     if (obj3.MEDIUM === size) {
-      str = "text-sm/bold";
+      str = "text-sm/semibold";
     }
   }
   if (flag) {

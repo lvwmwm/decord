@@ -1,15 +1,15 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11281
+// Function ID: 11282
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 5014, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 5747, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 11144 (ActionSheetIconHeader)
+// Module 11281 (ActionSheetIconHeader)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -30,7 +30,7 @@ export function ActionSheetIconHeader(subtitle) {
   const obj = { style: tmp.container, children: items };
   items = [_false(View, { children: icon }), ];
   const obj2 = { style: tmp.titles, children: items1 };
-  items1 = [_false(Text_Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
+  items1 = [_false(Text_Text.Text, { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
   let tmp4Result = null;
   const tmp4 = _false;
   if (null != subtitle) {

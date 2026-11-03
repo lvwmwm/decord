@@ -1,34 +1,38 @@
-// Module ID: 18684
-// Function ID: 18685
+// Module ID: 18842
+// Function ID: 18843
 // Name: useSearchSuggestionsGesture
-// Dependencies: [19, 5095, 13886, 5303, 2]
+// Dependencies: [19, 1652, 14017, 5426, 2]
 // Exports: useSearchSuggestionsContext, useSearchSuggestionsGesture
 
-// Module 18684 (useSearchSuggestionsGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
+// Module 18842 (useSearchSuggestionsGesture)
+import _mod1652 from "module_1652" /* 1652 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+let tmp3;
+let tmp4;
 let context = react.createContext(null);
+let items = [{ code: "(function measureRelativeTo_useSearchSuggestionsGestureTsx1(view,container){return{x:view.pageX-container.pageX,y:view.pageY-container.pageY,width:view.width,height:view.height};})" }];
+[tmp3] = items;
 function measureRelativeTo(pageX, pageX2) {
   size = { x: pageX.pageX - pageX2.pageX, y: pageX.pageY - pageX2.pageY, width: pageX.width, height: pageX.height };
   return size;
 }
-measureRelativeTo.__closure = {};
-measureRelativeTo.__workletHash = 15107587770349;
-measureRelativeTo.__initData = { code: "function measureRelativeTo_useSearchSuggestionsGestureTsx1(view,container){return{x:view.pageX-container.pageX,y:view.pageY-container.pageY,width:view.width,height:view.height};}" };
+measureRelativeTo.__workletHash = 8310337569996;
+measureRelativeTo.__initData = tmp3;
+let items1 = [{ code: "(function containsPoint_useSearchSuggestionsGestureTsx2(rect,x,y){return rect.x<x&&x<rect.x+rect.width&&rect.y<y&&y<rect.y+rect.height;})" }];
+[tmp4] = items1;
 function containsPoint(arg0, arg1, arg2) {
   return arg0.x < arg1 && arg1 < arg0.x + arg0.width && arg0.y < arg2 && arg2 < arg0.y + arg0.height;
 }
-containsPoint.__closure = {};
-containsPoint.__workletHash = 11759746841411;
-containsPoint.__initData = { code: "function containsPoint_useSearchSuggestionsGestureTsx2(rect,x,y){return rect.x<x&&x<rect.x+rect.width&&rect.y<y&&y<rect.y+rect.height;}" };
-let closure_7 = { code: "function useSearchSuggestionsGestureTsx3(e,manager){const{suggestionsMounted,measure,suggestionsRef,detectorRef,measureRelativeTo,containsPoint,dismissed}=this.__closure;manager.fail();const touch=e.allTouches[0];if(touch==null)return;if(!suggestionsMounted.get())return;const suggestions=measure(suggestionsRef);if(suggestions==null)return;const detector=measure(detectorRef);if(detector==null)return;const card=measureRelativeTo(suggestions,detector);if(containsPoint(card,touch.x,touch.y))return;dismissed.set(true);}" };
+containsPoint.__workletHash = 16282531248450;
+containsPoint.__initData = tmp4;
+let closure_7 = { code: "(function useSearchSuggestionsGestureTsx3(e,manager){let[suggestionsMounted,measure,suggestionsRef,detectorRef,measureRelativeTo,containsPoint,dismissed]=this.__closure;manager.fail();const touch=e.allTouches[0];if(touch==null)return;if(!suggestionsMounted.get())return;const suggestions=measure(suggestionsRef);if(suggestions==null)return;const detector=measure(detectorRef);if(detector==null)return;const card=measureRelativeTo(suggestions,detector);if(containsPoint(card,touch.x,touch.y))return;dismissed.set(true);})" };
 const Provider = context.Provider;
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/useSearchSuggestionsGesture.tsx");
@@ -49,70 +53,77 @@ export function useSearchSuggestionsContext() {
 export function useSearchSuggestionsGesture(channelDetailsSearchContext) {
   let sharedValue1;
   _require = channelDetailsSearchContext;
-  let obj = require("ReanimatedRexport");
+  let obj = require("module_1652");
   const sharedValue = obj.useSharedValue(false);
-  const obj2 = require("ReanimatedRexport");
+  const obj2 = require("module_1652");
   sharedValue1 = obj2.useSharedValue(false);
-  const obj3 = require("ReanimatedRexport");
+  const obj3 = require("module_1652");
   const animatedRef = obj3.useAnimatedRef();
-  const obj4 = require("ReanimatedRexport");
+  const obj4 = require("module_1652");
   const animatedRef1 = obj4.useAnimatedRef();
-  const items = [sharedValue];
+  let items = [sharedValue];
   const callback = animatedRef.useCallback((arg0, arg1) => {
     if (arg0 !== arg1) {
       const result = sharedValue.set(false);
     }
   }, items);
-  const items1 = [sharedValue, channelDetailsSearchContext, callback];
+  let items1 = [sharedValue, channelDetailsSearchContext, callback];
   const effect = animatedRef.useEffect(() => {
     const obj = SearchPlatformUtilsDefault;
     return obj.subscribeTextInputValue(channelDetailsSearchContext, callback);
   }, items1);
   const items2 = [sharedValue, animatedRef, sharedValue1, animatedRef1];
   const memo = animatedRef.useMemo(() => {
+    let tmp2;
+    let tmp3;
+    let tmp4;
+    let tmp5;
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    let tmp9;
     const Gesture = LegacyBaseButton.Gesture;
-    const fn = function e(arg0, fail) {
-      let x;
-      let y;
+    const ManualResult = Gesture.Manual();
+    const items = [closure_7, sharedValue1, , , , , , ];
+    const onTouchesDown = ManualResult.manualActivation(true).onTouchesDown;
+    ManualResult.manualActivation(true);
+    items[2] = _mod1652.measure;
+    items[3] = animatedRef1;
+    items[4] = animatedRef;
+    items[5] = measureRelativeTo;
+    items[6] = containsPoint;
+    items[7] = sharedValue;
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    let c5;
+    let c6;
+    [tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9] = items;
+    function useSearchSuggestionsGestureTsx3(arg0, fail) {
       fail.fail();
-      const first = arg0.allTouches[0];
-      if (null != first) {
-        if (closure_1_2.get()) {
-          const obj = channelDetailsSearchContext(sharedValue1[1]);
-          const measureResult = obj.measure(animatedRef1);
-          const tmp3 = channelDetailsSearchContext;
-          const tmp4 = sharedValue1;
-          if (null != measureResult) {
-            const tmp3Result = tmp3(tmp4[1]);
-            const measureResult1 = tmp3Result.measure(animatedRef);
-            if (null != measureResult1) {
-              if (typeof callback === "function") {
-                const diff = measureResult.pageX - measureResult1.pageX;
-                const diff1 = measureResult.pageY - measureResult1.pageY;
-                ({ x, y } = first);
-                if (typeof memo === "function") {
-                  const tmp12 = diff < x && x < diff + tmp9 && diff1 < y && y < diff1 + tmp10;
-                  if (!tmp12) {
-                    const result = sharedValue.set(true);
-                  }
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
+      const point = arg0.allTouches[0];
+      if (null != point) {
+        if (_undefined.get()) {
+          const tmp5 = _undefined2(c2);
+          const tmp3 = _undefined2;
+          if (null != tmp5) {
+            const tmp3Result = tmp3(c3);
+            if (null != tmp3Result) {
+              if (!_undefined4(_undefined3(tmp5, tmp3Result), point.x, point.y)) {
+                const result = _undefined5.set(true);
               }
             }
           }
         }
       }
-    };
-    const ManualResult = Gesture.Manual();
-    const manualActivationResult = ManualResult.manualActivation(true);
-    let obj = { suggestionsMounted: sharedValue1, measure: ReanimatedRexport.measure, suggestionsRef: animatedRef1, detectorRef: animatedRef, measureRelativeTo, containsPoint, dismissed: sharedValue };
-    fn.__closure = obj;
-    fn.__workletHash = 12139911159035;
-    fn.__initData = __initData;
-    return manualActivationResult.onTouchesDown(fn);
+    }
+    const items1 = [tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9];
+    useSearchSuggestionsGestureTsx3.__closure = items1;
+    useSearchSuggestionsGestureTsx3.__workletHash = 17579046119458;
+    useSearchSuggestionsGestureTsx3.__initData = tmp2;
+    return onTouchesDown(useSearchSuggestionsGestureTsx3);
   }, items2);
   const items3 = [sharedValue];
   const callback1 = animatedRef.useCallback(() => {

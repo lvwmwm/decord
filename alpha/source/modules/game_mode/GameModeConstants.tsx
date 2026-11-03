@@ -1,9 +1,9 @@
-// Module ID: 5017
-// Function ID: 5018
+// Module ID: 5144
+// Function ID: 5145
 // Name: GameModeConstants
 // Dependencies: [2]
 
-// Module 5017 (GameModeConstants)
+// Module 5144 (GameModeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_mode/GameModeConstants.tsx");

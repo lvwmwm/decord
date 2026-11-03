@@ -1,26 +1,26 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14960
+// Function ID: 14961
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 11287, 1113, 7488, 5258, 11289, 1994, 1260, 7496, 11288, 14830, 14830, 8352, 1375, 14195, 1252, 7358, 5711, 5068, 7364, 2]
+// Dependencies: [1072, 11424, 1113, 7612, 5381, 11426, 2123, 1260, 7620, 11425, 14961, 14961, 8476, 1377, 14326, 1252, 7478, 5831, 5195, 7484, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 14829 (UserProfileOverflowMenuItems)
+// Module 14960 (UserProfileOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7364 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7496 */;
-import ReportModals from "ReportModals" /* 8352 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
-import BotReportChooser from "BotReportChooser" /* 14830 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7484 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7620 */;
+import ReportModals from "ReportModals" /* 8476 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14326 */;
+import BotReportChooser from "BotReportChooser" /* 14961 */;
 import Constants from "Constants" /* 1072 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11287 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11424 */;
 import size from "module_2" /* 2 */;
 
 let avatarURL;
@@ -64,7 +64,7 @@ export function getIgnoreMenuItem(arg0, isBlocked) {
       obj.action = function action() {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
-        const tmp2 = asyncRequire(11289, dependencyMap.paths);
+        const tmp2 = asyncRequire(11426, dependencyMap.paths);
         let obj = {
           userId: require.id,
           channelId: importDefault,
@@ -122,7 +122,7 @@ export function getBlockMenuItem(arg0, isBlocked) {
       action() {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp2 = asyncRequire(11288, dependencyMap.paths);
+          const tmp2 = asyncRequire(11425, dependencyMap.paths);
           let obj = {
             userId: require.id,
             channelId: importDefault,
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(14830, dependencyMap.paths);
+            const tmp19 = asyncRequire(14961, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;
@@ -184,7 +184,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
     tmp3 = obj;
   } else {
     tmp3 = null;
-    const tmpResult = user(1375);
+    const tmpResult = user(1377);
     if (tmpResult.isAndroid()) {
       let obj2 = {
         label: intl.string(tmp(1113).t.TbHyMG),
@@ -296,7 +296,7 @@ export function getDeveloperCopyMenuItem(arg0, tidaWebformEnabled) {
       }
       const obj6 = { options: items, key: "copy-info", header: obj7, stackingBehavior: "stack", hasIcons: false };
       obj7 = { title: intl5.string(intl6.t.QvQeLv) };
-      const showSimpleActionSheet = tmp(7364).showSimpleActionSheet;
+      const showSimpleActionSheet = tmp(7484).showSimpleActionSheet;
       Sheet_showSimpleActionSheet;
       intl5 = tmp(1113).intl;
       let result = showSimpleActionSheet(obj6);

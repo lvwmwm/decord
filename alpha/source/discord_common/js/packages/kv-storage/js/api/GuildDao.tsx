@@ -1,11 +1,11 @@
-// Module ID: 4904
-// Function ID: 4905
+// Module ID: 5031
+// Function ID: 5032
 // Name: GuildDao
-// Dependencies: [4897, 4899, 2]
+// Dependencies: [5024, 5026, 2]
 
-// Module 4904 (GuildDao)
-import Table from "Table" /* 4897 */;
-import TableId from "TableId" /* 4899 */;
+// Module 5031 (GuildDao)
+import Table from "Table" /* 5024 */;
+import TableId from "TableId" /* 5026 */;
 import size from "module_2" /* 2 */;
 
 class GuildDao {

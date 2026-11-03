@@ -1,12 +1,12 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14694
+// Function ID: 14695
 // Name: showAppChannelReportErrorToast
-// Dependencies: [5711, 1113, 2]
+// Dependencies: [5831, 1113, 2]
 // Exports: default
 
-// Module 14563 (showAppChannelReportErrorToast)
+// Module 14694 (showAppChannelReportErrorToast)
 import intl2 from "intl" /* 1113 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_channels/showAppChannelReportErrorToast.native.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 5607
-// Function ID: 5608
+// Module ID: 5730
+// Function ID: 5731
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1493, 5608, 5609, 1625, 1494, 1375, 1891, 5209, 1623, 5610, 2]
+// Dependencies: [32, 19, 1495, 5731, 5732, 1627, 1496, 1377, 2020, 5332, 1625, 5733, 2]
 // Exports: default
 
-// Module 5607 (useSafeAreaInsetsKeyboardAware)
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import KeyboardTypes from "KeyboardTypes" /* 1623 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1891 */;
-import useKeyboardType from "useKeyboardType" /* 5209 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5610 */;
+// Module 5730 (useSafeAreaInsetsKeyboardAware)
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2020 */;
+import useKeyboardType from "useKeyboardType" /* 5332 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");

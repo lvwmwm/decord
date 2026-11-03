@@ -1,17 +1,17 @@
-// Module ID: 5931
-// Function ID: 5932
+// Module ID: 6051
+// Function ID: 6052
 // Name: VideoBackgroundUtils
-// Dependencies: [4863, 5764, 5927, 1072, 1409, 5760, 1252, 2]
+// Dependencies: [4990, 5884, 6047, 1072, 1411, 5880, 1252, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 5931 (VideoBackgroundUtils)
+// Module 6051 (VideoBackgroundUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5927 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6047 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,7 +41,7 @@ function isAnimatedBackgroundOption(type) {
       let isAnimatedIconHashResult = obj.isAnimatedIconHash(type.asset);
       const tmp6 = require;
       if (!isAnimatedIconHashResult) {
-        const tmp6Result = tmp6(1409);
+        const tmp6Result = tmp6(1411);
         isAnimatedIconHashResult = tmp6Result.isVideoAssetHash(type.asset);
       }
       hasItem = isAnimatedIconHashResult;
@@ -166,7 +166,7 @@ export function getVideoBackgroundProtoFromOption(type) {
   let obj;
   let obj3;
   if (null == type) {
-    obj = { oneofKind: "r" };
+    obj = { oneofKind: "Array" };
   } else {
     let tmp = null != type && typeof type === "object" && "id" in type;
     if (tmp) {

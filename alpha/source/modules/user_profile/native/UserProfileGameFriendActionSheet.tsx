@@ -1,21 +1,21 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 15048
+// Function ID: 15049
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4956, 1072, 21, 5014, 575, 14195, 7368, 7054, 1187, 5624, 14920, 7330, 6041, 7488, 5711, 5258, 7366, 7321, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5083, 1072, 21, 5141, 575, 14326, 7488, 7180, 1187, 5747, 15049, 7450, 6161, 7612, 5831, 5381, 7486, 7441, 1113, 2]
 // Exports: default
 
-// Module 14919 (UserProfileGameFriendActionSheet)
+// Module 15048 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14326 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined;
@@ -135,7 +135,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -185,7 +185,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         memo = tmp30;

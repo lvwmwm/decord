@@ -1,13 +1,13 @@
-// Module ID: 5183
-// Function ID: 5184
+// Module ID: 5306
+// Function ID: 5307
 // Name: ThemeAwareNitroWishlistingWumpusRive
-// Dependencies: [109, 19, 21, 5089, 5184, 5146, 2]
+// Dependencies: [109, 19, 21, 5216, 5307, 5269, 2]
 // Exports: ThemeAwareNitroWishlistingWumpusRive
 
-// Module 5183 (ThemeAwareNitroWishlistingWumpusRive)
+// Module 5306 (ThemeAwareNitroWishlistingWumpusRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5089 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5146 */;
+import BaseRive2 from "BaseRive" /* 5216 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5269 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

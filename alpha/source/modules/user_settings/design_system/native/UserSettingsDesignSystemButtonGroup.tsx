@@ -1,20 +1,20 @@
-// Module ID: 17773
-// Function ID: 17774
+// Module ID: 17916
+// Function ID: 17917
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 5014, 6027, 5624, 6767, 5634, 8028, 7562, 2]
+// Dependencies: [19, 17, 21, 5141, 6147, 5747, 6887, 5754, 8152, 7686, 2]
 // Exports: default
 
-// Module 17773 (UserSettingsDesignSystemButtonGroup)
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import ButtonGroup4 from "ButtonGroup" /* 6767 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7562 */;
-import IconButton4 from "IconButton" /* 8028 */;
+// Module 17916 (UserSettingsDesignSystemButtonGroup)
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import ButtonGroup4 from "ButtonGroup" /* 6887 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7686 */;
+import IconButton4 from "IconButton" /* 8152 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -50,7 +50,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
   Stack = Stack_Stack.Stack;
   obj5 = { children: items };
   Stack2 = Stack_Stack.Stack;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Text Button Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." }), ];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Text Button Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." }), ];
   const obj6 = { children: items1 };
   const ButtonGroup = ButtonGroup4.ButtonGroup;
   items1 = [, ];
@@ -75,7 +75,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
   const obj9 = { children: metroRequire(Stack3, obj10) };
   obj10 = { children: items3 };
   Stack3 = Stack_Stack.Stack;
-  items3 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "IconButton Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" }), ];
+  items3 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "IconButton Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" }), ];
   const obj11 = { direction: "horizontal", children: items4 };
   const ButtonGroup2 = ButtonGroup4.ButtonGroup;
   const obj12 = {
@@ -103,7 +103,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
   const obj14 = { children: metroRequire(Stack4, obj15) };
   obj15 = { children: items5 };
   Stack4 = Stack_Stack.Stack;
-  items5 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Mixed Buttons Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." }), , , ];
+  items5 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Mixed Buttons Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." }), , , ];
   const obj16 = { direction: "horizontal", children: items6 };
   const ButtonGroup3 = ButtonGroup4.ButtonGroup;
   items6 = [, ];

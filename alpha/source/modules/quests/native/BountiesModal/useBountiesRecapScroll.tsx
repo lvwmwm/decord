@@ -1,23 +1,25 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 17073
+// Function ID: 17074
 // Name: useBountiesRecapScroll
 // Dependencies: [19, 2]
 // Exports: useBountiesRecapScroll
 
-// Module 16930 (useBountiesRecapScroll)
+// Module 17073 (useBountiesRecapScroll)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-function getRevealProgress(scrollY, c25, height3) {
+let tmp2;
+let items = [{ code: "(function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;})" }];
+[tmp2] = items;
+function getRevealProgress(arg0, arg1, arg2) {
   let num = 0;
-  if (height3 > 0) {
-    num = (scrollY - c25) / height3;
+  if (arg2 > 0) {
+    num = (arg0 - arg1) / arg2;
   }
   return num;
 }
-getRevealProgress.__closure = {};
-getRevealProgress.__workletHash = 9769647749947;
-getRevealProgress.__initData = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
+getRevealProgress.__workletHash = 7613259850010;
+getRevealProgress.__initData = tmp2;
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapScroll.tsx");
 
 export const RECAP_SNAP_EPSILON = 2;

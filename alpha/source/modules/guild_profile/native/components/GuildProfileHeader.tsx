@@ -1,25 +1,25 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9430
+// Function ID: 9431
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2062, 502, 4926, 9303, 21, 5014, 575, 504, 7881, 11, 4877, 9304, 9305, 5712, 5258, 7522, 6957, 5624, 6980, 9306, 1113, 2]
+// Dependencies: [19, 17, 2191, 502, 5053, 9431, 21, 5141, 575, 504, 8005, 11, 5004, 9432, 9433, 5832, 5381, 7646, 7083, 5747, 7106, 9434, 1113, 2]
 // Exports: default
 
-// Module 9302 (GuildProfileHeader)
+// Module 9430 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4877 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import transitionToGuild from "transitionToGuild" /* 7522 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9303 */;
-import GuildTraits from "GuildTraits" /* 9304 */;
-import BadgeCategory from "BadgeCategory" /* 9305 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import transitionToGuild from "transitionToGuild" /* 7646 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9431 */;
+import GuildTraits from "GuildTraits" /* 9432 */;
+import BadgeCategory from "BadgeCategory" /* 9433 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2062 */;
+import LocaleStore from "LocaleStore" /* 2191 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

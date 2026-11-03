@@ -1,15 +1,15 @@
-// Module ID: 11550
-// Function ID: 11551
+// Module ID: 11687
+// Function ID: 11688
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 5238, 5239, 8588, 5243, 8586, 504, 2]
+// Dependencies: [32, 19, 5361, 5362, 8712, 5366, 8710, 504, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 11550 (useLegacyExperiments)
+// Module 11687 (useLegacyExperiments)
 import react from "react" /* 19 */;
-import ExperimentManager from "ExperimentManager" /* 5243 */;
+import ExperimentManager from "ExperimentManager" /* 5366 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5238 */;
-import ExperimentConstants from "ExperimentConstants" /* 5239 */;
+import ExperimentStore from "ExperimentStore" /* 5361 */;
+import ExperimentConstants from "ExperimentConstants" /* 5362 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

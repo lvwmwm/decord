@@ -1,16 +1,16 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 13780
+// Function ID: 13781
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 5015, 6066, 21, 5014, 504, 1375, 5087, 2]
+// Dependencies: [19, 17, 5142, 6186, 21, 5141, 504, 1377, 5214, 2]
 // Exports: default
 
-// Module 13640 (CheckpointKnickKnacks)
+// Module 13780 (CheckpointKnickKnacks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import CheckpointConstants from "CheckpointConstants" /* 6186 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import createStyles from "createStyles" /* 5014 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -30,7 +30,7 @@ export default function CheckpointKnickKnacks(style) {
   const tmp4 = closure_7();
   const memo = react.useMemo(() => ({ iconColor: CHECKPOINT_PRIMARY, reducedMotion: stateFromStores }), items1);
   let tmp6 = null;
-  const obj2 = stateFromStores(1375);
+  const obj2 = stateFromStores(1377);
   if (!obj2.isAndroid()) {
     const items2 = [tmp4.rive, style];
     tmp6 = <View style={items2}>{null}</View>;

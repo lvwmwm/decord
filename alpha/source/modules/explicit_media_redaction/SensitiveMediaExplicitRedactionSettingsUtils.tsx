@@ -1,16 +1,16 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7594
+// Function ID: 7595
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1383, 4841, 1196, 5693, 5700, 4839, 7471, 2]
+// Dependencies: [1385, 4968, 1196, 5813, 5820, 4966, 7595, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 7470 (SensitiveMediaExplicitRedactionSettingsUtils)
+// Module 7594 (SensitiveMediaExplicitRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4841 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5700 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4968 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5820 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 function resolveExplicitContentSettingWithDefaults(isFriend) {
@@ -64,7 +64,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
       }
       if (flag5) {
         let tmp12;
-        const ExplicitContentFilter2 = tmp4(4839).ExplicitContentFilter;
+        const ExplicitContentFilter2 = tmp4(4966).ExplicitContentFilter;
         const setting1 = ExplicitContentFilter2.getSetting();
         if (flag6) {
           tmp12 = obj3[setting1];
@@ -86,7 +86,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag4 = false;
       }
       if (flag3) {
-        const ExplicitContentFilter = tmp4(4839).ExplicitContentFilter;
+        const ExplicitContentFilter = tmp4(4966).ExplicitContentFilter;
         const setting2 = ExplicitContentFilter.getSetting();
         if (flag4) {
           SHOW = obj[setting2];
@@ -157,7 +157,7 @@ export function resolveSettingWithDefaultsForTeen(isDm) {
   }
   if (flag) {
     let tmp5;
-    const ExplicitContentFilter = tmp(4839).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(4966).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       tmp5 = obj3[setting];
@@ -242,7 +242,7 @@ export function shouldRedactMessageMediaForForum() {
     }
     obj3 = { setting: prop2, isDm: true, isFriend: true };
     resolveExplicitContentSettingWithDefaults(obj3);
-    const tmp7Result = tmp7(7471);
+    const tmp7Result = tmp7(7595);
     return tmp7Result.getShouldObscureForSetting(tmp10Result);
   }
 }

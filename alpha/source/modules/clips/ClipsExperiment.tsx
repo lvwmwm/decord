@@ -1,17 +1,17 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15356
+// Function ID: 15357
 // Name: ClipsExperiment
-// Dependencies: [2006, 1383, 1385, 5768, 504, 2047, 1375, 2]
+// Dependencies: [2135, 1385, 1387, 5888, 504, 2176, 1377, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 15215 (ClipsExperiment)
+// Module 15356 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
-import PlatformUtilsAll from "PlatformUtils" /* 1375 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import Constants from "Constants" /* 5768 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import UserStore from "UserStore" /* 1383 */;
+import PlatformUtilsAll from "PlatformUtils" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
+import Constants from "Constants" /* 5888 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;

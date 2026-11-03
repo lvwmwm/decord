@@ -1,21 +1,21 @@
-// Module ID: 16507
-// Function ID: 16508
+// Module ID: 16650
+// Function ID: 16651
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 7727, 8794, 21, 575, 5014, 15074, 16506, 15075, 7351, 9518, 2]
+// Dependencies: [19, 17, 7851, 8918, 21, 575, 5141, 15215, 16649, 15216, 7471, 9646, 2]
 
-// Module 16507 (EditProfileFrameSection)
+// Module 16650 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7727 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8794 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9518 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15074 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15075 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 16506 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7851 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8918 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9646 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15215 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15216 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 16649 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let profileFrame;
@@ -57,7 +57,7 @@ const memoResult = react.memo((arg0) => {
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-        const EditCollectiblesListItemShop = tmp(15075).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15216).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileFrameRecord(profileFrame)) {
         const obj4 = { profileFrame, isSelected: require === profileFrame.skuId, setSelectedProfileFrame, size: width };

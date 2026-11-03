@@ -1,21 +1,21 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18144
+// Function ID: 18145
 // Name: register
-// Dependencies: [5, 18001, 502, 1072, 1097, 2042, 1252, 6747, 1260, 6447, 6538, 572, 18002, 18003, 18004, 2]
+// Dependencies: [5, 18145, 502, 1072, 1097, 2171, 1252, 6867, 1260, 6567, 6658, 572, 18146, 18147, 18148, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 18000 (register)
+// Module 18144 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import APIErrorDefault from "APIError" /* 6447 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6538 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18002 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18004 */;
+import _modDef2171 from "module_2171" /* 2171 */;
+import APIErrorDefault from "APIError" /* 6567 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6658 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6867 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18146 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18148 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18001 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18145 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
@@ -45,7 +45,7 @@ let obj = function _scorePassword() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ obj = function _registerPhone() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef2042();
+    const obj10 = _modDef2171();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(18003)(birthday);
+    tmp9 = tmp4(18147)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

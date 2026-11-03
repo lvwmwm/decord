@@ -1,11 +1,11 @@
-// Module ID: 9473
-// Function ID: 9474
+// Module ID: 9601
+// Function ID: 9602
 // Name: BaseWishlistItemRecord
-// Dependencies: [1398, 2040, 2]
+// Dependencies: [1400, 2169, 2]
 
-// Module 9473 (BaseWishlistItemRecord)
-import Record from "Record" /* 1398 */;
-import SKURecord from "SKURecord" /* 2040 */;
+// Module 9601 (BaseWishlistItemRecord)
+import Record from "Record" /* 1400 */;
+import SKURecord from "SKURecord" /* 2169 */;
 import size from "module_2" /* 2 */;
 
 let sku;

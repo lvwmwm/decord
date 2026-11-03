@@ -1,27 +1,27 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10176
+// Function ID: 10177
 // Name: PremiumFeatureUpsell
-// Dependencies: [19, 17, 5764, 1385, 1072, 7617, 21, 5073, 2047, 1113, 5014, 575, 9785, 9796, 10046, 1252, 9793, 10030, 1187, 10047, 10048, 5624, 9528, 5587, 1092, 5637, 5638, 7326, 10049, 8841, 5095, 9960, 2]
+// Dependencies: [19, 17, 5884, 1387, 1072, 7741, 21, 5200, 2176, 1113, 5141, 575, 9917, 10104, 1252, 9925, 10161, 1187, 10177, 10178, 5747, 9656, 5710, 1092, 5757, 5758, 7446, 10179, 8965, 1652, 10091, 2]
 // Exports: default
 
-// Module 10045 (PremiumFeatureUpsell)
+// Module 10176 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9793 */;
+import PremiumUtils from "PremiumUtils" /* 2176 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5200 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import springPresets from "springPresets" /* 5758 */;
+import ColorConstants from "ColorConstants" /* 7741 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9925 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,6 +33,10 @@ let hasOwnProperty;
 let map1;
 let metroImportAll;
 let metroImportDefault;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
 function PremiumFeatureUpsellPill(featureName) {
   let _location;
   let formatResult;
@@ -40,14 +44,13 @@ function PremiumFeatureUpsellPill(featureName) {
   let items2;
   let showShadow;
   let stringResult;
-  let tmpResult5;
+  let tmpResult3;
   featureName = featureName.featureName;
   ({ analyticsLocation: importDefault, showShadow } = featureName);
   if (showShadow === undefined) {
     showShadow = true;
   }
   let useTier0UpsellContent;
-  let c4;
   let loading;
   let tmp = featureName;
   let tmp2 = useTier0UpsellContent;
@@ -61,12 +64,8 @@ function PremiumFeatureUpsellPill(featureName) {
   const tmp5 = closure_14(useTier0UpsellContent);
   let closure_3 = tmp5;
   let obj2 = featureName(useTier0UpsellContent[13]);
-  let result = obj2.isEmojiPickerUpsellFeature(featureName);
-  if (!result) {
-    let tmpResult = tmp(tmp2[14]);
-    result = tmpResult.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
-  }
-  c4 = result;
+  const result = obj2.isExpressionPickerUpsellFeature(featureName);
+  let c4 = result;
   const tmp8 = useTier0UpsellContent ? closure_8.TIER_0 : closure_8.TIER_2;
   const fn = () => {
     let tmp3 = featureName === EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;
@@ -81,8 +80,8 @@ function PremiumFeatureUpsellPill(featureName) {
     }
     openPremiumUpsellActionSheetDefault(tmp);
   };
-  const tmpResult4 = tmp(tmp2[8]);
-  const premiumTypeDisplayName = tmpResult4.getPremiumTypeDisplayName(tmp8);
+  let tmpResult = tmp(tmp2[8]);
+  const premiumTypeDisplayName = tmpResult.getPremiumTypeDisplayName(tmp8);
   if (tmp(tmp2[7]).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
     const intl5 = tmp(tmp2[9]).intl;
     const obj3 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
@@ -98,9 +97,9 @@ function PremiumFeatureUpsellPill(featureName) {
   } else if (tmp(tmp2[7]).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
     const intl2 = tmp(tmp2[9]).intl;
     const format = intl2.format;
-    const obj6 = { maxFileSize: tmpResult5.getMaxFileSizeForPremiumType(tmp8), nitroTierName: premiumTypeDisplayName, onClick: fn };
+    const obj6 = { maxFileSize: tmpResult3.getMaxFileSizeForPremiumType(tmp8), nitroTierName: premiumTypeDisplayName, onClick: fn };
     const zzyLEK = tmp(tmp2[9]).t.zzyLEK;
-    tmpResult5 = tmp(tmp2[8]);
+    tmpResult3 = tmp(tmp2[8]);
     formatResult = format(zzyLEK, obj6);
   } else if (tmp(tmp2[7]).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
     const intl = tmp(tmp2[9]).intl;
@@ -112,8 +111,8 @@ function PremiumFeatureUpsellPill(featureName) {
     formatResult = intl7.format(tmp(tmp2[9]).t.x2dQxN, obj8);
   }
   const tmp12 = require("usePremiumFeatureUpsellGetNitro");
-  const tmpResult6 = tmp(tmp2[13]);
-  const tmp12Result = tmp12(useTier0UpsellContent, onViewAllPerks, tmpResult6.getAnalyticsPage(featureName));
+  const tmpResult4 = tmp(tmp2[13]);
+  const tmp12Result = tmp12(useTier0UpsellContent, onViewAllPerks, tmpResult4.getAnalyticsPage(featureName));
   loading = tmp12Result.loading;
   let items = [tmp5.container, , ];
   const onPress = tmp12Result.onPress;
@@ -127,28 +126,28 @@ function PremiumFeatureUpsellPill(featureName) {
   let tmp17Result = !result;
   const obj10 = { style: tmp5.labelContainer, children: items1 };
   if (tmp17Result) {
-    const obj11 = { source: tmp11(useTier0UpsellContent ? tmp2[19] : tmp2[20]), style: tmp5.nitroWheel, disableColor: true };
-    const Icon = tmp(tmp2[18]).Icon;
+    const obj11 = { source: tmp11(useTier0UpsellContent ? tmp2[18] : tmp2[19]), style: tmp5.nitroWheel, disableColor: true };
+    const Icon = tmp(tmp2[17]).Icon;
     tmp17Result = closure_12(Icon, obj11);
   }
   items1 = [tmp17Result, ];
   const obj12 = { style: tmp5.text, variant: "text-sm/medium", children: formatResult };
-  items1[1] = closure_12(tmp(tmp2[21]).Text, obj12);
+  items1[1] = closure_12(tmp(tmp2[20]).Text, obj12);
   items2 = [closure_13(loading, obj10), ];
   const obj13 = {
     disabled: loading,
     shrink: true,
     style: tmp5.button,
-    size: tmp(tmp2[18]).ButtonSizes.XSMALL,
+    size: tmp(tmp2[17]).ButtonSizes.XSMALL,
     onPress,
     text: stringResult,
-    color: tmp(tmp2[18]).ButtonColors.GREEN,
+    color: tmp(tmp2[17]).ButtonColors.GREEN,
     renderIcon() {
       let items;
       let tmpResult;
       if (c4) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9528).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9656).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {
@@ -170,7 +169,7 @@ function PremiumFeatureUpsellPill(featureName) {
       return authStore2(tmp2, obj);
     }
   };
-  const ShinyButton = tmp(tmp2[18]).ShinyButton;
+  const ShinyButton = tmp(tmp2[17]).ShinyButton;
   const intl6 = tmp(tmp2[9]).intl;
   const string = intl6.string;
   const t = tmp(tmp2[9]).t;
@@ -204,27 +203,37 @@ let closure_14 = createStyles.createStyles((arg0) => {
   const merged1 = Object.assign(absoluteFillObject.absoluteFillObject);
   return obj;
 });
-const __initData = { code: "function PremiumFeatureUpsellTsx2(finished){const{cleanUp}=this.__closure;var _cleanUp;(_cleanUp=cleanUp)===null||_cleanUp===void 0||_cleanUp(finished);}" };
-function animationEnterExit(targetHeight, cleanUp) {
-  let fn;
-  let obj2;
-  let closure_0 = cleanUp;
-  const obj = { opacity: obj2.withSpring(targetHeight, springPresets.springStandard, "respect-motion-settings", fn) };
-  fn = function l(arg0) {
-    if (closure_0 != null) {
-      tmp(arg0);
+let items = [{ code: "(function animationEnterExit_PremiumFeatureUpsellTsx2(visible,cleanUp){let[withSpring,springStandard,_worklet_11223997992530_init_data]=this.__closure;return{opacity:withSpring(visible,springStandard,'respect-motion-settings',function animationEnterExit_PremiumFeatureUpsellTsx2([_worklet_11223997992530_init_data,cleanUp]){const PremiumFeatureUpsellTsx1=function(finished){cleanUp===null||cleanUp===void 0||cleanUp(finished);};PremiumFeatureUpsellTsx1.__closure=[cleanUp];PremiumFeatureUpsellTsx1.__workletHash=11223997992530;PremiumFeatureUpsellTsx1.__initData=_worklet_11223997992530_init_data;return PremiumFeatureUpsellTsx1;}([_worklet_11223997992530_init_data,cleanUp]))};})" }, spring_spring.withSpring, springPresets.springStandard, { code: "(function PremiumFeatureUpsellTsx1(finished){let[cleanUp]=this.__closure;var _cleanUp;(_cleanUp=cleanUp)===null||_cleanUp===void 0||_cleanUp(finished);})" }];
+let c0;
+let c1;
+let c2;
+[tmp5, tmp6, tmp7, tmp8] = items;
+function animationEnterExit(arg0, arg1) {
+  let tmp2;
+  let tmp3;
+  const tmp = c1;
+  const items = [c2, arg1];
+  [tmp2, tmp3] = items;
+  const obj = { opacity: _undefined(arg0, tmp, "respect-motion-settings", PremiumFeatureUpsellTsx1) };
+  class PremiumFeatureUpsellTsx1 {
+    constructor(arg0) {
+      if (closure_0 != null) {
+        tmp2 = arg0;
+        tmpResult = tmp(arg0);
+      }
+      return;
     }
-  };
-  fn.__closure = { cleanUp };
-  fn.__workletHash = 7812030105128;
-  fn.__initData = __initData;
-  obj2 = spring;
+  }
+  const items1 = [tmp3];
+  PremiumFeatureUpsellTsx1.__closure = items1;
+  PremiumFeatureUpsellTsx1.__workletHash = 11223997992530;
+  PremiumFeatureUpsellTsx1.__initData = tmp2;
   return obj;
 }
-let obj = { withSpring: spring.withSpring, springStandard: springPresets.springStandard };
-animationEnterExit.__closure = obj;
-animationEnterExit.__workletHash = 15470414797897;
-animationEnterExit.__initData = { code: "function animationEnterExit_PremiumFeatureUpsellTsx1(visible,cleanUp){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard,'respect-motion-settings',function(finished){cleanUp===null||cleanUp===void 0||cleanUp(finished);})};}" };
+let items1 = [tmp6, tmp7, tmp8];
+animationEnterExit.__closure = items1;
+animationEnterExit.__workletHash = 6017266156816;
+animationEnterExit.__initData = tmp5;
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumFeatureUpsell.tsx");
 
@@ -234,17 +243,17 @@ export default function PremiumFeatureUpsell(shouldShow) {
   let analyticsLocations;
   let _location;
   const ref = _location.useRef(false);
-  analyticsLocations = ref(analyticsLocations[27])().analyticsLocations;
-  let obj = merged(analyticsLocations[28]);
+  analyticsLocations = ref(analyticsLocations[26])().analyticsLocations;
+  let obj = merged(analyticsLocations[27]);
   _location = obj.useAnalyticsContext().location;
-  const tmp3 = ref(analyticsLocations[29])(shouldShow);
+  const tmp3 = ref(analyticsLocations[28])(shouldShow);
   let closure_4 = tmp3;
   const items = [ref, _location, analyticsLocations, tmp3, merged.featureName];
   const callback = _location.useCallback((arg0, style) => {
     let obj2;
     const obj = { style, children: closure_1_12(PremiumFeatureUpsellPill, obj2) };
     obj2 = {};
-    const View = ref(analyticsLocations[30]).View;
+    const View = ref(analyticsLocations[29]).View;
     merged = Object.assign(arg0);
     return closure_1_12(View, obj);
   }, []);
@@ -288,7 +297,7 @@ export default function PremiumFeatureUpsell(shouldShow) {
   }, items);
   let tmp8;
   const tmp6 = closure_12;
-  const tmp7 = ref(analyticsLocations[31]);
+  const tmp7 = ref(analyticsLocations[30]);
   if (tmp3) {
     tmp8 = merged;
   }

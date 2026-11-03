@@ -1,24 +1,24 @@
-// Module ID: 19421
-// Function ID: 19422
+// Module ID: 19579
+// Function ID: 19580
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4863, 6774, 4885, 6568, 1072, 4870, 3, 1089, 7287, 1252, 572, 7794, 15562, 1396, 1266, 2]
+// Dependencies: [5, 502, 4990, 6894, 5012, 6688, 1072, 4997, 3, 1089, 7407, 1252, 572, 7918, 15703, 1398, 1266, 2]
 
-// Module 19421 (ChannelResyncManager)
+// Module 19579 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7794 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15562 */;
+import FlagUtils from "FlagUtils" /* 1398 */;
+import ChannelConstants from "ChannelConstants" /* 4997 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7918 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15703 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6774 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ function handleChannelSync(guild_id) {
           num = 0;
         }
         const hasFlagResult = hasFlag(num, ChannelFlags.OBFUSCATED);
-        const tmp5Result = tmp5(1396);
+        const tmp5Result = tmp5(1398);
         const hasFlagResult1 = tmp5Result.hasFlag(closure_0[flags.id].flags, ChannelFlags.OBFUSCATED);
         if (hasFlagResult !== hasFlagResult1) {
           const _HermesInternal2 = HermesInternal;
@@ -271,7 +271,7 @@ let obj = function _scheduleGuildResyncs() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -422,7 +422,7 @@ let obj = function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -446,7 +446,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

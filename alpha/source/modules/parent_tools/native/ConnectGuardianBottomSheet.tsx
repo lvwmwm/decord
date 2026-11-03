@@ -1,26 +1,24 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16926
+// Function ID: 16927
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7715, 7716, 21, 5014, 575, 563, 5258, 16784, 5272, 5624, 1113, 2538, 16785, 5634, 2]
+// Dependencies: [19, 17, 7839, 7840, 21, 5141, 575, 563, 5381, 16927, 5395, 5747, 1113, 2667, 16928, 5754, 2]
 // Exports: default
 
-// Module 16783 (ConnectGuardianBottomSheet)
+// Module 16926 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2538 from "module_2538" /* 2538 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16784 */;
+import _modDef2667 from "module_2667" /* 2667 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16927 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -64,24 +62,24 @@ export default function ConnectGuardianBottomSheet(arg0) {
   useOnNewPendingRequestDefault(callback);
   const obj3 = { style: tmp.container, children: items3 };
   const obj4 = { style: tmp.info, children: items2 };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: title };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   const Text = Text_Text.Text;
   if (title == null) {
     const intl = tmp2(1113).intl;
-    title = intl.string(tmp7(2538).aCUVfL);
+    title = intl.string(tmp7(2667).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(5624).Text;
+  const Text2 = tmp2(5747).Text;
   if (body == null) {
     const intl2 = tmp2(1113).intl;
-    body = intl2.format(tmp7(2538)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+    body = intl2.format(tmp7(2667)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj7 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj8) };
-  ConnectGuardianCard = tmp2(16785).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(16928).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
@@ -91,8 +89,8 @@ export default function ConnectGuardianBottomSheet(arg0) {
   }
   const obj9 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj7);
-  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2538.Hsm5IF), onPress: callback };
-  const Button = tmp2(5634).Button;
+  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2667.Hsm5IF), onPress: callback };
+  const Button = tmp2(5754).Button;
   intl3 = tmp2(1113).intl;
   items3[2] = metroImportDefault(Button, obj10);
   return metroImportDefault(BottomSheet, obj9);

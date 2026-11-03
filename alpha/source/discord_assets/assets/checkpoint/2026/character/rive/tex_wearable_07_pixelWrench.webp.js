@@ -1,8 +1,8 @@
-// Module ID: 13616
-// Function ID: 13617
+// Module ID: 13756
+// Function ID: 13757
 // Dependencies: [2]
 
-// Module 13616
+// Module 13756
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_07_pixelWrench.webp.js");

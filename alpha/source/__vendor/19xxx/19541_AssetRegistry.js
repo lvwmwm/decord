@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "71edbf43dc7b4d94780b9aa2b20aeca2", name: "ArrowsLeftRightIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 1080, height: 2400, scales: [1], hash: "98ba52ca11c0740336b7f6cfc50c1516", name: "sunbeam_gradient_mobile", type: "png" });

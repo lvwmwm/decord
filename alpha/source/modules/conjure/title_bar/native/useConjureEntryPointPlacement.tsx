@@ -1,12 +1,12 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9806
+// Function ID: 9807
 // Name: useConjureEntryPointPlacement
-// Dependencies: [9675, 6879, 504, 1447, 9676, 2]
+// Dependencies: [9807, 6999, 504, 1449, 9808, 2]
 // Exports: default
 
-// Module 9674 (useConjureEntryPointPlacement)
-import ConjureMobileExperimentDefault from "ConjureMobileExperiment" /* 9676 */;
-import ConjureYouBarPinStore from "ConjureYouBarPinStore" /* 9675 */;
+// Module 9806 (useConjureEntryPointPlacement)
+import ConjureMobileExperimentDefault from "ConjureMobileExperiment" /* 9808 */;
+import ConjureYouBarPinStore from "ConjureYouBarPinStore" /* 9807 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

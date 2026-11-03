@@ -1,18 +1,18 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 10012
+// Function ID: 10013
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 5655, 21, 5014, 575, 5095, 5254, 2]
+// Dependencies: [19, 17, 5775, 21, 5141, 575, 1652, 5377, 2]
 // Exports: default
 
-// Module 9881 (ConversationPreviewSkeleton)
+// Module 10012 (ConversationPreviewSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import ConversationConstants from "ConversationConstants" /* 5655 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import ConversationConstants from "ConversationConstants" /* 5775 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,33 +39,41 @@ obj4 = { flex: 1, gap: nativeDefault.space.PX_4 };
 size1 = { height: 10, width: "35%", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj5 = { height: 10, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_8 = createStyles(obj);
-const __initData = { code: "function ConversationPreviewSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_9 = { code: "(function ConversationPreviewSkeletonTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationPreviewSkeleton.tsx");
 
 export default function ConversationPreviewSkeleton() {
   let obj4;
   let row;
+  let tmp4;
+  let tmp5;
   _require = closure_8();
-  let obj = require("ReanimatedRexport");
+  let obj = require("module_1652");
   const sharedValue = obj.useSharedValue(0.4);
   let items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = ReanimatedRexport.withRepeat;
-    ReanimatedRexport;
-    const obj = timing;
+    const withRepeat = _mod1652.withRepeat;
+    _mod1652;
+    const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 700 }), -1, true));
   }, items);
-  let obj2 = require("ReanimatedRexport");
-  const fn = function p() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 11432452203963;
-  fn.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
+  let obj2 = require("module_1652");
+  let items1 = [closure_9, sharedValue];
+  let c0;
+  [tmp4, tmp5] = items1;
+  class ConversationPreviewSkeletonTsx1 {
+    constructor() {
+      const obj = { opacity: _undefined.get() };
+      return obj;
+    }
+  }
+  let items2 = [tmp5];
+  ConversationPreviewSkeletonTsx1.__closure = items2;
+  ConversationPreviewSkeletonTsx1.__workletHash = 5339375401250;
+  ConversationPreviewSkeletonTsx1.__initData = tmp4;
+  const animatedStyle = obj2.useAnimatedStyle(ConversationPreviewSkeletonTsx1);
   let obj3 = {
     style: animatedStyle,
     "aria-hidden": true,
@@ -90,6 +98,6 @@ export default function ConversationPreviewSkeleton() {
     })
   };
   obj4 = { length: closure_5 };
-  View = sharedValue(5095).View;
+  View = sharedValue(1652).View;
   return closure_6(View, obj3);
 };

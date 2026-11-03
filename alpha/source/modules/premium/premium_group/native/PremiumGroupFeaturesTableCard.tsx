@@ -1,22 +1,22 @@
-// Module ID: 15372
-// Function ID: 15373
+// Module ID: 15513
+// Function ID: 15514
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7617, 21, 5014, 575, 5624, 1113, 15373, 1187, 5587, 5011, 9926, 2]
+// Dependencies: [17, 7741, 21, 5141, 575, 5747, 1113, 15514, 1187, 5710, 5138, 10057, 2]
 // Exports: default
 
-// Module 15372 (PremiumGroupFeaturesTableCard)
+// Module 15513 (PremiumGroupFeaturesTableCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import ColorUtils from "ColorUtils" /* 5011 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
-import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 9926 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15373 */;
+import ColorUtils from "ColorUtils" /* 5138 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ColorConstants from "ColorConstants" /* 7741 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 10057 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15514 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -33,7 +33,7 @@ class BetaPill {
     let obj2;
     const tmp = closure_7();
     const obj = { style: tmp.betaPill, children: hasOwnProperty(Text, obj2) };
-    obj2 = { variant: "text-xs/bold", style: tmp.betaText, children: intl.string(intl2.t.oW0eUd) };
+    obj2 = { variant: "text-xs/semibold", style: tmp.betaText, children: intl.string(intl2.t.oW0eUd) };
     Text = Text_Text.Text;
     intl = intl2.intl;
     return hasOwnProperty(View, obj);

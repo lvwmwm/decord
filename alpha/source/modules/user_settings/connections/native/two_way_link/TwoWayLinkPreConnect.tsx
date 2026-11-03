@@ -1,21 +1,21 @@
-// Module ID: 9734
-// Function ID: 9735
+// Module ID: 9866
+// Function ID: 9867
 // Name: TwoWayLinkPreConnect
-// Dependencies: [32, 5, 19, 17, 1072, 21, 3, 5014, 7347, 9735, 5709, 1375, 9730, 7348, 38, 572, 5717, 5624, 1113, 7292, 5634, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 21, 3, 5141, 7467, 9867, 5829, 1377, 9862, 7468, 38, 572, 5837, 5747, 1113, 7412, 5754, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 9734 (TwoWayLinkPreConnect)
+// Module 9866 (TwoWayLinkPreConnect)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7347 */;
-import TwoWayLinkType from "TwoWayLinkType" /* 9735 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7467 */;
+import TwoWayLinkType from "TwoWayLinkType" /* 9867 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let callbackState;
@@ -142,7 +142,7 @@ export function TwoWayLinkPreConnect(platformType) {
   }
   items3[1] = imgStyle;
   items4 = [tmp12(tmp13, obj4), , , ];
-  const obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title };
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title };
   items4[1] = tmp12(platformType(tmp3[17]).Text, obj5);
   let obj6 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
   items4[2] = tmp12(platformType(tmp3[17]).Text, obj6);

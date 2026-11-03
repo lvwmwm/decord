@@ -1,18 +1,18 @@
-// Module ID: 6536
-// Function ID: 6537
+// Module ID: 6656
+// Function ID: 6657
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2050, 6537, 1072, 1282, 4834, 572, 1113, 1252, 6446, 4827, 6538, 2]
+// Dependencies: [5, 2179, 6657, 1072, 1282, 4961, 572, 1113, 1252, 6566, 4954, 6658, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6536 (BillingSharedActionCreators)
+// Module 6656 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6446 */;
-import Constants2 from "Constants" /* 6537 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6566 */;
+import Constants2 from "Constants" /* 6657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2050 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2179 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _validatePaymentSourceBillingAddress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _createPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c8;
@@ -284,7 +284,7 @@ export function dispatchConfirmationError(error, captureException) {
   let payment_method;
   let tmp11;
   let tmp8;
-  let type;
+  let type1;
   obj = captureException;
   if (captureException == null) {
     obj = {};
@@ -312,13 +312,14 @@ export function dispatchConfirmationError(error, captureException) {
       const _HermesInternal = HermesInternal;
       combined = "" + defaultErrorMessage + ": " + message.message;
     }
-    const obj2 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type };
+    const obj2 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type1 };
     ({ type: obj4.error_type, code: obj4.failure_code, decline_code: obj4.failure_sub_code, payment_method } = message);
-    type = undefined;
+    type1 = undefined;
     if (payment_method != null) {
-      type = payment_method.type;
+      type1 = payment_method.type;
     }
-    if ("card_error" === message.type) {
+    const type = message.type;
+    if ("card_error" === type) {
       const obj5 = { stacktrace: error.stack };
       const track = AnalyticsUtilsDefault.track;
       const PAYMENT_SOURCE_CREATION_FAILED = metroRequire.PAYMENT_SOURCE_CREATION_FAILED;
@@ -341,7 +342,7 @@ export function dispatchConfirmationError(error, captureException) {
     let billingError1 = message;
     if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp6 = message;
-      const BillingError = tmp3(6446).BillingError;
+      const BillingError = tmp3(6566).BillingError;
       if (typeof message === "string") {
         tmp6 = defaultErrorMessage;
       }
@@ -375,7 +376,7 @@ export function dispatchConfirmationError(error, captureException) {
     obj9 = {};
     const merged2 = Object.assign(tmp8);
     const merged3 = Object.assign(prop.extra);
-    const tmp11Result = tmp11(4827);
+    const tmp11Result = tmp11(4954);
     const result = tmp11Result.captureBillingException(_Error21, obj8);
   }
   return _Error21;

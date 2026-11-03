@@ -1,24 +1,24 @@
-// Module ID: 19195
-// Function ID: 19196
+// Module ID: 19353
+// Function ID: 19354
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 6843, 502, 4863, 5764, 5679, 5767, 11223, 1072, 19151, 504, 18297, 11222, 11225, 2]
+// Dependencies: [32, 19, 6963, 502, 4990, 5884, 5799, 5887, 11360, 1072, 19309, 504, 18442, 11359, 11362, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 19195 (useVoicePanelParticipants)
+// Module 19353 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6963 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import VoiceStateStore from "VoiceStateStore" /* 5799 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5887 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, map, set;
+let _require, importDefault, map, set, voiceParticipantsHidden;
 
 let closure_12;
 let unpackModuleId;
@@ -76,7 +76,7 @@ export default function useVoicePanelCards(arg0, arg1) {
       let tmp;
       const tmp2 = closure_4;
       if (tmp2) {
-        let voiceParticipantsHidden = ChannelRTCStore.getVoiceParticipantsHidden(closure_0);
+        voiceParticipantsHidden = ChannelRTCStore.getVoiceParticipantsHidden(closure_0);
         const items = [];
         const filteredParticipants = ChannelRTCStore.getFilteredParticipants(closure_0);
         for (const item10024 of filteredParticipants) {

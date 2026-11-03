@@ -1,11 +1,11 @@
-// Module ID: 2058
-// Function ID: 2059
+// Module ID: 2187
+// Function ID: 2188
 // Name: PremiumSubscription
-// Dependencies: [1385, 2]
+// Dependencies: [1387, 2]
 // Exports: getBasePlanIdForSubscriptionItems, getBaseSubscriptionItemForSubscriptionItems, getNonePlanIdForIntervalType, getNonePlanIdForSubscription
 
-// Module 2058 (PremiumSubscription)
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+// Module 2187 (PremiumSubscription)
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let constants;

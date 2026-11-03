@@ -1,13 +1,13 @@
-// Module ID: 9847
-// Function ID: 9848
+// Module ID: 9978
+// Function ID: 9979
 // Name: ConversationExperiments
-// Dependencies: [4885, 1072, 1447, 504, 2]
+// Dependencies: [5012, 1072, 1449, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsTopicalNavEnabled
 
-// Module 9847 (ConversationExperiments)
+// Module 9978 (ConversationExperiments)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 17982
+// Function ID: 17983
 // Name: MobileNitroUpsellInShopFeedExperiment
-// Dependencies: [1448, 2]
+// Dependencies: [1450, 2]
 
-// Module 17839 (MobileNitroUpsellInShopFeedExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
+// Module 17982 (MobileNitroUpsellInShopFeedExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

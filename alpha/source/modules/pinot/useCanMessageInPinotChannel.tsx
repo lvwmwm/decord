@@ -1,12 +1,12 @@
-// Module ID: 11324
-// Function ID: 11325
+// Module ID: 11461
+// Function ID: 11462
 // Name: useCanMessageInPinotChannel
-// Dependencies: [4946, 1072, 504, 2]
+// Dependencies: [5073, 1072, 504, 2]
 // Exports: useCanMessageInPinotChannel
 
-// Module 11324 (useCanMessageInPinotChannel)
+// Module 11461 (useCanMessageInPinotChannel)
 import Constants from "Constants" /* 1072 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

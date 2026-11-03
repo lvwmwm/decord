@@ -1,8 +1,8 @@
-// Module ID: 13509
-// Function ID: 13510
+// Module ID: 13649
+// Function ID: 13650
 // Dependencies: [2]
 
-// Module 13509
+// Module 13649
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_spooked_drop.webp.js");

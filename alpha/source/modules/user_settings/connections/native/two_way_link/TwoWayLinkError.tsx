@@ -1,22 +1,22 @@
-// Module ID: 14633
-// Function ID: 14634
+// Module ID: 14764
+// Function ID: 14765
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 5014, 9730, 5717, 14634, 5624, 7292, 6027, 5634, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 9862, 5837, 14765, 5747, 7412, 6147, 5754, 1113, 2]
 // Exports: TwoWayLinkError
 
-// Module 14633 (TwoWayLinkError)
+// Module 14764 (TwoWayLinkError)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14634 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14765 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,7 +47,7 @@ export function TwoWayLinkError(arg0) {
   const obj4 = { source: AssetRegistryDefault, style: tmp.image };
   const tmp3 = FastImageDefault;
   items = [React3(tmp3, obj4), , ];
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
   items[1] = React3(Text_Text.Text, obj5);
   const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };
   items[2] = React3(Text_Text.Text, obj6);

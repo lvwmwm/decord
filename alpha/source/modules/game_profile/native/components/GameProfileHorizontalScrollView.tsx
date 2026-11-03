@@ -1,13 +1,13 @@
-// Module ID: 9386
-// Function ID: 9387
+// Module ID: 9514
+// Function ID: 9515
 // Name: GameProfileHorizontalScrollView
-// Dependencies: [19, 17, 21, 5303, 2]
+// Dependencies: [19, 17, 21, 5426, 2]
 // Exports: default
 
-// Module 9386 (GameProfileHorizontalScrollView)
+// Module 9514 (GameProfileHorizontalScrollView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

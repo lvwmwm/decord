@@ -1,15 +1,15 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10323
+// Function ID: 10324
 // Name: canForwardMessage
-// Dependencies: [4918, 4863, 4885, 4946, 1072, 1396, 504, 2]
+// Dependencies: [5045, 4990, 5012, 5073, 1072, 1398, 504, 2]
 // Exports: useCanForwardMessage
 
-// Module 10193 (canForwardMessage)
-import FlagUtils from "FlagUtils" /* 1396 */;
-import GatedChannelStore from "GatedChannelStore" /* 4918 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+// Module 10323 (canForwardMessage)
+import FlagUtils from "FlagUtils" /* 1398 */;
+import GatedChannelStore from "GatedChannelStore" /* 5045 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

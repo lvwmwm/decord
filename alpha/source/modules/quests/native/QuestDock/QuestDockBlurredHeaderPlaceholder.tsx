@@ -1,16 +1,18 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17308
+// Function ID: 17309
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 6781, 17072, 21, 5014, 17073, 17166, 5095, 7241, 5717, 2]
+// Dependencies: [19, 17, 6901, 17215, 21, 5141, 17216, 17309, 1652, 5837, 2]
 
-// Module 17165 (QuestDockBlurredHeaderPlaceholder)
+// Module 17308 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import _slicedToArray from "_slicedToArray" /* 17166 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import QuestConstants from "QuestConstants" /* 6901 */;
+import _slicedToArray from "_slicedToArray" /* 17309 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17072 */;
+import QuestDockConstants from "QuestDockConstants" /* 17215 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
@@ -32,56 +34,67 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { backgroundColor: "rgba(38, 39, 50, 0.3)", height: QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
-const __initData = { code: "function QuestDockBlurredHeaderPlaceholderTsx1(){const{activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,questDockWrapperSpecs}=this.__closure;return{left:activeQuestDockMode.get()===QuestDockMode.EXPANDED?-QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED:0,width:questDockWrapperSpecs.get().width+QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED};}" };
+let closure_11 = { code: "(function QuestDockBlurredHeaderPlaceholderTsx1(){let[activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,questDockWrapperSpecs]=this.__closure;return{left:activeQuestDockMode.get()===QuestDockMode.EXPANDED?-QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED:0,width:questDockWrapperSpecs.get().width+QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED};})" };
 const memoResult = react.memo(function QuestDockBlurredHeaderPlaceholder(arg0) {
   let activeQuestDockMode;
-  let items1;
-  let items2;
   let items3;
+  let items4;
+  let items5;
   let layoutAnimatedStyle;
   let layoutAnimation;
-  let obj5;
+  let obj4;
   let opacityAnimatedStyle;
   let placeholder;
+  let questDockWrapperSpecs;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   ({ opacityAnimatedStyle, placeholder } = arg0);
   ({ layoutAnimation, layoutAnimatedStyle } = arg0);
-  const context = react.useContext(placeholder(activeQuestDockMode[6]).QuestDockGestureContext);
-  const questDockWrapperSpecs = context.questDockWrapperSpecs;
-  activeQuestDockMode = context.activeQuestDockMode;
+  const context = react.useContext(placeholder(17216).QuestDockGestureContext);
   const items = [placeholder];
+  ({ questDockWrapperSpecs, activeQuestDockMode } = context);
   const memo = react.useMemo(() => {
     let obj2;
     const obj = { uri: obj2.thumbHashToDataURL(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0))) };
     obj2 = _slicedToArray;
     return obj;
   }, items);
-  const tmp3 = closure_10();
-  let obj = placeholder(activeQuestDockMode[8]);
-  class E {
+  const tmp4 = closure_10();
+  let obj = placeholder(1652);
+  const items1 = [closure_11, activeQuestDockMode, QuestDockMode, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED, questDockWrapperSpecs];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp5, tmp6, tmp7, tmp8, tmp9] = items1;
+  class QuestDockBlurredHeaderPlaceholderTsx1 {
     constructor() {
       let num = 0;
-      if (activeQuestDockMode.get() === QuestDockMode.EXPANDED) {
-        num = -QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED;
+      if (_undefined.get() === _undefined2.EXPANDED) {
+        num = -c2;
       }
-      const obj = { left: num, width: questDockWrapperSpecs.get().width + QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED };
+      const obj = { left: num, width: _undefined3.get().width + c2 };
       return obj;
     }
   }
-  let obj2 = { activeQuestDockMode, QuestDockMode, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED, questDockWrapperSpecs };
-  E.__closure = obj2;
-  E.__workletHash = 11176778421725;
-  E.__initData = __initData;
-  const obj3 = { children: items2 };
-  const animatedStyle = obj.useAnimatedStyle(E);
-  const obj4 = { style: items1, layout: layoutAnimation, children: closure_7(questDockWrapperSpecs(activeQuestDockMode[10]), obj5) };
-  items1 = [tmp3.imageContainer, layoutAnimatedStyle, animatedStyle, opacityAnimatedStyle];
-  obj5 = { source: memo, style: StyleSheet.absoluteFill };
-  const tmp5 = questDockWrapperSpecs(activeQuestDockMode[9]);
-  items2 = [closure_7(tmp5, obj4), ];
-  const obj6 = { style: items3 };
-  items3 = [tmp3.overlay, opacityAnimatedStyle];
-  items2[1] = closure_7(questDockWrapperSpecs(activeQuestDockMode[9]), obj6);
-  return closure_9(closure_8, obj3);
+  const items2 = [tmp6, tmp7, tmp8, tmp9];
+  QuestDockBlurredHeaderPlaceholderTsx1.__closure = items2;
+  QuestDockBlurredHeaderPlaceholderTsx1.__workletHash = 16240509940580;
+  QuestDockBlurredHeaderPlaceholderTsx1.__initData = tmp5;
+  let obj2 = { children: items4 };
+  const animatedStyle = obj.useAnimatedStyle(QuestDockBlurredHeaderPlaceholderTsx1);
+  const obj3 = { style: items3, layout: layoutAnimation, children: closure_7(FastImageDefault, obj4) };
+  items3 = [tmp4.imageContainer, layoutAnimatedStyle, animatedStyle, opacityAnimatedStyle];
+  const View = _modDef1652.View;
+  obj4 = { source: memo, style: StyleSheet.absoluteFill };
+  items4 = [closure_7(View, obj3), ];
+  const obj5 = { style: items5 };
+  items5 = [tmp4.overlay, opacityAnimatedStyle];
+  items4[1] = closure_7(_modDef1652.View, obj5);
+  return closure_9(closure_8, obj2);
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredHeaderPlaceholder.tsx");
 

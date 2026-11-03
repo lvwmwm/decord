@@ -1,28 +1,27 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17114
+// Function ID: 17115
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5015, 21, 575, 5014, 1375, 9504, 16972, 8873, 16973, 7148, 1625, 504, 16974, 5624, 1113, 9532, 5634, 2]
+// Dependencies: [19, 17, 5142, 21, 575, 5141, 1377, 9632, 17115, 8997, 17116, 1627, 504, 17117, 5747, 1113, 9660, 5754, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 16971 (BountiesScrollRecapPage)
+// Module 17114 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import common_Video from "common/Video" /* 8873 */;
-import OrbsIcon from "OrbsIcon" /* 9532 */;
-import _modDef16972 from "module_16972" /* 16972 */;
-import _modDef16973 from "module_16973" /* 16973 */;
-import _modDef16974 from "module_16974" /* 16974 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import common_Video from "common/Video" /* 8997 */;
+import OrbsIcon from "OrbsIcon" /* 9660 */;
+import _modDef17115 from "module_17115" /* 17115 */;
+import _modDef17116 from "module_17116" /* 17116 */;
+import _modDef17117 from "module_17117" /* 17117 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -40,13 +39,13 @@ function BountiesRecapOrbsBackground(arg0) {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef16972, style: _false.absoluteFillObject, autoplay: !reducedMotion };
-    APNGPlayer = tmp(9504).APNGPlayer;
+    obj3 = { url: _modDef17115, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+    APNGPlayer = tmp(9632).APNGPlayer;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef16973 };
-    const VideoComponent = tmp(8873).VideoComponent;
+    obj5 = { uri: _modDef17116 };
+    const VideoComponent = tmp(8997).VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj4);
   }
   return tmp3Result;
@@ -57,10 +56,10 @@ const lg = nativeDefault.radii.lg;
 let closure_9 = createStyles.createStyles(() => {
   let num;
   let rect;
-  const obj = { root: { overflow: "hidden", borderRadius: lg, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, content: { flex: 1, paddingHorizontal: nativeDefault.space.PX_24, justifyContent: "center", alignItems: "center" }, centeredCopy: { alignItems: "center", width: "100%" }, orbsBackground: { position: "absolute", top: 0, left: 0, right: 0, height: "40%", zIndex: 1 }, headerLabel: { paddingBottom: nativeDefault.space.PX_4, textTransform: "uppercase" }, titleRow: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_8 }, actions: rect, orbAmount: { marginTop: num, lineHeight: 46 } };
+  const obj = { root: { overflow: "hidden", borderRadius: lg, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, content: { flex: 1, paddingHorizontal: nativeDefault.space.PX_24, justifyContent: "center", alignItems: "center" }, centeredCopy: { alignItems: "center", width: "100%" }, orbsBackground: { position: "absolute", top: 0, left: 0, right: 0, height: "40%", zIndex: 1 }, headerLabel: { paddingBottom: nativeDefault.space.PX_4 }, titleRow: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_8 }, actions: rect, orbAmount: { marginTop: num, lineHeight: 46 } };
   ({ overflow: "hidden", borderRadius: lg, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
   ({ flex: 1, paddingHorizontal: nativeDefault.space.PX_24, justifyContent: "center", alignItems: "center" });
-  ({ paddingBottom: nativeDefault.space.PX_4, textTransform: "uppercase" });
+  ({ paddingBottom: nativeDefault.space.PX_4 });
   ({ flexDirection: "row", alignItems: "center", justifyContent: "center", paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_8 });
   rect = { position: "absolute", left: nativeDefault.space.PX_24, right: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_12 };
   num = 0;
@@ -84,58 +83,54 @@ export function BountiesScrollRecapPage(orbAmount) {
   let items5;
   let items6;
   let items7;
-  let items8;
-  let obj12;
-  let obj17;
-  let obj6;
+  let obj11;
+  let obj16;
+  let obj5;
   let onClose;
   let style;
   let useReducedMotion;
   orbAmount = orbAmount.orbAmount;
   ({ onClose, style } = orbAmount);
   const tmp = closure_9();
-  const obj = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("BountiesScrollRecapPage", "text-xs/bold");
-  const tmp3 = useSafeAreaInsetsDefault();
+  const tmp2 = useSafeAreaInsetsDefault();
   const items = [AccessibilityStore];
-  const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj3 = { style: items1, pointerEvents: "box-none", children: items3 };
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj2 = { style: items1, pointerEvents: "box-none", children: items3 };
   items1 = [tmp.root, style];
-  const obj4 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
-  const obj5 = { source: obj6, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef16974 };
+  const obj3 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
+  const obj4 = { source: obj5, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
+  obj5 = { uri: _modDef17117 };
   const VideoComponent = common_Video.VideoComponent;
-  items2 = [metroRequire(VideoComponent, obj5), ];
-  const obj7 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };
-  items2[1] = metroRequire(BountiesRecapOrbsBackground, obj7);
-  items3 = [metroImportDefault(React3, obj4), ];
-  const obj8 = { style: tmp.content, pointerEvents: "box-none", children: items7 };
-  const obj9 = { style: tmp.centeredCopy, pointerEvents: "none", children: items5 };
-  const obj10 = { variant: typeConsolidationEyebrow.variant, color: "text-brand", style: items4, children: intl.string(intl4.t.d6Rrn6) };
-  items4 = [tmp.headerLabel, typeConsolidationEyebrow.style];
+  items2 = [metroRequire(VideoComponent, obj4), ];
+  const obj6 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };
+  items2[1] = metroRequire(BountiesRecapOrbsBackground, obj6);
+  items3 = [metroImportDefault(React3, obj3), ];
+  const obj7 = { style: tmp.content, pointerEvents: "box-none", children: items6 };
+  const obj8 = { style: tmp.centeredCopy, pointerEvents: "none", children: items4 };
+  const obj9 = { variant: "body-sm/medium", color: "text-brand", style: tmp.headerLabel, children: intl.string(intl4.t.d6Rrn6) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items5 = [metroRequire(Text, obj10), , ];
-  const obj11 = { accessible: true, accessibilityRole: "text", accessibilityLabel: "+" + orbAmount, children: metroImportDefault(React3, obj12) };
-  obj12 = { style: tmp.titleRow, children: items6 };
-  items6 = [metroRequire(OrbsIcon.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
-  const obj13 = { variant: "display-lg", color: "text-strong", accessible: false, style: tmp.orbAmount, children: "+" + orbAmount };
+  items4 = [metroRequire(Text, obj9), , ];
+  const obj10 = { accessible: true, accessibilityRole: "text", accessibilityLabel: "+" + orbAmount, children: metroImportDefault(React3, obj11) };
+  obj11 = { style: tmp.titleRow, children: items5 };
+  items5 = [metroRequire(OrbsIcon.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
+  const obj12 = { variant: "display-lg", color: "text-strong", accessible: false, style: tmp.orbAmount, children: "+" + orbAmount };
   const Text2 = Text_Text.Text;
-  items6[1] = metroRequire(Text2, obj13);
-  items5[1] = metroRequire(React3, obj11);
-  const obj14 = { variant: "text-md/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(intl4.t.x0Ffz3) };
+  items5[1] = metroRequire(Text2, obj12);
+  items4[1] = metroRequire(React3, obj10);
+  const obj13 = { variant: "text-md/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(intl4.t.x0Ffz3) };
   const Text3 = Text_Text.Text;
   intl2 = intl4.intl;
-  items5[2] = metroRequire(Text3, obj14);
-  items7 = [metroImportDefault(React3, obj9), ];
-  const obj15 = { style: items8, children: metroRequire(Button, obj17) };
-  items8 = [tmp.actions, { bottom: tmp3.bottom + nativeDefault.space.PX_8 }];
-  obj17 = { grow: true, variant: "primary", text: intl3.string(intl4.t.i4jeWR), size: "lg", onPress: onClose };
-  ({ bottom: tmp3.bottom + nativeDefault.space.PX_8 });
+  items4[2] = metroRequire(Text3, obj13);
+  items6 = [metroImportDefault(React3, obj8), ];
+  const obj14 = { style: items7, children: metroRequire(Button, obj16) };
+  items7 = [tmp.actions, { bottom: tmp2.bottom + nativeDefault.space.PX_8 }];
+  obj16 = { grow: true, variant: "primary", text: intl3.string(intl4.t.i4jeWR), size: "lg", onPress: onClose };
+  ({ bottom: tmp2.bottom + nativeDefault.space.PX_8 });
   Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items7[1] = metroRequire(React3, obj15);
-  items3[1] = metroImportDefault(React3, obj8);
-  return metroImportDefault(React3, obj3);
+  items6[1] = metroRequire(React3, obj14);
+  items3[1] = metroImportDefault(React3, obj7);
+  return metroImportDefault(React3, obj2);
 }

@@ -1,21 +1,21 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11213
+// Function ID: 11214
 // Name: Notification
-// Dependencies: [19, 11023, 1072, 21, 5014, 575, 11022, 11066, 5095, 5637, 5254, 5760, 6980, 11077, 11079, 2]
+// Dependencies: [19, 11156, 1072, 21, 5141, 575, 11155, 11203, 1652, 5757, 5377, 1705, 5880, 7106, 11214, 11216, 2]
 // Exports: NotificationPressable
 
-// Module 11076 (Notification)
+// Module 11213 (Notification)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import spring from "spring" /* 5637 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11022 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11155 */;
 import react from "react" /* 19 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11023 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11156 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -38,8 +38,8 @@ let merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
 obj3 = { borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 let closure_9 = createStyles(obj);
 let closure_10 = { mass: 1, overshootClamping: true, damping: 27, stiffness: 300 };
-let closure_11 = { code: "function NotificationTsx1(){const{withSpring,scale,ON_PRESS_SPRING_CONFIG}=this.__closure;return{transform:[{scale:withSpring(scale.get(),ON_PRESS_SPRING_CONFIG)}]};}" };
-let closure_12 = { code: "function NotificationTsx2(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('timeout');}}" };
+let closure_11 = { code: "(function NotificationTsx1(){let[withSpring,scale,ON_PRESS_SPRING_CONFIG]=this.__closure;return{transform:[{scale:withSpring(scale.get(),ON_PRESS_SPRING_CONFIG)}]};})" };
+let closure_12 = { code: "(function NotificationTsx2(finished){let[scheduleOnRN,handleDismissNotification]=this.__closure;if(finished){scheduleOnRN(handleDismissNotification,'timeout');}})" };
 let result = size.fileFinishedImporting("modules/in_app_notifications/native/Notification.tsx");
 
 export function NotificationPressable(notification) {
@@ -48,15 +48,18 @@ export function NotificationPressable(notification) {
   let children;
   let header;
   let icon;
-  let items8;
-  let items9;
-  let obj7;
+  let items10;
+  let items11;
+  let obj5;
   let rightAccessory;
-  let tmp21;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp26;
   notification = notification.notification;
   const onPress = notification.onPress;
   const onSettingsPress = notification.onSettingsPress;
-  let tmp = null;
   ({ icon, children, accessoryLabelNode, rightAccessory, header } = notification);
   let merged = Object.assign(notification, Object.assign({ notification: 0, icon: 0, children: 0, accessoryLabelNode: 0, rightAccessory: 0, header: 0, onPress: 0, onSettingsPress: 0 }));
   let guildId;
@@ -65,7 +68,8 @@ export function NotificationPressable(notification) {
   let closure_14;
   let callback2;
   let callback3;
-  let tmp3 = handleDismissNotification();
+  let tmp2 = handleDismissNotification();
+  let obj = guildId;
   let items = [notification];
   const memo = guildId.useMemo(() => {
     const obj = { type: notification.type };
@@ -77,44 +81,54 @@ export function NotificationPressable(notification) {
   const channelId = memo.channelId;
   const messageId = memo.messageId;
   const type = memo.type;
-  const tmp5 = onSettingsPress;
-  let obj = notification(onSettingsPress[7]);
-  const inAppNotificationContext = obj.useInAppNotificationContext();
+  let tmp4 = notification;
+  let obj2 = notification(onSettingsPress[7]);
+  const inAppNotificationContext = obj2.useInAppNotificationContext();
   const notificationGestureY = inAppNotificationContext.notificationGestureY;
   const velocityY = inAppNotificationContext.velocityY;
   handleDismissNotification = inAppNotificationContext.handleDismissNotification;
   const initialized = inAppNotificationContext.initialized;
   const panning = inAppNotificationContext.panning;
-  let obj2 = notification(onSettingsPress[8]);
-  const sharedValue = obj2.useSharedValue(1);
-  const items1 = [sharedValue];
+  const obj3 = notification(onSettingsPress[8]);
+  const sharedValue = obj3.useSharedValue(1);
+  let items1 = [sharedValue];
   const items2 = [sharedValue];
   const callback = guildId.useCallback(() => sharedValue.set(0.95), items1);
   const callback1 = guildId.useCallback(() => sharedValue.set(1), items2);
-  let obj3 = notification(onSettingsPress[8]);
-  class A {
+  const items3 = [panning, , , ];
+  const useAnimatedStyle = notification(onSettingsPress[8]).useAnimatedStyle;
+  const tmp10 = notification(onSettingsPress[8]);
+  items3[1] = notification(onSettingsPress[9]).withSpring;
+  items3[2] = sharedValue;
+  items3[3] = initialized;
+  let c0;
+  let c1;
+  let c2;
+  [tmp11, tmp12, tmp13, tmp14] = items3;
+  class NotificationTsx1 {
     constructor() {
       let items;
-      let obj3;
       const obj = { transform: items };
-      const obj2 = { scale: obj3.withSpring(sharedValue.get(), closure_10) };
-      items = [obj2];
-      obj3 = spring;
+      items = [{ scale: _undefined(_undefined2.get(), c2) }];
+      ({ scale: _undefined(_undefined2.get(), c2) });
       return obj;
     }
   }
-  A.__closure = { withSpring: notification(onSettingsPress[9]).withSpring, scale: sharedValue, ON_PRESS_SPRING_CONFIG: initialized };
-  A.__workletHash = 5485274967370;
-  A.__initData = panning;
-  ({ withSpring: notification(onSettingsPress[9]).withSpring, scale: sharedValue, ON_PRESS_SPRING_CONFIG: initialized });
-  const animatedStyle = obj3.useAnimatedStyle(A);
-  const memo1 = guildId.useMemo(() => ({ foreground: true }), []);
-  const obj5 = notification(onSettingsPress[8]);
-  sharedValue1 = obj5.useSharedValue(100);
-  closure_14 = tmp13;
-  const items3 = [initialized, panning, notification, sharedValue1, handleDismissNotification, tmp13];
-  const effect = guildId.useEffect(() => {
+  const items4 = [tmp12, tmp13, tmp14];
+  NotificationTsx1.__closure = items4;
+  NotificationTsx1.__workletHash = 8384259234867;
+  NotificationTsx1.__initData = tmp11;
+  const animatedStyle = useAnimatedStyle(NotificationTsx1);
+  const memo1 = obj.useMemo(() => ({ foreground: true }), []);
+  const tmp4Result = tmp4(onSettingsPress[8]);
+  sharedValue1 = tmp4Result.useSharedValue(100);
+  closure_14 = tmp18;
+  const items5 = [initialized, panning, notification, sharedValue1, handleDismissNotification, tmp18];
+  const effect = obj.useEffect(() => {
     let tmp;
+    let tmp13;
+    let tmp14;
+    let tmp15;
     const tmp2 = initialized;
     if (tmp2) {
       const tmp3 = panning;
@@ -123,21 +137,26 @@ export function NotificationPressable(notification) {
         if (tmp4) {
           const value = sharedValue1.get();
           set = sharedValue1.set;
-          const tmp9 = timing;
-          let obj = { duration: value / 100 * tmp, easing: ReanimatedRexport.Easing.linear };
+          const tmp9 = timing_timing;
+          let obj = { duration: value / 100 * tmp, easing: _mod1652.Easing.linear };
           const withTiming = tmp9.withTiming;
-          const fn = function s(arg0) {
-            const tmp = arg0;
-            if (tmp) {
-              const obj = notification(onSettingsPress[8]);
-              obj.runOnJS(handleDismissNotification)("timeout");
+          const items = [closure_12, _mod1705.scheduleOnRN, handleDismissNotification];
+          let c0;
+          let c1;
+          [tmp13, tmp14, tmp15] = items;
+          class NotificationTsx2 {
+            constructor(arg0) {
+              const tmp = arg0;
+              if (tmp) {
+                _undefined(c1, "timeout");
+              }
             }
-          };
-          fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, handleDismissNotification };
-          fn.__workletHash = 5704836747866;
-          fn.__initData = __initData;
-          const obj2 = { runOnJS: ReanimatedRexport.runOnJS, handleDismissNotification };
-          const result = set(withTiming(0, obj, "animate-always", fn));
+          }
+          const items1 = [tmp14, tmp15];
+          NotificationTsx2.__closure = items1;
+          NotificationTsx2.__workletHash = 15850789902158;
+          NotificationTsx2.__initData = tmp13;
+          const result = set(withTiming(0, obj, "animate-always", NotificationTsx2));
           return () => {
             const obj = notification(onSettingsPress[8]);
             obj.cancelAnimation(sharedValue1);
@@ -145,18 +164,18 @@ export function NotificationPressable(notification) {
         }
       }
     }
-  }, items3);
-  const items4 = [velocityY, notificationGestureY];
-  callback2 = guildId.useCallback(() => {
+  }, items5);
+  const items6 = [velocityY, notificationGestureY];
+  callback2 = obj.useCallback(() => {
     let tmp = Math.abs(velocityY.get()) >= React3;
     if (!tmp) {
       const _Math = Math;
       tmp = Math.abs(notificationGestureY.get()) >= hasOwnProperty;
     }
     return tmp;
-  }, items4);
-  const items5 = [callback2, type, notification.inAppNotificationId, guildId, channelId, messageId, sharedValue1, tmp13];
-  callback3 = guildId.useCallback((IAR_MODAL_OPEN, fn) => {
+  }, items6);
+  const items7 = [callback2, type, notification.inAppNotificationId, guildId, channelId, messageId, sharedValue1, tmp18];
+  callback3 = obj.useCallback((IAR_MODAL_OPEN, fn) => {
     let floorResult;
     if (!callback2()) {
       const obj = { type, notif_guild_id: guildId, notif_channel_id: channelId, message_id: messageId, in_app_notification_id: notification.inAppNotificationId, percent: floorResult };
@@ -177,38 +196,39 @@ export function NotificationPressable(notification) {
         fn();
       }
     }
-  }, items5);
-  const items6 = [callback3, onPress];
-  const items7 = [callback3, onSettingsPress];
-  const callback4 = guildId.useCallback(() => callback3(AnalyticEvents.IN_APP_NOTIFICATION_CLICKED, onPress), items6);
-  const callback5 = guildId.useCallback(() => {
-    callback3(AnalyticEvents.IN_APP_NOTIFICATION_LONG_PRESSED, onSettingsPress);
   }, items7);
-  const obj6 = { style: items8, children: tmp21(PressableHighlight, obj7) };
-  items8 = [tmp3.shadow, animatedStyle];
-  const View = onPress(onSettingsPress[8]).View;
-  obj7 = {
+  const items8 = [callback3, onPress];
+  const items9 = [callback3, onSettingsPress];
+  const callback4 = obj.useCallback(() => callback3(AnalyticEvents.IN_APP_NOTIFICATION_CLICKED, onPress), items8);
+  const callback5 = obj.useCallback(() => {
+    callback3(AnalyticEvents.IN_APP_NOTIFICATION_LONG_PRESSED, onSettingsPress);
+  }, items9);
+  const obj4 = { style: items10, children: tmp26(PressableHighlight, obj5) };
+  items10 = [tmp2.shadow, animatedStyle];
+  const View = onPress(tmp5[8]).View;
+  obj5 = {
     onAccessibilityEscape() {
       return handleDismissNotification("accessibility_escape");
     },
-    style: tmp3.container,
+    style: tmp2.container,
     androidRippleConfig: memo1,
     onPress: callback4,
     onPressIn: callback,
     onPressOut: callback1,
     onLongPress: callback5,
     accessibilityRole: "button",
-    children: items9
+    children: items11
   };
-  PressableHighlight = notification(onSettingsPress[12]).PressableHighlight;
+  PressableHighlight = tmp4(tmp5[13]).PressableHighlight;
   const merged1 = Object.assign(merged);
-  items9 = [notificationGestureY(onPress(onSettingsPress[13]), { icon, children, accessoryLabelNode, rightAccessory, header }), ];
-  const tmp20 = onPress;
-  tmp21 = velocityY;
+  items11 = [notificationGestureY(onPress(tmp5[14]), { icon, children, accessoryLabelNode, rightAccessory, header }), ];
+  let tmp24Result = null;
+  const tmp25 = onPress;
+  tmp26 = velocityY;
   if (notification.duration !== Infinity) {
-    const obj8 = { percent: sharedValue1 };
-    tmp = tmp19(tmp20(tmp5[14]), obj8);
+    const obj6 = { percent: sharedValue1 };
+    tmp24Result = tmp24(tmp25(tmp5[15]), obj6);
   }
-  items9[1] = tmp;
-  return notificationGestureY(View, obj6);
+  items11[1] = tmp24Result;
+  return notificationGestureY(View, obj4);
 }

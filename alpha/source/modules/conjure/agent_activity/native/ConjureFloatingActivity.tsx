@@ -1,21 +1,21 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 12917
+// Function ID: 12918
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 5254, 12720, 6980, 1113, 3868, 12123, 5624, 12782, 6914, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 5377, 12856, 7106, 1113, 3995, 12259, 5747, 12918, 7034, 2]
 // Exports: default
 
-// Module 12781 (ConjureFloatingActivity)
+// Module 12917 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6914 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 12720 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import _modDef3995 from "module_3995" /* 3995 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7034 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 12856 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -40,7 +40,7 @@ obj4 = { marginVertical: -nativeDefault.space.PX_8, marginLeft: nativeDefault.sp
 obj5 = { maxWidth: "100%", marginBottom: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_SECONDARY_ALT, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 const merged1 = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
 let closure_8 = createStyles(obj);
-const __initData = { code: "function ConjureFloatingActivityTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_9 = { code: "(function ConjureFloatingActivityTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/native/ConjureFloatingActivity.tsx");
 
 export default function ConjureFloatingActivity(agents) {
@@ -50,15 +50,17 @@ export default function ConjureFloatingActivity(agents) {
   let c1;
   let intl;
   let intl2;
-  let items1;
-  let items2;
   let items3;
   let items4;
+  let items5;
+  let items6;
   let line;
-  let obj11;
-  let obj5;
+  let obj12;
+  let obj6;
   let onJumpToActivity;
-  let tmp8;
+  let tmp10;
+  let tmp6;
+  let tmp7;
   let todos;
   let todosLive;
   ({ line, todos, todosLive } = agents);
@@ -70,64 +72,68 @@ export default function ConjureFloatingActivity(agents) {
   importDefault = undefined;
   agents = agents.agents;
   const tmp = closure_8();
-  let obj = sharedValue(5095);
+  let obj = sharedValue(1652);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    let obj = timing;
+    let obj = timing_timing;
     const result = set(obj.withTiming(1, { duration: 150 }));
     return () => {
       const obj = sharedValue(dependencyMap[6]);
       return obj.cancelAnimation(closure_1_0);
     };
   }, items);
-  const obj2 = sharedValue(5095);
-  class P {
+  const items1 = [closure_9, sharedValue];
+  let c0;
+  [tmp6, tmp7] = items1;
+  const obj3 = sharedValue(1652);
+  class ConjureFloatingActivityTsx1 {
     constructor() {
-      const obj = { opacity: sharedValue.get() };
+      const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  P.__closure = { opacity: sharedValue };
-  P.__workletHash = 451170179306;
-  P.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(P);
-  [tmp8, c1] = react.useState(false);
+  const items2 = [tmp7];
+  ConjureFloatingActivityTsx1.__closure = items2;
+  ConjureFloatingActivityTsx1.__workletHash = 8355728640531;
+  ConjureFloatingActivityTsx1.__initData = tmp6;
+  const animatedStyle = obj3.useAnimatedStyle(ConjureFloatingActivityTsx1);
+  [tmp10, c1] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const callback = react.useCallback(() => _undefined((arg0) => !arg0), []);
-  const obj3 = { style: items1, pointerEvents: "box-none", children: items2 };
-  items1 = [tmp.root, { bottom }, animatedStyle];
-  let tmp12 = null;
-  View = ReanimatedRexportDefault.View;
-  if (tmp8) {
-    tmp12 = null;
+  const callback = obj2.useCallback(() => _undefined((arg0) => !arg0), []);
+  const obj4 = { style: items3, pointerEvents: "box-none", children: items4 };
+  items3 = [tmp.root, { bottom }, animatedStyle];
+  let tmp14 = null;
+  View = _modDef1652.View;
+  if (tmp10) {
+    tmp14 = null;
     if (null != todos) {
-      const obj4 = { style: tmp.panel, children: closure_6(ConjureTodoListDefault, obj5) };
-      obj5 = { todos, agents, live: todosLive, announceProgress: false };
-      tmp12 = closure_6(View, obj4);
+      const obj5 = { style: tmp.panel, children: closure_6(ConjureTodoListDefault, obj6) };
+      obj6 = { todos, agents, live: todosLive, announceProgress: false };
+      tmp14 = closure_6(View, obj5);
     }
   }
-  items2 = [tmp12, ];
-  const obj6 = { style: tmp.pill, children: items4 };
-  const obj7 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3868.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items3 };
-  const PressableOpacity = tmp2(6980).PressableOpacity;
+  items4 = [tmp14, ];
+  const obj7 = { style: tmp.pill, children: items6 };
+  const obj8 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3995.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items5 };
+  const PressableOpacity = tmp2(7106).PressableOpacity;
   intl = tmp2(1113).intl;
-  const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(12123).MagicWandIcon;
-  items3 = [closure_6(MagicWandIcon, obj8), ];
-  const obj9 = { style: tmp.label, children: closure_6(sharedValue(5624).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
-  items3[1] = closure_6(View, obj9);
-  items4 = [closure_7(PressableOpacity, obj7), ];
-  let tmp16Result = null;
+  const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
+  const MagicWandIcon = tmp2(12259).MagicWandIcon;
+  items5 = [closure_6(MagicWandIcon, obj9), ];
+  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5747).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  items5[1] = closure_6(View, obj10);
+  items6 = [closure_7(PressableOpacity, obj8), ];
+  let tmp18Result = null;
   if (null != todos) {
-    const obj10 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj11) };
-    obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3868.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(12782).ToggleIconButton;
+    const obj11 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj12) };
+    obj12 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp10, accessibilityLabel: intl2.string(_modDef3995.Qp2isI), onPress: callback };
+    ToggleIconButton = tmp2(12918).ToggleIconButton;
     intl2 = tmp2(1113).intl;
-    tmp16Result = tmp16(tmp15, obj10);
+    tmp18Result = tmp18(tmp17, obj11);
   }
-  items4[1] = tmp16Result;
-  items2[1] = closure_7(View, obj6);
-  return closure_7(View, obj3);
+  items6[1] = tmp18Result;
+  items4[1] = closure_7(View, obj7);
+  return closure_7(View, obj4);
 };

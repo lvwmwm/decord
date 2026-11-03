@@ -1,19 +1,19 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16636
+// Function ID: 16637
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7377, 7617, 21, 5014, 575, 1187, 9528, 5624, 5587, 1092, 2]
+// Dependencies: [19, 17, 7497, 7741, 21, 5141, 575, 1187, 9656, 5747, 5710, 1092, 2]
 // Exports: default
 
-// Module 16493 (UserProfileUpsellCard)
+// Module 16636 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Constants from "Constants" /* 7377 */;
-import ColorConstants from "ColorConstants" /* 7617 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import Constants from "Constants" /* 7497 */;
+import ColorConstants from "ColorConstants" /* 7741 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,9 +73,9 @@ export default function UserProfileUpsellCard(headerText) {
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(9528).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9656).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
-    const obj5 = { variant: "heading-sm/bold", children: headerText };
+    const obj5 = { variant: "heading-sm/semibold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);
     tmp6Result = tmp6(closure_3, obj3);
   }

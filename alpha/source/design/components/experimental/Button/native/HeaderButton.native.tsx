@@ -1,15 +1,15 @@
-// Module ID: 8995
-// Function ID: 8996
+// Module ID: 9123
+// Function ID: 9124
 // Name: Button/HeaderButton
-// Dependencies: [19, 21, 5640, 5624, 5014, 5635, 2]
+// Dependencies: [19, 21, 5760, 5747, 5141, 5755, 2]
 
-// Module 8995 (Button/HeaderButton)
+// Module 9123 (Button/HeaderButton)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BaseTextButton2 from "BaseTextButton" /* 5635 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import BaseTextButton2 from "BaseTextButton" /* 5755 */;
+import ButtonConstants from "ButtonConstants" /* 5760 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 class HeaderButton {
@@ -21,9 +21,9 @@ class HeaderButton {
   }
 }
 const jsx = Fragment.jsx;
-const _false = "heading-md/bold";
+const _false = "heading-md/semibold";
 const diff = ButtonConstants.SMALL_BUTTON_HEIGHT - 2 * ButtonConstants.BUTTON_BORDER_WIDTH;
-const diff1 = diff - Text_Text.TextStyleSheet["heading-md/bold"].lineHeight;
+const diff1 = diff - Text_Text.TextStyleSheet["heading-md/semibold"].lineHeight;
 const obj = { pill: { paddingVertical: diff1 / 2 } };
 const React3 = createStyles.createStyles(obj);
 HeaderButton.Icon = BaseTextButton2.BaseTextButton.Icon;

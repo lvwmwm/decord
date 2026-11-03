@@ -1,20 +1,20 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14483
+// Function ID: 14484
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 4885, 21, 5014, 5712, 7249, 14353, 11504, 12, 14342, 1113, 6446, 7522, 14337, 5717, 14354, 5624, 7248, 2]
+// Dependencies: [32, 5, 19, 17, 5012, 21, 5141, 5832, 7369, 14484, 11641, 12, 14473, 1113, 6566, 7646, 14468, 5837, 14485, 5747, 7368, 2]
 // Exports: default
 
-// Module 14352 (HubEmailConnectionPinVerify)
+// Module 14483 (HubEmailConnectionPinVerify)
 import react_native from "react-native" /* 17 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import EnvelopeIcon from "EnvelopeIcon" /* 7249 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 14353 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import EnvelopeIcon from "EnvelopeIcon" /* 7369 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 14484 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ export default function HubEmailConnectionPinVerify(email) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -112,7 +112,7 @@ export default function HubEmailConnectionPinVerify(email) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -157,7 +157,7 @@ export default function HubEmailConnectionPinVerify(email) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -216,7 +216,7 @@ export default function HubEmailConnectionPinVerify(email) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -236,7 +236,7 @@ export default function HubEmailConnectionPinVerify(email) {
   let obj4 = { source: require("AssetRegistry") };
   const tmp10 = require("FastImage");
   items1 = [closure_8(tmp10, obj4), , , , , ];
-  let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(email(onClose[13]).t.SJ3Lxc) };
+  let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(email(onClose[13]).t.SJ3Lxc) };
   const Text = email(onClose[19]).Text;
   intl = email(onClose[13]).intl;
   items1[1] = closure_8(Text, obj5);

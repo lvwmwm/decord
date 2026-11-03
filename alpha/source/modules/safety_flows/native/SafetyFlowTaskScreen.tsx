@@ -1,18 +1,18 @@
-// Module ID: 20091
-// Function ID: 20092
+// Module ID: 20241
+// Function ID: 20242
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 5014, 7972, 7973, 6027, 5624, 13208, 20089, 13420, 2]
+// Dependencies: [19, 21, 5141, 8096, 8097, 6147, 5747, 13344, 20239, 13556, 2]
 // Exports: default
 
-// Module 20091 (SafetyFlowTaskScreen)
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import ModalScreen2 from "ModalScreen" /* 7972 */;
-import ModalContent2 from "ModalContent" /* 7973 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20089 */;
+// Module 20241 (SafetyFlowTaskScreen)
+import Text_Text from "Text/Text" /* 5747 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import ModalScreen2 from "ModalScreen" /* 8096 */;
+import ModalContent2 from "ModalContent" /* 8097 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20239 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -53,19 +53,19 @@ export default function SafetyFlowTaskScreen(title) {
     tmp6 = ImageComponent;
   }
   const items = [tmp6, , ];
-  const obj = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.header, children: title };
+  const obj = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.header, children: title };
   items[1] = _false(Text_Text.Text, obj);
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp7Result = tmp7(tmp4(5624).Text, obj2);
+    tmp7Result = tmp7(tmp4(5747).Text, obj2);
   }
   const obj3 = { children: items1 };
   items[2] = tmp7Result;
   items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
-    const ModalFooter = tmp4(13208).ModalFooter;
+    const ModalFooter = tmp4(13344).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
@@ -73,7 +73,7 @@ export default function SafetyFlowTaskScreen(title) {
     let tmp7Result2 = null != action;
     if (tmp7Result2) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp7Result2 = tmp7(tmp4(13420).ModalActionButton, obj4);
+      tmp7Result2 = tmp7(tmp4(13556).ModalActionButton, obj4);
     }
     const obj5 = { children: items3 };
     items3[1] = tmp7Result2;

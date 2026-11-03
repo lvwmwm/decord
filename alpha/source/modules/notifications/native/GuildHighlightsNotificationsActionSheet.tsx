@@ -1,30 +1,29 @@
-// Module ID: 10157
-// Function ID: 10158
+// Module ID: 10287
+// Function ID: 10288
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 4885, 6775, 1072, 10158, 21, 5014, 575, 6957, 5624, 10159, 563, 1113, 10160, 1625, 5272, 5275, 2061, 6977, 8177, 7288, 7283, 5258, 2]
+// Dependencies: [32, 19, 17, 5012, 6895, 1072, 10288, 21, 5141, 575, 7083, 5747, 10289, 563, 1113, 10290, 1627, 5395, 5398, 2190, 7103, 8301, 7408, 7403, 5381, 2]
 // Exports: default
 
-// Module 10157 (GuildHighlightsNotificationsActionSheet)
+// Module 10287 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7283 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7288 */;
-import Constants2 from "Constants" /* 10158 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 10159 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7403 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7408 */;
+import Constants2 from "Constants" /* 10288 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 10289 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
-let BottomSheet;
 
 let c9;
 let closure_12;
@@ -242,7 +241,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
   }
   const obj6 = { scrollable: true, ref, contentHeight: tmp29, startHeight: sum, children: closure_11(BottomSheetScrollView, obj7) };
   tmp29 = undefined;
-  BottomSheet = tmp12(tmp13[17]).BottomSheet;
+  const BottomSheet = tmp12(tmp13[17]).BottomSheet;
   if (tmp24) {
     tmp29 = sum;
   }

@@ -1,16 +1,16 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 9161
+// Function ID: 9162
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 4885, 7268, 7269, 1072, 7267, 7274, 1084, 5958, 1113, 2]
+// Dependencies: [5, 5012, 7388, 7389, 1072, 7387, 7394, 1084, 6078, 1113, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9033 (DefaultChannelThresholdUtils)
+// Module 9161 (DefaultChannelThresholdUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7267 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7269 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7387 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _isDefaultChannelThresholdMetAfterDelete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _isChattableChannelThresholdMetAfterChannelChange() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

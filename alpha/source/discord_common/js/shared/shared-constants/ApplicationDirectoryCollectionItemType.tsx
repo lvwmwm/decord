@@ -1,9 +1,9 @@
-// Module ID: 12452
-// Function ID: 12453
+// Module ID: 12588
+// Function ID: 12589
 // Name: ApplicationDirectoryCollectionItemType
 // Dependencies: [2]
 
-// Module 12452 (ApplicationDirectoryCollectionItemType)
+// Module 12588 (ApplicationDirectoryCollectionItemType)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3]) };

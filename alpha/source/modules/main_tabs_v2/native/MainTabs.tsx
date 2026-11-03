@@ -1,21 +1,21 @@
-// Module ID: 18052
-// Function ID: 18053
+// Module ID: 18196
+// Function ID: 18197
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5014, 575, 5194, 9823, 1625, 5201, 5596, 5080, 10736, 18053, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5317, 9954, 1627, 5324, 5719, 5207, 10866, 18197, 2]
 
-// Module 18052 (MainTabs)
+// Module 18196 (MainTabs)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
-import useChatLayoutDefault from "useChatLayout" /* 5201 */;
-import useToken from "useToken" /* 5596 */;
-import useActiveTheme from "useActiveTheme" /* 9823 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18053 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5317 */;
+import useChatLayoutDefault from "useChatLayout" /* 5324 */;
+import useToken from "useToken" /* 5719 */;
+import useActiveTheme from "useActiveTheme" /* 9954 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10866 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18197 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp4;
-const native = tmp4(5080);
+const native = tmp4(5207);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((paddingLeft, paddingRight, marginTop, top) => {
@@ -76,7 +76,7 @@ const memoResult = react.memo(function MainTabs() {
   if (left > 0) {
     tmp8Result = null;
     if (!isChatLockedOpen) {
-      tmp8Result = tmp8(tmp(10736), { absolute: true, mix: true });
+      tmp8Result = tmp8(tmp(10866), { absolute: true, mix: true });
     }
   } else {
     tmp8Result = null;

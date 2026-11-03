@@ -1,127 +1,217 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 11187
+// Function ID: 11188
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 21, 5014, 575, 8679, 1113, 2025, 5755, 8143, 5717, 9320, 9340, 5624, 7480, 2]
+// Dependencies: [19, 17, 11186, 21, 575, 5141, 5747, 11182, 8803, 11188, 5762, 2154, 1113, 11189, 6147, 2155, 8267, 5837, 9448, 9468, 7604, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 15668 (MarkupReactGameMentionRule)
+// Module 11187 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
-import useGame from "useGame" /* 7480 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9320 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import useGame from "useGame" /* 7604 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9448 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
 import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
-let obj2;
-let obj3;
-let size;
+let metroImportDefault;
+let metroRequire;
 class MarkupGameMention {
-  constructor(state) {
-    let handlePress;
-    let items;
+  constructor(fallbackVariant) {
+    let inlineRoot;
     let items1;
-    let obj5;
-    let textColor1;
-    state = state.state;
-    const node = state.node;
-    const tmp = closure_5();
+    let items3;
+    let node;
+    let obj10;
+    let pill;
+    let state;
+    let str2;
+    let tmp21Result;
+    let tmp23;
+    let tmp23Result;
+    ({ node, state } = fallbackVariant);
+    fallbackVariant = fallbackVariant.fallbackVariant;
+    if (fallbackVariant === undefined) {
+      fallbackVariant = c9;
+    }
     const gameId = node.gameId;
-    let obj = state(8679);
+    const muted = state.muted;
+    let obj = state(8803);
     const gameMentionData = obj.useGameMentionData(gameId);
-    const intl = state(1113).intl;
-    const stringResult = intl.string(state(1113).t["11pdXZ"]);
+    let obj2 = state(11188);
+    const previewMentionLayout = obj2.usePreviewMentionLayout();
+    let variant;
+    const obj3 = state(5762);
+    const fontScale = obj3.useFontScale();
+    if (previewMentionLayout != null) {
+      variant = previewMentionLayout.variant;
+    }
+    if (variant == null) {
+      variant = fallbackVariant;
+    }
+    let prop;
+    if (previewMentionLayout != null) {
+      prop = previewMentionLayout.maxFontSizeMultiplier;
+    }
+    const fontSize = tmp(5747).TextStyleSheet[variant].fontSize;
+    let num = Infinity;
+    if (null != prop) {
+      num = Infinity;
+      if (prop >= 1) {
+        num = prop;
+      }
+    }
+    const tmpResult = state(11182);
+    const minResult = min(tmpResult.scaleLineHeight(fontSize, fontScale), fontSize * num);
+    let value;
+    if (previewMentionLayout != null) {
+      const widths = previewMentionLayout.widths;
+      value = widths.get(node);
+    }
+    const tmp11 = closure_10(minResult, true === muted);
+    let gameIcon;
+    const tmp12 = gameId;
+    const tmp13 = gameId(2154);
+    if (gameMentionData != null) {
+      gameIcon = gameMentionData.gameIcon;
+    }
+    const tmp13Result = tmp13(gameId, gameIcon, { size: minResult });
     let gameName;
     if (gameMentionData != null) {
       gameName = gameMentionData.gameName;
     }
     if (gameName == null) {
-      gameName = stringResult;
+      const intl = tmp(1113).intl;
+      gameName = intl.string(tmp(1113).t["11pdXZ"]);
     }
-    let gameIcon;
-    const tmp7 = gameId;
-    const tmp8 = gameId(2025);
-    if (gameMentionData != null) {
-      gameIcon = gameMentionData.gameIcon;
+    let str = "mention-foreground";
+    if (true === muted) {
+      str = "text-muted";
     }
-    const tmp8Result = tmp8(gameId, gameIcon, { size: 32 });
-    if (null == gameMentionData) {
-      let textColor;
-      const MarkupText2 = tmp2(5755).MarkupText;
-      const tmp15 = closure_3;
-      if (state != null) {
-        textColor = state.textColor;
+    let mentionPillOffsetY = state.mentionPillOffsetY;
+    if (mentionPillOffsetY == null) {
+      let prop1;
+      if (true === state.noStyleAndInteraction) {
+        prop1 = tmp(11189).MENTION_PILL_OFFSET_Y;
       }
-      let obj2 = { color: textColor, children: items };
-      items = ["@", stringResult];
-      return tmp15(MarkupText2, obj2, state.key);
+      mentionPillOffsetY = prop1;
+    }
+    let result1;
+    if (null != mentionPillOffsetY) {
+      const result = mentionPillOffsetY * minResult;
+      result1 = result / tmp(5747).TextStyleSheet[variant].fontSize;
+    }
+    if (null != result1) {
+      const items = [tmp11.inlineRoot, ];
+      const obj4 = { transform: items1 };
+      items1 = [{ translateY: result1 }];
+      const obj5 = { translateY: result1 };
+      items[1] = obj4;
+      inlineRoot = items;
     } else {
-      let tmp11 = null != tmp8Result;
-      const obj3 = { size: "sm", style: tmp.icon };
-      const tmp18 = closure_4(state(8143).UnknownGameIcon, obj3);
-      if (tmp11) {
-        tmp11 = "" !== tmp8Result;
-      }
-      let tmp17Result = tmp18;
-      if (tmp11) {
-        const obj4 = { style: tmp.icon, source: obj5 };
-        obj5 = { uri: tmp8Result };
-        tmp17Result = tmp17(tmp7(5717), obj4);
-      }
-      let str2 = "button";
-      const MarkupText = tmp2(5755).MarkupText;
-      const tmp13 = closure_3;
-      if (state.noStyleAndInteraction) {
-        str2 = "text";
-      }
-      const obj6 = { accessibilityRole: str2, style: tmp.chip, color: textColor1, onPress: handlePress, children: items1 };
-      textColor1 = undefined;
-      if (state != null) {
-        textColor1 = state.textColor;
-      }
-      handlePress = undefined;
-      if (!state.noStyleAndInteraction) {
-        handlePress = function handlePress() {
-          const obj = GameProfileActionCreatorsDefault;
-          const obj2 = { gameId, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId }, source: GameProfileAnalyticUtils.GameProfileSources.GameMention, sourceUserId: state.authorId };
-          obj.openGameProfileModal(obj2);
-        };
-      }
-      items1 = [tmp17Result, ];
-      const obj7 = { variant: "text-sm/medium", style: tmp.chipText, children: gameName };
-      items1[1] = closure_4(state(5624).Text, obj7);
-      return tmp13(MarkupText, obj6, state.key);
+      inlineRoot = tmp11.inlineRoot;
     }
+    const Stack = tmp(6147).Stack;
+    const tmp20 = closure_7;
+    if (null != value) {
+      const items2 = [tmp11.pill, ];
+      const obj6 = { maxWidth: value };
+      items2[1] = obj6;
+      pill = items2;
+    } else {
+      pill = tmp11.pill;
+    }
+    const obj7 = { direction: "horizontal", align: "center", style: pill, children: items3 };
+    const tmpResult2 = state(2155);
+    if (tmpResult2.isNullOrEmpty(tmp13Result)) {
+      const obj8 = { size: "custom", color: str, style: tmp11.icon, accessible: false };
+      tmp21Result = tmp21(tmp(8267).UnknownGameIcon, obj8);
+      tmp23 = tmp21;
+    } else {
+      const obj9 = { source: obj10, resizeMode: "contain", style: tmp11.icon, accessible: false };
+      obj10 = { uri: tmp13Result };
+      tmp21Result = tmp21(tmp12(5837), obj9);
+      tmp23 = tmp21;
+    }
+    items3 = [tmp21Result, ];
+    const obj11 = { variant, color: str, lineClamp: 1, ellipsizeMode: str2, maxFontSizeMultiplier: prop, style: tmp11.name, children: gameName };
+    str2 = "tail";
+    const Text = tmp(5747).Text;
+    if (null != value) {
+      str2 = "clip";
+    }
+    items3[1] = tmp23(Text, obj11);
+    const tmp20Result = tmp20(Stack, obj7);
+    if (true === state.noStyleAndInteraction) {
+      const obj12 = { style: inlineRoot, children: tmp20Result };
+      tmp23Result = tmp23(closure_4, obj12);
+    } else {
+      const obj13 = {
+        style: inlineRoot,
+        accessibilityRole: "button",
+        accessibilityLabel: gameName,
+        onPress: function handlePress() {
+            const obj = GameProfileActionCreatorsDefault;
+            const obj2 = { gameId, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId }, source: GameProfileAnalyticUtils.GameProfileSources.GameMention, sourceUserId: state.authorId };
+            obj.openGameProfileModal(obj2);
+          },
+        children: tmp20Result
+      };
+      tmp23Result = tmp23(closure_3, obj13);
+    }
+    return tmp23Result;
   }
 }
 function FetchingGameMention(node) {
-  node = node.node;
-  const state = node.state;
   const obj = useGame;
-  const game = obj.useGame(node.gameId);
-  return React3(MarkupGameMention, { node, state });
+  const game = obj.useGame(node.node.gameId);
+  const obj2 = {};
+  const merged = Object.assign(node);
+  return metroRequire(MarkupGameMention, obj2);
 }
-({ jsxs: c3, jsx: closure_4 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { icon: size, chip: obj2, chipText: obj3 };
-size = { width: 16, height: 16, borderRadius: nativeDefault.radii.xs, marginRight: 2 };
-createStyles = createStyles.createStyles;
-obj2 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 2 };
-obj3 = { color: nativeDefault.colors.MENTION_FOREGROUND };
-const hasOwnProperty = createStyles(obj);
-size = size_mod;
-const result = size.fileFinishedImporting("modules/markup/native/MarkupReactGameMentionRule.tsx");
+({ Pressable: c3, View: closure_4 } = react_native);
+const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let closure_8 = nativeDefault.space.PX_4 / 2;
+let c9 = "text-sm/semibold";
+const authStore = createStyles.createStyles((width, arg1) => {
+  let num;
+  const obj = { inlineRoot: { flexDirection: "row" }, pill: { width: "auto", minWidth: 0, flexShrink: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, borderRadius: nativeDefault.radii.xs, paddingHorizontal: gap, gap }, name: { minWidth: 0, flexShrink: 1 }, icon: size };
+  ({ width: "auto", minWidth: 0, flexShrink: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, borderRadius: nativeDefault.radii.xs, paddingHorizontal: gap, gap });
+  size = { width, height: width, borderRadius: nativeDefault.radii.xs, opacity: num };
+  num = 1;
+  const tmp = arg1;
+  if (tmp) {
+    num = MUTED_OPACITY_CONTENT;
+  }
+  return obj;
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/markup/native/MarkupReactGameMentionRule.tsx");
 
 export default MarkupGameMention;
-export function createFetchingGameMentionRule() {
+export function createFetchingGameMentionRule(variant) {
+  let tmp = variant;
+  if (variant === undefined) {
+    tmp = c9;
+  }
+  const fallbackVariant = tmp;
   let obj = {
     gameMention: {
-      react(node, arg1, state) {
-        const obj = { node, state };
-        return closure_1_4(FetchingGameMention, obj, state.key);
+      react(gameId, arg1, insideSpoiler) {
+        let combined;
+        if (true === insideSpoiler.insideSpoiler) {
+          const _HermesInternal = HermesInternal;
+          combined = "<@$" + gameId.gameId + ">";
+        } else {
+          const obj = { node: gameId, state: insideSpoiler, fallbackVariant };
+          combined = metroRequire(FetchingGameMention, obj, insideSpoiler.key);
+        }
+        return combined;
       }
     }
   };

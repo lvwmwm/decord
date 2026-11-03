@@ -1,8 +1,8 @@
-// Module ID: 6353
-// Function ID: 6354
+// Module ID: 6473
+// Function ID: 6474
 // Dependencies: [2]
 
-// Module 6353
+// Module 6473
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/teddy_beanie.png.js");

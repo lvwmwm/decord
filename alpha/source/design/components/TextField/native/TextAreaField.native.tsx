@@ -1,21 +1,21 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7374
+// Function ID: 7375
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 5014, 575, 7097, 7090, 5187, 7255, 1113, 7100, 7103, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7223, 7216, 5310, 7375, 1113, 7226, 7229, 5747, 2]
 // Exports: TextAreaField
 
-// Module 7254 (TextAreaField)
+// Module 7374 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import native from "native" /* 5187 */;
-import useTextField from "useTextField" /* 7090 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7097 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 7103 */;
-import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7255 */;
+import native from "native" /* 5310 */;
+import useTextField from "useTextField" /* 7216 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7223 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 7229 */;
+import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7375 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -66,10 +66,10 @@ export function TextAreaField(ref) {
   intl = tmp2(1113).intl;
   const characterLimitAnnouncement = useCharacterLimitAnnouncement(obj5);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp2(7097).InputFieldContainer;
+  const InputFieldContainer = tmp2(7223).InputFieldContainer;
   const merged1 = Object.assign(merged);
   const obj7 = { ref: innerRef, style: items, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-  const NativeTextInput = tmp2(7100).NativeTextInput;
+  const NativeTextInput = tmp2(7226).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties.propsForNativeTextInput;
   _objectWithoutProperties;
   const tmp2Result6 = native;
@@ -84,7 +84,7 @@ export function TextAreaField(ref) {
     let str3 = "text-muted";
     let str = "text-muted";
     const obj8 = { style: tmp5.maxLengthIndicator, children: _false(Text, obj9) };
-    Text = tmp2(5624).Text;
+    Text = tmp2(5747).Text;
     const tmp19 = View;
     if (null != maxLength) {
       str = str3;

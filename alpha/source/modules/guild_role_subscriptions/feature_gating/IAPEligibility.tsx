@@ -1,21 +1,21 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 6954
+// Function ID: 6955
 // Name: IAPEligibility
-// Dependencies: [19, 4885, 1072, 1375, 6835, 563, 2]
+// Dependencies: [19, 5012, 1072, 1377, 6955, 563, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 6834 (IAPEligibility)
+// Module 6954 (IAPEligibility)
 import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const getSystemVersion = tmp(6835);
+const getSystemVersion = tmp(6955);
 let c4 = "13.2";
 let items = [Constants.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");

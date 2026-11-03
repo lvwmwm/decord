@@ -8,8 +8,9 @@ import _mod200 from "module_200" /* 200 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 
 class Blob {
-  constructor(items, arg1) {
-    if (items === undefined) {
+  constructor() {
+    let items = arg0;
+    if (arg0 === undefined) {
       items = [];
     }
     _classCallCheck(this, Blob);

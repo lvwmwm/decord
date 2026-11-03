@@ -1,16 +1,16 @@
-// Module ID: 10857
-// Function ID: 10858
+// Module ID: 10987
+// Function ID: 10988
 // Name: ConjureDebugStore
-// Dependencies: [504, 10858, 10859, 572, 2]
+// Dependencies: [504, 10988, 10989, 572, 2]
 
-// Module 10857 (ConjureDebugStore)
+// Module 10987 (ConjureDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjurePerfTraceBatches from "ConjurePerfTraceBatches" /* 10858 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10859 */;
+import ConjurePerfTraceBatches from "ConjurePerfTraceBatches" /* 10988 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10989 */;
 import size from "module_2" /* 2 */;
 
-let set, set2, set3, set4;
+let set, set2, set3;
 
 let closure_2 = { pending: false, info: null, error: null, observedAt: null };
 let closure_3 = { phase: "idle" };
@@ -219,7 +219,7 @@ let obj = {
         const self5 = this;
         const self6 = this;
         const obj4 = { phase: "failed", reason: "Connection lost before the worker answered", observedAt: date2.toISOString() };
-        set4 = tmp22.set;
+        const set4 = tmp22.set;
         date2 = new Date();
         set4(projectId, obj4);
       }

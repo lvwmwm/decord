@@ -1,23 +1,23 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18403
+// Function ID: 18404
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5014, 575, 11047, 2061, 1994, 5709, 6980, 5717, 18260, 5624, 1113, 1187, 2]
+// Dependencies: [5, 19, 1072, 21, 5141, 575, 11182, 2190, 2123, 5829, 7106, 5837, 18404, 5747, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18259 (GuildMFAWarning)
+// Module 18403 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import Pressables from "Pressables" /* 6980 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18260 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import Pressables from "Pressables" /* 7106 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[9]);
           obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

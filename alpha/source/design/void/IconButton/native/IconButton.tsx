@@ -1,14 +1,14 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15338
+// Function ID: 15339
 // Name: IconButton/IconButton
-// Dependencies: [19, 21, 5014, 575, 6778, 6980, 1187, 2]
+// Dependencies: [19, 21, 5141, 575, 6898, 7106, 1187, 2]
 
-// Module 15197 (IconButton/IconButton)
+// Module 15338 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -47,7 +47,7 @@ class SquareIconButton {
       }
     }, items);
     let tmp6;
-    const PressableOpacity = size(6980).PressableOpacity;
+    const PressableOpacity = size(7106).PressableOpacity;
     if (!accessibilityHidden) {
       tmp6 = accessibilityLabel;
     }

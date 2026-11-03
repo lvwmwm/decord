@@ -1,10 +1,10 @@
-// Module ID: 18452
-// Function ID: 18453
+// Module ID: 18606
+// Function ID: 18607
 // Name: FadeInOut
-// Dependencies: [19, 21, 5095, 5254, 2]
+// Dependencies: [19, 21, 1652, 5377, 1705, 2]
 // Exports: default
 
-// Module 18452 (FadeInOut)
+// Module 18606 (FadeInOut)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -13,8 +13,8 @@ let set;
 
 let react = react_mod;
 const jsx = Fragment.jsx;
-const __initData = { code: "function FadeInOutTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-let closure_6 = { code: "function FadeInOutTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
+let closure_5 = { code: "(function FadeInOutTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
+let closure_6 = { code: "(function FadeInOutTsx2(finished){let[scheduleOnRN,handleTransitionFinished]=this.__closure;if(finished){scheduleOnRN(handleTransitionFinished);}})" };
 let result = size.fileFinishedImporting("modules/multi_account/native/FadeInOut.tsx");
 
 export default function FadeInOut(duration) {
@@ -22,31 +22,39 @@ export default function FadeInOut(duration) {
   let closure_3;
   let ref;
   let style;
+  let tmp3;
+  let tmp4;
   duration = duration.duration;
   let ref1;
   react = undefined;
   ({ children, style, ref } = duration);
+  let tmp = ref1;
   let obj = duration(ref1[2]);
   const sharedValue = obj.useSharedValue(0);
   let obj2 = duration(ref1[2]);
-  let fn = function h() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 8749472415282;
-  fn.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
+  let items = [closure_5, sharedValue];
+  let c0;
+  [tmp3, tmp4] = items;
+  class FadeInOutTsx1 {
+    constructor() {
+      const obj = { opacity: _undefined.get() };
+      return obj;
+    }
+  }
+  let items1 = [tmp4];
+  FadeInOutTsx1.__closure = items1;
+  FadeInOutTsx1.__workletHash = 15661759270347;
+  FadeInOutTsx1.__initData = tmp3;
+  const animatedStyle = obj2.useAnimatedStyle(FadeInOutTsx1);
   ref1 = react.useRef(null);
-  const items = [ref1];
+  const items2 = [ref1];
   react = react.useCallback(() => {
     const current = ref1.current;
     if (current != null) {
       current();
     }
-  }, items);
+  }, items2);
   const imperativeHandle = react.useImperativeHandle(ref, () => {
-    let handleTransitionFinished;
     let obj = {
       componentDidAppear() {
         set = sharedValue.set;
@@ -61,26 +69,42 @@ export default function FadeInOut(duration) {
         const result = set(obj.withTiming(1, obj2));
       },
       componentWillLeave(current) {
+        let tmp3;
+        let tmp4;
+        let tmp5;
         closure_1_2.current = current;
+        let tmp = sharedValue;
         set = sharedValue.set;
-        let obj = duration(ref1[3]);
-        const fn = function t(arg0) {
-          const tmp = arg0;
-          if (tmp) {
-            const obj = duration(ref1[2]);
-            obj.runOnJS(handleTransitionFinished)();
+        const items = [, , ];
+        const obj = { duration };
+        items[0] = closure_2_6;
+        const withTiming = duration(ref1[3]).withTiming;
+        const tmp2 = duration(ref1[3]);
+        items[1] = duration(ref1[4]).scheduleOnRN;
+        items[2] = closure_1_3;
+        let c0;
+        let c1;
+        [tmp3, tmp4, tmp5] = items;
+        class FadeInOutTsx2 {
+          constructor(arg0) {
+            tmp = current;
+            if (tmp) {
+              tmp2 = closure_0;
+              tmp3 = closure_1;
+              tmp4 = closure_0(closure_1);
+            }
+            return;
           }
-        };
-        const obj2 = { duration };
-        fn.__closure = { runOnJS: duration(ref1[2]).runOnJS, handleTransitionFinished };
-        fn.__workletHash = 7644958904451;
-        fn.__initData = __initData;
-        ({ runOnJS: duration(ref1[2]).runOnJS, handleTransitionFinished });
-        const result = set(obj.withTiming(0, obj2, "respect-motion-settings", fn));
+        }
+        const items1 = [tmp4, tmp5];
+        FadeInOutTsx2.__closure = items1;
+        FadeInOutTsx2.__workletHash = 4334797531387;
+        FadeInOutTsx2.__initData = tmp3;
+        const result = set(withTiming(0, obj, "respect-motion-settings", FadeInOutTsx2));
       }
     };
     return obj;
   });
-  const items1 = [style, animatedStyle];
-  return jsx(sharedValue(ref1[2]).View, { style: items1, children });
+  const items3 = [style, animatedStyle];
+  return jsx(sharedValue(tmp[2]).View, { style: items3, children });
 };

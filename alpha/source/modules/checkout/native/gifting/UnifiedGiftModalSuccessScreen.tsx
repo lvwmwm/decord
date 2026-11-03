@@ -1,18 +1,18 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14566
+// Function ID: 14567
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 1072, 21, 5014, 575, 14436, 10610, 6744, 14447, 1994, 7563, 6030, 5717, 5624, 1113, 5635, 2]
+// Dependencies: [19, 1072, 21, 5141, 575, 14567, 10740, 6864, 14578, 2123, 7687, 6150, 5837, 5747, 1113, 5755, 2]
 // Exports: default
 
-// Module 14435 (UnifiedGiftModalSuccessScreen)
+// Module 14566 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import openUserSettings from "openUserSettings" /* 7687 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -50,7 +50,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(14447, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      obj.pushLazy(asyncRequire(14578, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];
@@ -65,7 +65,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   let obj2 = { source: tmp4, style: tmp.image };
   const tmp10 = onClose(enabled[12]);
   const items2 = [closure_5(tmp10, obj2), , , ];
-  const obj3 = { variant: "heading-lg/bold", style: tmp.title, children: intl.string(tmp2(enabled[14]).t.MqZXbv) };
+  const obj3 = { variant: "heading-lg/semibold", style: tmp.title, children: intl.string(tmp2(enabled[14]).t.MqZXbv) };
   const Text = tmp2(tmp3[13]).Text;
   intl = tmp2(tmp3[14]).intl;
   items2[1] = closure_5(Text, obj3);

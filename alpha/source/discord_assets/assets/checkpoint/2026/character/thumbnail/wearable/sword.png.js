@@ -1,8 +1,8 @@
-// Module ID: 6393
-// Function ID: 6394
+// Module ID: 6513
+// Function ID: 6514
 // Dependencies: [2]
 
-// Module 6393
+// Module 6513
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/sword.png.js");

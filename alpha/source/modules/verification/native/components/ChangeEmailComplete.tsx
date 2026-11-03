@@ -1,22 +1,22 @@
-// Module ID: 7168
-// Function ID: 7169
+// Module ID: 7289
+// Function ID: 7290
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 6997, 21, 5014, 575, 6995, 5717, 7078, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 7123, 21, 5141, 575, 7121, 5837, 7204, 5747, 1113, 5754, 2]
 // Exports: default
 
-// Module 7168 (ChangeEmailComplete)
+// Module 7289 (ChangeEmailComplete)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6995 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7078 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7121 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7123 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7204 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -56,7 +56,7 @@ export default function ChangeEmailComplete(email) {
   const tmp2 = FastImageDefault;
   items = [metroRequire(tmp2, obj2), , , ];
   const obj3 = { style: tmp.bodyInner, children: items1 };
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl5.t["8O+nF7"]) };
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t["8O+nF7"]) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items1 = [metroRequire(Text, obj4), ];

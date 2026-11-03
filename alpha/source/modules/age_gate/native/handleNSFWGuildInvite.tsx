@@ -1,24 +1,24 @@
-// Module ID: 10128
-// Function ID: 10129
+// Module ID: 10258
+// Function ID: 10259
 // Name: handleNSFWGuildInvite
-// Dependencies: [4881, 4885, 1072, 6737, 1375, 10129, 5693, 6738, 10130, 2]
+// Dependencies: [5008, 5012, 1072, 6857, 1377, 10259, 5813, 6858, 10260, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 10128 (handleNSFWGuildInvite)
+// Module 10258 (handleNSFWGuildInvite)
 import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6737 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6738 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10129 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10130 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import GuildRecord from "GuildRecord" /* 5008 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6857 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6858 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10259 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10260 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;
 const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
-let closure_5 = TinyBroncoConstants.TINY_BRONCO_NSFW_SERVER_LOCATION;
+let closure_5 = AgeNoticeConstants.TINY_BRONCO_NSFW_SERVER_LOCATION;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 const set = new Set(items);
@@ -83,7 +83,7 @@ export function handleNSFWGuildInvite(invite, arg1) {
     } else {
       const tmp6Result4 = RegionalFeatureConfigUtils;
       if (tmp6Result4.hasAgeGatedFeatures()) {
-        const tmp6Result5 = TinyBroncoExperiment;
+        const tmp6Result5 = AgeNoticeExperiment;
         if (tmp6Result5.isTinyBroncoEnabled(closure_5)) {
           c2 = false;
           const obj2 = {

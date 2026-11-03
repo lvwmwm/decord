@@ -1,17 +1,17 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 14543
+// Function ID: 14544
 // Name: useConjureChannelProject
-// Dependencies: [19, 4926, 4885, 4946, 6844, 1072, 7419, 504, 10875, 11, 6845, 2]
+// Dependencies: [19, 5053, 5012, 5073, 6964, 1072, 7543, 504, 11005, 11, 6965, 2]
 // Exports: default
 
-// Module 14412 (useConjureChannelProject)
+// Module 14543 (useConjureChannelProject)
 import Constants from "Constants" /* 1072 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6844 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6964 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;

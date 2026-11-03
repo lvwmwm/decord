@@ -1,13 +1,12 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10436
+// Function ID: 10437
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 1072, 21, 10307, 10519, 5095, 5254, 7294, 2]
+// Dependencies: [19, 1072, 21, 10437, 10649, 1652, 5377, 7414, 2]
 // Exports: default
 
-// Module 10306 (HorizontalAutocompleteWrapper)
+// Module 10436 (HorizontalAutocompleteWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import timing from "timing" /* 5254 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -33,22 +32,23 @@ function getItemKey(type) {
 }
 const AutoCompleteResultTypes = Constants.AutoCompleteResultTypes;
 const jsx = Fragment.jsx;
-const __initData = { code: "function HorizontalAutocompleteWrapperTsx1(){const{withTiming,toValue}=this.__closure;return{opacity:withTiming(toValue)};}" };
+let closure_7 = { code: "(function HorizontalAutocompleteWrapperTsx1(){let[withTiming,toValue]=this.__closure;return{opacity:withTiming(toValue)};})" };
 const result = size.fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/HorizontalAutocompleteWrapper.tsx");
 
 export default function HorizontalAutocompleteWrapper(channel) {
   let autocompleteSelectionStart;
-  let items3;
-  let obj5;
-  let results;
+  let items5;
+  let obj4;
   let selection;
   let style;
   let text;
+  let tmp11;
+  let tmp12;
+  let tmp13;
   channel = channel.channel;
   const onPressAutocompleteItem = channel.onPressAutocompleteItem;
   autocompleteSelectionStart = undefined;
   let callback;
-  let num;
   let tmp2 = autocompleteSelectionStart;
   ({ style, text, selection } = channel);
   let obj = channel(autocompleteSelectionStart[3]);
@@ -72,7 +72,7 @@ export default function HorizontalAutocompleteWrapper(channel) {
   const items1 = [onPressAutocompleteItem, autocompleteSelectionStart, query];
   callback = obj2.useCallback((stopPropagation, arg1) => {
     stopPropagation.stopPropagation();
-    num = autocompleteSelectionStart;
+    let num = autocompleteSelectionStart;
     const tmp2 = onPressAutocompleteItem;
     if (autocompleteSelectionStart == null) {
       num = 0;
@@ -84,7 +84,7 @@ export default function HorizontalAutocompleteWrapper(channel) {
     tmp2(arg1, num, str);
   }, items1);
   const items2 = [channel.guild_id, callback];
-  num = 0;
+  let num = 0;
   const callback1 = obj2.useCallback((item) => {
     item = item.item;
     const type = item.type;
@@ -133,33 +133,38 @@ export default function HorizontalAutocompleteWrapper(channel) {
   if (results.length > 0) {
     num = 1;
   }
-  const tmpResult = channel(tmp2[5]);
-  class I {
+  const items3 = [closure_7, , ];
+  const useAnimatedStyle = tmp(tmp2[5]).useAnimatedStyle;
+  channel(tmp2[5]);
+  items3[1] = channel(tmp2[6]).withTiming;
+  items3[2] = num;
+  let c0;
+  let c1;
+  [tmp11, tmp12, tmp13] = items3;
+  class HorizontalAutocompleteWrapperTsx1 {
     constructor() {
-      let obj2;
-      const obj = { opacity: obj2.withTiming(num) };
-      obj2 = timing;
+      const obj = { opacity: _undefined(c1) };
       return obj;
     }
   }
-  let obj3 = { withTiming: tmp(tmp2[6]).withTiming, toValue: num };
-  I.__closure = obj3;
-  I.__workletHash = 7895652904738;
-  I.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(I);
-  let obj4 = { style: items3, children: callback(tmp(tmp2[7]).FlashList, obj5) };
-  items3 = [style, animatedStyle];
+  const items4 = [tmp12, tmp13];
+  HorizontalAutocompleteWrapperTsx1.__closure = items4;
+  HorizontalAutocompleteWrapperTsx1.__workletHash = 15765485703035;
+  HorizontalAutocompleteWrapperTsx1.__initData = tmp11;
+  const animatedStyle = useAnimatedStyle(HorizontalAutocompleteWrapperTsx1);
+  let obj3 = { style: items5, children: callback(tmp(tmp2[7]).FlashList, obj4) };
+  items5 = [style, animatedStyle];
   const View = onPressAutocompleteItem(tmp2[5]).View;
-  obj5 = {
+  obj4 = {
     ref,
     keyboardShouldPersistTaps: "always",
     horizontal: true,
-    keyExtractor: num,
+    keyExtractor: getItemKey,
     getItemType(type) {
       return type.type;
     },
     data: results,
     renderItem: callback1
   };
-  return callback(View, obj4);
+  return callback(View, obj3);
 };

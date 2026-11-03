@@ -1,16 +1,16 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 17340
+// Function ID: 17341
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [4969, 17196, 504, 2]
+// Dependencies: [5096, 17339, 504, 2]
 // Exports: default, getUserRoleSubscriptionRelationship
 
-// Module 17197 (useUserRoleSubscriptionRelationship)
+// Module 17340 (useUserRoleSubscriptionRelationship)
 import get_initialized from "get initialized" /* 504 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4969 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5096 */;
 import size from "module_2" /* 2 */;
 
-const f111933 = (item) => {
+const f111730 = (item) => {
   if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
     c1 = true;
   }
@@ -28,7 +28,7 @@ export default function useUserRoleSubscriptionRelationship() {
     [obj] = items;
     const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
     let c1 = false;
-    const item = guildIdsWithPurchasableRoles.forEach(f111933);
+    const item = guildIdsWithPurchasableRoles.forEach(f111730);
     const tmp2 = c1;
     if (tmp2) {
       IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -51,7 +51,7 @@ export function getUserRoleSubscriptionRelationship() {
   [obj] = tmp;
   const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
   let c1 = false;
-  const item = guildIdsWithPurchasableRoles.forEach(f111933);
+  const item = guildIdsWithPurchasableRoles.forEach(f111730);
   const tmp4 = c1;
   if (tmp4) {
     IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;

@@ -1,53 +1,69 @@
-// Module ID: 14215
-// Function ID: 14216
+// Module ID: 14346
+// Function ID: 14347
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [5015, 1187, 504, 5095, 5254, 5257, 2]
+// Dependencies: [5142, 1187, 504, 1652, 5377, 5380, 2]
 // Exports: default
 
-// Module 14215 (useChatPlaceholderAnimatedStyles)
+// Module 14346 (useChatPlaceholderAnimatedStyles)
+import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import timingPresets from "timingPresets" /* 5380 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;
 
-let TIMING_CONFIG = { duration: 1300, easing: native.STANDARD_EASING };
-const __initData = { code: "function useChatPlaceholderAnimatedStylesTsx1(){const{visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG}=this.__closure;if(!visible){return{opacity:0};}else if(!animated||useReducedMotion){return{opacity:0.7};}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};}" };
+let obj = { duration: 1300, easing: native.STANDARD_EASING };
+let closure_4 = { code: "(function useChatPlaceholderAnimatedStylesTsx1(){let[visible,animated,useReducedMotion,withRepeat,withSequence,withTiming,timingNone,TIMING_CONFIG]=this.__closure;if(!visible){return{opacity:0};}else if(!animated||useReducedMotion){return{opacity:0.7};}return{opacity:withRepeat(withSequence(withTiming(0.3,timingNone),withTiming(0.7,TIMING_CONFIG),withTiming(0.3,TIMING_CONFIG)),-1)};})" };
 const result = size.fileFinishedImporting("modules/chat/native/placeholder/useChatPlaceholderAnimatedStyles.tsx");
 
-export default function useChatPlaceholderAnimatedStyles(visible) {
-  visible = visible.visible;
-  const animated = visible.animated;
-  let stateFromStores;
-  TIMING_CONFIG = visible(animated[2]);
-  const items = [stateFromStores];
-  stateFromStores = TIMING_CONFIG.useStateFromStores(items, () => stateFromStores.useReducedMotion);
-  let obj2 = visible(animated[3]);
-  const fn = function c() {
-    let obj;
-    let obj5;
-    let withRepeat;
-    let withSequence;
-    let withTimingResult;
-    let withTimingResult1;
-    const tmp = visible;
+export default function useChatPlaceholderAnimatedStyles(arg0) {
+  let animated;
+  let tmp10;
+  let tmp11;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let useReducedMotion;
+  let visible;
+  ({ visible, animated } = arg0);
+  obj = get_initialized;
+  const items = [AccessibilityStore];
+  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let tmp2 = _mod1652;
+  const items1 = [closure_4, visible, animated, stateFromStores, , , , , ];
+  const useAnimatedStyle = tmp2.useAnimatedStyle;
+  items1[4] = _mod1652.withRepeat;
+  items1[5] = _mod1652.withSequence;
+  items1[6] = timing_timing.withTiming;
+  items1[7] = timingPresets.timingNone;
+  items1[8] = obj;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  [tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11] = items1;
+  function useChatPlaceholderAnimatedStylesTsx1() {
+    let tmp10;
+    let tmp8;
+    const tmp = c0;
     if (tmp) {
-      const tmp2 = animated;
+      const tmp2 = c1;
       if (tmp2) {
         let obj2;
-        const tmp3 = stateFromStores;
+        const tmp3 = c2;
         if (!tmp3) {
-          obj2 = { opacity: withRepeat(withSequence(withTimingResult, withTimingResult1, obj5.withTiming(0.3, obj)), -1) };
-          withRepeat = ReanimatedRexport.withRepeat;
-          ReanimatedRexport;
-          withSequence = ReanimatedRexport.withSequence;
-          ReanimatedRexport;
-          const obj3 = timing;
-          withTimingResult = obj3.withTiming(0.3, timingPresets.timingNone);
-          const obj4 = timing;
-          withTimingResult1 = obj4.withTiming(0.7, obj);
-          obj5 = timing;
+          obj2 = { opacity: _undefined(_undefined2(tmp8, tmp10, _undefined3(0.3, c7)), -1) };
+          tmp8 = _undefined3(0.3, c6);
+          tmp10 = _undefined3(0.7, c7);
         }
         obj = obj2;
       }
@@ -56,10 +72,10 @@ export default function useChatPlaceholderAnimatedStyles(visible) {
       obj = { opacity: 0 };
     }
     return obj;
-  };
-  let obj3 = { visible, animated, useReducedMotion: stateFromStores, withRepeat: visible(animated[3]).withRepeat, withSequence: visible(animated[3]).withSequence, withTiming: visible(animated[4]).withTiming, timingNone: visible(animated[5]).timingNone, TIMING_CONFIG };
-  fn.__closure = obj3;
-  fn.__workletHash = 3375288363194;
-  fn.__initData = __initData;
-  return obj2.useAnimatedStyle(fn);
+  }
+  const items2 = [tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11];
+  useChatPlaceholderAnimatedStylesTsx1.__closure = items2;
+  useChatPlaceholderAnimatedStylesTsx1.__workletHash = 17414638142691;
+  useChatPlaceholderAnimatedStylesTsx1.__initData = tmp3;
+  return useAnimatedStyle(useChatPlaceholderAnimatedStylesTsx1);
 };

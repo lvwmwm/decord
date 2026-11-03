@@ -1,20 +1,13 @@
 // Module ID: 1908
 // Function ID: 1909
-// Dependencies: []
+// Dependencies: [1843]
+// Exports: useReducedMotion
 
 // Module 1908
-const obj = {
-  locale: "bg",
-  pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
+import mutablesNative from "module_1843" /* 1843 */;
+
+let closure_0 = mutablesNative.isReducedMotionEnabledInSystem();
+
+export function useReducedMotion() {
+  return closure_0;
+}

@@ -1,111 +1,121 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10826
+// Function ID: 10827
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 5095, 5014, 575, 1491, 5254, 1187, 10697, 10562, 2]
+// Dependencies: [32, 19, 17, 21, 1652, 5141, 575, 1493, 1187, 5377, 10827, 10692, 2]
 // Exports: default
 
-// Module 10696 (PremiumGiftBackgroundSelect)
+// Module 10826 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import timing from "timing" /* 5254 */;
-import NativeGiftContext from "NativeGiftContext" /* 10562 */;
+import native from "native" /* 1187 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import NativeGiftContext from "NativeGiftContext" /* 10692 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let importDefault;
+const module_1652 = _mod1652;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let tmp;
-const native = tmp(1187);
+let tmp2;
+const PremiumGiftBackgroundAnimationDefault = tmp2(10827);
 class GiftBackgroundSelect {
   constructor(withConsistentHeight) {
     let closure_1;
     let first;
-    let items2;
-    let items3;
+    let items4;
+    let items5;
+    let tmp10;
+    let tmp11;
+    let tmp12;
+    let tmp9;
     let flag = withConsistentHeight.withConsistentHeight;
     const giftStyle = withConsistentHeight.giftStyle;
     if (flag === undefined) {
       flag = true;
     }
     first = undefined;
-    importDefault = undefined;
-    let sharedValue;
+    closure_1 = undefined;
     let tmp = closure_9();
-    const width = require("useWindowDimensions")().width;
-    [first, importDefault] = react.useState();
-    let obj = first(sharedValue[4]);
-    sharedValue = obj.useSharedValue(false);
+    const width = useWindowDimensionsDefault().width;
+    [first, closure_1] = react.useState();
+    let obj = _mod1652;
+    const sharedValue = obj.useSharedValue(false);
     const items = [first, sharedValue];
     const effect = react.useEffect(() => {
       const result = sharedValue.set(null != first);
     }, items);
-    let obj2 = first(sharedValue[4]);
-    class N {
+    const items1 = [closure_10, , , ];
+    const useAnimatedStyle = _mod1652.useAnimatedStyle;
+    _mod1652;
+    items1[1] = native.STANDARD_EASING;
+    items1[2] = timing_timing.withTiming;
+    items1[3] = sharedValue;
+    let c0;
+    let c1;
+    let c2;
+    [tmp9, tmp10, tmp11, tmp12] = items1;
+    class PremiumGiftBackgroundSelectTsx1 {
       constructor() {
-        let obj2;
-        const withTiming = timing.withTiming;
         let num = 0;
-        timing;
-        if (sharedValue.get()) {
+        const tmp = c1;
+        if (_undefined.get()) {
           num = 1;
         }
-        const obj = { opacity: withTiming(num, obj2) };
-        obj2 = { easing: native.STANDARD_EASING, duration: 100 };
+        const obj = { opacity: tmp(num, obj2) };
         return obj;
       }
     }
-    N.__closure = { STANDARD_EASING: first(sharedValue[9]).STANDARD_EASING, withTiming: first(sharedValue[8]).withTiming, visibility: sharedValue };
-    N.__workletHash = 5743780040676;
-    N.__initData = __initData;
-    ({ STANDARD_EASING: first(sharedValue[9]).STANDARD_EASING, withTiming: first(sharedValue[8]).withTiming, visibility: sharedValue });
-    const animatedStyle = obj2.useAnimatedStyle(N);
-    const items1 = [closure_5(require("PremiumGiftBackgroundAnimation"), { giftStyle, withConsistentHeight: flag }), ];
-    const obj4 = {
+    const items2 = [tmp10, tmp11, tmp12];
+    PremiumGiftBackgroundSelectTsx1.__closure = items2;
+    PremiumGiftBackgroundSelectTsx1.__workletHash = 9299891037117;
+    PremiumGiftBackgroundSelectTsx1.__initData = tmp9;
+    const animatedStyle = useAnimatedStyle(PremiumGiftBackgroundSelectTsx1);
+    const items3 = [hasOwnProperty(PremiumGiftBackgroundAnimationDefault, { giftStyle, withConsistentHeight: flag }), ];
+    const obj2 = {
       onContentSizeChange(arg0) {
         if (null == first) {
           closure_1(arg0);
         }
       },
-      contentContainerStyle: items2,
-      style: items3,
+      contentContainerStyle: items4,
+      style: items5,
       horizontal: true,
       showsHorizontalScrollIndicator: false
     };
-    items2 = [tmp.contentContainer, ];
-    let obj5 = null != first;
-    const tmp10 = closure_8;
-    const tmp7 = closure_7;
-    const tmp8 = closure_6;
-    const tmp9 = closure_5;
-    if (obj5) {
-      obj5 = first < width;
+    items4 = [tmp.contentContainer, ];
+    let obj3 = null != first;
+    const tmp14 = metroImportDefault;
+    const tmp15 = metroRequire;
+    const tmp16 = hasOwnProperty;
+    const tmp17 = closure_8;
+    if (obj3) {
+      obj3 = first < width;
     }
-    if (obj5) {
-      obj5 = { flex: 1 };
+    if (obj3) {
+      obj3 = { flex: 1 };
     }
-    const obj6 = { children: items1 };
-    items2[1] = obj5;
-    items3 = [tmp.scrollView, animatedStyle];
-    items1[1] = tmp9(tmp10, obj4);
-    return tmp7(tmp8, obj6);
+    const obj4 = { children: items3 };
+    items4[1] = obj3;
+    items5 = [tmp.scrollView, animatedStyle];
+    items3[1] = tmp16(tmp17, obj2);
+    return tmp14(tmp15, obj4);
   }
 }
 const ScrollView = react_native.ScrollView;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = ReanimatedRexport.createAnimatedComponent(ScrollView);
+let closure_8 = module_1652.createAnimatedComponent(ScrollView);
 let obj = { scrollView: obj2, contentContainer: { justifyContent: "center" } };
 obj2 = { flex: 1, marginTop: nativeDefault.space.PX_24 };
 const React4 = createStyles.createStyles(obj);
-const authStore = { code: "function PremiumGiftBackgroundSelectTsx1(){const{STANDARD_EASING,withTiming,visibility}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:100};return{opacity:withTiming(visibility.get()?1:0,animationSettings)};}" };
+let closure_10 = { code: "(function PremiumGiftBackgroundSelectTsx1(){let[STANDARD_EASING,withTiming,visibility]=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:100};return{opacity:withTiming(visibility.get()?1:0,animationSettings)};})" };
 let result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelect.tsx");
 
 export default function PremiumGiftBackgroundSelect() {

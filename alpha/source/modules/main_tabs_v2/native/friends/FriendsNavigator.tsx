@@ -1,25 +1,25 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18986
+// Function ID: 18987
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 9856, 5014, 575, 9815, 9812, 14171, 1113, 7654, 7169, 18829, 18835, 18838, 18839, 18840, 18851, 18852, 18853, 18855, 18858, 18859, 5194, 1625, 7112, 4971, 5080, 2]
+// Dependencies: [19, 17, 21, 9987, 5141, 575, 9946, 9943, 14302, 1113, 7778, 7290, 18987, 18993, 18996, 18997, 18998, 19009, 19010, 19011, 19013, 19016, 19017, 5317, 1627, 7238, 5098, 5207, 2]
 // Exports: default
 
-// Module 18828 (FriendsNavigator)
+// Module 18986 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import DeviceUtils from "DeviceUtils" /* 4971 */;
-import native from "native" /* 5080 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7112 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9815 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14171 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import DeviceUtils from "DeviceUtils" /* 5098 */;
+import native from "native" /* 5207 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5317 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7238 */;
+import HeaderShared from "HeaderShared" /* 9943 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9946 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14302 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9856 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import NativeStackView from "NativeStackView" /* 9987 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

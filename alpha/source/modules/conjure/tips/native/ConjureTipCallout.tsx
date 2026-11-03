@@ -1,21 +1,21 @@
-// Module ID: 12631
-// Function ID: 12632
+// Module ID: 12767
+// Function ID: 12768
 // Name: ConjureTipCallout
-// Dependencies: [19, 17, 21, 575, 5014, 12624, 12136, 8028, 7054, 1113, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 12760, 12272, 8152, 7180, 1113, 5747, 2]
 // Exports: ConjureTipActions, ConjureTipBody, ConjureTipTitle, default
 
-// Module 12631 (ConjureTipCallout)
+// Module 12767 (ConjureTipCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12136 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12624 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import XSmallIcon from "XSmallIcon" /* 7180 */;
+import IconButton2 from "IconButton" /* 8152 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12272 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12760 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

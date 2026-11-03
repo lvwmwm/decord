@@ -1,20 +1,20 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 12872
+// Function ID: 12873
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2038, 4867, 1397, 1383, 6844, 1072, 504, 8752, 6063, 10319, 6070, 12737, 1113, 3868, 5068, 2]
+// Dependencies: [19, 2167, 4994, 1399, 1385, 6964, 1072, 504, 8876, 6183, 10449, 6190, 12873, 1113, 3995, 5195, 2]
 // Exports: useConjurePlanBotExchanges, useConjurePlanBotPreviewItems, useConjurePlanCommandExchanges
 
-// Module 12736 (useConjurePlanBotPreviewItems)
+// Module 12872 (useConjurePlanBotPreviewItems)
 import intl4 from "intl" /* 1113 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import UserActionCreators from "UserActionCreators" /* 8752 */;
-import conjurePlanBot from "conjurePlanBot" /* 12737 */;
+import _modDef3995 from "module_3995" /* 3995 */;
+import ChannelRecord from "ChannelRecord" /* 4994 */;
+import UserActionCreators from "UserActionCreators" /* 8876 */;
+import conjurePlanBot from "conjurePlanBot" /* 12873 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import UserStore from "UserStore" /* 1383 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ApplicationStore from "ApplicationStore" /* 2167 */;
+import UserRecord from "UserRecord" /* 1399 */;
+import UserStore from "UserStore" /* 1385 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export function useConjurePlanBotExchanges(proposal) {
       if (null == conjurePlanBotInteraction) {
         items = [];
       } else {
-        const obj = { message: intl.string(_modDef3868.J7qggf), reply: intl2.string(_modDef3868.nqYtiy), event: intl3.string(_modDef3868["05lU9W"]) };
+        const obj = { message: intl.string(_modDef3995.J7qggf), reply: intl2.string(_modDef3995.nqYtiy), event: intl3.string(_modDef3995["05lU9W"]) };
         const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
         conjurePlanBot;
         intl = intl4.intl;
@@ -122,7 +122,7 @@ export function useConjurePlanCommandExchanges(proposal) {
       const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
       conjurePlanBot;
       const merged = Object.assign(tmp);
-      const obj2 = { message: intl.string(_modDef3868.J7qggf), reply: intl2.string(_modDef3868.nqYtiy), event: intl3.string(_modDef3868["05lU9W"]) };
+      const obj2 = { message: intl.string(_modDef3995.J7qggf), reply: intl2.string(_modDef3995.nqYtiy), event: intl3.string(_modDef3995["05lU9W"]) };
       intl = tmp2(1113).intl;
       intl2 = tmp2(1113).intl;
       intl3 = tmp2(1113).intl;
@@ -174,7 +174,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
   if (name == null) {
     let intl = tmp(tmp2[13]).intl;
     let tmp9 = importDefault;
-    name = intl.string(require("module_3868").JEYq8M);
+    name = intl.string(require("module_3995").JEYq8M);
   }
   const items4 = [tmp3];
   const items5 = [application_id];
@@ -198,7 +198,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
     obj6 = stateFromStores3;
   }
   let intl2 = tmp(tmp2[13]).intl;
-  const tmp13Result = tmp13("31338", intl2.string(require("module_3868")["9iAOsw"]), { discriminator: "0003" });
+  const tmp13Result = tmp13("31338", intl2.string(require("module_3995")["9iAOsw"]), { discriminator: "0003" });
   let closure_5 = tmp13Result;
   const tmpResult4 = tmp(tmp2[15]);
   let str = tmpResult4.getName(stateFromStores);
@@ -324,7 +324,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
             if (null != closure_5) {
               let tmp6 = exchanges;
               let obj = { bot: tmp4, currentUser: tmp, viewer: tmp3, member: tmp5 };
-              let obj2 = { targetMessage: intl.string(_modDef3868["y+QYes"]), memberMessage: intl2.string(_modDef3868.BUTRDc) };
+              let obj2 = { targetMessage: intl.string(_modDef3995["y+QYes"]), memberMessage: intl2.string(_modDef3995.BUTRDc) };
               let tmp7 = require;
               let tmp8 = dependencyMap;
               intl = intl4.intl;

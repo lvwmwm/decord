@@ -1,26 +1,26 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15951
+// Function ID: 15952
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 6796, 1192, 1383, 1072, 21, 5014, 575, 504, 1491, 5596, 2047, 7326, 7351, 5258, 9785, 5021, 15809, 1113, 6980, 1187, 15810, 5260, 5261, 5711, 5717, 7301, 7302, 1409, 2]
+// Dependencies: [32, 19, 17, 6916, 1192, 1385, 1072, 21, 5141, 575, 504, 1493, 5719, 2176, 7446, 7471, 5381, 9917, 5148, 15952, 1113, 7106, 1187, 15953, 5383, 5384, 5831, 5837, 7421, 7422, 1411, 2]
 // Exports: default
 
-// Module 15808 (GuildActionSheetEmojiSection)
+// Module 15951 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9785 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import HapticUtils from "HapticUtils" /* 5383 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5384 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9917 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
+import EmojiStore from "EmojiStore" /* 6916 */;
 import ThemeStore_mod from "ThemeStore" /* 1192 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

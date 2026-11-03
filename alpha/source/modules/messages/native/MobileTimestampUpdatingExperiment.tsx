@@ -1,11 +1,11 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11708
+// Function ID: 11709
 // Name: MobileTimestampUpdatingExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: useIsMobileTimestampUpdatingEnabled
 
-// Module 11571 (MobileTimestampUpdatingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 11708 (MobileTimestampUpdatingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-mobile-timestamp-updating", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

@@ -1,13 +1,13 @@
-// Module ID: 20080
-// Function ID: 20081
+// Module ID: 20230
+// Function ID: 20231
 // Name: openSafetyFlow
-// Dependencies: [5, 4857, 1072, 20081, 6744, 20082, 20083, 8155, 20084, 8147, 8148, 20085, 1994, 2]
+// Dependencies: [5, 4984, 1072, 20231, 6864, 20232, 20233, 8279, 20234, 8271, 8272, 20235, 2123, 2]
 // Exports: openSafetyFlow
 
-// Module 20080 (openSafetyFlow)
+// Module 20230 (openSafetyFlow)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4984 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_2;
@@ -83,7 +83,7 @@ let obj = function _openSafetyFlow() {
           if (null == task) {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (task.task_type === closure_131_0(closure_131_2[3]).TaskType.APP_STORE_PARENTAL_REVOCATION) {
             c6 = 4;
             c7 = 1;
@@ -122,7 +122,7 @@ let obj = function _openSafetyFlow() {
           if (null == value) {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (task.task_type === closure_131_0(closure_131_2[3]).TaskType.APP_STORE_PARENTAL_REVOCATION) {
             const obj24 = closure_131_0(closure_131_2[8]);
             if (obj24.getIsAppStoreConsentReinstateEndpointEnabled("openSafetyFlow")) {
@@ -145,7 +145,7 @@ let obj = function _openSafetyFlow() {
                                     const obj3 = { value, done: true };
                                     return obj3;
                                   } else {
-                                    return { value: "HermesInternal", done: "HermesInternal" };
+                                    return { value: "HermesInternal", done: null };
                                   }
                                 } else {
                                   try {
@@ -171,7 +171,7 @@ let obj = function _openSafetyFlow() {
                                           return obj5;
                                         } else {
                                           c3 = 3;
-                                          return { value: "HermesInternal", done: "HermesInternal" };
+                                          return { value: "HermesInternal", done: null };
                                         }
                                       }
                                     } else {
@@ -253,7 +253,7 @@ let obj = function _openSafetyFlow() {
           if (null == closure_2) {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else {
             task = closure_2;
             c5 = 1;

@@ -1,11 +1,11 @@
-// Module ID: 5202
-// Function ID: 5203
+// Module ID: 5325
+// Function ID: 5326
 // Name: useWindowSizeClassifier
-// Dependencies: [5203, 2]
+// Dependencies: [5326, 2]
 // Exports: default, getWindowSizeClassifier
 
-// Module 5202 (useWindowSizeClassifier)
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5203 */;
+// Module 5325 (useWindowSizeClassifier)
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5326 */;
 import size from "module_2" /* 2 */;
 
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;

@@ -1,11 +1,11 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 10263
+// Function ID: 10264
 // Name: InviteAcceptAgeGroupErrorsExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: getIsInviteAcceptAgeGroupErrorsEnabled
 
-// Module 10133 (InviteAcceptAgeGroupErrorsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 10263 (InviteAcceptAgeGroupErrorsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-invite-accept-age-group-errors", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

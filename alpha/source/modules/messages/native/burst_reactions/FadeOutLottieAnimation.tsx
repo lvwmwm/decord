@@ -1,119 +1,134 @@
-// Module ID: 5617
-// Function ID: 5618
+// Module ID: 5740
+// Function ID: 5741
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 19, 5015, 21, 5014, 504, 5095, 5254, 5618, 2]
+// Dependencies: [32, 19, 5142, 21, 5141, 504, 1652, 5377, 1705, 5741, 2]
 // Exports: default
 
-// Module 5617 (FadeOutLottieAnimation)
+// Module 5740 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5741 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import createStyles from "createStyles" /* 5014 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, fn, num2, obj1, obj5, obj6, str, tmp4, tmp6, tmp7, tmp8, tmp9;
+let flag, importDefault;
 
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ content: { width: "100%" } });
-const __initData = { code: "function FadeOutLottieAnimationTsx1(){const{isAnimationComplete,isFadeOut,withTiming,runOnJS,setIsFadeOut}=this.__closure;if(!isAnimationComplete){return{opacity:1};}if(isFadeOut){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(setIsFadeOut)(false);})};}return{opacity:0};}" };
-const __initData2 = { code: "function FadeOutLottieAnimationTsx2(finished){const{runOnJS,setIsFadeOut}=this.__closure;if(finished)runOnJS(setIsFadeOut)(false);}" };
+let closure_8 = { code: "(function FadeOutLottieAnimationTsx1(finished){let[scheduleOnRN,setIsFadeOut]=this.__closure;if(finished)scheduleOnRN(setIsFadeOut,false);})" };
+let closure_9 = { code: "(function FadeOutLottieAnimationTsx2(){let[isAnimationComplete,isFadeOut,withTiming,_worklet_16247045492721_init_data,scheduleOnRN,setIsFadeOut]=this.__closure;if(!isAnimationComplete){return{opacity:1};}if(isFadeOut){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function FadeOutLottieAnimationTsx1Factory([_worklet_16247045492721_init_data,scheduleOnRN,setIsFadeOut]){const FadeOutLottieAnimationTsx1=function(finished){if(finished)scheduleOnRN(setIsFadeOut,false);};FadeOutLottieAnimationTsx1.__closure=[scheduleOnRN,setIsFadeOut];FadeOutLottieAnimationTsx1.__workletHash=16247045492721;FadeOutLottieAnimationTsx1.__initData=_worklet_16247045492721_init_data;return FadeOutLottieAnimationTsx1;}([_worklet_16247045492721_init_data,scheduleOnRN,setIsFadeOut]))};}return{opacity:0};})" };
 const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/FadeOutLottieAnimation.tsx");
 
 export default function FadeOutLottieAnimation(onComplete) {
-  let closure_2;
+  let _undefined;
+  let c1;
+  let first;
   let num;
-  let tmp14Result;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp21Result;
+  let tmp4;
+  let tmp7;
   let useReducedMotion;
   onComplete = onComplete.onComplete;
   const merged = Object.assign(onComplete, Object.assign({ onComplete: 0 }));
-  let first1;
-  setIsFadeOut = undefined;
   let tmp2 = closure_7();
-  const tmp3 = first1(setIsFadeOut.useState(false), 2);
-  const isAnimationComplete = tmp3[0];
-  dependencyMap = tmp3[1];
-  let tmp5 = first1(setIsFadeOut.useState(true), 2);
-  first1 = tmp5[0];
-  setIsFadeOut = tmp7;
+  const tmp3 = _slicedToArray(react.useState(false), 2);
+  [tmp4, c1] = tmp3;
+  [first, tmp7] = react.useState(true);
+  const tmp8 = dependencyMap;
   let obj = onComplete(504);
-  const items = [AccessibilityStore];
+  let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const effect = setIsFadeOut.useEffect(() => {
-    closure_2(false);
+  const effect = react.useEffect(() => {
+    _undefined(false);
   }, []);
-  onComplete(5095);
-  class T {
+  onComplete(1652);
+  let items1 = [closure_9, tmp4, first, onComplete(5377).withTiming, closure_8, onComplete(1705).scheduleOnRN, tmp7];
+  let c0;
+  importDefault = undefined;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18] = items1;
+  class FadeOutLottieAnimationTsx2 {
     constructor() {
-      tmp = closure_1;
+      let obj;
+      let tmp7;
+      let tmp8;
+      let tmp9;
+      let tmp = c0;
       if (tmp) {
-        tmp2 = closure_3;
+        let obj3;
+        const tmp2 = c1;
         if (tmp2) {
-          obj1 = { opacity: null };
-          tmp3 = closure_0;
-          tmp4 = closure_2;
-          tmp5 = closure_0(closure_2[7]);
-          fn = function t(arg0) {
-            const tmp = arg0;
-            if (tmp) {
-              const obj = onComplete(closure_2[6]);
-              obj.runOnJS(setIsFadeOut)(false);
+          const items = [c3, , ];
+          items[1] = c4;
+          items[2] = c5;
+          [tmp7, tmp8, tmp9] = items;
+          const obj2 = { opacity: _undefined2(0, { duration: 300 }, "respect-motion-settings", FadeOutLottieAnimationTsx1) };
+          class FadeOutLottieAnimationTsx1 {
+            constructor(arg0) {
+              tmp = arg0;
+              if (tmp) {
+                tmp2 = closure_0;
+                tmp3 = closure_1;
+                flag = false;
+                tmp4 = closure_0(closure_1, false);
+              }
+              return;
             }
-          };
-          obj5 = { runOnJS: null, setIsFadeOut: null };
-          withTiming = tmp5.withTiming;
-          obj5.runOnJS = closure_0(closure_2[6]).runOnJS;
-          tmp6 = closure_4;
-          obj5.setIsFadeOut = closure_4;
-          fn.__closure = obj5;
-          num = 14133863353798;
-          fn.__workletHash = 14133863353798;
-          tmp7 = closure_9;
-          fn.__initData = closure_9;
-          str = "respect-motion-settings";
-          num2 = 0;
-          tmp8 = tmp5;
-          tmp9 = fn;
-          obj1.opacity = withTiming(0, { duration: 300 }, "respect-motion-settings", fn);
-          obj6 = obj1;
+          }
+          const items1 = [tmp8, tmp9];
+          FadeOutLottieAnimationTsx1.__closure = items1;
+          FadeOutLottieAnimationTsx1.__workletHash = 16247045492721;
+          FadeOutLottieAnimationTsx1.__initData = tmp7;
+          obj3 = obj2;
         } else {
-          obj6 = { opacity: 0 };
+          obj3 = { opacity: 0 };
         }
-        obj = obj6;
+        obj = obj3;
       } else {
         obj = { opacity: 1 };
       }
       return obj;
     }
   }
-  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(5254).withTiming, runOnJS: onComplete(5095).runOnJS, setIsFadeOut: tmp7 };
-  T.__closure = obj2;
-  T.__workletHash = 1137618554665;
-  T.__initData = __initData;
-  if (!isAnimationComplete) {
-    let obj3 = { style: tmp12, children: null };
-    const View = isAnimationComplete(5095).View;
-    let obj4 = {
+  const items2 = [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18];
+  FadeOutLottieAnimationTsx2.__closure = items2;
+  FadeOutLottieAnimationTsx2.__workletHash = 15919475449507;
+  FadeOutLottieAnimationTsx2.__initData = tmp12;
+  if (!tmp4) {
+    let obj2 = { style: tmp19, children: null };
+    const View = _modDef1652.View;
+    let obj3 = {
       style: tmp2.content,
       speed: num,
       onAnimationFinish(isCancelled) {
           if (onComplete != null) {
             tmp(isCancelled);
           }
-          closure_2(true);
+          _undefined(true);
         }
     };
     num = 1;
-    isAnimationComplete(5618);
+    LottieAnimationViewDefault;
     if (stateFromStores) {
       num = 0.5;
     }
     const merged1 = Object.assign(merged);
-    tmp14Result = tmp14(View, obj3);
+    tmp21Result = tmp21(View, obj2);
   } else {
-    tmp14Result = null;
+    tmp21Result = null;
   }
-  return tmp14Result;
+  return tmp21Result;
 };

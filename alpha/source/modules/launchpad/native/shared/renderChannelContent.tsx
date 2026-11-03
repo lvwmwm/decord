@@ -1,22 +1,22 @@
-// Module ID: 18730
-// Function ID: 18731
+// Module ID: 18888
+// Function ID: 18889
 // Name: renderChannelContent
-// Dependencies: [19, 17, 11046, 6776, 21, 5014, 1375, 18727, 7275, 18731, 5624, 8667, 8026, 18176, 2]
+// Dependencies: [19, 17, 11186, 6896, 21, 5141, 1377, 18885, 7395, 18889, 5747, 8791, 8150, 18320, 2]
 // Exports: default
 
-// Module 18730 (renderChannelContent)
+// Module 18888 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
-import WarningIcon from "WarningIcon" /* 8026 */;
-import LockIcon from "LockIcon" /* 8667 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18727 */;
-import ChannelTitleDefault from "ChannelTitle" /* 18731 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ReadStateConstants from "ReadStateConstants" /* 6896 */;
+import WarningIcon from "WarningIcon" /* 8150 */;
+import LockIcon from "LockIcon" /* 8791 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18885 */;
+import ChannelTitleDefault from "ChannelTitle" /* 18889 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -53,7 +53,7 @@ function ChannelContent(arg0) {
   const tmp4 = getLayoutStylesDefault();
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(7275)(channel);
+      locked = tmp2(7395)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -86,7 +86,7 @@ function ChannelContent(arg0) {
   items1 = [metroImportDefault(tmp2Result, obj6), , ];
   let tmp9Result = null;
   if (null != channelCategoryName) {
-    const obj7 = { variant: "text-xs/bold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
+    const obj7 = { variant: "text-xs/semibold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
     tmp9Result = tmp9(Text_Text.Text, obj7);
   }
   items1[1] = tmp9Result;
@@ -115,7 +115,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(18176), obj12);
+      isSubscriptionGated = tmp9(tmp2(18320), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

@@ -1,15 +1,15 @@
-// Module ID: 14453
-// Function ID: 14454
+// Module ID: 14584
+// Function ID: 14585
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 7724, 14454, 21, 504, 9463, 9466, 9467, 2]
+// Dependencies: [19, 7848, 14585, 21, 504, 9591, 9594, 9595, 2]
 // Exports: default
 
-// Module 14453 (CollectiblesWishlistItemCard)
+// Module 14584 (CollectiblesWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7724 */;
-import SKUPreview from "SKUPreview" /* 9466 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7848 */;
+import SKUPreview from "SKUPreview" /* 9594 */;
 import react from "react" /* 19 */;
-import SentGiftsStore from "SentGiftsStore" /* 14454 */;
+import SentGiftsStore from "SentGiftsStore" /* 14585 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4 = CollectiblesItemRecord.transformSKUToCollectiblesItem;

@@ -1,8 +1,8 @@
-// Module ID: 6308
-// Function ID: 6309
+// Module ID: 6428
+// Function ID: 6429
 // Dependencies: [2]
 
-// Module 6308
+// Module 6428
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/magical_sapphire.png.js");

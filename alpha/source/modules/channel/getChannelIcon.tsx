@@ -1,15 +1,15 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 15017
+// Function ID: 15018
 // Name: getChannelIcon
-// Dependencies: [32, 1383, 1072, 1379, 1409, 2]
+// Dependencies: [32, 1385, 1072, 1380, 1411, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 14886 (getChannelIcon)
+// Module 15017 (getChannelIcon)
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

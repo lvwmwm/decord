@@ -1,28 +1,25 @@
-// Module ID: 18689
-// Function ID: 18690
+// Module ID: 18847
+// Function ID: 18848
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 19, 17, 9826, 21, 5014, 575, 18690, 6975, 5624, 5095, 5637, 5638, 5080, 18684, 18693, 13886, 2]
+// Dependencies: [32, 19, 17, 9957, 21, 5141, 575, 18848, 7101, 5747, 1652, 5757, 5758, 5207, 1705, 18842, 18851, 14017, 2]
 
-// Module 18689 (SearchFilterSuggestions)
+// Module 18847 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5080 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import TrackingConstants from "TrackingConstants" /* 9826 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 18690 */;
+import native from "native" /* 5207 */;
+import TrackingConstants from "TrackingConstants" /* 9957 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 18848 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, token;
 
 let obj2;
-const f115383 = (text) => text.text;
+const f115089 = (text) => text.text;
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const require = text;
@@ -53,54 +50,100 @@ function SearchFilterPrefixRow(text) {
   return <TableRow icon={memo} onPress={callback} label={null} subLabel={memo1} />;
 }
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f115383);
+  const mapped = arr.map(f115089);
   return mapped.join(" ");
 }
 function AnimatedEnterExitContainer(state) {
+  let children;
+  let cleanUp;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   state = state.state;
-  const cleanUp = state.cleanUp;
-  let sharedValue;
-  const children = state.children;
-  let obj = state(sharedValue[10]);
-  sharedValue = obj.useSharedValue(0);
-  let obj2 = state(sharedValue[10]);
-  let fn = function c() {
-    let fn;
-    let items;
-    let springStandard;
-    let value;
-    let withSpring;
-    let obj = { opacity: withSpring(value, springStandard, "respect-motion-settings", fn), transform: items };
-    let tmp = require;
-    withSpring = spring.withSpring;
-    value = sharedValue.get();
-    fn = function t(arg0) {
-      const tmp = arg0 && closure_1_0 === state(sharedValue[13]).TransitionStates.YEETED;
-      if (tmp) {
-        const obj = state(sharedValue[10]);
-        obj.runOnJS(cleanUp)();
+  ({ children, cleanUp } = state);
+  let tmp = dependencyMap;
+  let obj = state(1652);
+  const sharedValue = obj.useSharedValue(0);
+  const tmp3 = state(1652);
+  let items = [closure_12, , , , , , , , ];
+  const useAnimatedStyle = tmp3.useAnimatedStyle;
+  items[1] = state(5757).withSpring;
+  items[2] = sharedValue;
+  items[3] = state(5758).springStandard;
+  items[4] = closure_11;
+  items[5] = state;
+  items[6] = state(5207).TransitionStates;
+  items[7] = state(1705).scheduleOnRN;
+  items[8] = cleanUp;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  [tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12] = items;
+  class SearchFilterSuggestionsTsx2 {
+    constructor() {
+      let _undefined;
+      let items2;
+      let tmp4;
+      let tmp5;
+      let tmp6;
+      let tmp7;
+      let tmp8;
+      let tmp = c0;
+      const value = _undefined.get();
+      const items = [c3, c4, c5, c6, c7];
+      c0 = undefined;
+      const obj = _undefined;
+      _undefined = undefined;
+      let c2;
+      c3 = undefined;
+      [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+      const obj2 = { opacity: tmp(value, c2, "respect-motion-settings", SearchFilterSuggestionsTsx1), transform: items2 };
+      class SearchFilterSuggestionsTsx1 {
+        constructor(arg0) {
+          tmp = arg0;
+          if (tmp) {
+            tmp2 = closure_0;
+            tmp3 = closure_1;
+            tmp = closure_0 === closure_1.YEETED;
+          }
+          if (tmp) {
+            tmp4 = closure_2;
+            tmp5 = closure_3;
+            tmp6 = closure_2(closure_3);
+          }
+          return;
+        }
       }
-    };
-    const obj2 = { state, TransitionStates: native.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanUp };
-    springStandard = springPresets.springStandard;
-    fn.__closure = obj2;
-    fn.__workletHash = 10696166249954;
-    fn.__initData = __initData;
-    const withSpring2 = spring.withSpring;
-    let num = -15;
-    if (1 === sharedValue.get()) {
-      num = 0;
+      const items1 = [tmp5, tmp6, tmp7, tmp8];
+      SearchFilterSuggestionsTsx1.__closure = items1;
+      SearchFilterSuggestionsTsx1.__workletHash = 9856383139449;
+      SearchFilterSuggestionsTsx1.__initData = tmp4;
+      let num = -15;
+      if (1 === obj.get()) {
+        num = 0;
+      }
+      items2 = [{ translateY: tmp(num, tmp3) }];
+      ({ translateY: tmp(num, c2) });
+      return obj2;
     }
-    items = [{ translateY: withSpring2(num, springPresets.springStandard) }];
-    ({ translateY: withSpring2(num, springPresets.springStandard) });
-    return obj;
-  };
-  const obj3 = { withSpring: state(sharedValue[11]).withSpring, opacity: sharedValue, springStandard: state(sharedValue[12]).springStandard, state, TransitionStates: state(sharedValue[13]).TransitionStates, runOnJS: state(sharedValue[10]).runOnJS, cleanUp };
-  fn.__closure = obj3;
-  fn.__workletHash = 334512108462;
-  fn.__initData = __initData;
-  let items = [sharedValue, state];
-  const style = obj2.useAnimatedStyle(fn);
+  }
+  let items1 = [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12];
+  SearchFilterSuggestionsTsx2.__closure = items1;
+  SearchFilterSuggestionsTsx2.__workletHash = 16725655687152;
+  SearchFilterSuggestionsTsx2.__initData = tmp4;
+  let items2 = [sharedValue, state];
+  const style = useAnimatedStyle(SearchFilterSuggestionsTsx2);
   const effect = react.useEffect(() => {
     let num = 1;
     set = sharedValue.set;
@@ -108,42 +151,49 @@ function AnimatedEnterExitContainer(state) {
       num = 0;
     }
     const result = set(num);
-  }, items);
-  return jsx(cleanUp(sharedValue[10]).View, { style, children });
+  }, items2);
+  return jsx(sharedValue(1652).View, { style, children });
 }
 const View = react_native.View;
 const SearchFilterAddLocations = TrackingConstants.SearchFilterAddLocations;
-const jsx = Fragment.jsx;
+let jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { card: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: nativeDefault.radii.lg, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1 };
 createStyles = createStyles.createStyles;
 let merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_8 = createStyles(obj);
-const __initData = { code: "function SearchFilterSuggestionsTsx1(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateY:withSpring(opacity.get()===1?0:-15,springStandard)}]};}" };
-let closure_12 = { code: "function SearchFilterSuggestionsTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
-const EMPTY_SEARCH_FILTER_ROWS = [];
-const __initData2 = { code: "function SearchFilterSuggestionsTsx3(){const{dismissed}=this.__closure;return dismissed.get();}" };
-const __initData3 = { code: "function SearchFilterSuggestionsTsx4(isDismissed){const{runOnJS,setSuggestions,EMPTY_SEARCH_FILTER_ROWS}=this.__closure;if(isDismissed){runOnJS(setSuggestions)(EMPTY_SEARCH_FILTER_ROWS);}}" };
+let closure_11 = { code: "(function SearchFilterSuggestionsTsx1(finished){let[state,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&state===TransitionStates.YEETED){scheduleOnRN(cleanUp);}})" };
+let closure_12 = { code: "(function SearchFilterSuggestionsTsx2(){let[withSpring,opacity,springStandard,_worklet_9856383139449_init_data,state,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function SearchFilterSuggestionsTsx1Factory([_worklet_9856383139449_init_data,state,TransitionStates,scheduleOnRN,cleanUp]){const SearchFilterSuggestionsTsx1=function(finished){if(finished&&state===TransitionStates.YEETED){scheduleOnRN(cleanUp);}};SearchFilterSuggestionsTsx1.__closure=[state,TransitionStates,scheduleOnRN,cleanUp];SearchFilterSuggestionsTsx1.__workletHash=9856383139449;SearchFilterSuggestionsTsx1.__initData=_worklet_9856383139449_init_data;return SearchFilterSuggestionsTsx1;}([_worklet_9856383139449_init_data,state,TransitionStates,scheduleOnRN,cleanUp])),transform:[{translateY:withSpring(opacity.get()===1?0:-15,springStandard)}]};})" };
+let closure_14 = [];
+let closure_15 = { code: "(function SearchFilterSuggestionsTsx3(){let[dismissed]=this.__closure;return dismissed.get();})" };
+let closure_16 = { code: "(function SearchFilterSuggestionsTsx4(isDismissed){let[scheduleOnRN,setSuggestions,EMPTY_SEARCH_FILTER_ROWS]=this.__closure;if(isDismissed){scheduleOnRN(setSuggestions,EMPTY_SEARCH_FILTER_ROWS);}})" };
 const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   let card;
+  let closure_7;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
   searchContext = searchContext.searchContext;
   const containerStyle = searchContext.containerStyle;
-  closure_8 = undefined;
   let memo;
-  let tmp = closure_8();
+  let tmp = memo();
   dependencyMap = tmp;
-  let obj = searchContext(18684);
+  let tmp2 = searchContext;
+  let obj = searchContext(18842);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(18693);
+  let obj2 = searchContext(18851);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
-  const tmp4 = suggestionsRef(suggestionsMounted.useState([]), 2);
-  const first = tmp4[0];
-  closure_8 = tmp6;
-  let items = [validFilterTokens, searchContext, tmp6];
+  const tmp6 = suggestionsRef(suggestionsMounted.useState([]), 2);
+  const first = tmp6[0];
+  jsx = tmp8;
+  let items = [validFilterTokens, searchContext, tmp8];
   const effect = suggestionsMounted.useEffect(() => {
     let obj = SearchPlatformUtilsDefault;
     return obj.subscribeSearchQueryState(searchContext, (getTextInputValue) => {
@@ -166,62 +216,76 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
               const text = token.text;
               if (set.has(token)) {
                 const push = closure_1.push;
-                const obj = { text, searchTokenType: token, start: 0 === index, end: index === searchFilterSuggestions.length - 1, onPress: obj2.getSearchTokenPressHandler(closure_2_0, token, validFilterTokens.SEARCH_INPUT_DROPDOWN) };
+                const obj = { text, searchTokenType: token, start: 0 === index, end: index === searchFilterSuggestions.length - 1, onPress: obj2.getSearchTokenPressHandler(closure_2_0, token, first.SEARCH_INPUT_DROPDOWN) };
                 obj2 = searchContext(card[7]);
                 push(obj);
               }
             });
-            closure_8((arr) => {
-              const mapped = arr.map(f115383);
+            closure_7((arr) => {
+              const mapped = arr.map(f115089);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f115383);
+              const mapped1 = closure_1.map(f115089);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }
               return tmp2;
             });
           } else {
-            closure_8(closure_1_14);
+            closure_7(closure_1_14);
           }
         }
       }
-      closure_8(closure_1_14);
+      closure_7(closure_1_14);
     });
   }, items);
-  const fn = function f() {
-    return dismissed.get();
-  };
-  fn.__closure = { dismissed };
-  fn.__workletHash = 17191989548971;
-  fn.__initData = __initData2;
-  const obj3 = searchContext(5095);
-  class T {
+  let items1 = [closure_15, dismissed];
+  let c0;
+  [tmp11, tmp12] = items1;
+  const tmp10 = searchContext(1652);
+  class SearchFilterSuggestionsTsx3 {
+    constructor() {
+      return _undefined.get();
+    }
+  }
+  const items2 = [tmp12];
+  SearchFilterSuggestionsTsx3.__closure = items2;
+  SearchFilterSuggestionsTsx3.__workletHash = 6265244900562;
+  SearchFilterSuggestionsTsx3.__initData = tmp11;
+  const items3 = [closure_16, , , ];
+  const useAnimatedReaction = tmp10.useAnimatedReaction;
+  items3[1] = tmp2(1705).scheduleOnRN;
+  items3[2] = tmp6[1];
+  items3[3] = closure_14;
+  c0 = undefined;
+  let c1;
+  let c2;
+  [tmp13, tmp14, tmp15, tmp16] = items3;
+  class SearchFilterSuggestionsTsx4 {
     constructor(arg0) {
       const tmp = arg0;
       if (tmp) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(closure_8)(EMPTY_SEARCH_FILTER_ROWS);
+        _undefined(c1, c2);
       }
     }
   }
-  T.__closure = { runOnJS: searchContext(5095).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS };
-  T.__workletHash = 8991360021943;
-  T.__initData = __initData3;
-  ({ runOnJS: searchContext(5095).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS });
-  const animatedReaction = obj3.useAnimatedReaction(fn, T);
-  let items1 = [first, suggestionsMounted];
-  const effect1 = suggestionsMounted.useEffect(() => {
+  const items4 = [tmp14, tmp15, tmp16];
+  SearchFilterSuggestionsTsx4.__closure = items4;
+  SearchFilterSuggestionsTsx4.__workletHash = 4953846866307;
+  SearchFilterSuggestionsTsx4.__initData = tmp13;
+  const animatedReaction = useAnimatedReaction(SearchFilterSuggestionsTsx3, SearchFilterSuggestionsTsx4);
+  const items5 = [first, suggestionsMounted];
+  const effect1 = obj3.useEffect(() => {
     const result = suggestionsMounted.set(first.length > 0);
-  }, items1);
-  const items2 = [containerStyle, tmp.card];
-  memo = suggestionsMounted.useMemo(() => {
+  }, items5);
+  const items6 = [containerStyle, tmp.card];
+  memo = obj3.useMemo(() => {
     const items = [card.card, containerStyle];
     return items;
-  }, items2);
-  const items3 = [first];
-  const items4 = [memo, suggestionsRef];
-  const memo1 = suggestionsMounted.useMemo(() => {
+  }, items6);
+  const items7 = [first];
+  const items8 = [memo, suggestionsRef];
+  const memo1 = obj3.useMemo(() => {
     let items1;
     if (first.length > 0) {
       const items = [tmp];
@@ -230,8 +294,8 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
       items1 = [];
     }
     return items1;
-  }, items3);
-  const callback = suggestionsMounted.useCallback((arg0, arr, state, cleanUp) => {
+  }, items7);
+  const callback = obj3.useCallback((arg0, arr, state, cleanUp) => {
     ({
       ref: suggestionsRef,
       style: memo,
@@ -239,13 +303,12 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
       children: arr.map((text) => {
         const obj = {};
         const merged = Object.assign(text);
-        return first(memo, obj, text.text);
+        return closure_1_7(closure_1_9, obj, text.text);
       })
     });
     return <AnimatedEnterExitContainer key={arg0} state={arg2} cleanUp={arg3}>{null}</AnimatedEnterExitContainer>;
-  }, items4);
-  const obj5 = { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey };
-  return first(searchContext(5080).TransitionGroup, obj5);
+  }, items8);
+  return jsx(tmp2(5207).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
 });
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterSuggestions.tsx");
 

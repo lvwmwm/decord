@@ -1,18 +1,18 @@
-// Module ID: 14123
-// Function ID: 14124
+// Module ID: 14254
+// Function ID: 14255
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 4885, 504, 8736, 1113, 2570, 14124, 14125, 1379, 2]
+// Dependencies: [19, 5012, 504, 8860, 1113, 2699, 14255, 14256, 1380, 2]
 // Exports: default
 
-// Module 14123 (usePowerupGroupConfig)
+// Module 14254 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import _modDef2570 from "module_2570" /* 2570 */;
-import GuildTagUtils from "GuildTagUtils" /* 8736 */;
-import _modDef14124 from "module_14124" /* 14124 */;
-import _modDef14125 from "module_14125" /* 14125 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import _modDef2699 from "module_2699" /* 2699 */;
+import GuildTagUtils from "GuildTagUtils" /* 8860 */;
+import _modDef14255 from "module_14255" /* 14255 */;
+import _modDef14256 from "module_14256" /* 14256 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,15 +43,15 @@ export default function usePowerupGroupConfig(arg0, arg1) {
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2570.KC9HRW), description: intl2.string(_modDef2570.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "no-hide-descendants" };
+      const obj2 = { title: intl.string(_modDef2699.KC9HRW), description: intl2.string(_modDef2699.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef14124, animatedUrl: _modDef14125 };
+      obj3 = { staticUrl: _modDef14255, animatedUrl: _modDef14256 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;
-        stringResult = intl3.string(tmp7(2570).lvk1Gc);
+        stringResult = intl3.string(tmp7(2699).lvk1Gc);
       }
       return obj2;
     } else {

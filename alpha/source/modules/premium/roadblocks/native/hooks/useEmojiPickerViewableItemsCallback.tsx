@@ -1,12 +1,12 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 10174
+// Function ID: 10175
 // Name: useEmojiPickerViewableItemsCallback
-// Dependencies: [19, 1383, 504, 2047, 12, 2]
+// Dependencies: [19, 1385, 504, 2176, 12, 2]
 // Exports: default
 
-// Module 10043 (useEmojiPickerViewableItemsCallback)
+// Module 10174 (useEmojiPickerViewableItemsCallback)
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

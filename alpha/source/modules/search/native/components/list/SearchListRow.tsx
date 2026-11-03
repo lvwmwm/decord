@@ -1,22 +1,22 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 18860
+// Function ID: 18861
 // Name: SearchListRow
-// Dependencies: [19, 17, 9827, 21, 5014, 575, 6980, 5624, 2]
+// Dependencies: [19, 17, 9958, 21, 5141, 575, 7106, 5747, 2]
 
-// Module 18702 (SearchListRow)
+// Module 18860 (SearchListRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 6980 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import Pressables from "Pressables" /* 7106 */;
+import SearchConstants from "SearchConstants" /* 9958 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp4;
-const Text_Text = tmp4(5624);
+const Text_Text = tmp4(5747);
 const View = react_native.View;
 const paddingVertical = SearchConstants.SEARCH_ROW_TAP_STATE_PADDING;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

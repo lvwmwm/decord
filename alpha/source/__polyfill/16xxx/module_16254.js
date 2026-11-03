@@ -1,20 +1,7 @@
 // Module ID: 16254
 // Function ID: 16255
 // Dependencies: []
-// Exports: default
 
 // Module 16254
 
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  let obj = {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        const obj = { request, response, duration: tmp4Result };
-        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
-        closure_0.send("api.response", obj, !tmp);
-      }
-    }
-  };
-  return obj;
-};
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

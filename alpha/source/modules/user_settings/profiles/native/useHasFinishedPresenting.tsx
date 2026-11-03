@@ -1,11 +1,11 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16637
+// Function ID: 16638
 // Name: useHasFinishedPresenting
-// Dependencies: [32, 19, 1497, 2]
+// Dependencies: [32, 19, 1499, 2]
 // Exports: default
 
-// Module 16494 (useHasFinishedPresenting)
-import useNavigation from "useNavigation" /* 1497 */;
+// Module 16637 (useHasFinishedPresenting)
+import useNavigation from "useNavigation" /* 1499 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

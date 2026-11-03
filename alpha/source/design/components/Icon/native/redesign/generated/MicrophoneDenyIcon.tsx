@@ -1,14 +1,14 @@
-// Module ID: 9240
-// Function ID: 9241
+// Module ID: 9368
+// Function ID: 9369
 // Name: MicrophoneDenyIcon
-// Dependencies: [19, 21, 575, 5716, 9241, 2]
+// Dependencies: [19, 21, 575, 5836, 9369, 2]
 // Exports: MicrophoneDenyIcon
 
-// Module 9240 (MicrophoneDenyIcon)
+// Module 9368 (MicrophoneDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 9241 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 9369 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

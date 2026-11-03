@@ -1,21 +1,21 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15636
+// Function ID: 15637
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 7583, 575, 1113, 2061, 5624, 6980, 1187, 15496, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 7707, 575, 1113, 2190, 5747, 7106, 1187, 15637, 2]
 // Exports: default
 
-// Module 15495 (GuildBoostingMarketingFaq)
+// Module 15636 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7583 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15496 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7707 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   const tmp2 = _slicedToArray(react.useState(null), 2);
   let obj = { style: tmp.wrapper, children: closure_8(View, obj2) };
   obj2 = { style: tmp.content, children: items };
-  let obj3 = { style: tmp.heading, variant: "heading-xxl/bold", children: intl.string(require("intl").t.HPJ6Nj) };
+  let obj3 = { style: tmp.heading, variant: "heading-xxl/semibold", children: intl.string(require("intl").t.HPJ6Nj) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items = [closure_7(Heading, obj3), ];

@@ -1,17 +1,17 @@
-// Module ID: 9724
-// Function ID: 9725
+// Module ID: 9856
+// Function ID: 9857
 // Name: XboxLinkLanding
-// Dependencies: [19, 9723, 1072, 21, 5014, 1113, 8673, 9725, 8661, 9727, 1497, 2061, 9728, 9729, 2]
+// Dependencies: [19, 9855, 1072, 21, 5141, 1113, 8797, 9857, 8785, 9859, 1499, 2190, 9860, 9861, 2]
 // Exports: default
 
-// Module 9724 (XboxLinkLanding)
+// Module 9856 (XboxLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9723 */;
-import _modDef9728 from "module_9728" /* 9728 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9855 */;
+import _modDef9860 from "module_9860" /* 9860 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,7 +26,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function XboxLinkLanding() {
   const tmp = closure_8();
-  let obj = navigation(1497);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
@@ -56,10 +56,10 @@ export default function XboxLinkLanding() {
     navigation.push(XboxLinkModalScenes.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef9728 };
+    const obj = { uri: _modDef9860 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(9729).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(9861).TwoWayLinkLanding;
   let intl2 = navigation(1113).intl;
   let intl3 = navigation(1113).intl;
   return <TwoWayLinkLanding platformType={constants2.XBOX} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1113).t.m8aahn)} headerReconnect={intl3.string(navigation(1113).t.z3rAhq)} body={formatResult} onNext={callback} valueProps={memo} />;

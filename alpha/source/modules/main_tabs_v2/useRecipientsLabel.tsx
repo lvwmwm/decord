@@ -1,14 +1,14 @@
-// Module ID: 10800
-// Function ID: 10801
+// Module ID: 10930
+// Function ID: 10931
 // Name: useRecipientsLabel
-// Dependencies: [19, 1383, 1113, 504, 1379, 5068, 2]
+// Dependencies: [19, 1385, 1113, 504, 1380, 5195, 2]
 // Exports: useRecipientsLabel
 
-// Module 10800 (useRecipientsLabel)
+// Module 10930 (useRecipientsLabel)
 import intl5 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,26 +1,23 @@
-// Module ID: 18790
-// Function ID: 18791
+// Module ID: 18948
+// Function ID: 18949
 // Name: ThreadList
-// Dependencies: [19, 17, 21, 5014, 5624, 18791, 5095, 5080, 5637, 5638, 14374, 4872, 4874, 1113, 6975, 8179, 13798, 18793, 18794, 7294, 2]
+// Dependencies: [19, 17, 21, 5141, 5747, 18949, 1652, 5207, 5757, 5758, 1705, 14505, 4999, 5001, 1113, 7101, 8303, 13929, 18951, 18952, 7414, 2]
 // Exports: default
 
-// Module 18790 (ThreadList)
+// Module 18948 (ThreadList)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import native from "native" /* 5080 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
-import RowButton from "RowButton" /* 8179 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 13798 */;
-import ThreadListTableRowDefault from "ThreadListTableRow" /* 18791 */;
-import ThreadListLoadingIndicatorDefault from "ThreadListLoadingIndicator" /* 18794 */;
+import native from "native" /* 5207 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import TableRow2 from "TableRow" /* 7101 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7414 */;
+import RowButton from "RowButton" /* 8303 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 13929 */;
+import ThreadListTableRowDefault from "ThreadListTableRow" /* 18949 */;
+import ThreadListLoadingIndicatorDefault from "ThreadListLoadingIndicator" /* 18952 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -28,7 +25,7 @@ let hasOwnProperty;
 function ThreadListSection(title) {
   const str = title.title;
   const Text = Text_Text.Text;
-  return <Text style={closure_7().section} accessibilityRole="header" variant="text-xs/bold" color="text-default">{str.toUpperCase()}</Text>;
+  return <Text style={closure_7().section} accessibilityRole="header" variant="text-xs/semibold" color="text-default">{str.toUpperCase()}</Text>;
 }
 function renderItem(item) {
   item = item.item;
@@ -49,51 +46,97 @@ function keyExtractor(type) {
     return "thread" === type ? type.threadId : undefined;
   }
 }
-function EnterExitCrossFadeContainer(cleanUp) {
+function EnterExitCrossFadeContainer(state) {
   let children;
+  let cleanUp;
   let contentContainerStyle;
-  cleanUp = cleanUp.cleanUp;
-  const state = cleanUp.state;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  state = state.state;
   let sharedValue;
-  let tmp = cleanUp;
-  ({ contentContainerStyle, children } = cleanUp);
-  const useSharedValue = cleanUp(sharedValue[6]).useSharedValue;
+  let tmp = state;
+  ({ contentContainerStyle, cleanUp, children } = state);
+  let tmp3 = state(1652);
+  const useSharedValue = tmp3.useSharedValue;
   let num = 0;
-  const tmp3 = cleanUp(sharedValue[6]);
-  if (state === cleanUp(sharedValue[7]).TransitionStates.MOUNTED) {
+  if (state === state(5207).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
-  let fn = function p() {
-    let fn;
-    let springStandard;
-    let value;
-    let withSpring;
-    let obj = { opacity: withSpring(value, springStandard, "respect-motion-settings", fn) };
-    let tmp = spring;
-    withSpring = tmp.withSpring;
-    value = sharedValue.get();
-    fn = function t(arg0) {
-      const tmp = arg0 && state === cleanUp(sharedValue[7]).TransitionStates.YEETED;
-      if (tmp) {
-        const obj = cleanUp(sharedValue[6]);
-        obj.runOnJS(closure_1_0)();
+  let items = [closure_13, , , , , , , , ];
+  const useAnimatedStyle = tmp(1652).useAnimatedStyle;
+  tmp(1652);
+  items[1] = tmp(5757).withSpring;
+  items[2] = sharedValue;
+  items[3] = tmp(5758).springStandard;
+  items[4] = closure_12;
+  items[5] = state;
+  items[6] = tmp(5207).TransitionStates;
+  items[7] = tmp(1705).scheduleOnRN;
+  items[8] = cleanUp;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  let c6;
+  let c7;
+  [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items;
+  class ThreadListTsx2 {
+    constructor() {
+      let _undefined;
+      let tmp4;
+      let tmp5;
+      let tmp6;
+      let tmp7;
+      let tmp8;
+      let tmp = c0;
+      const value = _undefined.get();
+      const items = [c3, c4, c5, c6, c7];
+      c0 = undefined;
+      _undefined = undefined;
+      const tmp3 = c2;
+      c2 = undefined;
+      c3 = undefined;
+      [tmp4, tmp5, tmp6, tmp7, tmp8] = items;
+      const obj = { opacity: tmp(value, tmp3, "respect-motion-settings", ThreadListTsx1) };
+      class ThreadListTsx1 {
+        constructor(arg0) {
+          tmp = arg0;
+          if (tmp) {
+            tmp2 = closure_0;
+            tmp3 = closure_1;
+            tmp = closure_0 === closure_1.YEETED;
+          }
+          if (tmp) {
+            tmp4 = closure_2;
+            tmp5 = closure_3;
+            tmp6 = closure_2(closure_3);
+          }
+          return;
+        }
       }
-    };
-    const obj2 = { state, TransitionStates: native.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanUp };
-    springStandard = springPresets.springStandard;
-    fn.__closure = obj2;
-    fn.__workletHash = 2519144051135;
-    fn.__initData = __initData;
-    return obj;
-  };
-  const tmpResult = tmp(sharedValue[6]);
-  let obj = { withSpring: tmp(tmp2[8]).withSpring, opacity: sharedValue, springStandard: tmp(tmp2[9]).springStandard, state, TransitionStates: tmp(tmp2[7]).TransitionStates, runOnJS: tmp(tmp2[6]).runOnJS, cleanUp };
-  fn.__closure = obj;
-  fn.__workletHash = 5037750127944;
-  fn.__initData = __initData;
-  const items = [sharedValue, state];
-  const animatedStyle = tmpResult.useAnimatedStyle(fn);
+      const items1 = [tmp5, tmp6, tmp7, tmp8];
+      ThreadListTsx1.__closure = items1;
+      ThreadListTsx1.__workletHash = 18145764964;
+      ThreadListTsx1.__initData = tmp4;
+      return obj;
+    }
+  }
+  let items1 = [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14];
+  ThreadListTsx2.__closure = items1;
+  ThreadListTsx2.__workletHash = 5121386856921;
+  ThreadListTsx2.__initData = tmp6;
+  const items2 = [sharedValue, state];
+  const animatedStyle = useAnimatedStyle(ThreadListTsx2);
   const effect = react.useEffect(() => {
     let num = 1;
     set = sharedValue.set;
@@ -101,10 +144,10 @@ function EnterExitCrossFadeContainer(cleanUp) {
       num = 0;
     }
     const result = set(num);
-  }, items);
-  const items1 = [absoluteFill.absoluteFill, animatedStyle];
-  const View = state(tmp2[6]).View;
-  return <View style={items1}>{null}</View>;
+  }, items2);
+  const items3 = [absoluteFill.absoluteFill, animatedStyle];
+  const View = sharedValue(1652).View;
+  return <View style={items3}>{null}</View>;
 }
 function getThreadListStateKey(arg0) {
   return arg0;
@@ -114,8 +157,8 @@ let react = react_mod;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ container: { flex: 1, flexGrow: 1 }, center: { justifyContent: "center", alignItems: "center" }, header: { marginTop: 24, marginBottom: 10 }, footer: { marginVertical: 16, justifyContent: "center", alignItems: "center" }, section: { marginTop: 16, marginBottom: 8 } });
 let set = new Set();
-const __initData = { code: "function ThreadListTsx1(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
-let closure_13 = { code: "function ThreadListTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
+let closure_12 = { code: "(function ThreadListTsx1(finished){let[state,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;if(finished&&state===TransitionStates.YEETED){scheduleOnRN(cleanUp);}})" };
+let closure_13 = { code: "(function ThreadListTsx2(){let[withSpring,opacity,springStandard,_worklet_18145764964_init_data,state,TransitionStates,scheduleOnRN,cleanUp]=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function ThreadListTsx1Factory([_worklet_18145764964_init_data,state,TransitionStates,scheduleOnRN,cleanUp]){const ThreadListTsx1=function(finished){if(finished&&state===TransitionStates.YEETED){scheduleOnRN(cleanUp);}};ThreadListTsx1.__closure=[state,TransitionStates,scheduleOnRN,cleanUp];ThreadListTsx1.__workletHash=18145764964;ThreadListTsx1.__initData=_worklet_18145764964_init_data;return ThreadListTsx1;}([_worklet_18145764964_init_data,state,TransitionStates,scheduleOnRN,cleanUp]))};})" };
 let closure_15 = { LIST: "list", EMPTY: "empty", LOADING: "loading" };
 let result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadList.tsx");
 
@@ -130,13 +173,13 @@ export default function ThreadList(onCreateThreadPress) {
   let loadMore;
   let tmp = canLoadMore();
   react = tmp;
-  let obj = onThreadPress(contentContainerStyle[10]);
+  let obj = onThreadPress(contentContainerStyle[11]);
   const activeThreads = obj.useActiveThreads(channel);
   const joinedThreadIds = activeThreads.joinedThreadIds;
   const unjoinedThreadIds = activeThreads.unjoinedThreadIds;
-  const tmp3 = onThreadPress(contentContainerStyle[10]);
+  const tmp3 = onThreadPress(contentContainerStyle[11]);
   const useArchivedThreads = tmp3.useArchivedThreads;
-  const archivedThreads = useArchivedThreads(channel, onThreadPress(contentContainerStyle[11]).ThreadSortOrder.LATEST_ACTIVITY, loadMore, onThreadPress(contentContainerStyle[12]).ThreadSearchTagSetting.MATCH_SOME);
+  const archivedThreads = useArchivedThreads(channel, onThreadPress(contentContainerStyle[12]).ThreadSortOrder.LATEST_ACTIVITY, loadMore, onThreadPress(contentContainerStyle[13]).ThreadSearchTagSetting.MATCH_SOME);
   const threadIds = archivedThreads.threadIds;
   canLoadMore = archivedThreads.canLoadMore;
   loadMore = archivedThreads.loadMore;
@@ -158,8 +201,8 @@ export default function ThreadList(onCreateThreadPress) {
     const items = [];
     if (joinedThreadIds.length > 0) {
       const push2 = items.push;
-      const obj2 = { type: "section", title: intl2.formatToPlainString(onThreadPress(contentContainerStyle[13]).t.fcXlhe, obj3) };
-      intl2 = onThreadPress(contentContainerStyle[13]).intl;
+      const obj2 = { type: "section", title: intl2.formatToPlainString(onThreadPress(contentContainerStyle[14]).t.fcXlhe, obj3) };
+      intl2 = onThreadPress(contentContainerStyle[14]).intl;
       obj3 = { count: joinedThreadIds.length };
       push2(obj2);
       const item = arr2.forEach((threadId, index) => {
@@ -169,8 +212,8 @@ export default function ThreadList(onCreateThreadPress) {
     }
     if (unjoinedThreadIds.length > 0) {
       const push3 = items.push;
-      const obj4 = { type: "section", title: intl3.formatToPlainString(onThreadPress(contentContainerStyle[13]).t.GHY7yQ, obj5) };
-      intl3 = onThreadPress(contentContainerStyle[13]).intl;
+      const obj4 = { type: "section", title: intl3.formatToPlainString(onThreadPress(contentContainerStyle[14]).t.GHY7yQ, obj5) };
+      intl3 = onThreadPress(contentContainerStyle[14]).intl;
       obj5 = { count: unjoinedThreadIds.length };
       push3(obj4);
       const item1 = arr3.forEach((threadId, index) => {
@@ -180,9 +223,9 @@ export default function ThreadList(onCreateThreadPress) {
     }
     const arr4 = threadIds;
     if (threadIds.length > 0) {
-      let obj = { type: "section", title: intl.string(onThreadPress(contentContainerStyle[13]).t.XsgrjS) };
+      let obj = { type: "section", title: intl.string(onThreadPress(contentContainerStyle[14]).t.XsgrjS) };
       const push = items.push;
-      intl = onThreadPress(contentContainerStyle[13]).intl;
+      intl = onThreadPress(contentContainerStyle[14]).intl;
       push(obj);
       const item2 = arr4.forEach((threadId, index) => {
         const obj = { type: "thread", threadId, start: 0 === index, end: index === threadIds.length - 1, onPress: onThreadPress };

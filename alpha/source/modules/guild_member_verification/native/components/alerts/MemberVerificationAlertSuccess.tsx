@@ -1,16 +1,16 @@
-// Module ID: 6909
-// Function ID: 6910
+// Module ID: 7029
+// Function ID: 7030
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 5015, 4885, 21, 5014, 504, 6030, 1113, 5618, 6910, 5624, 2]
+// Dependencies: [19, 17, 5142, 5012, 21, 5141, 504, 6150, 1113, 5741, 7030, 5747, 2]
 // Exports: default
 
-// Module 6909 (MemberVerificationAlertSuccess)
+// Module 7029 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -57,7 +57,7 @@ export default function MemberVerificationAlertSuccess(guildId) {
     obj4 = { source: guildId(merged[10]), autoPlay: !tmp7, style: tmp2.illustration };
     tmp16 = handleConfirmAndAck(merged[9]);
     items2 = [closure_6(View, obj3), , ];
-    const obj5 = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl2.format(guildId(merged[8]).t["7hhNEn"], obj6) };
+    const obj5 = { style: tmp2.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl2.format(guildId(merged[8]).t["7hhNEn"], obj6) };
     const Heading = tmp3(tmp4[11]).Heading;
     intl2 = tmp3(tmp4[8]).intl;
     obj6 = { guildName: stateFromStores.name };

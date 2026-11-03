@@ -1,23 +1,23 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19370
+// Function ID: 19371
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4863, 6875, 11241, 21, 5014, 575, 504, 11970, 7526, 5596, 5260, 8028, 1113, 9240, 11971, 6706, 9836, 11222, 19211, 2]
+// Dependencies: [19, 17, 4990, 6995, 11378, 21, 5141, 575, 504, 12107, 7650, 5719, 5383, 8152, 1113, 9368, 12108, 6826, 9967, 11359, 19369, 2]
 
-// Module 19212 (VoicePanelDockControls)
+// Module 19370 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9836 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11241 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11970 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19211 */;
+import HapticUtils from "HapticUtils" /* 5383 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9967 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11359 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11378 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12107 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19369 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import VoicePanelStore from "VoicePanelStore" /* 6875 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import VoicePanelStore from "VoicePanelStore" /* 6995 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const nativeDefault = native;
@@ -51,7 +51,7 @@ function DockMuteButton(channelId) {
     if (!tmp4) {
       const triggerHapticFeedback = HapticUtils.triggerHapticFeedback;
       HapticUtils;
-      const HapticFeedbackTypes = tmp2(5260).HapticFeedbackTypes;
+      const HapticFeedbackTypes = tmp2(5383).HapticFeedbackTypes;
       const result = triggerHapticFeedback(mute ? HapticFeedbackTypes.TOGGLE_ON : HapticFeedbackTypes.TOGGLE_OFF);
     }
     onPress();
@@ -86,7 +86,7 @@ function DockHangUpButton(channelId) {
     state.closeChannel(channelId);
   }, items);
   let obj = { accessibilityLabel: intl.string(channelId(1113).t["6vrfgt"]), variant: "critical-primary", size: "sm", icon: AssetRegistryDefault, onPress: callback };
-  const IconButton = channelId(8028).IconButton;
+  const IconButton = channelId(8152).IconButton;
   intl = channelId(1113).intl;
   return closure_7(IconButton, obj);
 }

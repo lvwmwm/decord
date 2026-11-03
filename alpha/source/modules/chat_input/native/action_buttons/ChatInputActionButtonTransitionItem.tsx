@@ -1,25 +1,28 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 12944
+// Function ID: 12945
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 12809, 21, 5080, 5095, 5254, 12810, 2]
+// Dependencies: [19, 17, 12945, 21, 5207, 1652, 5377, 1705, 12946, 2]
 // Exports: default, interactivityProps
 
-// Module 12808 (ChatInputActionButtonTransitionItem)
+// Module 12944 (ChatInputActionButtonTransitionItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5080 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import ChatInputConstants from "ChatInputConstants" /* 12809 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12810 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import native from "native" /* 5207 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import ChatInputConstants from "ChatInputConstants" /* 12945 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12946 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
 
 function FadeTransitionItem(state) {
-  let items1;
+  let items3;
   let str2;
+  let tmp7;
+  let tmp8;
   state = state.state;
   const cleanup = state.cleanup;
   let sharedValue;
@@ -27,52 +30,69 @@ function FadeTransitionItem(state) {
   const children = state.children;
   const tmp = state;
   const tmp3 = state === state(sharedValue[4]).TransitionStates.YEETED;
-  const tmp4 = state(sharedValue[5]);
   let num = 1;
-  const useSharedValue = tmp4.useSharedValue;
+  const useSharedValue = state(sharedValue[5]).useSharedValue;
+  const tmp4 = state(sharedValue[5]);
   if (tmp3) {
     num = 0;
   }
   sharedValue = useSharedValue(num);
-  const items = [state, sharedValue, cleanup];
+  let items = [state, sharedValue, cleanup];
   const effect = react.useEffect(() => {
+    let tmp12;
+    let tmp13;
+    let tmp14;
     if (state === native.TransitionStates.YEETED) {
       set2 = sharedValue.set;
-      const fn = function t(arg0) {
-        if (true === arg0) {
-          const obj = state(sharedValue[5]);
-          obj.runOnJS(cleanup)();
+      const items = [closure_7, , ];
+      const withTiming = timing_timing.withTiming;
+      const tmpResult = timing_timing;
+      items[1] = _mod1705.scheduleOnRN;
+      items[2] = cleanup;
+      let c0;
+      let c1;
+      [tmp12, tmp13, tmp14] = items;
+      class ChatInputActionButtonTransitionItemTsx1 {
+        constructor(arg0) {
+          if (true === arg0) {
+            tmp = closure_0;
+            tmp2 = closure_1;
+            tmp3 = closure_0(closure_1);
+          }
+          return;
         }
-      };
-      const tmpResult = timing;
-      let obj = { runOnJS: tmp(5095).runOnJS, cleanup };
-      const withTiming = tmpResult.withTiming;
-      fn.__closure = obj;
-      fn.__workletHash = 10965161938750;
-      fn.__initData = __initData;
-      set2(withTiming(0, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings", fn));
+      }
+      const items1 = [tmp13, tmp14];
+      ChatInputActionButtonTransitionItemTsx1.__closure = items1;
+      ChatInputActionButtonTransitionItemTsx1.__workletHash = 2879120786854;
+      ChatInputActionButtonTransitionItemTsx1.__initData = tmp12;
+      set2(withTiming(0, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings", ChatInputActionButtonTransitionItemTsx1));
     } else {
       set = sharedValue.set;
-      const tmpResult2 = timing;
+      const tmpResult2 = timing_timing;
       const result = set(tmpResult2.withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
     }
   }, items);
   let tmpResult = tmp(tmp2[5]);
-  class T {
+  let items1 = [closure_8, sharedValue];
+  let c0;
+  [tmp7, tmp8] = items1;
+  class ChatInputActionButtonTransitionItemTsx2 {
     constructor() {
-      const obj = { opacity: sharedValue.get() };
+      const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  T.__closure = { visible: sharedValue };
-  T.__workletHash = 13386937038500;
-  T.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(T);
-  let obj = { style: items1, children };
-  items1 = [closure_6.transitionItem, animatedStyle];
+  const items2 = [tmp8];
+  ChatInputActionButtonTransitionItemTsx2.__closure = items2;
+  ChatInputActionButtonTransitionItemTsx2.__workletHash = 10652693384285;
+  ChatInputActionButtonTransitionItemTsx2.__initData = tmp7;
+  const animatedStyle = tmpResult.useAnimatedStyle(ChatInputActionButtonTransitionItemTsx2);
+  let obj = { style: items3, children };
+  items3 = [closure_6.transitionItem, animatedStyle];
   let str = "none";
   const View = cleanup(tmp2[5]).View;
-  const tmp8 = jsx;
+  const tmp10 = jsx;
   if (!tmp3) {
     str = "auto";
   }
@@ -82,7 +102,7 @@ function FadeTransitionItem(state) {
     str2 = "auto";
   }
   const merged = Object.assign(obj2);
-  return tmp8(View, obj);
+  return tmp10(View, obj);
 }
 function BounceTransitionItem(state) {
   let animatedStyle;
@@ -102,7 +122,7 @@ function BounceTransitionItem(state) {
   items = [closure_6.transitionItemCentered, animatedStyle];
   let str = "none";
   tmp(obj);
-  const View = ReanimatedRexportDefault.View;
+  const View = _modDef1652.View;
   const tmp3 = jsx;
   if (isInteractive) {
     str = "auto";
@@ -119,8 +139,8 @@ const StyleSheet = react_native.StyleSheet;
 const CHAT_INPUT_TIMING_CONFIG = ChatInputConstants.CHAT_INPUT_TIMING_CONFIG;
 const jsx = Fragment.jsx;
 const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
-let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };
-const __initData = { code: "function ChatInputActionButtonTransitionItemTsx2(){const{visible}=this.__closure;return{opacity:visible.get()};}" };
+let closure_7 = { code: "(function ChatInputActionButtonTransitionItemTsx1(finished){let[scheduleOnRN,cleanup]=this.__closure;if(finished===true){scheduleOnRN(cleanup);}})" };
+let closure_8 = { code: "(function ChatInputActionButtonTransitionItemTsx2(){let[visible]=this.__closure;return{opacity:visible.get()};})" };
 let result = size.fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx");
 
 export default function ChatInputActionButtonTransitionItem(bounceEnterDelayMs) {

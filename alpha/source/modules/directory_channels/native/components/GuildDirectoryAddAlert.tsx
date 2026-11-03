@@ -1,19 +1,19 @@
-// Module ID: 13870
-// Function ID: 13871
+// Module ID: 14001
+// Function ID: 14002
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 5014, 575, 6030, 1113, 6957, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6150, 1113, 7083, 5747, 2]
 // Exports: default
 
-// Module 13870 (GuildDirectoryAddAlert)
+// Module 14001 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertDefault from "Alert" /* 6030 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import AlertDefault from "Alert" /* 6150 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -46,7 +46,7 @@ export default function GuildDirectoryAddAlert(arg0) {
   const obj3 = { style: tmp.guildIcon, guild, size: GuildIcon.GuildIconSizes.XLARGE };
   const tmp3 = GuildIconDefault;
   items = [React3(tmp3, obj3), , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.CueiPY) };
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.CueiPY) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = React3(Text, obj4);

@@ -1,21 +1,21 @@
-// Module ID: 10900
-// Function ID: 10901
+// Module ID: 11030
+// Function ID: 11031
 // Name: ConjurePreviewActionCreators
-// Dependencies: [5, 4867, 6844, 10901, 1072, 10902, 6845, 572, 10938, 10939, 1282, 2]
-// Exports: loadConjurePreviewDm, pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
+// Dependencies: [5, 4994, 6964, 11031, 1072, 11032, 6965, 572, 11076, 11077, 1282, 2]
+// Exports: loadConjurePreviewDm, pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, selectConjureGameCapture, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 10900 (ConjurePreviewActionCreators)
+// Module 11030 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10902 */;
-import leaveFrame from "leaveFrame" /* 10938 */;
-import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 10939 */;
+import ChannelRecord from "ChannelRecord" /* 4994 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11032 */;
+import leaveFrame from "leaveFrame" /* 11076 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
-import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 10901 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11031 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _loadConjurePreviewDm() {
@@ -58,7 +58,7 @@ export function reloadConjureProjectFrames(projectId) {
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(10902);
+      const tmp2Result = tmp2(11032);
       tmp2Result.reloadAppFrames(prop);
     }
   }
@@ -66,6 +66,11 @@ export function reloadConjureProjectFrames(projectId) {
 export function setBuilderPreviewApplicationId(applicationId) {
   obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_BUILDER_PREVIEW_APPLICATION_SET", applicationId };
+  obj.dispatch(obj2);
+}
+export function selectConjureGameCapture(projectId, captureId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "CONJURE_GAME_CAPTURE_SELECT", projectId, captureId };
   obj.dispatch(obj2);
 }
 export function setBuilderPreviewMobile(enabled) {

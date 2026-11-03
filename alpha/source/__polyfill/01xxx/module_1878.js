@@ -1,173 +1,216 @@
 // Module ID: 1878
 // Function ID: 1879
-// Dependencies: [19, 17, 21, 1650, 1858, 1879, 1881, 1883, 1864]
+// Dependencies: []
+// Exports: getViewInfo, getViewTagFromInstance
 
 // Module 1878
-import react_native from "react-native" /* 17 */;
-import react_mod from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import cancelAnimation_mod from "module_1650" /* 1650 */;
 
-let value;
-
-let c3;
-let closure_4;
-let forwardRef;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-let react = react_mod;
-({ useCallback: c3, useMemo: closure_4, forwardRef } = react);
-react = react_mod;
-const StyleSheet = react_native.StyleSheet;
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let cancelAnimation = cancelAnimation_mod;
-let closure_8 = cancelAnimation.makeMutable(0);
-cancelAnimation = cancelAnimation_mod;
-let closure_9 = cancelAnimation.makeMutable(0);
-const __initData = { code: "function pnpm_indexTsx1(){const{freeze}=this.__closure;return typeof freeze===\"boolean\"?freeze:freeze.value;}" };
-const __initData2 = { code: "function pnpm_indexTsx2(){const{blankSpace,padding,extraContentPadding}=this.__closure;return Math.max(blankSpace.value,padding.value+extraContentPadding.value);}" };
-const __initData3 = { code: "function pnpm_indexTsx3(){const{padding,extraContentPadding}=this.__closure;return padding.value+extraContentPadding.value;}" };
-const __initData4 = { code: "function pnpm_indexTsx4(){const{currentHeight}=this.__closure;return{transform:[{translateY:-currentHeight.value}]};}" };
-const forwardRefResult = forwardRef((ScrollViewComponent, arg1) => {
-  let animatedStyle;
-  let blankSpace;
-  let commitView;
-  let contentOffsetY;
-  let extraContentPadding;
-  let items3;
-  let layout;
-  let onContentSizeChange2;
-  let onLayout2;
-  let scroll;
-  let ScrollView = ScrollViewComponent.ScrollViewComponent;
-  const children = ScrollViewComponent.children;
-  if (ScrollView === undefined) {
-    ScrollView = extraContentPadding(blankSpace[3]).ScrollView;
+export function getViewInfo(findHostInstanceResult) {
+  let __nativeTag;
+  let uiViewClassName;
+  if (findHostInstanceResult != null) {
+    const __viewConfig = findHostInstanceResult.__viewConfig;
+    if (__viewConfig != null) {
+      uiViewClassName = __viewConfig.uiViewClassName;
+    }
   }
-  let flag = ScrollViewComponent.inverted;
-  if (flag === undefined) {
-    flag = false;
-  }
-  let str = ScrollViewComponent.keyboardLiftBehavior;
-  if (str === undefined) {
-    str = "always";
-  }
-  let flag2 = ScrollViewComponent.freeze;
-  if (flag2 === undefined) {
-    flag2 = false;
-  }
-  let num = ScrollViewComponent.offset;
-  if (num === undefined) {
-    num = 0;
-  }
-  extraContentPadding = ScrollViewComponent.extraContentPadding;
-  if (extraContentPadding === undefined) {
-    extraContentPadding = onContentSizeChange2;
-  }
-  blankSpace = ScrollViewComponent.blankSpace;
-  if (blankSpace === undefined) {
-    blankSpace = animatedStyle;
-  }
-  let flag3 = ScrollViewComponent.applyWorkaroundForContentInsetHitTestBug;
-  if (flag3 === undefined) {
-    flag3 = false;
-  }
-  const onLayout = ScrollViewComponent.onLayout;
-  const onContentSizeChange = ScrollViewComponent.onContentSizeChange;
-  const onEndVisible = ScrollViewComponent.onEndVisible;
-  const merged = Object.assign(ScrollViewComponent, Object.assign({ children: 0, ScrollViewComponent: 0, inverted: 0, keyboardLiftBehavior: 0, freeze: 0, offset: 0, extraContentPadding: 0, blankSpace: 0, applyWorkaroundForContentInsetHitTestBug: 0, onLayout: 0, onContentSizeChange: 0, onEndVisible: 0 }));
-  let padding;
-  let currentHeight;
-  onLayout2 = undefined;
-  onContentSizeChange2 = undefined;
-  animatedStyle = undefined;
-  let obj = flag2(blankSpace[3]);
-  const animatedRef = obj.useAnimatedRef();
-  const tmp5 = extraContentPadding(blankSpace[4])(arg1, animatedRef);
-  let obj2 = flag2(blankSpace[3]);
-  class M {
-    constructor() {
-      value = flag2;
-      if (typeof flag2 !== "boolean") {
-        value = flag2.value;
+  if (uiViewClassName == null) {
+    let uiViewClassName1;
+    if (findHostInstanceResult != null) {
+      const _viewConfig = findHostInstanceResult._viewConfig;
+      if (_viewConfig != null) {
+        uiViewClassName1 = _viewConfig.uiViewClassName;
       }
-      return value;
     }
+    uiViewClassName = uiViewClassName1;
   }
-  M.__closure = { freeze: flag2 };
-  M.__workletHash = 1441280506731;
-  M.__initData = __initData;
-  const derivedValue = obj2.useDerivedValue(M);
-  const obj3 = flag2(blankSpace[5]);
-  const chatKeyboard = obj3.useChatKeyboard(animatedRef, { inverted: flag, keyboardLiftBehavior: str, freeze: derivedValue, offset: num, blankSpace, extraContentPadding });
-  padding = chatKeyboard.padding;
-  currentHeight = chatKeyboard.currentHeight;
-  ({ contentOffsetY, scroll, layout, size, onLayout: onLayout2 } = chatKeyboard);
-  onContentSizeChange2 = chatKeyboard.onContentSizeChange;
-  const obj4 = flag2(blankSpace[6]);
-  const extraContentPadding1 = obj4.useExtraContentPadding({ scrollViewRef: animatedRef, extraContentPadding, keyboardPadding: padding, blankSpace, scroll, layout, size, contentOffsetY, inverted: flag, keyboardLiftBehavior: str, freeze: derivedValue });
-  const obj5 = flag2(blankSpace[7]);
-  const endVisible = obj5.useEndVisible({ scroll, layout, size, inverted: flag, onEndVisible });
-  const fn = function q() {
-    return Math.max(blankSpace.value, padding.value + extraContentPadding.value);
-  };
-  fn.__closure = { blankSpace, padding, extraContentPadding };
-  fn.__workletHash = 5812718828105;
-  fn.__initData = __initData2;
-  const obj6 = flag2(blankSpace[3]);
-  const derivedValue1 = obj6.useDerivedValue(fn);
-  const obj7 = flag2(blankSpace[3]);
-  class G {
-    constructor() {
-      return padding.value + extraContentPadding.value;
+  if (uiViewClassName == null) {
+    let type;
+    if (findHostInstanceResult != null) {
+      const __internalInstanceHandle = findHostInstanceResult.__internalInstanceHandle;
+      if (__internalInstanceHandle != null) {
+        type = __internalInstanceHandle.type;
+      }
     }
+    uiViewClassName = type;
   }
-  G.__closure = { padding, extraContentPadding };
-  G.__workletHash = 17005251423398;
-  G.__initData = __initData3;
-  let items = [onLayout2, onLayout];
-  const derivedValue2 = obj7.useDerivedValue(G);
-  const items1 = [onContentSizeChange2, onContentSizeChange];
-  const tmp12 = onLayout((arg0) => {
-    onLayout2(arg0);
-    if (onLayout != null) {
-      onLayout(arg0);
+  if (uiViewClassName == null) {
+    let elementType;
+    if (findHostInstanceResult != null) {
+      const __internalInstanceHandle2 = findHostInstanceResult.__internalInstanceHandle;
+      if (__internalInstanceHandle2 != null) {
+        elementType = __internalInstanceHandle2.elementType;
+      }
     }
-  }, items);
-  const tmp13 = onLayout((arg0, arg1) => {
-    onContentSizeChange2(arg0, arg1);
-    if (onContentSizeChange != null) {
-      onContentSizeChange(arg0, arg1);
-    }
-  }, items1);
-  const obj8 = flag2(blankSpace[3]);
-  class J {
-    constructor() {
-      let items;
-      const obj = { transform: items };
-      items = [];
-      const obj2 = { translateY: -currentHeight.value };
-      items[0] = obj2;
-      return obj;
-    }
+    uiViewClassName = elementType;
   }
-  J.__closure = { currentHeight };
-  J.__workletHash = 2509855764315;
-  J.__initData = __initData4;
-  animatedStyle = obj8.useAnimatedStyle(J, []);
-  const items2 = [animatedStyle];
-  const obj10 = { ref: tmp5, applyWorkaroundForContentInsetHitTestBug: flag3, bottomPadding: derivedValue1, contentOffsetY, inverted: flag, scrollIndicatorPadding: derivedValue2, ScrollViewComponent: ScrollView, onContentSizeChange: tmp13, onLayout: tmp12, children };
-  const obj9 = { children: items3 };
-  const tmp15 = onContentSizeChange(() => {
-    const items = [commitView.commitView, animatedStyle];
-    return items;
-  }, items2);
-  const tmp16 = extraContentPadding(blankSpace[8]);
-  const merged1 = Object.assign(merged);
-  items3 = [padding(tmp16, obj10), padding(extraContentPadding(blankSpace[3]).View, { style: tmp15 })];
-  return onLayout2(currentHeight, obj9);
-});
-const styles = StyleSheet.create({ commitView: { display: "none", position: "absolute" } });
-
-export default forwardRefResult;
+  const obj = { reactViewName: uiViewClassName, viewTag: __nativeTag };
+  __nativeTag = undefined;
+  if (findHostInstanceResult != null) {
+    __nativeTag = findHostInstanceResult.__nativeTag;
+  }
+  return obj;
+}
+export function getViewTagFromInstance(_childInstance) {
+  const tmp = _childInstance;
+  if (tmp) {
+    if (typeof _childInstance.getComponentViewTag === "function") {
+      const componentViewTag = _childInstance.getComponentViewTag();
+      if (-1 !== componentViewTag) {
+        return componentViewTag;
+      }
+    }
+    let uiViewClassName;
+    if (_childInstance != null) {
+      const __viewConfig = _childInstance.__viewConfig;
+      if (__viewConfig != null) {
+        uiViewClassName = __viewConfig.uiViewClassName;
+      }
+    }
+    if (uiViewClassName == null) {
+      let uiViewClassName1;
+      if (_childInstance != null) {
+        const _viewConfig = _childInstance._viewConfig;
+        if (_viewConfig != null) {
+          uiViewClassName1 = _viewConfig.uiViewClassName;
+        }
+      }
+      uiViewClassName = uiViewClassName1;
+    }
+    if (uiViewClassName == null) {
+      let type;
+      if (_childInstance != null) {
+        const __internalInstanceHandle = _childInstance.__internalInstanceHandle;
+        if (__internalInstanceHandle != null) {
+          type = __internalInstanceHandle.type;
+        }
+      }
+      uiViewClassName = type;
+    }
+    if (uiViewClassName == null) {
+      if (_childInstance != null) {
+        const __internalInstanceHandle2 = _childInstance.__internalInstanceHandle;
+        if (__internalInstanceHandle2 != null) {
+          const elementType = __internalInstanceHandle2.elementType;
+        }
+      }
+    }
+    let __nativeTag;
+    if (_childInstance != null) {
+      __nativeTag = _childInstance.__nativeTag;
+    }
+    if (undefined !== __nativeTag) {
+      return __nativeTag;
+    } else {
+      const getNativeScrollRef = _childInstance.getNativeScrollRef;
+      let nativeScrollRef;
+      if (getNativeScrollRef != null) {
+        nativeScrollRef = getNativeScrollRef();
+      }
+      if (nativeScrollRef) {
+        let uiViewClassName2;
+        if (nativeScrollRef != null) {
+          const __viewConfig3 = nativeScrollRef.__viewConfig;
+          if (__viewConfig3 != null) {
+            uiViewClassName2 = __viewConfig3.uiViewClassName;
+          }
+        }
+        if (uiViewClassName2 == null) {
+          let uiViewClassName3;
+          if (nativeScrollRef != null) {
+            const _viewConfig3 = nativeScrollRef._viewConfig;
+            if (_viewConfig3 != null) {
+              uiViewClassName3 = _viewConfig3.uiViewClassName;
+            }
+          }
+          uiViewClassName2 = uiViewClassName3;
+        }
+        if (uiViewClassName2 == null) {
+          let type1;
+          if (nativeScrollRef != null) {
+            const __internalInstanceHandle5 = nativeScrollRef.__internalInstanceHandle;
+            if (__internalInstanceHandle5 != null) {
+              type1 = __internalInstanceHandle5.type;
+            }
+          }
+          uiViewClassName2 = type1;
+        }
+        if (uiViewClassName2 == null) {
+          if (nativeScrollRef != null) {
+            const __internalInstanceHandle6 = nativeScrollRef.__internalInstanceHandle;
+            if (__internalInstanceHandle6 != null) {
+              const elementType3 = __internalInstanceHandle6.elementType;
+            }
+          }
+        }
+        let __nativeTag1;
+        if (nativeScrollRef != null) {
+          __nativeTag1 = nativeScrollRef.__nativeTag;
+        }
+        if (__nativeTag1 == null) {
+          __nativeTag1 = null;
+        }
+        return __nativeTag1;
+      } else {
+        const getScrollableNode = _childInstance.getScrollableNode;
+        let scrollableNode;
+        if (getScrollableNode != null) {
+          scrollableNode = getScrollableNode();
+        }
+        let tmp10 = scrollableNode;
+        if (typeof scrollableNode !== "number") {
+          let tmp15 = null;
+          if (scrollableNode) {
+            let uiViewClassName4;
+            if (scrollableNode != null) {
+              const __viewConfig2 = scrollableNode.__viewConfig;
+              if (__viewConfig2 != null) {
+                uiViewClassName4 = __viewConfig2.uiViewClassName;
+              }
+            }
+            if (uiViewClassName4 == null) {
+              let uiViewClassName5;
+              if (scrollableNode != null) {
+                const _viewConfig2 = scrollableNode._viewConfig;
+                if (_viewConfig2 != null) {
+                  uiViewClassName5 = _viewConfig2.uiViewClassName;
+                }
+              }
+              uiViewClassName4 = uiViewClassName5;
+            }
+            if (uiViewClassName4 == null) {
+              let type2;
+              if (scrollableNode != null) {
+                const __internalInstanceHandle3 = scrollableNode.__internalInstanceHandle;
+                if (__internalInstanceHandle3 != null) {
+                  type2 = __internalInstanceHandle3.type;
+                }
+              }
+              uiViewClassName4 = type2;
+            }
+            if (uiViewClassName4 == null) {
+              if (scrollableNode != null) {
+                const __internalInstanceHandle4 = scrollableNode.__internalInstanceHandle;
+                if (__internalInstanceHandle4 != null) {
+                  const elementType2 = __internalInstanceHandle4.elementType;
+                }
+              }
+            }
+            let __nativeTag2;
+            if (scrollableNode != null) {
+              __nativeTag2 = scrollableNode.__nativeTag;
+            }
+            if (__nativeTag2 == null) {
+              __nativeTag2 = null;
+            }
+            tmp15 = __nativeTag2;
+          }
+          tmp10 = tmp15;
+        }
+        return tmp10;
+      }
+    }
+  } else {
+    return null;
+  }
+}

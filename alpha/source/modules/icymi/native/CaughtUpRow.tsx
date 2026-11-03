@@ -1,30 +1,28 @@
-// Module ID: 18589
-// Function ID: 18590
+// Module ID: 18745
+// Function ID: 18746
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 5095, 5624, 18528, 575, 8924, 18547, 18543, 5199, 5254, 5596, 14861, 1113, 5634, 18567, 5587, 1092, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1652, 5747, 18682, 575, 9048, 18701, 18697, 5322, 5377, 5719, 14992, 1113, 5754, 18723, 5710, 1092, 671, 2]
 // Exports: default
 
-// Module 18589 (CaughtUpRow)
+// Module 18745 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18528 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createICYMIStyles from "createICYMIStyles" /* 18682 */;
 import size from "module_2" /* 2 */;
 
-const ReanimatedRexport = ReanimatedRexport2;
-let c2, dependencyMap;
+let dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
 let View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = ReanimatedRexport.createAnimatedComponent(Text_Text.Text);
+let closure_9 = module_1652.createAnimatedComponent(Text_Text.Text);
 let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { container: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 }, textContainer: { marginHorizontal: margin.margin, marginBottom: nativeDefault.space.PX_24 }, recommendedGuildsContainer: { flex: 1, marginBottom: nativeDefault.space.PX_24 }, iconWrapper: { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 }, icon: { height: 40, width: 40 }, headerText: { alignSelf: "center", marginBottom: nativeDefault.space.PX_8, textAlign: "center" }, subtitleText: { alignSelf: "center", textAlign: "center" }, buttonContainer: { flex: 1, width: "100%", gap: nativeDefault.space.PX_12, paddingHorizontal: margin.margin }, gradient: { position: "absolute", top: 0, left: 0, right: 0, height: 150 } };
   ({ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 });
@@ -35,9 +33,9 @@ let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   ({ flex: 1, width: "100%", gap: nativeDefault.space.PX_12, paddingHorizontal: margin.margin });
   return obj;
 });
-const __initData = { code: "function CaughtUpRowTsx1(){const{visibleSharedValue,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withTiming(0,{duration:250,easing:Easing.bezier(0.5,1.8,0.5,1)}):-80}],opacity:visibleSharedValue.get()?withTiming(1,{duration:100,easing:Easing.out(Easing.bezierFn(0.33,1,0.68,1))}):0};}" };
-const __initData2 = { code: "function CaughtUpRowTsx2(){const{visibleSharedValue,withDelay,withSequence,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(80,withSequence(withTiming(8,{duration:100,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};}" };
-const __initData3 = { code: "function CaughtUpRowTsx3(){const{visibleSharedValue,withDelay,withSequence,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(115,withSequence(withTiming(8,{duration:150,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};}" };
+let closure_11 = { code: "(function CaughtUpRowTsx1(){let[visibleSharedValue,withTiming,Easing]=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withTiming(0,{duration:250,easing:Easing.bezier(0.5,1.8,0.5,1)}):-80}],opacity:visibleSharedValue.get()?withTiming(1,{duration:100,easing:Easing.out(Easing.bezierFn(0.33,1,0.68,1))}):0};})" };
+let closure_12 = { code: "(function CaughtUpRowTsx2(){let[visibleSharedValue,withDelay,withSequence,withTiming,Easing]=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(80,withSequence(withTiming(8,{duration:100,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};})" };
+let closure_13 = { code: "(function CaughtUpRowTsx3(){let[visibleSharedValue,withDelay,withSequence,withTiming,Easing]=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(115,withSequence(withTiming(8,{duration:150,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};})" };
 let result = size.fileFinishedImporting("modules/icymi/native/CaughtUpRow.tsx");
 
 export default function ExploreServersRow(visible) {
@@ -47,19 +45,37 @@ export default function ExploreServersRow(visible) {
   let intl2;
   let intl3;
   let intl4;
-  let items1;
-  let items2;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
+  let items10;
+  let items11;
+  let items12;
+  let items13;
+  let items14;
   let items7;
   let items8;
-  let obj13;
+  let items9;
+  let obj6;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp25;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp30;
   visible = visible.visible;
   dependencyMap = undefined;
   const tmp = closure_10();
-  let obj = visible(5095);
+  let tmp2 = visible;
+  const tmp3 = dependencyMap;
+  let obj = visible(1652);
   let sharedValue = obj.useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = react.useEffect(() => {
@@ -85,7 +101,7 @@ export default function ExploreServersRow(visible) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -128,7 +144,7 @@ export default function ExploreServersRow(visible) {
             }, 500);
           }, 100);
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -147,144 +163,145 @@ export default function ExploreServersRow(visible) {
       rootNavigationRef.navigate("tabs", { screen: "guilds" });
     }
   }, []);
-  let obj2 = visible(5095);
-  class E {
+  const items1 = [closure_11, sharedValue, , ];
+  const useAnimatedStyle = visible(1652).useAnimatedStyle;
+  const tmp10 = visible(1652);
+  items1[2] = visible(5377).withTiming;
+  items1[3] = visible(1652).Easing;
+  let c0;
+  let c1;
+  let c2;
+  [tmp11, tmp12, tmp13, tmp14] = items1;
+  class CaughtUpRowTsx1 {
     constructor() {
-      let Easing;
-      let Easing3;
       let items;
       let num8;
-      let out;
       let num = -80;
-      const obj = sharedValue;
-      if (sharedValue.get()) {
-        const obj2 = { duration: 250, easing: Easing.bezier(0.5, 1.8, 0.5, 1) };
-        const withTiming = timing.withTiming;
-        timing;
-        Easing = ReanimatedRexport2.Easing;
-        num = withTiming(0, obj2);
+      const obj = _undefined;
+      if (_undefined.get()) {
+        const obj2 = { duration: 250, easing: _undefined3.bezier(0.5, 1.8, 0.5, 1) };
+        num = _undefined2(0, obj2);
       }
       const obj3 = { transform: items, opacity: num8 };
       items = [{ translateY: num }];
       num8 = 0;
       if (obj.get()) {
-        const obj4 = { duration: 100, easing: out(Easing3.bezierFn(0.33, 1, 0.68, 1)) };
-        const withTiming2 = timing.withTiming;
-        timing;
-        const Easing2 = ReanimatedRexport2.Easing;
-        out = Easing2.out;
-        Easing3 = ReanimatedRexport2.Easing;
-        num8 = withTiming2(1, obj4);
+        const obj4 = { duration: 100, easing: _undefined3.out(_undefined3.bezierFn(0.33, 1, 0.68, 1)) };
+        num8 = _undefined2(1, obj4);
       }
       return obj3;
     }
   }
-  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(5254).withTiming, Easing: visible(5095).Easing };
-  E.__closure = obj3;
-  E.__workletHash = 6575188656069;
-  E.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(E);
-  let obj4 = visible(5095);
-  const fn = function b() {
-    let Easing;
-    let Easing2;
-    let items;
-    let num = 0;
-    if (sharedValue.get()) {
-      const withDelay = ReanimatedRexport2.withDelay;
-      ReanimatedRexport2;
-      const withSequence = ReanimatedRexport2.withSequence;
-      ReanimatedRexport2;
-      const obj = { duration: 100, easing: Easing.inOut(ReanimatedRexport2.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport2.Easing;
-      const withTimingResult = withTiming(8, obj);
-      const obj2 = { duration: 300, easing: Easing2.out(ReanimatedRexport2.Easing.ease) };
-      const withTiming2 = timing.withTiming;
-      timing;
-      Easing2 = ReanimatedRexport2.Easing;
-      num = withDelay(80, withSequence(withTimingResult, withTiming2(0, obj2)));
+  const items2 = [tmp12, tmp13, tmp14];
+  CaughtUpRowTsx1.__closure = items2;
+  CaughtUpRowTsx1.__workletHash = 808134122268;
+  CaughtUpRowTsx1.__initData = tmp11;
+  const animatedStyle = useAnimatedStyle(CaughtUpRowTsx1);
+  const items3 = [closure_12, sharedValue, , , , ];
+  const useAnimatedStyle2 = tmp2(1652).useAnimatedStyle;
+  tmp2(1652);
+  items3[2] = tmp2(1652).withDelay;
+  items3[3] = tmp2(1652).withSequence;
+  items3[4] = tmp2(5377).withTiming;
+  items3[5] = tmp2(1652).Easing;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  let c3;
+  let c4;
+  [tmp17, tmp18, tmp19, tmp20, tmp21, tmp22] = items3;
+  class CaughtUpRowTsx2 {
+    constructor() {
+      let items;
+      let num = 0;
+      if (_undefined.get()) {
+        const obj = { duration: 100, easing: _undefined5.inOut(_undefined5.ease) };
+        const obj2 = { duration: 300, easing: _undefined5.out(_undefined5.ease) };
+        const tmp5 = _undefined4(8, obj);
+        num = _undefined2(80, _undefined3(tmp5, _undefined4(0, obj2)));
+      }
+      const obj3 = { transform: items };
+      items = [{ translateY: num }];
+      return obj3;
     }
-    const obj3 = { transform: items };
-    items = [{ translateY: num }];
-    return obj3;
-  };
-  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(5095).withDelay, withSequence: visible(5095).withSequence, withTiming: visible(5254).withTiming, Easing: visible(5095).Easing };
-  fn.__closure = obj5;
-  fn.__workletHash = 469742746264;
-  fn.__initData = __initData2;
-  const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  let obj6 = visible(5095);
-  const fn2 = function x() {
-    let Easing;
-    let Easing2;
-    let items;
-    let num = 0;
-    if (sharedValue.get()) {
-      const withDelay = ReanimatedRexport2.withDelay;
-      ReanimatedRexport2;
-      const withSequence = ReanimatedRexport2.withSequence;
-      ReanimatedRexport2;
-      const obj = { duration: 150, easing: Easing.inOut(ReanimatedRexport2.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport2.Easing;
-      const withTimingResult = withTiming(8, obj);
-      const obj2 = { duration: 300, easing: Easing2.out(ReanimatedRexport2.Easing.ease) };
-      const withTiming2 = timing.withTiming;
-      timing;
-      Easing2 = ReanimatedRexport2.Easing;
-      num = withDelay(115, withSequence(withTimingResult, withTiming2(0, obj2)));
+  }
+  const items4 = [tmp18, tmp19, tmp20, tmp21, tmp22];
+  CaughtUpRowTsx2.__closure = items4;
+  CaughtUpRowTsx2.__workletHash = 5492465188513;
+  CaughtUpRowTsx2.__initData = tmp17;
+  const animatedStyle2 = useAnimatedStyle2(CaughtUpRowTsx2);
+  const items5 = [closure_13, sharedValue, , , , ];
+  const useAnimatedStyle3 = tmp2(1652).useAnimatedStyle;
+  tmp2(1652);
+  items5[2] = tmp2(1652).withDelay;
+  items5[3] = tmp2(1652).withSequence;
+  items5[4] = tmp2(5377).withTiming;
+  items5[5] = tmp2(1652).Easing;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  [tmp25, tmp26, tmp27, tmp28, tmp29, tmp30] = items5;
+  class CaughtUpRowTsx3 {
+    constructor() {
+      let items;
+      let num = 0;
+      if (_undefined.get()) {
+        const obj = { duration: 150, easing: _undefined5.inOut(_undefined5.ease) };
+        const obj2 = { duration: 300, easing: _undefined5.out(_undefined5.ease) };
+        const tmp5 = _undefined4(8, obj);
+        num = _undefined2(115, _undefined3(tmp5, _undefined4(0, obj2)));
+      }
+      const obj3 = { transform: items };
+      items = [{ translateY: num }];
+      return obj3;
     }
-    const obj3 = { transform: items };
-    items = [{ translateY: num }];
-    return obj3;
-  };
-  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(5095).withDelay, withSequence: visible(5095).withSequence, withTiming: visible(5254).withTiming, Easing: visible(5095).Easing };
-  fn2.__closure = obj7;
-  fn2.__workletHash = 14933607481025;
-  fn2.__initData = __initData3;
-  const animatedStyle2 = obj6.useAnimatedStyle(fn2);
-  let obj8 = visible(5596);
-  const token = obj8.useToken(sharedValue(575).colors.BACKGROUND_BRAND);
-  const obj10 = { style: tmp.container, children: items5 };
-  const obj11 = { style: tmp.textContainer, children: items2 };
-  const obj9 = { children: items7 };
-  const obj12 = { style: items1, children: closure_7(visible(14861).FlashIcon, obj13) };
-  items1 = [tmp.iconWrapper, animatedStyle];
-  View = sharedValue(5095).View;
-  obj13 = { size: "custom", style: tmp.icon, color: "background-brand" };
-  items2 = [closure_7(View, obj12), , ];
-  const obj14 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: intl.string(visible(1113).t.xjxffq) };
-  items3 = [tmp.headerText, animatedStyle1];
-  intl = visible(1113).intl;
-  items2[1] = closure_7(closure_9, obj14);
-  const obj15 = { variant: "text-md/normal", color: "text-default", style: items4, children: intl2.string(visible(1113).t.sAApb0) };
-  items4 = [tmp.subtitleText, animatedStyle2];
-  intl2 = visible(1113).intl;
-  items2[2] = closure_7(closure_9, obj15);
-  items5 = [closure_8(View, obj11), ];
-  const obj16 = { style: tmp.buttonContainer, children: items6 };
-  const obj17 = { size: "md", text: intl3.string(visible(1113).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
-  const Button = visible(5634).Button;
-  intl3 = visible(1113).intl;
-  items6 = [closure_7(Button, obj17), ];
-  const obj18 = { size: "md", text: intl4.string(visible(1113).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
-  const Button2 = visible(5634).Button;
-  intl4 = visible(1113).intl;
-  items6[1] = closure_7(Button2, obj18);
-  items5[1] = closure_8(View, obj16);
-  items7 = [closure_8(View, obj10), closure_7(visible(18567).Separator, {}), ];
-  const obj19 = { style: tmp.gradient, start: visible(1092).VerticalGradient.START, end: visible(1092).VerticalGradient.END, colors: items8, pointerEvents: "none" };
-  const tmp12 = sharedValue(5587);
-  items8 = [, ];
-  const obj20 = sharedValue(671)(token);
-  const alphaResult = obj20.alpha(0.2);
-  items8[0] = alphaResult.hex();
-  const obj22 = sharedValue(671)(token);
-  const alphaResult1 = obj22.alpha(0);
-  items8[1] = alphaResult1.hex();
-  items7[2] = closure_7(tmp12, obj19);
-  return closure_8(View, obj9);
+  }
+  const items6 = [tmp26, tmp27, tmp28, tmp29, tmp30];
+  CaughtUpRowTsx3.__closure = items6;
+  CaughtUpRowTsx3.__workletHash = 13859124718008;
+  CaughtUpRowTsx3.__initData = tmp25;
+  const animatedStyle3 = useAnimatedStyle3(CaughtUpRowTsx3);
+  const tmp2Result4 = tmp2(5719);
+  const token = tmp2Result4.useToken(sharedValue(575).colors.BACKGROUND_BRAND);
+  let obj2 = { children: items13 };
+  let obj3 = { style: tmp.container, children: items11 };
+  let obj4 = { style: tmp.textContainer, children: items8 };
+  let obj5 = { style: items7, children: closure_7(tmp2(14992).FlashIcon, obj6) };
+  items7 = [tmp.iconWrapper, animatedStyle];
+  View = sharedValue(1652).View;
+  obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
+  items8 = [closure_7(View, obj5), , ];
+  let obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items9, children: intl.string(tmp2(1113).t.xjxffq) };
+  items9 = [tmp.headerText, animatedStyle2];
+  intl = tmp2(1113).intl;
+  items8[1] = closure_7(closure_9, obj7);
+  let obj8 = { variant: "text-md/normal", color: "text-default", style: items10, children: intl2.string(tmp2(1113).t.sAApb0) };
+  items10 = [tmp.subtitleText, animatedStyle3];
+  intl2 = tmp2(1113).intl;
+  items8[2] = closure_7(closure_9, obj8);
+  items11 = [closure_8(View, obj4), ];
+  const obj9 = { style: tmp.buttonContainer, children: items12 };
+  const obj10 = { size: "md", text: intl3.string(tmp2(1113).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
+  const Button = tmp2(5754).Button;
+  intl3 = tmp2(1113).intl;
+  items12 = [closure_7(Button, obj10), ];
+  const obj11 = { size: "md", text: intl4.string(tmp2(1113).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
+  const Button2 = tmp2(5754).Button;
+  intl4 = tmp2(1113).intl;
+  items12[1] = closure_7(Button2, obj11);
+  items11[1] = closure_8(View, obj9);
+  items13 = [closure_8(View, obj3), closure_7(tmp2(18723).Separator, {}), ];
+  const obj12 = { style: tmp.gradient, start: tmp2(1092).VerticalGradient.START, end: tmp2(1092).VerticalGradient.END, colors: items14, pointerEvents: "none" };
+  const tmp33 = sharedValue(5710);
+  items14 = [, ];
+  const obj14 = sharedValue(671)(token);
+  const alphaResult = obj14.alpha(0.2);
+  items14[0] = alphaResult.hex();
+  const obj16 = sharedValue(671)(token);
+  const alphaResult1 = obj16.alpha(0);
+  items14[1] = alphaResult1.hex();
+  items13[2] = closure_7(tmp33, obj12);
+  return closure_8(View, obj2);
 };

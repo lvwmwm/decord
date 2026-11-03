@@ -1,26 +1,26 @@
-// Module ID: 19900
-// Function ID: 19901
+// Module ID: 20050
+// Function ID: 20051
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 17196, 21, 5014, 575, 5021, 5253, 5624, 1113, 19901, 19905, 19909, 19913, 19917, 19921, 2]
+// Dependencies: [19, 17, 17339, 21, 5141, 575, 5148, 5376, 5747, 1113, 20051, 20055, 20059, 20063, 20067, 20071, 2]
 // Exports: default
 
-// Module 19900 (CreatorBenefitsSection)
+// Module 20050 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5021 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
-import AvatarRoseExample from "AvatarRoseExample" /* 19901 */;
-import AvatarLokyExample from "AvatarLokyExample" /* 19905 */;
-import AvatarGraggleExample from "AvatarGraggleExample" /* 19909 */;
-import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 19913 */;
-import StarKeySpotIllustration from "StarKeySpotIllustration" /* 19917 */;
-import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 19921 */;
+import shared from "shared" /* 5148 */;
+import useThemeDefault from "useTheme" /* 5376 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
+import AvatarRoseExample from "AvatarRoseExample" /* 20051 */;
+import AvatarLokyExample from "AvatarLokyExample" /* 20055 */;
+import AvatarGraggleExample from "AvatarGraggleExample" /* 20059 */;
+import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20063 */;
+import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20067 */;
+import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -48,13 +48,13 @@ function EarningPreview() {
   const tmp6Result = shared;
   items1[2] = tmp6Result.isThemeDark(tmp2) ? tmp3.earningMetricsDarkMode : tmp3.earningMetricsLightMode;
   const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-  const Text = tmp6(5624).Text;
+  const Text = tmp6(5747).Text;
   intl = tmp6(1113).intl;
   const items2 = [hasOwnProperty(Text, obj4), ];
-  const Text2 = tmp6(5624).Text;
+  const Text2 = tmp6(5747).Text;
   const obj5 = { children: items2 };
   const tmp6Result2 = shared;
-  const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/extrabold", children: intl2.string(intl3.t.LdjJG5) };
+  const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/semibold", children: intl2.string(intl3.t.LdjJG5) };
   intl2 = tmp6(1113).intl;
   items2[1] = hasOwnProperty(Text2, obj6);
   items3 = [metroRequire(View, obj5), hasOwnProperty(AvatarRoseExample.AvatarRoseExample, { width: 54 })];
@@ -108,12 +108,12 @@ function RevenueShareBenefit() {
   ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp3);
   const items1 = [tmp3.revenueShare, ];
   const Text = Text_Text.Text;
-  const obj3 = { style: items1, variant: "heading-xxl/extrabold", color: "status-positive", children: `${closure_4}%` };
+  const obj3 = { style: items1, variant: "heading-xxl/semibold", color: "status-positive", children: `${closure_4}%` };
   const obj2 = shared;
   items1[1] = obj2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode;
   items2 = [hasOwnProperty(Text, obj3), , ];
   const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
-  const Text2 = tmp7(5624).Text;
+  const Text2 = tmp7(5747).Text;
   intl = tmp7(1113).intl;
   items2[1] = hasOwnProperty(Text2, obj4);
   const obj5 = { style: tmp3.revenueShareIllo, children: hasOwnProperty(StarCoinsSpotIllustration.StarCoinsSpotIllustration, { width: 128 }) };

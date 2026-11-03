@@ -1,17 +1,17 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7563
+// Function ID: 7564
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 4881, 4885, 4946, 1383, 4950, 1072, 1084, 4951, 504, 2]
+// Dependencies: [32, 5008, 5012, 5073, 1385, 5077, 1072, 1084, 5078, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 7439 (MemberSafetyPermissionsUtils)
+// Module 7563 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import MemberSafetyConstants from "MemberSafetyConstants" /* 4950 */;
+import GuildRecord from "GuildRecord" /* 5008 */;
+import MemberSafetyConstants from "MemberSafetyConstants" /* 5077 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require, dependencyMap;
 
 let c10;
 let c9;
-const f90672 = () => {
+const f91009 = () => {
   let obj;
   let obj2;
   const items = [GuildStore, UserStore];
@@ -106,7 +106,7 @@ export function useCanAccessMemberSafetyPage(id) {
   const items = [GuildStore, UserStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f90672, items1);
+  return obj.useStateFromStores(items, f91009, items1);
 }
 export function useCanAccessBulkBanningFeature(arg0) {
   let closure_0;
@@ -114,7 +114,7 @@ export function useCanAccessBulkBanningFeature(arg0) {
   const obj = require("get initialized");
   let items = [GuildStore, UserStore];
   const items1 = [arg0];
-  let stateFromStores = obj.useStateFromStores(items, f90672, items1);
+  let stateFromStores = obj.useStateFromStores(items, f91009, items1);
   const obj2 = require("get initialized");
   const items2 = [GuildStore, UserStore];
   const items3 = [arg0];

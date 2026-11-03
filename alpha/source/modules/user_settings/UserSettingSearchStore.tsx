@@ -1,10 +1,10 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16733
+// Function ID: 16734
 // Name: UserSettingSearchStore
-// Dependencies: [5211, 2]
+// Dependencies: [5334, 2]
 
-// Module 16590 (UserSettingSearchStore)
-import ZustandStore from "ZustandStore" /* 5211 */;
+// Module 16733 (UserSettingSearchStore)
+import ZustandStore from "ZustandStore" /* 5334 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => ({ query: "", isActive: false, isFocused: false, selected: null }));

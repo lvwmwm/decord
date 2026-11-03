@@ -1,12 +1,12 @@
-// Module ID: 10182
-// Function ID: 10183
+// Module ID: 10312
+// Function ID: 10313
 // Name: handleContentLinking
-// Dependencies: [5, 6932, 1072, 6744, 7421, 1099, 10183, 10184, 2]
+// Dependencies: [5, 7052, 1072, 6864, 7545, 1099, 10313, 10314, 2]
 // Exports: default
 
-// Module 10182 (handleContentLinking)
+// Module 10312 (handleContentLinking)
 import Constants from "Constants" /* 1072 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6932 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _handleContentLinking() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ let obj = function _handleContentLinking() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             if (safe) {
               messageId = 3;

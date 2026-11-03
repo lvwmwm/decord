@@ -1,17 +1,17 @@
-// Module ID: 7992
-// Function ID: 7993
+// Module ID: 8116
+// Function ID: 8117
 // Name: AgeVerificationModal
-// Dependencies: [19, 6728, 21, 5198, 6726, 5709, 7979, 5014, 575, 6744, 7558, 1113, 7169, 2]
+// Dependencies: [19, 6848, 21, 5321, 6846, 5829, 8103, 5141, 575, 6864, 7682, 1113, 7290, 2]
 // Exports: default
 
-// Module 7992 (AgeVerificationModal)
+// Module 8116 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6728 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5321 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6848 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -116,7 +116,7 @@ function AgeVerifyScreen(onComplete) {
     }
     return tmp2;
   }, []);
-  return jsx(onClose(isExpressiveModalV2[6]), { allowsInlineMediaPlayback: true, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true, source: { uri: webviewUrl }, onMessage: callback2, onShouldStartLoadWithRequest: callback3, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n", injectedJavaScriptBeforeContentLoaded: "\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" });
+  return jsx(onClose(isExpressiveModalV2[6]), { allowsInlineMediaPlayback: true, mediaPlaybackRequiresUserAction: false, domStorageEnabled: true, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true, source: { uri: webviewUrl }, onMessage: callback2, onShouldStartLoadWithRequest: callback3, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n", injectedJavaScriptBeforeContentLoaded: "\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" });
 }
 let closure_4 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;
 let jsx = Fragment.jsx;

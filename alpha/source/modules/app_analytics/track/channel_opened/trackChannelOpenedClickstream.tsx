@@ -1,13 +1,13 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8465
+// Function ID: 8466
 // Name: trackChannelOpenedClickstream
-// Dependencies: [4863, 1072, 4870, 7645, 2]
+// Dependencies: [4990, 1072, 4997, 7769, 2]
 // Exports: default
 
-// Module 8341 (trackChannelOpenedClickstream)
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import Clickstream from "Clickstream" /* 7645 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+// Module 8465 (trackChannelOpenedClickstream)
+import ChannelConstants from "ChannelConstants" /* 4997 */;
+import Clickstream from "Clickstream" /* 7769 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -21,29 +21,31 @@ export default function trackChannelOpenedClickstream(channelId) {
   let type;
   channelId = channelId.channelId;
   if (StaticChannelRoute.CONJURE !== channelId) {
-    if (StaticChannelRoute.CHANNEL_BROWSER !== channelId) {
-      if (StaticChannelRoute.GUILD_HOME !== channelId) {
-        if (StaticChannelRoute.GUILD_SHOP !== channelId) {
-          if (StaticChannelRoute.GAME_SHOP !== channelId) {
-            if (StaticChannelRoute.MEMBER_APPLICATIONS !== channelId) {
-              if (StaticChannelRoute.ROLE_SUBSCRIPTIONS !== channelId) {
-                if (StaticChannelRoute.CUSTOMIZE_COMMUNITY !== channelId) {
-                  if (StaticChannelRoute.MEMBER_SAFETY !== channelId) {
-                    if (StaticChannelRoute.GUILD_ONBOARDING !== channelId) {
-                      if (StaticChannelRoute.GUILD_BOOSTS !== channelId) {
-                        const obj = { channel_id: channelId, channel_type: type };
-                        const trackClickstream = Clickstream.trackClickstream;
-                        const CHANNEL_OPENED_CLICKSTREAM = constants2.CHANNEL_OPENED_CLICKSTREAM;
-                        Clickstream;
-                        const channel = ChannelStore.getChannel(channelId);
-                        type = undefined;
-                        if (channel != null) {
-                          type = channel.type;
+    if (StaticChannelRoute.CONJURE_PROJECT !== channelId) {
+      if (StaticChannelRoute.CHANNEL_BROWSER !== channelId) {
+        if (StaticChannelRoute.GUILD_HOME !== channelId) {
+          if (StaticChannelRoute.GUILD_SHOP !== channelId) {
+            if (StaticChannelRoute.GAME_SHOP !== channelId) {
+              if (StaticChannelRoute.MEMBER_APPLICATIONS !== channelId) {
+                if (StaticChannelRoute.ROLE_SUBSCRIPTIONS !== channelId) {
+                  if (StaticChannelRoute.CUSTOMIZE_COMMUNITY !== channelId) {
+                    if (StaticChannelRoute.MEMBER_SAFETY !== channelId) {
+                      if (StaticChannelRoute.GUILD_ONBOARDING !== channelId) {
+                        if (StaticChannelRoute.GUILD_BOOSTS !== channelId) {
+                          const obj = { channel_id: channelId, channel_type: type };
+                          const trackClickstream = Clickstream.trackClickstream;
+                          const CHANNEL_OPENED_CLICKSTREAM = constants2.CHANNEL_OPENED_CLICKSTREAM;
+                          Clickstream;
+                          const channel = ChannelStore.getChannel(channelId);
+                          type = undefined;
+                          if (channel != null) {
+                            type = channel.type;
+                          }
+                          if (type == null) {
+                            type = constants.UNKNOWN;
+                          }
+                          trackClickstream(CHANNEL_OPENED_CLICKSTREAM, obj);
                         }
-                        if (type == null) {
-                          type = constants.UNKNOWN;
-                        }
-                        trackClickstream(CHANNEL_OPENED_CLICKSTREAM, obj);
                       }
                     }
                   }

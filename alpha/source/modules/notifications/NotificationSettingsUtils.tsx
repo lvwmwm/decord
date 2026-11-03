@@ -1,15 +1,15 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16423
+// Function ID: 16424
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 16276, 16282, 16283, 504, 1447, 2]
+// Dependencies: [32, 19, 16419, 16424, 16425, 504, 1449, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useIsDeclarativeSettingsUIAvailable, useNotifCategoryVisibility, useNotifSettingVisibility
 
-// Module 16281 (notifications/NotificationSettingsUtils)
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16282 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16283 */;
+// Module 16423 (notifications/NotificationSettingsUtils)
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16424 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16425 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16276 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16419 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,14 +33,14 @@ function getNamedExperiment(experiment) {
   }
 }
 ({ NOTIF_CATEGORIES: closure_4, NOTIF_SETTING_MAPPING: hasOwnProperty, NOTIF_SETTING_REDESIGN_MAPPING: metroRequire, NOTIF_SETTINGS: metroImportDefault } = NotificationSettingsConstants);
-let result = size.fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");
+const result = size.fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");
 
 export function getAssignedNotifSettingsAndMappings() {
   let tmp14;
   const settings = [];
   const mappings = [];
   const obj = DeclarativeNotificationSettingsRedesignExperiment;
-  const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("getAssignedNotifSettingsAndMappings");
+  const redesignState1 = obj.isDeclarativeNotificationSettingsRedesignEnabled("getAssignedNotifSettingsAndMappings");
   set = new Set();
   const iter = metroImportDefault[Symbol.iterator]();
   const nextResult = iter.next();
@@ -58,7 +58,7 @@ export function getAssignedNotifSettingsAndMappings() {
     }
     continue;
   }
-  if (result) {
+  if (redesignState1) {
     const obj2 = {};
     const merged = Object.assign(tmp13);
     const merged1 = Object.assign(metroRequire);
@@ -90,11 +90,11 @@ export function getAssignedNotifSettingsAndMappings() {
     let tmp35 = item10098;
     let tmp36 = null != item10098.redesignState;
     if (tmp36) {
-      tmp36 = tmp35.redesignState !== result;
+      tmp36 = tmp35.redesignState !== redesignState1;
     }
     if (!tmp36) {
       let obj6 = { stringId: tmp35.string_id, title: null };
-      if (result) {
+      if (redesignState1) {
         if (null != tmp35.redesignTitle) {
           obj6.title = tmp35.redesignTitle;
           let tmp38Result = tmp38(obj6);
@@ -104,7 +104,7 @@ export function getAssignedNotifSettingsAndMappings() {
     }
     continue;
   }
-  return { categories, settings, mappings };
+  return { categories, settings, mappings, redesignState: redesignState1 };
 }
 export function useIsDeclarativeSettingsUIAvailable(AndroidMessageNotificationsSetting) {
   const obj = DeclarativeNotificationSettingsRedesignExperiment;

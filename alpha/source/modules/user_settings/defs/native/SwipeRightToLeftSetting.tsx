@@ -1,15 +1,15 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17611
+// Function ID: 17612
 // Name: SwipeRightToLeftSetting
-// Dependencies: [8432, 1072, 4839, 1196, 1113, 11540, 17469, 2]
+// Dependencies: [8556, 1072, 4966, 1196, 1113, 11677, 17612, 2]
 
-// Module 17468 (SwipeRightToLeftSetting)
+// Module 17611 (SwipeRightToLeftSetting)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

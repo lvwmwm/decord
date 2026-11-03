@@ -1,21 +1,21 @@
-// Module ID: 10848
-// Function ID: 10849
+// Module ID: 10978
+// Function ID: 10979
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 4885, 6772, 21, 5014, 575, 10849, 504, 7419, 1113, 3868, 5258, 7366, 7321, 7292, 5624, 5634, 5275, 7253, 7082, 6845, 7058, 7061, 2]
+// Dependencies: [5, 32, 19, 17, 5012, 6892, 21, 5141, 575, 10979, 504, 7543, 1113, 3995, 5381, 7486, 7441, 7412, 5747, 5754, 5398, 7373, 7208, 6965, 7184, 7187, 2]
 // Exports: default
 
-// Module 10848 (ConjureRemixSheet)
+// Module 10978 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import TableRadioRow from "TableRadioRow" /* 7061 */;
-import ConjureRemix from "ConjureRemix" /* 10849 */;
+import TableRadioRow from "TableRadioRow" /* 7187 */;
+import ConjureRemix from "ConjureRemix" /* 10979 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import SortedGuildStore from "SortedGuildStore" /* 6892 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3, flattenedGuildIds;
@@ -137,7 +137,7 @@ export default function ConjureRemixSheet(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -188,7 +188,7 @@ export default function ConjureRemixSheet(project) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp27) {
         c3 = 3;
         throw tmp27;

@@ -1,30 +1,30 @@
-// Module ID: 16795
-// Function ID: 16796
+// Module ID: 16938
+// Function ID: 16939
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7716, 21, 8643, 13363, 5715, 15477, 8645, 8015, 5740, 13365, 5014, 575, 5624, 13362, 1113, 2538, 8370, 8372, 7972, 7973, 13208, 5634, 6744, 6998, 11482, 2]
+// Dependencies: [19, 17, 7840, 21, 8767, 13499, 5835, 15618, 8769, 8139, 5860, 13501, 5141, 575, 5747, 13498, 1113, 2667, 8494, 8496, 8096, 8097, 13344, 5754, 6864, 7124, 11619, 2]
 // Exports: default
 
-// Module 16795 (FamilyCenterModalDataTooltip)
+// Module 16938 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2538 from "module_2538" /* 2538 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FriendsIcon from "FriendsIcon" /* 5715 */;
-import ClockIcon from "ClockIcon" /* 5740 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
-import CreditCardIcon from "CreditCardIcon" /* 8015 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8370 */;
-import ChatIcon from "ChatIcon" /* 8643 */;
-import ThreadIcon from "ThreadIcon" /* 8645 */;
-import Modal2 from "Modal" /* 11482 */;
-import PhoneIcon from "PhoneIcon" /* 13363 */;
-import GiftIcon from "GiftIcon" /* 13365 */;
-import ServerGridIcon from "ServerGridIcon" /* 15477 */;
+import _modDef2667 from "module_2667" /* 2667 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FriendsIcon from "FriendsIcon" /* 5835 */;
+import ClockIcon from "ClockIcon" /* 5860 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
+import CreditCardIcon from "CreditCardIcon" /* 8139 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8494 */;
+import ChatIcon from "ChatIcon" /* 8767 */;
+import ThreadIcon from "ThreadIcon" /* 8769 */;
+import Modal2 from "Modal" /* 11619 */;
+import PhoneIcon from "PhoneIcon" /* 13499 */;
+import GiftIcon from "GiftIcon" /* 13501 */;
+import ServerGridIcon from "ServerGridIcon" /* 15618 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ function Row(arg0) {
   items = [hasOwnProperty(View, obj2), ];
   const obj4 = { style: tmp.content, children: items1 };
   items1 = [, ];
-  const obj5 = { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header };
+  const obj5 = { style: tmp.header, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: header };
   items1[0] = hasOwnProperty(Text_Text.Text, obj5);
   items1[1] = hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: description });
   items[1] = metroRequire(View, obj4);
@@ -78,9 +78,9 @@ function FamilyCenterModalDataTooltipScreen() {
   const tmp2 = require("useAgeSpecificText");
   const useAgeSpecificText = tmp2.useAgeSpecificText;
   const intl = require("intl").intl;
-  const stringResult = intl.string(_modDef2538.n6LOrh);
+  const stringResult = intl.string(_modDef2667.n6LOrh);
   const intl2 = require("intl").intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2538.JNLpDZ));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2667.JNLpDZ));
   _require = useIsInAdultAgeGroupDefault();
   obj = require("FamilyCenterUtils");
   const sortedActivityTypeConfigs = obj.getSortedActivityTypeConfigs();
@@ -90,7 +90,7 @@ function FamilyCenterModalDataTooltipScreen() {
   obj4 = { style: tmp.container, children: items };
   const ModalContent = require("ModalContent").ModalContent;
   items = [, ];
-  const obj5 = { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText };
+  const obj5 = { style: tmp.groupHeader, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: ageSpecificText };
   items[0] = closure_5(require("Text/Text").Text, obj5);
   items[1] = sortedActivityTypeConfigs.map((item) => {
     let tmp;

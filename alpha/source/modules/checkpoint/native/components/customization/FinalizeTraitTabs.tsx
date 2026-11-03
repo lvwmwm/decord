@@ -1,22 +1,22 @@
-// Module ID: 13689
-// Function ID: 13690
+// Module ID: 13829
+// Function ID: 13830
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6066, 21, 6434, 5258, 13690, 1994, 5014, 575, 1375, 1113, 13677, 5624, 5596, 13691, 3092, 11414, 2]
+// Dependencies: [19, 17, 6186, 21, 6554, 5381, 13830, 2123, 5141, 575, 1377, 1113, 13807, 5747, 5719, 13831, 3219, 11552, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 13689 (FinalizeTraitTabs)
+// Module 13829 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
-import CheckpointPressable from "CheckpointPressable" /* 13677 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13691 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6554 */;
+import CheckpointPressable from "CheckpointPressable" /* 13807 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13831 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import CheckpointConstants from "CheckpointConstants" /* 6186 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ function TraitTab(arg0) {
   const obj3 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || disabled, onPress, accessibilityRole: "tab", accessibilityHint: joined, accessibilityState: { selected: isActive, disabled }, shadowColor: hasOwnProperty, children: items3 };
   items1 = [tmp.tab, isActive && tmp.tabActive, disabled && tmp.tabDisabled];
   const obj4 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5747).Text;
   items2 = [tmp.tabLabel, , ];
   const tmp9 = metroImportDefault;
   if (isActive) {
@@ -91,7 +91,7 @@ function TraitTab(arg0) {
 let items = [CheckpointCustomizationUtils.CheckpointCustomizationOption.BASE, CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT_COLOR];
 let closure_10 = items.length + 1;
 let createStyles = createStyles_mod;
-let obj = { scrollContent: obj2, row: obj3, tabContainerActive: { paddingRight: 0, paddingBottom: 0 }, tab: obj4, tabActive: { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY }, tabDisabled: { backgroundColor: nativeDefault.colors.BLACK, borderColor: nativeDefault.colors.BORDER_NORMAL }, tabLabel: { color: nativeDefault.colors.BLACK, textTransform: "uppercase" }, tabLabelActive: { color: CHECKPOINT_PRIMARY, textTransform: "uppercase" }, tabLabelDisabled: { color: nativeDefault.colors.TEXT_SUBTLE } };
+let obj = { scroll: { flexGrow: 0 }, scrollContent: obj2, row: obj3, tabContainerActive: { paddingRight: 0, paddingBottom: 0 }, tab: obj4, tabActive: { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 1, borderColor: CHECKPOINT_PRIMARY }, tabDisabled: { backgroundColor: nativeDefault.colors.BLACK, borderColor: nativeDefault.colors.BORDER_NORMAL }, tabLabel: { color: nativeDefault.colors.BLACK, textTransform: "uppercase" }, tabLabelActive: { color: CHECKPOINT_PRIMARY, textTransform: "uppercase" }, tabLabelDisabled: { color: nativeDefault.colors.TEXT_SUBTLE } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
@@ -156,7 +156,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   if (tmp2Result6.isIOS()) {
     str = "tabbar";
   }
-  let obj = { horizontal: true, accessibilityRole: str, alwaysBounceHorizontal: false, contentContainerStyle: tmp.scrollContent, children: tmp13(tmp14, obj2) };
+  let obj = { horizontal: true, accessibilityRole: str, alwaysBounceHorizontal: false, style: tmp.scroll, contentContainerStyle: tmp.scrollContent, children: tmp13(tmp14, obj2) };
   obj2 = { style: tmp.row, accessibilityRole: str2, children: items };
   str2 = undefined;
   tmp13 = closure_8;
@@ -209,7 +209,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
         } else {
           const obj = { selectedOption: activeCustomizationOption, onSelectOption: importDefault };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13690, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(13830, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },
@@ -218,7 +218,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   const tmp15 = TraitTab;
   if (hasItem) {
     const intl = tmp2(tmp3[11]).intl;
-    stringResult = intl.string(require("module_3092")["iXpQc+"]);
+    stringResult = intl.string(require("module_3219")["iXpQc+"]);
   } else {
     const tmp2Result8 = tmp2(tmp3[4]);
     stringResult = tmp2Result8.getCustomizationOptionName(activeCustomizationOption);
@@ -228,7 +228,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
   }
   if (nitroLockedMessage == null) {
     const intl2 = tmp2(tmp3[11]).intl;
-    nitroLockedMessage = intl2.string(require("module_3092")["8cGmXF"]);
+    nitroLockedMessage = intl2.string(require("module_3219")["8cGmXF"]);
   }
   items[1] = closure_7(tmp15, obj3);
   return closure_7(tmp12, obj);

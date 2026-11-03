@@ -1,21 +1,21 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14756
+// Function ID: 14757
 // Name: Header
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 1409, 1187, 5624, 9202, 1396, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1411, 1187, 5747, 9330, 1398, 1113, 2]
 // Exports: default
 
-// Module 14625 (Header)
+// Module 14756 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BotTagDefault from "BotTag" /* 9202 */;
+import FlagUtils from "FlagUtils" /* 1398 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import BotTagDefault from "BotTag" /* 9330 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -75,7 +75,7 @@ export default function Header(accountScopes) {
   items2 = [metroRequire(View, obj4), , ];
   const obj11 = { style: tmp.applicationNameWrapper, children: items3 };
   items3 = [, ];
-  const obj12 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: application.name };
+  const obj12 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: application.name };
   items3[0] = hasOwnProperty(Text_Text.Text, obj12);
   let tmp8Result = null;
   if (null != bot) {
@@ -90,7 +90,7 @@ export default function Header(accountScopes) {
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(5624).Text;
+  const Text = tmp9(5747).Text;
   if (accountScopes.length > 0) {
     const intl2 = tmp9(1113).intl;
     stringResult = intl2.string(tmp9(1113).t.jFbDnJ);
@@ -98,6 +98,6 @@ export default function Header(accountScopes) {
     const intl = tmp9(1113).intl;
     stringResult = intl.string(tmp9(1113).t["X+Fdpo"]);
   }
-  items2[2] = hasOwnProperty(Text, { variant: "heading-md/normal", color: "text-default", children: stringResult });
+  items2[2] = hasOwnProperty(Text, { variant: "heading-md/medium", color: "text-default", children: stringResult });
   return metroRequire(View, obj3);
 };

@@ -1,13 +1,13 @@
-// Module ID: 4888
-// Function ID: 4889
+// Module ID: 5015
+// Function ID: 5016
 // Name: FavoritesUtils
-// Dependencies: [4876, 1072, 1113, 2]
+// Dependencies: [5003, 1072, 1113, 2]
 // Exports: getFavoritesAwareGuildName, isFavoritableChannel, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
 
-// Module 4888 (FavoritesUtils)
+// Module 5015 (FavoritesUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import FavoritesConstants from "FavoritesConstants" /* 4876 */;
+import FavoritesConstants from "FavoritesConstants" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 const FAVORITES_RAW_GUILD_ID = FavoritesConstants.FAVORITES_RAW_GUILD_ID;

@@ -1,20 +1,20 @@
-// Module ID: 17823
-// Function ID: 17824
+// Module ID: 17966
+// Function ID: 17967
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 5014, 5634, 6027, 6977, 5624, 12785, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 5754, 6147, 7103, 5747, 12921, 2]
 // Exports: default
 
-// Module 17823 (UserSettingsDesignSystemAIShimmer)
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import AIShimmer from "AIShimmer" /* 12785 */;
+// Module 17966 (UserSettingsDesignSystemAIShimmer)
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import Card_Card from "Card/Card" /* 7103 */;
+import AIShimmer from "AIShimmer" /* 12921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -93,7 +93,7 @@ export default function UserSettingsDesignSystemAIShimmer() {
   const Card = Card_Card.Card;
   obj4 = { children: items };
   Stack2 = Stack_Stack.Stack;
-  items = [metroRequire(Text_Text.Text, { variant: "text-lg/bold", children: "Variant" }), metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any Mana text variant. The glyph band scales with the font size. Default `text-md/normal`." }), , ];
+  items = [metroRequire(Text_Text.Text, { variant: "text-lg/semibold", children: "Variant" }), metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any Mana text variant. The glyph band scales with the font size. Default `text-md/normal`." }), , ];
   const obj5 = { options, value: first, onChange: tmp5 };
   items[2] = metroRequire(Picker, obj5);
   const obj6 = { children: metroRequire(AIShimmer.AIShimmer, obj7) };
@@ -104,7 +104,7 @@ export default function UserSettingsDesignSystemAIShimmer() {
   const Card2 = Card_Card.Card;
   obj9 = { children: items2 };
   Stack3 = Stack_Stack.Stack;
-  items2 = [metroRequire(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }), metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The text and moving glyph band can use different colors." }), metroRequire(Text_Text.Text, { variant: "text-md/medium", children: "Text color" }), , , , ];
+  items2 = [metroRequire(Text_Text.Text, { variant: "text-lg/semibold", children: "Colors" }), metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The text and moving glyph band can use different colors." }), metroRequire(Text_Text.Text, { variant: "text-md/medium", children: "Text color" }), , , , ];
   const obj10 = { options: options2, value: first1, onChange: tmp8 };
   items2[3] = metroRequire(Picker, obj10);
   items2[4] = metroRequire(Text_Text.Text, { variant: "text-md/medium", children: "Glyph color" });
@@ -118,7 +118,7 @@ export default function UserSettingsDesignSystemAIShimmer() {
   const Card3 = Card_Card.Card;
   obj15 = { children: items3 };
   Stack4 = Stack_Stack.Stack;
-  items3 = [metroRequire(Text_Text.Text, { variant: "text-lg/bold", children: "Manual Trigger" }), metroImportDefault(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: ["`delay=", null, "` turns off automatic changes. Use play() to run the next animation."] }), , ];
+  items3 = [metroRequire(Text_Text.Text, { variant: "text-lg/semibold", children: "Manual Trigger" }), metroImportDefault(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: ["`delay=", null, "` turns off automatic changes. Use play() to run the next animation."] }), , ];
   const obj16 = { style: tmp.buttonRow, children: items4 };
   items4 = [, ];
   const obj17 = {

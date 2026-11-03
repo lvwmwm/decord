@@ -1,20 +1,20 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 14048
+// Function ID: 14049
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1383, 21, 5014, 575, 1375, 1379, 10730, 9062, 6980, 1113, 13918, 11489, 5624, 5023, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 575, 1377, 1380, 10860, 9190, 7106, 1113, 14049, 11626, 5747, 5150, 2]
 
-// Module 13917 (NewMessagesTagListInput)
+// Module 14048 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10730 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10860 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

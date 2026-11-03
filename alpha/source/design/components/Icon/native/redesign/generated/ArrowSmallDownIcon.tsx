@@ -1,14 +1,14 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 13182
+// Function ID: 13183
 // Name: ArrowSmallDownIcon
-// Dependencies: [19, 21, 575, 5716, 13047, 2]
+// Dependencies: [19, 21, 575, 5836, 13183, 2]
 // Exports: ArrowSmallDownIcon
 
-// Module 13046 (ArrowSmallDownIcon)
+// Module 13182 (ArrowSmallDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 13047 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 13183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

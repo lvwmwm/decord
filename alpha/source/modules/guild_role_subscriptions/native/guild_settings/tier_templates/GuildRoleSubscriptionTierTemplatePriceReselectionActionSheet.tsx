@@ -1,21 +1,20 @@
-// Module ID: 20004
-// Function ID: 20005
+// Module ID: 20154
+// Function ID: 20155
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1083, 21, 5014, 575, 5272, 5275, 5624, 1113, 1187, 7413, 7058, 7061, 17220, 6767, 5634, 5258, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5141, 575, 5395, 5398, 5747, 1113, 1187, 7537, 7184, 7187, 17363, 6887, 5754, 5381, 2]
 // Exports: default
 
-// Module 20004 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 20154 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -56,7 +55,7 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   let obj = { backdropOpacity: 0.8, startExpanded: true, children: closure_7(View, obj2) };
   obj2 = { style: tmp.container, children: closure_8(BottomSheetScrollView, obj3) };
   const tmp4 = tmp2[1];
-  BottomSheet = selectedTemplate(newPricesToPick[7]).BottomSheet;
+  const BottomSheet = selectedTemplate(newPricesToPick[7]).BottomSheet;
   obj3 = { contentContainerStyle: tmp.content, children: items };
   BottomSheetScrollView = selectedTemplate(newPricesToPick[8]).BottomSheetScrollView;
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(selectedTemplate(newPricesToPick[10]).t["5WZ9Ct"], obj5) };

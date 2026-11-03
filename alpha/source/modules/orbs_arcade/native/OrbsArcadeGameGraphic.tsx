@@ -1,15 +1,15 @@
-// Module ID: 17043
-// Function ID: 17044
+// Module ID: 17186
+// Function ID: 17187
 // Name: OrbsArcadeGameGraphic
-// Dependencies: [19, 17, 21, 5014, 575, 5717, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5837, 2]
 // Exports: default
 
-// Module 17043 (OrbsArcadeGameGraphic)
+// Module 17186 (OrbsArcadeGameGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

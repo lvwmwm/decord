@@ -1,16 +1,16 @@
-// Module ID: 19325
-// Function ID: 19326
+// Module ID: 19483
+// Function ID: 19484
 // Name: useSoundboardConfig
-// Dependencies: [19, 4863, 2006, 19151, 504, 19171, 7556, 1113, 2]
+// Dependencies: [19, 4990, 2135, 19309, 504, 19329, 7680, 1113, 2]
 // Exports: default
 
-// Module 19325 (useSoundboardConfig)
-import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 7556 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19151 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19171 */;
+// Module 19483 (useSoundboardConfig)
+import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 7680 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19309 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19329 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
   let deaf;
   let stringResult;
-  const f117483 = () => {
+  const f116987 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -53,9 +53,9 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f117483, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f116987, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f117483, items2);
+  stateFromStores || !react.useMemo(f116987, items2);
   if (stateFromStores) {
     const intl = tmp3(1113).intl;
     stringResult = intl.string(tmp3(1113).t.X1lQli);

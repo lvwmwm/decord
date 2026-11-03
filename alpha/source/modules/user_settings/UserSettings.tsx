@@ -1,25 +1,25 @@
-// Module ID: 4839
-// Function ID: 4840
+// Module ID: 4966
+// Function ID: 4967
 // Name: UserSettings
-// Dependencies: [4840, 1082, 4841, 1072, 4842, 4843, 1227, 1196, 558, 5692, 12, 504, 5693, 5700, 1236, 2]
+// Dependencies: [4967, 1082, 4968, 1072, 4969, 4970, 1227, 1196, 558, 5812, 12, 504, 5813, 5820, 1236, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
-// Module 4839 (UserSettings)
+// Module 4966 (UserSettings)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import wrappers from "wrappers" /* 1227 */;
 import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1236 */;
-import StickersConstants from "StickersConstants" /* 4842 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5692 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5700 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4840 */;
+import StickersConstants from "StickersConstants" /* 4969 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5812 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5820 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4967 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4841 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4968 */;
 import Constants from "Constants" /* 1072 */;
-import UserSettingDefinitions_mod from "UserSettingDefinitions" /* 4843 */;
+import UserSettingDefinitions_mod from "UserSettingDefinitions" /* 4970 */;
 import "UserSettingDefinitions";
 import size from "module_2" /* 2 */;
 

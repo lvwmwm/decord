@@ -1,30 +1,30 @@
-// Module ID: 18696
-// Function ID: 18697
+// Module ID: 18854
+// Function ID: 18855
 // Name: SearchTabsLayout
-// Dependencies: [19, 17, 6863, 13900, 13912, 9827, 1072, 21, 5014, 12, 13907, 504, 13889, 18697, 18698, 18703, 1113, 13893, 18704, 13908, 13910, 13886, 18799, 13998, 5303, 5095, 13911, 13920, 13921, 1108, 18800, 18801, 14192, 18802, 18803, 18804, 18805, 2]
+// Dependencies: [19, 17, 6983, 14031, 14043, 9958, 1072, 21, 5141, 12, 14038, 504, 14020, 18855, 18856, 18861, 1113, 14024, 18862, 14039, 14041, 14017, 18957, 14129, 5426, 1652, 14042, 14051, 14052, 1108, 18958, 18959, 14323, 18960, 18961, 18962, 18963, 2]
 // Exports: default
 
-// Module 18696 (SearchTabsLayout)
+// Module 18854 (SearchTabsLayout)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 13889 */;
-import SearchUtils from "SearchUtils" /* 13893 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13908 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13910 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13920 */;
-import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 13921 */;
-import SearchTabsPageDefault from "SearchTabsPage" /* 18704 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 14020 */;
+import SearchUtils from "SearchUtils" /* 14024 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14039 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14041 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 14051 */;
+import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 14052 */;
+import SearchTabsPageDefault from "SearchTabsPage" /* 18862 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6863 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 13912 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import SearchMessageStore from "SearchMessageStore" /* 6983 */;
+import SearchQueryStore from "SearchQueryStore" /* 14031 */;
+import SearchTabsLayoutStore from "SearchTabsLayoutStore" /* 14043 */;
+import SearchConstants from "SearchConstants" /* 9958 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_14;
 let map1;
 let metroImportAll;
 let tmp;
-const SearchPlatformUtilsDefault = tmp(13886);
+const SearchPlatformUtilsDefault = tmp(14017);
 function NoSearchResultsScreen(searchContext) {
   let intl;
   searchContext = searchContext.searchContext;
@@ -50,7 +50,7 @@ function NoSearchResultsScreen(searchContext) {
     const obj = SmartSearchUtils;
     return obj.getSmartSearchQuery(searchContext, stateFromStores);
   }, items2);
-  let obj2 = searchContext(18697);
+  let obj2 = searchContext(18855);
   const items3 = [searchContext];
   const smartSearchStatus = obj2.useSmartSearchStatus(memo);
   const effect = react.useEffect(() => {
@@ -60,15 +60,15 @@ function NoSearchResultsScreen(searchContext) {
   }, items3);
   if (null != memo) {
     let tmp8;
-    const tmpResult = searchContext(13889);
+    const tmpResult = searchContext(14020);
     if (tmpResult.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
       const obj3 = { smartSearchQuery: memo };
-      tmp8 = closure_12(stateFromStores(18698), obj3);
+      tmp8 = closure_12(stateFromStores(18856), obj3);
     }
     return tmp8;
   }
   const obj4 = { text: intl.string(searchContext(1113).t.V6nAfF) };
-  const tmp7 = stateFromStores(18703);
+  const tmp7 = stateFromStores(18861);
   intl = tmp(1113).intl;
   tmp8 = closure_12(tmp7, obj4);
 }
@@ -82,31 +82,40 @@ let closure_16 = module_12.debounce((searchContext) => {
   const obj2 = { searchContext };
   return obj.trackSearchTabSelected(obj2);
 }, 500);
-const __initData = { code: "function SearchTabsLayoutTsx1({contentOffset:contentOffset}){const{isDragging,disallowMemberListGesture}=this.__closure;var _disallowMemberListGe;isDragging.set(true);(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(contentOffset.x>0);}" };
-const __initData2 = { code: "function SearchTabsLayoutTsx2(){const{isDragging,disallowMemberListGesture}=this.__closure;var _disallowMemberListGe;isDragging.set(false);(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(false);}" };
-const __initData3 = { code: "function SearchTabsLayoutTsx3({contentOffset:contentOffset}){const{isDragging,disallowMemberListGesture}=this.__closure;if(isDragging.get()){var _disallowMemberListGe;(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(contentOffset.x>0);}}" };
+let closure_18 = { code: "(function SearchTabsLayoutTsx1({contentOffset:contentOffset}){let[isDragging,disallowMemberListGesture]=this.__closure;var _disallowMemberListGe;isDragging.set(true);(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(contentOffset.x>0);})" };
+let closure_19 = { code: "(function SearchTabsLayoutTsx2(){let[isDragging,disallowMemberListGesture]=this.__closure;var _disallowMemberListGe;isDragging.set(false);(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(false);})" };
+let closure_20 = { code: "(function SearchTabsLayoutTsx3({contentOffset:contentOffset}){let[isDragging,disallowMemberListGesture]=this.__closure;if(isDragging.get()){var _disallowMemberListGe;(_disallowMemberListGe=disallowMemberListGesture)===null||_disallowMemberListGe===void 0||_disallowMemberListGe.set(contentOffset.x>0);}})" };
 let closure_21 = react.memo(function SearchTabsLayout(searchContext) {
   let Provider;
   let SegmentedControlPages;
-  let items11;
+  let channelId;
+  let disallowGesture;
+  let items17;
   let obj10;
   let obj9;
   let segmentedControlState;
   let selectedTab;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp17;
+  let tmp18;
   let tmp19;
-  let tmp20;
   let tmp21;
-  let tmp25Result;
+  let tmp22;
+  let tmp23;
+  let tmp28;
+  let tmp29;
+  let tmp30;
+  let tmp34Result;
   searchContext = searchContext.searchContext;
   const visibleTabs = searchContext.visibleTabs;
   const visibleTabCounts = searchContext.visibleTabCounts;
   const width = searchContext.width;
   selectedTab = undefined;
   let gesture;
-  let disallowGesture;
-  let channelId;
+  channelId = undefined;
   let screenIndex;
-  let sharedValue;
   let callback5;
   let tmp = closure_15();
   let obj = width;
@@ -134,7 +143,7 @@ let closure_21 = react.memo(function SearchTabsLayout(searchContext) {
     const obj = SearchSessionAnalyticsManagerDefault;
     obj.setSelectedTab(searchContext, arg0);
     const obj2 = SmartSearchAnalyticsManagerDefault;
-    obj2.setIsTabActive(arg0 === channelId.MESSAGES, SearchSessionAnalyticsManagerDefault);
+    obj2.setIsTabActive(arg0 === screenIndex.MESSAGES, SearchSessionAnalyticsManagerDefault);
     closure_16(searchContext);
     const queryString = SearchQueryStore.getQueryString(searchContext);
     const obj3 = SearchUtils;
@@ -177,8 +186,7 @@ let closure_21 = react.memo(function SearchTabsLayout(searchContext) {
     obj3 = {};
   }
   gesture = obj3.gesture;
-  disallowGesture = obj3.disallowGesture;
-  channelId = obj3.channelId;
+  ({ disallowGesture, channelId } = obj3);
   screenIndex = obj3.screenIndex;
   const items4 = [gesture];
   const memo2 = obj.useMemo(() => {
@@ -189,53 +197,68 @@ let closure_21 = react.memo(function SearchTabsLayout(searchContext) {
     }
   }, items4);
   const tmp4Result = searchContext(visibleTabCounts[25]);
-  sharedValue = tmp4Result.useSharedValue(false);
-  class G {
+  const sharedValue = tmp4Result.useSharedValue(false);
+  const items5 = [closure_18, sharedValue, disallowGesture];
+  let c0;
+  let c1;
+  [tmp13, tmp14, tmp15] = items5;
+  class SearchTabsLayoutTsx1 {
     constructor(contentOffset) {
       contentOffset = contentOffset.contentOffset;
-      const result = sharedValue.set(true);
-      const obj = disallowGesture;
-      if (disallowGesture != null) {
+      const result = _undefined.set(true);
+      const obj = c1;
+      if (c1 != null) {
         const result1 = obj.set(contentOffset.x > 0);
       }
     }
   }
-  G.__closure = { isDragging: sharedValue, disallowMemberListGesture: disallowGesture };
-  G.__workletHash = 766628353255;
-  G.__initData = __initData;
-  const items5 = [disallowGesture, sharedValue];
-  class D {
+  const items6 = [tmp14, tmp15];
+  SearchTabsLayoutTsx1.__closure = items6;
+  SearchTabsLayoutTsx1.__workletHash = 10796280126110;
+  SearchTabsLayoutTsx1.__initData = tmp13;
+  const items7 = [disallowGesture, sharedValue];
+  const items8 = [closure_19, sharedValue, disallowGesture];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp17, tmp18, tmp19] = items8;
+  class SearchTabsLayoutTsx2 {
     constructor() {
-      const result = sharedValue.set(false);
-      const obj = disallowGesture;
-      if (disallowGesture != null) {
+      const result = _undefined.set(false);
+      const obj = c1;
+      if (c1 != null) {
         const result1 = obj.set(false);
       }
     }
   }
-  D.__closure = { isDragging: sharedValue, disallowMemberListGesture: disallowGesture };
-  D.__workletHash = 5683301645106;
-  D.__initData = __initData2;
-  const items6 = [disallowGesture, sharedValue];
-  const callback2 = obj.useCallback(G, items5);
-  class A {
+  const items9 = [tmp18, tmp19];
+  SearchTabsLayoutTsx2.__closure = items9;
+  SearchTabsLayoutTsx2.__workletHash = 15287790770091;
+  SearchTabsLayoutTsx2.__initData = tmp17;
+  const items10 = [disallowGesture, sharedValue];
+  const callback2 = obj.useCallback(SearchTabsLayoutTsx1, items7);
+  const items11 = [closure_20, sharedValue, disallowGesture];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp21, tmp22, tmp23] = items11;
+  class SearchTabsLayoutTsx3 {
     constructor(contentOffset) {
       contentOffset = contentOffset.contentOffset;
-      if (sharedValue.get()) {
-        const obj = disallowGesture;
-        if (disallowGesture != null) {
+      if (_undefined.get()) {
+        const obj = c1;
+        if (c1 != null) {
           const result = obj.set(contentOffset.x > 0);
         }
       }
     }
   }
-  A.__closure = { isDragging: sharedValue, disallowMemberListGesture: disallowGesture };
-  A.__workletHash = 229712012692;
-  A.__initData = __initData3;
-  const items7 = [disallowGesture, sharedValue];
-  const callback3 = obj.useCallback(D, items6);
-  const items8 = [searchContext];
-  const callback4 = obj.useCallback(A, items7);
+  const items12 = [tmp22, tmp23];
+  SearchTabsLayoutTsx3.__closure = items12;
+  SearchTabsLayoutTsx3.__workletHash = 8136690643693;
+  SearchTabsLayoutTsx3.__initData = tmp21;
+  const items13 = [disallowGesture, sharedValue];
+  const callback3 = obj.useCallback(SearchTabsLayoutTsx2, items10);
+  const items14 = [searchContext];
+  const callback4 = obj.useCallback(SearchTabsLayoutTsx3, items13);
   callback5 = obj.useCallback(() => {
     const obj = SmartSearchAnalyticsManagerDefault;
     obj.resetSession(SearchSessionAnalyticsManagerDefault);
@@ -249,10 +272,10 @@ let closure_21 = react.memo(function SearchTabsLayout(searchContext) {
     const searchContextId = obj5.getSearchContextId(searchContext);
     const obj6 = SearchTabsFetchManagerDefault;
     obj6.cleanUp(searchContextId);
-  }, items8);
-  const items9 = [context, callback5];
-  const effect1 = obj.useEffect(() => null == context ? (() => callback5()) : undefined, items9);
-  const items10 = [channelId, screenIndex, setActiveIndex, context, callback5];
+  }, items14);
+  const items15 = [context, callback5];
+  const effect1 = obj.useEffect(() => null == context ? (() => callback5()) : undefined, items15);
+  const items16 = [channelId, screenIndex, setActiveIndex, context, callback5];
   const effect2 = obj.useEffect(() => {
     function handleChannelDetailsHidden(channelId) {
       const tmp2 = channelId.channelId === channelId && tmp === screenIndex;
@@ -265,48 +288,48 @@ let closure_21 = react.memo(function SearchTabsLayout(searchContext) {
       const tmp = searchContext;
       let tmp2 = visibleTabCounts;
       let ComponentDispatch = searchContext(visibleTabCounts[29]).ComponentDispatch;
-      const subscription = ComponentDispatch.subscribe(screenIndex.CHANNEL_DETAILS_HIDDEN, handleChannelDetailsHidden);
+      const subscription = ComponentDispatch.subscribe(callback5.CHANNEL_DETAILS_HIDDEN, handleChannelDetailsHidden);
       return () => {
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
         ComponentDispatch.unsubscribe(ComponentActions.CHANNEL_DETAILS_HIDDEN, handleChannelDetailsHidden);
       };
     }
-  }, items10);
+  }, items16);
   if (0 === segmentedControlState.items.length) {
     let obj4 = { searchContext };
-    tmp25Result = sharedValue(NoSearchResultsScreen, obj4);
+    tmp34Result = closure_12(NoSearchResultsScreen, obj4);
   } else {
-    let obj5 = { style: tmp.controls, children: items11 };
+    let obj5 = { style: tmp.controls, children: items17 };
     let obj6 = { state: segmentedControlState };
-    items11 = [sharedValue(visibleTabs(tmp5[30]), obj6), ];
+    items17 = [closure_12(visibleTabs(tmp5[30]), obj6), ];
     const obj7 = { state: segmentedControlState };
-    items11[1] = sharedValue(visibleTabs(visibleTabCounts[31]), obj7);
-    const items12 = [callback5(selectedTab, obj5), ];
-    const obj8 = { style: tmp.pages, children: sharedValue(Provider, obj9) };
-    obj9 = { value: memo1, children: sharedValue(SegmentedControlPages, obj10) };
+    items17[1] = closure_12(visibleTabs(visibleTabCounts[31]), obj7);
+    const items18 = [closure_13(selectedTab, obj5), ];
+    const obj8 = { style: tmp.pages, children: closure_12(Provider, obj9) };
+    obj9 = { value: memo1, children: closure_12(SegmentedControlPages, obj10) };
     Provider = tmp4(tmp5[18]).SearchTabsPageContext.Provider;
-    obj10 = { state: segmentedControlState, bounces: null == context, nativeGesture: memo2, onBeginDragWorklet: tmp19, onEndDragWorklet: tmp20, onScrollWorklet: tmp21 };
-    tmp19 = undefined;
+    obj10 = { state: segmentedControlState, bounces: null == context, nativeGesture: memo2, onBeginDragWorklet: tmp28, onEndDragWorklet: tmp29, onScrollWorklet: tmp30 };
+    tmp28 = undefined;
     SegmentedControlPages = tmp4(tmp5[32]).SegmentedControlPages;
-    const tmp25 = callback5;
-    const tmp26 = closure_14;
-    const tmp27 = selectedTab;
+    const tmp34 = closure_13;
+    const tmp35 = closure_14;
+    const tmp36 = selectedTab;
     if (null != context) {
-      tmp19 = callback2;
+      tmp28 = callback2;
     }
-    tmp20 = undefined;
+    tmp29 = undefined;
     if (null != context) {
-      tmp20 = callback3;
+      tmp29 = callback3;
     }
-    tmp21 = undefined;
+    tmp30 = undefined;
     if (null != context) {
-      tmp21 = callback4;
+      tmp30 = callback4;
     }
-    const obj11 = { children: items12 };
-    items12[1] = sharedValue(tmp27, obj8);
-    tmp25Result = tmp25(tmp26, obj11);
+    const obj11 = { children: items18 };
+    items18[1] = closure_12(tmp36, obj8);
+    tmp34Result = tmp34(tmp35, obj11);
   }
-  return tmp25Result;
+  return tmp34Result;
 });
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/SearchTabsLayout.tsx");
 
@@ -330,13 +353,13 @@ export default function ConnectedSearchTabsLayout(searchContext) {
     set = new Set(candidateTabs);
     return set;
   }, items2);
-  const obj3 = searchContext(18802);
+  const obj3 = searchContext(18960);
   const autoSearchGuildChannelTab = obj3.useAutoSearchGuildChannelTab(searchContext, !memo.has(constants.GUILD_CHANNELS));
-  const obj4 = searchContext(18803);
+  const obj4 = searchContext(18961);
   const autoSearchMembersTab = obj4.useAutoSearchMembersTab(searchContext, !memo.has(constants.MEMBERS));
-  const obj5 = searchContext(18804);
+  const obj5 = searchContext(18962);
   const autoSearchPeopleTab = obj5.useAutoSearchPeopleTab(searchContext, !memo.has(constants.PEOPLE));
-  const obj6 = searchContext(18805);
+  const obj6 = searchContext(18963);
   const autoTrackSearchTabCountsViewedAnalytics = obj6.useAutoTrackSearchTabCountsViewedAnalytics({ searchContext, visibleTabCounts, visibleTabs });
   return closure_12(closure_21, { searchContext, visibleTabs, visibleTabCounts, width });
 };

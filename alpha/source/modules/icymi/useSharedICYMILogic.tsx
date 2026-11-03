@@ -1,19 +1,19 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18717
+// Function ID: 18718
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 8906, 18527, 18562, 504, 16232, 18532, 9098, 8924, 18531, 8919, 8923, 18563, 2]
+// Dependencies: [32, 19, 9030, 18681, 18718, 504, 16375, 18686, 9226, 9048, 18685, 9043, 9047, 18719, 2]
 // Exports: useSharedICYMILogic
 
-// Module 18561 (useSharedICYMILogic)
-import ICYMITypes from "ICYMITypes" /* 8919 */;
-import ICYMIUtils from "ICYMIUtils" /* 8923 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16232 */;
-import ICYMIConstants from "ICYMIConstants" /* 18527 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18531 */;
+// Module 18717 (useSharedICYMILogic)
+import ICYMITypes from "ICYMITypes" /* 9043 */;
+import ICYMIUtils from "ICYMIUtils" /* 9047 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16375 */;
+import ICYMIConstants from "ICYMIConstants" /* 18681 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18685 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8906 */;
+import ICYMIStore from "ICYMIStore" /* 9030 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,18 +27,20 @@ export function useSharedICYMILogic(notificationItem) {
   let arr6;
   let c9;
   let closure_1;
+  let isWaterwheelsCardEligible;
+  let showDot;
   notificationItem = notificationItem.notificationItem;
   let unreadItems;
   let readItems;
   let allUnreadItemsHydrated;
   let stateFromStores;
   c9 = undefined;
-  const showDot = notificationItem.showDot;
+  ({ showDot, isWaterwheelsCardEligible } = notificationItem);
   let tmp = readItems(allUnreadItemsHydrated.useState(false), 2);
   let tmp3 = tmp[1];
   importDefault = tmp3;
   const first = tmp[0];
-  let tmp4 = require("useICYMIItems")();
+  let tmp4 = require("useICYMIItems")({ isWaterwheelsCardEligible });
   unreadItems = tmp4.unreadItems;
   readItems = tmp4.readItems;
   allUnreadItemsHydrated = tmp4.allUnreadItemsHydrated;

@@ -1,20 +1,20 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 8287
+// Function ID: 8288
 // Name: AgeVerificationRetryScreen
-// Dependencies: [5, 19, 17, 1072, 21, 5014, 575, 8019, 6729, 1113, 1375, 7974, 5624, 7060, 6975, 7955, 2061, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 8143, 6849, 1113, 1377, 8098, 5747, 7186, 7101, 8079, 2190, 2]
 // Exports: default
 
-// Module 8163 (AgeVerificationRetryScreen)
+// Module 8287 (AgeVerificationRetryScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -90,7 +90,7 @@ export default function GetStartedScreen(modalSessionId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -149,7 +149,7 @@ export default function GetStartedScreen(modalSessionId) {
   const obj5 = { style: tmp.container, children: items3 };
   const obj6 = { style: tmp.headerContainer, children: items2 };
   items2 = [closure_9(tmp2(tmp3[11]).ShieldSpotIllustration, {}), , ];
-  const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: stringResult };
+  const obj7 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: stringResult };
   items2[1] = closure_9(tmp2(tmp3[12]).Text, obj7);
   const obj8 = { variant: "heading-md/medium", color: "text-strong", style: tmp.centerText, children: stringResult1 };
   items2[2] = closure_9(tmp2(tmp3[12]).Text, obj8);

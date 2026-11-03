@@ -1,26 +1,26 @@
-// Module ID: 6030
-// Function ID: 6031
+// Module ID: 6150
+// Function ID: 6151
 // Name: Alert
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 5080, 6031, 4858, 6021, 5624, 1113, 5634, 6980, 10736, 1491, 8773, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 5207, 6151, 4985, 6141, 5747, 1113, 5754, 7106, 10866, 1493, 8897, 2]
 // Exports: getAlertButtonVariant
 
-// Module 6030 (Alert)
+// Module 6150 (Alert)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import Timers from "Timers" /* 4858 */;
-import native2 from "native" /* 5080 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import CustomMarkupAll from "CustomMarkup" /* 6031 */;
-import Pressables from "Pressables" /* 6980 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import Timers from "Timers" /* 4985 */;
+import native2 from "native" /* 5207 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import CustomMarkupAll from "CustomMarkup" /* 6151 */;
+import Pressables from "Pressables" /* 7106 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8897 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10866 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -143,7 +143,7 @@ class Alert extends PureComponent {
     if (null != title) {
       tmp3Result = null;
       if ("" !== title) {
-        const obj2 = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: tmp.titleText, children: renderContentResult };
+        const obj2 = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-md/semibold", color: "text-default", style: tmp.titleText, children: renderContentResult };
         renderContentResult = title;
         const Text = Text_Text.Text;
         const tmp3 = metroImportAll;

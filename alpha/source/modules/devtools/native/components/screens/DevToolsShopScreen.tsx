@@ -1,26 +1,26 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17872
+// Function ID: 17873
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 5627, 21, 5014, 575, 5607, 504, 17617, 4847, 6027, 7060, 6975, 7370, 17702, 7369, 2]
+// Dependencies: [19, 17, 5750, 21, 5141, 575, 5730, 504, 17760, 4974, 6147, 7186, 7101, 7490, 17845, 7489, 2]
 // Exports: default
 
-// Module 17729 (DevToolsShopScreen)
+// Module 17872 (DevToolsShopScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import TableRow5 from "TableRow" /* 6975 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import TableSwitchRow from "TableSwitchRow" /* 7369 */;
-import FormSwitch from "FormSwitch" /* 7370 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17617 */;
-import DevSettingsActions from "DevSettingsActions" /* 17702 */;
+import dismissible_content from "dismissible_content" /* 4974 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import TableRow5 from "TableRow" /* 7101 */;
+import TableRowGroup2 from "TableRowGroup" /* 7186 */;
+import TableSwitchRow from "TableSwitchRow" /* 7489 */;
+import FormSwitch from "FormSwitch" /* 7490 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17760 */;
+import DevSettingsActions from "DevSettingsActions" /* 17845 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5627 */;
+import DevSettingsStore from "DevSettingsStore" /* 5750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

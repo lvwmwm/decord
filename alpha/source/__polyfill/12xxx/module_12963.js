@@ -1,96 +1,28 @@
 // Module ID: 12963
 // Function ID: 12964
-// Dependencies: [12949]
-// Exports: compile, generate
+// Dependencies: [12964, 13007, 13054, 13082, 13083]
 
 // Module 12963
-import _mod12949 from "module_12949" /* 12949 */;
+import _mod13082 from "module_13082" /* 13082 */;
+import _mod13083 from "module_13083" /* 13083 */;
+import create_mod from "module_12964" /* 12964 */;
+import module_13007 from "module_13007" /* 13007 */;
+import module_13054 from "module_13054" /* 13054 */;
 
-let fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+function merge() {
+  let num;
+  const obj = {};
+  for (let num = 0; num < arguments.length; num = num + 1) {
+    let tmp = arguments[num];
+    for (const key10011 in tmp) {
+      obj[key10011] = tmp[key10011];
+      continue;
+    }
   }
-  return tmp2;
-});
-const module_12949 = fn(_mod12949);
+  return obj;
+}
+let create = create_mod;
+create = create.create;
+module.exports.version = _mod13083.version;
 
-export function compile(arg0) {
-  const first = arg0[0];
-  const diff = arg0[1] - 1;
-  if (diff < 0) {
-    if (first <= 0) {
-      return module_12949.default.falseFunc;
-    }
-  }
-  if (-1 === first) {
-    return (arg0) => arg0 <= diff;
-  } else if (0 === first) {
-    return (arg0) => arg0 === diff;
-  } else if (1 === first) {
-    let fn;
-    if (diff < 0) {
-      fn = module_12949.default.trueFunc;
-    } else {
-      fn = (arg0) => arg0 >= diff;
-    }
-    return fn;
-  } else {
-    const _Math = Math;
-    const absolute = Math.abs(first);
-    let closure_2 = (diff % absolute + absolute) % absolute;
-    return first > 1 ? ((arg0) => arg0 >= diff && arg0 % absolute === closure_2) : ((arg0) => arg0 <= diff && arg0 % absolute === closure_2);
-  }
-}
-export function generate(arg0) {
-  const first = arg0[0];
-  const diff = arg0[1] - 1;
-  let closure_1 = diff;
-  let closure_2 = 0;
-  if (first < 0) {
-    let closure_3 = tmp4;
-    let closure_4 = (diff % tmp4 + tmp4) % tmp4;
-    return () => {
-      closure_2 = tmp + 1;
-      const sum = closure_4 + closure_3 * tmp;
-      let tmp3 = null;
-      if (sum <= closure_1) {
-        tmp3 = sum;
-      }
-      return tmp3;
-    };
-  } else {
-    let fn;
-    if (0 === first) {
-      let fn2;
-      if (diff < 0) {
-        fn2 = () => null;
-      } else {
-        fn2 = () => {
-          closure_2 = tmp + 1;
-          let tmp2 = null;
-          if (0 == +closure_2) {
-            tmp2 = closure_1;
-          }
-          return tmp2;
-        };
-      }
-      fn = fn2;
-    } else {
-      if (diff < 0) {
-        let tmp3 = globalThis;
-        const _Math = Math;
-        closure_1 = diff + first * Math.ceil(-diff / first);
-      }
-      fn = () => {
-        closure_2 = tmp + 1;
-        return first * +closure_2 + closure_1;
-      };
-    }
-    return fn;
-  }
-}
+export default create(merge(module_13007, module_13054, _mod13082));

@@ -1,15 +1,15 @@
-// Module ID: 6969
-// Function ID: 6970
+// Module ID: 7095
+// Function ID: 7096
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 5014, 5048, 6970, 6991, 7251, 7252, 7256, 2]
+// Dependencies: [19, 17, 21, 5141, 5175, 7096, 7117, 7371, 7372, 7376, 2]
 // Exports: default
 
-// Module 6969 (MemberVerificationFormRenderer)
+// Module 7095 (MemberVerificationFormRenderer)
 import Fragment from "Fragment" /* 21 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let field_type;

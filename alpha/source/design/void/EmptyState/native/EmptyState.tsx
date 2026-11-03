@@ -1,17 +1,17 @@
-// Module ID: 16006
-// Function ID: 16007
+// Module ID: 16149
+// Function ID: 16150
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5014, 575, 5021, 5717, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5148, 5837, 5747, 2]
 // Exports: default
 
-// Module 16006 (EmptyState)
+// Module 16149 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import shared from "shared" /* 5021 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import shared from "shared" /* 5148 */;
+import FastImageDefault from "FastImage" /* 5837 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -19,11 +19,10 @@ let hasOwnProperty;
 let obj2;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = { textTransform: "none" };
-let closure_7 = { accessible: false, accessibilityRole: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-let obj = { container: obj2, emptyImage: { flex: 1, maxWidth: 300, maxHeight: 200 }, textGroup: { alignSelf: "stretch", alignItems: "center" }, emptyTitle: { marginTop: 20, textTransform: "uppercase" }, emptyBody: { textAlign: "center", marginTop: 8 } };
+let closure_6 = { accessible: false, accessibilityRole: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+let obj = { container: obj2, emptyImage: { flex: 1, maxWidth: 300, maxHeight: 200 }, textGroup: { alignSelf: "stretch", alignItems: "center" }, emptyTitle: { marginTop: 20 }, emptyBody: { textAlign: "center", marginTop: 8 } };
 obj2 = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-let closure_8 = createStyles.createStyles(obj);
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("design/void/EmptyState/native/EmptyState.tsx");
 
 export default function EmptyState(Illustration) {
@@ -36,68 +35,55 @@ export default function EmptyState(Illustration) {
   let items5;
   let items6;
   let title;
-  let tmp11Result;
-  let tmp23Result;
-  let tmp2Result2;
-  let tmp6;
-  const tmp = closure_8();
-  const obj = shared;
-  const themeContext = obj.useThemeContext();
-  let hasItem;
-  if (themeContext != null) {
-    const enabledExperiments = themeContext.enabledExperiments;
-    if (enabledExperiments != null) {
-      hasItem = enabledExperiments.includes("mana-type-consolidation");
-    }
-  }
-  if (true === hasItem) {
-    tmp6 = closure_6;
-  }
+  let tmp20Result;
+  let tmp2Result;
+  let tmp8Result;
+  const tmp = closure_7();
   shared;
   if (null != Illustration.Illustration) {
     Illustration = Illustration.Illustration;
     const obj2 = { resizeMode: "contain", style: items };
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(closure_6);
     items = [tmp.emptyImage, Illustration.imageStyle];
-    tmp11Result = React3(Illustration, obj2);
+    tmp8Result = React3(Illustration, obj2);
   } else {
-    tmp11Result = null;
-    const tmp9 = null != Illustration.lightSource && null != Illustration.darkSource;
-    if (tmp9) {
-      const obj3 = { resizeMode: "contain", source: tmp2Result2.isThemeLight(tmp8) ? Illustration.lightSource : Illustration.darkSource, style: items1 };
-      const tmp13 = FastImageDefault;
-      const merged1 = Object.assign(closure_7);
+    tmp8Result = null;
+    const tmp6 = null != Illustration.lightSource && null != Illustration.darkSource;
+    if (tmp6) {
+      const obj = { resizeMode: "contain", source: tmp2Result.isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource, style: items1 };
+      const tmp10 = FastImageDefault;
+      const merged1 = Object.assign(closure_6);
       items1 = [tmp.emptyImage, Illustration.imageStyle];
-      tmp2Result2 = shared;
-      tmp11Result = React3(tmp13, obj3);
+      tmp2Result = shared;
+      tmp8Result = React3(tmp10, obj);
     }
   }
   ({ body, title } = Illustration);
-  const obj4 = { style: items2, children: items3 };
+  const obj3 = { style: items2, children: items3 };
   items2 = [tmp.container, Illustration.style];
-  items3 = [tmp11Result, , ];
+  items3 = [tmp8Result, , ];
   const children = Illustration.children;
   if (null != title) {
-    let tmp26 = null;
-    const obj5 = { style: tmp.textGroup, accessible: true, children: items5 };
+    let tmp23 = null;
+    const obj4 = { style: tmp.textGroup, accessible: true, children: items5 };
     if (null != title) {
-      const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items4, children: title };
-      items4 = [tmp.emptyTitle, tmp22, tmp6];
-      tmp26 = React3(tmp2(5624).Text, obj6);
+      const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items4, children: title };
+      items4 = [tmp.emptyTitle, tmp19];
+      tmp23 = React3(tmp2(5747).Text, obj5);
     }
-    items5 = [tmp26, ];
-    let tmp28 = null;
+    items5 = [tmp23, ];
+    let tmp25 = null;
     if (null != body) {
-      const obj7 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items6, children: body };
-      items6 = [tmp.emptyBody, tmp21];
-      tmp28 = React3(tmp2(5624).Text, obj7);
+      const obj6 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items6, children: body };
+      items6 = [tmp.emptyBody, tmp18];
+      tmp25 = React3(tmp2(5747).Text, obj6);
     }
-    items5[1] = tmp28;
-    tmp23Result = tmp23(tmp24, obj5);
+    items5[1] = tmp25;
+    tmp20Result = tmp20(tmp21, obj4);
   } else {
-    tmp23Result = null;
+    tmp20Result = null;
   }
-  items3[1] = tmp23Result;
+  items3[1] = tmp20Result;
   items3[2] = children;
-  return hasOwnProperty(View, obj4);
+  return hasOwnProperty(View, obj3);
 };

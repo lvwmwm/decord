@@ -1,15 +1,15 @@
-// Module ID: 6919
-// Function ID: 6920
+// Module ID: 7039
+// Function ID: 7040
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 19, 4926, 1383, 5046, 21, 6920, 504, 6921, 6916, 6944, 1113, 6912, 7054, 5634, 2]
+// Dependencies: [5, 19, 5053, 1385, 5173, 21, 7040, 504, 7041, 7036, 7064, 1113, 7032, 7180, 5754, 2]
 // Exports: default
 
-// Module 6919 (MemberVerificationAlertRejected)
+// Module 7039 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import UserStore from "UserStore" /* 1383 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import UserStore from "UserStore" /* 1385 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5173 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ export default function MemberVerificationAlertRejected(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -146,7 +146,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           const obj2 = guildId(stateFromStores[10]);
           const result = obj2.openMemberVerificationModal(closure_128_0);
           stateFromStores = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         stateFromStores = 3;

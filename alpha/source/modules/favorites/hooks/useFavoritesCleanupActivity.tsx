@@ -1,16 +1,16 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18346
+// Function ID: 18347
 // Name: useFavoritesCleanupActivity
-// Dependencies: [32, 19, 6842, 504, 6894, 1113, 3450, 1089, 2]
+// Dependencies: [32, 19, 6962, 504, 7014, 1113, 3577, 1089, 2]
 // Exports: default
 
-// Module 18202 (useFavoritesCleanupActivity)
+// Module 18346 (useFavoritesCleanupActivity)
 import DurationsDefault from "Durations" /* 1089 */;
-import _modDef3450 from "module_3450" /* 3450 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6894 */;
+import _modDef3577 from "module_3577" /* 3577 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 7014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
+import ReadStateStore from "ReadStateStore" /* 6962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ export default function useFavoritesCleanupActivity(threadMetadata) {
       const _Math = Math;
       const _Math2 = Math;
       const obj2 = { days: Math.max(0, Math.floor(diff / DurationsDefault.Millis.DAY)) };
-      const IzxPdG = _modDef3450.IzxPdG;
+      const IzxPdG = _modDef3577.IzxPdG;
       diff = first - stateFromStores;
       formatToPlainStringResult = formatToPlainString(IzxPdG, obj2);
     }
@@ -50,10 +50,10 @@ export default function useFavoritesCleanupActivity(threadMetadata) {
     if (archived) {
       const intl3 = tmp2(1113).intl;
       const obj3 = { activity: formatToPlainStringResult };
-      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3450.Dr1FWM, obj3);
+      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3577.Dr1FWM, obj3);
     }
     return formatToPlainStringResult1;
   }
   const intl = tmp2(1113).intl;
-  formatToPlainStringResult = intl.string(_modDef3450.rYws6y);
+  formatToPlainStringResult = intl.string(_modDef3577.rYws6y);
 };

@@ -1,21 +1,21 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14590
+// Function ID: 14591
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1625, 5624, 1113, 14460, 5634, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1627, 5747, 1113, 14591, 5754, 2]
 // Exports: default
 
-// Module 14459 (GiftingSKUSelectScreen)
+// Module 14590 (GiftingSKUSelectScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 14460 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 14591 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -101,7 +101,7 @@ export default function GiftingSKUSelectScreen(defaultHighlightedReward) {
   const obj = { style: tmp.container, children: items5 };
   const obj2 = { style: tmp.scroll, contentContainerStyle: tmp.contentContainer, children: items4 };
   const obj3 = { style: tmp.headerContainer, children: items3 };
-  const obj4 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(intl4.t["+ByEeM"]) };
+  const obj4 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(intl4.t["+ByEeM"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items3 = [metroImportDefault(Text, obj4), ];

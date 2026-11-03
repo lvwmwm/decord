@@ -1,18 +1,18 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16744
+// Function ID: 16745
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 5014, 5023, 1113, 9067, 6027, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 5150, 1113, 9195, 6147, 5747, 2]
 
-// Module 16601 (SettingsSearchEmptyState)
+// Module 16744 (SettingsSearchEmptyState)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import NoResultsAlt from "NoResultsAlt" /* 9067 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import NoResultsAlt from "NoResultsAlt" /* 9195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

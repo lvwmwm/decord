@@ -1,16 +1,16 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14742
+// Function ID: 14743
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 5014, 575, 6030, 5624, 1113, 5634, 13353, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6150, 5747, 1113, 5754, 13489, 2]
 // Exports: default
 
-// Module 14611 (ForumExplicitMediaAlert)
+// Module 14742 (ForumExplicitMediaAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 13353 */;
+import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 13489 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export default function ForumExplicitMediaAlert(arg0) {
   ({ channelId: require, messageId: importDefault, onClose } = arg0);
   const tmp = closure_6();
   let obj = { noDefaultButtons: true, style: tmp.container, onClose, children: items1 };
-  const obj2 = { accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: items, children: intl.string(require("intl").t.B3vFdU) };
+  const obj2 = { accessibilityRole: "header", variant: "heading-md/semibold", color: "text-default", style: items, children: intl.string(require("intl").t.B3vFdU) };
   items = [, ];
   ({ title: arr[0], text: arr[1] } = tmp);
   const tmp2 = require("Alert");

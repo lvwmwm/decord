@@ -1,15 +1,15 @@
-// Module ID: 17978
-// Function ID: 17979
+// Module ID: 18121
+// Function ID: 18122
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5601, 21, 5014, 8177, 7370, 17979, 2]
+// Dependencies: [32, 19, 5724, 21, 5141, 8301, 7490, 18122, 2]
 
-// Module 17978 (VEVOOPropBlurAmount)
+// Module 18121 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
-import _mod8177 from "module_8177" /* 8177 */;
+import _mod8301 from "module_8301" /* 8301 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5601 */;
-import createStyles from "createStyles" /* 5014 */;
+import VEVOOStore from "VEVOOStore" /* 5724 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function VEVOOPropBlurAmount() {
     metroRequire(obj);
   }, []);
   let str;
-  const FormRow = _mod8177.FormRow;
+  const FormRow = _mod8301.FormRow;
   if (first != null) {
     str = first.toFixed(3);
   }

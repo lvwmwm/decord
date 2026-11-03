@@ -1,26 +1,24 @@
-// Module ID: 18310
-// Function ID: 18311
+// Module ID: 18455
+// Function ID: 18456
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1072, 4860, 21, 5014, 5272, 5624, 1113, 5717, 18311, 5634, 9074, 2]
+// Dependencies: [19, 17, 1072, 4987, 21, 5141, 5395, 5747, 1113, 5837, 18456, 5754, 9202, 2]
 // Exports: default
 
-// Module 18310 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 18455 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18311 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18456 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -50,8 +48,8 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
     children: closure_7(View, obj2)
   };
   obj2 = { style: tmp.container, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl5.t["v+Jm6X"]) };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t["v+Jm6X"]) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [closure_6(Text, obj3), , , , ];

@@ -1,21 +1,21 @@
-// Module ID: 19887
-// Function ID: 19888
+// Module ID: 20037
+// Function ID: 20038
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 19888, 1187, 19892, 19896, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 20038, 1187, 20042, 20046, 2]
 // Exports: default
 
-// Module 19887 (HowItWorksSection)
+// Module 20037 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19888 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19892 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19896 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 20038 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 20042 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 20046 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -32,7 +32,7 @@ function HowItWorksCard(Illustration) {
   const tmp = closure_5();
   const obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description, children: items };
   items = [, , ];
-  const obj2 = { style: tmp.cardNumber, variant: "text-xs/bold", color: "text-overlay-light", children: cardNumber };
+  const obj2 = { style: tmp.cardNumber, variant: "text-xs/semibold", color: "text-overlay-light", children: cardNumber };
   items[0] = _false(Text_Text.Text, obj2);
   const obj3 = { style: tmp.howItWorksCardIcon, children: _false(Illustration, { width: 108 }) };
   items[1] = _false(View, obj3);

@@ -1,19 +1,19 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 8498
+// Function ID: 8499
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 5612, 6031, 1375, 4971, 5709, 5624, 5634, 1113, 7358, 5711, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 5735, 6151, 1377, 5098, 5829, 5747, 5754, 1113, 7478, 5831, 2]
 // Exports: default
 
-// Module 8374 (InAppReportsTextLineElement)
+// Module 8498 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -91,7 +91,7 @@ export default function TextLineElement(element) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ export default function TextLineElement(element) {
               obj.openURL(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -144,7 +144,7 @@ export default function TextLineElement(element) {
   if (is_localized) {
     let stringResult;
     obj = { style: tmp.container, children: items };
-    let obj2 = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
+    let obj2 = { style: tmp.header, variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
     const tmp7 = tmp3 ? tmp.smsNumberContainerSuccess : {};
     items = [closure_9(sms(tmp4[12]).Text, obj2), , ];
     let obj3 = { style: tmp.description, variant: "text-md/medium", children: tmp5(body) };

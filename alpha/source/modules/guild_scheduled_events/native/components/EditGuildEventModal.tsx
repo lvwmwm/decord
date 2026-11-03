@@ -1,26 +1,26 @@
-// Module ID: 9017
-// Function ID: 9018
+// Module ID: 9145
+// Function ID: 9146
 // Name: EditGuildEventModal
-// Dependencies: [5, 32, 19, 17, 4869, 21, 5014, 575, 1625, 8968, 8979, 1888, 8967, 5023, 1113, 8972, 9018, 8988, 9021, 9082, 9083, 7169, 2]
+// Dependencies: [5, 32, 19, 17, 4996, 21, 5141, 575, 1627, 9096, 9107, 2017, 9095, 5150, 1113, 9100, 9146, 9116, 9149, 9210, 9211, 7290, 2]
 
-// Module 9017 (EditGuildEventModal)
+// Module 9145 (EditGuildEventModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8967 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8968 */;
-import EntityUtils from "EntityUtils" /* 8972 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8988 */;
-import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9018 */;
-import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9021 */;
-import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9082 */;
-import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9083 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9095 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9096 */;
+import EntityUtils from "EntityUtils" /* 9100 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 9116 */;
+import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9146 */;
+import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9149 */;
+import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9210 */;
+import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
   let onClose;
   let right;
   let tmp8;
-  const f93809 = () => {
+  const f94127 = () => {
     obj = KeyboardManagerUtilsAll;
     const result = obj.dismissGlobalKeyboard();
     const tmp3 = first1;
@@ -84,7 +84,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
               announce(intl.string(tmp3(guildEvent[14]).t["5HzXO5"]));
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           c2 = 3;
@@ -166,7 +166,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
     }
     return items1;
   }), 1)[0];
-  [c6, tmp8] = first1(require("LazyAPIPromise")(f93809), 2);
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f94127), 2);
   constants = {
     guild,
     guildEvent,
@@ -226,7 +226,7 @@ const memoResult = react.memo(function EditGuildEventModal(guild) {
     },
     fullscreen: true
   };
-  const tmp7 = first1(require("LazyAPIPromise")(f93809), 2);
+  const tmp7 = first1(require("LazyAPIPromise")(f94127), 2);
   const CHANNEL_SELECTOR = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   const CHANNEL_SELECTOR2 = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   obj3[CHANNEL_SELECTOR] = obj4;

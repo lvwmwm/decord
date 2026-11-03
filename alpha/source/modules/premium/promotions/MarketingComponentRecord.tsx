@@ -1,23 +1,22 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9760
+// Function ID: 9761
 // Name: MarketingComponentRecord
-// Dependencies: [1398, 1089, 1234, 9629, 1251, 2]
+// Dependencies: [1400, 1089, 1234, 9761, 9797, 1251, 2]
 
-// Module 9628 (MarketingComponentRecord)
+// Module 9760 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1089 */;
 import ProtoUtils from "ProtoUtils" /* 1234 */;
 import _modDef1251 from "module_1251" /* 1251 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9629 */;
-import Record from "Record" /* 1398 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9761 */;
+import Record from "Record" /* 1400 */;
 import size from "module_2" /* 2 */;
 
 let startDate;
 
-let closure_3 = { month: "long", day: "numeric", year: "numeric" };
 class MarketingComponentRecord extends Record {
   constructor(arg0) {
     const tmp = new MarketingComponentRecord(new.target, this);
-    ({ id: tmp.id, componentType: tmp.componentType, properties: tmp.properties, promotionId: tmp.promotionId, startDate: tmp.startDate, endDate: tmp.endDate, effectiveStartDate: tmp.effectiveStartDate, effectiveEndDate: tmp.effectiveEndDate, promotionEndDate: tmp.promotionEndDate } = arg0);
+    ({ id: tmp.id, componentType: tmp.componentType, properties: tmp.properties, promotionId: tmp.promotionId, startDate: tmp.startDate, endDate: tmp.endDate, effectiveStartDate: tmp.effectiveStartDate, effectiveEndDate: tmp.effectiveEndDate, promotionEndDate: tmp.promotionEndDate, promotionPriority: tmp.promotionPriority } = arg0);
     return tmp;
   }
   static createFromServer(start_date, startDate) {
@@ -55,55 +54,66 @@ class MarketingComponentRecord extends Record {
     const obj = ProtoUtils;
     const b64ToProtoResult = obj.b64ToProto(premium_marketing_component_properties.PremiumMarketingComponentProperties, start_date.properties);
     const promotion_id = start_date.promotion_id;
-    let tmp11 = date;
+    let tmp13 = date;
     if (date == null) {
-      tmp11 = startDate;
+      tmp13 = startDate;
     }
-    let tmp12 = date1;
+    let tmp14 = date1;
     if (date1 == null) {
-      tmp12 = endDate;
+      tmp14 = endDate;
+    }
+    let priority;
+    if (startDate != null) {
+      priority = startDate.priority;
+    }
+    if (priority == null) {
+      priority = tmp10(9797).FALLBACK_PROMOTION_PRIORITY;
     }
     if (typeof MarketingComponentRecord === "function") {
       const self5 = this;
       const self6 = this;
-      const tmp14 = new MarketingComponentRecord(tmp4, tmp, obj, MarketingComponentRecord, this, id, component_type, b64ToProtoResult, promotion_id, date, date1, tmp11, tmp12);
-      tmp14.id = id;
-      tmp14.componentType = component_type;
-      tmp14.properties = b64ToProtoResult;
-      tmp14.promotionId = promotion_id;
-      tmp14.startDate = date;
-      tmp14.endDate = date1;
-      tmp14.effectiveStartDate = tmp11;
-      tmp14.effectiveEndDate = tmp12;
-      tmp14.promotionEndDate = endDate;
-      return tmp14;
+      const tmp17 = new MarketingComponentRecord(tmp4, tmp, obj, startDate, require, MarketingComponentRecord, this, id, component_type, b64ToProtoResult, promotion_id, date, date1, tmp13);
+      tmp17.id = id;
+      tmp17.componentType = component_type;
+      tmp17.properties = b64ToProtoResult;
+      tmp17.promotionId = promotion_id;
+      tmp17.startDate = date;
+      tmp17.endDate = date1;
+      tmp17.effectiveStartDate = tmp13;
+      tmp17.effectiveEndDate = tmp14;
+      tmp17.promotionEndDate = endDate;
+      tmp17.promotionPriority = priority;
+      return tmp17;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
   }
   getFormatVariableValues(currentLocale) {
-    let obj;
     let promotionEndDate;
+    let promotionEndDate2;
+    let toLocaleDateString;
     const self = this;
     if (null == this.promotionEndDate) {
-      obj = {};
+      return {};
     } else {
-      const promotionEndDate2 = self.promotionEndDate;
       const _Date = Date;
       const self2 = this;
       const self3 = this;
+      const promotionEndDate3 = self.promotionEndDate;
       const date = new Date();
-      const time = promotionEndDate2.getTime();
+      const time = promotionEndDate3.getTime();
       const diff = time - date.getTime();
       let num = 0;
       if (diff > 0) {
         const _Math = Math;
         num = Math.ceil(diff / DurationsDefault.Millis.DAY);
       }
-      obj = { days_left: num, promotion_end_date: promotionEndDate.toLocaleDateString(currentLocale, closure_3) };
-      promotionEndDate = self.promotionEndDate;
+      ({ promotionEndDate, promotionEndDate: promotionEndDate2 } = self);
+      const obj = { days_left: num, promotion_end_date: toLocaleDateString(currentLocale, date1) };
+      toLocaleDateString = promotionEndDate.toLocaleDateString;
+      const fullYear = promotionEndDate2.getFullYear();
+      return obj;
     }
-    return obj;
   }
   isIncludedInRollout(id, date) {
     const self = this;

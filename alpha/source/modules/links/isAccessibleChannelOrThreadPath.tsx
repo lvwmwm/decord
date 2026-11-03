@@ -1,17 +1,17 @@
-// Module ID: 7423
-// Function ID: 7424
+// Module ID: 7547
+// Function ID: 7548
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 7264, 4863, 4920, 4885, 1072, 4870, 7419, 7424, 7433, 7404, 7436, 7438, 7397, 7439, 7440, 5248, 7441, 7402, 1379, 7484, 7485, 5653, 2]
+// Dependencies: [5, 7384, 4990, 5047, 5012, 1072, 4997, 7543, 7548, 7557, 7528, 7560, 7562, 7521, 7563, 7564, 5371, 7565, 7526, 1380, 7608, 7609, 5773, 2]
 // Exports: default
 
-// Module 7423 (isAccessibleChannelOrThreadPath)
+// Module 7547 (isAccessibleChannelOrThreadPath)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7264 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7384 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildRoleStore from "GuildRoleStore" /* 5047 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
+import ChannelConstants from "ChannelConstants" /* 4997 */;
 import size from "module_2" /* 2 */;
 
 let id, obj13;
@@ -47,7 +47,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -106,6 +106,9 @@ let obj = function _isAccessibleChannelOrThreadPath() {
                       }
                       c5 = 3;
                       return { value: canAccessConjureResult, done: true };
+                    } else if (closure_131_11.CONJURE_PROJECT === c1) {
+                      c5 = 3;
+                      return { value: false, done: true };
                     } else if (closure_131_11.ROLE_SUBSCRIPTIONS === c1) {
                       c5 = 3;
                       const obj9 = { value: obj30.areRoleSubscriptionsVisibleInGuild(id, unsafeMutableRoles), done: true };

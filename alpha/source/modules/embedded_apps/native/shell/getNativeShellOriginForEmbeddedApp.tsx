@@ -1,15 +1,15 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11968
+// Function ID: 11969
 // Name: getNativeShellOriginForEmbeddedApp
-// Dependencies: [5672, 11832, 2]
+// Dependencies: [5792, 11969, 2]
 // Exports: getNativeShellOriginForEmbeddedApp
 
-// Module 11831 (getNativeShellOriginForEmbeddedApp)
-import getURLForApplication from "getURLForApplication" /* 5672 */;
+// Module 11968 (getNativeShellOriginForEmbeddedApp)
+import getURLForApplication from "getURLForApplication" /* 5792 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const nativeShellOrigin2 = tmp(11832);
+const nativeShellOrigin2 = tmp(11969);
 const result = size.fileFinishedImporting("modules/embedded_apps/native/shell/getNativeShellOriginForEmbeddedApp.tsx");
 
 export function getNativeShellOriginForEmbeddedApp(assetURL) {

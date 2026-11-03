@@ -1,14 +1,14 @@
-// Module ID: 8218
-// Function ID: 8219
+// Module ID: 8342
+// Function ID: 8343
 // Name: uploader/UploadUtils
-// Dependencies: [8211, 1282, 8219, 1361, 2]
+// Dependencies: [8335, 1282, 8343, 1363, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 8218 (uploader/UploadUtils)
+// Module 8342 (uploader/UploadUtils)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import shim from "shim" /* 1361 */;
-import UploadPlatform from "UploadPlatform" /* 8211 */;
-import AttachmentFile from "AttachmentFile" /* 8219 */;
+import shim from "shim" /* 1363 */;
+import UploadPlatform from "UploadPlatform" /* 8335 */;
+import AttachmentFile from "AttachmentFile" /* 8343 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/uploader/UploadUtils.tsx");

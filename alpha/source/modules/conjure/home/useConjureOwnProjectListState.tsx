@@ -1,13 +1,13 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13148
+// Function ID: 13149
 // Name: useConjureOwnProjectListState
-// Dependencies: [19, 6844, 12985, 504, 2]
+// Dependencies: [19, 6964, 13121, 504, 2]
 // Exports: default
 
-// Module 13012 (useConjureOwnProjectListState)
-import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 12985 */;
+// Module 13148 (useConjureOwnProjectListState)
+import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 13121 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, name;

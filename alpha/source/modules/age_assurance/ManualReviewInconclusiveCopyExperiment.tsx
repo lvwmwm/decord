@@ -1,11 +1,11 @@
-// Module ID: 8169
-// Function ID: 8170
+// Module ID: 8293
+// Function ID: 8294
 // Name: ManualReviewInconclusiveCopyExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: useIsManualReviewInconclusiveCopyEnabled
 
-// Module 8169 (ManualReviewInconclusiveCopyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 8293 (ManualReviewInconclusiveCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,20 +1,20 @@
-// Module ID: 14595
-// Function ID: 14596
+// Module ID: 14726
+// Function ID: 14727
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 5014, 575, 14002, 5624, 1113, 10535, 12560, 10828, 2]
+// Dependencies: [17, 21, 5141, 575, 14133, 5747, 1113, 10665, 12696, 10958, 2]
 // Exports: default
 
-// Module 14595 (ScheduledMessagesIntro)
+// Module 14726 (ScheduledMessagesIntro)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AttachmentIcon from "AttachmentIcon" /* 10535 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10828 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12560 */;
-import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 14002 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import AttachmentIcon from "AttachmentIcon" /* 10665 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10958 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12696 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 14133 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -93,7 +93,7 @@ export default function ScheduledMessagesIntro() {
   const obj3 = { style: tmp.upsellImage, children: hasOwnProperty(ScheduleMessageSpotIllustration.ScheduleMessageSpotIllustration, { width: 180, height: 120, accessible: false }) };
   items[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl6.t["C/j9NE"]) };
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(intl6.t["C/j9NE"]) };
   const Heading = Text_Text.Heading;
   intl = intl6.intl;
   items1 = [hasOwnProperty(Heading, obj5), ];

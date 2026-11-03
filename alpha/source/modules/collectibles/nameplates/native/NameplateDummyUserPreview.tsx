@@ -1,20 +1,20 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9641
+// Function ID: 9642
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1192, 21, 1187, 575, 5014, 504, 5036, 9514, 9516, 9517, 2]
+// Dependencies: [19, 17, 1192, 21, 1187, 575, 5141, 504, 5163, 9642, 9644, 9645, 2]
 // Exports: NameplateDummyUserPreview
 
-// Module 9513 (NameplateDummyUserPreview)
+// Module 9641 (NameplateDummyUserPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import themes from "themes" /* 5036 */;
-import NameplateDefault from "Nameplate" /* 9514 */;
+import themes from "themes" /* 5163 */;
+import NameplateDefault from "Nameplate" /* 9642 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -88,7 +88,7 @@ export function NameplateDummyUserPreview(hideAvatar) {
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   items2[0] = hasOwnProperty(NameplateDefault, obj3);
   const obj4 = { style: tmp3.avatarContainer, children: hasOwnProperty(Avatar, obj5) };
-  obj5 = { source: importDefault(stateFromStores ? 9516 : 9517), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
+  obj5 = { source: importDefault(stateFromStores ? 9644 : 9645), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
   Avatar = native.Avatar;
   items2[1] = hasOwnProperty(View, obj4);
   const obj6 = { style: items3 };

@@ -1,14 +1,14 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7452
+// Function ID: 7453
 // Name: AuthorizedAppsActionCreators
-// Dependencies: [5, 7276, 1072, 4858, 572, 1282, 2]
+// Dependencies: [5, 7396, 1072, 4985, 572, 1282, 2]
 
-// Module 7332 (AuthorizedAppsActionCreators)
+// Module 7452 (AuthorizedAppsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Timers from "Timers" /* 4858 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7276 */;
+import Timers from "Timers" /* 4985 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7396 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let obj = function _fetchAuthorizedApps() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

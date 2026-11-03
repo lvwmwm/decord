@@ -1,21 +1,21 @@
-// Module ID: 16660
-// Function ID: 16661
+// Module ID: 16803
+// Function ID: 16804
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 5014, 16661, 16657, 7292, 5717, 16662, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 16804, 16800, 7412, 5837, 16805, 5747, 1113, 2]
 // Exports: default
 
-// Module 16660 (TwoFASetupLanding)
+// Module 16803 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16657 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 16661 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16662 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16800 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 16804 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16805 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ export default function TwoFASetupLanding() {
   const obj5 = { source: AssetRegistryDefault, style: tmp.authIcon };
   const tmp3 = FastImageDefault;
   items = [React3(tmp3, obj5), , ];
-  const obj6 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
+  const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9E74Dx"]) };
   const Heading = Text_Text.Heading;
   intl = intl3.intl;
   items[1] = React3(Heading, obj6);

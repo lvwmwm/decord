@@ -1,21 +1,21 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 12676
+// Function ID: 12677
 // Name: useCreatePollFormData
-// Dependencies: [5, 32, 19, 8406, 8403, 12541, 12542, 12555, 12556, 12557, 1113, 12548, 2]
+// Dependencies: [5, 32, 19, 8530, 8527, 12677, 12678, 12691, 12692, 12693, 1113, 12684, 2]
 // Exports: default
 
-// Module 12540 (useCreatePollFormData)
+// Module 12676 (useCreatePollFormData)
 import intl3 from "intl" /* 1113 */;
-import PollsUtils from "PollsUtils" /* 8403 */;
-import useRequestDefault from "useRequest" /* 12541 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 12542 */;
-import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12555 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12556 */;
-import PollTypes from "PollTypes" /* 12557 */;
+import PollsUtils from "PollsUtils" /* 8527 */;
+import useRequestDefault from "useRequest" /* 12677 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 12678 */;
+import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12691 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12692 */;
+import PollTypes from "PollTypes" /* 12693 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PollsConstants from "PollsConstants" /* 8406 */;
+import PollsConstants from "PollsConstants" /* 8530 */;
 import size from "module_2" /* 2 */;
 
 let c1, c5, c6, channel, closure_1, dependencyMap, importDefault;
@@ -195,7 +195,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -236,7 +236,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
             callback2(first3(closure_1, closure_0(initialQuestion[9]).PollMediaUploadAttachmentStatus.ERROR), closure_0);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         c6 = 3;
@@ -360,7 +360,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -389,7 +389,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
           return obj;
         } else {
           channel = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         channel = 3;

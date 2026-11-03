@@ -1,19 +1,19 @@
-// Module ID: 7080
-// Function ID: 7081
+// Module ID: 7206
+// Function ID: 7207
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1383, 6997, 21, 5014, 575, 504, 6447, 5624, 1113, 7081, 7108, 5712, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7123, 21, 5141, 575, 504, 6567, 5747, 1113, 7207, 7234, 5832, 5754, 2]
 // Exports: default
 
-// Module 7080 (ConfirmEmailCode)
+// Module 7206 (ConfirmEmailCode)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
+import UserStore from "UserStore" /* 1385 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7123 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4;
@@ -87,7 +87,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -148,7 +148,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
           c3 = 0;
           closure_129_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         onResend = tmp39;
@@ -169,7 +169,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
     let obj3 = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: null, children: items3 };
     ({ background: obj2.style, contentContainer: obj2.contentContainerStyle } = tmp);
     let obj4 = { children: items2 };
-    let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: headerText };
+    let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: headerText };
     items2 = [closure_11(tmp2(tmp3[11]).Text, obj5), , , ];
     let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: intl.string(tmp2(tmp3[12]).t.SZJowy) };
     const Text = tmp2(tmp3[11]).Text;
@@ -197,7 +197,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -251,7 +251,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp29) {
               onResend = tmp29;

@@ -1,19 +1,19 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10814
+// Function ID: 10815
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 5014, 575, 1375, 10685, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1377, 10815, 5747, 1113, 2]
 // Exports: ExclusiveBadge
 
-// Module 10684 (SocialLayerStorefrontBadges)
+// Module 10814 (SocialLayerStorefrontBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ClydeIcon2 from "ClydeIcon" /* 10685 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ClydeIcon2 from "ClydeIcon" /* 10815 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils;
@@ -43,7 +43,7 @@ export function ExclusiveBadge() {
   const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
   const ClydeIcon = ClydeIcon2.ClydeIcon;
   items = [React3(ClydeIcon, obj2), ];
-  const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText, children: intl.string(intl2.t.RiDMFz) };
+  const obj3 = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.exclusiveBadgeText, children: intl.string(intl2.t.RiDMFz) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = React3(Text, obj3);

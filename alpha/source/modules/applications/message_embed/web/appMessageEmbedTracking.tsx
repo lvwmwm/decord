@@ -1,10 +1,10 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7961
+// Function ID: 7962
 // Name: appMessageEmbedTracking
-// Dependencies: [19, 1072, 1252, 7838, 7839, 2]
+// Dependencies: [19, 1072, 1252, 7962, 7963, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed, useTrackAppEmbedViewed
 
-// Module 7837 (appMessageEmbedTracking)
+// Module 7961 (appMessageEmbedTracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;

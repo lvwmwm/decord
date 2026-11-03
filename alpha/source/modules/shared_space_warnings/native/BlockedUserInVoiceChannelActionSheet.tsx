@@ -1,24 +1,24 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15768
+// Function ID: 15769
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 4863, 4956, 1383, 15623, 15625, 1072, 21, 5014, 575, 504, 1113, 7366, 5717, 11273, 5624, 7060, 6975, 1187, 12125, 11972, 5634, 5258, 6706, 1252, 2]
+// Dependencies: [19, 17, 4990, 5083, 1385, 15765, 15767, 1072, 21, 5141, 575, 504, 1113, 7486, 5837, 11410, 5747, 7186, 7101, 1187, 12261, 12109, 5754, 5381, 6826, 1252, 2]
 // Exports: default
 
-// Module 15626 (BlockedUserInVoiceChannelActionSheet)
+// Module 15768 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15623 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15765 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15625 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15767 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -98,7 +98,7 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   const tmp13 = blockedUserId(tmp3[14]);
   items4 = [closure_13(tmp13, obj5), , , ];
   const obj6 = { style: tmp.headerText, children: items5 };
-  const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl4.string(require("intl").t["1/gpFh"]) };
+  const obj7 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl4.string(require("intl").t["1/gpFh"]) };
   const Text = tmp2(tmp3[16]).Text;
   intl4 = tmp2(tmp3[12]).intl;
   items5 = [closure_13(Text, obj7), ];

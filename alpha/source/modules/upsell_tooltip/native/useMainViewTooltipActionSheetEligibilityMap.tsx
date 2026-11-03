@@ -1,34 +1,34 @@
-// Module ID: 19054
-// Function ID: 19055
+// Module ID: 19212
+// Function ID: 19213
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1246, 7632, 19028, 9626, 1231, 4857, 1385, 1082, 504, 19055, 1622, 8528, 19056, 8524, 7627, 19057, 15307, 10609, 10608, 10616, 5044, 4847, 19058, 19059, 19026, 13731, 2]
+// Dependencies: [32, 1246, 7756, 19186, 9758, 1231, 4984, 1387, 1082, 504, 19213, 1624, 8652, 19214, 8648, 7751, 19215, 15448, 10739, 10738, 10746, 5171, 4974, 19216, 19217, 19184, 13862, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 19054 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 19212 (useMainViewTooltipActionSheetEligibilityMap)
 import get_initialized from "get initialized" /* 504 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7627 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8524 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8528 */;
-import MarketingComponentType from "MarketingComponentType" /* 10609 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10616 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13731 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15307 */;
-import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 19026 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 19055 */;
-import RecurringReferralReminderExperiment2 from "RecurringReferralReminderExperiment" /* 19056 */;
-import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 19059 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
+import dismissible_content from "dismissible_content" /* 4974 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7751 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8648 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8652 */;
+import MarketingComponentType from "MarketingComponentType" /* 10739 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10746 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13862 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15448 */;
+import RobloxConnectionCoachmark from "RobloxConnectionCoachmark" /* 19184 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 19213 */;
+import RecurringReferralReminderExperiment2 from "RecurringReferralReminderExperiment" /* 19214 */;
+import useNitroFileUploadMarketingEligible from "useNitroFileUploadMarketingEligible" /* 19217 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7632 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19028 */;
-import PromotionsStore from "PromotionsStore" /* 9626 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7756 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19186 */;
+import PromotionsStore from "PromotionsStore" /* 9758 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4984 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;
@@ -36,7 +36,7 @@ let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_REACTIVATION_TRIAL_ID;
 let tmp4;
-const useGiftingPromotionAssetsReadyDefault = tmp4(19058);
+const useGiftingPromotionAssetsReadyDefault = tmp4(19216);
 ({ PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID } = PremiumConstants);
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
 const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
@@ -69,12 +69,12 @@ export function useMainViewTooltipActionSheetMap() {
   let tmp34;
   let tmp8;
   let tmp9;
-  const f116567 = () => {
+  const f116234 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f116569 = () => {
+  const f116236 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -99,8 +99,8 @@ export function useMainViewTooltipActionSheetMap() {
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult18 = get_initialized;
-  [tmp8, tmp9] = tmpResult18.useStateFromStoresArray(items2, f116567);
-  _slicedToArray(tmpResult18.useStateFromStoresArray(items2, f116567), 2);
+  [tmp8, tmp9] = tmpResult18.useStateFromStoresArray(items2, f116234);
+  _slicedToArray(tmpResult18.useStateFromStoresArray(items2, f116234), 2);
   const tmpResult19 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult19.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -114,14 +114,14 @@ export function useMainViewTooltipActionSheetMap() {
   const isEligibleSenderForReferralProgram = tmpResult21.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult22 = get_initialized;
-  [tmp14, tmp15] = tmpResult22.useStateFromStoresArray(items4, f116569);
-  _slicedToArray(tmpResult22.useStateFromStoresArray(items4, f116569), 2);
+  [tmp14, tmp15] = tmpResult22.useStateFromStoresArray(items4, f116236);
+  _slicedToArray(tmpResult22.useStateFromStoresArray(items4, f116236), 2);
   const tmpResult23 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult23.usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(19057).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(19215).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const enabled = PremiumTrialOfferActionSheetKillSwitchExperiment.useConfig({ location: tmp5 }).enabled;
   const tmpResult24 = usePromotionMarketingComponent;
-  const promotionMarketingComponent = tmpResult24.usePromotionMarketingComponent(tmp(10609).MarketingComponentType.MOBILE_BOTTOM_SHEET);
+  const promotionMarketingComponent = tmpResult24.usePromotionMarketingComponent(tmp(10739).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
   if (promotionMarketingComponent != null) {
     oneofKind = promotionMarketingComponent.properties.properties.oneofKind;
@@ -166,19 +166,19 @@ export function useMainViewTooltipActionSheetMap() {
     }
     return prop;
   });
-  const GiftPromotionReminderExperiment = tmp(10608).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10738).GiftPromotionReminderExperiment;
   let enabled2 = GiftPromotionReminderExperiment.useConfig({ location: tmp5 }).enabled;
   const tmpResult28 = GiftingBadgesUtils;
   const giftingBadgeCoachmarkVariant = tmpResult28.useGiftingBadgeCoachmarkVariant({ platform: "native", location: tmp5 });
   let isDismissed = null != stateFromStores3;
   if (isDismissed) {
     const tmpResult29 = DismissibleContentUnsafeUtils;
-    isDismissed = tmpResult29.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4847).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores3).isDismissed;
+    isDismissed = tmpResult29.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4974).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET, stateFromStores3).isDismissed;
   }
   let isDismissed2 = null != stateFromStores3;
   if (isDismissed2) {
     const tmpResult30 = DismissibleContentUnsafeUtils;
-    isDismissed2 = tmpResult30.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4847).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores3).isDismissed;
+    isDismissed2 = tmpResult30.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4974).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores3).isDismissed;
   }
   let tmp25 = null;
   const tmp4Result = useGiftingPromotionAssetsReadyDefault;
@@ -200,7 +200,7 @@ export function useMainViewTooltipActionSheetMap() {
   CustomTypingIndicatorExperiment;
   const obj5 = {};
   if (stateFromStores) {
-    const GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET = tmp(4847).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET;
+    const GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET = tmp(4974).DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET;
     const obj6 = { isEligible: tmp8, newSnowflakeId: priceChangeId, actionSheetProperties: {} };
     priceChangeId = undefined;
     if (tmp9 != null) {
@@ -208,7 +208,7 @@ export function useMainViewTooltipActionSheetMap() {
     }
     obj5[GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET] = obj6;
     let tmp36 = null != premiumDiscountOffer;
-    const DISCOUNT_OFFER_ACTION_SHEET = tmp(4847).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET;
+    const DISCOUNT_OFFER_ACTION_SHEET = tmp(4974).DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET;
     if (tmp36) {
       tmp36 = null == premiumDiscountOffer.expiresAt;
     }
@@ -225,7 +225,7 @@ export function useMainViewTooltipActionSheetMap() {
     }
     obj5[DISCOUNT_OFFER_ACTION_SHEET] = obj7;
     let hasItem = null != premiumTrialOffer;
-    const MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET = tmp(4847).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET;
+    const MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET = tmp(4974).DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET;
     if (hasItem) {
       hasItem = null == premiumTrialOffer.expiresAt;
     }
@@ -248,7 +248,7 @@ export function useMainViewTooltipActionSheetMap() {
     }
     obj5[MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET] = obj10;
     let dismissibleContent;
-    const PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL = tmp(4847).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
+    const PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL = tmp(4974).DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL;
     if (mobileBottomSheet != null) {
       dismissibleContent = mobileBottomSheet.dismissibleContent;
     }
@@ -268,7 +268,7 @@ export function useMainViewTooltipActionSheetMap() {
     }
     obj5[PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL] = obj13;
     let dismissibleContent1;
-    const PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL = tmp(4847).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
+    const PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL = tmp(4974).DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL;
     if (mobileBottomSheet != null) {
       dismissibleContent1 = mobileBottomSheet.dismissibleContent;
     }
@@ -288,7 +288,7 @@ export function useMainViewTooltipActionSheetMap() {
     }
     obj5[PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL] = obj15;
     let tmp49 = tmp33;
-    const GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET = tmp(4847).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET;
+    const GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET = tmp(4974).DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET;
     if (null != stateFromStores4) {
       tmp49 = isGiftCoachmarkAssetReady;
     }
@@ -296,7 +296,7 @@ export function useMainViewTooltipActionSheetMap() {
     obj18 = { coachmarkComponent: stateFromStores4 };
     obj5[GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET] = obj17;
     let tmp50 = !tmp33;
-    const GIFTING_PROMOTION_REMINDER = tmp(4847).DismissibleContent.GIFTING_PROMOTION_REMINDER;
+    const GIFTING_PROMOTION_REMINDER = tmp(4974).DismissibleContent.GIFTING_PROMOTION_REMINDER;
     if (null != stateFromStores4) {
       tmp50 = null == stateFromStores5;
     }
@@ -338,7 +338,7 @@ export function useMainViewTooltipActionSheetMap() {
     obj5[dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL] = obj28;
     const obj29 = { isEligible: tmp32, actionSheetProperties: {} };
     obj5[dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK] = obj29;
-    const MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT = tmp(4847).DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT;
+    const MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT = tmp(4974).DismissibleContent.MOBILE_REFERRAL_PROGRAM_BOTTOM_SHEET_ENTRYPOINT;
     if (stateFromStores2) {
       stateFromStores2 = isEligibleSenderForReferralProgram;
     }

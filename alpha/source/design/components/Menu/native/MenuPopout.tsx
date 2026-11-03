@@ -1,12 +1,12 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 15966
+// Function ID: 15967
 // Name: MenuPopout
-// Dependencies: [32, 19, 21, 9877, 5095, 10547, 15816, 15821, 15822, 2]
+// Dependencies: [32, 19, 21, 10008, 1652, 10677, 15959, 15964, 15965, 2]
 // Exports: MenuPopout
 
-// Module 15823 (MenuPopout)
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10547 */;
-import Menu2 from "Menu" /* 15816 */;
+// Module 15966 (MenuPopout)
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10677 */;
+import Menu2 from "Menu" /* 15959 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

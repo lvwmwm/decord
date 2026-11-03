@@ -1,18 +1,18 @@
-// Module ID: 18616
-// Function ID: 18617
+// Module ID: 18774
+// Function ID: 18775
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 5014, 575, 5717, 18306, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5837, 18451, 5747, 2]
 // Exports: default
 
-// Module 18616 (UnavailableNotice)
+// Module 18774 (UnavailableNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18306 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18451 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -53,7 +53,7 @@ export default function UnavailableNotice(brightTitle) {
     brightTitle = tmp.brightTitle;
   }
   items2[1] = brightTitle;
-  items1[1] = React3(Text, { variant: "heading-lg/extrabold", color: "text-default", style: items2, children: title });
+  items1[1] = React3(Text, { variant: "heading-lg/semibold", color: "text-default", style: items2, children: title });
   const obj4 = { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description };
   items1[2] = React3(Text_Text.Text, obj4);
   return React3(View, obj);

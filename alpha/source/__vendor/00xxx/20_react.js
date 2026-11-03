@@ -41,7 +41,7 @@ function noop() {
 }
 function mapIntoArray(element, items, arg2, arg3, fn) {
   let tmp55;
-  const f119995 = (arg0) => closure_0[arg0];
+  const f119698 = (arg0) => closure_0[arg0];
   let tmp = typeof element !== "undefined";
   if (typeof element !== "undefined") {
     tmp = typeof element !== "boolean";
@@ -83,7 +83,7 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
           if (null != tmp2.key) {
             const text = `${tmp2.key}`;
             _typeof = { "=": "=0", ":": "=2" };
-            let text1 = `$${`${tmp2.key}`.replace(/[=:]/g, f119995)}`;
+            let text1 = `$${`${tmp2.key}`.replace(/[=:]/g, f119698)}`;
           }
           str16 = `.${tmp45}`;
         }
@@ -141,8 +141,8 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
               if (null != tmp36.key) {
                 let text3 = `${tmp36.key}`;
                 _typeof = { "=": "=0", ":": "=2" };
-                let text4 = `$${`${tmp36.key}`.replace(/[=:]/g, f119995)}`;
-                num13 = num13 + tmp35(tmp36, items, arg2, str5 + `$${`${tmp36.key}`.replace(/[=:]/g, f119995)}`, fn);
+                let text4 = `$${`${tmp36.key}`.replace(/[=:]/g, f119698)}`;
+                num13 = num13 + tmp35(tmp36, items, arg2, str5 + `$${`${tmp36.key}`.replace(/[=:]/g, f119698)}`, fn);
                 num12 = num12 + 1;
                 num7 = num13;
                 if (num12 >= tmp2.length) {
@@ -180,9 +180,9 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
                 if (null != value3.key) {
                   let text5 = `${value2.key}`;
                   _typeof = { "=": "=0", ":": "=2" };
-                  let text6 = `$${`${value2.key}`.replace(/[=:]/g, f119995)}`;
+                  let text6 = `$${`${value2.key}`.replace(/[=:]/g, f119698)}`;
                   num5 = num5 + 1;
-                  num6 = num6 + tmp26(value3, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, f119995)}`, fn);
+                  num6 = num6 + tmp26(value3, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, f119698)}`, fn);
                   let iter3 = iter.next();
                   iter2 = iter3;
                   num7 = num6;
@@ -358,22 +358,22 @@ const obj6 = {
       let c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f77289.call(closure_1_1, arg0, +closure_2);
+        return f77449.call(closure_1_1, arg0, +closure_2);
       });
       return items;
     }
   },
   forEach(element, arg1, arg2) {
     let closure_0 = arg1;
-    const f77287 = function() {
-      f77287(...arguments);
+    const f77447 = function() {
+      f77447(...arguments);
     };
     closure_1 = arg2;
     if (null != element) {
       let c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f77289.call(closure_1_1, arg0, +closure_2);
+        return f77449.call(closure_1_1, arg0, +closure_2);
       });
     }
   },
@@ -386,13 +386,13 @@ const obj6 = {
       let c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f77289.call(closure_1_1, arg0, +closure_2);
+        return f77449.call(closure_1_1, arg0, +closure_2);
       });
     }
     return c0;
   },
   toArray(element) {
-    const f77289 = (arg0) => arg0;
+    const f77449 = (arg0) => arg0;
     let items1 = element;
     if (null != element) {
       const items = [];
@@ -400,7 +400,7 @@ const obj6 = {
       const tmp = mapIntoArray;
       mapIntoArray(element, items, "", "", (arg0) => {
         closure_2 = tmp + 1;
-        return f77289.call(closure_1_1, arg0, +closure_2);
+        return f77449.call(closure_1_1, arg0, +closure_2);
       });
       items1 = items;
     }
@@ -650,9 +650,9 @@ export const useActionState = (arg0, arg1, arg2) => {
   const H = obj.H;
   return H.useActionState(arg0, arg1, arg2);
 };
-export const useCallback = (fn, items) => {
+export const useCallback = (ActivityPanelHeaderTsx1, items) => {
   const H = obj.H;
-  return H.useCallback(fn, items);
+  return H.useCallback(ActivityPanelHeaderTsx1, items);
 };
 export const useContext = (context) => {
   const H = obj.H;
@@ -677,9 +677,9 @@ export const useId = () => {
   const H = obj.H;
   return H.useId();
 };
-export const useImperativeHandle = (ref, chatInputRefObjectCallback, items2) => {
+export const useImperativeHandle = (ref, chatInputRefObjectCallback, items) => {
   const H = obj.H;
-  return H.useImperativeHandle(ref, chatInputRefObjectCallback, items2);
+  return H.useImperativeHandle(ref, chatInputRefObjectCallback, items);
 };
 export const useInsertionEffect = (create, items) => {
   const H = obj.H;

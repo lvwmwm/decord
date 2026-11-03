@@ -1,12 +1,12 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11798
+// Function ID: 11799
 // Name: showGameOrganizationInviteErrorToast
-// Dependencies: [5712, 1113, 2]
+// Dependencies: [5832, 1113, 2]
 // Exports: default
 
-// Module 11661 (showGameOrganizationInviteErrorToast)
+// Module 11798 (showGameOrganizationInviteErrorToast)
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/showGameOrganizationInviteErrorToast.tsx");

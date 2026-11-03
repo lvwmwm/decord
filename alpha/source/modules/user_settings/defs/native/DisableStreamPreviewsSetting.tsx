@@ -1,13 +1,13 @@
-// Module ID: 17905
-// Function ID: 17906
+// Module ID: 18048
+// Function ID: 18049
 // Name: DisableStreamPreviewsSetting
-// Dependencies: [8432, 4839, 11540, 1113, 2]
+// Dependencies: [8556, 4966, 11677, 1113, 2]
 
-// Module 17905 (DisableStreamPreviewsSetting)
+// Module 18048 (DisableStreamPreviewsSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

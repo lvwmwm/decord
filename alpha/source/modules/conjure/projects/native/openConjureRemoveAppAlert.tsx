@@ -1,16 +1,16 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12359
+// Function ID: 12360
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5014, 12212, 1113, 3868, 12224, 10875, 10941, 5712, 5964, 5624, 6027, 5960, 2]
+// Dependencies: [5, 32, 19, 21, 5141, 12348, 1113, 3995, 12360, 11005, 11079, 5832, 6084, 5747, 6147, 6080, 2]
 // Exports: default
 
-// Module 12223 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 5960 */;
+// Module 12359 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 6080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function ConjureRemoveAppAlert(action) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ function ConjureRemoveAppAlert(action) {
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp36) {
@@ -183,7 +183,7 @@ function ConjureRemoveAppAlert(action) {
   }
   let obj3 = { title: tmp10Result7.conjureTitleWithAppTag(closure_6(tmp10(tmp9[13]).Text, obj4)), content: result3, extraContent: tmp20(Stack, { spacing: 12, children: items }), actions: tmp20(closure_8, obj9) };
   const AlertModal = tmp10(tmp9[12]).AlertModal;
-  obj4 = { variant: "heading-lg/bold", color: "none", style: tmp13.title, children: formatToPlainStringResult };
+  obj4 = { variant: "heading-lg/semibold", color: "none", style: tmp13.title, children: formatToPlainStringResult };
   tmp10Result7 = tmp10(tmp9[5]);
   if ("delete" === action) {
     const tmp10Result8 = tmp10(tmp9[5]);

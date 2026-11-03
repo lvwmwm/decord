@@ -1,11 +1,11 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7525
+// Function ID: 7526
 // Name: guildHasOnboardingHome
-// Dependencies: [1072, 4888, 2]
+// Dependencies: [1072, 5015, 2]
 // Exports: default
 
-// Module 7401 (guildHasOnboardingHome)
-import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+// Module 7525 (guildHasOnboardingHome)
+import FavoritesUtils from "FavoritesUtils" /* 5015 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

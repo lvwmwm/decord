@@ -1,18 +1,18 @@
-// Module ID: 18815
-// Function ID: 18816
+// Module ID: 18973
+// Function ID: 18974
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 7330, 5624, 1113, 2061, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 7450, 5747, 1113, 2190, 2]
 // Exports: default
 
-// Module 18815 (ChannelDetailsLinkedLobby)
+// Module 18973 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7330 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7450 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -50,7 +50,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     let formatResult;
     const obj = { style: items, children: items2 };
     items = [tmp.container, containerStyle];
-    const Text = tmp2(5624).Text;
+    const Text = tmp2(5747).Text;
     const tmp11 = hasOwnProperty;
     if (null != getOrFetchApplication) {
       const intl2 = tmp2(1113).intl;

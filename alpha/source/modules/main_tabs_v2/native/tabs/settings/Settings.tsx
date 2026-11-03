@@ -1,16 +1,16 @@
-// Module ID: 18991
-// Function ID: 18992
+// Module ID: 19149
+// Function ID: 19150
 // Name: Settings
-// Dependencies: [19, 17, 21, 5014, 575, 18862, 1625, 7112, 4971, 18992, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 19020, 1627, 7238, 5098, 19150, 2]
 // Exports: default
 
-// Module 18991 (Settings)
+// Module 19149 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import DeviceUtils from "DeviceUtils" /* 4971 */;
+import DeviceUtils from "DeviceUtils" /* 5098 */;
 import react_mod from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

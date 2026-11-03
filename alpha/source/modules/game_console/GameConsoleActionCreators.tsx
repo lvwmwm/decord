@@ -1,19 +1,19 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 12116
+// Function ID: 12117
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 5764, 5766, 5765, 1072, 1252, 572, 5958, 1113, 5921, 11980, 1282, 1242, 2]
+// Dependencies: [5, 5884, 5886, 5885, 1072, 1252, 572, 6078, 1113, 6041, 12117, 1282, 1242, 2]
 // Exports: connectToRemote, fetchDevices, getConnectNonce, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, waitForSession
 
-// Module 11979 (GameConsoleActionCreators)
+// Module 12116 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5921 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 11980 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 6041 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 12117 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import SessionsStore from "SessionsStore" /* 5766 */;
-import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import SessionsStore from "SessionsStore" /* 5886 */;
+import GameConsoleStore from "GameConsoleStore" /* 5885 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -122,7 +122,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -200,7 +200,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           closure_5 = tmp25;

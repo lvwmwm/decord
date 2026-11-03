@@ -1,17 +1,17 @@
-// Module ID: 17769
-// Function ID: 17770
+// Module ID: 17912
+// Function ID: 17913
 // Name: UserSettingsDesignSystemButtonActionSheet
-// Dependencies: [19, 21, 17767, 1259, 5272, 7321, 8177, 2]
+// Dependencies: [19, 21, 17910, 1259, 5395, 7441, 8301, 2]
 // Exports: default
 
-// Module 17769 (UserSettingsDesignSystemButtonActionSheet)
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17767 */;
+// Module 17912 (UserSettingsDesignSystemButtonActionSheet)
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17910 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, _require, closure_0, dependencyMap, importDefault;
+let _require, closure_0, dependencyMap, importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -82,10 +82,10 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
     });
   }, []);
   let obj = { children: items };
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   items = [closure_4(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title: "Button Settings" }), ];
   let obj2 = { children: items1 };
-  const Form = require("module_8177").Form;
+  const Form = require("module_8301").Form;
   const obj3 = {
     title: "Button Size",
     accessibilityRole: "radiogroup",
@@ -108,12 +108,12 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
       return closure_5(Fragment, obj, value);
     })
   };
-  const FormSection = require("module_8177").FormSection;
+  const FormSection = require("module_8301").FormSection;
   items1 = [closure_4(FormSection, obj3), , , , , ];
   const obj4 = { title: "Button Scale", accessibilityRole: "radiogroup", children: items2 };
-  const FormSection2 = require("module_8177").FormSection;
+  const FormSection2 = require("module_8301").FormSection;
   items2 = [
-    closure_4(require("module_8177").FormHint, { children: "The amount in pixels that the button width will scale when pressed" }),
+    closure_4(require("module_8301").FormHint, { children: "The amount in pixels that the button width will scale when pressed" }),
     items1.map((label) => {
       const value = label.value;
       closure_0 = value;
@@ -134,8 +134,8 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
     })
   ];
   items1[1] = closure_5(FormSection2, obj4);
-  const obj5 = { children: closure_4(require("module_8177").FormSwitchRow, obj6) };
-  const FormSection3 = require("module_8177").FormSection;
+  const obj5 = { children: closure_4(require("module_8301").FormSwitchRow, obj6) };
+  const FormSection3 = require("module_8301").FormSection;
   obj6 = {
     label: "Disabled",
     value: tmp.showDisabled,
@@ -144,8 +144,8 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
     }
   };
   items1[2] = closure_4(FormSection3, obj5);
-  const obj7 = { children: closure_4(require("module_8177").FormSwitchRow, obj8) };
-  const FormSection4 = require("module_8177").FormSection;
+  const obj7 = { children: closure_4(require("module_8301").FormSwitchRow, obj8) };
+  const FormSection4 = require("module_8301").FormSection;
   obj8 = {
     label: "Show Icons",
     value: tmp.showIcon,
@@ -155,8 +155,8 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
   };
   items1[3] = closure_4(FormSection4, obj7);
   const obj9 = { title: "Icon Position", accessibilityRole: "radiogroup", children: items3 };
-  const FormSection5 = require("module_8177").FormSection;
-  items3 = [closure_4(require("module_8177").FormHint, { children: "Whether to show the example icon on the left (default) or right." }), ];
+  const FormSection5 = require("module_8301").FormSection;
+  items3 = [closure_4(require("module_8301").FormHint, { children: "Whether to show the example icon on the left (default) or right." }), ];
   const items4 = ["start", "end"];
   items3[1] = items4.map((label) => {
     closure_0 = label;
@@ -177,8 +177,8 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
   });
   items1[4] = closure_5(FormSection5, obj9);
   const obj10 = { title: "Loading state", accessibilityRole: "radiogroup", children: items5 };
-  const FormSection6 = require("module_8177").FormSection;
-  items5 = [closure_4(require("module_8177").FormHint, { children: "Whether or not to show a loading state when a button is pressed" }), ];
+  const FormSection6 = require("module_8301").FormSection;
+  items5 = [closure_4(require("module_8301").FormHint, { children: "Whether or not to show a loading state when a button is pressed" }), ];
   const items6 = [true, false];
   items5[1] = items6.map((item) => {
     let str;

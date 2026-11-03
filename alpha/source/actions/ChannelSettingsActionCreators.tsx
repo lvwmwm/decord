@@ -1,16 +1,16 @@
-// Module ID: 8199
-// Function ID: 8200
+// Module ID: 8323
+// Function ID: 8324
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 8200, 4863, 1072, 572, 5199, 8202, 1282, 7498, 2]
+// Dependencies: [5, 8324, 4990, 1072, 572, 5322, 8326, 1282, 7622, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8199 (ChannelSettingsActionCreators)
+// Module 8323 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import RootNavigationRef from "RootNavigationRef" /* 5322 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8200 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8324 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ let obj = function _saveChannel() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -317,7 +317,7 @@ obj = function _deleteChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -374,7 +374,7 @@ obj = function _deleteChannel() {
           }
           closure_130_8();
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         c4 = 3;

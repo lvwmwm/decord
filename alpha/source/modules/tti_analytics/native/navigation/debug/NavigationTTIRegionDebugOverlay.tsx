@@ -1,19 +1,19 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18772
+// Function ID: 18773
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 5014, 575, 13329, 13330, 18612, 13332, 5624, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 13465, 13466, 18770, 13468, 5747, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 18614 (NavigationTTIRegionDebugOverlay)
+// Module 18772 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13330 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13332 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13466 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 13468 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -110,10 +110,10 @@ function NavigationTTIMilestoneReadout(surface) {
   }
   const obj2 = { style: tmp.milestoneReadout, pointerEvents: "none", accessible: false, children: closure_7(Text, obj3) };
   obj3 = { variant: "text-xs/normal", color: "text-default", style: tmp.badgeText, lineClamp: 1, accessible: false, children: items2 };
-  Text = surface(5624).Text;
-  const obj4 = { variant: "text-xs/bold", color: "none", children: items1 };
+  Text = surface(5747).Text;
+  const obj4 = { variant: "text-xs/semibold", color: "none", children: items1 };
   items1 = ["FP ", str5];
-  items2 = [closure_7(surface(5624).Text, obj4), " \u00B7 FCP ", str4];
+  items2 = [closure_7(surface(5747).Text, obj4), " \u00B7 FCP ", str4];
   return closure_8(closure_6, obj2);
 }
 function NavigationTTIDebugFreezeControl(arg0) {
@@ -210,7 +210,7 @@ function NavigationTTIDebugFreezeControl(arg0) {
   if (null != target) {
     str5 = "text-feedback-info";
   }
-  obj2 = { variant: "text-xs/bold", color: str5, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
+  obj2 = { variant: "text-xs/semibold", color: str5, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
   return closure_8(tmp7, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -274,14 +274,14 @@ export function NavigationTTIRegionDebugOverlay(name) {
   let tmp = closure_11();
   let tmp3 = dependencyMap;
   let tmp2 = name;
-  let obj = name(13329);
+  let obj = name(13465);
   const navTTISurface = obj.useNavTTISurface();
   [tmp6, c2] = _slicedToArray(react.useState(false), 2);
   const useSyncExternalStore = react.useSyncExternalStore;
   const tmp5 = _slicedToArray(react.useState(false), 2);
-  const subscribeNavigationTTIDebugFreezeTarget = name(13332).subscribeNavigationTTIDebugFreezeTarget;
-  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13332).getNavigationTTIDebugFreezeTarget, name(13332).getNavigationTTIDebugFreezeTarget);
-  let obj2 = name(13329);
+  const subscribeNavigationTTIDebugFreezeTarget = name(13468).subscribeNavigationTTIDebugFreezeTarget;
+  const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, name(13468).getNavigationTTIDebugFreezeTarget, name(13468).getNavigationTTIDebugFreezeTarget);
+  let obj2 = name(13465);
   const navTTISurface1 = obj2.useNavTTISurface();
   const items = [name, regionId, navTTISurface1, tracking];
   const callback = react.useCallback((arg0) => {
@@ -543,9 +543,9 @@ export function NavigationTTIRegionDebugOverlay(name) {
       }
       tmp54 = str34;
     }
-    obj6 = { variant: "text-xs/bold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
+    obj6 = { variant: "text-xs/semibold", color: str26, style: tmp.badgeText, lineClamp: num2, accessible: false, children: combined1 };
     num2 = 1;
-    Text = tmp2(5624).Text;
+    Text = tmp2(5747).Text;
     if (tmp6) {
       num2 = 3;
     }

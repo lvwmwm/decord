@@ -1,19 +1,19 @@
-// Module ID: 10882
-// Function ID: 10883
+// Module ID: 11012
+// Function ID: 11013
 // Name: prefetchConjurePreviewFrame
-// Dependencies: [5, 10876, 6844, 6847, 10883, 10885, 6849, 10886, 6881, 2]
+// Dependencies: [5, 11006, 6964, 6967, 11013, 11015, 6969, 11016, 7001, 2]
 // Exports: prefetchConjurePreviewFrame
 
-// Module 10882 (prefetchConjurePreviewFrame)
-import FramesConstants from "FramesConstants" /* 6847 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6849 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10883 */;
-import createProxyTicket from "createProxyTicket" /* 10885 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10886 */;
+// Module 11012 (prefetchConjurePreviewFrame)
+import FramesConstants from "FramesConstants" /* 6967 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6969 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7001 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11013 */;
+import createProxyTicket from "createProxyTicket" /* 11015 */;
+import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 11016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10876 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11006 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -31,7 +31,7 @@ let obj = function _loadPolicyAndApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _loadPolicyAndApplication() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c1 = 3;

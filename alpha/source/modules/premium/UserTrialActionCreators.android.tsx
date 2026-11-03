@@ -1,11 +1,11 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15379
+// Function ID: 15380
 // Name: UserTrialActionCreators
-// Dependencies: [5, 7634, 1072, 1282, 572, 2]
+// Dependencies: [5, 7758, 1072, 1282, 572, 2]
 
-// Module 15238 (UserTrialActionCreators)
+// Module 15379 (UserTrialActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7634 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7758 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -90,7 +90,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           status = tmp24;
           if (0 === c3) {

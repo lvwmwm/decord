@@ -1,15 +1,15 @@
-// Module ID: 5784
-// Function ID: 5785
+// Module ID: 5904
+// Function ID: 5905
 // Name: AudioRouteStore
-// Dependencies: [17, 5764, 5785, 5786, 504, 572, 2]
+// Dependencies: [17, 5884, 5905, 5906, 504, 572, 2]
 
-// Module 5784 (AudioRouteStore)
+// Module 5904 (AudioRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 5785 */;
-import react_nativeDefault from "react-native" /* 5786 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 5905 */;
+import react_nativeDefault from "react-native" /* 5906 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
 import size from "module_2" /* 2 */;
 
 let AudioRoutePicker, _null;

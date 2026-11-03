@@ -1,11 +1,11 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 12079
+// Function ID: 12080
 // Name: UserSettingsVoiceConstants
-// Dependencies: [1072, 2061, 2]
+// Dependencies: [1072, 2190, 2]
 
-// Module 11942 (UserSettingsVoiceConstants)
+// Module 12079 (UserSettingsVoiceConstants)
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2061 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2190 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

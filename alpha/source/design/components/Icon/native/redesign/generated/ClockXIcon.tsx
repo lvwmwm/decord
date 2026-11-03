@@ -1,14 +1,14 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14675
+// Function ID: 14676
 // Name: ClockXIcon
-// Dependencies: [19, 21, 575, 5716, 14545, 2]
+// Dependencies: [19, 21, 575, 5836, 14676, 2]
 // Exports: ClockXIcon
 
-// Module 14544 (ClockXIcon)
+// Module 14675 (ClockXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 14545 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 14676 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

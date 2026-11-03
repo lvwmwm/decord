@@ -1,27 +1,27 @@
-// Module ID: 15363
-// Function ID: 15364
+// Module ID: 15504
+// Function ID: 15505
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1072, 1385, 21, 5014, 575, 6778, 5253, 5021, 1187, 15364, 15365, 5624, 1113, 5587, 9908, 2047, 15366, 15367, 5717, 15368, 15369, 15370, 15371, 15372, 2]
+// Dependencies: [32, 19, 17, 1072, 1387, 21, 5141, 575, 6898, 5376, 5148, 1187, 15505, 15506, 5747, 1113, 5710, 10039, 2176, 15507, 15508, 5837, 15509, 15510, 15511, 15512, 15513, 2]
 // Exports: default
 
-// Module 15363 (PremiumFeaturesTable)
+// Module 15504 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl32 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import shared from "shared" /* 5021 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LegacyTokens from "LegacyTokens" /* 6778 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15364 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15365 */;
+import shared from "shared" /* 5148 */;
+import useThemeDefault from "useTheme" /* 5376 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import LegacyTokens from "LegacyTokens" /* 6898 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15505 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -52,8 +52,11 @@ function CloseIcon() {
   const Icon = native.Icon;
   return unpackModuleId(Icon, obj);
 }
-function CellText(children) {
-  return unpackModuleId(Text_Text.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.text });
+function CellText(arg0) {
+  let style;
+  let text;
+  ({ text, style } = arg0);
+  return unpackModuleId(Text_Text.Text, { style, variant: "text-md/medium", color: "mobile-text-heading-primary", children });
 }
 function Row(withTopBorderRadius) {
   let closure_0;
@@ -218,7 +221,7 @@ const HorizontalGradient = Constants.HorizontalGradient;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let c13 = "rgba(184, 69, 193, 0.5)";
 let createStyles = createStyles_mod;
-let obj = { container: { display: "flex", flex: 1, width: "100%" }, headerText: { textAlign: "center" }, logo: { marginTop: 8, marginBottom: -6 }, table: { marginTop: 16 }, row: { display: "flex", flexDirection: "row" }, bottomBorder: { borderBottomColor: "rgba(106, 116, 128, 0.24)", borderBottomWidth: 1 }, topBorderRadius: obj2, bottomBorderRadius: obj3, cell: { paddingVertical: 12 }, labelCell: { flex: 1, justifyContent: "flex-start" }, dataCell: { flexDirection: "row", justifyContent: "center", alignItems: "center", width: 82 }, themedHighlightedCell: obj4, nitroHomeHightlightedBorderLeftRight: { borderLeftColor: "rgba(184, 69, 193, 0.5)", borderLeftWidth: 2, borderRightColor: "rgba(184, 69, 193, 0.5)", borderRightWidth: 2 }, premiumGroupCard: { marginTop: 16 }, priceContainer: { alignItems: "center" } };
+let obj = { container: { display: "flex", flex: 1, width: "100%" }, headerText: { textAlign: "center" }, logo: { marginTop: 8, marginBottom: -6 }, table: { marginTop: 16 }, row: { display: "flex", flexDirection: "row" }, bottomBorder: { borderBottomColor: "rgba(106, 116, 128, 0.24)", borderBottomWidth: 1 }, topBorderRadius: obj2, bottomBorderRadius: obj3, cell: { paddingVertical: 12 }, labelCell: { flex: 1, justifyContent: "flex-start" }, dataCell: { flexDirection: "row", justifyContent: "center", alignItems: "center", width: 82 }, themedHighlightedCell: obj4, nitroHomeHightlightedBorderLeftRight: { borderLeftColor: "rgba(184, 69, 193, 0.5)", borderLeftWidth: 2, borderRightColor: "rgba(184, 69, 193, 0.5)", borderRightWidth: 2 }, premiumGroupCard: { marginTop: 16 }, priceContainer: { alignItems: "center" }, priceText: { textAlign: "center" } };
 obj2 = { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
 createStyles = createStyles.createStyles;
 obj3 = { borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm };
@@ -301,6 +304,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   }
   const premiumGroupRole = highlightNitroBasic.premiumGroupRole;
   const tmp = closure_14();
+  let closure_3 = tmp;
   const tmp3 = isPremiumGroup;
   const tmp4 = str(isPremiumGroup[9])();
   const tmp5 = str(isPremiumGroup[17])(closure_10.PREMIUM_MONTH_TIER_0);
@@ -355,16 +359,16 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   obj10 = {
     style: tmp.priceContainer,
     children: parts.map((text) => {
-      const obj = { text };
-      return closure_1_11(CellText, obj, text);
+      const obj = { text, style: closure_3.priceText };
+      return unpackModuleId(CellText, obj, text);
     })
   };
   parts = priceString.split(/ (?=\()/g);
   obj11 = {
     style: tmp.priceContainer,
     children: parts1.map((text) => {
-      const obj = { text };
-      return closure_1_11(CellText, obj, text);
+      const obj = { text, style: closure_3.priceText };
+      return unpackModuleId(CellText, obj, text);
     })
   };
   parts1 = priceString1.split(/ (?=\()/g);
@@ -422,7 +426,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const found = items.filter((hidden) => null != hidden && !hidden.hidden);
   const obj28 = { style: items1, children: items2 };
   items1 = [tmp.container, style];
-  const obj29 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: titleOverride };
+  const obj29 = { style: tmp.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: titleOverride };
   const Text = tmp9(tmp3[14]).Text;
   const tmp18 = closure_12;
   if (titleOverride == null) {

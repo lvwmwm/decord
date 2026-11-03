@@ -1,20 +1,20 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9241
+// Function ID: 9242
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4956, 1383, 21, 5014, 9004, 5652, 1888, 5258, 9002, 1994, 1113, 5624, 2]
+// Dependencies: [19, 5083, 1385, 21, 5141, 9132, 5772, 2017, 5381, 9130, 2123, 1113, 5747, 2]
 // Exports: default
 
-// Module 9113 (GuildStageChannelSelection)
+// Module 9241 (GuildStageChannelSelection)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import createStyles from "createStyles" /* 5014 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -52,7 +52,7 @@ export default function GuildStageChannelSelection(channel) {
       selectedItem: id,
       hasIcons: false
     };
-    const tmp4 = asyncRequire(9002, dependencyMap.paths);
+    const tmp4 = asyncRequire(9130, dependencyMap.paths);
     intl = intl2.intl;
     id = undefined;
     if (channel != null) {
@@ -61,7 +61,7 @@ export default function GuildStageChannelSelection(channel) {
     openLazy(tmp4, "SelectUpdatesChannel", obj2);
   }
   function renderChannelHook(children, arg1) {
-    return jsx(channel(handleSelectChannel[12]).Text, { variant: "text-sm/bold", color: "mobile-text-heading-primary", children }, arg1);
+    return jsx(channel(handleSelectChannel[12]).Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children }, arg1);
   }
   const guild = channel.guild;
   const tmp = closure_7();

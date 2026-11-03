@@ -1,28 +1,82 @@
 // Module ID: 10630
 // Function ID: 10631
-// Dependencies: [19, 21, 10631, 10634, 10638, 10639, 10640]
+// Dependencies: [41, 42, 93, 95, 98, 10457, 10626, 10464]
 
 // Module 10630
-import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 10631 */;
-import _mod10634 from "module_10634" /* 10634 */;
-import react3 from "react" /* 10638 */;
-import _mod10639 from "module_10639" /* 10639 */;
-import react from "react" /* 19 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10457 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10464 */;
+import _mod10626 from "module_10626" /* 10626 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const jsx = Fragment.jsx;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export default react.forwardRef((defaultIndex, ref) => {
-  const obj = react2;
-  const initProps = obj.useInitProps(defaultIndex);
-  const dataLength = initProps.dataLength;
-  const obj2 = _mod10634;
-  const commonVariables = obj2.useCommonVariables(initProps);
-  const obj3 = { dataLength };
-  const usePropsErrorBoundary = react3.usePropsErrorBoundary;
-  react3;
-  const merged = Object.assign(initProps);
-  const propsErrorBoundary = usePropsErrorBoundary(obj3);
-  const GlobalStateProvider = _mod10639.GlobalStateProvider;
-  return <GlobalStateProvider value={{ props: initProps, common: commonVariables }}>{null}</GlobalStateProvider>;
-});
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod10626.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class ENCasualYearMonthDayParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENCasualYearMonthDayParser);
+    const obj = _getPrototypeOf(ENCasualYearMonthDayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(arg0, arg1) {
+      let parsed;
+      let parsed1;
+      if (arg1[3]) {
+        const _parseInt = parseInt;
+        parsed = parseInt(arg1[3]);
+      } else {
+        parsed = _mod10626.MONTH_DICTIONARY[str.toLowerCase(str)];
+      }
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          const _parseInt2 = parseInt;
+          const _parseInt3 = parseInt;
+          const date = { day: parseInt(arg1[4]), month: parsed, year: parsed1 };
+          parsed1 = parseInt(arg1[1]);
+          return date;
+        }
+      }
+      return null;
+    }
+  }
+];
+
+export default _createClass(ENCasualYearMonthDayParser, items);

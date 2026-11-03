@@ -1,25 +1,25 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15627
+// Function ID: 15628
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 15487, 9920, 15488, 15412, 15489, 9059, 15490, 9468, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 15628, 10051, 15629, 15553, 15630, 9187, 15631, 9596, 2]
 // Exports: default
 
-// Module 15486 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 15627 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9059 */;
-import HeartIcon from "HeartIcon" /* 9468 */;
-import BoostGemIcon from "BoostGemIcon" /* 9920 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15412 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15487 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15488 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15489 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15490 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9187 */;
+import HeartIcon from "HeartIcon" /* 9596 */;
+import BoostGemIcon from "BoostGemIcon" /* 10051 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15553 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15628 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15629 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15630 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15631 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -60,7 +60,7 @@ export default function GuildBoostingMarketingBoosterRecognitionCards() {
   let items1;
   const tmp = closure_8();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-xl/extrabold", style: tmp.title, children: intl.string(intl6.t.IzKs3o) };
+  const obj2 = { variant: "heading-xl/semibold", style: tmp.title, children: intl.string(intl6.t.IzKs3o) };
   const Heading = Text_Text.Heading;
   intl = intl6.intl;
   items = [React3(Heading, obj2), ];

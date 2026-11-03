@@ -1,17 +1,17 @@
-// Module ID: 18238
-// Function ID: 18239
+// Module ID: 18382
+// Function ID: 18383
 // Name: ServerPreviewPill
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 2]
 // Exports: default
 
-// Module 18238 (ServerPreviewPill)
+// Module 18382 (ServerPreviewPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -28,7 +28,7 @@ const result = size.fileFinishedImporting("modules/lurker_mode/native/ServerPrev
 export default function ServerPreviewPill() {
   let intl;
   const tmp = closure_4();
-  ({ variant: "text-xs/bold", style: tmp.text, children: intl.string(intl2.t.KNhFgD) });
+  ({ variant: "text-xs/semibold", style: tmp.text, children: intl.string(intl2.t.KNhFgD) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <View style={tmp.pill} accessibilityRole="text">{null}</View>;

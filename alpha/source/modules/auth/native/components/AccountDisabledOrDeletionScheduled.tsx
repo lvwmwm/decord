@@ -1,18 +1,18 @@
-// Module ID: 18020
-// Function ID: 18021
+// Module ID: 18164
+// Function ID: 18165
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 502, 1072, 21, 5014, 575, 1497, 504, 6740, 7111, 1113, 7139, 18021, 5624, 6767, 5634, 2]
+// Dependencies: [19, 17, 502, 1072, 21, 5141, 575, 1499, 504, 6860, 7237, 1113, 7265, 18165, 5747, 6887, 5754, 2]
 // Exports: default
 
-// Module 18020 (AccountDisabledOrDeletionScheduled)
+// Module 18164 (AccountDisabledOrDeletionScheduled)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -135,7 +135,7 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   const obj6 = { style: tmp9.image };
   const tmp8Result = tmp8(tmp2[12]);
   items4[0] = closure_7(tmp(tmp2[13]).WumpTrash, obj6);
-  const obj7 = { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  const obj7 = { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
   items4[1] = closure_7(tmp(tmp2[14]).Text, obj7);
   const obj8 = { style: tmp9.description, variant: "text-sm/medium", color: "text-default", children: string2Result };
   items4[2] = closure_7(tmp(tmp2[14]).Text, obj8);

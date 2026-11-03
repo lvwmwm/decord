@@ -1,20 +1,20 @@
-// Module ID: 18990
-// Function ID: 18991
+// Module ID: 19148
+// Function ID: 19149
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 5014, 18988, 575, 6980, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 19146, 575, 7106, 5747, 1113, 2]
 // Exports: default
 
-// Module 18990 (RestrictedBlockedMessageGroup)
+// Module 19148 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18988 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Pressables from "Pressables" /* 7106 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

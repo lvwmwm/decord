@@ -1,10 +1,10 @@
-// Module ID: 7440
-// Function ID: 7441
+// Module ID: 7564
+// Function ID: 7565
 // Name: getGuildModeratorReportingEnabled
 // Dependencies: [2]
 // Exports: default
 
-// Module 7440 (getGuildModeratorReportingEnabled)
+// Module 7564 (getGuildModeratorReportingEnabled)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/report_to_mod/getGuildModeratorReportingEnabled.tsx");

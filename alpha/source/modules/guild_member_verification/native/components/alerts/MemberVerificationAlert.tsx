@@ -1,17 +1,17 @@
-// Module ID: 6912
-// Function ID: 6913
+// Module ID: 7032
+// Function ID: 7033
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 5014, 575, 6030, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6150, 5747, 2]
 // Exports: default
 
-// Module 6912 (MemberVerificationAlert)
+// Module 7032 (MemberVerificationAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AlertDefault from "Alert" /* 6030 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import AlertDefault from "Alert" /* 6150 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ export default function MemberVerificationAlert(arg0) {
     tmp7 = React3(View, obj2);
   }
   items = [tmp7, , , ];
-  const obj3 = { style: tmp2.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: header };
+  const obj3 = { style: tmp2.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: header };
   items[1] = React3(Text_Text.Heading, obj3);
   let tmp10Result = null;
   if (null != subtitle) {

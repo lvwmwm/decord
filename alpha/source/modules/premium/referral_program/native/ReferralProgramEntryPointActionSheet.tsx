@@ -1,23 +1,21 @@
-// Module ID: 19053
-// Function ID: 19054
+// Module ID: 19211
+// Function ID: 19212
 // Name: ReferralProgramEntryPointActionSheet
-// Dependencies: [19, 17, 4860, 21, 5014, 575, 5258, 15327, 1994, 5272, 5717, 8522, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 4987, 21, 5141, 575, 5381, 15468, 2123, 5395, 5837, 8646, 5747, 1113, 5754, 2]
 // Exports: default
 
-// Module 19053 (ReferralProgramEntryPointActionSheet)
+// Module 19211 (ReferralProgramEntryPointActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import _modDef8522 from "module_8522" /* 8522 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import _modDef8646 from "module_8646" /* 8646 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -55,29 +53,29 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   const callback = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.PRIMARY);
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(15327, dependencyMap.paths), "referral-program-share-action-sheet");
+    obj.openLazy(asyncRequire(15468, dependencyMap.paths), "referral-program-share-action-sheet");
   }, items);
   const callback1 = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items1);
   let obj = { onDismiss: callback1, children: closure_7(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  BottomSheet = markAsDismissed(5272).BottomSheet;
+  const BottomSheet = markAsDismissed(5395).BottomSheet;
   const obj3 = { source: obj4, style: tmp.image };
-  obj4 = { uri: _modDef8522 };
+  obj4 = { uri: _modDef8646 };
   const tmp4 = FastImageDefault;
   items2 = [closure_6(tmp4, obj3), , , ];
-  const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: intl.string(markAsDismissed(1113).t.u1CFbS) };
-  const Text = markAsDismissed(5624).Text;
+  const obj5 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/semibold", children: intl.string(markAsDismissed(1113).t.u1CFbS) };
+  const Text = markAsDismissed(5747).Text;
   intl = markAsDismissed(1113).intl;
   items2[1] = closure_6(Text, obj5);
   const obj6 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: intl2.string(markAsDismissed(1113).t.k2ibMz) };
-  const Text2 = markAsDismissed(5624).Text;
+  const Text2 = markAsDismissed(5747).Text;
   intl2 = markAsDismissed(1113).intl;
   items2[2] = closure_6(Text2, obj6);
   const obj7 = { style: tmp.buttonContainer, children: closure_6(Button, obj8) };
   obj8 = { text: intl3.string(markAsDismissed(1113).t.TI8qgg), size: "lg", onPress: callback, variant: "primary" };
-  Button = markAsDismissed(5634).Button;
+  Button = markAsDismissed(5754).Button;
   intl3 = markAsDismissed(1113).intl;
   items2[3] = closure_6(View, obj7);
   return closure_6(BottomSheet, obj);

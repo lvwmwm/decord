@@ -1,10 +1,10 @@
-// Module ID: 18008
-// Function ID: 18009
+// Module ID: 18152
+// Function ID: 18153
 // Name: react-native
 // Dependencies: [1114, 2]
 // Exports: getDeviceCountry
 
-// Module 18008 (react-native)
+// Module 18152 (react-native)
 import react_native from "react-native" /* 1114 */;
 import size from "module_2" /* 2 */;
 

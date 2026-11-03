@@ -1,13 +1,13 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13820
+// Function ID: 13821
 // Name: TraitPickerControls
-// Dependencies: [21, 13693, 13694, 2]
+// Dependencies: [21, 13821, 13822, 2]
 // Exports: default
 
-// Module 13692 (TraitPickerControls)
+// Module 13820 (TraitPickerControls)
 import Fragment from "Fragment" /* 21 */;
-import useTraitPickerSelection from "useTraitPickerSelection" /* 13693 */;
-import TraitPickerDefault from "TraitPicker" /* 13694 */;
+import useTraitPickerSelection from "useTraitPickerSelection" /* 13821 */;
+import TraitPickerDefault from "TraitPicker" /* 13822 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -22,5 +22,5 @@ export default function TraitPickerControls(activeCustomizationOption) {
   TraitPickerDefault;
   const merged1 = Object.assign(merged);
   ({ optionIds: obj2.optionIds, savedOptionId: obj2.savedOptionId, selectedOptionId: obj2.selectedOptionId, onSelectOption: obj2.onSelectOption } = traitPickerSelection);
-  return <tmp3 key={activeCustomizationOption} customizationOption={activeCustomizationOption} />;
+  return <tmp3 customizationOption={activeCustomizationOption} />;
 };

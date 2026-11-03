@@ -1,16 +1,16 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16440
+// Function ID: 16441
 // Name: guildVoice
-// Dependencies: [4863, 4885, 4946, 6450, 1072, 8910, 9333, 2]
+// Dependencies: [4990, 5012, 5073, 6570, 1072, 9034, 9461, 2]
 // Exports: getGuildVoiceChannel, isGuildVoiceSocket
 
-// Module 16297 (guildVoice)
-import Constants2 from "Constants" /* 6450 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
-import RPCErrorDefault from "RPCError" /* 9333 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
+// Module 16440 (guildVoice)
+import Constants2 from "Constants" /* 6570 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 9034 */;
+import RPCErrorDefault from "RPCError" /* 9461 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

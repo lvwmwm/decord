@@ -1,19 +1,19 @@
-// Module ID: 17999
-// Function ID: 18000
+// Module ID: 18143
+// Function ID: 18144
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 17989, 17990, 1072, 1497, 17986, 1113, 18000, 6538, 7115, 17997, 1092, 17988, 1498, 7130, 7124, 7494, 2]
+// Dependencies: [5, 32, 19, 18132, 18133, 1072, 1499, 18129, 1113, 18144, 6658, 7241, 18141, 1092, 18131, 1500, 7256, 7250, 7618, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 17999 (useIdentityRegistrationStep)
+// Module 18143 (useIdentityRegistrationStep)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7130 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7494 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7256 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7618 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17989 */;
-import RegistrationConstants from "RegistrationConstants" /* 17990 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18132 */;
+import RegistrationConstants from "RegistrationConstants" /* 18133 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,7 +83,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
             found = closure_5;
             if (closure_5 instanceof sourceState(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               let obj3 = sourceState(navigation[11]);
               tmp = obj3.getAuthenticationErrorsFromAPIError(closure_5);
@@ -194,7 +194,7 @@ export function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
             obj13 = { phone };
             push(VERIFY_PHONE, obj12);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp51) {
           closure_4 = tmp51;

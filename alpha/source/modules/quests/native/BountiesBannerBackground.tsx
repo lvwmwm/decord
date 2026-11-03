@@ -1,15 +1,15 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17140
+// Function ID: 17141
 // Name: BountiesBannerBackground
-// Dependencies: [19, 17, 5015, 21, 504, 8873, 5587, 2]
+// Dependencies: [19, 17, 5142, 21, 504, 8997, 5710, 2]
 
-// Module 16997 (BountiesBannerBackground)
+// Module 17140 (BountiesBannerBackground)
 import get_initialized from "get initialized" /* 504 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import common_Video from "common/Video" /* 8873 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import common_Video from "common/Video" /* 8997 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 18381
-// Function ID: 18382
+// Module ID: 18526
+// Function ID: 18527
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6886, 4885, 6772, 6775, 5679, 1072, 21, 5014, 504, 10992, 5624, 1113, 18382, 5204, 5201, 2]
+// Dependencies: [19, 17, 7006, 5012, 6892, 6895, 5799, 1072, 21, 5141, 504, 11125, 5747, 1113, 18527, 5327, 5324, 2]
 // Exports: default
 
-// Module 18381 (HomeDrawerFolderRow)
+// Module 18526 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10992 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 11125 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7006 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import SortedGuildStore from "SortedGuildStore" /* 6892 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import VoiceStateStore from "VoiceStateStore" /* 5799 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -258,7 +258,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(5204).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(5327).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "folder-expanded-children" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

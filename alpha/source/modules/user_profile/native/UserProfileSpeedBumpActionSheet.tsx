@@ -1,30 +1,28 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8877
+// Function ID: 8878
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 4863, 4926, 1383, 8754, 1072, 21, 5014, 575, 8756, 1113, 7060, 6975, 1187, 5021, 5253, 504, 8757, 7326, 7351, 8761, 8770, 1252, 8752, 8750, 5272, 5275, 8771, 7136, 5624, 6041, 5634, 6980, 4839, 2]
+// Dependencies: [32, 19, 17, 4990, 5053, 1385, 8878, 1072, 21, 5141, 575, 8880, 1113, 7186, 7101, 1187, 5148, 5376, 504, 8881, 7446, 7471, 8885, 8894, 1252, 8876, 8874, 5395, 5398, 8895, 7262, 5747, 6161, 5754, 7106, 4966, 2]
 
-// Module 8753 (UserProfileSpeedBumpActionSheet)
+// Module 8877 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import UserActionCreators from "UserActionCreators" /* 8752 */;
-import Constants2 from "Constants" /* 8754 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8756 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import TableRow2 from "TableRow" /* 7101 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import UserActionCreators from "UserActionCreators" /* 8876 */;
+import Constants2 from "Constants" /* 8878 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let closure_12;
@@ -65,7 +63,7 @@ function InformationTable(speedBumpType) {
       return authStore2(TableRow, obj, index);
     })
   };
-  const TableRowGroup = tmp2(7060).TableRowGroup;
+  const TableRowGroup = tmp2(7186).TableRowGroup;
   return closure_12(TableRowGroup, obj3);
 }
 const View = react_native.View;
@@ -83,6 +81,7 @@ rect = { position: "absolute", bottom: -8, right: -8, padding: nativeDefault.spa
 obj6 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 let closure_14 = createStyles(obj);
 const memoResult = react.memo(function UserProfileSpeedBumpActionSheet(userId) {
+  let BottomSheet;
   let Icon;
   let Text3;
   let UserProfileAnalyticsProvider;
@@ -263,7 +262,7 @@ const memoResult = react.memo(function UserProfileSpeedBumpActionSheet(userId) {
     }
     items8[1] = analyticsLocations(stateFromStores, obj8);
     items9 = [createUserProfileAnalyticsContext(stateFromStores, obj6), , ];
-    const obj10 = { style: tmp2.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(userId(onClose[12]).t.b33pLD) };
+    const obj10 = { style: tmp2.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(userId(onClose[12]).t.b33pLD) };
     const Text = tmp3(tmp4[31]).Text;
     intl = tmp3(tmp4[12]).intl;
     items9[1] = analyticsLocations(Text, obj10);

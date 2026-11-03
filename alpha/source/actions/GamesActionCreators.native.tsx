@@ -1,13 +1,13 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11830
+// Function ID: 11831
 // Name: GamesActionCreators
-// Dependencies: [5, 1072, 11694, 11695, 1092, 7483, 5709, 572, 1282, 11696, 11697, 2]
+// Dependencies: [5, 1072, 11831, 11832, 1092, 7607, 5829, 572, 1282, 11833, 11834, 2]
 
-// Module 11693 (GamesActionCreators)
+// Module 11830 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import Constants2 from "Constants" /* 11694 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11695 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import Constants2 from "Constants" /* 11831 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -181,7 +181,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

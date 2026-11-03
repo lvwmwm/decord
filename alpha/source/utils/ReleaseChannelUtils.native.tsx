@@ -1,11 +1,11 @@
-// Module ID: 6541
-// Function ID: 6542
+// Module ID: 6661
+// Function ID: 6662
 // Name: ReleaseChannelUtils
-// Dependencies: [1374, 1375, 2]
+// Dependencies: [1376, 1377, 2]
 
-// Module 6541 (ReleaseChannelUtils)
-import react_native from "react-native" /* 1374 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+// Module 6661 (ReleaseChannelUtils)
+import react_native from "react-native" /* 1376 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const ReleaseChannel = react_native.getConstants().ReleaseChannel;

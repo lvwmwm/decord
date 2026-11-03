@@ -1,20 +1,20 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14269
+// Function ID: 14270
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 5015, 21, 5014, 5011, 575, 504, 5274, 1113, 1376, 6980, 10254, 13918, 2]
+// Dependencies: [32, 19, 17, 5142, 21, 5141, 5138, 575, 504, 5397, 1113, 1357, 7106, 10384, 14049, 2]
 // Exports: MarketingCardsScroller
 
-// Module 14138 (MarketingCardsScroller)
+// Module 14269 (MarketingCardsScroller)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import ColorUtils_mod from "ColorUtils" /* 5138 */;
 import size_mod from "module_2" /* 2 */;
 
 let ColorUtils;

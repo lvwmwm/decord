@@ -1,18 +1,18 @@
-// Module ID: 13637
-// Function ID: 13638
+// Module ID: 13777
+// Function ID: 13778
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 6066, 21, 575, 5014, 1491, 5607, 2]
+// Dependencies: [19, 17, 6186, 21, 575, 5141, 1493, 5730, 2]
 // Exports: default, useCheckpointScreenContentHeight
 
-// Module 13637 (CheckpointScreen)
+// Module 13777 (CheckpointScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
+import CheckpointConstants from "CheckpointConstants" /* 6186 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -28,7 +28,7 @@ export default function CheckpointScreen(children) {
   let insets;
   children = children.children;
   const tmp = closure_9();
-  insets = insets(5607)().insets;
+  insets = insets(5730)().insets;
   const items = [, , , ];
   ({ bottom: arr[0], left: arr[1], right: arr[2], top: arr[3] } = insets);
   const items1 = [tmp.scrollContent, react.useMemo(() => ({ paddingLeft: insets.left + PX_24, paddingRight: insets.right + PX_24, paddingBottom: insets.bottom + PX_24, paddingTop: insets.top + CHECKPOINT_NAV_HEIGHT }), items)];

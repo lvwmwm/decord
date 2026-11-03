@@ -1,24 +1,24 @@
-// Module ID: 8738
-// Function ID: 8739
+// Module ID: 8862
+// Function ID: 8863
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1383, 1072, 1385, 1108, 5021, 1113, 1252, 8739, 7824, 572, 7157, 1282, 7153, 6446, 2]
+// Dependencies: [5, 1385, 1072, 1387, 1108, 5148, 1113, 1252, 8863, 7948, 572, 7278, 1282, 7274, 6566, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8738 (UserProfileActionCreators)
+// Module 8862 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import shared from "shared" /* 5021 */;
-import InlineUploaderDefault from "InlineUploader" /* 7153 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7157 */;
-import MessageParserDefault from "MessageParser" /* 7824 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8739 */;
+import shared from "shared" /* 5148 */;
+import InlineUploaderDefault from "InlineUploader" /* 7274 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7278 */;
+import MessageParserDefault from "MessageParser" /* 7948 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8863 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, errors, guildId, value2;
@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (1 === c8) {

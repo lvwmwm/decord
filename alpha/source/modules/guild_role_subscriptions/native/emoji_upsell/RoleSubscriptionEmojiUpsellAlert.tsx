@@ -1,18 +1,18 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 10106
+// Function ID: 10107
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 4885, 4870, 21, 9786, 1113, 1491, 504, 6902, 6030, 9975, 9978, 2]
+// Dependencies: [19, 5012, 4997, 21, 9918, 1113, 1493, 504, 7022, 6150, 10107, 10110, 2]
 // Exports: default
 
-// Module 9974 (RoleSubscriptionEmojiUpsellAlert)
+// Module 10106 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9786 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9975 */;
+import ChannelConstants from "ChannelConstants" /* 4997 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9918 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 10107 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

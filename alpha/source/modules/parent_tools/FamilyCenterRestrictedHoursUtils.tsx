@@ -1,13 +1,13 @@
-// Module ID: 11013
-// Function ID: 11014
+// Module ID: 11146
+// Function ID: 11147
 // Name: FamilyCenterRestrictedHoursUtils
-// Dependencies: [1391, 1113, 2538, 2]
+// Dependencies: [1393, 1113, 2667, 2]
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getShortDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
 
-// Module 11013 (FamilyCenterRestrictedHoursUtils)
+// Module 11146 (FamilyCenterRestrictedHoursUtils)
 import intl4 from "intl" /* 1113 */;
-import user from "user" /* 1391 */;
-import _modDef2538 from "module_2538" /* 2538 */;
+import user from "user" /* 1393 */;
+import _modDef2667 from "module_2667" /* 2667 */;
 import size from "module_2" /* 2 */;
 
 function setsEqual(set, set2) {
@@ -31,13 +31,13 @@ function formatDays(days) {
   set = new Set(days);
   if (setsEqual(set, set2)) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef2538.bPjqd1);
+    return intl3.string(_modDef2667.bPjqd1);
   } else if (setsEqual(set, set)) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef2538["4dr9L9"]);
+    return intl2.string(_modDef2667["4dr9L9"]);
   } else if (setsEqual(set, set1)) {
     const intl = intl4.intl;
-    return intl.string(_modDef2538["6lTTJ+"]);
+    return intl.string(_modDef2667["6lTTJ+"]);
   } else {
     const _Intl = Intl;
     let self = this;
@@ -124,7 +124,7 @@ export function formatDuration(arg0) {
   const isIntegerResult = Number.isInteger(result);
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const tmp3 = _modDef2538;
+  const tmp3 = _modDef2667;
   if (isIntegerResult) {
     const obj2 = { hours: result };
     formatToPlainStringResult = formatToPlainString(tmp3.hFDcmZ, obj2);
@@ -168,9 +168,9 @@ export function formatRestrictedScheduleInAppSubtitle(startTime) {
       const format2Result = format2(date1);
       const tmp7 = require;
       if (60 * startTime2.hours + startTime2.minutes > 60 * endTime2.hours + endTime2.minutes) {
-        OxveI8 = _modDef2538.OxveI8;
+        OxveI8 = _modDef2667.OxveI8;
       } else {
-        OxveI8 = _modDef2538["ERTn+E"];
+        OxveI8 = _modDef2667["ERTn+E"];
       }
       const intl = tmp7(1113).intl;
       const obj = { days: tmp5, startTime: formatResult, endTime: format2Result };

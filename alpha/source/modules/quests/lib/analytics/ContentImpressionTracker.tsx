@@ -1,27 +1,27 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 14831
+// Function ID: 14832
 // Name: ContentImpressionTracker
-// Dependencies: [5, 19, 7846, 9686, 1072, 21, 1266, 6788, 7842, 14677, 14678, 14682, 14680, 7872, 7871, 7852, 9682, 9687, 9684, 7853, 7862, 6540, 6545, 9717, 504, 5593, 9718, 2]
+// Dependencies: [5, 19, 7970, 9818, 1072, 21, 1266, 6908, 7966, 14808, 14809, 14813, 14811, 7996, 7995, 7976, 9814, 9819, 9816, 7977, 7986, 6660, 6665, 9849, 504, 5716, 9850, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 14700 (ContentImpressionTracker)
+// Module 14831 (ContentImpressionTracker)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
-import MetricEvents from "MetricEvents" /* 6545 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import QuestDataUtils from "QuestDataUtils" /* 7842 */;
-import getQuestLogger from "getQuestLogger" /* 7853 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import IosAttributionEligibility from "IosAttributionEligibility" /* 14677 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14678 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14680 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 14682 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6660 */;
+import MetricEvents from "MetricEvents" /* 6665 */;
+import AdCreativeType from "AdCreativeType" /* 6908 */;
+import QuestDataUtils from "QuestDataUtils" /* 7966 */;
+import getQuestLogger from "getQuestLogger" /* 7977 */;
+import AnalyticsActions from "AnalyticsActions" /* 7986 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
+import IosAttributionEligibility from "IosAttributionEligibility" /* 14808 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14809 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 14811 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 14813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7846 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9686 */;
+import QuestStore from "QuestStore" /* 7970 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9818 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -94,15 +94,15 @@ class QuestContentImpression {
                 const result = tmp2Result7.registerViewThroughImpression(obj2);
               } else {
                 const tmp2Result8 = IosAttributionMetrics;
-                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(14682).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
+                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(14813).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
               }
             } else {
               const tmp2Result9 = IosAttributionMetrics;
-              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(14682).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
+              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(14813).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
             }
           } else {
             const tmp2Result10 = IosAttributionMetrics;
-            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(14682).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
+            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(14813).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
           }
         }
       }
@@ -119,7 +119,7 @@ class QuestContentImpression {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -228,7 +228,7 @@ class QuestContentImpression {
               closure_129_0.onImpressionCallback();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -382,7 +382,7 @@ class QuestContentImpression {
     obj2.isQuestEnrollmentBlocked = isQuestEnrollmentBlocked;
     obj2.onImpressionCallback = onImpression;
     obj2.sourceQuestContent = sourceQuestContent;
-    if (adCreativeType === obj2(6788).AdCreativeType.QUEST) {
+    if (adCreativeType === obj2(6908).AdCreativeType.QUEST) {
       let obj3 = { adContentIds, adCreativeType };
       obj2.entity = obj3;
     } else {

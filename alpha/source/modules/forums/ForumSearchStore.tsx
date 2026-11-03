@@ -1,15 +1,15 @@
-// Module ID: 8205
-// Function ID: 8206
+// Module ID: 8329
+// Function ID: 8330
 // Name: ForumSearchStore
-// Dependencies: [4863, 504, 572, 2]
+// Dependencies: [4990, 504, 572, 2]
 
-// Module 8205 (ForumSearchStore)
+// Module 8329 (ForumSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 
-let closure_1;
+let closure_1, results;
 
 const Store = get_initializedDefault.Store;
 class ForumSearchStore extends Store {
@@ -34,14 +34,14 @@ class ForumSearchStore extends Store {
     return flag;
   }
   getSearchResults(arg0) {
-    let results;
+    results = undefined;
     if (closure_1[arg0] != null) {
       results = tmp.results;
     }
     return results;
   }
   getHasSearchResults(arg0) {
-    let results;
+    results = undefined;
     if (closure_1[arg0] != null) {
       results = tmp.results;
     }
@@ -65,7 +65,7 @@ let obj = {
     } else {
       const obj = { results: found };
       const merged = Object.assign(tmp2);
-      const results = tmp2.results;
+      results = tmp2.results;
       found = undefined;
       const tmp3 = closure_1;
       if (results != null) {

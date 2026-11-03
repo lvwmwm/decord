@@ -1,15 +1,15 @@
-// Module ID: 13843
-// Function ID: 13844
+// Module ID: 13974
+// Function ID: 13975
 // Name: Divider
-// Dependencies: [19, 17, 21, 5014, 575, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 2]
 // Exports: default
 
-// Module 13843 (Divider)
+// Module 13974 (Divider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

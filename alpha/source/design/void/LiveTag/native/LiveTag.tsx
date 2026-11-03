@@ -1,18 +1,18 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16146
+// Function ID: 16147
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 5014, 575, 1375, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1377, 5747, 1113, 2]
 // Exports: default
 
-// Module 16003 (LiveTag)
+// Module 16146 (LiveTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let num;
@@ -41,7 +41,7 @@ export default function LiveTag(arg0) {
   ({ style, textStyle, allowFontScaling } = arg0);
   const tmp = closure_4();
   const items = [tmp.tag, style];
-  ({ variant: "text-xs/bold", style: items1, lineClamp: 1, allowFontScaling, children: str.toUpperCase() });
+  ({ variant: "text-xs/semibold", style: items1, lineClamp: 1, allowFontScaling, children: str.toUpperCase() });
   items1 = [tmp.tagText, textStyle];
   const Text = Text_Text.Text;
   const intl = intl2.intl;

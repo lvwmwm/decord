@@ -1,15 +1,15 @@
-// Module ID: 9491
-// Function ID: 9492
+// Module ID: 9619
+// Function ID: 9620
 // Name: IndicatorDot
-// Dependencies: [17, 21, 575, 5014, 9492, 2]
+// Dependencies: [17, 21, 575, 5141, 9620, 2]
 // Exports: IndicatorDot
 
-// Module 9491 (IndicatorDot)
+// Module 9619 (IndicatorDot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import IndicatorDotShared from "IndicatorDotShared" /* 9492 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import IndicatorDotShared from "IndicatorDotShared" /* 9620 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;

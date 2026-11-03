@@ -1,20 +1,20 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 19723
+// Function ID: 19724
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8731, 1072, 21, 5014, 575, 1625, 504, 16447, 19548, 8740, 8821, 8220, 8735, 8737, 5624, 1113, 19557, 5634, 19545, 2]
+// Dependencies: [5, 32, 19, 17, 8855, 1072, 21, 5141, 575, 1627, 504, 16591, 19704, 8864, 8945, 8344, 8859, 8861, 5747, 1113, 19713, 5754, 19701, 2]
 // Exports: default
 
-// Module 19568 (RedesignAddAvatarModal)
+// Module 19723 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19545 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19701 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8731 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function RedesignAddAvatarModal(route) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ export default function RedesignAddAvatarModal(route) {
                 closure_129_1(true);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             pendingImage = undefined;
             if (null != base64) {
@@ -180,7 +180,7 @@ export default function RedesignAddAvatarModal(route) {
   let obj5 = { style: tmp.headerContainer, children: items3 };
   let obj6 = { children: items2 };
   const memoizedImageSourceResult = memoizedImageSource(imageUri);
-  let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(tmp9(tmp8[19]).t.XQRWvR) };
+  let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp9(tmp8[19]).t.XQRWvR) };
   const Text = tmp9(tmp8[18]).Text;
   intl = tmp9(tmp8[19]).intl;
   items2 = [closure_10(Text, obj7), ];

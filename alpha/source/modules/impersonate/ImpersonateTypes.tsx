@@ -1,9 +1,9 @@
-// Module ID: 4925
-// Function ID: 4926
+// Module ID: 5052
+// Function ID: 5053
 // Name: ImpersonateTypes
 // Dependencies: [2]
 
-// Module 4925 (ImpersonateTypes)
+// Module 5052 (ImpersonateTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/impersonate/ImpersonateTypes.tsx");

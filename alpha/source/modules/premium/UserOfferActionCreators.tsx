@@ -1,18 +1,18 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8654
+// Function ID: 8655
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8531, 7634, 7630, 1385, 1072, 1375, 572, 1252, 1282, 8532, 1242, 5044, 4847, 4844, 2]
+// Dependencies: [5, 8655, 7758, 7754, 1387, 1072, 1377, 572, 1252, 1282, 8656, 1242, 5171, 4974, 4971, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8530 (UserOfferActionCreators)
+// Module 8654 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8531 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7634 */;
-import UserOfferStore from "UserOfferStore" /* 7630 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8655 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7758 */;
+import UserOfferStore from "UserOfferStore" /* 7754 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "raw", paymentGatewayOverride: "cix" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "flexDirection" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

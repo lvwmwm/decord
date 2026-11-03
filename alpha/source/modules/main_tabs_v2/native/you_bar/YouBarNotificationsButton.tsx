@@ -1,21 +1,18 @@
-// Module ID: 18468
-// Function ID: 18469
+// Module ID: 18622
+// Function ID: 18623
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 10191, 17075, 21, 5014, 575, 18469, 5095, 5637, 504, 5260, 11150, 10192, 1113, 9208, 18465, 8028, 1187, 5199, 2]
+// Dependencies: [19, 17, 10321, 17218, 21, 5141, 575, 18623, 1652, 5757, 504, 5383, 11287, 10322, 1113, 9336, 18619, 8152, 1187, 5322, 2]
 
-// Module 18468 (YouBarNotificationsButton)
+// Module 18622 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 18623 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
-import YouBarConstants from "YouBarConstants" /* 17075 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10321 */;
+import YouBarConstants from "YouBarConstants" /* 17218 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 let YOU_BAR_BUTTON_ICON_SIZE;
 let c9;
@@ -23,75 +20,84 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let tmp2;
+const _modDef1652 = tmp2(1652);
 let View = react_native.View;
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_BUTTON_HIT_SLOP: metroImportDefault, YOU_BAR_BUTTON_ICON_SIZE } = YouBarConstants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, iconContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, overdueReminderDot: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 let closure_10 = createStyles.createStyles(obj);
-const __initData = { code: "function YouBarNotificationsButtonTsx1(){const{withSpring,badgeCount,YOU_BAR_SPRING_CONFIG,tokens}=this.__closure;return{transform:[{scaleX:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)}],marginLeft:withSpring(badgeCount>0?tokens.space.PX_4:0,YOU_BAR_SPRING_CONFIG),opacity:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)};}" };
+let closure_11 = { code: "(function YouBarNotificationsButtonTsx1(){let[withSpring,badgeCount,YOU_BAR_SPRING_CONFIG,tokens]=this.__closure;return{transform:[{scaleX:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)}],marginLeft:withSpring(badgeCount>0?tokens.space.PX_4:0,YOU_BAR_SPRING_CONFIG),opacity:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)};})" };
 const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
-  let _undefined;
-  let items2;
-  let obj8;
+  let items4;
+  let obj5;
   let overdueMessageReminderCount;
   let str;
   let str4;
+  let tmp10;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   hasNameplate = hasNameplate.hasNameplate;
   let onLongPress;
   const tmp = closure_10();
-  const value = onLongPress(18469)().value;
-  _require = value;
-  let obj = require("ReanimatedRexport");
-  const fn = function u() {
-    let items;
-    let num2;
-    let num3;
-    let withSpring2;
-    let withSpring3;
-    let num = 0;
-    const withSpring = spring.withSpring;
-    spring;
-    if (c0 > 0) {
-      num = 1;
+  const value = useNotificationsTabBadgeDefault().value;
+  let items = [closure_11, , , , ];
+  const useAnimatedStyle = onLongPress(1652).useAnimatedStyle;
+  onLongPress(1652);
+  items[1] = onLongPress(5757).withSpring;
+  items[2] = value;
+  items[3] = closure_6;
+  items[4] = nativeDefault;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp6, tmp7, tmp8, tmp9, tmp10] = items;
+  class YouBarNotificationsButtonTsx1 {
+    constructor() {
+      let items;
+      let num2;
+      let num3;
+      let num = 0;
+      if (c1 > 0) {
+        num = 1;
+      }
+      const obj = { transform: items, marginLeft: _undefined(num2, c2), opacity: _undefined(num3, c2) };
+      items = [{ scaleX: _undefined(num, c2) }];
+      num2 = 0;
+      ({ scaleX: _undefined(num, c2) });
+      if (c1 > 0) {
+        num2 = _undefined.space.PX_4;
+      }
+      num3 = 0;
+      if (c1 > 0) {
+        num3 = 1;
+      }
+      return obj;
     }
-    const obj = { transform: items, marginLeft: withSpring2(num2, metroRequire), opacity: withSpring3(num3, metroRequire) };
-    items = [{ scaleX: withSpring(num, metroRequire) }];
-    ({ scaleX: withSpring(num, metroRequire) });
-    num2 = 0;
-    withSpring2 = spring.withSpring;
-    spring;
-    if (c0 > 0) {
-      num2 = nativeDefault.space.PX_4;
-    }
-    num3 = 0;
-    withSpring3 = spring.withSpring;
-    spring;
-    if (c0 > 0) {
-      num3 = 1;
-    }
-    return obj;
-  };
-  let obj2 = { withSpring: require("spring").withSpring, badgeCount: value, YOU_BAR_SPRING_CONFIG, tokens: onLongPress(575) };
-  fn.__closure = obj2;
-  fn.__workletHash = 11181198364048;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  let items = [SavedMessagesStore];
-  const obj3 = require("get initialized");
-  const stateFromStores = obj3.useStateFromStores(items, () => overdueMessageReminderCount.getOverdueMessageReminderCount());
-  const tmp2 = onLongPress;
+  }
+  const items1 = [tmp7, tmp8, tmp9, tmp10];
+  YouBarNotificationsButtonTsx1.__closure = items1;
+  YouBarNotificationsButtonTsx1.__workletHash = 35233906729;
+  YouBarNotificationsButtonTsx1.__initData = tmp6;
+  const animatedStyle = useAnimatedStyle(YouBarNotificationsButtonTsx1);
+  const items2 = [SavedMessagesStore];
+  const tmp4Result = onLongPress(504);
+  const stateFromStores = tmp4Result.useStateFromStores(items2, () => overdueMessageReminderCount.getOverdueMessageReminderCount());
   onLongPress = react.useCallback(() => {
-    const obj = _undefined(dependencyMap[11]);
-    const result = obj.triggerHapticFeedback(_undefined(dependencyMap[11]).HapticFeedbackTypes.SOFT);
-    const obj2 = _undefined(dependencyMap[12]);
-    obj2.showForLaterModal(_undefined(dependencyMap[13]).SavedMessageSortTypes.BOOKMARK);
+    const obj = callback(dependencyMap[11]);
+    const result = obj.triggerHapticFeedback(callback(dependencyMap[11]).HapticFeedbackTypes.SOFT);
+    const obj2 = callback(dependencyMap[12]);
+    obj2.showForLaterModal(callback(dependencyMap[13]).SavedMessageSortTypes.BOOKMARK);
   }, []);
-  const items1 = [onLongPress];
+  const items3 = [onLongPress];
   const memo = react.useMemo(() => {
     let intl;
-    const obj = { name: "open-bookmarks", label: intl.string(_undefined(dependencyMap[14]).t["2pAkDA"]) };
-    intl = _undefined(dependencyMap[14]).intl;
+    const obj = { name: "open-bookmarks", label: intl.string(callback(dependencyMap[14]).t["2pAkDA"]) };
+    intl = callback(dependencyMap[14]).intl;
     const items = [obj];
     return items;
   }, []);
@@ -99,33 +105,33 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     if ("open-bookmarks" === nativeEvent.nativeEvent.actionName) {
       callback();
     }
-  }, items1);
-  const obj4 = { size: "custom", style: tmp.icon, color: str };
+  }, items3);
+  let obj = { size: "custom", style: tmp.icon, color: str };
   str = undefined;
-  const BellIcon = tmp4(9208).BellIcon;
+  const BellIcon = tmp4(9336).BellIcon;
   if (hasNameplate) {
     str = "white";
   }
-  const tmp11Result = closure_8(BellIcon, obj4);
+  const tmp17Result = closure_8(BellIcon, obj);
   let intl = tmp4(1113).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(require("intl").t.kedGua, { count: value });
+  const formatToPlainStringResult = intl.formatToPlainString(onLongPress(1113).t.kedGua, { count: value });
   let combined = formatToPlainStringResult;
   if (stateFromStores > 0 && 0 === value) {
     const intl2 = tmp4(1113).intl;
+    let obj2 = { count: stateFromStores };
     const _HermesInternal = HermesInternal;
-    const obj5 = { count: stateFromStores };
-    combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1113).t.yBmFPA, obj5);
+    combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1113).t.yBmFPA, obj2);
   }
-  const YouBarButtonContainer = tmp4(18465).YouBarButtonContainer;
-  const obj6 = {
+  const YouBarButtonContainer = tmp4(18619).YouBarButtonContainer;
+  const obj3 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,
     onAccessibilityAction: callback1,
     variant: str4,
     size: "sm",
-    icon: closure_9(View, obj8),
+    icon: closure_9(View, obj5),
     onPress() {
-      const obj = _undefined(dependencyMap[19]);
+      const obj = callback(dependencyMap[19]);
       const rootNavigationRef = obj.getRootNavigationRef();
       if (null != rootNavigationRef) {
         rootNavigationRef.navigate("notifications", { inNestedNavigator: true });
@@ -135,7 +141,7 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     hitSlop
   };
   str4 = "secondary-overlay";
-  const IconButton = tmp4(8028).IconButton;
+  const IconButton = tmp4(8152).IconButton;
   if (!hasNameplate) {
     let str5 = "tertiary";
     if (value > 0) {
@@ -143,15 +149,15 @@ const memoResult = react.memo(function YouBarNotificationsButton(hasNameplate) {
     }
     str4 = str5;
   }
-  obj8 = { style: tmp.iconContainer, children: items2 };
-  items2 = [, ];
-  const obj7 = { children: closure_8(IconButton, obj6) };
-  const obj9 = { icon: tmp11Result, hasBadge: stateFromStores > 0 && 0 === value, badgeStyle: tmp.overdueReminderDot };
-  items2[0] = closure_8(require("YouBarButton").YouBarButtonIcon, obj9);
-  const obj10 = { style: animatedStyle, children: closure_8(require("native").Badge, { value }) };
-  View = tmp2(5095).View;
-  items2[1] = closure_8(View, obj10);
-  return closure_8(YouBarButtonContainer, obj7);
+  obj5 = { style: tmp.iconContainer, children: items4 };
+  items4 = [, ];
+  const obj4 = { children: closure_8(IconButton, obj3) };
+  const obj6 = { icon: tmp17Result, hasBadge: stateFromStores > 0 && 0 === value, badgeStyle: tmp.overdueReminderDot };
+  items4[0] = closure_8(onLongPress(18619).YouBarButtonIcon, obj6);
+  const obj7 = { style: animatedStyle, children: closure_8(onLongPress(1187).Badge, { value }) };
+  View = _modDef1652.View;
+  items4[1] = closure_8(View, obj7);
+  return closure_8(YouBarButtonContainer, obj4);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNotificationsButton.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 18556
-// Function ID: 18557
+// Module ID: 18710
+// Function ID: 18711
 // Name: ScienceIcon
-// Dependencies: [19, 21, 575, 5716, 13238, 2]
+// Dependencies: [19, 21, 575, 5836, 13374, 2]
 // Exports: ScienceIcon
 
-// Module 18556 (ScienceIcon)
+// Module 18710 (ScienceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 13238 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 13374 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

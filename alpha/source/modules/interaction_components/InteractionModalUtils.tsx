@@ -1,29 +1,29 @@
-// Module ID: 19496
-// Function ID: 19497
+// Module ID: 19654
+// Function ID: 19655
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 4863, 7701, 4926, 5045, 8208, 16229, 8697, 1072, 8696, 1992, 1409, 5672, 7428, 504, 5612, 11, 572, 9778, 1113, 38, 6065, 10217, 8701, 6070, 8212, 1282, 1089, 2]
+// Dependencies: [5, 32, 19, 502, 4990, 7825, 5053, 5172, 8332, 16372, 8821, 1072, 8820, 2121, 1411, 5792, 7552, 504, 5735, 11, 572, 9910, 1113, 38, 6185, 10347, 8825, 6190, 8336, 1282, 1089, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 19496 (InteractionModalUtils)
+// Module 19654 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import Server from "Server" /* 1992 */;
-import DraftStore from "DraftStore" /* 7701 */;
-import ComponentStateContext from "ComponentStateContext" /* 8696 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 16229 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import Server from "Server" /* 2121 */;
+import DraftStore from "DraftStore" /* 7825 */;
+import ComponentStateContext from "ComponentStateContext" /* 8820 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9910 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 16372 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8208 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8697 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8332 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8821 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,9 +31,9 @@ const InteractionModalStore = InteractionModalStore2;
 let _require, c0, c1, c5, c6, importDefault, set;
 
 let tmp5;
-const getURLForApplicationDefault = tmp5(5672);
+const getURLForApplicationDefault = tmp5(5792);
 function getData(arg0, arr, arg2) {
-  const f117941 = (type) => {
+  const f117421 = (type) => {
     let components;
     let items;
     let mapped;
@@ -45,7 +45,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f117941) };
+      const obj4 = { type: type.type, components: components.map(f117421) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -106,7 +106,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f117941)[0] };
+                const obj21 = { type: type.type, component: items.map(f117421)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -168,7 +168,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f117941);
+  return arr.map(f117421);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -205,7 +205,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -297,7 +297,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -328,7 +328,7 @@ export function useIsFirstTextInputInModal(id) {
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1992).ComponentType.ACTION_ROW && first.components[0].id === id;
+  let tmp6 = type === tmp(2121).ComponentType.ACTION_ROW && first.components[0].id === id;
   if (!tmp6) {
     let type1;
     if (first != null) {
@@ -392,7 +392,7 @@ export function useModalState(components, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -429,7 +429,7 @@ export function useModalState(components, arg1) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

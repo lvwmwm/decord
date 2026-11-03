@@ -1,17 +1,17 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14341
+// Function ID: 14342
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 5014, 8741, 6916, 5048, 5712, 1113, 5258, 5272, 7292, 7253, 6767, 5634, 2]
+// Dependencies: [5, 32, 19, 21, 5141, 8865, 7036, 5175, 5832, 1113, 5381, 5395, 7412, 7373, 6887, 5754, 2]
 
-// Module 14210 (JoinRequestRejectionReasonActionSheet)
+// Module 14341 (JoinRequestRejectionReasonActionSheet)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c4;
+let c4;
 
 let metroImportDefault;
 let metroRequire;
@@ -63,7 +63,7 @@ class JoinRequestRejectionReasonActionSheet {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ class JoinRequestRejectionReasonActionSheet {
             c3 = 0;
             closure_128_5(false);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           guildId = tmp20;
@@ -132,7 +132,7 @@ class JoinRequestRejectionReasonActionSheet {
       }
     }), items);
     let obj2 = { bodyStyles: tmp.container, onDismiss, ref: bottomSheetRef, children: closure_7(SafeAreaPaddingView, obj3) };
-    BottomSheet = onError(guildId[11]).BottomSheet;
+    const BottomSheet = onError(guildId[11]).BottomSheet;
     obj3 = { bottom: true, children: items1 };
     SafeAreaPaddingView = onError(guildId[12]).SafeAreaPaddingView;
     let obj4 = { label: intl.string(onError(guildId[9]).t["mFP/qw"]), maxLength: 160, onChange: tmp4, value };

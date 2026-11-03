@@ -1,14 +1,14 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8786
+// Function ID: 8787
 // Name: AtIcon
-// Dependencies: [19, 21, 575, 5716, 8610, 2]
+// Dependencies: [19, 21, 575, 5836, 8734, 2]
 // Exports: AtIcon
 
-// Module 8662 (AtIcon)
+// Module 8786 (AtIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 8610 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 8734 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

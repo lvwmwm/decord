@@ -1,20 +1,18 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13564
+// Function ID: 13565
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 5014, 575, 1375, 6057, 5272, 7300, 13429, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1377, 6177, 5395, 7420, 13565, 5747, 1113, 2]
 // Exports: default
 
-// Module 13428 (SoundmojiActionSheet)
+// Module 13564 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6057 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6177 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -58,7 +56,7 @@ export default function SoundmojiActionSheet(guildId) {
     let obj = { startExpanded: true, bodyStyles: tmp.container, children: closure_6(View, obj2) };
     let tmp4Result = null != memo.emojiId;
     obj2 = { style: tmp.soundmojiContainer, children: items1 };
-    BottomSheet = guildId(messageId[7]).BottomSheet;
+    const BottomSheet = guildId(messageId[7]).BottomSheet;
     if (!tmp4Result) {
       tmp4Result = null != memo.emojiName;
     }
@@ -74,7 +72,7 @@ export default function SoundmojiActionSheet(guildId) {
     }
     items1 = [tmp4Result, ];
     const obj5 = { style: tmp.textContainer, children: items2 };
-    const obj6 = { variant: "text-sm/bold", children: memo.name };
+    const obj6 = { variant: "text-sm/semibold", children: memo.name };
     items2 = [closure_5(guildId(messageId[10]).Text, obj6), ];
     const obj11 = { variant: "text-sm/normal", children: intl.string(guildId(messageId[11]).t.Tj5Nwi) };
     const Text = tmp5(tmp6[10]).Text;

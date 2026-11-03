@@ -1,17 +1,17 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14345
+// Function ID: 14346
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9895, 21, 5014, 575, 1625, 5607, 1491, 14215, 14216, 14217, 5095, 2]
+// Dependencies: [19, 17, 10026, 21, 5141, 575, 1627, 5730, 1493, 14346, 14347, 14348, 1652, 2]
 
-// Module 14214 (ChatPlaceholder)
+// Module 14345 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9895 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14216 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14217 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10026 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14347 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14348 */;
 import react_mod from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
   }, items1);
   const obj = { style: items2, pointerEvents: "none", children: memo1 };
   items2 = [tmp.placeholder, memo, tmp7];
-  return callback(require("ReanimatedRexport").View, obj);
+  return callback(require("module_1652").View, obj);
 });
 const result = size.fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");
 

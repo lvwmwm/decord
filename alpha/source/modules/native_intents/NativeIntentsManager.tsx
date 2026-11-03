@@ -1,24 +1,24 @@
-// Module ID: 20075
-// Function ID: 20076
+// Module ID: 20225
+// Function ID: 20226
 // Name: NativeIntentsManager
-// Dependencies: [32, 4863, 4885, 4946, 4956, 4917, 1383, 1072, 20076, 20077, 5652, 14886, 1409, 1379, 5068, 7287, 2]
+// Dependencies: [32, 4990, 5012, 5073, 5083, 5044, 1385, 1072, 20226, 20227, 5772, 15017, 1411, 1380, 5195, 7407, 2]
 
-// Module 20075 (NativeIntentsManager)
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import getChannelIcon from "getChannelIcon" /* 14886 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20076 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 20077 */;
+// Module 20225 (NativeIntentsManager)
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import useChannelName from "useChannelName" /* 5772 */;
+import getChannelIcon from "getChannelIcon" /* 15017 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20226 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 20227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -201,7 +201,7 @@ function setChannelActivity(channelId) {
       if (channel.type === unpackModuleId.DM) {
         const recipients = channel.recipients;
         const mapped = recipients.map(tmp12.getUser);
-        const first = _slicedToArray(mapped.filter(tmp11(1379).isNotNullish), 1)[0];
+        const first = _slicedToArray(mapped.filter(tmp11(1380).isNotNullish), 1)[0];
         if (null != first) {
           const tmpResult = UserUtilsDefault;
           const globalName = tmpResult.getGlobalName(first);

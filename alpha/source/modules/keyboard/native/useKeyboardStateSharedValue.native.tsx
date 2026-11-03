@@ -1,22 +1,24 @@
-// Module ID: 12813
-// Function ID: 12814
+// Module ID: 12949
+// Function ID: 12950
 // Name: useKeyboardStateSharedValue
-// Dependencies: [1493, 5095, 5610, 1891, 5209, 11227, 2]
+// Dependencies: [1495, 1652, 5733, 2020, 5332, 11364, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 12813 (useKeyboardStateSharedValue)
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import useCustomKeyboardHeight_mod from "useCustomKeyboardHeight" /* 5610 */;
-import useSystemKeyboardHeight_mod from "useSystemKeyboardHeight" /* 1891 */;
-import useKeyboardType_mod from "useKeyboardType" /* 5209 */;
+// Module 12949 (useKeyboardStateSharedValue)
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11364 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
+import module_1652 from "module_1652" /* 1652 */;
+import useCustomKeyboardHeight_mod from "useCustomKeyboardHeight" /* 5733 */;
+import useSystemKeyboardHeight_mod from "useSystemKeyboardHeight" /* 2020 */;
+import useKeyboardType_mod from "useKeyboardType" /* 5332 */;
 import size from "module_2" /* 2 */;
 
+let tmp6;
+let tmp7;
 let useCustomKeyboardHeight;
 let useKeyboardType;
 let useSystemKeyboardHeight;
-const makeMutable = ReanimatedRexport.makeMutable;
+const makeMutable = module_1652.makeMutable;
 const obj = { customKeyboardHeight: useCustomKeyboardHeight.getCustomKeyboardHeight(), keyboardHeight: useSystemKeyboardHeight.getSystemKeyboardHeight(), keyboardType: useKeyboardType.getKeyboardType() };
 useCustomKeyboardHeight = useCustomKeyboardHeight_mod;
 useSystemKeyboardHeight = useSystemKeyboardHeight_mod;
@@ -29,12 +31,16 @@ subscribeToKeyboardUIStore((arg0) => {
   ({ customKeyboardHeight, keyboardHeight, keyboardType } = arg0);
   updateSharedValueIfChangedDefault(mutable, { customKeyboardHeight, keyboardHeight, keyboardType });
 });
+const items = [{ code: "(function getKeyboardStateWorklet_useKeyboardStateSharedValueNativeTsx1(){let[keyboardStateSharedValue]=this.__closure;return keyboardStateSharedValue.get();})" }, mutable];
+let c0;
+[tmp6, tmp7] = items;
 function getKeyboardStateWorklet() {
-  return mutable.get();
+  return _undefined.get();
 }
-getKeyboardStateWorklet.__closure = { keyboardStateSharedValue: mutable };
-getKeyboardStateWorklet.__workletHash = 1081829024717;
-getKeyboardStateWorklet.__initData = { code: "function getKeyboardStateWorklet_useKeyboardStateSharedValueNativeTsx1(){const{keyboardStateSharedValue}=this.__closure;return keyboardStateSharedValue.get();}" };
+const items1 = [tmp7];
+getKeyboardStateWorklet.__closure = items1;
+getKeyboardStateWorklet.__workletHash = 13066878289972;
+getKeyboardStateWorklet.__initData = tmp6;
 const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardStateSharedValue.native.tsx");
 
 export default function useKeyboardStateSharedValue() {

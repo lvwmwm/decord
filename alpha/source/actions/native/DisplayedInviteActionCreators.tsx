@@ -1,13 +1,13 @@
-// Module ID: 9444
-// Function ID: 9445
+// Module ID: 9572
+// Function ID: 9573
 // Name: DisplayedInviteActionCreators
-// Dependencies: [9123, 572, 8946, 2]
+// Dependencies: [9251, 572, 9074, 2]
 // Exports: clearDisplayedInvite, showInvite
 
-// Module 9444 (DisplayedInviteActionCreators)
+// Module 9572 (DisplayedInviteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8946 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9123 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9074 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9251 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/native/DisplayedInviteActionCreators.tsx");

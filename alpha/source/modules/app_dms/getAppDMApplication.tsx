@@ -1,13 +1,13 @@
-// Module ID: 12533
-// Function ID: 12534
+// Module ID: 12669
+// Function ID: 12670
 // Name: getAppDMApplication
-// Dependencies: [2038, 7772, 1383, 2]
+// Dependencies: [2167, 7896, 1385, 2]
 // Exports: getAppDMApplication
 
-// Module 12533 (getAppDMApplication)
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
-import UserStore from "UserStore" /* 1383 */;
+// Module 12669 (getAppDMApplication)
+import ApplicationStore from "ApplicationStore" /* 2167 */;
+import UserProfileStore from "UserProfileStore" /* 7896 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");

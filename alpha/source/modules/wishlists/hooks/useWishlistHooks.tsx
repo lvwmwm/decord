@@ -1,25 +1,25 @@
-// Module ID: 9470
-// Function ID: 9471
+// Module ID: 9598
+// Function ID: 9599
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7772, 502, 1383, 9471, 9472, 9477, 504, 9478, 12, 9479, 8758, 9485, 9490, 2]
+// Dependencies: [32, 19, 7896, 502, 1385, 9599, 9600, 9605, 504, 9606, 12, 9607, 8882, 9613, 9618, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlistAndProfileInfoForUser, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 9470 (useWishlistHooks)
+// Module 9598 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 19 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
-import WishlistRecord from "WishlistRecord" /* 9472 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9478 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8882 */;
+import WishlistRecord from "WishlistRecord" /* 9600 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9606 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
+import UserProfileStore from "UserProfileStore" /* 7896 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1383 */;
-import WishlistStore from "WishlistStore" /* 9471 */;
+import UserStore from "UserStore" /* 1385 */;
+import WishlistStore from "WishlistStore" /* 9599 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const react_mod = react2;
-let _require, error;
+let _require, error, errors;
 
 function getUserWishlistKey(userId, arg1) {
   let combined;
@@ -151,7 +151,7 @@ export function useFetchWishlists(wishlistIdsAndUsers) {
   const items4 = [WishlistStore];
   const items5 = [wishlistIdsAndUsers];
   const obj3 = wishlistIdsAndUsers(stateFromStoresArray2[8]);
-  const errors = obj3.useStateFromStoresArray(items4, () => wishlistIdsAndUsers.map((wishlistId) => {
+  errors = obj3.useStateFromStoresArray(items4, () => wishlistIdsAndUsers.map((wishlistId) => {
     wishlistId = wishlistId.wishlistId;
     error = undefined;
     if (null != wishlistId) {

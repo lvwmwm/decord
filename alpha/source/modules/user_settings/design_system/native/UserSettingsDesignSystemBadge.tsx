@@ -1,24 +1,24 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17955
+// Function ID: 17956
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5014, 575, 8667, 9566, 11470, 11472, 11474, 11476, 10063, 6027, 5624, 7306, 7058, 7061, 7082, 7369, 6977, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 8791, 9698, 11607, 11609, 11611, 11613, 10193, 6147, 5747, 7426, 7184, 7187, 7208, 7489, 7103, 1187, 2]
 // Exports: default
 
-// Module 17812 (UserSettingsDesignSystemBadge)
+// Module 17955 (UserSettingsDesignSystemBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import Badge_Badge from "Badge/Badge" /* 7306 */;
-import TableSwitchRow from "TableSwitchRow" /* 7369 */;
-import StarIcon3 from "StarIcon" /* 10063 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11474 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import Card_Card from "Card/Card" /* 7103 */;
+import Badge_Badge from "Badge/Badge" /* 7426 */;
+import TableSwitchRow from "TableSwitchRow" /* 7489 */;
+import StarIcon3 from "StarIcon" /* 10193 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11611 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ function Playground() {
   [first3, tmp12] = react.useState(false);
   let obj = { spacing: nativeDefault.space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/bold", children: "Playground" }), , , , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Playground" }), , , , , ];
   let tmp19 = first1;
   const obj2 = { style: tmp.preview, children: metroImportDefault(Badge, obj4) };
   Badge = Badge_Badge.Badge;
@@ -71,19 +71,19 @@ function Playground() {
   if (first3) {
     let StarIcon;
     if ("premium" === first) {
-      StarIcon = tmp14(8667).LockIcon;
+      StarIcon = tmp14(8791).LockIcon;
     } else if ("inverted" === first) {
-      StarIcon = tmp14(9566).TagIcon;
+      StarIcon = tmp14(9698).TagIcon;
     } else if ("rarity-common" === first) {
-      StarIcon = tmp14(11470).ExperimentalCommonIcon;
+      StarIcon = tmp14(11607).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(11472).ExperimentalRareIcon;
+      StarIcon = tmp14(11609).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(11474).ExperimentalEpicIcon;
+      StarIcon = tmp14(11611).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(11476).ExperimentalMythicIcon;
+      StarIcon = tmp14(11613).ExperimentalMythicIcon;
     } else {
-      StarIcon = tmp14(10063).StarIcon;
+      StarIcon = tmp14(10193).StarIcon;
     }
     tmp20 = StarIcon;
   }
@@ -98,7 +98,7 @@ function Playground() {
       return closure_1_7(require("TableRadioRow").TableRadioRow, obj, label);
     })
   };
-  const TableRadioGroup = tmp14(7058).TableRadioGroup;
+  const TableRadioGroup = tmp14(7184).TableRadioGroup;
   items[2] = metroImportDefault(TableRadioGroup, obj5);
   const obj6 = {
     title: "Type",
@@ -110,12 +110,12 @@ function Playground() {
       return closure_1_7(require("TableRadioRow").TableRadioRow, obj, label.value);
     })
   };
-  const TableRadioGroup2 = tmp14(7058).TableRadioGroup;
+  const TableRadioGroup2 = tmp14(7184).TableRadioGroup;
   items[3] = metroImportDefault(TableRadioGroup2, obj6);
   let tmp16Result = null;
   if ("custom" === first1) {
     const obj7 = { label: "Custom text", value: first2, onChange: tmp9 };
-    tmp16Result = tmp16(tmp14(7082).TextInput, obj7);
+    tmp16Result = tmp16(tmp14(7208).TextInput, obj7);
   }
   items[4] = tmp16Result;
   items[5] = metroImportDefault(TableSwitchRow.TableSwitchRow, { label: "Leading icon", value: first3, onValueChange: tmp12, start: true, end: true });
@@ -131,7 +131,7 @@ function VariantMatrix() {
   obj2 = { spacing: nativeDefault.space.PX_16, children: items };
   Stack = require("Stack/Stack").Stack;
   items = [
-    closure_7(require("Text/Text").Heading, { variant: "text-lg/bold", children: "Variants" }),
+    closure_7(require("Text/Text").Heading, { variant: "text-lg/semibold", children: "Variants" }),
     closure_7(require("Text/Text").Text, { variant: "text-sm/normal", color: "text-subtle", children: "Every variant with built-in types, custom text, and a leading icon. With no variant, a badge uses the grey default." }),
     closure_10.map((variant) => {
       let StarIcon;
@@ -154,37 +154,37 @@ function VariantMatrix() {
       const Badge = Badge_Badge.Badge;
       const tmp5 = metroRequire;
       if ("premium" === variant) {
-        StarIcon = tmp2(8667).LockIcon;
+        StarIcon = tmp2(8791).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon = tmp2(9566).TagIcon;
+        StarIcon = tmp2(9698).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11470).ExperimentalCommonIcon;
+        StarIcon = tmp2(11607).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11472).ExperimentalRareIcon;
+        StarIcon = tmp2(11609).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11474).ExperimentalEpicIcon;
+        StarIcon = tmp2(11611).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11476).ExperimentalMythicIcon;
+        StarIcon = tmp2(11613).ExperimentalMythicIcon;
       } else {
-        StarIcon = tmp2(10063).StarIcon;
+        StarIcon = tmp2(10193).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(7306).Badge;
+      const Badge2 = tmp2(7426).Badge;
       if ("premium" === variant) {
-        StarIcon2 = tmp2(8667).LockIcon;
+        StarIcon2 = tmp2(8791).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon2 = tmp2(9566).TagIcon;
+        StarIcon2 = tmp2(9698).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11470).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11607).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11472).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11609).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11474).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11611).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11476).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11613).ExperimentalMythicIcon;
       } else {
-        StarIcon2 = tmp2(10063).StarIcon;
+        StarIcon2 = tmp2(10193).StarIcon;
       }
       items1[4] = metroImportDefault(Badge2, obj8);
       items[1] = metroImportAll(tmp5, obj3);
@@ -207,7 +207,7 @@ function Truncation() {
   const Card = Card_Card.Card;
   obj2 = { spacing: nativeDefault.space.PX_12, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/bold", children: "Long text" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Labels stay on one line and truncate with an ellipsis when space runs out. The icon never shrinks." }), , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Long text" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Labels stay on one line and truncate with an ellipsis when space runs out. The icon never shrinks." }), , , ];
   const obj3 = { style: tmp.narrow, children: metroImportDefault(Badge_Badge.Badge, obj4) };
   obj4 = { type: obj5 };
   obj5 = { text };
@@ -248,7 +248,7 @@ function LegacyComparison() {
   const Card = Card_Card.Card;
   obj2 = { spacing: nativeDefault.space.PX_12, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/bold", children: "Legacy vs. Mana" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Legacy defaults on the left, the closest Mana Badge on the right. A bare type renders the grey default, so brand needs an explicit variant." }), , , , , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Legacy vs. Mana" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Legacy defaults on the left, the closest Mana Badge on the right. A bare type renders the grey default, so brand needs an explicit variant." }), , , , , , ];
   const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_12, children: items1 };
   const Stack2 = Stack_Stack.Stack;
   items1 = [, , ];
@@ -302,7 +302,7 @@ function ParentLayouts() {
   const Card = Card_Card.Card;
   obj2 = { spacing: nativeDefault.space.PX_12, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/bold", children: "Parent layouts" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Legacy and Mana badges in the same parents. Both follow the parent's alignment; use parent/container layout to position Mana badges." }), , , , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Parent layouts" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Legacy and Mana badges in the same parents. Both follow the parent's alignment; use parent/container layout to position Mana badges." }), , , , , ];
   const obj3 = { title: "Row next to text (TextBadge, then Mana)", children: items2 };
   const obj4 = { style: tmp.inlineRow, children: items1 };
   items1 = [metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", children: "Channel name" }), ];

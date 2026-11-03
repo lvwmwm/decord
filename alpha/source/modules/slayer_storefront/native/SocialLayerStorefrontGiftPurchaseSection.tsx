@@ -1,25 +1,25 @@
-// Module ID: 14424
-// Function ID: 14425
+// Module ID: 14555
+// Function ID: 14556
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7609, 1383, 1072, 1385, 21, 5014, 575, 5607, 7330, 504, 1252, 14425, 10681, 1375, 572, 10669, 1113, 10687, 5624, 5634, 2]
+// Dependencies: [5, 32, 19, 17, 7733, 1385, 1072, 1387, 21, 5141, 575, 5730, 7450, 504, 1252, 14556, 10811, 1377, 572, 10799, 1113, 10817, 5747, 5754, 2]
 // Exports: default
 
-// Module 14424 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 14555 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7609 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10669 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7733 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -187,7 +187,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
               closure_128_10();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

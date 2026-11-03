@@ -1,11 +1,11 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11156
+// Function ID: 11157
 // Name: InAppNotificationConstants
-// Dependencies: [575, 5095, 2]
+// Dependencies: [575, 1652, 2]
 
-// Module 11023 (InAppNotificationConstants)
+// Module 11156 (InAppNotificationConstants)
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import _mod1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
 let Easing;
@@ -13,7 +13,7 @@ const set = new Set([10, 25]);
 const PX_8 = nativeDefault.space.PX_8;
 const obj = { duration: 220, easing: Easing.bezier(0.16, 1, 0.3, 1) };
 const PX_16 = nativeDefault.space.PX_16;
-Easing = ReanimatedRexport.Easing;
+Easing = _mod1652.Easing;
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationConstants.tsx");
 
 export const REACTION_MILESTONE_COUNTS = set;

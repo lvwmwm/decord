@@ -1,54 +1,16 @@
 // Module ID: 8255
 // Function ID: 8256
-// Dependencies: [8251, 8252]
-// Exports: isAAC, isAMR, isFLAC, isM4A, isMP3, isWAV
+// Dependencies: [26, 106, 65]
 
 // Module 8255
-import _mod8251 from "module_8251" /* 8251 */;
-import _mod8252 from "module_8252" /* 8252 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
+let point;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGTSpan", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: point };
+point = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, dx: true, dy: true, x: true, y: true, rotate: true, inlineSize: true, textLength: true, baselineShift: true, lengthAdjust: true, alignmentBaseline: true, verticalAlign: true, content: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-export function isAAC(fileChunk, excludeSimilarTypes) {
-  fileChunk = _mod8251.getFileChunk(fileChunk);
-  const FileTypes = _mod8252.FileTypes;
-  let checkByFileTypeResult1 = FileTypes.checkByFileType(fileChunk, "aac");
-  if (!checkByFileTypeResult1) {
-    excludeSimilarTypes = undefined;
-    if (null != excludeSimilarTypes) {
-      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
-    }
-    let checkByFileTypeResult = !excludeSimilarTypes;
-    if (checkByFileTypeResult) {
-      const fileChunk1 = tmp(8251).getFileChunk(fileChunk);
-      const FileTypes2 = tmp(8252).FileTypes;
-      checkByFileTypeResult = FileTypes2.checkByFileType(fileChunk1, "m4a");
-    }
-    checkByFileTypeResult1 = checkByFileTypeResult;
-  }
-  return checkByFileTypeResult1;
-}
-export function isAMR(fileChunk) {
-  fileChunk = _mod8251.getFileChunk(fileChunk);
-  const FileTypes = _mod8252.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "amr");
-}
-export function isFLAC(fileChunk) {
-  fileChunk = _mod8251.getFileChunk(fileChunk);
-  const FileTypes = _mod8252.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "flac");
-}
-export function isM4A(fileChunk) {
-  fileChunk = _mod8251.getFileChunk(fileChunk);
-  const FileTypes = _mod8252.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "m4a");
-}
-export function isMP3(fileChunk) {
-  fileChunk = _mod8251.getFileChunk(fileChunk);
-  const FileTypes = _mod8252.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "mp3");
-}
-export function isWAV(fileChunk) {
-  fileChunk = _mod8251.getFileChunk(fileChunk);
-  const FileTypes = _mod8252.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "wav");
-}
+export default module_65.get("RNSVGTSpan", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,23 +1,23 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8614
+// Function ID: 8615
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [4863, 4885, 1072, 6438, 8418, 8454, 8455, 8449, 1412, 1409, 8420, 1113, 8422, 2]
+// Dependencies: [4990, 5012, 1072, 6558, 8542, 8578, 8579, 8573, 1414, 1411, 8544, 1113, 8546, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 8490 (RoleSubscriptionPurchaseSystemMessage)
+// Module 8614 (RoleSubscriptionPurchaseSystemMessage)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1409 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
-import useMessageAuthor from "useMessageAuthor" /* 6438 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8449 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8454 */;
-import transformSticker2 from "transformSticker" /* 8455 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
+import AvatarUtils from "AvatarUtils" /* 1411 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
+import useMessageAuthor from "useMessageAuthor" /* 6558 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8542 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8544 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8546 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8573 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8578 */;
+import transformSticker2 from "transformSticker" /* 8579 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const SystemChannelFlags = Constants.SystemChannelFlags;

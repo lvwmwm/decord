@@ -1,10 +1,10 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 11008
+// Function ID: 11009
 // Name: conjureProjectMute
-// Dependencies: [1231, 504, 4844, 1196, 2]
+// Dependencies: [1231, 504, 4971, 1196, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted, useIsConjureProjectMuted
 
-// Module 10878 (conjureProjectMute)
+// Module 11008 (conjureProjectMute)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
@@ -46,14 +46,23 @@ export function setConjureProjectMuted(id, arg1) {
   dependencyMap = arg1;
   const PreloadedUserSettingsActionCreators = require("UserSettingsProtoActionCreators").PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("conjure", async (projects) => {
-    projects = projects.projects;
-    if (closure_1) {
+    const tmp3 = closure_1;
+    if (tmp3) {
+      projects = projects.projects;
       const ConjureProjectSettings = preloaded_user_settings.ConjureProjectSettings;
-      projects[id] = ConjureProjectSettings.create({ muted: true });
-    } else if (null == projects[id]) {
+      const create = ConjureProjectSettings.create;
+      const obj = { muted: true };
+      const merged = Object.assign(tmp2);
+      projects[id] = create(obj);
+    } else if (null == projects.projects[id]) {
       return false;
     } else {
-      delete projects.projects[id];
+      const _Number = Number;
+      if (Number(projects.projects[id].sidebarDismissedAt) > 0) {
+        projects.projects[id].muted = false;
+      } else {
+        delete projects.projects[id];
+      }
     }
   }, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
 }

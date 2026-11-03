@@ -1,17 +1,17 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 7096
+// Function ID: 7097
 // Name: TermsField
-// Dependencies: [19, 17, 21, 5014, 6971, 6974, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 7097, 7100, 1113, 2]
 // Exports: default
 
-// Module 6970 (TermsField)
+// Module 7096 (TermsField)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import TermsFieldListDefault from "TermsFieldList" /* 6971 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6974 */;
+import TermsFieldListDefault from "TermsFieldList" /* 7097 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 7100 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

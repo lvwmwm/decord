@@ -1,32 +1,32 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6186
+// Function ID: 6187
 // Name: CheckpointConstants
-// Dependencies: [3092, 6067, 2]
+// Dependencies: [3219, 6187, 2]
 
-// Module 6066 (CheckpointConstants)
-import _modDef3092 from "module_3092" /* 3092 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6067 */;
+// Module 6186 (CheckpointConstants)
+import _modDef3219 from "module_3219" /* 3219 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6187 */;
 import size from "module_2" /* 2 */;
 
-const items = [{ list: "gamesByPlayers", label: _modDef3092.b4s18j }, , , , ];
-({ list: "gamesByPlayers", label: _modDef3092.b4s18j });
-items[1] = { list: "newGamesByPlayers", label: _modDef3092.DcxpNj };
-({ list: "newGamesByPlayers", label: _modDef3092.DcxpNj });
-items[2] = { list: "indieGamesByPlayers", label: _modDef3092.OAUTki };
-({ list: "indieGamesByPlayers", label: _modDef3092.OAUTki });
-items[3] = { list: "gamesByCoplayUsers", label: _modDef3092.ioC4Qg };
-({ list: "gamesByCoplayUsers", label: _modDef3092.ioC4Qg });
-items[4] = { list: "gamesByStreamWatchMinutes", label: _modDef3092.M1L00s };
-({ list: "gamesByStreamWatchMinutes", label: _modDef3092.M1L00s });
+const items = [{ list: "gamesByPlayers", label: _modDef3219.b4s18j }, , , , ];
+({ list: "gamesByPlayers", label: _modDef3219.b4s18j });
+items[1] = { list: "newGamesByPlayers", label: _modDef3219.DcxpNj };
+({ list: "newGamesByPlayers", label: _modDef3219.DcxpNj });
+items[2] = { list: "indieGamesByPlayers", label: _modDef3219.OAUTki };
+({ list: "indieGamesByPlayers", label: _modDef3219.OAUTki });
+items[3] = { list: "gamesByCoplayUsers", label: _modDef3219.ioC4Qg };
+({ list: "gamesByCoplayUsers", label: _modDef3219.ioC4Qg });
+items[4] = { list: "gamesByStreamWatchMinutes", label: _modDef3219.M1L00s };
+({ list: "gamesByStreamWatchMinutes", label: _modDef3219.M1L00s });
 const obj6 = { [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT]: "#FFE047", [CheckpointTraitRarity.CheckpointTraitRarity.COMMON]: "#35ED7E", [CheckpointTraitRarity.CheckpointTraitRarity.RARE]: "#EF3054", [CheckpointTraitRarity.CheckpointTraitRarity.EPIC]: "#7D53DE", [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA]: "#FC7A1E" };
 obj6[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = "url(#" + "checkpointRarityBadgeNitroGradient" + ")";
 const obj7 = {};
-obj7[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3092.bP4GV1;
-obj7[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3092.QwkKWr;
-obj7[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3092.KLmNgL;
-obj7[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3092.hAmdLZ;
-obj7[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3092.Tv4xyf;
-obj7[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3092["0ModIv"];
+obj7[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3219.bP4GV1;
+obj7[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3219.QwkKWr;
+obj7[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3219.KLmNgL;
+obj7[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3219.hAmdLZ;
+obj7[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3219.Tv4xyf;
+obj7[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3219["0ModIv"];
 const items1 = [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const items2 = [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");
@@ -52,7 +52,7 @@ export const CHECKPOINT_CONTROL_SIZE = 48;
 export const CHECKPOINT_LOGO_SIZE = 40;
 export const TRAIT_OPTION_WIDTH = 72;
 export const TRAIT_OPTION_HEIGHT = 80;
-export const NATIVE_CHARACTER_LAYER_SIZE = 252;
+export const NATIVE_CHARACTER_LAYER_SIZE = 224;
 export const CHECKPOINT_2026_POWER_BAR_UNITS = 6;
 export const CHECKPOINT_2026_POWER_BAR_MIN_FILLED_UNITS = 1;
 export const CHECKPOINT_2026_POWER_BAR_MAX_FILLED_UNITS = 5;

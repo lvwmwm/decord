@@ -1,12 +1,12 @@
-// Module ID: 10862
-// Function ID: 10863
+// Module ID: 10992
+// Function ID: 10993
 // Name: ConjureDebugLogStore
-// Dependencies: [504, 10863, 572, 2]
+// Dependencies: [504, 10993, 572, 2]
 
-// Module 10862 (ConjureDebugLogStore)
+// Module 10992 (ConjureDebugLogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureSequencedBuffer from "ConjureSequencedBuffer" /* 10863 */;
+import ConjureSequencedBuffer from "ConjureSequencedBuffer" /* 10993 */;
 import size from "module_2" /* 2 */;
 
 function logSeq(log) {

@@ -1,40 +1,40 @@
-// Module ID: 10287
-// Function ID: 10288
+// Module ID: 10417
+// Function ID: 10418
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 4885, 1383, 6837, 10236, 1072, 5273, 21, 5014, 1375, 575, 10266, 10063, 10061, 5258, 10267, 5712, 1113, 504, 1491, 1252, 5624, 10281, 5634, 10286, 10268, 10274, 2047, 7357, 4839, 6560, 10288, 1994, 5760, 6902, 6906, 10289, 7563, 10282, 9756, 10290, 10291, 8177, 10067, 5272, 2]
+// Dependencies: [5, 32, 19, 17, 5012, 1385, 6957, 10366, 1072, 5396, 21, 5141, 1377, 575, 10396, 10193, 10191, 5381, 10397, 5832, 1113, 504, 1493, 1252, 5747, 10411, 5754, 10416, 10398, 10404, 2176, 7477, 4966, 6680, 10418, 2123, 5880, 7022, 7026, 10419, 7687, 10412, 9888, 10420, 10421, 8301, 10197, 5395, 2]
 
-// Module 10287 (StickerDetailActionSheet)
+// Module 10417 (StickerDetailActionSheet)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
-import StickersUtils from "StickersUtils" /* 6560 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6906 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
-import StickersHooks from "StickersHooks" /* 10266 */;
-import stickers_StickersUtils from "stickers/StickersUtils" /* 10268 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10274 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10286 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10291 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
+import StickersUtils from "StickersUtils" /* 6680 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7026 */;
+import openUserSettings from "openUserSettings" /* 7687 */;
+import StickersHooks from "StickersHooks" /* 10396 */;
+import stickers_StickersUtils from "stickers/StickersUtils" /* 10398 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10404 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10416 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10421 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
-import StickersStore from "StickersStore" /* 6837 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10236 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import UserStore from "UserStore" /* 1385 */;
+import StickersStore from "StickersStore" /* 6957 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10366 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const openStickerPackDetailActionSheetDefault = openStickerPackDetailActionSheet;
-let BottomSheet, c2, c3, importDefault;
+let c2, c3, importDefault;
 
 let closure_12;
 let closure_14;
@@ -111,7 +111,7 @@ function StandardStickerDetail(chatInputRef) {
       const obj5 = { stickerPackName: stateFromStores.name };
       formatResult = format(t.OzB6e3, obj5);
     }
-    const obj6 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: name };
+    const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: name };
     const items4 = [closure_21(tmp2(tmp3[24]).Text, obj6), , , , ];
     const obj7 = { style: tmp.description, variant: "text-sm/medium", children: formatResult };
     items4[1] = closure_21(channel(pack_id[24]).Text, obj7);
@@ -203,13 +203,13 @@ function UnavailableStickerDetail(arg0) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(10288, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(10418, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   items2 = [closure_21(tmp3(tmp4[41]), { sticker: renderableSticker, size: 48 }), , ];
   let obj5 = { style: tmp.guildEmojiDescription, children: items3 };
   items3 = [, ];
-  const obj6 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: renderableSticker.name };
+  const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: renderableSticker.name };
   items3[0] = closure_21(channel(stickerAssetUrl[24]).Text, obj6);
   const obj7 = { style: tmp.description, variant: "text-sm/medium", children: stringResult };
   const Text = tmp6(tmp4[24]).Text;
@@ -382,7 +382,7 @@ function GuildStickerDetail(sticker) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(10288, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(10418, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items3);
   analyticsLocation = obj.useMemo(() => {
@@ -417,7 +417,7 @@ function GuildStickerDetail(sticker) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -451,7 +451,7 @@ function GuildStickerDetail(sticker) {
               c3(id);
               closure_1_5(true);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             c3 = 3;
@@ -550,7 +550,7 @@ function GuildStickerDetail(sticker) {
     const obj9 = { sticker, size: 48 };
     items7 = [closure_21(tmp15(tmp7[41]), obj9), , ];
     const obj10 = { style: tmp2.guildEmojiDescription, children: items8 };
-    const obj11 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: sticker.name };
+    const obj11 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: sticker.name };
     items8 = [closure_21(tmp6(tmp7[24]).Text, obj11), ];
     const obj12 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult };
     items8[1] = closure_21(sticker(guild[24]).Text, obj12);
@@ -683,7 +683,7 @@ const memoResult = react.memo(function StickerDetailActionSheet(chatInputRef) {
     }
     const obj3 = { startExpanded: true, children: closure_21(metroRequire, obj4) };
     obj4 = { style: tmp.content, children: tmp7Result };
-    BottomSheet = tmp2(5272).BottomSheet;
+    const BottomSheet = tmp2(5395).BottomSheet;
     return closure_21(BottomSheet, obj3);
   }
   tmp7Result = tmp7Result2;

@@ -1,15 +1,15 @@
-// Module ID: 19837
-// Function ID: 19838
+// Module ID: 19987
+// Function ID: 19988
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9075, 1072, 21, 5596, 575, 19838, 504, 19839, 19836, 5624, 1113, 5717, 6027, 7060, 19848, 7369, 9074, 2]
+// Dependencies: [32, 19, 17, 9203, 1072, 21, 5719, 575, 19988, 504, 19989, 19986, 5747, 1113, 5837, 6147, 7186, 19998, 7489, 9202, 2]
 // Exports: default
 
-// Module 19837 (SafetyCheckScreen)
+// Module 19987 (SafetyCheckScreen)
 import react_native from "react-native" /* 17 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -90,7 +90,7 @@ export default function SafetyCheckScreen() {
     items1 = [closure_9(Text, obj6), , , ];
     const obj7 = { resizeMode: "contain", source: tmp8.safetyCheck };
     items1[1] = closure_9(verificationLevel(first1[14]), obj7);
-    const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(guild(first1[13]).t.QrjLYl) };
+    const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(guild(first1[13]).t.QrjLYl) };
     const Heading = tmp3(tmp4[12]).Heading;
     intl2 = tmp3(tmp4[13]).intl;
     items1[2] = closure_9(Heading, obj8);

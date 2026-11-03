@@ -1,8 +1,8 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 13636
+// Function ID: 13637
 // Dependencies: [2]
 
-// Module 13496
+// Module 13636
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_env_labNight_fgLeft.webp.js");

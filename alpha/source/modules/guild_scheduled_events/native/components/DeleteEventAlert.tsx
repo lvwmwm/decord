@@ -1,15 +1,15 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9242
+// Function ID: 9243
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6855, 21, 5014, 504, 8967, 5258, 5964, 1113, 5624, 2]
+// Dependencies: [5, 19, 6975, 21, 5141, 504, 9095, 5381, 6084, 1113, 5747, 2]
 // Exports: default
 
-// Module 9114 (DeleteEventAlert)
+// Module 9242 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
-import createStyles from "createStyles" /* 5014 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export default function DeleteEventAlert(eventException) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ export default function DeleteEventAlert(eventException) {
             const obj2 = c1(c2[7]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c2 = 3;

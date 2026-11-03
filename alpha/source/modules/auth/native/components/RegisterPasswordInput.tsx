@@ -1,21 +1,21 @@
-// Module ID: 18016
-// Function ID: 18017
+// Module ID: 18160
+// Function ID: 18161
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7109, 17989, 21, 5014, 575, 5095, 18013, 1113, 5624, 15872, 7124, 504, 5697, 7082, 5189, 7135, 7137, 2]
+// Dependencies: [109, 32, 19, 7235, 18132, 21, 5141, 575, 1652, 18157, 1113, 5747, 16015, 7250, 504, 5817, 7208, 5312, 7261, 7263, 2]
 // Exports: RegisterPasswordInput
 
-// Module 18016 (RegisterPasswordInput)
+// Module 18160 (RegisterPasswordInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import usePasswordScore from "usePasswordScore" /* 18013 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import usePasswordScore from "usePasswordScore" /* 18157 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7109 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17989 */;
+import PhoneStore from "PhoneStore" /* 7235 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ function PasswordStrength(passwordScore) {
             }
           }
           const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5624).Text;
+          const Text = tmp9(5747).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
@@ -88,13 +88,13 @@ obj3 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 obj4 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
 let closure_13 = createStyles(obj);
 let obj5 = { entering: FadeIn.duration(300), exiting: FadeOut.duration(300) };
-FadeIn = ReanimatedRexport.FadeIn;
-FadeOut = ReanimatedRexport.FadeOut;
+FadeIn = _mod1652.FadeIn;
+FadeOut = _mod1652.FadeOut;
 let obj6 = { layout: easingResult.duration(300) };
-const LinearTransition = ReanimatedRexport.LinearTransition;
+const LinearTransition = _mod1652.LinearTransition;
 const easing = LinearTransition.easing;
-const Easing = ReanimatedRexport.Easing;
-easingResult = easing(Easing.inOut(ReanimatedRexport.Easing.quad));
+const Easing = _mod1652.Easing;
+easingResult = easing(Easing.inOut(_mod1652.Easing.quad));
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPasswordInput.tsx");
 
 export function RegisterPasswordInput(ref) {

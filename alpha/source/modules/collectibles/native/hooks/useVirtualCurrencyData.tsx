@@ -1,12 +1,12 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 9684
+// Function ID: 9685
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 7731, 9553, 2]
+// Dependencies: [19, 7855, 9685, 2]
 // Exports: useVirtualCurrencyData
 
-// Module 15049 (useVirtualCurrencyData)
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7731 */;
-import _mod9553 from "module_9553" /* 9553 */;
+// Module 9684 (useVirtualCurrencyData)
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7855 */;
+import _mod9685 from "module_9685" /* 9685 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ export function useVirtualCurrencyData(product, canUseShopDiscountsResult) {
   const obj = CollectiblesProductUtils;
   const obj2 = { product, hasShopDiscount: canUseShopDiscountsResult };
   const productOrbPrice = obj.getProductOrbPrice(obj2);
-  const obj3 = _mod9553;
+  const obj3 = _mod9685;
   const balance = obj3.useFetchVirtualCurrencyBalance().balance;
   const items = [productOrbPrice, balance];
   const obj4 = {

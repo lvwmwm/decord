@@ -1,26 +1,26 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15819
+// Function ID: 15820
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1383, 1072, 14249, 21, 5014, 6723, 575, 14251, 5593, 1252, 1375, 1500, 6744, 5068, 1113, 8931, 7558, 15678, 6998, 5624, 15679, 15680, 1625, 7169, 2]
+// Dependencies: [32, 19, 17, 1385, 1072, 14380, 21, 5141, 6843, 575, 14382, 5716, 1252, 1377, 1502, 6864, 5195, 1113, 9059, 7682, 15820, 7124, 5747, 15821, 15822, 1627, 7290, 2]
 // Exports: default
 
-// Module 15677 (AddFriendModal)
+// Module 15819 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14249 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14251 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14380 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14382 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import TextStyles from "TextStyles" /* 6723 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import TextStyles from "TextStyles" /* 6843 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -116,7 +116,7 @@ function AddFriendModalScene(onSkip) {
     obj2 = NavigatorHeader;
     setOptions(obj);
   }, items1);
-  const obj4 = { style: tmp.headerText, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(onSkip(contactSyncAccount[17]).t.GWMTSE) };
+  const obj4 = { style: tmp.headerText, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(onSkip(contactSyncAccount[17]).t.GWMTSE) };
   const Text = onSkip(contactSyncAccount[22]).Text;
   intl = onSkip(contactSyncAccount[17]).intl;
   const items2 = [closure_10(Text, obj4), , , ];

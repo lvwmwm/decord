@@ -1,20 +1,20 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15857
+// Function ID: 15858
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 5014, 5717, 14634, 15712, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 5837, 14765, 15855, 5747, 1113, 5754, 2]
 // Exports: ActivateDeviceError
 
-// Module 15714 (ActivateDeviceError)
+// Module 15857 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14634 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15712 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14765 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15855 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,7 +39,7 @@ export function ActivateDeviceError(onRetry) {
   const tmp2 = FastImageDefault;
   items = [React3(tmp2, obj2), , ];
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items1 };
-  const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items1 = [React3(Text, obj4), ];

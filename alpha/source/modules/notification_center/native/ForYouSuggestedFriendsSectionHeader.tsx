@@ -1,17 +1,17 @@
-// Module ID: 18510
-// Function ID: 18511
+// Module ID: 18664
+// Function ID: 18665
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 2]
 // Exports: default
 
-// Module 18510 (ForYouSuggestedFriendsSectionHeader)
+// Module 18664 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

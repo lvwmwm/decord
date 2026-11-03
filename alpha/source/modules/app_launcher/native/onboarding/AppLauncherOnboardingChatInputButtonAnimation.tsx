@@ -1,26 +1,26 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13933
+// Function ID: 13934
 // Name: AppLauncherOnboardingChatInputButtonAnimation
-// Dependencies: [19, 17, 5015, 21, 5014, 5640, 575, 5254, 5257, 504, 9821, 12365, 5095, 5618, 13803, 12390, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 5760, 575, 5377, 5380, 504, 9952, 12501, 1652, 5741, 13934, 12526, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 13802 (AppLauncherOnboardingChatInputButtonAnimation)
+// Module 13933 (AppLauncherOnboardingChatInputButtonAnimation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5618 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9821 */;
-import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12365 */;
-import _mod12390 from "module_12390" /* 12390 */;
-import _mod13803 from "module_13803" /* 13803 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import timingPresets from "timingPresets" /* 5380 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5741 */;
+import ButtonConstants from "ButtonConstants" /* 5760 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9952 */;
+import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12501 */;
+import _mod12526 from "module_12526" /* 12526 */;
+import _mod13934 from "module_13934" /* 13934 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -28,6 +28,12 @@ let closure_4;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp10;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
+let tmp9;
 ({ View: c3, StyleSheet: closure_4 } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles(() => {
@@ -38,34 +44,36 @@ let closure_9 = createStyles.createStyles(() => {
   size1 = { zIndex: 1, position: "absolute", borderRadius: nativeDefault.radii.round, top: 0, left: 0, width: sum, height: sum, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginLeft: 4 };
   return obj;
 });
+let items = [{ code: "(function EnteringAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx1(){let[withTiming,timingStandard]=this.__closure;const initialValues={opacity:0};const animations={opacity:withTiming(1,timingStandard)};return{initialValues:initialValues,animations:animations};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+let c0;
+let c1;
+[tmp5, tmp6, tmp7] = items;
 class EnteringAnimation {
   constructor() {
-    let obj2;
-    let obj3;
-    const obj = { initialValues: { opacity: 0 }, animations: obj2 };
-    obj2 = { opacity: obj3.withTiming(1, timingPresets.timingStandard) };
-    obj3 = timing;
+    const obj = { initialValues: { opacity: 0 }, animations: { opacity: _undefined(1, c1) } };
+    ({ opacity: _undefined(1, c1) });
     return obj;
   }
 }
-let obj = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-EnteringAnimation.__closure = obj;
-EnteringAnimation.__workletHash = 2327377243473;
-EnteringAnimation.__initData = { code: "function EnteringAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx1(){const{withTiming,timingStandard}=this.__closure;const initialValues={opacity:0};const animations={opacity:withTiming(1,timingStandard)};return{initialValues:initialValues,animations:animations};}" };
+let items1 = [tmp6, tmp7];
+EnteringAnimation.__closure = items1;
+EnteringAnimation.__workletHash = 5247795390408;
+EnteringAnimation.__initData = tmp5;
+let items2 = [{ code: "(function ExitingAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx2(){let[withTiming,timingStandard]=this.__closure;const initialValues={opacity:1};const animations={opacity:withTiming(0,timingStandard)};return{initialValues:initialValues,animations:animations};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+c0 = undefined;
+c1 = undefined;
+[tmp8, tmp9, tmp10] = items2;
 class ExitingAnimation {
   constructor() {
-    let obj2;
-    let obj3;
-    const obj = { initialValues: { opacity: 1 }, animations: obj2 };
-    obj2 = { opacity: obj3.withTiming(0, timingPresets.timingStandard) };
-    obj3 = timing;
+    const obj = { initialValues: { opacity: 1 }, animations: { opacity: _undefined(0, c1) } };
+    ({ opacity: _undefined(0, c1) });
     return obj;
   }
 }
-let obj2 = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-ExitingAnimation.__closure = obj2;
-ExitingAnimation.__workletHash = 1065249287738;
-ExitingAnimation.__initData = { code: "function ExitingAnimation_AppLauncherOnboardingChatInputButtonAnimationTsx2(){const{withTiming,timingStandard}=this.__closure;const initialValues={opacity:1};const animations={opacity:withTiming(0,timingStandard)};return{initialValues:initialValues,animations:animations};}" };
+let items3 = [tmp9, tmp10];
+ExitingAnimation.__closure = items3;
+ExitingAnimation.__workletHash = 15961020653347;
+ExitingAnimation.__initData = tmp8;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingChatInputButtonAnimation.tsx");
 
@@ -87,8 +95,8 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   const obj4 = { entering: EnteringAnimation, exiting: ExitingAnimation, style: items1, collapsable: false, children: items2 };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
   const obj3 = { children: items4 };
-  const View = ReanimatedRexportDefault.View;
-  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod13803, autoPlay: !stateFromStores };
+  const View = _modDef1652.View;
+  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod13934, autoPlay: !stateFromStores };
   const tmp5 = LottieAnimationViewDefault;
   items2 = [metroRequire(tmp5, obj5), , ];
   const obj6 = { collapsable: false, style: items3 };
@@ -97,7 +105,7 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   const obj7 = { collapsable: false, style: tmp.fakeButton };
   items2[2] = metroRequire(_false, obj7);
   items4 = [metroImportDefault(View, obj4), ];
-  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12390, autoPlay: !stateFromStores };
+  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12526, autoPlay: !stateFromStores };
   const tmp6 = LottieAnimationViewDefault;
   items4[1] = metroRequire(tmp6, obj8);
   return metroImportDefault(metroImportAll, obj3);

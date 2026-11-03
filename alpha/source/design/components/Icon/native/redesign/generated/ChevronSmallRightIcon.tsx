@@ -1,14 +1,14 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7498
+// Function ID: 7499
 // Name: ChevronSmallRightIcon
-// Dependencies: [19, 21, 575, 5716, 6985, 2]
+// Dependencies: [19, 21, 575, 5836, 7111, 2]
 // Exports: ChevronSmallRightIcon
 
-// Module 7378 (ChevronSmallRightIcon)
+// Module 7498 (ChevronSmallRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 6985 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 7111 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

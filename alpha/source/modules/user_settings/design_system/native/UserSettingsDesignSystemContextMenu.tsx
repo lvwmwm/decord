@@ -1,27 +1,27 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 17932
+// Function ID: 17933
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 14386, 7262, 8424, 11597, 5741, 17790, 17791, 11592, 5014, 575, 12, 9874, 5634, 6977, 5624, 2]
+// Dependencies: [19, 17, 21, 14517, 7382, 8548, 11734, 5861, 17933, 17934, 11729, 5141, 575, 12, 10005, 5754, 7103, 5747, 2]
 // Exports: default
 
-// Module 17789 (UserSettingsDesignSystemContextMenu)
+// Module 17932 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5741 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7262 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8424 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11592 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11597 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14386 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 17790 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 17791 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5861 */;
+import Card_Card from "Card/Card" /* 7103 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7382 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8548 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11729 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11734 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14517 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 17933 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 17934 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -153,19 +153,19 @@ export default function UserSettingsDesignSystemAlertModal() {
   obj2 = { style: tmp.container, children: items1 };
   const obj3 = { style: tmp.card, children: items };
   const Card = Card_Card.Card;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Basic Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." }), hasOwnProperty(DemoContextMenu, { label: "Open Menu" })];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Basic Example" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." }), hasOwnProperty(DemoContextMenu, { label: "Open Menu" })];
   items1 = [metroRequire(Card, obj3), , , , , ];
   const obj4 = { style: tmp.card, children: items2 };
   const Card2 = Card_Card.Card;
-  items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Long Press" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." }), hasOwnProperty(DemoContextMenu, { triggerOnLongPress: true, label: "Long Press to Open" })];
+  items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Long Press" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." }), hasOwnProperty(DemoContextMenu, { triggerOnLongPress: true, label: "Long Press to Open" })];
   items1[1] = metroRequire(Card2, obj4);
   const obj5 = { style: tmp.card, children: items3 };
   const Card3 = Card_Card.Card;
-  items3 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Sections" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." }), hasOwnProperty(DemoContextMenu, { label: "Open Sectioned Menu", sections: 3, count: 2 })];
+  items3 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Sections" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." }), hasOwnProperty(DemoContextMenu, { label: "Open Sectioned Menu", sections: 3, count: 2 })];
   items1[2] = metroRequire(Card3, obj5);
   const obj6 = { style: tmp.card, children: items4 };
   const Card4 = Card_Card.Card;
-  items4 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Automatic Alignment" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." }), hasOwnProperty(DemoContextMenu, { alignButton: "flex-end", label: "Open Right-Aligned Menu" }), , , ];
+  items4 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Automatic Alignment" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." }), hasOwnProperty(DemoContextMenu, { alignButton: "flex-end", label: "Open Right-Aligned Menu" }), , , ];
   const obj7 = { style: tmp.divider };
   items4[3] = hasOwnProperty(_false, obj7);
   items4[4] = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "It will also position itself vertically, so that it doesn't overflow offscreen vertically." });
@@ -173,7 +173,7 @@ export default function UserSettingsDesignSystemAlertModal() {
   items1[3] = metroRequire(Card4, obj6);
   const obj8 = { style: tmp.card, children: items5 };
   const Card5 = Card_Card.Card;
-  items5 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Intentional Alignment" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." }), , , , , , , , ];
+  items5 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Intentional Alignment" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." }), , , , , , , , ];
   const obj9 = { style: tmp.divider };
   items5[3] = hasOwnProperty(_false, obj9);
   items5[4] = hasOwnProperty(DemoContextMenu, { count: 3, align: "right", label: "Open Right" });
@@ -189,7 +189,7 @@ export default function UserSettingsDesignSystemAlertModal() {
   items1[4] = metroRequire(Card5, obj8);
   const obj13 = { style: tmp.card, children: items6 };
   const Card6 = Card_Card.Card;
-  items6 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: "Overflow Scrolling" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." }), hasOwnProperty(DemoContextMenu, { count: 30, label: "Open Really Tall Menu" })];
+  items6 = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: "Overflow Scrolling" }), hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." }), hasOwnProperty(DemoContextMenu, { count: 30, label: "Open Really Tall Menu" })];
   items1[5] = metroRequire(Card6, obj13);
   return hasOwnProperty(React3, obj);
 };

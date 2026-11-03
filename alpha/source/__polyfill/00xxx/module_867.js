@@ -10,6 +10,8 @@ import ReactNativeLibraries from "ReactNativeLibraries" /* 862 */;
 import _mod868 from "module_868" /* 868 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
+let version;
+
 const Platform = react_native.Platform;
 
 export function isHermesEnabled() {
@@ -30,7 +32,7 @@ export function getReactNativeVersion() {
   let minor;
   let patch;
   if (ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion) {
-    const version = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion.version;
+    version = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion.version;
     ({ major, minor, patch } = version);
     let str2 = "";
     if (null != version.prerelease) {

@@ -1,26 +1,25 @@
-// Module ID: 19999
-// Function ID: 20000
+// Module ID: 20149
+// Function ID: 20150
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 7148, 5624, 5258, 20000, 1994, 20004, 1187, 20003, 1113, 15462, 1497, 17216, 20005, 1252, 5760, 17222, 20001, 17227, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5747, 5381, 20150, 2123, 20154, 1187, 20153, 1113, 15603, 1499, 17359, 20155, 1252, 5880, 17365, 20151, 17370, 2]
 // Exports: default
 
-// Module 19999 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 20149 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15462 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20003 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20005 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15603 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20153 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20155 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -40,25 +39,16 @@ let obj7;
 let rect;
 let size;
 let tmp;
-const AppAnalyticsUtils = tmp(5760);
+const AppAnalyticsUtils = tmp(5880);
 function ContentHeader(arg0) {
   let count;
   let items;
-  let items1;
   let title;
   ({ count, title } = arg0);
-  const tmp = closure_11();
-  const obj = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("TierTemplatePreviewCard", "text-xs/bold");
-  const obj2 = { variant: typeConsolidationEyebrow.variant, color: "text-muted", style: items, children: items1 };
-  items = [tmp.contentHeader, typeConsolidationEyebrow.style];
+  const obj = { variant: "body-sm/medium", color: "text-muted", children: items };
   const Text = Text_Text.Text;
-  items1 = [, , ];
-  const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: tmp.contentHeader, children: count };
-  items1[0] = React4(Text_Text.Text, obj3);
-  items1[1] = " ";
-  items1[2] = title;
-  return authStore(Text, obj2);
+  items = [React4(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: count }), " ", title];
+  return authStore(Text, obj);
 }
 function Separator() {
   const obj = { style: closure_11().separator };
@@ -116,7 +106,7 @@ function ViewEntireTemplateFooter() {
 ({ AnalyticEvents: metroImportDefault, GuildSettingsSections: metroImportAll } = Constants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, subscriptionPlanTextStyle: obj3, descriptionPlanTextStyle: obj4, separator: size, contentContainer: obj5, channelTitle: obj6, viewEntireTemplateText: { marginTop: -1 }, contentHeader: { textTransform: "uppercase" }, viewEntireTemplateFooter: obj7, viewEntireTemplateFooterUnderline: rect };
+let obj = { container: obj2, subscriptionPlanTextStyle: obj3, descriptionPlanTextStyle: obj4, separator: size, contentContainer: obj5, channelTitle: obj6, viewEntireTemplateText: { marginTop: -1 }, viewEntireTemplateFooter: obj7, viewEntireTemplateFooterUnderline: rect };
 obj2 = { padding: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, width: 319 };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
@@ -149,9 +139,9 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
   const editGroupId = template.editGroupId;
   let tmp = closure_11();
   let tmp3 = navigation;
-  let obj = template(navigation[16]);
+  let obj = template(navigation[15]);
   navigation = obj.useNavigation();
-  let obj2 = groupListingId(navigation[17]);
+  let obj2 = groupListingId(navigation[16]);
   const addNewEditStateFromTemplate = obj2.useEditStateIds(groupListingId, editGroupId, { includeSoftDeleted: true }).addNewEditStateFromTemplate;
   const first = template.listings[0];
   ({ channels, additional_perks } = first);
@@ -179,8 +169,8 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     const obj4 = { groupListingId, initialEditStateId: tmp5 };
     const replaced = navigation.replace(metroImportAll.ROLE_SUBSCRIPTIONS_TIER_EDIT, obj4);
   }, items);
-  const useSuggestedUnusedPrices = template(navigation[21]).useSuggestedUnusedPrices;
-  template(navigation[21]);
+  const useSuggestedUnusedPrices = template(navigation[20]).useSuggestedUnusedPrices;
+  template(navigation[20]);
   const suggestedUnusedPrices = useSuggestedUnusedPrices(guildId, priceTiers, price_tier);
   let closure_7 = tmp10;
   const items1 = [handleCreateFromTemplate, suggestedUnusedPrices, tmp10];
@@ -188,7 +178,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(20004, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(20154, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -196,30 +186,30 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
   let obj4 = { style: tmp.container, children: items2 };
   items2 = [, ];
   const obj5 = { template, handleSelectTemplateInPreview: callback1, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: false, descriptionTextProps: { numberOfLines: 2, ellipsizeMode: "tail" } };
-  items2[0] = closure_9(template(tmp3[22]).GuildRoleSubscriptionTierTemplateBasicInfo, obj5);
+  items2[0] = closure_9(template(tmp3[21]).GuildRoleSubscriptionTierTemplateBasicInfo, obj5);
   const obj6 = {
     style: tmp.contentContainer,
     onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(20000, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(20150, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };
   const obj7 = { separator: closure_9(Separator, {}), children: items4 };
-  const SeparatedList = tmp2(tmp3[23]).SeparatedList;
+  const SeparatedList = tmp2(tmp3[22]).SeparatedList;
   const obj8 = { children: items3 };
-  const obj9 = { title: intl.formatToPlainString(template(tmp3[14]).t.y7dUrm, { numChannels: channels.length }), count: channels.length };
-  intl = tmp2(tmp3[14]).intl;
-  items3 = [closure_9(ContentHeader, obj9), closure_9(tmp2(tmp3[12]).Spacer, { size: 12 }), closure_9(ChannelBenefitShowCase, { channel: first2 }), closure_9(tmp2(tmp3[12]).Spacer, { size: 6 })];
+  const obj9 = { title: intl.formatToPlainString(template(tmp3[13]).t.y7dUrm, { numChannels: channels.length }), count: channels.length };
+  intl = tmp2(tmp3[13]).intl;
+  items3 = [closure_9(ContentHeader, obj9), closure_9(tmp2(tmp3[11]).Spacer, { size: 12 }), closure_9(ChannelBenefitShowCase, { channel: first2 }), closure_9(tmp2(tmp3[11]).Spacer, { size: 6 })];
   items4 = [closure_10(suggestedUnusedPrices, obj8), ];
   const obj10 = { children: items5 };
-  const obj11 = { title: intl2.formatToPlainString(template(tmp3[14]).t.MR7oOF, { numBenefits: additional_perks.length }), count: additional_perks.length };
-  intl2 = tmp2(tmp3[14]).intl;
-  items5 = [closure_9(ContentHeader, obj11), closure_9(tmp2(tmp3[12]).Spacer, { size: 12 }), , ];
+  const obj11 = { title: intl2.formatToPlainString(template(tmp3[13]).t.MR7oOF, { numBenefits: additional_perks.length }), count: additional_perks.length };
+  intl2 = tmp2(tmp3[13]).intl;
+  items5 = [closure_9(ContentHeader, obj11), closure_9(tmp2(tmp3[11]).Spacer, { size: 12 }), , ];
   const obj12 = { title: first1.name, description: first1.description };
   items5[2] = closure_9(BenefitShowCase, obj12);
-  items5[3] = closure_9(template(tmp3[12]).Spacer, { size: 6 });
+  items5[3] = closure_9(template(tmp3[11]).Spacer, { size: 6 });
   items4[1] = closure_10(suggestedUnusedPrices, obj10);
   items6 = [closure_10(SeparatedList, obj7), closure_9(ViewEntireTemplateFooter, {})];
   items2[1] = closure_10(handleCreateFromTemplate, obj6);

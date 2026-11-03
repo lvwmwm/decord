@@ -1,15 +1,15 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10743
+// Function ID: 10744
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5747, 1385, 1083, 3, 7614, 1375, 2042, 4827, 2]
+// Dependencies: [5, 19, 5867, 1387, 1083, 3, 7738, 1377, 2171, 4954, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10613 (createOrReuseGiftOrder)
+// Module 10743 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1083 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import _modDef2042 from "module_2042" /* 2042 */;
-import PaymentConstants from "PaymentConstants" /* 5747 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import _modDef2171 from "module_2171" /* 2171 */;
+import PaymentConstants from "PaymentConstants" /* 5867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -105,7 +105,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
                 } else {
                   APPLE = tmp60.APPLE;
                 }
-                const obj6 = _modDef2042();
+                const obj6 = _modDef2171();
                 const utcResult = obj6.utc();
                 subtractResult = utcResult.subtract(location(dependencyMap[6]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
                 obj7 = { line_items: items };

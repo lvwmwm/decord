@@ -1,16 +1,16 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17452
+// Function ID: 17453
 // Name: DmsMessagePreviewsSetting
-// Dependencies: [19, 8432, 17310, 4839, 1113, 5692, 11540, 2]
+// Dependencies: [19, 8556, 17453, 4966, 1113, 5812, 11677, 2]
 
-// Module 17309 (DmsMessagePreviewsSetting)
+// Module 17452 (DmsMessagePreviewsSetting)
 import intl4 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5692 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useMessagePreviews from "useMessagePreviews" /* 17310 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5812 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import useMessagePreviews from "useMessagePreviews" /* 17453 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

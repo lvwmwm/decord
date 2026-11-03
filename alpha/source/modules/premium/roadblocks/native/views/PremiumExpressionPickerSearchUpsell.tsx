@@ -1,17 +1,17 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10162
+// Function ID: 10163
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 575, 5014, 6980, 5624, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 7106, 5747, 2]
 // Exports: default
 
-// Module 10031 (PremiumExpressionPickerSearchUpsell)
+// Module 10162 (PremiumExpressionPickerSearchUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Pressables from "Pressables" /* 7106 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;

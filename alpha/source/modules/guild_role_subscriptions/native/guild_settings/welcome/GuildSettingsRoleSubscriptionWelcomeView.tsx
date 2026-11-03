@@ -1,30 +1,30 @@
-// Module ID: 19876
-// Function ID: 19877
+// Module ID: 20026
+// Function ID: 20027
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 17196, 1072, 19877, 21, 5014, 575, 12562, 1113, 19878, 5624, 19879, 1497, 5258, 19881, 1994, 19881, 8177, 5634, 1187, 7086, 19887, 19900, 19925, 19928, 19933, 19934, 1498, 6028, 1260, 5586, 19875, 5711, 7292, 19935, 2]
+// Dependencies: [32, 19, 17, 17339, 1072, 20027, 21, 5141, 575, 12698, 1113, 20028, 5747, 20029, 1499, 5381, 20031, 2123, 20031, 8301, 5754, 1187, 7212, 20037, 20050, 20075, 20078, 20083, 20084, 1500, 6148, 1260, 5709, 20025, 5831, 7412, 20085, 2]
 // Exports: default
 
-// Module 19876 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 20026 (GuildSettingsRoleSubscriptionWelcomeView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12562 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19877 */;
-import WarningNoticeDefault from "WarningNotice" /* 19878 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 19881 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 19887 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19900 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19925 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import NavigatorConstants from "NavigatorConstants" /* 5709 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12698 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20027 */;
+import WarningNoticeDefault from "WarningNotice" /* 20028 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 20031 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 20037 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 20050 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 20075 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -95,7 +95,7 @@ class SectionContainer {
     items = [, , , ];
     const obj2 = { style: tmp.divider };
     items[0] = unpackModuleId(metroRequire, obj2);
-    const obj3 = { style: tmp.sectionTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: title };
+    const obj3 = { style: tmp.sectionTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: title };
     items[1] = unpackModuleId(Text_Text.Text, obj3);
     items[2] = children;
     let tmp4Result = null != footer;
@@ -152,7 +152,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(19881, dependencyMap.paths);
+    const tmp2 = asyncRequire(20031, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
@@ -393,7 +393,7 @@ export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
         intl2 = tmp2(tmp3[10]).intl;
         items3 = [closure_11(closure_6, obj9), ];
         const obj11 = { ref: ref1, style: tmp.contentContainer, collapsable: false, children: items4 };
-        const obj12 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(ref1[10]).t.QYqDQ0) };
+        const obj12 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(ref1[10]).t.QYqDQ0) };
         const Text = tmp2(tmp3[12]).Text;
         intl3 = tmp2(tmp3[10]).intl;
         items4 = [closure_11(Text, obj12), , , ];

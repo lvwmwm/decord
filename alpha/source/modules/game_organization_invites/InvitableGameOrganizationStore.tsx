@@ -1,21 +1,22 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 11790
+// Function ID: 11791
 // Name: InvitableGameOrganizationStore
-// Dependencies: [1072, 11365, 504, 572, 2]
+// Dependencies: [1072, 11502, 11503, 504, 572, 2]
 
-// Module 11653 (InvitableGameOrganizationStore)
+// Module 11790 (InvitableGameOrganizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11365 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 11502 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11503 */;
 import size from "module_2" /* 2 */;
 
 function fromServerInvitableGameOrganization(game_organization) {
   let display_noun;
   let obj2;
   let obj3;
-  const obj = { organization: obj2.fromServerGameOrganization(game_organization.game_organization), application: obj3.fromServerGameOrganizationApplication(game_organization.application), displayNoun: display_noun };
-  obj2 = fromServerGameOrganization;
+  const obj = { organization: obj2.gameOrganizationFromServer(game_organization.game_organization), application: obj3.fromServerGameOrganizationApplication(game_organization.application), displayNoun: display_noun };
+  obj2 = GameOrganizationModels;
   display_noun = game_organization.application_config.display_noun;
   obj3 = fromServerGameOrganization;
   if (display_noun == null) {

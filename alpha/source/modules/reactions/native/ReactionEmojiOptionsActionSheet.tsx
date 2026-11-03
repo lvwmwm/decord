@@ -1,28 +1,28 @@
-// Module ID: 10098
-// Function ID: 10099
+// Module ID: 10228
+// Function ID: 10229
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 5015, 6796, 6958, 5045, 1072, 21, 5014, 575, 10058, 4839, 7357, 504, 9943, 1409, 5258, 10057, 5712, 1113, 10061, 10063, 7358, 5711, 8405, 7366, 7300, 5624, 4155, 2061, 7060, 6975, 2]
+// Dependencies: [19, 17, 5142, 6916, 7084, 5172, 1072, 21, 5141, 575, 10188, 4966, 7477, 504, 10074, 1411, 5381, 10187, 5832, 1113, 10191, 10193, 7478, 5831, 8529, 7486, 7420, 5747, 4282, 2190, 7186, 7101, 2]
 // Exports: default
 
-// Module 10098 (ReactionEmojiOptionsActionSheet)
+// Module 10228 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6958 */;
-import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8405 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10057 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10061 */;
-import StarIcon from "StarIcon" /* 10063 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7084 */;
+import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8529 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10187 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10191 */;
+import StarIcon from "StarIcon" /* 10193 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import EmojiStore from "EmojiStore" /* 6916 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -190,7 +190,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   items8 = [, ];
   const obj7 = { src: emojiURL, name: str, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emoji };
   items8[0] = closure_11(messageId(stateFromStores1[26]), obj7);
-  const obj8 = { variant: "text-lg/bold", color: "text-default", style: tmp.reactionText, children: tmp18 };
+  const obj8 = { variant: "text-lg/semibold", color: "text-default", style: tmp.reactionText, children: tmp18 };
   items8[1] = closure_11(channelId(stateFromStores1[27]).Text, obj8);
   const items9 = [closure_12(emojiURL, obj5), ];
   const Text = tmp3(tmp4[27]).Text;

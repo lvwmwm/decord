@@ -1,18 +1,21 @@
-// Module ID: 8980
-// Function ID: 8981
+// Module ID: 9108
+// Function ID: 9109
 // Name: SegmentedControlState
-// Dependencies: [19, 575, 5028, 5095, 5260, 5274, 2]
+// Dependencies: [19, 575, 5155, 1652, 5383, 5397, 2]
 // Exports: useSegmentedControlState
 
-// Module 8980 (SegmentedControlState)
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5274 */;
+// Module 9108 (SegmentedControlState)
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5397 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let closure_4 = { code: "function SegmentedControlStateNativeTsx1(index,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
+let closure_4 = { code: "(function SegmentedControlStateNativeTsx1(index,dimensions){let[itemDimensions,itemCount]=this.__closure;itemDimensions.get()[index]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));})" };
 let result = size.fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlState.native.tsx");
 
 export function useSegmentedControlState(pageWidth) {
+  let tmp13;
+  let tmp14;
+  let tmp15;
   let items = pageWidth.items;
   pageWidth = pageWidth.pageWidth;
   let num = pageWidth.defaultIndex;
@@ -28,24 +31,25 @@ export function useSegmentedControlState(pageWidth) {
   const onPageChangeStart = pageWidth.onPageChangeStart;
   const onSetActiveIndex = pageWidth.onSetActiveIndex;
   let callback1;
+  let obj = onPageChange;
   const enabled = onPageChange.useContext(items(PX_24[2]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj = items(PX_24[3]);
-  const sharedValue = obj.useSharedValue([]);
   let obj2 = items(PX_24[3]);
-  const sharedValue1 = obj2.useSharedValue(-1);
+  const sharedValue = obj2.useSharedValue([]);
   let obj3 = items(PX_24[3]);
-  const sharedValue2 = obj3.useSharedValue(0);
+  const sharedValue1 = obj3.useSharedValue(-1);
   let obj4 = items(PX_24[3]);
-  const sharedValue3 = obj4.useSharedValue(0);
+  const sharedValue2 = obj4.useSharedValue(0);
   const obj5 = items(PX_24[3]);
-  const sharedValue4 = obj5.useSharedValue(num);
-  const items1 = [num, num];
+  const sharedValue3 = obj5.useSharedValue(0);
   const obj6 = items(PX_24[3]);
-  const sharedValue5 = obj6.useSharedValue(items1);
+  const sharedValue4 = obj6.useSharedValue(num);
+  const items1 = [num, num];
   const obj7 = items(PX_24[3]);
-  const animatedRef = obj7.useAnimatedRef();
+  const sharedValue5 = obj7.useSharedValue(items1);
   const obj8 = items(PX_24[3]);
-  const sharedValue6 = obj8.useSharedValue(-1);
+  const animatedRef = obj8.useAnimatedRef();
+  const obj9 = items(PX_24[3]);
+  const sharedValue6 = obj9.useSharedValue(-1);
   const onPageChangeRef = onPageChange.useRef(onPageChange);
   const items2 = [onPageChange];
   const layoutEffect = onPageChange.useLayoutEffect(() => {
@@ -124,19 +128,23 @@ export function useSegmentedControlState(pageWidth) {
       }
     }
   }, items3);
-  const length = items.length;
-  class M {
+  const items4 = [onPageChangeStart, sharedValue, items.length];
+  let c0;
+  let c1;
+  [tmp13, tmp14, tmp15] = items4;
+  class SegmentedControlStateNativeTsx1 {
     constructor(arg0, arg1) {
-      sharedValue.get()[arg0] = arg1;
-      items = [...sharedValue.get()];
-      const result = sharedValue.set(items.slice(0, length));
+      _undefined.get()[arg0] = arg1;
+      items = [...c0.get()];
+      const result = _undefined.set(items.slice(0, c1));
     }
   }
-  M.__closure = { itemDimensions: sharedValue, itemCount: length };
-  M.__workletHash = 9501406272062;
-  M.__initData = onPageChangeStart;
-  const items4 = [sharedValue, length];
-  callback1 = onPageChange.useCallback(M, items4);
-  const items5 = [sharedValue4, sharedValue5, animatedRef, sharedValue1, sharedValue2, sharedValue3, items, sharedValue, PX_24, pageWidth, sharedValue6, setActiveIndex, callback1, enabled];
-  return onPageChange.useMemo(() => ({ activeIndex: sharedValue4, visiblePageRange: sharedValue5, pagerRef: animatedRef, scrollTarget: sharedValue1, scrollOverflow: sharedValue2, scrollOffset: sharedValue3, items, itemDimensions: sharedValue, itemSpacing: PX_24, pageWidth, pressedIndex: sharedValue6, onPageChangeRef, setActiveIndex, setItemDimensions: callback1, useReducedMotion: enabled }), items5);
+  const items5 = [tmp14, tmp15];
+  SegmentedControlStateNativeTsx1.__closure = items5;
+  SegmentedControlStateNativeTsx1.__workletHash = 572134650279;
+  SegmentedControlStateNativeTsx1.__initData = tmp13;
+  const items6 = [sharedValue, items.length];
+  callback1 = onPageChange.useCallback(SegmentedControlStateNativeTsx1, items6);
+  const items7 = [sharedValue4, sharedValue5, animatedRef, sharedValue1, sharedValue2, sharedValue3, items, sharedValue, PX_24, pageWidth, sharedValue6, setActiveIndex, callback1, enabled];
+  return obj.useMemo(() => ({ activeIndex: sharedValue4, visiblePageRange: sharedValue5, pagerRef: animatedRef, scrollTarget: sharedValue1, scrollOverflow: sharedValue2, scrollOffset: sharedValue3, items, itemDimensions: sharedValue, itemSpacing: PX_24, pageWidth, pressedIndex: sharedValue6, onPageChangeRef, setActiveIndex, setItemDimensions: callback1, useReducedMotion: enabled }), items7);
 }

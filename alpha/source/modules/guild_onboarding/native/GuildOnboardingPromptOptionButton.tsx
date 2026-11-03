@@ -1,24 +1,23 @@
-// Module ID: 7296
-// Function ID: 7297
+// Module ID: 7416
+// Function ID: 7417
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 5015, 6796, 1386, 21, 5095, 5014, 575, 504, 5254, 5637, 7297, 5023, 1113, 5596, 5082, 6980, 7300, 1409, 5624, 7303, 1187, 2]
+// Dependencies: [32, 19, 17, 5142, 6916, 1388, 21, 1652, 5141, 575, 504, 5377, 5757, 7417, 5150, 1113, 5719, 5209, 7106, 7420, 1411, 5747, 7423, 1187, 2]
 // Exports: default
 
-// Module 7296 (GuildOnboardingPromptOptionButton)
+// Module 7416 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import spring from "spring" /* 5637 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import timing_timing from "timing/timing" /* 5377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
+import react_mod from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import EmojiStore from "EmojiStore" /* 6916 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -29,11 +28,12 @@ let c9;
 let obj3;
 let rect;
 let size;
+let react = react_mod;
 let View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: c9, jsxs: c10 } = Fragment);
-let obj = { duration: 200, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-Easing = ReanimatedRexport.Easing;
+let obj = { duration: 200, easing: Easing.out(_mod1652.Easing.ease) };
+Easing = _mod1652.Easing;
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, optionButton: { paddingVertical: 12, paddingHorizontal: 16, display: "flex", flexDirection: "row", alignItems: "center" }, optionTextEmoji: { fontSize: 24, lineHeight: 24, marginRight: 12, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24, marginRight: 12 }, optionText: { flexShrink: 1 }, checkIcon: size, newBadgeWrapper: { position: "absolute", top: -6, right: -6 }, newBadge: { fontWeight: "bold" }, roleCount: rect };
 obj3 = { borderRadius: nativeDefault.radii.md, borderWidth: 2, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 8 };
@@ -41,12 +41,12 @@ createStyles = createStyles.createStyles;
 size = { position: "absolute", top: -6, right: -6, width: 20, height: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" };
 rect = { position: "absolute", top: -6, right: 24, paddingVertical: 2, paddingHorizontal: 6, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" };
 let closure_12 = createStyles(obj2);
-let __initData = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
-let closure_14 = { code: "function GuildOnboardingPromptOptionButtonTsx2(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showMemberCount?1:0;const opacity=withDelay(showMemberCount?400:0,withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateX:translateX}]};}" };
-let closure_15 = { code: "function GuildOnboardingPromptOptionButtonTsx3(){const{withTiming,selected,SELECTION_TIMING}=this.__closure;return withTiming(selected?1:0,SELECTION_TIMING);}" };
-let closure_16 = { code: "function GuildOnboardingPromptOptionButtonTsx4(){const{withTiming,isNew,SELECTION_TIMING}=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);}" };
-let closure_17 = { code: "function GuildOnboardingPromptOptionButtonTsx5(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};}" };
-let closure_18 = { code: "function GuildOnboardingPromptOptionButtonTsx6(){const{useReducedMotion,scale}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale.get()}]};}" };
+let closure_13 = { code: "(function GuildOnboardingPromptOptionButtonTsx1(){let[selected,withTiming,Easing,useReducedMotion,withSequence,withSpring]=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};})" };
+let closure_14 = { code: "(function GuildOnboardingPromptOptionButtonTsx2(){let[showMemberCount,withDelay,withTiming,Easing,useReducedMotion]=this.__closure;const rawOpacity=showMemberCount?1:0;const opacity=withDelay(showMemberCount?400:0,withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateX:translateX}]};})" };
+let closure_15 = { code: "(function GuildOnboardingPromptOptionButtonTsx3(){let[withTiming,selected,SELECTION_TIMING]=this.__closure;return withTiming(selected?1:0,SELECTION_TIMING);})" };
+let closure_16 = { code: "(function GuildOnboardingPromptOptionButtonTsx4(){let[withTiming,isNew,SELECTION_TIMING]=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);})" };
+let closure_17 = { code: "(function GuildOnboardingPromptOptionButtonTsx5(){let[interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor]=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};})" };
+let closure_18 = { code: "(function GuildOnboardingPromptOptionButtonTsx6(){let[useReducedMotion,scale]=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale.get()}]};})" };
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPromptOptionButton.tsx");
 
@@ -56,47 +56,74 @@ export default function PromptOptionButton(option) {
   let accessibilityRole;
   let accessibilityState;
   let canBeNew;
-  let closure_13;
+  let closure_4;
+  let closure_7;
   let closure_8;
   let emojiURL;
+  let first;
   let intl;
   let intl2;
-  let items10;
-  let items11;
-  let items6;
-  let items7;
-  let items8;
-  let items9;
+  let items18;
+  let items19;
+  let items20;
+  let items21;
+  let items22;
+  let items23;
   let obj12;
-  let obj18;
-  let obj19;
-  let obj21;
-  let showMemberCount;
+  let obj14;
+  let obj17;
+  let obj6;
   let str;
-  let tmp8Result;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp16Result;
+  let tmp29;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp49;
+  let tmp50;
+  let tmp51;
+  let tmp52;
+  let tmp55;
+  let tmp56;
+  let tmp57;
+  let tmp58;
+  let tmp61;
+  let tmp62;
+  let tmp63;
+  let tmp64;
+  let tmp65;
+  let tmp66;
+  let tmp67;
+  let tmp68;
+  let tmp70;
+  let tmp71;
+  let tmp72;
+  let tmp8;
+  let tmp9;
   option = option.option;
   const selected = option.selected;
   ({ onSelect: dependencyMap, suppressMemberCount: _slicedToArray, canBeNew } = option);
-  let closure_5;
+  react = undefined;
   let num;
-  showMemberCount = undefined;
+  first = undefined;
+  closure_7 = undefined;
   size = undefined;
-  let closure_9;
   let ref;
   let sharedValue;
-  closure_12 = undefined;
-  __initData = undefined;
-  let token;
-  let token1;
-  let token2;
-  let token3;
-  let derivedValue;
-  let derivedValue1;
+  let closure_11;
   const guildId = option.guildId;
   const tmp2 = closure_12();
   let tmp3 = option;
+  let tmp4 = dependencyMap;
   obj = option(504);
-  let items = [showMemberCount];
+  let items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let id;
     if (option != null) {
@@ -120,69 +147,76 @@ export default function PromptOptionButton(option) {
     return usableCustomEmojiById;
   });
   let obj2 = option(504);
-  let items1 = [num];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(5095);
-  class R {
+  let items1 = [first];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => first.useReducedMotion);
+  let tmp7 = option(1652);
+  let items2 = [closure_13, selected, , , , , ];
+  const useAnimatedStyle = tmp7.useAnimatedStyle;
+  items2[2] = option(5377).withTiming;
+  items2[3] = option(1652).Easing;
+  items2[4] = stateFromStores1;
+  items2[5] = option(1652).withSequence;
+  items2[6] = option(5757).withSpring;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp8, tmp9, tmp10, tmp11, tmp12, tmp13, tmp14] = items2;
+  class GuildOnboardingPromptOptionButtonTsx1 {
     constructor() {
-      let Easing;
       let items;
       num = 0;
-      if (selected) {
+      const tmp = c1;
+      if (c0) {
         num = 1;
       }
-      obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport.Easing;
       let num2 = 0.7;
-      const withTimingResult = withTiming(num, obj);
-      if (selected) {
+      obj = { duration: 150, easing: _undefined.out(_undefined.ease) };
+      const tmpResult = tmp(num, obj);
+      if (c0) {
         num2 = 1;
       }
-      let withSequenceResult = num2;
-      const obj2 = { opacity: withTimingResult, transform: items };
-      if (!stateFromStores1) {
-        const withSequence = ReanimatedRexport.withSequence;
-        ReanimatedRexport;
-        const tmp2Result3 = spring;
-        const withSpringResult = tmp2Result3.withSpring(1.2 * num2, { stiffness: 80, damping: 6, mass: 0.3 });
-        const tmp2Result4 = spring;
-        withSequenceResult = withSequence(withSpringResult, tmp2Result4.withSpring(num2, { stiffness: 80, damping: 6, mass: 0.3 }));
+      let tmp4 = num2;
+      const obj2 = { opacity: tmpResult, transform: items };
+      if (!c3) {
+        const tmp7 = _undefined3(1.2 * num2, { stiffness: 80, damping: 6, mass: 0.3 });
+        tmp4 = _undefined2(tmp7, _undefined3(num2, { stiffness: 80, damping: 6, mass: 0.3 }));
       }
-      items = [{ scale: withSequenceResult }];
+      items = [{ scale: tmp4 }];
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(5254).withTiming, Easing: option(5095).Easing, useReducedMotion: stateFromStores1, withSequence: option(5095).withSequence, withSpring: option(5637).withSpring };
-  R.__closure = obj4;
-  R.__workletHash = 8281627194581;
-  R.__initData = __initData;
-  const animatedStyle = obj3.useAnimatedStyle(R);
-  const tmp9 = selected(7297)(guildId);
-  closure_5 = tmp9;
+  const items3 = [tmp9, tmp10, tmp11, tmp12, tmp13, tmp14];
+  GuildOnboardingPromptOptionButtonTsx1.__closure = items3;
+  GuildOnboardingPromptOptionButtonTsx1.__workletHash = 7034596428204;
+  GuildOnboardingPromptOptionButtonTsx1.__initData = tmp8;
+  const animatedStyle = useAnimatedStyle(GuildOnboardingPromptOptionButtonTsx1);
+  const tmp17 = selected(7417)(guildId);
+  react = tmp17;
   num = 0;
-  if (null != tmp9) {
+  if (null != tmp17) {
     num = 0;
     if (null != option.roleIds) {
       const _Math = Math;
       const roleIds = option.roleIds;
-      let items2 = [];
+      const items4 = [];
       let num2 = 0;
-      HermesBuiltin.arraySpread(items2, roleIds.map((item) => closure_5[item]), 0);
+      HermesBuiltin.arraySpread(items4, roleIds.map((item) => closure_4[item]), 0);
       const _Math2 = Math;
-      num = HermesBuiltin.apply(max, items2, Math);
+      num = HermesBuiltin.apply(max, items4, Math);
     }
   }
-  [showMemberCount, size] = stateFromStores1.useState(false);
-  closure_9 = stateFromStores1.useRef(null);
-  const items3 = [showMemberCount];
-  const effect = stateFromStores1.useEffect(() => {
+  [first, closure_7] = react.useState(false);
+  size = react.useRef(null);
+  const items5 = [first];
+  const effect = react.useEffect(() => {
     if (first) {
       const tmp = ref;
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        closure_1_8(false);
+        closure_1_7(false);
         ref.current = null;
       }, 3000);
       return () => {
@@ -192,10 +226,10 @@ export default function PromptOptionButton(option) {
         }
       };
     }
-  }, items3);
-  ref = stateFromStores1.useRef(false);
-  const items4 = [showMemberCount, num];
-  const effect1 = stateFromStores1.useEffect(() => {
+  }, items5);
+  ref = react.useRef(false);
+  const items6 = [first, num];
+  const effect1 = react.useEffect(() => {
     if (first) {
       if (!ref.current) {
         if (0 > 0) {
@@ -211,69 +245,69 @@ export default function PromptOptionButton(option) {
     if (!first) {
       ref.current = false;
     }
-  }, items4);
-  const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(5095);
-  class V {
+  }, items6);
+  const items7 = [closure_14, first, , , , ];
+  const useAnimatedStyle2 = tmp3(1652).useAnimatedStyle;
+  tmp3(1652);
+  items7[2] = tmp3(1652).withDelay;
+  items7[3] = tmp3(5377).withTiming;
+  items7[4] = tmp3(1652).Easing;
+  items7[5] = stateFromStores1;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  [tmp29, tmp30, tmp31, tmp32, tmp33, tmp34] = items7;
+  const tmp23 = react;
+  class GuildOnboardingPromptOptionButtonTsx2 {
     constructor() {
-      let Easing;
-      let Easing2;
       let items;
       num = 0;
-      if (first) {
-        num = 1;
+      if (c0) {
+        num = 400;
       }
       let num2 = 0;
-      const withDelay = ReanimatedRexport.withDelay;
-      ReanimatedRexport;
-      if (first) {
-        num2 = 400;
+      if (c0) {
+        num2 = 1;
       }
-      obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = tmp2(5095).Easing;
       let num3 = 16;
-      const withDelayResult = withDelay(num2, withTiming(num, obj));
-      if (first) {
+      obj = { duration: 150, easing: _undefined.out(_undefined.ease) };
+      const tmpResult = _undefined(num, _undefined2(num2, obj));
+      if (c0) {
         num3 = 0;
       }
-      let withDelay2Result = num3;
-      const obj2 = { opacity: withDelayResult, transform: items };
-      if (!stateFromStores1) {
+      let tmpResult2 = num3;
+      const obj3 = { opacity: tmpResult, transform: items };
+      if (!c4) {
         let num4 = 0;
-        const withDelay2 = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        if (first) {
+        if (c0) {
           num4 = 400;
         }
-        const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
-        const withTiming2 = timing.withTiming;
-        timing;
-        Easing2 = tmp2(5095).Easing;
-        withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
+        const obj4 = { duration: 200, easing: _undefined.out(_undefined.ease) };
+        tmpResult2 = tmp(num4, tmp3(num3, obj4));
       }
-      items = [{ translateX: withDelay2Result }];
-      return obj2;
+      items = [{ translateX: tmpResult2 }];
+      return obj3;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(5095).withDelay, withTiming: tmp3(5254).withTiming, Easing: tmp3(5095).Easing, useReducedMotion: stateFromStores1 };
-  V.__closure = obj5;
-  V.__workletHash = 9518487706997;
-  V.__initData = token;
-  const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(5095);
+  const items8 = [tmp30, tmp31, tmp32, tmp33, tmp34];
+  GuildOnboardingPromptOptionButtonTsx2.__closure = items8;
+  GuildOnboardingPromptOptionButtonTsx2.__workletHash = 13064995616524;
+  GuildOnboardingPromptOptionButtonTsx2.__initData = tmp29;
+  const animatedStyle2 = useAnimatedStyle2(GuildOnboardingPromptOptionButtonTsx2);
+  const tmp3Result11 = tmp3(1652);
   sharedValue = tmp3Result11.useSharedValue(1);
-  closure_12 = tmp22;
   let id;
+  const tmp37 = canBeNew && option.isUnseen;
   if (option != null) {
     let emoji = option.emoji;
     if (emoji != null) {
       id = emoji.id;
     }
   }
-  let tmp24 = null != id;
-  if (!tmp24) {
+  let tmp39 = null != id;
+  if (!tmp39) {
     let name;
     if (option != null) {
       let emoji2 = option.emoji;
@@ -281,20 +315,20 @@ export default function PromptOptionButton(option) {
         name = emoji2.name;
       }
     }
-    tmp24 = null != name;
+    tmp39 = null != name;
   }
-  __initData = tmp24;
-  const items5 = [tmp24, , , ];
+  closure_11 = tmp39;
+  const items9 = [tmp39, , , ];
   const emoji3 = option.emoji;
   let name1;
-  const useMemo = tmp15.useMemo;
+  const useMemo = tmp23.useMemo;
   if (emoji3 != null) {
     name1 = emoji3.name;
   }
-  items5[1] = name1;
-  ({ title: arr7[2], description: arr7[3] } = option);
+  items9[1] = name1;
+  ({ title: arr11[2], description: arr11[3] } = option);
   const memo = useMemo(() => {
-    if (closure_13) {
+    if (closure_11) {
       const emoji = tmp.emoji;
       let str;
       if (emoji != null) {
@@ -330,95 +364,131 @@ export default function PromptOptionButton(option) {
       }
       title = tmp.title;
     }
-  }, items5);
-  const tmp3Result12 = tmp3(5596);
-  token = tmp3Result12.useToken(tmp8(575).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(5596);
-  token1 = tmp3Result13.useToken(tmp8(575).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(5596);
-  token2 = tmp3Result14.useToken(tmp8(575).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(5596);
-  token3 = tmp3Result15.useToken(tmp8(575).colors.BACKGROUND_BASE_LOWEST);
-  const fn = function q() {
-    num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (selected) {
-      num = 1;
+  }, items9);
+  const tmp3Result12 = tmp3(5719);
+  const token = tmp3Result12.useToken(tmp16(575).colors.BORDER_SUBTLE);
+  const tmp3Result13 = tmp3(5719);
+  const token1 = tmp3Result13.useToken(tmp16(575).colors.BACKGROUND_BRAND);
+  const tmp3Result14 = tmp3(5719);
+  const token2 = tmp3Result14.useToken(tmp16(575).colors.BORDER_STRONG);
+  const tmp3Result15 = tmp3(5719);
+  const token3 = tmp3Result15.useToken(tmp16(575).colors.BACKGROUND_BASE_LOWEST);
+  const items10 = [closure_15, , , ];
+  const useDerivedValue = tmp3(1652).useDerivedValue;
+  tmp3(1652);
+  items10[1] = tmp3(5377).withTiming;
+  items10[2] = selected;
+  items10[3] = closure_11;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp49, tmp50, tmp51, tmp52] = items10;
+  class GuildOnboardingPromptOptionButtonTsx3 {
+    constructor() {
+      num = 0;
+      const tmp = c0;
+      if (c1) {
+        num = 1;
+      }
+      return tmp(num, c2);
     }
-    return withTiming(num, obj);
-  };
-  const tmp3Result16 = tmp3(5095);
-  fn.__closure = { withTiming: tmp3(5254).withTiming, selected, SELECTION_TIMING: sharedValue };
-  fn.__workletHash = 11553377214675;
-  fn.__initData = token1;
-  ({ withTiming: tmp3(5254).withTiming, selected, SELECTION_TIMING: sharedValue });
-  derivedValue = tmp3Result16.useDerivedValue(fn);
-  const fn2 = function z() {
-    num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (closure_12) {
-      num = 1;
+  }
+  const items11 = [tmp50, tmp51, tmp52];
+  GuildOnboardingPromptOptionButtonTsx3.__closure = items11;
+  GuildOnboardingPromptOptionButtonTsx3.__workletHash = 16230189294602;
+  GuildOnboardingPromptOptionButtonTsx3.__initData = tmp49;
+  const derivedValue = useDerivedValue(GuildOnboardingPromptOptionButtonTsx3);
+  const items12 = [closure_16, , , ];
+  const useDerivedValue2 = tmp3(1652).useDerivedValue;
+  tmp3(1652);
+  items12[1] = tmp3(5377).withTiming;
+  items12[2] = tmp37;
+  items12[3] = closure_11;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp55, tmp56, tmp57, tmp58] = items12;
+  class GuildOnboardingPromptOptionButtonTsx4 {
+    constructor() {
+      num = 0;
+      const tmp = c0;
+      if (c1) {
+        num = 1;
+      }
+      return tmp(num, c2);
     }
-    return withTiming(num, obj);
-  };
-  const tmp3Result17 = tmp3(5095);
-  fn2.__closure = { withTiming: tmp3(5254).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
-  fn2.__workletHash = 9359578148244;
-  fn2.__initData = token2;
-  ({ withTiming: tmp3(5254).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
-  derivedValue1 = tmp3Result17.useDerivedValue(fn2);
-  const tmp3Result18 = tmp3(5095);
-  class W {
+  }
+  const items13 = [tmp56, tmp57, tmp58];
+  GuildOnboardingPromptOptionButtonTsx4.__closure = items13;
+  GuildOnboardingPromptOptionButtonTsx4.__workletHash = 4904550127725;
+  GuildOnboardingPromptOptionButtonTsx4.__initData = tmp55;
+  const derivedValue2 = useDerivedValue2(GuildOnboardingPromptOptionButtonTsx4);
+  const items14 = [closure_17, , , , , , , ];
+  const useAnimatedStyle3 = tmp3(1652).useAnimatedStyle;
+  tmp3(1652);
+  items14[1] = tmp3(1652).interpolateColor;
+  items14[2] = derivedValue2;
+  items14[3] = token;
+  items14[4] = token1;
+  items14[5] = derivedValue;
+  items14[6] = token2;
+  items14[7] = token3;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  c4 = undefined;
+  c5 = undefined;
+  let c6;
+  [tmp61, tmp62, tmp63, tmp64, tmp65, tmp66, tmp67, tmp68] = items14;
+  class GuildOnboardingPromptOptionButtonTsx5 {
     constructor() {
       let items1;
       let items2;
-      let obj3;
-      let obj4;
-      const items = [token, token1];
-      const obj2 = { borderColor: obj3.interpolateColor(derivedValue.get(), [0, 1], items1), backgroundColor: obj4.interpolateColor(derivedValue.get(), [0, 1], items2) };
-      obj = ReanimatedRexport;
-      items1 = [obj.interpolateColor(derivedValue1.get(), [0, 1], items), token2];
-      const interpolateColorResult = obj.interpolateColor(derivedValue1.get(), [0, 1], items);
-      items2 = ["transparent", token3];
-      obj3 = ReanimatedRexport;
-      obj4 = ReanimatedRexport;
-      return obj2;
+      const items = [c2, c3];
+      obj = { borderColor: _undefined(_undefined3.get(), [0, 1], items1), backgroundColor: _undefined(_undefined3.get(), [0, 1], items2) };
+      items1 = [_undefined(_undefined2.get(), [0, 1], items), c5];
+      _undefined(_undefined2.get(), [0, 1], items);
+      items2 = ["transparent", c6];
+      return obj;
     }
   }
-  W.__closure = { interpolateColor: tmp3(5095).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
-  W.__workletHash = 1340353593596;
-  W.__initData = token3;
-  ({ interpolateColor: tmp3(5095).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
-  const animatedStyle2 = tmp3Result18.useAnimatedStyle(W);
-  const tmp3Result19 = tmp3(5095);
-  class K {
+  const items15 = [tmp62, tmp63, tmp64, tmp65, tmp66, tmp67, tmp68];
+  GuildOnboardingPromptOptionButtonTsx5.__closure = items15;
+  GuildOnboardingPromptOptionButtonTsx5.__workletHash = 8397718874501;
+  GuildOnboardingPromptOptionButtonTsx5.__initData = tmp61;
+  const animatedStyle3 = useAnimatedStyle3(GuildOnboardingPromptOptionButtonTsx5);
+  const items16 = [closure_18, stateFromStores1, sharedValue];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp70, tmp71, tmp72] = items16;
+  const tmp3Result19 = tmp3(1652);
+  class GuildOnboardingPromptOptionButtonTsx6 {
     constructor() {
       let items;
-      const tmp = stateFromStores1;
+      const tmp = c0;
       if (tmp) {
         obj = {};
       } else {
         obj = { transform: items };
-        items = [{ scale: sharedValue.get() }];
-        const obj2 = { scale: sharedValue.get() };
+        items = [{ scale: _undefined.get() }];
+        const obj2 = { scale: _undefined.get() };
       }
       return obj;
     }
   }
-  K.__closure = { useReducedMotion: stateFromStores1, scale: sharedValue };
-  K.__workletHash = 11083046243451;
-  K.__initData = derivedValue;
-  const animatedStyle3 = tmp3Result19.useAnimatedStyle(K);
-  const tmp3Result20 = tmp3(5082);
+  const items17 = [tmp71, tmp72];
+  GuildOnboardingPromptOptionButtonTsx6.__closure = items17;
+  GuildOnboardingPromptOptionButtonTsx6.__workletHash = 14710088829666;
+  GuildOnboardingPromptOptionButtonTsx6.__initData = tmp70;
+  const animatedStyle1 = tmp3Result19.useAnimatedStyle(GuildOnboardingPromptOptionButtonTsx6);
+  const tmp3Result20 = tmp3(5209);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  const obj9 = { style: items6, children: items9 };
-  items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(5095).View;
-  let id1;
-  const obj10 = {
+  let obj3 = { style: items18, children: items21 };
+  items18 = [tmp2.container, animatedStyle1, animatedStyle3];
+  View = tmp16(1652).View;
+  let obj4 = {
     activeOpacity: 0.6,
     style: tmp2.optionButton,
     onPress: function handleOptionSelect() {
@@ -426,45 +496,46 @@ export default function PromptOptionButton(option) {
       const tmp = selected;
       const tmp3 = _slicedToArray;
       if (!tmp3) {
-        closure_8(!tmp);
+        closure_7(!tmp);
       }
     },
     onPressIn() {
       let Easing;
       set = sharedValue.set;
-      const withSequence = ReanimatedRexport.withSequence;
-      ReanimatedRexport;
-      obj = timing;
+      const withSequence = _mod1652.withSequence;
+      _mod1652;
+      obj = timing_timing;
       const withTimingResult = obj.withTiming(1, { duration: 0 });
-      const obj2 = { duration: 200, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport.Easing;
+      const obj2 = { duration: 200, easing: Easing.out(_mod1652.Easing.ease) };
+      const withTiming = timing_timing.withTiming;
+      timing_timing;
+      Easing = _mod1652.Easing;
       const result = set(withSequence(withTimingResult, withTiming(1.02, obj2)));
     },
     onPressOut() {
       let Easing;
       set = sharedValue.set;
-      obj = { duration: 100, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport.Easing;
+      obj = { duration: 100, easing: Easing.out(_mod1652.Easing.ease) };
+      const withTiming = timing_timing.withTiming;
+      timing_timing;
+      Easing = _mod1652.Easing;
       const result = set(withTiming(1, obj));
     },
     accessibilityRole,
     accessibilityState,
     accessibilityLabel: memo,
-    children: items7
+    children: items19
   };
-  const PressableOpacity = tmp3(6980).PressableOpacity;
+  let id1;
+  const PressableOpacity = tmp3(7106).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
       id1 = emoji4.id;
     }
   }
-  let tmp41Result = null != id1;
-  if (!tmp41Result) {
+  let tmp79Result = null != id1;
+  if (!tmp79Result) {
     let name2;
     if (option != null) {
       const emoji5 = option.emoji;
@@ -472,20 +543,20 @@ export default function PromptOptionButton(option) {
         name2 = emoji5.name;
       }
     }
-    tmp41Result = null != name2;
+    tmp79Result = null != name2;
   }
-  if (tmp41Result) {
-    const obj11 = { style: { display: "flex", alignItems: "center" }, children: closure_9(tmp8Result, obj12) };
-    obj12 = { textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
-    ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
+  if (tmp79Result) {
+    let obj5 = { style: { display: "flex", alignItems: "center" }, children: ref(tmp16Result, obj6) };
+    obj6 = { textEmojiStyle: null, fastImageStyle: null, src: emojiURL, name: str };
+    ({ optionTextEmoji: obj13.textEmojiStyle, optionImageEmoji: obj13.fastImageStyle } = tmp2);
     emojiURL = undefined;
-    const tmp42 = closure_5;
-    tmp8Result = selected(7300);
+    tmp16Result = selected(7420);
+    const tmp80 = num;
     if (null != stateFromStores) {
-      const obj13 = { id: null, animated: null, size };
-      ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
-      const tmp8Result2 = selected(1409);
-      emojiURL = tmp8Result2.getEmojiURL(obj13);
+      const obj7 = { id: null, animated: null, size };
+      ({ id: obj15.id, animated: obj15.animated } = stateFromStores);
+      const tmp16Result2 = selected(1411);
+      emojiURL = tmp16Result2.getEmojiURL(obj7);
     }
     str = undefined;
     if (option != null) {
@@ -497,40 +568,40 @@ export default function PromptOptionButton(option) {
     if (str == null) {
       str = "";
     }
-    tmp41Result = tmp41(tmp42, obj11);
+    tmp79Result = tmp79(tmp80, obj5);
   }
-  items7 = [tmp41Result, ];
-  const obj14 = { style: tmp2.optionText, children: items8 };
-  items8 = [, ];
-  const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items8[0] = closure_9(tmp3(5624).Text, obj15);
-  let tmp47Result = null != option.description && option.description.length > 0;
-  const tmp46 = closure_5;
-  if (tmp47Result) {
-    const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(5624).Text, obj16);
+  items19 = [tmp79Result, ];
+  const obj8 = { style: tmp2.optionText, children: items20 };
+  items20 = [, ];
+  const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
+  items20[0] = ref(tmp3(5747).Text, obj9);
+  let tmp85Result = null != option.description && option.description.length > 0;
+  const tmp84 = num;
+  if (tmp85Result) {
+    const obj10 = { variant: "text-xs/medium", color: "text-default", children: option.description };
+    tmp85Result = tmp85(tmp3(5747).Text, obj10);
   }
-  items8[1] = tmp47Result;
-  items7[1] = ref(tmp46, obj14);
-  items9 = [ref(PressableOpacity, obj10), , , ];
-  let tmp47Result2 = null;
+  items20[1] = tmp85Result;
+  items19[1] = sharedValue(tmp84, obj8);
+  items21 = [sharedValue(PressableOpacity, obj4), , , ];
+  let tmp85Result2 = null;
   if (num > 0) {
-    const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items10, children: closure_9(Text, obj18) };
-    items10 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(5095).View;
-    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1113).t.EgKsZA, obj19) };
-    Text = tmp3(5624).Text;
+    const obj11 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items22, children: ref(Text, obj12) };
+    items22 = [tmp2.roleCount, animatedStyle2];
+    const View2 = tmp16(1652).View;
+    obj12 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1113).t.EgKsZA, obj14) };
+    Text = tmp3(5747).Text;
     intl = tmp3(1113).intl;
-    obj19 = { memberCount: num };
-    tmp47Result2 = tmp47(View2, obj17);
+    obj14 = { memberCount: num };
+    tmp85Result2 = tmp85(View2, obj11);
   }
-  items9[1] = tmp47Result2;
-  const obj20 = { style: items11, children: closure_9(CheckmarkSmallIcon, obj21) };
-  items11 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(5095).View;
-  obj21 = { size: "xs", color: selected(575).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7303).CheckmarkSmallIcon;
-  items9[2] = closure_9(View3, obj20);
+  items21[1] = tmp85Result2;
+  const obj16 = { style: items23, children: ref(CheckmarkSmallIcon, obj17) };
+  items23 = [tmp2.checkIcon, animatedStyle];
+  const View3 = tmp16(1652).View;
+  obj17 = { size: "xs", color: selected(575).colors.WHITE };
+  CheckmarkSmallIcon = tmp3(7423).CheckmarkSmallIcon;
+  items21[2] = ref(View3, obj16);
   if (canBeNew) {
     canBeNew = !selected;
   }
@@ -538,12 +609,12 @@ export default function PromptOptionButton(option) {
     canBeNew = option.isUnseen;
   }
   if (canBeNew) {
-    const obj22 = { color: tmp3(1187).BadgeColors.BRAND, text: intl2.string(tmp3(1113).t.y2b7CA), style: null, textStyle: null };
+    const obj18 = { color: tmp3(1187).BadgeColors.BRAND, text: intl2.string(tmp3(1113).t.y2b7CA), style: null, textStyle: null };
     const TextBadge = tmp3(1187).TextBadge;
     intl2 = tmp3(1113).intl;
-    ({ newBadgeWrapper: obj34.style, newBadge: obj34.textStyle } = tmp2);
-    canBeNew = tmp47(TextBadge, obj22);
+    ({ newBadgeWrapper: obj24.style, newBadge: obj24.textStyle } = tmp2);
+    canBeNew = tmp85(TextBadge, obj18);
   }
-  items9[3] = canBeNew;
-  return ref(View, obj9);
+  items21[3] = canBeNew;
+  return sharedValue(View, obj3);
 };

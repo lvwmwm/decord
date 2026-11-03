@@ -1,14 +1,14 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 18883
+// Function ID: 18884
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 6776, 21, 5014, 575, 11049, 5624, 2]
+// Dependencies: [19, 6896, 21, 5141, 575, 11177, 5747, 2]
 
-// Module 18725 (guild_channels/ChannelTitle)
+// Module 18883 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
+import ReadStateConstants from "ReadStateConstants" /* 6896 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const UnreadSetting = ReadStateConstants.UnreadSetting;

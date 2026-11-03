@@ -1,23 +1,21 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15940
+// Function ID: 15941
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 5014, 575, 1625, 5272, 5275, 15798, 15737, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1627, 5395, 5398, 15941, 15880, 2]
 // Exports: default
 
-// Module 15797 (GuildActionSheetDirectory)
+// Module 15940 (GuildActionSheetDirectory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 15737 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 15798 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import BottomSheetModal from "BottomSheetModal" /* 5398 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 15880 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 15941 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let closure_4;
 let hasOwnProperty;
@@ -43,7 +41,7 @@ export default function GuildActionSheetDirectory(arg0) {
   const tmp = closure_6();
   const bottom = useSafeAreaInsetsDefault().bottom;
   const obj = { scrollable: true, startExpanded: expanded, children: hasOwnProperty(BottomSheetScrollView, obj2) };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj2 = { scrollsToTop: false, style: tmp.container, contentContainerStyle: { paddingBottom: bottom }, children: items };
   BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
   items = [React3(GuildActionSheetHeaderDefault, { guild }), ];

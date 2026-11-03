@@ -1,18 +1,18 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8143
+// Function ID: 8144
 // Name: useInitiateAgeVerification
-// Dependencies: [5, 32, 19, 1383, 1072, 7490, 504, 572, 7955, 7496, 7968, 2]
+// Dependencies: [5, 32, 19, 1385, 1072, 7614, 504, 572, 8079, 7620, 8092, 2]
 // Exports: useInitiateAgeVerification, useInitiateAgeVerificationV2
 
-// Module 8019 (useInitiateAgeVerification)
+// Module 8143 (useInitiateAgeVerification)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 7490 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7968 */;
+import Constants2 from "Constants" /* 7614 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8092 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let code, v2;
@@ -64,7 +64,7 @@ function useAgeVerificationRunner(onComplete) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ function useAgeVerificationRunner(onComplete) {
             c5 = 0;
             tmp64(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp64) {
           if (0 === c5) {

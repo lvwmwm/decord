@@ -1,13 +1,13 @@
-// Module ID: 9344
-// Function ID: 9345
+// Module ID: 9472
+// Function ID: 9473
 // Name: useSteamWebsiteUrl
-// Dependencies: [2014, 1072, 504, 9345, 9343, 2026, 2]
+// Dependencies: [2143, 1072, 504, 9473, 9471, 2155, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 9344 (useSteamWebsiteUrl)
+// Module 9472 (useSteamWebsiteUrl)
 import Constants from "Constants" /* 1072 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9345 */;
-import GameStore from "GameStore" /* 2014 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9473 */;
+import GameStore from "GameStore" /* 2143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export function useSteamWebsiteUrl(id) {
             id = first.id;
           }
           let combined = null;
-          const tmp11Result = tmp11(2026);
+          const tmp11Result = tmp11(2155);
           if (!tmp11Result.isNullOrEmpty(id)) {
             const _encodeURIComponent = encodeURIComponent;
             const _HermesInternal = HermesInternal;

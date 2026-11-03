@@ -1,17 +1,17 @@
-// Module ID: 9950
-// Function ID: 9951
+// Module ID: 10081
+// Function ID: 10082
 // Name: DoubleTapReminderToast
-// Dependencies: [4860, 5044, 4847, 4839, 8426, 5712, 1113, 9951, 2]
+// Dependencies: [4987, 5171, 4974, 4966, 8550, 5832, 1113, 10082, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 9950 (DoubleTapReminderToast)
+// Module 10081 (DoubleTapReminderToast)
 import intl2 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4847 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8426 */;
-import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 9951 */;
+import dismissible_content from "dismissible_content" /* 4974 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8550 */;
+import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 10082 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -23,7 +23,7 @@ export function maybeShowDoubleTapReminderToast(name) {
   let tmpResult5;
   const obj = DismissibleContentUnsafeUtils;
   if (!obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER)) {
-    const DoubleTapReactionEmoji = tmp(4839).DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = tmp(4966).DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
     let flag = setting.disableDoubleTap;
     if (flag == null) {
@@ -51,7 +51,7 @@ export function maybeShowDoubleTapReminderToast(name) {
       open("DOUBLE_TAP_TO_REACT_REMINDER", obj2);
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS, forceTrack: true };
       const tmpResult6 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult6.UNSAFE_markDismissibleContentAsDismissed(tmp(4847).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj4);
+      const result1 = tmpResult6.UNSAFE_markDismissibleContentAsDismissed(tmp(4974).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj4);
     }
   }
 }

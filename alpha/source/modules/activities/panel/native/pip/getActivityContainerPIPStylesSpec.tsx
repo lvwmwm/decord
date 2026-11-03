@@ -1,17 +1,29 @@
-// Module ID: 19135
-// Function ID: 19136
+// Module ID: 19293
+// Function ID: 19294
 // Name: getActivityContainerPIPStylesSpec
-// Dependencies: [5657, 2019, 12411, 2]
+// Dependencies: [5777, 2148, 12547, 2]
 // Exports: default
 
-// Module 19135 (getActivityContainerPIPStylesSpec)
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5657 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
+// Module 19293 (getActivityContainerPIPStylesSpec)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2148 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5777 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12547 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+let tmp3;
+let tmp4;
+let tmp5;
+const items = [{ code: "(function getActivityContainerPipStylesSpec_getActivityContainerPIPStylesSpecTsx1({pipWidth:pipWidth,pipHeight:pipHeight,pipOrientationLockState:pipOrientationLockState,isLandscape:isLandscape}){let[EmbeddedActivityOrientationLockState,LANDSCAPE_ACTIVITY_ASPECT_RATIO,roundToNearestPixel]=this.__closure;const nonNullPipOrientationLockState=pipOrientationLockState!==null&&pipOrientationLockState!==void 0?pipOrientationLockState:EmbeddedActivityOrientationLockState.UNLOCKED;const shouldUsePortraitAspectRatio=nonNullPipOrientationLockState===EmbeddedActivityOrientationLockState.PORTRAIT||nonNullPipOrientationLockState===EmbeddedActivityOrientationLockState.UNLOCKED&&!isLandscape;let width=pipWidth;let height=pipHeight;let shouldHorizontallyCenter=false;let shouldVerticallyCenter=false;let marginLeft=0;let marginTop=0;if(shouldUsePortraitAspectRatio){width=pipWidth;height=width*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldVerticallyCenter=true;marginTop=roundToNearestPixel(height/2)*-1;}else{height=pipHeight;width=height*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldHorizontallyCenter=true;marginLeft=roundToNearestPixel(width/2)*-1;}return{width:width,height:height,shouldHorizontallyCenter:shouldHorizontallyCenter,shouldVerticallyCenter:shouldVerticallyCenter,marginLeft:marginLeft,marginTop:marginTop};})" }, , , ];
 const LANDSCAPE_ACTIVITY_ASPECT_RATIO = ActivityPanelConstants.LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-const fn = function t(isLandscape) {
+items[1] = EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState;
+items[2] = LANDSCAPE_ACTIVITY_ASPECT_RATIO;
+items[3] = roundToNearestPixelDefault;
+let c0;
+let c1;
+let c2;
+[tmp2, tmp3, tmp4, tmp5] = items;
+function getActivityContainerPipStylesSpec(isLandscape) {
   let height;
   let marginLeft;
   let marginTop;
@@ -24,29 +36,29 @@ const fn = function t(isLandscape) {
   ({ pipWidth, pipHeight, pipOrientationLockState } = isLandscape);
   isLandscape = isLandscape.isLandscape;
   if (pipOrientationLockState == null) {
-    pipOrientationLockState = EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED;
+    pipOrientationLockState = constants.UNLOCKED;
   }
-  if (pipOrientationLockState === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT) {
-    const result = pipWidth * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-    marginTop = -1 * roundToNearestPixelDefault(result / 2);
+  if (pipOrientationLockState === constants.PORTRAIT) {
+    const result = pipWidth * c1;
+    marginTop = -1 * _undefined2(result / 2);
     marginLeft = 0;
     shouldVerticallyCenter = true;
     shouldHorizontallyCenter = false;
     height = result;
     width = pipWidth;
   } else {
-    width = height * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
-    marginLeft = -1 * roundToNearestPixelDefault(width / 2);
+    width = height * c1;
+    marginLeft = -1 * _undefined2(width / 2);
     marginTop = 0;
     shouldVerticallyCenter = false;
     shouldHorizontallyCenter = true;
   }
   return { width, height, shouldHorizontallyCenter, shouldVerticallyCenter, marginLeft, marginTop };
-};
-fn.__closure = { EmbeddedActivityOrientationLockState: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: roundToNearestPixelDefault };
-fn.__workletHash = 5930488590770;
-fn.__initData = { code: "function getActivityContainerPipStylesSpec_getActivityContainerPIPStylesSpecTsx1({pipWidth:pipWidth,pipHeight:pipHeight,pipOrientationLockState:pipOrientationLockState,isLandscape:isLandscape}){const{EmbeddedActivityOrientationLockState,LANDSCAPE_ACTIVITY_ASPECT_RATIO,roundToNearestPixel}=this.__closure;const nonNullPipOrientationLockState=pipOrientationLockState!==null&&pipOrientationLockState!==void 0?pipOrientationLockState:EmbeddedActivityOrientationLockState.UNLOCKED;const shouldUsePortraitAspectRatio=nonNullPipOrientationLockState===EmbeddedActivityOrientationLockState.PORTRAIT||nonNullPipOrientationLockState===EmbeddedActivityOrientationLockState.UNLOCKED&&!isLandscape;let width=pipWidth;let height=pipHeight;let shouldHorizontallyCenter=false;let shouldVerticallyCenter=false;let marginLeft=0;let marginTop=0;if(shouldUsePortraitAspectRatio){width=pipWidth;height=width*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldVerticallyCenter=true;marginTop=roundToNearestPixel(height/2)*-1;}else{height=pipHeight;width=height*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldHorizontallyCenter=true;marginLeft=roundToNearestPixel(width/2)*-1;}return{width:width,height:height,shouldHorizontallyCenter:shouldHorizontallyCenter,shouldVerticallyCenter:shouldVerticallyCenter,marginLeft:marginLeft,marginTop:marginTop};}" };
-({ EmbeddedActivityOrientationLockState: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: roundToNearestPixelDefault });
+}
+const items1 = [tmp3, tmp4, tmp5];
+getActivityContainerPipStylesSpec.__closure = items1;
+getActivityContainerPipStylesSpec.__workletHash = 7491412556331;
+getActivityContainerPipStylesSpec.__initData = tmp2;
 let result = size.fileFinishedImporting("modules/activities/panel/native/pip/getActivityContainerPIPStylesSpec.tsx");
 
-export default fn;
+export default getActivityContainerPipStylesSpec;

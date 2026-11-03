@@ -1,21 +1,21 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 11431
+// Function ID: 11432
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1383, 11256, 21, 5014, 575, 504, 11295, 5068, 7488, 7496, 8352, 6030, 5634, 1113, 5624, 2]
+// Dependencies: [19, 17, 1385, 11393, 21, 5141, 575, 504, 11432, 5195, 7612, 7620, 8476, 6150, 5754, 1113, 5747, 2]
 // Exports: default
 
-// Module 11294 (ConfirmBlockUserAlert)
+// Module 11431 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
-import ReportModals from "ReportModals" /* 8352 */;
-import Constants from "Constants" /* 11256 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
+import ReportModals from "ReportModals" /* 8476 */;
+import Constants from "Constants" /* 11393 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -99,7 +99,7 @@ export default function ConfirmBlockUserAlert(userId) {
     },
     children: items5
   };
-  const obj5 = { style: tmp.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl.format(userId(onCancel[15]).t.x5pOn9, { name }) };
+  const obj5 = { style: tmp.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(userId(onCancel[15]).t.x5pOn9, { name }) };
   const tmp11 = channelId(onCancel[13]);
   const Text = userId(onCancel[16]).Text;
   intl = userId(onCancel[15]).intl;

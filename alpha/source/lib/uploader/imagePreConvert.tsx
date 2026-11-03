@@ -1,13 +1,13 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9911
+// Function ID: 9912
 // Name: imagePreConvert
-// Dependencies: [32, 5, 8211, 8239, 8332, 1994, 7154, 2]
+// Dependencies: [32, 5, 8335, 8363, 8456, 2123, 7275, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 9779 (imagePreConvert)
-import asyncRequire from "asyncRequire" /* 1994 */;
-import UploadPlatform from "UploadPlatform" /* 8211 */;
-import imageFilename from "imageFilename" /* 8239 */;
+// Module 9911 (imagePreConvert)
+import asyncRequire from "asyncRequire" /* 2123 */;
+import UploadPlatform from "UploadPlatform" /* 8335 */;
+import imageFilename from "imageFilename" /* 8363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let value = function _maybePreConvertImageItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

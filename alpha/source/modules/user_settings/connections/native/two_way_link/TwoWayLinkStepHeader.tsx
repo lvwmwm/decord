@@ -1,15 +1,13 @@
-// Module ID: 9731
-// Function ID: 9732
+// Module ID: 9863
+// Function ID: 9864
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 9730, 7148, 5624, 1113, 2]
+// Dependencies: [19, 21, 5747, 1113, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 9731 (TwoWayLinkStepHeader)
+// Module 9863 (TwoWayLinkStepHeader)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7148 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,12 +18,7 @@ export function TwoWayLinkStepHeader(arg0) {
   let idx;
   let total;
   ({ idx, total } = arg0);
-  const obj = TwoWayLinkStyles;
-  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  const obj2 = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("TwoWayLinkStepHeader", "text-xs/bold");
-  const items = [twoWayLinkStyles.stepHeader, typeConsolidationEyebrow.style];
   const Text = Text_Text.Text;
   const intl = intl2.intl;
-  return <Text variant={typeConsolidationEyebrow.variant} color="text-default" style={items}>{intl.format(intl2.t.fHz6eR, { number: idx, total })}</Text>;
+  return <Text variant="body-sm/medium" color="text-default">{intl.format(intl2.t.fHz6eR, { number: idx, total })}</Text>;
 }

@@ -1,14 +1,14 @@
-// Module ID: 18480
-// Function ID: 18481
+// Module ID: 18634
+// Function ID: 18635
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 8028, 9207, 5258, 18481, 1994, 1113, 2]
+// Dependencies: [19, 21, 8152, 9335, 5381, 18635, 2123, 1113, 2]
 // Exports: default
 
-// Module 18480 (NotificationCenterActionButton)
+// Module 18634 (NotificationCenterActionButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9207 */;
+import IconButton2 from "IconButton" /* 8152 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9335 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

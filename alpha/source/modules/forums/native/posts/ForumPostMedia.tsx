@@ -1,24 +1,24 @@
-// Module ID: 13772
-// Function ID: 13773
+// Module ID: 13903
+// Function ID: 13904
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1192, 1191, 21, 5014, 575, 5717, 5600, 13773, 8687, 13774, 1375, 7468, 6980, 7955, 6729, 13775, 5021, 4839, 11132, 1490, 2]
+// Dependencies: [32, 19, 17, 1192, 1191, 21, 5141, 575, 5837, 5723, 13904, 8811, 13905, 1377, 7592, 7106, 8079, 6849, 13906, 5148, 4966, 11269, 1492, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 13772 (ForumPostMedia)
+// Module 13903 (ForumPostMedia)
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1490 */;
-import shared from "shared" /* 5021 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5600 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 13773 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13775 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1492 */;
+import shared from "shared" /* 5148 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5723 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 13904 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13906 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const UserSettings = tmp(4839);
+const UserSettings = tmp(4966);
 function ForumPostMediaAndroid(arg0) {
   let androidStyle;
   let blurTheme;
@@ -108,7 +108,7 @@ function ForumPostMedia(obscureReason) {
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(13774);
+    const tmp19 = ref(13905);
     const merged = Object.assign(obscureReason);
     tmp6Result = closure_9(tmp19, obj2);
     tmp12 = closure_9;
@@ -127,7 +127,7 @@ function ForumPostMedia(obscureReason) {
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(7468).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(7592).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj5 = { style: items, ref, children: tmp12(require("Pressables").PressableOpacity, obj6) };

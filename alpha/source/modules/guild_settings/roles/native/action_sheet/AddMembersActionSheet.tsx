@@ -1,32 +1,31 @@
-// Module ID: 19783
-// Function ID: 19784
+// Module ID: 19933
+// Function ID: 19934
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 19777, 21, 5014, 575, 5082, 10819, 6989, 5607, 5656, 1187, 5023, 1113, 7294, 9062, 6901, 19782, 11, 9067, 7482, 5272, 7321, 5634, 9074, 5258, 5624, 2]
+// Dependencies: [32, 19, 17, 19927, 21, 5141, 575, 5209, 10949, 7115, 5730, 5776, 1187, 5150, 1113, 7414, 9190, 7021, 19932, 11, 9195, 7606, 5395, 7441, 5754, 9202, 5381, 5747, 2]
 // Exports: default
 
-// Module 19783 (AddMembersActionSheet)
+// Module 19933 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import react_native2 from "react-native" /* 5082 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import RegexUtilsDefault from "RegexUtils" /* 5656 */;
-import GuildUtilsDefault from "GuildUtils" /* 6901 */;
-import FormCheckbox from "FormCheckbox" /* 6989 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10819 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19777 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19782 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import react_native2 from "react-native" /* 5209 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import RegexUtilsDefault from "RegexUtils" /* 5776 */;
+import GuildUtilsDefault from "GuildUtils" /* 7021 */;
+import FormCheckbox from "FormCheckbox" /* 7115 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10949 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19927 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -292,7 +291,7 @@ export default function AddMembersActionSheet(guild) {
     const _Object = Object;
     tmp10 = Object.keys(pendingAdditions).length > MAX_BULK_ROLE_MEMBERS_ADD;
   }
-  BottomSheet = tmp6(tmp7[22]).BottomSheet;
+  const BottomSheet = tmp6(tmp7[22]).BottomSheet;
   const obj4 = { title: intl.string(guild(pendingAdditions[14]).t.ZYOK46), subtitle: role.name, trailing: closure_7(Button, obj5) };
   const BottomSheetTitleHeader = tmp6(tmp7[23]).BottomSheetTitleHeader;
   intl = tmp6(tmp7[14]).intl;

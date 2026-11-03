@@ -1,18 +1,18 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17815
+// Function ID: 17816
 // Name: SelectScreen
-// Dependencies: [19, 17, 17669, 21, 5014, 5586, 8179, 7111, 1497, 7292, 5624, 1113, 2]
+// Dependencies: [19, 17, 17812, 21, 5141, 5709, 8303, 7237, 1499, 7412, 5747, 1113, 2]
 // Exports: default
 
-// Module 17672 (SelectScreen)
+// Module 17815 (SelectScreen)
 import react_native from "react-native" /* 17 */;
-import NavigatorConstants from "NavigatorConstants" /* 5586 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
-import RowButton from "RowButton" /* 8179 */;
-import MFAConstants from "MFAConstants" /* 17669 */;
+import NavigatorConstants from "NavigatorConstants" /* 5709 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7237 */;
+import RowButton from "RowButton" /* 8303 */;
+import MFAConstants from "MFAConstants" /* 17812 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ export default function SelectScreen(mfaChallenge) {
   const obj2 = { top: !tmp, style: tmp2.container, children: items1 };
   const obj3 = { style: tmp2.selectContainer, children: items };
   const SafeAreaPaddingView = require("common/SafeAreaView").SafeAreaPaddingView;
-  const obj4 = { variant: "heading-xl/extrabold", children: intl.string(require("intl").t.S9b9bX) };
+  const obj4 = { variant: "heading-xl/semibold", children: intl.string(require("intl").t.S9b9bX) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items = [closure_5(Heading, obj4), ];

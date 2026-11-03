@@ -1,21 +1,21 @@
-// Module ID: 18270
-// Function ID: 18271
+// Module ID: 18414
+// Function ID: 18415
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 4926, 7398, 8340, 4870, 4932, 21, 5014, 575, 5587, 563, 1396, 6980, 1099, 5624, 1113, 1187, 11911, 2]
+// Dependencies: [19, 17, 5053, 7522, 8464, 4997, 5059, 21, 5141, 575, 5710, 563, 1398, 7106, 1099, 5747, 1113, 1187, 12048, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 18270 (NewMemberActionsProgress)
+// Module 18414 (NewMemberActionsProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import ChannelConstants from "ChannelConstants" /* 4997 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5059 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7398 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8340 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7522 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8464 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -119,14 +119,14 @@ export function NewMemberActionsProgress(guildId) {
         };
         ({ horizontal: arr7[0], spaceBetween: arr7[1], spaceBelow: arr7[2] } = tmp);
         const PressableOpacity = tmp2(tmp3[13]).PressableOpacity;
-        const obj6 = { variant: "text-xs/bold", color: "mobile-text-heading-primary", children: intl.string(guildId(stateFromStores1[16]).t.LhlgY9) };
+        const obj6 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", children: intl.string(guildId(stateFromStores1[16]).t.LhlgY9) };
         const Text = tmp2(tmp3[15]).Text;
         intl = tmp2(tmp3[16]).intl;
         items6 = [closure_10(Text, obj6), ];
         const obj7 = { style: tmp.horizontal, children: items7 };
-        const obj8 = { variant: "text-xs/bold", color: "mobile-text-heading-primary", children: memo };
+        const obj8 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", children: memo };
         items7 = [closure_10(guildId(tmp3[15]).Text, obj8), closure_10(guildId(tmp3[15]).Text, { variant: "text-xs/medium", color: "text-default", children: "/" }), , ];
-        const obj9 = { variant: "text-xs/bold", color: "mobile-text-heading-primary", children: num };
+        const obj9 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", children: num };
         items7[2] = closure_10(guildId(stateFromStores1[15]).Text, obj9);
         const obj10 = { size: guildId(stateFromStores1[17]).Icon.Sizes.REFRESH_SMALL_16, source: stateFromStores(stateFromStores1[18]) };
         const Icon = tmp2(tmp3[17]).Icon;

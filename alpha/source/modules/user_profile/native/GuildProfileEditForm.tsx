@@ -1,33 +1,33 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16716
+// Function ID: 16717
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 4926, 7772, 1072, 1385, 21, 2047, 7326, 7351, 16458, 5258, 16446, 1994, 8737, 1113, 8735, 16457, 16457, 9785, 16469, 16462, 5607, 16553, 16493, 575, 5624, 8814, 8733, 7101, 16463, 11405, 16568, 504, 8757, 11394, 8815, 8740, 15789, 16574, 8800, 8811, 5080, 16575, 11395, 11396, 11413, 16472, 5068, 16473, 16495, 16499, 16500, 16504, 16508, 9905, 9906, 2]
+// Dependencies: [109, 19, 17, 5053, 7896, 1072, 1387, 21, 2176, 7446, 7471, 16602, 5381, 16590, 2123, 8861, 1113, 8859, 16601, 16601, 9917, 16612, 16605, 5730, 16696, 16636, 575, 5747, 8938, 8857, 7227, 16606, 11543, 16711, 504, 8881, 11532, 8939, 8864, 15932, 16717, 8924, 8935, 5207, 16718, 11533, 11534, 11551, 16615, 5195, 16616, 16638, 16642, 16643, 16647, 16651, 10036, 10037, 2]
 // Exports: default
 
-// Module 16573 (GuildProfileEditForm)
+// Module 16716 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8735 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8737 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9785 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16458 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16462 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16469 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16493 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16553 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7446 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8859 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8861 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9917 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10037 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16602 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16605 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16612 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16636 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16696 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import UserProfileStore from "UserProfileStore" /* 7772 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import UserProfileStore from "UserProfileStore" /* 7896 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(7326).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7446).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -102,7 +102,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(16446, dependencyMap.paths);
+        const tmp14 = asyncRequire(16590, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
@@ -158,7 +158,7 @@ function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
     const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1113).intl;
     obj5 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5624).Text;
+    Text = tmp(5747).Text;
     intl2 = tmp(1113).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
@@ -177,7 +177,6 @@ export default function GuildProfileEditForm(currentUser) {
   let avatarBackground;
   let bio;
   let containerBackground;
-  let errors;
   let first;
   let first1;
   let first2;
@@ -518,7 +517,7 @@ export default function GuildProfileEditForm(currentUser) {
             tmp66Result5 = null;
             if ("" !== first3) {
               const obj27 = { style: tmp4.errorContainer, children: closure_16(currentUser(tmp2[27]).Text, obj28) };
-              obj28 = { variant: "text-sm/bold", color: "text-feedback-critical", children: first3 };
+              obj28 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: first3 };
               tmp66Result5 = tmp66(tmp68, obj27);
             }
           }

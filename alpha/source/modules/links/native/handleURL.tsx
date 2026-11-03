@@ -1,14 +1,14 @@
-// Module ID: 5706
-// Function ID: 5707
+// Module ID: 5826
+// Function ID: 5827
 // Name: handleURL
-// Dependencies: [5, 17, 5259, 1072, 3, 5707, 5708, 5709, 5710, 1943, 5711, 1113, 5742, 1375, 5258, 1380, 5745, 7508, 15674, 2]
+// Dependencies: [5, 17, 5382, 1072, 3, 5827, 5828, 5829, 5830, 2072, 5831, 1113, 5862, 1377, 5381, 1381, 5865, 7632, 15816, 2]
 // Exports: default
 
-// Module 5706 (handleURL)
+// Module 5826 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5259 */;
+import ActionSheetStore from "ActionSheetStore" /* 5382 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -214,7 +214,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp57;
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

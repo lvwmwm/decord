@@ -1,31 +1,33 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 14102
+// Function ID: 14103
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 5095, 5596, 575, 1639, 5209, 1623, 5254, 5257, 2]
+// Dependencies: [32, 19, 21, 1652, 5719, 575, 1641, 5332, 1625, 5377, 5380, 2]
 // Exports: default
 
-// Module 13971 (FloatingChatInputContainer)
+// Module 14102 (FloatingChatInputContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5209 */;
-import timing from "timing" /* 5254 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5332 */;
+import timing_timing from "timing/timing" /* 5377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const _modDef1652 = _mod1652;
 let closure_2, dependencyMap, set;
 
 let tmp2;
-const timingPresets = tmp2(5257);
+const timingPresets = tmp2(5380);
 function useKeyboardOpenPaddingStyle() {
   let easing;
   let sharedValue;
+  let tmp11;
+  let tmp12;
   let tmp5;
   let token;
   let tmp2 = dependencyMap;
-  let obj = token(5596);
+  let obj = token(5719);
   token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
   const tmp4 = sharedValue(react.useState(() => {
     const KeyboardController = token(closure_2[6]).KeyboardController;
@@ -56,10 +58,10 @@ function useKeyboardOpenPaddingStyle() {
       closure_3.remove();
     };
   }, []);
-  const obj3 = token(5209);
-  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1623).KeyboardTypes.SYSTEM).keyboardWillOpen;
+  const obj3 = token(5332);
+  const keyboardWillOpen = obj3.useKeyboardContextForType(token(1625).KeyboardTypes.SYSTEM).keyboardWillOpen;
   const tmp7 = useKeyboardTypeDefault();
-  const SYSTEM = token(1623).KeyboardTypes.SYSTEM;
+  const SYSTEM = token(1625).KeyboardTypes.SYSTEM;
   const obj2 = react;
   if (!tmp5) {
     tmp5 = true === keyboardWillOpen;
@@ -69,8 +71,8 @@ function useKeyboardOpenPaddingStyle() {
   }
   dependencyMap = tmp5;
   let num = 0;
-  const useSharedValue = tmp(5095).useSharedValue;
-  token(5095);
+  const useSharedValue = tmp(1652).useSharedValue;
+  token(1652);
   if (tmp5) {
     num = token;
   }
@@ -79,28 +81,34 @@ function useKeyboardOpenPaddingStyle() {
   const effect1 = obj2.useEffect(() => {
     let num = 0;
     set = sharedValue.set;
-    const withTiming = timing.withTiming;
-    timing;
+    const withTiming = timing_timing.withTiming;
+    timing_timing;
     if (closure_2) {
       num = token;
     }
     const obj = { duration: timingPresets.timingStandardDuration, easing };
     const result = set(withTiming(num, obj));
   }, items);
-  const fn = function p() {
-    const obj = { paddingBottom: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { paddingSV: sharedValue };
-  fn.__workletHash = 5673482424037;
-  fn.__initData = __initData;
-  const tmpResult2 = token(5095);
-  return tmpResult2.useAnimatedStyle(fn);
+  const items1 = [closure_7, sharedValue];
+  let c0;
+  [tmp11, tmp12] = items1;
+  const tmpResult2 = token(1652);
+  class FloatingChatInputContainerTsx1 {
+    constructor() {
+      const obj = { paddingBottom: _undefined.get() };
+      return obj;
+    }
+  }
+  const items2 = [tmp12];
+  FloatingChatInputContainerTsx1.__closure = items2;
+  FloatingChatInputContainerTsx1.__workletHash = 15122796628316;
+  FloatingChatInputContainerTsx1.__initData = tmp11;
+  return tmpResult2.useAnimatedStyle(FloatingChatInputContainerTsx1);
 }
 const jsx = Fragment.jsx;
-const Easing = ReanimatedRexport.Easing;
+const Easing = _mod1652.Easing;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
-const __initData = { code: "function FloatingChatInputContainerTsx1(){const{paddingSV}=this.__closure;return{paddingBottom:paddingSV.get()};}" };
+let closure_7 = { code: "(function FloatingChatInputContainerTsx1(){let[paddingSV]=this.__closure;return{paddingBottom:paddingSV.get()};})" };
 let result = size.fileFinishedImporting("modules/chat_input/native/FloatingChatInputContainer.tsx");
 
 export default function FloatingChatInputContainer(arg0) {
@@ -110,6 +118,6 @@ export default function FloatingChatInputContainer(arg0) {
   ({ style, onLayout, children } = arg0);
   const items = [style, useKeyboardOpenPaddingStyle()];
   useKeyboardOpenPaddingStyle();
-  return jsx(ReanimatedRexportDefault.View, { style: items, onLayout, children });
+  return jsx(_modDef1652.View, { style: items, onLayout, children });
 };
 export { useKeyboardOpenPaddingStyle };

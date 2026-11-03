@@ -1,19 +1,19 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15151
+// Function ID: 15152
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4956, 1072, 21, 5014, 575, 15016, 504, 15017, 5624, 5634, 7137, 1113, 2]
+// Dependencies: [32, 19, 17, 5083, 1072, 21, 5141, 575, 15152, 504, 15153, 5747, 5754, 7263, 1113, 2]
 // Exports: default
 
-// Module 15015 (FriendRequestNote)
+// Module 15151 (FriendRequestNote)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PeopleListTracking from "PeopleListTracking" /* 15017 */;
+import PeopleListTracking from "PeopleListTracking" /* 15153 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ export default function FriendRequestNote(styles) {
           hidden = tmp.hidden;
         }
         const obj4 = { style: hidden, children: closure_8(Text, obj5) };
-        obj5 = { accessible: tmp7, accessibilityElementsHidden: !tmp7, accessibilityLabel: "", variant: "redesign/message-preview/normal", children: note };
+        obj5 = { accessible: tmp7, accessibilityElementsHidden: !tmp7, accessibilityLabel: "", variant: "redesign/message-preview/medium", children: note };
         Text = tmp2(tmp3[11]).Text;
         items3 = [closure_8(closure_5, obj4), ];
         let tmp15Result = null;

@@ -1,24 +1,24 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14505
+// Function ID: 14506
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 14375, 4863, 4946, 6842, 6861, 8203, 4948, 1083, 8347, 504, 12, 1379, 11, 8202, 9840, 2]
+// Dependencies: [32, 19, 14506, 4990, 5073, 6962, 6981, 8327, 5075, 1083, 8471, 504, 12, 1380, 11, 8326, 9971, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 14374 (ThreadBrowserHooks)
+// Module 14505 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1083 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8202 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9840 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 14375 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8326 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9971 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 14506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import ReadStateStore from "ReadStateStore" /* 6842 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6861 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8203 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import ReadStateStore from "ReadStateStore" /* 6962 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6981 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8327 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

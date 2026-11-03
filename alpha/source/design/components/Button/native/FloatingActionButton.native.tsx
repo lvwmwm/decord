@@ -1,20 +1,24 @@
-// Module ID: 8999
-// Function ID: 9000
+// Module ID: 9127
+// Function ID: 9128
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 5014, 575, 5640, 5095, 5637, 8029, 2]
+// Dependencies: [19, 21, 5141, 575, 5760, 1652, 5757, 8153, 2]
 // Exports: FloatingActionButton
 
-// Module 8999 (FloatingActionButton)
+// Module 9127 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import ButtonConstants from "ButtonConstants" /* 5760 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let num, num2, rect, tmp, tmp3, tmp4, tmpResult, withSpring2;
+const _modDef1652 = _mod1652;
+let rect, tmp;
 
+let tmp3;
+const BaseIconButton2 = tmp3(8153);
 const jsx = Fragment.jsx;
 const styles = createStyles.createStyles(() => {
   let obj2;
@@ -24,59 +28,74 @@ const styles = createStyles.createStyles(() => {
   ({ minWidth: ButtonConstants.FAB_BUTTON_SIZE, minHeight: ButtonConstants.FAB_BUTTON_SIZE, padding: 0, borderRadius: nativeDefault.radii.lg });
   return obj;
 });
-const SPRING_CONFIG = { mass: 0.5, damping: 80, stiffness: 320 };
-const __initData = { code: "function FloatingActionButtonNativeTsx1(){const{withSpring,positionBottom,DEFAULT_POSITION_OFFSET,SPRING_CONFIG,positionRight}=this.__closure;var _positionBottom,_positionRight;return{position:'absolute',bottom:withSpring((_positionBottom=positionBottom)!==null&&_positionBottom!==void 0?_positionBottom:DEFAULT_POSITION_OFFSET,SPRING_CONFIG),right:withSpring((_positionRight=positionRight)!==null&&_positionRight!==void 0?_positionRight:DEFAULT_POSITION_OFFSET,SPRING_CONFIG)};}" };
+let closure_6 = { mass: 0.5, damping: 80, stiffness: 320 };
+let closure_7 = { code: "(function FloatingActionButtonNativeTsx1(){let[withSpring,positionBottom,DEFAULT_POSITION_OFFSET,SPRING_CONFIG,positionRight]=this.__closure;var _positionBottom,_positionRight;return{position:'absolute',bottom:withSpring((_positionBottom=positionBottom)!==null&&_positionBottom!==void 0?_positionBottom:DEFAULT_POSITION_OFFSET,SPRING_CONFIG),right:withSpring((_positionRight=positionRight)!==null&&_positionRight!==void 0?_positionRight:DEFAULT_POSITION_OFFSET,SPRING_CONFIG)};})" };
 const result = size.fileFinishedImporting("design/components/Button/native/FloatingActionButton.native.tsx");
 
 export const DEFAULT_POSITION_OFFSET = 16;
 export const useStyles = styles;
-export function FloatingActionButton(positionRight) {
-  let icon;
+export function FloatingActionButton(icon) {
+  let accessibilityLabel;
   let positionBottom;
-  ({ icon, positionBottom } = positionRight);
-  positionRight = positionRight.positionRight;
-  const accessibilityLabel = positionRight.accessibilityLabel;
-  const merged = Object.assign(positionRight, Object.assign({ icon: 0, positionBottom: 0, positionRight: 0, accessibilityLabel: 0 }));
-  const tmp2 = styles();
-  const obj = positionBottom(5095);
-  class F {
+  let positionRight;
+  let tmp10;
+  let tmp11;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  icon = icon.icon;
+  ({ positionBottom, positionRight, accessibilityLabel } = icon);
+  const merged = Object.assign(icon, Object.assign({ icon: 0, positionBottom: 0, positionRight: 0, accessibilityLabel: 0 }));
+  let tmp2 = styles();
+  let tmp4 = dependencyMap;
+  let tmp3 = require;
+  const items = [closure_7, , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = spring_spring.withSpring;
+  items[2] = positionBottom;
+  items[3] = 16;
+  items[4] = closure_6;
+  items[5] = positionRight;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11] = items;
+  class FloatingActionButtonNativeTsx1 {
     constructor() {
       tmp = closure_0;
-      tmp2 = closure_2;
-      tmp3 = closure_0(closure_2[6]);
-      num = positionBottom;
-      withSpring = tmp3.withSpring;
-      if (positionBottom == null) {
-        num = 16;
+      tmp2 = closure_1;
+      if (closure_1 == null) {
+        tmp2 = closure_2;
       }
-      rect = { position: "absolute", bottom: withSpring(num, closure_6), right: null };
-      tmp4 = closure_6;
-      tmpResult = tmp(tmp2[6]);
-      num2 = positionRight;
-      withSpring2 = tmpResult.withSpring;
-      if (positionRight == null) {
-        num2 = 16;
+      rect = { position: "absolute", bottom: tmp(tmp2, closure_3), right: null };
+      tmp3 = closure_3;
+      tmp4 = closure_4;
+      if (closure_4 == null) {
+        tmp4 = closure_2;
       }
-      rect.right = withSpring2(num2, tmp4);
+      rect.right = tmp(tmp4, tmp3);
       return rect;
     }
   }
-  F.__closure = { withSpring: positionBottom(5637).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight };
-  F.__workletHash = 10762818944671;
-  F.__initData = __initData;
-  ({ withSpring: positionBottom(5637).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG, positionRight });
-  const animatedStyle = obj.useAnimatedStyle(F);
-  const View = positionRight(5095).View;
-  const BaseIconButton = positionBottom(8029).BaseIconButton;
+  const items1 = [tmp7, tmp8, tmp9, tmp10, tmp11];
+  FloatingActionButtonNativeTsx1.__closure = items1;
+  FloatingActionButtonNativeTsx1.__workletHash = 14949608342118;
+  FloatingActionButtonNativeTsx1.__initData = tmp6;
+  const animatedStyle = useAnimatedStyle(FloatingActionButtonNativeTsx1);
+  const View = _modDef1652.View;
+  const BaseIconButton = BaseIconButton2.BaseIconButton;
   const merged1 = Object.assign(merged);
   let cloneElementResult = icon;
-  const tmp6 = positionRight;
-  const tmp8 = react;
+  const tmp16 = react;
   if (react.isValidElement(icon)) {
-    const cloneElement = tmp8.cloneElement;
-    const obj9 = { color: tmp6(575).colors.WHITE };
-    cloneElementResult = cloneElement(icon, obj9);
+    const cloneElement = tmp16.cloneElement;
+    const obj5 = { color: nativeDefault.colors.WHITE };
+    cloneElementResult = cloneElement(icon, obj5);
   }
-  ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = tmp2);
+  ({ button: obj2.style, iconButtonPill: obj2.pillStyle } = tmp2);
   return <View style={animatedStyle}>{null}</View>;
 }

@@ -1,20 +1,20 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 10000
+// Function ID: 10001
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 21, 5014, 575, 1113, 9870, 9849, 9852, 5711, 9872, 9874, 8028, 9756, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1113, 10001, 9980, 9983, 5831, 10003, 10005, 8152, 9888, 2]
 // Exports: default
 
-// Module 9869 (ConversationNavigatorMoreMenu)
+// Module 10000 (ConversationNavigatorMoreMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import IconButton2 from "IconButton" /* 8028 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9756 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9870 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9872 */;
+import IconButton2 from "IconButton" /* 8152 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9888 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 10001 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 10003 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

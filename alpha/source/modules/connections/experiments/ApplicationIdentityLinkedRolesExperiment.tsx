@@ -1,11 +1,11 @@
-// Module ID: 19811
-// Function ID: 19812
+// Module ID: 19961
+// Function ID: 19962
 // Name: ApplicationIdentityLinkedRolesExperiment
-// Dependencies: [5236, 2]
+// Dependencies: [5359, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled
 
-// Module 19811 (ApplicationIdentityLinkedRolesExperiment)
-import createExperiment from "module_5236" /* 5236 */;
+// Module 19961 (ApplicationIdentityLinkedRolesExperiment)
+import createExperiment from "module_5359" /* 5359 */;
 import size from "module_2" /* 2 */;
 
 let items;

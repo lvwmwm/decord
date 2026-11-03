@@ -1,20 +1,20 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 7378
+// Function ID: 7379
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1072, 21, 5014, 6030, 1113, 5709, 5717, 7259, 5624, 2]
+// Dependencies: [19, 1072, 21, 5141, 6150, 1113, 5829, 5837, 7379, 5747, 2]
 // Exports: default
 
-// Module 7258 (MemberVerificationAlertUpdate)
+// Module 7378 (MemberVerificationAlertUpdate)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AlertDefault from "Alert" /* 6030 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7259 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import AlertDefault from "Alert" /* 6150 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,7 +48,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
   const obj2 = { source: AssetRegistryDefault, style: tmp.headerImage };
   const tmp4 = FastImageDefault;
   items = [React3(tmp4, obj2), , ];
-  const obj3 = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(intl5.t.kkjNHU) };
+  const obj3 = { style: tmp.header, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(intl5.t.kkjNHU) };
   const Text = Text_Text.Text;
   intl3 = intl5.intl;
   items[1] = React3(Text, obj3);

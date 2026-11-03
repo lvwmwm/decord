@@ -1,14 +1,14 @@
-// Module ID: 12129
-// Function ID: 12130
+// Module ID: 12265
+// Function ID: 12266
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6844, 504, 12130, 12113, 12133, 10895, 6845, 7419, 12134, 10891, 12097, 1113, 3868, 12116, 10875, 2]
+// Dependencies: [5, 32, 19, 6964, 504, 12266, 12249, 12269, 11025, 6965, 7543, 12270, 11021, 12233, 1113, 3995, 12252, 11005, 2]
 // Exports: default
 
-// Module 12129 (useConjureProjectSettingsDraft)
+// Module 12265 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,7 +118,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
   }
   let tmp32 = null != stateFromStores;
   if (tmp32) {
-    tmp32 = "user" !== stateFromStores.install_scope;
+    tmp32 = "guild" === stateFromStores.install_scope;
   }
   let result1 = tmp32 && null != arg1;
   if (result1) {
@@ -226,7 +226,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -374,7 +374,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -433,7 +433,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         tmp14 = c3;
         if (0 === c3) {
@@ -476,7 +476,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

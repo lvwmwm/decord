@@ -1,21 +1,21 @@
-// Module ID: 19508
-// Function ID: 19509
+// Module ID: 19666
+// Function ID: 19667
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1360, 21, 5014, 575, 19496, 11799, 5607, 8903, 19509, 6022, 6980, 1113, 10768, 5624, 9202, 19101, 6848, 5712, 11840, 2]
+// Dependencies: [32, 19, 17, 1362, 21, 5141, 575, 19654, 11936, 5730, 9027, 19667, 6142, 7106, 1113, 10898, 5747, 9330, 19259, 6968, 5832, 11977, 2]
 // Exports: default
 
-// Module 19508 (InteractionIframeModal)
+// Module 19666 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import makeIframeIdDefault from "makeIframeId" /* 11799 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 19509 */;
+import ApplicationConstants from "ApplicationConstants" /* 1362 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import makeIframeIdDefault from "makeIframeId" /* 11936 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 19667 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -86,7 +86,7 @@ export default function InteractionIframeModal(application) {
   const obj6 = { style: tmp.headerTitleContainer, children: items4 };
   items4 = [, ];
   const obj5 = { style: tmp.headerCenterContainer, children: items5 };
-  const obj7 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
+  const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: application.name };
   items4[0] = closure_7(id2(onDisallowedNavigation[16]).Text, obj7);
   const bot = application.bot;
   const obj8 = { type: BotTagTypes.BOT, verified, style: tmp.botTag };

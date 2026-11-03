@@ -1,18 +1,18 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14588
+// Function ID: 14589
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 5014, 575, 1113, 14452, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1113, 14583, 5747, 2]
 // Exports: default
 
-// Module 14457 (WishlistViewMoreCard)
+// Module 14588 (WishlistViewMoreCard)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 14452 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 14583 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -31,18 +31,18 @@ let closure_8 = createStyles.createStyles(() => {
 });
 const result = size.fileFinishedImporting("modules/wishlists/native/WishlistViewMoreCard.tsx");
 
-export default function WishlistViewMoreCard(recipientName) {
+export default function WishlistViewMoreCard(overflowCount) {
   let Text;
   let intl;
   let intl2;
   let items;
   let obj3;
   let onPress;
-  let overflowCount;
+  let recipientName;
   let sku;
-  recipientName = recipientName.recipientName;
-  ({ sku, size, overflowCount, onPress } = recipientName);
-  const obj = { onPress, accessibilityLabel: intl.formatToPlainString(intl3.t["8uYD+I"], { username: recipientName }), children: items };
+  overflowCount = overflowCount.overflowCount;
+  ({ sku, size, recipientName, onPress } = overflowCount);
+  const obj = { onPress, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl3.t.F6iMs4, { count: overflowCount }), children: items };
   const tmp = closure_8();
   intl = intl3.intl;
   items = [metroRequire(WishlistItemCardDefault, { accessibilityHidden: true, sku, size, recipientName }), ];

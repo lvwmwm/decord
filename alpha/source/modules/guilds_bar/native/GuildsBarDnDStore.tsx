@@ -1,14 +1,14 @@
-// Module ID: 18361
-// Function ID: 18362
+// Module ID: 18506
+// Function ID: 18507
 // Name: GuildsBarDnDStore
-// Dependencies: [6772, 1254, 5095, 1259, 1242, 4929, 2]
+// Dependencies: [6892, 1254, 1652, 1259, 1242, 5056, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18361 (GuildsBarDnDStore)
+// Module 18506 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1259 */;
-import _slicedToArray from "_slicedToArray" /* 4929 */;
-import SortedGuildStore from "SortedGuildStore" /* 6772 */;
+import _slicedToArray from "_slicedToArray" /* 5056 */;
+import SortedGuildStore from "SortedGuildStore" /* 6892 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
@@ -30,14 +30,14 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "dispatch",
+    overSpecs: "disabled",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: 60000,
+    windowSize: "colors",
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -108,7 +108,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -124,20 +124,20 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       }
     }
   };
-  obj2 = require("ReanimatedRexport");
-  obj3 = require("ReanimatedRexport");
-  obj4 = require("ReanimatedRexport");
-  obj5 = require("ReanimatedRexport");
-  obj6 = require("ReanimatedRexport");
+  obj2 = require("module_1652");
+  obj3 = require("module_1652");
+  obj4 = require("module_1652");
+  obj5 = require("module_1652");
+  obj6 = require("module_1652");
   return obj;
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
 
 export default withEqualityFn;
 export { INITIAL_GESTURE_STATE };
-export function useItemDragState(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+export function useItemDragState(guildId, flag) {
+  let closure_0 = guildId;
+  let closure_1 = flag;
   return withEqualityFn((arg0) => {
     let dragDropInProgress;
     let dragSpecs;
@@ -149,7 +149,7 @@ export function useItemDragState(arg0, arg1) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "dispatch", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "disabled", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

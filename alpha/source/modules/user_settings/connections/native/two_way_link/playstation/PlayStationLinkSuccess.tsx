@@ -1,21 +1,21 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14776
+// Function ID: 14777
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5014, 9730, 14630, 5717, 5624, 1113, 7292, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 9862, 14761, 5837, 5747, 1113, 7412, 5754, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 14645 (PlayStationLinkSuccess)
+// Module 14776 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9730 */;
-import _modDef14630 from "module_14630" /* 14630 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
+import _modDef14761 from "module_14761" /* 14761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,13 +41,13 @@ export function PlayStationLinkSuccess(onClose) {
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14630 };
+    const obj = { uri: _modDef14761 };
     return obj;
   }, []);
   items = [, , ];
   const obj4 = { source: memo, style: tmp.image };
   items[0] = hasOwnProperty(FastImageDefault, obj4);
-  const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.e6SOl0) };
+  const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.e6SOl0) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = hasOwnProperty(Text, obj5);

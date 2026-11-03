@@ -1,19 +1,19 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7426
+// Function ID: 7427
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1113, 575, 5014, 5596, 5587, 7307, 5081, 5624, 2]
+// Dependencies: [17, 21, 1113, 575, 5141, 5719, 5710, 7427, 5747, 2]
 // Exports: Badge
 
-// Module 7306 (Badge/Badge)
+// Module 7426 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 5081 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import useToken from "useToken" /* 5596 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import BadgeShared from "BadgeShared" /* 7307 */;
+import intl5 from "intl" /* 1113 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import useToken from "useToken" /* 5719 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import BadgeShared from "BadgeShared" /* 7427 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -142,39 +142,37 @@ export function Badge(icon) {
   }
   icon = icon.icon;
   const tmp3 = closure_7(variant);
-  const obj = useBadgeTextVariant;
-  const badgeTextVariant = obj.useBadgeTextVariant();
   if ("new" === type) {
-    const intl4 = tmp4(1113).intl;
-    text = intl4.string(tmp4(1113).t.y2b7CA);
+    const intl4 = intl5.intl;
+    text = intl4.string(intl5.t.y2b7CA);
   } else if ("beta" === type) {
-    const intl3 = tmp4(1113).intl;
-    text = intl3.string(tmp4(1113).t.oW0eUd);
+    const intl3 = intl5.intl;
+    text = intl3.string(intl5.t.oW0eUd);
   } else if ("early_access" === type) {
-    const intl2 = tmp4(1113).intl;
-    text = intl2.string(tmp4(1113).t.EYxi0o);
+    const intl2 = intl5.intl;
+    text = intl2.string(intl5.t.EYxi0o);
   } else if ("free_trial" === type) {
-    const intl = tmp4(1113).intl;
-    text = intl.string(tmp4(1113).t.IBYG5U);
+    const intl = intl5.intl;
+    text = intl.string(intl5.t.IBYG5U);
   } else {
     text = type.text;
   }
-  let tmp10 = null;
-  const obj2 = { style: tmp3.badge, children: items };
-  const tmp7 = hasOwnProperty;
-  const tmp8 = View;
+  let tmp15 = null;
+  const obj = { style: tmp3.badge, children: items };
+  const tmp12 = hasOwnProperty;
+  const tmp13 = View;
   if ("premium" === variant) {
-    const obj3 = { style: tmp9 };
-    tmp10 = React3(PremiumGradient, obj3);
+    const obj2 = { style: tmp14 };
+    tmp15 = React3(PremiumGradient, obj2);
   }
-  items = [tmp10, , ];
-  let tmp13 = null;
+  items = [tmp15, , ];
+  let tmp18 = null;
   if (null != icon) {
-    const obj4 = { size: "xxs", color: getBadgeColors(variant).text, accessible: false };
-    tmp13 = React3(icon, obj4);
+    const obj3 = { size: "xxs", color: getBadgeColors(variant).text, accessible: false };
+    tmp18 = React3(icon, obj3);
   }
-  items[1] = tmp13;
-  const obj5 = { variant: badgeTextVariant, color: "none", lineClamp: 1, style: tmp3.label, children: text };
-  items[2] = React3(Text_Text.Text, obj5);
-  return tmp7(tmp8, obj2);
+  items[1] = tmp18;
+  const obj4 = { variant: "body-xs/semibold", color: "none", lineClamp: 1, style: tmp3.label, children: text };
+  items[2] = React3(Text_Text.Text, obj4);
+  return tmp12(tmp13, obj);
 }

@@ -1,24 +1,24 @@
-// Module ID: 8923
-// Function ID: 8924
+// Module ID: 9047
+// Function ID: 9048
 // Name: ICYMIUtils
-// Dependencies: [5, 6855, 4867, 4863, 4885, 8920, 1072, 8919, 8924, 8926, 6063, 8927, 8714, 8928, 1113, 2]
+// Dependencies: [5, 6975, 4994, 4990, 5012, 9044, 1072, 9043, 9048, 9052, 6183, 9053, 8838, 9054, 1113, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 8923 (ICYMIUtils)
+// Module 9047 (ICYMIUtils)
 import intl11 from "intl" /* 1113 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8714 */;
-import ICYMITypes from "ICYMITypes" /* 8919 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
-import generateHydrationId from "generateHydrationId" /* 8926 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8927 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8928 */;
+import ChannelRecord from "ChannelRecord" /* 4994 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8838 */;
+import ICYMITypes from "ICYMITypes" /* 9043 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
+import generateHydrationId from "generateHydrationId" /* 9052 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 9053 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9054 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6855 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8920 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 9044 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _hydrateItems() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ let obj = function _hydrateItems() {
           return obj;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         c4 = 3;
         throw tmp19;
@@ -290,44 +290,66 @@ export function isItemNSFW(data) {
   }
 }
 export function itemToType(data) {
-  const kind = data.data.kind;
-  if ("end" === kind) {
-    return "end";
-  } else if ("loading" === kind) {
-    return "loading";
-  } else if ("bottomLoading" === kind) {
-    return "bottomLoading";
-  } else {
-    let str11 = "message";
-    if ("message" === kind) {
-      let str10 = "announcement";
+  switch (data.data.kind) {
+    case "end":
+    {
+      return "end";
+    }
+    case "loading":
+    {
+      return "loading";
+    }
+    case "bottomLoading":
+    {
+      return "bottomLoading";
+    }
+    case "message":
+    {
+      let str7 = "announcement";
       if (data.channelType !== constants.GUILD_ANNOUNCEMENT) {
         const messageContext = data.data.messageContext;
         let prop;
         if (messageContext != null) {
           prop = messageContext.external_content_application_id;
         }
+        let str8 = "message";
         if (null != prop) {
-          str11 = "game_message";
+          str8 = "game_message";
         }
-        str10 = str11;
+        str7 = str8;
       }
-      return str10;
-    } else if ("guildEvent" === kind) {
+      return str7;
+    }
+    case "guildEvent":
+    {
       return "guild_event";
-    } else if ("contentInventory" === kind) {
-      let str8 = "hotwheels_gaming_activity";
+    }
+    case "contentInventory":
+    {
+      let str5 = "hotwheels_gaming_activity";
       if (data.data.content.content_type === ContentInventoryEntryType.ContentInventoryEntryType.CUSTOM_STATUS) {
-        str8 = "hotwheels_custom_status";
+        str5 = "hotwheels_custom_status";
       }
-      return str8;
-    } else if ("recommendedGuilds" === kind) {
+      return str5;
+    }
+    case "recommendedGuilds":
+    {
       return "recommended_guilds";
-    } else if ("forumThread" === kind) {
+    }
+    case "waterwheelsItem":
+    {
+      return "discover_item";
+    }
+    case "forumThread":
+    {
       return "forum_thread";
-    } else if ("icymiHeader" === kind) {
+    }
+    case "icymiHeader":
+    {
       return "icymi_header";
-    } else {
+    }
+    default:
+    {
       return "unknown";
     }
   }
@@ -369,11 +391,11 @@ export function determineContentType(channel, message) {
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(8919).ContentType.IMAGE;
+        IMAGE = tmp6(9043).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(8919).ContentType;
+        const ContentType = tmp6(9043).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;

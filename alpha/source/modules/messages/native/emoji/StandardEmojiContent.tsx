@@ -1,20 +1,20 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10182
+// Function ID: 10183
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 5045, 21, 5014, 575, 10053, 4964, 5717, 5624, 10054, 4960, 9943, 10055, 1113, 8177, 5634, 10057, 2]
+// Dependencies: [19, 17, 5172, 21, 5141, 575, 10183, 5091, 5837, 5747, 10184, 5087, 10074, 10185, 1113, 8301, 5754, 10187, 2]
 // Exports: default
 
-// Module 10052 (StandardEmojiContent)
+// Module 10182 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4964 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10053 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10057 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5091 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10183 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10187 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -23,11 +23,12 @@ let metroRequire;
 let obj2;
 let tmp2;
 let tmp5;
-const Text_Text = tmp2(5624);
-const FastImageDefault = tmp5(5717);
+const Text_Text = tmp2(5747);
+const FastImageDefault = tmp5(5837);
 function Emoji(surrogate) {
-  let obj6;
-  let tmp7Result;
+  let obj5;
+  let obj7;
+  let tmp9;
   surrogate = surrogate.surrogate;
   const obj = {};
   const merged = Object.assign(closure_9());
@@ -35,17 +36,16 @@ function Emoji(surrogate) {
   const merged1 = Object.assign(obj2.useSharedMessageEmojiStyles());
   const obj3 = EmojiUtilsDefault;
   const uRL = obj3.getURL(surrogate);
-  const obj4 = { style: obj.emojiWrapper, children: tmp7Result };
-  const tmp8 = View;
   if ("" !== uRL) {
-    const obj5 = { style: obj.emojiIcon, resizeMode: "contain", source: obj6 };
-    obj6 = { uri: uRL };
-    tmp7Result = tmp7(FastImageDefault, obj5);
+    const obj4 = { style: obj.emojiIcon, resizeMode: "contain", source: obj5 };
+    obj5 = { uri: uRL };
+    tmp9 = metroRequire(FastImageDefault, obj4);
   } else {
-    const obj7 = { style: obj.emojiSurrogate, variant: "text-md/medium", children: surrogate };
-    tmp7Result = tmp7(Text_Text.Text, obj7);
+    const obj6 = { style: obj.emojiWrapper, children: metroRequire(Text_Text.Text, obj7) };
+    obj7 = { style: obj.emojiSurrogate, variant: "text-md/medium", children: surrogate };
+    tmp9 = metroRequire(View, obj6);
   }
-  return metroRequire(tmp8, obj4);
+  return tmp9;
 }
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -85,7 +85,7 @@ export default function StandardEmojiContent(emojiNode) {
   const tmp7 = memo(isFavoriteEmoji[13])(emojiNode.content);
   items1[0] = closure_6(Emoji, obj6);
   const obj7 = { style: obj.emojiDescriptionWrapper, children: items2 };
-  items2 = [closure_6(emojiNode(isFavoriteEmoji[9]).Text, { variant: "text-md/bold", color: "mobile-text-heading-primary", children: tmp7 }), ];
+  items2 = [closure_6(emojiNode(isFavoriteEmoji[9]).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp7 }), ];
   const obj8 = { variant: "text-sm/medium", children: intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c) };
   const Text = emojiNode(isFavoriteEmoji[9]).Text;
   intl = emojiNode(isFavoriteEmoji[14]).intl;

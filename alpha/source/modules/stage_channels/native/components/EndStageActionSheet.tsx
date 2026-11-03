@@ -1,21 +1,21 @@
-// Module ID: 15179
-// Function ID: 15180
+// Module ID: 15320
+// Function ID: 15321
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 6709, 1072, 21, 5014, 575, 5258, 9221, 14743, 1187, 1113, 5624, 5634, 7945, 2]
+// Dependencies: [19, 17, 6829, 1072, 21, 5141, 575, 5381, 9349, 14874, 1187, 1113, 5747, 5754, 8069, 2]
 // Exports: default
 
-// Module 15179 (EndStageActionSheet)
+// Module 15320 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6709 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7945 */;
-import CallsUtils from "CallsUtils" /* 9221 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14743 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6829 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8069 */;
+import CallsUtils from "CallsUtils" /* 9349 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14874 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -51,7 +51,7 @@ export default function EndStageActionSheet(channel) {
   intl = channel(1113).intl;
   items = [closure_5(LegacyText, obj3), , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1113).t.mT7jwN) };
-  const Text = channel(5624).Text;
+  const Text = channel(5747).Text;
   intl2 = channel(1113).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
@@ -65,7 +65,7 @@ export default function EndStageActionSheet(channel) {
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5634).Button;
+  Button = channel(5754).Button;
   intl3 = channel(1113).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
@@ -81,7 +81,7 @@ export default function EndStageActionSheet(channel) {
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5634).Button;
+  Button2 = channel(5754).Button;
   intl4 = channel(1113).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);

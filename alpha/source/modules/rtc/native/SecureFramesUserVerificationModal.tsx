@@ -1,27 +1,27 @@
-// Module ID: 9270
-// Function ID: 9271
+// Module ID: 9398
+// Function ID: 9399
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [19, 17, 4863, 1383, 9266, 1072, 1191, 21, 5014, 575, 504, 6041, 9271, 9273, 9246, 9274, 9265, 6744, 5712, 1113, 9275, 9268, 8931, 7326, 8750, 9276, 7292, 6980, 7002, 5624, 6027, 9277, 9279, 7306, 5634, 2]
+// Dependencies: [19, 17, 4990, 1385, 9394, 1072, 1191, 21, 5141, 575, 504, 6161, 9399, 9401, 9374, 9402, 9393, 6864, 5832, 1113, 9403, 9396, 9059, 7446, 8874, 9404, 7412, 7106, 7128, 5747, 6147, 9405, 9407, 7426, 5754, 2]
 // Exports: default
 
-// Module 9270 (SecureFramesUserVerificationModal)
+// Module 9398 (SecureFramesUserVerificationModal)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
-import showShareActionSheet from "showShareActionSheet" /* 8931 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9265 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9268 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import showShareActionSheet from "showShareActionSheet" /* 9059 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9393 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9396 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9266 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import UserStore from "UserStore" /* 1385 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9394 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -212,7 +212,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   items10 = [closure_16(readableSecureFramesFingerprint, obj12), , , ];
   const obj16 = { spacing: 8, justify: "center", align: "center", direction: "vertical", children: items11 };
   const Stack = tmp2(tmp3[30]).Stack;
-  const obj17 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl4.string(userId(name[19]).t["/WPGnF"]) };
+  const obj17 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl4.string(userId(name[19]).t["/WPGnF"]) };
   const Text2 = tmp2(tmp3[29]).Text;
   intl4 = tmp2(tmp3[19]).intl;
   items11 = [closure_15(Text2, obj17), ];

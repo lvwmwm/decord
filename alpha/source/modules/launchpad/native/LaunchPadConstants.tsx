@@ -1,12 +1,12 @@
-// Module ID: 11536
-// Function ID: 11537
+// Module ID: 11673
+// Function ID: 11674
 // Name: LaunchPadConstants
-// Dependencies: [17, 1375, 4971, 2]
+// Dependencies: [17, 1377, 5098, 2]
 
-// Module 11536 (LaunchPadConstants)
+// Module 11673 (LaunchPadConstants)
 import react_native from "react-native" /* 17 */;
-import DeviceUtils from "DeviceUtils" /* 4971 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
+import DeviceUtils from "DeviceUtils" /* 5098 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
 const Dimensions = react_native.Dimensions;
@@ -24,7 +24,7 @@ if (!PlatformUtils.isAndroid()) {
 size = size_mod;
 const result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadConstants.tsx");
 
-export const LAUNCH_PAD_SPRING_CONFIG = { damping: 20, stiffness: 280, mass: 0.5, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
+export const LAUNCH_PAD_SPRING_CONFIG = { damping: 20, stiffness: 280, mass: 0.5 };
 export const LAUNCH_PAD_PULL_TAB_HEIGHT = 96;
 export const LAUNCH_PAD_PULL_TAB_WIDTH = 26;
 export const LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET = 18;

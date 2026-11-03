@@ -1,17 +1,17 @@
-// Module ID: 14608
-// Function ID: 14609
+// Module ID: 14739
+// Function ID: 14740
 // Name: HexagonCampaignEntitlements
-// Dependencies: [5039, 5041, 5071, 2047, 2]
+// Dependencies: [5166, 5168, 5198, 2176, 2]
 // Exports: canUseAllAppIcons
 
-// Module 14608 (HexagonCampaignEntitlements)
-import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
+// Module 14739 (HexagonCampaignEntitlements)
+import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5168 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ProductCatalog = tmp(5071);
+const ProductCatalog = tmp(5198);
 const HexagonCampaignPerk = HexagonCampaignConstants.HexagonCampaignPerk;
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignEntitlements.tsx");
 

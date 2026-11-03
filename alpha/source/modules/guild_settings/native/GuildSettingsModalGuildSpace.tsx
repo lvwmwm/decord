@@ -1,21 +1,21 @@
-// Module ID: 20007
-// Function ID: 20008
+// Module ID: 20157
+// Function ID: 20158
 // Name: GuildSettingsModalGuildSpace
-// Dependencies: [19, 4946, 9075, 1072, 21, 5014, 575, 1396, 9074, 19663, 7369, 504, 8177, 6027, 7060, 1113, 2442, 5606, 2]
+// Dependencies: [19, 5073, 9203, 1072, 21, 5141, 575, 1398, 9202, 19813, 7489, 504, 8301, 6147, 7186, 1113, 2571, 5729, 2]
 // Exports: default
 
-// Module 20007 (GuildSettingsModalGuildSpace)
+// Module 20157 (GuildSettingsModalGuildSpace)
 import nativeDefault from "native" /* 575 */;
-import FlagUtils from "FlagUtils" /* 1396 */;
-import _modDef2442 from "module_2442" /* 2442 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import ServerHubAnalytics from "ServerHubAnalytics" /* 19663 */;
+import FlagUtils from "FlagUtils" /* 1398 */;
+import _modDef2571 from "module_2571" /* 2571 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import ServerHubAnalytics from "ServerHubAnalytics" /* 19813 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -89,25 +89,25 @@ export default function GuildSettingsModalGuildSpace(contentContainerStyle) {
     const obj3 = { children: items5 };
     const obj4 = { style: tmp.container, contentContainerStyle: items3, children: closure_8(Stack, obj5) };
     items3 = [tmp.content, contentContainerStyle];
-    const Form = tmp2(8177).Form;
+    const Form = tmp2(8301).Form;
     obj5 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: closure_9(TableRowGroup, obj6) };
-    Stack = tmp2(6027).Stack;
+    Stack = tmp2(6147).Stack;
     obj6 = { title: intl.string(stateFromStores(1113).t["0JLdD3"]), description: intl2.string(stateFromStores(1113).t.Xa1KEN), hasIcons: false, children: items4 };
-    TableRowGroup = tmp2(7060).TableRowGroup;
+    TableRowGroup = tmp2(7186).TableRowGroup;
     intl = tmp2(1113).intl;
     intl2 = tmp2(1113).intl;
-    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(19663).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl3.string(_modDef2442.btBTIw), subLabel: intl4.string(stateFromStores(1113).t.n3aRYQ), disabled: !stateFromStores1 };
+    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(19813).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl3.string(_modDef2571.btBTIw), subLabel: intl4.string(stateFromStores(1113).t.n3aRYQ), disabled: !stateFromStores1 };
     intl3 = tmp2(1113).intl;
     intl4 = tmp2(1113).intl;
     items4 = [closure_8(GuildSpaceSystemMessageSwitch, obj7), , ];
-    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(19663).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl5.string(stateFromStores(1113).t["9tlK5J"]), disabled: !stateFromStores1 };
+    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(19813).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl5.string(stateFromStores(1113).t["9tlK5J"]), disabled: !stateFromStores1 };
     intl5 = tmp2(1113).intl;
     items4[1] = closure_8(GuildSpaceSystemMessageSwitch, obj8);
-    const obj9 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS, settingType: stateFromStores(19663).ServerHubSettingType.MUSIC_SYSTEM_MESSAGES, label: intl6.string(_modDef2442["5xxUI2"]), subLabel: intl7.string(_modDef2442.FMGoDB), disabled: !stateFromStores1 };
+    const obj9 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS, settingType: stateFromStores(19813).ServerHubSettingType.MUSIC_SYSTEM_MESSAGES, label: intl6.string(_modDef2571["5xxUI2"]), subLabel: intl7.string(_modDef2571.FMGoDB), disabled: !stateFromStores1 };
     intl6 = tmp2(1113).intl;
     intl7 = tmp2(1113).intl;
     items4[2] = closure_8(GuildSpaceSystemMessageSwitch, obj9);
-    items5 = [closure_8(Form, obj4), closure_8(stateFromStores(5606).NavScrim, {})];
+    items5 = [closure_8(Form, obj4), closure_8(stateFromStores(5729).NavScrim, {})];
     tmp6 = closure_9(closure_10, obj3);
   }
   return tmp6;

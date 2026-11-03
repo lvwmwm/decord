@@ -1,15 +1,15 @@
-// Module ID: 14516
-// Function ID: 14517
+// Module ID: 14647
+// Function ID: 14648
 // Name: CircleQuestionIcon
-// Dependencies: [19, 17, 21, 575, 5716, 14517, 14518, 2]
+// Dependencies: [19, 17, 21, 575, 5836, 14648, 14649, 2]
 // Exports: CircleQuestionIcon
 
-// Module 14516 (CircleQuestionIcon)
+// Module 14647 (CircleQuestionIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 14517 */;
-import AssetRegistry2 from "AssetRegistry" /* 14518 */;
+import BaseIconImage3 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 14648 */;
+import AssetRegistry2 from "AssetRegistry" /* 14649 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

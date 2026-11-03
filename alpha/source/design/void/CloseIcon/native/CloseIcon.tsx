@@ -1,12 +1,12 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 16117
+// Function ID: 16118
 // Name: CloseIcon
-// Dependencies: [19, 21, 8031, 2]
+// Dependencies: [19, 21, 8155, 2]
 // Exports: default
 
-// Module 15974 (CloseIcon)
+// Module 16117 (CloseIcon)
 import Fragment from "Fragment" /* 21 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
+import inlineStyles from "inlineStyles" /* 8155 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

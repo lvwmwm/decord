@@ -1,24 +1,24 @@
-// Module ID: 20000
-// Function ID: 20001
+// Module ID: 20150
+// Function ID: 20151
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 5014, 575, 18176, 5624, 17226, 7148, 1625, 5272, 20001, 5275, 1113, 1187, 20002, 20003, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 18320, 5747, 17369, 1627, 5395, 20151, 5398, 1113, 1187, 20152, 20153, 2]
 // Exports: default
 
-// Module 20000 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 20150 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17226 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 18176 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20003 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17369 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 18320 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20153 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, _require;
+let _require;
 
 let closure_4;
 let hasOwnProperty;
@@ -102,54 +102,48 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   let items;
   let items1;
   let items2;
-  let items3;
-  let items4;
   let name;
-  let obj3;
-  let obj5;
+  let obj2;
+  let obj4;
   let role_color;
   template = template.template;
   ({ guildId, handleSelectTemplateInPreview } = template);
   const tmp = closure_6();
   _require = tmp;
-  let obj = require("useTypeConsolidationTextTransform");
-  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("TierTemplateFullCard", "text-xs/bold");
   const first = template.listings[0];
   ({ channels, additional_perks } = first);
   const bottom = useSafeAreaInsetsDefault().bottom;
   ({ image, name, role_color } = first);
-  let obj2 = { scrollable: true, startExpanded: true, children: closure_5(View, obj3) };
-  obj3 = { style: tmp.container, children: items };
-  let obj4 = { style: tmp.header, children: closure_4(require("GuildRoleSubscriptionTierTemplateBasicInfo").GuildRoleSubscriptionTierTemplateBasicInfo, obj5) };
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
-  obj5 = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
-  items = [closure_4(View, obj4), , ];
-  const obj6 = { style: tmp.separator };
-  items[1] = closure_4(View, obj6);
-  const obj7 = { scrollsToTop: false, contentContainerStyle: items1, children: items3 };
+  let obj = { scrollable: true, startExpanded: true, children: closure_5(View, obj2) };
+  obj2 = { style: tmp.container, children: items };
+  let obj3 = { style: tmp.header, children: closure_4(require("GuildRoleSubscriptionTierTemplateBasicInfo").GuildRoleSubscriptionTierTemplateBasicInfo, obj4) };
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  obj4 = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
+  items = [closure_4(View, obj3), , ];
+  let obj5 = { style: tmp.separator };
+  items[1] = closure_4(View, obj5);
+  const obj6 = { scrollsToTop: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp.content, ];
-  const obj8 = { paddingBottom: nativeDefault.space.PX_32 + nativeDefault.space.PX_16 + bottom };
+  const obj7 = { paddingBottom: nativeDefault.space.PX_32 + nativeDefault.space.PX_16 + bottom };
   const BottomSheetScrollView = require("BottomSheetModal").BottomSheetScrollView;
-  items1[1] = obj8;
-  const obj9 = { variant: "text-sm/bold", color: "text-default", style: items2, children: intl.string(require("intl").t.CjC5XZ) };
-  items2 = [{ textTransform: "uppercase" }, typeConsolidationEyebrow.style];
+  items1[1] = obj7;
+  const obj8 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(require("intl").t.CjC5XZ) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
-  items3 = [closure_4(Text, obj9), closure_4(require("native").Spacer, { size: 4 }), , , , , , , , , ];
-  const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
+  items2 = [closure_4(Text, obj8), closure_4(require("native").Spacer, { size: 4 }), , , , , , , , , ];
+  const obj9 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
-  items3[2] = closure_4(Text2, obj10);
-  items3[3] = closure_4(require("native").Spacer, { size: 24 });
-  const obj11 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: items4, children: intl3.string(require("intl").t.ZKyfEo) };
-  items4 = [{ textTransform: "uppercase" }, typeConsolidationEyebrow.style];
+  items2[2] = closure_4(Text2, obj9);
+  items2[3] = closure_4(require("native").Spacer, { size: 24 });
+  const obj10 = { variant: "body-sm/medium", color: "text-default", children: intl3.string(require("intl").t.ZKyfEo) };
   const Text3 = require("Text/Text").Text;
   intl3 = require("intl").intl;
-  items3[4] = closure_4(Text3, obj11);
-  items3[5] = closure_4(require("native").Spacer, { size: 8 });
-  items3[6] = closure_4(require("GuildRoleSubscriptionTierTemplateRolePreview").GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
-  items3[7] = closure_4(SectionSeparator, {});
-  const obj12 = {
+  items2[4] = closure_4(Text3, obj10);
+  items2[5] = closure_4(require("native").Spacer, { size: 8 });
+  items2[6] = closure_4(require("GuildRoleSubscriptionTierTemplateRolePreview").GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
+  items2[7] = closure_4(SectionSeparator, {});
+  const obj11 = {
     sectionTitle: intl4.string(require("intl").t.Ofvpfs),
     children: channels.map((children) => {
       let items;
@@ -165,9 +159,9 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
     })
   };
   intl4 = require("intl").intl;
-  items3[8] = closure_4(BenefitSection, obj12);
-  items3[9] = closure_4(SectionSeparator, {});
-  const obj13 = {
+  items2[8] = closure_4(BenefitSection, obj11);
+  items2[9] = closure_4(SectionSeparator, {});
+  const obj12 = {
     sectionTitle: intl5.string(require("intl").t.w7KA8R),
     children: additional_perks.map((children, index) => {
       const obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.name };
@@ -176,7 +170,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
     })
   };
   intl5 = require("intl").intl;
-  items3[10] = closure_4(BenefitSection, obj13);
-  items[2] = closure_5(BottomSheetScrollView, obj7);
-  return closure_4(BottomSheet, obj2);
+  items2[10] = closure_4(BenefitSection, obj12);
+  items[2] = closure_5(BottomSheetScrollView, obj6);
+  return closure_4(BottomSheet, obj);
 };

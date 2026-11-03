@@ -1,10 +1,10 @@
-// Module ID: 1890
-// Function ID: 1891
+// Module ID: 2019
+// Function ID: 2020
 // Name: react-native
 // Dependencies: [1349, 2]
 // Exports: readScreenSizeForAppEntry, readWindowSizeForAppEntry
 
-// Module 1890 (react-native)
+// Module 2019 (react-native)
 import react_nativeDefault from "react-native" /* 1349 */;
 import size from "module_2" /* 2 */;
 

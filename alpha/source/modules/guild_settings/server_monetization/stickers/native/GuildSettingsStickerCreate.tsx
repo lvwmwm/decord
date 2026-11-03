@@ -1,27 +1,27 @@
-// Module ID: 19748
-// Function ID: 19749
+// Module ID: 19898
+// Function ID: 19899
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 6796, 6837, 1072, 1386, 4842, 21, 5014, 575, 5607, 11405, 5612, 4960, 8220, 19749, 10267, 6560, 5624, 1113, 6451, 2061, 5634, 6027, 6980, 10282, 19750, 9939, 7300, 1409, 9452, 7082, 7253, 2]
+// Dependencies: [5, 32, 19, 17, 6916, 6957, 1072, 1388, 4969, 21, 5141, 575, 5730, 11543, 5735, 5087, 8344, 19899, 10397, 6680, 5747, 1113, 6571, 2190, 5754, 6147, 7106, 10412, 19900, 10070, 7420, 1411, 9580, 7208, 7373, 2]
 // Exports: default
 
-// Module 19748 (GuildSettingsStickerCreate)
+// Module 19898 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 575 */;
-import StickersConstants from "StickersConstants" /* 4842 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
-import reactDefault from "react" /* 5612 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9939 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11405 */;
+import StickersConstants from "StickersConstants" /* 4969 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
+import reactDefault from "react" /* 5735 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10070 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6796 */;
-import StickersStore_mod from "StickersStore" /* 6837 */;
+import EmojiStore from "EmojiStore" /* 6916 */;
+import StickersStore_mod from "StickersStore" /* 6957 */;
 import Constants from "Constants" /* 1072 */;
-import EmojiConstants from "EmojiConstants" /* 1386 */;
+import EmojiConstants from "EmojiConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4;
@@ -45,10 +45,10 @@ let size;
 let size1;
 let tmp14;
 let unpackModuleId;
-const AvatarUtilsDefault = tmp14(1409);
-const HelpdeskUtilsDefault = tmp14(2061);
-const EmojiDefault = tmp14(7300);
-const StickerDefault = tmp14(10282);
+const AvatarUtilsDefault = tmp14(1411);
+const HelpdeskUtilsDefault = tmp14(2190);
+const EmojiDefault = tmp14(7420);
+const StickerDefault = tmp14(10412);
 ({ Image: metroRequire, ScrollView: metroImportDefault } = react_native);
 let StickersStore = StickersStore_mod;
 ({ HelpdeskArticles: c10, UPLOAD_STICKER_SIZE: unpackModuleId } = Constants);
@@ -75,6 +75,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
   let UBj0aX;
   let _undefined;
   let _undefined2;
+  let _undefined3;
   let c12;
   let c13;
   let c6;
@@ -121,60 +122,52 @@ export default function GuildSettingsStickerCreate(stickerId) {
   let user;
   let closure_17;
   function hasUnsavedChanges(arg0) {
-    let tmp2;
+    let tmp3;
     let flag = arg0;
     if (arg0 === undefined) {
       flag = true;
     }
     if (null != user) {
-      let tmp12 = null != c6 && tmp11 !== tmp.name;
-      if (!tmp12) {
-        let tmp14 = null != c8 && tmp13 !== tmp.description;
-        if (!tmp14) {
-          tmp14 = !(null == first1 || tmp15 === closure_17);
-          const tmp16 = null == first1 || tmp15 === closure_17;
+      let tmp13 = !(!flag && null != _undefined && _undefined.length < 2);
+      const tmp10 = !flag && null != _undefined && _undefined.length < 2;
+      if (tmp13) {
+        let tmp15 = null != _undefined && tmp14 !== tmp.name;
+        if (!tmp15) {
+          let tmp17 = null != c8 && tmp16 !== tmp.description;
+          if (!tmp17) {
+            tmp17 = !(null == first1 || tmp18 === closure_17);
+            const tmp19 = null == first1 || tmp18 === closure_17;
+          }
+          tmp15 = tmp17;
         }
-        tmp12 = tmp14;
+        tmp13 = tmp15;
       }
-      tmp2 = tmp12;
+      tmp3 = tmp13;
     } else {
-      let tmp7 = null != c6;
+      let tmp2 = null != _undefined;
       if (flag) {
-        if (tmp7) {
+        if (tmp2) {
           let length;
-          if (c6 != null) {
+          if (_undefined != null) {
             length = arr.length;
           }
-          tmp7 = length > 0;
+          tmp2 = length > 0;
         }
-        if (!tmp7) {
-          tmp7 = null != first;
-        }
-        if (!tmp7) {
-          tmp7 = null != first1;
-        }
-        if (!tmp7) {
-          tmp7 = null != c8;
-        }
-        tmp2 = tmp7;
-      } else {
-        tmp2 = tmp7;
-        if (tmp2) {
-          let length1;
-          if (c6 != null) {
-            length1 = arr.length;
-          }
-          tmp2 = length1 > 0;
-        }
-        if (tmp2) {
+        if (!tmp2) {
           tmp2 = null != first;
         }
-        if (tmp2) {
+        if (!tmp2) {
           tmp2 = null != first1;
         }
+        if (!tmp2) {
+          tmp2 = null != c8;
+        }
+        tmp3 = tmp2;
+      } else {
+        tmp3 = tmp2 && arr.length >= 2 && null != first && null != first1;
       }
     }
-    return tmp2;
+    return tmp3;
   }
   let obj = function _handleImagePicker() {
     obj = _asyncToGenerator(async function(arg0, value) {
@@ -190,7 +183,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -245,7 +238,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
               if ("Cancelled" === errorStr) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 if (null != base64) {
                   if ("image/png" === mimeType) {
@@ -262,7 +255,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           closure_2 = tmp26;
@@ -294,7 +287,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -313,48 +306,52 @@ export default function GuildSettingsStickerCreate(stickerId) {
               closure_2 = tmp;
               c5 = 1;
               if (null == stickerId) {
-                if (null != closure_2_6) {
-                  if (null != first1) {
-                    if (null != uri) {
-                      const obj6 = { guildId, name: tmp23, tags: obj13.getStickerTagForEmoji(tmp43), description, uri: tmp44, mimeType: "image/png", platform: "mobile", originalMd5 };
-                      const createGuildSticker = description(closure_2[18]).createGuildSticker;
-                      const tmp47 = description(closure_2[18]);
-                      obj13 = description(closure_2[19]);
-                      description = closure_2_8;
-                      if (closure_2_8 == null) {
-                        description = "";
+                if (null != _undefined) {
+                  if (_undefined.length >= 2) {
+                    if (null != first1) {
+                      if (null != uri) {
+                        const obj6 = { guildId, name: _undefined, tags: obj13.getStickerTagForEmoji(tmp41), description, uri: tmp42, mimeType: "image/png", platform: "mobile", originalMd5 };
+                        const createGuildSticker = description(closure_2[18]).createGuildSticker;
+                        const tmp45 = description(closure_2[18]);
+                        obj13 = description(closure_2[19]);
+                        description = closure_2_8;
+                        if (closure_2_8 == null) {
+                          description = "";
+                        }
+                        c3 = 2;
+                        c6 = 1;
+                        const obj7 = { value: createGuildSticker(obj6), done: false };
+                        return obj7;
                       }
-                      c3 = 2;
-                      c6 = 1;
-                      const obj7 = { value: createGuildSticker(obj6), done: false };
-                      return obj7;
                     }
                   }
                 }
                 c5 = 0;
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
-                if (null != closure_2_6) {
-                  if (null != first1) {
-                    const obj8 = { name: tmp34, tags: obj11.getStickerTagForEmoji(tmp35), description: description2 };
-                    const updateGuildSticker = description(closure_2[18]).updateGuildSticker;
-                    const tmp38 = description(closure_2[18]);
-                    obj11 = description(closure_2[19]);
-                    description2 = closure_2_8;
-                    const tmp39 = guildId;
-                    if (closure_2_8 == null) {
-                      description2 = "";
+                if (null != _undefined) {
+                  if (_undefined.length >= 2) {
+                    if (null != first1) {
+                      const obj8 = { name: _undefined, tags: obj11.getStickerTagForEmoji(tmp33), description: description2 };
+                      const updateGuildSticker = description(closure_2[18]).updateGuildSticker;
+                      const tmp36 = description(closure_2[18]);
+                      obj11 = description(closure_2[19]);
+                      description2 = closure_2_8;
+                      const tmp37 = guildId;
+                      if (closure_2_8 == null) {
+                        description2 = "";
+                      }
+                      c3 = 3;
+                      c6 = 1;
+                      const obj9 = { value: updateGuildSticker(tmp37, tmp32, obj8), done: false };
+                      return obj9;
                     }
-                    c3 = 3;
-                    c6 = 1;
-                    const obj9 = { value: updateGuildSticker(tmp39, tmp33, obj8), done: false };
-                    return obj9;
                   }
                 }
                 c5 = 0;
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else {
@@ -393,13 +390,13 @@ export default function GuildSettingsStickerCreate(stickerId) {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp26) {
-          let closure_4 = tmp26;
+        } catch (tmp25) {
+          let closure_4 = tmp25;
           if (0 === c5) {
             c6 = 3;
-            throw tmp26;
+            throw tmp25;
           } else {
             c3 = 1;
           }
@@ -417,27 +414,28 @@ export default function GuildSettingsStickerCreate(stickerId) {
   [c6, tmp6] = ref2(ref3.useState(undefined), 2);
   let c7 = tmp6;
   const tmp5 = ref2(ref3.useState(undefined), 2);
-  let tmp7 = ref2(ref3.useState(undefined), 2);
+  const tmp7 = ref2(ref3.useState(undefined), 2);
   [c8, tmp8] = tmp7;
   StickersStore = tmp8;
   let tmp9 = ref2(ref3.useState(undefined), 2);
   const uri = tmp9[0];
   let closure_11 = tmp9[1];
+  [c12, c13] = ref2(ref3.useState(undefined), 2);
   const tmp11 = ref2(ref3.useState(undefined), 2);
-  [c12, c13] = tmp11;
-  let tmp12 = ref2(ref3.useState(undefined), 2);
+  const tmp12 = ref2(ref3.useState(undefined), 2);
   const first1 = tmp12[0];
   const onPressEmoji = tmp12[1];
-  let tmp14 = importDefault;
-  const tmp15 = dependencyMap;
+  const tmp14 = importDefault;
+  let tmp15 = dependencyMap;
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
   let obj2 = { insets, inputs: items, scrollViewRef: ref1 };
   let obj3 = { ref: ref2, offset: { type: "toRef", ref: ref3 } };
   items = [obj3, { ref: ref3, offset: { type: "toBottom" } }];
   const onFocus = useSafeAreaAvoidingInputsDefault(obj2).onFocus;
   let stickerById;
-  let tmp16 = reactDefault;
+  const tmp16 = reactDefault;
   if (null != stickerId) {
+    const tmp18 = StickersStore;
     stickerById = StickersStore.getStickerById(stickerId);
   }
   function handleImagePicker() {
@@ -487,8 +485,8 @@ export default function GuildSettingsStickerCreate(stickerId) {
     const tmp = null != stickerId && null != user;
     if (tmp) {
       onPressEmoji(closure_17);
-      _undefined(user.name);
-      _undefined2(user.description);
+      _undefined2(user.name);
+      _undefined3(user.description);
       const current = ref2.current;
       if (current != null) {
         current.setText(user.name);
@@ -504,7 +502,6 @@ export default function GuildSettingsStickerCreate(stickerId) {
       }
     }
   }, items1);
-  const tmp23 = closure_17;
   let obj4 = { ref: ref1, style: tmp.container, keyboardShouldPersistTaps: "always", contentContainerStyle: obj5, children: items3 };
   obj5 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 + insets.bottom };
   let tmp23Result = null;
@@ -512,19 +509,19 @@ export default function GuildSettingsStickerCreate(stickerId) {
   if (null == stickerId) {
     const tmp26 = user;
     let obj6 = { variant: "heading-md/semibold", style: tmp.title, children: intl.string(stickerId(1113).t["9N2OWD"]) };
-    const Text = stickerId(5624).Text;
+    const Text = stickerId(5747).Text;
     intl = stickerId(1113).intl;
     const items2 = [onPressEmoji(Text, obj6), , , ];
     let obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: format(hxLviw, obj8) };
-    const Text2 = stickerId(5624).Text;
+    const Text2 = stickerId(5747).Text;
     const intl2 = stickerId(1113).intl;
     format = intl2.format;
     obj8 = { fileSize: obj9.formatKbSize(first1, { useKibibytes: true }) };
     hxLviw = stickerId(1113).t.hxLviw;
-    obj9 = stickerId(6451);
+    obj9 = stickerId(6571);
     items2[1] = onPressEmoji(Text2, obj7);
     let obj10 = { variant: "text-sm/medium", color: "text-muted", style: tmp.help, children: format2(UBj0aX, obj11) };
-    const Text3 = stickerId(5624).Text;
+    const Text3 = stickerId(5747).Text;
     const intl3 = stickerId(1113).intl;
     format2 = intl3.format;
     obj11 = { articleUrl: tmp14Result.getArticleURL(uri.STICKERS_UPLOAD) };
@@ -532,7 +529,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     tmp14Result = HelpdeskUtilsDefault;
     items2[2] = onPressEmoji(Text3, obj10);
     let obj12 = { text: intl4.string(stickerId(1113).t.O1REe1), onPress: handleImagePicker, variant: str };
-    const Button = stickerId(5634).Button;
+    const Button = stickerId(5754).Button;
     intl4 = stickerId(1113).intl;
     str = "secondary";
     const tmp27 = onPressEmoji;
@@ -544,32 +541,32 @@ export default function GuildSettingsStickerCreate(stickerId) {
     tmp23Result = tmp23(tmp26, obj13);
   }
   items3 = [tmp23Result, ];
+  const tmp32 = onPressEmoji;
   const obj14 = { style: tmp.stack, children: items4 };
-  const Stack = stickerId(6027).Stack;
+  const Stack = stickerId(6147).Stack;
   const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl5.string(stickerId(1113).t.gjdiKE) };
-  const Text4 = stickerId(5624).Text;
+  const Text4 = stickerId(5747).Text;
   intl5 = stickerId(1113).intl;
   items4 = [onPressEmoji(Text4, obj15), , , , , , ];
   const obj16 = { style: tmp.stickerPreview, disabled: null != tmp16Result, onPress: handleImagePicker, accessibilityRole: "button", accessibilityLabel: intl6.string(stickerId(1113).t.O1REe1), children: tmp32Result };
-  const PressableHighlight = stickerId(6980).PressableHighlight;
+  const PressableHighlight = stickerId(7106).PressableHighlight;
   intl6 = stickerId(1113).intl;
   if (null != tmp16Result) {
     const obj17 = { sticker: tmp16Result, size: nativeDefault.space.PX_96, animated: true };
     const tmp14Result4 = StickerDefault;
     tmp32Result = tmp32(tmp14Result4, obj17);
   } else if (null != uri) {
-    const tmp34 = c6;
     const obj18 = { source: obj19, style: tmp.stickerPreviewImage, resizeMode: "contain" };
     obj19 = { uri };
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(19750).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(19900).StickerPlusIcon, { size: "lg" });
   }
-  items4[1] = onPressEmoji(PressableHighlight, obj16);
+  items4[1] = tmp32(PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1113).t["3BQmiC"]) };
-  const Text5 = tmp31(5624).Text;
+  const Text5 = tmp31(5747).Text;
   intl7 = tmp31(1113).intl;
-  items4[2] = onPressEmoji(Text5, obj20);
+  items4[2] = tmp32(Text5, obj20);
   const obj21 = {
     style: tmp.emojiPreview,
     onPress() {
@@ -579,7 +576,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     },
     children: items5
   };
-  const PressableHighlight2 = tmp31(6980).PressableHighlight;
+  const PressableHighlight2 = tmp31(7106).PressableHighlight;
   if (null != first1) {
     const obj22 = { fastImageStyle: { width: 24, height: 24 }, name: null == first1.id ? first1.surrogates : first1.name, src: emojiURL };
     emojiURL = undefined;
@@ -587,25 +584,25 @@ export default function GuildSettingsStickerCreate(stickerId) {
     if (null != first1.id) {
       const obj23 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = first1);
-      let tmp39 = size;
       const tmp14Result6 = AvatarUtilsDefault;
       emojiURL = tmp14Result6.getEmojiURL(obj23);
     }
     tmp32Result2 = tmp32(tmp14Result5, obj22);
   } else {
-    tmp32Result2 = tmp32(tmp31(9452).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result2 = tmp32(tmp31(9580).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   items5 = [tmp32Result2, ];
-  const Text6 = tmp31(5624).Text;
+  const Text6 = tmp31(5747).Text;
   if (null != first1) {
+    const tmp41 = globalThis;
     const _HermesInternal = HermesInternal;
     combined = ":" + first1.name + ":";
   } else {
     const intl8 = tmp31(1113).intl;
     combined = intl8.string(tmp31(1113).t.QTK0TJ);
   }
-  items5[1] = onPressEmoji(Text6, { variant: "text-md/semibold", color: "input-placeholder-text-default", children: combined });
-  items4[3] = tmp23(PressableHighlight2, obj21);
+  items5[1] = tmp32(Text6, { variant: "text-md/semibold", color: "input-placeholder-text-default", children: combined });
+  items4[3] = closure_17(PressableHighlight2, obj21);
   const obj24 = {
     ref: ref2,
     label: intl9.string(stickerId(1113).t["0VRh6n"]),
@@ -627,15 +624,15 @@ export default function GuildSettingsStickerCreate(stickerId) {
     returnKeyType: "next",
     submitBehavior: "submit"
   };
-  const TextInput = tmp31(7082).TextInput;
+  const TextInput = tmp31(7208).TextInput;
   intl9 = tmp31(1113).intl;
   intl10 = tmp31(1113).intl;
-  items4[4] = onPressEmoji(TextInput, obj24);
+  items4[4] = tmp32(TextInput, obj24);
   const obj26 = { ref: ref3, maxLength: 100, label: intl11.string(stickerId(1113).t.uGccej), placeholder: intl12.string(stickerId(1113).t.zwR0fa), onChange: tmp8, onFocus };
-  const TextArea = tmp31(7253).TextArea;
+  const TextArea = tmp31(7373).TextArea;
   intl11 = tmp31(1113).intl;
   intl12 = tmp31(1113).intl;
-  items4[5] = onPressEmoji(TextArea, obj26);
+  items4[5] = tmp32(TextArea, obj26);
   const obj27 = {
     onPress: function handleSave() {
       return obj(...arguments);
@@ -645,13 +642,13 @@ export default function GuildSettingsStickerCreate(stickerId) {
     disabled: !hasUnsavedChanges(false),
     loading: false
   };
-  const Button2 = tmp31(5634).Button;
+  const Button2 = tmp31(5754).Button;
   intl13 = tmp31(1113).intl;
   str3 = "secondary";
   if (hasUnsavedChanges(false)) {
     str3 = "primary";
   }
-  items4[6] = onPressEmoji(Button2, obj27);
-  items3[1] = tmp23(Stack, obj14);
-  return tmp23(tmp24, obj4);
+  items4[6] = tmp32(Button2, obj27);
+  items3[1] = closure_17(Stack, obj14);
+  return closure_17(tmp24, obj4);
 };

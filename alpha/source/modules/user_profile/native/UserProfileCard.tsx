@@ -1,18 +1,18 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7496
+// Function ID: 7497
 // Name: UserProfileCard
-// Dependencies: [19, 17, 7377, 21, 5014, 575, 6980, 5624, 7378, 2]
+// Dependencies: [19, 17, 7497, 21, 5141, 575, 7106, 5747, 7498, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 7376 (UserProfileCard)
+// Module 7496 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Pressables from "Pressables" /* 7106 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7377 */;
+import Constants from "Constants" /* 7497 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let CARD_ROWS_COLUMN_GAP;
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const ChevronSmallRightIcon = tmp3(7378);
+const ChevronSmallRightIcon = tmp3(7498);
 const View = react_native.View;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_4 } = Constants);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);

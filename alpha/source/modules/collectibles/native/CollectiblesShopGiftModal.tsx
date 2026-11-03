@@ -1,25 +1,25 @@
-// Module ID: 14428
-// Function ID: 14429
+// Module ID: 14559
+// Function ID: 14560
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7720, 1072, 1083, 21, 9909, 1375, 2059, 14429, 14427, 10689, 10676, 10693, 14430, 14433, 10610, 8768, 8755, 504, 7326, 7351, 2026, 7719, 10692, 1113, 2]
+// Dependencies: [19, 7844, 1072, 1083, 21, 10040, 1377, 2188, 14560, 14558, 10819, 10806, 10823, 14561, 14564, 10740, 8892, 8879, 504, 7446, 7471, 2155, 7843, 10822, 1113, 2]
 // Exports: default
 
-// Module 14428 (CollectiblesShopGiftModal)
+// Module 14559 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import StringUtils from "StringUtils" /* 2026 */;
-import BadgeId from "BadgeId" /* 8755 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
-import openGiftModal from "openGiftModal" /* 14427 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14430 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14433 */;
+import StringUtils from "StringUtils" /* 2155 */;
+import BadgeId from "BadgeId" /* 8879 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
+import openGiftModal from "openGiftModal" /* 14558 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14561 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14564 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7720 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7844 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7719);
+const CollectiblesActionCreators = tmp(7843);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;

@@ -1,20 +1,20 @@
-// Module ID: 14830
-// Function ID: 14831
+// Module ID: 14961
+// Function ID: 14962
 // Name: BotReportChooser
-// Dependencies: [19, 2038, 21, 7366, 5624, 1113, 7368, 5258, 8352, 504, 6881, 2]
+// Dependencies: [19, 2167, 21, 7486, 5747, 1113, 7488, 5381, 8476, 504, 7001, 2]
 // Exports: default
 
-// Module 14830 (BotReportChooser)
+// Module 14961 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
-import ActionSheet2 from "ActionSheet" /* 7366 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7368 */;
-import ReportModals from "ReportModals" /* 8352 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7001 */;
+import ActionSheet2 from "ActionSheet" /* 7486 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7488 */;
+import ReportModals from "ReportModals" /* 8476 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ApplicationStore from "ApplicationStore" /* 2167 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ export default function BotReportChooser(arg0) {
   let obj3;
   const obj = { header: React3(Text, obj2), children: hasOwnProperty(Group, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { style: { textAlign: "center" }, variant: "redesign/heading-18/bold", children: intl.string(intl3.t.Bd10bR) };
+  obj2 = { style: { textAlign: "center" }, variant: "redesign/heading-18/semibold", children: intl.string(intl3.t.Bd10bR) };
   Text = Text_Text.Text;
   intl = intl3.intl;
   obj3 = { hasIcons: false, children: items };

@@ -1,19 +1,19 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14844
+// Function ID: 14845
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 14714, 575, 9509, 5014, 14715, 1113, 8992, 5189, 5624, 2]
+// Dependencies: [19, 17, 21, 14845, 575, 9637, 5141, 14846, 1113, 9120, 5312, 5747, 2]
 
-// Module 14713 (YouScreenNavIcon)
+// Module 14844 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import mergeProps from "mergeProps" /* 5189 */;
-import ClipView from "ClipView" /* 9509 */;
-import getIconSize from "getIconSize" /* 14714 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14715 */;
+import mergeProps from "mergeProps" /* 5312 */;
+import ClipView from "ClipView" /* 9637 */;
+import getIconSize from "getIconSize" /* 14845 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 14846 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -84,11 +84,11 @@ const memoResult = react.memo(function YouScreenNavIcon(arg0) {
     tmp13 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp13, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items2 };
-  const PressableScale = tmp(8992).PressableScale;
+  const PressableScale = tmp(9120).PressableScale;
   items2 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color: "text-default", maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5624).Text;
+  const Text = tmp(5747).Text;
   const tmp14 = hasOwnProperty;
   const tmp15 = React3;
   if (label == null) {

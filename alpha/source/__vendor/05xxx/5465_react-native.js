@@ -6,7 +6,14 @@
 // Module 5465 (react-native)
 import react_native from "react-native" /* 17 */;
 
-const StyleSheet = react_native.StyleSheet;
-const obj = { container: StyleSheet.absoluteFillObject, background: { backgroundColor: "white", borderRadius: 15 } };
+const NativeModules = react_native.NativeModules;
+let PlatformConstants;
+const Platform = react_native.Platform;
+if (NativeModules != null) {
+  PlatformConstants = NativeModules.PlatformConstants;
+}
+if (PlatformConstants == null) {
+  PlatformConstants = Platform.constants;
+}
 
-export const styles = StyleSheet.create(obj);
+export default PlatformConstants;

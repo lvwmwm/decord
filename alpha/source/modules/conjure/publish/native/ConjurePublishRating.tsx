@@ -1,24 +1,24 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 12909
+// Function ID: 12910
 // Name: ConjurePublishRating
-// Dependencies: [32, 19, 17, 5015, 21, 5014, 575, 5095, 5254, 5637, 5638, 10063, 10061, 6980, 12774, 504, 12248, 5624, 5258, 12775, 1994, 12775, 1113, 3868, 2]
+// Dependencies: [32, 19, 17, 5142, 21, 5141, 575, 1652, 5377, 5757, 5758, 10193, 10191, 7106, 12910, 504, 12384, 5747, 5381, 12911, 2123, 12911, 1113, 3995, 2]
 // Exports: default
 
-// Module 12773 (ConjurePublishRating)
+// Module 12909 (ConjurePublishRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12775 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import springPresets from "springPresets" /* 5758 */;
+import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12911 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -36,6 +36,8 @@ function Star(rating) {
   let picked;
   let reducedMotion;
   let tmp3Result;
+  let tmp7;
+  let tmp8;
   rating = rating.rating;
   ({ picked, reducedMotion } = rating);
   dependencyMap = undefined;
@@ -47,46 +49,52 @@ function Star(rating) {
     tmp2 = rating <= picked;
   }
   dependencyMap = tmp2;
-  let obj = rating(5095);
+  let obj = rating(1652);
   sharedValue = obj.useSharedValue(1);
   let items = [tmp2, rating, reducedMotion, sharedValue];
   const effect = react.useEffect(() => {
     const tmp = closure_2 && !reducedMotion;
     if (tmp) {
       set = sharedValue.set;
-      const withDelay = ReanimatedRexport.withDelay;
+      const withDelay = _mod1652.withDelay;
       const result = 30 * rating;
-      ReanimatedRexport;
-      const withSequence = ReanimatedRexport.withSequence;
-      ReanimatedRexport;
-      const obj = timing;
+      _mod1652;
+      const withSequence = _mod1652.withSequence;
+      _mod1652;
+      const obj = timing_timing;
       const withTimingResult = obj.withTiming(1.35, { duration: 140 });
-      const obj2 = spring;
+      const obj2 = spring_spring;
       const result1 = set(withDelay(result, withSequence(withTimingResult, obj2.withSpring(1, springPresets.springUnclampedBounce))));
     }
   }, items);
-  let obj2 = rating(5095);
-  const fn = function x() {
-    let items;
-    const obj = { transform: items };
-    items = [{ scale: sharedValue.get() }];
-    ({ scale: sharedValue.get() });
-    return obj;
-  };
-  fn.__closure = { scale: sharedValue };
-  fn.__workletHash = 8453054615454;
-  fn.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
+  let obj2 = rating(1652);
+  const items1 = [closure_10, sharedValue];
+  let c0;
+  [tmp7, tmp8] = items1;
+  class ConjurePublishRatingTsx1 {
+    constructor() {
+      let items;
+      const obj = { transform: items };
+      items = [{ scale: _undefined.get() }];
+      ({ scale: _undefined.get() });
+      return obj;
+    }
+  }
+  const items2 = [tmp8];
+  ConjurePublishRatingTsx1.__closure = items2;
+  ConjurePublishRatingTsx1.__workletHash = 4902118440263;
+  ConjurePublishRatingTsx1.__initData = tmp7;
+  const animatedStyle = obj2.useAnimatedStyle(ConjurePublishRatingTsx1);
   if (tmp2) {
-    StarOutlineIcon = tmp3(10063).StarIcon;
+    StarOutlineIcon = tmp3(10193).StarIcon;
   } else {
-    StarOutlineIcon = tmp3(10061).StarOutlineIcon;
+    StarOutlineIcon = tmp3(10191).StarOutlineIcon;
   }
   const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(575).space.PX_8, onPress, children: closure_7(View, obj4) };
-  const PressableOpacity = tmp3(6980).PressableOpacity;
-  tmp3Result = rating(12774);
+  const PressableOpacity = tmp3(7106).PressableOpacity;
+  tmp3Result = rating(12910);
   obj4 = { style: animatedStyle, children: closure_7(StarOutlineIcon, obj5) };
-  View = reducedMotion(5095).View;
+  View = reducedMotion(1652).View;
   const colors = reducedMotion(575).colors;
   obj5 = { size: "sm", color: tmp2 ? colors.ICON_BRAND : colors.ICON_MUTED };
   return closure_7(PressableOpacity, obj3);
@@ -101,7 +109,7 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_4 };
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_9 = createStyles(obj);
-const __initData = { code: "function ConjurePublishRatingTsx1(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
+let closure_10 = { code: "(function ConjurePublishRatingTsx1(){let[scale]=this.__closure;return{transform:[{scale:scale.get()}]};})" };
 let result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishRating.tsx");
 
 export default function ConjurePublishRating(arg0) {
@@ -182,7 +190,7 @@ export default function ConjurePublishRating(arg0) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { rating: tmp2 };
-            const tmp7 = asyncRequire(12775, dependencyMap.paths);
+            const tmp7 = asyncRequire(12911, dependencyMap.paths);
             openLazy(tmp7, ConjureRatingFeedbackSheet.CONJURE_RATING_FEEDBACK_SHEET_KEY, obj);
           }
         }

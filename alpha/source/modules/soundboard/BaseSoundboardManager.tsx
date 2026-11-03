@@ -1,13 +1,13 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16543
+// Function ID: 16544
 // Name: BaseSoundboardManager
-// Dependencies: [502, 2006, 1996, 572, 2]
+// Dependencies: [502, 2135, 2125, 572, 2]
 
-// Module 16400 (BaseSoundboardManager)
+// Module 16543 (BaseSoundboardManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import LifecycleManager from "LifecycleManager" /* 1996 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
+import LifecycleManager from "LifecycleManager" /* 2125 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

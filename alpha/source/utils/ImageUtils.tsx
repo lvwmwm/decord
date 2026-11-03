@@ -1,13 +1,13 @@
-// Module ID: 1488
-// Function ID: 1489
+// Module ID: 1490
+// Function ID: 1491
 // Name: ImageUtils
-// Dependencies: [5, 1489, 1490, 12, 38, 2]
+// Dependencies: [5, 1491, 1492, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1488 (ImageUtils)
+// Module 1490 (ImageUtils)
 import _modDef38 from "module_38" /* 38 */;
-import quantizeDefault from "quantize" /* 1489 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1490 */;
+import quantizeDefault from "quantize" /* 1491 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1492 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ let obj = function _dataUrlToFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -274,17 +274,17 @@ export function zoomFit(width, height) {
   bound = Math.min(minResult, c5);
   return fit(size);
 }
-export function zoomScale(arg0, arg1, arg2, arg3) {
+export function zoomScale(GestureDetector, arg1, arg2, arg3) {
   let num = 0;
   const _Math = Math;
-  if (null != arg0) {
+  if (null != GestureDetector) {
     num = 0;
-    if (0 !== arg0) {
+    if (0 !== GestureDetector) {
       num = 0;
       if (null != arg1) {
         num = 0;
         if (0 !== arg1) {
-          num = arg0 / arg2;
+          num = GestureDetector / arg2;
         }
       }
     }

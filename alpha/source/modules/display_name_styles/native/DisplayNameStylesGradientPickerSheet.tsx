@@ -1,24 +1,22 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 17489
+// Function ID: 17490
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 17337, 1072, 21, 5014, 575, 1402, 10775, 1400, 17338, 5260, 1252, 5258, 16449, 5272, 17333, 5634, 1113, 5587, 1090, 17347, 12, 6980, 2]
+// Dependencies: [32, 19, 17, 17480, 1072, 21, 5141, 575, 1404, 10905, 1402, 17481, 5383, 1252, 5381, 16593, 5395, 17476, 5754, 1113, 5710, 1090, 17490, 12, 7106, 2]
 // Exports: default
 
-// Module 17346 (DisplayNameStylesGradientPickerSheet)
+// Module 17489 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17337 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import HapticUtils from "HapticUtils" /* 5383 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17480 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let c10;
 let hasOwnProperty;
@@ -144,7 +142,7 @@ export default function DisplayNameStylesGradientPickerSheet(onSelectColors) {
     closure_6(items);
   }, []);
   let obj3 = { backgroundStyles: tmp.sheetBackground, header: closure_10(tmp7, obj4), children: closure_11(colors, obj6) };
-  BottomSheet = require("Sheet/BottomSheet").BottomSheet;
+  const BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   obj4 = { title: displayNameStylesEffectConfig.name, trailing: closure_10(Button, obj5) };
   obj5 = { variant: "primary", size: "sm", text: intl.string(require("intl").t.XqMe3N), onPress: callback };
   tmp7 = selectedEffectId(onSelectColors[17]);

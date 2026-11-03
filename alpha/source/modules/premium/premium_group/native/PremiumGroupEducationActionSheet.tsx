@@ -1,23 +1,21 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 15544
+// Function ID: 15545
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2060, 21, 5014, 575, 5272, 7086, 5624, 1113, 3288, 2]
+// Dependencies: [17, 2189, 21, 5141, 575, 5395, 7212, 5747, 1113, 3415, 2]
 // Exports: default
 
-// Module 15403 (PremiumGroupEducationActionSheet)
+// Module 15544 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2060 */;
-import _modDef3288 from "module_3288" /* 3288 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2189 */;
+import _modDef3415 from "module_3415" /* 3415 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7212 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -41,14 +39,14 @@ export default function PremiumGroupEducationActionSheet(aboutText) {
   const obj = { children: metroRequire(View, obj2) };
   obj2 = { style: tmp.container, children: items1 };
   const obj3 = { style: tmp.aboutContainer, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   items = [, ];
   const obj4 = { size: "lg", style: tmp.warningIcon };
   items[0] = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, obj4);
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3288.ah1Ecm, obj7) };
+  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3415.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

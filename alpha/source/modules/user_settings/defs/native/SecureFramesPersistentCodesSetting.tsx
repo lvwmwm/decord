@@ -1,15 +1,15 @@
-// Module ID: 17891
-// Function ID: 17892
+// Module ID: 18034
+// Function ID: 18035
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [5782, 8432, 504, 17892, 11540, 1113, 2]
+// Dependencies: [5902, 8556, 504, 18035, 11677, 1113, 2]
 
-// Module 17891 (SecureFramesPersistentCodesSetting)
+// Module 18034 (SecureFramesPersistentCodesSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 17892 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5782 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 18035 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5902 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

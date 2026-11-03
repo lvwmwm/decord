@@ -1,24 +1,24 @@
-// Module ID: 18806
-// Function ID: 18807
+// Module ID: 18964
+// Function ID: 18965
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4863, 4956, 1383, 18807, 13900, 9827, 1072, 21, 504, 18711, 13886, 13911, 13907, 5068, 5652, 13893, 18808, 13892, 13894, 18770, 18703, 1113, 18715, 2]
+// Dependencies: [32, 19, 4990, 5083, 1385, 18965, 14031, 9958, 1072, 21, 504, 18869, 14017, 14042, 14038, 5195, 5772, 14024, 18966, 14023, 14025, 18928, 18861, 1113, 18873, 2]
 
-// Module 18806 (AutocompleteScreen)
+// Module 18964 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13886 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18808 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import useChannelName from "useChannelName" /* 5772 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18966 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18807 */;
-import SearchQueryStore from "SearchQueryStore" /* 13900 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18965 */;
+import SearchQueryStore from "SearchQueryStore" /* 14031 */;
+import SearchConstants from "SearchConstants" /* 9958 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -213,7 +213,6 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
       set1 = new Set(obj3.getSearchQueryChannelIds(items));
       ({ autocompletes, tokens, mode } = set);
       let item = autocompletes.forEach((item) => {
-        let results;
         if (mode.type === constants2.FILTER) {
           ({ results, group: items } = item);
           if (0 !== results.length) {

@@ -1,16 +1,16 @@
-// Module ID: 18950
-// Function ID: 18951
+// Module ID: 19108
+// Function ID: 19109
 // Name: PinsScreen
-// Dependencies: [19, 17, 4863, 9827, 21, 5014, 575, 1500, 504, 13847, 18798, 2]
+// Dependencies: [19, 17, 4990, 9958, 21, 5141, 575, 1502, 504, 13978, 18956, 2]
 
-// Module 18950 (PinsScreen)
+// Module 19108 (PinsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SearchConstants from "SearchConstants" /* 9827 */;
+import SearchConstants from "SearchConstants" /* 9958 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import createStyles from "createStyles" /* 5014 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -22,7 +22,7 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_7 = createStyles.createStyles(obj);
 const memoResult = react.memo(function PinsScreen() {
   let channelId;
-  const obj = channelId(1500);
+  const obj = channelId(1502);
   channelId = obj.useRoute().params.channelId;
   const items = [ChannelStore];
   const obj2 = channelId(504);
@@ -34,7 +34,7 @@ const memoResult = react.memo(function PinsScreen() {
     }
     return guild_id;
   });
-  const obj3 = channelId(13847);
+  const obj3 = channelId(13978);
   const channelDetailsSearchContext = obj3.useChannelDetailsSearchContext(channelId, stateFromStores);
   return <View style={closure_7().container}>{null}</View>;
 });

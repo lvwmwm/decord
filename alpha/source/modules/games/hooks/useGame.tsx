@@ -1,16 +1,16 @@
-// Module ID: 7480
-// Function ID: 7481
+// Module ID: 7604
+// Function ID: 7605
 // Name: useGame
-// Dependencies: [5, 19, 2014, 1072, 504, 1089, 7481, 2]
+// Dependencies: [5, 19, 2143, 1072, 504, 1089, 7605, 2]
 // Exports: useGames
 
-// Module 7480 (useGame)
+// Module 7604 (useGame)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import GameActionCreators from "GameActionCreators" /* 7481 */;
+import GameActionCreators from "GameActionCreators" /* 7605 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2014 */;
+import GameStore from "GameStore" /* 2143 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -21,15 +21,15 @@ const QueryIds = Constants.QueryIds;
 let obj = {
   getQueryId: QueryIds.GAME,
   failureStaleAfter: 15 * DurationsDefault.Seconds.SECOND,
-  get(item) {
+  get(nextResult) {
     let tmp = null;
-    if (null != item) {
+    if (null != nextResult) {
       let NO_DATA;
       const obj = GameStore;
-      if (GameStore.hasNoData(item)) {
+      if (GameStore.hasNoData(nextResult)) {
         NO_DATA = require("get initialized").NO_DATA;
       } else {
-        NO_DATA = obj.getGame(item);
+        NO_DATA = obj.getGame(nextResult);
         if (NO_DATA == null) {
           NO_DATA = null;
         }
@@ -45,11 +45,11 @@ let obj = {
     const isFetchingResult = null != arg0 && GameStore.isFetching(arg0);
     return isFetchingResult;
   },
-  getError(item) {
+  getError(nextResult) {
     let error = null;
-    if (null != item) {
+    if (null != nextResult) {
       error = null;
-      if (GameStore.didFetchingFail(item)) {
+      if (GameStore.didFetchingFail(nextResult)) {
         const _Error = Error;
         const self = this;
         const self2 = this;
@@ -73,7 +73,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: null };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

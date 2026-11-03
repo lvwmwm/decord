@@ -1,9 +1,9 @@
-// Module ID: 4841
-// Function ID: 4842
+// Module ID: 4968
+// Function ID: 4969
 // Name: DMSafetyConstants
 // Dependencies: [1196, 2]
 
-// Module 4841 (DMSafetyConstants)
+// Module 4968 (DMSafetyConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;
 

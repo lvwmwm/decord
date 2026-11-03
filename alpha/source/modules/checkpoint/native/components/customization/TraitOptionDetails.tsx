@@ -1,18 +1,18 @@
-// Module ID: 13699
-// Function ID: 13700
+// Module ID: 13825
+// Function ID: 13826
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5014, 575, 6113, 1113, 3092, 5624, 9905, 7351, 6434, 13700, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6233, 1113, 3219, 5747, 10036, 7471, 6554, 13826, 2]
 // Exports: default
 
-// Module 13699 (TraitOptionDetails)
+// Module 13825 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3092 from "module_3092" /* 3092 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import RarityBadgeDefault from "RarityBadge" /* 13700 */;
+import _modDef3219 from "module_3219" /* 3219 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import RarityBadgeDefault from "RarityBadge" /* 13826 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ function AssetDescription(asset) {
               return React3(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl.format(_modDef3092["3Wq/bk"], obj);
+      formatResult = intl.format(_modDef3219["3Wq/bk"], obj);
     } else {
       const tmp2Result = require("CheckpointCustomizationUtils");
       formatResult = tmp2Result.getAssetDescription(asset);
@@ -67,31 +67,38 @@ const View = react_native.View;
 let obj = { titleRow: obj2, title: { textTransform: "capitalize" }, subscribeLink: { textDecorationLine: "underline" } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj);
+let obj3 = { VISIBLE: 0, [0]: "VISIBLE", INVISIBLE: 1, [1]: "INVISIBLE", GONE: 2, [2]: "GONE" };
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitOptionDetails.tsx");
 
 export default function TraitOptionDetails(arg0) {
   let asset;
-  let hideDescriptionAndRarity;
+  let descriptionVisibility;
   let items;
-  let items1;
-  ({ asset, hideDescriptionAndRarity } = arg0);
+  ({ asset, descriptionVisibility } = arg0);
   const tmp = closure_7();
   const obj = { style: tmp.titleRow, children: items };
   const obj2 = { variant: "text-lg/medium", color: "text-default", style: tmp.title, children: asset.getName() };
   const Text = Text_Text.Text;
   items = [React3(Text, obj2), ];
-  let tmp5Result = !hideDescriptionAndRarity;
-  const tmp3 = metroRequire;
-  const tmp4 = View;
-  if (tmp5Result) {
-    tmp5Result = null != asset.rarity;
+  let tmp7Result = tmp3;
+  const tmp2 = obj3;
+  const tmp5 = metroRequire;
+  const tmp6 = View;
+  if (tmp7Result) {
+    tmp7Result = null != asset.rarity;
   }
-  if (tmp5Result) {
-    const obj3 = { rarity: asset.rarity };
-    tmp5Result = tmp5(RarityBadgeDefault, obj3);
+  if (tmp7Result) {
+    obj3 = { rarity: asset.rarity };
+    tmp7Result = tmp7(RarityBadgeDefault, obj3);
   }
-  const obj4 = { children: items1 };
-  items[1] = tmp5Result;
-  items1 = [hasOwnProperty(tmp4, obj), React3(AssetDescription, { asset, hidden: hideDescriptionAndRarity })];
-  return hasOwnProperty(tmp3, obj4);
+  items[1] = tmp7Result;
+  const children = [hasOwnProperty(tmp6, obj), ];
+  let tmp7Result2 = descriptionVisibility !== tmp2.GONE;
+  if (tmp7Result2) {
+    const obj4 = { asset, hidden: descriptionVisibility !== obj3.VISIBLE };
+    tmp7Result2 = tmp7(AssetDescription, obj4);
+  }
+  children[1] = tmp7Result2;
+  return hasOwnProperty(tmp5, { children });
 };
+export const DescriptionVisibility = obj3;

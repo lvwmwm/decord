@@ -1,13 +1,13 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10979
+// Function ID: 10980
 // Name: ConjureRemix
-// Dependencies: [5, 10850, 6845, 572, 1113, 3868, 10880, 10963, 10315, 10875, 2]
+// Dependencies: [5, 10980, 6965, 572, 1113, 3995, 11010, 11096, 10445, 11005, 2]
 // Exports: copyProjectName, createConjureRemix, isValidCopyName
 
-// Module 10849 (ConjureRemix)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+// Module 10979 (ConjureRemix)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10850 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10980 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,8 @@ export function createConjureRemix(project, arg1) {
       let tmp3;
       let v2;
       function startRemix(id, guild_id, name, arg3) {
-        const f140372 = () => "rejected";
+        let str;
+        const f141772 = () => "rejected";
         closure_0 = guild_id;
         closure_1 = arg3;
         function accept(comma) {
@@ -53,7 +54,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             obj = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj.acceptRemix(closure_3, comma);
-            closure_5 = acceptRemixResult.catch(f140372);
+            closure_5 = acceptRemixResult.catch(f141772);
           }
           return closure_5;
         }
@@ -70,7 +71,7 @@ export function createConjureRemix(project, arg1) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -197,12 +198,17 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             const tmp2Result = tmp2(tmp3[7]);
             const acceptRemixResult = tmp2Result.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f140372);
+            closure_5 = acceptRemixResult.catch(f141772);
           }
         });
-        let obj3 = closure_0(closure_2[9]);
-        let obj4 = { name, guild_id, install_scope: id.install_scope, remix_source_project_id: id.id, nonce };
-        const remix = obj3.createRemix(obj4);
+        let obj3 = { name, guild_id, install_scope: str, remix_source_project_id: id.id, nonce };
+        str = id.install_scope;
+        const createRemix = closure_0(closure_2[9]).createRemix;
+        const tmp4 = closure_0(closure_2[9]);
+        if (str == null) {
+          str = "guild";
+        }
+        const remix = createRemix(obj3);
         const promise = remix.then((remix_preview) => {
           map.delete(nonce);
           if (null != remix_preview.remix_preview) {
@@ -222,7 +228,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             const obj2 = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj2.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f140372);
+            closure_5 = acceptRemixResult.catch(f141772);
           }
           return remix_preview;
         }, () => {
@@ -232,7 +238,7 @@ export function createConjureRemix(project, arg1) {
           }
           return null;
         });
-        let obj5 = {
+        let obj4 = {
           guildId: guild_id,
           name,
           open() {
@@ -253,13 +259,13 @@ export function createConjureRemix(project, arg1) {
             }
           }
         };
-        return obj5;
+        return obj4;
       }
       let closure_0 = arg0;
       closure_1 = value;
       if (c7 === 2) {
         c7 = 3;
-        const str = "Generator functions may not be called on executing generators";
+        let str = "Generator functions may not be called on executing generators";
         throw new TypeError("Generator functions may not be called on executing generators");
       } else {
         const flag = true;
@@ -271,14 +277,14 @@ export function createConjureRemix(project, arg1) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c5;
           try {
             let closure_3;
             c7 = 2;
-            const tmp4 = c6;
+            let tmp4 = c6;
             if (0 === c6) {
               if (arg0 === 1) {
                 c7 = 3;

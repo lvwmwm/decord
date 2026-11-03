@@ -1,19 +1,19 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 15336
+// Function ID: 15337
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4946, 1072, 21, 5014, 11909, 504, 1113, 1888, 6706, 5634, 2]
+// Dependencies: [19, 17, 5073, 1072, 21, 5141, 12046, 504, 1113, 2017, 6826, 5754, 2]
 // Exports: default
 
-// Module 15195 (JoinVoiceChannelButton)
+// Module 15336 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11909 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12046 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import createStyles from "createStyles" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

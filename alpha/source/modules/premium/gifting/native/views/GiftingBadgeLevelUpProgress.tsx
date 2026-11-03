@@ -1,19 +1,19 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14582
+// Function ID: 14583
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8763, 21, 5014, 575, 10616, 10619, 5624, 1113, 2634, 2]
+// Dependencies: [19, 17, 8887, 21, 5141, 575, 10746, 10749, 5747, 1113, 2763, 2]
 // Exports: default
 
-// Module 14451 (GiftingBadgeLevelUpProgress)
+// Module 14582 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2634 from "module_2634" /* 2634 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10616 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10619 */;
+import _modDef2763 from "module_2763" /* 2763 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10746 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10749 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -84,8 +84,8 @@ export default function GiftingBadgeLevelUpProgress(style) {
   items1[2] = tmp14Result;
   items3 = [metroRequire(View, obj2), ];
   const obj8 = { style: tmp.labels, children: hasOwnProperty(Text, obj9) };
-  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2634.iIpfQe, { count: progress, threshold: tmp7 }) };
-  Text = tmp2(5624).Text;
+  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2763.iIpfQe, { count: progress, threshold: tmp7 }) };
+  Text = tmp2(5747).Text;
   intl = tmp2(1113).intl;
   items3[1] = hasOwnProperty(View, obj8);
   return metroRequire(View, obj);

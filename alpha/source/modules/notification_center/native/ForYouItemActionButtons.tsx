@@ -1,41 +1,46 @@
-// Module ID: 18495
-// Function ID: 18496
+// Module ID: 18649
+// Function ID: 18650
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 4863, 1383, 1072, 21, 5014, 1108, 5095, 5254, 6027, 5634, 1113, 5624, 563, 8433, 18101, 5745, 15674, 10740, 6859, 7485, 7488, 5712, 10201, 1252, 2]
+// Dependencies: [5, 19, 17, 4990, 1385, 1072, 21, 5141, 1108, 1652, 5377, 6147, 5754, 1113, 5747, 563, 8557, 18245, 5865, 15816, 10870, 6979, 7609, 7612, 5832, 10331, 1252, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 18495 (ForYouItemActionButtons)
+// Module 18649 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
-import intl23 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import parseURLDefault from "parseURL" /* 5745 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6859 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10740 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15674 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18101 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import parseURLDefault from "parseURL" /* 5865 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6979 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10870 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15816 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18245 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, dependencyMap;
+const _modDef1652 = _mod1652;
+let _require, dependencyMap;
 
 let c10;
 let c9;
 let closure_12;
 let map1;
 let metroImportAll;
+let tmp2;
 let unpackModuleId;
+const intl23 = tmp2(1113);
+const Text_Text = tmp2(5747);
+const components_Button_Button = tmp2(5754);
+const Stack_Stack = tmp2(6147);
 function focusChatInput(channelId) {
   let tmp;
   if (null != channelId) {
@@ -49,233 +54,292 @@ function focusChatInput(channelId) {
   }, 0);
 }
 class IncomingFriendRequestActions {
-  constructor(pressed) {
+  constructor(arg0) {
     let Button;
     let Button3;
     let Stack;
     let View3;
     let View4;
+    let compactMode;
     let intl;
     let intl2;
     let intl3;
-    let items;
-    let obj15;
-    let obj17;
-    let obj19;
-    let obj20;
-    let obj21;
+    let items10;
+    let obj11;
+    let obj12;
+    let obj13;
+    let obj7;
+    let obj9;
     let onAccept;
     let onIgnore;
     let onWavePress;
+    let pressed;
     let str2;
     let str3;
-    pressed = pressed.pressed;
-    const compactMode = pressed.compactMode;
-    let sharedValue1;
-    ({ onAccept, onIgnore, onWavePress } = pressed);
-    const tmp3 = sharedValue1;
-    const tmp = closure_14();
-    let obj = pressed(sharedValue1[9]);
+    let tmp10;
+    let tmp11;
+    let tmp14;
+    let tmp15;
+    let tmp16;
+    let tmp17;
+    let tmp18;
+    let tmp20;
+    let tmp21;
+    let tmp22;
+    let tmp25;
+    let tmp26;
+    let tmp27;
+    let tmp28;
+    let tmp29;
+    let tmp30;
+    let tmp31;
+    let tmp32;
+    let tmp34;
+    let tmp35;
+    let tmp9;
+    ({ pressed, compactMode } = arg0);
+    ({ onAccept, onIgnore, onWavePress } = arg0);
+    let tmp2 = require;
+    let tmp3 = dependencyMap;
+    let tmp = closure_14();
+    let obj = _mod1652;
     const sharedValue = obj.useSharedValue(0);
-    let obj2 = pressed(sharedValue1[9]);
-    sharedValue1 = obj2.useSharedValue(-1);
-    let obj3 = pressed(sharedValue1[9]);
+    let obj2 = _mod1652;
+    const sharedValue1 = obj2.useSharedValue(-1);
+    let obj3 = _mod1652;
     const sharedValue2 = obj3.useSharedValue(-1);
-    let obj4 = pressed(sharedValue1[9]);
+    const obj4 = _mod1652;
     const sharedValue3 = obj4.useSharedValue(-1);
-    let obj5 = pressed(sharedValue1[9]);
-    const fn = function u() {
-      let str;
-      const withTiming = timing.withTiming;
-      let num = 1;
-      timing;
-      const obj = pressed;
-      if (pressed.get()) {
-        num = 0;
-      }
-      const obj2 = { opacity: withTiming(num, { duration: 150 }), pointerEvents: str };
-      str = "auto";
-      if (obj.get()) {
-        str = "none";
-      }
-      return obj2;
-    };
-    let obj6 = { withTiming: pressed(sharedValue1[10]).withTiming, pressed };
-    fn.__closure = obj6;
-    fn.__workletHash = 100815030677;
-    fn.__initData = __initData;
-    const animatedStyle = obj5.useAnimatedStyle(fn);
-    const fn2 = function _() {
-      let items;
-      let num4;
-      let obj4;
-      let obj6;
-      let str;
-      let withTiming;
-      let num = 1;
-      if (!pressed.get()) {
-        const value = sharedValue.get();
-        num = value / sharedValue1.get();
-      }
-      const value2 = sharedValue1.get();
-      const diff = value2 - sharedValue1.get() * num;
-      let num2 = 0;
-      if (!pressed.get()) {
-        num2 = -diff / 2;
-      }
-      const obj2 = { transform: items, opacity: withTiming(num4), pointerEvents: str };
-      const obj3 = { scaleX: obj4.withTiming(num) };
-      items = [obj3, ];
-      obj4 = timing;
-      const obj5 = { translateX: obj6.withTiming(num2) };
-      items[1] = obj5;
-      obj6 = timing;
-      withTiming = timing.withTiming;
-      num4 = 0;
-      timing;
-      if (pressed.get()) {
-        num4 = 1;
-      }
-      str = "none";
-      if (pressed.get()) {
+    let items = [closure_17, , ];
+    const useAnimatedStyle = _mod1652.useAnimatedStyle;
+    _mod1652;
+    items[1] = timing_timing.withTiming;
+    items[2] = pressed;
+    let c0;
+    let c1;
+    [tmp9, tmp10, tmp11] = items;
+    class ForYouItemActionButtonsTsx1 {
+      constructor() {
+        let str;
+        let num = 1;
+        const obj = _undefined;
+        const tmp = c0;
+        if (_undefined.get()) {
+          num = 0;
+        }
+        const obj2 = { opacity: tmp(num, { duration: 150 }), pointerEvents: str };
         str = "auto";
+        if (obj.get()) {
+          str = "none";
+        }
+        return obj2;
       }
-      return obj2;
-    };
-    const obj7 = pressed(sharedValue1[9]);
-    fn2.__closure = { pressed, acceptButtonWidth: sharedValue, buttonWidth: sharedValue1, withTiming: pressed(sharedValue1[10]).withTiming };
-    fn2.__workletHash = 12358515723480;
-    fn2.__initData = __initData2;
-    ({ pressed, acceptButtonWidth: sharedValue, buttonWidth: sharedValue1, withTiming: pressed(sharedValue1[10]).withTiming });
-    const animatedStyle1 = obj7.useAnimatedStyle(fn2);
-    const obj9 = pressed(sharedValue1[9]);
-    class E {
+    }
+    const items1 = [tmp10, tmp11];
+    ForYouItemActionButtonsTsx1.__closure = items1;
+    ForYouItemActionButtonsTsx1.__workletHash = 938545958540;
+    ForYouItemActionButtonsTsx1.__initData = tmp9;
+    const animatedStyle = useAnimatedStyle(ForYouItemActionButtonsTsx1);
+    const items2 = [closure_18, pressed, sharedValue, sharedValue1, ];
+    const useAnimatedStyle2 = _mod1652.useAnimatedStyle;
+    _mod1652;
+    items2[4] = timing_timing.withTiming;
+    c0 = undefined;
+    c1 = undefined;
+    let c2;
+    let c3;
+    [tmp14, tmp15, tmp16, tmp17, tmp18] = items2;
+    class ForYouItemActionButtonsTsx2 {
+      constructor() {
+        let items;
+        let num4;
+        let str;
+        let tmp6;
+        let num = 1;
+        if (!_undefined.get()) {
+          const value = _undefined2.get();
+          num = value / _undefined3.get();
+        }
+        const value2 = _undefined3.get();
+        const diff = value2 - _undefined3.get() * num;
+        let num2 = 0;
+        if (!_undefined.get()) {
+          num2 = -diff / 2;
+        }
+        const obj2 = { transform: items, opacity: tmp6(num4), pointerEvents: str };
+        items = [{ scaleX: _undefined4(num) }, ];
+        ({ scaleX: _undefined4(num) });
+        items[1] = { translateX: _undefined4(num2) };
+        num4 = 0;
+        ({ translateX: _undefined4(num2) });
+        tmp6 = _undefined4;
+        if (_undefined.get()) {
+          num4 = 1;
+        }
+        str = "none";
+        if (_undefined.get()) {
+          str = "auto";
+        }
+        return obj2;
+      }
+    }
+    const items3 = [tmp15, tmp16, tmp17, tmp18];
+    ForYouItemActionButtonsTsx2.__closure = items3;
+    ForYouItemActionButtonsTsx2.__workletHash = 14181259880641;
+    ForYouItemActionButtonsTsx2.__initData = tmp14;
+    const animatedStyle2 = useAnimatedStyle2(ForYouItemActionButtonsTsx2);
+    const items4 = [closure_19, sharedValue2, sharedValue3];
+    c0 = undefined;
+    c1 = undefined;
+    [tmp20, tmp21, tmp22] = items4;
+    const tmp2Result4 = _mod1652;
+    class ForYouItemActionButtonsTsx3 {
       constructor() {
         let items;
         const obj = { transform: items };
-        items = [{ translateX: sharedValue2.get() / 2 }, ];
-        ({ translateX: sharedValue2.get() / 2 });
-        items[1] = { translateY: sharedValue3.get() / 2 };
-        ({ translateY: sharedValue3.get() / 2 });
+        items = [{ translateX: _undefined.get() / 2 }, ];
+        ({ translateX: _undefined.get() / 2 });
+        items[1] = { translateY: _undefined2.get() / 2 };
+        ({ translateY: _undefined2.get() / 2 });
         return obj;
       }
     }
-    E.__closure = { waveWidth: sharedValue2, waveHeight: sharedValue3 };
-    E.__workletHash = 667441788226;
-    E.__initData = __initData3;
-    const animatedStyle2 = obj9.useAnimatedStyle(E);
-    const obj10 = pressed(sharedValue1[9]);
-    class I {
+    const items5 = [tmp21, tmp22];
+    ForYouItemActionButtonsTsx3.__closure = items5;
+    ForYouItemActionButtonsTsx3.__workletHash = 8815114936763;
+    ForYouItemActionButtonsTsx3.__initData = tmp20;
+    const animatedStyle1 = tmp2Result4.useAnimatedStyle(ForYouItemActionButtonsTsx3);
+    const items6 = [closure_20, , , , , , , ];
+    const useAnimatedStyle3 = _mod1652.useAnimatedStyle;
+    _mod1652;
+    items6[1] = _mod1652.withDelay;
+    items6[2] = _mod1652.withRepeat;
+    items6[3] = timing_timing.withTiming;
+    items6[4] = pressed;
+    items6[5] = _mod1652.Easing;
+    items6[6] = sharedValue2;
+    items6[7] = sharedValue3;
+    c0 = undefined;
+    c1 = undefined;
+    c2 = undefined;
+    c3 = undefined;
+    let c4;
+    let c5;
+    let c6;
+    [tmp25, tmp26, tmp27, tmp28, tmp29, tmp30, tmp31, tmp32] = items6;
+    class ForYouItemActionButtonsTsx4 {
       constructor() {
-        let Easing;
         let items;
         let obj3;
-        const withDelay = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        const withRepeat = ReanimatedRexport.withRepeat;
-        ReanimatedRexport;
-        const withTiming = timing.withTiming;
         let str = "-2deg";
-        timing;
-        if (pressed.get()) {
+        const tmp = c0;
+        const tmp2 = c1;
+        const tmp3 = c2;
+        if (_undefined.get()) {
           str = "8deg";
         }
         const obj = { transform: items };
-        const obj2 = { rotateZ: withDelay(450, withRepeat(withTiming(str, obj3), 4, true)) };
-        obj3 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-        Easing = tmp(5095).Easing;
-        items = [obj2, { translateX: -sharedValue2.get() / 2 }, ];
-        ({ translateX: -sharedValue2.get() / 2 });
-        items[2] = { translateY: -sharedValue3.get() / 2 };
-        ({ translateY: -sharedValue3.get() / 2 });
+        const obj2 = { rotateZ: tmp(450, tmp2(tmp3(str, obj3), 4, true)) };
+        obj3 = { duration: 150, easing: _undefined2.inOut(_undefined2.quad) };
+        items = [obj2, { translateX: -_undefined3.get() / 2 }, ];
+        ({ translateX: -_undefined3.get() / 2 });
+        items[2] = { translateY: -_undefined4.get() / 2 };
+        ({ translateY: -_undefined4.get() / 2 });
         return obj;
       }
     }
-    I.__closure = { withDelay: pressed(sharedValue1[9]).withDelay, withRepeat: pressed(sharedValue1[9]).withRepeat, withTiming: pressed(sharedValue1[10]).withTiming, pressed, Easing: pressed(sharedValue1[9]).Easing, waveWidth: sharedValue2, waveHeight: sharedValue3 };
-    I.__workletHash = 498167545082;
-    I.__initData = __initData4;
-    ({ withDelay: pressed(sharedValue1[9]).withDelay, withRepeat: pressed(sharedValue1[9]).withRepeat, withTiming: pressed(sharedValue1[10]).withTiming, pressed, Easing: pressed(sharedValue1[9]).Easing, waveWidth: sharedValue2, waveHeight: sharedValue3 });
-    const animatedStyle3 = obj10.useAnimatedStyle(I);
-    const fn3 = function p() {
-      const value = pressed.get();
-      return { pointerEvents: "none" };
-    };
-    fn3.__closure = { pressed };
-    fn3.__workletHash = 3473531476662;
-    fn3.__initData = __initData5;
-    const obj12 = pressed(sharedValue1[9]);
-    const animatedProps = obj12.useAnimatedProps(fn3);
-    const obj13 = { style: items, children: closure_13(Stack, obj17) };
-    items = [tmp.actionButtonsContainer, animatedStyle];
-    const View = sharedValue(sharedValue1[9]).View;
-    const obj14 = {
+    const items7 = [tmp26, tmp27, tmp28, tmp29, tmp30, tmp31, tmp32];
+    ForYouItemActionButtonsTsx4.__closure = items7;
+    ForYouItemActionButtonsTsx4.__workletHash = 9813687280195;
+    ForYouItemActionButtonsTsx4.__initData = tmp25;
+    const animatedStyle3 = useAnimatedStyle3(ForYouItemActionButtonsTsx4);
+    const items8 = [closure_21, pressed];
+    c0 = undefined;
+    [tmp34, tmp35] = items8;
+    const tmp2Result6 = _mod1652;
+    class ForYouItemActionButtonsTsx5 {
+      constructor() {
+        const value = _undefined.get();
+        return { pointerEvents: "none" };
+      }
+    }
+    const items9 = [tmp35];
+    ForYouItemActionButtonsTsx5.__closure = items9;
+    ForYouItemActionButtonsTsx5.__workletHash = 4550653159023;
+    ForYouItemActionButtonsTsx5.__initData = tmp34;
+    const animatedProps = tmp2Result6.useAnimatedProps(ForYouItemActionButtonsTsx5);
+    const obj5 = { style: items10, children: map1(Stack, obj9) };
+    items10 = [tmp.actionButtonsContainer, animatedStyle];
+    const View = _modDef1652.View;
+    const obj6 = {
       onLayout: function handleAcceptButtonLayout(nativeEvent) {
         const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
       },
-      children: closure_12(Button, obj15, "accept_friend_request")
+      children: authStore2(Button, obj7, "accept_friend_request")
     };
-    Stack = pressed(sharedValue1[11]).Stack;
-    obj15 = { text: intl.string(pressed(sharedValue1[13]).t.zf5jU5), variant: "primary", size: str2, onPress: onAccept };
-    Button = pressed(sharedValue1[12]).Button;
-    intl = pressed(sharedValue1[13]).intl;
+    Stack = Stack_Stack.Stack;
+    obj7 = { text: intl.string(intl23.t.zf5jU5), variant: "primary", size: str2, onPress: onAccept };
+    Button = components_Button_Button.Button;
+    intl = intl23.intl;
     let str = "md";
     str2 = "md";
     if (compactMode) {
       str2 = "sm";
     }
-    const items1 = [closure_12(View2, obj14), ];
-    const obj16 = { text: intl2.string(pressed(tmp3[13]).t.EBN847), variant: "secondary", size: str3, onPress: onIgnore };
-    const Button2 = tmp2(tmp3[12]).Button;
-    intl2 = tmp2(tmp3[13]).intl;
+    const items11 = [authStore2(View2, obj6), ];
+    const obj8 = { text: intl2.string(intl23.t.EBN847), variant: "secondary", size: str3, onPress: onIgnore };
+    const Button2 = components_Button_Button.Button;
+    intl2 = intl23.intl;
     str3 = str;
     if (compactMode) {
       str3 = "sm";
     }
-    obj17 = { direction: "horizontal", spacing: 8, children: items1 };
-    items1[1] = closure_12(Button2, obj16, "ignore_friend_request");
-    const items2 = [closure_12(View, obj13), ];
-    const obj18 = {
-      style: animatedStyle1,
+    obj9 = { direction: "horizontal", spacing: 8, children: items11 };
+    items11[1] = authStore2(Button2, obj8, "ignore_friend_request");
+    const items12 = [authStore2(View, obj5), ];
+    const obj10 = {
+      style: animatedStyle2,
       onLayout: function handleButtonsLayout(nativeEvent) {
         const result = sharedValue1.set(nativeEvent.nativeEvent.layout.width);
       },
-      children: closure_12(Button3, obj19)
+      children: authStore2(Button3, obj11)
     };
-    View2 = tmp16(tmp3[9]).View;
+    View2 = tmp40(1652).View;
     const merged = Object.assign(animatedProps);
-    obj19 = { variant: "secondary", text: intl3.string(pressed(tmp3[13]).t.n8nU4W), icon: closure_12(View3, obj20), size: str, onPress: onWavePress };
-    Button3 = tmp2(tmp3[12]).Button;
-    intl3 = tmp2(tmp3[13]).intl;
-    obj20 = { style: animatedStyle2, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_12(View4, obj21) };
-    View3 = tmp16(tmp3[9]).View;
-    obj21 = {
+    obj11 = { variant: "secondary", text: intl3.string(intl23.t.n8nU4W), icon: authStore2(View3, obj12), size: str, onPress: onWavePress };
+    Button3 = components_Button_Button.Button;
+    intl3 = intl23.intl;
+    obj12 = { style: animatedStyle1, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: authStore2(View4, obj13) };
+    View3 = tmp40(1652).View;
+    obj13 = {
       style: animatedStyle3,
       onLayout: function handleWaveLayout(nativeEvent) {
         const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
         const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
       },
-      children: closure_12(pressed(tmp3[14]).Text, { maxFontSizeMultiplier: 2, variant: "text-sm/normal", children: "\u{1F44B}" })
+      children: authStore2(Text_Text.Text, { maxFontSizeMultiplier: 2, variant: "text-sm/normal", children: "\u{1F44B}" })
     };
-    View4 = tmp16(tmp3[9]).View;
+    View4 = tmp40(1652).View;
     if (compactMode) {
       str = "sm";
     }
-    const obj22 = { children: items2 };
-    items2[1] = closure_12(View2, obj18);
-    return closure_13(View2, obj22);
+    const obj14 = { children: items12 };
+    items12[1] = authStore2(View2, obj10);
+    return map1(View2, obj14);
   }
 }
+let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
 let View2 = react_native.View;
 ({ AnalyticEvents: metroImportAll, ComponentActions: c9, EMPTY_STRING_SNOWFLAKE_ID: c10, MessageTypes: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 const authStore3 = createStyles.createStyles({ buttonsContainer: { flexDirection: "row", marginTop: 8 }, actionButtonsContainer: { flexDirection: "row", position: "absolute", left: 0 } });
 const constants2 = { ACCEPT: "accept", IGNORE: "ignore", WAVE: "wave", ACTION: "action" };
-const __initData = { code: "function ForYouItemActionButtonsTsx1(){const{withTiming,pressed}=this.__closure;return{opacity:withTiming(!pressed.get()?1:0,{duration:150}),pointerEvents:!pressed.get()?'auto':'none'};}" };
-const authStore5 = { code: "function ForYouItemActionButtonsTsx2(){const{pressed,acceptButtonWidth,buttonWidth,withTiming}=this.__closure;const scaleX=!pressed.get()?acceptButtonWidth.get()/buttonWidth.get():1;const scaledWidth=buttonWidth.get()-buttonWidth.get()*scaleX;const translateX=!pressed.get()?-scaledWidth/2:0;return{transform:[{scaleX:withTiming(scaleX)},{translateX:withTiming(translateX)}],opacity:withTiming(!pressed.get()?0:1),pointerEvents:!pressed.get()?'none':'auto'};}" };
-const __initData3 = { code: "function ForYouItemActionButtonsTsx3(){const{waveWidth,waveHeight}=this.__closure;return{transform:[{translateX:waveWidth.get()/2},{translateY:waveHeight.get()/2}]};}" };
-const __initData4 = { code: "function ForYouItemActionButtonsTsx4(){const{withDelay,withRepeat,withTiming,pressed,Easing,waveWidth,waveHeight}=this.__closure;return{transform:[{rotateZ:withDelay(450,withRepeat(withTiming(pressed.get()?'8deg':'-2deg',{duration:150,easing:Easing.inOut(Easing.quad)}),4,true))},{translateX:-waveWidth.get()/2},{translateY:-waveHeight.get()/2}]};}" };
-const __initData5 = { code: "function ForYouItemActionButtonsTsx5(){const{pressed}=this.__closure;return{pointerEvents:!pressed.get()?'none':'none'};}" };
+let closure_17 = { code: "(function ForYouItemActionButtonsTsx1(){let[withTiming,pressed]=this.__closure;return{opacity:withTiming(!pressed.get()?1:0,{duration:150}),pointerEvents:!pressed.get()?'auto':'none'};})" };
+let closure_18 = { code: "(function ForYouItemActionButtonsTsx2(){let[pressed,acceptButtonWidth,buttonWidth,withTiming]=this.__closure;const scaleX=!pressed.get()?acceptButtonWidth.get()/buttonWidth.get():1;const scaledWidth=buttonWidth.get()-buttonWidth.get()*scaleX;const translateX=!pressed.get()?-scaledWidth/2:0;return{transform:[{scaleX:withTiming(scaleX)},{translateX:withTiming(translateX)}],opacity:withTiming(!pressed.get()?0:1),pointerEvents:!pressed.get()?'none':'auto'};})" };
+let closure_19 = { code: "(function ForYouItemActionButtonsTsx3(){let[waveWidth,waveHeight]=this.__closure;return{transform:[{translateX:waveWidth.get()/2},{translateY:waveHeight.get()/2}]};})" };
+let closure_20 = { code: "(function ForYouItemActionButtonsTsx4(){let[withDelay,withRepeat,withTiming,pressed,Easing,waveWidth,waveHeight]=this.__closure;return{transform:[{rotateZ:withDelay(450,withRepeat(withTiming(pressed.get()?'8deg':'-2deg',{duration:150,easing:Easing.inOut(Easing.quad)}),4,true))},{translateX:-waveWidth.get()/2},{translateY:-waveHeight.get()/2}]};})" };
+let closure_21 = { code: "(function ForYouItemActionButtonsTsx5(){let[pressed]=this.__closure;return{pointerEvents:!pressed.get()?'none':'none'};})" };
 let result = size.fileFinishedImporting("modules/notification_center/native/ForYouItemActionButtons.tsx");
 
 export { IncomingFriendRequestActions };
@@ -322,7 +386,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
   _require = other_user;
   let closure_1 = callback;
   dependencyMap = navigation;
-  let closure_3 = forceHoistItem;
+  _asyncToGenerator = forceHoistItem;
   react = onSoftAckItem;
   let closure_5 = arg6;
   let flag = isSoftAcked;
@@ -378,7 +442,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
     }
     onSoftAckItem(other_user);
   }, items1);
-  const tmp2Result = tmp2(5095);
+  const tmp2Result = tmp2(1652);
   sharedValue = tmp2Result.useSharedValue(false);
   const items2 = [forceHoistItem, sharedValue, other_user, id, arg6];
   callback1 = react.useCallback(() => {
@@ -473,7 +537,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
   }, items6);
   const items7 = [callback, stateFromStores, , ];
   ({ message_id: arr8[2], message_channel_id: arr8[3] } = other_user);
-  const callback6 = react.useCallback(closure_3(function*(arg0, value) {
+  const callback6 = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let c2;
     let closure_0;
     if (navigation === 2) {
@@ -486,7 +550,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -521,7 +585,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         navigation = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         navigation = 3;
         throw tmp17;
@@ -548,10 +612,10 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
     let obj3 = { actionButtons: [] };
     return obj3;
   } else {
-    if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
-      if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-        if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
-          if (other_user.type === tmp2(6859).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
+    if (other_user.type !== tmp2(6979).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
+      if (other_user.type !== tmp2(6979).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+        if (other_user.type !== tmp2(6979).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
+          if (other_user.type === tmp2(6979).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
             let obj4 = { actionButtons: items9, accessibilityActions: items10, onAccessibilityAction: callback3 };
             let obj5 = { id: "view_friend_requests", text: intl15.string(tmp2(1113).t["lMR96+"]), variant: "secondary", size: "md", onPress: callback3 };
             intl15 = tmp2(1113).intl;
@@ -560,7 +624,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
             intl16 = tmp2(1113).intl;
             items10 = [obj6];
             return obj4;
-          } else if (other_user.type === tmp2(6859).NotificationCenterItems.GO_LIVE_PUSH) {
+          } else if (other_user.type === tmp2(6979).NotificationCenterItems.GO_LIVE_PUSH) {
             const obj7 = { actionButtons: items11, accessibilityActions: items12, onAccessibilityAction: callback };
             const obj8 = { id: "join_stream", text: intl13.string(tmp2(1113).t["Pqj7h+"]), variant: "secondary", size: "md", onPress: callback };
             intl13 = tmp2(1113).intl;
@@ -570,11 +634,11 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
             items12 = [obj9];
             return obj7;
           } else {
-            if (other_user.type !== tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-              if (other_user.type !== tmp2(6859).NotificationCenterItems.DM_FRIEND_NUDGE) {
-                if (other_user.type !== tmp2(6859).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
-                  if (other_user.type !== tmp2(6859).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
-                    if (other_user.type === tmp2(6859).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
+            if (other_user.type !== tmp2(6979).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+              if (other_user.type !== tmp2(6979).NotificationCenterItems.DM_FRIEND_NUDGE) {
+                if (other_user.type !== tmp2(6979).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
+                  if (other_user.type !== tmp2(6979).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
+                    if (other_user.type === tmp2(6979).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
                       const obj10 = { actionButtons: items13, accessibilityActions: items14, onAccessibilityAction: callback5 };
                       const obj11 = { id: "add_friend", text: intl9.string(tmp2(1113).t["boL/YX"]), variant: "secondary", size: "md", onPress: callback5 };
                       intl9 = tmp2(1113).intl;
@@ -583,7 +647,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       intl10 = tmp2(1113).intl;
                       items14 = [obj12];
                       return obj10;
-                    } else if (other_user.type === tmp2(6859).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
+                    } else if (other_user.type === tmp2(6979).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
                       const obj13 = { actionButtons: items15, accessibilityActions: items16, onAccessibilityAction: callback };
                       const obj14 = { id: "join_event", text: intl7.string(tmp2(1113).t.hRKdcn), variant: "secondary", size: "md", onPress: callback };
                       intl7 = tmp2(1113).intl;
@@ -592,26 +656,26 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       intl8 = tmp2(1113).intl;
                       items16 = [obj15];
                       return obj13;
-                    } else if (other_user.type === tmp2(6859).NotificationCenterItems.LIFECYCLE_ITEM) {
+                    } else if (other_user.type === tmp2(6979).NotificationCenterItems.LIFECYCLE_ITEM) {
                       let stringResult;
                       let str2;
                       const item_enum = other_user.item_enum;
-                      if (tmp2(6859).ItemEnum.UPDATE_PROFILE === item_enum) {
+                      if (tmp2(6979).ItemEnum.UPDATE_PROFILE === item_enum) {
                         const intl6 = tmp2(1113).intl;
                         stringResult = intl6.string(tmp2(1113).t.zMRcWL);
                         str2 = "update_profile";
-                      } else if (tmp2(6859).ItemEnum.FIND_FRIENDS === item_enum) {
+                      } else if (tmp2(6979).ItemEnum.FIND_FRIENDS === item_enum) {
                         const intl5 = tmp2(1113).intl;
                         stringResult = intl5.string(tmp2(1113).t["vwL/4s"]);
                         str2 = "find_friends";
-                      } else if (tmp2(6859).ItemEnum.ADD_FRIEND === item_enum) {
+                      } else if (tmp2(6979).ItemEnum.ADD_FRIEND === item_enum) {
                         const intl4 = tmp2(1113).intl;
                         stringResult = intl4.string(tmp2(1113).t["boL/YX"]);
                         str2 = "add_friend";
                       } else {
                         str2 = null;
                         stringResult = null;
-                        if (tmp2(6859).ItemEnum.FIRST_MESSAGE === item_enum) {
+                        if (tmp2(6979).ItemEnum.FIRST_MESSAGE === item_enum) {
                           const intl20 = tmp2(1113).intl;
                           stringResult = intl20.string(tmp2(1113).t["GuUH7/"]);
                           str2 = "send_message";
@@ -631,9 +695,9 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       obj16 = { actionButtons: [] };
                       const obj19 = { actionButtons: [] };
                     } else {
-                      if (other_user.type !== tmp2(6859).NotificationCenterItems.RECENT_MENTION) {
-                        if (other_user.type !== tmp2(6859).NotificationCenterItems.REPLY_MENTION) {
-                          if (other_user.type === tmp2(6859).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
+                      if (other_user.type !== tmp2(6979).NotificationCenterItems.RECENT_MENTION) {
+                        if (other_user.type !== tmp2(6979).NotificationCenterItems.REPLY_MENTION) {
+                          if (other_user.type === tmp2(6979).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
                             const intl3 = tmp2(1113).intl;
                             const stringResult1 = intl3.string(tmp2(1113).t.TI8qgg);
                             const obj20 = { id: "share_trials", text: stringResult1, variant: str, size: "md", onPress: callback };
@@ -648,7 +712,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                             return obj21;
                           } else {
                             let obj26;
-                            if (other_user.type === tmp2(6859).NotificationCenterItems.TRENDING_CONTENT) {
+                            if (other_user.type === tmp2(6979).NotificationCenterItems.TRENDING_CONTENT) {
                               const obj23 = { actionButtons: items21, accessibilityActions: items22, onAccessibilityAction: callback7 };
                               const obj24 = { id: "read_summary", text: intl.string(tmp2(1113).t.k0Q31F), variant: "secondary", size: "md", onPress: callback7 };
                               intl = tmp2(1113).intl;
@@ -711,7 +775,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         }
     };
     obj35 = { onWavePress: callback, onAccept: callback1, onIgnore: callback2, pressed: sharedValue, compactMode };
-    if (other_user.type === tmp2(6859).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+    if (other_user.type === tmp2(6979).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
       const obj36 = { name: constants2.WAVE, label: intl17.string(tmp2(1113).t.n8nU4W) };
       intl17 = tmp2(1113).intl;
       const items27 = [obj36];

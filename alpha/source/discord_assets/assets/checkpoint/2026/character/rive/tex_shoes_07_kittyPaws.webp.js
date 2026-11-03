@@ -1,8 +1,8 @@
-// Module ID: 13602
-// Function ID: 13603
+// Module ID: 13742
+// Function ID: 13743
 // Dependencies: [2]
 
-// Module 13602
+// Module 13742
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_07_kittyPaws.webp.js");

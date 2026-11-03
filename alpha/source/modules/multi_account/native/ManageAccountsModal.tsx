@@ -1,35 +1,34 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18603
+// Function ID: 18604
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 5069, 1383, 13977, 13978, 18450, 1072, 21, 9856, 5014, 575, 504, 1187, 5959, 1113, 13981, 6980, 17305, 17994, 5095, 5254, 6732, 1252, 7292, 18451, 17995, 13987, 18452, 6987, 8177, 11489, 7169, 9812, 10144, 18020, 6740, 7108, 18019, 2]
+// Dependencies: [32, 5, 19, 17, 502, 5196, 1385, 14108, 14109, 18604, 1072, 21, 9987, 5141, 575, 504, 1187, 6079, 1113, 14112, 7106, 17448, 18138, 1652, 5377, 6852, 1252, 7412, 18605, 18139, 14118, 18606, 7113, 8301, 11626, 7290, 9943, 10274, 18164, 6860, 7234, 18163, 2]
 
-// Module 18449 (ManageAccountsModal)
+// Module 18603 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import timing from "timing" /* 5254 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10144 */;
-import MultiAccountStore from "MultiAccountStore" /* 13977 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13981 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 18450 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
+import HeaderShared from "HeaderShared" /* 9943 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10274 */;
+import MultiAccountStore from "MultiAccountStore" /* 14108 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14112 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 5069 */;
-import UserStore from "UserStore" /* 1383 */;
-import Constants_mod from "Constants" /* 13978 */;
+import StreamerModeStore from "StreamerModeStore" /* 5196 */;
+import UserStore from "UserStore" /* 1385 */;
+import Constants_mod from "Constants" /* 14109 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9856 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import NativeStackView from "NativeStackView" /* 9987 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, component, importDefault, set;
+let _require, component, importAll, importDefault, set;
 
 let closure_12;
 let closure_14;
@@ -69,7 +68,7 @@ function RemoveMultiAccountUserButton(user) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -109,7 +108,7 @@ function RemoveMultiAccountUserButton(user) {
               obj.removeAccount(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -150,10 +149,10 @@ function RemoveMultiAccountUserButton(user) {
         },
       children: closure_18(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(6980).PressableOpacity;
+    const PressableOpacity = tmp(7106).PressableOpacity;
     intl = tmp(1113).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(17305).CircleMinusIcon;
+    CircleMinusIcon = tmp(17448).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }
@@ -162,21 +161,28 @@ function ManageAccounts(isEditing) {
   let FormRow;
   let Label;
   let TransitionGroup;
+  let closure_2;
   let id;
   let intl;
   let obj10;
-  let obj11;
-  let obj12;
-  let obj7;
+  let obj5;
+  let obj6;
   let obj8;
+  let obj9;
   let style;
-  let tmp8Result;
+  let tmp10;
+  let tmp13Result;
+  let tmp14;
+  let tmp7;
+  let tmp8;
   let tmp9;
   isEditing = isEditing.isEditing;
   navigation = isEditing.navigation;
   let multiAccountUsers;
+  react = undefined;
+  component = undefined;
   const tmp = closure_21();
-  let closure_2 = tmp;
+  importAll = tmp;
   let tmp2 = isEditing;
   const tmp3 = multiAccountUsers;
   let obj = isEditing(multiAccountUsers[22]);
@@ -189,21 +195,30 @@ function ManageAccounts(isEditing) {
   }).currentUserId;
   let obj3 = isEditing(multiAccountUsers[23]);
   const sharedValue = obj3.useSharedValue(0);
-  let obj4 = isEditing(multiAccountUsers[23]);
-  let fn = function l() {
-    let obj2;
-    const obj = { width: obj2.withTiming(sharedValue.get(), obj3) };
-    obj2 = timing;
-    return obj;
-  };
-  let obj5 = { withTiming: isEditing(multiAccountUsers[24]).withTiming, leadingWidth: sharedValue, MANAGE_EDIT_TRANSITION_DURATION: duration };
-  fn.__closure = obj5;
-  fn.__workletHash = 3389178545077;
-  fn.__initData = __initData;
-  const tmp5 = duration;
-  react = obj4.useAnimatedStyle(fn);
-  const tmp6 = navigation;
-  component = navigation(multiAccountUsers[25])(isEditing);
+  const tmp5 = isEditing(multiAccountUsers[23]);
+  const items1 = [closure_23, , , ];
+  const useAnimatedStyle = tmp5.useAnimatedStyle;
+  items1[1] = isEditing(multiAccountUsers[24]).withTiming;
+  items1[2] = sharedValue;
+  items1[3] = duration;
+  let c0;
+  let c1;
+  let c2;
+  [tmp7, tmp8, tmp9, tmp10] = items1;
+  class ManageAccountsModalTsx1 {
+    constructor() {
+      const obj = { width: _undefined(_undefined2.get(), obj2) };
+      return obj;
+    }
+  }
+  const items2 = [tmp8, tmp9, tmp10];
+  ManageAccountsModalTsx1.__closure = items2;
+  ManageAccountsModalTsx1.__workletHash = 6360953709676;
+  ManageAccountsModalTsx1.__initData = tmp7;
+  const tmp6 = duration;
+  react = useAnimatedStyle(ManageAccountsModalTsx1);
+  const tmp11 = navigation;
+  component = navigation(tmp3[25])(isEditing);
   const effect = react.useEffect(() => {
     const tmp2 = null != component && tmp !== isEditing;
     if (tmp2) {
@@ -215,10 +230,9 @@ function ManageAccounts(isEditing) {
       const result = set(num);
     }
   });
-  const tmp8 = closure_18;
-  let obj6 = { style: tmp.container, bottom: true, children: tmp8(tmp9, obj7) };
-  const SafeAreaPaddingView = isEditing(multiAccountUsers[27]).SafeAreaPaddingView;
-  obj7 = {
+  let obj4 = { style: tmp.container, bottom: true, children: tmp13(tmp14, obj5) };
+  const SafeAreaPaddingView = tmp2(tmp3[27]).SafeAreaPaddingView;
+  obj5 = {
     data: multiAccountUsers,
     keyExtractor(id) {
       return id.id;
@@ -295,17 +309,17 @@ function ManageAccounts(isEditing) {
     keyboardShouldPersistTaps: "handled",
     scrollEventThrottle: 16,
     scrollEnabled: true,
-    footer: tmp8(TransitionGroup, obj8)
+    footer: tmp13(TransitionGroup, obj6)
   };
-  tmp9 = navigation(multiAccountUsers[28]);
-  obj8 = { component, transitionEnter: true, transitionLeave: true, transitionAppear: true, children: tmp8Result };
-  tmp8Result = !isEditing;
-  TransitionGroup = isEditing(multiAccountUsers[30]).TransitionGroup;
+  obj6 = { component, transitionEnter: true, transitionLeave: true, transitionAppear: true, children: tmp13Result };
+  tmp13Result = !isEditing;
+  tmp14 = navigation(tmp3[28]);
+  TransitionGroup = tmp2(tmp3[30]).TransitionGroup;
   if (!isEditing) {
-    const obj9 = { duration: tmp5, children: tmp8(FormRow, obj10) };
-    obj10 = {
-      leading: tmp8(CirclePlusIcon, obj11),
-      label: tmp8(Label, obj12),
+    let obj7 = { duration: tmp6, children: tmp13(FormRow, obj8) };
+    obj8 = {
+      leading: closure_18(CirclePlusIcon, obj9),
+      label: closure_18(Label, obj10),
       onPress: function handlePressAddAccount() {
           let intl;
           let intl2;
@@ -325,16 +339,16 @@ function ManageAccounts(isEditing) {
           }
         }
     };
-    const tmp6Result = tmp6(tmp3[31]);
+    const tmp11Result = tmp11(tmp3[31]);
     FormRow = tmp2(tmp3[33]).FormRow;
-    obj11 = { color: tmp6(tmp3[14]).colors.TEXT_LINK };
+    obj9 = { color: tmp11(tmp3[14]).colors.TEXT_LINK };
     CirclePlusIcon = tmp2(tmp3[34]).CirclePlusIcon;
-    obj12 = { style: tmp.addAccountLabel, text: intl.string(tmp2(tmp3[18]).t.bPP34Q) };
+    obj10 = { style: tmp.addAccountLabel, text: intl.string(tmp2(tmp3[18]).t.bPP34Q) };
     Label = tmp2(tmp3[33]).FormRow.Label;
     intl = tmp2(tmp3[18]).intl;
-    tmp8Result = tmp8(tmp6Result, obj9);
+    tmp13Result = tmp13(tmp11Result, obj7);
   }
-  return tmp8(SafeAreaPaddingView, obj6);
+  return closure_18(SafeAreaPaddingView, obj4);
 }
 let react = react_mod;
 const View = react_native.View;
@@ -353,7 +367,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj4 = { color: nativeDefault.colors.TEXT_LINK };
 let closure_21 = createStyles(obj);
-const __initData = { code: "function ManageAccountsModalTsx1(){const{withTiming,leadingWidth,MANAGE_EDIT_TRANSITION_DURATION}=this.__closure;return{width:withTiming(leadingWidth.get(),{duration:MANAGE_EDIT_TRANSITION_DURATION})};}" };
+let closure_23 = { code: "(function ManageAccountsModalTsx1(){let[withTiming,leadingWidth,MANAGE_EDIT_TRANSITION_DURATION]=this.__closure;return{width:withTiming(leadingWidth.get(),{duration:MANAGE_EDIT_TRANSITION_DURATION})};})" };
 const memoResult = react.memo(function ManageAccountsModal(initialRouteName) {
   let c1;
   let c2;

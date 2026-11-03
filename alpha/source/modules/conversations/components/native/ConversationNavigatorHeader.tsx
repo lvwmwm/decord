@@ -1,28 +1,28 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9999
+// Function ID: 10000
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 4863, 21, 5014, 575, 504, 5652, 9812, 5596, 1376, 1113, 9869, 2]
+// Dependencies: [19, 17, 4990, 21, 5141, 575, 504, 5772, 9943, 5719, 1357, 1113, 10000, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 9868 (ConversationNavigatorHeader)
+// Module 9999 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5596 */;
-import useChannelNameDefault from "useChannelName" /* 5652 */;
-import HeaderShared from "HeaderShared" /* 9812 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 9869 */;
+import useToken from "useToken" /* 5719 */;
+import useChannelNameDefault from "useChannelName" /* 5772 */;
+import HeaderShared from "HeaderShared" /* 9943 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 10000 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import createStyles from "createStyles" /* 5014 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const utils_PlatformUtils = tmp(1376);
+const utils_PlatformUtils = tmp(1357);
 function ConversationNavigatorHeader(channelId) {
   channelId = channelId.channelId;
   let flag = channelId.hasRightAction;
@@ -36,7 +36,7 @@ function ConversationNavigatorHeader(channelId) {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(9812).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(9943).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 }
 function HeaderWithBorder(shouldHandleSafeArea) {

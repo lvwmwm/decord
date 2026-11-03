@@ -1,77 +1,123 @@
 // Module ID: 7179
 // Function ID: 7180
-// Dependencies: [19, 21, 1628, 7180, 1498, 7181, 7005, 7182]
+// Dependencies: [32, 19, 17, 21, 1630, 7159, 7171, 7155, 7152, 7138, 1500]
+// Exports: Screen
 
 // Module 7179
-import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1498 */;
+import react_native from "react-native" /* 7152 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-const jsx = Fragment.jsx;
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ StyleSheet, View: closure_4 } = react_native2);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const container = StyleSheet.create({ container: { flex: 1 }, content: { flex: 1 }, header: { zIndex: 1 }, absolute: { position: "absolute", top: 0, start: 0, end: 0 } });
 
-export const Header = react.memo(function Header(navigation) {
-  let back;
-  let headerBackTitle;
-  let href;
-  let layout;
-  let num;
-  let options;
-  let progress;
+export function Screen(modal) {
+  let Provider;
+  let Provider2;
+  let children;
+  let headerStatusBarHeight;
+  let headerTransparent;
+  let items1;
+  let items4;
+  let obj6;
+  let obj7;
+  let obj9;
   let route;
-  let styleInterpolator;
-  let tmp9;
-  let tmpResult2;
-  ({ back, options, route } = navigation);
-  navigation = navigation.navigation;
-  let tmp = route;
-  ({ layout, progress, styleInterpolator } = navigation);
-  const obj = route(navigation[2]);
+  let style;
+  let tmp10;
+  let obj = modal(headerStatusBarHeight[4]);
   const safeAreaInsets = obj.useSafeAreaInsets();
-  if (undefined !== options.headerBackTitle) {
-    headerBackTitle = options.headerBackTitle;
-  } else if (back) {
-    headerBackTitle = back.title;
+  const context = react.useContext(modal(headerStatusBarHeight[5]).HeaderShownContext);
+  let num = react.useContext(modal(headerStatusBarHeight[6]).HeaderHeightContext);
+  modal = modal.modal;
+  let tmp5 = undefined !== modal;
+  const focused = modal.focused;
+  if (tmp5) {
+    tmp5 = modal;
   }
-  const items = [navigation, route.key];
-  const useCallback = react.useCallback;
-  const tmpResult = tmp(navigation[3]);
-  const callback = useCallback(tmpResult.throttle(() => {
-    const tmp = navigation.isFocused() && navigation.canGoBack();
-    if (tmp) {
-      const dispatch = obj.dispatch;
-      const obj2 = { source: route.key };
-      const StackActions = Link.StackActions;
-      const merged = Object.assign(StackActions.pop());
-      dispatch(obj2);
-    }
-  }, 50), items);
-  const context = react.useContext(tmp(tmp2[5]).ModalPresentationContext);
-  if (undefined !== options.headerStatusBarHeight) {
-    num = options.headerStatusBarHeight;
-  } else {
-    num = 0;
+  modal = tmp5;
+  const headerShown = modal.headerShown;
+  let tmp6 = undefined === headerShown;
+  const header = modal.header;
+  if (!tmp6) {
+    tmp6 = headerShown;
+  }
+  ({ headerStatusBarHeight, headerTransparent } = modal);
+  if (undefined === headerStatusBarHeight) {
+    let num2 = 0;
     if (!context) {
+      num2 = safeAreaInsets.top;
+    }
+    headerStatusBarHeight = num2;
+  }
+  ({ route, navigation, children, style } = modal);
+  const tmpResult = modal(headerStatusBarHeight[7]);
+  const frameSize = tmpResult.useFrameSize((layout) => {
+    const obj = react_native;
+    return obj.getDefaultHeaderHeight(layout, modal, headerStatusBarHeight);
+  });
+  const ref = obj2.useRef(null);
+  const tmp9 = ref(react.useState(frameSize), 2);
+  [tmp10, react] = tmp9;
+  const items = [route.name];
+  const layoutEffect = obj2.useLayoutEffect(() => {
+    const current = ref.current;
+    if (current != null) {
+      current.measure((arg0, arg1, arg2, arg3) => {
+        closure_1_3(arg3);
+      });
+    }
+  }, items);
+  const obj3 = { "aria-hidden": !focused, style: items1, collapsable: false, children: items4 };
+  items1 = [container.container, style];
+  let tmp15Result = null;
+  const Background = tmp(tmp2[9]).Background;
+  const tmp12 = closure_6;
+  if (tmp6) {
+    const items2 = [container.header, ];
+    let tmp17 = null;
+    const obj4 = { route, navigation, children: closure_5(closure_4, obj6) };
+    const NavigationProvider = tmp(tmp2[10]).NavigationProvider;
+    if (headerTransparent) {
+      const items3 = [container.absolute, ];
+      const obj5 = { minHeight: tmp10 };
+      items3[1] = obj5;
+      tmp17 = items3;
+    }
+    items2[1] = tmp17;
+    obj6 = { style: items2, children: closure_5(closure_4, obj7) };
+    obj7 = {
+      ref,
+      pointerEvents: "box-none",
+      onLayout(nativeEvent) {
+          react(nativeEvent.nativeEvent.layout.height);
+        },
+      children: header
+    };
+    tmp15Result = tmp15(NavigationProvider, obj4);
+  }
+  items4 = [tmp15Result, ];
+  let tmp20 = context;
+  const obj8 = { style: container.content, children: closure_5(Provider, obj9) };
+  Provider = tmp(tmp2[5]).HeaderShownContext.Provider;
+  const tmp19 = closure_4;
+  if (!context) {
+    tmp20 = false !== tmp6;
+  }
+  obj9 = { value: tmp20, children: closure_5(Provider2, { value: tmp10, children }) };
+  Provider2 = tmp(tmp2[6]).HeaderHeightContext.Provider;
+  if (!tmp6) {
+    if (num == null) {
       num = 0;
-      if (!tmp6) {
-        num = safeAreaInsets.top;
-      }
     }
   }
-  let obj2 = { title: tmpResult2.getHeaderTitle(options, route.name), progress, layout, modal: context, headerBackTitle, headerStatusBarHeight: num, onGoBack: tmp9, backHref: href, styleInterpolator };
-  const HeaderSegment = tmp(tmp2[7]).HeaderSegment;
-  let merged = Object.assign(options);
-  const tmp7 = jsx;
-  tmpResult2 = tmp(navigation[6]);
-  if (undefined !== options.headerBackTitle) {
-    headerBackTitle = options.headerBackTitle;
-  }
-  tmp9 = undefined;
-  if (back) {
-    tmp9 = callback;
-  }
-  href = undefined;
-  if (back) {
-    href = back.href;
-  }
-  return tmp7(HeaderSegment, obj2);
-});
+  items4[1] = closure_5(tmp19, obj8);
+  return tmp12(Background, obj3);
+}

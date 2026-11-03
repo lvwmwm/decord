@@ -1,34 +1,34 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15709
+// Function ID: 15710
 // Name: dispatchSocketMessage
-// Dependencies: [109, 4867, 8467, 1397, 4863, 4926, 1383, 5679, 2051, 2052, 3, 5762, 15540, 15525, 9, 504, 15569, 1233, 15570, 7671, 15574, 15650, 572, 1405, 12, 8349, 1980, 1400, 4934, 10192, 5615, 15652, 6535, 7431, 8752, 8768, 6553, 6065, 7909, 1979, 15653, 2]
+// Dependencies: [109, 4994, 8591, 1399, 4990, 5053, 1385, 5799, 2180, 2181, 3, 5882, 15681, 15666, 9, 504, 15710, 1233, 15711, 7795, 15715, 15793, 572, 1407, 12, 8473, 2109, 1402, 5061, 10322, 5738, 15795, 6655, 7555, 8876, 8892, 6673, 6185, 8033, 2108, 15796, 2]
 // Exports: default
 
-// Module 15568 (dispatchSocketMessage)
+// Module 15709 (dispatchSocketMessage)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore2 from "ChannelStore" /* 4863 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import SubscriptionPlanActionCreatorsAll from "SubscriptionPlanActionCreators" /* 7431 */;
-import convertServerThreadMemberDefault from "convertServerThreadMember" /* 8349 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8752 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 15525 */;
-import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 15569 */;
-import isUserSettingsOpen from "isUserSettingsOpen" /* 15652 */;
-import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 15653 */;
+import ChannelStore2 from "ChannelStore" /* 4990 */;
+import ChannelRecord from "ChannelRecord" /* 4994 */;
+import SubscriptionPlanActionCreatorsAll from "SubscriptionPlanActionCreators" /* 7555 */;
+import convertServerThreadMemberDefault from "convertServerThreadMember" /* 8473 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8876 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 15666 */;
+import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 15710 */;
+import isUserSettingsOpen from "isUserSettingsOpen" /* 15795 */;
+import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 15796 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8467 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
-import UserStore from "UserStore" /* 1383 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2051 */;
-import SubscriptionStore from "SubscriptionStore" /* 2052 */;
-import ActionBatcher_mod from "ActionBatcher" /* 15540 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8591 */;
+import UserRecord from "UserRecord" /* 1399 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
+import UserStore from "UserStore" /* 1385 */;
+import VoiceStateStore from "VoiceStateStore" /* 5799 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2180 */;
+import SubscriptionStore from "SubscriptionStore" /* 2181 */;
+import ActionBatcher_mod from "ActionBatcher" /* 15681 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,8 +36,8 @@ const ChannelStore = ChannelStore2;
 let _require, importDefault, op, purchase_token_hash, timestamps;
 
 let tmp;
-const actions_BillingActionCreators = tmp(6535);
-const f108606 = (sessionId) => {
+const actions_BillingActionCreators = tmp(6655);
+const f108544 = (sessionId) => {
   let activities;
   let hidden_activities;
   const obj = {
@@ -162,11 +162,11 @@ function dispatchGuildMemberAdd(guild_id, author, member) {
   ({ roles, nick, avatar, avatar_decoration_data, flags, premium_since, pending, joined_at, communication_disabled_until, unusual_dm_activity_until } = member);
   ({ collectibles, display_name_styles, member_gaming_leaderboard_data } = member);
   member = GuildMemberStore.getMember(guild_id, author.id);
-  const obj = obj5(1980);
+  const obj = obj5(2109);
   const result = obj.parseServerUserCollectibles(collectibles);
-  const obj2 = obj5(1400);
+  const obj2 = obj5(1402);
   const result1 = obj2.parseServerDisplayNameStyles(display_name_styles);
-  const obj3 = obj5(4934);
+  const obj3 = obj5(5061);
   const result2 = obj3.parseServerMemberGamingLeaderboardData(member_gaming_leaderboard_data);
   let isEqualResult = null != member && member.nick === nick && member.avatar === avatar;
   if (isEqualResult) {
@@ -175,8 +175,8 @@ function dispatchGuildMemberAdd(guild_id, author, member) {
   }
   if (isEqualResult) {
     let avatarDecoration = member.avatarDecoration;
-    const isEqualAvatarDecoration = tmp2(1979).isEqualAvatarDecoration;
-    obj5(1979);
+    const isEqualAvatarDecoration = tmp2(2108).isEqualAvatarDecoration;
+    obj5(2108);
     if (avatarDecoration == null) {
       avatarDecoration = null;
     }
@@ -683,7 +683,7 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
           let regional_feature_config;
           let relationships;
           let sessions;
-          let obj = { type: "CONNECTION_OPEN", sessionId: user.session_id, authSessionIdHash: user.auth_session_id_hash, staticAuthSessionId: user.static_client_session_id, user: user.user, users: user.users, guilds, initialPrivateChannels, unavailableGuilds, readState: user.read_state, userGuildSettings: user.user_guild_settings, tutorial: user.tutorial, relationships, gameRelationships: user.game_relationships, friendSuggestionCount: user.friend_suggestion_count, analyticsToken: user.analytics_token, experiments: user.experiments, connectedAccounts: user.connected_accounts, guildExperiments: user.guild_experiments, apexExperiments: apex_experiments, requiredAction: user.required_action, consents: user.consents, sessions: sessions.map(f108606), pendingPayments: user.pending_payments, countryCode: country_code, guildJoinRequests: guild_join_requests, userSettingsProto: result, apiCodeVersion: user.api_code_version, auth: user.auth, notificationSettings: obj2, geoRestrictedGuilds, explicitContentScanVersion: user.explicit_content_scan_version, failedStates: user.failed_states, linkedUsers: linked_users, regionalFeatureConfig: regional_feature_config, qosToken: qos_token };
+          let obj = { type: "CONNECTION_OPEN", sessionId: user.session_id, authSessionIdHash: user.auth_session_id_hash, staticAuthSessionId: user.static_client_session_id, user: user.user, users: user.users, guilds, initialPrivateChannels, unavailableGuilds, readState: user.read_state, userGuildSettings: user.user_guild_settings, tutorial: user.tutorial, relationships, gameRelationships: user.game_relationships, friendSuggestionCount: user.friend_suggestion_count, analyticsToken: user.analytics_token, experiments: user.experiments, connectedAccounts: user.connected_accounts, guildExperiments: user.guild_experiments, apexExperiments: apex_experiments, requiredAction: user.required_action, consents: user.consents, sessions: sessions.map(f108544), pendingPayments: user.pending_payments, countryCode: country_code, guildJoinRequests: guild_join_requests, userSettingsProto: result, apiCodeVersion: user.api_code_version, auth: user.auth, notificationSettings: obj2, geoRestrictedGuilds, explicitContentScanVersion: user.explicit_content_scan_version, failedStates: user.failed_states, linkedUsers: linked_users, regionalFeatureConfig: regional_feature_config, qosToken: qos_token };
           relationships = user.relationships;
           if (relationships == null) {
             relationships = [];
@@ -775,9 +775,9 @@ defineSimpleDispatch(["EXPERIMENT_SESSION_OVERRIDE_DELETE"], (experimentName) =>
 });
 defineSimpleDispatch(["RESUMED"], () => {
   let obj;
-  const localPresenceState = obj(15525).localPresenceState;
+  const localPresenceState = obj(15666).localPresenceState;
   localPresenceState.forceUpdate();
-  const localVoiceState = obj(15525).localVoiceState;
+  const localVoiceState = obj(15666).localVoiceState;
   localVoiceState.forceUpdate();
   obj = { type: "CONNECTION_RESUMED" };
   const obj2 = DispatcherDefault;
@@ -795,7 +795,7 @@ defineSimpleDispatch(["TYPING_START"], (guildId) => {
     dispatchGuildMemberAdd(guildId.guild_id, guildId.member.user, guildId.member);
   }
   const obj = { type: "TYPING_START", guildId: guildId.guild_id, channelId: guildId.channel_id, userId: guildId.user_id, customTypingIndicatorConfig: obj2.parseServerTypingIndicatorStyle(guildId.typing_indicator_style) };
-  obj2 = obj(1405);
+  obj2 = obj(1407);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -968,6 +968,17 @@ defineSimpleDispatch(["USER_NON_CHANNEL_ACK"], (ackType) => {
 });
 defineSimpleDispatch(["CONJURING_PROJECT_CREATE_PROGRESS"], (nonce) => {
   const obj = { type: "CONJURE_PROJECT_CREATE_PROGRESS", nonce: nonce.nonce, projectId: nonce.project_id, wsTicket: nonce.ws_ticket };
+  const obj2 = DispatcherDefault;
+  const dispatchResult = obj2.dispatch(obj);
+  dispatchResult.catch((error) => {
+    logger.error("dispatchOrResetSocket error during " + obj.type + ":", error);
+    const socket = initialPrivateChannels(geoRestrictedGuilds[13]).socket;
+    obj = { error, action: obj.type };
+    result = socket.resetSocketOnDispatchError(obj);
+  });
+});
+defineSimpleDispatch(["CONJURING_PROJECT_UPDATE"], (projectId) => {
+  const obj = { type: "CONJURE_PROJECT_RUNNING_UPDATE", projectId: projectId.project_id, running: true === projectId.running };
   const obj2 = DispatcherDefault;
   const dispatchResult = obj2.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -1497,9 +1508,9 @@ defineSimpleDispatch(["GUILD_BAN_ADD", "GUILD_BAN_REMOVE", "GUILD_MEMBER_ADD", "
   let obj3;
   let obj4;
   const obj = { type, guildId: guildId.guild_id, user: guildId.user, avatar: guildId.avatar, avatarDecoration: guildId.avatar_decoration_data, roles: guildId.roles, nick: guildId.nick, premiumSince: guildId.premium_since, isPending: guildId.pending, joinedAt: guildId.joined_at, communicationDisabledUntil: guildId.communication_disabled_until, unusualDMActivityUntil: guildId.unusual_dm_activity_until, flags: guildId.flags, collectibles: obj2.parseServerUserCollectibles(guildId.collectibles), displayNameStyles: obj3.parseServerDisplayNameStyles(guildId.display_name_styles), gamingLeaderboardData: obj4.parseServerMemberGamingLeaderboardData(guildId.member_gaming_leaderboard_data) };
-  obj2 = obj(1980);
-  obj3 = obj(1400);
-  obj4 = obj(4934);
+  obj2 = obj(2109);
+  obj3 = obj(1402);
+  obj4 = obj(5061);
   const obj5 = DispatcherDefault;
   const dispatchResult = obj5.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -1852,7 +1863,7 @@ defineSimpleDispatch(["PRESENCES_REPLACE"], (arr) => {
   });
 });
 defineSimpleDispatch(["SESSIONS_REPLACE"], (arr) => {
-  const obj = { type: "SESSIONS_REPLACE", sessions: arr.map(f108606) };
+  const obj = { type: "SESSIONS_REPLACE", sessions: arr.map(f108544) };
   const obj2 = DispatcherDefault;
   const dispatchResult = obj2.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -1986,11 +1997,15 @@ defineSimpleDispatch(["RECENT_MENTION_DELETE"], (id) => {
   });
 });
 defineSimpleDispatch(["SAVED_MESSAGE_CREATE"], (body) => {
+  let items;
   let obj2;
-  const obj = { type: "SAVED_MESSAGE_CREATE", savedMessage: obj2.savedMessageCreateObjectToClient(body) };
-  obj2 = obj(10192);
-  const obj3 = DispatcherDefault;
-  const dispatchResult = obj3.dispatch(obj);
+  let obj3;
+  const obj = { type: "SAVED_MESSAGE_CREATE", savedMessage: obj2.savedMessageCreateObjectToClient(body), messages: obj3.getSavedMessagesRawMessages(items) };
+  items = [body];
+  obj2 = obj(10322);
+  obj3 = obj(10322);
+  const obj4 = DispatcherDefault;
+  const dispatchResult = obj4.dispatch(obj);
   dispatchResult.catch((error) => {
     logger.error("dispatchOrResetSocket error during " + obj.type + ":", error);
     const socket = initialPrivateChannels(geoRestrictedGuilds[13]).socket;
@@ -2001,7 +2016,7 @@ defineSimpleDispatch(["SAVED_MESSAGE_CREATE"], (body) => {
 defineSimpleDispatch(["SAVED_MESSAGE_DELETE"], (channelId) => {
   let obj2;
   const obj = { type: "SAVED_MESSAGE_DELETE", savedMessageData: obj2.savedMessageDeleteObjectToClient(channelId) };
-  obj2 = obj(10192);
+  obj2 = obj(10322);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -2061,7 +2076,7 @@ defineSimpleDispatch(["MESSAGE_POLL_VOTE_ADD", "MESSAGE_POLL_VOTE_REMOVE"], (cha
   if ("MESSAGE_POLL_VOTE_ADD" === arg1) {
     str = "MESSAGE_REACTION_ADD";
   }
-  obj = { type: str, channelId: channelId.channel_id, messageId: channelId.message_id, userId: channelId.user_id, emoji: { id: channelId.answer_id, name: "" }, reactionType: obj(5615).ReactionTypes.VOTE };
+  obj = { type: str, channelId: channelId.channel_id, messageId: channelId.message_id, userId: channelId.user_id, emoji: { id: channelId.answer_id, name: "" }, reactionType: obj(5738).ReactionTypes.VOTE };
   const obj2 = DispatcherDefault;
   const dispatchResult = obj2.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -2632,7 +2647,7 @@ defineSimpleDispatch(["INTERACTION_MODAL_CREATE"], (id) => {
   let obj2;
   const obj = { type: "INTERACTION_MODAL_CREATE", id: id.id, channelId: id.channel_id, customId: id.custom_id, application: id.application, title: id.title, components: obj2.transformComponents(id.components), nonce: null, resolved: null };
   ({ nonce: obj.nonce, resolved: obj.resolved } = id);
-  obj2 = obj(6065);
+  obj2 = obj(6185);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -3119,7 +3134,7 @@ defineSimpleDispatch(["NOTIFICATION_SETTINGS_UPDATE"], (flags) => {
   }
   let result;
   if (null != prop) {
-    const obj = obj2(15570);
+    const obj = obj2(15711);
     result = obj.b64ToDeclarativeSettingsProto(flags.declarative_settings_proto);
   }
   obj2 = { type: "NOTIFICATION_SETTINGS_UPDATE", settings: { flags: flags.flags, declarativeSettings: result } };
@@ -3312,7 +3327,7 @@ defineSimpleDispatch(["SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE"], (intera
 defineSimpleDispatch(["GUILD_ROOM_CONNECT"], (body, type) => {
   let obj2;
   const obj = { type, room: obj2.serverGuildRoomToClient(body) };
-  obj2 = obj(7909);
+  obj2 = obj(8033);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -3336,7 +3351,7 @@ defineSimpleDispatch(["GUILD_ROOM_DISCONNECT"], (userId, type) => {
 defineSimpleDispatch(["GUILD_ROOM_UPDATE"], (body, type) => {
   let obj2;
   const obj = { type, room: obj2.serverGuildRoomToClient(body) };
-  obj2 = obj(7909);
+  obj2 = obj(8033);
   const obj3 = DispatcherDefault;
   const dispatchResult = obj3.dispatch(obj);
   dispatchResult.catch((error) => {

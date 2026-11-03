@@ -1,25 +1,25 @@
-// Module ID: 10179
-// Function ID: 10180
+// Module ID: 10309
+// Function ID: 10310
 // Name: FeedbackActionSheet
-// Dependencies: [32, 19, 17, 10158, 21, 5014, 575, 5258, 6732, 12, 10161, 5593, 6744, 10180, 1994, 1625, 5272, 7321, 7367, 5275, 5624, 10162, 7060, 6975, 6974, 1113, 2]
+// Dependencies: [32, 19, 17, 10288, 21, 5141, 575, 5381, 6852, 12, 10291, 5716, 6864, 10310, 2123, 1627, 5395, 7441, 7487, 5398, 5747, 10292, 7186, 7101, 7100, 1113, 2]
 // Exports: default
 
-// Module 10179 (FeedbackActionSheet)
+// Module 10309 (FeedbackActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import Constants from "Constants" /* 10158 */;
-import FeedbackUtils from "FeedbackUtils" /* 10161 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import Constants from "Constants" /* 10288 */;
+import FeedbackUtils from "FeedbackUtils" /* 10291 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, onPress;
+let onPress;
 
 let metroImportAll;
 let metroImportDefault;
@@ -128,7 +128,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
       tmp16 = undefined;
       obj3 = { rating, reason, dontShowAgain: first1 };
       ModalActionCreatorsDefault;
-      const tmp11 = asyncRequire(10180, dependencyMap.paths);
+      const tmp11 = asyncRequire(10310, dependencyMap.paths);
       if (View != null) {
         tmp16 = View(reason);
       }
@@ -175,7 +175,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
   const sum = 232 + num + bottom;
   let obj3 = { scrollable: true, ref, startHeight: sum, maxHeight: tmp22, header: closure_7(BottomSheetTitleHeader, obj4), children: tmp25(BottomSheetScrollView, obj6) };
   tmp22 = undefined;
-  BottomSheet = tmp15(tmp4[16]).BottomSheet;
+  const BottomSheet = tmp15(tmp4[16]).BottomSheet;
   if (null == selectedRating) {
     tmp22 = sum;
   }

@@ -1,22 +1,22 @@
-// Module ID: 9880
-// Function ID: 9881
+// Module ID: 10011
+// Function ID: 10012
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7767, 5655, 1072, 21, 5014, 575, 1497, 504, 9849, 9867, 9852, 6977, 5624, 1113, 7038, 5587, 9881, 9882, 9884, 2]
+// Dependencies: [19, 17, 7891, 5775, 1072, 21, 5141, 575, 1499, 504, 9980, 9998, 9983, 7103, 5747, 1113, 7164, 5710, 10012, 10013, 10015, 2]
 
-// Module 9880 (ConversationListItem)
+// Module 10011 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5655 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9849 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9852 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9867 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9882 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9884 */;
+import ConversationConstants from "ConversationConstants" /* 5775 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9980 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9983 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9998 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10013 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10015 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7767 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7891 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

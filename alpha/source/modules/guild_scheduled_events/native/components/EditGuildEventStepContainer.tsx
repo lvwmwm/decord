@@ -1,17 +1,17 @@
-// Module ID: 8989
-// Function ID: 8990
+// Module ID: 9117
+// Function ID: 9118
 // Name: EditGuildEventStepContainer
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5607, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5730, 2]
 // Exports: default
 
-// Module 8989 (EditGuildEventStepContainer)
+// Module 9117 (EditGuildEventStepContainer)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5607 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,17 +41,17 @@ export default function EditGuildEventsStepContainer(arg0) {
   let ref;
   closure_0 = undefined;
   ({ children, action, ref } = arg0);
-  let tmp = closure_8();
+  const tmp = closure_8();
   [first, closure_0] = react.useState(32);
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  let obj = { style: tmp.container, children: items1 };
-  let obj2 = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
+  const obj2 = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
   items = [tmp.flex, { marginBottom: first + insets.bottom }];
+  const obj = { style: tmp.container, children: items1 };
   const callback = react.useCallback((nativeEvent) => {
     closure_0(nativeEvent.nativeEvent.layout.height);
   }, []);
   items1 = [metroRequire(hasOwnProperty, obj2), ];
-  let obj3 = { style: items2, onLayout: callback, children: action };
+  const obj3 = { style: items2, onLayout: callback, children: action };
   items2 = [tmp.buttonContainer, { paddingBottom: insets.bottom }];
   items1[1] = metroRequire(React3, obj3);
   return metroImportDefault(React3, obj);

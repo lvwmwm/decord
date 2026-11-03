@@ -1,12 +1,12 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14983
+// Function ID: 14984
 // Name: isOnXbox
-// Dependencies: [2018, 9738, 2]
+// Dependencies: [2147, 9870, 2]
 // Exports: default
 
-// Module 14852 (isOnXbox)
-import Constants from "Constants" /* 2018 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
+// Module 14983 (isOnXbox)
+import Constants from "Constants" /* 2147 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9870 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Constants.XBOX_ACTIVITY_APPLICATION_ID;

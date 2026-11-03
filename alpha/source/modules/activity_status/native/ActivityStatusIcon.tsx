@@ -1,13 +1,13 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 10881
+// Function ID: 10882
 // Name: ActivityStatusIcon
-// Dependencies: [19, 21, 5014, 2]
+// Dependencies: [19, 21, 5141, 2]
 // Exports: default
 
-// Module 10751 (ActivityStatusIcon)
+// Module 10881 (ActivityStatusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

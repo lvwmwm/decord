@@ -1,144 +1,198 @@
-// Module ID: 19305
-// Function ID: 19306
+// Module ID: 19463
+// Function ID: 19464
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11223, 11226, 11221, 21, 5014, 575, 11222, 19299, 5095, 5080, 19306, 19304, 5637, 6960, 1187, 5624, 6980, 11979, 1113, 19307, 2]
+// Dependencies: [19, 11360, 11363, 11358, 21, 5141, 575, 11359, 19457, 1652, 5207, 19464, 19462, 5757, 1705, 7086, 1187, 5747, 7106, 12116, 1113, 19465, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 19305 (VoicePanelConsoleStatus)
+// Module 19463 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5080 */;
-import spring from "spring" /* 5637 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
+import native from "native" /* 5207 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11358 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11363 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
+
+let tmp3;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let tmp;
-const ReanimatedRexport = tmp(5095);
 class VoicePanelConsoleStatus {
-  constructor(cleanUp) {
+  constructor(arg0) {
     let Text;
     let View2;
+    let accessoryHeights;
     let channelId;
+    let cleanUp;
+    let color;
     let displayCancel;
     let hiddenProps;
     let hiddenStyles;
     let icon;
     let intl;
-    let items1;
-    let items2;
-    let items3;
-    let items4;
+    let items5;
+    let items6;
+    let items7;
+    let items8;
     let mode;
-    let obj12;
-    let obj7;
-    let obj8;
+    let obj5;
+    let obj9;
     let state;
     let text;
+    let tmp13;
+    let tmp14;
+    let tmp15;
     let tmp16;
-    let wrapperSpecs;
-    ({ wrapperSpecs, state } = cleanUp);
-    cleanUp = cleanUp.cleanUp;
+    let tmp17;
+    let tmp18;
+    let tmp19;
+    let tmp20;
+    let tmp21;
+    let tmp22;
+    let tmp23;
+    let tmp24;
+    let tmp26;
+    let tmp27;
+    let tmp28;
+    let tmp2Result2;
     let windowDimensions;
-    let color;
-    const accessoryHeights = cleanUp.accessoryHeights;
+    let wrapperSpecs;
+    ({ wrapperSpecs, state } = arg0);
+    let sharedValue;
+    ({ accessoryHeights, cleanUp } = arg0);
     let tmp = closure_8();
-    let tmp3 = windowDimensions;
-    const tmp2 = cleanUp;
-    const context = color.useContext(cleanUp(windowDimensions[7]));
-    windowDimensions = context.windowDimensions;
-    ({ mode, channelId } = context);
-    const tmp5 = cleanUp(windowDimensions[8])(channelId);
-    color = tmp5.color;
-    ({ icon, text, displayCancel } = tmp5);
-    let obj = state(windowDimensions[9]);
-    const sharedValue = obj.useSharedValue(false);
+    let tmp2 = sharedValue;
+    const context = react.useContext(sharedValue(11359));
+    ({ windowDimensions, mode, channelId } = context);
+    const tmp5 = sharedValue(19457)(channelId);
+    const tmp6 = state;
+    ({ icon, text, color, displayCancel } = tmp5);
+    let obj = state(1652);
+    sharedValue = obj.useSharedValue(false);
     let items = [sharedValue, state];
-    const effect = color.useEffect(() => {
+    const effect = react.useEffect(() => {
       const result = sharedValue.set(state !== native.TransitionStates.YEETED);
     }, items);
-    const tmp9 = cleanUp(windowDimensions[11])(mode, wrapperSpecs, accessoryHeights);
-    ({ hiddenProps, hiddenStyles } = cleanUp(windowDimensions[12])(mode, wrapperSpecs));
-    cleanUp(windowDimensions[12])(mode, wrapperSpecs);
-    const obj2 = state(windowDimensions[9]);
-    let fn = function v() {
-      let fn;
-      let items;
-      size = { backgroundColor: color, width: windowDimensions.get().width - 2 * EDGE_GUTTER, height: CONTROLS_HEIGHT + 36, borderRadius: 32, transform: items };
-      let tmp = require;
-      const withSpring = spring.withSpring;
-      let num = 100;
-      if (sharedValue.get()) {
-        num = 0;
-      }
-      let obj = { translateY: withSpring(num, obj4, "respect-motion-settings", fn) };
-      fn = function n(arg0) {
-        const tmp = arg0 && !sharedValue.get();
-        if (tmp) {
-          const obj = state(windowDimensions[9]);
-          obj.runOnJS(cleanUp)();
-        }
-      };
-      fn.__closure = { shouldShow: sharedValue, runOnJS: ReanimatedRexport.runOnJS, cleanUp };
-      fn.__workletHash = 9820708059867;
-      fn.__initData = __initData;
-      ({ shouldShow: sharedValue, runOnJS: ReanimatedRexport.runOnJS, cleanUp });
-      items = [obj];
-      return size;
-    };
-    fn.__closure = { color, windowDimensions, EDGE_GUTTER: sharedValue, CONTROLS_HEIGHT, CONSOLE_STATUS_HEIGHT: 36, withSpring: state(windowDimensions[13]).withSpring, shouldShow: sharedValue, FADE_IN_MODE_PHYSICS: obj4, runOnJS: state(windowDimensions[9]).runOnJS, cleanUp };
-    fn.__workletHash = 14156265059426;
-    fn.__initData = __initData;
-    ({ color, windowDimensions, EDGE_GUTTER: sharedValue, CONTROLS_HEIGHT, CONSOLE_STATUS_HEIGHT: 36, withSpring: state(windowDimensions[13]).withSpring, shouldShow: sharedValue, FADE_IN_MODE_PHYSICS: obj4, runOnJS: state(windowDimensions[9]).runOnJS, cleanUp });
-    const animatedStyle = obj2.useAnimatedStyle(fn);
-    obj4 = state(windowDimensions[9]);
-    class V {
+    const tmp9 = sharedValue(19464)(mode, wrapperSpecs, accessoryHeights);
+    ({ hiddenProps, hiddenStyles } = sharedValue(19462)(mode, wrapperSpecs));
+    sharedValue(19462)(mode, wrapperSpecs);
+    let items1 = [closure_11, color, windowDimensions, EDGE_GUTTER, CONTROLS_HEIGHT, 36, , , , , , ];
+    const useAnimatedStyle = state(1652).useAnimatedStyle;
+    state(1652);
+    items1[6] = state(5757).withSpring;
+    items1[7] = sharedValue;
+    items1[8] = obj4;
+    items1[9] = closure_10;
+    items1[10] = state(1705).scheduleOnRN;
+    items1[11] = cleanUp;
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    let c4;
+    let c5;
+    let c6;
+    let c7;
+    let c8;
+    let c9;
+    let c10;
+    [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24] = items1;
+    const tmp12 = EDGE_GUTTER;
+    class VoicePanelConsoleStatusTsx2 {
       constructor() {
-        const obj = { width: windowDimensions.get().width - 2 * EDGE_GUTTER };
+        let items2;
+        let tmp4;
+        let tmp5;
+        let tmp6;
+        let tmp7;
+        size = { backgroundColor, width: _undefined.get().width - 2 * c2, height: c3 + c4, borderRadius: 32, transform: items2 };
+        let tmp = c5;
+        let num = 100;
+        const tmp2 = _undefined2;
+        if (_undefined2.get()) {
+          num = 0;
+        }
+        const items = [c8, tmp2, c9, c10];
+        [tmp4, tmp5, tmp6, tmp7] = items;
+        const obj = { translateY: tmp(num, c7, "respect-motion-settings", VoicePanelConsoleStatusTsx1) };
+        class VoicePanelConsoleStatusTsx1 {
+          constructor(arg0) {
+            tmp = arg0;
+            if (tmp) {
+              tmp2 = closure_0;
+              tmp = !closure_0.get();
+            }
+            if (tmp) {
+              tmp3 = closure_1;
+              tmp4 = closure_2;
+              tmp5 = closure_1(closure_2);
+            }
+            return;
+          }
+        }
+        const items1 = [tmp5, tmp6, tmp7];
+        VoicePanelConsoleStatusTsx1.__closure = items1;
+        VoicePanelConsoleStatusTsx1.__workletHash = 9535056131648;
+        VoicePanelConsoleStatusTsx1.__initData = tmp4;
+        items2 = [obj];
+        return size;
+      }
+    }
+    let items2 = [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24];
+    VoicePanelConsoleStatusTsx2.__closure = items2;
+    VoicePanelConsoleStatusTsx2.__workletHash = 17263747246830;
+    VoicePanelConsoleStatusTsx2.__initData = tmp13;
+    const animatedStyle = useAnimatedStyle(VoicePanelConsoleStatusTsx2);
+    const items3 = [closure_12, windowDimensions, tmp12];
+    c0 = undefined;
+    c1 = undefined;
+    [tmp26, tmp27, tmp28] = items3;
+    const tmp6Result = tmp6(1652);
+    class VoicePanelConsoleStatusTsx3 {
+      constructor() {
+        const obj = { width: _undefined.get().width - 2 * c1 };
         return obj;
       }
     }
-    V.__closure = { windowDimensions, EDGE_GUTTER: sharedValue };
-    V.__workletHash = 2418678233810;
-    V.__initData = __initData2;
-    const animatedStyle1 = obj4.useAnimatedStyle(V);
-    const obj5 = { style: items1, animatedProps: hiddenProps, children: items3 };
-    items1 = [tmp.consoleParentContainer, tmp9, hiddenStyles];
-    const View = cleanUp(windowDimensions[9]).View;
-    const obj6 = { style: tmp.consoleContainer, children: closure_6(View2, obj7) };
-    obj7 = { style: animatedStyle, children: closure_7(tmp16, obj8) };
-    const tmp15 = cleanUp(windowDimensions[14]);
-    View2 = cleanUp(windowDimensions[9]).View;
-    obj8 = { style: tmp.consoleItemContainer, children: items2 };
-    const obj9 = { source: icon, color: cleanUp(windowDimensions[6]).unsafe_rawColors.WHITE, size: state(windowDimensions[15]).IconSizes.SMALL };
-    tmp16 = cleanUp(windowDimensions[14]);
-    const Icon = state(windowDimensions[15]).Icon;
-    items2 = [closure_6(Icon, obj9), , ];
-    const obj10 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.consoleText, children: text };
-    items2[1] = closure_6(state(windowDimensions[16]).Text, obj10);
-    let tmp14Result = null;
+    const items4 = [tmp27, tmp28];
+    VoicePanelConsoleStatusTsx3.__closure = items4;
+    VoicePanelConsoleStatusTsx3.__workletHash = 5648007408747;
+    VoicePanelConsoleStatusTsx3.__initData = tmp26;
+    const animatedStyle1 = tmp6Result.useAnimatedStyle(VoicePanelConsoleStatusTsx3);
+    const obj2 = { style: items5, animatedProps: hiddenProps, children: items7 };
+    items5 = [tmp.consoleParentContainer, tmp9, hiddenStyles];
+    const View = tmp2(1652).View;
+    const obj3 = { style: tmp.consoleContainer, children: closure_6(View2, obj4) };
+    obj4 = { style: animatedStyle, children: closure_7(tmp2Result2, obj5) };
+    const tmp2Result = tmp2(7086);
+    View2 = tmp2(1652).View;
+    obj5 = { style: tmp.consoleItemContainer, children: items6 };
+    const obj6 = { source: icon, color: tmp2(575).unsafe_rawColors.WHITE, size: tmp6(1187).IconSizes.SMALL };
+    tmp2Result2 = tmp2(7086);
+    const Icon = tmp6(1187).Icon;
+    items6 = [closure_6(Icon, obj6), , ];
+    const obj7 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.consoleText, children: text };
+    items6[1] = closure_6(tmp6(5747).Text, obj7);
+    let tmp31Result = null;
     if (displayCancel) {
-      const obj11 = { hitSlop: 4, onPress: state(tmp3[18]).disconnectRemote, children: closure_6(Text, obj12) };
-      const PressableOpacity = tmp6(tmp3[17]).PressableOpacity;
-      obj12 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl.string(state(tmp3[19]).t["ETE/oC"]) };
-      Text = tmp6(tmp3[16]).Text;
-      intl = tmp6(tmp3[19]).intl;
-      tmp14Result = tmp14(PressableOpacity, obj11);
+      const obj8 = { hitSlop: 4, onPress: tmp6(12116).disconnectRemote, children: closure_6(Text, obj9) };
+      const PressableOpacity = tmp6(7106).PressableOpacity;
+      obj9 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl.string(tmp6(1113).t["ETE/oC"]) };
+      Text = tmp6(5747).Text;
+      intl = tmp6(1113).intl;
+      tmp31Result = tmp31(PressableOpacity, obj8);
     }
-    items2[2] = tmp14Result;
-    items3 = [closure_6(tmp15, obj6), ];
-    const obj13 = { style: items4, children: closure_6(state(tmp3[20]).VoicePanelVisualEffectView, {}) };
-    items4 = [tmp.blockingControlCover, animatedStyle1];
-    const View3 = tmp2(tmp3[9]).View;
-    items3[1] = closure_6(View3, obj13);
-    return closure_7(View, obj5);
+    items6[2] = tmp31Result;
+    items7 = [closure_6(tmp2Result, obj3), ];
+    const obj10 = { style: items8, children: closure_6(tmp6(19465).VoicePanelVisualEffectView, {}) };
+    items8 = [tmp.blockingControlCover, animatedStyle1];
+    const View3 = tmp2(1652).View;
+    items7[1] = closure_6(View3, obj10);
+    return closure_7(View, obj2);
   }
 }
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
@@ -153,9 +207,9 @@ obj3 = { position: "absolute", bottom: 0, borderRadius: nativeDefault.modules.mo
 const metroImportAll = createStyles(obj);
 let obj4 = { overshootClamping: true };
 let merged = Object.assign(MODE_CHANGE_PHYSICS);
-const authStore = { code: "function VoicePanelConsoleStatusTsx1(){const{color,windowDimensions,EDGE_GUTTER,CONTROLS_HEIGHT,CONSOLE_STATUS_HEIGHT,withSpring,shouldShow,FADE_IN_MODE_PHYSICS,runOnJS,cleanUp}=this.__closure;return{backgroundColor:color,width:windowDimensions.get().width-EDGE_GUTTER*2,height:CONTROLS_HEIGHT+CONSOLE_STATUS_HEIGHT,borderRadius:32,transform:[{translateY:withSpring(shouldShow.get()?0:100,FADE_IN_MODE_PHYSICS,'respect-motion-settings',function(finished){if(finished&&!shouldShow.get()){runOnJS(cleanUp)();}})}]};}" };
-let closure_11 = { code: "function VoicePanelConsoleStatusTsx2(finished){const{shouldShow,runOnJS,cleanUp}=this.__closure;if(finished&&!shouldShow.get()){runOnJS(cleanUp)();}}" };
-const authStore2 = { code: "function VoicePanelConsoleStatusTsx3(){const{windowDimensions,EDGE_GUTTER}=this.__closure;return{width:windowDimensions.get().width-EDGE_GUTTER*2};}" };
+let closure_10 = { code: "(function VoicePanelConsoleStatusTsx1(finished){let[shouldShow,scheduleOnRN,cleanUp]=this.__closure;if(finished&&!shouldShow.get()){scheduleOnRN(cleanUp);}})" };
+let closure_11 = { code: "(function VoicePanelConsoleStatusTsx2(){let[color,windowDimensions,EDGE_GUTTER,CONTROLS_HEIGHT,CONSOLE_STATUS_HEIGHT,withSpring,shouldShow,FADE_IN_MODE_PHYSICS,_worklet_9535056131648_init_data,scheduleOnRN,cleanUp]=this.__closure;return{backgroundColor:color,width:windowDimensions.get().width-EDGE_GUTTER*2,height:CONTROLS_HEIGHT+CONSOLE_STATUS_HEIGHT,borderRadius:32,transform:[{translateY:withSpring(shouldShow.get()?0:100,FADE_IN_MODE_PHYSICS,'respect-motion-settings',function VoicePanelConsoleStatusTsx1Factory([_worklet_9535056131648_init_data,shouldShow,scheduleOnRN,cleanUp]){const VoicePanelConsoleStatusTsx1=function(finished){if(finished&&!shouldShow.get()){scheduleOnRN(cleanUp);}};VoicePanelConsoleStatusTsx1.__closure=[shouldShow,scheduleOnRN,cleanUp];VoicePanelConsoleStatusTsx1.__workletHash=9535056131648;VoicePanelConsoleStatusTsx1.__initData=_worklet_9535056131648_init_data;return VoicePanelConsoleStatusTsx1;}([_worklet_9535056131648_init_data,shouldShow,scheduleOnRN,cleanUp]))}]};})" };
+let closure_12 = { code: "(function VoicePanelConsoleStatusTsx3(){let[windowDimensions,EDGE_GUTTER]=this.__closure;return{width:windowDimensions.get().width-EDGE_GUTTER*2};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelConsoleStatus.tsx");
 

@@ -1,59 +1,75 @@
-// Module ID: 19087
-// Function ID: 19088
+// Module ID: 19245
+// Function ID: 19246
 // Name: ChannelSubtitle
-// Dependencies: [19, 11046, 21, 18727, 5624, 18290, 11044, 2]
+// Dependencies: [19, 11186, 21, 18885, 5747, 18433, 11184, 11195, 2]
 // Exports: renderChannelSubtitle
 
-// Module 19087 (ChannelSubtitle)
+// Module 19245 (ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11044 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 18290 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18727 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11184 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18885 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-function ChannelSubtitle(arg0) {
-  let channelId;
+function ChannelSubtitle(muted) {
   let connected;
-  let flag;
-  let guildId;
-  let muted;
-  let obj3;
-  let renderMessagePreviewMarkup;
-  let str;
   let subtitle;
-  let textProps;
-  ({ muted, textProps } = arg0);
-  ({ connected, channelId, guildId, subtitle } = arg0);
-  const obj = getChannelSubtitleData;
+  muted = muted.muted;
+  const channelId = muted.channelId;
+  const guildId = muted.guildId;
+  const textProps = muted.textProps;
+  let closure_4;
+  ({ connected, subtitle } = muted);
+  const tmp = muted;
+  let obj = muted(guildId[5]);
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
-  if (null == channelSubtitleData) {
-    return null;
-  } else {
-    const obj2 = { children: renderMessagePreviewMarkup(obj3) };
-    const tmp4 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(5624).Text;
-    const merged = Object.assign(textProps);
-    obj3 = { content: channelSubtitleData.subtitle, muted: flag, channelId, guildId, disableAnimatedEmoji: !tmp4, color: str };
-    flag = muted;
-    renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
-    MessagePreviewMarkup;
-    const tmp5 = jsx;
-    if (muted == null) {
-      flag = false;
-    }
-    str = "text-subtle";
-    if (muted) {
-      str = "text-muted";
-    }
-    return tmp5(Text, obj2);
+  let subtitle1;
+  const tmp2 = guildId;
+  if (channelSubtitleData != null) {
+    subtitle1 = channelSubtitleData.subtitle;
   }
+  let type;
+  if (channelSubtitleData != null) {
+    type = channelSubtitleData.type;
+  }
+  let tmp6 = "voice" === type && connected;
+  closure_4 = tmp6;
+  const items = [subtitle1, muted, channelId, guildId, tmp6];
+  const memo = subtitle1.useMemo(() => {
+    let flag;
+    let str;
+    let result;
+    if (null != subtitle1) {
+      const obj = { content: tmp, muted: flag, channelId, guildId, disableAnimatedEmoji: !closure_4, color: str };
+      flag = muted;
+      const renderMeasuredMessagePreviewMarkup = MessagePreviewMarkup.renderMeasuredMessagePreviewMarkup;
+      MessagePreviewMarkup;
+      const tmp6 = muted;
+      if (muted == null) {
+        flag = false;
+      }
+      str = "text-subtle";
+      if (tmp6) {
+        str = "text-muted";
+      }
+      result = renderMeasuredMessagePreviewMarkup(obj);
+    }
+    return result;
+  }, items);
+  let tmp8 = null;
+  if (null != memo) {
+    const MessagePreviewParagraph = tmp(tmp2[7]).MessagePreviewParagraph;
+    const merged = Object.assign(textProps);
+    ({ mentions: obj2.mentions, content: obj2.children } = memo);
+    tmp8 = <MessagePreviewParagraph />;
+  }
+  return tmp8;
 }
 const SUBTITLE_OPACITY_NORMAL = RedesignChannelListConstants.SUBTITLE_OPACITY_NORMAL;
 const jsx = Fragment.jsx;
-const result = size.fileFinishedImporting("modules/launchpad/native/shared/ChannelSubtitle.tsx");
+let result = size.fileFinishedImporting("modules/launchpad/native/shared/ChannelSubtitle.tsx");
 
 export function renderChannelSubtitle(arg0) {
   let muted;

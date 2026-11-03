@@ -1,10 +1,10 @@
-// Module ID: 11331
-// Function ID: 11332
+// Module ID: 11468
+// Function ID: 11469
 // Name: PinotChannelLabelAnchor
 // Dependencies: [32, 19, 560, 2]
 // Exports: usePinotChannelLabelAnchor, usePinotChannelLabelCenter
 
-// Module 11331 (PinotChannelLabelAnchor)
+// Module 11468 (PinotChannelLabelAnchor)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;

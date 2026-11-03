@@ -1,30 +1,26 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11172
+// Function ID: 11173
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 4956, 21, 8659, 11040, 10758, 10535, 5727, 11042, 9833, 9835, 5642, 11044, 11021, 11049, 11047, 5624, 5253, 5014, 575, 5596, 4839, 8377, 9885, 8710, 8381, 504, 2]
+// Dependencies: [19, 17, 5083, 21, 8783, 11173, 10888, 10665, 5847, 11175, 9964, 9966, 5762, 11154, 11177, 11182, 11184, 11195, 5376, 5141, 575, 5719, 4966, 8501, 10016, 8834, 8505, 504, 2]
 
-// Module 11039 (ChannelRowPreview)
+// Module 11172 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import createStyles from "createStyles" /* 5014 */;
-import useToken from "useToken" /* 5596 */;
-import useFontScale from "useFontScale" /* 5642 */;
-import LinkIcon2 from "LinkIcon" /* 5727 */;
-import RowGeneratorDefault from "RowGenerator" /* 8377 */;
-import ImageIcon2 from "ImageIcon" /* 8659 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8710 */;
-import PhoneCallIcon2 from "PhoneCallIcon" /* 9833 */;
-import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9835 */;
-import AttachmentIcon2 from "AttachmentIcon" /* 10535 */;
-import MusicIcon2 from "MusicIcon" /* 10758 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 11021 */;
-import VideoIcon2 from "VideoIcon" /* 11040 */;
-import StickerIcon2 from "StickerIcon" /* 11042 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11044 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import ChannelListLayout from "ChannelListLayout" /* 11049 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import createStyles from "createStyles" /* 5141 */;
+import useToken from "useToken" /* 5719 */;
+import LinkIcon2 from "LinkIcon" /* 5847 */;
+import RowGeneratorDefault from "RowGenerator" /* 8501 */;
+import ImageIcon2 from "ImageIcon" /* 8783 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8834 */;
+import PhoneCallIcon2 from "PhoneCallIcon" /* 9964 */;
+import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9966 */;
+import AttachmentIcon2 from "AttachmentIcon" /* 10665 */;
+import MusicIcon2 from "MusicIcon" /* 10888 */;
+import VideoIcon2 from "VideoIcon" /* 11173 */;
+import StickerIcon2 from "StickerIcon" /* 11175 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11184 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -33,10 +29,8 @@ let _require, dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
-let tmp;
 let tmp2;
-const Text_Text = tmp(5624);
-const react_native2 = tmp2(8381);
+const react_native2 = tmp2(8505);
 function PreviewIcon(icon) {
   icon = icon.icon;
   const merged = Object.assign(icon, Object.assign({ icon: 0 }));
@@ -83,76 +77,103 @@ function PreviewIcon(icon) {
   }
 }
 class ChannelRowPreview {
-  constructor(arg0) {
+  constructor(message) {
     let authorLabel;
-    let channel;
     let color;
-    let items;
+    let combined;
     let items1;
-    let layout;
-    let lineClamp;
-    let message;
-    let muted;
+    let mentions;
     let obj6;
     let trailingIcon;
+    let type;
     let variant;
-    ({ message, channel, layout, lineClamp } = arg0);
-    if (lineClamp === undefined) {
-      lineClamp = 1;
+    message = message.message;
+    const channel = message.channel;
+    const layout = message.layout;
+    let num = message.lineClamp;
+    if (num === undefined) {
+      num = 1;
     }
-    ({ variant, color, muted } = arg0);
-    const obj = useFontScale;
+    const muted = message.muted;
+    ({ variant, color } = message);
+    color = undefined;
+    let content;
+    const tmp = message;
+    let obj = message(layout[12]);
     const fontScale = obj.useFontScale();
-    const obj2 = useFormattedMessagePreview;
+    let obj2 = message(layout[13]);
     const formattedMessagePreview = obj2.useFormattedMessagePreview(message, channel);
-    const obj3 = ChannelListLayout;
+    const obj3 = message(layout[14]);
     const layoutStyles = obj3.getLayoutStyles(layout);
-    useScaledTextLineHeight;
+    const obj4 = message(layout[15]);
+    const scaleTextLineHeightResult = obj4.scaleTextLineHeight(layoutStyles.messagePreview.text.variant, fontScale);
+    const tmp2 = layout;
+    if (color == null) {
+      let color1;
+      if (formattedMessagePreview != null) {
+        color1 = formattedMessagePreview.color;
+      }
+      color = color1;
+    }
+    let type1;
+    if (formattedMessagePreview != null) {
+      type1 = formattedMessagePreview.type;
+    }
+    if ("markup" === type1) {
+      content = formattedMessagePreview.markup;
+    } else if ("message" === type1) {
+      content = formattedMessagePreview.message.content;
+    }
+    const items = [content, muted, channel.guild_id, message.channel_id, layout, color, fontScale];
+    const memo = muted.useMemo(() => {
+      let result;
+      if (null != content) {
+        const obj2 = { content: tmp, muted, guildId: channel.guild_id, channelId: message.channel_id, layout, color, fontScale };
+        const obj = MessagePreviewMarkup;
+        result = obj.renderMeasuredMessagePreviewMarkup(obj2);
+      }
+      return result;
+    }, items);
     if (null == formattedMessagePreview) {
       return null;
     } else {
       let text;
-      ({ authorLabel, trailingIcon } = formattedMessagePreview);
-      if (color == null) {
-        color = formattedMessagePreview.color;
-      }
-      const type = formattedMessagePreview.type;
+      ({ authorLabel, trailingIcon, type } = formattedMessagePreview);
       if ("text" === type) {
         text = formattedMessagePreview.text;
       } else if ("markup" === type) {
-        let content;
-        const tmp8 = metroRequire;
-        const tmp9 = closure_9;
-        if ("markup" === formattedMessagePreview.type) {
-          content = formattedMessagePreview.markup;
-        } else {
-          content = formattedMessagePreview.message.content;
+        let content1;
+        if (memo != null) {
+          content1 = memo.content;
         }
-        const obj4 = { markup: content, channelId: message.channel_id, guildId: channel.guild_id, muted, layout, color };
-        text = tmp8(tmp9, obj4);
+        text = content1;
       }
       const obj5 = { style: obj6, children: items1 };
-      obj6 = { flexDirection: "row", alignItems: "center", minHeight: tmp7 };
-      const obj7 = { lineClamp, variant, maxFontSizeMultiplier: 1.75, color, style: { paddingBottom: 2, flexShrink: 1 }, children: items };
-      const Text = Text_Text.Text;
-      const tmp11 = View;
+      obj6 = { flexDirection: "row", alignItems: "center", minHeight: scaleTextLineHeightResult };
+      const obj7 = { lineClamp: num, variant, maxFontSizeMultiplier: 1.75, color, leadingContent: combined, mentions, style: { paddingBottom: 2, flexShrink: 1 }, children: text };
+      const MessagePreviewParagraph = tmp(tmp2[17]).MessagePreviewParagraph;
+      const tmp11 = closure_7;
+      const tmp12 = fontScale;
       if (variant == null) {
         variant = "text-sm/normal";
       }
-      let combined = null != authorLabel;
-      if (combined) {
+      combined = undefined;
+      if (null != authorLabel) {
         const _HermesInternal = HermesInternal;
         combined = "" + authorLabel + ": ";
       }
-      items = [combined, text];
-      items1 = [metroImportDefault(Text, obj7), ];
-      let tmp14 = null != trailingIcon;
-      if (tmp14) {
-        const obj8 = { icon: trailingIcon, size: layoutStyles.messagePreview.messageTypeIconSizeNew, color, style: { marginLeft: 4 } };
-        tmp14 = metroRequire(PreviewIcon, obj8);
+      mentions = undefined;
+      if (memo != null) {
+        mentions = memo.mentions;
       }
-      items1[1] = tmp14;
-      return metroImportDefault(tmp11, obj5);
+      items1 = [content(MessagePreviewParagraph, obj7), ];
+      let tmp13Result = null != trailingIcon;
+      if (tmp13Result) {
+        const obj8 = { icon: trailingIcon, size: layoutStyles.messagePreview.messageTypeIconSizeNew, color, style: { marginLeft: 4 } };
+        tmp13Result = tmp13(PreviewIcon, obj8);
+      }
+      items1[1] = tmp13Result;
+      return tmp11(tmp12, obj5);
     }
   }
 }
@@ -174,7 +195,7 @@ class NativeChannelRowPreview {
       gifAutoPlay = false;
     }
     ({ textColor, gradientStyles, gradientColors } = arg0);
-    const tmp = gifAutoPlay(5253)();
+    const tmp = gifAutoPlay(5376)();
     let obj = createStyles;
     let obj2 = { seeMoreLabelColor: gifAutoPlay(575).colors.TEXT_DEFAULT };
     dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -224,25 +245,12 @@ class NativeChannelRowPreview {
       gradientStyles,
       gradientColors
     };
-    return setting2(gifAutoPlay(9885), obj4);
+    return setting2(gifAutoPlay(10016), obj4);
   }
 }
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_9 = react.memo(function PreviewMarkup(arg0) {
-  let channelId;
-  let color;
-  let guildId;
-  let layout;
-  let markup;
-  let muted;
-  ({ markup, channelId, guildId, muted, layout, color } = arg0);
-  const obj = useFontScale;
-  const fontScale = obj.useFontScale();
-  const obj2 = MessagePreviewMarkup;
-  return obj2.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
-});
 const memoResult = react.memo(function NativeMessageChannelRowPreview(message) {
   _require = message;
   const items = [RelationshipStore];
@@ -263,7 +271,7 @@ const memoResult = react.memo(function NativeMessageChannelRowPreview(message) {
   const merged1 = Object.assign(message);
   tmp7 = closure_6(ChannelRowPreview, obj4);
 });
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/ChannelRowPreview.tsx");
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/ChannelRowPreview.tsx");
 
 export { ChannelRowPreview };
 export { NativeChannelRowPreview };

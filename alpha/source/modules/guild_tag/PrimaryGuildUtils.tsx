@@ -1,10 +1,10 @@
-// Module ID: 1399
-// Function ID: 1400
+// Module ID: 1401
+// Function ID: 1402
 // Name: PrimaryGuildUtils
 // Dependencies: [2]
 // Exports: ensureUserPrimaryGuild, isUserPrimaryGuildEqual
 
-// Module 1399 (PrimaryGuildUtils)
+// Module 1401 (PrimaryGuildUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/PrimaryGuildUtils.tsx");

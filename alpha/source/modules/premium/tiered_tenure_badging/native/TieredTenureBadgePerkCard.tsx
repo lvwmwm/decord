@@ -1,22 +1,22 @@
-// Module ID: 15315
-// Function ID: 15316
+// Module ID: 15456
+// Function ID: 15457
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1383, 1072, 21, 5014, 11455, 15316, 11453, 11445, 15317, 504, 11419, 1252, 11463, 8755, 5258, 11418, 1994, 11418, 1113, 15319, 5624, 11444, 15286, 5717, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5141, 11592, 15457, 11590, 11583, 15458, 504, 11557, 1252, 11600, 8879, 5381, 11556, 2123, 11556, 1113, 15460, 5747, 11582, 15427, 5837, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 15315 (TieredTenureBadgePerkCard)
+// Module 15456 (TieredTenureBadgePerkCard)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import BadgeId from "BadgeId" /* 8755 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11418 */;
-import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 11463 */;
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import BadgeId from "BadgeId" /* 8879 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11556 */;
+import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 11600 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -150,7 +150,7 @@ export function TieredTenureBadgePerkCard() {
     let tmp30Result = null != formatResult;
     const tmp28 = closure_8;
     if (tmp30Result) {
-      const obj10 = { variant: "heading-sm/normal", color: "text-muted", children: formatResult };
+      const obj10 = { variant: "heading-sm/medium", color: "text-muted", children: formatResult };
       tmp30Result = tmp30(tmp(tmp2[22]).Text, obj10);
     }
     const obj11 = { children: items3 };

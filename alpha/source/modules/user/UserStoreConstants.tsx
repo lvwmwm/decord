@@ -1,9 +1,9 @@
-// Module ID: 1395
-// Function ID: 1396
+// Module ID: 1397
+// Function ID: 1398
 // Name: UserStoreConstants
 // Dependencies: [2]
 
-// Module 1395 (UserStoreConstants)
+// Module 1397 (UserStoreConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user/UserStoreConstants.tsx");

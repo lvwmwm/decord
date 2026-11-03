@@ -1,23 +1,27 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 18229
+// Function ID: 18230
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1072, 21, 575, 12522, 11047, 5640, 5014, 5095, 5637, 18080, 5199, 13886, 6999, 8028, 10828, 1113, 5624, 7220, 18086, 5634, 5722, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 12658, 11182, 5760, 5141, 1652, 5757, 5758, 18224, 5322, 14017, 7125, 8152, 10958, 1113, 5747, 7341, 18230, 5754, 5842, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 18085 (MessagesHeader)
+// Module 18229 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import spring from "spring" /* 5637 */;
-import ButtonConstants from "ButtonConstants" /* 5640 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11047 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12522 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import ButtonConstants from "ButtonConstants" /* 5760 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5842 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7125 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7341 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12658 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 18230 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let importDefault;
 
 let StyleSheet;
 let closure_4;
@@ -41,75 +45,90 @@ obj4 = { height: ButtonConstants.SMALL_BUTTON_HEIGHT, gap: nativeDefault.modules
 obj5 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, top: undefined, height: 1 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
-const __initData = { code: "function MessagesHeaderTsx1(){const{withSpring,scrollPosition}=this.__closure;return{opacity:withSpring(scrollPosition.get()>0?1:0)};}" };
+let closure_11 = { code: "(function MessagesHeaderTsx1(){let[withSpring,scrollPosition,Reanimated3DefaultSpringConfig]=this.__closure;return{opacity:withSpring(scrollPosition.get()>0?1:0,Reanimated3DefaultSpringConfig)};})" };
 const memoResult = react.memo(function MessagesHeader(height) {
   let PlusLargeIcon;
   let Text;
-  let headerPanel;
+  let closure_1;
   let intl;
   let intl3;
   let intl4;
-  let items1;
-  let items2;
   let items3;
-  let obj5;
+  let items4;
+  let items5;
+  let obj3;
   let stringResult;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
   height = height.height;
   const scrollPosition = height.scrollPosition;
   let tmp = closure_10();
-  dependencyMap = tmp;
+  importDefault = tmp;
+  let obj = react;
   let items = [tmp, height];
   const memo = react.useMemo(() => {
-    const items = [headerPanel.headerPanel, ];
+    const items = [closure_1.headerPanel, ];
     const obj = { height };
     items[1] = obj;
     return items;
   }, items);
-  let obj = height(5095);
-  const fn = function c() {
-    const withSpring = spring.withSpring;
-    let num = 0;
-    spring;
-    if (scrollPosition.get() > 0) {
-      num = 1;
+  const items1 = [closure_11, , , ];
+  const useAnimatedStyle = height(1652).useAnimatedStyle;
+  height(1652);
+  items1[1] = height(5757).withSpring;
+  items1[2] = scrollPosition;
+  items1[3] = height(5758).Reanimated3DefaultSpringConfig;
+  let c0;
+  let c1;
+  let c2;
+  [tmp6, tmp7, tmp8, tmp9] = items1;
+  class MessagesHeaderTsx1 {
+    constructor() {
+      let num = 0;
+      const tmp = c0;
+      if (_undefined.get() > 0) {
+        num = 1;
+      }
+      const obj = { opacity: tmp(num, c2) };
+      return obj;
     }
-    const obj = { opacity: withSpring(num) };
-    return obj;
-  };
-  let obj2 = { withSpring: height(5637).withSpring, scrollPosition };
-  fn.__closure = obj2;
-  fn.__workletHash = 17233409273245;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = height(18080);
-  const isHomeDrawerEnabled = obj3.useIsHomeDrawerEnabled();
-  const callback = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+  }
+  const items2 = [tmp7, tmp8, tmp9];
+  MessagesHeaderTsx1.__closure = items2;
+  MessagesHeaderTsx1.__workletHash = 7032090280260;
+  MessagesHeaderTsx1.__initData = tmp6;
+  const animatedStyle = useAnimatedStyle(MessagesHeaderTsx1);
+  const tmp3Result = height(18224);
+  const isHomeDrawerEnabled = tmp3Result.useIsHomeDrawerEnabled();
+  const callback = obj.useCallback(() => {
+    const obj = height(dependencyMap[13]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  const callback1 = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+  const callback1 = obj.useCallback(() => {
+    const obj = height(dependencyMap[13]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const obj2 = { screen: "add-friends", params: { sourcePage: "Messages Tab", presentation: "card" } };
       rootNavigationRef.navigate("friends", obj2);
     }
   }, []);
-  const callback2 = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+  const callback2 = obj.useCallback(() => {
+    const obj = height(dependencyMap[13]);
     const rootNavigationRef = obj.getRootNavigationRef();
-    const tmp = headerPanel;
+    const tmp = dependencyMap;
     if (null != rootNavigationRef) {
       const obj3 = { type: constants.DMS };
-      const obj2 = scrollPosition(tmp[13]);
+      const obj2 = closure_1(tmp[14]);
       const result = obj2.navigateToSearchWithPrefetch(rootNavigationRef, obj3);
     }
   }, []);
-  const callback3 = react.useCallback(() => {
-    const obj = height(headerPanel[12]);
+  const callback3 = obj.useCallback(() => {
+    const obj = height(dependencyMap[13]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const current = rootNavigationRef.current;
@@ -119,41 +138,41 @@ const memoResult = react.memo(function MessagesHeader(height) {
       }
     }
   }, []);
-  const obj4 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj5), size: "sm", accessibilityLabel: intl.string(height(1113).t.jD1qzM), onPress: callback3 };
-  const tmp12 = scrollPosition(6999)("bespoke");
-  const IconButton = height(8028).IconButton;
-  obj5 = { size: "sm", color: scrollPosition(575).colors.WHITE };
-  PlusLargeIcon = height(10828).PlusLargeIcon;
-  intl = height(1113).intl;
-  const obj6 = { style: memo, children: items1 };
-  const obj7 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };
-  const tmp14 = closure_6(IconButton, obj4);
-  Text = height(5624).Text;
-  const intl2 = height(1113).intl;
+  let obj2 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj3), size: "sm", accessibilityLabel: intl.string(tmp3(1113).t.jD1qzM), onPress: callback3 };
+  const tmp17 = HeaderDebugOverlayDefault("bespoke");
+  const IconButton = tmp3(8152).IconButton;
+  obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
+  PlusLargeIcon = tmp3(10958).PlusLargeIcon;
+  intl = tmp3(1113).intl;
+  const obj4 = { style: memo, children: items3 };
+  const obj5 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };
+  const tmp19 = closure_6(IconButton, obj2);
+  Text = tmp3(5747).Text;
+  const intl2 = tmp3(1113).intl;
   const string = intl2.string;
-  const t = height(1113).t;
+  const t = tmp3(1113).t;
   if (isHomeDrawerEnabled) {
     stringResult = string(t.YUU0RF);
   } else {
     stringResult = string(t.OIgYlQ);
   }
-  items1 = [closure_6(closure_4, obj7), , , ];
-  const obj8 = { style: tmp.headerPanelButtons, children: items2 };
-  const obj9 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(7220), accessibilityLabel: intl3.string(height(1113).t["5h0QOP"]) };
-  const IconButton2 = tmp3(8028).IconButton;
+  items3 = [closure_6(closure_4, obj5), , , ];
+  const obj6 = { style: tmp.headerPanelButtons, children: items4 };
+  const obj7 = { onPress: callback2, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl3.string(height(1113).t["5h0QOP"]) };
+  const IconButton2 = tmp3(8152).IconButton;
   intl3 = tmp3(1113).intl;
-  items2 = [closure_6(IconButton2, obj9), closure_6(scrollPosition(18086), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
-  const obj10 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(5722), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1113).t.zIJnA6) };
-  const Button = tmp3(5634).Button;
+  items4 = [closure_6(IconButton2, obj7), closure_6(MessageRequestsButtonDefault, { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  const obj8 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: AssetRegistryDefault, onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1113).t.zIJnA6) };
+  const Button = tmp3(5754).Button;
   intl4 = tmp3(1113).intl;
-  items2[2] = closure_6(Button, obj10);
-  items2[3] = tmp14;
-  items1[1] = closure_7(closure_4, obj8);
-  const obj11 = { style: items3 };
-  items3 = [tmp.headerBorder, animatedStyle];
-  items1[2] = closure_6(scrollPosition(5095).View, obj11);
-  items1[3] = tmp12;
-  return closure_7(closure_4, obj6);
+  items4[2] = closure_6(Button, obj8);
+  items4[3] = tmp19;
+  items3[1] = closure_7(closure_4, obj6);
+  const obj9 = { style: items5 };
+  items5 = [tmp.headerBorder, animatedStyle];
+  items3[2] = closure_6(_modDef1652.View, obj9);
+  items3[3] = tmp17;
+  return closure_7(closure_4, obj4);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesHeader.tsx");
 
@@ -163,6 +182,6 @@ export function getMessagesHeaderHeight(fontScale) {
   const obj = MobileVisualRefreshExperiment;
   const refreshToken = obj.resolveRefreshToken(nativeDefault.modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM);
   const obj2 = useScaledTextLineHeight;
-  const sum = obj2.scaleTextLineHeight("redesign/heading-18/bold", bound) + PX_8;
+  const sum = obj2.scaleTextLineHeight("redesign/heading-18/semibold", bound) + PX_8;
   return sum + ButtonConstants.SMALL_BUTTON_HEIGHT + PX_16 + refreshToken;
 }

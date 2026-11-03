@@ -1,27 +1,25 @@
-// Module ID: 7352
-// Function ID: 7353
+// Module ID: 7472
+// Function ID: 7473
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 5015, 4920, 4885, 1383, 7268, 21, 5014, 575, 1497, 504, 7297, 5080, 7353, 1409, 1892, 1379, 5274, 5095, 5254, 5717, 7292, 5624, 1113, 1187, 7354, 6957, 2042, 7379, 5634, 2]
+// Dependencies: [19, 17, 5142, 5047, 5012, 1385, 7388, 21, 5141, 575, 1499, 504, 7417, 5207, 7473, 1411, 2021, 1380, 5397, 1652, 5377, 5837, 7412, 5747, 1113, 1187, 7474, 7083, 2171, 7499, 5754, 2]
 // Exports: default
 
-// Module 7352 (GuildOnboardingCompleted)
+// Module 7472 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7354 */;
-import react_mod from "react" /* 19 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7474 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import GuildRoleStore from "GuildRoleStore" /* 4920 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import GuildRoleStore from "GuildRoleStore" /* 5047 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import UserStore from "UserStore" /* 1385 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let duration, navigation;
 
 let StyleSheet;
 let c10;
@@ -33,10 +31,8 @@ let obj4;
 let obj5;
 let obj6;
 let unpackModuleId;
-let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let c12 = 400;
 let createStyles = createStyles_mod;
 let obj = { screen: { flex: 1, position: "relative" }, container: { backgroundColor: "rgba(0, 0, 0, 0.5)", paddingHorizontal: 24, display: "flex", justifyContent: "center", flexGrow: 1 }, containerWithoutSplash: obj2, backgroundImage: { position: "absolute", width: "100%", height: "100%" }, title: {}, subtitle: { marginTop: 16 }, card: obj3, username: { marginTop: 16 }, rolesHeader: { marginTop: 8 }, roles: { marginTop: 12, display: "flex", flexDirection: "row", flexWrap: "wrap" }, role: { marginRight: 8 }, roleOverflow: obj4, animation: obj5, wave: obj6, animationText: { flexGrow: 1, marginLeft: 8 }, getStartedButton: { marginTop: 24 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -46,8 +42,8 @@ obj4 = { paddingHorizontal: 8, height: 28, borderRadius: nativeDefault.radii.xs,
 obj5 = { marginTop: 24, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 2, borderRadius: nativeDefault.radii.sm, padding: 12, display: "flex", flexDirection: "row", alignItems: "center" };
 obj6 = { transform: items };
 items = [{ translateX: 24 }, { rotate: "5deg" }];
-let closure_13 = createStyles(obj);
-const __initData = { code: "function GuildOnboardingCompletedTsx1(){const{withSequence,withTiming,withDelay,ANIMATION_DURATION,Easing,useReducedMotion}=this.__closure;const opacity=withSequence(withTiming(0,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(0.5,{duration:ANIMATION_DURATION})),withTiming(1,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const scale=withSequence(withTiming(1,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(1.5,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)})),withTiming(1,{duration:useReducedMotion?1:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const rawRotation=withSequence(withTiming('0deg',{duration:0}),withDelay(ANIMATION_DURATION,withTiming('-2deg',{duration:ANIMATION_DURATION})),withTiming('-5deg',{duration:ANIMATION_DURATION}));return{opacity:opacity,transform:[{rotate:rawRotation},{scale:scale}]};}" };
+let closure_12 = createStyles(obj);
+let closure_13 = { code: "(function GuildOnboardingCompletedTsx1(){let[withSequence,withTiming,withDelay,ANIMATION_DURATION,Easing,useReducedMotion]=this.__closure;const opacity=withSequence(withTiming(0,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(0.5,{duration:ANIMATION_DURATION})),withTiming(1,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const scale=withSequence(withTiming(1,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(1.5,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)})),withTiming(1,{duration:useReducedMotion?1:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const rawRotation=withSequence(withTiming('0deg',{duration:0}),withDelay(ANIMATION_DURATION,withTiming('-2deg',{duration:ANIMATION_DURATION})),withTiming('-5deg',{duration:ANIMATION_DURATION}));return{opacity:opacity,transform:[{rotate:rawRotation},{scale:scale}]};})" };
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingCompleted.tsx");
 
 export default function GuildOnboardingCompleted(guildId) {
@@ -55,31 +51,37 @@ export default function GuildOnboardingCompleted(guildId) {
   let Text4;
   let allSelectedRoleIds;
   let completeOnboarding;
-  let duration;
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
-  let items10;
-  let items13;
-  let items14;
+  let items12;
   let items15;
   let items16;
   let items17;
   let items18;
+  let items19;
+  let items20;
   let numSharedRoleMembers;
-  let obj11;
-  let obj19;
-  let obj22;
-  let obj27;
+  let obj10;
+  let obj18;
+  let obj21;
+  let obj26;
+  let obj30;
   let obj31;
   let obj32;
-  let obj33;
   let prompts;
   let role;
   let rolePillBackgroundColor;
   let str2;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  let tmp24;
+  let tmp25;
   guildId = guildId.guildId;
   ({ prompts, completeOnboarding } = guildId);
   const onClose = guildId.onClose;
@@ -88,20 +90,20 @@ export default function GuildOnboardingCompleted(guildId) {
   allSelectedRoleIds = undefined;
   let isScreenReaderEnabled;
   let ref;
-  let stateFromStores2;
-  let tmp = closure_13();
-  react = tmp;
+  let tmp = closure_12();
+  duration = tmp;
   const tmp2 = guildId;
-  const tmp3 = onClose;
+  let tmp3 = onClose;
   let obj = guildId(onClose[10]);
   navigation = obj.useNavigation();
   let obj2 = guildId(onClose[11]);
   let items = [found];
   const stateFromStores = obj2.useStateFromStores(items, () => found.getCurrentUser());
-  let obj3 = guildId(onClose[11]);
   const items1 = [closure_7];
+  const obj3 = guildId(onClose[11]);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => GuildStore.getGuild(guildId));
-  const tmp8 = completeOnboarding(onClose[12])(guildId);
+  let tmp7 = completeOnboarding;
+  let tmp8 = completeOnboarding(onClose[12])(guildId);
   let closure_6 = tmp8;
   let obj4 = guildId(onClose[13]);
   const theme = obj4.useThemeContext().theme;
@@ -112,22 +114,22 @@ export default function GuildOnboardingCompleted(guildId) {
   }
   let guildSplashURL = null;
   if (null != stateFromStores1) {
-    let obj7 = { id: null, splash: null, size: 400 * completeOnboarding(tmp3[16])() };
+    let obj7 = { id: null, splash: null, size: 400 * tmp7(tmp3[16])() };
     ({ id: obj6.id, splash: obj6.splash } = stateFromStores1);
-    const getGuildSplashURL = completeOnboarding(tmp3[15]).getGuildSplashURL;
+    const getGuildSplashURL = tmp7(tmp3[15]).getGuildSplashURL;
     let num = 400;
-    completeOnboarding(tmp3[15]);
+    tmp7(tmp3[15]);
     guildSplashURL = getGuildSplashURL(obj7);
   }
+  let tmp2Result = tmp2(tmp3[11]);
   const items2 = [allSelectedRoleIds];
   const items3 = [guildId];
-  const tmp2Result = tmp2(tmp3[11]);
   closure_7 = tmp2Result.useStateFromStoresArray(items2, () => GuildOnboardingPromptsStore.getOnboardingResponses(guildId), items3);
   let mapped = prompts.map((options) => options.options);
   let flatResult = mapped.flat();
   found = flatResult.filter((id) => closure_7.includes(id.id));
   const items4 = [tmp8, found];
-  const memo = react.useMemo(() => {
+  const memo = duration.useMemo(() => {
     const mapped = found.map((roleIds) => roleIds.roleIds);
     const flatResult = mapped.flat();
     allSelectedRoleIds = flatResult.filter(GlobalUtils.isNotNullish);
@@ -156,7 +158,7 @@ export default function GuildOnboardingCompleted(guildId) {
   const tmp2Result5 = tmp2(tmp3[11]);
   const stateFromStoresArray = tmp2Result5.useStateFromStoresArray(items5, () => GuildRoleStore.getManyRoles(guildId, allSelectedRoleIds), items6);
   const items7 = [navigation];
-  const layoutEffect = react.useLayoutEffect(() => {
+  const layoutEffect = duration.useLayoutEffect(() => {
     const obj = {
       headerLeft() {
         return null;
@@ -166,9 +168,9 @@ export default function GuildOnboardingCompleted(guildId) {
   }, items7);
   const tmp2Result6 = tmp2(tmp3[18]);
   isScreenReaderEnabled = tmp2Result6.useIsScreenReaderEnabled();
-  ref = react.useRef(false);
+  ref = duration.useRef(false);
   const items8 = [completeOnboarding, onClose, isScreenReaderEnabled];
-  const effect = react.useEffect(() => {
+  const effect = duration.useEffect(() => {
     let closure_0;
     const tmp = isScreenReaderEnabled;
     if (tmp) {
@@ -190,122 +192,101 @@ export default function GuildOnboardingCompleted(guildId) {
   }, items8);
   const items9 = [stateFromStores1];
   const tmp2Result7 = tmp2(tmp3[11]);
-  stateFromStores2 = tmp2Result7.useStateFromStores(items9, () => stateFromStores1.useReducedMotion);
+  const stateFromStores2 = tmp2Result7.useStateFromStores(items9, () => stateFromStores1.useReducedMotion);
   tmp2(tmp3[19]);
-  const fn = function k() {
-    let Easing;
-    let Easing2;
-    let Easing3;
-    let items;
-    let tmpResult8;
-    let withDelay3Result;
-    let withSequence3;
-    let withTimingResult2;
-    const withSequence = ReanimatedRexport.withSequence;
-    ReanimatedRexport;
-    const obj = timing;
-    const withTimingResult = obj.withTiming(0, { duration: 0 });
-    const withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    const obj2 = timing;
-    const obj3 = { duration };
-    const withDelayResult = withDelay(duration, obj2.withTiming(0.5, obj3));
-    const obj4 = { duration, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-    const withTiming = timing.withTiming;
-    timing;
-    Easing = ReanimatedRexport.Easing;
-    const withSequenceResult = withSequence(withTimingResult, withDelayResult, withTiming(1, obj4));
-    const withSequence2 = ReanimatedRexport.withSequence;
-    ReanimatedRexport;
-    const obj5 = timing;
-    const withTimingResult1 = obj5.withTiming(1, { duration: 0 });
-    const withDelay2 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    const obj6 = { duration, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
-    const withTiming2 = timing.withTiming;
-    timing;
-    Easing2 = ReanimatedRexport.Easing;
-    let num = 1;
-    const withDelay2Result = withDelay2(duration, withTiming2(1.5, obj6));
-    const withTiming3 = timing.withTiming;
-    timing;
-    if (!stateFromStores2) {
-      num = tmp6;
+  const items10 = [closure_13, tmp2(tmp3[19]).withSequence, tmp2(tmp3[20]).withTiming, tmp2(tmp3[19]).withDelay, 400, tmp2(tmp3[19]).Easing, stateFromStores2];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25] = items10;
+  class GuildOnboardingCompletedTsx1 {
+    constructor() {
+      let items;
+      let tmp2Result;
+      let tmp4Result;
+      const obj = { duration };
+      const obj2 = { duration, easing: _undefined4.out(_undefined4.ease) };
+      const tmp3 = _undefined2(0, { duration: 0 });
+      const tmp6 = _undefined3(duration, _undefined2(0.5, obj));
+      const obj4 = { duration, easing: _undefined4.out(_undefined4.ease) };
+      const tmp7 = _undefined(tmp3, tmp6, _undefined2(1, obj2));
+      let num = 1;
+      const tmp8 = _undefined2(1, { duration: 0 });
+      const tmp4 = _undefined3;
+      const tmp9 = _undefined3(duration, _undefined2(1.5, obj4));
+      if (!c5) {
+        num = tmp5;
+      }
+      const obj6 = { opacity: tmp7, transform: items };
+      const obj7 = { rotate: _undefined(tmp2Result, tmp4Result, _undefined2("-5deg", { duration })) };
+      const obj5 = { duration: num, easing: _undefined4.out(_undefined4.ease) };
+      const tmpResult = _undefined(tmp8, tmp9, _undefined2(1, obj5));
+      tmp2Result = _undefined2("0deg", { duration: 0 });
+      items = [obj7, { scale: tmpResult }];
+      tmp4Result = tmp4(duration, _undefined2("-2deg", { duration }));
+      return obj6;
     }
-    const obj7 = { duration: num, easing: Easing3.out(ReanimatedRexport.Easing.ease) };
-    Easing3 = tmp(5095).Easing;
-    const obj8 = { opacity: withSequenceResult, transform: items };
-    const obj9 = { rotate: withSequence3(withTimingResult2, withDelay3Result, tmpResult8.withTiming("-5deg", { duration })) };
-    const withSequence2Result = withSequence2(withTimingResult1, withDelay2Result, withTiming3(1, obj7));
-    withSequence3 = ReanimatedRexport.withSequence;
-    ReanimatedRexport;
-    const tmpResult5 = timing;
-    withTimingResult2 = tmpResult5.withTiming("0deg", { duration: 0 });
-    const withDelay3 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    const tmpResult7 = timing;
-    withDelay3Result = withDelay3(duration, tmpResult7.withTiming("-2deg", { duration }));
-    items = [obj9, { scale: withSequence2Result }];
-    tmpResult8 = timing;
-    return obj8;
-  };
-  let obj8 = { withSequence: tmp2(tmp3[19]).withSequence, withTiming: tmp2(tmp3[20]).withTiming, withDelay: tmp2(tmp3[19]).withDelay, ANIMATION_DURATION: stateFromStores2, Easing: tmp2(tmp3[19]).Easing, useReducedMotion: stateFromStores2 };
-  fn.__closure = obj8;
-  fn.__workletHash = 8282245217026;
-  fn.__initData = __initData;
+  }
+  const items11 = [tmp20, tmp21, tmp22, tmp23, tmp24, tmp25];
+  GuildOnboardingCompletedTsx1.__closure = items11;
+  GuildOnboardingCompletedTsx1.__workletHash = 4442147087899;
+  GuildOnboardingCompletedTsx1.__initData = tmp19;
   if (null != stateFromStores) {
     if (null != stateFromStores1) {
       const diff = stateFromStoresArray.length - 3;
-      let obj9 = { style: tmp.screen, children: items10 };
-      let tmp21 = null;
+      let tmp28 = null;
+      const obj8 = { style: tmp.screen, children: items12 };
       if (null != guildSplashURL) {
-        const obj10 = { source: obj11, style: tmp.backgroundImage };
-        obj11 = { uri: guildSplashURL };
-        tmp21 = isScreenReaderEnabled(tmp7(tmp3[21]), obj10);
+        const obj9 = { source: obj10, style: tmp.backgroundImage };
+        obj10 = { uri: guildSplashURL };
+        tmp28 = isScreenReaderEnabled(tmp7(tmp3[21]), obj9);
       }
-      items10 = [tmp21, ];
-      const items11 = [tmp.container, ];
+      items12 = [tmp28, ];
+      const items13 = [tmp.container, ];
       let prop = null;
       const SafeAreaPaddingView = tmp2(tmp3[22]).SafeAreaPaddingView;
       if (null == guildSplashURL) {
         prop = tmp.containerWithoutSplash;
       }
-      items11[1] = prop;
-      const obj12 = { bottom: true, style: items11, children: ref(navigation, obj33) };
+      ({ bottom: true, style: items13, children: ref(navigation, obj32) });
+      items13[1] = prop;
       let str = "text-overlay-light";
-      const obj13 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xxl/extrabold", color: str2, children: intl.string(tmp2(tmp3[24]).t.PFWIYe) };
+      const obj12 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xxl/semibold", color: str2, children: intl.string(tmp2(tmp3[24]).t.PFWIYe) };
       str2 = "text-overlay-light";
       const Text = tmp2(tmp3[23]).Text;
       if (null == guildSplashURL) {
         str2 = "mobile-text-heading-primary";
       }
       intl = tmp2(tmp3[24]).intl;
-      const items12 = [isScreenReaderEnabled(Text, obj13), , , ];
-      const obj14 = { style: tmp.subtitle, accessibilityRole: "header", variant: "text-md/medium", color: str, children: intl2.string(tmp2(tmp3[24]).t.og4NNr) };
+      const items14 = [isScreenReaderEnabled(Text, obj12), , , ];
+      const obj13 = { style: tmp.subtitle, accessibilityRole: "header", variant: "text-md/medium", color: str, children: intl2.string(tmp2(tmp3[24]).t.og4NNr) };
       const Text2 = tmp2(tmp3[23]).Text;
       if (null == guildSplashURL) {
         str = "text-muted";
       }
       intl2 = tmp2(tmp3[24]).intl;
-      items12[1] = isScreenReaderEnabled(Text2, obj14);
-      const obj15 = { style: tmp.card, children: items13 };
-      const obj16 = { size: tmp2(tmp3[25]).AvatarSizes.XXLARGE, user: stateFromStores, guildId, animate: false };
+      items14[1] = isScreenReaderEnabled(Text2, obj13);
+      const obj14 = { style: tmp.card, children: items15 };
+      const obj15 = { size: tmp2(tmp3[25]).AvatarSizes.XXLARGE, user: stateFromStores, guildId, animate: false };
       const Avatar = tmp2(tmp3[25]).Avatar;
-      items13 = [isScreenReaderEnabled(Avatar, obj16), , , , ];
-      const obj17 = { style: tmp.username, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
-      items13[1] = isScreenReaderEnabled(tmp2(tmp3[23]).Text, obj17);
-      let tmp22Result = null;
+      items15 = [isScreenReaderEnabled(Avatar, obj15), , , , ];
+      const obj16 = { style: tmp.username, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
+      items15[1] = isScreenReaderEnabled(tmp2(tmp3[23]).Text, obj16);
+      let tmp29Result = null;
       if (numSharedRoleMembers > 0) {
-        const obj18 = { style: tmp.rolesHeader, variant: "text-sm/normal", color: "text-muted", children: intl3.format(tmp2(tmp3[24]).t.l1Jc1n, obj19) };
+        const obj17 = { style: tmp.rolesHeader, variant: "text-sm/normal", color: "text-muted", children: intl3.format(tmp2(tmp3[24]).t.l1Jc1n, obj18) };
         const Text3 = tmp2(tmp3[23]).Text;
         intl3 = tmp2(tmp3[24]).intl;
-        obj19 = { numSharedRoleMembers };
-        tmp22Result = tmp22(Text3, obj18);
+        obj18 = { numSharedRoleMembers };
+        tmp29Result = tmp29(Text3, obj17);
       }
-      items13[2] = tmp22Result;
-      const obj20 = { style: tmp.roles, children: items14 };
+      items15[2] = tmp29Result;
+      const obj19 = { style: tmp.roles, children: items16 };
       const substr = stateFromStoresArray.slice(0, 3);
-      items14 = [
+      items16 = [
         substr.map((role) => {
               let obj2;
               const obj = { style: role.role, children: authStore(UserProfileRolesCard.RoleItem, obj2) };
@@ -314,52 +295,79 @@ export default function GuildOnboardingCompleted(guildId) {
             }),
 
       ];
-      let tmp22Result3 = null;
+      let tmp29Result3 = null;
       if (0 < diff) {
-        const obj21 = { style: items15, children: isScreenReaderEnabled(Text4, obj22) };
-        items15 = [tmp.roleOverflow, { backgroundColor: rolePillBackgroundColor }];
+        const obj20 = { style: items17, children: isScreenReaderEnabled(Text4, obj21) };
+        items17 = [tmp.roleOverflow, { backgroundColor: rolePillBackgroundColor }];
         const _HermesInternal = HermesInternal;
-        obj22 = { variant: "heading-deprecated-12/semibold", color: "mobile-text-heading-primary", children: "+" + diff };
+        obj21 = { variant: "heading-deprecated-12/semibold", color: "mobile-text-heading-primary", children: "+" + diff };
         Text4 = tmp2(tmp3[23]).Text;
-        tmp22Result3 = tmp22(tmp33, obj21);
+        tmp29Result3 = tmp29(tmp40, obj20);
       }
-      items14[1] = tmp22Result3;
-      items13[3] = ref(navigation, obj20);
-      const obj23 = { style: items16, children: items17 };
-      items16 = [tmp.animation, tmp19];
+      items16[1] = tmp29Result3;
+      items15[3] = ref(navigation, obj19);
+      const obj22 = { style: items18, children: items19 };
+      items18 = [tmp.animation, tmp26];
       const View = tmp7(tmp3[19]).View;
-      const obj24 = { guild: stateFromStores1, size: tmp2(tmp3[27]).GuildIconSizes.LARGE };
-      const tmp7Result3 = completeOnboarding(tmp3[27]);
-      items17 = [isScreenReaderEnabled(tmp7Result3, obj24), , ];
-      const obj25 = { style: tmp.animationText, children: items18 };
-      const obj26 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl4.format(tmp2(tmp3[24]).t.FXREhf, obj27) };
+      const obj23 = { guild: stateFromStores1, size: tmp2(tmp3[27]).GuildIconSizes.LARGE };
+      const tmp7Result3 = tmp7(tmp3[27]);
+      items19 = [isScreenReaderEnabled(tmp7Result3, obj23), , ];
+      const obj24 = { style: tmp.animationText, children: items20 };
+      const obj25 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl4.format(tmp2(tmp3[24]).t.FXREhf, obj26) };
       const Text5 = tmp2(tmp3[23]).Text;
       intl4 = tmp2(tmp3[24]).intl;
-      obj27 = { guildName: stateFromStores1.name };
-      items18 = [isScreenReaderEnabled(Text5, obj26), ];
-      const obj28 = { variant: "text-xs/normal", color: "text-muted", children: "" + obj32.format("LL") };
+      obj26 = { guildName: stateFromStores1.name };
+      items20 = [isScreenReaderEnabled(Text5, obj25), ];
+      const obj27 = { variant: "text-xs/normal", color: "text-muted", children: "" + obj31.format("LL") };
       const Text6 = tmp2(tmp3[23]).Text;
       const _HermesInternal2 = HermesInternal;
-      obj32 = completeOnboarding(tmp3[28])();
-      items18[1] = isScreenReaderEnabled(Text6, obj28);
-      items17[1] = ref(navigation, obj25);
-      const obj29 = { source: completeOnboarding(tmp3[29]), style: tmp.wave };
-      const tmp7Result4 = completeOnboarding(tmp3[21]);
-      items17[2] = isScreenReaderEnabled(tmp7Result4, obj29);
-      items13[4] = ref(View, obj23);
-      items12[2] = ref(navigation, obj15);
-      let tmp22Result4 = null;
+      obj31 = tmp7(tmp3[28])();
+      items20[1] = isScreenReaderEnabled(Text6, obj27);
+      items19[1] = ref(navigation, obj24);
+      const obj28 = { source: tmp7(tmp3[29]), style: tmp.wave };
+      const tmp7Result4 = tmp7(tmp3[21]);
+      items19[2] = isScreenReaderEnabled(tmp7Result4, obj28);
+      items15[4] = ref(View, obj22);
+      items14[2] = ref(navigation, obj14);
+      let tmp29Result4 = null;
       if (isScreenReaderEnabled) {
-        const obj30 = { style: tmp.getStartedButton, children: isScreenReaderEnabled(Button, obj31) };
-        obj31 = { variant: "primary", size: "md", grow: true, text: intl5.string(tmp2(tmp3[24]).t.LhlgY9), onPress: onClose };
+        const obj29 = { style: tmp.getStartedButton, children: isScreenReaderEnabled(Button, obj30) };
+        obj30 = { variant: "primary", size: "md", grow: true, text: intl5.string(tmp2(tmp3[24]).t.LhlgY9), onPress: onClose };
         Button = tmp2(tmp3[30]).Button;
         intl5 = tmp2(tmp3[24]).intl;
-        tmp22Result4 = tmp22(tmp33, obj30);
+        tmp29Result4 = tmp29(tmp40, obj29);
       }
-      obj33 = { children: items12 };
-      items12[3] = tmp22Result4;
-      items10[1] = isScreenReaderEnabled(SafeAreaPaddingView, obj12);
-      return ref(navigation, obj9);
+      obj32 = { children: items14 };
+      items14[3] = tmp29Result4;
+      class GuildOnboardingCompletedTsx1 {
+        constructor() {
+          let items;
+          let tmp2Result;
+          let tmp4Result;
+          const obj = { duration };
+          const obj2 = { duration, easing: _undefined4.out(_undefined4.ease) };
+          const tmp3 = _undefined2(0, { duration: 0 });
+          const tmp6 = _undefined3(duration, _undefined2(0.5, obj));
+          const obj4 = { duration, easing: _undefined4.out(_undefined4.ease) };
+          const tmp7 = _undefined(tmp3, tmp6, _undefined2(1, obj2));
+          let num = 1;
+          const tmp8 = _undefined2(1, { duration: 0 });
+          const tmp4 = _undefined3;
+          const tmp9 = _undefined3(duration, _undefined2(1.5, obj4));
+          if (!c5) {
+            num = tmp5;
+          }
+          const obj6 = { opacity: tmp7, transform: items };
+          const obj7 = { rotate: _undefined(tmp2Result, tmp4Result, _undefined2("-5deg", { duration })) };
+          const obj5 = { duration: num, easing: _undefined4.out(_undefined4.ease) };
+          const tmpResult = _undefined(tmp8, tmp9, _undefined2(1, obj5));
+          tmp2Result = _undefined2("0deg", { duration: 0 });
+          items = [obj7, { scale: tmpResult }];
+          tmp4Result = tmp4(duration, _undefined2("-2deg", { duration }));
+          return obj6;
+        }
+      }
+      return ref(navigation, obj8);
     }
   }
   return null;

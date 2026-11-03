@@ -1,23 +1,21 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15546
+// Function ID: 15547
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1072, 21, 5014, 575, 5272, 7086, 5624, 1113, 2061, 2]
+// Dependencies: [17, 1072, 21, 5141, 575, 5395, 7212, 5747, 1113, 2190, 2]
 // Exports: default
 
-// Module 15405 (NitroCreditEducationActionSheet)
+// Module 15546 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7086 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7212 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -43,7 +41,7 @@ export default function NitroCreditEducationActionSheet(aboutText) {
   const obj = { children: metroRequire(View, obj2) };
   obj2 = { style: tmp.container, children: items1 };
   const obj3 = { style: tmp.aboutContainer, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   items = [, ];
   const obj4 = { size: "lg", style: tmp.warningIcon };
   items[0] = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, obj4);

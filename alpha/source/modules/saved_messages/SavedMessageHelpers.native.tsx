@@ -1,14 +1,14 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11296
+// Function ID: 11297
 // Name: SavedMessageHelpers
-// Dependencies: [5, 10191, 1072, 11160, 11156, 5958, 1113, 11150, 10192, 5712, 5740, 11161, 5023, 2]
+// Dependencies: [5, 10321, 1072, 11297, 11293, 6078, 1113, 11287, 10322, 5832, 5860, 11298, 5150, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11159 (SavedMessageHelpers)
+// Module 11296 (SavedMessageHelpers)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 11160 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10321 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 11297 */;
 import size from "module_2" /* 2 */;
 
 let text;
@@ -33,7 +33,7 @@ let obj = function _addOrUpdateSavedMessage() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj = function _addOrUpdateSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp43) {
           c4 = 3;
@@ -209,7 +209,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -309,7 +309,7 @@ obj = function _removeSavedMessage() {
             stringResult = intl2.string(closure_130_0(closure_130_2[6]).t.D0tS02);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp49) {
         c4 = 3;

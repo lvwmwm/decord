@@ -1,19 +1,19 @@
-// Module ID: 13277
-// Function ID: 13278
+// Module ID: 13413
+// Function ID: 13414
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 4885, 1383, 21, 5014, 575, 5607, 11405, 504, 13278, 6902, 5717, 13279, 5624, 1113, 5068, 12224, 3868, 7253, 5634, 13280, 2]
+// Dependencies: [32, 19, 17, 5012, 1385, 21, 5141, 575, 5730, 11543, 504, 13414, 7022, 5837, 13415, 5747, 1113, 5195, 12360, 3995, 7373, 5754, 13416, 2]
 
-// Module 13277 (KickConfirm)
+// Module 13413 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
-import removeConjureServerAppDefault from "removeConjureServerApp" /* 13280 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
+import removeConjureServerAppDefault from "removeConjureServerApp" /* 13416 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import UserStore from "UserStore" /* 1383 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp4Result6;
   let tmp7Result4;
   let v1Ie87p;
-  const f104229 = () => ({ kicking: false, kickError: false });
+  const f104289 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -131,9 +131,9 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   closure_8 = tmp18[1];
   const first1 = tmp18[0];
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f104229), 2);
+  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f104289), 2);
   const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f104229), 2);
+  stateFromStores(stateFromStores1.useState(f104289), 2);
   closure_11 = obj.useCallback(() => {
     const tmp2 = null != stateFromStores && null != stateFromStores1;
     if (tmp2) {
@@ -177,12 +177,12 @@ const memoResult = react.memo(function KickConfirm(guildId) {
         v1Ie87p = tmp7(tmp5[16]).t["1Ie87p"];
         tmp4Result4 = tmp4(tmp5[17]);
         items6 = [ref(Text, obj10), ];
-        const obj12 = { variant: "text-lg/bold", color: "text-feedback-warning", children: stateFromStores.name };
+        const obj12 = { variant: "text-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
         items6[1] = ref(tmp7(tmp5[15]).Text, obj12);
         obj13 = obj9;
       } else {
         obj13 = { children: items7 };
-        const obj14 = { style: tmp.conjureTitle, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: tmp7Result4.formatWithAppTag(tmp4(tmp5[19]).wVNCN7, conjureServerApp.targetAppName) };
+        const obj14 = { style: tmp.conjureTitle, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: tmp7Result4.formatWithAppTag(tmp4(tmp5[19]).wVNCN7, conjureServerApp.targetAppName) };
         const Text5 = tmp7(tmp5[15]).Text;
         tmp7Result4 = tmp7(tmp5[18]);
         items7 = [ref(Text5, obj14), ];
@@ -191,7 +191,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
       }
       items5[1] = closure_11(c10, obj13);
       const items8 = [closure_11(conjureServerApp, obj7), , , , , , ];
-      const obj16 = { style: tmp.blurb, variant: "heading-md/normal", color: "text-feedback-warning", children: formatResult };
+      const obj16 = { style: tmp.blurb, variant: "heading-md/medium", color: "text-feedback-warning", children: formatResult };
       const Text2 = tmp7(tmp5[15]).Text;
       if (null == conjureServerApp) {
         const intl3 = tmp7(tmp5[16]).intl;

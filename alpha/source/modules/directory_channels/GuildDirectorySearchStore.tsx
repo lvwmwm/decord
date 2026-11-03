@@ -1,13 +1,15 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13982
+// Function ID: 13983
 // Name: GuildDirectorySearchStore
-// Dependencies: [13852, 504, 572, 2]
+// Dependencies: [13983, 504, 572, 2]
 
-// Module 13851 (GuildDirectorySearchStore)
+// Module 13982 (GuildDirectorySearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13852 */;
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13983 */;
 import size from "module_2" /* 2 */;
+
+let results;
 
 let closure_2 = [];
 const _false = {};
@@ -22,7 +24,7 @@ class GuildDirectorySearchStore extends Store {
     return obj;
   }
   getSearchResults(arg0, arg1) {
-    let results;
+    results = undefined;
     if (closure_4[arg0] != null) {
       if (closure_4[arg0][arg1] != null) {
         results = tmp4.results;
@@ -57,7 +59,6 @@ let obj = {
   GUILD_DIRECTORY_SEARCH_SUCCESS: function handleSearchSuccess(query) {
     let channelId;
     let obj4;
-    let results;
     ({ channelId, results } = query);
     let obj = { fetching: false };
     query = query.query;
@@ -73,7 +74,7 @@ let obj = {
     const obj3 = { results: obj4.orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
     obj2[query] = obj3;
     closure_4[channelId] = obj2;
-    obj4 = items(13852);
+    obj4 = items(13983);
   },
   GUILD_DIRECTORY_SEARCH_FAILURE: function handleSearchFailure(channelId) {
     channelId = channelId.channelId;
@@ -98,7 +99,7 @@ let obj = {
     }
     if (null != mostRecentQuery1) {
       if (null != closure_4[channelId][mostRecentQuery1]) {
-        const results = tmp5.results;
+        results = tmp5.results;
         const obj = {};
         const found = results.filter((guildId) => guildId.guildId !== closure_1_0);
         const merged = Object.assign(tmp4[channelId]);

@@ -1,21 +1,21 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 19004
+// Function ID: 19005
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 5014, 575, 18847, 5624, 1113, 14251, 5634, 14247, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 19005, 5747, 1113, 14382, 5754, 14378, 2]
 // Exports: default
 
-// Module 18846 (AddFriendsContactSyncEmptyState)
+// Module 19004 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14251 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 18847 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14378 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14382 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 19005 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,7 +54,7 @@ export default function AddFriendsContactSyncEmptyState() {
   items = [, , , ];
   const obj2 = { style: tmp.headerIllustration, children: _false(CompassSpotIllustration.CompassSpotIllustration, { width: 240, accessible: false }) };
   items[0] = _false(View, obj2);
-  const obj3 = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["/G+nci"]) };
+  const obj3 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["/G+nci"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items[1] = _false(Heading, obj3);

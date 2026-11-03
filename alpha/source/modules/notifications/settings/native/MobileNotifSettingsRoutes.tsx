@@ -1,16 +1,16 @@
-// Module ID: 17960
-// Function ID: 17961
+// Module ID: 18103
+// Function ID: 18104
 // Name: MobileNotifSettingsRoutes
-// Dependencies: [11540, 1113, 9208, 16281, 17961, 17962, 2868, 17482, 17968, 17969, 17970, 17971, 17972, 2]
+// Dependencies: [11677, 1113, 9336, 16423, 18104, 18105, 2995, 17625, 18111, 18112, 18113, 18114, 18115, 2]
 
-// Module 17960 (MobileNotifSettingsRoutes)
+// Module 18103 (MobileNotifSettingsRoutes)
 import intl2 from "intl" /* 1113 */;
-import _modDef2868 from "module_2868" /* 2868 */;
-import BellIcon from "BellIcon" /* 9208 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16281 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17482 */;
-import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 17961 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11540 */;
+import _modDef2995 from "module_2995" /* 2995 */;
+import BellIcon from "BellIcon" /* 9336 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16423 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17625 */;
+import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 18104 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,11 +55,11 @@ const createRoute2 = SettingBuilders.createRoute;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.gbaIfD);
+    return intl.string(_modDef2995.gbaIfD);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.MjXONr);
+    return intl.string(_modDef2995.MjXONr);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -75,11 +75,11 @@ const createRoute3 = SettingBuilders.createRoute;
 const obj5 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868["ZwNQS+"]);
+    return intl.string(_modDef2995["ZwNQS+"]);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.BBFiVq);
+    return intl.string(_modDef2995.BBFiVq);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -95,11 +95,11 @@ const createRoute4 = SettingBuilders.createRoute;
 const obj7 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.BBcVf5);
+    return intl.string(_modDef2995.BBcVf5);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.eI4aPM);
+    return intl.string(_modDef2995.eI4aPM);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -115,7 +115,7 @@ const createRoute5 = SettingBuilders.createRoute;
 const obj9 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.vcrTV5);
+    return intl.string(_modDef2995.vcrTV5);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY,
   usePredicate() {
@@ -131,11 +131,11 @@ const createRoute6 = SettingBuilders.createRoute;
 const obj11 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.qxdDqr);
+    return intl.string(_modDef2995.qxdDqr);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2868.r60oLi);
+    return intl.string(_modDef2995.r60oLi);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

@@ -1,11 +1,11 @@
-// Module ID: 5199
-// Function ID: 5200
+// Module ID: 5322
+// Function ID: 5323
 // Name: RootNavigationRef
-// Dependencies: [1498, 2]
+// Dependencies: [1500, 2]
 // Exports: getRootNavigationRef, runWhenRootNavigationReady
 
-// Module 5199 (RootNavigationRef)
-import Link from "Link" /* 1498 */;
+// Module 5322 (RootNavigationRef)
+import Link from "Link" /* 1500 */;
 import size from "module_2" /* 2 */;
 
 let ready = Link.createNavigationContainerRef();

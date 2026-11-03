@@ -1,17 +1,17 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17976
+// Function ID: 17977
 // Name: useShopAllCatalogPages
-// Dependencies: [32, 19, 9581, 7721, 1072, 9583, 504, 559, 7719, 2]
+// Dependencies: [32, 19, 9713, 7845, 1072, 9715, 504, 559, 7843, 2]
 // Exports: default
 
-// Module 17833 (useShopAllCatalogPages)
+// Module 17976 (useShopAllCatalogPages)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9583 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9581 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7721 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9713 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7845 */;
 import size from "module_2" /* 2 */;
 
 function getCategoryForCollection(id) {

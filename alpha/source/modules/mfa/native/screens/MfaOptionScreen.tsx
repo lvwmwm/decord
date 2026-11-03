@@ -1,17 +1,17 @@
-// Module ID: 17674
-// Function ID: 17675
+// Module ID: 17817
+// Function ID: 17818
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 7111, 17675, 7292, 6027, 5624, 17676, 7142, 2]
+// Dependencies: [19, 17, 21, 7237, 17818, 7412, 6147, 5747, 17819, 7075, 2]
 // Exports: default
 
-// Module 17674 (MfaOptionScreen)
+// Module 17817 (MfaOptionScreen)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7111 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7142 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 17675 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7075 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7237 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 17818 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -57,18 +57,18 @@ export default function MFAOptionScreen(arg0) {
     tmp9 = headerImage;
   }
   items = [tmp9, , , ];
-  const obj3 = { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText };
+  const obj3 = { variant: "heading-xl/semibold", style: screenStyles.mfaContainerHeaderText, children: headerText };
   items[1] = React3(Text_Text.Heading, obj3);
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
-    const obj4 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-    tmp10Result = tmp10(tmp8(5624).Text, obj4);
+    const obj4 = { variant: "heading-sm/medium", color: "text-default", children: subtitle };
+    tmp10Result = tmp10(tmp8(5747).Text, obj4);
   }
   items[2] = tmp10Result;
   let tmp10Result4 = null != error;
   if (tmp10Result4) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-    tmp10Result4 = tmp10(tmp8(5624).Text, obj5);
+    tmp10Result4 = tmp10(tmp8(5747).Text, obj5);
   }
   let tmp10Result5 = type === mfaMethod;
   const obj6 = { children: items1 };
@@ -77,10 +77,10 @@ export default function MFAOptionScreen(arg0) {
   items2 = [hasOwnProperty(Stack, obj6), content, ];
   const obj7 = { style: screenStyles.submit, children: items3 };
   items3 = [submit, ];
-  const Stack3 = tmp8(6027).Stack;
+  const Stack3 = tmp8(6147).Stack;
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(17676), obj8);
+    tmp10Result5 = tmp10(tmp(17819), obj8);
   }
   items3[1] = tmp10Result5;
   items2[2] = hasOwnProperty(Stack3, obj7);

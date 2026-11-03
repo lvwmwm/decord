@@ -1,25 +1,25 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 9264
+// Function ID: 9265
 // Name: Autocompleter
-// Dependencies: [7444, 9137, 4944, 4956, 1383, 6897, 6779, 9138, 4844, 6901, 9140, 9144, 2026, 5748, 5752, 1943, 1377, 12, 6900, 2]
+// Dependencies: [7568, 9265, 5071, 5083, 1385, 7017, 6899, 9266, 4971, 7021, 9268, 9272, 2155, 5868, 5872, 2072, 1378, 12, 7020, 2]
 
-// Module 9136 (Autocompleter)
+// Module 9264 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1377 */;
-import _modDef1943 from "module_1943" /* 1943 */;
-import StringUtils from "StringUtils" /* 2026 */;
-import GuildChannelStore from "GuildChannelStore" /* 4944 */;
-import findCodedLinks from "findCodedLinks" /* 5748 */;
-import CodedLink from "CodedLink" /* 5752 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6779 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6897 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 6900 */;
-import GuildUtilsDefault from "GuildUtils" /* 6901 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9138 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7444 */;
-import LinkRecord from "LinkRecord" /* 9137 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import _modDef2072 from "module_2072" /* 2072 */;
+import StringUtils from "StringUtils" /* 2155 */;
+import GuildChannelStore from "GuildChannelStore" /* 5071 */;
+import findCodedLinks from "findCodedLinks" /* 5868 */;
+import CodedLink from "CodedLink" /* 5872 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6899 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 7017 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 7020 */;
+import GuildUtilsDefault from "GuildUtils" /* 7021 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9266 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7568 */;
+import LinkRecord from "LinkRecord" /* 9265 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -589,7 +589,7 @@ class Autocompleter {
         tmp3Result = AutocompleteUtils;
         return items;
       } else {
-        const obj8 = _modDef1943;
+        const obj8 = _modDef2072;
         const sanitizeUrlResult = obj8.sanitizeUrl(query);
         try {
           const _URL = URL;

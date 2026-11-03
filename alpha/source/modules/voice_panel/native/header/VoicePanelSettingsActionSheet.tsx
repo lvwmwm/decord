@@ -1,18 +1,16 @@
-// Module ID: 19224
-// Function ID: 19225
+// Module ID: 19382
+// Function ID: 19383
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 5014, 5272, 5275, 7292, 19225, 2]
+// Dependencies: [19, 21, 5141, 5395, 5398, 7412, 19383, 2]
 
-// Module 19224 (VoicePanelSettingsActionSheet)
+// Module 19382 (VoicePanelSettingsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import BottomSheetModal from "BottomSheetModal" /* 5275 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import BottomSheetModal from "BottomSheetModal" /* 5398 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ wrapper: { gap: 24 } });
@@ -21,7 +19,7 @@ const memoResult = react.memo(function VoicePanelSettingsActionSheet(arg0) {
   let guildId;
   ({ guildId, channelId } = arg0);
   const tmp = closure_4();
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
   const BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   return <BottomSheet startExpanded scrollable>{null}</BottomSheet>;

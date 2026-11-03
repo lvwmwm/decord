@@ -1,13 +1,13 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15463
+// Function ID: 15464
 // Name: useReferralProgramBannerDetails
-// Dependencies: [19, 1383, 7632, 504, 8752, 2]
+// Dependencies: [19, 1385, 7756, 504, 8876, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 15322 (useReferralProgramBannerDetails)
+// Module 15463 (useReferralProgramBannerDetails)
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7632 */;
+import UserStore from "UserStore" /* 1385 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7756 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");

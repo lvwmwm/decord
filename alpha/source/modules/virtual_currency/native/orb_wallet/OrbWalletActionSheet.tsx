@@ -1,30 +1,30 @@
-// Module ID: 16902
-// Function ID: 16903
+// Module ID: 17045
+// Function ID: 17046
 // Name: OrbWalletActionSheet
-// Dependencies: [19, 17, 1383, 15629, 16901, 1072, 1385, 21, 5014, 575, 16903, 7326, 16904, 504, 7351, 1113, 2172, 5624, 15631, 16905, 16906, 11417, 1252, 16914, 15630, 9553, 5258, 5080, 16917, 5272, 2]
+// Dependencies: [19, 17, 1385, 15771, 17044, 1072, 1387, 21, 5141, 575, 17046, 7446, 17047, 504, 7471, 1113, 2301, 5747, 15773, 17048, 17049, 11555, 1252, 17057, 15772, 9685, 5381, 5207, 17060, 5395, 2]
 
-// Module 16902 (OrbWalletActionSheet)
+// Module 17045 (OrbWalletActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1385 */;
-import _modDef2172 from "module_2172" /* 2172 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import OrbChallengesStore2 from "OrbChallengesStore" /* 15629 */;
-import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15631 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 16901 */;
-import OrbWalletCards from "OrbWalletCards" /* 16914 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import _modDef2301 from "module_2301" /* 2301 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import OrbChallengesStore2 from "OrbChallengesStore" /* 15771 */;
+import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15773 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 17044 */;
+import OrbWalletCards from "OrbWalletCards" /* 17057 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, _require, importDefault;
+let _require, importDefault;
 
 let closure_12;
 let obj2;
@@ -68,7 +68,7 @@ function StatefulOrbChallengesCard(reopenWallet) {
       let stringResult;
       if (orbChallengesDisplayError.errorType === orbChallengesDisplayError.CLAIM_CHALLENGE) {
         const intl3 = intl4.intl;
-        stringResult = intl3.string(_modDef2172.FYb5rH);
+        stringResult = intl3.string(_modDef2301.FYb5rH);
       } else {
         const intl2 = intl4.intl;
         const obj2 = {
@@ -86,7 +86,7 @@ function StatefulOrbChallengesCard(reopenWallet) {
                 return closure_2_11(reopenWallet(orbWalletAnalyticsPage[17]).Text, obj);
               }
         };
-        stringResult = intl2.format(_modDef2172.ggLzeg, obj2);
+        stringResult = intl2.format(_modDef2301.ggLzeg, obj2);
       }
       tmp2 = { type: "warning", message: stringResult, role: "status" };
       const obj3 = { type: "warning", message: stringResult, role: "status" };
@@ -138,7 +138,7 @@ function StatefulOrbChallengesCard(reopenWallet) {
       return tmp4;
     });
   }, items4);
-  const obj6 = { title: intl.string(require("module_2172").H6Ny8N), isLoading: !hasFetchedChallenges, inlineNoticeProps: memo, challenges: memo1, onClaim: callback };
+  const obj6 = { title: intl.string(require("module_2301").H6Ny8N), isLoading: !hasFetchedChallenges, inlineNoticeProps: memo, challenges: memo1, onClaim: callback };
   const OrbChallengesCard = reopenWallet(orbWalletAnalyticsPage[20]).OrbChallengesCard;
   intl = reopenWallet(orbWalletAnalyticsPage[15]).intl;
   return closure_11(OrbChallengesCard, obj6);
@@ -212,6 +212,7 @@ let closure_13 = createStyles(obj);
 class OrbWalletActionSheet {
   constructor(source) {
     let AnalyticsLocationsProvider;
+    let BottomSheet;
     let Provider;
     let obj2;
     let obj3;

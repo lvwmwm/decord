@@ -1,13 +1,13 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17134
+// Function ID: 17135
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1383, 1074, 16992, 16993, 16994, 504, 2047, 7731, 2]
+// Dependencies: [19, 1385, 1074, 17135, 17136, 17137, 504, 2176, 7855, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 16991 (useFilteredAndSortedProducts)
+// Module 17134 (useFilteredAndSortedProducts)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;

@@ -1,18 +1,18 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9399
+// Function ID: 9400
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 2006, 5764, 9266, 5768, 206, 504, 38, 9272, 2]
+// Dependencies: [32, 5, 19, 502, 2135, 5884, 9394, 5888, 206, 504, 38, 9400, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9271 (useSecureFramesPairwiseFingerprint)
-import Constants from "Constants" /* 5768 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9266 */;
+// Module 9399 (useSecureFramesPairwiseFingerprint)
+import Constants from "Constants" /* 5888 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9394 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, constants, obj;
@@ -31,7 +31,7 @@ let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ export function useSecureFramesPairwiseFingerprint(userId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

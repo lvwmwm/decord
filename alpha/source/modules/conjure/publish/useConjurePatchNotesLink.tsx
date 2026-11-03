@@ -1,16 +1,16 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12798
+// Function ID: 12799
 // Name: useConjurePatchNotesLink
-// Dependencies: [19, 6844, 10867, 1072, 12097, 504, 1099, 2]
+// Dependencies: [19, 6964, 10997, 1072, 12233, 504, 1099, 2]
 // Exports: conjurePatchNotesEditorProps, default, openConjureSentPatchNotes
 
-// Module 12662 (useConjurePatchNotesLink)
+// Module 12798 (useConjurePatchNotesLink)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6844 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 12097 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6964 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 12233 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10997 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export default function useConjurePatchNotesLink(arg0, published_revision) {
       update = null != project;
     }
     if (update) {
-      update = "user" !== project.install_scope;
+      update = "guild" === project.install_scope;
     }
     if (update) {
       update = canPublishProject(project);

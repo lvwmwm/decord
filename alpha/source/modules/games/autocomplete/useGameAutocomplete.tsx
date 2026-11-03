@@ -1,21 +1,22 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 9269
+// Function ID: 9270
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 8680, 1072, 504, 8681, 9142, 9143, 2]
+// Dependencies: [32, 19, 8804, 1072, 504, 8805, 9270, 9271, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 9141 (useGameAutocomplete)
+// Module 9269 (useGameAutocomplete)
 import Constants from "Constants" /* 1072 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8681 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9142 */;
-import GameSearchSession from "GameSearchSession" /* 9143 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8805 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9270 */;
+import GameSearchSession from "GameSearchSession" /* 9271 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8680 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8804 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let results;
 
 let _slicedToArray = _slicedToArray_mod;
 const QueryIds = Constants.QueryIds;
@@ -26,7 +27,7 @@ let obj = {
     return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(name), arg1);
   },
   get(arg0, arg1) {
-    let results = GameAutocompleteStore.getResults(arg0, arg1);
+    results = GameAutocompleteStore.getResults(arg0, arg1);
     if (results == null) {
       results = null;
     }
@@ -134,7 +135,7 @@ export function useDebouncedGameAutocomplete(name, arg1) {
     let tmp11 = null != tmp10;
     if (tmp11) {
       let results1;
-      const results = tmp10.results;
+      results = tmp10.results;
       if (tmp8 != null) {
         results1 = tmp8.results;
       }

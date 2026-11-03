@@ -1,20 +1,19 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17332
+// Function ID: 17333
 // Name: QuestDockPlayableHeader
-// Dependencies: [19, 17, 6781, 17072, 21, 575, 5014, 17100, 17073, 5095, 5637, 8841, 17177, 1375, 17176, 17069, 17088, 6784, 7871, 17164, 17184, 7241, 5717, 5624, 6980, 1113, 2]
+// Dependencies: [19, 17, 6901, 17215, 21, 575, 5141, 17243, 17216, 1652, 5757, 8965, 17320, 1377, 17319, 17212, 17231, 6904, 7995, 17307, 17327, 5837, 5747, 7106, 1113, 2]
 
-// Module 17189 (QuestDockPlayableHeader)
+// Module 17332 (QuestDockPlayableHeader)
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17088 */;
+import QuestTypes from "QuestTypes" /* 6904 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17231 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestDockConstants from "QuestDockConstants" /* 17072 */;
+import QuestConstants from "QuestConstants" /* 6901 */;
+import QuestDockConstants from "QuestDockConstants" /* 17215 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT;
@@ -42,158 +41,189 @@ size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRad
 obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = createStyles(obj);
-const __initData = { code: "function QuestDockPlayableHeaderTsx1(){const{withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?0:1,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};}" };
-const __initData2 = { code: "function QuestDockPlayableHeaderTsx2(){const{withSpring,activeQuestDockMode,QuestDockMode,PROMOTED_LABEL_OPACITY,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?PROMOTED_LABEL_OPACITY:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};}" };
+let closure_11 = { code: "(function QuestDockPlayableHeaderTsx1(){let[withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED]=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?0:1,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};})" };
+let closure_12 = { code: "(function QuestDockPlayableHeaderTsx2(){let[withSpring,activeQuestDockMode,QuestDockMode,PROMOTED_LABEL_OPACITY,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED]=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?PROMOTED_LABEL_OPACITY:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};})" };
 const memoResult = react.memo(function QuestDockPlayableHeader() {
   let PressableOpacity;
   let Text;
-  let activeQuestDockMode;
+  let View;
   let height;
   let intl;
-  let items2;
-  let items3;
-  let items4;
-  let items5;
+  let items10;
+  let items11;
+  let items12;
   let items6;
   let items7;
   let items8;
-  let obj11;
-  let obj14;
+  let items9;
+  let obj12;
+  let obj13;
   let obj15;
+  let obj16;
   let obj17;
-  let obj18;
-  let obj19;
-  let obj7;
-  let obj8;
+  let obj5;
+  let obj6;
+  let obj9;
   let playableCreative;
   let str2;
-  let str3;
-  let str5;
-  let tmp7Result5;
-  let tmp7Result6;
+  let str4;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
+  let tmp19;
+  let tmp20;
+  let tmp22Result2;
+  let tmp8;
+  let tmp9;
   let width;
-  const tmp = activeQuestDockMode;
-  let obj = activeQuestDockMode(height[7]);
+  let tmp = width;
+  let obj = width(playableCreative[7]);
   const questDockPlayable = obj.useQuestDockPlayable();
   const tmp4 = closure_10();
   let str = questDockPlayable.productName;
   if (str == null) {
     str = "";
   }
-  let obj2 = playableCreative;
-  activeQuestDockMode = playableCreative.useContext(tmp(tmp2[8]).QuestDockGestureContext).activeQuestDockMode;
-  const fn = function o() {
-    const withSpring = spring.withSpring;
-    let num = 1;
-    spring;
-    if (activeQuestDockMode.get() === hasOwnProperty.EXPANDED) {
-      num = 0;
+  let obj2 = react;
+  const activeQuestDockMode = react.useContext(tmp(tmp2[8]).QuestDockGestureContext).activeQuestDockMode;
+  const items = [closure_11, , , , ];
+  const useAnimatedStyle = tmp(playableCreative[9]).useAnimatedStyle;
+  tmp(playableCreative[9]);
+  items[1] = tmp(playableCreative[10]).withSpring;
+  items[2] = activeQuestDockMode;
+  items[3] = closure_5;
+  items[4] = closure_7;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp8, tmp9, tmp10, tmp11, tmp12] = items;
+  class QuestDockPlayableHeaderTsx1 {
+    constructor() {
+      let num = 1;
+      const tmp = c0;
+      if (_undefined.get() === _undefined2.EXPANDED) {
+        num = 0;
+      }
+      const obj = { opacity: tmp(num, c3) };
+      return obj;
     }
-    const obj = { opacity: withSpring(num, metroImportDefault) };
-    return obj;
-  };
-  const tmpResult = tmp(height[9]);
-  const obj3 = { withSpring: tmp(tmp2[10]).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
-  fn.__closure = obj3;
-  fn.__workletHash = 11102976607512;
-  fn.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(fn);
-  const fn2 = function s() {
-    const withSpring = spring.withSpring;
-    let num = 0;
-    spring;
-    if (activeQuestDockMode.get() === hasOwnProperty.EXPANDED) {
-      num = 0.7;
+  }
+  const items1 = [tmp9, tmp10, tmp11, tmp12];
+  QuestDockPlayableHeaderTsx1.__closure = items1;
+  QuestDockPlayableHeaderTsx1.__workletHash = 6732714024545;
+  QuestDockPlayableHeaderTsx1.__initData = tmp8;
+  const animatedStyle = useAnimatedStyle(QuestDockPlayableHeaderTsx1);
+  const items2 = [closure_12, , , , , ];
+  const useAnimatedStyle2 = tmp(playableCreative[9]).useAnimatedStyle;
+  tmp(playableCreative[9]);
+  items2[1] = tmp(playableCreative[10]).withSpring;
+  items2[2] = activeQuestDockMode;
+  items2[3] = closure_5;
+  items2[4] = 0.7;
+  items2[5] = closure_7;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  let c4;
+  [tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items2;
+  class QuestDockPlayableHeaderTsx2 {
+    constructor() {
+      let num = 0;
+      const tmp = c0;
+      if (_undefined.get() === _undefined2.EXPANDED) {
+        num = c3;
+      }
+      const obj = { opacity: tmp(num, c4) };
+      return obj;
     }
-    const obj = { opacity: withSpring(num, metroImportDefault) };
-    return obj;
-  };
-  const tmpResult7 = tmp(height[9]);
-  fn2.__closure = { withSpring: tmp(height[10]).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY: 0.7, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
-  fn2.__workletHash = 14270991745638;
-  fn2.__initData = __initData2;
-  ({ withSpring: tmp(height[10]).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY: 0.7, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
-  const animatedStyle1 = tmpResult7.useAnimatedStyle(fn2);
-  const EXPANDED = QuestDockMode.EXPANDED;
-  const tmp8 = width(height[11])(activeQuestDockMode);
-  const tmpResult8 = tmp(height[12]);
+  }
+  const items3 = [tmp16, tmp17, tmp18, tmp19, tmp20];
+  QuestDockPlayableHeaderTsx2.__closure = items3;
+  QuestDockPlayableHeaderTsx2.__workletHash = 14094538632287;
+  QuestDockPlayableHeaderTsx2.__initData = tmp15;
+  const animatedStyle2 = useAnimatedStyle2(QuestDockPlayableHeaderTsx2);
+  const EXPANDED = tmp6.EXPANDED;
+  const tmp23 = height(playableCreative[11])(activeQuestDockMode);
+  const tmpResult8 = tmp(playableCreative[12]);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = tmpResult8.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
-  const tmpResult9 = tmp(height[13]);
-  const tmp10 = tmpResult9.isAndroid() && isBountiesAndroidQuestBarSmokeAnimationEnabled;
-  const tmpResult10 = tmp(height[14]);
+  const tmpResult9 = tmp(playableCreative[13]);
+  const tmp25 = tmpResult9.isAndroid() && isBountiesAndroidQuestBarSmokeAnimationEnabled;
+  const tmpResult10 = tmp(playableCreative[14]);
   size = tmpResult10.useSmokeArtSize();
   width = size.width;
   height = size.height;
-  const items = [width, height];
+  const items4 = [width, height];
   const memo = obj2.useMemo(() => {
     size = { width, height };
     return size;
-  }, items);
-  const tmpResult11 = tmp(height[7]);
+  }, items4);
+  const tmpResult11 = tmp(playableCreative[7]);
   playableCreative = tmpResult11.usePlayableCreative(questDockPlayable);
-  const items1 = [playableCreative];
-  const tmpResult12 = tmp(height[15]);
+  const items5 = [playableCreative];
+  const tmpResult12 = tmp(playableCreative[15]);
   const actionSheetPressHandler = tmpResult12.useActionSheetPressHandler(playableCreative);
   const callback = obj2.useCallback(() => {
     const obj2 = { creative: playableCreative, isTargetedDisclosure: true, trackingCtx: { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.CONTEXT_MENU_OPEN_DISCLOSURE, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE } };
     const obj = QuestDisclosureModalActionCreatorsDefault;
     ({ content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.CONTEXT_MENU_OPEN_DISCLOSURE, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE });
     obj.showModal(obj2);
-  }, items1);
-  const obj5 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: closure_8(width(height[20]), {}), secondaryContentWidth: tmp(height[20]).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items4 };
-  const tmp7Result = width(height[19]);
-  const obj6 = { style: items2, pointerEvents: "none", accessible: false, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp7Result5, obj7, str2) };
-  items2 = [tmp4.smokeArt, memo];
-  obj7 = { style: items3, needsOffscreenAlphaCompositing: tmp10, children: closure_8(tmp7Result6, obj8) };
-  items3 = [tmp4.smokeArtFade, animatedStyle];
-  obj8 = { surface: tmp(height[14]).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp8 === EXPANDED };
-  tmp7Result5 = width(height[21]);
-  str2 = "no-offscreen-compositing";
-  tmp7Result6 = width(height[14]);
-  if (tmp10) {
-    str2 = "offscreen-compositing";
+  }, items5);
+  const obj3 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: closure_8(height(playableCreative[20]), {}), secondaryContentWidth: tmp(playableCreative[20]).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items8 };
+  const tmp22Result = height(playableCreative[19]);
+  const obj4 = { style: items6, pointerEvents: "none", accessible: false, importantForAccessibility: "no-hide-descendants", children: closure_8(View, obj5) };
+  items6 = [tmp4.smokeArt, memo];
+  obj5 = { style: items7, needsOffscreenAlphaCompositing: tmp25, children: closure_8(tmp22Result2, obj6) };
+  items7 = [tmp4.smokeArtFade, animatedStyle];
+  View = tmp22(tmp2[9]).View;
+  obj6 = { surface: tmp(playableCreative[14]).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp23 === EXPANDED };
+  tmp22Result2 = height(playableCreative[14]);
+  items8 = [closure_8(closure_4, obj4), ];
+  let tmp33Result = null != questDockPlayable.productIcon;
+  const obj7 = { style: tmp4.wrapper, children: items9 };
+  if (tmp33Result) {
+    const obj8 = { style: tmp4.productIcon, source: obj9, resizeMode: "cover", accessible: false, importantForAccessibility: "no" };
+    obj9 = { uri: questDockPlayable.productIcon };
+    tmp33Result = tmp33(tmp22(tmp2[21]), obj8);
   }
-  items4 = [closure_8(closure_4, obj6), ];
-  let tmp18Result = null != questDockPlayable.productIcon;
-  const obj9 = { style: tmp4.wrapper, children: items5 };
-  if (tmp18Result) {
-    const obj10 = { style: tmp4.productIcon, source: obj11, resizeMode: "cover", accessible: false, importantForAccessibility: "no" };
-    obj11 = { uri: questDockPlayable.productIcon };
-    tmp18Result = tmp18(tmp7(tmp2[22]), obj10);
+  items9 = [tmp33Result, ];
+  const obj10 = { style: tmp4.crossFadeWrapper, children: items11 };
+  const obj11 = { style: items10, children: closure_8(closure_4, obj12) };
+  items10 = [tmp4.copy, animatedStyle];
+  obj12 = { accessible: true, accessibilityRole: "text", accessibilityLabel: str, accessibilityElementsHidden: tmp23 === EXPANDED, importantForAccessibility: str2, children: closure_8(tmp(playableCreative[22]).Text, obj13) };
+  str2 = "yes";
+  const View2 = tmp22(tmp2[9]).View;
+  if (tmp23 === EXPANDED) {
+    str2 = "no-hide-descendants";
   }
-  items5 = [tmp18Result, ];
-  const obj12 = { style: tmp4.crossFadeWrapper, children: items7 };
-  const obj13 = { style: items6, children: closure_8(closure_4, obj14) };
-  items6 = [tmp4.copy, animatedStyle];
-  obj14 = { accessible: true, accessibilityRole: "text", accessibilityLabel: str, accessibilityElementsHidden: tmp8 === EXPANDED, importantForAccessibility: str3, children: closure_8(tmp(height[23]).Text, obj15) };
-  str3 = "yes";
-  const tmp7Result7 = width(height[21]);
-  if (tmp8 === EXPANDED) {
-    str3 = "no-hide-descendants";
+  obj13 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 2, accessible: false, style: tmp4.title, children: str };
+  items11 = [closure_8(View2, obj11), ];
+  const obj14 = { style: items12, children: closure_8(closure_4, obj15) };
+  items12 = [tmp4.promotedLabel, animatedStyle2];
+  let str3 = "none";
+  const View3 = tmp22(tmp2[9]).View;
+  if (tmp23 === EXPANDED) {
+    str3 = "auto";
   }
-  obj15 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 2, accessible: false, style: tmp4.title, children: str };
-  items7 = [closure_8(tmp7Result7, obj13), ];
-  const obj16 = { style: items8, children: closure_8(closure_4, obj17) };
-  items8 = [tmp4.promotedLabel, animatedStyle1];
-  let str4 = "none";
-  const tmp7Result8 = width(height[21]);
-  if (tmp8 === EXPANDED) {
-    str4 = "auto";
+  obj15 = { pointerEvents: str3, accessibilityElementsHidden: tmp23 !== EXPANDED, importantForAccessibility: str4, children: closure_8(PressableOpacity, obj16) };
+  str4 = "no-hide-descendants";
+  if (tmp23 === EXPANDED) {
+    str4 = "yes";
   }
-  obj17 = { pointerEvents: str4, accessibilityElementsHidden: tmp8 !== EXPANDED, importantForAccessibility: str5, children: closure_8(PressableOpacity, obj18) };
-  str5 = "no-hide-descendants";
-  if (tmp8 === EXPANDED) {
-    str5 = "yes";
-  }
-  obj18 = { onPress: callback, accessibilityRole: "button", children: closure_8(Text, obj19) };
-  PressableOpacity = tmp(tmp2[24]).PressableOpacity;
-  obj19 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(height[25]).t.o6FLcF) };
-  Text = tmp(tmp2[23]).Text;
-  intl = tmp(tmp2[25]).intl;
-  items7[1] = closure_8(tmp7Result8, obj16);
-  items5[1] = closure_9(closure_4, obj12);
-  items4[1] = closure_9(closure_4, obj9);
-  return closure_9(tmp7Result, obj5);
+  obj16 = { onPress: callback, accessibilityRole: "button", children: closure_8(Text, obj17) };
+  PressableOpacity = tmp(tmp2[23]).PressableOpacity;
+  obj17 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(playableCreative[24]).t.o6FLcF) };
+  Text = tmp(tmp2[22]).Text;
+  intl = tmp(tmp2[24]).intl;
+  items11[1] = closure_8(View3, obj14);
+  items9[1] = closure_9(closure_4, obj10);
+  items8[1] = closure_9(closure_4, obj7);
+  return closure_9(tmp22Result, obj3);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockPlayableHeader.tsx");

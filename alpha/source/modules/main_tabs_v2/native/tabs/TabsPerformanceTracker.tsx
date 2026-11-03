@@ -1,14 +1,13 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 18215
+// Function ID: 18216
 // Name: TabsPerformanceTracker
-// Dependencies: [19, 1072, 3, 1252, 5095, 2]
+// Dependencies: [19, 1072, 3, 1252, 1705, 2]
 // Exports: trackTabPressed, useTrackTabPerformance
 
-// Module 18071 (TabsPerformanceTracker)
+// Module 18215 (TabsPerformanceTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,8 +15,8 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let tmp2 = new LoggerDefault("TabsPerformanceTracker");
 let closure_5 = tmp2;
 let closure_6 = {};
-let closure_7 = { code: "function TabsPerformanceTrackerTsx1(){const{runOnJS,log}=this.__closure;return runOnJS(log)();}" };
-let closure_8 = { code: "function TabsPerformanceTrackerTsx2(){const{runOnJS,log}=this.__closure;return runOnJS(log)();}" };
+let closure_7 = { code: "(function TabsPerformanceTrackerTsx1(){let[scheduleOnRN,log]=this.__closure;return scheduleOnRN(log);})" };
+let closure_8 = { code: "(function TabsPerformanceTrackerTsx2(){let[scheduleOnRN,log]=this.__closure;return scheduleOnRN(log);})" };
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/TabsPerformanceTracker.tsx");
 
 export function trackTabPressed(arg0) {
@@ -28,26 +27,13 @@ export function trackTabPressed(arg0) {
   }
 }
 export function useTrackTabPerformance(GUILDS) {
-  const items = [GUILDS];
+  let items = [GUILDS];
   const layoutEffect = react.useLayoutEffect(() => {
     let logger;
     let tab;
-    function log() {
-      const tmp2 = null != tab && null != tab.startTime;
-      if (tmp2) {
-        const _performance = performance;
-        tab.layoutUITime = performance.now();
-        const tmp5 = null != tab.uiTime && null != tab.layoutUITime;
-        if (tmp5) {
-          const obj3 = { tab, start_time: null, layout_effect_time: null, layout_ui_thread_time: null, effect_time: null, ui_thread_time: null };
-          ({ startTime: obj2.start_time, layoutEffectTime: obj2.layout_effect_time, layoutUITime: obj2.layout_ui_thread_time, effectTime: obj2.effect_time, uiTime: obj2.ui_thread_time } = tab);
-          const obj = AnalyticsUtilsDefault;
-          obj.track(AnalyticEvents.REDESIGN_NAV_BAR_RENDERED, obj3);
-          const obj5 = { layoutEffectDuration: tab.layoutEffectTime - tab.startTime, effectDuration: tab.effectTime - tab.startTime, layoutUIDuration: tab.layoutUITime - tab.startTime, uiDuration: tab.uiTime - tab.startTime };
-          logger.info("First navigation to", tab, "took", obj5);
-        }
-      }
-    }
+    let tmp10;
+    let tmp11;
+    let tmp12;
     let tmp2 = GUILDS;
     GUILDS = tmp3;
     if (null != closure_1_6[GUILDS]) {
@@ -55,17 +41,39 @@ export function useTrackTabPerformance(GUILDS) {
         let _performance = performance;
         closure_1_6[GUILDS].layoutEffectTime = performance.now();
         let tmp5 = GUILDS;
-        const fn = function t() {
-          const obj = ReanimatedRexport;
-          return obj.runOnJS(log)();
-        };
+        const items = [closure_1_7, , ];
+        const scheduleOnUI = GUILDS(dependencyMap[4]).scheduleOnUI;
         const tmp7 = GUILDS(dependencyMap[4]);
-        const obj2 = { runOnJS: GUILDS(dependencyMap[4]).runOnJS, log };
-        const runOnUI = tmp7.runOnUI;
-        fn.__closure = obj2;
-        fn.__workletHash = 7114578957129;
-        fn.__initData = __initData;
-        runOnUI(fn)();
+        items[1] = GUILDS(dependencyMap[4]).scheduleOnRN;
+        items[2] = function log() {
+          const tmp2 = null != tab && null != tab.startTime;
+          if (tmp2) {
+            const _performance = performance;
+            tab.layoutUITime = performance.now();
+            const tmp5 = null != tab.uiTime && null != tab.layoutUITime;
+            if (tmp5) {
+              const obj3 = { tab, start_time: null, layout_effect_time: null, layout_ui_thread_time: null, effect_time: null, ui_thread_time: null };
+              ({ startTime: obj2.start_time, layoutEffectTime: obj2.layout_effect_time, layoutUITime: obj2.layout_ui_thread_time, effectTime: obj2.effect_time, uiTime: obj2.ui_thread_time } = tab);
+              const obj = AnalyticsUtilsDefault;
+              obj.track(AnalyticEvents.REDESIGN_NAV_BAR_RENDERED, obj3);
+              const obj5 = { layoutEffectDuration: tab.layoutEffectTime - tab.startTime, effectDuration: tab.effectTime - tab.startTime, layoutUIDuration: tab.layoutUITime - tab.startTime, uiDuration: tab.uiTime - tab.startTime };
+              logger.info("First navigation to", tab, "took", obj5);
+            }
+          }
+        };
+        let c0;
+        let c1;
+        [tmp10, tmp11, tmp12] = items;
+        class TabsPerformanceTrackerTsx1 {
+          constructor() {
+            return _undefined(c1);
+          }
+        }
+        const items1 = [tmp11, tmp12];
+        TabsPerformanceTrackerTsx1.__closure = items1;
+        TabsPerformanceTrackerTsx1.__workletHash = 9222398850673;
+        TabsPerformanceTrackerTsx1.__initData = tmp10;
+        scheduleOnUI(TabsPerformanceTrackerTsx1);
       }
     }
     let obj = tmp[tmp2];
@@ -74,26 +82,13 @@ export function useTrackTabPerformance(GUILDS) {
     }
     closure_1_6[tmp2] = obj;
   }, items);
-  const items1 = [GUILDS];
+  let items1 = [GUILDS];
   const effect = react.useEffect(() => {
     let logger;
     let tab;
-    function log() {
-      const tmp2 = null != tab && null != tab.startTime;
-      if (tmp2) {
-        const _performance = performance;
-        tab.uiTime = performance.now();
-        const tmp5 = null != tab.uiTime && null != tab.layoutUITime;
-        if (tmp5) {
-          const obj3 = { tab, start_time: null, layout_effect_time: null, layout_ui_thread_time: null, effect_time: null, ui_thread_time: null };
-          ({ startTime: obj2.start_time, layoutEffectTime: obj2.layout_effect_time, layoutUITime: obj2.layout_ui_thread_time, effectTime: obj2.effect_time, uiTime: obj2.ui_thread_time } = tab);
-          const obj = AnalyticsUtilsDefault;
-          obj.track(AnalyticEvents.REDESIGN_NAV_BAR_RENDERED, obj3);
-          const obj5 = { layoutEffectDuration: tab.layoutEffectTime - tab.startTime, effectDuration: tab.effectTime - tab.startTime, layoutUIDuration: tab.layoutUITime - tab.startTime, uiDuration: tab.uiTime - tab.startTime };
-          logger.info("First navigation to", tab, "took", obj5);
-        }
-      }
-    }
+    let tmp10;
+    let tmp11;
+    let tmp12;
     let tmp2 = GUILDS;
     GUILDS = tmp3;
     if (null != closure_1_6[GUILDS]) {
@@ -101,17 +96,39 @@ export function useTrackTabPerformance(GUILDS) {
         let _performance = performance;
         closure_1_6[GUILDS].effectTime = performance.now();
         let tmp5 = GUILDS;
-        const fn = function t() {
-          const obj = ReanimatedRexport;
-          return obj.runOnJS(log)();
-        };
+        const items = [closure_1_8, , ];
+        const scheduleOnUI = GUILDS(dependencyMap[4]).scheduleOnUI;
         const tmp7 = GUILDS(dependencyMap[4]);
-        const obj2 = { runOnJS: GUILDS(dependencyMap[4]).runOnJS, log };
-        const runOnUI = tmp7.runOnUI;
-        fn.__closure = obj2;
-        fn.__workletHash = 331508196106;
-        fn.__initData = __initData2;
-        runOnUI(fn)();
+        items[1] = GUILDS(dependencyMap[4]).scheduleOnRN;
+        items[2] = function log() {
+          const tmp2 = null != tab && null != tab.startTime;
+          if (tmp2) {
+            const _performance = performance;
+            tab.uiTime = performance.now();
+            const tmp5 = null != tab.uiTime && null != tab.layoutUITime;
+            if (tmp5) {
+              const obj3 = { tab, start_time: null, layout_effect_time: null, layout_ui_thread_time: null, effect_time: null, ui_thread_time: null };
+              ({ startTime: obj2.start_time, layoutEffectTime: obj2.layout_effect_time, layoutUITime: obj2.layout_ui_thread_time, effectTime: obj2.effect_time, uiTime: obj2.ui_thread_time } = tab);
+              const obj = AnalyticsUtilsDefault;
+              obj.track(AnalyticEvents.REDESIGN_NAV_BAR_RENDERED, obj3);
+              const obj5 = { layoutEffectDuration: tab.layoutEffectTime - tab.startTime, effectDuration: tab.effectTime - tab.startTime, layoutUIDuration: tab.layoutUITime - tab.startTime, uiDuration: tab.uiTime - tab.startTime };
+              logger.info("First navigation to", tab, "took", obj5);
+            }
+          }
+        };
+        let c0;
+        let c1;
+        [tmp10, tmp11, tmp12] = items;
+        class TabsPerformanceTrackerTsx2 {
+          constructor() {
+            return _undefined(c1);
+          }
+        }
+        const items1 = [tmp11, tmp12];
+        TabsPerformanceTrackerTsx2.__closure = items1;
+        TabsPerformanceTrackerTsx2.__workletHash = 6249772318354;
+        TabsPerformanceTrackerTsx2.__initData = tmp10;
+        scheduleOnUI(TabsPerformanceTrackerTsx2);
       }
     }
     let obj = tmp[tmp2];

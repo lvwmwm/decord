@@ -1,13 +1,13 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12215
+// Function ID: 12216
 // Name: conjureBuilderOpened
-// Dependencies: [19, 6844, 504, 10873, 2]
+// Dependencies: [19, 6964, 504, 11003, 2]
 // Exports: useTrackConjureBuilderOpened
 
-// Module 12079 (conjureBuilderOpened)
-import ConjureAnalytics from "ConjureAnalytics" /* 10873 */;
+// Module 12215 (conjureBuilderOpened)
+import ConjureAnalytics from "ConjureAnalytics" /* 11003 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,4 +39,5 @@ export function useTrackConjureBuilderOpened(projectId, entryPoint) {
       const result = obj.trackConjureBuilderOpened(tmp, str);
     }
   }, items2);
+  return stateFromStores.useCallback((arg0) => ref.current === arg0, []);
 }

@@ -1,15 +1,15 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10261
+// Function ID: 10262
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1072, 6736, 1113, 10132, 6726, 10133, 2]
+// Dependencies: [1072, 6856, 1113, 10262, 6846, 10263, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant, useGatedAgeGroup
 
-// Module 10131 (NsfwServerInviteWarningVariant)
+// Module 10261 (NsfwServerInviteWarningVariant)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6736 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10132 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6846 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6856 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10262 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -19,7 +19,7 @@ export function getNsfwServerInviteWarningVariant(arg0) {
   let intl;
   let intl2;
   let obj4;
-  const obj = getTinyBroncoWarningDescriptions;
+  const obj = getAgeNoticeWarningDescriptions;
   const tmp3 = obj.getTinyBroncoServerDescriptions()[arg0];
   const obj2 = { text: intl.string(intl3.t.FDSSia), joins: false };
   intl = intl3.intl;
@@ -61,7 +61,7 @@ export function getNsfwServerInviteWarningAgeGroupForError(arg0) {
     return null;
   }
   let tmp7 = null;
-  const tmp3Result = tmp3(10133);
+  const tmp3Result = tmp3(10263);
   if (tmp3Result.getIsInviteAcceptAgeGroupErrorsEnabled("invite_accept_error")) {
     tmp7 = UNVERIFIED;
   }

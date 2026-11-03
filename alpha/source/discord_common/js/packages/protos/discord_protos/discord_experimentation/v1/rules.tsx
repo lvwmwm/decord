@@ -1,16 +1,16 @@
-// Module ID: 8589
-// Function ID: 8590
+// Module ID: 8713
+// Function ID: 8714
 // Name: rules
 // Dependencies: [32, 1197, 1227, 2]
 
-// Module 8589 (rules)
+// Module 8713 (rules)
 import _mod1197 from "module_1197" /* 1197 */;
 import wrappers from "wrappers" /* 1227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
+let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
 
 let tmp;
 let tmp2;
@@ -61,10 +61,10 @@ const T14 = function T() {
   return items161;
 };
 const T15 = function T() {
-  return items162;
+  return items165;
 };
 const T16 = function T() {
-  return items163;
+  return items162;
 };
 const T17 = function T() {
   return items163;
@@ -73,46 +73,46 @@ const T18 = function T() {
   return items164;
 };
 const T19 = function T() {
-  return items211;
+  return items164;
 };
 const T20 = function T() {
-  return items211;
+  return items166;
 };
 const T21 = function T() {
-  return items211;
+  return items166;
 };
 const T22 = function T() {
-  return items211;
+  return items167;
 };
 const T23 = function T() {
-  return items215;
+  return items241;
 };
 const T24 = function T() {
-  return items212;
+  return items241;
 };
 const T25 = function T() {
-  return items213;
+  return items241;
 };
 const T26 = function T() {
-  return items213;
+  return items241;
 };
 const T27 = function T() {
-  return items214;
+  return items245;
 };
 const T28 = function T() {
-  return require("wrappers").UInt64Value;
+  return items242;
 };
 const T29 = function T() {
-  return require("wrappers").UInt32Value;
+  return items243;
 };
 const T30 = function T() {
-  return require("wrappers").UInt32Value;
+  return items243;
 };
 const T31 = function T() {
-  return items281;
+  return items244;
 };
 const T32 = function T() {
-  return items281;
+  return require("wrappers").UInt64Value;
 };
 const T33 = function T() {
   return require("wrappers").UInt32Value;
@@ -121,10 +121,22 @@ const T34 = function T() {
   return require("wrappers").UInt32Value;
 };
 const T35 = function T() {
-  return items281;
+  return items311;
 };
 const T36 = function T() {
-  return items281;
+  return items311;
+};
+const T37 = function T() {
+  return require("wrappers").UInt32Value;
+};
+const T38 = function T() {
+  return require("wrappers").UInt32Value;
+};
+const T39 = function T() {
+  return items311;
+};
+const T40 = function T() {
+  return items311;
 };
 const Rule_Type = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", EXCLUDE: 1, [1]: "EXCLUDE", OVERRIDE: 2, [2]: "OVERRIDE", REQUIRE: 3, [3]: "REQUIRE", ASSIGNMENT: 4, [4]: "ASSIGNMENT" };
 let obj2 = { REGULAR: 0, [0]: "REGULAR", HOLDOUT: 1, [1]: "HOLDOUT", ROLLOUT: 2, [2]: "ROLLOUT" };
@@ -647,7 +659,7 @@ class Filter$Type extends MessageType3 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { filter: { oneofKind: "r" }, negate: false };
+    obj = { filter: { oneofKind: "Array" }, negate: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -741,14 +753,14 @@ class Filter$Type extends MessageType3 {
       const joined9 = result.join();
     }
     if ("userAgeRange" === negate.filter.oneofKind) {
-      const internalBinaryWrite11 = clientRequiredChangesType1.internalBinaryWrite;
+      internalBinaryWrite11 = clientRequiredChangesType1.internalBinaryWrite;
       const userAgeRange = negate.filter.userAgeRange;
       const tagResult10 = tag.tag(12, _mod1197.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(userAgeRange, tagResult10.fork(), writeUnknownFields);
       const joined10 = result1.join();
     }
     if ("userIdRange" === negate.filter.oneofKind) {
-      const internalBinaryWrite12 = fixed64ValueType.internalBinaryWrite;
+      internalBinaryWrite12 = fixed64ValueType.internalBinaryWrite;
       const userIdRange = negate.filter.userIdRange;
       const tagResult11 = tag.tag(13, _mod1197.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(userIdRange, tagResult11.fork(), writeUnknownFields);
@@ -1724,7 +1736,7 @@ class ClientLocation_Location$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { location: { oneofKind: "r" } };
+    obj = { location: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2341,15 +2353,17 @@ const clientLocation_LocationType4 = new ClientLocation_Location$Type("discord_p
 const MessageType19 = _mod1197.MessageType;
 class SDKVersion$Type extends MessageType19 {
   constructor() {
-    const items = [, ];
+    const items = [, , , ];
     obj = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T15 };
     items[0] = obj;
     items[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
+    items[2] = { no: 3, name: "os_version", kind: "message", T: T16 };
+    items[3] = { no: 4, name: "allow_sdk_fallback", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.SDKVersion", items, new.target);
     return tmp2;
   }
   create(partialSettings) {
-    obj = { ranges: [], workAroundPyotoBug: false };
+    obj = { ranges: [], workAroundPyotoBug: false, allowSdkFallback: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2374,9 +2388,13 @@ class SDKVersion$Type extends MessageType19 {
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
           let ranges = obj.ranges;
-          let arr = ranges.push(items162.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+          let arr = ranges.push(items165.internalBinaryRead(pos, pos.uint32(), readUnknownField));
         } else if (2 === tmp5) {
           obj.workAroundPyotoBug = pos.bool();
+        } else if (3 === tmp5) {
+          obj.osVersion = items162.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.osVersion);
+        } else if (4 === tmp5) {
+          obj.allowSdkFallback = pos.bool();
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -2409,7 +2427,7 @@ class SDKVersion$Type extends MessageType19 {
     let num = 0;
     if (0 < ranges.ranges.length) {
       do {
-        internalBinaryWrite = items162.internalBinaryWrite;
+        internalBinaryWrite = items165.internalBinaryWrite;
         let tmp2 = ranges.ranges[num];
         let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
@@ -2421,6 +2439,17 @@ class SDKVersion$Type extends MessageType19 {
     if (false !== ranges.workAroundPyotoBug) {
       const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
       tagResult1.bool(ranges.workAroundPyotoBug);
+    }
+    if (ranges.osVersion) {
+      internalBinaryWrite2 = items162.internalBinaryWrite;
+      const osVersion = ranges.osVersion;
+      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite2Result = internalBinaryWrite2(osVersion, tagResult2.fork(), writeUnknownFields);
+      const joined1 = internalBinaryWrite2Result.join();
+    }
+    if (false !== ranges.allowSdkFallback) {
+      const tagResult3 = tag.tag(4, _mod1197.WireType.Varint);
+      tagResult3.bool(ranges.allowSdkFallback);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
@@ -2434,19 +2463,114 @@ class SDKVersion$Type extends MessageType19 {
   }
 }
 const prototype19 = SDKVersion$Type.prototype;
-const items17 = [, ];
+const items17 = [, , , ];
 const obj12 = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T15 };
 items17[0] = obj12;
 items17[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
+items17[2] = { no: 3, name: "os_version", kind: "message", T: T16 };
+items17[3] = { no: 4, name: "allow_sdk_fallback", kind: "scalar", T: 8 };
 const items161 = new items16("discord_protos.discord_experimentation.v1.SDKVersion", items17, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 const MessageType20 = _mod1197.MessageType;
-class SDKVersionRange$Type extends MessageType20 {
+class OSVersion$Type extends MessageType20 {
+  constructor() {
+    const items = [];
+    obj = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T17 };
+    items[0] = obj;
+    const tmp2 = new tmp("discord_protos.discord_experimentation.v1.OSVersion", items, new.target);
+    return tmp2;
+  }
+  create(partialSettings) {
+    obj = { ranges: [] };
+    const _Object = Object;
+    obj2 = { enumerable: false, value: this };
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1197;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
+    }
+    return obj;
+  }
+  internalBinaryRead(pos, arg1, readUnknownField, arg3) {
+    let tmp5;
+    let tmp6;
+    const self = this;
+    obj = arg3;
+    if (arg3 == null) {
+      obj = self.create();
+    }
+    const sum = pos.pos + arg1;
+    if (pos.pos < sum) {
+      do {
+        let tmp4 = _slicedToArray(pos.tag(), 2);
+        [tmp5, tmp6] = tmp4;
+        if (1 === tmp5) {
+          let ranges = obj.ranges;
+          let arr = ranges.push(items163.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+        } else {
+          let onRead = readUnknownField.readUnknownField;
+          if ("throw" === onRead) {
+            let tmp15 = globalThis;
+            let _globalThis = globalThis;
+            let _HermesInternal = HermesInternal;
+            let str = ") for ";
+            let str2 = " (wire type ";
+            let str3 = "Unknown field ";
+            let self2 = this;
+            let self3 = this;
+            let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+            throw error;
+          } else {
+            let skipResult = pos.skip(tmp6);
+            if (false !== onRead) {
+              if (true === onRead) {
+                onRead = _mod1197.UnknownFieldHandler.onRead;
+              }
+              let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
+            }
+          }
+        }
+      } while (pos.pos < sum);
+    }
+    return obj;
+  }
+  internalBinaryWrite(ranges, tag, writeUnknownFields) {
+    let length;
+    let num = 0;
+    if (0 < ranges.ranges.length) {
+      do {
+        internalBinaryWrite = items163.internalBinaryWrite;
+        let tmp2 = ranges.ranges[num];
+        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
+        let joined = internalBinaryWriteResult.join();
+        num = num + 1;
+        length = ranges.ranges.length;
+      } while (num < length);
+    }
+    let onWrite = writeUnknownFields.writeUnknownFields;
+    if (false !== onWrite) {
+      if (1 == onWrite) {
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+      }
+      const self = this;
+      onWrite(this.typeName, ranges, tag);
+    }
+    return tag;
+  }
+}
+const prototype20 = OSVersion$Type.prototype;
+const items18 = [];
+const obj13 = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T17 };
+items18[0] = obj13;
+const items162 = new items16("discord_protos.discord_experimentation.v1.OSVersion", items18, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType21 = _mod1197.MessageType;
+class OSVersionRange$Type extends MessageType21 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "lower_bound", kind: "message", T: T16 };
+    obj = { no: 1, name: "lower_bound", kind: "message", T: T18 };
     items[0] = obj;
-    items[1] = { no: 2, name: "upper_bound", kind: "message", T: T17 };
-    const tmp2 = new tmp("discord_protos.discord_experimentation.v1.SDKVersionRange", items, new.target);
+    items[1] = { no: 2, name: "upper_bound", kind: "message", T: T19 };
+    const tmp2 = new tmp("discord_protos.discord_experimentation.v1.OSVersionRange", items, new.target);
     return tmp2;
   }
   create(partialSettings) {
@@ -2474,9 +2598,9 @@ class SDKVersionRange$Type extends MessageType20 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.lowerBound = items163.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
+          obj.lowerBound = items164.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
         } else if (2 === tmp5) {
-          obj.upperBound = items163.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
+          obj.upperBound = items164.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -2506,14 +2630,14 @@ class SDKVersionRange$Type extends MessageType20 {
   }
   internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
     if (lowerBound.lowerBound) {
-      internalBinaryWrite = items163.internalBinaryWrite;
+      internalBinaryWrite = items164.internalBinaryWrite;
       lowerBound = lowerBound.lowerBound;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(lowerBound, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (lowerBound.upperBound) {
-      internalBinaryWrite2 = items163.internalBinaryWrite;
+      internalBinaryWrite2 = items164.internalBinaryWrite;
       const upperBound = lowerBound.upperBound;
       const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(upperBound, tagResult1.fork(), writeUnknownFields);
@@ -2530,17 +2654,199 @@ class SDKVersionRange$Type extends MessageType20 {
     return tag;
   }
 }
-const prototype20 = SDKVersionRange$Type.prototype;
-const items18 = [, ];
-const obj13 = { no: 1, name: "lower_bound", kind: "message", T: T16 };
-items18[0] = obj13;
-items18[1] = { no: 2, name: "upper_bound", kind: "message", T: T17 };
-const items162 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRange", items18, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType21 = _mod1197.MessageType;
-class SDKVersionRangeBound$Type extends MessageType21 {
+const prototype21 = OSVersionRange$Type.prototype;
+const items19 = [, ];
+const obj14 = { no: 1, name: "lower_bound", kind: "message", T: T18 };
+items19[0] = obj14;
+items19[1] = { no: 2, name: "upper_bound", kind: "message", T: T19 };
+const items163 = new items16("discord_protos.discord_experimentation.v1.OSVersionRange", items19, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType22 = _mod1197.MessageType;
+class OSVersionRangeBound$Type extends MessageType22 {
+  constructor() {
+    const items = [{ no: 1, name: "version", kind: "scalar", T: 9 }, { no: 2, name: "inclusive", kind: "scalar", T: 8 }];
+    const tmp2 = new tmp("discord_protos.discord_experimentation.v1.OSVersionRangeBound", items, new.target);
+    return tmp2;
+  }
+  create(partialSettings) {
+    obj = { version: "", inclusive: false };
+    const _Object = Object;
+    obj2 = { enumerable: false, value: this };
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1197;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
+    }
+    return obj;
+  }
+  internalBinaryRead(pos, arg1, readUnknownField, arg3) {
+    let tmp5;
+    let tmp6;
+    const self = this;
+    obj = arg3;
+    if (arg3 == null) {
+      obj = self.create();
+    }
+    const sum = pos.pos + arg1;
+    if (pos.pos < sum) {
+      do {
+        let tmp4 = _slicedToArray(pos.tag(), 2);
+        [tmp5, tmp6] = tmp4;
+        if (1 === tmp5) {
+          obj.version = pos.string();
+        } else if (2 === tmp5) {
+          obj.inclusive = pos.bool();
+        } else {
+          let onRead = readUnknownField.readUnknownField;
+          if ("throw" === onRead) {
+            let tmp15 = globalThis;
+            let _globalThis = globalThis;
+            let _HermesInternal = HermesInternal;
+            let str = ") for ";
+            let str2 = " (wire type ";
+            let str3 = "Unknown field ";
+            let self2 = this;
+            let self3 = this;
+            let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+            throw error;
+          } else {
+            let skipResult = pos.skip(tmp6);
+            if (false !== onRead) {
+              if (true === onRead) {
+                onRead = _mod1197.UnknownFieldHandler.onRead;
+              }
+              let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
+            }
+          }
+        }
+      } while (pos.pos < sum);
+    }
+    return obj;
+  }
+  internalBinaryWrite(version, tag, writeUnknownFields) {
+    if ("" !== version.version) {
+      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      tagResult.string(version.version);
+    }
+    if (false !== version.inclusive) {
+      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      tagResult1.bool(version.inclusive);
+    }
+    let onWrite = writeUnknownFields.writeUnknownFields;
+    if (false !== onWrite) {
+      if (1 == onWrite) {
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+      }
+      const self = this;
+      onWrite(this.typeName, version, tag);
+    }
+    return tag;
+  }
+}
+const prototype22 = OSVersionRangeBound$Type.prototype;
+const items20 = [{ no: 1, name: "version", kind: "scalar", T: 9 }, { no: 2, name: "inclusive", kind: "scalar", T: 8 }];
+const items164 = new items16("discord_protos.discord_experimentation.v1.OSVersionRangeBound", items20, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType23 = _mod1197.MessageType;
+class SDKVersionRange$Type extends MessageType23 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "version", kind: "message", T: T18 };
+    obj = { no: 1, name: "lower_bound", kind: "message", T: T20 };
+    items[0] = obj;
+    items[1] = { no: 2, name: "upper_bound", kind: "message", T: T21 };
+    const tmp2 = new tmp("discord_protos.discord_experimentation.v1.SDKVersionRange", items, new.target);
+    return tmp2;
+  }
+  create(partialSettings) {
+    obj = {};
+    const _Object = Object;
+    obj2 = { enumerable: false, value: this };
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1197;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
+    }
+    return obj;
+  }
+  internalBinaryRead(pos, arg1, readUnknownField, arg3) {
+    let tmp5;
+    let tmp6;
+    const self = this;
+    obj = arg3;
+    if (arg3 == null) {
+      obj = self.create();
+    }
+    const sum = pos.pos + arg1;
+    if (pos.pos < sum) {
+      do {
+        let tmp4 = _slicedToArray(pos.tag(), 2);
+        [tmp5, tmp6] = tmp4;
+        if (1 === tmp5) {
+          obj.lowerBound = items166.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
+        } else if (2 === tmp5) {
+          obj.upperBound = items166.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
+        } else {
+          let onRead = readUnknownField.readUnknownField;
+          if ("throw" === onRead) {
+            let tmp15 = globalThis;
+            let _globalThis = globalThis;
+            let _HermesInternal = HermesInternal;
+            let str = ") for ";
+            let str2 = " (wire type ";
+            let str3 = "Unknown field ";
+            let self2 = this;
+            let self3 = this;
+            let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+            throw error;
+          } else {
+            let skipResult = pos.skip(tmp6);
+            if (false !== onRead) {
+              if (true === onRead) {
+                onRead = _mod1197.UnknownFieldHandler.onRead;
+              }
+              let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
+            }
+          }
+        }
+      } while (pos.pos < sum);
+    }
+    return obj;
+  }
+  internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
+    if (lowerBound.lowerBound) {
+      internalBinaryWrite = items166.internalBinaryWrite;
+      lowerBound = lowerBound.lowerBound;
+      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWriteResult = internalBinaryWrite(lowerBound, tagResult.fork(), writeUnknownFields);
+      const joined = internalBinaryWriteResult.join();
+    }
+    if (lowerBound.upperBound) {
+      internalBinaryWrite2 = items166.internalBinaryWrite;
+      const upperBound = lowerBound.upperBound;
+      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const internalBinaryWrite2Result = internalBinaryWrite2(upperBound, tagResult1.fork(), writeUnknownFields);
+      const joined1 = internalBinaryWrite2Result.join();
+    }
+    let onWrite = writeUnknownFields.writeUnknownFields;
+    if (false !== onWrite) {
+      if (1 == onWrite) {
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+      }
+      const self = this;
+      onWrite(this.typeName, lowerBound, tag);
+    }
+    return tag;
+  }
+}
+const prototype23 = SDKVersionRange$Type.prototype;
+const items21 = [, ];
+const obj15 = { no: 1, name: "lower_bound", kind: "message", T: T20 };
+items21[0] = obj15;
+items21[1] = { no: 2, name: "upper_bound", kind: "message", T: T21 };
+const items165 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRange", items21, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType24 = _mod1197.MessageType;
+class SDKVersionRangeBound$Type extends MessageType24 {
+  constructor() {
+    const items = [, ];
+    obj = { no: 1, name: "version", kind: "message", T: T22 };
     items[0] = obj;
     items[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.SDKVersionRangeBound", items, new.target);
@@ -2571,7 +2877,7 @@ class SDKVersionRangeBound$Type extends MessageType21 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.version = items164.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
+          obj.version = items167.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
         } else if (2 === tmp5) {
           obj.inclusive = pos.bool();
         } else {
@@ -2603,7 +2909,7 @@ class SDKVersionRangeBound$Type extends MessageType21 {
   }
   internalBinaryWrite(version, tag, writeUnknownFields) {
     if (version.version) {
-      internalBinaryWrite = items164.internalBinaryWrite;
+      internalBinaryWrite = items167.internalBinaryWrite;
       version = version.version;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(version, tagResult.fork(), writeUnknownFields);
@@ -2624,14 +2930,14 @@ class SDKVersionRangeBound$Type extends MessageType21 {
     return tag;
   }
 }
-const prototype21 = SDKVersionRangeBound$Type.prototype;
-const items19 = [, ];
-const obj14 = { no: 1, name: "version", kind: "message", T: T18 };
-items19[0] = obj14;
-items19[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
-const items163 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRangeBound", items19, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType22 = _mod1197.MessageType;
-class SDKVersionSpecifier$Type extends MessageType22 {
+const prototype24 = SDKVersionRangeBound$Type.prototype;
+const items22 = [, ];
+const obj16 = { no: 1, name: "version", kind: "message", T: T22 };
+items22[0] = obj16;
+items22[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
+const items166 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRangeBound", items22, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType25 = _mod1197.MessageType;
+class SDKVersionSpecifier$Type extends MessageType25 {
   constructor() {
     const items = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.SDKVersionSpecifier", items, new.target);
@@ -2706,20 +3012,20 @@ class SDKVersionSpecifier$Type extends MessageType22 {
     return tag;
   }
 }
-const prototype22 = SDKVersionSpecifier$Type.prototype;
-const items20 = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
-const items164 = new items16("discord_protos.discord_experimentation.v1.SDKVersionSpecifier", items20, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType23 = _mod1197.MessageType;
-class ClientPlatform$Type extends MessageType23 {
+const prototype25 = SDKVersionSpecifier$Type.prototype;
+const items23 = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
+const items167 = new items16("discord_protos.discord_experimentation.v1.SDKVersionSpecifier", items23, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType26 = _mod1197.MessageType;
+class ClientPlatform$Type extends MessageType26 {
   constructor() {
     const items = [, , , , , ];
-    obj = { no: 1, name: "ios_version", kind: "message", T: T19 };
+    obj = { no: 1, name: "ios_version", kind: "message", T: T23 };
     items[0] = obj;
-    items[1] = { no: 2, name: "android_version", kind: "message", T: T20 };
-    items[2] = { no: 3, name: "web_version", kind: "message", T: T21 };
-    items[3] = { no: 4, name: "native_version", kind: "message", T: T22 };
+    items[1] = { no: 2, name: "android_version", kind: "message", T: T24 };
+    items[2] = { no: 3, name: "web_version", kind: "message", T: T25 };
+    items[3] = { no: 4, name: "native_version", kind: "message", T: T26 };
     items[4] = { no: 6, name: "allow_non_native_web", kind: "scalar", T: 8 };
-    items[5] = { no: 5, name: "client_required_changes", kind: "message", T: T23 };
+    items[5] = { no: 5, name: "client_required_changes", kind: "message", T: T27 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.ClientPlatform", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
     return tmp2;
   }
@@ -2748,17 +3054,17 @@ class ClientPlatform$Type extends MessageType23 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.iosVersion = items211.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.iosVersion);
+          obj.iosVersion = items241.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.iosVersion);
         } else if (2 === tmp5) {
-          obj.androidVersion = items211.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.androidVersion);
+          obj.androidVersion = items241.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.androidVersion);
         } else if (3 === tmp5) {
-          obj.webVersion = items211.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.webVersion);
+          obj.webVersion = items241.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.webVersion);
         } else if (4 === tmp5) {
-          obj.nativeVersion = items211.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.nativeVersion);
+          obj.nativeVersion = items241.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.nativeVersion);
         } else if (6 === tmp5) {
           obj.allowNonNativeWeb = pos.bool();
         } else if (5 === tmp5) {
-          obj.clientRequiredChanges = items215.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.clientRequiredChanges);
+          obj.clientRequiredChanges = items245.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.clientRequiredChanges);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -2788,28 +3094,28 @@ class ClientPlatform$Type extends MessageType23 {
   }
   internalBinaryWrite(iosVersion, tag, writeUnknownFields) {
     if (iosVersion.iosVersion) {
-      internalBinaryWrite = items211.internalBinaryWrite;
+      internalBinaryWrite = items241.internalBinaryWrite;
       iosVersion = iosVersion.iosVersion;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(iosVersion, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (iosVersion.androidVersion) {
-      internalBinaryWrite2 = items211.internalBinaryWrite;
+      internalBinaryWrite2 = items241.internalBinaryWrite;
       const androidVersion = iosVersion.androidVersion;
       const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(androidVersion, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (iosVersion.webVersion) {
-      internalBinaryWrite3 = items211.internalBinaryWrite;
+      internalBinaryWrite3 = items241.internalBinaryWrite;
       const webVersion = iosVersion.webVersion;
       const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(webVersion, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if (iosVersion.nativeVersion) {
-      internalBinaryWrite4 = items211.internalBinaryWrite;
+      internalBinaryWrite4 = items241.internalBinaryWrite;
       const nativeVersion = iosVersion.nativeVersion;
       const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(nativeVersion, tagResult3.fork(), writeUnknownFields);
@@ -2820,7 +3126,7 @@ class ClientPlatform$Type extends MessageType23 {
       tagResult4.bool(iosVersion.allowNonNativeWeb);
     }
     if (iosVersion.clientRequiredChanges) {
-      internalBinaryWrite5 = items215.internalBinaryWrite;
+      internalBinaryWrite5 = items245.internalBinaryWrite;
       const clientRequiredChanges = iosVersion.clientRequiredChanges;
       const tagResult5 = tag.tag(5, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(clientRequiredChanges, tagResult5.fork(), writeUnknownFields);
@@ -2837,22 +3143,22 @@ class ClientPlatform$Type extends MessageType23 {
     return tag;
   }
 }
-const prototype23 = ClientPlatform$Type.prototype;
-const items21 = [, , , , , ];
-const obj15 = { no: 1, name: "ios_version", kind: "message", T: T19 };
-items21[0] = obj15;
-items21[1] = { no: 2, name: "android_version", kind: "message", T: T20 };
-items21[2] = { no: 3, name: "web_version", kind: "message", T: T21 };
-items21[3] = { no: 4, name: "native_version", kind: "message", T: T22 };
-items21[4] = { no: 6, name: "allow_non_native_web", kind: "scalar", T: 8 };
-items21[5] = { no: 5, name: "client_required_changes", kind: "message", T: T23 };
-const obj16 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
-const sDKVersionSpecifierType = new SDKVersionSpecifier$Type("discord_protos.discord_experimentation.v1.ClientPlatform", items21, obj16, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType24 = _mod1197.MessageType;
-class PlatformVersion$Type extends MessageType24 {
+const prototype26 = ClientPlatform$Type.prototype;
+const items24 = [, , , , , ];
+const obj17 = { no: 1, name: "ios_version", kind: "message", T: T23 };
+items24[0] = obj17;
+items24[1] = { no: 2, name: "android_version", kind: "message", T: T24 };
+items24[2] = { no: 3, name: "web_version", kind: "message", T: T25 };
+items24[3] = { no: 4, name: "native_version", kind: "message", T: T26 };
+items24[4] = { no: 6, name: "allow_non_native_web", kind: "scalar", T: 8 };
+items24[5] = { no: 5, name: "client_required_changes", kind: "message", T: T27 };
+const obj18 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
+const sDKVersionSpecifierType = new SDKVersionSpecifier$Type("discord_protos.discord_experimentation.v1.ClientPlatform", items24, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType27 = _mod1197.MessageType;
+class PlatformVersion$Type extends MessageType27 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T24 };
+    obj = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T28 };
     items[0] = obj;
     items[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.PlatformVersion", items, new.target);
@@ -2884,7 +3190,7 @@ class PlatformVersion$Type extends MessageType24 {
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
           let ranges = obj.ranges;
-          let arr = ranges.push(items212.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+          let arr = ranges.push(items242.internalBinaryRead(pos, pos.uint32(), readUnknownField));
         } else if (2 === tmp5) {
           obj.workAroundPyotoBug = pos.bool();
         } else {
@@ -2919,7 +3225,7 @@ class PlatformVersion$Type extends MessageType24 {
     let num = 0;
     if (0 < ranges.ranges.length) {
       do {
-        internalBinaryWrite = items212.internalBinaryWrite;
+        internalBinaryWrite = items242.internalBinaryWrite;
         let tmp2 = ranges.ranges[num];
         let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
@@ -2943,19 +3249,19 @@ class PlatformVersion$Type extends MessageType24 {
     return tag;
   }
 }
-const prototype24 = PlatformVersion$Type.prototype;
-const items22 = [, ];
-const obj17 = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T24 };
-items22[0] = obj17;
-items22[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
-const items211 = new items21("discord_protos.discord_experimentation.v1.PlatformVersion", items22, obj16, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType25 = _mod1197.MessageType;
-class PlatformVersionRange$Type extends MessageType25 {
+const prototype27 = PlatformVersion$Type.prototype;
+const items25 = [, ];
+const obj19 = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T28 };
+items25[0] = obj19;
+items25[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
+const items241 = new items24("discord_protos.discord_experimentation.v1.PlatformVersion", items25, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType28 = _mod1197.MessageType;
+class PlatformVersionRange$Type extends MessageType28 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "lower_bound", kind: "message", T: T25 };
+    obj = { no: 1, name: "lower_bound", kind: "message", T: T29 };
     items[0] = obj;
-    items[1] = { no: 2, name: "upper_bound", kind: "message", T: T26 };
+    items[1] = { no: 2, name: "upper_bound", kind: "message", T: T30 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.PlatformVersionRange", items, new.target);
     return tmp2;
   }
@@ -2984,9 +3290,9 @@ class PlatformVersionRange$Type extends MessageType25 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.lowerBound = items213.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
+          obj.lowerBound = items243.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
         } else if (2 === tmp5) {
-          obj.upperBound = items213.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
+          obj.upperBound = items243.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -3016,14 +3322,14 @@ class PlatformVersionRange$Type extends MessageType25 {
   }
   internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
     if (lowerBound.lowerBound) {
-      internalBinaryWrite = items213.internalBinaryWrite;
+      internalBinaryWrite = items243.internalBinaryWrite;
       lowerBound = lowerBound.lowerBound;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(lowerBound, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (lowerBound.upperBound) {
-      internalBinaryWrite2 = items213.internalBinaryWrite;
+      internalBinaryWrite2 = items243.internalBinaryWrite;
       const upperBound = lowerBound.upperBound;
       const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(upperBound, tagResult1.fork(), writeUnknownFields);
@@ -3040,17 +3346,17 @@ class PlatformVersionRange$Type extends MessageType25 {
     return tag;
   }
 }
-const prototype25 = PlatformVersionRange$Type.prototype;
-const items23 = [, ];
-const obj18 = { no: 1, name: "lower_bound", kind: "message", T: T25 };
-items23[0] = obj18;
-items23[1] = { no: 2, name: "upper_bound", kind: "message", T: T26 };
-const items212 = new items21("discord_protos.discord_experimentation.v1.PlatformVersionRange", items23, obj16, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType26 = _mod1197.MessageType;
-class PlatformVersionRangeBound$Type extends MessageType26 {
+const prototype28 = PlatformVersionRange$Type.prototype;
+const items26 = [, ];
+const obj20 = { no: 1, name: "lower_bound", kind: "message", T: T29 };
+items26[0] = obj20;
+items26[1] = { no: 2, name: "upper_bound", kind: "message", T: T30 };
+const items242 = new items24("discord_protos.discord_experimentation.v1.PlatformVersionRange", items26, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType29 = _mod1197.MessageType;
+class PlatformVersionRangeBound$Type extends MessageType29 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "version", kind: "message", T: T27 };
+    obj = { no: 1, name: "version", kind: "message", T: T31 };
     items[0] = obj;
     items[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", items, new.target);
@@ -3081,7 +3387,7 @@ class PlatformVersionRangeBound$Type extends MessageType26 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.version = items214.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
+          obj.version = items244.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
         } else if (2 === tmp5) {
           obj.inclusive = pos.bool();
         } else {
@@ -3113,7 +3419,7 @@ class PlatformVersionRangeBound$Type extends MessageType26 {
   }
   internalBinaryWrite(version, tag, writeUnknownFields) {
     if (version.version) {
-      internalBinaryWrite = items214.internalBinaryWrite;
+      internalBinaryWrite = items244.internalBinaryWrite;
       version = version.version;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(version, tagResult.fork(), writeUnknownFields);
@@ -3134,14 +3440,14 @@ class PlatformVersionRangeBound$Type extends MessageType26 {
     return tag;
   }
 }
-const prototype26 = PlatformVersionRangeBound$Type.prototype;
-const items24 = [, ];
-const obj19 = { no: 1, name: "version", kind: "message", T: T27 };
-items24[0] = obj19;
-items24[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
-const items213 = new items21("discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", items24, obj16, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType27 = _mod1197.MessageType;
-class PlatformVersionSpecifier$Type extends MessageType27 {
+const prototype29 = PlatformVersionRangeBound$Type.prototype;
+const items27 = [, ];
+const obj21 = { no: 1, name: "version", kind: "message", T: T31 };
+items27[0] = obj21;
+items27[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
+const items243 = new items24("discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", items27, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType30 = _mod1197.MessageType;
+class PlatformVersionSpecifier$Type extends MessageType30 {
   constructor() {
     const items = [{ no: 1, name: "major", kind: "scalar", T: 13 }, , ];
     obj = { no: 2, name: "minor", kind: "message", T };
@@ -3151,7 +3457,7 @@ class PlatformVersionSpecifier$Type extends MessageType27 {
       }
     }
     items[1] = obj;
-    items[2] = { no: 3, name: "build", kind: "message", T: T28 };
+    items[2] = { no: 3, name: "build", kind: "message", T: T32 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", items, T);
     return tmp2;
   }
@@ -3246,8 +3552,8 @@ class PlatformVersionSpecifier$Type extends MessageType27 {
     return tag;
   }
 }
-const prototype27 = PlatformVersionSpecifier$Type.prototype;
-const items25 = [
+const prototype30 = PlatformVersionSpecifier$Type.prototype;
+const items28 = [
   { no: 1, name: "major", kind: "scalar", T: 13 },
   {
     no: 2,
@@ -3257,11 +3563,11 @@ const items25 = [
       return require("wrappers").UInt32Value;
     }
   },
-  { no: 3, name: "build", kind: "message", T: T28 }
+  { no: 3, name: "build", kind: "message", T: T32 }
 ];
-const items214 = new items21("discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", items25, obj16, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType28 = _mod1197.MessageType;
-class ClientRequiredChanges$Type extends MessageType28 {
+const items244 = new items24("discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", items28, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType31 = _mod1197.MessageType;
+class ClientRequiredChanges$Type extends MessageType31 {
   constructor() {
     const items = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.ClientRequiredChanges", items, new.target);
@@ -3371,11 +3677,11 @@ class ClientRequiredChanges$Type extends MessageType28 {
     return tag;
   }
 }
-const prototype28 = ClientRequiredChanges$Type.prototype;
-const items26 = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
-const items215 = new items21("discord_protos.discord_experimentation.v1.ClientRequiredChanges", items26, obj16, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType29 = _mod1197.MessageType;
-class UserIsBot$Type extends MessageType29 {
+const prototype31 = ClientRequiredChanges$Type.prototype;
+const items29 = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
+const items245 = new items24("discord_protos.discord_experimentation.v1.ClientRequiredChanges", items29, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType32 = _mod1197.MessageType;
+class UserIsBot$Type extends MessageType32 {
   constructor() {
     const items = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UserIsBot", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
@@ -3450,16 +3756,16 @@ class UserIsBot$Type extends MessageType29 {
     return tag;
   }
 }
-const prototype29 = UserIsBot$Type.prototype;
-const items27 = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
-const clientRequiredChangesType = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserIsBot", items27, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType30 = _mod1197.MessageType;
-class UserAgeRange$Type extends MessageType30 {
+const prototype32 = UserIsBot$Type.prototype;
+const items30 = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
+const clientRequiredChangesType = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserIsBot", items30, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType33 = _mod1197.MessageType;
+class UserAgeRange$Type extends MessageType33 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "min_age_years", kind: "message", T: T29 };
+    obj = { no: 1, name: "min_age_years", kind: "message", T: T33 };
     items[0] = obj;
-    items[1] = { no: 2, name: "max_age_years", kind: "message", T: T30 };
+    items[1] = { no: 2, name: "max_age_years", kind: "message", T: T34 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UserAgeRange", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
     return tmp2;
   }
@@ -3548,15 +3854,15 @@ class UserAgeRange$Type extends MessageType30 {
     return tag;
   }
 }
-const prototype30 = UserAgeRange$Type.prototype;
-const items28 = [, ];
-const obj20 = { no: 1, name: "min_age_years", kind: "message", T: T29 };
-items28[0] = obj20;
-items28[1] = { no: 2, name: "max_age_years", kind: "message", T: T30 };
-const obj21 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" };
-const clientRequiredChangesType1 = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserAgeRange", items28, obj21, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType31 = _mod1197.MessageType;
-class Fixed64Value$Type extends MessageType31 {
+const prototype33 = UserAgeRange$Type.prototype;
+const items31 = [, ];
+const obj22 = { no: 1, name: "min_age_years", kind: "message", T: T33 };
+items31[0] = obj22;
+items31[1] = { no: 2, name: "max_age_years", kind: "message", T: T34 };
+const obj23 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" };
+const clientRequiredChangesType1 = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserAgeRange", items31, obj23, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType34 = _mod1197.MessageType;
+class Fixed64Value$Type extends MessageType34 {
   constructor() {
     const items = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.Fixed64Value", items, new.target);
@@ -3632,16 +3938,16 @@ class Fixed64Value$Type extends MessageType31 {
     return tag;
   }
 }
-const prototype31 = Fixed64Value$Type.prototype;
-const items29 = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
-const items281 = new items28("discord_protos.discord_experimentation.v1.Fixed64Value", items29, obj21, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType32 = _mod1197.MessageType;
-class UserIDRange$Type extends MessageType32 {
+const prototype34 = Fixed64Value$Type.prototype;
+const items32 = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
+const items311 = new items31("discord_protos.discord_experimentation.v1.Fixed64Value", items32, obj23, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const MessageType35 = _mod1197.MessageType;
+class UserIDRange$Type extends MessageType35 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "min_id", kind: "message", T: T31 };
+    obj = { no: 1, name: "min_id", kind: "message", T: T35 };
     items[0] = obj;
-    items[1] = { no: 2, name: "max_id", kind: "message", T: T32 };
+    items[1] = { no: 2, name: "max_id", kind: "message", T: T36 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UserIDRange", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
     return tmp2;
   }
@@ -3670,9 +3976,9 @@ class UserIDRange$Type extends MessageType32 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.minId = items281.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
+          obj.minId = items311.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
         } else if (2 === tmp5) {
-          obj.maxId = items281.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
+          obj.maxId = items311.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -3702,14 +4008,14 @@ class UserIDRange$Type extends MessageType32 {
   }
   internalBinaryWrite(minId, tag, writeUnknownFields) {
     if (minId.minId) {
-      internalBinaryWrite = items281.internalBinaryWrite;
+      internalBinaryWrite = items311.internalBinaryWrite;
       minId = minId.minId;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minId, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (minId.maxId) {
-      internalBinaryWrite2 = items281.internalBinaryWrite;
+      internalBinaryWrite2 = items311.internalBinaryWrite;
       const maxId = minId.maxId;
       const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(maxId, tagResult1.fork(), writeUnknownFields);
@@ -3726,14 +4032,14 @@ class UserIDRange$Type extends MessageType32 {
     return tag;
   }
 }
-const prototype32 = UserIDRange$Type.prototype;
-const items30 = [, ];
-const obj22 = { no: 1, name: "min_id", kind: "message", T: T31 };
-items30[0] = obj22;
-items30[1] = { no: 2, name: "max_id", kind: "message", T: T32 };
-const fixed64ValueType = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserIDRange", items30, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType33 = _mod1197.MessageType;
-class UserHasFlag$Type extends MessageType33 {
+const prototype35 = UserIDRange$Type.prototype;
+const items33 = [, ];
+const obj24 = { no: 1, name: "min_id", kind: "message", T: T35 };
+items33[0] = obj24;
+items33[1] = { no: 2, name: "max_id", kind: "message", T: T36 };
+const fixed64ValueType = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserIDRange", items33, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType36 = _mod1197.MessageType;
+class UserHasFlag$Type extends MessageType36 {
   constructor() {
     const items = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UserHasFlag", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
@@ -3809,11 +4115,11 @@ class UserHasFlag$Type extends MessageType33 {
     return tag;
   }
 }
-const prototype33 = UserHasFlag$Type.prototype;
-const items31 = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
-const fixed64ValueType1 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserHasFlag", items31, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType34 = _mod1197.MessageType;
-class UnitIdInRangeByHash$Type extends MessageType34 {
+const prototype36 = UserHasFlag$Type.prototype;
+const items34 = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
+const fixed64ValueType1 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserHasFlag", items34, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType37 = _mod1197.MessageType;
+class UnitIdInRangeByHash$Type extends MessageType37 {
   constructor() {
     const items = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UnitIdInRangeByHash", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, new.target);
@@ -3900,11 +4206,11 @@ class UnitIdInRangeByHash$Type extends MessageType34 {
     return tag;
   }
 }
-const prototype34 = UnitIdInRangeByHash$Type.prototype;
-const items32 = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
-const fixed64ValueType2 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInRangeByHash", items32, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType35 = _mod1197.MessageType;
-class ClientReleaseChannel$Type extends MessageType35 {
+const prototype37 = UnitIdInRangeByHash$Type.prototype;
+const items35 = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
+const fixed64ValueType2 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInRangeByHash", items35, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType38 = _mod1197.MessageType;
+class ClientReleaseChannel$Type extends MessageType38 {
   constructor() {
     const items = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.ClientReleaseChannel", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
@@ -3986,11 +4292,11 @@ class ClientReleaseChannel$Type extends MessageType35 {
     return tag;
   }
 }
-const prototype35 = ClientReleaseChannel$Type.prototype;
-const items33 = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
-const fixed64ValueType3 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientReleaseChannel", items33, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType36 = _mod1197.MessageType;
-class ClientDesignId$Type extends MessageType36 {
+const prototype38 = ClientReleaseChannel$Type.prototype;
+const items36 = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
+const fixed64ValueType3 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientReleaseChannel", items36, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType39 = _mod1197.MessageType;
+class ClientDesignId$Type extends MessageType39 {
   constructor() {
     const items = [{ no: 1, name: "design_ids", kind: "scalar", repeat: 1, T: 5 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.ClientDesignId", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
@@ -4087,11 +4393,11 @@ class ClientDesignId$Type extends MessageType36 {
     return tag;
   }
 }
-const prototype36 = ClientDesignId$Type.prototype;
-const items34 = [{ no: 1, name: "design_ids", kind: "scalar", repeat: 1, T: 5 }];
-const fixed64ValueType4 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientDesignId", items34, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType37 = _mod1197.MessageType;
-class Always$Type extends MessageType37 {
+const prototype39 = ClientDesignId$Type.prototype;
+const items37 = [{ no: 1, name: "design_ids", kind: "scalar", repeat: 1, T: 5 }];
+const fixed64ValueType4 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientDesignId", items37, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType40 = _mod1197.MessageType;
+class Always$Type extends MessageType40 {
   constructor() {
     const items = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.Always", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, new.target);
@@ -4166,11 +4472,11 @@ class Always$Type extends MessageType37 {
     return tag;
   }
 }
-const prototype37 = Always$Type.prototype;
-const items35 = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
-const fixed64ValueType5 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.Always", items35, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType38 = _mod1197.MessageType;
-class UnitIdInExperiment$Type extends MessageType38 {
+const prototype40 = Always$Type.prototype;
+const items38 = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
+const fixed64ValueType5 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.Always", items38, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType41 = _mod1197.MessageType;
+class UnitIdInExperiment$Type extends MessageType41 {
   constructor() {
     const items = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UnitIdInExperiment", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, new.target);
@@ -4274,11 +4580,11 @@ class UnitIdInExperiment$Type extends MessageType38 {
     return tag;
   }
 }
-const prototype38 = UnitIdInExperiment$Type.prototype;
-const items36 = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
-const fixed64ValueType6 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInExperiment", items36, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType39 = _mod1197.MessageType;
-class UserPremiumType$Type extends MessageType39 {
+const prototype41 = UnitIdInExperiment$Type.prototype;
+const items39 = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
+const fixed64ValueType6 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInExperiment", items39, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType42 = _mod1197.MessageType;
+class UserPremiumType$Type extends MessageType42 {
   constructor() {
     const items = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UserPremiumType", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
@@ -4375,11 +4681,11 @@ class UserPremiumType$Type extends MessageType39 {
     return tag;
   }
 }
-const prototype39 = UserPremiumType$Type.prototype;
-const items37 = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
-const fixed64ValueType7 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserPremiumType", items37, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType40 = _mod1197.MessageType;
-class UnitIdMatchesFilterSnapshot$Type extends MessageType40 {
+const prototype42 = UserPremiumType$Type.prototype;
+const items40 = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
+const fixed64ValueType7 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserPremiumType", items40, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType43 = _mod1197.MessageType;
+class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
   constructor() {
     const items = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.UnitIdMatchesFilterSnapshot", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, new.target);
@@ -4486,11 +4792,11 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType40 {
     return tag;
   }
 }
-const prototype40 = UnitIdMatchesFilterSnapshot$Type.prototype;
-const items38 = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
-const fixed64ValueType8 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdMatchesFilterSnapshot", items38, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType41 = _mod1197.MessageType;
-class GuildIds$Type extends MessageType41 {
+const prototype43 = UnitIdMatchesFilterSnapshot$Type.prototype;
+const items41 = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
+const fixed64ValueType8 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdMatchesFilterSnapshot", items41, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const MessageType44 = _mod1197.MessageType;
+class GuildIds$Type extends MessageType44 {
   constructor() {
     const items = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.GuildIds", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, new.target);
@@ -4591,16 +4897,16 @@ class GuildIds$Type extends MessageType41 {
     return tag;
   }
 }
-const prototype41 = GuildIds$Type.prototype;
-const items39 = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
-const fixed64ValueType9 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.GuildIds", items39, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, sDKVersionSpecifierType, items211, items212, items213, items214, items215, clientRequiredChangesType, clientRequiredChangesType1, items281, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, Fixed64Value$Type);
-const MessageType42 = _mod1197.MessageType;
-class GuildMemberCountRange$Type extends MessageType42 {
+const prototype44 = GuildIds$Type.prototype;
+const items42 = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
+const fixed64ValueType9 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.GuildIds", items42, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, Fixed64Value$Type);
+const MessageType45 = _mod1197.MessageType;
+class GuildMemberCountRange$Type extends MessageType45 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "min_count", kind: "message", T: T33 };
+    obj = { no: 1, name: "min_count", kind: "message", T: T37 };
     items[0] = obj;
-    items[1] = { no: 2, name: "max_count", kind: "message", T: T34 };
+    items[1] = { no: 2, name: "max_count", kind: "message", T: T38 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.GuildMemberCountRange", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, new.target);
     return tmp2;
   }
@@ -4689,19 +4995,19 @@ class GuildMemberCountRange$Type extends MessageType42 {
     return tag;
   }
 }
-const prototype42 = GuildMemberCountRange$Type.prototype;
-const items40 = [, ];
-const obj23 = { no: 1, name: "min_count", kind: "message", T: T33 };
-items40[0] = obj23;
-items40[1] = { no: 2, name: "max_count", kind: "message", T: T34 };
-const guildIdsType = new GuildIds$Type("discord_protos.discord_experimentation.v1.GuildMemberCountRange", items40, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, tmp5, tmp4, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, sDKVersionSpecifierType, items211, items212, items213, items214, items215, clientRequiredChangesType, clientRequiredChangesType1, items281, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, items40, items29, this, exports);
-const MessageType43 = _mod1197.MessageType;
-class GuildIdRange$Type extends MessageType43 {
+const prototype45 = GuildMemberCountRange$Type.prototype;
+const items43 = [, ];
+const obj25 = { no: 1, name: "min_count", kind: "message", T: T37 };
+items43[0] = obj25;
+items43[1] = { no: 2, name: "max_count", kind: "message", T: T38 };
+const guildIdsType = new GuildIds$Type("discord_protos.discord_experimentation.v1.GuildMemberCountRange", items43, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, tmp5, tmp4, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, items43, items32, this, exports);
+const MessageType46 = _mod1197.MessageType;
+class GuildIdRange$Type extends MessageType46 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "min_id", kind: "message", T: T35 };
+    obj = { no: 1, name: "min_id", kind: "message", T: T39 };
     items[0] = obj;
-    items[1] = { no: 2, name: "max_id", kind: "message", T: T36 };
+    items[1] = { no: 2, name: "max_id", kind: "message", T: T40 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.GuildIdRange", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, new.target);
     return tmp2;
   }
@@ -4730,9 +5036,9 @@ class GuildIdRange$Type extends MessageType43 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          obj.minId = items281.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
+          obj.minId = items311.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
         } else if (2 === tmp5) {
-          obj.maxId = items281.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
+          obj.maxId = items311.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -4762,14 +5068,14 @@ class GuildIdRange$Type extends MessageType43 {
   }
   internalBinaryWrite(minId, tag, writeUnknownFields) {
     if (minId.minId) {
-      internalBinaryWrite = items281.internalBinaryWrite;
+      internalBinaryWrite = items311.internalBinaryWrite;
       minId = minId.minId;
       const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minId, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (minId.maxId) {
-      internalBinaryWrite2 = items281.internalBinaryWrite;
+      internalBinaryWrite2 = items311.internalBinaryWrite;
       const maxId = minId.maxId;
       const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(maxId, tagResult1.fork(), writeUnknownFields);
@@ -4786,15 +5092,15 @@ class GuildIdRange$Type extends MessageType43 {
     return tag;
   }
 }
-const prototype43 = GuildIdRange$Type.prototype;
-const items41 = [, ];
-const obj24 = { no: 1, name: "min_id", kind: "message", T: T35 };
-items41[0] = obj24;
-const obj25 = { no: 2, name: "max_id", kind: "message", T: T36 };
-items41[1] = obj25;
-const guildMemberCountRangeType = new GuildMemberCountRange$Type("discord_protos.discord_experimentation.v1.GuildIdRange", items41, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, GuildIdRange$Type, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", items41, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, sDKVersionSpecifierType, items211, items212, items213, items214, items215, clientRequiredChangesType, clientRequiredChangesType1, items281, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, items29, this, exports, obj25);
-const MessageType44 = _mod1197.MessageType;
-class GuildHasFeature$Type extends MessageType44 {
+const prototype46 = GuildIdRange$Type.prototype;
+const items44 = [, ];
+const obj26 = { no: 1, name: "min_id", kind: "message", T: T39 };
+items44[0] = obj26;
+const obj27 = { no: 2, name: "max_id", kind: "message", T: T40 };
+items44[1] = obj27;
+const guildMemberCountRangeType = new GuildMemberCountRange$Type("discord_protos.discord_experimentation.v1.GuildIdRange", items44, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, GuildIdRange$Type, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", items44, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, items32, this, exports, obj27);
+const MessageType47 = _mod1197.MessageType;
+class GuildHasFeature$Type extends MessageType47 {
   constructor() {
     const items = [{ no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.GuildHasFeature", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, new.target);
@@ -4876,13 +5182,13 @@ class GuildHasFeature$Type extends MessageType44 {
     return tag;
   }
 }
-const prototype44 = GuildHasFeature$Type.prototype;
-const items42 = [];
-const obj26 = { no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 };
-items42[0] = obj26;
-const guildIdRangeType = new GuildIdRange$Type("discord_protos.discord_experimentation.v1.GuildHasFeature", items42, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, GuildHasFeature$Type, GuildIdRange$Type, items42, "create", "internalBinaryRead", "internalBinaryWrite", items41, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, sDKVersionSpecifierType, items211, items212, items213, items214, items215, clientRequiredChangesType, clientRequiredChangesType1, items281, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, guildMemberCountRangeType, this, exports, obj26, undefined);
-const MessageType45 = _mod1197.MessageType;
-class InstallationIds$Type extends MessageType45 {
+const prototype47 = GuildHasFeature$Type.prototype;
+const items45 = [];
+const obj28 = { no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 };
+items45[0] = obj28;
+const guildIdRangeType = new GuildIdRange$Type("discord_protos.discord_experimentation.v1.GuildHasFeature", items45, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, GuildHasFeature$Type, GuildIdRange$Type, items45, "create", "internalBinaryRead", "internalBinaryWrite", items44, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, guildMemberCountRangeType, this, exports, obj28, undefined);
+const MessageType48 = _mod1197.MessageType;
+class InstallationIds$Type extends MessageType48 {
   constructor() {
     const items = [{ no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 }];
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.InstallationIds", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
@@ -4983,10 +5289,10 @@ class InstallationIds$Type extends MessageType45 {
     return tag;
   }
 }
-const prototype45 = InstallationIds$Type.prototype;
-const items43 = [{ no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 }];
-const tmp52 = new "create"("discord_protos.discord_experimentation.v1.InstallationIds", items43, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, GuildHasFeature$Type, GuildIdRange$Type, InstallationIds$Type, "create", items43, "internalBinaryWrite", this, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, sDKVersionSpecifierType, items211, items212, items213, items214, items215, clientRequiredChangesType, clientRequiredChangesType1, items281, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, guildMemberCountRangeType, guildIdRangeType, exports);
-let internalBinaryWrite = tmp52;
+const prototype48 = InstallationIds$Type.prototype;
+const items46 = [{ no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 }];
+const tmp55 = new "create"("discord_protos.discord_experimentation.v1.InstallationIds", items46, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, GuildHasFeature$Type, GuildIdRange$Type, InstallationIds$Type, "create", items46, "internalBinaryWrite", this, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, guildMemberCountRangeType, guildIdRangeType, exports);
+let internalBinaryWrite = tmp55;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/rules.tsx");
 
 export { Rule_Type };
@@ -5012,18 +5318,21 @@ export const ClientIP = clientLocation_LocationType2;
 export const UserIP = clientLocation_LocationType3;
 export const ClientOperatingSystem = clientLocation_LocationType4;
 export const SDKVersion = items161;
-export const SDKVersionRange = items162;
-export const SDKVersionRangeBound = items163;
-export const SDKVersionSpecifier = items164;
+export const OSVersion = items162;
+export const OSVersionRange = items163;
+export const OSVersionRangeBound = items164;
+export const SDKVersionRange = items165;
+export const SDKVersionRangeBound = items166;
+export const SDKVersionSpecifier = items167;
 export const ClientPlatform = sDKVersionSpecifierType;
-export const PlatformVersion = items211;
-export const PlatformVersionRange = items212;
-export const PlatformVersionRangeBound = items213;
-export const PlatformVersionSpecifier = items214;
-export const ClientRequiredChanges = items215;
+export const PlatformVersion = items241;
+export const PlatformVersionRange = items242;
+export const PlatformVersionRangeBound = items243;
+export const PlatformVersionSpecifier = items244;
+export const ClientRequiredChanges = items245;
 export const UserIsBot = clientRequiredChangesType;
 export const UserAgeRange = clientRequiredChangesType1;
-export const Fixed64Value = items281;
+export const Fixed64Value = items311;
 export const UserIDRange = fixed64ValueType;
 export const UserHasFlag = fixed64ValueType1;
 export const UnitIdInRangeByHash = fixed64ValueType2;
@@ -5037,4 +5346,4 @@ export const GuildIds = fixed64ValueType9;
 export const GuildMemberCountRange = guildIdsType;
 export const GuildIdRange = guildMemberCountRangeType;
 export const GuildHasFeature = guildIdRangeType;
-export const InstallationIds = tmp52;
+export const InstallationIds = tmp55;

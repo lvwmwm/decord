@@ -1,17 +1,16 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 17271
+// Function ID: 17272
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5638, 5014, 575, 5095, 5637, 8031, 5717, 2]
+// Dependencies: [32, 19, 17, 21, 5758, 5141, 575, 1652, 5757, 8155, 5837, 2]
 
-// Module 17128 (QuestGameLogotype)
+// Module 17271 (QuestGameLogotype)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
+import springPresets from "springPresets" /* 5758 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -19,18 +18,21 @@ let metroRequire;
 let obj3;
 ({ View: hasOwnProperty, Image: metroRequire } = react_native);
 const jsx = Fragment.jsx;
-let SPRING_CONFIG = { overshootClamping: true };
+let obj = { overshootClamping: true };
 const merged = Object.assign(springPresets.springSlow);
 const obj2 = { logo: obj3 };
 obj3 = { marginBottom: nativeDefault.space.PX_4 };
 let closure_9 = createStyles.createStyles(obj2);
-const __initData = { code: "function QuestGameLogotypeTsx1(){const{withSpring,logoDimensionStyles,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,'animate-always')};}" };
+let closure_10 = { code: "(function QuestGameLogotypeTsx1(){let[withSpring,logoDimensionStyles,SPRING_CONFIG]=this.__closure;return{opacity:withSpring(logoDimensionStyles==null?0:1,SPRING_CONFIG,'animate-always')};})" };
 const memoResult = react.memo(function QuestGameLogotype(assetUrl) {
-  let items3;
-  let items4;
-  let items5;
-  let obj6;
-  let tmp10Result;
+  let items6;
+  let items7;
+  let obj5;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp15Result;
+  let tmp9;
   assetUrl = assetUrl.assetUrl;
   let num = assetUrl.width;
   if (num === undefined) {
@@ -42,6 +44,7 @@ const memoResult = react.memo(function QuestGameLogotype(assetUrl) {
   const onError = assetUrl.onError;
   const style = assetUrl.style;
   let tmp = closure_9();
+  obj = maxHeight;
   const tmp2 = maxWidth(maxHeight.useState(null), 2);
   const first = tmp2[0];
   let closure_6 = tmp2[1];
@@ -81,43 +84,49 @@ const memoResult = react.memo(function QuestGameLogotype(assetUrl) {
     });
   }, items1);
   const tmp6 = assetUrl;
-  SPRING_CONFIG = assetUrl(height[7]);
-  class C {
+  const items2 = [closure_10, , , ];
+  const useAnimatedStyle = assetUrl(height[7]).useAnimatedStyle;
+  assetUrl(height[7]);
+  items2[1] = assetUrl(height[8]).withSpring;
+  items2[2] = memo;
+  items2[3] = obj;
+  let c0;
+  let c1;
+  let c2;
+  [tmp9, tmp10, tmp11, tmp12] = items2;
+  class QuestGameLogotypeTsx1 {
     constructor() {
-      let obj;
       num = 1;
-      const withSpring = spring.withSpring;
-      spring;
-      if (null == memo) {
+      const tmp = c0;
+      if (null == c1) {
         num = 0;
       }
-      obj = { opacity: withSpring(num, obj, "animate-always") };
+      obj = { opacity: tmp(num, c2, "animate-always") };
       return obj;
     }
   }
-  C.__closure = { withSpring: assetUrl(height[8]).withSpring, logoDimensionStyles: memo, SPRING_CONFIG };
-  C.__workletHash = 11242802634598;
-  C.__initData = __initData;
-  const items2 = [assetUrl];
-  ({ withSpring: assetUrl(height[8]).withSpring, logoDimensionStyles: memo, SPRING_CONFIG });
-  const animatedStyle = SPRING_CONFIG.useAnimatedStyle(C);
-  const memo1 = maxHeight.useMemo(() => assetUrl.endsWith(".svg"), items2);
-  const obj3 = { style: items3, children: tmp10Result };
-  items3 = [animatedStyle, style];
-  const View = num(height[7]).View;
-  const tmp11 = num;
+  const items3 = [tmp10, tmp11, tmp12];
+  QuestGameLogotypeTsx1.__closure = items3;
+  QuestGameLogotypeTsx1.__workletHash = 2309549072991;
+  QuestGameLogotypeTsx1.__initData = tmp9;
+  const items4 = [assetUrl];
+  const animatedStyle = useAnimatedStyle(QuestGameLogotypeTsx1);
+  const memo1 = obj.useMemo(() => assetUrl.endsWith(".svg"), items4);
+  const items5 = [animatedStyle, style];
+  const View = num(tmp7[7]).View;
+  const tmp16 = num;
   if (memo1) {
-    const obj4 = { style: items4, children: memo(tmp6(height[9]).SvgUri, size) };
-    items4 = [memo, tmp.logo];
+    const obj3 = { style: items6, children: null };
+    items6 = [memo, tmp.logo];
     size = { height: "100%", width: "100%", uri: assetUrl, onError };
-    tmp10Result = tmp10(first, obj4);
+    tmp15Result = tmp15(first, obj3);
   } else {
-    const obj5 = { source: obj6, style: items5, onError };
-    items5 = [memo, tmp.logo];
-    obj6 = { uri: assetUrl };
-    tmp10Result = tmp10(tmp11(tmp7[10]), obj5);
+    const obj4 = { source: obj5, style: items7, onError };
+    items7 = [memo, tmp.logo];
+    obj5 = { uri: assetUrl };
+    tmp15Result = tmp15(tmp16(tmp7[10]), obj4);
   }
-  return memo(View, obj3);
+  return <View style={items5}>{tmp15Result}</View>;
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/QuestGameLogotype.tsx");

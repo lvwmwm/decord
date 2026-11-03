@@ -1,64 +1,79 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12575
+// Function ID: 12576
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 5014, 6732, 5095, 5254, 5257, 6975, 1113, 5624, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 6852, 1652, 5377, 5380, 7101, 1113, 5747, 2]
 // Exports: default
 
-// Module 12439 (ExpandableList)
+// Module 12575 (ExpandableList)
 import react_native from "react-native" /* 17 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import timingPresets from "timingPresets" /* 5380 */;
+import usePreviousDefault from "usePrevious" /* 6852 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp4;
+const _modDef1652 = tmp4(1652);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ animatedListContainer: { overflow: "hidden" }, expandCTALabelContainer: { alignItems: "center" } });
-let closure_10 = { code: "function ExpandableListTsx1(){const{expanded,collapsedListHeight,remainingListHeight}=this.__closure;if(expanded&&collapsedListHeight.get()!==0&&remainingListHeight.get()!==0){return collapsedListHeight.get()+remainingListHeight.get();}return collapsedListHeight.get();}" };
-let closure_11 = { code: "function ExpandableListTsx2(){const{collapsedListHeight,withTiming,containerHeight,timingStandard}=this.__closure;if(collapsedListHeight.get()!==0){return{height:withTiming(containerHeight.get(),timingStandard)};}else{return{};}}" };
+let closure_10 = { code: "(function ExpandableListTsx1(){let[expanded,collapsedListHeight,remainingListHeight]=this.__closure;if(expanded&&collapsedListHeight.get()!==0&&remainingListHeight.get()!==0){return collapsedListHeight.get()+remainingListHeight.get();}return collapsedListHeight.get();})" };
+let closure_11 = { code: "(function ExpandableListTsx2(){let[collapsedListHeight,withTiming,containerHeight,timingStandard]=this.__closure;if(collapsedListHeight.get()!==0){return{height:withTiming(containerHeight.get(),timingStandard)};}else{return{};}})" };
 let result = size.fileFinishedImporting("modules/app_launcher/native/base_components/ExpandableList.tsx");
 
 export default function ExpandableList(onExpand) {
   let Text;
+  let closure_129_2;
+  let closure_129_4;
   let expandedOverride;
-  let items5;
-  let items6;
+  let first;
+  let items10;
+  let items9;
+  let obj10;
   let obj12;
-  let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f127322 = (fn, index) => {
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp23;
+  const f127410 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
   const items = onExpand.items;
   onExpand = onExpand.onExpand;
-  ({ onExpandCTAPress: dependencyMap, expandedOverride } = onExpand);
-  ({ showsExpandCTAOverride, disableExpanding: react, title } = onExpand);
-  let closure_6;
-  let first;
+  ({ onExpandCTAPress: closure_129_2, expandedOverride } = onExpand);
+  ({ showsExpandCTAOverride, disableExpanding: closure_129_4, title } = onExpand);
+  metroRequire = undefined;
+  first = undefined;
   let bound;
   let sharedValue;
   let sharedValue1;
-  let derivedValue;
-  let tmp = sharedValue();
+  let tmp = closure_9();
   let obj = react;
   let flag = expandedOverride;
   const useState = react.useState;
   if (expandedOverride == null) {
     flag = false;
   }
-  const tmp2 = expandedOverride(useState(flag), 2);
-  first = tmp2[0];
-  closure_6 = tmp2[1];
-  const tmp4 = onExpand;
-  let tmp6 = onExpand(6732)(first);
+  [first, metroRequire] = useState(flag);
+  const tmp4 = importDefault;
+  let tmp6 = usePreviousDefault(first);
   if (tmp6 == null) {
     tmp6 = first;
   }
@@ -82,128 +97,139 @@ export default function ExpandableList(onExpand) {
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  let obj2 = items(5095);
+  let obj2 = _mod1652;
   sharedValue = obj2.useSharedValue(0);
-  const obj3 = items(5095);
+  const obj3 = _mod1652;
   sharedValue1 = obj3.useSharedValue(0);
-  const obj4 = items(5095);
-  class C {
+  const items3 = [closure_10, first, sharedValue, sharedValue1];
+  let c0;
+  let c1;
+  let c2;
+  [tmp13, tmp14, tmp15, tmp16] = items3;
+  const obj4 = _mod1652;
+  class ExpandableListTsx1 {
     constructor() {
-      const tmp = first;
+      const tmp = c0;
       if (tmp) {
-        const obj = sharedValue;
-        if (0 !== sharedValue.get()) {
+        const obj = _undefined;
+        if (0 !== _undefined.get()) {
           let sum;
-          const obj2 = sharedValue1;
-          if (0 !== sharedValue1.get()) {
+          const obj2 = _undefined2;
+          if (0 !== _undefined2.get()) {
             const value = obj.get();
             sum = value + obj2.get();
           }
           return sum;
         }
       }
-      sum = sharedValue.get();
+      sum = _undefined.get();
     }
   }
-  C.__closure = { expanded: first, collapsedListHeight: sharedValue, remainingListHeight: sharedValue1 };
-  C.__workletHash = 17033418452229;
-  C.__initData = sharedValue1;
-  derivedValue = obj4.useDerivedValue(C);
-  const items3 = [items, bound];
-  const memo = obj.useMemo(() => items.slice(0, bound), items3);
-  const items4 = [items, bound];
-  const memo1 = obj.useMemo(() => items.slice(bound, items.length), items4);
-  const obj5 = items(5095);
-  class A {
+  const items4 = [tmp14, tmp15, tmp16];
+  ExpandableListTsx1.__closure = items4;
+  ExpandableListTsx1.__workletHash = 3023496786140;
+  ExpandableListTsx1.__initData = tmp13;
+  const items5 = [items, bound];
+  const derivedValue = obj4.useDerivedValue(ExpandableListTsx1);
+  const memo = obj.useMemo(() => items.slice(0, bound), items5);
+  const items6 = [items, bound];
+  const memo1 = obj.useMemo(() => items.slice(bound, items.length), items6);
+  const items7 = [closure_11, sharedValue, , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items7[2] = timing_timing.withTiming;
+  items7[3] = derivedValue;
+  items7[4] = timingPresets.timingStandard;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  let c3;
+  [tmp19, tmp20, tmp21, tmp22, tmp23] = items7;
+  class ExpandableListTsx2 {
     constructor() {
       let obj;
-      let value;
-      let withTiming;
-      if (0 !== sharedValue.get()) {
-        const obj2 = { height: withTiming(value, timingPresets.timingStandard) };
-        withTiming = timing.withTiming;
-        timing;
-        value = derivedValue.get();
-        obj = obj2;
+      if (0 !== _undefined.get()) {
+        obj = { height: _undefined2(_undefined3.get(), c3) };
+        const obj2 = { height: _undefined2(_undefined3.get(), c3) };
       } else {
         obj = {};
       }
       return obj;
     }
   }
-  A.__closure = { collapsedListHeight: sharedValue, withTiming: items(5254).withTiming, containerHeight: derivedValue, timingStandard: items(5257).timingStandard };
-  A.__workletHash = 2086836441465;
-  A.__initData = derivedValue;
-  ({ collapsedListHeight: sharedValue, withTiming: items(5254).withTiming, containerHeight: derivedValue, timingStandard: items(5257).timingStandard });
-  const animatedStyle = obj5.useAnimatedStyle(A);
-  const obj7 = { style: items5, children: items6 };
-  items5 = [tmp.animatedListContainer, animatedStyle];
-  let tmp19 = !showsExpandCTAOverride;
-  const obj8 = {
+  const items8 = [tmp20, tmp21, tmp22, tmp23];
+  ExpandableListTsx2.__closure = items8;
+  ExpandableListTsx2.__workletHash = 10519564962816;
+  ExpandableListTsx2.__initData = tmp19;
+  const animatedStyle = useAnimatedStyle(ExpandableListTsx2);
+  const obj5 = { style: items9, children: items10 };
+  items9 = [tmp.animatedListContainer, animatedStyle];
+  let tmp29 = !showsExpandCTAOverride;
+  const obj6 = {
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f127322)
+    children: memo.map(f127410)
   };
-  View = tmp4(5095).View;
-  const tmp16 = bound;
+  View = _modDef1652.View;
+  const tmp26 = metroImportAll;
   if (!showsExpandCTAOverride) {
-    tmp19 = !first;
+    tmp29 = !first;
   }
-  let closure_1 = tmp19;
-  items6 = [closure_6(first, obj8), ];
-  let tmp17Result = memo1.length > 0;
-  if (tmp17Result) {
-    closure_1 = !showsExpandCTAOverride;
-    const obj9 = {
+  importDefault = tmp29;
+  items10 = [metroRequire(View, obj6), ];
+  let tmp27Result = memo1.length > 0;
+  if (tmp27Result) {
+    importDefault = !showsExpandCTAOverride;
+    const obj7 = {
       onLayout: function handleRemainingListLayout(nativeEvent) {
           const result = sharedValue1.set(nativeEvent.nativeEvent.layout.height);
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f127322)
+      children: memo1.map(f127410)
     };
-    tmp17Result = tmp17(tmp18, obj9);
+    tmp27Result = tmp27(tmp28, obj7);
   }
-  items6[1] = tmp17Result;
-  const children = [first(View, obj7), ];
+  items10[1] = tmp27Result;
+  const children = [metroImportDefault(View, obj5), ];
   if (showsExpandCTAOverride) {
     let stringResult;
     let stringResult1;
-    const TableRow = tmp10(6975).TableRow;
+    const TableRow = tmp10(7101).TableRow;
     if (first) {
       const intl2 = tmp10(1113).intl;
       stringResult = intl2.string(tmp10(1113).t.nPGLFQ);
     } else if (null != title) {
       const intl = tmp10(1113).intl;
-      const obj10 = { title };
-      stringResult = intl.formatToPlainString(tmp10(1113).t["bj/2kV"], obj10);
+      const obj8 = { title };
+      stringResult = intl.formatToPlainString(tmp10(1113).t["bj/2kV"], obj8);
     }
-    const obj11 = {
+    const obj9 = {
       accessibilityLabel: stringResult,
-      label: closure_6(first, obj12),
+      label: metroRequire(View, obj10),
       onPress: function handleExpandCTAPress() {
-          closure_6(true !== react && !first);
-          if (dependencyMap != null) {
-            const obj = { expanded: true !== react && !first };
+          closure_6(true !== closure_1_4 && !first);
+          if (closure_1_2 != null) {
+            const obj = { expanded: true !== closure_1_4 && !first };
             tmp4(obj);
           }
         },
       end: true
     };
-    obj12 = { style: tmp.expandCTALabelContainer, children: closure_6(Text, obj14) };
-    Text = tmp10(5624).Text;
+    obj10 = { style: tmp.expandCTALabelContainer, children: metroRequire(Text, obj12) };
+    Text = tmp10(5747).Text;
     const intl3 = tmp10(1113).intl;
     if (first) {
       stringResult1 = intl3.string(tmp10(1113).t.nPGLFQ);
     } else {
       stringResult1 = intl3.format(tmp10(1113).t.gVw57p, {});
     }
-    const obj13 = { children: closure_6(TableRow, obj11) };
-    obj14 = { color: "text-brand", variant: "text-md/semibold", children: stringResult1 };
-    showsExpandCTAOverride = tmp17(tmp18, obj13);
+    const obj11 = { children: metroRequire(TableRow, obj9) };
+    obj12 = { color: "text-brand", variant: "text-md/semibold", children: stringResult1 };
+    showsExpandCTAOverride = tmp27(tmp28, obj11);
   }
   children[1] = showsExpandCTAOverride;
-  return first(tmp16, { children });
+  return metroImportDefault(tmp26, { children });
 };
 export const COLLAPSED_LIST_ITEM_MAX = 4;

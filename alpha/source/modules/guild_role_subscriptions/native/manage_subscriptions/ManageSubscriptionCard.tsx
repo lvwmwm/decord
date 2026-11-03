@@ -1,29 +1,29 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17350
+// Function ID: 17351
 // Name: ManageSubscriptionCard
-// Dependencies: [32, 5, 19, 17, 1072, 4870, 21, 5014, 575, 1113, 5624, 6980, 6957, 11414, 17208, 5959, 17209, 1994, 9910, 7326, 6535, 7086, 1187, 17211, 5735, 5711, 7060, 6975, 5709, 2047, 1099, 9976, 17212, 1497, 6977, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 4997, 21, 5141, 575, 1113, 5747, 7106, 7083, 11552, 17351, 6079, 17352, 2123, 10041, 7446, 6655, 7212, 1187, 17354, 5855, 5831, 7186, 7101, 5829, 2176, 1099, 10108, 17355, 1499, 7103, 2]
 // Exports: default
 
-// Module 17207 (ManageSubscriptionCard)
+// Module 17350 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl9 from "intl" /* 1113 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import LinkingDefault from "Linking" /* 5709 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
-import GuildIconDefault from "GuildIcon" /* 6957 */;
-import Pressables from "Pressables" /* 6980 */;
-import FormSeparatorDefault from "FormSeparator" /* 17208 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17212 */;
+import PremiumUtils from "PremiumUtils" /* 2176 */;
+import ChannelConstants from "ChannelConstants" /* 4997 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import LinkingDefault from "Linking" /* 5829 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
+import GuildIconDefault from "GuildIcon" /* 7083 */;
+import Pressables from "Pressables" /* 7106 */;
+import FormSeparatorDefault from "FormSeparator" /* 17351 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17355 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, importDefault;
@@ -123,7 +123,7 @@ function Header(guild) {
   items2[1] = unpackModuleId(Text, { variant: "text-sm/medium", color: "interactive-text-default", children: name });
   items1[1] = authStore2(View, obj3);
   let expandIconExpanded;
-  const ChevronSmallDownIcon = tmp3(11414).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = tmp3(11552).ChevronSmallDownIcon;
   if (expanded) {
     expandIconExpanded = tmp.expandIconExpanded;
   }
@@ -210,7 +210,7 @@ function CardBody(isTrial) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ function CardBody(isTrial) {
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           if (0 === c3) {
             c5 = 3;
@@ -457,7 +457,7 @@ export default function ManageSubscriptionCard(subscription) {
   const tmp = closure_14();
   ({ listing, guild, expanded, subscriptionInfo, groupListing, handleToggleExpanded } = useManageSubscriptionCardDataDefault(subscription));
   useManageSubscriptionCardDataDefault(subscription);
-  let obj = subscription(1497);
+  let obj = subscription(1499);
   importDefault = obj.useNavigation();
   let tmp6Result = null;
   const tmp4 = subscription;
@@ -469,7 +469,7 @@ export default function ManageSubscriptionCard(subscription) {
         const obj2 = { variant: "primary", style: tmp.container, children: items };
         const obj4 = { expanded, guild, isCancelled: null, isTrial: null, isPastDue: null, listing, onToggleExpanded: handleToggleExpanded };
         ({ isCancelled: obj3.isCancelled, isTrial: obj3.isTrial, isPastDue: obj3.isPastDue } = subscriptionInfo);
-        const Card = tmp4(6977).Card;
+        const Card = tmp4(7103).Card;
         items = [closure_11(Header, obj4), ];
         if (expanded) {
           const items1 = [closure_11(Separator, {}), ];

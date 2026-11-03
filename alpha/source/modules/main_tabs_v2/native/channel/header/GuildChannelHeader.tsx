@@ -1,29 +1,29 @@
-// Module ID: 14581
-// Function ID: 14582
+// Module ID: 14712
+// Function ID: 14713
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 14582, 6568, 4867, 7446, 4863, 5242, 4885, 4956, 1383, 1072, 4860, 21, 5596, 575, 504, 11337, 7096, 9972, 1113, 5652, 14577, 11319, 5624, 7569, 4847, 2061, 8603, 9954, 10205, 7420, 7419, 14583, 14572, 2]
+// Dependencies: [32, 19, 17, 14713, 6688, 4994, 7570, 4990, 5365, 5012, 5083, 1385, 1072, 4987, 21, 5719, 575, 504, 11474, 7222, 10103, 1113, 5772, 14708, 11456, 5747, 7693, 4974, 2190, 8727, 10085, 10335, 7544, 7543, 14714, 14703, 2]
 
-// Module 14581 (GuildChannelHeader)
+// Module 14712 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
-import ChannelRecord from "ChannelRecord" /* 4867 */;
-import useChannelName from "useChannelName" /* 5652 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9972 */;
-import ChannelHeader from "ChannelHeader" /* 14572 */;
-import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14583 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import ChannelRecord from "ChannelRecord" /* 4994 */;
+import useChannelName from "useChannelName" /* 5772 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 10103 */;
+import ChannelHeader from "ChannelHeader" /* 14703 */;
+import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14714 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14582 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7446 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5242 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
-import UserStore from "UserStore" /* 1383 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14713 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7570 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const utils_ChannelUtils = tmp(8603);
+const utils_ChannelUtils = tmp(8727);
 function GuildChannelMemberCount(channel) {
   let online;
   let total;
@@ -48,7 +48,7 @@ function GuildChannelMemberCount(channel) {
   }
   let tmp = channel;
   let tmp2 = dependencyMap;
-  let obj = channel(5596);
+  let obj = channel(5719);
   const token = obj.useToken(nativeDefault.modules.mobile.CHANNEL_HEADER_ICON_SIZE);
   const items = [ChannelMemberStore, ChannelMemberCountStore];
   const obj2 = channel(504);
@@ -98,12 +98,12 @@ function GuildChannelMemberCount(channel) {
     if (null != online) {
       let num2 = 500;
     }
-    const tmpResult = tmp(11337);
+    const tmpResult = tmp(11474);
     let tmp6 = tmpResult;
     let tmp7 = online;
     let tmp8 = total;
     let tmp9 = flag;
-    return tmpResult.renderMemberCountText(online, total, flag, tmp(7096).ICON_SIZE[token]);
+    return tmpResult.renderMemberCountText(online, total, flag, tmp(7222).ICON_SIZE[token]);
   } else {
     let num = 500;
   }
@@ -146,13 +146,13 @@ function ChannelLinkedLobbyCoachmark(guild) {
   const channel = guild.channel;
   _slicedToArray = undefined;
   const iconRef = guild.iconRef;
-  let tmp = guild(7569);
+  let tmp = guild(7693);
   const useSelectedDismissibleContent = tmp.useSelectedDismissibleContent;
-  const items = [guild(4847).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
+  const items = [guild(4974).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
   const tmp2 = _slicedToArray(useSelectedDismissibleContent(items, { bypassAutoDismiss: true }), 2);
   const tmp3 = tmp2[1];
   dependencyMap = tmp3;
-  const tmp4 = tmp2[0] === guild(4847).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
+  const tmp4 = tmp2[0] === guild(4974).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
   _slicedToArray = tmp4;
   const items1 = [channel, guild, tmp3, tmp4];
   const memo = react.useMemo(() => {
@@ -191,7 +191,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
     }
     return obj;
   }, items1);
-  let obj = guild(9954);
+  let obj = guild(10085);
   const coachmark = obj.useCoachmark(iconRef, memo);
   return null;
 }

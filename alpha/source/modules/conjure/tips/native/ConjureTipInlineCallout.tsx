@@ -1,18 +1,18 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12908
+// Function ID: 12909
 // Name: ConjureTipInlineCallout
-// Dependencies: [19, 17, 21, 5014, 575, 8028, 7054, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8152, 7180, 1113, 2]
 // Exports: default
 
-// Module 12772 (ConjureTipInlineCallout)
+// Module 12908 (ConjureTipInlineCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import XSmallIcon from "XSmallIcon" /* 7054 */;
-import IconButton2 from "IconButton" /* 8028 */;
+import XSmallIcon from "XSmallIcon" /* 7180 */;
+import IconButton2 from "IconButton" /* 8152 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;

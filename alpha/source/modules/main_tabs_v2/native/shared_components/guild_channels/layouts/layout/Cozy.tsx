@@ -1,15 +1,15 @@
-// Module ID: 11053
-// Function ID: 11054
+// Module ID: 11181
+// Function ID: 11182
 // Name: Cozy
-// Dependencies: [11051, 11052, 575, 1187, 6957, 7334, 2]
+// Dependencies: [11179, 11180, 575, 1187, 7083, 7454, 2]
 
-// Module 11053 (Cozy)
+// Module 11181 (Cozy)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import GameIcon from "GameIcon" /* 7334 */;
-import Compact from "Compact" /* 11052 */;
-import deepmerge from "deepmerge" /* 11051 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
+import GameIcon from "GameIcon" /* 7454 */;
+import Compact from "Compact" /* 11180 */;
+import deepmerge from "deepmerge" /* 11179 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -22,7 +22,7 @@ obj2 = { borderRadius: nativeDefault.radii.lg, padding: { paddingVertical: 8 }, 
 const CHANNEL_LIST_STYLES_COMPACT = Compact.CHANNEL_LIST_STYLES_COMPACT;
 ({ size: 32, avatarSize: native.AvatarSizes.REFRESH_MEDIUM_32 });
 ({ text: { variant: "redesign/message-preview/medium" }, messageTypeIconSize: native.IconSizes.REFRESH_SMALL_16, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 2 } });
-obj6 = { text: { variant: "text-sm/bold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: { size: native.IconSizes.REFRESH_SMALL_16, gameSize: GameIcon.GameIconSizes.SMALL } };
+obj6 = { text: { variant: "text-sm/semibold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: { size: native.IconSizes.REFRESH_SMALL_16, gameSize: GameIcon.GameIconSizes.SMALL } };
 ({ avatarSize: native.AvatarSizes.LARGE_48, guildIconSize: GuildIcon.GuildIconSizes.LARGE, guildBadgeIconSize: GuildIcon.GuildIconSizes.XSMALL_20, wrapper: { size: 48 }, channelIcon: { size: 24 }, margin: { marginRight: 12 }, emoji: { size: 24, lineHeight: 32 } });
 obj8 = { left: 48, startAndEndHeight: 16, transform: items, topOffset: -6 };
 items = [{ translateY: 0 }];

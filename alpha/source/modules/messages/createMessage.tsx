@@ -1,15 +1,15 @@
-// Module ID: 10319
-// Function ID: 10320
+// Module ID: 10449
+// Function ID: 10450
 // Name: createMessage
-// Dependencies: [7766, 1397, 1383, 1072, 38, 10315, 2]
+// Dependencies: [7890, 1399, 1385, 1072, 38, 10445, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 10319 (createMessage)
+// Module 10449 (createMessage)
 import _modDef38 from "module_38" /* 38 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7766 */;
-import createNonce from "createNonce" /* 10315 */;
-import UserRecord from "UserRecord" /* 1397 */;
-import UserStore from "UserStore" /* 1383 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7890 */;
+import createNonce from "createNonce" /* 10445 */;
+import UserRecord from "UserRecord" /* 1399 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

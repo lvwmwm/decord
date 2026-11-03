@@ -1,12 +1,14 @@
-// Module ID: 10192
-// Function ID: 10193
+// Module ID: 10322
+// Function ID: 10323
 // Name: SavedMessagesTypes
-// Dependencies: [6063, 2]
-// Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
+// Dependencies: [6183, 2]
+// Exports: getSavedMessagesRawMessages, savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 10192 (SavedMessagesTypes)
-import MessageRecordUtils from "MessageRecordUtils" /* 6063 */;
+// Module 10322 (SavedMessagesTypes)
+import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
 import size from "module_2" /* 2 */;
+
+let message;
 
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
 
@@ -67,6 +69,19 @@ export function savedMessageCreateObjectToClient(body) {
     date1 = new Date(save_data.due_at);
   }
   return obj2;
+}
+export function getSavedMessagesRawMessages(items) {
+  return items.flatMap((message) => {
+    let items1;
+    message = message.message;
+    if (null != message) {
+      const items = [message];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    return items1;
+  });
 }
 export function savedMessageDeleteObjectToClient(channelId) {
   return { channelId: channelId.channel_id, messageId: channelId.message_id };

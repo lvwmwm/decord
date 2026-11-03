@@ -1,27 +1,25 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 17062
+// Function ID: 17063
 // Name: QuestHomeSortingFilteringBottomSheet
-// Dependencies: [32, 19, 17, 6781, 21, 5014, 575, 7292, 6767, 5634, 1113, 5274, 5021, 5258, 9681, 5272, 7321, 5275, 6027, 7058, 7061, 7060, 6974, 9705, 2]
+// Dependencies: [32, 19, 17, 6901, 21, 5141, 575, 7412, 6887, 5754, 1113, 5397, 5148, 5381, 9813, 5395, 7441, 5398, 6147, 7184, 7187, 7186, 7100, 9837, 2]
 // Exports: default
 
-// Module 16919 (QuestHomeSortingFilteringBottomSheet)
+// Module 17062 (QuestHomeSortingFilteringBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5021 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ButtonGroup2 from "ButtonGroup" /* 6767 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import TableRowGroup2 from "TableRowGroup" /* 7060 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7292 */;
+import shared from "shared" /* 5148 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import ButtonGroup2 from "ButtonGroup" /* 6887 */;
+import QuestConstants from "QuestConstants" /* 6901 */;
+import TableRowGroup2 from "TableRowGroup" /* 7186 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -158,7 +156,7 @@ export default function QuestHomeSortingFilteringBottomSheet(onSortMethodChange)
   const obj3 = onSortMethodChange(defaultValue[14]);
   const questHomeFilterOptions = obj3.useQuestHomeFilterOptions();
   const obj4 = { header: ref(BottomSheetTitleHeader, obj5), footer: tmp16Result, scrollable: true, startExpanded: true, children: closure_8(BottomSheetScrollView, obj8) };
-  BottomSheet = onSortMethodChange(defaultValue[15]).BottomSheet;
+  const BottomSheet = onSortMethodChange(defaultValue[15]).BottomSheet;
   obj5 = { title: intl.string(onSortMethodChange(defaultValue[10]).t.UdhTtk) };
   BottomSheetTitleHeader = onSortMethodChange(defaultValue[16]).BottomSheetTitleHeader;
   intl = onSortMethodChange(defaultValue[10]).intl;

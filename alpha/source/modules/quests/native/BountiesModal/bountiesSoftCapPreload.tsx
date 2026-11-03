@@ -1,9 +1,9 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 17103
+// Function ID: 17104
 // Name: bountiesSoftCapPreload
 // Dependencies: [2]
 
-// Module 16960 (bountiesSoftCapPreload)
+// Module 17103 (bountiesSoftCapPreload)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/bountiesSoftCapPreload.tsx");

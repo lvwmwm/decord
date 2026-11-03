@@ -1,33 +1,33 @@
-// Module ID: 20020
-// Function ID: 20021
+// Module ID: 20170
+// Function ID: 20171
 // Name: clips/ClipsManager
-// Dependencies: [5, 5783, 1231, 502, 4863, 2006, 5764, 7885, 1383, 2012, 8214, 1072, 6715, 5768, 7287, 15215, 5789, 6717, 1252, 4839, 572, 20021, 20022, 4825, 1375, 15214, 2]
+// Dependencies: [5, 5903, 1231, 502, 4990, 2135, 5884, 8009, 1385, 2141, 8338, 1072, 6835, 5888, 7407, 15356, 5909, 6837, 1252, 4966, 572, 20171, 20172, 4952, 1377, 15355, 2]
 
-// Module 20020 (clips/ClipsManager)
+// Module 20170 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import DiscordNativeDefault from "DiscordNative" /* 4825 */;
-import UserSettings from "UserSettings" /* 4839 */;
-import Constants2 from "Constants" /* 5768 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5783 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
-import Constants3 from "Constants" /* 6715 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
-import ClipsExperiment from "ClipsExperiment" /* 15215 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20021 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import DiscordNativeDefault from "DiscordNative" /* 4952 */;
+import UserSettings from "UserSettings" /* 4966 */;
+import Constants2 from "Constants" /* 5888 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5903 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5909 */;
+import Constants3 from "Constants" /* 6835 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6837 */;
+import ClipsExperiment from "ClipsExperiment" /* 15356 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
-import UserStore from "UserStore" /* 1383 */;
-import ClipsStore from "ClipsStore" /* 2012 */;
-import ClipsConstants from "ClipsConstants" /* 8214 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8009 */;
+import UserStore from "UserStore" /* 1385 */;
+import ClipsStore from "ClipsStore" /* 2141 */;
+import ClipsConstants from "ClipsConstants" /* 8338 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -42,7 +42,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15214);
+const isClipsEnabled = tmp(15355);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_14, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_15, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_16, CLIPS_DEFAULT_SETTINGS_VERSION: closure_17, ClipsHardwareClassification: closure_18, CLIP_RUNTIME: closure_19 } = ClipsConstants);
 ({ AnalyticEvents: closure_20, RTCConnectionStates: closure_21 } = Constants);
@@ -245,7 +245,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -312,7 +312,7 @@ class ClipsManager extends AutomaticLifecycleManager {
               track(CLIPS_DEFAULT_SETTINGS_APPLIED, obj);
             }
             was_hardware_classified = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           was_hardware_classified = 3;
@@ -335,7 +335,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -366,7 +366,7 @@ class ClipsManager extends AutomaticLifecycleManager {
             const obj = c1(dependencyMap[20]);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c2 = 3;
@@ -395,7 +395,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp6 = tmp5 && hardwareClassification === constants.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmpResult = tmp(20022);
+            const tmpResult = tmp(20172);
             allowDefaultOn = tmpResult.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp6, enableAutoclipping: tmp6, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };
@@ -457,7 +457,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;

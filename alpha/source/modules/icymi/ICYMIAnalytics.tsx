@@ -1,12 +1,12 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16375
+// Function ID: 16376
 // Name: ICYMIAnalytics
-// Dependencies: [8906, 1072, 8714, 1252, 2]
+// Dependencies: [9030, 1072, 8838, 1252, 2]
 
-// Module 16232 (ICYMIAnalytics)
+// Module 16375 (ICYMIAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8714 */;
-import ICYMIStore from "ICYMIStore" /* 8906 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8838 */;
+import ICYMIStore from "ICYMIStore" /* 9030 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -28,40 +28,42 @@ let obj = {
       home_session_id: "gravity",
       feed_item_ids: viewableItems.map((item) => item.item.id),
       feed_item_types: viewableItems.map((item) => {
-        let str3;
+        let str4;
         item = item.item;
         const kind = item.data.kind;
         if ("end" === kind) {
-          str3 = "end";
+          str4 = "end";
         } else if ("loading" === kind) {
-          str3 = "loading";
+          str4 = "loading";
         } else {
-          let str6 = "message";
+          let str7 = "message";
           if ("message" === kind) {
             if (item.channelType === constants.GUILD_ANNOUNCEMENT) {
-              str6 = "announcement";
+              str7 = "announcement";
             }
-            str3 = str6;
+            str4 = str7;
           } else if ("guildEvent" === kind) {
-            str3 = "guild_event";
+            str4 = "guild_event";
           } else if ("contentInventory" === kind) {
-            let str5 = "hotwheels_gaming_activity";
+            let str6 = "hotwheels_gaming_activity";
             if (item.data.content.content_type === ContentInventoryEntryType.ContentInventoryEntryType.CUSTOM_STATUS) {
-              str5 = "hotwheels_custom_status";
+              str6 = "hotwheels_custom_status";
             }
-            str3 = str5;
+            str4 = str6;
           } else if ("recommendedGuilds" === kind) {
-            str3 = "recommended_guilds";
+            str4 = "recommended_guilds";
+          } else if ("waterwheelsItem" === kind) {
+            str4 = "discover_item";
           } else if ("forumThread" === kind) {
-            str3 = "forum_thread";
+            str4 = "forum_thread";
           } else {
-            str3 = "icymi_header";
+            str4 = "icymi_header";
             if ("icymiHeader" !== kind) {
-              str3 = "unknown";
+              str4 = "unknown";
             }
           }
         }
-        return str3;
+        return str4;
       }),
       num_items: viewableItems.length,
       all_feed_item_ids: arr2.map((id) => id.id),
@@ -80,40 +82,42 @@ let obj = {
       home_session_id: "gravity",
       feed_item_ids: viewableItems.map((item) => item.item.id),
       feed_item_types: viewableItems.map((item) => {
-        let str3;
+        let str4;
         item = item.item;
         const kind = item.data.kind;
         if ("end" === kind) {
-          str3 = "end";
+          str4 = "end";
         } else if ("loading" === kind) {
-          str3 = "loading";
+          str4 = "loading";
         } else {
-          let str6 = "message";
+          let str7 = "message";
           if ("message" === kind) {
             if (item.channelType === constants.GUILD_ANNOUNCEMENT) {
-              str6 = "announcement";
+              str7 = "announcement";
             }
-            str3 = str6;
+            str4 = str7;
           } else if ("guildEvent" === kind) {
-            str3 = "guild_event";
+            str4 = "guild_event";
           } else if ("contentInventory" === kind) {
-            let str5 = "hotwheels_gaming_activity";
+            let str6 = "hotwheels_gaming_activity";
             if (item.data.content.content_type === ContentInventoryEntryType.ContentInventoryEntryType.CUSTOM_STATUS) {
-              str5 = "hotwheels_custom_status";
+              str6 = "hotwheels_custom_status";
             }
-            str3 = str5;
+            str4 = str6;
           } else if ("recommendedGuilds" === kind) {
-            str3 = "recommended_guilds";
+            str4 = "recommended_guilds";
+          } else if ("waterwheelsItem" === kind) {
+            str4 = "discover_item";
           } else if ("forumThread" === kind) {
-            str3 = "forum_thread";
+            str4 = "forum_thread";
           } else {
-            str3 = "icymi_header";
+            str4 = "icymi_header";
             if ("icymiHeader" !== kind) {
-              str3 = "unknown";
+              str4 = "unknown";
             }
           }
         }
-        return str3;
+        return str4;
       }),
       num_items: viewableItems.length,
       all_feed_item_ids: arr2.map((id) => id.id),

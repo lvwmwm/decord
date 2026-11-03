@@ -1,10 +1,10 @@
-// Module ID: 5650
-// Function ID: 5651
+// Module ID: 5770
+// Function ID: 5771
 // Name: isForwardMessage
 // Dependencies: [1072, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 5650 (isForwardMessage)
+// Module 5770 (isForwardMessage)
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 13937
-// Function ID: 13938
+// Module ID: 14068
+// Function ID: 14069
 // Name: BaseChannelItem
-// Dependencies: [19, 17, 11046, 6776, 21, 5014, 575, 5624, 1376, 1187, 13938, 8992, 13939, 2]
+// Dependencies: [19, 17, 11186, 6896, 21, 5141, 575, 5747, 1357, 1187, 14069, 9120, 14070, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 13937 (BaseChannelItem)
+// Module 14068 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ReadStateConstants from "ReadStateConstants" /* 6776 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ReadStateConstants from "ReadStateConstants" /* 6896 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11046 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -120,7 +120,7 @@ export default function BaseChannelItem(mode) {
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_8;
-    const tmp9 = hideIcon(13938);
+    const tmp9 = hideIcon(14069);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -131,9 +131,9 @@ export default function BaseChannelItem(mode) {
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_9(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(13939);
+    AnimatedPressableHighlight = hideIcon(14070);
   } else {
-    AnimatedPressableHighlight = mode(8992).AnimatedPressableHighlight;
+    AnimatedPressableHighlight = mode(9120).AnimatedPressableHighlight;
   }
   const obj3 = { children: items2 };
   const merged1 = Object.assign(merged);

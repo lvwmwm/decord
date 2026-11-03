@@ -1,19 +1,19 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 14978
+// Function ID: 14979
 // Name: ContentInventoryActivityStore
-// Dependencies: [5761, 8907, 8714, 8718, 8927, 5762, 8912, 8908, 12, 504, 572, 2]
+// Dependencies: [5881, 9031, 8838, 8842, 9053, 5882, 9036, 9032, 12, 504, 572, 2]
 
-// Module 14847 (ContentInventoryActivityStore)
+// Module 14978 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityTypes from "ActivityTypes" /* 5762 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8714 */;
-import utils from "utils" /* 8718 */;
-import matchUtils from "matchUtils" /* 8908 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8912 */;
-import PresenceStore from "PresenceStore" /* 5761 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8907 */;
+import ActivityTypes from "ActivityTypes" /* 5882 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8838 */;
+import utils from "utils" /* 8842 */;
+import matchUtils from "matchUtils" /* 9032 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 9036 */;
+import PresenceStore from "PresenceStore" /* 5881 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 9031 */;
 import size from "module_2" /* 2 */;
 
 let _require;
@@ -27,10 +27,10 @@ function getMatchingActivity(author_type) {
   let tmp3 = null;
   const obj = require("utils");
   if (!obj.isEntryExpired(author_type)) {
-    let tmpResult = tmp(8718);
+    let tmpResult = tmp(8842);
     let found;
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8927).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(9053).ContentInventoryAuthorType.USER) {
         const activities = PresenceStore.getActivities(author_type.author_id);
         found = activities.find((type) => {
           let result;
@@ -43,7 +43,7 @@ function getMatchingActivity(author_type) {
             }
             return result;
           }
-          let tmp4 = type.type !== tmp(5762).ActivityTypes.LISTENING;
+          let tmp4 = type.type !== tmp(5882).ActivityTypes.LISTENING;
           if (!tmp4) {
             const tmpResult5 = ContentInventoryTypes;
             tmp4 = !tmpResult5.isListenedSessionEntry(author_type);

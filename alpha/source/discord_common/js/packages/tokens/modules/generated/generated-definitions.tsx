@@ -304,7 +304,7 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "redesign/heading-18/bold";
+        return "redesign/heading-18/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
@@ -314,7 +314,7 @@ obj13 = {
             return "heading-lg/semibold";
           }
         }
-        return "redesign/heading-18/bold";
+        return "redesign/heading-18/semibold";
       }
     }
   },
@@ -1403,7 +1403,7 @@ obj13 = {
     resolve(enabledExperiments) {
       enabledExperiments = enabledExperiments.enabledExperiments;
       if (0 === enabledExperiments.length) {
-        return "heading-md/bold";
+        return "heading-md/semibold";
       } else {
         const iter = enabledExperiments[Symbol.iterator]();
         while (iter !== undefined) {
@@ -1413,7 +1413,7 @@ obj13 = {
             return "heading-lg/semibold";
           }
         }
-        return "heading-md/bold";
+        return "heading-md/semibold";
       }
     }
   },

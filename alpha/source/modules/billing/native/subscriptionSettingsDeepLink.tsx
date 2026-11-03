@@ -1,15 +1,15 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15956
+// Function ID: 15957
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2052, 1072, 7563, 15814, 5258, 1113, 1252, 6535, 2]
+// Dependencies: [5, 2181, 1072, 7687, 15957, 5381, 1113, 1252, 6655, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15813 (subscriptionSettingsDeepLink)
+// Module 15956 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6535 */;
-import openUserSettings from "openUserSettings" /* 7563 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6655 */;
+import openUserSettings from "openUserSettings" /* 7687 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import SubscriptionStore from "SubscriptionStore" /* 2181 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

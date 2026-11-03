@@ -1,21 +1,21 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 11079
+// Function ID: 11080
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1383, 6844, 10867, 1072, 10873, 1282, 10875, 572, 8752, 10942, 10900, 10944, 2]
+// Dependencies: [5, 1385, 6964, 10997, 1072, 11003, 1282, 11005, 572, 8876, 11080, 11030, 11082, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10941 (ConjurePublishActionCreators)
+// Module 11079 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10873 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10875 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10900 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10942 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10944 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11003 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11030 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11080 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11082 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10867 */;
+import UserStore from "UserStore" /* 1385 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10997 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -42,7 +42,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -134,7 +134,7 @@ obj = function _unpublishUserApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -222,7 +222,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -360,7 +360,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -389,7 +389,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -431,7 +431,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c6 = 3;

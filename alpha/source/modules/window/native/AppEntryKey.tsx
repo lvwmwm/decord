@@ -1,9 +1,9 @@
-// Module ID: 1638
-// Function ID: 1639
+// Module ID: 1640
+// Function ID: 1641
 // Name: AppEntryKey
 // Dependencies: [2]
 
-// Module 1638 (AppEntryKey)
+// Module 1640 (AppEntryKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/window/native/AppEntryKey.tsx");

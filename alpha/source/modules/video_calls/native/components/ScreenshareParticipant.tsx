@@ -1,17 +1,17 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12146
+// Function ID: 12147
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 6714, 1072, 21, 5014, 575, 11755, 504, 5303, 5624, 1113, 5634, 11920, 2]
+// Dependencies: [19, 17, 6834, 1072, 21, 5141, 575, 11892, 504, 5426, 5747, 1113, 5754, 12057, 2]
 // Exports: default
 
-// Module 12009 (ScreenshareParticipant)
+// Module 12146 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let currentUserActiveStream;
@@ -72,7 +72,7 @@ export default function ScreenshareParticipant(participant) {
   obj3 = { style: items3, children: items4 };
   items3 = [tmp5.container, containerStyle];
   const GestureDetector = participant(onDoubleTap[9]).GestureDetector;
-  const obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  const obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
   const Text = participant(onDoubleTap[10]).Text;
   const intl = participant(onDoubleTap[11]).intl;
   const string = intl.string;

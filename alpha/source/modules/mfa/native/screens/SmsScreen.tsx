@@ -1,10 +1,10 @@
-// Module ID: 17682
-// Function ID: 17683
+// Module ID: 17825
+// Function ID: 17826
 // Name: SmsScreen
-// Dependencies: [5, 32, 19, 17, 1072, 21, 7111, 17675, 1113, 1282, 17679, 17674, 7082, 5634, 17677, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 7237, 17818, 1113, 1282, 17822, 17817, 7208, 5754, 17820, 2]
 // Exports: default
 
-// Module 17682 (SmsScreen)
+// Module 17825 (SmsScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -67,7 +67,7 @@ export default function SmsScreen(mfaChallenge) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -127,7 +127,7 @@ export default function SmsScreen(mfaChallenge) {
             closure_131_3(false);
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp27) {
           closure_4 = tmp27;
           if (0 === c5) {
@@ -155,7 +155,7 @@ export default function SmsScreen(mfaChallenge) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -227,7 +227,7 @@ export default function SmsScreen(mfaChallenge) {
             c4 = 0;
             closure_130_3(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           closure_3 = tmp30;
@@ -245,8 +245,8 @@ export default function SmsScreen(mfaChallenge) {
     return obj(...arguments);
   };
   let tmp = dependencyMap;
-  const tmp2 = finish(7111)();
-  obj = finish(17675);
+  const tmp2 = finish(7237)();
+  obj = finish(17818);
   const screenStyles = obj.useScreenStyles(tmp2);
   const tmp4 = first1(react.useState(null), 2);
   dependencyMap = tmp4[1];
@@ -289,11 +289,11 @@ export default function SmsScreen(mfaChallenge) {
     });
   }, items);
   let obj2 = { headerText: intl2.string(mfaChallenge(1113).t.o4JNrO), subtitle: tmp11, input: obj(c6, obj3), submit: tmp15(tmp17, obj6), screenProps: { mfaChallenge, finish }, mfaMethod: "sms" };
-  const tmp16 = finish(17674);
+  const tmp16 = finish(17817);
   intl2 = mfaChallenge(1113).intl;
   obj3 = { style: screenStyles.inputContainer, children: items1 };
-  let obj4 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(17679).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: intl3.string(mfaChallenge(1113).t["/sHnXc"]), placeholder: intl4.string(mfaChallenge(1113).t.tARzgo), errorMessage: first };
-  const TextInput = mfaChallenge(7082).TextInput;
+  let obj4 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(17822).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: intl3.string(mfaChallenge(1113).t["/sHnXc"]), placeholder: intl4.string(mfaChallenge(1113).t.tARzgo), errorMessage: first };
+  const TextInput = mfaChallenge(7208).TextInput;
   intl3 = mfaChallenge(1113).intl;
   intl4 = mfaChallenge(1113).intl;
   items1 = [handleChange(TextInput, obj4), ];
@@ -305,7 +305,7 @@ export default function SmsScreen(mfaChallenge) {
       return obj(...arguments);
     }
   };
-  const Button = mfaChallenge(5634).Button;
+  const Button = mfaChallenge(5754).Button;
   intl5 = mfaChallenge(1113).intl;
   items1[1] = handleChange(Button, obj5);
   obj6 = {
@@ -317,14 +317,14 @@ export default function SmsScreen(mfaChallenge) {
     },
     disabled: tmp7
   };
-  tmp17 = finish(17677);
+  tmp17 = finish(17820);
   intl6 = mfaChallenge(1113).intl;
   const tmp9 = mfaChallenge;
   if (!tmp7) {
     tmp7 = tmp13;
   }
   if (!tmp7) {
-    tmp7 = first1.length !== tmp9(17679).SMS_CODE_LENGTH;
+    tmp7 = first1.length !== tmp9(17822).SMS_CODE_LENGTH;
   }
   return handleChange(tmp16, obj2);
 };

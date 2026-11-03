@@ -1,10 +1,10 @@
-// Module ID: 8247
-// Function ID: 8248
+// Module ID: 8371
+// Function ID: 8372
 // Name: webpConversion
-// Dependencies: [5, 3, 8248, 1251, 2]
+// Dependencies: [5, 3, 8372, 1251, 2]
 // Exports: maybeConvertToWebP
 
-// Module 8247 (webpConversion)
+// Module 8371 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef1251 from "module_1251" /* 1251 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _shouldConvertToWebP2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -67,8 +67,8 @@ let obj = function _shouldConvertToWebP2() {
                     c5 = 3;
                     c6 = 1;
                     const obj6 = {
-                      value: new Promise((data, arg1) => {
-                                      closure_0 = data;
+                      value: new Promise((arg0, arg1) => {
+                                      closure_0 = arg0;
                                       closure_1 = arg1;
                                       const fileReader = new FileReader();
                                       fileReader.onload = () => closure_0(fileReader.result);
@@ -213,7 +213,7 @@ obj = function _performWebPConversion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -472,7 +472,7 @@ obj = function _maybeConvertToWebP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

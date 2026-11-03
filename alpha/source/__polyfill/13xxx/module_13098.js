@@ -1,274 +1,140 @@
 // Module ID: 13098
 // Function ID: 13099
-// Dependencies: [32, 13055, 13099, 13060, 13101]
-// Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
+// Dependencies: []
+// Exports: parse
 
 // Module 13098
-import _mod13055 from "module_13055" /* 13055 */;
-import _mod13060 from "module_13060" /* 13060 */;
-import _mod13099 from "module_13099" /* 13099 */;
-import _mod13101 from "module_13101" /* 13101 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+new Set([9, 10, 12, 13, 32]);
+let closure_1 = "0".charCodeAt(0);
+let closure_2 = "9".charCodeAt(0);
 
-let _require;
-
-function forEachEnvelopeItem(arg0, fn) {
-  const tmp = arg0[1];
-  for (const item10007 of tmp) {
-    if (fn(item10007, item10007[0].type)) {
-      obj.return();
-      let flag = true;
-      return true;
-    }
-  }
-  return false;
-}
-let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", statsd: "metric_bucket", raw_security: "security" };
-
-export function addItemToEnvelope(arg0, arg1) {
-  const tmp2 = _slicedToArray(arg0, 2);
-  const items = [tmp2[0], ];
-  const items1 = [];
-  items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
-  items[1] = items1;
-  return items;
-}
-export function createAttachmentEnvelopeItem(data) {
-  let data1;
-  if (typeof data.data === "string") {
-    data = data.data;
-    if (_mod13055.GLOBAL_OBJ.__SENTRY__) {
-      let encodePolyfillResult;
-      if (_mod13055.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-        const __SENTRY__ = tmp(13055).GLOBAL_OBJ.__SENTRY__;
-        encodePolyfillResult = __SENTRY__.encodePolyfill(data);
+export function parse(str) {
+  str = str.trim();
+  const str2 = str.toLowerCase();
+  if ("even" === str2) {
+    return [2, 0];
+  } else if ("odd" === str2) {
+    return [2, 1];
+  } else {
+    let num2;
+    let sum1 = 0;
+    if ("-" === str2.charAt(sum1)) {
+      sum1 = sum1 + 1;
+      num2 = -1;
+    } else {
+      let tmp = sum1;
+      let num = 1;
+      num2 = 1;
+      if ("+" === str2.charAt(sum1)) {
+        sum1 = sum1 + 1;
+        num2 = 1;
       }
-      data1 = encodePolyfillResult;
     }
-    const _TextEncoder = TextEncoder;
+    function readNumber() {
+      let num = 0;
+      const tmp = sum1;
+      if (sum1 < str2.length) {
+        num = 0;
+        if (str2.charCodeAt(sum1) >= closure_1) {
+          let num3 = 0;
+          num = 0;
+          if (str2.charCodeAt(sum1) <= closure_2) {
+            const sum = 10 * num3 + (str2.charCodeAt(sum1) - closure_1);
+            sum1 = sum1 + 1;
+            num = sum;
+            while (sum1 < str2.length) {
+              num = sum;
+              if (obj2.charCodeAt(sum1) < tmp7) {
+                break;
+              } else {
+                num3 = sum;
+                num = sum;
+                if (obj2.charCodeAt(sum1) > closure_2) {
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+      let tmp14 = null;
+      if (sum1 !== tmp) {
+        tmp14 = num;
+      }
+      return tmp14;
+    }
+    const number = readNumber();
+    let tmp6 = sum1 < str2.length;
+    if (tmp6) {
+      const tmp7 = sum1;
+      tmp6 = "n" === str2.charAt(sum1);
+    }
+    let tmp8 = number;
+    let tmp9 = num2;
+    let num3 = 0;
+    if (tmp6) {
+      let sum = sum1 + 1;
+      sum1 = sum;
+      let tmp12 = null;
+      let num5 = 1;
+      if (null != number) {
+        num5 = number;
+      }
+      if (sum < str2.length) {
+        let tmp13 = str2;
+        let tmp14 = sum1;
+        if (str2.has(str2.charCodeAt(sum1))) {
+          sum1 = sum1 + 1;
+          while (sum1 < str2.length) {
+            if (!str2.has(str2.charCodeAt(sum1))) {
+              break;
+            }
+          }
+        }
+      }
+      let num6 = 0;
+      let num7 = 0;
+      if (sum1 < str2.length) {
+        let num8;
+        if ("-" === str2.charAt(sum1)) {
+          sum1 = sum1 + 1;
+          num8 = -1;
+        } else {
+          num8 = 1;
+          if ("+" === str2.charAt(sum1)) {
+            sum1 = sum1 + 1;
+            num8 = 1;
+          }
+        }
+        if (sum1 < str2.length) {
+          if (str2.has(str2.charCodeAt(sum1))) {
+            const sum2 = sum1 + 1;
+            sum1 = sum2;
+            while (sum2 < str2.length) {
+              if (!str2.has(str2.charCodeAt(sum1))) {
+                break;
+              }
+            }
+          }
+        }
+        num6 = readNumber();
+        num7 = num8;
+      }
+      num3 = num2 * num5;
+      tmp8 = num6;
+      tmp9 = num7;
+    }
+    if (null !== tmp8) {
+      if (sum1 >= str2.length) {
+        const items = [num3, tmp9 * tmp8];
+        return items;
+      }
+    }
+    const _Error = Error;
+    const concat = "n-th rule couldn't be parsed ('".concat;
     const self = this;
     const self2 = this;
-    const encoder = new TextEncoder();
-    encodePolyfillResult = encoder.encode(data);
-  } else {
-    data1 = data.data;
-  }
-  const items = [, ];
-  const obj = _mod13060;
-  const obj2 = { type: "attachment", length: data1.length, filename: data.filename, content_type: data.contentType, attachment_type: data.attachmentType };
-  items[0] = obj.dropUndefinedKeys(obj2);
-  items[1] = data1;
-  return items;
-}
-export function createEnvelope(arg0) {
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  const items1 = [arg0, items];
-  return items1;
-}
-export function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
-  let date;
-  let dropUndefinedKeys;
-  let obj5;
-  let obj6;
-  const obj = { event_id: event_id.event_id, sent_at: date.toISOString() };
-  let tmp2 = sdk;
-  date = new Date();
-  if (tmp2) {
-    tmp2 = { sdk };
-    const obj2 = { sdk };
-  }
-  const merged = Object.assign(tmp2);
-  let tmp4 = arg2 && arg3;
-  if (tmp4) {
-    const obj3 = { dsn: obj5.dsnToString(arg3) };
-    tmp4 = obj3;
-    obj5 = _mod13101;
-  }
-  const merged1 = Object.assign(tmp4);
-  let tmp8 = tmp;
-  if (tmp8) {
-    const obj4 = { trace: dropUndefinedKeys(obj6) };
-    obj6 = {};
-    dropUndefinedKeys = _mod13060.dropUndefinedKeys;
-    _mod13060;
-    const merged2 = Object.assign(tmp);
-    tmp8 = obj4;
-  }
-  const merged3 = Object.assign(tmp8);
-  return obj;
-}
-export function createSpanEnvelopeItem(arg0) {
-  const items = [{ type: "span" }, arg0];
-  return items;
-}
-export function envelopeContainsItemType(arg0, arg1) {
-  let closure_0 = arg1;
-  return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
-}
-export function envelopeItemTypeToDataCategory(arg0) {
-  return closure_4[arg0];
-}
-export { forEachEnvelopeItem };
-export function getSdkMetadataForEnvelopeHeader(sdk) {
-  const tmp = sdk;
-  if (tmp) {
-    if (sdk.sdk) {
-      const obj = { name: null, version: null };
-      ({ name: obj.name, version: obj.version } = sdk.sdk);
-      return obj;
-    }
-  }
-}
-export function parseEnvelope(arr) {
-  let tmp = arr;
-  if (typeof arr === "string") {
-    if (require("module_13055").GLOBAL_OBJ.__SENTRY__) {
-      let encodePolyfillResult;
-      if (require("module_13055").GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-        let __SENTRY__ = tmp12(13055).GLOBAL_OBJ.__SENTRY__;
-        encodePolyfillResult = __SENTRY__.encodePolyfill(arr);
-      }
-      tmp = encodePolyfillResult;
-    }
-    const _TextEncoder = TextEncoder;
-    const self = this;
-    const self2 = this;
-    const encoder = new TextEncoder();
-    const tmp3 = encoder;
-    encodePolyfillResult = encoder.encode(arr);
-  }
-  function readJson() {
-    let length = closure_0.indexOf(10);
-    if (length < 0) {
-      length = closure_0.length;
-    }
-    const _JSON = JSON;
-    const subarrayResult = closure_0.subarray(0, length);
-    closure_0 = closure_0.subarray(length + 1);
-    if (_mod13055.GLOBAL_OBJ.__SENTRY__) {
-      let decodePolyfillResult;
-      if (_mod13055.GLOBAL_OBJ.__SENTRY__.decodePolyfill) {
-        const __SENTRY__ = tmp3(13055).GLOBAL_OBJ.__SENTRY__;
-        decodePolyfillResult = __SENTRY__.decodePolyfill(subarrayResult);
-      }
-      return parse(decodePolyfillResult);
-    }
-    const decoder = new TextDecoder();
-    decodePolyfillResult = decoder.decode(subarrayResult);
-  }
-  _require = tmp;
-  const items = [];
-  const json = readJson();
-  while (_require.length) {
-    let subarrayResult;
-    let json1 = readJson();
-    let length;
-    if (typeof json1.length === "number") {
-      length = json1.length;
-    }
-    let items1 = [json1, ];
-    let push = items.push;
-    if (length) {
-      subarrayResult = require("Discord");
-      _require = _require.subarray(length + 1);
-    } else {
-      subarrayResult = readJson();
-    }
-    items1[1] = subarrayResult;
-    arr = push(items1);
-  }
-  const items2 = [json, items];
-  return items2;
-}
-export function serializeEnvelope(arg0) {
-  let sum;
-  let tmp4;
-  function concatBuffers(arr) {
-    const uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
-    let num = 0;
-    const iter = arr[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let result = uint8Array.set(nextResult, num);
-      num = num + nextResult.length;
-      continue;
-    }
-    return uint8Array;
-  }
-  function append(json) {
-    let require;
-    if (typeof require === "string") {
-      if (typeof json === "string") {
-        require = arr + json;
-      } else {
-        if (_mod13055.GLOBAL_OBJ.__SENTRY__) {
-          let encodePolyfillResult;
-          if (_mod13055.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-            const __SENTRY__2 = tmp11(13055).GLOBAL_OBJ.__SENTRY__;
-            encodePolyfillResult = __SENTRY__2.encodePolyfill(arr);
-          }
-          require = [encodePolyfillResult, json];
-        }
-        const _TextEncoder2 = TextEncoder;
-        const self3 = this;
-        const self4 = this;
-        const encoder2 = new TextEncoder();
-        encodePolyfillResult = encoder2.encode(arr);
-      }
-    } else {
-      let tmp4 = json;
-      const push = arr.push;
-      if (typeof json === "string") {
-        if (_mod13055.GLOBAL_OBJ.__SENTRY__) {
-          let encodePolyfillResult1;
-          if (_mod13055.GLOBAL_OBJ.__SENTRY__.encodePolyfill) {
-            const __SENTRY__ = tmp9(13055).GLOBAL_OBJ.__SENTRY__;
-            encodePolyfillResult1 = __SENTRY__.encodePolyfill(json);
-          }
-          tmp4 = encodePolyfillResult1;
-        }
-        const _TextEncoder = TextEncoder;
-        const self = this;
-        const self2 = this;
-        const encoder = new TextEncoder();
-        encodePolyfillResult1 = encoder.encode(json);
-      }
-      push(tmp4);
-    }
-  }
-  let tmp = _slicedToArray(arg0, 2);
-  const tmp2 = tmp[1];
-  let require = JSON.stringify(tmp[0]);
-  const tmp3 = tmp2[Symbol.iterator]();
-  if (tmp3 === undefined) {
-    let tmp20 = require;
-    if (typeof require !== "string") {
-      tmp20 = concatBuffers(tmp19);
-    }
-    return tmp20;
-  } else {
-    const tmp6 = _slicedToArray(tmp4, 2);
-    const _JSON = JSON;
-    const _HermesInternal = HermesInternal;
-    append("\n" + JSON.stringify(tmp6[0]) + "\n");
-    if (typeof tmp6[1] !== "string") {
-      const _Uint8Array = Uint8Array;
-      if (!(tmp6[1] instanceof Uint8Array)) {
-        let json;
-        try {
-          const _JSON2 = JSON;
-          json = JSON.stringify(tmp8);
-        } catch (err) {
-          const _JSON3 = JSON;
-          const normalizer = _mod13099;
-          json = stringify(normalizer.normalize(tmp8));
-        }
-        append(json);
-      }
-    }
-    append(tmp6[1]);
+    const error = new Error("n-th rule couldn't be parsed ('".concat(str2, "')"));
+    throw error;
   }
 }

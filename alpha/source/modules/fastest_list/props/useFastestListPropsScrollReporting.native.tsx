@@ -1,37 +1,44 @@
-// Module ID: 7234
-// Function ID: 7235
+// Module ID: 7355
+// Function ID: 7356
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [5095, 2]
+// Dependencies: [1652, 2]
 // Exports: default
 
-// Module 7234 (useFastestListPropsScrollReporting)
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+// Module 7355 (useFastestListPropsScrollReporting)
+import _mod1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
-const __initData = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
+let closure_2 = { code: "(function useFastestListPropsScrollReportingNativeTsx1(event){let[scrollPosition,horizontal]=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}})" };
 let result = size.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");
 
-export default function useFastestListPropsScrollReporting(scrollReporting, horizontal) {
-  let closure_0 = horizontal;
+export default function useFastestListPropsScrollReporting(scrollReporting, arg1) {
+  let tmp3;
+  let tmp4;
+  let tmp5;
   let scrollPosition;
   if ("animatedScrollPosition" === scrollReporting.scrollReporting) {
     scrollPosition = scrollReporting.scrollPosition;
   }
-  ReanimatedRexport;
-  const fn = function n(contentOffset) {
-    const obj = scrollPosition;
-    if (null != scrollPosition) {
+  _mod1652;
+  const items = [closure_2, scrollPosition, arg1];
+  let c0;
+  let c1;
+  [tmp3, tmp4, tmp5] = items;
+  function useFastestListPropsScrollReportingNativeTsx1(contentOffset) {
+    const obj = c0;
+    if (null != c0) {
       contentOffset = contentOffset.contentOffset;
-      const result = obj.set(closure_0 ? contentOffset.x : contentOffset.y);
+      const result = obj.set(c1 ? contentOffset.x : contentOffset.y);
     }
-  };
-  fn.__closure = { scrollPosition, horizontal };
-  fn.__workletHash = 14196294214838;
-  fn.__initData = __initData;
-  ({ onScroll: null }.onScroll) = fn;
+  }
+  const items1 = [tmp4, tmp5];
+  useFastestListPropsScrollReportingNativeTsx1.__closure = items1;
+  useFastestListPropsScrollReportingNativeTsx1.__workletHash = 11602000785903;
+  useFastestListPropsScrollReportingNativeTsx1.__initData = tmp3;
+  ({ onScroll: null }.onScroll) = useFastestListPropsScrollReportingNativeTsx1;
   scrollReporting = scrollReporting.scrollReporting;
   if ("animatedScrollPosition" === scrollReporting) {
-    return { onScroll: tmp3 };
+    return { onScroll: tmp6 };
   } else if ("animatedCallbacks" === scrollReporting) {
     return { onScroll: scrollReporting.scrollHandlerAnimated };
   } else {

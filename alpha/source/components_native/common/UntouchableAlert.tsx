@@ -1,15 +1,15 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17379
+// Function ID: 17380
 // Name: UntouchableAlert
-// Dependencies: [19, 17, 21, 5014, 5080, 6953, 2]
+// Dependencies: [19, 17, 21, 5141, 5207, 7080, 2]
 
-// Module 17236 (UntouchableAlert)
+// Module 17379 (UntouchableAlert)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5080 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6953 */;
+import native from "native" /* 5207 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7080 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

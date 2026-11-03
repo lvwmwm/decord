@@ -1,0 +1,10 @@
+// Module ID: 18694
+// Function ID: 18695
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 18694 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/icymi/native/images", width: 24.5, height: 24, scales: [2, 3], hash: "17237a5c49ea745b655cbec7c093406d", name: "emoji-positive", type: "png" });

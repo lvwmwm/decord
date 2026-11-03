@@ -1,11 +1,11 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9770
+// Function ID: 9771
 // Name: gift_icon
-// Dependencies: [32, 1197, 9639, 2]
+// Dependencies: [32, 1197, 9771, 2]
 
-// Module 9638 (gift_icon)
+// Module 9770 (gift_icon)
 import _mod1197 from "module_1197" /* 1197 */;
-import gradient2 from "gradient" /* 9639 */;
+import gradient2 from "gradient" /* 9771 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

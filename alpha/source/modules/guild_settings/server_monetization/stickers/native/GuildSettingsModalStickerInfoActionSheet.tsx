@@ -1,20 +1,20 @@
-// Module ID: 19753
-// Function ID: 19754
+// Module ID: 19903
+// Function ID: 19904
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6837, 21, 504, 10267, 5712, 1113, 5272, 7321, 575, 7060, 6975, 10232, 19746, 5738, 2]
+// Dependencies: [5, 32, 19, 17, 6957, 21, 504, 10397, 5832, 1113, 5395, 7441, 575, 7186, 7101, 10362, 19896, 5858, 2]
 
-// Module 19753 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19746 */;
+// Module 19903 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19896 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StickersStore from "StickersStore" /* 6837 */;
+import StickersStore from "StickersStore" /* 6957 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, c1, closure_2;
+let c1, closure_2;
 
 let c10;
 let c9;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp34) {
           closure_2 = tmp34;
           if (0 === c3) {
@@ -148,7 +148,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
   let tmp8Result2 = null;
   if (null != stateFromStores) {
     let obj2 = { header: closure_9(tmp(tmp2[11]).BottomSheetTitleHeader, obj4), children: tmp8(tmp9, obj5) };
-    BottomSheet = tmp(tmp2[10]).BottomSheet;
+    const BottomSheet = tmp(tmp2[10]).BottomSheet;
     obj4 = { title: null, subtitle: null };
     ({ name: obj3.title, description: obj3.subtitle } = stateFromStores);
     obj5 = { style: obj6, children: tmp11(TableRowGroup, obj15) };

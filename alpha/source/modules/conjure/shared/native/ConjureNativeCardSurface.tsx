@@ -1,29 +1,45 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12272
+// Function ID: 12273
 // Name: ConjureNativeCardSurface
-// Dependencies: [19, 21, 5014, 575, 6977, 2]
+// Dependencies: [19, 21, 5141, 575, 7103, 2]
 // Exports: default
 
-// Module 12136 (ConjureNativeCardSurface)
+// Module 12272 (ConjureNativeCardSurface)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Card_Card from "Card/Card" /* 6977 */;
+import Card_Card from "Card/Card" /* 7103 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const obj = { surface: { padding: nativeDefault.space.PX_12 } };
+let context = react.createContext(undefined);
+let obj = { surface: { padding: nativeDefault.space.PX_12 } };
 ({ padding: nativeDefault.space.PX_12 });
-let closure_3 = createStyles.createStyles(obj);
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/conjure/shared/native/ConjureNativeCardSurface.tsx");
 
-export default function ConjureNativeCardSurface(arg0) {
+export default function ConjureNativeCardSurface(holdsKeyboard) {
   let children;
+  let items;
   let style;
-  ({ children, style } = arg0);
-  const items = [closure_3().surface, style];
-  closure_3();
-  return jsx(Card_Card.Card, { variant: "secondary", border: "subtle", radius: 12, style: items, children });
+  let tmp4;
+  let flag = holdsKeyboard.holdsKeyboard;
+  ({ children, style } = holdsKeyboard);
+  if (flag === undefined) {
+    flag = false;
+  }
+  const tmp = closure_5();
+  context = react.useContext(context);
+  const obj = { variant: "secondary", border: "subtle", radius: 12, style: items, onTouchStart: tmp4, children };
+  items = [tmp.surface, style];
+  tmp4 = undefined;
+  const Card = Card_Card.Card;
+  const tmp3 = jsx;
+  if (flag) {
+    tmp4 = context;
+  }
+  return tmp3(Card, obj);
 };
 export const CONJURE_NATIVE_CARD_RADIUS = 12;
+export const ConjureCardTouchContext = context;

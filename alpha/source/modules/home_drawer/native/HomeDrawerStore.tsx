@@ -1,14 +1,14 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18218
+// Function ID: 18219
 // Name: HomeDrawerStore
-// Dependencies: [1072, 1254, 5095, 5254, 18075, 4929, 2]
+// Dependencies: [1072, 1254, 1652, 5377, 18219, 5056, 2]
 // Exports: computeMaxX
 
-// Module 18074 (HomeDrawerStore)
+// Module 18218 (HomeDrawerStore)
 import Constants from "Constants" /* 1072 */;
-import _slicedToArray from "_slicedToArray" /* 4929 */;
-import timing from "timing" /* 5254 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18075 */;
+import _slicedToArray from "_slicedToArray" /* 5056 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18219 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
@@ -46,15 +46,15 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
         const result = isOpenTarget.set(tmp2);
         let num = 0;
         set3 = panelX.set;
-        const withTiming = timing.withTiming;
-        timing;
+        const withTiming = timing_timing.withTiming;
+        timing_timing;
         if ("open" === arg0) {
           num = maxX;
         }
         set3(withTiming(num, HomeDrawerAnimations.HOME_DRAWER_SETTLE_TIMING, "animate-always"));
         set = snapX.set;
-        const tmp9Result = timing;
-        const result1 = set(tmp9Result.withTiming(0, tmp9(18075).HOME_DRAWER_SETTLE_TIMING, "animate-always"));
+        const tmp9Result = timing_timing;
+        const result1 = set(tmp9Result.withTiming(0, tmp9(18219).HOME_DRAWER_SETTLE_TIMING, "animate-always"));
         const obj = { active: false };
         set2 = gestureState.set;
         const merged = Object.assign(gestureState.get());
@@ -69,11 +69,11 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       closure_1().lastInteractionAt.current = Date.now();
     }
   };
-  obj2 = require("ReanimatedRexport");
-  obj3 = require("ReanimatedRexport");
-  obj4 = require("ReanimatedRexport");
-  obj5 = require("ReanimatedRexport");
-  obj6 = require("ReanimatedRexport");
+  obj2 = require("module_1652");
+  obj3 = require("module_1652");
+  obj4 = require("module_1652");
+  obj5 = require("module_1652");
+  obj6 = require("module_1652");
   return obj;
 }, _slicedToArray.shallow);
 let result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");

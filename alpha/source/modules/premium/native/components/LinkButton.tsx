@@ -1,20 +1,20 @@
-// Module ID: 7591
-// Function ID: 7592
+// Module ID: 7715
+// Function ID: 7716
 // Name: LinkButton
-// Dependencies: [19, 21, 5014, 6980, 5624, 2]
+// Dependencies: [19, 21, 5141, 7106, 5747, 2]
 // Exports: LinkButton
 
-// Module 7591 (LinkButton)
-import Pressables from "Pressables" /* 6980 */;
+// Module 7715 (LinkButton)
+import Pressables from "Pressables" /* 7106 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 let tmp3;
-const Text_Text = tmp3(5624);
+const Text_Text = tmp3(5747);
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let closure_4 = createStyles.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
 const result = size.fileFinishedImporting("modules/premium/native/components/LinkButton.tsx");

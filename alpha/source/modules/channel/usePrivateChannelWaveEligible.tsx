@@ -1,14 +1,14 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18240
+// Function ID: 18241
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [6061, 4956, 4870, 1072, 504, 11, 4836, 2042, 11257, 2]
+// Dependencies: [6181, 5083, 4997, 1072, 504, 11, 4963, 2171, 11394, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 18096 (usePrivateChannelWaveEligible)
+// Module 18240 (usePrivateChannelWaveEligible)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4870 */;
-import MessageStore from "MessageStore" /* 6061 */;
-import RelationshipStore from "RelationshipStore" /* 4956 */;
+import ChannelConstants from "ChannelConstants" /* 4997 */;
+import MessageStore from "MessageStore" /* 6181 */;
+import RelationshipStore from "RelationshipStore" /* 5083 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,8 +64,8 @@ export function usePrivateChannelWaveEligible(isDM, arg1) {
   const extractTimestampResult = obj5.extractTimestamp(isDM.id);
   const isWithinInterval = require("DateUtils").isWithinInterval;
   require("DateUtils");
-  const tmp10 = recipientId(2042)();
-  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(2042)(extractTimestampResult), 1814400000);
+  const tmp10 = recipientId(2171)();
+  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(2171)(extractTimestampResult), 1814400000);
   const obj6 = require("useStrangerDangerWarning");
   const strangerDangerWarning = obj6.useStrangerDangerWarning(isDM.id);
   if (tmp) {

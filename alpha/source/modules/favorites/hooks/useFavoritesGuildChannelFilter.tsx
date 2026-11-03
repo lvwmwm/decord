@@ -1,18 +1,18 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 14535
+// Function ID: 14536
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 4863, 4946, 4866, 1072, 504, 9135, 4888, 1379, 2]
+// Dependencies: [19, 4990, 5073, 4993, 1072, 504, 9263, 5015, 1380, 2]
 // Exports: default
 
-// Module 14404 (useFavoritesGuildChannelFilter)
+// Module 14535 (useFavoritesGuildChannelFilter)
 import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1379 */;
-import FavoritesUtils from "FavoritesUtils" /* 4888 */;
-import _mod9135 from "module_9135" /* 9135 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import FavoritesUtils from "FavoritesUtils" /* 5015 */;
+import _mod9263 from "module_9263" /* 9263 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import FavoriteStore from "FavoriteStore" /* 4866 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import FavoriteStore from "FavoriteStore" /* 4993 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -29,7 +29,7 @@ export default function useFavoritesGuildChannelFilter() {
   const items1 = [stateFromStores];
   return react.useCallback((type, arg1) => {
     type = type.type;
-    if (_mod9135.AutocompleterResultTypes.USER === type) {
+    if (_mod9263.AutocompleterResultTypes.USER === type) {
       const dMChannelFromUserId = ChannelStore.getDMChannelFromUserId(type.record.id);
       let tmp15 = !(!arg1 && null == dMChannelFromUserId);
       const tmp13 = !arg1 && null == dMChannelFromUserId;
@@ -38,11 +38,11 @@ export default function useFavoritesGuildChannelFilter() {
         const tmp17 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
       }
       return tmp15;
-    } else if (_mod9135.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod9263.AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (_mod9135.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod9135.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod9263.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod9263.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmpResult = GlobalUtils;
           return tmpResult.assertNever(type);
         }

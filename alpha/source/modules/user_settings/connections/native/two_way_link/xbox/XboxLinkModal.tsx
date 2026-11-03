@@ -1,17 +1,17 @@
-// Module ID: 9722
-// Function ID: 9723
+// Module ID: 9854
+// Function ID: 9855
 // Name: XboxLinkModal
-// Dependencies: [19, 9723, 1072, 21, 7558, 8359, 9721, 1113, 9724, 9731, 9732, 9736, 14626, 14629, 14631, 9730, 14635, 7169, 2]
+// Dependencies: [19, 9855, 1072, 21, 7682, 8483, 9853, 1113, 9856, 9863, 9864, 9868, 14757, 14760, 14762, 9862, 14766, 7290, 2]
 // Exports: default
 
-// Module 9722 (XboxLinkModal)
+// Module 9854 (XboxLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8359 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9721 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9723 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7682 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8483 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9853 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9855 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 export default function XboxLinkModal(locationStack) {
   let twoWayLinkStyles;
   locationStack = locationStack.locationStack;
-  let obj = twoWayLinkStyles(9730);
+  let obj = twoWayLinkStyles(9862);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => {
@@ -109,9 +109,9 @@ export default function XboxLinkModal(locationStack) {
       }
     };
   }, items);
-  const obj2 = twoWayLinkStyles(14635);
+  const obj2 = twoWayLinkStyles(14766);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack);
-  const Navigator = twoWayLinkStyles(7169).Navigator;
+  const Navigator = twoWayLinkStyles(7290).Navigator;
   const intl = twoWayLinkStyles(1113).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={XboxLinkModalScenes.LANDING} headerBackTitle={intl.string(twoWayLinkStyles(1113).t["13/7kX"])} />;
 };

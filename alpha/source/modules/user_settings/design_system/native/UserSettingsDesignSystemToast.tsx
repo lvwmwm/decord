@@ -1,25 +1,25 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 17936
+// Function ID: 17937
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 5014, 575, 6977, 6027, 5624, 5634, 5713, 5712, 5735, 5731, 4964, 15862, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7103, 6147, 5747, 5754, 5833, 5832, 5855, 5851, 5091, 16005, 2]
 // Exports: default
 
-// Module 17793 (UserSettingsDesignSystemToast)
+// Module 17936 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import EmojiUtils from "EmojiUtils" /* 4964 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
-import toastUtils from "toastUtils" /* 5713 */;
-import CopyIcon from "CopyIcon" /* 5731 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import Toast4 from "Toast" /* 15862 */;
+import EmojiUtils from "EmojiUtils" /* 5091 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
+import toastUtils from "toastUtils" /* 5833 */;
+import CopyIcon from "CopyIcon" /* 5851 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5855 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import Card_Card from "Card/Card" /* 7103 */;
+import Toast4 from "Toast" /* 16005 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let currentToastMap, queuedToastsMap;
@@ -39,7 +39,7 @@ function DemoGroup(demos) {
   obj2 = { spacing: nativeDefault.space.PX_8, children: items };
   Stack = Stack_Stack.Stack;
   items = [
-    React3(Text_Text.Text, { variant: "text-lg/bold", children: title }),
+    React3(Text_Text.Text, { variant: "text-lg/semibold", children: title }),
     React3(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: hint }),
     demos.map((label) => {
       const obj = { variant: "secondary", size: "sm", text: label.label, onPress: label.onPress };
@@ -75,7 +75,7 @@ function LiveStores() {
   const Card = Card_Card.Card;
   const obj3 = { spacing: nativeDefault.space.PX_8, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [React3(Text_Text.Text, { variant: "text-lg/bold", children: "Live store" }), ];
+  items = [React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Live store" }), ];
   let str = "text-subtle";
   const Text = Text_Text.Text;
   const tmp3 = React3;
@@ -248,7 +248,7 @@ export default function UserSettingsDesignSystemToast() {
   const Card = Card_Card.Card;
   const obj7 = { spacing: nativeDefault.space.PX_12, style: tmp4.previews, children: items1 };
   const Stack2 = Stack_Stack.Stack;
-  items1 = [React3(Text_Text.Text, { variant: "text-lg/bold", children: "Components" }), , , , , , , , , , ];
+  items1 = [React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Components" }), , , , , , , , , , ];
   const obj8 = { text, variant: "default" };
   items1[1] = React3(Toast4.Toast, obj8);
   const obj9 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
@@ -261,7 +261,7 @@ export default function UserSettingsDesignSystemToast() {
   items1[4] = React3(Toast4.Toast, obj11);
   const obj12 = { text, variant: "critical" };
   items1[5] = React3(Toast4.Toast, obj12);
-  items1[6] = React3(Text_Text.Text, { variant: "text-lg/bold", children: "Entities" });
+  items1[6] = React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Entities" });
   const Toast3 = Toast4.Toast;
   const tmp6 = ScrollView;
   if ("" !== emojiUrl) {

@@ -1,16 +1,16 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 11074
+// Function ID: 11075
 // Name: IntlLink
-// Dependencies: [19, 21, 5014, 575, 5028, 5709, 1943, 1187, 2]
+// Dependencies: [19, 21, 5141, 575, 5155, 5829, 2072, 1187, 2]
 // Exports: IntlLink
 
-// Module 10936 (IntlLink)
+// Module 11074 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1943 from "module_1943" /* 1943 */;
-import LinkingDefault from "Linking" /* 5709 */;
+import _modDef2072 from "module_2072" /* 2072 */;
+import LinkingDefault from "Linking" /* 5829 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -34,12 +34,12 @@ export function IntlLink(target) {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(5028).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(5155).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function y() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1943;
+      const obj = _modDef2072;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";

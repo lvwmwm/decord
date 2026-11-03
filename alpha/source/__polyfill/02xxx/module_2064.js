@@ -1,50 +1,44 @@
 // Module ID: 2064
 // Function ID: 2065
-// Dependencies: [2065, 2066, 2068, 2069, 2071]
+// Dependencies: []
 
 // Module 2064
-import formatDistance from "formatDistance" /* 2065 */;
-import buildFormatLongFn from "buildFormatLongFn" /* 2066 */;
-import formatRelative from "formatRelative" /* 2068 */;
-import date_mod from "module_2069" /* 2069 */;
-import date_mod2 from "module_2071" /* 2071 */;
-
-let tmp11;
-let tmp3;
-let tmp5;
-let tmp7;
-let tmp9;
-if (!formatDistance) {
-  tmp3 = { default: formatDistance };
-  const obj = { default: formatDistance };
-} else {
-  tmp3 = formatDistance;
-}
-if (!buildFormatLongFn) {
-  tmp5 = { default: buildFormatLongFn };
-  const obj2 = { default: buildFormatLongFn };
-} else {
-  tmp5 = buildFormatLongFn;
-}
-if (!formatRelative) {
-  tmp7 = { default: formatRelative };
-  const obj3 = { default: formatRelative };
-} else {
-  tmp7 = formatRelative;
-}
-let date = date_mod2;
-if (!date) {
-  tmp9 = { default: date };
-  const obj4 = { default: date };
-} else {
-  tmp9 = date;
-}
-date = date_mod2;
-if (!date) {
-  tmp11 = { default: date };
-  const obj5 = { default: date };
-} else {
-  tmp11 = date;
-}
-
-export default { code: "en-US", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
+const obj = {
+  locale: "hi",
+  pluralRuleFunction(arg0, arg1) {
+    let str2;
+    const tmp = arg1;
+    if (tmp) {
+      let str3 = "one";
+      if (1 != arg0) {
+        let str5 = "two";
+        if (2 != arg0) {
+          str5 = "two";
+          if (3 != arg0) {
+            let str6 = "few";
+            if (4 != arg0) {
+              let str7 = "other";
+              if (6 == arg0) {
+                str7 = "many";
+              }
+              str6 = str7;
+            }
+            str5 = str6;
+          }
+        }
+        str3 = str5;
+      }
+      str2 = str3;
+    } else {
+      str2 = "other";
+      if (arg0 >= 0) {
+        str2 = "other";
+        if (arg0 <= 1) {
+          str2 = "one";
+        }
+      }
+    }
+    return str2;
+  }
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);

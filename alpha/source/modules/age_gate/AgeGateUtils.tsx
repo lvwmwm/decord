@@ -1,29 +1,29 @@
-// Module ID: 6734
-// Function ID: 6735
+// Module ID: 6854
+// Function ID: 6855
 // Name: AgeGateUtils
-// Dependencies: [4881, 4863, 6735, 4885, 4917, 1383, 1097, 1072, 1113, 11, 5693, 6731, 6736, 6726, 504, 6725, 6729, 2061, 6739, 6752, 6753, 2]
+// Dependencies: [5008, 4990, 6855, 5012, 5044, 1385, 1097, 1072, 1113, 11, 5813, 6851, 6856, 6846, 504, 6845, 6849, 2190, 6859, 6872, 6873, 2]
 // Exports: getAgeGateType, guildNeedsAgeGate, isChannelAgeVerificationGated, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, shouldShowAgeGateForVoiceChannel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userNeedsAgeGate
 
-// Module 6734 (AgeGateUtils)
+// Module 6854 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl17 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
-import GuildRecord from "GuildRecord" /* 4881 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6725 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6736 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6739 */;
-import NSFWContentGate from "NSFWContentGate" /* 6752 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6753 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6735 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import UserStore from "UserStore" /* 1383 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import GuildRecord from "GuildRecord" /* 5008 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6845 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6846 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6851 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6856 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6859 */;
+import NSFWContentGate from "NSFWContentGate" /* 6872 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6873 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6855 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import UserStore from "UserStore" /* 1385 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -212,7 +212,7 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
       str = "";
     }
     if (tmp4Result) {
-      const tmpResult = getTinyBroncoWarningDescriptions;
+      const tmpResult = getAgeNoticeWarningDescriptions;
       tinyBroncoWarningDescriptions = tmpResult.getTinyBroncoWarningDescriptions(tmp4Result, str);
     } else {
       tinyBroncoWarningDescriptions = null;
@@ -356,7 +356,7 @@ export function useAgeGateVerifyContent(source) {
   if (tmpResult3.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
     tinyBroncoWarningDescriptions = null;
     if (tmp6) {
-      const tmpResult4 = getTinyBroncoWarningDescriptions;
+      const tmpResult4 = getAgeNoticeWarningDescriptions;
       tinyBroncoWarningDescriptions = tmpResult4.getTinyBroncoWarningDescriptions(true, "");
     }
   }

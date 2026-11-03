@@ -1,18 +1,18 @@
-// Module ID: 13964
-// Function ID: 13965
+// Module ID: 14095
+// Function ID: 14096
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 4926, 10225, 21, 5014, 575, 5642, 504, 13793, 6980, 1113, 5717, 5624, 2]
+// Dependencies: [19, 17, 5053, 10355, 21, 5141, 575, 5762, 504, 13924, 7106, 1113, 5837, 5747, 2]
 // Exports: default
 
-// Module 13964 (ApplicationCommandItem)
+// Module 14095 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10225 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13793 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10355 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13924 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

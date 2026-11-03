@@ -1,15 +1,15 @@
-// Module ID: 8180
-// Function ID: 8181
+// Module ID: 8304
+// Function ID: 8305
 // Name: BackgroundBlurView
-// Dependencies: [19, 17, 21, 5014, 8181, 2]
+// Dependencies: [19, 17, 21, 5141, 8305, 2]
 // Exports: BackgroundBlurView
 
-// Module 8180 (BackgroundBlurView)
+// Module 8304 (BackgroundBlurView)
 import react_native from "react-native" /* 17 */;
-import BackgroundBlurFill from "BackgroundBlurFill" /* 8181 */;
+import BackgroundBlurFill from "BackgroundBlurFill" /* 8305 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;

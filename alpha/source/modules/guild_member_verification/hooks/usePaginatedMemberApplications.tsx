@@ -1,11 +1,11 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 18824
+// Function ID: 18825
 // Name: usePaginatedMemberApplications
-// Dependencies: [5, 32, 19, 5048, 11, 6916, 6446, 2]
+// Dependencies: [5, 32, 19, 5175, 11, 7036, 6566, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 18666 (usePaginatedMemberApplications)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
+// Module 18824 (usePaginatedMemberApplications)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -76,7 +76,7 @@ export function usePaginatedMemberApplications(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ export function usePaginatedMemberApplications(guildId) {
             ref.current = false;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp53) {
           if (0 === ref2) {
             c7 = 3;

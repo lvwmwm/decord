@@ -1,26 +1,26 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15421
+// Function ID: 15422
 // Name: PremiumBillingInfo
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 2059, 5624, 1113, 2047, 15276, 7326, 7351, 15281, 7587, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 2188, 5747, 1113, 2176, 15417, 7446, 7471, 15422, 7711, 2]
 // Exports: default
 
-// Module 15280 (PremiumBillingInfo)
+// Module 15421 (PremiumBillingInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import PremiumUtils from "PremiumUtils" /* 2047 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2059 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 7587 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 15276 */;
-import BillingInformation from "BillingInformation" /* 15281 */;
+import PremiumUtils from "PremiumUtils" /* 2176 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2188 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7446 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 7711 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 15417 */;
+import BillingInformation from "BillingInformation" /* 15422 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
@@ -42,7 +42,7 @@ class GoogleManagementLink {
       tmp3 = null;
       if (subscription.isPurchasedViaGoogle) {
         const obj2 = { style, variant: "text-sm/medium", color: "text-link", children: format(prop, obj3) };
-        const Text = tmp(5624).Text;
+        const Text = tmp(5747).Text;
         const intl = tmp(1113).intl;
         format = intl.format;
         obj3 = { onClick: tmpResult.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT") };
@@ -84,12 +84,12 @@ export default function PremiumBillingInfo(subscription) {
     const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     const obj5 = { style, children: items };
     const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: intl.string(intl3.t.Sb6wI1) };
-    const Text = tmp2(5624).Text;
+    const Text = tmp2(5747).Text;
     intl = tmp2(1113).intl;
     items = [metroRequire(Text, obj6), , ];
     const obj7 = { style: tmp.billingContainer, children: items1 };
     const obj8 = { variant: "text-md/semibold", children: intl2.string(intl3.t.KXQjfc) };
-    const Text2 = tmp2(5624).Text;
+    const Text2 = tmp2(5747).Text;
     intl2 = tmp2(1113).intl;
     items1 = [metroRequire(Text2, obj8), , ];
     const obj9 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: tmp7 };
@@ -103,7 +103,7 @@ export default function PremiumBillingInfo(subscription) {
     const tmp12 = metroRequire;
     if (null != externalManagementMessage) {
       const obj11 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp12Result = tmp12(tmp2(5624).Text, obj11);
+      tmp12Result = tmp12(tmp2(5747).Text, obj11);
     }
     items[2] = tmp12Result;
     return tmp10(tmp11, obj5);

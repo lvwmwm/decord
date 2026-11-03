@@ -1,15 +1,15 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 17185
+// Function ID: 17186
 // Name: OrbsArcadeHowToPlaySheet
-// Dependencies: [19, 17023, 21, 504, 10837, 17043, 1113, 17044, 2]
+// Dependencies: [19, 17166, 21, 504, 10967, 17186, 1113, 17187, 2]
 // Exports: default
 
-// Module 17042 (OrbsArcadeHowToPlaySheet)
+// Module 17185 (OrbsArcadeHowToPlaySheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17043 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17044 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17186 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17187 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17166 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -26,7 +26,7 @@ export default function OrbsArcadeHowToPlaySheet(gameId) {
   let tmp5Result2 = null;
   if (null != stateFromStores) {
     let tmp5Result;
-    const PromoSheet = tmp(10837).PromoSheet;
+    const PromoSheet = tmp(10967).PromoSheet;
     if (null != stateFromStores.asset) {
       const obj2 = { asset: stateFromStores.asset };
       tmp5Result = tmp5(OrbsArcadeGameGraphicDefault, obj2);
@@ -37,7 +37,7 @@ export default function OrbsArcadeHowToPlaySheet(gameId) {
     if (str == null) {
       str = "";
     }
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeHowToPlaySheet", secondaryAction: gameId(17044).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeHowToPlaySheet", secondaryAction: gameId(17187).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     tmp5Result2 = tmp5(PromoSheet, obj3);
   }

@@ -1,59 +1,74 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 13931
+// Function ID: 13932
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 5209, 5095, 1623, 5254, 5257, 10828, 2]
+// Dependencies: [19, 21, 5332, 1652, 1625, 5377, 5380, 10958, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 13800 (MediaKeyboardButtonIcon)
+// Module 13931 (MediaKeyboardButtonIcon)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1623 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5209 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5332 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import timingPresets from "timingPresets" /* 5380 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+let obj, obj1;
 
 const jsx = Fragment.jsx;
-const __initData = { code: "function MediaKeyboardButtonIconTsx1(){const{keyboard,KeyboardTypes,withTiming,timingStandard}=this.__closure;const isActive=keyboard===KeyboardTypes.MEDIA||keyboard===KeyboardTypes.APP_LAUNCHER;return{transform:[{rotate:withTiming(isActive?'45deg':'0deg',timingStandard)}]};}" };
+let closure_4 = { code: "(function MediaKeyboardButtonIconTsx1(){let[keyboard,KeyboardTypes,withTiming,timingStandard]=this.__closure;const isActive=keyboard===KeyboardTypes.MEDIA||keyboard===KeyboardTypes.APP_LAUNCHER;return{transform:[{rotate:withTiming(isActive?'45deg':'0deg',timingStandard)}]};})" };
 const result = size.fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
 
 export function MediaKeyboardButtonIcon(arg0) {
-  let closure_0;
+  let tmp;
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
   if (arg0 == null) {
     let str = "Cannot destructure 'undefined' or 'null'.";
     throw new TypeError("Cannot destructure 'undefined' or 'null'.");
   } else {
-    let tmp4 = dependencyMap;
     const merged = Object.assign(arg0, undefined);
-    const tmp5 = useKeyboardTypeDefault();
-    _require = tmp5;
-    const fn = function s() {
-      let items;
-      let str = "0deg";
-      const tmp4 = closure_0 === KeyboardTypes.KeyboardTypes.MEDIA || closure_0 === KeyboardTypes.KeyboardTypes.APP_LAUNCHER;
-      const withTiming = timing.withTiming;
-      timing;
-      if (tmp4) {
-        str = "45deg";
+    let items = [closure_4, useKeyboardTypeDefault(), , , ];
+    const tmp15 = useKeyboardTypeDefault();
+    const useAnimatedStyle = _mod1652.useAnimatedStyle;
+    _mod1652;
+    items[2] = KeyboardTypes.KeyboardTypes;
+    items[3] = timing_timing.withTiming;
+    items[4] = timingPresets.timingStandard;
+    let c0;
+    let c1;
+    let c2;
+    let c3;
+    [tmp, tmp2, tmp3, tmp4, tmp5] = items;
+    const tmp13 = importDefault;
+    const tmp16 = require;
+    class MediaKeyboardButtonIconTsx1 {
+      constructor() {
+        tmp2 = closure_0 === closure_1.MEDIA || tmp === closure_1.APP_LAUNCHER;
+        str = "0deg";
+        tmp3 = closure_2;
+        if (tmp2) {
+          str = "45deg";
+        }
+        obj = { transform: null };
+        obj1 = { rotate: tmp3(str, closure_3) };
+        items = [];
+        items[0] = obj1;
+        obj.transform = items;
+        return obj;
       }
-      const obj = { transform: items };
-      items = [{ rotate: withTiming(str, timingPresets.timingStandard) }];
-      ({ rotate: withTiming(str, timingPresets.timingStandard) });
-      return obj;
-    };
-    let obj = { keyboard: tmp5, KeyboardTypes: require("KeyboardTypes").KeyboardTypes, withTiming: require("timing").withTiming, timingStandard: require("timingPresets").timingStandard };
-    const useAnimatedStyle = require("ReanimatedRexport").useAnimatedStyle;
-    require("ReanimatedRexport");
-    fn.__closure = obj;
-    fn.__workletHash = 10698563185643;
-    fn.__initData = __initData;
-    const animatedStyle = useAnimatedStyle(fn);
-    const View = ReanimatedRexportDefault.View;
-    const PlusLargeIcon = require("PlusLargeIcon").PlusLargeIcon;
+    }
+    const items1 = [tmp2, tmp3, tmp4, tmp5];
+    MediaKeyboardButtonIconTsx1.__closure = items1;
+    MediaKeyboardButtonIconTsx1.__workletHash = 8539740243314;
+    MediaKeyboardButtonIconTsx1.__initData = tmp;
+    const animatedStyle = useAnimatedStyle(MediaKeyboardButtonIconTsx1);
+    const View = tmp13(1652).View;
+    const obj2 = {};
+    const PlusLargeIcon = tmp16(10958).PlusLargeIcon;
     const merged1 = Object.assign(merged);
     return <View style={animatedStyle}>{null}</View>;
   }

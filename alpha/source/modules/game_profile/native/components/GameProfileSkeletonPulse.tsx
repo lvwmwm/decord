@@ -1,26 +1,36 @@
-// Module ID: 9439
-// Function ID: 9440
+// Module ID: 9567
+// Function ID: 9568
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 5015, 5095, 5254, 504, 2]
+// Dependencies: [19, 5142, 1652, 5377, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 9439 (GameProfileSkeletonPulse)
+// Module 9567 (GameProfileSkeletonPulse)
+import get_initialized from "get initialized" /* 504 */;
+import timing_timing from "timing/timing" /* 5377 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import module_1652_mod from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 
-let closure_8, dependencyMap, diff, set;
+let closure_7, set;
 
-let ReanimatedRexport;
+let module_1652;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
 let c4 = 1300;
-const Easing = ReanimatedRexport.Easing;
-const inOutResult = Easing.inOut(ReanimatedRexport.Easing.quad);
-const hasOwnProperty = inOutResult;
-ReanimatedRexport = ReanimatedRexport_mod;
-const pulsePhase = ReanimatedRexport.makeMutable(0);
-let c7 = 0;
-let c8 = false;
+const Easing = module_1652.Easing;
+const inOutResult = Easing.inOut(module_1652.Easing.quad);
+module_1652 = module_1652_mod;
+let closure_5 = module_1652.makeMutable(0);
+let c6 = 0;
+let c7 = false;
+let items = [{ code: "(function getPulseOpacity_GameProfileSkeletonPulseTsx1(phase,phaseOffset){let[MIN_OPACITY,MAX_OPACITY,DEFAULT_TIMING_EASING]=this.__closure;const shiftedPhase=(phase+phaseOffset)%1;const cyclePhase=shiftedPhase<0?shiftedPhase+1:shiftedPhase;const pulseProgress=cyclePhase<0.5?cyclePhase*2:(1-cyclePhase)*2;return MIN_OPACITY+(MAX_OPACITY-MIN_OPACITY)*DEFAULT_TIMING_EASING(pulseProgress);})" }, 0.05, 0.1, inOutResult];
+let c0;
+let c1;
+let c2;
+[tmp3, tmp4, tmp5, tmp6] = items;
 function getPulseOpacity(arg0, arg1) {
   let result1;
   const result = (arg0 + arg1) % 1;
@@ -28,39 +38,47 @@ function getPulseOpacity(arg0, arg1) {
   if (result < 0) {
     sum = result + 1;
   }
-  const tmp3 = hasOwnProperty;
+  const diff = c1 - c0;
+  const tmp3 = c0;
+  const tmp5 = c2;
   if (sum < 0.5) {
     result1 = 2 * sum;
   } else {
     result1 = 2 * (1 - sum);
   }
-  return 0.05 + 0.05 * tmp3(result1);
+  return tmp3 + diff * tmp5(result1);
 }
-getPulseOpacity.__closure = { MIN_OPACITY: 0.05, MAX_OPACITY: 0.1, DEFAULT_TIMING_EASING: inOutResult };
-getPulseOpacity.__workletHash = 2217576423672;
-getPulseOpacity.__initData = { code: "function getPulseOpacity_GameProfileSkeletonPulseTsx1(phase,phaseOffset){const{MIN_OPACITY,MAX_OPACITY,DEFAULT_TIMING_EASING}=this.__closure;const shiftedPhase=(phase+phaseOffset)%1;const cyclePhase=shiftedPhase<0?shiftedPhase+1:shiftedPhase;const pulseProgress=cyclePhase<0.5?cyclePhase*2:(1-cyclePhase)*2;return MIN_OPACITY+(MAX_OPACITY-MIN_OPACITY)*DEFAULT_TIMING_EASING(pulseProgress);}" };
-const __initData = { code: "function GameProfileSkeletonPulseTsx2(){const{shouldReduceMotion,MAX_OPACITY,getPulseOpacity,pulsePhase,phaseOffset}=this.__closure;if(shouldReduceMotion){return{opacity:MAX_OPACITY};}return{opacity:getPulseOpacity(pulsePhase.get(),phaseOffset)};}" };
+let items1 = [tmp4, tmp5, tmp6];
+getPulseOpacity.__closure = items1;
+getPulseOpacity.__workletHash = 14613140904833;
+getPulseOpacity.__initData = tmp3;
+let closure_9 = { code: "(function GameProfileSkeletonPulseTsx2(){let[shouldReduceMotion,MAX_OPACITY,getPulseOpacity,pulsePhase,phaseOffset]=this.__closure;if(shouldReduceMotion){return{opacity:MAX_OPACITY};}return{opacity:getPulseOpacity(pulsePhase.get(),phaseOffset)};})" };
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSkeletonPulse.tsx");
 
 export function useSkeletonPulseStyle(animationDelayMs) {
   let duration;
-  let stateFromStores;
-  let obj = stateFromStores(504);
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let obj = get_initialized;
   const items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
+  const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
   const effect = react.useEffect(() => {
     let useReducedMotion;
     sum = sum + 1;
     let tmp2 = sum > 0;
-    if (tmp2) {
+    if (0 < sum) {
       tmp2 = !AccessibilityStore.useReducedMotion;
     }
-    if (tmp2 !== closure_8) {
-      closure_8 = tmp2;
-      let obj2 = stateFromStores(dependencyMap[2]);
-      let tmp10 = pulsePhase;
-      obj2.cancelAnimation(pulsePhase);
-      dependencyMap = pulsePhase.set(0);
+    if (tmp2 !== closure_7) {
+      closure_7 = tmp2;
+      let obj2 = module_1652;
+      let tmp10 = closure_1_5;
+      obj2.cancelAnimation(closure_1_5);
+      let result = closure_1_5.set(0);
       if (tmp2) {
         set = tmp10.set;
         const tmp8Result = tmp8(tmp9[2]);
@@ -73,19 +91,23 @@ export function useSkeletonPulseStyle(animationDelayMs) {
     }
     return () => {
       diff = diff - 1;
-      if ((diff > 0 && !useReducedMotion.useReducedMotion) !== closure_8) {
-        closure_8 = tmp2;
-        const obj2 = stateFromStores(closure_1_1[2]);
-        obj2.cancelAnimation(closure_1_6);
-        result = closure_1_6.set(0);
-        const tmp10 = closure_1_6;
-        if (diff > 0 && !useReducedMotion.useReducedMotion) {
+      let tmp2 = diff > 0;
+      if (0 < diff) {
+        tmp2 = !useReducedMotion.useReducedMotion;
+      }
+      if (tmp2 !== closure_7) {
+        closure_7 = tmp2;
+        const obj2 = closure_1_0(closure_1_1[2]);
+        obj2.cancelAnimation(closure_1_5);
+        const result = closure_1_5.set(0);
+        const tmp10 = closure_1_5;
+        if (tmp2) {
           set = tmp10.set;
-          const withRepeat = stateFromStores(closure_1_1[2]).withRepeat;
-          stateFromStores(closure_1_1[2]);
-          const obj = { duration, easing: stateFromStores(closure_1_1[2]).Easing.linear };
-          const withTiming = stateFromStores(closure_1_1[3]).withTiming;
-          stateFromStores(closure_1_1[3]);
+          const withRepeat = closure_1_0(closure_1_1[2]).withRepeat;
+          closure_1_0(closure_1_1[2]);
+          const obj = { duration, easing: closure_1_0(closure_1_1[2]).Easing.linear };
+          const withTiming = closure_1_0(closure_1_1[3]).withTiming;
+          closure_1_0(closure_1_1[3]);
           const result1 = set(withRepeat(withTiming(1, obj), -1, false));
         }
       }
@@ -93,55 +115,48 @@ export function useSkeletonPulseStyle(animationDelayMs) {
   }, []);
   const items1 = [stateFromStores];
   const effect1 = react.useEffect(() => {
-    if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_8) {
-      closure_8 = tmp;
-      const obj2 = stateFromStores(dependencyMap[2]);
-      obj2.cancelAnimation(pulsePhase);
-      dependencyMap = pulsePhase.set(0);
-      const tmp9 = pulsePhase;
+    if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_7) {
+      closure_7 = tmp;
+      const obj2 = module_1652;
+      obj2.cancelAnimation(closure_1_5);
+      const result = closure_1_5.set(0);
+      const tmp9 = closure_1_5;
       if (sum > 0 && !AccessibilityStore.useReducedMotion) {
         set = tmp9.set;
-        const withRepeat = stateFromStores(dependencyMap[2]).withRepeat;
-        stateFromStores(dependencyMap[2]);
-        const obj = { duration, easing: stateFromStores(dependencyMap[2]).Easing.linear };
-        const withTiming = stateFromStores(dependencyMap[3]).withTiming;
-        stateFromStores(dependencyMap[3]);
+        const withRepeat = module_1652.withRepeat;
+        module_1652;
+        const obj = { duration, easing: module_1652.Easing.linear };
+        const withTiming = timing_timing.withTiming;
+        timing_timing;
         const result1 = set(withRepeat(withTiming(1, obj), -1, false));
       }
     }
   }, items1);
-  let result = -animationDelayMs % c4 / c4;
-  dependencyMap = result;
-  let obj2 = stateFromStores(5095);
-  class P {
+  let obj2 = module_1652;
+  const items2 = [closure_9, stateFromStores, 0.1, getPulseOpacity, closure_5, -animationDelayMs % c4 / c4];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  c4 = undefined;
+  [tmp4, tmp5, tmp6, tmp7, tmp8, tmp9] = items2;
+  class GameProfileSkeletonPulseTsx2 {
     constructor() {
-      let obj;
-      const tmp = stateFromStores;
-      if (tmp) {
-        obj = { opacity: 0.1 };
-      } else if (typeof getPulseOpacity === "function") {
-        let result1;
-        dependencyMap = (pulsePhase.get() + dependencyMap) % 1;
-        sum = dependencyMap;
-        if (dependencyMap < 0) {
-          sum = dependencyMap + 1;
-        }
-        const tmp6 = hasOwnProperty;
-        if (sum < 0.5) {
-          result1 = 2 * sum;
-        } else {
-          result1 = 2 * (1 - sum);
-        }
-        obj = { opacity: 0.05 + 0.05 * tmp6(result1) };
+      let tmp4;
+      const obj = { opacity: null };
+      if (c0) {
+        obj.opacity = opacity;
+        tmp4 = obj;
       } else {
-        throw new TypeError("Trying to call a non-function");
+        obj.opacity = _undefined(_undefined2.get(), c4);
+        tmp4 = obj;
       }
-      return obj;
+      return tmp4;
     }
   }
-  const obj3 = { shouldReduceMotion: stateFromStores, MAX_OPACITY: 0.1, getPulseOpacity, pulsePhase, phaseOffset: result };
-  P.__closure = obj3;
-  P.__workletHash = 3992024948852;
-  P.__initData = __initData;
-  return obj2.useAnimatedStyle(P);
+  const items3 = [tmp5, tmp6, tmp7, tmp8, tmp9];
+  GameProfileSkeletonPulseTsx2.__closure = items3;
+  GameProfileSkeletonPulseTsx2.__workletHash = 9470986050093;
+  GameProfileSkeletonPulseTsx2.__initData = tmp4;
+  return obj2.useAnimatedStyle(GameProfileSkeletonPulseTsx2);
 }

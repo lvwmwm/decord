@@ -1,15 +1,15 @@
-// Module ID: 11050
-// Function ID: 11051
+// Module ID: 11178
+// Function ID: 11179
 // Name: CozyDrawer
-// Dependencies: [11051, 11052, 575, 1187, 6957, 7334, 2]
+// Dependencies: [11179, 11180, 575, 1187, 7083, 7454, 2]
 
-// Module 11050 (CozyDrawer)
+// Module 11178 (CozyDrawer)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import GameIcon from "GameIcon" /* 7334 */;
-import Compact from "Compact" /* 11052 */;
-import deepmerge_mod from "deepmerge" /* 11051 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
+import GameIcon from "GameIcon" /* 7454 */;
+import Compact from "Compact" /* 11180 */;
+import deepmerge_mod from "deepmerge" /* 11179 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -23,7 +23,7 @@ const obj = { container: obj2, channelName: { height: 20, text: { variant: "text
 obj2 = { borderRadius: nativeDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 6, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };
 const CHANNEL_LIST_STYLES_COMPACT = Compact.CHANNEL_LIST_STYLES_COMPACT;
 ({ text: { variant: "text-xs/medium" }, messageTypeIconSize: native.IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } });
-obj5 = { text: { variant: "text-sm/bold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: { size: native.IconSizes.REFRESH_SMALL_16, gameSize: GameIcon.GameIconSizes.SMALL } };
+obj5 = { text: { variant: "text-sm/semibold" }, layout: { paddingVertical: 6, paddingRight: 12, paddingLeft: 12, height: 32 }, icon: { size: native.IconSizes.REFRESH_SMALL_16, gameSize: GameIcon.GameIconSizes.SMALL } };
 ({ avatarSize: native.AvatarSizes.NORMAL, guildIconSize: GuildIcon.GuildIconSizes.NORMAL, guildBadgeIconSize: GuildIcon.GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { size: 24, lineHeight: 32 } });
 obj7 = { left: 48, startAndEndHeight: 16, transform: items, topOffset: -6 };
 items = [{ translateY: 0 }];

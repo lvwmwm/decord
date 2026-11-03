@@ -1,34 +1,34 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16916
+// Function ID: 16917
 // Name: UserSettingsFamilyCenter
-// Dependencies: [32, 19, 17, 7715, 1383, 1072, 1097, 7716, 21, 6027, 1113, 2538, 5023, 575, 7086, 5624, 5634, 7717, 5014, 1497, 7326, 7351, 8369, 16774, 16775, 8371, 563, 8980, 16776, 16816, 1252, 6540, 6545, 5593, 16834, 6739, 572, 9214, 14192, 2]
+// Dependencies: [32, 19, 17, 7839, 1385, 1072, 1097, 7840, 21, 6147, 1113, 2667, 5150, 575, 7212, 5747, 5754, 7841, 5141, 1499, 7446, 7471, 8493, 16917, 16918, 8495, 563, 9108, 16919, 16959, 1252, 6660, 6665, 5716, 16977, 6859, 572, 9342, 14323, 2]
 // Exports: default
 
-// Module 16773 (UserSettingsFamilyCenter)
+// Module 16916 (UserSettingsFamilyCenter)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef2538 from "module_2538" /* 2538 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
-import MetricEvents from "MetricEvents" /* 6545 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6739 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7086 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
+import _modDef2667 from "module_2667" /* 2667 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6660 */;
+import MetricEvents from "MetricEvents" /* 6665 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6859 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7212 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7841 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
-import UserStore_mod from "UserStore" /* 1383 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
+import UserStore_mod from "UserStore" /* 1385 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, navigation;
@@ -53,7 +53,7 @@ function FamilyCenterLoadError() {
   let items2;
   const tmp = closure_19();
   const intl = intl3.intl;
-  const stringResult = intl.string(_modDef2538.nGX8Co);
+  const stringResult = intl.string(_modDef2667.nGX8Co);
   require = stringResult;
   items = [stringResult];
   const effect = react.useEffect(() => {

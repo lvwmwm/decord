@@ -1,23 +1,23 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9742
+// Function ID: 9743
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 5014, 575, 1497, 9340, 9141, 9611, 9144, 6744, 1113, 7558, 7054, 6998, 5624, 7058, 7061, 7082, 5634, 7253, 7169, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1499, 9468, 9269, 9743, 9272, 6864, 1113, 7682, 7180, 7124, 5747, 7184, 7187, 7208, 5754, 7373, 7290, 2]
 // Exports: default
 
-// Module 9610 (GameDetectionReportModal)
+// Module 9742 (GameDetectionReportModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import Navigator from "Navigator" /* 7169 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import Navigator from "Navigator" /* 7290 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let navigation, results;
 
 let c9;
 let hasOwnProperty;
@@ -80,7 +80,7 @@ function ReportContent(applicationId) {
   let obj2 = applicationId(first[8]);
   let obj3 = { surface: applicationId(first[9]).GameSearchSurface.DETECTION_REPORT, filterGroup: applicationId(first[10]).GameSearchFilterGroup.DEFAULT };
   const debouncedGameAutocomplete = obj2.useDebouncedGameAutocomplete(str, obj3);
-  const results = debouncedGameAutocomplete.results;
+  results = debouncedGameAutocomplete.results;
   onSelect = debouncedGameAutocomplete.onSelect;
   const callback = str.useCallback(() => {
     const obj = navigation(first[11]);

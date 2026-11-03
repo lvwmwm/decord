@@ -1,20 +1,20 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12904
+// Function ID: 12905
 // Name: ConjureSecretRequestCard
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 5258, 12769, 7125, 12591, 504, 5095, 5637, 5638, 12136, 5624, 1113, 3868, 12185, 7340, 12658, 12137, 12141, 5634, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 5381, 12905, 7251, 12727, 504, 1652, 5757, 5758, 12272, 5747, 1113, 3995, 12321, 7460, 12794, 12273, 12277, 5754, 2]
 // Exports: default
 
-// Module 12768 (ConjureSecretRequestCard)
+// Module 12904 (ConjureSecretRequestCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
-import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12769 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import springPresets from "springPresets" /* 5758 */;
+import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12905 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const ConjureSecretsSheetDefault = ConjureSecretsSheet;
@@ -34,8 +34,8 @@ createStyles = createStyles.createStyles;
 obj3 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_8 = createStyles(obj);
-const __initData = { code: "function ConjureSecretRequestCardTsx1(){const{enter,tokens}=this.__closure;return{opacity:enter.get(),transform:[{translateY:(enter.get()-1)*tokens.space.PX_4}]};}" };
-const __initData2 = { code: "function ConjureSecretRequestCardTsx2(){const{enter}=this.__closure;return{opacity:enter.get(),transform:[{scale:0.5+enter.get()*0.5}]};}" };
+let closure_9 = { code: "(function ConjureSecretRequestCardTsx1(){let[enter,tokens]=this.__closure;return{opacity:enter.get(),transform:[{translateY:(enter.get()-1)*tokens.space.PX_4}]};})" };
+let closure_10 = { code: "(function ConjureSecretRequestCardTsx2(){let[enter]=this.__closure;return{opacity:enter.get(),transform:[{scale:0.5+enter.get()*0.5}]};})" };
 let result = size.fileFinishedImporting("modules/conjure/secrets/native/ConjureSecretRequestCard.tsx");
 
 export default function ConjureSecretRequestCard(projectId) {
@@ -53,23 +53,28 @@ export default function ConjureSecretRequestCard(projectId) {
   let intl7;
   let intl8;
   let intl9;
-  let items4;
-  let items5;
-  let items6;
-  let obj10;
+  let items10;
+  let items8;
+  let items9;
+  let obj12;
   let obj14;
-  let obj16;
-  let obj19;
-  let obj7;
+  let obj17;
+  let obj5;
+  let obj6;
   let obj8;
   let request;
   let status;
   let string;
-  let tmp10Result;
-  let tmp10Result5;
-  let tmp10Result7;
-  let tmp30Result;
-  let tmp4Result;
+  let tmp11Result;
+  let tmp11Result5;
+  let tmp11Result7;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp17;
+  let tmp18;
+  let tmp36Result;
+  let tmp4Result2;
   let useReducedMotion;
   projectId = projectId.projectId;
   ({ cardId, request } = projectId);
@@ -109,141 +114,151 @@ export default function ConjureSecretRequestCard(projectId) {
       if (!tmp2) {
         const result = sharedValue.set(0);
         set = sharedValue.set;
-        const obj = spring;
+        const obj = spring_spring;
         const result1 = set(obj.withSpring(1, springPresets.SUBTLE_SPRING));
       }
     }
     const result2 = sharedValue.set(1);
   }, items3);
-  const fn = function j() {
-    let diff;
-    let items;
-    const obj = { opacity: sharedValue.get(), transform: items };
-    const obj2 = { translateY: diff * nativeDefault.space.PX_4 };
-    diff = sharedValue.get() - 1;
-    items = [obj2];
-    return obj;
-  };
-  const obj4 = projectId(secretRequestStatusChanged[11]);
-  fn.__closure = { enter: sharedValue, tokens: request(secretRequestStatusChanged[5]) };
-  fn.__workletHash = 12914371617302;
-  fn.__initData = __initData;
-  ({ enter: sharedValue, tokens: request(secretRequestStatusChanged[5]) });
-  const animatedStyle = obj4.useAnimatedStyle(fn);
+  const items4 = [closure_9, sharedValue, ];
+  const useAnimatedStyle = projectId(secretRequestStatusChanged[11]).useAnimatedStyle;
   projectId(secretRequestStatusChanged[11]);
-  class E {
+  items4[2] = request(secretRequestStatusChanged[5]);
+  let c0;
+  let c1;
+  [tmp12, tmp13, tmp14] = items4;
+  class ConjureSecretRequestCardTsx1 {
     constructor() {
       let items;
-      const obj = { opacity: sharedValue.get(), transform: items };
-      items = [{ scale: 0.5 + 0.5 * sharedValue.get() }];
-      ({ scale: 0.5 + 0.5 * sharedValue.get() });
+      const obj = { opacity: _undefined.get(), transform: items };
+      items = [{ translateY: (_undefined.get() - 1) * _undefined2.space.PX_4 }];
+      ({ translateY: (_undefined.get() - 1) * _undefined2.space.PX_4 });
       return obj;
     }
   }
-  E.__closure = { enter: sharedValue };
-  E.__workletHash = 14318775493231;
-  E.__initData = __initData2;
+  const items5 = [tmp13, tmp14];
+  ConjureSecretRequestCardTsx1.__closure = items5;
+  ConjureSecretRequestCardTsx1.__workletHash = 101085677007;
+  ConjureSecretRequestCardTsx1.__initData = tmp12;
+  const animatedStyle = useAnimatedStyle(ConjureSecretRequestCardTsx1);
+  projectId(secretRequestStatusChanged[11]);
+  const items6 = [closure_10, sharedValue];
+  c0 = undefined;
+  [tmp17, tmp18] = items6;
+  class ConjureSecretRequestCardTsx2 {
+    constructor() {
+      let items;
+      const obj = { opacity: _undefined.get(), transform: items };
+      items = [{ scale: 0.5 + 0.5 * _undefined.get() }];
+      ({ scale: 0.5 + 0.5 * _undefined.get() });
+      return obj;
+    }
+  }
+  const items7 = [tmp18];
+  ConjureSecretRequestCardTsx2.__closure = items7;
+  ConjureSecretRequestCardTsx2.__workletHash = 10584084520150;
+  ConjureSecretRequestCardTsx2.__initData = tmp17;
   if ("superseded" === status) {
-    const obj6 = { style: animatedStyle, children: closure_6(tmp10Result, obj7) };
-    const View4 = tmp10(tmp5[11]).View;
-    obj7 = { style: tmp.card, children: closure_6(Text5, obj8) };
-    obj8 = { variant: "text-xs/semibold", color: "text-muted", children: intl9.string(request(secretRequestStatusChanged[17]).CTxtdV) };
-    tmp10Result = request(secretRequestStatusChanged[14]);
+    const obj4 = { style: animatedStyle, children: closure_6(tmp11Result, obj5) };
+    const View4 = tmp11(tmp5[11]).View;
+    obj5 = { style: tmp.card, children: closure_6(Text5, obj6) };
+    obj6 = { variant: "text-xs/semibold", color: "text-muted", children: intl9.string(request(secretRequestStatusChanged[17]).CTxtdV) };
+    tmp11Result = request(secretRequestStatusChanged[14]);
     Text5 = tmp4(tmp5[15]).Text;
     intl9 = tmp4(tmp5[16]).intl;
-    tmp30Result = closure_6(View4, obj6);
+    tmp36Result = closure_6(View4, obj4);
   } else if ("inactive" === status) {
-    const obj9 = { style: animatedStyle, children: closure_7(tmp10Result5, obj10) };
-    const View3 = tmp10(tmp5[11]).View;
-    obj10 = { style: tmp.card, children: items4 };
-    const obj11 = { variant: "text-xs/semibold", color: "text-muted", children: intl7.string(request(secretRequestStatusChanged[17]).HCQvpO) };
-    tmp10Result5 = request(secretRequestStatusChanged[14]);
+    const obj7 = { style: animatedStyle, children: closure_7(tmp11Result5, obj8) };
+    const View3 = tmp11(tmp5[11]).View;
+    obj8 = { style: tmp.card, children: items8 };
+    const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: intl7.string(request(secretRequestStatusChanged[17]).HCQvpO) };
+    tmp11Result5 = request(secretRequestStatusChanged[14]);
     const Text4 = tmp4(tmp5[15]).Text;
     intl7 = tmp4(tmp5[16]).intl;
-    items4 = [closure_6(Text4, obj11), ];
-    const obj12 = { label: intl8.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
+    items8 = [closure_6(Text4, obj9), ];
+    const obj10 = { label: intl8.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
     const TagGroup3 = tmp4(tmp5[18]).TagGroup;
     intl8 = tmp4(tmp5[16]).intl;
-    items4[1] = closure_6(TagGroup3, obj12);
-    tmp30Result = closure_6(View3, obj9);
+    items8[1] = closure_6(TagGroup3, obj10);
+    tmp36Result = closure_6(View3, obj7);
   } else if ("pending" === status) {
-    const obj13 = { style: tmp.card, children: closure_6(TagGroup2, obj14) };
-    obj14 = { label: intl6.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
-    const tmp10Result6 = request(secretRequestStatusChanged[14]);
+    const obj11 = { style: tmp.card, children: closure_6(TagGroup2, obj12) };
+    obj12 = { label: intl6.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
+    const tmp11Result6 = request(secretRequestStatusChanged[14]);
     TagGroup2 = tmp4(tmp5[18]).TagGroup;
     intl6 = tmp4(tmp5[16]).intl;
-    tmp30Result = closure_6(tmp10Result6, obj13);
+    tmp36Result = closure_6(tmp11Result6, obj11);
   } else if ("received" === status) {
-    const obj15 = { style: animatedStyle, children: closure_7(tmp10Result7, obj16) };
-    View = tmp10(tmp5[11]).View;
-    obj16 = { style: tmp.card, children: items6 };
-    const obj17 = { style: tmp.status, children: items5 };
-    const obj18 = { style: tmp13, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: closure_6(CircleCheckIcon, obj19) };
-    tmp10Result7 = request(secretRequestStatusChanged[14]);
-    const View2 = tmp10(tmp5[11]).View;
-    obj19 = { size: "xs", color: request(secretRequestStatusChanged[5]).colors.ICON_FEEDBACK_POSITIVE };
+    const obj13 = { style: animatedStyle, children: closure_7(tmp11Result7, obj14) };
+    View = tmp11(tmp5[11]).View;
+    obj14 = { style: tmp.card, children: items10 };
+    const obj15 = { style: tmp.status, children: items9 };
+    const obj16 = { style: tmp19, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: closure_6(CircleCheckIcon, obj17) };
+    tmp11Result7 = request(secretRequestStatusChanged[14]);
+    const View2 = tmp11(tmp5[11]).View;
+    obj17 = { size: "xs", color: request(secretRequestStatusChanged[5]).colors.ICON_FEEDBACK_POSITIVE };
     CircleCheckIcon = tmp4(tmp5[19]).CircleCheckIcon;
-    items5 = [closure_6(View2, obj18), ];
-    const obj20 = { variant: "text-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(secretRequestStatusChanged[17]).sfp7Up) };
+    items9 = [closure_6(View2, obj16), ];
+    const obj18 = { variant: "text-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(secretRequestStatusChanged[17]).sfp7Up) };
     const Text2 = tmp4(tmp5[15]).Text;
     intl5 = tmp4(tmp5[16]).intl;
-    items5[1] = closure_6(Text2, obj20);
-    items6 = [closure_7(sharedValue, obj17), ];
-    const obj21 = { variant: "text-sm/normal", color: "text-default", children: tmp4Result.conjureConnectedKeysSummary(fields.map((label) => label.label)) };
+    items9[1] = closure_6(Text2, obj18);
+    items10 = [closure_7(sharedValue, obj15), ];
+    const obj19 = { variant: "text-sm/normal", color: "text-default", children: tmp4Result2.conjureConnectedKeysSummary(fields.map((label) => label.label)) };
     const Text3 = tmp4(tmp5[15]).Text;
     fields = request.fields;
-    tmp4Result = projectId(secretRequestStatusChanged[20]);
-    items6[1] = closure_6(Text3, obj21);
-    tmp30Result = closure_6(View, obj15);
+    tmp4Result2 = projectId(secretRequestStatusChanged[20]);
+    items10[1] = closure_6(Text3, obj19);
+    tmp36Result = closure_6(View, obj13);
   } else {
-    const items7 = [tmp.card, ];
+    const items11 = [tmp.card, ];
     let cardAwaiting = null != awaiting;
-    const tmp10Result8 = request(secretRequestStatusChanged[14]);
-    const tmp30 = closure_7;
+    const tmp11Result8 = request(secretRequestStatusChanged[14]);
+    const tmp36 = closure_7;
     if (cardAwaiting) {
       cardAwaiting = tmp.cardAwaiting;
     }
-    const obj22 = { style: items7, children: null };
-    items7[1] = cardAwaiting;
-    let tmp14 = null;
+    const obj20 = { style: items11, children: null };
+    items11[1] = cardAwaiting;
+    let tmp20 = null;
     if (null != awaiting) {
-      tmp14 = closure_6(tmp4(tmp5[21]).ConjureAwaitingPulseRing, {});
+      tmp20 = closure_6(tmp4(tmp5[21]).ConjureAwaitingPulseRing, {});
     }
-    const items8 = [tmp14, , , , ];
+    const items12 = [tmp20, , , , ];
     let str = "text-muted";
     const Text = tmp4(tmp5[15]).Text;
     if (null != awaiting) {
       str = "text-brand";
     }
-    const obj23 = { variant: "text-xs/semibold", color: str, children: string(HCQvpO) };
+    const obj21 = { variant: "text-xs/semibold", color: str, children: string(HCQvpO) };
     const intl = tmp4(tmp5[16]).intl;
     string = intl.string;
     if (null != awaiting) {
-      HCQvpO = tmp10(tmp5[17]).O0QIqj;
+      HCQvpO = tmp11(tmp5[17]).O0QIqj;
     } else {
-      HCQvpO = tmp10(tmp5[17]).HCQvpO;
+      HCQvpO = tmp11(tmp5[17]).HCQvpO;
     }
-    items8[1] = closure_6(Text, obj23);
+    items12[1] = closure_6(Text, obj21);
     if (null != request.note) {
       let note;
       if ("" !== request.note) {
         note = request.note;
       }
-      const obj24 = { text: note, variant: "text-sm/normal", color: "text-default" };
-      items8[2] = closure_6(tmp17, obj24);
-      const obj25 = { label: intl3.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
+      const obj22 = { text: note, variant: "text-sm/normal", color: "text-default" };
+      items12[2] = closure_6(tmp23, obj22);
+      const obj23 = { label: intl3.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
       const TagGroup = tmp4(tmp5[18]).TagGroup;
       intl3 = tmp4(tmp5[16]).intl;
-      items8[3] = closure_6(TagGroup, obj25);
-      const obj26 = { variant: "primary", size: "sm", onPress: callback, text: intl4.string(request(secretRequestStatusChanged[17]).EK8tKY) };
+      items12[3] = closure_6(TagGroup, obj23);
+      const obj24 = { variant: "primary", size: "sm", onPress: callback, text: intl4.string(request(secretRequestStatusChanged[17]).EK8tKY) };
       const Button = tmp4(tmp5[23]).Button;
       intl4 = tmp4(tmp5[16]).intl;
-      items8[4] = closure_6(Button, obj26);
-      obj22.children = items8;
-      tmp30Result = tmp30(tmp10Result8, obj22);
+      items12[4] = closure_6(Button, obj24);
+      obj20.children = items12;
+      tmp36Result = tmp36(tmp11Result8, obj20);
     }
     const intl2 = tmp4(tmp5[16]).intl;
-    note = intl2.string(tmp10(tmp5[17]).MPGSHL);
+    note = intl2.string(tmp11(tmp5[17]).MPGSHL);
   }
-  return tmp30Result;
+  return tmp36Result;
 };

@@ -1,15 +1,15 @@
-// Module ID: 11219
-// Function ID: 11220
+// Module ID: 11356
+// Function ID: 11357
 // Name: GatedContent
-// Dependencies: [19, 21, 5014, 575, 6729, 5634, 6027, 5624, 6767, 2]
+// Dependencies: [19, 21, 5141, 575, 6849, 5754, 6147, 5747, 6887, 2]
 // Exports: default
 
-// Module 11219 (GatedContent)
+// Module 11356 (GatedContent)
 import nativeDefault from "native" /* 575 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -73,7 +73,7 @@ export default function GatedContent(onAgree) {
   const obj3 = { align: "center", children: items3 };
   const Stack2 = onAgree(onDisagree[6]).Stack;
   items3 = [, , ];
-  const obj4 = { variant: "heading-xxl/bold", maxFontSizeMultiplier: 2, style: tmp.title, children: title };
+  const obj4 = { variant: "heading-xxl/semibold", maxFontSizeMultiplier: 2, style: tmp.title, children: title };
   items3[0] = channelId(onAgree(onDisagree[7]).Heading, obj4);
   items3[1] = subtitle;
   const obj5 = { color: "text-muted", variant: "text-md/medium", style: tmp.description, maxFontSizeMultiplier: 2, children: description };

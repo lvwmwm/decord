@@ -1,23 +1,23 @@
-// Module ID: 17808
-// Function ID: 17809
+// Module ID: 17951
+// Function ID: 17952
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [19, 17, 21, 5014, 1187, 6957, 6027, 6977, 5624, 14883, 1412, 15874, 14194, 13424, 12802, 9509, 2]
+// Dependencies: [19, 17, 21, 5141, 1187, 7083, 6147, 7103, 5747, 15014, 1414, 16017, 14325, 13560, 12938, 9637, 2]
 // Exports: default
 
-// Module 17808 (UserSettingsDesignSystemPile)
+// Module 17951 (UserSettingsDesignSystemPile)
 import native from "native" /* 1187 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Stack_Stack from "Stack/Stack" /* 6027 */;
-import GuildIcon from "GuildIcon" /* 6957 */;
-import Card_Card from "Card/Card" /* 6977 */;
-import ClipView from "ClipView" /* 9509 */;
-import ListUtils from "ListUtils" /* 12802 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15874 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Stack_Stack from "Stack/Stack" /* 6147 */;
+import GuildIcon from "GuildIcon" /* 7083 */;
+import Card_Card from "Card/Card" /* 7103 */;
+import ClipView from "ClipView" /* 9637 */;
+import ListUtils from "ListUtils" /* 12938 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 16017 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -35,7 +35,7 @@ function SampleCard(arg0) {
   const tmp3 = hasOwnProperty(Stack_Stack.Stack, { spacing: 16, children });
   const obj = { style: tmp.card, children: items };
   const Card = Card_Card.Card;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/bold", children: title }), ];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "text-lg/semibold", children: title }), ];
   let tmp2Result = tmp3;
   const tmp2 = hasOwnProperty;
   const tmp4 = metroRequire;

@@ -1,16 +1,17 @@
-// Module ID: 12727
-// Function ID: 12728
+// Module ID: 12863
+// Function ID: 12864
 // Name: conjureOverlayPreview
-// Dependencies: [6845, 2]
-// Exports: overlayWidgetPreviewScale, overlayWidgetPreviewSize, previewOverlayWidgetSize, previewSupportsOverlay
+// Dependencies: [6965, 2]
+// Exports: overlayWidgetPlacement, overlayWidgetPreviewScale, overlayWidgetPreviewSize, previewOverlayWidgetSize, previewSupportsOverlay
 
-// Module 12727 (conjureOverlayPreview)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+// Module 12863 (conjureOverlayPreview)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = { width: 320, height: 240 };
+let c3 = 1920;
 size = size_mod;
-const result = size.fileFinishedImporting("modules/conjure/preview/conjureOverlayPreview.tsx");
+let result = size.fileFinishedImporting("modules/conjure/preview/conjureOverlayPreview.tsx");
 
 export const CONJURE_OVERLAY_WIDGET_FALLBACK_SIZE = size;
 export function previewSupportsOverlay(preview_supported_surfaces) {
@@ -66,6 +67,53 @@ export function overlayWidgetPreviewScale(arg0, width) {
     }
   }
   return num;
+}
+export const CONJURE_OVERLAY_SCREEN_WIDTH = 1920;
+export const CONJURE_OVERLAY_SCREEN_INSET = 24;
+export function overlayWidgetPlacement(arg0, width, width2) {
+  let height;
+  let num2;
+  let result2;
+  ({ width, height } = arg0);
+  if (null != width) {
+    if (null != height) {
+      if (width > 0) {
+        if (height > 0) {
+          if (null != width) {
+            if (width.width > 0) {
+              if (width.height > 0) {
+                const result = width.width / width.height;
+                const _Math3 = Math;
+                const bound = Math.min(width, height * result);
+                const result1 = bound / c3;
+                const obj2 = { top: (height - bound / result) / 2 + result2, end: (width - bound) / 2 + result2, scale: num2 * result1 };
+                result2 = 24 * result1;
+                const diff = c3 / result - 48;
+                num2 = 1;
+                if (diff > 0) {
+                  const _Math = Math;
+                  num2 = Math.min(1, 1872 / width2.width, diff / width2.height);
+                }
+                return obj2;
+              }
+            }
+          }
+          const diff1 = width - 48;
+          const diff2 = height - 48;
+          let num5 = 1;
+          if (diff1 > 0) {
+            num5 = 1;
+            if (diff2 > 0) {
+              const _Math2 = Math;
+              num5 = Math.min(1, diff1 / width2.width, diff2 / width2.height);
+            }
+          }
+          return { top: 24, end: 24, scale: num5 };
+        }
+      }
+    }
+  }
+  return { top: 24, end: 24, scale: 1 };
 }
 export function previewOverlayWidgetSize(preview_overlay_widget) {
   let prop;

@@ -1,11 +1,11 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9694
+// Function ID: 9695
 // Name: OrderSigningDeferral
-// Dependencies: [5, 9563, 2]
+// Dependencies: [5, 9695, 2]
 // Exports: getPaymentRedirectContext, performSigningDeferralAction
 
-// Module 9562 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9563 */;
+// Module 9694 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9695 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = function _performSigningDeferralAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

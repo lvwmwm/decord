@@ -1,15 +1,15 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17717
+// Function ID: 17718
 // Name: ShowDevWidgetSetting
-// Dependencies: [7863, 17575, 504, 11540, 17576, 16746, 2]
+// Dependencies: [7987, 17718, 504, 11677, 17719, 16889, 2]
 
-// Module 17574 (ShowDevWidgetSetting)
+// Module 17717 (ShowDevWidgetSetting)
 import get_initialized from "get initialized" /* 504 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16746 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 17575 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 17576 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7863 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16889 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 17718 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 17719 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7987 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

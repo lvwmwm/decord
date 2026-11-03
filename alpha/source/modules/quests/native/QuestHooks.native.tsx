@@ -1,26 +1,26 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17211
+// Function ID: 17212
 // Name: QuestHooks
-// Dependencies: [5, 19, 5259, 2038, 7845, 7846, 6781, 6546, 1083, 17069, 17095, 6784, 6873, 5198, 504, 6788, 17079, 7112, 7842, 9681, 9673, 9695, 7868, 7326, 11727, 7866, 11791, 6881, 11693, 2]
+// Dependencies: [5, 19, 5382, 2167, 7969, 7970, 6901, 6666, 1083, 17212, 17238, 6904, 6993, 5321, 504, 6908, 17222, 7238, 7966, 9813, 9805, 9827, 7992, 7446, 11864, 7990, 11928, 7001, 11830, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 17068 (QuestHooks)
+// Module 17211 (QuestHooks)
 import Constants from "Constants" /* 1083 */;
-import CaptchaConstants from "CaptchaConstants" /* 6546 */;
-import QuestTypes from "QuestTypes" /* 6784 */;
-import AdCreativeType from "AdCreativeType" /* 6788 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6881 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
-import AssetUtils from "AssetUtils" /* 9695 */;
-import QuestDockHooks from "QuestDockHooks" /* 17069 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 17095 */;
+import CaptchaConstants from "CaptchaConstants" /* 6666 */;
+import QuestTypes from "QuestTypes" /* 6904 */;
+import AdCreativeType from "AdCreativeType" /* 6908 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7001 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
+import AssetUtils from "AssetUtils" /* 9827 */;
+import QuestDockHooks from "QuestDockHooks" /* 17212 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 17238 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5259 */;
-import ApplicationStore from "ApplicationStore" /* 2038 */;
-import BountyStore from "BountyStore" /* 7845 */;
-import QuestStore from "QuestStore" /* 7846 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
+import ActionSheetStore from "ActionSheetStore" /* 5382 */;
+import ApplicationStore from "ApplicationStore" /* 2167 */;
+import BountyStore from "BountyStore" /* 7969 */;
+import QuestStore from "QuestStore" /* 7970 */;
+import QuestConstants from "QuestConstants" /* 6901 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   let tmp = _require;
   const obj = require("AdCreativeUtils");
   const questDockQuest = obj.getQuestDockQuest(mobileQuestDock);
-  const tmp4 = questDockAdCreativeId(7112)();
+  const tmp4 = questDockAdCreativeId(7238)();
   const items = [QuestStore];
   let userStatus1;
   const obj2 = require("get initialized");
@@ -46,8 +46,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   let isDismissedResult = null != userStatus1;
   if (isDismissedResult) {
-    const tmpResult = tmp(7842);
-    isDismissedResult = tmpResult.isDismissed(questDockQuest.userStatus, tmp(6784).QuestContent.QUEST_BAR_MOBILE);
+    const tmpResult = tmp(7966);
+    isDismissedResult = tmpResult.isDismissed(questDockQuest.userStatus, tmp(6904).QuestContent.QUEST_BAR_MOBILE);
   }
   let claimedAt;
   if (questDockQuest != null) {
@@ -56,11 +56,11 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       claimedAt = userStatus.claimedAt;
     }
   }
-  const tmpResult6 = tmp(9681);
+  const tmpResult6 = tmp(9813);
   const isQuestExpired = tmpResult6.useIsQuestExpired(questDockQuest);
-  const tmpResult7 = tmp(9673);
+  const tmpResult7 = tmp(9805);
   let isEligibleForQuests = tmpResult7.getIsEligibleForQuests();
-  const tmpResult8 = tmp(17079);
+  const tmpResult8 = tmp(17222);
   questDockAdCreativeId = tmpResult8.getQuestDockAdCreativeId(mobileQuestDock);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];
@@ -81,9 +81,9 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
     }
     return isBountyCompletedResult;
   }, items4);
-  if (tmp(6788).AdCreativeType.NO_FILL === type) {
+  if (tmp(6908).AdCreativeType.NO_FILL === type) {
     return false;
-  } else if (tmp(6788).AdCreativeType.BOUNTY === type) {
+  } else if (tmp(6908).AdCreativeType.BOUNTY === type) {
     if (isEligibleForQuests) {
       isEligibleForQuests = !stateFromStores1;
     }
@@ -94,9 +94,9 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       isEligibleForQuests = !tmp4;
     }
     return isEligibleForQuests;
-  } else if (tmp(6788).AdCreativeType.PLAYABLE === type) {
+  } else if (tmp(6908).AdCreativeType.PLAYABLE === type) {
     return isEligibleForQuests && !stateFromStores1 && !tmp4;
-  } else if (tmp(6788).AdCreativeType.QUEST === type) {
+  } else if (tmp(6908).AdCreativeType.QUEST === type) {
     if (stateFromStores) {
       let tmp16;
       if (null == claimedAt) {
@@ -197,7 +197,7 @@ export function useQuestDockHeroAsset(quest) {
       videoAsset = tmpResult.resolveAsset(tmp3.id, tmp3.config.assets.questBarHeroVideo);
     }
     if (questAsset.isAnimated) {
-      staticUrl = str.replace(tmp(9695).EXTENSION_RE, ".png");
+      staticUrl = str.replace(tmp(9827).EXTENSION_RE, ".png");
     } else {
       staticUrl = str;
     }
@@ -286,7 +286,7 @@ export function useMobileActivityQuest(quest) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -319,7 +319,7 @@ export function useMobileActivityQuest(quest) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp11) {
           c0 = 3;
           throw tmp11;

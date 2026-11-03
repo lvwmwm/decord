@@ -1,15 +1,15 @@
-// Module ID: 18352
-// Function ID: 18353
+// Module ID: 18497
+// Function ID: 18498
 // Name: ChannelAffinitiesV2Store
-// Dependencies: [18353, 504, 572, 2]
+// Dependencies: [18498, 504, 572, 2]
 
-// Module 18352 (ChannelAffinitiesV2Store)
+// Module 18497 (ChannelAffinitiesV2Store)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelAffinitiesV2Constants from "ChannelAffinitiesV2Constants" /* 18353 */;
+import ChannelAffinitiesV2Constants from "ChannelAffinitiesV2Constants" /* 18498 */;
 import size from "module_2" /* 2 */;
 
-const f114298 = (channelId) => {
+const f114037 = (channelId) => {
   const items = [channelId.channelId, channelId];
   return items;
 };
@@ -29,7 +29,7 @@ class ChannelAffinitiesV2Store extends PersistedStore {
       channelAffinities = obj.channelAffinities;
       const self = this;
       const self2 = this;
-      new Map(channelAffinities.map(f114298));
+      new Map(channelAffinities.map(f114037));
     }
   }
   shouldFetch() {
@@ -87,7 +87,7 @@ const obj2 = {
     c2 = false;
     obj.channelAffinities = affineChannels;
     const channelAffinities = obj.channelAffinities;
-    map = new Map(channelAffinities.map(f114298));
+    map = new Map(channelAffinities.map(f114037));
   },
   LOAD_CHANNEL_AFFINITIES_V2_FAILURE: function handleLoadChannelAffinitiesFailure() {
     c2 = false;

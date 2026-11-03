@@ -1,16 +1,16 @@
-// Module ID: 17701
-// Function ID: 17702
+// Module ID: 17844
+// Function ID: 17845
 // Name: PremiumPerksList
-// Dependencies: [19, 17, 21, 5014, 575, 5624, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5747, 2]
 // Exports: default
 
-// Module 17701 (PremiumPerksList)
+// Module 17844 (PremiumPerksList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
+import Text_Text from "Text/Text" /* 5747 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -39,7 +39,7 @@ export default function PremiumPerksList(perks) {
       items[0] = _false(View, obj2);
       const obj3 = { style: closure_0.perkInfoTextContainer, children: items1 };
       items1 = [, ];
-      const obj4 = { variant: "text-md/bold", color: "text-strong", children: children.label };
+      const obj4 = { variant: "text-md/semibold", color: "text-strong", children: children.label };
       items1[0] = _false(Text_Text.Text, obj4);
       const obj5 = { variant: "text-md/medium", color: "text-default", children: children.description };
       items1[1] = _false(Text_Text.Text, obj5);

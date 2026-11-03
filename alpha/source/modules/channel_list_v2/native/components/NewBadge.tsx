@@ -1,24 +1,24 @@
-// Module ID: 13844
-// Function ID: 13845
+// Module ID: 13975
+// Function ID: 13976
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5014, 1375, 575, 5021, 9822, 5253, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 1377, 575, 5148, 9953, 5376, 5747, 1113, 2]
 // Exports: default
 
-// Module 13844 (NewBadge)
+// Module 13975 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import useThemeDefault from "useTheme" /* 5253 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9822 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useThemeDefault from "useTheme" /* 5376 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9953 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(5021);
+const shared = tmp(5148);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -50,7 +50,7 @@ export default function NewBadge() {
   const tmp2 = useIsUsingClientThemeDefault();
   const tmp3 = useThemeDefault();
   const tmp4 = closure_5(tmp2, tmp3);
-  ({ variant: "text-xxs/bold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
+  ({ variant: "text-xxs/semibold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
   const Text = Text_Text.Text;
   const obj3 = shared;
   if (obj3.isThemeLight(tmp3)) {

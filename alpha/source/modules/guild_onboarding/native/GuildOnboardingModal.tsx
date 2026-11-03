@@ -1,21 +1,21 @@
-// Module ID: 7290
-// Function ID: 7291
+// Module ID: 7410
+// Function ID: 7411
 // Name: GuildOnboardingModal
-// Dependencies: [19, 6948, 4863, 4885, 4917, 7268, 7265, 1072, 21, 1099, 7291, 6998, 7323, 7274, 7352, 7293, 504, 7273, 6922, 7169, 1113, 2]
+// Dependencies: [19, 7068, 4990, 5012, 5044, 7388, 7385, 1072, 21, 1099, 7411, 7124, 7443, 7394, 7472, 7413, 504, 7393, 7042, 7290, 1113, 2]
 // Exports: default
 
-// Module 7290 (GuildOnboardingModal)
+// Module 7410 (GuildOnboardingModal)
 import Fragment from "Fragment" /* 21 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6922 */;
-import NavigatorHeader from "NavigatorHeader" /* 6998 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7265 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7273 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7042 */;
+import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7385 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7393 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6948 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7268 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7068 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

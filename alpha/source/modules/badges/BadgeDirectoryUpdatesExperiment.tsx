@@ -1,11 +1,11 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11592
+// Function ID: 11593
 // Name: BadgeDirectoryUpdatesExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: useIsBadgeDirectoryUpdatesEnabled
 
-// Module 11455 (BadgeDirectoryUpdatesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 11592 (BadgeDirectoryUpdatesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-badge-directory-updates", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

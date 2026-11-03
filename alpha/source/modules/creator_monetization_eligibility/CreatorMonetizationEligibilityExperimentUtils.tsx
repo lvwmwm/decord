@@ -1,14 +1,14 @@
-// Module ID: 7435
-// Function ID: 7436
+// Module ID: 7559
+// Function ID: 7560
 // Name: CreatorMonetizationEligibilityExperimentUtils
-// Dependencies: [1383, 2048, 1072, 504, 2]
+// Dependencies: [1385, 2177, 1072, 504, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 7435 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 7559 (CreatorMonetizationEligibilityExperimentUtils)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import UserStore from "UserStore" /* 1383 */;
-import BillingInfoStore from "BillingInfoStore" /* 2048 */;
+import UserStore from "UserStore" /* 1385 */;
+import BillingInfoStore from "BillingInfoStore" /* 2177 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

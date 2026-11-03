@@ -1,11 +1,11 @@
-// Module ID: 7255
-// Function ID: 7256
+// Module ID: 7375
+// Function ID: 7376
 // Name: useCharacterLimitAnnouncement
-// Dependencies: [19, 5023, 2]
+// Dependencies: [19, 5150, 2]
 // Exports: useCharacterLimitAnnouncement
 
-// Module 7255 (useCharacterLimitAnnouncement)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+// Module 7375 (useCharacterLimitAnnouncement)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

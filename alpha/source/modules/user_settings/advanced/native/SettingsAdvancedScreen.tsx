@@ -1,15 +1,15 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17669
+// Function ID: 17670
 // Name: SettingsAdvancedScreen
-// Dependencies: [19, 8432, 1072, 21, 1113, 11540, 16588, 2]
+// Dependencies: [19, 8556, 1072, 21, 1113, 11677, 16731, 2]
 
-// Module 17526 (SettingsAdvancedScreen)
+// Module 17669 (SettingsAdvancedScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
-import SettingLayoutDefault from "SettingLayout" /* 16588 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
+import SettingLayoutDefault from "SettingLayout" /* 16731 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 18623
-// Function ID: 18624
+// Module ID: 18781
+// Function ID: 18782
 // Name: Elements
-// Dependencies: [32, 19, 17, 2051, 21, 5014, 575, 5624, 1113, 6980, 1187, 18624, 9910, 17216, 563, 9913, 7413, 2]
+// Dependencies: [32, 19, 17, 2180, 21, 5141, 575, 5747, 1113, 7106, 1187, 18782, 10041, 17359, 563, 10044, 7537, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18623 (Elements)
+// Module 18781 (Elements)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import Pressables from "Pressables" /* 6980 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9910 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9913 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17216 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18624 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import Pressables from "Pressables" /* 7106 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 10041 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10044 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17359 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18782 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2051 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2180 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,7 +69,7 @@ export function TruncatedText(lineClamp) {
   let tmp8Result = first;
   if (tmp8Result) {
     let stringResult;
-    let obj = { style: tmp2.toggleTruncateButton, children: React4(Text, obj2) };
+    const obj = { style: tmp2.toggleTruncateButton, children: React4(Text, obj2) };
     Text = Text_Text.Text;
     const intl = intl2.intl;
     const string = intl.string;
@@ -149,7 +149,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7413);
+    const tmp3Result = tmp3(7537);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

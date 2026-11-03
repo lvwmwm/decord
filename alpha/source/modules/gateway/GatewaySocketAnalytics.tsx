@@ -1,15 +1,15 @@
-// Module ID: 15537
-// Function ID: 15538
+// Module ID: 15678
+// Function ID: 15679
 // Name: GatewaySocketAnalytics
-// Dependencies: [109, 1383, 1072, 10, 9, 1252, 2]
+// Dependencies: [109, 1385, 1072, 10, 9, 1252, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 15537 (GatewaySocketAnalytics)
+// Module 15678 (GatewaySocketAnalytics)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

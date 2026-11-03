@@ -1,21 +1,19 @@
-// Module ID: 14666
-// Function ID: 14667
+// Module ID: 14797
+// Function ID: 14798
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 5014, 1491, 8741, 5593, 7862, 5705, 14663, 14667, 5272, 5595, 5275, 2]
+// Dependencies: [32, 19, 21, 5141, 1493, 8865, 5716, 7986, 5825, 14794, 14798, 5395, 5718, 5398, 2]
 // Exports: default
 
-// Module 14666 (AppStoreOverlayBottomSheet)
-import openURLDefault from "openURL" /* 5705 */;
-import AnalyticsActions from "AnalyticsActions" /* 7862 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14663 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14667 */;
+// Module 14797 (AppStoreOverlayBottomSheet)
+import openURLDefault from "openURL" /* 5825 */;
+import AnalyticsActions from "AnalyticsActions" /* 7986 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14794 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14798 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -89,7 +87,7 @@ export default function AppStoreOverlayBottomSheet(metadata) {
     return obj;
   }, items4);
   const obj3 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, startHeight: height * metadata(onDismiss[10]).APP_STORE_OVERLAY_HEIGHT_RATIO, onDismiss: callback, footer: closure_5(metadata(onDismiss[10]).AppStoreOverlayFooter, { onInstallPress: callback1, onLayout: callback3 }), children: items5 };
-  BottomSheet = metadata(onDismiss[11]).BottomSheet;
+  const BottomSheet = metadata(onDismiss[11]).BottomSheet;
   items5 = [, ];
   const obj4 = { variant: "overlay", style: tmp.headerBar, onPress: bottomSheetClose };
   items5[0] = closure_5(metadata(onDismiss[12]).ActionSheetHeaderBar, obj4);

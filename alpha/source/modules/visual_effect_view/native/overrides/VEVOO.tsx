@@ -1,23 +1,28 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 18120
+// Function ID: 18121
 // Name: VEVOO
-// Dependencies: [19, 17, 5627, 573, 21, 5014, 575, 5095, 5637, 5638, 8177, 17978, 17980, 17981, 10767, 7054, 504, 17702, 2]
+// Dependencies: [19, 17, 5750, 573, 21, 5141, 575, 1652, 5757, 5758, 8301, 18121, 18123, 18124, 10897, 7180, 504, 17845, 2]
 
-// Module 17977 (VEVOO)
+// Module 18120 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
-import spring from "spring" /* 5637 */;
-import springPresets from "springPresets" /* 5638 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import springPresets from "springPresets" /* 5758 */;
+import XSmallIcon from "XSmallIcon" /* 7180 */;
+import ActionButtonDefault from "ActionButton" /* 10897 */;
+import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 18121 */;
+import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 18123 */;
+import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 18124 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5627 */;
+import DevSettingsStore from "DevSettingsStore" /* 5750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
 
 let metroImportDefault;
 let metroRequire;
@@ -27,52 +32,62 @@ let rect;
 let size;
 function VisualEffectViewOverrideOverlay_(arg0) {
   let FormSection;
-  let closure_0;
-  let closure_1;
-  let items;
-  let items1;
   let items2;
-  let obj4;
-  const x = arg0.x;
-  _require = x;
-  const y = arg0.y;
-  importDefault = y;
-  let PX_8;
-  const onClose = arg0.onClose;
+  let items3;
+  let items4;
+  let obj3;
+  let onClose;
+  let tmp10;
+  let tmp11;
+  let tmp12;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let x;
+  let y;
+  ({ onClose, x, y } = arg0);
   const tmp = closure_8();
-  PX_8 = require("native").space.PX_8;
-  const fn = function _() {
-    let diff;
-    let sum;
-    let withSpring;
-    let withSpring2;
-    const rect = { top: withSpring(sum, springPresets.springUnclamped), left: withSpring2(diff, springPresets.springUnclamped) };
-    withSpring = spring.withSpring;
-    spring;
-    sum = closure_1.get() - PX_8 + DEV_WIDGET_SIZE;
-    withSpring2 = spring.withSpring;
-    spring;
-    diff = closure_0.get() - PX_8;
-    return rect;
-  };
-  const obj = require("ReanimatedRexport");
-  const point = { withSpring: require("spring").withSpring, y, px8: PX_8, DEV_WIDGET_SIZE, springUnclamped: require("springPresets").springUnclamped, x };
-  fn.__closure = point;
-  fn.__workletHash = 8104480272354;
-  fn.__initData = __initData;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj2 = { style: items, children: items2 };
-  items = [tmp.wrapper, animatedStyle];
-  const obj3 = { style: tmp.scrollView, children: closure_7(FormSection, obj4) };
-  const View = require("ReanimatedRexport").View;
-  obj4 = { title: "Blur View Global Overrides", sectionBodyStyle: tmp.scrollViewContent, children: items1 };
-  FormSection = require("module_8177").FormSection;
-  items1 = [closure_6(require("VEVOOPropBlurAmount"), {}), closure_6(require("VEVOOPropTintColor"), {}), closure_6(require("VEVOOPropBlurEffectName"), {})];
-  items2 = [closure_6(ScrollView, obj3), ];
-  const obj5 = { styles: tmp.close, type: "neutral", IconComponent: require("XSmallIcon").XSmallIcon, onPress: onClose, accessibilityLabel: "Close" };
-  const tmp3 = require("ActionButton");
-  items2[1] = closure_6(tmp3, obj5);
-  return closure_7(View, obj2);
+  const PX_8 = nativeDefault.space.PX_8;
+  const items = [closure_9, , , , , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = spring_spring.withSpring;
+  items[2] = y;
+  items[3] = PX_8;
+  items[4] = DEV_WIDGET_SIZE;
+  items[5] = springPresets.springUnclamped;
+  items[6] = x;
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  let c4;
+  let c5;
+  [tmp6, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12] = items;
+  class VEVOOTsx1 {
+    constructor() {
+      rect = { top: closure_0(closure_1.get() - closure_2 + closure_3, closure_4), left: closure_0(closure_5.get() - closure_2, closure_4) };
+      return rect;
+    }
+  }
+  const items1 = [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12];
+  VEVOOTsx1.__closure = items1;
+  VEVOOTsx1.__workletHash = 4442371406619;
+  VEVOOTsx1.__initData = tmp6;
+  const animatedStyle = useAnimatedStyle(VEVOOTsx1);
+  const obj = { style: items2, children: items4 };
+  items2 = [tmp.wrapper, animatedStyle];
+  const obj2 = { style: tmp.scrollView, children: metroImportDefault(FormSection, obj3) };
+  const View = tmp2(1652).View;
+  obj3 = { title: "Blur View Global Overrides", sectionBodyStyle: tmp.scrollViewContent, children: items3 };
+  FormSection = tmp4(8301).FormSection;
+  items3 = [metroRequire(VEVOOPropBlurAmountDefault, {}), metroRequire(VEVOOPropTintColorDefault, {}), metroRequire(VEVOOPropBlurEffectNameDefault, {})];
+  items4 = [metroRequire(ScrollView, obj2), ];
+  const obj4 = { styles: tmp.close, type: "neutral", IconComponent: XSmallIcon.XSmallIcon, onPress: onClose, accessibilityLabel: "Close" };
+  const tmp2Result = ActionButtonDefault;
+  items4[1] = metroRequire(tmp2Result, obj4);
+  return metroImportDefault(View, obj);
 }
 const ScrollView = react_native.ScrollView;
 const DEV_WIDGET_SIZE = Constants.DEV_WIDGET_SIZE;
@@ -89,7 +104,7 @@ obj3 = { paddingBottom: nativeDefault.space.PX_24 };
 rect = { position: "absolute", right: nativeDefault.space.PX_8, top: nativeDefault.space.PX_8 };
 const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW_HOVER);
 let closure_8 = createStyles(obj);
-const __initData = { code: "function VEVOOTsx1(){const{withSpring,y,px8,DEV_WIDGET_SIZE,springUnclamped,x}=this.__closure;return{top:withSpring(y.get()-px8+DEV_WIDGET_SIZE,springUnclamped),left:withSpring(x.get()-px8,springUnclamped)};}" };
+let closure_9 = { code: "(function VEVOOTsx1(){let[withSpring,y,px8,DEV_WIDGET_SIZE,springUnclamped,x]=this.__closure;return{top:withSpring(y.get()-px8+DEV_WIDGET_SIZE,springUnclamped),left:withSpring(x.get()-px8,springUnclamped)};})" };
 const memoResult = react.memo(function VisualEffectViewOverrideOverlay(arg0) {
   let obj = get_initialized;
   const items = [DevSettingsStore];

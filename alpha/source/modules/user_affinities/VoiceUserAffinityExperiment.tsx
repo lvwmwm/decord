@@ -1,11 +1,11 @@
-// Module ID: 8540
-// Function ID: 8541
+// Module ID: 8664
+// Function ID: 8665
 // Name: VoiceUserAffinityExperiment
-// Dependencies: [1447, 2]
+// Dependencies: [1449, 2]
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 8540 (VoiceUserAffinityExperiment)
-import ApexExperiment from "ApexExperiment" /* 1447 */;
+// Module 8664 (VoiceUserAffinityExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "a" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } };

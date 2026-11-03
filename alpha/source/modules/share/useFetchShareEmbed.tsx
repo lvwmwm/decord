@@ -1,10 +1,10 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 15870
+// Function ID: 15871
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1377, 10975, 1259, 2]
+// Dependencies: [5, 32, 19, 1378, 11108, 1259, 2]
 // Exports: default
 
-// Module 15727 (useFetchShareEmbed)
+// Module 15870 (useFetchShareEmbed)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function useFetchShareEmbed(arg0) {
       let current;
       obj = _asyncToGenerator(async (arg0, value) => {
         let closure_2;
-        const f140221 = () => {
+        const f141587 = () => {
           c3(true);
           if (ref.current === batchUpdates) {
             closure_2(false);
@@ -57,7 +57,7 @@ export default function useFetchShareEmbed(arg0) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -96,7 +96,7 @@ export default function useFetchShareEmbed(arg0) {
               } else if (1 === c4) {
                 c3 = 0;
                 const obj7 = current(closure_2_2[5]);
-                batchUpdates = obj7.batchUpdates(f140221);
+                batchUpdates = obj7.batchUpdates(f141587);
                 throw tmp55;
               } else {
                 if (2 === c4) {
@@ -110,7 +110,7 @@ export default function useFetchShareEmbed(arg0) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   const obj5 = current(closure_2_2[5]);
-                  obj5.batchUpdates(f140221);
+                  obj5.batchUpdates(f141587);
                   c5 = 3;
                   const obj10 = { value, done: true };
                   return obj10;
@@ -120,14 +120,14 @@ export default function useFetchShareEmbed(arg0) {
                   if (batchUpdates !== c0) {
                     c3 = 0;
                     const obj4 = current(closure_2_2[5]);
-                    obj4.batchUpdates(f140221);
+                    obj4.batchUpdates(f141587);
                     c5 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } else if (0 === tmp.embeds.length) {
                     tmp(undefined);
                     c3 = 0;
                     const obj2 = current(closure_2_2[5]);
-                    batchUpdates = obj2.batchUpdates(f140221);
+                    batchUpdates = obj2.batchUpdates(f141587);
                     c5 = 3;
                     const obj11 = { value: undefined, done: true };
                     return obj11;
@@ -141,10 +141,10 @@ export default function useFetchShareEmbed(arg0) {
                 c3 = 0;
                 batchUpdates = current(closure_2_2[5]).batchUpdates;
                 const tmp38 = current(closure_2_2[5]);
-                batchUpdates(f140221);
+                batchUpdates(f141587);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } catch (tmp55) {
               if (0 === c3) {
                 c5 = 3;

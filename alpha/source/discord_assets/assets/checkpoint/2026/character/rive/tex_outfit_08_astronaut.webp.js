@@ -1,8 +1,8 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13701
+// Function ID: 13702
 // Dependencies: [2]
 
-// Module 13561
+// Module 13701
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_08_astronaut.webp.js");

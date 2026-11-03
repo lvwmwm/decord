@@ -1,24 +1,24 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13583
+// Function ID: 13584
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5014, 575, 8143, 5717, 13444, 5624, 9452, 1892, 1409, 11972, 8643, 9758, 9727, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8267, 5837, 13582, 5747, 9580, 2021, 1411, 12109, 8767, 9890, 9859, 2]
 // Exports: default
 
-// Module 13445 (CheckpointShareCardStats)
+// Module 13583 (CheckpointShareCardStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
-import react_nativeDefault from "react-native" /* 1892 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import UnknownGameIcon from "UnknownGameIcon" /* 8143 */;
-import ChatIcon from "ChatIcon" /* 8643 */;
-import ReactionIcon from "ReactionIcon" /* 9452 */;
-import GameControllerIcon from "GameControllerIcon" /* 9727 */;
-import ServerIcon from "ServerIcon" /* 9758 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11972 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
+import react_nativeDefault from "react-native" /* 2021 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import UnknownGameIcon from "UnknownGameIcon" /* 8267 */;
+import ChatIcon from "ChatIcon" /* 8767 */;
+import ReactionIcon from "ReactionIcon" /* 9580 */;
+import GameControllerIcon from "GameControllerIcon" /* 9859 */;
+import ServerIcon from "ServerIcon" /* 9890 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5624);
+const Text_Text = tmp2(5747);
 function StatIcon(size) {
   size = size.size;
   const obj = { size: "custom", color: nativeDefault.colors.BLACK, style: { width: size, height: size } };

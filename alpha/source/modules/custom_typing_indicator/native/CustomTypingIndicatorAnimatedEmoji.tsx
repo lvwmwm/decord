@@ -1,19 +1,19 @@
-// Module ID: 13747
-// Function ID: 13748
+// Module ID: 13878
+// Function ID: 13879
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1993, 1072, 21, 5014, 5028, 13748, 5095, 504, 1391, 5254, 7300, 1409, 2]
+// Dependencies: [32, 19, 2122, 1072, 21, 5141, 5155, 13879, 1652, 504, 1393, 5377, 7420, 1411, 2]
 // Exports: default
 
-// Module 13747 (CustomTypingIndicatorAnimatedEmoji)
+// Module 13878 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import user from "user" /* 1391 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
+import user from "user" /* 1393 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1993 */;
-import createStyles from "createStyles" /* 5014 */;
+import AppStateStore from "AppStateStore" /* 2122 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3;
@@ -22,18 +22,22 @@ const AppStates = Constants.AppStates;
 const jsx = Fragment.jsx;
 let c8 = 320;
 let closure_9 = createStyles.createStyles((fontSize) => ({ textEmoji: { fontSize }, imageEmoji: { width: fontSize, height: fontSize } }));
-let __initData = { code: "function CustomTypingIndicatorAnimatedEmojiTsx1(){const{angle,scale,ringRadius,translateY}=this.__closure;const currentAngle=angle.get();return{transform:[{scale:scale.get()},{translateX:-ringRadius*Math.sin(currentAngle)},{translateY:translateY.get()+ringRadius*(Math.cos(currentAngle)-1)}]};}" };
+let closure_10 = { code: "(function CustomTypingIndicatorAnimatedEmojiTsx1(){let[angle,scale,ringRadius,translateY]=this.__closure;const currentAngle=angle.get();return{transform:[{scale:scale.get()},{translateX:-ringRadius*Math.sin(currentAngle)},{translateY:translateY.get()+ringRadius*(Math.cos(currentAngle)-1)}]};})" };
 let result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorAnimatedEmoji.tsx");
 
 export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   let animated;
-  let c10;
   let duration;
   let emoji;
   let emojiURL;
   let index;
   let obj3;
+  let tmp14;
+  let tmp15;
+  let tmp16;
   let tmp17;
+  let tmp18;
+  let tmp7Result;
   ({ emoji, index } = emojiCount);
   emojiCount = emojiCount.emojiCount;
   let num = emojiCount.size;
@@ -47,10 +51,10 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   let sharedValue;
   let sharedValue1;
   let sharedValue2;
-  __initData = undefined;
   let stateFromStores;
   let tmp = sharedValue2(num);
   let obj = enabled;
+  let tmp2 = index;
   let tmp3 = num;
   enabled = enabled.useContext(index(num[6]).AccessibilityPreferencesContext).reducedMotion.enabled;
   let name = emoji.id;
@@ -59,23 +63,21 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   }
   const tmp4 = animation(obj.useState(null), 2);
   closure_6 = tmp4[1];
-  let tmp5 = tmp4[0] === name;
   let items = [name];
+  const first = tmp4[0];
+  let tmp7 = emojiCount;
   const callback = obj.useCallback(() => {
     closure_6(name);
   }, items);
-  let tmp7 = emojiCount;
   const tmp8 = emojiCount(tmp3[7])();
-  const tmp2Result = index(tmp3[8]);
+  const tmp2Result = tmp2(tmp3[8]);
   sharedValue = tmp2Result.useSharedValue(1);
-  const tmp2Result5 = index(tmp3[8]);
+  const tmp2Result5 = tmp2(tmp3[8]);
   sharedValue1 = tmp2Result5.useSharedValue(0);
-  const tmp2Result6 = index(tmp3[8]);
+  const tmp2Result6 = tmp2(tmp3[8]);
   sharedValue2 = tmp2Result6.useSharedValue(0);
-  let result = 0.0625 * num;
-  __initData = result;
   const items1 = [name];
-  const tmp2Result7 = index(tmp3[9]);
+  const tmp2Result7 = tmp2(tmp3[9]);
   stateFromStores = tmp2Result7.useStateFromStores(items1, () => name.getState() === closure_6.ACTIVE);
   const items2 = [animation, index, emojiCount, enabled, stateFromStores, sharedValue1, sharedValue, sharedValue2, num];
   const effect = obj.useEffect(() => {
@@ -94,50 +96,50 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
           const result4 = duration * (emojiCount - 1);
           if (user.TypingIndicatorAnimation.PULSE === animation) {
             set2 = tmp.set;
-            const withDelay2 = ReanimatedRexport.withDelay;
-            ReanimatedRexport;
-            const withRepeat2 = ReanimatedRexport.withRepeat;
-            ReanimatedRexport;
-            const withSequence = ReanimatedRexport.withSequence;
-            ReanimatedRexport;
+            const withDelay2 = _mod1652.withDelay;
+            _mod1652;
+            const withRepeat2 = _mod1652.withRepeat;
+            _mod1652;
+            const withSequence = _mod1652.withSequence;
+            _mod1652;
             let obj2 = { duration };
-            const tmp9Result17 = timing;
+            const tmp9Result17 = timing_timing;
             let obj3 = { duration };
             const withTimingResult = tmp9Result17.withTiming(1.16, obj2);
-            const tmp9Result18 = timing;
+            const tmp9Result18 = timing_timing;
             const obj4 = { duration: result4 };
             const withTimingResult1 = tmp9Result18.withTiming(1, obj3);
-            const tmp9Result19 = timing;
+            const tmp9Result19 = timing_timing;
             set2(withDelay2(result3, withRepeat2(withSequence(withTimingResult, withTimingResult1, tmp9Result19.withTiming(1, obj4)), -1)));
           } else if (user.TypingIndicatorAnimation.RING === animation) {
             set = tmp3.set;
-            const withDelay = ReanimatedRexport.withDelay;
-            ReanimatedRexport;
-            const withRepeat = ReanimatedRexport.withRepeat;
-            ReanimatedRexport;
+            const withDelay = _mod1652.withDelay;
+            _mod1652;
+            const withRepeat = _mod1652.withRepeat;
+            _mod1652;
             const _Math = Math;
             num = 2;
-            let obj = { duration: 1600, easing: ReanimatedRexport.Easing.linear };
-            const withTiming = timing.withTiming;
+            let obj = { duration: 1600, easing: _mod1652.Easing.linear };
+            const withTiming = timing_timing.withTiming;
             const result5 = 2 * Math.PI;
-            timing;
+            timing_timing;
             const result6 = set(withDelay(result3, withRepeat(withTiming(result5, obj), -1)));
           } else if (user.TypingIndicatorAnimation.WAVE === animation) {
             set3 = tmp5.set;
-            const withDelay3 = ReanimatedRexport.withDelay;
-            ReanimatedRexport;
-            const withRepeat3 = ReanimatedRexport.withRepeat;
-            ReanimatedRexport;
-            const withSequence2 = ReanimatedRexport.withSequence;
-            ReanimatedRexport;
+            const withDelay3 = _mod1652.withDelay;
+            _mod1652;
+            const withRepeat3 = _mod1652.withRepeat;
+            _mod1652;
+            const withSequence2 = _mod1652.withSequence;
+            _mod1652;
             const obj5 = { duration };
-            const tmp9Result26 = timing;
+            const tmp9Result26 = timing_timing;
             const obj6 = { duration };
             const withTimingResult2 = tmp9Result26.withTiming(-0.12 * num, obj5);
-            const tmp9Result27 = timing;
+            const tmp9Result27 = timing_timing;
             const obj7 = { duration: result4 };
             const withTimingResult3 = tmp9Result27.withTiming(0, obj6);
-            const tmp9Result28 = timing;
+            const tmp9Result28 = timing_timing;
             set3(withDelay3(result3, withRepeat3(withSequence2(withTimingResult2, withTimingResult3, tmp9Result28.withTiming(0, obj7)), -1)));
           }
           return () => {
@@ -152,30 +154,41 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
       }
     }
   }, items2);
-  const fn = function k() {
-    let items;
-    let value2;
-    const value = sharedValue1.get();
-    const obj = { transform: items };
-    items = [{ scale: sharedValue.get() }, , ];
-    ({ scale: sharedValue.get() });
-    items[1] = { translateX: -c10 * Math.sin(value) };
-    const obj4 = { translateY: value2 + c10 * (Math.cos(value) - 1) };
-    ({ translateX: -c10 * Math.sin(value) });
-    value2 = sharedValue2.get();
-    items[2] = obj4;
-    return obj;
-  };
-  fn.__closure = { angle: sharedValue1, scale: sharedValue, ringRadius: result, translateY: sharedValue2 };
-  fn.__workletHash = 2311631571202;
-  fn.__initData = __initData;
-  const tmp2Result8 = index(tmp3[8]);
-  const animatedStyle = tmp2Result8.useAnimatedStyle(fn);
-  let obj2 = { style: animatedStyle, children: sharedValue(tmp17, obj3, emojisKey) };
-  const View = emojiCount(tmp3[8]).View;
+  const items3 = [stateFromStores, sharedValue1, sharedValue, 0.0625 * num, sharedValue2];
+  let c0;
+  let c1;
+  let c2;
+  let c3;
+  [tmp14, tmp15, tmp16, tmp17, tmp18] = items3;
+  const tmp2Result8 = tmp2(tmp3[8]);
+  class CustomTypingIndicatorAnimatedEmojiTsx1 {
+    constructor() {
+      let items;
+      let tmp2;
+      let value2;
+      const value = _undefined.get();
+      const obj = { transform: items };
+      items = [{ scale: _undefined2.get() }, , ];
+      const obj3 = { translateX: tmp2 * Math.sin(value) };
+      ({ scale: _undefined2.get() });
+      tmp2 = -c2;
+      items[1] = obj3;
+      const obj4 = { translateY: value2 + c2 * (Math.cos(value) - 1) };
+      value2 = _undefined3.get();
+      items[2] = obj4;
+      return obj;
+    }
+  }
+  const items4 = [tmp15, tmp16, tmp17, tmp18];
+  CustomTypingIndicatorAnimatedEmojiTsx1.__closure = items4;
+  CustomTypingIndicatorAnimatedEmojiTsx1.__workletHash = 1185511828923;
+  CustomTypingIndicatorAnimatedEmojiTsx1.__initData = tmp14;
+  const animatedStyle = tmp2Result8.useAnimatedStyle(CustomTypingIndicatorAnimatedEmojiTsx1);
+  let obj2 = { style: animatedStyle, children: sharedValue(tmp7Result, obj3, emojisKey) };
+  const View = tmp7(tmp3[8]).View;
   let str = "\u{1F615}";
-  tmp17 = emojiCount(tmp3[12]);
-  if (!tmp5) {
+  tmp7Result = tmp7(tmp3[12]);
+  if (first !== name) {
     let str2 = "";
     if (null == emoji.id) {
       str2 = emoji.name;
@@ -184,7 +197,7 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   }
   obj3 = { name: str, src: emojiURL, fastImageStyle: null, textEmojiStyle: null, onError: callback };
   emojiURL = undefined;
-  if (!tmp5) {
+  if (first !== name) {
     if (null != emoji.id) {
       let obj4 = { id: null, animated, size: num };
       ({ id: obj9.id, animated } = emoji);

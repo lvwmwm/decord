@@ -1,26 +1,26 @@
-// Module ID: 11947
-// Function ID: 11948
+// Module ID: 12084
+// Function ID: 12085
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 2006, 6756, 1993, 1072, 7940, 21, 5014, 575, 5011, 1491, 504, 7957, 5789, 5023, 1113, 1187, 8177, 8852, 1375, 2]
+// Dependencies: [5, 32, 19, 17, 2135, 6876, 2122, 1072, 8064, 21, 5141, 575, 5138, 1493, 504, 8081, 5909, 5150, 1113, 1187, 8301, 8976, 1377, 2]
 // Exports: default
 
-// Module 11947 (VoiceSensitivity)
+// Module 12084 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5909 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import SpeakingStore from "SpeakingStore" /* 6756 */;
-import AppStateStore from "AppStateStore" /* 1993 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
+import SpeakingStore from "SpeakingStore" /* 6876 */;
+import AppStateStore from "AppStateStore" /* 2122 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
-import ColorUtils_mod from "ColorUtils" /* 5011 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import ColorUtils_mod from "ColorUtils" /* 5138 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -140,7 +140,7 @@ export default function VoiceSensitivity(auto) {
             obj = { value, done: true };
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -175,7 +175,7 @@ export default function VoiceSensitivity(auto) {
                 mediaEngine.on(_true(first[16]).MediaEngineEvent.VoiceActivity, closure_1_12);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c2 = 3;

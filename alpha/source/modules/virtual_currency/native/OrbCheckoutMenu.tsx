@@ -1,16 +1,16 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17853
+// Function ID: 17854
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 5014, 6744, 15052, 1994, 5712, 6977, 5624, 7082, 5634, 2]
+// Dependencies: [32, 19, 21, 5141, 6864, 15193, 2123, 5832, 7103, 5747, 7208, 5754, 2]
 // Exports: default
 
-// Module 17710 (OrbCheckoutMenu)
-import asyncRequire from "asyncRequire" /* 1994 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+// Module 17853 (OrbCheckoutMenu)
+import asyncRequire from "asyncRequire" /* 2123 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,13 +37,13 @@ export default function OrbCheckoutMenu() {
             obj.open("ORB_CHECKOUT_SUCCESS", { text: "Successfully redeemed item with Orbs" });
           }
       };
-      obj.pushLazy(asyncRequire(15052, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(15193, dependencyMap.paths), obj2);
     }
   }, items);
   let obj = { children: items1 };
-  const Card = value(6977).Card;
-  let obj2 = { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" };
-  items1 = [closure_5(value(5624).Text, obj2), , , ];
+  const Card = value(7103).Card;
+  let obj2 = { style: tmp.title, variant: "text-md/semibold", children: "Redeem SKU for Orbs" };
+  items1 = [closure_5(value(5747).Text, obj2), , , ];
   const obj3 = {
     containerStyle: tmp.textInput,
     label: "SKU ID",
@@ -53,10 +53,10 @@ export default function OrbCheckoutMenu() {
     },
     clearable: true
   };
-  items1[1] = closure_5(value(7082).TextInput, obj3);
-  const obj4 = { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" };
-  items1[2] = closure_5(value(5624).Text, obj4);
+  items1[1] = closure_5(value(7208).TextInput, obj3);
+  const obj4 = { style: tmp.title, variant: "text-md/semibold", children: "Checkout will open with the orb price of the product, if it exists" };
+  items1[2] = closure_5(value(5747).Text, obj4);
   const obj5 = { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == value };
-  items1[3] = closure_5(value(5634).Button, obj5);
+  items1[3] = closure_5(value(5754).Button, obj5);
   return closure_6(Card, obj);
 };

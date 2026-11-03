@@ -1,15 +1,15 @@
-// Module ID: 17532
-// Function ID: 17533
+// Module ID: 17675
+// Function ID: 17676
 // Name: NativeMarkdownSetting
-// Dependencies: [8432, 8564, 8561, 17531, 11540, 1113, 2]
+// Dependencies: [8556, 8688, 8685, 17674, 11677, 1113, 2]
 
-// Module 17532 (NativeMarkdownSetting)
+// Module 17675 (NativeMarkdownSetting)
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8432 */;
-import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8561 */;
-import useLabFeatureDefault from "useLabFeature" /* 8564 */;
-import LabFeatureActions from "LabFeatureActions" /* 17531 */;
-import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingsConstants from "SettingsConstants" /* 8556 */;
+import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8685 */;
+import useLabFeatureDefault from "useLabFeature" /* 8688 */;
+import LabFeatureActions from "LabFeatureActions" /* 17674 */;
+import SettingBuilders from "SettingBuilders" /* 11677 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

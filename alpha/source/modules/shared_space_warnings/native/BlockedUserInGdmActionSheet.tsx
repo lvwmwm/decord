@@ -1,27 +1,27 @@
-// Module ID: 19619
-// Function ID: 19620
+// Module ID: 19769
+// Function ID: 19770
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4863, 1383, 15625, 1072, 21, 5014, 575, 5624, 6041, 1113, 504, 1379, 1187, 12125, 10799, 7340, 5735, 1252, 7366, 5717, 11273, 7060, 6975, 5634, 5258, 19620, 7485, 2]
+// Dependencies: [19, 17, 4990, 1385, 15767, 1072, 21, 5141, 575, 5747, 6161, 1113, 504, 1380, 1187, 12261, 10929, 7460, 5855, 1252, 7486, 5837, 11410, 7186, 7101, 5754, 5381, 19770, 7609, 2]
 // Exports: default
 
-// Module 19619 (BlockedUserInGdmActionSheet)
+// Module 19769 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19620 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
+import TableRow2 from "TableRow" /* 7101 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19770 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4863 */;
-import UserStore from "UserStore" /* 1383 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15625 */;
+import ChannelStore from "ChannelStore" /* 4990 */;
+import UserStore from "UserStore" /* 1385 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15767 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -137,7 +137,7 @@ function UserCalloutAvatars(userIds) {
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1379).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1380).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
@@ -146,12 +146,12 @@ function UserCalloutAvatars(userIds) {
       const Avatar = tmp(1187).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12125).UserIcon, {});
+      tmp8 = closure_10(tmp(12261).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10799).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10929).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
@@ -279,7 +279,7 @@ export default function BlockedUserInGdmActionSheet(channelId) {
     const tmp38 = blockedUserIds(ignoredUserIds[21]);
     items3 = [closure_10(tmp38, obj8), , , ];
     const obj9 = { children: items4 };
-    const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: intl3.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
+    const obj10 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: intl3.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
     const Text = tmp8(tmp9[9]).Text;
     intl3 = tmp8(tmp9[11]).intl;
     items4 = [closure_10(Text, obj10), ];

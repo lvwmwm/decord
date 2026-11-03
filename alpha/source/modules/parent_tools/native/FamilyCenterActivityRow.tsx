@@ -1,30 +1,30 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16947
+// Function ID: 16948
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1383, 7715, 7716, 1072, 21, 5014, 575, 1187, 38, 563, 11, 5624, 5068, 8372, 6957, 6961, 1113, 2538, 16805, 16808, 16809, 2]
+// Dependencies: [19, 17, 1385, 7839, 7840, 1072, 21, 5141, 575, 1187, 38, 563, 11, 5747, 5195, 8496, 7083, 7087, 1113, 2667, 16948, 16951, 16952, 2]
 // Exports: default
 
-// Module 16804 (FamilyCenterActivityRow)
+// Module 16947 (FamilyCenterActivityRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import _modDef2538 from "module_2538" /* 2538 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import GuildIconDefault from "GuildIcon" /* 6957 */;
-import GuildBadgeDefault from "GuildBadge" /* 6961 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7716 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8372 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16805 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16808 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16809 */;
+import _modDef2667 from "module_2667" /* 2667 */;
+import UserUtilsDefault from "UserUtils" /* 5195 */;
+import GuildIconDefault from "GuildIcon" /* 7083 */;
+import GuildBadgeDefault from "GuildBadge" /* 7087 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8496 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16948 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16951 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16952 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
+import UserStore from "UserStore" /* 1385 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -69,16 +69,16 @@ const memoResult = react.memo(function(action) {
     items1 = [closure_8(View, obj3), ];
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: tmp3Result2.getName(stateFromStores) };
-    const Text = tmp6(5624).Text;
+    const Text = tmp6(5747).Text;
     tmp3Result2 = UserUtilsDefault;
     items2 = [closure_8(Text, obj6), ];
     const obj7 = { variant: "text-xs/medium", color: "channels-default", children: formatUserActivityTimestamp(date.getTime(), value.timestampFormatter) };
-    const Text2 = tmp6(5624).Text;
+    const Text2 = tmp6(5747).Text;
     const _Date = Date;
     const self = this;
     const self2 = this;
-    formatUserActivityTimestamp = action(8372).formatUserActivityTimestamp;
-    action(8372);
+    formatUserActivityTimestamp = action(8496).formatUserActivityTimestamp;
+    action(8496);
     date = new Date(extractTimestampResult);
     items2[1] = closure_8(Text2, obj7);
     items1[1] = closure_9(View, obj5);
@@ -121,7 +121,7 @@ const memoResult1 = react.memo((action) => {
     const name = stateFromStores.name;
     const obj2 = { style: tmp.container, children: items1 };
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
-    const obj4 = { style: null, textStyle: null, guild: stateFromStores, size: action(6957).GuildIconSizes.NORMAL, animate: true };
+    const obj4 = { style: null, textStyle: null, guild: stateFromStores, size: action(7083).GuildIconSizes.NORMAL, animate: true };
     const tmp6Result = GuildIconDefault;
     items1 = [closure_8(tmp6Result, obj4), ];
     const obj5 = { style: tmp.text, children: items3 };
@@ -135,12 +135,12 @@ const memoResult1 = react.memo((action) => {
     }
     items2 = [tmp11Result, ];
     const obj9 = { style: tmp.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: name };
-    items2[1] = closure_8(action(5624).Text, obj9);
+    items2[1] = closure_8(action(5747).Text, obj9);
     items3 = [closure_8(View, obj6), ];
     let tmp11Result2 = null;
     if (undefined !== stateFromStores.approximateMemberCount) {
-      const obj10 = { variant: "text-xs/medium", color: "channels-default", children: intl.format(_modDef2538["5JmNgg"], obj19) };
-      const Text = tmp2(5624).Text;
+      const obj10 = { variant: "text-xs/medium", color: "channels-default", children: intl.format(_modDef2667["5JmNgg"], obj19) };
+      const Text = tmp2(5747).Text;
       intl = tmp2(1113).intl;
       obj19 = { members: stateFromStores.approximateMemberCount };
       tmp11Result2 = tmp11(Text, obj10);

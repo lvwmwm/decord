@@ -1,20 +1,20 @@
-// Module ID: 9234
-// Function ID: 9235
+// Module ID: 9362
+// Function ID: 9363
 // Name: VoiceStateIconUtils
-// Dependencies: [2006, 5679, 558, 504, 9235, 2]
+// Dependencies: [2135, 5799, 558, 504, 9363, 2]
 // Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 9234 (VoiceStateIconUtils)
+// Module 9362 (VoiceStateIconUtils)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import useLocalSelfMuteDeaf from "useLocalSelfMuteDeaf" /* 9235 */;
-import MediaEngineStore from "MediaEngineStore" /* 2006 */;
-import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import useLocalSelfMuteDeaf from "useLocalSelfMuteDeaf" /* 9363 */;
+import MediaEngineStore from "MediaEngineStore" /* 2135 */;
+import VoiceStateStore from "VoiceStateStore" /* 5799 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f94303 = () => {
+const f94611 = () => {
   if (null != id) {
     const withLocalSelfMuteDeaf = useLocalSelfMuteDeaf.withLocalSelfMuteDeaf;
     useLocalSelfMuteDeaf;
@@ -28,7 +28,7 @@ const f94303 = () => {
     }
   }
 };
-const f94304 = () => {
+const f94612 = () => {
   let tmp5;
   let voiceState;
   if (null != id) {
@@ -72,7 +72,7 @@ export function useStableVoiceParticipant(arg0, arg1) {
   const items = [VoiceStateStore, MediaEngineStore];
   const items1 = [arg0, arg1];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f94303, items1, isStableVoiceStateEqual);
+  return obj.useStateFromStores(items, f94611, items1, isStableVoiceStateEqual);
 }
 export function useMuteDeafenIconState(id, guildId) {
   _require = id;
@@ -80,7 +80,7 @@ export function useMuteDeafenIconState(id, guildId) {
   let obj = require("get initialized");
   const items = [VoiceStateStore, MediaEngineStore];
   const items1 = [id, guildId];
-  const stateFromStores = obj.useStateFromStores(items, f94303, items1, isStableVoiceStateEqual);
+  const stateFromStores = obj.useStateFromStores(items, f94611, items1, isStableVoiceStateEqual);
   let tmp2 = null;
   if (null != stateFromStores) {
     let DEAFENED_SERVER;
@@ -109,7 +109,7 @@ export function useStableVideoState(arg0, arg1) {
   const items = [MediaEngineStore, VoiceStateStore];
   const items1 = [arg1, arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStoresObject(items, f94304, items1);
+  return obj.useStateFromStoresObject(items, f94612, items1);
 }
 export function useVideoIconState(id, guildId) {
   _require = id;
@@ -117,7 +117,7 @@ export function useVideoIconState(id, guildId) {
   let obj = require("get initialized");
   const items = [MediaEngineStore, VoiceStateStore];
   const items1 = [guildId, id];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f94304, items1);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f94612, items1);
   let tmp2 = null;
   if (null != stateFromStoresObject) {
     let tmp3 = null;

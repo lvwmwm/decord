@@ -1,14 +1,14 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 11418
+// Function ID: 11419
 // Name: ShieldIcon
-// Dependencies: [19, 21, 575, 5716, 11282, 2]
+// Dependencies: [19, 21, 575, 5836, 11419, 2]
 // Exports: ShieldIcon
 
-// Module 11281 (ShieldIcon)
+// Module 11418 (ShieldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5716 */;
-import AssetRegistry from "AssetRegistry" /* 11282 */;
+import BaseIconImage2 from "BaseIconImage" /* 5836 */;
+import AssetRegistry from "AssetRegistry" /* 11419 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

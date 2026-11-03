@@ -1,23 +1,23 @@
-// Module ID: 19829
-// Function ID: 19830
+// Module ID: 19979
+// Function ID: 19980
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 4885, 4946, 9075, 1072, 21, 5014, 575, 10263, 1113, 5624, 10074, 5735, 1497, 504, 9074, 19830, 5717, 2061, 5634, 19834, 5711, 5606, 2]
+// Dependencies: [19, 17, 5012, 5073, 9203, 1072, 21, 5141, 575, 10393, 1113, 5747, 10204, 5855, 1499, 504, 9202, 19980, 5837, 2190, 5754, 19984, 5831, 5729, 2]
 // Exports: default
 
-// Module 19829 (GuildSettingsModalCommunityIntro)
+// Module 19979 (GuildSettingsModalCommunityIntro)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import ToastUtils from "ToastUtils" /* 5711 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19834 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import ToastUtils from "ToastUtils" /* 5831 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19984 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4885 */;
-import PermissionStore from "PermissionStore" /* 4946 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import GuildStore from "GuildStore" /* 5012 */;
+import PermissionStore from "PermissionStore" /* 5073 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -128,7 +128,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   items5 = [, , , , , ];
   const obj8 = { resizeMode: "contain", source: introHeaderSource, style: tmp.headerImage };
   items5[0] = closure_13(onClose(navigation[18]), obj8);
-  const obj9 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["M/gBcA"]) };
+  const obj9 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["M/gBcA"]) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items5[1] = closure_13(Heading, obj9);

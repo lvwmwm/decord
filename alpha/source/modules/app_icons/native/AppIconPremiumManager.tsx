@@ -1,19 +1,19 @@
-// Module ID: 19401
-// Function ID: 19402
+// Module ID: 19559
+// Function ID: 19560
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1383, 9979, 1072, 5039, 3, 9980, 7287, 1375, 15344, 5042, 14608, 1252, 2]
+// Dependencies: [5, 1385, 10111, 1072, 5166, 3, 10112, 7407, 1377, 15485, 5169, 14739, 1252, 2]
 
-// Module 19401 (AppIconPremiumManager)
+// Module 19559 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1375 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
-import AppIconTypes from "AppIconTypes" /* 9980 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
+import AppIconTypes from "AppIconTypes" /* 10112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1383 */;
-import AppIconConstants from "AppIconConstants" /* 9979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
+import UserStore from "UserStore" /* 1385 */;
+import AppIconConstants from "AppIconConstants" /* 10111 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp62) {
           c6 = 3;

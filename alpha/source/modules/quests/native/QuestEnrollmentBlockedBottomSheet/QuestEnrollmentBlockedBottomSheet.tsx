@@ -1,24 +1,23 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 17286
+// Function ID: 17287
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [19, 17, 7846, 21, 5014, 575, 504, 14699, 6784, 7624, 5272, 5624, 1113, 2]
+// Dependencies: [19, 17, 7970, 21, 5141, 575, 504, 14830, 6904, 7748, 5395, 5747, 1113, 2]
 // Exports: default
 
-// Module 17143 (QuestEnrollmentBlockedBottomSheet)
+// Module 17286 (QuestEnrollmentBlockedBottomSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import useCountdownDefault from "useCountdown" /* 7624 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import useCountdownDefault from "useCountdown" /* 7748 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7846 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import QuestStore from "QuestStore" /* 7970 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet;
 
 let obj2;
 let obj3;
@@ -49,8 +48,8 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let tmp10 = null;
   const padStartResult2 = StringResult2.padStart(2, "0");
   if (null != questEnrollmentBlockedUntil) {
-    BottomSheet = Sheet_BottomSheet.BottomSheet;
-    ({ variant: "heading-xl/bold", children: intl.string(intl3.t["XEHDT/"]) });
+    const BottomSheet = Sheet_BottomSheet.BottomSheet;
+    ({ variant: "heading-xl/semibold", children: intl.string(intl3.t["XEHDT/"]) });
     const Text = Text_Text.Text;
     intl = intl3.intl;
     ({ variant: "text-md/normal", children: formatToPlainString(prop, obj6) });

@@ -1,49 +1,62 @@
-// Module ID: 5597
-// Function ID: 5598
+// Module ID: 5720
+// Function ID: 5721
 // Name: Sheet/BottomSheetBackdrop
-// Dependencies: [19, 21, 5014, 5275, 5303, 5095, 5598, 2]
+// Dependencies: [19, 21, 5141, 5398, 5426, 1705, 1652, 5721, 2]
 
-// Module 5597 (Sheet/BottomSheetBackdrop)
+// Module 5720 (Sheet/BottomSheetBackdrop)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1705 from "module_1705" /* 1705 */;
+import BottomSheetModal from "BottomSheetModal" /* 5398 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import Backdrop from "Backdrop" /* 5721 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flex: 1 } });
-let closure_5 = { code: "function BottomSheetBackdropNativeTsx1(){const{runOnJS,handleOnPress}=this.__closure;runOnJS(handleOnPress)();}" };
-let closure_6 = { code: "function BottomSheetBackdropNativeTsx2(){const{interpolate,animatedIndex,disappearsOnIndex,appearsOnIndex,opacity}=this.__closure;return{opacity:interpolate(animatedIndex.get(),[-1,disappearsOnIndex,appearsOnIndex],[0,0,opacity])};}" };
-const memoResult = react.memo(function BottomSheetBackdropComponent(animatedIndex) {
-  let callback;
-  animatedIndex = animatedIndex.animatedIndex;
-  let num = animatedIndex.opacity;
+let closure_5 = { code: "(function BottomSheetBackdropNativeTsx1(){let[scheduleOnRN,handleOnPress]=this.__closure;scheduleOnRN(handleOnPress);})" };
+let closure_6 = { code: "(function BottomSheetBackdropNativeTsx2(){let[interpolate,animatedIndex,disappearsOnIndex,appearsOnIndex,opacity]=this.__closure;return{opacity:interpolate(animatedIndex.get(),[-1,disappearsOnIndex,appearsOnIndex],[0,0,opacity])};})" };
+const memoResult = react.memo(function BottomSheetBackdropComponent(opacity) {
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  let num = opacity.opacity;
+  const animatedIndex = opacity.animatedIndex;
   if (num === undefined) {
     num = 1;
   }
-  let num2 = animatedIndex.appearsOnIndex;
+  let num2 = opacity.appearsOnIndex;
   if (num2 === undefined) {
     num2 = 0;
   }
-  let num3 = animatedIndex.disappearsOnIndex;
+  let num3 = opacity.disappearsOnIndex;
   if (num3 === undefined) {
     num3 = -1;
   }
-  let str = animatedIndex.pressBehavior;
+  let str = opacity.pressBehavior;
   if (str === undefined) {
     str = "close";
   }
-  const onPress = animatedIndex.onPress;
-  const style = animatedIndex.style;
+  const onPress = opacity.onPress;
+  const style = opacity.style;
+  closure_4 = undefined;
   let animatedStyle;
-  const tmp = str();
-  const container = tmp;
-  let obj = animatedIndex(num[3]);
+  const tmp = closure_4();
+  closure_4 = tmp;
+  let obj = BottomSheetModal;
   const bottomSheet = obj.useBottomSheet();
   const snapToIndex = bottomSheet.snapToIndex;
   const close = bottomSheet.close;
   let items = [snapToIndex, close, num3, str, onPress];
-  const onDismiss = num2.useCallback(() => {
+  const callback = react.useCallback(() => {
     if (onPress != null) {
       tmp();
     }
@@ -55,52 +68,68 @@ const memoResult = react.memo(function BottomSheetBackdropComponent(animatedInde
       snapToIndex(str);
     }
   }, items);
-  const Gesture = animatedIndex(num[4]).Gesture;
-  const TapResult = Gesture.Tap();
-  const tmp2 = animatedIndex;
-  const tmp3 = num;
-  class I {
+  const Gesture = LegacyBaseButton.Gesture;
+  let items1 = [closure_5, , ];
+  const onEnd = Gesture.Tap().onEnd;
+  Gesture.Tap();
+  items1[1] = _mod1705.scheduleOnRN;
+  items1[2] = callback;
+  let c0;
+  let c1;
+  [tmp7, tmp8, tmp9] = items1;
+  const obj2 = react;
+  class BottomSheetBackdropNativeTsx1 {
     constructor() {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(callback)();
+      _undefined(c1);
     }
   }
-  let obj2 = { runOnJS: animatedIndex(num[5]).runOnJS, handleOnPress: onDismiss };
-  I.__closure = obj2;
-  I.__workletHash = 3995467602852;
-  I.__initData = onPress;
-  const onEndResult = TapResult.onEnd(I);
-  const obj4 = animatedIndex(num[5]);
-  class S {
+  const items2 = [tmp8, tmp9];
+  BottomSheetBackdropNativeTsx1.__closure = items2;
+  BottomSheetBackdropNativeTsx1.__workletHash = 13019722920668;
+  BottomSheetBackdropNativeTsx1.__initData = tmp7;
+  const items3 = [closure_6, , , , , ];
+  const onEndResult = onEnd(BottomSheetBackdropNativeTsx1);
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items3[1] = _mod1652.interpolate;
+  items3[2] = animatedIndex;
+  items3[3] = num3;
+  items3[4] = num2;
+  items3[5] = num;
+  c0 = undefined;
+  c1 = undefined;
+  let c2;
+  let c3;
+  let c4;
+  [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17] = items3;
+  class BottomSheetBackdropNativeTsx2 {
     constructor() {
       let items;
       let items1;
-      let obj2;
-      const obj = { opacity: obj2.interpolate(animatedIndex.get(), items, items1) };
-      items = [-1, num3, num2];
-      items1 = [0, 0, num];
-      obj2 = ReanimatedRexport;
+      const obj = { opacity: _undefined(_undefined2.get(), items, items1) };
+      items = [-1, c2, c3];
+      items1 = [0, 0, c4];
       return obj;
     }
   }
-  S.__closure = { interpolate: animatedIndex(num[5]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num };
-  S.__workletHash = 1140766381376;
-  S.__initData = style;
-  ({ interpolate: animatedIndex(num[5]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num });
-  animatedStyle = obj4.useAnimatedStyle(S);
-  let items1 = [tmp.container, style, animatedStyle];
-  const memo = num2.useMemo(() => {
+  const items4 = [tmp13, tmp14, tmp15, tmp16, tmp17];
+  BottomSheetBackdropNativeTsx2.__closure = items4;
+  BottomSheetBackdropNativeTsx2.__workletHash = 16206177452089;
+  BottomSheetBackdropNativeTsx2.__initData = tmp12;
+  animatedStyle = useAnimatedStyle(BottomSheetBackdropNativeTsx2);
+  const items5 = [tmp.container, style, animatedStyle];
+  const memo = obj2.useMemo(() => {
     const items = [container.container, style, animatedStyle];
     return items;
-  }, items1);
-  const tmp10 = num3(animatedIndex(num[6]).Backdrop, { blur: "none", style: memo, onDismiss, "aria-hidden": true });
-  let tmp9Result = tmp10;
-  const tmp9 = num3;
+  }, items5);
+  const tmp21 = jsx(Backdrop.Backdrop, { blur: "none", style: memo, onDismiss: callback, "aria-hidden": true });
+  let tmp20Result = tmp21;
+  const tmp20 = jsx;
   if ("none" !== str) {
-    const obj5 = { gesture: onEndResult, children: tmp10 };
-    tmp9Result = tmp9(tmp2(tmp3[4]).GestureDetector, obj5);
+    const obj3 = { gesture: onEndResult, children: tmp21 };
+    tmp20Result = tmp20(tmp2(5426).GestureDetector, obj3);
   }
-  return tmp9Result;
+  return tmp20Result;
 });
 const result = size.fileFinishedImporting("design/components/Sheet/native/BottomSheetBackdrop.native.tsx");
 

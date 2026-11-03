@@ -1,23 +1,23 @@
-// Module ID: 16344
-// Function ID: 16345
+// Module ID: 16487
+// Function ID: 16488
 // Name: subscriptionHelpers
-// Dependencies: [4862, 16294, 7846, 1072, 2018, 6847, 11694, 9326, 16298, 16299, 8773, 16300, 7868, 2]
+// Dependencies: [4989, 11056, 7970, 1072, 2147, 6967, 11831, 9454, 16441, 16442, 8897, 16443, 7992, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 16344 (subscriptionHelpers)
+// Module 16487 (subscriptionHelpers)
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 2018 */;
-import FramesConstants from "FramesConstants" /* 6847 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8773 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9326 */;
-import Constants3 from "Constants" /* 11694 */;
-import useThermalState from "useThermalState" /* 16298 */;
-import ThermalStates from "ThermalStates" /* 16299 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16300 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16294 */;
-import QuestStore from "QuestStore" /* 7846 */;
+import Constants2 from "Constants" /* 2147 */;
+import FramesConstants from "FramesConstants" /* 6967 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8897 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9454 */;
+import Constants3 from "Constants" /* 11831 */;
+import useThermalState from "useThermalState" /* 16441 */;
+import ThermalStates from "ThermalStates" /* 16442 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16443 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11056 */;
+import QuestStore from "QuestStore" /* 7970 */;
 import size from "module_2" /* 2 */;
 
 const RPCEvents = Constants.RPCEvents;

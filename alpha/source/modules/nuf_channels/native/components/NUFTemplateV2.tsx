@@ -1,16 +1,16 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15325
+// Function ID: 15326
 // Name: NUFTemplateV2
-// Dependencies: [19, 17, 21, 5014, 5624, 5634, 2]
+// Dependencies: [19, 17, 21, 5141, 5747, 5754, 2]
 // Exports: default
 
-// Module 15184 (NUFTemplateV2)
+// Module 15325 (NUFTemplateV2)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,7 +33,7 @@ export default function NUFActionSheetTemplate(arg0) {
   items = [, , , ];
   const obj2 = { style: tmp.illustration, children: illustration };
   items[0] = _false(View, obj2);
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/bold", children: title };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", children: title };
   items[1] = _false(Text_Text.Text, obj3);
   const obj4 = { style: tmp.description, variant: "text-md/medium", children: description };
   items[2] = _false(Text_Text.Text, obj4);

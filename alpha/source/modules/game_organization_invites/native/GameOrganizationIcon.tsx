@@ -1,17 +1,17 @@
-// Module ID: 13205
-// Function ID: 13206
+// Module ID: 13341
+// Function ID: 13342
 // Name: GameOrganizationIcon
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5717, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5837, 2]
 // Exports: default
 
-// Module 13205 (GameOrganizationIcon)
+// Module 13341 (GameOrganizationIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5717 */;
+import FastImageDefault from "FastImage" /* 5837 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;

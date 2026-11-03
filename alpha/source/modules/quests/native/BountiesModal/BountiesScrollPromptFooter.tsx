@@ -1,31 +1,37 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 17069
+// Function ID: 17070
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 504, 1625, 5095, 5149, 16927, 16928, 9960, 2]
+// Dependencies: [19, 17, 5142, 6901, 21, 5141, 575, 5377, 5380, 504, 1627, 1652, 5272, 17070, 17071, 10091, 2]
 // Exports: default
 
-// Module 16926 (BountiesScrollPromptFooter)
+// Module 17069 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
-import QuestConstants from "QuestConstants" /* 6781 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16927 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16928 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import _modDef1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import timingPresets from "timingPresets" /* 5380 */;
+import QuestConstants from "QuestConstants" /* 6901 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10091 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 17070 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 17071 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let metroImportAll;
 let metroImportDefault;
+let tmp3;
+let tmp4;
+let tmp5;
+let tmp6;
+let tmp7;
+let tmp8;
 function BountiesScrollPromptFooterContent(zIndex) {
   let BountiesScrollGradientRive;
   let bottom;
@@ -64,12 +70,12 @@ function BountiesScrollPromptFooterContent(zIndex) {
   }, items2);
   const obj2 = { style: items3, pointerEvents: "none", children: items5 };
   items3 = [tmp.root, visibilityOpacityStyle, memo];
-  const View = ReanimatedRexportDefault.View;
+  const View = _modDef1652.View;
   const obj3 = { style: items4, children: closure_7(BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str }) };
   items4 = [tmp.gradient, opacityStyle];
-  const View2 = ReanimatedRexportDefault.View;
+  const View2 = _modDef1652.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(5149).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(5272).BountiesScrollGradientRive;
   const tmp8 = closure_8;
   if (stateFromStores) {
     str = "halt";
@@ -77,7 +83,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   items5 = [closure_7(View2, obj3), ];
   const obj4 = { style: items6, onLayout: onContentLayout, children };
   items6 = [tmp.content, memo1, opacityStyle];
-  items5[1] = closure_7(ReanimatedRexportDefault.View, obj4);
+  items5[1] = closure_7(_modDef1652.View, obj4);
   return tmp8(View, obj2);
 }
 const StyleSheet = react_native.StyleSheet;
@@ -91,26 +97,34 @@ let closure_9 = createStyles.createStyles(() => {
   const merged = Object.assign(StyleSheet.absoluteFillObject);
   return obj;
 });
-const entering = function t(value) {
-  let obj2;
-  const obj = { opacity: obj2.withTiming(value, timingPresets.timingStandard, "respect-motion-settings") };
-  obj2 = timing;
-  return obj;
-};
-let obj = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-entering.__closure = obj;
-entering.__workletHash = 11416950434629;
-entering.__initData = { code: "function BountiesScrollPromptFooterTsx1(visible){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};}" };
-const fn2 = function n(value, fn2) {
-  let obj2;
-  const obj = { opacity: obj2.withTiming(value, timingPresets.timingStandard, "respect-motion-settings", fn2) };
-  obj2 = timing;
-  return obj;
-};
-let obj2 = { withTiming: timing.withTiming, timingStandard: timingPresets.timingStandard };
-fn2.__closure = obj2;
-fn2.__workletHash = 9928471408966;
-fn2.__initData = { code: "function BountiesScrollPromptFooterTsx2(visible,cleanUp){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings',cleanUp)};}" };
+let items = [{ code: "(function BountiesScrollPromptFooterTsx1(visible){let[withTiming,timingStandard]=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+let c0;
+let c1;
+[tmp3, tmp4, tmp5] = items;
+class BountiesScrollPromptFooterTsx1 {
+  constructor(arg0) {
+    const obj = { opacity: _undefined(arg0, c1, "respect-motion-settings") };
+    return obj;
+  }
+}
+let items1 = [tmp4, tmp5];
+BountiesScrollPromptFooterTsx1.__closure = items1;
+BountiesScrollPromptFooterTsx1.__workletHash = 6190498486460;
+BountiesScrollPromptFooterTsx1.__initData = tmp3;
+let items2 = [{ code: "(function BountiesScrollPromptFooterTsx2(visible,cleanUp){let[withTiming,timingStandard]=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings',cleanUp)};})" }, timing_timing.withTiming, timingPresets.timingStandard];
+c0 = undefined;
+c1 = undefined;
+[tmp6, tmp7, tmp8] = items2;
+class BountiesScrollPromptFooterTsx2 {
+  constructor(arg0, arg1) {
+    const obj = { opacity: _undefined(arg0, c1, "respect-motion-settings", arg1) };
+    return obj;
+  }
+}
+let items3 = [tmp7, tmp8];
+BountiesScrollPromptFooterTsx2.__closure = items3;
+BountiesScrollPromptFooterTsx2.__workletHash = 12923710972959;
+BountiesScrollPromptFooterTsx2.__initData = tmp6;
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollPromptFooter.tsx");
 
 export default function BountiesScrollPromptFooter(visible) {
@@ -133,7 +147,7 @@ export default function BountiesScrollPromptFooter(visible) {
   const visibilityTransition = obj3.useVisibilityTransition(obj4);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
-    const obj5 = { useReducedMotion: stateFromStores, item: tmp16, entering, exiting: fn2, renderItem: callback };
+    const obj5 = { useReducedMotion: stateFromStores, item: tmp16, entering: BountiesScrollPromptFooterTsx1, exiting: BountiesScrollPromptFooterTsx2, renderItem: callback };
     tmp16 = undefined;
     const tmp13 = metroImportDefault;
     const tmp15 = AnimatedEnterExitItemDefault;

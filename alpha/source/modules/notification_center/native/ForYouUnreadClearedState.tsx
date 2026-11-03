@@ -1,19 +1,19 @@
-// Module ID: 18518
-// Function ID: 18519
+// Module ID: 18672
+// Function ID: 18673
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 5014, 575, 1187, 10549, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 10679, 5747, 1113, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 18518 (ForYouUnreadClearedState)
+// Module 18672 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10549 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10679 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

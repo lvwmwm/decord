@@ -1,21 +1,21 @@
-// Module ID: 14272
-// Function ID: 14273
+// Module ID: 14403
+// Function ID: 14404
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1383, 1072, 21, 5014, 575, 504, 5717, 14273, 5624, 1113, 5634, 1252, 5068, 8931, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5141, 575, 504, 5837, 14404, 5747, 1113, 5754, 1252, 5195, 9059, 2]
 // Exports: default
 
-// Module 14272 (ContactSyncInviteFriends)
+// Module 14403 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14273 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14404 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1383 */;
+import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,8 +29,8 @@ let metroRequire;
 let obj2;
 let tmp;
 let tmp5;
-const UserUtilsDefault = tmp(5068);
-const showShareActionSheet = tmp5(8931);
+const UserUtilsDefault = tmp(5195);
+const showShareActionSheet = tmp5(9059);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -58,7 +58,7 @@ export default function ContactSyncInviteFriends() {
   const obj4 = { style: tmp.art, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items1 = [closure_7(tmp2, obj4), , ];
-  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.ZxBpLf) };
+  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.ZxBpLf) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items1[1] = closure_7(Text, obj5);

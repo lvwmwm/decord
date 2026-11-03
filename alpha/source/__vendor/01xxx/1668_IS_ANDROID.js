@@ -1,0 +1,33 @@
+// Module ID: 1668
+// Function ID: 1669
+// Name: IS_ANDROID
+// Dependencies: [17]
+
+// Module 1668 (IS_ANDROID)
+import react_native from "react-native" /* 17 */;
+
+const Platform = react_native.Platform;
+let OS;
+if (Platform != null) {
+  OS = Platform.OS;
+}
+let OS1;
+if (Platform != null) {
+  OS1 = Platform.OS;
+}
+let OS2;
+if (Platform != null) {
+  OS2 = Platform.OS;
+}
+let OS3;
+const tmp5 = undefined !== globalThis.jest || false;
+if (Platform != null) {
+  OS3 = Platform.OS;
+}
+
+export const IS_ANDROID = "android" === OS;
+export const IS_IOS = "ios" === OS1;
+export const IS_WEB = "web" === OS2;
+export const IS_JEST = tmp5;
+export const IS_WINDOWS = "windows" === OS3;
+export const IS_WINDOW_AVAILABLE = typeof window !== "undefined";

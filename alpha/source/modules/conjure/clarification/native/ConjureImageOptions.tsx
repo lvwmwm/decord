@@ -1,23 +1,23 @@
-// Module ID: 12761
-// Function ID: 12762
+// Module ID: 12897
+// Function ID: 12898
 // Name: ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5014, 575, 12149, 8653, 5624, 1113, 3868, 5717, 5082, 6977, 6989, 7062, 12759, 8028, 5738, 12762, 12147, 8833, 12764, 5634, 12119, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 12285, 8777, 5747, 1113, 3995, 5837, 5209, 7103, 7115, 7188, 12895, 8152, 5858, 12898, 12283, 8957, 12900, 5754, 12255, 2]
 // Exports: default
 
-// Module 12761 (ConjureImageOptions)
+// Module 12897 (ConjureImageOptions)
 import nativeDefault from "native" /* 575 */;
-import _modDef3868 from "module_3868" /* 3868 */;
-import react_native from "react-native" /* 5082 */;
-import FastImageDefault from "FastImage" /* 5717 */;
-import openMediaModal from "openMediaModal" /* 8833 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12149 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 12759 */;
+import _modDef3995 from "module_3995" /* 3995 */;
+import react_native from "react-native" /* 5209 */;
+import FastImageDefault from "FastImage" /* 5837 */;
+import openMediaModal from "openMediaModal" /* 8957 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12285 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 12895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,10 +65,10 @@ function ImageOptionPicture(onMeasured) {
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8653).ImageWarningIcon;
+    const ImageWarningIcon = tmp2(8777).ImageWarningIcon;
     items1 = [metroImportAll(ImageWarningIcon, obj4), ];
-    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3868.lhgD88) };
-    const Text = tmp2(5624).Text;
+    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3995.lhgD88) };
+    const Text = tmp2(5747).Text;
     intl = tmp2(1113).intl;
     items1[1] = metroImportAll(Text, obj5);
     obj2.children = React4(metroImportDefault, obj3);
@@ -149,7 +149,7 @@ function ImageOptionTile(option) {
     radioA11yNative = checkboxA11yNative;
   }
   const intl = tmp2(1113).intl;
-  const stringResult = intl.string(_modDef3868["4/eeDD"]);
+  const stringResult = intl.string(_modDef3995["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -169,7 +169,7 @@ function ImageOptionTile(option) {
     disabled: tmp11,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef3868.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef3995.AQbxhf, obj7),
     accessibilityActions: tmp12,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -185,7 +185,7 @@ function ImageOptionTile(option) {
     children: items4
   };
   tmp11 = disabled;
-  const Card = tmp2(6977).Card;
+  const Card = tmp2(7103).Card;
   if (disabled) {
     tmp11 = null == option.image;
   }
@@ -193,7 +193,7 @@ function ImageOptionTile(option) {
   intl2 = tmp2(1113).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef3868.HQEXJM) };
+    const obj8 = { name: "remove", label: intl3.string(_modDef3995.HQEXJM) };
     intl3 = tmp2(1113).intl;
     const items1 = [obj8];
     tmp12 = items1;
@@ -222,10 +222,10 @@ function ImageOptionTile(option) {
     const obj13 = { style: tmp.indicator, children: tmp13Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp13Result = tmp13(tmp2(6989).FormCheckbox, obj14);
+      tmp13Result = tmp13(tmp2(7115).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp13Result = tmp13(tmp2(7062).FormRadio, obj15);
+      tmp13Result = tmp13(tmp2(7188).FormRadio, obj15);
     }
     tmp13Result3 = tmp13(tmp9, obj13);
   } else {
@@ -234,7 +234,7 @@ function ImageOptionTile(option) {
   items3[1] = tmp13Result3;
   items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5624).Text;
+  const Text = tmp2(5747).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp13(Text, obj16);
   items5 = [React4(Card, obj6), ];
@@ -247,13 +247,13 @@ function ImageOptionTile(option) {
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(8028).IconButton;
+      IconButton = tmp2(8152).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(5738).TrashIcon;
+        MaximizeIcon = tmp2(5858).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(12762).MaximizeIcon;
+        MaximizeIcon = tmp2(12898).MaximizeIcon;
       }
-      obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3868.JGjZMs, obj20) };
+      obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3995.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
@@ -272,7 +272,7 @@ let createStyles = createStyles_mod;
 let obj = { row: obj2, own: obj3, galleryContent: obj4, rowTile: { flex: 1, minWidth: 0 }, card: obj5, ring: obj6, ringSelected: obj7, frame: obj8, frameInert: { opacity: 0.5 }, image: { width: "100%", height: "100%" }, broken: obj9, brokenText: { textAlign: "center" }, indicator: obj10, caption: obj11, view: obj12 };
 obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, alignItems: "flex-start" };
+obj3 = { marginTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, alignItems: "flex-start" };
 obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 obj5 = { padding: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
 obj6 = { borderWidth: 2, borderColor: "transparent", borderRadius: nativeDefault.radii.lg };
@@ -298,8 +298,6 @@ export default function ConjureImageOptions(projectId) {
   let own;
   let question;
   let tmp21;
-  let tmp25Result;
-  let tmp27;
   let tmp3Result;
   projectId = projectId.projectId;
   ({ question, selectedIds: importDefault, disabled } = projectId);
@@ -351,6 +349,10 @@ export default function ConjureImageOptions(projectId) {
   let tmp15 = null != num;
   if (tmp15) {
     tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < 104;
+  }
+  let tmp17 = "gallery" === imageOptionsLayoutResult || tmp15;
+  if (!tmp17) {
+    tmp17 = 1 === sum;
   }
   closure_13 = tmp17;
   const _Math = Math;
@@ -475,12 +477,12 @@ export default function ConjureImageOptions(projectId) {
     };
     tmp21 = null;
     const push = mapped.push;
-    const tmp31 = frameHeight;
-    const tmp32 = id;
-    if ("gallery" === imageOptionsLayoutResult || tmp15) {
+    const tmp32 = frameHeight;
+    const tmp33 = id;
+    if (tmp17) {
       tmp21 = maxResult;
     }
-    push(tmp31(tmp32, obj3, memo.id));
+    push(tmp32(tmp33, obj3, memo.id));
   }
   const items3 = [own, projectId];
   closure_17 = obj2.useCallback(_asyncToGenerator(async (arg0, value) => {
@@ -496,7 +498,7 @@ export default function ConjureImageOptions(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -536,7 +538,7 @@ export default function ConjureImageOptions(projectId) {
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         c3 = 3;
@@ -550,23 +552,26 @@ export default function ConjureImageOptions(projectId) {
     },
     children: items4
   };
-  if ("gallery" === imageOptionsLayoutResult || tmp15) {
-    let obj5 = { ref, horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp.galleryContent, children: mapped };
-    tmp25Result = tmp25(options, obj5);
-    tmp27 = tmp25;
-  } else {
-    let obj6 = { style: tmp.row, children: mapped };
-    tmp25Result = tmp25(tmp24, obj6);
-    tmp27 = tmp25;
+  let tmp25 = null;
+  if (0 !== sum) {
+    let tmp26Result;
+    if (tmp17) {
+      let obj5 = { ref, horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp.galleryContent, children: mapped };
+      tmp26Result = tmp26(options, obj5);
+    } else {
+      let obj6 = { style: tmp.row, children: mapped };
+      tmp26Result = tmp26(tmp24, obj6);
+    }
+    tmp25 = tmp26Result;
   }
-  items4 = [tmp25Result, ];
+  items4 = [tmp25, ];
   let tmp23Result = null;
   if (!disabled) {
     const obj7 = { style: tmp.own, children: items5 };
     const obj8 = {
       variant: "secondary",
       size: "sm",
-      icon: tmp27(tmp3(tmp4[25]).ImagePlusIcon, { size: "xs" }),
+      icon: frameHeight(tmp3(tmp4[25]).ImagePlusIcon, { size: "xs" }),
       text: tmp3Result.ownImageUploadText(question),
       loading: "upload" === own.busy,
       onPress() {
@@ -578,13 +583,14 @@ export default function ConjureImageOptions(projectId) {
     };
     const Button = tmp3(tmp4[24]).Button;
     tmp3Result = tmp3(tmp4[17]);
-    items5 = [tmp27(Button, obj8), ];
-    let tmp27Result = null;
+    items5 = [frameHeight(Button, obj8), ];
+    let tmp30Result = null;
+    const tmp30 = frameHeight;
     if (null != own.error) {
       const obj9 = { variant: "text-xs/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: own.error.text };
-      tmp27Result = tmp27(tmp3(tmp4[9]).Text, obj9);
+      tmp30Result = tmp30(tmp3(tmp4[9]).Text, obj9);
     }
-    items5[1] = tmp27Result;
+    items5[1] = tmp30Result;
     tmp23Result = tmp23(tmp24, obj7);
   }
   items4[1] = tmp23Result;

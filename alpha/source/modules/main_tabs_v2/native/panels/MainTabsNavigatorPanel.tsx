@@ -1,23 +1,23 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18197
+// Function ID: 18198
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1072, 21, 3, 5014, 575, 1498, 5201, 11557, 11555, 11558, 18054, 5207, 18055, 5199, 5756, 1108, 18056, 7485, 18059, 5095, 7000, 9823, 11243, 18060, 18061, 5303, 18068, 18069, 18601, 18602, 18603, 18819, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 3, 5141, 575, 1500, 5324, 11694, 11692, 11695, 18198, 5330, 18199, 5322, 5876, 1108, 18200, 7609, 18203, 1652, 7126, 9954, 11380, 18204, 18205, 5426, 18212, 18213, 18759, 18760, 18761, 18977, 2]
 
-// Module 18053 (MainTabsNavigatorPanel)
+// Module 18197 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5199 */;
-import ChatInputUtils from "ChatInputUtils" /* 5207 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 18054 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18055 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 18059 */;
+import RootNavigationRef from "RootNavigationRef" /* 5322 */;
+import ChatInputUtils from "ChatInputUtils" /* 5330 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 18198 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18199 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 18203 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
@@ -40,7 +40,7 @@ let closure_12 = tmp5;
 let obj = { container: { flex: 1 }, containerBackground: obj2, tabsContainer: { flex: 1 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_13 = createStyles.createStyles(obj);
-let closure_14 = { code: "function MainTabsNavigatorPanelTsx1(){const{translateX,highestFullyRenderedScreenIndex}=this.__closure;return{opacity:translateX.get()>0&&highestFullyRenderedScreenIndex.get()<1?1:0};}" };
+let closure_14 = { code: "(function MainTabsNavigatorPanelTsx1(){let[translateX,highestFullyRenderedScreenIndex]=this.__closure;return{opacity:translateX.get()>0&&highestFullyRenderedScreenIndex.get()<1?1:0};})" };
 const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient) {
   let SidebarCoachmarkOverlay;
   let _undefined;
@@ -55,23 +55,26 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let flag2;
   let gesture;
   let isDragging;
-  let items12;
   let items14;
-  let items15;
   let items16;
+  let items17;
+  let items18;
   let logger;
   let obj10;
-  let obj11;
+  let obj9;
   let panelGestureContext;
   let ref;
   let tmp25;
   let tmp37;
-  let tmp62;
-  let tmp63;
-  let tmp68;
-  let tmp69;
+  let tmp54;
+  let tmp55;
+  let tmp56;
+  let tmp66;
+  let tmp67;
+  let tmp72;
+  let tmp73;
   let type1;
-  const f113519 = () => first4;
+  const f113294 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -99,7 +102,6 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let obj5;
   let ref4;
   let callback4;
-  let sharedValue;
   let tmp = c13();
   const tmp3 = drawerWidth;
   let obj = navigation(drawerWidth[8]);
@@ -184,9 +186,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const obj = useChannelScreensFromNavigation;
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c13] = react.useState(f113519);
+  [tmp25, c13] = react.useState(f113294);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f113519), 2);
+  _slicedToArray(react.useState(f113294), 2);
   const effect1 = obj3.useEffect(() => {
     function handleStateChange(data) {
       const obj = navigation(drawerWidth[15]);
@@ -233,7 +235,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(5756);
+            const tmp15Result = tmp15(5876);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -327,7 +329,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        const tmp4Result = tmp4(5207);
+        const tmp4Result = tmp4(5330);
         tmp4Result.dismissKeyboard();
       }
     }
@@ -364,7 +366,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   const items10 = [callback4, first1, isChatLockedOpen, tmp25];
   if (tmp25) {
     let tmp47;
-    let tmp61Result4;
+    let tmp65Result4;
     if (isChatLockedOpen) {
       let num = 1;
       tmp47 = arr2.length <= 1;
@@ -388,36 +390,42 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     if (translateX.get() > 0) {
       num3 = -1;
     }
-    sharedValue = useSharedValue(num3);
-    function he() {
-      let opacity = 0;
-      if (translateX.get() > 0) {
-        opacity = 0;
-        if (sharedValue.get() < 1) {
-          opacity = 1;
-        }
-      }
-      return { opacity };
-    }
-    const obj6 = { translateX, highestFullyRenderedScreenIndex: sharedValue };
-    he.__closure = obj6;
-    let num4 = 10839500061449;
-    he.__workletHash = 10839500061449;
-    he.__initData = isChatBesideChannelList;
+    const sharedValue = useSharedValue(num3);
+    const items12 = [isChatBesideChannelList, translateX, sharedValue];
+    let c0;
+    let c1;
+    [tmp54, tmp55, tmp56] = items12;
     const tmp2Result4 = navigation(tmp3[22]);
-    const animatedStyle = tmp2Result4.useAnimatedStyle(he);
-    const tmp54 = isChatLockedOpen(tmp3[23])("channel_list_scrim");
+    class MainTabsNavigatorPanelTsx1 {
+      constructor() {
+        let opacity = 0;
+        if (_undefined.get() > 0) {
+          opacity = 0;
+          if (_undefined2.get() < 1) {
+            opacity = 1;
+          }
+        }
+        return { opacity };
+      }
+    }
+    const items13 = [tmp55, tmp56];
+    MainTabsNavigatorPanelTsx1.__closure = items13;
+    let num4 = 9133325578128;
+    MainTabsNavigatorPanelTsx1.__workletHash = 9133325578128;
+    MainTabsNavigatorPanelTsx1.__initData = tmp54;
+    const animatedStyle = tmp2Result4.useAnimatedStyle(MainTabsNavigatorPanelTsx1);
+    const tmp58 = isChatLockedOpen(tmp3[23])("channel_list_scrim");
     const tmp2Result5 = navigation(tmp3[24]);
     const isCustomThemeActive = tmp2Result5.useIsCustomThemeActive();
-    const obj7 = { value: panelGestureContext, children: items12 };
+    const obj6 = { value: panelGestureContext, children: items14 };
     const Provider = tmp5(tmp3[25]).Provider;
-    let tmp58Result = null;
+    let tmp62Result = null;
     const tmp2Result6 = navigation(tmp3[26]);
     if (tmp2Result6.isJankScreenReportingEnabled()) {
-      const obj8 = { translateX, maxWidth, channelId: channelId1, showCreateThread: flag2 };
+      const obj7 = { translateX, maxWidth, channelId: channelId1, showCreateThread: flag2 };
       channelId1 = undefined;
-      const tmp58 = handleExit;
       const tmp5Result3 = isChatLockedOpen(tmp3[27]);
+      const tmp62 = handleExit;
       if (first2 != null) {
         channelId1 = first2.channelId;
       }
@@ -428,67 +436,67 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
       if (flag2 == null) {
         flag2 = false;
       }
-      tmp58Result = tmp58(tmp5Result3, obj8);
+      tmp62Result = tmp62(tmp5Result3, obj7);
     }
-    items12 = [tmp58Result, ];
-    const items13 = [tmp.container, ];
+    items14 = [tmp62Result, ];
+    const items15 = [tmp.container, ];
     let containerBackground = !isCustomThemeActive;
-    const obj9 = { gesture, children: handleExit(tmp62, obj10) };
+    const obj8 = { gesture, children: handleExit(tmp66, obj9) };
     const GestureDetector = tmp2(tmp3[28]).GestureDetector;
-    tmp62 = first1;
+    tmp66 = first1;
     if (!isCustomThemeActive) {
       containerBackground = tmp.containerBackground;
     }
-    items13[1] = containerBackground;
-    obj10 = { style: items13, collapsable: false, children: first4(SidebarCoachmarkOverlay, obj11) };
-    obj11 = { enabled: tmp25, children: items16 };
+    items15[1] = containerBackground;
+    obj9 = { style: items15, collapsable: false, children: first4(SidebarCoachmarkOverlay, obj10) };
+    obj10 = { enabled: tmp25, children: items18 };
     SidebarCoachmarkOverlay = tmp2(tmp3[29]).SidebarCoachmarkOverlay;
-    const obj12 = { style: items14, accessibilityElementsHidden: tmp63, importantForAccessibility: str2, children: items15 };
-    items14 = [tmp.tabsContainer, animatedStyle];
-    tmp63 = !tmp47;
+    const obj11 = { style: items16, accessibilityElementsHidden: tmp67, importantForAccessibility: str2, children: items17 };
+    items16 = [tmp.tabsContainer, animatedStyle];
+    tmp67 = !tmp47;
     const View = tmp5(tmp3[22]).View;
-    items15 = [handleExit(tmp5(tmp3[30]), {}), ];
-    let tmp61Result;
-    if (tmp54) {
-      const obj13 = { translateX, maxWidth };
-      tmp61Result = tmp61(tmp2(tmp3[31]).MainTabsContentScrim, obj13);
+    items17 = [handleExit(tmp5(tmp3[30]), {}), ];
+    let tmp65Result;
+    if (tmp58) {
+      const obj12 = { translateX, maxWidth };
+      tmp65Result = tmp65(tmp2(tmp3[31]).MainTabsContentScrim, obj12);
     }
-    items15[1] = tmp61Result;
-    items16 = [first4(View, obj12), , ];
-    let tmp61Result3 = null;
+    items17[1] = tmp65Result;
+    items18 = [first4(View, obj11), , ];
+    let tmp65Result3 = null;
     if (flag) {
-      tmp61Result3 = tmp61(tmp5(tmp3[32]), {});
+      tmp65Result3 = tmp65(tmp5(tmp3[32]), {});
     }
-    items16[1] = tmp61Result3;
+    items18[1] = tmp65Result3;
     if (arr2.length > 0) {
-      const obj14 = { screens: arr2, screenStackActive: first1, screenStackVisible: tmp68, navigationTTIStackVisible: first1, translateX, isDragging, maxWidth, highestFullyRenderedScreenIndex: sharedValue, shouldFreeze: !tmp25, focusChatPressableComponent: tmp46, firstScreenWidth: tmp69, firstScreenFrame: memo };
-      tmp68 = first1;
+      const obj13 = { screens: arr2, screenStackActive: first1, screenStackVisible: tmp72, navigationTTIStackVisible: first1, translateX, isDragging, maxWidth, highestFullyRenderedScreenIndex: sharedValue, shouldFreeze: !tmp25, focusChatPressableComponent: tmp46, firstScreenWidth: tmp73, firstScreenFrame: memo };
+      tmp72 = first1;
       const tmp5Result4 = isChatLockedOpen(tmp3[33]);
       if (!first1) {
-        tmp68 = tmp25;
+        tmp72 = tmp25;
       }
       if (!first1) {
         first1 = first3;
       }
-      tmp69 = undefined;
+      tmp73 = undefined;
       if (tmp25) {
         if (isChatLockedOpen) {
-          tmp69 = tmp8;
+          tmp73 = tmp8;
         }
       }
-      tmp61Result4 = tmp61(tmp5Result4, obj14);
+      tmp65Result4 = tmp65(tmp5Result4, obj13);
     } else {
-      tmp61Result4 = null;
+      tmp65Result4 = null;
       if (tmp25) {
-        tmp61Result4 = null;
+        tmp65Result4 = null;
         if (isChatLockedOpen) {
-          tmp61Result4 = tmp61(tmp5(tmp3[34]), {});
+          tmp65Result4 = tmp65(tmp5(tmp3[34]), {});
         }
       }
     }
-    items16[2] = tmp61Result4;
-    items12[1] = handleExit(GestureDetector, obj9);
-    return first4(Provider, obj7);
+    items18[2] = tmp65Result4;
+    items14[1] = handleExit(GestureDetector, obj8);
+    return first4(Provider, obj6);
   }
   tmp47 = !first1;
 });

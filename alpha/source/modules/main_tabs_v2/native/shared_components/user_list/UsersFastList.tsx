@@ -1,30 +1,30 @@
-// Module ID: 10733
-// Function ID: 10734
+// Module ID: 10863
+// Function ID: 10864
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10734, 21, 5014, 575, 10735, 6975, 9821, 5095, 5624, 1187, 6980, 10736, 1625, 7217, 10737, 10738, 10798, 10801, 14419, 14420, 7223, 2]
+// Dependencies: [32, 19, 17, 10864, 21, 5141, 575, 10865, 7101, 9952, 1652, 5747, 1187, 7106, 10866, 1627, 7338, 10867, 10868, 10928, 10931, 14550, 14551, 7344, 2]
 // Exports: UsersFastList
 
-// Module 10733 (UsersFastList)
+// Module 10863 (UsersFastList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TableRow2 from "TableRow" /* 6975 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9821 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10735 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
-import UserRowDefault from "UserRow" /* 10738 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10798 */;
-import ChannelRowDefault from "ChannelRow" /* 10801 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import TableRow2 from "TableRow" /* 7101 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9952 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10865 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10866 */;
+import UserRowDefault from "UserRow" /* 10868 */;
+import GroupDMRowDefault from "GroupDMRow" /* 10928 */;
+import ChannelRowDefault from "ChannelRow" /* 10931 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10734 */;
+import react from "react" /* 19 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10864 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const _modDef1652 = _mod1652;
 
 let c9;
 let metroImportAll;
@@ -61,7 +61,6 @@ function Placeholder(arg0) {
 function PlaceholderSection() {
   return metroImportDefault(View, {});
 }
-let react = react_mod;
 let View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 const USERS_LIST_SECTION_BOTTOM_PADDING = UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING;
@@ -77,35 +76,42 @@ obj6 = { paddingVertical: nativeDefault.space.PX_8, paddingRight: nativeDefault.
 obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 rect = { position: "absolute", left: nativeDefault.space.PX_4 + nativeDefault.space.PX_4 / 2, top: 5 };
 let closure_10 = createStyles(obj);
-const __initData = { code: "function UsersFastListTsx1(){const{scrollPosValue,stickyAt}=this.__closure;var _scrollPosValue;const scrollPos=(_scrollPosValue=scrollPosValue)===null||_scrollPosValue===void 0?void 0:_scrollPosValue.get();if(scrollPos==null||stickyAt==null){return false;}return scrollPos>=stickyAt;}" };
-const __initData2 = { code: "function UsersFastListTsx2(){const{isSticky,styles}=this.__closure;return{backgroundColor:isSticky.get()?styles.stickyHeader.backgroundColor:'transparent'};}" };
-const __initData3 = { code: "function UsersFastListTsx3(){const{isSticky}=this.__closure;return{opacity:isSticky.get()?1:0};}" };
-let closure_16 = react.memo(function UserSectionInner(stickyAt) {
+let closure_13 = { code: "(function UsersFastListTsx1(){let[scrollPosValue,stickyAt]=this.__closure;var _scrollPosValue;const scrollPos=(_scrollPosValue=scrollPosValue)===null||_scrollPosValue===void 0?void 0:_scrollPosValue.get();if(scrollPos==null||stickyAt==null){return false;}return scrollPos>=stickyAt;})" };
+let closure_14 = { code: "(function UsersFastListTsx2(){let[isSticky,styles]=this.__closure;return{backgroundColor:isSticky.get()?styles.stickyHeader.backgroundColor:'transparent'};})" };
+let closure_15 = { code: "(function UsersFastListTsx3(){let[isSticky]=this.__closure;return{opacity:isSticky.get()?1:0};})" };
+let closure_16 = react.memo(function UserSectionInner(arg0) {
   let action;
   let actionTitle;
   let badge;
   let colorOverride;
   let disableStickySections;
   let disableThemedGradient;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
-  let obj13;
-  let obj8;
+  let items10;
+  let items11;
+  let items12;
+  let items9;
+  let obj12;
+  let obj7;
   let onTitlePress;
   let scrollPosValue;
+  let stickyAt;
   let title;
   let titleLeading;
-  ({ title, colorOverride } = stickyAt);
-  ({ actionTitle, badge, scrollPosValue } = stickyAt);
-  stickyAt = stickyAt.stickyAt;
-  ({ disableThemedGradient, titleLeading, onTitlePress } = stickyAt);
-  let derivedValue;
+  let tmp11;
+  let tmp12;
+  let tmp13;
+  let tmp16;
+  let tmp17;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  ({ title, colorOverride } = arg0);
+  ({ actionTitle, badge, disableThemedGradient, titleLeading, onTitlePress } = arg0);
   let animatedStyle;
-  ({ action, disableStickySections } = stickyAt);
+  ({ action, scrollPosValue, stickyAt, disableStickySections } = arg0);
   const tmp = closure_10();
-  react = tmp;
+  let closure_2 = tmp;
+  let obj = react;
   let items = [colorOverride];
   const memo = react.useMemo(() => {
     let tmp2 = null != colorOverride;
@@ -115,116 +121,132 @@ let closure_16 = react.memo(function UserSectionInner(stickyAt) {
     }
     return tmp2;
   }, items);
-  let obj = ClientThemesOverrides;
-  const clientThemesOverride = obj.useClientThemesOverride();
+  const obj2 = ClientThemesOverrides;
+  const clientThemesOverride = obj2.useClientThemesOverride();
   const items1 = [, , , ];
   ({ section: arr2[0], interactiveSection: arr2[1] } = tmp);
   items1[2] = onTitlePress;
   items1[3] = clientThemesOverride;
   const memo1 = react.useMemo(() => {
-    const items = [closure_4.section, null != onTitlePress && closure_4.interactiveSection, clientThemesOverride];
+    const items = [closure_2.section, null != onTitlePress && closure_2.interactiveSection, clientThemesOverride];
     return items;
   }, items1);
-  const obj2 = ReanimatedRexport;
-  class C {
+  const items2 = [closure_13, scrollPosValue, stickyAt];
+  let c0;
+  let c1;
+  [tmp7, tmp8, tmp9] = items2;
+  const obj3 = _mod1652;
+  class UsersFastListTsx1 {
     constructor() {
       let value;
-      const obj = scrollPosValue;
-      if (scrollPosValue != null) {
+      const obj = c0;
+      if (c0 != null) {
         value = obj.get();
       }
-      return null != value && null != stickyAt && value >= stickyAt;
+      return null != value && null != c1 && value >= c1;
     }
   }
-  C.__closure = { scrollPosValue, stickyAt };
-  C.__workletHash = 15448160320615;
-  C.__initData = __initData;
-  derivedValue = obj2.useDerivedValue(C);
-  const obj3 = ReanimatedRexport;
-  class H {
+  const items3 = [tmp8, tmp9];
+  UsersFastListTsx1.__closure = items3;
+  UsersFastListTsx1.__workletHash = 5651317094590;
+  UsersFastListTsx1.__initData = tmp7;
+  const derivedValue = obj3.useDerivedValue(UsersFastListTsx1);
+  const items4 = [closure_14, derivedValue, tmp];
+  c0 = undefined;
+  c1 = undefined;
+  [tmp11, tmp12, tmp13] = items4;
+  const tmp3Result = _mod1652;
+  class UsersFastListTsx2 {
     constructor() {
       let backgroundColor = "transparent";
-      if (derivedValue.get()) {
-        backgroundColor = closure_4.stickyHeader.backgroundColor;
+      if (_undefined.get()) {
+        backgroundColor = _undefined2.stickyHeader.backgroundColor;
       }
       return { backgroundColor };
     }
   }
-  H.__closure = { isSticky: derivedValue, styles: tmp };
-  H.__workletHash = 6340072007400;
-  H.__initData = __initData2;
-  animatedStyle = obj3.useAnimatedStyle(H);
-  const items2 = [tmp.sectionHeader, animatedStyle];
-  const memo2 = react.useMemo(() => {
-    const items = [closure_4.sectionHeader, animatedStyle];
+  const items5 = [tmp12, tmp13];
+  UsersFastListTsx2.__closure = items5;
+  UsersFastListTsx2.__workletHash = 3082250653169;
+  UsersFastListTsx2.__initData = tmp11;
+  animatedStyle = tmp3Result.useAnimatedStyle(UsersFastListTsx2);
+  const items6 = [tmp.sectionHeader, animatedStyle];
+  const memo2 = obj.useMemo(() => {
+    const items = [closure_2.sectionHeader, animatedStyle];
     return items;
-  }, items2);
-  const fn = function w() {
-    let opacity = 0;
-    if (derivedValue.get()) {
-      opacity = 1;
+  }, items6);
+  const items7 = [closure_15, derivedValue];
+  c0 = undefined;
+  [tmp16, tmp17] = items7;
+  const tmp3Result2 = _mod1652;
+  class UsersFastListTsx3 {
+    constructor() {
+      let opacity = 0;
+      if (_undefined.get()) {
+        opacity = 1;
+      }
+      return { opacity };
     }
-    return { opacity };
-  };
-  fn.__closure = { isSticky: derivedValue };
-  fn.__workletHash = 13270974904859;
-  fn.__initData = __initData3;
-  const obj4 = ReanimatedRexport;
-  const animatedStyle1 = obj4.useAnimatedStyle(fn);
+  }
+  const items8 = [tmp17];
+  UsersFastListTsx3.__closure = items8;
+  UsersFastListTsx3.__workletHash = 4870088856322;
+  UsersFastListTsx3.__initData = tmp16;
+  const animatedStyle1 = tmp3Result2.useAnimatedStyle(UsersFastListTsx3);
   if (null == title) {
     if (null == actionTitle) {
-      const obj5 = { style: tmp.emptySection };
-      return metroImportDefault(View, obj5);
+      const obj4 = { style: tmp.emptySection };
+      return metroImportDefault(View, obj4);
     }
   }
-  const obj6 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: memo, children: items3 };
-  items3 = [title, ];
-  let tmp12 = null;
-  const Text = tmp3(5624).Text;
+  const obj5 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: memo, children: items9 };
+  items9 = [title, ];
+  let tmp20 = null;
+  const Text = tmp3(5747).Text;
   if (null != badge) {
-    const obj7 = { style: tmp.badgeWrapper, children: metroImportDefault(native.Badge, obj8) };
-    obj8 = { style: tmp.badge, value: badge };
-    tmp12 = metroImportDefault(View, obj7);
+    const obj6 = { style: tmp.badgeWrapper, children: metroImportDefault(native.Badge, obj7) };
+    obj7 = { style: tmp.badge, value: badge };
+    tmp20 = metroImportDefault(View, obj6);
   }
-  items3[1] = tmp12;
-  const tmp11Result = metroImportAll(Text, obj6);
-  let tmp11Result4 = tmp11Result;
+  items9[1] = tmp20;
+  const tmp19Result = metroImportAll(Text, obj5);
+  let tmp19Result4 = tmp19Result;
   if (null != titleLeading) {
-    const obj9 = { style: tmp.titleRow, children: items4 };
-    items4 = [titleLeading, tmp11Result];
-    tmp11Result4 = tmp11(View, obj9);
+    const obj8 = { style: tmp.titleRow, children: items10 };
+    items10 = [titleLeading, tmp19Result];
+    tmp19Result4 = tmp19(View, obj8);
   }
-  let tmp18 = tmp11Result4;
+  let tmp26 = tmp19Result4;
   if (null != onTitlePress) {
-    const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = metroImportDefault(tmp3(6980).PressableOpacity, obj10);
+    const obj9 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp19Result4 };
+    tmp26 = metroImportDefault(tmp3(7106).PressableOpacity, obj9);
   }
-  const obj11 = { style: memo1, children: items5 };
-  items5 = [tmp18, ];
-  let tmp21 = null;
-  const tmp20 = View;
+  const obj10 = { style: memo1, children: items11 };
+  items11 = [tmp26, ];
+  let tmp29 = null;
+  const tmp28 = View;
   if (null != actionTitle) {
-    const obj12 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj13) };
-    const PressableOpacity = tmp3(6980).PressableOpacity;
-    obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
-    tmp21 = metroImportDefault(PressableOpacity, obj12);
+    const obj11 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj12) };
+    const PressableOpacity = tmp3(7106).PressableOpacity;
+    obj12 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
+    tmp29 = metroImportDefault(PressableOpacity, obj11);
   }
-  items5[1] = tmp21;
-  const tmp11Result5 = metroImportAll(tmp20, obj11);
-  let tmp11Result6 = tmp11Result5;
+  items11[1] = tmp29;
+  const tmp19Result5 = metroImportAll(tmp28, obj10);
+  let tmp19Result6 = tmp19Result5;
   if (!disableStickySections) {
-    let tmp26 = !disableThemedGradient;
-    const obj14 = { style: memo2, children: items6 };
-    View = ReanimatedRexportDefault.View;
+    let tmp34 = !disableThemedGradient;
+    const obj13 = { style: memo2, children: items12 };
+    View = _modDef1652.View;
     if (!disableThemedGradient) {
-      const obj15 = { style: animatedStyle1, children: metroImportDefault(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: true }) };
-      const View2 = tmp25(5095).View;
-      tmp26 = metroImportDefault(View2, obj15);
+      const obj14 = { style: animatedStyle1, children: metroImportDefault(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: true }) };
+      const View2 = tmp33(1652).View;
+      tmp34 = metroImportDefault(View2, obj14);
     }
-    items6 = [tmp26, tmp11Result5];
-    tmp11Result6 = tmp11(View, obj14);
+    items12 = [tmp34, tmp19Result5];
+    tmp19Result6 = tmp19(View, obj13);
   }
-  return tmp11Result6;
+  return tmp19Result6;
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UsersFastList.tsx");
 

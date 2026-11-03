@@ -1,121 +1,168 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14503
+// Function ID: 14504
 // Name: TabsGradient
-// Dependencies: [19, 1072, 21, 5095, 5587, 5014, 5637, 2]
+// Dependencies: [19, 1072, 21, 1652, 5710, 5141, 5757, 2]
 // Exports: default
 
-// Module 14372 (TabsGradient)
+// Module 14503 (TabsGradient)
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import spring_spring from "spring/spring" /* 5757 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
+
+const module_1652 = _mod1652;
 
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
+function useGradientAnimatedStyle(tmpResult) {
+  let tmp2;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp = _mod1652;
+  const items = [closure_10, , , ];
+  const useAnimatedStyle = tmp.useAnimatedStyle;
+  items[1] = spring_spring.withSpring;
+  items[2] = tmpResult;
+  items[3] = closure_8;
+  let c0;
+  let c1;
+  let c2;
+  [tmp2, tmp3, tmp4, tmp5] = items;
+  class TabsGradientNativeTsx1 {
+    constructor() {
+      tmp = closure_0;
+      num = 0;
+      if (closure_1.get()) {
+        num = 1;
+      }
+      obj = { opacity: tmp(num, closure_2) };
+      return obj;
+    }
+  }
+  const items1 = [tmp3, tmp4, tmp5];
+  TabsGradientNativeTsx1.__closure = items1;
+  TabsGradientNativeTsx1.__workletHash = 15771419844398;
+  TabsGradientNativeTsx1.__initData = tmp2;
+  return useAnimatedStyle(TabsGradientNativeTsx1);
+}
 const HorizontalGradient = Constants.HorizontalGradient;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const LinearGradient = ReanimatedRexport.createAnimatedComponent(LinearGradientDefault);
-const SPRING_CONFIG = { mass: 1, damping: 30, stiffness: 250 };
+const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
+let closure_8 = { mass: 1, damping: 30, stiffness: 250 };
 let closure_9 = createStyles.createStyles({ gradient: { width: 50, position: "absolute", top: 0, bottom: 0, zIndex: 100 }, left: { left: 0 }, right: { right: 0 } });
-const __initData = { code: "function TabsGradientNativeTsx1(){const{withSpring,visible,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};}" };
-const __initData2 = { code: "function TabsGradientNativeTsx2(){const{itemDimensions,state}=this.__closure;const items=itemDimensions.get();const itemWidths=items.reduce(function(s,layout){var _layout$width;return s+((_layout$width=layout===null||layout===void 0?void 0:layout.width)!==null&&_layout$width!==void 0?_layout$width:0);},0);const itemsSpacing=items.length*state.itemSpacing;return itemWidths+itemsSpacing;}" };
-const __initData3 = { code: "function TabsGradientNativeTsx3(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()>0&&totalItemWidth.get()>pageWidth;}" };
-const __initData4 = { code: "function TabsGradientNativeTsx4(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()<totalItemWidth.get()-pageWidth&&totalItemWidth.get()>pageWidth;}" };
+let closure_10 = { code: "(function TabsGradientNativeTsx1(){let[withSpring,visible,SPRING_CONFIG]=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};})" };
+let closure_12 = { code: "(function TabsGradientNativeTsx2(){let[itemDimensions,state]=this.__closure;const items=itemDimensions.get();const itemWidths=items.reduce(function(s,layout){var _layout$width;return s+((_layout$width=layout===null||layout===void 0?void 0:layout.width)!==null&&_layout$width!==void 0?_layout$width:0);},0);const itemsSpacing=items.length*state.itemSpacing;return itemWidths+itemsSpacing;})" };
+let closure_13 = { code: "(function TabsGradientNativeTsx3(){let[scrollOffset,totalItemWidth,pageWidth]=this.__closure;return scrollOffset.get()>0&&totalItemWidth.get()>pageWidth;})" };
+let closure_14 = { code: "(function TabsGradientNativeTsx4(){let[scrollOffset,totalItemWidth,pageWidth]=this.__closure;return scrollOffset.get()<totalItemWidth.get()-pageWidth&&totalItemWidth.get()>pageWidth;})" };
 const result = size.fileFinishedImporting("design/components/Tabs/native/TabsGradient.native.tsx");
 
-export default function TabsGradient(state) {
-  let derivedValue1;
-  let items1;
-  let items2;
-  let items3;
-  function s() {
-    const withSpring = derivedValue1(dependencyMap[6]).withSpring;
-    let num = 0;
-    derivedValue1(dependencyMap[6]);
-    if (derivedValue2.get()) {
-      num = 1;
-    }
-    const obj = { opacity: withSpring(num, SPRING_CONFIG) };
-    return obj;
-  }
-  state = state.state;
-  const colors = state.colors;
-  const scrollOffset = state.scrollOffset;
+export default function TabsGradient(arg0) {
+  let colors;
+  let items7;
+  let items8;
+  let items9;
+  let pageWidth;
+  let scrollOffset;
+  let state;
+  let tmp10;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  ({ state, colors } = arg0);
+  ({ scrollOffset, pageWidth } = state);
+  let tmp = require;
+  const tmp2 = dependencyMap;
   const itemDimensions = state.itemDimensions;
-  const pageWidth = state.pageWidth;
-  let obj = derivedValue1(5095);
-  const fn = function f() {
-    const value = itemDimensions.get();
-    return value.reduce((acc, width) => {
-      let num;
-      if (width != null) {
-        num = width.width;
-      }
-      if (num == null) {
-        num = 0;
-      }
-      return acc + num;
-    }, 0) + value.length * state.itemSpacing;
-  };
-  fn.__closure = { itemDimensions, state };
-  fn.__workletHash = 456613763143;
-  fn.__initData = __initData2;
-  const derivedValue = obj.useDerivedValue(fn);
-  const fn2 = function y() {
-    const tmp = scrollOffset.get() > 0 && derivedValue.get() > pageWidth;
-    return tmp;
-  };
-  fn2.__closure = { scrollOffset, totalItemWidth: derivedValue, pageWidth };
-  fn2.__workletHash = 13237586618288;
-  fn2.__initData = __initData3;
-  const obj2 = derivedValue1(5095);
-  derivedValue1 = obj2.useDerivedValue(fn2);
-  const fn3 = s;
-  const obj3 = derivedValue1(5095);
-  fn3.__closure = { withSpring: derivedValue1(5637).withSpring, visible: derivedValue1, SPRING_CONFIG };
-  fn3.__workletHash = 14959306962615;
-  fn3.__initData = __initData;
-  ({ withSpring: derivedValue1(5637).withSpring, visible: derivedValue1, SPRING_CONFIG });
-  const animatedStyle = obj3.useAnimatedStyle(fn3);
-  const obj5 = derivedValue1(5095);
-  class W {
+  let items = [closure_12, itemDimensions, state];
+  let c0;
+  let c1;
+  [tmp3, tmp4, tmp5] = items;
+  const obj = _mod1652;
+  class TabsGradientNativeTsx2 {
     constructor() {
-      const value = scrollOffset.get();
-      const tmp3 = value < derivedValue.get() - pageWidth && derivedValue.get() > tmp2;
+      value = closure_0.get();
+      return value.reduce((acc, width) => {
+        let num;
+        if (width != null) {
+          num = width.width;
+        }
+        if (num == null) {
+          num = 0;
+        }
+        return acc + num;
+      }, 0) + value.length * closure_1.itemSpacing;
+    }
+  }
+  const items1 = [tmp4, tmp5];
+  TabsGradientNativeTsx2.__closure = items1;
+  TabsGradientNativeTsx2.__workletHash = 829705063742;
+  TabsGradientNativeTsx2.__initData = tmp3;
+  const derivedValue = obj.useDerivedValue(TabsGradientNativeTsx2);
+  const items2 = [closure_13, scrollOffset, derivedValue, pageWidth];
+  c0 = undefined;
+  c1 = undefined;
+  let c2;
+  [tmp7, tmp8, tmp9, tmp10] = items2;
+  const tmpResult = _mod1652;
+  class TabsGradientNativeTsx3 {
+    constructor() {
+      const tmp = _undefined.get() > 0 && _undefined2.get() > c2;
+      return tmp;
+    }
+  }
+  const items3 = [tmp8, tmp9, tmp10];
+  TabsGradientNativeTsx3.__closure = items3;
+  TabsGradientNativeTsx3.__workletHash = 2315316338857;
+  TabsGradientNativeTsx3.__initData = tmp7;
+  const items4 = [closure_14, scrollOffset, derivedValue, pageWidth];
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp13, tmp14, tmp15, tmp16] = items4;
+  const tmp12 = useGradientAnimatedStyle(tmpResult.useDerivedValue(TabsGradientNativeTsx3));
+  const tmp11 = useGradientAnimatedStyle;
+  const tmpResult2 = _mod1652;
+  class TabsGradientNativeTsx4 {
+    constructor() {
+      const value = _undefined.get();
+      const tmp3 = value < _undefined2.get() - c2 && _undefined2.get() > tmp2;
       return tmp3;
     }
   }
-  W.__closure = { scrollOffset, totalItemWidth: derivedValue, pageWidth };
-  W.__workletHash = 13808489302165;
-  W.__initData = __initData4;
-  const derivedValue2 = obj5.useDerivedValue(W);
-  const fn4 = s;
-  const obj6 = derivedValue1(5095);
-  fn4.__closure = { withSpring: derivedValue1(5637).withSpring, visible: derivedValue2, SPRING_CONFIG };
-  fn4.__workletHash = 14959306962615;
-  fn4.__initData = __initData;
-  ({ withSpring: derivedValue1(5637).withSpring, visible: derivedValue2, SPRING_CONFIG });
-  const animatedStyle1 = obj6.useAnimatedStyle(fn4);
-  const tmp6 = closure_9();
-  let items = [colors];
-  const obj9 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors, style: items1, pointerEvents: "none" };
-  items1 = [, , ];
-  const obj8 = { children: items2 };
-  ({ left: arr2[0], gradient: arr2[1] } = tmp6);
-  items1[2] = animatedStyle;
+  const items5 = [tmp14, tmp15, tmp16];
+  TabsGradientNativeTsx4.__closure = items5;
+  TabsGradientNativeTsx4.__workletHash = 2346791353228;
+  TabsGradientNativeTsx4.__initData = tmp13;
+  const tmp11Result = tmp11(tmpResult2.useDerivedValue(TabsGradientNativeTsx4));
+  const tmp18 = closure_9();
+  const items6 = [colors];
+  const obj3 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors, style: items7, pointerEvents: "none" };
+  items7 = [, , ];
+  const obj2 = { children: items8 };
+  ({ left: arr8[0], gradient: arr8[1] } = tmp18);
+  items7[2] = tmp12;
   const memo = react.useMemo(() => {
     const items = [...colors];
     return items.reverse();
-  }, items);
-  items2 = [closure_4(LinearGradient, obj9), ];
-  const obj10 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors: memo, style: items3, pointerEvents: "none" };
-  items3 = [, , ];
-  ({ right: arr4[0], gradient: arr4[1] } = tmp6);
-  items3[2] = animatedStyle1;
-  items2[1] = closure_4(LinearGradient, obj10);
-  return closure_6(closure_5, obj8);
+  }, items6);
+  items8 = [React3(LinearGradient, obj3), ];
+  const obj4 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors: memo, style: items9, pointerEvents: "none" };
+  items9 = [, , ];
+  ({ right: arr10[0], gradient: arr10[1] } = tmp18);
+  items9[2] = tmp11Result;
+  items8[1] = React3(LinearGradient, obj4);
+  return metroRequire(hasOwnProperty, obj2);
 };

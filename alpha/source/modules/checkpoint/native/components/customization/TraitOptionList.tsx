@@ -1,182 +1,230 @@
-// Module ID: 13695
-// Function ID: 13696
+// Module ID: 13823
+// Function ID: 13824
 // Name: TraitOptionList
-// Dependencies: [19, 17, 5015, 6066, 21, 575, 5014, 8031, 6434, 504, 5274, 5095, 5612, 1491, 5254, 5260, 13696, 2]
+// Dependencies: [32, 19, 17, 5142, 6186, 21, 575, 5141, 13824, 8155, 6554, 504, 5397, 1652, 5735, 1493, 5377, 1705, 5383, 2]
 // Exports: default
 
-// Module 13695 (TraitOptionList)
+// Module 13823 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import HapticUtils from "HapticUtils" /* 5260 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6434 */;
-import inlineStyles from "inlineStyles" /* 8031 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import HapticUtils from "HapticUtils" /* 5383 */;
+import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6554 */;
+import inlineStyles from "inlineStyles" /* 8155 */;
+import TraitOptionItem from "TraitOptionItem" /* 13824 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import CheckpointConstants from "CheckpointConstants" /* 6066 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 const inlineStylesDefault = inlineStyles;
-let importDefault, set;
+let set;
 
-let TRAIT_OPTION_HEIGHT;
-let c10;
 let c9;
-let metroRequire;
-function SelectedWindow() {
+let metroImportAll;
+function SelectedWindow(size) {
   let Polygon;
+  let height;
   let obj;
-  size = { width: TRAIT_OPTION_WIDTH, height: TRAIT_OPTION_HEIGHT, style: closure_13().selectorOverlay, pointerEvents: "none", children: React4(Polygon, obj) };
-  closure_13();
-  obj = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: metroRequire, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
+  let width;
+  size = size.size;
+  const tmp = closure_12();
+  ({ width, height } = TraitOptionItem.TRAIT_OPTION_SIZE_TO_DIMENSIONS[size]);
+  const size1 = { width, height, style: tmp.selectorOverlay, pointerEvents: "none", children: metroImportAll(Polygon, obj) };
+  obj = { points: TraitOptionItem.TRAIT_OPTION_SIZE_TO_SHAPE_POINTS[size], fill: "transparent", stroke: CHECKPOINT_PRIMARY, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
   const tmp2 = inlineStylesDefault;
   Polygon = inlineStyles.Polygon;
-  return React4(tmp2, size);
+  return metroImportAll(tmp2, size1);
 }
 const View = react_native.View;
-({ CHECKPOINT_PRIMARY: metroRequire, TRAIT_OPTION_HEIGHT } = CheckpointConstants);
-const TRAIT_OPTION_WIDTH = CheckpointConstants.TRAIT_OPTION_WIDTH;
-({ jsx: c9, jsxs: c10 } = Fragment);
+const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const PX_12 = nativeDefault.space.PX_12;
 const PX_16 = nativeDefault.space.PX_16;
-let closure_12 = TRAIT_OPTION_WIDTH + PX_12;
-let obj = { assetList: { paddingHorizontal: PX_16 }, radioGroup: { flexDirection: "row", gap: PX_12 }, selectorOverlay: { position: "absolute", left: PX_16, top: 0, width: TRAIT_OPTION_WIDTH, height: TRAIT_OPTION_HEIGHT } };
-let closure_13 = createStyles.createStyles(obj);
-const __initData = { code: "function TraitOptionListTsx1(){const{introIndex}=this.__closure;return introIndex.get();}" };
-const __initData2 = { code: "function TraitOptionListTsx2(index,previousIndex){const{scrollTo,scrollViewRef,ASSET_ITEM_STEP}=this.__closure;if(previousIndex!=null&&index!==previousIndex)scrollTo(scrollViewRef,index*ASSET_ITEM_STEP,0,false);}" };
-let closure_17 = { code: "function TraitOptionListTsx3(finished){const{runOnJS,onIntroStep,target}=this.__closure;if(finished===true)runOnJS(onIntroStep)(target);}" };
+let obj = { assetList: { paddingHorizontal: PX_16 }, radioGroup: { flexDirection: "row", gap: PX_12 }, selectorOverlay: { position: "absolute", left: PX_16, top: 0 } };
+let closure_12 = createStyles.createStyles(obj);
+let closure_14 = { code: "(function TraitOptionListTsx1(){let[introIndex]=this.__closure;return introIndex.get();})" };
+let closure_15 = { code: "(function TraitOptionListTsx2(index,previousIndex){let[scrollTo,scrollViewRef,optionStep]=this.__closure;if(previousIndex!=null&&index!==previousIndex)scrollTo(scrollViewRef,index*optionStep,0,false);})" };
+let closure_16 = { code: "(function TraitOptionListTsx3(finished){let[scheduleOnRN,onIntroStep,target]=this.__closure;if(finished===true)scheduleOnRN(onIntroStep,target);})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitOptionList.tsx");
 
-export default function TraitOptionList(options) {
+export default function TraitOptionList(size) {
+  let _undefined;
+  let c13;
   let disabled;
   let hideCornerFlag;
   let introStartIndex;
-  let items3;
-  let obj7;
+  let items7;
+  let obj6;
+  let tmp11;
+  let tmp16;
+  let tmp17;
+  let tmp18;
   let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp28;
   let tmp2Result4;
-  options = options.options;
-  ({ selectedOptionId: importDefault, disabled } = options);
-  ({ hideRarity: react, introStartIndex } = options);
-  const onIntroStep = options.onIntroStep;
-  const onSelectOption = options.onSelectOption;
+  size = size.size;
+  const options = size.options;
+  ({ selectedOptionId: dependencyMap, disabled } = size);
+  ({ hideRarity: react, introStartIndex } = size);
+  const onIntroStep = size.onIntroStep;
+  const onSelectOption = size.onSelectOption;
+  closure_12 = undefined;
+  c13 = undefined;
+  let c14;
   let sharedValue;
   function cancelScrollSettle() {
-    if (null != closure_11.current) {
+    if (null != closure_12.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_11.current);
-      closure_11.current = null;
+      clearTimeout(closure_12.current);
+      closure_12.current = null;
     }
   }
-  const customizationOption = options.customizationOption;
-  let tmp = cancelScrollSettle();
-  let tmp2 = options;
-  let tmp3 = disabled;
-  let obj = options(disabled[9]);
+  const customizationOption = size.customizationOption;
+  let tmp = closure_12();
+  let tmp2 = size;
+  let tmp3 = dependencyMap;
+  let obj = size(504);
   let items = [onIntroStep];
-  let closure_7 = obj.useStateFromStores(items, () => onIntroStep.useReducedMotion);
-  let obj2 = options(disabled[10]);
+  let closure_8 = obj.useStateFromStores(items, () => onIntroStep.useReducedMotion);
+  let obj2 = size(5397);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
-  let obj3 = options(disabled[11]);
+  let obj3 = size(1652);
   const animatedRef = obj3.useAnimatedRef();
   const ref = react.useRef(false);
-  let closure_11 = react.useRef(null);
-  let bound = Math.max(options.findIndex((optionId) => optionId.optionId === importDefault), 0);
-  let tmp7 = importDefault;
-  let tmp8 = require("react");
+  closure_12 = react.useRef(null);
+  let bound = Math.max(options.findIndex((optionId) => optionId.optionId === dependencyMap), 0);
+  let tmp7 = options;
+  let tmp8 = options(5735);
   if (introStartIndex > 0) {
     bound = introStartIndex;
   }
   const tmp8Result = tmp8(bound);
-  const bound1 = Math.max(closure_11, tmp7(tmp3[13])().width - closure_11 - isScreenReaderEnabled);
-  const tmp2Result = tmp2(tmp3[11]);
+  [tmp11, c13] = disabled(obj4.useState(tmp7(1493)().width), 2);
+  const tmp10 = disabled(obj4.useState(tmp7(1493)().width), 2);
+  const width = tmp2(13824).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const sum = width + animatedRef;
+  c14 = sum;
+  const bound1 = Math.max(ref, tmp11 - ref - width);
+  const tmp2Result = tmp2(1652);
   sharedValue = tmp2Result.useSharedValue(introStartIndex);
-  let fn = function w() {
-    return sharedValue.get();
-  };
-  fn.__closure = { introIndex: sharedValue };
-  fn.__workletHash = 13442585118467;
-  fn.__initData = __initData;
-  const tmp2Result3 = tmp2(tmp3[11]);
-  class P {
+  let items1 = [c14, sharedValue];
+  let c0;
+  [tmp16, tmp17] = items1;
+  const tmp2Result3 = tmp2(1652);
+  class TraitOptionListTsx1 {
+    constructor() {
+      return _undefined.get();
+    }
+  }
+  const items2 = [tmp17];
+  TraitOptionListTsx1.__closure = items2;
+  TraitOptionListTsx1.__workletHash = 6181032318714;
+  TraitOptionListTsx1.__initData = tmp16;
+  const items3 = [sharedValue, , , ];
+  const useAnimatedReaction = tmp2Result3.useAnimatedReaction;
+  items3[1] = tmp2(1652).scrollTo;
+  items3[2] = animatedRef;
+  items3[3] = sum;
+  c0 = undefined;
+  let c1;
+  let c2;
+  [tmp18, tmp19, tmp20, tmp21] = items3;
+  class TraitOptionListTsx2 {
     constructor(arg0, arg1) {
       const tmp = null != arg1 && arg0 !== arg1;
       if (tmp) {
-        const obj = ReanimatedRexport;
-        obj.scrollTo(animatedRef, arg0 * closure_12, 0, false);
+        _undefined(c1, arg0 * c2, 0, false);
       }
     }
   }
-  P.__closure = { scrollTo: tmp2(tmp3[11]).scrollTo, scrollViewRef: animatedRef, ASSET_ITEM_STEP: sharedValue };
-  P.__workletHash = 9917910763820;
-  P.__initData = __initData2;
-  let tmp12 = sharedValue;
-  ({ scrollTo: tmp2(tmp3[11]).scrollTo, scrollViewRef: animatedRef, ASSET_ITEM_STEP: sharedValue });
-  const animatedReaction = tmp2Result3.useAnimatedReaction(fn, P);
-  const items1 = [sharedValue, introStartIndex, onIntroStep];
+  const items4 = [tmp19, tmp20, tmp21];
+  TraitOptionListTsx2.__closure = items4;
+  TraitOptionListTsx2.__workletHash = 10161312388757;
+  TraitOptionListTsx2.__initData = tmp18;
+  const animatedReaction = useAnimatedReaction(TraitOptionListTsx1, TraitOptionListTsx2);
+  const items5 = [sharedValue, introStartIndex, onIntroStep];
   const effect = obj4.useEffect(() => {
     let tmp2;
     if (0 !== introStartIndex) {
       let tmp3 = globalThis;
       const _Array = Array;
       let obj = { length: tmp2 };
+      const tmp5 = sharedValue;
+      const tmp6 = require;
+      const tmp7 = dependencyMap;
       const arr = Array.from(obj, (arg0, arg1) => {
         let Easing;
-        const diff = closure_4 - arg1 - 1;
-        let closure_0 = diff;
-        const withDelay = options(disabled[11]).withDelay;
-        const tmp2 = options(disabled[11]);
-        const tmp3 = options(disabled[14]);
-        let obj = { duration: 100, easing: Easing.out(options(disabled[11]).Easing.cubic) };
+        let tmp4;
+        let tmp5;
+        let tmp6;
+        let tmp7;
+        const diff = introStartIndex - arg1 - 1;
+        const withDelay = size(dependencyMap[13]).withDelay;
+        const tmp2 = size(dependencyMap[13]);
+        const tmp3 = size(dependencyMap[16]);
         const withTiming = tmp3.withTiming;
-        Easing = options(disabled[11]).Easing;
-        const fn = function o(arg0) {
-          if (true === arg0) {
-            const obj = options(disabled[11]);
-            obj.runOnJS(onIntroStep)(closure_0);
+        const obj = { duration: 100, easing: Easing.out(size(dependencyMap[13]).Easing.cubic) };
+        Easing = size(dependencyMap[13]).Easing;
+        const items = [cancelScrollSettle, size(dependencyMap[17]).scheduleOnRN, onIntroStep, diff];
+        let c0;
+        let c1;
+        let c2;
+        [tmp4, tmp5, tmp6, tmp7] = items;
+        class TraitOptionListTsx3 {
+          constructor(arg0) {
+            if (true === arg0) {
+              tmp = closure_0;
+              tmp2 = closure_1;
+              tmp3 = closure_2;
+              tmp4 = closure_0(closure_1, closure_2);
+            }
+            return;
           }
-        };
-        fn.__closure = { runOnJS: options(disabled[11]).runOnJS, onIntroStep, target: diff };
-        fn.__workletHash = 1554090468151;
-        fn.__initData = __initData;
-        ({ runOnJS: options(disabled[11]).runOnJS, onIntroStep, target: diff });
-        return withDelay(250, withTiming(diff, obj, "respect-motion-settings", fn));
+        }
+        const items1 = [tmp5, tmp6, tmp7];
+        TraitOptionListTsx3.__closure = items1;
+        TraitOptionListTsx3.__workletHash = 14744162111459;
+        TraitOptionListTsx3.__initData = tmp4;
+        return withDelay(250, withTiming(diff, obj, "respect-motion-settings", TraitOptionListTsx3));
       });
       set = sharedValue.set;
-      const tmp8 = ReanimatedRexport;
+      const tmp8 = _mod1652;
       const withSequence = tmp8.withSequence;
-      const items = [];
+      let items = [];
       HermesBuiltin.arraySpread(items, arr, 0);
       const result = set(HermesBuiltin.apply(withSequence, items, tmp8));
       return () => {
-        const obj = options(disabled[11]);
+        const obj = size(dependencyMap[13]);
         return obj.cancelAnimation(sharedValue);
       };
     }
-  }, items1);
-  const items2 = [disabled, isScreenReaderEnabled];
-  const effect1 = obj4.useEffect(() => cancelScrollSettle, items2);
-  const obj6 = {
+  }, items5);
+  const items6 = [disabled, isScreenReaderEnabled];
+  const effect1 = obj4.useEffect(() => cancelScrollSettle, items6);
+  const obj5 = {
     ref: animatedRef,
     horizontal: true,
-    contentOffset: { x: tmp8Result * sharedValue, y: 0 },
+    contentOffset: { x: tmp8Result * sum, y: 0 },
     scrollEnabled: !disabled,
     showsHorizontalScrollIndicator: false,
     decelerationRate: "fast",
-    snapToInterval: tmp19,
+    snapToInterval: tmp28,
     onScrollBeginDrag: function handleScrollBeginDrag() {
       const tmp = isScreenReaderEnabled;
       if (!tmp) {
-        const obj = ReanimatedRexport;
+        const obj = _mod1652;
         obj.cancelAnimation(sharedValue);
-        if (null != closure_11.current) {
+        if (null != closure_12.current) {
           const _clearTimeout = clearTimeout;
-          clearTimeout(closure_11.current);
-          closure_11.current = null;
+          clearTimeout(closure_12.current);
+          closure_12.current = null;
         }
         ref.current = true;
       }
@@ -184,15 +232,15 @@ export default function TraitOptionList(options) {
     onScrollEndDrag: function scheduleScrollSettle(nativeEvent) {
       let closure_0;
       const x = nativeEvent.nativeEvent.contentOffset.x;
-      const tmp = closure_11;
-      if (null != closure_11.current) {
+      const tmp = closure_12;
+      if (null != closure_12.current) {
         let tmp2 = globalThis;
         const _clearTimeout = clearTimeout;
         clearTimeout(tmp.current);
         tmp.current = null;
       }
       tmp.current = setTimeout(() => {
-        closure_11.current = null;
+        closure_12.current = null;
         ref.current = false;
         const tmp2 = disabled;
         if (!tmp2) {
@@ -201,12 +249,12 @@ export default function TraitOptionList(options) {
             const _Math = Math;
             const _Math2 = Math;
             const _Math3 = Math;
-            const tmp7 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, tmp / sharedValue), options.length - 1))];
+            const tmp7 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, tmp / c14), options.length - 1))];
             if (null != tmp7) {
-              if (tmp7.optionId !== importDefault) {
+              if (tmp7.optionId !== dependencyMap) {
                 onSelectOption(tmp7.trait, tmp7.optionId);
-                const obj = x(closure_1_2[15]);
-                const result = obj.triggerHapticFeedback(x(closure_1_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
+                const obj = x(closure_1_2[18]);
+                const result = obj.triggerHapticFeedback(x(closure_1_2[18]).HapticFeedbackTypes.IMPACT_LIGHT);
               }
             }
           }
@@ -215,10 +263,10 @@ export default function TraitOptionList(options) {
     },
     onMomentumScrollBegin: cancelScrollSettle,
     onMomentumScrollEnd: function handleMomentumScrollEnd(arg0) {
-      if (null != closure_11.current) {
+      if (null != closure_12.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(closure_11.current);
-        closure_11.current = null;
+        clearTimeout(closure_12.current);
+        closure_12.current = null;
       }
       if (ref.current) {
         tmp4.current = false;
@@ -229,9 +277,9 @@ export default function TraitOptionList(options) {
             const _Math = Math;
             const _Math2 = Math;
             const _Math3 = Math;
-            const tmp12 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, tmp6 / closure_12), options.length - 1))];
+            const tmp12 = options[Math.max(Math, 0, Math.min(Math, Math.round(Math, tmp6 / c14), options.length - 1))];
             if (null != tmp12) {
-              if (tmp12.optionId !== importDefault) {
+              if (tmp12.optionId !== dependencyMap) {
                 onSelectOption(tmp12.trait, tmp12.optionId);
                 const obj = HapticUtils;
                 const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
@@ -241,32 +289,36 @@ export default function TraitOptionList(options) {
         }
       }
     },
-    contentContainerStyle: items3,
-    children: animatedRef(introStartIndex, obj7)
+    onLayout: function handleLayout(nativeEvent) {
+      _undefined(nativeEvent.nativeEvent.layout.width);
+    },
+    contentContainerStyle: items7,
+    children: closure_8(introStartIndex, obj6)
   };
-  tmp19 = undefined;
-  const ScrollView = tmp7(tmp3[11]).ScrollView;
-  const tmp16 = ref;
+  tmp28 = undefined;
+  const ScrollView = tmp7(1652).ScrollView;
   if (!isScreenReaderEnabled) {
-    tmp19 = tmp12;
+    tmp28 = sum;
   }
-  items3 = [tmp.assetList, { paddingRight: bound1 }];
-  obj7 = {
+  items7 = [tmp.assetList, { paddingRight: bound1 }];
+  obj6 = {
     style: tmp.radioGroup,
     accessibilityRole: "radiogroup",
     accessibilityLabel: tmp2Result4.getCustomizationOptionName(customizationOption),
     children: options.map((traitOption, index) => {
       let obj2;
-      importDefault = index;
+      size = traitOption;
+      let closure_1 = index;
       let obj = {
+        size,
         traitOption,
         accessibilityLabel: obj2.getAssetAccessibilityLabel(traitOption, hideCornerFlag),
-        isSelected: traitOption.optionId === importDefault,
+        isSelected: traitOption.optionId === dependencyMap,
         showSelectedBorder: isScreenReaderEnabled && traitOption.optionId === tmp4,
         hideCornerFlag,
         disabled,
         onPress() {
-          const obj = ReanimatedRexport;
+          const obj = _mod1652;
           obj.cancelAnimation(sharedValue);
           const tmp2 = index;
           if (null != ref.current) {
@@ -274,32 +326,36 @@ export default function TraitOptionList(options) {
             clearTimeout(ref.current);
             ref.current = null;
           }
-          closure_10.current = false;
-          if (traitOption.optionId !== importDefault) {
+          closure_11.current = false;
+          if (traitOption.optionId !== dependencyMap) {
             onSelectOption(traitOption.trait, traitOption.optionId);
-            const obj2 = traitOption(disabled[15]);
-            const result = obj2.triggerHapticFeedback(traitOption(disabled[15]).HapticFeedbackTypes.IMPACT_LIGHT);
+            const obj2 = traitOption(closure_1_2[18]);
+            const result = obj2.triggerHapticFeedback(traitOption(closure_1_2[18]).HapticFeedbackTypes.IMPACT_LIGHT);
           }
           const tmp14 = isScreenReaderEnabled;
           if (!tmp14) {
             const current = animatedRef.current;
             if (current != null) {
-              const obj3 = { x: tmp2 * closure_12, animated: !closure_7 };
+              const obj3 = { x: tmp2 * c14, animated: !closure_8 };
               current.scrollTo(obj3);
             }
           }
         }
       };
-      let tmp2 = require("TraitOptionItem");
-      obj2 = options(disabled[8]);
-      return animatedRef(tmp2, obj, traitOption.optionId);
+      let tmp2 = options(dependencyMap[8]);
+      obj2 = size(dependencyMap[10]);
+      return closure_8(tmp2, obj, traitOption.optionId);
     })
   };
-  tmp2Result4 = tmp2(tmp3[8]);
-  const children = [animatedRef(ScrollView, obj6), ];
-  children[1] = !isScreenReaderEnabled && tmp18(SelectedWindow, {});
-  const tmp18Result = !isScreenReaderEnabled && tmp18(SelectedWindow, {});
-  return tmp16(introStartIndex, { children });
+  tmp2Result4 = tmp2(6554);
+  const children = [closure_8(ScrollView, obj5), ];
+  let tmp27Result = !isScreenReaderEnabled;
+  if (tmp27Result) {
+    const obj7 = { size };
+    tmp27Result = tmp27(c13, obj7);
+  }
+  children[1] = tmp27Result;
+  return isScreenReaderEnabled(introStartIndex, { children });
 };
 export const TRAIT_OPTION_SPACING = PX_12;
 export const CONTENT_INSET = PX_16;

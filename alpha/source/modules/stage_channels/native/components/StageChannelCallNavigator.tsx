@@ -1,28 +1,31 @@
-// Module ID: 11849
-// Function ID: 11850
+// Module ID: 11986
+// Function ID: 11987
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 11850, 5095, 5637, 575, 11851, 11912, 11853, 11004, 11003, 9830, 11228, 5759, 11913, 11998, 5080, 11701, 12006, 12007, 11856, 12012, 12020, 12022, 12055, 12056, 5014, 12057, 11874, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 11987, 1652, 5757, 575, 11988, 12049, 11990, 11137, 11136, 9961, 11365, 5879, 12050, 12135, 5207, 11838, 12143, 12144, 11993, 12149, 12157, 12159, 12192, 12193, 5141, 12194, 12011, 2]
 // Exports: default
 
-// Module 11849 (StageChannelCallNavigator)
+// Module 11986 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import spring from "spring" /* 5637 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
-import MessageManagerDefault from "MessageManager" /* 9830 */;
-import participantHasVideoDefault from "participantHasVideo" /* 11228 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 11874 */;
-import JoinStageViewDefault from "JoinStageView" /* 11912 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12057 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import spring_spring from "spring/spring" /* 5757 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
+import MessageManagerDefault from "MessageManager" /* 9961 */;
+import participantHasVideoDefault from "participantHasVideo" /* 11365 */;
+import ModeratorOverlayState from "ModeratorOverlayState" /* 11987 */;
+import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 11988 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 12011 */;
+import JoinStageViewDefault from "JoinStageView" /* 12049 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12194 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const _modDef1652 = _mod1652;
 let importDefault;
 
 let c10;
@@ -32,104 +35,129 @@ let metroImportAll;
 let metroRequire;
 let obj2;
 function ModeratorViewOverlay(channel) {
-  let closure_1;
-  let closure_3;
+  let c2;
   let first;
-  let items1;
-  let obj6;
+  let items3;
+  let obj5;
+  let tmp10;
+  let tmp11;
+  let tmp6;
+  let tmp8;
+  let tmp9;
   channel = channel.channel;
   first = undefined;
-  let first1;
-  _slicedToArray = undefined;
-  let tmp = first1;
-  let obj = first(first1[5]);
+  let tmp = dependencyMap;
+  let obj = ModeratorOverlayState;
   [first, [][0]] = obj.useModeratorOverlayChannelState(channel.id);
-  importDefault = tmp4;
-  const tmp5 = _slicedToArray(react.useState(first), 2);
-  first1 = tmp5[0];
-  _slicedToArray = tmp5[1];
-  const fn = function s() {
-    let num = 0;
-    const withSpring = spring.withSpring;
-    spring;
-    if (first1) {
-      num = 1;
+  let closure_1 = tmp4;
+  [tmp6, c2] = _slicedToArray(react.useState(first), 2);
+  _slicedToArray(react.useState(first), 2);
+  const items = [closure_13, , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = spring_spring.withSpring;
+  items[2] = tmp6;
+  items[3] = closure_11;
+  let c0;
+  let c1;
+  c2 = undefined;
+  [tmp8, tmp9, tmp10, tmp11] = items;
+  const obj2 = react;
+  class StageChannelCallNavigatorTsx1 {
+    constructor() {
+      let num = 0;
+      const tmp = c0;
+      if (c1) {
+        num = 1;
+      }
+      const obj = { opacity: tmp(num, c2) };
+      return obj;
     }
-    const obj = { opacity: withSpring(num, viewAnimationConfig) };
-    return obj;
-  };
-  const obj2 = first(first1[6]);
-  fn.__closure = { withSpring: first(first1[7]).withSpring, showStartStageView: first1, viewAnimationConfig };
-  fn.__workletHash = 3663814804791;
-  fn.__initData = __initData;
-  const items = [first];
-  ({ withSpring: first(first1[7]).withSpring, showStartStageView: first1, viewAnimationConfig });
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  const effect = react.useEffect(() => {
+  }
+  const items1 = [tmp9, tmp10, tmp11];
+  StageChannelCallNavigatorTsx1.__closure = items1;
+  StageChannelCallNavigatorTsx1.__workletHash = 5590822981710;
+  StageChannelCallNavigatorTsx1.__initData = tmp8;
+  const items2 = [first];
+  const animatedStyle = useAnimatedStyle(StageChannelCallNavigatorTsx1);
+  const effect = obj2.useEffect(() => {
     let closure_0;
     const timeout = setTimeout(() => {
       const tmp = closure_0;
       if (!tmp) {
-        closure_1_3(false);
+        closure_1_2(false);
       }
     }, 500);
     return () => {
       clearTimeout(closure_0);
     };
-  }, items);
-  let tmp10 = null;
-  if (first1) {
-    const obj4 = { style: items1, children: closure_8(require("ModeratorStartStageView"), obj6) };
-    items1 = [closure_5.absoluteFill, , ];
-    const obj5 = { backgroundColor: require("native").unsafe_rawColors.PRIMARY_800 };
-    const View = require("ReanimatedRexport").View;
-    items1[1] = obj5;
-    items1[2] = animatedStyle;
-    obj6 = { channel, onSkip: tmp9 };
-    tmp10 = closure_8(View, obj4);
+  }, items2);
+  let tmp15 = null;
+  if (tmp6) {
+    const obj3 = { style: items3, children: metroImportAll(ModeratorStartStageViewDefault, obj5) };
+    items3 = [hasOwnProperty.absoluteFill, , ];
+    const obj4 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800 };
+    const View = _modDef1652.View;
+    items3[1] = obj4;
+    items3[2] = animatedStyle;
+    obj5 = { channel, onSkip: tmp14 };
+    tmp15 = metroImportAll(View, obj3);
   }
-  return tmp10;
+  return tmp15;
 }
 function JoinStageOverlay(channel) {
-  let closure_1;
-  let items;
-  let showOverlay;
-  showOverlay = undefined;
-  importDefault = undefined;
+  let closure_0;
+  let first;
+  let items2;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  closure_0 = undefined;
+  let obj = react;
   channel = channel.channel;
-  [showOverlay, importDefault] = react.useState(false);
-  let obj = showOverlay(5095);
-  const fn = function s() {
-    let num = 0;
-    const withSpring = spring.withSpring;
-    spring;
-    if (first) {
-      num = 1;
+  [first, closure_0] = react.useState(false);
+  const items = [closure_15, , , ];
+  const useAnimatedStyle = _mod1652.useAnimatedStyle;
+  _mod1652;
+  items[1] = spring_spring.withSpring;
+  items[2] = first;
+  items[3] = closure_11;
+  let c0;
+  let c1;
+  let c2;
+  [tmp5, tmp6, tmp7, tmp8] = items;
+  class StageChannelCallNavigatorTsx2 {
+    constructor() {
+      let num = 0;
+      const tmp = c0;
+      if (c1) {
+        num = 1;
+      }
+      const obj = { opacity: tmp(num, c2) };
+      return obj;
     }
-    const obj = { opacity: withSpring(num, viewAnimationConfig) };
-    return obj;
-  };
-  fn.__closure = { withSpring: showOverlay(5637).withSpring, showOverlay, viewAnimationConfig };
-  fn.__workletHash = 1929951426580;
-  fn.__initData = __initData2;
-  ({ withSpring: showOverlay(5637).withSpring, showOverlay, viewAnimationConfig });
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const effect = react.useEffect(() => {
-    let closure_0;
+  }
+  const items1 = [tmp6, tmp7, tmp8];
+  StageChannelCallNavigatorTsx2.__closure = items1;
+  StageChannelCallNavigatorTsx2.__workletHash = 5763143772621;
+  StageChannelCallNavigatorTsx2.__initData = tmp5;
+  const animatedStyle = useAnimatedStyle(StageChannelCallNavigatorTsx2);
+  const effect = obj.useEffect(() => {
     const timeout = setTimeout(() => {
-      closure_1_1(true);
+      closure_0(true);
     }, 500);
     return () => {
       clearTimeout(closure_0);
     };
   }, []);
-  const obj3 = { style: items, children: closure_8(JoinStageViewDefault, { channel }) };
-  items = [closure_5.absoluteFill, , ];
-  const obj4 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800 };
-  const View = ReanimatedRexportDefault.View;
-  items[1] = obj4;
-  items[2] = animatedStyle;
-  return closure_8(View, obj3);
+  const obj2 = { style: items2, children: metroImportAll(JoinStageViewDefault, { channel }) };
+  items2 = [hasOwnProperty.absoluteFill, , ];
+  const obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800 };
+  const View = _modDef1652.View;
+  items2[1] = obj3;
+  items2[2] = animatedStyle;
+  return metroImportAll(View, obj2);
 }
 function StagePromptWrapper(channel) {
   channel = channel.channel;
@@ -147,10 +175,10 @@ let react = react_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
-const viewAnimationConfig = { mass: 0.5, stiffness: 600, damping: 30, overshootClamping: false, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
+let closure_11 = { mass: 0.5, stiffness: 600, damping: 30, overshootClamping: false };
 const fullScreen = { fullScreen: { flex: 1 } };
-const __initData = { code: "function StageChannelCallNavigatorTsx1(){const{withSpring,showStartStageView,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showStartStageView?1:0,viewAnimationConfig)};}" };
-const __initData2 = { code: "function StageChannelCallNavigatorTsx2(){const{withSpring,showOverlay,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showOverlay?1:0,viewAnimationConfig)};}" };
+let closure_13 = { code: "(function StageChannelCallNavigatorTsx1(){let[withSpring,showStartStageView,viewAnimationConfig]=this.__closure;return{opacity:withSpring(showStartStageView?1:0,viewAnimationConfig)};})" };
+let closure_15 = { code: "(function StageChannelCallNavigatorTsx2(){let[withSpring,showOverlay,viewAnimationConfig]=this.__closure;return{opacity:withSpring(showOverlay?1:0,viewAnimationConfig)};})" };
 let obj = { startStagePrompt: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_17 = createStyles.createStyles(obj);

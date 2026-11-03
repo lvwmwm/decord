@@ -1,24 +1,22 @@
-// Module ID: 12524
-// Function ID: 12525
+// Module ID: 12660
+// Function ID: 12661
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11629, 21, 5014, 575, 5258, 5272, 5624, 1113, 5634, 2]
+// Dependencies: [19, 17, 11766, 21, 5141, 575, 5381, 5395, 5747, 1113, 5754, 2]
 // Exports: default
 
-// Module 12524 (GroupDMNitroCapInfoActionSheet)
+// Module 12660 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import components_Button_Button from "components/Button/Button" /* 5634 */;
-import GroupDMConstants from "GroupDMConstants" /* 11629 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import components_Button_Button from "components/Button/Button" /* 5754 */;
+import GroupDMConstants from "GroupDMConstants" /* 11766 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
-
-let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
@@ -55,8 +53,8 @@ export default function GroupDMNitroCapInfoActionSheet() {
   }, []);
   let obj = { showGradient: true, children: metroImportDefault(View, obj2) };
   obj2 = { style: tmp.container, children: items };
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj3 = { style: tmp.title, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(intl4.t.u1ilug) };
+  const BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj3 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(intl4.t.u1ilug) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [metroRequire(Text, obj3), , ];

@@ -1,17 +1,17 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17928
+// Function ID: 17929
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5624, 8980, 6027, 9214, 14192, 5634, 5023, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5747, 9108, 6147, 9342, 14323, 5754, 5150, 2]
 // Exports: default
 
-// Module 17785 (UserSettingsDesignSystemSegmentedControl)
+// Module 17928 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
         let push = items.push;
         let _HermesInternal2 = HermesInternal;
         obj2 = { style: item.item, children: closure_2_6(first1(first1[6]).Text, obj3) };
-        obj3 = { variant: "heading-xxl/bold", children: items1 };
+        obj3 = { variant: "heading-xxl/semibold", children: items1 };
         items1 = ["Item ", sum];
         let arr = push(obj);
         num = sum;

@@ -1,50 +1,44 @@
 // Module ID: 1807
 // Function ID: 1808
-// Dependencies: [1755, 1795, 1797]
-// Exports: useComposedEventHandler
+// Dependencies: [1758]
+// Exports: processStrokeDashArray
 
 // Module 1807
-let set, workletEventHandler;
+import _mod1758 from "module_1758" /* 1758 */;
 
-let closure_2 = { code: "function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}" };
+const ERROR_MESSAGES = {
+  invalidDashArray(arg0) {
+    return "Invalid stroke dash array value: " + JSON.stringify(arg0);
+  }
+};
 
-export function useComposedEventHandler(tmp8Result4) {
-  const obj = {};
-  set = new Set();
-  const obj2 = {};
-  const found = tmp8Result4.filter((item) => null !== item);
-  let item = found.forEach((workletEventHandler) => {
-    workletEventHandler = workletEventHandler.workletEventHandler;
-    if (workletEventHandler instanceof obj(set[0]).WorkletEventHandler) {
-      const eventNames = workletEventHandler.eventNames;
-      const item = eventNames.forEach((item) => {
-        let tmp3;
-        set.add(item);
-        if (obj2[item]) {
-          const arr2 = obj2[item];
-          arr2.push(workletEventHandler.worklet);
-          tmp3 = workletEventHandler;
-        } else {
-          tmp3 = workletEventHandler;
-          const items = [workletEventHandler.worklet];
-          obj2[item] = items;
-        }
-        obj[item + "" + obj2[item].length] = tmp3.worklet;
-      });
+export { ERROR_MESSAGES };
+export const processStrokeDashArray = function(arg0) {
+  let arr2;
+  const obj = _mod1758;
+  if (obj.isLength(arg0)) {
+    const items = [arg0];
+    arr2 = items;
+  } else {
+    const _Array = Array;
+    if (Array.isArray(arg0)) {
+      const items1 = [];
+      HermesBuiltin.arraySpread(items1, arg0, 0);
+      arr2 = items1;
+    } else if ("none" === arg0) {
+      return "none";
+    } else {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("[Reanimated] " + obj.invalidDashArray(arg0));
+      throw error;
     }
-  });
-  const obj3 = obj(set[1]);
-  const doDependenciesDiffer = obj3.useHandler(obj).doDependenciesDiffer;
-  const fn = function v(arg0) {
-    let closure_0 = arg0;
-    if (obj2[arg0.eventName]) {
-      const arr = tmp[arg0.eventName];
-      const item = arr.forEach((fn) => fn(closure_0));
-    }
-  };
-  fn.__closure = { workletsMap: obj2 };
-  fn.__workletHash = 14960316830945;
-  fn.__initData = obj2;
-  const obj4 = obj(set[2]);
-  return obj4.useEvent(fn, Array.from(set), doDependenciesDiffer);
-}
+  }
+  let combined = arr2;
+  if (arr2.length % 2 === 1) {
+    combined = arr2.concat(arr2);
+  }
+  return combined;
+};

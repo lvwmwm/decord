@@ -1,18 +1,18 @@
-// Module ID: 9128
-// Function ID: 9129
+// Module ID: 9256
+// Function ID: 9257
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 5015, 21, 5014, 575, 5095, 504, 5254, 5257, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 1652, 504, 5377, 5380, 2]
 
-// Module 9128 (UserPlaceholderRow)
+// Module 9256 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
-import timing from "timing" /* 5254 */;
-import timingPresets from "timingPresets" /* 5257 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import timing_timing from "timing/timing" /* 5377 */;
+import timingPresets from "timingPresets" /* 5380 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5014 */;
+import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -27,16 +27,18 @@ let closure_8 = createStyles.createStyles((height) => {
   ({ height: 20, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BORDER_SUBTLE });
   return obj;
 });
-const __initData = { code: "function UserPlaceholderRowTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
+let closure_9 = { code: "(function UserPlaceholderRowTsx1(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 const memoResult = react.memo(function UserPlaceholderRow(animate) {
   let height;
-  let items2;
-  let items3;
   let items4;
+  let items5;
+  let items6;
   let obj6;
   let obj7;
   let result;
   let row;
+  let tmp8;
+  let tmp9;
   let useReducedMotion;
   let flag = animate.animate;
   if (flag === undefined) {
@@ -49,7 +51,7 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  let obj = sharedValue(5095);
+  let obj = sharedValue(1652);
   const tmp4 = sharedValue;
   sharedValue = obj.useSharedValue(1);
   let obj2 = sharedValue(504);
@@ -60,44 +62,50 @@ const memoResult = react.memo(function UserPlaceholderRow(animate) {
   const items1 = [flag, sharedValue];
   const effect = react.useEffect(() => {
     if (flag) {
-      const withRepeat = ReanimatedRexport.withRepeat;
-      ReanimatedRexport;
-      const withSequence = ReanimatedRexport.withSequence;
-      ReanimatedRexport;
+      const withRepeat = _mod1652.withRepeat;
+      _mod1652;
+      const withSequence = _mod1652.withSequence;
+      _mod1652;
       const obj = { duration: 2 * timingPresets.timingSlowDuration };
-      const withTiming = timing.withTiming;
-      timing;
+      const withTiming = timing_timing.withTiming;
+      timing_timing;
       const withTimingResult = withTiming(0.3, obj);
       const obj2 = { duration: 2 * timingPresets.timingSlowDuration };
-      const withTiming2 = timing.withTiming;
-      timing;
+      const withTiming2 = timing_timing.withTiming;
+      timing_timing;
       const result = set(withRepeat(withSequence(withTimingResult, withTiming2(1, obj2)), -1, true));
     } else {
       const result1 = set(1);
     }
   }, items1);
-  const fn = function v() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 10137317865125;
-  fn.__initData = __initData;
-  const tmp4Result = tmp4(5095);
-  const animatedStyle = tmp4Result.useAnimatedStyle(fn);
-  const obj3 = { style: items2, collapsable: false, children: items3 };
-  items2 = [tmp3.row, animatedStyle];
+  const items2 = [closure_9, sharedValue];
+  let c0;
+  [tmp8, tmp9] = items2;
+  const tmp4Result = tmp4(1652);
+  class UserPlaceholderRowTsx1 {
+    constructor() {
+      const obj = { opacity: _undefined.get() };
+      return obj;
+    }
+  }
+  const items3 = [tmp9];
+  UserPlaceholderRowTsx1.__closure = items3;
+  UserPlaceholderRowTsx1.__workletHash = 5854204937948;
+  UserPlaceholderRowTsx1.__initData = tmp8;
+  const animatedStyle = tmp4Result.useAnimatedStyle(UserPlaceholderRowTsx1);
+  const obj3 = { style: items4, collapsable: false, children: items5 };
+  items4 = [tmp3.row, animatedStyle];
   const obj4 = { style: tmp3.placeholderAvatar };
-  View = flag(5095).View;
-  items3 = [closure_6(View, obj4), ];
+  View = flag(1652).View;
+  items5 = [closure_6(View, obj4), ];
   const obj5 = { style: tmp3.rowInner, children: closure_6(View, obj6) };
   obj6 = { style: tmp3.rowHeaderWrapper, children: closure_6(View, obj7) };
-  obj7 = { style: items4 };
-  items4 = [tmp3.placeholderText, ];
+  obj7 = { style: items6 };
+  items6 = [tmp3.placeholderText, ];
   const obj8 = { width: "" + 40 * (result - Math.floor(result)) + 40 + "%" };
   result = 10000 * Math.sin(row);
-  items4[1] = obj8;
-  items3[1] = closure_6(View, obj5);
+  items6[1] = obj8;
+  items5[1] = closure_6(View, obj5);
   return closure_7(View, obj3);
 });
 let size = size_mod;

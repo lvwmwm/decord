@@ -1,9 +1,9 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9797
+// Function ID: 9798
 // Name: promotions/constants
 // Dependencies: [2]
 
-// Module 9665 (promotions/constants)
+// Module 9797 (promotions/constants)
 import size from "module_2" /* 2 */;
 
 const items = ["logitech", "youtube", "best_buy", "call_of_duty"];
@@ -24,3 +24,4 @@ export const BEST_BUY_PARTNER_ID = "best_buy";
 export const CALL_OF_DUTY_PARTNER_ID = "call_of_duty";
 export const DEDICATED_SURFACE_PARTNER_IDS = set;
 export const RECURRING_3P_PARTNER_ORDER = items1;
+export const FALLBACK_PROMOTION_PRIORITY = 101;

@@ -1,11 +1,11 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15854
+// Function ID: 15855
 // Name: useUserCodeSubmit
-// Dependencies: [5, 32, 19, 15710, 1113, 9749, 2]
+// Dependencies: [5, 32, 19, 15853, 1113, 9881, 2]
 // Exports: useUserCodeSubmit
 
-// Module 15711 (useUserCodeSubmit)
-import OAuthConstants2 from "OAuthConstants" /* 15710 */;
+// Module 15854 (useUserCodeSubmit)
+import OAuthConstants2 from "OAuthConstants" /* 15853 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -60,7 +60,7 @@ export function useUserCodeSubmit(arr, onUserCodeAccepted, onClose) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ export function useUserCodeSubmit(arr, onUserCodeAccepted, onClose) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp35) {
         closure_2 = tmp35;

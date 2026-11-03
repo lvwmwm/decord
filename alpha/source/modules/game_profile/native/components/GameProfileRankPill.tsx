@@ -1,18 +1,18 @@
-// Module ID: 9377
-// Function ID: 9378
+// Module ID: 9505
+// Function ID: 9506
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 5014, 575, 9378, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9506, 5747, 1113, 2]
 // Exports: default
 
-// Module 9377 (GameProfileRankPill)
+// Module 9505 (GameProfileRankPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5624 */;
-import TrophyIcon2 from "TrophyIcon" /* 9378 */;
+import Text_Text from "Text/Text" /* 5747 */;
+import TrophyIcon2 from "TrophyIcon" /* 9506 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5014 */;
+import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -57,7 +57,7 @@ export default function GameProfileRankPill(arg0) {
     const obj5 = { rank };
     str = formatToPlainString(t.ehZXlZ, obj5);
   }
-  const obj6 = { variant: "text-xs/bold", color: "text-overlay-dark", children: str.toUpperCase() };
+  const obj6 = { variant: "text-xs/semibold", color: "text-overlay-dark", children: str.toUpperCase() };
   items[1] = React3(Text, obj6);
   return React3(View, obj);
 };
