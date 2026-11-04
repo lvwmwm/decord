@@ -1,61 +1,26 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 11347
+// Function ID: 11348
 // Name: useIsForumChannelSearchActive
-// Dependencies: [8322, 558, 576, 14040, 504, 2]
+// Dependencies: [8205, 11348, 504, 2]
+// Exports: useIsForumChannelSearchActive
 
-// Module 14058 (useIsForumChannelSearchActive)
-import ForumSearchStore from "ForumSearchStore" /* 8322 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11347 (useIsForumChannelSearchActive)
+import ForumSearchStore from "ForumSearchStore" /* 8205 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsForumChannelSearchActive(arg0) {
-  let closure_0;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const obj2 = require("useCanSearchForumPostsByChannelId");
-  let canSearchForumPostsByChannelId = obj2.useCanSearchForumPostsByChannelId(arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ForumSearchStore];
-    cResult[0] = items;
-    let first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let searchQuery = null;
-      if (null != closure_0) {
-        searchQuery = ForumSearchStore.getSearchQuery(tmp);
-      }
-      return searchQuery;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-  }
-  tmp(504);
-  if (canSearchForumPostsByChannelId) {
-    canSearchForumPostsByChannelId = null != tmp10;
-  }
-  return canSearchForumPostsByChannelId;
-}) : (function useIsForumChannelSearchActive(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/forums/native/hooks/useIsForumChannelSearchActive.tsx");
+
+export function useIsForumChannelSearchActive(channelId) {
+  _require = channelId;
   const obj = require("useCanSearchForumPostsByChannelId");
-  let canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(arg0);
+  let canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   require("get initialized");
-  [][0] = arg0;
+  [][0] = channelId;
   if (canSearchForumPostsByChannelId) {
     canSearchForumPostsByChannelId = null != tmp3;
   }
   return canSearchForumPostsByChannelId;
-});
-const result = size.fileFinishedImporting("modules/forums/native/hooks/useIsForumChannelSearchActive.tsx");
-
-export const useIsForumChannelSearchActive = tmp2;
+}

@@ -1,13 +1,13 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16712
+// Function ID: 16713
 // Name: AccountDeleteSetting
-// Dependencies: [8364, 16135, 11240, 1128, 2]
+// Dependencies: [8432, 16713, 11540, 1113, 2]
 
-// Module 16134 (AccountDeleteSetting)
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 16135 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 16712 (AccountDeleteSetting)
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 16713 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

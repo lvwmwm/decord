@@ -1,17 +1,17 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12605
+// Function ID: 12606
 // Name: ConjureRepliedMessage
 // Dependencies: [2]
 // Exports: repliedMessagesById
 
-// Module 12358 (ConjureRepliedMessage)
+// Module 12605 (ConjureRepliedMessage)
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let result = size.fileFinishedImporting("modules/conjure/chat/ConjureRepliedMessage.tsx");
 
-export const repliedMessagesById = function repliedMessagesById(memo) {
+export function repliedMessagesById(memo) {
   map = new Map();
   const iter = memo[Symbol.iterator]();
   const nextResult = iter.next();
@@ -39,4 +39,4 @@ export const repliedMessagesById = function repliedMessagesById(memo) {
     continue;
   }
   return map;
-};
+}

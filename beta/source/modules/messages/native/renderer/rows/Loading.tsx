@@ -1,13 +1,13 @@
-// Module ID: 14608
-// Function ID: 14609
+// Module ID: 15157
+// Function ID: 15158
 // Name: Loading
-// Dependencies: [8166, 5003, 587, 2]
+// Dependencies: [8378, 5014, 575, 2]
 // Exports: generateLoadingRowData
 
-// Module 14608 (Loading)
-import nativeDefault from "native" /* 587 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
-import createStyles from "createStyles" /* 5003 */;
+// Module 15157 (Loading)
+import nativeDefault from "native" /* 575 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8378 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let _window;
@@ -18,7 +18,7 @@ let obj = { loadButtonBackgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BA
 let closure_3 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/rows/Loading.tsx");
 
-export const generateLoadingRowData = function generateLoadingRowData(rowType, theme) {
+export function generateLoadingRowData(rowType, theme) {
   let changeType;
   let isLoading;
   let text;
@@ -32,4 +32,4 @@ export const generateLoadingRowData = function generateLoadingRowData(rowType, t
   }
   const obj = { type: map.LOADING, id: rowType, button: obj2, color: isLoading ? tmp.loadingColor : tmp.loadButtonColor, changeType, isLoading };
   return obj;
-};
+}

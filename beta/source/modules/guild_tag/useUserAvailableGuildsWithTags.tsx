@@ -1,70 +1,27 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16515
+// Function ID: 16516
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [4915, 4877, 558, 576, 8686, 504, 2]
+// Dependencies: [4926, 4885, 504, 8736, 2]
+// Exports: useUserAvailableGuildsWithTags
 
-// Module 15941 (useUserAvailableGuildsWithTags)
-import react from "react" /* 576 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16515 (useUserAvailableGuildsWithTags)
+import get_initialized from "get initialized" /* 504 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 let guildsArray, selfMember;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserAvailableGuildsWithTags() {
-  let tmp4;
-  let tmp5;
-  let obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, GuildMemberStore];
-    const fn = function u() {
-      guildsArray = guildsArray.getGuildsArray();
-      return guildsArray.filter((id) => {
-        selfMember = selfMember.getSelfMember(id.id);
-        const obj = closure_1_0(closure_1_1[4]);
-        let guildSupportsTagsResult = obj.guildSupportsTags(id);
-        if (guildSupportsTagsResult) {
-          let joinedAt;
-          if (selfMember != null) {
-            joinedAt = selfMember.joinedAt;
-          }
-          guildSupportsTagsResult = null != joinedAt;
-        }
-        if (guildSupportsTagsResult) {
-          guildSupportsTagsResult = true !== selfMember.isPending;
-        }
-        if (guildSupportsTagsResult) {
-          const profile = id.profile;
-          let tag;
-          if (profile != null) {
-            tag = profile.tag;
-          }
-          guildSupportsTagsResult = null != tag;
-        }
-        return guildSupportsTagsResult;
-      });
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (function useUserAvailableGuildsWithTags() {
+const result = size.fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
+
+export function useUserAvailableGuildsWithTags() {
   let obj = get_initialized;
   const items = [GuildStore, GuildMemberStore];
   return obj.useStateFromStoresArray(items, () => {
     guildsArray = guildsArray.getGuildsArray();
     return guildsArray.filter((id) => {
       selfMember = selfMember.getSelfMember(id.id);
-      const obj = closure_1_0(closure_1_1[4]);
+      const obj = closure_1_0(closure_1_1[3]);
       let guildSupportsTagsResult = obj.guildSupportsTags(id);
       if (guildSupportsTagsResult) {
         let joinedAt;
@@ -87,7 +44,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserAva
       return guildSupportsTagsResult;
     });
   });
-});
-const result = size.fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
-
-export const useUserAvailableGuildsWithTags = tmp2;
+}

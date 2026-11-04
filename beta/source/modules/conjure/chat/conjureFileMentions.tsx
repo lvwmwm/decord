@@ -1,17 +1,17 @@
-// Module ID: 11858
-// Function ID: 11859
+// Module ID: 12143
+// Function ID: 12144
 // Name: conjureFileMentions
-// Dependencies: [19, 1951, 2]
+// Dependencies: [19, 1943, 2]
 // Exports: conjureFileMentionIds, createConjureFileMentionRule, filterConjureFileCandidates, hasConjureFileMentions, withoutInlineFileMentions
 
-// Module 11858 (conjureFileMentions)
-import _modDef1951 from "module_1951" /* 1951 */;
+// Module 12143 (conjureFileMentions)
+import _modDef1943 from "module_1943" /* 1943 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const f111811 = (arg0) => arg0[1];
+const f100891 = (arg0) => arg0[1];
 let c2 = "<file:(\\d{16}-[a-z0-9]{6})>";
 let regExp = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>", "g");
 const regExp1 = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>");
@@ -20,15 +20,15 @@ const result = size.fileFinishedImporting("modules/conjure/chat/conjureFileMenti
 
 export const CONJURE_FILE_MENTION = regExp;
 export const ConjureFileMentionProjectContext = context;
-export const hasConjureFileMentions = function hasConjureFileMentions(arg0) {
+export function hasConjureFileMentions(arg0) {
   return regExp1.test(arg0);
-};
-export const conjureFileMentionIds = function conjureFileMentionIds(str) {
-  const items = [...new Set(Array.from(str.matchAll(regExp), f111811))];
-  new Set(Array.from(str.matchAll(regExp), f111811));
+}
+export function conjureFileMentionIds(str) {
+  const items = [...new Set(Array.from(str.matchAll(regExp), f100891))];
+  new Set(Array.from(str.matchAll(regExp), f100891));
   return items;
-};
-export const filterConjureFileCandidates = function filterConjureFileCandidates(arr, text) {
+}
+export function filterConjureFileCandidates(arr, text) {
   let found;
   let formatted = text.toLowerCase();
   if ("" === formatted) {
@@ -50,8 +50,8 @@ export const filterConjureFileCandidates = function filterConjureFileCandidates(
     });
   }
   return found;
-};
-export const withoutInlineFileMentions = function withoutInlineFileMentions(attachments, content) {
+}
+export function withoutInlineFileMentions(attachments, content) {
   if (null != attachments) {
     if (regExp1.test(content)) {
       let tmp = globalThis;
@@ -61,7 +61,7 @@ export const withoutInlineFileMentions = function withoutInlineFileMentions(atta
       const self = this;
       const self2 = this;
       const items = [];
-      set = new Set(Array.from(content.matchAll(regExp), f111811));
+      set = new Set(Array.from(content.matchAll(regExp), f100891));
       HermesBuiltin.arraySpread(items, set, 0);
       const self3 = this;
       const self4 = this;
@@ -73,12 +73,12 @@ export const withoutInlineFileMentions = function withoutInlineFileMentions(atta
     }
   }
   return attachments;
-};
-export const createConjureFileMentionRule = function createConjureFileMentionRule(arg0) {
+}
+export function createConjureFileMentionRule(arg0) {
   let closure_0 = arg0;
   regExp = new RegExp("^" + c2);
   const obj = {
-    order: _modDef1951.defaultRules.autolink.order - 0.5,
+    order: _modDef1943.defaultRules.autolink.order - 0.5,
     requiredFirstCharacters: ["<"],
     match(arg0) {
       return regExp.exec(arg0);
@@ -91,4 +91,4 @@ export const createConjureFileMentionRule = function createConjureFileMentionRul
     }
   };
   return obj;
-};
+}

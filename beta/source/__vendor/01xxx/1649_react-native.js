@@ -2,10 +2,31 @@
 // Function ID: 1650
 // Name: react-native
 // Dependencies: [17]
+// Exports: controlEdgeToEdgeValues, isEdgeToEdge
 
 // Module 1649 (react-native)
 import react_native from "react-native" /* 17 */;
 
-const TurboModuleRegistry = react_native.TurboModuleRegistry;
 
-export default TurboModuleRegistry.get("KeyboardController");
+export const controlEdgeToEdgeValues = (arg0) => {
+
+};
+export const isEdgeToEdge = () => {
+  const TurboModuleRegistry = react_native.TurboModuleRegistry;
+  let tmp2 = null != TurboModuleRegistry.get("RNEdgeToEdge");
+  const tmp = react_native;
+  if (!tmp2) {
+    const TurboModuleRegistry2 = tmp.TurboModuleRegistry;
+    const value = TurboModuleRegistry2.get("DeviceInfo");
+    let getConstants;
+    if (null != value) {
+      getConstants = value.getConstants;
+    }
+    let isEdgeToEdge;
+    if (null != getConstants) {
+      isEdgeToEdge = getConstants.call(value).isEdgeToEdge;
+    }
+    tmp2 = true === isEdgeToEdge;
+  }
+  return tmp2;
+};

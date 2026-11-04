@@ -1,22 +1,22 @@
-// Module ID: 6507
-// Function ID: 6508
+// Module ID: 6547
+// Function ID: 6548
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1087, 1098, 3, 1297, 1128, 6496, 6508, 584, 38, 6509, 6510, 4826, 6406, 2]
+// Dependencies: [5, 1072, 1083, 3, 1282, 1113, 6536, 6548, 572, 38, 6549, 6550, 4834, 6446, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6507 (BillingPaymentGatewayActionCreators)
+// Module 6547 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1128 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6496 */;
-import react from "react" /* 6508 */;
-import StripeActionCreators from "StripeActionCreators" /* 6509 */;
-import StripeUtilsAll from "StripeUtils" /* 6510 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6536 */;
+import react from "react" /* 6548 */;
+import StripeActionCreators from "StripeActionCreators" /* 6549 */;
+import StripeUtilsAll from "StripeUtils" /* 6550 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 1087 */;
-import Constants_mod2 from "Constants" /* 1098 */;
+import Constants_mod from "Constants" /* 1072 */;
+import Constants_mod2 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, closure_5, closure_8, postal_code, returnUrl;
@@ -68,7 +68,7 @@ obj = function _createCardToken() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -166,7 +166,7 @@ obj = function _confirmEPS() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -298,7 +298,7 @@ obj = function _confirmPrzelewy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -506,7 +506,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -531,7 +531,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
             billingAddressToken = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -600,7 +600,7 @@ obj = function _confirmPaymentElementSource() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp121;
@@ -693,7 +693,7 @@ obj = function _confirmPaymentElementSource() {
                 billing_details = undefined;
                 c12 = 3;
                 c13 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "flexDirection", done: true };
               }
               break;
             }
@@ -766,8 +766,8 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "a" };
-                        const obj8 = { setupIntent: _undefined, error: "a" };
+                        tmp121 = { setupIntent: _undefined, error: "Array" };
+                        const obj8 = { setupIntent: _undefined, error: "Array" };
                         if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;
@@ -963,7 +963,7 @@ obj = function _confirmCardPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1094,7 +1094,7 @@ obj = function _createStripePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1217,7 +1217,7 @@ obj = function _createAdyenPrepaidPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1290,7 +1290,7 @@ obj = function _createAdyenVaultablePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1319,7 +1319,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -1455,7 +1455,7 @@ obj = function _createStripePaymentSourceToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1651,7 +1651,7 @@ obj = function _paymentIntentSucceeded() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1765,7 +1765,7 @@ const items = [, ];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/billing/actions/BillingPaymentGatewayActionCreators.tsx");
 
-export const createAdyenPaymentSourceToken = function createAdyenPaymentSourceToken(type) {
+export function createAdyenPaymentSourceToken(type) {
   let json = null;
   if (!metroImportDefault.has(type.type)) {
     const _JSON = JSON;
@@ -1777,46 +1777,46 @@ export const createAdyenPaymentSourceToken = function createAdyenPaymentSourceTo
     json = stringify(obj);
   }
   return json;
-};
+}
 export { dispatchPaymentElementsConfirmationError };
-export const createCardToken = function createCardToken() {
+export function createCardToken() {
   return obj(...arguments);
-};
-export const confirmEPS = function confirmEPS() {
+}
+export function confirmEPS() {
   return obj(...arguments);
-};
-export const confirmPrzelewy24 = function confirmPrzelewy24() {
+}
+export function confirmPrzelewy24() {
   return obj(...arguments);
-};
+}
 export { submitElementsForPaymentElement };
-export const submitElementsAndCreateStripePaymentMethod = function submitElementsAndCreateStripePaymentMethod() {
+export function submitElementsAndCreateStripePaymentMethod() {
   return obj(...arguments);
-};
-export const createExpressCheckoutPaymentMethod = function createExpressCheckoutPaymentMethod() {
+}
+export function createExpressCheckoutPaymentMethod() {
   return obj(...arguments);
-};
-export const confirmPaymentElementSource = function confirmPaymentElementSource() {
+}
+export function confirmPaymentElementSource() {
   return obj(...arguments);
-};
-export const confirmCardPaymentSource = function confirmCardPaymentSource() {
+}
+export function confirmCardPaymentSource() {
   return obj(...arguments);
-};
-export const createBraintreePaymentSource = function createBraintreePaymentSource(id, c1, analyticsLocation) {
+}
+export function createBraintreePaymentSource(id, c1, analyticsLocation) {
   obj = BillingSharedActionCreators;
   const obj2 = { analyticsLocation };
   return obj.createPaymentSource(metroRequire.BRAINTREE, id, c1, obj2);
-};
-export const createStripePaymentSource = function createStripePaymentSource() {
+}
+export function createStripePaymentSource() {
   return obj(...arguments);
-};
-export const createAdyenPrepaidPaymentSource = function createAdyenPrepaidPaymentSource() {
+}
+export function createAdyenPrepaidPaymentSource() {
   return obj(...arguments);
-};
-export const createAdyenVaultablePaymentSource = function createAdyenVaultablePaymentSource() {
+}
+export function createAdyenVaultablePaymentSource() {
   return obj(...arguments);
-};
+}
 export { createStripePaymentSourceToken };
-export const createPaymentSourceToken = function createPaymentSourceToken(paymentSource) {
+export function createPaymentSourceToken(paymentSource) {
   let tmp = null;
   obj = metroImportDefault;
   if (!metroImportDefault.has(paymentSource.type)) {
@@ -1840,7 +1840,7 @@ export const createPaymentSourceToken = function createPaymentSourceToken(paymen
     tmp = tmp3;
   }
   return tmp;
-};
-export const paymentIntentSucceeded = function paymentIntentSucceeded() {
+}
+export function paymentIntentSucceeded() {
   return obj(...arguments);
-};
+}

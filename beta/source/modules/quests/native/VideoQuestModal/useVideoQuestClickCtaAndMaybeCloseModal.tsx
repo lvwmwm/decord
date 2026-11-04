@@ -1,61 +1,26 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 17132
+// Function ID: 17133
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 1087, 558, 576, 9637, 5728, 9626, 9639, 7833, 2]
+// Dependencies: [19, 1072, 9717, 5745, 9705, 9719, 7871, 2]
+// Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 16535 (useVideoQuestClickCtaAndMaybeCloseModal)
-import Constants from "Constants" /* 1087 */;
-import parseURLDefault from "parseURL" /* 5728 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7833 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9626 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9639 */;
+// Module 17132 (useVideoQuestClickCtaAndMaybeCloseModal)
+import Constants from "Constants" /* 1072 */;
+import parseURLDefault from "parseURL" /* 5745 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9705 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const LinkingTypes = Constants.LinkingTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
-  let sourceQuestContent;
-  let obj = quest(sourceQuestContent[3]);
-  const cResult = obj.c(5);
-  quest = quest.quest;
-  const onClose = quest.onClose;
-  sourceQuestContent = quest.sourceQuestContent;
-  let obj2 = quest(sourceQuestContent[4]);
-  const getQuestImpressionId = obj2.useGetQuestImpressionId();
-  if (cResult[0] === getQuestImpressionId) {
-    if (cResult[1] === onClose) {
-      if (cResult[2] === quest) {
-        let tmp3;
-        if (cResult[3] === sourceQuestContent) {
-          tmp3 = cResult[4];
-        }
-        return tmp3;
-      }
-    }
-  }
-  const fn = function o(content) {
-    const tmp2 = parseURLDefault;
-    const obj = QuestCopyUtils;
-    const tmp4 = quest;
-    if (tmp2(obj.getCtaLink(quest.config)).payload.type !== LinkingTypes.NONE) {
-      onClose();
-    }
-    const tmp3Result = QuestPlatformUtils;
-    const obj2 = { content, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
-    tmp3Result.openGameLinkDirectly(tmp4, obj2);
-  };
-  cResult[0] = getQuestImpressionId;
-  cResult[1] = onClose;
-  cResult[2] = quest;
-  cResult[3] = sourceQuestContent;
-  cResult[4] = fn;
-  tmp3 = fn;
-}) : (function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
+const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
+
+export function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
   quest = quest.quest;
   const onClose = quest.onClose;
   const sourceQuestContent = quest.sourceQuestContent;
-  let obj = quest(sourceQuestContent[4]);
+  let obj = quest(sourceQuestContent[2]);
   const getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [quest, getQuestImpressionId, sourceQuestContent, onClose];
   return getQuestImpressionId.useCallback((content) => {
@@ -69,7 +34,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQues
     const obj2 = { content, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
     tmp3Result.openGameLinkDirectly(tmp4, obj2);
   }, items);
-});
-const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
-
-export const useVideoQuestClickCtaAndMaybeCloseModal = tmp2;
+}

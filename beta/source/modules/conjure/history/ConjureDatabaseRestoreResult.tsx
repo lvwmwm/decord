@@ -1,15 +1,15 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12180
+// Function ID: 12181
 // Name: databaseRestoreResultFromStatus
 // Dependencies: [2]
 // Exports: databaseRestoreResultFromStatus
 
-// Module 12297 (databaseRestoreResultFromStatus)
+// Module 12180 (databaseRestoreResultFromStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureDatabaseRestoreResult.tsx");
 
-export const databaseRestoreResultFromStatus = function databaseRestoreResultFromStatus(status, message) {
+export function databaseRestoreResultFromStatus(status, message) {
   let obj;
   if (202 === status) {
     obj = { ok: false, code: "unconfirmed", message };
@@ -27,4 +27,4 @@ export const databaseRestoreResultFromStatus = function databaseRestoreResultFro
     obj = { ok: false, code: str, message };
   }
   return obj;
-};
+}

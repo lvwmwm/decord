@@ -1,18 +1,18 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7676
+// Function ID: 7677
 // Name: MemberSafetyElasticSearchQueryTypes
-// Dependencies: [1104, 2]
+// Dependencies: [1089, 2]
 // Exports: createMemberSearchCursor
 
-// Module 7638 (MemberSafetyElasticSearchQueryTypes)
-import DurationsDefault from "Durations" /* 1104 */;
+// Module 7676 (MemberSafetyElasticSearchQueryTypes)
+import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 
 const result = 2 * DurationsDefault.Millis.DAY;
 const result1 = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx");
 
 export const UNUSUAL_DM_COMPARISON_DELTA = result;
-export const createMemberSearchCursor = function createMemberSearchCursor(joinedAt) {
+export function createMemberSearchCursor(joinedAt) {
   let date;
   joinedAt = joinedAt.joinedAt;
   let tmp2 = null;
@@ -25,5 +25,5 @@ export const createMemberSearchCursor = function createMemberSearchCursor(joined
     date = new Date(joinedAt);
   }
   return tmp2;
-};
+}
 export const OrderBy = { ORDER_BY_UNSPECIFIED: 0, [0]: "ORDER_BY_UNSPECIFIED", ORDER_BY_GUILD_JOINED_AT_DESC: 1, [1]: "ORDER_BY_GUILD_JOINED_AT_DESC", ORDER_BY_GUILD_JOINED_AT_ASC: 2, [2]: "ORDER_BY_GUILD_JOINED_AT_ASC", ORDER_BY_USER_ID_DESC: 3, [3]: "ORDER_BY_USER_ID_DESC", ORDER_BY_USER_ID_ASC: 4, [4]: "ORDER_BY_USER_ID_ASC" };

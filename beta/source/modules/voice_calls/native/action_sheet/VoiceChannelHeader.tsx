@@ -1,31 +1,29 @@
-// Module ID: 14662
-// Function ID: 14663
+// Module ID: 15207
+// Function ID: 15208
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 4854, 4877, 4935, 1087, 21, 5003, 587, 558, 576, 14663, 14664, 5266, 14665, 504, 11593, 5636, 9082, 1128, 11323, 7234, 14667, 11700, 1202, 10892, 6940, 2]
+// Dependencies: [19, 17, 4862, 4885, 4946, 1072, 21, 5014, 575, 15208, 15209, 5624, 15210, 504, 11909, 5652, 9118, 1113, 11626, 1187, 7275, 15212, 11996, 10978, 6980, 2]
 
-// Module 14662 (VoiceChannelHeader)
+// Module 15207 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import useChannelNameDefault from "useChannelName" /* 5636 */;
-import Pressables from "Pressables" /* 6940 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7234 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10892 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11323 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11593 */;
-import CallStateHooks from "CallStateHooks" /* 14663 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 14664 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import Pressables from "Pressables" /* 6980 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7275 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10978 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11626 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11909 */;
+import CallStateHooks from "CallStateHooks" /* 15208 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 15209 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import Constants from "Constants" /* 1087 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const CallStateHooksDefault = CallStateHooks;
@@ -39,93 +37,8 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const OngoingCallTimerDefault = tmp2(14665);
-const View = react_native.View;
-({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { alignSelf: "stretch", flexDirection: "row", paddingVertical: 10, paddingHorizontal: 16, alignItems: "center" }, middle: { flex: 1, justifyContent: "space-around", marginHorizontal: 16 }, icons: obj2, subtitle: obj3, subtitleWrapper: { flexDirection: "row" } };
-obj2 = { flexDirection: "row", tintColor: nativeDefault.colors.WHITE };
-createStyles = createStyles.createStyles;
-obj3 = { fontSize: 12, lineHeight: 16, color: nativeDefault.colors.WHITE };
-let closure_12 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelSubtitle(channel) {
-  let items;
-  const obj = react2;
-  const cResult = obj.c(16);
-  channel = channel.channel;
-  const tmp4 = closure_12();
-  const state = CallStateHooksDefault(channel.id).state;
-  if (cResult[0] === channel) {
-    if (cResult[1] === tmp4.subtitle) {
-      let tmp6;
-      if (cResult[2] === state) {
-        tmp6 = cResult[3];
-      }
-      if (cResult[4] === tmp4.subtitle) {
-        let tmp8;
-        if (cResult[5] === state) {
-          tmp8 = cResult[6];
-        }
-        if (cResult[7] === channel.id) {
-          if (cResult[8] === tmp4.subtitle) {
-            let tmp11;
-            if (cResult[9] === state) {
-              tmp11 = cResult[10];
-            }
-            if (cResult[11] === tmp4.subtitleWrapper) {
-              if (cResult[12] === tmp6) {
-                if (cResult[13] === tmp8) {
-                  let tmp14;
-                  if (cResult[14] === tmp11) {
-                    tmp14 = cResult[15];
-                  }
-                  return tmp14;
-                }
-              }
-            }
-            const obj2 = { style: tmp4.subtitleWrapper, children: items };
-            items = [tmp6, tmp8, tmp11];
-            const tmp17 = unpackModuleId(View, obj2);
-            cResult[11] = tmp4.subtitleWrapper;
-            cResult[12] = tmp6;
-            cResult[13] = tmp8;
-            cResult[14] = tmp11;
-            cResult[15] = tmp17;
-            tmp14 = tmp17;
-          }
-        }
-        let tmp12 = state === tmp(14663).CallStates.CONNECTED;
-        if (tmp12) {
-          const obj3 = { channelId: channel.id, style: tmp4.subtitle };
-          tmp12 = authStore(tmp5(14665), obj3);
-        }
-        cResult[7] = channel.id;
-        cResult[8] = tmp4.subtitle;
-        cResult[9] = state;
-        cResult[10] = tmp12;
-        tmp11 = tmp12;
-      }
-      let tmp9 = state === tmp(14663).CallStates.CONNECTED;
-      if (tmp9) {
-        const obj4 = { style: tmp4.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-        tmp9 = authStore(tmp(5266).Text, obj4);
-      }
-      cResult[4] = tmp4.subtitle;
-      cResult[5] = state;
-      cResult[6] = tmp9;
-      tmp8 = tmp9;
-    }
-  }
-  const obj5 = { useAllAloneText: false, channel, voiceState: state, style: tmp4.subtitle };
-  const tmp7 = authStore(OngoingCallStatusLabelDefault, obj5);
-  cResult[0] = channel;
-  cResult[1] = tmp4.subtitle;
-  cResult[2] = state;
-  cResult[3] = tmp7;
-  tmp6 = tmp7;
-}) : (function PrivateChannelSubtitle(channel) {
+const OngoingCallTimerDefault = tmp2(15210);
+function PrivateChannelSubtitle(channel) {
   let items;
   channel = channel.channel;
   const tmp = closure_12();
@@ -139,453 +52,134 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
   const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-    tmp6Result = tmp6(tmp7(5266).Text, obj3);
+    tmp6Result = tmp6(tmp7(5624).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(14663).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(15208).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
   }
   items[2] = tmp6Result2;
   return tmp4(tmp5, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannelHeader(channel) {
-  let first;
-  let items2;
-  let stateFromStores1;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp7;
-  const tmp = channel;
-  let tmp2 = dependencyMap;
-  let obj = channel(576);
-  const cResult = obj.c(39);
-  channel = channel.channel;
-  const tmp4 = closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+}
+class VoiceChannelHeader {
+  constructor(channel) {
+    let items3;
+    let items4;
+    let tmp14Result4;
+    let tmp5Result;
+    channel = channel.channel;
+    const tmp = closure_12();
+    let tmp2 = channel;
+    let obj = channel(504);
     const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel) {
-    const fn = function v() {
-      return GuildStore.getGuild(channel.getGuildId());
-    };
-    cResult[1] = channel;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmp10 = stateFromStores1(11593)(channel);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
     const items1 = [EmbeddedActivitiesStore];
-    cResult[3] = items1;
-    tmp11 = items1;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] !== channel.id) {
-    class A {
-      constructor() {
-        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
+    const items2 = [channel];
+    const tmp6 = useIsVoiceChannelFullDefault(channel);
+    const obj2 = channel(504);
+    importDefault = obj2.useStateFromStores(items1, () => EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    let name;
+    const tmp7 = useChannelNameDefault(channel);
+    if (stateFromStores != null) {
+      name = stateFromStores.name;
+    }
+    let E = null;
+    if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel)) {
+      E = null;
+      if (!tmp6) {
+        E = () => {
+          const obj = { source: constants.VOICE_CHANNEL, targetApplicationId: applicationId };
+          applicationId = undefined;
+          const showInstantInviteActionSheet = instant_invite_InstantInviteUtils.showInstantInviteActionSheet;
+          instant_invite_InstantInviteUtils;
+          const tmp2 = channel;
+          if (applicationId != null) {
+            applicationId = applicationId.applicationId;
+          }
+          return showInstantInviteActionSheet(tmp2, obj);
+        };
       }
     }
-    cResult[4] = channel.id;
-    cResult[5] = A;
-    tmp13 = A;
-  } else {
-    class A {
-      constructor() {
-        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-      }
-    }
-  }
-  if (cResult[6] !== channel) {
-    class A {
-      constructor() {
-        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-      }
-    }
-    tmp15[0] = channel;
-    cResult[6] = channel;
-    cResult[7] = tmp15;
-    tmp14 = tmp15;
-  } else {
-    class A {
-      constructor() {
-        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-      }
-    }
-  }
-  const tmpResult2 = tmp(504);
-  stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp13, tmp14);
-  let tmp17 = tmp9(5636)(channel);
-  if (stateFromStores != null) {
-    class A {
-      constructor() {
-        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-      }
-    }
-  }
-  if (cResult[8] === channel) {
-    class A {
-      constructor() {
-        return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-      }
-    }
-    const tmp19 = cResult[9];
-    if (stateFromStores1 != null) {
-      class A {
-        constructor() {
-          return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-        }
-      }
-    }
-    if (tmp19 === tmp20) {
-      class A {
-        constructor() {
-          return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-        }
-      }
-      if (channel.isPrivate()) {
-        class A {
-          constructor() {
-            return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-          }
-        }
-        if (cResult[14] !== channel) {
-          class A {
-            constructor() {
-              return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-            }
-          }
-          const obj2 = { channel };
-          const tmp26 = closure_10(closure_13, obj2);
-          cResult[14] = channel;
-          cResult[15] = tmp26;
-        } else {
-          class A {
-            constructor() {
-              return EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id);
-            }
-          }
-        }
-        if (cResult[16] !== channel.id) {
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-          cResult[16] = channel.id;
-          cResult[17] = O;
-        } else {
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-        }
-        tmp17 = tmp23;
-      }
-      if (stateFromStores1(7234)(channel)) {
-        class O {
-          constructor() {
-            return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-          }
-        }
-      } else {
-        class O {
-          constructor() {
-            return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-          }
-        }
-      }
-      if (cResult[18] === tmp4.icons) {
-        class O {
-          constructor() {
-            return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-          }
-        }
-        if (cResult[21] !== tmp17) {
-          let tmp33;
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-          if (typeof tmp17 === "string") {
-            class O {
-              constructor() {
-                return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-              }
-            }
-            const obj3 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: tmp17 };
-            tmp33 = closure_10(tmp(5266).Text, obj3);
-          }
-          cResult[21] = tmp17;
-          cResult[22] = tmp33;
-        } else {
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-        }
-        if (cResult[23] !== tmp18) {
-          let tmp35;
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-          if (typeof tmp18 === "string") {
-            class O {
-              constructor() {
-                return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-              }
-            }
-            const obj4 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: tmp18 };
-            tmp35 = closure_10(tmp(5266).Text, obj4);
-          }
-          cResult[23] = tmp18;
-          cResult[24] = tmp35;
-        } else {
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-        }
-        if (cResult[25] === tmp4.middle) {
-          class O {
-            constructor() {
-              return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-            }
-          }
-        }
-        const obj5 = { style: tmp4.middle, children: items2 };
-        items2 = [tmp32, tmp34];
-        cResult[25] = tmp4.middle;
-        cResult[26] = tmp34;
-        cResult[27] = tmp32;
-        cResult[28] = closure_11(View, obj5);
-        const tmp39 = closure_11(View, obj5);
-      }
-      const obj6 = { size: tmp(1202).Icon.Sizes.MEDIUM, source: tmp28, disableColor: true, style: tmp4.icons };
-      const Icon = tmp(1202).Icon;
-      cResult[18] = tmp4.icons;
-      cResult[19] = tmp28;
-      cResult[20] = closure_10(Icon, obj6);
-      const tmp31 = closure_10(Icon, obj6);
-    }
-  }
-  if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel)) {
-    class O {
-      constructor() {
-        return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-      }
-    }
-    if (!tmp10) {
-      class O {
+    let formatToPlainStringResult = tmp7;
+    if (channel.isPrivate()) {
+      const intl = tmp2(1113).intl;
+      const obj3 = { count: channel.recipients.length + 1 };
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t["8bn8Br"], obj3);
+      const obj4 = { channel };
+      name = closure_10(PrivateChannelSubtitle, obj4);
+      class E {
         constructor() {
           return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
         }
       }
     }
-  }
-  cResult[8] = channel;
-  if (stateFromStores1 != null) {
-    class O {
-      constructor() {
-        return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-      }
+    const obj5 = { style: tmp.container, children: items3 };
+    const obj6 = { size: tmp2(1187).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
+    const Icon = tmp2(1187).Icon;
+    if (isRoleRequiredDefault(channel)) {
+      tmp5Result = tmp5(15212);
+    } else {
+      tmp5Result = tmp5(11996);
     }
-  }
-  cResult[9] = undefined;
-  cResult[10] = tmp10;
-  cResult[11] = null;
-}) : (function VoiceChannelHeader(channel) {
-  let items3;
-  let items4;
-  let tmp14Result4;
-  let tmp5Result;
-  channel = channel.channel;
-  const tmp = closure_12();
-  let tmp2 = channel;
-  let obj = channel(504);
-  const items = [GuildStore];
-  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  const items1 = [EmbeddedActivitiesStore];
-  const items2 = [channel];
-  const tmp6 = useIsVoiceChannelFullDefault(channel);
-  const obj2 = channel(504);
-  importDefault = obj2.useStateFromStores(items1, () => EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(channel.id), items2);
-  let name;
-  const tmp7 = useChannelNameDefault(channel);
-  if (stateFromStores != null) {
-    name = stateFromStores.name;
-  }
-  let A = null;
-  if (PermissionStore.can(constants.CREATE_INSTANT_INVITE, channel)) {
-    A = null;
-    if (!tmp6) {
-      A = () => {
-        const obj = { source: constants.VOICE_CHANNEL, targetApplicationId: applicationId };
-        applicationId = undefined;
-        const showInstantInviteActionSheet = instant_invite_InstantInviteUtils.showInstantInviteActionSheet;
-        instant_invite_InstantInviteUtils;
-        const tmp2 = channel;
-        if (applicationId != null) {
-          applicationId = applicationId.applicationId;
-        }
-        return showInstantInviteActionSheet(tmp2, obj);
-      };
+    items3 = [closure_10(Icon, obj6), , ];
+    let tmp14Result = formatToPlainStringResult;
+    const obj7 = { style: tmp.middle, children: items4 };
+    if (typeof formatToPlainStringResult === "string") {
+      const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
+      tmp14Result = tmp14(tmp2(5624).Text, obj8);
     }
-  }
-  let formatToPlainStringResult = tmp7;
-  if (channel.isPrivate()) {
-    const intl = tmp2(1128).intl;
-    const obj3 = { count: channel.recipients.length + 1 };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1128).t["8bn8Br"], obj3);
-    const obj4 = { channel };
-    name = closure_10(closure_13, obj4);
-    class A {
-      constructor() {
-        return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
-      }
+    items4 = [tmp14Result, ];
+    let tmp14Result3 = name;
+    if (typeof name === "string") {
+      const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: name };
+      tmp14Result3 = tmp14(tmp2(5624).Text, obj9);
     }
-  }
-  const obj5 = { style: tmp.container, children: items3 };
-  const obj6 = { size: tmp2(1202).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
-  const Icon = tmp2(1202).Icon;
-  if (isRoleRequiredDefault(channel)) {
-    tmp5Result = tmp5(14667);
-  } else {
-    tmp5Result = tmp5(11700);
-  }
-  items3 = [closure_10(Icon, obj6), , ];
-  let tmp14Result = formatToPlainStringResult;
-  const obj7 = { style: tmp.middle, children: items4 };
-  if (typeof formatToPlainStringResult === "string") {
-    const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-    tmp14Result = tmp14(tmp2(5266).Text, obj8);
-  }
-  items4 = [tmp14Result, ];
-  let tmp14Result3 = name;
-  if (typeof name === "string") {
-    const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: name };
-    tmp14Result3 = tmp14(tmp2(5266).Text, obj9);
-  }
-  items4[1] = tmp14Result3;
-  items3[1] = closure_11(View, obj7);
-  const obj10 = { style: tmp.icons, children: tmp14Result4 };
-  tmp14Result4 = null != A;
-  if (tmp14Result4) {
-    const obj11 = { onPress: A };
-    tmp14Result4 = tmp14(closure_14, obj11);
-  }
-  items3[2] = closure_10(View, obj10);
-  return closure_11(View, obj5);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMemberButton(onPress) {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(4);
-  onPress = onPress.onPress;
-  const tmp4 = closure_12();
-  const icons = tmp4.icons;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t["6Qgrev"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === onPress) {
-    let tmp7;
-    if (cResult[2] === tmp4.icons) {
-      tmp7 = cResult[3];
+    items4[1] = tmp14Result3;
+    items3[1] = closure_11(View, obj7);
+    const obj10 = { style: tmp.icons, children: tmp14Result4 };
+    tmp14Result4 = null != E;
+    if (tmp14Result4) {
+      const obj11 = { onPress: E };
+      tmp14Result4 = tmp14(AddMemberButton, obj11);
     }
-    return tmp7;
+    items3[2] = closure_10(View, obj10);
+    return closure_11(View, obj5);
   }
-  const obj2 = { onPress, iconSource: AssetRegistryDefault, iconStyle: icons, accessibilityLabel: first };
-  const tmp8 = authStore(closure_15, obj2);
-  cResult[1] = onPress;
-  cResult[2] = tmp4.icons;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : (function AddMemberButton(onPress) {
+}
+function AddMemberButton(onPress) {
   let intl;
   let tmp;
   const obj = { onPress: onPress.onPress, iconSource: AssetRegistryDefault, iconStyle: tmp.icons, accessibilityLabel: intl.string(intl2.t["6Qgrev"]) };
   tmp = closure_12();
   intl = intl2.intl;
-  return authStore(closure_15, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconButton(arg0) {
-  let accessibilityLabel;
-  let iconSource;
-  let iconStyle;
-  let onPress;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(8);
-  ({ onPress, iconStyle, iconSource, accessibilityLabel, style } = arg0);
-  if (cResult[0] === iconSource) {
-    let tmp4;
-    if (cResult[1] === iconStyle) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === accessibilityLabel) {
-      if (cResult[4] === onPress) {
-        if (cResult[5] === style) {
-          let tmp6;
-          if (cResult[6] === tmp4) {
-            tmp6 = cResult[7];
-          }
-          return tmp6;
-        }
-      }
-    }
-    const obj2 = { accessibilityRole: "button", accessibilityLabel, onPress, style, children: tmp4 };
-    const tmp8 = authStore(Pressables.PressableOpacity, obj2);
-    cResult[3] = accessibilityLabel;
-    cResult[4] = onPress;
-    cResult[5] = style;
-    cResult[6] = tmp4;
-    cResult[7] = tmp8;
-    tmp6 = tmp8;
+  return authStore(IconButton, obj);
+}
+class IconButton {
+  constructor(arg0) {
+    let accessibilityLabel;
+    let iconSource;
+    let iconStyle;
+    let onPress;
+    let style;
+    ({ onPress, iconStyle, iconSource, accessibilityLabel, style } = arg0);
+    const obj = { accessibilityRole: "button", accessibilityLabel, onPress, style, children: authStore(native.Icon, { source: iconSource, style: iconStyle }) };
+    const PressableOpacity = Pressables.PressableOpacity;
+    return authStore(PressableOpacity, obj);
   }
-  const tmp5 = authStore(native.Icon, { source: iconSource, style: iconStyle });
-  cResult[0] = iconSource;
-  cResult[1] = iconStyle;
-  cResult[2] = tmp5;
-  tmp4 = tmp5;
-}) : (function IconButton(arg0) {
-  let accessibilityLabel;
-  let iconSource;
-  let iconStyle;
-  let onPress;
-  let style;
-  ({ onPress, iconStyle, iconSource, accessibilityLabel, style } = arg0);
-  const obj = { accessibilityRole: "button", accessibilityLabel, onPress, style, children: authStore(native.Icon, { source: iconSource, style: iconStyle }) };
-  const PressableOpacity = Pressables.PressableOpacity;
-  return authStore(PressableOpacity, obj);
-});
-let closure_15 = tmp7;
+}
+const View = react_native.View;
+({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { alignSelf: "stretch", flexDirection: "row", paddingVertical: 10, paddingHorizontal: 16, alignItems: "center" }, middle: { flex: 1, justifyContent: "space-around", marginHorizontal: 16 }, icons: obj2, subtitle: obj3, subtitleWrapper: { flexDirection: "row" } };
+obj2 = { flexDirection: "row", tintColor: nativeDefault.colors.WHITE };
+createStyles = createStyles.createStyles;
+obj3 = { fontSize: 12, lineHeight: 16, color: nativeDefault.colors.WHITE };
+const authStore2 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceChannelHeader.tsx");
 
-export default tmp6;
-export const VoiceChannelHeader = tmp6;
-export const IconButton = tmp7;
+export default VoiceChannelHeader;
+export { VoiceChannelHeader };
+export { IconButton };

@@ -1,24 +1,24 @@
-// Module ID: 7797
-// Function ID: 7798
+// Module ID: 7835
+// Function ID: 7836
 // Name: activityBookmarkUtils
-// Dependencies: [1386, 2]
+// Dependencies: [1377, 2]
 // Exports: extractActivityBookmarkParams, getLinkChannelId
 
-// Module 7797 (activityBookmarkUtils)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
+// Module 7835 (activityBookmarkUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/message_embed/utils/activityBookmarkUtils.tsx");
 
-export const getLinkChannelId = function getLinkChannelId(toURLSafeResult) {
+export function getLinkChannelId(toURLSafeResult) {
   let value;
   if (toURLSafeResult != null) {
     const searchParams = toURLSafeResult.searchParams;
     value = searchParams.get("channel_id");
   }
   return value;
-};
-export const extractActivityBookmarkParams = function extractActivityBookmarkParams(url) {
+}
+export function extractActivityBookmarkParams(url) {
   let value4;
   let value5;
   let value6;
@@ -46,4 +46,4 @@ export const extractActivityBookmarkParams = function extractActivityBookmarkPar
     value6 = searchParams4.get("channel_id");
   }
   return obj2;
-};
+}

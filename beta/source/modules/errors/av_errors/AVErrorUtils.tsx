@@ -1,19 +1,19 @@
-// Module ID: 19430
-// Function ID: 19431
+// Module ID: 20054
+// Function ID: 20055
 // Name: AVErrorUtils
-// Dependencies: [5763, 1104, 5855, 2]
+// Dependencies: [5781, 1089, 5873, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 19430 (AVErrorUtils)
-import DurationsDefault from "Durations" /* 1104 */;
-import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 5855 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5763 */;
+// Module 20054 (AVErrorUtils)
+import DurationsDefault from "Durations" /* 1089 */;
+import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 5873 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5781 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = 10 * DurationsDefault.Millis.SECOND;
 let result = size.fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
 
-export const getReportInboundErrors = function getReportInboundErrors() {
+export function getReportInboundErrors() {
   const WindowVisibilityVideoManager = WindowVisibilityVideoManager3.WindowVisibilityVideoManager;
   let result = WindowVisibilityVideoManager.isIncomingVideoEnabled();
   if (result) {
@@ -23,8 +23,8 @@ export const getReportInboundErrors = function getReportInboundErrors() {
     result = nowResult - WindowVisibilityVideoManager2.lastIncomingVideoEnabledChangeTime() > closure_3;
   }
   return result;
-};
-export const getAccumulatedStatsWithMinDatapoints = function getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId) {
+}
+export function getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId) {
   let num = arg2;
   if (arg2 === undefined) {
     num = 15;
@@ -46,8 +46,8 @@ export const getAccumulatedStatsWithMinDatapoints = function getAccumulatedStats
     }
   }
   return tmp3;
-};
-export const getWarningFrameRate = function getWarningFrameRate(maxFrameRate) {
+}
+export function getWarningFrameRate(maxFrameRate) {
   let num = maxFrameRate;
   if (maxFrameRate === undefined) {
     num = 30;
@@ -65,4 +65,4 @@ export const getWarningFrameRate = function getWarningFrameRate(maxFrameRate) {
     num2 = num4;
   }
   return num2;
-};
+}

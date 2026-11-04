@@ -1,15 +1,15 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15541
+// Function ID: 15542
 // Name: GatewayCompressionHandler
-// Dependencies: [14997, 14999, 3, 14998, 7342, 2]
+// Dependencies: [15542, 15544, 3, 15543, 7383, 2]
 // Exports: getCompressionHandler
 
-// Module 14996 (GatewayCompressionHandler)
+// Module 15541 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import ProcessArgs2 from "ProcessArgs" /* 7342 */;
-import react_native from "react-native" /* 14997 */;
-import react_native2 from "react-native" /* 14998 */;
-import _mod14999 from "module_14999" /* 14999 */;
+import ProcessArgs2 from "ProcessArgs" /* 7383 */;
+import react_native from "react-native" /* 15542 */;
+import react_native2 from "react-native" /* 15543 */;
+import _mod15544 from "module_15544" /* 15544 */;
 import size from "module_2" /* 2 */;
 
 const items = [];
@@ -61,7 +61,7 @@ class tmp2 extends BaseGatewayCompressionHandler {
   usesLegacyCompression() {
     return false;
   }
-  feed(dataView) {
+  feed(arg0) {
     const self = this;
     if (null == this._stream) {
       const _Error2 = Error;
@@ -71,9 +71,9 @@ class tmp2 extends BaseGatewayCompressionHandler {
       throw error;
     } else {
       const _ArrayBuffer = ArrayBuffer;
-      if (dataView instanceof ArrayBuffer) {
+      if (arg0 instanceof ArrayBuffer) {
         const _stream = self._stream;
-        const decompressResult = _stream.decompress(dataView);
+        const decompressResult = _stream.decompress(arg0);
         let decodeResult = decompressResult;
         if (null != self._decoder) {
           const _decoder = self._decoder;
@@ -86,7 +86,7 @@ class tmp2 extends BaseGatewayCompressionHandler {
         const _Error = Error;
         const self2 = this;
         const self3 = this;
-        error1 = new Error("Expected array buffer, but got " + typeof dataView);
+        error1 = new Error("Expected array buffer, but got " + typeof arg0);
         throw error1;
       }
     }
@@ -103,7 +103,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
     let _inflate;
     let handleFlushEnd;
     const tmp2 = new tmp(arg0, new.target, tmp, this);
-    tmp2._pako = _mod14999;
+    tmp2._pako = _mod15544;
     tmp2._usesZstd = false;
     tmp2._zstdDecoder = null;
     tmp2._zstdStream = null;
@@ -247,7 +247,7 @@ items.push(tmp4);
 class tmp6 extends BaseGatewayCompressionHandler {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    applyArgumentsResult._pako = _mod14999;
+    applyArgumentsResult._pako = _mod15544;
     return applyArgumentsResult;
   }
   static canUse() {
@@ -377,7 +377,7 @@ const prototype6 = NullGatewayCompressionHandler.prototype;
 items.push(NullGatewayCompressionHandler);
 let result = size.fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
-export const getCompressionHandler = function getCompressionHandler(arg0) {
+export function getCompressionHandler(arg0) {
   const ProcessArgs = ProcessArgs2.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
     const self4 = this;
@@ -395,4 +395,4 @@ export const getCompressionHandler = function getCompressionHandler(arg0) {
     const self3 = this;
     return new NullGatewayCompressionHandler(arg0);
   }
-};
+}

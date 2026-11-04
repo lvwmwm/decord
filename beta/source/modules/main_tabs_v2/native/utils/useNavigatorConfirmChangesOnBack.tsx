@@ -1,88 +1,26 @@
-// Module ID: 10059
-// Function ID: 10060
+// Module ID: 10140
+// Function ID: 10141
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [19, 17, 1087, 558, 576, 10060, 10061, 2]
+// Dependencies: [19, 17, 1072, 10141, 10142, 2]
+// Exports: default
 
-// Module 10059 (useNavigatorConfirmChangesOnBack)
+// Module 10140 (useNavigatorConfirmChangesOnBack)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 10061 */;
+import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+let dependencyMap;
 
 const Keyboard = react_native.Keyboard;
 const NOOP = Constants.NOOP;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigatorConfirmChangesOnBack() {
-  let first;
-  let ref;
-  let ref2;
-  let resetPending;
-  let tmp5;
-  let tmp6;
-  let obj = ref(576);
-  const cResult = obj.c(4);
-  ref = react.useRef(null);
-  importDefault = react.useRef(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    function onBeforeGoBack(preventable) {
-      if (preventable.preventable) {
-        let current = ref2.current;
-        if (!current) {
-          const current2 = ref.current;
-          let hasUnsavedChangesResult;
-          if (current2 != null) {
-            hasUnsavedChangesResult = current2.hasUnsavedChanges();
-          }
-          current = true !== hasUnsavedChangesResult;
-        }
-        if (!current) {
-          preventable.preventDefault();
-          Keyboard.dismiss();
-          const obj = {
-            hasEdits: true,
-            resetPending,
-            onConfirm() {
-                  ref2.current = true;
-                  preventable.goBack();
-                }
-          };
-          ref2(dependencyMap[5])(obj);
-        }
-      }
-    }
-    cResult[0] = onBeforeGoBack;
-    first = onBeforeGoBack;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { onBeforeGoBack: first };
-    cResult[1] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const onGoBack = useNavigatorBackHandlerDefault(tmp5).onGoBack;
-  if (cResult[2] !== onGoBack) {
-    const obj3 = { onGoBack, ref };
-    cResult[2] = onGoBack;
-    cResult[3] = obj3;
-    tmp6 = obj3;
-  } else {
-    tmp6 = cResult[3];
-  }
-  return tmp6;
-}) : (function useNavigatorConfirmChangesOnBack() {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
+
+export default function useNavigatorConfirmChangesOnBack() {
   let ref2;
   let resetPending;
   const ref = react.useRef(null);
-  importDefault = react.useRef(false);
-  let obj = { onGoBack: useNavigatorBackHandlerDefault(obj2).onGoBack, ref };
+  dependencyMap = react.useRef(false);
+  let obj = { onGoBack: ref(10141)(obj2).onGoBack, ref };
   return obj;
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
-
-export default tmp2;
+};

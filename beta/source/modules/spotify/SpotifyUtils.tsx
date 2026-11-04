@@ -1,20 +1,20 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 11675
+// Function ID: 11676
 // Name: SpotifyUtils
-// Dependencies: [5, 2021, 11375, 6531, 8860, 1087, 1104, 6534, 11376, 11377, 2]
+// Dependencies: [5, 2013, 11676, 6571, 8911, 1072, 1089, 6574, 11677, 11678, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11374 (SpotifyUtils)
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import PlatformsDefault from "Platforms" /* 6534 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11376 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11377 */;
+// Module 11675 (SpotifyUtils)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import PlatformsDefault from "Platforms" /* 6574 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11677 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11678 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2021 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11375 */;
-import SpotifyStore from "SpotifyStore" /* 6531 */;
-import SpotifyConstants from "SpotifyConstants" /* 8860 */;
+import RunningGameStore from "RunningGameStore" /* 2013 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11676 */;
+import SpotifyStore from "SpotifyStore" /* 6571 */;
+import SpotifyConstants from "SpotifyConstants" /* 8911 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -139,11 +139,11 @@ const PlatformTypes = Constants.PlatformTypes;
 let closure_11 = 30 * DurationsDefault.Millis.SECOND;
 const result = size.fileFinishedImporting("modules/spotify/SpotifyUtils.tsx");
 
-export const isSpotifyPlayable = function isSpotifyPlayable(getActiveSocketAndDevice) {
+export function isSpotifyPlayable(getActiveSocketAndDevice) {
   const isProtocolRegisteredResult = null != getActiveSocketAndDevice.getActiveSocketAndDevice() || SpotifyProtocolStore.isProtocolRegistered();
   return isProtocolRegisteredResult;
-};
-export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
+}
+export function ensureSpotifyPlayable() {
   let device;
   let socket;
   let obj = SpotifyStore;
@@ -157,7 +157,7 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(11376);
+        const obj3 = playableComputerDevices(11677);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);
@@ -209,16 +209,16 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     let error = new Error("protocol is not registered");
     return reject(error);
   }
-};
-export const isSpotifyPremium = function isSpotifyPremium() {
+}
+export function isSpotifyPremium() {
   const activeSocketAndDevice = SpotifyStore.getActiveSocketAndDevice();
   let isPremium = null;
   if (null != activeSocketAndDevice) {
     isPremium = activeSocketAndDevice.socket.isPremium;
   }
   return isPremium;
-};
-export const ensureSpotifyPremium = function ensureSpotifyPremium() {
+}
+export function ensureSpotifyPremium() {
   const activeSocketAndDevice = SpotifyStore.getActiveSocketAndDevice();
   if (null == activeSocketAndDevice) {
     let _Error = Error;
@@ -246,7 +246,7 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
     }
     return resolved;
   }
-};
-export const getSpotifyMetadataFromActivity = function getSpotifyMetadataFromActivity() {
+}
+export function getSpotifyMetadataFromActivity() {
   return obj(...arguments);
-};
+}

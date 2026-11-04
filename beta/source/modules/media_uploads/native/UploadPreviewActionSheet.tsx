@@ -1,25 +1,25 @@
-// Module ID: 10449
-// Function ID: 10450
+// Module ID: 10529
+// Function ID: 10530
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7663, 1087, 5298, 21, 5003, 587, 558, 576, 38, 8177, 1499, 1633, 5295, 5242, 9697, 8187, 10450, 1267, 5695, 8186, 14000, 14001, 5266, 1384, 8822, 10468, 7019, 6935, 12219, 14002, 1128, 6932, 14004, 8590, 14006, 5276, 5721, 6009, 5301, 5297, 2]
+// Dependencies: [32, 19, 17, 7701, 1072, 5273, 21, 5014, 575, 38, 8211, 1491, 1625, 5593, 5258, 8221, 10530, 1252, 5712, 8220, 14520, 14521, 5272, 5275, 6027, 5624, 1375, 8873, 10548, 7060, 6975, 12510, 14522, 1113, 6974, 14525, 9778, 8659, 14527, 5634, 5738, 2]
+// Exports: default
 
-// Module 10449 (UploadPreviewActionSheet)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5298 */;
-import DraftStore from "DraftStore" /* 7663 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9697 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10450 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 14002 */;
+// Module 10529 (UploadPreviewActionSheet)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8220 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10530 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 14522 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, cropRect;
@@ -41,124 +41,10 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding:
 createStyles = createStyles.createStyles;
 obj3 = { overflow: "hidden", alignSelf: "center", borderRadius: nativeDefault.radii.md - nativeDefault.space.PX_4 };
 let closure_12 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPreviewActionSheet(onAdd) {
-  let disableAddDescription;
-  let height;
-  let isImage;
-  let isThumbnail;
-  let isVideo;
-  let item;
-  let onRemove;
-  let tmp9;
-  let upload;
-  let width2;
-  const tmp = onAdd;
-  let tmp2 = onRemove;
-  let obj = onAdd(onRemove[10]);
-  const cResult = obj.c(77);
-  onAdd = onAdd.onAdd;
-  const onEdit = onAdd.onEdit;
-  onRemove = onAdd.onRemove;
-  const channelId = onAdd.channelId;
-  const onClose = onAdd.onClose;
-  ({ disableAddDescription, upload } = onAdd);
-  let tmp4 = undefined !== disableAddDescription && disableAddDescription;
-  const tmp5 = closure_12();
-  const id = upload.id;
-  ({ isVideo, isImage, isThumbnail, item } = upload);
-  const spoiler = upload.spoiler;
-  let tmp7 = onEdit(tmp2[11]);
-  tmp7(item.platform === tmp(tmp2[12]).UploadPlatform.REACT_NATIVE, "Upload must be a React Native upload item.");
-  let width = onEdit(tmp2[13])().width;
-  const bottom = onEdit(tmp2[14])().bottom;
-  const tmp6 = onEdit;
-  if (cResult[0] !== onClose) {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-    cResult[0] = onClose;
-    cResult[1] = O;
-    tmp9 = O;
-  } else {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-  }
-  tmp6(tmp2[15])(tmp9);
-  ({ height, width: width2 } = item);
-  const diff = Math.min(width, ACTION_SHEET_MAX_WIDTH) - 2 * tmp5.contentContainer.padding - 2 * tmp5.imageWrap.padding;
-  if (null != height) {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-    if (cResult[8] === channelId) {
-      class O {
-        constructor() {
-          return () => {
-            if (onClose != null) {
-              tmp();
-            }
-          };
-        }
-      }
-    }
-    function markSpoiler() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-      const obj2 = UploadAttachmentActionCreatorsDefault;
-      const obj3 = { spoiler: !spoiler };
-      obj2.update(channelId, id, DraftType.ChannelMessage, obj3);
-    }
-    cResult[8] = channelId;
-    cResult[9] = spoiler;
-    cResult[10] = id;
-    cResult[11] = markSpoiler;
-    const tmp14 = markSpoiler;
-  }
-  if (cResult[6] !== diff) {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-    tmp13[0] = diff;
-    tmp13[1] = diff;
-    cResult[6] = diff;
-    cResult[7] = tmp13;
-  } else {
-    class O {
-      constructor() {
-        return () => {
-          if (onClose != null) {
-            tmp();
-          }
-        };
-      }
-    }
-  }
-}) : (function UploadPreviewActionSheet(onAdd) {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/media_uploads/native/UploadPreviewActionSheet.tsx");
+
+export default function UploadPreviewActionSheet(onAdd) {
   let _undefined;
   let c11;
   let disableAddDescription;
@@ -196,11 +82,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
   const spoiler = upload.spoiler;
   let tmp3 = onEdit;
   let tmp4 = onRemove;
-  const tmp5 = onEdit(onRemove[11]);
-  tmp5(item.platform === onAdd(onRemove[12]).UploadPlatform.REACT_NATIVE, "Upload must be a React Native upload item.");
-  let width = onEdit(onRemove[13])().width;
-  const bottom = onEdit(onRemove[14])().bottom;
-  let tmp8 = onEdit(onRemove[15])(() => () => {
+  const tmp5 = onEdit(onRemove[9]);
+  tmp5(item.platform === onAdd(onRemove[10]).UploadPlatform.REACT_NATIVE, "Upload must be a React Native upload item.");
+  let width = onEdit(onRemove[11])().width;
+  const bottom = onEdit(onRemove[12])().bottom;
+  let tmp8 = onEdit(onRemove[13])(() => () => {
     if (closure_1_4 != null) {
       tmp();
     }
@@ -247,15 +133,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
   const callback2 = react.useCallback(() => {
     let tmp3;
     let tmp4;
-    let obj = onEdit(onRemove[16]);
+    let obj = onEdit(onRemove[14]);
     obj.hideActionSheet();
     width = item.width;
     const height = item.height;
     const uri = item.uri;
     size = { uri, freeStyleCropEnabled: true, width: tmp3, height: tmp4 };
     tmp3 = undefined;
-    const launchCropper = onEdit(onRemove[18]).launchCropper;
-    const tmp2 = onEdit(onRemove[18]);
+    const launchCropper = onEdit(onRemove[15]).launchCropper;
+    const tmp2 = onEdit(onRemove[15]);
     if (0 !== width) {
       tmp3 = width;
     }
@@ -290,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
     nextPromise.catch((error) => {
       if ("E_PICKER_CANCELLED" !== error.code) {
         const obj2 = { text: error.message, variant: "critical" };
-        const obj = height(onRemove[21]);
+        const obj = height(onRemove[18]);
         obj.open("CROP_ERROR", obj2);
       }
     });
@@ -302,8 +188,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
     return getCaptionLabel(obj.getType(item.uri), isVideo, item);
   }, items4);
   const tmp14 = !tmp2 && !disableSpoiler;
-  let tmp22Result11 = tmp3(tmp4[23])(channelId, upload);
-  const tmp16 = tmp3(tmp4[24])(channelId, upload);
+  let tmp22Result11 = tmp3(tmp4[20])(channelId, upload);
+  const tmp16 = tmp3(tmp4[21])(channelId, upload);
   [tmp18, c11] = channelId(obj.useState(undefined), 2);
   let sum2;
   channelId(obj.useState(undefined), 2);
@@ -316,10 +202,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
     isImage = null != onEdit;
   }
   let obj2 = { scrollable: true, startHeight: sum2, children: null };
-  BottomSheet = tmp6(tmp4[42]).BottomSheet;
+  BottomSheet = tmp6(tmp4[22]).BottomSheet;
   let obj3 = { contentContainerStyle: obj4, children: null };
   obj4 = { padding: tmp3(tmp4[8]).space.PX_16, paddingBottom: bottom };
-  const BottomSheetScrollView = tmp6(tmp4[41]).BottomSheetScrollView;
+  const BottomSheetScrollView = tmp6(tmp4[23]).BottomSheetScrollView;
   const obj5 = {
     spacing: 16,
     onLayout(nativeEvent) {
@@ -327,7 +213,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
     },
     children: null
   };
-  const Stack = tmp6(tmp4[40]).Stack;
+  const Stack = tmp6(tmp4[24]).Stack;
   const items5 = [, , , ];
   const obj6 = { variant: "text-md/semibold", children: item.filename };
   items5[0] = width(onAdd(tmp4[25]).Text, obj6);
@@ -365,15 +251,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
           }
           items5[2] = tmp23Result;
           if (null != onRemove) {
-            const obj13 = { icon: width(onAdd(tmp4[39]).TrashIcon, { size: "sm", color: "control-primary-text-default" }), text: intl6.string(onAdd(tmp4[33]).t["40jBO/"]), onPress: callback, variant: "destructive" };
-            const Button2 = tmp6(tmp4[38]).Button;
+            const obj13 = { icon: width(onAdd(tmp4[40]).TrashIcon, { size: "sm", color: "control-primary-text-default" }), text: intl6.string(onAdd(tmp4[33]).t["40jBO/"]), onPress: callback, variant: "destructive" };
+            const Button2 = tmp6(tmp4[39]).Button;
             intl6 = tmp6(tmp4[33]).intl;
             tmp22Result8 = tmp22(Button2, obj13);
           } else {
             tmp22Result8 = null;
             if (null != onAdd) {
               const obj14 = { icon: width(onAdd(tmp4[31]).ImageFileIcon, { size: "sm", color: "control-primary-text-default" }), text: intl5.string(onAdd(tmp4[33]).t.s7oPyG), onPress: callback1 };
-              const Button = tmp6(tmp4[38]).Button;
+              const Button = tmp6(tmp4[39]).Button;
               intl5 = tmp6(tmp4[33]).intl;
               tmp22Result8 = tmp22(Button, obj14);
             }
@@ -423,7 +309,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
       }
       items8[1] = tmp22Result10;
       if (tmp22Result11) {
-        const obj17 = { icon: width(onAdd(tmp4[36]).ImageIcon, {}), label: intl3.string(onAdd(tmp4[33]).t.ews2pj), onPress: tmp16, checked: tmp2 };
+        const obj17 = { icon: width(onAdd(tmp4[37]).ImageIcon, {}), label: intl3.string(onAdd(tmp4[33]).t.ews2pj), onPress: tmp16, checked: tmp2 };
         const TableCheckboxRow2 = tmp6(tmp4[34]).TableCheckboxRow;
         intl3 = tmp6(tmp4[33]).intl;
         tmp22Result11 = tmp22(TableCheckboxRow2, obj17);
@@ -431,7 +317,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
       items8[2] = tmp22Result11;
       let tmp22Result12 = null;
       if (isImage) {
-        const obj18 = { icon: width(onAdd(tmp4[37]).PencilSparkleIcon, {}), onPress: callback2, label: intl4.string(onAdd(tmp4[33]).t.b0y3DL), arrow: true };
+        const obj18 = { icon: width(onAdd(tmp4[38]).PencilSparkleIcon, {}), onPress: callback2, label: intl4.string(onAdd(tmp4[33]).t.b0y3DL), arrow: true };
         const TableRow2 = tmp6(tmp4[30]).TableRow;
         intl4 = tmp6(tmp4[33]).intl;
         tmp22Result12 = tmp22(TableRow2, obj18);
@@ -443,8 +329,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPrevie
   }
   const obj20 = { style: { width: size.width, height: size.height }, source: { uri: item.uri } };
   tmp22Result = tmp22(closure_5, obj20);
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/media_uploads/native/UploadPreviewActionSheet.tsx");
-
-export default tmp5;
+};

@@ -1,151 +1,61 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 16298
+// Function ID: 16299
 // Name: useThermalState
-// Dependencies: [1384, 5936, 558, 576, 2]
-// Exports: getThermalState
+// Dependencies: [16299, 1375, 5954, 2]
+// Exports: default, getThermalState
 
-// Module 15748 (useThermalState)
-import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5936 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16298 (useThermalState)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5954 */;
+import ThermalStates from "ThermalStates" /* 16299 */;
 import size from "module_2" /* 2 */;
 
-const ThermalStates = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
-let obj2 = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThermalState() {
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  obj2 = ThermalUtilsDefault;
-  const rawThermalState = obj2.useRawThermalState();
-  if (cResult[0] !== rawThermalState) {
-    let UNHANDLED;
-    if (null == rawThermalState) {
-      UNHANDLED = obj.UNHANDLED;
-    } else {
-      UNHANDLED = rawThermalState;
-      const tmpResult = PlatformUtils;
-      if (!tmpResult.isIOS()) {
-        const tmpResult2 = PlatformUtils;
-        if (tmpResult2.isAndroid()) {
-          if (obj2.NONE === rawThermalState) {
-            UNHANDLED = obj.NOMINAL;
-          } else {
-            if (obj2.LIGHT !== rawThermalState) {
-              if (obj2.MODERATE !== rawThermalState) {
-                if (obj2.SEVERE === rawThermalState) {
-                  UNHANDLED = obj.SERIOUS;
-                } else {
-                  if (obj2.CRITICAL !== rawThermalState) {
-                    if (obj2.EMERGENCY !== rawThermalState) {
-                      if (obj2.SHUTDOWN !== rawThermalState) {
-                        UNHANDLED = obj.UNHANDLED;
-                      }
-                    }
-                  }
-                  UNHANDLED = obj.CRITICAL;
-                }
-              }
-            }
-            UNHANDLED = obj.FAIR;
-          }
-        } else {
-          UNHANDLED = obj.UNHANDLED;
-        }
-      }
-    }
-    cResult[0] = rawThermalState;
-    cResult[1] = UNHANDLED;
-    tmp5 = UNHANDLED;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function useThermalState() {
-  let UNHANDLED;
-  const obj = ThermalUtilsDefault;
-  const rawThermalState = obj.useRawThermalState();
+function _getThermalState(rawThermalState) {
   if (null == rawThermalState) {
-    UNHANDLED = obj.UNHANDLED;
+    return ThermalStates.ThermalStates.UNHANDLED;
   } else {
-    UNHANDLED = rawThermalState;
-    const obj3 = PlatformUtils;
-    const tmp11 = require;
-    if (!obj3.isIOS()) {
-      const tmp11Result = tmp11(1384);
-      if (tmp11Result.isAndroid()) {
-        if (obj2.NONE === rawThermalState) {
-          UNHANDLED = obj.NOMINAL;
+    const obj2 = PlatformUtils;
+    if (obj2.isIOS()) {
+      return rawThermalState;
+    } else {
+      const tmp4Result = PlatformUtils;
+      if (tmp4Result.isAndroid()) {
+        if (obj.NONE === rawThermalState) {
+          return ThermalStates.ThermalStates.NOMINAL;
         } else {
-          if (obj2.LIGHT !== rawThermalState) {
-            if (obj2.MODERATE !== rawThermalState) {
-              if (obj2.SEVERE === rawThermalState) {
-                UNHANDLED = obj.SERIOUS;
+          if (obj.LIGHT !== rawThermalState) {
+            if (obj.MODERATE !== rawThermalState) {
+              if (obj.SEVERE === rawThermalState) {
+                return ThermalStates.ThermalStates.SERIOUS;
               } else {
-                if (obj2.CRITICAL !== rawThermalState) {
-                  if (obj2.EMERGENCY !== rawThermalState) {
-                    if (obj2.SHUTDOWN !== rawThermalState) {
-                      UNHANDLED = obj.UNHANDLED;
+                if (obj.CRITICAL !== rawThermalState) {
+                  if (obj.EMERGENCY !== rawThermalState) {
+                    if (obj.SHUTDOWN !== rawThermalState) {
+                      return ThermalStates.ThermalStates.UNHANDLED;
                     }
                   }
                 }
-                UNHANDLED = obj.CRITICAL;
+                return ThermalStates.ThermalStates.CRITICAL;
               }
             }
           }
-          UNHANDLED = obj.FAIR;
+          return ThermalStates.ThermalStates.FAIR;
         }
       } else {
-        UNHANDLED = obj.UNHANDLED;
+        return ThermalStates.ThermalStates.UNHANDLED;
       }
     }
   }
-  return UNHANDLED;
-});
+}
+const AndroidThermalStates = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
 const result = size.fileFinishedImporting("modules/device/useThermalState.tsx");
 
-export default tmp2;
-export { ThermalStates };
-export const AndroidThermalStates = obj2;
-export const getThermalState = function getThermalState() {
-  let UNHANDLED;
+export default function useThermalState() {
   const obj = ThermalUtilsDefault;
-  const rawThermalState = obj.getRawThermalState();
-  if (null == rawThermalState) {
-    UNHANDLED = obj.UNHANDLED;
-  } else {
-    UNHANDLED = rawThermalState;
-    const obj3 = PlatformUtils;
-    const tmp11 = require;
-    if (!obj3.isIOS()) {
-      const tmp11Result = tmp11(1384);
-      if (tmp11Result.isAndroid()) {
-        if (obj2.NONE === rawThermalState) {
-          UNHANDLED = obj.NOMINAL;
-        } else {
-          if (obj2.LIGHT !== rawThermalState) {
-            if (obj2.MODERATE !== rawThermalState) {
-              if (obj2.SEVERE === rawThermalState) {
-                UNHANDLED = obj.SERIOUS;
-              } else {
-                if (obj2.CRITICAL !== rawThermalState) {
-                  if (obj2.EMERGENCY !== rawThermalState) {
-                    if (obj2.SHUTDOWN !== rawThermalState) {
-                      UNHANDLED = obj.UNHANDLED;
-                    }
-                  }
-                }
-                UNHANDLED = obj.CRITICAL;
-              }
-            }
-          }
-          UNHANDLED = obj.FAIR;
-        }
-      } else {
-        UNHANDLED = obj.UNHANDLED;
-      }
-    }
-  }
-  return UNHANDLED;
+  return _getThermalState(obj.useRawThermalState());
 };
+export { AndroidThermalStates };
+export function getThermalState() {
+  const obj = ThermalUtilsDefault;
+  return _getThermalState(obj.getRawThermalState());
+}

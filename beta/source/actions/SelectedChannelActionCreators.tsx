@@ -1,17 +1,17 @@
-// Module ID: 6666
-// Function ID: 6667
+// Module ID: 6706
+// Function ID: 6707
 // Name: SelectedChannelActionCreators
-// Dependencies: [5747, 4855, 2014, 1087, 6667, 584, 1114, 11684, 2]
+// Dependencies: [5765, 4863, 2006, 1072, 6707, 572, 1099, 11979, 2]
 
-// Module 6666 (SelectedChannelActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import router_utils from "router_utils" /* 1114 */;
-import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 6667 */;
-import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 11684 */;
-import GameConsoleStore from "GameConsoleStore" /* 5747 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import Constants from "Constants" /* 1087 */;
+// Module 6706 (SelectedChannelActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import router_utils from "router_utils" /* 1099 */;
+import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 6707 */;
+import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 11979 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let PopoutWindowKeys;

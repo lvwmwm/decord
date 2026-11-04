@@ -1,92 +1,22 @@
-// Module ID: 13531
-// Function ID: 13532
+// Module ID: 14149
+// Function ID: 14150
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 8404, 558, 576, 504, 13515, 1128, 2568, 2]
+// Dependencies: [19, 8469, 504, 14133, 1113, 2570, 2]
+// Exports: default
 
-// Module 13531 (useGameServerPowerupStatus)
-import intl2 from "intl" /* 1128 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13515 */;
+// Module 14149 (useGameServerPowerupStatus)
+import intl2 from "intl" /* 1113 */;
+import _modDef2570 from "module_2570" /* 2570 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8404 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameServerStore from "GameServerStore" /* 8469 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp8;
-const _modDef2568 = tmp8(2568);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServerPowerupStatus(arg0) {
-  let closure_0;
-  let first;
-  let intl;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameServerStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const stateForGuild = GameServerStore.getStateForGuild(closure_0);
-      let entitlements;
-      if (stateForGuild != null) {
-        entitlements = stateForGuild.entitlements;
-      }
-      return entitlements;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  let stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const arr3 = useGameServerGetExpiringEntitlementsDefault(arg0);
-  const _Object = Object;
-  if (stateFromStores == null) {
-    stateFromStores = {};
-  }
-  let tmp9;
-  if (0 !== values(stateFromStores).length) {
-    if (arr3.length > 0) {
-      let tmp11;
-      if (cResult[4] !== arr3[0].ends_at) {
-        const obj2 = { type: "expiring", expiringAt: arr3[0].ends_at };
-        cResult[4] = arr3[0].ends_at;
-        cResult[5] = obj2;
-        tmp11 = obj2;
-      } else {
-        tmp11 = cResult[5];
-      }
-      tmp9 = tmp11;
-    } else {
-      let tmp10;
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
-        intl = tmp(1128).intl;
-        cResult[6] = obj3;
-        tmp10 = obj3;
-      } else {
-        tmp10 = cResult[6];
-      }
-      tmp9 = tmp10;
-    }
-  }
-  return tmp9;
-}) : (function useGameServerPowerupStatus(arg0) {
+const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPowerupStatus.tsx");
+
+export default function useGameServerPowerupStatus(arg0) {
   let closure_0;
   let length;
   _require = arg0;
@@ -101,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServe
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(13515)(arg0);
+  const tmp2 = stateFromStores(14133)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {
@@ -117,13 +47,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServe
         obj3 = { type: "expiring", expiringAt: tmp[0].ends_at };
         const obj2 = { type: "expiring", expiringAt: tmp[0].ends_at };
       } else {
-        obj3 = { type: "active", statusText: intl.string(_modDef2568.FFLkmx) };
+        obj3 = { type: "active", statusText: intl.string(_modDef2570.FFLkmx) };
         intl = intl2.intl;
       }
       return obj3;
     }
   }, items2);
-});
-const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPowerupStatus.tsx");
-
-export default tmp2;
+};

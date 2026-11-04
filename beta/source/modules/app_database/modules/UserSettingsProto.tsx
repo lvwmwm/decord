@@ -1,12 +1,12 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7668
+// Function ID: 7669
 // Name: UserSettingsProto
-// Dependencies: [5, 1246, 502, 3, 4881, 4898, 12, 2]
+// Dependencies: [5, 1231, 502, 3, 4892, 4909, 12, 2]
 
-// Module 7630 (UserSettingsProto)
+// Module 7668 (UserSettingsProto)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ class UserSettingsProto {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {

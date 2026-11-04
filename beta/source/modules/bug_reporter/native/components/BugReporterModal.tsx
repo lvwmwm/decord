@@ -1,34 +1,32 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 11088
+// Function ID: 11089
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1392, 13817, 21, 5003, 587, 683, 1104, 6704, 1505, 504, 1128, 6956, 8177, 8176, 5695, 13819, 569, 13820, 7517, 7016, 5701, 1417, 1384, 8187, 11794, 1647, 7213, 6009, 5266, 6937, 12204, 6940, 1202, 8147, 5276, 7040, 7019, 6935, 5242, 13829, 2002, 7017, 7212, 1373, 13830, 10202, 558, 576, 7127, 2]
+// Dependencies: [5, 32, 19, 17, 1383, 11087, 21, 5014, 575, 671, 1089, 6744, 1497, 504, 1113, 6998, 8211, 8210, 5712, 11089, 559, 11090, 7558, 7061, 5717, 1409, 1375, 8221, 11099, 1639, 7254, 6027, 5624, 6977, 11111, 6980, 1187, 8359, 5634, 7082, 7060, 6975, 5258, 11126, 1994, 7058, 7253, 1358, 11127, 10282, 7169, 2]
+// Exports: default
 
-// Module 13818 (BugReporterModal)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import intl13 from "intl" /* 1128 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import NavigatorHeader from "NavigatorHeader" /* 6956 */;
-import TableRadioRow2 from "TableRadioRow" /* 7016 */;
-import Navigator from "Navigator" /* 7127 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7517 */;
-import UploadDefault from "Upload" /* 8176 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
+// Module 11088 (BugReporterModal)
+import nativeDefault from "native" /* 575 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl13 from "intl" /* 1113 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import TableRadioRow2 from "TableRadioRow" /* 7061 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
+import UploadDefault from "Upload" /* 8210 */;
+import UploadPlatform from "UploadPlatform" /* 8211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1392 */;
-import BugReportStore from "BugReportStore" /* 13817 */;
+import UserStore from "UserStore" /* 1383 */;
+import BugReportStore from "BugReportStore" /* 11087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import module_683 from "module_683" /* 683 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import module_671 from "module_671" /* 671 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c5, c6, closure_14, closure_2, dependencyMap, navigation, priority;
@@ -41,11 +39,6 @@ let metroRequire;
 let rect;
 let size;
 let unpackModuleId;
-function render(arg0) {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  return closure_1_10(closure_1_20, obj);
-}
 function handleClose() {
   BugReportStore.setState({ isReportOpen: false });
   const arr = ModalActionCreatorsDefault;
@@ -95,7 +88,7 @@ class BugCreateScreen {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -218,7 +211,7 @@ class BugCreateScreen {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -263,7 +256,7 @@ class BugCreateScreen {
                 });
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp16) {
             c3 = 3;
@@ -311,7 +304,7 @@ class BugCreateScreen {
     const first8 = tmp23[0];
     const setFeature = tmp23[1];
     let tmp25 = screenshotUri;
-    obj = screenshotUri(1505);
+    obj = screenshotUri(1497);
     navigation = obj.useNavigation();
     num.useRef(null);
     const ref = num.useRef(0);
@@ -387,7 +380,7 @@ class BugCreateScreen {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -426,7 +419,7 @@ class BugCreateScreen {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           try {
@@ -619,7 +612,7 @@ class BugCreateScreen {
                   clearTimeout(timeout);
                 }
                 priority = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp65) {
                 closure_2 = tmp65;
                 if (0 === name) {
@@ -641,12 +634,12 @@ class BugCreateScreen {
           const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
           const tmp = authStore;
           if (first5) {
-            const intl2 = tmp2(1128).intl;
-            stringResult = intl2.string(tmp2(1128).t["tUu8V+"]);
+            const intl2 = tmp2(1113).intl;
+            stringResult = intl2.string(tmp2(1113).t["tUu8V+"]);
           } else {
-            const intl = tmp2(1128).intl;
+            const intl = tmp2(1113).intl;
             const string = intl.string;
-            const t = tmp2(1128).t;
+            const t = tmp2(1113).t;
             if (first4) {
               stringResult = string(t.ZiWcJ0);
             } else {
@@ -681,7 +674,7 @@ class BugCreateScreen {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -715,7 +708,7 @@ class BugCreateScreen {
                 closure_0 = value;
                 closure_1_18(closure_0);
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp12) {
               c3 = 3;
@@ -741,15 +734,15 @@ class BugCreateScreen {
     }, items5);
     let tmp35 = closure_11;
     let tmp36 = callback;
-    let obj3 = { bottomOffset: screenshotUri(7213).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
-    const KeyboardAwareScrollView = screenshotUri(1647).KeyboardAwareScrollView;
+    let obj3 = { bottomOffset: screenshotUri(7254).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
+    const KeyboardAwareScrollView = screenshotUri(1639).KeyboardAwareScrollView;
     obj4 = { spacing: 24, style: tmp.container, children: items8 };
-    Stack = screenshotUri(6009).Stack;
+    Stack = screenshotUri(6027).Stack;
     let obj5 = { spacing: 8, children: items6 };
-    const Stack2 = screenshotUri(6009).Stack;
-    let obj6 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(screenshotUri(1128).t.tM969v) };
-    let Text = screenshotUri(5266).Text;
-    intl = screenshotUri(1128).intl;
+    const Stack2 = screenshotUri(6027).Stack;
+    let obj6 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(screenshotUri(1113).t.tM969v) };
+    let Text = screenshotUri(5624).Text;
+    intl = screenshotUri(1113).intl;
     items6 = [first4(Text, obj6), ];
     let obj7 = { children: items7 };
     let obj8 = {
@@ -778,50 +771,50 @@ class BugCreateScreen {
         return closure_11(first2, obj, uri.id);
       })
     };
-    const Card = screenshotUri(6937).Card;
+    const Card = screenshotUri(6977).Card;
     items7 = [first4(first3, obj8), ];
     let obj9 = {
-      text: intl2.string(screenshotUri(1128).t.HVxmOD),
+      text: intl2.string(screenshotUri(1113).t.HVxmOD),
       onPress: function handleAttachmentSelect() {
         return obj(...arguments);
       }
     };
-    const Button = screenshotUri(5276).Button;
-    intl2 = screenshotUri(1128).intl;
+    const Button = screenshotUri(5634).Button;
+    intl2 = screenshotUri(1113).intl;
     items7[1] = first4(Button, obj9);
     items6[1] = closure_11(Card, obj7);
     items8 = [closure_11(Stack2, obj5), , , , , , ];
-    let obj10 = { label: intl3.string(screenshotUri(1128).t.OZRgjw), placeholder: intl4.string(screenshotUri(1128).t["6mpW05"]), onChange: tmp4, clearable: true, autoCapitalize: "sentences" };
-    const TextInput = screenshotUri(7040).TextInput;
-    intl3 = screenshotUri(1128).intl;
-    intl4 = screenshotUri(1128).intl;
+    let obj10 = { label: intl3.string(screenshotUri(1113).t.OZRgjw), placeholder: intl4.string(screenshotUri(1113).t["6mpW05"]), onChange: tmp4, clearable: true, autoCapitalize: "sentences" };
+    const TextInput = screenshotUri(7082).TextInput;
+    intl3 = screenshotUri(1113).intl;
+    intl4 = screenshotUri(1113).intl;
     items8[1] = first4(TextInput, obj10);
     if (stateFromStores) {
-      let obj11 = { title: intl5.string(tmp25(1128).t["77VVd8"]), hasIcons: false, children: tmp37(TableRow, obj12) };
-      const TableRowGroup = tmp25(7019).TableRowGroup;
-      intl5 = tmp25(1128).intl;
+      let obj11 = { title: intl5.string(tmp25(1113).t["77VVd8"]), hasIcons: false, children: tmp37(TableRow, obj12) };
+      const TableRowGroup = tmp25(7060).TableRowGroup;
+      intl5 = tmp25(1113).intl;
       obj12 = {
         disabled: null == first7,
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(13829, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(11126, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
       };
-      TableRow = tmp25(6935).TableRow;
+      TableRow = tmp25(6975).TableRow;
       if (null != first8) {
         name = first8.name;
       } else {
-        const intl6 = tmp25(1128).intl;
-        name = intl6.string(tmp25(1128).t["77VVd8"]);
+        const intl6 = tmp25(1113).intl;
+        name = intl6.string(tmp25(1113).t["77VVd8"]);
       }
       stateFromStores = tmp37(TableRowGroup, obj11);
     }
     items8[2] = stateFromStores;
     const obj13 = {
-      title: intl7.string(tmp25(1128).t.xMXLda),
+      title: intl7.string(tmp25(1113).t.xMXLda),
       defaultValue: num,
       onChange: tmp9,
       hasIcons: true,
@@ -844,27 +837,27 @@ class BugCreateScreen {
         return authStore(TableRadioRow, obj, value);
       })
     };
-    const TableRadioGroup = tmp25(7017).TableRadioGroup;
-    intl7 = tmp25(1128).intl;
+    const TableRadioGroup = tmp25(7058).TableRadioGroup;
+    intl7 = tmp25(1113).intl;
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(13820);
+    const tmp25Result = tmp25(11090);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
-    let obj14 = { label: intl8.string(tmp25(1128).t["1SplH2"]), placeholder: intl9.string(tmp25(1128).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };
-    const TextArea = tmp25(7212).TextArea;
-    intl8 = tmp25(1128).intl;
-    intl9 = tmp25(1128).intl;
+    let obj14 = { label: intl8.string(tmp25(1113).t["1SplH2"]), placeholder: intl9.string(tmp25(1113).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };
+    const TextArea = tmp25(7253).TextArea;
+    intl8 = tmp25(1113).intl;
+    intl9 = tmp25(1113).intl;
     items8[4] = first4(TextArea, obj14);
-    const obj15 = { label: intl10.string(tmp25(1128).t["7p5pqh"]), placeholder: intl11.string(tmp25(1128).t.HewMzo), onChange: tmp12, clearable: true };
-    const TextInput2 = tmp25(7040).TextInput;
-    intl10 = tmp25(1128).intl;
-    intl11 = tmp25(1128).intl;
+    const obj15 = { label: intl10.string(tmp25(1113).t["7p5pqh"]), placeholder: intl11.string(tmp25(1113).t.HewMzo), onChange: tmp12, clearable: true };
+    const TextInput2 = tmp25(7082).TextInput;
+    intl10 = tmp25(1113).intl;
+    intl11 = tmp25(1113).intl;
     items8[5] = first4(TextInput2, obj15);
     const obj16 = { style: tmp.offButton, children: first4(Button2, obj17) };
     obj17 = {
-      text: intl12.string(tmp25(1128).t["636e+U"]),
+      text: intl12.string(tmp25(1113).t["636e+U"]),
       size: "sm",
       variant: "secondary",
       onPress() {
@@ -883,8 +876,8 @@ class BugCreateScreen {
         open("BUG_REPORT_HAS_BEEN_TURNED_OFF_TEXT", obj3);
       }
     };
-    Button2 = tmp25(5276).Button;
-    intl12 = tmp25(1128).intl;
+    Button2 = tmp25(5634).Button;
+    intl12 = tmp25(1113).intl;
     items8[6] = first4(first2, obj16);
     const children = [tmp37(KeyboardAwareScrollView, obj3), ];
     let tmp37Result = null;
@@ -915,47 +908,18 @@ let createStyles = createStyles_mod;
 let obj = { container: { padding: 16 }, attachmentCarousel: { justifyContent: "center", minWidth: "100%" }, attachmentContainer: { marginHorizontal: 4, marginBottom: 16 }, closeContainer: size, priorityIcon: { width: 24, height: 24 }, offButton: { marginBottom: 24 }, submittingOverlay: rect, submittingText: { marginTop: 8 } };
 size = { position: "absolute", top: 6, right: 10, height: 20, width: 20, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", backgroundColor: alphaResult.css() };
 createStyles = createStyles.createStyles;
-const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.BLACK);
+const importDefaultResultResult = module_671(nativeDefault.unsafe_rawColors.BLACK);
 alphaResult = importDefaultResultResult.alpha(0.5);
 rect = { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, bottom: 0, flex: 1, justifyContent: "center", position: "absolute", top: 0, width: "100%" };
-const syncedClientThemes = createStyles(obj);
+const authStore3 = createStyles(obj);
 let closure_15 = 5 * DurationsDefault.Millis.SECOND;
 let closure_16 = 10 * DurationsDefault.Millis.SECOND;
 let closure_17 = 5 * DurationsDefault.Millis.SECOND;
 const MINUTE = DurationsDefault.Millis.MINUTE;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BugReportModal(arg0) {
-  let intl;
-  let obj4;
-  let screenshot;
-  let screenshotUri;
-  const obj = react2;
-  const cResult = obj.c(5);
-  ({ screenshotUri, screenshot } = arg0);
-  if (cResult[0] === screenshot) {
-    let tmp4;
-    let tmp5;
-    if (cResult[1] === screenshotUri) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] !== tmp4) {
-      const obj2 = { screens: tmp4, initialRouteName: "BUG_REPORT_CREATE" };
-      const tmp7 = authStore(Navigator.Navigator, obj2);
-      cResult[3] = tmp4;
-      cResult[4] = tmp7;
-      tmp5 = tmp7;
-    } else {
-      tmp5 = cResult[4];
-    }
-    return tmp5;
-  }
-  const obj3 = { BUG_REPORT_CREATE: obj4 };
-  obj4 = { title: intl.string(intl13.t.mCCdwi), initialParams: { screenshotUri, screenshot }, ignoreKeyboard: true, render };
-  intl = tmp(1128).intl;
-  cResult[0] = screenshot;
-  cResult[1] = screenshotUri;
-  cResult[2] = obj3;
-  tmp4 = obj3;
-}) : (function BugReportModal(screenshotUri) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterModal.tsx");
+
+export default function BugReportModal(screenshotUri) {
   screenshotUri = screenshotUri.screenshotUri;
   const screenshot = screenshotUri.screenshot;
   const items = [screenshotUri, screenshot];
@@ -964,14 +928,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BugReportMod
     let obj3;
     let obj = { screenshotUri, screenshot };
     const obj2 = { BUG_REPORT_CREATE: obj3 };
-    obj3 = { title: intl.string(intl13.t.mCCdwi), initialParams: obj, ignoreKeyboard: true, render };
+    obj3 = {
+      title: intl.string(intl13.t.mCCdwi),
+      initialParams: obj,
+      ignoreKeyboard: true,
+      render(arg0) {
+        const obj = {};
+        const merged = Object.assign(arg0);
+        return closure_1_10(closure_1_20, obj);
+      }
+    };
     intl = intl13.intl;
     return obj2;
   }, items);
-  return closure_10(screenshotUri(7127).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterModal.tsx");
-
-export default tmp6;
+  return closure_10(screenshotUri(7169).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+};
 export { BugCreateScreen };

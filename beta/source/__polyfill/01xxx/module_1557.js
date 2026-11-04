@@ -1,52 +1,25 @@
 // Module ID: 1557
 // Function ID: 1558
-// Dependencies: [32, 109, 19, 1558]
-// Exports: useRouteCache
+// Dependencies: []
 
 // Module 1557
-import _mod1558 from "module_1558" /* 1558 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
 
-let map;
-
-let closure_2 = ["state"];
-const SymbolResult = Symbol("CHILD_STATE");
-const hasOwnProperty = SymbolResult;
-
-export const CHILD_STATE = SymbolResult;
-export const useRouteCache = function useRouteCache(routes) {
-  const ref = react.useMemo(() => {
-    const obj = { current: new Map() };
-    new Map();
-    return obj;
-  }, []);
-  const reduce = routes.reduce;
-  map = new Map();
-  const reduced = reduce((set, key) => {
-    const current = ref.current;
-    const value = current.get(key.key);
-    const state = key.state;
-    const tmp2 = _objectWithoutProperties(key, closure_2);
-    let tmp3 = tmp2;
-    if (value) {
-      tmp3 = tmp2;
-      const obj = _mod1558;
-      if (obj.isRecordEqual(value, tmp2)) {
-        tmp3 = value;
-      }
+export default (arg0, arr) => {
+  let num;
+  const obj = {};
+  const keys = Object.keys(arg0);
+  for (let num = 0; num < keys.length; num = num + 1) {
+    let tmp5;
+    let tmp2 = keys[num];
+    let tmp3 = arg0[tmp2];
+    if (tmp) {
+      tmp5 = -1 !== arr.indexOf(tmp2);
+    } else {
+      tmp5 = arr(tmp2, tmp3, arg0);
     }
-    if (tmp3[hasOwnProperty] !== state) {
-      const _Object = Object;
-      const obj2 = { enumerable: false, configurable: true, value: state };
-      Object.defineProperty(tmp3, tmp6, obj2);
+    if (tmp5) {
+      obj[tmp2] = tmp3;
     }
-    const result = set.set(key.key, tmp3);
-    return set;
-  }, map);
-  const insertionEffect = react.useInsertionEffect(() => {
-    ref.current = reduced;
-  });
-  return Array.from(reduced.values());
+  }
+  return obj;
 };

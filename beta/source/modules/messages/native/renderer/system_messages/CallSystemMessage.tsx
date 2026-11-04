@@ -1,30 +1,30 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 8436
+// Function ID: 8437
 // Name: CallSystemMessage
-// Dependencies: [6804, 502, 5662, 1087, 5664, 8369, 8370, 1128, 1420, 4828, 8354, 2]
+// Dependencies: [6843, 502, 5679, 1072, 5681, 8437, 8438, 1113, 1412, 4836, 8422, 2]
 // Exports: createCallSystemMessage
 
-// Module 8368 (CallSystemMessage)
-import Constants from "Constants" /* 1087 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import DateUtils from "DateUtils" /* 4828 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8369 */;
-import useIsCallActive from "useIsCallActive" /* 8370 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
+// Module 8436 (CallSystemMessage)
+import Constants from "Constants" /* 1072 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import DateUtils from "DateUtils" /* 4836 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8437 */;
+import useIsCallActive from "useIsCallActive" /* 8438 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 let user;
 
 let tmp4;
-const createCommonMessageDefault = tmp4(8354);
+const createCommonMessageDefault = tmp4(8422);
 const ME = Constants.ME;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
 
-export const createCallSystemMessage = function createCallSystemMessage(message) {
+export function createCallSystemMessage(message) {
   let formatToPlainStringResult;
   let mapped;
   let stringResult1;
@@ -47,16 +47,16 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
     const participants1 = call.participants;
     tmp9 = -1 === participants1.indexOf(id);
   }
-  const intl = tmp7(1128).intl;
+  const intl = tmp7(1113).intl;
   const string = intl.string;
-  const t = tmp7(1128).t;
+  const t = tmp7(1113).t;
   if (checkIsCallActiveResult) {
     let str2 = "";
     const stringResult = string(t["NGg/fm"]);
     if (checkIsCallActiveResult) {
       if (null == userVoiceChannelId) {
-        const intl3 = tmp7(1128).intl;
-        str2 = intl3.string(tmp7(1128).t.DqA3mi);
+        const intl3 = tmp7(1113).intl;
+        str2 = intl3.string(tmp7(1113).t.DqA3mi);
       } else {
         str2 = "";
       }
@@ -76,10 +76,10 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
       stringResult1 = string(t.v05Xd6);
     }
     if (null != tmp6) {
-      const intl2 = tmp7(1128).intl;
+      const intl2 = tmp7(1113).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj2 = { duration: tmp6, timestamp: tmp7Result.calendarFormat(message.timestamp) };
-      const SBDnp1 = tmp7(1128).t.SBDnp1;
+      const SBDnp1 = tmp7(1113).t.SBDnp1;
       tmp7Result = DateUtils;
       formatToPlainStringResult = formatToPlainString(SBDnp1, obj2);
     } else {
@@ -95,4 +95,4 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   timestamp = message.timestamp;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj3;
-};
+}

@@ -1,9 +1,9 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11514
+// Function ID: 11515
 // Name: MainTabsConstants
 // Dependencies: [2]
 
-// Module 11215 (MainTabsConstants)
+// Module 11514 (MainTabsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/MainTabsConstants.tsx");

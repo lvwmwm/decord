@@ -1,23 +1,23 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 9695
+// Function ID: 9696
 // Name: AssetUtils
-// Dependencies: [6742, 1087, 9617, 9618, 9619, 9620, 9621, 7813, 9628, 9629, 6750, 1386, 1900, 2]
+// Dependencies: [6781, 1072, 9696, 9697, 9698, 9699, 9700, 7851, 9707, 9708, 6789, 1377, 1892, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9616 (AssetUtils)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import react_nativeDefault from "react-native" /* 1900 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6750 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7813 */;
-import _modDef9617 from "module_9617" /* 9617 */;
-import _modDef9618 from "module_9618" /* 9618 */;
-import _modDef9619 from "module_9619" /* 9619 */;
-import _modDef9620 from "module_9620" /* 9620 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9621 */;
-import _modDef9628 from "module_9628" /* 9628 */;
-import _modDef9629 from "module_9629" /* 9629 */;
-import QuestConstants from "QuestConstants" /* 6742 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9695 (AssetUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import react_nativeDefault from "react-native" /* 1892 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6789 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7851 */;
+import _modDef9696 from "module_9696" /* 9696 */;
+import _modDef9697 from "module_9697" /* 9697 */;
+import _modDef9698 from "module_9698" /* 9698 */;
+import _modDef9699 from "module_9699" /* 9699 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9700 */;
+import _modDef9707 from "module_9707" /* 9707 */;
+import _modDef9708 from "module_9708" /* 9708 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
+import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
 let TIER_1;
@@ -226,7 +226,7 @@ let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIP
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let obj5 = { variant: obj2.VIDEO, property: obj3.VIDEO };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: obj5, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef9617, [TIER_2]: _modDef9618, [TIER_3]: _modDef9619, [TIER_4]: _modDef9620 };
+const obj11 = { [TIER_1]: _modDef9696, [TIER_2]: _modDef9697, [TIER_3]: _modDef9698, [TIER_4]: _modDef9699 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
@@ -236,22 +236,22 @@ export const ANIMATED_MIMETYPES = items;
 export { QuestAssetType };
 export { resolveAsset };
 export const OrbsValueTier = obj4;
-export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAIL, DARK, flag, arg4) {
+export function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRIPT, DARK, flag, arg4) {
   let asset;
   let assetVideo;
   let flag2;
   let obj;
   let tmp41;
-  if (obj.HERO === VIDEO_PLAYER_THUMBNAIL) {
+  if (obj.HERO === VIDEO_PLAYER_TRANSCRIPT) {
     const heroVideo2 = quest.config.assets.heroVideo;
     asset = quest.config.assets.hero;
     flag = false;
     flag2 = false;
-  } else if (obj.HERO_IMAGE === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.HERO_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
     asset = quest.config.assets.hero;
     flag = false;
     flag2 = false;
-  } else if (obj.HERO_VIDEO === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.HERO_VIDEO === VIDEO_PLAYER_TRANSCRIPT) {
     const heroVideo = quest.config.assets.heroVideo;
     flag = false;
     flag2 = false;
@@ -259,12 +259,12 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
     if (null == heroVideo) {
       return null;
     }
-  } else if (obj.QUEST_BAR_HERO === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.QUEST_BAR_HERO === VIDEO_PLAYER_TRANSCRIPT) {
     const questBarHeroVideo2 = quest.config.assets.questBarHeroVideo;
     asset = quest.config.assets.questBarHero;
     flag = false;
     flag2 = false;
-  } else if (obj.QUEST_BAR_HERO_VIDEO === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.QUEST_BAR_HERO_VIDEO === VIDEO_PLAYER_TRANSCRIPT) {
     const questBarHeroVideo = quest.config.assets.questBarHeroVideo;
     flag = false;
     flag2 = false;
@@ -272,11 +272,11 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
     if (null == questBarHeroVideo) {
       return null;
     }
-  } else if (obj.QUEST_BAR_HERO_IMAGE === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.QUEST_BAR_HERO_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
     asset = quest.config.assets.questBarHero;
     flag = false;
     flag2 = false;
-  } else if (obj.REWARD === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
     const obj2 = QuestRewardUtils;
     const questPrimaryReward = obj2.getQuestPrimaryReward(quest);
     if (questPrimaryReward.type === QuestRewardTypes.QuestRewardTypes.VIRTUAL_CURRENCY) {
@@ -289,10 +289,10 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
         obj5 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
       } else if (flag) {
-        obj5 = { url: _modDef9628, mimetype: "video/mp4", isAnimated: true };
-        const obj4 = { url: _modDef9628, mimetype: "video/mp4", isAnimated: true };
+        obj5 = { url: _modDef9707, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef9707, mimetype: "video/mp4", isAnimated: true };
       } else {
-        obj5 = { url: _modDef9629, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef9708, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {
@@ -300,7 +300,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
       flag = false;
       flag2 = false;
     }
-  } else if (obj.REWARD_IMAGE === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
     obj = QuestRewardUtils;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
     if (questPrimaryReward1.type === QuestRewardTypes.QuestRewardTypes.VIRTUAL_CURRENCY) {
@@ -310,7 +310,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
       flag = false;
       flag2 = false;
     }
-  } else if (obj.GAME_TILE === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.GAME_TILE === VIDEO_PLAYER_TRANSCRIPT) {
     let tmp18;
     if (null != DARK) {
       let str10;
@@ -338,7 +338,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
     asset = quest.config.assets.gameTile;
     flag = false;
     flag2 = true;
-  } else if (obj.LOGO_TYPE === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.LOGO_TYPE === VIDEO_PLAYER_TRANSCRIPT) {
     let tmp15;
     if (null != DARK) {
       let str6;
@@ -366,7 +366,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
     asset = quest.config.assets.logotype;
     flag = false;
     flag2 = true;
-  } else if (obj.COSPONSOR_LOGO_TYPE === VIDEO_PLAYER_THUMBNAIL) {
+  } else if (obj.COSPONSOR_LOGO_TYPE === VIDEO_PLAYER_TRANSCRIPT) {
     if (null == quest.config.cosponsorMetadata) {
       return null;
     } else {
@@ -399,11 +399,11 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
       flag2 = true;
     }
   } else {
-    if (obj.VIDEO_PLAYER_VIDEO !== VIDEO_PLAYER_THUMBNAIL) {
-      if (obj.VIDEO_PLAYER_VIDEO_LOW_RES !== VIDEO_PLAYER_THUMBNAIL) {
-        if (obj.VIDEO_PLAYER_VIDEO_HLS !== VIDEO_PLAYER_THUMBNAIL) {
-          if (obj.VIDEO_PLAYER_THUMBNAIL !== VIDEO_PLAYER_THUMBNAIL) {
-            if (obj.VIDEO_PLAYER_CAPTION !== VIDEO_PLAYER_THUMBNAIL) {
+    if (obj.VIDEO_PLAYER_VIDEO !== VIDEO_PLAYER_TRANSCRIPT) {
+      if (obj.VIDEO_PLAYER_VIDEO_LOW_RES !== VIDEO_PLAYER_TRANSCRIPT) {
+        if (obj.VIDEO_PLAYER_VIDEO_HLS !== VIDEO_PLAYER_TRANSCRIPT) {
+          if (obj.VIDEO_PLAYER_THUMBNAIL !== VIDEO_PLAYER_TRANSCRIPT) {
+            if (obj.VIDEO_PLAYER_CAPTION !== VIDEO_PLAYER_TRANSCRIPT) {
               flag = false;
               flag2 = false;
             }
@@ -417,7 +417,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
       const tmp5 = tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO];
       let tmp9;
       if (tmp5 != null) {
-        if (tmp5.assets[closure_11[VIDEO_PLAYER_THUMBNAIL].variant] != null) {
+        if (tmp5.assets[closure_11[VIDEO_PLAYER_TRANSCRIPT].variant] != null) {
           tmp9 = tmp10[tmp7.property];
         }
       }
@@ -454,8 +454,8 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
     tmp41 = null;
   }
   return tmp41;
-};
-export const buildUrl = function buildUrl(arg0, str, theme) {
+}
+export function buildUrl(arg0, str, theme) {
   if (str.startsWith("blob:")) {
     const parts = str.split("?", 1);
     let atResult = parts.at(0);
@@ -483,24 +483,24 @@ export const buildUrl = function buildUrl(arg0, str, theme) {
     }
     return combined;
   }
-};
-export const resolveOptionalAdCreativeCdnUrl = function resolveOptionalAdCreativeCdnUrl(hero_video) {
-  if (null != hero_video) {
-    let combined = hero_video;
-    if (!hero_video.startsWith("http://")) {
-      combined = hero_video;
-      if (!hero_video.startsWith("https://")) {
-        combined = hero_video;
-        if (!hero_video.startsWith("blob:")) {
+}
+export function resolveOptionalAdCreativeCdnUrl(image_preview) {
+  if (null != image_preview) {
+    let combined = image_preview;
+    if (!image_preview.startsWith("http://")) {
+      combined = image_preview;
+      if (!image_preview.startsWith("https://")) {
+        combined = image_preview;
+        if (!image_preview.startsWith("blob:")) {
           const _HermesInternal = HermesInternal;
-          combined = "" + _false + hero_video;
+          combined = "" + _false + image_preview;
         }
       }
     }
     return combined;
   }
-};
-export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_image) {
+}
+export function resolveAdCreativeCdnUrl(hero_image) {
   let combined = hero_image;
   if (!hero_image.startsWith("http://")) {
     combined = hero_image;
@@ -513,9 +513,9 @@ export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_ima
     }
   }
   return combined;
-};
+}
 export { getMimetype };
-export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimensions(width, height) {
+export function getDevicePixelScaledDimensions(width, height) {
   let size1;
   const tmp = react_nativeDefault();
   if (tmp < 3) {
@@ -525,9 +525,9 @@ export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimen
     size1 = { width: width * tmp, height: height * tmp };
   }
   return size1;
-};
+}
 export { getAssetUrlWithMediaProxyQueryParams };
-export const getScaledImageUrl = function getScaledImageUrl(size) {
+export function getScaledImageUrl(size) {
   let assetUrl;
   let height;
   let width;
@@ -535,9 +535,9 @@ export const getScaledImageUrl = function getScaledImageUrl(size) {
   const tmp = react_nativeDefault();
   size = { width: width * tmp, height: height * tmp, format: "webp" };
   return getAssetUrlWithMediaProxyQueryParams(assetUrl, size);
-};
+}
 export { convertVideoToFirstFrameImageWithMediaProxy };
-export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(size) {
+export function getScaledFirstFrameImageUrl(size) {
   let assetUrl;
   let height;
   let width;
@@ -545,4 +545,4 @@ export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(
   const tmp = react_nativeDefault();
   size = { width: width * tmp, height: height * tmp };
   return convertVideoToFirstFrameImageWithMediaProxy(assetUrl, size);
-};
+}

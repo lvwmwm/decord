@@ -1,23 +1,23 @@
-// Module ID: 5942
-// Function ID: 5943
+// Module ID: 5960
+// Function ID: 5961
 // Name: useAlertStore
-// Dependencies: [32, 570, 1274, 5943, 5945, 2]
+// Dependencies: [32, 560, 1259, 5961, 5963, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 5942 (useAlertStore)
-import react_nativeDefault from "react-native" /* 5945 */;
+// Module 5960 (useAlertStore)
+import react_nativeDefault from "react-native" /* 5963 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import module_570 from "module_570" /* 570 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
-const useAlertStore = module_570.create(() => ({ alerts: [] }));
+const useAlertStore = module_560.create(() => ({ alerts: [] }));
 const result = size.fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
 
 export { useAlertStore };
-export const dismissAlerts = function dismissAlerts() {
+export function dismissAlerts() {
   let arr4;
   let first;
   let obj;
@@ -32,7 +32,7 @@ export const dismissAlerts = function dismissAlerts() {
     arr.push(dismissable);
     return acc;
   }, items);
-  obj = first(1274);
+  obj = first(1259);
   obj.batchUpdates(() => {
     const obj = { alerts: arr4 };
     obj.setState(obj);
@@ -47,23 +47,23 @@ export const dismissAlerts = function dismissAlerts() {
   });
   const tmp4 = 0 === arr4.length && first.length > 0;
   if (tmp4) {
-    arr4(5943)();
+    arr4(5961)();
   }
-};
-export const dismissAlert = function dismissAlert(key) {
+}
+export function dismissAlert(c6) {
   let obj;
-  _require = key;
+  _require = c6;
   let alerts = obj.getState().alerts;
-  const found = alerts.find((key) => key.key === key);
+  const found = alerts.find((key) => key.key === closure_0);
   if (null != found) {
     let tmp2 = 1 === alerts.length;
     if (tmp2) {
       const first = alerts[0];
-      key = undefined;
+      let key;
       if (first != null) {
         key = first.key;
       }
-      tmp2 = key === key;
+      tmp2 = key === c6;
     }
     obj = require("react-native");
     obj.batchUpdates(() => {
@@ -79,11 +79,11 @@ export const dismissAlert = function dismissAlert(key) {
       }
     });
     if (tmp2) {
-      found(5943)();
+      found(5961)();
     }
   }
-};
-export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
+}
+export function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
   let closure_1;
   let obj;
   _require = DeleteEventAlert;
@@ -111,4 +111,4 @@ export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallb
       return { alerts };
     });
   });
-};
+}

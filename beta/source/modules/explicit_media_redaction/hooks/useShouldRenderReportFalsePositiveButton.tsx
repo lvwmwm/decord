@@ -1,54 +1,25 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 13351
+// Function ID: 13352
 // Name: useShouldRenderReportFalsePositiveButton
-// Dependencies: [7422, 558, 576, 573, 2]
-// Exports: shouldRenderReportFalsePositiveButton
+// Dependencies: [7464, 563, 2]
+// Exports: shouldRenderReportFalsePositiveButton, useShouldRenderReportFalsePositiveButton
 
-// Module 12904 (useShouldRenderReportFalsePositiveButton)
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7422 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13351 (useShouldRenderReportFalsePositiveButton)
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7464 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRenderReportFalsePositiveButton(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ExplicitMediaStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      return ExplicitMediaStore.getFpMessageInfo(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(573);
-  return null != tmpResult.useStateFromStores(first, tmp6);
-}) : (function useShouldRenderReportFalsePositiveButton(arg0) {
+const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");
+
+export function shouldRenderReportFalsePositiveButton(id) {
+  return null != ExplicitMediaStore.getFpMessageInfo(id);
+}
+export function useShouldRenderReportFalsePositiveButton(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ExplicitMediaStore];
   const obj = require("useStateFromStores");
   return null != obj.useStateFromStores(items, () => ExplicitMediaStore.getFpMessageInfo(closure_0));
-});
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");
-
-export const shouldRenderReportFalsePositiveButton = function shouldRenderReportFalsePositiveButton(id) {
-  return null != ExplicitMediaStore.getFpMessageInfo(id);
-};
-export const useShouldRenderReportFalsePositiveButton = tmp2;
+}

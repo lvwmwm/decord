@@ -1,664 +1,95 @@
-// Module ID: 12322
-// Function ID: 12323
+// Module ID: 12104
+// Function ID: 12105
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6805, 21, 9515, 8604, 6806, 11832, 12323, 12325, 10985, 5003, 587, 5695, 558, 576, 11909, 12288, 504, 12327, 8609, 1128, 3862, 5242, 11846, 11889, 7040, 7212, 5266, 6915, 11873, 5276, 7330, 5636, 2]
+// Dependencies: [5, 19, 17, 6844, 21, 9587, 8673, 6845, 12105, 12107, 12109, 11281, 5014, 575, 5712, 5258, 12097, 504, 12111, 6022, 5591, 8677, 8678, 1113, 3868, 7366, 12117, 12122, 7082, 7253, 5624, 6957, 12125, 5634, 7369, 5652, 2]
 // Exports: default
 
-// Module 12322 (ConjurePublishSheet)
+// Module 12104 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5242 */;
-import useChannelNameDefault from "useChannelName" /* 5636 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8604 */;
-import ScreenIcon from "ScreenIcon" /* 9515 */;
-import ShieldIcon from "ShieldIcon" /* 10985 */;
-import RobotIcon from "RobotIcon" /* 11832 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11909 */;
-import useConjureNativePublishOptionsDefault from "useConjureNativePublishOptions" /* 12288 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12323 */;
-import BadgeIcon from "BadgeIcon" /* 12325 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5258 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7369 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8673 */;
+import AppsIcon2 from "AppsIcon" /* 8678 */;
+import ScreenIcon from "ScreenIcon" /* 9587 */;
+import ShieldIcon from "ShieldIcon" /* 11281 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12097 */;
+import RobotIcon from "RobotIcon" /* 12105 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12107 */;
+import BadgeIcon from "BadgeIcon" /* 12109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
+import react_mod from "react" /* 19 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size_mod from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import size from "module_2" /* 2 */;
 
-let c1, c3, dependencyMap;
+const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
+let c1, c4, closure_2, dependencyMap, importDefault;
 
+let c9;
 let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj10;
 let obj11;
 let obj12;
-let obj13;
-let obj14;
-let obj15;
 let obj4;
 let obj5;
 let obj6;
 let obj7;
 let obj8;
 let obj9;
-let size;
-let tmp;
-const Text_Text = tmp(5266);
-const AppsIcon = tmp(8609);
+let tmp2;
+const intl10 = tmp2(1113);
 function showCriticalToast(text) {
   obj = ToastActionCreatorsDefault;
   obj2 = { text, variant: "critical" };
   obj.open("CONJURE_PUBLISH_SHEET_ERROR", obj2);
 }
-const View = react_native.View;
-({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const ConjurePublishSheet_str = "ConjurePublishSheet";
-let obj = { screen_capture: ScreenIcon.ScreenIcon, connect_user_to_voice: VoiceNormalIcon.VoiceNormalIcon };
-let obj2 = {};
-obj2[ConjureProjectTypes.ConjureSupportedSurface.BOT] = RobotIcon.RobotIcon;
-obj2[ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY] = ActivitiesIcon.ActivitiesIcon;
-obj2[ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET] = BadgeIcon.BadgeIcon;
-obj2[ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD] = ShieldIcon.ShieldIcon;
-let closure_12 = { initial: "initialDot", notPublished: "pendingRing", published: "publishedDot" };
-let createStyles = createStyles_mod;
-let obj3 = { content: obj4, nameGroup: obj5, sectionTitle: obj6, followingSection: obj7, row: obj8, sharingRow: obj9, onlyMeIcon: obj10, rowText: { flex: 1 }, footer: obj11, status: obj12, statusDot: size, initialDot: obj13, pendingRing: obj14, publishedDot: obj15 };
-obj4 = { gap: nativeDefault.space.PX_16 };
-createStyles = createStyles.createStyles;
-obj5 = { gap: nativeDefault.space.PX_8 };
-obj6 = { marginBottom: nativeDefault.space.PX_4 };
-obj7 = { marginTop: -nativeDefault.space.PX_8 };
-obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_32 + nativeDefault.space.PX_4 };
-obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_4 };
-obj10 = { padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-obj11 = { gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-obj12 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
-size = { width: nativeDefault.space.PX_12, height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.round };
-obj13 = { backgroundColor: nativeDefault.colors.ICON_MUTED };
-obj14 = { borderWidth: 2, borderStyle: "dotted", borderColor: nativeDefault.colors.TEXT_BRAND };
-obj15 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
-let closure_13 = createStyles(obj3);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishSheet(projectId) {
-  let first;
-  let tmp8;
-  let tmp9;
-  obj = projectId(576);
-  const cResult = obj.c(8);
-  const tmp = projectId;
-  projectId = projectId.projectId;
-  const entryPoint = projectId.entryPoint;
-  const guildId = projectId.guildId;
-  const tmp4 = useConjurePublishActionDefault;
-  const tmp4Result = tmp4(projectId, useConjureNativePublishOptionsDefault(projectId, guildId));
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureProjectStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== projectId) {
-    const fn = function o() {
-      return ConjureProjectStore.getProject(projectId);
-    };
-    const items1 = [projectId];
-    cResult[1] = projectId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
-  if (cResult[4] === entryPoint) {
-    if (cResult[5] === stateFromStores) {
-      let tmp11;
-      if (cResult[6] === tmp4Result) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
-    }
-  }
-  let tmp12 = null;
-  if (null != tmp4Result) {
-    tmp12 = null;
-    if (null != stateFromStores) {
-      obj2 = { project: stateFromStores, publish: tmp4Result, entryPoint };
-      tmp12 = closure_6(closure_16, obj2);
-    }
-  }
-  cResult[4] = entryPoint;
-  cResult[5] = stateFromStores;
-  cResult[6] = tmp4Result;
-  cResult[7] = tmp12;
-  tmp11 = tmp12;
-}) : (function ConjurePublishSheet(projectId) {
+function hidePublishSheet() {
+  obj = ActionSheetActionCreatorsDefault;
+  obj.hideActionSheet(ConjurePublishSheet_str);
+}
+function ConjurePublishSheet(projectId) {
+  let closure_1;
   let entryPoint;
-  let guildId;
+  let publishOptions;
   projectId = projectId.projectId;
-  ({ guildId, entryPoint } = projectId);
-  const tmp = useConjurePublishActionDefault;
-  const tmpResult = tmp(projectId, useConjureNativePublishOptionsDefault(projectId, guildId));
+  ({ publishOptions, entryPoint } = projectId);
+  let tmp = useConjurePublishActionDefault(projectId, publishOptions);
+  obj = projectId(504);
   const items = [ConjureProjectStore];
   const items1 = [projectId];
-  obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let tmp4 = null;
-  if (null != tmpResult) {
-    tmp4 = null;
+  importDefault = tmp3;
+  const items2 = [tmp3];
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (tmp) {
+      obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(ConjurePublishSheet_str);
+    }
+  }, items2);
+  let tmp5 = null;
+  if (null != tmp) {
+    tmp5 = null;
     if (null != stateFromStores) {
-      obj2 = { project: stateFromStores, publish: tmpResult, entryPoint };
-      tmp4 = closure_6(closure_16, obj2);
+      obj2 = { project: stateFromStores, publish: tmp, entryPoint };
+      tmp5 = closure_7(PublishSheetBody, obj2);
     }
   }
-  return tmp4;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublishSheetBody(entryPoint) {
-  let closure_2;
-  let components;
-  let editable;
-  let identity;
-  let initial;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl6;
-  let items1;
-  let items2;
-  let items3;
-  let mapped1;
-  let nameError;
-  let project;
-  let publish;
-  let sharing;
-  let tmp7;
-  const tmp = publish;
-  obj = publish(576);
-  const cResult = obj.c(77);
-  ({ project, publish } = entryPoint);
-  entryPoint = entryPoint.entryPoint;
-  const tmp4 = closure_13();
-  const tmp6 = entryPoint(12327)(project, publish);
-  dependencyMap = tmp6;
-  ({ initial, editable, identity, sharing } = tmp6);
-  if (cResult[0] === initial) {
-    if (cResult[1] === tmp6.channels) {
-      if (cResult[2] === tmp6.components) {
-        let arr;
-        if (cResult[3] === tmp6.initialChannelNames) {
-          arr = cResult[4];
-        }
-        if (cResult[6] === entryPoint) {
-          if (cResult[7] === tmp6) {
-            let tmp13Result;
-            if (cResult[10] === editable) {
-              if (cResult[11] === identity) {
-                if (cResult[12] === tmp6.saving) {
-                  let tmp18Result;
-                  if (cResult[15] === editable) {
-                    if (cResult[16] === identity) {
-                      if (cResult[17] === tmp6.description) {
-                        if (cResult[18] === tmp6.displayName) {
-                          if (cResult[19] === tmp6.name) {
-                            if (cResult[20] === tmp6.nameError) {
-                              if (cResult[21] === tmp6.saving) {
-                                if (cResult[22] === tmp6.setName) {
-                                  let tmp29;
-                                  let tmp35;
-                                  const _Symbol = Symbol;
-                                  if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                                    const intl4 = tmp(1128).intl;
-                                    const stringResult = intl4.string(entryPoint(3862).BqNMms);
-                                    cResult[25] = stringResult;
-                                    tmp29 = stringResult;
-                                  } else {
-                                    tmp29 = cResult[25];
-                                  }
-                                  if (cResult[26] !== arr) {
-                                    obj2 = { title: tmp29, rows: arr };
-                                    cResult[26] = arr;
-                                    cResult[27] = closure_6(closure_18, obj2);
-                                    const tmp34 = closure_6(closure_18, obj2);
-                                  }
-                                  const _Symbol2 = Symbol;
-                                  if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                                    const intl5 = tmp(1128).intl;
-                                    const stringResult1 = intl5.string(entryPoint(3862).LnqeFd);
-                                    cResult[28] = stringResult1;
-                                    tmp35 = stringResult1;
-                                  } else {
-                                    tmp35 = cResult[28];
-                                  }
-                                  if (cResult[29] !== tmp6.devicePermissions) {
-                                    let tmp39;
-                                    const _Symbol3 = Symbol;
-                                    if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                                      class V {
-                                        constructor(arg0) {
-                                          let intl;
-                                          obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                          intl = publish(closure_2[22]).intl;
-                                          return closure_1_6(closure_1_19, obj, arg0);
-                                        }
-                                      }
-                                      cResult[31] = V;
-                                      tmp39 = V;
-                                    } else {
-                                      class V {
-                                        constructor(arg0) {
-                                          let intl;
-                                          obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                          intl = publish(closure_2[22]).intl;
-                                          return closure_1_6(closure_1_19, obj, arg0);
-                                        }
-                                      }
-                                    }
-                                    const devicePermissions = tmp6.devicePermissions;
-                                    const mapped = devicePermissions.map(tmp39);
-                                    cResult[29] = tmp6.devicePermissions;
-                                    cResult[30] = mapped;
-                                  } else {
-                                    class V {
-                                      constructor(arg0) {
-                                        let intl;
-                                        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                        intl = publish(closure_2[22]).intl;
-                                        return closure_1_6(closure_1_19, obj, arg0);
-                                      }
-                                    }
-                                  }
-                                  if (cResult[32] === arr.length > 0) {
-                                    class V {
-                                      constructor(arg0) {
-                                        let intl;
-                                        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                        intl = publish(closure_2[22]).intl;
-                                        return closure_1_6(closure_1_19, obj, arg0);
-                                      }
-                                    }
-                                    if (cResult[35] === sharing) {
-                                      class V {
-                                        constructor(arg0) {
-                                          let intl;
-                                          obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                          intl = publish(closure_2[22]).intl;
-                                          return closure_1_6(closure_1_19, obj, arg0);
-                                        }
-                                      }
-                                    }
-                                    let tmp48Result = null;
-                                    if (null != sharing) {
-                                      let tmp50Result;
-                                      class V {
-                                        constructor(arg0) {
-                                          let intl;
-                                          obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                          intl = publish(closure_2[22]).intl;
-                                          return closure_1_6(closure_1_19, obj, arg0);
-                                        }
-                                      }
-                                      let obj4 = { title: intl6.string(tmp5(3862).yCgX8i) };
-                                      intl6 = tmp(1128).intl;
-                                      const items = [closure_6(closure_17, obj4), ];
-                                      const obj6 = { style: tmp4.sharingRow, children: items1 };
-                                      if (null != sharing.guild) {
-                                        class V {
-                                          constructor(arg0) {
-                                            let intl;
-                                            obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                            intl = publish(closure_2[22]).intl;
-                                            return closure_1_6(closure_1_19, obj, arg0);
-                                          }
-                                        }
-                                        tmp55[0] = sharing.guild;
-                                        const tmp5Result = entryPoint(6915);
-                                        tmp55[1] = tmp(6915).GuildIconSizes.SMALL_36;
-                                        tmp50Result = tmp50(tmp5Result, tmp55);
-                                      } else {
-                                        class V {
-                                          constructor(arg0) {
-                                            let intl;
-                                            obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                            intl = publish(closure_2[22]).intl;
-                                            return closure_1_6(closure_1_19, obj, arg0);
-                                          }
-                                        }
-                                        tmp52[0] = tmp4.onlyMeIcon;
-                                        const obj7 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-                                        const UserIcon = tmp(11873).UserIcon;
-                                        tmp52[1] = closure_6(UserIcon, obj7);
-                                        tmp50Result = tmp50(tmp49, tmp52);
-                                      }
-                                      items1 = [tmp50Result, ];
-                                      const guild = sharing.guild;
-                                      let stringResult2;
-                                      const obj8 = { style: tmp4.rowText, children: items2 };
-                                      const Text = tmp(5266).Text;
-                                      if (guild != null) {
-                                        class V {
-                                          constructor(arg0) {
-                                            let intl;
-                                            obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                            intl = publish(closure_2[22]).intl;
-                                            return closure_1_6(closure_1_19, obj, arg0);
-                                          }
-                                        }
-                                      }
-                                      if (stringResult2 == null) {
-                                        class V {
-                                          constructor(arg0) {
-                                            let intl;
-                                            obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                            intl = publish(closure_2[22]).intl;
-                                            return closure_1_6(closure_1_19, obj, arg0);
-                                          }
-                                        }
-                                        stringResult2 = obj12.string(tmp5(3862)["37xgkF"]);
-                                      }
-                                      const obj9 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: stringResult2 };
-                                      items2 = [closure_6(Text, obj9), ];
-                                      let tmp50Result2 = null;
-                                      if (null != sharing.caption) {
-                                        class V {
-                                          constructor(arg0) {
-                                            let intl;
-                                            obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                                            intl = publish(closure_2[22]).intl;
-                                            return closure_1_6(closure_1_19, obj, arg0);
-                                          }
-                                        }
-                                        tmp58[2] = sharing.caption;
-                                        tmp50Result2 = tmp50(tmp(5266).Text, tmp58);
-                                      }
-                                      const obj10 = { children: items };
-                                      items2[1] = tmp50Result2;
-                                      items1[1] = tmp48(View, obj8);
-                                      items[1] = tmp48(View, obj6);
-                                      tmp48Result = tmp48(tmp49, obj10);
-                                    }
-                                    cResult[35] = sharing;
-                                    cResult[36] = tmp4.onlyMeIcon;
-                                    cResult[37] = tmp4.rowText;
-                                    cResult[38] = tmp4.sharingRow;
-                                    cResult[39] = tmp48Result;
-                                  }
-                                  const obj11 = { title: tmp35, following: arr.length > 0, rows: tmp38 };
-                                  cResult[32] = arr.length > 0;
-                                  cResult[33] = tmp38;
-                                  cResult[34] = closure_6(closure_18, obj11);
-                                  const tmp44 = closure_6(closure_18, obj11);
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  if (editable) {
-                    class V {
-                      constructor(arg0) {
-                        let intl;
-                        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                        intl = publish(closure_2[22]).intl;
-                        return closure_1_6(closure_1_19, obj, arg0);
-                      }
-                    }
-                    const obj13 = { label: intl.string(entryPoint(3862).knevPu), value: null, onChange: null, maxLength: tmp(6806).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-                    const TextInput = tmp(7040).TextInput;
-                    intl = tmp(1128).intl;
-                    ({ name: obj3.value, setName: obj3.onChange } = tmp6);
-                    ({ saving: obj3.disabled, nameError } = tmp6);
-                    const tmp25 = closure_7;
-                    if (nameError == null) {
-                      class V {
-                        constructor(arg0) {
-                          let intl;
-                          obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                          intl = publish(closure_2[22]).intl;
-                          return closure_1_6(closure_1_19, obj, arg0);
-                        }
-                      }
-                    }
-                    const obj14 = { children: items3 };
-                    items3 = [tmp26(TextInput, obj13), ];
-                    const obj26 = { label: intl2.string(entryPoint(3862).ynaGa1), placeholder: intl3.string(entryPoint(3862)["I+3UTL"]), value: null, onChange: null, maxLength: tmp(6806).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp6.saving };
-                    const TextArea = tmp(7212).TextArea;
-                    intl2 = tmp(1128).intl;
-                    intl3 = tmp(1128).intl;
-                    ({ description: obj5.value, setDescription: obj5.onChange } = identity);
-                    items3[1] = tmp26(TextArea, obj26);
-                    tmp18Result = tmp18(tmp25, obj14);
-                  } else {
-                    class V {
-                      constructor(arg0) {
-                        let intl;
-                        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                        intl = publish(closure_2[22]).intl;
-                        return closure_1_6(closure_1_19, obj, arg0);
-                      }
-                    }
-                    tmp20[0] = tmp4.nameGroup;
-                    const tmp21 = closure_6;
-                    const obj27 = { variant: "heading-lg/semibold", color: "text-strong", lineClamp: 1, accessibilityRole: "header", children: tmp6.displayName };
-                    const items4 = [closure_6(tmp(5266).Text, obj27), ];
-                    let tmp21Result = null;
-                    const tmp19 = View;
-                    if ("" !== tmp6.description) {
-                      class V {
-                        constructor(arg0) {
-                          let intl;
-                          obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                          intl = publish(closure_2[22]).intl;
-                          return closure_1_6(closure_1_19, obj, arg0);
-                        }
-                      }
-                      tmp23[3] = tmp6.description;
-                      tmp21Result = tmp21(tmp(5266).Text, tmp23);
-                    }
-                    items4[1] = tmp21Result;
-                    tmp20[1] = items4;
-                    tmp18Result = tmp18(tmp19, tmp20);
-                  }
-                  cResult[15] = editable;
-                  cResult[16] = identity;
-                  cResult[17] = tmp6.description;
-                  cResult[18] = tmp6.displayName;
-                  cResult[19] = tmp6.name;
-                  cResult[20] = tmp6.nameError;
-                  cResult[21] = tmp6.saving;
-                  cResult[22] = tmp6.setName;
-                  cResult[23] = tmp4.nameGroup;
-                  cResult[24] = tmp18Result;
-                }
-              }
-            }
-            if (editable) {
-              class V {
-                constructor(arg0) {
-                  let intl;
-                  obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                  intl = publish(closure_2[22]).intl;
-                  return closure_1_6(closure_1_19, obj, arg0);
-                }
-              }
-              tmp16[0] = identity.iconURL;
-              tmp16[3] = tmp6.saving;
-              tmp16[4] = identity.setIcon;
-              tmp16[5] = function onError(text) {
-                if (null != text) {
-                  obj2 = { text, variant: "critical" };
-                  obj = entryPoint(closure_2[14]);
-                  obj.open("CONJURE_PUBLISH_SHEET_ERROR", obj2);
-                }
-              };
-              tmp13Result = tmp13(tmp(11846).ConjureAppIconTile, tmp16);
-            } else {
-              class V {
-                constructor(arg0) {
-                  let intl;
-                  obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-                  intl = publish(closure_2[22]).intl;
-                  return closure_1_6(closure_1_19, obj, arg0);
-                }
-              }
-              tmp14[0] = project;
-              tmp13Result = tmp13(tmp5(11889), tmp14);
-            }
-            cResult[10] = editable;
-            cResult[11] = identity;
-            cResult[12] = tmp6.saving;
-            cResult[13] = project;
-            cResult[14] = tmp13Result;
-          }
-        }
-        let closure_0 = _asyncToGenerator(async (arg0, value) => {
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            let c2;
-            try {
-              c3 = 2;
-              if (0 === c1) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  c2 = 1;
-                  c1 = 2;
-                  c3 = 1;
-                  const obj4 = { value: c2.save(), done: false };
-                  return obj4;
-                }
-              } else if (1 === tmp4) {
-                c2 = 0;
-                const intl = tmp(closure_2_2[22]).intl;
-                showCriticalToast(intl.string(entryPoint(closure_2_2[23]).Fi7boI));
-                c3 = 3;
-                return { value: "IconComponent", done: null };
-              } else if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c2 = 0;
-                c3 = 3;
-                const obj5 = { value, done: true };
-                return obj5;
-              } else {
-                c2 = 0;
-                if (value) {
-                  obj = entryPoint(closure_2_2[24]);
-                  obj.hideActionSheet(ConjurePublishSheet_str);
-                  tmp.run(c1);
-                  c3 = 3;
-                  return { value: "IconComponent", done: null };
-                } else {
-                  c3 = 3;
-                  return { value: "IconComponent", done: null };
-                }
-              }
-            } catch (tmp21) {
-              if (0 === c2) {
-                c3 = 3;
-                throw tmp21;
-              } else {
-                c1 = 1;
-              }
-            }
-          }
-        });
-        function handlePublish() {
-          return closure_0(...arguments);
-        }
-        cResult[6] = entryPoint;
-        cResult[7] = tmp6;
-        cResult[8] = publish;
-        cResult[9] = handlePublish;
-      }
-    }
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
-      constructor(arg0) {
-        let intl;
-        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-        intl = publish(closure_2[22]).intl;
-        return closure_1_6(closure_1_19, obj, arg0);
-      }
-    }
-    cResult[5] = tmp8;
-    tmp7 = tmp8;
-  } else {
-    class V {
-      constructor(arg0) {
-        let intl;
-        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-        intl = publish(closure_2[22]).intl;
-        return closure_1_6(closure_1_19, obj, arg0);
-      }
-    }
-  }
-  if (initial) {
-    class V {
-      constructor(arg0) {
-        let intl;
-        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-        intl = publish(closure_2[22]).intl;
-        return closure_1_6(closure_1_19, obj, arg0);
-      }
-    }
-    mapped1 = arr3.map((label) => {
-      obj = { icon: publish(closure_2[21]).AppsIcon, label };
-      return closure_1_6(closure_1_19, obj, label);
-    });
-  } else {
-    class V {
-      constructor(arg0) {
-        let intl;
-        obj = { icon: closure_1_10[arg0], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[arg0]) };
-        intl = publish(closure_2[22]).intl;
-        return closure_1_6(closure_1_19, obj, arg0);
-      }
-    }
-    mapped1 = arr2.map((channel) => {
-      obj = { channel };
-      return closure_1_6(closure_1_20, obj, channel.id);
-    });
-  }
-  const items5 = [...mapped1, ...components.map(tmp7)];
-  components = tmp6.components;
-  cResult[0] = initial;
-  cResult[1] = tmp6.channels;
-  cResult[2] = tmp6.components;
-  cResult[3] = tmp6.initialChannelNames;
-  cResult[4] = items5;
-  arr = items5;
-}) : (function PublishSheetBody(entryPoint) {
+  return tmp5;
+}
+function PublishSheetBody(entryPoint) {
   let UserIcon;
-  let closure_2;
+  let appChannelsPrivate;
   let components;
+  let current;
   let devicePermissions;
   let disabled;
   let editable;
@@ -669,33 +100,38 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   let intl4;
   let intl5;
   let intl6;
-  let items1;
-  let items10;
+  let intl7;
+  let intl9;
   let items2;
   let items3;
-  let items5;
+  let items4;
   let items6;
   let items7;
   let items8;
   let items9;
   let mapped;
   let nameError;
-  let obj19;
+  let obj21;
+  let obj3;
   let project;
   let publish;
-  let saving;
   let sharing;
-  let tmp6Result;
-  let tmp8Result;
+  let tmp12;
+  let tmp15Result;
+  let tmp16Result;
   ({ project, publish } = entryPoint);
   entryPoint = entryPoint.entryPoint;
   dependencyMap = undefined;
-  obj = function _handlePublish2() {
+  react = undefined;
+  let closure_5;
+  let AppsIcon;
+  obj = function _handlePublish() {
+    let ref;
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
-      let v1;
-      if (c3 === 2) {
-        c3 = 3;
+      let v2;
+      if (c4 === 2) {
+        c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -704,60 +140,79 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
-        let c2;
+        let c3;
         try {
-          c3 = 2;
+          c4 = 2;
           if (0 === c1) {
             if (arg0 === 1) {
-              c3 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 3;
+              c4 = 3;
               const obj3 = { value, done: true };
               return obj3;
-            } else {
-              c2 = 1;
-              c1 = 2;
-              c3 = 1;
+            } else if (!ref.current) {
+              ref.current = true;
+              c3 = 2;
+              c1 = 3;
+              c4 = 1;
               const obj4 = { value: closure_2_2.save(), done: false };
               return obj4;
             }
-          } else if (1 === tmp4) {
-            c2 = 0;
-            const intl = tmp(c2[22]).intl;
-            closure_1_14(intl.string(c1(c2[23]).Fi7boI));
-            c3 = 3;
-            return { value: "IconComponent", done: null };
+          } else if (1 === c1) {
+            c3 = 0;
+            closure_128_3.current = false;
+            throw closure_2;
+          } else if (2 === c1) {
+            const intl = tmp(closure_2[23]).intl;
+            closure_1_14(intl.string(c1(closure_2[24]).Fi7boI));
+            c3 = 0;
+            closure_128_3.current = false;
+            c4 = 3;
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
-            c3 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c2 = 0;
-            c3 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            c3 = 0;
+            closure_128_3.current = false;
+            c4 = 3;
+            obj = { value, done: true };
+            return obj;
           } else {
-            c2 = 0;
+            c3 = 0;
+            closure_128_3.current = false;
             if (value) {
-              obj = c1(c2[24]);
-              obj.hideActionSheet(closure_1_9);
-              closure_128_0.run(closure_128_1);
-              c3 = 3;
-              return { value: "IconComponent", done: null };
+              if (closure_128_5.current) {
+                closure_1_15();
+                const appChannelsPrivate = closure_128_2.appChannelsPrivate;
+                let isPrivate;
+                const run = closure_128_0.run;
+                const tmp11 = closure_128_1;
+                if (appChannelsPrivate != null) {
+                  isPrivate = appChannelsPrivate.isPrivate;
+                }
+                run(tmp11, true === isPrivate);
+              }
             } else {
-              c3 = 3;
-              return { value: "IconComponent", done: null };
+              c4 = 3;
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
-        } catch (tmp21) {
-          if (0 === c2) {
-            c3 = 3;
-            throw tmp21;
-          } else {
+          c4 = 3;
+          return { value: "HermesInternal", done: "HermesInternal" };
+        } catch (tmp32) {
+          closure_2 = tmp32;
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp32;
+          } else if (1 === tmp34) {
             c1 = 1;
+          } else {
+            c1 = 2;
           }
         }
       }
@@ -766,38 +221,73 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12327)(project, publish);
+  const tmp4 = entryPoint(12111)(project, publish);
   dependencyMap = tmp4;
-  ({ editable, identity, sharing } = tmp4);
-  if (tmp4.initial) {
+  entryPoint(6022)(() => true, tmp4.saving);
+  obj = react;
+  let closure_3 = react.useRef(false);
+  const context = react.useContext(entryPoint(5591));
+  let transitionState;
+  if (context != null) {
+    transitionState = context.transitionState;
+  }
+  let tmp8 = null == transitionState;
+  if (!tmp8) {
+    tmp8 = "visible" === transitionState;
+  }
+  react = tmp8;
+  closure_5 = obj.useRef(tmp8);
+  const items = [tmp8];
+  const layoutEffect = obj.useLayoutEffect(() => {
+    closure_5.current = current;
+    return () => {
+      closure_1_5.current = false;
+    };
+  }, items);
+  ({ editable, identity, sharing, appChannelsPrivate } = tmp4);
+  let isPrivate;
+  const initial = tmp4.initial;
+  if (appChannelsPrivate != null) {
+    isPrivate = appChannelsPrivate.isPrivate;
+  }
+  if (true === isPrivate) {
+    AppsIcon = publish(8677).AppsLockIcon;
+    tmp12 = publish;
+  } else {
+    let tmp11 = publish;
+    AppsIcon = publish(8678).AppsIcon;
+    tmp12 = publish;
+  }
+  if (initial) {
     const initialChannelNames = tmp4.initialChannelNames;
     mapped = initialChannelNames.map((label) => {
-      obj = { icon: publish(closure_2[21]).AppsIcon, label };
-      return closure_1_6(closure_1_19, obj, label);
+      obj = { icon: AppsIcon, label };
+      return metroImportDefault(ContentRow, obj, "channel:" + label);
     });
   } else {
     const channels = tmp4.channels;
     mapped = channels.map((channel) => {
       obj = { channel };
-      return closure_1_6(closure_1_20, obj, channel.id);
+      return obj(ChannelRow, obj, channel.id);
     });
   }
-  const items = [
+  const items1 = [
     ...mapped,
     ...components.map((label) => {
       const surface = label.surface;
       obj = { icon: obj2[surface], label: label.label };
-      return closure_1_6(closure_1_19, obj, surface);
+      return obj(ContentRow, obj, surface);
     })
   ];
   components = tmp4.components;
-  obj = { startExpanded: editable, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: tmp4.displayName, children: tmp8(View, obj2) };
-  obj2 = { style: tmp.content, children: items1 };
-  const ActionSheet = publish(7330).ActionSheet;
+  obj2 = { startExpanded: editable, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl.string(tmp2(3868).NEPcoi), children: tmp16(tmp17, obj3) };
+  const ActionSheet = tmp12(7366).ActionSheet;
+  intl = tmp12(1113).intl;
+  obj3 = { style: tmp.content, children: items2 };
   if (editable) {
-    let obj3 = {
+    let obj4 = {
       iconURL: identity.iconURL,
-      size: 40,
+      size: 48,
       radius: 12,
       disabled: tmp4.saving,
       onChange: identity.setIcon,
@@ -809,213 +299,145 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
           }
         }
     };
-    tmp6Result = tmp6(tmp7(11846).ConjureAppIconTile, obj3);
+    tmp15Result = tmp15(tmp12(12117).ConjureAppIconTile, obj4);
   } else {
-    let obj4 = { project, size: "card" };
-    tmp6Result = tmp6(tmp2(11889), obj4);
+    const obj5 = { project, size: "dialog" };
+    tmp15Result = tmp15(tmp2(12122), obj5);
   }
-  items1 = [tmp6Result, , , , , ];
+  items2 = [tmp15Result, , , , , , ];
   if (editable) {
-    let obj5 = { label: intl.string(tmp2(3862).knevPu), value: null, onChange: null, maxLength: tmp7(6806).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-    const TextInput = tmp7(7040).TextInput;
-    intl = tmp7(1128).intl;
-    ({ name: obj8.value, setName: obj8.onChange } = tmp4);
-    ({ saving: obj8.disabled, nameError } = tmp4);
-    const obj6 = { children: items2 };
-    items2 = [tmp6(TextInput, obj5), ];
-    const obj7 = { label: intl2.string(entryPoint(3862).ynaGa1), placeholder: intl3.string(entryPoint(3862)["I+3UTL"]), value: null, onChange: null, maxLength: publish(6806).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp4.saving };
-    const TextArea = tmp7(7212).TextArea;
-    intl2 = tmp7(1128).intl;
-    intl3 = tmp7(1128).intl;
-    ({ description: obj10.value, setDescription: obj10.onChange } = identity);
-    items2[1] = closure_6(TextArea, obj7);
-    tmp8Result = tmp8(closure_7, obj6);
+    const obj6 = { label: intl2.string(entryPoint(3868).knevPu), value: null, onChange: null, maxLength: tmp12(6845).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
+    const TextInput = tmp12(7082).TextInput;
+    intl2 = tmp12(1113).intl;
+    ({ name: obj9.value, setName: obj9.onChange } = tmp4);
+    ({ saving: obj9.disabled, nameError } = tmp4);
+    const obj7 = { children: items3 };
+    items3 = [tmp15(TextInput, obj6), ];
+    const obj8 = { label: intl3.string(entryPoint(3868).ynaGa1), placeholder: intl4.string(entryPoint(3868)["I+3UTL"]), value: null, onChange: null, maxLength: tmp12(6845).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp4.saving };
+    const TextArea = tmp12(7253).TextArea;
+    intl3 = tmp12(1113).intl;
+    intl4 = tmp12(1113).intl;
+    ({ description: obj11.value, setDescription: obj11.onChange } = identity);
+    items3[1] = obj(TextArea, obj8);
+    tmp16Result = tmp16(closure_8, obj7);
   } else {
-    const obj11 = { variant: "heading-lg/semibold", color: "text-strong", lineClamp: 1, accessibilityRole: "header", children: tmp4.displayName };
-    const obj9 = { style: tmp.nameGroup, children: items3 };
-    items3 = [tmp6(tmp7(5266).Text, obj11), ];
-    let tmp6Result5 = null;
+    const obj10 = { style: tmp.nameGroup, children: items4 };
+    const obj12 = { variant: "heading-lg/semibold", color: "text-strong", lineClamp: 1, children: tmp4.displayName };
+    items4 = [tmp15(tmp12(5624).Text, obj12), ];
+    let tmp15Result6 = null;
     if ("" !== tmp4.description) {
-      const obj12 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 2, children: tmp4.description };
-      tmp6Result5 = tmp6(tmp7(5266).Text, obj12);
+      const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 2, children: tmp4.description };
+      tmp15Result6 = tmp15(tmp12(5624).Text, obj13);
     }
-    items3[1] = tmp6Result5;
-    tmp8Result = tmp8(tmp9, obj9);
+    items4[1] = tmp15Result6;
+    tmp16Result = tmp16(tmp17, obj10);
   }
-  items1[1] = tmp8Result;
-  const obj13 = { title: intl4.string(entryPoint(3862).BqNMms), rows: items };
-  intl4 = tmp7(1128).intl;
-  items1[2] = closure_6(closure_18, obj13);
-  const obj14 = {
-    title: intl5.string(entryPoint(3862).LnqeFd),
-    following: items.length > 0,
+  items2[1] = tmp16Result;
+  const obj14 = { title: intl5.string(entryPoint(3868).BqNMms), rows: items1 };
+  intl5 = tmp12(1113).intl;
+  items2[2] = obj(RowSection, obj14);
+  let tmp15Result7 = null;
+  const tmp22 = RowSection;
+  if (null != appChannelsPrivate) {
+    const obj15 = { channelCount: tmp4.initialChannelNames.length, appChannelsPrivate, disabled: tmp4.saving };
+    tmp15Result7 = tmp15(AppChannelsPrivateSection, obj15);
+  }
+  items2[3] = tmp15Result7;
+  const obj16 = {
+    title: intl6.string(entryPoint(3868).LnqeFd),
+    following: items1.length > 0 && null == appChannelsPrivate,
     rows: devicePermissions.map((item) => {
       let intl;
-      obj = { icon: closure_1_10[item], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[item]) };
-      intl = publish(closure_2[22]).intl;
-      return closure_1_6(closure_1_19, obj, item);
+      obj = { icon: closure_1_11[item], label: intl.string(publish(closure_2[18]).CONJURE_PUBLISH_PERMISSION_LABELS[item]) };
+      intl = publish(closure_2[23]).intl;
+      return obj(ContentRow, obj, item);
     })
   };
-  intl5 = tmp7(1128).intl;
+  intl6 = tmp12(1113).intl;
   devicePermissions = tmp4.devicePermissions;
-  items1[3] = closure_6(closure_18, obj14);
-  let tmp8Result2 = null;
+  items2[4] = obj(tmp22, obj16);
+  let tmp16Result2 = null;
   if (null != sharing) {
-    let tmp6Result6;
-    const obj15 = { title: intl6.string(entryPoint(3862).yCgX8i) };
-    intl6 = tmp7(1128).intl;
-    const items4 = [tmp6(closure_17, obj15), ];
-    const obj16 = { style: tmp.sharingRow, children: items5 };
+    let tmp15Result8;
+    const obj17 = { title: intl7.string(entryPoint(3868).esTM8y) };
+    intl7 = tmp12(1113).intl;
+    const items5 = [tmp15(SectionTitle, obj17), ];
+    const obj18 = { style: tmp.sharingRow, children: items6 };
     if (null != sharing.guild) {
-      const obj17 = { guild: sharing.guild, size: publish(6915).GuildIconSizes.SMALL_36 };
-      const tmp2Result = entryPoint(6915);
-      tmp6Result6 = tmp6(tmp2Result, obj17);
+      const obj19 = { guild: sharing.guild, size: tmp12(6957).GuildIconSizes.SMALL_36 };
+      const tmp2Result = entryPoint(6957);
+      tmp15Result8 = tmp15(tmp2Result, obj19);
     } else {
-      const obj18 = { style: tmp.onlyMeIcon, children: closure_6(UserIcon, obj19) };
-      obj19 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-      UserIcon = tmp7(11873).UserIcon;
-      tmp6Result6 = tmp6(tmp9, obj18);
+      const obj20 = { style: tmp.onlyMeIcon, children: obj(UserIcon, obj21) };
+      obj21 = { size: "xs", color: entryPoint(575).colors.ICON_DEFAULT };
+      UserIcon = tmp12(12125).UserIcon;
+      tmp15Result8 = tmp15(tmp17, obj20);
     }
-    items5 = [tmp6Result6, ];
+    items6 = [tmp15Result8, ];
     const guild = sharing.guild;
     let name;
-    const obj20 = { style: tmp.rowText, children: items6 };
-    const Text = tmp7(5266).Text;
+    const obj22 = { style: tmp.rowText, children: items7 };
+    const Text = tmp12(5624).Text;
     if (guild != null) {
       name = guild.name;
     }
     if (name == null) {
-      const intl7 = tmp7(1128).intl;
-      name = intl7.string(tmp2(3862)["37xgkF"]);
+      const intl8 = tmp12(1113).intl;
+      name = intl8.string(tmp2(3868)["37xgkF"]);
     }
-    const obj21 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: name };
-    items6 = [tmp6(Text, obj21), ];
-    let tmp6Result7 = null;
+    const obj23 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: name };
+    items7 = [tmp15(Text, obj23), ];
+    let tmp15Result9 = null;
     if (null != sharing.caption) {
-      const obj22 = { variant: "text-xs/normal", color: "text-subtle", children: sharing.caption };
-      tmp6Result7 = tmp6(tmp7(5266).Text, obj22);
+      const obj24 = { variant: "text-xs/normal", color: "text-subtle", children: sharing.caption };
+      tmp15Result9 = tmp15(tmp12(5624).Text, obj24);
     }
-    const obj23 = { children: items4 };
-    items6[1] = tmp6Result7;
-    items5[1] = closure_8(View, obj20);
-    items4[1] = closure_8(View, obj16);
-    tmp8Result2 = tmp8(tmp9, obj23);
+    const obj25 = { children: items5 };
+    items7[1] = tmp15Result9;
+    items6[1] = closure_9(closure_5, obj22);
+    items5[1] = closure_9(closure_5, obj18);
+    tmp16Result2 = tmp16(tmp17, obj25);
   }
-  items1[4] = tmp8Result2;
-  const obj26 = { style: items7 };
-  items7 = [tmp.statusDot, tmp[closure_12[tmp4.mode]]];
-  const obj24 = { style: tmp.footer, children: items10 };
-  const obj25 = { style: tmp.status, children: items8 };
-  items8 = [tmp6(View, obj26), ];
-  const obj27 = { style: tmp.rowText, children: items9 };
-  items9 = [, ];
-  const obj28 = { variant: "text-sm/normal", color: "text-subtle", children: tmp4.statusText };
-  items9[0] = closure_6(publish(5266).Text, obj28);
-  let tmp6Result8 = null;
-  if (null != tmp4.lastPublishedText) {
-    const obj55 = { variant: "text-xs/normal", color: "text-subtle", children: tmp4.lastPublishedText };
-    tmp6Result8 = tmp6(tmp7(5266).Text, obj55);
+  items2[5] = tmp16Result2;
+  let tmp15Result10 = null;
+  const obj26 = { style: tmp.footer, children: items8 };
+  if (null != tmp4.note) {
+    const obj27 = { variant: "text-sm/normal", color: "text-subtle", children: tmp4.note };
+    tmp15Result10 = tmp15(tmp12(5624).Text, obj27);
   }
-  items9[1] = tmp6Result8;
-  items8[1] = closure_8(View, obj27);
-  items10 = [tmp8(View, obj25), ];
+  items8 = [tmp15Result10, ];
+  const obj28 = { style: tmp.actions, children: items9 };
+  const obj55 = { variant: "secondary", size: "md", grow: true, text: intl9.string(tmp12(1113).t["ETE/oC"]), disabled: tmp4.saving, onPress: hidePublishSheet };
+  const Button = tmp12(5634).Button;
+  intl9 = tmp12(1113).intl;
+  items9 = [tmp15(Button, obj55), ];
   const obj56 = {
-    variant: tmp4.ctaVariant,
+    variant: "primary",
     size: "md",
     grow: true,
-    text: tmp4.ctaText,
+    text: publish.label,
     disabled,
-    loading: saving,
+    loading: tmp4.saving,
     onPress: function handlePublish() {
       return obj(...arguments);
     }
   };
   disabled = publish.disabled;
-  const Button = tmp7(5276).Button;
+  const Button2 = tmp12(5634).Button;
   if (!disabled) {
     disabled = null != tmp4.nameError;
   }
-  saving = publish.publishing;
-  if (saving) {
-    saving = !(tmp4.initial && publish.showsProgress);
-    const tmp22 = tmp4.initial && publish.showsProgress;
-  }
-  if (!saving) {
-    saving = tmp4.saving;
-  }
-  items10[1] = closure_6(Button, obj56);
-  items1[5] = closure_8(View, obj24);
-  return closure_6(ActionSheet, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionTitle(title) {
-  obj = react2;
-  const cResult = obj.c(3);
-  title = title.title;
-  const tmp4 = closure_13();
-  if (cResult[0] === tmp4.sectionTitle) {
-    let tmp5;
-    if (cResult[1] === title) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  obj2 = { variant: "text-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: tmp4.sectionTitle, children: title };
-  const tmp6 = metroRequire(Text_Text.Text, obj2);
-  cResult[0] = tmp4.sectionTitle;
-  cResult[1] = title;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function SectionTitle(title) {
+  items9[1] = obj(Button2, obj56);
+  items8[1] = closure_9(closure_5, obj28);
+  items2[6] = closure_9(closure_5, obj26);
+  return obj(ActionSheet, obj2);
+}
+function SectionTitle(title) {
   title = title.title;
   obj = { variant: "text-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: closure_13().sectionTitle, children: title };
-  return metroRequire(Text_Text.Text, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowSection(arg0) {
-  let following;
-  let items;
-  let rows;
-  let title;
-  obj = react2;
-  const cResult = obj.c(6);
-  ({ title, rows, following } = arg0);
-  let followingSection = undefined !== following && following;
-  if (0 === rows.length) {
-    return null;
-  } else {
-    let tmp3;
-    if (followingSection) {
-      followingSection = tmp2.followingSection;
-    }
-    if (cResult[0] !== title) {
-      obj2 = { title };
-      const tmp6 = metroRequire(closure_17, obj2);
-      cResult[0] = title;
-      cResult[1] = tmp6;
-      tmp3 = tmp6;
-    } else {
-      tmp3 = cResult[1];
-    }
-    if (cResult[2] === rows) {
-      if (cResult[3] === followingSection) {
-        let tmp7;
-        if (cResult[4] === tmp3) {
-          tmp7 = cResult[5];
-        }
-        return tmp7;
-      }
-    }
-    const obj3 = { style: followingSection, children: items };
-    items = [tmp3, rows];
-    const tmp10 = metroImportAll(View, obj3);
-    cResult[2] = rows;
-    cResult[3] = followingSection;
-    cResult[4] = tmp3;
-    cResult[5] = tmp10;
-    tmp7 = tmp10;
-  }
-}) : (function RowSection(title) {
+  return metroImportDefault(Text_Text.Text, obj);
+}
+function RowSection(title) {
   let following;
   let items;
   let rows;
@@ -1026,113 +448,89 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowSec
   }
   let tmp3Result = null;
   if (0 !== rows.length) {
-    const tmp3 = metroImportAll;
+    const tmp3 = React4;
     const tmp4 = View;
     if (following) {
       following = tmp.followingSection;
     }
     obj = { style: following, children: items };
     obj2 = { title };
-    items = [metroRequire(closure_17, obj2), rows];
+    items = [metroImportDefault(SectionTitle, obj2), rows];
     tmp3Result = tmp3(tmp4, obj);
   }
   return tmp3Result;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentRow(arg0) {
-  let icon;
-  let items;
-  let label;
-  let tmp5;
-  let tmp9;
-  obj = react2;
-  const cResult = obj.c(8);
-  ({ icon, label } = arg0);
-  const tmp4 = closure_13();
-  if (cResult[0] !== icon) {
-    obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const tmp8 = metroRequire(icon, obj2);
-    cResult[0] = icon;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== label) {
-    const obj3 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: label };
-    const tmp11 = metroRequire(Text_Text.Text, obj3);
-    cResult[2] = label;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.row) {
-    if (cResult[5] === tmp5) {
-      let tmp12;
-      if (cResult[6] === tmp9) {
-        tmp12 = cResult[7];
-      }
-      return tmp12;
-    }
-  }
-  const obj4 = { style: tmp4.row, children: items };
-  items = [tmp5, tmp9];
-  const tmp13 = metroImportAll(View, obj4);
-  cResult[4] = tmp4.row;
-  cResult[5] = tmp5;
-  cResult[6] = tmp9;
-  cResult[7] = tmp13;
-  tmp12 = tmp13;
-}) : (function ContentRow(arg0) {
+}
+function ContentRow(arg0) {
   let icon;
   let items;
   let label;
   ({ icon, label } = arg0);
   obj = { style: closure_13().row, children: items };
   items = [, ];
-  obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-  items[0] = metroRequire(icon, obj2);
-  items[1] = metroRequire(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: label });
-  return metroImportAll(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelRow(channel) {
-  let tmp4;
-  obj = react2;
-  const cResult = obj.c(2);
-  let str = useChannelNameDefault(channel.channel);
-  if (str == null) {
-    str = "";
+  obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
+  items[0] = metroImportDefault(icon, obj2);
+  items[1] = metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-strong", lineClamp: 1, children: label });
+  return React4(View, obj);
+}
+function AppChannelsPrivateSection(appChannelsPrivate) {
+  let channelCount;
+  let disabled;
+  let intl;
+  appChannelsPrivate = appChannelsPrivate.appChannelsPrivate;
+  const isPrivate = appChannelsPrivate.isPrivate;
+  ({ channelCount, disabled } = appChannelsPrivate);
+  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
+  let str = "text-muted";
+  const Text = Text_Text.Text;
+  if (isPrivate) {
+    str = "text-default";
   }
-  if (cResult[0] !== str) {
-    obj2 = { icon: AppsIcon.AppsIcon, label: str };
-    const tmp7 = metroRequire(closure_19, obj2);
-    cResult[0] = str;
-    cResult[1] = tmp7;
-    tmp4 = tmp7;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function ChannelRow(channel) {
+  obj = { start: true, end: true, label: metroImportDefault(Text, obj2), value: isPrivate, disabled, onValueChange: appChannelsPrivate.setPrivate };
+  obj2 = { variant: "text-md/medium", color: str, children: intl.formatToPlainString(_modDef3868.Td1mlg, { count: channelCount }) };
+  intl = intl10.intl;
+  return metroImportDefault(TableSwitchRow, obj);
+}
+function ChannelRow(channel) {
   let str;
-  obj = { icon: AppsIcon.AppsIcon, label: str };
+  obj = { icon: AppsIcon2.AppsIcon, label: str };
   str = useChannelNameDefault(channel.channel);
-  const tmp = metroRequire;
-  const tmp2 = closure_19;
+  const tmp = metroImportDefault;
+  const tmp2 = ContentRow;
   if (str == null) {
     str = "";
   }
   return tmp(tmp2, obj);
-});
-size = size_mod;
+}
+let react = react_mod;
+const View = react_native.View;
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+const ConjurePublishSheet_str = "ConjurePublishSheet";
+let obj = { screen_capture: ScreenIcon.ScreenIcon, connect_user_to_voice: VoiceNormalIcon.VoiceNormalIcon };
+let obj2 = {};
+obj2[ConjureProjectTypes.ConjureSupportedSurface.BOT] = RobotIcon.RobotIcon;
+obj2[ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY] = ActivitiesIcon.ActivitiesIcon;
+obj2[ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET] = BadgeIcon.BadgeIcon;
+obj2[ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD] = ShieldIcon.ShieldIcon;
+let createStyles = createStyles_mod;
+let obj3 = { content: obj4, nameGroup: obj5, sectionTitle: obj6, followingSection: obj7, row: obj8, sharingRow: obj9, onlyMeIcon: obj10, rowText: { flex: 1 }, footer: obj11, actions: obj12 };
+obj4 = { gap: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj5 = { gap: nativeDefault.space.PX_8 };
+obj6 = { marginBottom: nativeDefault.space.PX_4 };
+obj7 = { marginTop: -nativeDefault.space.PX_8 };
+obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_32 + nativeDefault.space.PX_4 };
+obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_4 };
+obj10 = { padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+obj11 = { gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj12 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
+let closure_13 = createStyles(obj3);
 const result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishSheet.tsx");
 
-export default function showConjurePublishSheet(projectId, guildId, entryPoint) {
-  obj = { key: ConjurePublishSheet_str, content: metroRequire(closure_15, obj2) };
+export default function showConjurePublishSheet(arg0) {
+  obj = { key: ConjurePublishSheet_str, content: metroImportDefault(ConjurePublishSheet, obj2) };
   const showActionSheet = ActionSheetActionCreators.showActionSheet;
-  obj2 = { projectId, guildId, entryPoint };
+  obj2 = {};
   ActionSheetActionCreators;
+  const merged = Object.assign(arg0);
   showActionSheet(obj);
 };

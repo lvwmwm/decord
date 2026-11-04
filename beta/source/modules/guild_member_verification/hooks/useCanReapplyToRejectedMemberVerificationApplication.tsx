@@ -1,16 +1,16 @@
-// Module ID: 6880
-// Function ID: 6881
+// Module ID: 6921
+// Function ID: 6922
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 5732, 5035, 1087, 504, 6881, 2]
+// Dependencies: [5, 32, 19, 5749, 5046, 1072, 504, 6922, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 6880 (useCanReapplyToRejectedMemberVerificationApplication)
-import Constants from "Constants" /* 1087 */;
+// Module 6921 (useCanReapplyToRejectedMemberVerificationApplication)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5732 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
+import InviteStore from "InviteStore" /* 5749 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let _require, c2, c5, closure_0, closure_3, inviteKeyForGuildId;
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
 
-export const useCanReapplyToRejectedMemberVerificationApplication = function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
+export function useCanReapplyToRejectedMemberVerificationApplication(guildId) {
   let callback;
   let closure_1;
   let isLoading;
@@ -48,7 +48,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -91,7 +91,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         c4 = 0;
         tmp(false);
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp15) {
         closure_3 = tmp15;
         if (0 === c4) {
@@ -121,4 +121,4 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
     canReapply = features.has(GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   }
   return { canReapply, isLoading };
-};
+}

@@ -1,340 +1,61 @@
-// Module ID: 19362
-// Function ID: 19363
+// Module ID: 19997
+// Function ID: 19998
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1206, 21, 5003, 587, 558, 576, 16603, 8983, 5266, 1128, 6940, 7280, 7199, 7330, 2]
+// Dependencies: [32, 19, 17, 4920, 21, 5014, 575, 1625, 7217, 17203, 504, 6980, 5624, 1113, 7321, 5272, 7223, 6974, 13265, 7306, 2]
+// Exports: default
 
-// Module 19362 (SelectEmojiRolesActionSheet)
+// Module 19997 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import FormConstants from "FormConstants" /* 1206 */;
-import Pressables from "Pressables" /* 6940 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16603 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import nativeDefault from "native" /* 575 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, set;
+let BottomSheet, set;
 
 let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj2;
 let obj3;
-let obj4;
-let tmp5;
-const intl5 = tmp5(1128);
-const Text_Text = tmp5(5266);
-const BottomSheetTitleHeader2 = tmp5(7280);
-const ActionSheet2 = tmp5(7330);
-let react = react_mod;
+let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
-const FORM_ROW_VERTICAL_PADDING = FormConstants.FORM_ROW_VERTICAL_PADDING;
-({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
-const itemSize = FORM_ROW_VERTICAL_PADDING + 22;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { list: obj2, label: { flex: 1, flexDirection: "row", alignItems: "center" }, roleName: { flexShrink: 1 }, archivedBadge: obj3, archivedBadgeText: { textTransform: "uppercase" }, divider: obj4, saveButtonDisabled: { opacity: 0.3 } };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let obj = { list: { flex: 1 }, row: obj2, label: obj3, roleName: { flexShrink: 1 }, saveButtonDisabled: { opacity: 0.3 } };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
-obj3 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.RED_400, marginLeft: 8, paddingHorizontal: 4, height: 16 };
-obj4 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmojiRolesActionSheet(onSave) {
-  let closure_2;
-  let closure_4;
-  let first1;
-  let tmp13;
-  let tmp14;
-  let tmp8;
-  const tmp = onSave;
-  let obj = onSave(576);
-  const cResult = obj.c(38);
-  onSave = onSave.onSave;
-  const emoji = onSave.emoji;
-  const onCancel = onSave.onCancel;
-  const guildId = onSave.guildId;
-  let tmp4 = closure_10();
-  dependencyMap = tmp4;
-  const tmp5 = null == emoji;
-  let roles;
-  const first = cResult[0];
-  if (emoji != null) {
-    roles = emoji.roles;
-  }
-  if (first !== roles) {
-    let roles1;
-    if (emoji != null) {
-      roles1 = emoji.roles;
-    }
-    const fn = function s() {
-      let roles;
-      const _Set = Set;
-      if (emoji != null) {
-        roles = emoji.roles;
-      }
-      if (roles == null) {
-        roles = [];
-      }
-      const _Set1 = new _Set(roles);
-      return _Set1;
-    };
-    cResult[0] = roles1;
-    cResult[1] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[1];
-  }
-  let tmp10 = first1(react.useState(tmp8), 2);
-  first1 = tmp10[0];
-  react = tmp10[1];
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { includeSoftDeleted: true, sortDeletedListingsLast: true };
-    cResult[2] = obj2;
-    tmp13 = obj2;
-  } else {
-    tmp13 = cResult[2];
-  }
-  const tmpResult = tmp(16603);
-  const subscriptionListingsForGuild = tmpResult.useSubscriptionListingsForGuild(guildId, tmp13);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    function toggleRole(arg0) {
-      let closure_0 = arg0;
-      return closure_4((has) => {
-        set = new Set(has);
-        if (has.has(closure_0)) {
-          set.delete(closure_0);
-        } else {
-          set.add(closure_0);
-        }
-        return set;
-      });
-    }
-    cResult[3] = toggleRole;
-    tmp14 = toggleRole;
-  } else {
-    tmp14 = cResult[3];
-  }
-  let closure_6 = tmp14;
-  if (cResult[4] === onSave) {
-    let tmp15;
-    if (cResult[5] === first1) {
-      tmp15 = cResult[6];
-    }
-    if (cResult[7] === first1) {
-      if (cResult[8] === tmp4.archivedBadge) {
-        if (cResult[9] === tmp4.archivedBadgeText) {
-          if (cResult[10] === tmp4.divider) {
-            if (cResult[11] === tmp4.label) {
-              if (cResult[12] === tmp4.roleName) {
-                let tmp16;
-                let tmp18;
-                let tmp20;
-                if (cResult[13] === subscriptionListingsForGuild) {
-                  tmp16 = cResult[14];
-                }
-                let saveButtonDisabled;
-                if (first1.size <= 0) {
-                  saveButtonDisabled = tmp4.saveButtonDisabled;
-                }
-                if (cResult[15] !== tmp5) {
-                  let stringResult;
-                  let intl = tmp(1128).intl;
-                  const string = intl.string;
-                  const t = tmp(1128).t;
-                  if (tmp5) {
-                    stringResult = string(t["3UB9ad"]);
-                  } else {
-                    stringResult = string(t["R3BPH+"]);
-                  }
-                  cResult[15] = tmp5;
-                  cResult[16] = stringResult;
-                  tmp18 = stringResult;
-                } else {
-                  tmp18 = cResult[16];
-                }
-                if (cResult[17] !== tmp18) {
-                  let obj3 = { variant: "text-md/semibold", color: "text-brand", children: tmp18 };
-                  const tmp22 = closure_6(tmp(5266).Text, obj3);
-                  cResult[17] = tmp18;
-                  cResult[18] = tmp22;
-                  tmp20 = tmp22;
-                } else {
-                  tmp20 = cResult[18];
-                }
-                if (cResult[19] === tmp15) {
-                  if (cResult[20] === first1.size <= 0) {
-                    if (cResult[21] === saveButtonDisabled) {
-                      let tmp24;
-                      let tmp28;
-                      let tmp27;
-                      let tmp31;
-                      let tmp34;
-                      if (cResult[22] === tmp20) {
-                        tmp24 = cResult[23];
-                      }
-                      const _Symbol = Symbol;
-                      if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl2 = tmp(1128).intl;
-                        const stringResult1 = intl2.string(tmp(1128).t.JPU0EF);
-                        const intl3 = tmp(1128).intl;
-                        const stringResult2 = intl3.string(tmp(1128).t.MZusPv);
-                        cResult[24] = stringResult1;
-                        cResult[25] = stringResult2;
-                        tmp28 = stringResult2;
-                        tmp27 = stringResult1;
-                      } else {
-                        tmp27 = cResult[24];
-                        tmp28 = cResult[25];
-                      }
-                      if (cResult[26] !== tmp24) {
-                        let obj4 = { title: tmp27, subtitle: tmp28, trailing: tmp24 };
-                        const tmp33 = closure_6(tmp(7280).BottomSheetTitleHeader, obj4);
-                        cResult[26] = tmp24;
-                        cResult[27] = tmp33;
-                        tmp31 = tmp33;
-                      } else {
-                        tmp31 = cResult[27];
-                      }
-                      if (cResult[28] !== subscriptionListingsForGuild.length) {
-                        let items = [subscriptionListingsForGuild.length];
-                        cResult[28] = subscriptionListingsForGuild.length;
-                        cResult[29] = items;
-                        tmp34 = items;
-                      } else {
-                        tmp34 = cResult[29];
-                      }
-                      if (cResult[30] === tmp16) {
-                        if (cResult[31] === tmp4.list) {
-                          let tmp35;
-                          if (cResult[32] === tmp34) {
-                            tmp35 = cResult[33];
-                          }
-                          if (cResult[34] === tmp31) {
-                            if (cResult[35] === onCancel) {
-                              let tmp40;
-                              if (cResult[36] === tmp35) {
-                                tmp40 = cResult[37];
-                              }
-                              return tmp40;
-                            }
-                          }
-                          let obj5 = { scrollable: true, header: tmp31, startExpanded: true, onDismiss: onCancel, children: tmp35 };
-                          const tmp42 = closure_6(tmp(7330).ActionSheet, obj5);
-                          cResult[34] = tmp31;
-                          cResult[35] = onCancel;
-                          cResult[36] = tmp35;
-                          cResult[37] = tmp42;
-                          tmp40 = tmp42;
-                        }
-                      }
-                      let obj6 = { inActionSheet: true, style: tmp4.list, itemSize, sections: tmp34, renderItem: tmp16 };
-                      const tmp39 = closure_6(emoji(7199), obj6);
-                      cResult[30] = tmp16;
-                      cResult[31] = tmp4.list;
-                      cResult[32] = tmp34;
-                      cResult[33] = tmp39;
-                      tmp35 = tmp39;
-                    }
-                  }
-                }
-                let obj7 = { onPress: tmp15, disabled: first1.size <= 0, accessibilityRole: "button", style: saveButtonDisabled, children: tmp20 };
-                const tmp26 = closure_6(tmp(6940).PressableOpacity, obj7);
-                cResult[19] = tmp15;
-                cResult[20] = first1.size <= 0;
-                cResult[21] = saveButtonDisabled;
-                cResult[22] = tmp20;
-                cResult[23] = tmp26;
-                tmp24 = tmp26;
-              }
-            }
-          }
-        }
-      }
-    }
-    function renderRow(arg0, arg1) {
-      let Checkbox;
-      let Text;
-      let intl;
-      let items;
-      let obj4;
-      let obj6;
-      const role_id = tmp;
-      const diff = subscriptionListingsForGuild.length - 1;
-      const obj = { style: closure_2.label, children: items };
-      const FormRow = onSave(closure_2[10]).FormRow;
-      items = [, ];
-      const obj2 = { style: closure_2.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
-      items[0] = closure_6(onSave(closure_2[11]).Text, obj2);
-      let archived = tmp.archived;
-      const tmp4 = closure_1_8;
-      if (archived) {
-        const obj3 = { style: closure_2.archivedBadge, children: closure_6(Text, obj4) };
-        obj4 = { style: closure_2.archivedBadgeText, variant: "text-xs/bold", color: "text-overlay-light", children: intl.string(onSave(closure_2[12]).t.HRtfn9) };
-        Text = tmp6(tmp7[11]).Text;
-        intl = tmp6(tmp7[12]).intl;
-        archived = tmp5(tmp8, obj3);
-      }
-      const tmp10 = arg1 === diff;
-      items[1] = archived;
-      const obj5 = {
-        label: closure_1_7(subscriptionListingsForGuild, obj),
-        onPress() {
-          return closure_6(role_id.role_id);
-        },
-        trailing: closure_6(Checkbox, obj6)
-      };
-      obj6 = { selected: first1.has(subscriptionListingsForGuild[arg1].role_id) };
-      Checkbox = tmp6(tmp7[10]).FormRow.Checkbox;
-      const children = [closure_6(FormRow, obj5), ];
-      let tmp5Result = !tmp10;
-      if (tmp5Result) {
-        const obj7 = { style: closure_2.divider };
-        tmp5Result = tmp5(tmp6(tmp7[10]).FormDivider, obj7);
-      }
-      children[1] = tmp5Result;
-      return closure_1_7(tmp4, { children });
-    }
-    cResult[7] = first1;
-    cResult[8] = tmp4.archivedBadge;
-    cResult[9] = tmp4.archivedBadgeText;
-    cResult[10] = tmp4.divider;
-    cResult[11] = tmp4.label;
-    cResult[12] = tmp4.roleName;
-    cResult[13] = subscriptionListingsForGuild;
-    cResult[14] = renderRow;
-    tmp16 = renderRow;
-  }
-  function handleSave() {
-    onSave(Array.from(first1));
-  }
-  cResult[4] = onSave;
-  cResult[5] = first1;
-  cResult[6] = handleSave;
-  tmp15 = handleSave;
-}) : (function SelectEmojiRolesActionSheet(arg0) {
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_9 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/emojis/SelectEmojiRolesActionSheet.tsx");
+
+export default function SelectEmojiRolesActionSheet(guildId) {
   let Text;
-  let closure_2;
-  let closure_4;
+  let closure_3;
+  let closure_5;
   let emoji;
-  let guildId;
+  let first;
   let intl3;
   let intl4;
-  let items;
-  let obj5;
-  let onCancel;
+  let items2;
+  let obj6;
   let saveButtonDisabled;
   let stringResult;
-  let tmp7Result;
-  ({ onSave: require, emoji } = arg0);
-  let first;
-  react = undefined;
-  ({ guildId, onCancel } = arg0);
-  const tmp = closure_10();
-  dependencyMap = tmp;
-  const tmp2 = first(react.useState(() => {
+  let tmp10;
+  let tmp9Result;
+  guildId = guildId.guildId;
+  ({ onSave: importDefault, emoji } = guildId);
+  first = undefined;
+  closure_5 = undefined;
+  const onCancel = guildId.onCancel;
+  const tmp = closure_9();
+  _slicedToArray = tmp;
+  const bottom = require("useSafeAreaInsets")().bottom;
+  const tmp4 = require("useScaledRowHeight")();
+  [first, closure_5] = first.useState(() => {
     let roles;
     const _Set = Set;
     if (emoji != null) {
@@ -345,80 +66,79 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmojiR
     }
     const _Set1 = new _Set(roles);
     return _Set1;
-  }), 2);
-  first = tmp2[0];
-  react = tmp2[1];
-  let tmp4 = first.size > 0;
-  const tmp5 = require;
-  const tmp6 = dependencyMap;
-  let obj = GuildRoleSubscriptionsHooks;
+  });
+  const tmp7 = first.size > 0;
+  const tmp8 = guildId;
+  let obj = guildId(emoji[9]);
   const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
-  const tmp7 = closure_6;
-  let obj2 = {
+  let obj2 = guildId(emoji[10]);
+  let items = [subscriptionListingsForGuild];
+  const items1 = [guildId, subscriptionListingsForGuild];
+  let closure_7 = obj2.useStateFromStoresArray(items, () => subscriptionListingsForGuild.map((role_id) => subscriptionListingsForGuild.getRole(guildId, role_id.role_id)), items1);
+  let obj3 = {
     onPress: function handleSave() {
-      require(Array.from(first));
+      importDefault(Array.from(first));
     },
-    disabled: !tmp4,
+    disabled: tmp10,
     accessibilityRole: "button",
+    accessibilityState: { disabled: tmp10 },
     style: saveButtonDisabled,
-    children: tmp7(Text, { variant: "text-md/semibold", color: "text-brand", children: stringResult })
+    children: tmp9(Text, { variant: "text-md/semibold", color: "text-brand", children: stringResult })
   };
+  tmp10 = !tmp7;
   saveButtonDisabled = undefined;
-  const PressableOpacity = Pressables.PressableOpacity;
-  if (!tmp4) {
+  const PressableOpacity = guildId(emoji[11]).PressableOpacity;
+  const tmp2 = importDefault;
+  if (!tmp7) {
     saveButtonDisabled = tmp.saveButtonDisabled;
   }
-  Text = Text_Text.Text;
+  Text = tmp8(tmp3[12]).Text;
   if (null == emoji) {
-    const intl2 = intl5.intl;
-    stringResult = intl2.string(intl5.t["3UB9ad"]);
+    const intl2 = tmp8(tmp3[13]).intl;
+    stringResult = intl2.string(tmp8(tmp3[13]).t["3UB9ad"]);
   } else {
-    let intl = intl5.intl;
-    stringResult = intl.string(intl5.t["R3BPH+"]);
+    let intl = tmp8(tmp3[13]).intl;
+    stringResult = intl.string(tmp8(tmp3[13]).t["R3BPH+"]);
   }
-  let obj3 = { title: intl3.string(intl5.t.JPU0EF), subtitle: intl4.string(intl5.t.MZusPv), trailing: tmp7Result };
-  tmp7Result = tmp7(PressableOpacity, obj2);
-  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
-  intl3 = intl5.intl;
-  intl4 = intl5.intl;
-  let obj4 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj3), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(7199), obj5) };
-  tmp7(BottomSheetTitleHeader, obj3);
-  const ActionSheet = ActionSheet2.ActionSheet;
-  obj5 = {
+  let obj4 = { title: intl3.string(tmp8(emoji[13]).t.JPU0EF), subtitle: intl4.string(tmp8(emoji[13]).t.MZusPv), trailing: tmp9Result };
+  tmp9Result = closure_7(PressableOpacity, obj3);
+  const BottomSheetTitleHeader = tmp8(tmp3[14]).BottomSheetTitleHeader;
+  intl3 = tmp8(tmp3[13]).intl;
+  intl4 = tmp8(tmp3[13]).intl;
+  let obj5 = { scrollable: true, header: tmp9(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp9(tmp2(emoji[16]), obj6) };
+  closure_7(BottomSheetTitleHeader, obj4);
+  BottomSheet = tmp8(tmp3[15]).BottomSheet;
+  obj6 = {
     inActionSheet: true,
     style: tmp.list,
-    itemSize,
-    sections: items,
+    estimatedListSize: "windowSize",
+    itemSize: tmp4,
+    insetEnd: bottom,
+    sections: items2,
     renderItem: function renderRow(arg0, arg1) {
-      let Checkbox;
-      let Text;
-      let intl;
+      let TableCheckboxRow;
       let items;
-      let obj4;
-      let obj6;
+      let obj2;
+      let obj3;
+      let obj5;
+      let obj8;
+      let tmp10;
+      let tmp13;
+      let tmp7Result;
       let role_id = tmp;
       const diff = subscriptionListingsForGuild.length - 1;
-      const obj = { style: closure_2.label, children: items };
-      const FormRow = require("Form").FormRow;
-      items = [, ];
-      const obj2 = { style: closure_2.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
-      items[0] = closure_1_6(require("Text/Text").Text, obj2);
-      let archived = tmp.archived;
-      const tmp4 = closure_1_8;
-      if (archived) {
-        const obj3 = { style: closure_2.archivedBadge, children: closure_1_6(Text, obj4) };
-        obj4 = { style: closure_2.archivedBadgeText, variant: "text-xs/bold", color: "text-overlay-light", children: intl.string(require("intl").t.HRtfn9) };
-        Text = tmp6(tmp7[11]).Text;
-        intl = tmp6(tmp7[12]).intl;
-        archived = tmp5(tmp8, obj3);
-      }
-      const tmp10 = arg1 === diff;
-      items[1] = archived;
-      const obj5 = {
-        label: closure_1_7(subscriptionListingsForGuild, obj),
+      const intl = guildId(emoji[13]).intl;
+      const stringResult = intl.string(guildId(emoji[13]).t.HRtfn9);
+      const obj = { style: closure_3.row, children: closure_7(TableCheckboxRow, obj2) };
+      obj2 = {
+        start: 0 === arg1,
+        end: arg1 === diff,
+        label: tmp10(closure_5, obj3),
+        accessibilityHint: tmp13,
+        checked: first.has(subscriptionListingsForGuild[arg1].role_id),
         onPress() {
           role_id = role_id.role_id;
-          return closure_4((has) => {
+          return closure_5((has) => {
             set = new Set(has);
             if (has.has(role_id)) {
               set.delete(role_id);
@@ -427,24 +147,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmojiR
             }
             return set;
           });
-        },
-        trailing: closure_1_6(Checkbox, obj6)
+        }
       };
-      obj6 = { selected: first.has(subscriptionListingsForGuild[arg1].role_id) };
-      Checkbox = tmp6(tmp7[10]).FormRow.Checkbox;
-      const children = [closure_1_6(FormRow, obj5), ];
-      let tmp5Result = !tmp10;
-      if (tmp5Result) {
-        const obj7 = { style: closure_2.divider };
-        tmp5Result = tmp5(tmp6(tmp7[10]).FormDivider, obj7);
+      obj3 = { style: closure_3.label, children: items };
+      TableCheckboxRow = guildId(emoji[17]).TableCheckboxRow;
+      tmp10 = closure_1_8;
+      if (null != closure_7[arg1]) {
+        const obj4 = { style: closure_3.roleName, children: closure_7(require("RoleName"), obj5) };
+        obj5 = { role: closure_7[arg1], children: subscriptionListingsForGuild[arg1].name };
+        tmp7Result = tmp7(tmp8, obj4);
+      } else {
+        const obj6 = { style: closure_3.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
+        tmp7Result = tmp7(tmp4(tmp5[12]).Text, obj6);
       }
-      children[1] = tmp5Result;
-      return closure_1_7(tmp4, { children });
+      items = [tmp7Result, ];
+      let archived = tmp.archived;
+      if (archived) {
+        const obj7 = { type: obj8, variant: "critical" };
+        obj8 = { text: stringResult };
+        archived = tmp7(tmp4(tmp5[19]).Badge, obj7);
+      }
+      items[1] = archived;
+      tmp13 = undefined;
+      if (subscriptionListingsForGuild[arg1].archived) {
+        tmp13 = stringResult;
+      }
+      return closure_7(closure_5, obj);
     }
   };
-  items = [subscriptionListingsForGuild.length];
-  return tmp7(ActionSheet, obj4);
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/emojis/SelectEmojiRolesActionSheet.tsx");
-
-export default tmp4;
+  items2 = [subscriptionListingsForGuild.length];
+  return closure_7(BottomSheet, obj5);
+};

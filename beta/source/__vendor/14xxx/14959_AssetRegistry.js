@@ -1,10 +1,10 @@
 // Module ID: 14959
 // Function ID: 14960
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 14959 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "ded314673e0e4bafd84df14bbd2dcfb3", name: "tier_1_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "78e18d727d8c0a3ff78e647d73ffb0be", name: "QuoteIcon", type: "png" });

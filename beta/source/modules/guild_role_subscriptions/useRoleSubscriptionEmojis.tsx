@@ -1,94 +1,21 @@
-// Module ID: 19334
-// Function ID: 19335
+// Module ID: 19968
+// Function ID: 19969
 // Name: useRoleSubscriptionEmojis
-// Dependencies: [19, 6757, 558, 576, 504, 4957, 2]
+// Dependencies: [19, 6796, 504, 4968, 2]
+// Exports: default
 
-// Module 19334 (useRoleSubscriptionEmojis)
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4957 */;
+// Module 19968 (useRoleSubscriptionEmojis)
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let items = [];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleSubscriptionEmojis(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [EmojiStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return EmojiStore.getGuildEmoji(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (null != stateFromStores) {
-    let tmp10;
-    if (cResult[4] === stateFromStores) {
-      let tmp9;
-      if (cResult[5] === arg0) {
-        tmp9 = cResult[6];
-      }
-      tmp8 = tmp9;
-    }
-    if (cResult[7] !== arg0) {
-      class E {
-        constructor(roles) {
-          const obj = RoleSubscriptionEmojiUtils;
-          return obj.isRoleSubscriptionEmoji(roles, closure_0);
-        }
-      }
-      cResult[7] = arg0;
-      cResult[8] = E;
-      tmp10 = E;
-    } else {
-      class E {
-        constructor(roles) {
-          const obj = RoleSubscriptionEmojiUtils;
-          return obj.isRoleSubscriptionEmoji(roles, closure_0);
-        }
-      }
-    }
-    const found = stateFromStores.filter(tmp10);
-    cResult[4] = stateFromStores;
-    cResult[5] = arg0;
-    cResult[6] = found;
-    tmp9 = found;
-  } else {
-    class E {
-      constructor(roles) {
-        const obj = RoleSubscriptionEmojiUtils;
-        return obj.isRoleSubscriptionEmoji(roles, closure_0);
-      }
-    }
-  }
-  return tmp8;
-}) : (function useRoleSubscriptionEmojis(arg0) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionEmojis.tsx");
+
+export default function useRoleSubscriptionEmojis(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;
@@ -104,14 +31,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleSub
       found = items;
     } else {
       found = arr.filter((item) => {
-        const obj = closure_0(stateFromStores[5]);
+        const obj = closure_0(stateFromStores[3]);
         return obj.isRoleSubscriptionEmoji(item, closure_1_0);
       });
     }
     return found;
   }, items2);
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionEmojis.tsx");
-
-export default tmp2;
+};
 export const NO_EMOJIS_AVAILABLE = items;

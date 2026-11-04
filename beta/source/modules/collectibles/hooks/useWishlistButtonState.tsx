@@ -1,14 +1,14 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9525
+// Function ID: 9526
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7735, 7285, 2033, 504, 9401, 9409, 5010, 1128, 2]
+// Dependencies: [5, 32, 19, 7772, 7326, 2026, 504, 9470, 9478, 5021, 1113, 2]
 // Exports: useWishlistButtonState
 
-// Module 9454 (useWishlistButtonState)
+// Module 9525 (useWishlistButtonState)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7735 */;
+import UserProfileStore from "UserProfileStore" /* 7772 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let c4, c5;
 
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useWishlistButtonState.tsx");
 
-export const useWishlistButtonState = function useWishlistButtonState(onRemoveSuccess) {
+export function useWishlistButtonState(onRemoveSuccess) {
   let _location;
   let _undefined;
   let c8;
@@ -84,7 +84,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -200,7 +200,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
             closure_129_10(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp81) {
           onAddSuccess = tmp81;
           if (0 === c3) {
@@ -220,4 +220,4 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
     }), items3)
   };
   return obj2;
-};
+}

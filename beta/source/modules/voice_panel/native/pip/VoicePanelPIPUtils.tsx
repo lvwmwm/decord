@@ -1,21 +1,21 @@
-// Module ID: 18483
-// Function ID: 18484
+// Module ID: 19114
+// Function ID: 19115
 // Name: VoicePanelPIPUtils
-// Dependencies: [6804, 6674, 502, 10932, 18484, 5664, 10933, 6677, 10937, 5659, 587, 2]
+// Dependencies: [6843, 6714, 502, 11223, 19115, 5681, 11224, 6717, 11228, 5676, 575, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, createPIPBlockList, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
 
-// Module 18483 (VoicePanelPIPUtils)
-import nativeDefault from "native" /* 587 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5659 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6677 */;
-import participantHasVideo from "participantHasVideo" /* 10937 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
+// Module 19114 (VoicePanelPIPUtils)
+import nativeDefault from "native" /* 575 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 5676 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6717 */;
+import participantHasVideo from "participantHasVideo" /* 11228 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10932 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18484 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10933 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19115 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
 import size_mod from "module_2" /* 2 */;
 
 let PIPReferenceDimensions;
@@ -343,7 +343,7 @@ export { PIPReferenceDimensions };
 export { SquarePIPReferenceDimensions };
 export { SquareActivityPIPReferenceDimensions };
 export const PIP_LAYOUT_PHYSICS = { mass: 0.3, damping: 80, stiffness: 150 };
-export const computePIPSize = function computePIPSize(SquarePIPReferenceDimensions, arg1, arg2, showSecondaryPIP) {
+export function computePIPSize(SquarePIPReferenceDimensions, arg1, arg2, showSecondaryPIP) {
   let height;
   let height2;
   let sum;
@@ -381,8 +381,8 @@ export const computePIPSize = function computePIPSize(SquarePIPReferenceDimensio
     return size;
   }
   ({ width: width2, height: height2 } = arg2 ? SquareActivityPIPReferenceDimensions : SquarePIPReferenceDimensions);
-};
-export const createPIPBlockList = function createPIPBlockList(PIP, focusedId) {
+}
+export function createPIPBlockList(PIP, focusedId) {
   set = new Set();
   const currentUserActiveStream = ApplicationStreamingStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
@@ -395,8 +395,8 @@ export const createPIPBlockList = function createPIPBlockList(PIP, focusedId) {
     set.add(focusedId);
   }
   return set;
-};
-export const computePIPParticipantToShow = function computePIPParticipantToShow(canShowActivities) {
+}
+export function computePIPParticipantToShow(canShowActivities) {
   let blockList;
   let channelId;
   let focusedParticipantId;
@@ -568,8 +568,8 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
     }
   }
   return tmp48;
-};
-export const getPIPMode = function getPIPMode(connected) {
+}
+export function getPIPMode(connected) {
   let channelId;
   let manuallyFocusedId;
   let mode;
@@ -625,7 +625,7 @@ export const getPIPMode = function getPIPMode(connected) {
     }
     return IN_APP;
   }
-};
+}
 export { getPIPWindowDimensions };
 export { pipXYtoAbsoluteXY };
 export { getClampedPIPPosition };

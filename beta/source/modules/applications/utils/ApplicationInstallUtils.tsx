@@ -1,16 +1,16 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11738
+// Function ID: 11739
 // Name: ApplicationInstallUtils
-// Dependencies: [9682, 6015, 5635, 2]
+// Dependencies: [9762, 6035, 5651, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 11437 (ApplicationInstallUtils)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5635 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9682 */;
+// Module 11738 (ApplicationInstallUtils)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9762 */;
 import size from "module_2" /* 2 */;
 
-const f110422 = (oauth2_install_params) => {
+const f100094 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -28,21 +28,21 @@ const f110422 = (oauth2_install_params) => {
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let result = size.fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
 
-export const canInstallApplication = function canInstallApplication(installAppProps) {
-  const integrationTypesConfig = installAppProps.integrationTypesConfig;
-  let tmp = null != installAppProps.customInstallUrl || null != installAppProps.installParams;
+export function canInstallApplication(application) {
+  const integrationTypesConfig = application.integrationTypesConfig;
+  let tmp = null != application.customInstallUrl || null != application.installParams;
   if (!tmp) {
     let someResult = null != integrationTypesConfig;
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f110422);
+      someResult = values.some(f100094);
     }
     tmp = someResult;
   }
   return tmp;
-};
-export const isAppUserInstallable = function isAppUserInstallable(integrationTypesConfig) {
+}
+export function isAppUserInstallable(integrationTypesConfig) {
   integrationTypesConfig = integrationTypesConfig.integrationTypesConfig;
   let tmp = null != integrationTypesConfig.customInstallUrl || null != integrationTypesConfig.installParams;
   if (!tmp) {
@@ -50,7 +50,7 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f110422);
+      someResult = values.some(f100094);
     }
     tmp = someResult;
   }
@@ -61,8 +61,8 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     tmp = ApplicationIntegrationType.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
   }
   return tmp;
-};
-export const shouldInstallApplicationOnDemand = function shouldInstallApplicationOnDemand(arg0) {
+}
+export function shouldInstallApplicationOnDemand(arg0) {
   let applicationId;
   let channel;
   let commandIntegrationTypes;
@@ -89,4 +89,4 @@ export const shouldInstallApplicationOnDemand = function shouldInstallApplicatio
     tmp4 = tmp6;
   }
   return tmp4;
-};
+}

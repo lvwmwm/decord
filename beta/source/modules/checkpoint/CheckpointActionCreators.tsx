@@ -1,18 +1,18 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 13450
+// Function ID: 13451
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4855, 12986, 1087, 584, 1297, 12988, 12989, 7443, 1267, 7787, 7598, 12937, 1388, 2]
+// Dependencies: [5, 4863, 13436, 1072, 572, 1282, 13451, 6437, 7485, 1252, 7824, 7636, 13384, 1379, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
 
-// Module 12987 (CheckpointActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7443 */;
-import formatResults from "formatResults" /* 12937 */;
+// Module 13450 (CheckpointActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import formatResults from "formatResults" /* 13384 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import CheckpointStore from "CheckpointStore" /* 12986 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import CheckpointStore from "CheckpointStore" /* 13436 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c1, c10, c9;
@@ -35,7 +35,7 @@ let obj = function _fetchCheckpointData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -129,7 +129,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -202,7 +202,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -277,7 +277,7 @@ obj = function _sendSidekickMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -353,7 +353,7 @@ obj = function _sendCheckpointCard() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -435,7 +435,7 @@ obj = function _sendCheckpointCard() {
               }
             }
             c10 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           c8 = 0;
@@ -450,31 +450,31 @@ obj = function _sendCheckpointCard() {
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCreators.tsx");
 
-export const toggleMute = function toggleMute() {
+export function toggleMute() {
   obj = DispatcherDefault;
   return obj.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" });
-};
-export const selectCharacterTrait = function selectCharacterTrait(trait, optionId) {
+}
+export function selectCharacterTrait(trait, optionId) {
   obj = DispatcherDefault;
   const obj2 = { type: "CHECKPOINT_SELECT_CHARACTER_TRAIT", trait, optionId };
   return obj.dispatch(obj2);
-};
-export const resetEditedCharacter = function resetEditedCharacter() {
+}
+export function resetEditedCharacter() {
   obj = DispatcherDefault;
   return obj.dispatch({ type: "CHECKPOINT_RESET_EDITED_CHARACTER" });
-};
-export const fetchCheckpointData = function fetchCheckpointData() {
+}
+export function fetchCheckpointData() {
   return obj(...arguments);
-};
-export const completeCheckpoint = function completeCheckpoint() {
+}
+export function completeCheckpoint() {
   return obj(...arguments);
-};
-export const resetCheckpoint = function resetCheckpoint() {
+}
+export function resetCheckpoint() {
   return obj(...arguments);
-};
-export const sendSidekickMessage = function sendSidekickMessage() {
+}
+export function sendSidekickMessage() {
   return obj(...arguments);
-};
-export const sendCheckpointCard = function sendCheckpointCard() {
+}
+export function sendCheckpointCard() {
   return obj(...arguments);
-};
+}

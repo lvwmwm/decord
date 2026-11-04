@@ -1,11 +1,11 @@
-// Module ID: 15347
-// Function ID: 15348
+// Module ID: 15895
+// Function ID: 15896
 // Name: GlobalFramePoolLockExperiment
-// Dependencies: [1456, 2]
+// Dependencies: [1448, 2]
 // Exports: getGlobalFramePoolLockExperimentConfig
 
-// Module 15347 (GlobalFramePoolLockExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
+// Module 15895 (GlobalFramePoolLockExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 let closure_0 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/media_engine/GlobalFramePoolLockExperiment.tsx");
 
-export const getGlobalFramePoolLockExperimentConfig = function getGlobalFramePoolLockExperimentConfig(disable) {
+export function getGlobalFramePoolLockExperimentConfig(disable) {
   let defaultConfig;
   let flag = disable.disable;
   const _location = disable.location;
@@ -29,4 +29,4 @@ export const getGlobalFramePoolLockExperimentConfig = function getGlobalFramePoo
     defaultConfig = obj.getConfig(obj2);
   }
   return defaultConfig;
-};
+}

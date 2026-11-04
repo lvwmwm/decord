@@ -1,53 +1,41 @@
-// Module ID: 9040
-// Function ID: 9041
+// Module ID: 9077
+// Function ID: 9078
 // Name: GuildSettingsServerTagUtils
-// Dependencies: [4877, 4935, 1087, 9041, 8686, 2]
+// Dependencies: [4885, 4946, 1072, 8736, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 9040 (GuildSettingsServerTagUtils)
-import Constants from "Constants" /* 1087 */;
-import GuildTagUtils from "GuildTagUtils" /* 8686 */;
-import MobileServerTagExperimentDefault from "MobileServerTagExperiment" /* 9041 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
+// Module 9077 (GuildSettingsServerTagUtils)
+import Constants from "Constants" /* 1072 */;
+import GuildTagUtils from "GuildTagUtils" /* 8736 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
-const GuildSettingsServerTag = "GuildSettingsServerTag";
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
 
-export const canUseMobileServerTagSettings = function canUseMobileServerTagSettings(guildId) {
+export function canUseMobileServerTagSettings(guildId) {
   const guild = GuildStore.getGuild(guildId);
-  let enabled = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-  if (enabled) {
-    const obj2 = { location: GuildSettingsServerTag };
-    const obj = MobileServerTagExperimentDefault;
-    enabled = obj.getConfig(obj2).enabled;
-  }
-  return enabled;
-};
-export const canViewMobileServerTag = function canViewMobileServerTag(id) {
+  const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+  return canResult;
+}
+export function canViewMobileServerTag(id) {
   const guild = GuildStore.getGuild(id);
-  let enabled = null != guild;
-  if (enabled) {
+  let guildSupportsTagsResult = null != guild;
+  if (guildSupportsTagsResult) {
     const obj = GuildTagUtils;
-    enabled = obj.guildSupportsTags(guild);
+    guildSupportsTagsResult = obj.guildSupportsTags(guild);
   }
-  if (enabled) {
+  if (guildSupportsTagsResult) {
     const obj2 = GuildTagUtils;
-    enabled = obj2.guildHasTag(guild);
+    guildSupportsTagsResult = obj2.guildHasTag(guild);
   }
-  if (enabled) {
-    const obj4 = { location: GuildSettingsServerTag };
-    const obj3 = MobileServerTagExperimentDefault;
-    enabled = obj3.getConfig(obj4).enabled;
-  }
-  return enabled;
-};
-export const isServerTagDraftDirty = function isServerTagDraftDirty(profile, profile2) {
+  return guildSupportsTagsResult;
+}
+export function isServerTagDraftDirty(profile, profile2) {
   let tmp = null != profile && null != profile2;
   if (tmp) {
     tmp = profile.tag !== profile2.tag || profile.badge !== profile2.badge || profile.badgeColorPrimary !== profile2.badgeColorPrimary || profile.badgeColorSecondary !== profile2.badgeColorSecondary;
   }
   return tmp;
-};
+}

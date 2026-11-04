@@ -1,20 +1,20 @@
-// Module ID: 9299
-// Function ID: 9300
+// Module ID: 9336
+// Function ID: 9337
 // Name: botScopedAccess
-// Dependencies: [4855, 4935, 1087, 8859, 9298, 4940, 1099, 9290, 9296, 9300, 2]
+// Dependencies: [4863, 4946, 1072, 8910, 9335, 4951, 1084, 9327, 9333, 9337, 2]
 // Exports: botCanViewChannel, canBotScopeReadMessages, isBotScopeOnly, validateBotScopeHasChannelAccess, validateBotScopeHasGuildAccess
 
-// Module 9299 (botScopedAccess)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9290 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import validateScopeDefault from "validateScope" /* 9298 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9300 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9336 (botScopedAccess)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9327 */;
+import RPCErrorDefault from "RPCError" /* 9333 */;
+import validateScopeDefault from "validateScope" /* 9335 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9337 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ let metroRequire;
 ({ ChannelTypes: metroRequire, Permissions: metroImportDefault, RPCErrors: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/rpc/helpers/botScopedAccess.tsx");
 
-export const isBotScopeOnly = function isBotScopeOnly(authorization, scope) {
+export function isBotScopeOnly(authorization, scope) {
   const scopes = authorization.authorization.scopes;
   if (scopes.has(OAuth2Scopes.OAuth2Scopes.BOT)) {
     const _Set = Set;
@@ -37,8 +37,8 @@ export const isBotScopeOnly = function isBotScopeOnly(authorization, scope) {
   } else {
     return false;
   }
-};
-export const botCanViewChannel = function botCanViewChannel(socket, context) {
+}
+export function botCanViewChannel(socket, context) {
   const bot = socket.application.bot;
   let id;
   if (bot != null) {
@@ -53,8 +53,8 @@ export const botCanViewChannel = function botCanViewChannel(socket, context) {
     const obj3 = BigFlagUtilsAll;
     return obj3.has(permissions, metroImportDefault.VIEW_CHANNEL);
   }
-};
-export const canBotScopeReadMessages = function canBotScopeReadMessages(socket, channel) {
+}
+export function canBotScopeReadMessages(socket, channel) {
   const scopes = socket.authorization.scopes;
   if (scopes.has(OAuth2Scopes.OAuth2Scopes.MESSAGES_READ)) {
     return true;
@@ -68,8 +68,8 @@ export const canBotScopeReadMessages = function canBotScopeReadMessages(socket, 
     }
     return type === metroRequire.GUILD_APP && null != channel.application_id && channel.application_id === socket.application.id;
   }
-};
-export const validateBotScopeHasGuildAccess = function validateBotScopeHasGuildAccess(socket, guild_id) {
+}
+export function validateBotScopeHasGuildAccess(socket, guild_id) {
   if (isPostMessageSocketDefault(socket)) {
     if (guild_id !== getGuildIdForEmbeddedSurfaceDefault(socket.context.surface)) {
       const self3 = this;
@@ -85,8 +85,8 @@ export const validateBotScopeHasGuildAccess = function validateBotScopeHasGuildA
     const tmp5 = new RPCErrorDefault(obj, "Access to guild data via BotScope only available for embedded apps");
     throw tmp5;
   }
-};
-export const validateBotScopeHasChannelAccess = function validateBotScopeHasChannelAccess(socket, arg1) {
+}
+export function validateBotScopeHasChannelAccess(socket, arg1) {
   const channel = ChannelStore.getChannel(arg1);
   if (null == channel) {
     const _HermesInternal = HermesInternal;
@@ -150,4 +150,4 @@ export const validateBotScopeHasChannelAccess = function validateBotScopeHasChan
       throw tmp3;
     }
   }
-};
+}

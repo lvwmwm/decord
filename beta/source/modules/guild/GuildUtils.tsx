@@ -1,11 +1,11 @@
-// Module ID: 9984
-// Function ID: 9985
+// Module ID: 10066
+// Function ID: 10067
 // Name: guild/GuildUtils
-// Dependencies: [6862, 7351, 2]
+// Dependencies: [6902, 6906, 2]
 // Exports: handleJoinGuild
 
-// Module 9984 (guild/GuildUtils)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
+// Module 10066 (guild/GuildUtils)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -13,7 +13,7 @@ let _require;
 
 let result = size.fileFinishedImporting("modules/guild/GuildUtils.tsx");
 
-export const handleJoinGuild = function handleJoinGuild(guildId) {
+export function handleJoinGuild(guildId) {
   _require = guildId;
   if (null != guildId) {
     let obj = GuildActionCreatorsDefault;
@@ -24,4 +24,4 @@ export const handleJoinGuild = function handleJoinGuild(guildId) {
     });
     nextPromise.catch(require("JoinGuildRefusedError").ignoreJoinGuildRefused);
   }
-};
+}

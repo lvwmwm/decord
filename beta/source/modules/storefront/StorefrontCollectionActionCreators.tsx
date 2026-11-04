@@ -1,18 +1,18 @@
-// Module ID: 9511
-// Function ID: 9512
+// Module ID: 9583
+// Function ID: 9584
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2068, 9509, 7699, 1087, 8742, 584, 6415, 6407, 2]
+// Dependencies: [5, 2062, 9581, 7737, 1072, 8792, 572, 6455, 6447, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9511 (StorefrontCollectionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import StoreUtils from "StoreUtils" /* 6415 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8742 */;
+// Module 9583 (StorefrontCollectionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import StoreUtils from "StoreUtils" /* 6455 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8792 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9509 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7699 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9581 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7737 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, requestKey;
@@ -91,7 +91,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
       dispatch(obj);
       c4 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     let closure_2 = tmp;
     ({ collectionIds: c0, includeUnpublishedProducts } = closure_0);
     if (includeUnpublishedProducts === undefined) {
@@ -100,22 +100,22 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
-function getCollectionListKey(arr) {
+function getCollectionListKey(memo) {
   let applicationId;
   let useShopOrdering;
-  ({ applicationId, useShopOrdering } = arr);
+  ({ applicationId, useShopOrdering } = memo);
   if (useShopOrdering === undefined) {
     useShopOrdering = true;
   }
-  let flag = arr.includeUnpublishedProducts;
+  let flag = memo.includeUnpublishedProducts;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = arr.includeUnpublishedCollections;
+  let flag2 = memo.includeUnpublishedCollections;
   if (flag2 === undefined) {
     flag2 = false;
   }
@@ -197,7 +197,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
                   const _Date = Date;
                   if (Date.now() - collectionPageFetchedAt <= TWELVE_HOURS_MS) {
                     c7 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
               }
@@ -243,13 +243,13 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
       dispatch2(obj12);
       c5 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     let obj6 = closure_1;
     if (closure_1 === undefined) {
       obj6 = {};
     }
     flag = obj6.retryAfterError ?? false;
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -291,7 +291,7 @@ obj = function _maybeFetchCollectionsAfter() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -337,7 +337,7 @@ obj = function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                           c6 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       }
                     }
@@ -383,7 +383,7 @@ obj = function _maybeFetchCollectionsAfter() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp46) {
           closure_3 = tmp46;
           if (0 === c4) {
@@ -445,7 +445,7 @@ obj = function _maybeFetchCollectionsForApplication() {
                   }
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
             skuTypes = 1;
@@ -504,7 +504,7 @@ obj = function _maybeFetchCollectionsForApplication() {
       dispatch2(obj14);
       skuTypes = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     ({ applicationId: c0, includeUnpublishedProducts } = closure_0);
     if (includeUnpublishedProducts === undefined) {
       includeUnpublishedProducts = false;
@@ -515,25 +515,25 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/storefront/StorefrontCollectionActionCreators.tsx");
 
-export const maybeFetchCollectionsWithProducts = function maybeFetchCollectionsWithProducts() {
+export function maybeFetchCollectionsWithProducts() {
   return obj(...arguments);
-};
+}
 export { getCollectionListKey };
 export { getCollectionPageKey };
-export const maybeFetchCollectionsForApplicationPage = function maybeFetchCollectionsForApplicationPage() {
+export function maybeFetchCollectionsForApplicationPage() {
   return obj(...arguments);
-};
+}
 export { getCollectionsAfterKey };
-export const maybeFetchCollectionsAfter = function maybeFetchCollectionsAfter() {
+export function maybeFetchCollectionsAfter() {
   return obj(...arguments);
-};
-export const maybeFetchCollectionsForApplication = function maybeFetchCollectionsForApplication() {
+}
+export function maybeFetchCollectionsForApplication() {
   return obj(...arguments);
-};
+}

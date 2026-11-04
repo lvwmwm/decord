@@ -1,13 +1,13 @@
-// Module ID: 11509
-// Function ID: 11510
+// Module ID: 11812
+// Function ID: 11813
 // Name: NativeRPCHelpers
-// Dependencies: [5, 6410, 1087, 11510, 9296, 2]
+// Dependencies: [5, 6450, 1072, 11813, 9333, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 11509 (NativeRPCHelpers)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 6410 */;
-import RPCHelpers from "RPCHelpers" /* 11510 */;
+// Module 11812 (NativeRPCHelpers)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 6450 */;
+import RPCHelpers from "RPCHelpers" /* 11813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_0 = _asyncToGenerator(async function(arg0, value, arg2) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -89,9 +89,9 @@ let closure_0 = _asyncToGenerator(async function(arg0, value, arg2) {
 });
 let result = size.fileFinishedImporting("modules/rpc/native/server/NativeRPCHelpers.tsx");
 
-export const validateSocketClient = function validateSocketClient() {
+export function validateSocketClient() {
   return closure_0(...arguments);
-};
+}
 export const getDeprecatedVoiceSettings = () => {
   const obj = RPCHelpers;
   return obj.getDeprecatedVoiceSettingsWithShortcut(() => []);

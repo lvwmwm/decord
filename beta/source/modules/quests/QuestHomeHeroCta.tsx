@@ -1,15 +1,15 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9713
+// Function ID: 9714
 // Name: QuestHomeHeroCta
 // Dependencies: [2]
 // Exports: questHomeHeroCtaFromServer
 
-// Module 9633 (QuestHomeHeroCta)
+// Module 9713 (QuestHomeHeroCta)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/QuestHomeHeroCta.tsx");
 
-export const questHomeHeroCtaFromServer = function questHomeHeroCtaFromServer(cta) {
+export function questHomeHeroCtaFromServer(cta) {
   let tmp;
   let tmp2;
   const obj = { url: cta.url, buttonLabel: cta.button_label, android: tmp, ios: tmp2 };
@@ -24,4 +24,4 @@ export const questHomeHeroCtaFromServer = function questHomeHeroCtaFromServer(ct
     const obj3 = { iosAppId: cta.ios.ios_app_id };
   }
   return obj;
-};
+}

@@ -1,20 +1,19 @@
-// Module ID: 12137
-// Function ID: 12138
-// Name: home/EmptyState
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 12064, 11201, 1128, 5266, 2]
+// Module ID: 12442
+// Function ID: 12443
+// Name: EmptyState
+// Dependencies: [19, 17, 21, 5014, 575, 12379, 11502, 5624, 1113, 2]
+// Exports: default
 
-// Module 12137 (home/EmptyState)
+// Module 12442 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11201 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12064 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11502 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12379 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -23,46 +22,9 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2, textContainer: { textAlign: "center" } };
 obj2 = { padding: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center" };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
-  let container;
-  let first;
-  let textContainer;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(6);
-  const tmp4 = closure_4();
-  const obj2 = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = obj2.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.HOME_EMPTY);
-  ({ container, textContainer } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t["V7+xhH"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.textContainer) {
-    const tmp10 = jsx(Text_Text.Text, { style: textContainer, variant: "text-md/semibold", color: "text-default", children: first });
-    cResult[1] = tmp4.textContainer;
-    cResult[2] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === tmp4.container) {
-    let tmp11;
-    if (cResult[4] === tmp8) {
-      tmp11 = cResult[5];
-    }
-    return tmp11;
-  }
-  const tmp12 = <View style={container}>{tmp8}</View>;
-  cResult[3] = tmp4.container;
-  cResult[4] = tmp8;
-  cResult[5] = tmp12;
-  tmp11 = tmp12;
-}) : (function EmptyState() {
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
+
+export default function EmptyState() {
   let intl;
   const tmp = closure_4();
   const obj = AppLauncherNativeUtils;
@@ -71,7 +33,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <View style={tmp.container}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
-
-export default tmp3;
+};

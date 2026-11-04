@@ -1,24 +1,21 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16754
+// Function ID: 16755
 // Name: ProfilePrivacySetting
-// Dependencies: [8364, 558, 4831, 16177, 5242, 16178, 2002, 1128, 1211, 11240, 2]
+// Dependencies: [8432, 4839, 16755, 5258, 16756, 1994, 1113, 1196, 11540, 2]
 
-// Module 16176 (ProfilePrivacySetting)
-import intl7 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16177 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 16754 (ProfilePrivacySetting)
+import intl7 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16755 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const asyncRequire = tmp2(2002);
+const asyncRequire = tmp2(1994);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl7.intl;
@@ -42,7 +39,7 @@ let obj = {
       const obj4 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
       ({ direction: obj3.direction, affectedGuildIds: obj3.affectedGuildIds, settingName: obj3.settingName, mappedActivityValue: obj3.mappedActivityValue } = profileToActivityUpsell);
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(16178, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
+      obj2.openLazy(asyncRequire(16756, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
     }
   },
   useOptions() {
@@ -68,6 +65,6 @@ let obj = {
   }
 };
 const radio = SettingBuilders.createRadio(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");
 
 export default radio;

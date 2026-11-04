@@ -1,25 +1,25 @@
-// Module ID: 8442
-// Function ID: 8443
+// Module ID: 8507
+// Function ID: 8508
 // Name: GuildReportRaidSystemMessage
-// Dependencies: [4855, 4877, 8343, 8350, 8435, 8352, 8436, 8354, 1128, 1420, 1417, 2]
+// Dependencies: [4863, 4885, 8411, 8418, 8500, 8420, 8501, 8422, 1113, 1412, 1409, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 8442 (GuildReportRaidSystemMessage)
-import intl3 from "intl" /* 1128 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8343 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8435 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8436 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
+// Module 8507 (GuildReportRaidSystemMessage)
+import intl3 from "intl" /* 1113 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8411 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8500 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8501 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildReportRaidSystemMessage.tsx");
 
-export const createGuildReportRaidSystemMessage = function createGuildReportRaidSystemMessage(roleStyle) {
+export function createGuildReportRaidSystemMessage(roleStyle) {
   let ensureAvatarSource;
   let intl;
   let intl2;
@@ -52,9 +52,9 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   }
   const obj4 = { content: intl.formatToParts(intl3.t["MTmH+u"], obj3), username: intl2.string(intl3.t.hG1StD), usernameColor: automodUsernameColor, avatarURL: ensureAvatarSource(makeSource(tmp8Result4.getAutomodAvatarURL())).uri };
   const tmp11 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp3 });
-  const merged = Object.assign(tmp(8354)(roleStyle));
-  intl = tmp8(1128).intl;
-  intl2 = tmp8(1128).intl;
+  const merged = Object.assign(tmp(8422)(roleStyle));
+  intl = tmp8(1113).intl;
+  intl2 = tmp8(1113).intl;
   if (automodUsernameColor == null) {
     automodUsernameColor = null;
   }
@@ -65,4 +65,4 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   tmp8Result4 = utils_AvatarUtils;
   const merged1 = Object.assign(tmp11);
   return obj4;
-};
+}

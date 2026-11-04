@@ -77,13 +77,13 @@ let closure_6 = 1;
 let c7 = false;
 let map = new Map();
 
-export const registerObserver = function registerObserver(observer, callback) {
+export function registerObserver(observer, callback) {
   closure_6 = closure_6 + 1;
   const obj = { observer, callback };
   const result = map.set(closure_6, obj);
   return closure_6;
-};
-export const unregisterObserver = function unregisterObserver(arg0) {
+}
+export function unregisterObserver(arg0) {
   let deleteResult = map.delete(arg0);
   const tmp = map;
   if (deleteResult) {
@@ -96,8 +96,8 @@ export const unregisterObserver = function unregisterObserver(arg0) {
     }
     c7 = false;
   }
-};
-export const observe = function observe(mutationObserverId) {
+}
+export function observe(mutationObserverId) {
   let subtree;
   let target;
   mutationObserverId = mutationObserverId.mutationObserverId;
@@ -126,8 +126,8 @@ export const observe = function observe(mutationObserverId) {
   } else {
     warnOnceDefault("missing-native-mutation-observer", "Missing native implementation of MutationObserver");
   }
-};
-export const unobserveAll = function unobserveAll(_mutationObserverId) {
+}
+export function unobserveAll(_mutationObserverId) {
   if (null != NativeMutationObserverCxxDefault) {
     if (null != map.get(_mutationObserverId)) {
       const tmpResult = NativeMutationObserverCxxDefault;
@@ -140,4 +140,4 @@ export const unobserveAll = function unobserveAll(_mutationObserverId) {
   } else {
     warnOnceDefault("missing-native-mutation-observer", "Missing native implementation of MutationObserver");
   }
-};
+}

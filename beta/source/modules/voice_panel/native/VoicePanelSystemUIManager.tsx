@@ -1,17 +1,17 @@
-// Module ID: 18532
-// Function ID: 18533
+// Module ID: 19283
+// Function ID: 19284
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6804, 10932, 10930, 5664, 21, 10931, 1274, 1384, 551, 5084, 10008, 10921, 11401, 2]
+// Dependencies: [32, 19, 6843, 11223, 11221, 5681, 21, 11222, 1259, 1375, 551, 5095, 10089, 11212, 11703, 2]
 
-// Module 18532 (VoicePanelSystemUIManager)
-import react_native from "react-native" /* 1274 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10008 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10930 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10932 */;
+// Module 19283 (VoicePanelSystemUIManager)
+import react_native from "react-native" /* 1259 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10089 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -21,13 +21,13 @@ let c10;
 let c9;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport = tmp2(5084);
+const ReanimatedRexport = tmp2(5095);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 const __initData = { code: "function VoicePanelSystemUIManagerTsx1(){const{focused,mode,controlsSpecs,windowDimensions}=this.__closure;var _focused$get;return{focusedId:(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode:mode.get(),controlsMode:controlsSpecs.get().mode,landscape:windowDimensions.get().landscape};}" };
-const __initData2 = { code: "function VoicePanelSystemUIManagerTsx2(props_0,previous){const{cheapWorkletShallowEqual,runOnJS,handleStateChange}=this.__closure;if(cheapWorkletShallowEqual(props_0,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(handleStateChange)(props_0);}" };
+const __initData2 = { code: "function VoicePanelSystemUIManagerTsx2(props,previous){const{cheapWorkletShallowEqual,runOnJS,handleStateChange}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(handleStateChange)(props);}" };
 const memoResult = react.memo(function VoicePanelSystemUIManager() {
   let channelId;
   let items2;
@@ -169,17 +169,17 @@ const memoResult = react.memo(function VoicePanelSystemUIManager() {
   fn.__closure = { focused, mode, controlsSpecs, windowDimensions };
   fn.__workletHash = 2478376475717;
   fn.__initData = __initData;
-  const fn2 = function u(safeAreaState, safeAreaState2) {
+  const fn2 = function u(safeAreaState, current) {
     const cheapWorkletShallowEqual = cheapWorkletShallowEqual2.cheapWorkletShallowEqual;
     cheapWorkletShallowEqual2;
-    const tmp = safeAreaState2;
+    const tmp = current;
     if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
       const tmp2Result = ReanimatedRexport;
       tmp2Result.runOnJS(handleStateChange)(safeAreaState);
     }
   };
   fn2.__closure = { cheapWorkletShallowEqual: focused(mode[12]).cheapWorkletShallowEqual, runOnJS: focused(mode[11]).runOnJS, handleStateChange };
-  fn2.__workletHash = 9238710291709;
+  fn2.__workletHash = 3592680244658;
   fn2.__initData = __initData2;
   ({ cheapWorkletShallowEqual: focused(mode[12]).cheapWorkletShallowEqual, runOnJS: focused(mode[11]).runOnJS, handleStateChange });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);

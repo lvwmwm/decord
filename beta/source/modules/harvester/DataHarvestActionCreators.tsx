@@ -1,20 +1,20 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16767
+// Function ID: 16768
 // Name: DataHarvestActionCreators
-// Dependencies: [1087, 584, 1297, 7110, 2]
+// Dependencies: [1072, 572, 1282, 7152, 2]
 // Exports: getDataHarvestStatus, requestDataHarvest
 
-// Module 16189 (DataHarvestActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7110 */;
+// Module 16767 (DataHarvestActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7152 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/harvester/DataHarvestActionCreators.tsx");
 
-export const getDataHarvestStatus = function getDataHarvestStatus() {
+export function getDataHarvestStatus() {
   let obj = DispatcherDefault;
   obj.dispatch({ type: "LOAD_DATA_HARVEST_TYPE_START" });
   const HTTP = HTTPUtils.HTTP;
@@ -30,8 +30,8 @@ export const getDataHarvestStatus = function getDataHarvestStatus() {
     const obj2 = { type: "LOAD_DATA_HARVEST_TYPE_FAILURE", error };
     obj.dispatch(obj2);
   });
-};
-export const requestDataHarvest = function requestDataHarvest(mapped) {
+}
+export function requestDataHarvest(mapped) {
   let obj = UserSettingsAccountActionCreators;
   const harvest = obj.requestHarvest(mapped);
   return harvest.then((body) => {
@@ -43,4 +43,4 @@ export const requestDataHarvest = function requestDataHarvest(mapped) {
     }
     return body;
   });
-};
+}

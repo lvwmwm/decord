@@ -1,14 +1,14 @@
-// Module ID: 11157
-// Function ID: 11158
+// Module ID: 11460
+// Function ID: 11461
 // Name: BadgeUtils
-// Dependencies: [8704, 8705, 1128, 8714, 2033, 2]
+// Dependencies: [8754, 8755, 1113, 8764, 2026, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 11157 (BadgeUtils)
-import intl2 from "intl" /* 1128 */;
-import Constants from "Constants" /* 8704 */;
-import BadgeId from "BadgeId" /* 8705 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8714 */;
+// Module 11460 (BadgeUtils)
+import intl2 from "intl" /* 1113 */;
+import Constants from "Constants" /* 8754 */;
+import BadgeId from "BadgeId" /* 8755 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8764 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -32,14 +32,14 @@ let result = size.fileFinishedImporting("modules/badges/BadgeUtils.tsx");
 
 export const MAX_DISPLAYED_PROFILE_BADGES = 6;
 export { isPinnedBadge };
-export const isPersonalizationGatedBadge = function isPersonalizationGatedBadge(badge_id) {
+export function isPersonalizationGatedBadge(badge_id) {
   return set.has(badge_id);
-};
+}
 export const BETA_BADGE_IDS = set1;
-export const isBetaBadgeId = function isBetaBadgeId(badge_id) {
+export function isBetaBadgeId(badge_id) {
   return set1.has(badge_id);
-};
-export const getDisplayTier = function getDisplayTier(badge) {
+}
+export function getDisplayTier(badge) {
   const tiers = badge.tiers;
   if (null != tiers) {
     if (0 !== tiers.length) {
@@ -55,20 +55,20 @@ export const getDisplayTier = function getDisplayTier(badge) {
       return found;
     }
   }
-};
-export const getAlwaysVisibleCopy = function getAlwaysVisibleCopy(badge_id) {
+}
+export function getAlwaysVisibleCopy(badge_id) {
   let nPQVxb;
   if (badge_id === BadgeId.BadgeId.STAFF) {
-    nPQVxb = tmp(1128).t.t3udZb;
+    nPQVxb = tmp(1113).t.t3udZb;
   } else {
-    nPQVxb = tmp(1128).t.nPQVxb;
+    nPQVxb = tmp(1113).t.nPQVxb;
   }
   return nPQVxb;
-};
-export const getDirectoryBadges = function getDirectoryBadges(badges) {
+}
+export function getDirectoryBadges(stateFromStoresArray) {
   const earnable = [];
   const owned = [];
-  const iter = badges[Symbol.iterator]();
+  const iter = stateFromStoresArray[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -80,8 +80,8 @@ export const getDirectoryBadges = function getDirectoryBadges(badges) {
     continue;
   }
   return { earnable, owned };
-};
-export const getUnhideableBadgeIds = function getUnhideableBadgeIds(tenureBadgeHideable) {
+}
+export function getUnhideableBadgeIds(tenureBadgeHideable) {
   let _Set1;
   const _Set = Set;
   tenureBadgeHideable = tenureBadgeHideable.tenureBadgeHideable;
@@ -98,8 +98,8 @@ export const getUnhideableBadgeIds = function getUnhideableBadgeIds(tenureBadgeH
     _Set1 = new _Set(items1);
   }
   return _Set1;
-};
-export const groupCustomizableBadges = function groupCustomizableBadges(memo) {
+}
+export function groupCustomizableBadges(memo) {
   const fixedBadges = [];
   const reorderableBadges = [];
   const hiddenBadges = [];
@@ -119,9 +119,9 @@ export const groupCustomizableBadges = function groupCustomizableBadges(memo) {
     continue;
   }
   return { fixedBadges, reorderableBadges, hiddenBadges };
-};
+}
 export { getProfileBadgeIconUrl };
-export const getProfileBadgeLabel = function getProfileBadgeLabel(description, info_label) {
+export function getProfileBadgeLabel(description, info_label) {
   if (info_label != null) {
     info_label = info_label.info_label;
   }
@@ -129,7 +129,7 @@ export const getProfileBadgeLabel = function getProfileBadgeLabel(description, i
     const obj = BadgeIdResolution;
     const tmp = require;
     if (!obj.isLegacyBadgeId(info_label.badge_id)) {
-      tmp(2033);
+      tmp(2026);
     }
     return info_label;
   }
@@ -145,8 +145,8 @@ export const getProfileBadgeLabel = function getProfileBadgeLabel(description, i
     str = "";
   }
   info_label = str;
-};
-export const getLegacyDescriptionByBadgeId = function getLegacyDescriptionByBadgeId(badges) {
+}
+export function getLegacyDescriptionByBadgeId(badges) {
   map = new Map();
   const iter = badges[Symbol.iterator]();
   const nextResult = iter.next();
@@ -165,8 +165,8 @@ export const getLegacyDescriptionByBadgeId = function getLegacyDescriptionByBadg
     continue;
   }
   return map;
-};
-export const getLegacyIconUrlByBadgeId = function getLegacyIconUrlByBadgeId(badges) {
+}
+export function getLegacyIconUrlByBadgeId(badges) {
   map = new Map();
   const iter = badges[Symbol.iterator]();
   const nextResult = iter.next();
@@ -185,8 +185,8 @@ export const getLegacyIconUrlByBadgeId = function getLegacyIconUrlByBadgeId(badg
     continue;
   }
   return map;
-};
-export const findTier = function findTier(viewerBadge, next_tier) {
+}
+export function findTier(viewerBadge, next_tier) {
   let closure_0 = next_tier;
   let found;
   if (null != next_tier) {
@@ -194,8 +194,8 @@ export const findTier = function findTier(viewerBadge, next_tier) {
     found = tiers.find((key) => key.key === next_tier);
   }
   return found;
-};
-export const getTierRowSubtitle = function getTierRowSubtitle(tier) {
+}
+export function getTierRowSubtitle(tier) {
   tier = tier.tier;
   if (!tier.isUnlocked) {
     if (tier.isViewerOnUpgradeableNitro) {
@@ -212,4 +212,4 @@ export const getTierRowSubtitle = function getTierRowSubtitle(tier) {
     str = "";
   }
   stringResult = str;
-};
+}

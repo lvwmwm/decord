@@ -1,14 +1,14 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 18037
+// Function ID: 18038
 // Name: RemoteAuthUtils
-// Dependencies: [32, 5, 1406, 17445, 2]
+// Dependencies: [32, 5, 1397, 18035, 2]
 // Exports: decodeEncodedUserRecord
 
-// Module 17447 (RemoteAuthUtils)
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17445 */;
+// Module 18037 (RemoteAuthUtils)
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18035 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1406 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -29,7 +29,7 @@ let obj = function _decodeEncodedUserRecord() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -107,6 +107,6 @@ let obj = function _decodeEncodedUserRecord() {
 };
 const result = size.fileFinishedImporting("modules/remote_auth/RemoteAuthUtils.tsx");
 
-export const decodeEncodedUserRecord = function decodeEncodedUserRecord() {
+export function decodeEncodedUserRecord() {
   return obj(...arguments);
-};
+}

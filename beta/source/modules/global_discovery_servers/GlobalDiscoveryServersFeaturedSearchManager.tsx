@@ -1,14 +1,14 @@
-// Module ID: 19420
-// Function ID: 19421
+// Module ID: 20044
+// Function ID: 20045
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 15052, 9039, 1087, 7246, 19421, 584, 1297, 1493, 19422, 7480, 2]
+// Dependencies: [5, 15597, 9076, 1072, 7287, 20045, 572, 1282, 1485, 20046, 7521, 2]
 
-// Module 19420 (GlobalDiscoveryServersFeaturedSearchManager)
-import Constants from "Constants" /* 1087 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9039 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15052 */;
+// Module 20044 (GlobalDiscoveryServersFeaturedSearchManager)
+import Constants from "Constants" /* 1072 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9076 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15597 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let categoryId, closure_1, closure_4, constants;
@@ -55,7 +55,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -139,7 +139,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
             c5 = 0;
           }
           constants = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp41) {
           closure_4 = tmp41;
           if (0 === c5) {
@@ -226,13 +226,13 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
           obj18.dispatch(obj17);
           c4 = 0;
         }
-        await "IconComponent";
+        await "HermesInternal";
         closure_1 = tmp4;
         ({ categoryId: c0, forceRefresh } = categoryId);
         if (forceRefresh === undefined) {
           forceRefresh = false;
         }
-        return "Reflect";
+        return "flexDirection";
       })();
       iter.next();
       return iter;

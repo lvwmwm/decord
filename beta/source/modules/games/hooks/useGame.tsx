@@ -1,21 +1,21 @@
-// Module ID: 7438
-// Function ID: 7439
+// Module ID: 7480
+// Function ID: 7481
 // Name: useGame
-// Dependencies: [5, 19, 2022, 1087, 504, 1104, 7439, 558, 576, 2]
+// Dependencies: [5, 19, 2014, 1072, 504, 1089, 7481, 2]
+// Exports: useGames
 
-// Module 7438 (useGame)
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import GameActionCreators from "GameActionCreators" /* 7439 */;
+// Module 7480 (useGame)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import GameActionCreators from "GameActionCreators" /* 7481 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2022 */;
+import GameStore from "GameStore" /* 2014 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c2;
+let c1, c2;
 
 const QueryIds = Constants.QueryIds;
 let obj = {
@@ -73,7 +73,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;
@@ -111,37 +111,11 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
   }
 });
 const fetchStore = createFetchStore(GameStore, obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGames(arg0) {
-  let closure_0;
-  let tmp2;
-  let tmp3;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] !== arg0) {
-    const fn = function l() {
-      let items = [
-        ...closure_0.map((item) => {
-          const items = [item];
-          return items;
-        })
-      ];
-      fetchStore.fetchMany.apply(items);
-    };
-    let items = [arg0];
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp3 = items;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = react.useEffect(tmp2, tmp3);
-}) : (function useGames(arg0) {
-  let closure_0 = arg0;
-  let items = [arg0];
+const result = size.fileFinishedImporting("modules/games/hooks/useGame.tsx");
+
+export const useGame = fetchStore;
+export function useGames(memo) {
+  let items = [memo];
   const effect = react.useEffect(() => {
     let items = [
       ...closure_0.map((item) => {
@@ -151,8 +125,4 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGames(a
     ];
     fetchStore.fetchMany.apply(items);
   }, items);
-});
-const result = size.fileFinishedImporting("modules/games/hooks/useGame.tsx");
-
-export const useGame = fetchStore;
-export const useGames = tmp6;
+}

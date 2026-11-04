@@ -1,16 +1,16 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11779
+// Function ID: 11780
 // Name: VoiceChannelEffectsStore
-// Dependencies: [5664, 584, 1104, 12, 7489, 5010, 504, 2]
+// Dependencies: [5681, 572, 1089, 12, 7530, 5021, 504, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 11476 (VoiceChannelEffectsStore)
+// Module 11779 (VoiceChannelEffectsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import shared from "shared" /* 5010 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import VoiceChannelEffectsUtils from "VoiceChannelEffectsUtils" /* 7489 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import shared from "shared" /* 5021 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import VoiceChannelEffectsUtils from "VoiceChannelEffectsUtils" /* 7530 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -122,10 +122,10 @@ const voiceChannelEffectsStore = new VoiceChannelEffectsStore(DispatcherDefault,
 const result = size.fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsStore.tsx");
 
 export default voiceChannelEffectsStore;
-export const clearVoiceChannelEffectForUser = function clearVoiceChannelEffectForUser(userId) {
+export function clearVoiceChannelEffectForUser(userId) {
   if (null != userId) {
     const obj2 = { type: "VOICE_CHANNEL_EFFECT_CLEAR", userId };
     const obj = DispatcherDefault;
     obj.dispatch(obj2);
   }
-};
+}

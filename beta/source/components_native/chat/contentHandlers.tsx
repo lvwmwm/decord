@@ -1,18 +1,18 @@
-// Module ID: 11311
-// Function ID: 11312
+// Module ID: 11614
+// Function ID: 11615
 // Name: contentHandlers
-// Dependencies: [5, 10100, 9750, 8896, 5692, 11312, 10105, 8700, 7310, 5242, 11317, 2002, 11, 4831, 1128, 7317, 5694, 5940, 9969, 2]
+// Dependencies: [5, 10181, 9831, 8944, 5709, 11615, 10187, 8750, 7351, 5258, 11620, 1994, 11, 4839, 1113, 7358, 5711, 5958, 10051, 2]
 
-// Module 11311 (contentHandlers)
+// Module 11614 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import ToastUtils from "ToastUtils" /* 5694 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
-import ClipboardUtils from "ClipboardUtils" /* 7317 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10100 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10181 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(10105);
+    let obj = parsedUserId(10187);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(2002)(11317, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(1994)(11620, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,18 +72,18 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(2002)(11317, dependencyMap.paths);
+          const tmp12 = parsedUserId(1994)(11620, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }
       }
       if (null == roleName) {
-        const DeveloperMode = tmp(4831).DeveloperMode;
+        const DeveloperMode = tmp(4839).DeveloperMode;
         if (DeveloperMode.getSetting()) {
           let obj9;
           if (null != parsedUserId) {
             const obj5 = {
-              secondaryConfirmText: intl.string(parsedUserId(1128).t["/AXYnE"]),
+              secondaryConfirmText: intl.string(parsedUserId(1113).t["/AXYnE"]),
               onConfirmSecondary() {
                         const obj = ClipboardUtils;
                         obj.copy(parsedUserId);
@@ -91,15 +91,15 @@ let obj = {
                         const result = obj2.presentCopiedToClipboard();
                       }
             };
-            intl = tmp(1128).intl;
+            intl = tmp(1113).intl;
             obj9 = obj5;
           }
-          const obj8 = { title: intl2.string(parsedUserId(1128).t.r0DLNm), body: intl3.string(parsedUserId(1128).t.Fqqbhg), confirmText: intl4.string(parsedUserId(1128).t.BddRzS), isDismissable: true };
+          const obj8 = { title: intl2.string(parsedUserId(1113).t.r0DLNm), body: intl3.string(parsedUserId(1113).t.Fqqbhg), confirmText: intl4.string(parsedUserId(1113).t.BddRzS), isDismissable: true };
           const show = AlertActionCreatorsDefault.show;
           AlertActionCreatorsDefault;
-          intl2 = tmp(1128).intl;
-          intl3 = tmp(1128).intl;
-          intl4 = tmp(1128).intl;
+          intl2 = tmp(1113).intl;
+          intl3 = tmp(1113).intl;
+          intl4 = tmp(1113).intl;
           const merged = Object.assign(obj9);
           show(obj8);
         }
@@ -125,7 +125,7 @@ let obj = {
   onTapEmoji(nativeEvent) {
     const node = nativeEvent.nativeEvent.node;
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(9969, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
+    obj.openLazy(asyncRequire(10051, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
   }
 };
 let closure_6 = _asyncToGenerator(async (arg0) => {
@@ -165,10 +165,10 @@ let closure_6 = _asyncToGenerator(async (arg0) => {
       const obj2 = closure_130_1(closure_130_3[4]);
       obj2.openURL(closure_1);
     }
-    await "IconComponent";
+    await "HermesInternal";
     closure_1 = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Reflect";
+    return "flexDirection";
   })();
   iter.next();
   return iter;
@@ -214,10 +214,10 @@ let closure_5 = _asyncToGenerator(async (arg0) => {
       }
       const result = openPlaintextFilePreview(obj);
     }
-    await "IconComponent";
+    await "HermesInternal";
     url = tmp;
     ({ attachmentUrl: c0, fileName: c1 } = nativeEvent.nativeEvent.data);
-    return "Reflect";
+    return "flexDirection";
   })();
   iter.next();
   return iter;
@@ -257,10 +257,10 @@ let closure_4 = _asyncToGenerator(async (arg0) => {
       const obj = { urlString };
       closure_130_1(closure_130_3[1])(obj);
     }
-    await "IconComponent";
+    await "HermesInternal";
     urlString = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Reflect";
+    return "flexDirection";
   })();
   iter.next();
   return iter;

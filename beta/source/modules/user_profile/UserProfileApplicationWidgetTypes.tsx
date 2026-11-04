@@ -1,11 +1,11 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7777
+// Function ID: 7778
 // Name: UserProfileApplicationWidgetTypes
-// Dependencies: [7736, 2]
+// Dependencies: [7773, 2]
 // Exports: isApplicationWidgetWithId
 
-// Module 7740 (UserProfileApplicationWidgetTypes)
-import WidgetType from "WidgetType" /* 7736 */;
+// Module 7777 (UserProfileApplicationWidgetTypes)
+import WidgetType from "WidgetType" /* 7773 */;
 import size from "module_2" /* 2 */;
 
 class ApplicationWidget {
@@ -53,6 +53,6 @@ const prototype = ApplicationWidget.prototype;
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileApplicationWidgetTypes.tsx");
 
 export { ApplicationWidget };
-export const isApplicationWidgetWithId = function isApplicationWidgetWithId(applicationId, arg1) {
+export function isApplicationWidgetWithId(applicationId, arg1) {
   return null != arg1 && applicationId instanceof ApplicationWidget && applicationId.applicationId === arg1;
-};
+}

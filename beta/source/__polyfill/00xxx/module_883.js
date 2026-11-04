@@ -1,42 +1,23 @@
 // Module ID: 883
 // Function ID: 884
-// Dependencies: [882, 692, 884]
-// Exports: useEncodePolyfill
+// Dependencies: [177]
 
 // Module 883
-import RN_GLOBAL_OBJ from "RN_GLOBAL_OBJ" /* 692 */;
-import _mod882 from "module_882" /* 882 */;
-import utf8ToBytes from "utf8ToBytes" /* 884 */;
+import _mod177 from "module_177" /* 177 */;
 
-function globalEncodeFactory(arg0) {
-  let closure_0 = arg0;
-  return (arg0) => {
-    const encoder = new TextEncoder();
-    return encoder.encode(arg0);
-  };
-}
-function encodePolyfill(arr) {
-  const obj = utf8ToBytes;
-  const uint8Array = new Uint8Array(obj.utf8ToBytes(arr));
-  return uint8Array;
-}
-
-export const useEncodePolyfill = () => {
-  const obj = _mod882;
-  const sentryCarrier = obj.getSentryCarrier();
-  if (RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.TextEncoder) {
-    if (typeof globalEncodeFactory === "function") {
-      const TextEncoder = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.TextEncoder;
-      sentryCarrier.encodePolyfill = (arg0) => {
-        const encoder = new TextEncoder();
-        return encoder.encode(arg0);
-      };
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    sentryCarrier.encodePolyfill = encodePolyfill;
+_mod177.prototype.done = function(arg0, arg1) {
+  const self = this;
+  let self2 = this;
+  if (arguments.length) {
+    const then = self.then;
+    self2 = then(...arguments);
   }
+  self2.then(null, (arg0) => {
+    let closure_0 = arg0;
+    const timerId = setTimeout(() => {
+      throw closure_0;
+    }, 0);
+  });
 };
-export { globalEncodeFactory };
-export { encodePolyfill };
+
+export default _mod177;

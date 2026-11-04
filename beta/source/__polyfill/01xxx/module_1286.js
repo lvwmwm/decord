@@ -3,5 +3,16 @@
 // Dependencies: []
 
 // Module 1286
+let obj2;
+const re1 = /%20/g;
+const obj = { default: "RFC3986", formatters: obj2, RFC1738: "RFC1738", RFC3986: "RFC3986" };
+obj2 = {
+  RFC1738(arg0) {
+    return replace.call(arg0, re1, "+");
+  },
+  RFC3986(arg0) {
+    return String(arg0);
+  }
+};
 
-export default /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+export default obj;

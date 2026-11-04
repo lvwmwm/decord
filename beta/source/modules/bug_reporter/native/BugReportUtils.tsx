@@ -1,10 +1,10 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 11089
+// Function ID: 11090
 // Name: BugReportUtils
-// Dependencies: [5, 3, 1281, 8186, 1257, 2]
+// Dependencies: [5, 3, 1266, 8220, 1242, 2]
 // Exports: getAttachments
 
-// Module 13819 (BugReportUtils)
+// Module 11089 (BugReportUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let obj = function _getAttachments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -137,6 +137,6 @@ const tmp2 = new LoggerDefault("BugReportUtils.tsx");
 let closure_4 = tmp2;
 const result = size.fileFinishedImporting("modules/bug_reporter/native/BugReportUtils.tsx");
 
-export const getAttachments = function getAttachments() {
+export function getAttachments() {
   return obj(...arguments);
-};
+}

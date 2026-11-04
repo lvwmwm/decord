@@ -9,7 +9,7 @@ import _mod131 from "module_131" /* 131 */;
 let closure_2;
 
 
-export const getElementSibling = function getElementSibling(parentNode, next) {
+export function getElementSibling(parentNode, next) {
   parentNode = parentNode.parentNode;
   if (null == parentNode) {
     return null;
@@ -52,4 +52,4 @@ export const getElementSibling = function getElementSibling(parentNode, next) {
       return tmp8;
     }
   }
-};
+}

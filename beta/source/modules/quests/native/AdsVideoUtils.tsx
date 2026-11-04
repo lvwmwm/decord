@@ -1,17 +1,17 @@
-// Module ID: 16350
-// Function ID: 16351
+// Module ID: 16944
+// Function ID: 16945
 // Name: AdsVideoUtils
-// Dependencies: [1384, 2]
+// Dependencies: [1375, 2]
 // Exports: isSourceError
 
-// Module 16350 (AdsVideoUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+// Module 16944 (AdsVideoUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [-1000, -1003, -1004, -1008];
 const result = size.fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
 
-export const isSourceError = function isSourceError(error) {
+export function isSourceError(error) {
   let code;
   let errorException;
   let isIOSResult;
@@ -37,4 +37,4 @@ export const isSourceError = function isSourceError(error) {
     }
   }
   return isIOSResult;
-};
+}

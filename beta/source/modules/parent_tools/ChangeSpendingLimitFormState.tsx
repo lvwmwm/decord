@@ -1,15 +1,15 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16812
+// Function ID: 16813
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7677, 16144, 504, 7372, 16146, 2]
+// Dependencies: [5, 32, 19, 7715, 16722, 504, 7414, 16724, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 16234 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16146 */;
+// Module 16812 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16724 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7677 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ let _require, c4, closure_2, closure_5;
 
 const result = size.fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
 
-export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFormState(teenId) {
+export function useChangeSpendingLimitFormState(teenId) {
   let callback1;
   let controlledSetting;
   let tmp12;
@@ -119,7 +119,7 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -155,7 +155,7 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (1 === controlledSetting) {
           c3 = 0;
@@ -205,4 +205,4 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
     tmp24 = rounded <= stateFromStores1;
   }
   return obj4;
-};
+}

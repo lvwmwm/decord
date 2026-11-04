@@ -1,11 +1,11 @@
-// Module ID: 5226
-// Function ID: 5227
+// Module ID: 5242
+// Function ID: 5243
 // Name: GuildMemberCountStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 5226 (GuildMemberCountStore)
+// Module 5242 (GuildMemberCountStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function handleInviteData(invite) {

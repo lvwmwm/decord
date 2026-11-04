@@ -1,11 +1,11 @@
-// Module ID: 10597
-// Function ID: 10598
+// Module ID: 10679
+// Function ID: 10680
 // Name: OrderUtils
-// Dependencies: [5, 5730, 7573, 2]
+// Dependencies: [5, 5747, 7614, 2]
 // Exports: discardDraftOrder
 
-// Module 10597 (OrderUtils)
-import PaymentConstants from "PaymentConstants" /* 5730 */;
+// Module 10679 (OrderUtils)
+import PaymentConstants from "PaymentConstants" /* 5747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,15 +60,15 @@ let obj = function _discardDraftOrder() {
     } else {
       c4 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     ({ checkoutSucceeded: c0, order: c1 } = closure_0);
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 const OrderStatus = PaymentConstants.OrderStatus;
 const result = size.fileFinishedImporting("modules/checkout/utils/OrderUtils.native.tsx");
 
-export const discardDraftOrder = function discardDraftOrder() {
+export function discardDraftOrder() {
   return obj(...arguments);
-};
+}

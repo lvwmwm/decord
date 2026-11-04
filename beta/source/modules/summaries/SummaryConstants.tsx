@@ -1,12 +1,12 @@
-// Module ID: 10042
-// Function ID: 10043
+// Module ID: 10123
+// Function ID: 10124
 // Name: SummaryConstants
-// Dependencies: [1104, 1128, 2]
+// Dependencies: [1089, 1113, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 10042 (SummaryConstants)
-import DurationsDefault from "Durations" /* 1104 */;
-import intl7 from "intl" /* 1128 */;
+// Module 10123 (SummaryConstants)
+import DurationsDefault from "Durations" /* 1089 */;
+import intl7 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const SummaryFeedbackReasons = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };
@@ -17,7 +17,7 @@ export const SUMMARY_POLL_INTERVAL = result;
 export const SummariesSidebarToggledSource = { TOOLBAR_BUTTON: "toolbar button", PILL: "pill" };
 export const SummariesTopicClickedSource = { SIDEBAR: "sidebar", PILL_DROPDOWN: "pill dropdown", PILL_NEXT_ARROW: "pill next arrow", PILL_PREVIOUS_ARROW: "pill previous arrow" };
 export { SummaryFeedbackReasons };
-export const getSummaryFeedbackReasons = function getSummaryFeedbackReasons() {
+export function getSummaryFeedbackReasons() {
   let intl;
   let intl2;
   let intl3;
@@ -44,4 +44,4 @@ export const getSummaryFeedbackReasons = function getSummaryFeedbackReasons() {
   intl6 = intl7.intl;
   items[5] = obj6;
   return items;
-};
+}

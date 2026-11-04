@@ -1,20 +1,20 @@
-// Module ID: 6055
-// Function ID: 6056
+// Module ID: 6074
+// Function ID: 6075
 // Name: CheckpointMessageComponentUtils
-// Dependencies: [11, 1128, 6056, 1385, 4949, 2]
+// Dependencies: [11, 1113, 6075, 1376, 4960, 2]
 // Exports: transformCheckpoint2025CardComponent, transformCheckpoint2025CardToRowGeneratedComponent
 
-// Module 6055 (CheckpointMessageComponentUtils)
+// Module 6074 (CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl from "intl" /* 1128 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
-import CheckpointUtils from "CheckpointUtils" /* 6056 */;
+import intl from "intl" /* 1113 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1376 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import CheckpointUtils from "CheckpointUtils" /* 6075 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/checkpoint/2025/CheckpointMessageComponentUtils.tsx");
 
-export const transformCheckpoint2025CardComponent = function transformCheckpoint2025CardComponent(checkpoint_data) {
+export function transformCheckpoint2025CardComponent(checkpoint_data) {
   let emoji_name;
   let tmp;
   let tmp2;
@@ -46,8 +46,8 @@ export const transformCheckpoint2025CardComponent = function transformCheckpoint
     const obj5 = { applicationId: checkpoint_data.top_game.application_id, applicationName: checkpoint_data.top_game.application_name, applicationImageId: checkpoint_data.top_game.application_image_id };
   }
   return obj;
-};
-export const transformCheckpoint2025CardToRowGeneratedComponent = function transformCheckpoint2025CardToRowGeneratedComponent(checkpointData, message) {
+}
+export function transformCheckpoint2025CardToRowGeneratedComponent(checkpointData, message) {
   let checkpointPowerBarUnits;
   let format;
   let min;
@@ -99,4 +99,4 @@ export const transformCheckpoint2025CardToRowGeneratedComponent = function trans
     tmp7 = obj3;
   }
   return obj;
-};
+}

@@ -1,25 +1,25 @@
-// Module ID: 19190
-// Function ID: 19191
+// Module ID: 19823
+// Function ID: 19824
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 4877, 4935, 1392, 9038, 1087, 21, 5003, 587, 504, 7176, 4831, 6859, 6862, 9037, 6935, 1202, 6944, 1128, 7317, 5694, 7322, 7166, 19191, 7177, 8755, 7182, 5624, 2]
+// Dependencies: [32, 19, 17, 4885, 4946, 1383, 9075, 1072, 21, 5014, 575, 504, 7217, 4839, 6899, 6902, 9074, 6975, 1187, 6984, 1113, 7358, 5711, 7363, 7208, 19824, 7218, 8805, 7223, 5606, 2]
 // Exports: default
 
-// Module 19190 (GuildSettingsModalBans)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6859 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7322 */;
+// Module 19823 (GuildSettingsModalBans)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1113 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6899 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7363 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9038 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let bans, bansVersion, props;

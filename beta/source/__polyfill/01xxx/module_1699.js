@@ -1,50 +1,18 @@
 // Module ID: 1699
 // Function ID: 1700
-// Dependencies: [1661, 1695]
-// Exports: isReducedMotionEnabledInSystem
+// Dependencies: []
+// Exports: isSharedValue
 
 // Module 1699
-import module_1661 from "module_1661" /* 1661 */;
-import module_1695_mod from "module_1695" /* 1695 */;
-
-let module_1695;
-let prop;
-if (module_1661.isWeb()) {
-  const _module1 = module_1661;
-  let matches = _module1.isWindowAvailable();
-  if (matches) {
-    let _window = window;
-    matches = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  }
-  prop = matches;
-} else {
-  prop = global._REANIMATED_IS_REDUCED_MOTION;
-}
-const ReducedMotionManager = {
-  jsValue: prop,
-  uiValue: module_1695.makeMutable(prop),
-  setEnabled(jsValue) {
-    obj.jsValue = jsValue;
-    obj.uiValue.value = jsValue;
-  }
-};
-function isReducedMotionEnabledInSystem() {
+function isSharedValue(iter) {
   let prop;
-  const obj = module_1661;
-  if (obj.isWeb()) {
-    const tmpResult = module_1661;
-    let matches = tmpResult.isWindowAvailable();
-    if (matches) {
-      const _window = window;
-      matches = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    }
-    prop = matches;
-  } else {
-    prop = global._REANIMATED_IS_REDUCED_MOTION;
+  if (iter != null) {
+    prop = iter._isReanimatedSharedValue;
   }
-  return prop;
+  return true === prop;
 }
-module_1695 = module_1695_mod;
+isSharedValue.__closure = {};
+isSharedValue.__workletHash = 8230330706259;
+isSharedValue.__initData = { code: "function isSharedValue_Pnpm_isSharedValueTs1(value){return(value===null||value===void 0?void 0:value._isReanimatedSharedValue)===true;}" };
 
-export { isReducedMotionEnabledInSystem };
-export { ReducedMotionManager };
+export { isSharedValue };

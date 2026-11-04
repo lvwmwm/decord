@@ -1,20 +1,20 @@
-// Module ID: 7544
-// Function ID: 7545
+// Module ID: 7586
+// Function ID: 7587
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2058, 1087, 1394, 5941, 1128, 1267, 6495, 7545, 7550, 7551, 7552, 7553, 2053, 2]
+// Dependencies: [5, 2052, 1072, 1385, 5959, 1113, 1252, 6535, 7587, 7592, 7593, 7594, 2047, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7544 (GuildBoostPurchasingUtils)
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+// Module 7586 (GuildBoostPurchasingUtils)
+import intl3 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import Constants from "Constants" /* 1087 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
-let analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
+let allowYearlyBundles, analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
 
 let c10;
 let c9;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -65,7 +65,6 @@ let obj = function _launchGuildBoostFlowOrAlert() {
           let externalManagementMessage;
           let c8;
           let productIdFromSubscription;
-          let mobileBoostingEnabled;
           c6 = 2;
           if (0 === onPaymentDismiss) {
             if (arg0 === 1) {
@@ -87,10 +86,10 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               externalManagementMessage = undefined;
               c8 = undefined;
               productIdFromSubscription = undefined;
-              mobileBoostingEnabled = undefined;
+              allowYearlyBundles = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {
@@ -120,12 +119,12 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                       c8 = null;
                       if (null != premiumTypeSubscription) {
                         onPaymentSuccess = 1;
-                        const obj11 = closure_131_0(closure_131_2[9]);
-                        productIdFromSubscription = obj11.getProductIdFromSubscription(premiumTypeSubscription, true);
-                        const tmp88 = closure_131_0(closure_131_2[10]).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+                        const obj10 = closure_131_0(closure_131_2[9]);
+                        productIdFromSubscription = obj10.getProductIdFromSubscription(premiumTypeSubscription, true);
+                        const tmp82 = closure_131_0(closure_131_2[10]).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
                         let interval;
-                        if (tmp88 != null) {
-                          interval = tmp88.interval;
+                        if (tmp82 != null) {
+                          interval = tmp82.interval;
                         }
                         analyticsLocations = interval;
                         if (interval == null) {
@@ -144,14 +143,14 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;
                 let num3 = 1;
                 c6 = 1;
-                const obj9 = { value: obj2.fetchSubscriptions(), done: false };
-                return obj9;
+                const obj8 = { value: obj2.fetchSubscriptions(), done: false };
+                return obj8;
               }
             } else if (2 === onPaymentDismiss) {
               if (arg0 === 1) {
@@ -167,17 +166,16 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               onPaymentSuccess = 0;
               c8 = null;
             }
-            const obj5 = closure_131_0(closure_131_2[11]);
-            mobileBoostingEnabled = obj5.getMobileBoostingEnabled("GuildBoostPurchasing") && c8 === closure_131_10.YEAR;
-            const obj10 = {
+            allowYearlyBundles = c8 === closure_131_10.YEAR;
+            const obj9 = {
               showCurrentPlan: false,
               isBoostPurchaseFlow: true,
-              allowYearlyBundles: mobileBoostingEnabled,
+              allowYearlyBundles,
               predicate(interval) {
                       let tmp = !closure_1_10;
                       if (closure_1_10) {
-                        tmp = !(interval.interval !== constants.YEAR || interval.numPremiumGuild > 5);
-                        const tmp3 = interval.interval !== constants.YEAR || interval.numPremiumGuild > 5;
+                        tmp = !(interval.interval !== allowYearlyBundles.YEAR || interval.numPremiumGuild > 5);
+                        const tmp3 = interval.interval !== allowYearlyBundles.YEAR || interval.numPremiumGuild > 5;
                       }
                       if (tmp) {
                         let num2 = 0;
@@ -188,9 +186,9 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                         let num3 = 0;
                         const sum = numPremiumGuild + num2;
                         if (null != closure_1_6) {
-                          obj = analyticsLocation(guildId[13]);
+                          obj = analyticsLocation(guildId[12]);
                           const numPremiumGuildSubscriptions = obj.getNumPremiumGuildSubscriptions(closure_1_6.additionalPlans);
-                          const obj2 = c1(guildId[13]);
+                          const obj2 = c1(guildId[12]);
                           num3 = numPremiumGuildSubscriptions + obj2.getNumIncludedPremiumGuildSubscriptionSlots(closure_1_6.planId);
                         }
                         tmp = sum > num3;
@@ -204,13 +202,13 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               onPaymentSuccess,
               onPaymentDismiss
             };
-            const obj6 = closure_131_0(closure_131_2[12]);
-            const result = obj6.launchPremiumPlanSelect(obj10);
+            const obj5 = closure_131_0(closure_131_2[11]);
+            const result = obj5.launchPremiumPlanSelect(obj9);
           }
-        } catch (tmp70) {
+        } catch (tmp64) {
           if (0 === onPaymentSuccess) {
             c6 = 3;
-            throw tmp70;
+            throw tmp64;
           } else {
             onPaymentDismiss = 3;
           }
@@ -226,6 +224,6 @@ let obj = function _launchGuildBoostFlowOrAlert() {
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportAll, PremiumTypes: c9, SubscriptionIntervalTypes: c10 } = PremiumConstants);
 let result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
 
-export const launchGuildBoostFlowOrAlert = function launchGuildBoostFlowOrAlert() {
+export function launchGuildBoostFlowOrAlert() {
   return obj(...arguments);
-};
+}

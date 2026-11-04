@@ -1,13 +1,13 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10966
+// Function ID: 10967
 // Name: conjureSmartContextConnection
-// Dependencies: [584, 10818, 10751, 2]
+// Dependencies: [572, 10941, 10874, 2]
 // Exports: sendSmartContext, undoContextSwitch
 
-// Module 10843 (conjureSmartContextConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10818 */;
+// Module 10966 (conjureSmartContextConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10941 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -34,13 +34,13 @@ let obj = {
 let result = size.fileFinishedImporting("modules/conjure/contexts/conjureSmartContextConnection.tsx");
 
 export const smartContextFrameHandlers = obj;
-export const undoContextSwitch = function undoContextSwitch(projectId, id) {
+export function undoContextSwitch(projectId, id) {
   let closure_0 = id;
   const obj = conjureProjectSockets;
   return obj.sendOnConjureSocket(projectId, "undo context switch", (sendUndoContextSwitch) => sendUndoContextSwitch.sendUndoContextSwitch(closure_0));
-};
-export const sendSmartContext = function sendSmartContext(projectId, arg1) {
+}
+export function sendSmartContext(projectId, arg1) {
   let closure_0 = arg1;
   const obj = conjureProjectSockets;
   return obj.sendOnConjureSocket(projectId, "smart context", (sendSmartContext) => sendSmartContext.sendSmartContext(closure_0));
-};
+}

@@ -1,22 +1,44 @@
-// Module ID: 18471
-// Function ID: 18472
+// Module ID: 19102
+// Function ID: 19103
 // Name: getFrameIFrameQueryParams
-// Dependencies: [18472, 11493, 18473, 2]
-// Exports: default
+// Dependencies: [11796, 19103, 19104, 19105, 2]
+// Exports: default, useFrameIFrameQueryParams
 
-// Module 18471 (getFrameIFrameQueryParams)
-import DiscordEnvironment from "DiscordEnvironment" /* 11493 */;
-import getFrameLaunchContextQueryParamsDefault from "getFrameLaunchContextQueryParams" /* 18472 */;
-import getFrameSurfaceQueryParamsDefault from "getFrameSurfaceQueryParams" /* 18473 */;
+// Module 19102 (getFrameIFrameQueryParams)
+import DiscordEnvironment from "DiscordEnvironment" /* 11796 */;
+import getFrameLaunchContextQueryParamsDefault from "getFrameLaunchContextQueryParams" /* 19103 */;
+import getFrameSurfaceQueryParamsDefault from "getFrameSurfaceQueryParams" /* 19104 */;
+import react from "react" /* 19105 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/getFrameIFrameQueryParams.tsx");
 
 export default function getFrameIFrameQueryParams(data, platform) {
-  const obj = { instance_id: "example-cl-instance", platform, discord_proxy_ticket: data.data.proxyTicket };
+  let discordEnvQueryParams = arg2;
+  if (arg2 === undefined) {
+    const obj = DiscordEnvironment;
+    discordEnvQueryParams = obj.getDiscordEnvQueryParams();
+  }
+  const obj2 = { instance_id: "example-cl-instance", platform, discord_proxy_ticket: data.data.proxyTicket };
   const merged = Object.assign(getFrameLaunchContextQueryParamsDefault(data.data));
-  const obj2 = DiscordEnvironment;
-  const merged1 = Object.assign(obj2.getDiscordEnvQueryParams());
+  const merged1 = Object.assign(discordEnvQueryParams);
   const merged2 = Object.assign(getFrameSurfaceQueryParamsDefault(data.surface));
-  return obj;
+  return obj2;
 };
+export function useFrameIFrameQueryParams(data, platform) {
+  let obj = react;
+  const items = [data.data.url];
+  let memoOne = obj.useMemoOne(() => {
+    const obj = DiscordEnvironment;
+    return obj.getDiscordEnvQueryParams();
+  }, items);
+  if (memoOne === undefined) {
+    const tmpResult = DiscordEnvironment;
+    memoOne = tmpResult.getDiscordEnvQueryParams();
+  }
+  const obj2 = { instance_id: "example-cl-instance", platform, discord_proxy_ticket: data.data.proxyTicket };
+  const merged = Object.assign(getFrameLaunchContextQueryParamsDefault(data.data));
+  const merged1 = Object.assign(memoOne);
+  const merged2 = Object.assign(getFrameSurfaceQueryParamsDefault(data.surface));
+  return obj2;
+}

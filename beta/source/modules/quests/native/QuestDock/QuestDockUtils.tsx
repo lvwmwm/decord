@@ -1,14 +1,14 @@
-// Module ID: 16474
-// Function ID: 16475
+// Module ID: 17071
+// Function ID: 17072
 // Name: QuestDockUtils
-// Dependencies: [17, 16475, 1104, 5279, 2]
+// Dependencies: [17, 17072, 1089, 5637, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 16474 (QuestDockUtils)
+// Module 17071 (QuestDockUtils)
 import react_native from "react-native" /* 17 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import spring from "spring" /* 5279 */;
-import QuestDockConstants from "QuestDockConstants" /* 16475 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import spring from "spring" /* 5637 */;
+import QuestDockConstants from "QuestDockConstants" /* 17072 */;
 import size_mod from "module_2" /* 2 */;
 
 const PixelRatio = react_native.PixelRatio;
@@ -83,12 +83,12 @@ export { getQuestDockExpandedHeightLimits };
 export { getQuestDockCollapsedWidth };
 export { getQuestDockExpandedWidth };
 export { getQuestDockClosedWidth };
-export const isSoftDismissed = function isSoftDismissed(questDockSoftDismissedAt) {
+export function isSoftDismissed(questDockSoftDismissedAt) {
   let tmp = null != questDockSoftDismissedAt;
   if (tmp) {
     const _Date = Date;
     tmp = Date.now() - questDockSoftDismissedAt < closure_7;
   }
   return tmp;
-};
+}
 export { dimensionsLayoutTransition };

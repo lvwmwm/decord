@@ -1,10 +1,10 @@
 // Module ID: 18135
 // Function ID: 18136
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 18135 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "455a164c9b4dae0f0a0a75aaf6c4170d", name: "ic_headset_neutral", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 64, height: 64, scales: [1], hash: "99c427c3b3ea910fa2d3aeb72dd0f935", name: "game-empty-state-controller", type: "png" });

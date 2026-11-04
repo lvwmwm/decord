@@ -1,30 +1,29 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 15227
+// Function ID: 15228
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 7538, 1087, 14683, 21, 5941, 14684, 11, 14686, 2]
+// Dependencies: [19, 7579, 15228, 21, 5959, 15229, 2046, 11, 15231, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 14682 (premiumOrbsDeliveredModal)
+// Module 15227 (premiumOrbsDeliveredModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 14683 */;
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 14686 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 15228 */;
+import NitroOrbsDeliveredModalDefault from "NitroOrbsDeliveredModal" /* 15229 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 15231 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7538 */;
+import EntitlementStore from "EntitlementStore" /* 7579 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
 
 function getCoinEntitlements() {
   return EntitlementStore.getForSku(SINGLE_ORB_SKU_ID);
 }
-const EntitlementTypes = Constants.EntitlementTypes;
 const SINGLE_ORB_SKU_ID = VirtualCurrencyConstants.SINGLE_ORB_SKU_ID;
 const jsx = Fragment.jsx;
 let obj = null;
 const result = size.fileFinishedImporting("modules/premium/premium_marketing/native/premiumOrbsDeliveredModal.tsx");
 
-export const anchorOrbsPurchaseStart = function anchorOrbsPurchaseStart() {
+export function anchorOrbsPurchaseStart() {
   let _Set1;
   let items;
   const forSku = EntitlementStore.getForSku(SINGLE_ORB_SKU_ID);
@@ -37,9 +36,8 @@ export const anchorOrbsPurchaseStart = function anchorOrbsPurchaseStart() {
     items = Array.from(forSku, (id) => id.id);
   }
   _Set1 = new _Set(items);
-};
-export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
-  let closure_0;
+}
+export function openOrbsModalIfDelivered() {
   let tmp;
   function getDeliveredOrbsAmount(knownCoinEntitlementIds) {
     const tmp = getCoinEntitlements();
@@ -48,10 +46,11 @@ export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
     } else {
       for (const item10008 of tmp) {
         let tmp3 = item10008;
-        if (item10008.type === constants.PURCHASE_REWARD) {
+        let tmp5 = dependencyMap;
+        if (item10008.type === closure_0(dependencyMap[6]).EntitlementTypes.PURCHASE_REWARD) {
           knownCoinEntitlementIds = knownCoinEntitlementIds.knownCoinEntitlementIds;
           if (!knownCoinEntitlementIds.has(tmp3.id)) {
-            obj = closure_0(dependencyMap[7]);
+            obj = require("SnowflakeUtils");
             if (obj.extractTimestamp(tmp3.id) >= knownCoinEntitlementIds.startedAt) {
               if (null != tmp3.orbsReward) {
                 if (tmp3.orbsReward > 0) {
@@ -76,17 +75,17 @@ export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
     if (obj.getConfig({ location: "premiumOrbsDeliveredModal" })) {
       let tmp4 = getDeliveredOrbsAmount(tmp);
       if (null != tmp4) {
-        importDefault = tmp4;
+        let closure_0 = tmp4;
         const obj2 = {
           importer() {
                   let orbsAmount;
-                  return Promise.resolve((onClose) => jsx(orbsAmount(dependencyMap[6]), { orbsAmount, onClose: onClose.onClose }));
+                  return Promise.resolve((onClose) => jsx(NitroOrbsDeliveredModalDefault, { orbsAmount, onClose: onClose.onClose }));
                 },
           isDismissable: false
         };
-        const tmp2Result = tmp2(5941);
+        const tmp2Result = tmp2(5959);
         tmp2Result.openLazy(obj2);
       }
     }
   }
-};
+}

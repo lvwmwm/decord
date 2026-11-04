@@ -1,64 +1,21 @@
-// Module ID: 13300
-// Function ID: 13301
+// Module ID: 13931
+// Function ID: 13932
 // Name: useIsHubForGuild
-// Dependencies: [4877, 1087, 558, 576, 504, 2]
+// Dependencies: [4885, 1072, 504, 2]
+// Exports: default
 
-// Module 13300 (useIsHubForGuild)
-import Constants from "Constants" /* 1087 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13931 (useIsHubForGuild)
+import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHubForGuild(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      if (null == closure_0) {
-        return false;
-      } else {
-        const guild = GuildStore.getGuild(tmp);
-        let flag;
-        if (guild != null) {
-          const features = guild.features;
-          flag = features.has(GuildFeatures.HUB);
-        }
-        if (flag == null) {
-          flag = false;
-        }
-        return flag;
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useIsHubForGuild(arg0) {
+const result = size.fileFinishedImporting("modules/hub/useIsHubForGuild.tsx");
+
+export default function useIsHubForGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -80,7 +37,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHubFo
       return flag;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/hub/useIsHubForGuild.tsx");
-
-export default tmp2;
+};

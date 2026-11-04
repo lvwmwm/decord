@@ -1,28 +1,28 @@
-// Module ID: 6499
-// Function ID: 6500
+// Module ID: 6539
+// Function ID: 6540
 // Name: CaptchaStore
-// Dependencies: [32, 570, 1274, 6500, 6505, 2]
+// Dependencies: [32, 560, 1259, 6540, 6545, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 6499 (CaptchaStore)
-import react_native from "react-native" /* 1274 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6500 */;
-import MetricEvents from "MetricEvents" /* 6505 */;
+// Module 6539 (CaptchaStore)
+import react_native from "react-native" /* 1259 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
+import MetricEvents from "MetricEvents" /* 6545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import module_570 from "module_570" /* 570 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useCaptchaStore = module_570.create(() => ({ captchaServeVolume: {} }));
+const useCaptchaStore = module_560.create(() => ({ captchaServeVolume: {} }));
 const result = size.fileFinishedImporting("modules/captcha/CaptchaStore.tsx");
 
 export { useCaptchaStore };
-export const isCaptchaStoreVolumeEmpty = function isCaptchaStoreVolumeEmpty() {
+export function isCaptchaStoreVolumeEmpty() {
   return 0 === Object.keys(obj.getState().captchaServeVolume).length;
-};
-export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(arg0) {
+}
+export function incrementCaptchaServeVolume(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -50,8 +50,8 @@ export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(
       return tmp2;
     });
   });
-};
-export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
+}
+export function flushCaptchaServeVolume() {
   let items;
   let obj;
   let state;
@@ -72,4 +72,4 @@ export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
   }
   const obj2 = react_native;
   obj2.batchUpdates(() => state.setState({ captchaServeVolume: {} }));
-};
+}

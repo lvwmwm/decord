@@ -1,24 +1,21 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10112
+// Function ID: 10113
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 5732, 5749, 1087, 7794, 7841, 558, 576, 10032, 7399, 5735, 7840, 10033, 10034, 5733, 2]
-// Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking
+// Dependencies: [19, 5749, 5767, 1072, 7832, 7879, 10113, 7441, 5752, 7878, 10114, 10115, 5750, 2]
+// Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 10031 (MessageImpressionAnalyticsHelpers)
-import react2 from "react" /* 576 */;
-import CodedLink from "CodedLink" /* 5735 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7399 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7794 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7840 */;
-import Constants2 from "Constants" /* 7841 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10032 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10033 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10034 */;
+// Module 10112 (MessageImpressionAnalyticsHelpers)
+import CodedLink from "CodedLink" /* 5752 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7832 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7878 */;
+import Constants2 from "Constants" /* 7879 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10113 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10114 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10115 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5732 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5749 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import InviteStore from "InviteStore" /* 5749 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,66 +68,9 @@ function getVoiceInviteEmbedRenderInfo(state) {
 ({ ChannelTypes: metroRequire, GuildFeatures: metroImportDefault, InviteStates: metroImportAll, MessageFlags: c9 } = Constants);
 const LinkType = MessageEmbedConstants.LinkType;
 const InviteTypes = Constants2.InviteTypes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackAnnouncementMessageViews(arg0) {
-  let channel;
-  let guild;
-  let isMessagesReady;
-  let messages;
-  let tmp4;
-  const obj = channel(576);
-  const cResult = obj.c(6);
-  ({ guild, channel } = arg0);
-  ({ messages, isMessagesReady } = arg0);
-  let features1;
-  const first = cResult[0];
-  if (guild != null) {
-    features1 = guild.features;
-  }
-  if (first !== features1) {
-    let flag;
-    if (guild != null) {
-      const features = guild.features;
-      if (features != null) {
-        flag = features.has(constants2.COMMUNITY);
-      }
-    }
-    if (flag == null) {
-      flag = false;
-    }
-    let features2;
-    if (guild != null) {
-      features2 = guild.features;
-    }
-    cResult[0] = features2;
-    cResult[1] = flag;
-    tmp4 = flag;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let tmp7 = channel.type === constants.GUILD_ANNOUNCEMENT && tmp4;
-  if (cResult[2] === channel.guild_id) {
-    if (cResult[3] === isMessagesReady) {
-      let tmp8;
-      if (cResult[4] === messages) {
-        tmp8 = cResult[5];
-      }
-      if (!tmp7) {
-        tmp7 = tmp8;
-      }
-      return tmp7;
-    }
-  }
-  const tmp9 = isMessagesReady && messages.some((messageReference) => {
-    const hasFlagResult = null != messageReference.messageReference && null != messageReference.webhookId && messageReference.hasFlag(constants.IS_CROSSPOST) && null != channel.guild_id;
-    return hasFlagResult;
-  });
-  cResult[2] = channel.guild_id;
-  cResult[3] = isMessagesReady;
-  cResult[4] = messages;
-  cResult[5] = tmp9;
-  tmp8 = tmp9;
-}) : (function useShouldTrackAnnouncementMessageViews(messages) {
+let result = size.fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
+
+export function useShouldTrackAnnouncementMessageViews(messages) {
   let channel;
   let guild;
   ({ guild, channel } = messages);
@@ -167,27 +107,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTra
     }
     return tmp;
   }, items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackRichPresenceInviteEmbedViews(arg0) {
-  let isMessagesReady;
-  let messages;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ messages, isMessagesReady } = arg0);
-  if (cResult[0] === isMessagesReady) {
-    let tmp2;
-    if (cResult[1] === messages) {
-      tmp2 = cResult[2];
-    }
-    return tmp2;
-  }
-  const tmp3 = isMessagesReady && messages.some((activity) => null != activity.activity && null != activity.activity.party_id && null != activity.application);
-  cResult[0] = isMessagesReady;
-  cResult[1] = messages;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : (function useShouldTrackRichPresenceInviteEmbedViews(messages) {
+}
+export function useShouldTrackRichPresenceInviteEmbedViews(messages) {
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
   const items = [messages, isMessagesReady];
@@ -195,101 +116,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTra
     const someResult = isMessagesReady && messages.some((activity) => null != activity.activity && null != activity.activity.party_id && null != activity.application);
     return someResult;
   }, items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackOfficialMessageViews(arg0) {
-  let guild;
-  let isMessagesReady;
-  let messages;
-  const obj = react2;
-  const cResult = obj.c(4);
-  ({ guild, messages, isMessagesReady } = arg0);
-  let id;
-  const useIsGuildOfficialMessagesEnabled = GuildOfficialMessageUtils.useIsGuildOfficialMessagesEnabled;
-  GuildOfficialMessageUtils;
-  if (guild != null) {
-    id = guild.id;
-  }
-  if (id == null) {
-    id = null;
-  }
-  const isGuildOfficialMessagesEnabled = useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
-  if (cResult[0] === isMessagesReady) {
-    if (cResult[1] === isGuildOfficialMessagesEnabled) {
-      let tmp5;
-      if (cResult[2] === messages) {
-        tmp5 = cResult[3];
-      }
-      return tmp5;
-    }
-  }
-  const tmp6 = isGuildOfficialMessagesEnabled && isMessagesReady && messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
-  cResult[0] = isMessagesReady;
-  cResult[1] = isGuildOfficialMessagesEnabled;
-  cResult[2] = messages;
-  cResult[3] = tmp6;
-  tmp5 = tmp6;
-}) : (function useShouldTrackOfficialMessageViews(isMessagesReady) {
-  let guild;
-  let messages;
-  ({ guild, messages } = isMessagesReady);
-  isMessagesReady = isMessagesReady.isMessagesReady;
-  let isGuildOfficialMessagesEnabled;
-  let id;
-  const useIsGuildOfficialMessagesEnabled = messages(isGuildOfficialMessagesEnabled[9]).useIsGuildOfficialMessagesEnabled;
-  messages(isGuildOfficialMessagesEnabled[9]);
-  if (guild != null) {
-    id = guild.id;
-  }
-  if (id == null) {
-    id = null;
-  }
-  isGuildOfficialMessagesEnabled = useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
-  const items = [isGuildOfficialMessagesEnabled, isMessagesReady, messages];
-  return react.useMemo(() => {
-    const someResult = isGuildOfficialMessagesEnabled && isMessagesReady && messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
-    return someResult;
-  }, items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackVoiceInviteEmbedViews(arg0) {
-  let isMessagesReady;
-  let messages;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ messages, isMessagesReady } = arg0);
-  if (cResult[0] === isMessagesReady) {
-    let tmp2;
-    if (cResult[1] === messages) {
-      tmp2 = cResult[2];
-    }
-    return tmp2;
-  }
-  const tmp3 = isMessagesReady && messages.some((codedLinks) => {
-    codedLinks = codedLinks.codedLinks;
-    return codedLinks.some((type) => type.type === closure_1_0(closure_1_2[10]).CodedLinkType.INVITE);
-  });
-  cResult[0] = isMessagesReady;
-  cResult[1] = messages;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : (function useShouldTrackVoiceInviteEmbedViews(messages) {
-  messages = messages.messages;
-  const isMessagesReady = messages.isMessagesReady;
-  const items = [messages, isMessagesReady];
-  return react.useMemo(() => {
-    const someResult = isMessagesReady && messages.some((codedLinks) => {
-      codedLinks = codedLinks.codedLinks;
-      return codedLinks.some((type) => type.type === closure_1_0(closure_1_2[10]).CodedLinkType.INVITE);
-    });
-    return someResult;
-  }, items);
-});
-let result = size.fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
-
-export const useShouldTrackAnnouncementMessageViews = tmp3;
-export const useShouldTrackRichPresenceInviteEmbedViews = tmp4;
-export const handleAnnouncementMessageViewTracking = function handleAnnouncementMessageViewTracking(arr, shouldTrackAnnouncementMessageViews, guildId, channel) {
+}
+export function handleAnnouncementMessageViewTracking(arr, shouldTrackAnnouncementMessageViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
   const tmp = shouldTrackAnnouncementMessageViews;
@@ -342,8 +170,8 @@ export const handleAnnouncementMessageViewTracking = function handleAnnouncement
       const result = obj.handleMessageListVisibilityChange(items, require("MessageViewTrackingManager").MessageViewTrackingType.ANNOUNCEMENT);
     }
   }
-};
-export const handleRichPresenceInviteEmbedViewTracking = function handleRichPresenceInviteEmbedViewTracking(arr, shouldTrackRichPresenceInviteEmbedViews, guildId, channel) {
+}
+export function handleRichPresenceInviteEmbedViewTracking(arr, shouldTrackRichPresenceInviteEmbedViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
   const tmp = shouldTrackRichPresenceInviteEmbedViews;
@@ -361,9 +189,30 @@ export const handleRichPresenceInviteEmbedViewTracking = function handleRichPres
     let obj = require("MessageViewTrackingManager");
     const result = obj.handleMessageListVisibilityChange(items, require("MessageViewTrackingManager").MessageViewTrackingType.APP_EMBED);
   }
-};
-export const useShouldTrackOfficialMessageViews = tmp5;
-export const handleOfficialMessageViewTracking = function handleOfficialMessageViewTracking(arr, shouldTrackOfficialMessageViews, guildId, channel) {
+}
+export function useShouldTrackOfficialMessageViews(isMessagesReady) {
+  let guild;
+  let messages;
+  ({ guild, messages } = isMessagesReady);
+  isMessagesReady = isMessagesReady.isMessagesReady;
+  let isGuildOfficialMessagesEnabled;
+  let id;
+  const useIsGuildOfficialMessagesEnabled = messages(isGuildOfficialMessagesEnabled[7]).useIsGuildOfficialMessagesEnabled;
+  messages(isGuildOfficialMessagesEnabled[7]);
+  if (guild != null) {
+    id = guild.id;
+  }
+  if (id == null) {
+    id = null;
+  }
+  isGuildOfficialMessagesEnabled = useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
+  const items = [isGuildOfficialMessagesEnabled, isMessagesReady, messages];
+  return react.useMemo(() => {
+    const someResult = isGuildOfficialMessagesEnabled && isMessagesReady && messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
+    return someResult;
+  }, items);
+}
+export function handleOfficialMessageViewTracking(arr, shouldTrackOfficialMessageViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
   const tmp = shouldTrackOfficialMessageViews;
@@ -385,9 +234,20 @@ export const handleOfficialMessageViewTracking = function handleOfficialMessageV
       const result = obj.handleMessageListVisibilityChange(items, require("MessageViewTrackingManager").MessageViewTrackingType.OFFICIAL_MESSAGE);
     }
   }
-};
-export const useShouldTrackVoiceInviteEmbedViews = tmp6;
-export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEmbedViews, guildId, channel) {
+}
+export function useShouldTrackVoiceInviteEmbedViews(messages) {
+  messages = messages.messages;
+  const isMessagesReady = messages.isMessagesReady;
+  const items = [messages, isMessagesReady];
+  return react.useMemo(() => {
+    const someResult = isMessagesReady && messages.some((codedLinks) => {
+      codedLinks = codedLinks.codedLinks;
+      return codedLinks.some((type) => type.type === closure_1_0(closure_1_2[8]).CodedLinkType.INVITE);
+    });
+    return someResult;
+  }, items);
+}
+export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEmbedViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
   const tmp = shouldTrackVoiceInviteEmbedViews;
@@ -436,10 +296,10 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
                   let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp10, tmp13);
                   someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
                 }
-                let obj = { type: tmp7(10032).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
+                let obj = { type: tmp7(10113).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
                 tmp20 = someResult;
                 let push = items.push;
-                let tmp7Result = tmp7(5733);
+                let tmp7Result = tmp7(5750);
                 inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;
@@ -456,4 +316,4 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
     let tmp6 = _require;
     const result = obj.handleMessageListVisibilityChange(items, require("MessageViewTrackingManager").MessageViewTrackingType.VOICE_INVITE_EMBED);
   }
-};
+}

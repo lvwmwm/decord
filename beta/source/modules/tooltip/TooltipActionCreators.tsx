@@ -1,10 +1,10 @@
-// Module ID: 10171
-// Function ID: 10172
+// Module ID: 10251
+// Function ID: 10252
 // Name: TooltipActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 
-// Module 10171 (TooltipActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 10251 (TooltipActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

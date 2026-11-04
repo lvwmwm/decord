@@ -1,18 +1,18 @@
-// Module ID: 10970
-// Function ID: 10971
+// Module ID: 11268
+// Function ID: 11269
 // Name: Constants
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 10970 (Constants)
-import intl7 from "intl" /* 1128 */;
+// Module 11268 (Constants)
+import intl7 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ato_alerts/Constants.tsx");
 
 export const LIKELY_ATO_MORE_TIPS_MODAL_KEY = "LIKELY_ATO_MORE_TIPS_MODAL";
 export const LEARN_MORE_HC_ARTICLE = "https://discord.com/safety/understanding-and-avoiding-common-scams";
-export const getLikelyAtoMoreTips = function getLikelyAtoMoreTips() {
+export function getLikelyAtoMoreTips() {
   let intl;
   let intl2;
   let intl3;
@@ -32,4 +32,4 @@ export const getLikelyAtoMoreTips = function getLikelyAtoMoreTips() {
   intl6 = intl7.intl;
   items[2] = obj3;
   return items;
-};
+}

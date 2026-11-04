@@ -1,211 +1,40 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12564
+// Function ID: 12565
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 4855, 7663, 8342, 1395, 21, 5003, 587, 558, 576, 12278, 1128, 8316, 1202, 6940, 9857, 9697, 5242, 12279, 2002, 9383, 8983, 5722, 12282, 2]
+// Dependencies: [32, 19, 17, 4863, 7701, 8406, 1386, 21, 5014, 575, 12565, 1113, 8403, 6980, 1187, 9939, 9778, 7097, 5258, 12566, 1994, 9453, 8177, 5739, 12569, 2]
 // Exports: default
 
-// Module 12277 (PollAnswerInput)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import Pressables from "Pressables" /* 6940 */;
-import DraftStore from "DraftStore" /* 7663 */;
-import PollsUtils from "PollsUtils" /* 8316 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9697 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9857 */;
-import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 12278 */;
+// Module 12564 (PollAnswerInput)
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1113 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import PollsUtils from "PollsUtils" /* 8403 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9778 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9939 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PollsConstants from "PollsConstants" /* 8342 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PollsConstants from "PollsConstants" /* 8406 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
+let maxLength;
+
 let c10;
-let c9;
-let closure_12;
 let closure_14;
-let closure_4;
+let closure_15;
 let hasOwnProperty;
 let map1;
+let metroImportDefault;
 let metroRequire;
 let obj2;
-let obj3;
-let obj4;
-({ Keyboard: closure_4, TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
-const DraftType = DraftStore.DraftType;
-({ MAX_POLL_ANSWER_LENGTH: c9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: c10 } = PollsConstants);
-const EmojiIntention = EmojiConstants.EmojiIntention;
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { defaultContainer: { flexDirection: "row", alignItems: "center" }, defaultImageAndTextContainer: obj2, cannotRemove: { marginRight: 30 }, defaultImageContainer: { width: 60, height: 48, justifyContent: "center", alignItems: "center" }, pollAnswerTextInput: { flex: 1, paddingStart: 0 }, defaultRemoveButtonContainer: obj3, uploadContainer: { alignItems: "flex-start" }, errorInput: obj4 };
-obj2 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, flex: 1, overflow: "hidden" };
-createStyles = createStyles.createStyles;
-obj3 = { paddingLeft: 6, height: 48, justifyContent: "center", color: nativeDefault.colors.TEXT_MUTED };
-obj4 = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
-let closure_15 = createStyles(obj);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageInput(arg0) {
-  let answerIndex;
-  let channelId;
-  let containerStyle;
-  let emojiSize;
-  let iconSrc;
-  let image;
-  let imageSize;
-  let localCreationAnswerId;
-  let openExpressionPicker;
-  let openImageInputActionSheet;
-  let renderImage;
-  let setUploadSize;
-  let tmp7;
-  let tmpResult;
-  let upload;
-  const obj = react2;
-  const cResult = obj.c(24);
-  ({ channelId, localCreationAnswerId, image, iconSrc, openExpressionPicker, emojiSize, containerStyle, imageSize, answerIndex, openImageInputActionSheet } = arg0);
-  let num = 24;
-  if (undefined !== emojiSize) {
-    num = emojiSize;
-  }
-  const tmp4 = closure_15();
-  ({ renderImage, upload, setUploadSize } = useRenderPollAnswerImageDefault(channelId, localCreationAnswerId, image, imageSize, num));
-  let emoji;
-  useRenderPollAnswerImageDefault(channelId, localCreationAnswerId, image, imageSize, num);
-  if (image != null) {
-    emoji = image.emoji;
-  }
-  if (null == emoji) {
-    if (null == upload) {
-      let tmp11;
-      if (cResult[6] !== answerIndex) {
-        const intl3 = tmp(1128).intl;
-        const obj2 = { answerNumber: answerIndex + 1 };
-        const formatToPlainStringResult = intl3.formatToPlainString(intl5.t.ieNrxk, obj2);
-        cResult[6] = answerIndex;
-        cResult[7] = formatToPlainStringResult;
-        tmp11 = formatToPlainStringResult;
-      } else {
-        tmp11 = cResult[7];
-      }
-      tmp7 = tmp11;
-    } else {
-      let str = upload.item.filename;
-      if (str == null) {
-        str = "";
-      }
-      if (cResult[3] === answerIndex) {
-        let tmp9;
-        if (cResult[4] === str) {
-          tmp9 = cResult[5];
-        }
-        tmp7 = tmp9;
-      }
-      const intl2 = tmp(1128).intl;
-      const formatToPlainString = intl2.formatToPlainString;
-      const obj3 = { imageName: tmpResult.filterOutUUID(str), answerNumber: answerIndex + 1 };
-      const vcC7Qn = tmp(1128).t.vcC7Qn;
-      tmpResult = PollsUtils;
-      const formatToPlainStringResult1 = formatToPlainString(vcC7Qn, obj3);
-      cResult[3] = answerIndex;
-      cResult[4] = str;
-      cResult[5] = formatToPlainStringResult1;
-      tmp9 = formatToPlainStringResult1;
-    }
-  } else {
-    if (cResult[0] === answerIndex) {
-      if (cResult[1] === image.emoji.name) {
-        tmp7 = cResult[2];
-      }
-    }
-    const intl = tmp(1128).intl;
-    const obj4 = { imageName: image.emoji.name, answerNumber: answerIndex + 1 };
-    const formatToPlainStringResult2 = intl.formatToPlainString(intl5.t.vcC7Qn, obj4);
-    cResult[0] = answerIndex;
-    cResult[1] = image.emoji.name;
-    cResult[2] = formatToPlainStringResult2;
-    tmp7 = formatToPlainStringResult2;
-  }
-  if (cResult[8] !== setUploadSize) {
-    const fn = function _(nativeEvent) {
-      setUploadSize(nativeEvent.nativeEvent.layout.width);
-    };
-    cResult[8] = setUploadSize;
-    cResult[9] = fn;
-  }
-  let tmp14 = null != upload;
-  if (!tmp14) {
-    let emoji1;
-    if (image != null) {
-      emoji1 = image.emoji;
-    }
-    tmp14 = null != emoji1;
-  }
-  if (tmp14) {
-    openExpressionPicker = openImageInputActionSheet;
-  }
-  if (cResult[10] === containerStyle) {
-    let tmp19;
-    let tmp21Result;
-    if (cResult[11] === (null != upload && tmp4.uploadContainer)) {
-      tmp19 = cResult[12];
-    }
-    if (cResult[13] === tmp14) {
-      if (cResult[14] === iconSrc) {
-        let tmp20;
-        if (cResult[15] === renderImage) {
-          tmp20 = cResult[16];
-        }
-        if (cResult[17] === openExpressionPicker) {
-          if (cResult[18] === tmp16) {
-            if (cResult[19] === tmp7) {
-              if (cResult[20] === tmp17) {
-                if (cResult[21] === tmp19) {
-                  let tmp24;
-                  if (cResult[22] === tmp20) {
-                    tmp24 = cResult[23];
-                  }
-                  return tmp24;
-                }
-              }
-            }
-          }
-        }
-        const obj5 = { accessibilityRole: "button", accessibilityLabel: tmp7, onPress: openExpressionPicker, onLongPress: tmp16, onLayout: tmp17, style: tmp19, children: tmp20 };
-        const tmp26 = authStore2(Pressables.PressableOpacity, obj5);
-        cResult[17] = openExpressionPicker;
-        cResult[18] = tmp16;
-        cResult[19] = tmp7;
-        cResult[20] = tmp17;
-        cResult[21] = tmp19;
-        cResult[22] = tmp20;
-        cResult[23] = tmp26;
-        tmp24 = tmp26;
-      }
-    }
-    if (tmp14) {
-      const obj6 = { children: renderImage };
-      tmp21Result = tmp21(metroRequire, obj6);
-    } else {
-      const obj7 = { source: iconSrc };
-      tmp21Result = tmp21(tmp(1202).Icon, obj7);
-    }
-    cResult[13] = tmp14;
-    cResult[14] = iconSrc;
-    cResult[15] = renderImage;
-    cResult[16] = tmp21Result;
-    tmp20 = tmp21Result;
-  }
-  const items = [containerStyle, null != upload && tmp4.uploadContainer];
-  cResult[10] = containerStyle;
-  cResult[11] = null != upload && tmp4.uploadContainer;
-  cResult[12] = items;
-  tmp19 = items;
-}) : (function ImageInput(iconSrc) {
+let unpackModuleId;
+function ImageInput(iconSrc) {
   let answerIndex;
   let channelId;
   let emojiSize;
@@ -226,14 +55,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
   const openImageInputActionSheet = iconSrc.openImageInputActionSheet;
   let upload;
   const containerStyle = iconSrc.containerStyle;
-  const tmp = closure_15();
-  const tmp3 = answerIndex(upload[11])(channelId, localCreationAnswerId, image, imageSize, emojiSize);
+  const tmp = closure_16();
+  const tmp3 = answerIndex(upload[10])(channelId, localCreationAnswerId, image, imageSize, emojiSize);
   upload = tmp3.upload;
   const setUploadSize = tmp3.setUploadSize;
   const items = [image, upload, answerIndex];
   const renderImage = tmp3.renderImage;
   const items1 = [setUploadSize];
-  const memo = setUploadSize.useMemo(() => {
+  const memo = react.useMemo(() => {
     let obj3;
     let emoji;
     if (image != null) {
@@ -261,7 +90,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
     }
   }, items);
   let tmp6 = null != upload;
-  const callback = setUploadSize.useCallback((nativeEvent) => {
+  const callback = react.useCallback((nativeEvent) => {
     setUploadSize(nativeEvent.nativeEvent.layout.width);
   }, items1);
   if (!tmp6) {
@@ -280,7 +109,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
   }
   let obj = { accessibilityRole: "button", accessibilityLabel: memo, onPress: openExpressionPicker, onLongPress: tmp8, onLayout: tmp11, style: items2, children: tmp9Result };
   tmp11 = undefined;
-  const PressableOpacity = image(tmp2[15]).PressableOpacity;
+  const PressableOpacity = image(tmp2[13]).PressableOpacity;
   const tmp10 = image;
   if (null == imageSize) {
     tmp11 = callback;
@@ -288,42 +117,54 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
   items2 = [containerStyle, null != upload && tmp.uploadContainer];
   if (tmp6) {
     let obj2 = { children: renderImage };
-    tmp9Result = tmp9(closure_6, obj2);
+    tmp9Result = tmp9(closure_7, obj2);
   } else {
     let obj3 = { source: iconSrc };
     tmp9Result = tmp9(tmp10(tmp2[14]).Icon, obj3);
   }
-  return closure_12(PressableOpacity, obj);
-});
+  return closure_13(PressableOpacity, obj);
+}
+({ Keyboard: hasOwnProperty, TouchableOpacity: metroRequire, View: metroImportDefault } = react_native);
+const DraftType = DraftStore.DraftType;
+({ MAX_POLL_ANSWER_LENGTH: c10, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: unpackModuleId } = PollsConstants);
+const EmojiIntention = EmojiConstants.EmojiIntention;
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
+let obj = { defaultContainer: { flexDirection: "row", alignItems: "center" }, inputContainer: { flex: 1 }, cannotRemove: { marginRight: 36 }, defaultImageContainer: { width: 60, height: 48, justifyContent: "center", alignItems: "center" }, pollAnswerTextInput: { flex: 1, paddingStart: 0 }, defaultRemoveButtonContainer: obj2, uploadContainer: { alignItems: "flex-start" } };
+obj2 = { paddingLeft: nativeDefault.space.PX_12, height: 48, justifyContent: "center", color: nativeDefault.colors.TEXT_MUTED };
+let closure_16 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/polls/native/PollAnswerInput.tsx");
 
 export default function PollAnswerInput(answer) {
   let Icon;
+  let InputFieldContainer;
   let canRemoveAnswer;
-  let closure_4;
+  let closure_10;
   let closure_5;
   let closure_6;
   let error;
+  let first;
   let formatToPlainStringResult;
   let inputRef;
   let intl;
   let intl2;
   let intl4;
+  let items1;
   let items2;
-  let items3;
-  let obj5;
-  let obj8;
+  let obj10;
+  let obj3;
+  let obj6;
   let obj9;
-  let onRemoveAnswerImage;
   let onSubmitEditing;
+  let str;
   answer = answer.answer;
   const index = answer.index;
   const channelId = answer.channelId;
-  ({ onAnswerTextChange: react, onAnswerEmojiSelect: closure_4, canRemoveAnswer, onRemoveAnswer: closure_5, onRemoveAnswerImage: closure_6, error } = answer);
+  ({ onAnswerTextChange: _slicedToArray, onAnswerEmojiSelect: react, canRemoveAnswer, onRemoveAnswer: closure_5, onRemoveAnswerImage: closure_6, error } = answer);
+  maxLength = undefined;
   function openExpressionPicker() {
     const channel = ChannelStore.getChannel(channelId);
     if (null != channel) {
-      React3.dismiss();
+      hasOwnProperty.dismiss();
       const obj2 = {
         channel,
         onPressEmoji(arg0) {
@@ -341,27 +182,28 @@ export default function PollAnswerInput(answer) {
     obj.update(channelId, answer.localCreationAnswerId, DraftType.Poll, obj2);
   }
   ({ inputRef, onSubmitEditing } = answer);
-  const tmp = closure_15();
+  const tmp = closure_16();
   const localCreationAnswerId = answer.localCreationAnswerId;
-  let tmp7Result = null != error;
   const image = answer.image;
-  if (tmp7Result) {
-    tmp7Result = error.length > 0;
-  }
+  [first, maxLength] = react.useState(false);
+  let tmp8Result = null != error && error.length > 0;
   const items = [tmp.defaultContainer, ];
   let cannotRemove = !canRemoveAnswer;
-  const tmp4 = closure_14;
+  const tmp6 = closure_15;
   if (!canRemoveAnswer) {
     cannotRemove = tmp.cannotRemove;
   }
-  let obj = { style: items, children: items3 };
+  let obj = { style: items, children: items2 };
   items[1] = cannotRemove;
-  const items1 = [tmp.defaultImageAndTextContainer, ];
-  let obj2 = { style: items1, children: items2 };
-  const tmp6 = tmp7Result && tmp.errorInput;
-  items1[1] = tmp6;
-  items2 = [, ];
-  const obj3 = {
+  let obj2 = { style: tmp.inputContainer, children: tmp5(InputFieldContainer, obj3) };
+  obj3 = { isFocused: first, status: str, children: items1 };
+  str = "default";
+  InputFieldContainer = answer(channelId[17]).InputFieldContainer;
+  if (tmp8Result) {
+    str = "error";
+  }
+  items1 = [, ];
+  const obj4 = {
     channelId,
     localCreationAnswerId,
     image,
@@ -369,70 +211,77 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(12279, dependencyMap.paths), authStore, obj2);
+      obj.openLazy(asyncRequire(12566, dependencyMap.paths), unpackModuleId, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,
     imageSize: 48,
     answerIndex: index
   };
-  items2[0] = closure_12(closure_16, obj3);
-  const obj4 = {
+  items1[0] = closure_13(ImageInput, obj4);
+  const obj5 = {
     ref: inputRef,
     textAlignVertical: "center",
     showTopContainer: false,
     showBorder: false,
-    placeholder: intl.string(answer(channelId[12]).t.NNHVlv),
+    placeholder: intl.string(answer(channelId[11]).t.NNHVlv),
     onChange(text) {
       const obj = { text, index, localCreationAnswerId };
-      return react(obj);
+      return _slicedToArray(obj);
     },
     onSubmitEditing,
+    onFocus() {
+      return closure_10(true);
+    },
+    onBlur() {
+      return closure_10(false);
+    },
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
-    textContentType: "none",
-    accessibilityLabel: intl2.formatToPlainString(answer(channelId[12]).t["3+V8G9"], obj5),
+    selectionColor: "children",
+    textContentType: true,
+    accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
-    maxLength: handleSaveAltText,
-    returnKeyType: "next",
+    maxLength,
+    returnKeyType: true,
     required: true,
     autoCorrect: true,
     "aria-invalid": error
   };
-  const FormInput = answer(channelId[22]).FormInput;
-  intl = answer(channelId[12]).intl;
-  intl2 = answer(channelId[12]).intl;
+  const FormInput = tmp9(tmp10[22]).FormInput;
+  intl = tmp9(tmp10[11]).intl;
+  intl2 = tmp9(tmp10[11]).intl;
   formatToPlainStringResult = undefined;
-  obj5 = { answerNumber: index + 1 };
-  if (tmp7Result) {
-    const intl3 = tmp10(tmp9[12]).intl;
-    const obj6 = { errorMessage: error };
-    formatToPlainStringResult = intl3.formatToPlainString(tmp10(tmp9[12]).t.jnq5Ho, obj6);
+  obj6 = { answerNumber: index + 1 };
+  if (tmp8Result) {
+    const intl3 = tmp9(tmp10[11]).intl;
+    const obj7 = { errorMessage: error };
+    formatToPlainStringResult = intl3.formatToPlainString(tmp9(tmp10[11]).t.jnq5Ho, obj7);
   }
-  items2[1] = closure_12(FormInput, obj4);
-  items3 = [closure_13(tmp5, obj2), ];
+  items1[1] = closure_13(FormInput, obj5);
+  items2 = [closure_13(localCreationAnswerId, obj2), ];
   if (canRemoveAnswer) {
-    const obj7 = {
+    const obj8 = {
       onPress() {
           return closure_5(index);
         },
       accessibilityRole: "button",
       style: tmp.defaultRemoveButtonContainer,
-      accessibilityLabel: intl4.formatToPlainString(answer(channelId[12]).t["22fjEc"], obj8),
-      children: closure_12(Icon, obj9)
+      accessibilityLabel: intl4.formatToPlainString(answer(channelId[11]).t["22fjEc"], obj9),
+      children: closure_13(Icon, obj10)
     };
-    intl4 = tmp10(tmp9[12]).intl;
-    obj8 = { answerNumber: index + 1 };
-    obj9 = { size: answer(channelId[14]).Icon.Sizes.MEDIUM, source: index(channelId[23]), color: tmp.defaultRemoveButtonContainer.color };
-    Icon = tmp10(tmp9[14]).Icon;
-    canRemoveAnswer = tmp7(closure_5, obj7);
+    intl4 = tmp9(tmp10[11]).intl;
+    obj9 = { answerNumber: index + 1 };
+    obj10 = { size: answer(channelId[14]).Icon.Sizes.MEDIUM, source: index(channelId[23]), color: tmp.defaultRemoveButtonContainer.color };
+    Icon = tmp9(tmp10[14]).Icon;
+    canRemoveAnswer = tmp8(onRemoveAnswerImage, obj8);
   }
-  items3[1] = canRemoveAnswer;
-  const children = [closure_13(tmp5, obj), ];
-  if (tmp7Result) {
-    const obj10 = { message: error };
-    tmp7Result = tmp7(tmp8(tmp9[24]), obj10);
+  items2[1] = canRemoveAnswer;
+  const children = [tmp5(localCreationAnswerId, obj), ];
+  if (tmp8Result) {
+    const obj11 = { message: error };
+    tmp8Result = tmp8(tmp11(tmp10[24]), obj11);
   }
-  children[1] = tmp7Result;
-  return closure_13(tmp4, { children });
+  children[1] = tmp8Result;
+  return closure_14(tmp6, { children });
 };

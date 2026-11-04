@@ -1,17 +1,15 @@
-// Module ID: 11878
-// Function ID: 11879
+// Module ID: 12159
+// Function ID: 12160
 // Name: ConjurePublishScheduleSection
-// Dependencies: [19, 21, 558, 576, 11879, 5946, 1128, 3862, 5266, 6009, 587, 11880, 5276, 2]
+// Dependencies: [19, 21, 12160, 6027, 575, 5624, 1113, 3868, 12161, 5634, 5964, 2]
+// Exports: default
 
-// Module 11878 (ConjurePublishScheduleSection)
-import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import AlertModal from "AlertModal" /* 5946 */;
-import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 11879 */;
+// Module 12159 (ConjurePublishScheduleSection)
+import intl6 from "intl" /* 1113 */;
+import AlertModal from "AlertModal" /* 5964 */;
+import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 12160 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -19,216 +17,20 @@ let importDefault;
 let c3;
 let closure_4;
 let hasOwnProperty;
+let tmp;
+const nativeDefault = tmp(575);
+const _modDef3868 = tmp(3868);
 ({ jsx: c3, jsxs: closure_4, Fragment: hasOwnProperty } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishScheduleSection(projectId) {
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let intl5;
-  let intl6;
-  let items;
-  let items2;
-  let remove;
-  let tmp = projectId;
-  let obj = projectId(576);
-  const cResult = obj.c(25);
-  projectId = projectId.projectId;
-  const canEdit = projectId.canEdit;
-  const tmp5 = useConjurePublishScheduleDefault(projectId, canEdit);
-  importDefault = tmp5;
-  if (canEdit) {
-    if (cResult[0] === projectId) {
-      let tmp7;
-      let tmp9;
-      let tmp12;
-      if (cResult[1] === tmp5.remove) {
-        tmp7 = cResult[2];
-      }
-      const _Symbol = Symbol;
-      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { variant: "heading-md/semibold", children: intl.string(_modDef3862.ptzKKH) };
-        const Heading = tmp(5266).Heading;
-        intl = tmp(1128).intl;
-        const tmp11 = closure_3(Heading, obj2);
-        cResult[3] = tmp11;
-        tmp9 = tmp11;
-      } else {
-        tmp9 = cResult[3];
-      }
-      if (cResult[4] !== tmp5.loading) {
-        let tmp13 = null;
-        if (tmp5.loading) {
-          const obj3 = { variant: "text-sm/normal", accessibilityLiveRegion: "polite", children: intl2.string(_modDef3862["71yzD9"]) };
-          const Text = tmp(5266).Text;
-          intl2 = tmp(1128).intl;
-          tmp13 = closure_3(Text, obj3);
-        }
-        cResult[4] = tmp5.loading;
-        cResult[5] = tmp13;
-        tmp12 = tmp13;
-      } else {
-        tmp12 = cResult[5];
-      }
-      if (cResult[6] === tmp7) {
-        if (cResult[7] === tmp5.deleting) {
-          if (cResult[8] === tmp5.loaded) {
-            let tmp15;
-            let tmp25;
-            let tmp28;
-            if (cResult[9] === tmp5.saved) {
-              tmp15 = cResult[10];
-            }
-            if (cResult[11] !== tmp5.error) {
-              let tmp26 = null;
-              if (null != tmp5.error) {
-                const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: tmp5.error };
-                tmp26 = closure_3(tmp(5266).Text, obj4);
-              }
-              cResult[11] = tmp5.error;
-              cResult[12] = tmp26;
-              tmp25 = tmp26;
-            } else {
-              tmp25 = cResult[12];
-            }
-            if (cResult[13] !== tmp5.status) {
-              let tmp29 = null;
-              if (null != tmp5.status) {
-                const obj5 = { variant: "text-sm/normal", accessibilityLiveRegion: "polite", children: tmp5.status };
-                tmp29 = closure_3(tmp(5266).Text, obj5);
-              }
-              cResult[13] = tmp5.status;
-              cResult[14] = tmp29;
-              tmp28 = tmp29;
-            } else {
-              tmp28 = cResult[14];
-            }
-            if (cResult[15] === tmp5.error) {
-              if (cResult[16] === tmp5.loading) {
-                let tmp31;
-                if (cResult[17] === tmp5.retry) {
-                  tmp31 = cResult[18];
-                }
-                if (cResult[19] === tmp12) {
-                  if (cResult[20] === tmp15) {
-                    if (cResult[21] === tmp25) {
-                      if (cResult[22] === tmp28) {
-                        let tmp35;
-                        if (cResult[23] === tmp31) {
-                          tmp35 = cResult[24];
-                        }
-                        return tmp35;
-                      }
-                    }
-                  }
-                }
-                const obj6 = { spacing: nativeDefault.space.PX_16, children: items };
-                const Stack2 = tmp(6009).Stack;
-                items = [tmp9, tmp12, tmp15, tmp25, tmp28, tmp31];
-                const tmp37 = closure_4(Stack2, obj6);
-                cResult[19] = tmp12;
-                cResult[20] = tmp15;
-                cResult[21] = tmp25;
-                cResult[22] = tmp28;
-                cResult[23] = tmp31;
-                cResult[24] = tmp37;
-                tmp35 = tmp37;
-              }
-            }
-            let tmp33 = null;
-            if (!tmp5.loading) {
-              tmp33 = null;
-              if (null != tmp5.error) {
-                const obj7 = { variant: "secondary", text: intl6.string(_modDef3862.iLTcFU), onPress: tmp5.retry };
-                const Button2 = tmp(5276).Button;
-                intl6 = tmp(1128).intl;
-                tmp33 = closure_3(Button2, obj7);
-              }
-            }
-            cResult[15] = tmp5.error;
-            cResult[16] = tmp5.loading;
-            cResult[17] = tmp5.retry;
-            cResult[18] = tmp33;
-            tmp31 = tmp33;
-          }
-        }
-      }
-      let tmp18Result2 = null;
-      if (tmp5.loaded) {
-        let tmp21;
-        let tmp22;
-        const tmp19 = closure_5;
-        if (null == tmp5.saved) {
-          const obj8 = { variant: "text-sm/normal", color: "text-subtle", children: intl4.string(_modDef3862.sg8WIV) };
-          const Text3 = tmp(5266).Text;
-          intl4 = tmp(1128).intl;
-          tmp21 = closure_3(Text3, obj8);
-          tmp22 = closure_3;
-        } else {
-          const obj9 = { variant: "text-sm/normal", color: "text-subtle", children: intl3.string(_modDef3862.ubcNP7) };
-          const Text2 = tmp(5266).Text;
-          intl3 = tmp(1128).intl;
-          tmp21 = closure_3(Text2, obj9);
-          tmp22 = closure_3;
-        }
-        const items1 = [tmp21, ];
-        let tmp18Result = null;
-        if (null != tmp5.saved) {
-          const obj10 = { spacing: nativeDefault.space.PX_8, children: items2 };
-          const Stack = tmp(6009).Stack;
-          const tmpResult = tmp(11880);
-          const result = tmpResult.publishScheduleDetails(tmp5.saved);
-          items2 = [
-            result.map((children, index) => {
-                      const obj = { variant: "text-sm/normal", children };
-                      return closure_1_3(projectId(dependencyMap[8]).Text, obj, index);
-                    }),
+let result = size.fileFinishedImporting("modules/conjure/publish_schedule/native/ConjurePublishScheduleSection.tsx");
 
-          ];
-          const obj11 = { variant: "secondary", text: intl5.string(_modDef3862.J7ZMMf), disabled: tmp5.deleting, onPress: tmp7 };
-          const Button = tmp(5276).Button;
-          intl5 = tmp(1128).intl;
-          items2[1] = tmp22(Button, obj11);
-          tmp18Result = tmp18(Stack, obj10);
-        }
-        const obj12 = { children: items1 };
-        items1[1] = tmp18Result;
-        tmp18Result2 = tmp18(tmp19, obj12);
-      }
-      cResult[6] = tmp7;
-      cResult[7] = tmp5.deleting;
-      cResult[8] = tmp5.loaded;
-      cResult[9] = tmp5.saved;
-      cResult[10] = tmp18Result2;
-      tmp15 = tmp18Result2;
-    }
-    function confirmDelete() {
-      let intl;
-      let intl2;
-      let intl3;
-      const tmp = AlertModal;
-      const showConfirmModal = tmp.showConfirmModal;
-      const obj = { key: "ConjureDeletePublishSchedule-" + projectId, title: intl.string(_modDef3862["Tw/KaB"]), content: intl2.string(_modDef3862.qr1iIe), confirmText: intl3.string(_modDef3862.J7ZMMf), variant: "destructive", onConfirm: remove.remove };
-      intl = intl7.intl;
-      intl2 = intl7.intl;
-      intl3 = intl7.intl;
-      showConfirmModal(obj);
-    }
-    cResult[0] = projectId;
-    cResult[1] = tmp5.remove;
-    cResult[2] = confirmDelete;
-    tmp7 = confirmDelete;
-  } else {
-    return null;
-  }
-}) : (function ConjurePublishScheduleSection(projectId) {
+export default function ConjurePublishScheduleSection(projectId) {
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
-  let intl6;
   let items;
+  let items1;
   let items2;
   let remove;
   projectId = projectId.projectId;
@@ -237,54 +39,54 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   let tmp = importDefault;
   const tmp3 = useConjurePublishScheduleDefault(projectId, canEdit);
   importDefault = tmp3;
-  let tmp5Result4 = null;
+  let tmp4 = null;
   if (canEdit) {
-    let obj = { spacing: nativeDefault.space.PX_16, children: items };
-    const Stack = projectId(6009).Stack;
-    const obj2 = { variant: "heading-md/semibold", children: intl.string(_modDef3862.ptzKKH) };
-    const Heading = projectId(5266).Heading;
-    intl = projectId(1128).intl;
-    items = [closure_3(Heading, obj2), , , , , ];
-    let tmp7Result = null;
-    if (tmp3.loading) {
-      const obj3 = { variant: "text-sm/normal", accessibilityLiveRegion: "polite", children: intl2.string(_modDef3862["71yzD9"]) };
-      const Text = tmp6(5266).Text;
-      intl2 = tmp6(1128).intl;
-      tmp7Result = tmp7(Text, obj3);
-    }
-    items[1] = tmp7Result;
-    let tmp5Result3 = null;
     if (tmp3.loaded) {
-      let tmp7Result5;
-      const tmp10 = closure_5;
       if (null == tmp3.saved) {
-        const obj4 = { variant: "text-sm/normal", color: "text-subtle", children: intl4.string(_modDef3862.sg8WIV) };
-        const Text3 = tmp6(5266).Text;
-        intl4 = tmp6(1128).intl;
-        tmp7Result5 = tmp7(Text3, obj4);
-      } else {
-        const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: intl3.string(_modDef3862.ubcNP7) };
-        const Text2 = tmp6(5266).Text;
-        intl3 = tmp6(1128).intl;
-        tmp7Result5 = tmp7(Text2, obj5);
+        let tmp6Result2;
+        if (null == tmp3.error) {
+          tmp6Result2 = null;
+        }
+        tmp4 = tmp6Result2;
       }
-      const items1 = [tmp7Result5, ];
-      let tmp5Result = null;
+    }
+    let obj = { spacing: nativeDefault.space.PX_16, children: items };
+    const Stack = projectId(6027).Stack;
+    const obj2 = { variant: "heading-md/semibold", children: intl.string(_modDef3868.ptzKKH) };
+    const Heading = projectId(5624).Heading;
+    intl = projectId(1113).intl;
+    items = [closure_3(Heading, obj2), , , , , ];
+    let tmp8Result = null;
+    if (tmp3.loading) {
+      const obj3 = { variant: "text-sm/normal", accessibilityLiveRegion: "polite", children: intl2.string(_modDef3868["71yzD9"]) };
+      const Text = tmp7(5624).Text;
+      intl2 = tmp7(1113).intl;
+      tmp8Result = tmp8(Text, obj3);
+    }
+    items[1] = tmp8Result;
+    let tmp6Result = null;
+    if (tmp3.loaded) {
+      tmp6Result = null;
       if (null != tmp3.saved) {
+        const obj4 = { children: items1 };
+        const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: intl3.string(_modDef3868.ubcNP7) };
+        const Text2 = tmp7(5624).Text;
+        intl3 = tmp7(1113).intl;
+        items1 = [closure_3(Text2, obj5), ];
         const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
-        const Stack2 = tmp6(6009).Stack;
-        const tmp6Result = projectId(11880);
-        const result = tmp6Result.publishScheduleDetails(tmp3.saved);
+        const Stack2 = tmp7(6027).Stack;
+        const tmp7Result = projectId(12161);
+        const result = tmp7Result.publishScheduleDetails(tmp3.saved);
         items2 = [
           result.map((children, index) => {
                   const obj = { variant: "text-sm/normal", children };
-                  return closure_1_3(projectId(dependencyMap[8]).Text, obj, index);
+                  return closure_1_3(projectId(dependencyMap[5]).Text, obj, index);
                 }),
 
         ];
         const obj7 = {
           variant: "secondary",
-          text: intl5.string(_modDef3862.J7ZMMf),
+          text: intl4.string(_modDef3868.J7ZMMf),
           disabled: tmp3.deleting,
           onPress: function confirmDelete() {
                   let intl;
@@ -292,50 +94,45 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
                   let intl3;
                   const tmp = AlertModal;
                   const showConfirmModal = tmp.showConfirmModal;
-                  const obj = { key: "ConjureDeletePublishSchedule-" + projectId, title: intl.string(_modDef3862["Tw/KaB"]), content: intl2.string(_modDef3862.qr1iIe), confirmText: intl3.string(_modDef3862.J7ZMMf), variant: "destructive", onConfirm: remove.remove };
-                  intl = intl7.intl;
-                  intl2 = intl7.intl;
-                  intl3 = intl7.intl;
+                  const obj = { key: "ConjureDeletePublishSchedule-" + projectId, title: intl.string(_modDef3868["Tw/KaB"]), content: intl2.string(_modDef3868.qr1iIe), confirmText: intl3.string(_modDef3868.J7ZMMf), variant: "destructive", onConfirm: remove.remove };
+                  intl = intl6.intl;
+                  intl2 = intl6.intl;
+                  intl3 = intl6.intl;
                   showConfirmModal(obj);
                 }
         };
-        const Button = tmp6(5276).Button;
-        intl5 = tmp6(1128).intl;
+        const Button = tmp7(5634).Button;
+        intl4 = tmp7(1113).intl;
         items2[1] = closure_3(Button, obj7);
-        tmp5Result = tmp5(Stack2, obj6);
+        items1[1] = closure_4(Stack2, obj6);
+        tmp6Result = tmp6(closure_5, obj4);
       }
-      const obj8 = { children: items1 };
-      items1[1] = tmp5Result;
-      tmp5Result3 = tmp5(tmp10, obj8);
     }
-    items[2] = tmp5Result3;
-    let tmp7Result6 = null;
+    items[2] = tmp6Result;
+    let tmp8Result4 = null;
     if (null != tmp3.error) {
-      const obj9 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: tmp3.error };
-      tmp7Result6 = tmp7(tmp6(5266).Text, obj9);
+      const obj8 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: tmp3.error };
+      tmp8Result4 = tmp8(tmp7(5624).Text, obj8);
     }
-    items[3] = tmp7Result6;
-    let tmp7Result7 = null;
+    items[3] = tmp8Result4;
+    let tmp8Result5 = null;
     if (null != tmp3.status) {
-      const obj10 = { variant: "text-sm/normal", accessibilityLiveRegion: "polite", children: tmp3.status };
-      tmp7Result7 = tmp7(tmp6(5266).Text, obj10);
+      const obj9 = { variant: "text-sm/normal", accessibilityLiveRegion: "polite", children: tmp3.status };
+      tmp8Result5 = tmp8(tmp7(5624).Text, obj9);
     }
-    items[4] = tmp7Result7;
-    let tmp7Result8 = null;
+    items[4] = tmp8Result5;
+    let tmp8Result6 = null;
     if (!tmp3.loading) {
-      tmp7Result8 = null;
+      tmp8Result6 = null;
       if (null != tmp3.error) {
-        const obj11 = { variant: "secondary", text: intl6.string(_modDef3862.iLTcFU), onPress: tmp3.retry };
-        const Button2 = tmp6(5276).Button;
-        intl6 = tmp6(1128).intl;
-        tmp7Result8 = tmp7(Button2, obj11);
+        const obj10 = { variant: "secondary", text: intl5.string(_modDef3868.iLTcFU), onPress: tmp3.retry };
+        const Button2 = tmp7(5634).Button;
+        intl5 = tmp7(1113).intl;
+        tmp8Result6 = tmp8(Button2, obj10);
       }
     }
-    items[5] = tmp7Result8;
-    tmp5Result4 = tmp5(Stack, obj);
+    items[5] = tmp8Result6;
+    tmp6Result2 = tmp6(Stack, obj);
   }
-  return tmp5Result4;
-});
-let result = size.fileFinishedImporting("modules/conjure/publish_schedule/native/ConjurePublishScheduleSection.tsx");
-
-export default tmp4;
+  return tmp4;
+};

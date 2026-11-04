@@ -3,31 +3,5 @@
 // Dependencies: []
 
 // Module 8282
-let obj = {
-  get(arg0) {
-    const tmp = arg0;
-    if (tmp) {
-      return arg0;
-    } else {
-      if (typeof globalThis.DOMParser !== "undefined") {
-        const DOMParser2 = globalThis.DOMParser;
-        const self3 = this;
-        const self4 = this;
-        const dOMParser = new globalThis.DOMParser();
-        return dOMParser;
-      } else {
-        try {
-          const result = globalThis.__non_webpack_require__("@xmldom/xmldom");
-          const self = this;
-          const self2 = this;
-          const obj = { onError: result.onErrorStopParsing };
-          const dOMParser1 = new result.DOMParser(obj);
-          return dOMParser1;
-        } catch (err) {
-        }
-      }
-    }
-  }
-};
 
-export default obj;
+export default { USE_FILE: true, USE_JFIF: true, USE_PNG_FILE: true, USE_EXIF: true, USE_IPTC: true, USE_XMP: true, USE_ICC: true, USE_MPF: true, USE_PHOTOSHOP: true, USE_THUMBNAIL: true, USE_TIFF: true, USE_JPEG: true, USE_PNG: true, USE_HEIC: true, USE_AVIF: true, USE_WEBP: true, USE_GIF: true, USE_MAKER_NOTES: true };

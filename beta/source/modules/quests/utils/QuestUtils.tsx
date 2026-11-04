@@ -1,22 +1,22 @@
-// Module ID: 7828
-// Function ID: 7829
+// Module ID: 7866
+// Function ID: 7867
 // Name: utils/QuestUtils
-// Dependencies: [32, 5747, 4877, 4935, 5662, 7829, 6742, 7830, 7831, 6684, 7832, 7833, 2]
+// Dependencies: [32, 5765, 4885, 4946, 5679, 7867, 6781, 7868, 7869, 6724, 7870, 7871, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7828 (utils/QuestUtils)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6684 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7830 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7831 */;
-import QuestType2 from "QuestType" /* 7832 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7833 */;
+// Module 7866 (utils/QuestUtils)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6724 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7869 */;
+import QuestType2 from "QuestType" /* 7870 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 5747 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import QuestUtmStore from "QuestUtmStore" /* 7829 */;
-import QuestConstants from "QuestConstants" /* 6742 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import QuestUtmStore from "QuestUtmStore" /* 7867 */;
+import QuestConstants from "QuestConstants" /* 6781 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -24,6 +24,7 @@ let map, set;
 let c10;
 let c9;
 let metroImportAll;
+let unpackModuleId;
 function isSponsoredPlayQuest(quest) {
   if (null == quest) {
     return false;
@@ -37,16 +38,16 @@ function hasVariant(nextResult, MOBILE_ACTIVITY_QUEST) {
   set = new Set(nextResult.config.features);
   return set.has(MOBILE_ACTIVITY_QUEST);
 }
-({ DISCORD_APPLICATION_ID: metroImportAll, QuestVariants: c9, RewardFilterTypes: c10 } = QuestConstants);
+({ DISCORD_APPLICATION_ID: metroImportAll, QuestVariants: c9, RewardFilterTypes: c10, TaskFilterTypes: unpackModuleId } = QuestConstants);
 let result = size.fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");
 
 export { isSponsoredPlayQuest };
-export const isPlayAnyActivityQuest = function isPlayAnyActivityQuest(quest) {
+export function isPlayAnyActivityQuest(quest) {
   const obj = QuestTaskUtils;
   return obj.getPlayActivityApplicationId(quest) === metroImportAll;
-};
+}
 export { hasVariant };
-export const canLaunchActivity = function canLaunchActivity(quest) {
+export function canLaunchActivity(quest) {
   const obj = QuestTaskUtils;
   let hasPlayActivityTaskResult = obj.hasPlayActivityTask(quest);
   if (!hasPlayActivityTaskResult) {
@@ -54,8 +55,8 @@ export const canLaunchActivity = function canLaunchActivity(quest) {
     hasPlayActivityTaskResult = tmpResult.hasAchievementActivityTask(quest);
   }
   return hasPlayActivityTaskResult;
-};
-export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEntrypoints(stateFromStores, has) {
+}
+export function filterQuestsForSocialEntrypoints(stateFromStores, has) {
   let tmp5;
   let tmp6;
   map = new Map();
@@ -81,26 +82,26 @@ export const filterQuestsForSocialEntrypoints = function filterQuestsForSocialEn
     continue;
   }
   return map;
-};
-export const isShareableQuest = function isShareableQuest(config) {
+}
+export function isShareableQuest(config) {
   return config.sharePolicy !== QuestSharePolicy.QuestSharePolicy.NOT_SHAREABLE;
-};
-export const isStreamingAndCanWatch = function isStreamingAndCanWatch(channelId, stateFromStores) {
-  let first = null != channelId && null != stateFromStores;
+}
+export function isStreamingAndCanWatch(arg0, stateFromStores) {
+  let first = null != arg0 && null != stateFromStores;
   if (first) {
     const obj = StreamPermissionUtils;
     first = obj.canWatchStream(stateFromStores, VoiceStateStore, GuildStore, PermissionStore, GameConsoleStore)[0];
   }
   return first;
-};
-export const getQuestType = function getQuestType(config) {
+}
+export function getQuestType(config) {
   const obj = QuestTaskUtils;
   const obj2 = { config };
   const hasWatchVideoTasksResult = obj.hasWatchVideoTasks(obj2);
   const QuestType = QuestType2.QuestType;
   return hasWatchVideoTasksResult ? QuestType.VIDEO : QuestType.GAMEPLAY;
-};
-export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHero, id) {
+}
+export function isQuestFeaturedByHero(questHomeHero, id) {
   const questIds = questHomeHero.questIds;
   let flag;
   if (questIds != null) {
@@ -110,19 +111,20 @@ export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHer
     flag = false;
   }
   return flag;
-};
-export const shouldShowBountiesGivenFilters = function shouldShowBountiesGivenFilters(filters) {
-  const f99743 = (group) => "task" === group.group;
-  const f99744 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
-  let tmp2 = !filters.some(f99743);
-  filters.some(f99743);
-  if (tmp2) {
-    tmp2 = 0 === filters.length || filters.some(f99744);
-    0 === filters.length || filters.some(f99744);
+}
+export function shouldShowBountiesGivenFilters(filters) {
+  let constants2;
+  const f91822 = (item) => item.filter === constants.VIRTUAL_CURRENCY;
+  const found = filters.filter((group) => "task" === group.group);
+  const found1 = filters.filter((group) => "reward" === group.group);
+  let tmp = 0 === found.length || found.some((item) => item.filter === constants2.VIDEO);
+  if (tmp) {
+    tmp = 0 === found1.length || found1.some(f91822);
+    0 === found1.length || found1.some(f91822);
   }
-  return tmp2;
-};
-export const setQuestHomeUtmContext = function setQuestHomeUtmContext(arg0) {
+  return tmp;
+}
+export function setQuestHomeUtmContext(arg0) {
   let fromContent;
   let obj2;
   let questId;
@@ -134,4 +136,4 @@ export const setQuestHomeUtmContext = function setQuestHomeUtmContext(arg0) {
   const obj = { utmSourceCurrent: utmSource, utmMediumCurrent: utmMedium, utmCampaignCurrent: questId, utmContentCurrent: obj2.getQuestContentName(fromContent) };
   obj2 = AnalyticsTypes;
   setUtmCurrentContext(obj);
-};
+}

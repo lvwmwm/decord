@@ -1,27 +1,27 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8492
+// Function ID: 8493
 // Name: GuildProductPurchaseSystemMessage
-// Dependencies: [4946, 4855, 1087, 6398, 8350, 1420, 1417, 8383, 8352, 1128, 8354, 2]
+// Dependencies: [4957, 4863, 1072, 6438, 8418, 1412, 1409, 8451, 8420, 1113, 8422, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 8427 (GuildProductPurchaseSystemMessage)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import useMessageAuthor from "useMessageAuthor" /* 6398 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8354 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8383 */;
-import MessageRecord from "MessageRecord" /* 4946 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+// Module 8492 (GuildProductPurchaseSystemMessage)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import useMessageAuthor from "useMessageAuthor" /* 6438 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8451 */;
+import MessageRecord from "MessageRecord" /* 4957 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildProductPurchaseSystemMessage.tsx");
 
-export const createGuildProductPurchaseSystemMessage = function createGuildProductPurchaseSystemMessage(message) {
+export function createGuildProductPurchaseSystemMessage(message) {
   let getGuildProductPurchaseSystemMessageContentMobile;
   let intl;
   let obj6;
@@ -68,10 +68,10 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
       getGuildProductPurchaseSystemMessageContentMobile = GuildProductSystemMessageUtils.getGuildProductPurchaseSystemMessageContentMobile;
       obj7 = { message, author: messageAuthorWithProcessedColor, roleStyle };
       GuildProductSystemMessageUtils;
-      intl = tmp5(1128).intl;
+      intl = tmp5(1113).intl;
       const merged1 = Object.assign(createCommonMessageDefault(obj));
       return obj5;
     }
     guildMemberAvatarSource = author.getAvatarSource(undefined);
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 6049
-// Function ID: 6050
+// Module ID: 6068
+// Function ID: 6069
 // Name: interactionCallbackErrorReason
-// Dependencies: [2045, 6050, 1128, 2]
+// Dependencies: [2038, 6069, 1113, 2]
 // Exports: interactionCallbackErrorReason
 
-// Module 6049 (interactionCallbackErrorReason)
-import intl12 from "intl" /* 1128 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6050 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+// Module 6068 (interactionCallbackErrorReason)
+import intl12 from "intl" /* 1113 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6069 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interactions/interactionCallbackErrorReason.tsx");
 
-export const interactionCallbackErrorReason = function interactionCallbackErrorReason(reason, applicationId) {
+export function interactionCallbackErrorReason(reason, applicationId) {
   if (InteractionCallbackErrorDefault.ReasonCodes.TIMEOUT === reason) {
     let formatToPlainStringResult;
     const application = ApplicationStore.getApplication(applicationId);
@@ -70,4 +70,4 @@ export const interactionCallbackErrorReason = function interactionCallbackErrorR
     const intl8 = intl12.intl;
     return intl8.string(intl12.t.hHGrWz);
   }
-};
+}

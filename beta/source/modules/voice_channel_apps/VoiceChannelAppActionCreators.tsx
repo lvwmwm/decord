@@ -1,33 +1,33 @@
-// Module ID: 13881
-// Function ID: 13882
+// Module ID: 14399
+// Function ID: 14400
 // Name: VoiceChannelAppActionCreators
-// Dependencies: [6807, 584, 12745, 10798, 2]
+// Dependencies: [6846, 572, 13188, 10938, 2]
 // Exports: closeVoiceChannelApp, toggleVoiceChannelAppSurface
 
-// Module 13881 (VoiceChannelAppActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import leaveFrame from "leaveFrame" /* 10798 */;
-import voiceChannelAppSession from "voiceChannelAppSession" /* 12745 */;
-import FramesStore from "FramesStore" /* 6807 */;
+// Module 14399 (VoiceChannelAppActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import leaveFrame from "leaveFrame" /* 10938 */;
+import voiceChannelAppSession from "voiceChannelAppSession" /* 13188 */;
+import FramesStore from "FramesStore" /* 6846 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_apps/VoiceChannelAppActionCreators.tsx");
 
-export const toggleVoiceChannelAppSurface = function toggleVoiceChannelAppSurface(id) {
+export function toggleVoiceChannelAppSurface(id) {
   const obj = DispatcherDefault;
   const obj2 = { type: "VOICE_CHANNEL_APP_SURFACE_TOGGLE", channelId: id };
   obj.dispatch(obj2);
-};
-export const closeVoiceChannelApp = function closeVoiceChannelApp(id) {
+}
+export function closeVoiceChannelApp(channelId) {
   const getFramesForSurface = FramesStore.getFramesForSurface;
   const obj = voiceChannelAppSession;
-  const framesForSurface = getFramesForSurface(obj.voiceChannelAppSurface(id));
+  const framesForSurface = getFramesForSurface(obj.voiceChannelAppSurface(channelId));
   for (const item10014 of framesForSurface) {
     let obj2 = leaveFrame;
     let leaveFrameResult = obj2.leaveFrame(item10014.id);
     continue;
   }
   const obj3 = DispatcherDefault;
-  const obj4 = { type: "VOICE_CHANNEL_APP_CLOSE", channelId: id };
+  const obj4 = { type: "VOICE_CHANNEL_APP_CLOSE", channelId };
   obj3.dispatch(obj4);
-};
+}

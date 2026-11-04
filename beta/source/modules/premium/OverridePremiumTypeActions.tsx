@@ -1,24 +1,23 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 17689
+// Function ID: 17690
 // Name: OverridePremiumTypeActions
-// Dependencies: [1392, 584, 10239, 2]
+// Dependencies: [1383, 572, 10319, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 17085 (OverridePremiumTypeActions)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import createMessage from "createMessage" /* 10239 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 17689 (OverridePremiumTypeActions)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import createMessage from "createMessage" /* 10319 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");
 
-export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, stateFromStores) {
+export function updateClientPremiumTypeOverride(premiumType, currentUser) {
   let obj6;
-  let currentUser = stateFromStores;
   const obj = DispatcherDefault;
   const obj2 = { type: "SET_PREMIUM_TYPE_OVERRIDE", premiumType };
   obj.dispatch(obj2);
-  if (stateFromStores == null) {
+  if (currentUser == null) {
     currentUser = UserStore.getCurrentUser();
   }
   if (null != currentUser) {
@@ -31,9 +30,9 @@ export const updateClientPremiumTypeOverride = function updateClientPremiumTypeO
     obj6 = createMessage;
     dispatch(obj4);
   }
-};
-export const updateClientCreatedAtOverride = function updateClientCreatedAtOverride(createdAt) {
+}
+export function updateClientCreatedAtOverride(createdAt) {
   const obj = DispatcherDefault;
   const obj2 = { type: "SET_CREATED_AT_OVERRIDE", createdAt };
   obj.dispatch(obj2);
-};
+}

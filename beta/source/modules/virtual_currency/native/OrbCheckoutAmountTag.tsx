@@ -1,17 +1,16 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 14432
+// Function ID: 14433
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 5003, 587, 558, 576, 9461, 1128, 5266, 2]
+// Dependencies: [17, 21, 5014, 575, 9532, 5624, 1113, 2]
+// Exports: default
 
-// Module 13912 (OrbCheckoutAmountTag)
+// Module 14432 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
-import react from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import OrbsIcon from "OrbsIcon" /* 9461 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import OrbsIcon from "OrbsIcon" /* 9532 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -22,72 +21,9 @@ const View = react_native.View;
 let obj = { orbAmountTag: obj2, orbsIcon: { width: 14, height: 14 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutAmountTag(orbAmount) {
-  let items;
-  let tmp5;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(11);
-  orbAmount = orbAmount.orbAmount;
-  const tmp4 = closure_5();
-  if (cResult[0] !== tmp4.orbsIcon) {
-    const obj2 = { size: "custom", color: "icon-strong", style: tmp4.orbsIcon };
-    const tmp7 = _false(OrbsIcon.OrbsIcon, obj2);
-    cResult[0] = tmp4.orbsIcon;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== orbAmount) {
-    let stringResult;
-    if (null == orbAmount) {
-      const intl2 = tmp(1128).intl;
-      stringResult = intl2.string(tmp(1128).t.pfChQr);
-    } else {
-      const intl = tmp(1128).intl;
-      const obj3 = { orbAmount };
-      stringResult = intl.formatToPlainString(tmp(1128).t.W4DfeF, obj3);
-    }
-    cResult[2] = orbAmount;
-    cResult[3] = stringResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  let str = "--";
-  if (null != orbAmount) {
-    str = orbAmount;
-  }
-  if (cResult[4] === tmp8) {
-    let tmp11;
-    if (cResult[5] === str) {
-      tmp11 = cResult[6];
-    }
-    if (cResult[7] === tmp4.orbAmountTag) {
-      if (cResult[8] === tmp5) {
-        let tmp13;
-        if (cResult[9] === tmp11) {
-          tmp13 = cResult[10];
-        }
-        return tmp13;
-      }
-    }
-    const obj4 = { style: tmp4.orbAmountTag, children: items };
-    items = [tmp5, tmp11];
-    const tmp16 = React3(View, obj4);
-    cResult[7] = tmp4.orbAmountTag;
-    cResult[8] = tmp5;
-    cResult[9] = tmp11;
-    cResult[10] = tmp16;
-    tmp13 = tmp16;
-  }
-  const tmp12 = _false(Text_Text.Text, { variant: "text-md/semibold", accessibilityLabel: tmp8, children: str });
-  cResult[4] = tmp8;
-  cResult[5] = str;
-  cResult[6] = tmp12;
-  tmp11 = tmp12;
-}) : (function OrbCheckoutAmountTag(orbAmount) {
+const result = size.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
+
+export default function OrbCheckoutAmountTag(orbAmount) {
   let items;
   let str;
   let stringResult;
@@ -102,12 +38,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutA
   const tmp3 = View;
   const tmp4 = _false;
   if (null == orbAmount) {
-    const intl2 = tmp5(1128).intl;
-    stringResult = intl2.string(tmp5(1128).t.pfChQr);
+    const intl2 = tmp5(1113).intl;
+    stringResult = intl2.string(tmp5(1113).t.pfChQr);
   } else {
-    const intl = tmp5(1128).intl;
+    const intl = tmp5(1113).intl;
     const obj3 = { orbAmount };
-    stringResult = intl.formatToPlainString(tmp5(1128).t.W4DfeF, obj3);
+    stringResult = intl.formatToPlainString(tmp5(1113).t.W4DfeF, obj3);
   }
   const obj4 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: str };
   str = "--";
@@ -116,7 +52,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutA
   }
   items[1] = tmp4(Text, obj4);
   return tmp2(tmp3, obj);
-});
-const result = size.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
-
-export default tmp3;
+};

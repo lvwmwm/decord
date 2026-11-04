@@ -1,13 +1,13 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9850
+// Function ID: 9851
 // Name: SelectedConversationStore
-// Dependencies: [7729, 7733, 504, 584, 2]
+// Dependencies: [7767, 7770, 504, 572, 2]
 
-// Module 9769 (SelectedConversationStore)
+// Module 9850 (SelectedConversationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7729 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7733 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7767 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;
 import size from "module_2" /* 2 */;
 
 let _null;
@@ -32,27 +32,19 @@ class SelectedConversationStore extends Store {
     }
     return conversationId;
   }
-  getConversation(channelId) {
+  getConversation(arg0) {
     let cacheType;
     let conversationId;
-    channelId = undefined;
+    let channelId;
     if (_null != null) {
       channelId = _null.channelId;
     }
-    if (channelId !== channelId) {
+    if (channelId !== arg0) {
       return null;
     } else {
       ({ cacheType, conversationId } = _null);
       if ("channel" === cacheType) {
-        const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
-        let conversation;
-        if (conversationMetadata != null) {
-          conversation = conversationMetadata.conversation;
-        }
-        if (conversation == null) {
-          conversation = null;
-        }
-        return conversation;
+        return ChannelConversationsStore.getConversation(arg0, conversationId);
       } else if ("preview" === cacheType) {
         return ConversationPreviewStore.getConversation(conversationId);
       } else {

@@ -1,11 +1,11 @@
-// Module ID: 4956
-// Function ID: 4957
+// Module ID: 4967
+// Function ID: 4968
 // Name: emojiPacksFromServer
-// Dependencies: [4952, 2]
+// Dependencies: [4963, 2]
 // Exports: emojiPacksFromServer
 
-// Module 4956 (emojiPacksFromServer)
-import EmojiTypes from "EmojiTypes" /* 4952 */;
+// Module 4967 (emojiPacksFromServer)
+import EmojiTypes from "EmojiTypes" /* 4963 */;
 import size from "module_2" /* 2 */;
 
 function indexEmojiPacks(arg0) {
@@ -32,7 +32,7 @@ function indexEmojiPacks(arg0) {
 const result = size.fileFinishedImporting("modules/emojis/default_emojis/emojiPacksFromServer.tsx");
 
 export { indexEmojiPacks };
-export const emojiPacksFromServer = function emojiPacksFromServer(packs) {
+export function emojiPacksFromServer(packs) {
   return indexEmojiPacks(packs.map((id) => {
     let emojis;
     let obj = {
@@ -49,4 +49,4 @@ export const emojiPacksFromServer = function emojiPacksFromServer(packs) {
     emojis = id.emojis;
     return obj;
   }));
-};
+}

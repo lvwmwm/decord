@@ -1,19 +1,19 @@
-// Module ID: 12901
-// Function ID: 12902
+// Module ID: 13348
+// Function ID: 13349
 // Name: openAccountStanding
-// Dependencies: [1087, 7522, 2]
+// Dependencies: [1072, 7563, 2]
 // Exports: openAccountStanding
 
-// Module 12901 (openAccountStanding)
-import Constants from "Constants" /* 1087 */;
-import openUserSettings from "openUserSettings" /* 7522 */;
+// Module 13348 (openAccountStanding)
+import Constants from "Constants" /* 1072 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/openAccountStanding.tsx");
 
-export const openAccountStanding = function openAccountStanding() {
+export function openAccountStanding() {
   const obj = openUserSettings;
   const obj2 = { screen: UserSettingsSections.ACCOUNT_STANDING };
   obj.openUserSettings(obj2);
-};
+}

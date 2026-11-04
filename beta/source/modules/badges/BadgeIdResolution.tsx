@@ -1,15 +1,15 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8764
+// Function ID: 8765
 // Name: BadgeIdResolution
-// Dependencies: [8715, 8704, 8716, 8705, 8717, 2]
+// Dependencies: [8765, 8754, 8766, 8755, 8767, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId, toProfileBadgeLegacyId
 
-// Module 8714 (BadgeIdResolution)
-import Constants from "Constants" /* 8704 */;
-import BadgeId from "BadgeId" /* 8705 */;
-import Constants2 from "Constants" /* 8715 */;
-import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 8716 */;
-import types from "types" /* 8717 */;
+// Module 8764 (BadgeIdResolution)
+import Constants from "Constants" /* 8754 */;
+import BadgeId from "BadgeId" /* 8755 */;
+import Constants2 from "Constants" /* 8765 */;
+import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 8766 */;
+import types from "types" /* 8767 */;
 import size from "module_2" /* 2 */;
 
 const DEFAULT_PREMIUM_BADGE_ID = Constants2.DEFAULT_PREMIUM_BADGE_ID;
@@ -22,10 +22,10 @@ const map = new Map(items1);
 const set = new Set(Object.values(LegacyBadgeIdMap.LEGACY_BADGE_ID_MAP));
 const result = size.fileFinishedImporting("modules/badges/BadgeIdResolution.tsx");
 
-export const legacyBadgeIdToBadgeId = function legacyBadgeIdToBadgeId(arg0) {
+export function legacyBadgeIdToBadgeId(arg0) {
   return LegacyBadgeIdMap.LEGACY_BADGE_ID_MAP[arg0];
-};
-export const resolveProfileBadgeId = function resolveProfileBadgeId(id) {
+}
+export function resolveProfileBadgeId(id) {
   const tmp3 = LegacyBadgeIdMap.LEGACY_BADGE_ID_MAP[id];
   if (null != tmp3) {
     return tmp3;
@@ -37,14 +37,14 @@ export const resolveProfileBadgeId = function resolveProfileBadgeId(id) {
     }
     return tmp5;
   }
-};
-export const toProfileBadgeLegacyId = function toProfileBadgeLegacyId(badge_id) {
+}
+export function toProfileBadgeLegacyId(badge_id) {
   let value = map.get(badge_id);
   if (value == null) {
     value = getBadgeName(badge_id);
   }
   return value;
-};
-export const isLegacyBadgeId = function isLegacyBadgeId(badge_id) {
+}
+export function isLegacyBadgeId(badge_id) {
   return set.has(badge_id);
-};
+}

@@ -1,192 +1,32 @@
-// Module ID: 14050
-// Function ID: 14051
+// Module ID: 14576
+// Function ID: 14577
 // Name: useActivityStatusLabel
-// Dependencies: [6674, 4855, 4935, 5744, 4945, 5662, 1087, 558, 576, 504, 10670, 10668, 10669, 10676, 1128, 10680, 10685, 2]
+// Dependencies: [6714, 4863, 4946, 5761, 4956, 5679, 504, 5762, 10749, 10747, 10748, 10755, 1113, 10759, 10764, 2]
+// Exports: default
 
-// Module 14050 (useActivityStatusLabel)
-import Constants from "Constants" /* 1087 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10668 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10669 */;
-import isGameActivityDefault from "isGameActivity" /* 10676 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10680 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10685 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import PresenceStore from "PresenceStore" /* 5744 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14576 (useActivityStatusLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10747 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10748 */;
+import isGameActivityDefault from "isGameActivity" /* 10755 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10759 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10764 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 let type;
 
-const ActivityTypes = Constants.ActivityTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityStatusLabel(userId) {
-  let first;
-  let gameMentionsAsPlainText;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  let tmp = userId;
-  let obj = userId(gameMentionsAsPlainText[8]);
-  const cResult = obj.c(10);
-  userId = userId.userId;
-  const guildId = userId.guildId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = PresenceStore;
-    let items = [PresenceStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function f() {
-      if (null == userId) {
-        return null;
-      } else {
-        const activities = PresenceStore.getActivities(tmp);
-        let state;
-        if (activities != null) {
-          const found = activities.find((type) => type.type === constants.CUSTOM_STATUS);
-          if (found != null) {
-            state = found.state;
-          }
-        }
-        let tmp5 = null;
-        if (null != state) {
-          tmp5 = null;
-          if ("" !== state.trim()) {
-            tmp5 = state;
-          }
-        }
-        return tmp5;
-      }
-    };
-    let items1 = [userId];
-    cResult[1] = userId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(gameMentionsAsPlainText[9]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult3 = tmp(gameMentionsAsPlainText[10]);
-  gameMentionsAsPlainText = tmpResult3.useGameMentionsAsPlainText(stateFromStores);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [PresenceStore, , , , , ];
-    items2[1] = ApplicationStreamingStore;
-    items2[2] = RelationshipStore;
-    items2[3] = ChannelStore;
-    items2[4] = PermissionStore;
-    let tmp16 = VoiceStateStore;
-    items2[5] = VoiceStateStore;
-    cResult[4] = items2;
-    tmp10 = items2;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === gameMentionsAsPlainText) {
-    if (cResult[6] === guildId) {
-      let tmp17;
-      let tmp18;
-      if (cResult[7] === userId) {
-        tmp17 = cResult[8];
-        tmp18 = cResult[9];
-      }
-      const tmpResult4 = tmp(gameMentionsAsPlainText[9]);
-      return tmpResult4.useStateFromStores(tmp10, tmp17, tmp18);
-    }
-  }
-  class U {
-    constructor() {
-      let activities;
-      let voiceActivityStatusText;
-      const tmp = userId;
-      if (null != userId) {
-        if (RelationshipStore.isBlockedOrIgnored(tmp)) {
-          return null;
-        }
-      }
-      if (null != tmp) {
-        activities = PresenceStore.getActivities(tmp);
-      }
-      const items = [ApplicationStreamingStore, RelationshipStore];
-      const obj = useDiscoverableApplicationStream;
-      const discoverableApplicationStream = obj.getDiscoverableApplicationStream(tmp, items);
-      const obj2 = useUserVoiceActivity;
-      const obj3 = { userId: tmp, guildId };
-      const obj4 = { ChannelStore, PermissionStore, VoiceStateStore };
-      const voiceChannel = obj2.getVisibleUserVoiceActivity(obj3, obj4).voiceChannel;
-      if (null != discoverableApplicationStream) {
-        let name;
-        if (activities != null) {
-          const found = activities.find(isGameActivityDefault);
-          if (found != null) {
-            name = found.name;
-          }
-        }
-        if (null != name) {
-          let formatToPlainStringResult;
-          if ("" !== name) {
-            const intl2 = tmp4(1128).intl;
-            const obj5 = { name };
-            formatToPlainStringResult = intl2.formatToPlainString(tmp4(1128).t["0wJXSh"], obj5);
-          }
-          voiceActivityStatusText = formatToPlainStringResult;
-        }
-        const intl = tmp4(1128).intl;
-        formatToPlainStringResult = intl.string(tmp4(1128).t.eXan7B);
-      } else {
-        let found1;
-        if (activities != null) {
-          found1 = activities.find((type) => {
-            type = type.type;
-            return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
-          });
-        }
-        if (null != found1) {
-          let text = getActivityStatusTextDefault(found1, true).text;
-          if (text == null) {
-            text = null;
-          }
-          voiceActivityStatusText = text;
-        } else {
-          voiceActivityStatusText = null;
-          if (null != voiceChannel) {
-            const tmp4Result = VoiceActivityStatus;
-            voiceActivityStatusText = tmp4Result.getVoiceActivityStatusText(voiceChannel);
-          }
-        }
-      }
-      const items1 = [voiceActivityStatusText, gameMentionsAsPlainText];
-      const found2 = items1.filter((item) => null != item && "" !== item);
-      const joined = found2.join(", ");
-      let tmp16 = null;
-      if ("" !== joined) {
-        tmp16 = joined;
-      }
-      return tmp16;
-    }
-  }
-  const items3 = [userId, guildId, gameMentionsAsPlainText];
-  cResult[5] = gameMentionsAsPlainText;
-  cResult[6] = guildId;
-  cResult[7] = userId;
-  cResult[8] = U;
-  cResult[9] = items3;
-  tmp18 = items3;
-  tmp17 = U;
-}) : (function useActivityStatusLabel(userId) {
+const result = size.fileFinishedImporting("modules/activity_status/native/useActivityStatusLabel.tsx");
+
+export default function useActivityStatusLabel(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
   let gameMentionsAsPlainText;
-  let obj = userId(gameMentionsAsPlainText[9]);
+  let obj = userId(gameMentionsAsPlainText[6]);
   let items = [PresenceStore];
   let items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -196,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       const activities = PresenceStore.getActivities(tmp);
       let state;
       if (activities != null) {
-        const found = activities.find((type) => type.type === constants.CUSTOM_STATUS);
+        const found = activities.find((type) => type.type === userId(gameMentionsAsPlainText[7]).ActivityTypes.CUSTOM_STATUS);
         if (found != null) {
           state = found.state;
         }
@@ -211,9 +51,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       return tmp5;
     }
   }, items1);
-  let obj2 = userId(gameMentionsAsPlainText[10]);
+  let obj2 = userId(gameMentionsAsPlainText[8]);
   gameMentionsAsPlainText = obj2.useGameMentionsAsPlainText(stateFromStores);
-  let obj3 = userId(gameMentionsAsPlainText[9]);
+  let obj3 = userId(gameMentionsAsPlainText[6]);
   const items2 = [PresenceStore, ApplicationStreamingStore, RelationshipStore, ChannelStore, PermissionStore, VoiceStateStore];
   const items3 = [userId, guildId, gameMentionsAsPlainText];
   return obj3.useStateFromStores(items2, () => {
@@ -226,6 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       }
     }
     if (null != tmp) {
+      let tmp3 = PresenceStore;
       activities = PresenceStore.getActivities(tmp);
     }
     const items = [ApplicationStreamingStore, RelationshipStore];
@@ -246,20 +87,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       if (null != name) {
         let formatToPlainStringResult;
         if ("" !== name) {
-          const intl2 = tmp4(1128).intl;
+          const intl2 = tmp4(1113).intl;
           const obj5 = { name };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1128).t["0wJXSh"], obj5);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp4(1113).t["0wJXSh"], obj5);
         }
         voiceActivityStatusText = formatToPlainStringResult;
       }
-      const intl = tmp4(1128).intl;
-      formatToPlainStringResult = intl.string(tmp4(1128).t.eXan7B);
+      const intl = tmp4(1113).intl;
+      formatToPlainStringResult = intl.string(tmp4(1113).t.eXan7B);
     } else {
       let found1;
       if (activities != null) {
         found1 = activities.find((type) => {
           type = type.type;
-          return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
+          const tmp3 = type !== userId(gameMentionsAsPlainText[7]).ActivityTypes.CUSTOM_STATUS && type !== userId(gameMentionsAsPlainText[7]).ActivityTypes.HANG_STATUS;
+          return tmp3;
         });
       }
       if (null != found1) {
@@ -285,7 +127,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     }
     return tmp16;
   }, items3);
-});
-const result = size.fileFinishedImporting("modules/activity_status/native/useActivityStatusLabel.tsx");
-
-export default tmp2;
+};

@@ -1,54 +1,32 @@
-// Module ID: 16802
-// Function ID: 16803
+// Module ID: 17405
+// Function ID: 17406
 // Name: EnableSwitchIconsSetting
-// Dependencies: [5004, 8364, 558, 576, 504, 11240, 1128, 15721, 2]
+// Dependencies: [5015, 8432, 504, 11540, 1113, 16270, 2]
+// Exports: useEnableSwitchIconsSettingValue
 
-// Module 16802 (EnableSwitchIconsSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15721 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17405 (EnableSwitchIconsSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnableSwitchIconsSettingValue() {
-  let isSwitchIconsEnabled;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function s() {
-      return isSwitchIconsEnabled.isSwitchIconsEnabled;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useEnableSwitchIconsSettingValue() {
+function useEnableSwitchIconsSettingValue() {
   let isSwitchIconsEnabled;
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
-});
+}
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["S3z+pV"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  useValue: useEnableSwitchIconsSettingValue,
   onValueChange: AccessibilityActionCreators.setSwitchIconsEnabled,
   hasIcon: true
 };
@@ -56,4 +34,4 @@ const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EnableSwitchIconsSetting.tsx");
 
 export default toggle;
-export const useEnableSwitchIconsSettingValue = tmp2;
+export { useEnableSwitchIconsSettingValue };

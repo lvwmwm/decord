@@ -1,12 +1,12 @@
-// Module ID: 9354
-// Function ID: 9355
+// Module ID: 9393
+// Function ID: 9394
 // Name: GameProfileMobileStoreLinkUtils
-// Dependencies: [9305, 1106, 2]
+// Dependencies: [9343, 1091, 2]
 // Exports: getMobileStoreLink
 
-// Module 9354 (GameProfileMobileStoreLinkUtils)
-import ApplicationDistributors from "ApplicationDistributors" /* 1106 */;
-import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9305 */;
+// Module 9393 (GameProfileMobileStoreLinkUtils)
+import ApplicationDistributors from "ApplicationDistributors" /* 1091 */;
+import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9343 */;
 import size from "module_2" /* 2 */;
 
 let websiteHostnames;
@@ -40,7 +40,7 @@ const result = size.fileFinishedImporting("modules/game_profile/GameProfileMobil
 
 export const MOBILE_STORES = obj;
 export const MOBILE_STORE_WEBSITE_CATEGORIES = set;
-export const getMobileStoreLink = function getMobileStoreLink(thirdPartySkus, buildUrl) {
+export function getMobileStoreLink(thirdPartySkus, buildUrl) {
   function getMobileStoreWebsite(thirdPartySkus, buildUrl) {
     let closure_1 = buildUrl;
     function _loop(iter) {
@@ -99,4 +99,4 @@ export const getMobileStoreLink = function getMobileStoreLink(thirdPartySkus, bu
     tmp = tmp4;
   }
   return tmp;
-};
+}

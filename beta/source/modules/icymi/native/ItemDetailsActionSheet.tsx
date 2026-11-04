@@ -1,21 +1,21 @@
-// Module ID: 17945
-// Function ID: 17946
+// Module ID: 18536
+// Function ID: 18537
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 4855, 4877, 8855, 21, 5003, 587, 558, 576, 504, 5636, 6958, 6915, 1202, 8872, 11045, 17946, 7019, 6935, 7330, 2]
+// Dependencies: [19, 17, 4863, 4885, 8906, 21, 5014, 575, 504, 5652, 7000, 6957, 1187, 8923, 7366, 11144, 18537, 7060, 6975, 2]
+// Exports: default
 
-// Module 17945 (ItemDetailsActionSheet)
+// Module 18536 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5636 */;
-import useDesignToggleDefault from "useDesignToggle" /* 6958 */;
+import nativeDefault from "native" /* 575 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import useDesignToggleDefault from "useDesignToggle" /* 7000 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ICYMIStore from "ICYMIStore" /* 8855 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import ICYMIStore from "ICYMIStore" /* 8906 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -24,211 +24,23 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let tmp5;
-const native = tmp(1202);
-const GuildIcon = tmp(6915);
-const GuildIconDefault = tmp5(6915);
-const TableRow2 = tmp(6935);
-const TableRowGroup2 = tmp(7019);
-const ActionSheet2 = tmp(7330);
-const ICYMIUtils = tmp(8872);
-const ActionSheetIconHeader2 = tmp(11045);
-const ICYMIContentSettingControl = tmp(17946);
+const native = tmp(1187);
+const GuildIcon = tmp(6957);
+const GuildIconDefault = tmp5(6957);
+const TableRow2 = tmp(6975);
+const TableRowGroup2 = tmp(7060);
+const ActionSheet2 = tmp(7366);
+const ICYMIUtils = tmp(8923);
+const ActionSheetIconHeader2 = tmp(11144);
+const ICYMIContentSettingControl = tmp(18537);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_10 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDetailsActionSheet(guildId) {
-  let first;
-  let id;
-  let tmp10;
-  let tmp14;
-  let tmp16;
-  let tmp19;
-  let tmp6;
-  let tmp8;
-  const tmp = guildId;
-  const obj = guildId(id[9]);
-  const cResult = obj.c(37);
-  guildId = guildId.guildId;
-  const channelId = guildId.channelId;
-  id = guildId.id;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function _() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(id[10]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildStore];
-    cResult[3] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== guildId) {
-    const fn2 = function f() {
-      return GuildStore.getGuild(guildId);
-    };
-    cResult[4] = guildId;
-    cResult[5] = fn2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[5];
-  }
-  const tmpResult3 = tmp(id[10]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
-  const tmp13 = channelId(id[11])(stateFromStores, true);
-  const tmp12 = channelId;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [ICYMIStore];
-    cResult[6] = items2;
-    tmp14 = items2;
-  } else {
-    tmp14 = cResult[6];
-  }
-  if (cResult[7] !== id) {
-    class C {
-      constructor() {
-        let dehydratedItem = null;
-        if (null != id) {
-          dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-        }
-        return dehydratedItem;
-      }
-    }
-    cResult[7] = id;
-    cResult[8] = C;
-    tmp16 = C;
-  } else {
-    class C {
-      constructor() {
-        let dehydratedItem = null;
-        if (null != id) {
-          dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-        }
-        return dehydratedItem;
-      }
-    }
-  }
-  const tmpResult4 = tmp(id[10]);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp14, tmp16);
-  tmp12(id[12])("show_icymi_debug_scores");
-  if (null != stateFromStores1) {
-    class C {
-      constructor() {
-        let dehydratedItem = null;
-        if (null != id) {
-          dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-        }
-        return dehydratedItem;
-      }
-    }
-    tmp19 = tmp21;
-  } else {
-    class C {
-      constructor() {
-        let dehydratedItem = null;
-        if (null != id) {
-          dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-        }
-        return dehydratedItem;
-      }
-    }
-    if (null != stateFromStores) {
-      class C {
-        constructor() {
-          let dehydratedItem = null;
-          if (null != id) {
-            dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-          }
-          return dehydratedItem;
-        }
-      }
-      tmp19 = tmp20;
-    }
-  }
-  closure_10();
-  if (cResult[13] === stateFromStores) {
-    class C {
-      constructor() {
-        let dehydratedItem = null;
-        if (null != id) {
-          dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-        }
-        return dehydratedItem;
-      }
-    }
-    if (stateFromStores1 != null) {
-      class C {
-        constructor() {
-          let dehydratedItem = null;
-          if (null != id) {
-            dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-          }
-          return dehydratedItem;
-        }
-      }
-    }
-    if (undefined == null) {
-      class C {
-        constructor() {
-          let dehydratedItem = null;
-          if (null != id) {
-            dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-          }
-          return dehydratedItem;
-        }
-      }
-    }
-    if (cResult[16] === tmp13) {
-      class C {
-        constructor() {
-          let dehydratedItem = null;
-          if (null != id) {
-            dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-          }
-          return dehydratedItem;
-        }
-      }
-    }
-    const obj2 = { icon: tmp19, title: tmp13, subtitle: undefined };
-    cResult[16] = tmp13;
-    cResult[17] = tmp19;
-    cResult[18] = undefined;
-    cResult[19] = closure_7(tmp(id[16]).ActionSheetIconHeader, obj2);
-    const tmp27 = closure_7(tmp(id[16]).ActionSheetIconHeader, obj2);
-  }
-  let result = null != stateFromStores && null != stateFromStores1;
-  if (result) {
-    class C {
-      constructor() {
-        let dehydratedItem = null;
-        if (null != id) {
-          dehydratedItem = ICYMIStore.getDehydratedItem(tmp);
-        }
-        return dehydratedItem;
-      }
-    }
-    result = obj5.isChannelCustomScoreEligible(stateFromStores);
-  }
-  cResult[13] = stateFromStores;
-  cResult[14] = stateFromStores1;
-  cResult[15] = result;
-}) : (function ItemDetailsActionSheet(arg0) {
+let result = size.fileFinishedImporting("modules/icymi/native/ItemDetailsActionSheet.tsx");
+
+export default function ItemDetailsActionSheet(arg0) {
   let TableRow;
   let items3;
   let items4;
@@ -317,7 +129,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDetail
   }
   items3[2] = tmp16Result2;
   return closure_9(ActionSheet, obj7);
-});
-let result = size.fileFinishedImporting("modules/icymi/native/ItemDetailsActionSheet.tsx");
-
-export default tmp4;
+};

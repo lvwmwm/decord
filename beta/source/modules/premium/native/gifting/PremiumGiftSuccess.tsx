@@ -1,19 +1,19 @@
-// Module ID: 13970
-// Function ID: 13971
+// Module ID: 14490
+// Function ID: 14491
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 9552, 4852, 21, 5003, 587, 558, 576, 1633, 10482, 38, 13971, 10540, 10522, 504, 4840, 4839, 13972, 13973, 13974, 2]
+// Dependencies: [19, 17, 9626, 4860, 21, 5014, 575, 1625, 10562, 38, 14491, 10622, 10604, 504, 4848, 4847, 14492, 14493, 14494, 2]
+// Exports: default
 
-// Module 13970 (PremiumGiftSuccess)
+// Module 14490 (PremiumGiftSuccess)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
+import nativeDefault from "native" /* 575 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4848 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9552 */;
+import PromotionsStore from "PromotionsStore" /* 9626 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,107 +33,9 @@ let closure_10 = createStyles.createStyles((arg0) => {
   const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_LOW);
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftSuccess() {
-  let closure_1;
-  let giftCodeRecord;
-  let recipientUser;
-  let reminderNotice;
-  let selectedGiftingPromotionReward;
-  let stateFromStores;
-  let tmp11;
-  let tmp12;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(23);
-  closure_10(require("useSafeAreaInsets")().bottom);
-  let obj2 = require("NativeGiftContext");
-  const nativeGiftContext = obj2.useNativeGiftContext();
-  ({ recipientUser, giftCodeRecord, selectedGiftingPromotionReward } = nativeGiftContext);
-  require("module_38")(null != giftCodeRecord, "Gift code record cannot be null on success screen");
-  const tmp8 = require("useGiftingPromotionConfig")();
-  _require = tmp8;
-  const tmp9 = require("useShouldShowGiftingPromotionDeco")();
-  const tmp4 = importDefault;
-  importDefault = tmp9;
-  const obj3 = require("useFetchCollectiblesCategoriesAndPurchases");
-  const getOrFetchPurchase = obj3.useGetOrFetchPurchase(selectedGiftingPromotionReward, false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PromotionsStore];
-    class S {
-      constructor() {
-        giftPromotion = giftPromotion.getGiftPromotion();
-        let id;
-        if (giftPromotion != null) {
-          id = giftPromotion.id;
-        }
-        return id;
-      }
-    }
-    cResult[0] = items;
-    cResult[1] = S;
-    tmp11 = items;
-    tmp12 = S;
-  } else {
-    [tmp11, tmp12] = cResult;
-  }
-  const tmpResult = tmp(stateFromStores[15]);
-  stateFromStores = tmpResult.useStateFromStores(tmp11, tmp12);
-  if (cResult[2] === stateFromStores) {
-    if (cResult[3] === tmp8) {
-      let tmp15;
-      let tmp16;
-      let tmp21;
-      if (cResult[4] === tmp9) {
-        tmp15 = cResult[5];
-        tmp16 = cResult[6];
-      }
-      const effect = react.useEffect(tmp15, tmp16);
-      class S {
-        constructor() {
-          giftPromotion = giftPromotion.getGiftPromotion();
-          let id;
-          if (giftPromotion != null) {
-            id = giftPromotion.id;
-          }
-          return id;
-        }
-      }
-      if (null == recipientUser) {
-        class S {
-          constructor() {
-            giftPromotion = giftPromotion.getGiftPromotion();
-            let id;
-            if (giftPromotion != null) {
-              id = giftPromotion.id;
-            }
-            return id;
-          }
-        }
-      } else {
-        tmp21 = closure_7(tmp4(stateFromStores[19]), {});
-      }
-      cResult[7] = giftCodeRecord;
-      cResult[8] = recipientUser;
-      cResult[9] = tmp21;
-    }
-  }
-  const fn = function h() {
-    const tmp = null != reminderNotice && null != reminderNotice.reminderNotice && closure_1 && null != stateFromStores;
-    if (tmp) {
-      const obj2 = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
-      const obj = DismissibleContentUtils;
-      const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores, obj2);
-    }
-  };
-  const items1 = [tmp9, tmp8, stateFromStores];
-  cResult[2] = stateFromStores;
-  cResult[3] = tmp8;
-  cResult[4] = tmp9;
-  cResult[5] = fn;
-  cResult[6] = items1;
-  tmp16 = items1;
-  tmp15 = fn;
-}) : (function PremiumGiftSuccess() {
+let result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
+
+export default function PremiumGiftSuccess() {
   let closure_1;
   let giftCodeRecord;
   let items2;
@@ -177,20 +79,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftS
   }, items1);
   if (null == recipientUser) {
     const obj4 = { giftCodeRecord };
-    tmp13 = closure_7(tmp(tmp2[18]), obj4);
+    tmp13 = closure_7(tmp(tmp2[16]), obj4);
     tmp12 = closure_7;
   } else {
     tmp12 = closure_7;
-    tmp13 = closure_7(tmp(tmp2[19]), {});
+    tmp13 = closure_7(tmp(tmp2[17]), {});
   }
   if (null != getOrFetchPurchase) {
     const obj5 = { purchase: getOrFetchPurchase };
-    tmp12Result = tmp12(tmp(tmp2[20]), obj5);
+    tmp12Result = tmp12(tmp(tmp2[18]), obj5);
   } else if (null == recipientUser) {
     const obj6 = { giftCodeRecord };
-    tmp12Result = tmp12(tmp4(tmp2[18]).PremiumGiftSuccessActions, obj6);
+    tmp12Result = tmp12(tmp4(tmp2[16]).PremiumGiftSuccessActions, obj6);
   } else {
-    tmp12Result = tmp12(tmp4(tmp2[19]).PremiumGiftDMSuccessActions, {});
+    tmp12Result = tmp12(tmp4(tmp2[17]).PremiumGiftDMSuccessActions, {});
   }
   const obj7 = { children: items2 };
   items2 = [, ];
@@ -199,7 +101,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftS
   const obj9 = { style: tmp3.actionContainer, children: tmp12Result };
   items2[1] = tmp12(View, obj9);
   return closure_9(closure_8, obj7);
-});
-let result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
-
-export default tmp3;
+};

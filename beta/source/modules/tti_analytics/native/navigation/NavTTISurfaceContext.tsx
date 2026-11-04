@@ -1,20 +1,17 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 13329
+// Function ID: 13330
 // Name: NavTTISurfaceContext
-// Dependencies: [19, 558, 2]
+// Dependencies: [19, 2]
 // Exports: useNavTTISurface
 
-// Module 12882 (NavTTISurfaceContext)
+// Module 13329 (NavTTISurfaceContext)
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const context = react.createContext(null);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavTTISurfaceContext.tsx");
+const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavTTISurfaceContext.tsx");
 
 export const NavTTISurfaceContext = context;
-export const useNavTTISurface = function useNavTTISurface() {
+export function useNavTTISurface() {
   return react.useContext(context);
-};
+}

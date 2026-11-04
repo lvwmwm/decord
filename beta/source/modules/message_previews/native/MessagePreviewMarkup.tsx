@@ -1,17 +1,17 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 11044
+// Function ID: 11045
 // Name: MessagePreviewMarkup
-// Dependencies: [6013, 6014, 12094, 1951, 5737, 5675, 1459, 2]
+// Dependencies: [6033, 6034, 11045, 1943, 5754, 5692, 1451, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 12093 (MessagePreviewMarkup)
-import LRUCacheDefault from "LRUCache" /* 1459 */;
-import _modDef1951 from "module_1951" /* 1951 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5675 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5737 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 6013 */;
-import MarkupRulesDefault from "MarkupRules" /* 6014 */;
-import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 12094 */;
+// Module 11044 (MessagePreviewMarkup)
+import LRUCacheDefault from "LRUCache" /* 1451 */;
+import _modDef1943 from "module_1943" /* 1943 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5692 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5754 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 6033 */;
+import MarkupRulesDefault from "MarkupRules" /* 6034 */;
+import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11045 */;
 import size from "module_2" /* 2 */;
 
 function getOrParseMessagePreviewMarkupAST(arg0) {
@@ -54,7 +54,7 @@ const tmp2 = new LRUCacheDefault({ max: 2000 });
 let closure_3 = tmp2;
 let result = size.fileFinishedImporting("modules/message_previews/native/MessagePreviewMarkup.tsx");
 
-export const renderASTToReact = function renderASTToReact(layout) {
+export function renderASTToReact(layout) {
   let color;
   let fontScale;
   let initialParserState;
@@ -67,12 +67,12 @@ export const renderASTToReact = function renderASTToReact(layout) {
   items[0] = MarkupRulesDefault.RULES;
   items[1] = MarkupMessagePreviewReactRulesDefault(layout, color, fontScale, maxFontSizeMultiplier);
   const tmpResult = tmp(items);
-  const reactFor = _modDef1951.reactFor;
-  _modDef1951;
-  const obj = _modDef1951;
+  const reactFor = _modDef1943.reactFor;
+  _modDef1943;
+  const obj = _modDef1943;
   return reactFor(obj.ruleOutput(tmpResult, "react"))(tree, initialParserState);
-};
-export const getMessagePreviewASTParser = function getMessagePreviewASTParser(layout) {
+}
+export function getMessagePreviewASTParser(layout) {
   let color;
   let fontScale;
   let maxFontSizeMultiplier;
@@ -85,8 +85,8 @@ export const getMessagePreviewASTParser = function getMessagePreviewASTParser(la
   const tmpResult = tmp(items);
   const obj = MarkupUtilsDefault;
   return obj.astParserFor(tmpResult);
-};
-export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fontScale) {
+}
+export function renderMessagePreviewMarkup(fontScale) {
   let channelId;
   let color;
   let content;
@@ -123,11 +123,11 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
     items[0] = MarkupRulesDefault.RULES;
     items[1] = MarkupMessagePreviewReactRulesDefault(layout, color, num, maxFontSizeMultiplier);
     const tmp7Result = tmp7(items);
-    const reactFor = _modDef1951.reactFor;
-    _modDef1951;
-    const obj2 = _modDef1951;
+    const reactFor = _modDef1943.reactFor;
+    _modDef1943;
+    const obj2 = _modDef1943;
     return reactFor(obj2.ruleOutput(tmp7Result, "react"))(tmp4, obj3);
   }
-};
+}
 export const messagePreviewASTCache = tmp2;
 export { getOrParseMessagePreviewMarkupAST };

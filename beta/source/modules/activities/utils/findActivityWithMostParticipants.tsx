@@ -1,11 +1,11 @@
-// Module ID: 17527
-// Function ID: 17528
+// Module ID: 18123
+// Function ID: 18124
 // Name: findActivityWithMostParticipants
-// Dependencies: [4945, 2]
+// Dependencies: [4956, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 17527 (findActivityWithMostParticipants)
-import RelationshipStore_mod from "RelationshipStore" /* 4945 */;
+// Module 18123 (findActivityWithMostParticipants)
+import RelationshipStore_mod from "RelationshipStore" /* 4956 */;
 import size from "module_2" /* 2 */;
 
 let RelationshipStore = RelationshipStore_mod;
@@ -30,7 +30,7 @@ export default function findActivityWithMostParticipants(arr) {
   }
   return tmp;
 };
-export const findActivityWithMostNonBlockedOrIgnoredParticipants = function findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel) {
+export function findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel) {
   let blockedOrIgnored;
   let length;
   length = embeddedActivitiesForChannel.length;
@@ -53,4 +53,4 @@ export const findActivityWithMostNonBlockedOrIgnoredParticipants = function find
     });
     return RelationshipStore;
   }
-};
+}

@@ -1,21 +1,18 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9368
+// Function ID: 9369
 // Name: ObscuredSurfaceContext
-// Dependencies: [19, 558, 2]
+// Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 9330 (ObscuredSurfaceContext)
+// Module 9368 (ObscuredSurfaceContext)
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const context = react.createContext({ obscured: false });
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/safety_common/ObscuredSurfaceContext.tsx");
+const result = size.fileFinishedImporting("modules/safety_common/ObscuredSurfaceContext.tsx");
 
 export const ObscuredSurfaceContext = context;
 export const OBSCURED_VALUE = { obscured: true };
-export const useObscuredSurface = function useObscuredSurface() {
+export function useObscuredSurface() {
   return react.useContext(context);
-};
+}

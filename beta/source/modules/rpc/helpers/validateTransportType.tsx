@@ -1,20 +1,20 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 16338
+// Function ID: 16339
 // Name: validateTransportType
-// Dependencies: [6410, 1087, 9296, 2]
+// Dependencies: [6450, 1072, 9333, 2]
 // Exports: validateTransportType
 
-// Module 15787 (validateTransportType)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 6410 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
+// Module 16338 (validateTransportType)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 6450 */;
+import RPCErrorDefault from "RPCError" /* 9333 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants2.TransportTypes;
 const RPCErrors = Constants.RPCErrors;
 const result = size.fileFinishedImporting("modules/rpc/helpers/validateTransportType.tsx");
 
-export const validateTransportType = function validateTransportType(transport) {
+export function validateTransportType(transport) {
   if (TransportTypes.IPC !== transport) {
     if (TransportTypes.POST_MESSAGE !== transport) {
       const self = this;
@@ -24,4 +24,4 @@ export const validateTransportType = function validateTransportType(transport) {
       throw tmp5;
     }
   }
-};
+}

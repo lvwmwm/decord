@@ -1,12 +1,12 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 16301
+// Function ID: 16302
 // Name: CONTEXT_MENU_ICON_NAMES
-// Dependencies: [15760, 15762, 2, 15763]
-// Exports: createRPCCommand
+// Dependencies: [16302, 16304, 2, 16305]
+// Exports: createRPCCommand, createRPCEvent
 
-// Module 15759 (CONTEXT_MENU_ICON_NAMES)
-import helpers from "helpers" /* 15762 */;
-import contextMenuIcons from "contextMenuIcons" /* 15763 */;
+// Module 16301 (CONTEXT_MENU_ICON_NAMES)
+import helpers from "helpers" /* 16304 */;
+import contextMenuIcons from "contextMenuIcons" /* 16305 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -14,11 +14,11 @@ let closure_1, dependencyMap;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
 
 export const CONTEXT_MENU_ICON_NAMES = contextMenuIcons.CONTEXT_MENU_ICON_NAMES;
-export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
+export function createRPCCommand(AUTHENTICATE, scope) {
   let request;
   dependencyMap = undefined;
   let obj = { scope: scope.scope, validateAccess: scope.validateAccess, handler: scope.handler };
-  const tmp = request(15760).RPCCommandSchemas[AUTHENTICATE];
+  const tmp = request(16302).RPCCommandSchemas[AUTHENTICATE];
   request = undefined;
   if (tmp != null) {
     request = tmp.request;
@@ -34,4 +34,25 @@ export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
     };
   }
   return obj;
-};
+}
+export function createRPCEvent(ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, scope) {
+  let subscribeArgs;
+  dependencyMap = undefined;
+  let obj = { scope: scope.scope, handler: scope.handler };
+  const tmp = subscribeArgs(16302).RPCEventSchemas[ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE];
+  subscribeArgs = undefined;
+  if (tmp != null) {
+    subscribeArgs = tmp.subscribeArgs;
+  }
+  dependencyMap = null;
+  if (null != subscribeArgs) {
+    obj.validation = function validation(object) {
+      if (null == closure_1) {
+        const obj = helpers;
+        closure_1 = obj.joiReqObj(object.object(subscribeArgs(object)));
+      }
+      return closure_1;
+    };
+  }
+  return obj;
+}

@@ -1,14 +1,14 @@
-// Module ID: 17487
-// Function ID: 17488
+// Module ID: 18081
+// Function ID: 18082
 // Name: HomeDrawerSubtitleStore
-// Dependencies: [570, 2]
+// Dependencies: [560, 2]
 
-// Module 17487 (HomeDrawerSubtitleStore)
-import module_570 from "module_570" /* 570 */;
+// Module 18081 (HomeDrawerSubtitleStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let c0 = null;
-const obj = module_570.create((arg0, arg1) => {
+const obj = module_560.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   return {

@@ -1,32 +1,32 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17575
+// Function ID: 17576
 // Name: DevToolsActionCreators
-// Dependencies: [7825, 584, 2]
+// Dependencies: [7863, 572, 2]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools, updateDevToolsSettings
 
-// Module 16971 (DevToolsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7825 */;
+// Module 17575 (DevToolsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7863 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/devtools/DevToolsActionCreators.tsx");
 
-export const updateDevToolsSettings = function updateDevToolsSettings(settings) {
+export function updateDevToolsSettings(settings) {
   const obj = DispatcherDefault;
   const obj2 = { type: "DEV_TOOLS_SETTINGS_UPDATE", settings };
   obj.dispatch(obj2);
-};
-export const toggleDisplayDevTools = function toggleDisplayDevTools() {
+}
+export function toggleDisplayDevTools() {
   const obj = { displayTools: !DevToolsSettingsStore.displayTools };
   const obj2 = DispatcherDefault;
   obj2.dispatch({ type: "DEV_TOOLS_SETTINGS_UPDATE", settings: obj });
-};
-export const openDevTools = function openDevTools(lastOpenTabId, lastOpenSubTabId) {
+}
+export function openDevTools(lastOpenTabId, lastOpenSubTabId) {
   const obj = { displayTools: true, lastOpenTabId, lastOpenSubTabId };
   const obj2 = DispatcherDefault;
   obj2.dispatch({ type: "DEV_TOOLS_SETTINGS_UPDATE", settings: obj });
-};
-export const clearAnalyticsLog = function clearAnalyticsLog() {
+}
+export function clearAnalyticsLog() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "ANALYTICS_LOG_CLEAR" });
-};
+}

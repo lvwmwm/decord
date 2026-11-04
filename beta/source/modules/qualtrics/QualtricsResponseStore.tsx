@@ -1,15 +1,15 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7931
+// Function ID: 7932
 // Name: QualtricsResponseStore
-// Dependencies: [570, 2]
+// Dependencies: [560, 2]
 
-// Module 7891 (QualtricsResponseStore)
-import module_570 from "module_570" /* 570 */;
+// Module 7931 (QualtricsResponseStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let responses, set;
 
-let obj = module_570.create((arg0, arg1) => {
+let obj = module_560.create((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {

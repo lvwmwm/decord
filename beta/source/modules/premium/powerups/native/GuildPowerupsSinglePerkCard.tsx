@@ -1,68 +1,24 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 14144
+// Function ID: 14145
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 558, 576, 13474, 13456, 13452, 13473, 13522, 13527, 2]
+// Dependencies: [19, 21, 14094, 14076, 14072, 14093, 14141, 14145, 2]
+// Exports: default
 
-// Module 13526 (GuildPowerupsSinglePerkCard)
+// Module 14144 (GuildPowerupsSinglePerkCard)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13452 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13456 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13473 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13474 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13522 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 14072 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14076 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 14093 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14094 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 14141 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 14145 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp3;
-const GuildPowerupsPerkCardDefault = tmp3(13527);
 const jsx = Fragment.jsx;
-tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsSinglePerkCard(arg0) {
-  let badge;
-  let guildId;
-  let powerup;
-  const obj = react2;
-  const cResult = obj.c(8);
-  ({ guildId, powerup, badge } = arg0);
-  const tmp4 = useGetGuildPowerupBannerImageDefault(powerup, true);
-  const tmp5 = usePowerupActiveStatusDefault(guildId, powerup);
-  const tmp6 = useGuildPowerupRollbackEnabledDefault(guildId, powerup, "GuildPowerupsSinglePerkCard");
-  const obj2 = useCalculatePowerupCardStatus;
-  const calculatePowerupCardStatus = obj2.useCalculatePowerupCardStatus(powerup, tmp5, tmp6);
-  const tmp8 = useGuildPowerupOnShowMoreDefault(guildId, powerup);
-  let str = tmp4;
-  if (tmp4 == null) {
-    str = "";
-  }
-  if (cResult[0] === badge) {
-    if (cResult[1] === tmp8) {
-      if (cResult[2] === powerup.cost) {
-        if (cResult[3] === powerup.description) {
-          if (cResult[4] === powerup.title) {
-            if (cResult[5] === calculatePowerupCardStatus) {
-              let tmp9;
-              if (cResult[6] === str) {
-                tmp9 = cResult[7];
-              }
-              return tmp9;
-            }
-          }
-        }
-      }
-    }
-  }
-  const tmp10 = jsx(GuildPowerupsPerkCardDefault, { title: powerup.title, description: powerup.description, cost: powerup.cost, imageUrl: str, status: calculatePowerupCardStatus, onPress: tmp8, badge });
-  cResult[0] = badge;
-  cResult[1] = tmp8;
-  cResult[2] = powerup.cost;
-  cResult[3] = powerup.description;
-  cResult[4] = powerup.title;
-  cResult[5] = calculatePowerupCardStatus;
-  cResult[6] = str;
-  cResult[7] = tmp10;
-  tmp9 = tmp10;
-}) : (function GuildPowerupsSinglePerkCard(badge) {
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");
+
+export default function GuildPowerupsSinglePerkCard(badge) {
   let guildId;
   let powerup;
   let tmp4;
@@ -81,7 +37,4 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsSin
     str = "";
   }
   return tmp5(tmp6, obj2);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");
-
-export default tmp3;
+};

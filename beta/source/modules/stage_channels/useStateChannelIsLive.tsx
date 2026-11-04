@@ -1,56 +1,23 @@
-// Module ID: 7903
-// Function ID: 7904
+// Module ID: 7943
+// Function ID: 7944
 // Name: useStateChannelIsLive
-// Dependencies: [4860, 558, 576, 504, 2]
+// Dependencies: [4868, 504, 2]
+// Exports: default
 
-// Module 7903 (useStateChannelIsLive)
-import StageInstanceStore from "StageInstanceStore" /* 4860 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7943 (useStateChannelIsLive)
+import StageInstanceStore from "StageInstanceStore" /* 4868 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelIsLive(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [StageInstanceStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return StageInstanceStore.isLive(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useStageChannelIsLive(arg0) {
+const result = size.fileFinishedImporting("modules/stage_channels/useStateChannelIsLive.tsx");
+
+export default function useStageChannelIsLive(arg0) {
   let closure_0;
   _require = arg0;
   const items = [StageInstanceStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => StageInstanceStore.isLive(closure_0), items1);
-});
-const result = size.fileFinishedImporting("modules/stage_channels/useStateChannelIsLive.tsx");
-
-export default tmp2;
+};

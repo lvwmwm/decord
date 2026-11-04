@@ -1,16 +1,16 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9914
+// Function ID: 9915
 // Name: getTrialCtaOverride
-// Dependencies: [9834, 2053, 2]
+// Dependencies: [2047, 2]
 // Exports: getTrialCtaOverride
 
-// Module 9833 (getTrialCtaOverride)
-import ReferralTrialCtaExperiment from "ReferralTrialCtaExperiment" /* 9834 */;
+// Module 9914 (getTrialCtaOverride)
+import PremiumUtils from "PremiumUtils" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/getTrialCtaOverride.tsx");
 
-export const getTrialCtaOverride = function getTrialCtaOverride(premiumTrialOffer, TIER_2) {
+export function getTrialCtaOverride(premiumTrialOffer, TIER_2) {
   let result = null;
   if (null != TIER_2) {
     let isReferralTrial;
@@ -19,14 +19,9 @@ export const getTrialCtaOverride = function getTrialCtaOverride(premiumTrialOffe
     }
     result = null;
     if (true === isReferralTrial) {
-      result = null;
-      const obj = ReferralTrialCtaExperiment;
-      const tmp4 = require;
-      if (obj.getReferralTrialCtaExperimentEnabled()) {
-        const tmp4Result = tmp4(2053);
-        result = tmp4Result.formatTrialCtaIntervalDurationFromTrialOffer(premiumTrialOffer, TIER_2);
-      }
+      const obj = PremiumUtils;
+      result = obj.formatTrialCtaIntervalDurationFromTrialOffer(premiumTrialOffer, TIER_2);
     }
   }
   return result;
-};
+}

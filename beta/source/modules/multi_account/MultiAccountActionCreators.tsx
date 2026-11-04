@@ -1,18 +1,18 @@
-// Module ID: 13350
-// Function ID: 13351
+// Module ID: 13981
+// Function ID: 13982
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 13346, 1087, 3, 1113, 584, 1297, 1267, 6700, 2]
+// Dependencies: [5, 502, 13977, 1072, 3, 1098, 572, 1282, 1252, 6740, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 13350 (MultiAccountActionCreators)
+// Module 13981 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import TokenManagerAll from "TokenManager" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import TokenManagerAll from "TokenManager" /* 1098 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MultiAccountStore from "MultiAccountStore" /* 13346 */;
-import Constants from "Constants" /* 1087 */;
+import MultiAccountStore from "MultiAccountStore" /* 13977 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c6, closure_0;
@@ -24,7 +24,7 @@ const tmp3 = new LoggerDefault("MultiAccountActionCreators");
 const logger = tmp3;
 const result = size.fileFinishedImporting("modules/multi_account/MultiAccountActionCreators.tsx");
 
-export const validateMultiAccountTokens = function validateMultiAccountTokens() {
+export function validateMultiAccountTokens() {
   AuthenticationStore.getId();
   const users = MultiAccountStore.getUsers();
   const forEach = users.forEach;
@@ -133,17 +133,17 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
       const obj3 = DispatcherDefault;
       obj3.dispatch(obj22);
     }
-    await "IconComponent";
+    await "HermesInternal";
     closure_3 = tmp;
     closure_2 = tmp4;
     id = closure_0.id;
-    return "Reflect";
+    return "flexDirection";
   });
   const item = forEach(function() {
     return closure_0(...arguments);
   });
-};
-export const switchAccount = function switchAccount(id, switchSynchronously, CHOOSE_ACCOUNT) {
+}
+export function switchAccount(id, switchSynchronously, CHOOSE_ACCOUNT) {
   let resolved;
   const obj2 = { switchSynchronously };
   logger.log("Switching account to " + id, obj2);
@@ -166,32 +166,32 @@ export const switchAccount = function switchAccount(id, switchSynchronously, CHO
       tmp4 = null;
     }
     dispatch(obj5);
-    const tmp5Result = tmp5(6700);
+    const tmp5Result = tmp5(6740);
     resolved = tmp5Result.switchAccountToken(token, switchSynchronously);
   }
   return resolved;
-};
-export const moveAccount = function moveAccount(from, to) {
+}
+export function moveAccount(from, to) {
   const obj = DispatcherDefault;
   const obj2 = { type: "MULTI_ACCOUNT_MOVE_ACCOUNT", from, to };
   obj.dispatch(obj2);
-};
-export const removeAccount = function removeAccount(userId) {
+}
+export function removeAccount(userId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "MULTI_ACCOUNT_REMOVE_ACCOUNT", userId };
   obj.dispatch(obj2);
-};
-export const updatePushSyncToken = function updatePushSyncToken(id, token) {
+}
+export function updatePushSyncToken(id, token) {
   const obj = DispatcherDefault;
   const obj2 = { type: "MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN", userId: id, pushSyncToken: token };
   obj.dispatch(obj2);
-};
-export const invalidatePushSyncTokens = function invalidatePushSyncTokens(invalid_push_sync_tokens) {
+}
+export function invalidatePushSyncTokens(invalid_push_sync_tokens) {
   const obj = DispatcherDefault;
   const obj2 = { type: "MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS", invalidPushSyncTokens: invalid_push_sync_tokens };
   obj.dispatch(obj2);
-};
-export const reportAccountSwitchTimeout = function reportAccountSwitchTimeout() {
+}
+export function reportAccountSwitchTimeout() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "MULTI_ACCOUNT_SWITCH_TIMEOUT" });
-};
+}

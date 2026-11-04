@@ -1,41 +1,24 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 19561
+// Function ID: 19562
 // Name: SafetyFlowsExperiment
-// Dependencies: [1456, 558, 576, 2]
-// Exports: isEligibleForSafetyFlowsExperiment
+// Dependencies: [1448, 2]
+// Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 18936 (SafetyFlowsExperiment)
-import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19561 (SafetyFlowsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let tmp2 = apex_ApexExperimentDefault(obj);
-let closure_2 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForSafetyFlowsExperiment(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsEligibleForSafetyFlowsExperiment(location) {
-  const obj = { location: location.location };
-  return closure_2.useConfig(obj).enabled;
-});
+const tmp2 = apex_ApexExperimentDefault(obj);
+let closure_0 = tmp2;
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");
 
 export default tmp2;
-export const isEligibleForSafetyFlowsExperiment = function isEligibleForSafetyFlowsExperiment(location) {
+export function isEligibleForSafetyFlowsExperiment(location) {
   const obj = { location: location.location };
-  return closure_2.getConfig(obj).enabled;
-};
-export const useIsEligibleForSafetyFlowsExperiment = tmp3;
+  return closure_0.getConfig(obj).enabled;
+}
+export function useIsEligibleForSafetyFlowsExperiment(location) {
+  const obj = { location: location.location };
+  return closure_0.useConfig(obj).enabled;
+}

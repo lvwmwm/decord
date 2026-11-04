@@ -1,15 +1,15 @@
-// Module ID: 12182
-// Function ID: 12183
+// Module ID: 12487
+// Function ID: 12488
 // Name: ApplicationCommandValidationUtils
-// Dependencies: [6015, 5666, 10231, 1128, 12183, 2]
+// Dependencies: [6035, 5683, 10311, 1113, 12488, 2]
 // Exports: getValidationResults
 
-// Module 12182 (ApplicationCommandValidationUtils)
-import intl3 from "intl" /* 1128 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
-import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 10231 */;
-import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12183 */;
+// Module 12487 (ApplicationCommandValidationUtils)
+import intl3 from "intl" /* 1113 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 10311 */;
+import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12488 */;
 import size from "module_2" /* 2 */;
 
 function validateOptionContent(allowEmptyValues) {
@@ -78,7 +78,7 @@ function validateOptionContent(allowEmptyValues) {
 const getValidationErrorText = ApplicationCommandConstants.getValidationErrorText;
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandValidationUtils.tsx");
 
-export const getValidationResults = function getValidationResults(activeCommand, optionValues, guild_id, id, allowEmptyValues) {
+export function getValidationResults(activeCommand, optionValues, guild_id, id, allowEmptyValues) {
   const obj = {};
   const options = activeCommand.options;
   if (null == options) {
@@ -91,5 +91,5 @@ export const getValidationResults = function getValidationResults(activeCommand,
     }
     return obj;
   }
-};
+}
 export { validateOptionContent };

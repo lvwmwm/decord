@@ -1,213 +1,98 @@
-// Module ID: 9365
-// Function ID: 9366
+// Module ID: 9402
+// Function ID: 9403
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 5003, 558, 576, 9277, 1128, 5266, 2]
+// Dependencies: [19, 17, 21, 5014, 9403, 9404, 9340, 1113, 5624, 9432, 2]
+// Exports: default
 
-// Module 9365 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 9402 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9340 */;
+import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 9404 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
+let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
-let _slicedToArray = _slicedToArray_mod;
-({ View: closure_4, Pressable: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ container: { flexDirection: "column" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSummary(arg0) {
-  let closure_2;
-  let closure_4;
-  let first;
-  let first1;
-  let game;
-  let items;
-  let obj4;
-  let tmp9;
-  let trackAction;
-  let tmp = trackAction;
-  const obj = trackAction(first[6]);
-  const cResult = obj.c(19);
-  ({ game, trackAction } = arg0);
-  const tmp4 = closure_8();
-  [first, _slicedToArray] = first1.useState(false);
-  [first1, closure_4] = first1.useState(null);
-  if (cResult[0] !== first1) {
-    const fn = function c(nativeEvent) {
-      if (null == first1) {
-        closure_4(nativeEvent.nativeEvent.lines.length > 3);
-      }
-    };
-    cResult[0] = first1;
-    cResult[1] = fn;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] === first) {
-    let tmp10;
-    if (cResult[3] === trackAction) {
-      tmp10 = cResult[4];
-    }
-    let summaryLocalized;
-    if (game != null) {
-      summaryLocalized = game.summaryLocalized;
-    }
-    if (summaryLocalized == null) {
-      let description;
-      if (game != null) {
-        description = game.description;
-      }
-      summaryLocalized = description;
-    }
-    if (null == summaryLocalized) {
-      return null;
-    } else {
-      let tmp13;
-      if (cResult[5] !== first) {
-        const intl = tmp(tmp2[8]).intl;
-        const string = intl.string;
-        const t = tmp(tmp2[8]).t;
-        const stringResult = string(first ? t["6MwJo/"] : t.lBeKY2);
-        cResult[5] = first;
-        cResult[6] = stringResult;
-        tmp13 = stringResult;
-      } else {
-        tmp13 = cResult[6];
-      }
-      if (cResult[7] === summaryLocalized) {
-        if (cResult[8] === tmp9) {
-          let tmp15;
-          if (cResult[9] === num5) {
-            tmp15 = cResult[10];
-          }
-          if (cResult[11] === tmp13) {
-            if (cResult[12] === tmp10) {
-              let tmp18;
-              if (cResult[13] === first1) {
-                tmp18 = cResult[14];
-              }
-              if (cResult[15] === tmp4.container) {
-                if (cResult[16] === tmp15) {
-                  let tmp22;
-                  if (cResult[17] === tmp18) {
-                    tmp22 = cResult[18];
-                  }
-                  return tmp22;
-                }
-              }
-              const obj2 = { style: tmp4.container, children: items };
-              items = [tmp15, tmp18];
-              const tmp25 = closure_7(closure_4, obj2);
-              cResult[15] = tmp4.container;
-              cResult[16] = tmp15;
-              cResult[17] = tmp18;
-              cResult[18] = tmp25;
-              tmp22 = tmp25;
-            }
-          }
-          let tmp19 = null;
-          if (first1) {
-            const obj3 = { onPress: tmp10, accessibilityRole: "button", accessibilityLabel: tmp13, children: closure_6(tmp(first[9]).Text, obj4) };
-            obj4 = { variant: "text-md/medium", color: "text-brand", children: tmp13 };
-            tmp19 = closure_6(closure_5, obj3);
-          }
-          cResult[11] = tmp13;
-          cResult[12] = tmp10;
-          cResult[13] = first1;
-          cResult[14] = tmp19;
-          tmp18 = tmp19;
-        }
-      }
-      const obj5 = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: num5, onTextLayout: tmp9, children: summaryLocalized };
-      const tmp17 = closure_6(tmp(first[9]).Text, obj5);
-      cResult[7] = summaryLocalized;
-      cResult[8] = tmp9;
-      cResult[9] = num5;
-      cResult[10] = tmp17;
-      tmp15 = tmp17;
-    }
-  }
-  const fn2 = function w() {
-    const tmp = !first;
-    const GameProfileTrackActionActions = GameProfileAnalyticUtils.GameProfileTrackActionActions;
-    trackAction(first ? GameProfileTrackActionActions.ShowLess : GameProfileTrackActionActions.ShowMore);
-    closure_2(tmp);
-  };
-  cResult[2] = first;
-  cResult[3] = trackAction;
-  cResult[4] = fn2;
-  tmp10 = fn2;
-}) : (function GameProfileSummary(arg0) {
-  let closure_2;
-  let closure_4;
-  let first;
-  let first1;
-  let game;
-  let items2;
-  let obj4;
-  let trackAction;
-  ({ game, trackAction } = arg0);
-  first = undefined;
-  _slicedToArray = undefined;
-  first1 = undefined;
-  closure_4 = undefined;
-  let tmp = closure_8();
-  [first, _slicedToArray] = first1.useState(false);
-  [first1, closure_4] = first1.useState(null);
-  const items = [first1];
-  const items1 = [first, trackAction];
-  const callback = first1.useCallback((nativeEvent) => {
-    if (null == first1) {
-      closure_4(nativeEvent.nativeEvent.lines.length > 3);
-    }
-  }, items);
-  let summaryLocalized;
-  const callback1 = first1.useCallback(() => {
-    const tmp = !first;
-    const GameProfileTrackActionActions = GameProfileAnalyticUtils.GameProfileTrackActionActions;
-    trackAction(first ? GameProfileTrackActionActions.ShowLess : GameProfileTrackActionActions.ShowMore);
-    closure_2(tmp);
-  }, items1);
-  if (game != null) {
-    summaryLocalized = game.summaryLocalized;
-  }
-  if (summaryLocalized == null) {
-    let description;
-    if (game != null) {
-      description = game.description;
-    }
-    summaryLocalized = description;
-  }
-  if (null == summaryLocalized) {
-    return null;
-  } else {
-    const intl = trackAction(first[8]).intl;
-    const string = intl.string;
-    const t = trackAction(first[8]).t;
-    const stringResult = string(first ? t["6MwJo/"] : t.lBeKY2);
-    const obj = { style: tmp.container, children: items2 };
-    const Text = tmp16(tmp17[9]).Text;
-    const tmp11 = closure_7;
-    const tmp12 = closure_4;
-    const obj2 = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: num, onTextLayout: callback, children: summaryLocalized };
-    items2 = [closure_6(Text, obj2), ];
-    let tmp13Result = null;
-    if (first1) {
-      const obj3 = { onPress: callback1, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_6(trackAction(first[9]).Text, obj4) };
-      obj4 = { variant: "text-md/medium", color: "text-brand", children: stringResult };
-      tmp13Result = tmp13(closure_5, obj3);
-    }
-    items2[1] = tmp13Result;
-    return tmp11(tmp12, obj);
-  }
-});
+({ View: c3, Pressable: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_7 = createStyles.createStyles({ container: { flexDirection: "column", overflow: "hidden" }, measurement: { position: "absolute", top: 0, left: 0, right: 0, opacity: 0 } });
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSummary.tsx");
 
-export default tmp4;
+export default function GameProfileSummary(arg0) {
+  let Text;
+  let game;
+  let isExpanded;
+  let items2;
+  let obj10;
+  let obj4;
+  let obj5;
+  let obj7;
+  let obj9;
+  let setHasOverflow;
+  let showToggle;
+  let toggleExpanded;
+  let trackAction;
+  ({ game, trackAction } = arg0);
+  setHasOverflow = undefined;
+  const tmp = closure_7();
+  let obj = trackAction(setHasOverflow[4]);
+  const gameProfileSummaryExpansion = obj.useGameProfileSummaryExpansion(trackAction);
+  ({ isExpanded, setHasOverflow } = gameProfileSummaryExpansion);
+  let description = game.summaryLocalized;
+  ({ showToggle, toggleExpanded } = gameProfileSummaryExpansion);
+  if (description == null) {
+    description = game.description;
+  }
+  const items = [description];
+  const memo = description.useMemo(() => {
+    let parseHTMLFromTextResult;
+    if (null != description) {
+      const obj = DEFAULT_MAX_HTML_LENGTH;
+      parseHTMLFromTextResult = obj.parseHTMLFromText(tmp, { parseTextLinks: true });
+    } else {
+      parseHTMLFromTextResult = [];
+    }
+    return parseHTMLFromTextResult;
+  }, items);
+  const items1 = [trackAction];
+  const callback = description.useCallback(() => {
+    trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.ClickDescriptionLink);
+  }, items1);
+  [][0] = setHasOverflow;
+  if (0 === memo.length) {
+    return null;
+  } else {
+    const intl = tmp2(tmp3[7]).intl;
+    const string = intl.string;
+    const t = tmp2(tmp3[7]).t;
+    const stringResult = string(isExpanded ? t["6MwJo/"] : t.lBeKY2);
+    let tmp10 = null;
+    const obj2 = { style: tmp.container, children: items2 };
+    const tmp8 = closure_6;
+    if (!isExpanded) {
+      const obj3 = { style: tmp.measurement, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_5(Text, obj4) };
+      obj4 = { variant: "text-md/normal", color: "interactive-text-active", onTextLayout: tmp6, children: closure_5(trackAction(setHasOverflow[9]).HTMLText, obj5) };
+      Text = tmp2(tmp3[8]).Text;
+      obj5 = { runs: memo, onLinkPress: callback };
+      tmp10 = closure_5(tmp9, obj3);
+    }
+    items2 = [tmp10, , ];
+    const Text2 = tmp2(tmp3[8]).Text;
+    const obj6 = { variant: "text-md/normal", color: "interactive-text-active", lineClamp: 3, children: closure_5(trackAction(setHasOverflow[9]).HTMLText, obj7) };
+    obj7 = { runs: memo, onLinkPress: callback };
+    items2[1] = closure_5(Text2, obj6);
+    let tmp12Result = null;
+    if (showToggle) {
+      const obj8 = { onPress: toggleExpanded, accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj9, children: closure_5(trackAction(setHasOverflow[8]).Text, obj10) };
+      obj10 = { variant: "text-md/medium", color: "text-brand", children: stringResult };
+      obj9 = { expanded: isExpanded };
+      tmp12Result = tmp12(closure_4, obj8);
+    }
+    items2[2] = tmp12Result;
+    return tmp8(closure_3, obj2);
+  }
+};

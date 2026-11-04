@@ -1,64 +1,74 @@
 // Module ID: 1847
 // Function ID: 1848
-// Dependencies: [19, 17, 1848]
-// Exports: useAnimatedValue, useEventHandlerRegistration
+// Dependencies: [32, 19, 1842, 1640]
+// Exports: useKeyboardState
 
 // Module 1847
-import react_native from "react-native" /* 17 */;
+import KeyboardController3 from "KeyboardController" /* 1842 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native2 from "react-native" /* 1848 */;
 
-const useRef = react.useRef;
-const Animated = react_native.Animated;
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+let closure_5 = ["keyboardWillShow", "keyboardDidHide"];
+function getLatestState() {
 
-export function useEventHandlerRegistration(arg0) {
-  const ref = arg0;
-  return (workletEventHandler) => {
-    if (workletEventHandler.current) {
-      let obj = ref(dependencyMap[2]);
-      let findNodeHandleResult = obj.findNodeHandle(tmp.current);
-      if (findNodeHandleResult) {
-        if ("workletEventHandler" in workletEventHandler) {
-          workletEventHandler = workletEventHandler.workletEventHandler;
-          workletEventHandler.registerForEvents(findNodeHandleResult);
-        } else {
-          workletEventHandler.registerForEvents(findNodeHandleResult);
-        }
-      }
+}
+function defaultSelector(arg0) {
+  return arg0;
+}
+
+export function useKeyboardState(arg0) {
+  let closure_1;
+  let first;
+  let tmp = arg0;
+  if (arg0 === undefined) {
+    tmp = defaultSelector;
+  }
+  let closure_0 = tmp;
+  closure_1 = undefined;
+  [first, closure_1] = closure_4(() => {
+    let KeyboardController2;
+    if (typeof getLatestState === "function") {
+      const obj = { isVisible: KeyboardController2.isVisible() };
+      const KeyboardController = KeyboardController3.KeyboardController;
+      const merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = KeyboardController3.KeyboardController;
+      return tmp(obj);
     } else {
-      const _queueMicrotask = queueMicrotask;
-      queueMicrotask(function attachWorkletHandlers() {
-        const obj = react_native2;
-        const findNodeHandleResult = obj.findNodeHandle(workletEventHandler.current);
-        if (findNodeHandleResult) {
-          if ("workletEventHandler" in workletEventHandler) {
-            workletEventHandler.workletEventHandler.registerForEvents(findNodeHandleResult);
-          } else {
-            workletEventHandler.registerForEvents(findNodeHandleResult);
-          }
+      throw new TypeError("Trying to call a non-function");
+    }
+  });
+  const tmp4 = closure_3(() => {
+    let KeyboardController2;
+    closure_0 = closure_1_5.map((item) => {
+      const KeyboardEvents = closure_0(closure_1[3]).KeyboardEvents;
+      return KeyboardEvents.addListener(item, () => {
+        let KeyboardController2;
+        if (typeof closure_2_6 === "function") {
+          const obj = { isVisible: KeyboardController2.isVisible() };
+          const KeyboardController = closure_0(closure_2_1[2]).KeyboardController;
+          const merged = Object.assign(KeyboardController.state());
+          KeyboardController2 = closure_0(closure_2_1[2]).KeyboardController;
+          return tmp(tmp2(obj));
+        } else {
+          throw new TypeError("Trying to call a non-function");
         }
       });
+    });
+    if (typeof getLatestState === "function") {
+      let obj = { isVisible: KeyboardController2.isVisible() };
+      let KeyboardController = closure_0(closure_1[2]).KeyboardController;
+      let merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = closure_0(closure_1[2]).KeyboardController;
+      tmp(tmp2(obj));
+      return () => {
+        const item = closure_0.forEach((remove) => remove.remove());
+      };
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
-    return () => {
-      const obj = react_native2;
-      const findNodeHandleResult = obj.findNodeHandle(workletEventHandler.current);
-      if (findNodeHandleResult) {
-        if ("workletEventHandler" in workletEventHandler) {
-          workletEventHandler.workletEventHandler.unregisterFromEvents(findNodeHandleResult);
-        } else {
-          workletEventHandler.unregisterFromEvents(findNodeHandleResult);
-        }
-      }
-    };
-  };
+  }, []);
+  return first;
 }
-export const useAnimatedValue = function useAnimatedValue(arg0, arg1) {
-  const tmp = useRef(null);
-  if (null === tmp.current) {
-    const self = this;
-    const self2 = this;
-    const value = new Animated.Value(arg0, arg1);
-    tmp.current = value;
-  }
-  return tmp.current;
-};

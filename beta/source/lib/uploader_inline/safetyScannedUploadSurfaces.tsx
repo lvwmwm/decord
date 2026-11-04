@@ -1,11 +1,11 @@
-// Module ID: 7115
-// Function ID: 7116
+// Module ID: 7157
+// Function ID: 7158
 // Name: safetyScannedUploadSurfaces
-// Dependencies: [7116, 2]
+// Dependencies: [7158, 2]
 // Exports: getSafetyScannedUploadSurfaceForProfileCustomization
 
-// Module 7115 (safetyScannedUploadSurfaces)
-import ImageCroppingConstants from "ImageCroppingConstants" /* 7116 */;
+// Module 7157 (safetyScannedUploadSurfaces)
+import ImageCroppingConstants from "ImageCroppingConstants" /* 7158 */;
 import size from "module_2" /* 2 */;
 
 const UploadTypes = ImageCroppingConstants.UploadTypes;
@@ -13,7 +13,7 @@ const SafetyScannedUploadSurface = { USER_DEFAULT_PROFILE_AVATAR: "USER_DEFAULT_
 const result = size.fileFinishedImporting("lib/uploader_inline/safetyScannedUploadSurfaces.tsx");
 
 export { SafetyScannedUploadSurface };
-export const getSafetyScannedUploadSurfaceForProfileCustomization = function getSafetyScannedUploadSurfaceForProfileCustomization(arg0, arg1) {
+export function getSafetyScannedUploadSurfaceForProfileCustomization(arg0, arg1) {
   if (UploadTypes.AVATAR === arg0) {
     let USER_DEFAULT_PROFILE_AVATAR;
     if (null != arg1) {
@@ -33,4 +33,4 @@ export const getSafetyScannedUploadSurfaceForProfileCustomization = function get
   } else {
     return null;
   }
-};
+}

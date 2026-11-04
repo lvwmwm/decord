@@ -1,31 +1,31 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6862
+// Function ID: 6863
 // Name: ChannelSectionStore
-// Dependencies: [2045, 5222, 6824, 4855, 4877, 4935, 4906, 5034, 1392, 1087, 4862, 1098, 6825, 6826, 6827, 1123, 11, 5934, 504, 1455, 584, 2]
+// Dependencies: [2038, 5238, 6863, 4863, 4885, 4946, 4917, 5045, 1383, 1072, 4870, 1083, 6864, 6865, 6866, 1108, 11, 5952, 504, 1447, 572, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6823 (ChannelSectionStore)
+// Module 6862 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 1098 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5934 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6825 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6826 */;
-import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6827 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ExperimentStore from "ExperimentStore" /* 5222 */;
-import SearchMessageStore from "SearchMessageStore" /* 6824 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 4862 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants2 from "Constants" /* 1083 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5952 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6864 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6865 */;
+import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6866 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import ExperimentStore from "ExperimentStore" /* 5238 */;
+import SearchMessageStore from "SearchMessageStore" /* 6863 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -69,15 +69,15 @@ function toggleSection(c17, arg1) {
     flag = false;
   }
   let flag2 = false;
-  if (c26) {
-    c26 = false;
+  if (c25) {
+    c25 = false;
     flag2 = true;
   }
   const channelId = SelectedChannelStore.getChannelId();
   let tmp2 = null;
   if (null != channelId) {
     tmp2 = channelId;
-    if (syncedClientThemes(channelId)) {
+    if (authStore3(channelId)) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp6 = null;
       if (null != guildId) {
@@ -150,15 +150,14 @@ function handlePermissionsChange() {
 ({ isStaticChannelRoute: closure_14, buildGuildStaticChannelId: closure_15 } = ChannelConstants);
 const Permissions = Constants2.Permissions;
 let c17 = false;
-const authStore4 = false;
-let c19 = false;
+const authStore5 = false;
 const isProfileOpen = true;
 let flag4 = true;
 let flag5 = false;
 let available = false;
 let sidebars = {};
 let guildSidebars = {};
-let c26 = false;
+let c25 = false;
 let searchContextId = null;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ChannelSectionStore extends PersistedStore {
@@ -178,7 +177,7 @@ class ChannelSectionStore extends PersistedStore {
       if (flag3 == null) {
         flag3 = true;
       }
-      let closure_20 = flag3;
+      let closure_19 = flag3;
       flag4 = isMembersOpen.isFriendsOpen;
       if (flag4 == null) {
         flag4 = true;
@@ -204,15 +203,15 @@ class ChannelSectionStore extends PersistedStore {
     return { isMembersOpen, isSummariesOpen, isProfileOpen, isFriendsOpen: flag4, isAppBarToggleOpen: flag5, sidebars, guildSidebars };
   }
   getSection(arg0, arg1) {
-    const tmp = c26;
+    const tmp = c25;
     if (tmp) {
       return constants.SEARCH;
     } else {
-      let MEMBERS;
+      let NONE;
       let tmp4 = null;
       if (null != arg0) {
         tmp4 = arg0;
-        if (syncedClientThemes(arg0)) {
+        if (authStore3(arg0)) {
           const guildId = SelectedGuildStore.getGuildId();
           let tmp8 = null;
           if (null != guildId) {
@@ -223,36 +222,36 @@ class ChannelSectionStore extends PersistedStore {
       }
       if (null != tmp4) {
         if (null != sidebars[tmp4]) {
-          MEMBERS = constants.SIDEBAR_CHAT;
+          NONE = constants.SIDEBAR_CHAT;
         }
-        return MEMBERS;
+        return NONE;
       }
       const obj = FriendsSidebarExperimentDefault;
       const tmp11 = importDefault;
       if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4) {
-        const tmp11Result = tmp11(6826);
+        const tmp11Result = tmp11(6865);
         if (tmp11Result.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled) {
-          MEMBERS = constants.FRIENDS;
+          NONE = constants.FRIENDS;
         }
       }
       const tmp13 = arg1;
       if (tmp13) {
         const tmp14 = isProfileOpen;
         if (tmp14) {
-          MEMBERS = constants.PROFILE;
+          NONE = constants.PROFILE;
         }
       }
       const tmp15 = c18;
       if (tmp15) {
-        MEMBERS = constants.SUMMARIES;
+        NONE = constants.SUMMARIES;
       } else {
         const tmp16 = c17;
         if (tmp16) {
           if (!arg1) {
-            MEMBERS = constants.MEMBERS;
+            NONE = constants.MEMBERS;
           }
         }
-        MEMBERS = c19 ? tmp19.CONVERSATIONS : tmp19.NONE;
+        NONE = constants.NONE;
       }
     }
   }
@@ -260,7 +259,7 @@ class ChannelSectionStore extends PersistedStore {
     let tmp = null;
     if (null != channelId) {
       tmp = channelId;
-      if (syncedClientThemes(channelId)) {
+      if (authStore3(channelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -289,7 +288,7 @@ class ChannelSectionStore extends PersistedStore {
     let tmp = null;
     if (null != channelId) {
       tmp = channelId;
-      if (syncedClientThemes(channelId)) {
+      if (authStore3(channelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -301,7 +300,7 @@ class ChannelSectionStore extends PersistedStore {
     if (null == tmp) {
       return null;
     } else {
-      const tmp7 = c26;
+      const tmp7 = c25;
       if (tmp7) {
         return null;
       } else {
@@ -322,7 +321,7 @@ class ChannelSectionStore extends PersistedStore {
     let tmp = null;
     if (null != channelId) {
       tmp = channelId;
-      if (syncedClientThemes(channelId)) {
+      if (authStore3(channelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -334,7 +333,7 @@ class ChannelSectionStore extends PersistedStore {
     if (null == tmp) {
       return null;
     } else {
-      const tmp14 = c26;
+      const tmp14 = c25;
       if (tmp14) {
         return null;
       } else {
@@ -396,9 +395,9 @@ let obj = {
   SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: function handleSetSelectedSearchContext(searchContextId) {
     searchContextId = searchContextId.searchContextId;
     const hasSearchStateResult = null != searchContextId && SearchMessageStore.hasSearchState(searchContextId);
-    let flag = hasSearchStateResult !== c26;
+    let flag = hasSearchStateResult !== c25;
     if (flag) {
-      c26 = hasSearchStateResult;
+      c25 = hasSearchStateResult;
       flag = true;
     }
     return flag;
@@ -409,9 +408,9 @@ let obj = {
     if (tmp) {
       let hasItem = ids.includes(searchContextId);
       if (hasItem) {
-        let flag = !c26;
+        let flag = !c25;
         if (flag) {
-          c26 = true;
+          c25 = true;
           flag = true;
         }
         hasItem = flag;
@@ -423,9 +422,9 @@ let obj = {
   SEARCH_MESSAGES_CLEAR: function handleSearchMessagesClear(id) {
     let tmp = id.id === searchContextId;
     if (tmp) {
-      let flag = c26;
+      let flag = c25;
       if (flag) {
-        c26 = false;
+        c25 = false;
         flag = true;
       }
       tmp = flag;
@@ -433,15 +432,15 @@ let obj = {
     return tmp;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let flag = c26;
+    let flag = c25;
     if (flag) {
-      c26 = false;
+      c25 = false;
       flag = true;
     }
     return flag;
   },
   CHANNEL_TOGGLE_MEMBERS_SECTION: function handleChannelToggleMembersSection() {
-    const tmp = c26;
+    const tmp = c25;
     if (tmp) {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       ComponentDispatch.dispatch(map1.SEARCH_RESULTS_CLOSE);
@@ -449,53 +448,21 @@ let obj = {
     if (c18) {
       c18 = toggleSection(tmp6);
     }
-    if (c19) {
-      c19 = toggleSection(tmp8);
-    }
     c17 = toggleSection(c17, true);
   },
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: function handleUserProfileSidebarToggleSection() {
-    const tmp = closure_20;
+    const tmp = closure_19;
     if (!tmp) {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       ComponentDispatch.dispatch(map1.SEARCH_RESULTS_CLOSE);
     }
-    closure_20 = toggleSection(closure_20, true);
+    closure_19 = toggleSection(closure_19, true);
   },
   CHANNEL_TOGGLE_SUMMARIES_SECTION: function handleChannelToggleSummariesSection() {
     if (c17) {
       c17 = toggleSection(tmp);
     }
-    if (c19) {
-      c19 = toggleSection(tmp3);
-    }
     c18 = toggleSection(c18, true);
-  },
-  CHANNEL_TOGGLE_CONVERSATIONS_SECTION: function handleChannelToggleConversationsSection() {
-    const tmp = c26;
-    if (tmp) {
-      const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-      ComponentDispatch.dispatch(map1.SEARCH_RESULTS_CLOSE);
-    }
-    let c17 = false;
-    let c18 = false;
-    c19 = toggleSection(c19, true);
-  },
-  CHANNEL_OPEN_CONVERSATIONS_SECTION: function handleChannelOpenConversationsSection() {
-    let flag = !c19;
-    if (flag) {
-      const tmp = c26;
-      if (tmp) {
-        const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-        ComponentDispatch.dispatch(map1.SEARCH_RESULTS_CLOSE);
-      }
-      let c17 = false;
-      let c18 = false;
-      c19 = true;
-      setIsFriendsOpen(false);
-      flag = true;
-    }
-    return flag;
   },
   SIDEBAR_VIEW_CHANNEL: function handleSidebarViewChannel(arg0) {
     let baseChannelId;
@@ -503,12 +470,12 @@ let obj = {
     let details;
     let sidebarType;
     ({ sidebarType, baseChannelId } = arg0);
-    c26 = false;
+    c25 = false;
     let tmp = null;
     ({ channelId, details } = arg0);
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (syncedClientThemes(baseChannelId)) {
+      if (authStore3(baseChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -537,12 +504,12 @@ let obj = {
     let guildId;
     let sidebarType;
     ({ guildId, baseChannelId } = arg0);
-    c26 = false;
+    c25 = false;
     let tmp = null;
     ({ sidebarType, details } = arg0);
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (syncedClientThemes(baseChannelId)) {
+      if (authStore3(baseChannelId)) {
         const guildId1 = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId1) {
@@ -563,12 +530,12 @@ let obj = {
     let _location;
     let parentMessageId;
     parentChannelId = parentChannelId.parentChannelId;
-    c26 = false;
+    c25 = false;
     let tmp = null;
     ({ parentMessageId, location: _location } = parentChannelId);
     if (null != parentChannelId) {
       tmp = parentChannelId;
-      if (syncedClientThemes(parentChannelId)) {
+      if (authStore3(parentChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -587,7 +554,7 @@ let obj = {
     let tmp = null;
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (syncedClientThemes(baseChannelId)) {
+      if (authStore3(baseChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -599,8 +566,8 @@ let obj = {
     if (null != tmp) {
       delete sidebars[tmp];
       const hasSearchStateResult = null != searchContextId && SearchMessageStore.hasSearchState(searchContextId);
-      if (hasSearchStateResult !== c26) {
-        c26 = hasSearchStateResult;
+      if (hasSearchStateResult !== c25) {
+        c25 = hasSearchStateResult;
       }
     }
   },
@@ -611,8 +578,8 @@ let obj = {
       delete guildSidebars[guildId];
       const hasSearchStateResult = null != searchContextId && SearchMessageStore.hasSearchState(searchContextId);
       flag = true;
-      if (hasSearchStateResult !== c26) {
-        c26 = hasSearchStateResult;
+      if (hasSearchStateResult !== c25) {
+        c25 = hasSearchStateResult;
         flag = true;
       }
     }
@@ -626,11 +593,11 @@ let obj = {
       if (null != channelId) {
         delete sidebars[tmp3];
       }
-      const tmp5 = c26;
+      const tmp5 = c25;
       if (tmp5) {
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
         ComponentDispatch.dispatch(map1.SEARCH_RESULTS_CLOSE);
-        c26 = false;
+        c25 = false;
       }
     }
   },
@@ -686,7 +653,6 @@ let obj = {
     if (tmp) {
       c17 = false;
       let c18 = false;
-      c19 = false;
       flag = true;
     }
     return flag;
@@ -735,7 +701,7 @@ let result = size.fileFinishedImporting("stores/ChannelSectionStore.tsx");
 
 export default channelSectionStore;
 export const MESSAGE_REQUESTS_BASE_CHANNEL_ID = "message_requests";
-export const isViewChannelSidebar = function isViewChannelSidebar(type) {
+export function isViewChannelSidebar(type) {
   const items = [SidebarActionTypes.SidebarType.VIEW_CHANNEL, SidebarActionTypes.SidebarType.VIEW_MESSAGE_REQUEST, SidebarActionTypes.SidebarType.VIEW_MOD_REPORT];
   return items.includes(type.type);
-};
+}

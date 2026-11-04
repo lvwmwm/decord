@@ -1,13 +1,13 @@
-// Module ID: 5227
-// Function ID: 5228
+// Module ID: 5243
+// Function ID: 5244
 // Name: ExperimentManager
-// Dependencies: [5222, 5223, 584, 2]
+// Dependencies: [5238, 5239, 572, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 5227 (ExperimentManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ExperimentStore2 from "ExperimentStore" /* 5222 */;
-import ExperimentConstants from "ExperimentConstants" /* 5223 */;
+// Module 5243 (ExperimentManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ExperimentStore2 from "ExperimentStore" /* 5238 */;
+import ExperimentConstants from "ExperimentConstants" /* 5239 */;
 import size from "module_2" /* 2 */;
 
 const ExperimentStore = ExperimentStore2;
@@ -19,7 +19,7 @@ const registerExperiment = ExperimentStore2.registerExperiment;
 const ExperimentSystem = { LEGACY: "legacy", APEX: "apex" };
 const result = size.fileFinishedImporting("modules/experiments/ExperimentManager.tsx");
 
-export const trackExposureToExperiment = function trackExposureToExperiment(id, descriptor, location) {
+export function trackExposureToExperiment(id, descriptor, location) {
   let _location;
   let analyticsLocations;
   let excluded;
@@ -48,21 +48,21 @@ export const trackExposureToExperiment = function trackExposureToExperiment(id, 
     exposureType = location.exposureType;
   }
   trackExposure(obj);
-};
-export const registerUserExperiment = function registerUserExperiment(id) {
+}
+export function registerUserExperiment(id) {
   id = id.id;
   const obj = { experimentId: id, experimentType: constants.USER, title: id.title, description: id.description, buckets: id.buckets, commonTriggerPoint: id.commonTriggerPoint };
   registerExperiment(obj);
   return { id };
-};
-export const registerGuildExperiment = function registerGuildExperiment(id) {
+}
+export function registerGuildExperiment(id) {
   id = id.id;
   const obj = { experimentId: id, experimentType: constants.GUILD, title: id.title, description: id.description, buckets: id.buckets, commonTriggerPoint: id.commonTriggerPoint };
   registerExperiment(obj);
   return { id };
-};
+}
 export { ExperimentSystem };
-export const overrideBucket = function overrideBucket(system, map, id) {
+export function overrideBucket(system, map, id) {
   let obj;
   let tmp11;
   if (obj.LEGACY === system) {
@@ -85,4 +85,4 @@ export const overrideBucket = function overrideBucket(system, map, id) {
       obj.dispatch(obj5);
     }
   }
-};
+}

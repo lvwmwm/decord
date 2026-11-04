@@ -1,26 +1,26 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10763
+// Function ID: 10764
 // Name: StageChannelRichPresenceUtils
-// Dependencies: [32, 502, 4855, 4877, 6718, 6669, 1087, 2]
+// Dependencies: [32, 502, 4863, 4885, 6757, 6709, 1072, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 10684 (StageChannelRichPresenceUtils)
-import Constants from "Constants" /* 1087 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6669 */;
+// Module 10763 (StageChannelRichPresenceUtils)
+import Constants from "Constants" /* 1072 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6718 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6757 */;
 import size from "module_2" /* 2 */;
 
-function unpackStageChannelParty(activity) {
-  if (null != activity) {
-    if (null != activity.party) {
+function unpackStageChannelParty(party) {
+  if (null != party) {
+    if (null != party.party) {
       try {
-        if (null != activity.party.id) {
-          if (activity.party.id.startsWith(c7)) {
-            const tmp3 = _slicedToArray(activity.party.id.split(":"), 5);
+        if (null != party.party.id) {
+          if (party.party.id.startsWith(c7)) {
+            const tmp3 = _slicedToArray(party.party.id.split(":"), 5);
             const _parseInt = parseInt;
             const tmp4 = tmp3[1];
             const tmp5 = tmp3[2];
@@ -40,7 +40,7 @@ const GuildFeatures = Constants.GuildFeatures;
 let c7 = "stage:";
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
-export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
+export function packStageChannelPartyId(channel, stageInstanceByChannel) {
   let num = 0;
   if (StageChannelRoleStore.isSpeaker(AuthenticationStore.getId(), channel.id)) {
     num = 1;
@@ -62,20 +62,20 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
     str = tmp4;
   }
   return "" + c7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
-};
+}
 export { unpackStageChannelParty };
-export const isStageActivity = function isStageActivity(activity) {
-  let application_id;
-  if (activity != null) {
-    application_id = activity.application_id;
+export function isStageActivity(application_id) {
+  application_id = undefined;
+  if (application_id != null) {
+    application_id = application_id.application_id;
   }
   return application_id === STAGE_APPLICATION_ID;
-};
-export const shouldShowActivity = function shouldShowActivity(activity) {
-  const tmp = unpackStageChannelParty(activity);
+}
+export function shouldShowActivity(party) {
+  const tmp = unpackStageChannelParty(party);
   if (null == tmp) {
     return false;
   } else {
     return null != ChannelStore.getChannel(tmp.channelId);
   }
-};
+}

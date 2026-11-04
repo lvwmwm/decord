@@ -1,14 +1,14 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 12066
+// Function ID: 12067
 // Name: RouteManager
-// Dependencies: [6528, 11772, 1087, 1114, 11773, 12606, 2]
+// Dependencies: [6568, 12067, 1072, 1099, 12068, 13049, 2]
 
-// Module 11771 (RouteManager)
-import Constants from "Constants" /* 1087 */;
-import router_utils from "router_utils" /* 1114 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 11773 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 11772 */;
+// Module 12066 (RouteManager)
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1099 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 12068 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 12067 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {
@@ -28,7 +28,7 @@ function handleRouteChange(pathname, REPLACE) {
       obj = convertRouteToNavigation;
       const tmp2 = require;
       if (!obj.convertRouteToNavigation(pathname)) {
-        const tmp2Result = tmp2(1114);
+        const tmp2Result = tmp2(1099);
         tmp2Result.replaceWith(Routes.ME);
       }
     }
@@ -107,11 +107,11 @@ class RouteManager {
         let pathname = obj2.getHistory().location.pathname;
         let tmp7Result = tmp7(location, REPLACE);
         if (null != tmp7Result) {
-          let tmp9Result = tmp9(12606);
+          let tmp9Result = tmp9(13049);
           let obj3 = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: obj4 };
           obj4 = { replacePath: tmp7Result.path, previousPath: pathname };
           let addBreadcrumbResult = tmp9Result.addBreadcrumb(obj3);
-          let tmp9Result2 = tmp9(1114);
+          let tmp9Result2 = tmp9(1099);
           let replaceWithResult = tmp9Result2.replaceWith(tmp7Result.path, tmp7Result.state);
           obj.return();
           let flag = true;
@@ -156,13 +156,13 @@ class RouteManager {
     const self = this;
     let closure_0 = voiceRouteRewriter;
     if (null != this.unlistenHistory) {
-      let tmp = require;
       const obj = router_utils;
       const _location = obj.getHistory().location;
       const obj2 = router_utils;
       const tmp3 = voiceRouteRewriter(_location, obj2.getHistory().action);
+      const tmp = require;
       if (null != tmp3) {
-        const tmpResult = tmp(1114);
+        const tmpResult = tmp(1099);
         tmpResult.replaceWith(tmp3.path, tmp3.state);
       }
     }

@@ -1,12 +1,12 @@
-// Module ID: 1993
-// Function ID: 1994
+// Module ID: 1985
+// Function ID: 1986
 // Name: NameplateRecord
-// Dependencies: [1994, 1995, 2]
+// Dependencies: [1986, 1987, 2]
 // Exports: isNameplateRecord
 
-// Module 1993 (NameplateRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1994 */;
+// Module 1985 (NameplateRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1986 */;
 import size from "module_2" /* 2 */;
 
 class NameplateRecord extends BaseCollectiblesItemRecord {
@@ -36,6 +36,6 @@ class NameplateRecord extends BaseCollectiblesItemRecord {
 const result = size.fileFinishedImporting("modules/collectibles/records/NameplateRecord.tsx");
 
 export default NameplateRecord;
-export const isNameplateRecord = function isNameplateRecord(first1) {
+export function isNameplateRecord(first1) {
   return first1 instanceof NameplateRecord;
-};
+}

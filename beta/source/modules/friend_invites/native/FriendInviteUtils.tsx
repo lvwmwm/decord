@@ -1,23 +1,23 @@
-// Module ID: 18772
-// Function ID: 18773
+// Module ID: 19389
+// Function ID: 19390
 // Name: FriendInviteUtils
-// Dependencies: [4855, 4945, 8898, 5695, 1128, 584, 11203, 2]
+// Dependencies: [4863, 4956, 8946, 5712, 1113, 572, 11504, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 18772 (FriendInviteUtils)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1128 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8898 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
+// Module 19389 (FriendInviteUtils)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1113 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8946 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
 
 export const DEFAULT_EXPIRATION_DAYS = 7;
 export const DEFAULT_EXPIRATION_USES = 5;
-export const revokeAllFriendInvites = function revokeAllFriendInvites() {
+export function revokeAllFriendInvites() {
   let obj = InstantInviteActionCreatorsDefault;
   const revokeFriendInvitesResult = obj.revokeFriendInvites();
   revokeFriendInvitesResult.then(() => {
@@ -28,9 +28,9 @@ export const revokeAllFriendInvites = function revokeAllFriendInvites() {
     intl = intl2.intl;
     open("TOAST_FRIEND_INVITES_REVOKED", obj);
   });
-};
-export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
-  const f137879 = () => closure_1_1(closure_1_2[6])();
+}
+export function acceptFriendInvite(invite, context) {
+  const f117693 = () => closure_1_1(closure_1_2[6])();
   let tmp = null == invite.channel && null == invite.guild && null != invite.inviter;
   if (tmp) {
     let dMFromUserId = null;
@@ -41,7 +41,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
       const obj3 = InstantInviteActionCreatorsDefault;
       obj3.transitionToInvite(invite, { forceTransition: true });
       const obj4 = DispatcherDefault;
-      obj4.wait(f137879);
+      obj4.wait(f117693);
     } else {
       let obj = InstantInviteActionCreatorsDefault;
       const obj2 = {
@@ -61,10 +61,10 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
               const obj = { text: formatToPlainString(st2dcs, { username }), variant: "success" };
               open("FRIEND_INVITE_ACCEPT_CONFIRMATION", obj);
               const tmpResult = DispatcherDefault;
-              tmpResult.wait(f137879);
+              tmpResult.wait(f117693);
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);
     }
   }
-};
+}

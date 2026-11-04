@@ -1,10 +1,10 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 12253
+// Function ID: 12254
 // Name: AbstractFramePoolManager
-// Dependencies: [32, 11927, 2]
+// Dependencies: [32, 12254, 2]
 
-// Module 11926 (AbstractFramePoolManager)
-import FrameStackLevel from "FrameStackLevel" /* 11927 */;
+// Module 12253 (AbstractFramePoolManager)
+import FrameStackLevel from "FrameStackLevel" /* 12254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -43,9 +43,9 @@ class AbstractFramePoolManager {
       continue;
     }
   }
-  registerFrameEntry(id, first1) {
+  registerFrameEntry(id, iframeId) {
     const entries = this.entries;
-    const result = entries.set(id, first1);
+    const result = entries.set(id, iframeId);
     this.reconcile(id);
   }
   removeFrameEntry(id) {

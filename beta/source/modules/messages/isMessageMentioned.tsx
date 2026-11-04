@@ -1,13 +1,13 @@
-// Module ID: 6403
-// Function ID: 6404
+// Module ID: 6443
+// Function ID: 6444
 // Name: isMessageMentioned
-// Dependencies: [4855, 4915, 4877, 2]
+// Dependencies: [4863, 4926, 4885, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 6403 (isMessageMentioned)
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
+// Module 6443 (isMessageMentioned)
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 function isMentioned(suppressRoles) {
@@ -79,7 +79,7 @@ export default function isMessageMentioned(userId) {
   const obj = { userId, channelId: message.channel_id, mentionEveryone: message.mentionEveryone, mentionUsers: message.mentions, mentionRoles: message.mentionRoles, suppressEveryone, suppressRoles: flag };
   return isMentioned(obj);
 };
-export const isRawMessageMentioned = function isRawMessageMentioned(userId) {
+export function isRawMessageMentioned(userId) {
   let flag2;
   let mapped;
   let mention_roles;
@@ -113,5 +113,5 @@ export const isRawMessageMentioned = function isRawMessageMentioned(userId) {
     mention_roles = [];
   }
   return tmp(obj);
-};
+}
 export { isMentioned };

@@ -1,24 +1,20 @@
-// Module ID: 10658
-// Function ID: 10659
+// Module ID: 10737
+// Function ID: 10738
 // Name: useScaledSectionHeight
-// Dependencies: [10655, 558, 5285, 2]
+// Dependencies: [10734, 5642, 2]
+// Exports: default
 
-// Module 10658 (useScaledSectionHeight)
-import useFontScale from "useFontScale" /* 5285 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10655 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10737 (useScaledSectionHeight)
+import useFontScale from "useFontScale" /* 5642 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10734 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ USERS_LIST_SECTION_HEIGHT: c2, USERS_LIST_SECTION_TEXT_HEIGHT: c3 } = UsersFastListConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledSectionHeight() {
-  const obj = useFontScale;
-  return React2 + Math.max(Math.min(obj.useFontScale(), 2) * _false - _false, 0);
-}) : (function useScaledSectionHeight() {
-  const obj = useFontScale;
-  return React2 + Math.max(Math.min(obj.useFontScale(), 2) * _false - _false, 0);
-});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledSectionHeight.tsx");
 
-export default tmp3;
+export default function useScaledSectionHeight() {
+  const obj = useFontScale;
+  return React2 + Math.max(Math.min(obj.useFontScale(), 2) * _false - _false, 0);
+};

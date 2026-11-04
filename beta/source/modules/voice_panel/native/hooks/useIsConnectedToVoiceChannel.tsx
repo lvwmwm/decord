@@ -1,67 +1,23 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 19151
+// Function ID: 19152
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [502, 5746, 5662, 1087, 558, 576, 504, 2]
+// Dependencies: [502, 5764, 5679, 1072, 504, 2]
+// Exports: default
 
-// Module 18514 (useIsConnectedToVoiceChannel)
-import Constants from "Constants" /* 1087 */;
+// Module 19151 (useIsConnectedToVoiceChannel)
+import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const RTCConnectionStates = Constants.RTCConnectionStates;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConnectedToVoiceChannel(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  _require = arg0;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RTCConnectionStore, VoiceStateStore, AuthenticationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      const channelId = RTCConnectionStore.getChannelId();
-      let tmp2 = closure_0;
-      const obj = RTCConnectionStore;
-      if (closure_0 == null) {
-        tmp2 = channelId;
-      }
-      if (tmp2 !== channelId) {
-        return false;
-      } else if (VoiceStateStore.isInChannel(tmp2, AuthenticationStore.getId())) {
-        return true;
-      } else {
-        const state = obj.getState();
-        if (RTCConnectionStates.DISCONNECTED !== state) {
-          if (RTCConnectionStates.NO_ROUTE !== state) {
-            return true;
-          }
-        }
-        return false;
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8);
-}) : (function useIsConnectedToVoiceChannel(arg0) {
+const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useIsConnectedToVoiceChannel.tsx");
+
+export default function useIsConnectedToVoiceChannel(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -87,7 +43,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConnect
       return false;
     }
   });
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useIsConnectedToVoiceChannel.tsx");
-
-export default tmp2;
+};

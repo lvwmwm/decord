@@ -1,73 +1,38 @@
-// Module ID: 5237
-// Function ID: 5238
+// Module ID: 5253
+// Function ID: 5254
 // Name: useTheme
-// Dependencies: [1087, 558, 5010, 576, 2]
-// Exports: getThemeIndex
+// Dependencies: [1072, 5021, 2]
+// Exports: default, getThemeIndex, useTheme, useThemeIndex
 
-// Module 5237 (useTheme)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import shared from "shared" /* 5010 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 5253 (useTheme)
+import Constants from "Constants" /* 1072 */;
+import shared from "shared" /* 5021 */;
 import size from "module_2" /* 2 */;
 
-const ThemeTypes = Constants.ThemeTypes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
 function useTheme() {
   const obj = shared;
   return obj.useThemeContext().theme;
 }
-ReactCompilerGating = ReactCompilerGating_mod;
-function getThemeIndex(arg0) {
+const ThemeTypes = Constants.ThemeTypes;
+const result = size.fileFinishedImporting("hooks/useTheme.tsx");
+
+export default useTheme;
+export { useTheme };
+export function useThemeIndex() {
+  const obj = shared;
+  const theme = obj.useThemeContext().theme;
+  let num = 0;
+  if (ThemeTypes.DARK !== theme) {
+    if (ThemeTypes.LIGHT === theme) {
+      num = 1;
+    }
+  }
+  return num;
+}
+export function getThemeIndex(arg0) {
   if (ThemeTypes.DARK === arg0) {
     return 0;
   } else if (tmp.LIGHT === arg0) {
     return 1;
   }
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThemeIndex() {
-  const obj = react;
-  const cResult = obj.c(2);
-  if (typeof useTheme === "function") {
-    let tmp4;
-    const tmpResult = shared;
-    const theme = tmpResult.useThemeContext().theme;
-    if (cResult[0] !== theme) {
-      let num2 = 0;
-      if (ThemeTypes.DARK !== theme) {
-        if (ThemeTypes.LIGHT === theme) {
-          num2 = 1;
-        }
-      }
-      cResult[0] = theme;
-      cResult[1] = num2;
-      tmp4 = num2;
-    } else {
-      tmp4 = cResult[1];
-    }
-    return tmp4;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}) : (function useThemeIndex() {
-  if (typeof useTheme === "function") {
-    const obj = shared;
-    const theme = obj.useThemeContext().theme;
-    let num = 0;
-    if (ThemeTypes.DARK !== theme) {
-      if (ThemeTypes.LIGHT === theme) {
-        num = 1;
-      }
-    }
-    return num;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-});
-const result1 = size.fileFinishedImporting("hooks/useTheme.tsx");
-
-export default useTheme;
-export { useTheme };
-export const useThemeIndex = tmp3;
-export { getThemeIndex };

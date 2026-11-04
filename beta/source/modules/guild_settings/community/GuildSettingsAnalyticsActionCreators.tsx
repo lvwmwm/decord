@@ -1,12 +1,12 @@
-// Module ID: 19237
-// Function ID: 19238
+// Module ID: 19870
+// Function ID: 19871
 // Name: GuildSettingsAnalyticsActionCreators
-// Dependencies: [109, 1087, 1297, 584, 2]
+// Dependencies: [109, 1072, 1282, 572, 2]
 // Exports: fetchEngagementOverview, fetchGrowthActivationOverview, fetchGrowthActivationRetention
 
-// Module 19237 (GuildSettingsAnalyticsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+// Module 19870 (GuildSettingsAnalyticsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let closure_3 = ["interval_start_timestamp", "pct_retained"];
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsActionCreators.tsx");
 
-export const fetchEngagementOverview = function fetchEngagementOverview(guildId) {
+export function fetchEngagementOverview(guildId) {
   let obj;
   let obj5;
   _require = guildId;
@@ -41,8 +41,8 @@ export const fetchEngagementOverview = function fetchEngagementOverview(guildId)
     const obj2 = { type: "GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE", error: body.body };
     obj.dispatch(obj2);
   });
-};
-export const fetchGrowthActivationOverview = function fetchGrowthActivationOverview(guildId) {
+}
+export function fetchGrowthActivationOverview(guildId) {
   let obj;
   let obj5;
   _require = guildId;
@@ -66,8 +66,8 @@ export const fetchGrowthActivationOverview = function fetchGrowthActivationOverv
     const obj2 = { type: "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE", error: body.body };
     obj.dispatch(obj2);
   });
-};
-export const fetchGrowthActivationRetention = function fetchGrowthActivationRetention(guildId) {
+}
+export function fetchGrowthActivationRetention(guildId) {
   let obj;
   let obj5;
   _require = guildId;
@@ -99,4 +99,4 @@ export const fetchGrowthActivationRetention = function fetchGrowthActivationRete
     const obj2 = { type: "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE", error: body.body };
     obj.dispatch(obj2);
   });
-};
+}

@@ -1,21 +1,21 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10766
+// Function ID: 10767
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 5003, 4831, 1417, 9382, 7259, 2]
+// Dependencies: [19, 21, 5014, 4839, 1409, 9452, 7300, 2]
 // Exports: default
 
-// Module 10687 (ActivityEmoji)
+// Module 10766 (ActivityEmoji)
 import Fragment from "Fragment" /* 21 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import EmojiDefault from "Emoji" /* 7259 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import EmojiDefault from "Emoji" /* 7300 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 const jsx = Fragment.jsx;
-let closure_5 = createStyles.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "System" } });
+let closure_5 = createStyles.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "system-ui" } });
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
 
 export default function ActivityEmoji(emoji) {
@@ -33,7 +33,7 @@ export default function ActivityEmoji(emoji) {
   }
   importDefault = undefined;
   const tmp = closure_5();
-  const AnimateEmoji = emoji(4831).AnimateEmoji;
+  const AnimateEmoji = emoji(4839).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   const _Boolean = Boolean;
@@ -57,7 +57,7 @@ export default function ActivityEmoji(emoji) {
   if (null != emoji) {
     let tmp11;
     if (null == emoji) {
-      tmp11 = jsx(tmp2(9382).ReactionIcon, { style, size: "sm" });
+      tmp11 = jsx(tmp2(9452).ReactionIcon, { style, size: "sm" });
     } else {
       const items1 = [style, ];
       const size1 = { width: size, height: size };

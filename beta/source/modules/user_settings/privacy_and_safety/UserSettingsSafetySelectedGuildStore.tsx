@@ -1,15 +1,15 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17911
+// Function ID: 17912
 // Name: UserSettingsSafetySelectedGuildStore
-// Dependencies: [570, 2]
+// Dependencies: [560, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 17309 (UserSettingsSafetySelectedGuildStore)
-import module_570 from "module_570" /* 570 */;
+// Module 17911 (UserSettingsSafetySelectedGuildStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = { selectedGuildId: "0" };
-const useUserSafetySettingsSelectedGuildStore = module_570.create((arg0) => {
+const useUserSafetySettingsSelectedGuildStore = module_560.create((arg0) => {
   closure_0 = arg0;
   let obj = {
     setSelectedGuildId(selectedGuildId) {
@@ -27,10 +27,10 @@ const result = size.fileFinishedImporting("modules/user_settings/privacy_and_saf
 
 export const GUILD_SELECT_ALL_SERVERS_OPTION_ID = "0";
 export { useUserSafetySettingsSelectedGuildStore };
-export const setSelectedGuildId = function setSelectedGuildId(selectedGuildId) {
+export function setSelectedGuildId(selectedGuildId) {
   const obj = { selectedGuildId };
   return obj.setState(obj);
-};
-export const getSelectedGuildId = function getSelectedGuildId() {
+}
+export function getSelectedGuildId() {
   return obj.getState().selectedGuildId;
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 8184
-// Function ID: 8185
+// Module ID: 8218
+// Function ID: 8219
 // Name: uploader/UploadUtils
-// Dependencies: [8177, 1297, 8185, 562, 2]
+// Dependencies: [8211, 1282, 8219, 1361, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 8184 (uploader/UploadUtils)
-import shim from "shim" /* 562 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import AttachmentFile from "AttachmentFile" /* 8185 */;
+// Module 8218 (uploader/UploadUtils)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import shim from "shim" /* 1361 */;
+import UploadPlatform from "UploadPlatform" /* 8211 */;
+import AttachmentFile from "AttachmentFile" /* 8219 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/uploader/UploadUtils.tsx");
@@ -198,7 +198,7 @@ class LibdiscoreHttpClient {
   }
 }
 
-export const doesImageMatchUpload = function doesImageMatchUpload(image, id) {
+export function doesImageMatchUpload(image, id) {
   if (id.id !== image.uri) {
     if (id.item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE) {
       const item = id.item;
@@ -222,8 +222,8 @@ export const doesImageMatchUpload = function doesImageMatchUpload(image, id) {
     }
   }
   return true;
-};
-export const calculateProgress = function calculateProgress(loaded, currentSize) {
+}
+export function calculateProgress(loaded, currentSize) {
   let num = 0;
   if (0 !== currentSize) {
     const _Math = Math;
@@ -231,9 +231,9 @@ export const calculateProgress = function calculateProgress(loaded, currentSize)
     num = Math.min(Math.floor(loaded / currentSize * 100), 100);
   }
   return num;
-};
+}
 export { DefaultHttpClient };
-export const canUploadNatively = function canUploadNatively(platform) {
+export function canUploadNatively(platform) {
   let fileIsInAppDirResult = platform.platform === UploadPlatform.UploadPlatform.REACT_NATIVE && null != platform.uri;
   if (fileIsInAppDirResult) {
     const tmpResult = AttachmentFile;
@@ -244,5 +244,5 @@ export const canUploadNatively = function canUploadNatively(platform) {
     fileIsInAppDirResult = tmpResult2.isLibdiscoreInitialized();
   }
   return fileIsInAppDirResult;
-};
+}
 export { LibdiscoreHttpClient };

@@ -1,58 +1,84 @@
 // Module ID: 1803
 // Function ID: 1804
-// Dependencies: [19, 1688, 1683, 1669, 1804, 1661]
-// Exports: useHandler
+// Dependencies: [19, 1802, 1653, 1694]
+// Exports: useAnimatedReaction
 
 // Module 1803
-import _mod1661 from "module_1661" /* 1661 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1683 */;
-import _mod1688 from "module_1688" /* 1688 */;
-import _mod1804 from "module_1804" /* 1804 */;
 import react from "react" /* 19 */;
+import startMapper from "startMapper" /* 1694 */;
 
-let c2;
-let c3;
-({ useEffect: c2, useRef: c3 } = react);
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export const useHandler = function useHandler(memoizedGestureCallbacks, items10) {
-  let context;
-  let isWebResult;
-  let obj;
-  let savedDependencies;
-  const tmp = _false(null);
-  let closure_0 = tmp;
-  if (null === tmp.current) {
-    const obj2 = { context: obj.makeShareable({}), savedDependencies: [] };
-    tmp.current = obj2;
-    obj = _mod1688;
+let useEffect = react.useEffect;
+let closure_3 = { code: "function pnpm_useAnimatedReactionTs1(){const{prepare,react,previous}=this.__closure;const input=prepare();react(input,previous.value);previous.value=input;}" };
+
+export function useAnimatedReaction(fn, fn2, items) {
+  let previous;
+  let react;
+  _require = fn;
+  dependencyMap = fn2;
+  let obj = require("module_1802");
+  useEffect = obj.useSharedValue(null);
+  let __closure = fn.__closure;
+  const _Object = Object;
+  const tmp2 = _require;
+  if (__closure == null) {
+    __closure = {};
   }
-  React2(() => () => {
-    closure_1_0.current = null;
-  }, []);
-  ({ context, savedDependencies } = tmp.current);
-  for (const key10024 in memoizedGestureCallbacks) {
-    let tmp12 = require;
-    let obj8 = LayoutAnimationType;
-    if (obj8.isWorkletFunction(memoizedGestureCallbacks[key10024])) {
-      continue;
-    } else {
-      let self = this;
-      let str = "Passed a function that is not a worklet. Please provide a worklet function.";
-      let self2 = this;
-      let reanimatedError = new tmp12(1669).ReanimatedError("Passed a function that is not a worklet. Please provide a worklet function.");
-      throw reanimatedError;
+  let values2 = values(__closure);
+  const tmp2Result = tmp2(1653);
+  let tmp4 = tmp2Result.shouldBeUseWeb() && !values2.length;
+  let arr2 = items;
+  if (tmp4) {
+    let length;
+    if (arr2 != null) {
+      length = arr2.length;
     }
+    tmp4 = length;
   }
-  const obj3 = _mod1804;
-  const dependencies = obj3.buildDependencies(items10, memoizedGestureCallbacks);
-  tmp.current.savedDependencies = dependencies;
-  const obj4 = _mod1804;
-  const obj5 = { context, doDependenciesDiffer: !obj4.areDependenciesEqual(dependencies, savedDependencies), useWeb: isWebResult };
-  const obj6 = _mod1661;
-  isWebResult = obj6.isWeb();
-  if (!isWebResult) {
-    const tmp7Result = _mod1661;
-    isWebResult = tmp7Result.isJest();
+  if (tmp4) {
+    values2 = arr2;
   }
-  return obj5;
-};
+  if (undefined === arr2) {
+    let __closure1 = fn.__closure;
+    const _Object2 = Object;
+    const values3 = Object.values;
+    if (__closure1 == null) {
+      __closure1 = {};
+    }
+    items = [, ];
+    let __closure2 = fn2.__closure;
+    const _Object3 = Object;
+    const values6 = Object.values;
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, values3(__closure1), 0);
+    if (__closure2 == null) {
+      __closure2 = {};
+    }
+    const arraySpreadResult2 = HermesBuiltin.arraySpread(items, values6(__closure2), arraySpreadResult);
+    items[arraySpreadResult2] = fn.__workletHash;
+    items[arraySpreadResult2 + 1] = fn2.__workletHash;
+    arr2 = items;
+  } else {
+    arr2.push(fn.__workletHash, fn2.__workletHash);
+  }
+  useEffect(() => {
+    let closure_0;
+    let value;
+    const fn = function t() {
+      const tmp = closure_0();
+      react(tmp, value.value);
+      value.value = tmp;
+    };
+    let obj = { prepare, react, previous };
+    fn.__closure = obj;
+    fn.__workletHash = 3026350450260;
+    fn.__initData = values2;
+    const obj2 = prepare(react[3]);
+    prepare = obj2.startMapper(fn, values2);
+    return () => {
+      const obj = startMapper;
+      obj.stopMapper(closure_0);
+    };
+  }, arr2);
+}

@@ -1,12 +1,12 @@
-// Module ID: 10060
-// Function ID: 10061
+// Module ID: 10142
+// Function ID: 10143
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: [5941, 1128, 2]
+// Dependencies: [5959, 1113, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 10060 (maybeShowDiscardChangesAlert)
-import intl5 from "intl" /* 1128 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+// Module 10142 (maybeShowDiscardChangesAlert)
+import intl5 from "intl" /* 1113 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,8 +41,8 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
         },
       isDismissable: false
     };
-    const show = onConfirm(5941).show;
-    onConfirm(5941);
+    const show = onConfirm(5959).show;
+    onConfirm(5959);
     intl = intl5.intl;
     intl2 = intl5.intl;
     intl3 = intl5.intl;
@@ -53,7 +53,7 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
   }
   return showResult;
 };
-export const showDiscardChangesAlert = function showDiscardChangesAlert(arg0) {
+export function showDiscardChangesAlert(arg0) {
   let intl;
   let intl2;
   let intl3;
@@ -69,4 +69,4 @@ export const showDiscardChangesAlert = function showDiscardChangesAlert(arg0) {
   intl3 = intl5.intl;
   intl4 = intl5.intl;
   return show(obj);
-};
+}

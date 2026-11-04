@@ -1,14 +1,14 @@
-// Module ID: 4913
-// Function ID: 4914
+// Module ID: 4924
+// Function ID: 4925
 // Name: GuildRoleUtils
-// Dependencies: [11, 1105, 4912, 4911, 2]
+// Dependencies: [11, 1090, 4923, 4922, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
-// Module 4913 (GuildRoleUtils)
+// Module 4924 (GuildRoleUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4911 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4912 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4922 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4923 */;
 import size from "module_2" /* 2 */;
 
 function compareGuildRoles(guildId, id) {
@@ -38,12 +38,12 @@ function compareGuildRoles(guildId, id) {
 }
 let result = size.fileFinishedImporting("utils/GuildRoleUtils.tsx");
 
-export const sortGuildRoleRecords = function sortGuildRoleRecords(arr) {
+export function sortGuildRoleRecords(arr) {
   const sorted = arr.sort(compareGuildRoles);
   return arr;
-};
+}
 export { compareGuildRoles };
-export const doesRoleSortHigher = function doesRoleSortHigher(guildId, id) {
+export function doesRoleSortHigher(guildId, id) {
   let num;
   guildId = guildId.guildId;
   if (guildId.id === guildId) {
@@ -67,8 +67,8 @@ export const doesRoleSortHigher = function doesRoleSortHigher(guildId, id) {
     }
   }
   return num < 0;
-};
-export const sortInviteRoles = function sortInviteRoles(position, position2) {
+}
+export function sortInviteRoles(position, position2) {
   let diff;
   if (position.position !== position2.position) {
     diff = position2.position - position.position;
@@ -77,8 +77,8 @@ export const sortInviteRoles = function sortInviteRoles(position, position2) {
     diff = obj.compare(position.id, position2.id);
   }
   return diff;
-};
-export const inviteRoleToDisplayData = function inviteRoleToDisplayData(id, id2) {
+}
+export function inviteRoleToDisplayData(id, id2) {
   let icon;
   let int2hexResult;
   let result;
@@ -103,8 +103,8 @@ export const inviteRoleToDisplayData = function inviteRoleToDisplayData(id, id2)
     unicode_emoji = null;
   }
   return obj;
-};
-export const filterRoleDeletes = function filterRoleDeletes(id, unsafeMutableRoles, roles, deleted_role_ids) {
+}
+export function filterRoleDeletes(id, unsafeMutableRoles, roles, deleted_role_ids) {
   let items = roles;
   if (roles === undefined) {
     items = [];
@@ -132,4 +132,4 @@ export const filterRoleDeletes = function filterRoleDeletes(id, unsafeMutableRol
     }
     return obj3;
   }
-};
+}

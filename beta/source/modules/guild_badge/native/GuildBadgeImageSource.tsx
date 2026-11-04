@@ -1,21 +1,19 @@
-// Module ID: 9269
-// Function ID: 9270
+// Module ID: 9310
+// Function ID: 9311
 // Name: GuildBadgeImageSource
-// Dependencies: [9267, 6920, 6921, 9270, 9271, 9272, 9273, 9274, 9275, 5010, 9266, 2]
+// Dependencies: [9305, 6962, 6963, 9311, 9312, 9313, 9314, 5021, 9304, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 9269 (GuildBadgeImageSource)
-import shared from "shared" /* 5010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6920 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6921 */;
-import GuildTraits from "GuildTraits" /* 9266 */;
-import BadgeCategory from "BadgeCategory" /* 9267 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9270 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9271 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9272 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9273 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9274 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9275 */;
+// Module 9310 (GuildBadgeImageSource)
+import shared from "shared" /* 5021 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6962 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6963 */;
+import GuildTraits from "GuildTraits" /* 9304 */;
+import BadgeCategory from "BadgeCategory" /* 9305 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9311 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9312 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9313 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9314 */;
 import size from "module_2" /* 2 */;
 
 const badgeVariants = {};
@@ -31,7 +29,7 @@ badgeVariants[VERIFIED] = obj4;
 const obj5 = { imageSource: AssetRegistryDefault3, imageSourceLight: AssetRegistryDefault4, premiumImageSource: AssetRegistryDefault5 };
 const COMMUNITY = BadgeCategory.BadgeCategory.COMMUNITY;
 badgeVariants[COMMUNITY] = obj5;
-const obj6 = { imageSource: AssetRegistryDefault6, imageSourceLight: AssetRegistryDefault7, premiumImageSource: AssetRegistryDefault8 };
+const obj6 = { imageSource: AssetRegistryDefault6 };
 const DISCOVERABLE = BadgeCategory.BadgeCategory.DISCOVERABLE;
 badgeVariants[DISCOVERABLE] = obj6;
 const obj7 = { imageSource: AssetRegistryDefault };
@@ -41,7 +39,7 @@ badgeVariants[BadgeCategory.BadgeCategory.NONE] = {};
 const result = size.fileFinishedImporting("modules/guild_badge/native/GuildBadgeImageSource.tsx");
 
 export { badgeVariants };
-export const resolveImageSource = function resolveImageSource(premiumImageSource, guildTraits, arg2) {
+export function resolveImageSource(premiumImageSource, guildTraits, arg2) {
   let imageSource;
   if (guildTraits.premium) {
     if (null != premiumImageSource.premiumImageSource) {
@@ -56,8 +54,8 @@ export const resolveImageSource = function resolveImageSource(premiumImageSource
     }
   }
   imageSource = premiumImageSource.imageSource;
-};
-export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, theme) {
+}
+export function getGuildBadgeImageSource(guild, theme) {
   const obj = GuildTraits;
   const guildTraits = obj.getGuildTraits(guild);
   const obj2 = BadgeCategory;
@@ -80,4 +78,4 @@ export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild,
     imageSource = tmp4.imageSource;
   }
   return tmp5;
-};
+}

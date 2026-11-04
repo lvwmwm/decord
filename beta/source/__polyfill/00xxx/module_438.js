@@ -32,7 +32,7 @@ function defaultItemToKey(key) {
 ({ useCallback: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 
-export const createVirtualCollectionView = function createVirtualCollectionView(arg0, initial) {
+export function createVirtualCollectionView(arg0, initial) {
   let closure_0 = arg0;
   initial = initial.initial;
   const next = initial.next;
@@ -166,4 +166,4 @@ export const createVirtualCollectionView = function createVirtualCollectionView(
     const merged1 = Object.assign(merged);
     return closure_1_8(children, obj);
   };
-};
+}

@@ -1,17 +1,15 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 15390
+// Function ID: 15391
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 21, 8756, 14846, 14847, 14848, 558, 576, 5010, 5701, 2]
-// Exports: getSubscriptionPlaceholderPatternSource
+// Dependencies: [19, 21, 8806, 15391, 15392, 15393, 5021, 5717, 2]
+// Exports: SubscriptionPlaceholderPattern, getSubscriptionPlaceholderPatternSource, useSubscriptionPlaceholderPatternSource
 
-// Module 14845 (SubscriptionPlaceholderPattern)
+// Module 15390 (SubscriptionPlaceholderPattern)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import shared from "shared" /* 5010 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import _mod8756 from "module_8756" /* 8756 */;
+import shared from "shared" /* 5021 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import _mod8806 from "module_8806" /* 8806 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,64 +24,27 @@ function light() {
   return require("AssetRegistry");
 }
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscriptionPlaceholderPatternSource() {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = shared;
-  const theme = obj2.useThemeContext().theme;
-  if (cResult[0] !== theme) {
-    const obj3 = { dark, darker, light };
-    const tmpResult = _mod8756;
-    const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
-    cResult[0] = theme;
-    cResult[1] = illustrationSource;
-    tmp4 = illustrationSource;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useSubscriptionPlaceholderPatternSource() {
-  const obj = shared;
-  const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8756;
-  const obj3 = { dark, darker, light };
-  return obj2.getIllustrationSource(theme, obj3);
-});
-let closure_4 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscriptionPlaceholderPattern(arg0) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp3 = closure_4();
-  if (cResult[0] === arg0) {
-    let tmp4;
-    if (cResult[1] === tmp3) {
-      tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  FastImageDefault;
-  const merged = Object.assign(arg0);
-  const tmp7 = <tmp5 source={tmp3} />;
-  cResult[0] = arg0;
-  cResult[1] = tmp3;
-  cResult[2] = tmp7;
-  tmp4 = tmp7;
-}) : (function SubscriptionPlaceholderPattern(arg0) {
-  const tmp = closure_4();
-  FastImageDefault;
-  const merged = Object.assign(arg0);
-  return <tmp2 source={tmp} />;
-});
-function getSubscriptionPlaceholderPatternSource(theme) {
-  const obj = _mod8756;
+const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
+
+export function getSubscriptionPlaceholderPatternSource(theme) {
+  const obj = _mod8806;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
-const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
-
-export { getSubscriptionPlaceholderPatternSource };
-export const useSubscriptionPlaceholderPatternSource = tmp3;
-export const SubscriptionPlaceholderPattern = tmp4;
+export function useSubscriptionPlaceholderPatternSource() {
+  const obj = shared;
+  const theme = obj.useThemeContext().theme;
+  const obj2 = _mod8806;
+  const obj3 = { dark, darker, light };
+  return obj2.getIllustrationSource(theme, obj3);
+}
+export function SubscriptionPlaceholderPattern(arg0) {
+  const obj = shared;
+  const theme = obj.useThemeContext().theme;
+  const obj2 = _mod8806;
+  const obj3 = { dark, darker, light };
+  const illustrationSource = obj2.getIllustrationSource(theme, obj3);
+  FastImageDefault;
+  const merged = Object.assign(arg0);
+  return <tmp2 source={illustrationSource} />;
+}

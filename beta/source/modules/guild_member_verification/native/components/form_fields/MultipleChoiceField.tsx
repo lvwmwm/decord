@@ -1,17 +1,17 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 7256
+// Function ID: 7257
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1098, 21, 5003, 6683, 587, 558, 576, 5266, 7016, 7017, 2]
+// Dependencies: [19, 17, 1083, 21, 5014, 6723, 575, 5624, 7058, 7061, 2]
+// Exports: default
 
-// Module 7215 (MultipleChoiceField)
+// Module 7256 (MultipleChoiceField)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import TextStyles from "TextStyles" /* 6683 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
+import TextStyles from "TextStyles" /* 6723 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,115 +29,9 @@ createStyles = createStyles.createStyles;
 const DISPLAY_SEMIBOLD = Fonts.DISPLAY_SEMIBOLD;
 const merged = Object.assign(TextStyles(DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));
 let closure_6 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultipleChoiceField(hasIcons) {
-  let arr;
-  let choices;
-  let field;
-  let label;
-  let onChange;
-  let response;
-  let obj = onChange(576);
-  const cResult = obj.c(20);
-  ({ field, onChange } = hasIcons);
-  hasIcons = hasIcons.hasIcons;
-  const tmp4 = closure_6();
-  ({ label, choices, response } = field);
-  if (cResult[0] !== choices) {
-    let tmp6;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function t(name, value) {
-        return { name, value };
-      };
-      cResult[2] = fn;
-      tmp6 = fn;
-    } else {
-      tmp6 = cResult[2];
-    }
-    const mapped = choices.map(tmp6);
-    cResult[0] = choices;
-    cResult[1] = mapped;
-    arr = mapped;
-  } else {
-    arr = cResult[1];
-  }
-  if (cResult[3] === label) {
-    if (response == null) {
-      response = -1;
-    }
-    if (cResult[6] !== onChange) {
-      class M {
-        constructor(arg0) {
-          return onChange(arg0);
-        }
-      }
-      cResult[6] = onChange;
-      cResult[7] = M;
-    } else {
-      class M {
-        constructor(arg0) {
-          return onChange(arg0);
-        }
-      }
-    }
-    if (cResult[8] !== arr) {
-      let tmp13;
-      class M {
-        constructor(arg0) {
-          return onChange(arg0);
-        }
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class H {
-          constructor(label) {
-            const obj = { label: label.name, value: label.value };
-            return closure_1_4(onChange(dependencyMap[10]).TableRadioRow, obj, label.value);
-          }
-        }
-        cResult[10] = H;
-        tmp13 = H;
-      } else {
-        class H {
-          constructor(label) {
-            const obj = { label: label.name, value: label.value };
-            return closure_1_4(onChange(dependencyMap[10]).TableRadioRow, obj, label.value);
-          }
-        }
-      }
-      const mapped1 = arr.map(tmp13);
-      cResult[8] = arr;
-      cResult[9] = mapped1;
-    } else {
-      class H {
-        constructor(label) {
-          const obj = { label: label.name, value: label.value };
-          return closure_1_4(onChange(dependencyMap[10]).TableRadioRow, obj, label.value);
-        }
-      }
-    }
-    if (cResult[11] === hasIcons) {
-      class H {
-        constructor(label) {
-          const obj = { label: label.name, value: label.value };
-          return closure_1_4(onChange(dependencyMap[10]).TableRadioRow, obj, label.value);
-        }
-      }
-    }
-    const obj2 = { defaultValue: response, onChange: tmp11, hasIcons, children: tmp12 };
-    cResult[11] = hasIcons;
-    cResult[12] = response;
-    cResult[13] = tmp11;
-    cResult[14] = tmp12;
-    cResult[15] = closure_4(onChange(7017).TableRadioGroup, obj2);
-    const tmp17 = closure_4(onChange(7017).TableRadioGroup, obj2);
-  }
-  const obj3 = { style: tmp4.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: label };
-  cResult[3] = label;
-  cResult[4] = tmp4.formHeader;
-  cResult[5] = closure_4(onChange(5266).Text, obj3);
-  closure_4(onChange(5266).Text, obj3);
-}) : (function MultipleChoiceField(hasIcons) {
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/MultipleChoiceField.tsx");
+
+export default function MultipleChoiceField(hasIcons) {
   let field;
   let items1;
   ({ field, onChange: require } = hasIcons);
@@ -172,7 +66,4 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultipleChoi
   };
   items1[1] = tmp4(TableRadioGroup, obj3);
   return tmp2(tmp3, obj);
-});
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/MultipleChoiceField.tsx");
-
-export default tmp6;
+};

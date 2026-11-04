@@ -1,20 +1,20 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14677
+// Function ID: 14678
 // Name: IosAttributionEligibility
-// Dependencies: [9635, 1384, 7804, 14153, 2]
+// Dependencies: [9715, 1375, 7842, 14678, 2]
 // Exports: getIosAttributionClickFramework, isCampaignIosAttributionEnabled, isIosAttributionEligible
 
-// Module 14152 (IosAttributionEligibility)
-import QuestDataUtils from "QuestDataUtils" /* 7804 */;
-import apexExperiment from "apexExperiment" /* 9635 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14153 */;
+// Module 14677 (IosAttributionEligibility)
+import QuestDataUtils from "QuestDataUtils" /* 7842 */;
+import apexExperiment from "apexExperiment" /* 9715 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14678 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PlatformUtils = tmp(1384);
+const PlatformUtils = tmp(1375);
 const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionEligibility.tsx");
 
-export const isIosAttributionEligible = function isIosAttributionEligible() {
+export function isIosAttributionEligible() {
   const IosAttributionFeatureGate = apexExperiment.IosAttributionFeatureGate;
   let enabled = IosAttributionFeatureGate.getConfig({ location: "quest_ios_attribution" }).enabled;
   if (enabled) {
@@ -22,8 +22,8 @@ export const isIosAttributionEligible = function isIosAttributionEligible() {
     enabled = tmpResult.isIOS();
   }
   return enabled;
-};
-export const isCampaignIosAttributionEnabled = function isCampaignIosAttributionEnabled(sourceQuestContent, item) {
+}
+export function isCampaignIosAttributionEnabled(sourceQuestContent, item) {
   const obj = QuestDataUtils;
   const adContext = obj.getAdContext(sourceQuestContent, item);
   let prop;
@@ -31,8 +31,8 @@ export const isCampaignIosAttributionEnabled = function isCampaignIosAttribution
     prop = adContext.is_campaign_ios_attribution_enabled;
   }
   return true === prop;
-};
-export const getIosAttributionClickFramework = function getIosAttributionClickFramework(arg0, sourceQuestContent, adContentId) {
+}
+export function getIosAttributionClickFramework(arg0, sourceQuestContent, adContentId) {
   const IosAttributionFeatureGate = apexExperiment.IosAttributionFeatureGate;
   let enabled = IosAttributionFeatureGate.getConfig({ location: "quest_ios_attribution" }).enabled;
   if (enabled) {
@@ -57,4 +57,4 @@ export const getIosAttributionClickFramework = function getIosAttributionClickFr
     }
   }
   return activeIosAttributionFramework;
-};
+}

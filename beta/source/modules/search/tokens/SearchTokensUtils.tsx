@@ -1,18 +1,18 @@
-// Module ID: 13267
-// Function ID: 13268
+// Module ID: 13898
+// Function ID: 13899
 // Name: SearchTokensUtils
-// Dependencies: [5640, 2]
+// Dependencies: [5656, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 13267 (SearchTokensUtils)
-import RegexUtilsDefault from "RegexUtils" /* 5640 */;
+// Module 13898 (SearchTokensUtils)
+import RegexUtilsDefault from "RegexUtils" /* 5656 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");
 
 export const ANSWER_IN_REGEX = /(?:\s*#?((?:"(\\\\|\\"|[^\\"])*")|(?:[^\s]+)))/i;
 export const GENERIC_REGEX = /(?:\s*([^\s]+))/;
-export const makeRegexForOptionsWithNegation = function makeRegexForOptionsWithNegation(items) {
+export function makeRegexForOptionsWithNegation(items) {
   items = [...items];
   const sorted = items.sort((arg0, arg1) => arg1.length - arg0.length);
   const mapped = sorted.map((item) => {
@@ -21,8 +21,8 @@ export const makeRegexForOptionsWithNegation = function makeRegexForOptionsWithN
   });
   const regExp = new RegExp("(?:\\s*(-?(?:" + mapped.join("|") + ")))", "i");
   return regExp;
-};
-export const validateForMapWithNegation = function validateForMapWithNegation(has, hasMap, token) {
+}
+export function validateForMapWithNegation(has, hasMap, token) {
   const match = token.getMatch(1);
   const startsWithResult = match.startsWith("-");
   let substr = match;
@@ -41,4 +41,4 @@ export const validateForMapWithNegation = function validateForMapWithNegation(ha
     flag = true;
   }
   return flag;
-};
+}

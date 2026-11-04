@@ -1,16 +1,16 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7084
+// Function ID: 7085
 // Name: getRequiredFieldA11yName
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: getRequiredFieldA11yName
 
-// Module 7042 (getRequiredFieldA11yName)
-import intl2 from "intl" /* 1128 */;
+// Module 7084 (getRequiredFieldA11yName)
+import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Input/native/getRequiredFieldA11yName.native.tsx");
 
-export const getRequiredFieldA11yName = function getRequiredFieldA11yName(accessibilityLabel, required) {
+export function getRequiredFieldA11yName(accessibilityLabel, required) {
   let combined;
   if (null != accessibilityLabel) {
     if ("" !== accessibilityLabel) {
@@ -22,4 +22,4 @@ export const getRequiredFieldA11yName = function getRequiredFieldA11yName(access
     }
   }
   return combined;
-};
+}

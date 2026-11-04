@@ -1,14 +1,14 @@
-// Module ID: 4870
-// Function ID: 4871
+// Module ID: 4878
+// Function ID: 4879
 // Name: PlainRecord
-// Dependencies: [4871, 38, 4872, 568, 2]
+// Dependencies: [4879, 38, 4880, 558, 2]
 // Exports: constructInPlace, copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
-// Module 4870 (PlainRecord)
+// Module 4878 (PlainRecord)
 import _modDef38 from "module_38" /* 38 */;
-import shallowEqual from "shallowEqual" /* 568 */;
-import js_shim_PlainRecord from "js_shim/PlainRecord" /* 4871 */;
-import SetUtils from "SetUtils" /* 4872 */;
+import shallowEqual from "shallowEqual" /* 558 */;
+import js_shim_PlainRecord from "js_shim/PlainRecord" /* 4879 */;
+import SetUtils from "SetUtils" /* 4880 */;
 import size from "module_2" /* 2 */;
 
 const shallowEqualDefault = shallowEqual;
@@ -82,7 +82,7 @@ const result = size.fileFinishedImporting("lib/PlainRecord.tsx");
 
 export default PlainRecord;
 export { TypeTag };
-export const set = function set(arg0, arg1, getTime2) {
+export function set(arg0, arg1, getTime2) {
   let tmp = arg0;
   if (!isValueEqual(arg0[arg1], getTime2)) {
     const obj = {};
@@ -91,8 +91,8 @@ export const set = function set(arg0, arg1, getTime2) {
     tmp = obj;
   }
   return tmp;
-};
-export const merge = function merge(arg0, getTime2) {
+}
+export function merge(arg0, getTime2) {
   let tmp2 = arg0;
   let tmp3 = null;
   let tmp4 = null;
@@ -128,8 +128,8 @@ export const merge = function merge(arg0, getTime2) {
     tmp2 = tmp4;
   }
   return tmp2;
-};
-export const tryReuseExistingInPlacePlainRecord = function tryReuseExistingInPlacePlainRecord(arg0, arg1, arg2) {
+}
+export function tryReuseExistingInPlacePlainRecord(arg0, arg1, arg2) {
   let tmp = arg1;
   let tmp3 = null == arg1;
   const tmp2 = _modDef38;
@@ -142,8 +142,8 @@ export const tryReuseExistingInPlacePlainRecord = function tryReuseExistingInPla
     tmp = arg2;
   }
   return tmp;
-};
-export const objectIsPlainRecordOfType = function objectIsPlainRecordOfType(arg0, obj) {
+}
+export function objectIsPlainRecordOfType(arg0, obj) {
   let tmp = typeof obj === "object";
   if (typeof obj === "object") {
     tmp = null != obj;
@@ -152,16 +152,16 @@ export const objectIsPlainRecordOfType = function objectIsPlainRecordOfType(arg0
     tmp = (TypeTag in obj && obj[TypeTag]) === arg0;
   }
   return tmp;
-};
-export const constructInPlace = function constructInPlace(GuildRoleRecordTypeTag, arg1) {
+}
+export function constructInPlace(GuildRoleRecordTypeTag, arg1) {
   arg1[TypeTag] = GuildRoleRecordTypeTag;
   return arg1;
-};
-export const copyConstruct = function copyConstruct(arg0, arg1) {
+}
+export function copyConstruct(arg0, arg1) {
   const obj = {};
   const merged = Object.assign(arg1);
   obj[TypeTag] = arg0;
   return obj;
-};
+}
 export { isValueEqual };
 export { isPlainRecordDataEqual };

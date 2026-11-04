@@ -1,11 +1,11 @@
-// Module ID: 15339
-// Function ID: 15340
+// Module ID: 15887
+// Function ID: 15888
 // Name: GoLiveHdrExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: getGoLiveHdrConfig
 
-// Module 15339 (GoLiveHdrExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15887 (GoLiveHdrExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -17,7 +17,7 @@ const config = ApexExperiment.createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/media_engine/GoLiveHdrExperiment.tsx");
 
 export const HdrCaptureMode = obj;
-export const getGoLiveHdrConfig = function getGoLiveHdrConfig(location) {
+export function getGoLiveHdrConfig(location) {
   const obj = { location: location.location };
   return config.getConfig(obj);
-};
+}

@@ -1,84 +1,26 @@
-// Module ID: 13886
-// Function ID: 13887
+// Module ID: 14404
+// Function ID: 14405
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 4855, 4935, 4858, 1087, 558, 576, 504, 9099, 4880, 1388, 2]
+// Dependencies: [19, 4863, 4946, 4866, 1072, 504, 9135, 4888, 1379, 2]
+// Exports: default
 
-// Module 13886 (useFavoritesGuildChannelFilter)
-import Constants from "Constants" /* 1087 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import FavoritesUtils from "FavoritesUtils" /* 4880 */;
-import _mod9099 from "module_9099" /* 9099 */;
+// Module 14404 (useFavoritesGuildChannelFilter)
+import Constants from "Constants" /* 1072 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+import _mod9135 from "module_9135" /* 9135 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import FavoriteStore from "FavoriteStore" /* 4858 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
 import size from "module_2" /* 2 */;
 
+let type;
+
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildChannelFilter() {
-  let favoriteChannels;
-  let stateFromStores;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = stateFromStores(576);
-  const cResult = obj.c(4);
-  const tmp = stateFromStores;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FavoriteStore];
-    const fn = function n() {
-      return favoriteChannels.getFavoriteChannels();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const fn2 = function p(type, arg1) {
-      type = type.type;
-      if (_mod9099.AutocompleterResultTypes.USER === type) {
-        const dMChannelFromUserId = ChannelStore.getDMChannelFromUserId(type.record.id);
-        let tmp15 = !(!arg1 && null == dMChannelFromUserId);
-        const tmp13 = !arg1 && null == dMChannelFromUserId;
-        if (tmp15) {
-          tmp15 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
-          const tmp17 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
-        }
-        return tmp15;
-      } else if (_mod9099.AutocompleterResultTypes.GROUP_DM === type) {
-        return null == stateFromStores[type.record.id];
-      } else {
-        if (_mod9099.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (_mod9099.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
-            const tmpResult = GlobalUtils;
-            return tmpResult.assertNever(type);
-          }
-        }
-        let canResult = PermissionStore.can(Permissions.VIEW_CHANNEL, type.record);
-        if (canResult) {
-          const tmpResult2 = FavoritesUtils;
-          canResult = tmpResult2.isFavoritableChannel(type.record);
-        }
-        if (canResult) {
-          canResult = null == stateFromStores[type.record.id];
-        }
-        return canResult;
-      }
-    };
-    cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function useFavoritesGuildChannelFilter() {
+const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildChannelFilter.tsx");
+
+export default function useFavoritesGuildChannelFilter() {
   let favoriteChannels;
   let stateFromStores;
   const items = [FavoriteStore];
@@ -87,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const items1 = [stateFromStores];
   return react.useCallback((type, arg1) => {
     type = type.type;
-    if (_mod9099.AutocompleterResultTypes.USER === type) {
+    if (_mod9135.AutocompleterResultTypes.USER === type) {
       const dMChannelFromUserId = ChannelStore.getDMChannelFromUserId(type.record.id);
       let tmp15 = !(!arg1 && null == dMChannelFromUserId);
       const tmp13 = !arg1 && null == dMChannelFromUserId;
@@ -96,11 +38,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
         const tmp17 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
       }
       return tmp15;
-    } else if (_mod9099.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod9135.AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (_mod9099.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod9099.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod9135.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod9135.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmpResult = GlobalUtils;
           return tmpResult.assertNever(type);
         }
@@ -116,7 +58,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       return canResult;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildChannelFilter.tsx");
-
-export default tmp2;
+};

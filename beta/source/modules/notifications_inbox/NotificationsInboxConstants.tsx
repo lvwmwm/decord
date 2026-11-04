@@ -1,13 +1,13 @@
-// Module ID: 8682
-// Function ID: 8683
+// Module ID: 8732
+// Function ID: 8733
 // Name: NotificationsInboxConstants
-// Dependencies: [1087, 1104, 1128, 4869, 2]
+// Dependencies: [1072, 1089, 1113, 4877, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8682 (NotificationsInboxConstants)
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import intl4 from "intl" /* 1128 */;
+// Module 8732 (NotificationsInboxConstants)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl4 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const NOTIFICATIONS_INBOX = Constants.NOTIFICATIONS_INBOX;
@@ -28,7 +28,7 @@ export const INBOX_MESSAGE_AGE_THRESHOLD = WEEK;
 export const MAX_MESSAGES_PER_CHANNEL = 50;
 export const MAX_UNREAD_MESSAGES_PER_CHANNEL = 10;
 export const NOTIFICATIONS_INBOX_FEATURE = "notifications-inbox";
-export const getNotificationsInboxGuild = function getNotificationsInboxGuild(arg0) {
+export function getNotificationsInboxGuild(arg0) {
   let stringResult;
   let tmp2;
   if (arg0 === obj2.BOOKMARKS) {
@@ -45,15 +45,15 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     stringResult = intl.string(intl4.t.HcoRu0);
   }
   const obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: [] };
-  const tmp2Result = tmp2(4869);
+  const tmp2Result = tmp2(4877);
   return tmp2Result.fromGuildBasic(obj);
-};
+}
 export const MessageCategory = obj;
 export const InboxFilters = obj2;
 export const InboxReadState = { READ: "READ", UNREAD: "UNREAD" };
 export const InboxMessageType = { ALL_MESSAGES_CHANNEL: "ALL_MESSAGES_CHANNEL", MENTION: "MENTION", BOOKMARK: "BOOKMARK" };
 export const MESSAGE_CATEGORY_DISPLAY_MAP = obj3;
-export const getFilterMap = function getFilterMap() {
+export function getFilterMap() {
   const obj = {};
   const ALL = obj2.ALL;
   const intl = intl4.intl;
@@ -65,7 +65,7 @@ export const getFilterMap = function getFilterMap() {
   const intl3 = intl4.intl;
   obj[BOOKMARKS] = intl3.string(intl4.t["+rlGYW"]);
   return obj;
-};
+}
 export const ChannelLoadState = { UNLOADED: "unloaded", LOADED: "loaded", LOADED_UNREAD: "loadedUnread" };
 export const LoadingTrigger = { AUTO_LOAD: "auto_load", ON_OPEN: "on_open", FILL_SCROLLER: "fill_scroller", USER_SCROLL: "user_scroll", UNKNOWN: "unknown" };
 export const NotificationInboxItemType = { MENTION: "MENTION", REPLY: "REPLY", REACTION: "REACTION", ANNOUNCEMENT: "ANNOUNCEMENT", MESSAGE: "MESSAGE" };

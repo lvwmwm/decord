@@ -1,18 +1,18 @@
-// Module ID: 2046
-// Function ID: 2047
+// Module ID: 2039
+// Function ID: 2040
 // Name: EntitlementRecord
-// Dependencies: [1407, 2047, 1406, 1087, 2053, 15330, 2]
+// Dependencies: [1398, 2040, 1397, 2046, 2047, 15876, 2]
 
-// Module 2046 (EntitlementRecord)
-import Constants from "Constants" /* 1087 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15330 */;
-import Record from "Record" /* 1407 */;
-import SKURecord from "SKURecord" /* 2047 */;
-import UserRecord from "UserRecord" /* 1406 */;
+// Module 2039 (EntitlementRecord)
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15876 */;
+import Record from "Record" /* 1398 */;
+import SKURecord from "SKURecord" /* 2040 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
-const EntitlementTypes = Constants.EntitlementTypes;
+const require = globalThis.__r;
+
 class EntitlementRecord extends Record {
   constructor(arg0) {
     const tmp = new EntitlementRecord(new.target, this);
@@ -130,7 +130,7 @@ class EntitlementRecord extends Record {
     const self = this;
     if (!this.isGiftable) {
       if (!self.deleted) {
-        if (self.type === EntitlementTypes.PREMIUM_SUBSCRIPTION) {
+        if (self.type === require("EntitlementTypes").EntitlementTypes.PREMIUM_SUBSCRIPTION) {
           const value = get.get(self.skuId);
           if (null != value) {
             if (!value.premium) {
@@ -182,7 +182,8 @@ class EntitlementRecord extends Record {
 }
 Object.defineProperty(EntitlementRecord.prototype, "isGiftable", {
   get: function isGiftable() {
-    return this.type === EntitlementTypes.USER_GIFT && null == this.gifterId;
+    const tmp = this.type === require("EntitlementTypes").EntitlementTypes.USER_GIFT && null == this.gifterId;
+    return tmp;
   },
   set: undefined
 });

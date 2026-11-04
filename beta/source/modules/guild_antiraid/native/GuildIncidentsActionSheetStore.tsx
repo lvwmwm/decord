@@ -1,24 +1,24 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 13256
+// Function ID: 13257
 // Name: GuildIncidentsActionSheetStore
-// Dependencies: [8418, 570, 1274, 2]
+// Dependencies: [8483, 560, 1259, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 12807 (GuildIncidentsActionSheetStore)
-import react_native from "react-native" /* 1274 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8418 */;
-import module_570 from "module_570" /* 570 */;
+// Module 13256 (GuildIncidentsActionSheetStore)
+import react_native from "react-native" /* 1259 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8483 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const DEFAULT_LOCKDOWN_DURATION = GuildAntiRaidConstants.DEFAULT_LOCKDOWN_DURATION;
-const useGuildIncidentsActionSheetStore = module_570.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: true, pauseDms: true, hasTimeChanges: false }));
+const useGuildIncidentsActionSheetStore = module_560.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: true, pauseDms: true, hasTimeChanges: false }));
 const result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentsActionSheetStore.tsx");
 
 export { useGuildIncidentsActionSheetStore };
-export const setTime = function setTime(diff) {
+export function setTime(diff) {
   let time;
   _require = diff;
   let obj = require("react-native");
@@ -26,32 +26,32 @@ export const setTime = function setTime(diff) {
     const obj = { time, hasTimeChanges: true };
     return obj.setState(obj);
   });
-};
-export const setInitialTime = function setInitialTime(time) {
+}
+export function setInitialTime(time) {
   _require = time;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { time, hasTimeChanges: false };
     return obj.setState(obj);
   });
-};
-export const setPauseInvites = function setPauseInvites(pauseInvites) {
+}
+export function setPauseInvites(pauseInvites) {
   _require = pauseInvites;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { pauseInvites };
     return obj.setState(obj);
   });
-};
-export const setPauseDms = function setPauseDms(pauseDms) {
+}
+export function setPauseDms(pauseDms) {
   _require = pauseDms;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { pauseDms };
     return obj.setState(obj);
   });
-};
-export const resetGuildIncidentsActionSheetStore = function resetGuildIncidentsActionSheetStore() {
+}
+export function resetGuildIncidentsActionSheetStore() {
   let state;
   let time;
   let obj = react_native;
@@ -59,4 +59,4 @@ export const resetGuildIncidentsActionSheetStore = function resetGuildIncidentsA
     const obj = { time, pauseInvites: true, pauseDms: true, hasTimeChanges: false };
     state.setState(obj);
   });
-};
+}

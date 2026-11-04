@@ -1,22 +1,20 @@
-// Module ID: 19167
-// Function ID: 19168
+// Module ID: 19800
+// Function ID: 19801
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1087, 21, 5003, 587, 558, 576, 1405, 19168, 1202, 11477, 1128, 5266, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 1396, 19801, 1187, 11780, 5624, 1113, 2]
+// Exports: default
 
-// Module 19167 (InRolePromptNotice)
+// Module 19800 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11477 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 19168 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11780 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 19801 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -32,122 +30,9 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefa
 createStyles = createStyles.createStyles;
 obj3 = { marginLeft: nativeDefault.space.PX_4 };
 let closure_7 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRolePromptNotice(role) {
-  let items;
-  let items1;
-  const obj = react2;
-  const cResult = obj.c(18);
-  role = role.role;
-  const tmp4 = closure_7();
-  const obj2 = FlagUtils;
-  if (obj2.hasFlag(role.flags, RoleFlags.IN_PROMPT)) {
-    const promptRow = tmp4.promptRow;
-    const tmpResult = GuildSettingsUtils;
-    if (tmpResult.isRolePowerful(role)) {
-      let tmp20;
-      let tmp25;
-      let tmp27;
-      if (cResult[0] !== tmp4.icon) {
-        const obj3 = { style: tmp4.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-        const Icon2 = tmp(1202).Icon;
-        const tmp23 = hasOwnProperty(Icon2, obj3);
-        cResult[0] = tmp4.icon;
-        cResult[1] = tmp23;
-        tmp20 = tmp23;
-      } else {
-        tmp20 = cResult[1];
-      }
-      const _Symbol2 = Symbol;
-      const promptText2 = tmp4.promptText;
-      if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1128).intl;
-        const stringResult = intl2.string(intl3.t.YRbgXz);
-        cResult[2] = stringResult;
-        tmp25 = stringResult;
-      } else {
-        tmp25 = cResult[2];
-      }
-      if (cResult[3] !== tmp4.promptText) {
-        const obj4 = { style: promptText2, variant: "text-sm/medium", children: tmp25 };
-        const tmp29 = hasOwnProperty(Text_Text.Text, obj4);
-        cResult[3] = tmp4.promptText;
-        cResult[4] = tmp29;
-        tmp27 = tmp29;
-      } else {
-        tmp27 = cResult[4];
-      }
-      if (cResult[5] === tmp4.promptRow) {
-        if (cResult[6] === tmp20) {
-          let tmp30;
-          if (cResult[7] === tmp27) {
-            tmp30 = cResult[8];
-          }
-          return tmp30;
-        }
-      }
-      const obj5 = { style: promptRow, children: items };
-      items = [tmp20, tmp27];
-      const tmp33 = metroRequire(View, obj5);
-      cResult[5] = tmp4.promptRow;
-      cResult[6] = tmp20;
-      cResult[7] = tmp27;
-      cResult[8] = tmp33;
-      tmp30 = tmp33;
-    } else {
-      let tmp6;
-      let tmp11;
-      let tmp13;
-      if (cResult[9] !== tmp4.icon) {
-        const obj6 = { style: tmp4.icon, source: AssetRegistryDefault };
-        const Icon = tmp(1202).Icon;
-        const tmp9 = hasOwnProperty(Icon, obj6);
-        cResult[9] = tmp4.icon;
-        cResult[10] = tmp9;
-        tmp6 = tmp9;
-      } else {
-        tmp6 = cResult[10];
-      }
-      const _Symbol = Symbol;
-      const promptText = tmp4.promptText;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult1 = intl.string(intl3.t.mqeO2v);
-        cResult[11] = stringResult1;
-        tmp11 = stringResult1;
-      } else {
-        tmp11 = cResult[11];
-      }
-      if (cResult[12] !== tmp4.promptText) {
-        const obj7 = { style: promptText, variant: "text-sm/medium", children: tmp11 };
-        const tmp15 = hasOwnProperty(Text_Text.Text, obj7);
-        cResult[12] = tmp4.promptText;
-        cResult[13] = tmp15;
-        tmp13 = tmp15;
-      } else {
-        tmp13 = cResult[13];
-      }
-      if (cResult[14] === tmp4.promptRow) {
-        if (cResult[15] === tmp6) {
-          let tmp16;
-          if (cResult[16] === tmp13) {
-            tmp16 = cResult[17];
-          }
-          return tmp16;
-        }
-      }
-      const obj8 = { style: promptRow, children: items1 };
-      items1 = [tmp6, tmp13];
-      const tmp19 = metroRequire(View, obj8);
-      cResult[14] = tmp4.promptRow;
-      cResult[15] = tmp6;
-      cResult[16] = tmp13;
-      cResult[17] = tmp19;
-      tmp16 = tmp19;
-    }
-  } else {
-    return null;
-  }
-}) : (function InRolePromptNotice(role) {
+const result = size.fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");
+
+export default function InRolePromptNotice(role) {
   let intl;
   let intl2;
   role = role.role;
@@ -159,13 +44,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
     const obj2 = { style: tmp.promptRow, children: null };
     const tmp2Result = GuildSettingsUtils;
     const isRolePowerfulResult = tmp2Result.isRolePowerful(role);
-    const Icon = tmp2(1202).Icon;
+    const Icon = tmp2(1187).Icon;
     if (isRolePowerfulResult) {
       const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [hasOwnProperty(Icon, obj3), ];
       const obj4 = { style: tmp.promptText, variant: "text-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
-      const Text2 = tmp2(5266).Text;
-      intl2 = tmp2(1128).intl;
+      const Text2 = tmp2(5624).Text;
+      intl2 = tmp2(1113).intl;
       items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
       tmp6Result = tmp6(tmp7, obj2);
@@ -173,8 +58,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
       const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
       const items1 = [hasOwnProperty(Icon, obj5), ];
       const obj6 = { style: tmp.promptText, variant: "text-sm/medium", children: intl.string(intl3.t.mqeO2v) };
-      const Text = tmp2(5266).Text;
-      intl = tmp2(1128).intl;
+      const Text = tmp2(5624).Text;
+      intl = tmp2(1113).intl;
       items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;
       tmp6Result = tmp6(tmp7, obj2);
@@ -182,7 +67,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InRoleProm
     tmp4 = tmp6Result;
   }
   return tmp4;
-});
-const result = size.fileFinishedImporting("modules/guild_settings/roles/native/InRolePromptNotice.tsx");
-
-export default tmp5;
+};

@@ -1,94 +1,25 @@
-// Module ID: 19448
-// Function ID: 19449
+// Module ID: 20072
+// Function ID: 20073
 // Name: StreamFullAlert
-// Dependencies: [19, 21, 558, 576, 5929, 1128, 5266, 5701, 19449, 6010, 2]
+// Dependencies: [19, 21, 5947, 1113, 6030, 5624, 2]
+// Exports: default
 
-// Module 19448 (StreamFullAlert)
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import AVError from "AVError" /* 5929 */;
-import AlertDefault from "Alert" /* 6010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19449 */;
+// Module 20072 (StreamFullAlert)
+import intl4 from "intl" /* 1113 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AVError from "AVError" /* 5947 */;
+import AlertDefault from "Alert" /* 6030 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let closure_5 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginTop: 16 } };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFullAlert(arg0) {
-  let first;
-  let intl3;
-  let items;
-  let tmp11;
-  let tmp12;
-  let tmp13;
-  let tmp21;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(5929).AVError.STREAM_FULL);
-    let errorCode;
-    if (errorInfo != null) {
-      errorCode = errorInfo.errorCode;
-    }
-    const intl = tmp(1128).intl;
-    const obj2 = { errorCode };
-    const formatToPlainStringResult = intl.formatToPlainString(intl4.t.ejOT95, obj2);
-    cResult[0] = formatToPlainStringResult;
-    first = formatToPlainStringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult = intl2.string(intl4.t.GzjdO5);
-    cResult[1] = stringResult;
-    tmp9 = stringResult;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-    const Text = tmp(5266).Text;
-    intl3 = tmp(1128).intl;
-    const tmp16 = _false(Text, obj3);
-    const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: first };
-    const tmp17 = _false(Text_Text.Text, obj4);
-    const obj5 = { source: AssetRegistryDefault, style: closure_5.image };
-    const tmp19 = FastImageDefault;
-    const tmp20 = _false(tmp19, obj5);
-    cResult[2] = tmp16;
-    cResult[3] = tmp17;
-    cResult[4] = tmp20;
-    tmp13 = tmp20;
-    tmp12 = tmp17;
-    tmp11 = tmp16;
-  } else {
-    tmp11 = cResult[2];
-    tmp12 = cResult[3];
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] !== arg0) {
-    const obj6 = { title: tmp9, children: items };
-    const tmp24 = AlertDefault;
-    const merged = Object.assign(arg0);
-    items = [tmp11, tmp12, tmp13];
-    const tmp28 = React3(tmp24, obj6);
-    cResult[5] = arg0;
-    cResult[6] = tmp28;
-    tmp21 = tmp28;
-  } else {
-    tmp21 = cResult[6];
-  }
-  return tmp21;
-}) : (function StreamFullAlert(arg0) {
+let closure_5 = { body: { marginTop: 16 } };
+const result = size.fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
+
+export default function StreamFullAlert(arg0) {
   let intl2;
   let intl3;
   let items;
@@ -98,23 +29,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
   }
-  const intl = tmp(1128).intl;
+  const intl = tmp(1113).intl;
   const obj2 = { title: intl2.string(intl4.t.GzjdO5), children: items };
   const formatToPlainStringResult = intl.formatToPlainString(intl4.t.ejOT95, { errorCode });
   const tmp6 = AlertDefault;
   const merged = Object.assign(arg0);
-  intl2 = tmp(1128).intl;
+  intl2 = tmp(1113).intl;
   const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(5266).Text;
-  intl3 = tmp(1128).intl;
-  items = [_false(Text, obj3), , ];
+  const Text = tmp(5624).Text;
+  intl3 = tmp(1113).intl;
+  items = [_false(Text, obj3), ];
   const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: formatToPlainStringResult };
   items[1] = _false(Text_Text.Text, obj4);
-  const obj5 = { source: AssetRegistryDefault, style: closure_5.image };
-  const tmp8 = FastImageDefault;
-  items[2] = _false(tmp8, obj5);
   return React3(tmp6, obj2);
-});
-const result = size.fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
-
-export default tmp4;
+};

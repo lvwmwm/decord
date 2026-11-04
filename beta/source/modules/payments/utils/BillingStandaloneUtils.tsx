@@ -1,14 +1,14 @@
-// Module ID: 7548
-// Function ID: 7549
+// Module ID: 7590
+// Function ID: 7591
 // Name: BillingStandaloneUtils
-// Dependencies: [1087, 1386, 1281, 1297, 2]
+// Dependencies: [1072, 1377, 1266, 1282, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 7548 (BillingStandaloneUtils)
-import v1 from "v1" /* 1281 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7590 (BillingStandaloneUtils)
+import v1 from "v1" /* 1266 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,7 +33,7 @@ function goToStandalonePremiumCheckout(planId, arg1, arg2) {
 ({ Endpoints: c3, Routes: closure_4 } = Constants);
 let result = size.fileFinishedImporting("modules/payments/utils/BillingStandaloneUtils.tsx");
 
-export const goToBillingStandalonePageWithHandoff = function goToBillingStandalonePageWithHandoff(Routes, arg1, arg2) {
+export function goToBillingStandalonePageWithHandoff(Routes, arg1, arg2) {
   let closure_0 = Routes;
   let closure_1 = arg1;
   let closure_2 = arg2;
@@ -49,12 +49,12 @@ export const goToBillingStandalonePageWithHandoff = function goToBillingStandalo
   const request = { url: constants.HANDOFF, body: { key: v4Result }, oldFormErrors: true, rejectWithError: false };
   const postResult = HTTP.post(request);
   return postResult.then((result) => closure_1(result, uRL), (arg0) => closure_2(arg0, result));
-};
+}
 export { goToStandalonePremiumCheckout };
-export const goToStandalonePremiumCheckoutWeb = function goToStandalonePremiumCheckoutWeb(planId, arg1) {
+export function goToStandalonePremiumCheckoutWeb(planId, arg1) {
   return goToStandalonePremiumCheckout(planId, (body, searchParams) => {
     searchParams = searchParams.searchParams;
     searchParams.append("handoff_token", body.body.handoff_token);
     window.open(searchParams.href);
   }, arg1);
-};
+}

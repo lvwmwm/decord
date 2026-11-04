@@ -1,12 +1,12 @@
-// Module ID: 7961
-// Function ID: 7962
+// Module ID: 8001
+// Function ID: 8002
 // Name: AgeVerificationMethodsV2
-// Dependencies: [5, 502, 1087, 1297, 2]
+// Dependencies: [5, 502, 1072, 1282, 2]
 // Exports: fetchAgeVerificationMethodsV2, fetchAgeVerificationMethodsV2SuspendedUser
 
-// Module 7961 (AgeVerificationMethodsV2)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 8001 (AgeVerificationMethodsV2)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -97,9 +97,9 @@ obj = function _fetchAgeVerificationMethodsV2SuspendedUser() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
 
-export const fetchAgeVerificationMethodsV2 = function fetchAgeVerificationMethodsV2() {
+export function fetchAgeVerificationMethodsV2() {
   return obj(...arguments);
-};
-export const fetchAgeVerificationMethodsV2SuspendedUser = function fetchAgeVerificationMethodsV2SuspendedUser() {
+}
+export function fetchAgeVerificationMethodsV2SuspendedUser() {
   return obj(...arguments);
-};
+}

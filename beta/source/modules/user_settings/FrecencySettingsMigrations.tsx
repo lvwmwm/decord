@@ -1,16 +1,16 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 16288
+// Function ID: 16289
 // Name: FrecencySettingsMigrations
-// Dependencies: [1097, 1087, 504, 1247, 12, 1248, 510, 11, 2]
+// Dependencies: [1082, 1072, 504, 1232, 12, 1233, 510, 11, 2]
 
-// Module 15739 (FrecencySettingsMigrations)
+// Module 16288 (FrecencySettingsMigrations)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1087 */;
-import frecency_user_settings from "frecency_user_settings" /* 1247 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1248 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import Constants from "Constants" /* 1072 */;
+import frecency_user_settings from "frecency_user_settings" /* 1232 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,12 +60,12 @@ function readFavoriteGIFs(arg0) {
         const obj2 = FavoriteGIF.create();
         format = format.format;
         if (constants.IMAGE === format) {
-          NONE = tmp(1247).GIFType.IMAGE;
+          NONE = tmp(1232).GIFType.IMAGE;
         } else if (tmp4.VIDEO === format) {
-          NONE = tmp(1247).GIFType.VIDEO;
+          NONE = tmp(1232).GIFType.VIDEO;
         } else {
           const format2 = format.format;
-          NONE = tmp(1247).GIFType.NONE;
+          NONE = tmp(1232).GIFType.NONE;
         }
         obj2.format = NONE;
         ({ src: tmp3.src, width: tmp3.width, height: tmp3.height } = format);
@@ -403,7 +403,7 @@ let items = [
           EmojiFrecency2.mergePartial(obj, emojiFrecency.emojiFrecency);
           const tmp3 = require;
           if (null != emojiFrecency.emojiReactionFrecency) {
-            const EmojiFrecency3 = tmp3(1247).EmojiFrecency;
+            const EmojiFrecency3 = tmp3(1232).EmojiFrecency;
             EmojiFrecency3.mergePartial(obj, emojiFrecency.emojiReactionFrecency);
           }
           emojiFrecency.emojiReactionFrecency = obj;
@@ -446,7 +446,7 @@ let items = [
                   isMatch = obj.test(tmp9.src);
                 }
                 if (isMatch) {
-                  tmp9.format = tmp3(1247).GIFType.IMAGE;
+                  tmp9.format = tmp3(1232).GIFType.IMAGE;
                   flag = true;
                 }
                 flag3 = flag;
@@ -466,30 +466,27 @@ let items = [
   },
   {
     version: 12,
+    run() {
+      return false;
+    },
+    cleanup() {
+
+    }
+  },
+  {
+    version: 13,
     run(favoriteSoundboardSounds) {
-      if (null == favoriteSoundboardSounds.favoriteSoundboardSounds) {
-        return false;
-      } else {
-        favoriteSoundboardSounds = favoriteSoundboardSounds.favoriteSoundboardSounds;
-        const soundIds = favoriteSoundboardSounds.soundIds;
-        const orderedSoundIds = favoriteSoundboardSounds.orderedSoundIds;
+      let tmp = null != favoriteSoundboardSounds.favoriteSoundboardSounds;
+      if (tmp) {
         const obj = _modDef12;
-        let tmp4 = 0 === obj.size(soundIds);
-        const tmp2 = importDefault;
-        if (!tmp4) {
-          const tmp2Result = tmp2(12);
-          tmp4 = tmp2Result.size(orderedSoundIds) > 0;
-        }
-        let flag = !tmp4;
+        let flag = 0 !== obj.size(favoriteSoundboardSounds.favoriteSoundboardSounds.orderedSoundIds);
         if (flag) {
-          const items = [];
-          const favoriteSoundboardSounds2 = favoriteSoundboardSounds.favoriteSoundboardSounds;
-          HermesBuiltin.arraySpread(items, soundIds, 0);
-          favoriteSoundboardSounds2.orderedSoundIds = items;
+          favoriteSoundboardSounds.favoriteSoundboardSounds.orderedSoundIds = [];
           flag = true;
         }
-        return flag;
+        tmp = flag;
       }
+      return tmp;
     },
     cleanup() {
 

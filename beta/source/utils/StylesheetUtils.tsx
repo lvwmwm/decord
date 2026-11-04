@@ -1,20 +1,20 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 15969
+// Function ID: 15970
 // Name: StylesheetUtils
-// Dependencies: [2033, 2]
+// Dependencies: [2026, 2]
 // Exports: getClass
 
-// Module 15420 (StylesheetUtils)
-import StringUtils from "StringUtils" /* 2033 */;
+// Module 15969 (StylesheetUtils)
+import StringUtils from "StringUtils" /* 2026 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/StylesheetUtils.tsx");
 
-export const getClass = function getClass(arg0, arg1) {
+export function getClass(arg0, arg1) {
   const substr = [...arguments].slice();
   const tmp = arg0["" + arg1 + substr.reduce(substr, (acc, item) => {
     const obj = StringUtils;
     return acc + obj.upperCaseFirstChar(item);
   }, "")];
   return null != tmp ? tmp : undefined;
-};
+}

@@ -1,74 +1,35 @@
-// Module ID: 10959
-// Function ID: 10960
+// Module ID: 11257
+// Function ID: 11258
 // Name: useStrangerDangerWarning
-// Dependencies: [1392, 10725, 558, 576, 504, 10960, 10961, 10962, 8156, 10963, 2]
+// Dependencies: [1383, 10804, 504, 11258, 11259, 11260, 8368, 11261, 2]
+// Exports: useStrangerDangerWarning
 
-// Module 10959 (useStrangerDangerWarning)
+// Module 11257 (useStrangerDangerWarning)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 8156 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10725 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10960 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 10961 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10962 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10963 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import useUserIsTeen from "useUserIsTeen" /* 8368 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10804 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11258 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 11259 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11260 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const useInappropriateConversationWarningsForChannel = tmp(11261);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStrangerDangerWarning(arg0) {
-  let currentUser;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult6 = useIsSpamMessageRequest;
-  const isSpamMessageRequest = tmpResult6.useIsSpamMessageRequest(arg0);
-  const tmpResult7 = useIsMessageRequest;
-  const isMessageRequest = tmpResult7.useIsMessageRequest(arg0);
-  const tmpResult8 = useChannelSafetyWarning;
-  const channelSafetyWarning = tmpResult8.useChannelSafetyWarning(arg0, SafetyWarningTypes.STRANGER_DANGER);
-  const tmpResult9 = useUserIsTeen;
-  const userIsTeen = tmpResult9.useUserIsTeen();
-  if (stateFromStores != null) {
-    stateFromStores.isStaff();
-  }
-  const tmpResult10 = useInappropriateConversationWarningsForChannel;
-  if (userIsTeen) {
-    if (!isSpamMessageRequest) {
-      if (!isMessageRequest) {
-        if (tmpResult10.useInappropriateConversationWarningsForChannel(arg0).length <= 0) {
-          return channelSafetyWarning;
-        }
-      }
-    }
-  }
-}) : (function useStrangerDangerWarning(arg0) {
+const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
+
+export function useStrangerDangerWarning(id) {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj3 = useIsSpamMessageRequest;
-  const isSpamMessageRequest = obj3.useIsSpamMessageRequest(arg0);
+  const isSpamMessageRequest = obj3.useIsSpamMessageRequest(id);
   const obj4 = useIsMessageRequest;
-  const isMessageRequest = obj4.useIsMessageRequest(arg0);
+  const isMessageRequest = obj4.useIsMessageRequest(id);
   const obj5 = useChannelSafetyWarning;
-  const channelSafetyWarning = obj5.useChannelSafetyWarning(arg0, SafetyWarningTypes.STRANGER_DANGER);
+  const channelSafetyWarning = obj5.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
   const obj6 = useUserIsTeen;
   const userIsTeen = obj6.useUserIsTeen();
   if (stateFromStores != null) {
@@ -78,13 +39,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStrange
   if (userIsTeen) {
     if (!isSpamMessageRequest) {
       if (!isMessageRequest) {
-        if (tmpResult.useInappropriateConversationWarningsForChannel(arg0).length <= 0) {
+        if (tmpResult.useInappropriateConversationWarningsForChannel(id).length <= 0) {
           return channelSafetyWarning;
         }
       }
     }
   }
-});
-const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
-
-export const useStrangerDangerWarning = tmp2;
+}

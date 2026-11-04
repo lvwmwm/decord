@@ -1,11 +1,11 @@
-// Module ID: 6715
-// Function ID: 6716
+// Module ID: 6754
+// Function ID: 6755
 // Name: ChannelSpoilerAgreeStore
-// Dependencies: [502, 504, 584, 2]
+// Dependencies: [502, 504, 572, 2]
 
-// Module 6715 (ChannelSpoilerAgreeStore)
+// Module 6754 (ChannelSpoilerAgreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

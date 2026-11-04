@@ -1,14 +1,14 @@
-// Module ID: 18550
-// Function ID: 18551
+// Module ID: 19173
+// Function ID: 19174
 // Name: ExpressionPickerStore
-// Dependencies: [1243, 6705, 1269, 5196, 1274, 2]
+// Dependencies: [1228, 6029, 1254, 5212, 1259, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 18550 (ExpressionPickerStore)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import uniqueIdDefault from "uniqueId" /* 6705 */;
-import module_1269_mod from "module_1269" /* 1269 */;
-import combine from "combine" /* 5196 */;
+// Module 19173 (ExpressionPickerStore)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import uniqueIdDefault from "uniqueId" /* 6029 */;
+import module_1254_mod from "module_1254" /* 1254 */;
+import combine from "combine" /* 5212 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,18 +17,18 @@ let _require, dependencyMap;
 const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
 let obj = { activeView: null, lastActiveView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, searchQuery: "", isSearchSuggestion: false, pickerId: uniqueIdDefault("uid_"), isNitroLockedSectionVisible: false, areOnlyNitroLockedSectionsVisible: false };
 let closure_3 = Object.freeze(obj);
-let module_1269 = module_1269_mod;
-module_1269 = module_1269.createWithEqualityFn();
+let module_1254 = module_1254_mod;
+module_1254 = module_1254.createWithEqualityFn();
 let obj2 = {
   name: "expression-picker-last-active-view",
   partialize(lastActiveView) {
     return { lastActiveView: lastActiveView.lastActiveView };
   }
 };
-const withEqualityFnResult = module_1269(combine.persist(() => closure_3, obj2));
+const withEqualityFnResult = module_1254(combine.persist(() => closure_3, obj2));
 const result = size.fileFinishedImporting("modules/expression_picker/ExpressionPickerStore.tsx");
 
-export const openExpressionPicker = function openExpressionPicker(arg0, arg1, arg2, arg3) {
+export function openExpressionPicker(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -39,20 +39,25 @@ export const openExpressionPicker = function openExpressionPicker(arg0, arg1, ar
   obj.batchUpdates(() => {
     let flag;
     let obj;
-    const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, lastActiveView: obj.getState().activeView };
+    let prop;
+    const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, showSelectedEmojiPackId: prop, lastActiveView: obj.getState().activeView };
     flag = undefined;
     const setState = withEqualityFnResult.setState;
     obj = withEqualityFnResult;
-    if (showEmojiPacks != null) {
-      flag = showEmojiPacks.showEmojiPacks;
+    if (closure_1_3 != null) {
+      flag = tmp.showEmojiPacks;
     }
     if (flag == null) {
       flag = false;
     }
+    prop = undefined;
+    if (closure_1_3 != null) {
+      prop = tmp.showSelectedEmojiPackId;
+    }
     return setState(obj2);
   });
-};
-export const closeExpressionPicker = function closeExpressionPicker(arg0, arg1) {
+}
+export function closeExpressionPicker(arg0, arg1) {
   const state = withEqualityFnResult.getState();
   let tmp2 = undefined !== arg0 && arg0 !== state.activeViewType;
   if (!tmp2) {
@@ -60,15 +65,15 @@ export const closeExpressionPicker = function closeExpressionPicker(arg0, arg1) 
   }
   if (!tmp2) {
     if (null !== state.activeView) {
-      const obj = state(1274);
+      const obj = state(1259);
       obj.batchUpdates(() => {
-        const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, lastActiveView: state1.activeView };
+        const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
         return state.setState(obj);
       });
     }
   }
-};
-export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(arg0, arg1) {
+}
+export function toggleMultiExpressionPicker(arg0, arg1) {
   let state1;
   const state = withEqualityFnResult.getState();
   const obj = withEqualityFnResult;
@@ -79,19 +84,24 @@ export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(
     }
     let closure_1 = arg0;
     let closure_2 = arg1;
-    const obj3 = state1(1274);
+    const obj3 = state1(1259);
     obj3.batchUpdates(() => {
       let flag;
       let obj;
-      const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, lastActiveView: obj.getState().activeView };
+      let prop;
+      const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, showSelectedEmojiPackId: prop, lastActiveView: obj.getState().activeView };
       flag = undefined;
       const setState = withEqualityFnResult.setState;
       obj = withEqualityFnResult;
-      if (showEmojiPacks != null) {
-        flag = showEmojiPacks.showEmojiPacks;
+      if (closure_1_3 != null) {
+        flag = tmp.showEmojiPacks;
       }
       if (flag == null) {
         flag = false;
+      }
+      prop = undefined;
+      if (closure_1_3 != null) {
+        prop = tmp.showSelectedEmojiPackId;
       }
       return setState(obj2);
     });
@@ -100,9 +110,9 @@ export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(
       if (state.activeChannelId === arg1) {
         state1 = obj.getState();
         if (null !== state1.activeView) {
-          const obj4 = state1(1274);
+          const obj4 = state1(1259);
           obj4.batchUpdates(() => {
-            const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, lastActiveView: state1.activeView };
+            const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
             return state.setState(obj);
           });
         }
@@ -112,26 +122,30 @@ export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(
     closure_1 = arg0;
     closure_2 = arg1;
     let c3;
-    const obj2 = state1(1274);
+    const obj2 = state1(1259);
     obj2.batchUpdates(() => {
       let flag;
       let obj;
-      const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, lastActiveView: obj.getState().activeView };
+      let prop;
+      const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, showSelectedEmojiPackId: prop, lastActiveView: obj.getState().activeView };
       flag = undefined;
       const setState = withEqualityFnResult.setState;
       obj = withEqualityFnResult;
-      if (showEmojiPacks != null) {
-        flag = showEmojiPacks.showEmojiPacks;
+      if (closure_1_3 != null) {
+        flag = tmp.showEmojiPacks;
       }
       if (flag == null) {
         flag = false;
       }
+      prop = undefined;
+      if (closure_1_3 != null) {
+        prop = tmp.showSelectedEmojiPackId;
+      }
       return setState(obj2);
     });
   }
-};
-export const toggleExpressionPicker = function toggleExpressionPicker(activeView, activeViewType, activeChannelId) {
-  let showEmojiPacks;
+}
+export function toggleExpressionPicker(activeView, activeViewType, activeChannelId) {
   let obj = withEqualityFnResult;
   const state = withEqualityFnResult.getState();
   if (state.activeView === activeView) {
@@ -141,7 +155,7 @@ export const toggleExpressionPicker = function toggleExpressionPicker(activeView
         if (null !== state1.activeView) {
           const obj3 = require("react-native");
           obj3.batchUpdates(() => {
-            const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, lastActiveView: state1.activeView };
+            const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
             return state.setState(obj);
           });
         }
@@ -154,36 +168,41 @@ export const toggleExpressionPicker = function toggleExpressionPicker(activeView
   obj2.batchUpdates(() => {
     let flag;
     let obj;
-    const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, lastActiveView: obj.getState().activeView };
+    let prop;
+    const obj2 = { activeView, activeViewType, activeChannelId, showEmojiPacks: flag, showSelectedEmojiPackId: prop, lastActiveView: obj.getState().activeView };
     flag = undefined;
     const setState = withEqualityFnResult.setState;
     obj = withEqualityFnResult;
-    if (showEmojiPacks != null) {
-      flag = showEmojiPacks.showEmojiPacks;
+    if (closure_1_3 != null) {
+      flag = tmp.showEmojiPacks;
     }
     if (flag == null) {
       flag = false;
     }
+    prop = undefined;
+    if (closure_1_3 != null) {
+      prop = tmp.showSelectedEmojiPackId;
+    }
     return setState(obj2);
   });
-};
-export const setExpressionPickerView = function setExpressionPickerView(activeView) {
+}
+export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false };
+    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "children" };
     return withEqualityFnResult.setState(obj);
   });
-};
-export const setShowEmojiPacks = function setShowEmojiPacks(showEmojiPacks) {
+}
+export function setShowEmojiPacks(showEmojiPacks) {
   _require = showEmojiPacks;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { showEmojiPacks };
+    const obj = { showEmojiPacks, showSelectedEmojiPackId: "Array" };
     return withEqualityFnResult.setState(obj);
   });
-};
-export const setSearchQuery = function setSearchQuery(searchQuery) {
+}
+export function setSearchQuery(searchQuery) {
   _require = searchQuery;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -194,5 +213,5 @@ export const setSearchQuery = function setSearchQuery(searchQuery) {
     const obj = { searchQuery, isSearchSuggestion: flag };
     return withEqualityFnResult.setState(obj);
   });
-};
+}
 export const useExpressionPickerStore = withEqualityFnResult;

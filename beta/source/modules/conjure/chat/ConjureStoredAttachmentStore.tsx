@@ -1,11 +1,11 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 12146
+// Function ID: 12147
 // Name: ConjureStoredAttachmentStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 11861 (ConjureStoredAttachmentStore)
+// Module 12146 (ConjureStoredAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_0;

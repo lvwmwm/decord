@@ -1,21 +1,21 @@
-// Module ID: 18585
-// Function ID: 18586
+// Module ID: 19238
+// Function ID: 19239
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1087, 21, 5003, 587, 14214, 1128, 558, 576, 11681, 1388, 6918, 1202, 2]
+// Dependencies: [19, 1072, 21, 5014, 575, 14742, 1113, 11976, 1379, 6960, 1187, 2]
+// Exports: default
 
-// Module 18585 (VoicePanelConsoleFacepile)
+// Module 19238 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import NativeViewDefault from "NativeView" /* 6918 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11681 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 14214 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import NativeViewDefault from "NativeView" /* 6960 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11976 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 14742 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,54 +50,9 @@ obj2 = { borderRadius: nativeDefault.radii.round, padding: 8, margin: -3, border
 createStyles = createStyles.createStyles;
 ({ tintColor: nativeDefault.colors.WHITE });
 let closure_6 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelConsoleFacepile() {
-  let closure_0;
-  let tmp5;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  const tmp4 = closure_6();
-  _require = tmp4;
-  const arr = useGameConsoleAccountsDefault();
-  if (cResult[0] !== arr) {
-    const mapped = arr.map(getConsoleInfo);
-    const found = mapped.filter(tmp(1388).isNotNullish);
-    cResult[0] = arr;
-    cResult[1] = found;
-    tmp5 = found;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.consoleIcon) {
-    let tmp8;
-    if (cResult[3] === tmp4.consoleIconContainer) {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp5) {
-      let tmp9;
-      if (cResult[6] === tmp8) {
-        tmp9 = cResult[7];
-      }
-      return tmp9;
-    }
-    const tmp11 = jsx(tmp(1202).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
-    cResult[5] = tmp5;
-    cResult[6] = tmp8;
-    cResult[7] = tmp11;
-    tmp9 = tmp11;
-  }
-  const fn = function u(backgroundColor) {
-    const items = [closure_0.consoleIconContainer, { backgroundColor: backgroundColor.color }];
-    ({ style: closure_0.consoleIcon, size: native.Icon.Sizes.MEDIUM, source: backgroundColor.icon });
-    NativeViewDefault;
-    const Icon = native.Icon;
-    return <tmp style={items}>{null}</tmp>;
-  };
-  cResult[2] = tmp4.consoleIcon;
-  cResult[3] = tmp4.consoleIconContainer;
-  cResult[4] = fn;
-  tmp8 = fn;
-}) : (function VoicePanelConsoleFacepile() {
+const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
+
+export default function VoicePanelConsoleFacepile() {
   let closure_0;
   let closure_1;
   const tmp = closure_6();
@@ -118,8 +73,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     return <tmp style={items}>{null}</tmp>;
   }, items1);
   return jsx(require("native").SummarizedIconRow, { items: items2, renderItem, offsetAmount: -3 });
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
-
-export default tmp3;
+};
 export { getConsoleInfo };

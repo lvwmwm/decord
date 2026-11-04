@@ -1,14 +1,14 @@
-// Module ID: 7109
-// Function ID: 7110
+// Module ID: 7151
+// Function ID: 7152
 // Name: verification/ChangeEmailUtils
-// Dependencies: [5, 6955, 7110, 7120, 1107, 2]
+// Dependencies: [5, 6997, 7152, 7162, 1092, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 7109 (verification/ChangeEmailUtils)
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7110 */;
+// Module 7151 (verification/ChangeEmailUtils)
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7152 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6955 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6997 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -32,7 +32,7 @@ let obj = function _saveEmail() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -126,14 +126,14 @@ let obj = function _saveEmail() {
 ({ setChangeEmailError: closure_4, ChangeEmailFields: hasOwnProperty } = ChangeEmailStore);
 let result = size.fileFinishedImporting("modules/verification/native/ChangeEmailUtils.tsx");
 
-export const saveEmail = function saveEmail() {
+export function saveEmail() {
   return obj(...arguments);
-};
-export const finishChangeEmailFlow = function finishChangeEmailFlow(str, email) {
+}
+export function finishChangeEmailFlow(str, email) {
   obj = { email };
   const replaced = str.replace(ConstantsIOS.VerificationModalScenes.CHANGE_EMAIL_COMPLETE, obj);
-};
-export const finishVerifyEmailFlow = function finishVerifyEmailFlow(getState, fn) {
+}
+export function finishVerifyEmailFlow(getState, fn) {
   const length = getState.getState().routes.length;
   const tmp3 = fn(ConstantsIOS.VerificationModalScenes.RESEND_EMAIL);
   if (-1 !== tmp3) {
@@ -141,4 +141,4 @@ export const finishVerifyEmailFlow = function finishVerifyEmailFlow(getState, fn
   } else {
     const replaced = getState.replace(ConstantsIOS.VerificationModalScenes.RESEND_EMAIL);
   }
-};
+}

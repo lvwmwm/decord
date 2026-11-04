@@ -1,21 +1,21 @@
-// Module ID: 1452
-// Function ID: 1453
+// Module ID: 1444
+// Function ID: 1445
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1087, 1453, 1459, 569, 1483, 1493, 1386, 1496, 1454, 1900, 12, 2]
+// Dependencies: [32, 5, 1072, 1445, 1451, 559, 1475, 1485, 1377, 1488, 1446, 1892, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1452 (ImageLoaderUtils)
+// Module 1444 (ImageLoaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1453 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1454 */;
-import LRUCacheDefault from "LRUCache" /* 1459 */;
-import _modDef1493 from "module_1493" /* 1493 */;
-import ImageUtils from "ImageUtils" /* 1496 */;
-import react_nativeDefault from "react-native" /* 1900 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1445 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1446 */;
+import LRUCacheDefault from "LRUCache" /* 1451 */;
+import _modDef1485 from "module_1485" /* 1485 */;
+import ImageUtils from "ImageUtils" /* 1488 */;
+import react_nativeDefault from "react-native" /* 1892 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, set;
@@ -80,7 +80,7 @@ function getSrcWithWidthAndHeight(quality) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
       const items = [, ];
       [arr[0], tmp6] = tmp5;
-      const tmp2Result = _modDef1493;
+      const tmp2Result = _modDef1485;
       items[1] = tmp2Result.parse(tmp6);
       [tmp8, tmp9] = items;
       _slicedToArray(items, 2);
@@ -126,7 +126,7 @@ function getSrcWithWidthAndHeight(quality) {
       let text = tmp8;
       const tmp2Result3 = _modDef12;
       if (!tmp2Result3.isEmpty(tmp9)) {
-        _modDef1493;
+        _modDef1485;
         text = `${tmp8}?${obj8.stringify(tmp9)}`;
       }
       return text;
@@ -144,13 +144,13 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/image_upload/ImageLoaderUtils.tsx");
 
 export const getDevicePixelRatio = react_nativeDefault;
-export const isImageLoaded = function isImageLoaded(arg0) {
+export function isImageLoaded(arg0) {
   const value = closure_10.get(arg0);
   return null != value && value.loaded;
-};
-export const loadImage = function loadImage(url, bind) {
+}
+export function loadImage(url, bind) {
   let image;
-  const f142162 = async (arg0, value) => {
+  const f121258 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -174,7 +174,7 @@ export const loadImage = function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ export const loadImage = function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f162247);
+                let failResult = closure_129_2.fail(f138810);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -234,7 +234,7 @@ export const loadImage = function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp18) {
@@ -253,7 +253,7 @@ export const loadImage = function loadImage(url, bind) {
     let fn;
     if (value.loaded) {
       if (null != bind) {
-        const obj2 = image(1483);
+        const obj2 = image(1475);
         const awaitOnlineResult = obj2.awaitOnline();
         awaitOnlineResult.then(() => {
           let url;
@@ -287,11 +287,11 @@ export const loadImage = function loadImage(url, bind) {
       let tmp2 = image;
       const self = this;
       const self2 = this;
-      const tmp4 = new image(569)();
+      const tmp4 = new image(559)();
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f142162);
+    image.onerror = _asyncToGenerator(f121258);
     image.onload = () => {
       let callbacks;
       let url;
@@ -339,8 +339,8 @@ export const loadImage = function loadImage(url, bind) {
       }
     }
   };
-};
-export const getBestMediaProxySize = function getBestMediaProxySize(size, arg1) {
+}
+export function getBestMediaProxySize(size, arg1) {
   let closure_0 = size;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -360,9 +360,9 @@ export const getBestMediaProxySize = function getBestMediaProxySize(size, arg1) 
     found1 = arr2[arr2.length - 1];
   }
   return found1;
-};
+}
 export { getSrcWithWidthAndHeight };
-export const getImageSrc = function getImageSrc(src) {
+export function getImageSrc(src) {
   let height;
   let maxHeight;
   let maxWidth;
@@ -410,4 +410,4 @@ export const getImageSrc = function getImageSrc(src) {
   const tmp10 = react_nativeDefault();
   const obj = { src, sourceWidth: width, sourceHeight: height, targetWidth: bound * tmp10, targetHeight: bound1 * tmp10, format, quality, animated: flag, srcIsAnimated: flag2 };
   return getSrcWithWidthAndHeight(obj);
-};
+}

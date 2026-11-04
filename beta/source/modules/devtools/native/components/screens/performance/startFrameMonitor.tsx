@@ -1,10 +1,10 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17746
+// Function ID: 17747
 // Name: startFrameMonitor
 // Dependencies: [2]
 // Exports: startFrameMonitor
 
-// Module 17142 (startFrameMonitor)
+// Module 17746 (startFrameMonitor)
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4;
@@ -13,7 +13,7 @@ let c0 = 16.666666666666668;
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/startFrameMonitor.tsx");
 
 export const FRAME_BUDGET_MS = 16.666666666666668;
-export const startFrameMonitor = function startFrameMonitor() {
+export function startFrameMonitor() {
   let nowResult;
   let worstMs;
   let closure_1 = performance.now();
@@ -60,4 +60,4 @@ export const startFrameMonitor = function startFrameMonitor() {
     }
   };
   return obj;
-};
+}

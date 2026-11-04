@@ -1,16 +1,16 @@
-// Module ID: 17957
-// Function ID: 17958
+// Module ID: 18548
+// Function ID: 18549
 // Name: GuildDiscoveryCategoryStore
-// Dependencies: [9039, 12, 504, 1388, 1128, 584, 2]
+// Dependencies: [9076, 12, 504, 1379, 1113, 572, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 17957 (GuildDiscoveryCategoryStore)
+// Module 18548 (GuildDiscoveryCategoryStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1128 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9039 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1113 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9076 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -113,7 +113,7 @@ const guildDiscoveryCategoryStore = new GuildDiscoveryCategoryStore(DispatcherDe
 const result = size.fileFinishedImporting("modules/global_discovery_servers/GuildDiscoveryCategoryStore.tsx");
 
 export default guildDiscoveryCategoryStore;
-export const areDiscoveryCategoriesEqual = function areDiscoveryCategoriesEqual(arr, arr2) {
+export function areDiscoveryCategoriesEqual(arr, arr2) {
   const isEqual = _modDef12.isEqual;
   _modDef12;
   const mapped = arr.map((item) => {
@@ -126,4 +126,4 @@ export const areDiscoveryCategoriesEqual = function areDiscoveryCategoriesEqual(
     ({ categoryId: arr[0], name: arr[1] } = item);
     return items;
   }));
-};
+}

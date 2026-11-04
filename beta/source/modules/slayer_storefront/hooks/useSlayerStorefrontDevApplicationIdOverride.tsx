@@ -1,34 +1,17 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9488
+// Function ID: 9489
 // Name: useSlayerStorefrontDevApplicationIdOverride
-// Dependencies: [9420, 558, 576, 2]
+// Dependencies: [9489, 2]
+// Exports: useSlayerStorefrontDevApplicationIdOverride
 
-// Module 9419 (useSlayerStorefrontDevApplicationIdOverride)
-import react from "react" /* 576 */;
-import useSlayerStorefrontDevOverrideStore from "useSlayerStorefrontDevOverrideStore" /* 9420 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9488 (useSlayerStorefrontDevApplicationIdOverride)
+import useSlayerStorefrontDevOverrideStore from "useSlayerStorefrontDevOverrideStore" /* 9489 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = useSlayerStorefrontDevOverrideStore.useSlayerStorefrontDevOverrideStore;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSlayerStorefrontDevApplicationIdOverride() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(overrideApplicationId) {
-      return overrideApplicationId.overrideApplicationId;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmp3 = closure_2(first);
-  return tmp3;
-}) : (function useSlayerStorefrontDevApplicationIdOverride() {
-  const tmp = closure_2((overrideApplicationId) => overrideApplicationId.overrideApplicationId);
-  return tmp;
-});
+let closure_0 = useSlayerStorefrontDevOverrideStore.useSlayerStorefrontDevOverrideStore;
 const result = size.fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevApplicationIdOverride.tsx");
 
-export const useSlayerStorefrontDevApplicationIdOverride = tmp2;
+export function useSlayerStorefrontDevApplicationIdOverride() {
+  const tmp = closure_0((overrideApplicationId) => overrideApplicationId.overrideApplicationId);
+  return tmp;
+}

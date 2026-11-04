@@ -1,12 +1,12 @@
-// Module ID: 14677
-// Function ID: 14678
+// Module ID: 15222
+// Function ID: 15223
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8305, 10128, 6044, 584, 2]
+// Dependencies: [5, 8392, 10208, 6063, 572, 2]
 // Exports: uploadMessageAttachments
 
-// Module 14677 (uploadMessageAttachments)
+// Module 15222 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 8305 */;
+import UploadStore from "UploadStore" /* 8392 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -29,7 +29,7 @@ let obj = function _uploadMessageAttachments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _uploadMessageAttachments() {
             let message;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -70,7 +70,7 @@ let obj = function _uploadMessageAttachments() {
             return obj4;
           } else if (closure_131_5.has(c2)) {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             const self = this;
             const self2 = this;
@@ -167,6 +167,6 @@ let obj = function _uploadMessageAttachments() {
 new Set();
 const result = size.fileFinishedImporting("modules/media_uploads/uploadMessageAttachments.native.tsx");
 
-export const uploadMessageAttachments = function uploadMessageAttachments() {
+export function uploadMessageAttachments() {
   return obj(...arguments);
-};
+}

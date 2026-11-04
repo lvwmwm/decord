@@ -1,34 +1,34 @@
-// Module ID: 5170
-// Function ID: 5171
+// Module ID: 5186
+// Function ID: 5187
 // Name: SemanticColorContext
-// Dependencies: [1105, 683, 5171, 5175, 5176, 2]
+// Dependencies: [1090, 671, 5187, 5191, 5192, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 5170 (SemanticColorContext)
-import _modDef683 from "module_683" /* 683 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import native from "native" /* 5171 */;
-import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5175 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5176 */;
+// Module 5186 (SemanticColorContext)
+import _modDef671 from "module_671" /* 671 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import native from "native" /* 5187 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5191 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5192 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 
-export const getSemanticColorContextFromThemeContext = function getSemanticColorContextFromThemeContext(primaryColor) {
+export function getSemanticColorContextFromThemeContext(themeContext) {
   let contrast;
   let enabledExperiments;
   let obj5;
   let primaryColor2;
   let saturation;
   let secondaryColor;
-  primaryColor = primaryColor.primaryColor;
+  const primaryColor = themeContext.primaryColor;
   const obj = getGradientThemeFromFlags;
-  const gradientThemeFromFlags = obj.getGradientThemeFromFlags(primaryColor);
-  ({ contrast, saturation, enabledExperiments } = primaryColor);
+  const gradientThemeFromFlags = obj.getGradientThemeFromFlags(themeContext);
+  ({ contrast, saturation, enabledExperiments } = themeContext);
   const obj2 = client_themes_ClientThemesUtils;
-  let gradientThemeMetadata = obj2.getGradientThemeMetadata(gradientThemeFromFlags, primaryColor.gradient);
+  let gradientThemeMetadata = obj2.getGradientThemeMetadata(gradientThemeFromFlags, themeContext.gradient);
   if (null != primaryColor) {
-    ({ primaryColor: primaryColor2, secondaryColor } = primaryColor);
+    ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
     let tmp10 = null;
     if (null != primaryColor2) {
       const tmpResult = utils_ColorUtils;
@@ -39,7 +39,7 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
         secondaryColor = primaryColor2;
       }
       const int2hexResult1 = int2hex(secondaryColor);
-      const obj4 = _modDef683(int2hexResult);
+      const obj4 = _modDef671(int2hexResult);
       const mixResult = obj4.mix(int2hexResult1, 0.5);
       let str = "dark";
       const hexResult = mixResult.hex();
@@ -63,4 +63,4 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
     num2 = saturation;
   }
   return obj6;
-};
+}

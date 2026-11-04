@@ -1,16 +1,16 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7364
+// Function ID: 7365
 // Name: Sheet/showSimpleActionSheet
-// Dependencies: [5242, 7324, 2002, 2]
+// Dependencies: [5258, 7365, 1994, 2]
 // Exports: showSimpleActionSheet
 
-// Module 7323 (Sheet/showSimpleActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+// Module 7364 (Sheet/showSimpleActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Sheet/native/showSimpleActionSheet.native.tsx");
 
-export const showSimpleActionSheet = function showSimpleActionSheet(key) {
+export function showSimpleActionSheet(key) {
   key = key.key;
   const stackingBehavior = key.stackingBehavior;
   const merged = Object.assign(key, Object.assign({ key: 0, stackingBehavior: 0 }));
@@ -22,7 +22,7 @@ export const showSimpleActionSheet = function showSimpleActionSheet(key) {
       obj.hideActionSheet(key);
     }
   };
-  const tmp3 = key(2002)(7324, dependencyMap.paths);
+  const tmp3 = key(1994)(7365, dependencyMap.paths);
   const merged1 = Object.assign(merged);
   openLazy(tmp3, key, obj, stackingBehavior);
-};
+}

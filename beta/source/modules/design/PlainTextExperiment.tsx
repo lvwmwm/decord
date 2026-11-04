@@ -1,11 +1,11 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 16429
+// Function ID: 16430
 // Name: PlainTextExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: usePlainTextExperiment
 
-// Module 17391 (PlainTextExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 16429 (PlainTextExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/design/PlainTextExperiment.tsx");
 
-export const usePlainTextExperiment = function usePlainTextExperiment(RootThemeContextProvider) {
+export function usePlainTextExperiment(RootThemeContextProvider) {
   const obj = { location: RootThemeContextProvider };
   return closure_0.useConfig(obj).enabled;
-};
+}

@@ -1,141 +1,19 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 17246
+// Function ID: 17247
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [2014, 8364, 11661, 558, 576, 11662, 1128, 504, 11240, 2]
+// Dependencies: [2006, 8432, 11956, 11957, 1113, 504, 11540, 2]
 
-// Module 16646 (NoiseSuppressionKrispSetting)
-import react from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11661 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11662 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17246 (NoiseSuppressionKrispSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl4 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11956 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11957 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseSuppressionKrispSettingOptions() {
-  let first;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp7;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(13);
-  const obj2 = NoiseCancellationUtils;
-  const noiseCancellationDeferredToSystem = obj2.useNoiseCancellationDeferredToSystem();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl4.t.rdoNzt);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== noiseCancellationDeferredToSystem) {
-    const obj3 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.KRISP, label: first, disabled: noiseCancellationDeferredToSystem };
-    cResult[1] = noiseCancellationDeferredToSystem;
-    cResult[2] = obj3;
-    tmp7 = obj3;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(intl4.t.qXeYHw);
-    cResult[3] = stringResult1;
-    tmp8 = stringResult1;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== noiseCancellationDeferredToSystem) {
-    const obj4 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: tmp8 };
-    cResult[4] = noiseCancellationDeferredToSystem;
-    cResult[5] = obj4;
-    tmp10 = obj4;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(intl4.t.wkYAlz);
-    cResult[6] = stringResult2;
-    tmp11 = stringResult2;
-  } else {
-    tmp11 = cResult[6];
-  }
-  if (cResult[7] !== noiseCancellationDeferredToSystem) {
-    const obj5 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: tmp11 };
-    cResult[7] = noiseCancellationDeferredToSystem;
-    cResult[8] = obj5;
-    tmp13 = obj5;
-  } else {
-    tmp13 = cResult[8];
-  }
-  if (cResult[9] === tmp7) {
-    if (cResult[10] === tmp10) {
-      let tmp14;
-      if (cResult[11] === tmp13) {
-        tmp14 = cResult[12];
-      }
-      return tmp14;
-    }
-  }
-  const items = [tmp7, tmp10, tmp13];
-  cResult[9] = tmp7;
-  cResult[10] = tmp10;
-  cResult[11] = tmp13;
-  cResult[12] = items;
-  tmp14 = items;
-}) : (function useNoiseSuppressionKrispSettingOptions() {
-  let intl;
-  let intl2;
-  let intl3;
-  const obj = NoiseCancellationUtils;
-  const noiseCancellationDeferredToSystem = obj.useNoiseCancellationDeferredToSystem();
-  const obj2 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.KRISP, label: intl.string(intl4.t.rdoNzt), disabled: noiseCancellationDeferredToSystem };
-  intl = intl4.intl;
-  const items = [obj2, , ];
-  const obj3 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: intl2.string(intl4.t.qXeYHw) };
-  intl2 = intl4.intl;
-  items[1] = obj3;
-  const obj4 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: intl3.string(intl4.t.wkYAlz) };
-  intl3 = intl4.intl;
-  items[2] = obj4;
-  return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNoiseSuppressionKrispSetting() {
-  let noiseCancellationSupported;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function n() {
-      return noiseCancellationSupported.isNoiseCancellationSupported();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useHasNoiseSuppressionKrispSetting() {
-  let noiseCancellationSupported;
-  const items = [MediaEngineStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => noiseCancellationSupported.isNoiseCancellationSupported());
-});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
@@ -150,8 +28,29 @@ let obj = {
     const obj = UserSettingsVoiceUtils;
     const result = obj.handleNoiseSuppressionChange(arg0);
   },
-  useOptions: tmp2,
-  usePredicate: tmp3,
+  useOptions: function useNoiseSuppressionKrispSettingOptions() {
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = NoiseCancellationUtils;
+    const noiseCancellationDeferredToSystem = obj.useNoiseCancellationDeferredToSystem();
+    const obj2 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.KRISP, label: intl.string(intl4.t.rdoNzt), disabled: noiseCancellationDeferredToSystem };
+    intl = intl4.intl;
+    const items = [obj2, , ];
+    const obj3 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: intl2.string(intl4.t.qXeYHw) };
+    intl2 = intl4.intl;
+    items[1] = obj3;
+    const obj4 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: intl3.string(intl4.t.wkYAlz) };
+    intl3 = intl4.intl;
+    items[2] = obj4;
+    return items;
+  },
+  usePredicate: function useHasNoiseSuppressionKrispSetting() {
+    let noiseCancellationSupported;
+    const items = [MediaEngineStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => noiseCancellationSupported.isNoiseCancellationSupported());
+  },
   useSearchTerms() {
     const intl = intl4.intl;
     const items = [intl.string(intl4.t.hmfkCi)];

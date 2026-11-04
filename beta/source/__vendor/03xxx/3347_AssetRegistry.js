@@ -1,10 +1,10 @@
 // Module ID: 3347
 // Function ID: 3348
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 3347 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/application_account_linking", scales: [1], hash: "316d44c83c7a5e996ce231e7195a41e7", name: "IncentivizedAccountLinking.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "1e290e7f78b4f5991b1123ac56480754", name: "uk.messages.1e290e7f78b4f5991b1123ac56480754.compiled.messages", type: "jsona" });

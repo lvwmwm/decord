@@ -1,78 +1,31 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12672
+// Function ID: 12673
 // Name: SnailIllocon
-// Dependencies: [19, 21, 12426, 12427, 12428, 558, 576, 7027, 5701, 2]
+// Dependencies: [19, 21, 12673, 12674, 12675, 7069, 5717, 2]
+// Exports: SnailIllocon
 
-// Module 12425 (SnailIllocon)
+// Module 12672 (SnailIllocon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import react_native from "react-native" /* 7027 */;
-import _modDef12426 from "module_12426" /* 12426 */;
-import _modDef12427 from "module_12427" /* 12427 */;
-import _modDef12428 from "module_12428" /* 12428 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import react_native from "react-native" /* 7069 */;
+import _modDef12673 from "module_12673" /* 12673 */;
+import _modDef12674 from "module_12674" /* 12674 */;
+import _modDef12675 from "module_12675" /* 12675 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12426 };
+let obj2 = { uri: _modDef12673 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12427 };
-({ uri: _modDef12427 });
-obj[3] = { uri: _modDef12428 };
-({ uri: _modDef12428 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SnailIllocon(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let resizeMode;
-  let tmp4;
-  let tmp6;
-  obj = react2;
-  const cResult = obj.c(8);
-  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
-  let num = 64;
-  if (undefined !== size) {
-    num = size;
-  }
-  if (cResult[0] !== num) {
-    const size1 = { width: num, height: num, intrinsicWidth: 64, intrinsicHeight: 64 };
-    const tmpResult = react_native;
-    const assetSizeStyle = tmpResult.getAssetSizeStyle(size1);
-    cResult[0] = num;
-    cResult[1] = assetSizeStyle;
-    tmp4 = assetSizeStyle;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult2 = react_native;
-    const assetSource = tmpResult2.getAssetSource(obj);
-    cResult[2] = assetSource;
-    tmp6 = assetSource;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === accessibilityLabel) {
-    if (cResult[4] === accessible) {
-      if (cResult[5] === resizeMode) {
-        let tmp9;
-        if (cResult[6] === tmp4) {
-          tmp9 = cResult[7];
-        }
-        return tmp9;
-      }
-    }
-  }
-  const tmp10 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp6, style: tmp4, accessible, accessibilityLabel, resizeMode });
-  cResult[3] = accessibilityLabel;
-  cResult[4] = accessible;
-  cResult[5] = resizeMode;
-  cResult[6] = tmp4;
-  cResult[7] = tmp10;
-  tmp9 = tmp10;
-}) : (function SnailIllocon(size) {
+obj[2] = { uri: _modDef12674 };
+({ uri: _modDef12674 });
+obj[3] = { uri: _modDef12675 };
+({ uri: _modDef12675 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/SnailIllocon.native.tsx");
+
+export function SnailIllocon(size) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -90,10 +43,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SnailIlloc
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7027);
+  obj2 = num(7069);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/SnailIllocon.native.tsx");
-
-export const SnailIllocon = tmp2;
+}

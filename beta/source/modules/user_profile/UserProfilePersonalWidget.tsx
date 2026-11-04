@@ -1,19 +1,19 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 7778
+// Function ID: 7779
 // Name: UserProfilePersonalWidget
-// Dependencies: [1392, 1394, 7742, 5033, 4839, 1388, 1357, 7736, 1991, 2]
+// Dependencies: [1383, 1385, 7779, 5044, 4847, 1379, 1342, 7773, 1983, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7741 (UserProfilePersonalWidget)
-import _modDef1357 from "module_1357" /* 1357 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import WidgetType from "WidgetType" /* 7736 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7742 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 7778 (UserProfilePersonalWidget)
+import _modDef1342 from "module_1342" /* 1342 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1983 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import WidgetType from "WidgetType" /* 7773 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7779 */;
+import UserStore from "UserStore" /* 1383 */;
 import size_mod from "module_2" /* 2 */;
 
 function createDefaultFieldsSection() {
@@ -259,13 +259,13 @@ class UserProfilePersonalWidget {
               if (PersonalWidgetSectionType.PersonalWidgetSectionType.COVER === type) {
                 let tmp14 = tmp3.title === tmp4.title && tmp3.subtitle === tmp4.subtitle;
                 if (tmp14) {
-                  tmp14 = _modDef1357(tmp3.image, tmp4.image);
+                  tmp14 = _modDef1342(tmp3.image, tmp4.image);
                 }
                 flag = false;
                 if (!tmp14) {
                   break;
                 }
-              } else if (tmp17(7742).PersonalWidgetSectionType.FIELDS === type) {
+              } else if (tmp17(7779).PersonalWidgetSectionType.FIELDS === type) {
                 let flag2 = false;
                 if (tmp3.fields.length === tmp4.fields.length) {
                   let num = 0;
@@ -279,7 +279,7 @@ class UserProfilePersonalWidget {
                         tmp9 = tmp7.description === tmp8.description;
                       }
                       if (tmp9) {
-                        tmp9 = _modDef1357(tmp7.image, tmp8.image);
+                        tmp9 = _modDef1342(tmp7.image, tmp8.image);
                       }
                       flag2 = false;
                       if (!tmp9) {
@@ -302,7 +302,7 @@ class UserProfilePersonalWidget {
                 break;
               } else {
                 flag = false;
-                if (!_modDef1357(tmp3, tmp4)) {
+                if (!_modDef1342(tmp3, tmp4)) {
                   break;
                 }
                 break;
@@ -336,17 +336,17 @@ const prototype = UserProfilePersonalWidget.prototype;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/UserProfilePersonalWidget.tsx");
 
-export const createDefaultCoverSection = function createDefaultCoverSection() {
+export function createDefaultCoverSection() {
   const obj = { type: PersonalWidgetSectionType.PersonalWidgetSectionType.COVER, title: "", subtitle: "" };
   return obj;
-};
-export const createDefaultField = function createDefaultField() {
+}
+export function createDefaultField() {
   const obj = { key: `field-${+closure_5}`, title: "", description: "" };
   closure_5 = tmp + 1;
   return obj;
-};
+}
 export { createDefaultFieldsSection };
-export const createDefaultPersonalWidget = function createDefaultPersonalWidget() {
+export function createDefaultPersonalWidget() {
   let header;
   let id;
   let items;
@@ -370,12 +370,12 @@ export const createDefaultPersonalWidget = function createDefaultPersonalWidget(
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-};
-export const isPersonalWidgetNew = function isPersonalWidgetNew() {
+}
+export function isPersonalWidgetNew() {
   const obj = DismissibleContentUnsafeUtils;
   return !obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_NEW_BADGE);
-};
-export const parsePersonalWidgetSections = function parsePersonalWidgetSections(sections) {
+}
+export function parsePersonalWidgetSections(sections) {
   let items;
   if (null == sections) {
     items = [];
@@ -428,5 +428,5 @@ export const parsePersonalWidgetSections = function parsePersonalWidgetSections(
     push(obj);
   }
   return items;
-};
+}
 export { UserProfilePersonalWidget };

@@ -1,18 +1,18 @@
-// Module ID: 8487
-// Function ID: 8488
+// Module ID: 8552
+// Function ID: 8553
 // Name: ApplicationCommandUserAppUtils
-// Dependencies: [8488, 1128, 2]
+// Dependencies: [8553, 1113, 2]
 // Exports: getEphemeralReasonMessage
 
-// Module 8487 (ApplicationCommandUserAppUtils)
-import EphemeralMessageReason from "EphemeralMessageReason" /* 8488 */;
+// Module 8552 (ApplicationCommandUserAppUtils)
+import EphemeralMessageReason from "EphemeralMessageReason" /* 8553 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const intl20 = tmp(1128);
+const intl20 = tmp(1113);
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandUserAppUtils.tsx");
 
-export const getEphemeralReasonMessage = function getEphemeralReasonMessage(ephemerality_reason1) {
+export function getEphemeralReasonMessage(ephemerality_reason1) {
   if (EphemeralMessageReason.EphemeralMessageReason.FEATURE_LIMITED === ephemerality_reason1) {
     const intl19 = intl20.intl;
     return intl19.string(intl20.t.WCvmrR);
@@ -71,4 +71,4 @@ export const getEphemeralReasonMessage = function getEphemeralReasonMessage(ephe
     const intl = intl20.intl;
     return intl.string(intl20.t["v/OAcs"]);
   }
-};
+}

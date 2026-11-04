@@ -1,10 +1,10 @@
-// Module ID: 5037
-// Function ID: 5038
+// Module ID: 5048
+// Function ID: 5049
 // Name: MemberVerificationTypes
 // Dependencies: [2]
 // Exports: hasNonTermsFormField, isTermsFormField
 
-// Module 5037 (MemberVerificationTypes)
+// Module 5048 (MemberVerificationTypes)
 import size from "module_2" /* 2 */;
 
 const VerificationFormFieldTypes = { TERMS: "TERMS", TEXT_INPUT: "TEXT_INPUT", PARAGRAPH: "PARAGRAPH", MULTIPLE_CHOICE: "MULTIPLE_CHOICE", VERIFICATION: "VERIFICATION" };
@@ -16,10 +16,10 @@ export { VerificationFormFieldTypes };
 export const UserVerificationFieldPlatforms = { EMAIL: "email", PHONE: "phone" };
 export const GuildJoinRequestSortOrders = { TIMESTAMP_DESC: "NEWEST", TIMESTAMP_ASC: "OLDEST" };
 export const GuildJoinRequestApplicationStatuses = { STARTED: "STARTED", SUBMITTED: "SUBMITTED", REJECTED: "REJECTED", APPROVED: "APPROVED" };
-export const isTermsFormField = function isTermsFormField(field_type) {
+export function isTermsFormField(field_type) {
   return null != field_type && field_type.field_type === obj.TERMS;
-};
-export const hasNonTermsFormField = function hasNonTermsFormField(formFields) {
+}
+export function hasNonTermsFormField(formFields) {
   const tmp = null != formFields && formFields.some((field_type) => !(null != field_type && field_type.field_type === constants.TERMS));
   return tmp;
-};
+}

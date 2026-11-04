@@ -1,22 +1,44 @@
 // Module ID: 918
 // Function ID: 919
-// Dependencies: [916]
-// Exports: addPageListener, removePageListener
+// Dependencies: [908]
+// Exports: getInteractionCount, initInteractionCountPolyfill
 
 // Module 918
-import _mod916 from "module_916" /* 916 */;
+import observe from "observe" /* 908 */;
+
+let bound, closure_2, closure_4;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let c3 = 0;
+const Infinity = Infinity;
+let c5 = 0;
+function updateEstimate(arr) {
+  let num;
+  const item = arr.forEach((interactionId) => {
+    if (interactionId.interactionId) {
+      const _Math = Math;
+      closure_4 = Math.min(closure_4, interactionId.interactionId);
+      const _Math2 = Math;
+      bound = Math.max(bound, interactionId.interactionId);
+    }
+  });
+}
 
-export const addPageListener = function addPageListener(pagehide, onVisibilityUpdate, arg2) {
-  if (_mod916.WINDOW.document) {
-    const WINDOW = _mod916.WINDOW;
-    const listener = WINDOW.addEventListener(pagehide, onVisibilityUpdate, arg2);
+export const getInteractionCount = () => {
+  let tmp3;
+  const tmp = closure_2;
+  if (tmp) {
+    tmp3 = c3;
+  } else {
+    const _performance = performance;
+    tmp3 = performance.interactionCount || 0;
   }
+  return tmp3;
 };
-export const removePageListener = function removePageListener(pagehide, onVisibilityUpdate, arg2) {
-  if (_mod916.WINDOW.document) {
-    const WINDOW = _mod916.WINDOW;
-    const removed = WINDOW.removeEventListener(pagehide, onVisibilityUpdate, arg2);
+export const initInteractionCountPolyfill = () => {
+  const tmp = "interactionCount" in performance || closure_2;
+  if (!tmp) {
+    const obj = observe;
+    closure_2 = obj.observe("event", updateEstimate, { type: "event", buffered: true, durationThreshold: 0 });
   }
 };

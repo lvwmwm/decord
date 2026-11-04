@@ -1,11 +1,11 @@
-// Module ID: 1629
-// Function ID: 1630
+// Module ID: 1621
+// Function ID: 1622
 // Name: MediaKeyboardConstants
-// Dependencies: [1630, 587, 2]
+// Dependencies: [1622, 575, 2]
 
-// Module 1629 (MediaKeyboardConstants)
-import nativeDefault from "native" /* 587 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
+// Module 1621 (MediaKeyboardConstants)
+import nativeDefault from "native" /* 575 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

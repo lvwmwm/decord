@@ -1,11 +1,11 @@
-// Module ID: 15123
-// Function ID: 15124
+// Module ID: 15670
+// Function ID: 15671
 // Name: FindCodedLinksExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isFindCodedLinksRegexEnabled
 
-// Module 15123 (FindCodedLinksExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15670 (FindCodedLinksExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,6 +15,6 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/coded_links/FindCodedLinksExperiment.tsx");
 
-export const isFindCodedLinksRegexEnabled = function isFindCodedLinksRegexEnabled() {
+export function isFindCodedLinksRegexEnabled() {
   return config.getConfig({ location: "findCodedLinks" }).enabled;
-};
+}

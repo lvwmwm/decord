@@ -1,33 +1,33 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9265
+// Function ID: 9266
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2014, 5746, 7846, 1392, 5764, 9229, 1087, 2067, 9230, 9231, 9213, 9232, 1128, 5057, 2049, 1104, 38, 206, 1297, 1257, 5940, 6021, 2]
+// Dependencies: [32, 5, 502, 2006, 5764, 7885, 1383, 5782, 9266, 1072, 2061, 9267, 9268, 9250, 9269, 1113, 5068, 2042, 1089, 38, 206, 1282, 1242, 5958, 6041, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9228 (SecureFramesUtils)
+// Module 9265 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import intl15 from "intl" /* 1128 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
-import _mod9213 from "module_9213" /* 9213 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9230 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9231 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9232 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl15 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import _mod9250 from "module_9250" /* 9250 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9267 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9268 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9269 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7846 */;
-import UserStore from "UserStore" /* 1392 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5764 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9229 */;
-import Constants from "Constants" /* 1087 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
+import UserStore from "UserStore" /* 1383 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5782 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9266 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -448,19 +448,19 @@ function getIsSecureFramesKeyInconsistent(userId, items) {
 ({ LinkingTypes: map1, Routes: closure_14, Endpoints: closure_15, HelpdeskArticles: closure_16 } = Constants);
 let result = size.fileFinishedImporting("modules/rtc/SecureFramesUtils.tsx");
 
-export const getSecureFramesHelpdeskArticle = function getSecureFramesHelpdeskArticle() {
+export function getSecureFramesHelpdeskArticle() {
   obj = HelpdeskUtilsDefault;
   return obj.getArticleURL(constants3.END_TO_END_ENCRYPTION);
-};
-export const getSecureFramesPersistentCodesHelpdeskArticle = function getSecureFramesPersistentCodesHelpdeskArticle() {
+}
+export function getSecureFramesPersistentCodesHelpdeskArticle() {
   obj = HelpdeskUtilsDefault;
   return obj.getArticleURL(constants3.END_TO_END_ENCRYPTION);
-};
-export const getSecureFramesVerifiedDevicesHelpdeskArticle = function getSecureFramesVerifiedDevicesHelpdeskArticle() {
+}
+export function getSecureFramesVerifiedDevicesHelpdeskArticle() {
   obj = HelpdeskUtilsDefault;
   return obj.getArticleURL(constants3.END_TO_END_ENCRYPTION);
-};
-export const addVerification = function addVerification(userId, fingerprintUserKey, isOtherUserKeyPersistent, channelId, DEEP_LINK) {
+}
+export function addVerification(userId, fingerprintUserKey, isOtherUserKeyPersistent, channelId, DEEP_LINK) {
   obj = SecureFramesActionCreatorsDefault;
   const tmp2 = isOtherUserKeyPersistent;
   if (tmp2) {
@@ -471,15 +471,15 @@ export const addVerification = function addVerification(userId, fingerprintUserK
   const obj2 = SecureFramesTracking;
   const obj3 = { channelId, userId, analyticsLocation: DEEP_LINK };
   const result = obj2.trackE2EEUserVerified(obj3);
-};
-export const deleteVerification = function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
+}
+export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
   const tmp = isOtherUserKeyPersistent;
   if (tmp) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9213.serializeKey;
-    _mod9213;
+    const serializeKey = _mod9250.serializeKey;
+    _mod9250;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -488,8 +488,8 @@ export const deleteVerification = function deleteVerification(userId, arg1, isOt
     obj = SecureFramesActionCreatorsDefault;
     const result1 = obj.deleteSecureFramesTransientKey(userId);
   }
-};
-export const deletePersistentVerification = function deletePersistentVerification(userId, verifiedKey) {
+}
+export function deletePersistentVerification(userId, verifiedKey) {
   let intl;
   let intl2;
   _require = userId;
@@ -509,8 +509,8 @@ export const deletePersistentVerification = function deletePersistentVerificatio
   intl = require("intl").intl;
   intl2 = require("intl").intl;
   let result = openSecureFramesUpdateConfirmation(obj);
-};
-export const deleteUserPersistentVerifications = function deleteUserPersistentVerifications(userId) {
+}
+export function deleteUserPersistentVerifications(userId) {
   let intl;
   let intl2;
   _require = userId;
@@ -532,44 +532,44 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
   intl = require("intl").intl;
   intl2 = require("intl").intl;
   let result = openSecureFramesUpdateConfirmation(obj2);
-};
-export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef2049(timestamp);
-  obj = _modDef2049();
+}
+export function getSecureFramesUserVerifiedTimestamp(timestamp) {
+  const tmp3 = _modDef2042(timestamp);
+  obj = _modDef2042();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;
-    const rounded = Math.round(diffResult / (12 * tmp(1104).Seconds.DAYS_30));
+    const rounded = Math.round(diffResult / (12 * tmp(1089).Seconds.DAYS_30));
     const intl7 = intl15.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(intl15.t.F1wqkD, obj2);
   } else if (diffResult > DurationsDefault.Seconds.DAYS_30) {
     const _Math5 = Math;
-    const rounded1 = Math.round(diffResult / tmp(1104).Seconds.DAYS_30);
+    const rounded1 = Math.round(diffResult / tmp(1089).Seconds.DAYS_30);
     const intl6 = intl15.intl;
     const obj3 = { count: rounded1 };
     return intl6.formatToPlainString(intl15.t["iT+b+2"], obj3);
   } else if (diffResult > 7 * DurationsDefault.Seconds.DAY) {
     const _Math4 = Math;
-    const rounded2 = Math.round(diffResult / (7 * tmp(1104).Seconds.DAY));
+    const rounded2 = Math.round(diffResult / (7 * tmp(1089).Seconds.DAY));
     const intl5 = intl15.intl;
     const obj4 = { count: rounded2 };
     return intl5.formatToPlainString(intl15.t.dLurKZ, obj4);
   } else if (diffResult > DurationsDefault.Seconds.DAY) {
     const _Math3 = Math;
-    const rounded3 = Math.round(diffResult / tmp(1104).Seconds.DAY);
+    const rounded3 = Math.round(diffResult / tmp(1089).Seconds.DAY);
     const intl4 = intl15.intl;
     const obj5 = { count: rounded3 };
     return intl4.formatToPlainString(intl15.t.LE8a2H, obj5);
   } else if (diffResult > DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded4 = Math.round(diffResult / tmp(1104).Seconds.HOUR);
+    const rounded4 = Math.round(diffResult / tmp(1089).Seconds.HOUR);
     const intl3 = intl15.intl;
     const obj6 = { count: rounded4 };
     return intl3.formatToPlainString(intl15.t.KULxVS, obj6);
   } else if (diffResult > DurationsDefault.Seconds.MINUTE) {
     const _Math = Math;
-    const rounded5 = Math.round(diffResult / tmp(1104).Seconds.MINUTE);
+    const rounded5 = Math.round(diffResult / tmp(1089).Seconds.MINUTE);
     const intl2 = intl15.intl;
     const obj7 = { count: rounded5 };
     return intl2.formatToPlainString(intl15.t.ws6rWq, obj7);
@@ -578,54 +578,54 @@ export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUser
     const obj8 = { count: diffResult };
     return intl.formatToPlainString(intl15.t["/w0Qpw"], obj8);
   }
-};
-export const getUserVerificationDeeplink = function getUserVerificationDeeplink(userId, arg1) {
-  const FEATUREResult = syncedClientThemes.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
+}
+export function getUserVerificationDeeplink(userId, arg1) {
+  const FEATUREResult = authStore3.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
   return "" + protocol + "//" + location.host + FEATUREResult + "?userId=" + userId + "&fingerprint=" + encodeURIComponent(arg1);
-};
-export const getUserVerifyStateText = function getUserVerifyStateText(CURRENT_USER_DISCONNECTED, name) {
-  if (unpackModuleId.OTHER_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
+}
+export function getUserVerifyStateText(memo, name) {
+  if (unpackModuleId.OTHER_USER_DISCONNECTED === memo) {
     const intl13 = intl15.intl;
     const items = [intl13.string(intl15.t.ZBHDM9), ];
     const intl14 = intl15.intl;
     const obj2 = { username: name };
     items[1] = intl14.format(intl15.t["+rIdOd"], obj2);
     return items;
-  } else if (unpackModuleId.CURRENT_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.CURRENT_USER_DISCONNECTED === memo) {
     const intl11 = intl15.intl;
     const items1 = [intl11.string(intl15.t["5ICxE6"]), ];
     const intl12 = intl15.intl;
     items1[1] = intl12.string(intl15.t["v1eXp/"]);
     return items1;
-  } else if (unpackModuleId.UNABLE_TO_VERIFY === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.UNABLE_TO_VERIFY === memo) {
     const intl9 = intl15.intl;
     const items2 = [intl9.string(intl15.t["+no/a7"]), ];
     const intl10 = intl15.intl;
     const obj3 = { username: name };
     items2[1] = intl10.format(intl15.t.Mft7iJ, obj3);
     return items2;
-  } else if (unpackModuleId.FINGERPRINT_MISMATCH === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.FINGERPRINT_MISMATCH === memo) {
     const intl7 = intl15.intl;
     const items3 = [intl7.string(intl15.t.HTJ76H), ];
     const intl8 = intl15.intl;
     const obj4 = { username: name };
     items3[1] = intl8.format(intl15.t.tc6aAc, obj4);
     return items3;
-  } else if (unpackModuleId.OTHER_USER_ALREADY_VERIFIED === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.OTHER_USER_ALREADY_VERIFIED === memo) {
     const intl5 = intl15.intl;
     const items4 = [intl5.string(intl15.t["9lw+J+"]), ];
     const intl6 = intl15.intl;
     const obj5 = { username: name };
     items4[1] = intl6.format(intl15.t.TvBS1w, obj5);
     return items4;
-  } else if (unpackModuleId.MATCH === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.MATCH === memo) {
     const intl3 = intl15.intl;
     const items5 = [intl3.string(intl15.t["xyE+Dn"]), ];
     const intl4 = intl15.intl;
     const obj6 = { username: name };
     items5[1] = intl4.format(intl15.t.znsPl5, obj6);
     return items5;
-  } else if (unpackModuleId.OTHER_USER_INCONSISTENT_KEYS === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.OTHER_USER_INCONSISTENT_KEYS === memo) {
     const intl = intl15.intl;
     const items6 = [intl.string(intl15.t.im1uUi), ];
     const intl2 = intl15.intl;
@@ -633,8 +633,8 @@ export const getUserVerifyStateText = function getUserVerifyStateText(CURRENT_US
     items6[1] = intl2.format(intl15.t.WY6IKb, obj);
     return items6;
   }
-};
-export const getUserVerificationFooterText = function getUserVerificationFooterText(arg0) {
+}
+export function getUserVerificationFooterText(arg0) {
   let format2Result;
   let isCurrentUserKeyPersistent;
   let isOtherUserKeyPersistent;
@@ -674,17 +674,17 @@ export const getUserVerificationFooterText = function getUserVerificationFooterT
     obj2 = HelpdeskUtilsDefault;
     format2Result = format(prop2, obj);
   }
-};
+}
 export { getCurrentUserSigningKey };
 export { isPublicKeyMatch };
-export const ensureCurrentUserPublicKey = function ensureCurrentUserPublicKey() {
+export function ensureCurrentUserPublicKey() {
   return obj(...arguments);
-};
-export const isCurrentUserPublicKeyMatch = function isCurrentUserPublicKeyMatch() {
+}
+export function isCurrentUserPublicKeyMatch() {
   return obj(...arguments);
-};
+}
 export { getIsSecureFramesKeyInconsistent };
-export const showSecureFramesKeyInconsistentAlert = function showSecureFramesKeyInconsistentAlert(arg0) {
+export function showSecureFramesKeyInconsistentAlert(arg0) {
   let channelId;
   let intl;
   let intl2;
@@ -700,8 +700,8 @@ export const showSecureFramesKeyInconsistentAlert = function showSecureFramesKey
   intl = intl15.intl;
   intl2 = intl15.intl;
   show(obj3);
-};
-export const validateSecureFramesKeyConsistent = function validateSecureFramesKeyConsistent(guildId) {
+}
+export function validateSecureFramesKeyConsistent(guildId) {
   let channelId;
   let intl;
   let intl2;
@@ -728,4 +728,4 @@ export const validateSecureFramesKeyConsistent = function validateSecureFramesKe
   } else {
     return true;
   }
-};
+}

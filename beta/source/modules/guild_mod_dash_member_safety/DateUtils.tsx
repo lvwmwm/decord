@@ -1,12 +1,12 @@
-// Module ID: 7639
-// Function ID: 7640
+// Module ID: 7677
+// Function ID: 7678
 // Name: guild_mod_dash_member_safety/DateUtils
-// Dependencies: [1128, 7640, 2]
+// Dependencies: [1113, 7678, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp, getMembersTableTimestampFormatter
 
-// Module 7639 (guild_mod_dash_member_safety/DateUtils)
-import intl from "intl" /* 1128 */;
-import getTimestampStringDefault from "getTimestampString" /* 7640 */;
+// Module 7677 (guild_mod_dash_member_safety/DateUtils)
+import intl from "intl" /* 1113 */;
+import getTimestampStringDefault from "getTimestampString" /* 7678 */;
 import size from "module_2" /* 2 */;
 
 function getJoinedAtDateFormatter() {
@@ -23,7 +23,7 @@ const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/
 export const ACCOUNT_AGE_DATE_TOOLTIP_CONFIG = { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" };
 export const MEMBER_JOIN_DATE_TOOLTIP_CONFIG = { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" };
 export { MembersTableDateFormats };
-export const getMembersTableTimestampFormatter = function getMembersTableTimestampFormatter(arg0) {
+export function getMembersTableTimestampFormatter(arg0) {
   let tmp2;
   if (arg0 === obj.JOINED_AT) {
     tmp2 = getJoinedAtDateFormatter;
@@ -31,8 +31,8 @@ export const getMembersTableTimestampFormatter = function getMembersTableTimesta
     tmp2 = getAccountAgeDateFormatter;
   }
   return tmp2;
-};
-export const formatDateRelativeTime = function formatDateRelativeTime(arg0, arg1) {
+}
+export function formatDateRelativeTime(arg0, arg1) {
   let tmp2;
   if (arg1 === obj.JOINED_AT) {
     tmp2 = getJoinedAtDateFormatter;
@@ -40,8 +40,8 @@ export const formatDateRelativeTime = function formatDateRelativeTime(arg0, arg1
     tmp2 = getAccountAgeDateFormatter;
   }
   return getTimestampStringDefault(arg0, tmp2, false);
-};
-export const getJoinedAtTimestamp = function getJoinedAtTimestamp(joinedAt) {
+}
+export function getJoinedAtTimestamp(joinedAt) {
   let date;
   if (null != joinedAt) {
     const _Date2 = Date;
@@ -55,4 +55,4 @@ export const getJoinedAtTimestamp = function getJoinedAtTimestamp(joinedAt) {
     date = new Date();
   }
   return date.getTime();
-};
+}

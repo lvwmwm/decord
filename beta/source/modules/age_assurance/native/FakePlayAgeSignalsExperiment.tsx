@@ -1,11 +1,11 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8154
+// Function ID: 8155
 // Name: FakePlayAgeSignalsExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: getFakePlayAgeSignalsConfig, isFakePlayAgeSignalsEnabled
 
-// Module 8117 (FakePlayAgeSignalsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 8154 (FakePlayAgeSignalsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -17,11 +17,11 @@ const result = size.fileFinishedImporting("modules/age_assurance/native/FakePlay
 
 export default apexExperiment;
 export const FakePlayAgeSignalsScenario = obj;
-export const getFakePlayAgeSignalsConfig = function getFakePlayAgeSignalsConfig(location) {
+export function getFakePlayAgeSignalsConfig(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj);
-};
-export const isFakePlayAgeSignalsEnabled = function isFakePlayAgeSignalsEnabled(location) {
+}
+export function isFakePlayAgeSignalsEnabled(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

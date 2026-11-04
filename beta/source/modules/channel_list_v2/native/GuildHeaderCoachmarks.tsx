@@ -1,22 +1,17 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 18216
+// Function ID: 18217
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4935, 1087, 4852, 21, 558, 576, 504, 17623, 17625, 13467, 17632, 13460, 13461, 4839, 7528, 13457, 17633, 17634, 17636, 2]
+// Dependencies: [32, 19, 4946, 1072, 4860, 21, 504, 18217, 18219, 14087, 18226, 14080, 14081, 4847, 7569, 14077, 18227, 18228, 18230, 2]
+// Exports: default
 
-// Module 17622 (GuildHeaderCoachmarks)
+// Module 18216 (GuildHeaderCoachmarks)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import dismissible_content from "dismissible_content" /* 4839 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 13460 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13467 */;
-import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 17623 */;
-import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 17625 */;
-import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 17632 */;
+import Constants from "Constants" /* 1072 */;
+import dismissible_content from "dismissible_content" /* 4847 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -24,79 +19,9 @@ let dependencyMap;
 const Permissions = Constants.Permissions;
 const constants = DismissibleContentConstants.DismissibleContentGroupName;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeaderCoachmarks(arg0) {
-  let first;
-  let guild;
-  let targetRef;
-  let tmp6;
-  let tmp7;
-  const obj = guild(576);
-  const cResult = obj.c(22);
-  ({ targetRef, guild } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guild) {
-    class C {
-      constructor() {
-        return closure_5.can(Permissions.MANAGE_GUILD, guild);
-      }
-    }
-    const items1 = [guild];
-    cResult[1] = guild;
-    cResult[2] = C;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = C;
-  } else {
-    class C {
-      constructor() {
-        return closure_5.can(Permissions.MANAGE_GUILD, guild);
-      }
-    }
-    tmp7 = cResult[3];
-  }
-  const tmpResult = guild(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = useShouldShowGuildThemeMemberCoachmarkDefault(guild.id);
-  useGuildThemeNuxTriggerDefault(guild.id);
-  useHasAllocateBoostPermissionDefault(guild.id);
-  useIsCurrentUserEligibleForPowerupUpsellsDefault();
-  useBoostToUnlockFeaturedPowerupDefault(guild.id);
-  if (cResult[4] === stateFromStores) {
-    class C {
-      constructor() {
-        return closure_5.can(Permissions.MANAGE_GUILD, guild);
-      }
-    }
-  }
-  const items2 = [];
-  const tmp14 = stateFromStores && !guild.premiumProgressBarEnabled;
-  if (tmp14) {
-    class C {
-      constructor() {
-        return closure_5.can(Permissions.MANAGE_GUILD, guild);
-      }
-    }
-    tmp15(guild(4839).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK);
-  }
-  if (tmp9) {
-    class C {
-      constructor() {
-        return closure_5.can(Permissions.MANAGE_GUILD, guild);
-      }
-    }
-    tmp17(guild(4839).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK);
-  }
-  cResult[4] = stateFromStores;
-  cResult[5] = guild.premiumProgressBarEnabled;
-  cResult[6] = tmp9;
-  cResult[7] = items2;
-}) : (function GuildHeaderCoachmarks(arg0) {
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/GuildHeaderCoachmarks.tsx");
+
+export default function GuildHeaderCoachmarks(arg0) {
   let closure_2;
   let first;
   let guild;
@@ -109,14 +34,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
   const items1 = [guild];
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.MANAGE_GUILD, guild), items1);
-  const tmp5 = stateFromStores(17623)(guild.id);
+  const tmp5 = stateFromStores(18217)(guild.id);
   dependencyMap = tmp5;
-  let tmp6 = stateFromStores(17625)(guild.id);
-  const tmp7 = stateFromStores(13467)(guild.id);
-  const tmp8 = stateFromStores(17632)();
-  const tmp9 = stateFromStores(13460)(guild.id);
+  let tmp6 = stateFromStores(18219)(guild.id);
+  const tmp7 = stateFromStores(14087)(guild.id);
+  const tmp8 = stateFromStores(18226)();
+  const tmp9 = stateFromStores(14080)(guild.id);
   const items2 = [stateFromStores, guild.premiumProgressBarEnabled, tmp5];
-  const tmp10 = stateFromStores(13461)();
+  const tmp10 = stateFromStores(14081)();
   const memo = react.useMemo(() => {
     const items = [];
     const tmp = stateFromStores && !guild.premiumProgressBarEnabled;
@@ -129,13 +54,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
     }
     return items;
   }, items2);
-  const obj2 = guild(7528);
+  const obj2 = guild(7569);
   const obj3 = { groupName: constants.GUILD_HEADER_TOOLTIPS };
   [tmp15, tmp16] = obj2.useSelectedDismissibleContent(memo, obj3);
   _slicedToArray(obj2.useSelectedDismissibleContent(memo, obj3), 2);
   let tmp18 = false === tmp7;
-  const useBoostToUnlockCoachmarkDCF = guild(13457).useBoostToUnlockCoachmarkDCF;
-  guild(13457);
+  const useBoostToUnlockCoachmarkDCF = guild(14077).useBoostToUnlockCoachmarkDCF;
+  guild(14077);
   const tmp12 = constants;
   const tmp13 = _slicedToArray;
   if (tmp18) {
@@ -152,20 +77,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildHeade
   if (first == null) {
     first = tmp13Result[0];
   }
-  if (tmp(4839).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
-    return jsx(stateFromStores(17633), { targetRef, guild, markAsDismissed: tmp16 });
-  } else if (tmp(4839).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
-    return jsx(stateFromStores(17634), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
-  } else if (tmp(4839).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
+  if (tmp(4847).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
+    return jsx(stateFromStores(18227), { targetRef, guild, markAsDismissed: tmp16 });
+  } else if (tmp(4847).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
+    return jsx(stateFromStores(18228), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
+  } else if (tmp(4847).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
     let tmp22 = null;
     if (null != tmp9) {
-      tmp22 = jsx(tmp4(17636), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
+      tmp22 = jsx(tmp4(18230), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
     }
     return tmp22;
   } else {
     return null;
   }
-});
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/GuildHeaderCoachmarks.tsx");
-
-export default tmp2;
+};

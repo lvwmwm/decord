@@ -1,162 +1,158 @@
 // Module ID: 1487
 // Function ID: 1488
-// Dependencies: [5, 42, 41, 1488, 1490, 1491]
+// Dependencies: []
 
 // Module 1487
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let c3, c4;
-
-class State {
-  constructor(arg0) {
-    const self = this;
-    let tmp = _classCallCheck(this, State);
-    this._nativeEventSubscription = null;
-    this._subscriptions = new Set();
-    this._latestState = null;
-    this._handleNativeStateUpdate = (arg0) => {
-      const _internetReachability = self._internetReachability;
-      _internetReachability.update(arg0);
-      const _convertStateResult = self._convertState(arg0);
-      self._latestState = _convertStateResult;
-      const _subscriptions = self._subscriptions;
-      const item = _subscriptions.forEach((fn) => fn(_convertStateResult));
-    };
-    this._handleInternetReachabilityUpdate = (isInternetReachable) => {
-      if (self._latestState) {
-        const obj = { isInternetReachable };
-        const merged = Object.assign(tmp._latestState);
-        self._latestState = obj;
-        const _subscriptions = tmp._subscriptions;
-        const item = _subscriptions.forEach((fn) => fn(obj));
-      }
-    };
-    new Set();
-    let closure_0 = _asyncToGenerator(async (arg0, value) => {
-      let closure_2;
-      let obj3;
-      closure_0 = arg0;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let closure_1;
-          let tmp4;
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_1 = undefined;
-              tmp4 = undefined;
-              c3 = 1;
-              c4 = 1;
-              const obj5 = { value: obj3.getCurrentState(closure_0), done: false };
-              obj3 = closure_0(dependencyMap[3]);
-              return obj5;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          } else {
-            closure_1 = value;
-            const _internetReachability = closure_0._internetReachability;
-            _internetReachability.update(closure_1);
-            tmp4 = closure_0._convertState(closure_1);
-            const tmp26 = closure_0;
-            if (!tmp26) {
-              closure_0._latestState = tmp4;
-              const _subscriptions = closure_0._subscriptions;
-              const item = _subscriptions.forEach((fn) => fn(closure_1_2));
-            }
-            c4 = 3;
-            const obj = { value: tmp4, done: true };
-            return obj;
-          }
-        } catch (tmp15) {
-          c4 = 3;
-          throw tmp15;
-        }
-      }
-    });
-    this._fetchCurrentState = function(arg0) {
-      return closure_0(...arguments);
-    };
-    this._convertState = (isInternetReachable) => {
-      let _internetReachability;
-      let tmp = isInternetReachable;
-      if (typeof isInternetReachable.isInternetReachable !== "boolean") {
-        const obj = { isInternetReachable: _internetReachability.currentState() };
-        const merged = Object.assign(isInternetReachable);
-        _internetReachability = self._internetReachability;
-        tmp = obj;
-      }
-      return tmp;
-    };
-    this.latest = (arg0) => {
-      let _fetchCurrentStateResult;
-      if (arg0) {
-        _fetchCurrentStateResult = obj._fetchCurrentState(arg0);
-      } else if (self._latestState) {
-        _fetchCurrentStateResult = Promise.resolve(obj._latestState);
-      } else {
-        _fetchCurrentStateResult = obj._fetchCurrentState();
-      }
-      return _fetchCurrentStateResult;
-    };
-    this.add = (fn) => {
-      const _subscriptions = self._subscriptions;
-      _subscriptions.add(fn);
-      if (self._latestState) {
-        fn(self._latestState);
-      } else {
-        const latestResult = self.latest();
-        latestResult.then(fn);
-      }
-    };
-    this.remove = (arg0) => {
-      const _subscriptions = self._subscriptions;
-      _subscriptions.delete(arg0);
-    };
-    this.tearDown = () => {
-      if (self._internetReachability) {
-        const _internetReachability = tmp._internetReachability;
-        _internetReachability.tearDown();
-      }
-      if (self._nativeEventSubscription) {
-        const _nativeEventSubscription = tmp._nativeEventSubscription;
-        _nativeEventSubscription.remove();
-      }
-      const _subscriptions = tmp._subscriptions;
-      _subscriptions.clear();
-    };
-    const tmp3 = new self(1490)(arg0, this._handleInternetReachabilityUpdate);
-    this._internetReachability = tmp3;
-    const eventEmitter = self(1488).eventEmitter;
-    this._nativeEventSubscription = eventEmitter.addListener(self(1491).DEVICE_CONNECTIVITY_EVENT, this._handleNativeStateUpdate);
-    let _fetchCurrentStateResult = this._fetchCurrentState();
+export default (arg0, arg1, arg2, arg3) => {
+  let _undefined;
+  let str11;
+  let tmp = arg0;
+  let c0 = arg0;
+  let str = arg1;
+  let str2 = arg2;
+  if (!arg1) {
+    str = "&";
   }
-}
-
-export default _createClass(State);
+  if (!str2) {
+    str2 = "=";
+  }
+  if (null === tmp) {
+    c0 = undefined;
+  }
+  if (typeof tmp === "object") {
+    const _Object = Object;
+    const keys = Object.keys(tmp);
+    let mapped = keys.map((item) => {
+      let joined;
+      let tmp = typeof item;
+      str = item;
+      let _encodeURIComponent = encodeURIComponent;
+      if ("string" !== tmp) {
+        if ("boolean" === tmp) {
+          let str5 = "false";
+          if (item) {
+            str5 = "true";
+          }
+          str = str5;
+        } else if ("number" === tmp) {
+          let _isFinite = isFinite;
+          let str4 = "";
+          if (isFinite(item)) {
+            str4 = item;
+          }
+          str = str4;
+        } else {
+          str = "";
+        }
+      }
+      const sum = _encodeURIComponent(str) + str2;
+      if (Array.isArray(c0[item])) {
+        const arr = c0[item];
+        const mapped = arr.map((item) => {
+          str = item;
+          const _encodeURIComponent = encodeURIComponent;
+          const tmp = sum;
+          if ("string" !== typeof item) {
+            if ("boolean" === typeof item) {
+              let str5 = "false";
+              if (item) {
+                str5 = "true";
+              }
+              str = str5;
+            } else if ("number" === typeof item) {
+              const _isFinite = isFinite;
+              let str4 = "";
+              if (isFinite(item)) {
+                str4 = item;
+              }
+              str = str4;
+            } else {
+              str = "";
+            }
+          }
+          return tmp + _encodeURIComponent(str);
+        });
+        joined = mapped.join(str);
+      } else {
+        let str6 = tmp4;
+        const _encodeURIComponent2 = encodeURIComponent;
+        if ("string" !== typeof c0[item]) {
+          if ("boolean" === typeof c0[item]) {
+            let str10 = "false";
+            if (c0[item]) {
+              str10 = "true";
+            }
+            str6 = str10;
+          } else if ("number" === typeof c0[item]) {
+            const _isFinite2 = isFinite;
+            let str9 = "";
+            if (isFinite(c0[item])) {
+              str9 = tmp4;
+            }
+            str6 = str9;
+          } else {
+            str6 = "";
+          }
+        }
+        joined = sum + _encodeURIComponent2(str6);
+      }
+      return joined;
+    });
+    const _Boolean = Boolean;
+    const found = mapped.filter(Boolean);
+    str11 = found.join(str);
+  } else {
+    let str9 = "";
+    str11 = "";
+    if (arg3) {
+      const str3 = "string";
+      let tmp4 = arg3;
+      let _encodeURIComponent = encodeURIComponent;
+      if ("string" !== typeof arg3) {
+        let str4 = "boolean";
+        if ("boolean" === typeof arg3) {
+          let str6 = "false";
+          if (arg3) {
+            str6 = "true";
+          }
+          tmp4 = str6;
+        } else {
+          let str5 = "number";
+          if ("number" === typeof arg3) {
+            let _isFinite = isFinite;
+            let tmp5 = str9;
+            if (isFinite(arg3)) {
+              tmp5 = arg3;
+            }
+            tmp4 = tmp5;
+          } else {
+            tmp4 = str9;
+          }
+        }
+      }
+      let tmp8 = tmp;
+      let sum = _encodeURIComponent(tmp4) + str2;
+      let _encodeURIComponent2 = encodeURIComponent;
+      if ("string" !== typeof tmp) {
+        if ("boolean" === typeof tmp) {
+          let str10 = "false";
+          if (tmp) {
+            str10 = "true";
+          }
+          tmp8 = str10;
+        } else if ("number" === typeof tmp) {
+          let _isFinite2 = isFinite;
+          if (isFinite(tmp)) {
+            str9 = tmp;
+          }
+          tmp8 = str9;
+        } else {
+          tmp8 = str9;
+        }
+      }
+      str11 = sum + _encodeURIComponent2(tmp8);
+    }
+  }
+  return str11;
+};

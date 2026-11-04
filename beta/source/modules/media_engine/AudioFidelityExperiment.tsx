@@ -1,12 +1,12 @@
-// Module ID: 15348
-// Function ID: 15349
+// Module ID: 15896
+// Function ID: 15897
 // Name: AudioFidelityExperiment
-// Dependencies: [1455, 1388, 2]
+// Dependencies: [1447, 1379, 2]
 // Exports: getAudioFidelityExperimentConfig, getVoiceFidelityCaps
 
-// Module 15348 (AudioFidelityExperiment)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15896 (AudioFidelityExperiment)
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,11 +16,11 @@ obj2[8] = { capSampleRate: true, capChannelCount: true, condition: "any" };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/AudioFidelityExperiment.tsx");
 
-export const getAudioFidelityExperimentConfig = function getAudioFidelityExperimentConfig(location) {
+export function getAudioFidelityExperimentConfig(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj);
-};
-export const getVoiceFidelityCaps = function getVoiceFidelityCaps(location, krispEnabled) {
+}
+export function getVoiceFidelityCaps(location, krispEnabled) {
   let num2;
   let echoCancellationEnabled = krispEnabled.krispEnabled;
   const _location = location.location;
@@ -69,4 +69,4 @@ export const getVoiceFidelityCaps = function getVoiceFidelityCaps(location, kris
   } else {
     return { maxSampleRateHz: 0, maxChannelCount: 0 };
   }
-};
+}

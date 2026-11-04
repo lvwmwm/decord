@@ -1,18 +1,17 @@
-// Module ID: 17528
-// Function ID: 17529
+// Module ID: 18124
+// Function ID: 18125
 // Name: isActivityPermanentCustomStatus
-// Dependencies: [1087, 2]
+// Dependencies: [5762, 2]
 // Exports: isActivityPermanentCustomStatus
 
-// Module 17528 (isActivityPermanentCustomStatus)
-import Constants from "Constants" /* 1087 */;
+// Module 18124 (isActivityPermanentCustomStatus)
+import ActivityTypes from "ActivityTypes" /* 5762 */;
 import size from "module_2" /* 2 */;
 
-const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/custom_status/utils/isActivityPermanentCustomStatus.tsx");
 
-export const isActivityPermanentCustomStatus = function isActivityPermanentCustomStatus(type) {
-  let tmp = type.type === ActivityTypes.CUSTOM_STATUS;
+export function isActivityPermanentCustomStatus(type) {
+  let tmp = type.type === ActivityTypes.ActivityTypes.CUSTOM_STATUS;
   if (tmp) {
     const timestamps = type.timestamps;
     let end;
@@ -22,4 +21,4 @@ export const isActivityPermanentCustomStatus = function isActivityPermanentCusto
     tmp = null == end;
   }
   return tmp;
-};
+}

@@ -4,4 +4,4 @@
 
 // Module 1308
 
-export default TypeError;
+export default Function.prototype.call;

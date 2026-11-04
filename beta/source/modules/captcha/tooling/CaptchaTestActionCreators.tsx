@@ -1,12 +1,12 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17693
+// Function ID: 17694
 // Name: CaptchaTestActionCreators
-// Dependencies: [5, 1087, 1297, 2]
+// Dependencies: [5, 1072, 1282, 2]
 // Exports: testCaptcha
 
-// Module 17089 (CaptchaTestActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 17693 (CaptchaTestActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _testCaptcha() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _testCaptcha() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c2 = 3;
@@ -70,6 +70,6 @@ const result = size.fileFinishedImporting("modules/captcha/tooling/CaptchaTestAc
 
 export const CaptchaDeciderType = { HCAPTCHA_RQDATA: "hCaptchaRqdata", SMITE_RQDATA: "SmiteRqdata", RECAPTCHA: "Recaptcha", RECAPTCHA_ENTERPRISE: "RecaptchaEnterprise" };
 export const HCaptchaDifficulty = { EASY: 1, [1]: "EASY", MODERATE: 2, [2]: "MODERATE", DIFFICULT: 3, [3]: "DIFFICULT", VERY_DIFFICULT: 4, [4]: "VERY_DIFFICULT" };
-export const testCaptcha = function testCaptcha() {
+export function testCaptcha() {
   return obj(...arguments);
-};
+}

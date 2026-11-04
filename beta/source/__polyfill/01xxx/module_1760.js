@@ -1,186 +1,382 @@
 // Module ID: 1760
 // Function ID: 1761
-// Dependencies: [32, 1669]
-// Exports: processTransformOrigin
+// Dependencies: [1761, 1693, 1762, 1661]
+// Exports: processColorsInProps, unprocessColorsInProps
 
 // Module 1760
-import ReanimatedError from "ReanimatedError" /* 1669 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import clampRGBA from "clampRGBA" /* 1693 */;
+import react_native from "react-native" /* 1761 */;
 
-function validateTransformOrigin(arg0) {
-  let obj;
-  let obj2;
-  let tmp22;
-  if (3 !== arg0.length) {
-    const self7 = this;
-    const self8 = this;
-    const reanimatedError = new ReanimatedError.ReanimatedError("Transform origin must have exactly 3 values.");
-    throw reanimatedError;
-  } else {
-    [obj, obj2, tmp22] = arg0;
-    _slicedToArray(arg0, 3);
-    if (typeof obj !== "number") {
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const reanimatedError1 = new ReanimatedError.ReanimatedError("Transform origin x-position must be a number or a percentage string. Passed value: " + obj + ".");
-      throw reanimatedError1;
-    }
-    if (typeof obj2 !== "number") {
-      const _HermesInternal2 = HermesInternal;
-      const self3 = this;
-      const self4 = this;
-      const reanimatedError2 = new ReanimatedError.ReanimatedError("Transform origin y-position must be a number or a percentage string. Passed value: " + obj2 + ".");
-      throw reanimatedError2;
-    }
-    if (typeof tmp22 !== "number") {
-      const _HermesInternal3 = HermesInternal;
-      const self5 = this;
-      const self6 = this;
-      const reanimatedError3 = new ReanimatedError.ReanimatedError("Transform origin z-position must be a number. Passed value: " + tmp22 + ".");
-      throw reanimatedError3;
-    }
+const require = globalThis.__r;
+
+let fn2;
+let fn3;
+let fn4;
+const isRecord = function r(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
   }
-}
-validateTransformOrigin.__closure = {};
-validateTransformOrigin.__workletHash = 6034608374885;
-validateTransformOrigin.__initData = { code: "function validateTransformOrigin_Pnpm_processTransformOriginTs1(transformOrigin){if(transformOrigin.length!==3){throw new ReanimatedError('Transform origin must have exactly 3 values.');}const[x,y,z]=transformOrigin;if(!(typeof x==='number'||typeof x==='string'&&x.endsWith('%'))){throw new ReanimatedError(\"Transform origin x-position must be a number or a percentage string. Passed value: \"+x+\".\");}if(!(typeof y==='number'||typeof y==='string'&&y.endsWith('%'))){throw new ReanimatedError(\"Transform origin y-position must be a number or a percentage string. Passed value: \"+y+\".\");}if(typeof z!=='number'){throw new ReanimatedError(\"Transform origin z-position must be a number. Passed value: \"+z+\".\");}}" };
-function processTransformOrigin(str) {
-  let items = str;
-  if (!Array.isArray(str)) {
-    items = ["50%", "50%", 0];
-  }
-  if (typeof str === "string") {
-    const obj = /(top|bottom|left|right|center|\d+(?:%|px)|0)/gi;
-    const items1 = ["50%", "50%", 0];
-    let match = obj.exec(str);
-    let num4 = 0;
-    items = items1;
-    if (match) {
-      while (true) {
-        let num;
-        str = match[0];
-        let formatted = str.toLowerCase();
-        let sum = num4 + 1;
-        if ("left" !== formatted) {
-          if ("right" !== formatted) {
-            if ("top" !== formatted) {
-              if ("bottom" !== formatted) {
-                if ("center" === formatted) {
-                  if (2 === num4) {
-                    let _HermesInternal2 = HermesInternal;
-                    let str3 = " cannot be used for z-position";
-                    let str4 = "Transform-origin value ";
-                    let self3 = this;
-                    let self4 = this;
-                    let reanimatedError = new ReanimatedError.ReanimatedError("Transform-origin value " + str + " cannot be used for z-position");
-                    throw reanimatedError;
-                  } else {
-                    items1[num4] = "50%";
-                    num = sum;
-                  }
-                } else if (str.endsWith("%")) {
-                  items1[num4] = str;
-                  num = sum;
-                } else {
-                  let _parseFloat = parseFloat;
-                  let parsed = parseFloat(str);
-                  let _isNaN = isNaN;
-                  if (isNaN(parsed)) {
-                    break;
-                  } else {
-                    items1[num4] = parsed;
-                    num = sum;
-                  }
-                }
-              }
-            }
-            if (2 === num4) {
-              let _HermesInternal4 = HermesInternal;
-              let str7 = " can only be used for y-position";
-              let str8 = "Transform-origin ";
-              let self7 = this;
-              let self8 = this;
-              let reanimatedError1 = new ReanimatedError.ReanimatedError("Transform-origin " + str + " can only be used for y-position");
-              throw reanimatedError1;
-            } else {
-              let num2 = "100%";
-              if ("top" === formatted) {
-                num2 = 0;
-              }
-              items1[1] = num2;
-              num = sum;
-              if (0 === num4) {
-                let match1 = obj.exec(str);
-                num = sum;
-                if (null != match1) {
-                  let formatted1;
-                  if (match1 != null) {
-                    let str5 = match1[0];
-                    formatted1 = str5.toLowerCase();
-                  }
-                  if ("left" === formatted1) {
-                    items1[0] = 0;
-                    num = 2;
-                  } else if ("right" === formatted1) {
-                    items1[0] = "100%";
-                    num = 2;
-                  } else if ("center" === formatted1) {
-                    items1[0] = "50%";
-                    num = 2;
-                  } else {
-                    let _HermesInternal3 = HermesInternal;
-                    let str6 = "Could not parse transform-origin: ";
-                    let self5 = this;
-                    let self6 = this;
-                    let reanimatedError2 = new ReanimatedError.ReanimatedError("Could not parse transform-origin: " + str);
-                    throw reanimatedError2;
-                  }
-                }
-              }
-            }
-          }
-          match = obj.exec(str);
-          num4 = num;
-          items = items1;
-        }
-        if (0 !== num4) {
-          let _HermesInternal5 = HermesInternal;
-          let str10 = " can only be used for x-position";
-          let str11 = "Transform-origin ";
-          let self11 = this;
-          let self12 = this;
-          let reanimatedError3 = new ReanimatedError.ReanimatedError("Transform-origin " + str + " can only be used for x-position");
-          throw reanimatedError3;
-        } else {
-          let num3 = "100%";
-          if ("left" === formatted) {
-            num3 = 0;
-          }
-          items1[0] = num3;
-          num = sum;
-        }
-      }
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const reanimatedError4 = new ReanimatedError.ReanimatedError("Invalid numeric value in transform-origin: " + str);
-      throw reanimatedError4;
-    }
-  }
-  if (typeof str !== "string") {
+  if (tmp) {
     const _Array = Array;
-    if (!Array.isArray(str)) {
-      const self9 = this;
-      const self10 = this;
-      const reanimatedError5 = new ReanimatedError.ReanimatedError("Invalid transformOrigin type: " + typeof str);
-      throw reanimatedError5;
-    }
+    tmp = !Array.isArray(obj);
   }
-  return items;
+  return tmp;
+};
+isRecord.__closure = {};
+isRecord.__workletHash = 12151866759552;
+isRecord.__initData = { code: "function pnpm_colorsTs1(value){return typeof value==='object'&&value!==null&&!Array.isArray(value);}" };
+class PlatformColor {
+  constructor() {
+    let obj;
+    items = [...arguments];
+    if (react_native.IS_IOS) {
+      obj = { semantic: items };
+      obj2 = { semantic: items };
+    } else {
+      obj = { resource_paths: items };
+    }
+    return obj;
+  }
 }
-processTransformOrigin.__closure = { INDEX_X: 0, INDEX_Z: 2, INDEX_Y: 1, __DEV__: false, validateTransformOrigin };
-processTransformOrigin.__workletHash = 11541675557002;
-processTransformOrigin.__initData = { code: "function processTransformOrigin_Pnpm_processTransformOriginTs2(transformOriginIn){const{INDEX_X,INDEX_Z,INDEX_Y,__DEV__,validateTransformOrigin}=this.__closure;let transformOrigin=Array.isArray(transformOriginIn)?transformOriginIn:['50%','50%',0];if(typeof transformOriginIn==='string'){const transformOriginString=transformOriginIn;const regex=/(top|bottom|left|right|center|\\d+(?:%|px)|0)/gi;const transformOriginArray=['50%','50%',0];let index=INDEX_X;let matches;while(matches=regex.exec(transformOriginString)){let nextIndex=index+1;const value=matches[0];const valueLower=value.toLowerCase();switch(valueLower){case'left':case'right':{if(index!==INDEX_X){throw new ReanimatedError(\"Transform-origin \"+value+\" can only be used for x-position\");}transformOriginArray[INDEX_X]=valueLower==='left'?0:'100%';break;}case'top':case'bottom':{if(index===INDEX_Z){throw new ReanimatedError(\"Transform-origin \"+value+\" can only be used for y-position\");}transformOriginArray[INDEX_Y]=valueLower==='top'?0:'100%';if(index===INDEX_X){const horizontal=regex.exec(transformOriginString);if(horizontal==null){break;}switch(horizontal===null||horizontal===void 0?void 0:horizontal[0].toLowerCase()){case'left':transformOriginArray[INDEX_X]=0;break;case'right':transformOriginArray[INDEX_X]='100%';break;case'center':transformOriginArray[INDEX_X]='50%';break;default:throw new ReanimatedError(\"Could not parse transform-origin: \"+transformOriginString);}nextIndex=INDEX_Z;}break;}case'center':{if(index===INDEX_Z){throw new ReanimatedError(\"Transform-origin value \"+value+\" cannot be used for z-position\");}transformOriginArray[index]='50%';break;}default:{if(value.endsWith('%')){transformOriginArray[index]=value;}else{const numericValue=parseFloat(value);if(isNaN(numericValue)){throw new ReanimatedError(\"Invalid numeric value in transform-origin: \"+value);}transformOriginArray[index]=numericValue;}break;}}index=nextIndex;}transformOrigin=transformOriginArray;}if(typeof transformOriginIn!=='string'&&!Array.isArray(transformOriginIn)){throw new ReanimatedError(\"Invalid transformOrigin type: \"+typeof transformOriginIn);}if(__DEV__){validateTransformOrigin(transformOrigin);}return transformOrigin;}" };
+let obj = { IS_IOS: require("react-native").IS_IOS };
+PlatformColor.__closure = obj;
+PlatformColor.__workletHash = 12890406291275;
+PlatformColor.__initData = { code: "function PlatformColor_Pnpm_colorsTs2(...names){const{IS_IOS}=this.__closure;return IS_IOS?{semantic:names}:{resource_paths:names};}" };
+function isPlatformColorObject(semantic) {
+  if (typeof fn === "function") {
+    let tmp2 = typeof semantic === "object";
+    if (typeof semantic === "object") {
+      tmp2 = null !== semantic;
+    }
+    if (tmp2) {
+      const _Array = Array;
+      tmp2 = !Array.isArray(semantic);
+    }
+    if (tmp2) {
+      const _Array2 = Array;
+      let isArray = Array.isArray(semantic.semantic);
+      if (!isArray) {
+        const _Array3 = Array;
+        isArray = Array.isArray(semantic.resource_paths);
+      }
+      tmp2 = isArray;
+    }
+    return tmp2;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+isPlatformColorObject.__closure = { isRecord };
+isPlatformColorObject.__workletHash = 9660595997722;
+isPlatformColorObject.__initData = { code: "function isPlatformColorObject_Pnpm_colorsTs3(value){const{isRecord}=this.__closure;return isRecord(value)&&(Array.isArray(value.semantic)||Array.isArray(value.resource_paths));}" };
+class DynamicColorIOS {
+  constructor(light) {
+    return { dynamic: { light: light.light, dark: light.dark, highContrastLight: light.highContrastLight, highContrastDark: light.highContrastDark } };
+  }
+}
+DynamicColorIOS.__closure = {};
+DynamicColorIOS.__workletHash = 593421129931;
+DynamicColorIOS.__initData = { code: "function DynamicColorIOS_Pnpm_colorsTs4(tuple){return{dynamic:{light:tuple.light,dark:tuple.dark,highContrastLight:tuple.highContrastLight,highContrastDark:tuple.highContrastDark}};}" };
+function isDynamicColorObjectIOS(dynamic) {
+  if (typeof fn === "function") {
+    let tmp3 = typeof dynamic === "object";
+    if (typeof dynamic === "object") {
+      tmp3 = null !== dynamic;
+    }
+    if (tmp3) {
+      const _Array = Array;
+      tmp3 = !Array.isArray(dynamic);
+    }
+    if (tmp3) {
+      dynamic = dynamic.dynamic;
+      if (typeof tmp === "function") {
+        let tmp5 = typeof dynamic === "object";
+        if (typeof dynamic === "object") {
+          tmp5 = null !== dynamic;
+        }
+        if (tmp5) {
+          const _Array2 = Array;
+          tmp5 = !Array.isArray(dynamic);
+        }
+        tmp3 = tmp5;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+    if (tmp3) {
+      tmp3 = "light" in dynamic.dynamic;
+    }
+    if (tmp3) {
+      tmp3 = "dark" in dynamic.dynamic;
+    }
+    return tmp3;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+isDynamicColorObjectIOS.__closure = { isRecord };
+isDynamicColorObjectIOS.__workletHash = 1181760541767;
+isDynamicColorObjectIOS.__initData = { code: "function isDynamicColorObjectIOS_Pnpm_colorsTs5(value){const{isRecord}=this.__closure;return isRecord(value)&&isRecord(value.dynamic)&&'light'in value.dynamic&&'dark'in value.dynamic;}" };
+let obj2 = { invalidColor: fn2, invalidProcessedColor: fn3, dynamicNotAvailableOnPlatform: fn4 };
+fn2 = function t(arg0) {
+  return "Invalid color value: " + JSON.stringify(arg0);
+};
+fn2.__closure = {};
+fn2.__workletHash = 16453254098770;
+fn2.__initData = { code: "function pnpm_colorsTs6(color){return\"Invalid color value: \"+JSON.stringify(color);}" };
+fn3 = function n(arg0) {
+  return "Invalid processed color value: " + JSON.stringify(arg0);
+};
+fn3.__closure = {};
+fn3.__workletHash = 8662920964153;
+fn3.__initData = { code: "function pnpm_colorsTs7(color){return\"Invalid processed color value: \"+JSON.stringify(color);}" };
+fn4 = function o() {
+  return "DynamicColorIOS is not available on this platform.";
+};
+fn4.__closure = {};
+fn4.__workletHash = 13235944247491;
+fn4.__initData = { code: "function pnpm_colorsTs8(){return'DynamicColorIOS is not available on this platform.';}" };
+function processColorNumber(semantic) {
+  const obj = clampRGBA;
+  const result = obj.processColorInitially(semantic);
+  let tmp3 = result;
+  const tmp2 = react_native.IS_ANDROID && typeof result === "number";
+  if (tmp2) {
+    tmp3 = result | 0;
+  }
+  return tmp3;
+}
+processColorNumber.__closure = { processColorInitially: require("clampRGBA").processColorInitially, IS_ANDROID: require("react-native").IS_ANDROID };
+processColorNumber.__workletHash = 11813019963227;
+processColorNumber.__initData = { code: "function processColorNumber_Pnpm_colorsTs9(value){const{processColorInitially,IS_ANDROID}=this.__closure;let normalizedColor=processColorInitially(value);if(IS_ANDROID&&typeof normalizedColor=='number'){normalizedColor=normalizedColor|0x0;}return normalizedColor;}" };
+function unprocessColorNumber(arg0) {
+  return "rgba(" + arg0 << 8 >>> 24 + "," + arg0 << 16 >>> 24 + "," + arg0 << 24 >>> 24 + "," + (arg0 >>> 24) / 255 + ")";
+}
+unprocessColorNumber.__closure = {};
+unprocessColorNumber.__workletHash = 5518391320995;
+unprocessColorNumber.__initData = { code: "function unprocessColorNumber_Pnpm_colorsTs10(value){const a=(value>>>24)/255;const r=value<<8>>>24;const g=value<<16>>>24;const b=value<<24>>>24;return\"rgba(\"+r+\",\"+g+\",\"+b+\",\"+a+\")\";}" };
+let items = ["light", "dark", "highContrastLight", "highContrastDark"];
+function processDynamicColorObjectIOS(semantic) {
+  const dynamic = {};
+  const iter = items[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    if (undefined !== semantic.dynamic[nextResult]) {
+      let tmp6 = processColorNumber(semantic.dynamic[tmp3]);
+      if (null === tmp6) {
+        iter.return();
+        return null;
+      } else {
+        dynamic[tmp3] = tmp7;
+      }
+    }
+    continue;
+  }
+  return { dynamic };
+}
+processDynamicColorObjectIOS.__closure = { DynamicColorIOSProperties: items, processColorNumber };
+processDynamicColorObjectIOS.__workletHash = 12385759836493;
+processDynamicColorObjectIOS.__initData = { code: "function processDynamicColorObjectIOS_Pnpm_colorsTs11(value){const{DynamicColorIOSProperties,processColorNumber}=this.__closure;const result={};for(const property of DynamicColorIOSProperties){if(value.dynamic[property]===undefined){continue;}const processed=processColorNumber(value.dynamic[property]);if(processed===null){return null;}result[property]=processed;}return{dynamic:result};}" };
+function unprocessDynamicColorObjectIOS(arr) {
+  const dynamic = {};
+  for (const item10008 of items) {
+    let tmp = item10008;
+    if (undefined !== arr.dynamic[item10008]) {
+      dynamic[tmp] = unprocessColorNumber(arr.dynamic[tmp]);
+    }
+    continue;
+  }
+  return { dynamic };
+}
+unprocessDynamicColorObjectIOS.__closure = { DynamicColorIOSProperties: items, unprocessColorNumber };
+unprocessDynamicColorObjectIOS.__workletHash = 3217615757982;
+unprocessDynamicColorObjectIOS.__initData = { code: "function unprocessDynamicColorObjectIOS_Pnpm_colorsTs12(value){const{DynamicColorIOSProperties,unprocessColorNumber}=this.__closure;const result={};for(const property of DynamicColorIOSProperties){if(value.dynamic[property]!==undefined){result[property]=unprocessColorNumber(value.dynamic[property]);}}return{dynamic:result};}" };
+function processColor(semantic, target) {
+  if (typeof processColorNumber === "function") {
+    const obj = clampRGBA;
+    const result = obj.processColorInitially(semantic);
+    let tmp6 = result;
+    const tmp5 = react_native.IS_ANDROID && typeof result === "number";
+    if (tmp5) {
+      tmp6 = result | 0;
+    }
+    if (tmp6) {
+      return tmp6;
+    } else if (0 === tmp6) {
+      target = undefined;
+      if (target != null) {
+        target = target.target;
+      }
+      const tmp25 = (target !== tmp2(1762).ValueProcessorTarget.CSS || "transparent" !== semantic) && tmp6;
+      return tmp25;
+    } else if (typeof isPlatformColorObject === "function") {
+      if (typeof fn === "function") {
+        let tmp8 = typeof semantic === "object";
+        if (typeof semantic === "object") {
+          tmp8 = null !== semantic;
+        }
+        if (tmp8) {
+          const _Array = Array;
+          tmp8 = !Array.isArray(semantic);
+        }
+        if (tmp8) {
+          const _Array2 = Array;
+          let isArray = Array.isArray(semantic.semantic);
+          if (!isArray) {
+            const _Array3 = Array;
+            isArray = Array.isArray(semantic.resource_paths);
+          }
+          tmp8 = isArray;
+        }
+        if (tmp8) {
+          return semantic;
+        } else {
+          let tmp13 = tmp6;
+          if (isDynamicColorObjectIOS(semantic)) {
+            if (react_native.IS_IOS) {
+              tmp13 = processDynamicColorObjectIOS(semantic);
+            } else {
+              const self = this;
+              const self2 = this;
+              const reanimatedError = new tmp2(1661).ReanimatedError(obj2.dynamicNotAvailableOnPlatform());
+              throw reanimatedError;
+            }
+          }
+          if (null === tmp13) {
+            const self3 = this;
+            const self4 = this;
+            const reanimatedError1 = new tmp2(1661).ReanimatedError(obj2.invalidColor(semantic));
+            throw reanimatedError1;
+          } else {
+            return tmp13;
+          }
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+({ processColorInitially: require("clampRGBA").processColorInitially, IS_ANDROID: require("react-native").IS_ANDROID });
+processColor.__closure = { processColorNumber, ValueProcessorTarget: require("ValueProcessorTarget").ValueProcessorTarget, isPlatformColorObject, isDynamicColorObjectIOS, IS_IOS: require("react-native").IS_IOS, ERROR_MESSAGES: obj2, processDynamicColorObjectIOS };
+processColor.__workletHash = 3532980737440;
+processColor.__initData = { code: "function processColor_Pnpm_colorsTs13(value,context){const{processColorNumber,ValueProcessorTarget,isPlatformColorObject,isDynamicColorObjectIOS,IS_IOS,ERROR_MESSAGES,processDynamicColorObjectIOS}=this.__closure;let result=processColorNumber(value);if(result){return result;}if(result===0){if((context===null||context===void 0?void 0:context.target)===ValueProcessorTarget.CSS&&value==='transparent'){return false;}return result;}if(isPlatformColorObject(value)){return value;}if(isDynamicColorObjectIOS(value)){if(!IS_IOS){throw new ReanimatedError(ERROR_MESSAGES.dynamicNotAvailableOnPlatform());}result=processDynamicColorObjectIOS(value);}if(result===null){throw new ReanimatedError(ERROR_MESSAGES.invalidColor(value));}return result;}" };
+function unprocessColor(arr) {
+  if (typeof arr === "number") {
+    if (typeof unprocessColorNumber === "function") {
+      const _HermesInternal = HermesInternal;
+      return "rgba(" + arr << 8 >>> 24 + "," + arr << 16 >>> 24 + "," + arr << 24 >>> 24 + "," + (arr >>> 24) / 255 + ")";
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else if (typeof isPlatformColorObject === "function") {
+    if (typeof fn === "function") {
+      let tmp2 = typeof arr === "object";
+      if (typeof arr === "object") {
+        tmp2 = null !== arr;
+      }
+      if (tmp2) {
+        const _Array = Array;
+        tmp2 = !Array.isArray(arr);
+      }
+      if (tmp2) {
+        const _Array2 = Array;
+        let isArray = Array.isArray(arr.semantic);
+        if (!isArray) {
+          const _Array3 = Array;
+          isArray = Array.isArray(arr.resource_paths);
+        }
+        tmp2 = isArray;
+      }
+      if (tmp2) {
+        return arr;
+      } else if (isDynamicColorObjectIOS(arr)) {
+        if (react_native.IS_IOS) {
+          return unprocessDynamicColorObjectIOS(arr);
+        } else {
+          const self3 = this;
+          const self4 = this;
+          const reanimatedError = new tmp7(1661).ReanimatedError(obj2.dynamicNotAvailableOnPlatform());
+          throw reanimatedError;
+        }
+      } else {
+        const self = this;
+        const self2 = this;
+        const reanimatedError1 = new tmp7(1661).ReanimatedError(obj2.invalidProcessedColor(arr));
+        throw reanimatedError1;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+({ processColorNumber, ValueProcessorTarget: require("ValueProcessorTarget").ValueProcessorTarget, isPlatformColorObject, isDynamicColorObjectIOS, IS_IOS: require("react-native").IS_IOS, ERROR_MESSAGES: obj2, processDynamicColorObjectIOS });
+unprocessColor.__closure = { unprocessColorNumber, isPlatformColorObject, isDynamicColorObjectIOS, IS_IOS: require("react-native").IS_IOS, ERROR_MESSAGES: obj2, unprocessDynamicColorObjectIOS };
+unprocessColor.__workletHash = 11221362619601;
+unprocessColor.__initData = { code: "function unprocessColor_Pnpm_colorsTs14(value){const{unprocessColorNumber,isPlatformColorObject,isDynamicColorObjectIOS,IS_IOS,ERROR_MESSAGES,unprocessDynamicColorObjectIOS}=this.__closure;if(typeof value==='number'){return unprocessColorNumber(value);}if(isPlatformColorObject(value)){return value;}if(isDynamicColorObjectIOS(value)){if(!IS_IOS){throw new ReanimatedError(ERROR_MESSAGES.dynamicNotAvailableOnPlatform());}return unprocessDynamicColorObjectIOS(value);}throw new ReanimatedError(ERROR_MESSAGES.invalidProcessedColor(value));}" };
+function processColorsInProps(obj) {
+  for (const key10005 in obj) {
+    let ColorProperties = clampRGBA.ColorProperties;
+    if (!ColorProperties.includes(key10005)) {
+      continue;
+    } else {
+      let mapped;
+      let arr = obj[key10005];
+      let _Array = Array;
+      if (Array.isArray(arr)) {
+        mapped = arr.map((item) => processColor(item));
+      } else {
+        mapped = processColor(arr);
+      }
+      obj[key10005] = mapped;
+      continue;
+    }
+    continue;
+  }
+}
+({ unprocessColorNumber, isPlatformColorObject, isDynamicColorObjectIOS, IS_IOS: require("react-native").IS_IOS, ERROR_MESSAGES: obj2, unprocessDynamicColorObjectIOS });
+processColorsInProps.__closure = { ColorProperties: require("clampRGBA").ColorProperties, processColor };
+processColorsInProps.__workletHash = 10982881159897;
+processColorsInProps.__initData = { code: "function processColorsInProps_Pnpm_colorsTs15(props){const{ColorProperties,processColor}=this.__closure;for(const key in props){if(!ColorProperties.includes(key)){continue;}const value=props[key];props[key]=Array.isArray(value)?value.map(function(c){return processColor(c);}):processColor(value);}}" };
+function unprocessColorsInProps(styleProps) {
+  for (const key10005 in styleProps) {
+    let ColorProperties = clampRGBA.ColorProperties;
+    if (!ColorProperties.includes(key10005)) {
+      continue;
+    } else {
+      let mapped;
+      let arr = styleProps[key10005];
+      let _Array = Array;
+      if (Array.isArray(arr)) {
+        mapped = arr.map((item) => unprocessColor(item));
+      } else {
+        mapped = unprocessColor(arr);
+      }
+      styleProps[key10005] = mapped;
+      continue;
+    }
+    continue;
+  }
+}
+({ ColorProperties: require("clampRGBA").ColorProperties, processColor });
+unprocessColorsInProps.__closure = { ColorProperties: require("clampRGBA").ColorProperties, unprocessColor };
+unprocessColorsInProps.__workletHash = 1282697128442;
+unprocessColorsInProps.__initData = { code: "function unprocessColorsInProps_Pnpm_colorsTs16(props){const{ColorProperties,unprocessColor}=this.__closure;for(const key in props){if(!ColorProperties.includes(key)){continue;}const value=props[key];props[key]=Array.isArray(value)?value.map(function(c){return unprocessColor(c);}):unprocessColor(value);}}" };
+({ ColorProperties: require("clampRGBA").ColorProperties, unprocessColor });
 
-export { processTransformOrigin };
+export { PlatformColor };
+export { DynamicColorIOS };
+export const ERROR_MESSAGES = obj2;
+export { processColorNumber };
+export { processColor };
+export { unprocessColor };
+export { processColorsInProps };
+export { unprocessColorsInProps };

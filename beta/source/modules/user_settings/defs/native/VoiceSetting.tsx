@@ -1,17 +1,15 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 17237
+// Function ID: 17238
 // Name: VoiceSetting
-// Dependencies: [2014, 1087, 558, 576, 504, 1128, 11240, 11677, 16638, 2]
+// Dependencies: [2006, 1072, 504, 1113, 11540, 11972, 17238, 2]
 
-// Module 16637 (VoiceSetting)
+// Module 17237 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11677 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import intl3 from "intl" /* 1113 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11972 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import Constants from "Constants" /* 1072 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,57 +17,6 @@ const require = globalThis.__r;
 let UserSettingsSections;
 let c3;
 ({ InputModes: c3, UserSettingsSections } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceSettingTrailing() {
-  let mode;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function o() {
-      return mode.getMode();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    let stringResult;
-    if (stateFromStores === constants.PUSH_TO_TALK) {
-      const intl2 = tmp(1128).intl;
-      stringResult = intl2.string(tmp(1128).t.Q8gkVL);
-    } else {
-      const intl = tmp(1128).intl;
-      stringResult = intl.string(tmp(1128).t.cHCEOJ);
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = stringResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function useVoiceSettingTrailing() {
-  let mode;
-  let stringResult;
-  const items = [MediaEngineStore];
-  const obj = get_initialized;
-  if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
-    const intl2 = tmp(1128).intl;
-    stringResult = intl2.string(tmp(1128).t.Q8gkVL);
-  } else {
-    const intl = tmp(1128).intl;
-    stringResult = intl.string(tmp(1128).t.cHCEOJ);
-  }
-  return stringResult;
-});
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -77,7 +24,20 @@ let obj = {
   },
   parent: null,
   IconComponent: MicrophoneIcon.MicrophoneIcon,
-  useTrailing: tmp3,
+  useTrailing: function useVoiceSettingTrailing() {
+    let mode;
+    let stringResult;
+    const items = [MediaEngineStore];
+    const obj = get_initialized;
+    if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
+      const intl2 = tmp(1113).intl;
+      stringResult = intl2.string(tmp(1113).t.Q8gkVL);
+    } else {
+      const intl = tmp(1113).intl;
+      stringResult = intl.string(tmp(1113).t.cHCEOJ);
+    }
+    return stringResult;
+  },
   screen: {
     route: UserSettingsSections.VOICE,
     getComponent() {

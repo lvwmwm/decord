@@ -1,11 +1,11 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12477
+// Function ID: 12478
 // Name: getItemSubtitleForMaxPlayers
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 12172 (getItemSubtitleForMaxPlayers)
-import intl3 from "intl" /* 1128 */;
+// Module 12477 (getItemSubtitleForMaxPlayers)
+import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
@@ -22,7 +22,7 @@ export default function getItemSubtitleForMaxPlayers(count) {
   }
   return formatToPlainStringResult;
 };
-export const getItemSubtitleForMaxPlayersShort = function getItemSubtitleForMaxPlayersShort(arg0) {
+export function getItemSubtitleForMaxPlayersShort(arg0) {
   let combined;
   if (arg0 > 0) {
     const _HermesInternal = HermesInternal;
@@ -32,8 +32,8 @@ export const getItemSubtitleForMaxPlayersShort = function getItemSubtitleForMaxP
     combined = intl.string(intl3.t.zMNEiF);
   }
   return combined;
-};
-export const getItemSubtitleForMaxPlayersShorter = function getItemSubtitleForMaxPlayersShorter(arg0) {
+}
+export function getItemSubtitleForMaxPlayersShorter(arg0) {
   let combined;
   if (arg0 > 0) {
     const _HermesInternal = HermesInternal;
@@ -43,4 +43,4 @@ export const getItemSubtitleForMaxPlayersShorter = function getItemSubtitleForMa
     combined = intl.string(intl3.t.zMNEiF);
   }
   return combined;
-};
+}

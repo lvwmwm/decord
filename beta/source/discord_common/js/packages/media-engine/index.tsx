@@ -1,15 +1,15 @@
-// Module ID: 5771
-// Function ID: 5772
+// Module ID: 5789
+// Function ID: 5790
 // Name: BaseConnectionEvent
-// Dependencies: [5750, 5772, 5844, 2, 5784, 5780]
+// Dependencies: [5768, 5790, 5862, 2, 5802, 5798]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 5771 (BaseConnectionEvent)
-import MediaEngineNative from "MediaEngineNative" /* 5772 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 5780 */;
-import BaseConnection from "BaseConnection" /* 5784 */;
-import MediaEngineDummy from "MediaEngineDummy" /* 5844 */;
-import Constants from "Constants" /* 5750 */;
+// Module 5789 (BaseConnectionEvent)
+import MediaEngineNative from "MediaEngineNative" /* 5790 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 5798 */;
+import BaseConnection from "BaseConnection" /* 5802 */;
+import MediaEngineDummy from "MediaEngineDummy" /* 5862 */;
+import Constants from "Constants" /* 5768 */;
 import size from "module_2" /* 2 */;
 
 const MediaEngineImplementations = Constants.MediaEngineImplementations;
@@ -24,7 +24,7 @@ export const DesktopSourceEndReason = { SOURCE_NOT_FOUND: 0, [0]: "SOURCE_NOT_FO
 export const FilterTargetType = { INPUT_DEVICE: "input_device", STREAM: "stream" };
 export const FilterSettingsGraph = { NONE: "", BACKGROUND_BLUR: "background_blur", BACKGROUND_REPLACEMENT: "background_replacement" };
 export const FilterSettingsKey = { CAMERA_BACKGROUND_PREVIEW: "cameraBackgroundPreview", CAMERA_BACKGROUND_LIVE: "cameraBackgroundLive" };
-export const determineMediaEngine = function determineMediaEngine() {
+export function determineMediaEngine() {
   const items = [, ];
   ({ NATIVE: arr[0], WEBRTC: arr[1] } = MediaEngineImplementations);
   const tmp = MediaEngineImplementations;
@@ -44,8 +44,8 @@ export const determineMediaEngine = function determineMediaEngine() {
     DUMMY = tmp.DUMMY;
   }
   return DUMMY;
-};
-export const initializeMediaEngine = function initializeMediaEngine(BaseConnectionEvent) {
+}
+export function initializeMediaEngine(BaseConnectionEvent) {
   let _default;
   if (MediaEngineImplementations.NATIVE === BaseConnectionEvent) {
     _default = MediaEngineNative.default;
@@ -57,4 +57,4 @@ export const initializeMediaEngine = function initializeMediaEngine(BaseConnecti
   }
   const _default1 = new _default();
   return _default1;
-};
+}

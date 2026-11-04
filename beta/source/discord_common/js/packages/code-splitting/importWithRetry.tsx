@@ -1,10 +1,10 @@
-// Module ID: 4824
-// Function ID: 4825
+// Module ID: 4832
+// Function ID: 4833
 // Name: importWithRetry
 // Dependencies: [5, 2]
 // Exports: awaitOnline, importWithRetry, setAwaitOnline
 
-// Module 4824 (importWithRetry)
+// Module 4832 (importWithRetry)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ let obj = function _importWithRetry() {
     performance.mark("importWithRetry:start", obj10);
     await c0();
     ({ createPromise: c0, webpackId: c1, name: c2 } = closure_0);
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -110,6 +110,6 @@ export function setAwaitOnline(arg0) {
   awaitOnline = arg0;
 }
 export { pausedPromise };
-export const importWithRetry = function importWithRetry() {
+export function importWithRetry() {
   return obj(...arguments);
-};
+}

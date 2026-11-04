@@ -1,11 +1,11 @@
-// Module ID: 7609
-// Function ID: 7610
+// Module ID: 7647
+// Function ID: 7648
 // Name: ClickstreamEvents
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 7609 (ClickstreamEvents)
-import Constants from "Constants" /* 1087 */;
+// Module 7647 (ClickstreamEvents)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let timestamp;
@@ -13,7 +13,7 @@ let timestamp;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");
 
-export const getClickstreamDrainEvent = function getClickstreamDrainEvent(arg0, arr) {
+export function getClickstreamDrainEvent(arg0, arr) {
   const date = new Date();
   if (AnalyticEvents.GUILD_VIEWED_CLICKSTREAM === arg0) {
     const obj2 = {
@@ -73,4 +73,4 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(arg0, 
     const error = new Error("getClickstreamDrainEvent: Unknown event: " + arg0);
     throw error;
   }
-};
+}

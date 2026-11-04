@@ -107,11 +107,12 @@ class Promise {
     }
   }
 }
-function handle(_y, _A) {
+function handle(promise, _A) {
+  let _y;
   let tmp7;
-  let tmp = _y;
-  let tmp2 = _y;
-  if (3 === _y._y) {
+  let tmp = promise;
+  let tmp2 = promise;
+  if (3 === promise._y) {
     do {
       _z = tmp._z;
       tmp = _z;
@@ -333,9 +334,10 @@ function resolve(_x, _z) {
 function Handler(fn, fn2, promise) {
 
 }
-function doResolve(arg0, _x) {
+function doResolve(fn, self) {
   let length;
   let tmp;
+  const _self = self;
   _z = false;
   let tmp2 = _z;
   if (!tmp2) {
@@ -344,28 +346,28 @@ function doResolve(arg0, _x) {
   }
   if (!tmp2) {
     _z = true;
-    _x._y = 2;
-    _x._z = _z;
+    self._y = 2;
+    self._z = _z;
     let obj = Promise;
     if (Promise._C) {
-      obj._C(_x, tmp4);
+      obj._C(self, tmp4);
     }
-    if (1 === _x._x) {
-      handle(_x, _x._A);
+    if (1 === self._x) {
+      handle(self, self._A);
       let tmp8 = null;
-      _x._A = null;
+      self._A = null;
     }
-    if (2 === _x._x) {
+    if (2 === self._x) {
       let num3 = 0;
-      if (0 < _x._A.length) {
+      if (0 < self._A.length) {
         do {
           let tmp9 = handle;
-          let tmp10 = handle(_x, _x._A[num3]);
+          let tmp10 = handle(self, self._A[num3]);
           num3 = num3 + 1;
-          length = _x._A.length;
+          length = self._A.length;
         } while (num3 < length);
       }
-      _x._A = null;
+      self._A = null;
     }
   }
 }

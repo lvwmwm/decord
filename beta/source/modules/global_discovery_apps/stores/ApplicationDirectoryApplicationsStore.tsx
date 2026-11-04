@@ -1,12 +1,12 @@
-// Module ID: 6842
-// Function ID: 6843
+// Module ID: 6882
+// Function ID: 6883
 // Name: ApplicationDirectoryApplicationsStore
-// Dependencies: [2024, 504, 584, 2]
+// Dependencies: [2016, 504, 572, 2]
 
-// Module 6842 (ApplicationDirectoryApplicationsStore)
+// Module 6882 (ApplicationDirectoryApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
 import size from "module_2" /* 2 */;
 
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };

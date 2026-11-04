@@ -1,19 +1,19 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12796
+// Function ID: 12797
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1392, 11861, 11864, 5057, 12390, 1128, 3862, 12548, 2]
+// Dependencies: [32, 17, 1383, 12146, 11063, 5068, 12637, 1113, 3868, 12797, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 12547 (conjureComposerPills)
+// Module 12796 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import UserUtils from "UserUtils" /* 5057 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11864 */;
-import ChatInputParser from "ChatInputParser" /* 12548 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import UserUtils from "UserUtils" /* 5068 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11063 */;
+import ChatInputParser from "ChatInputParser" /* 12797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1392 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 11861 */;
+import UserStore from "UserStore" /* 1383 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 12146 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -21,10 +21,10 @@ let map, set;
 const Image = react_native.Image;
 let result = size.fileFinishedImporting("modules/conjure/chat/native/conjureComposerPills.tsx");
 
-export const conjureFilePillIcon = function conjureFilePillIcon() {
+export function conjureFilePillIcon() {
   return Image.resolveAssetSource(AssetRegistryDefault).uri;
-};
-export const conjurePillText = function conjurePillText(current, name, combined) {
+}
+export function conjurePillText(current, name, combined) {
   combined = "\u2060" + name;
   let tmp2 = combined;
   if (current.has(combined)) {
@@ -54,8 +54,8 @@ export const conjurePillText = function conjurePillText(current, name, combined)
     }
   }
   return tmp2;
-};
-export const conjureUserPillLabel = function conjureUserPillLabel(id) {
+}
+export function conjureUserPillLabel(id) {
   const user = UserStore.getUser(id);
   let name = id;
   if (null != user) {
@@ -63,11 +63,11 @@ export const conjureUserPillLabel = function conjureUserPillLabel(id) {
     name = obj.getName(user);
   }
   return "@" + name;
-};
-export const decodeConjurePills = function decodeConjurePills(draft) {
+}
+export function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(12390).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(12637).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {
@@ -87,7 +87,7 @@ export const decodeConjurePills = function decodeConjurePills(draft) {
         }
         if (combined == null) {
           const intl = intl2.intl;
-          combined = intl.string(_modDef3862.ff9Q4C);
+          combined = intl.string(_modDef3868.ff9Q4C);
         }
       }
       const combined1 = "\u2060" + combined;
@@ -130,14 +130,14 @@ export const decodeConjurePills = function decodeConjurePills(draft) {
     pills: map
   };
   return obj;
-};
-export const encodeConjurePills = function encodeConjurePills(chat, current) {
-  const items = [...current.keys()];
+}
+export function encodeConjurePills(current, current2) {
+  const items = [...current2.keys()];
   const sorted = items.sort((arg0, arg1) => arg1.length - arg0.length);
   return sorted.reduce((acc, item) => {
     const parts = acc.split(item);
     const join = parts.join;
-    const value = current.get(item);
+    const value = current2.get(item);
     let raw;
     if (value != null) {
       raw = value.raw;
@@ -146,9 +146,9 @@ export const encodeConjurePills = function encodeConjurePills(chat, current) {
       raw = item;
     }
     return join(raw);
-  }, chat);
-};
-export const conjurePillNodes = function conjurePillNodes(arr, current2, style) {
+  }, current);
+}
+export function conjurePillNodes(arr, current2, style) {
   let first;
   let index1;
   let tmp6;
@@ -181,4 +181,4 @@ export const conjurePillNodes = function conjurePillNodes(arr, current2, style) 
     continue;
   }
   return items;
-};
+}

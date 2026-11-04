@@ -1,10 +1,10 @@
-// Module ID: 13238
-// Function ID: 13239
+// Module ID: 13869
+// Function ID: 13870
 // Name: directory_channels/GuildDirectoryUtils
-// Dependencies: [5, 19, 21, 13233, 5941, 13239, 2002, 2]
+// Dependencies: [5, 19, 21, 13864, 5959, 13870, 1994, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 13238 (directory_channels/GuildDirectoryUtils)
+// Module 13869 (directory_channels/GuildDirectoryUtils)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -41,15 +41,15 @@ let obj = function _onAddDirectoryGuildEntry() {
       isDismissable: false
     };
     obj.openLazy(obj8);
-    await "IconComponent";
+    await "HermesInternal";
     ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = closure_0);
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryUtils.tsx");
 
-export const onAddDirectoryGuildEntry = function onAddDirectoryGuildEntry() {
+export function onAddDirectoryGuildEntry() {
   return obj(...arguments);
-};
+}

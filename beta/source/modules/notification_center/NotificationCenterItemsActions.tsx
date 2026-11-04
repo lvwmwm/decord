@@ -1,19 +1,19 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 18488
+// Function ID: 18489
 // Name: NotificationCenterItemsActions
-// Dependencies: [5, 6819, 1087, 584, 6708, 1275, 4867, 6821, 1297, 4831, 2]
+// Dependencies: [5, 6858, 1072, 572, 6747, 1260, 4875, 6860, 1282, 4839, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 17897 (NotificationCenterItemsActions)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6821 */;
+// Module 18488 (NotificationCenterItemsActions)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6860 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6819 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,7 +44,7 @@ let obj = function _fetchNotificationCenterItems() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ let obj = function _fetchNotificationCenterItems() {
             return obj;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -189,7 +189,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -238,7 +238,7 @@ obj = function _markNotificationCenterRemoteItemAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -267,7 +267,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -325,7 +325,7 @@ obj = function _bulkMarkNotificationCenterItemsAcked() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -359,7 +359,7 @@ obj = function _deleteNotificationCenterItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -414,7 +414,7 @@ obj = function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           closure_3 = tmp16;
@@ -433,24 +433,24 @@ obj = function _deleteNotificationCenterItem() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
 
-export const setNotificationCenterActive = function setNotificationCenterActive(active) {
+export function setNotificationCenterActive(active) {
   obj = DispatcherDefault;
   const obj2 = { type: "NOTIFICATION_CENTER_SET_ACTIVE", active };
   obj.dispatch(obj2);
-};
-export const setNotificationCenterTabFocused = function setNotificationCenterTabFocused(isFocused) {
+}
+export function setNotificationCenterTabFocused(isFocused) {
   obj = DispatcherDefault;
   const obj2 = { type: "NOTIFICATION_CENTER_TAB_FOCUSED", focused: isFocused };
   obj.dispatch(obj2);
-};
-export const resetNotificationCenter = function resetNotificationCenter() {
+}
+export function resetNotificationCenter() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "RESET_NOTIFICATION_CENTER" });
-};
-export const fetchNotificationCenterItems = function fetchNotificationCenterItems() {
+}
+export function fetchNotificationCenterItems() {
   return obj(...arguments);
-};
-export const markNotificationCenterItemAcked = function markNotificationCenterItemAcked(local_id) {
+}
+export function markNotificationCenterItemAcked(local_id) {
   let items1;
   if (null != local_id.local_id) {
     const items = [local_id.local_id];
@@ -469,23 +469,23 @@ export const markNotificationCenterItemAcked = function markNotificationCenterIt
       markNotificationCenterRemoteItemAcked(local_id.id);
     }
   }
-};
-export const markNotificationCenterLocalItemsAcked = function markNotificationCenterLocalItemsAcked(found) {
+}
+export function markNotificationCenterLocalItemsAcked(found) {
   obj = DispatcherDefault;
   const obj2 = { type: "NOTIFICATION_CENTER_ITEMS_LOCAL_ACK", localIds: found };
   obj.dispatch(obj2);
-};
+}
 export { markNotificationCenterRemoteItemAcked };
-export const markNotificationCenterMentionAcked = function markNotificationCenterMentionAcked(arg0) {
+export function markNotificationCenterMentionAcked(arg0) {
   let items;
   const obj2 = { type: "NOTIFICATION_CENTER_ITEMS_ACK", optimistic: true, ids: items };
   items = [arg0];
   obj = DispatcherDefault;
   obj.dispatch(obj2);
-};
-export const bulkMarkNotificationCenterItemsAcked = function bulkMarkNotificationCenterItemsAcked() {
+}
+export function bulkMarkNotificationCenterItemsAcked() {
   return obj(...arguments);
-};
-export const deleteNotificationCenterItem = function deleteNotificationCenterItem() {
+}
+export function deleteNotificationCenterItem() {
   return obj(...arguments);
-};
+}

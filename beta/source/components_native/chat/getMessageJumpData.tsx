@@ -1,87 +1,22 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11553
+// Function ID: 11554
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1501, 1392, 558, 576, 1384, 1899, 5233, 11, 2]
-// Exports: default
+// Dependencies: [32, 19, 1493, 1383, 1375, 1891, 5249, 11, 2]
+// Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 11253 (getMessageJumpData)
+// Module 11553 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import flow_Client from "flow/Client" /* 5233 */;
+import flow_Client from "flow/Client" /* 5249 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
-import UserStore from "UserStore" /* 1392 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1493 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
 let tmp;
-const useSystemKeyboardHeight = tmp(1899);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageJumpAndroidKeyboardHeight() {
-  let closure_0;
-  let first;
-  let first1;
-  let tmp7;
-  let tmp8;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let num2 = 0;
-    const tmpResult = require("PlatformUtils");
-    if (tmpResult.isAndroid()) {
-      const tmpResult2 = require("useSystemKeyboardHeight");
-      num2 = tmpResult2.getSystemKeyboardHeight();
-    }
-    cResult[0] = num2;
-    first = num2;
-  } else {
-    first = cResult[0];
-  }
-  [first1, _require] = react.useState(first);
-  const obj4 = react;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
-      return subscribeToKeyboardUIStore((keyboardHeight) => {
-        const obj = closure_0(dependencyMap[6]);
-        if (obj.isAndroid()) {
-          closure_1_0(keyboardHeight.keyboardHeight);
-        }
-      });
-    };
-    const items = [];
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp8 = items;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  const effect = obj4.useEffect(tmp7, tmp8);
-  return first1;
-}) : (function useMessageJumpAndroidKeyboardHeight() {
-  let require;
-  let tmp4;
-  let obj = react;
-  const useState = react.useState;
-  let num = 0;
-  const obj2 = PlatformUtils;
-  if (obj2.isAndroid()) {
-    const tmpResult = useSystemKeyboardHeight;
-    num = tmpResult.getSystemKeyboardHeight();
-  }
-  [tmp4, require] = _slicedToArray(useState(num), 2);
-  const tmp3 = _slicedToArray(useState(num), 2);
-  const effect = obj.useEffect(() => subscribeToKeyboardUIStore((keyboardHeight) => {
-    const obj = require("PlatformUtils");
-    if (obj.isAndroid()) {
-      closure_1_0(keyboardHeight.keyboardHeight);
-    }
-  }), []);
-  return tmp4;
-});
+let tmp4;
+const PlatformUtils = tmp4(1375);
+const useSystemKeyboardHeight = tmp(1891);
 const result = size.fileFinishedImporting("components_native/chat/getMessageJumpData.tsx");
 
 export default function getMessageJumpData(messages, isAtBottom, messages2) {
@@ -179,4 +114,23 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
     tmp12 = null;
   }
 };
-export const useMessageJumpAndroidKeyboardHeight = tmp2;
+export function useMessageJumpAndroidKeyboardHeight() {
+  let tmp4;
+  let obj = react;
+  const useState = react.useState;
+  let num = 0;
+  const obj2 = PlatformUtils;
+  if (obj2.isAndroid()) {
+    const tmpResult = useSystemKeyboardHeight;
+    num = tmpResult.getSystemKeyboardHeight();
+  }
+  [tmp4, require] = _slicedToArray(useState(num), 2);
+  const tmp3 = _slicedToArray(useState(num), 2);
+  const effect = obj.useEffect(() => subscribeToKeyboardUIStore((keyboardHeight) => {
+    const obj = PlatformUtils;
+    if (obj.isAndroid()) {
+      closure_1_0(keyboardHeight.keyboardHeight);
+    }
+  }), []);
+  return tmp4;
+}

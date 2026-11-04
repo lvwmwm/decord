@@ -1,47 +1,18 @@
-// Module ID: 17287
-// Function ID: 17288
+// Module ID: 17891
+// Function ID: 17892
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [5764, 8364, 558, 576, 504, 17288, 11240, 1128, 2]
+// Dependencies: [5782, 8432, 504, 17892, 11540, 1113, 2]
 
-// Module 17287 (SecureFramesPersistentCodesSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 17288 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5764 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17891 (SecureFramesPersistentCodesSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 17892 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5782 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesPersistentCodesValue() {
-  let persistentCodesEnabled;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SecureFramesPersistedStore];
-    const fn = function n() {
-      return persistentCodesEnabled.getPersistentCodesEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSecureFramesPersistentCodesValue() {
-  let persistentCodesEnabled;
-  const items = [SecureFramesPersistedStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -52,7 +23,12 @@ let obj = {
     return intl.string(intl2.t.opw5ls);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: tmp2,
+  useValue: function useSecureFramesPersistentCodesValue() {
+    let persistentCodesEnabled;
+    const items = [SecureFramesPersistedStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+  },
   onValueChange: function handleSecureFramesPersistentCodesToggle(arg0) {
     const obj = updatePersistentCodesEnabled;
     const result = obj.updatePersistentCodesEnabled(arg0);

@@ -1,21 +1,21 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14605
+// Function ID: 14606
 // Name: MobileRoadblockCtaUtils
-// Dependencies: [1394, 1128, 2053, 9833, 14081, 2]
+// Dependencies: [1385, 1113, 2047, 9914, 14606, 2]
 // Exports: formatMobileRoadblockOfferText, getMobileRoadblockButtonText
 
-// Module 14080 (MobileRoadblockCtaUtils)
-import intl3 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumUtils from "PremiumUtils" /* 2053 */;
-import getTrialCtaOverride from "getTrialCtaOverride" /* 9833 */;
-import MobileRoadblockOfferCtaExperiment from "MobileRoadblockOfferCtaExperiment" /* 14081 */;
+// Module 14605 (MobileRoadblockCtaUtils)
+import intl3 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import getTrialCtaOverride from "getTrialCtaOverride" /* 9914 */;
+import MobileRoadblockOfferCtaExperiment from "MobileRoadblockOfferCtaExperiment" /* 14606 */;
 import size from "module_2" /* 2 */;
 
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 let result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/MobileRoadblockCtaUtils.tsx");
 
-export const formatMobileRoadblockOfferText = function formatMobileRoadblockOfferText(arg0) {
+export function formatMobileRoadblockOfferText(arg0) {
   let discountOffer;
   let subscriptionTier;
   let trialOffer;
@@ -49,8 +49,8 @@ export const formatMobileRoadblockOfferText = function formatMobileRoadblockOffe
     }
     return result;
   }
-};
-export const getMobileRoadblockButtonText = function getMobileRoadblockButtonText(arg0) {
+}
+export function getMobileRoadblockButtonText(arg0) {
   let discountOffer;
   let subscriptionTier;
   let trialOffer;
@@ -97,11 +97,11 @@ export const getMobileRoadblockButtonText = function getMobileRoadblockButtonTex
     if (null != formatToPlainStringResult) {
       const obj4 = MobileRoadblockOfferCtaExperiment;
       if (!obj4.getMobileRoadblockOfferCtaEnabled()) {
-        const intl2 = tmp9(1128).intl;
-        formatToPlainStringResult = intl2.string(tmp9(1128).t["8x0jKT"]);
+        const intl2 = tmp9(1113).intl;
+        formatToPlainStringResult = intl2.string(tmp9(1113).t["8x0jKT"]);
       }
       tmp8 = formatToPlainStringResult;
     }
     return tmp8;
   }
-};
+}

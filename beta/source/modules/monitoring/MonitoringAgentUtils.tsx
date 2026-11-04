@@ -1,20 +1,20 @@
-// Module ID: 6504
-// Function ID: 6505
+// Module ID: 6544
+// Function ID: 6545
 // Name: MonitoringAgentUtils
-// Dependencies: [1370, 2]
+// Dependencies: [1355, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 6504 (MonitoringAgentUtils)
-import DesignIds from "DesignIds" /* 1370 */;
+// Module 6544 (MonitoringAgentUtils)
+import DesignIds from "DesignIds" /* 1355 */;
 import size from "module_2" /* 2 */;
 
 const obj = { design_id: DesignIds.DesignIds.DESIGN_TABS_IA };
 const result = size.fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");
 
-export const addGlobalTag = function addGlobalTag(arg0, arg1) {
+export function addGlobalTag(arg0, arg1) {
   obj[arg0] = arg1;
-};
-export const getGlobalTagsArray = function getGlobalTagsArray() {
+}
+export function getGlobalTagsArray() {
   const keys = Object.keys(obj);
   return keys.map((item) => "" + item + ":" + obj[item]);
-};
+}

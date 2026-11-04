@@ -1,17 +1,17 @@
-// Module ID: 6902
-// Function ID: 6903
+// Module ID: 6943
+// Function ID: 6944
 // Name: FileExtensionUtils
-// Dependencies: [1386, 2]
+// Dependencies: [1377, 2]
 // Exports: decideFileExtension, getExtensionFromContentType
 
-// Module 6902 (FileExtensionUtils)
-import URLUtilsDefault from "URLUtils" /* 1386 */;
+// Module 6943 (FileExtensionUtils)
+import URLUtilsDefault from "URLUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };
 const result = size.fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 
-export const getExtensionFromContentType = function getExtensionFromContentType(str) {
+export function getExtensionFromContentType(str) {
   if (null != str) {
     str = str.toLowerCase();
     const obj = /^(image|video)\//;
@@ -32,8 +32,8 @@ export const getExtensionFromContentType = function getExtensionFromContentType(
       }
     }
   }
-};
-export const decideFileExtension = function decideFileExtension(uri, contentType, arg2) {
+}
+export function decideFileExtension(uri, contentType, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -111,4 +111,4 @@ export const decideFileExtension = function decideFileExtension(uri, contentType
     tmp = tmp15;
   }
   return tmp;
-};
+}

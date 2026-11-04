@@ -1,18 +1,18 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 14358
+// Function ID: 14359
 // Name: CreateGuildActionCreators
-// Dependencies: [4933, 1087, 9082, 2]
+// Dependencies: [4944, 1072, 9118, 2]
 // Exports: showInstantInviteModal
 
-// Module 13724 (CreateGuildActionCreators)
-import Constants from "Constants" /* 1087 */;
-import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+// Module 14358 (CreateGuildActionCreators)
+import Constants from "Constants" /* 1072 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
 import size from "module_2" /* 2 */;
 
 const InstantInviteSources = Constants.InstantInviteSources;
 let result = size.fileFinishedImporting("actions/native/CreateGuildActionCreators.tsx");
 
-export const showInstantInviteModal = function showInstantInviteModal(arg0) {
+export function showInstantInviteModal(arg0) {
   let closure_0 = arg0;
   let result = GuildChannelStore.addConditionalChangeListener(() => {
     const defaultChannel = GuildChannelStore.getDefaultChannel(closure_0);
@@ -28,4 +28,4 @@ export const showInstantInviteModal = function showInstantInviteModal(arg0) {
     }
     return flag;
   });
-};
+}

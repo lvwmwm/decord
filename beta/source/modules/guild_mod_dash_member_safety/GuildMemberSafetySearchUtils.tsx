@@ -1,16 +1,16 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7699
+// Function ID: 7700
 // Name: GuildMemberSafetySearchUtils
-// Dependencies: [7662, 2]
+// Dependencies: [7700, 2]
 // Exports: splitQuery
 
-// Module 7661 (GuildMemberSafetySearchUtils)
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7662 */;
+// Module 7699 (GuildMemberSafetySearchUtils)
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7700 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");
 
-export const splitQuery = function splitQuery(query) {
+export function splitQuery(query) {
   const parts = query.split(",");
   const mapped = parts.map((item) => item.trim());
   const items = [];
@@ -25,4 +25,4 @@ export const splitQuery = function splitQuery(query) {
   });
   const items2 = [items1, items];
   return items2;
-};
+}

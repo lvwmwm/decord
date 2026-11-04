@@ -1,11 +1,11 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16989
+// Function ID: 16990
 // Name: Shopfront
-// Dependencies: [5, 1087, 1297, 1351, 7478, 2]
+// Dependencies: [5, 1072, 1282, 1336, 7519, 2]
 // Exports: search
 
-// Module 16395 (Shopfront)
-import Constants from "Constants" /* 1087 */;
+// Module 16989 (Shopfront)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _search() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _search() {
               aPIError = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -111,6 +111,6 @@ let obj = function _search() {
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/collectibles/api/Shopfront.tsx");
 
-export const search = function search() {
+export function search() {
   return obj(...arguments);
-};
+}

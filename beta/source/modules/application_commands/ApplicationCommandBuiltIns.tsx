@@ -1,27 +1,27 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 9770
+// Function ID: 9771
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 4855, 4935, 1392, 6015, 1087, 9691, 4917, 5008, 5666, 1128, 9692, 2000, 4831, 9693, 9694, 7401, 9695, 1108, 9696, 7598, 7787, 6862, 5057, 1104, 12814, 2049, 7443, 38, 7380, 14087, 2]
+// Dependencies: [5, 4863, 4946, 1383, 6035, 1072, 9771, 4928, 5019, 5683, 1113, 9772, 1992, 4839, 9774, 9775, 7443, 9776, 1093, 9777, 7636, 7824, 6902, 5068, 1089, 13262, 2042, 7485, 38, 7422, 14612, 2]
 // Exports: getBuiltInCommands
 
-// Module 9690 (ApplicationCommandBuiltIns)
-import Server from "Server" /* 2000 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7380 */;
-import ThreadHooks from "ThreadHooks" /* 7401 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9692 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9693 */;
+// Module 9770 (ApplicationCommandBuiltIns)
+import Server from "Server" /* 1992 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4928 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6035 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7422 */;
+import ThreadHooks from "ThreadHooks" /* 7443 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9772 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9774 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
-import DiceRollConstants from "DiceRollConstants" /* 9691 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
+import DiceRollConstants from "DiceRollConstants" /* 9771 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -592,7 +592,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -615,7 +615,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -661,7 +661,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
           const obj7 = closure_133_1(closure_133_2[21]);
           sendMessage(id, obj7.parse(id, closure_3), true, obj8);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp27) {
         c7 = 3;
@@ -707,7 +707,7 @@ const obj21 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -772,7 +772,7 @@ const obj21 = {
               sendBotMessage(id2, formatToPlainString(v9wzHDV, obj5));
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp20) {
             c4 = 3;
             throw tmp20;
@@ -894,7 +894,7 @@ const obj24 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -971,7 +971,7 @@ const obj24 = {
               sendBotMessage(id, formatToPlainString(YflWdM, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -1159,7 +1159,7 @@ const obj28 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -1237,7 +1237,7 @@ const obj28 = {
               sendBotMessage(id, formatToPlainString(BbRV6o, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp19) {
             c5 = 3;
             throw tmp19;
@@ -1383,7 +1383,7 @@ const obj32 = {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -1426,7 +1426,7 @@ const obj32 = {
               const obj7 = tmp(c2[21]);
               sendMessage(id, obj7.parse(tmp, closure_129_2), true, obj8);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp8) {
             c3 = 3;
@@ -1624,7 +1624,7 @@ export const PLATFORM_COMMANDS = application_commands_ApplicationCommandBuiltIns
 export const BUILT_IN_SECTIONS = obj;
 export const BUILT_IN_COMMANDS = items;
 export const BUILT_IN_COMMANDS_ORIGINAL = found;
-export const getBuiltInCommands = function getBuiltInCommands(commandTypes, arg1, arg2) {
+export function getBuiltInCommands(commandTypes, arg1, arg2) {
   let closure_1;
   let enabled;
   importDefault = arg2;
@@ -1649,4 +1649,4 @@ export const getBuiltInCommands = function getBuiltInCommands(commandTypes, arg1
     }
     return hasItem;
   });
-};
+}

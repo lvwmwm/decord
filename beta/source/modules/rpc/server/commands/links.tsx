@@ -1,29 +1,29 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 16321
+// Function ID: 16322
 // Name: links
-// Dependencies: [5, 4854, 2045, 6410, 1087, 2026, 1267, 4924, 1384, 15771, 15744, 15772, 5009, 15773, 5688, 8892, 15774, 9296, 15759, 11510, 11507, 7522, 2031, 15775, 15778, 2]
+// Dependencies: [5, 4862, 2038, 6450, 1072, 2018, 1252, 4935, 1375, 16322, 16293, 16323, 5020, 16324, 5705, 8940, 16325, 9333, 16301, 11813, 11810, 7563, 2024, 16326, 16329, 2]
 
-// Module 15770 (links)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4924 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5009 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11507 */;
-import RPCHelpers from "RPCHelpers" /* 11510 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15744 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15771 */;
-import internalDeepLinks from "internalDeepLinks" /* 15772 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15773 */;
-import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 15775 */;
-import getFrameChannelIdDefault from "getFrameChannelId" /* 15778 */;
+// Module 16321 (links)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4935 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5020 */;
+import RPCErrorDefault from "RPCError" /* 9333 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11810 */;
+import RPCHelpers from "RPCHelpers" /* 11813 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16293 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16322 */;
+import internalDeepLinks from "internalDeepLinks" /* 16323 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16324 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16326 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 16329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
-import Constants_mod from "Constants" /* 6410 */;
-import Constants_mod2 from "Constants" /* 1087 */;
-import Constants_mod3 from "Constants" /* 2026 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15759 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
+import Constants_mod from "Constants" /* 6450 */;
+import Constants_mod2 from "Constants" /* 1072 */;
+import Constants_mod3 from "Constants" /* 2018 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16301 */;
 import size from "module_2" /* 2 */;
 
 let c2, currentEmbeddedActivity, getApplication;
@@ -39,7 +39,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const openUserSettings = tmp(7522);
+const openUserSettings = tmp(7563);
 function trackExternalLink(application, arg1, arg2) {
   const str = new URL(arg1);
   const tmp = "client.vibeyard.tools" === str.hostname && "/link" === str.pathname;
@@ -82,7 +82,7 @@ let obj = function _openExternalLink() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -424,9 +424,9 @@ let obj4 = {
     ({ custom_id: importDefault, message: dependencyMap, link_id: _asyncToGenerator } = socket.args);
     let tmp2 = dependencyMap;
     let tmp = socket;
-    obj = socket(11510);
+    obj = socket(11813);
     let result = obj.validatePostMessageTransport(socket.transport);
-    let obj2 = socket(11510);
+    let obj2 = socket(11813);
     const validateApplicationResult = obj2.validateApplication(socket.application);
     let c4 = validateApplicationResult;
     if (null == validateApplicationResult) {
@@ -436,7 +436,7 @@ let obj4 = {
       const tmp16 = new RPCErrorDefault(obj3, "No application.");
       throw tmp16;
     } else {
-      const tmpResult = tmp(2031);
+      const tmpResult = tmp(2024);
       if (tmpResult.isEmbeddedApplication(socket.application)) {
         const self3 = this;
         const self4 = this;

@@ -1,37 +1,37 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13430
+// Function ID: 13431
 // Name: ContentInventoryActionCreators
-// Dependencies: [4855, 4906, 5034, 1392, 12981, 1087, 584, 1267, 12982, 7310, 2]
+// Dependencies: [4863, 4917, 5045, 1383, 13431, 1072, 572, 1252, 13432, 7351, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
-// Module 12980 (ContentInventoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
-import ContentInventoryPlatformActionCreatorsAll from "ContentInventoryPlatformActionCreators" /* 12982 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import UserStore from "UserStore" /* 1392 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 12981 */;
+// Module 13430 (ContentInventoryActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import ContentInventoryPlatformActionCreatorsAll from "ContentInventoryPlatformActionCreators" /* 13432 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import UserStore from "UserStore" /* 1383 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13431 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryActionCreators.tsx");
 
-export const toggleMemberListContentFeedHidden = function toggleMemberListContentFeedHidden() {
+export function toggleMemberListContentFeedHidden() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN" });
   const obj2 = AnalyticsUtilsDefault;
   const obj3 = { channel_id: SelectedChannelStore.getChannelId(), guild_id: SelectedGuildStore.getGuildId(), hidden: ContentInventoryPersistedStore.hidden };
   obj2.track(AnalyticEvents.MEMBERLIST_CONTENT_FEED_HIDDEN, obj3);
-};
-export const onGameProfileOpen = function onGameProfileOpen() {
+}
+export function onGameProfileOpen() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "GAME_PROFILE_OPEN" });
-};
-export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEntryEmbed(authorId) {
+}
+export function onTapContentInventoryEntryEmbed(authorId) {
   let id;
   let items1;
   let message;
@@ -59,8 +59,8 @@ export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEnt
       showUserProfile(obj);
     }
   }
-};
-export const clearDeleteHistoryError = function clearDeleteHistoryError() {
+}
+export function clearDeleteHistoryError() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR" });
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 7540
-// Function ID: 7541
+// Module ID: 7582
+// Function ID: 7583
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1087, 584, 1297, 6415, 2]
+// Dependencies: [5, 1072, 572, 1282, 6455, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7540 (EntitlementActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7582 (EntitlementActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,9 +49,9 @@ let obj = function _fetchUserEntitlements() {
         obj.dispatch(obj10);
         c4 = 0;
       }
-      await "IconComponent";
+      await "HermesInternal";
       entitlementType = tmp36.entitlementType;
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -71,7 +71,7 @@ obj = function _fetchGiftableEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ obj = function _fetchGiftableEntitlements() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;
@@ -138,7 +138,7 @@ obj = function _fetchGiftableEntitlements() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/EntitlementActionCreators.tsx");
 
-export const fetchUserEntitlementsForApplication = function fetchUserEntitlementsForApplication(id, arg1) {
+export function fetchUserEntitlementsForApplication(id, arg1) {
   let applicationId;
   _require = id;
   let flag = arg1;
@@ -162,10 +162,10 @@ export const fetchUserEntitlementsForApplication = function fetchUserEntitlement
     const obj2 = { type: "ENTITLEMENT_FETCH_APPLICATION_FAIL", applicationId };
     obj.dispatch(obj2);
   });
-};
-export const fetchUserEntitlements = function fetchUserEntitlements() {
+}
+export function fetchUserEntitlements() {
   return obj(...arguments);
-};
-export const fetchGiftableEntitlements = function fetchGiftableEntitlements() {
+}
+export function fetchGiftableEntitlements() {
   return obj(...arguments);
-};
+}

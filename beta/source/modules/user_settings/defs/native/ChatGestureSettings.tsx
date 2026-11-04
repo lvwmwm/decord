@@ -1,39 +1,31 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11539
+// Function ID: 11540
 // Name: ChatGestureSettings
-// Dependencies: [8364, 1087, 1211, 1128, 1267, 4831, 558, 11240, 2]
-// Exports: getSwipeToReplySettingValue
+// Dependencies: [8432, 1072, 1196, 1113, 1252, 4839, 11540, 2]
+// Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 11239 (ChatGestureSettings)
-import intl4 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 11539 (ChatGestureSettings)
+import intl4 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import Constants from "Constants" /* 1072 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
+function useSwipeToReplySettingValue() {
+  const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
+  let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
+  if (SWIPE_RIGHT_TO_LEFT_REPLY === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
+    SWIPE_RIGHT_TO_LEFT_REPLY = preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
+  }
+  return SWIPE_RIGHT_TO_LEFT_REPLY;
+}
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
-  let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
-  if (SWIPE_RIGHT_TO_LEFT_REPLY === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
-    SWIPE_RIGHT_TO_LEFT_REPLY = preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
-  }
-  return SWIPE_RIGHT_TO_LEFT_REPLY;
-}) : (function useSwipeToReplySettingValue() {
-  const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
-  let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();
-  if (SWIPE_RIGHT_TO_LEFT_REPLY === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
-    SWIPE_RIGHT_TO_LEFT_REPLY = preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
-  }
-  return SWIPE_RIGHT_TO_LEFT_REPLY;
-});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
@@ -45,7 +37,7 @@ let obj = {
     return items;
   },
   parent: MobileUserSettings.SWIPE_RIGHT_TO_LEFT,
-  useValue: tmp3,
+  useValue: useSwipeToReplySettingValue,
   onValueChange: function onSwipeToReplyValueChange(arg0) {
     let obj3;
     const NumberResult = Number(arg0);
@@ -75,12 +67,12 @@ const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ChatGestureSettings.tsx");
 
 export default radio;
-export const useSwipeToReplySettingValue = tmp3;
-export const getSwipeToReplySettingValue = function getSwipeToReplySettingValue() {
+export { useSwipeToReplySettingValue };
+export function getSwipeToReplySettingValue() {
   const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.getSetting();
   if (SWIPE_RIGHT_TO_LEFT_REPLY === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET) {
     SWIPE_RIGHT_TO_LEFT_REPLY = preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY;
   }
   return SWIPE_RIGHT_TO_LEFT_REPLY;
-};
+}

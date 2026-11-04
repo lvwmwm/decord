@@ -1,10 +1,10 @@
-// Module ID: 15340
-// Function ID: 15341
+// Module ID: 15888
+// Function ID: 15889
 // Name: StreamZeroVadLeadingExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 
-// Module 15340 (StreamZeroVadLeadingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15888 (StreamZeroVadLeadingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

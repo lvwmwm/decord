@@ -1,12 +1,12 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9076
+// Function ID: 9077
 // Name: GlobalDiscoveryServersConstants
-// Dependencies: [1104, 1128, 2]
+// Dependencies: [1089, 1113, 2]
 // Exports: getLanguageOptions
 
-// Module 9039 (GlobalDiscoveryServersConstants)
-import DurationsDefault from "Durations" /* 1104 */;
-import intl2 from "intl" /* 1128 */;
+// Module 9076 (GlobalDiscoveryServersConstants)
+import DurationsDefault from "Durations" /* 1089 */;
+import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 let obj = { FEATURED: "featured", GAMING: "gaming", MUSIC: "music", ENTERTAINMENT: "entertainment", TECH: "tech", EDUCATION: "education", HUBS: "hubs" };
@@ -36,7 +36,7 @@ export const FEATURED_GUILDS_CACHE_DURATION = result;
 export const FEATURED_GUILDS_SEARCH_OPTIONS = { categoryId: -1 };
 export const CategoryId = obj2;
 export const DISCOVERY_SIDEBAR_CATEGORIES = items1;
-export const getLanguageOptions = function getLanguageOptions() {
+export function getLanguageOptions() {
   let obj = intl2;
   const languages = obj.getLanguages();
   const found = languages.filter((code) => !closure_1_2.includes(code.code));
@@ -51,4 +51,4 @@ export const getLanguageOptions = function getLanguageOptions() {
     }
     return tmp;
   });
-};
+}

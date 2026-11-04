@@ -1,16 +1,16 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 13909
+// Function ID: 13910
 // Name: AbstractSearchSessionAnalyticsManager
-// Dependencies: [1281, 13262, 2]
+// Dependencies: [1266, 13893, 2]
 
-// Module 13278 (AbstractSearchSessionAnalyticsManager)
-import SearchUtils from "SearchUtils" /* 13262 */;
+// Module 13909 (AbstractSearchSessionAnalyticsManager)
+import SearchUtils from "SearchUtils" /* 13893 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const v1 = tmp(1281);
+const v1 = tmp(1266);
 let result = size.fileFinishedImporting("modules/search/managers/AbstractSearchSessionAnalyticsManager.tsx");
 class AbstractSearchSessionAnalyticsManager {
   constructor() {

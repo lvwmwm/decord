@@ -1,20 +1,20 @@
-// Module ID: 18978
-// Function ID: 18979
+// Module ID: 19611
+// Function ID: 19612
 // Name: showOverdueRemindersToast
-// Dependencies: [10109, 13836, 5695, 1128, 5723, 2]
+// Dependencies: [10191, 11151, 5712, 1113, 5740, 2]
 // Exports: showOverdueRemindersToast
 
-// Module 18978 (showOverdueRemindersToast)
-import intl2 from "intl" /* 1128 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
-import ClockIcon from "ClockIcon" /* 5723 */;
-import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 13836 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10109 */;
+// Module 19611 (showOverdueRemindersToast)
+import intl2 from "intl" /* 1113 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ClockIcon from "ClockIcon" /* 5740 */;
+import MessageRemindersSeenStorage from "MessageRemindersSeenStorage" /* 11151 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/message_reminders/native/showOverdueRemindersToast.tsx");
 
-export const showOverdueRemindersToast = function showOverdueRemindersToast() {
+export function showOverdueRemindersToast() {
   let intl;
   let obj4;
   const overdueMessageReminderCount = SavedMessagesStore.getOverdueMessageReminderCount();
@@ -28,9 +28,9 @@ export const showOverdueRemindersToast = function showOverdueRemindersToast() {
       const obj3 = { text: intl.formatToPlainString(intl2.t.yBmFPA, obj4), icon: ClockIcon.ClockIcon, position: "bottom", duration: 5000 };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
-      intl = tmp3(1128).intl;
+      intl = tmp3(1113).intl;
       obj4 = { count: overdueMessageReminderCount };
       open("overdue-message-reminders", obj3);
     }
   }
-};
+}

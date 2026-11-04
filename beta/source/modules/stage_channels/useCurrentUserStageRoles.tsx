@@ -1,54 +1,20 @@
-// Module ID: 11550
-// Function ID: 11551
+// Module ID: 11852
+// Function ID: 11853
 // Name: useCurrentUserStageRoles
-// Dependencies: [502, 6718, 558, 576, 504, 2]
+// Dependencies: [502, 6757, 504, 2]
+// Exports: default
 
-// Module 11550 (useCurrentUserStageRoles)
+// Module 11852 (useCurrentUserStageRoles)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6718 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6757 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserStageRoles(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  dependencyMap = tmp4;
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [StageChannelRoleStore, AuthenticationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === (undefined !== arg1 && arg1)) {
-    let tmp8;
-    let tmp9;
-    if (cResult[2] === arg0) {
-      tmp8 = cResult[3];
-      tmp9 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-  }
-  const fn = function c() {
-    return StageChannelRoleStore.getPermissionsForUser(AuthenticationStore.getId(), closure_0, closure_1);
-  };
-  const items1 = [arg0, undefined !== arg1 && arg1];
-  cResult[1] = undefined !== arg1 && arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp9 = items1;
-  tmp8 = fn;
-}) : (function useCurrentUserStageRoles(arg0) {
+const result = size.fileFinishedImporting("modules/stage_channels/useCurrentUserStageRoles.tsx");
+
+export default function useCurrentUserStageRoles(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;
@@ -59,7 +25,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrent
   const items1 = [arg0, flag];
   const obj = require("get initialized");
   return obj.useStateFromStoresObject(items, () => StageChannelRoleStore.getPermissionsForUser(AuthenticationStore.getId(), closure_0, flag), items1);
-});
-const result = size.fileFinishedImporting("modules/stage_channels/useCurrentUserStageRoles.tsx");
-
-export default tmp2;
+};

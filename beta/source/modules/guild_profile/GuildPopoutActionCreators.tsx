@@ -1,13 +1,13 @@
-// Module ID: 15255
-// Function ID: 15256
+// Module ID: 15800
+// Function ID: 15801
 // Name: GuildPopoutActionCreators
-// Dependencies: [5, 1087, 584, 1297, 2]
+// Dependencies: [5, 1072, 572, 1282, 2]
 // Exports: fetchGuildForPopout
 
-// Module 15255 (GuildPopoutActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 15800 (GuildPopoutActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _fetchGuildForPopout() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _fetchGuildForPopout() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -95,6 +95,6 @@ let obj = function _fetchGuildForPopout() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_profile/GuildPopoutActionCreators.tsx");
 
-export const fetchGuildForPopout = function fetchGuildForPopout() {
+export function fetchGuildForPopout() {
   return obj(...arguments);
-};
+}

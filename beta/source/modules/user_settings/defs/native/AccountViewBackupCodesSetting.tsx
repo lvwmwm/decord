@@ -1,71 +1,67 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16672
+// Function ID: 16673
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 8364, 1087, 16089, 1128, 1202, 16096, 558, 576, 11240, 16007, 16098, 2]
+// Dependencies: [19, 8432, 1072, 16665, 1113, 1187, 16673, 11540, 16583, 16675, 2]
 
-// Module 16095 (AccountViewBackupCodesSetting)
-import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 16007 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 16089 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 16096 */;
+// Module 16672 (AccountViewBackupCodesSetting)
+import intl5 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 16583 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 16665 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import Constants from "Constants" /* 1072 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let UserSettingsSections;
 let closure_4;
-function onConfirmBackups(onSuccess) {
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let obj = {
-    onSubmit(verificationKey) {
-      const obj = MFAActionCreatorsDefault;
-      return obj.confirmViewBackupCodes(verificationKey, false);
-    },
-    title: intl.string(intl5.t["mGppp/"]),
-    helpText: intl2.string(intl5.t["37S9yU"]),
-    inputLabel: intl3.string(intl5.t.TjGb4Q),
-    closeOnSuccess: true,
-    onSuccess,
-    secureTextEntry: false,
-    actionText: intl4.string(intl5.t.geKm7t),
-    confirmColor: native.ButtonColors.BRAND,
-    useKeyboardAwareWrapper: true
-  };
-  intl = intl5.intl;
-  intl2 = intl5.intl;
-  intl3 = intl5.intl;
-  intl4 = intl5.intl;
-  showUserSettingsInputAlertDefault(obj);
-}
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ NOOP_NULL: closure_4, UserSettingsSections } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnViewBackups() {
-  let first;
-  let onSuccess;
-  let obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(arg0) {
+let obj = {
+  useTitle() {
+    const intl = intl5.intl;
+    return intl.string(intl5.t.xZEzbu);
+  },
+  parent: MobileUserSettings.ACCOUNT,
+  usePredicate: SettingsAccountUtils.useIs2FAEnabled,
+  usePreNavigationAction: function useOnViewBackups() {
+    let onSuccess;
+    return react.useCallback((arg0) => {
       let intl;
       let intl2;
       let intl3;
       let closure_0 = arg0;
       let obj = {
         onSubmit(password) {
-          const obj = MFAActionCreatorsDefault;
+          let obj = MFAActionCreatorsDefault;
           const result = obj.sendMFABackupCodesVerificationKeyEmail(password);
           return result.then(() => {
-            closure_2_5(closure_1_0);
+            let intl;
+            let intl2;
+            let intl3;
+            let intl4;
+            let obj = {
+              onSubmit(verificationKey) {
+                const obj = closure_1_1(closure_1_2[3]);
+                return obj.confirmViewBackupCodes(verificationKey, false);
+              },
+              title: intl.string(onSuccess(closure_2_2[4]).t["mGppp/"]),
+              helpText: intl2.string(onSuccess(closure_2_2[4]).t["37S9yU"]),
+              inputLabel: intl3.string(onSuccess(closure_2_2[4]).t.TjGb4Q),
+              closeOnSuccess: true,
+              onSuccess,
+              secureTextEntry: false,
+              actionText: intl4.string(onSuccess(closure_2_2[4]).t.geKm7t),
+              confirmColor: onSuccess(closure_2_2[5]).ButtonColors.BRAND,
+              useKeyboardAwareWrapper: true
+            };
+            intl = onSuccess(closure_2_2[4]).intl;
+            intl2 = onSuccess(closure_2_2[4]).intl;
+            intl3 = onSuccess(closure_2_2[4]).intl;
+            intl4 = onSuccess(closure_2_2[4]).intl;
+            closure_2_1(closure_2_2[6])(obj);
           });
         },
         onSuccess,
@@ -81,51 +77,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnViewB
       intl3 = closure_0(closure_2[4]).intl;
       closure_1(closure_2[6])(obj);
       return false;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useOnViewBackups() {
-  let onSuccess;
-  return react.useCallback((arg0) => {
-    let intl;
-    let intl2;
-    let intl3;
-    let closure_0 = arg0;
-    let obj = {
-      onSubmit(password) {
-        const obj = MFAActionCreatorsDefault;
-        const result = obj.sendMFABackupCodesVerificationKeyEmail(password);
-        return result.then(() => {
-          closure_2_5(closure_1_0);
-        });
-      },
-      onSuccess,
-      title: intl.string(closure_0(closure_2[4]).t.PsQmzU),
-      inputLabel: intl2.string(closure_0(closure_2[4]).t["CIGa+7"]),
-      closeOnSuccess: false,
-      actionText: intl3.string(closure_0(closure_2[4]).t.PDTjLN),
-      confirmColor: closure_0(closure_2[5]).ButtonColors.BRAND,
-      useKeyboardAwareWrapper: true
-    };
-    intl = closure_0(closure_2[4]).intl;
-    intl2 = closure_0(closure_2[4]).intl;
-    intl3 = closure_0(closure_2[4]).intl;
-    closure_1(closure_2[6])(obj);
-    return false;
-  }, []);
-});
-let obj = {
-  useTitle() {
-    const intl = intl5.intl;
-    return intl.string(intl5.t.xZEzbu);
+    }, []);
   },
-  parent: MobileUserSettings.ACCOUNT,
-  usePredicate: SettingsAccountUtils.useIs2FAEnabled,
-  usePreNavigationAction: tmp3,
   screen: {
     route: UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
     getComponent() {

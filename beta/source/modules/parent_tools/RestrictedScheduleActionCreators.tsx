@@ -1,12 +1,12 @@
-// Module ID: 16264
-// Function ID: 16265
+// Module ID: 16843
+// Function ID: 16844
 // Name: RestrictedScheduleActionCreators
-// Dependencies: [5, 1087, 1297, 584, 2]
+// Dependencies: [5, 1072, 1282, 572, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 16264 (RestrictedScheduleActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 16843 (RestrictedScheduleActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ obj = function _deleteRestrictedScheduleRule() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ obj = function _deleteRestrictedScheduleRule() {
             obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c5 = 3;
@@ -123,12 +123,12 @@ obj = function _deleteRestrictedScheduleRule() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/parent_tools/RestrictedScheduleActionCreators.tsx");
 
-export const addRestrictedScheduleRule = function addRestrictedScheduleRule() {
+export function addRestrictedScheduleRule() {
   return obj(...arguments);
-};
-export const updateRestrictedScheduleRule = function updateRestrictedScheduleRule() {
+}
+export function updateRestrictedScheduleRule() {
   return obj(...arguments);
-};
-export const deleteRestrictedScheduleRule = function deleteRestrictedScheduleRule() {
+}
+export function deleteRestrictedScheduleRule() {
   return obj(...arguments);
-};
+}

@@ -1,20 +1,18 @@
-// Module ID: 13509
-// Function ID: 13510
+// Module ID: 14127
+// Function ID: 14128
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5214, 21, 5003, 587, 558, 576, 7107, 13510, 9840, 5266, 2]
+// Dependencies: [17, 5230, 21, 5014, 575, 7149, 14128, 9920, 5624, 2]
+// Exports: default
 
-// Module 13509 (GuildPowerupsBoostInfo)
+// Module 14127 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
-import react from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5214 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7107 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9840 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13510 */;
+import nativeDefault from "native" /* 575 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5230 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7149 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9920 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -26,124 +24,9 @@ const BoostInfoType = GuildPowerupsConstants.BoostInfoType;
 let obj = { container: obj2, headerContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", display: "flex" } };
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", paddingVertical: nativeDefault.space.PX_12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsBoostInfo(arg0) {
-  let count;
-  let items;
-  let items1;
-  let type;
-  const obj = react;
-  const cResult = obj.c(21);
-  ({ count, type } = arg0);
-  const tmp4 = closure_7();
-  const obj2 = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("GuildPowerupsBoostInfo");
-  if (cResult[0] === count) {
-    let tmp6;
-    let TEXT_MUTED;
-    let tmp13;
-    if (cResult[1] === type) {
-      tmp6 = cResult[2];
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "" + count + ", " + tmp6;
-    const tmp10 = BoostInfoType;
-    if (type === BoostInfoType.AVAILABLE) {
-      TEXT_MUTED = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK;
-    } else {
-      TEXT_MUTED = nativeDefault.colors.TEXT_MUTED;
-    }
-    if (cResult[3] !== TEXT_MUTED) {
-      const obj3 = { size: "sm", color: TEXT_MUTED };
-      const tmp15 = hasOwnProperty(BoostGemIcon2.BoostGemIcon, obj3);
-      cResult[3] = TEXT_MUTED;
-      cResult[4] = tmp15;
-      tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[4];
-    }
-    let str3 = "text-lg/medium";
-    if (manaTypeConsolidationExperiment) {
-      str3 = "experimental/body-lg/semibold";
-    }
-    let str4 = "text-subtle";
-    if (type === tmp10.AVAILABLE) {
-      str4 = "text-strong";
-    }
-    if (cResult[5] === count) {
-      if (cResult[6] === str3) {
-        let tmp16;
-        if (cResult[7] === str4) {
-          tmp16 = cResult[8];
-        }
-        if (cResult[9] === tmp4.headerContainer) {
-          if (cResult[10] === tmp13) {
-            let tmp19;
-            if (cResult[11] === tmp16) {
-              tmp19 = cResult[12];
-            }
-            let str5 = "text-md/normal";
-            if (manaTypeConsolidationExperiment) {
-              str5 = "text-sm/normal";
-            }
-            if (cResult[13] === tmp6) {
-              let tmp23;
-              if (cResult[14] === str5) {
-                tmp23 = cResult[15];
-              }
-              if (cResult[16] === tmp4.container) {
-                if (cResult[17] === tmp23) {
-                  if (cResult[18] === combined) {
-                    let tmp26;
-                    if (cResult[19] === tmp19) {
-                      tmp26 = cResult[20];
-                    }
-                    return tmp26;
-                  }
-                }
-              }
-              const obj4 = { style: tmp4.container, accessible: true, accessibilityLabel: combined, children: items };
-              items = [tmp19, tmp23];
-              const tmp29 = metroRequire(View, obj4);
-              cResult[16] = tmp4.container;
-              cResult[17] = tmp23;
-              cResult[18] = combined;
-              cResult[19] = tmp19;
-              cResult[20] = tmp29;
-              tmp26 = tmp29;
-            }
-            const obj5 = { variant: str5, color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: tmp6 };
-            const tmp25 = hasOwnProperty(Text_Text.Text, obj5);
-            cResult[13] = tmp6;
-            cResult[14] = str5;
-            cResult[15] = tmp25;
-            tmp23 = tmp25;
-          }
-        }
-        const obj6 = { style: tmp4.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: items1 };
-        items1 = [tmp13, tmp16];
-        const tmp22 = metroRequire(View, obj6);
-        cResult[9] = tmp4.headerContainer;
-        cResult[10] = tmp13;
-        cResult[11] = tmp16;
-        cResult[12] = tmp22;
-        tmp19 = tmp22;
-      }
-    }
-    const obj7 = { variant: str3, color: str4, importantForAccessibility: "no-hide-descendants", children: count };
-    const tmp18 = hasOwnProperty(Text_Text.Text, obj7);
-    cResult[5] = count;
-    cResult[6] = str3;
-    cResult[7] = str4;
-    cResult[8] = tmp18;
-    tmp16 = tmp18;
-  }
-  const tmpResult = getGuildPowerupsBoostInfoText;
-  const guildPowerupsBoostInfoText = tmpResult.getGuildPowerupsBoostInfoText(count, type);
-  cResult[0] = count;
-  cResult[1] = type;
-  cResult[2] = guildPowerupsBoostInfoText;
-  tmp6 = guildPowerupsBoostInfoText;
-}) : (function GuildPowerupsBoostInfo(arg0) {
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx");
+
+export default function GuildPowerupsBoostInfo(arg0) {
   let TEXT_MUTED;
   let count;
   let items;
@@ -167,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
-  const Text = tmp2(5266).Text;
+  const Text = tmp2(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
   }
@@ -179,13 +62,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj4), ];
   let str3 = "text-md/normal";
-  const Text2 = tmp2(5266).Text;
+  const Text2 = tmp2(5624).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "text-sm/normal";
   }
   items1[1] = hasOwnProperty(Text2, { variant: str3, color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText });
   return metroRequire(View, obj3);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx");
-
-export default tmp3;
+};

@@ -1,23 +1,23 @@
-// Module ID: 9396
-// Function ID: 9397
+// Module ID: 9465
+// Function ID: 9466
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1392, 8704, 21, 5003, 587, 558, 576, 504, 1995, 5242, 8700, 7310, 9397, 9398, 5266, 1128, 5276, 6728, 5297, 2]
+// Dependencies: [32, 19, 17, 1383, 8754, 21, 5014, 575, 504, 1987, 5258, 8750, 7351, 9466, 5272, 9467, 5624, 1113, 6767, 5634, 2]
+// Exports: default
 
-// Module 9396 (WishlistNUXAddedItemActionSheet)
+// Module 9465 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
-import Constants from "Constants" /* 8704 */;
-import SKUPreview from "SKUPreview" /* 9397 */;
+import nativeDefault from "native" /* 575 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
+import Constants from "Constants" /* 8754 */;
+import SKUPreview from "SKUPreview" /* 9466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -35,394 +35,9 @@ obj2 = { alignItems: "center", padding: nativeDefault.space.PX_16, gap: nativeDe
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXAddedItemActionSheet(product) {
-  let currentUser;
-  let intl;
-  let intl2;
-  let items2;
-  let items3;
-  let items4;
-  let obj14;
-  let obj4;
-  let stateFromStores;
-  let tmp10;
-  let tmp16;
-  let tmp22;
-  let tmp24;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  const tmp = stateFromStores;
-  let tmp2 = dependencyMap;
-  let obj = stateFromStores(576);
-  const cResult = obj.c(31);
-  product = product.product;
-  const tmp4 = closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserStore];
-    const fn = function b() {
-      return currentUser.getCurrentUser();
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp5 = items;
-    tmp6 = fn;
-    tmp7 = items1;
-  } else {
-    [tmp5, tmp6, tmp7] = cResult;
-  }
-  let tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6, tmp7);
-  if (product.type !== tmp(1995).CollectiblesItemType.BUNDLE) {
-    let tmp13;
-    const first = _slicedToArray(product.items, 1)[0];
-    if (cResult[6] !== first) {
-      let tmp15;
-      if (null != first) {
-        let obj2 = { type: "single", item: first };
-        tmp15 = obj2;
-      }
-      cResult[6] = first;
-      cResult[7] = tmp15;
-      tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[7];
-    }
-    tmp10 = tmp13;
-  } else {
-    if (cResult[3] === product.items) {
-      if (cResult[4] === product.previewAssets) {
-        tmp10 = cResult[5];
-      }
-    }
-    obj4 = { type: "bundle", items: null, previewAssets: null };
-    ({ items: obj3.items, previewAssets: obj3.previewAssets } = product);
-    cResult[3] = product.items;
-    cResult[4] = product.previewAssets;
-    cResult[5] = obj4;
-    tmp10 = obj4;
-  }
-  obj4 = tmp10;
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        const obj = obj4(dependencyMap[12]);
-        obj.hideActionSheet();
-      }
-    }
-    cResult[8] = P;
-    tmp16 = P;
-  } else {
-    class P {
-      constructor() {
-        const obj = obj4(dependencyMap[12]);
-        obj.hideActionSheet();
-      }
-    }
-  }
-  if (cResult[9] !== stateFromStores) {
-    class B {
-      constructor() {
-        let items;
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideAllActionSheets();
-        if (null != stateFromStores) {
-          const obj2 = { userId: tmp4.id, sourceAnalyticsLocations: items, initialSection: UserProfileSections.WISHLIST };
-          items = [];
-          const tmpResult = showUserProfileActionSheetDefault;
-          items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
-          tmpResult(obj2);
-        }
-      }
-    }
-    cResult[9] = stateFromStores;
-    cResult[10] = B;
-  } else {
-    class B {
-      constructor() {
-        let items;
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideAllActionSheets();
-        if (null != stateFromStores) {
-          const obj2 = { userId: tmp4.id, sourceAnalyticsLocations: items, initialSection: UserProfileSections.WISHLIST };
-          items = [];
-          const tmpResult = showUserProfileActionSheetDefault;
-          items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
-          tmpResult(obj2);
-        }
-      }
-    }
-  }
-  if (cResult[11] !== tmp10) {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-    cResult[11] = tmp10;
-    cResult[12] = L;
-  } else {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-  }
-  const container = tmp4.container;
-  if (cResult[13] !== tmp18) {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-    const obj5 = { renderPreview: tmp18 };
-    cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(9398), obj5);
-    const tmp21 = closure_8(obj4(9398), obj5);
-  } else {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-  }
-  const textContainer = tmp4.textContainer;
-  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-    const obj6 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp(1128).t["3T2jbf"]) };
-    const Text = tmp(5266).Text;
-    intl = tmp(1128).intl;
-    const tmp23 = closure_8(Text, obj6);
-    cResult[15] = tmp23;
-    tmp22 = tmp23;
-  } else {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-  }
-  const subtitle = tmp4.subtitle;
-  if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-    const stringResult = obj7.string(tmp(1128).t.SXb73A);
-    cResult[16] = stringResult;
-    tmp24 = stringResult;
-  } else {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-  }
-  if (cResult[17] !== tmp4.subtitle) {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-    const obj8 = { variant: "text-md/normal", color: "text-default", style: subtitle, children: tmp24 };
-    cResult[17] = tmp4.subtitle;
-    cResult[18] = closure_8(tmp(5266).Text, obj8);
-    const tmp27 = closure_8(tmp(5266).Text, obj8);
-  } else {
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-  }
-  if (cResult[19] === tmp4.textContainer) {
-    let tmp30;
-    let tmp32;
-    class L {
-      constructor() {
-        let tmp2 = null;
-        if (null != obj4) {
-          const obj = { collectiblesItemData: tmp };
-          tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-        }
-        return tmp2;
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-      const obj9 = { text: intl2.string(tmp(1128).t.tM4PUv), onPress: tmp16, size: "lg", variant: "primary", grow: true };
-      const Button = tmp(5276).Button;
-      intl2 = tmp(1128).intl;
-      const tmp31 = closure_8(Button, obj9);
-      cResult[22] = tmp31;
-      tmp30 = tmp31;
-    } else {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-      const stringResult1 = obj11.string(tmp(1128).t.TxBQzD);
-      cResult[23] = stringResult1;
-      tmp32 = stringResult1;
-    } else {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-    }
-    if (cResult[24] !== tmp17) {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-      const obj10 = { direction: "horizontal", children: items2 };
-      items2 = [tmp30, ];
-      const ButtonGroup = tmp(6728).ButtonGroup;
-      const obj12 = { text: tmp32, onPress: tmp17, variant: "secondary", size: "lg", grow: true };
-      items2[1] = closure_8(tmp(5276).Button, obj12);
-      cResult[24] = tmp17;
-      cResult[25] = closure_9(ButtonGroup, obj10);
-      const tmp36 = closure_9(ButtonGroup, obj10);
-    } else {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-    }
-    if (cResult[26] === tmp4.container) {
-      class L {
-        constructor() {
-          let tmp2 = null;
-          if (null != obj4) {
-            const obj = { collectiblesItemData: tmp };
-            tmp2 = metroImportAll(SKUPreview.CollectiblesPreview, obj);
-          }
-          return tmp2;
-        }
-      }
-    }
-    const obj13 = { children: closure_9(View, obj14) };
-    obj14 = { style: container, children: items3 };
-    items3 = [tmp19, tmp28, tmp34];
-    BottomSheet = tmp(5297).BottomSheet;
-    cResult[26] = tmp4.container;
-    cResult[27] = tmp28;
-    cResult[28] = tmp34;
-    cResult[29] = tmp19;
-    cResult[30] = closure_8(BottomSheet, obj13);
-    const tmp41 = closure_8(BottomSheet, obj13);
-  }
-  const obj15 = { style: textContainer, children: items4 };
-  items4 = [tmp22, tmp26];
-  cResult[19] = tmp4.textContainer;
-  cResult[20] = tmp26;
-  cResult[21] = closure_9(View, obj15);
-  const tmp29 = closure_9(View, obj15);
-}) : (function WishlistNUXAddedItemActionSheet(product) {
+const result = size.fileFinishedImporting("modules/collectibles/native/WishlistNUXAddedItemActionSheet.tsx");
+
+export default function WishlistNUXAddedItemActionSheet(product) {
   let currentUser;
   let intl;
   let intl2;
@@ -433,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
   let items6;
   let obj3;
   product = product.product;
-  const require = product;
+  require = product;
   let memo;
   const tmp = closure_10();
   let obj = require("get initialized");
@@ -457,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
   }, items1);
   const items2 = [stateFromStores];
   const callback = react.useCallback(() => {
-    const obj = stateFromStores(memo[12]);
+    const obj = stateFromStores(memo[10]);
     obj.hideActionSheet();
   }, []);
   const items3 = [memo];
@@ -484,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
   let obj2 = { children: closure_9(View, obj3) };
   obj3 = { style: tmp.container, children: items4 };
   BottomSheet = require("Sheet/BottomSheet").BottomSheet;
-  items4 = [closure_8(stateFromStores(memo[16]), { renderPreview: callback2 }), , ];
+  items4 = [closure_8(stateFromStores(memo[15]), { renderPreview: callback2 }), , ];
   const obj4 = { style: tmp.textContainer, children: items5 };
   const obj5 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(require("intl").t["3T2jbf"]) };
   const Text = require("Text/Text").Text;
@@ -507,7 +122,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
   items6[1] = closure_8(Button2, obj9);
   items4[2] = closure_9(ButtonGroup, obj7);
   return closure_8(BottomSheet, obj2);
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/WishlistNUXAddedItemActionSheet.tsx");
-
-export default tmp4;
+};

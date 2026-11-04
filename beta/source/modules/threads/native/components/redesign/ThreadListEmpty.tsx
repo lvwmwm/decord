@@ -1,20 +1,18 @@
-// Module ID: 18206
-// Function ID: 18207
+// Module ID: 18793
+// Function ID: 18794
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 1202, 13166, 1128, 5266, 5276, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1187, 13799, 5624, 1113, 5634, 2]
 
-// Module 18206 (ThreadListEmpty)
+// Module 18793 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13166 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13799 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,114 +23,7 @@ const View = react_native.View;
 let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" }, iconWrapper: obj2, title: { textAlign: "center", marginTop: 16, marginHorizontal: 16 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, padding: 12 };
 let closure_6 = createStyles.createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadListEmpty(onCreateThreadPress) {
-  let first;
-  let intl3;
-  let items;
-  let tmp13;
-  let tmp15;
-  let tmp18;
-  let tmp20;
-  let tmp23;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(17);
-  onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
-  const tmp4 = closure_6();
-  const container = tmp4.container;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
-    const Icon = tmp(1202).Icon;
-    const tmp8 = React3(Icon, obj2);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.iconWrapper) {
-    const obj3 = { style: tmp4.iconWrapper, children: first };
-    const tmp12 = React3(View, obj3);
-    cResult[1] = tmp4.iconWrapper;
-    cResult[2] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[2];
-  }
-  const title = tmp4.title;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl4.t.HgTQ8p);
-    cResult[3] = stringResult;
-    tmp13 = stringResult;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.title) {
-    const obj4 = { style: title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp13 };
-    const tmp17 = React3(Text_Text.Text, obj4);
-    cResult[4] = tmp4.title;
-    cResult[5] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[5];
-  }
-  const subtext = tmp4.subtext;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(intl4.t.jmq9GC);
-    cResult[6] = stringResult1;
-    tmp18 = stringResult1;
-  } else {
-    tmp18 = cResult[6];
-  }
-  if (cResult[7] !== tmp4.subtext) {
-    const obj5 = { style: subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default", children: tmp18 };
-    const tmp22 = React3(Text_Text.Text, obj5);
-    cResult[7] = tmp4.subtext;
-    cResult[8] = tmp22;
-    tmp20 = tmp22;
-  } else {
-    tmp20 = cResult[8];
-  }
-  if (cResult[9] !== onCreateThreadPress) {
-    let tmp25 = null != onCreateThreadPress;
-    if (tmp25) {
-      const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-      const Button = tmp(5276).Button;
-      intl3 = tmp(1128).intl;
-      tmp25 = React3(Button, obj6);
-    }
-    cResult[9] = onCreateThreadPress;
-    cResult[10] = tmp25;
-    tmp23 = tmp25;
-  } else {
-    tmp23 = cResult[10];
-  }
-  if (cResult[11] === tmp4.container) {
-    if (cResult[12] === tmp23) {
-      if (cResult[13] === tmp9) {
-        if (cResult[14] === tmp15) {
-          let tmp27;
-          if (cResult[15] === tmp20) {
-            tmp27 = cResult[16];
-          }
-          return tmp27;
-        }
-      }
-    }
-  }
-  const obj7 = { style: container, children: items };
-  items = [tmp9, tmp15, tmp20, tmp23];
-  const tmp28 = hasOwnProperty(View, obj7);
-  cResult[11] = tmp4.container;
-  cResult[12] = tmp23;
-  cResult[13] = tmp9;
-  cResult[14] = tmp15;
-  cResult[15] = tmp20;
-  cResult[16] = tmp28;
-  tmp27 = tmp28;
-}) : (function ThreadListEmpty(onCreateThreadPress) {
+const memoResult = react.memo(function ThreadListEmpty(onCreateThreadPress) {
   let Icon;
   let intl;
   let intl2;
@@ -160,13 +51,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp4 = React3;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-    const Button = tmp5(5276).Button;
-    intl3 = tmp5(1128).intl;
+    const Button = tmp5(5634).Button;
+    intl3 = tmp5(1113).intl;
     tmp4Result = tmp4(Button, obj6);
   }
   items[3] = tmp4Result;
   return tmp2(tmp3, obj);
-}));
+});
 const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListEmpty.tsx");
 
 export default memoResult;

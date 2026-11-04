@@ -1,79 +1,30 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 17325
+// Function ID: 17326
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 5004, 8364, 558, 576, 504, 15721, 1128, 11240, 2]
-// Exports: onOfficialMessageStyleSettingValueChange
+// Dependencies: [19, 5015, 8432, 504, 16270, 1113, 11540, 2]
+// Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 16725 (OfficialMessageStyleSetting)
-import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15721 */;
+// Module 17325 (OfficialMessageStyleSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl5 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOfficialMessageStyleSettingValue() {
-  let officialMessageStyle;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function n() {
-      return officialMessageStyle.officialMessageStyle;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useOfficialMessageStyleSettingValue() {
+function useOfficialMessageStyleSettingValue() {
   let officialMessageStyle;
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOfficialMessageStyleSettingOptions() {
-  let first;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { label: intl.string(intl5.t.ERaS6f), value: "default" };
-    intl = tmp(1128).intl;
-    const items = [obj2, , , ];
-    const obj3 = { label: intl2.string(intl5.t.JKfipk), value: "no_text_color" };
-    intl2 = tmp(1128).intl;
-    items[1] = obj3;
-    const obj4 = { label: intl3.string(intl5.t.O2vBoY), value: "no_gradient" };
-    intl3 = tmp(1128).intl;
-    items[2] = obj4;
-    const obj5 = { label: intl4.string(intl5.t["+loyQl"]), value: "hidden" };
-    intl4 = tmp(1128).intl;
-    items[3] = obj5;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useOfficialMessageStyleSettingOptions() {
+}
+function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
+  const obj = AccessibilityActionCreators;
+  const result = obj.setOfficialMessageStyle(officialMessageStyle);
+}
+function useOfficialMessageStyleSettingOptions() {
   return react.useMemo(() => {
     let intl;
     let intl2;
@@ -93,25 +44,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOfficia
     items[3] = obj4;
     return items;
   }, []);
-});
-function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
-  const obj = AccessibilityActionCreators;
-  const result = obj.setOfficialMessageStyle(officialMessageStyle);
 }
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl5.intl;
     return intl.string(intl5.t.nC2XBl);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  useValue: useOfficialMessageStyleSettingValue,
   onValueChange: onOfficialMessageStyleSettingValueChange,
-  useOptions: tmp3
+  useOptions: useOfficialMessageStyleSettingOptions
 };
 const radio = SettingBuilders.createRadio(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
 
 export default radio;
-export const useOfficialMessageStyleSettingValue = tmp2;
+export { useOfficialMessageStyleSettingValue };
 export { onOfficialMessageStyleSettingValueChange };
-export const useOfficialMessageStyleSettingOptions = tmp3;
+export { useOfficialMessageStyleSettingOptions };

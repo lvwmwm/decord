@@ -1,14 +1,14 @@
-// Module ID: 11436
-// Function ID: 11437
+// Module ID: 11737
+// Function ID: 11738
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2024, 2045, 1087, 11437, 6841, 5635, 5743, 5191, 10776, 2]
+// Dependencies: [5, 2016, 2038, 1072, 11738, 6881, 5651, 5760, 5207, 10909, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 11436 (installApplicationOnDemandIfNeeded)
-import Constants from "Constants" /* 1087 */;
+// Module 11737 (installApplicationOnDemandIfNeeded)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ApplicationRecord from "ApplicationRecord" /* 2016 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -32,7 +32,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
             let scopes;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else {
           if (1 === tmp4) {
@@ -167,6 +167,6 @@ let obj = function _installApplicationOnDemandIfNeeded() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/applications/installApplicationOnDemandIfNeeded.native.tsx");
 
-export const installApplicationOnDemandIfNeeded = function installApplicationOnDemandIfNeeded() {
+export function installApplicationOnDemandIfNeeded() {
   return obj(...arguments);
-};
+}

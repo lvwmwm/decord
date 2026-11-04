@@ -1,39 +1,39 @@
-// Module ID: 10896
-// Function ID: 10897
+// Module ID: 10982
+// Function ID: 10983
 // Name: InappropriateConversationsActionCreators
-// Dependencies: [1087, 584, 1297, 1297, 2]
+// Dependencies: [1072, 572, 1282, 1282, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10896 (InappropriateConversationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 10982 (InappropriateConversationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");
 
-export const playVibingWumpusMusic = function playVibingWumpusMusic() {
+export function playVibingWumpusMusic() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "VIBING_WUMPUS_PLAY_MUSIC" });
-};
-export const stopVibingWumpusMusic = function stopVibingWumpusMusic() {
+}
+export function stopVibingWumpusMusic() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "VIBING_WUMPUS_STOP_MUSIC" });
-};
-export const pauseVibingWumpusMusic = function pauseVibingWumpusMusic() {
+}
+export function pauseVibingWumpusMusic() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "VIBING_WUMPUS_PAUSE_MUSIC" });
-};
-export const deleteAllSafetyWarnings = function deleteAllSafetyWarnings(arg0) {
+}
+export function deleteAllSafetyWarnings(arg0) {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const del = HTTP.del;
   const obj = { url: Endpoints.DELETE_SAFETY_WARNINGS(arg0), rejectWithError: obj2.rejectWithMigratedError() };
   obj2 = HTTPUtils;
   return del(obj);
-};
-export const markAsInappropriateConversation = function markAsInappropriateConversation(id, INAPPROPRIATE_CONVERSATION_TIER_1) {
+}
+export function markAsInappropriateConversation(id, INAPPROPRIATE_CONVERSATION_TIER_1) {
   let obj;
   let obj3;
   const HTTP = HTTPUtils.HTTP;
@@ -42,4 +42,4 @@ export const markAsInappropriateConversation = function markAsInappropriateConve
   obj = { safety_warning_type: INAPPROPRIATE_CONVERSATION_TIER_1 };
   obj3 = HTTPUtils;
   return post(request);
-};
+}

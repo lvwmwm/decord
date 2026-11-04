@@ -1,30 +1,30 @@
-// Module ID: 19513
-// Function ID: 19514
+// Module ID: 20139
+// Function ID: 20140
 // Name: native_required_assets_misc
-// Dependencies: [1421, 1422, 1423, 1424, 1425, 1426, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 1446, 19514, 19515, 19516, 19517, 19518, 19519, 19520, 2]
+// Dependencies: [1413, 1414, 1415, 1416, 1417, 1418, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 20140, 20141, 20142, 20143, 20144, 20145, 20146, 2]
 
-// Module 19513 (native_required_assets_misc)
-import AssetRegistryDefault from "AssetRegistry" /* 1421 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 1422 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 1423 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 1424 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 1425 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 1426 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 1439 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 1440 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 1441 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 1442 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 1443 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 1444 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 1445 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 1446 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 19514 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 19515 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 19516 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 19517 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 19518 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 19519 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 19520 */;
+// Module 20139 (native_required_assets_misc)
+import AssetRegistryDefault from "AssetRegistry" /* 1413 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 1414 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 1415 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 1416 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 1417 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 1418 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 1431 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 1432 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 1433 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 1434 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 1435 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 1436 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 1437 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 1438 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 20140 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 20141 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 20142 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 20143 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 20144 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 20145 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 20146 */;
 import size from "module_2" /* 2 */;
 
 const obj = { DefaultAvatar0: AssetRegistryDefault, DefaultAvatar1: AssetRegistryDefault2, DefaultAvatar2: AssetRegistryDefault3, DefaultAvatar3: AssetRegistryDefault4, DefaultAvatar4: AssetRegistryDefault5, DefaultAvatar5: AssetRegistryDefault6, DefaultGroup0: AssetRegistryDefault7, DefaultGroup1: AssetRegistryDefault8, DefaultGroup2: AssetRegistryDefault9, DefaultGroup3: AssetRegistryDefault10, DefaultGroup4: AssetRegistryDefault11, DefaultGroup5: AssetRegistryDefault12, DefaultGroup6: AssetRegistryDefault13, DefaultGroup7: AssetRegistryDefault14, PoopDark: AssetRegistryDefault15, PoopLight: AssetRegistryDefault16, RoleSubscriptionBadge: AssetRegistryDefault17, RoleSubscriptionLanyard: AssetRegistryDefault18, RoleSubscriptionPurchaseCard: AssetRegistryDefault19, SummaryIndicatorEnd: AssetRegistryDefault20, SummaryIndicatorStart: AssetRegistryDefault21 };

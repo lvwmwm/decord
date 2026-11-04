@@ -1,17 +1,17 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7679
+// Function ID: 7680
 // Name: SortUtils
-// Dependencies: [7639, 7638, 2]
+// Dependencies: [7677, 7676, 2]
 // Exports: getSortValueForMember
 
-// Module 7641 (SortUtils)
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7638 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7639 */;
+// Module 7679 (SortUtils)
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7676 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7677 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/SortUtils.tsx");
 
-export const getSortValueForMember = function getSortValueForMember(joinedAt, ORDER_BY_UNSPECIFIED) {
+export function getSortValueForMember(joinedAt, ORDER_BY_UNSPECIFIED) {
   const obj = guild_mod_dash_member_safety_DateUtils;
   const joinedAtTimestamp = obj.getJoinedAtTimestamp(joinedAt.joinedAt);
   if (MemberSafetyElasticSearchQueryTypes.OrderBy.ORDER_BY_GUILD_JOINED_AT_ASC === ORDER_BY_UNSPECIFIED) {
@@ -27,4 +27,4 @@ export const getSortValueForMember = function getSortValueForMember(joinedAt, OR
   } else {
     return -joinedAtTimestamp;
   }
-};
+}

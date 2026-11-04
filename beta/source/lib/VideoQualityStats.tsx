@@ -1,13 +1,13 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5950
+// Function ID: 5951
 // Name: VideoQualityStats
-// Dependencies: [32, 5915, 5923, 5754, 2]
+// Dependencies: [32, 5894, 5902, 5772, 2]
 // Exports: parseCodecType
 
-// Module 5932 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 5754 */;
-import Histogram from "Histogram" /* 5915 */;
-import SystemResourcesDefault from "SystemResources" /* 5923 */;
+// Module 5950 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 5772 */;
+import Histogram from "Histogram" /* 5894 */;
+import SystemResourcesDefault from "SystemResources" /* 5902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -467,6 +467,15 @@ class InboundStats {
       throw new TypeError("Trying to call a non-function");
     }
   }
+  continueAggregationFrom(previousAggregationStats, flag) {
+    this.previousAggregationStats = previousAggregationStats.previousAggregationStats;
+    const tmp3 = flag;
+    if (tmp3) {
+      const items = [];
+      HermesBuiltin.arraySpread(items, previousAggregationStats.statsWindow, 0);
+      tmp2.statsWindow = items;
+    }
+  }
   collectAggregationStats(parseInboundStatsResult, previousAggregationStats) {
     const self = this;
     let closure_0 = parseInboundStatsResult;
@@ -688,6 +697,12 @@ Object.defineProperty(prototype, "isVideoStopped", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "videoStoppedReasons", {
+  get: function videoStoppedReasons() {
+    return this.videoStoppedReason;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "videoStoppedDuration", {
   get: function videoStoppedDuration() {
     const videoStoppedWatch = this.videoStoppedWatch;
@@ -775,7 +790,7 @@ export const Decoders = obj3;
 export const VideoStoppedReasons = obj6;
 export { parseEncoder };
 export { parseDecoder };
-export const parseCodecType = function parseCodecType(name) {
+export function parseCodecType(name) {
   let AV1;
   if (null == name) {
     AV1 = obj.UNKNOWN;
@@ -799,7 +814,7 @@ export const parseCodecType = function parseCodecType(name) {
     }
   }
   return AV1;
-};
+}
 export { RawVideoStats };
 export { InboundStats };
 export { OutboundStats };

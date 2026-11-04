@@ -1,14 +1,14 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9745
+// Function ID: 9746
 // Name: disclosures
-// Dependencies: [5, 1087, 1297, 9666, 1128, 2]
+// Dependencies: [5, 1072, 1282, 9746, 1113, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9665 (disclosures)
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import applications from "applications" /* 9666 */;
+// Module 9745 (disclosures)
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import applications from "applications" /* 9746 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ obj = function _ackDisclosures() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ obj = function _ackDisclosures() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -94,20 +94,20 @@ const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/applications/disclosures.tsx");
 
 export const ApplicationDisclosure = applications.ApplicationDisclosureType;
-export const getDisclosures = function getDisclosures() {
+export function getDisclosures() {
   return obj(...arguments);
-};
-export const ackDisclosures = function ackDisclosures() {
+}
+export function ackDisclosures() {
   return obj(...arguments);
-};
-export const getTextForDisclosure = function getTextForDisclosure(disclosure) {
+}
+export function getTextForDisclosure(disclosure) {
   if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1113).intl;
     return intl2.string(intl3.t["6wPmjo"]);
   } else if (applications.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-    const intl = tmp(1128).intl;
+    const intl = tmp(1113).intl;
     return intl.string(intl3.t["/uOMKZ"]);
   } else {
     return null;
   }
-};
+}

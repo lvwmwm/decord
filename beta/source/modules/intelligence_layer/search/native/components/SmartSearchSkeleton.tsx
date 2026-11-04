@@ -1,34 +1,27 @@
-// Module ID: 18167
-// Function ID: 18168
+// Module ID: 18754
+// Function ID: 18755
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 11934, 21, 4117, 5003, 587, 558, 576, 5017, 1128, 11933, 12537, 18155, 2]
+// Dependencies: [19, 17, 12245, 21, 4123, 5014, 575, 5028, 1113, 12244, 12785, 18742, 2]
 
-// Module 18167 (SmartSearchSkeleton)
+// Module 18754 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1128 */;
-import _modDef4117 from "module_4117" /* 4117 */;
-import react3 from "react" /* 5017 */;
-import AILoader from "AILoader" /* 11933 */;
-import AIShimmer from "AIShimmer" /* 12537 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18155 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef4123 from "module_4123" /* 4123 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18742 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 11934 */;
+import AILoaderConstants from "AILoaderConstants" /* 12245 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f134035 = () => Math.random() - 0.5;
 const View = react_native.View;
 ({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_REDUCED_MOTION_CYCLE_MS: metroRequire } = AILoaderConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let items = [_modDef4117.Sb2fo2, _modDef4117.rXNe0Z, _modDef4117["22g6Ju"], _modDef4117.IogGZY, _modDef4117.UEnMJF, _modDef4117.kk7BVL, _modDef4117.UVa49v];
+let items = [_modDef4123.Sb2fo2, _modDef4123.rXNe0Z, _modDef4123["22g6Ju"], _modDef4123.IogGZY, _modDef4123.UEnMJF, _modDef4123.kk7BVL, _modDef4123.UVa49v];
 let closure_10 = createStyles.createStyles((arg0) => {
   let num2;
   let num3;
@@ -49,152 +42,19 @@ let closure_10 = createStyles.createStyles((arg0) => {
   }
   return obj2;
 });
-let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchSkeleton(isCollapsed) {
-  let first;
-  let items1;
-  let items2;
-  let tmp12;
-  let tmp16;
-  const obj = react2;
-  const cResult = obj.c(21);
-  isCollapsed = isCollapsed.isCollapsed;
-  const tmp5 = closure_10(isCollapsed);
-  const reducedMotion = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [_modDef4117.ffCCEe];
-    HermesBuiltin.arraySpread(items, items.sort(f134035), 1);
-    const mapped = items.map((item) => {
-      const intl = intl2.intl;
-      return intl.string(item);
-    });
-    cResult[0] = mapped;
-    first = mapped;
-  } else {
-    first = cResult[0];
-  }
-  if (reducedMotion.enabled) {
-    let tmp14;
-    const _Symbol2 = Symbol;
-    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { shimmerDurationMs: 1000, shimmerDelayMs: metroRequire - 450, shimmerInitialDelayMs: 550 };
-      cResult[1] = obj2;
-      tmp14 = obj2;
-    } else {
-      tmp14 = cResult[1];
-    }
-    tmp12 = tmp14;
-  } else {
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { shimmerDurationMs: 1000, shimmerDelayMs: hasOwnProperty - 1000, shimmerInitialDelayMs: 300 };
-      cResult[2] = obj3;
-      tmp12 = obj3;
-    } else {
-      tmp12 = cResult[2];
-    }
-  }
-  const block = tmp5.block;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = metroImportDefault(AILoader.AILoader, { size: 12, color: "interactive-text-default" });
-    cResult[3] = tmp18;
-    tmp16 = tmp18;
-  } else {
-    tmp16 = cResult[3];
-  }
-  if (cResult[4] === tmp12.shimmerDelayMs) {
-    if (cResult[5] === tmp12.shimmerDurationMs) {
-      if (cResult[6] === tmp12.shimmerInitialDelayMs) {
-        let tmp19;
-        if (cResult[7] === tmp5.label) {
-          tmp19 = cResult[8];
-        }
-        if (cResult[9] === tmp5.header) {
-          let tmp21;
-          let tmp25;
-          if (cResult[10] === tmp19) {
-            tmp21 = cResult[11];
-          }
-          const skeletons = tmp5.skeletons;
-          if (cResult[12] !== isCollapsed) {
-            let num11 = 6;
-            const _Array = Array;
-            if (isCollapsed) {
-              num11 = 3;
-            }
-            const obj4 = { length: num11 };
-            const fromResult = from(obj4);
-            const mapped1 = fromResult.map((item, index) => {
-              const tmp = FormRowPlaceholderDefault;
-              return closure_1_7(tmp, {}, "skeleton-" + index);
-            });
-            cResult[12] = isCollapsed;
-            cResult[13] = mapped1;
-            tmp25 = mapped1;
-          } else {
-            tmp25 = cResult[13];
-          }
-          if (cResult[14] === tmp5.skeletons) {
-            let tmp27;
-            if (cResult[15] === tmp25) {
-              tmp27 = cResult[16];
-            }
-            if (cResult[17] === tmp5.block) {
-              if (cResult[18] === tmp21) {
-                let tmp31;
-                if (cResult[19] === tmp27) {
-                  tmp31 = cResult[20];
-                }
-                return tmp31;
-              }
-            }
-            const obj5 = { style: block, children: items1 };
-            items1 = [tmp21, tmp27];
-            const tmp34 = metroImportAll(View, obj5);
-            cResult[17] = tmp5.block;
-            cResult[18] = tmp21;
-            cResult[19] = tmp27;
-            cResult[20] = tmp34;
-            tmp31 = tmp34;
-          }
-          const obj6 = { style: skeletons, children: tmp25 };
-          const tmp30 = metroImportDefault(View, obj6);
-          cResult[14] = tmp5.skeletons;
-          cResult[15] = tmp25;
-          cResult[16] = tmp30;
-          tmp27 = tmp30;
-        }
-        const obj7 = { style: tmp5.header, children: items2 };
-        items2 = [tmp16, tmp19];
-        const tmp24 = metroImportAll(View, obj7);
-        cResult[9] = tmp5.header;
-        cResult[10] = tmp19;
-        cResult[11] = tmp24;
-        tmp21 = tmp24;
-      }
-    }
-  }
-  const obj8 = { text: first, variant: "text-sm/semibold", color: "interactive-text-default", delay: tmp12.shimmerDelayMs, initialDelay: tmp12.shimmerInitialDelayMs, duration: tmp12.shimmerDurationMs, style: tmp5.label };
-  const tmp20 = metroImportDefault(AIShimmer.AIShimmer, obj8);
-  cResult[4] = tmp12.shimmerDelayMs;
-  cResult[5] = tmp12.shimmerDurationMs;
-  cResult[6] = tmp12.shimmerInitialDelayMs;
-  cResult[7] = tmp5.label;
-  cResult[8] = tmp20;
-  tmp19 = tmp20;
-}) : (function SmartSearchSkeleton(isCollapsed) {
+const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   let fromResult;
   let items1;
   let items2;
   isCollapsed = isCollapsed.isCollapsed;
   let reducedMotion;
   let tmp = closure_10(isCollapsed);
-  reducedMotion = react.useContext(reducedMotion(5017).AccessibilityPreferencesContext).reducedMotion;
+  reducedMotion = react.useContext(reducedMotion(5028).AccessibilityPreferencesContext).reducedMotion;
   items = [reducedMotion.enabled];
   const memo = react.useMemo(() => {
-    items = [_modDef4117.ffCCEe, ...closure_1_9.sort(f134035)];
+    items = [_modDef4123.ffCCEe, ...closure_1_9.sort(() => Math.random() - 0.5)];
     return items.map((item) => {
-      const intl = reducedMotion(closure_1_2[10]).intl;
+      const intl = reducedMotion(closure_1_2[8]).intl;
       return intl.string(item);
     });
   }, []);
@@ -210,9 +70,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }, items);
   let obj = { style: tmp.block, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
-  items1 = [closure_7(reducedMotion(11933).AILoader, { size: 12, color: "interactive-text-default" }), ];
+  items1 = [closure_7(reducedMotion(12244).AILoader, { size: 12, color: "interactive-text-default" }), ];
   const obj3 = { text: memo, variant: "text-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
-  items1[1] = closure_7(reducedMotion(12537).AIShimmer, obj3);
+  items1[1] = closure_7(reducedMotion(12785).AIShimmer, obj3);
   items2 = [closure_8(View, obj2), ];
   let num = 6;
   const _Array = Array;
@@ -231,7 +91,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   fromResult = from({ length: num });
   items2[1] = tmp6(View, obj4);
   return tmp4(View, obj);
-}));
+});
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchSkeleton.tsx");
 
 export default memoResult;

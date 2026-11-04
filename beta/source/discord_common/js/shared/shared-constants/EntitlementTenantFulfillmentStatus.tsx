@@ -1,9 +1,9 @@
-// Module ID: 15330
-// Function ID: 15331
+// Module ID: 15876
+// Function ID: 15877
 // Name: EntitlementTenantFulfillmentStatus
 // Dependencies: [2]
 
-// Module 15330 (EntitlementTenantFulfillmentStatus)
+// Module 15876 (EntitlementTenantFulfillmentStatus)
 import size from "module_2" /* 2 */;
 
 const obj = { ELIGIBLE_FOR_ATTEMPTS: new Set([2, 5, 9]), ELIGIBLE_FOR_FULFILLMENT: new Set([2, 9]) };

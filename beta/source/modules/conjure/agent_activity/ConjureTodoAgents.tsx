@@ -1,11 +1,11 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12604
+// Function ID: 12605
 // Name: ConjureTodoAgents
-// Dependencies: [12344, 2]
+// Dependencies: [12590, 2]
 // Exports: groupAgentsByTodo, runningTodoAgents, splitAgentOverflow
 
-// Module 12357 (ConjureTodoAgents)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12344 */;
+// Module 12604 (ConjureTodoAgents)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12590 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -13,7 +13,7 @@ let map;
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoAgents.tsx");
 
 export const MAX_SHOWN_AGENTS = 3;
-export const runningTodoAgents = function runningTodoAgents(tasks) {
+export function runningTodoAgents(tasks) {
   let obj;
   let taskId;
   const items = [];
@@ -34,10 +34,10 @@ export const runningTodoAgents = function runningTodoAgents(tasks) {
     continue;
   }
   return items;
-};
-export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
+}
+export function groupAgentsByTodo(items) {
   map = new Map();
-  const iter = cResult[Symbol.iterator]();
+  const iter = items[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -48,7 +48,7 @@ export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
         if (null != value) {
           let arr2 = arr.push(tmp2);
         } else {
-          let items = [tmp2];
+          items = [tmp2];
           let result = map.set(tmp2.todoId, items);
         }
       }
@@ -56,8 +56,8 @@ export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
     continue;
   }
   return map;
-};
-export const splitAgentOverflow = function splitAgentOverflow(agents) {
+}
+export function splitAgentOverflow(agents) {
   let obj;
   let num = arg1;
   if (arg1 === undefined) {
@@ -70,4 +70,4 @@ export const splitAgentOverflow = function splitAgentOverflow(agents) {
     obj = { shown: agents.slice(0, num), overflow: agents.length - num };
   }
   return obj;
-};
+}

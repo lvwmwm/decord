@@ -1,11 +1,11 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7407
+// Function ID: 7408
 // Name: SocialLayerStorefrontConstants
-// Dependencies: [1404, 2]
+// Dependencies: [1395, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 7365 (SocialLayerStorefrontConstants)
-import UserStoreConstants from "UserStoreConstants" /* 1404 */;
+// Module 7407 (SocialLayerStorefrontConstants)
+import UserStoreConstants from "UserStoreConstants" /* 1395 */;
 import size from "module_2" /* 2 */;
 
 const Environments = UserStoreConstants.Environments;
@@ -18,6 +18,7 @@ if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
   tmp2 = null;
 }
 const re0 = /^\/(?:channels\/\d+\/)?game-shop(?:\/|$)/;
+const set = new Set(["1560340689907089505", "1560711732412940429", "1560711810007699506"]);
 const result = size.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConstants.tsx");
 
 export const STOREFRONT_MARKETING_GUILD_ID = str;
@@ -25,13 +26,17 @@ export const STOREFRONT_MARKETING_GUILD_ID_TEST = tmp2;
 export const SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL_TYPE = "Social Layer Claim Purchased Item Modal";
 export const SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL_TYPE = "Social Layer Gift Code Claim Modal";
 export const SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_TYPE = "Social Layer Storefront Product Details Modal";
+export const SOCIAL_LAYER_STOREFRONT_COUPON_PURCHASE_COMPLETE_MODAL_TYPE = "Social Layer Storefront Coupon Purchase Complete Modal";
+export const BLOONS_TD6_APPLICATION_ID = "614380482620293151";
 export const MARVEL_RIVALS_APPLICATION_ID = "1346069614634864772";
 export const RUST_APPLICATION_ID = "1288512934112264234";
+export const BLOONS_TD6_SPLIT_TENDER_COUPON_SKU_IDS = set;
+export const BLOONS_TD6_SPLIT_TENDER_PROMOTION_ID = "1560319795629527231";
 export const SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM = 14;
 export const SOCIAL_LAYER_COMMERCE_PARTNER_DOCUMENTATION_URL = "https://docs.discord.com/partners/commerce/overview";
-export const getChannelsGameShopPrefix = function getChannelsGameShopPrefix(arg0) {
+export function getChannelsGameShopPrefix(arg0) {
   return "/channels/" + arg0 + "/game-shop";
-};
-export const isGameShopPath = function isGameShopPath(pathname) {
+}
+export function isGameShopPath(pathname) {
   return re0.test(pathname);
-};
+}

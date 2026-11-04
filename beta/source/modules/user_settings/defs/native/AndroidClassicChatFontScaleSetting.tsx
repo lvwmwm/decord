@@ -1,49 +1,31 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 17308
+// Function ID: 17309
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [16656, 8364, 558, 576, 4918, 1274, 1128, 11240, 1384, 2]
+// Dependencies: [17256, 8432, 4929, 1259, 1113, 11540, 1375, 2]
 
-// Module 16708 (AndroidClassicChatFontScaleSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import FontScaleStore from "FontScaleStore" /* 16656 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17308 (AndroidClassicChatFontScaleSetting)
+import intl2 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import _slicedToArray from "_slicedToArray" /* 4929 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import FontScaleStore from "FontScaleStore" /* 17256 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp;
-const _slicedToArray = tmp(4918);
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClassicChatFontScaleValue() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s(isClassicChatFontScaleEnabled) {
-      return isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return useFontScaleStore(first, _slicedToArray.shallow);
-}) : (function useClassicChatFontScaleValue() {
-  return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, _slicedToArray.shallow);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.gFob3e);
   },
   parent: MobileUserSettings.APPEARANCE,
-  useValue: tmp2,
+  useValue: function useClassicChatFontScaleValue() {
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, _slicedToArray.shallow);
+  },
   onValueChange: function onClassicChatFontScaleChange(isClassicChatFontScaleEnabled) {
     _require = isClassicChatFontScaleEnabled;
     let obj = require("react-native");

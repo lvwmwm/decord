@@ -1,23 +1,23 @@
-// Module ID: 15098
-// Function ID: 15099
+// Module ID: 15646
+// Function ID: 15647
 // Name: RTCConnectionDesyncStore
-// Dependencies: [5663, 4855, 5746, 1392, 5662, 5749, 1087, 5664, 2040, 6021, 6814, 5771, 504, 584, 2]
+// Dependencies: [5680, 4863, 5764, 1383, 5679, 5767, 1072, 5681, 2033, 6041, 6853, 5789, 504, 572, 2]
 
-// Module 15098 (RTCConnectionDesyncStore)
+// Module 15646 (RTCConnectionDesyncStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2040 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5749 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5771 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6814 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5663 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import Constants from "Constants" /* 1087 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2033 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6853 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5680 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import UserStore from "UserStore" /* 1383 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,18 +1,18 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 15309
+// Function ID: 15310
 // Name: PremiumNitroHomeUtils
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1072, 1252, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 14765 (PremiumNitroHomeUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 15309 (PremiumNitroHomeUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/utils/PremiumNitroHomeUtils.tsx");
 
-export const trackIfScrolledToBottom = function trackIfScrolledToBottom(trackedType) {
+export function trackIfScrolledToBottom(trackedType) {
   let hasTrackedScrolledToBottom;
   let nativeEvent;
   ({ nativeEvent, hasTrackedScrolledToBottom } = trackedType);
@@ -32,4 +32,4 @@ export const trackIfScrolledToBottom = function trackIfScrolledToBottom(trackedT
     obj.track(AnalyticEvents.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj2);
     hasTrackedScrolledToBottom.current = true;
   }
-};
+}

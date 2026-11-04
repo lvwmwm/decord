@@ -1,67 +1,25 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15837
+// Function ID: 15838
 // Name: NitroGem2Lottie
-// Dependencies: [109, 19, 21, 558, 576, 15293, 11623, 2]
+// Dependencies: [19, 21, 11917, 15838, 2]
+// Exports: NitroGem2Lottie
 
-// Module 15292 (NitroGem2Lottie)
+// Module 15837 (NitroGem2Lottie)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11623 */;
-import AssetRegistry from "AssetRegistry" /* 15293 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import LottieIcon2 from "LottieIcon" /* 11917 */;
+import AssetRegistry from "AssetRegistry" /* 15838 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
 const layers = ["I"];
 const items = [{ name: "all", start: 0, duration: 71 }];
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroGem2Lottie(ref) {
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] !== ref) {
-    const tmp8 = _objectWithoutProperties(ref, closure_2);
-    cResult[0] = ref;
-    cResult[1] = tmp8;
-    cResult[2] = ref.ref;
-    tmp5 = ref;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = AssetRegistry;
-    cResult[3] = tmpResult;
-    tmp9 = tmpResult;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4) {
-    let tmp11;
-    if (cResult[5] === tmp5) {
-      tmp11 = cResult[6];
-    }
-    return tmp11;
-  }
-  const LottieIcon = tmp(11623).LottieIcon;
-  const merged = Object.assign(tmp4);
-  const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
-  cResult[4] = tmp4;
-  cResult[5] = tmp5;
-  cResult[6] = tmp13;
-  tmp11 = tmp13;
-}) : (function NitroGem2Lottie(ref) {
+const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/NitroGem2Lottie.tsx");
+
+export function NitroGem2Lottie(ref) {
   ref = ref.ref;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const LottieIcon = LottieIcon2.LottieIcon;
   const merged1 = Object.assign(merged);
   return <LottieIcon dotLottie={AssetRegistry} animation="all" ref={ref} layers={layers} markers={items} />;
-});
-const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/NitroGem2Lottie.tsx");
-
-export const NitroGem2Lottie = tmp3;
+}

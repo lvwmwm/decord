@@ -1,14 +1,13 @@
-// Module ID: 8764
-// Function ID: 8765
+// Module ID: 8814
+// Function ID: 8815
 // Name: UserProfileSharedStyles
-// Dependencies: [7336, 5003, 587, 558, 2]
+// Dependencies: [7377, 5014, 575, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 8764 (UserProfileSharedStyles)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7336 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 8814 (UserProfileSharedStyles)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 7377 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -33,13 +32,11 @@ let closure_9 = createStyles.createStyles(() => {
   ({ borderRadius: nativeDefault.radii.md, padding: hasOwnProperty, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED });
   return obj;
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/user_profile/native/UserProfileSharedStyles.tsx");
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSharedStyles.tsx");
 
 export default function useSharedStyles() {
   return closure_9();
 };
-export const useUserProfileCardRadius = function useUserProfileCardRadius() {
+export function useUserProfileCardRadius() {
   return nativeDefault.radii.md;
-};
+}

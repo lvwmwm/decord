@@ -1,15 +1,15 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 11052
+// Function ID: 11053
 // Name: Compact
-// Dependencies: [587, 1202, 6915, 7293, 12098, 2]
+// Dependencies: [575, 1187, 6957, 7334, 11051, 2]
 // Exports: getCompactStyles
 
-// Module 12099 (Compact)
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import GuildIcon from "GuildIcon" /* 6915 */;
-import GameIcon from "GameIcon" /* 7293 */;
-import deepmergeDefault from "deepmerge" /* 12098 */;
+// Module 11052 (Compact)
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1187 */;
+import GuildIcon from "GuildIcon" /* 6957 */;
+import GameIcon from "GameIcon" /* 7334 */;
+import deepmergeDefault from "deepmerge" /* 11051 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -30,8 +30,8 @@ const tmp2 = deepmergeDefault(CHANNEL_LIST_STYLES_COMPACT, obj10);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/layout/Compact.tsx");
 
 export { CHANNEL_LIST_STYLES_COMPACT };
-export const getCompactStyles = function getCompactStyles() {
+export function getCompactStyles() {
   const obj = { messagePreview: { text: { variant: "text-sm/medium", color: "text-muted" } }, timestamp: { text: { variant: "text-xs/semibold" } } };
   return deepmergeDefault(obj, obj);
-};
+}
 export const CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD = tmp2;

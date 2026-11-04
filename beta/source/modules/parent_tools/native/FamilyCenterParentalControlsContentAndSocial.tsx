@@ -1,76 +1,27 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16837
+// Function ID: 16838
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1087, 8364, 21, 558, 576, 11240, 1128, 2067, 16012, 2]
+// Dependencies: [19, 17, 1072, 8432, 21, 11540, 1113, 2061, 16588, 2]
+// Exports: default
 
-// Module 16258 (FamilyCenterParentalControlsContentAndSocial)
+// Module 16837 (FamilyCenterParentalControlsContentAndSocial)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl4 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterParentalControlsContentAndSocial() {
-  let dliU4j;
-  let format;
-  let intl2;
-  let intl3;
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let obj4;
-  let obj5;
-  let tmp10;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { sections: items1 };
-    const obj3 = { settings: items, subLabel: format(dliU4j, obj4) };
-    items = [MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
-    const createList = SettingBuilders.createList;
-    SettingBuilders;
-    const intl = tmp(1128).intl;
-    format = intl.format;
-    obj4 = { learnMoreLink: obj5.getArticleURL(HelpdeskArticles.EXPLICIT_MEDIA_REDACTION) };
-    dliU4j = tmp(1128).t.dliU4j;
-    items1 = [obj3, , ];
-    obj5 = HelpdeskUtilsDefault;
-    const obj6 = { label: intl2.string(intl4.t.MeYuqs), settings: items2 };
-    intl2 = tmp(1128).intl;
-    items2 = [, ];
-    ({ PARENTAL_CONTROLS_DIRECT_MESSAGES: arr3[0], PARENTAL_CONTROLS_MESSAGE_REQUESTS: arr3[1] } = MobileUserSettings);
-    items1[1] = obj6;
-    const obj7 = { label: intl3.string(intl4.t.XlGG9c), settings: items3 };
-    intl3 = tmp(1128).intl;
-    items3 = [, , ];
-    ({ PARENTAL_CONTROLS_FRIEND_REQUESTS_EVERYONE: arr4[0], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr4[1], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_GUILDS: arr4[2] } = MobileUserSettings);
-    items1[2] = obj7;
-    const list = createList(obj2);
-    cResult[0] = list;
-    let first = list;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = <View>{null}</View>;
-    cResult[1] = tmp14;
-    tmp10 = tmp14;
-  } else {
-    tmp10 = cResult[1];
-  }
-  return tmp10;
-}) : (function FamilyCenterParentalControlsContentAndSocial() {
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsContentAndSocial.tsx");
+
+export default function FamilyCenterParentalControlsContentAndSocial() {
   let dliU4j;
   let format;
   let intl2;
@@ -104,7 +55,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
   items1[2] = obj6;
   const list = createList(obj);
   return <View>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsContentAndSocial.tsx");
-
-export default tmp3;
+};

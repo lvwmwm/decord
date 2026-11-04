@@ -1,10 +1,10 @@
 // Module ID: 17593
 // Function ID: 17594
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 17593 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [1, 2], hash: "424c540aff53032ef3cdcb5f4766723e", name: "ic_rulebook_16px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "84a1e2a3b13ea7ae45e68f1bb8755810", name: "TreehouseIcon", type: "png" });

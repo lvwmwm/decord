@@ -1,11 +1,11 @@
-// Module ID: 18809
-// Function ID: 18810
+// Module ID: 19429
+// Function ID: 19430
 // Name: ConjureBackgroundFramesManager
-// Dependencies: [5, 7246, 5658, 18084, 2002, 2]
+// Dependencies: [5, 7287, 5675, 16366, 1994, 2]
 
-// Module 18809 (ConjureBackgroundFramesManager)
+// Module 19429 (ConjureBackgroundFramesManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -44,9 +44,9 @@ let actions = function _handleFrameLaunchStart() {
     } else {
       const result = value.closeBackgroundedConjureAppFrames(c0, c1);
     }
-    await "IconComponent";
+    await "HermesInternal";
     ({ applicationId: c0, frameId: c1, surface: c2 } = closure_0);
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };

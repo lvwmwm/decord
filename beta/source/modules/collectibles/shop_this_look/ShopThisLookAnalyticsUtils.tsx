@@ -1,13 +1,13 @@
-// Module ID: 14297
-// Function ID: 14298
+// Module ID: 14826
+// Function ID: 14827
 // Name: ShopThisLookAnalyticsUtils
-// Dependencies: [1087, 1995, 1267, 2]
+// Dependencies: [1072, 1987, 1252, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 14297 (ShopThisLookAnalyticsUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
+// Module 14826 (ShopThisLookAnalyticsUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/collectibles/shop_this_look/S
 export const ShopThisLookMenuAction = { MENU_VIEWED: "menu_viewed", COACHMARK_VIEWED: "coachmark_viewed", COACHMARK_CTA_CLICKED: "coachmark_cta_clicked", COACHMARK_DISMISSED: "coachmark_dismissed" };
 export const ShopThisLookRowAction = { ROW_VIEWED: "row_viewed", ROW_CLICKED: "row_clicked" };
 export { ShopThisLookProductType };
-export const trackShopThisLookMenuAction = function trackShopThisLookMenuAction(COACHMARK_CTA_CLICKED, ACTION_SHEET) {
+export function trackShopThisLookMenuAction(COACHMARK_CTA_CLICKED, ACTION_SHEET) {
   let tmp;
   const obj = { action: COACHMARK_CTA_CLICKED, source: tmp };
   const track = AnalyticsUtilsDefault.track;
@@ -25,8 +25,8 @@ export const trackShopThisLookMenuAction = function trackShopThisLookMenuAction(
   AnalyticsUtilsDefault;
   track(SHOP_THIS_LOOK_MENU_ACTION, obj);
   tmp = ACTION_SHEET;
-};
-export const trackShopThisLookRowAction = function trackShopThisLookRowAction(arg0) {
+}
+export function trackShopThisLookRowAction(arg0) {
   let NAMEPLATE;
   let action;
   let isDisabled;
@@ -49,4 +49,4 @@ export const trackShopThisLookRowAction = function trackShopThisLookRowAction(ar
     NAMEPLATE = obj.NAMEPLATE;
   }
   track(SHOP_THIS_LOOK_ROW_ACTION, obj);
-};
+}

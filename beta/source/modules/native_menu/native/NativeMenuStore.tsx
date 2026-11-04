@@ -1,11 +1,11 @@
-// Module ID: 10122
-// Function ID: 10123
+// Module ID: 10204
+// Function ID: 10205
 // Name: NativeMenuStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 10122 (NativeMenuStore)
+// Module 10204 (NativeMenuStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let c0 = null;

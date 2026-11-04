@@ -1,92 +1,24 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12497
+// Function ID: 12498
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1504, 21, 5003, 587, 558, 576, 7252, 1633, 1384, 6740, 8983, 5242, 7070, 12192, 12194, 2]
+// Dependencies: [32, 19, 1496, 21, 7294, 1625, 1375, 6779, 7061, 5258, 7112, 12498, 12499, 2]
+// Exports: default
 
-// Module 12191 (AppLauncherChoicesActionSheet)
-import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6740 */;
-import Form from "Form" /* 8983 */;
+// Module 12497 (AppLauncherChoicesActionSheet)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6779 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, item, obj1;
+let item;
 
-let c10;
-let c9;
-let obj2;
-let obj3;
-let obj4;
-let obj5;
-let tmp;
-const defaultMVCPConfig = tmp(7252);
-const f113559 = (choice, originalIndex) => ({ choice, originalIndex });
-let length = ["scrollable"];
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-const View = react_native.View;
-const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { listItemContainer: { overflow: "hidden" }, listItem: obj2, firstItem: obj3, lastItem: obj4, divider: obj5 };
-obj2 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
-createStyles = createStyles.createStyles;
-obj3 = { borderTopLeftRadius: nativeDefault.radii.xl, borderTopRightRadius: nativeDefault.radii.xl };
-obj4 = { borderBottomLeftRadius: nativeDefault.radii.xl, borderBottomRightRadius: nativeDefault.radii.xl };
-obj5 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginLeft: 16 };
-let closure_11 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FlashListWrapper(scrollable) {
-  let tmp10Result;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(6);
-  if (cResult[0] !== scrollable) {
-    scrollable = scrollable.scrollable;
-    const tmp8 = _objectWithoutProperties(scrollable, length);
-    cResult[0] = scrollable;
-    cResult[1] = tmp8;
-    cResult[2] = scrollable;
-    tmp5 = scrollable;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] === tmp4) {
-    let tmp9;
-    if (cResult[4] === tmp5) {
-      tmp9 = cResult[5];
-    }
-    return tmp9;
-  }
-  const tmpResult = defaultMVCPConfig;
-  if (tmp5) {
-    const BottomSheetFlashList = tmpResult.BottomSheetFlashList;
-    const obj2 = { preserveScrollMomentum: true };
-    const merged = Object.assign(tmp4);
-    tmp10Result = tmp10(BottomSheetFlashList, obj2);
-  } else {
-    const FlashList = tmpResult.FlashList;
-    const obj3 = { scrollEnabled: false };
-    const merged1 = Object.assign(tmp4);
-    tmp10Result = tmp10(FlashList, obj3);
-  }
-  cResult[3] = tmp4;
-  cResult[4] = tmp5;
-  cResult[5] = tmp10Result;
-  tmp9 = tmp10Result;
-}) : (function FlashListWrapper(scrollable) {
+let metroImportDefault;
+let metroRequire;
+function FlashListWrapper(scrollable) {
   let tmp2Result;
   scrollable = scrollable.scrollable;
   const merged = Object.assign(scrollable, Object.assign({ scrollable: 0 }));
@@ -103,189 +35,48 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FlashL
     tmp2Result = tmp2(FlashList, obj);
   }
   return tmp2Result;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherChoicesActionSheet(option) {
-  let closure_2;
-  let closure_4;
-  let closure_6;
-  let first;
-  let first1;
-  let tmp8;
-  let tmp = option;
-  const tmp2 = dependencyMap;
-  let obj = option(576);
-  const cResult = obj.c(32);
-  option = option.option;
-  const onChoiceSelect = option.onChoiceSelect;
-  const initChoiceIndex = option.initChoiceIndex;
-  const tmp4 = closure_11();
-  dependencyMap = tmp4;
-  const bottom = onChoiceSelect(1633)().bottom;
-  if (cResult[0] !== bottom) {
-    let sum = bottom;
-    const tmpResult = tmp(1384);
-    if (!tmpResult.isIOS()) {
-      sum = bottom + DEFAULT_CONTENT_PADDING;
-    }
-    cResult[0] = bottom;
-    cResult[1] = sum;
-  }
-  if (cResult[2] !== option.choices) {
-    class A {
-      constructor() {
-        choices = option.choices;
-        if (choices == null) {
-          choices = [];
-        }
-        return choices.map(function() { /* body not rendered: F113559 */ });
-      }
-    }
-    cResult[2] = option.choices;
-    cResult[3] = A;
-    tmp8 = A;
-  } else {
-    class A {
-      constructor() {
-        choices = option.choices;
-        if (choices == null) {
-          choices = [];
-        }
-        return choices.map(function() { /* body not rendered: F113559 */ });
-      }
-    }
-  }
-  [first, _slicedToArray] = react.useState(tmp8);
-  [first1, react] = react.useState(initChoiceIndex);
-  if (cResult[4] !== option.choices) {
-    class R {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[13]);
-        obj = { query: option, choices: null, limit: null };
-        choices = option.choices;
-        queryChoice = tmp.queryChoice;
-        if (choices == null) {
-          choices = [];
-        }
-        obj.choices = choices;
-        tmp2 = closure_4(queryChoice(obj));
-        return;
-      }
-    }
-    cResult[4] = option.choices;
-    cResult[5] = R;
-  } else {
-    class R {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[13]);
-        obj = { query: option, choices: null, limit: null };
-        choices = option.choices;
-        queryChoice = tmp.queryChoice;
-        if (choices == null) {
-          choices = [];
-        }
-        obj.choices = choices;
-        tmp2 = closure_4(queryChoice(obj));
-        return;
-      }
-    }
-  }
-  if (cResult[6] === first) {
-    class R {
-      constructor(arg0) {
-        tmp = closure_1(closure_2[13]);
-        obj = { query: option, choices: null, limit: null };
-        choices = option.choices;
-        queryChoice = tmp.queryChoice;
-        if (choices == null) {
-          choices = [];
-        }
-        obj.choices = choices;
-        tmp2 = closure_4(queryChoice(obj));
-        return;
-      }
-    }
-  }
-  class N {
-    constructor(arg0) {
-      item = option.item;
-      index = option.index;
-      lastItem = null != closure_3;
-      if (lastItem) {
-        num = 1;
-        lastItem = index === closure_3.length - 1;
-      }
-      tmp2 = closure_1_9;
-      tmp4 = closure_2;
-      items = [, , ];
-      items[0] = closure_2.listItemContainer;
-      firstItem = 0 === index;
-      tmp = closure_5;
-      originalIndex = item.originalIndex;
-      tmp3 = closure_1_7;
-      if (firstItem) {
-        firstItem = tmp4.firstItem;
-      }
-      items[1] = firstItem;
-      if (lastItem) {
-        lastItem = tmp4.lastItem;
-      }
-      obj = { style: items, children: null };
-      items[2] = lastItem;
-      tmp5 = tmp === originalIndex;
-      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F148992 */ } };
-      obj.children = tmp2(option(closure_2[14]).FormRadioRow, obj1);
-      return tmp2(tmp3, obj);
-    }
-  }
-  cResult[6] = first;
-  cResult[7] = onChoiceSelect;
-  cResult[8] = first1;
-  cResult[9] = tmp4.firstItem;
-  cResult[10] = tmp4.lastItem;
-  cResult[11] = tmp4.listItem;
-  cResult[12] = tmp4.listItemContainer;
-  cResult[13] = N;
-}) : (function AppLauncherChoicesActionSheet(option) {
-  let closure_2;
-  let closure_4;
-  let closure_6;
+}
+let _slicedToArray = _slicedToArray_mod;
+const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const result = size.fileFinishedImporting("modules/app_launcher/native/options/choices/AppLauncherChoicesActionSheet.tsx");
+
+export default function AppLauncherChoicesActionSheet(option) {
+  let closure_3;
+  let closure_5;
   let data;
   let first1;
   let initChoiceIndex;
-  let items3;
+  let items2;
   let obj5;
   let obj6;
   let onDismiss;
-  let tmp20;
+  let tmp18;
   option = option.option;
   const onChoiceSelect = option.onChoiceSelect;
   data = undefined;
   _slicedToArray = undefined;
   first1 = undefined;
-  react = undefined;
+  closure_5 = undefined;
+  let tmp = data;
   ({ initChoiceIndex, onDismiss } = option);
-  let tmp = closure_11();
-  dependencyMap = tmp;
-  const tmp2 = dependencyMap;
-  const bottom = onChoiceSelect(1633)().bottom;
-  let tmp3 = option;
-  let obj = option(1384);
+  const bottom = onChoiceSelect(data[5])().bottom;
+  let obj = option(data[6]);
   let sum = bottom;
   if (!obj.isIOS()) {
-    sum = bottom + DEFAULT_CONTENT_PADDING;
+    sum = bottom + closure_5;
   }
-  [data, _slicedToArray] = react.useState(() => {
+  [data, _slicedToArray] = first1.useState(() => {
     let choices = option.choices;
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f113559);
+    return choices.map((choice, originalIndex) => ({ choice, originalIndex }));
   });
-  [first1, react] = react.useState(initChoiceIndex);
-  let items = [option.choices];
-  const items1 = [onChoiceSelect, first1, tmp, data];
-  const callback = react.useCallback((query) => {
+  [first1, closure_5] = first1.useState(initChoiceIndex);
+  const items = [option.choices];
+  const items1 = [onChoiceSelect, first1, data];
+  const callback = first1.useCallback((query) => {
     let choices;
     const obj = { query, choices, limit: null };
     choices = option.choices;
@@ -294,74 +85,55 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     if (choices == null) {
       choices = [];
     }
-    closure_4(queryChoice(obj));
+    closure_3(queryChoice(obj));
   }, items);
-  const items2 = [tmp.divider];
-  const callback1 = react.useCallback((item) => {
-    let obj2;
+  const callback1 = first1.useCallback((item) => {
     item = item.item;
     const index = item.index;
-    let lastItem = null != first && index === first.length - 1;
-    const items = [closure_2.listItemContainer, , ];
-    let firstItem = 0 === index;
-    const originalIndex = item.originalIndex;
-    const tmp = first1;
-    const tmp3 = View;
-    if (firstItem) {
-      firstItem = tmp4.firstItem;
-    }
-    items[1] = firstItem;
-    if (lastItem) {
-      lastItem = tmp4.lastItem;
-    }
-    let obj = { style: items, children: tmp2(option(closure_2[14]).FormRadioRow, obj2) };
-    items[2] = lastItem;
-    obj2 = {
-      style: closure_2.listItem,
+    let obj = {
+      start: 0 === index,
+      end: null != first && index === first.length - 1,
       label: item.choice.displayName,
-      align: "right",
-      selected: tmp === originalIndex,
-      onPress() {
-        closure_6(item.originalIndex);
+      value: item.originalIndex,
+      legacyCompat_selected: first1 === item.originalIndex,
+      legacyCompat_onPress() {
+        closure_5(item.originalIndex);
         onChoiceSelect(item.choice, item.originalIndex);
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       }
     };
-    return closure_1_9(tmp3, obj);
+    const tmp = null != first && index === first.length - 1;
+    return closure_1_6(option(first[8]).TableRadioRow, obj);
   }, items1);
-  const callback2 = react.useCallback(() => {
-    const obj = { style: closure_2.divider };
-    return React4(Form.FormDivider, obj);
-  }, items2);
-  let tmp13 = null != option.choices;
-  if (tmp13) {
+  let tmp11 = null != option.choices;
+  if (tmp11) {
     let choices = option.choices;
     let length1;
     if (choices != null) {
       length1 = choices.length;
     }
     let num = 5;
-    if (tmp12) {
+    if (tmp10) {
       num = 10;
     }
-    tmp13 = length1 >= num;
+    tmp11 = length1 >= num;
   }
-  let obj2 = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: items3 };
-  let tmp16 = tmp13;
-  length = data.length;
-  const AppLauncherCommandOptionActionSheet = tmp3(12194).AppLauncherCommandOptionActionSheet;
-  const tmp15 = closure_10;
-  if (tmp13) {
+  let tmp14 = tmp11;
+  const length = data.length;
+  const obj2 = { option, startExpanded: tmp11, onDismiss, scrollable: tmp11, children: items2 };
+  const AppLauncherCommandOptionActionSheet = tmp2(tmp[11]).AppLauncherCommandOptionActionSheet;
+  const tmp13 = closure_7;
+  if (tmp11) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(12192).AppLauncherListSearchBar, obj3);
+    tmp14 = closure_6(tmp2(tmp[12]).AppLauncherListSearchBar, obj3);
   }
-  items3 = [tmp16, ];
+  items2 = [tmp14, ];
   if (0 === length) {
-    tmp20 = closure_9(tmp3(12192).AppLauncherListEmptyState, {});
+    tmp18 = closure_6(tmp2(tmp[12]).AppLauncherListEmptyState, {});
   } else {
     const obj4 = {
-      scrollable: tmp13,
+      scrollable: tmp11,
       contentContainerStyle: obj5,
       scrollIndicatorInsets: obj6,
       keyExtractor(choice) {
@@ -369,16 +141,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         },
       data,
       renderItem: callback1,
-      ItemSeparatorComponent: callback2,
       accessibilityRole: "radiogroup"
     };
     obj5 = { paddingBottom: sum };
     obj6 = { bottom: sum };
-    tmp20 = closure_9(closure_12, obj4);
+    tmp18 = closure_6(FlashListWrapper, obj4);
   }
-  items3[1] = tmp20;
-  return tmp15(AppLauncherCommandOptionActionSheet, obj2);
-});
-const result = size.fileFinishedImporting("modules/app_launcher/native/options/choices/AppLauncherChoicesActionSheet.tsx");
-
-export default tmp4;
+  items2[1] = tmp18;
+  return tmp13(AppLauncherCommandOptionActionSheet, obj2);
+};

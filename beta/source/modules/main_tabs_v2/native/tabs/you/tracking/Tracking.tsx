@@ -1,35 +1,35 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 9677
+// Function ID: 9678
 // Name: tracking/Tracking
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1072, 1252, 2]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 9598 (tracking/Tracking)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 9677 (tracking/Tracking)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/tracking/Tracking.tsx");
 
-export const trackYouTabAvatarPress = function trackYouTabAvatarPress() {
+export function trackYouTabAvatarPress() {
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.YOU_TAB_AVATAR_PRESS);
-};
-export const trackYouTabCustomStatusPress = function trackYouTabCustomStatusPress() {
+}
+export function trackYouTabCustomStatusPress() {
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.YOU_TAB_CUSTOM_STATUS_PRESS);
-};
-export const trackYouTabEditProfilePress = function trackYouTabEditProfilePress() {
+}
+export function trackYouTabEditProfilePress() {
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.YOU_TAB_EDIT_PROFILE_PRESS);
-};
-export const trackYouTabNitroIconPress = function trackYouTabNitroIconPress() {
+}
+export function trackYouTabNitroIconPress() {
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.YOU_TAB_NITRO_ICON_PRESS);
-};
-export const trackYouTabSettingsIconPress = function trackYouTabSettingsIconPress(isBadged) {
+}
+export function trackYouTabSettingsIconPress(isBadged) {
   isBadged = isBadged.isBadged;
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.YOU_TAB_SETTINGS_ICON_PRESS, { has_badge: isBadged });
-};
+}

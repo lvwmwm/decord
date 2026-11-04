@@ -1,13 +1,13 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 12158
+// Function ID: 12159
 // Name: conjureLinkedApps
-// Dependencies: [5, 3862, 1128, 10826, 2]
+// Dependencies: [5, 3868, 1113, 10948, 2]
 // Exports: fetchLinkedAppCallers, linkConjureApp, linkedAppBuildDescription, linkedAppBuildLabel, unlinkConjureApp
 
-// Module 11877 (conjureLinkedApps)
-import intl2 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
+// Module 12158 (conjureLinkedApps)
+import intl2 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _fetchLinkedAppCallers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ obj = function _linkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ obj = function _linkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -182,7 +182,7 @@ obj = function _unlinkConjureApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -215,7 +215,7 @@ obj = function _unlinkConjureApp() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -235,26 +235,26 @@ obj = function _unlinkConjureApp() {
   return obj(...arguments);
 };
 obj = { auto: obj2, preview: obj3, published: obj4 };
-obj2 = { label: _modDef3862["2TTprm"], description: _modDef3862["1ck6o0"] };
-obj3 = { label: _modDef3862.bUZ6jT, description: _modDef3862.DP2NVW };
-obj4 = { label: _modDef3862.yXd0cc, description: _modDef3862["YY+UD8"] };
+obj2 = { label: _modDef3868["2TTprm"], description: _modDef3868["1ck6o0"] };
+obj3 = { label: _modDef3868.bUZ6jT, description: _modDef3868.DP2NVW };
+obj4 = { label: _modDef3868.yXd0cc, description: _modDef3868["YY+UD8"] };
 const result = size.fileFinishedImporting("modules/conjure/linked_apps/conjureLinkedApps.tsx");
 
 export const CONJURE_LINKED_APP_BUILDS = ["auto", "preview", "published"];
-export const linkedAppBuildLabel = function linkedAppBuildLabel(build) {
+export function linkedAppBuildLabel(build) {
   const intl = intl2.intl;
   return intl.string(obj[build].label);
-};
-export const linkedAppBuildDescription = function linkedAppBuildDescription(value) {
+}
+export function linkedAppBuildDescription(value) {
   const intl = intl2.intl;
   return intl.string(obj[value].description);
-};
-export const fetchLinkedAppCallers = function fetchLinkedAppCallers() {
+}
+export function fetchLinkedAppCallers() {
   return obj(...arguments);
-};
-export const linkConjureApp = function linkConjureApp() {
+}
+export function linkConjureApp() {
   return obj(...arguments);
-};
-export const unlinkConjureApp = function unlinkConjureApp() {
+}
+export function unlinkConjureApp() {
   return obj(...arguments);
-};
+}

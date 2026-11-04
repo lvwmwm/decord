@@ -1,21 +1,21 @@
-// Module ID: 7328
-// Function ID: 7329
+// Module ID: 7370
+// Function ID: 7371
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 5084, 5003, 587, 5278, 5017, 5279, 5280, 5284, 6934, 7329, 5244, 5245, 2]
+// Dependencies: [32, 19, 17, 21, 5095, 5014, 575, 5636, 5028, 5637, 5638, 5596, 6990, 7371, 5260, 5261, 2]
 // Exports: FormSwitch
 
-// Module 7328 (FormSwitch)
+// Module 7370 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5084 */;
-import HapticUtils from "HapticUtils" /* 5244 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5245 */;
-import IconDefault from "Icon" /* 5278 */;
-import spring from "spring" /* 5279 */;
+import nativeDefault from "native" /* 575 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
+import HapticUtils from "HapticUtils" /* 5260 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5261 */;
+import IconDefault from "Icon" /* 5636 */;
+import spring from "spring" /* 5637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -26,7 +26,7 @@ let obj3;
 let size;
 let size1;
 let tmp3;
-const springPresets = tmp3(5280);
+const springPresets = tmp3(5638);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let ReanimatedRexport = ReanimatedRexport_mod;
@@ -42,12 +42,12 @@ let closure_7 = createStyles(obj);
 ReanimatedRexport = ReanimatedRexport_mod;
 const Icon = ReanimatedRexport.createAnimatedComponent(IconDefault);
 let closure_9 = { code: "function FormSwitchNativeTsx1(){const{progress,interpolateColor,trackColor,trackSelectedColor,trackBorderColor,trackBorderSelectedColor}=this.__closure;const t=progress.get();return{backgroundColor:interpolateColor(t,[0,1],[trackColor,trackSelectedColor]),borderColor:interpolateColor(t,[0,1],[trackBorderColor,trackBorderSelectedColor])};}" };
-let closure_10 = { code: "function FormSwitchNativeTsx2(){const{progress,interpolate,knobCheckedLeft,interpolateColor,knobBackgroundColor,knobSelectedBackgroundColor}=this.__closure;const t_0=progress.get();return{left:interpolate(t_0,[0,1],[0,knobCheckedLeft]),backgroundColor:interpolateColor(t_0,[0,1],[knobBackgroundColor,knobSelectedBackgroundColor])};}" };
-let closure_11 = { code: "function FormSwitchNativeTsx3(){const{progress,interpolate,off,on,useReducedMotion}=this.__closure;const t_1=progress.get();const opacity=interpolate(t_1,[0,1],[off,on]);const scale=useReducedMotion?1:interpolate(t_1,[0,1],[off,on]);return{opacity:opacity,transform:[{scale:scale}]};}" };
+let closure_10 = { code: "function FormSwitchNativeTsx2(){const{progress,interpolate,knobCheckedLeft,interpolateColor,knobBackgroundColor,knobSelectedBackgroundColor}=this.__closure;const t=progress.get();return{left:interpolate(t,[0,1],[0,knobCheckedLeft]),backgroundColor:interpolateColor(t,[0,1],[knobBackgroundColor,knobSelectedBackgroundColor])};}" };
+let closure_11 = { code: "function FormSwitchNativeTsx3(){const{progress,interpolate,off,on,useReducedMotion}=this.__closure;const t=progress.get();const opacity=interpolate(t,[0,1],[off,on]);const scale=useReducedMotion?1:interpolate(t,[0,1],[off,on]);return{opacity:opacity,transform:[{scale:scale}]};}" };
 size = size_mod;
 let result = size.fileFinishedImporting("design/components/Forms/native/FormSwitch.native.tsx");
 
-export const FormSwitch = function FormSwitch(onValueChange) {
+export function FormSwitch(onValueChange) {
   let accessibilityHint;
   let accessibilityLabel;
   let disabled;
@@ -164,13 +164,13 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   }
   let obj3 = { progress: sharedValue, interpolate: tmp2(tmp3[4]).interpolate, knobCheckedLeft: token4, interpolateColor: tmp2(tmp3[4]).interpolateColor, knobBackgroundColor: token5, knobSelectedBackgroundColor: token6 };
   D.__closure = obj3;
-  D.__workletHash = 10509423128696;
+  D.__workletHash = 7732502313271;
   D.__initData = token5;
   const animatedStyle1 = tmp2Result18.useAnimatedStyle(D);
   const fn2 = n;
   const tmp2Result19 = tmp2(tmp3[4]);
   fn2.__closure = { progress: sharedValue, interpolate: tmp2(tmp3[4]).interpolate, off: 0, on: 1, useReducedMotion: enabled };
-  fn2.__workletHash = 12609192900422;
+  fn2.__workletHash = 12190941017160;
   fn2.__initData = token6;
   let c0 = 0;
   let c1 = 1;
@@ -179,7 +179,7 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   tmp2(tmp3[4]);
   const fn3 = n;
   fn3.__closure = { progress: sharedValue, interpolate: tmp2(tmp3[4]).interpolate, off: 1, on: 0, useReducedMotion: enabled };
-  fn3.__workletHash = 12609192900422;
+  fn3.__workletHash = 12190941017160;
   fn3.__initData = token6;
   let tmp25Result = null;
   ({ progress: sharedValue, interpolate: tmp2(tmp3[4]).interpolate, off: 1, on: 0, useReducedMotion: enabled });
@@ -262,4 +262,4 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   obj10 = { style: items4, children: tmp25Result };
   items4 = [tmp10.knob, animatedStyle1];
   return token(token1, obj9);
-};
+}

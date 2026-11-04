@@ -1,47 +1,19 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 14274
+// Function ID: 14275
 // Name: ContactSyncBackToLanding
-// Dependencies: [558, 576, 1505, 6956, 13612, 2]
+// Dependencies: [1497, 6998, 14247, 2]
+// Exports: default
 
-// Module 13639 (ContactSyncBackToLanding)
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13612 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14274 (ContactSyncBackToLanding)
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, navigation;
+let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncBackToLanding(arg0) {
-  let closure_0;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  let obj2 = require("useNavigation");
-  const tmp2 = navigation;
-  navigation = obj2.useNavigation();
-  const tmp = _require;
-  if (cResult[0] === navigation) {
-    let tmp5;
-    if (cResult[1] === arg0) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  const tmpResult = tmp(tmp2[3]);
-  const tmp6 = tmpResult.getHeaderBackButton(() => {
-    const obj = closure_0;
-    if (null != closure_0.navigateToLandingPage) {
-      const result = obj.navigateToLandingPage();
-    } else {
-      const obj2 = ContactSyncModalActionCreators;
-      obj2.goBackToLanding(navigation);
-    }
-  }, true)(arg0);
-  cResult[0] = navigation;
-  cResult[1] = arg0;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function ContactSyncBackToLanding(arg0) {
+let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
+
+export default function ContactSyncBackToLanding(arg0) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -57,7 +29,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncB
       obj2.goBackToLanding(closure_1);
     }
   }, true)(arg0);
-});
-let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
-
-export default tmp2;
+};

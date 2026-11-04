@@ -1,149 +1,138 @@
 // Module ID: 5398
 // Function ID: 5399
-// Dependencies: [32, 19, 5396, 5386, 5399, 5372, 5387, 5334]
-// Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
+// Dependencies: [5371, 5386, 5362]
+// Exports: usePanGesture
 
 // Module 5398
-import react from "react" /* 19 */;
-import Reanimated2 from "Reanimated" /* 5372 */;
-import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 5386 */;
-import allowedNativeProps2 from "allowedNativeProps" /* 5387 */;
-import _mod5396 from "module_5396" /* 5396 */;
-import _mod5399 from "module_5399" /* 5399 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import ComposedGestureName from "ComposedGestureName" /* 5362 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5371 */;
+import _mod5386 from "module_5386" /* 5386 */;
 
-const useMemo = react.useMemo;
-const map = new Map();
-function DEFAULT_PROPS_TRANSFORMER(arg0) {
-  return arg0;
+function transformPanProps(activeOffsetY) {
+  activeOffsetY = activeOffsetY.activeOffsetY;
+  if (undefined !== activeOffsetY) {
+    const _Array = Array;
+    if (Array.isArray(activeOffsetY)) {
+      const _HermesInternal3 = HermesInternal;
+      activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY[0];
+      const _HermesInternal4 = HermesInternal;
+      activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY[1];
+    } else {
+      const obj = maybeExtractNativeEvent;
+      if (obj.maybeUnpackValue(activeOffsetY) < 0) {
+        const _HermesInternal2 = HermesInternal;
+        activeOffsetY["" + "activeOffsetY" + "Start"] = activeOffsetY;
+      } else {
+        const _HermesInternal = HermesInternal;
+        activeOffsetY["" + "activeOffsetY" + "End"] = activeOffsetY;
+      }
+    }
+    delete activeOffsetY["activeOffsetY"];
+  }
+  const failOffsetX = activeOffsetY.failOffsetX;
+  if (undefined !== failOffsetX) {
+    const _Array2 = Array;
+    if (Array.isArray(failOffsetX)) {
+      const _HermesInternal7 = HermesInternal;
+      activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX[0];
+      const _HermesInternal8 = HermesInternal;
+      activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX[1];
+    } else {
+      const obj2 = maybeExtractNativeEvent;
+      if (obj2.maybeUnpackValue(failOffsetX) < 0) {
+        const _HermesInternal6 = HermesInternal;
+        activeOffsetY["" + "failOffsetX" + "Start"] = failOffsetX;
+      } else {
+        const _HermesInternal5 = HermesInternal;
+        activeOffsetY["" + "failOffsetX" + "End"] = failOffsetX;
+      }
+    }
+    delete activeOffsetY["failOffsetX"];
+  }
+  const failOffsetY = activeOffsetY.failOffsetY;
+  if (undefined !== failOffsetY) {
+    const _Array3 = Array;
+    if (Array.isArray(failOffsetY)) {
+      const _HermesInternal11 = HermesInternal;
+      activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY[0];
+      const _HermesInternal12 = HermesInternal;
+      activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY[1];
+    } else {
+      const obj3 = maybeExtractNativeEvent;
+      if (obj3.maybeUnpackValue(failOffsetY) < 0) {
+        const _HermesInternal10 = HermesInternal;
+        activeOffsetY["" + "failOffsetY" + "Start"] = failOffsetY;
+      } else {
+        const _HermesInternal9 = HermesInternal;
+        activeOffsetY["" + "failOffsetY" + "End"] = failOffsetY;
+      }
+    }
+    delete activeOffsetY["failOffsetY"];
+  }
+  const activeOffsetX = activeOffsetY.activeOffsetX;
+  if (undefined !== activeOffsetX) {
+    const _Array4 = Array;
+    if (Array.isArray(activeOffsetX)) {
+      const _HermesInternal15 = HermesInternal;
+      activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX[0];
+      const _HermesInternal16 = HermesInternal;
+      activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX[1];
+    } else {
+      const obj4 = maybeExtractNativeEvent;
+      if (obj4.maybeUnpackValue(activeOffsetX) < 0) {
+        const _HermesInternal14 = HermesInternal;
+        activeOffsetY["" + "activeOffsetX" + "Start"] = activeOffsetX;
+      } else {
+        const _HermesInternal13 = HermesInternal;
+        activeOffsetY["" + "activeOffsetX" + "End"] = activeOffsetX;
+      }
+    }
+    delete activeOffsetY["activeOffsetX"];
+  }
+  const obj5 = maybeExtractNativeEvent;
+  activeOffsetY.changeEventCalculator = obj5.getChangeEventCalculator(diffCalculator);
+  activeOffsetY.fillInDefaultValues = fillInDefaultValues;
+  return activeOffsetY;
 }
-function isGestureEnabled(gestures) {
-  let someResult;
-  const obj = _mod5396;
-  if (obj.isComposedGesture(gestures)) {
-    gestures = gestures.gestures;
-    someResult = gestures.some(isGestureEnabled);
+const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
+const map = new Map(items);
+function diffCalculator(translationX, translationX2) {
+  let diff;
+  let diff1;
+  translationX = translationX.translationX;
+  if (translationX2) {
+    diff = translationX - translationX2.translationX;
   } else {
-    const tmpResult = SHARED_VALUE_OFFSET;
-    someResult = false !== tmpResult.maybeUnpackValue(gestures.config.enabled);
+    diff = translationX;
   }
-  return someResult;
+  const translationY = translationX.translationY;
+  const obj = { changeX: diff, changeY: diff1 };
+  if (translationX2) {
+    diff1 = translationY - translationX2.translationY;
+  } else {
+    diff1 = translationY;
+  }
+  return obj;
 }
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 4211053881938;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 12221662243929;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+let closure_6 = {};
 
-export { isGestureEnabled };
-export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
-  useAnimated = useAnimated.useAnimated;
-  if (!useAnimated) {
-    const obj = _mod5399;
-    useAnimated = obj.isNativeAnimatedEvent(useAnimated.onUpdate);
+export function usePanGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_6;
   }
-  useAnimated.dispatchesAnimatedEvents = useAnimated;
-  if (useAnimated.dispatchesAnimatedEvents) {
-    useAnimated.disableReanimated = true;
-  }
-  let result = !useAnimated.disableReanimated && undefined !== Reanimated2.Reanimated;
-  if (result) {
-    const obj2 = SHARED_VALUE_OFFSET;
-    result = obj2.hasWorkletEventHandlers(useAnimated);
-  }
-  if (result) {
-    result = !useAnimated.dispatchesAnimatedEvents;
-  }
-  useAnimated.shouldUseReanimatedDetector = result;
-  const obj3 = _mod5399;
-  useAnimated.needsPointerData = obj3.shouldHandleTouchEvents(useAnimated);
-};
-export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
-  let first;
-  let iter;
-  shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
-  if (shouldUseReanimatedDetector) {
-    const obj = SHARED_VALUE_OFFSET;
-    shouldUseReanimatedDetector = !obj.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
-  }
-  const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
-  const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
-  let EMPTY_WHITE_LIST = PropsWhiteLists.get(arg0);
-  if (EMPTY_WHITE_LIST == null) {
-    EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
-  }
-  const entries = Object.entries(shouldUseReanimatedDetector);
-  const tmp12 = entries[Symbol.iterator]();
-  while (tmp12 !== undefined) {
-    [first, iter] = tmp13;
-    let tmp17 = first;
-    let tmp19 = require;
-    let allowedNativeProps = allowedNativeProps2.allowedNativeProps;
-    if (!allowedNativeProps.has(first)) {
-      if (!EMPTY_WHITE_LIST.has(tmp17)) {
-        let PropsToFilter = tmp19(5387).PropsToFilter;
-        if (PropsToFilter.has(tmp17)) {
-          continue;
-        } else {
-          let _console = console;
-          let tmp19Result = tmp19(5334);
-          let _HermesInternal = HermesInternal;
-          let str = "";
-          let str2 = " is not a valid property for ";
-          let str3 = " and will be ignored.";
-          let warnResult = warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
-        }
-        continue;
-      }
-      continue;
-    }
-    let Reanimated = tmp19(5372).Reanimated;
-    let isSharedValueResult;
-    if (Reanimated != null) {
-      isSharedValueResult = Reanimated.isSharedValue(iter);
-    }
-    obj2[tmp17] = isSharedValueResult ? iter.value : iter;
-  }
-  return obj2;
-};
-export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(cResult, map, transformHoverProps) {
-  let closure_0 = cResult;
-  let tmp = map;
-  if (map === undefined) {
-    tmp = map;
-  }
-  let closure_1 = tmp;
-  let tmp2 = transformHoverProps;
-  if (transformHoverProps === undefined) {
-    tmp2 = DEFAULT_PROPS_TRANSFORMER;
-  }
-  let closure_2 = tmp2;
-  const items = [cResult, tmp, tmp2];
-  return useMemo(() => {
-    const obj = {};
-    const merged = Object.assign(closure_0);
-    const item = closure_1.forEach((item, index) => {
-      if (index in obj) {
-        obj[item] = obj[index];
-        delete obj[tmp];
-      }
-    });
-    const tmp3 = closure_2(obj);
-    let useAnimated = tmp3.useAnimated;
-    if (!useAnimated) {
-      const obj2 = _mod5399;
-      useAnimated = obj2.isNativeAnimatedEvent(tmp3.onUpdate);
-    }
-    tmp3.dispatchesAnimatedEvents = useAnimated;
-    if (tmp3.dispatchesAnimatedEvents) {
-      tmp3.disableReanimated = true;
-    }
-    let result = !tmp3.disableReanimated && undefined !== Reanimated2.Reanimated;
-    if (result) {
-      const obj3 = SHARED_VALUE_OFFSET;
-      result = obj3.hasWorkletEventHandlers(tmp3);
-    }
-    if (result) {
-      result = !tmp3.dispatchesAnimatedEvents;
-    }
-    tmp3.shouldUseReanimatedDetector = result;
-    const obj4 = _mod5399;
-    tmp3.needsPointerData = obj4.shouldHandleTouchEvents(tmp3);
-    return tmp3;
-  }, items);
-};
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
+  const obj2 = _mod5386;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
+}

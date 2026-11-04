@@ -1,54 +1,30 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 17240
+// Function ID: 17241
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [2014, 8364, 558, 576, 504, 5883, 11240, 1128, 2]
+// Dependencies: [2006, 8432, 504, 5915, 11540, 1113, 2]
 
-// Module 16640 (AutoVoiceSensitivitySetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5883 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17240 (AutoVoiceSensitivitySetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoVoiceSensitivitySettingValue() {
-  let modeOptions;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function n() {
-      return modeOptions.getModeOptions().autoThreshold;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useAutoVoiceSensitivitySettingValue() {
-  let modeOptions;
-  const items = [MediaEngineStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.Z4oaN0);
   },
   parent: MobileUserSettings.VOICE,
-  useValue: tmp2,
+  useValue: function useAutoVoiceSensitivitySettingValue() {
+    let modeOptions;
+    const items = [MediaEngineStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);
+  },
   onValueChange: function onAutoVoiceSensitivitySettingValueChange(autoThreshold) {
     const mode = MediaEngineStore.getMode();
     const obj = AudioActionCreatorsDefault;

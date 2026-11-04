@@ -1,13 +1,13 @@
-// Module ID: 7574
-// Function ID: 7575
+// Module ID: 7615
+// Function ID: 7616
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 5946, 1128, 5942, 2]
+// Dependencies: [5, 32, 19, 21, 5964, 1113, 5960, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 7574 (showCheckoutOrderErrorModal)
-import intl4 from "intl" /* 1128 */;
-import useAlertStore from "useAlertStore" /* 5942 */;
-import AlertModal2 from "AlertModal" /* 5946 */;
+// Module 7615 (showCheckoutOrderErrorModal)
+import intl4 from "intl" /* 1113 */;
+import useAlertStore from "useAlertStore" /* 5960 */;
+import AlertModal2 from "AlertModal" /* 5964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ function SyncedLoadingAlertModal(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -92,7 +92,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -118,7 +118,7 @@ function SyncedLoadingAlertModal(onConfirm) {
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
 
-export const showRetryConfirmModal = function showRetryConfirmModal(dismissable) {
+export function showRetryConfirmModal(dismissable) {
   let key;
   let onCloseCallback;
   ({ key, onCloseCallback } = dismissable);
@@ -130,8 +130,8 @@ export const showRetryConfirmModal = function showRetryConfirmModal(dismissable)
   const merged1 = Object.assign(merged);
   const obj2 = { dismissable };
   openAlert(key, hasOwnProperty(SyncedLoadingAlertModal, obj), onCloseCallback, obj2);
-};
-export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(arg0, c6) {
+}
+export function showCheckoutOrderErrorModal(arg0, c6) {
   let closure_0 = arg0;
   let closure_1 = c6;
   const promise = new Promise((arg0) => {
@@ -171,7 +171,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
             tmp = value;
             closure_129_0(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -223,4 +223,4 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
     openAlert(key, closure_1_5(SyncedLoadingAlertModal, obj2), onCloseCallback, obj3);
   });
   return promise;
-};
+}

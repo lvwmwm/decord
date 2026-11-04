@@ -1,12 +1,12 @@
-// Module ID: 18979
-// Function ID: 18980
+// Module ID: 19612
+// Function ID: 19613
 // Name: MessageRemindersNotificationManager
-// Dependencies: [10109, 584, 1104, 7246, 2]
+// Dependencies: [10191, 572, 1089, 7287, 2]
 
-// Module 18979 (MessageRemindersNotificationManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10109 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+// Module 19612 (MessageRemindersNotificationManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10191 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -42,7 +42,7 @@ function scheduleNextNotification() {
     let _Date = Date;
     const timestamp = Date.now();
     let dueAt = found.saveData.dueAt;
-    const sum = timestamp + found(1104).Millis.WEEK;
+    const sum = timestamp + found(1089).Millis.WEEK;
     if (dueAt.getTime() <= sum) {
       const dueAt2 = found.saveData.dueAt;
       const _Date2 = Date;

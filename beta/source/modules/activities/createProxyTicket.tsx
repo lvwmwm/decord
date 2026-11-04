@@ -1,12 +1,12 @@
-// Module ID: 10762
-// Function ID: 10763
+// Module ID: 10885
+// Function ID: 10886
 // Name: createProxyTicket
-// Dependencies: [5, 502, 1087, 1297, 5655, 2]
+// Dependencies: [5, 502, 1072, 1282, 5672, 2]
 // Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
-// Module 10762 (createProxyTicket)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 10885 (createProxyTicket)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _createProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,10 +167,10 @@ const Endpoints = Constants.Endpoints;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/activities/createProxyTicket.tsx");
 
-export const createProxyTicket = function createProxyTicket() {
+export function createProxyTicket() {
   return obj(...arguments);
-};
-export const prefetchProxyTicket = function prefetchProxyTicket(application_id, arg1, type) {
+}
+export function prefetchProxyTicket(application_id, arg1, type) {
   const items = [AuthenticationStore.getId(), application_id, , ];
   let str = arg1;
   if (arg1 == null) {
@@ -200,8 +200,8 @@ export const prefetchProxyTicket = function prefetchProxyTicket(application_id, 
   } else {
     const _Date = Date;
   }
-};
-export const rememberProxyTicket = function rememberProxyTicket(proxy_ticket, id, CONJURE_UNKNOWN_CHANNEL, APP_CHANNEL) {
+}
+export function rememberProxyTicket(proxy_ticket, id, CONJURE_UNKNOWN_CHANNEL, APP_CHANNEL) {
   let str = CONJURE_UNKNOWN_CHANNEL;
   const items = [, , , ];
   set = map.set;
@@ -219,4 +219,4 @@ export const rememberProxyTicket = function rememberProxyTicket(proxy_ticket, id
   obj = { ticket: Promise.resolve(proxy_ticket), expiresAt: Date.now() + 60000 };
   const joined = items.join(":");
   const result = set(joined, obj);
-};
+}

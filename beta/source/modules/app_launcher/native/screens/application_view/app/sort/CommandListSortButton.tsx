@@ -1,19 +1,19 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12480
+// Function ID: 12481
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 12160, 1206, 21, 5003, 587, 1128, 6940, 5242, 12176, 2002, 5266, 11111, 2]
+// Dependencies: [19, 17, 12465, 1191, 21, 5014, 575, 1113, 6980, 5258, 12481, 1994, 5624, 11414, 2]
 // Exports: default
 
-// Module 12175 (CommandListSortButton)
+// Module 12480 (CommandListSortButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import FormConstants from "FormConstants" /* 1206 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 12160 */;
+import nativeDefault from "native" /* 575 */;
+import FormConstants from "FormConstants" /* 1191 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 12465 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -40,11 +40,11 @@ export default function CommandListSortButton(sortOrder) {
   const onSortOptionPress = sortOrder.onSortOptionPress;
   const tmp = closure_8();
   if (CommandListSortOrder.POPULAR === sortOrder) {
-    const intl2 = sortOrder(1128).intl;
-    stringResult = intl2.string(sortOrder(1128).t.SzxiqK);
+    const intl2 = sortOrder(1113).intl;
+    stringResult = intl2.string(sortOrder(1113).t.SzxiqK);
   } else if (tmp2.ALPHABETICAL === sortOrder) {
-    const intl = sortOrder(1128).intl;
-    stringResult = intl.string(sortOrder(1128).t.m8xsti);
+    const intl = sortOrder(1113).intl;
+    stringResult = intl.string(sortOrder(1113).t.m8xsti);
   }
   let obj = {
     accessibilityRole: "button",
@@ -61,15 +61,15 @@ export default function CommandListSortButton(sortOrder) {
           obj.hideActionSheet("CommandListSortActionSheet");
         }
       };
-      obj.openLazy(asyncRequire(12176, dependencyMap.paths), "CommandListSortActionSheet", obj2);
+      obj.openLazy(asyncRequire(12481, dependencyMap.paths), "CommandListSortActionSheet", obj2);
     },
     children: closure_7(View, obj2)
   };
   obj2 = { style: tmp.button, children: items };
-  const PressableOpacity = sortOrder(6940).PressableOpacity;
-  items = [closure_6(sortOrder(5266).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
-  const obj3 = { size: "xs", color: onSortOptionPress(587).colors.TEXT_DEFAULT };
-  const ChevronSmallDownIcon = sortOrder(11111).ChevronSmallDownIcon;
+  const PressableOpacity = sortOrder(6980).PressableOpacity;
+  items = [closure_6(sortOrder(5624).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  const obj3 = { size: "xs", color: onSortOptionPress(575).colors.TEXT_DEFAULT };
+  const ChevronSmallDownIcon = sortOrder(11414).ChevronSmallDownIcon;
   items[1] = closure_6(ChevronSmallDownIcon, obj3);
   return closure_6(PressableOpacity, obj);
 };

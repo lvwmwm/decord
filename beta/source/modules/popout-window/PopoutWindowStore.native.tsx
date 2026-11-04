@@ -1,11 +1,11 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 7902
+// Function ID: 7903
 // Name: PopoutWindowStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 7862 (PopoutWindowStore)
+// Module 7902 (PopoutWindowStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let obj = {};

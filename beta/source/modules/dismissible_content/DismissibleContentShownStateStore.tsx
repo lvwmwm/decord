@@ -1,25 +1,23 @@
-// Module ID: 4847
-// Function ID: 4848
+// Module ID: 4855
+// Function ID: 4856
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 4848, 4849, 4842, 1087, 569, 1269, 4843, 1297, 4850, 1274, 558, 576, 504, 4851, 584, 2]
-// Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown
+// Dependencies: [5, 4856, 4857, 4850, 1072, 559, 1254, 4851, 1282, 4858, 1259, 504, 4859, 572, 2]
+// Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 4847 (DismissibleContentShownStateStore)
+// Module 4855 (DismissibleContentShownStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import BackoffDefault from "Backoff" /* 569 */;
-import react from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import react_native from "react-native" /* 1274 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4843 */;
-import Timers from "Timers" /* 4850 */;
-import isActionRequiredDefault from "isActionRequired" /* 4851 */;
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import react_native from "react-native" /* 1259 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4851 */;
+import Timers from "Timers" /* 4858 */;
+import isActionRequiredDefault from "isActionRequired" /* 4859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4848 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4849 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4842 */;
-import Constants from "Constants" /* 1087 */;
-import module_1269 from "module_1269" /* 1269 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4856 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4850 */;
+import Constants from "Constants" /* 1072 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,14 +25,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
-const f93739 = (item) => {
+const f86541 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f93741 = () => {
+const f86543 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -133,7 +131,7 @@ let obj = function _arbitrateCandidates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -262,7 +260,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f93739);
+          const found = items1.filter(f86541);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -392,7 +390,7 @@ const tmp4 = new BackoffDefault(1000, 60000);
 let closure_9 = tmp4;
 let closure_10 = {};
 let c11 = null;
-let closure_12 = module_1269.createWithEqualityFn(function initState() {
+let closure_12 = module_1254.createWithEqualityFn(function initState() {
   obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: false };
   new Map();
   new Set();
@@ -458,7 +456,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -581,7 +579,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f93739);
+                let found = items.filter(f86541);
                 const tmp11 = closure_2_14;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
@@ -615,7 +613,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
         }
       }
       c4 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     } catch (tmp25) {
       c4 = 3;
       throw tmp25;
@@ -625,85 +623,6 @@ let _require = _asyncToGenerator(async (arg0, value) => {
 const batchInvocationManager = new BatchInvocationManager(function() {
   return closure_0(...arguments);
 }, { delay: 250, maxConcurrentInvocations: 1 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsContentShown(arg0) {
-  let tmp2;
-  let closure_0 = arg0;
-  obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function n(currentlyShown) {
-      currentlyShown = currentlyShown.currentlyShown;
-      return currentlyShown.has(closure_0);
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_12(tmp2);
-}) : (function useIsContentShown(arg0) {
-  let closure_0 = arg0;
-  return closure_12((currentlyShown) => {
-    currentlyShown = currentlyShown.currentlyShown;
-    return currentlyShown.has(closure_0);
-  });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAnyContentShown(arg0) {
-  let tmp2;
-  let closure_0 = arg0;
-  obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function n(arg0) {
-      closure_0 = arg0;
-      return closure_0.some((item) => {
-        currentlyShown = currentlyShown.currentlyShown;
-        return currentlyShown.has(item);
-      });
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_12(tmp2);
-}) : (function useIsAnyContentShown(arg0) {
-  let closure_0 = arg0;
-  return closure_12((arg0) => {
-    closure_0 = arg0;
-    return closure_0.some((item) => {
-      currentlyShown = currentlyShown.currentlyShown;
-      return currentlyShown.has(item);
-    });
-  });
-});
-function isStateInCooldown(shownFatigableCandidate) {
-  if (DismissibleContentFrameworkStore.upsellBackoffOverridden) {
-    return false;
-  } else {
-    const _Date = Date;
-    const self = this;
-    const self2 = this;
-    let tmp7 = null == shownFatigableCandidate.shownFatigableCandidate;
-    new Date();
-    if (tmp7) {
-      tmp7 = tmp5 - shownFatigableCandidate.lastWinnerTime < 3600000;
-    }
-    return tmp7;
-  }
-}
-function reset() {
-  obj = react_native;
-  obj.batchUpdates(f93741);
-  closure_10 = {};
-  c11 = null;
-  closure_9.succeed();
-  batchInvocationManager.reset();
-}
 const Store = get_initializedDefault.Store;
 class DismissibleContentShownStateStore extends Store {
   initialize() {
@@ -721,7 +640,7 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f93741);
+    obj.batchUpdates(f86543);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -730,7 +649,7 @@ obj = {
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f93741);
+    obj.batchUpdates(f86543);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -738,16 +657,28 @@ obj = {
   }
 };
 const dismissibleContentShownStateStore = new DismissibleContentShownStateStore(DispatcherDefault, obj);
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
+let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
 
 export default function useDismissibleContentShownStateStore(arg0, arg1) {
   return closure_12(arg0, arg1);
 };
 export { isInCooldown };
-export { isStateInCooldown };
-export const addCandidateContent = function addCandidateContent(content) {
+export function isStateInCooldown(shownFatigableCandidate) {
+  if (DismissibleContentFrameworkStore.upsellBackoffOverridden) {
+    return false;
+  } else {
+    const _Date = Date;
+    const self = this;
+    const self2 = this;
+    let tmp7 = null == shownFatigableCandidate.shownFatigableCandidate;
+    new Date();
+    if (tmp7) {
+      tmp7 = tmp5 - shownFatigableCandidate.lastWinnerTime < 3600000;
+    }
+    return tmp7;
+  }
+}
+export function addCandidateContent(content) {
   let c2;
   _require = content;
   obj = require("DismissibleContentFatigueConfig");
@@ -782,8 +713,8 @@ export const addCandidateContent = function addCandidateContent(content) {
   if (null != dependencyMap) {
     applyWinnerUpdateResult(dependencyMap);
   }
-};
-export const removeCandidateContent = function removeCandidateContent(arg0, arg1) {
+}
+export function removeCandidateContent(arg0, arg1) {
   let c2;
   let closure_0;
   let state;
@@ -870,15 +801,15 @@ export const removeCandidateContent = function removeCandidateContent(arg0, arg1
       batchInvocationManager.reset();
     }
   }
-};
-export const getLastShownDismissibleContent = function getLastShownDismissibleContent() {
+}
+export function getLastShownDismissibleContent() {
   let first = closure_12.getState().recentlyShown[0];
   if (first == null) {
     first = null;
   }
   return first;
-};
-export const getCurrentFatigableWinner = function getCurrentFatigableWinner() {
+}
+export function getCurrentFatigableWinner() {
   const shownFatigableCandidate = closure_12.getState().shownFatigableCandidate;
   let content;
   if (shownFatigableCandidate != null) {
@@ -888,18 +819,33 @@ export const getCurrentFatigableWinner = function getCurrentFatigableWinner() {
     content = null;
   }
   return content;
-};
-export const isContentShown = function isContentShown(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL) {
+}
+export function isContentShown(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL) {
   const currentlyShown = closure_12.getState().currentlyShown;
   return currentlyShown.has(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
-};
-export const useIsContentShown = tmp6;
-export const useIsAnyContentShown = tmp7;
-export const isAnyContentShown = function isAnyContentShown(arr) {
+}
+export function useIsContentShown(USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
+  let closure_0 = USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
+  return closure_12((currentlyShown) => {
+    currentlyShown = currentlyShown.currentlyShown;
+    return currentlyShown.has(closure_0);
+  });
+}
+export function useIsAnyContentShown(arg0) {
+  let closure_0 = arg0;
+  return closure_12((arg0) => {
+    closure_0 = arg0;
+    return closure_0.some((item) => {
+      currentlyShown = currentlyShown.currentlyShown;
+      return currentlyShown.has(item);
+    });
+  });
+}
+export function isAnyContentShown(arr) {
   const currentlyShown = closure_12.getState().currentlyShown;
   return arr.find((item) => currentlyShown.has(item));
-};
-export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
+}
+export function getCurrentlyShownCounts() {
   const items = [...closure_12.getState().currentlyShown];
   const items1 = [, ];
   const length = items.filter((item) => {
@@ -909,9 +855,16 @@ export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
   items1[0] = closure_12.getState().currentlyShown.size;
   items1[1] = length;
   return items1;
-};
-export { reset };
-export const resetFatigueCooldown = function resetFatigueCooldown() {
+}
+export function reset() {
+  obj = react_native;
+  obj.batchUpdates(f86543);
+  closure_10 = {};
+  c11 = null;
+  closure_9.succeed();
+  batchInvocationManager.reset();
+}
+export function resetFatigueCooldown() {
   let state;
   obj = react_native;
   obj.batchUpdates(() => {
@@ -924,8 +877,8 @@ export const resetFatigueCooldown = function resetFatigueCooldown() {
       return obj;
     });
   });
-};
-export const isPostConnectionOpen = function isPostConnectionOpen() {
+}
+export function isPostConnectionOpen() {
   return closure_12.getState().postConnectionOpen;
-};
+}
 export { dismissibleContentShownStateStore };

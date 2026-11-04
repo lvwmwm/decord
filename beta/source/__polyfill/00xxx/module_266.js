@@ -106,7 +106,7 @@ let closure_3 = tmp2;
 module_126.setPlatformObject(tmp2);
 
 export default tmp2;
-export const createIntersectionObserverEntry = function createIntersectionObserverEntry(arg0, arg1) {
+export function createIntersectionObserverEntry(arg0, arg1) {
   const tmp = new closure_3(arg0, arg1);
   return tmp;
-};
+}

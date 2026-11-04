@@ -1,20 +1,20 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16993
+// Function ID: 16994
 // Name: useAndroidUnsyncedFilter
-// Dependencies: [19, 5269, 7556, 9498, 504, 2065, 9480, 2]
+// Dependencies: [19, 5627, 7597, 9569, 504, 2059, 9551, 2]
 // Exports: useAndroidUnsyncedFilter
 
-// Module 16399 (useAndroidUnsyncedFilter)
+// Module 16993 (useAndroidUnsyncedFilter)
 import react from "react" /* 19 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2065 */;
-import DevSettingsStore from "DevSettingsStore" /* 5269 */;
-import IAPStore from "IAPStore" /* 7556 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2059 */;
+import DevSettingsStore from "DevSettingsStore" /* 5627 */;
+import IAPStore from "IAPStore" /* 7597 */;
 import size from "module_2" /* 2 */;
 
 react.useCallback;
 const result = size.fileFinishedImporting("modules/collectibles/native/useAndroidUnsyncedFilter.tsx");
 
-export const useAndroidUnsyncedFilter = function useAndroidUnsyncedFilter() {
+export function useAndroidUnsyncedFilter() {
   let isInImprovedMobileShopLoading;
   let stateFromStores;
   let obj = isInImprovedMobileShopLoading(stateFromStores[3]);
@@ -57,4 +57,4 @@ export const useAndroidUnsyncedFilter = function useAndroidUnsyncedFilter() {
     }
     return found;
   }, items5);
-};
+}

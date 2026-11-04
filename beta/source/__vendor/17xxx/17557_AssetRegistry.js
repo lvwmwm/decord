@@ -1,10 +1,10 @@
 // Module ID: 17557
 // Function ID: 17558
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 17557 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 21, height: 18, scales: [1, 2, 3], hash: "f19353ccef9be27782bf69aac76f0908", name: "ic_invite", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e0471dd70c51b44f6fe3c89ec72a7182", name: "MobilePhoneSettingsIcon", type: "png" });

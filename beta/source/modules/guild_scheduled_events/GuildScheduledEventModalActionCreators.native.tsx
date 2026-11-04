@@ -1,21 +1,21 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8962
+// Function ID: 8963
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 4861, 8916, 5242, 8917, 2002, 8922, 9184, 2]
+// Dependencies: [5, 4869, 8963, 5258, 8964, 1994, 8969, 9220, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8915 (GuildScheduledEventModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8916 */;
+// Module 8962 (GuildScheduledEventModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(8922);
+const ScheduleUtils = tmp3(8969);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(8917, dependencyMap.paths);
+  const tmp4 = asyncRequire(8964, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -49,7 +49,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
             }
             tmp7(obj);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           c5 = 3;
@@ -100,11 +100,11 @@ let closure_5 = GuildEventModalConstants.GUILD_EVENT_INFO_ACTION_SHEET_KEY;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 
 export { openGuildEventDetails };
-export const transitionToEventDetailsFromInvite = function transitionToEventDetailsFromInvite() {
+export function transitionToEventDetailsFromInvite() {
   return obj(...arguments);
-};
-export const openEndEventModal = function openEndEventModal(channel) {
+}
+export function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9184, dependencyMap.paths), closure_4, obj2);
-};
+  obj.openLazy(asyncRequire(9220, dependencyMap.paths), closure_4, obj2);
+}

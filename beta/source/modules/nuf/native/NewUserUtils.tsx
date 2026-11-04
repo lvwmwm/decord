@@ -1,34 +1,43 @@
-// Module ID: 18938
-// Function ID: 18939
+// Module ID: 19563
+// Function ID: 19564
 // Name: NewUserUtils
-// Dependencies: [5, 17411, 6532, 1392, 1087, 13614, 7900, 13616, 1384, 7923, 9082, 584, 1506, 13619, 6704, 18937, 1114, 13726, 2]
+// Dependencies: [5, 18001, 6572, 1383, 13974, 1072, 14249, 7940, 18049, 14251, 1375, 7963, 18050, 13975, 1242, 19564, 9118, 572, 1498, 14254, 6744, 19562, 1099, 14360, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 18938 (NewUserUtils)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import router_utils from "router_utils" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Link from "Link" /* 1506 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7900 */;
-import react_nativeDefault from "react-native" /* 7923 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13614 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13619 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13726 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 18937 */;
+// Module 19563 (NewUserUtils)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import router_utils from "router_utils" /* 1099 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import Link from "Link" /* 1498 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;
+import react_nativeDefault from "react-native" /* 7963 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9118 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14249 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14254 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14360 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18049 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 19562 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 19564 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17411 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6532 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18001 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
+import UserStore from "UserStore" /* 1383 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13974 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c2, closure_5, registration;
+let _require, c0, c1, c2, c4, c5, closure_5, registration;
 
+let c10;
+let c9;
 let metroImportAll;
 let metroImportDefault;
+function shouldSkipContactSync() {
+  obj = MobileOnboardingFrictionExperimentDefault;
+  return obj.getMobileOnboardingFrictionConfig(NewUserUtils).skipContactSync;
+}
 let obj = function _shouldSkipContactSyncStep() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -42,7 +51,7 @@ let obj = function _shouldSkipContactSyncStep() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -77,9 +86,9 @@ let obj = function _shouldSkipContactSyncStep() {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          isIOSResult = value === closure_128_9.UNAUTHORIZED;
+          isIOSResult = value === closure_128_11.UNAUTHORIZED;
           if (isIOSResult) {
-            obj = closure_128_0(closure_128_2[8]);
+            obj = closure_128_0(closure_128_2[10]);
             isIOSResult = obj.isIOS();
           }
         }
@@ -100,7 +109,7 @@ function lastStepComplete(STEP_GUILD_TEMPLATE) {
   const obj2 = ModalActionCreatorsDefault;
   obj2.popWithKey(NewUserModalTypes.NEW_USER_MODAL_KEY);
   const obj3 = router_utils;
-  obj3.transitionTo(metroImportAll.ME, { navigationReplace: true });
+  obj3.transitionTo(constants2.ME, { navigationReplace: true });
   const obj4 = nuf_NUFActionCreators;
   const result = obj4.setNewUserFlowCompleted();
 }
@@ -124,7 +133,7 @@ obj = function _getNextOnboardingStep() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -159,7 +168,7 @@ obj = function _getNextOnboardingStep() {
               transitionStep = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -170,7 +179,7 @@ obj = function _getNextOnboardingStep() {
               return { value, done: true };
             } else {
               let key;
-              if (closure_133_14[lastShownStepIndex] != null) {
+              if (closure_133_18[lastShownStepIndex] != null) {
                 key = tmp70.key;
               }
               registration = key;
@@ -179,12 +188,12 @@ obj = function _getNextOnboardingStep() {
               }
               closure_3 = registration;
               sum = sum + 1;
-              if (sum >= closure_133_14.length) {
-                closure_133_15(closure_3);
+              if (sum >= closure_133_18.length) {
+                closure_133_19(closure_3);
                 c7 = 3;
                 return { value: { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false }, done: true };
               } else {
-                tmp = closure_133_14[sum];
+                tmp = closure_133_18[sum];
                 key2 = tmp.key;
                 shouldShowStep = tmp.shouldShowStep;
                 transitionStep = tmp.transitionStep;
@@ -207,17 +216,17 @@ obj = function _getNextOnboardingStep() {
                 let obj12;
                 lastShownStepIndex = sum;
                 const obj10 = { skip: flag };
-                const obj3 = closure_133_0(closure_133_2[13]);
+                const obj3 = closure_133_0(closure_133_2[19]);
                 obj3.trackNUFStep(closure_3, key2, obj10);
                 if (null != transitionStep) {
-                  closure_133_15(key2);
+                  closure_133_19(key2);
                   transitionStep();
                   obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
                   const obj11 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
                 } else {
                   obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
                   transitionStep = undefined;
-                  if (closure_133_14[sum] != null) {
+                  if (closure_133_18[sum] != null) {
                     transitionStep = tmp25.transitionStep;
                   }
                 }
@@ -225,7 +234,7 @@ obj = function _getNextOnboardingStep() {
               } else {
                 c6 = 3;
                 c7 = 1;
-                const obj13 = { value: closure_133_16(flag, lastShownStepIndex, sum), done: false };
+                const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
                 return obj13;
               }
             } else if (arg0 === 1) {
@@ -252,30 +261,36 @@ obj = function _getNextOnboardingStep() {
   });
   return obj(...arguments);
 };
-({ PlatformTypes: metroImportDefault, Routes: metroImportAll } = Constants);
+({ EventActionLocation: metroImportDefault, EventActionType: metroImportAll } = NotificationPermissionConstants);
+({ PlatformTypes: c9, Routes: c10 } = Constants);
 const ContactPermissions = ContactSyncConstants.ContactPermissions;
-let closure_10 = NativePermissionConstants.NotificationAuthorizationStatus;
+let closure_12 = NativePermissionConstants.NotificationAuthorizationStatus;
+const NewUserUtils = "NewUserUtils";
 obj = {
   key: "choose-avatar",
   shouldShowStep() {
-    const currentUser = UserStore.getCurrentUser();
-    let avatar;
-    if (currentUser != null) {
-      avatar = currentUser.avatar;
+    obj = MobileOnboardingFrictionExperimentDefault;
+    let tmp = !obj.getMobileOnboardingFrictionConfig(NewUserUtils).skipAvatar;
+    if (tmp) {
+      const currentUser = UserStore.getCurrentUser();
+      let avatar;
+      if (currentUser != null) {
+        avatar = currentUser.avatar;
+      }
+      tmp = null == avatar;
     }
-    return null == avatar;
+    return tmp;
   }
 };
 let obj2 = {
   key: "enable-notification",
   shouldShowStep() {
-    return closure_12(...arguments);
+    return closure_16(...arguments);
   }
 };
-let closure_12 = _asyncToGenerator(async (arg0, value) => {
-  let obj4;
-  if (c2 === 2) {
-    c2 = 3;
+let closure_16 = _asyncToGenerator(async (arg0, value) => {
+  if (c5 === 2) {
+    c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
   } else if (tmp3 === 3) {
     if (arg0 === 1) {
@@ -284,60 +299,132 @@ let closure_12 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
+    let c3;
     try {
-      let isIOSResult;
-      c2 = 2;
-      if (0 === c1) {
+      let notificationPrompt;
+      let closure_1;
+      let notificationAuthorizationStatus;
+      c5 = 2;
+      if (0 === c4) {
         if (arg0 === 1) {
-          c2 = 3;
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c2 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          c5 = 3;
+          const obj4 = { value, done: true };
+          return obj4;
         } else {
-          let closure_0 = tmp;
-          const obj2 = PlatformUtils;
-          isIOSResult = obj2.isIOS();
-          if (isIOSResult) {
-            c1 = 1;
-            c2 = 1;
-            const obj6 = { value: obj4.getNotificationAuthorizationStatus(), done: false };
-            obj4 = react_nativeDefault;
-            return obj6;
+          notificationPrompt = undefined;
+          closure_1 = undefined;
+          const obj11 = PlatformUtils;
+          if (obj11.isIOS()) {
+            const obj6 = MobileOnboardingFrictionExperimentDefault;
+            notificationPrompt = obj6.getMobileOnboardingFrictionConfig(NewUserUtils).notificationPrompt;
+            c3 = 1;
+            const obj7 = react_nativeDefault;
+            notificationAuthorizationStatus = obj7.getNotificationAuthorizationStatus();
+            c4 = 2;
+            c5 = 1;
+            const obj8 = { value: notificationAuthorizationStatus, done: false };
+            return obj8;
+          } else {
+            c5 = 3;
+            return { value: false, done: true };
           }
         }
-      } else if (arg0 === 1) {
-        c2 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c2 = 3;
-        obj = { value, done: true };
-        return obj;
+      } else if (1 === c4) {
+        c3 = 0;
+        notificationAuthorizationStatus = notificationPrompt;
+        if (notificationPrompt !== closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.OS_ONLY) {
+          throw closure_2;
+        } else {
+          const obj5 = closure_129_1(closure_129_2[14]);
+          obj5.captureException(closure_2);
+          c5 = 3;
+          return { value: false, done: true };
+        }
       } else {
-        isIOSResult = value !== closure_128_10.AUTHORIZED;
+        if (2 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj9 = { value, done: true };
+            return obj9;
+          } else {
+            closure_1 = value;
+            notificationAuthorizationStatus = closure_1;
+            if (closure_1 === closure_129_12.AUTHORIZED) {
+              c3 = 0;
+              c5 = 3;
+              return { value: false, done: true };
+            } else {
+              notificationAuthorizationStatus = notificationPrompt;
+              if (closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.EXPLAINER === notificationPrompt) {
+                c3 = 0;
+                c5 = 3;
+                return { value: true, done: true };
+              } else if (closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.OS_ONLY === notificationAuthorizationStatus) {
+                notificationAuthorizationStatus = closure_1;
+                if (closure_1 !== closure_129_12.DENIED) {
+                  const obj2 = closure_129_0(closure_129_2[13]);
+                  notificationAuthorizationStatus = obj2.requestPushNotificationPermission(closure_129_8.REQUEST, closure_129_7.AUTO_PROMPT, () => {
+
+                  });
+                  c4 = 3;
+                  c5 = 1;
+                  const obj10 = { value: notificationAuthorizationStatus, done: false };
+                  return obj10;
+                }
+              } else if (closure_129_0(closure_129_2[12]).OnboardingNotificationPrompt.NONE === notificationAuthorizationStatus) {
+                c3 = 0;
+                c5 = 3;
+                return { value: false, done: true };
+              } else {
+                c3 = 0;
+                c5 = 3;
+                return { value: "HermesInternal", done: "HermesInternal" };
+              }
+            }
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+        c3 = 0;
+        c5 = 3;
+        return { value: false, done: true };
       }
-      c2 = 3;
-      const obj7 = { value: isIOSResult, done: true };
-      return obj7;
-    } catch (tmp11) {
-      c2 = 3;
-      throw tmp11;
+    } catch (tmp36) {
+      closure_2 = tmp36;
+      if (0 === c3) {
+        c5 = 3;
+        throw tmp36;
+      } else {
+        c4 = 1;
+      }
     }
   }
 });
 let obj3 = {
   key: "contact-sync",
   shouldShowStep() {
-    return closure_13(...arguments);
+    return closure_17(...arguments);
   }
 };
-let closure_13 = _asyncToGenerator(async (arg0, value) => {
+let closure_17 = _asyncToGenerator(async (arg0, value) => {
   function shouldSkipContactSyncStep() {
-    return closure_1_11(...arguments);
+    return closure_1_15(...arguments);
   }
   if (c0 === 2) {
     c0 = 3;
@@ -349,7 +436,7 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -363,8 +450,11 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
           c0 = 3;
           const obj3 = { value, done: true };
           return obj3;
+        } else if (shouldSkipContactSync()) {
+          c0 = 3;
+          return { value: false, done: true };
         } else {
-          const localAccount = ConnectedAccountsStore.getLocalAccount(metroImportDefault.CONTACTS);
+          const localAccount = ConnectedAccountsStore.getLocalAccount(constants.CONTACTS);
           let friendSync;
           if (localAccount != null) {
             friendSync = localAccount.friendSync;
@@ -400,9 +490,22 @@ let items = [
   obj2,
   obj3,
   {
+    key: "interest-picker",
+    shouldShowStep() {
+      const shouldShowGuardianConnect = ParentalConsentStore.getShouldShowGuardianConnect();
+      let result = !shouldShowGuardianConnect;
+      if (result) {
+        obj = InterestPickerExperiment;
+        result = obj.isInterestPickerExperimentEnabled("nuf_interest_picker_step");
+      }
+      return result;
+    }
+  },
+  {
     key: "discoverability",
     shouldShowStep() {
-      return true;
+      obj = MobileOnboardingFrictionExperimentDefault;
+      return !obj.getMobileOnboardingFrictionConfig(NewUserUtils).skipContactSync;
     }
   },
   obj,
@@ -422,17 +525,17 @@ let obj4 = {
     obj.dispatch({ type: "DEFERRED_INVITE_SHOW" });
   }
 };
-items[5] = obj4;
+items[6] = obj4;
 let result = size.fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
 
-export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardingStepIndex) {
+export function getKeyForOnboardingStep(onboardingStepIndex) {
   let key;
   if (items[onboardingStepIndex] != null) {
     key = tmp.key;
   }
   return key;
-};
-export const continueToNextStep = function continueToNextStep(onboardingStepIndex, current) {
+}
+export function continueToNextStep(onboardingStepIndex, current) {
   _require = current;
   let tmp = items[onboardingStepIndex];
   let key;
@@ -466,5 +569,5 @@ export const continueToNextStep = function continueToNextStep(onboardingStepInde
       }, 500);
     }
   }
-};
+}
 export { getNextOnboardingStep };

@@ -1,17 +1,17 @@
-// Module ID: 4934
-// Function ID: 4935
+// Module ID: 4945
+// Function ID: 4946
 // Name: createFavoritesGuildChannelRecord
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: createFavoritesGuildChannelRecord
 
-// Module 4934 (createFavoritesGuildChannelRecord)
-import Constants from "Constants" /* 1087 */;
+// Module 4945 (createFavoritesGuildChannelRecord)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/favorites/utils/createFavoritesGuildChannelRecord.tsx");
 
-export const createFavoritesGuildChannelRecord = function createFavoritesGuildChannelRecord(arg0, order, toJS) {
+export function createFavoritesGuildChannelRecord(arg0, order, toJS) {
   const constructor = new toJS.constructor(toJS.toJS());
   constructor.position_ = order.order;
   const tmp2 = null != order.nickname && toJS.type !== ChannelTypes.DM;
@@ -27,4 +27,4 @@ export const createFavoritesGuildChannelRecord = function createFavoritesGuildCh
   if (undefined === constructor.parent_id) {
     constructor.parent_id = null;
   }
-};
+}

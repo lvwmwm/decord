@@ -1,128 +1,48 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 15215
+// Function ID: 15216
 // Name: ClipsExperiment
-// Dependencies: [2014, 1392, 1394, 5750, 1455, 558, 576, 504, 2053, 1384, 2]
-// Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
+// Dependencies: [2006, 1383, 1385, 5768, 504, 2047, 1375, 2]
+// Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 14670 (ClipsExperiment)
-import react from "react" /* 576 */;
-import PlatformUtilsAll from "PlatformUtils" /* 1384 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
-import Constants from "Constants" /* 5750 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import UserStore from "UserStore" /* 1392 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15215 (ClipsExperiment)
+import get_initialized from "get initialized" /* 504 */;
+import PlatformUtilsAll from "PlatformUtils" /* 1375 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
+import Constants from "Constants" /* 5768 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
-let tmp2;
-
-let obj2;
-let tmp;
-const get_initialized = tmp(504);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const Features = Constants.Features;
-let obj = { kind: "user", name: "2026-03-clips-experiment", defaultConfig: { enableClips: false, ignorePlatformRestriction: false }, variations: obj2 };
-obj2 = { 1: null, 2: { enableClips: true, ignorePlatformRestriction: false } };
-obj2[2] = { enableClips: true, ignorePlatformRestriction: true };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
-function isUserPremiumTypeForClipsEarlyAccess(premiumType) {
-  premiumType = undefined;
-  const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
-  PremiumUtilsDefault;
-  if (premiumType != null) {
-    premiumType = premiumType.premiumType;
-  }
-  return isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
-}
-function isClientClipsCapable(MediaEngineStore) {
-  let ignorePlatformRestriction = apexExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
+const result = size.fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
+
+export function areClipsAvailable() {
   const mediaEngine = MediaEngineStore.getMediaEngine();
-  if (!ignorePlatformRestriction) {
-    const obj2 = PlatformUtilsAll;
-    ignorePlatformRestriction = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
-    const isDesktopResult = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+  const obj2 = PlatformUtilsAll;
+  let isPremiumAtLeastResult = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+  const isDesktopResult = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+  if (isPremiumAtLeastResult) {
+    const currentUser = UserStore.getCurrentUser();
+    let premiumType;
+    const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
+    PremiumUtilsDefault;
+    if (currentUser != null) {
+      premiumType = currentUser.premiumType;
+    }
+    isPremiumAtLeastResult = isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
   }
-  return ignorePlatformRestriction;
+  return isPremiumAtLeastResult;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClipsAvailable() {
+export function useIsClipsAvailable() {
   let TIER_2;
-  let first;
-  let tmp10;
-  let tmp11;
-  let tmp14;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let ignorePlatformRestriction = apexExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
-    const mediaEngine = MediaEngineStore.getMediaEngine();
-    if (!ignorePlatformRestriction) {
-      const obj3 = PlatformUtilsAll;
-      ignorePlatformRestriction = obj3.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
-      const isDesktopResult = obj3.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
-    }
-    cResult[0] = ignorePlatformRestriction;
-    first = ignorePlatformRestriction;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    class C {
-      constructor() {
-        currentUser = closure_1_5.getCurrentUser();
-        tmp2 = closure_1_1(closure_1_3[8]);
-        premiumType = undefined;
-        isPremiumAtLeast = tmp2.isPremiumAtLeast;
-        if (currentUser != null) {
-          premiumType = currentUser.premiumType;
-        }
-        return isPremiumAtLeast(premiumType, closure_1_6.TIER_2);
-      }
-    }
-    cResult[1] = items;
-    cResult[2] = C;
-    tmp11 = C;
-    tmp10 = items;
-  } else {
-    tmp10 = cResult[1];
-    tmp11 = cResult[2];
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const config = apexExperiment.getConfig({ location: "useEnableClips" });
-    class C {
-      constructor() {
-        currentUser = closure_1_5.getCurrentUser();
-        tmp2 = closure_1_1(closure_1_3[8]);
-        premiumType = undefined;
-        isPremiumAtLeast = tmp2.isPremiumAtLeast;
-        if (currentUser != null) {
-          premiumType = currentUser.premiumType;
-        }
-        return isPremiumAtLeast(premiumType, closure_1_6.TIER_2);
-      }
-    }
-    tmp14 = config;
-  } else {
-    tmp14 = cResult[3];
-  }
-  return (tmp14.enableClips || stateFromStores) && first;
-}) : (function useIsClipsAvailable() {
-  let TIER_2;
-  let ignorePlatformRestriction = apexExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
   const mediaEngine = MediaEngineStore.getMediaEngine();
-  const obj = apexExperiment;
-  if (!ignorePlatformRestriction) {
-    const obj3 = PlatformUtilsAll;
-    ignorePlatformRestriction = obj3.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
-    const isDesktopResult = obj3.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
-  }
+  const obj2 = PlatformUtilsAll;
   const items = [UserStore];
-  const obj4 = get_initialized;
-  const stateFromStores = obj4.useStateFromStores(items, () => {
+  const isDesktopResult = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+  const obj3 = get_initialized;
+  const tmp4 = obj3.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let premiumType;
     const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
@@ -131,42 +51,27 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClips
       premiumType = currentUser.premiumType;
     }
     return isPremiumAtLeast(premiumType, TIER_2.TIER_2);
-  });
-  const tmp6 = (obj.getConfig({ location: "useEnableClips" }).enableClips || stateFromStores) && ignorePlatformRestriction;
-  return tmp6;
-});
-const result = size.fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
-
-export const ClipsExperiment = apexExperiment;
-export const areClipsAvailable = function areClipsAvailable() {
-  let ignorePlatformRestriction = apexExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
-  const mediaEngine = MediaEngineStore.getMediaEngine();
-  const obj = apexExperiment;
-  if (!ignorePlatformRestriction) {
-    const obj3 = PlatformUtilsAll;
-    ignorePlatformRestriction = obj3.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
-    const isDesktopResult = obj3.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+  }) && isDesktopResult;
+  return tmp4;
+}
+export function isUserPremiumTypeForClipsEarlyAccess(currentUser) {
+  let premiumType;
+  const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
+  PremiumUtilsDefault;
+  if (currentUser != null) {
+    premiumType = currentUser.premiumType;
   }
-  if (ignorePlatformRestriction) {
-    const currentUser = UserStore.getCurrentUser();
-    let premiumType;
-    const isPremiumAtLeast = PremiumUtilsDefault.isPremiumAtLeast;
-    PremiumUtilsDefault;
-    if (currentUser != null) {
-      premiumType = currentUser.premiumType;
-    }
-    const tmp13 = isPremiumAtLeast(premiumType, PremiumTypes.TIER_2) || obj.getConfig({ location: "areClipsEnabled" }).enableClips;
-    return tmp13;
-  } else {
-    return false;
-  }
-};
-export const useIsClipsAvailable = tmp3;
-export { isUserPremiumTypeForClipsEarlyAccess };
+  return isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+}
 export function isScreenshotKeybindEnabled() {
   return false;
 }
 export function useScreenshotKeybindEnabled() {
   return false;
 }
-export { isClientClipsCapable };
+export function isClientClipsCapable(MediaEngineStore) {
+  const mediaEngine = MediaEngineStore.getMediaEngine();
+  const obj2 = PlatformUtilsAll;
+  const isDesktopResult = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+  return isDesktopResult;
+}

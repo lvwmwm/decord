@@ -1,15 +1,15 @@
-// Module ID: 574
-// Function ID: 575
+// Module ID: 564
+// Function ID: 565
 // Name: BatchedStoreListener
 // Dependencies: [508, 2]
 
-// Module 574 (BatchedStoreListener)
+// Module 564 (BatchedStoreListener)
 import EmitterDefault from "Emitter" /* 508 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/BatchedStoreListener.tsx");
 class BatchedStoreListener {
-  constructor(items, update) {
+  constructor(items, memo) {
     let obj = Object.create(new.target.prototype);
     obj.handleStoreChange = function handleStoreChange() {
       obj = EmitterDefault;
@@ -20,7 +20,7 @@ class BatchedStoreListener {
       }
     };
     obj.stores = items;
-    obj.changeCallback = update;
+    obj.changeCallback = memo;
     return obj;
   }
   attach(arg0) {

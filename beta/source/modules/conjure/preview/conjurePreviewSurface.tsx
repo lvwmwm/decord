@@ -1,43 +1,42 @@
-// Module ID: 10760
-// Function ID: 10761
+// Module ID: 10883
+// Function ID: 10884
 // Name: conjurePreviewSurface
-// Dependencies: [6807, 6805, 6808, 5658, 10761, 2]
+// Dependencies: [6846, 6847, 5675, 10884, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjureBuilderPreviewOverlayFrame, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewOverlayFrame, isConjurePreviewSurface
 
-// Module 10760 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10761 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
+// Module 10883 (conjurePreviewSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10884 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
+let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
-const f108104 = (item) => null != item;
-({ getFrameHostWindowKey: closure_4, isLaunched: hasOwnProperty, makeFrameId: metroRequire, OVERLAY_SURFACE: metroImportDefault } = FramesConstants);
-let c8 = "0";
+const f98339 = (item) => null != item;
+({ getFrameHostWindowKey: c3, isLaunched: closure_4, makeFrameId: hasOwnProperty, OVERLAY_SURFACE: metroRequire } = FramesConstants);
+let c7 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewSurface.tsx");
 
 export const CONJURE_UNKNOWN_CHANNEL = "0";
 export { CONJURE_PREVIEW_SURFACE };
-export const isConjurePreviewSurface = function isConjurePreviewSurface(surface) {
+export function isConjurePreviewSurface(surface) {
   let tmp3 = surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
   if (!tmp3) {
     tmp3 = surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL;
   }
   if (tmp3) {
-    tmp3 = surface.channelId === c8;
+    tmp3 = surface.channelId === c7;
   }
   return tmp3;
-};
-export const getConjurePreviewGuildId = function getConjurePreviewGuildId(project) {
+}
+export function getConjurePreviewGuildId(project) {
   let install_scope;
   if (project != null) {
     install_scope = project.install_scope;
@@ -47,8 +46,8 @@ export const getConjurePreviewGuildId = function getConjurePreviewGuildId(projec
     guild_id = project.guild_id;
   }
   return guild_id;
-};
-export const getConjurePreviewSurface = function getConjurePreviewSurface(stateFromStores, frameSurface) {
+}
+export function getConjurePreviewSurface(conjurePreviewGuildId, frameSurface) {
   let obj3;
   let APP_CHANNEL = frameSurface;
   if (frameSurface === undefined) {
@@ -57,19 +56,19 @@ export const getConjurePreviewSurface = function getConjurePreviewSurface(stateF
   const obj = conjurePreviewFrameSurfaces;
   const result = obj.previewFrameLaunchType(APP_CHANNEL);
   if (result === EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL) {
-    if (null == stateFromStores) {
+    if (null == conjurePreviewGuildId) {
       obj3 = obj;
     }
     return obj3;
   }
-  if (null == stateFromStores) {
+  if (null == conjurePreviewGuildId) {
     obj3 = { type: result, channelId };
     const obj2 = { type: result, channelId };
   } else {
-    obj3 = { type: result, channelId, guildId: stateFromStores };
+    obj3 = { type: result, channelId, guildId: conjurePreviewGuildId };
   }
-};
-export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewFrames(arg0) {
+}
+export function getConjureBuilderPreviewFrames(arg0) {
   let closure_0;
   _require = arg0;
   const prop = require("conjurePreviewFrameSurfaces").CONJURE_PREVIEW_LAUNCH_SURFACE_TYPES;
@@ -77,7 +76,7 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     let obj2;
     let APP_CHANNEL = item;
     const getFrame = FramesStore.getFrame;
-    const tmp2 = metroRequire;
+    const tmp2 = hasOwnProperty;
     const tmp3 = prop;
     if (item === undefined) {
       APP_CHANNEL = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
@@ -91,16 +90,16 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f108104);
-};
-export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFrame(prop) {
+  return mapped.filter(f98339);
+}
+export function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
   prop = require("conjurePreviewFrameSurfaces").CONJURE_PREVIEW_LAUNCH_SURFACE_TYPES;
   const mapped = prop.map((item) => {
     let obj2;
     let APP_CHANNEL = item;
     const getFrame = FramesStore.getFrame;
-    const tmp2 = metroRequire;
+    const tmp2 = hasOwnProperty;
     const tmp3 = prop;
     if (item === undefined) {
       APP_CHANNEL = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
@@ -114,32 +113,24 @@ export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFr
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f108104);
-  let found1 = found.find(closure_5);
+  const found = mapped.filter(f98339);
+  let found1 = found.find(closure_4);
   if (found1 == null) {
     found1 = found[0];
   }
   return found1;
-};
-export const isConjurePreviewOverlayFrame = function isConjurePreviewOverlayFrame(surface) {
-  let tmp = surface.surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY && null == React3(surface);
-  if (tmp) {
-    const result = ConjureProjectStore.findProjectByApplicationId(surface.applicationId);
-    let prop;
-    if (result != null) {
-      prop = result.preview_application_id;
-    }
-    tmp = prop === surface.applicationId;
-  }
+}
+export function isConjurePreviewOverlayFrame(surface) {
+  const tmp = surface.surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY && null == _false(surface);
   return tmp;
-};
-export const getConjureBuilderPreviewOverlayFrame = function getConjureBuilderPreviewOverlayFrame(arg0) {
-  const frame = FramesStore.getFrame(metroRequire(arg0, metroImportDefault));
+}
+export function getConjureBuilderPreviewOverlayFrame(arg0) {
+  const frame = FramesStore.getFrame(hasOwnProperty(arg0, metroRequire));
   let tmp2;
   if (null != frame) {
-    if (null == React3(frame)) {
+    if (null == _false(frame)) {
       tmp2 = frame;
     }
   }
   return tmp2;
-};
+}

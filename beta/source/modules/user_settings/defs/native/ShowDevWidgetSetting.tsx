@@ -1,46 +1,17 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 17574
+// Function ID: 17575
 // Name: ShowDevWidgetSetting
-// Dependencies: [7825, 16971, 558, 576, 504, 11240, 16972, 16168, 2]
+// Dependencies: [7863, 17575, 504, 11540, 17576, 16746, 2]
 
-// Module 16970 (ShowDevWidgetSetting)
-import react from "react" /* 576 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16168 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 16971 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 16972 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7825 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17574 (ShowDevWidgetSetting)
+import get_initialized from "get initialized" /* 504 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16746 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 17575 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 17576 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7863 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowDevWidgetSettingToggleValue() {
-  let showDevWidget;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DevToolsSettingsStore];
-    const fn = function n() {
-      return showDevWidget.showDevWidget;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useShowDevWidgetSettingToggleValue() {
-  let showDevWidget;
-  const items = [DevToolsSettingsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => showDevWidget.showDevWidget);
-});
 let obj = {
   useTitle() {
     return "Show Dev Tools Widget";
@@ -52,7 +23,12 @@ let obj = {
     const obj2 = { showDevWidget };
     const result = obj.updateDevToolsSettings(obj2);
   },
-  useValue: tmp2,
+  useValue: function useShowDevWidgetSettingToggleValue() {
+    let showDevWidget;
+    const items = [DevToolsSettingsStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => showDevWidget.showDevWidget);
+  },
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate
 };
 const toggle = SettingBuilders.createToggle(obj);

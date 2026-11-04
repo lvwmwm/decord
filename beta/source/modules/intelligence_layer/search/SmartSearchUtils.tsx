@@ -1,17 +1,17 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13889
+// Function ID: 13890
 // Name: SmartSearchUtils
-// Dependencies: [13259, 13257, 1087, 9746, 13261, 13262, 13260, 2]
+// Dependencies: [13890, 13888, 1072, 9827, 13892, 13893, 13891, 2]
 // Exports: getChannelFilterKey, getChannelIdsForFilterKey, getSmartSearchCitationsCount, getSmartSearchQuery, getSmartSearchStatus, isSmartSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId
 
-// Module 13258 (SmartSearchUtils)
-import SearchConstants from "SearchConstants" /* 9746 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13260 */;
-import QueryTokenizer from "QueryTokenizer" /* 13261 */;
-import SearchUtils from "SearchUtils" /* 13262 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13259 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13257 */;
-import Constants from "Constants" /* 1087 */;
+// Module 13889 (SmartSearchUtils)
+import SearchConstants from "SearchConstants" /* 9827 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13891 */;
+import QueryTokenizer from "QueryTokenizer" /* 13892 */;
+import SearchUtils from "SearchUtils" /* 13893 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13890 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13888 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let SearchTokenTypes;
@@ -30,7 +30,7 @@ let items = [, ];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchUtils.tsx");
 
-export const getSmartSearchQuery = function getSmartSearchQuery(searchContext, searchQueryString) {
+export function getSmartSearchQuery(searchContext, c1) {
   let channel_id;
   const tmp2 = searchContext.type === hasOwnProperty.GUILD || searchContext.type === tmp.GUILD_CHANNEL;
   if (tmp2) {
@@ -40,16 +40,16 @@ export const getSmartSearchQuery = function getSmartSearchQuery(searchContext, s
       return null;
     } else {
       const tmp4Result = SearchUtils;
-      const searchTabFetchId = tmp4Result.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchQueryString);
+      const searchTabFetchId = tmp4Result.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, c1);
       const tmp4Result4 = SearchUtils;
-      const tokenizeQueryResult = tmp4Result4.tokenizeQuery(searchQueryString);
+      const tokenizeQueryResult = tmp4Result4.tokenizeQuery(c1);
       const tmp4Result5 = SearchUtils;
       const searchQueryFromTokens = tmp4Result5.getSearchQueryFromTokens(tokenizeQueryResult);
       const tmp4Result6 = SearchUtils;
       const nonTokenQuery = tmp4Result6.getNonTokenQuery(tokenizeQueryResult);
       let tmp8 = null;
       if (!tokenizeQueryResult.some(isUnsupportedFilterToken)) {
-        const obj2 = { queryText: nonTokenQuery, requestKey: searchTabFetchId, guildId: guildIdFromSearchContext, channelIds: channel_id, searchContext, searchQueryString };
+        const obj2 = { queryText: nonTokenQuery, requestKey: searchTabFetchId, guildId: guildIdFromSearchContext, channelIds: channel_id, searchContext, searchQueryString: c1 };
         channel_id = searchQueryFromTokens.channel_id;
         if (channel_id == null) {
           channel_id = [];
@@ -61,19 +61,19 @@ export const getSmartSearchQuery = function getSmartSearchQuery(searchContext, s
   } else {
     return null;
   }
-};
-export const isSupportedSearchContext = function isSupportedSearchContext(type) {
+}
+export function isSupportedSearchContext(type) {
   return type.type === hasOwnProperty.GUILD || type.type === tmp.GUILD_CHANNEL;
-};
-export const getChannelFilterKey = function getChannelFilterKey(channelIds) {
+}
+export function getChannelFilterKey(channelIds) {
   const items = [...channelIds];
   const sorted = items.sort();
   return sorted.join(React3);
-};
-export const getChannelIdsForFilterKey = function getChannelIdsForFilterKey(item) {
+}
+export function getChannelIdsForFilterKey(item) {
   return item.split(React3);
-};
-export const parseConversationId = function parseConversationId(sourceId) {
+}
+export function parseConversationId(sourceId) {
   const obj = /\/(\d+)$/;
   const match = obj.exec(sourceId);
   let tmp2;
@@ -84,8 +84,8 @@ export const parseConversationId = function parseConversationId(sourceId) {
     tmp2 = sourceId;
   }
   return tmp2;
-};
-export const getSmartSearchStatus = function getSmartSearchStatus(smartSearchQuery, SmartSearchResultsStore) {
+}
+export function getSmartSearchStatus(smartSearchQuery, SmartSearchResultsStore) {
   let obj = SmartSearchResultsStore;
   if (SmartSearchResultsStore === undefined) {
     obj = SmartSearchResultsStore;
@@ -95,12 +95,12 @@ export const getSmartSearchStatus = function getSmartSearchStatus(smartSearchQue
     NOT_QUALIFIED = SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED;
   }
   return NOT_QUALIFIED;
-};
-export const isSmartSearchEmptyOrErrored = function isSmartSearchEmptyOrErrored(smartSearchStatus) {
+}
+export function isSmartSearchEmptyOrErrored(smartSearchStatus) {
   const tmp3 = smartSearchStatus === SmartSearchTypes.SmartSearchStatus.EMPTY || smartSearchStatus === SmartSearchTypes.SmartSearchStatus.ERROR;
   return tmp3;
-};
-export const getSmartSearchCitationsCount = function getSmartSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
+}
+export function getSmartSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
   const obj = SearchUtils;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   if (null == guildIdFromSearchContext) {
@@ -123,4 +123,4 @@ export const getSmartSearchCitationsCount = function getSmartSearchCitationsCoun
     }
     return bound;
   }
-};
+}

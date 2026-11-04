@@ -1,17 +1,15 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12591
+// Function ID: 12592
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1128, 3862, 10732, 558, 576, 2]
-// Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved
+// Dependencies: [32, 19, 1113, 3868, 10852, 2]
+// Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
 
-// Module 12345 (ConjureSecretRequestState)
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import conjureChatTurns from "conjureChatTurns" /* 10732 */;
+// Module 12591 (ConjureSecretRequestState)
+import intl3 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import conjureChatTurns from "conjureChatTurns" /* 10852 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let map, set2;
@@ -20,10 +18,10 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3862.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3868.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3862.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3868.sMQt5O);
   }
   return tmp5;
 }
@@ -45,93 +43,19 @@ function isSavedMcpCard(secretRequest) {
   return tmp2;
 }
 let set = new Set();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretRequestStatusChanged(cardId, arg1) {
-  let flag;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  let closure_0 = cardId;
-  let closure_1 = arg1;
-  let obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === cardId) {
-    let tmp2;
-    if (cResult[1] === arg1) {
-      tmp2 = cResult[2];
-    }
-    [tmp6, tmp7] = react.useState(tmp2);
-    _slicedToArray(react.useState(tmp2), 2);
-    if (tmp6.cardId === cardId) {
-      if (null == tmp6.status) {
-        return flag;
-      }
-      flag = null != tmp6.status && arg1 !== tmp6.status;
-    }
-    const obj2 = { cardId, status: tmp9 };
-    tmp9 = null;
-    if ("pending" !== arg1) {
-      tmp9 = arg1;
-    }
-    tmp7(obj2);
-    flag = false;
-  }
-  const fn = function l() {
-    let tmp;
-    const obj = { cardId, status: tmp };
-    tmp = null;
-    if ("pending" !== closure_1) {
-      tmp = closure_1;
-    }
-    return obj;
-  };
-  cResult[0] = cardId;
-  cResult[1] = arg1;
-  cResult[2] = fn;
-  tmp2 = fn;
-}) : (function useSecretRequestStatusChanged(cardId, arg1) {
-  let flag;
-  let tmp2;
-  let tmp3;
-  let tmp5;
-  let closure_0 = cardId;
-  let closure_1 = arg1;
-  let tmp = _slicedToArray(react.useState(() => {
-    let tmp;
-    const obj = { cardId, status: tmp };
-    tmp = null;
-    if ("pending" !== closure_1) {
-      tmp = closure_1;
-    }
-    return obj;
-  }), 2);
-  [tmp2, tmp3] = tmp;
-  if (tmp2.cardId === cardId) {
-    if (null == tmp2.status) {
-      return flag;
-    }
-    flag = null != tmp2.status && arg1 !== tmp2.status;
-  }
-  let obj = { cardId, status: tmp5 };
-  tmp5 = null;
-  if ("pending" !== arg1) {
-    tmp5 = arg1;
-  }
-  tmp3(obj);
-  flag = false;
-});
 let result = size.fileFinishedImporting("modules/conjure/secrets/ConjureSecretRequestState.tsx");
 
-export const markMcpSecretRequestSaved = function markMcpSecretRequestSaved(request_id) {
+export function markMcpSecretRequestSaved(request_id) {
   if (null != request_id) {
     set.add(request_id);
   }
-};
-export const unmarkMcpSecretRequestSaved = function unmarkMcpSecretRequestSaved(request_id) {
+}
+export function unmarkMcpSecretRequestSaved(request_id) {
   if (null != request_id) {
     set.delete(request_id);
   }
-};
-export const secretRequestStatuses = function secretRequestStatuses(memo, secrets) {
+}
+export function secretRequestStatuses(memo, secrets) {
   let set1 = null;
   if (null != secrets) {
     const _Set = Set;
@@ -218,5 +142,35 @@ export const secretRequestStatuses = function secretRequestStatuses(memo, secret
     } while (0 <= diff);
   }
   return map;
-};
-export const useSecretRequestStatusChanged = tmp3;
+}
+export function useSecretRequestStatusChanged(cardId, status) {
+  let flag;
+  let tmp2;
+  let tmp3;
+  let tmp5;
+  let closure_0 = cardId;
+  let closure_1 = status;
+  let tmp = _slicedToArray(react.useState(() => {
+    let tmp;
+    const obj = { cardId, status: tmp };
+    tmp = null;
+    if ("pending" !== closure_1) {
+      tmp = closure_1;
+    }
+    return obj;
+  }), 2);
+  [tmp2, tmp3] = tmp;
+  if (tmp2.cardId === cardId) {
+    if (null == tmp2.status) {
+      return flag;
+    }
+    flag = null != tmp2.status && status !== tmp2.status;
+  }
+  let obj = { cardId, status: tmp5 };
+  tmp5 = null;
+  if ("pending" !== status) {
+    tmp5 = status;
+  }
+  tmp3(obj);
+  flag = false;
+}

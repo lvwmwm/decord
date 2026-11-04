@@ -1,17 +1,13 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 12214
+// Function ID: 12215
 // Name: conjureDesignFeedbackStore
-// Dependencies: [19, 11895, 558, 576, 2]
-// Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, pauseConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation
+// Dependencies: [19, 12215, 2]
+// Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, pauseConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation, useConjureDesignFeedback
 
-// Module 11894 (conjureDesignFeedbackStore)
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11895 */;
+// Module 12214 (conjureDesignFeedbackStore)
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12215 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 function subscribeConjureDesignFeedback(arg0) {
   let closure_0 = arg0;
@@ -25,63 +21,16 @@ let active = Object.freeze(obj);
 const map = new Map();
 const set = new Set();
 let metroRequire = 0;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDesignFeedback(arg0) {
-  let closure_0;
-  let tmp2;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function s() {
-      let value;
-      if (null == closure_0) {
-        value = active;
-      } else {
-        value = map.get(tmp);
-        if (value == null) {
-          value = active;
-        }
-      }
-      return value;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return react.useSyncExternalStore(subscribeConjureDesignFeedback, tmp2, tmp2);
-}) : (function useConjureDesignFeedback(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
-  const callback = react.useCallback(() => {
-    let value;
-    if (null == closure_0) {
-      value = active;
-    } else {
-      value = map.get(tmp);
-      if (value == null) {
-        value = active;
-      }
-    }
-    return value;
-  }, items);
-  return react.useSyncExternalStore(subscribeConjureDesignFeedback, callback, callback);
-});
-function getConjureDesignFeedback(arg0) {
+let result = size.fileFinishedImporting("modules/conjure/design_feedback/conjureDesignFeedbackStore.tsx");
+
+export function getConjureDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
   }
   return value;
 }
-function canEditConjureDesignAnnotation(authorId, arg1) {
-  return null != arg1 && authorId.authorId === arg1;
-}
-let result = size.fileFinishedImporting("modules/conjure/design_feedback/conjureDesignFeedbackStore.tsx");
-
-export { getConjureDesignFeedback };
-export const enterConjureDesignFeedback = function enterConjureDesignFeedback(arg0) {
+export function enterConjureDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -107,8 +56,8 @@ export const enterConjureDesignFeedback = function enterConjureDesignFeedback(ar
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const pauseConjureDesignFeedback = function pauseConjureDesignFeedback(arg0) {
+}
+export function pauseConjureDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -134,8 +83,8 @@ export const pauseConjureDesignFeedback = function pauseConjureDesignFeedback(ar
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const exitConjureDesignFeedback = function exitConjureDesignFeedback(arg0) {
+}
+export function exitConjureDesignFeedback(arg0) {
   if (map.has(arg0)) {
     if (!active.active) {
       if (0 === active.annotations.length) {
@@ -155,8 +104,8 @@ export const exitConjureDesignFeedback = function exitConjureDesignFeedback(arg0
     }
     const result = obj.set(arg0, tmp);
   }
-};
-export const setConjureDesignFeedbackContext = function setConjureDesignFeedbackContext(arg0, context) {
+}
+export function setConjureDesignFeedbackContext(arg0, context) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -182,8 +131,8 @@ export const setConjureDesignFeedbackContext = function setConjureDesignFeedback
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const addConjureDesignAnnotation = function addConjureDesignAnnotation(arg0, authorId, target, comment) {
+}
+export function addConjureDesignAnnotation(arg0, authorId, target, comment) {
   let items;
   let CONJURE_DESIGN_ANCHOR_CENTER = arg4;
   if (arg4 === undefined) {
@@ -217,8 +166,8 @@ export const addConjureDesignAnnotation = function addConjureDesignAnnotation(ar
     return text;
   }
   const result = obj.set(arg0, obj2);
-};
-export const relocateConjureDesignAnnotations = function relocateConjureDesignAnnotations(arg0, size) {
+}
+export function relocateConjureDesignAnnotations(arg0, size) {
   let annotations;
   let closure_0 = size;
   let obj = map;
@@ -261,9 +210,11 @@ export const relocateConjureDesignAnnotations = function relocateConjureDesignAn
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export { canEditConjureDesignAnnotation };
-export const updateConjureDesignAnnotation = function updateConjureDesignAnnotation(arg0, arg1, arg2, arg3) {
+}
+export function canEditConjureDesignAnnotation(authorId, arg1) {
+  return null != arg1 && authorId.authorId === arg1;
+}
+export function updateConjureDesignAnnotation(arg0, arg1, arg2, arg3) {
   let annotations1;
   let closure_0 = arg2;
   let closure_1 = arg3;
@@ -276,7 +227,6 @@ export const updateConjureDesignAnnotation = function updateConjureDesignAnnotat
   const found = annotations.find((id) => id.id === closure_0);
   let tmp3 = null != found;
   if (tmp3) {
-    const tmp4 = arg1;
     tmp3 = null != arg1 && found.authorId === arg1;
     const tmp5 = null != arg1 && found.authorId === arg1;
   }
@@ -292,7 +242,6 @@ export const updateConjureDesignAnnotation = function updateConjureDesignAnnotat
           return tmp;
         })
     };
-    let tmp6 = obj2;
     let merged = Object.assign(value);
     annotations1 = value.annotations;
     if (!obj2.active) {
@@ -313,8 +262,8 @@ export const updateConjureDesignAnnotation = function updateConjureDesignAnnotat
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const removeConjureDesignAnnotation = function removeConjureDesignAnnotation(arg0, arg1, arg2) {
+}
+export function removeConjureDesignAnnotation(arg0, arg1, arg2) {
   let annotations1;
   let args;
   let closure_0 = arg2;
@@ -350,6 +299,22 @@ export const removeConjureDesignAnnotation = function removeConjureDesignAnnotat
     }
     const result = obj.set(arg0, obj2);
   }
-};
+}
 export { subscribeConjureDesignFeedback };
-export const useConjureDesignFeedback = tmp4;
+export function useConjureDesignFeedback(arg0) {
+  let closure_0 = arg0;
+  const items = [arg0];
+  const callback = react.useCallback(() => {
+    let value;
+    if (null == closure_0) {
+      value = active;
+    } else {
+      value = map.get(tmp);
+      if (value == null) {
+        value = active;
+      }
+    }
+    return value;
+  }, items);
+  return react.useSyncExternalStore(subscribeConjureDesignFeedback, callback, callback);
+}

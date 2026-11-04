@@ -1,18 +1,18 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 10942
+// Function ID: 10943
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 10820, 1087, 10821, 569, 1104, 584, 1297, 1257, 2]
+// Dependencies: [5, 10943, 1072, 5144, 559, 1089, 572, 1282, 1242, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 10819 (ApplicationWidgetConfigActions)
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10820 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 10821 */;
+// Module 10942 (ApplicationWidgetConfigActions)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5144 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10943 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Backoff from "Backoff" /* 569 */;
-import Dispatcher from "Dispatcher" /* 584 */;
+import Backoff from "Backoff" /* 559 */;
+import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationWidgetConfigStore = ApplicationWidgetConfigStore2;
@@ -46,7 +46,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -137,7 +137,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -189,7 +189,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj10);
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -219,7 +219,7 @@ obj = function _fetchWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ obj = function _fetchWidgetConfigsFromApi() {
             dispatch(obj);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -297,7 +297,7 @@ const promiseDeduper3 = new utils_FunctionUtils.PromiseDeduper();
 const promiseDeduper4 = new utils_FunctionUtils.PromiseDeduper();
 let result = size.fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigActions.tsx");
 
-export const fetchFeaturedWidgetConfigs = function fetchFeaturedWidgetConfigs() {
+export function fetchFeaturedWidgetConfigs() {
   obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -312,8 +312,8 @@ export const fetchFeaturedWidgetConfigs = function fetchFeaturedWidgetConfigs() 
     return Promise.resolve();
   }
   return promiseDeduper.one(undefined, fetchFeaturedWidgetConfigsFromApi, { force });
-};
-export const fetchDeveloperWidgetConfigs = function fetchDeveloperWidgetConfigs() {
+}
+export function fetchDeveloperWidgetConfigs() {
   obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -330,8 +330,8 @@ export const fetchDeveloperWidgetConfigs = function fetchDeveloperWidgetConfigs(
     return resolved;
   }
   resolved = promiseDeduper3.one(undefined, fetchDeveloperWidgetConfigsFromApi, { force: flag });
-};
-export const fetchWidgetConfigs = function fetchWidgetConfigs(item10012, arg1) {
+}
+export function fetchWidgetConfigs(item10012, arg1) {
   let closure_0 = item10012;
   obj = arg1;
   if (arg1 === undefined) {
@@ -354,4 +354,4 @@ export const fetchWidgetConfigs = function fetchWidgetConfigs(item10012, arg1) {
     }
     return fetchWidgetConfigsFromApi(item10012);
   }, { force: flag });
-};
+}

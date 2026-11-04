@@ -1,12 +1,12 @@
-// Module ID: 5843
-// Function ID: 5844
+// Module ID: 5861
+// Function ID: 5862
 // Name: Devices
-// Dependencies: [5773, 1367, 2016, 2]
+// Dependencies: [5791, 1352, 2008, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 5843 (Devices)
-import _modDef1367 from "module_1367" /* 1367 */;
-import Constants from "Constants" /* 5773 */;
+// Module 5861 (Devices)
+import _modDef1352 from "module_1352" /* 1352 */;
+import Constants from "Constants" /* 5791 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -16,7 +16,7 @@ let closure_4;
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/native/Devices.tsx");
 
-export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
+export function sanitizeDevices(AUDIO_INPUT, items) {
   let c1;
   let closure_0 = AUDIO_INPUT;
   importDefault = false;
@@ -56,7 +56,7 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
   });
   let isMatch = AUDIO_INPUT !== constants.VIDEO_INPUT && !importDefault;
   if (isMatch) {
-    const tmp5 = _modDef1367;
+    const tmp5 = _modDef1352;
     let family;
     if (tmp5 != null) {
       const os = tmp5.os;
@@ -68,15 +68,15 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
   }
   if (isMatch) {
     const obj = /^win/i;
-    isMatch = obj.test(_modDef1367.os.family);
+    isMatch = obj.test(_modDef1352.os.family);
   }
   if (isMatch) {
     const obj2 = { id, type: AUDIO_INPUT, index: -1, name: "Default" };
     mapped.unshift(obj2);
   }
   return mapped;
-};
-export const getAudioInputDevices = function getAudioInputDevices() {
+}
+export function getAudioInputDevices() {
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     let obj = closure_0(closure_2[2]);
@@ -124,7 +124,7 @@ export const getAudioInputDevices = function getAudioInputDevices() {
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = _modDef1367;
+        const tmp6 = _modDef1352;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -136,7 +136,7 @@ export const getAudioInputDevices = function getAudioInputDevices() {
       }
       if (isMatch) {
         const obj = /^win/i;
-        isMatch = obj.test(_modDef1367.os.family);
+        isMatch = obj.test(_modDef1352.os.family);
       }
       if (isMatch) {
         const obj2 = { id, type: AUDIO_INPUT, index: -1, name: "Default" };
@@ -146,8 +146,8 @@ export const getAudioInputDevices = function getAudioInputDevices() {
     });
   });
   return promise;
-};
-export const getAudioOutputDevices = function getAudioOutputDevices() {
+}
+export function getAudioOutputDevices() {
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     let obj = closure_0(closure_2[2]);
@@ -195,7 +195,7 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
         isMatch = !c1;
       }
       if (isMatch) {
-        const tmp6 = _modDef1367;
+        const tmp6 = _modDef1352;
         let family;
         if (tmp6 != null) {
           const os = tmp6.os;
@@ -207,7 +207,7 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
       }
       if (isMatch) {
         const obj = /^win/i;
-        isMatch = obj.test(_modDef1367.os.family);
+        isMatch = obj.test(_modDef1352.os.family);
       }
       if (isMatch) {
         const obj2 = { id, type: AUDIO_OUTPUT, index: -1, name: "Default" };
@@ -217,8 +217,8 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
     });
   });
   return promise;
-};
-export const getVideoInputDevices = function getVideoInputDevices() {
+}
+export function getVideoInputDevices() {
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     let obj = closure_0(closure_2[2]);
@@ -269,7 +269,7 @@ export const getVideoInputDevices = function getVideoInputDevices() {
       if (isMatch) {
         const tmp4 = importDefault;
         const tmp5 = dependencyMap;
-        const tmp6 = _modDef1367;
+        const tmp6 = _modDef1352;
         const tmp7 = null;
         let family;
         if (tmp6 != null) {
@@ -284,7 +284,7 @@ export const getVideoInputDevices = function getVideoInputDevices() {
         let obj = /^win/i;
         const tmp9 = importDefault;
         const tmp10 = dependencyMap;
-        isMatch = obj.test(_modDef1367.os.family);
+        isMatch = obj.test(_modDef1352.os.family);
       }
       if (isMatch) {
         let obj2 = { id, type: VIDEO_INPUT, index: -1, name: "Default" };
@@ -295,4 +295,4 @@ export const getVideoInputDevices = function getVideoInputDevices() {
     });
   });
   return promise;
-};
+}

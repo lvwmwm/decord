@@ -1,15 +1,15 @@
-// Module ID: 1992
-// Function ID: 1993
+// Module ID: 1984
+// Function ID: 1985
 // Name: utils
-// Dependencies: [1993, 1098, 1996, 1998, 1128, 2]
+// Dependencies: [1985, 1083, 1988, 1990, 1113, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1992 (utils)
-import Constants from "Constants" /* 1098 */;
-import intl6 from "intl" /* 1128 */;
-import NameplateRecord from "NameplateRecord" /* 1993 */;
-import constants from "constants" /* 1996 */;
-import _modDef1998 from "module_1998" /* 1998 */;
+// Module 1984 (utils)
+import Constants from "Constants" /* 1083 */;
+import intl6 from "intl" /* 1113 */;
+import NameplateRecord from "NameplateRecord" /* 1985 */;
+import nameplates_constants from "nameplates/constants" /* 1988 */;
+import _modDef1990 from "module_1990" /* 1990 */;
 import size_mod from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -17,22 +17,22 @@ const ThemeTypes = Constants.ThemeTypes;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/utils.tsx");
 
-export const getNameplateData = function getNameplateData(nameplate) {
+export function getNameplateData(nameplate) {
   let INVALID_NAMEPLATE_PALETTE;
   let tmp = null;
   if (null != nameplate) {
     const obj = { skuId: null, src: null, imgAlt: null, palette: INVALID_NAMEPLATE_PALETTE };
     ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt } = nameplate);
-    INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[nameplate.palette];
+    INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[nameplate.palette];
     const tmp2 = require;
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1996).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1988).INVALID_NAMEPLATE_PALETTE;
     }
     tmp = obj;
   }
   return tmp;
-};
-export const getNameplateDataFromProductRecord = function getNameplateDataFromProductRecord(product) {
+}
+export function getNameplateDataFromProductRecord(product) {
   let INVALID_NAMEPLATE_PALETTE;
   let palette;
   if (0 === product.items.length) {
@@ -45,10 +45,10 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
       if (null != first) {
         const obj = { skuId: null, src: null, imgAlt: null, palette: INVALID_NAMEPLATE_PALETTE };
         ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt, palette } = first);
-        INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[palette];
+        INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[palette];
         const tmp2 = require;
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1996).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1988).INVALID_NAMEPLATE_PALETTE;
         }
         tmp = obj;
       }
@@ -56,11 +56,11 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
     }
     return tmp4;
   }
-};
-export const getBackgroundGradientColors = function getBackgroundGradientColors(palette, arg1) {
-  let tmp3 = palette.name !== constants.INVALID_PALETTE_KEY;
+}
+export function getBackgroundGradientColors(palette, arg1) {
+  let tmp3 = palette.name !== nameplates_constants.INVALID_PALETTE_KEY;
   if (tmp3) {
-    let tmp4 = palette.name !== constants.CUSTOM_PALETTE_KEY;
+    let tmp4 = palette.name !== nameplates_constants.CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       const obj = /^#([0-9a-fA-F]{6})$/;
       let isMatch = obj.test(palette.darkBackground);
@@ -79,11 +79,11 @@ export const getBackgroundGradientColors = function getBackgroundGradientColors(
     const _HermesInternal2 = HermesInternal;
     return rect;
   }
-};
-export const isValidPalette = function isValidPalette(name) {
-  let tmp3 = name.name !== constants.INVALID_PALETTE_KEY;
+}
+export function isValidPalette(name) {
+  let tmp3 = name.name !== nameplates_constants.INVALID_PALETTE_KEY;
   if (tmp3) {
-    let tmp4 = name.name !== constants.CUSTOM_PALETTE_KEY;
+    let tmp4 = name.name !== nameplates_constants.CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       const obj = /^#([0-9a-fA-F]{6})$/;
       let isMatch = obj.test(name.darkBackground);
@@ -96,18 +96,18 @@ export const isValidPalette = function isValidPalette(name) {
     tmp3 = tmp4;
   }
   return tmp3;
-};
-export const getNameplatePalette = function getNameplatePalette(arg0) {
-  let INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[arg0];
+}
+export function getNameplatePalette(arg0) {
+  let INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[arg0];
   if (INVALID_NAMEPLATE_PALETTE == null) {
-    INVALID_NAMEPLATE_PALETTE = constants.INVALID_NAMEPLATE_PALETTE;
+    INVALID_NAMEPLATE_PALETTE = nameplates_constants.INVALID_NAMEPLATE_PALETTE;
   }
   return INVALID_NAMEPLATE_PALETTE;
-};
-export const parseFirstFrame = function parseFirstFrame(arg0) {
-  const decoder = _modDef1998;
+}
+export function parseFirstFrame(arg0) {
+  const decoder = _modDef1990;
   size = decoder.decode(arg0);
-  const obj = _modDef1998;
+  const obj = _modDef1990;
   const first = obj.toRGBA8(size)[0];
   const element = <canvas />;
   ({ width: obj2.width, height: obj2.height } = size);
@@ -116,8 +116,8 @@ export const parseFirstFrame = function parseFirstFrame(arg0) {
   const imageData = new globalThis.ImageData(uint8ClampedArray, size.width, size.height);
   context.putImageData(imageData, 0, 0);
   return element.toDataURL("image/png");
-};
-export const getNameplateSampleUsers = function getNameplateSampleUsers() {
+}
+export function getNameplateSampleUsers() {
   let intl;
   let intl2;
   let intl3;
@@ -140,4 +140,4 @@ export const getNameplateSampleUsers = function getNameplateSampleUsers() {
   obj6 = { name: intl5.string(intl6.t.ncslie), avatarSrc: "https://cdn.discordapp.com/assets/content/e264a2b0b8d963edd255c223abf1c0554f00a2f3a38640e509a38bc03d73b606.png" };
   intl5 = intl6.intl;
   return obj;
-};
+}

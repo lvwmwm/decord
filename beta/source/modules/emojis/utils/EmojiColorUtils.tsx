@@ -1,14 +1,14 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8415
+// Function ID: 8416
 // Name: EmojiColorUtils
-// Dependencies: [5000, 5001, 683, 4959, 2]
+// Dependencies: [5011, 5012, 671, 4970, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 8347 (EmojiColorUtils)
-import _modDef683 from "module_683" /* 683 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 4959 */;
-import ColorUtils from "ColorUtils" /* 5000 */;
-import utils_ColorDefault from "utils/Color" /* 5001 */;
+// Module 8415 (EmojiColorUtils)
+import _modDef671 from "module_671" /* 671 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 4970 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import utils_ColorDefault from "utils/Color" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
@@ -50,10 +50,10 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
       if (null != color) {
         const tmp2Result = ColorUtils;
         const rawRgbToHslResult = tmp2Result.rawRgbToHsl(color.red, color.blue, color.green);
-        const obj3 = { foreground: tmp5Result(colorLightnessAdjusted.toHexString()), background: _modDef683(c3), ratio: 3, saturationFactor };
+        const obj3 = { foreground: tmp5Result(colorLightnessAdjusted.toHexString()), background: _modDef671(c3), ratio: 3, saturationFactor };
         const getAccessibleForegroundColor = ColorUtils.getAccessibleForegroundColor;
         ColorUtils;
-        tmp5Result = _modDef683;
+        tmp5Result = _modDef671;
         const tmp2Result10 = ColorUtils;
         colorLightnessAdjusted = tmp2Result10.getColorLightnessAdjusted(color, 0.6, true);
         let accessibleForegroundColor = getAccessibleForegroundColor(obj3);
@@ -61,10 +61,10 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
         if (accessibleForegroundColor == null) {
           accessibleForegroundColor = color;
         }
-        const obj4 = { foreground: tmp5Result2(colorLightnessAdjusted1.toHexString()), background: _modDef683(c4), ratio: 5, saturationFactor };
+        const obj4 = { foreground: tmp5Result2(colorLightnessAdjusted1.toHexString()), background: _modDef671(c4), ratio: 5, saturationFactor };
         const getAccessibleForegroundColor2 = ColorUtils.getAccessibleForegroundColor;
         ColorUtils;
-        tmp5Result2 = _modDef683;
+        tmp5Result2 = _modDef671;
         const tmp2Result12 = ColorUtils;
         colorLightnessAdjusted1 = tmp2Result12.getColorLightnessAdjusted(color, 0.6, false);
         let accessibleForegroundColor2 = getAccessibleForegroundColor2(obj4);
@@ -72,11 +72,11 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
         if (accessibleForegroundColor2 == null) {
           accessibleForegroundColor2 = color;
         }
-        const obj5 = { foreground: _modDef683(findColorByHsvResult), background: _modDef683(tmp9), ratio: 7, saturationFactor };
+        const obj5 = { foreground: _modDef671(findColorByHsvResult), background: _modDef671(tmp9), ratio: 7, saturationFactor };
         const getAccessibleForegroundColor3 = ColorUtils.getAccessibleForegroundColor;
         ColorUtils;
         const accessibleForegroundColor3 = getAccessibleForegroundColor3(obj5);
-        const obj6 = { foreground: _modDef683(findColorByHsvResult), background: _modDef683(tmp13), ratio: 7, saturationFactor };
+        const obj6 = { foreground: _modDef671(findColorByHsvResult), background: _modDef671(tmp13), ratio: 7, saturationFactor };
         const getAccessibleForegroundColor4 = ColorUtils.getAccessibleForegroundColor;
         ColorUtils;
         const accessibleForegroundColor4 = getAccessibleForegroundColor4(obj6);
@@ -131,7 +131,7 @@ let c4 = "#36393e";
 const result = size.fileFinishedImporting("modules/emojis/utils/EmojiColorUtils.tsx");
 
 export { buildPlatformedThemedEmojiColorPalette };
-export const buildEmojiColorPalette = function buildEmojiColorPalette(colors, stateFromStores, stateFromStores1) {
+export function buildEmojiColorPalette(colors, stateFromStores, stateFromStores1) {
   let accentColor;
   let highlightColor;
   let num;
@@ -173,4 +173,4 @@ export const buildEmojiColorPalette = function buildEmojiColorPalette(colors, st
     }
   }
   return null;
-};
+}

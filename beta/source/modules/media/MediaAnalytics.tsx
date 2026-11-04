@@ -1,18 +1,18 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 13303
+// Function ID: 13304
 // Name: MediaAnalytics
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1072, 1252, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 12855 (MediaAnalytics)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 13303 (MediaAnalytics)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/media/MediaAnalytics.tsx");
 
-export const logMediaAttachmentPlaybackStarted = function logMediaAttachmentPlaybackStarted(messageChannel, found, totalDurationSecs, messageId, startDurationSecs, id) {
+export function logMediaAttachmentPlaybackStarted(messageChannel, found, totalDurationSecs, messageId, startDurationSecs, id) {
   let min;
   let tmp = totalDurationSecs;
   const obj = { guild_id: messageChannel.guild_id, channel_id: messageChannel.id, channel_type: messageChannel.type, type: found.content_type, flags: found.flags, size: found.size, duration: totalDurationSecs, message_id: messageId, attachment_id: found.id, start_duration_secs: min(tmp, startDurationSecs), sender_user_id: id };
@@ -25,8 +25,8 @@ export const logMediaAttachmentPlaybackStarted = function logMediaAttachmentPlay
     tmp = startDurationSecs;
   }
   track(MEDIA_ATTACHMENT_PLAYBACK_STARTED, obj);
-};
-export const logMediaAttachmentPlaybackEnded = function logMediaAttachmentPlaybackEnded(messageId, totalDurationSecs, endDurationSecs, id, durationListeningSecs, found) {
+}
+export function logMediaAttachmentPlaybackEnded(messageId, totalDurationSecs, endDurationSecs, id, durationListeningSecs, found) {
   let min;
   let tmp = totalDurationSecs;
   const obj = { message_id: messageId, total_duration_secs: totalDurationSecs, end_duration_secs: min(tmp, endDurationSecs), sender_user_id: id, duration_listening_secs: durationListeningSecs, type: found.content_type };
@@ -39,4 +39,4 @@ export const logMediaAttachmentPlaybackEnded = function logMediaAttachmentPlayba
     tmp = endDurationSecs;
   }
   track(MEDIA_ATTACHMENT_PLAYBACK_ENDED, obj);
-};
+}

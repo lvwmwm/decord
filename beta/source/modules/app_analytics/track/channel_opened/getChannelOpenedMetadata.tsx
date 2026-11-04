@@ -1,22 +1,22 @@
-// Module ID: 8330
-// Function ID: 8331
+// Module ID: 8337
+// Function ID: 8338
 // Name: getChannelOpenedMetadata
-// Dependencies: [4855, 4877, 4935, 6803, 6736, 1392, 1087, 4862, 5743, 1104, 8331, 8332, 2]
+// Dependencies: [4863, 4885, 4946, 6842, 6775, 1383, 1072, 4870, 5760, 1089, 8338, 8339, 2]
 // Exports: getChannelOpenedMetadata
 
-// Module 8330 (getChannelOpenedMetadata)
-import DurationsDefault from "Durations" /* 1104 */;
-import ChannelConstants from "ChannelConstants" /* 4862 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8331 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 8332 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+// Module 8337 (getChannelOpenedMetadata)
+import DurationsDefault from "Durations" /* 1089 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8338 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 8339 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6775 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -25,7 +25,7 @@ let c9;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const result = size.fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedMetadata.tsx");
 
-export const getChannelOpenedMetadata = function getChannelOpenedMetadata(selectedChannelId) {
+export function getChannelOpenedMetadata(selectedChannelId) {
   let guildUnreadSetting;
   let obj9;
   let presetFromSettings;
@@ -92,4 +92,4 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
       }
     }
   }
-};
+}

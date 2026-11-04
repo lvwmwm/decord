@@ -1,16 +1,16 @@
-// Module ID: 19418
-// Function ID: 19419
+// Module ID: 20042
+// Function ID: 20043
 // Name: BasicGuildActionCreators
-// Dependencies: [5, 4877, 8345, 1087, 584, 1297, 2]
+// Dependencies: [5, 4885, 8413, 1072, 572, 1282, 2]
 // Exports: fetchBasicGuild
 
-// Module 19418 (BasicGuildActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 20042 (BasicGuildActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import BasicGuildStore from "BasicGuildStore" /* 8345 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import BasicGuildStore from "BasicGuildStore" /* 8413 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;
@@ -32,7 +32,7 @@ let obj = function _fetchBasicGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _fetchBasicGuild() {
             closure_130_7.delete(guildId);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {
@@ -118,6 +118,6 @@ const Endpoints = Constants.Endpoints;
 const set = new Set();
 const result = size.fileFinishedImporting("modules/guild/BasicGuildActionCreators.tsx");
 
-export const fetchBasicGuild = function fetchBasicGuild() {
+export function fetchBasicGuild() {
   return obj(...arguments);
-};
+}

@@ -1,66 +1,22 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 17173
+// Function ID: 17174
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 16475, 21, 558, 576, 16503, 16471, 5284, 587, 16577, 2]
+// Dependencies: [19, 17072, 21, 17100, 17068, 5596, 575, 17174, 2]
 
-// Module 16576 (QuestDockUnenrolledBackground)
+// Module 17173 (QuestDockUnenrolledBackground)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5284 */;
-import QuestHooks from "QuestHooks" /* 16471 */;
-import QuestDockConstants from "QuestDockConstants" /* 16475 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16503 */;
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5596 */;
+import QuestHooks from "QuestHooks" /* 17068 */;
+import QuestDockConstants from "QuestDockConstants" /* 17072 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 17100 */;
+import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 17174 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp5;
-const QuestDockVideoBackgroundDefault = tmp5(16577);
 const expandedHeight = QuestDockConstants.QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockUnenrolledBackground() {
-  let staticUrl;
-  let videoAsset;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const obj2 = QuestDockCreativeContext;
-  const questDockQuest = obj2.useQuestDockQuest();
-  const obj3 = QuestHooks;
-  const questDockHeroAsset = obj3.useQuestDockHeroAsset(questDockQuest);
-  ({ staticUrl, videoAsset } = questDockHeroAsset);
-  const obj4 = useToken;
-  const token = obj4.useToken(nativeDefault.colors.CARD_BACKGROUND_DEFAULT);
-  let url;
-  if (videoAsset != null) {
-    url = videoAsset.url;
-  }
-  let mimetype;
-  if (videoAsset != null) {
-    mimetype = videoAsset.mimetype;
-  }
-  if (mimetype == null) {
-    mimetype = null;
-  }
-  if (cResult[0] === token) {
-    if (cResult[1] === staticUrl) {
-      if (cResult[2] === url) {
-        let tmp9;
-        if (cResult[3] === mimetype) {
-          tmp9 = cResult[4];
-        }
-        return tmp9;
-      }
-    }
-  }
-  const tmp10 = jsx(QuestDockVideoBackgroundDefault, { expandedHeight, imageUrl: staticUrl, videoUrl: url, videoMimetype: mimetype, gradientBaseColor: token });
-  cResult[0] = token;
-  cResult[1] = staticUrl;
-  cResult[2] = url;
-  cResult[3] = mimetype;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function QuestDockUnenrolledBackground() {
+const memoResult = react.memo(function QuestDockUnenrolledBackground() {
   let mimetype;
   let staticUrl;
   let url;
@@ -87,7 +43,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     mimetype = null;
   }
   return tmp4(tmp5, obj4);
-}));
+});
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBackground.tsx");
 
 export default memoResult;

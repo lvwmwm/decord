@@ -1,17 +1,16 @@
-// Module ID: 16595
-// Function ID: 16596
+// Module ID: 17195
+// Function ID: 17196
 // Name: GuildRoleSubscriptionsSetting
-// Dependencies: [8364, 1087, 16596, 558, 16597, 11240, 1128, 16598, 16600, 2]
+// Dependencies: [8432, 1072, 17196, 17197, 11540, 1113, 17198, 17200, 2]
 
-// Module 16595 (GuildRoleSubscriptionsSetting)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16596 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 16597 */;
-import TicketIcon from "TicketIcon" /* 16598 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17195 (GuildRoleSubscriptionsSetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 17197 */;
+import TicketIcon from "TicketIcon" /* 17198 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,8 +18,6 @@ const require = globalThis.__r;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = GuildRoleSubscriptionsConstants.UserGuildRoleSubscriptionRelationship;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -39,6 +36,6 @@ const obj = {
   }
 };
 const route = SettingBuilders.createRoute(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsSetting.tsx");
 
 export default route;

@@ -1,10 +1,10 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7661
+// Function ID: 7662
 // Name: Iterable
 // Dependencies: [2]
 // Exports: chain
 
-// Module 7623 (Iterable)
+// Module 7661 (Iterable)
 import size from "module_2" /* 2 */;
 
 class Chained {
@@ -32,7 +32,7 @@ Chained.prototype[Symbol.iterator] = function() {
 };
 const result = size.fileFinishedImporting("modules/app_database/util/Iterable.tsx");
 
-export const chain = function chain() {
+export function chain() {
   if (typeof Chained === "function") {
     const obj = Object.create(Chained.prototype);
     obj.index = 0;
@@ -41,4 +41,4 @@ export const chain = function chain() {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 14225
-// Function ID: 14226
+// Module ID: 14753
+// Function ID: 14754
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 14226, 1087, 14228, 1297, 584, 2]
+// Dependencies: [5, 14754, 1072, 14756, 1282, 572, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 14225 (CustomActivityLinkUtils)
-import Constants from "Constants" /* 1087 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14228 */;
+// Module 14753 (CustomActivityLinkUtils)
+import Constants from "Constants" /* 1072 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14226 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14754 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "r" }, done: true };
+            return { value: { customId: "fileBytes" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "r" };
+              obj = { customId: "fileBytes" };
             } else {
               obj = { customId: custom_id.custom_id };
             }
@@ -218,7 +218,7 @@ obj = function _loadCustomActivityLink() {
       const obj8 = { type: "CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS", applicationId, link };
       obj = closure_131_1(closure_131_2[5]);
       obj.dispatch(obj8);
-      await "IconComponent";
+      await "HermesInternal";
       if (null != applicationId) {
         if (null != link) {
           c4 = 1;
@@ -237,11 +237,11 @@ const set = new Set();
 let result = size.fileFinishedImporting("modules/activities/utils/CustomActivityLinkUtils.tsx");
 
 export { fetchCustomActivityLink };
-export const getCustomActivityLinkParams = function getCustomActivityLinkParams() {
+export function getCustomActivityLinkParams() {
   return obj(...arguments);
-};
+}
 export { loadCustomActivityLink };
-export const getOrFetchCustomActivityLink = function getOrFetchCustomActivityLink(id, linkId) {
+export function getOrFetchCustomActivityLink(id, linkId) {
   let one = CustomActivityLinksStore.getOne(id, linkId);
   if (null == one) {
     one = null;
@@ -253,4 +253,4 @@ export const getOrFetchCustomActivityLink = function getOrFetchCustomActivityLin
     }
   }
   return one;
-};
+}

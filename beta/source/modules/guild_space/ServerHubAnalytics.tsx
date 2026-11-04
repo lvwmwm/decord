@@ -1,13 +1,13 @@
-// Module ID: 19030
-// Function ID: 19031
+// Module ID: 19663
+// Function ID: 19664
 // Name: ServerHubAnalytics
-// Dependencies: [1087, 1267, 19031, 2]
+// Dependencies: [1072, 1252, 19664, 2]
 // Exports: trackServerHubToggleSetting, trackServerHubVisit, trackServerHubWidgetEditClicked
 
-// Module 19030 (ServerHubAnalytics)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import editorUtils from "editorUtils" /* 19031 */;
+// Module 19663 (ServerHubAnalytics)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import editorUtils from "editorUtils" /* 19664 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -15,17 +15,17 @@ const result = size.fileFinishedImporting("modules/guild_space/ServerHubAnalytic
 
 export const ServerHubSettingType = { ALL_SYSTEM_MESSAGES: "all_system_messages", LEADERBOARD_SYSTEM_MESSAGES: "leaderboard_system_messages", WHITEBOARD_SYSTEM_MESSAGES: "whiteboard_system_messages", MUSIC_SYSTEM_MESSAGES: "music_system_messages" };
 export const ServerHubVisitSource = { WINNER_BADGE: "winner_badge", LEADER_BADGE: "leader_badge", LEADERBOARD_SYSTEM_MESSAGE: "leaderboard_system_message", MUSIC_SYSTEM_MESSAGE: "music_system_message" };
-export const trackServerHubToggleSetting = function trackServerHubToggleSetting(id, settingType, value) {
+export function trackServerHubToggleSetting(id, ALL_SYSTEM_MESSAGES, value) {
   const obj = AnalyticsUtilsDefault;
-  const obj2 = { guild_id: id, type: settingType, value };
+  const obj2 = { guild_id: id, type: ALL_SYSTEM_MESSAGES, value };
   obj.track(AnalyticEvents.SERVER_HUB_TOGGLE_SETTING, obj2);
-};
-export const trackServerHubVisit = function trackServerHubVisit(guild_id, source) {
+}
+export function trackServerHubVisit(guild_id, source) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { guild_id, source };
   obj.track(AnalyticEvents.SERVER_HUB_VISIT, obj2);
-};
-export const trackServerHubWidgetEditClicked = function trackServerHubWidgetEditClicked(guild_id, widget_type, widget_id) {
+}
+export function trackServerHubWidgetEditClicked(guild_id, widget_type, widget_id) {
   let obj3;
   const track = AnalyticsUtilsDefault.track;
   const SERVER_HUB_WIDGET_EDIT_CLICKED = AnalyticEvents.SERVER_HUB_WIDGET_EDIT_CLICKED;
@@ -39,4 +39,4 @@ export const trackServerHubWidgetEditClicked = function trackServerHubWidgetEdit
   }
   const merged = Object.assign(obj3);
   track(SERVER_HUB_WIDGET_EDIT_CLICKED, obj);
-};
+}

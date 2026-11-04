@@ -1,19 +1,19 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 8475
+// Function ID: 8476
 // Name: GuildDiscoverySystemMessage
-// Dependencies: [4855, 4877, 1128, 8354, 2]
+// Dependencies: [4863, 4885, 1113, 8422, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 8410 (GuildDiscoverySystemMessage)
-import intl3 from "intl" /* 1128 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8354 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
+// Module 8475 (GuildDiscoverySystemMessage)
+import intl3 from "intl" /* 1113 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
 
-export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuildDiscoveryDisqualifiedSystemMessage(message) {
+export function createGuildDiscoveryDisqualifiedSystemMessage(message) {
   let formatToPartsResult;
   message = message.message;
   const channel = ChannelStore.getChannel(message.channel_id);
@@ -48,15 +48,15 @@ export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuil
   const obj2 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
-export const createGuildDiscoveryRequalifiedSystemMessage = function createGuildDiscoveryRequalifiedSystemMessage(message) {
+}
+export function createGuildDiscoveryRequalifiedSystemMessage(message) {
   let intl;
   const obj = { content: intl.string(intl3.t.tu6tOR) };
   intl = intl3.intl;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj;
-};
-export const createGuildDiscoveryGracePeriodInitialWarningSystemMessage = function createGuildDiscoveryGracePeriodInitialWarningSystemMessage(message) {
+}
+export function createGuildDiscoveryGracePeriodInitialWarningSystemMessage(message) {
   let formatToPartsResult;
   message = message.message;
   const channel = ChannelStore.getChannel(message.channel_id);
@@ -91,8 +91,8 @@ export const createGuildDiscoveryGracePeriodInitialWarningSystemMessage = functi
   const obj2 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
-export const createGuildDiscoveryGracePeriodFinalWarningSystemMessage = function createGuildDiscoveryGracePeriodFinalWarningSystemMessage(message) {
+}
+export function createGuildDiscoveryGracePeriodFinalWarningSystemMessage(message) {
   let formatToPartsResult;
   message = message.message;
   const channel = ChannelStore.getChannel(message.channel_id);
@@ -127,4 +127,4 @@ export const createGuildDiscoveryGracePeriodFinalWarningSystemMessage = function
   const obj2 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

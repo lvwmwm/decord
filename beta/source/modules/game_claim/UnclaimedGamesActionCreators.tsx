@@ -1,17 +1,17 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 18252
+// Function ID: 18253
 // Name: UnclaimedGamesActionCreators
-// Dependencies: [5, 17659, 1087, 1297, 584, 504, 1104, 569, 558, 2]
+// Dependencies: [5, 18253, 1072, 1282, 572, 504, 1089, 559, 2]
+// Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 17658 (UnclaimedGamesActionCreators)
-import BackoffDefault from "Backoff" /* 569 */;
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 18252 (UnclaimedGamesActionCreators)
+import BackoffDefault from "Backoff" /* 559 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnclaimedGamesStore from "UnclaimedGamesStore" /* 17659 */;
+import UnclaimedGamesStore from "UnclaimedGamesStore" /* 18253 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -31,7 +31,7 @@ let obj = function _fetchUnclaimedGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ let obj = function _fetchUnclaimedGames() {
           obj = closure_129_1(closure_129_2[4]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -106,23 +106,12 @@ obj = {
   }
 };
 const fetchStore = get_initialized.createFetchStore(UnclaimedGamesStore, obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnclaimedGameIdsForGuild(arg0, arg1) {
-  let tmp2 = undefined === arg1;
-  const tmp = fetchStore;
-  if (!tmp2) {
-    tmp2 = arg1;
-  }
-  const data = tmp(tmp2).data;
-  let tmp3;
-  if (data != null) {
-    tmp3 = data[arg0];
-  }
-  if (tmp3 == null) {
-    tmp3 = closure_6;
-  }
-  return tmp3;
-}) : (function useUnclaimedGameIdsForGuild(arg0) {
+const result = size.fileFinishedImporting("modules/game_claim/UnclaimedGamesActionCreators.tsx");
+
+export default { fetch: fetchUnclaimedGames };
+export { fetchUnclaimedGames };
+export const useUnclaimedGames = fetchStore;
+export function useUnclaimedGameIdsForGuild(id) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -130,33 +119,28 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnclaim
   const data = fetchStore(flag).data;
   let tmp;
   if (data != null) {
-    tmp = data[arg0];
+    tmp = data[id];
   }
   if (tmp == null) {
     tmp = closure_6;
   }
   return tmp;
-});
-let closure_10 = tmp4;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasUnclaimedGames(arg0, arg1) {
-  let tmp2 = undefined === arg1;
-  const tmp = closure_10;
-  if (!tmp2) {
-    tmp2 = arg1;
-  }
-  return tmp(arg0, tmp2).length > 0;
-}) : (function useHasUnclaimedGames(arg0) {
-  let flag = arg1;
-  if (arg1 === undefined) {
+}
+export function useHasUnclaimedGames(id, gameClaimCoachmarkEnabled) {
+  let flag = gameClaimCoachmarkEnabled;
+  if (gameClaimCoachmarkEnabled === undefined) {
     flag = true;
   }
-  return closure_10(arg0, flag).length > 0;
-});
-const result = size.fileFinishedImporting("modules/game_claim/UnclaimedGamesActionCreators.tsx");
-
-export default { fetch: fetchUnclaimedGames };
-export { fetchUnclaimedGames };
-export const useUnclaimedGames = fetchStore;
-export const useUnclaimedGameIdsForGuild = tmp4;
-export const useHasUnclaimedGames = tmp5;
+  if (flag === undefined) {
+    flag = true;
+  }
+  const data = fetchStore(flag).data;
+  let tmp;
+  if (data != null) {
+    tmp = data[id];
+  }
+  if (tmp == null) {
+    tmp = closure_6;
+  }
+  return tmp.length > 0;
+}

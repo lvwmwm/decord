@@ -1,135 +1,86 @@
 // Module ID: 1821
 // Function ID: 1822
-// Dependencies: [19, 1661, 1810, 1662, 1805]
+// Dependencies: [1822]
 
 // Module 1821
-import react from "react" /* 19 */;
-import module_1661 from "module_1661" /* 1661 */;
+import _modDef1822 from "module_1822" /* 1822 */;
 
 const require = globalThis.__r;
-let _require, closure_0, closure_2, workletEventHandler;
 
-let c2;
-let c3;
-let closure_4;
-function getWebScrollableElement(getScrollableNode) {
-  let scrollableNode;
-  if (getScrollableNode != null) {
-    scrollableNode = getScrollableNode.getScrollableNode();
+let convertOklabToRgb;
+let obj3;
+function convertLrgbToOklab(convert) {
+  let num = convert.r;
+  if (num === undefined) {
+    num = 0;
   }
-  if (scrollableNode == null) {
-    scrollableNode = getScrollableNode;
+  let num2 = convert.g;
+  if (num2 === undefined) {
+    num2 = 0;
   }
-  return scrollableNode;
+  let num3 = convert.b;
+  if (num3 === undefined) {
+    num3 = 0;
+  }
+  const alpha = convert.alpha;
+  const cbrtResult = Math.cbrt(0.41222147079999993 * num + 0.5363325363 * num2 + 0.0514459929 * num3);
+  const cbrtResult1 = Math.cbrt(0.2119034981999999 * num + 0.6806995450999999 * num2 + 0.1073969566 * num3);
+  const cbrtResult2 = Math.cbrt(0.08830246189999998 * num + 0.2817188376 * num2 + 0.6299787005000002 * num3);
+  return { l: 0.2104542553 * cbrtResult + 0.793617785 * cbrtResult1 - 0.0040720468 * cbrtResult2, a: 1.9779984951 * cbrtResult - 2.428592205 * cbrtResult1 + 0.4505937099 * cbrtResult2, b: 0.0259040371 * cbrtResult + 0.7827717662 * cbrtResult1 - 0.808675766 * cbrtResult2, alpha };
 }
-({ useCallback: c2, useEffect: c3, useRef: closure_4 } = react);
-let c5 = "animatedRef is not initialized in useScrollViewOffset. Make sure to pass the animated ref to the scrollable component to get scroll offset updates.";
-const __initData = { code: "function pnpm_useScrollViewOffsetTs1(){const{animatedRef,getWebScrollableElement,offset}=this.__closure;if(animatedRef){const element=getWebScrollableElement(animatedRef.current);offset.value=element.scrollLeft===0?element.scrollTop:element.scrollLeft;}}" };
-const __initData2 = { code: "function pnpm_useScrollViewOffsetTs2(event){const{offset}=this.__closure;offset.value=event.contentOffset.x===0?event.contentOffset.y:event.contentOffset.x;}" };
-let closure_9 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
+convertLrgbToOklab.__closure = {};
+convertLrgbToOklab.__workletHash = 12620455378469;
+convertLrgbToOklab.__initData = { code: "function convertLrgbToOklab_Pnpm_oklabTs1({r=0,g=0,b=0,alpha:alpha}){const L=Math.cbrt(0.41222147079999993*r+0.5363325363*g+0.0514459929*b);const M=Math.cbrt(0.2119034981999999*r+0.6806995450999999*g+0.1073969566*b);const S=Math.cbrt(0.08830246189999998*r+0.2817188376*g+0.6299787005000002*b);return{l:0.2104542553*L+0.793617785*M-0.0040720468*S,a:1.9779984951*L-2.428592205*M+0.4505937099*S,b:0.0259040371*L+0.7827717662*M-0.808675766*S,alpha:alpha};}" };
+function convertRgbToOklab(arg0) {
+  const convert = _modDef1822.convert;
+  const tmp = convertLrgbToOklab(convert.fromRgb(arg0));
+  const tmp2 = arg0.r === arg0.b && arg0.b === arg0.g;
+  if (tmp2) {
+    tmp.b = 0;
+    tmp.a = 0;
+  }
+  return tmp;
+}
+convertRgbToOklab.__closure = { lrgb: require("module_1822"), convertLrgbToOklab };
+convertRgbToOklab.__workletHash = 16743889557677;
+convertRgbToOklab.__initData = { code: "function convertRgbToOklab_Pnpm_oklabTs2(rgb){const{lrgb,convertLrgbToOklab}=this.__closure;const lrgbColor=lrgb.convert.fromRgb(rgb);const result=convertLrgbToOklab(lrgbColor);if(rgb.r===rgb.b&&rgb.b===rgb.g){result.a=result.b=0;}return result;}" };
+function convertOklabToLrgb(l) {
+  let num = l.l;
+  if (num === undefined) {
+    num = 0;
+  }
+  let num2 = l.a;
+  if (num2 === undefined) {
+    num2 = 0;
+  }
+  let num3 = l.b;
+  if (num3 === undefined) {
+    num3 = 0;
+  }
+  const alpha = l.alpha;
+  const powResult = Math.pow(0.9999999984505198 * num + 0.39633779217376786 * num2 + 0.2158037580607588 * num3, 3);
+  const powResult1 = Math.pow(1.0000000088817609 * num - 0.10556134232365635 * num2 - 0.06385417477170591 * num3, 3);
+  const powResult2 = Math.pow(1.0000000546724108 * num - 0.08948418209496575 * num2 - 1.2914855378640917 * num3, 3);
+  return { r: 4.076741661347994 * powResult - 3.307711590408193 * powResult1 + 0.230969928729428 * powResult2, g: -1.2684380040921763 * powResult + 2.6097574006633715 * powResult1 - 0.3413193963102197 * powResult2, b: -0.004196086541837188 * powResult - 0.7034186144594493 * powResult1 + 1.7076147009309444 * powResult2, alpha };
+}
+convertOklabToLrgb.__closure = {};
+convertOklabToLrgb.__workletHash = 14870197803884;
+convertOklabToLrgb.__initData = { code: "function convertOklabToLrgb_Pnpm_oklabTs3({l=0,a=0,b=0,alpha:alpha}){const L=Math.pow(l*0.99999999845051981432+0.39633779217376785678*a+0.21580375806075880339*b,3);const M=Math.pow(l*1.0000000088817607767-0.1055613423236563494*a-0.063854174771705903402*b,3);const S=Math.pow(l*1.0000000546724109177-0.089484182094965759684*a-1.2914855378640917399*b,3);return{r:+4.076741661347994*L-3.307711590408193*M+0.230969928729428*S,g:-1.2684380040921763*L+2.6097574006633715*M-0.3413193963102197*S,b:-0.004196086541837188*L-0.7034186144594493*M+1.7076147009309444*S,alpha:alpha};}" };
+const obj2 = { convert: obj3 };
+obj3 = { fromRgb: convertRgbToOklab, toRgb: convertOklabToRgb };
+convertOklabToRgb = function convertOklabToRgb(l) {
+  const tmp = convertOklabToLrgb(l);
+  const convert = _modDef1822.convert;
+  const toRgbResult = convert.toRgb(tmp);
+  toRgbResult.r = Math.ceil(100000 * toRgbResult.r) / 100000;
+  toRgbResult.g = Math.ceil(100000 * toRgbResult.g) / 100000;
+  toRgbResult.b = Math.ceil(100000 * toRgbResult.b) / 100000;
+  return toRgbResult;
+};
+const obj = { lrgb: require("module_1822"), convertLrgbToOklab };
+convertOklabToRgb.__closure = { convertOklabToLrgb, lrgb: require("module_1822") };
+convertOklabToRgb.__workletHash = 14795767520122;
+convertOklabToRgb.__initData = { code: "function convertOklabToRgb_Pnpm_oklabTs4(labColor){const{convertOklabToLrgb,lrgb}=this.__closure;const roundChannel=function(channel){return Math.ceil(channel*100_000)/100_000;};const lrgbColor=convertOklabToLrgb(labColor);const rgbColor=lrgb.convert.toRgb(lrgbColor);rgbColor.r=roundChannel(rgbColor.r);rgbColor.g=roundChannel(rgbColor.g);rgbColor.b=roundChannel(rgbColor.b);return rgbColor;}" };
+({ convertOklabToLrgb, lrgb: require("module_1822") });
 
-export const useScrollViewOffset = module_1661.isWeb() ? (function useScrollViewOffsetWeb(animatedRef, arg1) {
-  let current;
-  _require = animatedRef;
-  let sharedValue = arg1;
-  const obj = require("module_1810");
-  const tmp2 = closure_4;
-  if (arg1 == null) {
-    sharedValue = obj.useSharedValue(0);
-  }
-  current = tmp2(sharedValue).current;
-  const fn = function _() {
-    if (animatedRef) {
-      current = animatedRef.current;
-      let scrollableNode;
-      if (current != null) {
-        scrollableNode = current.getScrollableNode();
-      }
-      if (scrollableNode == null) {
-        scrollableNode = current;
-      }
-      current.value = 0 === scrollableNode.scrollLeft ? scrollableNode.scrollTop : scrollableNode.scrollLeft;
-    }
-  };
-  const obj2 = { animatedRef, getWebScrollableElement, offset: current };
-  fn.__closure = obj2;
-  fn.__workletHash = 2244034762234;
-  fn.__initData = __initData;
-  const items = [animatedRef, current];
-  const tmp3 = closure_2(fn, items);
-  closure_2 = tmp3;
-  const items1 = [animatedRef, tmp3];
-  closure_3(() => {
-    if (animatedRef) {
-      return animatedRef.observe((arg0) => {
-        let scrollableNode;
-        const tmp = arg0;
-        if (tmp) {
-          current = scrollableNode.current;
-          scrollableNode = undefined;
-          if (current != null) {
-            scrollableNode = current.getScrollableNode();
-          }
-          if (scrollableNode == null) {
-            scrollableNode = current;
-          }
-          const listener = scrollableNode.addEventListener("scroll", closure_2);
-          return () => {
-            const removed = scrollableNode.removeEventListener("scroll", closure_2_2);
-          };
-        } else {
-          const logger = animatedRef(closure_1_1[3]).logger;
-          logger.warn(closure_1_5);
-        }
-      });
-    }
-  }, items1);
-  return current;
-}) : (function useScrollViewOffsetNative(arg0, arg1) {
-  let current;
-  _require = arg0;
-  let sharedValue = arg1;
-  const obj = require("module_1810");
-  const tmp2 = _require;
-  const tmp3 = current;
-  const tmp4 = closure_4;
-  if (arg1 == null) {
-    sharedValue = obj.useSharedValue(0);
-  }
-  current = tmp4(sharedValue).current;
-  const fn = function _(contentOffset) {
-    let x;
-    const tmp = current;
-    if (0 === contentOffset.contentOffset.x) {
-      x = contentOffset.contentOffset.y;
-    } else {
-      x = contentOffset.contentOffset.x;
-    }
-    tmp.value = x;
-  };
-  fn.__closure = { offset: current };
-  fn.__workletHash = 17316000082767;
-  fn.__initData = __initData2;
-  const tmp2Result = tmp2(tmp3[4]);
-  const event = tmp2Result.useEvent(fn, closure_9);
-  const items = [arg0, event];
-  closure_3(() => {
-    if (closure_0) {
-      return closure_0.observe((arg0) => {
-        closure_0 = arg0;
-        if (closure_0) {
-          workletEventHandler = workletEventHandler.workletEventHandler;
-          workletEventHandler.registerForEvents(arg0);
-          return () => {
-            workletEventHandler = event.workletEventHandler;
-            workletEventHandler.unregisterFromEvents(closure_0);
-          };
-        } else {
-          const logger = closure_1_0(current[3]).logger;
-          logger.warn(closure_1_5);
-        }
-      });
-    }
-  }, items);
-  return current;
-});
+export default obj2;

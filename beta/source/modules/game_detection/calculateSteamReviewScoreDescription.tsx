@@ -1,16 +1,16 @@
-// Module ID: 9352
-// Function ID: 9353
+// Module ID: 9391
+// Function ID: 9392
 // Name: calculateSteamReviewScoreDescription
-// Dependencies: [2042, 2]
+// Dependencies: [2035, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 9352 (calculateSteamReviewScoreDescription)
-import GameDetectionTypes from "GameDetectionTypes" /* 2042 */;
+// Module 9391 (calculateSteamReviewScoreDescription)
+import GameDetectionTypes from "GameDetectionTypes" /* 2035 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");
 
-export const calculateSteamReviewScoreDescription = function calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating) {
+export function calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating) {
   let num = 50;
   let num2 = 50;
   if (isRecentRating) {
@@ -62,4 +62,4 @@ export const calculateSteamReviewScoreDescription = function calculateSteamRevie
     }
   }
   NO_USER_REVIEWS = GameDetectionTypes.SteamReviewScoreDescription.NO_USER_REVIEWS;
-};
+}

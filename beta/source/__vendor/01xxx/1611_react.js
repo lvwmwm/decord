@@ -1,33 +1,18 @@
 // Module ID: 1611
 // Function ID: 1612
 // Name: react
-// Dependencies: [19, 17]
-// Exports: useBackButton
+// Dependencies: [19, 1573]
+// Exports: useDeepStableValue
 
 // Module 1611 (react)
-import react_native from "react-native" /* 17 */;
-import react_mod from "react" /* 19 */;
+import equalDefault from "equal" /* 1573 */;
+import react from "react" /* 19 */;
 
-let react = react_mod;
-const BackHandler = react_native.BackHandler;
 
-export const useBackButton = function useBackButton(ref) {
-  react = ref;
-  const items = [ref];
-  const effect = react.useEffect(() => {
-    ref = BackHandler.addEventListener("hardwareBackPress", () => {
-      const current = ref.current;
-      let tmp = null != current;
-      if (tmp) {
-        let flag = current.canGoBack();
-        if (flag) {
-          current.goBack();
-          flag = true;
-        }
-        tmp = flag;
-      }
-      return tmp;
-    });
-    return () => ref.remove();
-  }, items);
-};
+export function useDeepStableValue(current) {
+  const ref = react.useRef(current);
+  if (!equalDefault(ref.current, current)) {
+    ref.current = current;
+  }
+  return ref.current;
+}

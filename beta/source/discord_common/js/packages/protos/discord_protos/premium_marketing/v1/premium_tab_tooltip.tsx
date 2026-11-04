@@ -1,12 +1,12 @@
-// Module ID: 9573
-// Function ID: 9574
+// Module ID: 9647
+// Function ID: 9648
 // Name: premium_tab_tooltip
-// Dependencies: [32, 1212, 9567, 9557, 2]
+// Dependencies: [32, 1197, 9641, 9631, 2]
 
-// Module 9573 (premium_tab_tooltip)
-import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9557 */;
-import theme_aware_asset from "theme_aware_asset" /* 9567 */;
+// Module 9647 (premium_tab_tooltip)
+import _mod1197 from "module_1197" /* 1197 */;
+import localized_string from "localized_string" /* 9631 */;
+import theme_aware_asset from "theme_aware_asset" /* 9641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const T2 = function T() {
 const T3 = function T() {
   return require("localized_string").LocalizedString;
 };
-const MessageType = _mod1212.MessageType;
+const MessageType = _mod1197.MessageType;
 class PremiumTabTooltip$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "header", kind: "scalar", T: 9 }, { no: 2, name: "body", kind: "scalar", T: 9 }, { no: 3, name: "asset", kind: "message", T: T2 }, , ];
@@ -39,9 +39,9 @@ class PremiumTabTooltip$Type extends MessageType {
     const obj = { header: "", body: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1212;
+      const tmpResult = _mod1197;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -89,7 +89,7 @@ class PremiumTabTooltip$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1212.UnknownFieldHandler.onRead;
+                onRead = _mod1197.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -101,18 +101,18 @@ class PremiumTabTooltip$Type extends MessageType {
   }
   internalBinaryWrite(header, tag, writeUnknownFields) {
     if ("" !== header.header) {
-      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
       tagResult.string(header.header);
     }
     if ("" !== header.body) {
-      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       tagResult1.string(header.body);
     }
     if (header.asset) {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       const asset = header.asset;
-      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult2.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -120,7 +120,7 @@ class PremiumTabTooltip$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString.internalBinaryWrite;
       const headerLocalized = header.headerLocalized;
-      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(headerLocalized, tagResult3.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -128,14 +128,14 @@ class PremiumTabTooltip$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = header.bodyLocalized;
-      const tagResult4 = tag.tag(5, _mod1212.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(bodyLocalized, tagResult4.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1212.UnknownFieldHandler.onWrite;
+        onWrite = _mod1197.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, header, tag);

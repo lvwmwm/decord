@@ -1,55 +1,31 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 17458
+// Function ID: 17459
 // Name: DataSavingModeSetting
-// Dependencies: [1209, 8364, 558, 576, 504, 16853, 4831, 11240, 1128, 2]
+// Dependencies: [1194, 8432, 504, 17456, 4839, 11540, 1113, 2]
 
-// Module 16855 (DataSavingModeSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import UserSettingsText from "UserSettingsText" /* 16853 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17458 (DataSavingModeSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import UserSettingsText from "UserSettingsText" /* 17456 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataSavingModeSettingValue() {
-  let dataSavingMode;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UnsyncedUserSettingsStore];
-    const fn = function o() {
-      return dataSavingMode.dataSavingMode;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useDataSavingModeSettingValue() {
-  let dataSavingMode;
-  const items = [UnsyncedUserSettingsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.ix8XIj);
   },
   parent: MobileUserSettings.CHAT,
-  useValue: tmp2,
+  useValue: function useDataSavingModeSettingValue() {
+    let dataSavingMode;
+    const items = [UnsyncedUserSettingsStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
+  },
   onValueChange: function onDataSavingModeSettingValueChange(dataSavingMode) {
     let ViewImageDescriptions;
     const obj = { videoUploadQuality: UnsyncedUserSettingsStore.videoUploadQuality, viewImageDescriptions: ViewImageDescriptions.getSetting(), lowQualityImageMode: UnsyncedUserSettingsStore.lowQualityImageMode, dataSavingMode };

@@ -1,12 +1,12 @@
-// Module ID: 14675
-// Function ID: 14676
+// Module ID: 15220
+// Function ID: 15221
 // Name: PoggermodeUtils
-// Dependencies: [7784, 586, 2]
+// Dependencies: [7821, 574, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
 
-// Module 14675 (PoggermodeUtils)
-import shims from "shims" /* 586 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7784 */;
+// Module 15220 (PoggermodeUtils)
+import shims from "shims" /* 574 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7821 */;
 import size from "module_2" /* 2 */;
 
 let LEVEL_3;
@@ -28,7 +28,7 @@ let closure_6 = items.map((item) => {
 });
 let result = size.fileFinishedImporting("modules/poggermode/PoggermodeUtils.tsx");
 
-export const getComboShakeIntensity = function getComboShakeIntensity(userCombo, LEVEL_4) {
+export function getComboShakeIntensity(userCombo, LEVEL_4) {
   let arr2;
   LEVEL_3 = LEVEL_4;
   if (LEVEL_4 === undefined) {
@@ -60,8 +60,8 @@ export const getComboShakeIntensity = function getComboShakeIntensity(userCombo,
     }, 0));
   }
   return num;
-};
-export const getComboPercentage = function getComboPercentage(value) {
+}
+export function getComboPercentage(value) {
   let arr2;
   const items = [closure_5, closure_6];
   [arr2, ] = items;
@@ -88,8 +88,8 @@ export const getComboPercentage = function getComboPercentage(value) {
     }, 0));
   }
   return num;
-};
-export const getComboStyles = function getComboStyles(arg0) {
+}
+export function getComboStyles(arg0) {
   let obj;
   let obj10;
   let obj2;
@@ -125,12 +125,12 @@ export const getComboStyles = function getComboStyles(arg0) {
     obj8 = shims;
   }
   return obj;
-};
-export const getComboScore = function getComboScore(multiplier) {
+}
+export function getComboScore(multiplier) {
   let num = multiplier.multiplier;
   const value = multiplier.value;
   if (num == null) {
     num = 1;
   }
   return value * num;
-};
+}

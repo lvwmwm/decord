@@ -1,22 +1,22 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8384
+// Function ID: 8385
 // Name: MessageQueue
-// Dependencies: [109, 5269, 502, 5922, 1087, 5008, 1104, 8173, 3, 5743, 8174, 7601, 1297, 6051, 38, 8175, 8178, 8198, 8182, 2]
+// Dependencies: [109, 5627, 502, 5901, 1072, 5019, 1089, 8385, 3, 5760, 8386, 7639, 1282, 6070, 38, 8209, 8212, 8231, 8216, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8172 (MessageQueue)
+// Module 8384 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
-import NetStats from "NetStats" /* 7601 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8174 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import NetStats from "NetStats" /* 7639 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8386 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 5269 */;
+import DevSettingsStore from "DevSettingsStore" /* 5627 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 5922 */;
-import Constants from "Constants" /* 1087 */;
-import Queue from "Queue" /* 8173 */;
+import NetworkStore from "NetworkStore" /* 5901 */;
+import Constants from "Constants" /* 1072 */;
+import Queue from "Queue" /* 8385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let tmp;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const HTTPUtils = tmp5(1297);
+const HTTPUtils = tmp5(1282);
 function handleEdit(messageId, fn) {
   let channelId;
   let isCrossposted;
@@ -361,16 +361,16 @@ let result = size.fileFinishedImporting("lib/MessageQueue.tsx");
 
 export default handleCommand1;
 export { MessageDataType };
-export const isMessageDataSend = function isMessageDataSend(type) {
+export function isMessageDataSend(type) {
   return type.type === obj.SEND || type.type === tmp.SEND_ANNOUNCEMENT;
-};
-export const isMessageDataEdit = function isMessageDataEdit(messageData) {
+}
+export function isMessageDataEdit(messageData) {
   return messageData.type === obj.EDIT;
-};
-export const isMessageDataCommand = function isMessageDataCommand(type) {
+}
+export function isMessageDataCommand(type) {
   return type.type === obj.COMMAND;
-};
-export const getFailedMessageId = function getFailedMessageId(messageData) {
+}
+export function getFailedMessageId(messageData) {
   let id;
   const tmp2 = messageData.type === obj.SEND || messageData.type === obj.SEND_ANNOUNCEMENT;
   if (tmp2) {
@@ -381,4 +381,4 @@ export const getFailedMessageId = function getFailedMessageId(messageData) {
     id = messageData.message.data.id;
   }
   return id;
-};
+}

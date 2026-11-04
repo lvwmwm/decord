@@ -1,14 +1,14 @@
-// Module ID: 13794
-// Function ID: 13795
+// Module ID: 11028
+// Function ID: 11029
 // Name: playInAppMessageSound
-// Dependencies: [13778, 13795, 1087, 1630, 11557, 2]
+// Dependencies: [11011, 11029, 1072, 1622, 11030, 2]
 // Exports: playInAppMessageSound
 
-// Module 13794 (playInAppMessageSound)
-import Constants from "Constants" /* 1087 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
-import InAppMessageSoundsStore from "InAppMessageSoundsStore" /* 13795 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13778 */;
+// Module 11028 (playInAppMessageSound)
+import Constants from "Constants" /* 1072 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
+import InAppMessageSoundsStore from "InAppMessageSoundsStore" /* 11029 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11011 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = InAppMessageSoundsStore.isInAppMessageSoundsEnabled;
@@ -17,7 +17,7 @@ const message1 = "message1";
 let timestamp = 0;
 const result = size.fileFinishedImporting("modules/notifications/native/playInAppMessageSound.tsx");
 
-export const playInAppMessageSound = function playInAppMessageSound(notification) {
+export function playInAppMessageSound(notification) {
   if (notification.type === InAppNotificationTypes.MESSAGE) {
     const obj2 = MetaQuestUtils;
     const tmp8 = require;
@@ -28,11 +28,11 @@ export const playInAppMessageSound = function playInAppMessageSound(notification
           const _Date = Date;
           timestamp = Date.now();
           if (timestamp - timestamp >= 1000) {
-            const tmp8Result = tmp8(11557);
+            const tmp8Result = tmp8(11030);
             tmp8Result.playSound(tmp3, 0.4);
           }
         }
       }
     }
   }
-};
+}

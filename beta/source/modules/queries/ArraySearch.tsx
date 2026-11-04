@@ -1,10 +1,10 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 12397
+// Function ID: 12398
 // Name: ArraySearch
 // Dependencies: [2]
 // Exports: queryData
 
-// Module 12082 (ArraySearch)
+// Module 12397 (ArraySearch)
 import size from "module_2" /* 2 */;
 
 function sortGroup(arr, arg1) {
@@ -23,7 +23,7 @@ function sortGroup(arr, arg1) {
 }
 const result = size.fileFinishedImporting("modules/queries/ArraySearch.tsx");
 
-export const queryData = function queryData(apps, limit) {
+export function queryData(apps, limit) {
   function applySorting(items, sortComparers, limit) {
     items = [];
     const obj = items[Symbol.iterator]();
@@ -125,4 +125,4 @@ export const queryData = function queryData(apps, limit) {
     return arr7.slice(0, num);
   }
   items = [found];
-};
+}

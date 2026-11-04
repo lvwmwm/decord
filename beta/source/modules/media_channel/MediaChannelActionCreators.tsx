@@ -1,13 +1,13 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10975
+// Function ID: 10976
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1087, 584, 1297, 6406, 2]
+// Dependencies: [5, 1072, 572, 1282, 6446, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 10849 (MediaChannelActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 10975 (MediaChannelActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _fetchMediaPostEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _fetchMediaPostEmbed() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -110,7 +110,7 @@ obj = function _unfurlEmbedUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -170,14 +170,14 @@ obj = function _unfurlEmbedUrl() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/media_channel/MediaChannelActionCreators.tsx");
 
-export const dismissMediaPostSharePrompt = function dismissMediaPostSharePrompt(threadId) {
+export function dismissMediaPostSharePrompt(threadId) {
   obj = DispatcherDefault;
   const obj2 = { type: "DISMISS_MEDIA_POST_SHARE_PROMPT", threadId };
   obj.dispatch(obj2);
-};
-export const fetchMediaPostEmbed = function fetchMediaPostEmbed() {
+}
+export function fetchMediaPostEmbed() {
   return obj(...arguments);
-};
-export const unfurlEmbedUrl = function unfurlEmbedUrl() {
+}
+export function unfurlEmbedUrl() {
   return obj(...arguments);
-};
+}

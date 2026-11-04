@@ -1,39 +1,28 @@
-// Module ID: 9886
-// Function ID: 9887
+// Module ID: 9968
+// Function ID: 9969
 // Name: useExpressionPickerListWidth
-// Dependencies: [1243, 5298, 558, 1499, 1633, 2]
+// Dependencies: [1228, 5273, 1491, 1625, 2]
+// Exports: default
 
-// Module 9886 (useExpressionPickerListWidth)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5298 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9968 (useExpressionPickerListWidth)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5273 */;
 import size from "module_2" /* 2 */;
 
 const PADDING_HORIZONTAL = ExpressionPickerConstants.PADDING_HORIZONTAL;
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpressionPickerListWidth(arg0) {
-  const width = useWindowDimensionsDefault().width;
-  const rect = useSafeAreaInsetsDefault();
-  const diff = width - rect.left - rect.right - 2 * PADDING_HORIZONTAL;
-  let bound = diff;
-  if (!arg0) {
-    const _Math = Math;
-    bound = Math.min(diff, ACTION_SHEET_MAX_WIDTH);
-  }
-  return bound;
-}) : (function useExpressionPickerListWidth(arg0) {
-  const width = useWindowDimensionsDefault().width;
-  const rect = useSafeAreaInsetsDefault();
-  const diff = width - rect.left - rect.right - 2 * PADDING_HORIZONTAL;
-  let bound = diff;
-  if (!arg0) {
-    const _Math = Math;
-    bound = Math.min(diff, ACTION_SHEET_MAX_WIDTH);
-  }
-  return bound;
-});
 const result = size.fileFinishedImporting("modules/expression_picker/native/useExpressionPickerListWidth.native.tsx");
 
-export default tmp2;
+export default function useExpressionPickerListWidth(arg0) {
+  const width = useWindowDimensionsDefault().width;
+  const rect = useSafeAreaInsetsDefault();
+  const diff = width - rect.left - rect.right - 2 * PADDING_HORIZONTAL;
+  let bound = diff;
+  if (!arg0) {
+    const _Math = Math;
+    bound = Math.min(diff, ACTION_SHEET_MAX_WIDTH);
+  }
+  return bound;
+};

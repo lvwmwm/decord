@@ -1,12 +1,11 @@
-// Module ID: 7527
-// Function ID: 7528
+// Module ID: 7568
+// Function ID: 7569
 // Name: GiftCardsExperiment
-// Dependencies: [1455, 558, 576, 2]
+// Dependencies: [1447, 2]
+// Exports: useGiftCardsExperimentConfig
 
-// Module 7527 (GiftCardsExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7568 (GiftCardsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -14,25 +13,10 @@ let obj = { name: "2026-02-gift-cards", kind: "user", defaultConfig: { enabled: 
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftCardsExperimentConfig(cResult) {
-  let tmp3;
-  const obj = react;
-  cResult = obj.c(2);
-  const config = apexExperiment.useConfig(cResult);
-  if (cResult[0] !== config.enabled) {
-    const obj2 = { enabled: config.enabled };
-    cResult[0] = config.enabled;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function useGiftCardsExperimentConfig(cResult) {
-  const obj = { enabled: apexExperiment.useConfig(cResult).enabled };
-  return obj;
-});
 const result = size.fileFinishedImporting("modules/billing/experiments/GiftCardsExperiment.tsx");
 
 export default apexExperiment;
-export const useGiftCardsExperimentConfig = tmp3;
+export function useGiftCardsExperimentConfig(location) {
+  const obj = { enabled: apexExperiment.useConfig(location).enabled };
+  return obj;
+}

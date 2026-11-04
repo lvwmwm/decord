@@ -1,14 +1,14 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 13409
+// Function ID: 13410
 // Name: MosaicMediaType
-// Dependencies: [1087, 6031, 1405, 12962, 2]
+// Dependencies: [1072, 6051, 1396, 13410, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 12961 (MosaicMediaType)
-import Constants from "Constants" /* 1087 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6031 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 12962 */;
+// Module 13409 (MosaicMediaType)
+import Constants from "Constants" /* 1072 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6051 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13410 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/messages/MosaicMediaType.tsx"
 export function isVisualMedia(arg0) {
   return "IMAGE" === arg0 || "VIDEO" === arg0 || "CLIP" === arg0 || "VISUAL_PLACEHOLDER" === arg0;
 }
-export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAttachment(proxy_url, arg1) {
+export function getMosaicMediaTypeForAttachment(proxy_url, arg1) {
   let filename;
   let height;
   let str;
@@ -73,8 +73,8 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     }
   }
   str = str2;
-};
-export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTypeForUnfurledMediaItem(arg0) {
+}
+export function getMosaicMediaTypeForUnfurledMediaItem(arg0) {
   let contentType;
   let height;
   let width;
@@ -88,7 +88,7 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
           if (obj.isImageContentType(contentType)) {
             return "IMAGE";
           } else {
-            const tmpResult = tmp(6031);
+            const tmpResult = tmp(6051);
             if (tmpResult.isVideoContentType(contentType)) {
               return "VIDEO";
             }
@@ -98,4 +98,4 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
     }
   }
   return "VISUAL_PLACEHOLDER";
-};
+}

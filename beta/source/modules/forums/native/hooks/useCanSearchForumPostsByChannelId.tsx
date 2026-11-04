@@ -1,59 +1,28 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 11348
+// Function ID: 11349
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [4855, 4935, 1087, 558, 576, 504, 2]
+// Dependencies: [4863, 4946, 1072, 504, 2]
+// Exports: useCanSearchForumPostsByChannelId
 
-// Module 14040 (useCanSearchForumPostsByChannelId)
-import Constants from "Constants" /* 1087 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11348 (useCanSearchForumPostsByChannelId)
+import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSearchForumPostsByChannelId(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore, PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      const channel = ChannelStore.getChannel(closure_0);
-      const canResult = null != channel && PermissionStore.can(Permissions.READ_MESSAGE_HISTORY, channel);
-      return canResult;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useCanSearchForumPostsByChannelId(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/forums/native/hooks/useCanSearchForumPostsByChannelId.tsx");
+
+export function useCanSearchForumPostsByChannelId(channelId) {
+  _require = channelId;
   const items = [ChannelStore, PermissionStore];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(closure_0);
+    const channel = ChannelStore.getChannel(channelId);
     const canResult = null != channel && PermissionStore.can(Permissions.READ_MESSAGE_HISTORY, channel);
     return canResult;
   });
-});
-const result = size.fileFinishedImporting("modules/forums/native/hooks/useCanSearchForumPostsByChannelId.tsx");
-
-export const useCanSearchForumPostsByChannelId = tmp2;
+}

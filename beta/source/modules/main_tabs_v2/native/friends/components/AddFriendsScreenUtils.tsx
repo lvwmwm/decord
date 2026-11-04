@@ -1,16 +1,16 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 18101
+// Function ID: 18102
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 4855, 1087, 5008, 10661, 7443, 5694, 1128, 13190, 7598, 7446, 2]
+// Dependencies: [5, 4863, 1072, 5019, 10740, 7485, 5711, 1113, 13822, 7636, 7488, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 17507 (AddFriendsScreenUtils)
-import Constants from "Constants" /* 1087 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7446 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10661 */;
+// Module 18101 (AddFriendsScreenUtils)
+import Constants from "Constants" /* 1072 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10740 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let channelId;
@@ -100,13 +100,13 @@ let obj = function _sendWave() {
           obj.openPrivateChannel(obj15);
         }
       }
-      await "IconComponent";
+      await "HermesInternal";
       channelId = tmp4;
       flag = closure_1;
       if (closure_1 === undefined) {
         flag = true;
       }
-      return "Reflect";
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -117,29 +117,29 @@ const AnalyticsSections = Constants.AnalyticsSections;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx");
 
-export const dismissIncomingRequest = function dismissIncomingRequest(arg0) {
+export function dismissIncomingRequest(arg0) {
   let applicationId;
   let userId;
   ({ userId, applicationId } = arg0);
   obj = PeopleUtilsDefault;
   const obj2 = { userId, applicationId, location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj.cancelFriendRequest(obj2);
-};
-export const acceptIncomingRequest = function acceptIncomingRequest(arg0) {
+}
+export function acceptIncomingRequest(arg0) {
   let applicationId;
   let userId;
   ({ userId, applicationId } = arg0);
   obj = PeopleUtilsDefault;
   const obj2 = { userId, applicationId, location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   const result = obj.maybeConfirmFriendRequestAccept(obj2);
-};
-export const sendWave = function sendWave() {
+}
+export function sendWave() {
   return obj(...arguments);
-};
-export const addContactSuggestion = function addContactSuggestion(user) {
+}
+export function addContactSuggestion(user) {
   let obj3;
-  const obj2 = { userId: user.id, context: obj3, type: "IconComponent", fromFriendSuggestion: null };
+  const obj2 = { userId: user.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
   obj3 = { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj = RelationshipActionCreatorsDefault;
   obj.addRelationship(obj2);
-};
+}

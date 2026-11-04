@@ -1,10 +1,10 @@
-// Module ID: 4850
-// Function ID: 4851
+// Module ID: 4858
+// Function ID: 4859
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 4850 (Timers)
+// Module 4858 (Timers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -237,7 +237,7 @@ class BatchInvocationManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;
@@ -317,7 +317,7 @@ class BatchInvocationManager {
             closure_132_0._flush();
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp34) {
           closure_5 = tmp34;
           if (0 === c6) {
@@ -338,14 +338,14 @@ const prototype4 = BatchInvocationManager.prototype;
 export { Timeout };
 export { DelayedCall };
 export { Interval };
-export const timeoutPromise = function timeoutPromise(result) {
+export function timeoutPromise(result) {
   let closure_0 = result;
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     const timerId = setTimeout(() => closure_0(), closure_0);
   });
   return promise;
-};
+}
 export const DEFAULT_BATCH_INVOCATION_DELAY_MS = 32;
 export { BatchInvocationManagerResetError };
 export { BatchInvocationManager };

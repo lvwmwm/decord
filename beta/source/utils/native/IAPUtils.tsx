@@ -1,31 +1,30 @@
-// Module ID: 13945
-// Function ID: 13946
+// Module ID: 14465
+// Function ID: 14466
 // Name: IAPUtils
-// Dependencies: [5, 17, 5269, 5678, 1392, 7556, 1087, 1394, 1384, 13946, 13947, 3, 38, 13966, 7551, 12, 1281, 4819, 558, 576, 504, 13967, 1383, 4960, 13968, 2]
-// Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
+// Dependencies: [5, 17, 5627, 5695, 1383, 7597, 1072, 1385, 1375, 14466, 14467, 3, 38, 14486, 7593, 12, 1266, 4827, 504, 14487, 1374, 4971, 14488, 2]
+// Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 13945 (IAPUtils)
+// Module 14465 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import v1 from "v1" /* 1281 */;
-import react_nativeAll from "react-native" /* 1383 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import DeviceUtils from "DeviceUtils" /* 4960 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5678 */;
-import react_native2 from "react-native" /* 13946 */;
-import _mod13947 from "module_13947" /* 13947 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 13966 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 13967 */;
-import iapProducts from "iapProducts" /* 13968 */;
+import v1 from "v1" /* 1266 */;
+import react_nativeAll from "react-native" /* 1374 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import DeviceUtils from "DeviceUtils" /* 4971 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5695 */;
+import react_native2 from "react-native" /* 14466 */;
+import _mod14467 from "module_14467" /* 14467 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 14486 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 14487 */;
+import iapProducts from "iapProducts" /* 14488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5269 */;
-import UserStore from "UserStore" /* 1392 */;
-import IAPStore from "IAPStore" /* 7556 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DevSettingsStore from "DevSettingsStore" /* 5627 */;
+import UserStore from "UserStore" /* 1383 */;
+import IAPStore from "IAPStore" /* 7597 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +33,7 @@ let _require, arr4, c4, closure_3, closure_4, closure_5;
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(7551);
+const ProductIds = tmp(7593);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -70,7 +69,7 @@ let obj = function _makeIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -99,8 +98,8 @@ let obj = function _makeIAPRequest() {
               } else {
                 c6 = 1;
                 const obj5 = { requestJSONString: tmp45, sku: tmp46, appAccountToken: convertToUUID(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: tmp47 };
-                const requestPurchase = require("module_13947").requestPurchase;
-                require("module_13947");
+                const requestPurchase = require("module_14467").requestPurchase;
+                require("module_14467");
                 c7 = 2;
                 c8 = 1;
                 const obj6 = { value: requestPurchase(obj5), done: false };
@@ -175,7 +174,7 @@ obj = function _purchaseProduct() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -200,7 +199,7 @@ obj = function _purchaseProduct() {
                 c5 = 1;
                 c6 = 1;
                 const obj5 = { value: obj7.clearTransactionIOS(), done: false };
-                obj7 = require("module_13947");
+                obj7 = require("module_14467");
                 return obj5;
               }
             }
@@ -268,7 +267,7 @@ obj = function _restorePurchases() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -291,7 +290,7 @@ obj = function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -465,7 +464,7 @@ obj = function _fetchStoreFront() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -489,7 +488,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_13947");
+              obj4 = require("module_14467");
               return obj6;
             } else {
               c5 = 3;
@@ -548,9 +547,9 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod13947.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod13947.ErrorCode.E_UNKNOWN];
+let items = [_mod14467.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod14467.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
-let tmp5 = new LoggerDefault("IAPUtils.tsx");
+new LoggerDefault("IAPUtils.tsx");
 obj = {
   loadProducts() {
     let nextPromise;
@@ -617,116 +616,11 @@ obj = {
     return obj(...arguments);
   }
 };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanPurchaseIAP(arg0) {
-  let closure_0;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  _require = arg0;
-  let tmp2 = dependencyMap;
-  obj = require("react");
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      currentUser = currentUser.getCurrentUser();
-      let flag;
-      if (currentUser != null) {
-        flag = currentUser.verified;
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      return flag;
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp6 = items1;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [IAPStore];
-    cResult[3] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === arg0) {
-    let tmp11;
-    if (cResult[5] === stateFromStores) {
-      tmp11 = cResult[6];
-    }
-    const tmpResult2 = require("get initialized");
-    return !tmpResult2.useStateFromStores(tmp9, tmp11);
-  }
-  const fn2 = function f() {
-    const isReadyResult = IAPStore.isReady();
-    let tmp2 = !isReadyResult;
-    if (isReadyResult) {
-      let isBusyResult = obj.isBusy();
-      if (isBusyResult) {
-        isBusyResult = null == closure_0 || !IAPStore.isPurchasingProduct(tmp4);
-        null == closure_0 || !IAPStore.isPurchasingProduct(tmp4);
-      }
-      tmp2 = isBusyResult;
-    }
-    if (!tmp2) {
-      tmp2 = !stateFromStores;
-    }
-    return tmp2;
-  };
-  cResult[4] = arg0;
-  cResult[5] = stateFromStores;
-  cResult[6] = fn2;
-  tmp11 = fn2;
-}) : (function useCanPurchaseIAP(arg0) {
-  let closure_0;
-  _require = arg0;
-  obj = require("get initialized");
-  const items = [UserStore];
-  let closure_1 = obj.useStateFromStores(items, () => {
-    currentUser = currentUser.getCurrentUser();
-    let flag;
-    if (currentUser != null) {
-      flag = currentUser.verified;
-    }
-    if (flag == null) {
-      flag = false;
-    }
-    return flag;
-  }, []);
-  const items1 = [IAPStore];
-  const obj2 = require("get initialized");
-  return !obj2.useStateFromStores(items1, () => {
-    const isReadyResult = IAPStore.isReady();
-    let tmp2 = !isReadyResult;
-    if (isReadyResult) {
-      let isBusyResult = obj.isBusy();
-      if (isBusyResult) {
-        isBusyResult = null == closure_0 || !IAPStore.isPurchasingProduct(tmp4);
-        null == closure_0 || !IAPStore.isPurchasingProduct(tmp4);
-      }
-      tmp2 = isBusyResult;
-    }
-    if (!tmp2) {
-      tmp2 = !closure_1;
-    }
-    return tmp2;
-  });
-});
 PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isIOS();
 if (PlatformUtils) {
-  const _module4 = PlatformUtils;
-  let isIOSResult1 = _module4.isIOS();
+  const _module3 = PlatformUtils;
+  let isIOSResult1 = _module3.isIOS();
   if (isIOSResult1) {
     const importAllResult = react_nativeAll;
     let Identifier = importAllResult.getConstants().Identifier;
@@ -734,8 +628,8 @@ if (PlatformUtils) {
     const str = ".local";
     let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
     if (!isRunningOnSimulator) {
-      const _module5 = DeviceUtils;
-      isRunningOnSimulator = _module5.getIsRunningOnSimulator();
+      const _module4 = DeviceUtils;
+      isRunningOnSimulator = _module4.getIsRunningOnSimulator();
     }
     isIOSResult1 = isRunningOnSimulator;
   }
@@ -768,13 +662,46 @@ let result = size.fileFinishedImporting("utils/native/IAPUtils.tsx");
 
 export default obj;
 export { convertToUUID };
-export const makeIAPRequest = function makeIAPRequest() {
+export function makeIAPRequest() {
   return obj(...arguments);
-};
-export const useCanPurchaseIAP = tmp6;
+}
+export function useCanPurchaseIAP(productId) {
+  _require = productId;
+  obj = require("get initialized");
+  const items = [UserStore];
+  let closure_1 = obj.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.verified;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }, []);
+  const items1 = [IAPStore];
+  const obj2 = require("get initialized");
+  return !obj2.useStateFromStores(items1, () => {
+    const isReadyResult = IAPStore.isReady();
+    let tmp2 = !isReadyResult;
+    if (isReadyResult) {
+      let isBusyResult = obj.isBusy();
+      if (isBusyResult) {
+        isBusyResult = null == productId || !IAPStore.isPurchasingProduct(tmp4);
+        null == productId || !IAPStore.isPurchasingProduct(tmp4);
+      }
+      tmp2 = isBusyResult;
+    }
+    if (!tmp2) {
+      tmp2 = !closure_1;
+    }
+    return tmp2;
+  });
+}
 export { isStorekit2Available };
 export { remapStorefront };
-export const manageSubscription = function manageSubscription() {
+export function manageSubscription() {
   let result;
   obj = PlatformUtils;
   let isIOSResult = obj.isIOS();
@@ -796,5 +723,5 @@ export const manageSubscription = function manageSubscription() {
     result = reject(error);
   }
   return result;
-};
+}
 export { shouldMockIAPForceEnable };

@@ -1,146 +1,33 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 11036
+// Function ID: 11037
 // Name: MessageNotification
-// Dependencies: [19, 5004, 13790, 21, 5003, 558, 576, 13798, 504, 1202, 1128, 6398, 13806, 7787, 5012, 6704, 5739, 13807, 2002, 13809, 13813, 2]
+// Dependencies: [19, 5015, 11023, 21, 5014, 11037, 504, 1187, 1113, 6438, 11066, 7824, 5023, 6744, 5756, 11067, 1994, 11076, 11080, 2]
 
-// Module 13797 (MessageNotification)
+// Module 11036 (MessageNotification)
 import Fragment from "Fragment" /* 21 */;
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5012 */;
-import transitionToChannel from "transitionToChannel" /* 5739 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import MessageParserDefault from "MessageParser" /* 7787 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 13798 */;
+import intl2 from "intl" /* 1113 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import transitionToChannel from "transitionToChannel" /* 5756 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import MessageParserDefault from "MessageParser" /* 7824 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 11037 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13790 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11023 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
-let tmp;
-const native = tmp(1202);
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: hasOwnProperty, NOTIFICATION_PREVIEW_LINE_CLAMP: metroRequire } = InAppNotificationConstants);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 } });
-let memo = react.memo;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePreview(message) {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  message = message.message;
-  if (cResult[0] !== message) {
-    const tmp8 = jsx(MessagePreviewTextDefault, { message, lineClamp: metroRequire, maxHeight: hasOwnProperty });
-    cResult[0] = message;
-    cResult[1] = tmp8;
-    tmp3 = tmp8;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function MessagePreview(message) {
+let closure_9 = react.memo(function MessagePreview(message) {
   return jsx(MessagePreviewTextDefault, { message: message.message, lineClamp: metroRequire, maxHeight: hasOwnProperty });
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccessoryLabelNode(arg0) {
-  let author;
-  let colorStrings1;
-  let containerStyles;
-  let roleStyle;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(7);
-  ({ author, containerStyles } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function s() {
-      return roleStyle.roleStyle;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let colorString;
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (author != null) {
-    colorString = author.colorString;
-  }
-  let colorStrings;
-  const tmp10 = cResult[2];
-  if (author != null) {
-    colorStrings = author.colorStrings;
-  }
-  if (tmp10 === colorStrings) {
-    if (cResult[3] === containerStyles) {
-      if (cResult[4] === colorString) {
-        let tmp12;
-        if (cResult[5] === ("dot" === stateFromStores && undefined !== colorString)) {
-          tmp12 = cResult[6];
-        }
-        return tmp12;
-      }
-    }
-  }
-  let tmp14Result;
-  if ("dot" === stateFromStores && undefined !== colorString) {
-    const obj2 = { color: colorString, colors: colorStrings1, containerStyles };
-    colorStrings1 = undefined;
-    const RoleDot = tmp(1202).RoleDot;
-    const tmp14 = jsx;
-    if (author != null) {
-      colorStrings1 = author.colorStrings;
-    }
-    tmp14Result = tmp14(RoleDot, obj2);
-  }
-  let colorStrings2;
-  if (author != null) {
-    colorStrings2 = author.colorStrings;
-  }
-  cResult[2] = colorStrings2;
-  cResult[3] = containerStyles;
-  cResult[4] = colorString;
-  cResult[5] = "dot" === stateFromStores && undefined !== colorString;
-  cResult[6] = tmp14Result;
-  tmp12 = tmp14Result;
-}) : (function useAccessoryLabelNode(author) {
-  let colorStrings;
-  let roleStyle;
-  author = author.author;
-  const containerStyles = author.containerStyles;
-  const items = [AccessibilityStore];
-  let colorString;
-  const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
-  if (author != null) {
-    colorString = author.colorString;
-  }
-  let tmp6Result;
-  if ("dot" === stateFromStores) {
-    if (undefined !== colorString) {
-      const obj2 = { color: colorString, colors: colorStrings, containerStyles };
-      colorStrings = undefined;
-      const RoleDot = native.RoleDot;
-      const tmp6 = jsx;
-      if (author != null) {
-        colorStrings = author.colorStrings;
-      }
-      tmp6Result = tmp6(RoleDot, obj2);
-    }
-  }
-  return tmp6Result;
 });
 const memoResult = react.memo(function MessageNotification(notification) {
+  let colorStrings;
   let id;
   notification = notification.notification;
   let nullableMessageAuthor;
@@ -164,26 +51,45 @@ const memoResult = react.memo(function MessageNotification(notification) {
     tmp2 = undefined !== message.activityInstance;
   }
   if (tmp2) {
-    let intl = message(parentChannel[10]).intl;
+    let intl = message(parentChannel[8]).intl;
     let formatToPlainString = intl.formatToPlainString;
-    const v7eikg1 = message(parentChannel[10]).t["7eikg1"];
+    const v7eikg1 = message(parentChannel[8]).t["7eikg1"];
     const interaction = message.interaction;
     let user;
-    const getUserAuthor = message(parentChannel[11]).getUserAuthor;
-    message(parentChannel[11]);
+    const getUserAuthor = message(parentChannel[9]).getUserAuthor;
+    message(parentChannel[9]);
     if (interaction != null) {
       user = interaction.user;
     }
     let obj = { username: getUserAuthor(user, channel).nick };
     message.content = formatToPlainString(v7eikg1, obj);
   }
-  let obj2 = message(parentChannel[11]);
+  let obj2 = message(parentChannel[9]);
   nullableMessageAuthor = obj2.useNullableMessageAuthor(message);
-  const obj3 = { author: nullableMessageAuthor, containerStyles: tmp.newContainerRoleDot };
-  const tmp14 = closure_10(obj3);
-  const obj4 = message(parentChannel[12]);
-  handleDismissNotification = obj4.useInAppNotificationContext().handleDismissNotification;
-  const items = [nullableMessageAuthor.nick, channel.id, message.content];
+  const newContainerRoleDot = tmp.newContainerRoleDot;
+  const items = [nullableMessageAuthor];
+  let colorString;
+  const obj3 = message(parentChannel[6]);
+  const stateFromStores = obj3.useStateFromStores(items, () => nullableMessageAuthor.roleStyle);
+  if (nullableMessageAuthor != null) {
+    colorString = nullableMessageAuthor.colorString;
+  }
+  let tmp17Result;
+  if ("dot" === stateFromStores) {
+    if (undefined !== colorString) {
+      const obj4 = { color: colorString, colors: colorStrings, containerStyles: newContainerRoleDot };
+      colorStrings = undefined;
+      const RoleDot = tmp11(tmp12[7]).RoleDot;
+      const tmp17 = jsx;
+      if (nullableMessageAuthor != null) {
+        colorStrings = nullableMessageAuthor.colorStrings;
+      }
+      tmp17Result = tmp17(RoleDot, obj4);
+    }
+  }
+  const tmp11Result = message(parentChannel[10]);
+  handleDismissNotification = tmp11Result.useInAppNotificationContext().handleDismissNotification;
+  const items1 = [nullableMessageAuthor.nick, channel.id, message.content];
   const effect = guild.useEffect(() => {
     let obj2;
     const intl = intl2.intl;
@@ -194,31 +100,31 @@ const memoResult = react.memo(function MessageNotification(notification) {
     const formatToPlainStringResult = formatToPlainString(Hjp1LH, obj);
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(formatToPlainStringResult);
-  }, items);
-  const items1 = [channel.id, message.id];
-  const items2 = [channel.id];
+  }, items1);
+  const items2 = [channel.id, message.id];
+  const items3 = [channel.id];
   const callback = guild.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     obj.popAll();
     const obj2 = transitionToChannel;
     obj2.transitionToMessage(channel.id, message.id, { navigationReplace: true });
-  }, items1);
-  const items3 = [channel, parentChannel, guild, nullableMessageAuthor, handleDismissNotification];
+  }, items2);
+  const items4 = [channel, parentChannel, guild, nullableMessageAuthor, handleDismissNotification];
   const callback1 = guild.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: channel.id };
-    return obj.pushLazy(asyncRequire(13807, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
-  }, items2);
-  const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items3);
-  const NotificationPressable = message(parentChannel[19]).NotificationPressable;
-  ({ user: message.author, guildId: id, size: message(parentChannel[9]).AvatarSizes.NORMAL });
+    return obj.pushLazy(asyncRequire(11067, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+  }, items3);
+  const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items4);
+  const NotificationPressable = tmp11(tmp12[17]).NotificationPressable;
+  ({ user: message.author, guildId: id, size: message(parentChannel[7]).AvatarSizes.NORMAL });
   const guild2 = notification.guild;
   id = undefined;
-  const Avatar = message(parentChannel[9]).Avatar;
+  const Avatar = tmp11(tmp12[7]).Avatar;
   if (guild2 != null) {
     id = guild2.id;
   }
-  return <NotificationPressable icon={null} accessoryLabelNode={tmp14} rightAccessory={null} header={memo} notification={notification} onPress={callback} onSettingsPress={callback1}>{null}</NotificationPressable>;
+  return <NotificationPressable icon={null} accessoryLabelNode={tmp17Result} rightAccessory={null} header={memo} notification={notification} onPress={callback} onSettingsPress={callback1}>{null}</NotificationPressable>;
 });
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageNotification.tsx");
 

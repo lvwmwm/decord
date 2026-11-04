@@ -1,86 +1,21 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 14133
+// Function ID: 14134
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [19, 8404, 558, 576, 504, 13449, 2]
+// Dependencies: [19, 8469, 504, 14069, 2]
+// Exports: default
 
-// Module 13515 (useGameServerGetExpiringEntitlements)
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 13449 */;
+// Module 14133 (useGameServerGetExpiringEntitlements)
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 14069 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8404 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameServerStore from "GameServerStore" /* 8469 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServerGetExpiringEntitlements(arg0) {
-  let closure_0;
-  let first;
-  let tmp10;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameServerStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      return GameServerStore.getStateForGuild(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  let entitlements;
-  const tmp8 = cResult[3];
-  if (stateFromStores != null) {
-    entitlements = stateFromStores.entitlements;
-  }
-  if (tmp8 !== entitlements) {
-    let expiringGuildEntitlements;
-    let entitlements1;
-    const _Object = Object;
-    if (stateFromStores != null) {
-      entitlements1 = stateFromStores.entitlements;
-    }
-    if (entitlements1 == null) {
-      entitlements1 = {};
-    }
-    const values2 = values(entitlements1);
-    if (0 !== values2.length) {
-      const tmpResult2 = require("getExpiringGuildEntitlements");
-      expiringGuildEntitlements = tmpResult2.getExpiringGuildEntitlements(values2);
-    } else {
-      const _Symbol = Symbol;
-      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const items1 = [];
-        cResult[5] = items1;
-        expiringGuildEntitlements = items1;
-      } else {
-        expiringGuildEntitlements = cResult[5];
-      }
-    }
-    let entitlements2;
-    if (stateFromStores != null) {
-      entitlements2 = stateFromStores.entitlements;
-    }
-    cResult[3] = entitlements2;
-    cResult[4] = expiringGuildEntitlements;
-    tmp10 = expiringGuildEntitlements;
-  } else {
-    tmp10 = cResult[4];
-  }
-  return tmp10;
-}) : (function useGameServerGetExpiringEntitlements(arg0) {
+const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");
+
+export default function useGameServerGetExpiringEntitlements(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;
@@ -112,7 +47,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
     }
     return items;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");
-
-export default tmp2;
+};

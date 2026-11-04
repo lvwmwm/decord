@@ -1,24 +1,24 @@
-// Module ID: 1297
-// Function ID: 1298
+// Module ID: 1282
+// Function ID: 1283
 // Name: HTTPUtils
-// Dependencies: [4, 1298, 569, 1351, 1352, 2, 1353, 1354]
+// Dependencies: [4, 1283, 559, 1336, 1337, 2, 1338, 1339]
 // Exports: getAPIBaseURL, getRateLimitFloorMs, isRateLimitedStatus, makeRateLimitedResponse, parseRetryAfter, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
 
-// Module 1297 (HTTPUtils)
+// Module 1282 (HTTPUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
-import BackoffDefault from "Backoff" /* 569 */;
-import RequestDefault from "Request" /* 1298 */;
-import V8APIError from "V8APIError" /* 1351 */;
-import convertSkemaError from "convertSkemaError" /* 1352 */;
-import stringifyErrors from "stringifyErrors" /* 1353 */;
-import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1354 */;
+import BackoffDefault from "Backoff" /* 559 */;
+import RequestDefault from "Request" /* 1283 */;
+import V8APIError from "V8APIError" /* 1336 */;
+import convertSkemaError from "convertSkemaError" /* 1337 */;
+import stringifyErrors from "stringifyErrors" /* 1338 */;
+import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1339 */;
 import size from "module_2" /* 2 */;
 
 let c0, dependencyMap, importDefault;
 
 function sendRequest(method, signal, arg2, fn, fn2, cause) {
   let closure_2;
-  const f142126 = () => {
+  const f121221 = () => {
     promise = awaitOnline(url.url);
     return promise.then(() => obj6(closure_1_0, url, closure_1_2, closure_1_3, closure_1_4, closure_1_5));
   };
@@ -165,7 +165,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               tmp.retried = num5 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f142126);
+              backoff2.fail(f121221);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -302,7 +302,7 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
               }
               signal.retried = num2 + 1;
               const backoff2 = tmp.backoff;
-              backoff2.fail(f142126);
+              backoff2.fail(f121221);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -669,7 +669,7 @@ export const put = bindResult2;
 export const patch = bindResult3;
 export const del = noop;
 export const HTTP = { get: bindResult, post: bindResult1, put: bindResult2, patch: bindResult3, del: noop };
-export const getAPIBaseURL = function getAPIBaseURL(arg0) {
+export function getAPIBaseURL(arg0) {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -682,7 +682,7 @@ export const getAPIBaseURL = function getAPIBaseURL(arg0) {
     str = "/v" + window.GLOBAL_ENV.API_VERSION;
   }
   return text + str;
-};
+}
 export function setRequestPatch(arg0) {
   c10 = arg0;
 }
@@ -692,7 +692,7 @@ export function setAwaitOnline(arg0) {
 export function setRejectWithMigratedError(arg0) {
   migratedRejectEnabled = arg0;
 }
-export const rejectWithMigratedError = function rejectWithMigratedError() {
+export function rejectWithMigratedError() {
   return migratedRejectEnabled();
-};
+}
 export { encodeProperties };

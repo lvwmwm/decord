@@ -1,19 +1,19 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 11993
+// Function ID: 11994
 // Name: XboxInstallAlert
-// Dependencies: [19, 9658, 21, 5003, 587, 558, 576, 1128, 1202, 11699, 1384, 5692, 6010, 2]
+// Dependencies: [19, 9737, 21, 5014, 575, 6030, 1113, 1187, 11994, 1375, 5709, 2]
+// Exports: default
 
-// Module 11698 (XboxInstallAlert)
+// Module 11993 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1202 */;
-import LinkingDefault from "Linking" /* 5692 */;
-import AlertDefault from "Alert" /* 6010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11699 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1187 */;
+import LinkingDefault from "Linking" /* 5709 */;
+import AlertDefault from "Alert" /* 6030 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11994 */;
 import react from "react" /* 19 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9658 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9737 */;
+import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,81 +27,10 @@ const jsx = Fragment.jsx;
 let obj = { externalLinkIcon: size };
 size = { tintColor: nativeDefault.colors.WHITE, width: 20, height: 20, marginLeft: 8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxInstallAlert(arg0) {
-  let closure_0;
-  let tmp13;
-  let tmp14;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let obj = require("react");
-  const cResult = obj.c(10);
-  const tmp4 = closure_6();
-  _require = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(require("intl").t["12Kx2v"]);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(require("intl").t.msZW3j);
-    const intl3 = tmp(1128).intl;
-    const stringResult2 = intl3.string(require("intl").t["n+VrqG"]);
-    const intl4 = tmp(1128).intl;
-    const stringResult3 = intl4.string(require("intl").t.kYaBOg);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    cResult[2] = stringResult2;
-    cResult[3] = stringResult3;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-    tmp7 = stringResult2;
-    tmp8 = stringResult3;
-  } else {
-    [tmp5, tmp6, tmp7, tmp8] = cResult;
-  }
-  if (cResult[4] !== tmp4.externalLinkIcon) {
-    const fn = function _() {
-      const Icon = native.Icon;
-      return <Icon source={AssetRegistryDefault} style={closure_0.externalLinkIcon} />;
-    };
-    cResult[4] = tmp4.externalLinkIcon;
-    cResult[5] = fn;
-    tmp13 = fn;
-  } else {
-    tmp13 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u() {
-      const obj = closure_0(dependencyMap[10]);
-      const isAndroidResult = obj.isAndroid();
-      const openURL = LinkingDefault.openURL;
-      LinkingDefault;
-      if (isAndroidResult) {
-        openURL(closure_1_3);
-      } else {
-        openURL(closure_1_4);
-      }
-    };
-    cResult[6] = fn2;
-    tmp14 = fn2;
-  } else {
-    tmp14 = cResult[6];
-  }
-  if (cResult[7] === arg0) {
-    let tmp15;
-    if (cResult[8] === tmp13) {
-      tmp15 = cResult[9];
-    }
-    return tmp15;
-  }
-  AlertDefault;
-  const merged = Object.assign(arg0);
-  const tmp18 = <tmp16 title={tmp5} body={tmp6} confirmText={tmp7} cancelText={tmp8} fillCancelText renderConfirmRightIcon={tmp13} onConfirm={tmp14} />;
-  cResult[7] = arg0;
-  cResult[8] = tmp13;
-  cResult[9] = tmp18;
-  tmp15 = tmp18;
-}) : (function XboxInstallAlert(arg0) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/game_console/native/XboxInstallAlert.tsx");
+
+export default function XboxInstallAlert(arg0) {
   let closure_0;
   _require = closure_6();
   AlertDefault;
@@ -114,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxInstallA
     const Icon = native.Icon;
     return <Icon source={AssetRegistryDefault} style={closure_0.externalLinkIcon} />;
   }} onConfirm={function onConfirm() {
-    const obj = closure_0(dependencyMap[10]);
+    const obj = closure_0(dependencyMap[9]);
     const isAndroidResult = obj.isAndroid();
     const openURL = LinkingDefault.openURL;
     LinkingDefault;
@@ -124,8 +53,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxInstallA
       openURL(closure_1_4);
     }
   }} />;
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/game_console/native/XboxInstallAlert.tsx");
-
-export default tmp4;
+};

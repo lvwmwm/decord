@@ -14,7 +14,7 @@ const map1 = new Map();
 
 export { customBubblingEventTypes };
 export const customDirectEventTypes = obj2;
-export const register = function register(arg0, fn) {
+export function register(arg0, fn) {
   const tmp = _modDef38;
   tmp(!map.has(arg0), "Tried to register two views with the same name %s", arg0);
   let str = "null";
@@ -26,8 +26,8 @@ export const register = function register(arg0, fn) {
   tmp3(typeof fn === "function", "View config getter callback for component `%s` must be a function (received `%s`)", arg0, str);
   const result = obj.set(arg0, fn);
   return arg0;
-};
-export const get = function get(arg0) {
+}
+export function get(arg0) {
   let bubblingEventTypes;
   let directEventTypes;
   let value = map1.get(arg0);
@@ -79,4 +79,4 @@ export const get = function get(arg0) {
     value = value1Result;
   }
   return value;
-};
+}

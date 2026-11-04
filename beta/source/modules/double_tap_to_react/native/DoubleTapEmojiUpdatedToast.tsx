@@ -1,22 +1,22 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9951
+// Function ID: 9952
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [5004, 1395, 1417, 5299, 5012, 1128, 5695, 2]
+// Dependencies: [5015, 1386, 1409, 5274, 5023, 1113, 5712, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9869 (DoubleTapEmojiUpdatedToast)
-import intl3 from "intl" /* 1128 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5299 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+// Module 9951 (DoubleTapEmojiUpdatedToast)
+import intl3 from "intl" /* 1113 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5274 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx");
 
-export const getToastEmojiEntity = function getToastEmojiEntity(id) {
+export function getToastEmojiEntity(id) {
   let animated;
   if (null != id.id) {
     const useReducedMotion = AccessibilityStore.useReducedMotion;
@@ -40,8 +40,8 @@ export const getToastEmojiEntity = function getToastEmojiEntity(id) {
     }
     return obj;
   }
-};
-export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
+}
+export function showDoubleTapEmojiUpdatedToast(emoji) {
   let animated;
   let intl;
   let obj4;
@@ -49,22 +49,22 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
   emoji = emoji.emoji;
   const obj = useIsScreenReaderEnabled;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(5012).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(5023).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
-    const intl2 = tmp(1128).intl;
+    const intl2 = tmp(1113).intl;
     const obj2 = { emojiName: emoji.name };
     announce(intl2.formatToPlainString(intl3.t.nKY0Fl, obj2));
   } else {
     const obj3 = { text: intl.formatToPlainString(intl3.t.nKY0Fl, obj4), icon: obj8 };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
-    intl = tmp(1128).intl;
+    intl = tmp(1113).intl;
     obj4 = { emojiName: emoji.name };
     if (null != emoji.id) {
       const useReducedMotion = AccessibilityStore.useReducedMotion;
       const obj5 = { id: emoji.id, animated, size: EMOJI_URL_BASE_SIZE };
       animated = !useReducedMotion;
-      const getEmojiURL = tmp3(1417).getEmojiURL;
+      const getEmojiURL = tmp3(1409).getEmojiURL;
       AvatarUtilsDefault;
       if (!useReducedMotion) {
         animated = emoji.animated;
@@ -82,4 +82,4 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
     }
     open("DEFAULT_REACTION_EMOJI_UPDATED", obj3);
   }
-};
+}

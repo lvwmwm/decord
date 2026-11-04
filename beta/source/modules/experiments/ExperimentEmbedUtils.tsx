@@ -1,23 +1,23 @@
-// Module ID: 8517
-// Function ID: 8518
+// Module ID: 8585
+// Function ID: 8586
 // Name: ExperimentEmbedUtils
-// Dependencies: [5227, 8518, 8519, 2]
+// Dependencies: [5243, 8586, 8587, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 8517 (ExperimentEmbedUtils)
-import ExperimentManager from "ExperimentManager" /* 5227 */;
-import ExperimentUtilsDefault from "ExperimentUtils" /* 8518 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8519 */;
+// Module 8585 (ExperimentEmbedUtils)
+import ExperimentManager from "ExperimentManager" /* 5243 */;
+import ExperimentUtilsDefault from "ExperimentUtils" /* 8586 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8587 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = size.fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
 
 export const EXPERIMENT_EMBED_URL_REGEX = regExp;
-export const isExperimentEmbedURL = function isExperimentEmbedURL(target) {
+export function isExperimentEmbedURL(target) {
   return regExp.test(target);
-};
-export const getExperimentFromEmbedURL = function getExperimentFromEmbedURL(code) {
+}
+export function getExperimentFromEmbedURL(code) {
   const match = code.match(regExp);
   let tmp = null;
   if (null != match) {
@@ -27,8 +27,8 @@ export const getExperimentFromEmbedURL = function getExperimentFromEmbedURL(code
     }
   }
   return tmp;
-};
-export const getExperimentTreatmentFromEmbedURL = function getExperimentTreatmentFromEmbedURL(code) {
+}
+export function getExperimentTreatmentFromEmbedURL(code) {
   const match = code.match(regExp);
   let parsed = null;
   if (null != match) {
@@ -39,8 +39,8 @@ export const getExperimentTreatmentFromEmbedURL = function getExperimentTreatmen
     }
   }
   return parsed;
-};
-export const getURLForExperiment = function getURLForExperiment(id, arg1) {
+}
+export function getURLForExperiment(id, arg1) {
   let combined;
   if (null != arg1) {
     const _HermesInternal2 = HermesInternal;
@@ -50,8 +50,8 @@ export const getURLForExperiment = function getURLForExperiment(id, arg1) {
     combined = "dev://experiment/" + id;
   }
   return combined;
-};
-export const getExperimentServerAssignmentLabel = function getExperimentServerAssignmentLabel(system, experimentServerAssignment) {
+}
+export function getExperimentServerAssignmentLabel(system, experimentServerAssignment) {
   if (null != experimentServerAssignment) {
     if (null != system) {
       const system2 = system.system;
@@ -59,7 +59,7 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
       if (ExperimentManager.ExperimentSystem.LEGACY === system2) {
         const obj = ExperimentUtilsDefault;
         return obj.getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (tmp4(5227).ExperimentSystem.APEX === system2) {
+      } else if (tmp4(5243).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {
@@ -69,9 +69,9 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
     }
   }
   return null;
-};
-export const getExperimentBuckets = function getExperimentBuckets(experiment) {
+}
+export function getExperimentBuckets(experiment) {
   const obj = ExperimentDevToolsUtils;
   const experimentVariantsForDevTools = obj.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
-};
+}

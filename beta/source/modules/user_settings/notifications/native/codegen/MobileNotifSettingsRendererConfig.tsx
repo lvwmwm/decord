@@ -1,12 +1,12 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17959
+// Function ID: 17960
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [16879, 17358, 17371, 2]
+// Dependencies: [17482, 17960, 17973, 2]
 
-// Module 17357 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 16879 */;
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17358 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17371 */;
+// Module 17959 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettings from "MobileNotifSettings" /* 17482 */;
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17960 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17973 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -29,7 +29,6 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUEST_REMINDER] = Mob
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_SUGGESTIONS] = MobileNotifSettingsNodesAll.FriendSuggestions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_NUDGE_NEW_FRIEND_DM] = MobileNotifSettingsNodesAll.NudgeNewFriendDm;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_PROFILE_UPDATES] = MobileNotifSettingsNodesAll.ProfileUpdates;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING] = MobileNotifSettingsNodesAll.FriendsGaming;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_LOW] = MobileNotifSettingsNodesAll.FriendsGamingLow;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_DEFAULT] = MobileNotifSettingsNodesAll.FriendsGamingDefault;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GAMING_OTHER] = MobileNotifSettingsNodesAll.GamingOther;

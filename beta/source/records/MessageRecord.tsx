@@ -1,17 +1,17 @@
-// Module ID: 4946
-// Function ID: 4947
+// Module ID: 4957
+// Function ID: 4958
 // Name: MessageRecord
-// Dependencies: [1407, 1087, 1405, 4947, 5634, 5257, 5635, 2]
+// Dependencies: [1398, 1072, 1396, 4958, 5650, 5615, 5651, 2]
 // Exports: ModeratorReport, isMessageComponentsV2
 
-// Module 4946 (MessageRecord)
-import FlagUtils from "FlagUtils" /* 1405 */;
-import ReactionUtils from "ReactionUtils" /* 4947 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5257 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5634 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5635 */;
-import Record from "Record" /* 1407 */;
-import Constants from "Constants" /* 1087 */;
+// Module 4957 (MessageRecord)
+import FlagUtils from "FlagUtils" /* 1396 */;
+import ReactionUtils from "ReactionUtils" /* 4958 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5615 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5650 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5651 */;
+import Record from "Record" /* 1398 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -148,7 +148,6 @@ class MessageRecord extends MinimalMessageRecord {
     }
     tmp2.giftInfo = giftInfo;
     tmp2.giftingPrompt = message.giftingPrompt || null;
-    tmp2.boostingPrompt = message.boostingPrompt || null;
     tmp2.messageSnapshots = message.messageSnapshots || [];
     tmp2.isUnsupported = message.isUnsupported || false;
     let changelog_id = message.changelog_id;
@@ -589,7 +588,7 @@ export function ModeratorReport(arg0) {
   return obj;
 }
 export { MessageSnapshotRecord };
-export const isMessageComponentsV2 = function isMessageComponentsV2(contentMessage) {
+export function isMessageComponentsV2(contentMessage) {
   const obj = FlagUtils;
   return obj.hasFlag(contentMessage.flags, IS_COMPONENTS_V2.IS_COMPONENTS_V2);
-};
+}

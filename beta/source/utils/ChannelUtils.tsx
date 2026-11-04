@@ -1,28 +1,28 @@
-// Module ID: 6026
-// Function ID: 6027
+// Module ID: 6046
+// Function ID: 6047
 // Name: ChannelUtils
-// Dependencies: [4859, 4855, 4933, 4935, 4906, 5749, 1087, 1394, 4940, 1099, 2000, 6027, 6028, 1128, 5057, 6029, 11, 2, 6033]
+// Dependencies: [4867, 4863, 4944, 4946, 4917, 5767, 1072, 1385, 4951, 1084, 1992, 6047, 6048, 1113, 5068, 6049, 11, 2, 6053]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 6026 (ChannelUtils)
+// Module 6046 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import intl14 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import Server from "Server" /* 2000 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import ChannelListUtils from "ChannelListUtils" /* 6027 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6028 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6029 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6033 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildChannelStore from "GuildChannelStore" /* 4933 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5749 */;
-import Constants from "Constants" /* 1087 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import intl14 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import Server from "Server" /* 1992 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import ChannelListUtils from "ChannelListUtils" /* 6047 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6048 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6049 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6053 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildChannelStore from "GuildChannelStore" /* 4944 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,15 +44,15 @@ let metroRequire;
 function allowChannelAccess(id, channelType, ROLE) {
   const NONE = PermissionUtilsAll.NONE;
   let addResult = NONE;
-  const tmp3 = React3(channelType) || channelType === authStore5;
+  const tmp3 = React3(channelType) || channelType === authStore6;
   if (tmp3) {
     const tmpResult = BigFlagUtilsAll;
     addResult = tmpResult.add(NONE, map1.VIEW_CHANNEL);
   }
-  let tmp7 = channelType === closure_21 || channelType === authStore5;
+  let tmp7 = channelType === closure_21 || channelType === authStore6;
   if (!tmp7) {
-    tmp7 = channelType === closure_23 || channelType === authStore5;
-    const tmp10 = channelType === closure_23 || channelType === authStore5;
+    tmp7 = channelType === closure_23 || channelType === authStore6;
+    const tmp10 = channelType === closure_23 || channelType === authStore6;
   }
   let addResult2 = addResult;
   if (tmp7) {
@@ -71,7 +71,7 @@ const BoostedGuildFeatures = PremiumConstants.BoostedGuildFeatures;
 ({ GUILD_VOICE: closure_21, GUILD_CATEGORY: closure_22, GUILD_STAGE_VOICE: closure_23 } = ChannelTypes);
 let result = size.fileFinishedImporting("utils/ChannelUtils.tsx");
 
-export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNonPaidUsers(id, arg1) {
+export function denyChannelAccessForNonPaidUsers(id, arg1) {
   let addResult;
   if (arg1 === ChannelTypes.GUILD_STAGE_VOICE) {
     const NONE = PermissionUtilsAll.NONE;
@@ -87,9 +87,9 @@ export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNon
     const error = new Error("Premium channel feature not supported for channel type " + arg1);
     throw error;
   }
-};
+}
 export { allowChannelAccess };
-export const permissionOverwritesForRoles = function permissionOverwritesForRoles(guildId, channelType, arr, arg3) {
+export function permissionOverwritesForRoles(guildId, channelType, arr, arg3) {
   _require = channelType;
   let flag = arg3;
   if (arg3 === undefined) {
@@ -122,19 +122,19 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     items.push(allowChannelAccess(item, channelType, Server.PermissionOverwriteType.ROLE));
   });
   return items;
-};
-export const permissionOverwriteForUser = function permissionOverwriteForUser(id, channelType) {
+}
+export function permissionOverwriteForUser(id, channelType) {
   return allowChannelAccess(id, channelType, Server.PermissionOverwriteType.MEMBER);
-};
-export const permissionOverwriteForRole = function permissionOverwriteForRole(id, channelType) {
+}
+export function permissionOverwriteForRole(id, channelType) {
   return allowChannelAccess(id, channelType, Server.PermissionOverwriteType.ROLE);
-};
-export const permissionOverwritesForAnnouncement = function permissionOverwritesForAnnouncement(id) {
+}
+export function permissionOverwritesForAnnouncement(id) {
   const items = [{ id, type: Server.PermissionOverwriteType.ROLE, deny: map1.SEND_MESSAGES, allow: PermissionUtilsAll.NONE }];
   ({ id, type: Server.PermissionOverwriteType.ROLE, deny: map1.SEND_MESSAGES, allow: PermissionUtilsAll.NONE });
   return items;
-};
-export const isChannelFull = function isChannelFull(channel, VoiceStateStore, GuildStore) {
+}
+export function isChannelFull(channel, VoiceStateStore, GuildStore) {
   let tmp7;
   const guildId = channel.getGuildId();
   const guild = GuildStore.getGuild(guildId);
@@ -190,14 +190,14 @@ export const isChannelFull = function isChannelFull(channel, VoiceStateStore, Gu
     tmp7 = tmp12;
   }
   return tmp7;
-};
+}
 export const sanitizeGuildTextChannelName = sanitizeGuildTextChannelNameDefault;
-export const getBitrateLimit = function getBitrateLimit(guild, channel) {
+export function getBitrateLimit(guild, channel) {
   let maxResult;
   if (channel.isGuildStageVoice()) {
     maxResult = closure_17;
   } else if (null == guild) {
-    maxResult = authStore3;
+    maxResult = authStore4;
   } else {
     let bitrate;
     const features = guild.features;
@@ -205,13 +205,13 @@ export const getBitrateLimit = function getBitrateLimit(guild, channel) {
     if (features.has(constants2.VIP_REGIONS)) {
       bitrate = BoostedGuildFeatures[TIER_3.TIER_3].limits.bitrate;
     } else {
-      bitrate = authStore3;
+      bitrate = authStore4;
     }
     maxResult = max(bitrate, BoostedGuildFeatures[guild.premiumTier].limits.bitrate);
   }
   return maxResult;
-};
-export const computeSummarizedVoiceStates = function computeSummarizedVoiceStates(arg0) {
+}
+export function computeSummarizedVoiceStates(arg0) {
   let channels;
   let require;
   ({ channels, selectedChannelId: require, selectedVoiceChannelId: importDefault, voiceStates: importAll } = arg0);
@@ -237,8 +237,8 @@ export const computeSummarizedVoiceStates = function computeSummarizedVoiceState
     }
   });
   return items;
-};
-export const computeSummarizedVoiceUsers = function computeSummarizedVoiceUsers(arg0) {
+}
+export function computeSummarizedVoiceUsers(arg0) {
   let channels;
   let require;
   ({ channels, selectedChannelId: require, selectedVoiceChannelId: importDefault, voiceStates: importAll } = arg0);
@@ -264,8 +264,8 @@ export const computeSummarizedVoiceUsers = function computeSummarizedVoiceUsers(
     }
   });
   return items.map((user) => user.user);
-};
-export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores) {
+}
+export function isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores) {
   const iter = channels[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -290,8 +290,8 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
     continue;
   }
   return false;
-};
-export const channelTypeString = function channelTypeString(channel) {
+}
+export function channelTypeString(channel) {
   const type = channel.type;
   if (ChannelTypes.DM === type) {
     const intl13 = intl14.intl;
@@ -351,8 +351,8 @@ export const channelTypeString = function channelTypeString(channel) {
     const intl2 = intl14.intl;
     return intl2.string(intl14.t["7Xm5QI"]);
   }
-};
-export const getPrivateChannelUserTagsString = function getPrivateChannelUserTagsString(recipients, UserStore) {
+}
+export function getPrivateChannelUserTagsString(recipients, UserStore) {
   if (null == recipients) {
     return null;
   } else {
@@ -398,8 +398,8 @@ export const getPrivateChannelUserTagsString = function getPrivateChannelUserTag
       }
     }
   }
-};
-export const getMentionIconType = function getMentionIconType(channel) {
+}
+export function getMentionIconType(channel) {
   if (null == channel) {
     return "text";
   } else {
@@ -490,15 +490,15 @@ export const getMentionIconType = function getMentionIconType(channel) {
     }
     return tmp2;
   }
-};
-export const previousTextChannelRouteForGuild = function previousTextChannelRouteForGuild(id) {
+}
+export function previousTextChannelRouteForGuild(id) {
   const channel = ChannelStore.getChannel(SelectedChannelStore.getLastSelectedChannelId());
   if (null != channel) {
     if (channel.getGuildId() === id) {
       if (channel.type === ChannelTypes.GUILD_TEXT) {
         id = channel.id;
       }
-      return authStore4.CHANNEL(id, id);
+      return authStore5.CHANNEL(id, id);
     }
   }
   const defaultChannel = GuildChannelStore.getDefaultChannel(id);
@@ -506,16 +506,16 @@ export const previousTextChannelRouteForGuild = function previousTextChannelRout
   if (null != defaultChannel) {
     id = defaultChannel.id;
   }
-};
-export const getChannelPermalink = function getChannelPermalink(guild_id, id, id2, id3) {
+}
+export function getChannelPermalink(guild_id, id, id2, id3) {
   let str = "";
   if (null != id3) {
     const _HermesInternal = HermesInternal;
     str = "?summaryId=" + id3;
   }
-  return "" + location.protocol + "//" + location.host + authStore4.CHANNEL(guild_id, id, id2) + str;
-};
-export const getChannelThreadPermalink = function getChannelThreadPermalink(guildId, id, id2, result) {
+  return "" + location.protocol + "//" + location.host + authStore5.CHANNEL(guild_id, id, id2) + str;
+}
+export function getChannelThreadPermalink(guildId, id, id2, result) {
   if (null != guildId) {
     if (null != id) {
       let combined;
@@ -523,14 +523,14 @@ export const getChannelThreadPermalink = function getChannelThreadPermalink(guil
         const _location = location;
         const _location2 = location;
         const _HermesInternal = HermesInternal;
-        combined = "" + protocol + "//" + host + authStore4.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
+        combined = "" + protocol + "//" + host + authStore5.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
       }
       return combined;
     }
   }
-  combined = "" + location.protocol + "//" + location.host + authStore4.CHANNEL(guildId, id, result) + "";
-};
-export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, channel1, arg2, arg3) {
+  combined = "" + location.protocol + "//" + location.host + authStore5.CHANNEL(guildId, id, result) + "";
+}
+export function getChannelLinkToCopy(channel, channel1, arg2, arg3) {
   let combined1;
   const guildId = channel.getGuildId();
   const obj = MediaPostEmbedUtils;
@@ -549,7 +549,7 @@ export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, chann
             const _location4 = location;
             const host2 = location.host;
             const _HermesInternal2 = HermesInternal;
-            combined = "" + protocol2 + "//" + host2 + authStore4.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
+            combined = "" + protocol2 + "//" + host2 + authStore5.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
           }
           combined1 = combined;
         }
@@ -559,7 +559,7 @@ export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, chann
       const _location6 = location;
       const host3 = location.host;
       const _HermesInternal3 = HermesInternal;
-      combined = "" + protocol3 + "//" + host3 + authStore4.CHANNEL(guildId, id, result) + "";
+      combined = "" + protocol3 + "//" + host3 + authStore5.CHANNEL(guildId, id, result) + "";
     }
     return combined1;
   }
@@ -568,10 +568,10 @@ export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, chann
     const _location = location;
     const _location2 = location;
     const _HermesInternal = HermesInternal;
-    combined1 = "" + protocol + "//" + host + authStore4.CHANNEL(guildId, channel.id, arg2) + "";
+    combined1 = "" + protocol + "//" + host + authStore5.CHANNEL(guildId, channel.id, arg2) + "";
   }
-};
-export const getChannelAnalyticsPage = function getChannelAnalyticsPage(type) {
+}
+export function getChannelAnalyticsPage(type) {
   if (null == type) {
     return null;
   } else {
@@ -594,4 +594,4 @@ export const getChannelAnalyticsPage = function getChannelAnalyticsPage(type) {
     }
     return constants3.GUILD_CHANNEL;
   }
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 16349
-// Function ID: 16350
+// Module ID: 16943
+// Function ID: 16944
 // Name: engagedViewMilestone
 // Dependencies: [2]
 // Exports: createEngagedViewEmitter, resetEngagedViewMilestoneStateForTests
 
-// Module 16349 (engagedViewMilestone)
+// Module 16943 (engagedViewMilestone)
 import size from "module_2" /* 2 */;
 
 const set = new Set();
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/engagedViewMilestone.tsx");
 
 export const ENGAGED_VIEW_THRESHOLD_SEC = 5;
-export const resetEngagedViewMilestoneStateForTests = function resetEngagedViewMilestoneStateForTests() {
+export function resetEngagedViewMilestoneStateForTests() {
   set.clear();
-};
-export const createEngagedViewEmitter = function createEngagedViewEmitter(thresholdSeconds) {
+}
+export function createEngagedViewEmitter(thresholdSeconds) {
   let closure_1;
   let initialWatchedSeconds;
   ({ getImpressionId: set, onEmit: closure_1, initialWatchedSeconds } = thresholdSeconds);
@@ -118,4 +118,4 @@ export const createEngagedViewEmitter = function createEngagedViewEmitter(thresh
     }
   };
   return obj;
-};
+}

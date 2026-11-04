@@ -1,22 +1,22 @@
-// Module ID: 1268
-// Function ID: 1269
+// Module ID: 1253
+// Function ID: 1254
 // Name: ImpressionStore
-// Dependencies: [1269, 1274, 1275, 2]
+// Dependencies: [1254, 1259, 1260, 2]
 // Exports: cleanupImpression, getImpressionStack, getLocation, setCurrentImpression, setDebugTrackedData
 
-// Module 1268 (ImpressionStore)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import module_1269 from "module_1269" /* 1269 */;
+// Module 1253 (ImpressionStore)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 let closure_2 = Object.freeze({ debugTrackedData: null, impressions: [] });
-const withEqualityFn = module_1269.createWithEqualityFn(() => closure_2);
+const withEqualityFn = module_1254.createWithEqualityFn(() => closure_2);
 const result = size.fileFinishedImporting("modules/app_analytics/ImpressionStore.tsx");
 
-export const setCurrentImpression = function setCurrentImpression(arg0) {
+export function setCurrentImpression(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -29,8 +29,8 @@ export const setCurrentImpression = function setCurrentImpression(arg0) {
       return obj;
     });
   });
-};
-export const cleanupImpression = function cleanupImpression(arg0) {
+}
+export function cleanupImpression(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -42,8 +42,8 @@ export const cleanupImpression = function cleanupImpression(arg0) {
       return obj;
     });
   });
-};
-export const setDebugTrackedData = function setDebugTrackedData(arg0, arg1) {
+}
+export function setDebugTrackedData(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -59,9 +59,9 @@ export const setDebugTrackedData = function setDebugTrackedData(arg0, arg1) {
       return obj;
     });
   });
-};
+}
 export const useImpressionStore = withEqualityFn;
-export const getLocation = function getLocation() {
+export function getLocation() {
   const obj = {};
   const impressions = withEqualityFn.getState().impressions;
   const item = impressions.forEach((type) => {
@@ -72,7 +72,7 @@ export const getLocation = function getLocation() {
     }
   });
   return obj;
-};
-export const getImpressionStack = function getImpressionStack() {
+}
+export function getImpressionStack() {
   return withEqualityFn.getState().impressions;
-};
+}

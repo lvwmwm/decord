@@ -1,16 +1,16 @@
-// Module ID: 8198
-// Function ID: 8199
+// Module ID: 8231
+// Function ID: 8232
 // Name: UploadLimits
 // Dependencies: [2]
 // Exports: getEffectiveUploadLimit
 
-// Module 8198 (UploadLimits)
+// Module 8231 (UploadLimits)
 import size from "module_2" /* 2 */;
 
 let c0 = 20971520;
 const result = size.fileFinishedImporting("modules/media_uploads/UploadLimits.tsx");
 
 export const FREE_UPLOAD_LIMIT_BYTES = 20971520;
-export const getEffectiveUploadLimit = function getEffectiveUploadLimit(maxFileSizeResult) {
+export function getEffectiveUploadLimit(maxFileSizeResult) {
   return Math.max(c0, maxFileSizeResult);
-};
+}

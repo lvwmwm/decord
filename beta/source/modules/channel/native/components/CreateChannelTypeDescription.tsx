@@ -1,88 +1,26 @@
-// Module ID: 9016
-// Function ID: 9017
+// Module ID: 9045
+// Function ID: 9046
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 9017, 1087, 21, 558, 576, 9018, 6885, 5266, 1128, 2]
+// Dependencies: [19, 17, 9046, 1072, 21, 9047, 6926, 5624, 1113, 2]
+// Exports: default
 
-// Module 9016 (CreateChannelTypeDescription)
+// Module 9045 (CreateChannelTypeDescription)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import GuildProfileStore from "GuildProfileStore" /* 9017 */;
-import useGuildProfile from "useGuildProfile" /* 9018 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import GuildProfileStore from "GuildProfileStore" /* 9046 */;
+import useGuildProfile from "useGuildProfile" /* 9047 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const GuildProfileFetchStatus = GuildProfileStore.GuildProfileFetchStatus;
 const ChannelTypes = Constants.ChannelTypes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChannelTypeDescription(arg0) {
-  let channelType;
-  let fetchGuildProfile;
-  let guildId;
-  let guildProfile;
-  let intl;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(6);
-  ({ guildId, channelType } = arg0);
-  const obj2 = useGuildProfile;
-  const guildProfile1 = obj2.useGuildProfile(guildId);
-  ({ guildProfile, fetchGuildProfile } = guildProfile1);
-  let hasItem = null != guildProfile;
-  const fetchStatus = guildProfile1.fetchStatus;
-  const FETCHED = GuildProfileFetchStatus.FETCHED;
-  if (hasItem) {
-    const VISIBLE = tmp(6885).GuildProfileVisibilitySets.VISIBLE;
-    hasItem = VISIBLE.has(guildProfile.visibility);
-  }
-  let tmp7 = fetchStatus === FETCHED && !hasItem;
-  if (tmp7) {
-    tmp7 = channelType === ChannelTypes.GUILD_ANNOUNCEMENT;
-  }
-  if (cResult[0] !== fetchGuildProfile) {
-    const fn = function c() {
-      fetchGuildProfile();
-    };
-    cResult[0] = fetchGuildProfile;
-    cResult[1] = fn;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] === fetchGuildProfile) {
-    let tmp10;
-    if (cResult[3] === guildId) {
-      tmp10 = cResult[4];
-    }
-    const effect = react.useEffect(tmp9, tmp10);
-    let tmp13 = null;
-    if (tmp7) {
-      let tmp15;
-      const _Symbol = Symbol;
-      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        ({ variant: "text-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
-        const Text = tmp(5266).Text;
-        intl = tmp(1128).intl;
-        const tmp18 = <View>{null}</View>;
-        cResult[5] = tmp18;
-        tmp15 = tmp18;
-      } else {
-        tmp15 = cResult[5];
-      }
-      tmp13 = tmp15;
-    }
-    return tmp13;
-  }
-  const items = [guildId, fetchGuildProfile];
-  cResult[2] = fetchGuildProfile;
-  cResult[3] = guildId;
-  cResult[4] = items;
-  tmp10 = items;
-}) : (function CreateChannelTypeDescription(guildId) {
+const result = size.fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
+
+export default function CreateChannelTypeDescription(guildId) {
   let fetchGuildProfile;
   let guildProfile;
   let intl;
@@ -96,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   const fetchStatus = guildProfile1.fetchStatus;
   const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
-    const VISIBLE = tmp(6885).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6926).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = fetchStatus === FETCHED && !hasItem;
@@ -110,12 +48,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   let tmp9 = null;
   if (tmp6) {
     ({ variant: "text-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
-    const Text = tmp(5266).Text;
-    intl = tmp(1128).intl;
+    const Text = tmp(5624).Text;
+    intl = tmp(1113).intl;
     tmp9 = <View>{null}</View>;
   }
   return tmp9;
-});
-const result = size.fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
-
-export default tmp2;
+};

@@ -1,19 +1,19 @@
-// Module ID: 7817
-// Function ID: 7818
+// Module ID: 7855
+// Function ID: 7856
 // Name: Quest
-// Dependencies: [7818, 7822, 7823, 2]
+// Dependencies: [7856, 7860, 7861, 2]
 // Exports: questCosponsorMetadataFromServer, questFromServerV2
 
-// Module 7817 (Quest)
-import Task from "Task" /* 7818 */;
-import Reward from "Reward" /* 7822 */;
+// Module 7855 (Quest)
+import Task from "Task" /* 7856 */;
+import Reward from "Reward" /* 7860 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CTA = tmp(7823);
+const CTA = tmp(7861);
 const result = size.fileFinishedImporting("modules/quests/types/v2/Quest.tsx");
 
-export const questFromServerV2 = function questFromServerV2(id) {
+export function questFromServerV2(id) {
   let obj2;
   let obj3;
   let tmp3;
@@ -30,11 +30,11 @@ export const questFromServerV2 = function questFromServerV2(id) {
   }
   tmpResult = CTA;
   return obj;
-};
-export const questCosponsorMetadataFromServer = function questCosponsorMetadataFromServer(cosponsor_metadata) {
+}
+export function questCosponsorMetadataFromServer(cosponsor_metadata) {
   if (null != cosponsor_metadata) {
     const obj = { name: null, logotype: null, redemptionInstructions: null, logotypeLight: null, logotypeDark: null };
     ({ name: obj.name, logotype: obj.logotype, redemption_instructions: obj.redemptionInstructions, logotype_light: obj.logotypeLight, logotype_dark: obj.logotypeDark } = cosponsor_metadata);
     return obj;
   }
-};
+}

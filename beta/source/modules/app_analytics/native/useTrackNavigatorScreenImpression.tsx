@@ -1,49 +1,17 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 16417
+// Function ID: 16418
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [558, 576, 1275, 9393, 2]
+// Dependencies: [6028, 1260, 2]
+// Exports: useTrackNavigatorScreenImpression
 
-// Module 15856 (useTrackNavigatorScreenImpression)
-import react from "react" /* 576 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9393 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16417 (useTrackNavigatorScreenImpression)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6028 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const discord_common_AnalyticsUtils = tmp(1275);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackNavigatorScreenImpression(arg0, params) {
-  let impressionName;
-  let impressionProperties;
-  const obj = react;
-  const cResult = obj.c(6);
-  ({ impressionName, impressionProperties } = arg0);
-  if (cResult[0] === impressionProperties) {
-    let tmp4;
-    if (cResult[1] === params) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === impressionName) {
-      let tmp6;
-      if (cResult[4] === tmp4) {
-        tmp6 = cResult[5];
-      }
-      useTrackImpressionDefault(tmp6);
-    }
-    const obj2 = { type: discord_common_AnalyticsUtils.ImpressionTypes.PAGE, name: impressionName, properties: tmp4 };
-    cResult[3] = impressionName;
-    cResult[4] = tmp4;
-    cResult[5] = obj2;
-    tmp6 = obj2;
-  }
-  let impressionPropertiesResult = impressionProperties;
-  if (typeof impressionProperties === "function") {
-    impressionPropertiesResult = impressionProperties(params.params);
-  }
-  cResult[0] = impressionProperties;
-  cResult[1] = params;
-  cResult[2] = impressionPropertiesResult;
-  tmp4 = impressionPropertiesResult;
-}) : (function useTrackNavigatorScreenImpression(impressionProperties, params) {
+const result = size.fileFinishedImporting("modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx");
+
+export function useTrackNavigatorScreenImpression(impressionProperties, params) {
   impressionProperties = impressionProperties.impressionProperties;
   let impressionPropertiesResult = impressionProperties;
   const impressionName = impressionProperties.impressionName;
@@ -53,7 +21,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackNavi
   const obj = { type: discord_common_AnalyticsUtils.ImpressionTypes.PAGE, name: impressionName, properties: impressionPropertiesResult };
   const tmp2 = useTrackImpressionDefault;
   tmp2(obj);
-});
-const result = size.fileFinishedImporting("modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx");
-
-export const useTrackNavigatorScreenImpression = tmp2;
+}

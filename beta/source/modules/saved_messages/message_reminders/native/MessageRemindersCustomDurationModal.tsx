@@ -1,22 +1,22 @@
-// Module ID: 13853
-// Function ID: 13854
+// Module ID: 11168
+// Function ID: 11169
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 5003, 587, 1633, 1896, 5242, 8965, 2002, 1128, 6965, 9731, 1384, 6956, 6940, 5266, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 1625, 5023, 1888, 5258, 9009, 1994, 1113, 7005, 9812, 1375, 6998, 7558, 7060, 6975, 5624, 2]
 
-// Module 13853 (MessageRemindersCustomDurationModal)
+// Module 11168 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import Pressables from "Pressables" /* 6940 */;
-import HeaderShared from "HeaderShared" /* 9731 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1113 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1888 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
+import HeaderShared from "HeaderShared" /* 9812 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -24,18 +24,19 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { modal: obj2, headerLeftContainer: obj3, headerRightContainer: obj4, container: { paddingHorizontal: 16, paddingTop: 24, gap: 24 }, formHeader: { marginBottom: 8 }, inputContainer: obj5, error: { marginTop: 8 } };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+let obj = { modal: obj2, headerLeftContainer: obj3, headerRightContainer: obj4, container: { paddingHorizontal: 16, paddingTop: 24, gap: 24 }, error: { marginTop: 8 } };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { paddingRight: nativeDefault.space.PX_16 };
-obj5 = { paddingHorizontal: 16, paddingVertical: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
 let closure_9 = createStyles(obj);
 const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onClose) {
+  let TableRow;
+  let TableRow2;
+  let closure_7;
   let first;
   let getError;
   let intl;
@@ -44,17 +45,31 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
   let intl4;
   let items1;
   let items2;
-  let items3;
   let num;
-  let onSubmit;
+  let obj10;
+  let obj8;
   let tmp11Result;
   onClose = onClose.onClose;
   const createReminder = onClose.createReminder;
   const title = onClose.title;
   ({ minimumDate: dependencyMap, maximumDate: _slicedToArray, getError } = onClose);
   first = undefined;
-  onSubmit = undefined;
+  closure_7 = undefined;
   let onPress;
+  function handleSubmitDueDate(arg0) {
+    closure_7(arg0);
+    let tmp2;
+    if (getError != null) {
+      tmp2 = getError(arg0);
+    }
+    if (tmp2 == null) {
+      tmp2 = null;
+    }
+    if (null != tmp2) {
+      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(tmp2);
+    }
+  }
   function handleOpenDatePicker(date) {
     let startOfResult;
     let toDateResult;
@@ -62,11 +77,11 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     const result = obj.dismissGlobalKeyboard();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(8965, dependencyMap.paths);
+    const tmp4 = asyncRequire(9009, dependencyMap.paths);
     const intl = intl5.intl;
     const string = intl.string;
     const t = intl5.t;
-    const obj2 = { title: string("date" === date ? t.pSZKvM : t.GOmEb8), startDate: first.toDate(), minimumDate: startOfResult.toDate(), maximumDate: toDateResult, mode: date, onSubmit };
+    const obj2 = { title: string("date" === date ? t.pSZKvM : t.GOmEb8), startDate: first.toDate(), minimumDate: startOfResult.toDate(), maximumDate: toDateResult, mode: date, onSubmit: handleSubmitDueDate };
     if ("date" === date) {
       const cloneResult = dependencyMap.clone();
       startOfResult = cloneResult.startOf("day");
@@ -85,11 +100,11 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     openLazy(tmp4, "DatePicker", obj2);
   }
   const defaultValue = onClose.defaultValue;
-  const tmp = onPress();
-  const tmp2 = createReminder;
-  let obj = first;
-  const top = createReminder(1633)().top;
-  [first, onSubmit] = first.useState(defaultValue);
+  const tmp = handleSubmitDueDate();
+  let tmp2 = createReminder;
+  let obj = getError;
+  const top = createReminder(1625)().top;
+  [first, closure_7] = getError.useState(defaultValue);
   let error;
   if (getError != null) {
     error = getError(first);
@@ -112,81 +127,65 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       return metroImportDefault(HeaderShared.GenericHeaderTitle, obj);
     },
     headerTitleAlign: "center",
-    headerStatusBarHeight: num + tmp2(587).space.PX_8,
+    headerStatusBarHeight: num + tmp2(575).space.PX_8,
     headerLeft: tmp11Result.getHeaderCloseButton(onClose),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null,
     headerRight() {
-      let Text;
       let intl;
-      let obj2;
-      const obj = { accessibilityRole: "button", disabled: null != error, onPress, children: metroImportDefault(Text, obj2) };
-      const PressableOpacity = Pressables.PressableOpacity;
-      let str = "control-brand-foreground";
-      Text = Text_Text.Text;
-      if (null != error) {
-        str = "text-muted";
-      }
-      obj2 = { variant: "text-md/semibold", color: str, children: intl.string(intl5.t["R3BPH+"]) };
-      intl = tmp2(1128).intl;
-      return metroImportDefault(PressableOpacity, obj);
+      const obj = { text: intl.string(intl5.t["R3BPH+"]), onPress, disabled: null != error };
+      const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
+      intl = intl5.intl;
+      return metroImportDefault(HeaderActionButton, obj);
     }
   };
-  const Header = onClose(6965).Header;
+  const Header = onClose(7005).Header;
   num = 0;
-  const obj5 = onClose(1384);
+  const obj5 = onClose(1375);
   if (!obj5.isIOS()) {
     num = top;
   }
   ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
-  tmp11Result = onClose(6956);
-  items1 = [error(Header, obj3), ];
-  const obj6 = { style: tmp.container, children: items3 };
-  const obj7 = { children: items2 };
-  const obj8 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: intl.string(onClose(1128).t.pSZKvM) };
-  let Text = tmp11(5266).Text;
-  intl = tmp11(1128).intl;
-  items2 = [error(Text, obj8), ];
-  const obj9 = {
-    accessibilityRole: "button",
-    accessibilityLabel: intl2.string(onClose(1128).t.pSZKvM),
+  tmp11Result = onClose(6998);
+  items1 = [closure_7(Header, obj3), ];
+  const obj6 = { style: tmp.container, children: items2 };
+  const obj7 = { title: intl.string(onClose(1113).t.pSZKvM), hasIcons: false, children: closure_7(TableRow, obj8) };
+  const TableRowGroup = tmp11(7060).TableRowGroup;
+  intl = tmp11(1113).intl;
+  obj8 = {
+    label: formatResult,
+    accessibilityLabel: intl2.string(onClose(1113).t.pSZKvM),
     accessibilityValue: { text: formatResult },
     onPress() {
       handleOpenDatePicker("date");
-    },
-    style: tmp.inputContainer,
-    children: error(onClose(5266).Text, { variant: "text-md/medium", children: formatResult })
+    }
   };
-  let PressableOpacity = tmp11(6940).PressableOpacity;
-  intl2 = tmp11(1128).intl;
-  items2[1] = error(PressableOpacity, obj9);
-  items3 = [handleOpenDatePicker(onSubmit, obj7), ];
-  const obj10 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(onClose(1128).t.GOmEb8) };
-  const Text2 = tmp11(5266).Text;
-  intl3 = tmp11(1128).intl;
-  const items4 = [error(Text2, obj10), , ];
-  const obj11 = {
-    accessibilityRole: "button",
-    accessibilityLabel: intl4.string(onClose(1128).t.GOmEb8),
+  TableRow = tmp11(6975).TableRow;
+  intl2 = tmp11(1113).intl;
+  items2 = [closure_7(TableRowGroup, obj7), ];
+  const obj9 = { title: intl3.string(onClose(1113).t.GOmEb8), hasIcons: false, children: closure_7(TableRow2, obj10) };
+  const TableRowGroup2 = tmp11(7060).TableRowGroup;
+  intl3 = tmp11(1113).intl;
+  obj10 = {
+    label: formatResult1,
+    accessibilityLabel: intl4.string(onClose(1113).t.GOmEb8),
     accessibilityValue: { text: formatResult1 },
     onPress() {
       handleOpenDatePicker("time");
-    },
-    style: tmp.inputContainer,
-    children: error(onClose(5266).Text, { variant: "text-md/medium", children: formatResult1 })
+    }
   };
-  const PressableOpacity2 = tmp11(6940).PressableOpacity;
-  intl4 = tmp11(1128).intl;
-  items4[1] = error(PressableOpacity2, obj11);
+  TableRow2 = tmp11(6975).TableRow;
+  intl4 = tmp11(1113).intl;
+  const items3 = [closure_7(TableRowGroup2, obj9), ];
   let tmp10Result = null != error;
   if (tmp10Result) {
-    const obj12 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result = tmp10(tmp11(5266).Text, obj12);
+    const obj11 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
+    tmp10Result = tmp10(tmp11(5624).Text, obj11);
   }
-  items4[2] = tmp10Result;
-  items3[1] = handleOpenDatePicker(onSubmit, { children: items4 });
-  items1[1] = handleOpenDatePicker(onSubmit, obj6);
-  return handleOpenDatePicker(onSubmit, obj2);
+  items3[1] = tmp10Result;
+  items2[1] = error(first, { children: items3 });
+  items1[1] = error(first, obj6);
+  return error(first, obj2);
 });
 let result = size.fileFinishedImporting("modules/saved_messages/message_reminders/native/MessageRemindersCustomDurationModal.tsx");
 

@@ -1,8 +1,8 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13458
+// Function ID: 13459
 // Dependencies: [2]
 
-// Module 12996
+// Module 13458
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/checkpoint-bgm.mp3.js");

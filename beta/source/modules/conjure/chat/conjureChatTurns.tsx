@@ -1,24 +1,24 @@
-// Module ID: 10732
-// Function ID: 10733
+// Module ID: 10852
+// Function ID: 10853
 // Name: conjureChatTurns
-// Dependencies: [10733, 10734, 2]
+// Dependencies: [10853, 10854, 2]
 // Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnIdOfSegment, turnSettled
 
-// Module 10732 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 10733 */;
-import conjureChatHistory from "conjureChatHistory" /* 10734 */;
+// Module 10852 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10853 */;
+import conjureChatHistory from "conjureChatHistory" /* 10854 */;
 import size from "module_2" /* 2 */;
 
-function findOpenTurn(map) {
+function findOpenTurn(messages) {
   let tmp;
-  if (null == map) {
+  if (null == messages) {
     return null;
   } else {
-    let diff = map.length - 1;
+    let diff = messages.length - 1;
     let flag2 = false;
     if (0 <= diff) {
       while (true) {
-        tmp = map[diff];
+        tmp = messages[diff];
         let tmp4 = flag2;
         if ("assistant" === tmp.role) {
           let tmp5 = "side_reply" === tmp.kind || "publish_notice" === tmp.kind || "project_event" === tmp.kind || "context_boundary" === tmp.kind;
@@ -60,19 +60,19 @@ function findOpenTurn(map) {
 }
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureChatTurns.tsx");
 
-export const turnSettled = function turnSettled(message) {
+export function turnSettled(message) {
   let hasTerminalStepResult = true === message.finished || true === message.continued || "" !== message.content || null != message.proposal || null != message.clarification || null != message.intake;
   if (!hasTerminalStepResult) {
     const obj = conjureStepTimeline;
     hasTerminalStepResult = obj.hasTerminalStep(message.steps);
   }
   return hasTerminalStepResult;
-};
+}
 export { findOpenTurn };
-export const hasOpenTurn = function hasOpenTurn(map) {
+export function hasOpenTurn(map) {
   return null != findOpenTurn(map);
-};
-export const isStrandedSegment = function isStrandedSegment(arr, diff) {
+}
+export function isStrandedSegment(arr, diff) {
   let turn_id;
   if (arr[diff] != null) {
     turn_id = tmp.turn_id;
@@ -118,16 +118,16 @@ export const isStrandedSegment = function isStrandedSegment(arr, diff) {
     }
   }
   return false;
-};
-export const isSegmentOfTurn = function isSegmentOfTurn(value, turnId) {
+}
+export function isSegmentOfTurn(value, turnId) {
   let tmp = value.turn_id === turnId;
   if (!tmp) {
     const _HermesInternal = HermesInternal;
     tmp = value.id === "" + conjureChatHistory.TURN_ENTRY_PREFIX + turnId;
   }
   return tmp;
-};
-export const turnIdOfSegment = function turnIdOfSegment(message) {
+}
+export function turnIdOfSegment(message) {
   let turn_id;
   if (null != message.turn_id) {
     turn_id = message.turn_id;
@@ -137,12 +137,12 @@ export const turnIdOfSegment = function turnIdOfSegment(message) {
     const tmp = require;
     if (id.startsWith(conjureChatHistory.TURN_ENTRY_PREFIX)) {
       const id1 = message.id;
-      turn_id = id1.slice(tmp(10734).TURN_ENTRY_PREFIX.length);
+      turn_id = id1.slice(tmp(10854).TURN_ENTRY_PREFIX.length);
     }
   }
   return turn_id;
-};
-export const findTurnSegment = function findTurnSegment(arr3, activeTurnId) {
+}
+export function findTurnSegment(arr3, activeTurnId) {
   if (null == activeTurnId) {
     return -1;
   } else {
@@ -165,8 +165,8 @@ export const findTurnSegment = function findTurnSegment(arr3, activeTurnId) {
     }
     return -1;
   }
-};
-export const resolveTurnIndex = function resolveTurnIndex(value, activeTurnId) {
+}
+export function resolveTurnIndex(value, activeTurnId) {
   let num = -1;
   if (null != activeTurnId) {
     let diff = value.length - 1;
@@ -217,16 +217,16 @@ export const resolveTurnIndex = function resolveTurnIndex(value, activeTurnId) {
     }
     return -1;
   }
-};
-export const replaceAt = function replaceAt(value, findIndexResult, arg2) {
+}
+export function replaceAt(value, findIndexResult, arg2) {
   const substr = value.slice();
   substr[findIndexResult] = arg2;
   return substr;
-};
-export const isOutsideTurn = function isOutsideTurn(value) {
+}
+export function isOutsideTurn(value) {
   return "side_reply" === value.kind || "publish_notice" === value.kind || "project_event" === value.kind || "context_boundary" === value.kind;
-};
-export const stoppable = function stoppable(role) {
+}
+export function stoppable(role) {
   let tmp = "assistant" === role.role;
   if (tmp) {
     tmp = !("side_reply" === role.kind || "publish_notice" === role.kind || "project_event" === role.kind || "context_boundary" === role.kind);
@@ -244,4 +244,4 @@ export const stoppable = function stoppable(role) {
     tmp = true !== role.stopRequested;
   }
   return tmp;
-};
+}

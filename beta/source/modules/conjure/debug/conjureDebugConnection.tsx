@@ -1,15 +1,15 @@
-// Module ID: 10765
-// Function ID: 10766
+// Module ID: 10893
+// Function ID: 10894
 // Name: conjureDebugConnection
-// Dependencies: [10736, 584, 10751, 10750, 10766, 2]
+// Dependencies: [10857, 572, 10874, 10873, 10894, 2]
 // Exports: forceCompaction, pollConjureDebugInstance, requestConjureDebugGitInfo, requestDebugStatus, restartConjureAgent, restartConjureSandbox
 
-// Module 10765 (conjureDebugConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10750 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10766 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10736 */;
+// Module 10893 (conjureDebugConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10873 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10874 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10894 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10857 */;
 import size from "module_2" /* 2 */;
 
 let obj4;
@@ -267,7 +267,7 @@ let result = size.fileFinishedImporting("modules/conjure/debug/conjureDebugConne
 
 export const debugFrameHandlers = obj;
 export const debugStepHandlers = obj2;
-export const requestDebugStatus = function requestDebugStatus(projectId) {
+export function requestDebugStatus(projectId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_DEBUG_STATUS_REQUESTED", projectId };
   obj.dispatch(obj2);
@@ -288,8 +288,8 @@ export const requestDebugStatus = function requestDebugStatus(projectId) {
     const tmpResult = DispatcherDefault;
     tmpResult.dispatch(obj4);
   }
-};
-export const forceCompaction = function forceCompaction(projectId, flag) {
+}
+export function forceCompaction(projectId, flag) {
   let date;
   if (flag === undefined) {
     flag = false;
@@ -314,13 +314,13 @@ export const forceCompaction = function forceCompaction(projectId, flag) {
     const self3 = this;
     const self4 = this;
     const obj4 = { type: "CONJURE_DEBUG_FORCE_COMPACTION_RESULT", projectId, outcome: "failed", reason: "Not connected", observedAt: date.toISOString() };
-    const dispatch = tmp(584).dispatch;
+    const dispatch = tmp(572).dispatch;
     DispatcherDefault;
     date = new Date();
     dispatch(obj4);
   }
-};
-export const restartConjureSandbox = function restartConjureSandbox(projectId) {
+}
+export function restartConjureSandbox(projectId) {
   let date;
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_SANDBOX_RESTART_REQUESTED", projectId };
@@ -342,13 +342,13 @@ export const restartConjureSandbox = function restartConjureSandbox(projectId) {
     const self3 = this;
     const self4 = this;
     const obj4 = { type: "CONJURE_SANDBOX_RESTART_RESULT", projectId, outcome: "failed", reason: "Not connected", observedAt: date.toISOString() };
-    const dispatch = tmp(584).dispatch;
+    const dispatch = tmp(572).dispatch;
     DispatcherDefault;
     date = new Date();
     dispatch(obj4);
   }
-};
-export const pollConjureDebugInstance = function pollConjureDebugInstance(projectId) {
+}
+export function pollConjureDebugInstance(projectId) {
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   if (null != conjureSocket) {
@@ -362,8 +362,8 @@ export const pollConjureDebugInstance = function pollConjureDebugInstance(projec
     } catch (err) {
     }
   }
-};
-export const requestConjureDebugGitInfo = function requestConjureDebugGitInfo(projectId) {
+}
+export function requestConjureDebugGitInfo(projectId) {
   let date;
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
@@ -390,8 +390,8 @@ export const requestConjureDebugGitInfo = function requestConjureDebugGitInfo(pr
     date = new Date();
     dispatch(obj4);
   }
-};
-export const restartConjureAgent = function restartConjureAgent(projectId, first1) {
+}
+export function restartConjureAgent(projectId, clear_alarm) {
   let date;
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_RESTART_AGENT_REQUESTED", projectId };
@@ -406,16 +406,16 @@ export const restartConjureAgent = function restartConjureAgent(projectId, first
       const error = new Error("Not connected");
       throw error;
     } else {
-      conjureSocket.sendRestartAgent(first1);
+      conjureSocket.sendRestartAgent(clear_alarm);
     }
   } catch (err) {
     const _Date = Date;
     const self3 = this;
     const self4 = this;
     const obj4 = { type: "CONJURE_RESTART_AGENT_RESULT", projectId, outcome: "failed", reason: "Not connected", observedAt: date.toISOString() };
-    const dispatch = tmp(584).dispatch;
+    const dispatch = tmp(572).dispatch;
     DispatcherDefault;
     date = new Date();
     dispatch(obj4);
   }
-};
+}

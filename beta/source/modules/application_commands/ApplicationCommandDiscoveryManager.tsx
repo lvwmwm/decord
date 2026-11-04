@@ -1,21 +1,21 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13961
+// Function ID: 13962
 // Name: ApplicationCommandDiscoveryManager
-// Dependencies: [570, 1274, 2]
+// Dependencies: [560, 1259, 2]
 // Exports: updateInitialSectionId
 
-// Module 13330 (ApplicationCommandDiscoveryManager)
-import module_570 from "module_570" /* 570 */;
+// Module 13961 (ApplicationCommandDiscoveryManager)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useCommandDiscoveryManager = module_570.create(() => ({ initialSectionId: "r" }));
+const useCommandDiscoveryManager = module_560.create(() => ({ initialSectionId: "fileBytes" }));
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandDiscoveryManager.tsx");
 
 export { useCommandDiscoveryManager };
-export const updateInitialSectionId = function updateInitialSectionId(arg0) {
+export function updateInitialSectionId(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("react-native");
@@ -23,4 +23,4 @@ export const updateInitialSectionId = function updateInitialSectionId(arg0) {
     let initialSectionId;
     return obj.setState(() => ({ initialSectionId }));
   });
-};
+}

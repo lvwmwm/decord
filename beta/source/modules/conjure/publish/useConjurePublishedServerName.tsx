@@ -1,92 +1,47 @@
-// Module ID: 12414
-// Function ID: 12415
+// Module ID: 12660
+// Function ID: 12661
 // Name: useConjurePublishedServerName
-// Dependencies: [4877, 6805, 558, 576, 504, 2]
+// Dependencies: [4885, 6844, 504, 2]
+// Exports: default
 
-// Module 12414 (useConjurePublishedServerName)
-import GuildStore from "GuildStore" /* 4877 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12660 (useConjurePublishedServerName)
+import GuildStore from "GuildStore" /* 4885 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePublishedServerName(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureProjectStore, GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      const project = ConjureProjectStore.getProject(closure_0);
-      let tmp2 = null;
-      if (null != project) {
-        tmp2 = null;
-        if ("user" !== project.install_scope) {
-          tmp2 = null;
-          if (null != project.guild_id) {
-            const guild = GuildStore.getGuild(project.guild_id);
-            let name;
-            if (guild != null) {
-              name = guild.name;
-            }
-            if (name == null) {
-              name = null;
-            }
-            tmp2 = name;
-          }
-        }
-      }
-      return tmp2;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useConjurePublishedServerName(arg0) {
+const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishedServerName.tsx");
+
+export default function useConjurePublishedServerName(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ConjureProjectStore, GuildStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const project = ConjureProjectStore.getProject(closure_0);
     let tmp2 = null;
     if (null != project) {
       tmp2 = null;
-      if ("user" !== project.install_scope) {
+      if ("guild" === project.install_scope) {
         tmp2 = null;
         if (null != project.guild_id) {
-          const guild = GuildStore.getGuild(project.guild_id);
-          let name;
-          if (guild != null) {
-            name = guild.name;
+          let guild = GuildStore.getGuild(project.guild_id);
+          if (guild == null) {
+            guild = null;
           }
-          if (name == null) {
-            name = null;
-          }
-          tmp2 = name;
+          tmp2 = guild;
         }
       }
     }
     return tmp2;
   });
-});
-const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishedServerName.tsx");
-
-export default tmp2;
+  let tmp2 = null;
+  if (null != stateFromStores) {
+    const obj3 = { guildId: null, name: null };
+    ({ id: obj2.guildId, name: obj2.name } = stateFromStores);
+    tmp2 = obj3;
+  }
+  return tmp2;
+};

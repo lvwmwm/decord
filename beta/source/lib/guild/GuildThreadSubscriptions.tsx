@@ -1,10 +1,10 @@
-// Module ID: 7408
-// Function ID: 7409
+// Module ID: 7450
+// Function ID: 7451
 // Name: GuildThreadSubscriptions
-// Dependencies: [1459, 2]
+// Dependencies: [1451, 2]
 
-// Module 7408 (GuildThreadSubscriptions)
-import LRUCacheDefault from "LRUCache" /* 1459 */;
+// Module 7450 (GuildThreadSubscriptions)
+import LRUCacheDefault from "LRUCache" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let set;

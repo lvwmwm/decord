@@ -1,12 +1,12 @@
-// Module ID: 10761
-// Function ID: 10762
+// Module ID: 10884
+// Function ID: 10885
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [5658, 6806, 2]
+// Dependencies: [5675, 6845, 2]
 // Exports: declaresPreviewFrame, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 10761 (conjurePreviewFrameSurfaces)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
+// Module 10884 (conjurePreviewFrameSurfaces)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5675 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6845 */;
 import size from "module_2" /* 2 */;
 
 let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL };
@@ -21,17 +21,17 @@ const items2 = [EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL];
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewFrameSurfaces.tsx");
 
 export const CONJURE_PREVIEW_LAUNCH_SURFACE_TYPES = items1;
-export const previewFrameLaunchType = function previewFrameLaunchType(APP_CHANNEL) {
+export function previewFrameLaunchType(APP_CHANNEL) {
   if (APP_CHANNEL === EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN) {
     APP_CHANNEL = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
   }
   return APP_CHANNEL;
-};
-export const declaresPreviewFrame = function declaresPreviewFrame(previewSupportedSurfaces) {
+}
+export function declaresPreviewFrame(previewSupportedSurfaces) {
   let closure_0 = previewSupportedSurfaces;
   return items.some((declaredBy) => closure_0.includes(declaredBy.declaredBy));
-};
-export const previewFrameSurfaceOptions = function previewFrameSurfaceOptions(previewSupportedSurfaces) {
+}
+export function previewFrameSurfaceOptions(previewSupportedSurfaces) {
   let closure_0 = previewSupportedSurfaces;
   const found = items.filter((item) => {
     let hasItem;
@@ -46,15 +46,15 @@ export const previewFrameSurfaceOptions = function previewFrameSurfaceOptions(pr
     mapped = items2;
   }
   return mapped;
-};
-export const resolvePreviewFrameSurface = function resolvePreviewFrameSurface(arg0, cResult) {
-  let tmp = arg0;
-  if (null == arg0) {
-    let APP_CHANNEL = cResult[0];
+}
+export function resolvePreviewFrameSurface(first1, memo) {
+  let tmp = first1;
+  if (null == first1) {
+    let APP_CHANNEL = memo[0];
     if (APP_CHANNEL == null) {
       APP_CHANNEL = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
     }
     tmp = APP_CHANNEL;
   }
   return tmp;
-};
+}

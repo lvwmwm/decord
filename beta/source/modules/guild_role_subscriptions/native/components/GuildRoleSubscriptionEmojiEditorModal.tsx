@@ -1,25 +1,21 @@
-// Module ID: 19342
-// Function ID: 19343
+// Module ID: 19976
+// Function ID: 19977
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 4958, 21, 5003, 587, 558, 576, 19334, 504, 5940, 1128, 6010, 5701, 1417, 8983, 19329, 5266, 19340, 2]
+// Dependencies: [5, 32, 19, 17, 4969, 21, 5014, 575, 19968, 504, 5717, 1409, 19974, 1113, 5958, 6030, 6974, 19964, 5624, 2]
+// Exports: default
 
-// Module 19342 (GuildRoleSubscriptionEmojiEditorModal)
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1128 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import AlertDefault from "Alert" /* 6010 */;
-import EmojiAliasDefault from "EmojiAlias" /* 19329 */;
+// Module 19976 (GuildRoleSubscriptionEmojiEditorModal)
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import AlertDefault from "Alert" /* 6030 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4958 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4969 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, roles, set;
@@ -36,238 +32,17 @@ let react = react_mod;
 ({ View: metroRequire, SectionList: metroImportDefault } = react_native);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, emojiList: obj3, row: { alignItems: "flex-start", paddingTop: 16, paddingBottom: 14 }, emojiImage: { width: 24, height: 24, marginBottom: 2 }, emojiAlias: { marginBottom: 2 } };
+let obj = { container: obj2, emojiList: { flexGrow: 0 }, emojiListContent: obj3, emojiImage: { width: 24, height: 24 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", justifyContent: "flex-start", height: "100%" };
 createStyles = createStyles.createStyles;
-obj3 = { flexGrow: 0, marginVertical: 24, marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj3 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING, paddingVertical: nativeDefault.space.PX_24 };
 let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionEmojiEditorModal(guildId) {
-  let closure_7;
-  let emojiImage;
-  let first;
-  let first1;
-  let listingId;
-  let onClose;
-  let onConfirm;
-  let tmp12;
-  let tmp7;
-  let tmp = guildId;
-  const tmp2 = onClose;
-  let obj = guildId(onClose[9]);
-  const cResult = obj.c(49);
-  guildId = guildId.guildId;
-  const subscriptionRoleId = guildId.subscriptionRoleId;
-  ({ listingId, onClose } = guildId);
-  const onSave = guildId.onSave;
-  const initialTierEmojiIds = guildId.initialTierEmojiIds;
-  const tmp4 = closure_12();
-  _slicedToArray = tmp4;
-  const arr = subscriptionRoleId(onClose[10])(guildId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [set];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function v() {
-      return SubscriptionRoleStore.getSubscriptionRoles(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  let tmpResult = tmp(tmp2[11]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  [first1, closure_7] = stateFromStores.useState(initialTierEmojiIds);
-  if (null != subscriptionRoleId) {
-    let tmp13;
-    if (cResult[4] === stateFromStores) {
-      if (cResult[5] === arr) {
-        if (cResult[6] === subscriptionRoleId) {
-          if (cResult[7] === first1) {
-            tmp13 = cResult[8];
-          }
-          tmp12 = tmp13;
-        }
-      }
-    }
-    if (cResult[9] === stateFromStores) {
-      if (cResult[10] === subscriptionRoleId) {
-        let tmp14;
-        let tmp15;
-        if (cResult[11] === first1) {
-          tmp14 = cResult[12];
-        }
-        const found = arr.filter(tmp14);
-        class D {
-          constructor(arg0) {
-            closure_0 = guildId;
-            roles = guildId.roles;
-            return 0 === roles.filter((item) => {
-              const tmp = item === subscriptionRoleId && !first1.has(roles.id);
-              const hasItem = !tmp && stateFromStores.has(item);
-              return hasItem;
-            }).length;
-          }
-        }
-        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          class G {
-            constructor(id) {
-              return id.id;
-            }
-          }
-          class D {
-            constructor(arg0) {
-              closure_0 = guildId;
-              roles = guildId.roles;
-              return 0 === roles.filter((item) => {
-                const tmp = item === subscriptionRoleId && !first1.has(roles.id);
-                const hasItem = !tmp && stateFromStores.has(item);
-                return hasItem;
-              }).length;
-            }
-          }
-          tmp15 = G;
-        } else {
-          class G {
-            constructor(id) {
-              return id.id;
-            }
-          }
-        }
-        const _Set = Set;
-        const self = this;
-        const self2 = this;
-        set = new Set(found.map(tmp15));
-        cResult[4] = stateFromStores;
-        cResult[5] = arr;
-        cResult[6] = subscriptionRoleId;
-        cResult[7] = first1;
-        cResult[8] = set;
-        tmp13 = set;
-      }
-    }
-    class D {
-      constructor(arg0) {
-        closure_0 = guildId;
-        roles = guildId.roles;
-        return 0 === roles.filter((item) => {
-          const tmp = item === subscriptionRoleId && !first1.has(roles.id);
-          const hasItem = !tmp && stateFromStores.has(item);
-          return hasItem;
-        }).length;
-      }
-    }
-    cResult[9] = stateFromStores;
-    cResult[10] = subscriptionRoleId;
-    cResult[11] = first1;
-    cResult[12] = D;
-    tmp14 = D;
-  } else {
-    class G {
-      constructor(id) {
-        return id.id;
-      }
-    }
-    const tmp11 = cResult[3];
-    class D {
-      constructor(arg0) {
-        closure_0 = guildId;
-        roles = guildId.roles;
-        return 0 === roles.filter((item) => {
-          const tmp = item === subscriptionRoleId && !first1.has(roles.id);
-          const hasItem = !tmp && stateFromStores.has(item);
-          return hasItem;
-        }).length;
-      }
-    }
-  }
-  set = tmp12;
-  if (cResult[14] === onClose) {
-    class G {
-      constructor(id) {
-        return id.id;
-      }
-    }
-  }
-  let closure_0 = onSave(function*(arg0, value) {
-    let closure_2;
-    let v0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c3;
-      try {
-        c4 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_0 = tmp;
-            c3 = 1;
-            c1 = 2;
-            c4 = 1;
-            const obj4 = { value: c3(first1), done: false };
-            return obj4;
-          }
-        } else {
-          if (1 === tmp4) {
-            c3 = 0;
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c4 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            tmp11();
-            c3 = 0;
-          }
-          c4 = 3;
-          return { value: "IconComponent", done: null };
-        }
-      } catch (tmp11) {
-        if (0 === c3) {
-          c4 = 3;
-          throw tmp11;
-        } else {
-          c1 = 1;
-        }
-      }
-    }
-  });
-  function handleSave() {
-    return closure_0(...arguments);
-  }
-  cResult[14] = onClose;
-  cResult[15] = onSave;
-  cResult[16] = first1;
-  cResult[17] = handleSave;
-}) : (function GuildRoleSubscriptionEmojiEditorModal(guildId) {
-  let closure_4;
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionEmojiEditorModal.tsx");
+
+export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
   let closure_5;
   let closure_8;
+  let emojiImage;
   let first;
   let initialTierEmojiIds;
   let intl;
@@ -284,7 +59,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
   function handleSave() {
     return obj(...arguments);
   }
-  let obj = function _handleSave2() {
+  let obj = function _handleSave() {
     obj = _asyncToGenerator(async (arg0, value) => {
       if (c4 === 2) {
         c4 = 3;
@@ -296,7 +71,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -334,7 +109,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;
@@ -352,13 +127,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
   ({ initialTierEmojiIds, listingId } = guildId);
   let tmp = closure_12();
   _slicedToArray = tmp;
-  let tmp2 = subscriptionRoleId(onClose[10])(guildId);
+  const tmp2 = subscriptionRoleId(onClose[8])(guildId);
   react = tmp2;
-  obj = guildId(onClose[11]);
-  const items = [closure_8];
+  obj = guildId(onClose[9]);
+  let items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => SubscriptionRoleStore.getSubscriptionRoles(guildId));
   [first, closure_8] = react.useState(initialTierEmojiIds);
-  let items1 = [stateFromStores, tmp2, subscriptionRoleId, first];
+  const items1 = [stateFromStores, tmp2, subscriptionRoleId, first];
   set = react.useMemo(function() {
     if (null == subscriptionRoleId) {
       const _Set2 = Set;
@@ -410,46 +185,34 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
     listingId,
     canSave: true
   };
-  const tmp6 = subscriptionRoleId(onClose[20]);
+  let tmp6 = subscriptionRoleId(onClose[12]);
   intl = guildId(onClose[13]).intl;
   items2 = [set(tmp6, obj3), ];
   let obj4 = {
     style: tmp.emojiList,
+    contentContainerStyle: tmp.emojiListContent,
     renderItem(item) {
+      let intl;
+      let intl2;
+      let items;
       let obj2;
       let obj3;
       let obj4;
       let obj5;
-      let tmp2;
+      let obj6;
+      let tmp6;
+      let tmp7;
       item = item.item;
+      const index = item.index;
       const hasItem = first.has(item.id);
-      let closure_1 = set.has(item.id);
+      const hasItem1 = set.has(item.id);
       obj = {
-        style: emojiAlias.row,
-        leading: set(tmp2, obj2),
-        label() {
-          let intl;
-          let intl2;
-          let items1;
-          const children = [, ];
-          obj = { name: item.name, style: emojiAlias.emojiAlias };
-          children[0] = React4(EmojiAliasDefault, obj);
-          let tmpResult = closure_1;
-          if (tmpResult) {
-            const obj2 = { children: items1 };
-            const obj3 = { variant: "text-sm/normal", color: "interactive-text-active", children: intl.string(intl5.t["1GlN06"]) };
-            const Text = Text_Text.Text;
-            intl = intl5.intl;
-            items1 = [React4(Text, obj3), ];
-            const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl2.string(intl5.t.J0XdJ4) };
-            const Text2 = Text_Text.Text;
-            intl2 = intl5.intl;
-            items1[1] = React4(Text2, obj4);
-            tmpResult = tmp(tmp2, obj2);
-          }
-          children[1] = tmpResult;
-          return unpackModuleId(authStore, { children });
-        },
+        start: 0 === index,
+        end: index === closure_5.length - 1,
+        icon: set(tmp6, obj2),
+        label: set(subscriptionRoleId(onClose[17]), obj6),
+        subLabel: tmp7,
+        checked: hasItem,
         onPress() {
           const id = item.id;
           set = new Set(first);
@@ -459,21 +222,31 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
             set.add(id);
           }
           closure_8(set);
-        },
-        trailing: set(guildId(onClose[17]).FormRow.Checkbox, { selected: hasItem })
+        }
       };
-      const FormRow = guildId(onClose[17]).FormRow;
-      obj2 = { style: emojiAlias.emojiImage, source: obj3 };
+      const TableCheckboxRow = guildId(onClose[16]).TableCheckboxRow;
+      obj2 = { style: emojiImage.emojiImage, source: obj3 };
       obj3 = { uri: obj4.getEmojiURL(obj5) };
-      tmp2 = subscriptionRoleId(onClose[15]);
-      obj4 = subscriptionRoleId(onClose[16]);
+      tmp6 = subscriptionRoleId(onClose[10]);
+      tmp7 = undefined;
+      obj4 = subscriptionRoleId(onClose[11]);
       obj5 = { id: item.id, animated: item.animated, size: 48 };
-      return set(FormRow, obj);
+      obj6 = { children: item.name };
+      if (hasItem1) {
+        const obj7 = { children: items };
+        const obj8 = { variant: "text-sm/normal", color: "interactive-text-active", children: intl.string(guildId(onClose[13]).t["1GlN06"]) };
+        const Text = tmp4(tmp5[18]).Text;
+        intl = tmp4(tmp5[13]).intl;
+        items = [tmp3(Text, obj8), ];
+        const obj9 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl2.string(guildId(onClose[13]).t.J0XdJ4) };
+        const Text2 = tmp4(tmp5[18]).Text;
+        intl2 = tmp4(tmp5[13]).intl;
+        items[1] = set(Text2, obj9);
+        tmp7 = obj(handleSave, obj7);
+      }
+      return set(TableCheckboxRow, obj);
     },
     sections: items3,
-    ItemSeparatorComponent() {
-      return set(guildId(onClose[17]).FormDivider, { iconPush: true });
-    },
     keyboardShouldPersistTaps: "always"
   };
   let obj5 = { title: intl2.string(guildId(onClose[13]).t["9Oq93m"]), data: tmp2 };
@@ -481,7 +254,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
   items3 = [obj5];
   items2[1] = set(first, obj4);
   return obj(stateFromStores, obj2);
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionEmojiEditorModal.tsx");
-
-export default tmp5;
+};

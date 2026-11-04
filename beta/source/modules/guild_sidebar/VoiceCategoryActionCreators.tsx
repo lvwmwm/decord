@@ -1,22 +1,22 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 18256
+// Function ID: 18257
 // Name: VoiceCategoryActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 17662 (VoiceCategoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 18256 (VoiceCategoryActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
 
-export const voiceCategoryExpand = function voiceCategoryExpand(guildId) {
+export function voiceCategoryExpand(guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "VOICE_CATEGORY_EXPAND", guildId, expand: true };
   obj.dispatch(obj2);
-};
-export const voiceCategoryCollapse = function voiceCategoryCollapse(guildId) {
+}
+export function voiceCategoryCollapse(guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "VOICE_CATEGORY_COLLAPSE", guildId, expand: false };
   obj.dispatch(obj2);
-};
+}

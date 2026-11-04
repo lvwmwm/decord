@@ -1,17 +1,17 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 9749
+// Function ID: 9750
 // Name: oauth2/actions
-// Dependencies: [5, 4855, 4906, 1087, 1297, 6700, 1096, 2]
+// Dependencies: [5, 4863, 4917, 1072, 1282, 6740, 1081, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9669 (oauth2/actions)
-import utils_PathUtils from "utils/PathUtils" /* 1096 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6700 */;
+// Module 9749 (oauth2/actions)
+import utils_PathUtils from "utils/PathUtils" /* 1081 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let client_id, code_challenge, code_challenge_method, connected_account_provider, guild_id, integration_type, nonce, permissions, signal;
@@ -79,7 +79,7 @@ let obj = function _authorize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ let obj = function _authorize() {
               ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = closure_0);
               response_type = 1;
               redirect_uri = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === response_type) {
             if (arg0 === 1) {
@@ -190,7 +190,7 @@ obj = function _fetchAuthorization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _fetchAuthorization() {
               ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = closure_0);
               redirect_uri = 1;
               code_challenge = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === redirect_uri) {
             if (arg0 === 1) {
@@ -274,7 +274,7 @@ obj = function _startSamsungAuthorization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ obj = function _startSamsungAuthorization() {
             return { value, done: true };
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           c5 = 3;
@@ -395,7 +395,7 @@ obj = function _finishUserCodeTwoWayLinkError() {
 let result = size.fileFinishedImporting("modules/oauth2/actions.tsx");
 
 export { getLocationContextServer };
-export const acceptWhitelist = function acceptWhitelist(token) {
+export function acceptWhitelist(token) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: metroImportDefault.OAUTH2_WHITELIST_ACCEPT, query: obj, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
@@ -403,31 +403,31 @@ export const acceptWhitelist = function acceptWhitelist(token) {
   obj = { token };
   obj3 = HTTPUtils;
   return post(request);
-};
-export const authorize = function authorize() {
+}
+export function authorize() {
   return obj(...arguments);
-};
-export const fetchAuthorization = function fetchAuthorization() {
+}
+export function fetchAuthorization() {
   return obj(...arguments);
-};
-export const startSamsungAuthorization = function startSamsungAuthorization() {
+}
+export function startSamsungAuthorization() {
   return obj(...arguments);
-};
-export const fetchChannels = function fetchChannels() {
+}
+export function fetchChannels() {
   return obj(...arguments);
-};
-export const logoutWithRedirect = function logoutWithRedirect(pathname, TTI_test) {
+}
+export function logoutWithRedirect(pathname, TTI_test) {
   const logout = AuthenticationActionCreatorsDefault.logout;
   AuthenticationActionCreatorsDefault;
   obj = utils_PathUtils;
   logout(TTI_test, obj.getLoginPath(pathname.pathname + pathname.search, false));
-};
-export const verifyUserCode = function verifyUserCode() {
+}
+export function verifyUserCode() {
   return obj(...arguments);
-};
-export const finishUserCode = function finishUserCode() {
+}
+export function finishUserCode() {
   return obj(...arguments);
-};
-export const finishUserCodeTwoWayLinkError = function finishUserCodeTwoWayLinkError() {
+}
+export function finishUserCodeTwoWayLinkError() {
   return obj(...arguments);
-};
+}

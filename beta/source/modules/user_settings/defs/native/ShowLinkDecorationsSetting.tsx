@@ -1,62 +1,40 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 17404
+// Function ID: 17405
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [5004, 8364, 558, 576, 504, 15721, 11240, 1128, 2]
-// Exports: onShowLinkDecorationsValueChange
+// Dependencies: [5015, 8432, 504, 16270, 11540, 1113, 2]
+// Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 16801 (ShowLinkDecorationsSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15721 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17404 (ShowLinkDecorationsSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowLinkDecorationsSettingValue() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function t() {
-      return AccessibilityStore.alwaysShowLinkDecorations;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useShowLinkDecorationsSettingValue() {
+function useShowLinkDecorationsSettingValue() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => AccessibilityStore.alwaysShowLinkDecorations);
-});
+}
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
   const obj = AccessibilityActionCreators;
   const result = obj.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.OLZFB8);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  useValue: useShowLinkDecorationsSettingValue,
   onValueChange: onShowLinkDecorationsValueChange
 };
 const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowLinkDecorationsSetting.tsx");
 
 export default toggle;
-export const useShowLinkDecorationsSettingValue = tmp2;
+export { useShowLinkDecorationsSettingValue };
 export { onShowLinkDecorationsValueChange };

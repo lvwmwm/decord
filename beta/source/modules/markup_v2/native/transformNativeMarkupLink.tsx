@@ -1,16 +1,16 @@
-// Module ID: 8615
-// Function ID: 8616
+// Module ID: 8684
+// Function ID: 8685
 // Name: transformNativeMarkupLink
-// Dependencies: [6012, 6018, 6024, 8532, 8616, 6035, 2]
+// Dependencies: [6032, 6038, 6044, 8601, 8685, 6055, 2]
 // Exports: transformNativeLink
 
-// Module 8615 (transformNativeMarkupLink)
-import MarkupTypes from "MarkupTypes" /* 6012 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6018 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6024 */;
-import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 6035 */;
-import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8532 */;
-import ChannelLinkUrls from "ChannelLinkUrls" /* 8616 */;
+// Module 8684 (transformNativeMarkupLink)
+import MarkupTypes from "MarkupTypes" /* 6032 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6038 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6044 */;
+import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 6055 */;
+import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8601 */;
+import ChannelLinkUrls from "ChannelLinkUrls" /* 8685 */;
 import size from "module_2" /* 2 */;
 
 function stripCredentialsForDisplay(url) {
@@ -29,7 +29,7 @@ function stripCredentialsForDisplay(url) {
 }
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupLink.tsx");
 
-export const transformNativeLink = function transformNativeLink(value, channelId, transformNativeInline) {
+export function transformNativeLink(value, channelId, transformNativeInline) {
   let items;
   let items1;
   let text;
@@ -92,4 +92,4 @@ export const transformNativeLink = function transformNativeLink(value, channelId
     }
     return obj5;
   }
-};
+}

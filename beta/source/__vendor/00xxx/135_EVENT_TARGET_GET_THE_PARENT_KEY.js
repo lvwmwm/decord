@@ -14,8 +14,8 @@ const SymbolResult2 = Symbol("EventTarget[dispatch]");
 export const EVENT_TARGET_GET_THE_PARENT_KEY = SymbolResult;
 export const EVENT_TARGET_GET_DECLARATIVE_LISTENER_KEY = SymbolResult1;
 export const INTERNAL_DISPATCH_METHOD_KEY = SymbolResult2;
-export const dispatchTrustedEvent = function dispatchTrustedEvent(upload, defaultPrevented) {
+export function dispatchTrustedEvent(upload, defaultPrevented) {
   const obj = COMPOSED_PATH_KEY;
   obj.setIsTrusted(defaultPrevented, true);
   return upload[SymbolResult2](defaultPrevented);
-};
+}

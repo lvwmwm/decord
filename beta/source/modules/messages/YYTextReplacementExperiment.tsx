@@ -1,11 +1,11 @@
-// Module ID: 19411
-// Function ID: 19412
+// Module ID: 20036
+// Function ID: 20037
 // Name: YYTextReplacementExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: shouldEnableYYTextReplacement
 
-// Module 19411 (YYTextReplacementExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 20036 (YYTextReplacementExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/messages/YYTextReplacementExperiment.tsx");
 
-export const shouldEnableYYTextReplacement = function shouldEnableYYTextReplacement(location) {
+export function shouldEnableYYTextReplacement(location) {
   const obj = { location: location.location };
   return config.getConfig(obj).enabled;
-};
+}

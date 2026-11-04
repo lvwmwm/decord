@@ -1,13 +1,13 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8453
+// Function ID: 8454
 // Name: PrivateChannelIntegrationSystemMessageUtils
-// Dependencies: [1087, 1128, 2067, 2]
+// Dependencies: [1072, 1113, 2061, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 8385 (PrivateChannelIntegrationSystemMessageUtils)
-import intl3 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import Constants from "Constants" /* 1087 */;
+// Module 8453 (PrivateChannelIntegrationSystemMessageUtils)
+import intl3 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -15,7 +15,7 @@ let closure_4;
 ({ HelpdeskArticles: c3, NOOP: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/private_channel_integrations/PrivateChannelIntegrationSystemMessageUtils.tsx");
 
-export const getPrivateChannelIntegrationAddedSystemMessageContent = function getPrivateChannelIntegrationAddedSystemMessageContent(applicationNameHook) {
+export function getPrivateChannelIntegrationAddedSystemMessageContent(applicationNameHook) {
   let application;
   let format2Result;
   let obj2;
@@ -46,8 +46,8 @@ export const getPrivateChannelIntegrationAddedSystemMessageContent = function ge
     format2Result = format(prop, obj);
   }
   return format2Result;
-};
-export const getPrivateChannelIntegrationRemovedSystemMessageContent = function getPrivateChannelIntegrationRemovedSystemMessageContent(applicationNameHook) {
+}
+export function getPrivateChannelIntegrationRemovedSystemMessageContent(applicationNameHook) {
   let application;
   let format2Result;
   let obj2;
@@ -78,8 +78,8 @@ export const getPrivateChannelIntegrationRemovedSystemMessageContent = function 
     format2Result = format(sAX6rs, obj);
   }
   return format2Result;
-};
-export const getPrivateChannelIntegrationAddedSystemMessageASTContent = function getPrivateChannelIntegrationAddedSystemMessageASTContent(arg0) {
+}
+export function getPrivateChannelIntegrationAddedSystemMessageASTContent(arg0) {
   let application;
   let formatToPartsResult;
   let medium;
@@ -108,8 +108,8 @@ export const getPrivateChannelIntegrationAddedSystemMessageASTContent = function
     formatToPartsResult = formatToParts2(ojysqe, obj4);
   }
   return formatToPartsResult;
-};
-export const getPrivateChannelIntegrationRemovedSystemMessageASTContent = function getPrivateChannelIntegrationRemovedSystemMessageASTContent(arg0) {
+}
+export function getPrivateChannelIntegrationRemovedSystemMessageASTContent(arg0) {
   let application;
   let formatToPartsResult;
   let medium;
@@ -138,4 +138,4 @@ export const getPrivateChannelIntegrationRemovedSystemMessageASTContent = functi
     formatToPartsResult = formatToParts2(prop, obj4);
   }
   return formatToPartsResult;
-};
+}

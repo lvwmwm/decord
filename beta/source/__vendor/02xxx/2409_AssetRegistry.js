@@ -1,10 +1,10 @@
 // Module ID: 2409
 // Function ID: 2410
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 2409 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9yb29tcw==", scales: [1], hash: "e770f1ce4644c4c69498a06b8bbbda2b", name: "bg.messages.e770f1ce4644c4c69498a06b8bbbda2b.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/waterwheels", scales: [1], hash: "5f812c71f3f67a8aa05df330ceb4c5e5", name: "WaterwheelsUntranslated.compiled.messages", type: "jsona" });

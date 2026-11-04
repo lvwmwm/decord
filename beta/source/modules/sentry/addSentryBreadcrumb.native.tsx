@@ -1,17 +1,17 @@
-// Module ID: 685
-// Function ID: 686
+// Module ID: 673
+// Function ID: 674
 // Name: addSentryBreadcrumb
-// Dependencies: [686, 2]
+// Dependencies: [674, 2]
 // Exports: default
 
-// Module 685 (addSentryBreadcrumb)
-import _modAll686 from "module_686" /* 686 */;
+// Module 673 (addSentryBreadcrumb)
+import _modAll674 from "module_674" /* 674 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/sentry/addSentryBreadcrumb.native.tsx");
 
 export default function addSentryBreadcrumb(category) {
-  const obj = _modAll686;
+  const obj = _modAll674;
   const obj2 = { type: "default", level: "info", category: category.category, message: category.message, data: category.data, timestamp: Date.now() };
   obj.addBreadcrumb(obj2);
 };

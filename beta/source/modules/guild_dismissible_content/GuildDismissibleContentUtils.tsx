@@ -1,17 +1,16 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 14070
+// Function ID: 14071
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1246, 1087, 4852, 1097, 4838, 558, 576, 504, 4836, 1267, 4839, 2]
-// Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed
+// Dependencies: [1231, 1072, 4860, 1082, 4846, 504, 4844, 1252, 4847, 2]
+// Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 13450 (GuildDismissibleContentUtils)
-import Constants from "Constants" /* 1087 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4838 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14070 (GuildDismissibleContentUtils)
+import Constants from "Constants" /* 1072 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4846 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +19,9 @@ let _require, dependencyMap, importDefault;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const UserSettingsDelay = UserSettingsConstants.UserSettingsDelay;
-function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, c0) {
+let result = size.fileFinishedImporting("modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx");
+
+export function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, c0) {
   const dismissedGuildContent = UserSettingsProtoStore.getDismissedGuildContent(c0);
   let hasBitResult = null != dismissedGuildContent;
   if (hasBitResult) {
@@ -29,44 +30,7 @@ function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, c0) {
   }
   return hasBitResult;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsContentDismissed(arg0, arg1) {
-  let closure_0;
-  let first;
-  _require = arg0;
-  let closure_1 = arg1;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserSettingsProtoStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp6;
-    if (cResult[2] === arg1) {
-      tmp6 = cResult[3];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(first, tmp6);
-  }
-  const fn = function u() {
-    const dismissedGuildContent = UserSettingsProtoStore.getDismissedGuildContent(closure_1);
-    let hasBitResult = null != dismissedGuildContent;
-    const tmp = closure_0;
-    if (hasBitResult) {
-      const obj = Uint8ArrayUtils;
-      hasBitResult = obj.hasBit(dismissedGuildContent, tmp);
-    }
-    return hasBitResult;
-  };
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  tmp6 = fn;
-}) : (function useIsContentDismissed(arg0, arg1) {
+export function useIsContentDismissed(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -82,15 +46,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConte
     }
     return hasBitResult;
   });
-});
-let result = size.fileFinishedImporting("modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx");
-
-export { isContentDismissed };
-export const useIsContentDismissed = tmp2;
-export const markContentAsDismissed = function markContentAsDismissed(dc, guildId, arg2, AUTO_DISMISS) {
+}
+export function markContentAsDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, guildId, arg2, AUTO_DISMISS) {
   let c0;
   _require = true;
-  importDefault = dc;
+  importDefault = GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK;
   dependencyMap = guildId;
   const obj = require("UserSettingsProtoActionCreators");
   const result = obj.updateUserGuildSettings(guildId, (dismissedGuildContent) => {
@@ -110,7 +70,7 @@ export const markContentAsDismissed = function markContentAsDismissed(dc, guildI
   const tmp4 = arg2;
   if (tmp4) {
     let UNKNOWN = AUTO_DISMISS;
-    const obj2 = { type: tmp(4839).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
+    const obj2 = { type: tmp(4847).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK], guild_id: guildId, action: UNKNOWN };
     const track = AnalyticsUtilsDefault.track;
     const DISMISSIBLE_CONTENT_DISMISSED = AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED;
     AnalyticsUtilsDefault;
@@ -119,8 +79,8 @@ export const markContentAsDismissed = function markContentAsDismissed(dc, guildI
     }
     track(DISMISSIBLE_CONTENT_DISMISSED, obj2);
   }
-};
-export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, guildId) {
+}
+export function unmarkContentAsDismissed(dc, guildId) {
   let c0;
   _require = false;
   let closure_1 = dc;
@@ -139,4 +99,4 @@ export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, gu
     }
     return false;
   }, UserSettingsDelay.FREQUENT_USER_ACTION);
-};
+}

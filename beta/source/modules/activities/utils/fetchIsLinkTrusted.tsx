@@ -1,13 +1,13 @@
-// Module ID: 15773
-// Function ID: 15774
+// Module ID: 16324
+// Function ID: 16325
 // Name: fetchIsLinkTrusted
-// Dependencies: [5, 1087, 1297, 1386, 2]
+// Dependencies: [5, 1072, 1282, 1377, 2]
 // Exports: fetchIsLinkTrusted
 
-// Module 15773 (fetchIsLinkTrusted)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
+// Module 16324 (fetchIsLinkTrusted)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -120,6 +120,6 @@ const Endpoints = Constants.Endpoints;
 new Map();
 let result = size.fileFinishedImporting("modules/activities/utils/fetchIsLinkTrusted.tsx");
 
-export const fetchIsLinkTrusted = function fetchIsLinkTrusted() {
+export function fetchIsLinkTrusted() {
   return obj(...arguments);
-};
+}

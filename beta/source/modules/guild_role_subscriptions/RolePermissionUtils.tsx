@@ -1,23 +1,23 @@
-// Module ID: 4926
-// Function ID: 4927
+// Module ID: 4937
+// Function ID: 4938
 // Name: RolePermissionUtils
-// Dependencies: [4910, 1087, 1099, 2]
+// Dependencies: [4921, 1072, 1084, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 4926 (RolePermissionUtils)
-import Constants from "Constants" /* 1087 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4910 */;
+// Module 4937 (RolePermissionUtils)
+import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
 import size from "module_2" /* 2 */;
 
 const hasPermission = GuildRoleRecord.hasPermission;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/RolePermissionUtils.tsx");
 
-export const hasViewChannelPermission = function hasViewChannelPermission(arg0) {
+export function hasViewChannelPermission(arg0) {
   return hasPermission(arg0, Permissions.VIEW_CHANNEL);
-};
-export const isChannelAccessDeniedBy = function isChannelAccessDeniedBy(isGuildVocal, deny) {
+}
+export function isChannelAccessDeniedBy(isGuildVocal, deny) {
   let tmp = null != deny;
   if (tmp) {
     const obj = BigFlagUtilsAll;
@@ -27,7 +27,7 @@ export const isChannelAccessDeniedBy = function isChannelAccessDeniedBy(isGuildV
     if (!hasItem) {
       let isGuildVocalResult = isGuildVocal.isGuildVocal();
       if (isGuildVocalResult) {
-        const tmp2Result = tmp2(1099);
+        const tmp2Result = tmp2(1084);
         isGuildVocalResult = tmp2Result.has(deny.deny, tmp4.CONNECT);
       }
       hasItem = isGuildVocalResult;
@@ -35,8 +35,8 @@ export const isChannelAccessDeniedBy = function isChannelAccessDeniedBy(isGuildV
     tmp = hasItem;
   }
   return tmp;
-};
-export const isChannelAccessGrantedBy = function isChannelAccessGrantedBy(isGuildVocal, deny) {
+}
+export function isChannelAccessGrantedBy(isGuildVocal, deny) {
   let tmp = null != deny;
   if (tmp) {
     let tmp3 = null != deny;
@@ -48,7 +48,7 @@ export const isChannelAccessGrantedBy = function isChannelAccessGrantedBy(isGuil
       if (!hasItem1) {
         let isGuildVocalResult = isGuildVocal.isGuildVocal();
         if (isGuildVocalResult) {
-          const tmp4Result = tmp4(1099);
+          const tmp4Result = tmp4(1084);
           isGuildVocalResult = tmp4Result.has(deny.deny, tmp6.CONNECT);
         }
         hasItem1 = isGuildVocalResult;
@@ -65,7 +65,7 @@ export const isChannelAccessGrantedBy = function isChannelAccessGrantedBy(isGuil
         const isGuildVocalResult1 = isGuildVocal.isGuildVocal();
         let hasItem = !isGuildVocalResult1;
         if (isGuildVocalResult1) {
-          const tmp10Result = tmp10(1099);
+          const tmp10Result = tmp10(1084);
           hasItem = tmp10Result.has(deny.allow, tmp12.CONNECT);
         }
         hasItem2 = hasItem;
@@ -75,4 +75,4 @@ export const isChannelAccessGrantedBy = function isChannelAccessGrantedBy(isGuil
     tmp = tmp9;
   }
   return tmp;
-};
+}

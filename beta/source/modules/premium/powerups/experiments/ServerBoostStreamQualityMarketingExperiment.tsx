@@ -1,11 +1,11 @@
-// Module ID: 14934
-// Function ID: 14935
+// Module ID: 15479
+// Function ID: 15480
 // Name: ServerBoostStreamQualityMarketingExperiment
-// Dependencies: [1456, 2]
+// Dependencies: [1448, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 14934 (ServerBoostStreamQualityMarketingExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
+// Module 15479 (ServerBoostStreamQualityMarketingExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/premium/powerups/experiments/
 
 export default tmp2;
 export const CONTROL_RESOLUTION = "1080p";
-export const getServerBoostStreamQualityMarketingResolution = function getServerBoostStreamQualityMarketingResolution(GuildBoostingMarketingTierCards) {
+export function getServerBoostStreamQualityMarketingResolution(GuildBoostingMarketingTierCards) {
   const obj = { location: GuildBoostingMarketingTierCards };
   return config.getConfig(obj).streamQualityMarketingResolution;
-};
+}

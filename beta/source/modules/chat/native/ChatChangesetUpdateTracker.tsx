@@ -1,16 +1,16 @@
-// Module ID: 10029
-// Function ID: 10030
+// Module ID: 10110
+// Function ID: 10111
 // Name: ChatChangesetUpdateTracker
 // Dependencies: [2]
 // Exports: getAndIncrementChangesetIdForChat, getChangesetIdForChat
 
-// Module 10029 (ChatChangesetUpdateTracker)
+// Module 10110 (ChatChangesetUpdateTracker)
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
 let result = size.fileFinishedImporting("modules/chat/native/ChatChangesetUpdateTracker.tsx");
 
-export const getAndIncrementChangesetIdForChat = function getAndIncrementChangesetIdForChat(arg0) {
+export function getAndIncrementChangesetIdForChat(arg0) {
   let num = weakMap.get(arg0);
   const obj = weakMap;
   if (num == null) {
@@ -19,8 +19,8 @@ export const getAndIncrementChangesetIdForChat = function getAndIncrementChanges
   const sum = num + 1;
   const result = obj.set(arg0, sum);
   return sum;
-};
-export const getChangesetIdForChat = function getChangesetIdForChat(current) {
+}
+export function getChangesetIdForChat(current) {
   let num = 0;
   if (null != current) {
     let num2 = weakMap.get(current);
@@ -30,4 +30,4 @@ export const getChangesetIdForChat = function getChangesetIdForChat(current) {
     num = num2;
   }
   return num;
-};
+}

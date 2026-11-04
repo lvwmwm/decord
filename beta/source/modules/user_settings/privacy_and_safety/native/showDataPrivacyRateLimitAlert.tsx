@@ -1,17 +1,17 @@
-// Module ID: 16182
-// Function ID: 16183
+// Module ID: 16760
+// Function ID: 16761
 // Name: showDataPrivacyRateLimitAlert
-// Dependencies: [5940, 1128, 2]
+// Dependencies: [5958, 1113, 2]
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 16182 (showDataPrivacyRateLimitAlert)
-import intl3 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
+// Module 16760 (showDataPrivacyRateLimitAlert)
+import intl3 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/showDataPrivacyRateLimitAlert.tsx");
 
-export const showDataPrivacyRateLimitAlert = function showDataPrivacyRateLimitAlert(message) {
+export function showDataPrivacyRateLimitAlert(message) {
   let intl;
   let intl2;
   const obj = { title: intl.string(intl3.t["43LbVL"]), body: message, confirmText: intl2.string(intl3.t.BddRzS) };
@@ -20,4 +20,4 @@ export const showDataPrivacyRateLimitAlert = function showDataPrivacyRateLimitAl
   intl = intl3.intl;
   intl2 = intl3.intl;
   show(obj);
-};
+}

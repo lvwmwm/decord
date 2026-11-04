@@ -1,24 +1,24 @@
-// Module ID: 12853
-// Function ID: 12854
+// Module ID: 13301
+// Function ID: 13302
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 11156, 502, 4915, 4877, 4935, 5034, 1087, 4921, 1097, 558, 576, 4941, 573, 1128, 11220, 11221, 7522, 2]
+// Dependencies: [19, 11459, 502, 4926, 4885, 4946, 5045, 1072, 4932, 1082, 563, 4952, 1113, 11519, 11520, 7563, 2]
+// Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12853 (AutomodQuarantineUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import intl4 from "intl" /* 1128 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4941 */;
-import openUserSettings2 from "openUserSettings" /* 7522 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11221 */;
+// Module 13301 (AutomodQuarantineUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import intl4 from "intl" /* 1113 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4952 */;
+import openUserSettings2 from "openUserSettings" /* 7563 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11520 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11156 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11459 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,47 +29,9 @@ let c9;
 ({ Permissions: c9, UserSettingsSections: c10 } = Constants);
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let closure_12 = UserSettingsConstants.ProfileCustomizationSubsection;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserHasAutomodQuarantinedProfile(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AuthenticationStore, ];
-    items[1] = GuildMemberStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      if (null == closure_0) {
-        return false;
-      } else {
-        const id = AuthenticationStore.getId();
-        const obj = AutomodPermissionUtils;
-        return obj.hasAutomodQuarantinedProfile(GuildMemberStore.getMember(tmp, id));
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(573);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useCurrentUserHasAutomodQuarantinedProfile(arg0) {
+const result = size.fileFinishedImporting("modules/guild_automod/AutomodQuarantineUtils.tsx");
+
+export function useCurrentUserHasAutomodQuarantinedProfile(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");
@@ -84,104 +46,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrent
       return obj.hasAutomodQuarantinedProfile(GuildMemberStore.getMember(tmp, id));
     }
   }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAutomodProfileQuarantineErrors(arg0) {
-  let closure_0;
-  let first;
-  let tmp10;
-  let tmp9;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AuthenticationStore, , , ];
-    items[1] = GuildMemberStore;
-    items[2] = SelectedGuildStore;
-    const tmp8 = GuildStore;
-    items[3] = GuildStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let guildId = closure_0;
-      const tmp = closure_0;
-      if (closure_0 == null) {
-        guildId = SelectedGuildStore.getGuildId();
-      }
-      const obj = { nick: "Array", bio: "Reflect" };
-      const guild = GuildStore.getGuild(guildId);
-      if (null != guild) {
-        if (null != guildId) {
-          const member = GuildMemberStore.getMember(guildId, AuthenticationStore.getId());
-          let flags;
-          const getAutomodQuarantinedProfileFlags = AutomodPermissionUtils.getAutomodQuarantinedProfileFlags;
-          AutomodPermissionUtils;
-          if (member != null) {
-            flags = member.flags;
-          }
-          const automodQuarantinedProfileFlags = getAutomodQuarantinedProfileFlags(flags);
-          if (0 !== automodQuarantinedProfileFlags.size) {
-            const tmp11 = GuildMemberFlags;
-            if (automodQuarantinedProfileFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
-              let items1;
-              if (null == tmp) {
-                const intl2 = tmp8(1128).intl;
-                const formatToPlainString = intl2.formatToPlainString;
-                let str = guild.name;
-                const WBUh3O = tmp8(1128).t.WBUh3O;
-                if (str == null) {
-                  str = "";
-                }
-                const obj2 = { guildName: str };
-                const items = [formatToPlainString(WBUh3O, obj2)];
-                items1 = items;
-              } else {
-                const intl = tmp8(1128).intl;
-                items1 = [intl.string(intl4.t.EPZCrM)];
-              }
-              obj.nick = items1;
-            }
-            if (automodQuarantinedProfileFlags.has(tmp11.AUTOMOD_QUARANTINED_BIO)) {
-              const intl3 = tmp8(1128).intl;
-              const items2 = [intl3.string(intl4.t.dZh1vz)];
-              obj.bio = items2;
-            }
-          }
-          return obj;
-        }
-      }
-      return obj;
-    };
-    let items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp10 = items1;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult = tmp(573);
-  return tmpResult.useStateFromStoresObject(first, tmp9, tmp10);
-}) : (function useGuildAutomodProfileQuarantineErrors(arg0) {
-  let closure_0;
-  _require = arg0;
+}
+export function useGuildAutomodProfileQuarantineErrors(id) {
+  _require = id;
   let obj = require("useStateFromStores");
   let items = [AuthenticationStore, GuildMemberStore, SelectedGuildStore, GuildStore];
-  let items1 = [arg0];
+  let items1 = [id];
   return obj.useStateFromStoresObject(items, () => {
-    let guildId = closure_0;
-    const tmp = closure_0;
-    if (closure_0 == null) {
+    let guildId = id;
+    const tmp = id;
+    if (id == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "Reflect" };
+    const obj = { nick: "flexDirection", bio: "createStyles" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {
@@ -198,10 +75,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
           if (automodQuarantinedProfileFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
             let items1;
             if (null == tmp) {
-              const intl2 = tmp8(1128).intl;
+              const intl2 = tmp8(1113).intl;
               const formatToPlainString = intl2.formatToPlainString;
               let str = guild.name;
-              const WBUh3O = tmp8(1128).t.WBUh3O;
+              const WBUh3O = tmp8(1113).t.WBUh3O;
               if (str == null) {
                 str = "";
               }
@@ -209,13 +86,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
               const items = [formatToPlainString(WBUh3O, obj2)];
               items1 = items;
             } else {
-              const intl = tmp8(1128).intl;
+              const intl = tmp8(1113).intl;
               items1 = [intl.string(intl4.t.EPZCrM)];
             }
             obj.nick = items1;
           }
           if (automodQuarantinedProfileFlags.has(tmp11.AUTOMOD_QUARANTINED_BIO)) {
-            const intl3 = tmp8(1128).intl;
+            const intl3 = tmp8(1113).intl;
             const items2 = [intl3.string(intl4.t.dZh1vz)];
             obj.bio = items2;
           }
@@ -225,128 +102,23 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
     }
     return obj;
   }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenFixQuarantinedProfileModal(guildId) {
-  let first;
-  let scrollPosition;
-  let tmp11;
-  let tmp12;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  const tmp = guildId;
-  let obj = guildId(scrollPosition[11]);
-  const cResult = obj.c(17);
-  guildId = guildId.guildId;
-  scrollPosition = guildId.scrollPosition;
-  const analyticsLocations = guildId.analyticsLocations;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function u() {
-      return GuildStore.getGuild(guildId);
-    };
-    const items1 = [guildId];
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(scrollPosition[13]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [PermissionStore];
-    cResult[4] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] !== stateFromStores) {
-    class O {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
-        return canResult;
-      }
-    }
-    const items3 = [stateFromStores];
-    cResult[5] = stateFromStores;
-    cResult[6] = O;
-    cResult[7] = items3;
-    tmp12 = items3;
-    tmp11 = O;
-  } else {
-    class O {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
-        return canResult;
-      }
-    }
-    tmp12 = cResult[7];
-  }
-  const tmpResult3 = tmp(scrollPosition[13]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp11, tmp12);
-  const tmpResult4 = tmp(scrollPosition[15]);
-  const isEligibleForUserProfileWYSIWYGEditing = tmpResult4.useIsEligibleForUserProfileWYSIWYGEditing("AutomodQuarantineUtils");
-  if (cResult[8] === analyticsLocations) {
-    class O {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
-        return canResult;
-      }
-    }
-  }
-  class N {
-    constructor() {
-      if (null != stateFromStores) {
-        let USER_PROFILE;
-        const PROFILE_CUSTOMIZATION = constants2.PROFILE_CUSTOMIZATION;
-        if (stateFromStores1) {
-          const obj = GuildIdentityActionCreators;
-          const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
-          USER_PROFILE = tmp13;
-        } else {
-          USER_PROFILE = tmp12.USER_PROFILE;
-        }
-        const obj2 = { subsection: USER_PROFILE, scrollPosition };
-        const openUserSettings = openUserSettings2.openUserSettings;
-        ProfileCustomizationNavigationStore.setState(obj2);
-        const obj3 = { screen: PROFILE_CUSTOMIZATION };
-        openUserSettings(obj3);
-      }
-    }
-  }
-  cResult[8] = analyticsLocations;
-  cResult[9] = stateFromStores1;
-  cResult[10] = stateFromStores;
-  cResult[11] = isEligibleForUserProfileWYSIWYGEditing;
-  cResult[12] = scrollPosition;
-  cResult[13] = N;
-}) : (function useOpenFixQuarantinedProfileModal(guildId) {
+}
+export function useOpenFixQuarantinedProfileModal(guildId) {
   guildId = guildId.guildId;
   const scrollPosition = guildId.scrollPosition;
   const analyticsLocations = guildId.analyticsLocations;
-  let obj = guildId(scrollPosition[13]);
+  let obj = guildId(scrollPosition[10]);
   const items = [GuildStore];
   const items1 = [guildId];
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
-  let obj2 = guildId(scrollPosition[13]);
+  let obj2 = guildId(scrollPosition[10]);
   const items2 = [PermissionStore];
   const items3 = [stateFromStores];
   const stateFromStores1 = obj2.useStateFromStores(items2, () => {
     const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
     return canResult;
   }, items3);
-  let obj3 = guildId(scrollPosition[15]);
+  let obj3 = guildId(scrollPosition[13]);
   const items4 = [stateFromStores1, scrollPosition, analyticsLocations, stateFromStores, obj3.useIsEligibleForUserProfileWYSIWYGEditing("AutomodQuarantineUtils")];
   const items5 = [
     stateFromStores.useCallback(() => {
@@ -370,9 +142,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenFix
     stateFromStores1
   ];
   return items5;
-});
-const result = size.fileFinishedImporting("modules/guild_automod/AutomodQuarantineUtils.tsx");
-
-export const useCurrentUserHasAutomodQuarantinedProfile = tmp3;
-export const useGuildAutomodProfileQuarantineErrors = tmp4;
-export const useOpenFixQuarantinedProfileModal = tmp5;
+}

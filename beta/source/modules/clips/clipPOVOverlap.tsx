@@ -1,21 +1,21 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15880
+// Function ID: 15881
 // Name: clipPOVOverlap
-// Dependencies: [8180, 1087, 1405, 15334, 2]
+// Dependencies: [8214, 1072, 1396, 15881, 2]
 // Exports: getClipAttachmentPOVWindow, getClipPOVOverlapMilliseconds, getClipPOVWindow
 
-// Module 15333 (clipPOVOverlap)
-import Constants from "Constants" /* 1087 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import ClipsConstants from "ClipsConstants" /* 8180 */;
-import getPOVExportTargetDefault from "getPOVExportTarget" /* 15334 */;
+// Module 15880 (clipPOVOverlap)
+import Constants from "Constants" /* 1072 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import ClipsConstants from "ClipsConstants" /* 8214 */;
+import getPOVExportTargetDefault from "getPOVExportTarget" /* 15881 */;
 import size from "module_2" /* 2 */;
 
 const ClipType = ClipsConstants.ClipType;
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 const result = size.fileFinishedImporting("modules/clips/clipPOVOverlap.tsx");
 
-export const getClipPOVWindow = function getClipPOVWindow(type) {
+export function getClipPOVWindow(type) {
   if (type.type === ClipType.CLIP) {
     if (null != type.applicationId) {
       if (null != type.syncTimestamp) {
@@ -23,8 +23,8 @@ export const getClipPOVWindow = function getClipPOVWindow(type) {
       }
     }
   }
-};
-export const getClipAttachmentPOVWindow = function getClipAttachmentPOVWindow(nextResult) {
+}
+export function getClipAttachmentPOVWindow(nextResult) {
   let num = nextResult.flags;
   const hasFlag = FlagUtils.hasFlag;
   FlagUtils;
@@ -45,8 +45,8 @@ export const getClipAttachmentPOVWindow = function getClipAttachmentPOVWindow(ne
       }
     }
   }
-};
-export const getClipPOVOverlapMilliseconds = function getClipPOVOverlapMilliseconds(applicationId, nextResult1) {
+}
+export function getClipPOVOverlapMilliseconds(applicationId, nextResult1) {
   if (applicationId.applicationId === nextResult1.applicationId) {
     const _Math = Math;
     const _Math2 = Math;
@@ -58,4 +58,4 @@ export const getClipPOVOverlapMilliseconds = function getClipPOVOverlapMilliseco
     }
     return tmp4;
   }
-};
+}

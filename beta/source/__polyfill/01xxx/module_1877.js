@@ -1,40 +1,56 @@
 // Module ID: 1877
 // Function ID: 1878
-// Dependencies: [19, 17, 21, 1852]
+// Dependencies: [19, 21, 1869, 1870, 1875, 1842, 1868]
 // Exports: default
 
 // Module 1877
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 17 */;
+import KeyboardController2 from "KeyboardController" /* 1842 */;
+import _modDef1869 from "module_1869" /* 1869 */;
+import _modDef1870 from "module_1870" /* 1870 */;
 
-let Platform;
-let TouchableOpacity;
-let c3;
-let closure_4;
-const useMemo = react2.useMemo;
-({ Platform, TouchableNativeFeedback: c3, TouchableOpacity, View: closure_4 } = react_native);
+const useCallback = react2.useCallback;
 const jsx = Fragment.jsx;
 
-export default function _default(disabled) {
-  let accessibilityHint;
-  let accessibilityLabel;
+export default function _default(icon) {
+  let button;
   let children;
+  let disabled;
   let onPress;
+  let rippleRadius;
   let style;
-  let testID;
-  let theme;
-  disabled = disabled.disabled;
-  let num = disabled.rippleRadius;
-  ({ children, onPress, accessibilityLabel, accessibilityHint, testID } = disabled);
-  if (num === undefined) {
-    num = 18;
+  ({ children, onPress } = icon);
+  ({ disabled, button } = icon);
+  ({ rippleRadius, style } = icon);
+  if (button === undefined) {
+    const tmp = importDefault;
+    button = _modDef1869;
   }
-  ({ style, theme } = disabled);
-  const obj = disabled(num[3]);
-  const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
-  const items = [disabled];
-  const items1 = [keyboardState, num, theme];
-  const tmp2 = theme(() => ({ disabled }), items);
-  return <keyboardState accessibilityHint={accessibilityHint} accessibilityLabel={accessibilityLabel} accessibilityRole="button" accessibilityState={tmp2} background={theme(() => _false.Ripple(theme[keyboardState].ripple, true, num), items1)} style={style} testID={testID} onPress={onPress}><closure_4 style={style}>{children}</closure_4></keyboardState>;
+  icon = icon.icon;
+  if (icon === undefined) {
+    icon = _modDef1870;
+  }
+  const obj = onPress(1875);
+  const toolbarContext = obj.useToolbarContext();
+  const theme = toolbarContext.theme;
+  const tmp5 = onPress;
+  if (disabled == null) {
+    disabled = toolbarContext.isPrevDisabled;
+  }
+  const items = [onPress];
+  const tmp8 = useCallback((isDefaultPrevented) => {
+    if (onPress != null) {
+      tmp(isDefaultPrevented);
+    }
+    if (!isDefaultPrevented.isDefaultPrevented()) {
+      const KeyboardController = KeyboardController2.KeyboardController;
+      KeyboardController.setFocusTo("prev");
+    }
+  }, items);
+  if (children == null) {
+    const obj3 = { disabled, theme, type: "prev" };
+    children = tmp9(icon, obj3);
+  }
+  return <button accessibilityHint="Moves focus to the previous field" accessibilityLabel="Previous" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={tmp5(1868).TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS} theme={theme} onPress={tmp8}>{children}</button>;
 };

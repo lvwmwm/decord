@@ -1,31 +1,19 @@
 // Module ID: 5293
 // Function ID: 5294
-// Dependencies: [78, 80, 65]
+// Dependencies: []
+// Exports: normalizeSnapPoint
 
 // Module 5293
-import pointsDiffer_mod from "pointsDiffer" /* 78 */;
-import processColorArray_mod from "processColorArray" /* 80 */;
-import module_65 from "module_65" /* 65 */;
+const fn = function n(str, arg1) {
+  let result = str;
+  if (typeof str === "string") {
+    const _Number = Number;
+    result = Number(str.split("%")[0]) * arg1 / 100;
+  }
+  return Math.max(0, arg1 - result);
+};
+fn.__closure = {};
+fn.__workletHash = 14612470006791;
+fn.__initData = { code: "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}" };
 
-let processColorArray;
-let pointsDiffer = pointsDiffer_mod;
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-const obj = { startPoint: { diff: pointsDiffer }, endPoint: { diff: pointsDiffer }, colors: { process: processColorArray }, locations: true, useAngle: true, angleCenter: { diff: pointsDiffer }, angle: true, borderRadii: true };
-pointsDiffer = pointsDiffer_mod;
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-processColorArray = processColorArray_mod;
-if ("default" in processColorArray) {
-  processColorArray = processColorArray.default;
-}
-pointsDiffer = pointsDiffer_mod;
-if ("default" in pointsDiffer) {
-  pointsDiffer = pointsDiffer.default;
-}
-const obj2 = { uiViewClassName: "RNLinearGradient", validAttributes: obj };
-
-export default module_65.get("RNLinearGradient", () => obj2);
-export const __INTERNAL_VIEW_CONFIG = obj2;
+export const normalizeSnapPoint = fn;

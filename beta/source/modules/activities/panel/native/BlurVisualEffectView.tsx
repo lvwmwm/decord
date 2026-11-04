@@ -1,47 +1,28 @@
-// Module ID: 18503
-// Function ID: 18504
+// Module ID: 19140
+// Function ID: 19141
 // Name: BlurVisualEffectView
-// Dependencies: [19, 17, 1087, 21, 5000, 587, 558, 576, 5284, 5618, 2]
+// Dependencies: [19, 17, 1072, 21, 5011, 575, 5596, 5600, 2]
 
-// Module 18503 (BlurVisualEffectView)
+// Module 19140 (BlurVisualEffectView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import useToken from "useToken" /* 5284 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import useToken from "useToken" /* 5596 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5600 */;
 import react from "react" /* 19 */;
-import ColorUtils from "ColorUtils" /* 5000 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
 import size from "module_2" /* 2 */;
 
-let tmp3;
-const VisualEffectViewDefault = tmp3(5618);
 const StyleSheet = react_native.StyleSheet;
 const ThemeTypes = Constants.ThemeTypes;
 const jsx = Fragment.jsx;
 const tintColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.24);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BlurVisualEffectView() {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = useToken;
-  const token = obj2.useToken(nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, ThemeTypes.DARK);
-  if (cResult[0] !== token) {
-    const tmp9 = jsx(VisualEffectViewDefault, { style: StyleSheet.absoluteFill, blurStyle: "default", tintColor, android_fallbackColor: token, blurAmount: 0.24, blurTheme: "dark" });
-    cResult[0] = token;
-    cResult[1] = tmp9;
-    tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function BlurVisualEffectView() {
+const memoResult = react.memo(function BlurVisualEffectView() {
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, ThemeTypes.DARK);
   return jsx(VisualEffectViewDefault, { style: StyleSheet.absoluteFill, blurStyle: "default", tintColor, android_fallbackColor: token, blurAmount: 0.24, blurTheme: "dark" });
-}));
+});
 const result = size.fileFinishedImporting("modules/activities/panel/native/BlurVisualEffectView.tsx");
 
 export default memoResult;

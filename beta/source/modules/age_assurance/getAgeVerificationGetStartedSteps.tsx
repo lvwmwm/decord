@@ -1,14 +1,14 @@
-// Module ID: 8123
-// Function ID: 8124
+// Module ID: 8159
+// Function ID: 8160
 // Name: getAgeVerificationGetStartedSteps
-// Dependencies: [1087, 1128, 7915, 2067, 6689, 2]
+// Dependencies: [1072, 1113, 7955, 2061, 6729, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 8123 (getAgeVerificationGetStartedSteps)
-import Constants from "Constants" /* 1087 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7915 */;
+// Module 8159 (getAgeVerificationGetStartedSteps)
+import Constants from "Constants" /* 1072 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ let _require;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 let result = size.fileFinishedImporting("modules/age_assurance/getAgeVerificationGetStartedSteps.tsx");
 
-export const getAgeVerificationGetStartedSteps = function getAgeVerificationGetStartedSteps(modalSessionId) {
+export function getAgeVerificationGetStartedSteps(modalSessionId) {
   let intl;
   let intl2;
   let intl3;
@@ -50,4 +50,4 @@ export const getAgeVerificationGetStartedSteps = function getAgeVerificationGetS
   };
   items[2] = obj3;
   return items;
-};
+}

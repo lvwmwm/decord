@@ -1,11 +1,11 @@
-// Module ID: 9492
-// Function ID: 9493
+// Module ID: 9563
+// Function ID: 9564
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 6510, 2]
+// Dependencies: [5, 6550, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 9492 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 6510 */;
+// Module 9563 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 6550 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj = function _getLoadedStripe() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ obj = function _confirmCardPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ obj = function _confirmCardPayment() {
             throw error;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         }
       } catch (tmp16) {
@@ -218,14 +218,14 @@ obj = function _authenticateStripePaymentIntent() {
         return obj;
       }
     }
-    await "IconComponent";
+    await "HermesInternal";
     ({ client_secret: c0, payment_method_id: c1 } = closure_0);
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 const result = size.fileFinishedImporting("modules/payments/Stripe3DSChallenge.tsx");
 
-export const authenticateStripePaymentIntent = function authenticateStripePaymentIntent() {
+export function authenticateStripePaymentIntent() {
   return obj(...arguments);
-};
+}

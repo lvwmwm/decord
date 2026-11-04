@@ -1,19 +1,19 @@
-// Module ID: 14767
-// Function ID: 14768
+// Module ID: 15311
+// Function ID: 15312
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9552, 1394, 1087, 9559, 14768, 7566, 7551, 14769, 7522, 2]
+// Dependencies: [9626, 1385, 1072, 9633, 15312, 7607, 7593, 15313, 7563, 2]
 // Exports: getButtonActionHandler
 
-// Module 14767 (PremiumMarketingButtonActions)
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import openUserSettings from "openUserSettings" /* 7522 */;
-import ProductIds from "ProductIds" /* 7551 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7566 */;
-import cta_button from "cta_button" /* 9559 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 14768 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 14769 */;
-import PromotionsStore from "PromotionsStore" /* 9552 */;
-import Constants from "Constants" /* 1087 */;
+// Module 15311 (PremiumMarketingButtonActions)
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import openUserSettings from "openUserSettings" /* 7563 */;
+import ProductIds from "ProductIds" /* 7593 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7607 */;
+import cta_button from "cta_button" /* 9633 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 15312 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 15313 */;
+import PromotionsStore from "PromotionsStore" /* 9626 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -24,7 +24,7 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ AnalyticsSections: hasOwnProperty, AnalyticsObjects: metroRequire, AnalyticsObjectTypes: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
 let result = size.fileFinishedImporting("modules/premium/premium_marketing/native/PremiumMarketingButtonActions.tsx");
 
-export const getButtonActionHandler = function getButtonActionHandler(arg0) {
+export function getButtonActionHandler(arg0) {
   let TIER_2;
   let analyticsLocations;
   let buttonAction;
@@ -101,4 +101,4 @@ export const getButtonActionHandler = function getButtonActionHandler(arg0) {
       const tmp = openPremiumPlanSelectionActionSheetDefault(obj);
     };
   }
-};
+}

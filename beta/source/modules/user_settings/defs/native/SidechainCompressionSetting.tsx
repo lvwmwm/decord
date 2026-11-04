@@ -1,49 +1,20 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 17249
+// Function ID: 17250
 // Name: SidechainCompressionSetting
-// Dependencies: [2014, 8364, 5750, 558, 576, 504, 11240, 1128, 5883, 2]
+// Dependencies: [2006, 8432, 5768, 504, 11540, 1113, 5915, 2]
 
-// Module 16649 (SidechainCompressionSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import Constants from "Constants" /* 5750 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5883 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17249 (SidechainCompressionSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import Constants from "Constants" /* 5768 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5915 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const Features = Constants.Features;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSidechainCompressionSettingValue() {
-  let sidechainCompression;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function n() {
-      return sidechainCompression.getSidechainCompression();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSidechainCompressionSettingValue() {
-  let sidechainCompression;
-  const items = [MediaEngineStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -53,7 +24,12 @@ let obj = {
   usePredicate() {
     return MediaEngineStore.supports(Features.SIDECHAIN_COMPRESSION);
   },
-  useValue: tmp2,
+  useValue: function useSidechainCompressionSettingValue() {
+    let sidechainCompression;
+    const items = [MediaEngineStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
+  },
   onValueChange(arg0) {
     const obj = AudioActionCreatorsDefault;
     return obj.setSidechainCompression(arg0);

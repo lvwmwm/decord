@@ -1,21 +1,21 @@
-// Module ID: 10600
-// Function ID: 10601
+// Module ID: 10682
+// Function ID: 10683
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7568, 1392, 1087, 7557, 3, 10487, 5631, 1267, 584, 7573, 4819, 2033, 10601, 1281, 2]
+// Dependencies: [5, 19, 7609, 1383, 1072, 7598, 3, 10567, 5612, 1252, 572, 7614, 4827, 2026, 10683, 1266, 2]
 // Exports: default
 
-// Module 10600 (useMobilePurchaseSKU)
+// Module 10682 (useMobilePurchaseSKU)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 7557 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7568 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 7598 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7609 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, v3;
+let closure_3, orderRecord, v3;
 
 let closure_5 = NativeCheckoutStore.useNativeCheckoutStoreOrNull;
 const CurrencyCodes = Constants.CurrencyCodes;
@@ -57,10 +57,27 @@ export default function useMobilePurchaseSKU(skuId) {
   const tmp6 = onPurchaseComplete((setPurchaseInFlight) => setPurchaseInFlight.setPurchaseInFlight);
   let closure_16 = tmp6;
   let tmp7 = onPurchaseComplete((contextMetadata) => contextMetadata.contextMetadata.loadId);
-  const tmp8 = undefined !== currentUser && currentUser.isStaff();
+  const tmp8 = onPurchaseComplete((orderRecord) => {
+    let googleOfferId = null;
+    if (null != orderId) {
+      orderRecord = orderRecord.orderRecord;
+      let id;
+      if (orderRecord != null) {
+        id = orderRecord.id;
+      }
+      googleOfferId = null;
+      if (id === tmp) {
+        const orderRecord2 = orderRecord.orderRecord;
+        googleOfferId = orderRecord2.getGoogleOfferId();
+      }
+    }
+    return googleOfferId;
+  });
   let closure_17 = tmp8;
+  const tmp9 = undefined !== currentUser && currentUser.isStaff();
+  let closure_18 = tmp9;
   let flag2;
-  const tmp9 = platformSkuId(tmp[8])(() => {
+  const tmp10 = platformSkuId(tmp[8])(() => {
     const obj = skuId(analyticsLocations[9]);
     return obj.getNewAnalyticsLoadId();
   });
@@ -72,7 +89,7 @@ export default function useMobilePurchaseSKU(skuId) {
   }
   if (null == analyticsLoadId) {
     if (tmp7 == null) {
-      tmp7 = tmp9;
+      tmp7 = tmp10;
     }
     analyticsLoadId = tmp7;
   }
@@ -122,7 +139,7 @@ export default function useMobilePurchaseSKU(skuId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -145,7 +162,7 @@ export default function useMobilePurchaseSKU(skuId) {
                 }
               } else {
                 const obj11 = platformSkuId(analyticsLocations[10]);
-                obj11.unsubscribe("GPLAY_PURCHASE_VERIFIED", closure_1_19);
+                obj11.unsubscribe("GPLAY_PURCHASE_VERIFIED", closure_1_20);
                 if (null != orderId) {
                   if (skuId.isActivePurchase) {
                     if (skuId.billingResult === tmp50.USER_CANCELED) {
@@ -163,7 +180,7 @@ export default function useMobilePurchaseSKU(skuId) {
               }
               closure_1_8();
               v3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c5) {
             c4 = 0;
@@ -225,7 +242,7 @@ export default function useMobilePurchaseSKU(skuId) {
       obj3.unsubscribe("GPLAY_PURCHASE_VERIFICATION_FAILED", callback1);
     };
   }, items4);
-  const items5 = [skuId, platformSkuId, tmp8, flag2, handlePremiumPurchase, onPurchaseComplete, onPurchaseError, freePurchaseCallback, analyticsLoadId, analyticsLocations, analyticsData, giftParams, callback2, flag, tmp4, tmp5, tmp6, orderId];
+  const items5 = [skuId, platformSkuId, tmp9, flag2, handlePremiumPurchase, onPurchaseComplete, onPurchaseError, freePurchaseCallback, analyticsLoadId, analyticsLocations, analyticsData, giftParams, callback2, flag, tmp4, tmp5, tmp6, orderId, tmp8];
   return analyticsData.useCallback(analyticsLoadId(function*(arg0, value) {
     let closure_2;
     let obj11;
@@ -243,7 +260,7 @@ export default function useMobilePurchaseSKU(skuId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -284,7 +301,7 @@ export default function useMobilePurchaseSKU(skuId) {
                 if (closure_16 != null) {
                   closure_16(true);
                 }
-                const tmp49 = closure_17;
+                const tmp49 = closure_18;
                 if (tmp49) {
                   if (true) {
                     if (true) {
@@ -389,9 +406,9 @@ export default function useMobilePurchaseSKU(skuId) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
-        const obj15 = { productId: closure_130_1, skuId: closure_130_0, isOneTimePurchase: true, analyticsLoadId: closure_130_3, analyticsLocations: closure_130_2, analyticsData: closure_130_4, isGift: closure_130_18, giftInfoOptions: options, onPurchaseError: closure_130_21 };
+        const obj15 = { productId: closure_130_1, skuId: closure_130_0, isOneTimePurchase: true, analyticsLoadId: closure_130_3, analyticsLocations: closure_130_2, analyticsData: closure_130_4, isGift: closure_130_19, giftInfoOptions: options, googleOfferId: closure_130_17, onPurchaseError: closure_130_22 };
         options = undefined;
         const tmp62 = closure_130_12;
         if (closure_130_9 != null) {
@@ -401,11 +418,11 @@ export default function useMobilePurchaseSKU(skuId) {
         c6 = 1;
         const obj16 = { value: tmp62(obj15), done: false };
         return obj16;
-      } catch (tmp79) {
-        closure_3 = tmp79;
+      } catch (tmp80) {
+        closure_3 = tmp80;
         if (0 === c4) {
           c6 = 3;
-          throw tmp79;
+          throw tmp80;
         } else if (1 === c4) {
           c5 = 1;
         } else if (2 === c4) {

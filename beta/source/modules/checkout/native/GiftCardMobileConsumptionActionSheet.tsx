@@ -1,19 +1,19 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7573
+// Function ID: 7574
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 4852, 21, 5003, 587, 558, 576, 1633, 5242, 7533, 1128, 2242, 5266, 5276, 6009, 5297, 2]
+// Dependencies: [19, 17, 4860, 21, 5014, 575, 1625, 5258, 5272, 6027, 7574, 5624, 1113, 2238, 5634, 2]
+// Exports: default
 
-// Module 7532 (GiftCardMobileConsumptionActionSheet)
+// Module 7573 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import _modDef2242 from "module_2242" /* 2242 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import nativeDefault from "native" /* 575 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import _modDef2238 from "module_2238" /* 2238 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, dependencyMap, importDefault;
@@ -34,252 +34,9 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { alignSelf: "stretch", alignItems: "center", paddingTop: nativeDefault.space.PX_12 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
-  let closure_2;
-  let closure_3;
-  let items2;
-  let ref;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  const tmp = markAsDismissed;
-  let obj = markAsDismissed(576);
-  const cResult = obj.c(34);
-  markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp4 = closure_8();
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  importDefault = react.useRef(false);
-  dependencyMap = react.useRef(markAsDismissed);
-  if (cResult[0] !== markAsDismissed) {
-    class S {
-      constructor() {
-        closure_2.current = markAsDismissed;
-      }
-    }
-    const items = [markAsDismissed];
-    cResult[0] = markAsDismissed;
-    cResult[1] = S;
-    cResult[2] = items;
-    tmp7 = items;
-    tmp6 = S;
-  } else {
-    class S {
-      constructor() {
-        closure_2.current = markAsDismissed;
-      }
-    }
-    tmp7 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp6, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        closure_2.current = markAsDismissed;
-      }
-    }
-    const items1 = [];
-    cResult[3] = tmp11;
-    cResult[4] = items1;
-    tmp10 = items1;
-    tmp9 = tmp11;
-  } else {
-    class S {
-      constructor() {
-        closure_2.current = markAsDismissed;
-      }
-    }
-    tmp10 = cResult[4];
-  }
-  const effect1 = obj2.useEffect(tmp9, tmp10);
-  if (cResult[5] !== markAsDismissed) {
-    class S {
-      constructor() {
-        closure_2.current = markAsDismissed;
-      }
-    }
-    cResult[5] = markAsDismissed;
-    cResult[6] = tmp14;
-  } else {
-    class S {
-      constructor() {
-        closure_2.current = markAsDismissed;
-      }
-    }
-  }
-  react = tmp13;
-  if (cResult[7] !== tmp13) {
-    class A {
-      constructor() {
-        return tmp14(ContentDismissActionType.USER_DISMISS);
-      }
-    }
-    cResult[7] = tmp13;
-    cResult[8] = A;
-  } else {
-    class A {
-      constructor() {
-        return tmp14(ContentDismissActionType.USER_DISMISS);
-      }
-    }
-  }
-  if (cResult[9] !== bottom) {
-    class A {
-      constructor() {
-        return tmp14(ContentDismissActionType.USER_DISMISS);
-      }
-    }
-    tmp17[0] = bottom;
-    cResult[9] = bottom;
-    cResult[10] = tmp17;
-  } else {
-    class A {
-      constructor() {
-        return tmp14(ContentDismissActionType.USER_DISMISS);
-      }
-    }
-  }
-  if (cResult[11] === tmp4.container) {
-    let tmp18;
-    let tmp23;
-    let tmp27;
-    class A {
-      constructor() {
-        return tmp14(ContentDismissActionType.USER_DISMISS);
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const tmp19 = closure_6(tmp(7533).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
-      cResult[14] = tmp19;
-      tmp18 = tmp19;
-    } else {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    if (cResult[15] !== tmp4.illustration) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const obj3 = { style: tmp4.illustration, children: tmp18 };
-      cResult[15] = tmp4.illustration;
-      cResult[16] = closure_6(View, obj3);
-      const tmp22 = closure_6(View, obj3);
-    } else {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    const body = tmp4.body;
-    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const stringResult = obj4.string(_modDef2242.V3DI1E);
-      cResult[17] = stringResult;
-      tmp23 = stringResult;
-    } else {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    if (cResult[18] !== tmp4.body) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const obj5 = { variant: "text-md/medium", color: "text-default", style: body, children: tmp23 };
-      cResult[18] = tmp4.body;
-      cResult[19] = closure_6(tmp(5266).Text, obj5);
-      const tmp26 = closure_6(tmp(5266).Text, obj5);
-    } else {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const stringResult1 = obj6.string(_modDef2242.YZePWx);
-      cResult[20] = stringResult1;
-      tmp27 = stringResult1;
-    } else {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    if (cResult[21] !== tmp13) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      const obj7 = {
-        size: "lg",
-        variant: "secondary",
-        grow: true,
-        text: tmp27,
-        onPress() {
-              return tmp14(ContentDismissActionType.USER_DISMISS);
-            }
-      };
-      cResult[21] = tmp13;
-      cResult[22] = closure_6(tmp(5276).Button, obj7);
-      const tmp30 = closure_6(tmp(5276).Button, obj7);
-    } else {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    if (cResult[23] === tmp20) {
-      class A {
-        constructor() {
-          return tmp14(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    const obj8 = { spacing: nativeDefault.space.PX_16, children: items2 };
-    const Stack = tmp(6009).Stack;
-    items2 = [tmp20, tmp25, tmp29];
-    cResult[23] = tmp20;
-    cResult[24] = tmp25;
-    cResult[25] = tmp29;
-    cResult[26] = closure_7(Stack, obj8);
-    const tmp33 = closure_7(Stack, obj8);
-  }
-  const items3 = [tmp4.container, tmp16];
-  cResult[11] = tmp4.container;
-  cResult[12] = tmp16;
-  cResult[13] = items3;
-}) : (function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
+const result = size.fileFinishedImporting("modules/checkout/native/GiftCardMobileConsumptionActionSheet.tsx");
+
+export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   let Stack;
   let closure_2;
   let closure_3;
@@ -327,30 +84,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
   };
   obj2 = { style: items2, children: closure_7(Stack, obj3) };
   items2 = [tmp.container, { paddingBottom: bottom }];
-  BottomSheet = markAsDismissed(5297).BottomSheet;
+  BottomSheet = markAsDismissed(5272).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = markAsDismissed(6009).Stack;
+  Stack = markAsDismissed(6027).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7533).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7574).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2242.V3DI1E) };
-  const Text = markAsDismissed(5266).Text;
-  intl = markAsDismissed(1128).intl;
+  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2238.V3DI1E) };
+  const Text = markAsDismissed(5624).Text;
+  intl = markAsDismissed(1113).intl;
   items3[1] = closure_6(Text, obj5);
   const obj6 = {
     size: "lg",
     variant: "secondary",
     grow: true,
-    text: intl2.string(_modDef2242.YZePWx),
+    text: intl2.string(_modDef2238.YZePWx),
     onPress() {
       return closure_3(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = markAsDismissed(5276).Button;
-  intl2 = markAsDismissed(1128).intl;
+  const Button = markAsDismissed(5634).Button;
+  intl2 = markAsDismissed(1113).intl;
   items3[2] = closure_6(Button, obj6);
   return closure_6(BottomSheet, obj);
-});
-const result = size.fileFinishedImporting("modules/checkout/native/GiftCardMobileConsumptionActionSheet.tsx");
-
-export default tmp4;
+};

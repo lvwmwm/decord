@@ -1,28 +1,28 @@
-// Module ID: 15830
-// Function ID: 15831
+// Module ID: 16391
+// Function ID: 16392
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 4855, 5746, 4854, 1087, 1384, 15831, 15832, 1123, 5936, 4924, 1267, 584, 15748, 11425, 5191, 5941, 1128, 5695, 1388, 11495, 2]
+// Dependencies: [17, 4863, 5764, 4862, 1072, 1375, 16392, 16393, 1108, 5954, 4935, 1252, 572, 16298, 16299, 11726, 5207, 5959, 1113, 5712, 1379, 11798, 2]
 
-// Module 15830 (EmbeddedActivitiesNativeManager)
+// Module 16391 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import intl2 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ChatInputUtils from "ChatInputUtils" /* 5191 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5936 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11425 */;
-import activityWebViewController from "activityWebViewController" /* 11495 */;
-import react_nativeDefault from "react-native" /* 15831 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15832 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5712 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5954 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11726 */;
+import activityWebViewController from "activityWebViewController" /* 11798 */;
+import react_nativeDefault from "react-native" /* 16392 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 16393 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;
@@ -51,7 +51,7 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
     const self = this;
     super._initialize();
     const tmp2 = dependencyMap;
-    const ComponentDispatch = self(1123).ComponentDispatch;
+    const ComponentDispatch = self(1108).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(constants.OPEN_EMBEDDED_ACTIVITY, this.handleOpenEmbeddedActivity);
     const lifecycleSubscription = this.lifecycleSubscription;
     if (lifecycleSubscription != null) {
@@ -113,10 +113,10 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
         tmp16 = null != applicationId;
       }
       if (tmp16) {
-        tmp16 = thermalState >= tmp2(tmp3[13]).ThermalStates.SERIOUS;
+        tmp16 = thermalState >= tmp2(tmp3[14]).ThermalStates.SERIOUS;
       }
       if (tmp16) {
-        const tmp2Result2 = self(dependencyMap[14]);
+        const tmp2Result2 = self(dependencyMap[15]);
         const respondToSeriousThermalState = tmp2Result2.requestRespondToSeriousThermalState();
       }
     });

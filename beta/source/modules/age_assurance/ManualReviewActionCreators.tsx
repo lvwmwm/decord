@@ -1,16 +1,16 @@
-// Module ID: 8135
-// Function ID: 8136
+// Module ID: 8172
+// Function ID: 8173
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1087, 7448, 1104, 1297, 584, 7929, 7915, 7454, 2]
+// Dependencies: [5, 502, 1072, 7490, 1089, 1282, 572, 7969, 7955, 7496, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8135 (ManualReviewActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import Constants2 from "Constants" /* 7448 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
+// Module 8172 (ManualReviewActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import Constants2 from "Constants" /* 7490 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7969 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ obj = function _handleManualReviewCta() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -132,7 +132,7 @@ obj = function _handleManualReviewCta() {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (1 === c4) {
           c3 = 0;
@@ -187,11 +187,11 @@ export const ManualReviewStatus = obj;
 export function invalidateManualReviewCache() {
   c12 = null;
 }
-export const invalidateAgeVerificationCaches = function invalidateAgeVerificationCaches() {
+export function invalidateAgeVerificationCaches() {
   c12 = null;
   obj = DispatcherDefault;
   obj.dispatch({ type: "AGE_VERIFICATION_METHODS_V2_INVALIDATE" });
-};
-export const handleManualReviewCta = function handleManualReviewCta() {
+}
+export function handleManualReviewCta() {
   return obj(...arguments);
-};
+}

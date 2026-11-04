@@ -1,21 +1,21 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 11733
+// Function ID: 11734
 // Name: pendingFrameLaunch
 // Dependencies: [2]
 // Exports: consumePendingFrameLaunch, stashPendingFrameLaunch
 
-// Module 11432 (pendingFrameLaunch)
+// Module 11733 (pendingFrameLaunch)
 import size from "module_2" /* 2 */;
 
 let closure_0 = {};
 const result = size.fileFinishedImporting("modules/activities/utils/pendingFrameLaunch.tsx");
 
-export const stashPendingFrameLaunch = function stashPendingFrameLaunch(applicationId, arg1) {
+export function stashPendingFrameLaunch(applicationId, arg1) {
   closure_0[applicationId] = arg1;
-};
-export const consumePendingFrameLaunch = function consumePendingFrameLaunch(applicationId) {
+}
+export function consumePendingFrameLaunch(applicationId) {
   if (null != closure_0[applicationId]) {
     delete closure_0[applicationId];
     return closure_0[applicationId];
   }
-};
+}

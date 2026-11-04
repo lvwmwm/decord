@@ -1,19 +1,19 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7633
+// Function ID: 7634
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7596, 1406, 4906, 1087, 1297, 569, 1104, 584, 1257, 7598, 2]
+// Dependencies: [5, 7634, 1397, 4917, 1072, 1282, 559, 1089, 572, 1242, 7636, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7595 (ReferralTrialActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 7633 (ReferralTrialActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7596 */;
-import UserRecord from "UserRecord" /* 1406 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import Constants from "Constants" /* 1087 */;
-import Backoff from "Backoff" /* 569 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7634 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import Constants from "Constants" /* 1072 */;
+import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 
 let limit, userTrialOffer, userTrialOffers;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -277,7 +277,7 @@ obj = function _createReferralTrial() {
         obj7.sendClydeError(currentlySelectedChannelId, tmp40.body.code);
       }
     }
-    closure_0 = await "IconComponent";
+    closure_0 = await "HermesInternal";
     let fromServer = null;
     if (null != closure_0.body) {
       fromServer = closure_130_4.createFromServer(closure_0.body);
@@ -308,7 +308,7 @@ obj = function _resolveReferralTrialOffer() {
       const obj7 = { type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId };
       const obj5 = closure_131_1(closure_131_2[8]);
       obj5.dispatch(obj7);
-      userTrialOffer = await "IconComponent";
+      userTrialOffer = await "HermesInternal";
       let fromServer = null;
       if (null != userTrialOffer.body) {
         fromServer = closure_131_4.createFromServer(userTrialOffer.body);
@@ -369,13 +369,13 @@ let result1 = size.fileFinishedImporting("modules/premium/ReferralTrialActionCre
 
 export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED", REFERRER_REWARD_GRANTED: 4, [4]: "REFERRER_REWARD_GRANTED" };
 export const CreateReferralStatus = obj;
-export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers() {
+export function fetchReferralEligibleUsers() {
   return obj(...arguments);
-};
-export const maybeFetchRecipientEligibility = function maybeFetchRecipientEligibility() {
+}
+export function maybeFetchRecipientEligibility() {
   return obj(...arguments);
-};
-export const fetchReferralsRemaining = function fetchReferralsRemaining() {
+}
+export function fetchReferralsRemaining() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_START" });
   const HTTP = HTTPUtils.HTTP;
@@ -455,13 +455,13 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
       obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" });
     }
   });
-};
-export const createReferralTrials = function createReferralTrials() {
+}
+export function createReferralTrials() {
   return obj(...arguments);
-};
-export const createReferralTrial = function createReferralTrial() {
+}
+export function createReferralTrial() {
   return obj(...arguments);
-};
-export const resolveReferralTrialOffer = function resolveReferralTrialOffer() {
+}
+export function resolveReferralTrialOffer() {
   return obj(...arguments);
-};
+}

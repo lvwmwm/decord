@@ -1,100 +1,55 @@
-// Module ID: 16138
-// Function ID: 16139
+// Module ID: 16716
+// Function ID: 16717
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 8364, 21, 1128, 558, 576, 16139, 11240, 16012, 2]
+// Dependencies: [19, 8432, 21, 1113, 16717, 11540, 16588, 2]
+// Exports: default
 
-// Module 16138 (SensitiveContentFiltersScreen)
+// Module 16716 (SensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
-import SettingLayoutDefault from "SettingLayout" /* 16012 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 16139 */;
+import intl5 from "intl" /* 1113 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
+import SettingLayoutDefault from "SettingLayout" /* 16588 */;
+import SettingsScreenNotices from "SettingsScreenNotices" /* 16717 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const SettingsScreenNotices = tmp(16139);
-function getContentCategory() {
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let items;
-  let items2;
-  const obj = { label: intl.string(intl5.t.GYpoAq), settings: items, subLabel: intl2.string(intl5.t.Wnojv1) };
-  intl = intl5.intl;
-  items = [, , ];
-  ({ EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1], EXPLICIT_MEDIA_FILTERS_GUILDS: arr[2] } = MobileUserSettings);
-  intl2 = intl5.intl;
-  const items1 = [obj, ];
-  const obj2 = { label: intl3.string(intl5.t["16/3Bi"]), settings: items2, subLabel: intl4.string(intl5.t.XgH9eh) };
-  intl3 = intl5.intl;
-  items2 = [, , ];
-  ({ GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1], GORE_MEDIA_FILTERS_GUILDS: arr3[2] } = MobileUserSettings);
-  intl4 = intl5.intl;
-  items1[1] = obj2;
-  return items1;
+const SettingsScreenNoticesDefault = SettingsScreenNotices;
+
+function SensitiveContentFiltersNotices() {
+  SettingsScreenNoticesDefault;
+  return <tmp isListHeader screen={SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS} />;
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const ListHeaderComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveContentFiltersNotices() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    SettingsScreenNoticesDefault;
-    const tmp8 = <tmp7 isListHeader screen={SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS} />;
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function SensitiveContentFiltersNotices() {
-  SettingsScreenNoticesDefault;
-  return <tmp isListHeader screen={SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS} />;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsSensitiveContentFilters() {
-  let first;
-  let items;
-  let tmp12;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { sections: items, ListHeaderComponent };
-    const createList = tmp2(11240).createList;
-    items = [];
-    SettingBuilders;
-    HermesBuiltin.arraySpread(items, getContentCategory(), 0);
-    const list = createList(obj2);
-    cResult[0] = list;
-    first = list;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = jsx(SettingLayoutDefault, { node: first });
-    cResult[1] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[1];
-  }
-  return tmp12;
-}) : (function UserSettingsSensitiveContentFilters() {
-  const node = react.useMemo(() => {
-    let items;
-    const obj2 = { sections: items, ListHeaderComponent };
-    items = [...closure_1_6()];
-    const obj = SettingBuilders;
-    return obj.createList(obj2);
-  }, []);
-  return jsx(SettingLayoutDefault, { node });
-});
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");
 
-export default tmp2;
+export default function UserSettingsSensitiveContentFilters() {
+  let ListHeaderComponent;
+  const node = react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let items;
+    let items1;
+    let items2;
+    const obj = { sections: items1, ListHeaderComponent };
+    const obj2 = { label: intl.string(intl5.t.GYpoAq), settings: items, subLabel: intl2.string(intl5.t.Wnojv1) };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    intl = intl5.intl;
+    items = [, , ];
+    ({ EXPLICIT_MEDIA_FILTERS_FRIENDS_DMS: arr[0], EXPLICIT_MEDIA_FILTERS_NON_FRIENDS_DMS: arr[1], EXPLICIT_MEDIA_FILTERS_GUILDS: arr[2] } = MobileUserSettings);
+    intl2 = intl5.intl;
+    items1 = [obj2, ];
+    const obj3 = { label: intl3.string(intl5.t["16/3Bi"]), settings: items2, subLabel: intl4.string(intl5.t.XgH9eh) };
+    intl3 = intl5.intl;
+    items2 = [, , ];
+    ({ GORE_MEDIA_FILTERS_FRIENDS_DMS: arr3[0], GORE_MEDIA_FILTERS_NON_FRIENDS_DMS: arr3[1], GORE_MEDIA_FILTERS_GUILDS: arr3[2] } = MobileUserSettings);
+    intl4 = intl5.intl;
+    items1[1] = obj3;
+    return createList(obj);
+  }, []);
+  return jsx(SettingLayoutDefault, { node });
+};

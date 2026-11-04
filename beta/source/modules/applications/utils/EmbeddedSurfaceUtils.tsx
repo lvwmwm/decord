@@ -1,15 +1,15 @@
-// Module ID: 2031
-// Function ID: 2032
+// Module ID: 2024
+// Function ID: 2025
 // Name: EmbeddedSurfaceUtils
 // Dependencies: [2]
 // Exports: isEmbeddedApplication, supportsEmbeddedSurface
 
-// Module 2031 (EmbeddedSurfaceUtils)
+// Module 2024 (EmbeddedSurfaceUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/utils/EmbeddedSurfaceUtils.tsx");
 
-export const isEmbeddedApplication = function isEmbeddedApplication(application) {
+export function isEmbeddedApplication(application) {
   let items;
   if (null == application) {
     items = [];
@@ -29,8 +29,8 @@ export const isEmbeddedApplication = function isEmbeddedApplication(application)
     items = [];
   }
   return items.length > 0;
-};
-export const supportsEmbeddedSurface = function supportsEmbeddedSurface(embeddedSurfaces, arg1) {
+}
+export function supportsEmbeddedSurface(embeddedSurfaces, arg1) {
   let items;
   if (null == embeddedSurfaces) {
     items = [];
@@ -50,4 +50,4 @@ export const supportsEmbeddedSurface = function supportsEmbeddedSurface(embedded
     items = [];
   }
   return items.includes(arg1);
-};
+}

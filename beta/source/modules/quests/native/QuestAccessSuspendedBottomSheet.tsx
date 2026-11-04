@@ -1,68 +1,24 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 17097
+// Function ID: 17098
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 558, 576, 5242, 16499, 12901, 1128, 10887, 5276, 2]
+// Dependencies: [19, 21, 5258, 17096, 13348, 10837, 1113, 5634, 2]
+// Exports: default
 
-// Module 16500 (QuestAccessSuspendedBottomSheet)
+// Module 17097 (QuestAccessSuspendedBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import components_Button_Button from "components/Button/Button" /* 5276 */;
-import PromoSheet2 from "PromoSheet" /* 10887 */;
-import openAccountStanding from "openAccountStanding" /* 12901 */;
-import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 16499 */;
+import intl4 from "intl" /* 1113 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import components_Button_Button from "components/Button/Button" /* 5634 */;
+import PromoSheet2 from "PromoSheet" /* 10837 */;
+import openAccountStanding from "openAccountStanding" /* 13348 */;
+import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 17096 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestAccessSuspendedBottomSheet() {
-  let first;
-  let intl3;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(openQuestAccessSuspendedBottomSheet.ACTION_SHEET_KEY);
-      const obj2 = openAccountStanding;
-      obj2.openAccountStanding();
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl4.t.WfwodX);
-    const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(intl4.t.I27WXW);
-    cResult[1] = stringResult;
-    cResult[2] = stringResult1;
-    tmp6 = stringResult1;
-    tmp5 = stringResult;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const PromoSheet = tmp(10887).PromoSheet;
-    ({ grow: true, size: "lg", variant: "primary", text: intl3.string(intl4.t.hvVgAZ), onPress: first });
-    const Button = tmp(5276).Button;
-    intl3 = tmp(1128).intl;
-    const tmp11 = <PromoSheet title={tmp5} description={tmp6} actions={null} />;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  return tmp9;
-}) : (function QuestAccessSuspendedBottomSheet() {
+const result = size.fileFinishedImporting("modules/quests/native/QuestAccessSuspendedBottomSheet.tsx");
+
+export default function QuestAccessSuspendedBottomSheet() {
   let intl3;
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
@@ -77,7 +33,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestAcces
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   return <PromoSheet title={intl.string(intl4.t.WfwodX)} description={intl2.string(intl4.t.I27WXW)} actions={null} />;
-});
-const result = size.fileFinishedImporting("modules/quests/native/QuestAccessSuspendedBottomSheet.tsx");
-
-export default tmp2;
+};

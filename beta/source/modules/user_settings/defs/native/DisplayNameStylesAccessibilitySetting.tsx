@@ -1,63 +1,41 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 17401
+// Function ID: 17402
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [5004, 8364, 558, 576, 504, 15721, 11240, 1128, 2928, 2]
-// Exports: onValueChange
+// Dependencies: [5015, 8432, 504, 16270, 11540, 1113, 2932, 2]
+// Exports: onValueChange, useValue
 
-// Module 16798 (DisplayNameStylesAccessibilitySetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import _modDef2928 from "module_2928" /* 2928 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15721 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17401 (DisplayNameStylesAccessibilitySetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef2932 from "module_2932" /* 2932 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValue() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function s() {
-      return AccessibilityStore.displayNameStylesEnabled;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useValue() {
+function useValue() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled);
-});
+}
 function onValueChange(enabled) {
   const obj = AccessibilityActionCreators;
   const result = obj.setDisplayNameStylesEnabled(enabled);
 }
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2928["2gFUEw"]);
+    return intl.string(_modDef2932["2gFUEw"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  useValue,
   onValueChange
 };
 const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/DisplayNameStylesAccessibilitySetting.tsx");
 
 export default toggle;
-export const useValue = tmp2;
+export { useValue };
 export { onValueChange };

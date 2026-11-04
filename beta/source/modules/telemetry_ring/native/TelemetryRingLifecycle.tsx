@@ -1,18 +1,18 @@
-// Module ID: 1260
-// Function ID: 1261
+// Module ID: 1245
+// Function ID: 1246
 // Name: telemetry_ring/TelemetryRingLifecycle
-// Dependencies: [1261, 1392, 2001, 1087, 2004, 2005, 1378, 584, 2009, 2]
+// Dependencies: [1246, 1383, 1993, 1072, 1996, 1997, 1369, 572, 2001, 2]
 
-// Module 1260 (telemetry_ring/TelemetryRingLifecycle)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
-import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 2005 */;
-import TelemetryRingNativeDefault from "TelemetryRingNative" /* 2009 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import UserStore from "UserStore" /* 1392 */;
-import AppStateStore from "AppStateStore" /* 2001 */;
-import LifecycleManager from "LifecycleManager" /* 2004 */;
+// Module 1245 (telemetry_ring/TelemetryRingLifecycle)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1369 */;
+import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1997 */;
+import TelemetryRingNativeDefault from "TelemetryRingNative" /* 2001 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import UserStore from "UserStore" /* 1383 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
+import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -57,7 +57,7 @@ class TelemetryRingLifecycleImpl extends LifecycleManager {
     const self = this;
     if (!this._initialized) {
       self._initialized = true;
-      const obj = self(584);
+      const obj = self(572);
       const subscription = obj.subscribe("LOGOUT", self._handleLogout);
       AppStateStore.addChangeListener(self._handleEligibilityChange);
       UserStore.addChangeListener(self._handleEligibilityChange);
@@ -65,7 +65,7 @@ class TelemetryRingLifecycleImpl extends LifecycleManager {
       self._experimentUnsubscribe = () => {
         ApexExperimentStore.removeChangeListener(self._handleEligibilityChange);
       };
-      const obj2 = self(2005);
+      const obj2 = self(1997);
       obj2.initialize();
       const result = self._updateZoomedInExport();
     }

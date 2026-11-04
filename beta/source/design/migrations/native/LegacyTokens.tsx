@@ -1,19 +1,19 @@
-// Module ID: 6739
-// Function ID: 6740
+// Module ID: 6778
+// Function ID: 6779
 // Name: LegacyTokens
-// Dependencies: [17, 5003, 5010, 587, 5000, 2]
+// Dependencies: [17, 5014, 5021, 575, 5011, 2]
 
-// Module 6739 (LegacyTokens)
+// Module 6778 (LegacyTokens)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import shared from "shared" /* 5010 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import nativeDefault from "native" /* 575 */;
+import shared from "shared" /* 5021 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let theme;
 
 let tmp;
-const ColorUtils = tmp(5000);
+const ColorUtils = tmp(5011);
 const Platform = react_native.Platform;
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {

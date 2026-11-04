@@ -1,46 +1,44 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 18146
+// Function ID: 18147
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7764, 1392, 5662, 16687, 1087, 21, 5003, 1267, 12741, 2002, 17533, 16688, 8604, 14357, 17543, 558, 576, 8475, 12, 1388, 504, 6021, 1128, 2]
+// Dependencies: [19, 17, 7801, 1383, 5679, 17287, 1072, 21, 5014, 1252, 13184, 1994, 18129, 17288, 8673, 14895, 18139, 8540, 504, 12, 1379, 6041, 1113, 2]
+// Exports: useVoiceChannelUsers
 
-// Module 17550 (HappeningNowCardVoice)
-import _modDef12 from "module_12" /* 12 */;
+// Module 18146 (HappeningNowCardVoice)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import intl3 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16687 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17287 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7764 */;
-import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
+import UserStore from "UserStore" /* 1383 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, userAffinity;
+let _require, userAffinity, voiceStatesForChannel;
 
 let c10;
 let unpackModuleId;
-function formatVoiceActivityTitle(arr, guildId) {
+function formatVoiceActivityTitle(stateFromStoresArray, guildId) {
   let obj2;
   let obj3;
   let obj6;
   let obj7;
-  if (0 === arr.length) {
+  if (0 === stateFromStoresArray.length) {
     return "";
-  } else if (1 === arr.length) {
+  } else if (1 === stateFromStoresArray.length) {
     const obj4 = NicknameUtilsDefault;
-    return obj4.getName(guildId, null, arr[0]);
-  } else if (2 === arr.length) {
+    return obj4.getName(guildId, null, stateFromStoresArray[0]);
+  } else if (2 === stateFromStoresArray.length) {
     const intl = intl3.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const obj = { user1: obj2.getName(guildId, null, arr[0]), user2: obj3.getName(guildId, null, arr[1]) };
+    const obj = { user1: obj2.getName(guildId, null, stateFromStoresArray[0]), user2: obj3.getName(guildId, null, stateFromStoresArray[1]) };
     const prop = intl3.t["4SM/RX"];
     obj2 = NicknameUtilsDefault;
     obj3 = NicknameUtilsDefault;
@@ -48,7 +46,7 @@ function formatVoiceActivityTitle(arr, guildId) {
   } else {
     const intl2 = intl3.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const obj5 = { user1: obj6.getName(guildId, null, arr[0]), user2: obj7.getName(guildId, null, arr[1]), extras: arr.length - 2 };
+    const obj5 = { user1: obj6.getName(guildId, null, stateFromStoresArray[0]), user2: obj7.getName(guildId, null, stateFromStoresArray[1]), extras: stateFromStoresArray.length - 2 };
     const pjxkCI = intl3.t.pjxkCI;
     obj6 = NicknameUtilsDefault;
     obj7 = NicknameUtilsDefault;
@@ -61,9 +59,9 @@ const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ content: { flexShrink: 1 }, avatars: { marginRight: 12 } });
 const memoResult = react.memo(function VoiceChannelCard(guildId) {
-  let items1;
-  let items2;
-  let obj4;
+  let items3;
+  let items4;
+  let obj6;
   let str;
   let tmp11Result;
   guildId = guildId.guildId;
@@ -75,113 +73,17 @@ const memoResult = react.memo(function VoiceChannelCard(guildId) {
     flag = false;
   }
   const tmp = closure_12();
-  const users = closure_13(voiceState);
-  const items = [index, guildId, voiceState.channelId, users];
-  const tmp2 = formatVoiceActivityTitle(users, guildId);
-  if (0 === users.length) {
-    let obj2 = { panelVariant: flag };
-    tmp11Result = closure_10(guildId(voiceState[12]).HappeningNowCardPlaceholder, obj2);
-  } else {
-    const obj3 = { onPress: tmp3, width: str, IconComponent: guildId(voiceState[14]).VoiceNormalIcon, panelVariant: flag, children: items1 };
-    str = "large";
-    const tmp12 = index;
-    const tmp14 = index(voiceState[13]);
-    if (fullwidth) {
-      str = "full";
-    }
-    let obj = { style: tmp.avatars, children: closure_10(tmp12(voiceState[15]), obj4) };
-    obj4 = { guildId, users };
-    items1 = [closure_10(View, obj), ];
-    const obj5 = { style: tmp.content, children: items2 };
-    const obj6 = { lineClamp: 2, children: tmp2 };
-    items2 = [closure_10(guildId(voiceState[13]).HappeningNowCardHeader, obj6), ];
-    const obj7 = { voiceState };
-    items2[1] = closure_10(guildId(voiceState[16]).HappeningNowVoiceCardSubtitle, obj7);
-    items1[1] = closure_11(View, obj5);
-    tmp11Result = tmp11(tmp14, obj3);
-  }
-  return tmp11Result;
-});
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelUsers(channelId) {
-  let first;
-  _require = channelId;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  const obj2 = require("VoiceUserAffinityExperiment");
-  const voiceUserAffinitySortType = obj2.useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [VoiceStateStore, UserStore, UserAffinitiesV2Store];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === voiceUserAffinitySortType) {
-    let tmp9;
-    let tmp10;
-    if (cResult[2] === channelId.channelId) {
-      tmp9 = cResult[3];
-      tmp10 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStoresArray(first, tmp9, tmp10);
-  }
-  const fn = function s() {
-    let user;
-    const voiceStatesForChannel = VoiceStateStore.getVoiceStatesForChannel(channelId.channelId);
-    const arr = _modDef12(voiceStatesForChannel);
-    const mapped = arr.map((userId) => user.getUser(userId.userId));
-    const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [
-      function userAffinitySort(id) {
-        let num;
-        userAffinity = userAffinity.getUserAffinity(id.id);
-        if ("vc_probability" === voiceUserAffinitySortType) {
-          let num2;
-          if (userAffinity != null) {
-            num2 = userAffinity.vcProbability;
-          }
-          if (num2 == null) {
-            num2 = 0;
-          }
-          num = num2;
-        } else {
-          num = undefined;
-          if (userAffinity != null) {
-            num = userAffinity.communicationProbability;
-          }
-          if (num == null) {
-            num = 0;
-          }
-        }
-        return num;
-      }
-    ];
-    const iter = found.orderBy(items, ["desc"]);
-    return iter.value();
-  };
-  const items1 = [voiceUserAffinitySortType, channelId.channelId];
-  cResult[1] = voiceUserAffinitySortType;
-  cResult[2] = channelId.channelId;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp10 = items1;
-  tmp9 = fn;
-}) : (function useVoiceChannelUsers(channelId) {
-  _require = channelId;
-  const obj = require("VoiceUserAffinityExperiment");
+  let obj = guildId(voiceState[17]);
   const voiceUserAffinitySortType = obj.useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  let obj2 = guildId(voiceState[18]);
   let items = [VoiceStateStore, UserStore, UserAffinitiesV2Store];
-  const items1 = [voiceUserAffinitySortType, channelId.channelId];
-  const obj2 = require("get initialized");
-  return obj2.useStateFromStoresArray(items, () => {
+  const items1 = [voiceUserAffinitySortType, voiceState.channelId];
+  const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
     let user;
-    const voiceStatesForChannel = VoiceStateStore.getVoiceStatesForChannel(channelId.channelId);
-    const arr = _modDef12(voiceStatesForChannel);
+    voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(voiceState.channelId);
+    const arr = index(voiceState[19])(voiceStatesForChannel);
     const mapped = arr.map((userId) => user.getUser(userId.userId));
-    const found = mapped.filter(GlobalUtils.isNotNullish);
+    const found = mapped.filter(guildId(voiceState[20]).isNotNullish);
     const items = [
       function userAffinitySort(id) {
         let num;
@@ -210,10 +112,75 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceCh
     const iter = found.orderBy(items, ["desc"]);
     return iter.value();
   }, items1);
+  const items2 = [index, guildId, voiceState.channelId, stateFromStoresArray];
+  const tmp5 = formatVoiceActivityTitle(stateFromStoresArray, guildId);
+  if (0 === stateFromStoresArray.length) {
+    const obj3 = { panelVariant: flag };
+    tmp11Result = closure_10(tmp2(tmp3[12]).HappeningNowCardPlaceholder, obj3);
+  } else {
+    const obj4 = { onPress: tmp6, width: str, IconComponent: guildId(voiceState[14]).VoiceNormalIcon, panelVariant: flag, children: items3 };
+    str = "large";
+    const tmp12 = index;
+    const tmp13 = index(voiceState[13]);
+    if (fullwidth) {
+      str = "full";
+    }
+    const obj5 = { style: tmp.avatars, children: closure_10(tmp12(voiceState[15]), obj6) };
+    obj6 = { guildId, users: stateFromStoresArray };
+    items3 = [closure_10(View, obj5), ];
+    const obj7 = { style: tmp.content, children: items4 };
+    const obj8 = { lineClamp: 2, children: tmp5 };
+    items4 = [closure_10(tmp2(tmp3[13]).HappeningNowCardHeader, obj8), ];
+    const obj9 = { voiceState };
+    items4[1] = closure_10(guildId(voiceState[16]).HappeningNowVoiceCardSubtitle, obj9);
+    items3[1] = closure_11(View, obj7);
+    tmp11Result = tmp11(tmp13, obj4);
+  }
+  return tmp11Result;
 });
-let closure_13 = tmp4;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardVoice.tsx");
 
 export default memoResult;
-export const useVoiceChannelUsers = tmp4;
+export function useVoiceChannelUsers(channelId) {
+  _require = channelId;
+  const obj = require("VoiceUserAffinityExperiment");
+  const voiceUserAffinitySortType = obj.useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const items = [VoiceStateStore, UserStore, UserAffinitiesV2Store];
+  const items1 = [voiceUserAffinitySortType, channelId.channelId];
+  const obj2 = require("get initialized");
+  return obj2.useStateFromStoresArray(items, () => {
+    let user;
+    voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(voiceState.channelId);
+    const arr = index(voiceState[19])(voiceStatesForChannel);
+    const mapped = arr.map((userId) => user.getUser(userId.userId));
+    const found = mapped.filter(guildId(voiceState[20]).isNotNullish);
+    const items = [
+      function userAffinitySort(id) {
+        let num;
+        userAffinity = userAffinity.getUserAffinity(id.id);
+        if ("vc_probability" === voiceUserAffinitySortType) {
+          let num2;
+          if (userAffinity != null) {
+            num2 = userAffinity.vcProbability;
+          }
+          if (num2 == null) {
+            num2 = 0;
+          }
+          num = num2;
+        } else {
+          num = undefined;
+          if (userAffinity != null) {
+            num = userAffinity.communicationProbability;
+          }
+          if (num == null) {
+            num = 0;
+          }
+        }
+        return num;
+      }
+    ];
+    const iter = found.orderBy(items, ["desc"]);
+    return iter.value();
+  }, items1);
+}
 export { formatVoiceActivityTitle };

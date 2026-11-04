@@ -1,11 +1,11 @@
-// Module ID: 15414
-// Function ID: 15415
+// Module ID: 15962
+// Function ID: 15963
 // Name: VoiceGatewayProtocolVersionExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: getVoiceGatewayProtocolVersion
 
-// Module 15414 (VoiceGatewayProtocolVersionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15962 (VoiceGatewayProtocolVersionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,7 +16,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/voice_calls/VoiceGatewayProtocolVersionExperiment.tsx");
 
 export default apexExperiment;
-export const getVoiceGatewayProtocolVersion = function getVoiceGatewayProtocolVersion(supportsSfuUpdate) {
+export function getVoiceGatewayProtocolVersion(supportsSfuUpdate) {
   let num = 9;
   if (supportsSfuUpdate.supportsSfuUpdate) {
     num = 9;
@@ -26,4 +26,4 @@ export const getVoiceGatewayProtocolVersion = function getVoiceGatewayProtocolVe
     }
   }
   return num;
-};
+}

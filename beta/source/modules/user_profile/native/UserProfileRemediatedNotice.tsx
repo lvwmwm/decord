@@ -1,20 +1,20 @@
-// Module ID: 14471
-// Function ID: 14472
+// Module ID: 15018
+// Function ID: 15019
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4945, 1087, 21, 5003, 587, 558, 576, 8764, 573, 5266, 1128, 7446, 2]
+// Dependencies: [19, 17, 4956, 1072, 21, 5014, 575, 8814, 563, 5624, 1113, 7488, 2]
+// Exports: default
 
-// Module 14471 (UserProfileRemediatedNotice)
+// Module 15018 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7446 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8764 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7488 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8814 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -27,135 +27,9 @@ const RelationshipTypes = Constants.RelationshipTypes;
 let obj = { container: obj2 };
 obj2 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 let closure_9 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUserNotice(user) {
-  let first;
-  let intl;
-  let intl2;
-  let isBlocked;
-  let isIgnored;
-  let items1;
-  let items2;
-  let tmp11;
-  let tmp8;
-  let obj = user(576);
-  const cResult = obj.c(16);
-  user = user.user;
-  const style = user.style;
-  const tmp4 = closure_9();
-  const tmp5 = UserProfileSharedStylesDefault();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== user.id) {
-    const fn = function p() {
-      const obj = { isPendingIncoming: RelationshipStore.getRelationshipType(user.id) === RelationshipTypes.PENDING_INCOMING, isBlocked: RelationshipStore.isBlocked(user.id), isIgnored: RelationshipStore.isIgnored(user.id) };
-      return obj;
-    };
-    cResult[1] = user.id;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = user(573);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
-  ({ isBlocked, isIgnored } = stateFromStoresObject);
-  if (isBlocked) {
-    if (cResult[3] === tmp5.card) {
-      if (cResult[4] === style) {
-        let tmp12;
-        let tmp13;
-        if (cResult[5] === tmp4.container) {
-          tmp12 = cResult[6];
-        }
-        if (cResult[7] !== isBlocked) {
-          let tmp14 = isBlocked;
-          if (tmp14) {
-            const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1128).t["oC/fU6"]) };
-            const Text = tmp(5266).Text;
-            intl = tmp(1128).intl;
-            tmp14 = closure_6(Text, obj2);
-          }
-          cResult[7] = isBlocked;
-          cResult[8] = tmp14;
-          tmp13 = tmp14;
-        } else {
-          tmp13 = cResult[8];
-        }
-        if (cResult[9] === isIgnored) {
-          let tmp16;
-          if (cResult[10] === user.id) {
-            tmp16 = cResult[11];
-          }
-          if (cResult[12] === tmp12) {
-            if (cResult[13] === tmp13) {
-              let tmp21;
-              if (cResult[14] === tmp16) {
-                tmp21 = cResult[15];
-              }
-              tmp11 = tmp21;
-            }
-          }
-          const obj3 = { style: tmp12, children: items1 };
-          items1 = [tmp13, tmp16];
-          const tmp24 = closure_8(View, obj3);
-          cResult[12] = tmp12;
-          cResult[13] = tmp13;
-          cResult[14] = tmp16;
-          cResult[15] = tmp24;
-          tmp21 = tmp24;
-        }
-        let tmp17 = isIgnored;
-        if (tmp17) {
-          const obj4 = { children: items2 };
-          const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1128).t.HXz5An) };
-          const Text2 = tmp(5266).Text;
-          intl2 = tmp(1128).intl;
-          items2 = [closure_6(Text2, obj5), closure_6(user(5266).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
-          const intl3 = tmp(1128).intl;
-          const obj6 = {
-            unignoreHook(children) {
-                      let id;
-                      let obj = {
-                        role: "button",
-                        variant: "heading-sm/medium",
-                        color: "text-link",
-                        onPress() {
-                          const obj = RelationshipActionCreatorsDefault;
-                          return obj.unignoreUser(id.id, "UserProfileRemediatedNotice");
-                        },
-                        children
-                      };
-                      return metroRequire(Text_Text.Text, obj);
-                    }
-          };
-          items2[2] = intl3.format(user(1128).t.PrtAqy, obj6);
-          tmp17 = closure_8(closure_7, obj4);
-        }
-        cResult[9] = isIgnored;
-        cResult[10] = user.id;
-        cResult[11] = tmp17;
-        tmp16 = tmp17;
-      }
-    }
-    const items3 = [tmp4.container, tmp5.card, style];
-    cResult[3] = tmp5.card;
-    cResult[4] = style;
-    cResult[5] = tmp4.container;
-    cResult[6] = items3;
-    tmp12 = items3;
-  } else {
-    tmp11 = null;
-    if (isIgnored) {
-      tmp11 = null;
-    }
-  }
-  return tmp11;
-}) : (function RemediatedUserNotice(user) {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
+
+export default function RemediatedUserNotice(user) {
   let intl;
   let intl2;
   let isBlocked;
@@ -168,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
   const style = user.style;
   const tmp = closure_9();
   const tmp3 = UserProfileSharedStylesDefault();
-  let obj = user(573);
+  let obj = user(563);
   const items = [RelationshipStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const obj = { isPendingIncoming: RelationshipStore.getRelationshipType(user.id) === RelationshipTypes.PENDING_INCOMING, isBlocked: RelationshipStore.isBlocked(user.id), isIgnored: RelationshipStore.isIgnored(user.id) };
@@ -180,19 +54,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
     items1 = [tmp.container, tmp3.card, style];
     const tmp9 = View;
     if (isBlocked) {
-      const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1128).t["oC/fU6"]) };
-      const Text = tmp4(5266).Text;
-      intl = tmp4(1128).intl;
+      const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1113).t["oC/fU6"]) };
+      const Text = tmp4(5624).Text;
+      intl = tmp4(1113).intl;
       isBlocked = closure_6(Text, obj3);
     }
     items2 = [isBlocked, ];
     if (isIgnored) {
       const obj4 = { children: items3 };
-      const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1128).t.HXz5An) };
-      const Text2 = tmp4(5266).Text;
-      intl2 = tmp4(1128).intl;
-      items3 = [closure_6(Text2, obj5), closure_6(user(5266).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
-      const intl3 = tmp4(1128).intl;
+      const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1113).t.HXz5An) };
+      const Text2 = tmp4(5624).Text;
+      intl2 = tmp4(1113).intl;
+      items3 = [closure_6(Text2, obj5), closure_6(user(5624).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const intl3 = tmp4(1113).intl;
       const obj6 = {
         unignoreHook(children) {
               let id;
@@ -209,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
               return metroRequire(Text_Text.Text, obj);
             }
       };
-      items3[2] = intl3.format(user(1128).t.PrtAqy, obj6);
+      items3[2] = intl3.format(user(1113).t.PrtAqy, obj6);
       isIgnored = tmp8(closure_7, obj4);
     }
     items2[1] = isIgnored;
@@ -221,7 +95,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUs
     }
   }
   return tmp8Result;
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRemediatedNotice.tsx");
-
-export default tmp4;
+};

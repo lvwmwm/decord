@@ -1,64 +1,18 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 17318
+// Function ID: 17319
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [5034, 4858, 4880, 558, 576, 504, 2]
-// Exports: isFavoritesGuildVisible
+// Dependencies: [5045, 4866, 4888, 504, 2]
+// Exports: default, isFavoritesGuildVisible
 
-// Module 16718 (useIsFavoritesGuildVisible)
-import FavoritesUtils from "FavoritesUtils" /* 4880 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import FavoriteStore from "FavoriteStore" /* 4858 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17318 (useIsFavoritesGuildVisible)
+import FavoritesUtils from "FavoritesUtils" /* 4888 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+const result = size.fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoritesGuildVisible(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  let tmp9;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  _require = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FavoriteStore, SelectedGuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== (undefined === arg0 || arg0)) {
-    const fn = function l() {
-      let tmp2 = !closure_0;
-      const obj = SelectedGuildStore;
-      const tmp = FavoriteStore;
-      if (closure_0) {
-        const obj2 = FavoritesUtils;
-        tmp2 = !obj2.isFavoritesGuildId(obj.getGuildId());
-      }
-      let favoriteGuildEnabled = !tmp2;
-      if (tmp2) {
-        favoriteGuildEnabled = tmp.favoriteGuildEnabled;
-      }
-      return favoriteGuildEnabled;
-    };
-    const items1 = [tmp4];
-    cResult[1] = undefined === arg0 || arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : (function useIsFavoritesGuildVisible() {
+export default function useIsFavoritesGuildVisible() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -80,11 +34,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavorit
     }
     return favoriteGuildEnabled;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
-
-export default tmp2;
-export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
+};
+export function isFavoritesGuildVisible() {
   const obj = FavoritesUtils;
   const isFavoritesGuildIdResult = obj.isFavoritesGuildId(SelectedGuildStore.getGuildId());
   let favoriteGuildEnabled = isFavoritesGuildIdResult;
@@ -93,4 +44,4 @@ export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
     favoriteGuildEnabled = tmp.favoriteGuildEnabled;
   }
   return favoriteGuildEnabled;
-};
+}

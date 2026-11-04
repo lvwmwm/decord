@@ -1,14 +1,14 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 11678
+// Function ID: 11679
 // Name: UserActivityActionCreators
-// Dependencies: [5, 5744, 1087, 584, 11374, 2002, 1297, 2]
+// Dependencies: [5, 5761, 1072, 572, 11675, 1994, 1282, 2]
 // Exports: getMetadata, play, sync
 
-// Module 11377 (UserActivityActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
+// Module 11678 (UserActivityActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PresenceStore from "PresenceStore" /* 5744 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,14 +60,14 @@ let obj = function _getMetadata() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/UserActivityActionCreators.tsx");
 
-export const sync = function sync(activity, userId) {
+export function sync(activity, userId) {
   obj = DispatcherDefault;
   const obj2 = { type: "ACTIVITY_SYNC", activity, userId };
   obj.dispatch(obj2);
-};
-export const play = function play(activity, userId) {
+}
+export function play(activity, userId) {
   _require = activity;
-  const promise = require("asyncRequire")(11374, dependencyMap.paths);
+  const promise = require("asyncRequire")(11675, dependencyMap.paths);
   const nextPromise = promise.then((getSpotifyMetadataFromActivity) => getSpotifyMetadataFromActivity.getSpotifyMetadataFromActivity(activity, userId));
   const nextPromise1 = nextPromise.then((metadata) => {
     obj = DispatcherDefault;
@@ -79,7 +79,7 @@ export const play = function play(activity, userId) {
     const obj2 = { type: "ACTIVITY_PLAY", activity, userId };
     return obj.dispatch(obj2);
   });
-};
-export const getMetadata = function getMetadata() {
+}
+export function getMetadata() {
   return obj(...arguments);
-};
+}

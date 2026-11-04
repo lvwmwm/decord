@@ -1,18 +1,18 @@
-// Module ID: 7851
-// Function ID: 7852
+// Module ID: 7891
+// Function ID: 7892
 // Name: GameAnalyticsUtils
-// Dependencies: [2039, 7852, 1384, 2]
+// Dependencies: [2032, 7892, 1375, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 7851 (GameAnalyticsUtils)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7852 */;
-import DetectableGameStore from "DetectableGameStore" /* 2039 */;
+// Module 7891 (GameAnalyticsUtils)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7892 */;
+import DetectableGameStore from "DetectableGameStore" /* 2032 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
 
-export const removeExecutablePathPrefix = function removeExecutablePathPrefix(exePath) {
+export function removeExecutablePathPrefix(exePath) {
   const formatted = exePath.toLowerCase();
   let str = formatted;
   if (formatted.endsWith("/")) {
@@ -21,8 +21,8 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
   const parts = str.split("/");
   const substr = parts.slice(-2);
   return substr.join("/");
-};
-export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
+}
+export function getRunningGameAnalytics(streamApplication) {
   let distributor;
   let id2;
   let joined;
@@ -32,7 +32,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "enumerable", gameId: "toCharArray$esjava$1", exe: "toCharArray$esjava$1", distributor: "toCharArray$esjava$1", sku: "toCharArray$esjava$1", gameMetadata: "toCharArray$esjava$1", rawExePath: "toCharArray$esjava$1" };
+    return { gameName: "spriteIndex", gameId: "displayName", exe: "jsx", distributor: "enumerable", sku: "forEach", gameMetadata: "constructor", rawExePath: "label" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;
@@ -77,8 +77,8 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     }
     return obj2;
   }
-};
-export const getGameAnalyticsMetadata = function getGameAnalyticsMetadata(currentGameForAnalytics, arg1, detected_game_id) {
+}
+export function getGameAnalyticsMetadata(currentGameForAnalytics, arg1, detected_game_id) {
   const tmp = arg1;
   if (tmp) {
     let json;
@@ -91,8 +91,8 @@ export const getGameAnalyticsMetadata = function getGameAnalyticsMetadata(curren
   }
   const obj = RobloxSubgameUtils;
   json = obj.getSubgameMetadata(currentGameForAnalytics);
-};
-export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, arr) {
+}
+export function isVerifiedGameExecutable(str, arr) {
   if (null != str) {
     if (null != arr) {
       const formatted = str.toLowerCase();
@@ -117,4 +117,4 @@ export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, a
     }
   }
   return false;
-};
+}

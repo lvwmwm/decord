@@ -1,10 +1,10 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 17124
+// Function ID: 17125
 // Name: VttParser
 // Dependencies: [2]
 // Exports: parseVtt
 
-// Module 16527 (VttParser)
+// Module 17124 (VttParser)
 import size from "module_2" /* 2 */;
 
 let closure_0;
@@ -21,7 +21,7 @@ const re1 = /([0-9]+)?:?([0-9]{2}):([0-9]{2}\.[0-9]{2,3})/;
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VttParser.tsx");
 
 export { VttParserError };
-export const parseVtt = function parseVtt(text) {
+export function parseVtt(text) {
   let tmp;
   let tmp11;
   let tmp2;
@@ -329,4 +329,4 @@ export const parseVtt = function parseVtt(text) {
       throw new TypeError("Trying to call a non-function");
     }
   }
-};
+}

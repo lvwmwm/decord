@@ -1,10 +1,10 @@
 // Module ID: 16790
 // Function ID: 16791
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 16790 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6758e19b006c4c5c6a6c20906d2f9dfa", name: "EmojiWoozyFaceIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 76, height: 76, scales: [1], hash: "357b6ff4f5f31060d463e9e4858af437", name: "family_center_chat_check_icon", type: "png" });

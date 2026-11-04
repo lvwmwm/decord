@@ -1,12 +1,12 @@
-// Module ID: 6015
-// Function ID: 6016
+// Module ID: 6035
+// Function ID: 6036
 // Name: ApplicationCommandConstants
-// Dependencies: [1128, 2000, 2]
+// Dependencies: [1113, 1992, 2]
 // Exports: getValidationErrorText
 
-// Module 6015 (ApplicationCommandConstants)
-import intl10 from "intl" /* 1128 */;
-import Server from "Server" /* 2000 */;
+// Module 6035 (ApplicationCommandConstants)
+import intl10 from "intl" /* 1113 */;
+import Server from "Server" /* 1992 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
@@ -31,36 +31,36 @@ export const AUTOCOMPLETE_OPTION_DEBOUNCE_TIME = 500;
 export const EMPTY_COMMANDS = frozen;
 export const EMPTY_COMMANDS_SECTION = frozen1;
 export const APPLICATION_USER_INSTALL_BETA_USER_LIMIT = 200;
-export const getValidationErrorText = function getValidationErrorText(option) {
+export function getValidationErrorText(option) {
   if (null != option.choices) {
     const intl9 = intl10.intl;
     return intl9.string(intl10.t.xi5aah);
   } else {
     const type = option.type;
     if (Server.ApplicationCommandOptionType.BOOLEAN === type) {
-      const intl8 = tmp3(1128).intl;
+      const intl8 = tmp3(1113).intl;
       return intl8.string(intl10.t.ATIx6O);
     } else if (Server.ApplicationCommandOptionType.CHANNEL === type) {
-      const intl7 = tmp3(1128).intl;
+      const intl7 = tmp3(1113).intl;
       return intl7.string(intl10.t.Q0z2Gx);
     } else if (Server.ApplicationCommandOptionType.INTEGER === type) {
-      const intl6 = tmp3(1128).intl;
+      const intl6 = tmp3(1113).intl;
       return intl6.string(intl10.t["d/9Rk4"]);
     } else if (Server.ApplicationCommandOptionType.NUMBER === type) {
-      const intl5 = tmp3(1128).intl;
+      const intl5 = tmp3(1113).intl;
       return intl5.string(intl10.t["FDyk/V"]);
     } else if (Server.ApplicationCommandOptionType.ROLE === type) {
-      const intl4 = tmp3(1128).intl;
+      const intl4 = tmp3(1113).intl;
       return intl4.string(intl10.t.vrRQn0);
     } else if (Server.ApplicationCommandOptionType.USER === type) {
-      const intl3 = tmp3(1128).intl;
+      const intl3 = tmp3(1113).intl;
       return intl3.string(intl10.t.i2r7j5);
     } else if (Server.ApplicationCommandOptionType.MENTIONABLE === type) {
-      const intl2 = tmp3(1128).intl;
+      const intl2 = tmp3(1113).intl;
       return intl2.string(intl10.t.I7imec);
     } else {
-      const intl = tmp3(1128).intl;
+      const intl = tmp3(1113).intl;
       return intl.string(intl10.t.EkDo1i);
     }
   }
-};
+}

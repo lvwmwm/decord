@@ -1,13 +1,13 @@
-// Module ID: 7960
-// Function ID: 7961
+// Module ID: 8000
+// Function ID: 8001
 // Name: ManualAgeAssuranceFallbackExperiment
-// Dependencies: [7954, 1455, 7929, 2]
+// Dependencies: [7994, 1447, 7969, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 7960 (ManualAgeAssuranceFallbackExperiment)
-import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
-import SafetyHubStore from "SafetyHubStore" /* 7954 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 8000 (ManualAgeAssuranceFallbackExperiment)
+import SafetyHubUtils from "SafetyHubUtils" /* 7969 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -17,7 +17,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/ManualAgeAssuranceFallbackExperiment.tsx");
 
-export const isManualAgeAssuranceFallbackEnabled = function isManualAgeAssuranceFallbackEnabled(isAgeVerificationMessageWithManualReviewCta) {
+export function isManualAgeAssuranceFallbackEnabled(isAgeVerificationMessageWithManualReviewCta) {
   let enabled;
   const obj = SafetyHubUtils;
   if (obj.isCurrentUserSuspended()) {
@@ -27,4 +27,4 @@ export const isManualAgeAssuranceFallbackEnabled = function isManualAgeAssurance
     enabled = config.getConfig(obj2).enabled;
   }
   return enabled;
-};
+}

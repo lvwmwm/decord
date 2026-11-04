@@ -1,10 +1,10 @@
 // Module ID: 8535
 // Function ID: 8536
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 8535 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e06e2e681624b5a052b477a4af8dc512", name: "ThreadLockIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 300, height: 122, scales: [2, 3], hash: "ced54d2b1068855a4a9d8181be71ee66", name: "img_discord_nitro_logo_left", type: "png" });

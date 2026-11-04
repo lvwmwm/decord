@@ -1,16 +1,15 @@
 // Module ID: 5434
 // Function ID: 5435
-// Dependencies: [5435, 5410]
+// Dependencies: [5435, 5437, 5438, 5439]
 
 // Module 5434
-import _mod5410 from "module_5410" /* 5410 */;
-import _mod5435 from "module_5435" /* 5435 */;
+import _modDef5435 from "module_5435" /* 5435 */;
+import _modDef5437 from "module_5437" /* 5437 */;
+import _modDef5438 from "module_5438" /* 5438 */;
+import _modDef5439 from "module_5439" /* 5439 */;
 
-for (const key10013 in _mod5435) {
-  exports[key10013] = _mod5435[key10013];
-  continue;
-}
-for (const key10017 in _mod5410) {
-  exports[key10017] = _mod5410[key10017];
-  continue;
-}
+
+export const TouchableHighlight = _modDef5435;
+export const TouchableNativeFeedback = _modDef5437;
+export const TouchableOpacity = _modDef5438;
+export const TouchableWithoutFeedback = _modDef5439;

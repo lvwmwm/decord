@@ -1,14 +1,14 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12664
+// Function ID: 12665
 // Name: useConjurePatchNotesComposer
-// Dependencies: [5, 32, 19, 4933, 5008, 504, 7377, 9694, 12418, 10828, 7787, 7598, 2]
+// Dependencies: [5, 32, 19, 4944, 5019, 504, 7419, 9775, 12665, 10950, 7824, 7636, 2]
 // Exports: default
 
-// Module 12417 (useConjurePatchNotesComposer)
-import GuildChannelStore2 from "GuildChannelStore" /* 4933 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import ConjureUtils from "ConjureUtils" /* 7377 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12418 */;
+// Module 12664 (useConjurePatchNotesComposer)
+import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ConjureUtils from "ConjureUtils" /* 7419 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12665 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -119,7 +119,7 @@ export default function useConjurePatchNotesComposer(projectId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -147,7 +147,7 @@ export default function useConjurePatchNotesComposer(projectId) {
               c2 = 0;
               if (closure_129_0.cancelled) {
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 closure_1_10(false);
                 closure_1_11(true);
@@ -180,7 +180,7 @@ export default function useConjurePatchNotesComposer(projectId) {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp38) {
             if (0 === c2) {
@@ -235,7 +235,7 @@ export default function useConjurePatchNotesComposer(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

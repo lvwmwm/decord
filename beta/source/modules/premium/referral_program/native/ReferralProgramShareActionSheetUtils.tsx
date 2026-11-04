@@ -1,18 +1,18 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 15330
+// Function ID: 15331
 // Name: ReferralProgramShareActionSheetUtils
-// Dependencies: [4945, 10648, 2]
+// Dependencies: [4956, 10727, 2]
 // Exports: buildReferralUserRow
 
-// Module 14785 (ReferralProgramShareActionSheetUtils)
-import UserRowConstants from "UserRowConstants" /* 10648 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
+// Module 15330 (ReferralProgramShareActionSheetUtils)
+import UserRowConstants from "UserRowConstants" /* 10727 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
 import size from "module_2" /* 2 */;
 
 const UserRowModes = UserRowConstants.UserRowModes;
 const result = size.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
 
-export const buildReferralUserRow = function buildReferralUserRow(selectedNotResendUsers) {
+export function buildReferralUserRow(selectedNotResendUsers) {
   let eligibleUsers;
   let resendUsers;
   let row;
@@ -32,4 +32,4 @@ export const buildReferralUserRow = function buildReferralUserRow(selectedNotRes
     const element = { type: "user", props: obj };
     return element;
   }
-};
+}

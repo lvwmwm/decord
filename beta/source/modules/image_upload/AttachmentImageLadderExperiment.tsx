@@ -1,12 +1,12 @@
-// Module ID: 1453
-// Function ID: 1454
+// Module ID: 1445
+// Function ID: 1446
 // Name: AttachmentImageLadderExperiment
-// Dependencies: [1454, 1455, 2]
+// Dependencies: [1446, 1447, 2]
 // Exports: getAttachmentImageLadderConfig
 
-// Module 1453 (AttachmentImageLadderExperiment)
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1454 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 1445 (AttachmentImageLadderExperiment)
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1446 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -21,7 +21,7 @@ const apexExperiment = createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/image_upload/AttachmentImageLadderExperiment.tsx");
 
 export default apexExperiment;
-export const getAttachmentImageLadderConfig = function getAttachmentImageLadderConfig(location) {
+export function getAttachmentImageLadderConfig(location) {
   const obj = { location: location.location };
   return apexExperiment.getConfig(obj);
-};
+}

@@ -1,164 +1,30 @@
-// Module ID: 17669
-// Function ID: 17670
+// Module ID: 18263
+// Function ID: 18264
 // Name: SearchableDestinationListRow
-// Dependencies: [109, 19, 21, 558, 576, 9099, 12937, 7766, 10659, 10719, 10722, 1388, 2]
+// Dependencies: [19, 21, 9135, 13384, 10738, 7803, 10798, 10801, 1379, 2]
+// Exports: default
 
-// Module 17669 (SearchableDestinationListRow)
+// Module 18263 (SearchableDestinationListRow)
 import Fragment from "Fragment" /* 21 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import UserSearchUtils from "UserSearchUtils" /* 7766 */;
-import _mod9099 from "module_9099" /* 9099 */;
-import UserRowDefault from "UserRow" /* 10659 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10719 */;
-import ChannelRowDefault from "ChannelRow" /* 10722 */;
-import formatResults from "formatResults" /* 12937 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import UserSearchUtils from "UserSearchUtils" /* 7803 */;
+import _mod9135 from "module_9135" /* 9135 */;
+import formatResults from "formatResults" /* 13384 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, importDefault;
-
-let closure_3 = ["result", "onPressDestination"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDestinationListRow(result) {
-  let closure_0;
-  let closure_1;
-  let record;
-  let tmp5;
-  let type;
-  let obj = require("react");
-  const cResult = obj.c(24);
-  if (cResult[0] !== result) {
-    result = result.result;
-    importDefault = result;
-    const onPressDestination = result.onPressDestination;
-    _require = onPressDestination;
-    const tmp9 = _objectWithoutProperties(result, closure_3);
-    cResult[0] = result;
-    cResult[1] = onPressDestination;
-    cResult[2] = tmp9;
-    cResult[3] = result;
-    tmp5 = tmp9;
-  } else {
-    _require = cResult[1];
-    tmp5 = cResult[2];
-    importDefault = cResult[3];
-  }
-  ({ type, record } = tmp6);
-  if (type === require("module_9099").AutocompleterResultTypes.HEADER) {
-    return null;
-  } else {
-    if (cResult[4] === tmp4) {
-      let tmp10;
-      if (cResult[5] === tmp6) {
-        tmp10 = cResult[6];
-      }
-      if (require("module_9099").AutocompleterResultTypes.USER === type) {
-        let tmp30;
-        if (cResult[7] !== record.id) {
-          const tmpResult = require("UserSearchUtils");
-          const relationshipType = tmpResult.getRelationshipType(record.id);
-          cResult[7] = record.id;
-          cResult[8] = relationshipType;
-          tmp30 = relationshipType;
-        } else {
-          tmp30 = cResult[8];
-        }
-        if (cResult[9] === tmp10) {
-          if (cResult[10] === tmp5) {
-            if (cResult[11] === record) {
-              let tmp32;
-              if (cResult[12] === tmp30) {
-                tmp32 = cResult[13];
-              }
-              return tmp32;
-            }
-          }
-        }
-        UserRowDefault;
-        const merged = Object.assign(tmp5);
-        const tmp39 = <tmp35 user={record} type={tmp30} onPress={tmp10} />;
-        cResult[9] = tmp10;
-        cResult[10] = tmp5;
-        cResult[11] = record;
-        cResult[12] = tmp30;
-        cResult[13] = tmp39;
-        tmp32 = tmp39;
-      } else if (require("module_9099").AutocompleterResultTypes.GROUP_DM === type) {
-        if (cResult[14] === tmp10) {
-          if (cResult[15] === tmp5) {
-            let tmp22;
-            if (cResult[16] === record) {
-              tmp22 = cResult[17];
-            }
-            return tmp22;
-          }
-        }
-        GroupDMRowDefault;
-        const merged1 = Object.assign(tmp5);
-        const tmp29 = <tmp25 channel={record} onPress={tmp10} />;
-        cResult[14] = tmp10;
-        cResult[15] = tmp5;
-        cResult[16] = record;
-        cResult[17] = tmp29;
-        tmp22 = tmp29;
-      } else {
-        if (require("module_9099").AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (require("module_9099").AutocompleterResultTypes.VOICE_CHANNEL !== type) {
-            let tmp12;
-            if (cResult[22] !== type) {
-              const tmpResult2 = require("GlobalUtils");
-              const assertNeverResult = tmpResult2.assertNever(type);
-              cResult[22] = type;
-              cResult[23] = assertNeverResult;
-              tmp12 = assertNeverResult;
-            } else {
-              tmp12 = cResult[23];
-            }
-            return tmp12;
-          }
-        }
-        if (cResult[18] === tmp10) {
-          if (cResult[19] === tmp5) {
-            let tmp14;
-            if (cResult[20] === record) {
-              tmp14 = cResult[21];
-            }
-            return tmp14;
-          }
-        }
-        ChannelRowDefault;
-        const merged2 = Object.assign(tmp5);
-        const tmp21 = <tmp17 channel={record} onPress={tmp10} />;
-        cResult[18] = tmp10;
-        cResult[19] = tmp5;
-        cResult[20] = record;
-        cResult[21] = tmp21;
-        tmp14 = tmp21;
-      }
-    }
-    let fn;
-    if (null != tmp4) {
-      fn = () => {
-        const obj = formatResults;
-        return closure_0(obj.getDestinationIdFromResult(closure_1));
-      };
-    }
-    cResult[4] = tmp4;
-    cResult[5] = tmp6;
-    cResult[6] = fn;
-    tmp10 = fn;
-  }
-}) : (function SearchableDestinationListRow(result) {
+let result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListRow.tsx");
+
+export default function SearchableDestinationListRow(result) {
   let record;
   let type;
   result = result.result;
-  const require = result;
+  require = result;
   const onPressDestination = result.onPressDestination;
   const merged = Object.assign(result, Object.assign({ result: 0, onPressDestination: 0 }));
   ({ type, record } = result);
-  if (type === _mod9099.AutocompleterResultTypes.HEADER) {
+  if (type === _mod9135.AutocompleterResultTypes.HEADER) {
     return null;
   } else {
     let fn;
@@ -168,28 +34,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
         return onPressDestination(obj.getDestinationIdFromResult(require));
       };
     }
-    if (_mod9099.AutocompleterResultTypes.USER === type) {
-      onPressDestination(10659);
+    if (_mod9135.AutocompleterResultTypes.USER === type) {
+      onPressDestination(10738);
       const merged1 = Object.assign(merged);
       const tmp2Result = UserSearchUtils;
       return <tmp18 user={record} type={tmp2Result.getRelationshipType(record.id)} onPress={fn} />;
-    } else if (_mod9099.AutocompleterResultTypes.GROUP_DM === type) {
-      onPressDestination(10719);
+    } else if (_mod9135.AutocompleterResultTypes.GROUP_DM === type) {
+      onPressDestination(10798);
       const merged2 = Object.assign(merged);
       return <tmp12 channel={record} onPress={fn} />;
     } else {
-      if (_mod9099.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod9099.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod9135.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod9135.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmp2Result2 = GlobalUtils;
           return tmp2Result2.assertNever(type);
         }
       }
-      onPressDestination(10722);
+      onPressDestination(10801);
       const merged3 = Object.assign(merged);
       return <tmp6 channel={record} onPress={fn} />;
     }
   }
-});
-let result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListRow.tsx");
-
-export default tmp3;
+};

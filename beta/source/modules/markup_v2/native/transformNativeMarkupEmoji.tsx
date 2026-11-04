@@ -1,18 +1,18 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 8598
+// Function ID: 8599
 // Name: transformNativeMarkupEmoji
-// Dependencies: [4949, 6012, 1417, 2]
+// Dependencies: [4960, 6032, 1409, 2]
 // Exports: transformNativeEmoji
 
-// Module 8529 (transformNativeMarkupEmoji)
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
-import MarkupTypes from "MarkupTypes" /* 6012 */;
+// Module 8598 (transformNativeMarkupEmoji)
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import MarkupTypes from "MarkupTypes" /* 6032 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupEmoji.tsx");
 
-export const transformNativeEmoji = function transformNativeEmoji(value, disableAnimatedEmoji) {
+export function transformNativeEmoji(value, disableAnimatedEmoji) {
   let animated;
   let combined;
   let id;
@@ -44,4 +44,4 @@ export const transformNativeEmoji = function transformNativeEmoji(value, disable
     }
     return obj7;
   }
-};
+}

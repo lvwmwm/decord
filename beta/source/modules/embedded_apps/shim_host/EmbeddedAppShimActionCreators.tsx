@@ -1,27 +1,27 @@
-// Module ID: 11499
-// Function ID: 11500
+// Module ID: 11802
+// Function ID: 11803
 // Name: EmbeddedAppShimActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: disconnectShim, shimPipeOpened, updateShimState
 
-// Module 11499 (EmbeddedAppShimActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 11802 (EmbeddedAppShimActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/shim_host/EmbeddedAppShimActionCreators.tsx");
 
-export const shimPipeOpened = function shimPipeOpened(pipeId, pipe) {
+export function shimPipeOpened(pipeId, pipe) {
   const obj = DispatcherDefault;
   const obj2 = { type: "EMBEDDED_APP_SHIM_PIPE_OPEN", iframeId: pipeId, pipe };
   obj.dispatch(obj2);
-};
-export const updateShimState = function updateShimState(iframeId, state) {
+}
+export function updateShimState(iframeId, state) {
   const obj = DispatcherDefault;
   const obj2 = { type: "EMBEDDED_APP_SHIM_STATE_UPDATE", iframeId, state };
   obj.dispatch(obj2);
-};
-export const disconnectShim = function disconnectShim(iframeId) {
+}
+export function disconnectShim(iframeId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "EMBEDDED_APP_SHIM_DISCONNECT", iframeId };
   obj.dispatch(obj2);
-};
+}

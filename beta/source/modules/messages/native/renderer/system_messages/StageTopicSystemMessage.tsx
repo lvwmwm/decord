@@ -1,19 +1,19 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8495
+// Function ID: 8496
 // Name: StageTopicSystemMessage
-// Dependencies: [8350, 1128, 8352, 8354, 2]
+// Dependencies: [8418, 1113, 8420, 8422, 2]
 // Exports: createStageTopicSystemMessage
 
-// Module 8430 (StageTopicSystemMessage)
-import intl2 from "intl" /* 1128 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8354 */;
+// Module 8495 (StageTopicSystemMessage)
+import intl2 from "intl" /* 1113 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageTopicSystemMessage.tsx");
 
-export const createStageTopicSystemMessage = function createStageTopicSystemMessage(message) {
+export function createStageTopicSystemMessage(message) {
   let formatToParts;
   let obj3;
   let ro3RM0;
@@ -28,4 +28,4 @@ export const createStageTopicSystemMessage = function createStageTopicSystemMess
   ro3RM0 = intl2.t.ro3RM0;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

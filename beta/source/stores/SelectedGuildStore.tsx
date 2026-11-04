@@ -1,19 +1,19 @@
-// Module ID: 5034
-// Function ID: 5035
+// Module ID: 5045
+// Function ID: 5046
 // Name: SelectedGuildStore
-// Dependencies: [5035, 502, 5038, 4877, 1087, 1114, 504, 5039, 5052, 584, 2]
+// Dependencies: [5046, 502, 5049, 4885, 1072, 1099, 504, 5050, 5063, 572, 2]
 
-// Module 5034 (SelectedGuildStore)
+// Module 5045 (SelectedGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import router_utils from "router_utils" /* 1114 */;
-import matchPathCompat from "matchPathCompat" /* 5039 */;
-import RouteUtils from "RouteUtils" /* 5052 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import router_utils from "router_utils" /* 1099 */;
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import RouteUtils from "RouteUtils" /* 5063 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5038 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import Constants from "Constants" /* 1087 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5049 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

@@ -1,15 +1,15 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14745
+// Function ID: 14746
 // Name: maybeOpenSpoilerGateForVoiceChannel
-// Dependencies: [4855, 21, 6714, 5942, 14218, 2]
+// Dependencies: [4863, 21, 6753, 5960, 14746, 2]
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 14217 (maybeOpenSpoilerGateForVoiceChannel)
+// Module 14745 (maybeOpenSpoilerGateForVoiceChannel)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5942 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6714 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14218 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import useAlertStore from "useAlertStore" /* 5960 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6753 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14746 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelSpoilerAlertDefault = VoicePanelSpoilerAlert;
@@ -17,7 +17,7 @@ const VoicePanelSpoilerAlertDefault = VoicePanelSpoilerAlert;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/spoiler_channels/maybeOpenSpoilerGateForVoiceChannel.native.tsx");
 
-export const maybeOpenSpoilerGateForVoiceChannel = function maybeOpenSpoilerGateForVoiceChannel(id) {
+export function maybeOpenSpoilerGateForVoiceChannel(id) {
   const channel = ChannelStore.getChannel(id);
   let tmp2 = null == channel;
   if (!tmp2) {
@@ -32,4 +32,4 @@ export const maybeOpenSpoilerGateForVoiceChannel = function maybeOpenSpoilerGate
     flag = true;
   }
   return flag;
-};
+}

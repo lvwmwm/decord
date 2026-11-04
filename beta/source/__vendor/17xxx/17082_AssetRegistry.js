@@ -1,10 +1,10 @@
 // Module ID: 17082
 // Function ID: 17083
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 17082 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 762, height: 525, scales: [1], hash: "685e4a9eb5133a148de7ce27d400a483", name: "img_register_header", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "d34103fd5e89ba1cd4ca70f2429c1570", name: "ic_wreath", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7213
+// Function ID: 7214
 // Name: PhoneActionCreators
-// Dependencies: [5, 502, 7170, 1087, 584, 1297, 6708, 1275, 2]
+// Dependencies: [5, 502, 7211, 1072, 572, 1282, 6747, 1260, 2]
 
-// Module 7172 (PhoneActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import PhoneConstants from "PhoneConstants" /* 7170 */;
+// Module 7213 (PhoneActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PhoneConstants from "PhoneConstants" /* 7211 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -54,13 +54,13 @@ let obj = {
     obj3 = HTTPUtils;
     return post(request);
   },
-  addPhone(phoneToken, password, CONTACT_SYNC) {
+  addPhone(phoneToken, password, reason) {
     let obj;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
     const request = { url: Endpoints.PHONE, body: obj, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
-    obj = { phone_token: phoneToken, password, change_phone_reason: CONTACT_SYNC };
+    obj = { phone_token: phoneToken, password, change_phone_reason: reason };
     obj3 = HTTPUtils;
     return post(request);
   },

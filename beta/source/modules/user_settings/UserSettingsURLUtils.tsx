@@ -1,16 +1,16 @@
-// Module ID: 6752
-// Function ID: 6753
+// Module ID: 6791
+// Function ID: 6792
 // Name: UserSettingsURLUtils
-// Dependencies: [32, 1097, 1087, 6753, 1267, 6754, 2]
+// Dependencies: [32, 1082, 1072, 6792, 1252, 6793, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 6752 (UserSettingsURLUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettingsKeys from "UserSettingsKeys" /* 6753 */;
-import _mod6754 from "module_6754" /* 6754 */;
+// Module 6791 (UserSettingsURLUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettingsKeys from "UserSettingsKeys" /* 6792 */;
+import _mod6793 from "module_6793" /* 6793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -20,11 +20,11 @@ const UserSettingsPath = UserSettingsConstants.UserSettingsPath;
 const re7 = /[_\s]|%20/g;
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsURLUtils.tsx");
 
-export const settingsPathToRoute = function settingsPathToRoute(ACCOUNT) {
+export function settingsPathToRoute(ACCOUNT) {
   const parts = ACCOUNT.split("/");
   return metroRequire.SETTINGS(parts[0], parts[1]);
-};
-export const trackParseSettingsUrl = function trackParseSettingsUrl(path, user_settings_url_origin) {
+}
+export function trackParseSettingsUrl(path, user_settings_url_origin) {
   path = path.path;
   if (null != path.target) {
     const obj2 = { user_settings_url_path: path, user_settings_url_origin };
@@ -35,8 +35,8 @@ export const trackParseSettingsUrl = function trackParseSettingsUrl(path, user_s
     const obj = AnalyticsUtilsDefault;
     obj.track(hasOwnProperty.USER_SETTINGS_URL_PARSING_FAILED, obj4);
   }
-};
-export const parseSettingsUrl = function parseSettingsUrl(arg0) {
+}
+export function parseSettingsUrl(arg0) {
   let ACCESSIBILITY;
   let ACCOUNT;
   let ACCOUNT_ACCOUNT_STANDING;
@@ -116,11 +116,11 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
     tmp8 = tmp9;
   }
   const obj2 = { target: tmp8, path: joined, params: parse(search) };
-  parse = tmp6(6754).parse;
-  _mod6754;
+  parse = tmp6(6793).parse;
+  _mod6793;
   if (search == null) {
     const _location = location;
     search = location.search;
   }
   return obj2;
-};
+}

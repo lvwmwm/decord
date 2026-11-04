@@ -1,16 +1,16 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13897
+// Function ID: 13898
 // Name: isGuildLikeSearchContext
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 // Exports: isGuildLikeSearchContext
 
-// Module 13266 (isGuildLikeSearchContext)
-import Constants from "Constants" /* 1087 */;
+// Module 13897 (isGuildLikeSearchContext)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;
 const result = size.fileFinishedImporting("modules/search/isGuildLikeSearchContext.tsx");
 
-export const isGuildLikeSearchContext = function isGuildLikeSearchContext(searchContext) {
+export function isGuildLikeSearchContext(searchContext) {
   return searchContext.type === SearchTypes.GUILD || searchContext.type === SearchTypes.GUILD_CHANNEL || searchContext.type === SearchTypes.THREAD;
-};
+}

@@ -1,16 +1,15 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 18463
+// Function ID: 18464
 // Name: shouldShowActivityStatus
-// Dependencies: [1087, 1098, 2]
+// Dependencies: [1083, 5762, 2]
 // Exports: default
 
-// Module 17873 (shouldShowActivityStatus)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
+// Module 18463 (shouldShowActivityStatus)
+import Constants from "Constants" /* 1083 */;
+import ActivityTypes from "ActivityTypes" /* 5762 */;
 import size from "module_2" /* 2 */;
 
-const ActivityTypes = Constants.ActivityTypes;
-const StatusTypes = Constants2.StatusTypes;
+const StatusTypes = Constants.StatusTypes;
 const result = size.fileFinishedImporting("modules/activity_status/shouldShowActivityStatus.tsx");
 
 export default function shouldShowActivityStatus(arg0) {
@@ -21,7 +20,7 @@ export default function shouldShowActivityStatus(arg0) {
     if (status !== StatusTypes.INVISIBLE) {
       let found;
       if (activities != null) {
-        found = activities.filter((type) => type.type !== constants.HANG_STATUS);
+        found = activities.filter((type) => type.type !== ActivityTypes.ActivityTypes.HANG_STATUS);
       }
       let tmp4 = null != tmp || null != tmp2;
       if (!tmp4) {

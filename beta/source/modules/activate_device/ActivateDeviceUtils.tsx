@@ -1,18 +1,18 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15705
+// Function ID: 15706
 // Name: ActivateDeviceUtils
-// Dependencies: [1087, 13557, 2]
+// Dependencies: [1072, 14174, 2]
 // Exports: clientIdToActivateDevicePlatform
 
-// Module 15159 (ActivateDeviceUtils)
-import Constants from "Constants" /* 1087 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 13557 */;
+// Module 15705 (ActivateDeviceUtils)
+import Constants from "Constants" /* 1072 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 14174 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;
 const result = size.fileFinishedImporting("modules/activate_device/ActivateDeviceUtils.tsx");
 
-export const clientIdToActivateDevicePlatform = function clientIdToActivateDevicePlatform(clientId) {
+export function clientIdToActivateDevicePlatform(clientId) {
   let PLAYSTATION;
   if (clientId === ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID) {
     PLAYSTATION = PlatformTypes.PLAYSTATION;
@@ -23,4 +23,4 @@ export const clientIdToActivateDevicePlatform = function clientIdToActivateDevic
     }
   }
   return PLAYSTATION;
-};
+}

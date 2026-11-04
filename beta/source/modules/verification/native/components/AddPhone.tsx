@@ -1,23 +1,23 @@
-// Module ID: 7171
-// Function ID: 7172
+// Module ID: 7212
+// Function ID: 7213
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 7067, 4849, 1392, 1087, 1098, 21, 5003, 587, 504, 7029, 7172, 6406, 5266, 1128, 7173, 7088, 6704, 7174, 2002, 5276, 5941, 7204, 2]
+// Dependencies: [5, 32, 19, 17, 7109, 4857, 1383, 1072, 1083, 21, 5014, 575, 504, 7071, 7213, 6446, 5624, 1113, 7214, 7130, 6744, 7215, 1994, 5634, 5959, 7245, 2]
 // Exports: default
 
-// Module 7171 (AddPhone)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+// Module 7212 (AddPhone)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 1083 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PhoneStore from "PhoneStore" /* 7067 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4849 */;
-import UserStore from "UserStore" /* 1392 */;
+import PhoneStore from "PhoneStore" /* 7109 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4857 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default function AddPhone(reason) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -156,7 +156,7 @@ export default function AddPhone(reason) {
             c3 = 0;
             closure_129_12(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

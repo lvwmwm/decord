@@ -1,28 +1,28 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 15513
+// Function ID: 15514
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 4877, 7576, 21, 5003, 587, 558, 576, 14969, 14970, 504, 5237, 1128, 5941, 6729, 5010, 14971, 14972, 5701, 5290, 1107, 5266, 6010, 2]
+// Dependencies: [32, 19, 17, 4885, 7617, 21, 5014, 575, 15514, 15515, 504, 5253, 6030, 1113, 5959, 6768, 5587, 1092, 5717, 5021, 15516, 15517, 5624, 2]
+// Exports: default
 
-// Module 14968 (SubscribeModalSuccessAlert)
+// Module 15513 (SubscribeModalSuccessAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import intl4 from "intl" /* 1128 */;
-import shared from "shared" /* 5010 */;
-import useThemeDefault from "useTheme" /* 5237 */;
-import LinearGradientDefault from "LinearGradient" /* 5290 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
-import AlertDefault from "Alert" /* 6010 */;
-import ColorConstants from "ColorConstants" /* 7576 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 14970 */;
+import nativeDefault from "native" /* 575 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import intl4 from "intl" /* 1113 */;
+import shared from "shared" /* 5021 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import FastImageDefault from "FastImage" /* 5717 */;
+import AlertDefault from "Alert" /* 6030 */;
+import ColorConstants from "ColorConstants" /* 7617 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 15514 */;
+import _mod15515 from "module_15515" /* 15515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4877 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,10 +32,17 @@ let c9;
 let metroImportAll;
 let obj2;
 let obj3;
-let tmp;
-let tmp17;
-const FastImageDefault = tmp17(5701);
-const _mod14969 = tmp(14969);
+class PremiumPaymentGuildAnimation {
+  constructor(arg0) {
+    let loop;
+    let nextScene;
+    let onSceneComplete;
+    ({ nextScene, onSceneComplete, loop } = arg0);
+    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod15515 };
+    const tmp2 = SequencedLottieAnimationViewDefault;
+    return metroImportAll(tmp2, obj);
+  }
+}
 const View = react_native.View;
 const Gradients = ColorConstants.Gradients;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -44,200 +51,13 @@ let obj = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, 
 obj2 = { padding: 2, borderRadius: nativeDefault.radii.xs, marginTop: 8 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
-let closure_10 = createStyles(obj);
+const authStore = createStyles(obj);
 let obj4 = { ENTRY: "entry", IDLE: "idle" };
-const sceneSegments = { [obj4.ENTRY]: { BEG: 0, END: 180 }, [obj4.IDLE]: { BEG: 180, END: 360 } };
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPaymentGuildAnimation(arg0) {
-  let first;
-  let loop;
-  let nextScene;
-  let onSceneComplete;
-  const obj = react2;
-  const cResult = obj.c(6);
-  ({ nextScene, onSceneComplete, loop } = arg0);
-  const tmp4 = closure_10();
-  const animation = tmp4.animation;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = _mod14969;
-    cResult[0] = tmpResult;
-    first = tmpResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === loop) {
-    if (cResult[2] === nextScene) {
-      if (cResult[3] === onSceneComplete) {
-        let tmp7;
-        if (cResult[4] === tmp4.animation) {
-          tmp7 = cResult[5];
-        }
-        return tmp7;
-      }
-    }
-  }
-  const obj2 = { nextScene, onSceneComplete, loop, sceneSegments, style: animation, source: first };
-  const tmp8 = metroImportAll(SequencedLottieAnimationViewDefault, obj2);
-  cResult[1] = loop;
-  cResult[2] = nextScene;
-  cResult[3] = onSceneComplete;
-  cResult[4] = tmp4.animation;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : (function PremiumPaymentGuildAnimation(arg0) {
-  let loop;
-  let nextScene;
-  let onSceneComplete;
-  ({ nextScene, onSceneComplete, loop } = arg0);
-  const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod14969 };
-  const tmp2 = SequencedLottieAnimationViewDefault;
-  return metroImportAll(tmp2, obj);
-});
-let closure_12 = tmp4;
-tmp4.Scenes = obj4;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeModalSuccessAlert(guildId) {
-  let first;
-  let tmp14;
-  let tmp16;
-  let tmp7;
-  const f123161 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
-  let obj = guildId(576);
-  const cResult = obj.c(42);
-  guildId = guildId.guildId;
-  const guildBoostSlots = guildId.guildBoostSlots;
-  const tmp4 = closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function v() {
-      return GuildStore.getGuild(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = guildId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (cResult[3] !== guildBoostSlots) {
-    cResult[3] = guildBoostSlots;
-    cResult[4] = null != guildBoostSlots && guildBoostSlots.some(f123161);
-    const tmp11 = null != guildBoostSlots && guildBoostSlots.some(f123161);
-  }
-  let num6;
-  if (guildBoostSlots != null) {
-    num6 = guildBoostSlots.length;
-  }
-  if (num6 == null) {
-    num6 = 1;
-  }
-  [tmp14, importDefault] = react.useState(Scenes.Scenes.ENTRY);
-  _slicedToArray(react.useState(Scenes.Scenes.ENTRY), 2);
-  [tmp16, dependencyMap] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  const tmp18 = useThemeDefault();
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(guildId(1128).t.YKxJCI);
-    class G {
-      constructor() {
-        const obj = actions_AlertActionCreatorsDefault;
-        obj.close();
-        const obj2 = guildId(dependencyMap[16]);
-        obj2.closeApplyBoostModal();
-      }
-    }
-    cResult[5] = stringResult;
-    cResult[6] = G;
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor(arg0) {
-        if (Scenes.Scenes.ENTRY === arg0) {
-          return importDefault(Scenes.Scenes.IDLE);
-        } else if (Scenes.Scenes.IDLE === arg0) {
-          return dependencyMap(true);
-        }
-      }
-    }
-    cResult[7] = B;
-    class G {
-      constructor() {
-        const obj = actions_AlertActionCreatorsDefault;
-        obj.close();
-        const obj2 = guildId(dependencyMap[16]);
-        obj2.closeApplyBoostModal();
-      }
-    }
-  } else {
-    class B {
-      constructor(arg0) {
-        if (Scenes.Scenes.ENTRY === arg0) {
-          return importDefault(Scenes.Scenes.IDLE);
-        } else if (Scenes.Scenes.IDLE === arg0) {
-          return dependencyMap(true);
-        }
-      }
-    }
-  }
-  if (cResult[8] === tmp14) {
-    class B {
-      constructor(arg0) {
-        if (Scenes.Scenes.ENTRY === arg0) {
-          return importDefault(Scenes.Scenes.IDLE);
-        } else if (Scenes.Scenes.IDLE === arg0) {
-          return dependencyMap(true);
-        }
-      }
-    }
-    const tmpResult2 = guildId(5010);
-    if (tmpResult2.isThemeLight(tmp18)) {
-      class B {
-        constructor(arg0) {
-          if (Scenes.Scenes.ENTRY === arg0) {
-            return importDefault(Scenes.Scenes.IDLE);
-          } else if (Scenes.Scenes.IDLE === arg0) {
-            return dependencyMap(true);
-          }
-        }
-      }
-    } else {
-      class B {
-        constructor(arg0) {
-          if (Scenes.Scenes.ENTRY === arg0) {
-            return importDefault(Scenes.Scenes.IDLE);
-          } else if (Scenes.Scenes.IDLE === arg0) {
-            return dependencyMap(true);
-          }
-        }
-      }
-    }
-    class G {
-      constructor() {
-        const obj = actions_AlertActionCreatorsDefault;
-        obj.close();
-        const obj2 = guildId(dependencyMap[16]);
-        obj2.closeApplyBoostModal();
-      }
-    }
-    let obj2 = { style: tmp4.activatedImage, source: tmp24 };
-    cResult[11] = tmp4.activatedImage;
-    cResult[12] = tmp24;
-    cResult[13] = closure_8(FastImageDefault, obj2);
-    const tmp27 = closure_8(FastImageDefault, obj2);
-  }
-  cResult[8] = tmp14;
-  cResult[9] = tmp16;
-  cResult[10] = closure_8(Scenes, { nextScene: tmp14, loop: tmp16, onSceneComplete: tmp22 });
-  closure_8(Scenes, { nextScene: tmp14, loop: tmp16, onSceneComplete: tmp22 });
-}) : (function SubscribeModalSuccessAlert(arg0) {
+const unpackModuleId = { [obj4.ENTRY]: { BEG: 0, END: 180 }, [obj4.IDLE]: { BEG: 180, END: 360 } };
+PremiumPaymentGuildAnimation.Scenes = obj4;
+const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
+
+export default function SubscribeModalSuccessAlert(arg0) {
   let closure_1;
   let closure_2;
   let first;
@@ -271,13 +91,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeM
   if (num == null) {
     num = 1;
   }
-  [first, importDefault] = react.useState(Scenes.Scenes.ENTRY);
+  [first, importDefault] = react.useState(PremiumPaymentGuildAnimation.Scenes.ENTRY);
   [first1, dependencyMap] = react.useState(false);
   let obj2 = {
     style: tmp.wrapper,
-    confirmText: intl.string(tmp2(1128).t.YKxJCI),
+    confirmText: intl.string(tmp2(1113).t.YKxJCI),
     onConfirm() {
-      const obj = closure_1(closure_2[15]);
+      const obj = closure_1(closure_2[14]);
       obj.close();
       const obj2 = require("BoostingActionCreators");
       obj2.closeApplyBoostModal();
@@ -286,20 +106,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeM
   };
   const tmp11 = useThemeDefault();
   const tmp13 = AlertDefault;
-  intl = tmp2(1128).intl;
+  intl = tmp2(1113).intl;
   items1 = [, ];
   const obj3 = {
     nextScene: first,
     loop: first1,
     onSceneComplete(currentScene) {
-      if (Scenes.Scenes.ENTRY === currentScene) {
-        return closure_1(Scenes.Scenes.IDLE);
-      } else if (Scenes.Scenes.IDLE === currentScene) {
+      if (PremiumPaymentGuildAnimation.Scenes.ENTRY === currentScene) {
+        return closure_1(PremiumPaymentGuildAnimation.Scenes.IDLE);
+      } else if (PremiumPaymentGuildAnimation.Scenes.IDLE === currentScene) {
         return closure_2(true);
       }
     }
   };
-  items1[0] = closure_8(Scenes, obj3);
+  items1[0] = closure_8(PremiumPaymentGuildAnimation, obj3);
   const obj4 = { style: tmp.activated, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_8(View, obj5) };
   const tmp16 = LinearGradientDefault;
   obj5 = { style: tmp.activatedBackground, children: closure_8(tmp17, obj6) };
@@ -307,17 +127,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeM
   tmp17 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeLight(tmp11)) {
-    tmp10Result = tmp10(14971);
+    tmp10Result = tmp10(15516);
   } else {
-    tmp10Result = tmp10(14972);
+    tmp10Result = tmp10(15517);
   }
   const items2 = [closure_8(tmp16, obj4), ];
   const obj7 = { style: tmp.successInfo, children: items3 };
   const obj8 = { style: tmp.text, variant: "text-sm/medium", children: stringResult };
-  const Text = tmp2(5266).Text;
-  const intl2 = tmp2(1128).intl;
+  const Text = tmp2(5624).Text;
+  const intl2 = tmp2(1113).intl;
   const string = intl2.string;
-  const t = tmp2(1128).t;
+  const t = tmp2(1113).t;
   if (someResult) {
     stringResult = string(t.RMmWY3);
   } else {
@@ -326,14 +146,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeM
   const obj9 = { children: items2 };
   items3 = [closure_8(Text, obj8), ];
   const obj10 = { style: tmp.text, variant: "text-sm/medium", children: intl3.format(intl4.t.r0IGsP, obj11) };
-  const Text2 = tmp2(5266).Text;
-  intl3 = tmp2(1128).intl;
+  const Text2 = tmp2(5624).Text;
+  intl3 = tmp2(1113).intl;
   obj11 = { guildName: stateFromStores.name, guildSubscriptionQuantity: num };
   items3[1] = closure_8(Text2, obj10);
   items2[1] = closure_9(View, obj7);
   items1[1] = closure_9(View, obj9);
   return closure_9(tmp13, obj2);
-});
-const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
-
-export default tmp5;
+};

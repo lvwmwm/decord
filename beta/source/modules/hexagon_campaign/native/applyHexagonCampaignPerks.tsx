@@ -1,18 +1,18 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 17007
+// Function ID: 17008
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 5027, 1392, 15677, 5028, 9897, 1255, 7110, 14799, 5030, 16414, 15890, 16415, 9898, 2053, 2]
+// Dependencies: [5, 5038, 1383, 16226, 5039, 9979, 1240, 7152, 15344, 5041, 17008, 16465, 17009, 9980, 2047, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 16413 (applyHexagonCampaignPerks)
-import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7110 */;
-import AppIconConstants from "AppIconConstants" /* 9897 */;
+// Module 17007 (applyHexagonCampaignPerks)
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7152 */;
+import AppIconConstants from "AppIconConstants" /* 9979 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5027 */;
-import UserStore from "UserStore" /* 1392 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15677 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import UserStore from "UserStore" /* 1383 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16226 */;
 import size from "module_2" /* 2 */;
 
 let c5;
@@ -35,7 +35,7 @@ let obj = function _saveDisplayNameStyles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ obj = function _applyHexagonCampaignPerks() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -141,7 +141,7 @@ obj = function _applyHexagonCampaignPerks() {
             closure_11 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -317,7 +317,7 @@ obj = function _applyHexagonCampaignPerks() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -388,6 +388,6 @@ const isHexagonCampaignAppIcon = AppIconConstants.isHexagonCampaignAppIcon;
 const HEXAGON_GRADIENT_PRESET = ClientThemesConstants.HEXAGON_GRADIENT_PRESET;
 let result = size.fileFinishedImporting("modules/hexagon_campaign/native/applyHexagonCampaignPerks.tsx");
 
-export const applyHexagonCampaignPerks = function applyHexagonCampaignPerks() {
+export function applyHexagonCampaignPerks() {
   return obj(...arguments);
-};
+}

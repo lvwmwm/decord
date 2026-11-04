@@ -1,13 +1,12 @@
-// Module ID: 9865
-// Function ID: 9866
+// Module ID: 9947
+// Function ID: 9948
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [6757, 1395, 558, 576, 573, 2]
-// Exports: getTopAndNewlyAddedEmojis
+// Dependencies: [6796, 1386, 563, 2]
+// Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 9865 (useTopAndNewlyAddedEmojis)
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9947 (useTopAndNewlyAddedEmojis)
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,59 +14,9 @@ let _require, dependencyMap;
 
 const EmojiIntention = EmojiConstants.EmojiIntention;
 let closure_4 = [];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopAndNewlyAddedEmojis(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  _require = arg0;
-  dependencyMap = arg1;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [EmojiStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp6;
-    let tmp7;
-    if (cResult[2] === arg1) {
-      tmp6 = cResult[3];
-      tmp7 = cResult[4];
-    }
-    const tmpResult = tmp(573);
-    return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
-  }
-  const fn = function l() {
-    let newlyAddedEmoji;
-    if (EmojiStore !== undefined) {
-      let topEmoji;
-      const tmp3 = EmojiIntention;
-      if (closure_1 !== EmojiIntention.REACTION) {
-        topEmoji = obj.getTopEmoji(tmp);
-      } else {
-        topEmoji = closure_4;
-      }
-      const obj2 = { topEmojis: topEmoji, newlyAddedEmojis: newlyAddedEmoji };
-      if (closure_1 !== tmp3.REACTION) {
-        newlyAddedEmoji = obj.getNewlyAddedEmoji(tmp);
-      } else {
-        newlyAddedEmoji = closure_4;
-      }
-      return obj2;
-    }
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : (function useTopAndNewlyAddedEmojis(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
+
+export default function useTopAndNewlyAddedEmojis(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -94,8 +43,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopAndN
       return obj2;
     }
   }, items1);
-});
-function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
+};
+export function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
   let guildId;
   let newlyAddedEmoji;
   let pickerIntention;
@@ -119,7 +68,3 @@ function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
   }
   return obj;
 }
-const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
-
-export default tmp2;
-export { getTopAndNewlyAddedEmojis };

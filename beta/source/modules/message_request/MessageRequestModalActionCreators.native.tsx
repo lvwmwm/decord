@@ -1,25 +1,25 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 14019
+// Function ID: 14020
 // Name: MessageRequestModalActionCreators
-// Dependencies: [13383, 1087, 1267, 5941, 1128, 6010, 5242, 13387, 2002, 2]
+// Dependencies: [14016, 1072, 1252, 5959, 1113, 6030, 5258, 14020, 1994, 2]
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 13386 (MessageRequestModalActionCreators)
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
-import AlertDefault from "Alert" /* 6010 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13383 */;
+// Module 14019 (MessageRequestModalActionCreators)
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
+import AlertDefault from "Alert" /* 6030 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 14016 */;
 import size from "module_2" /* 2 */;
 
 const type = MessageRequestConstants.MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestModalActionCreators.native.tsx");
 
-export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRequestConfirmModal(arg0) {
+export function openAcceptMessageRequestConfirmModal(arg0) {
   let channelId;
   let intl;
   let intl2;
@@ -39,12 +39,12 @@ export const openAcceptMessageRequestConfirmModal = function openAcceptMessageRe
   intl3 = intl5.intl;
   intl4 = intl5.intl;
   show(obj3);
-};
-export const onMarkAsNotSpamConfirmationModal = function onMarkAsNotSpamConfirmationModal(arg0) {
+}
+export function onMarkAsNotSpamConfirmationModal(arg0) {
   let channel;
   let onCancel;
   let onConfirm;
   ({ onConfirm, onCancel, channel } = arg0);
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(13387, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
-};
+  obj.openLazy(asyncRequire(14020, dependencyMap.paths), "SpamMessageHamActionSheet", { channel, onConfirm, onCancel });
+}

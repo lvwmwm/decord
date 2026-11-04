@@ -1,15 +1,15 @@
-// Module ID: 9978
-// Function ID: 9979
+// Module ID: 10060
+// Function ID: 10061
 // Name: getEmojiPopoutMessage
-// Dependencies: [6916, 1087, 1128, 4149, 2067, 2]
+// Dependencies: [6958, 1072, 1113, 4155, 2061, 2]
 // Exports: getEmojiPopoutData
 
-// Module 9978 (getEmojiPopoutMessage)
-import Constants from "Constants" /* 1087 */;
-import intl12 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import _modDef4149 from "module_4149" /* 4149 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6916 */;
+// Module 10060 (getEmojiPopoutMessage)
+import Constants from "Constants" /* 1072 */;
+import intl12 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import _modDef4155 from "module_4155" /* 4155 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6958 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
@@ -19,7 +19,7 @@ const EmojiPopoutType = { GET_PREMIUM: "GET_PREMIUM", JOIN_GUILD: "JOIN_GUILD", 
 const result = size.fileFinishedImporting("modules/messages/getEmojiPopoutMessage.tsx");
 
 export { EmojiPopoutType };
-export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
+export function getEmojiPopoutData(sourceType) {
   let emojiComesFromCurrentGuild;
   let emojiComesFromCurrentGuild2;
   let expressionSourceApplication;
@@ -49,7 +49,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
     const intl11 = intl12.intl;
     format = intl11.format;
     obj3 = { helpdeskArticle: obj9.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
-    prop = _modDef4149["/jdd/7"];
+    prop = _modDef4155["/jdd/7"];
     obj9 = HelpdeskUtilsDefault;
     return obj2;
   } else {
@@ -81,8 +81,8 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
           }
           if (isPremium2) {
             if (isDiscoverable2) {
-              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1128).t.riu2R5), description: null };
-              intl10 = tmp7(1128).intl;
+              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1113).t.riu2R5), description: null };
+              intl10 = tmp7(1113).intl;
               obj7 = obj5;
             }
             const obj6 = { emojiDescription: formatToPlainStringResult, analyticsType: CROSS_SERVER };
@@ -90,8 +90,8 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
             return obj6;
           }
           if (!isPremium2) {
-            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1128).t["gl/XHJ"]), description: null };
-            intl9 = tmp7(1128).intl;
+            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1113).t["gl/XHJ"]), description: null };
+            intl9 = tmp7(1113).intl;
           }
           obj7 = { type: obj.UNAVAILABLE, text: null, description: null };
           const obj8 = { type: obj.UNAVAILABLE, text: null, description: null };
@@ -216,13 +216,13 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
     } else {
       const intl = intl12.intl;
       if (isDiscoverable3) {
-        formatToPlainStringResult = intl.string(tmp3(1128).t.FJ6Z01);
+        formatToPlainStringResult = intl.string(tmp3(1113).t.FJ6Z01);
         tmp7 = tmp3;
       } else {
         obj = { openPremiumSettings: onOpenPremiumSettings };
-        formatToPlainStringResult = intl.format(tmp3(1128).t.U6vLcA, obj);
+        formatToPlainStringResult = intl.format(tmp3(1113).t.U6vLcA, obj);
         tmp7 = tmp3;
       }
     }
   }
-};
+}

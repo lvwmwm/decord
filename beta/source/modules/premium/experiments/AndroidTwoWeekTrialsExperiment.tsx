@@ -1,11 +1,11 @@
-// Module ID: 14679
-// Function ID: 14680
+// Module ID: 15224
+// Function ID: 15225
 // Name: AndroidTwoWeekTrialsExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled
 
-// Module 14679 (AndroidTwoWeekTrialsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 15224 (AndroidTwoWeekTrialsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,11 +16,11 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/premium/experiments/AndroidTwoWeekTrialsExperiment.tsx");
 
 export const AndroidTwoWeekTrialsExperiment = apexExperiment;
-export const isAndroidTwoWeekTrialsExperimentEnabled = function isAndroidTwoWeekTrialsExperimentEnabled(location) {
+export function isAndroidTwoWeekTrialsExperimentEnabled(location) {
   const obj = { location: location.location };
   return apexExperiment.getConfig(obj).enabled;
-};
-export const isAndroidTwoWeekTrialsTrialCTAEnabled = function isAndroidTwoWeekTrialsTrialCTAEnabled(location) {
+}
+export function isAndroidTwoWeekTrialsTrialCTAEnabled(location) {
   const obj = { location: location.location };
   return apexExperiment.getConfig(obj).trialCTAEnabled;
-};
+}

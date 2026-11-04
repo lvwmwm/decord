@@ -1,17 +1,17 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12525
+// Function ID: 12526
 // Name: AppLauncherChannelOption
-// Dependencies: [32, 19, 4855, 21, 504, 5636, 12221, 12236, 5242, 12236, 2002, 2]
+// Dependencies: [32, 19, 4863, 21, 504, 5652, 12509, 12526, 5258, 12526, 1994, 2]
 // Exports: default
 
-// Module 12235 (AppLauncherChannelOption)
+// Module 12525 (AppLauncherChannelOption)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import AppLauncherChannelListActionSheet from "AppLauncherChannelListActionSheet" /* 12236 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import AppLauncherChannelListActionSheet from "AppLauncherChannelListActionSheet" /* 12526 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,14 +26,13 @@ export default function AppLauncherChannelOption(option) {
   let hasError;
   let onActionSheetDismiss;
   let onChannelPress;
-  let style;
   let tmp10;
   option = option.option;
   ({ initialValue: importDefault, onChannelPress } = option);
   ({ onActionSheetDismiss: _slicedToArray, channel: react, onPress: ChannelStore } = option);
   first = undefined;
   closure_7 = undefined;
-  ({ style, autoFocus, hasError } = option);
+  ({ autoFocus, hasError } = option);
   [first, closure_7] = react.useState(() => {
     let channelId = null;
     if (null != importDefault) {
@@ -59,7 +58,6 @@ export default function AppLauncherChannelOption(option) {
     }
   }, items2);
   const obj2 = {
-    style,
     option,
     hasError,
     selected: null != stateFromStores,
@@ -87,7 +85,7 @@ export default function AppLauncherChannelOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(12236, dependencyMap.paths);
+      const tmp4 = asyncRequire(12526, dependencyMap.paths);
       openLazy(tmp4, AppLauncherChannelListActionSheet.APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

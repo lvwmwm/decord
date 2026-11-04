@@ -1,505 +1,30 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 14028
+// Function ID: 14029
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4936, 4855, 12562, 1087, 21, 558, 576, 504, 1114, 5743, 13396, 9094, 1211, 7480, 6862, 7351, 1128, 13388, 2]
+// Dependencies: [19, 4947, 4863, 12809, 1072, 21, 504, 1099, 5760, 11195, 9130, 1196, 7521, 6902, 6906, 14021, 1113, 2]
 
-// Module 13395 (ChatInputGuardLurking)
+// Module 14028 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7351 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7480 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9094 */;
-import ChatInputConstants from "ChatInputConstants" /* 12562 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13388 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13396 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6906 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7521 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9130 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11195 */;
+import ChatInputConstants from "ChatInputConstants" /* 12809 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4936 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import Constants from "Constants" /* 1087 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
-
-let importDefault;
 
 let c9;
 let metroImportAll;
 const TextAreaCta = ChatInputConstants.TextAreaCta;
 ({ AnalyticEvents: metroImportAll, JoinGuildSources: c9 } = Constants);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardLurking(channel) {
-  let closure_1;
-  let isLurking;
-  let isReadonlyAnnouncementsChannel;
-  let lurkingSource;
-  let obj3;
-  let obj4;
-  let pendingGameProfileReturn;
-  let tmp11;
-  let tmp4;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  const tmp = channel;
-  let obj = channel(576);
-  const cResult = obj.c(36);
-  channel = channel.channel;
-  ({ pendingGameProfileReturn, isReadonlyAnnouncementsChannel } = channel);
-  if (cResult[0] !== channel) {
-    let guildId = channel.getGuildId();
-    cResult[0] = channel;
-    cResult[1] = guildId;
-    tmp4 = guildId;
-  } else {
-    tmp4 = cResult[1];
-  }
-  importDefault = tmp4;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LurkingStore];
-    cResult[2] = items;
-    tmp6 = items;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== tmp4) {
-    class C {
-      constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        const obj = { isLurking: isLurkingResult, lurkingSource: LurkingStore.getLurkingSourceForGuild(closure_1) };
-        return obj;
-      }
-    }
-    const items1 = [tmp4];
-    cResult[3] = tmp4;
-    cResult[4] = C;
-    cResult[5] = items1;
-    tmp9 = items1;
-    tmp8 = C;
-  } else {
-    class C {
-      constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        const obj = { isLurking: isLurkingResult, lurkingSource: LurkingStore.getLurkingSourceForGuild(closure_1) };
-        return obj;
-      }
-    }
-    tmp9 = cResult[5];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp6, tmp8, tmp9);
-  ({ isLurking, lurkingSource } = stateFromStoresObject);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        const obj = channel(dependencyMap[9]);
-        const history = obj.getHistory();
-        history.goBack();
-      }
-    }
-    cResult[6] = R;
-    tmp11 = R;
-  } else {
-    class R {
-      constructor() {
-        const obj = channel(dependencyMap[9]);
-        const history = obj.getHistory();
-        history.goBack();
-      }
-    }
-  }
-  if (cResult[7] === channel.id) {
-    class R {
-      constructor() {
-        const obj = channel(dependencyMap[9]);
-        const history = obj.getHistory();
-        history.goBack();
-      }
-    }
-    if (cResult[10] !== tmp4) {
-      class E {
-        constructor() {
-          if (null != closure_1) {
-            const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-            let type;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            const tmp3 = constants;
-            if (type === constants.DIRECTORY_ENTRY) {
-              channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                HubProgressActionCreators;
-                const guildId = channel.getGuildId();
-                const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-              }
-            }
-            const obj2 = GuildDiscoveryUtilsAll;
-            const result1 = obj2.trackGuildJoinClicked(tmp);
-            const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-            const obj3 = AppAnalyticsUtilsDefault;
-            obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-            const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-            const obj5 = GuildActionCreatorsDefault;
-            const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-            joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-          }
-        }
-      }
-      cResult[10] = tmp4;
-      cResult[11] = E;
-    } else {
-      class E {
-        constructor() {
-          if (null != closure_1) {
-            const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-            let type;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            const tmp3 = constants;
-            if (type === constants.DIRECTORY_ENTRY) {
-              channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                HubProgressActionCreators;
-                const guildId = channel.getGuildId();
-                const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-              }
-            }
-            const obj2 = GuildDiscoveryUtilsAll;
-            const result1 = obj2.trackGuildJoinClicked(tmp);
-            const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-            const obj3 = AppAnalyticsUtilsDefault;
-            obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-            const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-            const obj5 = GuildActionCreatorsDefault;
-            const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-            joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-          }
-        }
-      }
-    }
-    if (lurkingSource != null) {
-      class E {
-        constructor() {
-          if (null != closure_1) {
-            const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-            let type;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            const tmp3 = constants;
-            if (type === constants.DIRECTORY_ENTRY) {
-              channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                HubProgressActionCreators;
-                const guildId = channel.getGuildId();
-                const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-              }
-            }
-            const obj2 = GuildDiscoveryUtilsAll;
-            const result1 = obj2.trackGuildJoinClicked(tmp);
-            const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-            const obj3 = AppAnalyticsUtilsDefault;
-            obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-            const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-            const obj5 = GuildActionCreatorsDefault;
-            const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-            joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-          }
-        }
-      }
-    }
-    if (undefined === constants2.DIRECTORY_ENTRY) {
-      let tmp17;
-      let tmp16;
-      let tmp20;
-      let tmp22;
-      class E {
-        constructor() {
-          if (null != closure_1) {
-            const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-            let type;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            const tmp3 = constants;
-            if (type === constants.DIRECTORY_ENTRY) {
-              channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                HubProgressActionCreators;
-                const guildId = channel.getGuildId();
-                const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-              }
-            }
-            const obj2 = GuildDiscoveryUtilsAll;
-            const result1 = obj2.trackGuildJoinClicked(tmp);
-            const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-            const obj3 = AppAnalyticsUtilsDefault;
-            obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-            const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-            const obj5 = GuildActionCreatorsDefault;
-            const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-            joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-          }
-        }
-      }
-      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
-          constructor() {
-            if (null != closure_1) {
-              const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-              let type;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              const tmp3 = constants;
-              if (type === constants.DIRECTORY_ENTRY) {
-                channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                  HubProgressActionCreators;
-                  const guildId = channel.getGuildId();
-                  const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-                }
-              }
-              const obj2 = GuildDiscoveryUtilsAll;
-              const result1 = obj2.trackGuildJoinClicked(tmp);
-              const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-              const obj3 = AppAnalyticsUtilsDefault;
-              obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-              const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-              const obj5 = GuildActionCreatorsDefault;
-              const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-              joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-            }
-          }
-        }
-        const stringResult = obj3.string(tmp(1128).t.G42YmG);
-        const intl = tmp(1128).intl;
-        const stringResult1 = intl.string(tmp(1128).t.GlKb5i);
-        cResult[12] = stringResult;
-        cResult[13] = stringResult1;
-        tmp17 = stringResult1;
-        tmp16 = stringResult;
-      } else {
-        class E {
-          constructor() {
-            if (null != closure_1) {
-              const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-              let type;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              const tmp3 = constants;
-              if (type === constants.DIRECTORY_ENTRY) {
-                channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                  HubProgressActionCreators;
-                  const guildId = channel.getGuildId();
-                  const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-                }
-              }
-              const obj2 = GuildDiscoveryUtilsAll;
-              const result1 = obj2.trackGuildJoinClicked(tmp);
-              const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-              const obj3 = AppAnalyticsUtilsDefault;
-              obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-              const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-              const obj5 = GuildActionCreatorsDefault;
-              const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-              joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-            }
-          }
-        }
-        tmp17 = cResult[13];
-      }
-      const _Symbol = Symbol;
-      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
-          constructor() {
-            if (null != closure_1) {
-              const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-              let type;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              const tmp3 = constants;
-              if (type === constants.DIRECTORY_ENTRY) {
-                channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                  HubProgressActionCreators;
-                  const guildId = channel.getGuildId();
-                  const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-                }
-              }
-              const obj2 = GuildDiscoveryUtilsAll;
-              const result1 = obj2.trackGuildJoinClicked(tmp);
-              const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-              const obj3 = AppAnalyticsUtilsDefault;
-              obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-              const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-              const obj5 = GuildActionCreatorsDefault;
-              const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-              joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-            }
-          }
-        }
-        const stringResult2 = obj4.string(tmp(1128).t.RLch70);
-        cResult[14] = stringResult2;
-        tmp20 = stringResult2;
-      } else {
-        class E {
-          constructor() {
-            if (null != closure_1) {
-              const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-              let type;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              const tmp3 = constants;
-              if (type === constants.DIRECTORY_ENTRY) {
-                channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                  HubProgressActionCreators;
-                  const guildId = channel.getGuildId();
-                  const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-                }
-              }
-              const obj2 = GuildDiscoveryUtilsAll;
-              const result1 = obj2.trackGuildJoinClicked(tmp);
-              const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-              const obj3 = AppAnalyticsUtilsDefault;
-              obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-              const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-              const obj5 = GuildActionCreatorsDefault;
-              const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-              joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-            }
-          }
-        }
-      }
-      if (cResult[15] !== tmp12) {
-        class E {
-          constructor() {
-            if (null != closure_1) {
-              const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-              let type;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              const tmp3 = constants;
-              if (type === constants.DIRECTORY_ENTRY) {
-                channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                  HubProgressActionCreators;
-                  const guildId = channel.getGuildId();
-                  const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-                }
-              }
-              const obj2 = GuildDiscoveryUtilsAll;
-              const result1 = obj2.trackGuildJoinClicked(tmp);
-              const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-              const obj3 = AppAnalyticsUtilsDefault;
-              obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-              const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-              const obj5 = GuildActionCreatorsDefault;
-              const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-              joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-            }
-          }
-        }
-        const tmp24 = jsx(ChatInputGuardDefault, { type: "button-action", message: tmp16, buttonSecondaryText: tmp17, buttonSecondaryOnPress: tmp11, buttonPrimaryText: tmp20, buttonPrimaryOnPress: tmp12 });
-        cResult[15] = tmp12;
-        cResult[16] = tmp24;
-        tmp22 = tmp24;
-      } else {
-        class E {
-          constructor() {
-            if (null != closure_1) {
-              const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-              let type;
-              if (lurkingSourceForGuild != null) {
-                type = lurkingSourceForGuild.type;
-              }
-              const tmp3 = constants;
-              if (type === constants.DIRECTORY_ENTRY) {
-                channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-                if (null != channel) {
-                  const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                  HubProgressActionCreators;
-                  const guildId = channel.getGuildId();
-                  const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-                }
-              }
-              const obj2 = GuildDiscoveryUtilsAll;
-              const result1 = obj2.trackGuildJoinClicked(tmp);
-              const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-              const obj3 = AppAnalyticsUtilsDefault;
-              obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-              const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-              const obj5 = GuildActionCreatorsDefault;
-              const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-              joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-            }
-          }
-        }
-      }
-      return tmp22;
-    } else {
-      class E {
-        constructor() {
-          if (null != closure_1) {
-            const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(tmp);
-            let type;
-            if (lurkingSourceForGuild != null) {
-              type = lurkingSourceForGuild.type;
-            }
-            const tmp3 = constants;
-            if (type === constants.DIRECTORY_ENTRY) {
-              channel = ChannelStore.getChannel(lurkingSourceForGuild.directoryChannelId);
-              if (null != channel) {
-                const setHubProgressActionComplete = HubProgressActionCreators.setHubProgressActionComplete;
-                HubProgressActionCreators;
-                const guildId = channel.getGuildId();
-                const result = setHubProgressActionComplete(guildId, preloaded_user_settings.HubProgressStep.JOIN_GUILD);
-              }
-            }
-            const obj2 = GuildDiscoveryUtilsAll;
-            const result1 = obj2.trackGuildJoinClicked(tmp);
-            const obj = { cta_type: TextAreaCta.JOIN_GUILD };
-            const obj3 = AppAnalyticsUtilsDefault;
-            obj3.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj);
-            const obj4 = { source: tmp3.CHAT_INPUT_BLOCKER };
-            const obj5 = GuildActionCreatorsDefault;
-            const joinGuildResult = obj5.joinGuild(closure_1, obj4);
-            joinGuildResult.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
-          }
-        }
-      }
-    }
-  }
-  const fn = function k() {
-    if (null != closure_1) {
-      const obj2 = { cta_type: TextAreaCta.FOLLOW_ANNOUNCEMENT };
-      const obj = AppAnalyticsUtilsDefault;
-      obj.trackWithMetadata(metroImportAll.TEXT_AREA_CTA_CLICKED, obj2);
-      const obj3 = showChannelFollowingActionSheet;
-      const result = obj3.showChannelFollowingActionSheet(channel.id, tmp);
-    }
-  };
-  cResult[7] = channel.id;
-  cResult[8] = tmp4;
-  cResult[9] = fn;
-}) : (function ChatInputGuardLurking(channel) {
+const memoResult = react.memo(function ChatInputGuardLurking(channel) {
   let intl;
   let intl2;
   let intl3;
@@ -527,7 +52,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ isLurking, lurkingSource } = stateFromStoresObject);
   const items2 = [guildId, channel.id];
   const callback = react.useCallback(() => {
-    const obj = channel(dependencyMap[9]);
+    const obj = channel(dependencyMap[7]);
     const history = obj.getHistory();
     history.goBack();
   }, []);
@@ -574,45 +99,45 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(13388);
-    const intl9 = tmp2(1128).intl;
-    const intl10 = tmp2(1128).intl;
-    const intl11 = tmp2(1128).intl;
-    tmp15Result = <tmp14 type="button-action" message={intl9.string(tmp2(1128).t.G42YmG)} buttonSecondaryText={intl10.string(tmp2(1128).t.GlKb5i)} buttonSecondaryOnPress={callback} buttonPrimaryText={intl11.string(tmp2(1128).t.RLch70)} buttonPrimaryOnPress={callback2} />;
+    guildId(14021);
+    const intl9 = tmp2(1113).intl;
+    const intl10 = tmp2(1113).intl;
+    const intl11 = tmp2(1113).intl;
+    tmp15Result = <tmp14 type="button-action" message={intl9.string(tmp2(1113).t.G42YmG)} buttonSecondaryText={intl10.string(tmp2(1113).t.GlKb5i)} buttonSecondaryOnPress={callback} buttonPrimaryText={intl11.string(tmp2(1113).t.RLch70)} buttonPrimaryOnPress={callback2} />;
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(13388);
+    const tmp17 = guildId(14021);
     if (null != channel.pendingGameProfileReturn) {
-      let obj3 = { type: "button-action", message: intl6.string(tmp2(1128).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1128).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1128).t.RLch70), buttonPrimaryOnPress: callback2 };
-      intl6 = tmp2(1128).intl;
-      intl7 = tmp2(1128).intl;
+      let obj3 = { type: "button-action", message: intl6.string(tmp2(1113).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1113).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1113).t.RLch70), buttonPrimaryOnPress: callback2 };
+      intl6 = tmp2(1113).intl;
+      intl7 = tmp2(1113).intl;
       ({ onReturnToGameProfile: obj4.buttonSecondaryOnPress, isReturning: obj4.buttonSecondaryLoading } = channel.pendingGameProfileReturn);
-      intl8 = tmp2(1128).intl;
+      intl8 = tmp2(1113).intl;
       obj9 = obj3;
     } else if (isReadonlyAnnouncementsChannel) {
-      let obj5 = { type: "button-action", message: intl3.string(tmp2(1128).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1128).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
-      intl3 = tmp2(1128).intl;
+      let obj5 = { type: "button-action", message: intl3.string(tmp2(1113).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1113).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
+      intl3 = tmp2(1113).intl;
       stringResult = undefined;
       if (isLurking) {
-        const intl4 = tmp2(1128).intl;
-        stringResult = intl4.string(tmp2(1128).t.VJlc0S);
+        const intl4 = tmp2(1113).intl;
+        stringResult = intl4.string(tmp2(1113).t.VJlc0S);
       }
       tmp10 = undefined;
       if (isLurking) {
         tmp10 = callback2;
       }
-      intl5 = tmp2(1128).intl;
+      intl5 = tmp2(1113).intl;
       obj9 = obj5;
     } else {
-      obj9 = { type: "button-action", message: intl.string(tmp2(1128).t.G42YmG), buttonPrimaryText: intl2.string(tmp2(1128).t.RLch70), buttonPrimaryOnPress: callback2 };
-      intl = tmp2(1128).intl;
-      intl2 = tmp2(1128).intl;
+      obj9 = { type: "button-action", message: intl.string(tmp2(1113).t.G42YmG), buttonPrimaryText: intl2.string(tmp2(1113).t.RLch70), buttonPrimaryOnPress: callback2 };
+      intl = tmp2(1113).intl;
+      intl2 = tmp2(1113).intl;
     }
     tmp15Result = tmp15(tmp17, obj9);
   }
   return tmp15Result;
-}));
+});
 let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurking.tsx");
 
 export default memoResult;

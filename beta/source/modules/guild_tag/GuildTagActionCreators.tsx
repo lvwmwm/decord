@@ -1,14 +1,14 @@
-// Module ID: 15196
-// Function ID: 15197
+// Module ID: 15741
+// Function ID: 15742
 // Name: GuildTagActionCreators
-// Dependencies: [5, 1392, 1087, 1297, 584, 2]
+// Dependencies: [5, 1383, 1072, 1282, 572, 2]
 // Exports: adoptGuildIdentity
 
-// Module 15196 (GuildTagActionCreators)
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 15741 (GuildTagActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
@@ -31,7 +31,7 @@ let obj = function _adoptGuildIdentity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -97,6 +97,6 @@ let obj = function _adoptGuildIdentity() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_tag/GuildTagActionCreators.tsx");
 
-export const adoptGuildIdentity = function adoptGuildIdentity() {
+export function adoptGuildIdentity() {
   return obj(...arguments);
-};
+}

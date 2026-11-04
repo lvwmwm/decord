@@ -1,17 +1,17 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 14418
+// Function ID: 14419
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: preloadImage
 
-// Module 13901 (react-native)
+// Module 14418 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
 const result = size.fileFinishedImporting("modules/image/ImagePreload.native.tsx");
 
-export const preloadImage = function preloadImage(arg0, arg1) {
+export function preloadImage(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const prefetchResult = Image.prefetch(arg0);
@@ -25,4 +25,4 @@ export const preloadImage = function preloadImage(arg0, arg1) {
   nextPromise.catch(() => {
 
   });
-};
+}

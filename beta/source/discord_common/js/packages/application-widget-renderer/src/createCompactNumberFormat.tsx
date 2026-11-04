@@ -1,10 +1,10 @@
-// Module ID: 11943
-// Function ID: 11944
+// Module ID: 12262
+// Function ID: 12263
 // Name: createCompactNumberFormat
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 11943 (createCompactNumberFormat)
+// Module 12262 (createCompactNumberFormat)
 import size from "module_2" /* 2 */;
 
 let map1, set;
@@ -25,7 +25,7 @@ function toAsciiDigits(arg0, get) {
 }
 let result = size.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/createCompactNumberFormat.tsx");
 
-export const createCompactNumberFormat = function createCompactNumberFormat(stateFromStores) {
+export function createCompactNumberFormat(stateFromStores) {
   const numberFormat = new Intl.NumberFormat(stateFromStores, { useGrouping: false });
   map = new Map();
   let num = 0;
@@ -158,4 +158,4 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
     }
   };
   return obj;
-};
+}

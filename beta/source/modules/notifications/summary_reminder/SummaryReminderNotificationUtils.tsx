@@ -1,24 +1,24 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 17511
+// Function ID: 17512
 // Name: SummaryReminderNotificationUtils
-// Dependencies: [4948, 1087, 4831, 1267, 2]
+// Dependencies: [4959, 1072, 4839, 1252, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 16908 (SummaryReminderNotificationUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import NotificationConstants from "NotificationConstants" /* 4948 */;
+// Module 17511 (SummaryReminderNotificationUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import NotificationConstants from "NotificationConstants" /* 4959 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/notifications/summary_reminder/SummaryReminderNotificationUtils.tsx");
 
-export const onSummaryReminderNotificationSettingsChanged = function onSummaryReminderNotificationSettingsChanged(summary_reminder_notifications) {
+export function onSummaryReminderNotificationSettingsChanged(summary_reminder_notifications) {
   const EnableSummaryReminderNotifications = UserSettings.EnableSummaryReminderNotifications;
   EnableSummaryReminderNotifications.updateSetting(summary_reminder_notifications);
   const obj = AnalyticsUtilsDefault;
   const obj2 = { update_type: constants.ACCOUNT, summary_reminder_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
-};
+}

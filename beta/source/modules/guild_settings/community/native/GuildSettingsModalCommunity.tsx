@@ -1,27 +1,27 @@
-// Module ID: 19195
-// Function ID: 19196
+// Module ID: 19828
+// Function ID: 19829
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 4855, 4933, 4935, 4945, 1392, 9038, 17964, 1087, 21, 5003, 587, 5284, 1505, 504, 9037, 1128, 7517, 6956, 5636, 5242, 8957, 2002, 8983, 6009, 7019, 6935, 2]
+// Dependencies: [19, 4863, 4944, 4946, 4956, 1383, 9075, 18555, 1072, 21, 5014, 575, 5596, 1497, 504, 9074, 1113, 7558, 6998, 5652, 5258, 9002, 1994, 8177, 6027, 7060, 6975, 2]
 // Exports: default
 
-// Module 19195 (GuildSettingsModalCommunity)
-import nativeDefault from "native" /* 587 */;
-import intl11 from "intl" /* 1128 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4933 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7517 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17964 */;
+// Module 19828 (GuildSettingsModalCommunity)
+import nativeDefault from "native" /* 575 */;
+import intl15 from "intl" /* 1113 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7558 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9074 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 18555 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9038 */;
-import Constants from "Constants" /* 1087 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9075 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -32,15 +32,16 @@ let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
+let closure_18;
 let map1;
 let obj2;
 let closure_6 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const calculateLocaleOptions = GuildSettingsDiscoveryConstants.calculateLocaleOptions;
 ({ ChannelTypes: closure_12, GuildFeatures: map1, GuildSettingsSections: closure_14, Permissions: closure_15 } = Constants);
-({ jsx: closure_16, jsxs: closure_17 } = Fragment);
+({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = Fragment);
 let obj = { overview: { flex: 1 }, overviewContent: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_16 };
-let closure_18 = createStyles.createStyles(obj);
+let closure_19 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunity.tsx");
 
 export default function GuildSettingsModalCommunity(guildId) {
@@ -56,29 +57,30 @@ export default function GuildSettingsModalCommunity(guildId) {
   let TrailingText4;
   let canManage;
   let intl10;
+  let intl11;
+  let intl12;
+  let intl13;
+  let intl14;
   let intl2;
   let intl3;
-  let intl4;
-  let intl5;
-  let intl6;
   let intl7;
   let intl8;
-  let intl9;
   let isAdmin;
   let items10;
+  let items12;
   let obj10;
   let obj12;
   let obj13;
-  let obj15;
   let obj16;
+  let obj17;
   let obj18;
-  let obj19;
+  let obj20;
   let obj21;
-  let obj22;
+  let obj23;
   let obj24;
+  let obj26;
   let obj9;
   let stringResult;
-  let tmp23;
   guildId = guildId.guildId;
   const onClose = guildId.onClose;
   navigation = undefined;
@@ -90,11 +92,11 @@ export default function GuildSettingsModalCommunity(guildId) {
   let obj = guildId(navigation[12]);
   let tmp3 = onClose;
   const token = obj.useToken(onClose(navigation[11]).modules.mobile.TABLE_ROW_PADDING);
-  const tmp5 = closure_18();
+  const tmp5 = closure_19();
   let obj2 = guildId(navigation[13]);
   navigation = obj2.useNavigation();
   let obj3 = guildId(navigation[14]);
-  const items = [preferredLocale];
+  let items = [preferredLocale];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => preferredLocale.getProps());
   const submitting = stateFromStoresObject.submitting;
   const hasChanges = stateFromStoresObject.hasChanges;
@@ -208,10 +210,10 @@ export default function GuildSettingsModalCommunity(guildId) {
       if (tmp3) {
         fn = () => {
           let intl;
-          const obj = { onPress: handlePublicCancelChanges, text: intl.string(intl11.t["ETE/oC"]) };
+          const obj = { onPress: handlePublicCancelChanges, text: intl.string(intl15.t["ETE/oC"]) };
           const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
-          intl = intl11.intl;
-          return authStore3(HeaderActionButton, obj);
+          intl = intl15.intl;
+          return authStore4(HeaderActionButton, obj);
         };
       }
     }
@@ -221,10 +223,10 @@ export default function GuildSettingsModalCommunity(guildId) {
     } else if (hasChanges) {
       fn2 = () => {
         let intl;
-        const obj = { onPress: handlePublicSaveChanges, text: intl.string(intl11.t["R3BPH+"]) };
+        const obj = { onPress: handlePublicSaveChanges, text: intl.string(intl15.t["R3BPH+"]) };
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
-        intl = intl11.intl;
-        return authStore3(HeaderActionButton, obj);
+        intl = intl15.intl;
+        return authStore4(HeaderActionButton, obj);
       };
     }
     setOptions(obj);
@@ -250,10 +252,12 @@ export default function GuildSettingsModalCommunity(guildId) {
   const callback2 = obj6.useCallback(() => {
     let id;
     let intl;
+    let intl2;
+    let items;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let obj = {
-      title: intl.string(intl11.t.Yr6nGx),
-      items: callback1(),
+      title: intl.string(intl15.t.Yr6nGx),
+      items,
       onItemSelect(rulesChannelId) {
         const obj = onClose(navigation[15]);
         const obj2 = { rulesChannelId };
@@ -265,11 +269,17 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8957, dependencyMap.paths);
-    intl = intl11.intl;
+    const tmp2 = asyncRequire(9002, dependencyMap.paths);
+    intl = intl15.intl;
+    let obj2 = { value: null, label: intl2.string(intl15.t.PoWNfe) };
+    intl2 = intl15.intl;
+    items = [obj2, ...callback1()];
     id = undefined;
     if (rulesChannel != null) {
       id = rulesChannel.id;
+    }
+    if (id == null) {
+      id = null;
     }
     openLazy(tmp2, "SelectRulesChannel", obj);
   }, items7);
@@ -277,10 +287,12 @@ export default function GuildSettingsModalCommunity(guildId) {
   const callback3 = obj6.useCallback(() => {
     let id;
     let intl;
+    let intl2;
+    let items;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let obj = {
-      title: intl.string(intl11.t.VqhxxN),
-      items: callback1(),
+      title: intl.string(intl15.t.VqhxxN),
+      items,
       onItemSelect(publicUpdatesChannelId) {
         const obj = onClose(navigation[15]);
         const obj2 = { publicUpdatesChannelId };
@@ -292,11 +304,17 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8957, dependencyMap.paths);
-    intl = intl11.intl;
+    const tmp2 = asyncRequire(9002, dependencyMap.paths);
+    intl = intl15.intl;
+    let obj2 = { value: null, label: intl2.string(intl15.t.PoWNfe) };
+    intl2 = intl15.intl;
+    items = [obj2, ...callback1()];
     id = undefined;
     if (publicUpdatesChannel != null) {
       id = publicUpdatesChannel.id;
+    }
+    if (id == null) {
+      id = null;
     }
     openLazy(tmp2, "SelectUpdatesChannel", obj);
   }, items8);
@@ -306,7 +324,7 @@ export default function GuildSettingsModalCommunity(guildId) {
     let intl;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let obj = {
-      title: intl.string(intl11.t.wSD7jV),
+      title: intl.string(intl15.t.wSD7jV),
       items: callback1(),
       onItemSelect(safetyAlertsChannelId) {
         const obj = onClose(navigation[15]);
@@ -319,8 +337,8 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8957, dependencyMap.paths);
-    intl = intl11.intl;
+    const tmp2 = asyncRequire(9002, dependencyMap.paths);
+    intl = intl15.intl;
     id = undefined;
     if (safetyAlertsChannel != null) {
       id = safetyAlertsChannel.id;
@@ -334,16 +352,15 @@ export default function GuildSettingsModalCommunity(guildId) {
   let tmp22Result4 = null;
   if (null != guild) {
     ({ overview: obj7.style, overviewContent: obj7.contentContainerStyle } = tmp5);
-    const obj8 = { style: null, contentContainerStyle: null, children: tmp23(Stack, obj9) };
+    const obj8 = { style: null, contentContainerStyle: null, children: closure_18(Stack, obj9) };
     const Form = tmp(tmp2[23]).Form;
     obj9 = { style: obj10, spacing: tmp3(tmp2[11]).space.PX_24, children: items10 };
     obj10 = { paddingHorizontal: token };
     Stack = tmp(tmp2[24]).Stack;
-    let str = null;
-    tmp23 = closure_17;
+    let channelName = null;
     if (null != rulesChannel) {
       const tmpResult = tmp(tmp2[19]);
-      str = tmpResult.computeChannelName(rulesChannel, callback1, safetyAlertsChannel, true);
+      channelName = tmpResult.computeChannelName(rulesChannel, callback1, safetyAlertsChannel, true);
     }
     const obj11 = { helperText: intl2.string(tmp(tmp2[16]).t.BtwmYB), hasIcons: false, children: closure_16(TableRow, obj12) };
     const TableRowGroup = tmp(tmp2[25]).TableRowGroup;
@@ -352,77 +369,101 @@ export default function GuildSettingsModalCommunity(guildId) {
     TableRow = tmp(tmp2[26]).TableRow;
     intl3 = tmp(tmp2[16]).intl;
     TrailingText = tmp(tmp2[26]).TableRow.TrailingText;
+    if (channelName == null) {
+      const intl4 = tmp(tmp2[16]).intl;
+      channelName = intl4.string(tmp(tmp2[16]).t.PoWNfe);
+    }
+    obj13 = { text: channelName };
+    items10 = [closure_16(TableRowGroup, obj11), , , , ];
+    let channelName1 = null;
+    if (null != publicUpdatesChannel) {
+      const tmpResult3 = tmp(tmp2[19]);
+      channelName1 = tmpResult3.computeChannelName(publicUpdatesChannel, callback1, safetyAlertsChannel, true);
+    }
+    const TableRowGroup2 = tmp(tmp2[25]).TableRowGroup;
+    const intl5 = tmp(tmp2[16]).intl;
+    const items11 = [intl5.string(tmp(tmp2[16]).t.ZFeonu), ];
+    let prop;
+    if (guild != null) {
+      prop = guild.publicUpdatesChannelId;
+    }
+    let tmp23Result = null;
+    if (null == prop) {
+      let prop1;
+      if (guild != null) {
+        prop1 = guild.safetyAlertsChannelId;
+      }
+      tmp23Result = null;
+      if (null == prop1) {
+        const obj14 = { children: items12 };
+        const intl6 = tmp(tmp2[16]).intl;
+        items12 = [" ", intl6.string(tmp(tmp2[16]).t["0H6Cdy"])];
+        tmp23Result = tmp23(tmp34, obj14);
+      }
+    }
+    const obj15 = { helperText: closure_18(closure_17, obj16), hasIcons: false, children: closure_16(TableRow2, obj17) };
+    obj16 = { children: items11 };
+    items11[1] = tmp23Result;
+    obj17 = { label: intl7.string(tmp(tmp2[16]).t.vAyDGU), subLabel: intl8.string(tmp(tmp2[16]).t.zdWNET), disabled: !isAdmin, trailing: closure_16(TrailingText2, obj18), arrow: true, onPress: callback3 };
+    TableRow2 = tmp(tmp2[26]).TableRow;
+    intl7 = tmp(tmp2[16]).intl;
+    intl8 = tmp(tmp2[16]).intl;
+    TrailingText2 = tmp(tmp2[26]).TableRow.TrailingText;
+    if (channelName1 == null) {
+      const intl9 = tmp(tmp2[16]).intl;
+      channelName1 = intl9.string(tmp(tmp2[16]).t.PoWNfe);
+    }
+    obj18 = { text: channelName1 };
+    items10[1] = closure_16(TableRowGroup2, obj15);
+    let str = null;
+    if (null != safetyAlertsChannel) {
+      const tmpResult4 = tmp(tmp2[19]);
+      str = tmpResult4.computeChannelName(safetyAlertsChannel, callback1, safetyAlertsChannel, true);
+    }
+    const obj19 = { helperText: intl10.string(tmp(tmp2[16]).t.htioQo), hasIcons: false, children: closure_16(TableRow3, obj20) };
+    const TableRowGroup3 = tmp(tmp2[25]).TableRowGroup;
+    intl10 = tmp(tmp2[16]).intl;
+    obj20 = { label: intl11.string(tmp(tmp2[16]).t.sMkYE8), disabled: !canManage, trailing: closure_16(TrailingText3, obj21), arrow: true, onPress: callback4 };
+    TableRow3 = tmp(tmp2[26]).TableRow;
+    intl11 = tmp(tmp2[16]).intl;
+    TrailingText3 = tmp(tmp2[26]).TableRow.TrailingText;
     if (str == null) {
       str = "";
     }
-    obj13 = { text: str };
-    items10 = [closure_16(TableRowGroup, obj11), , , , ];
-    let str2 = null;
-    if (null != publicUpdatesChannel) {
-      const tmpResult3 = tmp(tmp2[19]);
-      str2 = tmpResult3.computeChannelName(publicUpdatesChannel, callback1, safetyAlertsChannel, true);
-    }
-    const obj14 = { helperText: intl4.string(tmp(tmp2[16]).t.ZFeonu), hasIcons: false, children: closure_16(TableRow2, obj15) };
-    const TableRowGroup2 = tmp(tmp2[25]).TableRowGroup;
-    intl4 = tmp(tmp2[16]).intl;
-    obj15 = { label: intl5.string(tmp(tmp2[16]).t.vAyDGU), disabled: !isAdmin, trailing: closure_16(TrailingText2, obj16), arrow: true, onPress: callback3 };
-    TableRow2 = tmp(tmp2[26]).TableRow;
-    intl5 = tmp(tmp2[16]).intl;
-    TrailingText2 = tmp(tmp2[26]).TableRow.TrailingText;
-    if (str2 == null) {
-      str2 = "";
-    }
-    obj16 = { text: str2 };
-    items10[1] = closure_16(TableRowGroup2, obj14);
-    let str3 = null;
-    if (null != safetyAlertsChannel) {
-      const tmpResult4 = tmp(tmp2[19]);
-      str3 = tmpResult4.computeChannelName(safetyAlertsChannel, callback1, safetyAlertsChannel, true);
-    }
-    const obj17 = { helperText: intl6.string(tmp(tmp2[16]).t.htioQo), hasIcons: false, children: closure_16(TableRow3, obj18) };
-    const TableRowGroup3 = tmp(tmp2[25]).TableRowGroup;
-    intl6 = tmp(tmp2[16]).intl;
-    obj18 = { label: intl7.string(tmp(tmp2[16]).t.sMkYE8), disabled: !canManage, trailing: closure_16(TrailingText3, obj19), arrow: true, onPress: callback4 };
-    TableRow3 = tmp(tmp2[26]).TableRow;
-    intl7 = tmp(tmp2[16]).intl;
-    TrailingText3 = tmp(tmp2[26]).TableRow.TrailingText;
-    if (str3 == null) {
-      str3 = "";
-    }
-    obj19 = { text: str3 };
-    items10[2] = closure_16(TableRowGroup3, obj17);
+    obj21 = { text: str };
+    items10[2] = closure_16(TableRowGroup3, obj19);
     let preferredLocale2;
     let tmp22Result = null;
     if (null != guild) {
       preferredLocale2 = guild.preferredLocale;
-      const arr12 = calculateLocaleOptions();
-      let found = arr12.find((value) => value.value === preferredLocale2);
-      let str4;
+      const arr14 = calculateLocaleOptions();
+      let found = arr14.find((value) => value.value === preferredLocale2);
+      let str2;
       if (found != null) {
-        str4 = found.label;
+        str2 = found.label;
       }
-      const obj20 = { helperText: intl8.string(tmp(tmp2[16]).t["l2g81/"]), hasIcons: false, children: closure_16(TableRow4, obj21) };
+      const obj22 = { helperText: intl12.string(tmp(tmp2[16]).t["l2g81/"]), hasIcons: false, children: closure_16(TableRow4, obj23) };
       const TableRowGroup4 = tmp(tmp2[25]).TableRowGroup;
-      intl8 = tmp(tmp2[16]).intl;
-      obj21 = { label: intl9.string(tmp(tmp2[16]).t.VeC8vc), disabled: !canManage, trailing: closure_16(TrailingText4, obj22), arrow: true, onPress: tmp20 };
+      intl12 = tmp(tmp2[16]).intl;
+      obj23 = { label: intl13.string(tmp(tmp2[16]).t.VeC8vc), disabled: !canManage, trailing: closure_16(TrailingText4, obj24), arrow: true, onPress: tmp20 };
       TableRow4 = tmp(tmp2[26]).TableRow;
-      intl9 = tmp(tmp2[16]).intl;
+      intl13 = tmp(tmp2[16]).intl;
       TrailingText4 = tmp(tmp2[26]).TableRow.TrailingText;
-      if (str4 == null) {
-        str4 = "";
+      if (str2 == null) {
+        str2 = "";
       }
-      obj22 = { text: str4 };
-      tmp22Result = tmp22(TableRowGroup4, obj20);
+      obj24 = { text: str2 };
+      tmp22Result = tmp22(TableRowGroup4, obj22);
     }
     items10[3] = tmp22Result;
     let tmp22Result3 = null;
     if (isAdmin) {
-      const obj23 = { helperText: stringResult, hasIcons: false, children: closure_16(TableRow5, obj24) };
+      const obj25 = { helperText: stringResult, hasIcons: false, children: closure_16(TableRow5, obj26) };
       const TableRowGroup5 = tmp(tmp2[25]).TableRowGroup;
-      obj24 = { variant: "danger", onPress: callback, label: intl10.string(tmp(tmp2[16]).t.c1BmbC), disabled: null == guild };
+      obj26 = { variant: "danger", onPress: callback, label: intl14.string(tmp(tmp2[16]).t.c1BmbC), disabled: null == guild };
       TableRow5 = tmp(tmp2[26]).TableRow;
-      intl10 = tmp(tmp2[16]).intl;
-      tmp22Result3 = tmp22(TableRowGroup5, obj23);
+      intl14 = tmp(tmp2[16]).intl;
+      tmp22Result3 = tmp22(TableRowGroup5, obj25);
     }
     items10[4] = tmp22Result3;
     tmp22Result4 = tmp22(Form, obj8);

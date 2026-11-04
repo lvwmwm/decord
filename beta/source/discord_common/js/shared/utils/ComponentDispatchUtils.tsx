@@ -1,10 +1,10 @@
-// Module ID: 1125
-// Function ID: 1126
+// Module ID: 1110
+// Function ID: 1111
 // Name: utils/ComponentDispatchUtils
-// Dependencies: [580, 2]
+// Dependencies: [568, 2]
 
-// Module 1125 (utils/ComponentDispatchUtils)
-import _mod580 from "module_580" /* 580 */;
+// Module 1110 (utils/ComponentDispatchUtils)
+import _mod568 from "module_568" /* 568 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
@@ -15,7 +15,7 @@ class ComponentDispatcher {
       obj = {};
     }
     const merged = Object.assign({ emitter: null, _savedDispatches: null });
-    const eventEmitter = new _mod580.EventEmitter();
+    const eventEmitter = new _mod568.EventEmitter();
     merged[0] = eventEmitter;
     merged[1] = {};
     const obj2 = { maxListeners: 100, enableDevtools: false };

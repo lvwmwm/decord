@@ -1,19 +1,19 @@
-// Module ID: 8431
-// Function ID: 8432
+// Module ID: 8496
+// Function ID: 8497
 // Name: StageSpeakerSystemMessage
-// Dependencies: [8350, 1128, 8352, 8354, 2]
+// Dependencies: [8418, 1113, 8420, 8422, 2]
 // Exports: createStageSpeakerSystemMessage
 
-// Module 8431 (StageSpeakerSystemMessage)
-import intl2 from "intl" /* 1128 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8354 */;
+// Module 8496 (StageSpeakerSystemMessage)
+import intl2 from "intl" /* 1113 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8422 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx");
 
-export const createStageSpeakerSystemMessage = function createStageSpeakerSystemMessage(message) {
+export function createStageSpeakerSystemMessage(message) {
   let V4uCm4;
   let formatToParts;
   let obj3;
@@ -28,4 +28,4 @@ export const createStageSpeakerSystemMessage = function createStageSpeakerSystem
   V4uCm4 = intl2.t.V4uCm4;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

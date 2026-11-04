@@ -1,10 +1,10 @@
-// Module ID: 10077
-// Function ID: 10078
+// Module ID: 10158
+// Function ID: 10159
 // Name: Constants
-// Dependencies: [1211, 2]
+// Dependencies: [1196, 2]
 
-// Module 10077 (Constants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+// Module 10158 (Constants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import size from "module_2" /* 2 */;
 
 let obj = { BAD: "bad", NEUTRAL: "neutral", GOOD: "good" };

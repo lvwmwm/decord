@@ -4,4 +4,4 @@
 
 // Module 1310
 
-export default Object.getOwnPropertyDescriptor;
+export default Error;

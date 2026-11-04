@@ -1,15 +1,15 @@
-// Module ID: 1360
-// Function ID: 1361
+// Module ID: 1345
+// Function ID: 1346
 // Name: encodeProperties
 // Dependencies: [2]
 // Exports: encodeProperties
 
-// Module 1360 (encodeProperties)
+// Module 1345 (encodeProperties)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/encodeProperties.tsx");
 
-export const encodeProperties = function encodeProperties(arg0) {
+export function encodeProperties(arg0) {
   try {
     const _Buffer = Buffer;
     const _JSON = JSON;
@@ -18,4 +18,4 @@ export const encodeProperties = function encodeProperties(arg0) {
   } catch (err) {
     return null;
   }
-};
+}

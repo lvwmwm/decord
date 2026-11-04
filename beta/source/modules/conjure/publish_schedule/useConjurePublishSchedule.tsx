@@ -1,13 +1,13 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 12160
+// Function ID: 12161
 // Name: useConjurePublishSchedule
-// Dependencies: [5, 32, 19, 10730, 504, 10838, 1128, 3862, 10839, 2]
+// Dependencies: [5, 32, 19, 10850, 504, 10961, 1113, 3868, 10962, 2]
 // Exports: default
 
-// Module 11879 (useConjurePublishSchedule)
-import intl3 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import ConjureConnectionStore2 from "ConjureConnectionStore" /* 10730 */;
+// Module 12160 (useConjurePublishSchedule)
+import intl3 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import ConjureConnectionStore2 from "ConjureConnectionStore" /* 10850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -83,7 +83,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
         nextPromise.catch(() => {
           if (ref.current.value === closure_1) {
             const intl = intl3.intl;
-            closure_8(intl.string(_modDef3862.n25haz));
+            closure_8(intl.string(_modDef3868.n25haz));
             closure_4(false);
           }
         });
@@ -120,7 +120,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -207,7 +207,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
                   closure_129_7(false);
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 closure_129_3(tmp);
                 result = closure_129_9;
@@ -224,7 +224,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp72) {
           message = tmp72;
           if (0 === c3) {

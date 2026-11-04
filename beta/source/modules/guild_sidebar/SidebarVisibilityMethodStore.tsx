@@ -1,28 +1,28 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9683
+// Function ID: 9684
 // Name: SidebarVisibilityMethodStore
-// Dependencies: [570, 2]
+// Dependencies: [560, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 9604 (SidebarVisibilityMethodStore)
-import module_570 from "module_570" /* 570 */;
+// Module 9683 (SidebarVisibilityMethodStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-const SidebarVisibilityMethodStore = module_570.create(() => ({}));
+const SidebarVisibilityMethodStore = module_560.create(() => ({}));
 const result = size.fileFinishedImporting("modules/guild_sidebar/SidebarVisibilityMethodStore.tsx");
 
 export { SidebarVisibilityMethodStore };
-export const setGetVisibleGuildIds = function setGetVisibleGuildIds(getVisibleGuildIds) {
+export function setGetVisibleGuildIds(getVisibleGuildIds) {
   const obj = { getVisibleGuildIds };
   obj.setState(obj);
-};
-export const getVisibleGuildIdsMethod = function getVisibleGuildIdsMethod() {
+}
+export function getVisibleGuildIdsMethod() {
   return obj.getState().getVisibleGuildIds;
-};
-export const setGetVisibleChannelIds = function setGetVisibleChannelIds(getVisibleChannelIds) {
+}
+export function setGetVisibleChannelIds(getVisibleChannelIds) {
   const obj = { getVisibleChannelIds };
   obj.setState(obj);
-};
-export const getVisibleChannelIdsMethod = function getVisibleChannelIdsMethod() {
+}
+export function getVisibleChannelIdsMethod() {
   return obj.getState().getVisibleChannelIds;
-};
+}

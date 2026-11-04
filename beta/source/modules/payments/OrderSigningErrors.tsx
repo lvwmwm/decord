@@ -1,18 +1,18 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 9564
+// Function ID: 9565
 // Name: OrderSigningErrors
-// Dependencies: [5730, 4826, 2]
+// Dependencies: [5747, 4834, 2]
 // Exports: getOrderSigningError
 
-// Module 9493 (OrderSigningErrors)
-import BillingErrorDefault from "BillingError" /* 4826 */;
-import PaymentConstants from "PaymentConstants" /* 5730 */;
+// Module 9564 (OrderSigningErrors)
+import BillingErrorDefault from "BillingError" /* 4834 */;
+import PaymentConstants from "PaymentConstants" /* 5747 */;
 import size from "module_2" /* 2 */;
 
 const OrderClientErrorCode = PaymentConstants.OrderClientErrorCode;
 const result = size.fileFinishedImporting("modules/payments/OrderSigningErrors.tsx");
 
-export const getOrderSigningError = function getOrderSigningError(error) {
+export function getOrderSigningError(error) {
   error = error.error;
   let tmp = null;
   if (null != error) {
@@ -24,4 +24,4 @@ export const getOrderSigningError = function getOrderSigningError(error) {
     }
   }
   return tmp;
-};
+}

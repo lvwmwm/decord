@@ -1,15 +1,15 @@
-// Module ID: 13821
-// Function ID: 13822
+// Module ID: 11091
+// Function ID: 11092
 // Name: DebugUploadManager
-// Dependencies: [5, 4855, 3, 17, 6406, 5929, 13822, 7, 13823, 13824, 562, 5189, 13825, 13826, 13827, 13828, 2]
+// Dependencies: [5, 4863, 3, 17, 6446, 5947, 11092, 7, 11093, 11094, 1361, 5205, 11095, 11096, 11097, 11098, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 13821 (DebugUploadManager)
+// Module 11091 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body, message;
@@ -45,7 +45,7 @@ let obj = function _uploadDebugLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp33) {
           closure_4 = tmp33;
@@ -149,7 +149,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp80;
@@ -308,7 +308,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;
@@ -353,7 +353,7 @@ const tmp2 = new LoggerDefault("DebugUploadManager");
 const CrashReportingManager = react_native.NativeModules.CrashReportingManager;
 let result = size.fileFinishedImporting("modules/debug/DebugUploadManager.tsx");
 
-export const uploadDebugLogFiles = function uploadDebugLogFiles() {
+export function uploadDebugLogFiles() {
   return obj(...arguments);
-};
+}
 export { uploadAppLogFiles };

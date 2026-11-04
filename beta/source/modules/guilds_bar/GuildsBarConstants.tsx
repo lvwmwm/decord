@@ -1,12 +1,12 @@
-// Module ID: 17776
-// Function ID: 17777
+// Module ID: 18366
+// Function ID: 18367
 // Name: guilds_bar/GuildsBarConstants
-// Dependencies: [1105, 586, 2]
+// Dependencies: [1090, 574, 2]
 // Exports: isDefaultFolderColor, normalizeFolderColor
 
-// Module 17776 (guilds_bar/GuildsBarConstants)
-import ColorUtils from "utils/ColorUtils" /* 1105 */;
-import shims from "shims" /* 586 */;
+// Module 18366 (guilds_bar/GuildsBarConstants)
+import ColorUtils from "utils/ColorUtils" /* 1090 */;
+import shims from "shims" /* 574 */;
 import size from "module_2" /* 2 */;
 
 const hex2int = ColorUtils.hex2int;
@@ -15,7 +15,7 @@ const _window = hex2intResult;
 const result = size.fileFinishedImporting("modules/guilds_bar/GuildsBarConstants.tsx");
 
 export const DEFAULT_FOLDER_COLOR = hex2intResult;
-export const normalizeFolderColor = function normalizeFolderColor(arg0) {
+export function normalizeFolderColor(arg0) {
   let tmp = null;
   if (null != arg0) {
     tmp = null;
@@ -24,8 +24,8 @@ export const normalizeFolderColor = function normalizeFolderColor(arg0) {
     }
   }
   return tmp;
-};
-export const isDefaultFolderColor = function isDefaultFolderColor(arg0) {
+}
+export function isDefaultFolderColor(arg0) {
   let tmp = null;
   if (null != arg0) {
     tmp = null;
@@ -34,6 +34,6 @@ export const isDefaultFolderColor = function isDefaultFolderColor(arg0) {
     }
   }
   return null == tmp;
-};
+}
 export const GuildPeekCardTypes = { WHO: 0, [0]: "WHO", WHAT: 1, [1]: "WHAT" };
 export const CardCategory = { HANGOUT: "hangout", EMBEDDED_ACTIVITY: "embedded-activity", EVENT: "event", GAMING: "gaming" };

@@ -1,16 +1,16 @@
-// Module ID: 19309
-// Function ID: 19310
+// Module ID: 19942
+// Function ID: 19943
 // Name: PreviewableListingImageUtil
-// Dependencies: [19310, 2]
+// Dependencies: [19943, 2]
 // Exports: getSource
 
-// Module 19309 (PreviewableListingImageUtil)
-import ListingImageUtilAll from "ListingImageUtil" /* 19310 */;
+// Module 19942 (PreviewableListingImageUtil)
+import ListingImageUtilAll from "ListingImageUtil" /* 19943 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/PreviewableListingImageUtil.tsx");
 
-export const getSource = function getSource(imageLocal) {
+export function getSource(imageLocal) {
   if (null != imageLocal.imageLocal) {
     imageLocal = imageLocal.imageLocal;
   } else {
@@ -18,4 +18,4 @@ export const getSource = function getSource(imageLocal) {
     imageLocal = obj.getSource(imageLocal);
   }
   return imageLocal;
-};
+}

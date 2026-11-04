@@ -1,18 +1,18 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 8763
+// Function ID: 8764
 // Name: BadgeDirectoryStore
-// Dependencies: [1392, 1104, 1459, 8714, 569, 8718, 504, 584, 2]
+// Dependencies: [1383, 1089, 1451, 8764, 559, 8768, 504, 572, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8713 (BadgeDirectoryStore)
+// Module 8763 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import LRUCacheDefault from "LRUCache" /* 1459 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8714 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8718 */;
-import UserStore from "UserStore" /* 1392 */;
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import LRUCacheDefault from "LRUCache" /* 1451 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8764 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -74,9 +74,9 @@ class BadgeDirectoryStore extends Store {
     }
     return tmp3;
   }
-  hasCatalogFetchErrorFor(targetUserId) {
-    let tmp = targetUserId;
-    if (targetUserId == null) {
+  hasCatalogFetchErrorFor(displayedUserId) {
+    let tmp = displayedUserId;
+    if (displayedUserId == null) {
       const currentUser = UserStore.getCurrentUser();
       let id;
       if (currentUser != null) {
@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f101448 = (badge_id) => {
+    const f93267 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f101448));
+    peekResult.badges = new Map(badges.map(f93267));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f101448));
+    new Map(badges.map(f93267));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },
@@ -354,7 +354,7 @@ const badgeDirectoryStore = new BadgeDirectoryStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/badges/BadgeDirectoryStore.tsx");
 
 export default badgeDirectoryStore;
-export const getSingleRequirementThreshold = function getSingleRequirementThreshold(arg0) {
+export function getSingleRequirementThreshold(arg0) {
   let num;
   if (arg0 != null) {
     const first = arg0.requirements[0];
@@ -366,8 +366,8 @@ export const getSingleRequirementThreshold = function getSingleRequirementThresh
     num = 0;
   }
   return num;
-};
-export const getObtainedAtFromBadge = function getObtainedAtFromBadge(current_tier) {
+}
+export function getObtainedAtFromBadge(current_tier) {
   if (null != current_tier) {
     let obtained_at;
     if (null != current_tier.current_tier) {
@@ -383,4 +383,4 @@ export const getObtainedAtFromBadge = function getObtainedAtFromBadge(current_ti
     }
     return obtained_at;
   }
-};
+}

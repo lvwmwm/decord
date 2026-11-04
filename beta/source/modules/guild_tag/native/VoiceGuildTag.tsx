@@ -1,18 +1,18 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 18183
+// Function ID: 18184
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1392, 8306, 21, 1384, 5003, 587, 558, 576, 504, 8686, 9257, 5266, 2]
+// Dependencies: [19, 17, 1383, 8393, 21, 1375, 5014, 575, 504, 8736, 9295, 5624, 2]
+// Exports: default
 
-// Module 17586 (VoiceGuildTag)
+// Module 18183 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 8306 */;
+import nativeDefault from "native" /* 575 */;
+import GuildTagConstants from "GuildTagConstants" /* 8393 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1375 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -37,143 +37,9 @@ if (PlatformUtils.isAndroid()) {
   num2 = 13;
 }
 let closure_7 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuildTagChiplet(userId) {
-  let first;
-  let guildId;
-  let items2;
-  let obj3;
-  let tag;
-  let tmp12;
-  let tmp13;
-  let tmp14;
-  let tmp7;
-  let tmp8;
-  const obj = userId(576);
-  const cResult = obj.c(20);
-  userId = userId.userId;
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function y() {
-      return UserStore.getUser(userId);
-    };
-    const items1 = [userId];
-    cResult[1] = userId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = userId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  let primaryGuild;
-  const tmp10 = cResult[4];
-  if (stateFromStores != null) {
-    primaryGuild = stateFromStores.primaryGuild;
-  }
-  if (tmp10 !== primaryGuild) {
-    const _Symbol = Symbol;
-    let primaryGuild1;
-    const forResult = Symbol.for("react.early_return_sentinel");
-    const getUserPrimaryGuild = userId(8686).getUserPrimaryGuild;
-    userId(8686);
-    if (stateFromStores != null) {
-      primaryGuild1 = stateFromStores.primaryGuild;
-    }
-    const userPrimaryGuild = getUserPrimaryGuild(primaryGuild1);
-    ({ tag, guildId } = userPrimaryGuild);
-    let tmp20 = null;
-    let guildTagBadgeUrl;
-    if (null != guildId) {
-      tmp20 = null;
-      if (null != tag) {
-        const tmpResult4 = userId(8686);
-        guildTagBadgeUrl = tmpResult4.getGuildTagBadgeUrl(guildId, tmp19, GuildTagBadgeSize.SIZE_12);
-        tmp20 = forResult;
-      }
-    }
-    let primaryGuild2;
-    if (stateFromStores != null) {
-      primaryGuild2 = stateFromStores.primaryGuild;
-    }
-    cResult[4] = primaryGuild2;
-    cResult[5] = guildTagBadgeUrl;
-    cResult[6] = tmp20;
-    cResult[7] = tag;
-    tmp14 = tag;
-    tmp13 = tmp20;
-    tmp12 = guildTagBadgeUrl;
-  } else {
-    tmp12 = cResult[5];
-    tmp13 = cResult[6];
-    tmp14 = cResult[7];
-  }
-  if (tmp13 !== Symbol.for("react.early_return_sentinel")) {
-    return tmp13;
-  } else {
-    let tmp24;
-    if (cResult[8] !== tmp12) {
-      const obj2 = { source: obj3, size: GuildTagBadgeSize.SIZE_12 };
-      obj3 = { uri: tmp12 };
-      const tmp27 = closure_5(userId(9257).GuildTagBadge, obj2);
-      cResult[8] = tmp12;
-      cResult[9] = tmp27;
-      tmp24 = tmp27;
-    } else {
-      tmp24 = cResult[9];
-    }
-    if (cResult[10] === tmp4.tag) {
-      let tmp28;
-      if (cResult[11] === tmp14) {
-        tmp28 = cResult[12];
-      }
-      if (cResult[13] === tmp4.tagContainer) {
-        if (cResult[14] === tmp24) {
-          let tmp31;
-          if (cResult[15] === tmp28) {
-            tmp31 = cResult[16];
-          }
-          if (cResult[17] === tmp4.gapContainer) {
-            let tmp35;
-            if (cResult[18] === tmp31) {
-              tmp35 = cResult[19];
-            }
-            return tmp35;
-          }
-          const obj4 = { style: tmp4.gapContainer, children: tmp31 };
-          const tmp38 = closure_5(View, obj4);
-          cResult[17] = tmp4.gapContainer;
-          cResult[18] = tmp31;
-          cResult[19] = tmp38;
-          tmp35 = tmp38;
-        }
-      }
-      const obj5 = { style: tmp4.tagContainer, children: items2 };
-      items2 = [tmp24, tmp28];
-      const tmp34 = closure_6(View, obj5);
-      cResult[13] = tmp4.tagContainer;
-      cResult[14] = tmp24;
-      cResult[15] = tmp28;
-      cResult[16] = tmp34;
-      tmp31 = tmp34;
-    }
-    const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp4.tag, children: tmp14 };
-    const tmp30 = closure_5(userId(5266).Text, obj6);
-    cResult[10] = tmp4.tag;
-    cResult[11] = tmp14;
-    cResult[12] = tmp30;
-    tmp28 = tmp30;
-  }
-}) : (function VoiceGuildTagChiplet(userId) {
+const result = size.fileFinishedImporting("modules/guild_tag/native/VoiceGuildTag.tsx");
+
+export default function VoiceGuildTagChiplet(userId) {
   let guildId;
   let items2;
   let obj3;
@@ -186,8 +52,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(8686).getUserPrimaryGuild;
-  userId(8686);
+  const getUserPrimaryGuild = userId(8736).getUserPrimaryGuild;
+  userId(8736);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -197,18 +63,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(8686);
+      const tmp2Result = userId(8736);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(9257).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(9295).GuildTagBadge, obj4), ];
       const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(userId(5266).Text, obj6);
+      items2[1] = closure_5(userId(5624).Text, obj6);
       return closure_5(View, obj2);
     }
   }
   return null;
-});
-const result = size.fileFinishedImporting("modules/guild_tag/native/VoiceGuildTag.tsx");
-
-export default tmp5;
+};

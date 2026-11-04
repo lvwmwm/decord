@@ -1,11 +1,11 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6064
+// Function ID: 6065
 // Name: InteractionRecord
-// Dependencies: [1407, 1406, 2]
+// Dependencies: [1398, 1397, 2]
 
-// Module 6045 (InteractionRecord)
-import Record from "Record" /* 1407 */;
-import UserRecord from "UserRecord" /* 1406 */;
+// Module 6064 (InteractionRecord)
+import Record from "Record" /* 1398 */;
+import UserRecord from "UserRecord" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 class InteractionRecord extends Record {

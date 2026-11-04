@@ -1,13 +1,13 @@
-// Module ID: 19370
-// Function ID: 19371
+// Module ID: 20005
+// Function ID: 20006
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
-// Dependencies: [5, 1087, 584, 1297, 2]
+// Dependencies: [5, 1072, 572, 1282, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 19370 (GuildRoleSubscriptionTierTemplateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 20005 (GuildRoleSubscriptionTierTemplateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _getTemplates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _getTemplates() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c4 = 3;
@@ -82,11 +82,11 @@ let obj = function _getTemplates() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplateActionCreators.tsx");
 
-export const stashTemplateChannels = function stashTemplateChannels(selectedTemplate, guildId) {
+export function stashTemplateChannels(selectedTemplate, guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS", selectedTemplate, guildId };
   obj.dispatch(obj2);
-};
-export const getTemplates = function getTemplates() {
+}
+export function getTemplates() {
   return obj(...arguments);
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 9215
-// Function ID: 9216
+// Module ID: 9252
+// Function ID: 9253
 // Name: DisplayableCode
 // Dependencies: [2]
 // Exports: generateDisplayableCode
 
-// Module 9215 (DisplayableCode)
+// Module 9252 (DisplayableCode)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
 
-export const generateDisplayableCode = function generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize) {
+export function generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize) {
   if (toByteArrayResult.byteLength < desiredLength) {
     const _Error4 = Error;
     const self7 = this;
@@ -66,4 +66,4 @@ export const generateDisplayableCode = function generateDisplayableCode(toByteAr
     }
     return str3;
   }
-};
+}

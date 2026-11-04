@@ -1,18 +1,18 @@
-// Module ID: 1206
-// Function ID: 1207
+// Module ID: 1191
+// Function ID: 1192
 // Name: FormConstants
-// Dependencies: [1207, 1384, 587, 4960, 5010, 2]
+// Dependencies: [1192, 1375, 575, 4971, 5021, 2]
 // Exports: getThemedRippleConfig
 
-// Module 1206 (FormConstants)
-import nativeDefault from "native" /* 587 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import DeviceUtils from "DeviceUtils" /* 4960 */;
+// Module 1191 (FormConstants)
+import nativeDefault from "native" /* 575 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import DeviceUtils from "DeviceUtils" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(5010);
+const shared = tmp(5021);
 let num = 24;
 if (PlatformUtils.isAndroid()) {
   num = 32;
@@ -34,7 +34,7 @@ export const RIPPLE_DARK_COLOR = semanticColor;
 export const RIPPLE_LIGHT_COLOR = semanticColor2;
 export const ANDROID_FOREGROUND_RIPPLE = frozen;
 export const TitleStyleType = { DEFAULT: "default", ANDROID_NO_BORDER: "no_border", NO_BORDER_OR_MARGIN: "no_border_or_margin" };
-export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
+export function getThemedRippleConfig(arg0) {
   let borderless;
   let color;
   let cornerRadius;
@@ -63,4 +63,4 @@ export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
   } else {
     return closure_6;
   }
-};
+}

@@ -1,28 +1,28 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12545
+// Function ID: 12546
 // Name: formatPollMessageChatData
-// Dependencies: [5004, 6757, 4855, 4915, 6042, 1392, 11065, 1087, 1098, 6516, 4949, 4953, 1417, 9379, 4941, 4922, 12259, 1128, 8316, 12261, 1384, 12262, 12263, 2]
+// Dependencies: [5015, 6796, 4863, 4926, 6061, 1383, 11368, 1072, 1083, 6556, 4960, 4964, 1409, 9449, 4952, 4933, 12546, 1113, 8403, 12548, 1375, 12549, 12550, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 12258 (formatPollMessageChatData)
-import Constants2 from "Constants" /* 1098 */;
-import intl5 from "intl" /* 1128 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4922 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4941 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4953 */;
-import merged5 from "merged5" /* 6516 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9379 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11065 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 12261 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import MessageStore from "MessageStore" /* 6042 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+// Module 12545 (formatPollMessageChatData)
+import Constants2 from "Constants" /* 1083 */;
+import intl5 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4933 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4952 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4964 */;
+import merged5 from "merged5" /* 6556 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9449 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11368 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12548 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import MessageStore from "MessageStore" /* 6061 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let EMPTY_STRING_SNOWFLAKE_ID;
@@ -502,8 +502,8 @@ export default function formatPollMessageChatData(poll, arg1) {
   }
 };
 export { reactionForId };
-export const isPollMessageDirectlyInteractive = function isPollMessageDirectlyInteractive(poll) {
+export function isPollMessageDirectlyInteractive(poll) {
   const tmp = null == poll.poll || MessageStore.getMessage(poll.channel_id, poll.id) === poll;
   return tmp;
-};
+}
 export { computeBasicPollChatData };

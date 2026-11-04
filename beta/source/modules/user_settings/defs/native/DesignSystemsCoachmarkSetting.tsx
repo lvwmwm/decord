@@ -1,12 +1,12 @@
-// Module ID: 17194
-// Function ID: 17195
+// Module ID: 17798
+// Function ID: 17799
 // Name: DesignSystemsCoachmarkSetting
-// Dependencies: [8364, 1087, 11240, 17195, 2]
+// Dependencies: [8432, 1072, 11540, 17799, 2]
 
-// Module 17194 (DesignSystemsCoachmarkSetting)
-import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17798 (DesignSystemsCoachmarkSetting)
+import Constants from "Constants" /* 1072 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

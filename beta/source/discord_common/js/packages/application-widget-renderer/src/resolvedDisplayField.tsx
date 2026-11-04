@@ -1,17 +1,17 @@
-// Module ID: 11944
-// Function ID: 11945
+// Module ID: 12263
+// Function ID: 12264
 // Name: resolvedDisplayField
-// Dependencies: [11945, 11946, 2]
+// Dependencies: [12264, 12265, 2]
 // Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 11944 (resolvedDisplayField)
-import resolvedValues from "resolvedValues" /* 11945 */;
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 11946 */;
+// Module 12263 (resolvedDisplayField)
+import resolvedValues from "resolvedValues" /* 12264 */;
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 12265 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
 
-export const resolveTextComponentValues = function resolveTextComponentValues(subtitle_1, resolveFieldValue, numberFormat, arg3) {
+export function resolveTextComponentValues(subtitle_1, resolveFieldValue, numberFormat, arg3) {
   let media;
   let flag = arg3;
   if (arg3 === undefined) {
@@ -79,8 +79,8 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
     }
     return obj;
   }
-};
-export const resolveStatComponentValues = function resolveStatComponentValues(fields, resolveFieldValue, numberFormat, formatDurationNarrow, arg4) {
+}
+export function resolveStatComponentValues(fields, fn, format, formatDurationNarrow, arg4) {
   let media;
   let obj4;
   let flag = arg4;
@@ -98,13 +98,13 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     let obj;
     const value = fields.fields.value;
     const items = [resolvedValues.ResolvedValueType.STRING, resolvedValues.ResolvedValueType.NUMBER];
-    const iter = resolveFieldValue(value, items);
+    const iter = fn(value, items);
     const label = fields.fields.label;
     const items1 = [resolvedValues.ResolvedValueType.STRING];
-    const iter2 = resolveFieldValue(label, items1);
+    const iter2 = fn(label, items1);
     const icon = fields.fields.icon;
     const items2 = [resolvedValues.ResolvedValueType.MEDIA];
-    const tmp8 = resolveFieldValue(icon, items2);
+    const tmp8 = fn(icon, items2);
     if (null == iter) {
       obj = { status: "skeleton" };
     } else {
@@ -114,7 +114,7 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
       } else if (iter.presentationType === ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.DURATION) {
         formatResult = formatDurationNarrow(iter.value);
       } else {
-        formatResult = numberFormat.format(iter.value);
+        formatResult = format.format(iter.value);
       }
       obj = { status: "value", text: formatResult, icon: media };
       media = undefined;
@@ -135,8 +135,8 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     }
     return obj3;
   }
-};
-export const resolveSingleStringOrSkeleton = function resolveSingleStringOrSkeleton(componentConfig, description, resolveFieldValue) {
+}
+export function resolveSingleStringOrSkeleton(componentConfig, description, resolveFieldValue) {
   let obj;
   let tmp;
   if (componentConfig != null) {
@@ -150,8 +150,8 @@ export const resolveSingleStringOrSkeleton = function resolveSingleStringOrSkele
     obj = { status: "value", text: iter.value };
   }
   return obj;
-};
-export const decimalToClampedPercentage = function decimalToClampedPercentage(value) {
+}
+export function decimalToClampedPercentage(value) {
   let num = 0;
   if (!isNaN(value)) {
     const _Math = Math;
@@ -160,8 +160,8 @@ export const decimalToClampedPercentage = function decimalToClampedPercentage(va
     num = Math.min(Math.max(Math.round(100 * value), 0), 100);
   }
   return num;
-};
-export const resolveProgressPercentage = function resolveProgressPercentage(iter, iter2) {
+}
+export function resolveProgressPercentage(iter, iter2) {
   let num = 0;
   if (null != iter) {
     let num2;
@@ -194,4 +194,4 @@ export const resolveProgressPercentage = function resolveProgressPercentage(iter
     num = num2;
   }
   return num;
-};
+}

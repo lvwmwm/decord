@@ -1,45 +1,25 @@
-// Module ID: 1633
-// Function ID: 1634
+// Module ID: 1625
+// Function ID: 1626
 // Name: useSafeAreaInsets
-// Dependencies: [1502, 1634, 558, 576, 2]
-// Exports: getSafeAreaInsets
+// Dependencies: [1494, 1626, 2]
+// Exports: default, getSafeAreaInsets
 
-// Module 1633 (useSafeAreaInsets)
-import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
-import SafeAreaStoreDefault from "SafeAreaStore" /* 1634 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 1625 (useSafeAreaInsets)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
+import SafeAreaStoreDefault from "SafeAreaStore" /* 1626 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaInsets() {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = AppEntryKeyContext;
-  const appEntryKey = obj2.useAppEntryKey();
-  if (cResult[0] !== appEntryKey) {
-    const fn = function t(arg0) {
-      return arg0.byAppEntry[appEntryKey].safeAreaInsets;
-    };
-    cResult[0] = appEntryKey;
-    cResult[1] = fn;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return SafeAreaStoreDefault(tmp4);
-}) : (function useSafeAreaInsets() {
+const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsets.native.tsx");
+
+export default function useSafeAreaInsets() {
   const obj = AppEntryKeyContext;
   let closure_0 = obj.useAppEntryKey();
   return SafeAreaStoreDefault((arg0) => arg0.byAppEntry[closure_0].safeAreaInsets);
-});
-const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsets.native.tsx");
-
-export default tmp2;
-export const getSafeAreaInsets = function getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
+};
+export function getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
   const obj = SafeAreaStoreDefault;
   return obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets;
-};
+}

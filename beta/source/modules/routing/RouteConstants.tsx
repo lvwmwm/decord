@@ -1,13 +1,13 @@
-// Module ID: 1088
-// Function ID: 1089
+// Module ID: 1073
+// Function ID: 1074
 // Name: RouteConstants
-// Dependencies: [1089, 1094, 1095, 1096, 2]
+// Dependencies: [1074, 1079, 1080, 1081, 2]
 
-// Module 1088 (RouteConstants)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import ConferenceModeConstants from "ConferenceModeConstants" /* 1094 */;
-import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1095 */;
-import PathUtils from "utils/PathUtils" /* 1096 */;
+// Module 1073 (RouteConstants)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import ConferenceModeConstants from "ConferenceModeConstants" /* 1079 */;
+import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1080 */;
+import PathUtils from "utils/PathUtils" /* 1081 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -62,7 +62,6 @@ const obj = {
   BILLING_PAYMENT_SOURCES_CREATE: "/billing/payment-sources/create",
   BILLING_PREMIUM_SWITCH_PLAN: "/billing/premium/switch-plan",
   BILLING_GUILD_SUBSCRIPTIONS_PURCHASE: "/billing/guild-subscriptions/purchase",
-  BILLING_PAYMENTS: "/billing/payments",
   BILLING_PROMOTION_REDEMPTION(arg0) {
     return "/billing/promotions/" + arg0;
   },
@@ -253,7 +252,12 @@ const obj = {
   GLOBAL_DISCOVERY: "/discovery",
   QUEST_HOME_DEPRECATED: "/discovery/quests",
   QUEST_HOME: "/quest-home",
+  CONJURE: "/conjure",
+  CONJURE_PROJECT(arg0) {
+    return "/conjure/" + arg0;
+  },
   GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
+  GLOBAL_DISCOVERY_GAMES: "/discovery/games",
   GLOBAL_DISCOVERY_APPS: "/discovery/applications",
   GLOBAL_DISCOVERY_APPS_CATEGORY(arg0) {
     return "/discovery/applications/categories/" + arg0;
@@ -488,9 +492,6 @@ const obj = {
   },
   COLLECTIBLES_SHOP_COLLECTION_DETAIL(arg0) {
     return "/shop/collection/" + arg0;
-  },
-  COLLECTIBLES_SHOP_PRODUCT_DETAIL(arg0) {
-    return "/shop/product/" + arg0;
   },
   NITRO_HOME: "/store",
   ACCOUNT_STANDING: "/account-standing",

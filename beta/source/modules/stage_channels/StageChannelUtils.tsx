@@ -1,19 +1,19 @@
-// Module ID: 7906
-// Function ID: 7907
+// Module ID: 7946
+// Function ID: 7947
 // Name: StageChannelUtils
-// Dependencies: [5746, 4860, 6669, 1087, 7907, 12, 6021, 1128, 4940, 2]
+// Dependencies: [5764, 4868, 6709, 1072, 7947, 12, 6041, 1113, 4951, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7906 (StageChannelUtils)
+// Module 7946 (StageChannelUtils)
 import _mod12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6669 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7907 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
-import StageInstanceStore from "StageInstanceStore" /* 4860 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1113 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6709 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7947 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
+import StageInstanceStore from "StageInstanceStore" /* 4868 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -23,7 +23,7 @@ const Permissions = Constants.Permissions;
 const RowType = ChannelPermissionsConstants.RowType;
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
 
-export const fillChunk = function fillChunk(arg0, arg1, arg2) {
+export function fillChunk(arg0, arg1, arg2) {
   let tmp = arg2;
   const obj = _mod12;
   const chunkResult = obj.chunk(arg0, arg1);
@@ -49,8 +49,8 @@ export const fillChunk = function fillChunk(arg0, arg1, arg2) {
       return items2;
     }
   }, []);
-};
-export const summarizeUsernamesParticipating = function summarizeUsernamesParticipating(arg0, arg1, arg2, arg3) {
+}
+export function summarizeUsernamesParticipating(arg0, arg1, arg2, arg3) {
   let tmp4;
   let length = arg3;
   const first = arg1[0];
@@ -75,8 +75,8 @@ export const summarizeUsernamesParticipating = function summarizeUsernamesPartic
     tmp4 = name;
   }
   return tmp4;
-};
-export const summarizeUsernamesParticipatingWithSpeakerNickname = function summarizeUsernamesParticipatingWithSpeakerNickname(arg0, name, arg2) {
+}
+export function summarizeUsernamesParticipatingWithSpeakerNickname(arg0, name, arg2) {
   let tmp2;
   let length = arg2;
   if (arg2 == null) {
@@ -98,8 +98,8 @@ export const summarizeUsernamesParticipatingWithSpeakerNickname = function summa
     tmp2 = name;
   }
   return tmp2;
-};
-export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipHint(arg0, arg1) {
+}
+export function getRemoveModeratorTooltipHint(arg0, arg1) {
   if (RowType.OWNER === arg0) {
     const intl3 = intl5.intl;
     return intl3.string(intl5.t.icuNBM);
@@ -127,8 +127,8 @@ export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipH
     }
     return stringResult;
   }
-};
-export const getStageChannelMetadata = function getStageChannelMetadata(channel_id) {
+}
+export function getStageChannelMetadata(channel_id) {
   let id;
   let obj2;
   let topic;
@@ -144,8 +144,8 @@ export const getStageChannelMetadata = function getStageChannelMetadata(channel_
     id = stageInstanceByChannel.id;
   }
   return obj;
-};
-export const getParticipantNamesText = function getParticipantNamesText(channel, found) {
+}
+export function getParticipantNamesText(channel, found) {
   let first;
   let first1;
   let first2;
@@ -202,4 +202,4 @@ export const getParticipantNamesText = function getParticipantNamesText(channel,
     stringResult = formatToPlainString3(v3AqFaG, obj6);
   }
   return stringResult;
-};
+}

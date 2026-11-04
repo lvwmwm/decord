@@ -1,40 +1,40 @@
-// Module ID: 9662
-// Function ID: 9663
+// Module ID: 9742
+// Function ID: 9743
 // Name: Authorize
-// Dependencies: [4855, 5034, 1087, 9663, 8859, 6754, 4940, 1099, 5734, 2]
+// Dependencies: [4863, 5045, 1072, 9743, 8910, 6793, 4951, 1084, 5751, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9662 (Authorize)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
-import _mod6754 from "module_6754" /* 6754 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
-import scopes from "scopes" /* 9663 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9742 (Authorize)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4951 */;
+import _mod6793 from "module_6793" /* 6793 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8910 */;
+import scopes from "scopes" /* 9743 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(5734);
+const QueryStringUtils = tmp(5751);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
-export const filterScopes = function filterScopes(items) {
+export function filterScopes(items) {
   const found = items.filter((item) => {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8859).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8910).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   return found;
-};
-export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(query) {
+}
+export function parseOAuth2AuthorizeProps(query) {
   let NumberResult;
   let channel_id;
   let guild_id;
@@ -44,12 +44,12 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
       return guild_id;
     }
   }
-  const obj = _mod6754;
+  const obj = _mod6793;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {
     let str2 = "0";
-    const deserialize = tmp4(1099).deserialize;
+    const deserialize = tmp4(1084).deserialize;
     BigFlagUtilsAll;
     if (null != parsed.permissions) {
       str2 = "0";
@@ -92,4 +92,4 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
     NumberResult = Number(parsed.integration_type);
   }
   return obj2;
-};
+}

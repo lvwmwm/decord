@@ -1,11 +1,11 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 12118
+// Function ID: 12119
 // Name: ConjureAttachmentTypes
-// Dependencies: [6411, 2]
+// Dependencies: [6451, 2]
 // Exports: conjureAttachmentLimit, formatConjureAttachmentLimit, isConjureAttachmentWithinLimit
 
-// Module 11792 (ConjureAttachmentTypes)
-import FileSizeUtils from "FileSizeUtils" /* 6411 */;
+// Module 12118 (ConjureAttachmentTypes)
+import FileSizeUtils from "FileSizeUtils" /* 6451 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set(["image/png", "image/jpeg", "image/gif", "image/webp"]);
@@ -18,13 +18,13 @@ export const CONJURE_MAX_IMAGE_ATTACHMENT_BYTES = 5242880;
 export const CONJURE_MAX_ATTACHMENT_BYTES = 52428800;
 export const CONJURE_MAX_ATTACHMENTS_PER_MESSAGE = 10;
 export const CONJURE_STAGED_ATTACHMENT_TTL_MS = 3600000;
-export const conjureAttachmentLimit = function conjureAttachmentLimit(contentType) {
+export function conjureAttachmentLimit(contentType) {
   return set.has(contentType) ? c3 : c4;
-};
-export const isConjureAttachmentWithinLimit = function isConjureAttachmentWithinLimit(size, contentType) {
+}
+export function isConjureAttachmentWithinLimit(size, contentType) {
   return size <= (set.has(contentType) ? c3 : c4);
-};
-export const formatConjureAttachmentLimit = function formatConjureAttachmentLimit(tmpResult2) {
+}
+export function formatConjureAttachmentLimit(tmpResult2) {
   const obj = FileSizeUtils;
   return obj.formatKbSize(tmpResult2, { useKibibytes: true, useSpace: true });
-};
+}

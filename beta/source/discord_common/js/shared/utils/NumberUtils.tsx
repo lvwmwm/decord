@@ -1,20 +1,20 @@
-// Module ID: 1903
-// Function ID: 1904
+// Module ID: 1895
+// Function ID: 1896
 // Name: NumberUtils
-// Dependencies: [1904, 2]
+// Dependencies: [1896, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber, truncateAndLocalizeNumber
 
-// Module 1903 (NumberUtils)
-import module_1904 from "module_1904" /* 1904 */;
+// Module 1895 (NumberUtils)
+import module_1896 from "module_1896" /* 1896 */;
 import size from "module_2" /* 2 */;
 
 let c1 = 1000000;
 const map = new Map();
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/NumberUtils.tsx");
 
-export const shortenAndLocalizeNumber = function shortenAndLocalizeNumber(count) {
+export function shortenAndLocalizeNumber(count) {
   if (count < c1) {
-    const locale = module_1904.getLocale();
+    const locale = module_1896.getLocale();
     const _HermesInternal = HermesInternal;
     const combined = "" + locale + "|" + "";
     let value = map.get(combined);
@@ -30,12 +30,12 @@ export const shortenAndLocalizeNumber = function shortenAndLocalizeNumber(count)
     return value.format(count);
   } else {
     const result1 = count / tmp;
-    const NUMBER_ABBREVIATIONS_MILLION = module_1904.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1896.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj = { num: result1.toFixed(1) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj);
   }
-};
-export const humanizeValue = function humanizeValue(newPostCount, stateFromStores) {
+}
+export function humanizeValue(newPostCount, stateFromStores) {
   if (newPostCount < 1000) {
     const _HermesInternal = HermesInternal;
     const combined = "" + stateFromStores + "|" + "";
@@ -52,7 +52,7 @@ export const humanizeValue = function humanizeValue(newPostCount, stateFromStore
     const _Math2 = Math;
     return value.format(Math.floor(newPostCount));
   } else if (newPostCount < c1) {
-    const NUMBER_ABBREVIATIONS_THOUSAND = module_1904.Messages.NUMBER_ABBREVIATIONS_THOUSAND;
+    const NUMBER_ABBREVIATIONS_THOUSAND = module_1896.Messages.NUMBER_ABBREVIATIONS_THOUSAND;
     const _Math = Math;
     const format = NUMBER_ABBREVIATIONS_THOUSAND.format;
     const obj = { num: Math.floor(newPostCount / 1000) };
@@ -72,11 +72,11 @@ export const humanizeValue = function humanizeValue(newPostCount, stateFromStore
       const result2 = obj6.set(combined1, numberFormat1);
       value2 = numberFormat1;
     }
-    const NUMBER_ABBREVIATIONS_MILLION = module_1904.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1896.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj2 = { num: value2.format(result1) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj2);
   }
-};
+}
 export const truncateAndLocalizeNumber = function(arg0, arg1) {
   if (arg0 < 1000000) {
     let num2 = 1;
@@ -116,12 +116,12 @@ export const truncateAndLocalizeNumber = function(arg0, arg1) {
       const result1 = obj.set(combined1, numberFormat1);
       value2 = numberFormat1;
     }
-    const NUMBER_ABBREVIATIONS_MILLION = module_1904.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1896.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj4 = { num: value2.format(arg0 / 1000000) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj4);
   }
 };
-export const parseInteger = function parseInteger(discriminator, arg1) {
+export function parseInteger(discriminator, arg1) {
   let num = arg1;
   if (arg1 === undefined) {
     num = NaN;
@@ -137,8 +137,8 @@ export const parseInteger = function parseInteger(discriminator, arg1) {
     }
     return parsed;
   }
-};
-export const formatPercent = function formatPercent(arg0, arg1) {
+}
+export function formatPercent(arg0, arg1) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -147,4 +147,4 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   const merged = Object.assign(obj);
   const NumberFormatResult = NumberFormat(arg0, obj2);
   return NumberFormatResult.format(arg1);
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14673
+// Function ID: 14674
 // Name: openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 5243, 1087, 1499, 8784, 2002, 8785, 8786, 14149, 1128, 5242, 6704, 14150, 2]
+// Dependencies: [32, 5, 5259, 1072, 1491, 8834, 1994, 8835, 8836, 14674, 1113, 5258, 6744, 14675, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 14148 (openAppStoreOverlayMediaModal)
-import Constants from "Constants" /* 1087 */;
+// Module 14673 (openAppStoreOverlayMediaModal)
+import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5243 */;
+import ActionSheetStore from "ActionSheetStore" /* 5259 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj = function _openAppStoreOverlayMediaModal() {
@@ -93,7 +93,7 @@ let obj = function _openAppStoreOverlayMediaModal() {
       closure_1_11.markSessionStarted(obj3);
       closure_1_12();
     });
-    await "IconComponent";
+    await "HermesInternal";
     initialIndex = tmp;
     ({ originViewOrOriginLayout: c0, initialIndex } = closure_0);
     if (initialIndex === undefined) {
@@ -101,7 +101,7 @@ let obj = function _openAppStoreOverlayMediaModal() {
     }
     ({ initialSources: c2, analyticsSource: c3, channelId: c4, onGetGamePress: c5, onClose: c6 } = closure_0);
     let closure_7 = Object.assign(tmp42, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -109,6 +109,6 @@ const MEDIA_MODAL_KEY = Constants.MEDIA_MODAL_KEY;
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx");
 
-export const openAppStoreOverlayMediaModal = function openAppStoreOverlayMediaModal() {
+export function openAppStoreOverlayMediaModal() {
   return obj(...arguments);
-};
+}

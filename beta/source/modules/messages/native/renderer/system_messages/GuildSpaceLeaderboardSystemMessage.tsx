@@ -1,28 +1,28 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8555
+// Function ID: 8556
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [4855, 1392, 5003, 587, 4923, 8388, 6021, 8350, 1128, 8352, 8309, 8491, 8354, 2]
+// Dependencies: [4863, 1383, 5014, 575, 4934, 8410, 6041, 8418, 1113, 8420, 8396, 8556, 8422, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 8490 (GuildSpaceLeaderboardSystemMessage)
-import nativeDefault from "native" /* 587 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4923 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8388 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8491 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 5003 */;
+// Module 8555 (GuildSpaceLeaderboardSystemMessage)
+import nativeDefault from "native" /* 575 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4934 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8410 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8556 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };
 let closure_5 = createStyles.createNativeStyleProperties(obj);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildSpaceLeaderboardSystemMessage.tsx");
 
-export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpaceLeaderboardSystemMessage(theme) {
+export function createGuildSpaceLeaderboardSystemMessage(theme) {
   let data;
   let guildId;
   let message;
@@ -89,7 +89,7 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
             userAuthorWithProcessedColor1 = tmpResult8.getUserAuthorWithProcessedColor(previousLeader, channel);
           }
           const tmp16 = closure_5(theme);
-          const intl = tmp(1128).intl;
+          const intl = tmp(1113).intl;
           const formatToParts = intl.formatToParts;
           const message2 = mobileLeaderboardSystemMessage.message;
           const obj2 = { usernameOnClick: tmp26Result3(obj3), previousUsernameOnClick: tmp26Result2Result };
@@ -123,11 +123,11 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
           }
           const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult10.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
           tmpResult10 = renderer_EmbedUtils;
-          const merged1 = Object.assign(tmp26(8354)(theme));
+          const merged1 = Object.assign(tmp26(8422)(theme));
           return obj5;
         }
       }
     }
   }
   return null;
-};
+}

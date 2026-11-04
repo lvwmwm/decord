@@ -1,88 +1,20 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 15026
+// Function ID: 15027
 // Name: useTrackPdpClick
-// Dependencies: [19, 1087, 558, 576, 9392, 8699, 7694, 1267, 2]
+// Dependencies: [19, 1072, 9462, 8749, 7732, 1252, 2]
+// Exports: useTrackPdpClick
 
-// Module 14480 (useTrackPdpClick)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7694 */;
+// Module 15026 (useTrackPdpClick)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7732 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp3, trackResult;
-
 const AnalyticEvents = Constants.AnalyticEvents;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackPdpClick(skuId) {
-  let analyticsLocations;
-  let tmp5;
-  let tmp = skuId;
-  let obj = skuId(analyticsLocations[3]);
-  const cResult = obj.c(9);
-  skuId = skuId.skuId;
-  const productSkuIds = skuId.productSkuIds;
-  analyticsLocations = skuId.analyticsLocations;
-  let obj2 = skuId(analyticsLocations[4]);
-  let collectiblesAnalyticsContext = obj2.useCollectiblesAnalyticsContext();
-  if (collectiblesAnalyticsContext == null) {
-    collectiblesAnalyticsContext = {};
-  }
-  const cardId = collectiblesAnalyticsContext.cardId;
-  const sessionId = collectiblesAnalyticsContext.sessionId;
-  const tmpResult = tmp(analyticsLocations[5]);
-  const currentUserIfAvailable = tmpResult.useCurrentUserIfAvailable();
-  if (cResult[0] !== currentUserIfAvailable) {
-    const tmpResult2 = tmp(analyticsLocations[6]);
-    const shopDiscountSource = tmpResult2.getShopDiscountSource(currentUserIfAvailable);
-    cResult[0] = currentUserIfAvailable;
-    cResult[1] = shopDiscountSource;
-    tmp5 = shopDiscountSource;
-  } else {
-    tmp5 = cResult[1];
-  }
-  let closure_5 = tmp5;
-  if (cResult[2] === analyticsLocations) {
-    if (cResult[3] === cardId) {
-      if (cResult[4] === tmp5) {
-        if (cResult[5] === productSkuIds) {
-          if (cResult[6] === sessionId) {
-            let tmp7;
-            if (cResult[7] === skuId) {
-              tmp7 = cResult[8];
-            }
-            return tmp7;
-          }
-        }
-      }
-    }
-  }
-  class I {
-    constructor(arg0, arg1) {
-      tmp = arg1;
-      tmp2 = closure_2;
-      tmp3 = closure_1(closure_2[7]);
-      track = tmp3.track;
-      SHOP_PRODUCT_DETAIL_PAGE_CLICKED = AnalyticEvents.SHOP_PRODUCT_DETAIL_PAGE_CLICKED;
-      if (arg1 == null) {
-        tmp = skuId;
-      }
-      obj = { sku_id: tmp, cta: skuId, shop_session_id: sessionId, card_id: cardId, product_sku_ids: productSkuIds, location_stack: analyticsLocations, discount_source: null };
-      obj2 = closure_0(tmp2[6]);
-      obj.discount_source = obj2.getAnalyticsShopDiscountSource(closure_5);
-      trackResult = track(SHOP_PRODUCT_DETAIL_PAGE_CLICKED, obj);
-      return;
-    }
-  }
-  cResult[2] = analyticsLocations;
-  cResult[3] = cardId;
-  cResult[4] = tmp5;
-  cResult[5] = productSkuIds;
-  cResult[6] = sessionId;
-  cResult[7] = skuId;
-  cResult[8] = I;
-  tmp7 = I;
-}) : (function useTrackPdpClick(skuId) {
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");
+
+export function useTrackPdpClick(skuId) {
   skuId = skuId.skuId;
   const productSkuIds = skuId.productSkuIds;
   const analyticsLocations = skuId.analyticsLocations;
@@ -90,16 +22,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackPd
   let sessionId;
   let shopDiscountSource;
   let tmp = skuId;
-  let obj = skuId(analyticsLocations[4]);
+  let obj = skuId(analyticsLocations[2]);
   let collectiblesAnalyticsContext = obj.useCollectiblesAnalyticsContext();
   if (collectiblesAnalyticsContext == null) {
     collectiblesAnalyticsContext = {};
   }
   cardId = collectiblesAnalyticsContext.cardId;
   sessionId = collectiblesAnalyticsContext.sessionId;
-  const tmpResult = tmp(analyticsLocations[5]);
+  const tmpResult = tmp(analyticsLocations[3]);
   const currentUserIfAvailable = tmpResult.useCurrentUserIfAvailable();
-  const tmpResult2 = tmp(analyticsLocations[6]);
+  const tmpResult2 = tmp(analyticsLocations[4]);
   shopDiscountSource = tmpResult2.getShopDiscountSource(currentUserIfAvailable);
   const items = [skuId, analyticsLocations, cardId, productSkuIds, sessionId, shopDiscountSource];
   return cardId.useCallback((cta, arg1) => {
@@ -115,7 +47,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackPd
     obj2 = CollectiblesUtils;
     track(SHOP_PRODUCT_DETAIL_PAGE_CLICKED, obj);
   }, items);
-});
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");
-
-export const useTrackPdpClick = tmp2;
+}

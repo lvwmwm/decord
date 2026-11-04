@@ -1,15 +1,15 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 16436
+// Function ID: 16437
 // Name: SettingHookHarness
-// Dependencies: [32, 19, 2068, 15864, 11241, 504, 15865, 2]
+// Dependencies: [32, 19, 2062, 16437, 11541, 504, 16438, 2]
 // Exports: getCachedSettingSearchTerms, getCachedSettingTitle
 
-// Module 15863 (SettingHookHarness)
-import SettingRendererConstants from "SettingRendererConstants" /* 11241 */;
+// Module 16436 (SettingHookHarness)
+import SettingRendererConstants from "SettingRendererConstants" /* 11541 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 15864 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 16437 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -88,13 +88,13 @@ const memoResult = react.memo(function SettingHookHarness() {
 let result = size.fileFinishedImporting("modules/settings/native/renderer/SettingHookHarness.tsx");
 
 export default memoResult;
-export const getCachedSettingTitle = function getCachedSettingTitle(setting) {
+export function getCachedSettingTitle(setting) {
   return map.get(setting);
-};
-export const getCachedSettingSearchTerms = function getCachedSettingSearchTerms(arg0) {
+}
+export function getCachedSettingSearchTerms(arg0) {
   let value = map1.get(arg0);
   if (value == null) {
     value = closure_7;
   }
   return value;
-};
+}

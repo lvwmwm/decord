@@ -1,17 +1,17 @@
-// Module ID: 5894
-// Function ID: 5895
+// Module ID: 5926
+// Function ID: 5927
 // Name: VideoBackgroundStore
-// Dependencies: [1209, 1246, 2014, 4906, 1392, 5771, 504, 584, 2]
+// Dependencies: [1194, 1231, 2006, 4917, 1383, 5789, 504, 572, 2]
 
-// Module 5894 (VideoBackgroundStore)
+// Module 5926 (VideoBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5771 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import UserStore from "UserStore" /* 1392 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5789 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 function handleSyncedStoresUpdate() {
@@ -133,7 +133,7 @@ let obj = {
       if (tmp3 != null) {
         graph = tmp3.graph;
       }
-      c10 = graph !== tmp(5771).FilterSettingsGraph.NONE;
+      c10 = graph !== tmp(5789).FilterSettingsGraph.NONE;
     }
     if (BaseConnectionEvent.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
       c13 = false;

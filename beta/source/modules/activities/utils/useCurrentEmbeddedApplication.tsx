@@ -1,52 +1,18 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11788
+// Function ID: 11789
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 558, 576, 11486, 7289, 2]
+// Dependencies: [32, 11789, 7330, 2]
+// Exports: default
 
-// Module 11485 (useCurrentEmbeddedApplication)
-import react from "react" /* 576 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11486 */;
+// Module 11788 (useCurrentEmbeddedApplication)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7330 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11789 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp5;
-const useGetOrFetchApplicationsDefault = tmp5(7289);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentEmbeddedApplication(arg0) {
-  let tmp3;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] !== arg0) {
-    let obj2 = arg0;
-    if (undefined === arg0) {
-      obj2 = {};
-    }
-    cResult[0] = arg0;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  const fetchesApplication = tmp3.fetchesApplication;
-  const tmp4 = undefined === fetchesApplication || fetchesApplication;
-  const tmp6 = useCurrentEmbeddedActivityDefault();
-  if (cResult[2] !== tmp6) {
-    let items;
-    if (null == tmp6) {
-      items = [];
-    } else {
-      items = [tmp6.applicationId];
-    }
-    cResult[2] = tmp6;
-    cResult[3] = items;
-    tmp7 = items;
-  } else {
-    tmp7 = cResult[3];
-  }
-  const first = _slicedToArray(useGetOrFetchApplicationsDefault(tmp7, tmp4), 1)[0];
-  return first;
-}) : (function useCurrentEmbeddedApplication() {
+const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedApplication.tsx");
+
+export default function useCurrentEmbeddedApplication() {
   let items;
   let obj = arg0;
   if (arg0 === undefined) {
@@ -65,7 +31,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentEm
   }
   const first = _slicedToArray(tmp2(items, flag), 1)[0];
   return first;
-});
-const result = size.fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedApplication.tsx");
-
-export default tmp2;
+};

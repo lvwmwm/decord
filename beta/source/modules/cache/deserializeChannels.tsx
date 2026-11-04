@@ -1,11 +1,11 @@
-// Module ID: 4903
-// Function ID: 4904
+// Module ID: 4914
+// Function ID: 4915
 // Name: deserializeChannels
-// Dependencies: [32, 1099, 2]
+// Dependencies: [32, 1084, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 4903 (deserializeChannels)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+// Module 4914 (deserializeChannels)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ function deserializeChannels(arg0) {
 const result = size.fileFinishedImporting("modules/cache/deserializeChannels.tsx");
 
 export default deserializeChannels;
-export const deserializeChannelEntries = function deserializeChannelEntries(guildChannels) {
+export function deserializeChannelEntries(guildChannels) {
   const tmp = guildChannels[Symbol.iterator]();
   while (tmp !== undefined) {
     let tmp4 = _slicedToArray(tmp2, 2);
@@ -38,8 +38,8 @@ export const deserializeChannelEntries = function deserializeChannelEntries(guil
     let tmp7 = deserializeChannels(tmp4[1]);
     continue;
   }
-};
-export const deserializeChannel = function deserializeChannel(permissionOverwrites_) {
+}
+export function deserializeChannel(permissionOverwrites_) {
   permissionOverwrites_ = permissionOverwrites_.permissionOverwrites_;
   if (null != permissionOverwrites_) {
     for (const key10006 in permissionOverwrites_) {
@@ -52,4 +52,4 @@ export const deserializeChannel = function deserializeChannel(permissionOverwrit
     }
   }
   return permissionOverwrites_;
-};
+}

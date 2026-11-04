@@ -1,16 +1,16 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12349
+// Function ID: 12350
 // Name: ApplicationWidgetMarkupUtils
-// Dependencies: [6013, 12, 6014, 12031, 5738, 8376, 2]
+// Dependencies: [6033, 12, 6034, 12350, 5755, 8444, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
-// Module 12030 (ApplicationWidgetMarkupUtils)
-import MarkupReactRulesDefault from "MarkupReactRules" /* 5738 */;
-import MarkupRulesDefault from "MarkupRules" /* 6014 */;
-import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 12031 */;
-import combineMarkupRules from "combineMarkupRules" /* 6013 */;
+// Module 12349 (ApplicationWidgetMarkupUtils)
+import MarkupReactRulesDefault from "MarkupReactRules" /* 5755 */;
+import MarkupRulesDefault from "MarkupRules" /* 6034 */;
+import MarkupLiteralImageRuleDefault from "MarkupLiteralImageRule" /* 12350 */;
+import combineMarkupRules from "combineMarkupRules" /* 6033 */;
 import module_12 from "module_12" /* 12 */;
-import MarkupParser_mod from "MarkupParser" /* 8376 */;
+import MarkupParser_mod from "MarkupParser" /* 8444 */;
 import size from "module_2" /* 2 */;
 
 const items = ["text", "link", "emoji"];
@@ -26,13 +26,13 @@ let closure_1 = MarkupParser.astParserFor(importDefaultResultResult);
 const result = size.fileFinishedImporting("modules/application_widget/ApplicationWidgetMarkupUtils.native.tsx");
 
 export const APPLICATION_WIDGET_TEXT_RULE_KEYS = items;
-export const parseApplicationWidgetText = function parseApplicationWidgetText(text, arg1) {
+export function parseApplicationWidgetText(text, arg1) {
   const obj = { allowLinks: true };
   const merged = Object.assign(arg1);
   return closure_0(text, true, obj);
-};
-export const parseApplicationWidgetTextToAST = function parseApplicationWidgetTextToAST(arg0, arg1) {
+}
+export function parseApplicationWidgetTextToAST(arg0, arg1) {
   const obj = { allowLinks: true };
   const merged = Object.assign(arg1);
   return closure_1(arg0, true, obj);
-};
+}

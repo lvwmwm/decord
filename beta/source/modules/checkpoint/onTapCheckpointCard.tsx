@@ -1,0 +1,43 @@
+// Module ID: 13433
+// Function ID: 13434
+// Name: onTapCheckpointCard
+// Dependencies: [4863, 1072, 6088, 1252, 5760, 13434, 2]
+// Exports: onTapCheckpointCard
+
+// Module 13433 (onTapCheckpointCard)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5760 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6088 */;
+import openCheckpoint from "openCheckpoint" /* 13434 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import size from "module_2" /* 2 */;
+
+const AnalyticEvents = Constants.AnalyticEvents;
+const result = size.fileFinishedImporting("modules/checkpoint/onTapCheckpointCard.tsx");
+
+export function onTapCheckpointCard(arg0) {
+  let authorId;
+  let message;
+  ({ message, authorId } = arg0);
+  const obj = CheckpointExperiments;
+  if (obj.getIsCheckpointEnabled("onTapCheckpointCard")) {
+    const channel = ChannelStore.getChannel(message.channel_id);
+    const obj2 = { other_user_id: authorId };
+    const track = AnalyticsUtilsDefault.track;
+    const CHECKPOINT_CARD_CLICKED = AnalyticEvents.CHECKPOINT_CARD_CLICKED;
+    AnalyticsUtilsDefault;
+    const tmpResult = AppAnalyticsUtils;
+    const merged = Object.assign(tmpResult.collectChannelAnalyticsMetadata(channel));
+    let guild_id;
+    const collectGuildAnalyticsMetadata = AppAnalyticsUtils.collectGuildAnalyticsMetadata;
+    AppAnalyticsUtils;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    const merged1 = Object.assign(collectGuildAnalyticsMetadata(guild_id));
+    track(CHECKPOINT_CARD_CLICKED, obj2);
+    const tmpResult4 = openCheckpoint;
+    tmpResult4.openCheckpoint("message_component");
+  }
+}

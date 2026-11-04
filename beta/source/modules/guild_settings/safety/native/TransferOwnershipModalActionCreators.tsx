@@ -1,11 +1,11 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 13272
+// Function ID: 13273
 // Name: TransferOwnershipModalActionCreators
-// Dependencies: [6704, 12825, 2002, 2]
+// Dependencies: [6744, 13273, 1994, 2]
 
-// Module 12824 (TransferOwnershipModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+// Module 13272 (TransferOwnershipModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import size from "module_2" /* 2 */;
 
 const TRANSFER_OWNERSHIP_MODAL_KEY = "TRANSFER_OWNERSHIP_MODAL_KEY";
@@ -13,7 +13,7 @@ let obj = {
   open(guild, toUser) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guild, toUser };
-    obj.pushLazy(asyncRequire(12825, dependencyMap.paths), obj2, TRANSFER_OWNERSHIP_MODAL_KEY);
+    obj.pushLazy(asyncRequire(13273, dependencyMap.paths), obj2, TRANSFER_OWNERSHIP_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

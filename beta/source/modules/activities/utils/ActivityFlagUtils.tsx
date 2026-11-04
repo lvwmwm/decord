@@ -1,15 +1,15 @@
-// Module ID: 11234
-// Function ID: 11235
+// Module ID: 11534
+// Function ID: 11535
 // Name: ActivityFlagUtils
-// Dependencies: [1087, 4831, 510, 1405, 7844, 2]
+// Dependencies: [1072, 4839, 510, 1396, 7883, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 11234 (ActivityFlagUtils)
+// Module 11534 (ActivityFlagUtils)
 import Storage2 from "Storage" /* 510 */;
-import FlagUtils from "FlagUtils" /* 1405 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7844 */;
-import Constants from "Constants" /* 1087 */;
+import FlagUtils from "FlagUtils" /* 1396 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7883 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -17,7 +17,7 @@ let closure_4;
 ({ ActivityFlags: c3, ActivityPartyPrivacy: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
 
-export const computeActivityFlags = function computeActivityFlags(secrets, hasFlagResult, arg2, isFrameAppResult, privacy) {
+export function computeActivityFlags(secrets, hasFlagResult, arg2, isFrameAppResult, privacy) {
   let tmp12;
   let flag = hasFlagResult;
   if (hasFlagResult === undefined) {
@@ -106,8 +106,8 @@ export const computeActivityFlags = function computeActivityFlags(secrets, hasFl
     }
   }
   return tmp12;
-};
-export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActivity(remoteApplicationActivity) {
+}
+export function isContextlessEmbeddedActivity(remoteApplicationActivity) {
   let num;
   const hasFlag = FlagUtils.hasFlag;
   FlagUtils;
@@ -119,4 +119,4 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   }
   const hasFlagResult = hasFlag(num, constants.CONTEXTLESS) && isEmbeddedActivityDefault(remoteApplicationActivity);
   return hasFlagResult;
-};
+}

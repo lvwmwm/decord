@@ -1,13 +1,13 @@
-// Module ID: 6513
-// Function ID: 6514
+// Module ID: 6553
+// Function ID: 6554
 // Name: PurchaseTokenUtils
-// Dependencies: [5, 1104, 510, 1281, 2]
+// Dependencies: [5, 1089, 510, 1266, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 6513 (PurchaseTokenUtils)
+// Module 6553 (PurchaseTokenUtils)
 import Storage3 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import v1 from "v1" /* 1281 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import v1 from "v1" /* 1266 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,6 +60,6 @@ let closure_4 = 60 * DurationsDefault.Millis.DAY;
 let result = size.fileFinishedImporting("utils/PurchaseTokenUtils.tsx");
 
 export { getPurchaseToken };
-export const getPurchaseTokenHash = function getPurchaseTokenHash() {
+export function getPurchaseTokenHash() {
   return obj(...arguments);
-};
+}

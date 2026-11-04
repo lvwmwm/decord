@@ -1,13 +1,13 @@
-// Module ID: 7959
-// Function ID: 7960
+// Module ID: 7999
+// Function ID: 8000
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 7960, 7929, 7961, 584, 7962, 2]
+// Dependencies: [5, 8000, 7969, 8001, 572, 8002, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 7959 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7960 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7961 */;
+// Module 7999 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 7969 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8000 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 8001 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let c3, c4;
 let cleanupPromise = null;
 let result = size.fileFinishedImporting("modules/age_assurance/ManualReviewFallbackGate.tsx");
 
-export const shouldShowManualReviewFallback = function shouldShowManualReviewFallback(AUTOMATED_UNDERAGE_APPEALS) {
+export function shouldShowManualReviewFallback(AUTOMATED_UNDERAGE_APPEALS) {
   let resolved;
   let obj = ManualAgeAssuranceFallbackExperiment;
   if (obj.isManualAgeAssuranceFallbackEnabled(AUTOMATED_UNDERAGE_APPEALS)) {
@@ -35,7 +35,7 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -146,4 +146,4 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
     resolved = Promise.resolve(false);
   }
   return resolved;
-};
+}

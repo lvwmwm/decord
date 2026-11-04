@@ -1,26 +1,34 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 17095
+// Function ID: 17096
 // Name: useQuestForPlacement
-// Dependencies: [19, 7805, 7808, 1104, 9597, 6833, 9603, 558, 576, 504, 7806, 7814, 6749, 2]
+// Dependencies: [19, 7843, 7846, 1089, 9673, 6872, 9682, 504, 7844, 7852, 6788, 2]
+// Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 16498 (useQuestForPlacement)
-import DurationsDefault from "Durations" /* 1104 */;
-import AdCreativeType from "AdCreativeType" /* 6749 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6833 */;
-import QuestsEligibility from "QuestsEligibility" /* 9597 */;
-import QuestActionCreators from "QuestActionCreators" /* 9603 */;
+// Module 17095 (useQuestForPlacement)
+import DurationsDefault from "Durations" /* 1089 */;
+import AdCreativeType from "AdCreativeType" /* 6788 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6872 */;
+import QuestsEligibility from "QuestsEligibility" /* 9673 */;
+import QuestActionCreators from "QuestActionCreators" /* 9682 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7805 */;
-import QuestStore from "QuestStore" /* 7808 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7843 */;
+import QuestStore from "QuestStore" /* 7846 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
+const f111405 = () => {
+  const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
+  let value = deliveryAdDecisionByPlacement.get(closure_0);
+  if (value == null) {
+    value = null;
+  }
+  return value;
+};
 function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP, arg2) {
   const obj = QuestsEligibility;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
@@ -53,434 +61,154 @@ function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP, arg2) {
 }
 ({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
 let closure_8 = 30 * DurationsDefault.Millis.SECOND;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdDecisionForPlacement(arg0) {
+const result = size.fileFinishedImporting("modules/quests/useQuestForPlacement.tsx");
+
+export default function useFetchQuestForAdPlacement(arg0) {
   let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
+  let stateFromStores;
+  const ref = closure_5(null);
   _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AdDeliveryStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
+  let tmp = _require;
+  let tmp2 = stateFromStores;
+  const items = [AdDeliveryStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, f111405, items1);
+  const items2 = [stateFromStores, arg0];
+  closure_3(() => {
+    let current;
+    let tmp = ref;
+    if (null != ref.current) {
+      let tmp2 = globalThis;
+      let _clearInterval = clearInterval;
+      clearInterval(tmp.current);
+    }
+    maybeRefreshAd(stateFromStores, current, "questBar-open");
+    tmp.current = setInterval(() => {
       const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
-      let value = deliveryAdDecisionByPlacement.get(closure_0);
+      let value = deliveryAdDecisionByPlacement.get(current);
+      const tmp = maybeRefreshAd;
+      const tmp2 = current;
       if (value == null) {
         value = null;
       }
-      return value;
+      tmp(value, tmp2, "questBar-interval");
+    }, closure_1_8);
+    current = tmp.current;
+    return () => {
+      if (null != current) {
+        const _clearInterval = clearInterval;
+        clearInterval(tmp);
+      }
     };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
+  }, items2);
+  _require = arg0;
+  const items3 = [AdDeliveryStore];
+  const items4 = [arg0];
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items3, f111405, items4);
+  let creative;
+  const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
+  require("AdDecisionUtils");
+  if (stateFromStores1 != null) {
+    creative = stateFromStores1.creative;
   }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useAdDecisionForPlacement(arg0) {
+  _require = getDeliveredQuestId(creative);
+  const items5 = [QuestStore];
+  const tmpResult = tmp(tmp2[7]);
+  const stateFromStores2 = tmpResult.useStateFromStores(items5, () => {
+    let tmp2 = null;
+    if (null != closure_0) {
+      quests = quests.quests;
+      let value = quests.get(tmp);
+      if (value == null) {
+        value = null;
+      }
+      tmp2 = value;
+    }
+    return tmp2;
+  });
+  let tmp9 = null;
+  if (null != stateFromStores2) {
+    tmp9 = null;
+    const tmpResult2 = tmp(tmp2[9]);
+    if (!tmpResult2.isQuestExpired(stateFromStores2)) {
+      tmp9 = stateFromStores2;
+    }
+  }
+  return tmp9;
+};
+export function useAdDecisionForPlacement(arg0) {
   let closure_0;
   _require = arg0;
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
-    let value = deliveryAdDecisionByPlacement.get(closure_0);
-    if (value == null) {
-      value = null;
-    }
-    return value;
-  }, items1);
-});
-let closure_10 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdRefreshLoop(arg0) {
-  let closure_0;
-  let closure_2;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const ref = closure_5(null);
-  let tmp2 = closure_10(arg0);
-  dependencyMap = tmp2;
-  if (cResult[0] === arg0) {
-    let tmp3;
-    let tmp4;
-    if (cResult[1] === tmp2) {
-      tmp3 = cResult[2];
-      tmp4 = cResult[3];
-    }
-    closure_3(tmp3, tmp4);
-  }
-  const fn = function n() {
-    let current;
-    let tmp = ref;
-    if (null != ref.current) {
-      let tmp2 = globalThis;
-      let _clearInterval = clearInterval;
-      clearInterval(tmp.current);
-    }
-    maybeRefreshAd(closure_2, current, "questBar-open");
-    tmp.current = setInterval(() => {
-      const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
-      let value = deliveryAdDecisionByPlacement.get(current);
-      const tmp = maybeRefreshAd;
-      const tmp2 = current;
-      if (value == null) {
-        value = null;
-      }
-      tmp(value, tmp2, "questBar-interval");
-    }, closure_1_8);
-    current = tmp.current;
-    return () => {
-      if (null != current) {
-        const _clearInterval = clearInterval;
-        clearInterval(tmp);
-      }
-    };
-  };
-  const items = [tmp2, arg0];
-  cResult[0] = arg0;
-  cResult[1] = tmp2;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : (function useAdRefreshLoop(arg0) {
-  let closure_0 = arg0;
-  const ref = closure_5(null);
-  let tmp = closure_10(arg0);
-  let closure_2 = tmp;
-  const items = [tmp, arg0];
-  let tmp2 = closure_3(() => {
-    let current;
-    let tmp = ref;
-    if (null != ref.current) {
-      let tmp2 = globalThis;
-      let _clearInterval = clearInterval;
-      clearInterval(tmp.current);
-    }
-    maybeRefreshAd(closure_2, current, "questBar-open");
-    tmp.current = setInterval(() => {
-      const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
-      let value = deliveryAdDecisionByPlacement.get(current);
-      const tmp = maybeRefreshAd;
-      const tmp2 = current;
-      if (value == null) {
-        value = null;
-      }
-      tmp(value, tmp2, "questBar-interval");
-    }, closure_1_8);
-    current = tmp.current;
-    return () => {
-      if (null != current) {
-        const _clearInterval = clearInterval;
-        clearInterval(tmp);
-      }
-    };
-  }, items);
-});
-let closure_11 = tmp4;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeliveredCreativeForPlacement(arg0, arg1) {
-  let closure_0;
-  let first;
-  let tmp11;
-  let tmp13;
-  let tmp15;
-  let tmp16;
-  let tmp6;
-  let tmp7;
-  _require = arg1;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(19);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [QuestStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg1) {
-    const fn = function u() {
-      return QuestStore.getQuestPreviewOverride(closure_0);
-    };
-    const items1 = [arg1];
-    cResult[1] = arg1;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = closure_10(arg0);
-  let creative;
-  if (tmp9 != null) {
-    creative = tmp9.creative;
-  }
-  if (cResult[4] !== creative) {
-    const tmpResult3 = tmp(7806);
-    const deliveredQuestId = tmpResult3.getDeliveredQuestId(creative);
-    cResult[4] = creative;
-    cResult[5] = deliveredQuestId;
-    tmp11 = deliveredQuestId;
-  } else {
-    tmp11 = cResult[5];
-  }
-  let closure_1 = tmp11;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [QuestStore];
-    cResult[6] = items2;
-    tmp13 = items2;
-  } else {
-    tmp13 = cResult[6];
-  }
-  if (cResult[7] !== tmp11) {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-    const items3 = [tmp11];
-    cResult[7] = tmp11;
-    cResult[8] = F;
-    cResult[9] = items3;
-    tmp16 = items3;
-    tmp15 = F;
-  } else {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-    tmp16 = cResult[9];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp13, tmp15, tmp16);
-  if (cResult[10] !== stateFromStores1) {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-    if (null != stateFromStores1) {
-      class F {
-        constructor() {
-          let tmp2 = null;
-          if (null != closure_1) {
-            const quests = QuestStore.quests;
-            let value = quests.get(tmp);
-            if (value == null) {
-              value = null;
-            }
-            tmp2 = value;
-          }
-          return tmp2;
-        }
-      }
-      if (!obj5.isQuestExpired(stateFromStores1)) {
-        class F {
-          constructor() {
-            let tmp2 = null;
-            if (null != closure_1) {
-              const quests = QuestStore.quests;
-              let value = quests.get(tmp);
-              if (value == null) {
-                value = null;
-              }
-              tmp2 = value;
-            }
-            return tmp2;
-          }
-        }
-      }
-    }
-    cResult[10] = stateFromStores1;
-    cResult[11] = tmp19;
-  } else {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-  }
-  if (stateFromStores == null) {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-  }
-  if (tmp9 != null) {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-  }
-  if (cResult[12] !== undefined) {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-    const deliveredBounty = obj6.getDeliveredBounty(tmp20);
-    cResult[12] = undefined;
-    cResult[13] = deliveredBounty;
-  } else {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-  }
-  if (null == stateFromStores) {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-  } else {
-    class F {
-      constructor() {
-        let tmp2 = null;
-        if (null != closure_1) {
-          const quests = QuestStore.quests;
-          let value = quests.get(tmp);
-          if (value == null) {
-            value = null;
-          }
-          tmp2 = value;
-        }
-        return tmp2;
-      }
-    }
-  }
-  return tmp23;
-}) : (function useDeliveredCreativeForPlacement(arg0, arg1) {
-  let closure_0;
+  return obj.useStateFromStores(items, f111405, items1);
+}
+export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   let stateFromStores;
-  _require = arg1;
+  let closure_1 = closure_5(null);
+  _require = MOBILE_HOME_DOCK_AREA;
+  const items = [AdDeliveryStore];
+  const items1 = [MOBILE_HOME_DOCK_AREA];
+  const obj = require("get initialized");
+  stateFromStores = obj.useStateFromStores(items, f111405, items1);
+  const items2 = [stateFromStores, MOBILE_HOME_DOCK_AREA];
+  closure_3(() => {
+    let current;
+    let tmp = ref;
+    if (null != ref.current) {
+      let tmp2 = globalThis;
+      let _clearInterval = clearInterval;
+      clearInterval(tmp.current);
+    }
+    maybeRefreshAd(stateFromStores, current, "questBar-open");
+    tmp.current = setInterval(() => {
+      const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
+      let value = deliveryAdDecisionByPlacement.get(current);
+      const tmp = maybeRefreshAd;
+      const tmp2 = current;
+      if (value == null) {
+        value = null;
+      }
+      tmp(value, tmp2, "questBar-interval");
+    }, closure_1_8);
+    current = tmp.current;
+    return () => {
+      if (null != current) {
+        const _clearInterval = clearInterval;
+        clearInterval(tmp);
+      }
+    };
+  }, items2);
+}
+export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BAR_MOBILE) {
+  let stateFromStores;
+  _require = QUEST_BAR_MOBILE;
   const tmp = _require;
   let tmp2 = stateFromStores;
   let obj = require("get initialized");
   const items = [QuestStore];
-  const items1 = [arg1];
-  stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuestPreviewOverride(closure_0), items1);
-  const tmp5 = closure_10(arg0);
+  const items1 = [QUEST_BAR_MOBILE];
+  stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuestPreviewOverride(QUEST_BAR_MOBILE), items1);
+  _require = MOBILE_HOME_DOCK_AREA;
+  let obj2 = require("get initialized");
+  const items2 = [AdDeliveryStore];
+  const items3 = [MOBILE_HOME_DOCK_AREA];
+  const stateFromStores1 = obj2.useStateFromStores(items2, f111405, items3);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp3 = QuestStore;
   const tmp6 = require("AdDecisionUtils");
-  if (tmp5 != null) {
-    creative = tmp5.creative;
+  if (stateFromStores1 != null) {
+    creative = stateFromStores1.creative;
   }
   const deliveredQuestId = getDeliveredQuestId(creative);
-  const items2 = [tmp3];
-  const items3 = [deliveredQuestId];
-  const tmpResult = tmp(tmp2[9]);
-  const stateFromStores1 = tmpResult.useStateFromStores(items2, () => {
+  const items4 = [tmp3];
+  const items5 = [deliveredQuestId];
+  const tmpResult = tmp(tmp2[7]);
+  const stateFromStores2 = tmpResult.useStateFromStores(items4, () => {
     let tmp2 = null;
     if (null != deliveredQuestId) {
       const quests = QuestStore.quests;
@@ -491,141 +219,47 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDelivered
       tmp2 = value;
     }
     return tmp2;
-  }, items3);
+  }, items5);
   let tmp10 = null;
-  if (null != stateFromStores1) {
+  if (null != stateFromStores2) {
     tmp10 = null;
-    const tmpResult3 = tmp(tmp2[11]);
-    if (!tmpResult3.isQuestExpired(stateFromStores1)) {
-      tmp10 = stateFromStores1;
+    const tmpResult4 = tmp(tmp2[9]);
+    if (!tmpResult4.isQuestExpired(stateFromStores2)) {
+      tmp10 = stateFromStores2;
     }
   }
   if (stateFromStores == null) {
     stateFromStores = tmp10;
   }
   let creative1;
-  const getDeliveredBounty = tmp(tmp2[10]).getDeliveredBounty;
-  tmp(tmp2[10]);
-  if (tmp5 != null) {
-    creative1 = tmp5.creative;
+  const getDeliveredBounty = tmp(tmp2[8]).getDeliveredBounty;
+  tmp(tmp2[8]);
+  if (stateFromStores1 != null) {
+    creative1 = stateFromStores1.creative;
   }
   const deliveredBounty = getDeliveredBounty(creative1);
-  const items4 = [stateFromStores, deliveredBounty];
-  return closure_4(() => {
+  let creative2;
+  const getDeliveredPlayable = tmp(tmp2[8]).getDeliveredPlayable;
+  tmp(tmp2[8]);
+  if (stateFromStores1 != null) {
+    creative2 = stateFromStores1.creative;
+  }
+  const deliveredPlayable = getDeliveredPlayable(creative2);
+  const items6 = [stateFromStores, deliveredBounty, deliveredPlayable];
+  return deliveredPlayable(() => {
     let obj;
     if (null != stateFromStores) {
       obj = { type: AdCreativeType.AdCreativeType.QUEST, quest: tmp };
       const obj2 = { type: AdCreativeType.AdCreativeType.QUEST, quest: tmp };
     } else if (null != deliveredBounty) {
-      obj = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty: tmp2 };
-      const obj3 = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty: tmp2 };
+      obj = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty: tmp11 };
+      const obj3 = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty: tmp11 };
+    } else if (null != deliveredPlayable) {
+      obj = { type: AdCreativeType.AdCreativeType.PLAYABLE, playable: tmp2 };
+      const obj4 = { type: AdCreativeType.AdCreativeType.PLAYABLE, playable: tmp2 };
     } else {
       obj = { type: AdCreativeType.AdCreativeType.NO_FILL };
     }
     return obj;
-  }, items4);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchQuestForAdPlacement(arg0) {
-  let closure_0;
-  let tmp11;
-  let tmp7;
-  let tmp9;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  closure_11(arg0);
-  const tmp5 = closure_10(arg0);
-  let creative;
-  if (tmp5 != null) {
-    creative = tmp5.creative;
-  }
-  if (cResult[0] !== creative) {
-    const tmpResult = tmp(7806);
-    const deliveredQuestId = tmpResult.getDeliveredQuestId(creative);
-    cResult[0] = creative;
-    cResult[1] = deliveredQuestId;
-    tmp7 = deliveredQuestId;
-  } else {
-    tmp7 = cResult[1];
-  }
-  _require = tmp7;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [QuestStore];
-    cResult[2] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== tmp7) {
-    const fn = function f() {
-      let tmp2 = null;
-      if (null != closure_0) {
-        const quests = QuestStore.quests;
-        let value = quests.get(tmp);
-        if (value == null) {
-          value = null;
-        }
-        tmp2 = value;
-      }
-      return tmp2;
-    };
-    cResult[3] = tmp7;
-    cResult[4] = fn;
-    tmp11 = fn;
-  } else {
-    tmp11 = cResult[4];
-  }
-  const tmpResult3 = tmp(504);
-  const stateFromStores = tmpResult3.useStateFromStores(tmp9, tmp11);
-  let tmp13 = null;
-  if (null != stateFromStores) {
-    tmp13 = null;
-    const tmpResult4 = tmp(7814);
-    if (!tmpResult4.isQuestExpired(stateFromStores)) {
-      tmp13 = stateFromStores;
-    }
-  }
-  return tmp13;
-}) : (function useFetchQuestForAdPlacement(arg0) {
-  let closure_0;
-  const tmp = closure_11(arg0);
-  let tmp2 = closure_10(arg0);
-  let creative;
-  const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
-  require("AdDecisionUtils");
-  if (tmp2 != null) {
-    creative = tmp2.creative;
-  }
-  _require = getDeliveredQuestId(creative);
-  const items = [QuestStore];
-  const tmp3Result = require("get initialized");
-  const stateFromStores = tmp3Result.useStateFromStores(items, () => {
-    let tmp2 = null;
-    if (null != closure_0) {
-      const quests = QuestStore.quests;
-      let value = quests.get(tmp);
-      if (value == null) {
-        value = null;
-      }
-      tmp2 = value;
-    }
-    return tmp2;
-  });
-  let tmp8 = null;
-  if (null != stateFromStores) {
-    tmp8 = null;
-    const tmp3Result2 = require("QuestExpirationUtils");
-    if (!tmp3Result2.isQuestExpired(stateFromStores)) {
-      tmp8 = stateFromStores;
-    }
-  }
-  return tmp8;
-});
-const result = size.fileFinishedImporting("modules/quests/useQuestForPlacement.tsx");
-
-export default tmp6;
-export const useAdDecisionForPlacement = tmp3;
-export const useAdRefreshLoop = tmp4;
-export const useDeliveredCreativeForPlacement = tmp5;
+  }, items6);
+}

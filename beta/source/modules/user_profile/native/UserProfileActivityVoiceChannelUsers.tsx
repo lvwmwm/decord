@@ -1,118 +1,19 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 14882
+// Function ID: 14883
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 5744, 21, 558, 576, 6814, 504, 6021, 1202, 6935, 1128, 11108, 2]
+// Dependencies: [19, 5761, 21, 6853, 504, 6975, 6041, 1187, 11412, 1113, 2]
+// Exports: default
 
-// Module 14344 (UserProfileActivityVoiceChannelUsers)
+// Module 14882 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1128 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11108 */;
+import intl2 from "intl" /* 1113 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6041 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11412 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5744 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import PresenceStore from "PresenceStore" /* 5761 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow(user) {
-  let channel;
-  let end;
-  let first;
-  let isMobileOnline;
-  let isVROnline;
-  let onPress;
-  let start;
-  let status;
-  let tmp7;
-  let obj = user(576);
-  const cResult = obj.c(20);
-  user = user.user;
-  ({ channel, onPress, start, end } = user);
-  const obj2 = user(6814);
-  const avatarDecoration = obj2.useAvatarDecoration(user, channel.guild_id);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PresenceStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== user.id) {
-    const fn = function o() {
-      const obj = { status: PresenceStore.getStatus(user.id), isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id) };
-      return obj;
-    };
-    cResult[1] = user.id;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = user(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp7);
-  ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  if (cResult[3] === channel.guild_id) {
-    if (cResult[4] === channel.id) {
-      let tmp9;
-      if (cResult[5] === user) {
-        tmp9 = cResult[6];
-      }
-      if (cResult[7] === avatarDecoration) {
-        if (cResult[8] === channel.guild_id) {
-          if (cResult[9] === isMobileOnline) {
-            if (cResult[10] === isVROnline) {
-              if (cResult[11] === status) {
-                let tmp11;
-                if (cResult[12] === user) {
-                  tmp11 = cResult[13];
-                }
-                if (cResult[14] === end) {
-                  if (cResult[15] === onPress) {
-                    if (cResult[16] === start) {
-                      if (cResult[17] === tmp9) {
-                        let tmp14;
-                        if (cResult[18] === tmp11) {
-                          tmp14 = cResult[19];
-                        }
-                        return tmp14;
-                      }
-                    }
-                  }
-                }
-                const tmp16 = jsx(user(6935).TableRow, { onPress, label: tmp9, icon: tmp11, start, end });
-                cResult[14] = end;
-                cResult[15] = onPress;
-                cResult[16] = start;
-                cResult[17] = tmp9;
-                cResult[18] = tmp11;
-                cResult[19] = tmp16;
-                tmp14 = tmp16;
-              }
-            }
-          }
-        }
-      }
-      const Avatar = tmp(1202).Avatar;
-      const tmp13 = <Avatar user={user} avatarDecoration={avatarDecoration} size={user(1202).AvatarSizes.REFRESH_MEDIUM_32} guildId={channel.guild_id} status={status} isMobileOnline={isMobileOnline} isVROnline={isVROnline} autoStatusCutout />;
-      cResult[7] = avatarDecoration;
-      cResult[8] = channel.guild_id;
-      cResult[9] = isMobileOnline;
-      cResult[10] = isVROnline;
-      cResult[11] = status;
-      cResult[12] = user;
-      cResult[13] = tmp13;
-      tmp11 = tmp13;
-    }
-  }
-  const obj4 = NicknameUtilsDefault;
-  const name = obj4.getName(channel.guild_id, channel.id, user);
-  cResult[3] = channel.guild_id;
-  cResult[4] = channel.id;
-  cResult[5] = user;
-  cResult[6] = name;
-  tmp9 = name;
-}) : (function UserRow(user) {
+function UserRow(user) {
   let end;
   let isMobileOnline;
   let isVROnline;
@@ -122,7 +23,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(6814);
+  let obj = user(6853);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [PresenceStore];
   const obj2 = user(504);
@@ -131,81 +32,16 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
     return obj;
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const TableRow = user(6935).TableRow;
+  const TableRow = user(6975).TableRow;
   const obj4 = NicknameUtilsDefault;
-  ({ user, avatarDecoration, size: user(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
-  const Avatar = user(1202).Avatar;
+  ({ user, avatarDecoration, size: user(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
+  const Avatar = user(1187).Avatar;
   return <TableRow onPress={onPress} label={obj4.getName(channel.guild_id, channel.id, user)} icon={null} start={start} end={end} />;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityVoiceChannelUsers(arg0) {
-  let channel;
-  let first;
-  let onBack;
-  let onPressUser;
-  let tmp6;
-  let users;
-  const obj = channel(576);
-  const cResult = obj.c(11);
-  ({ users, channel } = arg0);
-  ({ onBack, onPressUser } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(channel(1128).t["3xHUJ+"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(id) {
-      return id.id;
-    };
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === channel) {
-    let tmp7;
-    if (cResult[3] === onPressUser) {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] === tmp7) {
-      let tmp8;
-      if (cResult[6] === users) {
-        tmp8 = cResult[7];
-      }
-      if (cResult[8] === onBack) {
-        let tmp11;
-        if (cResult[9] === tmp8) {
-          tmp11 = cResult[10];
-        }
-        return tmp11;
-      }
-      const tmp14 = jsx(onPressUser(11108), { title: first, onBack, scrollable: true, children: tmp8 });
-      cResult[8] = onBack;
-      cResult[9] = tmp8;
-      cResult[10] = tmp14;
-      tmp11 = tmp14;
-    }
-    const tmp10 = jsx(channel(11108).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
-    cResult[5] = tmp7;
-    cResult[6] = users;
-    cResult[7] = tmp10;
-    tmp8 = tmp10;
-  }
-  const fn2 = function u(start) {
-    const item = start.item;
-    return <closure_1_5 key={item.id} user={item} channel={item} onPress={function onPress() {
-      return onPressUser(item.id);
-    }} start={arg0.start} end={arg0.end} />;
-  };
-  cResult[2] = channel;
-  cResult[3] = onPressUser;
-  cResult[4] = fn2;
-  tmp7 = fn2;
-}) : (function UserProfileActivityVoiceChannelUsers(arg0) {
+}
+const jsx = Fragment.jsx;
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx");
+
+export default function UserProfileActivityVoiceChannelUsers(arg0) {
   let onBack;
   let users;
   ({ channel: require, onPressUser: importDefault } = arg0);
@@ -213,7 +49,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   UserProfileStackedActionSheetDefault;
   const intl = intl2.intl;
   return <tmp title={intl.string(intl2.t["3xHUJ+"])} onBack={onBack} scrollable>{null}</tmp>;
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx");
-
-export default tmp3;
+};

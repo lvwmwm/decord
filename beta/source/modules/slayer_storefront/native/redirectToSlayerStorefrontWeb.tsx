@@ -1,12 +1,12 @@
-// Module ID: 10593
-// Function ID: 10594
+// Module ID: 10675
+// Function ID: 10676
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1087, 3, 5695, 1128, 7461, 4819, 2]
+// Dependencies: [5, 1072, 3, 5712, 1113, 7503, 4827, 2]
 // Exports: default
 
-// Module 10593 (redirectToSlayerStorefrontWeb)
+// Module 10675 (redirectToSlayerStorefrontWeb)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1087 */;
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -59,7 +59,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
             closure_3 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

@@ -1,14 +1,14 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11796
+// Function ID: 11797
 // Name: DiscordEnvironment
-// Dependencies: [5004, 1207, 11494, 4831, 2]
+// Dependencies: [5015, 1192, 11797, 4839, 2]
 // Exports: getDiscordBaseTheme, getDiscordEnvQueryParams, getDiscordEnvironment, getDiscordFontScale, getDiscordUIDensity
 
-// Module 11493 (DiscordEnvironment)
-import UserSettings from "UserSettings" /* 4831 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import UIDensityConstants from "UIDensityConstants" /* 11494 */;
+// Module 11796 (DiscordEnvironment)
+import UserSettings from "UserSettings" /* 4839 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import UIDensityConstants from "UIDensityConstants" /* 11797 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -65,7 +65,7 @@ export function getDiscordBaseTheme(arg0) {
   return arg0;
 }
 export { getDiscordCustomTheme };
-export const getDiscordUIDensity = function getDiscordUIDensity() {
+export function getDiscordUIDensity() {
   if (typeof window !== "undefined") {
     let tmp;
     const _window2 = window;
@@ -81,8 +81,8 @@ export const getDiscordUIDensity = function getDiscordUIDensity() {
     return metroRequire(UIDensitySetting.getSetting(), tmp);
   }
   tmp = React3;
-};
-export const getDiscordFontScale = function getDiscordFontScale() {
+}
+export function getDiscordFontScale() {
   let fontScale2;
   const fontScale = AccessibilityStore.fontScale;
   if (Number.isFinite(fontScale)) {
@@ -92,8 +92,8 @@ export const getDiscordFontScale = function getDiscordFontScale() {
     fontScale2 = frozen.fontScale;
   }
   return fontScale2;
-};
-export const getDiscordEnvironment = function getDiscordEnvironment(useReducedMotion) {
+}
+export function getDiscordEnvironment(useReducedMotion) {
   const theme = ThemeStore.theme;
   let str = theme;
   if ("light" !== theme) {
@@ -137,8 +137,8 @@ export const getDiscordEnvironment = function getDiscordEnvironment(useReducedMo
     return obj;
   }
   tmp = React3;
-};
-export const getDiscordEnvQueryParams = function getDiscordEnvQueryParams() {
+}
+export function getDiscordEnvQueryParams() {
   const theme = ThemeStore.theme;
   let str = theme;
   if ("light" !== theme) {
@@ -189,4 +189,4 @@ export const getDiscordEnvQueryParams = function getDiscordEnvQueryParams() {
     return obj;
   }
   tmp = React3;
-};
+}

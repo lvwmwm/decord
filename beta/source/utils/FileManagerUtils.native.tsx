@@ -1,13 +1,13 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 8778
+// Function ID: 8779
 // Name: FileManagerUtils
-// Dependencies: [5, 3, 1164, 1384, 2]
+// Dependencies: [5, 3, 1149, 1375, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8728 (FileManagerUtils)
+// Module 8778 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 1164 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import react_nativeDefault from "react-native" /* 1149 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _readFile() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -148,9 +148,9 @@ let tmp2 = new LoggerDefault("FileManagerUtils");
 let closure_4 = tmp2;
 const result = size.fileFinishedImporting("utils/FileManagerUtils.native.tsx");
 
-export const writeFile = function writeFile(cache, combined2, value, utf8) {
+export function writeFile(cache, combined2, value, base64) {
   obj = react_nativeDefault;
-  const writeFileResult = obj.writeFile(cache, combined2, value, utf8);
+  const writeFileResult = obj.writeFile(cache, combined2, value, base64);
   return writeFileResult.then((result) => {
     let combined = result;
     obj = PlatformUtils;
@@ -160,19 +160,19 @@ export const writeFile = function writeFile(cache, combined2, value, utf8) {
     }
     return combined;
   });
-};
-export const moveFile = function moveFile(arg0, arg1, arg2) {
+}
+export function moveFile(arg0, arg1, arg2) {
   obj = react_nativeDefault;
   return obj.moveFile(arg0, arg1, arg2);
-};
-export const removeFile = function removeFile(cache, combined) {
+}
+export function removeFile(cache, filePathForGif) {
   obj = react_nativeDefault;
-  return obj.removeFile(cache, combined);
-};
-export const clearFolder = function clearFolder(cache, c5) {
+  return obj.removeFile(cache, filePathForGif);
+}
+export function clearFolder(cache, combined1) {
   obj = react_nativeDefault;
-  return obj.clearFolder(cache, c5);
-};
-export const readFile = function readFile() {
+  return obj.clearFolder(cache, combined1);
+}
+export function readFile() {
   return obj(...arguments);
-};
+}

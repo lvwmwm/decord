@@ -1,47 +1,27 @@
-// Module ID: 5285
-// Function ID: 5286
+// Module ID: 5642
+// Function ID: 5643
 // Name: useFontScale
-// Dependencies: [19, 1500, 558, 576, 1502, 2]
-// Exports: getFontScale
+// Dependencies: [19, 1492, 1494, 2]
+// Exports: getFontScale, useFontScale
 
-// Module 5285 (useFontScale)
-import react2 from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
+// Module 5642 (useFontScale)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1494 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1500 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DimensionsStore from "DimensionsStore" /* 1492 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontScale() {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = AppEntryKeyContext;
-  const appEntryKey = obj2.useAppEntryKey();
-  if (cResult[0] !== appEntryKey) {
-    const fn = function t(arg0) {
-      return arg0.byAppEntry[appEntryKey].fontScale;
-    };
-    cResult[0] = appEntryKey;
-    cResult[1] = fn;
-    tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return DimensionsStore(tmp3);
-}) : (function useFontScale() {
-  const obj = AppEntryKeyContext;
-  const appEntryKey = obj.useAppEntryKey();
-  const items = [appEntryKey];
-  return DimensionsStore(react.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
-});
 const result = size.fileFinishedImporting("modules/screen/native/useFontScale.tsx");
 
-export const getFontScale = function getFontScale() {
+export function getFontScale() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "main";
   }
   return DimensionsStore.getState().byAppEntry[str].fontScale;
-};
-export const useFontScale = tmp2;
+}
+export function useFontScale() {
+  const obj = AppEntryKeyContext;
+  const appEntryKey = obj.useAppEntryKey();
+  const items = [appEntryKey];
+  return DimensionsStore(react.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
+}

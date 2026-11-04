@@ -1,15 +1,15 @@
-// Module ID: 7702
-// Function ID: 7703
+// Module ID: 7740
+// Function ID: 7741
 // Name: CollectiblesMarketingRecord
-// Dependencies: [7703, 7705, 7706, 7707, 7704, 2]
+// Dependencies: [7741, 7743, 7744, 7745, 7742, 2]
 // Exports: rehydratePersistedMarketings
 
-// Module 7702 (CollectiblesMarketingRecord)
-import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 7703 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7704 */;
-import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 7705 */;
-import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 7706 */;
-import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 7707 */;
+// Module 7740 (CollectiblesMarketingRecord)
+import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 7741 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7742 */;
+import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 7743 */;
+import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 7744 */;
+import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 7745 */;
 import size from "module_2" /* 2 */;
 
 let marketings;
@@ -46,7 +46,7 @@ class CollectiblesMarketingsRecord {
 const result = size.fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingRecord.tsx");
 
 export { CollectiblesMarketingsRecord };
-export const rehydratePersistedMarketings = function rehydratePersistedMarketings(arg0) {
+export function rehydratePersistedMarketings(arg0) {
   const tmp = CollectiblesMarketingsRecord;
   const entries = Object.entries(arg0);
   if (typeof CollectiblesMarketingsRecord === "function") {
@@ -56,4 +56,4 @@ export const rehydratePersistedMarketings = function rehydratePersistedMarketing
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-};
+}

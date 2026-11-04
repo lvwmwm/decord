@@ -1,38 +1,38 @@
-// Module ID: 13071
-// Function ID: 13072
+// Module ID: 13705
+// Function ID: 13706
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1392, 8653, 2045, 1504, 10036, 6841, 13072, 8307, 1128, 13073, 9681, 8652, 11388, 13074, 13075, 1417, 1386, 7797, 11392, 7310, 5666, 5191, 1631, 10776, 7317, 5694, 1388, 2]
+// Dependencies: [32, 1383, 8722, 2038, 1496, 10117, 6881, 13706, 8394, 1113, 13707, 9761, 8721, 11689, 13708, 13709, 1409, 1377, 7835, 11693, 7351, 5683, 5207, 1623, 10909, 7358, 5711, 1379, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 13071 (createAppMessageEmbed)
-import intl7 from "intl" /* 1128 */;
-import URLUtilsDefault from "URLUtils" /* 1386 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import ChatInputUtils from "ChatInputUtils" /* 5191 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
-import ToastUtils from "ToastUtils" /* 5694 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6841 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
-import ClipboardUtils from "ClipboardUtils" /* 7317 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 7797 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8652 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8653 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9681 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10036 */;
-import ApplicationUtils from "ApplicationUtils" /* 10776 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11388 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11392 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13072 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13073 */;
-import getPlayInContext from "getPlayInContext" /* 13074 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13075 */;
+// Module 13705 (createAppMessageEmbed)
+import intl7 from "intl" /* 1113 */;
+import URLUtilsDefault from "URLUtils" /* 1377 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1496 */;
+import KeyboardTypes from "KeyboardTypes" /* 1623 */;
+import ChatInputUtils from "ChatInputUtils" /* 5207 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5683 */;
+import ToastUtils from "ToastUtils" /* 5711 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import ClipboardUtils from "ClipboardUtils" /* 7358 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 7835 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8394 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8721 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8722 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9761 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10117 */;
+import ApplicationUtils from "ApplicationUtils" /* 10909 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11689 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11693 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13706 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13707 */;
+import getPlayInContext from "getPlayInContext" /* 13708 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1392 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+import UserStore from "UserStore" /* 1383 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationAssetsStore = ApplicationAssetsStore2;
@@ -44,7 +44,7 @@ let closure_10 = ["embedded_cover"];
 let c11 = 512;
 const result = size.fileFinishedImporting("modules/applications/message_embed/native/createAppMessageEmbed.tsx");
 
-export const getAppLinkGateResult = function getAppLinkGateResult(appId) {
+export function getAppLinkGateResult(appId) {
   let channel;
   let intl3;
   let message;
@@ -73,24 +73,24 @@ export const getAppLinkGateResult = function getAppLinkGateResult(appId) {
       let stringResult;
       const baseColors = getEmbedThemeColorsDefault(theme).baseColors;
       if (contentClassificationVisibility === ContentClassificationVisibility.ContentClassificationVisibility.BLOCK_UNDERAGE) {
-        const intl2 = tmp3(1128).intl;
-        stringResult = intl2.string(tmp3(1128).t.LPOzxB);
+        const intl2 = tmp3(1113).intl;
+        stringResult = intl2.string(tmp3(1113).t.LPOzxB);
       } else {
-        const intl = tmp3(1128).intl;
-        stringResult = intl.string(tmp3(1128).t.NIZyKq);
+        const intl = tmp3(1113).intl;
+        stringResult = intl.string(tmp3(1113).t.NIZyKq);
       }
       const obj3 = { state: "blocked", model: obj4 };
       obj4 = { displayType: CodedLinksTypes.AppMessageEmbedDisplayType.BLOCKED, appId: "", messageId: message.id, title: null, header: intl3.string(intl7.t.bZBN64), info: stringResult, tagline: null, iconSrc: null, staticBannerSrc: null, bannerRatio: "bot", actions: [], embedUrl: null, extendedType: CodedLinkExtendedType.APP_MESSAGE_EMBED, gradientColors: [], type: null, headerText: null };
       const merged = Object.assign(baseColors);
-      intl3 = tmp3(1128).intl;
+      intl3 = tmp3(1113).intl;
       obj5 = obj3;
     } else {
       obj5 = { state: "display", app: application };
     }
     return obj5;
   }
-};
-export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
+}
+export function createAppMessageEmbed(arg0) {
   let app;
   let appGradientColors;
   let bot;
@@ -128,9 +128,9 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
     let formatToPlainStringResult;
     let obj10;
     if (maxParticipants > 0) {
-      const intl2 = tmp2(1128).intl;
+      const intl2 = tmp2(1113).intl;
       const obj2 = { count: maxParticipants };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1128).t.z8EAJW, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.z8EAJW, obj2);
     }
     const items = [];
     const tmp2Result9 = getFrameSurfaces;
@@ -139,7 +139,7 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
       if (canOpenFrameResult) {
         const push2 = items.push;
         const obj3 = { id: "play_frame", label: intl6.string(intl7.t.RscU7I) };
-        intl6 = tmp2(1128).intl;
+        intl6 = tmp2(1113).intl;
         push2(obj3);
       } else {
         const tmp2Result10 = getPlayInContext;
@@ -147,15 +147,15 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
         const isCurrentlyInInstance = playInContext.isCurrentlyInInstance;
         if (playInContext.canLaunchInChannel) {
           let stringResult;
-          const string = tmp2(1128).intl.string;
+          const string = tmp2(1113).intl.string;
           if (isCurrentlyInInstance) {
-            const intl5 = tmp2(1128).intl;
-            stringResult = intl5.string(tmp2(1128).t.DPfdsq);
+            const intl5 = tmp2(1113).intl;
+            stringResult = intl5.string(tmp2(1113).t.DPfdsq);
           } else {
             stringResult = tmp12;
             if (null != tmp10) {
-              const intl4 = tmp2(1128).intl;
-              stringResult = intl4.string(tmp2(1128).t.VJlc0S);
+              const intl4 = tmp2(1113).intl;
+              stringResult = intl4.string(tmp2(1113).t.VJlc0S);
             }
           }
           const obj4 = { id: "play_in_channel", label: stringResult, disabled: isCurrentlyInInstance };
@@ -163,7 +163,7 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
         } else {
           const push = items.push;
           const obj5 = { id: "play_in_dm", label: intl3.string(intl7.t.JeK1Wg) };
-          intl3 = tmp2(1128).intl;
+          intl3 = tmp2(1113).intl;
           push(obj5);
         }
       }
@@ -215,10 +215,10 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
     }
     obj10 = { bannerRatio: "bot", staticBannerSrc: null };
   }
-  const intl = tmp2(1128).intl;
-  formatToPlainStringResult = intl.string(tmp2(1128).t.RjceQU);
-};
-export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId) {
+  const intl = tmp2(1113).intl;
+  formatToPlainStringResult = intl.string(tmp2(1113).t.RjceQU);
+}
+export function handleTapAppMessageEmbed(appId) {
   let items;
   let items1;
   let obj5;
@@ -286,4 +286,4 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
     items1[0] = AnalyticsLocationDefault.APP_MESSAGE_EMBED;
     launch(obj8);
   }
-};
+}

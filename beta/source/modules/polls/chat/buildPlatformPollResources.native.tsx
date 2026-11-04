@@ -1,16 +1,16 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12546
+// Function ID: 12547
 // Name: buildPlatformPollResources
-// Dependencies: [12, 12260, 5003, 587, 8309, 7276, 6934, 1420, 2]
+// Dependencies: [12, 12547, 5014, 575, 8396, 7316, 6990, 1412, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 12259 (buildPlatformPollResources)
-import nativeDefault from "native" /* 587 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6934 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7276 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import PollStyles from "PollStyles" /* 12260 */;
+// Module 12546 (buildPlatformPollResources)
+import nativeDefault from "native" /* 575 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6990 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7316 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import PollStyles from "PollStyles" /* 12547 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let closure_3 = module_12.mapValues(PollStyles.pollStyleSets, (arg0) => {
 });
 const result = size.fileFinishedImporting("modules/polls/chat/buildPlatformPollResources.native.tsx");
 
-export const buildPlatformPollResources = function buildPlatformPollResources(theme, layoutType) {
+export function buildPlatformPollResources(theme, layoutType) {
   let obj2;
   let obj3;
   let obj4;
@@ -55,8 +55,8 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   obj3 = renderer_EmbedUtils;
   obj4 = renderer_EmbedUtils;
   return obj;
-};
-export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {
+}
+export function getAvatarUrl(currentUser, guildId) {
   const obj = utils_AvatarUtils;
   return obj.ensureAvatarSource(currentUser.getAvatarSource(guildId, false)).uri;
-};
+}

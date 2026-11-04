@@ -1,68 +1,26 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 15038
+// Function ID: 15039
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 5003, 558, 576, 8699, 9480, 1128, 11088, 2]
+// Dependencies: [19, 17, 21, 5014, 8749, 11393, 9551, 1113, 2]
+// Exports: OrbBadgePreview
 
-// Module 14492 (OrbBadgePreview)
+// Module 15038 (OrbBadgePreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import useCurrentUser from "useCurrentUser" /* 8699 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9480 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11088 */;
+import intl2 from "intl" /* 1113 */;
+import useCurrentUser from "useCurrentUser" /* 8749 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9551 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11393 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbBadgePreview() {
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  const tmp4 = closure_5();
-  const obj2 = useCurrentUser;
-  const currentUser = obj2.useCurrentUser();
-  const container = tmp4.container;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [];
-    const tmpResult = collectibles_CollectiblesUtils;
-    items[0] = tmpResult.createOrbProfileBadge();
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t.bxcI6Y);
-    cResult[0] = items;
-    cResult[1] = stringResult;
-    tmp6 = items;
-    tmp7 = stringResult;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  if (cResult[2] !== currentUser) {
-    const tmp12 = jsx(UserProfilePreviewDefault, { compact: true, user: currentUser, additionalBadges: tmp6, accessibilityLabel: tmp7 });
-    cResult[2] = currentUser;
-    cResult[3] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.container) {
-    let tmp13;
-    if (cResult[5] === tmp9) {
-      tmp13 = cResult[6];
-    }
-    return tmp13;
-  }
-  const tmp14 = <View style={container}>{tmp9}</View>;
-  cResult[4] = tmp4.container;
-  cResult[5] = tmp9;
-  cResult[6] = tmp14;
-  tmp13 = tmp14;
-}) : (function OrbBadgePreview() {
+const result = size.fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
+
+export function OrbBadgePreview() {
   let intl;
   let items;
   const tmp = closure_5();
@@ -75,7 +33,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbBadgePr
   items[0] = obj4.createOrbProfileBadge();
   intl = intl2.intl;
   return <View style={tmp.container}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
-
-export const OrbBadgePreview = tmp3;
+}

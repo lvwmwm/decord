@@ -1,44 +1,23 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 17407
+// Function ID: 17408
 // Name: ReduceSaturationSetting
-// Dependencies: [19, 5004, 8364, 21, 558, 576, 15721, 16705, 11188, 11240, 1128, 1202, 2]
+// Dependencies: [19, 5015, 8432, 21, 16270, 17305, 11489, 11540, 1113, 1187, 2]
 
-// Module 16804 (ReduceSaturationSetting)
+// Module 17407 (ReduceSaturationSetting)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import native from "native" /* 1202 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11188 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15721 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16705 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11489 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 17305 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSaturationSettingProps() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { value: AccessibilityStore.saturation, onChangeEnd: AccessibilityActionCreators.setSaturation, minValue: 0, maxValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useSaturationSettingProps() {
-  let saturation;
-  return react.useMemo(() => {
-    const obj = { value: saturation.saturation, onChangeEnd: AccessibilityActionCreators.setSaturation, minValue: 0, maxValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
-    return obj;
-  }, []);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -49,7 +28,13 @@ let obj = {
     const BetaTag = native.BetaTag;
     return <BetaTag size={native.BetaSizes.SMALL} />;
   },
-  useProps: tmp2
+  useProps: function useSaturationSettingProps() {
+    let saturation;
+    return react.useMemo(() => {
+      const obj = { value: saturation.saturation, onChangeEnd: AccessibilityActionCreators.setSaturation, minValue: 0, maxValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+      return obj;
+    }, []);
+  }
 };
 const slider = SettingBuilders.createSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReduceSaturationSetting.tsx");

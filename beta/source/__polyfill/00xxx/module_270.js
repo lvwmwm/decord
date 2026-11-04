@@ -77,7 +77,7 @@ let closure_3 = tmp2;
 module_126.setPlatformObject(tmp2);
 
 export default tmp2;
-export const createMutationRecord = function createMutationRecord(arg0) {
+export function createMutationRecord(arg0) {
   const tmp = new closure_3(arg0);
   return tmp;
-};
+}

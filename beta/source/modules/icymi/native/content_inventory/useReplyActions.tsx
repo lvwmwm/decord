@@ -1,38 +1,38 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 18580
+// Function ID: 18581
 // Name: useReplyActions
-// Dependencies: [5, 19, 4855, 7663, 1392, 1395, 5008, 504, 8645, 9697, 7443, 17990, 5057, 7787, 7598, 17988, 5242, 5695, 1128, 16213, 8873, 9857, 5257, 17990, 2002, 2]
+// Dependencies: [5, 19, 4863, 7701, 1383, 1386, 5019, 504, 8714, 9778, 7485, 18581, 5068, 7824, 7636, 18579, 5258, 5712, 1113, 16791, 8924, 9939, 5615, 18581, 1994, 2]
 // Exports: useReplyActions
 
-// Module 17989 (useReplyActions)
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import DraftStore from "DraftStore" /* 7663 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8645 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8873 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9857 */;
+// Module 18580 (useReplyActions)
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import DraftStore from "DraftStore" /* 7701 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8714 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import UserStore from "UserStore" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, channel, closure_4;
 
 let tmp;
-const MessageReactionsTypes = tmp(5257);
+const MessageReactionsTypes = tmp(5615);
 let react = react_mod;
 const DraftType = DraftStore.DraftType;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 let result = size.fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");
 
-export const useReplyActions = function useReplyActions(cResult) {
+export function useReplyActions(content) {
   let callback2;
   let items6;
-  const content = cResult.content;
+  content = content.content;
   let hotwheels_gaming_activity;
   let stateFromStores1;
   react = undefined;
@@ -101,7 +101,7 @@ export const useReplyActions = function useReplyActions(cResult) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ export const useReplyActions = function useReplyActions(cResult) {
             open("content_inventory_message_sent", obj18);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp69) {
           c4 = 3;
           throw tmp69;
@@ -255,7 +255,7 @@ export const useReplyActions = function useReplyActions(cResult) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(17990, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(18581, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2
@@ -273,4 +273,4 @@ export const useReplyActions = function useReplyActions(cResult) {
   }
   hotwheels_gaming_activity = "hotwheels_gaming_activity";
   str = "hotwheels_gaming_activity";
-};
+}

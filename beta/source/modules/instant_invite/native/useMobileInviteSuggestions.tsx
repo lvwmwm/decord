@@ -1,27 +1,25 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9132
+// Function ID: 9133
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 4915, 4877, 9097, 5749, 7841, 1087, 1098, 504, 1267, 9113, 9114, 2]
+// Dependencies: [32, 19, 4926, 4885, 9133, 5767, 1072, 1083, 504, 1252, 7880, 9149, 9150, 2]
 // Exports: default
 
-// Module 9096 (useMobileInviteSuggestions)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants3 from "Constants" /* 7841 */;
+// Module 9132 (useMobileInviteSuggestions)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 1083 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9097 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5749 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9133 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, set;
 
 let _slicedToArray = _slicedToArray_mod;
-const InviteTargetTypes = Constants3.InviteTargetTypes;
 const AnalyticEvents = Constants.AnalyticEvents;
 const NOOP_NULL = Constants2.NOOP_NULL;
 const result = size.fileFinishedImporting("modules/instant_invite/native/useMobileInviteSuggestions.tsx");
@@ -62,17 +60,18 @@ export default function useMobileInviteSuggestions(arg0, _location, arg2, applic
   const items2 = [arg0, arg2];
   const effect1 = rows.useEffect(function() {
     closure_7(true);
-    let isGuildVoiceResult = !tmp3;
+    const tmp5 = closure_2 === closure_0(closure_2[10]).InviteTargetTypes.EMBEDDED_APPLICATION;
+    let isGuildVoiceResult = !tmp5;
     const tmp2 = closure_2;
-    if (closure_2 !== constants.EMBEDDED_APPLICATION) {
+    if (isGuildVoiceResult) {
       isGuildVoiceResult = set.isGuildVoice();
     }
     if (isGuildVoiceResult) {
-      const obj2 = { location: "useMobileInviteSuggestions", guildId: set.guild_id };
-      const obj = closure_0(closure_2[11]);
-      isGuildVoiceResult = obj.getGuildMembersInMobileVCInvitesExperiment(obj2);
+      const obj = { location: "useMobileInviteSuggestions", guildId: set.guild_id };
+      const tmp3Result = closure_0(closure_2[11]);
+      isGuildVoiceResult = tmp3Result.getGuildMembersInMobileVCInvitesExperiment(obj);
     }
-    if (closure_2 !== constants.EMBEDDED_APPLICATION) {
+    if (!tmp5) {
       let memberIds;
       if (!isGuildVoiceResult) {
         memberIds = closure_5.getMemberIds(set.guild_id);
@@ -89,10 +88,10 @@ export default function useMobileInviteSuggestions(arg0, _location, arg2, applic
           set.add(user.user.id);
         });
       }
-      const obj3 = { omitUserIds: set, guild: isFetchingRows.getGuild(set.guild_id), channel: set, inviteTargetType: tmp2 };
+      const obj2 = { omitUserIds: set, guild: isFetchingRows.getGuild(set.guild_id), channel: set, inviteTargetType: tmp2 };
       const loadInviteSuggestions = closure_0(closure_2[12]).loadInviteSuggestions;
       closure_0(closure_2[12]);
-      const inviteSuggestions = loadInviteSuggestions(obj3);
+      const inviteSuggestions = loadInviteSuggestions(obj2);
       const catchPromise = inviteSuggestions.catch(NOOP_NULL);
       catchPromise.finally(() => {
         closure_1_7(false);

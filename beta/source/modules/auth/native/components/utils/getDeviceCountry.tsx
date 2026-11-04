@@ -1,16 +1,16 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 18008
+// Function ID: 18009
 // Name: react-native
-// Dependencies: [1129, 2]
+// Dependencies: [1114, 2]
 // Exports: getDeviceCountry
 
-// Module 17418 (react-native)
-import react_native from "react-native" /* 1129 */;
+// Module 18008 (react-native)
+import react_native from "react-native" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/getDeviceCountry.tsx");
 
-export const getDeviceCountry = function getDeviceCountry() {
+export function getDeviceCountry() {
   const _default = react_native.default;
   let Language;
   if (_default != null) {
@@ -27,4 +27,4 @@ export const getDeviceCountry = function getDeviceCountry() {
     }
     return formatted;
   }
-};
+}

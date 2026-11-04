@@ -1,11 +1,11 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11099
+// Function ID: 11100
 // Name: FilePickerUtils
-// Dependencies: [5, 1087, 11795, 1384, 5941, 1128, 5743, 2]
+// Dependencies: [5, 1072, 11100, 1375, 5959, 1113, 5760, 2]
 // Exports: handleDocumentSelection
 
-// Module 11794 (FilePickerUtils)
-import Constants from "Constants" /* 1087 */;
+// Module 11099 (FilePickerUtils)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let obj = function _handleDocumentSelection() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ let obj = function _handleDocumentSelection() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -144,7 +144,7 @@ let obj = function _handleDocumentSelection() {
             if (obj4.isErrorWithCode(code)) {
               if (code.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
             const _JSON = JSON;
@@ -160,7 +160,7 @@ let obj = function _handleDocumentSelection() {
             intl4 = closure_130_0(closure_130_2[5]).intl;
             show2(obj12);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -211,6 +211,6 @@ let obj = function _handleDocumentSelection() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("utils/native/FilePickerUtils.tsx");
 
-export const handleDocumentSelection = function handleDocumentSelection() {
+export function handleDocumentSelection() {
   return obj(...arguments);
-};
+}

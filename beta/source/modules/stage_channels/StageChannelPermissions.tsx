@@ -1,11 +1,11 @@
-// Module ID: 4863
-// Function ID: 4864
+// Module ID: 4871
+// Function ID: 4872
 // Name: StageChannelPermissions
-// Dependencies: [1087, 1099, 2]
+// Dependencies: [1072, 1084, 2]
 
-// Module 4863 (StageChannelPermissions)
-import Constants from "Constants" /* 1087 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1099 */;
+// Module 4871 (StageChannelPermissions)
+import Constants from "Constants" /* 1072 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

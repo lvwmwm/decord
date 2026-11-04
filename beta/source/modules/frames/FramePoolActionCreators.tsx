@@ -1,17 +1,17 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 12255
+// Function ID: 12256
 // Name: FramePoolActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: updateFramePoolVisibility
 
-// Module 11928 (FramePoolActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 12255 (FramePoolActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/FramePoolActionCreators.tsx");
 
-export const updateFramePoolVisibility = function updateFramePoolVisibility(frameId, hidden) {
+export function updateFramePoolVisibility(frameId, hidden) {
   const obj = DispatcherDefault;
   const obj2 = { type: "FRAME_POOL_VISIBILITY_UPDATE", frameId, poolVisibility: hidden };
   obj.dispatch(obj2);
-};
+}

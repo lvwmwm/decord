@@ -1,12 +1,12 @@
-// Module ID: 19407
-// Function ID: 19408
+// Module ID: 20032
+// Function ID: 20033
 // Name: QuestFetchReconnectJitterExperiment
-// Dependencies: [1104, 1455, 2]
+// Dependencies: [1089, 1447, 2]
 // Exports: getQuestFetchReconnectJitterConfig
 
-// Module 19407 (QuestFetchReconnectJitterExperiment)
-import DurationsDefault from "Durations" /* 1104 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 20032 (QuestFetchReconnectJitterExperiment)
+import DurationsDefault from "Durations" /* 1089 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/quests/experiments/QuestFetch
 
 export default apexExperiment;
 export const DEFAULT_QUEST_FETCH_JITTER_CONFIG = obj;
-export const getQuestFetchReconnectJitterConfig = function getQuestFetchReconnectJitterConfig(location) {
+export function getQuestFetchReconnectJitterConfig(location) {
   const obj = { location: location.location };
   return apexExperiment.getConfig(obj);
-};
+}

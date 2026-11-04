@@ -1,94 +1,36 @@
-// Module ID: 8618
-// Function ID: 8619
+// Module ID: 8687
+// Function ID: 8688
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [5269, 4855, 7422, 7424, 1087, 1211, 1128, 1267, 7420, 6500, 6505, 5676, 6691, 6686, 558, 576, 7426, 2]
-// Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2
+// Dependencies: [5627, 4863, 7464, 7466, 1072, 1196, 1113, 1252, 7462, 6540, 6545, 5693, 6731, 6726, 7468, 2]
+// Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 8618 (ExplicitMediaRedactionUtils)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5676 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6500 */;
-import MetricEvents from "MetricEvents" /* 6505 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6686 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6691 */;
-import SelfModUtils from "SelfModUtils" /* 7420 */;
-import DevSettingsStore from "DevSettingsStore" /* 5269 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7422 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7424 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 8687 (ExplicitMediaRedactionUtils)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6540 */;
+import MetricEvents from "MetricEvents" /* 6545 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6731 */;
+import SelfModUtils from "SelfModUtils" /* 7462 */;
+import DevSettingsStore from "DevSettingsStore" /* 5627 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7464 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7466 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ObscureMediaModels = tmp(7426);
+const ObscureMediaModels = tmp(7468);
 ({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: metroImportDefault, MESSAGE_SCAN_TIMEOUT: metroImportAll } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAgeVerifyForExplicitMedia() {
-  const obj = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.SENSITIVE_CONTENT_SHOW_SETTING);
-  const obj2 = AgeVerificationUtils;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
-  }
-  return isFeatureAgeGated;
-}) : (function useShouldAgeVerifyForExplicitMedia() {
-  const obj = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.SENSITIVE_CONTENT_SHOW_SETTING);
-  const obj2 = AgeVerificationUtils;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
-  }
-  return isFeatureAgeGated;
-});
-let closure_10 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAgeVerifyForReason(arg0) {
-  const obj = react;
-  const cResult = obj.c(2);
-  const tmp4 = closure_10();
-  let tmp5 = !tmp4;
-  if (tmp4) {
-    tmp5 = null == arg0;
-  }
-  let tmp7 = !tmp5;
-  if (tmp7) {
-    let tmp8;
-    if (cResult[0] !== arg0) {
-      const AGE_VERIFICATION_OBSCURABLE_REASONS = ObscureMediaModels.AGE_VERIFICATION_OBSCURABLE_REASONS;
-      const hasItem = AGE_VERIFICATION_OBSCURABLE_REASONS.has(arg0);
-      cResult[0] = arg0;
-      cResult[1] = hasItem;
-      tmp8 = hasItem;
-    } else {
-      tmp8 = cResult[1];
-    }
-    tmp7 = tmp8;
-  }
-  return tmp7;
-}) : (function useShouldAgeVerifyForReason(arg0) {
-  const tmp = closure_10();
-  let tmp2 = !tmp;
-  if (tmp) {
-    tmp2 = null == arg0;
-  }
-  let hasItem = !tmp2;
-  if (hasItem) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = ObscureMediaModels.AGE_VERIFICATION_OBSCURABLE_REASONS;
-    hasItem = AGE_VERIFICATION_OBSCURABLE_REASONS.has(arg0);
-  }
-  return hasItem;
-});
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");
 
-export const redactionSettingToRenderedString = function redactionSettingToRenderedString(prop) {
+export function redactionSettingToRenderedString(prop) {
   if (preloaded_user_settings.ExplicitContentRedaction.SHOW === prop) {
     return () => {
       const intl = intl2.intl;
@@ -105,8 +47,8 @@ export const redactionSettingToRenderedString = function redactionSettingToRende
       return intl.string(intl2.t["D/157Y"]);
     };
   }
-};
-export const isPendingScanVersion = function isPendingScanVersion(contentScanVersion) {
+}
+export function isPendingScanVersion(contentScanVersion) {
   const value = DevSettingsStore.get("explicit_media_redaction_ignore_pending_scan");
   let tmp2 = !value;
   if (tmp2) {
@@ -118,10 +60,10 @@ export const isPendingScanVersion = function isPendingScanVersion(contentScanVer
     tmp2 = tmp4;
   }
   return tmp2;
-};
+}
 export const TrackMediaRedactionActionType = { EXPLICIT_MEDIA_LEARN_MORE_VIEWED: "explicit_media_learn_more_viewed", EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS: "explicit_media_learn_more_click_settings", EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE: "explicit_media_learn_more_click_learn_more", EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS: "explicit_media_learn_more_click_dismiss", EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE: "explicit_media_learn_more_click_false_positive", EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY: "explicit_media_learn_more_click_age_verify_reverify", EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE: "explicit_media_learn_more_click_age_verify_learn_more", EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED: "explicit_media_false_positive_viewed", EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM: "explicit_media_false_positive_click_confirm", EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL: "explicit_media_false_positive_click_cancel", EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED: "explicit_media_sender_false_positive_button_clicked", EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: "explicit_media_false_positive_clyde_message_sent" };
 export const TrackMediaRedactionContext = { EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW: "explicit_media_obscured_false_positive_flow", EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW: "explicit_media_sender_false_positive_flow", EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "explicit_media_message_send_blocked", EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED: "explicit_media_add_media_to_forum_post_blocked" };
-export const trackMediaRedactionAction = function trackMediaRedactionAction(arg0) {
+export function trackMediaRedactionAction(arg0) {
   let channelId;
   let guild_id;
   let messageId;
@@ -142,9 +84,9 @@ export const trackMediaRedactionAction = function trackMediaRedactionAction(arg0
       track(EXPLICIT_MEDIA_ACTION, obj2);
     }
   }
-};
+}
 export const TimeoutCancelSource = { UPDATE: "update", TIMEOUT: "timeout" };
-export const trackScanTiming = function trackScanTiming(setAt, UPDATE) {
+export function trackScanTiming(setAt, UPDATE) {
   let items;
   const bound = Math.min(Math.floor((Date.now() - setAt) / 1000), 3);
   const tmp2 = MonitoringAgentDefault;
@@ -152,8 +94,8 @@ export const trackScanTiming = function trackScanTiming(setAt, UPDATE) {
   const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING, tags: items };
   items = ["timingBucket:" + bound, "source:" + UPDATE, "metricVersion:1"];
   increment(obj);
-};
-export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
+}
+export function trackScanningTimedOut(arg0) {
   let attachmentIds;
   let channelId;
   let embedIds;
@@ -215,8 +157,8 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
       }
     }
   }
-};
-export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicitMediaRedactableMessagedLoaded(arg0) {
+}
+export function trackExplicitMediaRedactableMessagedLoaded(arg0) {
   let channelId;
   let guild_id;
   let numOfAttachmentsPendingScan;
@@ -236,13 +178,13 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      const distribution = tmp11(6500).distribution;
+      const distribution = tmp11(6540).distribution;
       MonitoringAgentDefault;
       distribution(obj, sum);
     }
   }
-};
-export const trackRedactableMessageLoaded = function trackRedactableMessageLoaded(arg0) {
+}
+export function trackRedactableMessageLoaded(arg0) {
   let channelId;
   let guild_id;
   let messageId;
@@ -279,8 +221,8 @@ export const trackRedactableMessageLoaded = function trackRedactableMessageLoade
       track(REDACTABLE_MESSAGE_LOADED, obj);
     }
   }
-};
-export const trackExplicitMediaScanComplete = function trackExplicitMediaScanComplete(channelId) {
+}
+export function trackExplicitMediaScanComplete(channelId) {
   let guild_id;
   let type;
   channelId = channelId.channelId;
@@ -300,16 +242,16 @@ export const trackExplicitMediaScanComplete = function trackExplicitMediaScanCom
     }
     track(EXPLICIT_MEDIA_RETROACTIVE_SCAN_COMPLETE, obj);
   }
-};
-export const isObscuredMediaBelowConstraints = function isObscuredMediaBelowConstraints(arg0, arg1) {
+}
+export function isObscuredMediaBelowConstraints(arg0, arg1) {
   let tmp = null != arg0 && null != arg1;
   if (tmp) {
     tmp = arg0 <= metroImportDefault || arg1 <= metroRequire;
     const tmp3 = arg0 <= metroImportDefault || arg1 <= metroRequire;
   }
   return tmp;
-};
-export const shouldAgeVerifyForExplicitMedia = function shouldAgeVerifyForExplicitMedia() {
+}
+export function shouldAgeVerifyForExplicitMedia() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.SENSITIVE_CONTENT_SHOW_SETTING);
   const obj2 = AgeVerificationUtils;
@@ -317,10 +259,35 @@ export const shouldAgeVerifyForExplicitMedia = function shouldAgeVerifyForExplic
     isFeatureAgeGatedResult = obj2.shouldShowTiggerPawtect();
   }
   return isFeatureAgeGatedResult;
-};
-export const useShouldAgeVerifyForExplicitMedia = tmp3;
-export const useShouldAgeVerifyForReason = tmp4;
-export const trackToggleMediaObscurityV2 = function trackToggleMediaObscurityV2(obscure) {
+}
+export function useShouldAgeVerifyForExplicitMedia() {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.SENSITIVE_CONTENT_SHOW_SETTING);
+  const obj2 = AgeVerificationUtils;
+  if (isFeatureAgeGated) {
+    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
+  }
+  return isFeatureAgeGated;
+}
+export function useShouldAgeVerifyForReason(obscureReason) {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.SENSITIVE_CONTENT_SHOW_SETTING);
+  const obj2 = AgeVerificationUtils;
+  if (isFeatureAgeGated) {
+    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
+  }
+  let tmp4 = !isFeatureAgeGated;
+  if (isFeatureAgeGated) {
+    tmp4 = null == obscureReason;
+  }
+  let hasItem = !tmp4;
+  if (hasItem) {
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = ObscureMediaModels.AGE_VERIFICATION_OBSCURABLE_REASONS;
+    hasItem = AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason);
+  }
+  return hasItem;
+}
+export function trackToggleMediaObscurityV2(obscure) {
   obscure = obscure.obscure;
   const obj = AgeVerificationUtils;
   if (obj.isVerifiedAdult()) {
@@ -334,8 +301,8 @@ export const trackToggleMediaObscurityV2 = function trackToggleMediaObscurityV2(
     const obj2 = { toggle_direction: str };
     track(EXPLICIT_MEDIA_OBSCURITY_TOGGLE_V2, obj2);
   }
-};
-export const hasMessageSnapshotsWithAttachmentsOrEmbeds = function hasMessageSnapshotsWithAttachmentsOrEmbeds(message) {
+}
+export function hasMessageSnapshotsWithAttachmentsOrEmbeds(message) {
   const message_snapshots = message.message_snapshots;
   let someResult;
   if (message_snapshots != null) {
@@ -359,4 +326,4 @@ export const hasMessageSnapshotsWithAttachmentsOrEmbeds = function hasMessageSna
     });
   }
   return someResult;
-};
+}

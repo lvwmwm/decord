@@ -1,11 +1,11 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 14136
+// Function ID: 14137
 // Name: AppliedGuildBoostStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 13518 (AppliedGuildBoostStore)
+// Module 14136 (AppliedGuildBoostStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_2, set;

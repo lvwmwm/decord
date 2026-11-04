@@ -1,53 +1,25 @@
-// Module ID: 19349
-// Function ID: 19350
+// Module ID: 19983
+// Function ID: 19984
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 5003, 558, 576, 1128, 9893, 2]
+// Dependencies: [19, 21, 5014, 9975, 1113, 2]
+// Exports: GuildPremiumRoleSubscribeButton
 
-// Module 19349 (GuildPremiumRoleSubscribeButton)
+// Module 19983 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9893 */;
+import intl2 from "intl" /* 1113 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9975 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ crButton: { marginVertical: 16 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPremiumRoleSubscribeButton(onPress) {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(4);
-  onPress = onPress.onPress;
-  const tmp4 = closure_3();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    const stringResult = intl.string(intl2.t.BEeXib);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === onPress) {
-    let tmp7;
-    if (cResult[2] === tmp4.crButton) {
-      tmp7 = cResult[3];
-    }
-    return tmp7;
-  }
-  const tmp8 = jsx(CreatorRevenueButton2.CreatorRevenueButton, { text: first, onPress, style: tmp4.crButton, disabled: true });
-  cResult[1] = onPress;
-  cResult[2] = tmp4.crButton;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : (function GuildPremiumRoleSubscribeButton(onPress) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
+
+export function GuildPremiumRoleSubscribeButton(onPress) {
   onPress = onPress.onPress;
   const tmp = closure_3();
   const CreatorRevenueButton = CreatorRevenueButton2.CreatorRevenueButton;
   const intl = intl2.intl;
   return <CreatorRevenueButton text={intl.string(intl2.t.BEeXib)} onPress={onPress} style={tmp.crButton} disabled />;
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
-
-export const GuildPremiumRoleSubscribeButton = tmp3;
+}

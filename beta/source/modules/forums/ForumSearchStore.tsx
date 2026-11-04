@@ -1,31 +1,31 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8205
+// Function ID: 8206
 // Name: ForumSearchStore
-// Dependencies: [4855, 504, 584, 2]
+// Dependencies: [4863, 504, 572, 2]
 
-// Module 8322 (ForumSearchStore)
+// Module 8205 (ForumSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, results;
+let closure_1;
 
 const Store = get_initializedDefault.Store;
 class ForumSearchStore extends Store {
   initialize() {
     this.waitFor(ChannelStore);
   }
-  getSearchQuery(channelId) {
+  getSearchQuery(id) {
     let query;
-    if (closure_1[channelId] != null) {
+    if (closure_1[id] != null) {
       query = tmp.query;
     }
     return query;
   }
-  getSearchLoading(channelId) {
+  getSearchLoading(id) {
     let flag;
-    if (closure_1[channelId] != null) {
+    if (closure_1[id] != null) {
       flag = tmp.loading;
     }
     if (flag == null) {
@@ -34,14 +34,14 @@ class ForumSearchStore extends Store {
     return flag;
   }
   getSearchResults(arg0) {
-    results = undefined;
+    let results;
     if (closure_1[arg0] != null) {
       results = tmp.results;
     }
     return results;
   }
   getHasSearchResults(arg0) {
-    results = undefined;
+    let results;
     if (closure_1[arg0] != null) {
       results = tmp.results;
     }
@@ -65,7 +65,7 @@ let obj = {
     } else {
       const obj = { results: found };
       const merged = Object.assign(tmp2);
-      results = tmp2.results;
+      const results = tmp2.results;
       found = undefined;
       const tmp3 = closure_1;
       if (results != null) {

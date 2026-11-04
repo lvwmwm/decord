@@ -1,95 +1,27 @@
-// Module ID: 13177
-// Function ID: 13178
+// Module ID: 13809
+// Function ID: 13810
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 5004, 21, 5003, 558, 576, 5284, 587, 504, 2033, 1384, 9433, 5701, 2]
+// Dependencies: [19, 17, 5015, 21, 5014, 5596, 575, 504, 2026, 1375, 9504, 5717, 2]
 
-// Module 13177 (GiftIconTrinketsAnimation)
+// Module 13809 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import StringUtils from "StringUtils" /* 2033 */;
-import useToken from "useToken" /* 5284 */;
+import nativeDefault from "native" /* 575 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import StringUtils from "StringUtils" /* 2026 */;
+import useToken from "useToken" /* 5596 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-let tmp4;
-const FastImageDefault = tmp4(5701);
+let tmp3;
+const FastImageDefault = tmp3(5717);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((width) => ({ containerRefresh: { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 0, zIndex: 0 }, trinketsRefresh: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-37.5%", left: "-37.5%" } }));
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIconTrinketsAnimation(trinketsAnimationUrl) {
-  let obj6;
-  let tmp6;
-  let tmp7;
-  let useReducedMotion;
-  const obj = react2;
-  const cResult = obj.c(9);
-  trinketsAnimationUrl = trinketsAnimationUrl.trinketsAnimationUrl;
-  const obj2 = useToken;
-  const tmp5 = closure_6(obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function c() {
-      return useReducedMotion.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const trinketsRefresh = tmp5.trinketsRefresh;
-  let tmp10 = null;
-  const tmpResult3 = StringUtils;
-  if (!tmpResult3.isNullOrEmpty(trinketsAnimationUrl)) {
-    let tmp12Result;
-    if (cResult[2] === stateFromStores) {
-      if (cResult[3] === trinketsRefresh) {
-        let tmp11;
-        if (cResult[4] === trinketsAnimationUrl) {
-          tmp11 = cResult[5];
-        }
-        if (cResult[6] === tmp5.containerRefresh) {
-          let tmp14;
-          if (cResult[7] === tmp11) {
-            tmp14 = cResult[8];
-          }
-          tmp10 = tmp14;
-        }
-        const tmp17 = <View style={tmp5.containerRefresh} pointerEvents="none">{tmp11}</View>;
-        cResult[6] = tmp5.containerRefresh;
-        cResult[7] = tmp11;
-        cResult[8] = tmp17;
-        tmp14 = tmp17;
-      }
-    }
-    const tmpResult4 = PlatformUtils;
-    if (tmpResult4.isAndroid()) {
-      const obj4 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp12Result = tmp12(tmp(9433).APNGPlayer, obj4);
-    } else {
-      const obj5 = { source: obj6, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
-      obj6 = { uri: trinketsAnimationUrl };
-      tmp12Result = tmp12(FastImageDefault, obj5);
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = trinketsRefresh;
-    cResult[4] = trinketsAnimationUrl;
-    cResult[5] = tmp12Result;
-    tmp11 = tmp12Result;
-  }
-  return tmp10;
-}) : (function GiftIconTrinketsAnimation(trinketsAnimationUrl) {
+const memoResult = react.memo(function GiftIconTrinketsAnimation(trinketsAnimationUrl) {
   let obj7;
   let tmp7Result;
   let useReducedMotion;
@@ -108,7 +40,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
       const obj5 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp7Result = tmp7(tmp(9433).APNGPlayer, obj5);
+      tmp7Result = tmp7(tmp(9504).APNGPlayer, obj5);
     } else {
       const obj6 = { source: obj7, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj7 = { uri: trinketsAnimationUrl };
@@ -117,7 +49,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp7Result2 = tmp7(tmp8, obj4);
   }
   return tmp7Result2;
-}));
+});
 const result = size.fileFinishedImporting("modules/chat_input/native/GiftIconTrinketsAnimation.tsx");
 
 export const GiftIconTrinketsAnimation = memoResult;

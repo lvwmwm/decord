@@ -1,149 +1,21 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12576
+// Function ID: 12577
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 4877, 558, 576, 11909, 504, 1128, 3862, 2]
+// Dependencies: [32, 19, 4885, 12097, 504, 1113, 3868, 2]
+// Exports: default
 
-// Module 12338 (useConjureIncompleteAppNotice)
+// Module 12576 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIncompleteAppNotice(arg0) {
-  let closure_0;
-  let closure_2;
-  let first;
-  let first1;
-  let guildId;
-  let tmp19;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(11);
-  const tmp4 = guildId(11909)(arg0);
-  guildId = undefined;
-  if (tmp4 != null) {
-    guildId = tmp4.guildId;
-  }
-  if (guildId == null) {
-    guildId = null;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function o() {
-      let tmp2 = null;
-      if (null != guildId) {
-        const guild = GuildStore.getGuild(tmp);
-        let name;
-        if (guild != null) {
-          name = guild.name;
-        }
-        if (name == null) {
-          name = null;
-        }
-        tmp2 = name;
-      }
-      return tmp2;
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  [first1, dependencyMap] = react.useState(null);
-  let missingSurface;
-  if (tmp4 != null) {
-    missingSurface = tmp4.missingSurface;
-  }
-  if (missingSurface == null) {
-    missingSurface = null;
-  }
-  let tmp13 = null;
-  if (null != missingSurface) {
-    tmp13 = null;
-    if (first1 !== arg0) {
-      if (cResult[3] === stateFromStores) {
-        let tmp14;
-        if (cResult[4] === missingSurface) {
-          tmp14 = cResult[5];
-        }
-        if (cResult[6] !== arg0) {
-          class I {
-            constructor() {
-              return closure_2(closure_0);
-            }
-          }
-          cResult[6] = arg0;
-          cResult[7] = I;
-        } else {
-          class I {
-            constructor() {
-              return closure_2(closure_0);
-            }
-          }
-        }
-        if (cResult[8] === tmp14) {
-          class I {
-            constructor() {
-              return closure_2(closure_0);
-            }
-          }
-          tmp13 = tmp19;
-        }
-        const obj2 = { message: tmp14, onDismiss: tmp18 };
-        cResult[8] = tmp14;
-        cResult[9] = tmp18;
-        cResult[10] = obj2;
-        tmp19 = obj2;
-      }
-      const intl = tmp(1128).intl;
-      const format = intl.format;
-      if ("channel" === missingSurface) {
-        class I {
-          constructor() {
-            return closure_2(closure_0);
-          }
-        }
-      } else {
-        class I {
-          constructor() {
-            return closure_2(closure_0);
-          }
-        }
-      }
-      const tmp16 = stateFromStores;
-      if (stateFromStores == null) {
-        class I {
-          constructor() {
-            return closure_2(closure_0);
-          }
-        }
-      }
-      const obj3 = { server: tmp16 };
-      const formatResult = format(tmp15, obj3);
-      cResult[3] = stateFromStores;
-      cResult[4] = missingSurface;
-      cResult[5] = formatResult;
-      tmp14 = formatResult;
-    }
-  }
-  return tmp13;
-}) : (function useConjureIncompleteAppNotice(arg0) {
+const result = size.fileFinishedImporting("modules/conjure/publish/useConjureIncompleteAppNotice.tsx");
+
+export default function useConjureIncompleteAppNotice(arg0) {
   let closure_0;
   let closure_2;
   let first;
@@ -152,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(11909)(arg0);
+  const tmp3 = guildId(12097)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;
@@ -191,16 +63,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
     tmp10 = null;
     if (first !== arg0) {
       let Lm7IRC;
-      const intl = tmp5(1128).intl;
+      const intl = tmp5(1113).intl;
       const format = intl.format;
       if ("channel" === missingSurface) {
-        Lm7IRC = tmp(3862)["1cm4fj"];
+        Lm7IRC = tmp(3868)["1cm4fj"];
       } else {
-        Lm7IRC = tmp(3862).Lm7IRC;
+        Lm7IRC = tmp(3868).Lm7IRC;
       }
-      let str2 = stateFromStores;
+      let str = stateFromStores;
       if (stateFromStores == null) {
-        str2 = "";
+        str = "";
       }
       const obj2 = {
         message: format(Lm7IRC, obj3),
@@ -209,11 +81,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
             }
       };
       tmp10 = obj2;
-      obj3 = { server: str2 };
+      obj3 = { server: str };
     }
   }
   return tmp10;
-});
-const result = size.fileFinishedImporting("modules/conjure/publish/useConjureIncompleteAppNotice.tsx");
-
-export default tmp2;
+};

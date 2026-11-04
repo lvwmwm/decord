@@ -1,13 +1,13 @@
-// Module ID: 19163
-// Function ID: 19164
+// Module ID: 19796
+// Function ID: 19797
 // Name: RoleIconUploadUtils
-// Dependencies: [5, 1087, 1395, 1417, 1496, 2]
+// Dependencies: [5, 1072, 1386, 1409, 1488, 2]
 // Exports: fetchCustomEmojiAsPngDataUri
 
-// Module 19163 (RoleIconUploadUtils)
-import Constants from "Constants" /* 1087 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
+// Module 19796 (RoleIconUploadUtils)
+import Constants from "Constants" /* 1072 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _fetchCustomEmojiAsPngDataUri() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,6 +109,6 @@ const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 const result = size.fileFinishedImporting("modules/guild_settings/roles/RoleIconUploadUtils.tsx");
 
 export const ROLE_ICON_MAX_FILE_SIZE = 256000;
-export const fetchCustomEmojiAsPngDataUri = function fetchCustomEmojiAsPngDataUri() {
+export function fetchCustomEmojiAsPngDataUri() {
   return obj(...arguments);
-};
+}

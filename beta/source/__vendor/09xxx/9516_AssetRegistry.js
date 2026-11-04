@@ -1,10 +1,10 @@
 // Module ID: 9516
 // Function ID: 9517
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 9516 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "34bb1c89964a0349aafd993e713936d7", name: "ScreenIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 128, height: 128, scales: [1], hash: "dd1fce0fb6695abbba4a340bc5cd823e", name: "nameplate_avatar_placeholder_dark_mode", type: "png" });

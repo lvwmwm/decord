@@ -1,25 +1,24 @@
-// Module ID: 10914
-// Function ID: 10915
+// Module ID: 11000
+// Function ID: 11001
 // Name: ChannelCallStore
-// Dependencies: [19, 4854, 10915, 2026, 5664, 4850, 8852, 570, 1274, 5742, 12, 558, 576, 10916, 10917, 10918, 504, 10919, 2]
-// Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus
+// Dependencies: [19, 4862, 11001, 5681, 4858, 8903, 560, 1259, 5759, 12, 11002, 11003, 11004, 504, 2019, 11005, 2]
+// Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 10914 (ChannelCallStore)
-import react_native from "react-native" /* 1274 */;
-import Constants from "Constants" /* 2026 */;
-import Timers from "Timers" /* 4850 */;
-import CallConstants from "CallConstants" /* 5664 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5742 */;
-import DeviceOrientation from "DeviceOrientation" /* 8852 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10916 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 10917 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10919 */;
+// Module 11000 (ChannelCallStore)
+import react_native from "react-native" /* 1259 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2019 */;
+import Timers from "Timers" /* 4858 */;
+import CallConstants from "CallConstants" /* 5681 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5759 */;
+import DeviceOrientation from "DeviceOrientation" /* 8903 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11002 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 11003 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 11005 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10915 */;
-import module_570 from "module_570" /* 570 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11001 */;
+import module_560 from "module_560" /* 560 */;
 import module_12 from "module_12" /* 12 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,206 +27,92 @@ let _require, dependencyMap, importDefault;
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f108476 = () => {
+const f98589 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
 let react = react_mod;
 ({ VoiceCallOverlayType, VoiceChatDrawerState } = ChannelCallConstants);
-const OrientationLockState = Constants.OrientationLockState;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const timeout = new Timers.Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: obj2 };
 obj2 = {};
-let size = { x: "Array", y: "test", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+let size = { x: "Array", y: "Path", width: "y", height: "HermesInternal", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj2[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "test", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+const size1 = { x: "Array", y: "Path", width: "y", height: "HermesInternal", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj2[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
-let closure_9 = freeze(obj);
-let obj3 = module_570.create(() => closure_9);
+let closure_8 = freeze(obj);
+let obj3 = module_560.create(() => closure_8);
 const throttleResult = module_12.throttle(() => {
   const pipFocus = obj3.getState().pipFocus;
-  let obj = pipFocus(1274);
+  let obj = pipFocus(1259);
   obj.batchUpdates(() => {
     const obj = { pipFocus: !pipFocus };
     return obj3.setState(obj);
   });
 }, 300);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChatFocused() {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallStore.tsx");
+
+export const focusTimeout = timeout;
+export function setFocus(focus) {
+  _require = focus;
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
+    const obj = { focus };
+    return obj3.setState(obj);
+  });
+}
+export function toggleFocus() {
+  const focus = obj3.getState().focus;
+  let obj = focus(1259);
+  obj.batchUpdates(() => {
+    const obj = { focus: !focus, pipFocus: false };
+    return obj3.setState(obj);
+  });
+}
+export function resetFocusTimer() {
+  timeout.stop();
+  timeout.start(5000, f98589);
+}
+export function resetFocus() {
+  let state;
+  if (obj3.getState().focus) {
+    timeout.stop();
+    timeout.start(5000, f98589);
+  } else {
+    let obj = react_native;
+    obj.batchUpdates(() => state.setState({ focus: true }));
+  }
+}
+export function clearFocusTimer() {
+  timeout.stop();
+}
+export function setVoiceChatDrawerState(embeddedActivityLocationChannelId, CLOSED) {
+  let voiceChatDrawerState;
+  _require = CLOSED;
+  const tmp2 = CLOSED !== VoiceChatDrawerState.OPEN && CLOSED !== VoiceChatDrawerState.CLOSED;
+  if (!tmp2) {
+    let obj = ChannelRTCActionCreatorsDefault;
+    obj.updateChatOpen(embeddedActivityLocationChannelId, CLOSED === VoiceChatDrawerState.OPEN);
+  }
+  const obj2 = require("react-native");
+  obj2.batchUpdates(() => {
+    const obj = { voiceChatDrawerState };
+    return obj3.setState(obj);
+  });
+}
+export const togglePipFocus = throttleResult;
+export function useIsVoiceChatFocused() {
   const voiceChatDrawerState = obj3().voiceChatDrawerState;
   return voiceChatDrawerState === VoiceChatDrawerState.OPEN || voiceChatDrawerState === VoiceChatDrawerState.CLOSING;
-}) : (function useIsVoiceChatFocused() {
-  const voiceChatDrawerState = obj3().voiceChatDrawerState;
-  return voiceChatDrawerState === VoiceChatDrawerState.OPEN || voiceChatDrawerState === VoiceChatDrawerState.CLOSING;
-});
-let closure_11 = tmp6;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCallOrientationHandlers(isGuildStageVoice) {
-  let applicationId;
-  let closure_0;
-  let closure_1;
-  let closure_2;
-  let closure_3;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(16);
-  const tmp4 = useIsPrivateAudioOnlyCallDefault(isGuildStageVoice);
-  _require = tmp4;
-  const tmp5 = useSelectedParticipantDefault(isGuildStageVoice);
-  importDefault = tmp5;
-  if (cResult[0] === isGuildStageVoice) {
-    let tmp6;
-    let tmp12;
-    let tmp19;
-    let tmp18;
-    let tmp17;
-    let tmp23;
-    let tmp22;
-    if (cResult[1] === tmp5) {
-      tmp6 = cResult[2];
-    }
-    dependencyMap = tmp6;
-    const tmp9 = closure_11();
-    const tmpResult = tmp(10918);
-    const tmp10 = tmp9 || !tmpResult.useIsConnectedToVoiceChannel(isGuildStageVoice);
-    react = tmp10;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const currentEmbeddedActivity = applicationId.getCurrentEmbeddedActivity();
-      cResult[3] = currentEmbeddedActivity;
-      tmp12 = currentEmbeddedActivity;
-    } else {
-      tmp12 = cResult[3];
-    }
-    applicationId = undefined;
-    if (tmp12 != null) {
-      applicationId = tmp12.applicationId;
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [applicationId];
-      const fn = function k() {
-        let UNLOCKED;
-        if (null != applicationId) {
-          let UNLOCKED2 = EmbeddedActivitiesStore.getOrientationLockStateForApp(tmp);
-          if (UNLOCKED2 == null) {
-            UNLOCKED2 = OrientationLockState.UNLOCKED;
-          }
-          UNLOCKED = UNLOCKED2;
-        } else {
-          UNLOCKED = OrientationLockState.UNLOCKED;
-        }
-        return UNLOCKED;
-      };
-      const items1 = [applicationId];
-      cResult[4] = items;
-      cResult[5] = fn;
-      cResult[6] = items1;
-      tmp19 = items1;
-      tmp18 = fn;
-      tmp17 = items;
-    } else {
-      tmp17 = cResult[4];
-      tmp18 = cResult[5];
-      tmp19 = cResult[6];
-    }
-    const tmpResult2 = tmp(504);
-    const stateFromStores = tmpResult2.useStateFromStores(tmp17, tmp18, tmp19);
-    const _Symbol3 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class P {
-        constructor() {
-          return closure_0(closure_2[6]).restoreDefaultOrientation;
-        }
-      }
-      const items2 = [];
-      cResult[7] = P;
-      cResult[8] = items2;
-      tmp23 = items2;
-      tmp22 = P;
-    } else {
-      class P {
-        constructor() {
-          return closure_0(closure_2[6]).restoreDefaultOrientation;
-        }
-      }
-      tmp23 = cResult[8];
-    }
-    const effect = react.useEffect(tmp22, tmp23);
-    if (cResult[9] === stateFromStores) {
-      class P {
-        constructor() {
-          return closure_0(closure_2[6]).restoreDefaultOrientation;
-        }
-      }
-    }
-    class L {
-      constructor() {
-        const tmp = closure_2;
-        if (!tmp) {
-          const tmp2 = closure_3;
-          if (!tmp2) {
-            if (null != closure_1) {
-              if (closure_1.type === ParticipantTypes.ACTIVITY) {
-                if (closure_1.applicationId === applicationId) {
-                  if (isOrientationLockSupportedDefault()) {
-                    if (OrientationLockState.UNLOCKED === stateFromStores) {
-                      obj3 = DeviceOrientation;
-                      obj3.unlockOrientation({ unlockAfterRotatingToPreviousLock: true });
-                    } else if (OrientationLockState.PORTRAIT === stateFromStores) {
-                      const obj2 = DeviceOrientation;
-                      obj2.lockOrientation("PORTRAIT", true);
-                    } else if (OrientationLockState.LANDSCAPE === stateFromStores) {
-                      const obj6 = DeviceOrientation;
-                      obj6.lockOrientation("LANDSCAPE", true);
-                    }
-                  }
-                }
-              }
-            }
-            const obj = DeviceOrientation;
-            if (closure_0) {
-              const result = obj.lockOrientationForiOS("PORTRAIT");
-            } else {
-              obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
-            }
-          }
-        }
-        const obj4 = DeviceOrientation;
-        obj4.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
-        const obj5 = DeviceOrientation;
-        const result1 = obj5.lockOrientationForiOS("PORTRAIT");
-      }
-    }
-    const items3 = [stateFromStores, tmp5, applicationId, tmp4, tmp6, tmp10];
-    cResult[9] = stateFromStores;
-    cResult[10] = tmp4;
-    cResult[11] = tmp6;
-    cResult[12] = tmp10;
-    cResult[13] = tmp5;
-    cResult[14] = L;
-    cResult[15] = items3;
-  }
-  let isGuildStageVoiceResult = isGuildStageVoice.isGuildStageVoice();
-  if (isGuildStageVoiceResult) {
-    class P {
-      constructor() {
-        return closure_0(closure_2[6]).restoreDefaultOrientation;
-      }
-    }
-    isGuildStageVoiceResult = null == tmp5;
-  }
-  cResult[0] = isGuildStageVoice;
-  cResult[1] = tmp5;
-  cResult[2] = isGuildStageVoiceResult;
-  tmp6 = isGuildStageVoiceResult;
-}) : (function useChannelCallOrientationHandlers(isGuildStageVoice) {
+}
+export function useChannelCallOrientationHandlers(isGuildStageVoice) {
   let applicationId;
   let closure_0;
   let closure_1;
   let closure_3;
+  let stateFromStores;
   let tmp = dependencyMap;
   let tmp2 = useIsPrivateAudioOnlyCallDefault(isGuildStageVoice);
   _require = tmp2;
@@ -238,35 +123,38 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCa
     isGuildStageVoiceResult = null == tmp3;
   }
   dependencyMap = isGuildStageVoiceResult;
-  const tmp6 = closure_11();
+  const voiceChatDrawerState = obj3().voiceChatDrawerState;
+  let tmp6 = voiceChatDrawerState === stateFromStores.OPEN || voiceChatDrawerState === stateFromStores.CLOSING;
   let obj = require("VoiceChatHooks");
-  const tmp8 = tmp6 || !obj.useIsConnectedToVoiceChannel(isGuildStageVoice);
-  react = tmp8;
-  const currentEmbeddedActivity = applicationId.getCurrentEmbeddedActivity();
-  const tmp9 = applicationId;
-  applicationId = undefined;
   const tmp7 = _require;
+  if (!tmp6) {
+    tmp6 = !obj.useIsConnectedToVoiceChannel(isGuildStageVoice);
+  }
+  react = tmp6;
+  const currentEmbeddedActivity = applicationId.getCurrentEmbeddedActivity();
+  const tmp8 = applicationId;
+  applicationId = undefined;
   if (currentEmbeddedActivity != null) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  const items = [tmp9];
+  const items = [tmp8];
   const items1 = [applicationId];
   const tmp7Result = tmp7(504);
-  const stateFromStores = tmp7Result.useStateFromStores(items, () => {
+  stateFromStores = tmp7Result.useStateFromStores(items, () => {
     let UNLOCKED;
     if (null != applicationId) {
       let UNLOCKED2 = EmbeddedActivitiesStore.getOrientationLockStateForApp(tmp);
       if (UNLOCKED2 == null) {
-        UNLOCKED2 = OrientationLockState.UNLOCKED;
+        UNLOCKED2 = EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED;
       }
       UNLOCKED = UNLOCKED2;
     } else {
-      UNLOCKED = OrientationLockState.UNLOCKED;
+      UNLOCKED = EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED;
     }
     return UNLOCKED;
   }, items1);
-  const effect = react.useEffect(() => closure_0(dependencyMap[6]).restoreDefaultOrientation, []);
-  const items2 = [stateFromStores, tmp3, applicationId, tmp2, isGuildStageVoiceResult, tmp8];
+  const effect = react.useEffect(() => closure_0(dependencyMap[5]).restoreDefaultOrientation, []);
+  const items2 = [stateFromStores, tmp3, applicationId, tmp2, isGuildStageVoiceResult, tmp6];
   const effect1 = react.useEffect(() => {
     const tmp = dependencyMap;
     if (!tmp) {
@@ -276,13 +164,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCa
           if (closure_1.type === ParticipantTypes.ACTIVITY) {
             if (closure_1.applicationId === applicationId) {
               if (isOrientationLockSupportedDefault()) {
-                if (OrientationLockState.UNLOCKED === stateFromStores) {
+                if (EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED === stateFromStores) {
                   obj3 = DeviceOrientation;
                   obj3.unlockOrientation({ unlockAfterRotatingToPreviousLock: true });
-                } else if (OrientationLockState.PORTRAIT === stateFromStores) {
+                } else if (EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT === stateFromStores) {
                   const obj2 = DeviceOrientation;
                   obj2.lockOrientation("PORTRAIT", true);
-                } else if (OrientationLockState.LANDSCAPE === stateFromStores) {
+                } else if (EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.LANDSCAPE === stateFromStores) {
                   const obj6 = DeviceOrientation;
                   obj6.lockOrientation("LANDSCAPE", true);
                 }
@@ -303,66 +191,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCa
     const obj5 = DeviceOrientation;
     const result1 = obj5.lockOrientationForiOS("PORTRAIT");
   }, items2);
-});
-function resetFocusTimer() {
-  timeout.stop();
-  timeout.start(5000, f108476);
 }
-size = size_mod;
-let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallStore.tsx");
-
-export const focusTimeout = timeout;
-export const setFocus = function setFocus(focus) {
-  _require = focus;
-  let obj = require("react-native");
-  obj.batchUpdates(() => {
-    const obj = { focus };
-    return obj3.setState(obj);
-  });
-};
-export const toggleFocus = function toggleFocus() {
-  const focus = obj3.getState().focus;
-  let obj = focus(1274);
-  obj.batchUpdates(() => {
-    const obj = { focus: !focus, pipFocus: false };
-    return obj3.setState(obj);
-  });
-};
-export { resetFocusTimer };
-export const resetFocus = function resetFocus() {
-  let state;
-  if (obj3.getState().focus) {
-    timeout.stop();
-    timeout.start(5000, f108476);
-  } else {
-    let obj = react_native;
-    obj.batchUpdates(() => state.setState({ focus: true }));
-  }
-};
-export const clearFocusTimer = function clearFocusTimer() {
-  timeout.stop();
-};
-export const setVoiceChatDrawerState = function setVoiceChatDrawerState(embeddedActivityLocationChannelId, CLOSED) {
-  let voiceChatDrawerState;
-  _require = CLOSED;
-  const tmp2 = CLOSED !== VoiceChatDrawerState.OPEN && CLOSED !== VoiceChatDrawerState.CLOSED;
-  if (!tmp2) {
-    let obj = ChannelRTCActionCreatorsDefault;
-    obj.updateChatOpen(embeddedActivityLocationChannelId, CLOSED === VoiceChatDrawerState.OPEN);
-  }
-  const obj2 = require("react-native");
-  obj2.batchUpdates(() => {
-    const obj = { voiceChatDrawerState };
-    return obj3.setState(obj);
-  });
-};
-export const togglePipFocus = throttleResult;
-export const useIsVoiceChatFocused = tmp6;
-export const useChannelCallOrientationHandlers = tmp7;
-export const resetChannelCallStore = function resetChannelCallStore() {
+export function resetChannelCallStore() {
   let state;
   timeout.stop();
   const obj = react_native;
-  obj.batchUpdates(() => state.setState(closure_1_9));
-};
+  obj.batchUpdates(() => state.setState(closure_1_8));
+}
 export const useChannelCallStore = obj3;

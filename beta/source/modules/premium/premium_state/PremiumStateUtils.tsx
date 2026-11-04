@@ -1,15 +1,15 @@
-// Module ID: 1414
-// Function ID: 1415
+// Module ID: 1406
+// Function ID: 1407
 // Name: PremiumStateUtils
 // Dependencies: [2]
 // Exports: parseServerPremiumState
 
-// Module 1414 (PremiumStateUtils)
+// Module 1406 (PremiumStateUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/premium_state/PremiumStateUtils.tsx");
 
-export const parseServerPremiumState = function parseServerPremiumState(premium_state) {
+export function parseServerPremiumState(premium_state) {
   let tmp = null;
   if (null != premium_state) {
     const obj = { premiumSubscriptionType: null, premiumSource: null, premiumSubscriptionGroupRole: null };
@@ -17,4 +17,4 @@ export const parseServerPremiumState = function parseServerPremiumState(premium_
     tmp = obj;
   }
   return tmp;
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9475
+// Function ID: 9476
 // Name: PremiumWishlistItemRecord
-// Dependencies: [2047, 9404, 1087, 2]
+// Dependencies: [2040, 9473, 1072, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 9406 (PremiumWishlistItemRecord)
-import Constants from "Constants" /* 1087 */;
-import SKURecord from "SKURecord" /* 2047 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9404 */;
+// Module 9475 (PremiumWishlistItemRecord)
+import Constants from "Constants" /* 1072 */;
+import SKURecord from "SKURecord" /* 2040 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9473 */;
 import size from "module_2" /* 2 */;
 
 const SKUProductLines = Constants.SKUProductLines;
@@ -67,6 +67,6 @@ class PremiumWishlistItemRecord extends BaseWishlistItemRecord {
 const result = size.fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
 
 export default PremiumWishlistItemRecord;
-export const isPremiumWishlistItemRecord = function isPremiumWishlistItemRecord(arg0) {
+export function isPremiumWishlistItemRecord(arg0) {
   return arg0 instanceof PremiumWishlistItemRecord;
-};
+}

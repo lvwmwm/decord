@@ -1,20 +1,20 @@
-// Module ID: 10008
-// Function ID: 10009
+// Module ID: 10089
+// Function ID: 10090
 // Name: cheapWorkletShallowEqual
 // Dependencies: [2]
 // Exports: cheapWorkletArrayShallowEqual, cheapWorkletShallowEqual
 
-// Module 10008 (cheapWorkletShallowEqual)
+// Module 10089 (cheapWorkletShallowEqual)
 import size from "module_2" /* 2 */;
 
-function cheapWorkletShallowEqual(safeAreaState, safeAreaState2) {
-  if (safeAreaState === safeAreaState2) {
+function cheapWorkletShallowEqual(safeAreaState, current) {
+  if (safeAreaState === current) {
     return true;
   } else {
     if (null != safeAreaState) {
-      if (null != safeAreaState2) {
+      if (null != current) {
         for (const key10005 in safeAreaState) {
-          if (safeAreaState[key10005] === safeAreaState2[key10005]) {
+          if (safeAreaState[key10005] === current[key10005]) {
             continue;
           } else {
             let flag = false;

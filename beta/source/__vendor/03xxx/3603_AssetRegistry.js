@@ -1,10 +1,10 @@
 // Module ID: 3603
 // Function ID: 3604
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 3603 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/rust_3pp", scales: [1], hash: "7a34d0e75348656679fb1a8c6c330883", name: "Rust3PP.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3J1c3RfM3Bw", scales: [1], hash: "b950ec272d534fd063940aadff0b65d1", name: "th.messages.b950ec272d534fd063940aadff0b65d1.compiled.messages", type: "jsona" });

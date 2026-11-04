@@ -1,11 +1,11 @@
-// Module ID: 6509
-// Function ID: 6510
+// Module ID: 6549
+// Function ID: 6550
 // Name: StripeActionCreators
-// Dependencies: [5, 1087, 1297, 2]
+// Dependencies: [5, 1072, 1282, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 6509 (StripeActionCreators)
-import Constants from "Constants" /* 1087 */;
+// Module 6549 (StripeActionCreators)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj = function _createStripeSetupIntent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -47,7 +47,7 @@ let obj = function _createStripeSetupIntent() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -100,7 +100,7 @@ obj = function _createSetupIntentForPaymentElements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ obj = function _createSetupIntentForPaymentElements() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -166,9 +166,9 @@ obj = function _createSetupIntentForPaymentElements() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/billing/actions/StripeActionCreators.tsx");
 
-export const createStripeSetupIntent = function createStripeSetupIntent() {
+export function createStripeSetupIntent() {
   return obj(...arguments);
-};
-export const createSetupIntentForPaymentElements = function createSetupIntentForPaymentElements() {
+}
+export function createSetupIntentForPaymentElements() {
   return obj(...arguments);
-};
+}

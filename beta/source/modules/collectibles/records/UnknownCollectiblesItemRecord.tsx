@@ -1,12 +1,12 @@
-// Module ID: 7690
-// Function ID: 7691
+// Module ID: 7728
+// Function ID: 7729
 // Name: UnknownCollectiblesItemRecord
-// Dependencies: [1994, 1995, 2]
+// Dependencies: [1986, 1987, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 7690 (UnknownCollectiblesItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1994 */;
+// Module 7728 (UnknownCollectiblesItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1986 */;
 import size from "module_2" /* 2 */;
 
 class UnknownCollectiblesItemRecord extends BaseCollectiblesItemRecord {
@@ -35,6 +35,6 @@ class UnknownCollectiblesItemRecord extends BaseCollectiblesItemRecord {
 const result = size.fileFinishedImporting("modules/collectibles/records/UnknownCollectiblesItemRecord.tsx");
 
 export default UnknownCollectiblesItemRecord;
-export const isUnknownCollectiblesItemRecord = function isUnknownCollectiblesItemRecord(arg0) {
+export function isUnknownCollectiblesItemRecord(arg0) {
   return arg0 instanceof UnknownCollectiblesItemRecord;
-};
+}

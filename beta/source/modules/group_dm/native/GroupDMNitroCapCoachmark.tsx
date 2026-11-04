@@ -1,219 +1,42 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14579
+// Function ID: 14580
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 11326, 4852, 21, 5003, 558, 576, 11324, 11331, 11327, 4839, 7528, 1128, 7265, 10892, 9457, 587, 11323, 9872, 2]
+// Dependencies: [32, 19, 17, 11629, 4860, 21, 5014, 11627, 11634, 11630, 7569, 4847, 1113, 7306, 10978, 9528, 575, 11626, 9954, 2]
+// Exports: default
 
-// Module 14056 (GroupDMNitroCapCoachmark)
+// Module 14579 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10892 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11323 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11324 */;
-import GroupDMConstants from "GroupDMConstants" /* 11326 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1113 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10978 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11627 */;
+import GroupDMConstants from "GroupDMConstants" /* 11629 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let tmp;
-const NitroWheelIcon2 = tmp(9457);
-let _slicedToArray = _slicedToArray_mod;
+const NitroWheelIcon2 = tmp(9528);
 let react = react_mod;
 const View = react_native.View;
-let number = GroupDMConstants.MAX_GROUP_DM_NITRO_PARTICIPANTS;
+let closure_6 = GroupDMConstants.MAX_GROUP_DM_NITRO_PARTICIPANTS;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ nitroWheelIcon: { width: 16, height: 16 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitroCapCoachmark(location) {
-  let channelId;
-  let children;
-  let closure_2;
-  let closure_3;
-  let closure_4;
-  let items;
-  let tmp = channelId;
-  const obj = channelId(576);
-  const cResult = obj.c(34);
-  ({ children, channelId } = location);
-  const _location = location.location;
-  const tmp4 = closure_9();
-  react.useRef(null);
-  const obj2 = channelId(11324);
-  const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
-  dependencyMap = tmp7;
-  if (cResult[0] === groupDMNitroAudience) {
-    let tmp8;
-    let tmp11;
-    let tmp13;
-    if (cResult[1] === _location) {
-      tmp8 = cResult[2];
-    }
-    const tmp10 = _location(11331)(tmp8);
-    _slicedToArray = tmp10;
-    if (cResult[3] !== _location) {
-      const obj3 = { location: _location };
-      cResult[3] = _location;
-      cResult[4] = obj3;
-      tmp11 = obj3;
-    } else {
-      tmp11 = cResult[4];
-    }
-    const tmp9Result = _location(11327);
-    const enabled = tmp9Result.useConfig(tmp11).enabled;
-    if (cResult[5] === enabled) {
-      let tmp30;
-      if (cResult[6] === "staff" === groupDMNitroAudience) {
-        tmp13 = cResult[7];
-      }
-      const tmpResult = tmp(7528);
-      const tmp15 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp13), 2);
-      react = tmp17;
-      const first = tmp15[0];
-      const _Symbol = Symbol;
-      const NITRO_GDM_CAP_COACHMARK = tmp(4839).DismissibleContent.NITRO_GDM_CAP_COACHMARK;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1128).intl;
-        const stringResult = intl.string(tmp(1128).t.d8Spvj);
-        const intl2 = tmp(1128).intl;
-        const obj4 = { number };
-        cResult[8] = stringResult;
-        cResult[9] = intl2.formatToPlainString(tmp(1128).t.U3CkDg, obj4);
-        const formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.U3CkDg, obj4);
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
-          constructor() {
-            return jsx(channelId(closure_2[15]).Badge, { type: "beta", variant: "expressive" });
-          }
-        }
-        cResult[10] = O;
-      } else {
-        class O {
-          constructor() {
-            return jsx(channelId(closure_2[15]).Badge, { type: "beta", variant: "expressive" });
-          }
-        }
-      }
-      if (cResult[11] !== tmp15[1]) {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-        cResult[11] = tmp15[1];
-        cResult[12] = P;
-      } else {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-      if (cResult[13] !== groupDMNitroAudience) {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-        const string = tmp27.string;
-        const tmpResult2 = tmp(11324);
-        cResult[13] = groupDMNitroAudience;
-        cResult[14] = string(tmpResult2.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
-        const stringResult1 = string(tmpResult2.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
-      } else {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-      if (cResult[15] === "entitled" === groupDMNitroAudience) {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-        if ("entitled" === groupDMNitroAudience) {
-          class P {
-            constructor() {
-              return closure_4(ContentDismissActionType.USER_DISMISS);
-            }
-          }
-        }
-        if (cResult[18] === channelId) {
-          class P {
-            constructor() {
-              return closure_4(ContentDismissActionType.USER_DISMISS);
-            }
-          }
-        }
-        const fn = function j() {
-          const tmp = closure_2;
-          if (tmp) {
-            openGroupDMAddMembersDefault(channelId, _location);
-          } else {
-            closure_3();
-          }
-          closure_4(ContentDismissActionType.TAKE_ACTION);
-        };
-        cResult[18] = channelId;
-        cResult[19] = tmp10;
-        cResult[20] = "entitled" === groupDMNitroAudience;
-        cResult[21] = _location;
-        cResult[22] = tmp15[1];
-        cResult[23] = fn;
-      }
-      if ("entitled" === groupDMNitroAudience) {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      } else {
-        class P {
-          constructor() {
-            return closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-        const NitroWheelIcon = tmp(9457).NitroWheelIcon;
-        tmp30 = <NitroWheelIcon size="custom" style={tmp4.nitroWheelIcon} color={_location(587).unsafe_rawColors.WHITE} />;
-      }
-      cResult[15] = "entitled" === groupDMNitroAudience;
-      cResult[16] = tmp4;
-      cResult[17] = tmp30;
-    }
-    if (enabled) {
-      class P {
-        constructor() {
-          return closure_4(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      cResult[5] = enabled;
-      cResult[6] = "staff" === groupDMNitroAudience;
-      cResult[7] = items;
-      tmp13 = items;
-    }
-    items = [];
-  }
-  const obj6 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(11324).GroupDMNitroAcquisitionStrategy.MARKETING };
-  cResult[0] = groupDMNitroAudience;
-  cResult[1] = _location;
-  cResult[2] = obj6;
-  tmp8 = obj6;
-}) : (function GroupDMNitroCapCoachmark(channelId) {
+const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMNitroCapCoachmark.tsx");
+
+export default function GroupDMNitroCapCoachmark(channelId) {
   let closure_4;
   let nitroWheelIcon;
   channelId = channelId.channelId;
   const _location = channelId.location;
   react = undefined;
-  number = undefined;
+  let number;
   let visible;
   const children = channelId.children;
   let tmp = closure_9();
@@ -221,25 +44,25 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
   let obj = react;
   const ref = react.useRef(null);
   const tmp3 = channelId;
-  let obj2 = channelId(11324);
+  let obj2 = channelId(11627);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   const tmp6 = "entitled" === groupDMNitroAudience;
   react = tmp6;
-  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(11324).GroupDMNitroAcquisitionStrategy.MARKETING };
-  let tmp7 = _location(11331);
+  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(11627).GroupDMNitroAcquisitionStrategy.MARKETING };
+  let tmp7 = _location(11634);
   const tmp7Result = tmp7(obj3);
   let closure_5 = tmp7Result;
-  const obj4 = _location(11327);
+  const obj4 = _location(11630);
   const enabled = obj4.useConfig({ location: _location }).enabled;
-  channelId(7528);
+  channelId(7569);
   if (enabled) {
     let str = "staff";
     if ("staff" !== groupDMNitroAudience) {
-      const items = [tmp3(4839).DismissibleContent.NITRO_GDM_CAP_COACHMARK];
+      const items = [tmp3(4847).DismissibleContent.NITRO_GDM_CAP_COACHMARK];
     }
     const tmp13 = groupDMNitroAudience(tmp10([]), 2);
     number = tmp14;
-    const tmp15 = tmp13[0] === tmp3(4839).DismissibleContent.NITRO_GDM_CAP_COACHMARK;
+    const tmp15 = tmp13[0] === tmp3(4847).DismissibleContent.NITRO_GDM_CAP_COACHMARK;
     visible = tmp15;
     const items1 = [groupDMNitroAudience, tmp6, tmp15, tmp13[1], channelId, _location, tmp, tmp7Result];
     const memo = obj.useMemo(() => {
@@ -258,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
         position: "bottom",
         offsetY: 12,
         renderImgComponent() {
-          return closure_1_8(channelId(nitroWheelIcon[15]).Badge, { type: "beta", variant: "expressive" });
+          return closure_1_8(channelId(nitroWheelIcon[13]).Badge, { type: "beta", variant: "expressive" });
         },
         onDismiss() {
           return number(constants.USER_DISMISS);
@@ -270,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
         onButtonPress() {
           const tmp = closure_1_4;
           if (tmp) {
-            _location(nitroWheelIcon[19])(channelId, closure_1_1);
+            _location(nitroWheelIcon[17])(channelId, closure_1_1);
           } else {
             closure_1_5();
           }
@@ -295,11 +118,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       }
       return obj;
     }, items1);
-    const tmp3Result = tmp3(9872);
+    const tmp3Result = tmp3(9954);
     const coachmark = tmp3Result.useCoachmark(ref, memo);
     return <closure_5 ref={ref} collapsable={false}>{children}</closure_5>;
   }
-});
-const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMNitroCapCoachmark.tsx");
-
-export default tmp2;
+};

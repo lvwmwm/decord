@@ -1,18 +1,18 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 16465
+// Function ID: 16466
 // Name: HexagonActionCreators
-// Dependencies: [5, 1392, 5028, 3, 1104, 1297, 5030, 584, 2]
+// Dependencies: [5, 1383, 5039, 3, 1089, 1282, 5041, 572, 2]
 // Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 15890 (HexagonActionCreators)
+// Module 16465 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5030 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5039 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1392 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, c5, c6, closure_3;
@@ -33,7 +33,7 @@ let obj = function _enrollInHexagonCampaign() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _enrollInHexagonCampaign() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -116,7 +116,7 @@ obj = function _enrollAndWaitForHexagonCampaignPerk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -211,7 +211,7 @@ obj = function _enrollAndClearPendingHexagonCampaignEnrollment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -276,7 +276,7 @@ const result1 = size.fileFinishedImporting("modules/hexagon_campaign/HexagonActi
 
 export const HEXAGON_CAMPAIGN_PERK_SYNC_TIMEOUT_MS = result;
 export { enrollInHexagonCampaign };
-export const ensureHexagonCampaignEnrollment = function ensureHexagonCampaignEnrollment(DISPLAY_NAME_STYLE) {
+export function ensureHexagonCampaignEnrollment(DISPLAY_NAME_STYLE) {
   let resolved;
   function enrollAndClearPendingHexagonCampaignEnrollment() {
     return obj(...arguments);
@@ -291,29 +291,29 @@ export const ensureHexagonCampaignEnrollment = function ensureHexagonCampaignEnr
     resolved = closure_10;
   }
   return resolved;
-};
+}
 export function getPendingHexagonCampaignEnrollment() {
   return closure_10;
 }
-export const markHexagonCampaignPerkApplied = function markHexagonCampaignPerkApplied(DISPLAY_NAME_STYLE) {
+export function markHexagonCampaignPerkApplied(DISPLAY_NAME_STYLE) {
   obj = DispatcherDefault;
   const obj2 = { type: "HEXAGON_CAMPAIGN_PERK_APPLIED", perk: DISPLAY_NAME_STYLE };
   obj.dispatch(obj2);
-};
-export const clearHexagonCampaignAppliedPerks = function clearHexagonCampaignAppliedPerks() {
+}
+export function clearHexagonCampaignAppliedPerks() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "HEXAGON_CAMPAIGN_APPLIED_PERKS_CLEARED" });
-};
-export const markHexagonCampaignDisplayNameStylesVisited = function markHexagonCampaignDisplayNameStylesVisited() {
+}
+export function markHexagonCampaignDisplayNameStylesVisited() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES_VISITED" });
-};
-export const saveHexagonCampaignPreviousPerkValues = function saveHexagonCampaignPreviousPerkValues(previousPerkValues) {
+}
+export function saveHexagonCampaignPreviousPerkValues(previousPerkValues) {
   obj = DispatcherDefault;
   const obj2 = { type: "HEXAGON_CAMPAIGN_PREVIOUS_PERK_VALUES_SAVED", previousPerkValues };
   obj.dispatch(obj2);
-};
-export const saveHexagonCampaignPreviousDisplayNameStyles = function saveHexagonCampaignPreviousDisplayNameStyles() {
+}
+export function saveHexagonCampaignPreviousDisplayNameStyles() {
   const currentUser = UserStore.getCurrentUser();
   let displayNameStyles;
   if (currentUser != null) {
@@ -328,4 +328,4 @@ export const saveHexagonCampaignPreviousDisplayNameStyles = function saveHexagon
     const obj3 = DispatcherDefault;
     obj3.dispatch(obj4);
   }
-};
+}

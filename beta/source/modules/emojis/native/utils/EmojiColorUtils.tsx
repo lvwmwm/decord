@@ -1,12 +1,12 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 18138
+// Function ID: 18139
 // Name: utils/EmojiColorUtils
-// Dependencies: [5, 17, 1459, 1901, 2]
+// Dependencies: [5, 17, 1451, 1893, 2]
 // Exports: getEmojiDominantColors
 
-// Module 17542 (utils/EmojiColorUtils)
+// Module 18138 (utils/EmojiColorUtils)
 import react_native from "react-native" /* 17 */;
-import LRUCacheDefault from "LRUCache" /* 1459 */;
+import LRUCacheDefault from "LRUCache" /* 1451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _getFromCacheOrFallback2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let v0;
@@ -57,7 +57,7 @@ let obj = function _getFromCacheOrFallback2() {
             value2 = undefined;
             c2 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c2) {
           if (arg0 === 1) {
@@ -134,7 +134,7 @@ obj = function _getEmojiDominantColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ obj = function _getEmojiDominantColors() {
             ({ emoji: c0, emojiSource: c1 } = closure_0);
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -171,9 +171,9 @@ obj = function _getEmojiDominantColors() {
               cache: closure_131_4,
               cacheKey: closure_131_5(c0),
               fallbackParam,
-              fallbackFunc(value2) {
+              fallbackFunc(channelIcon) {
                         obj = closure_1_0(closure_1_1[3]);
-                        return obj.getDominantColors(closure_1_3.resolveAssetSource(value2));
+                        return obj.getDominantColors(closure_1_3.resolveAssetSource(channelIcon));
                       }
             };
             c4 = 2;
@@ -209,6 +209,6 @@ const tmp2 = new LRUCacheDefault(100);
 let closure_4 = tmp2;
 let result = size.fileFinishedImporting("modules/emojis/native/utils/EmojiColorUtils.tsx");
 
-export const getEmojiDominantColors = function getEmojiDominantColors() {
+export function getEmojiDominantColors() {
   return obj(...arguments);
-};
+}

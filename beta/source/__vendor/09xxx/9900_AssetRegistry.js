@@ -1,10 +1,10 @@
 // Module ID: 9900
 // Function ID: 9901
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 9900 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/InRainbowsIcon", width: 60, height: 60, scales: [2, 3], hash: "83afa6ade4bb460402841be8438f6e52", name: "InRainbowsIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "6186005757c9a6da5db2aeedc6cf425e", name: "wumpus-wizard", type: "png" });

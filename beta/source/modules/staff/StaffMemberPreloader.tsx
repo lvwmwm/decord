@@ -1,20 +1,20 @@
-// Module ID: 18992
-// Function ID: 18993
+// Module ID: 19625
+// Function ID: 19626
 // Name: StaffMemberPreloader
-// Dependencies: [4877, 1392, 18993, 6862, 2]
+// Dependencies: [4885, 1383, 19626, 6902, 2]
 // Exports: preloadStaffMembers
 
-// Module 18992 (StaffMemberPreloader)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
-import StaffMemberConstants from "StaffMemberConstants" /* 18993 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 19625 (StaffMemberPreloader)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6902 */;
+import StaffMemberConstants from "StaffMemberConstants" /* 19626 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const PRELOAD_SERVER_ID = StaffMemberConstants.PRELOAD_SERVER_ID;
 const result = size.fileFinishedImporting("modules/staff/StaffMemberPreloader.tsx");
 
-export const preloadStaffMembers = function preloadStaffMembers() {
+export function preloadStaffMembers() {
   const currentUser = UserStore.getCurrentUser();
   let isStaffResult;
   if (currentUser != null) {
@@ -27,4 +27,4 @@ export const preloadStaffMembers = function preloadStaffMembers() {
     const obj2 = GuildActionCreatorsDefault;
     const members = obj2.requestMembers(PRELOAD_SERVER_ID, "", 0, false);
   }
-};
+}

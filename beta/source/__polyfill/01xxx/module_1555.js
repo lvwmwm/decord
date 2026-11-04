@@ -1,234 +1,113 @@
 // Module ID: 1555
 // Function ID: 1556
 // Dependencies: []
-// Exports: getActionFromState
 
 // Module 1555
-const weakMap = new WeakMap();
-function createNormalizedConfigItem(arg0) {
-
-}
-function createNormalizedConfigs(arg0) {
-
-}
-
-export const getActionFromState = function getActionFromState(index, initialRouteName) {
-  let obj4;
-  let reduced;
-  let routes;
-  let substr;
-  const f88912 = (acc, item) => {
-    let reduced;
-    let tmp;
-    let tmp2;
-    [tmp, tmp2] = item;
-    if (typeof createNormalizedConfigItem === "function") {
-      if (typeof tmp2 === "object") {
-        let obj;
-        if (null != tmp2) {
-          const obj2 = { initialRouteName: tmp2.initialRouteName, screens: reduced };
-          reduced = undefined;
-          if (null != tmp2.screens) {
-            if (typeof createNormalizedConfigs === "function") {
-              const _Object = Object;
-              const entries = Object.entries(tmp5);
-              reduced = entries.reduce(f88912, {});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-          obj = obj2;
-        }
-        acc[tmp] = obj;
-        return acc;
-      }
-      obj = {};
+function decodeComponents(match, arg1) {
+  try {
+    const _decodeURIComponent = decodeURIComponent;
+    const items = [decodeURIComponent(match.join(""))];
+    return items;
+  } catch (err) {
+    if (1 === match.length) {
+      return match;
     } else {
-      throw new TypeError("Trying to call a non-function");
+      const substr = match.slice(0, num2);
+      const _Array = Array;
+      const substr1 = match.slice(num2);
+      const call = concat.call;
+      const items1 = [];
+      const tmp6 = decodeComponents(substr);
+      return call(items1, tmp6, decodeComponents(substr1));
     }
-  };
-  const tmp = initialRouteName;
-  if (tmp) {
-    let obj2 = weakMap;
-    obj4 = weakMap.get(initialRouteName);
-    if (!obj4) {
-      const tmp2 = createNormalizedConfigItem;
-      if (typeof createNormalizedConfigItem === "function") {
-        if (typeof initialRouteName === "object") {
-          let obj3;
-          if (null != initialRouteName) {
-            let obj = { initialRouteName: initialRouteName.initialRouteName, screens: reduced };
-            reduced = undefined;
-            if (null != initialRouteName.screens) {
-              if (typeof createNormalizedConfigs === "function") {
-                let _Object = Object;
-                let entries = Object.entries(tmp5);
-                reduced = entries.reduce(f88912, {});
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            obj3 = obj;
-          }
-          const result = obj2.set(initialRouteName, obj3);
-          obj4 = obj3;
-        }
-        obj3 = {};
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-  } else {
-    obj4 = {};
   }
-  if (null != index.index) {
-    const routes1 = index.routes;
-    substr = routes1.slice(0, index.index + 1);
-  } else {
-    substr = index.routes;
+}
+function decode(arg0) {
+  let match1;
+  let str = arg0;
+  try {
+    const _decodeURIComponent = decodeURIComponent;
+    return decodeURIComponent(str);
+  } catch (err) {
+    let match = str.match(regExp) || [];
+    let num3 = 1;
+    if (1 < match.length) {
+      do {
+        let obj = decodeComponents(match, num3);
+        let str3 = obj.join("");
+        match1 = str3.match(regExp);
+        if (!match1) {
+          match1 = [];
+        }
+        num3 = num3 + 1;
+        match = match1;
+        str = str3;
+      } while (num3 < match1.length);
+    }
+    return str;
   }
-  if (0 !== substr.length) {
-    let tmp11;
-    if (1 !== substr.length) {
-      if (2 === substr.length) {
-        if (undefined === substr[0].key) {
-          initialRouteName = undefined;
-          const name = substr[0].name;
-          if (obj4 != null) {
-            initialRouteName = obj4.initialRouteName;
-          }
+}
+let regExp = new RegExp("(%[a-f0-9]{2})|([^%]+?)", "gi");
+const regExp1 = new RegExp("(%[a-f0-9]{2})+", "gi");
+
+export default function(str) {
+  let regex;
+  function customDecodeURIComponent(arg0) {
+    let length;
+    const obj = { "%FE%FF": "\uFFFD\uFFFD", "%FF%FE": "\uFFFD\uFFFD", "%C2": "\uFFFD" };
+    let match = regex.exec(arg0);
+    if (match) {
+      try {
+        const _decodeURIComponent = decodeURIComponent;
+        obj[match[0]] = decodeURIComponent(match[0]);
+      } catch (err) {
+        const tmp4 = decode(match[0]);
+        if (tmp4 !== match[0]) {
+          obj[match[0]] = tmp4;
         }
       }
-      const action = { type: "RESET", payload: index };
-      return action;
+      match = regex.exec(arg0);
     }
-    ({ index, routes } = index);
-    if (index == null) {
-      index = index.routes.length - 1;
+    const keys = Object.keys(obj);
+    let num = 0;
+    let str = arg0;
+    let tmp6 = arg0;
+    if (0 < keys.length) {
+      do {
+        let tmp7 = keys[num];
+        let _RegExp = RegExp;
+        let self = this;
+        let self2 = this;
+        let str2 = "g";
+        let replace = str.replace;
+        regExp = new RegExp(tmp7, "g");
+        str = replace(regExp, obj[tmp7]);
+        num = num + 1;
+        tmp6 = str;
+        length = keys.length;
+      } while (num < length);
     }
-    let state1;
-    if (routes[index] != null) {
-      state1 = tmp9.state;
-    }
-    if (obj4 != null) {
-      const screens = obj4.screens;
-      if (screens != null) {
-        let name1;
-        if (routes[index] != null) {
-          name1 = tmp9.name;
-        }
-        tmp11 = screens[name1];
-      }
-    }
-    let obj5 = {};
-    const merged = Object.assign(tmp9.params);
-    let tmp15;
-    if (routes[index]) {
-      const obj8 = { name: null, path: null, params: obj5 };
-      ({ name: obj7.name, path: obj7.path } = routes[index]);
-      tmp15 = obj8;
-    }
-    let length = tmp15;
-    if (length) {
-      let screens1;
-      if (tmp11 != null) {
-        screens1 = tmp11.screens;
-      }
-      length = screens1;
-    }
-    if (length) {
-      const _Object2 = Object;
-      length = Object.keys(tmp11.screens).length;
-    }
-    if (length) {
-      tmp15.pop = true;
-    }
-    if (state1) {
-      while (0 !== state1.routes.length) {
-        let substr1;
-        if (null != state1.index) {
-          let routes2 = state1.routes;
-          substr1 = routes2.slice(0, state1.index + 1);
-        } else {
-          substr1 = state1.routes;
-        }
-        let tmp22 = substr1[substr1.length - 1];
-        let _Object3 = Object;
-        let merged1 = Object.assign(obj5, { initial: "concat", screen: "backgroundColor", params: "e", state: "user" });
-        if (1 === substr1.length) {
-          if (undefined === substr1[0].key) {
-            let params;
-            obj5.initial = true;
-            obj5.screen = tmp22.name;
-            if (tmp22.state) {
-              let obj9 = {};
-              let merged2 = Object.assign(tmp22.params);
-              obj5.params = obj9;
-              obj5.pop = true;
-              params = obj5.params;
-            } else {
-              ({ path: obj6.path, params: obj6.params } = tmp22);
-              params = obj5;
-            }
-            let state = tmp22.state;
-            let tmp27;
-            if (tmp11 != null) {
-              let screens2 = tmp11.screens;
-              if (screens2 != null) {
-                tmp27 = screens2[tmp22.name];
-              }
-            }
-            let screens3;
-            if (tmp27 != null) {
-              screens3 = tmp27.screens;
-            }
-            if (screens3) {
-              let _Object4 = Object;
-              screens3 = Object.keys(tmp27.screens).length;
-            }
-            if (screens3) {
-              params.pop = true;
-            }
-            obj5 = params;
-            tmp11 = tmp27;
-            state1 = state;
-          }
-        }
-        if (2 === substr1.length) {
-          if (undefined === substr1[0].key) {
-            let initialRouteName1;
-            let name2 = substr1[0].name;
-            if (tmp11 != null) {
-              initialRouteName1 = tmp11.initialRouteName;
-            }
-            if (name2 === initialRouteName1) {
-              if (undefined === substr1[1].key) {
-                obj5.initial = false;
-                obj5.screen = tmp22.name;
-              }
-            }
-          }
-        }
-        obj5.state = state1;
-      }
-    }
-    let screen;
-    if (tmp15 != null) {
-      screen = tmp15.params.screen;
-    }
-    if (!screen) {
-      let state2;
-      if (tmp15 != null) {
-        state2 = tmp15.params.state;
-      }
-      screen = state2;
-    }
-    if (screen) {
-      tmp15.pop = true;
-    }
-    if (tmp15) {
-      const action1 = { type: "NAVIGATE", payload: tmp15 };
-      return action1;
+    return tmp6;
+  }
+  if (typeof str !== "string") {
+    const _TypeError = TypeError;
+    const _HermesInternal = HermesInternal;
+    let self = this;
+    let self2 = this;
+    const typeError = new TypeError("Expected `encodedURI` to be of type `string`, got `" + typeof str + "`");
+    let tmp7 = typeError;
+    throw typeError;
+  } else {
+    try {
+      let str2 = " ";
+      const replaced = str.replace(/\+/g, " ");
+      str = replaced;
+      let _decodeURIComponent = decodeURIComponent;
+      return decodeURIComponent(replaced);
+    } catch (err) {
+      let tmp4 = str;
+      let num = 0;
+      return customDecodeURIComponent(str);
     }
   }
 };

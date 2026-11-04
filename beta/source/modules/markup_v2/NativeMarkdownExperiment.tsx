@@ -1,35 +1,45 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8561
+// Function ID: 8562
 // Name: NativeMarkdownExperiment
-// Dependencies: [1455, 558, 576, 2]
+// Dependencies: [8562, 1447, 8564, 2]
+// Exports: isNativeMarkdownEnabled, useNativeMarkdown
 
-// Module 8496 (NativeMarkdownExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8561 (NativeMarkdownExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 8564 */;
+import LabFeatureStore from "LabFeatureStore" /* 8562 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
+let ApexExperiment = ApexExperiment_mod;
 let obj = { name: "2025-04-native-markdown", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeMarkdown(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2);
-}) : (function useNativeMarkdown(location) {
-  const obj = { location: location.location };
-  return apexExperiment.useConfig(obj);
-});
+ApexExperiment = ApexExperiment_mod;
+const obj2 = { name: "2026-10-native-markdown-setting", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment1 = ApexExperiment.createApexExperiment(obj2);
+const enable_native_markdown = "enable_native_markdown";
 const result = size.fileFinishedImporting("modules/markup_v2/NativeMarkdownExperiment.tsx");
 
 export const NativeMarkdownExperiment = apexExperiment;
-export const useNativeMarkdown = tmp3;
+export const NativeMarkdownSettingExperiment = apexExperiment1;
+export const NATIVE_MARKDOWN_LAB_FEATURE = "enable_native_markdown";
+export function isNativeMarkdownEnabled(location, arg1) {
+  let enabled;
+  const _location = location.location;
+  if (apexExperiment1.getConfig({ location: _location }, arg1).enabled) {
+    enabled = LabFeatureStore.get(enable_native_markdown);
+  } else {
+    const obj = { location: _location };
+    enabled = apexExperiment.getConfig(obj, arg1).enabled;
+  }
+  return enabled;
+}
+export function useNativeMarkdown(location) {
+  const _location = location.location;
+  const enabled = apexExperiment1.useConfig({ location: _location }).enabled;
+  const tmp = useLabFeatureDefault(enable_native_markdown);
+  let enabled2 = apexExperiment.useConfig({ location: _location }).enabled;
+  if (enabled) {
+    enabled2 = tmp;
+  }
+  return { enabled: enabled2 };
+}

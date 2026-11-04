@@ -1,22 +1,22 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10567
+// Function ID: 10568
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9831, 502, 2058, 7556, 1087, 1098, 1297, 10488, 6406, 10489, 1128, 4826, 5940, 7551, 504, 7589, 10490, 10491, 10480, 10497, 7372, 4819, 9830, 1267, 2]
+// Dependencies: [109, 5, 19, 9912, 502, 2052, 7597, 1072, 1083, 1282, 10568, 6446, 10569, 1113, 4834, 5958, 7593, 504, 7627, 10571, 10572, 10560, 10578, 7414, 4827, 9911, 1252, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10487 (handlePremiumPurchase)
-import Constants2 from "Constants" /* 1098 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9831 */;
+// Module 10567 (handlePremiumPurchase)
+import Constants2 from "Constants" /* 1083 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9912 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import IAPStore from "IAPStore" /* 7556 */;
-import Constants from "Constants" /* 1087 */;
+import SubscriptionStore from "SubscriptionStore" /* 2052 */;
+import IAPStore from "IAPStore" /* 7597 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let currency, is_gift, offer_id, product_id;
+let closure_5, currency, is_gift, offer_id, product_id;
 
 let closure_12;
 let unpackModuleId;
@@ -45,7 +45,7 @@ let obj = function _validatePurchase() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ let obj = function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = closure_0);
               is_gift = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else {
             let self;
@@ -110,7 +110,7 @@ let obj = function _validatePurchase() {
             } else {
               price = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp19) {
@@ -135,7 +135,7 @@ const setGPlayAnalytics = GPlayAnalyticsStore.setGPlayAnalytics;
 const PaymentGateways = Constants2.PaymentGateways;
 let result = size.fileFinishedImporting("modules/premium/native/handlePremiumPurchase.android.tsx");
 
-export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
+export function useHandlePremiumPurchase() {
   let premiumDiscountOffer;
   let premiumTypeSubscription;
   let stateFromStores;
@@ -164,36 +164,57 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
   }
   const useCallback = paymentGatewayPlanId.useCallback;
   let closure_0 = id(function*(arg0, value) {
+    let analyticsLocation;
+    let application_id;
     let c0;
     let c1;
     let c10;
     let c11;
     let c12;
+    let c13;
     let c2;
     let c3;
     let c4;
     let c5;
     let c7;
     let c9;
+    let closure_16;
     let flag;
     let flag2;
     let formatted;
     let formatted1;
     let id2;
     let isGift;
-    let obj6;
-    let obj8;
+    let obj7;
     let offerId;
-    let price;
-    let price1;
-    function getOfferId(c0, arg1, arg2, arg3, offerIds) {
+    let price2;
+    let tmp;
+    function getOneTimeOffer(oneTimeOffers, c11) {
+      closure_0 = c11;
+      let tmp = null;
+      if (null != c11) {
+        let found;
+        if (oneTimeOffers != null) {
+          oneTimeOffers = oneTimeOffers.oneTimeOffers;
+          if (oneTimeOffers != null) {
+            found = oneTimeOffers.find((offerId) => offerId.offerId === closure_0);
+          }
+        }
+        if (found == null) {
+          found = null;
+        }
+        tmp = found;
+      }
+      return tmp;
+    }
+    function getOfferId(c0, c3, price1, arg3, offerIds) {
       offerIds = undefined;
       if (offerIds != null) {
         offerIds = offerIds.offerIds;
       }
       if (null != offerIds) {
-        if (null != arg2) {
-          const tmp13 = closure_1_0(analyticsLoadId[16]).TrialIdToProductOfferId[arg2.trialId];
+        if (null != price1) {
+          const tmp13 = closure_1_0(analyticsLoadId[16]).TrialIdToProductOfferId[price1.trialId];
           let tmp14;
           if (tmp13 != null) {
             tmp14 = tmp13[c0];
@@ -209,7 +230,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
         }
       }
       let BOGO_OFFER_ID = null;
-      if (arg1) {
+      if (c3) {
         BOGO_OFFER_ID = null;
         const tmp5 = closure_1_0;
         const tmp6 = analyticsLoadId;
@@ -248,75 +269,84 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
     }
     if (1 === tmp4) {
       if (arg0 === 1) {
-        c7 = 3;
+        application_id = 3;
         throw value;
       } else if (arg0 === 2) {
-        c7 = 3;
+        application_id = 3;
         const obj5 = { value, done: true };
         return obj5;
       } else {
         id2 = id.getId();
         const product2 = product.getProduct(productId);
-        const obj7 = { isGift, analyticsLoadId, analyticsLocation, analyticsLocations };
-        const obj25 = premiumSubscription(premiumDiscountOffer[21]);
-        const basePurchaseFlowAnalyticsFields = obj25.getBasePurchaseFlowAnalyticsFields(obj7);
-        let closure_1 = c5;
+        closure_16 = getOneTimeOffer(product2, c11);
+        let price;
+        if (closure_16 != null) {
+          price = closure_16.price;
+        }
+        let price1 = price;
+        if (price == null) {
+          price1 = undefined;
+          if (product2 != null) {
+            price1 = product2.price;
+          }
+        }
+        price = price1;
+        const obj6 = { isGift, analyticsLoadId, analyticsLocation, analyticsLocations };
+        const obj11 = premiumSubscription(premiumDiscountOffer[21]);
+        const basePurchaseFlowAnalyticsFields = obj11.getBasePurchaseFlowAnalyticsFields(obj6);
+        let closure_2 = c5;
         if (c5 == null) {
-          closure_1 = {};
+          closure_2 = {};
         }
-        let succeededOnlyFields = closure_1;
+        let succeededOnlyFields = closure_2;
         succeededOnlyFields = succeededOnlyFields.succeededOnlyFields;
-        let closure_18 = closure_2_4(succeededOnlyFields, isEligibleForBogoOffer);
-        obj8 = { subscription_plan_gateway_plan_id: productId, sku_id, price, regular_price: price1, currency: formatted, application_id };
+        let closure_21 = closure_2_4(succeededOnlyFields, isEligibleForBogoOffer);
+        obj7 = { subscription_plan_gateway_plan_id: productId, sku_id, price, regular_price: price2, currency: formatted, application_id };
         const merged = Object.assign(basePurchaseFlowAnalyticsFields);
-        price = undefined;
+        price2 = undefined;
         if (product2 != null) {
-          price = product2.price;
-        }
-        price1 = undefined;
-        if (product2 != null) {
-          price1 = product2.price;
+          price2 = product2.price;
         }
         formatted = undefined;
         if (product2 != null) {
           const str = product2.currencyCode;
           formatted = str.toLowerCase();
         }
-        const merged1 = Object.assign(closure_18);
-        const obj10 = { succeededOnlyFields };
-        const merged2 = Object.assign(obj8);
-        prop(productId, obj10);
-        offerId = getOfferId(productId, closure_3, closure_1, closure_2, product2);
-        c5 = 1;
-        const tmp93 = isGift;
-        if (!tmp93) {
-          const tmp94 = flag;
-          if (!tmp94) {
-            const tmp96 = closure_4 && !flag2;
-            if (tmp96) {
-              if (c11 != null) {
+        const merged1 = Object.assign(closure_21);
+        const obj9 = { succeededOnlyFields };
+        const merged2 = Object.assign(obj7);
+        prop(productId, obj9);
+        offerId = getOfferId(productId, analyticsLocation, price1, closure_2, product2);
+        c7 = 1;
+        const tmp108 = isGift;
+        if (!tmp108) {
+          const tmp109 = flag;
+          if (!tmp109) {
+            const tmp111 = closure_4 && !flag2;
+            if (tmp111) {
+              if (c12 != null) {
                 const obj12 = { paymentGateway: constants2.GOOGLE };
-                tmp122(obj12);
+                tmp137(obj12);
               }
-              c5 = 0;
+              c7 = 0;
             } else {
-              const tmp100 = null != c6 && null != c7 && null != c5;
-              if (tmp100) {
-                const obj14 = premiumSubscription(premiumDiscountOffer[25]);
-                let result = obj14.updatePendingDowngrade(productId, c6, c7, c5);
+              const tmp115 = null != closure_6 && null != c7 && null != closure_5;
+              if (tmp115) {
+                const obj15 = premiumSubscription(premiumDiscountOffer[25]);
+                let result = obj15.updatePendingDowngrade(productId, closure_6, c7, closure_5);
               }
               const obj13 = { productId, premiumSubscription, offerId };
-              c6 = 6;
-              c7 = 1;
-              const obj15 = { value: validatePurchase(obj13), done: false };
-              return obj15;
+              let c8 = 6;
+              application_id = 1;
+              const obj14 = { value: validatePurchase(obj13), done: false };
+              return obj14;
             }
           }
         }
-        const tmp126 = isGift && null != c10;
-        if (tmp126) {
-          const tmp131 = null != premiumTrialOffer(premiumDiscountOffer[22]).giftInfoOptionsCache && null != premiumTrialOffer(premiumDiscountOffer[22]).giftInfoOptionsCache[productId];
-          if (tmp131) {
+        const tmp141 = isGift && null != c10;
+        if (tmp141) {
+          const tmp146 = null != premiumTrialOffer(premiumDiscountOffer[22]).giftInfoOptionsCache && null != premiumTrialOffer(premiumDiscountOffer[22]).giftInfoOptionsCache[productId];
+          if (tmp146) {
             delete premiumTrialOffer(undefined, premiumDiscountOffer[22]).giftInfoOptionsCache[productId];
           }
           const obj16 = {};
@@ -324,118 +354,141 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
           const merged3 = Object.assign(c10);
           giftInfoOptionsCache[productId] = obj16;
         }
-        price = null;
-        if (null != product2) {
-          const obj19 = premiumSubscription(premiumDiscountOffer[23]);
-          price = obj19.convertToMinorCurrencyUnits(product2.price / 100, product2.currencyCode);
-          c5 = 1;
+        if (null != c11) {
+          if (null == closure_16) {
+            const _Error = Error;
+            const _HermesInternal = HermesInternal;
+            let self = this;
+            let self2 = this;
+            const error = new Error("Google Play offer " + c11 + " is unavailable for " + productId);
+            throw error;
+          }
         }
-        const obj17 = { productId, premiumSubscription, offerId: null, currency: formatted1, price, isGift };
+        price2 = null;
+        if (null != product2) {
+          if (null != price) {
+            const obj20 = premiumSubscription(premiumDiscountOffer[23]);
+            price2 = obj20.convertToMinorCurrencyUnits(price / 100, product2.currencyCode);
+            c7 = 1;
+          }
+        }
+        const obj17 = { productId, premiumSubscription, offerId: null, currency: formatted1, price: price2, isGift };
         formatted1 = undefined;
-        const tmp159 = validatePurchase;
+        const tmp180 = validatePurchase;
         if (product2 != null) {
           if (product2.currencyCode != null) {
             formatted1 = str2.toLowerCase();
           }
         }
-        c6 = 4;
-        c7 = 1;
-        const obj18 = { value: tmp159(obj17), done: false };
+        c8 = 4;
+        application_id = 1;
+        const obj18 = { value: tmp180(obj17), done: false };
         return obj18;
       }
     } else if (2 === tmp4) {
-      c5 = 0;
-      let message = closure_4;
-      const obj20 = { payment_gateway: constants2.GOOGLE, error_message: message.message };
+      c7 = 0;
+      let message = closure_6;
+      const obj19 = { payment_gateway: constants2.GOOGLE, error_message: message.message };
       const track = premiumTrialOffer(premiumDiscountOffer[26]).track;
       const PAYMENT_FLOW_FAILED = constants.PAYMENT_FLOW_FAILED;
-      const tmp35 = premiumTrialOffer(premiumDiscountOffer[26]);
-      const merged4 = Object.assign(obj8);
-      track(PAYMENT_FLOW_FAILED, obj20);
-      if (c12 != null) {
-        c12();
+      const tmp38 = premiumTrialOffer(premiumDiscountOffer[26]);
+      const merged4 = Object.assign(obj7);
+      track(PAYMENT_FLOW_FAILED, obj19);
+      if (constants2 != null) {
+        constants2();
       }
-      const obj11 = premiumSubscription(premiumDiscountOffer[24]);
-      const result1 = obj11.captureBillingException(message);
+      const obj10 = premiumSubscription(premiumDiscountOffer[24]);
+      const result1 = obj10.captureBillingException(message);
       showPurchaseErrorModal(message);
       if (message instanceof premiumTrialOffer(premiumDiscountOffer[10])) {
         throw message;
       }
     } else if (3 === tmp4) {
-      c5 = 1;
-      let closure_22 = closure_4;
-      const obj9 = premiumSubscription(premiumDiscountOffer[24]);
-      const result2 = obj9.captureBillingException(closure_22);
+      c7 = 1;
+      let closure_25 = closure_6;
+      const obj8 = premiumSubscription(premiumDiscountOffer[24]);
+      const result2 = obj8.captureBillingException(closure_25);
     } else if (4 === tmp4) {
       if (arg0 === 1) {
-        c7 = 3;
+        application_id = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 0;
-        c7 = 3;
+        c7 = 0;
+        application_id = 3;
         const obj21 = { value, done: true };
         return obj21;
       } else {
-        c6 = 5;
-        c7 = 1;
-        const obj22 = { value: obj6.purchase(productId, id2), done: false };
-        obj6 = premiumSubscription(premiumDiscountOffer[25]);
+        offerId = undefined;
+        const purchase = premiumSubscription(premiumDiscountOffer[25]).purchase;
+        const tmp19 = premiumSubscription(premiumDiscountOffer[25]);
+        const tmp20 = productId;
+        const tmp21 = id2;
+        if (closure_16 != null) {
+          offerId = closure_16.offerId;
+        }
+        analyticsLocation = offerId;
+        if (offerId == null) {
+          analyticsLocation = null;
+        }
+        c8 = 5;
+        application_id = 1;
+        const obj22 = { value: purchase(tmp20, tmp21, analyticsLocation), done: false };
         return obj22;
       }
     } else if (5 === tmp4) {
       if (arg0 === 1) {
-        c7 = 3;
+        application_id = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 0;
-        c7 = 3;
+        c7 = 0;
+        application_id = 3;
         const obj23 = { value, done: true };
         return obj23;
       }
     } else if (6 === tmp4) {
       if (arg0 === 1) {
-        c7 = 3;
+        application_id = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 0;
-        c7 = 3;
+        c7 = 0;
+        application_id = 3;
         const obj24 = { value, done: true };
         return obj24;
       } else {
-        let tmp5 = closure_2;
-        let tmp6 = closure_3;
+        let tmp5 = closure_4;
+        let tmp6 = closure_5;
         const obj2 = premiumSubscription(premiumDiscountOffer[25]);
         let tmp9 = productId;
         let tmp10 = id2;
         let tmp13 = offerId;
         let tmp14 = obj2;
-        c6 = 7;
-        c7 = 1;
-        const obj26 = { value: obj2.subscribe(productId, id2, c6, c7, offerId), done: false };
-        return obj26;
+        c8 = 7;
+        application_id = 1;
+        const obj25 = { value: obj2.subscribe(productId, id2, closure_6, c7, offerId), done: false };
+        return obj25;
       }
     } else if (arg0 === 1) {
-      c7 = 3;
+      application_id = 3;
       throw value;
     } else if (arg0 === 2) {
-      c5 = 0;
-      c7 = 3;
+      c7 = 0;
+      application_id = 3;
       obj = { value, done: true };
       return obj;
     }
-    yield "IconComponent";
-    closure_3 = tmp;
+    yield "HermesInternal";
+    closure_5 = tmp;
     ({ productId: c0, skuId: c1, analyticsLoadId: c2, analyticsLocation: c3, analyticsLocations: c4, analyticsData: c5, isGift } = premiumSubscription);
     if (isGift === undefined) {
       isGift = false;
     }
-    flag = tmp185.isOneTimePurchase ?? false;
-    flag2 = tmp185.allowPlanChange ?? true;
-    ({ applicationId: c9, giftInfoOptions: c10, onPurchaseComplete: c11, onPurchaseError: c12 } = premiumSubscription);
-    return "Reflect";
+    flag = tmp207.isOneTimePurchase ?? false;
+    flag2 = tmp207.allowPlanChange ?? true;
+    ({ applicationId: c9, giftInfoOptions: c10, googleOfferId: c11, onPurchaseComplete: c12, onPurchaseError: c13 } = premiumSubscription);
+    return "flexDirection";
   });
   const items1 = [tmp5, paymentGatewayPlanId, prop, id, premiumTrialOffer, premiumDiscountOffer, stateFromStores, isEligibleForBogoOffer];
   return useCallback(function() {
     return closure_0(...arguments);
   }, items1);
-};
+}

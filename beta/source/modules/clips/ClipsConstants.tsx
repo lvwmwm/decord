@@ -1,12 +1,12 @@
-// Module ID: 8180
-// Function ID: 8181
+// Module ID: 8214
+// Function ID: 8215
 // Name: ClipsConstants
-// Dependencies: [1104, 3, 2]
+// Dependencies: [1089, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds, getDefaultImageTrackWidthFraction, snapTrackRotationDeg
 
-// Module 8180 (ClipsConstants)
+// Module 8214 (ClipsConstants)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1104 */;
+import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 
 let MINUTE;
@@ -41,6 +41,7 @@ export const CLIPS_TOAST_DURATION = result2;
 export const ClipsLogger = tmp5;
 export const CURRENT_CLIP_METADATA_VERSION = 6;
 export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 2;
+export const CLIPS_DEFAULT_SETTINGS_VERSION = 1;
 export const WINDOWS_HARDWARE_MINIMUM_GPU_REGEX = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/;
 export const WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/;
 export const MIN_CLIP_DURATION_SECONDS = 0.1;
@@ -78,10 +79,11 @@ export const ClipsTrackSuffixes = { ALL: ":all", APPLICATION: ":application", VO
 export const ClipSignalTypes = { MANUAL: "manual", DISTRIBUTED: "distributed", SHOUTING: "shouting", LAUGHTER: "laughter", GAME_EVENT: "game_event", SPEAKING: "speaking", SOUNDBOARD: "soundboard" };
 export const AutoclipsCapability = { LAUGHTER: 1, [1]: "LAUGHTER", SHOUTING: 2, [2]: "SHOUTING", GAME_EVENTS: 4, [4]: "GAME_EVENTS" };
 export const ClipsHardwareClassification = { UNKNOWN: "unknown", BELOW_MINIMUM: "below_minimum", MEETS_MINIMUM: "meets_minimum", MEETS_AUTO_ENABLE: "meets_auto_enable" };
+export const ClipsEnabledSettingsSource = { UNSET: "unset", DEFAULT: "default", USER: "user" };
 export const ClipsSaveNoOpReason = { MAX_CONCURRENT_SAVES: "max_concurrent_saves", NO_ELIGIBLE_SOURCE: "no_eligible_source", MODULE_NOT_LOADED: "module_not_loaded", BUFFER_WARMING_UP: "buffer_warming_up", BRIDGE_SHUTDOWN: "bridge_shutdown", RECORDING_NOT_READY: "recording_not_ready" };
 export const Emotion = { ANGER: "anger", CALM: "calm", DISGUST: "disgust", FEAR: "fear", HAPPY: "happy", NEUTRAL: "neutral", SAD: "sad", SURPRISED: "surprised" };
 export const ClipCropPreset = obj2;
-export const getClipCropAspectRatio = function getClipCropAspectRatio(arg0) {
+export function getClipCropAspectRatio(arg0) {
   if (obj2.PORTRAIT_9_16 === arg0) {
     return 0.5625;
   } else if (tmp.LANDSCAPE_16_9 === arg0) {
@@ -89,8 +91,8 @@ export const getClipCropAspectRatio = function getClipCropAspectRatio(arg0) {
   } else {
     return null;
   }
-};
-export const getClipCropBounds = function getClipCropBounds(bounds) {
+}
+export function getClipCropBounds(bounds) {
   bounds = undefined;
   if (bounds != null) {
     bounds = bounds.bounds;
@@ -116,7 +118,7 @@ export const getClipCropBounds = function getClipCropBounds(bounds) {
     }
     return tmp3;
   }
-};
+}
 export const ClipTrackType = obj3;
 export const CLIP_TRACK_COLORS = { [obj3.TEXT]: "#D53FAE", [obj3.IMAGE]: "#3F7FD5" };
 export const DEFAULT_TRACK_DURATION_SECONDS = 5;
@@ -124,14 +126,14 @@ export const MIN_TRACK_DURATION_SECONDS = 1;
 export const DEFAULT_TRACK_POSITION = { x: 0.5, y: 0.5 };
 export const DEFAULT_TRACK_ROTATION_DEG = 0;
 export const TRACK_ROTATION_STEP_DEG = 15;
-export const snapTrackRotationDeg = function snapTrackRotationDeg(arg0) {
+export function snapTrackRotationDeg(arg0) {
   const result = (15 * Math.round(arg0 / 15) % 360 + 360) % 360;
   let diff = result;
   if (180 < result) {
     diff = result - 360;
   }
   return diff;
-};
+}
 export const TextStrokeWidth = obj4;
 export const TEXT_STROKE_WIDTH_TO_FONT_SIZE_RATIO = { [obj4.NONE]: 0, [obj4.SMALL]: 0.0625, [obj4.MEDIUM]: 0.125, [obj4.LARGE]: 0.25 };
 export const DEFAULT_TEXT_TRACK_STYLE = obj5;
@@ -148,9 +150,9 @@ export const DEFAULT_IMAGE_TRACK_WIDTH_FRACTION = 0.35;
 export const MIN_IMAGE_TRACK_WIDTH_FRACTION = 0.02;
 export const MAX_IMAGE_TRACK_WIDTH_FRACTION = 2;
 export const MAX_DEFAULT_IMAGE_TRACK_HEIGHT_FRACTION = 0.5;
-export const getDefaultImageTrackWidthFraction = function getDefaultImageTrackWidthFraction(arg0, arg1) {
+export function getDefaultImageTrackWidthFraction(arg0, arg1) {
   return Math.max(0.02, Math.min(0.35, 0.5 * arg0 / arg1));
-};
+}
 export const ImageTrackShadow = obj6;
 export const IMAGE_TRACK_SHADOW_TO_WIDTH_RATIO = { [obj6.NONE]: 0, [obj6.SMALL]: 0.02, [obj6.MEDIUM]: 0.05, [obj6.LARGE]: 0.1 };
 export const IMAGE_TRACK_SHADOW_OFFSET_TO_BLUR_RATIO = 0.4;

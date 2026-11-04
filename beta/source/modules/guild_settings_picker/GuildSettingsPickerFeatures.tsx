@@ -1,17 +1,17 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15718
+// Function ID: 15719
 // Name: GuildSettingsPickerFeatures
-// Dependencies: [32, 19, 4935, 15173, 15174, 1128, 504, 2]
+// Dependencies: [32, 19, 4946, 15719, 15720, 1113, 504, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 15172 (GuildSettingsPickerFeatures)
+// Module 15718 (GuildSettingsPickerFeatures)
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1128 */;
-import RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault from "RoleSubscriptionsOnboardingGuildPickerFeatureSpec" /* 15173 */;
-import RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault from "RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec" /* 15174 */;
+import intl2 from "intl" /* 1113 */;
+import RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault from "RoleSubscriptionsOnboardingGuildPickerFeatureSpec" /* 15719 */;
+import RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault from "RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec" /* 15720 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 let obj = { "server-subscriptions-onboarding": RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault, "server-subscriptions-create-tier-from-template": RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault };
@@ -45,7 +45,7 @@ let closure_6 = {
 };
 const result = size.fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx");
 
-export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeature(feature) {
+export function useGuildSettingsPickerFeature(feature) {
   let tmp2;
   let tmp = react;
   const useState = react.useState;
@@ -89,4 +89,4 @@ export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeat
     }
   };
   return obj2;
-};
+}

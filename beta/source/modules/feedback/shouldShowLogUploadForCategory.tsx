@@ -1,18 +1,18 @@
-// Module ID: 18837
-// Function ID: 18838
+// Module ID: 19462
+// Function ID: 19463
 // Name: shouldShowLogUploadForCategory
-// Dependencies: [10077, 2]
+// Dependencies: [10158, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 18837 (shouldShowLogUploadForCategory)
-import Constants from "Constants" /* 10077 */;
+// Module 19462 (shouldShowLogUploadForCategory)
+import Constants from "Constants" /* 10158 */;
 import size from "module_2" /* 2 */;
 
 const FeedbackRating = Constants.FeedbackRating;
 let closure_1 = {};
 const result = size.fileFinishedImporting("modules/feedback/shouldShowLogUploadForCategory.tsx");
 
-export const shouldShowLogUploadForCategory = function shouldShowLogUploadForCategory(rating, category, reason) {
+export function shouldShowLogUploadForCategory(rating, category, reason) {
   if (rating !== FeedbackRating.BAD) {
     if (rating !== FeedbackRating.NEUTRAL) {
       return false;
@@ -32,4 +32,4 @@ export const shouldShowLogUploadForCategory = function shouldShowLogUploadForCat
     const _Math = Math;
     return Math.random() < num2;
   }
-};
+}

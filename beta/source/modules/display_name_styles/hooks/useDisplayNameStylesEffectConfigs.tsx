@@ -1,83 +1,33 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10775
+// Function ID: 10776
 // Name: useDisplayNameStylesEffectConfigs
-// Dependencies: [19, 1411, 2928, 558, 576, 10697, 1128, 1412, 2]
+// Dependencies: [19, 1402, 2932, 10776, 1113, 1403, 2]
+// Exports: useDisplayNameStylesEffectConfig
 
-// Module 10696 (useDisplayNameStylesEffectConfigs)
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
-import DisplayNameFont from "DisplayNameFont" /* 1412 */;
-import _modDef2928 from "module_2928" /* 2928 */;
-import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10697 */;
+// Module 10775 (useDisplayNameStylesEffectConfigs)
+import intl2 from "intl" /* 1113 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1402 */;
+import DisplayNameFont from "DisplayNameFont" /* 1403 */;
+import _modDef2932 from "module_2932" /* 2932 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 10776 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 const DISPLAY_NAME_STYLES_EFFECT_NAMES = {};
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.SOLID] = _modDef2928.OpWJ3f;
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.GRADIENT] = _modDef2928["i9e/u1"];
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.NEON] = _modDef2928.x68b1F;
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.TOON] = _modDef2928.otpeeM;
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.POP] = _modDef2928.cjQOKb;
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.GUMMY] = _modDef2928.x9Gtie;
-DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.PRISM] = _modDef2928["/M7psm"];
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.SOLID] = _modDef2932.OpWJ3f;
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.GRADIENT] = _modDef2932["i9e/u1"];
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.NEON] = _modDef2932.x68b1F;
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.TOON] = _modDef2932.otpeeM;
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.POP] = _modDef2932.cjQOKb;
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.GUMMY] = _modDef2932.x9Gtie;
+DISPLAY_NAME_STYLES_EFFECT_NAMES[DisplayNameEffect.DisplayNameEffect.PRISM] = _modDef2932["/M7psm"];
 let closure_5 = { [DisplayNameEffect.DisplayNameEffect.SOLID]: 3, [DisplayNameEffect.DisplayNameEffect.GRADIENT]: 2.5, [DisplayNameEffect.DisplayNameEffect.GLOW]: 2.5, [DisplayNameEffect.DisplayNameEffect.PRISM]: 2.5, [DisplayNameEffect.DisplayNameEffect.NEON]: 3, [DisplayNameEffect.DisplayNameEffect.TOON]: 3, [DisplayNameEffect.DisplayNameEffect.POP]: 3, [DisplayNameEffect.DisplayNameEffect.GUMMY]: 3 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesEffectConfig(effectId) {
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(10);
-  const tmp5 = useDisplayNameStylesEffectDefaultColorsDefault()[effectId];
-  if (cResult[0] !== effectId) {
-    const intl = tmp(1128).intl;
-    let OpWJ3f = obj[effectId];
-    const string = intl.string;
-    if (OpWJ3f == null) {
-      OpWJ3f = _modDef2928.OpWJ3f;
-    }
-    const stringResult = string(OpWJ3f);
-    cResult[0] = effectId;
-    cResult[1] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp5) {
-    let tmp10;
-    if (cResult[3] === effectId) {
-      tmp10 = cResult[4];
-    }
-    let num3 = closure_5[effectId];
-    if (num3 == null) {
-      num3 = 3;
-    }
-    if (cResult[5] === tmp5) {
-      if (cResult[6] === tmp6) {
-        if (cResult[7] === tmp10) {
-          let tmp13;
-          if (cResult[8] === num3) {
-            tmp13 = cResult[9];
-          }
-          return tmp13;
-        }
-      }
-    }
-    const obj2 = { name: tmp6, defaultColors: tmp5, previewStyles: tmp10, minContrastRatio: num3 };
-    cResult[5] = tmp5;
-    cResult[6] = tmp6;
-    cResult[7] = tmp10;
-    cResult[8] = num3;
-    cResult[9] = obj2;
-    tmp13 = obj2;
-  }
-  const obj3 = { fontId: DisplayNameFont.DisplayNameFont.DEFAULT, effectId, colors: tmp5 };
-  cResult[2] = tmp5;
-  cResult[3] = effectId;
-  cResult[4] = obj3;
-  tmp10 = obj3;
-}) : (function useDisplayNameStylesEffectConfig(effectId) {
+const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectConfigs.tsx");
+
+export { DISPLAY_NAME_STYLES_EFFECT_NAMES };
+export function useDisplayNameStylesEffectConfig(effectId) {
   let closure_1;
   const tmp = useDisplayNameStylesEffectDefaultColorsDefault()[effectId];
   importDefault = tmp;
@@ -89,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
     let OpWJ3f = obj[effectId];
     const string = intl.string;
     if (OpWJ3f == null) {
-      OpWJ3f = _modDef2928.OpWJ3f;
+      OpWJ3f = _modDef2932.OpWJ3f;
     }
     obj = { name: string(OpWJ3f), defaultColors: colors, previewStyles: { fontId: DisplayNameFont.DisplayNameFont.DEFAULT, effectId, colors }, minContrastRatio: num };
     num = closure_5[tmp3];
@@ -99,8 +49,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
     }
     return obj;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectConfigs.tsx");
-
-export { DISPLAY_NAME_STYLES_EFFECT_NAMES };
-export const useDisplayNameStylesEffectConfig = tmp2;
+}

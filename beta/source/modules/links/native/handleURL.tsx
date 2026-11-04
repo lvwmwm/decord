@@ -1,15 +1,15 @@
-// Module ID: 5689
-// Function ID: 5690
+// Module ID: 5706
+// Function ID: 5707
 // Name: handleURL
-// Dependencies: [5, 17, 5243, 1087, 3, 5690, 5691, 5692, 5693, 1951, 5694, 1128, 5725, 1384, 5242, 1389, 5728, 7466, 15127, 2]
+// Dependencies: [5, 17, 5259, 1072, 3, 5707, 5708, 5709, 5710, 1943, 5711, 1113, 5742, 1375, 5258, 1380, 5745, 7508, 15674, 2]
 // Exports: default
 
-// Module 5689 (handleURL)
+// Module 5706 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5243 */;
-import Constants from "Constants" /* 1087 */;
+import ActionSheetStore from "ActionSheetStore" /* 5259 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let constants;
@@ -214,7 +214,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp57;
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;
@@ -267,7 +267,7 @@ let obj = function _handleURL() {
           let tmp7 = openInBrowser();
         }
       }
-      await "IconComponent";
+      await "HermesInternal";
       tryHandleUniversalLink = closure_0;
       let obj4 = closure_2;
       if (closure_2 === undefined) {
@@ -334,7 +334,7 @@ let obj = function _handleURL() {
           presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
         }
       };
-      return "Reflect";
+      return "flexDirection";
     })();
     let nextResult = iter.next();
     return iter;

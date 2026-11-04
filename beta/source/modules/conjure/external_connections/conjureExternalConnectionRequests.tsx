@@ -1,11 +1,11 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 12175
+// Function ID: 12176
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 10826, 12293, 2]
+// Dependencies: [5, 10948, 12176, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 12292 (conjureExternalConnectionRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
+// Module 12175 (conjureExternalConnectionRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _fetchProjectMcpConnection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -54,7 +54,7 @@ let obj = function _fetchProjectMcpConnection() {
             closure_3 = undefined;
             expiresAtMs = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === expiresAtMs) {
           if (arg0 === 1) {
@@ -140,7 +140,7 @@ obj = function _requestExternalAuthorizeUrl() {
     let c8 = 0;
     let c6 = 0;
     return (async (arg0, value) => {
-      let obj14;
+      let obj17;
       let obj5;
       let obj8;
       if (c8 === 2) {
@@ -152,7 +152,7 @@ obj = function _requestExternalAuthorizeUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -177,8 +177,8 @@ obj = function _requestExternalAuthorizeUrl() {
               c7 = 2;
               c8 = 1;
               obj5 = { connection_type };
-              const obj6 = { value: obj14.fetchConjureWorker(closure_0, "/agent/external-auth/authorize-url", obj4), done: false };
-              obj14 = conjureWorkerFetch;
+              const obj6 = { value: obj17.fetchConjureWorker(closure_0, "/agent/external-auth/authorize-url", obj4), done: false };
+              obj17 = conjureWorkerFetch;
               return obj6;
             }
           } else if (1 === c7) {
@@ -253,7 +253,7 @@ obj = function _requestExternalAuthorizeUrl() {
               if (typeof url === "string") {
                 if (url.startsWith("https://")) {
                   obj = { type: "url", url };
-                  const obj16 = { type: "url", url };
+                  const obj15 = { type: "url", url };
                 }
                 c8 = 3;
                 return { value: obj, done: true };
@@ -265,10 +265,10 @@ obj = function _requestExternalAuthorizeUrl() {
             obj8 = closure_133_0(closure_133_1[2]);
             return { value: obj18, done: true };
           }
-        } catch (tmp30) {
+        } catch (tmp26) {
           if (0 === c6) {
             c8 = 3;
-            throw tmp30;
+            throw tmp26;
           } else if (1 === c6) {
             c7 = 1;
           } else if (2 === c6) {
@@ -284,13 +284,13 @@ obj = function _requestExternalAuthorizeUrl() {
 };
 const result = size.fileFinishedImporting("modules/conjure/external_connections/conjureExternalConnectionRequests.tsx");
 
-export const formatMcpConnectionExpiry = function formatMcpConnectionExpiry(connection) {
+export function formatMcpConnectionExpiry(connection) {
   const date = new Date(connection.expiresAtMs);
   return date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
-};
-export const fetchProjectMcpConnection = function fetchProjectMcpConnection() {
+}
+export function fetchProjectMcpConnection() {
   return obj(...arguments);
-};
-export const requestExternalAuthorizeUrl = function requestExternalAuthorizeUrl() {
+}
+export function requestExternalAuthorizeUrl() {
   return obj(...arguments);
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 11675
-// Function ID: 11676
+// Module ID: 11970
+// Function ID: 11971
 // Name: VoiceActionUtils
-// Dependencies: [9185, 2]
+// Dependencies: [9221, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 11675 (VoiceActionUtils)
-import CallsUtils from "CallsUtils" /* 9185 */;
+// Module 11970 (VoiceActionUtils)
+import CallsUtils from "CallsUtils" /* 9221 */;
 import size from "module_2" /* 2 */;
 
 function NOOP() {
@@ -15,7 +15,7 @@ const DominantMuteState = { SERVER_MUTE: 0, [0]: "SERVER_MUTE", SUPPRESS: 1, [1]
 const result = size.fileFinishedImporting("modules/video_calls/native/VoiceActionUtils.tsx");
 
 export { DominantMuteState };
-export const createMuteHandler = function createMuteHandler(muteStates, stateFromStores) {
+export function createMuteHandler(muteStates, stateFromStores) {
   let onPress;
   let flag = stateFromStores;
   if (stateFromStores === undefined) {
@@ -40,12 +40,12 @@ export const createMuteHandler = function createMuteHandler(muteStates, stateFro
   }
   const mute = muteStates.selfMute || muteStates.mute || muteStates.suppress;
   return { mute, onPress, dominantMuteState };
-};
-export const createDeafHandler = function createDeafHandler(deafStates) {
+}
+export function createDeafHandler(deafStates) {
   let onPress = CallsUtils.handleToggleSelfDeaf;
   if (deafStates.deaf) {
     onPress = CallsUtils.showServerDeafenAlert;
   }
   const deaf = deafStates.selfDeaf || deafStates.deaf;
   return { deaf, onPress };
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 5777
-// Function ID: 5778
+// Module ID: 5795
+// Function ID: 5796
 // Name: DirectVideoStream
-// Dependencies: [2016, 2]
+// Dependencies: [2008, 2]
 // Exports: acquireDirectVideoStream, getDirectVideoStreamConsumerCount, supportsDirectVideoStreams
 
-// Module 5777 (DirectVideoStream)
-import inject from "inject" /* 2016 */;
+// Module 5795 (DirectVideoStream)
+import inject from "inject" /* 2008 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,10 +37,10 @@ const prototype = RefCountedStream.prototype;
 const map = new Map();
 let result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/native/DirectVideoStream.tsx");
 
-export const supportsDirectVideoStreams = function supportsDirectVideoStreams() {
+export function supportsDirectVideoStreams() {
   return null != window.createDiscordStream;
-};
-export const getDirectVideoStreamConsumerCount = function getDirectVideoStreamConsumerCount(arg0) {
+}
+export function getDirectVideoStreamConsumerCount(arg0) {
   const value = map.get(arg0);
   let num;
   if (value != null) {
@@ -50,8 +50,8 @@ export const getDirectVideoStreamConsumerCount = function getDirectVideoStreamCo
     num = 0;
   }
   return num;
-};
-export const acquireDirectVideoStream = function acquireDirectVideoStream(streamId) {
+}
+export function acquireDirectVideoStream(streamId) {
   _require = streamId;
   let obj = map;
   let value = map.get(streamId);
@@ -96,4 +96,4 @@ export const acquireDirectVideoStream = function acquireDirectVideoStream(stream
       }
     }
   };
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 7765
-// Function ID: 7766
+// Module ID: 7802
+// Function ID: 7803
 // Name: UserAffinitiesConstants
-// Dependencies: [1104, 2]
+// Dependencies: [1089, 2]
 
-// Module 7765 (UserAffinitiesConstants)
-import DurationsDefault from "Durations" /* 1104 */;
+// Module 7802 (UserAffinitiesConstants)
+import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
 
 const result = 8 * DurationsDefault.Millis.HOUR;

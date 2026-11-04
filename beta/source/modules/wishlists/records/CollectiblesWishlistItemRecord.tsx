@@ -1,19 +1,19 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9474
+// Function ID: 9475
 // Name: CollectiblesWishlistItemRecord
-// Dependencies: [7687, 7686, 1993, 7688, 7689, 2047, 9404, 1087, 1995, 2]
+// Dependencies: [7725, 7724, 1985, 7726, 7727, 2040, 9473, 1072, 1987, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 9405 (CollectiblesWishlistItemRecord)
-import Constants from "Constants" /* 1087 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7686 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7687 */;
-import NameplateRecord from "NameplateRecord" /* 1993 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7688 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7689 */;
-import SKURecord from "SKURecord" /* 2047 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9404 */;
+// Module 9474 (CollectiblesWishlistItemRecord)
+import Constants from "Constants" /* 1072 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7724 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7725 */;
+import NameplateRecord from "NameplateRecord" /* 1985 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7726 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7727 */;
+import SKURecord from "SKURecord" /* 2040 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9473 */;
 import size from "module_2" /* 2 */;
 
 function createCollectiblesItemFromServerResponse(collectibles_item) {
@@ -112,6 +112,6 @@ class CollectiblesWishlistItemRecord extends BaseWishlistItemRecord {
 const result = size.fileFinishedImporting("modules/wishlists/records/CollectiblesWishlistItemRecord.tsx");
 
 export default CollectiblesWishlistItemRecord;
-export const isCollectiblesWishlistItemRecord = function isCollectiblesWishlistItemRecord(arg0) {
+export function isCollectiblesWishlistItemRecord(arg0) {
   return arg0 instanceof CollectiblesWishlistItemRecord;
-};
+}

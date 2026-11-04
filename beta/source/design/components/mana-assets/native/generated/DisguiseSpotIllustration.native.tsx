@@ -1,96 +1,30 @@
-// Module ID: 18758
-// Function ID: 18759
+// Module ID: 19372
+// Function ID: 19373
 // Name: DisguiseSpotIllustration
-// Dependencies: [19, 21, 18759, 18760, 18761, 558, 576, 7027, 5701, 2]
+// Dependencies: [19, 21, 19373, 19374, 19375, 7069, 5717, 2]
+// Exports: DisguiseSpotIllustration
 
-// Module 18758 (DisguiseSpotIllustration)
+// Module 19372 (DisguiseSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5701 */;
-import react_native from "react-native" /* 7027 */;
-import _modDef18759 from "module_18759" /* 18759 */;
-import _modDef18760 from "module_18760" /* 18760 */;
-import _modDef18761 from "module_18761" /* 18761 */;
+import react_native from "react-native" /* 7069 */;
+import _modDef19373 from "module_19373" /* 19373 */;
+import _modDef19374 from "module_19374" /* 19374 */;
+import _modDef19375 from "module_19375" /* 19375 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18759 };
+let obj2 = { uri: _modDef19373 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18760 };
+let obj3 = { uri: _modDef19374 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18761 };
-({ uri: _modDef18761 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisguiseSpotIllustration(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let height;
-  let resizeMode;
-  let scale;
-  let width;
-  obj = react2;
-  const cResult = obj.c(12);
-  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
-  let num = 1;
-  if (undefined !== scale) {
-    num = scale;
-  }
-  if (cResult[0] === height) {
-    if (cResult[1] === num) {
-      let tmp4;
-      let tmp7;
-      let tmp10;
-      if (cResult[2] === width) {
-        tmp4 = cResult[3];
-      }
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = react_native;
-        const assetSource = tmpResult.getAssetSource(obj);
-        cResult[4] = assetSource;
-        tmp7 = assetSource;
-      } else {
-        tmp7 = cResult[4];
-      }
-      if (cResult[5] !== resizeMode) {
-        const tmpResult3 = react_native;
-        const assetResizeMode = tmpResult3.getAssetResizeMode(resizeMode);
-        cResult[5] = resizeMode;
-        cResult[6] = assetResizeMode;
-        tmp10 = assetResizeMode;
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === accessibilityLabel) {
-        if (cResult[8] === accessible) {
-          if (cResult[9] === tmp4) {
-            let tmp12;
-            if (cResult[10] === tmp10) {
-              tmp12 = cResult[11];
-            }
-            return tmp12;
-          }
-        }
-      }
-      const tmp15 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp7, style: tmp4, accessible, accessibilityLabel, resizeMode: tmp10 });
-      cResult[7] = accessibilityLabel;
-      cResult[8] = accessible;
-      cResult[9] = tmp4;
-      cResult[10] = tmp10;
-      cResult[11] = tmp15;
-      tmp12 = tmp15;
-    }
-  }
-  const tmpResult4 = react_native;
-  const assetSizeStyle = tmpResult4.getAssetSizeStyle({ width, height, scale: num, intrinsicWidth: 288, intrinsicHeight: 162 });
-  cResult[0] = height;
-  cResult[1] = num;
-  cResult[2] = width;
-  cResult[3] = assetSizeStyle;
-  tmp4 = assetSizeStyle;
-}) : (function DisguiseSpotIllustration(width) {
+obj[3] = { uri: _modDef19375 };
+({ uri: _modDef19375 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DisguiseSpotIllustration.native.tsx");
+
+export function DisguiseSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -110,12 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisguiseSp
     return obj.getAssetSizeStyle(size);
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode: obj3.getAssetResizeMode(resizeMode) };
-  height(num[8]);
-  obj2 = width(num[7]);
-  obj3 = width(num[7]);
+  height(num[6]);
+  obj2 = width(num[5]);
+  obj3 = width(num[5]);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={obj3.getAssetResizeMode(resizeMode)} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DisguiseSpotIllustration.native.tsx");
-
-export const DisguiseSpotIllustration = tmp2;
+}

@@ -1,23 +1,23 @@
-// Module ID: 8447
-// Function ID: 8448
+// Module ID: 8512
+// Function ID: 8513
 // Name: InGameMessageNuxSystemMessage
-// Dependencies: [2045, 1087, 8343, 8350, 8352, 2067, 1128, 8354, 2]
+// Dependencies: [2038, 1072, 8411, 8418, 8420, 2061, 1113, 8422, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 8447 (InGameMessageNuxSystemMessage)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8343 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8350 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8352 */;
-import ApplicationStore from "ApplicationStore" /* 2045 */;
+// Module 8512 (InGameMessageNuxSystemMessage)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2061 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8411 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8418 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8420 */;
+import ApplicationStore from "ApplicationStore" /* 2038 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/InGameMessageNuxSystemMessage.tsx");
 
-export const createInGameMessageNuxSystemMessage = function createInGameMessageNuxSystemMessage(message) {
+export function createInGameMessageNuxSystemMessage(message) {
   let intl;
   let obj3;
   let obj4;
@@ -44,7 +44,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     tmpResult = HelpdeskUtilsDefault;
     const obj5 = { content: intl.formatToParts(intl2.t["92erOB"], obj2) };
     intl = intl2.intl;
-    const merged = Object.assign(tmp(8354)(message));
+    const merged = Object.assign(tmp(8422)(message));
     return obj5;
   }
-};
+}

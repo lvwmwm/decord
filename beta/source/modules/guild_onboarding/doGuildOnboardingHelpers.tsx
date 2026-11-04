@@ -1,20 +1,20 @@
-// Module ID: 7231
-// Function ID: 7232
+// Module ID: 7272
+// Function ID: 7273
 // Name: doGuildOnboardingHelpers
-// Dependencies: [4915, 4921, 1405, 7232, 2]
+// Dependencies: [4926, 4932, 1396, 7273, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 7231 (doGuildOnboardingHelpers)
-import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7232 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+// Module 7272 (doGuildOnboardingHelpers)
+import FlagUtils from "FlagUtils" /* 1396 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4932 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7273 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import size from "module_2" /* 2 */;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let result = size.fileFinishedImporting("modules/guild_onboarding/doGuildOnboardingHelpers.tsx");
 
-export const waitForOnboardingCompletion = function waitForOnboardingCompletion(arg0) {
+export function waitForOnboardingCompletion(arg0) {
   let closure_0 = arg0;
   const promise = new Promise((arg0) => {
     closure_0 = arg0;
@@ -42,4 +42,4 @@ export const waitForOnboardingCompletion = function waitForOnboardingCompletion(
     });
   });
   return promise;
-};
+}

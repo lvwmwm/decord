@@ -1,17 +1,17 @@
-// Module ID: 18798
-// Function ID: 18799
+// Module ID: 19418
+// Function ID: 19419
 // Name: react-native
-// Dependencies: [1383, 2]
+// Dependencies: [1374, 2]
 // Exports: getAppMajorVersion
 
-// Module 18798 (react-native)
-import react_native from "react-native" /* 1383 */;
+// Module 19418 (react-native)
+import react_native from "react-native" /* 1374 */;
 import size from "module_2" /* 2 */;
 
 const constants = react_native.getConstants();
 const result = size.fileFinishedImporting("utils/native/AppInfoUtils.tsx");
 
-export const getAppMajorVersion = function getAppMajorVersion() {
+export function getAppMajorVersion() {
   if (undefined === closure_0) {
     return -1;
   } else {
@@ -24,4 +24,4 @@ export const getAppMajorVersion = function getAppMajorVersion() {
     }
     return num;
   }
-};
+}

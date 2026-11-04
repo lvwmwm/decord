@@ -1,15 +1,15 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 18127
+// Function ID: 18128
 // Name: happeningNowRankingUtils
-// Dependencies: [4945, 5662, 16687, 1388, 12, 2]
+// Dependencies: [4956, 5679, 17287, 1379, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 17531 (happeningNowRankingUtils)
+// Module 18127 (happeningNowRankingUtils)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16687 */;
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17287 */;
 import size from "module_2" /* 2 */;
 
 const _modDef12 = _mod12;
@@ -20,7 +20,7 @@ let metroRequire;
 ({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: hasOwnProperty, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: metroRequire, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: metroImportDefault } = HappeningNowConstants);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");
 
-export const cardSize = function cardSize(kind) {
+export function cardSize(kind) {
   switch (kind.kind) {
     case "placeholder":
     {
@@ -81,13 +81,13 @@ export const cardSize = function cardSize(kind) {
       break;
     }
   }
-};
+}
 export const HappeningNowWeights = { Stage: 7, Voice: 6, Stream: 5, Game: 4, Listening: 3, CustomStatus: 3, User: 2, Base: 1 };
 export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
-export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
+export function filterHappeningNowCards(arr) {
   return arr.filter((voiceState) => {
     let blockedOrIgnored;
-    const f161486 = (discoverable) => false === discoverable.discoverable;
+    const f137938 = (discoverable) => false === discoverable.discoverable;
     let flag = false;
     if ("voiceState" in voiceState) {
       flag = false;
@@ -97,8 +97,8 @@ export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
         if (null != channelId) {
           const _Object = Object;
           const values = Object.values(VoiceStateStore.getVoiceStatesForChannel(channelId));
-          flag = values.length > 0 && values.every(f161486);
-          const everyResult = values.length > 0 && values.every(f161486);
+          flag = values.length > 0 && values.every(f137938);
+          const everyResult = values.length > 0 && values.every(f137938);
         }
       }
     }
@@ -127,8 +127,8 @@ export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
     }
     return tmp5;
   });
-};
-export const sortHappeningNowCards = function sortHappeningNowCards(result) {
+}
+export function sortHappeningNowCards(result) {
   let voiceStatesForChannel;
   let obj = _mod12;
   const items = [
@@ -264,4 +264,4 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
     }
   ];
   return obj.orderBy(result, items, ["asc", "asc"]);
-};
+}

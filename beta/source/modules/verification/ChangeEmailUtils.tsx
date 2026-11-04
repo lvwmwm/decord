@@ -1,12 +1,12 @@
-// Module ID: 7021
-// Function ID: 7022
+// Module ID: 7063
+// Function ID: 7064
 // Name: ChangeEmailUtils
-// Dependencies: [7015, 1128, 2]
+// Dependencies: [7057, 1113, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 7021 (ChangeEmailUtils)
-import intl2 from "intl" /* 1128 */;
-import VerificationConstants from "VerificationConstants" /* 7015 */;
+// Module 7063 (ChangeEmailUtils)
+import intl2 from "intl" /* 1113 */;
+import VerificationConstants from "VerificationConstants" /* 7057 */;
 import size from "module_2" /* 2 */;
 
 const ChangeEmailReasons = VerificationConstants.ChangeEmailReasons;
@@ -30,6 +30,6 @@ let closure_2 = {
 };
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailUtils.tsx");
 
-export const getChangeEmailReasonDisplayText = function getChangeEmailReasonDisplayText(value) {
+export function getChangeEmailReasonDisplayText(value) {
   return closure_2[value]();
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 14510
+// Function ID: 14511
 // Name: AnimationUtils
 // Dependencies: [2]
 // Exports: getOrbBalanceCounterAnimationConfigs
 
-// Module 13990 (AnimationUtils)
+// Module 14510 (AnimationUtils)
 import size from "module_2" /* 2 */;
 
 const ORB_LOTTIE_COUNTER_ANIMATION_FACTORS = { EARN: 0.25, SPEND: 0.3 };
@@ -12,7 +12,7 @@ let result = size.fileFinishedImporting("modules/virtual_currency/shared/Animati
 
 export const EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS = 3000;
 export { ORB_LOTTIE_COUNTER_ANIMATION_FACTORS };
-export const getOrbBalanceCounterAnimationConfigs = function getOrbBalanceCounterAnimationConfigs(diff, targetTime) {
+export function getOrbBalanceCounterAnimationConfigs(diff, targetTime) {
   let num2;
   let obj;
   targetTime = targetTime.targetTime;
@@ -32,4 +32,4 @@ export const getOrbBalanceCounterAnimationConfigs = function getOrbBalanceCounte
     }
     return obj;
   }
-};
+}

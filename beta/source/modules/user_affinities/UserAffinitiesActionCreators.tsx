@@ -1,16 +1,16 @@
-// Module ID: 9115
-// Function ID: 9116
+// Module ID: 9151
+// Function ID: 9152
 // Name: UserAffinitiesActionCreators
-// Dependencies: [6702, 7764, 1087, 584, 1297, 9116, 2]
+// Dependencies: [6742, 7801, 1072, 572, 1282, 9152, 2]
 // Exports: fetchUserAffinitiesV2, setDevToolsUserAffinityOverride
 
-// Module 9115 (UserAffinitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import UserAffinitiesTypes from "UserAffinitiesTypes" /* 9116 */;
-import ConsentStore from "ConsentStore" /* 6702 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7764 */;
-import Constants from "Constants" /* 1087 */;
+// Module 9151 (UserAffinitiesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import UserAffinitiesTypes from "UserAffinitiesTypes" /* 9152 */;
+import ConsentStore from "ConsentStore" /* 6742 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let body;
@@ -20,7 +20,7 @@ let metroRequire;
 ({ Endpoints: hasOwnProperty, Consents: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");
 
-export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
+export function fetchUserAffinitiesV2() {
   let num;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -101,8 +101,8 @@ export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
     return nextPromise;
   }
   nextPromise = Promise.resolve();
-};
-export const setDevToolsUserAffinityOverride = function setDevToolsUserAffinityOverride(userId) {
+}
+export function setDevToolsUserAffinityOverride(userId) {
   let tmp3 = null;
   const dispatch = DispatcherDefault.dispatch;
   DispatcherDefault;
@@ -112,4 +112,4 @@ export const setDevToolsUserAffinityOverride = function setDevToolsUserAffinityO
     tmp3 = obj;
   }
   dispatch({ type: "DEV_TOOLS_SET_USER_AFFINITY_OVERRIDE", override: tmp3 });
-};
+}

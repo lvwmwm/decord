@@ -1,21 +1,21 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 18060
+// Function ID: 18061
 // Name: isJankScreenReportingEnabled
-// Dependencies: [1384, 559, 4960, 2]
+// Dependencies: [1375, 4889, 4971, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 17468 (isJankScreenReportingEnabled)
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import DeviceUtils from "DeviceUtils" /* 4960 */;
+// Module 18060 (isJankScreenReportingEnabled)
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import DeviceUtils from "DeviceUtils" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/jank_stats/native/isJankScreenReportingEnabled.tsx");
 
-export const isJankScreenReportingEnabled = function isJankScreenReportingEnabled() {
+export function isJankScreenReportingEnabled() {
   let cachedEnabled;
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
-    const AndroidJankPerScreenExperiment = tmp(559).AndroidJankPerScreenExperiment;
+    const AndroidJankPerScreenExperiment = tmp(4889).AndroidJankPerScreenExperiment;
     cachedEnabled = AndroidJankPerScreenExperiment.getCachedEnabled();
   } else {
     const tmpResult = PlatformUtils;
@@ -25,9 +25,9 @@ export const isJankScreenReportingEnabled = function isJankScreenReportingEnable
       cachedEnabled = tmpResult2.getSystemVersionMajor() >= 18;
     }
     if (cachedEnabled) {
-      const IOSJankPerScreenExperiment = tmp(559).IOSJankPerScreenExperiment;
+      const IOSJankPerScreenExperiment = tmp(4889).IOSJankPerScreenExperiment;
       cachedEnabled = IOSJankPerScreenExperiment.getCachedEnabled();
     }
   }
   return cachedEnabled;
-};
+}

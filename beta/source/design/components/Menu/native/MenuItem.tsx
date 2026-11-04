@@ -1,127 +1,25 @@
-// Module ID: 15277
-// Function ID: 15278
+// Module ID: 15822
+// Function ID: 15823
 // Name: MenuItem
-// Dependencies: [19, 21, 5003, 558, 576, 15271, 5278, 7271, 7269, 2]
+// Dependencies: [19, 21, 5014, 15816, 5636, 7309, 7311, 2]
+// Exports: MenuItem
 
-// Module 15277 (MenuItem)
+// Module 15822 (MenuItem)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import IconDefault from "Icon" /* 5278 */;
-import FormRowDefault from "FormRow" /* 7269 */;
-import FormLabelDefault from "FormLabel" /* 7271 */;
-import Menu from "Menu" /* 15271 */;
+import IconDefault from "Icon" /* 5636 */;
+import FormRowDefault from "FormRow" /* 7309 */;
+import Menu from "Menu" /* 15816 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
+let tmp8;
+const FormLabelDefault = tmp8(7311);
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MenuItem(ref) {
-  let IconComponent;
-  let action;
-  let disabled;
-  let iconSource;
-  let label;
-  let showIconFirst;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(18);
-  ({ label, IconComponent, iconSource, showIconFirst, style, disabled, action } = ref);
-  const tmp6 = closure_5();
-  const menuClose = react.useContext(Menu.MenuContext).menuClose;
-  if (cResult[0] === action) {
-    let tmp7;
-    let tmp10;
-    if (cResult[1] === menuClose) {
-      tmp7 = cResult[2];
-    }
-    if (cResult[3] === IconComponent) {
-      if (cResult[4] === iconSource) {
-        let tmp8;
-        if (cResult[5] === tmp6) {
-          tmp8 = cResult[6];
-        }
-        let tmp15 = null;
-        if (null != iconSource) {
-          tmp15 = null;
-          if (undefined !== showIconFirst && showIconFirst) {
-            tmp15 = tmp8;
-          }
-        }
-        let tmp16 = null;
-        if (null != iconSource) {
-          tmp16 = null;
-          if (!(undefined !== showIconFirst && showIconFirst)) {
-            tmp16 = tmp8;
-          }
-        }
-        if (cResult[7] === label) {
-          let tmp17;
-          if (cResult[8] === tmp6) {
-            tmp17 = cResult[9];
-          }
-          if (cResult[10] === (undefined !== disabled && disabled)) {
-            if (cResult[11] === tmp7) {
-              if (cResult[12] === ref.ref) {
-                if (cResult[13] === style) {
-                  if (cResult[14] === tmp15) {
-                    if (cResult[15] === tmp16) {
-                      let tmp19;
-                      if (cResult[16] === tmp17) {
-                        tmp19 = cResult[17];
-                      }
-                      return tmp19;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          const tmp22 = jsx(FormRowDefault, { ref: ref.ref, style, accessibilityRole: "menuitem", disabled: undefined !== disabled && disabled, leading: tmp15, trailing: tmp16, label: tmp17, onPress: tmp7 });
-          cResult[10] = undefined !== disabled && disabled;
-          cResult[11] = tmp7;
-          cResult[12] = ref.ref;
-          cResult[13] = style;
-          cResult[14] = tmp15;
-          cResult[15] = tmp16;
-          cResult[16] = tmp17;
-          cResult[17] = tmp22;
-          tmp19 = tmp22;
-        }
-        let tmp18 = label;
-        if (typeof label === "string") {
-          tmp18 = jsx(FormLabelDefault, { text: label, style: tmp6.formLabel });
-        }
-        cResult[7] = label;
-        cResult[8] = tmp6;
-        cResult[9] = tmp18;
-        tmp17 = tmp18;
-      }
-    }
-    if (null != IconComponent) {
-      tmp10 = <IconComponent size="sm" />;
-    } else {
-      tmp10 = null;
-      if (null != iconSource) {
-        tmp10 = jsx(IconDefault, { source: iconSource, style: tmp6.formIcon });
-      }
-    }
-    cResult[3] = IconComponent;
-    cResult[4] = iconSource;
-    cResult[5] = tmp6;
-    cResult[6] = tmp10;
-    tmp8 = tmp10;
-  }
-  function onPress() {
-    action();
-    menuClose();
-  }
-  cResult[0] = action;
-  cResult[1] = menuClose;
-  cResult[2] = onPress;
-  tmp7 = onPress;
-}) : (function MenuItem(action) {
+const result = size.fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
+
+export function MenuItem(action) {
   let IconComponent;
   let disabled;
   let iconSource;
@@ -173,7 +71,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MenuItem(r
     action();
     menuClose();
   }} />;
-});
-const result = size.fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
-
-export const MenuItem = tmp2;
+}

@@ -1,18 +1,18 @@
-// Module ID: 19400
-// Function ID: 19401
+// Module ID: 20025
+// Function ID: 20026
 // Name: FriendOnlineTimer
-// Dependencies: [5, 6530, 19401, 1087, 1098, 1104, 1297, 1257, 584, 7246, 4831, 2]
+// Dependencies: [5, 6570, 20026, 1072, 1083, 1089, 1282, 1242, 572, 7287, 4839, 2]
 
-// Module 19400 (FriendOnlineTimer)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 1098 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import UserSettings from "UserSettings" /* 4831 */;
+// Module 20025 (FriendOnlineTimer)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 1083 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import UserSettings from "UserSettings" /* 4839 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6530 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 19401 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20026 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -29,7 +29,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
           const tmp17 = closure_129_1(closure_129_2[8]);
           dispatch(obj9);
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp28) {
         closure_2 = tmp28;

@@ -1,11 +1,11 @@
-// Module ID: 10793
-// Function ID: 10794
+// Module ID: 10922
+// Function ID: 10923
 // Name: conjureInspectPoint
-// Dependencies: [10790, 2]
+// Dependencies: [10919, 2]
 // Exports: inspectPreviewPointRequest, inspectResultFromResponse
 
-// Module 10793 (conjureInspectPoint)
-import conjurePreviewCall from "conjurePreviewCall" /* 10790 */;
+// Module 10922 (conjureInspectPoint)
+import conjurePreviewCall from "conjurePreviewCall" /* 10919 */;
 import size_mod from "module_2" /* 2 */;
 
 function targetFromPreviewElement(element) {
@@ -63,14 +63,14 @@ const result = size.fileFinishedImporting("modules/conjure/design_feedback/conju
 
 export { targetFromPreviewElement };
 export const CONJURE_INSPECT_CLEAR_POINT = frozen;
-export const inspectPreviewPointRequest = function inspectPreviewPointRequest(arg0) {
+export function inspectPreviewPointRequest(arg0) {
   let items;
   const point = { action: "inspect", x: arg0.x, y: arg0.y };
   const obj = { steps: items, timeoutMs: conjurePreviewCall.INSPECT_TIMEOUT_MS, passive: true };
   items = [point];
   return obj;
-};
-export const inspectResultFromResponse = function inspectResultFromResponse(results) {
+}
+export function inspectResultFromResponse(results) {
   results = undefined;
   const _Array = Array;
   if (results != null) {
@@ -100,4 +100,4 @@ export const inspectResultFromResponse = function inspectResultFromResponse(resu
     }
     return obj;
   }
-};
+}

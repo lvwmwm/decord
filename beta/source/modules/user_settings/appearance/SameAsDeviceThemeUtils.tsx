@@ -1,18 +1,18 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 17011
+// Function ID: 17012
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [5027, 1207, 1210, 5900, 1254, 5010, 5030, 5068, 2]
+// Dependencies: [5038, 1192, 1195, 5932, 1239, 5021, 5041, 5079, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 16417 (SameAsDeviceThemeUtils)
-import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import shared from "shared" /* 5010 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5030 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5068 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5900 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5027 */;
-import ThemeStore from "ThemeStore" /* 1207 */;
-import ThemeConstants from "ThemeConstants" /* 1210 */;
+// Module 17011 (SameAsDeviceThemeUtils)
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import shared from "shared" /* 5021 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5041 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5079 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5932 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
+import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeConstants from "ThemeConstants" /* 1195 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -20,7 +20,7 @@ let metroRequire;
 ({ SystemTheme: hasOwnProperty, SystemThemeState: metroRequire } = ThemeConstants);
 let result = size.fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
 
-export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUserThemeSettings) {
+export function enableSameAsDeviceTheme(customUserThemeSettings) {
   const obj = UserSettingsActionCreatorsDefault;
   const result = obj.setShouldSyncAppearanceSettings(false);
   if (null == ThemeStore.getSyncedClientTheme(hasOwnProperty.LIGHT)) {
@@ -64,10 +64,10 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUs
   const result5 = obj14.setSameAsDeviceThemeEnabled(true);
   const obj15 = ThemeActionCreators;
   obj15.setUseSystemTheme(metroRequire.ON);
-};
-export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
+}
+export function disableSameAsDeviceTheme() {
   const obj = ThemeActionCreators;
   obj.setUseSystemTheme(metroRequire.OFF);
   const obj2 = ThemeActionCreators;
   const result = obj2.setSameAsDeviceThemeEnabled(false);
-};
+}

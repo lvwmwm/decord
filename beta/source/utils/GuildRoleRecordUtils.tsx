@@ -1,15 +1,15 @@
-// Module ID: 4911
-// Function ID: 4912
+// Module ID: 4922
+// Function ID: 4923
 // Name: GuildRoleRecordUtils
-// Dependencies: [4870, 4910, 1099, 1105, 4912, 2]
+// Dependencies: [4878, 4921, 1084, 1090, 4923, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 4911 (GuildRoleRecordUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4910 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4912 */;
-import PlainRecord from "PlainRecord" /* 4870 */;
+// Module 4922 (GuildRoleRecordUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4921 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4923 */;
+import PlainRecord from "PlainRecord" /* 4878 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -119,16 +119,16 @@ function fromSerialized(guildId, id) {
 const GuildRoleRecordTypeTag = GuildRoleRecord.GuildRoleRecordTypeTag;
 let result = size.fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
 
-export const isGuildRoleRecord = function isGuildRoleRecord(arg0) {
+export function isGuildRoleRecord(arg0) {
   return React3(GuildRoleRecordTypeTag, arg0);
-};
+}
 export { fromServerArray };
 export { fromServer };
-export const constructGuildRoleInPlace = function constructGuildRoleInPlace(arg0) {
+export function constructGuildRoleInPlace(arg0) {
   return _false(GuildRoleRecordTypeTag, arg0);
-};
+}
 export { fromSerialized };
-export const fromSyncOperation = function fromSyncOperation(id, roles, partition) {
+export function fromSyncOperation(id, roles, partition) {
   if ("full_sync" === roles.op) {
     return fromServerArray(id, roles.items);
   } else {
@@ -146,16 +146,16 @@ export const fromSyncOperation = function fromSyncOperation(id, roles, partition
     }
     return obj;
   }
-};
-export const fromSerializedPartition = function fromSerializedPartition(id, roles) {
+}
+export function fromSerializedPartition(id, roles) {
   const obj = {};
   for (const key10006 in roles) {
     obj[key10006] = fromSerialized(id, roles[key10006]);
     continue;
   }
   return obj;
-};
-export const toSerializedPartition = function toSerializedPartition(unsafeMutableRoles) {
+}
+export function toSerializedPartition(unsafeMutableRoles) {
   const obj = {};
   for (const key10004 in unsafeMutableRoles) {
     let tmp2 = unsafeMutableRoles[key10004];
@@ -166,4 +166,4 @@ export const toSerializedPartition = function toSerializedPartition(unsafeMutabl
     continue;
   }
   return obj;
-};
+}

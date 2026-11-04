@@ -1,13 +1,13 @@
-// Module ID: 7076
-// Function ID: 7077
+// Module ID: 7118
+// Function ID: 7119
 // Name: MFAUtils
-// Dependencies: [1630, 7077, 1257, 2]
+// Dependencies: [1622, 7119, 1242, 2]
 // Exports: captureWebAuthnException, encodeTotpSecret, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 7076 (MFAUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import encodeDefault from "encode" /* 7077 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
+// Module 7118 (MFAUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import encodeDefault from "encode" /* 7119 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1622 */;
 import size from "module_2" /* 2 */;
 
 let _crypto;
@@ -39,7 +39,7 @@ const result = size.fileFinishedImporting("utils/MFAUtils.tsx");
 
 export const hasCrypto = tmp5;
 export const hasWebAuthn = tmp6;
-export const generateTotpSecret = function generateTotpSecret() {
+export function generateTotpSecret() {
   const getRandomValues = _crypto.getRandomValues;
   const uint8Array = new Uint8Array(20);
   const randomValues = getRandomValues(uint8Array);
@@ -50,9 +50,9 @@ export const generateTotpSecret = function generateTotpSecret() {
   const str4 = str3.toLowerCase();
   const str5 = str4.replace(/(\w{4})/g, "$1 ");
   return str5.trim();
-};
+}
 export { encodeTotpSecret };
-export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, str) {
+export function encodeTotpSecretAsUrl(arg0, str) {
   str = arg2;
   if (arg2 === undefined) {
     str = "Discord";
@@ -62,8 +62,8 @@ export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, str) {
   const str2 = str.replace(/[\s._-]+/g, "");
   const formatted = str2.toUpperCase();
   return "otpauth://totp/" + encodeURIResult + ":" + encodeURIResult1 + "?secret=" + formatted + "&issuer=" + encodeURIComponent(str);
-};
-export const captureWebAuthnException = function captureWebAuthnException(error, tags) {
+}
+export function captureWebAuthnException(error, tags) {
   let obj2;
   const obj = { tags: obj2 };
   const captureException = SentryUtilsDefault.captureException;
@@ -76,4 +76,4 @@ export const captureWebAuthnException = function captureWebAuthnException(error,
   obj2 = { app_context: "webauthn" };
   const merged1 = Object.assign(tags);
   captureException(error, obj);
-};
+}

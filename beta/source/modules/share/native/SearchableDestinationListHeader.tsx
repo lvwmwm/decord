@@ -1,124 +1,34 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 13394
+// Function ID: 13395
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5003, 587, 558, 576, 1633, 1506, 1384, 9731, 6956, 6965, 2]
+// Dependencies: [19, 21, 5014, 575, 1625, 1498, 1375, 7005, 9812, 6998, 2]
+// Exports: default
 
-// Module 12947 (SearchableDestinationListHeader)
+// Module 13394 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Link from "Link" /* 1506 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import NavigatorHeader from "NavigatorHeader" /* 6956 */;
-import HeaderShared from "HeaderShared" /* 9731 */;
+import nativeDefault from "native" /* 575 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import Link from "Link" /* 1498 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import NavigatorHeader from "NavigatorHeader" /* 6998 */;
+import HeaderShared from "HeaderShared" /* 9812 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
-let obj4;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { headerLeftContainer: obj2, headerRightContainer: obj3, header: obj4 };
+let obj = { headerLeftContainer: obj2, headerRightContainer: obj3, header: { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
 obj2 = { paddingLeft: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingRight: nativeDefault.space.PX_16 };
-obj4 = { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+({ borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
 let closure_5 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDestinationListHeader(subtitleColor) {
-  let headerRight;
-  let headerStatusBarHeight;
-  let onClose;
-  let subtitle;
-  let title;
-  const obj = subtitle(576);
-  const cResult = obj.c(14);
-  ({ title, subtitle } = subtitleColor);
-  subtitleColor = subtitleColor.subtitleColor;
-  ({ headerRight, headerStatusBarHeight, onClose } = subtitleColor);
-  const tmp4 = closure_5();
-  const top = subtitleColor(1633)().top;
-  const context = react.useContext(subtitle(1506).NavigationRouteContext);
-  const obj2 = subtitle(1384);
-  let isIOSResult = obj2.isIOS();
-  const tmp5 = subtitleColor;
-  if (isIOSResult) {
-    let presentation;
-    if (context != null) {
-      const params = context.params;
-      if (params != null) {
-        presentation = params.presentation;
-      }
-    }
-    isIOSResult = "modal" === presentation;
-  }
-  if (cResult[0] === subtitle) {
-    let tmp10;
-    let tmp11;
-    if (cResult[1] === subtitleColor) {
-      tmp10 = cResult[2];
-    }
-    if (cResult[3] !== onClose) {
-      let headerCloseButton;
-      if (null != onClose) {
-        const tmpResult = subtitle(6956);
-        headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
-      }
-      cResult[3] = onClose;
-      cResult[4] = headerCloseButton;
-      tmp11 = headerCloseButton;
-    } else {
-      tmp11 = cResult[4];
-    }
-    if (headerStatusBarHeight == null) {
-      let num3 = 0;
-      if (!isIOSResult) {
-        num3 = top;
-      }
-      headerStatusBarHeight = num3 + tmp5(587).space.PX_8;
-    }
-    if (cResult[5] === headerRight) {
-      if (cResult[6] === tmp4.header) {
-        if (cResult[7] === tmp4.headerLeftContainer) {
-          if (cResult[8] === tmp4.headerRightContainer) {
-            if (cResult[9] === tmp10) {
-              if (cResult[10] === tmp11) {
-                if (cResult[11] === headerStatusBarHeight) {
-                  let tmp15;
-                  if (cResult[12] === title) {
-                    tmp15 = cResult[13];
-                  }
-                  return tmp15;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp4);
-    const tmp17 = jsx(subtitle(6965).Header, { headerStyle: tmp4.header, title, headerTitle: tmp10, headerTitleAlign: "center", headerLeft: tmp11, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight });
-    cResult[5] = headerRight;
-    cResult[6] = tmp4.header;
-    cResult[7] = tmp4.headerLeftContainer;
-    cResult[8] = tmp4.headerRightContainer;
-    cResult[9] = tmp10;
-    cResult[10] = tmp11;
-    cResult[11] = headerStatusBarHeight;
-    cResult[12] = title;
-    cResult[13] = tmp17;
-    tmp15 = tmp17;
-  }
-  const fn = function l(children) {
-    return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle, subtitleColor, variant: "redesign/heading-18/bold" });
-  };
-  cResult[0] = subtitle;
-  cResult[1] = subtitleColor;
-  cResult[2] = fn;
-  tmp10 = fn;
-}) : (function SearchableDestinationListHeader(arg0) {
+const result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListHeader.tsx");
+
+export default function SearchableDestinationListHeader(arg0) {
   let headerCloseButton;
   let headerRight;
   let headerStatusBarHeight;
@@ -157,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = tmp4(6965).Header;
+  const Header = tmp4(7005).Header;
   const tmp9 = jsx;
   if (null != onClose) {
     const tmp4Result = NavigatorHeader;
@@ -172,7 +82,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Searchable
     headerStatusBarHeight = num + nativeDefault.space.PX_8;
   }
   return tmp9(Header, obj3);
-});
-const result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListHeader.tsx");
-
-export default tmp3;
+};

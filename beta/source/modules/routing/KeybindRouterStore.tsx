@@ -1,12 +1,12 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 12067
+// Function ID: 12068
 // Name: KeybindRouterStore
-// Dependencies: [1087, 5039, 5052, 1269, 1274, 2]
+// Dependencies: [1072, 5050, 5063, 1254, 1259, 2]
 
-// Module 11772 (KeybindRouterStore)
-import matchPathCompat from "matchPathCompat" /* 5039 */;
-import Constants from "Constants" /* 1087 */;
-import module_1269 from "module_1269" /* 1269 */;
+// Module 12067 (KeybindRouterStore)
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import Constants from "Constants" /* 1072 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -28,18 +28,18 @@ function getMatchData(pathname) {
   }
   const obj = { path: CHANNEL(guildIdResult, RouteParam2.channelId({ optional: true }), ":messageId?") };
   CHANNEL = constants.CHANNEL;
-  const RouteParam = tmp(5052).RouteParam;
+  const RouteParam = tmp(5063).RouteParam;
   guildIdResult = RouteParam.guildId();
-  RouteParam2 = tmp(5052).RouteParam;
+  RouteParam2 = tmp(5063).RouteParam;
   const matchPathResult = matchPath(str2, obj);
   const tmp4 = constants;
   if (null != matchPathResult) {
     ({ guildId, channelId } = matchPathResult.params);
-    let tmp10 = null;
+    let tmp9 = null;
     if (guildId !== _false) {
-      tmp10 = guildId;
+      tmp9 = guildId;
     }
-    const obj2 = { guildId: tmp10, channelId };
+    const obj2 = { guildId: tmp9, channelId };
     if (channelId == null) {
       channelId = null;
     }
@@ -53,7 +53,7 @@ function getMatchData(pathname) {
     }
     const obj3 = { path: GUILD_BOOSTING_MARKETING(RouteParam3.guildId()) };
     GUILD_BOOSTING_MARKETING = tmp4.GUILD_BOOSTING_MARKETING;
-    RouteParam3 = tmp(5052).RouteParam;
+    RouteParam3 = tmp(5063).RouteParam;
     const matchPath2Result = matchPath2(str, obj3);
     if (null != matchPath2Result) {
       obj5 = { guildId: matchPath2Result.params.guildId, channelId: null };
@@ -65,7 +65,7 @@ function getMatchData(pathname) {
   }
 }
 ({ Routes: c2, ME: c3 } = Constants);
-const withEqualityFn = module_1269.createWithEqualityFn((arg0) => {
+const withEqualityFn = module_1254.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     path: null,

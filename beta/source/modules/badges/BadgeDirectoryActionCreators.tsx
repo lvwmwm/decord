@@ -1,15 +1,15 @@
-// Module ID: 8718
-// Function ID: 8719
+// Module ID: 8768
+// Function ID: 8769
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1392, 1087, 584, 1297, 6500, 6505, 1257, 569, 1104, 2]
+// Dependencies: [5, 1383, 1072, 572, 1282, 6540, 6545, 1242, 559, 1089, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8718 (BadgeDirectoryActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 8768 (BadgeDirectoryActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
-import Dispatcher from "Dispatcher" /* 584 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
+import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let backoff, set;
@@ -132,13 +132,13 @@ let obj = function _fetchBadgeDirectory() {
       obj2.dispatch(obj16);
       c6 = 0;
     }
-    await "IconComponent";
+    await "HermesInternal";
     closure_4 = tmp;
     obj5 = closure_1;
     if (closure_1 === undefined) {
       obj5 = {};
     }
-    return "Reflect";
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -158,7 +158,7 @@ obj = function _fetchBadge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _fetchBadge() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {
@@ -249,7 +249,7 @@ obj = function _requestBadgeSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -316,7 +316,7 @@ obj = function _requestBadgeSummary() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp47) {
           closure_6 = tmp47;
@@ -341,13 +341,13 @@ const subscription = Dispatcher.subscribe("LOGOUT", () => {
 });
 let result = size.fileFinishedImporting("modules/badges/BadgeDirectoryActionCreators.tsx");
 
-export const fetchBadgeDirectory = function fetchBadgeDirectory() {
+export function fetchBadgeDirectory() {
   return obj(...arguments);
-};
-export const fetchBadge = function fetchBadge() {
+}
+export function fetchBadge() {
   return obj(...arguments);
-};
-export const fetchBadgeSummary = function fetchBadgeSummary(GIFTING, id) {
+}
+export function fetchBadgeSummary(GIFTING, id) {
   function requestBadgeSummary() {
     return obj(...arguments);
   }
@@ -395,9 +395,9 @@ export const fetchBadgeSummary = function fetchBadgeSummary(GIFTING, id) {
       }
     }
   }
-};
-export const markBadgeDirectoryBadgeIndicatorSeen = function markBadgeDirectoryBadgeIndicatorSeen(badgeId) {
+}
+export function markBadgeDirectoryBadgeIndicatorSeen(badgeId) {
   obj = Dispatcher;
   const obj2 = { type: "BADGE_DIRECTORY_MARK_BADGE_INDICATOR_SEEN", badgeId };
   obj.dispatch(obj2);
-};
+}

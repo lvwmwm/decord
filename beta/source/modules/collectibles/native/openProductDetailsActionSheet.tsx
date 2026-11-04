@@ -1,21 +1,21 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8747
+// Function ID: 8748
 // Name: openProductDetailsActionSheet
-// Dependencies: [7693, 7681, 5242, 8698, 2002, 2]
+// Dependencies: [7731, 7719, 5258, 8748, 1994, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
-// Module 8697 (openProductDetailsActionSheet)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7693 */;
+// Module 8747 (openProductDetailsActionSheet)
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7731 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Product Preview";
 const result = size.fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
 
 export const PRODUCT_DETAILS_ACTION_SHEET_KEY = "Shop Product Preview";
-export const openProductDetailsActionSheet = function openProductDetailsActionSheet(arg0, stack) {
+export function openProductDetailsActionSheet(arg0, stack) {
   let analyticsLocations;
   let initialVariantIndex;
   let product;
@@ -45,9 +45,9 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   tmpResult.productDetailsOpened(skuId);
   const obj2 = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequire(8698, tmp2.paths), c3, obj2, stack);
-};
-export const openProductDetailsActionSheetForSku = function openProductDetailsActionSheetForSku(skuId, stack) {
+  obj3.openLazy(asyncRequire(8748, tmp2.paths), c3, obj2, stack);
+}
+export function openProductDetailsActionSheetForSku(skuId, stack) {
   let analyticsLocations;
   let initialVariantIndex;
   let shopAnalyticsContext;
@@ -58,5 +58,5 @@ export const openProductDetailsActionSheetForSku = function openProductDetailsAc
   obj.productDetailsOpened(skuId);
   const obj2 = ActionSheetActionCreatorsDefault;
   const obj3 = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext, stageCollectibleChangeForEditProfile };
-  obj2.openLazy(asyncRequire(8698, dependencyMap.paths), c3, obj3, stack);
-};
+  obj2.openLazy(asyncRequire(8748, dependencyMap.paths), c3, obj3, stack);
+}

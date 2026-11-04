@@ -1,11 +1,11 @@
-// Module ID: 19490
-// Function ID: 19491
+// Module ID: 20117
+// Function ID: 20118
 // Name: ManagerRegistryShared
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: initialize
 
-// Module 19490 (ManagerRegistryShared)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 20117 (ManagerRegistryShared)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function populateMap(actions) {
@@ -77,7 +77,7 @@ let closure_2 = {};
 let c3 = false;
 const result = size.fileFinishedImporting("modules/app_startup/ManagerRegistryShared.tsx");
 
-export const initialize = function initialize(actions) {
+export function initialize(actions) {
   for (const key10004 in actions) {
     let tmp3 = actions[key10004];
     actions = tmp3.actions;
@@ -86,4 +86,4 @@ export const initialize = function initialize(actions) {
   }
   const obj = DispatcherDefault;
   obj.addInterceptor(handleAction);
-};
+}

@@ -1,24 +1,24 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8987
+// Function ID: 8988
 // Name: saveGuildEventRecurrence
-// Dependencies: [8922, 8920, 11, 2]
+// Dependencies: [8969, 8967, 11, 2]
 // Exports: default
 
-// Module 8940 (saveGuildEventRecurrence)
+// Module 8987 (saveGuildEventRecurrence)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8920 */;
-import ScheduleUtils from "ScheduleUtils" /* 8922 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8967 */;
+import ScheduleUtils from "ScheduleUtils" /* 8969 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
-export default function saveGuildEventRecurrence(guild_id, c2, startDate, event_exception_id) {
+export default function saveGuildEventRecurrence(guild_id, event_exception_id, startDate, event_exception_id2) {
   let date;
   let toISOStringResult1;
   let toISOStringResult2;
   let toISOStringResult3;
   const obj = ScheduleUtils;
-  const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(c2, guild_id);
+  const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(event_exception_id, guild_id);
   startDate = null;
   const obj2 = ScheduleUtils;
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
@@ -53,12 +53,12 @@ export default function saveGuildEventRecurrence(guild_id, c2, startDate, event_
       if (toISOStringResult1 == null) {
         toISOStringResult1 = null;
       }
-      result1 = updateGuildEventException(obj3, guild_id.guild_id, guild_id.id, c2);
+      result1 = updateGuildEventException(obj3, guild_id.guild_id, guild_id.id, event_exception_id);
     }
     return result1;
   } else {
     const obj7 = SnowflakeUtilsDefault;
-    const extractTimestampResult = obj7.extractTimestamp(c2);
+    const extractTimestampResult = obj7.extractTimestamp(event_exception_id);
     const _Date = Date;
     const self = this;
     const self2 = this;

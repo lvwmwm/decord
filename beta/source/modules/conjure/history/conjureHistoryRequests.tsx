@@ -1,11 +1,11 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12179
+// Function ID: 12180
 // Name: conjureHistoryRequests
-// Dependencies: [5, 10826, 10818, 12297, 10772, 2]
+// Dependencies: [5, 10948, 10941, 12180, 10900, 2]
 // Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchVersionHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
 
-// Module 12296 (conjureHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
+// Module 12179 (conjureHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _fetchVersionHistory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -127,7 +127,7 @@ obj = function _restoreSourceHistoryEntry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ obj = function _fetchDatabaseRestorePoints() {
     let c4 = 0;
     return (async function(arg0, value) {
       let obj5;
-      let obj6;
+      let obj8;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -252,7 +252,7 @@ obj = function _fetchDatabaseRestorePoints() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -268,13 +268,13 @@ obj = function _fetchDatabaseRestorePoints() {
               closure_2 = tmp;
               closure_0 = undefined;
               environment = undefined;
-              const obj4 = { query: obj6 };
+              const obj4 = { query: obj5 };
               c3 = 1;
               c4 = 1;
-              obj6 = { environment };
-              const obj7 = { value: obj5.fetchConjureWorker(closure_0, "/agent/database/restore-points", obj4), done: false };
-              obj5 = conjureWorkerFetch;
-              return obj7;
+              obj5 = { environment };
+              const obj6 = { value: obj8.fetchConjureWorker(closure_0, "/agent/database/restore-points", obj4), done: false };
+              obj8 = conjureWorkerFetch;
+              return obj6;
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -317,9 +317,9 @@ obj = function _fetchDatabaseRestorePoints() {
             c4 = 3;
             return { value: restorePoints, done: true };
           }
-        } catch (tmp19) {
+        } catch (tmp15) {
           c4 = 3;
-          throw tmp19;
+          throw tmp15;
         }
       }
     })();
@@ -343,7 +343,7 @@ obj = function _fetchDatabaseRestoreWindow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -425,7 +425,7 @@ obj = function _createDatabaseRestorePoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -528,7 +528,7 @@ obj = function _settleDatabaseRestore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -609,7 +609,7 @@ obj = function _restoreDatabaseToPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -672,7 +672,7 @@ obj = function _restoreDatabaseToTimestamp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -717,24 +717,24 @@ obj = function _restoreDatabaseToTimestamp() {
 };
 let result = size.fileFinishedImporting("modules/conjure/history/conjureHistoryRequests.tsx");
 
-export const fetchVersionHistory = function fetchVersionHistory() {
+export function fetchVersionHistory() {
   return obj(...arguments);
-};
-export const restoreSourceHistoryEntry = function restoreSourceHistoryEntry() {
+}
+export function restoreSourceHistoryEntry() {
   return obj(...arguments);
-};
-export const fetchDatabaseRestorePoints = function fetchDatabaseRestorePoints() {
+}
+export function fetchDatabaseRestorePoints() {
   return obj(...arguments);
-};
-export const fetchDatabaseRestoreWindow = function fetchDatabaseRestoreWindow() {
+}
+export function fetchDatabaseRestoreWindow() {
   return obj(...arguments);
-};
-export const createDatabaseRestorePoint = function createDatabaseRestorePoint() {
+}
+export function createDatabaseRestorePoint() {
   return obj(...arguments);
-};
-export const restoreDatabaseToPoint = function restoreDatabaseToPoint() {
+}
+export function restoreDatabaseToPoint() {
   return obj(...arguments);
-};
-export const restoreDatabaseToTimestamp = function restoreDatabaseToTimestamp() {
+}
+export function restoreDatabaseToTimestamp() {
   return obj(...arguments);
-};
+}

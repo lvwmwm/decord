@@ -1,21 +1,21 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 10844
+// Function ID: 10845
 // Name: FavoritesCleanup
-// Dependencies: [5, 4859, 4855, 4935, 6803, 4858, 1098, 1211, 7442, 1104, 6854, 2]
+// Dependencies: [5, 4867, 4863, 4946, 6842, 4866, 1083, 1196, 7484, 1089, 6894, 2]
 // Exports: getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10889 (FavoritesCleanup)
-import Constants from "Constants" /* 1098 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6854 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7442 */;
+// Module 10844 (FavoritesCleanup)
+import Constants from "Constants" /* 1083 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6894 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import FavoriteStore from "FavoriteStore" /* 4858 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import FavoriteStore from "FavoriteStore" /* 4866 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -58,7 +58,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -102,10 +102,10 @@ const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/favorites/FavoritesCleanup.tsx");
 
 export { getFavoriteThreadIdsForCleanup };
-export const loadFavoriteThreadsForCleanup = function loadFavoriteThreadsForCleanup() {
+export function loadFavoriteThreadsForCleanup() {
   return obj(...arguments);
-};
-export const getFavoritesCleanupCandidates = function getFavoritesCleanupCandidates(days) {
+}
+export function getFavoritesCleanupCandidates(days) {
   days = days.days;
   const categoryId = days.categoryId;
   if (Number.isSafeInteger(days)) {
@@ -162,4 +162,4 @@ export const getFavoritesCleanupCandidates = function getFavoritesCleanupCandida
     }
   }
   return [];
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7416
+// Function ID: 7417
 // Name: OrbCheckoutUtils
-// Dependencies: [1087, 1089, 7375, 1128, 7376, 4826, 2]
+// Dependencies: [1072, 1074, 7417, 1113, 7418, 4834, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7374 (OrbCheckoutUtils)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import intl10 from "intl" /* 1128 */;
-import BillingError from "BillingError" /* 4826 */;
-import OrderConstants from "OrderConstants" /* 7375 */;
-import OrderActionCreators from "OrderActionCreators" /* 7376 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7416 (OrbCheckoutUtils)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import intl10 from "intl" /* 1113 */;
+import BillingError from "BillingError" /* 4834 */;
+import OrderConstants from "OrderConstants" /* 7417 */;
+import OrderActionCreators from "OrderActionCreators" /* 7418 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -21,8 +21,8 @@ const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_
 const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;
 const result = size.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
 
-export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, cResult) {
-  const tmp = cResult;
+export function getOrbPriceFromPrices(prices, memo1) {
+  const tmp = memo1;
   if (tmp) {
     let tmp3;
     if (null != prices[React3.PREMIUM_TIER_2]) {
@@ -45,8 +45,8 @@ export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, cRes
     return found;
   }
   tmp3 = prices[React3.DEFAULT];
-};
-export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimerMessage(skuId) {
+}
+export function getOrbCheckoutDisclaimerMessage(skuId) {
   let intl2;
   const intl = intl10.intl;
   const format = intl.format;
@@ -58,16 +58,16 @@ export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimer
   const intl3 = intl10.intl;
   let stringResult = intl3.string(intl10.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-    const intl5 = tmp(1128).intl;
-    stringResult = intl5.string(tmp(1128).t.APcKRo);
+    const intl5 = tmp(1113).intl;
+    stringResult = intl5.string(tmp(1113).t.APcKRo);
   } else if (skuId === tmp6.FRACTIONAL_PREMIUM) {
-    const intl4 = tmp(1128).intl;
-    stringResult = intl4.string(tmp(1128).t.FhJ74j);
+    const intl4 = tmp(1113).intl;
+    stringResult = intl4.string(tmp(1113).t.FhJ74j);
   }
   const items = [formatResult, " ", stringResult];
   return items;
-};
-export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMessage(code, arg1) {
+}
+export function resolveOrbCheckoutErrorMessage(code, arg1) {
   let tmp = null;
   if (null != code) {
     let stringResult1;
@@ -75,38 +75,38 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
       if (null != arg1) {
         let stringResult;
         if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === arg1) {
-          const intl9 = tmp2(1128).intl;
-          stringResult = intl9.string(tmp2(1128).t.keFvXM);
+          const intl9 = tmp2(1113).intl;
+          stringResult = intl9.string(tmp2(1113).t.keFvXM);
         } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === arg1) {
-          const intl8 = tmp2(1128).intl;
-          stringResult = intl8.string(tmp2(1128).t.m371Mx);
+          const intl8 = tmp2(1113).intl;
+          stringResult = intl8.string(tmp2(1113).t.m371Mx);
         } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === arg1) {
-          const intl7 = tmp2(1128).intl;
-          stringResult = intl7.string(tmp2(1128).t.v9oC0p);
+          const intl7 = tmp2(1113).intl;
+          stringResult = intl7.string(tmp2(1113).t.v9oC0p);
         } else {
-          const intl6 = tmp2(1128).intl;
-          stringResult = intl6.string(tmp2(1128).t.fqJZ11);
+          const intl6 = tmp2(1113).intl;
+          stringResult = intl6.string(tmp2(1113).t.fqJZ11);
         }
         stringResult1 = stringResult;
       }
       tmp = stringResult1;
     }
     if (code instanceof OrderActionCreators.OrderProcessingPendingError) {
-      const intl5 = tmp2(1128).intl;
-      stringResult1 = intl5.string(tmp2(1128).t["2BmwgV"]);
+      const intl5 = tmp2(1113).intl;
+      stringResult1 = intl5.string(tmp2(1113).t["2BmwgV"]);
     } else if (code.code === BillingError.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
-      const intl4 = tmp2(1128).intl;
-      stringResult1 = intl4.string(tmp2(1128).t.keFvXM);
+      const intl4 = tmp2(1113).intl;
+      stringResult1 = intl4.string(tmp2(1113).t.keFvXM);
     } else if (code.code === BillingError.ErrorCodes.ALREADY_PURCHASED) {
-      const intl3 = tmp2(1128).intl;
-      stringResult1 = intl3.string(tmp2(1128).t.m371Mx);
+      const intl3 = tmp2(1113).intl;
+      stringResult1 = intl3.string(tmp2(1113).t.m371Mx);
     } else if (code.code === BillingError.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
-      const intl2 = tmp2(1128).intl;
-      stringResult1 = intl2.string(tmp2(1128).t.ZHgEG7);
+      const intl2 = tmp2(1113).intl;
+      stringResult1 = intl2.string(tmp2(1113).t.ZHgEG7);
     } else {
-      const intl = tmp2(1128).intl;
-      stringResult1 = intl.string(tmp2(1128).t.fqJZ11);
+      const intl = tmp2(1113).intl;
+      stringResult1 = intl.string(tmp2(1113).t.fqJZ11);
     }
   }
   return tmp;
-};
+}

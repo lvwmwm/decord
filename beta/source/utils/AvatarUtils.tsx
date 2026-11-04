@@ -1,23 +1,23 @@
-// Module ID: 1417
-// Function ID: 1418
+// Module ID: 1409
+// Function ID: 1410
 // Name: AvatarUtils
-// Dependencies: [1087, 1418, 1420, 1384, 1452, 1493, 1902, 1903, 14, 1987, 1989, 1990, 11, 1389, 2]
+// Dependencies: [1072, 1410, 1412, 1375, 1444, 1485, 1894, 1895, 14, 1979, 1981, 1982, 11, 1380, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserAvatarURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
-// Module 1417 (AvatarUtils)
+// Module 1409 (AvatarUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import urlParse from "urlParse" /* 1389 */;
-import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1418 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import _modDef1493 from "module_1493" /* 1493 */;
-import NumberUtils from "NumberUtils" /* 1903 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1987 */;
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1989 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1990 */;
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
+import urlParse from "urlParse" /* 1380 */;
+import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1410 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1412 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
+import _modDef1485 from "module_1485" /* 1485 */;
+import NumberUtils from "NumberUtils" /* 1895 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1979 */;
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1981 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1982 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ let set;
 let c3;
 let closure_4;
 let tmp2;
-const ForceSdrEmojisStickersExperiment = tmp2(1902);
+const ForceSdrEmojisStickersExperiment = tmp2(1894);
 function getAvatarURL(endpoint) {
   let format;
   let hash;
@@ -122,7 +122,7 @@ function getAvatarURL(endpoint) {
           obj3.animated = true;
         }
         const _HermesInternal2 = HermesInternal;
-        const obj2 = _modDef1493;
+        const obj2 = _modDef1485;
         return combined + "?" + obj2.stringify(obj3);
       }
     }
@@ -266,7 +266,7 @@ function getGuildMemberAvatarURLSimple(size) {
   if (tmp21) {
     obj.animated = true;
   }
-  const obj3 = _modDef1493;
+  const obj3 = _modDef1485;
   return combined + "?" + obj3.stringify(obj);
 }
 function getGuildBannerURL(guild, flag) {
@@ -323,7 +323,7 @@ function getGuildBannerURL(guild, flag) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj2 = _modDef1493;
+    const obj2 = _modDef1485;
     return combined + "?" + obj2.stringify(obj);
   }
 }
@@ -495,7 +495,7 @@ function getEmojiURL(size) {
     return combined1;
   }
 }
-function getUserAvatarURL(stateFromStores2, flag, size, png, SUPPORTS_WEBP) {
+function getUserAvatarURL(user, flag, size, png, SUPPORTS_WEBP) {
   if (flag === undefined) {
     flag = false;
   }
@@ -511,9 +511,9 @@ function getUserAvatarURL(stateFromStores2, flag, size, png, SUPPORTS_WEBP) {
   if (SUPPORTS_WEBP === undefined) {
     tmp3 = unpackModuleId;
   }
-  let tmp4 = getUserAvatarURLWithoutFallback(stateFromStores2, flag, tmp, tmp2, tmp3);
+  let tmp4 = getUserAvatarURLWithoutFallback(user, flag, tmp, tmp2, tmp3);
   if (tmp4 == null) {
-    tmp4 = getDefaultAvatarURL(stateFromStores2.id, stateFromStores2.discriminator, stateFromStores2.isProvisional, tmp);
+    tmp4 = getDefaultAvatarURL(user.id, user.discriminator, user.isProvisional, tmp);
   }
   return tmp4;
 }
@@ -607,7 +607,7 @@ function getUserBannerURL(arg0) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj3 = _modDef1493;
+    const obj3 = _modDef1485;
     return combined + "?" + obj3.stringify(obj);
   }
 }
@@ -729,7 +729,7 @@ function getGuildMemberBannerURL(arg0) {
         obj.animated = true;
       }
       const _HermesInternal2 = HermesInternal;
-      const obj3 = _modDef1493;
+      const obj3 = _modDef1485;
       return combined + "?" + obj3.stringify(obj);
     }
   }
@@ -801,11 +801,11 @@ function isAnimatedIconHash(storageHash) {
   const startsWithResult = null != storageHash && storageHash.startsWith("a_");
   return startsWithResult;
 }
-function makeSource(src) {
-  let tmp = src;
-  if (typeof src !== "number") {
-    tmp = { uri: src };
-    const obj = { uri: src };
+function makeSource(automodAvatarURL) {
+  let tmp = automodAvatarURL;
+  if (typeof automodAvatarURL !== "number") {
+    tmp = { uri: automodAvatarURL };
+    const obj = { uri: automodAvatarURL };
   }
   return tmp;
 }
@@ -1174,11 +1174,11 @@ let obj = {
     return tmp2;
   },
   makeSource,
-  getAnimatableSourceWithFallback(hasItem, fn) {
-    const tmp = fn(hasItem);
+  getAnimatableSourceWithFallback(flag, fn) {
+    const tmp = fn(flag);
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      if (hasItem) {
+      if (flag) {
         if (typeof tmp !== "number") {
           let tmp6;
           const tmp2 = fn(false);
@@ -1227,7 +1227,7 @@ export { getVideoFilterAssetURL };
 export { hasAnimatedGuildIcon };
 export { isAnimatedIconHash };
 export { isVideoAssetHash };
-export const isAnimatedImageURL = function isAnimatedImageURL(bannerURL) {
+export function isAnimatedImageURL(bannerURL) {
   let tmp = null != bannerURL;
   if (tmp) {
     const obj = _getAssetHash(bannerURL);
@@ -1235,8 +1235,8 @@ export const isAnimatedImageURL = function isAnimatedImageURL(bannerURL) {
     const startsWithResult = null != obj && obj.startsWith("a_");
   }
   return tmp;
-};
-export const isVideoURL = function isVideoURL(bannerURL) {
+}
+export function isVideoURL(bannerURL) {
   let tmp = null != bannerURL;
   if (tmp) {
     const obj = _getAssetHash(bannerURL);
@@ -1244,6 +1244,6 @@ export const isVideoURL = function isVideoURL(bannerURL) {
     const startsWithResult = null != obj && obj.startsWith("v_");
   }
   return tmp;
-};
+}
 export { makeSource };
 export { isDataUri };

@@ -1,11 +1,11 @@
-// Module ID: 18983
-// Function ID: 18984
+// Module ID: 19616
+// Function ID: 19617
 // Name: SettingTreeCacheLifecycleManager
-// Dependencies: [7246, 16017, 2]
+// Dependencies: [7287, 16593, 2]
 
-// Module 18983 (SettingTreeCacheLifecycleManager)
-import SettingTreeManagerDefault from "SettingTreeManager" /* 16017 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+// Module 19616 (SettingTreeCacheLifecycleManager)
+import SettingTreeManagerDefault from "SettingTreeManager" /* 16593 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

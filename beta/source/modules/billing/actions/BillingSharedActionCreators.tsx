@@ -1,19 +1,19 @@
-// Module ID: 6496
-// Function ID: 6497
+// Module ID: 6536
+// Function ID: 6537
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2056, 6497, 1087, 1297, 4826, 584, 1128, 1267, 6406, 4819, 6498, 2]
+// Dependencies: [5, 2050, 6537, 1072, 1282, 4834, 572, 1113, 1252, 6446, 4827, 6538, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6496 (BillingSharedActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1128 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6406 */;
-import Constants2 from "Constants" /* 6497 */;
+// Module 6536 (BillingSharedActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1113 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6446 */;
+import Constants2 from "Constants" /* 6537 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2056 */;
-import Constants from "Constants" /* 1087 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2050 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_7;
@@ -37,7 +37,7 @@ let obj = function _validatePaymentSourceBillingAddress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _createPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c8;
@@ -189,7 +189,7 @@ obj = function _createPaymentSource() {
               billingError = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {
@@ -274,10 +274,10 @@ const StripeErrorTypes = Constants2.StripeErrorTypes;
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 let result = size.fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
 
-export const validatePaymentSourceBillingAddress = function validatePaymentSourceBillingAddress() {
+export function validatePaymentSourceBillingAddress() {
   return obj(...arguments);
-};
-export const dispatchConfirmationError = function dispatchConfirmationError(error, captureException) {
+}
+export function dispatchConfirmationError(error, captureException) {
   let billingError;
   let flag2;
   let obj9;
@@ -341,7 +341,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     let billingError1 = message;
     if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp6 = message;
-      const BillingError = tmp3(6406).BillingError;
+      const BillingError = tmp3(6446).BillingError;
       if (typeof message === "string") {
         tmp6 = defaultErrorMessage;
       }
@@ -375,14 +375,14 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     obj9 = {};
     const merged2 = Object.assign(tmp8);
     const merged3 = Object.assign(prop.extra);
-    const tmp11Result = tmp11(4819);
+    const tmp11Result = tmp11(4827);
     const result = tmp11Result.captureBillingException(_Error21, obj8);
   }
   return _Error21;
-};
-export const popupBridgeState = function popupBridgeState() {
+}
+export function popupBridgeState() {
   return obj(...arguments);
-};
-export const createPaymentSource = function createPaymentSource() {
+}
+export function createPaymentSource() {
   return obj(...arguments);
-};
+}

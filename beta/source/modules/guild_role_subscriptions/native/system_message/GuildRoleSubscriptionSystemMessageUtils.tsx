@@ -1,20 +1,20 @@
-// Module ID: 12805
-// Function ID: 12806
+// Module ID: 13254
+// Function ID: 13255
 // Name: system_message/GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [1087, 7598, 8381, 5743, 2]
+// Dependencies: [1072, 7636, 8449, 5760, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 12805 (system_message/GuildRoleSubscriptionSystemMessageUtils)
-import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8381 */;
+// Module 13254 (system_message/GuildRoleSubscriptionSystemMessageUtils)
+import Constants from "Constants" /* 1072 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8449 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
-export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId) {
+export function handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId) {
   const sendGreetMessage = MessageActionCreatorsDefault.sendGreetMessage;
   const id = messageChannel.id;
   MessageActionCreatorsDefault;
@@ -29,4 +29,4 @@ export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function ha
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(roleSubscriptionPurchaseSystemMessageEventProperties);
   trackWithMetadata(ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj4);
-};
+}

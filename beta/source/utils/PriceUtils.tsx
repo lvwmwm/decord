@@ -1,16 +1,16 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7413
+// Function ID: 7414
 // Name: PriceUtils
-// Dependencies: [2068, 1394, 1098, 1384, 7372, 1128, 2]
+// Dependencies: [2062, 1385, 1083, 1375, 7414, 1113, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatPrice, formatRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 7371 (PriceUtils)
-import Constants from "Constants" /* 1098 */;
-import intl4 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 7372 */;
-import LocaleStore from "LocaleStore" /* 2068 */;
+// Module 7413 (PriceUtils)
+import Constants from "Constants" /* 1083 */;
+import intl4 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 7414 */;
+import LocaleStore from "LocaleStore" /* 2062 */;
 import size from "module_2" /* 2 */;
 
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {
@@ -55,14 +55,14 @@ let closure_5 = Object.freeze(["en-CA", "en-AU", "en-NZ"]);
 const result = size.fileFinishedImporting("utils/PriceUtils.tsx");
 
 export { formatSingleCurrencyPrice };
-export const formatDualPriceForBG = function formatDualPriceForBG(result, localeOverride) {
+export function formatDualPriceForBG(result, localeOverride) {
   const tmp = formatSingleCurrencyPrice(result, CurrencyCodes.EUR, localeOverride);
   return "" + tmp + " (" + formatSingleCurrencyPrice(1.95583 * result, CurrencyCodes.BGN, localeOverride) + ")";
-};
-export const formatPrice = function formatPrice(amount, currency, localeOverride) {
+}
+export function formatPrice(amount, currency, localeOverride) {
   return formatSingleCurrencyPrice(amount, currency, localeOverride);
-};
-export const formatRate = function formatRate(priceString, interval, intervalCount) {
+}
+export function formatRate(priceString, interval, intervalCount) {
   if (interval === SubscriptionIntervalTypes.YEAR) {
     const intl3 = intl4.intl;
     const obj2 = { price: priceString };
@@ -89,23 +89,23 @@ export const formatRate = function formatRate(priceString, interval, intervalCou
     const error = new Error("Unsupported interval type: " + interval + ", and interval count: " + intervalCount);
     throw error;
   }
-};
-export const formatPercent = function formatPercent(arg0, arg1) {
+}
+export function formatPercent(arg0, arg1) {
   const NumberFormatResult = Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 });
   return NumberFormatResult.format(arg1);
-};
-export const maybeShortenPrice = function maybeShortenPrice(str) {
+}
+export function maybeShortenPrice(str) {
   let replaced = str;
   if (str.length > 5) {
     replaced = str.replace(/\.00(?=[\s)]|$)/g, "");
   }
   return replaced;
-};
-export const shortenAndFormatPrice = function shortenAndFormatPrice(amount, currency, localeOverride) {
+}
+export function shortenAndFormatPrice(amount, currency, localeOverride) {
   const arr = formatSingleCurrencyPrice(amount, currency, localeOverride);
   let replaced = arr;
   if (arr.length > 5) {
     replaced = arr.replace(/\.00(?=[\s)]|$)/g, "");
   }
   return replaced;
-};
+}

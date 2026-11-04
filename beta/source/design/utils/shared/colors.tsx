@@ -1,18 +1,18 @@
-// Module ID: 9440
-// Function ID: 9441
+// Module ID: 9511
+// Function ID: 9512
 // Name: colors
-// Dependencies: [683, 2]
+// Dependencies: [671, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 9440 (colors)
-import _modDef683 from "module_683" /* 683 */;
+// Module 9511 (colors)
+import _modDef671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/utils/shared/colors.tsx");
 
-export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(arg0, context) {
-  const obj = _modDef683(arg0);
-  const obj2 = _modDef683(context);
+export function flattenColorOverOpaqueBackground(token, context) {
+  const obj = _modDef671(token);
+  const obj2 = _modDef671(context);
   const rgbaResult = obj.rgba();
   const rgbaResult1 = obj2.rgba();
   if (1 !== rgbaResult1[3]) {
@@ -29,8 +29,8 @@ export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueB
     const _Math3 = Math;
     const rounded1 = Math.round(rgbaResult[1] * tmp8 + rgbaResult1[1] * diff);
     const rounded2 = Math.round(rgbaResult[2] * tmp8 + rgbaResult1[2] * diff);
-    const tmpResult = _modDef683;
+    const tmpResult = _modDef671;
     const rgbResult = tmpResult.rgb(rounded, rounded1, rounded2);
     return rgbResult.hex();
   }
-};
+}

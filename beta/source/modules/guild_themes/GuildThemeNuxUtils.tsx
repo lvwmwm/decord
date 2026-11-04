@@ -1,14 +1,14 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 18221
+// Function ID: 18222
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1246, 5233, 4836, 2]
+// Dependencies: [5, 1231, 5249, 4844, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 17627 (GuildThemeNuxUtils)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4836 */;
-import flow_Client from "flow/Client" /* 5233 */;
+// Module 18221 (GuildThemeNuxUtils)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4844 */;
+import flow_Client from "flow/Client" /* 5249 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -29,7 +29,7 @@ let obj = function _saveGuildThemeNuxPreference() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _saveGuildThemeNuxPreference() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         c5 = 3;
@@ -94,16 +94,16 @@ let obj = function _saveGuildThemeNuxPreference() {
 };
 const result = size.fileFinishedImporting("modules/guild_themes/GuildThemeNuxUtils.tsx");
 
-export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNuxSelection() {
+export function getInitialGuildThemeNuxSelection() {
   let GUILD;
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === flow_Client.GuildThemeSourcePreference.PERSONAL) {
-    GUILD = tmp2(5233).GuildThemeSourcePreference.PERSONAL;
+    GUILD = tmp2(5249).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(5233).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(5249).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
-};
-export const saveGuildThemeNuxPreference = function saveGuildThemeNuxPreference() {
+}
+export function saveGuildThemeNuxPreference() {
   return obj(...arguments);
-};
+}

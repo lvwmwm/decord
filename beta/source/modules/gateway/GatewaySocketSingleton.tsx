@@ -1,21 +1,21 @@
-// Module ID: 14980
-// Function ID: 14981
+// Module ID: 15525
+// Function ID: 15526
 // Name: GatewaySocketSingleton
-// Dependencies: [14981, 502, 3, 14982, 15019, 15022, 6833, 1267, 10132, 1384, 4817, 1483, 584, 2]
+// Dependencies: [15526, 502, 3, 15527, 15564, 15567, 6872, 1252, 10212, 1375, 4825, 1475, 572, 2]
 
-// Module 14980 (GatewaySocketSingleton)
+// Module 15525 (GatewaySocketSingleton)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DiscordNativeDefault from "DiscordNative" /* 4817 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6833 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10132 */;
-import GatewaySocketDefault from "GatewaySocket" /* 14982 */;
-import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 15019 */;
-import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 15022 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14981 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DiscordNativeDefault from "DiscordNative" /* 4825 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6872 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10212 */;
+import GatewaySocketDefault from "GatewaySocket" /* 15527 */;
+import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 15564 */;
+import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 15567 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15526 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import NetworkUtils_mod from "NetworkUtils" /* 1483 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import NetworkUtils_mod from "NetworkUtils" /* 1475 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = new LoggerDefault("ConnectionStore");
@@ -44,7 +44,7 @@ socket.handleIdentify = () => {
       id = MultiAccountSwitchStore.getTargetUserId();
     }
     obj4 = { client_app_state: state, is_fast_connect: false, gateway_connect_reasons: obj5.describeConnectionReasons() };
-    const tmp12Result = tmp12(1267);
+    const tmp12Result = tmp12(1252);
     const merged = Object.assign(tmp12Result.getSuperProperties());
     obj5 = RequestGatewaySocketAll;
     if (null != installationForTracking) {

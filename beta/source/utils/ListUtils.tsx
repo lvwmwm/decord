@@ -1,16 +1,16 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12802
+// Function ID: 12803
 // Name: ListUtils
-// Dependencies: [1128, 2]
+// Dependencies: [1113, 2]
 // Exports: getListSummaryLabel
 
-// Module 12553 (ListUtils)
-import intl5 from "intl" /* 1128 */;
+// Module 12802 (ListUtils)
+import intl5 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/ListUtils.tsx");
 
-export const getListSummaryLabel = function getListSummaryLabel(names, length) {
+export function getListSummaryLabel(names, length) {
   if (length == null) {
     length = names.length;
   }
@@ -40,4 +40,4 @@ export const getListSummaryLabel = function getListSummaryLabel(names, length) {
     str = formatToPlainStringResult;
   }
   return str;
-};
+}

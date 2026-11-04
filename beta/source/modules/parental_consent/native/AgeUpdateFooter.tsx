@@ -1,55 +1,25 @@
-// Module ID: 19474
-// Function ID: 19475
+// Module ID: 20099
+// Function ID: 20100
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 5003, 558, 576, 1128, 2832, 7915, 6689, 5266, 2]
+// Dependencies: [19, 21, 5014, 5624, 1113, 2836, 7955, 6729, 2]
+// Exports: default
 
-// Module 19474 (AgeUpdateFooter)
+// Module 20099 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import _modDef2832 from "module_2832" /* 2832 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7915 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef2836 from "module_2836" /* 2836 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6729 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7955 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { textAlign: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeUpdateFooter() {
-  let first;
-  let tmp8;
-  let obj = react2;
-  const cResult = obj.c(3);
-  const tmp4 = closure_4();
-  const text = tmp4.text;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1128).intl;
-    let obj2 = {
-      handleAgeVerifyHook() {
-          const obj = AgeVerificationActionCreatorsDefault;
-          const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
-          return obj.showAgeVerificationGetStartedModal(obj2);
-        }
-    };
-    const formatResult = intl.format(_modDef2832.ifObbX, obj2);
-    cResult[0] = formatResult;
-    first = formatResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.text) {
-    const tmp10 = jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-muted", style: text, children: first });
-    cResult[1] = tmp4.text;
-    cResult[2] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[2];
-  }
-  return tmp8;
-}) : (function AgeUpdateFooter() {
+const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
+
+export default function AgeUpdateFooter() {
   closure_4();
   const Text = Text_Text.Text;
   const intl = intl2.intl;
@@ -60,8 +30,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeUpdateF
       return obj.showAgeVerificationGetStartedModal(obj2);
     }
   };
-  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2832.ifObbX, obj2)}</Text>;
-});
-const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
-
-export default tmp3;
+  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2836.ifObbX, obj2)}</Text>;
+};

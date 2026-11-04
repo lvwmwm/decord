@@ -1,47 +1,21 @@
-// Module ID: 17323
-// Function ID: 17324
+// Module ID: 17925
+// Function ID: 17926
 // Name: GuildSettingActivityJoining
-// Dependencies: [17309, 8364, 558, 576, 4831, 7123, 11240, 1128, 2]
+// Dependencies: [17911, 8432, 4839, 7165, 11540, 1113, 2]
 
-// Module 17323 (GuildSettingActivityJoining)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 4831 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7123 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17309 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17925 (GuildSettingActivityJoining)
+import intl2 from "intl" /* 1113 */;
+import UserSettings from "UserSettings" /* 4839 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7165 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17911 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValue() {
-  const obj = react;
-  const cResult = obj.c(3);
-  const selectedGuildId = _false().selectedGuildId;
-  const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
-  const setting = ActivityJoiningRestrictedGuilds.useSetting();
-  if (cResult[0] === selectedGuildId) {
-    let tmp2;
-    if (cResult[1] === setting) {
-      tmp2 = cResult[2];
-    }
-    return !tmp2;
-  }
-  const hasItem = setting.includes(selectedGuildId);
-  cResult[0] = selectedGuildId;
-  cResult[1] = setting;
-  cResult[2] = hasItem;
-  tmp2 = hasItem;
-}) : (function useValue() {
-  const selectedGuildId = _false().selectedGuildId;
-  const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
-  const setting = ActivityJoiningRestrictedGuilds.useSetting();
-  return !setting.includes(selectedGuildId);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -52,7 +26,12 @@ let obj = {
     return intl.string(intl2.t["b+bVSw"]);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: tmp3,
+  useValue() {
+    const selectedGuildId = _false().selectedGuildId;
+    const ActivityJoiningRestrictedGuilds = UserSettings.ActivityJoiningRestrictedGuilds;
+    const setting = ActivityJoiningRestrictedGuilds.useSetting();
+    return !setting.includes(selectedGuildId);
+  },
   onValueChange(arg0) {
     const tmp = React2();
     const obj = UserSettingsUtils;

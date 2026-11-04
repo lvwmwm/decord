@@ -1,16 +1,16 @@
-// Module ID: 9670
-// Function ID: 9671
+// Module ID: 9750
+// Function ID: 9751
 // Name: convertor
-// Dependencies: [1099, 2]
+// Dependencies: [1084, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 9670 (convertor)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+// Module 9750 (convertor)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/oauth2/convertor.tsx");
 
-export const convertOAuth2Authorization = function convertOAuth2Authorization(guilds) {
+export function convertOAuth2Authorization(guilds) {
   let tmp = guilds;
   if (null != guilds.guilds) {
     let obj = {
@@ -27,4 +27,4 @@ export const convertOAuth2Authorization = function convertOAuth2Authorization(gu
     tmp = obj;
   }
   return tmp;
-};
+}

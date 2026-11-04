@@ -1,15 +1,14 @@
-// Module ID: 10669
-// Function ID: 10670
+// Module ID: 10748
+// Function ID: 10749
 // Name: useUserVoiceActivity
-// Dependencies: [4855, 4935, 5662, 1098, 558, 576, 504, 2]
-// Exports: canViewUserVoiceChannel, getUserVoiceState
+// Dependencies: [4863, 4946, 5679, 1083, 504, 2]
+// Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 10669 (useUserVoiceActivity)
-import Constants from "Constants" /* 1098 */;
-import ChannelStore_mod from "ChannelStore" /* 4855 */;
-import PermissionStore_mod from "PermissionStore" /* 4935 */;
-import VoiceStateStore_mod from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10748 (useUserVoiceActivity)
+import Constants from "Constants" /* 1083 */;
+import ChannelStore_mod from "ChannelStore" /* 4863 */;
+import PermissionStore_mod from "PermissionStore" /* 4946 */;
+import VoiceStateStore_mod from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 function getVisibleUserVoiceActivity(arg0, arg1) {
@@ -93,8 +92,23 @@ let PermissionStore = PermissionStore_mod;
 let VoiceStateStore = VoiceStateStore_mod;
 const Permissions = Constants.Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "Reflect" });
-function getUserVoiceState(arg0) {
+let closure_7 = Object.freeze({ voiceState: "flexDirection", voiceChannel: "createStyles" });
+const result = size.fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
+
+export default function useUserVoiceActivity(userId) {
+  userId = userId.userId;
+  const guildId = userId.guildId;
+  const includeNonDiscoverable = userId.includeNonDiscoverable;
+  let obj = userId(guildId[4]);
+  const items = [includeNonDiscoverable, PermissionStore, VoiceStateStore];
+  const items1 = [guildId, userId, includeNonDiscoverable];
+  return obj.useStateFromStoresObject(items, () => {
+    const obj = { userId, guildId, includeNonDiscoverable };
+    const obj2 = { ChannelStore, PermissionStore, VoiceStateStore };
+    return getVisibleUserVoiceActivity(obj, obj2);
+  }, items1);
+};
+export function getUserVoiceState(arg0) {
   let guildId;
   let includeNonDiscoverable;
   let tmp2;
@@ -131,66 +145,7 @@ function getUserVoiceState(arg0) {
     tmp2 = voiceStateForUser;
   }
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserVoiceActivity(userId) {
-  let first;
-  let guildId;
-  let obj = userId(guildId[5]);
-  const cResult = obj.c(6);
-  const tmp = userId;
-  userId = userId.userId;
-  const tmp2 = guildId;
-  guildId = userId.guildId;
-  const includeNonDiscoverable = userId.includeNonDiscoverable;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [includeNonDiscoverable, PermissionStore, VoiceStateStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === guildId) {
-    if (cResult[2] === includeNonDiscoverable) {
-      let tmp8;
-      let tmp9;
-      if (cResult[3] === userId) {
-        tmp8 = cResult[4];
-        tmp9 = cResult[5];
-      }
-      const tmpResult = tmp(tmp2[6]);
-      return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-    }
-  }
-  const fn = function l() {
-    const obj = { userId, guildId, includeNonDiscoverable };
-    const obj2 = { ChannelStore, PermissionStore, VoiceStateStore };
-    return getVisibleUserVoiceActivity(obj, obj2);
-  };
-  const items1 = [guildId, userId, includeNonDiscoverable];
-  cResult[1] = guildId;
-  cResult[2] = includeNonDiscoverable;
-  cResult[3] = userId;
-  cResult[4] = fn;
-  cResult[5] = items1;
-  tmp9 = items1;
-  tmp8 = fn;
-}) : (function useUserVoiceActivity(userId) {
-  userId = userId.userId;
-  const guildId = userId.guildId;
-  const includeNonDiscoverable = userId.includeNonDiscoverable;
-  let obj = userId(guildId[6]);
-  const items = [includeNonDiscoverable, PermissionStore, VoiceStateStore];
-  const items1 = [guildId, userId, includeNonDiscoverable];
-  return obj.useStateFromStoresObject(items, () => {
-    const obj = { userId, guildId, includeNonDiscoverable };
-    const obj2 = { ChannelStore, PermissionStore, VoiceStateStore };
-    return getVisibleUserVoiceActivity(obj, obj2);
-  }, items1);
-});
-const result = size.fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
-
-export default tmp5;
-export { getUserVoiceState };
-export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
+export function canViewUserVoiceChannel(arg0) {
   let guildId;
   let includeNonDiscoverable;
   let tmp4;
@@ -258,5 +213,5 @@ export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
     }
     tmp4 = voiceStateForUser;
   }
-};
+}
 export { getVisibleUserVoiceActivity };

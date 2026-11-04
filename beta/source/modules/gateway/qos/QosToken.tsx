@@ -1,13 +1,13 @@
 // Module ID: 500
 // Function ID: 501
 // Name: QosToken
-// Dependencies: [501, 3, 15477, 1249, 2]
+// Dependencies: [501, 3, 16026, 1234, 2]
 // Exports: buildQosToken
 
 // Module 500 (QosToken)
 import LoggerDefault from "Logger" /* 3 */;
-import ProtoUtils from "ProtoUtils" /* 1249 */;
-import qos_token from "qos_token" /* 15477 */;
+import ProtoUtils from "ProtoUtils" /* 1234 */;
+import qos_token from "qos_token" /* 16026 */;
 import DerivedQosDataStore from "DerivedQosDataStore" /* 501 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ function buildQosTokenFromDerivedData(derivedQosData, isActive) {
   if (null != derivedQosData) {
     try {
       const tmp2Result = ProtoUtils;
-      derived = tmp2Result.b64ToProto(tmp2(15477).DerivedQosData, derivedQosData);
+      derived = tmp2Result.b64ToProto(tmp2(16026).DerivedQosData, derivedQosData);
     } catch (tmp5) {
       const _HermesInternal = HermesInternal;
       logger.warn("Failed to decode derived QOS data: " + tmp5);
@@ -33,6 +33,6 @@ const logger = tmp2;
 const result = size.fileFinishedImporting("modules/gateway/qos/QosToken.tsx");
 
 export { buildQosTokenFromDerivedData };
-export const buildQosToken = function buildQosToken(userId, isUserActive) {
+export function buildQosToken(userId, isUserActive) {
   return buildQosTokenFromDerivedData(DerivedQosDataStore.getForUser(userId), isUserActive);
-};
+}

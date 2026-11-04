@@ -1,97 +1,24 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 11909
+// Function ID: 11910
 // Name: useIsVoiceChannelFull
-// Dependencies: [4877, 4935, 5662, 1098, 558, 576, 504, 6026, 2]
+// Dependencies: [4885, 4946, 5679, 1083, 504, 6046, 2]
+// Exports: default, useIsVoiceChannelLocked
 
-// Module 11593 (useIsVoiceChannelFull)
-import Constants from "Constants" /* 1098 */;
-import ChannelUtils from "ChannelUtils" /* 6026 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import VoiceStateStore from "VoiceStateStore" /* 5662 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 11909 (useIsVoiceChannelFull)
+import Constants from "Constants" /* 1083 */;
+import ChannelUtils from "ChannelUtils" /* 6046 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import VoiceStateStore from "VoiceStateStore" /* 5679 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChannelLocked(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function t() {
-      const tmp2 = null == closure_0 || !PermissionStore.can(Permissions.CONNECT, tmp);
-      return tmp2;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useIsVoiceChannelLocked(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [PermissionStore];
-  const items1 = [arg0];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const tmp2 = null == closure_0 || !PermissionStore.can(Permissions.CONNECT, tmp);
-    return tmp2;
-  }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChannelFull(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [VoiceStateStore, GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function t() {
-      const obj = ChannelUtils;
-      return obj.isChannelFull(closure_0, VoiceStateStore, GuildStore);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useIsVoiceChannelFull(arg0) {
+const result = size.fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
+
+export default function useIsVoiceChannelFull(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -100,8 +27,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoice
     const obj = ChannelUtils;
     return obj.isChannelFull(closure_0, VoiceStateStore, GuildStore);
   });
-});
-const result = size.fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
-
-export default tmp3;
-export const useIsVoiceChannelLocked = tmp2;
+};
+export function useIsVoiceChannelLocked(channel) {
+  _require = channel;
+  const items = [PermissionStore];
+  const items1 = [channel];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const tmp2 = null == channel || !PermissionStore.can(Permissions.CONNECT, tmp);
+    return tmp2;
+  }, items1);
+}

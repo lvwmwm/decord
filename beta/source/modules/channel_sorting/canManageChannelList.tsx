@@ -1,13 +1,13 @@
-// Module ID: 13892
-// Function ID: 13893
+// Module ID: 14410
+// Function ID: 14411
 // Name: canManageChannelList
-// Dependencies: [4855, 4935, 1087, 2]
+// Dependencies: [4863, 4946, 1072, 2]
 // Exports: canViewChannelList, default, getContainingCategory
 
-// Module 13892 (canManageChannelList)
-import Constants from "Constants" /* 1087 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
+// Module 14410 (canManageChannelList)
+import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
@@ -22,7 +22,7 @@ export default function canManageChannelList(arg0, arg1) {
   }
   return can(MANAGE_CHANNELS, tmp);
 };
-export const getContainingCategory = function getContainingCategory(parent_id) {
+export function getContainingCategory(parent_id) {
   if (null == parent_id.parent_id) {
     return null;
   } else {
@@ -36,8 +36,8 @@ export const getContainingCategory = function getContainingCategory(parent_id) {
     }
     return tmp2;
   }
-};
-export const canViewChannelList = function canViewChannelList(channel) {
+}
+export function canViewChannelList(channel) {
   const canResult = null == channel || PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
   return canResult;
-};
+}

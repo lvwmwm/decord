@@ -1,27 +1,27 @@
-// Module ID: 18822
-// Function ID: 18823
+// Module ID: 19443
+// Function ID: 19444
 // Name: protocol
-// Dependencies: [11531, 2]
-// Exports: generateNonce, isShimWindowMessage, readNonce
+// Dependencies: [19444, 2]
+// Exports: generateNonce, isSameChildState, isShimWindowMessage, mergeChildStates, readNonce
 
-// Module 18822 (protocol)
-import Safe from "Safe" /* 11531 */;
+// Module 19443 (protocol)
+import Safe2 from "Safe" /* 19444 */;
 import size from "module_2" /* 2 */;
 
 const discordEmbeddedAppShim = "discordEmbeddedAppShim";
 const result = size.fileFinishedImporting("../discord_common/js/packages/embedded-app-shims/src/shared/protocol.tsx");
 
 export const SHIM_MESSAGE_KEY = "discordEmbeddedAppShim";
-export const isShimWindowMessage = function isShimWindowMessage(obj) {
+export function isShimWindowMessage(obj) {
   let tmp = null != obj && typeof obj === "object";
   if (tmp) {
-    const _Object = Safe.Safe.Object;
+    const _Object = Safe2.Safe.Object;
     tmp = null != _Object.getOwnPropertyDescriptor(obj, discordEmbeddedAppShim);
   }
   return tmp;
-};
-export const readNonce = function readNonce(arg0) {
-  const _Object = Safe.Safe.Object;
+}
+export function readNonce(arg0) {
+  const _Object = Safe2.Safe.Object;
   const iter = _Object.getOwnPropertyDescriptor(arg0, "nonce");
   let value;
   if (iter != null) {
@@ -32,13 +32,29 @@ export const readNonce = function readNonce(arg0) {
     tmp2 = value;
   }
   return tmp2;
-};
-export const generateNonce = function generateNonce() {
-  const uint32Array = new Safe.Safe.Constructor.Uint32Array(2);
-  const Crypto = Safe.Safe.Crypto;
+}
+export function generateNonce() {
+  const uint32Array = new Safe2.Safe.Constructor.Uint32Array(2);
+  const Crypto = Safe2.Safe.Crypto;
   const randomValues = Crypto.getRandomValues(uint32Array);
   return "" + uint32Array[0] + "-" + uint32Array[1];
-};
+}
 export const SILENT_CHILD_STATE = { audible: false };
-export const ParentToChildEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED" };
-export const ChildToParentEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", DISCONNECTED: 1, [1]: "DISCONNECTED", CONNECTION_ACCEPTED: 2, [2]: "CONNECTION_ACCEPTED" };
+export function mergeChildStates(arg0) {
+  let ArrayResult;
+  const obj = { audible: ArrayResult.some((audible) => audible.audible) };
+  const Safe = Safe2.Safe;
+  ArrayResult = Safe.Array(arg0);
+  return obj;
+}
+export function isSameChildState(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const Safe = Safe2.Safe;
+  const _Array = Safe.Array;
+  const _Object = Safe2.Safe.Object;
+  const _ArrayResult = _Array(_Object.keys(arg0));
+  return _ArrayResult.every((item) => closure_0[item] === closure_1[item]);
+}
+export const ParentToChildEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", KEYBINDS_UPDATED: 1, [1]: "KEYBINDS_UPDATED" };
+export const ChildToParentEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", DISCONNECTED: 1, [1]: "DISCONNECTED", CONNECTION_ACCEPTED: 2, [2]: "CONNECTION_ACCEPTED", KEYBIND_CAPTURED: 3, [3]: "KEYBIND_CAPTURED" };

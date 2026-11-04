@@ -1,82 +1,135 @@
 // Module ID: 1813
 // Function ID: 1814
-// Dependencies: [1803, 1805]
-// Exports: useAnimatedScrollHandler
+// Dependencies: [19, 1653, 1802, 1654, 1797]
 
 // Module 1813
-import _mod1803 from "module_1803" /* 1803 */;
+import react from "react" /* 19 */;
+import module_1653 from "module_1653" /* 1653 */;
 
-let tmp2;
-const react = tmp2(1805);
-const __initData = { code: "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}" };
+const require = globalThis.__r;
+let _require, closure_0, closure_2, workletEventHandler;
 
-export const useAnimatedScrollHandler = function useAnimatedScrollHandler(fn, items) {
-  let tmp = fn;
-  if (typeof fn === "function") {
-    let obj2 = { onScroll: fn };
-    tmp = obj2;
+let c2;
+let c3;
+let closure_4;
+function getWebScrollableElement(getScrollableNode) {
+  let scrollableNode;
+  if (getScrollableNode != null) {
+    scrollableNode = getScrollableNode.getScrollableNode();
   }
-  obj2 = tmp;
-  const obj = _mod1803;
-  const handler = obj.useHandler(tmp, items);
-  const context = handler.context;
-  items = ["onScroll"];
-  const doDependenciesDiffer = handler.doDependenciesDiffer;
-  if (undefined !== tmp.onBeginDrag) {
-    items.push("onScrollBeginDrag");
+  if (scrollableNode == null) {
+    scrollableNode = getScrollableNode;
   }
-  if (undefined !== tmp.onEndDrag) {
-    items.push("onScrollEndDrag");
+  return scrollableNode;
+}
+({ useCallback: c2, useEffect: c3, useRef: closure_4 } = react);
+let c5 = "animatedRef is not initialized in useScrollViewOffset. Make sure to pass the animated ref to the scrollable component to get scroll offset updates.";
+const __initData = { code: "function pnpm_useScrollViewOffsetTs1(){const{animatedRef,getWebScrollableElement,offset}=this.__closure;if(animatedRef){const element=getWebScrollableElement(animatedRef.current);offset.value=element.scrollLeft===0?element.scrollTop:element.scrollLeft;}}" };
+const __initData2 = { code: "function pnpm_useScrollViewOffsetTs2(event){const{offset}=this.__closure;offset.value=event.contentOffset.x===0?event.contentOffset.y:event.contentOffset.x;}" };
+let closure_9 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
+
+export const useScrollViewOffset = module_1653.isWeb() ? (function useScrollViewOffsetWeb(animatedRef, arg1) {
+  let current;
+  _require = animatedRef;
+  let sharedValue = arg1;
+  const obj = require("module_1802");
+  const tmp2 = closure_4;
+  if (arg1 == null) {
+    sharedValue = obj.useSharedValue(0);
   }
-  if (undefined !== tmp.onMomentumBegin) {
-    items.push("onMomentumScrollBegin");
-  }
-  if (undefined !== tmp.onMomentumEnd) {
-    items.push("onMomentumScrollEnd");
-  }
-  fn = function l(eventName) {
-    let onBeginDrag;
-    let onEndDrag;
-    let onMomentumBegin;
-    let onMomentumEnd;
-    let onScroll;
-    ({ onScroll, onBeginDrag, onEndDrag, onMomentumBegin, onMomentumEnd } = obj2);
-    if (onScroll) {
-      eventName = eventName.eventName;
-      if (eventName.endsWith("onScroll")) {
-        onScroll(eventName, context);
+  current = tmp2(sharedValue).current;
+  const fn = function _() {
+    if (animatedRef) {
+      current = animatedRef.current;
+      let scrollableNode;
+      if (current != null) {
+        scrollableNode = current.getScrollableNode();
       }
-    }
-    if (onBeginDrag) {
-      const eventName2 = eventName.eventName;
-      if (eventName2.endsWith("onScrollBeginDrag")) {
-        onBeginDrag(eventName, context);
+      if (scrollableNode == null) {
+        scrollableNode = current;
       }
-    }
-    if (onEndDrag) {
-      const eventName3 = eventName.eventName;
-      if (eventName3.endsWith("onScrollEndDrag")) {
-        onEndDrag(eventName, context);
-      }
-    }
-    if (onMomentumBegin) {
-      const eventName4 = eventName.eventName;
-      if (eventName4.endsWith("onMomentumScrollBegin")) {
-        onMomentumBegin(eventName, context);
-      }
-    }
-    let endsWithResult = onMomentumEnd;
-    if (endsWithResult) {
-      const eventName5 = eventName.eventName;
-      endsWithResult = eventName5.endsWith("onMomentumScrollEnd");
-    }
-    if (endsWithResult) {
-      onMomentumEnd(eventName, context);
+      current.value = 0 === scrollableNode.scrollLeft ? scrollableNode.scrollTop : scrollableNode.scrollLeft;
     }
   };
-  fn.__closure = { scrollHandlers: tmp, context };
-  fn.__workletHash = 480432859268;
+  const obj2 = { animatedRef, getWebScrollableElement, offset: current };
+  fn.__closure = obj2;
+  fn.__workletHash = 2244034762234;
   fn.__initData = __initData;
-  const tmp2Result = react;
-  return tmp2Result.useEvent(fn, items, doDependenciesDiffer);
-};
+  const items = [animatedRef, current];
+  const tmp3 = closure_2(fn, items);
+  closure_2 = tmp3;
+  const items1 = [animatedRef, tmp3];
+  closure_3(() => {
+    if (animatedRef) {
+      return animatedRef.observe((arg0) => {
+        let scrollableNode;
+        const tmp = arg0;
+        if (tmp) {
+          current = scrollableNode.current;
+          scrollableNode = undefined;
+          if (current != null) {
+            scrollableNode = current.getScrollableNode();
+          }
+          if (scrollableNode == null) {
+            scrollableNode = current;
+          }
+          const listener = scrollableNode.addEventListener("scroll", closure_2);
+          return () => {
+            const removed = scrollableNode.removeEventListener("scroll", closure_2_2);
+          };
+        } else {
+          const logger = animatedRef(closure_1_1[3]).logger;
+          logger.warn(closure_1_5);
+        }
+      });
+    }
+  }, items1);
+  return current;
+}) : (function useScrollViewOffsetNative(arg0, arg1) {
+  let current;
+  _require = arg0;
+  let sharedValue = arg1;
+  const obj = require("module_1802");
+  const tmp2 = _require;
+  const tmp3 = current;
+  const tmp4 = closure_4;
+  if (arg1 == null) {
+    sharedValue = obj.useSharedValue(0);
+  }
+  current = tmp4(sharedValue).current;
+  const fn = function _(contentOffset) {
+    let x;
+    const tmp = current;
+    if (0 === contentOffset.contentOffset.x) {
+      x = contentOffset.contentOffset.y;
+    } else {
+      x = contentOffset.contentOffset.x;
+    }
+    tmp.value = x;
+  };
+  fn.__closure = { offset: current };
+  fn.__workletHash = 17316000082767;
+  fn.__initData = __initData2;
+  const tmp2Result = tmp2(tmp3[4]);
+  const event = tmp2Result.useEvent(fn, closure_9);
+  const items = [arg0, event];
+  closure_3(() => {
+    if (closure_0) {
+      return closure_0.observe((arg0) => {
+        closure_0 = arg0;
+        if (closure_0) {
+          workletEventHandler = workletEventHandler.workletEventHandler;
+          workletEventHandler.registerForEvents(arg0);
+          return () => {
+            workletEventHandler = event.workletEventHandler;
+            workletEventHandler.unregisterFromEvents(closure_0);
+          };
+        } else {
+          const logger = closure_1_0(current[3]).logger;
+          logger.warn(closure_1_5);
+        }
+      });
+    }
+  }, items);
+  return current;
+});

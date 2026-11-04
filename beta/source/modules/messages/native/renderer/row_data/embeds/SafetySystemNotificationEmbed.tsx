@@ -1,33 +1,32 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 15154
+// Function ID: 15155
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1087, 2049, 7990, 8542, 7929, 8309, 1128, 2]
+// Dependencies: [17, 1072, 8027, 8611, 7969, 8396, 15152, 15153, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 14605 (SafetySystemNotificationEmbed)
+// Module 15154 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1087 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
+import Constants from "Constants" /* 1072 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7969 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8396 */;
+import SafetyWarningAgeUtils from "SafetyWarningAgeUtils" /* 15152 */;
+import SafetyWarningAgeTextExperiment from "SafetyWarningAgeTextExperiment" /* 15153 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetySystemNotificationEmbed.tsx");
 
-export const createSafetySystemNotificationEmbed = function createSafetySystemNotificationEmbed(message) {
-  let diff;
-  let eevFb6;
-  let formatToPlainString;
+export function createSafetySystemNotificationEmbed(message) {
+  let daysAgo;
+  let formatSafetyWarningAge;
   let key;
   let key1;
-  let obj3;
   let str4;
   let text;
   let text1;
-  let tmp14Result;
-  let tmp6Result4;
+  let tmp6Result10;
+  let tmp6Result7;
   let type1;
   let type2;
   if (null != message) {
@@ -57,8 +56,8 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
               }
               let mapCtaToNativeDataResult1;
               if (null != parseMessageForPropsResult.ctas[1]) {
-                const tmp6Result3 = SafetyHubUtils;
-                mapCtaToNativeDataResult1 = tmp6Result3.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
+                const tmp6Result6 = SafetyHubUtils;
+                mapCtaToNativeDataResult1 = tmp6Result6.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
               }
               tmp9 = mapCtaToNativeDataResult1;
               tmp10 = mapCtaToNativeDataResult;
@@ -67,20 +66,19 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7990 : 8542))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
-            tmp6Result4 = renderer_EmbedUtils;
-            const intl = tmp6(1128).intl;
-            formatToPlainString = intl.formatToPlainString;
+            const obj2 = { titleText: str, titleIcon: tmp6Result7.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 8027 : 8611))), subtitleText: formatSafetyWarningAge(daysAgo, tmp6Result10.getIsSafetyWarningAgeTextEnabled("safety_warning_system_message")), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            tmp6Result7 = renderer_EmbedUtils;
+            formatSafetyWarningAge = SafetyWarningAgeUtils.formatSafetyWarningAge;
+            SafetyWarningAgeUtils;
             let num = parseMessageForPropsResult.timestamp;
-            eevFb6 = tmp6(1128).t.eevFb6;
+            const getDaysAgo = SafetyWarningAgeUtils.getDaysAgo;
+            SafetyWarningAgeUtils;
             if (num == null) {
               num = 0;
             }
-            obj3 = { daysAgo: diff(tmp14Result.unix(num), "days") };
-            diff = _modDef2049().diff;
-            _modDef2049();
+            daysAgo = getDaysAgo(num);
             str4 = parseMessageForPropsResult.body;
-            tmp14Result = _modDef2049;
+            tmp6Result10 = SafetyWarningAgeTextExperiment;
             if (str4 == null) {
               str4 = "";
             }
@@ -114,4 +112,4 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
       }
     }
   }
-};
+}

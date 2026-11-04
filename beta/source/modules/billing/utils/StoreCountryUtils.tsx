@@ -1,15 +1,15 @@
-// Module ID: 1416
-// Function ID: 1417
+// Module ID: 1408
+// Function ID: 1409
 // Name: StoreCountryUtils
 // Dependencies: [2]
 // Exports: parseStoreCountry
 
-// Module 1416 (StoreCountryUtils)
+// Module 1408 (StoreCountryUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/billing/utils/StoreCountryUtils.tsx");
 
-export const parseStoreCountry = function parseStoreCountry(storeCountry) {
+export function parseStoreCountry(storeCountry) {
   let flag;
   let set_at;
   let tmp = storeCountry;
@@ -32,4 +32,4 @@ export const parseStoreCountry = function parseStoreCountry(storeCountry) {
     tmp = obj;
   }
   return tmp;
-};
+}

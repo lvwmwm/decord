@@ -1,11 +1,11 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 12021
+// Function ID: 12022
 // Name: RTCConnectionUtils
-// Dependencies: [1087, 1128, 2]
+// Dependencies: [1072, 1113, 2]
 
-// Module 11726 (RTCConnectionUtils)
-import intl11 from "intl" /* 1128 */;
-import Constants from "Constants" /* 1087 */;
+// Module 12021 (RTCConnectionUtils)
+import intl11 from "intl" /* 1113 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;

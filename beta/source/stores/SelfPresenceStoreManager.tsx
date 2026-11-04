@@ -1,12 +1,12 @@
-// Module ID: 18982
-// Function ID: 18983
+// Module ID: 19615
+// Function ID: 19616
 // Name: SelfPresenceStoreManager
-// Dependencies: [6530, 7246, 584, 2]
+// Dependencies: [6570, 7287, 572, 2]
 
-// Module 18982 (SelfPresenceStoreManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6530 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+// Module 19615 (SelfPresenceStoreManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let map;

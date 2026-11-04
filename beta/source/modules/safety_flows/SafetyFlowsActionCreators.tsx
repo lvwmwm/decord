@@ -1,13 +1,13 @@
-// Module ID: 19459
-// Function ID: 19460
+// Module ID: 20083
+// Function ID: 20084
 // Name: SafetyFlowsActionCreators
-// Dependencies: [5, 1087, 6708, 1275, 6407, 2]
+// Dependencies: [5, 1072, 6747, 1260, 6447, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 19459 (SafetyFlowsActionCreators)
-import Constants from "Constants" /* 1087 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
+// Module 20083 (SafetyFlowsActionCreators)
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6747 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ obj = function _resendVerificationCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -126,12 +126,12 @@ obj = function _resendVerificationCode() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 
-export const getCurrentTask = function getCurrentTask() {
+export function getCurrentTask() {
   return obj(...arguments);
-};
-export const completeTask = function completeTask() {
+}
+export function completeTask() {
   return obj(...arguments);
-};
-export const resendVerificationCode = function resendVerificationCode() {
+}
+export function resendVerificationCode() {
   return obj(...arguments);
-};
+}

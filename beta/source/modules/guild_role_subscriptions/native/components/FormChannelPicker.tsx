@@ -1,91 +1,58 @@
-// Module ID: 19338
-// Function ID: 19339
+// Module ID: 19972
+// Function ID: 19973
 // Name: FormChannelPicker
-// Dependencies: [19, 4855, 21, 5003, 15179, 504, 5636, 9073, 5242, 19339, 2002, 8534, 8583, 5266, 1128, 7337, 2]
+// Dependencies: [19, 4863, 21, 504, 5652, 17233, 8652, 6975, 5624, 1113, 5258, 19973, 1994, 2]
 // Exports: default
 
-// Module 19338 (FormChannelPicker)
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+// Module 19972 (FormChannelPicker)
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5003 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import useChannelNameDefault from "useChannelName" /* 5652 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
-let closure_4;
-let hasOwnProperty;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = createStyles.createStyles({ container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 } });
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormChannelPicker.tsx");
 
 export default function FormChannelPicker(channelId) {
   let guildId;
-  let items2;
-  let items3;
-  let onChange;
-  let str;
+  let intl;
+  let onChannelSelected;
   channelId = channelId.channelId;
-  ({ guildId: importDefault, onChange } = channelId);
+  ({ guildId: importDefault, onChange: dependencyMap } = channelId);
   let stateFromStores;
-  onChange = undefined;
-  let tmp2 = stateFromStores;
-  const tmp = importDefault;
-  const tmp3 = require("FormStyles")();
-  const tmp4 = closure_6();
-  let obj = channelId(stateFromStores[5]);
-  const items = [onChange];
+  const tmp = channelId;
+  let tmp2 = dependencyMap;
+  let obj = channelId(504);
+  const items = [stateFromStores];
   const items1 = [channelId];
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  let stringResult = require("useChannelName")(stateFromStores);
-  if (onChange == null) {
-    onChange = () => {
-
-    };
-  }
-  const obj2 = {
-    style: items2,
-    accessibilityRole: "link",
-    onPress: function handleSelectChannel() {
-      let id;
-      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: onChange };
-      id = undefined;
-      ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequire(19339, dependencyMap.paths);
-      if (stateFromStores != null) {
-        id = stateFromStores.id;
-      }
-      openLazy(tmp2, "ChannelSelectorActionSheet", obj);
-    },
-    children: items3
-  };
-  items2 = [tmp4.container, tmp3.textInput];
-  let tmp10 = null;
-  const tmp8 = closure_5;
-  const tmpResult = tmp(tmp2[7]);
+  let tmp5Result = useChannelNameDefault(stateFromStores);
   if (null != stateFromStores) {
-    const tmp5Result = channelId(tmp2[11]);
-    let TextIcon = tmp5Result.getChannelIconComponent(stateFromStores);
-    if (TextIcon == null) {
-      TextIcon = tmp5(tmp2[12]).TextIcon;
+    const tmpResult = tmp(17233);
+    let TextIcon = tmpResult.getChannelIconComponentOrDefault(stateFromStores);
+  } else {
+    TextIcon = tmp(8652).TextIcon;
+  }
+  const TableRow = tmp(6975).TableRow;
+  if (tmp5Result == null) {
+    const obj3 = { variant: "text-md/medium", color: "text-muted", children: intl.string(tmp(1113).t.r2ptsz) };
+    const Text = tmp(5624).Text;
+    intl = tmp(1113).intl;
+    tmp5Result = tmp5(Text, obj3);
+  }
+  return <TableRow icon={null} label={tmp5Result} arrow onPress={function handleSelectChannel() {
+    let id;
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: dependencyMap };
+    id = undefined;
+    ActionSheetActionCreatorsDefault;
+    const tmp2 = asyncRequire(19973, dependencyMap.paths);
+    if (stateFromStores != null) {
+      id = stateFromStores.id;
     }
-    tmp10 = closure_4(TextIcon, { size: "sm" });
-  }
-  items3 = [tmp10, , ];
-  const obj3 = { style: tmp4.content, variant: "text-md/medium", color: str, children: stringResult };
-  str = "text-muted";
-  const Text = tmp5(tmp2[13]).Text;
-  if (null != channelId) {
-    str = "text-default";
-  }
-  if (stringResult == null) {
-    const intl = tmp5(tmp2[14]).intl;
-    stringResult = intl.string(tmp5(tmp2[14]).t.r2ptsz);
-  }
-  items3[1] = closure_4(Text, obj3);
-  items3[2] = closure_4(channelId(tmp2[15]).ChevronSmallRightIcon, { size: "md" });
-  return tmp8(tmpResult, obj2);
+    openLazy(tmp2, "ChannelSelectorActionSheet", obj);
+  }} />;
 };

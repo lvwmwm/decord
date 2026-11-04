@@ -1,14 +1,14 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7663
+// Function ID: 7664
 // Name: isReadableChannel
-// Dependencies: [4859, 4855, 4935, 1087, 2]
+// Dependencies: [4867, 4863, 4946, 1072, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 7625 (isReadableChannel)
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import Constants from "Constants" /* 1087 */;
+// Module 7663 (isReadableChannel)
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let BasicPermissions;
@@ -18,7 +18,7 @@ const isTextChannel = ChannelRecord.isTextChannel;
 let closure_4 = BasicPermissions.VIEW_CHANNEL | BasicPermissions.READ_MESSAGE_HISTORY;
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
 
-export const isReadableChannel = function isReadableChannel(basicChannel) {
+export function isReadableChannel(basicChannel) {
   let tmp = null != basicChannel;
   if (tmp) {
     let tmp3 = basicChannel.type === constants.DM || basicChannel.type === tmp2.GROUP_DM;
@@ -29,8 +29,8 @@ export const isReadableChannel = function isReadableChannel(basicChannel) {
     tmp = tmp3;
   }
   return tmp;
-};
-export const isReadableChannelId = function isReadableChannelId(channelId) {
+}
+export function isReadableChannelId(channelId) {
   let tmp = null != channelId;
   if (tmp) {
     const basicChannel = ChannelStore.getBasicChannel(channelId);
@@ -46,4 +46,4 @@ export const isReadableChannelId = function isReadableChannelId(channelId) {
     tmp = tmp4;
   }
   return tmp;
-};
+}

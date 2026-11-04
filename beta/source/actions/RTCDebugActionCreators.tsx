@@ -1,42 +1,42 @@
-// Module ID: 5770
-// Function ID: 5771
+// Module ID: 5788
+// Function ID: 5789
 // Name: RTCDebugActionCreators
-// Dependencies: [584, 4817, 2]
+// Dependencies: [572, 4825, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setSimulcastDebugOverride
 
-// Module 5770 (RTCDebugActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DiscordNativeDefault from "DiscordNative" /* 4817 */;
+// Module 5788 (RTCDebugActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DiscordNativeDefault from "DiscordNative" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/RTCDebugActionCreators.tsx");
 
-export const open = function open(section) {
+export function open(section) {
   const obj = DispatcherDefault;
   const obj2 = { type: "RTC_DEBUG_MODAL_OPEN", section };
   obj.dispatch(obj2);
   const obj3 = DispatcherDefault;
   obj3.dispatch({ type: "RTC_DEBUG_POPOUT_WINDOW_OPEN" });
-};
-export const close = function close() {
+}
+export function close() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "RTC_DEBUG_MODAL_CLOSE" });
-};
-export const openReplay = function openReplay() {
+}
+export function openReplay() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "RTC_DEBUG_MODAL_OPEN_REPLAY" });
-};
-export const setSection = function setSection(section) {
+}
+export function setSection(section) {
   const obj = DispatcherDefault;
   const obj2 = { type: "RTC_DEBUG_MODAL_SET_SECTION", section };
   obj.dispatch(obj2);
-};
-export const setSimulcastDebugOverride = function setSimulcastDebugOverride(userId, context, quality) {
+}
+export function setSimulcastDebugOverride(userId, context, quality) {
   const obj = DispatcherDefault;
   const obj2 = { type: "RTC_DEBUG_SET_SIMULCAST_OVERRIDE", userId, context, quality };
   obj.dispatch(obj2);
-};
-export const chooseReplayPath = function chooseReplayPath() {
+}
+export function chooseReplayPath() {
   let items;
   const fileManager = DiscordNativeDefault.fileManager;
   let obj = { filters: items };
@@ -50,4 +50,4 @@ export const chooseReplayPath = function chooseReplayPath() {
     const obj = DispatcherDefault;
     obj.dispatch({ type: "RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH", path: str });
   });
-};
+}

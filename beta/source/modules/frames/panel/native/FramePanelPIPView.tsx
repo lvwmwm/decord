@@ -1,115 +1,42 @@
-// Module ID: 18520
-// Function ID: 18521
+// Module ID: 19157
+// Function ID: 19158
 // Name: FramePanelPIPView
-// Dependencies: [19, 6807, 6808, 18403, 21, 558, 576, 504, 18496, 11923, 11927, 18518, 2]
+// Dependencies: [19, 6846, 6847, 19000, 21, 504, 19133, 19155, 12250, 12254, 2]
 
-// Module 18520 (FramePanelPIPView)
+// Module 19157 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11923 */;
-import FrameStackLevel from "FrameStackLevel" /* 11927 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18403 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 18496 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 18518 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19000 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 19133 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19155 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FramesStore from "FramesStore" /* 6846 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
+let tmp2;
+let tmp6;
+const FrameRenderTargetDefault = tmp6(12250);
+const FrameStackLevel = tmp2(12254);
 let react = react_mod;
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire, getPipOrientationLockStateForFrame: metroImportDefault } = FramesConstants);
-const portraitSafeAreasConfig = ActivityPanelNativeConstants.DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
+let closure_8 = ActivityPanelNativeConstants.DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const jsx = Fragment.jsx;
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelPIPView(arg0) {
-  let mainFrame;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let transitionCleanUp;
-  let transitionState;
-  const obj = react2;
-  const cResult = obj.c(13);
-  ({ transitionState, transitionCleanUp } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    const fn = function u() {
-      return closure_1_5(mainFrame.getMainFrame());
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const tmp10 = metroImportDefault(stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[3];
-  }
-  const tmpResult2 = ActivityPanelPIPView;
-  const landscapeSafeAreasConfig = tmpResult2.useBaseActivityPanelPIPView().landscapeSafeAreasConfig;
-  if (cResult[4] === landscapeSafeAreasConfig) {
-    let tmp12;
-    if (cResult[5] === stateFromStores) {
-      tmp12 = cResult[6];
-    }
-    if (cResult[7] === tmp8) {
-      if (cResult[8] === null != stateFromStores) {
-        if (cResult[9] === tmp12) {
-          if (cResult[10] === transitionCleanUp) {
-            let tmp19;
-            if (cResult[11] === transitionState) {
-              tmp19 = cResult[12];
-            }
-            return tmp19;
-          }
-        }
-      }
-    }
-    const BaseActivityPanelPIPView = tmp(18496).BaseActivityPanelPIPView;
-    const tmp22 = <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={tmp8} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmp12}</BaseActivityPanelPIPView>;
-    cResult[7] = tmp8;
-    cResult[8] = null != stateFromStores;
-    cResult[9] = tmp12;
-    cResult[10] = transitionCleanUp;
-    cResult[11] = transitionState;
-    cResult[12] = tmp22;
-    tmp19 = tmp22;
-  }
-  let tmp13 = null;
-  if (null != stateFromStores) {
-    FrameRenderTargetDefault;
-    const obj4 = { layoutMode: metroRequire.PIP, portraitSafeAreasConfig, landscapeSafeAreasConfig };
-    tmp13 = <tmp16 frameId={stateFromStores.id} level={FrameStackLevel.FrameStackLevel.AboveAppContent} presentation={obj4} />;
-  }
-  cResult[4] = landscapeSafeAreasConfig;
-  cResult[5] = stateFromStores;
-  cResult[6] = tmp13;
-  tmp12 = tmp13;
-}) : (function FramePanelPIPView(transitionState) {
+const memoResult = react.memo(function FramePanelPIPView(transitionState) {
   let pipOrientationLockState;
+  let portraitSafeAreasConfig;
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
   let stateFromStores;
   let landscapeSafeAreasConfig;
   const items = [landscapeSafeAreasConfig];
-  const obj = transitionState(stateFromStores[7]);
+  const obj = transitionState(stateFromStores[5]);
   stateFromStores = obj.useStateFromStores(items, () => closure_1_5(landscapeSafeAreasConfig.getMainFrame()));
   let tmp2 = closure_7(stateFromStores);
   react = tmp2;
-  let obj2 = transitionState(stateFromStores[8]);
+  let obj2 = transitionState(stateFromStores[6]);
   landscapeSafeAreasConfig = obj2.useBaseActivityPanelPIPView().landscapeSafeAreasConfig;
   const items1 = [stateFromStores, landscapeSafeAreasConfig, tmp2, transitionCleanUp, transitionState];
   return react.useMemo(() => {
@@ -125,7 +52,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={pipOrientationLockState} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmpResult}</BaseActivityPanelPIPView>;
   }, items1);
-}));
+});
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelPIPView.tsx");
 
 export default memoResult;

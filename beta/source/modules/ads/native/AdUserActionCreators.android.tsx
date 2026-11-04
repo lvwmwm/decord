@@ -1,16 +1,16 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7875
+// Function ID: 7876
 // Name: AdUserActionCreators
-// Dependencies: [5, 7835, 1087, 1267, 584, 7838, 2]
+// Dependencies: [5, 7873, 1072, 1252, 572, 7876, 2]
 // Exports: fetchAdUser
 
-// Module 7837 (AdUserActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import react_nativeDefault from "react-native" /* 7838 */;
+// Module 7875 (AdUserActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import react_nativeDefault from "react-native" /* 7876 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdUserStore from "AdUserStore" /* 7835 */;
-import Constants from "Constants" /* 1087 */;
+import AdUserStore from "AdUserStore" /* 7873 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let adUser, duration_ms, duration_ms2, googleAdvertisingId, message;
@@ -34,7 +34,7 @@ let obj = function _fetchAdUser() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -126,7 +126,7 @@ let obj = function _fetchAdUser() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp54) {
           duration_ms = tmp54;
           if (0 === c4) {
@@ -144,6 +144,6 @@ let obj = function _fetchAdUser() {
 ({ AnalyticEvents: closure_4, Platforms: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/ads/native/AdUserActionCreators.android.tsx");
 
-export const fetchAdUser = function fetchAdUser() {
+export function fetchAdUser() {
   return obj(...arguments);
-};
+}

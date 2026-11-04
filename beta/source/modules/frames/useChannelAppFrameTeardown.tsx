@@ -1,115 +1,27 @@
-// Module ID: 18093
-// Function ID: 18094
+// Module ID: 18680
+// Function ID: 18681
 // Name: useChannelAppFrameTeardown
-// Dependencies: [19, 4855, 4935, 6807, 6808, 1087, 558, 576, 504, 10798, 2]
+// Dependencies: [19, 4863, 4946, 6846, 6847, 1072, 504, 10938, 2]
+// Exports: default
 
-// Module 18093 (useChannelAppFrameTeardown)
-import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6808 */;
-import leaveFrame from "leaveFrame" /* 10798 */;
+// Module 18680 (useChannelAppFrameTeardown)
+import Constants from "Constants" /* 1072 */;
+import FramesConstants from "FramesConstants" /* 6847 */;
+import leaveFrame from "leaveFrame" /* 10938 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import FramesStore from "FramesStore" /* 6807 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import FramesStore from "FramesStore" /* 6846 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require;
 
 const getFrameSurfaceForChannel = FramesConstants.getFrameSurfaceForChannel;
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelAppFrameTeardown(id) {
-  let closure_1;
-  let fn;
-  let items2;
-  let tmp11;
-  let tmp12;
-  let tmp5;
-  let tmp8;
-  const tmp = id;
-  let tmp2 = dependencyMap;
-  let obj = id(576);
-  const cResult = obj.c(10);
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  if (cResult[0] !== id) {
-    let tmp6 = null;
-    if (null != id) {
-      let tmp7 = getFrameSurfaceForChannel;
-      tmp6 = getFrameSurfaceForChannel(id);
-    }
-    cResult[0] = id;
-    cResult[1] = tmp6;
-    tmp5 = tmp6;
-  } else {
-    tmp5 = cResult[1];
-  }
-  dependencyMap = tmp5;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore, PermissionStore];
-    cResult[2] = items;
-    tmp8 = items;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== id) {
-    class C {
-      constructor() {
-        const channel = ChannelStore.getChannel(id);
-        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
-        return canResult;
-      }
-    }
-    const items1 = [id];
-    cResult[3] = id;
-    cResult[4] = C;
-    cResult[5] = items1;
-    tmp12 = items1;
-    tmp11 = C;
-  } else {
-    class C {
-      constructor() {
-        const channel = ChannelStore.getChannel(id);
-        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
-        return canResult;
-      }
-    }
-    tmp12 = cResult[5];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
-  if (cResult[6] === stateFromStores) {
-    class C {
-      constructor() {
-        const channel = ChannelStore.getChannel(id);
-        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
-        return canResult;
-      }
-    }
-    const effect = stateFromStores.useEffect(fn, items2);
-  }
-  fn = function _() {
-    if (null != closure_1) {
-      const tmp2 = stateFromStores;
-      if (!tmp2) {
-        const framesForSurface = FramesStore.getFramesForSurface(tmp);
-        for (const item10010 of framesForSurface) {
-          let obj = leaveFrame;
-          let leaveFrameResult = obj.leaveFrame(item10010.id);
-          continue;
-        }
-      }
-    }
-  };
-  items2 = [tmp5, stateFromStores];
-  cResult[6] = stateFromStores;
-  cResult[7] = tmp5;
-  cResult[8] = fn;
-  cResult[9] = items2;
-}) : (function useChannelAppFrameTeardown(id) {
+const result = size.fileFinishedImporting("modules/frames/useChannelAppFrameTeardown.tsx");
+
+export default function useChannelAppFrameTeardown(id) {
   let memo;
   let stateFromStores;
   _require = id;
@@ -147,7 +59,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelAp
       }
     }
   }, items3);
-});
-const result = size.fileFinishedImporting("modules/frames/useChannelAppFrameTeardown.tsx");
-
-export default tmp2;
+};

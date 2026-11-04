@@ -1,14 +1,14 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8548
+// Function ID: 8549
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 4855, 5008, 7443, 38, 6404, 7598, 7787, 2]
+// Dependencies: [5, 4863, 5019, 7485, 38, 6444, 7636, 7824, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 8483 (PremiumGiftingUtils)
-import MessageConstants from "MessageConstants" /* 5008 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7443 */;
+// Module 8548 (PremiumGiftingUtils)
+import MessageConstants from "MessageConstants" /* 5019 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
@@ -31,7 +31,7 @@ let obj = function _sendGiftMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -117,9 +117,9 @@ const MessageSendLocation = MessageConstants.MessageSendLocation;
 const result = size.fileFinishedImporting("modules/premium/PremiumGiftingUtils.tsx");
 
 export const AnimationState = { ACTION: "action", LOOP: "loop", IDLE: "idle" };
-export const sendGiftMessage = function sendGiftMessage() {
+export function sendGiftMessage() {
   return obj(...arguments);
-};
+}
 export function unhandledGiftIntent() {
 
 }

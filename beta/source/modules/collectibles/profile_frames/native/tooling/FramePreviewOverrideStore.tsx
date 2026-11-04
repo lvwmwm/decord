@@ -1,16 +1,16 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8776
+// Function ID: 8777
 // Name: FramePreviewOverrideStore
-// Dependencies: [5, 17, 8727, 3, 8728, 1164, 8729, 8733, 570, 2]
+// Dependencies: [5, 17, 8777, 3, 8778, 1149, 8779, 8783, 560, 2]
 
-// Module 8726 (FramePreviewOverrideStore)
+// Module 8776 (FramePreviewOverrideStore)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 1164 */;
-import FileManagerUtils from "FileManagerUtils" /* 8728 */;
+import react_nativeDefault from "react-native" /* 1149 */;
+import FileManagerUtils from "FileManagerUtils" /* 8778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FrameOverrideConstants from "FrameOverrideConstants" /* 8727 */;
-import module_570 from "module_570" /* 570 */;
+import FrameOverrideConstants from "FrameOverrideConstants" /* 8777 */;
+import module_560 from "module_560" /* 560 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, c4, c7, c8;
@@ -53,7 +53,7 @@ let obj = function _readManifest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ obj = function _buildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -285,7 +285,7 @@ const Image = react_native.Image;
 const tmp3 = new LoggerDefault("FramePreviewOverrideStore");
 let closure_7 = tmp3;
 let closure_8 = 0;
-obj = module_570.create((arg0) => {
+obj = module_560.create((arg0) => {
   let closure_0 = arg0;
   obj = {
     override: null,
@@ -317,7 +317,7 @@ obj = module_570.create((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -359,7 +359,7 @@ obj = module_570.create((arg0) => {
             const message2 = closure_2;
             if (isStale()) {
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               message = message2 instanceof Error;
@@ -388,7 +388,7 @@ obj = module_570.create((arg0) => {
               if (isStale()) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else if (null == closure_2) {
                 message = closure_129_0;
                 closure_129_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
@@ -417,7 +417,7 @@ obj = module_570.create((arg0) => {
             if (isStale()) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               message = closure_129_0;
               obj = { override, status: "idle", error: null };
@@ -426,7 +426,7 @@ obj = module_570.create((arg0) => {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp36) {
         closure_2 = tmp36;

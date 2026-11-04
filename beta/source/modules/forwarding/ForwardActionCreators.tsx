@@ -1,16 +1,16 @@
-// Module ID: 12943
-// Function ID: 12944
+// Module ID: 13390
+// Function ID: 13391
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 4855, 4935, 1087, 5008, 8868, 7787, 1110, 7789, 1405, 7598, 12939, 6416, 2]
+// Dependencies: [32, 5, 4863, 4946, 1072, 5019, 8919, 7824, 1095, 7826, 1396, 7636, 13386, 6456, 2]
 
-// Module 12943 (ForwardActionCreators)
-import Constants from "Constants" /* 1087 */;
-import MessageConstants from "MessageConstants" /* 5008 */;
-import allSettledDefault from "allSettled" /* 6416 */;
+// Module 13390 (ForwardActionCreators)
+import Constants from "Constants" /* 1072 */;
+import MessageConstants from "MessageConstants" /* 5019 */;
+import allSettledDefault from "allSettled" /* 6456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, importDefault;
@@ -35,7 +35,7 @@ let obj = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ let obj = {
               return obj;
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp56) {
           c3 = 3;

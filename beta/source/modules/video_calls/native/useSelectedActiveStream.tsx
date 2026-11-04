@@ -1,49 +1,20 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 15206
+// Function ID: 15207
 // Name: useSelectedActiveStream
-// Dependencies: [6804, 6674, 558, 576, 504, 2]
+// Dependencies: [6843, 6714, 504, 2]
+// Exports: default
 
-// Module 14661 (useSelectedActiveStream)
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15206 (useSelectedActiveStream)
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedActiveStream(id) {
-  let first;
-  let tmp7;
-  _require = id;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore, ApplicationStreamingStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function u() {
-      const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(id.id);
-      let activeStreamForStreamKey = null;
-      if (null != selectedParticipantId) {
-        activeStreamForStreamKey = ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipantId);
-      }
-      return activeStreamForStreamKey;
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useSelectedActiveStream(arg0) {
+const result = size.fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");
+
+export default function useSelectedActiveStream(arg0) {
   let id;
   _require = arg0;
   const items = [ChannelRTCStore, ApplicationStreamingStore];
@@ -56,7 +27,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelecte
     }
     return activeStreamForStreamKey;
   });
-});
-const result = size.fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");
-
-export default tmp2;
+};

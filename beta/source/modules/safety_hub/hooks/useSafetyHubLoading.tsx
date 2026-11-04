@@ -1,42 +1,19 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16644
+// Function ID: 16645
 // Name: useSafetyHubLoading
-// Dependencies: [7954, 558, 576, 504, 2]
+// Dependencies: [7994, 504, 2]
+// Exports: default
 
-// Module 16068 (useSafetyHubLoading)
-import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 7954 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16644 (useSafetyHubLoading)
+import get_initialized from "get initialized" /* 504 */;
+import SafetyHubStore from "SafetyHubStore" /* 7994 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSafetyHubLoading() {
-  let fetching;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SafetyHubStore];
-    const fn = function o() {
-      return fetching.isFetching();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useIsSafetyHubLoading() {
+const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");
+
+export default function useIsSafetyHubLoading() {
   let fetching;
   const items = [SafetyHubStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => fetching.isFetching());
-});
-const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");
-
-export default tmp2;
+};

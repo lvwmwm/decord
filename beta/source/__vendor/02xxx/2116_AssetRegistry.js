@@ -1,10 +1,10 @@
 // Module ID: 2116
 // Function ID: 2117
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 2116 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "b003d36a50f292353ad7fdccef063587", name: "da.messages.b003d36a50f292353ad7fdccef063587.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "81442622c866cb9d3af7fc7f6bb868c9", name: "fi.messages.81442622c866cb9d3af7fc7f6bb868c9.compiled.messages", type: "jsona" });

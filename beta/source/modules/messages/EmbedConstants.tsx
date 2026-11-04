@@ -1,10 +1,10 @@
-// Module ID: 6519
-// Function ID: 6520
+// Module ID: 6559
+// Function ID: 6560
 // Name: EmbedConstants
-// Dependencies: [1087, 2]
+// Dependencies: [1072, 2]
 
-// Module 6519 (EmbedConstants)
-import Constants from "Constants" /* 1087 */;
+// Module 6559 (EmbedConstants)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedTypes = Constants.MessageEmbedTypes;

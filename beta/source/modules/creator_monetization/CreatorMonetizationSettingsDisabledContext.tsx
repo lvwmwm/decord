@@ -1,20 +1,21 @@
-// Module ID: 19313
-// Function ID: 19314
+// Module ID: 19946
+// Function ID: 19947
 // Name: CreatorMonetizationSettingsDisabledContext
-// Dependencies: [19, 21, 558, 576, 7385, 2]
+// Dependencies: [19, 21, 7427, 2]
+// Exports: CreatorMonetizationSettingsDisabledContextProvider, useCreatorMonetizationSettingsDisabled
 
-// Module 19313 (CreatorMonetizationSettingsDisabledContext)
+// Module 19946 (CreatorMonetizationSettingsDisabledContext)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7385 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7427 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatorMonetizationSettingsDisabled() {
+const result = size.fileFinishedImporting("modules/creator_monetization/CreatorMonetizationSettingsDisabledContext.tsx");
+
+export default context;
+export function useCreatorMonetizationSettingsDisabled() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -25,48 +26,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreatorMo
   } else {
     return context;
   }
-}) : (function useCreatorMonetizationSettingsDisabled() {
-  context = react.useContext(context);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
-    throw error;
-  } else {
-    return context;
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonetizationSettingsDisabledContextProvider(arg0) {
-  let children;
-  let guildId;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ children, guildId } = arg0);
-  const obj2 = CreatorMonetizationRestrictionsHooks;
-  const shouldRestrictUpdatingCreatorMonetizationSettings = obj2.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).shouldRestrictUpdatingCreatorMonetizationSettings;
-  if (cResult[0] === children) {
-    let tmp2;
-    if (cResult[1] === shouldRestrictUpdatingCreatorMonetizationSettings) {
-      tmp2 = cResult[2];
-    }
-    return tmp2;
-  }
-  const tmp3 = <context.Provider value={shouldRestrictUpdatingCreatorMonetizationSettings}>{children}</context.Provider>;
-  cResult[0] = children;
-  cResult[1] = shouldRestrictUpdatingCreatorMonetizationSettings;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : (function CreatorMonetizationSettingsDisabledContextProvider(arg0) {
+}
+export function CreatorMonetizationSettingsDisabledContextProvider(arg0) {
   let children;
   let guildId;
   ({ guildId, children } = arg0);
   const obj = CreatorMonetizationRestrictionsHooks;
   return <context.Provider value={obj.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).shouldRestrictUpdatingCreatorMonetizationSettings}>{children}</context.Provider>;
-});
-const result = size.fileFinishedImporting("modules/creator_monetization/CreatorMonetizationSettingsDisabledContext.tsx");
-
-export default context;
-export const useCreatorMonetizationSettingsDisabled = tmp3;
-export const CreatorMonetizationSettingsDisabledContextProvider = tmp4;
+}

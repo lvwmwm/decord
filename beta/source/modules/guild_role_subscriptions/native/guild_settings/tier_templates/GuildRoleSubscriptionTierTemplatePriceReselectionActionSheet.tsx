@@ -1,479 +1,46 @@
-// Module ID: 19369
-// Function ID: 19370
+// Module ID: 20004
+// Function ID: 20005
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1394, 1098, 21, 5003, 587, 558, 576, 5071, 7020, 1128, 7371, 16622, 5266, 9073, 1633, 1202, 5276, 5242, 5301, 5297, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5014, 575, 5272, 5275, 5624, 1113, 1187, 7413, 7058, 7061, 17220, 6767, 5634, 5258, 2]
+// Exports: default
 
-// Module 19369 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1098 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import react_native from "react-native" /* 5071 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import FormRadio from "FormRadio" /* 7020 */;
-import PriceUtils from "PriceUtils" /* 7371 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9073 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16622 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
+// Module 20004 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let BottomSheet;
 
-let c10;
-let c9;
-let hasOwnProperty;
-let metroRequire;
+let metroImportAll;
+let metroImportDefault;
 let obj2;
 let obj3;
-let obj4;
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native2);
-const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
+const View = react_native.View;
 const CurrencyCodes = Constants.CurrencyCodes;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, rowContainer: obj3, containerSelected: obj4, rowStatusIcon: { marginRight: 12 }, backToTemplates: { alignSelf: "center" } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24, borderTopLeftRadius: nativeDefault.radii.md, borderTopRightRadius: nativeDefault.radii.md };
+let obj = { container: obj2, content: obj3 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: nativeDefault.radii.md, borderTopRightRadius: nativeDefault.radii.md };
 createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignSelf: "stretch", justifyContent: "flex-start", padding: 12, marginBottom: 12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-obj4 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_11 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceOptionRow(arg0) {
-  let accessibilityRole;
-  let accessibilityState;
-  let items;
-  let obj5;
-  let onPress;
-  let price;
-  let selected;
-  let tmp5;
-  let tmpResult3;
-  let tmpResult4;
-  const obj = react2;
-  const cResult = obj.c(21);
-  ({ price, selected, onPress } = arg0);
-  const tmp4 = closure_11();
-  if (cResult[0] !== selected) {
-    const obj2 = { selected };
-    cResult[0] = selected;
-    cResult[1] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmpResult = react_native;
-  const radioA11yNative = tmpResult.useRadioA11yNative(tmp5);
-  ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  let containerSelected;
-  if (selected) {
-    containerSelected = tmp4.containerSelected;
-  }
-  if (cResult[2] === tmp4.rowContainer) {
-    let tmp8;
-    let tmp9;
-    if (cResult[3] === containerSelected) {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] !== selected) {
-      const obj3 = { selected };
-      const tmp11 = React4(FormRadio.FormRadio, obj3);
-      cResult[5] = selected;
-      cResult[6] = tmp11;
-      tmp9 = tmp11;
-    } else {
-      tmp9 = cResult[6];
-    }
-    if (cResult[7] === tmp4.rowStatusIcon) {
-      let tmp12;
-      let tmp16;
-      let tmp20;
-      if (cResult[8] === tmp9) {
-        tmp12 = cResult[9];
-      }
-      if (cResult[10] !== price) {
-        const intl = tmp(1128).intl;
-        const format = intl.format;
-        const obj4 = { price: tmpResult3.formatPrice(price, CurrencyCodes.USD), interval: tmpResult4.formatPlanInterval(obj5) };
-        const CgmBaG = tmp(1128).t.CgmBaG;
-        obj5 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-        tmpResult3 = PriceUtils;
-        tmpResult4 = GuildRoleSubscriptionTypeUtils;
-        const formatResult = format(CgmBaG, obj4);
-        cResult[10] = price;
-        cResult[11] = formatResult;
-        tmp16 = formatResult;
-      } else {
-        tmp16 = cResult[11];
-      }
-      if (cResult[12] !== tmp16) {
-        const obj6 = { variant: "text-sm/normal", color: "text-default", children: tmp16 };
-        const tmp22 = React4(Text_Text.Text, obj6);
-        cResult[12] = tmp16;
-        cResult[13] = tmp22;
-        tmp20 = tmp22;
-      } else {
-        tmp20 = cResult[13];
-      }
-      if (cResult[14] === accessibilityRole) {
-        if (cResult[15] === accessibilityState) {
-          if (cResult[16] === onPress) {
-            if (cResult[17] === tmp8) {
-              if (cResult[18] === tmp12) {
-                let tmp23;
-                if (cResult[19] === tmp20) {
-                  tmp23 = cResult[20];
-                }
-                return tmp23;
-              }
-            }
-          }
-        }
-      }
-      const obj7 = { style: tmp8, accessibilityRole, accessibilityState, onPress, children: items };
-      items = [tmp12, tmp20];
-      const tmp26 = authStore(TouchableHitBoxDefault, obj7);
-      cResult[14] = accessibilityRole;
-      cResult[15] = accessibilityState;
-      cResult[16] = onPress;
-      cResult[17] = tmp8;
-      cResult[18] = tmp12;
-      cResult[19] = tmp20;
-      cResult[20] = tmp26;
-      tmp23 = tmp26;
-    }
-    const obj8 = { style: tmp4.rowStatusIcon, children: tmp9 };
-    const tmp15 = React4(metroRequire, obj8);
-    cResult[7] = tmp4.rowStatusIcon;
-    cResult[8] = tmp9;
-    cResult[9] = tmp15;
-    tmp12 = tmp15;
-  }
-  const items1 = [tmp4.rowContainer, containerSelected];
-  cResult[2] = tmp4.rowContainer;
-  cResult[3] = containerSelected;
-  cResult[4] = items1;
-  tmp8 = items1;
-}) : (function PriceOptionRow(selected) {
-  let CgmBaG;
-  let accessibilityRole;
-  let accessibilityState;
-  let format;
-  let items1;
-  let obj5;
-  let obj6;
-  let onPress;
-  let price;
-  let tmp2Result;
-  let tmp2Result2;
-  selected = selected.selected;
-  ({ price, onPress } = selected);
-  const tmp = closure_11();
-  const obj = react_native;
-  const radioA11yNative = obj.useRadioA11yNative({ selected });
-  ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const items = [tmp.rowContainer, ];
-  let containerSelected;
-  const tmp5 = authStore;
-  const tmp6 = TouchableHitBoxDefault;
-  if (selected) {
-    containerSelected = tmp.containerSelected;
-  }
-  const obj2 = { style: items, accessibilityRole, accessibilityState, onPress, children: items1 };
-  items[1] = containerSelected;
-  items1 = [, ];
-  const obj3 = { style: tmp.rowStatusIcon, children: React4(FormRadio.FormRadio, { selected }) };
-  items1[0] = React4(metroRequire, obj3);
-  const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };
-  const Text = tmp2(5266).Text;
-  const intl = tmp2(1128).intl;
-  format = intl.format;
-  obj5 = { price: tmp2Result.formatPrice(price, CurrencyCodes.USD), interval: tmp2Result2.formatPlanInterval(obj6) };
-  CgmBaG = tmp2(1128).t.CgmBaG;
-  obj6 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-  tmp2Result = PriceUtils;
-  tmp2Result2 = GuildRoleSubscriptionTypeUtils;
-  items1[1] = React4(Text, obj4);
-  return tmp5(tmp6, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet(selectedTemplate) {
-  let closure_4;
-  let first;
-  let intl3;
-  let items;
-  let newPricesToPick;
-  let tmpResult;
-  let obj = selectedTemplate(newPricesToPick[9]);
-  const cResult = obj.c(40);
-  selectedTemplate = selectedTemplate.selectedTemplate;
-  const handleCreateFromTemplate = selectedTemplate.handleCreateFromTemplate;
-  newPricesToPick = selectedTemplate.newPricesToPick;
-  const tmp4 = closure_11();
-  const bottom = handleCreateFromTemplate(newPricesToPick[17])().bottom;
-  const tmp5 = first(react.useState(0), 2);
-  first = tmp5[0];
-  react = tmp5[1];
-  if (cResult[0] === handleCreateFromTemplate) {
-    if (cResult[1] === newPricesToPick) {
-      if (cResult[2] === first) {
-        let tmp7;
-        let tmp8;
-        let tmp9;
-        let tmp11;
-        let tmp15;
-        let tmp18;
-        let tmp22;
-        let tmp25;
-        let tmp29;
-        if (cResult[3] === selectedTemplate) {
-          tmp7 = cResult[4];
-        }
-        let closure_5 = tmp7;
-        const container = tmp4.container;
-        if (cResult[5] !== bottom) {
-          let obj2 = { paddingBottom: bottom };
-          cResult[5] = bottom;
-          cResult[6] = obj2;
-          tmp8 = obj2;
-        } else {
-          tmp8 = cResult[6];
-        }
-        if (cResult[7] !== selectedTemplate.listings[0].name) {
-          const intl = tmp(tmp2[12]).intl;
-          const obj3 = { tierName: selectedTemplate.listings[0].name };
-          const formatResult = intl.format(selectedTemplate(newPricesToPick[12]).t["5WZ9Ct"], obj3);
-          cResult[7] = selectedTemplate.listings[0].name;
-          cResult[8] = formatResult;
-          tmp9 = formatResult;
-        } else {
-          tmp9 = cResult[8];
-        }
-        if (cResult[9] !== tmp9) {
-          const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp9 };
-          const tmp13 = closure_9(selectedTemplate(newPricesToPick[15]).Text, obj4);
-          cResult[9] = tmp9;
-          cResult[10] = tmp13;
-          tmp11 = tmp13;
-        } else {
-          tmp11 = cResult[10];
-        }
-        const _Symbol = Symbol;
-        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp17 = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 12 });
-          cResult[11] = tmp17;
-          tmp15 = tmp17;
-        } else {
-          tmp15 = cResult[11];
-        }
-        if (cResult[12] !== selectedTemplate.listings[0].price_tier) {
-          const intl2 = tmp(tmp2[12]).intl;
-          const format = intl2.format;
-          const obj5 = { price: tmpResult.formatPrice(selectedTemplate.listings[0].price_tier, CurrencyCodes.USD) };
-          const v5i7Uhb = tmp(tmp2[12]).t["5i7Uhb"];
-          tmpResult = selectedTemplate(newPricesToPick[13]);
-          const formatResult1 = format(v5i7Uhb, obj5);
-          cResult[12] = selectedTemplate.listings[0].price_tier;
-          cResult[13] = formatResult1;
-          tmp18 = formatResult1;
-        } else {
-          tmp18 = cResult[13];
-        }
-        if (cResult[14] !== tmp18) {
-          const obj6 = { variant: "text-sm/normal", color: "text-default", children: tmp18 };
-          const tmp24 = closure_9(selectedTemplate(newPricesToPick[15]).Text, obj6);
-          cResult[14] = tmp18;
-          cResult[15] = tmp24;
-          tmp22 = tmp24;
-        } else {
-          tmp22 = cResult[15];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp27 = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 24 });
-          cResult[16] = tmp27;
-          tmp25 = tmp27;
-        } else {
-          tmp25 = cResult[16];
-        }
-        if (cResult[17] === newPricesToPick) {
-          let tmp28;
-          let tmp31;
-          let tmp34;
-          let tmp37;
-          let tmp40;
-          let tmp41;
-          if (cResult[18] === first) {
-            tmp28 = cResult[19];
-          }
-          const _Symbol3 = Symbol;
-          if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp33 = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 36 });
-            cResult[22] = tmp33;
-            tmp31 = tmp33;
-          } else {
-            tmp31 = cResult[22];
-          }
-          if (cResult[23] !== tmp7) {
-            const obj7 = {
-              text: "Confirm New Price",
-              onPress() {
-                          return closure_5();
-                        },
-              grow: true
-            };
-            const tmp36 = closure_9(selectedTemplate(newPricesToPick[19]).Button, obj7);
-            cResult[23] = tmp7;
-            cResult[24] = tmp36;
-            tmp34 = tmp36;
-          } else {
-            tmp34 = cResult[24];
-          }
-          const _Symbol4 = Symbol;
-          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp39 = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 24 });
-            cResult[25] = tmp39;
-            tmp37 = tmp39;
-          } else {
-            tmp37 = cResult[25];
-          }
-          const _Symbol5 = Symbol;
-          if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-            cResult[26] = H;
-            tmp40 = H;
-          } else {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-          }
-          const _Symbol6 = Symbol;
-          if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-            const obj8 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl3.string(selectedTemplate(newPricesToPick[12]).t.h26VOI) };
-            const Text = tmp(tmp2[15]).Text;
-            intl3 = tmp(tmp2[12]).intl;
-            const tmp42 = closure_9(Text, obj8);
-            cResult[27] = tmp42;
-            tmp41 = tmp42;
-          } else {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-          }
-          if (cResult[28] !== tmp4.backToTemplates) {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-            const obj9 = { onPress: tmp40, style: tmp4.backToTemplates, activeOpacity: 0.5, children: tmp41 };
-            cResult[28] = tmp4.backToTemplates;
-            cResult[29] = closure_9(closure_5, obj9);
-            const tmp45 = closure_9(closure_5, obj9);
-          } else {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-          }
-          if (cResult[30] === tmp28) {
-            class H {
-              constructor() {
-                const obj = handleCreateFromTemplate(newPricesToPick[20]);
-                return obj.hideActionSheet();
-              }
-            }
-          }
-          const obj10 = { contentContainerStyle: tmp8, children: items };
-          items = [tmp11, tmp15, tmp22, tmp25, tmp28, tmp31, tmp34, tmp37, tmp43];
-          cResult[30] = tmp28;
-          cResult[31] = tmp34;
-          cResult[32] = tmp43;
-          cResult[33] = tmp8;
-          cResult[34] = tmp11;
-          cResult[35] = tmp22;
-          cResult[36] = closure_10(selectedTemplate(newPricesToPick[21]).BottomSheetScrollView, obj10);
-          const tmp48 = closure_10(selectedTemplate(newPricesToPick[21]).BottomSheetScrollView, obj10);
-        }
-        if (cResult[20] !== first) {
-          class H {
-            constructor() {
-              const obj = handleCreateFromTemplate(newPricesToPick[20]);
-              return obj.hideActionSheet();
-            }
-          }
-          cResult[20] = first;
-          cResult[21] = E;
-          tmp29 = E;
-        } else {
-          class H {
-            constructor() {
-              const obj = handleCreateFromTemplate(newPricesToPick[20]);
-              return obj.hideActionSheet();
-            }
-          }
-        }
-        const mapped = newPricesToPick.map(tmp29);
-        cResult[17] = newPricesToPick;
-        cResult[18] = first;
-        cResult[19] = mapped;
-        tmp28 = mapped;
-      }
-    }
-  }
-  function handleSelectNewPrice() {
-    let items;
-    const obj = { listings: items };
-    const merged = Object.assign(selectedTemplate);
-    const obj2 = { price_tier: newPricesToPick[first] };
-    const merged1 = Object.assign(selectedTemplate.listings[0]);
-    items = [obj2];
-    handleCreateFromTemplate(obj, true);
-  }
-  cResult[0] = handleCreateFromTemplate;
-  cResult[1] = newPricesToPick;
-  cResult[2] = first;
-  cResult[3] = selectedTemplate;
-  cResult[4] = handleSelectNewPrice;
-  tmp7 = handleSelectNewPrice;
-}) : (function GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet(selectedTemplate) {
+obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingTop: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_10 };
+let closure_9 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet.tsx");
+
+export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet(selectedTemplate) {
   let BottomSheetScrollView;
-  let Text3;
-  let c3;
-  let c4;
   let format;
   let intl;
   let intl3;
+  let intl4;
   let items;
+  let items1;
   let newPricesToPick;
-  let obj11;
   let obj2;
   let obj3;
   let obj5;
@@ -482,73 +49,73 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   let v5i7Uhb;
   selectedTemplate = selectedTemplate.selectedTemplate;
   ({ handleCreateFromTemplate: importDefault, newPricesToPick } = selectedTemplate);
-  _slicedToArray = undefined;
-  react = undefined;
-  const tmp = closure_11();
-  const bottom = require("useSafeAreaInsets")().bottom;
-  [c3, c4] = react.useState(0);
-  let obj = { backdropOpacity: 0.8, startExpanded: true, children: closure_9(closure_6, obj2) };
-  obj2 = { style: tmp.container, children: closure_10(BottomSheetScrollView, obj3) };
-  _slicedToArray(react.useState(0), 2);
-  BottomSheet = selectedTemplate(newPricesToPick[22]).BottomSheet;
-  obj3 = { contentContainerStyle: { paddingBottom: bottom }, children: items };
-  BottomSheetScrollView = selectedTemplate(newPricesToPick[21]).BottomSheetScrollView;
-  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(selectedTemplate(newPricesToPick[12]).t["5WZ9Ct"], obj5) };
-  const Text = selectedTemplate(newPricesToPick[15]).Text;
-  intl = selectedTemplate(newPricesToPick[12]).intl;
+  let value;
+  const tmp = closure_9();
+  const tmp2 = value(react.useState(0), 2);
+  value = tmp2[0];
+  let obj = { backdropOpacity: 0.8, startExpanded: true, children: closure_7(View, obj2) };
+  obj2 = { style: tmp.container, children: closure_8(BottomSheetScrollView, obj3) };
+  const tmp4 = tmp2[1];
+  BottomSheet = selectedTemplate(newPricesToPick[7]).BottomSheet;
+  obj3 = { contentContainerStyle: tmp.content, children: items };
+  BottomSheetScrollView = selectedTemplate(newPricesToPick[8]).BottomSheetScrollView;
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(selectedTemplate(newPricesToPick[10]).t["5WZ9Ct"], obj5) };
+  const Text = selectedTemplate(newPricesToPick[9]).Text;
+  intl = selectedTemplate(newPricesToPick[10]).intl;
   obj5 = { tierName: selectedTemplate.listings[0].name };
-  items = [closure_9(Text, obj4), closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 12 }), , , , , , , ];
+  items = [closure_7(Text, obj4), closure_7(selectedTemplate(newPricesToPick[11]).Spacer, { size: 12 }), , , , , ];
   const obj6 = { variant: "text-sm/normal", color: "text-default", children: format(v5i7Uhb, obj7) };
-  const Text2 = selectedTemplate(newPricesToPick[15]).Text;
-  const intl2 = selectedTemplate(newPricesToPick[12]).intl;
+  const Text2 = selectedTemplate(newPricesToPick[9]).Text;
+  const intl2 = selectedTemplate(newPricesToPick[10]).intl;
   format = intl2.format;
   obj7 = { price: obj8.formatPrice(selectedTemplate.listings[0].price_tier, CurrencyCodes.USD) };
-  v5i7Uhb = selectedTemplate(newPricesToPick[12]).t["5i7Uhb"];
-  obj8 = selectedTemplate(newPricesToPick[13]);
-  items[2] = closure_9(Text2, obj6);
-  items[3] = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 24 });
-  items[4] = newPricesToPick.map((price, index) => {
-    let closure_0 = index;
-    const obj = {
-      price,
-      selected: index === c3,
-      onPress() {
-        return c4(index);
-      }
-    };
-    return closure_1_9(closure_1_12, obj, price);
-  });
-  items[5] = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 36 });
+  v5i7Uhb = selectedTemplate(newPricesToPick[10]).t["5i7Uhb"];
+  obj8 = selectedTemplate(newPricesToPick[12]);
+  items[2] = closure_7(Text2, obj6);
+  items[3] = closure_7(selectedTemplate(newPricesToPick[11]).Spacer, { size: 24 });
   const obj9 = {
-    text: "Confirm New Price",
+    hasIcons: false,
+    value,
+    onChange: tmp4,
+    children: newPricesToPick.map((item, value) => {
+      let obj2;
+      const obj = { value, label: obj2.formatMonthlyPriceLabel(item) };
+      const TableRadioRow = selectedTemplate(newPricesToPick[14]).TableRadioRow;
+      obj2 = selectedTemplate(newPricesToPick[15]);
+      return closure_1_7(TableRadioRow, obj, item);
+    })
+  };
+  const TableRadioGroup = selectedTemplate(newPricesToPick[13]).TableRadioGroup;
+  items[4] = closure_7(TableRadioGroup, obj9);
+  items[5] = closure_7(selectedTemplate(newPricesToPick[11]).Spacer, { size: 20 });
+  const obj10 = { children: items1 };
+  const ButtonGroup = selectedTemplate(newPricesToPick[16]).ButtonGroup;
+  const obj11 = {
+    text: intl3.string(selectedTemplate(newPricesToPick[10]).t.DVCXzm),
     onPress() {
       let items;
       const obj = { listings: items };
       const merged = Object.assign(selectedTemplate);
-      const obj2 = { price_tier: newPricesToPick[c3] };
+      const obj2 = { price_tier: newPricesToPick[first] };
       const merged1 = Object.assign(selectedTemplate.listings[0]);
       items = [obj2];
       importDefault(obj, true);
-    },
-    grow: true
+    }
   };
-  items[6] = closure_9(selectedTemplate(newPricesToPick[19]).Button, obj9);
-  items[7] = closure_9(selectedTemplate(newPricesToPick[18]).Spacer, { size: 24 });
-  const obj10 = {
+  const Button = selectedTemplate(newPricesToPick[17]).Button;
+  intl3 = selectedTemplate(newPricesToPick[10]).intl;
+  items1 = [closure_7(Button, obj11), ];
+  const obj12 = {
+    variant: "secondary",
+    text: intl4.string(selectedTemplate(newPricesToPick[10]).t.h26VOI),
     onPress() {
       const obj = require("ActionSheetActionCreators");
       return obj.hideActionSheet();
-    },
-    style: tmp.backToTemplates,
-    activeOpacity: 0.5,
-    children: closure_9(Text3, obj11)
+    }
   };
-  obj11 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl3.string(selectedTemplate(newPricesToPick[12]).t.h26VOI) };
-  Text3 = selectedTemplate(newPricesToPick[15]).Text;
-  intl3 = selectedTemplate(newPricesToPick[12]).intl;
-  items[8] = closure_9(closure_5, obj10);
-  return closure_9(BottomSheet, obj);
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet.tsx");
-
-export default tmp5;
+  const Button2 = selectedTemplate(newPricesToPick[17]).Button;
+  intl4 = selectedTemplate(newPricesToPick[10]).intl;
+  items1[1] = closure_7(Button2, obj12);
+  items[6] = closure_8(ButtonGroup, obj10);
+  return closure_7(BottomSheet, obj);
+};

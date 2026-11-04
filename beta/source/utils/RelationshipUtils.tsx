@@ -1,16 +1,16 @@
-// Module ID: 18972
-// Function ID: 18973
+// Module ID: 19605
+// Function ID: 19606
 // Name: RelationshipUtils
-// Dependencies: [1087, 16910, 1417, 1128, 18973, 7443, 2]
+// Dependencies: [1072, 17513, 1409, 1113, 19606, 7485, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 18972 (RelationshipUtils)
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7443 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 16910 */;
-import FriendsActionCreatorsDefault from "FriendsActionCreators" /* 18973 */;
+// Module 19605 (RelationshipUtils)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17513 */;
+import FriendsActionCreatorsDefault from "FriendsActionCreators" /* 19606 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let _require;
 const FriendsSections = Constants.FriendsSections;
 const result = size.fileFinishedImporting("utils/RelationshipUtils.tsx");
 
-export const showPendingNotification = function showPendingNotification(user) {
+export function showPendingNotification(user) {
   const intl = intl2.intl;
   const stringResult = intl.string(intl2.t["t3+Af3"]);
   const showNotification = NotificationActionCreatorsDefault.showNotification;
@@ -36,8 +36,8 @@ export const showPendingNotification = function showPendingNotification(user) {
     isUserAvatar: true
   };
   showNotification(obj.getUserAvatarURL(user), user.username, stringResult, {}, obj2);
-};
-export const showAcceptedNotification = function showAcceptedNotification(user) {
+}
+export function showAcceptedNotification(user) {
   _require = user;
   const intl = require("intl").intl;
   const stringResult = intl.string(require("intl").t.MYr3Ka);
@@ -56,4 +56,4 @@ export const showAcceptedNotification = function showAcceptedNotification(user) 
     isUserAvatar: true
   };
   showNotification(obj.getUserAvatarURL(user), user.username, stringResult, {}, obj2);
-};
+}

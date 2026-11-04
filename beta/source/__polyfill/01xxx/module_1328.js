@@ -3,5 +3,3 @@
 // Dependencies: []
 
 // Module 1328
-
-export default ReferenceError;

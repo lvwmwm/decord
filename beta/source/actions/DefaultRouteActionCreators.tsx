@@ -1,21 +1,21 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 12065
+// Function ID: 12066
 // Name: DefaultRouteActionCreators
-// Dependencies: [4936, 1087, 5039, 5052, 584, 2]
+// Dependencies: [4947, 1072, 5050, 5063, 572, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 11770 (DefaultRouteActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import matchPathCompat from "matchPathCompat" /* 5039 */;
-import RouteUtils from "RouteUtils" /* 5052 */;
-import LurkingStore from "LurkingStore" /* 4936 */;
+// Module 12065 (DefaultRouteActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import RouteUtils from "RouteUtils" /* 5063 */;
+import LurkingStore from "LurkingStore" /* 4947 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("actions/DefaultRouteActionCreators.tsx");
 
-export const saveLastRoute = function saveLastRoute(pathname) {
+export function saveLastRoute(pathname) {
   let CHANNEL;
   let RouteParam;
   const obj = { path: CHANNEL(RouteParam.guildId()) };
@@ -37,8 +37,8 @@ export const saveLastRoute = function saveLastRoute(pathname) {
     const obj2 = DispatcherDefault;
     obj2.dispatch(obj3);
   }
-};
-export const saveLastNonVoiceRoute = function saveLastNonVoiceRoute(Routes) {
+}
+export function saveLastNonVoiceRoute(Routes) {
   let CHANNEL;
   let RouteParam;
   const obj = { path: CHANNEL(RouteParam.guildId()) };
@@ -60,4 +60,4 @@ export const saveLastNonVoiceRoute = function saveLastNonVoiceRoute(Routes) {
     const obj2 = DispatcherDefault;
     obj2.dispatch(obj3);
   }
-};
+}

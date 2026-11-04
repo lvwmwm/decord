@@ -1,12 +1,12 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19694
+// Function ID: 19695
 // Name: AutomodKeywordPresetInfo
-// Dependencies: [12844, 1128, 2]
+// Dependencies: [13292, 1113, 2]
 // Exports: getKeywordPresetInfo
 
-// Module 19061 (AutomodKeywordPresetInfo)
-import intl7 from "intl" /* 1128 */;
-import Constants from "Constants" /* 12844 */;
+// Module 19694 (AutomodKeywordPresetInfo)
+import intl7 from "intl" /* 1113 */;
+import Constants from "Constants" /* 13292 */;
 import size from "module_2" /* 2 */;
 
 const KeywordPreset = Constants.KeywordPreset;
@@ -15,7 +15,7 @@ const items = [, , ];
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodKeywordPresetInfo.tsx");
 
 export const KEYWORD_PRESETS = items;
-export const getKeywordPresetInfo = function getKeywordPresetInfo(item) {
+export function getKeywordPresetInfo(item) {
   let intl;
   let intl2;
   let intl3;
@@ -40,4 +40,4 @@ export const getKeywordPresetInfo = function getKeywordPresetInfo(item) {
   } else {
     return { headerText: "Error", subtitleText: "Unrecognized list" };
   }
-};
+}

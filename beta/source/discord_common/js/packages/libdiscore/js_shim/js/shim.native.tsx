@@ -1,38 +1,38 @@
-// Module ID: 562
-// Function ID: 563
+// Module ID: 1361
+// Function ID: 1362
 // Name: shim
-// Dependencies: [563, 2, 566]
+// Dependencies: [1362, 2, 1365]
 // Exports: consumeLogs, getExperimentCacher, getHttpClientAPI, isBlockedDomain, isUnsupportedBrowser, startFetchingBlockedDomains
 
-// Module 562 (shim)
-import ExperimentCacher from "ExperimentCacher" /* 563 */;
-import initLibdiscore from "initLibdiscore" /* 566 */;
+// Module 1361 (shim)
+import ExperimentCacher from "ExperimentCacher" /* 1362 */;
+import initLibdiscore from "initLibdiscore" /* 1365 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/shim.native.tsx");
 
-export const isBlockedDomain = function isBlockedDomain(arg0) {
+export function isBlockedDomain(arg0) {
   const BlockedDomainsStore = ExperimentCacher.BlockedDomainsStore;
   return BlockedDomainsStore.isBlockedDomain(arg0);
-};
-export const startFetchingBlockedDomains = function startFetchingBlockedDomains(arg0) {
+}
+export function startFetchingBlockedDomains(arg0) {
   const BlockedDomainsStore = ExperimentCacher.BlockedDomainsStore;
   const result = BlockedDomainsStore.startFetchingBlockedDomains(arg0);
-};
-export const consumeLogs = function consumeLogs() {
+}
+export function consumeLogs() {
   const obj = ExperimentCacher;
   return obj.consumeLogs();
-};
+}
 export function isUnsupportedBrowser() {
   return false;
 }
-export const getExperimentCacher = function getExperimentCacher() {
+export function getExperimentCacher() {
   return ExperimentCacher.ExperimentCacher;
-};
-export const getHttpClientAPI = function getHttpClientAPI() {
+}
+export function getHttpClientAPI() {
   const obj = ExperimentCacher;
   return obj.getHttpClientAPI();
-};
+}
 export const rustMultiply = ExperimentCacher.rustMultiply;
 export const crash = ExperimentCacher.crash;
 export const generateLaunchSignature = ExperimentCacher.generateLaunchSignature;

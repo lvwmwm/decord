@@ -1,10 +1,10 @@
-// Module ID: 5274
-// Function ID: 5275
+// Module ID: 5632
+// Function ID: 5633
 // Name: PlainTextEligibility
 // Dependencies: [17, 2]
 // Exports: getPlainTextEligibility, isPlainTextEligible
 
-// Module 5274 (PlainTextEligibility)
+// Module 5632 (PlainTextEligibility)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ let closure_8 = { eligible: false, reason: "non-ios" };
 let closure_9 = { eligible: false, reason: "ref" };
 const result = size.fileFinishedImporting("design/components/Text/native/PlainTextEligibility.tsx");
 
-export const isPlainTextEligible = function isPlainTextEligible(plainTextEligibility) {
+export function isPlainTextEligible(plainTextEligibility) {
   return !("eligible" in plainTextEligibility);
-};
-export const getPlainTextEligibility = function getPlainTextEligibility(element) {
+}
+export function getPlainTextEligibility(element) {
   function getPlainTextStyle(style) {
     const flattenResult = StyleSheet.flatten(style);
     delete tmp["includeFontPadding"];
@@ -82,4 +82,4 @@ export const getPlainTextEligibility = function getPlainTextEligibility(element)
     const tmp = closure_4;
     return closure_4;
   }
-};
+}

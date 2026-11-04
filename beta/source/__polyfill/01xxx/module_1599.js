@@ -1,64 +1,118 @@
 // Module ID: 1599
 // Function ID: 1600
-// Dependencies: [32, 19, 1514, 1548, 1545, 1600, 1527]
-// Exports: usePreventRemove
+// Dependencies: [19, 21, 1500, 1600]
+// Exports: createStaticNavigation
 
 // Module 1599
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import Fragment from "Fragment" /* 21 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1500 */;
 import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require, importDefault, navigation;
+const jsx = Fragment.jsx;
 
-
-export const usePreventRemove = function usePreventRemove(arg0, arg1) {
-  let closure_0;
+export function createStaticNavigation(getComponent) {
   let closure_1;
-  let key;
-  _require = arg0;
-  importDefault = arg1;
-  const first = navigation(key.useState(() => {
-    const obj = closure_0(first[2]);
-    return obj.nanoid();
-  }), 1)[0];
-  let obj = require("module_1548");
-  navigation = obj.useNavigation();
-  const obj2 = require("react");
-  key = obj2.useRoute().key;
-  const obj3 = require("react");
-  const preventRemoveContext = obj3.usePreventRemoveContext();
-  const setPreventRemove = preventRemoveContext.setPreventRemove;
-  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
-  const items = [setPreventRemove, first, key, arg0];
-  const insertionEffect = key.useInsertionEffect(() => {
-    setPreventRemove(first, key, closure_0);
-    return () => {
-      setPreventRemove(first, key, false);
-    };
-  }, items);
-  const items1 = [first, key, arg0, notifyPreventRemove];
-  const effect = key.useEffect(() => {
-    notifyPreventRemove();
-    return () => {
-      notifyPreventRemove();
-    };
-  }, items1);
-  const tmp6 = require("useLatestCallback")((preventDefault) => {
-    const tmp = closure_0;
-    if (tmp) {
-      preventDefault.preventDefault();
-      const obj = { data: preventDefault.data };
-      closure_1(obj);
+  const component = getComponent.getComponent();
+  return react.forwardRef(function Navigation(linking, ref) {
+    linking = linking.linking;
+    let merged = Object.assign(linking, Object.assign({ linking: 0 }));
+    let memo;
+    let obj = React;
+    let enabled;
+    const useMemo = React.useMemo;
+    if (linking != null) {
+      enabled = linking.enabled;
     }
+    const items = [enabled, , ];
+    let path;
+    if (linking != null) {
+      let config = linking.config;
+      if (config != null) {
+        path = config.path;
+      }
+    }
+    items[1] = path;
+    let initialRouteName;
+    if (linking != null) {
+      let config2 = linking.config;
+      if (config2 != null) {
+        initialRouteName = config2.initialRouteName;
+      }
+    }
+    items[2] = initialRouteName;
+    memo = useMemo(() => {
+      let initialRouteName1;
+      let initialRouteName;
+      const createPathConfigForStaticNavigation = BaseNavigationContainer.createPathConfigForStaticNavigation;
+      BaseNavigationContainer;
+      const tmp2 = getComponent;
+      if (linking != null) {
+        const config = tmp3.config;
+        if (config != null) {
+          initialRouteName = config.initialRouteName;
+        }
+      }
+      let enabled;
+      if (linking != null) {
+        enabled = tmp3.enabled;
+      }
+      const pathConfigForStaticNavigation = createPathConfigForStaticNavigation(tmp2, { initialRouteName }, "auto" === enabled);
+      if (pathConfigForStaticNavigation) {
+        let path;
+        if (linking != null) {
+          const config2 = tmp3.config;
+          if (config2 != null) {
+            path = config2.path;
+          }
+        }
+        const obj = { path, initialRouteName: initialRouteName1, screens: pathConfigForStaticNavigation };
+        initialRouteName1 = undefined;
+        if (linking != null) {
+          const config3 = tmp3.config;
+          if (config3 != null) {
+            initialRouteName1 = config3.initialRouteName;
+          }
+        }
+        return obj;
+      }
+    }, items);
+    const items1 = [linking, memo];
+    let enabled1;
+    const memo1 = obj.useMemo(() => {
+      if (linking) {
+        let enabled;
+        if (typeof linking.enabled === "boolean") {
+          enabled = tmp.enabled;
+        } else {
+          let screens;
+          if (memo != null) {
+            screens = memo.screens;
+          }
+          enabled = null != screens;
+        }
+        const obj = { enabled, config: memo };
+        const merged = Object.assign(tmp);
+        return obj;
+      }
+    }, items1);
+    if (linking != null) {
+      enabled1 = linking.enabled;
+    }
+    if (true === enabled1) {
+      let screens;
+      if (memo != null) {
+        screens = memo.screens;
+      }
+      if (null == screens) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Linking is enabled but no linking configuration was found for the screens.\n\nTo solve this:\n- Specify a 'linking' property for the screens you want to link to.\n- Or set 'linking.enabled' to 'auto' to generate paths automatically.\n\nSee usage guide: https://reactnavigation.org/docs/static-configuration#linking");
+        throw error;
+      }
+    }
+    const NavigationContainer = getComponent(closure_1[3]).NavigationContainer;
+    const merged1 = Object.assign(merged);
+    return <NavigationContainer ref={arg1} linking={memo1}><memo /></NavigationContainer>;
   });
-  let closure_7 = tmp6;
-  const items2 = [navigation, tmp6];
-  const effect1 = key.useEffect(() => {
-    let addListenerResult;
-    const obj = navigation;
-    if (navigation != null) {
-      addListenerResult = obj.addListener("beforeRemove", closure_7);
-    }
-    return addListenerResult;
-  }, items2);
-};
+}

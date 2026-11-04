@@ -1,15 +1,15 @@
-// Module ID: 7827
-// Function ID: 7828
+// Module ID: 7865
+// Function ID: 7866
 // Name: SessionAdGenerator
-// Dependencies: [1104, 1281, 7613, 584, 1257, 2]
+// Dependencies: [1089, 1266, 7651, 572, 1242, 2]
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 7827 (SessionAdGenerator)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import v1 from "v1" /* 1281 */;
-import SessionUtils from "SessionUtils" /* 7613 */;
+// Module 7865 (SessionAdGenerator)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import v1 from "v1" /* 1266 */;
+import SessionUtils from "SessionUtils" /* 7651 */;
 import size from "module_2" /* 2 */;
 
 let _null;
@@ -18,7 +18,7 @@ let closure_3 = 12 * DurationsDefault.Millis.HOUR;
 let c4 = null;
 const result = size.fileFinishedImporting("modules/analytics_sessions/SessionAdGenerator.tsx");
 
-export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtendSession) {
+export function getOrRefreshAdSession(shouldExtendSession) {
   let obj3;
   let flag = shouldExtendSession;
   if (shouldExtendSession === undefined) {
@@ -55,14 +55,14 @@ export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtend
   const obj4 = DispatcherDefault;
   obj4.dispatch({ type: "AD_SESSION_RESET" });
   tmp10 = _null;
-};
+}
 export function clearAdSession() {
   let c4 = null;
 }
 export function getCurrentAdSession() {
   return c4;
 }
-export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp) {
+export function isAdSessionExpired(createdAtTimestamp) {
   const timestamp = Date.now();
   if (timestamp < createdAtTimestamp.createdAtTimestamp) {
     const _HermesInternal = HermesInternal;
@@ -76,4 +76,4 @@ export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp
     const tmp5 = diff > SessionUtils.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
     return tmp5;
   }
-};
+}

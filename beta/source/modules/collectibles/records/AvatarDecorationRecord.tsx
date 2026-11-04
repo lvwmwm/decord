@@ -1,12 +1,12 @@
-// Module ID: 7687
-// Function ID: 7688
+// Module ID: 7725
+// Function ID: 7726
 // Name: AvatarDecorationRecord
-// Dependencies: [1994, 1995, 2]
+// Dependencies: [1986, 1987, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7687 (AvatarDecorationRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1994 */;
+// Module 7725 (AvatarDecorationRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1986 */;
 import size from "module_2" /* 2 */;
 
 class AvatarDecorationRecord extends BaseCollectiblesItemRecord {
@@ -36,6 +36,6 @@ class AvatarDecorationRecord extends BaseCollectiblesItemRecord {
 const result = size.fileFinishedImporting("modules/collectibles/records/AvatarDecorationRecord.tsx");
 
 export default AvatarDecorationRecord;
-export const isAvatarDecorationRecord = function isAvatarDecorationRecord(first1) {
+export function isAvatarDecorationRecord(first1) {
   return first1 instanceof AvatarDecorationRecord;
-};
+}

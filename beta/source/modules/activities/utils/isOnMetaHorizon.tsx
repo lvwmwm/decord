@@ -1,16 +1,15 @@
-// Module ID: 14336
-// Function ID: 14337
+// Module ID: 14868
+// Function ID: 14869
 // Name: isOnMetaHorizon
-// Dependencies: [2026, 1087, 2]
+// Dependencies: [2018, 9738, 2]
 // Exports: default
 
-// Module 14336 (isOnMetaHorizon)
-import Constants from "Constants" /* 1087 */;
-import Constants2 from "Constants" /* 2026 */;
+// Module 14868 (isOnMetaHorizon)
+import Constants from "Constants" /* 2018 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9738 */;
 import size from "module_2" /* 2 */;
 
-let closure_0 = Constants2.META_PRESENCE_APPLICATION_ID;
-const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
+let closure_2 = Constants.META_PRESENCE_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/activities/utils/isOnMetaHorizon.tsx");
 
 export default function isOnMetaHorizon(application_id) {
@@ -18,21 +17,22 @@ export default function isOnMetaHorizon(application_id) {
   if (application_id != null) {
     application_id = application_id.application_id;
   }
-  let tmp2 = application_id === closure_0;
+  let tmp2 = application_id === closure_2;
   if (tmp2) {
     let platform;
     if (application_id != null) {
       platform = application_id.platform;
     }
-    let tmp5 = platform === ActivityGamePlatforms.ANDROID;
-    if (!tmp5) {
+    let tmp6 = platform === ActivityGamePlatforms.ActivityGamePlatforms.ANDROID;
+    const tmp4 = require;
+    if (!tmp6) {
       let platform1;
       if (application_id != null) {
         platform1 = application_id.platform;
       }
-      tmp5 = platform1 === tmp4.IOS;
+      tmp6 = platform1 === tmp4(9738).ActivityGamePlatforms.IOS;
     }
-    tmp2 = tmp5;
+    tmp2 = tmp6;
   }
   return tmp2;
 };

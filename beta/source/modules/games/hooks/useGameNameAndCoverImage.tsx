@@ -1,92 +1,42 @@
-// Module ID: 14417
-// Function ID: 14418
+// Module ID: 14956
+// Function ID: 14957
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 576, 7438, 1128, 2]
+// Dependencies: [7480, 1113, 2]
+// Exports: default
 
-// Module 14417 (useGameNameAndCoverImage)
-import react from "react" /* 576 */;
-import useGame from "useGame" /* 7438 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14956 (useGameNameAndCoverImage)
+import useGame from "useGame" /* 7480 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNameAndCoverImage(arg0, arg1, coverImageSize) {
-  let data;
-  let isLoading;
-  const obj = react;
-  const cResult = obj.c(10);
-  const obj2 = useGame;
-  const game = obj2.useGame(arg0);
-  ({ data, isLoading } = game);
-  if (cResult[0] === data) {
-    let tmp5;
-    if (cResult[1] === coverImageSize) {
-      tmp5 = cResult[2];
-    }
-    let name;
-    const tmp7 = cResult[3];
-    if (data != null) {
-      name = data.name;
-    }
-    if (tmp7 === name) {
-      let tmp11;
-      if (cResult[4] === arg1) {
-        tmp11 = cResult[5];
-      }
-      if (cResult[6] === isLoading) {
-        if (cResult[7] === tmp5) {
-          let tmp14;
-          if (cResult[8] === tmp11) {
-            tmp14 = cResult[9];
-          }
-          return tmp14;
-        }
-      }
-      const obj3 = { coverImageUrl: tmp5, gameName: tmp11, isLoading };
-      cResult[6] = isLoading;
-      cResult[7] = tmp5;
-      cResult[8] = tmp11;
-      cResult[9] = obj3;
-      tmp14 = obj3;
-    }
-    let name1;
-    if (data != null) {
-      name1 = data.name;
-    }
-    if (name1 == null) {
-      name1 = arg1;
-    }
-    if (name1 == null) {
-      const intl = tmp(1128).intl;
-      name1 = intl.string(tmp(1128).t.GIWFlF);
-    }
-    let name2;
-    if (data != null) {
-      name2 = data.name;
-    }
-    cResult[3] = name2;
-    cResult[4] = arg1;
-    cResult[5] = name1;
-    tmp11 = name1;
-  }
-  let coverURL;
-  if (data != null) {
-    coverURL = data.getCoverURL(coverImageSize);
-  }
-  cResult[0] = data;
-  cResult[1] = coverImageSize;
-  cResult[2] = coverURL;
-  tmp5 = coverURL;
-}) : (function useGameNameAndCoverImage(arg0, arg1, coverImageSize) {
+const result = size.fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
+
+export default function useGameNameAndCoverImage(arg0, arg1, imageSize) {
+  let iconURL;
   let name;
+  let num = imageSize;
   const obj = useGame;
   const game = obj.useGame(arg0);
   const data = game.data;
   let coverURL;
   const isLoading = game.isLoading;
   if (data != null) {
-    coverURL = data.getCoverURL(coverImageSize);
+    coverURL = data.getCoverURL(num);
   }
-  const obj2 = { coverImageUrl: coverURL, gameName: name, isLoading };
+  if (coverURL == null) {
+    coverURL = null;
+  }
+  const obj2 = { coverImageUrl: coverURL, iconImageUrl: iconURL, gameName: name, hasGameData: null != data, isLoading };
+  iconURL = undefined;
+  if (data != null) {
+    const getIconURL = data.getIconURL;
+    if (num == null) {
+      num = 256;
+    }
+    iconURL = getIconURL(num);
+  }
+  if (iconURL == null) {
+    iconURL = null;
+  }
   name = undefined;
   if (data != null) {
     name = data.name;
@@ -95,11 +45,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
     name = arg1;
   }
   if (name == null) {
-    const intl = tmp(1128).intl;
-    name = intl.string(tmp(1128).t.GIWFlF);
+    const intl = tmp(1113).intl;
+    name = intl.string(tmp(1113).t.GIWFlF);
   }
   return obj2;
-});
-const result = size.fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
-
-export default tmp2;
+};

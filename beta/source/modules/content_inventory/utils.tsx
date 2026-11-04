@@ -1,17 +1,17 @@
-// Module ID: 8649
-// Function ID: 8650
+// Module ID: 8718
+// Function ID: 8719
 // Name: utils
-// Dependencies: [1104, 11, 1128, 2049, 8650, 4432, 8645, 2]
+// Dependencies: [1089, 11, 1113, 2042, 8719, 4440, 8714, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8649 (utils)
+// Module 8718 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import intl4 from "intl" /* 1128 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import _mod4432 from "module_4432" /* 4432 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8645 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8650 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import intl4 from "intl" /* 1113 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import _mod4440 from "module_4440" /* 4440 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8714 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8719 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -98,7 +98,7 @@ function formatTimestampToA11yLabel(time) {
   push3(intl3.formatToPlainString(intl4.t.geSp4K, { seconds }));
   return items.join(", ");
 }
-function formatEndedTimestamp(entry, stateFromStores, timestamp, arg3) {
+function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   let obj = arg3;
   if (arg3 === undefined) {
     obj = {};
@@ -107,8 +107,8 @@ function formatEndedTimestamp(entry, stateFromStores, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef2049(timestamp);
-  const tmp3 = _modDef2049;
+  const obj2 = _modDef2042(timestamp);
+  const tmp3 = _modDef2042;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -199,7 +199,7 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/content_inventory/utils.tsx");
 
 export { calculateTimestampDurations };
-export const calculateActiveTimestampDurations = function calculateActiveTimestampDurations(end, now) {
+export function calculateActiveTimestampDurations(end, now) {
   let start;
   end = undefined;
   if ("end" in end) {
@@ -229,10 +229,10 @@ export const calculateActiveTimestampDurations = function calculateActiveTimesta
     }
   }
   return tmp6(bound, start);
-};
+}
 export { formatActiveTimestamp };
 export { formatTimestampToA11yLabel };
-export const formatActiveA11yTimestamp = function formatActiveA11yTimestamp(end, now) {
+export function formatActiveA11yTimestamp(end, now) {
   let start;
   end = undefined;
   if ("end" in end) {
@@ -266,10 +266,10 @@ export const formatActiveA11yTimestamp = function formatActiveA11yTimestamp(end,
     }
   }
   tmp6Result = tmp6(bound, start);
-};
+}
 export const A11Y_FORMAT_SET = obj;
 export { formatEndedTimestamp };
-export const formatEntryTimestamp = function formatEntryTimestamp(contentInventoryEntry, locale, time, arg3) {
+export function formatEntryTimestamp(contentInventoryEntry, locale, time, arg3) {
   let tmp8;
   let timestamp = time;
   if (time === undefined) {
@@ -296,13 +296,13 @@ export const formatEntryTimestamp = function formatEntryTimestamp(contentInvento
     tmp8 = formatEndedTimestamp(contentInventoryEntry, 0, timestamp, obj);
   }
   return tmp8;
-};
-export const getTrait = function getTrait(contentInventoryEntry, AGGREGATE_COUNT) {
+}
+export function getTrait(contentInventoryEntry, AGGREGATE_COUNT) {
   let closure_0 = AGGREGATE_COUNT;
   const traits = contentInventoryEntry.traits;
   return traits.find((type) => type.type === TRENDING_CONTENT);
-};
-export const isEntryActive = function isEntryActive(entry) {
+}
+export function isEntryActive(entry) {
   const IS_LIVE = ContentInventoryTraitType.ContentInventoryTraitType.IS_LIVE;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -314,8 +314,8 @@ export const isEntryActive = function isEntryActive(entry) {
     flag = false;
   }
   return flag;
-};
-export const isEntryNew = function isEntryNew(entry) {
+}
+export function isEntryNew(entry) {
   const FIRST_TIME = ContentInventoryTraitType.ContentInventoryTraitType.FIRST_TIME;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -327,13 +327,13 @@ export const isEntryNew = function isEntryNew(entry) {
     flag = false;
   }
   return flag;
-};
-export const isEntryRecent = function isEntryRecent(id) {
+}
+export function isEntryRecent(id) {
   const obj = SnowflakeUtilsDefault;
   const ageResult = obj.age(id.id);
   return ageResult / DurationsDefault.Millis.HOUR < 48;
-};
-export const isEntryExpired = function isEntryExpired(content) {
+}
+export function isEntryExpired(content) {
   let tmp = null != content.expires_at;
   if (tmp) {
     const _Date = Date;
@@ -347,8 +347,8 @@ export const isEntryExpired = function isEntryExpired(content) {
     const date1 = new Date();
   }
   return tmp;
-};
-export const isEntryLive = function isEntryLive(traits) {
+}
+export function isEntryLive(traits) {
   const IS_LIVE = ContentInventoryTraitType.ContentInventoryTraitType.IS_LIVE;
   traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -375,8 +375,8 @@ export const isEntryLive = function isEntryLive(traits) {
     flag = !tmp2;
   }
   return flag;
-};
-export const getEntryDuration = function getEntryDuration(contentInventoryEntry) {
+}
+export function getEntryDuration(contentInventoryEntry) {
   const DURATION_SECONDS = ContentInventoryTraitType.ContentInventoryTraitType.DURATION_SECONDS;
   const traits = contentInventoryEntry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -385,8 +385,8 @@ export const getEntryDuration = function getEntryDuration(contentInventoryEntry)
     duration_seconds = found.duration_seconds;
   }
   return duration_seconds;
-};
-export const getAggregateRange = function getAggregateRange(traits) {
+}
+export function getAggregateRange(traits) {
   const AGGREGATE_RANGE = ContentInventoryTraitType.ContentInventoryTraitType.AGGREGATE_RANGE;
   traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -395,8 +395,8 @@ export const getAggregateRange = function getAggregateRange(traits) {
     range = found.range;
   }
   return range;
-};
-export const isEntryMarathon = function isEntryMarathon(entry) {
+}
+export function isEntryMarathon(entry) {
   const MARATHON = ContentInventoryTraitType.ContentInventoryTraitType.MARATHON;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -405,10 +405,10 @@ export const isEntryMarathon = function isEntryMarathon(entry) {
     marathon = found.marathon;
   }
   return marathon;
-};
-export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(traits) {
+}
+export function getResurrectedEntryLastPlayTime(entry) {
   const RESURRECTED = ContentInventoryTraitType.ContentInventoryTraitType.RESURRECTED;
-  traits = traits.traits;
+  const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let prop;
   if (found != null) {
@@ -422,13 +422,13 @@ export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastP
     date = new Date(found.resurrected_last_played);
   }
   return date;
-};
-export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(start) {
+}
+export function getFullResurrectedBadgeText(start) {
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4432.intervalToDuration;
-  _mod4432;
+  const intervalToDuration = _mod4440.intervalToDuration;
+  _mod4440;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;
@@ -446,11 +446,11 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   if (undefined !== days) {
     num3 = days;
   }
-  const intl = tmp(1128).intl;
+  const intl = tmp(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj2 = { months: num, weeks: num4, days: num5 };
   num4 = 0;
-  const NXBtjF = tmp(1128).t.NXBtjF;
+  const NXBtjF = tmp(1113).t.NXBtjF;
   if (num <= 0) {
     num4 = num2;
   }
@@ -462,8 +462,8 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
     }
   }
   return formatToPlainString(NXBtjF, obj2);
-};
-export const getEpisodeBadgeText = function getEpisodeBadgeText(large_text) {
+}
+export function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
     if ("" !== large_text) {
       const obj2 = /\w+ (\d+), \w+ (\d+)/;
@@ -478,8 +478,8 @@ export const getEpisodeBadgeText = function getEpisodeBadgeText(large_text) {
     }
   }
   return null;
-};
-export const getEpisodeBadgeA11yText = function getEpisodeBadgeA11yText(arg0) {
+}
+export function getEpisodeBadgeA11yText(arg0) {
   if (null != arg0) {
     if ("" !== arg0) {
       const obj = /\w+ (\d+), \w+ (\d+)/;
@@ -491,8 +491,8 @@ export const getEpisodeBadgeA11yText = function getEpisodeBadgeA11yText(arg0) {
       }
     }
   }
-};
-export const getRichGameStateBadgeText = function getRichGameStateBadgeText(state, party) {
+}
+export function getRichGameStateBadgeText(state, party) {
   let formatToPlainStringResult;
   let first;
   if (party != null) {
@@ -537,11 +537,11 @@ export const getRichGameStateBadgeText = function getRichGameStateBadgeText(stat
     const obj = { count: first };
     formatToPlainStringResult = intl.formatToPlainString(intl4.t.UTYMsa, obj);
   }
-};
-export const isEntryTopGame = function isEntryTopGame(contentInventoryEntry) {
+}
+export function isEntryTopGame(contentInventoryEntry) {
   return contentInventoryEntry.content_type === ContentInventoryEntryType.ContentInventoryEntryType.TOP_GAME;
-};
-export const getStreakCount = function getStreakCount(entry) {
+}
+export function getStreakCount(entry) {
   const STREAK_DAYS = ContentInventoryTraitType.ContentInventoryTraitType.STREAK_DAYS;
   const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -550,8 +550,8 @@ export const getStreakCount = function getStreakCount(entry) {
     streak_count_days = found.streak_count_days;
   }
   return streak_count_days;
-};
-export const isValidStreak = function isValidStreak(traits) {
+}
+export function isValidStreak(traits) {
   const STREAK_DAYS = ContentInventoryTraitType.ContentInventoryTraitType.STREAK_DAYS;
   traits = traits.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
@@ -570,8 +570,8 @@ export const isValidStreak = function isValidStreak(traits) {
     const diff = Date.now() - extractTimestampResult;
     return diff <= 48 * DurationsDefault.Millis.HOUR;
   }
-};
-export const getMarathonDescription = function getMarathonDescription(entry) {
+}
+export function getMarathonDescription(entry) {
   let intl;
   let intl2;
   let intl3;
@@ -595,23 +595,23 @@ export const getMarathonDescription = function getMarathonDescription(entry) {
       obj = { text: null, tooltipText: null, a11yText: null };
     } else {
       obj = { text: intl.formatToPlainString(intl4.t.vZaMem, obj2), tooltipText: intl2.formatToPlainString(intl4.t.S5F485, obj3), a11yText: intl3.formatToPlainString(intl4.t["RZY+tX"], obj4) };
-      intl = tmp(1128).intl;
+      intl = tmp(1113).intl;
       obj2 = { hours: rounded };
-      intl2 = tmp(1128).intl;
+      intl2 = tmp(1113).intl;
       obj3 = { hours: rounded };
-      intl3 = tmp(1128).intl;
+      intl3 = tmp(1113).intl;
       obj4 = { hours: rounded };
     }
     return obj;
   }
-};
-export const getTrendingType = function getTrendingType(traits) {
+}
+export function getTrendingType(entry) {
   const TRENDING_CONTENT = ContentInventoryTraitType.ContentInventoryTraitType.TRENDING_CONTENT;
-  traits = traits.traits;
+  const traits = entry.traits;
   const found = traits.find((type) => type.type === TRENDING_CONTENT);
   let trending;
   if (found != null) {
     trending = found.trending;
   }
   return trending;
-};
+}

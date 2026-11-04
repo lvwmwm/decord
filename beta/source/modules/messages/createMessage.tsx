@@ -1,16 +1,16 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10319
+// Function ID: 10320
 // Name: createMessage
-// Dependencies: [7728, 1406, 1392, 1087, 38, 10235, 2]
+// Dependencies: [7766, 1397, 1383, 1072, 38, 10315, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 10239 (createMessage)
+// Module 10319 (createMessage)
 import _modDef38 from "module_38" /* 38 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7728 */;
-import createNonce from "createNonce" /* 10235 */;
-import UserRecord from "UserRecord" /* 1406 */;
-import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 1087 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7766 */;
+import createNonce from "createNonce" /* 10315 */;
+import UserRecord from "UserRecord" /* 1397 */;
+import UserStore from "UserStore" /* 1383 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
@@ -27,7 +27,6 @@ const result = size.fileFinishedImporting("modules/messages/createMessage.tsx");
 export default function createMessage(tts) {
   let allowedMentions;
   let author;
-  let boostingPrompt;
   let changelogId;
   let channelId;
   let content;
@@ -51,7 +50,7 @@ export default function createMessage(tts) {
   }
   ({ messageReference, allowedMentions, author, nonce, state } = tts);
   const items = [];
-  ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, boostingPrompt, mediaMention } = tts);
+  ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, mediaMention } = tts);
   if (DEFAULT === metroImportAll.REPLY) {
     _modDef38(null != messageReference, "Replies must have a message reference");
     if (null == allowedMentions) {
@@ -82,17 +81,17 @@ export default function createMessage(tts) {
     const obj3 = createNonce;
     nonce1 = obj3.createNonce();
   }
-  const obj5 = { id: nonce1, type: DEFAULT, content, channel_id: channelId, author: tmp8, attachments: [], embeds: [], pinned: false, mentions: items, mention_channels: [], mention_roles: [], mention_everyone: false, timestamp: date.toISOString(), state, tts: flag, message_reference: messageReference, message_snapshots: [], flags, nonce, poll, shared_client_theme: sharedCustomTheme, changelog_id: changelogId, gifting_prompt: giftingPrompt, boosting_prompt: boostingPrompt, media_mention: mediaMention };
+  const obj5 = { id: nonce1, type: DEFAULT, content, channel_id: channelId, author: tmp8, attachments: [], embeds: [], pinned: false, mentions: items, mention_channels: [], mention_roles: [], mention_everyone: false, timestamp: date.toISOString(), state, tts: flag, message_reference: messageReference, message_snapshots: [], flags, nonce, poll, shared_client_theme: sharedCustomTheme, changelog_id: changelogId, gifting_prompt: giftingPrompt, media_mention: mediaMention };
   date = new Date();
   if (state == null) {
     state = metroImportDefault.SENDING;
   }
   return obj5;
 };
-export const userRecordToServer = function userRecordToServer(currentUser) {
+export function userRecordToServer(currentUser) {
   return { id: currentUser.id, username: currentUser.username, avatar: currentUser.avatar, discriminator: currentUser.discriminator, bot: currentUser.bot, global_name: currentUser.globalName, primary_guild: currentUser.primaryGuild };
-};
-export const createBotMessage = function createBotMessage(arg0) {
+}
+export function createBotMessage(arg0) {
   let channelId;
   let content;
   let date;
@@ -113,4 +112,4 @@ export const createBotMessage = function createBotMessage(arg0) {
   }
   date = new Date();
   return obj2;
-};
+}

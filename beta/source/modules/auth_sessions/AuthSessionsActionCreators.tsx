@@ -1,13 +1,13 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16867
+// Function ID: 16868
 // Name: AuthSessionsActionCreators
-// Dependencies: [5, 1087, 1297, 584, 2]
+// Dependencies: [5, 1072, 1282, 572, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 16277 (AuthSessionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
+// Module 16867 (AuthSessionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ obj = function _logOutSessions() {
       items = arr2;
       if (0 === length.length) {
         let c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       items = [length];
@@ -68,13 +68,13 @@ obj = function _logOutSessions() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/auth_sessions/AuthSessionsActionCreators.tsx");
 
-export const fetchAuthSessions = function fetchAuthSessions() {
+export function fetchAuthSessions() {
   return obj(...arguments);
-};
-export const clearAuthSessions = function clearAuthSessions() {
+}
+export function clearAuthSessions() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: [] });
-};
-export const logOutSessions = function logOutSessions() {
+}
+export function logOutSessions() {
   return obj(...arguments);
-};
+}

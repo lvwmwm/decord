@@ -1,24 +1,21 @@
-// Module ID: 18566
-// Function ID: 18567
+// Module ID: 19189
+// Function ID: 19190
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 1633, 1107, 9963, 5062, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1625, 1092, 10045, 5073, 2]
+// Exports: default
 
-// Module 18566 (PremiumSoundboardFeatureUpsell)
+// Module 19189 (PremiumSoundboardFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import nativeDefault from "native" /* 575 */;
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
+import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 10045 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-let tmp4;
-const EntitlementFeatureNames = tmp(5062);
-const PremiumFeatureUpsellDefault = tmp4(9963);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {
@@ -27,39 +24,11 @@ let closure_5 = createStyles.createStyles((arg0) => {
   rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_12 };
   return obj;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSoundboardFeatureUpsell(shouldShow) {
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(5);
-  shouldShow = shouldShow.shouldShow;
-  const tmp5 = closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + useSafeAreaInsetsDefault().bottom);
-  if (cResult[0] !== shouldShow) {
-    PremiumFeatureUpsellDefault;
-    const tmp9 = <tmp4Result shouldShow={shouldShow} featureName={EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE} />;
-    cResult[0] = shouldShow;
-    cResult[1] = tmp9;
-    tmp6 = tmp9;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp5.container) {
-    let tmp10;
-    if (cResult[3] === tmp6) {
-      tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const tmp11 = <View style={tmp5.container}>{tmp6}</View>;
-  cResult[2] = tmp5.container;
-  cResult[3] = tmp6;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : (function PremiumSoundboardFeatureUpsell(shouldShow) {
+const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumSoundboardFeatureUpsell.tsx");
+
+export default function PremiumSoundboardFeatureUpsell(shouldShow) {
   shouldShow = shouldShow.shouldShow;
   ({ shouldShow, featureName: EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE });
   PremiumFeatureUpsellDefault;
   return <View style={closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + useSafeAreaInsetsDefault().bottom).container}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumSoundboardFeatureUpsell.tsx");
-
-export default tmp3;
+};

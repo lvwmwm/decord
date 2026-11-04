@@ -1,12 +1,12 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12658
+// Function ID: 12659
 // Name: conjureSettingsSummary
-// Dependencies: [1128, 3862, 12409, 2]
+// Dependencies: [1113, 3868, 12618, 2]
 // Exports: conjureConnectedKeysSummary, conjureSettingsSummary
 
-// Module 12412 (conjureSettingsSummary)
-import intl7 from "intl" /* 1128 */;
-import _modDef3862 from "module_3862" /* 3862 */;
+// Module 12658 (conjureSettingsSummary)
+import intl7 from "intl" /* 1113 */;
+import _modDef3868 from "module_3868" /* 3868 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ let _require;
 
 let result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingsSummary.tsx");
 
-export const conjureSettingsSummary = function conjureSettingsSummary(settingsRequest, settings, arg2) {
+export function conjureSettingsSummary(settingsRequest, settings, arg2) {
   _require = settings;
   let closure_1 = arg2;
   let obj = require("conjureSettingsRequest");
@@ -37,7 +37,7 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
       formatToPlainString = intl.formatToPlainString;
       const _Array = Array;
       obj2 = { label: found.label, value: stringResult };
-      prop = _modDef3862["Z+FC3j"];
+      prop = _modDef3868["Z+FC3j"];
       if (Array.isArray("secret" === found.type || tmp.values[key])) {
         const _String2 = String;
         mapped = arr2.map(String);
@@ -47,16 +47,16 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
       }
       const type = found.type;
       if ("secret" === type) {
-        const intl6 = tmp3(1128).intl;
-        stringResult = intl6.string(tmp5(3862).CJq1rY);
+        const intl6 = tmp3(1113).intl;
+        stringResult = intl6.string(tmp5(3868).CJq1rY);
       } else if ("checkbox" === type) {
         let nXtpn3;
-        const intl5 = tmp3(1128).intl;
+        const intl5 = tmp3(1113).intl;
         const string = intl5.string;
         if (true === ("secret" === found.type || tmp.values[key])) {
-          nXtpn3 = tmp5(3862).nXtpn3;
+          nXtpn3 = tmp5(3868).nXtpn3;
         } else {
-          nXtpn3 = tmp5(3862)["0vfaMW"];
+          nXtpn3 = tmp5(3868)["0vfaMW"];
         }
         stringResult = string(nXtpn3);
       } else if ("select" === type) {
@@ -93,11 +93,11 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
       } else if ("game" === type) {
         let stringResult1;
         if (0 === mapped.length) {
-          const intl4 = tmp3(1128).intl;
-          stringResult1 = intl4.string(tmp5(3862).nEv677);
+          const intl4 = tmp3(1113).intl;
+          stringResult1 = intl4.string(tmp5(3868).nEv677);
         } else {
-          const intl3 = tmp3(1128).intl;
-          stringResult1 = intl3.string(tmp5(3862).Fw9G9A);
+          const intl3 = tmp3(1113).intl;
+          stringResult1 = intl3.string(tmp5(3868).Fw9G9A);
         }
         stringResult = stringResult1;
       } else {
@@ -106,23 +106,23 @@ export const conjureSettingsSummary = function conjureSettingsSummary(settingsRe
             stringResult = mapped.join(", ");
           }
         }
-        const intl2 = tmp3(1128).intl;
-        stringResult = intl2.string(tmp5(3862).Fw9G9A);
+        const intl2 = tmp3(1113).intl;
+        stringResult = intl2.string(tmp5(3868).Fw9G9A);
       }
       const items = [obj];
       return items;
     }
   });
-};
-export const conjureConnectedKeysSummary = function conjureConnectedKeysSummary(arr) {
+}
+export function conjureConnectedKeysSummary(arr) {
   const mapped = arr.map((label) => {
     let intl2;
     const intl = require("intl").intl;
     const formatToPlainString = intl.formatToPlainString;
-    const obj = { label, value: intl2.string(_modDef3862.CJq1rY) };
-    const prop = _modDef3862["Z+FC3j"];
+    const obj = { label, value: intl2.string(_modDef3868.CJq1rY) };
+    const prop = _modDef3868["Z+FC3j"];
     intl2 = require("intl").intl;
     return formatToPlainString(prop, obj);
   });
   return mapped.join(" \u00B7 ");
-};
+}

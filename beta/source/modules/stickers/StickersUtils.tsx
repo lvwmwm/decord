@@ -1,18 +1,18 @@
-// Module ID: 6520
-// Function ID: 6521
+// Module ID: 6560
+// Function ID: 6561
 // Name: StickersUtils
-// Dependencies: [1246, 4877, 4834, 1087, 6521, 1417, 1902, 1384, 1452, 2]
+// Dependencies: [1231, 4885, 4842, 1072, 6561, 1409, 1894, 1375, 1444, 2]
 // Exports: createStickerPackCategory, getFavoriteStickerIds, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerPackPreviewSticker, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker
 
-// Module 6520 (StickersUtils)
-import Constants from "Constants" /* 1087 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AvatarUtils from "AvatarUtils" /* 1417 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import StickersTypes from "StickersTypes" /* 6521 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import StickersConstants from "StickersConstants" /* 4834 */;
+// Module 6560 (StickersUtils)
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import AvatarUtils from "AvatarUtils" /* 1409 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1444 */;
+import StickersTypes from "StickersTypes" /* 6561 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import StickersConstants from "StickersConstants" /* 4842 */;
 import size_mod from "module_2" /* 2 */;
 
 let ASSET_ENDPOINT;
@@ -20,11 +20,11 @@ let c10;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f96400 = (id) => id.id === cover_sticker_id.cover_sticker_id;
+const f89040 = (id) => id.id === cover_sticker_id.cover_sticker_id;
 function getStickerExtensionFromFormatType(format_type) {
   if (StickersTypes.StickerFormat.PNG === format_type) {
-    const SUPPORTS_WEBP = tmp(1417).SUPPORTS_WEBP;
-    const StickerExtensions = tmp(6521).StickerExtensions;
+    const SUPPORTS_WEBP = tmp(1409).SUPPORTS_WEBP;
+    const StickerExtensions = tmp(6561).StickerExtensions;
     return SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
   } else if (StickersTypes.StickerFormat.APNG === format_type) {
     return StickersTypes.StickerExtensions.APNG;
@@ -55,19 +55,19 @@ let closure_16 = [];
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/stickers/StickersUtils.tsx");
 
-export const getStickerPackPreviewSticker = function getStickerPackPreviewSticker(cover_sticker_id) {
+export function getStickerPackPreviewSticker(cover_sticker_id) {
   let closure_0 = cover_sticker_id;
   if (null != cover_sticker_id.cover_sticker_id) {
     const stickers = cover_sticker_id.stickers;
-    const found = stickers.find(f96400);
+    const found = stickers.find(f89040);
     if (null != found) {
       return found;
     }
   }
   return cover_sticker_id.stickers[0];
-};
+}
 export { getStickerExtensionFromFormatType };
-export const getStickerFormatTypeFromFileType = function getStickerFormatTypeFromFileType(arg0) {
+export function getStickerFormatTypeFromFileType(arg0) {
   if ("application/json" === arg0) {
     return StickersTypes.StickerFormat.LOTTIE;
   } else if ("image/apng" === arg0) {
@@ -89,18 +89,18 @@ export const getStickerFormatTypeFromFileType = function getStickerFormatTypeFro
     }
     return StickersTypes.StickerFormat.PNG;
   }
-};
-export const getFilenameForSticker = function getFilenameForSticker(name) {
+}
+export function getFilenameForSticker(name) {
   let combined = null;
   if (null != name) {
     const _HermesInternal = HermesInternal;
     combined = "" + name.name + "." + getStickerExtensionFromFormatType(name.format_type);
   }
   return combined;
-};
-export const getStickerTagForEmoji = function getStickerTagForEmoji(id) {
+}
+export function getStickerTagForEmoji(id) {
   return null != id.id ? id.id : id.optionallyDiverseSequence;
-};
+}
 export const getStickerAssetUrl = (format_type) => {
   let obj = arg1;
   if (arg1 === undefined) {
@@ -120,13 +120,13 @@ export const getStickerAssetUrl = (format_type) => {
     let PNG = format_type.format_type;
     const tmp = format_type.format_type === StickersTypes.StickerFormat.GIF && flag;
     if (tmp) {
-      PNG = tmp23(6521).StickerFormat.PNG;
+      PNG = tmp23(6561).StickerFormat.PNG;
     }
     const tmp3 = getStickerExtensionFromFormatType(PNG);
     const STICKER_ASSETResult = Endpoints.STICKER_ASSET(format_type.id, tmp3);
     let flag2 = false;
     try {
-      flag2 = tmp23(1902).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
+      flag2 = tmp23(1894).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
     } catch (err) {
     }
     let str2 = "";
@@ -181,7 +181,7 @@ export const getStickerAssetUrl = (format_type) => {
     }
   }
 };
-export const getStickerPackBannerAssetUrl = function getStickerPackBannerAssetUrl(stickerPack, size) {
+export function getStickerPackBannerAssetUrl(stickerPack, size) {
   const banner_asset_id = stickerPack.banner_asset_id;
   if (null == banner_asset_id) {
     return null;
@@ -203,24 +203,24 @@ export const getStickerPackBannerAssetUrl = function getStickerPackBannerAssetUr
     let sum = combined;
     if (null != size) {
       const _HermesInternal3 = HermesInternal;
-      const tmp15Result = tmp15(1452);
+      const tmp15Result = tmp15(1444);
       sum = combined + "?size=" + tmp15Result.getBestMediaProxySize(size);
     }
     return sum;
   }
-};
-export const isStickerAssetUrl = function isStickerAssetUrl(str) {
+}
+export function isStickerAssetUrl(str) {
   return null != str.match("development" !== authStore ? regExp : regExp1);
-};
-export const isStickerPackAnimated = function isStickerPackAnimated(stickerPack) {
+}
+export function isStickerPackAnimated(stickerPack) {
   const stickers = stickerPack.stickers;
   return stickers.some((format_type) => {
     format_type = format_type.format_type;
     const tmp3 = format_type === StickersTypes.StickerFormat.APNG || format_type === StickersTypes.StickerFormat.LOTTIE || format_type === StickersTypes.StickerFormat.GIF;
     return tmp3;
   });
-};
-export const createStickerPackCategory = function createStickerPackCategory(id) {
+}
+export function createStickerPackCategory(id) {
   let first;
   let closure_0 = id;
   const obj = { type: StickersTypes.StickerCategoryTypes.PACK, id: id.id, name: id.name, stickers: id.stickers, previewSticker: first };
@@ -228,24 +228,24 @@ export const createStickerPackCategory = function createStickerPackCategory(id) 
     first = id.stickers[0];
   } else {
     const stickers = id.stickers;
-    first = stickers.find(f96400);
+    first = stickers.find(f89040);
   }
   return obj;
-};
-export const shouldAnimateSticker = function shouldAnimateSticker(setting, arg1) {
-  let tmp = arg1;
+}
+export function shouldAnimateSticker(setting, isFocused) {
+  let tmp = isFocused;
   if (setting !== metroRequire.ANIMATE_ON_INTERACTION) {
     tmp = setting !== metroRequire.NEVER_ANIMATE;
   }
   return tmp;
-};
-export const isGuildSticker = function isGuildSticker(sticker) {
-  return sticker.type === StickersTypes.MetaStickerType.GUILD;
-};
-export const isStandardSticker = function isStandardSticker(body) {
+}
+export function isGuildSticker(body) {
+  return body.type === StickersTypes.MetaStickerType.GUILD;
+}
+export function isStandardSticker(body) {
   return body.type === StickersTypes.MetaStickerType.STANDARD;
-};
-export const getMessageStickers = function getMessageStickers(message) {
+}
+export function getMessageStickers(message) {
   let stickerItems;
   if (message.stickerItems.length > 0) {
     stickerItems = message.stickerItems;
@@ -253,15 +253,15 @@ export const getMessageStickers = function getMessageStickers(message) {
     stickerItems = message.stickers.length > 0 ? message.stickers : [];
   }
   return stickerItems;
-};
-export const isAvailableGuildSticker = function isAvailableGuildSticker(guild_id) {
+}
+export function isAvailableGuildSticker(guild_id) {
   if (null === guild_id) {
     return false;
   } else {
     return undefined !== GuildStore.getGuild(guild_id.guild_id);
   }
-};
-export const getFavoriteStickerIds = function getFavoriteStickerIds() {
+}
+export function getFavoriteStickerIds() {
   const favoriteStickers = UserSettingsProtoStore.frecencyWithoutFetchingLatest.favoriteStickers;
   let stickerIds;
   if (favoriteStickers != null) {
@@ -271,8 +271,8 @@ export const getFavoriteStickerIds = function getFavoriteStickerIds() {
     stickerIds = closure_16;
   }
   return stickerIds;
-};
-export const isFavoriteSticker = function isFavoriteSticker(arg0) {
+}
+export function isFavoriteSticker(arg0) {
   const favoriteStickers = UserSettingsProtoStore.frecencyWithoutFetchingLatest.favoriteStickers;
   let stickerIds;
   if (favoriteStickers != null) {
@@ -282,4 +282,4 @@ export const isFavoriteSticker = function isFavoriteSticker(arg0) {
     stickerIds = closure_16;
   }
   return stickerIds.includes(arg0);
-};
+}

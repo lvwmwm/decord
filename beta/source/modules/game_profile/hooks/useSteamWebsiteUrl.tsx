@@ -1,113 +1,29 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 9344
+// Function ID: 9345
 // Name: useSteamWebsiteUrl
-// Dependencies: [2022, 1087, 558, 576, 9307, 9305, 2033, 504, 2]
-// Exports: buildSteamStoreUrl
+// Dependencies: [2014, 1072, 504, 9345, 9343, 2026, 2]
+// Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 9306 (useSteamWebsiteUrl)
-import Constants from "Constants" /* 1087 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9307 */;
-import GameStore from "GameStore" /* 2022 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9344 (useSteamWebsiteUrl)
+import Constants from "Constants" /* 1072 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9345 */;
+import GameStore from "GameStore" /* 2014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Distributors = Constants.Distributors;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWebsiteUrl(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let tmp;
-      if (null == closure_0) {
-        return null;
-      } else {
-        const game = GameStore.getGame(tmp);
-        if (null == game) {
-          return null;
-        } else {
-          const tmp11 = require;
-          if (game.steamReleaseStatus === SteamReleaseStatus.SteamReleaseStatus.RETIRED_ABANDONED) {
-            return null;
-          } else {
-            let url;
-            let tmp7;
-            const websites = game.websites;
-            const found = websites.find((category) => category.category === closure_1_0(closure_1_1[5]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
-            if (found != null) {
-              url = found.url;
-            }
-            const thirdPartySkus = game.thirdPartySkus;
-            const found1 = thirdPartySkus.filter((distributor) => {
-              let tmp = distributor.distributor === constants.STEAM;
-              if (tmp) {
-                const obj = closure_1_0(closure_1_1[6]);
-                tmp = !obj.isNullOrEmpty(distributor.id);
-              }
-              return tmp;
-            });
-            const first = found1[0];
-            let id;
-            if (first != null) {
-              id = first.id;
-            }
-            let combined = null;
-            const tmp11Result = tmp11(2033);
-            if (!tmp11Result.isNullOrEmpty(id)) {
-              const _encodeURIComponent = encodeURIComponent;
-              const _HermesInternal = HermesInternal;
-              combined = "https://store.steampowered.com/app/" + encodeURIComponent(id);
-            }
-            if (found1.length <= 1) {
-              if (null == combined) {
-                let tmp8 = null;
-                if (null != url) {
-                  tmp8 = url;
-                }
-                combined = tmp8;
-              }
-              tmp7 = combined;
-            } else {
-              tmp7 = url;
-            }
-            return tmp7;
-          }
-        }
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useSteamWebsiteUrl(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
+
+export function buildSteamStoreUrl(arg0) {
+  return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
+}
+export function useSteamWebsiteUrl(id) {
+  _require = id;
   let obj = require("get initialized");
   const items = [GameStore];
-  const items1 = [arg0];
+  const items1 = [id];
   return obj.useStateFromStores(items, () => {
     let tmp;
     if (null == closure_0) {
@@ -124,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWe
           let url;
           let tmp7;
           const websites = game.websites;
-          const found = websites.find((category) => category.category === closure_1_0(closure_1_1[5]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === id(closure_1_1[4]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             url = found.url;
           }
@@ -132,18 +48,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWe
           const found1 = thirdPartySkus.filter((distributor) => {
             let tmp = distributor.distributor === constants.STEAM;
             if (tmp) {
-              const obj = closure_1_0(closure_1_1[6]);
+              const obj = id(closure_1_1[5]);
               tmp = !obj.isNullOrEmpty(distributor.id);
             }
             return tmp;
           });
           const first = found1[0];
-          let id;
+          id = undefined;
           if (first != null) {
             id = first.id;
           }
           let combined = null;
-          const tmp11Result = tmp11(2033);
+          const tmp11Result = tmp11(2026);
           if (!tmp11Result.isNullOrEmpty(id)) {
             const _encodeURIComponent = encodeURIComponent;
             const _HermesInternal = HermesInternal;
@@ -166,11 +82,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteamWe
       }
     }
   }, items1);
-});
-function buildSteamStoreUrl(arg0) {
-  return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
 }
-const result = size.fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
-
-export { buildSteamStoreUrl };
-export const useSteamWebsiteUrl = tmp2;

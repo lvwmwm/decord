@@ -1,20 +1,20 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10726
+// Function ID: 10727
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10648, 21, 5003, 587, 558, 576, 1505, 10649, 10615, 2]
+// Dependencies: [19, 17, 10727, 21, 5014, 575, 1497, 10728, 10694, 2]
+// Exports: default
 
-// Module 10647 (UnifiedGiftModalRecipientSelectScreen)
+// Module 10726 (UnifiedGiftModalRecipientSelectScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10615 */;
-import UserRowConstants from "UserRowConstants" /* 10648 */;
+import nativeDefault from "native" /* 575 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10694 */;
+import UserRowConstants from "UserRowConstants" /* 10727 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5003 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, navigation;
+let importDefault;
 
 let obj2;
 const View = react_native.View;
@@ -23,50 +23,11 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { flex: 1, paddingTop: 16, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
-  const obj = setRecipientUser(576);
-  const cResult = obj.c(6);
-  setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj2 = setRecipientUser(1505);
-  navigation = obj2.useNavigation();
-  const tmp4 = closure_6();
-  if (cResult[0] === navigation) {
-    let tmp5;
-    if (cResult[1] === setRecipientUser) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === tmp4.container) {
-      let tmp7;
-      if (cResult[4] === tmp5) {
-        tmp7 = cResult[5];
-      }
-      return tmp7;
-    }
-    const tmp10 = <View style={tmp4.container}>{tmp5}</View>;
-    cResult[3] = tmp4.container;
-    cResult[4] = tmp5;
-    cResult[5] = tmp10;
-    tmp7 = tmp10;
-  }
-  const tmp6 = jsx(navigation(10649), {
-    onSelectUser(arg0) {
-      setRecipientUser(arg0);
-      navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL, undefined, { pop: true });
-    },
-    rowMode: UserRowModes.NONE,
-    disableGradient: true,
-    disableThemedGradient: true
-  });
-  cResult[0] = navigation;
-  cResult[1] = setRecipientUser;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
-  setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj = setRecipientUser(1505);
-  importDefault = obj.useNavigation();
-  return <View style={closure_6().container}>{null}</View>;
-});
 const result = size.fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
 
-export default tmp3;
+export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
+  setRecipientUser = setRecipientUser.setRecipientUser;
+  const obj = setRecipientUser(1497);
+  importDefault = obj.useNavigation();
+  return <View style={closure_6().container}>{null}</View>;
+};

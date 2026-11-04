@@ -1,20 +1,23 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 17220
+// Function ID: 17221
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [16596, 1394, 1128, 2]
-// Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
+// Dependencies: [17196, 1385, 1083, 1113, 7413, 2]
+// Exports: formatMonthlyPriceLabel, formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 16622 (GuildRoleSubscriptionTypeUtils)
-import intl5 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16596 */;
+// Module 17220 (GuildRoleSubscriptionTypeUtils)
+import Constants from "Constants" /* 1083 */;
+import intl5 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import PriceUtils from "PriceUtils" /* 7413 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
+const CurrencyCodes = Constants.CurrencyCodes;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionTypeUtils.tsx");
 
-export const getBenefitKey = function getBenefitKey(id) {
+export function getBenefitKey(id) {
   let combined;
   if ("roles" in id) {
     const _HermesInternal2 = HermesInternal;
@@ -24,23 +27,44 @@ export const getBenefitKey = function getBenefitKey(id) {
     combined = "" + id.ref_type + "-" + id.emoji_id + "-" + id.name + "-" + id.ref_id;
   }
   return combined;
-};
-export const formatPlanInterval = function formatPlanInterval(merged) {
+}
+export function formatPlanInterval(first3) {
   let cuSp8Q;
-  const interval = merged.interval;
-  const count = merged.interval_count;
+  const interval = first3.interval;
+  const count = first3.interval_count;
   const intl = intl5.intl;
   const format = intl.format;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    cuSp8Q = tmp(1128).t["3rUmPQ"];
+    cuSp8Q = tmp(1113).t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    cuSp8Q = tmp(1128).t.zuN545;
+    cuSp8Q = tmp(1113).t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    cuSp8Q = tmp(1128).t.cuSp8Q;
+    cuSp8Q = tmp(1113).t.cuSp8Q;
   }
   return format(cuSp8Q, { count });
-};
-export const formatPlanIntervalDuration = function formatPlanIntervalDuration(interval) {
+}
+export function formatMonthlyPriceLabel(first1) {
+  let cuSp8Q;
+  let format;
+  let obj2;
+  const intl = intl5.intl;
+  const formatToPlainString = intl.formatToPlainString;
+  const obj = { price: obj2.formatPrice(first1, CurrencyCodes.USD), interval: format(cuSp8Q, { count: 1 }) };
+  const CgmBaG = intl5.t.CgmBaG;
+  const MONTH = SubscriptionIntervalTypes.MONTH;
+  obj2 = PriceUtils;
+  const intl2 = intl5.intl;
+  format = intl2.format;
+  if (SubscriptionIntervalTypes.DAY === MONTH) {
+    cuSp8Q = tmp(1113).t["3rUmPQ"];
+  } else if (SubscriptionIntervalTypes.MONTH === MONTH) {
+    cuSp8Q = tmp(1113).t.zuN545;
+  } else if (SubscriptionIntervalTypes.YEAR === MONTH) {
+    cuSp8Q = tmp(1113).t.cuSp8Q;
+  }
+  return formatToPlainString(CgmBaG, obj);
+}
+export function formatPlanIntervalDuration(interval) {
   let interval_count;
   ({ interval, interval_count } = interval);
   if (SubscriptionIntervalTypes.DAY === interval) {
@@ -65,10 +89,10 @@ export const formatPlanIntervalDuration = function formatPlanIntervalDuration(in
     const obj = { years: interval_count };
     return intl.formatToPlainString(intl5.t.IfYQVC, obj);
   }
-};
-export const isChannelBenefit = function isChannelBenefit(ref_type) {
+}
+export function isChannelBenefit(ref_type) {
   return ref_type.ref_type === constants.CHANNEL;
-};
-export const isIntangibleBenefit = function isIntangibleBenefit(ref_type) {
+}
+export function isIntangibleBenefit(ref_type) {
   return ref_type.ref_type === constants.INTANGIBLE;
-};
+}

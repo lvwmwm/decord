@@ -1,88 +1,35 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 13003
+// Function ID: 13004
 // Name: ConjureStaffAccessNotice
-// Dependencies: [19, 1087, 21, 558, 576, 11888, 1114, 5692, 1128, 3862, 7988, 2]
+// Dependencies: [19, 1072, 21, 13004, 1099, 5709, 8025, 1113, 3868, 2]
+// Exports: default
 
-// Module 11887 (ConjureStaffAccessNotice)
+// Module 13003 (ConjureStaffAccessNotice)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1087 */;
-import router_utils from "router_utils" /* 1114 */;
-import _modDef3862 from "module_3862" /* 3862 */;
-import LinkingDefault from "Linking" /* 5692 */;
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1099 */;
+import _modDef3868 from "module_3868" /* 3868 */;
+import LinkingDefault from "Linking" /* 5709 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStaffAccessNotice() {
+const result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureStaffAccessNotice.tsx");
+
+export default function ConjureStaffAccessNotice() {
   let conjureStaffAccessTarget;
-  let tmp5;
-  let obj = conjureStaffAccessTarget(576);
-  const cResult = obj.c(6);
-  let obj2 = conjureStaffAccessTarget(11888);
-  conjureStaffAccessTarget = obj2.useConjureStaffAccessTarget();
-  if (cResult[0] !== conjureStaffAccessTarget) {
-    const fn = function n() {
-      if (null != conjureStaffAccessTarget) {
-        if ("channel" === conjureStaffAccessTarget.kind) {
-          const obj2 = router_utils;
-          obj2.transitionTo(Routes.CHANNEL(conjureStaffAccessTarget.guildId, conjureStaffAccessTarget.channelId));
-        } else {
-          const obj = LinkingDefault;
-          obj.openURL(conjureStaffAccessTarget.url);
-        }
-      }
-    };
-    cResult[0] = conjureStaffAccessTarget;
-    cResult[1] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-  }
-  let tmp6 = null;
-  if (null != conjureStaffAccessTarget) {
-    let tmp7;
-    let tmp11;
-    if (cResult[2] !== tmp5) {
-      const intl = tmp(1128).intl;
-      const format = intl.format;
-      const obj3 = { channel: conjureStaffAccessTarget(11888).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
-      const v6anmu1 = _modDef3862["6anmu1"];
-      const formatResult = format(v6anmu1, obj3);
-      cResult[2] = tmp5;
-      cResult[3] = formatResult;
-      tmp7 = formatResult;
-    } else {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] !== tmp7) {
-      const tmp13 = jsx(conjureStaffAccessTarget(7988).NewInlineNotice, { type: "info", role: "none", message: tmp7 });
-      cResult[4] = tmp7;
-      cResult[5] = tmp13;
-      tmp11 = tmp13;
-    } else {
-      tmp11 = cResult[5];
-    }
-    tmp6 = tmp11;
-  }
-  return tmp6;
-}) : (function ConjureStaffAccessNotice() {
-  let conjureStaffAccessTarget;
-  let obj = conjureStaffAccessTarget(11888);
+  let obj = conjureStaffAccessTarget(13004);
   conjureStaffAccessTarget = obj.useConjureStaffAccessTarget();
   [][0] = conjureStaffAccessTarget;
   let tmp5 = null;
   if (null != conjureStaffAccessTarget) {
-    const NewInlineNotice = tmp(7988).NewInlineNotice;
-    const intl = tmp(1128).intl;
+    const InlineNotice = tmp(8025).InlineNotice;
+    const intl = tmp(1113).intl;
     const format = intl.format;
-    const obj3 = { channel: conjureStaffAccessTarget(11888).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
-    const v6anmu1 = _modDef3862["6anmu1"];
-    tmp5 = <NewInlineNotice type="info" role="none" message={format(v6anmu1, obj3)} />;
+    const obj3 = { channel: conjureStaffAccessTarget(13004).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
+    const v6anmu1 = _modDef3868["6anmu1"];
+    tmp5 = <InlineNotice type="info" role="none" message={format(v6anmu1, obj3)} />;
   }
   return tmp5;
-});
-const result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureStaffAccessNotice.tsx");
-
-export default tmp2;
+};

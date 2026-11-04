@@ -1,39 +1,17 @@
-// Module ID: 7410
-// Function ID: 7411
+// Module ID: 7452
+// Function ID: 7453
 // Name: useIsRemote
-// Dependencies: [5747, 558, 576, 504, 2]
+// Dependencies: [5765, 504, 2]
+// Exports: default
 
-// Module 7410 (useIsRemote)
-import react from "react" /* 576 */;
-import GameConsoleStore from "GameConsoleStore" /* 5747 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7452 (useIsRemote)
+import get_initialized from "get initialized" /* 504 */;
+import GameConsoleStore from "GameConsoleStore" /* 5765 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRemote() {
-  let remoteSessionId;
-  let tmp4;
-  let tmp5;
-  let tmp = require;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameConsoleStore];
-    const fn = function s() {
-      const tmp = null != remoteSessionId.getRemoteSessionId() || null != remoteSessionId.getAwaitingRemoteSessionInfo();
-      return tmp;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useIsRemote() {
+const result = size.fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");
+
+export default function useIsRemote() {
   let remoteSessionId;
   const items = [GameConsoleStore];
   const obj = get_initialized;
@@ -41,7 +19,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRemot
     const tmp = null != remoteSessionId.getRemoteSessionId() || null != remoteSessionId.getAwaitingRemoteSessionInfo();
     return tmp;
   });
-});
-const result = size.fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");
-
-export default tmp2;
+};

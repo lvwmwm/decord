@@ -1,107 +1,22 @@
-// Module ID: 13514
-// Function ID: 13515
+// Module ID: 14132
+// Function ID: 14133
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [19, 5213, 558, 576, 504, 13449, 1388, 2]
+// Dependencies: [19, 5229, 504, 14069, 1379, 2]
+// Exports: default
 
-// Module 13514 (useGetExpiringGuildPowerups)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 13449 */;
+// Module 14132 (useGetExpiringGuildPowerups)
+import GlobalUtils from "GlobalUtils" /* 1379 */;
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 14069 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5213 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5229 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetExpiringGuildPowerups(arg0) {
-  let allPowerups;
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildPowerupsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      return GuildPowerupsStore.getStateForGuild(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (null != stateFromStores) {
-    let tmp11;
-    allPowerups = stateFromStores.allPowerups;
-    const unlockedPowerups = stateFromStores.unlockedPowerups;
-    if (cResult[4] === allPowerups) {
-      let tmp10;
-      if (cResult[5] === unlockedPowerups) {
-        tmp10 = cResult[6];
-      }
-      tmp8 = tmp10;
-    }
-    const _Object = Object;
-    const tmpResult2 = require("getExpiringGuildEntitlements");
-    const expiringGuildEntitlements = tmpResult2.getExpiringGuildEntitlements(Object.values(unlockedPowerups));
-    if (cResult[7] !== allPowerups) {
-      class G {
-        constructor(arg0) {
-          return allPowerups[arg0.sku_id];
-        }
-      }
-      cResult[7] = allPowerups;
-      cResult[8] = G;
-      tmp11 = G;
-    } else {
-      class G {
-        constructor(arg0) {
-          return allPowerups[arg0.sku_id];
-        }
-      }
-    }
-    const mapped = expiringGuildEntitlements.map(tmp11);
-    const found = mapped.filter(tmp(tmp2[6]).isNotNullish);
-    cResult[4] = allPowerups;
-    cResult[5] = unlockedPowerups;
-    cResult[6] = found;
-    tmp10 = found;
-  } else {
-    class G {
-      constructor(arg0) {
-        return allPowerups[arg0.sku_id];
-      }
-    }
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(arg0) {
-          return allPowerups[arg0.sku_id];
-        }
-      }
-      cResult[3] = tmp9;
-      tmp8 = tmp9;
-    } else {
-      class G {
-        constructor(arg0) {
-          return allPowerups[arg0.sku_id];
-        }
-      }
-    }
-  }
-  return tmp8;
-}) : (function useGetExpiringGuildPowerups(arg0) {
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
+
+export default function useGetExpiringGuildPowerups(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;
@@ -122,7 +37,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetExpi
       return mapped.filter(GlobalUtils.isNotNullish);
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
-
-export default tmp2;
+};

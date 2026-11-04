@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 let size;
 
 
-export const getImageSourcesFromImageProps = function getImageSourcesFromImageProps(source) {
+export function getImageSourcesFromImageProps(source) {
   let height;
   let referrerPolicy;
   let src;
@@ -86,4 +86,4 @@ export const getImageSourcesFromImageProps = function getImageSourcesFromImagePr
     }
   }
   return tmp2;
-};
+}

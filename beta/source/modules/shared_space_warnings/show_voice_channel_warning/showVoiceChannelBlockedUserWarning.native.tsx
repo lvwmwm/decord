@@ -1,17 +1,17 @@
-// Module ID: 15079
-// Function ID: 15080
+// Module ID: 15624
+// Function ID: 15625
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [2001, 15078, 15080, 1107, 5242, 15081, 2002, 1275, 2]
+// Dependencies: [1993, 15623, 15625, 1092, 5258, 15626, 1994, 1260, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 15079 (showVoiceChannelBlockedUserWarning)
-import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15080 */;
-import AppStateStore from "AppStateStore" /* 2001 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15078 */;
+// Module 15624 (showVoiceChannelBlockedUserWarning)
+import ConstantsIOS from "ConstantsIOS" /* 1092 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import asyncRequire from "asyncRequire" /* 1994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15625 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15623 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 const constants = SharedSpaceWarningConstants.VoiceChannelWarningSurfaces;
 const result = size.fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
 
-export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlockedUserWarning(channelId, items1) {
+export function showVoiceChannelBlockedUserWarning(channelId, items1) {
   let items;
   let obj2;
   const state = AppStateStore.getState();
@@ -32,9 +32,9 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
     ActionSheetActionCreatorsDefault;
     obj2 = { channel_id: channelId, blocked_user_ids: items, warning_surface: constants.POST_JOIN_SHEET };
     items = [items1];
-    const tmp12 = asyncRequire(15081, tmp3.paths);
+    const tmp12 = asyncRequire(15626, tmp3.paths);
     openLazy(tmp12, "gdm_blocked_user_action_sheet", obj);
   } else {
     React3();
   }
-};
+}

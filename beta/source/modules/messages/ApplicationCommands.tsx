@@ -1,17 +1,17 @@
-// Module ID: 8412
-// Function ID: 8413
+// Module ID: 8477
+// Function ID: 8478
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: getApplicationCommand
 
-// Module 8412 (_slicedToArray)
+// Module 8477 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const re1 = /<\/([^\s]+):(\d+)>(?:\s?(.*))?/;
 const result = size.fileFinishedImporting("modules/messages/ApplicationCommands.tsx");
 
-export const getApplicationCommand = function getApplicationCommand(content) {
+export function getApplicationCommand(content) {
   let tmp7;
   let tmp8;
   let tmp9;
@@ -37,4 +37,4 @@ export const getApplicationCommand = function getApplicationCommand(content) {
     }
     return tmp2;
   }
-};
+}

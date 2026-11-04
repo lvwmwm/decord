@@ -1,10 +1,10 @@
 // Module ID: 6914
 // Function ID: 6915
 // Name: AssetRegistry
-// Dependencies: [1134]
+// Dependencies: [1119]
 
 // Module 6914 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1134 */;
+import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/auth", width: 1424, height: 1500, scales: [1], hash: "1241abd72512c72c105ef9e9870d04e3", name: "background-splash-mobile", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c067e39c354eb66a1a53a1812a241a73", name: "ClipboardListIcon", type: "png" });

@@ -1,13 +1,10 @@
 // Module ID: 1820
 // Function ID: 1821
-// Dependencies: [1699]
-// Exports: useReducedMotion
+// Dependencies: [1821]
 
 // Module 1820
-import module_1699 from "module_1699" /* 1699 */;
+const require = globalThis.__r;
 
-let closure_0 = module_1699.isReducedMotionEnabledInSystem();
+({ oklab: require("module_1821") });
 
-export function useReducedMotion() {
-  return closure_0;
-}
+export default { oklab: require("module_1821") };

@@ -1,50 +1,22 @@
-// Module ID: 18695
-// Function ID: 18696
+// Module ID: 19199
+// Function ID: 19200
 // Name: useSelfHasVideo
-// Dependencies: [6804, 502, 2014, 558, 576, 10937, 504, 2]
+// Dependencies: [6843, 502, 2006, 504, 11228, 2]
+// Exports: default
 
-// Module 18695 (useSelfHasVideo)
-import participantHasVideo from "participantHasVideo" /* 10937 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
+// Module 19199 (useSelfHasVideo)
+import participantHasVideo from "participantHasVideo" /* 11228 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import MediaEngineStore from "MediaEngineStore" /* 2006 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelfHasVideo(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore, AuthenticationStore, MediaEngineStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      const canRenderParticipantVideo = participantHasVideo.canRenderParticipantVideo;
-      participantHasVideo;
-      const participant = ChannelRTCStore.getParticipant(closure_0, AuthenticationStore.getId());
-      return canRenderParticipantVideo(participant, MediaEngineStore);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8);
-}) : (function useSelfHasVideo(arg0) {
+const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useSelfHasVideo.tsx");
+
+export default function useSelfHasVideo(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelRTCStore, AuthenticationStore, MediaEngineStore];
@@ -55,7 +27,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelfHas
     const participant = ChannelRTCStore.getParticipant(closure_0, AuthenticationStore.getId());
     return canRenderParticipantVideo(participant, MediaEngineStore);
   });
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useSelfHasVideo.tsx");
-
-export default tmp2;
+};

@@ -1,49 +1,20 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17760
+// Function ID: 17761
 // Name: CreateBugReportSetting
-// Dependencies: [1372, 1373, 13830, 558, 576, 504, 1384, 11240, 1128, 16955, 17149, 2]
+// Dependencies: [1357, 1358, 11127, 504, 1375, 11540, 1113, 17559, 17753, 2]
 
-// Module 17156 (CreateBugReportSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1128 */;
-import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1373 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import BugReportManagerDefault from "BugReportManager" /* 13830 */;
-import WrenchIcon from "WrenchIcon" /* 16955 */;
-import BugReporterSetting from "BugReporterSetting" /* 17149 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 17760 (CreateBugReportSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1113 */;
+import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1358 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import BugReportManagerDefault from "BugReportManager" /* 11127 */;
+import WrenchIcon from "WrenchIcon" /* 17559 */;
+import BugReporterSetting from "BugReporterSetting" /* 17753 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateBugReportSettingToggleValue() {
-  let isBugReporterEnabled;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DeveloperOptionsStore];
-    const fn = function o() {
-      return isBugReporterEnabled.isBugReporterEnabled;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useCreateBugReportSettingToggleValue() {
-  let isBugReporterEnabled;
-  const items = [DeveloperOptionsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => isBugReporterEnabled.isBugReporterEnabled);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -65,7 +36,12 @@ let obj = {
       obj.terminate(true);
     }
   },
-  useValue: tmp2,
+  useValue: function useCreateBugReportSettingToggleValue() {
+    let isBugReporterEnabled;
+    const items = [DeveloperOptionsStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => isBugReporterEnabled.isBugReporterEnabled);
+  },
   useDescription: function useCreateBugReportSettingDescription() {
     PlatformUtils;
     return "Photo permission is required";

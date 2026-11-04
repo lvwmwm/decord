@@ -1,14 +1,14 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 14411
+// Function ID: 14412
 // Name: ChannelSortingUtils
-// Dependencies: [4859, 1087, 13349, 7240, 2]
+// Dependencies: [4867, 1072, 13980, 7281, 2]
 // Exports: areTypesInSameSection, getChannelPlacementUpdates, getDropData, getSectionSiblings
 
-// Module 13893 (ChannelSortingUtils)
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7240 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13349 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import Constants from "Constants" /* 1087 */;
+// Module 14411 (ChannelSortingUtils)
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7281 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13980 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -429,7 +429,7 @@ function getCategoryKey(parent_id, categories) {
 ({ ChannelTypes: hasOwnProperty, NULL_STRING_CHANNEL_ID: metroRequire } = Constants);
 let result = size.fileFinishedImporting("modules/channel_sorting/ChannelSortingUtils.tsx");
 
-export const areTypesInSameSection = function areTypesInSameSection(arg0, arg1) {
+export function areTypesInSameSection(arg0, arg1) {
   let tmp = null != arg0 && null != arg1;
   if (tmp) {
     let tmp2 = arg0 === arg1;
@@ -444,8 +444,8 @@ export const areTypesInSameSection = function areTypesInSameSection(arg0, arg1) 
     tmp = tmp2;
   }
   return tmp;
-};
-export const getDropData = function getDropData(localChannel, arg1, localChannel2, to, channelList) {
+}
+export function getDropData(localChannel, arg1, localChannel2, to, channelList) {
   let tmp48;
   if (null != localChannel) {
     if (null != localChannel2) {
@@ -869,10 +869,10 @@ export const getDropData = function getDropData(localChannel, arg1, localChannel
     }
   }
   return null;
-};
+}
 export { getChannelMoveUpdates };
 export { getCategoryKey };
-export const getSectionSiblings = function getSectionSiblings(listChannel, categories) {
+export function getSectionSiblings(listChannel, categories) {
   let parent_id = listChannel.parent_id;
   if (null == parent_id) {
     parent_id = closure_6;
@@ -899,8 +899,8 @@ export const getSectionSiblings = function getSectionSiblings(listChannel, categ
     }
     return tmp;
   });
-};
-export const getChannelPlacementUpdates = function getChannelPlacementUpdates(listChannel, categories, categoryKey, arg3) {
+}
+export function getChannelPlacementUpdates(listChannel, categories, categoryKey, arg3) {
   _require = listChannel;
   if (listChannel.isCategory()) {
     let first;
@@ -998,4 +998,4 @@ export const getChannelPlacementUpdates = function getChannelPlacementUpdates(li
       }
     }
   }
-};
+}

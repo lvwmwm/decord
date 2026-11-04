@@ -1,28 +1,28 @@
-// Module ID: 10234
-// Function ID: 10235
+// Module ID: 10314
+// Function ID: 10315
 // Name: PlaintextResolvers
-// Dependencies: [32, 6757, 6802, 4855, 4933, 4915, 4909, 4877, 4935, 4945, 1392, 1087, 1395, 7791, 5636, 11, 6740, 4949, 4953, 2]
+// Dependencies: [32, 6796, 6841, 4863, 4944, 4926, 4920, 4885, 4946, 4956, 1383, 1072, 1386, 7829, 5652, 11, 6779, 4960, 7827, 4964, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 10234 (PlaintextResolvers)
+// Module 10314 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1087 */;
-import EmojiConstants from "EmojiConstants" /* 1395 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4933 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
-import useChannelName from "useChannelName" /* 5636 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6740 */;
-import SlateUtils from "SlateUtils" /* 7791 */;
+import Constants from "Constants" /* 1072 */;
+import EmojiConstants from "EmojiConstants" /* 1386 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4944 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
+import useChannelName from "useChannelName" /* 5652 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6779 */;
+import SlateUtils from "SlateUtils" /* 7829 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6802 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildMemberStore from "GuildMemberStore" /* 4915 */;
-import GuildRoleStore from "GuildRoleStore" /* 4909 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4935 */;
-import RelationshipStore from "RelationshipStore" /* 4945 */;
-import UserStore from "UserStore" /* 1392 */;
+import EmojiStore from "EmojiStore" /* 6796 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6841 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildMemberStore from "GuildMemberStore" /* 4926 */;
+import GuildRoleStore from "GuildRoleStore" /* 4920 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import PermissionStore from "PermissionStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4956 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -195,9 +195,10 @@ function resolvePlaintextInlineVoid(text, id5, id, arg3) {
   const tmp2 = undefined === allowRoles || allowRoles;
   let first = text[0];
   if ("@" === first) {
-    const tmp17 = id;
-    let tmp18 = tmp;
-    let tmp19 = tmp2;
+    const tmp17 = id5;
+    let tmp18 = id;
+    let tmp19 = tmp;
+    let tmp20 = tmp2;
     return resolveUserOrRole(text, id5, id, tmp, tmp2);
   } else if (":" === first) {
     let tmp4 = importDefault;
@@ -207,35 +208,33 @@ function resolvePlaintextInlineVoid(text, id5, id, arg3) {
     if (null != match) {
       const tmp8 = match[1];
       const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(id5);
-      const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
-      const value = customEmoji.get(tmp8);
+      let tmp11 = tmp4(7827)(disambiguatedEmojiContext, tmp8);
       let channel = null;
       if (null != id) {
-        let tmp12 = ChannelStore;
+        let tmp13 = ChannelStore;
         channel = ChannelStore.getChannel(id);
       }
       tmp7 = null;
-      if (null != value) {
-        let obj2 = { emoji: value, channel, intention: EmojiIntention.CHAT };
-        let tmp13 = EmojiIntention;
+      if (null != tmp11) {
+        let obj2 = { emoji: tmp11, channel, intention: EmojiIntention.CHAT };
         tmp7 = null;
-        const tmp4Result = tmp4(4953);
+        const tmp4Result = tmp4(4964);
         if (!tmp4Result.isEmojiFiltered(obj2)) {
-          const obj3 = { emojiId: value.id, name: null, animated: null, jumboable: false };
-          if ("require_colons" in value) {
+          const obj3 = { emojiId: tmp11.id, name: null, animated: null, jumboable: false };
+          if ("require_colons" in tmp11) {
             let name;
-            if (value.require_colons) {
+            if (tmp11.require_colons) {
               const _HermesInternal = HermesInternal;
-              name = ":" + value.name + ":";
+              name = ":" + tmp11.name + ":";
             }
             let element = { type: "customEmoji", emoji: obj3, children: items };
             obj3.name = name;
             let flag = true;
-            obj3.animated = true === value.animated;
+            obj3.animated = true === tmp11.animated;
             items = [{ text: "" }];
             tmp7 = element;
           }
-          name = value.name;
+          name = tmp11.name;
         }
       }
     }
@@ -281,7 +280,7 @@ const EmojiIntention = EmojiConstants.EmojiIntention;
 const result = size.fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
 
 export { resolvePlaintextInlineVoid };
-export const resolveApplicationCommandOption = function resolveApplicationCommandOption(text, id5, id, arg3) {
+export function resolveApplicationCommandOption(text, id5, id, arg3) {
   const tmp = resolvePlaintextInlineVoid(text, id5, id, arg3);
   let voidToOptionValueResult = null;
   if (null != tmp) {
@@ -289,4 +288,4 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
     voidToOptionValueResult = obj.voidToOptionValue(tmp);
   }
   return voidToOptionValueResult;
-};
+}

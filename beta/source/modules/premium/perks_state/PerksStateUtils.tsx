@@ -1,13 +1,13 @@
-// Module ID: 1398
-// Function ID: 1399
+// Module ID: 1389
+// Function ID: 1390
 // Name: PerksStateUtils
-// Dependencies: [32, 1399, 1099, 1400, 2]
+// Dependencies: [32, 1390, 1084, 1391, 2]
 // Exports: getPerkConfig, hasPerk, parseServerPerks
 
-// Module 1398 (PerksStateUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import types from "types" /* 1399 */;
-import user from "user" /* 1400 */;
+// Module 1389 (PerksStateUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import types from "types" /* 1390 */;
+import user from "user" /* 1391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ function getPerkSource(perks, MONTHLY_ORBS) {
 }
 const result = size.fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
 
-export const parseServerPerks = function parseServerPerks(perks) {
+export function parseServerPerks(perks) {
   let first;
   let tmp7;
   if (null == perks) {
@@ -79,8 +79,8 @@ export const parseServerPerks = function parseServerPerks(perks) {
     }
     return { activePerksBitmask: perks.active_perks_bitmask, configByPerk: obj2, rulesVersion: perks.rules_version };
   }
-};
-export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
+}
+export function hasPerk(perks, MONTHLY_ORBS) {
   if (null == perks) {
     return false;
   } else {
@@ -98,9 +98,9 @@ export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
     }
     return hasItem;
   }
-};
+}
 export { getPerkSource };
-export const getPerkConfig = function getPerkConfig(perks, MONTHLY_ORBS) {
+export function getPerkConfig(perks, MONTHLY_ORBS) {
   if (null != perks) {
     const _String = String;
     const tmp3 = perks.configByPerk[String(undefined, MONTHLY_ORBS)];
@@ -109,4 +109,4 @@ export const getPerkConfig = function getPerkConfig(perks, MONTHLY_ORBS) {
       return obj;
     }
   }
-};
+}

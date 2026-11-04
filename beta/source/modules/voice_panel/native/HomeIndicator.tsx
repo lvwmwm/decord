@@ -1,18 +1,18 @@
-// Module ID: 11401
-// Function ID: 11402
+// Module ID: 11703
+// Function ID: 11704
 // Name: HomeIndicator
-// Dependencies: [19, 17, 570, 1274, 1384, 1645, 2]
+// Dependencies: [19, 17, 560, 1259, 1375, 1637, 2]
 
-// Module 11401 (HomeIndicator)
+// Module 11703 (HomeIndicator)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import module_570 from "module_570" /* 570 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let DCDHomeIndicator;
 
 const NativeModules = react_native.NativeModules;
-const useHomeIndicatorStore = module_570.create(() => ({ autoHideHomeIndicator: false }));
+const useHomeIndicatorStore = module_560.create(() => ({ autoHideHomeIndicator: false }));
 const Component = react.Component;
 class HomeIndicator extends Component {
   constructor() {

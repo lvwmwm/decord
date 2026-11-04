@@ -1,34 +1,34 @@
-// Module ID: 18742
-// Function ID: 18743
+// Module ID: 19359
+// Function ID: 19360
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18743, 18745, 17, 18768, 2069, 4906, 2001, 7602, 18769, 1087, 9, 3, 19491, 1384, 7633, 19492, 10, 19494, 19495, 12751, 504, 1274, 1259, 19496, 2005, 19497, 15831, 584, 19498, 7616, 1257, 19499, 19500, 10785, 510, 1267, 15475, 4898, 9685, 2080, 1167, 19501, 2002, 8852, 19503, 15672, 7778, 19521, 19522, 19523, 9749, 7629, 7617, 5184, 1207, 5004, 15722, 18465, 18466, 1113, 15472, 7601, 15726, 15740, 6846, 19524, 5329, 7603, 7617, 2]
+// Dependencies: [32, 5, 19360, 19362, 17, 19385, 2063, 4917, 1993, 7640, 19386, 1072, 9, 3, 20118, 1375, 7671, 20119, 10, 20121, 20122, 13194, 504, 1259, 1244, 20123, 1997, 20124, 16392, 572, 20125, 7654, 1242, 20126, 20127, 10914, 510, 1252, 16024, 4909, 9765, 2074, 1152, 20128, 1994, 8903, 20130, 16221, 7815, 20147, 20148, 20149, 9830, 7667, 7655, 5200, 1192, 5015, 16271, 19062, 19063, 1098, 16021, 7639, 16275, 16289, 6886, 20150, 5303, 7641, 7655, 2]
 // Exports: init, initHeadlessTask
 
-// Module 18742 (NativeAppStartup)
+// Module 19359 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Storage4 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1113 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4898 */;
-import Future from "Future" /* 9685 */;
-import react_nativeDefault from "react-native" /* 15475 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 19494 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 19495 */;
+import TokenManagerAll from "TokenManager" /* 1098 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4909 */;
+import Future from "Future" /* 9765 */;
+import react_nativeDefault from "react-native" /* 16024 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20121 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20122 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_18743 from "module_18743" /* 18743 */;
-import superagentPatch from "superagentPatch" /* 18745 */;
+import module_19360 from "module_19360" /* 19360 */;
+import superagentPatch from "superagentPatch" /* 19362 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18768 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import AppStateStore from "AppStateStore" /* 2001 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7602 */;
-import ManagerRegistry from "ManagerRegistry" /* 18769 */;
-import Constants from "Constants" /* 1087 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19385 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import AppStateStore from "AppStateStore" /* 1993 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7640 */;
+import ManagerRegistry from "ManagerRegistry" /* 19386 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const timeRequireDefault = tmp3(7633);
+const timeRequireDefault = tmp3(7671);
 function handleLinkingEventURL(url, arg1) {
   let logger;
   let closure_1 = arg1;
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f156488 = () => _true(handleNotification[33]);
+  const f133153 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f156488).default(arg0, false);
+      timeRequireDefault("receiveNotification", f133153).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f156488).default(arg0, false);
+        timeRequireDefault("receiveNotification", f133153).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -326,7 +326,7 @@ obj = function _trackFirstLaunched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -382,7 +382,7 @@ obj = function _trackFirstLaunched() {
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp25) {
         c6 = 3;
         throw tmp25;
@@ -406,7 +406,7 @@ obj = function _loadStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -430,7 +430,7 @@ obj = function _loadStorage() {
             let Storage = require("Storage").Storage;
             c4 = 2;
             c5 = 1;
-            const obj4 = { value: Storage.refresh([], authStore4), done: false };
+            const obj4 = { value: Storage.refresh([], authStore5), done: false };
             return obj4;
           }
         } else {
@@ -458,7 +458,7 @@ obj = function _loadStorage() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -505,7 +505,7 @@ obj = function _initializeIntl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -525,7 +525,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -584,7 +584,7 @@ obj = function _initializeIntl() {
             tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp28) {
           c4 = 3;
@@ -613,7 +613,7 @@ obj = function _init() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -658,7 +658,7 @@ obj = function _init() {
           closure_128_25.finishInitialUrls();
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -687,7 +687,7 @@ obj = function _initializeApp() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -834,7 +834,7 @@ obj = function _initializeApp() {
             obj = closure_129_0(closure_129_3[69]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           const tmp20 = closure_0;
           if (tmp20) {
@@ -966,7 +966,7 @@ obj = function _initHeadlessTask() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1038,7 +1038,7 @@ obj = function _initHeadlessTask() {
           closure_129_1(closure_129_3[50])();
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp19) {
         c3 = 3;
         throw tmp19;
@@ -1095,9 +1095,9 @@ loadIndex.recordEnd();
 let result = size.fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
-export const init = function init() {
+export function init() {
   return obj(...arguments);
-};
-export const initHeadlessTask = function initHeadlessTask() {
+}
+export function initHeadlessTask() {
   return obj(...arguments);
-};
+}

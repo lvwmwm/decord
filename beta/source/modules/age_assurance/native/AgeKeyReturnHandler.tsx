@@ -1,14 +1,14 @@
-// Module ID: 15266
-// Function ID: 15267
+// Module ID: 15811
+// Function ID: 15812
 // Name: AgeKeyReturnHandler
-// Dependencies: [6688, 7948, 5182, 6704, 2]
+// Dependencies: [6728, 7988, 5198, 6744, 2]
 // Exports: handleAgeKeyReturn
 
-// Module 15266 (AgeKeyReturnHandler)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7948 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6688 */;
+// Module 15811 (AgeKeyReturnHandler)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7988 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6728 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -17,7 +17,7 @@ let closure_4;
 const set = new Set();
 let result = size.fileFinishedImporting("modules/age_assurance/native/AgeKeyReturnHandler.tsx");
 
-export const handleAgeKeyReturn = function handleAgeKeyReturn(arg0) {
+export function handleAgeKeyReturn(arg0) {
   let ageKeySaved;
   let result;
   let verificationId;
@@ -53,4 +53,4 @@ export const handleAgeKeyReturn = function handleAgeKeyReturn(arg0) {
       arr3.pop();
     }
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 10831
-// Function ID: 10832
+// Module ID: 10953
+// Function ID: 10954
 // Name: conjureDevicePermissions
-// Dependencies: [1384, 1128, 3862, 2]
+// Dependencies: [1375, 1113, 3868, 2]
 // Exports: getConjureDevicePermissionLabel, getConjureDevicePermissionPromptTitle, isConjureDevicePermissionName, isConjureDevicePermissionSupported
 
-// Module 10831 (conjureDevicePermissions)
-import intl2 from "intl" /* 1128 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import _modDef3862 from "module_3862" /* 3862 */;
+// Module 10953 (conjureDevicePermissions)
+import intl2 from "intl" /* 1113 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import _modDef3868 from "module_3868" /* 3868 */;
 import size from "module_2" /* 2 */;
 
 function getLabel() {
   const intl = intl2.intl;
-  return intl.string(_modDef3862["2KIefJ"]);
+  return intl.string(_modDef3868["2KIefJ"]);
 }
 let obj = {
   screen_capture: { isSupported: PlatformUtils.isDesktop, getLabel },
@@ -22,7 +22,7 @@ let obj = {
     },
     getLabel() {
       const intl = intl2.intl;
-      return intl.string(_modDef3862["5Hp3Nx"]);
+      return intl.string(_modDef3868["5Hp3Nx"]);
     }
   }
 };
@@ -31,22 +31,22 @@ const keys = Object.keys(obj);
 const result = size.fileFinishedImporting("modules/conjure/device_permissions/conjureDevicePermissions.tsx");
 
 export const CONJURE_DEVICE_PERMISSION_NAMES = keys;
-export const isConjureDevicePermissionName = function isConjureDevicePermissionName(str) {
+export function isConjureDevicePermissionName(str) {
   let hasOwnResult = typeof str === "string";
   if (typeof str === "string") {
     const _Object = Object;
     hasOwnResult = Object.hasOwn(obj, str);
   }
   return hasOwnResult;
-};
-export const isConjureDevicePermissionSupported = function isConjureDevicePermissionSupported(permission) {
+}
+export function isConjureDevicePermissionSupported(permission) {
   return obj[permission].isSupported();
-};
-export const getConjureDevicePermissionLabel = function getConjureDevicePermissionLabel(arg0) {
-  return obj[arg0].getLabel();
-};
-export const getConjureDevicePermissionPromptTitle = function getConjureDevicePermissionPromptTitle(app) {
+}
+export function getConjureDevicePermissionLabel(permission) {
+  return obj[permission].getLabel();
+}
+export function getConjureDevicePermissionPromptTitle(app) {
   const intl = intl2.intl;
   obj = { app };
-  return intl.formatToPlainString(_modDef3862.vBSfKU, obj);
-};
+  return intl.formatToPlainString(_modDef3868.vBSfKU, obj);
+}

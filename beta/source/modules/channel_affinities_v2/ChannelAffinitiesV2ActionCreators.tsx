@@ -1,15 +1,15 @@
-// Module ID: 17763
-// Function ID: 17764
+// Module ID: 18354
+// Function ID: 18355
 // Name: ChannelAffinitiesV2ActionCreators
-// Dependencies: [6702, 17761, 1087, 584, 1297, 2]
+// Dependencies: [6742, 18352, 1072, 572, 1282, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 17763 (ChannelAffinitiesV2ActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ConsentStore from "ConsentStore" /* 6702 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17761 */;
-import Constants from "Constants" /* 1087 */;
+// Module 18354 (ChannelAffinitiesV2ActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ConsentStore from "ConsentStore" /* 6742 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18352 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let body;
@@ -19,7 +19,7 @@ let metroRequire;
 ({ Endpoints: hasOwnProperty, Consents: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/channel_affinities_v2/ChannelAffinitiesV2ActionCreators.tsx");
 
-export const fetchChannelAffinitiesV2 = function fetchChannelAffinitiesV2() {
+export function fetchChannelAffinitiesV2() {
   let num;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -65,4 +65,4 @@ export const fetchChannelAffinitiesV2 = function fetchChannelAffinitiesV2() {
     return nextPromise;
   }
   nextPromise = Promise.resolve();
-};
+}

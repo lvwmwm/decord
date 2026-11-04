@@ -1,15 +1,15 @@
-// Module ID: 10170
-// Function ID: 10171
+// Module ID: 10250
+// Function ID: 10251
 // Name: GifPickerUtils
 // Dependencies: [2]
 // Exports: filterFavoriteGIFsByQuery
 
-// Module 10170 (GifPickerUtils)
+// Module 10250 (GifPickerUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");
 
-export const filterFavoriteGIFsByQuery = function filterFavoriteGIFsByQuery(favorites, first3) {
+export function filterFavoriteGIFsByQuery(favorites, first3) {
   if ("" === first3) {
     return favorites;
   } else {
@@ -22,4 +22,4 @@ export const filterFavoriteGIFsByQuery = function filterFavoriteGIFsByQuery(favo
       return replaced.includes(closure_0);
     });
   }
-};
+}

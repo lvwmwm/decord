@@ -1,11 +1,11 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8751
+// Function ID: 8752
 // Name: UserProfileLinkFetchExperiment
-// Dependencies: [1455, 2]
+// Dependencies: [1447, 2]
 // Exports: getIsUserProfileLinkFetchEnabled
 
-// Module 8701 (UserProfileLinkFetchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1455 */;
+// Module 8751 (UserProfileLinkFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileLinkFetchExperiment.tsx");
 
-export const getIsUserProfileLinkFetchEnabled = function getIsUserProfileLinkFetchEnabled(showUserProfileActionSheet) {
+export function getIsUserProfileLinkFetchEnabled(showUserProfileActionSheet) {
   const obj = { location: showUserProfileActionSheet };
   return config.getConfig(obj).enabled;
-};
+}

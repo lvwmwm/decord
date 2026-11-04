@@ -1,25 +1,25 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 14254
+// Function ID: 14255
 // Name: NewUserAnalyticsUtils
-// Dependencies: [1087, 1267, 2]
+// Dependencies: [1072, 1252, 2]
 // Exports: trackNUFStep
 
-// Module 13619 (NewUserAnalyticsUtils)
-import Constants from "Constants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+// Module 14254 (NewUserAnalyticsUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 let timestamp = 0;
 let result = size.fileFinishedImporting("modules/nuf/native/NewUserAnalyticsUtils.tsx");
 
-export const trackNUFStep = function trackNUFStep(STEP_GUILD_TEMPLATE, STEP_FRIEND_LIST, arg2) {
+export function trackNUFStep(STEP_GUILD_TEMPLATE, key2, arg2) {
   timestamp = Date.now();
   const result = (timestamp - timestamp) / 1000;
-  const obj = { flow_type: "Mobile NUX Post Reg", from_step: STEP_GUILD_TEMPLATE, to_step: STEP_FRIEND_LIST, seconds_on_from_step: result };
+  const obj = { flow_type: "Mobile NUX Post Reg", from_step: STEP_GUILD_TEMPLATE, to_step: key2, seconds_on_from_step: result };
   const track = AnalyticsUtilsDefault.track;
   const NUO_TRANSITION = AnalyticEvents.NUO_TRANSITION;
   AnalyticsUtilsDefault;
   const merged = Object.assign(arg2);
   track(NUO_TRANSITION, obj);
-};
+}

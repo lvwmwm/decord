@@ -1,27 +1,30 @@
-// Module ID: 12383
-// Function ID: 12384
+// Module ID: 12630
+// Function ID: 12631
 // Name: conjureIdeasIntroTip
-// Dependencies: [12380, 2]
+// Dependencies: [12627, 2]
 // Exports: resolveIdeasIntroTip
 
-// Module 12383 (conjureIdeasIntroTip)
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12380 */;
+// Module 12630 (conjureIdeasIntroTip)
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12627 */;
 import size from "module_2" /* 2 */;
 
-function resolveIdeasIntroTip(ideasIntroAnchorId) {
+function resolveIdeasIntroTip(agentIdle) {
   let tmp5 = null;
-  if (null != ideasIntroAnchorId.ideasIntroAnchorId) {
+  if (agentIdle.agentIdle) {
     tmp5 = null;
-    const obj = conjureBotPermissionsTip;
-    if (!obj.isBotPermissionsReviewPending(tmp2)) {
-      if (null == tmp) {
-        let str;
-        if (!tmp3) {
-          str = null;
+    if (null != agentIdle.ideasIntroAnchorId) {
+      tmp5 = null;
+      const obj = conjureBotPermissionsTip;
+      if (!obj.isBotPermissionsReviewPending(tmp2)) {
+        if (null == tmp) {
+          let str;
+          if (!tmp3) {
+            str = null;
+          }
+          tmp5 = str;
         }
-        tmp5 = str;
+        str = "card";
       }
-      str = "card";
     }
   }
   return tmp5;

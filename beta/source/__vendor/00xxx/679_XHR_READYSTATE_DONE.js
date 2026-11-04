@@ -1,0 +1,31 @@
+// Module ID: 679
+// Function ID: 680
+// Name: XHR_READYSTATE_DONE
+// Dependencies: [680]
+// Exports: createStealthXhr
+
+// Module 679 (XHR_READYSTATE_DONE)
+import RN_GLOBAL_OBJ2 from "RN_GLOBAL_OBJ" /* 680 */;
+
+
+export const XHR_READYSTATE_DONE = 4;
+export function createStealthXhr() {
+  let RN_GLOBAL_OBJ = arg0;
+  if (arg0 === undefined) {
+    RN_GLOBAL_OBJ = RN_GLOBAL_OBJ2.RN_GLOBAL_OBJ;
+  }
+  if (RN_GLOBAL_OBJ.XMLHttpRequest) {
+    const self = this;
+    const self2 = this;
+    const xMLHttpRequest = new RN_GLOBAL_OBJ.XMLHttpRequest();
+    if (xMLHttpRequest.open.__sentry_original__) {
+      xMLHttpRequest.open = xMLHttpRequest.open.__sentry_original__;
+    }
+    if (xMLHttpRequest.send.__sentry_original__) {
+      xMLHttpRequest.send = xMLHttpRequest.send.__sentry_original__;
+    }
+    return xMLHttpRequest;
+  } else {
+    return null;
+  }
+}

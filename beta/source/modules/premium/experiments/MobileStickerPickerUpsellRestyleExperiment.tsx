@@ -1,48 +1,31 @@
-// Module ID: 9964
-// Function ID: 9965
+// Module ID: 10046
+// Function ID: 10047
 // Name: MobileStickerPickerUpsellRestyleExperiment
-// Dependencies: [1455, 558, 576, 5062, 2]
-// Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature
+// Dependencies: [1447, 5073, 2]
+// Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature, useMobileStickerPickerUpsellRestyleEnabled
 
-// Module 9964 (MobileStickerPickerUpsellRestyleExperiment)
-import react from "react" /* 576 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5062 */;
-import ApexExperiment from "ApexExperiment" /* 1455 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10046 (MobileStickerPickerUpsellRestyleExperiment)
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5073 */;
+import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-mobile-sticker-picker-upsell-restyle", kind: "user", defaultConfig: false, variations: { 0: false, 1: true } });
-function getMobileStickerPickerUpsellRestyleEnabled(location) {
-  const obj = { location };
-  return apexExperiment.getConfig(obj);
-}
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileStickerPickerUpsellRestyleEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2);
-}) : (function useMobileStickerPickerUpsellRestyleEnabled(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj);
-});
 const result = size.fileFinishedImporting("modules/premium/experiments/MobileStickerPickerUpsellRestyleExperiment.tsx");
 
 export const MobileStickerPickerUpsellRestyleExperiment = apexExperiment;
-export const useMobileStickerPickerUpsellRestyleEnabled = tmp3;
-export { getMobileStickerPickerUpsellRestyleEnabled };
-export const getMobileStickerPickerUpsellRestyleEnabledForFeature = function getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, location) {
+export function useMobileStickerPickerUpsellRestyleEnabled(location) {
+  const obj = { location };
+  return apexExperiment.useConfig(obj);
+}
+export function getMobileStickerPickerUpsellRestyleEnabled(location) {
+  const obj = { location };
+  return apexExperiment.getConfig(obj);
+}
+export function getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, location) {
   let config = featureName === EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;
   if (config) {
     const obj = { location };
     config = apexExperiment.getConfig(obj);
   }
   return config;
-};
+}

@@ -1,35 +1,35 @@
-// Module ID: 6713
-// Function ID: 6714
+// Module ID: 6752
+// Function ID: 6753
 // Name: NSFWContentGate
-// Dependencies: [4873, 4877, 1392, 2]
+// Dependencies: [4881, 4885, 1383, 2]
 // Exports: currentUserCanSeeNSFW, isChannelOrGuildNSFW, isNSFWActivityVisible, userCannotSeeNSFWContent
 
-// Module 6713 (NSFWContentGate)
-import GuildRecord from "GuildRecord" /* 4873 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import UserStore from "UserStore" /* 1392 */;
+// Module 6752 (NSFWContentGate)
+import GuildRecord from "GuildRecord" /* 4881 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import UserStore from "UserStore" /* 1383 */;
 import size from "module_2" /* 2 */;
 
 const isGuildNSFW = GuildRecord.isGuildNSFW;
 const result = size.fileFinishedImporting("modules/age_gate/NSFWContentGate.tsx");
 
-export const isChannelOrGuildNSFW = function isChannelOrGuildNSFW(channel) {
+export function isChannelOrGuildNSFW(channel) {
   let tmp = null != channel;
   if (tmp) {
     tmp = channel.isNSFW() || isGuildNSFW(GuildStore.getGuild(channel.guild_id));
     const isNSFWResult = channel.isNSFW() || isGuildNSFW(GuildStore.getGuild(channel.guild_id));
   }
   return tmp;
-};
-export const currentUserCanSeeNSFW = function currentUserCanSeeNSFW() {
+}
+export function currentUserCanSeeNSFW() {
   const currentUser = UserStore.getCurrentUser();
   let nsfwAllowed;
   if (currentUser != null) {
     nsfwAllowed = currentUser.nsfwAllowed;
   }
   return true === nsfwAllowed;
-};
-export const userCannotSeeNSFWContent = function userCannotSeeNSFWContent(channel) {
+}
+export function userCannotSeeNSFWContent(channel) {
   let tmp = null != channel;
   if (tmp) {
     let tmp2 = null != channel;
@@ -48,8 +48,8 @@ export const userCannotSeeNSFWContent = function userCannotSeeNSFWContent(channe
     tmp = tmp2;
   }
   return tmp;
-};
-export const isNSFWActivityVisible = function isNSFWActivityVisible(channel, userCanSeeNSFW) {
+}
+export function isNSFWActivityVisible(channel, userCanSeeNSFW) {
   let tmp = null == channel;
   if (!tmp) {
     userCanSeeNSFW = undefined;
@@ -82,4 +82,4 @@ export const isNSFWActivityVisible = function isNSFWActivityVisible(channel, use
     tmp = tmp7;
   }
   return tmp;
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7961
+// Function ID: 7962
 // Name: NativePermissionActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 
-// Module 7921 (NativePermissionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 7961 (NativePermissionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 class NativePermissionActionCreators {

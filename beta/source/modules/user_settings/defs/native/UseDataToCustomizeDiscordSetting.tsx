@@ -1,65 +1,35 @@
-// Module ID: 16183
-// Function ID: 16184
+// Module ID: 16761
+// Function ID: 16762
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6702, 8364, 1087, 558, 16143, 576, 504, 5940, 1128, 6010, 16181, 16182, 11240, 2]
+// Dependencies: [6742, 8432, 1072, 16721, 504, 5958, 1113, 6030, 16759, 16760, 11540, 2]
 
-// Module 16183 (UseDataToCustomizeDiscordSetting)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl5 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import AlertDefault from "Alert" /* 6010 */;
-import SettingsConstants from "SettingsConstants" /* 8364 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16143 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16181 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16182 */;
-import ConsentStore from "ConsentStore" /* 6702 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+// Module 16761 (UseDataToCustomizeDiscordSetting)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1113 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import AlertDefault from "Alert" /* 6030 */;
+import SettingsConstants from "SettingsConstants" /* 8432 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16759 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16760 */;
+import ConsentStore from "ConsentStore" /* 6742 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const Consents = Constants.Consents;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-function useIsDisabled() {
-  const obj = useParentalControlSettings;
-  return obj.useIsParentallyControlled();
-}
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToCustomizeDiscordSettingValue() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConsentStore];
-    const fn = function o() {
-      return ConsentStore.hasConsented(constants.PERSONALIZATION);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useDataToCustomizeDiscordSettingValue() {
-  const items = [ConsentStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
-});
 let obj = {
   useTitle() {
     const intl = intl5.intl;
     return intl.string(intl5.t.MNKzyg);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: tmp3,
+  useValue: function useDataToCustomizeDiscordSettingValue() {
+    const items = [ConsentStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
+  },
   onValueChange: function handlePersonalizationChange(arg0) {
     let intl;
     let intl2;
@@ -97,9 +67,12 @@ let obj = {
       show(obj);
     }
   },
-  useIsDisabled
+  useIsDisabled() {
+    const obj = useParentalControlSettings;
+    return obj.useIsParentallyControlled();
+  }
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");
 
 export default toggle;

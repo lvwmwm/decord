@@ -1,22 +1,21 @@
-// Module ID: 11079
-// Function ID: 11080
+// Module ID: 11382
+// Function ID: 11383
 // Name: SubscriptionUtils
-// Dependencies: [32, 19, 2057, 1087, 1394, 38, 11080, 2053, 7389, 558, 576, 504, 11082, 2049, 2]
-// Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately
+// Dependencies: [32, 19, 2051, 1072, 1385, 38, 11383, 2047, 7431, 504, 11385, 2042, 2]
+// Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 11079 (SubscriptionUtils)
+// Module 11382 (SubscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef2049 from "module_2049" /* 2049 */;
-import PremiumUtils from "PremiumUtils" /* 2053 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7389 */;
-import CheckoutError from "CheckoutError" /* 11080 */;
-import PauseDuration from "PauseDuration" /* 11082 */;
+import _modDef2042 from "module_2042" /* 2042 */;
+import PremiumUtils from "PremiumUtils" /* 2047 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7431 */;
+import CheckoutError from "CheckoutError" /* 11383 */;
+import PauseDuration from "PauseDuration" /* 11385 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2057 */;
-import Constants from "Constants" /* 1087 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2051 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +25,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f109175 = (planId) => {
+const f99315 = (planId) => {
   const value = SubscriptionPlanStore.get(planId.planId);
   _modDef38(null != value, "Unable to fetch plan");
   return value;
@@ -34,11 +33,18 @@ const f109175 = (planId) => {
 let _slicedToArray = _slicedToArray_mod;
 ({ SubscriptionStatusTypes: metroRequire, SubscriptionTypes: metroImportDefault } = Constants);
 ({ SubscriptionPlans: metroImportAll, SubscriptionPlanInfo: c9 } = PremiumConstants);
-function getSubscriptionPlans(items) {
+let result = size.fileFinishedImporting("utils/SubscriptionUtils.tsx");
+
+export function getSubscriptionPlans(items) {
   items = items.items;
-  return items.map(f109175);
+  return items.map(f99315);
 }
-function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
+export function getSubscriptionSKUs(items) {
+  items = items.items;
+  const mapped = items.map(f99315);
+  return mapped.map((skuId) => skuId.skuId);
+}
+export function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
   const currentSubscriptionPlanIdForGroup = getCurrentSubscriptionPlanIdForGroup.getCurrentSubscriptionPlanIdForGroup(arr);
   if (getCurrentSubscriptionPlanIdForGroup.type === metroImportDefault.PREMIUM) {
     if (null == currentSubscriptionPlanIdForGroup) {
@@ -66,137 +72,7 @@ function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, 
     return index < arr.indexOf(newPlanId);
   }
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchSubscriptionPlan(arg0, arg1) {
-  let closure_0;
-  let closure_3;
-  let first;
-  let first1;
-  let tmp6;
-  let tmp9;
-  _require = arg0;
-  let closure_1 = arg1;
-  const tmp = _require;
-  const tmp2 = first1;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = SubscriptionPlanStore;
-    let items = [SubscriptionPlanStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      let value = null;
-      if (null != closure_0) {
-        value = SubscriptionPlanStore.get(tmp);
-      }
-      const items = [value, ];
-      items[1] = null != value && SubscriptionPlanStore.isFetchingForSKU(value.skuId);
-      const isFetchingForSKUResult = null != value && SubscriptionPlanStore.isFetchingForSKU(value.skuId);
-      return items;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(tmp2[11]);
-  [first1, tmp9] = tmpResult.useStateFromStoresArray(first, tmp6);
-  _slicedToArray = tmp9;
-  if (cResult[3] === arg1) {
-    if (cResult[4] === tmp9) {
-      if (cResult[5] === arg0) {
-        let tmp10;
-        let tmp11;
-        if (cResult[6] === first1) {
-          tmp10 = cResult[7];
-          tmp11 = cResult[8];
-        }
-        const effect = react.useEffect(tmp10, tmp11);
-        return first1;
-      }
-    }
-  }
-  const fn2 = function b() {
-    if (null == first1) {
-      if (null != closure_0) {
-        const tmp14 = closure_3;
-        if (!tmp14) {
-          const _HermesInternal = HermesInternal;
-          const tmp5 = _modDef38;
-          const tmp6 = null != React4[closure_0];
-          tmp5(tmp6, "Missing hardcoded subscriptionPlan: " + closure_0);
-          const fetchSubscriptionPlansForSKU = SubscriptionPlanActionCreators.fetchSubscriptionPlansForSKU;
-          SubscriptionPlanActionCreators;
-          const obj = PremiumUtils;
-          const subscriptionPlansForSKU = fetchSubscriptionPlansForSKU(obj.castPremiumSubscriptionAsSkuId(tmp2.skuId), closure_1);
-        }
-      }
-    }
-  };
-  const items1 = [first1, arg0, arg1, tmp9];
-  cResult[3] = arg1;
-  cResult[4] = tmp9;
-  cResult[5] = arg0;
-  cResult[6] = first1;
-  cResult[7] = fn2;
-  cResult[8] = items1;
-  tmp11 = items1;
-  tmp10 = fn2;
-}) : (function useGetOrFetchSubscriptionPlan(arg0, arg1) {
-  let closure_0;
-  let closure_3;
-  let first;
-  let tmp3;
-  _require = arg0;
-  let closure_1 = arg1;
-  let obj = require("get initialized");
-  let items = [SubscriptionPlanStore];
-  [first, tmp3] = obj.useStateFromStoresArray(items, () => {
-    let value = null;
-    if (null != closure_0) {
-      value = SubscriptionPlanStore.get(tmp);
-    }
-    const items = [value, ];
-    items[1] = null != value && SubscriptionPlanStore.isFetchingForSKU(value.skuId);
-    const isFetchingForSKUResult = null != value && SubscriptionPlanStore.isFetchingForSKU(value.skuId);
-    return items;
-  });
-  _slicedToArray = tmp3;
-  const items1 = [first, arg0, arg1, tmp3];
-  const effect = react.useEffect(() => {
-    if (null == first) {
-      if (null != closure_0) {
-        const tmp14 = closure_3;
-        if (!tmp14) {
-          const _HermesInternal = HermesInternal;
-          const tmp5 = _modDef38;
-          const tmp6 = null != React4[closure_0];
-          tmp5(tmp6, "Missing hardcoded subscriptionPlan: " + closure_0);
-          const fetchSubscriptionPlansForSKU = SubscriptionPlanActionCreators.fetchSubscriptionPlansForSKU;
-          SubscriptionPlanActionCreators;
-          const obj = PremiumUtils;
-          const subscriptionPlansForSKU = fetchSubscriptionPlansForSKU(obj.castPremiumSubscriptionAsSkuId(tmp2.skuId), closure_1);
-        }
-      }
-    }
-  }, items1);
-  return first;
-});
-let result = size.fileFinishedImporting("utils/SubscriptionUtils.tsx");
-
-export { getSubscriptionPlans };
-export const getSubscriptionSKUs = function getSubscriptionSKUs(items) {
-  items = items.items;
-  const mapped = items.map(f109175);
-  return mapped.map((skuId) => skuId.skuId);
-};
-export { subscriptionCanSwitchImmediately };
-export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
+export function subscriptionCanDowngrade(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
   let flag;
   const currentSubscriptionPlanIdForGroup = getCurrentSubscriptionPlanIdForGroup.getCurrentSubscriptionPlanIdForGroup(arr);
   if (getCurrentSubscriptionPlanIdForGroup.type !== metroImportDefault.PREMIUM) {
@@ -224,8 +100,8 @@ export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCur
     flag = true;
   }
   return !flag;
-};
-export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(subscriptionPlanId, arg1) {
+}
+export function getOrFetchSubscriptionPlan(subscriptionPlanId, arg1) {
   const value = SubscriptionPlanStore.get(subscriptionPlanId);
   const obj = SubscriptionPlanStore;
   if (null == value) {
@@ -237,22 +113,60 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const result = obj3.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     const tmp12 = require;
     if (!obj.isFetchingForSKU(result)) {
-      const tmp12Result = tmp12(7389);
+      const tmp12Result = tmp12(7431);
       const subscriptionPlansForSKU = tmp12Result.fetchSubscriptionPlansForSKU(result, arg1);
     }
   }
   return value;
-};
-export const useGetOrFetchSubscriptionPlan = tmp4;
-export const getSubscriptionPauseDurations = function getSubscriptionPauseDurations(status) {
+}
+export function useGetOrFetchSubscriptionPlan(subscriptionPlanId, arg1) {
+  let closure_3;
+  let first;
+  let tmp3;
+  _require = subscriptionPlanId;
+  let closure_1 = arg1;
+  let obj = require("get initialized");
+  let items = [SubscriptionPlanStore];
+  [first, tmp3] = obj.useStateFromStoresArray(items, () => {
+    let value = null;
+    if (null != subscriptionPlanId) {
+      value = SubscriptionPlanStore.get(tmp);
+    }
+    const items = [value, ];
+    items[1] = null != value && SubscriptionPlanStore.isFetchingForSKU(value.skuId);
+    const isFetchingForSKUResult = null != value && SubscriptionPlanStore.isFetchingForSKU(value.skuId);
+    return items;
+  });
+  _slicedToArray = tmp3;
+  const items1 = [first, subscriptionPlanId, arg1, tmp3];
+  const effect = react.useEffect(() => {
+    if (null == first) {
+      if (null != subscriptionPlanId) {
+        const tmp14 = closure_3;
+        if (!tmp14) {
+          const _HermesInternal = HermesInternal;
+          const tmp5 = _modDef38;
+          const tmp6 = null != React4[subscriptionPlanId];
+          tmp5(tmp6, "Missing hardcoded subscriptionPlan: " + subscriptionPlanId);
+          const fetchSubscriptionPlansForSKU = SubscriptionPlanActionCreators.fetchSubscriptionPlansForSKU;
+          SubscriptionPlanActionCreators;
+          const obj = PremiumUtils;
+          const subscriptionPlansForSKU = fetchSubscriptionPlansForSKU(obj.castPremiumSubscriptionAsSkuId(tmp2.skuId), closure_1);
+        }
+      }
+    }
+  }, items1);
+  return first;
+}
+export function getSubscriptionPauseDurations(status) {
   const keys = Object.keys(PauseDuration.PauseDuration);
   const found = keys.filter((item) => isNaN(Number(item)));
   if (status.status !== metroRequire.PAUSED) {
     return { durations: found, currentDaysPaused: 0 };
   } else if (null != status.pauseEndsAt) {
     const _Math = Math;
-    const tmp6 = _modDef2049(status.currentPeriodStart);
-    const obj2 = _modDef2049(status.pauseEndsAt);
+    const tmp6 = _modDef2042(status.currentPeriodStart);
+    const obj2 = _modDef2042(status.pauseEndsAt);
     const rounded = Math.round(obj2.diff(tmp6, "days", true));
     const items = [];
     for (const item10042 of found) {
@@ -266,15 +180,15 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
   } else {
     return { durations: [], currentDaysPaused: 0 };
   }
-};
-export const didBeginPurchaseFlowOnFractionalPremium = function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
+}
+export function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
   let isMomentResult = null != isSameOrAfter;
   if (isMomentResult) {
-    const obj = _modDef2049;
+    const obj = _modDef2042;
     isMomentResult = obj.isMoment(isSameOrAfter);
   }
   if (isMomentResult) {
-    isMomentResult = isSameOrAfter.isSameOrAfter(_modDef2049());
+    isMomentResult = isSameOrAfter.isSameOrAfter(_modDef2042());
   }
   return isMomentResult;
-};
+}

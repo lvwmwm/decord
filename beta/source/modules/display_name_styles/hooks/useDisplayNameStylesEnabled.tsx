@@ -1,44 +1,22 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6440
+// Function ID: 6441
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 5004, 558, 576, 504, 6401, 2]
+// Dependencies: [19, 5015, 504, 6441, 2]
+// Exports: useDisplayNameStylesEnabled
 
-// Module 6400 (useDisplayNameStylesEnabled)
+// Module 6440 (useDisplayNameStylesEnabled)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import react3 from "react" /* 6401 */;
-import AccessibilityStore from "AccessibilityStore" /* 5004 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import react2 from "react" /* 6441 */;
+import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import size from "module_2" /* 2 */;
 
 const useContext = react.useContext;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesEnabled() {
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function n() {
-      return AccessibilityStore.displayNameStylesEnabled;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const overrideSettings = tmpResult.useStateFromStores(tmp4, tmp5) || useContext(tmp(6401).DisplayNameStylesContext).overrideSettings;
-  return overrideSettings;
-}) : (function useDisplayNameStylesEnabled() {
-  const items = [AccessibilityStore];
-  const obj = get_initialized;
-  const overrideSettings = obj.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled) || useContext(react3.DisplayNameStylesContext).overrideSettings;
-  return overrideSettings;
-});
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEnabled.tsx");
 
-export const useDisplayNameStylesEnabled = tmp2;
+export function useDisplayNameStylesEnabled() {
+  const items = [AccessibilityStore];
+  const obj = get_initialized;
+  const overrideSettings = obj.useStateFromStores(items, () => AccessibilityStore.displayNameStylesEnabled) || useContext(react2.DisplayNameStylesContext).overrideSettings;
+  return overrideSettings;
+}

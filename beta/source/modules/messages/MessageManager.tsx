@@ -1,36 +1,36 @@
-// Module ID: 9749
-// Function ID: 9750
+// Module ID: 9830
+// Function ID: 9831
 // Name: MessageManager
-// Dependencies: [32, 6804, 6528, 4859, 6823, 4855, 4877, 6803, 4906, 5034, 1087, 4862, 1104, 3, 6523, 9750, 5233, 6853, 7598, 9751, 510, 5039, 1114, 6825, 5940, 1128, 584, 7246, 2]
+// Dependencies: [32, 6843, 6568, 4867, 6862, 4863, 4885, 6842, 4917, 5045, 1072, 4870, 1089, 3, 6563, 9831, 5249, 6893, 7636, 9832, 510, 5050, 1099, 6864, 5958, 1113, 572, 7287, 2]
 
-// Module 9749 (MessageManager)
+// Module 9830 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1104 */;
-import router_utils from "router_utils" /* 1114 */;
-import intl3 from "intl" /* 1128 */;
-import ChannelRecord from "ChannelRecord" /* 4859 */;
-import ChannelConstants from "ChannelConstants" /* 4862 */;
-import matchPathCompat from "matchPathCompat" /* 5039 */;
-import flow_Client from "flow/Client" /* 5233 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6523 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6825 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9750 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9751 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1089 */;
+import router_utils from "router_utils" /* 1099 */;
+import intl3 from "intl" /* 1113 */;
+import ChannelRecord from "ChannelRecord" /* 4867 */;
+import ChannelConstants from "ChannelConstants" /* 4870 */;
+import matchPathCompat from "matchPathCompat" /* 5050 */;
+import flow_Client from "flow/Client" /* 5249 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6563 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6864 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9831 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9832 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6823 */;
-import ChannelStore from "ChannelStore" /* 4855 */;
-import GuildStore from "GuildStore" /* 4877 */;
-import ReadStateStore from "ReadStateStore" /* 6803 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6862 */;
+import ChannelStore from "ChannelStore" /* 4863 */;
+import GuildStore from "GuildStore" /* 4885 */;
+import ReadStateStore from "ReadStateStore" /* 6842 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 let map, obj3;
@@ -103,7 +103,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp7(6853)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp7(6893)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }
@@ -224,7 +224,7 @@ function handleConnectionOpen() {
       const id2 = channel1.id;
       const matchPath = matchPathCompat.matchPath;
       matchPathCompat;
-      const obj2 = { path: authStore4.CHANNEL(":guild", ":channel", ":message"), exact: true };
+      const obj2 = { path: authStore5.CHANNEL(":guild", ":channel", ":message"), exact: true };
       const obj7 = router_utils;
       const pathname = obj7.getHistory().location.pathname;
       const matchPathResult = matchPath(pathname, obj2);
@@ -250,6 +250,8 @@ function handleConnectionOpen() {
   }
 }
 function loadSelectedChannelIfNecessary() {
+  let id2;
+  let message;
   const channelId = SelectedChannelStore.getChannelId();
   if (null != channelId) {
     const channel = ChannelStore.getChannel(channelId);
@@ -259,16 +261,31 @@ function loadSelectedChannelIfNecessary() {
         const orCreate = obj2.getOrCreate(channelId);
         const tmp7 = orCreate.ready && orCreate.hasFetched;
         if (!tmp7) {
-          obj3 = { guildId: channel.getGuildId(), channelId: channel.id };
-          fetchMessages(obj3);
+          ({ id: obj3.channelId, id: id2 } = channel);
+          const obj5 = { guildId: channel.getGuildId(), channelId: null, messageId: message };
+          const matchPath = matchPathCompat.matchPath;
+          matchPathCompat;
+          const obj7 = { path: authStore5.CHANNEL(":guild", ":channel", ":message"), exact: true };
+          const obj4 = router_utils;
+          const pathname = obj4.getHistory().location.pathname;
+          const matchPathResult = matchPath(pathname, obj7);
+          message = undefined;
+          const tmp8 = fetchMessages;
+          if (matchPathResult != null) {
+            const params = matchPathResult.params;
+            if (params != null) {
+              message = params.message;
+            }
+          }
+          tmp8(obj5);
         }
-        const id2 = channel.id;
+        const id3 = channel.id;
         const guildId = channel.getGuildId();
-        const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(id2);
-        const obj4 = ChannelSectionStore;
+        const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(id3);
+        const obj6 = ChannelSectionStore;
         if (null != currentSidebarChannelId) {
-          const obj5 = { guildId, channelId: currentSidebarChannelId, messageId: obj4.getCurrentSidebarMessageId(id2) };
-          fetchMessages(obj5);
+          const obj8 = { guildId, channelId: currentSidebarChannelId, messageId: obj6.getCurrentSidebarMessageId(id3) };
+          fetchMessages(obj8);
         }
       } else {
         const id = channel.id;
@@ -276,8 +293,8 @@ function loadSelectedChannelIfNecessary() {
         const currentSidebarChannelId1 = ChannelSectionStore.getCurrentSidebarChannelId(id);
         const obj = ChannelSectionStore;
         if (null != currentSidebarChannelId1) {
-          const obj6 = { guildId: guildId1, channelId: currentSidebarChannelId1, messageId: obj.getCurrentSidebarMessageId(id) };
-          fetchMessages(obj6);
+          const obj9 = { guildId: guildId1, channelId: currentSidebarChannelId1, messageId: obj.getCurrentSidebarMessageId(id) };
+          fetchMessages(obj9);
         }
       }
     }
@@ -451,7 +468,7 @@ function handleAppWillBecomeActive() {
     return false;
   } else {
     const obj = MessageActionCreatorsDefault;
-    const newLocalMessages = obj.fetchNewLocalMessages(channelId, syncedClientThemes);
+    const newLocalMessages = obj.fetchNewLocalMessages(channelId, authStore3);
   }
 }
 const isTextChannel = ChannelRecord.isTextChannel;

@@ -1,12 +1,12 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 17256
+// Function ID: 17257
 // Name: FontScaleStore
-// Dependencies: [1384, 11092, 1269, 2]
+// Dependencies: [1375, 11048, 1254, 2]
 
-// Module 16656 (FontScaleStore)
-import react_nativeDefault from "react-native" /* 11092 */;
-import PlatformUtils from "PlatformUtils" /* 1384 */;
-import module_1269 from "module_1269" /* 1269 */;
+// Module 17256 (FontScaleStore)
+import react_nativeDefault from "react-native" /* 11048 */;
+import PlatformUtils from "PlatformUtils" /* 1375 */;
+import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 let customFontScale;
@@ -17,7 +17,7 @@ if (PlatformUtils.isAndroid()) {
   customFontScale = { fontScale: 1, isClassicChatFontScaleEnabled: false };
 }
 const DEFAULT_FONT_SCALE_STORE_STATE = { persistedFontScale: customFontScale.fontScale, persistedIsClassicChatFontScaleEnabled: customFontScale.isClassicChatFontScaleEnabled, fontScale: customFontScale.fontScale, isClassicChatFontScaleEnabled: customFontScale.isClassicChatFontScaleEnabled };
-const withEqualityFn = module_1269.createWithEqualityFn(() => obj);
+const withEqualityFn = module_1254.createWithEqualityFn(() => obj);
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/FontScaleStore.tsx");
 
 export { DEFAULT_FONT_SCALE_STORE_STATE };

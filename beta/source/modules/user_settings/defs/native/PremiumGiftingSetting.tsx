@@ -1,85 +1,25 @@
-// Module ID: 16322
-// Function ID: 16323
+// Module ID: 16896
+// Function ID: 16897
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1087, 21, 558, 576, 7561, 11071, 9551, 1202, 11240, 1128, 12918, 2065, 14900, 2]
+// Dependencies: [19, 1072, 21, 7602, 11374, 9625, 1187, 11540, 1113, 13365, 2059, 15445, 2]
 
-// Module 16322 (PremiumGiftingSetting)
+// Module 16896 (PremiumGiftingSetting)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1087 */;
-import intl2 from "intl" /* 1128 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2065 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7561 */;
-import PromotionsHooks from "PromotionsHooks" /* 9551 */;
-import GiftIcon from "GiftIcon" /* 12918 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1113 */;
+import native from "native" /* 1187 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2059 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7602 */;
+import PromotionsHooks from "PromotionsHooks" /* 9625 */;
+import GiftIcon from "GiftIcon" /* 13365 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11240 */;
+import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let tmp;
-const native = tmp(1202);
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanNavigateToPaymentSetting() {
-  let first;
-  let obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      const obj = BlockedPaymentsCountryExperiment;
-      const isPaymentsBlocked = obj.getIsPaymentsBlocked();
-      let flag = !isPaymentsBlocked;
-      const tmp = dependencyMap;
-      if (isPaymentsBlocked) {
-        require("openBlockedPaymentsCountryActionSheet")();
-        flag = false;
-      }
-      return flag;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useCanNavigateToPaymentSetting() {
-  return react.useCallback(() => {
-    const obj = BlockedPaymentsCountryExperiment;
-    const isPaymentsBlocked = obj.getIsPaymentsBlocked();
-    let flag = !isPaymentsBlocked;
-    const tmp = dependencyMap;
-    if (isPaymentsBlocked) {
-      require("openBlockedPaymentsCountryActionSheet")();
-      flag = false;
-    }
-    return flag;
-  }, []);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGiftingSettingTrailing() {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = PromotionsHooks;
-  const unseenOutboundPromotions = obj2.useUnseenOutboundPromotions();
-  if (cResult[0] !== unseenOutboundPromotions.length) {
-    const tmp6 = jsx(native.Badge, { value: unseenOutboundPromotions.length });
-    cResult[0] = unseenOutboundPromotions.length;
-    cResult[1] = tmp6;
-    tmp4 = tmp6;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function usePremiumGiftingSettingTrailing() {
-  const obj = PromotionsHooks;
-  const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
-  return jsx(native.Badge, { value: unseenOutboundPromotions.length });
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -91,8 +31,24 @@ let obj = {
     const obj = BillingPlatformUtils;
     return obj.isPremiumGiftingSupported();
   },
-  usePreNavigationAction: tmp2,
-  useTrailing: tmp3,
+  usePreNavigationAction: function useCanNavigateToPaymentSetting() {
+    return react.useCallback(() => {
+      const obj = BlockedPaymentsCountryExperiment;
+      const isPaymentsBlocked = obj.getIsPaymentsBlocked();
+      let flag = !isPaymentsBlocked;
+      const tmp = dependencyMap;
+      if (isPaymentsBlocked) {
+        require("openBlockedPaymentsCountryActionSheet")();
+        flag = false;
+      }
+      return flag;
+    }, []);
+  },
+  useTrailing: function usePremiumGiftingSettingTrailing() {
+    const obj = PromotionsHooks;
+    const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
+    return jsx(native.Badge, { value: unseenOutboundPromotions.length });
+  },
   screen: {
     route: UserSettingsSections.PREMIUM_GIFTING,
     getComponent() {

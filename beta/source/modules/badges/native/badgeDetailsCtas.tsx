@@ -1,28 +1,31 @@
-// Module ID: 11175
-// Function ID: 11176
+// Module ID: 11478
+// Function ID: 11479
 // Name: badgeDetailsCtas
-// Dependencies: [1087, 1089, 8705, 1128, 5688, 7522, 7681, 7310, 9599, 6747, 9597, 10478, 2]
+// Dependencies: [1072, 1074, 5199, 1498, 8755, 1113, 5705, 7563, 7719, 7351, 9678, 6786, 9673, 10558, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 11175 (badgeDetailsCtas)
-import Constants from "Constants" /* 1087 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import intl2 from "intl" /* 1128 */;
-import openURLDefault from "openURL" /* 5688 */;
-import QuestContent from "QuestContent" /* 6747 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
-import openUserSettings from "openUserSettings" /* 7522 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
-import BadgeId from "BadgeId" /* 8705 */;
-import QuestsEligibility from "QuestsEligibility" /* 9597 */;
-import QuestUtils from "QuestUtils" /* 9599 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10478 */;
+// Module 11478 (badgeDetailsCtas)
+import Constants from "Constants" /* 1072 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import intl2 from "intl" /* 1113 */;
+import RootNavigationRef from "RootNavigationRef" /* 5199 */;
+import openURLDefault from "openURL" /* 5705 */;
+import QuestContent from "QuestContent" /* 6786 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7719 */;
+import BadgeId from "BadgeId" /* 8755 */;
+import QuestsEligibility from "QuestsEligibility" /* 9673 */;
+import QuestUtils from "QuestUtils" /* 9678 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let obj4;
 let obj5;
+let tmp;
+const Link = tmp(1498);
+const openUserSettings = tmp(7563);
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let obj = { [BadgeId.BadgeId.STAFF]: obj2, [BadgeId.BadgeId.PREMIUM_TENURE]: obj3, [BadgeId.BadgeId.GUILD_BOOSTER]: obj4, [BadgeId.BadgeId.ORB_PROFILE]: obj5 };
@@ -54,9 +57,46 @@ obj3 = {
     return stringResult;
   },
   ctaAction() {
-    obj = openUserSettings;
-    const obj2 = { screen: UserSettingsSections.PREMIUM };
-    return obj.openUserSettings(obj2, undefined, { pop: false });
+    let routes1;
+    let tmp = require;
+    obj = RootNavigationRef;
+    const rootNavigationRef = obj.getRootNavigationRef();
+    let flag = false;
+    if (null != rootNavigationRef) {
+      flag = false;
+      if (rootNavigationRef.isReady()) {
+        const rootState = rootNavigationRef.getRootState();
+        const routes = rootState.routes;
+        const findLastIndexResult = routes.findLastIndex((name) => {
+          let tmp = "settings" === name.name;
+          if (tmp) {
+            obj = Link;
+            tmp = obj.getFocusedRouteNameFromRoute(name) === constants.PREMIUM;
+          }
+          return tmp;
+        });
+        let flag2 = -1 !== findLastIndexResult;
+        if (flag2) {
+          flag2 = true;
+          if (findLastIndexResult !== rootState.index) {
+            const dispatch = rootNavigationRef.dispatch;
+            const CommonActions = Link.CommonActions;
+            const reset = CommonActions.reset;
+            const obj2 = { routes: routes1.slice(0, findLastIndexResult + 1), index: findLastIndexResult };
+            const merged = Object.assign(rootState);
+            routes1 = rootState.routes;
+            dispatch(reset(obj2));
+            flag2 = true;
+          }
+        }
+        flag = flag2;
+      }
+    }
+    if (!flag) {
+      const obj3 = { screen: UserSettingsSections.PREMIUM };
+      const tmpResult = openUserSettings;
+      tmpResult.openUserSettings(obj3, undefined, { pop: false });
+    }
   }
 };
 obj4 = {
@@ -125,10 +165,10 @@ obj[BadgeId.BadgeId.GIFTING] = {
 };
 const result = size.fileFinishedImporting("modules/badges/native/badgeDetailsCtas.tsx");
 
-export const getBadgeDetailsCta = function getBadgeDetailsCta(badge_id) {
+export function getBadgeDetailsCta(badge_id) {
   let isAvailable;
   if (obj[badge_id] != null) {
     isAvailable = obj.isAvailable;
   }
   return obj[badge_id];
-};
+}

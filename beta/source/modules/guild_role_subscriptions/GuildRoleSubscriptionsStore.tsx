@@ -1,14 +1,14 @@
-// Module ID: 4928
-// Function ID: 4929
+// Module ID: 4939
+// Function ID: 4940
 // Name: GuildRoleSubscriptionsStore
-// Dependencies: [4929, 4930, 504, 38, 584, 2]
+// Dependencies: [4940, 4941, 504, 38, 572, 2]
 
-// Module 4928 (GuildRoleSubscriptionsStore)
+// Module 4939 (GuildRoleSubscriptionsStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4929 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4930 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4940 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_11, closure_12, closure_7, closure_9;
@@ -87,8 +87,8 @@ class GuildRoleSubscriptionsStore extends Store {
     _modDef38(values.length <= 1, "Found multiple group listings for listing");
     return values[0];
   }
-  getSubscriptionListing(item10017) {
-    return secondaryIndexMap1.get(item10017);
+  getSubscriptionListing(editStateId) {
+    return secondaryIndexMap1.get(editStateId);
   }
   getSubscriptionListingsForGuild(arg0) {
     let values;

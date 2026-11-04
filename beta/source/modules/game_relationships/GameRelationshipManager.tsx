@@ -1,13 +1,13 @@
-// Module ID: 15845
-// Function ID: 15846
+// Module ID: 16406
+// Function ID: 16407
 // Name: GameRelationshipManager
-// Dependencies: [7763, 1087, 2004, 584, 6841, 2]
+// Dependencies: [7800, 1072, 1996, 572, 6881, 2]
 
-// Module 15845 (GameRelationshipManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1087 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7763 */;
-import LifecycleManager from "LifecycleManager" /* 2004 */;
+// Module 16406 (GameRelationshipManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7800 */;
+import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;
 
 let gameRelationships, set;

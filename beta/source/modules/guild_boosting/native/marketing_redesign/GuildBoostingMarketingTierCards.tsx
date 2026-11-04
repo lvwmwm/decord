@@ -1,46 +1,46 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 15476
+// Function ID: 15477
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1087, 1394, 21, 9382, 1128, 13487, 13486, 8604, 8600, 10180, 14932, 9836, 5710, 14934, 5003, 587, 14926, 6739, 558, 576, 5084, 5238, 5266, 5237, 5010, 5290, 6940, 8398, 14935, 14937, 5000, 1202, 14939, 14940, 5627, 13524, 2]
+// Dependencies: [32, 19, 17, 1072, 1385, 21, 9452, 1113, 11042, 14106, 8673, 8669, 10260, 15477, 9916, 5727, 15479, 5014, 575, 15471, 6778, 5095, 5254, 5624, 5253, 5021, 5587, 6980, 8463, 15480, 15482, 5011, 1187, 15484, 15485, 5609, 14138, 2]
+// Exports: default
 
-// Module 14931 (GuildBoostingMarketingTierCards)
+// Module 15476 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1128 */;
-import PremiumConstants from "PremiumConstants" /* 1394 */;
-import ColorUtils from "ColorUtils" /* 5000 */;
-import shared from "shared" /* 5010 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
-import useThemeDefault from "useTheme" /* 5237 */;
-import timing from "timing" /* 5238 */;
-import Text_Text from "Text/Text" /* 5266 */;
-import LinearGradientDefault from "LinearGradient" /* 5290 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5627 */;
-import LinkIcon from "LinkIcon" /* 5710 */;
-import LegacyTokens from "LegacyTokens" /* 6739 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8398 */;
-import StageIcon from "StageIcon" /* 8600 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8604 */;
-import ReactionIcon from "ReactionIcon" /* 9382 */;
-import UploadIcon from "UploadIcon" /* 9836 */;
-import GifIcon from "GifIcon" /* 10180 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13486 */;
-import StickerIcon from "StickerIcon" /* 13487 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14926 */;
-import ServerGridIcon from "ServerGridIcon" /* 14932 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14934 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14939 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14940 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1385 */;
+import ColorUtils from "ColorUtils" /* 5011 */;
+import shared from "shared" /* 5021 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
+import useThemeDefault from "useTheme" /* 5253 */;
+import timing from "timing" /* 5254 */;
+import LinearGradientDefault from "LinearGradient" /* 5587 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5609 */;
+import Text_Text from "Text/Text" /* 5624 */;
+import LinkIcon from "LinkIcon" /* 5727 */;
+import LegacyTokens from "LegacyTokens" /* 6778 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8463 */;
+import StageIcon from "StageIcon" /* 8669 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8673 */;
+import ReactionIcon from "ReactionIcon" /* 9452 */;
+import UploadIcon from "UploadIcon" /* 9916 */;
+import GifIcon from "GifIcon" /* 10260 */;
+import StickerIcon from "StickerIcon" /* 11042 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 14106 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 15471 */;
+import ServerGridIcon from "ServerGridIcon" /* 15477 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 15479 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15484 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15485 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1087 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5003 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, isIncluded;
 
 let BoostedGuildTiers;
 let c10;
@@ -125,6 +125,76 @@ const getCopy13 = function getCopy() {
   const intl = intl4.intl;
   return intl.string(intl4.t.adNGjW);
 };
+function TierFeatures(features) {
+  let cardFeature;
+  let items;
+  let tmp = closure_13();
+  _require = tmp;
+  features = features.features;
+  const isVisible = features.isVisible;
+  let obj = require("ReanimatedRexport");
+  const fn = function o() {
+    let Easing;
+    let obj2;
+    let num = 0;
+    const withDelay = ReanimatedRexport.withDelay;
+    ReanimatedRexport;
+    if (isVisible) {
+      num = 150;
+    }
+    let num2 = 0;
+    const withTiming = timing.withTiming;
+    timing;
+    if (isVisible) {
+      num2 = 1;
+    }
+    const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
+    obj2 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
+    Easing = tmp(5095).Easing;
+    return obj;
+  };
+  let obj2 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS: 150, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
+  fn.__closure = obj2;
+  fn.__workletHash = 13329849944491;
+  fn.__initData = __initData;
+  const animatedStyle = obj.useAnimatedStyle(fn);
+  const tmp3 = closure_9;
+  let obj3 = {
+    accessibilityElementsHidden: !isVisible,
+    importantForAccessibility: "no-hide-descendants",
+    style: items,
+    children: features.map((isIncluded, index) => {
+      const items = [cardFeature.cardFeature, , ];
+      isIncluded = isIncluded.isIncluded;
+      let cardFeatureExcluded = !isIncluded;
+      const tmp = authStore;
+      const tmp2 = View;
+      if (!isIncluded) {
+        cardFeatureExcluded = tmp3.cardFeatureExcluded;
+      }
+      items[1] = cardFeatureExcluded;
+      const obj = { style: items, children: items1 };
+      const tmp4 = index === features.length - 1 && cardFeature.cardFeatureLast;
+      items[2] = tmp4;
+      items1 = [, ];
+      const obj2 = { size: "custom", style: cardFeature.cardFeatureIcon, color: "white" };
+      items1[0] = React4(isIncluded.IconComponent, obj2);
+      const isIncluded2 = isIncluded.isIncluded;
+      let cardFeatureExcludedCopy = !isIncluded2;
+      const Text = Text_Text.Text;
+      const tmp5 = React4;
+      if (!isIncluded2) {
+        cardFeatureExcludedCopy = tmp3.cardFeatureExcludedCopy;
+      }
+      const obj3 = { style: cardFeatureExcludedCopy, color: "text-overlay-light", variant: "text-md/semibold", children: isIncluded.getCopy() };
+      items1[1] = tmp5(Text, obj3);
+      return tmp(tmp2, obj, index);
+    })
+  };
+  View = features(isVisible[21]).View;
+  items = [tmp.cardFeatures, !isVisible && tmp.cardFeaturesInvisible, animatedStyle];
+  return tmp3(View, obj3);
+}
 function GuildBoostingMarketingTierCard(ref) {
   let ChevronLargeDownIcon;
   let PressableHighlight;
@@ -159,7 +229,7 @@ function GuildBoostingMarketingTierCard(ref) {
   ref = ref.ref;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   features = undefined;
-  const tmp2 = closure_14();
+  const tmp2 = closure_13();
   ({ guild, features } = merged);
   ({ isExpanded, tier } = merged);
   const onCardPress = merged.onCardPress;
@@ -191,9 +261,9 @@ function GuildBoostingMarketingTierCard(ref) {
   const isThemeDarkResult = obj.isThemeDark(tmp5);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp10 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
-  const intl = tmp8(1128).intl;
+  const intl = tmp8(1113).intl;
   const string = intl.string;
-  const t = tmp8(1128).t;
+  const t = tmp8(1113).t;
   if (isExpanded) {
     stringResult = string(t.DFwxsR);
   } else {
@@ -208,29 +278,29 @@ function GuildBoostingMarketingTierCard(ref) {
   obj4 = { style: tmp2.pressableWrapper, children: authStore(PressableHighlight, obj5) };
   obj5 = { onPress: onCardPress, style: tmp2.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult, children: items3 };
   const obj6 = { style: tmp2.cardHeading, children: items2 };
-  PressableHighlight = tmp8(6940).PressableHighlight;
+  PressableHighlight = tmp8(6980).PressableHighlight;
   const obj7 = { color: "text-overlay-light", style: tmp2.cardTierName, variant: "heading-xxl/extrabold", children: tmp8Result.getTierName(tier, { useLevels: false }) };
-  const Text = tmp8(5266).Text;
+  const Text = tmp8(5624).Text;
   tmp8Result = GuildBoostingUtils;
   items2 = [React4(Text, obj7), ];
   const obj8 = { color: "text-overlay-light", style: tmp2.cardTierBoostcount, variant: "text-md/medium", children: intl2.format(intl4.t.gDsyB9, obj9) };
-  const Text2 = tmp8(5266).Text;
-  intl2 = tmp8(1128).intl;
+  const Text2 = tmp8(5624).Text;
+  intl2 = tmp8(1113).intl;
   obj9 = { numSubscriptions: metroRequire[tier] };
   items2[1] = React4(Text2, obj8);
   items3 = [authStore(View, obj6), , ];
   const obj10 = { style: tmp2.cardFeaturesWrapper, children: items4 };
   items4 = [, ];
   const obj11 = { features: memo, isVisible: !isExpanded };
-  items4[0] = React4(closure_17, obj11);
-  items4[1] = React4(closure_17, { features, isVisible: isExpanded });
+  items4[0] = React4(TierFeatures, obj11);
+  items4[1] = React4(TierFeatures, { features, isVisible: isExpanded });
   items3[1] = authStore(View, obj10);
   const obj12 = { style: tmp2.cardFooter, children: items5 };
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult }), ];
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp8(14935).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp8(15480).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp8(14937).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp8(15482).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp2.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
@@ -248,10 +318,10 @@ function GuildBoostingMarketingTierCard(ref) {
     items7[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
     items7[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
     obj15 = { color: "text-overlay-light", style: tmp2.cardTierBadgeCopy, variant: "text-xs/bold", children: string2Result };
-    Text3 = tmp8(5266).Text;
-    const intl3 = tmp8(1128).intl;
+    Text3 = tmp8(5624).Text;
+    const intl3 = tmp8(1113).intl;
     const string2 = intl3.string;
-    const t2 = tmp8(1128).t;
+    const t2 = tmp8(1113).t;
     if (tier === sum) {
       string2Result = string2(t2["9NBo7c"]);
     } else {
@@ -289,22 +359,22 @@ function GuildBoostingMarketingTierCard(ref) {
     ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp2);
     items10[1] = React4(tmp3Result6, obj18);
     const obj19 = { source: AssetRegistryDefault, style: items13 };
-    const Icon = tmp8(1202).Icon;
+    const Icon = tmp8(1187).Icon;
     items13 = [, , ];
     ({ sparkleStar: arr14[0], sparkleStarPointed: arr14[1], sparkleStarPointed1: arr14[2] } = tmp2);
     items10[2] = React4(Icon, obj19);
     const obj20 = { source: AssetRegistryDefault, style: items14 };
-    const Icon2 = tmp8(1202).Icon;
+    const Icon2 = tmp8(1187).Icon;
     items14 = [, , ];
     ({ sparkleStar: arr15[0], sparkleStarPointed: arr15[1], sparkleStarPointed2: arr15[2] } = tmp2);
     items10[3] = React4(Icon2, obj20);
     const obj21 = { source: AssetRegistryDefault, style: items15 };
-    const Icon3 = tmp8(1202).Icon;
+    const Icon3 = tmp8(1187).Icon;
     items15 = [, , ];
     ({ sparkleStar: arr16[0], sparkleStarPointed: arr16[1], sparkleStarPointed3: arr16[2] } = tmp2);
     items10[4] = React4(Icon3, obj21);
     const obj22 = { source: AssetRegistryDefault2, style: items16 };
-    const Icon4 = tmp8(1202).Icon;
+    const Icon4 = tmp8(1187).Icon;
     items16 = [, , ];
     ({ sparkleStar: arr17[0], sparkleStarElongated: arr17[1], sparkleStarElongated1: arr17[2] } = tmp2);
     items10[5] = React4(Icon4, obj22);
@@ -313,7 +383,6 @@ function GuildBoostingMarketingTierCard(ref) {
   items6[2] = tmp12Result;
   return authStore(View, obj2);
 }
-let react = react_mod;
 let View = react_native.View;
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: metroRequire, BoostedGuildTiers } = Constants);
 const BoostedGuildFeatures = PremiumConstants.BoostedGuildFeatures;
@@ -575,7 +644,6 @@ items3[9] = { isIncluded: true, IconComponent: ReactionIcon.ReactionIcon, getCop
 ({ isIncluded: true, IconComponent: ReactionIcon.ReactionIcon, getCopy: getCopy12 });
 items3[10] = { orderCollapsed: 0, isIncluded: true, IconComponent: LinkIcon.LinkIcon, getCopy: getCopy13 };
 items1[2] = obj25;
-let c13 = 150;
 ({ orderCollapsed: 0, isIncluded: true, IconComponent: LinkIcon.LinkIcon, getCopy: getCopy13 });
 let createStyles = createStyles_mod;
 createStyles = createStyles.createStyles;
@@ -585,350 +653,22 @@ const obj37 = { cardWrapper: { marginRight: 10, width: 290 }, card: { borderRadi
 ({ flex: 1, marginTop: GuildBoostingMarketingProgressBar.PROGRESS_BAR_SPACING });
 rect = { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 8, paddingVertical: 4, position: "absolute", top: -16, left: 24 };
 ({ position: "absolute", tintColor: LegacyTokens.DARK_WHITE_500_LIGHT_GUILD_BOOSTING_PINK });
-let closure_14 = createStyles(obj37);
+let closure_13 = createStyles(obj37);
 const __initData = { code: "function GuildBoostingMarketingTierCardsTsx1(){const{withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing}=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};}" };
-const __initData2 = { code: "function GuildBoostingMarketingTierCardsTsx2(){const{withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing}=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};}" };
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierFeatures(features) {
-  let cardFeature;
-  let duration;
-  let isVisible;
-  let tmp = isVisible;
-  let obj = require("react");
-  const cResult = obj.c(23);
-  const tmp3 = closure_14();
-  _require = tmp3;
-  features = features.features;
-  isVisible = features.isVisible;
-  let obj2 = require("ReanimatedRexport");
-  const fn = function n() {
-    let Easing;
-    let obj2;
-    let num = 0;
-    const withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    if (isVisible) {
-      num = duration;
-    }
-    let num2 = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (isVisible) {
-      num2 = 1;
-    }
-    const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
-    obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(5084).Easing;
-    return obj;
-  };
-  let obj3 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
-  fn.__closure = obj3;
-  fn.__workletHash = 13329849944491;
-  fn.__initData = __initData;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  let tmp5 = !isVisible;
-  if (cResult[0] === animatedStyle) {
-    if (cResult[1] === tmp3.cardFeatures) {
-      let tmp7;
-      let tmp8;
-      if (cResult[2] === (!isVisible && tmp3.cardFeaturesInvisible)) {
-        tmp7 = cResult[3];
-      }
-      if (cResult[4] === features) {
-        if (cResult[5] === tmp3.cardFeature) {
-          if (cResult[6] === tmp3.cardFeatureExcluded) {
-            if (cResult[7] === tmp3.cardFeatureExcludedCopy) {
-              if (cResult[8] === tmp3.cardFeatureIcon) {
-                if (cResult[9] === tmp3.cardFeatureLast) {
-                  tmp8 = cResult[10];
-                }
-                if (cResult[18] === tmp5) {
-                  if (cResult[19] === "no-hide-descendants") {
-                    if (cResult[20] === tmp7) {
-                      let tmp11;
-                      if (cResult[21] === tmp8) {
-                        tmp11 = cResult[22];
-                      }
-                      return tmp11;
-                    }
-                  }
-                }
-                const obj4 = { accessibilityElementsHidden: tmp5, importantForAccessibility: "no-hide-descendants", style: tmp7, children: tmp8 };
-                const tmp14 = closure_9(features(tmp[23]).View, obj4);
-                cResult[18] = tmp5;
-                cResult[19] = "no-hide-descendants";
-                cResult[20] = tmp7;
-                cResult[21] = tmp8;
-                cResult[22] = tmp14;
-                tmp11 = tmp14;
-              }
-            }
-          }
-        }
-      }
-      if (cResult[11] === features.length) {
-        if (cResult[12] === tmp3.cardFeature) {
-          if (cResult[13] === tmp3.cardFeatureExcluded) {
-            if (cResult[14] === tmp3.cardFeatureExcludedCopy) {
-              if (cResult[15] === tmp3.cardFeatureIcon) {
-                let tmp9;
-                if (cResult[16] === tmp3.cardFeatureLast) {
-                  tmp9 = cResult[17];
-                }
-                const mapped = features.map(tmp9);
-                cResult[4] = features;
-                cResult[5] = tmp3.cardFeature;
-                cResult[6] = tmp3.cardFeatureExcluded;
-                cResult[7] = tmp3.cardFeatureExcludedCopy;
-                cResult[8] = tmp3.cardFeatureIcon;
-                cResult[9] = tmp3.cardFeatureLast;
-                cResult[10] = mapped;
-                tmp8 = mapped;
-              }
-            }
-          }
-        }
-      }
-      const fn2 = function c(isIncluded, arg1) {
-        const items = [cardFeature.cardFeature, , ];
-        isIncluded = isIncluded.isIncluded;
-        let cardFeatureExcluded = !isIncluded;
-        const tmp = authStore;
-        const tmp2 = View;
-        if (!isIncluded) {
-          cardFeatureExcluded = tmp3.cardFeatureExcluded;
-        }
-        items[1] = cardFeatureExcluded;
-        const obj = { style: items, children: items1 };
-        const tmp4 = arg1 === features.length - 1 && cardFeature.cardFeatureLast;
-        items[2] = tmp4;
-        items1 = [, ];
-        const obj2 = { size: "custom", style: cardFeature.cardFeatureIcon, color: "white" };
-        items1[0] = React4(isIncluded.IconComponent, obj2);
-        const isIncluded2 = isIncluded.isIncluded;
-        let cardFeatureExcludedCopy = !isIncluded2;
-        const Text = Text_Text.Text;
-        const tmp5 = React4;
-        if (!isIncluded2) {
-          cardFeatureExcludedCopy = tmp3.cardFeatureExcludedCopy;
-        }
-        const obj3 = { style: cardFeatureExcludedCopy, color: "text-overlay-light", variant: "text-md/semibold", children: isIncluded.getCopy() };
-        items1[1] = tmp5(Text, obj3);
-        return tmp(tmp2, obj, arg1);
-      };
-      let num = 11;
-      cResult[11] = features.length;
-      let num2 = 12;
-      cResult[12] = tmp3.cardFeature;
-      cResult[13] = tmp3.cardFeatureExcluded;
-      cResult[14] = tmp3.cardFeatureExcludedCopy;
-      cResult[15] = tmp3.cardFeatureIcon;
-      cResult[16] = tmp3.cardFeatureLast;
-      cResult[17] = fn2;
-      tmp9 = fn2;
-    }
-  }
-  let items = [tmp3.cardFeatures, !isVisible && tmp3.cardFeaturesInvisible, animatedStyle];
-  cResult[0] = animatedStyle;
-  cResult[1] = tmp3.cardFeatures;
-  cResult[2] = !isVisible && tmp3.cardFeaturesInvisible;
-  cResult[3] = items;
-  tmp7 = items;
-}) : (function TierFeatures(features) {
-  let cardFeature;
-  let duration;
-  let items;
-  let tmp = closure_14();
-  _require = tmp;
-  features = features.features;
-  const isVisible = features.isVisible;
-  let obj = require("ReanimatedRexport");
-  const fn = function n() {
-    let Easing;
-    let obj2;
-    let num = 0;
-    const withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    if (isVisible) {
-      num = duration;
-    }
-    let num2 = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (isVisible) {
-      num2 = 1;
-    }
-    const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
-    obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(5084).Easing;
-    return obj;
-  };
-  let obj2 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
-  fn.__closure = obj2;
-  fn.__workletHash = 14185267786248;
-  fn.__initData = __initData2;
-  const animatedStyle = obj.useAnimatedStyle(fn);
-  const tmp3 = closure_9;
-  let obj3 = {
-    accessibilityElementsHidden: !isVisible,
-    importantForAccessibility: "no-hide-descendants",
-    style: items,
-    children: features.map((isIncluded, index) => {
-      const items = [cardFeature.cardFeature, , ];
-      isIncluded = isIncluded.isIncluded;
-      let cardFeatureExcluded = !isIncluded;
-      const tmp = authStore;
-      const tmp2 = View;
-      if (!isIncluded) {
-        cardFeatureExcluded = tmp3.cardFeatureExcluded;
-      }
-      items[1] = cardFeatureExcluded;
-      const obj = { style: items, children: items1 };
-      const tmp4 = index === features.length - 1 && cardFeature.cardFeatureLast;
-      items[2] = tmp4;
-      items1 = [, ];
-      const obj2 = { size: "custom", style: cardFeature.cardFeatureIcon, color: "white" };
-      items1[0] = React4(isIncluded.IconComponent, obj2);
-      const isIncluded2 = isIncluded.isIncluded;
-      let cardFeatureExcludedCopy = !isIncluded2;
-      const Text = Text_Text.Text;
-      const tmp5 = React4;
-      if (!isIncluded2) {
-        cardFeatureExcludedCopy = tmp3.cardFeatureExcludedCopy;
-      }
-      const obj3 = { style: cardFeatureExcludedCopy, color: "text-overlay-light", variant: "text-md/semibold", children: isIncluded.getCopy() };
-      items1[1] = tmp5(Text, obj3);
-      return tmp(tmp2, obj, index);
-    })
-  };
-  View = features(isVisible[23]).View;
-  items = [tmp.cardFeatures, !isVisible && tmp.cardFeaturesInvisible, animatedStyle];
-  return tmp3(View, obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingTierCards(guild) {
-  let TIER_3;
-  let closure_3;
-  let isExpanded;
-  let onCardPress;
-  let tmp11;
-  let tmp12;
-  let tmp8;
-  let tmp9;
-  let obj = guild(isExpanded[22]);
-  const cResult = obj.c(14);
-  const tmp4 = closure_14();
-  const tmp = guild;
-  guild = guild.guild;
-  const ref = react.useRef(null);
-  const tmp2 = isExpanded;
-  [isExpanded, _slicedToArray] = react.useState(false);
-  const obj2 = react;
-  if (cResult[0] !== guild.premiumTier) {
-    const fn = function l() {
-      let premiumTier = window.setTimeout(() => {
-        const current = ref.current;
-        if (current != null) {
-          premiumTier = undefined;
-          const _Math = Math;
-          const scrollToIndex = current.scrollToIndex;
-          premiumTier = Math.min(TIER_3.TIER_3, premiumTier.premiumTier + 1);
-          const findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
-          let num3 = 0;
-          if (-1 !== findIndexResult) {
-            num3 = findIndexResult;
-          }
-          scrollToIndex(num3);
-        }
-      }, 400);
-      return () => {
-        window.clearTimeout(premiumTier);
-      };
-    };
-    const items = [guild.premiumTier];
-    cResult[0] = guild.premiumTier;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp9 = items;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[1];
-    tmp9 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp8, tmp9);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    function handleCardPress() {
-      const obj = DeprecatedLayoutAnimation;
-      const result = obj.DeprecatedLayoutAnimation();
-      closure_3((arg0) => !arg0);
-    }
-    let num3 = 3;
-    cResult[3] = handleCardPress;
-    tmp11 = handleCardPress;
-  } else {
-    tmp11 = cResult[3];
-  }
-  react = tmp11;
-  const cardsScrollerContent = tmp4.cardsScrollerContent;
-  if (cResult[4] !== guild.premiumTier) {
-    let _Math = Math;
-    let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
-    let findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
-    let num6 = 0;
-    if (-1 !== findIndexResult) {
-      num6 = findIndexResult;
-    }
-    cResult[4] = guild.premiumTier;
-    cResult[5] = num6;
-    tmp12 = num6;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === guild) {
-    let tmp17;
-    if (cResult[7] === isExpanded) {
-      tmp17 = cResult[8];
-    }
-    if (cResult[9] === tmp4.cardsScroller) {
-      if (cResult[10] === tmp4.cardsScrollerContent) {
-        if (cResult[11] === tmp12) {
-          let tmp19;
-          if (cResult[12] === tmp17) {
-            tmp19 = cResult[13];
-          }
-          return tmp19;
-        }
-      }
-    }
-    const obj3 = { ref, itemCount: items1.length, cardWidth: 290, cardMarginRight: 10, contentContainerStyle: cardsScrollerContent, initialIndex: tmp12, style: tmp16, children: tmp17 };
-    const tmp22 = closure_9(tmp(tmp2[38]).MarketingCardsScroller, obj3);
-    cResult[9] = tmp4.cardsScroller;
-    cResult[10] = tmp4.cardsScrollerContent;
-    cResult[11] = tmp12;
-    cResult[12] = tmp17;
-    cResult[13] = tmp22;
-    tmp19 = tmp22;
-  }
-  const mapped = items1.map((features) => {
-    const tier = features.tier;
-    const obj = { features: features.features, guild, isExpanded, onCardPress, tier };
-    return React4(GuildBoostingMarketingTierCard, obj, tier);
-  });
-  cResult[6] = guild;
-  cResult[7] = isExpanded;
-  cResult[8] = mapped;
-  tmp17 = mapped;
-}) : (function GuildBoostingMarketingTierCards(guild) {
+let result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTierCards.tsx");
+
+export default function GuildBoostingMarketingTierCards(guild) {
   let TIER_3;
   let arr2;
   let isExpanded;
   let num;
+  const f108525 = (tier) => tier.tier === closure_0;
   function handleCardPress() {
     const obj = DeprecatedLayoutAnimation;
     const result = obj.DeprecatedLayoutAnimation();
     _slicedToArray((arg0) => !arg0);
   }
-  const tmp = closure_14();
+  const tmp = closure_13();
   guild = guild.guild;
   const ref = handleCardPress.useRef(null);
   const tmp3 = _slicedToArray(handleCardPress.useState(false), 2);
@@ -942,7 +682,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
         const _Math = Math;
         const scrollToIndex = current.scrollToIndex;
         premiumTier = Math.min(TIER_3.TIER_3, premiumTier.premiumTier + 1);
-        const findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
+        const findIndexResult = items1.findIndex(f108525);
         let num3 = 0;
         if (-1 !== findIndexResult) {
           num3 = findIndexResult;
@@ -968,9 +708,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
       return React4(GuildBoostingMarketingTierCard, obj, tier);
     })
   };
-  const MarketingCardsScroller = guild(13524).MarketingCardsScroller;
+  const MarketingCardsScroller = guild(14138).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
-  let findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
+  let findIndexResult = items1.findIndex(f108525);
   num = 0;
   arr2 = items1;
   const tmp5 = closure_9;
@@ -978,7 +718,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
     num = findIndexResult;
   }
   return tmp5(MarketingCardsScroller, obj);
-});
-let result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTierCards.tsx");
-
-export default tmp5;
+};

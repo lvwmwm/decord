@@ -66,7 +66,7 @@ const hasOwnProperty = importDefaultResultResult;
 module_126.setPlatformObject(importDefaultResultResult);
 
 export default importDefaultResultResult;
-export const createDOMRectList = function createDOMRectList(arg0) {
+export function createDOMRectList(arg0) {
   const tmp = new hasOwnProperty(arg0);
   return tmp;
-};
+}

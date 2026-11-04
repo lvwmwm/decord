@@ -1,8 +1,8 @@
-// Module ID: 582
-// Function ID: 583
+// Module ID: 570
+// Function ID: 571
 // Dependencies: [2]
 
-// Module 582
+// Module 570
 import size from "module_2" /* 2 */;
 
 let nowResult;
@@ -169,7 +169,9 @@ if (!tmp4.clearMeasures) {
     }
   });
 }
-global.performance = tmp4;
+if (global.performance !== tmp4) {
+  global.performance = tmp4;
+}
 let tmp5 = typeof globalThis.define === "function";
 if (typeof globalThis.define === "function") {
   const define3 = globalThis.define;

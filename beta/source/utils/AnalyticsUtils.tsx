@@ -1,28 +1,28 @@
-// Module ID: 1267
-// Function ID: 1268
+// Module ID: 1252
+// Function ID: 1253
 // Name: AnalyticsUtils
-// Dependencies: [109, 19, 1268, 1372, 1087, 1374, 1375, 562, 1376, 1275, 1377, 1257, 584, 1378, 1128, 7, 1281, 2, 1380]
+// Dependencies: [109, 19, 1253, 1357, 1072, 1359, 1360, 1361, 1367, 1260, 1368, 1242, 572, 1369, 1113, 7, 1266, 2, 1371]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
-// Module 1267 (AnalyticsUtils)
+// Module 1252 (AnalyticsUtils)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl from "intl" /* 1128 */;
-import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import v1 from "v1" /* 1281 */;
-import AccessibilityConstants from "AccessibilityConstants" /* 1374 */;
-import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import utils_GlobalUtils from "utils/GlobalUtils" /* 1376 */;
-import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1377 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
-import utils_AnalyticsSchemaAll from "utils/AnalyticsSchema" /* 1380 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl from "intl" /* 1113 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import v1 from "v1" /* 1266 */;
+import AccessibilityConstants from "AccessibilityConstants" /* 1359 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import utils_GlobalUtils from "utils/GlobalUtils" /* 1367 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1368 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1369 */;
+import utils_AnalyticsSchemaAll from "utils/AnalyticsSchema" /* 1371 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ImpressionStore from "ImpressionStore" /* 1268 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import Constants from "Constants" /* 1087 */;
-import shim from "shim" /* 562 */;
-import AnalyticsUtils_mod from "discord_common/AnalyticsUtils" /* 1275 */;
+import ImpressionStore from "ImpressionStore" /* 1253 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
+import Constants from "Constants" /* 1072 */;
+import shim from "shim" /* 1361 */;
+import AnalyticsUtils_mod from "discord_common/AnalyticsUtils" /* 1260 */;
 import size from "module_2" /* 2 */;
 
 let AnalyticEvents;
@@ -795,9 +795,9 @@ const result1 = size.fileFinishedImporting("utils/AnalyticsUtils.tsx");
 export default obj62;
 export const AnalyticsContext = context;
 export { launchSignature };
-export const addExtraAnalyticsDecorator = function addExtraAnalyticsDecorator(arg0) {
+export function addExtraAnalyticsDecorator(arg0) {
   closure_20.push(arg0);
-};
+}
 export const AnalyticEventConfigs = obj;
 export { expandLocation };
 export function setUTMContext(arg0) {
@@ -815,16 +815,16 @@ export function stopRecordingAnalyticsEvents() {
 export function getAnalyticsEventsRecording() {
   return closure_25;
 }
-export const clearAnalyticsEventsRecording = function clearAnalyticsEventsRecording() {
+export function clearAnalyticsEventsRecording() {
   const keys = Object.keys(closure_25);
   const item = keys.forEach((item) => {
     delete closure_1_25[item];
   });
-};
-export const isGameApplicationType = function isGameApplicationType(arg0) {
+}
+export function isGameApplicationType(arg0) {
   return arg0 === ApplicationTypes.GAME || arg0 === ApplicationTypes.DEPRECATED_GAME;
-};
-export const trackNetworkAction = function trackNetworkAction(event, arg1) {
+}
+export function trackNetworkAction(event, arg1) {
   const obj = { location: metroImportAll() };
   const merged = Object.assign(arg1);
   const obj2 = { type: "action" };
@@ -834,9 +834,9 @@ export const trackNetworkAction = function trackNetworkAction(event, arg1) {
   const obj3 = LogAggregatorAll;
   obj3.report("Analytics", event);
   closure_26(event, tmp2);
-};
-export const getNewAnalyticsLoadId = function getNewAnalyticsLoadId() {
+}
+export function getNewAnalyticsLoadId() {
   const obj = v1;
   return obj.v4();
-};
+}
 export const AnalyticsSchema = utils_AnalyticsSchemaAll;
